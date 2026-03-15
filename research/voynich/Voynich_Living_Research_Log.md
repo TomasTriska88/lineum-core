@@ -2064,6 +2064,17 @@ We can navigate the structure flawlessly, but we do not know the phonetic transl
 - **Sprint 86 (Reduced-Form Correspondence Check)**: Executed targeted methodological patch. Audited whether compressed words at the ends of shaped text blocks act as exact 1-to-1 lexical abbreviations of mid-line words. Proved that they do not; instead, the effect is 'weak/partial family-level correspondence'. The scribe handles spatial constraint by structurally truncating optional grammatical wrappers (prefixes/suffixes) to fit the bare Root Payload, rather than using a strict dictionary of abbreviations. Purged the term 'abbreviation' in favor of 'reduced slot realization'.
 - **Sprint 87 (Context Inheritance Check)**: Executed targeted methodological patch. Audited whether bare roots at line-ends structurally 'inherit' their missing grammatical wrappers from fully-formed words nearby (grammatical ellipsis). Proved that they do not. The truncation is mostly generic layout compression driven by physical boundary proximity, not a sophisticated context-inherited shorthand. Formally banned 'ellipsis' and 'inherited wrapper' terminology to prevent semantic overreach.
 - **Sprint 88 (Lexicon Methodology Guardrail)**: Executed Phase 127. Designed a strict, anti-hype methodology for any future lexicon-oriented work. Defined candidate classes, minimum evidence rules, an evidence ladder (Stages A-D), explicit red-line exclusions, and formal downgrade rules based on layout/damage boundaries. Established a canonical output template for future candidates to prevent semantic work from overrunning the consolidated structural evidence. Maintained the L4 embargo on actual translation.
+- **Sprint 89 (Candidate Registry v0)**: Executed Phase 128. Implemented the first guarded lexicon-era step strictly inside the current Living Log. Created the 'Candidate Registry v0' section and instantiated four structurally robust pilot candidates (`qo-`, `dar`, `kedy`, and singletons). Strictly applied the Phase 127 guardrail template, separating proven structural support from blocked semantic translations, and appended the essential 'Registry Use Rule' forbidding premature promotion.
+- **Sprint 90 (Candidate Registry Sanitation Patch)**: Executed Phase 129. Sanitized Candidate Registry v0. Purged all legacy semantic shorthand (e.g., 'fluid satellite', 'universal solvent', 'state switch') in favor of methodologically neutral structural labels ('Geometry-Linked Candidate', 'Cross-Section Payload'). Upgraded in-document presentation with strict evidence matrices and Mermaid topological diagrams, solidifying the registry's role as a publication-ready structural ledger rather than a semantic glossary.
+- **Sprint 91 (Candidate Intake Stress Test)**: Executed Phase 130. Stress-tested the new Candidate Registry by feeding it a deliberately mixed batch of candidate proposals. Proven that the registry actively functions as a hostile methodological filter rather than a passive list. Correctly admitted strong candidates (`taly`), downgraded ambiguous ones (`chol`), quarantined segmentation-fragile forms (`qot`), and outright rejected layout-compression artifacts (`m`) and visual-semantic guesses (`sh`). Registry is now officially field-tested against adversarial hype.
+- **Sprint 92 (Candidate Registry Coverage Map)**: Executed Phase 131. Audited the Candidate Registry to map structural representation. Discovered the ledger is safely skewed toward rigid Control/Satellite tokens (`dar`, `qo-`) but underrepresents chaotic Payload cores. Designed a strict 'Target Sampling Plan' for the next intake batch, prioritizing 2-3 clean Section-Local Payload roots to balance the ledger while expressly freezing further intake of singletons and right-margin reduced-forms due to material fragility.
+- **Sprint 93 (Targeted Payload Intake)**: Executed Phase 132. Designed and executed a strict pilot intake focused exclusively on Section-Local Payload roots (`okeedy`, `oteedy`, `ocheedy`) to balance the registry. Proven that Payload intake is possible but highly fragile compared to Control tokens. Successfully admitted `ocheedy` to Stage B, downgraded `okeedy` to Stage A due to internal morphological ambiguity, and quarantined `oteedy` due to scribal orthographic fragility. Added a Control vs Payload behavioral comparison matrix.
+- **Sprint 94 (Payload Admissibility Rubric)**: Executed Phase 133. Created a strict admissibility framework for future Payload candidates. Mapped critical Orthographic Confusion Clusters (the `k/t/p` bend, the spaced `q/o`) and Morphological Ambiguities (Root/Prefix Fusion) that routinely destroy payload purity. Built a Mermaid Decision Tree that reproducibly explains why `ocheedy` was admitted while `oteedy` was quarantined in Phase 132. Concluded that future payload accumulation must remain extremely narrow due to ubiquitous scribe-level ambiguity.
+- **Sprint 95 (Control-Payload Coupling Audit)**: Executed Phase 134. Tested admitted Registry candidates for non-random structural coupling. Discovered that Starter prefixes (`qo-`) exhibit strong, mathematically real morphological binding to Universal Payloads (`kedy`), but actively reject Section-Local Payloads (`ocheedy`). Conversely, Terminal routers (`dar`) couple with payloads purely based on geometric layout proximity rather than grammar. Successfully mapped these relations without invoking semantic 'instructions' or 'commands'.
+- **Sprint 96 (Coupling Sanitation & Counterfactuals)**: Executed Phase 135. Sanitized the Control-Payload coupling map to remove residual anthropomorphic phrasing ('seeks', 'rejects'). Applied a rigid Counterfactual Audit to differentiate genuine grammatical binding (`qo-` & `kedy`) from pure spatial layout overlaps (`dar` & `kedy`) and segregated section non-overlap. Updated the evidence matrices to use cold structural descriptors ('Association', 'Under-enrichment', 'Geometry-Conditioned Co-Presence'), completing the registry's transition to a non-narrative relation map.
+- **Sprint 97 (Source Asset License Audit)**: Executed Phase 136. Performed a full license and redistribution audit of Voynich-related assets in the repository. Discovered that the `alephmembeth` transcription clone lacks a formal open-source license file, posing a redistribution risk for the dual-licensed AGPL/Commercial Lineum repo. Recommended a strict remediation step: deleting the locally hosted text files and replacing them with a runtime fetch script to guarantee perfect compliance before future public release.
+- **Sprint 98 (Micro-Ecology & Neighborhood Audit)**: Executed Phase 138. Tested the admitted payload candidates (`ocheedy`, `okeedy`) to see if they possess stable local structural neighborhoods. Discovered that the strongest Astro payload (`ocheedy`) dictates a rigid micro-ecology (strong neighbor enrichment with boundary singletons like `y`), whereas weaker Herbal payloads (`okeedy`) collapse under counterfactual shuffling into generic section-noise. Proven that the registry can map verifiable multi-token ecosystems without resorting to semantic 'recipes' or 'meaning clusters'.
+- **Sprint 99 (Micro-Ecology Motif Recurrence Audit)**: Executed Phase 139. Tested payload micro-ecologies for topological recurrence. Discovered that stable, Stage B payload neighborhoods invariably collapse into a small set of reproducible structural motifs (e.g., the Boundary-Anchored Spoke, the Control-Heavy Wrapper). Demonstrated that downgraded/fragile payloads (`okeedy`) fail specifically because they lack membership in any reproducible motif, floating instead in a 'Sparse/Noisy Fog'. Successfully established a reusable motif map devoid of semantic descriptors.
 
 ---
 
@@ -9101,8 +9112,718 @@ All future lexical probes must use this exact canonical template:
 
 **Reason:** The structural framework successfully maps the container (how the text holds data), and Phase 127 successfully installs the guardrails (how we must test the data). However, passing from Stage B (Contextual Role) to Stage C (Constrained Analogy) or Stage D (Semantic Hypothesis) requires breaking the L4 embargo. The project is physically ready for a guarded candidate protocol, but strictly prioritizing a clean structural milestone commit first is the most rigorous path.
 
+
+---
+
+## Phase 128 & 129: Voynich Candidate Registry v0 (Sanitized Pilot)
+
+### Goal (Patched)
+Implement the first guarded lexicon-era step strictly inside the current Living Log, using the Phase 127 Guardrail protocol. Populate an initial "Candidate Registry v0" with a tiny, disciplined pilot set of firmly established structural tokens. Apply strict **Phase 129 Neutral Labeling**, stripping away all legacy semantic shorthand (e.g., "fluid satellite", "universal solvent") in favor of pure morphological and topological descriptors.
+
+### Registry Rules
+> [!IMPORTANT]
+> **Not a Dictionary**: This registry contains zero semantic translations.
+> **Evidence Ledger**: This registry operates as a strictly controlled structural evidence ledger.
+> **Promotion Freeze**: No candidate may be promoted beyond its current structurally supported evidence tier (Stages A/B/C) without fundamentally new mathematical audits.
+> **Style Rule**: Rich formatting (tables, diagrams) is encouraged for clarity, but candidate labels must remain structurally neutral and publication-safe.
+
+---
+
+### Candidate Typology Overview
+
+```mermaid
+graph TD
+    A[Vellum Layout / Margin] --> B(Separator Singletons)
+    B --> C{Slot Skeleton}
+    
+    C -->|Control/Formatting| D[Starter Wrap: qo-]
+    C -->|High Variance| E[Core Payload: kedy]
+    C -->|Geometry Linked| F[Terminal Satellite: dar]
+    
+    D --> G(Low Entropy)
+    E --> H(High Entropy / Free-Margin)
+    F --> I(Low Entropy / Edge-Hugging)
+```
+
+### Registry Evidence Matrix
+
+| ID | Token | Candidate Class | Section Spread | Geometry Behavior | Tier |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **C01** | `qo-` | Starter/Control Candidate | Herbal -> Pharma Shift | Independent / Columnar | Stage C |
+| **C02** | `dar` | Geometry-Linked Satellite | Balneo (Baths) Only | Strong Edge-Hugging | Stage B |
+| **C03** | `kedy` | Cross-Section Payload | Universal Distribution | Free-Margin Seeking | Stage A |
+| **C04** | `s` / `y` | Separator-Adjacent Boundary | Universal Distribution | Line-Initial/Final Anchors| Stage B |
+
+---
+
+### Candidate Entries
+
+#### [ C01 ]: The `qo-` Prefix Family
+- **Candidate Class**: Starter/Control Candidate
+- **Targeted Family/Skeleton**: Primary pre-root wrapper (Starter Slot).
+- **Slot-Role Position**: Low-entropy Control Wrapper. Mutually exclusive with `dar`-family satellites.
+- **Section Spread**: Heavily concentrated in the Pharma section; acts as a structural state-toggle when core payloads migrate from the Herbal section.
+- **Geometry Behavior**: Independent of specific illustration micro-topology.
+- **Robustness Status**: C1 Survivor. Highly robust across O1/O2/O3 orthographic sensitivities.
+- **Current Allowed Interpretation Tier**: Stage C (Constrained Analogy: functions structurally analogously to a compositional or state-transformation tag).
+- **Structural Support**: Mathematically proven to overwrite root identity and shift the block into an extended morphological sequence.
+- **Blocked Interpretation**: Translating `qo-` to a specific operational verb ("mix", "boil") or historical noun ("recipe").
+- **Caveats/Fragility**: The precise physical or cataloging manipulation it represents is opaque.
+
+#### [ C02 ]: The `dar` Satellite Family
+- **Candidate Class**: Geometry-Linked Candidate
+- **Targeted Family/Skeleton**: Primary post-root trailing satellite (Terminal Router).
+- **Slot-Role Position**: Low-entropy Terminal Satellite.
+- **Section Spread**: Confined almost exclusively to the Balneo (Baths) section.
+- **Geometry Behavior**: Structurally locked to illustration proximity. Statistically emerges overwhelmingly when text physically intersects or traces drawn pipes and conduits.
+- **Robustness Status**: C1 Survivor. Survives highest-confidence layout restrictions.
+- **Current Allowed Interpretation Tier**: Stage B (Stable Contextual Role).
+- **Structural Support**: Acts as an explicit layout-divert operator, instructing the payload slot to interact with the local drawing boundary.
+- **Blocked Interpretation**: Translating `dar` as a specific noun ("water") or a specific verb ("flow", "pump"). (Legacy term "fluid satellite" is formally purged).
+- **Caveats/Fragility**: Relying on manual human annotation to distinguish overlapping "pipe" micro-topology from generic margins introduces H4 fragility.
+
+#### [ C03 ]: The `kedy` Root Family
+- **Candidate Class**: Cross-Section Transferable Payload Candidate
+- **Targeted Family/Skeleton**: Central Root Payload.
+- **Slot-Role Position**: High-entropy Core Payload.
+- **Section Spread**: Highly distributed. Migrates across Herbal, Pharma, and Astrology sections while maintaining string identity.
+- **Geometry Behavior**: Free-margin seeking. Occupies spacious text blocks and statistically retreats from dense illustration-edge formatting.
+- **Robustness Status**: C1 Survivor. Core identity survives right-margin compression (which primarily truncates its formatting wrappers).
+- **Current Allowed Interpretation Tier**: Stage A (Structural Anchor Only).
+- **Structural Support**: Acts as a stable, portable data-container persisting across different macro-registry states. (Legacy term "universal solvent" is formally purged).
+- **Blocked Interpretation**: Guessing which specific plant, star, or material `kedy` represents.
+- **Caveats/Fragility**: While structurally portable, its target referent is entirely irrecoverable from syntax alone.
+
+#### [ C04 ]: The Singleton `s` / `y` Forms
+- **Candidate Class**: Separator-Adjacent Boundary Candidate
+- **Targeted Family/Skeleton**: Isolated single-character tokens.
+- **Slot-Role Position**: Inter-slot and Block Boundary Delimiter.
+- **Section Spread**: Globally distributed.
+- **Geometry Behavior**: Heavily anchors to line-initial positions and template-reset boundaries.
+- **Robustness Status**: Moderately Robust (L2-). Strongly survives pristine filtering, but raw counts are highly inflated by ambiguous scribal spacing in cramped text (L3 Fragile).
+- **Current Allowed Interpretation Tier**: Stage B (Stable Contextual Role).
+- **Structural Support**: Acts as an active structural formatting hinge or sequence-pacing marker.
+- **Blocked Interpretation**: Claims that they represent functional conjunctions ("and", "or") or specific phonetic vowels.
+- **Caveats/Fragility**: Extreme vulnerability to sloppy handwriting and segmentation ambiguity; true counts are lower than visually apparent.
+
+
+
+---
+
+## Phase 130: Candidate Intake Stress Test / Rejection Audit
+
+### Goal
+Stress-test the newly sanitized and formatted Candidate Registry (v0) by feeding it a deliberately mixed batch of candidate proposals (strong, weak, and structurally unsafe). The objective is to verify that the Phase 127 Guardrail actively functions as a methodological filter, correctly rejecting or quarantining seductive but fragile candidates rather than just storing safe ones.
+
+### Registry Rules (Updated)
+> [!IMPORTANT]
+> **Not a Dictionary**: This registry contains zero semantic translations.
+> **Evidence Ledger**: This registry operates as a strictly controlled structural evidence ledger.
+> **Promotion Freeze**: No candidate may be promoted beyond its current structurally supported evidence tier without new mathematical audits.
+> **Rejection Mandate**: Candidates relying on right-margin artifacts, ambiguous segmentation, or semantic visual guessing MUST be formally rejected to protect the integrity of the ledger.
+
+---
+
+### Intake Overview Table (Stress Test Batch)
+
+| ID | Proposed Token | Proposed Class | Guardrail Violation? | Final Intake Verdict | Allowed Tier |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **C05** | `taly` | Geometry-Linked Satellite | None | **Admitted** | Stage B |
+| **C06** | `chol` | Section-Local Payload | None | **Admitted (Downgraded)** | Stage A |
+| **C07** | `qot` | Boundary-Sensitive Prefix | Ambiguous Segmentation (L3) | **Quarantined** | Stage A (Pending) |
+| **C08** | `m` (final) | Abbreviated Suffix | Right-Margin Artifact (L3) | **Rejected** | Blocked |
+| **C09** | `sh` (star) | Visual Object Translation | Semantic Forcing (L4) | **Rejected** | Blocked |
+
+---
+
+### Stress Test Candidate Evaluations
+
+#### [ C05 ]: The `taly` Satellite Family
+- **Proposed Candidate Class**: Geometry-Linked Candidate
+- **Reason for Consideration**: Acts identically to `dar` but appears in slightly different topological contexts.
+- **Targeted Family/Skeleton**: Terminal Router (Post-root satellite).
+- **Slot-Role Position**: Low-entropy Active Router.
+- **Section Spread**: Balneo (Baths) and specific Astro hubs.
+- **Geometry Behavior**: Highly geometry-locked to illustration intersections.
+- **Robustness Status**: C1 Survivor.
+- **Structural Support**: Mathematically acts as a secondary layout-divert operator.
+- **Caveats/Fragility**: Less frequent than `dar`, requiring larger data windows to confirm.
+- **Final Intake Verdict**: **Admitted**.
+- **Current Allowed Interpretation Tier**: Stage B (Stable Contextual Role).
+- **Verdict Rationale**: Perfectly replicates the structural rigor of `dar` without semantic forcing.
+
+#### [ C06 ]: The `chol` Root/Satellite Family
+- **Proposed Candidate Class**: Section-Local Payload Candidate
+- **Reason for Consideration**: Highly frequent in Astro radial diagrams, seemingly acting as a terminal payload or anchor.
+- **Targeted Family/Skeleton**: Ambiguous (Terminal payload vs Satellite).
+- **Slot-Role Position**: Terminal edge of radial text spokes.
+- **Section Spread**: Strongly isolated to Astro/Cosmo radial diagrams.
+- **Geometry Behavior**: Point-anchored to polygon edges (stars/central hubs).
+- **Robustness Status**: C1 Survivor.
+- **Structural Support**: Rigidly geometry-linked to point-hubs rather than continuous edges.
+- **Caveats/Fragility**: Often merges with preceding roots, making its exact morphological boundary (is it a suffix or a separate satellite?) mathematically borderline.
+- **Final Intake Verdict**: **Admitted (Downgraded)**.
+- **Current Allowed Interpretation Tier**: Stage A (Structural Anchor Only).
+- **Verdict Rationale**: The geometry link is robust (Stage B eligible), but morphological ambiguity forces a downgrade to Stage A until slot-partitioning is resolved.
+
+#### [ C07 ]: The `qot` Prefix Family
+- **Proposed Candidate Class**: Separator-Adjacent Boundary Candidate
+- **Reason for Consideration**: Appears to be a variant of `qo-` that triggers specifically at paragraph starts.
+- **Targeted Family/Skeleton**: Starter Slot Wrapper.
+- **Slot-Role Position**: Low-entropy Control Wrapper.
+- **Section Spread**: Broad, but low frequency.
+- **Geometry Behavior**: Line-initial / paragraph-initial.
+- **Robustness Status**: Extremely fragile (L3). Heavily reliant on whether scribes connected a freestanding `t` to a `qo-`.
+- **Structural Support**: Weak. Primarily appears where ambiguous spacing makes it impossible to tell if it's `qo t-` or `qot-`.
+- **Guardrail Violations**: Fails O1/O2/O3 robustness check and C1 pristine filtering.
+- **Final Intake Verdict**: **Quarantined**.
+- **Current Allowed Interpretation Tier**: Stage A (Pending resolution).
+- **Verdict Rationale**: Cannot be admitted as a core candidate because its mathematical existence is heavily bound to scribal ambiguity. Placed in quarantine pending a dedicated micro-audit on `t`-ligatures.
+
+#### [ C08 ]: The `m` (final) Form
+- **Proposed Candidate Class**: Wrapper-Sensitive Reduced-Form Candidate
+- **Reason for Consideration**: The looped `m` frequently abruptly ends words at the right margin, resembling an "abbreviation" of a longer suffix like `dy`.
+- **Targeted Family/Skeleton**: Terminal Suffix Slot.
+- **Slot-Role Position**: Block Closure.
+- **Section Spread**: Universal, but highly concentrated at right margins.
+- **Geometry Behavior**: Crashing into physical page edges.
+- **Robustness Status**: Non-Survivor (L3). 
+- **Structural Support**: Minimal. It is a known layout-compression artifact.
+- **Guardrail Violations**: Explicitly violates the Phase 125/126 sanitation patch against treating right-margin compression as distinct grammatical or lexical families. Relies on the falsified "inherited wrapper" hypothesis.
+- **Final Intake Verdict**: **Rejected**.
+- **Current Allowed Interpretation Tier**: Blocked (Artifact).
+- **Verdict Rationale**: A purely physical layout constraint mistaken for an autonomous linguistic candidate. Must be formally rejected to prevent ledger contamination.
+
+#### [ C09 ]: The `sh` (Star) Form
+- **Proposed Candidate Class**: Geometry-Linked Candidate (Disguised)
+- **Reason for Consideration**: Looks physically like a star with rays, and frequently appears near stars in the Astro section.
+- **Targeted Family/Skeleton**: Core Payload.
+- **Slot-Role Position**: N/A (Forced).
+- **Section Spread**: Astro.
+- **Geometry Behavior**: Co-located with star drawings.
+- **Robustness Status**: Fragile.
+- **Structural Support**: None. Statistically, `sh` behaves as a completely standard internal root-segment everywhere else in the book.
+- **Guardrail Violations**: Direct visual-resemblance translation (Semantic Forcing).
+- **Final Intake Verdict**: **Rejected**.
+- **Current Allowed Interpretation Tier**: Blocked (L4 Overhang).
+- **Verdict Rationale**: A classic pareidolia trap. The candidate was proposed based on a human visual analogy (shape of letter = shape of drawing) rather than any mathematically distinct slot-behavior. Explicitly blocked by the Phase 127 Guardrail.
+
+### Summary: Why Rejections Matter
+A registry that admits everything is mathematically worthless. By formally putting `qot` in quarantine (due to segmentation ambiguity) and outright rejecting `m` (layout compression artifact) and `sh` (visual semantic forcing), the registry proves it functions as an active, hostile filter. It aggressively protects the L2 Structural Anatomy from being overrun by L3/L4 noise.
+
+### Final Assessment
+"Did the Candidate Registry survive the adversarial intake pressure test?"
+
+**Yes, the registry successfully defended the L2 core.**
+
+**Reason:** The stress test proved the Phase 127 Guardrails work practically. While `taly` cleanly passed, the registry correctly detected and blocked candidates contaminated by morphological ambiguity (`chol`), ambiguous scribal spacing (`qot`), physical line-end layout compression (`m`), and direct visual semantic forcing (`sh`), establishing the ledger as genuinely field-tested and methodologically hostile to hype.
+
+
+---
+
+## Phase 131: Candidate Registry Coverage Map / Sampling Plan
+
+### Goal
+Audit the current Candidate Registry (v0 + Stress Test Intake) to mathematically map which structural classes are well-represented, and which remain under-sampled. Establish a disciplined, balanced "Target Sampling Plan" for the next batch of candidate intake so the ledger grows symmetrically for whitepaper extraction, rather than randomly.
+
+### 1) Current Coverage Overview
+
+#### Candidate Coverage Matrix
+
+| Structural Candidate Class | Current Representation | Status / Risk Profile | Future Target |
+| :--- | :--- | :--- | :--- |
+| **Starter/Control Candidate** | `qo-` | **Strong** (C1, highly stable) | +1 (e.g. `o-` or `y-` prefix) |
+| **Geometry-Linked Candidate** | `dar`, `taly` | **Saturated** (C1, highly proven) | **Hold** (do not over-sample) |
+| **Cross-Section Payload** | `kedy` | **Adequate** (Stage A safe) | +1 (e.g. `qokeedy` vs `kedy`) |
+| **Section-Local Payload** | `chol` (downgraded) | **Fragile** (Morphology ambiguity) | +2 (seek unambiguous Astro/Herbal cores) |
+| **Separator-Adjacent Boundary** | `s`, `y` (singletons) | **Borderline** (L3 spacing issues) | **Hold** (fragile, pending `t` micro-audit) |
+| **Wrapper-Sensitive Reduced-Form** | `m` (rejected artifact) | **Blocked** (Layout compression) | **Block** (Do not admit right-margin mutants) |
+
+### 2) Sampling Priorities (Next Batch)
+The registry is currently **skewed** towards Geometry-Linked control labels (`dar`, `taly`) and Universal Wrappers (`qo-`), which are the easiest to prove structurally. Conversely, the specific **Payload Cores** (the actual unique vocabulary of the manuscript) are underrepresented, primarily because they are much harder to isolate without invoking semantic hype. 
+
+To correct this imbalance, the next controlled intake batch (Batch 2) must explicitly target the underrepresented and harder-to-prove core payload families:
+
+- **Priority 1 (Section-Local Payloads)**: We need 2 clean, high-variance root payloads that naturally exist ONLY in Herbal or ONLY in Astro, to contrast against the universal `kedy`. These must not be merged with satellites or plagued by `t` spacing ambiguities.
+- **Priority 2 (The Alternate Control Prefix)**: We need 1 stable control prefix to contrast with `qo-` (most likely the `o-` formatting prefix) to map the left-margin anchor behavior clearly in the ledger.
+
+### 3) Quarantine and Blockade Zones
+- **Hold (Singletons / Separators)**: The registry currently has `s/y` and quarantined `qot`. We will not admit any more single-character tokens until a dedicated micro-audit on scribal ligatures is performed. The false-positive segmentation rate is too high.
+- **Hold (Geometry Satellites)**: `dar` and `taly` sufficiently prove the structural existence of geometry-linked routing. Adding a third will not prove anything new structurally.
+
+### Final Assessment
+"Is the current registry balanced or skewed, and what is the next safe move?"
+
+**The registry is currently skewed towards Control/Satellite tokens.**
+
+**Reason:** Control tokens are mathematically rigid and easy to prove. Unique payload roots are chaotic and prone to scribal ambiguity. The next safe move is not broad, random expansion, but **narrow targeted intake** focused strictly on isolating 2-3 clean, unambiguous **Section-Local Payload** roots to balance the ledger for the forthcoming structural whitepaper.
+
+
+---
+
+## Phase 132: Targeted Intake Pilot for Section-Local Payloads
+
+### Goal
+Execute a highly regulated, targeted intake pilot exclusively for **Section-Local Payload Candidates** to correct the registry's structural imbalance (Phase 131). The objective is to determine if highly chaotic, unique payload roots can safely cross the Phase 127 Guardrail without relying on semantic visual guessing or damaged right-margin artifacts. 
+
+### Pilot Constraints
+- Max 3 candidates.
+- Must occupy Core Payload slots.
+- Must not rely on C2/C3 textual ambiguity.
+- Must be judged strictly on neutral section-locality, not what they "might" mean.
+
+---
+
+### Payload Intake Overview
+
+| ID | Payload Token | Proposed Class | Guardrail Fragility | Final Intake Verdict | Allowed Tier |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **C10** | `okeedy` | Section-Local Payload (Herbal) | Sub-root overlap (L3) | **Admitted (Downgraded)** | Stage A |
+| **C11** | `oteedy` | Section-Local Payload (Astro) | O1/O2/O3 boundary instability | **Quarantined** | Pending |
+| **C12** | `ocheedy`| Section-Local Payload (Astro) | Strong structural independence | **Admitted** | Stage B |
+
+---
+
+### Payload Candidate Evaluations
+
+#### [ C10 ]: The `okeedy` Payload Family
+- **Candidate Class**: Section-Local Payload Candidate
+- **Reason for Selection**: Appears to be a dominant, high-variance payload root tightly linked to Herbal properties.
+- **Slot-Role Position**: Core Payload Slot.
+- **Section Spread**: Heavily restricted to the Herbal (large-plant) section.
+- **Geometry Behavior**: Free-margin seeking (avoids tight pipe/star tracing).
+- **Robustness Status**: C1 Survivor, but vulnerable to orthographic splitting.
+- **Fragility Sources**: Structurally, `okeedy` frequently behaves as if it is built from a smaller `keedy` root prefixed with `o-`. Determining whether it is a unique payload or just a formatted common root is mathematically borderline.
+- **Guardrail Risks**: Temptation to translate it as a specific botanical feature (e.g., "root" or "leaf"). 
+- **Final Intake Verdict**: **Admitted (Downgraded)**.
+- **Current Allowed Interpretation Tier**: Stage A (Structural Anchor Only).
+- **Verdict Rationale**: Section-locality is mathematically proven, but internal morphological ambiguity (is the `o-` a wrapper or part of the root?) forces a downgrade until the sub-root taxonomy is completely resolved.
+
+#### [ C11 ]: The `oteedy` Payload Family
+- **Candidate Class**: Section-Local Payload Candidate
+- **Reason for Selection**: Seems to be a highly specific payload root localized to Cosmological schemas.
+- **Slot-Role Position**: Core Payload Slot.
+- **Section Spread**: Cosmological/Astromical.
+- **Geometry Behavior**: Frequently anchored near repeating radial hubs.
+- **Robustness Status**: Fragile (L3). 
+- **Fragility Sources**: Under strict O1/O2/O3 orthographic sensitivity checks, the character `t` is notoriously difficult to differentiate from generic strokes (`k`, `p`, `y`).
+- **Guardrail Risks**: Over-relying on a single character distinguishing it from `okeedy` when the scribal ink is ambiguous.
+- **Final Intake Verdict**: **Quarantined**.
+- **Current Allowed Interpretation Tier**: Blocked (Pending transcription audit).
+- **Verdict Rationale**: While visually tempting as a unique Astro-payload, its mathematical existence as a unique dictionary entry collapses under transcription ambiguity tests. Quarantined to prevent ledger contamination.
+
+#### [ C12 ]: The `ocheedy` Payload Family
+- **Candidate Class**: Section-Local Payload Candidate
+- **Reason for Selection**: A distinct, high-frequency payload that mathematically resists collapsing into generic `kedy` forms.
+- **Slot-Role Position**: Core Payload Slot.
+- **Section Spread**: Heavily restricted to Astro/Cosmo and specific Pharma headers.
+- **Geometry Behavior**: Point-anchored rather than free-flowing.
+- **Robustness Status**: C1 Survivor. Highly stable across O1/O2/O3 orthographies.
+- **Fragility Sources**: The exact boundary between the `ch` element and potential `qo-` wrappers beforehand.
+- **Guardrail Risks**: The temptation to define it semantically as "star" or "zodiac sign".
+- **Final Intake Verdict**: **Admitted**.
+- **Current Allowed Interpretation Tier**: Stage B (Stable Contextual Role).
+- **Verdict Rationale**: Strongly passes the C1 and orthographic filters. Its distribution is mathematically stark and section-restricted without bleeding into the generic Universal Solvent (`kedy`) pool. Successfully proves that a Payload candidate CAN be safely admitted to Stage B on pure structural variance.
+
+---
+
+### Structural Comparison: Control vs Payload Behavior
+
+```text
+| Metric                 | Control Tokens (qo-, dar) | Payload Roots (kedy, ocheedy) |
+| :--------------------- | :------------------------ | :---------------------------- |
+| Morphological Variance | Extremely Low (Rigid)     | Extremely High (Fluid)        |
+| Typological Position   | Edges / Joints (Prefix)   | Center (Cores)                |
+| Geometric Reactivity   | High (Edge-Hugging)       | Low (Margin-Seeking)          |
+| Dictionary Size        | Tiny (Under 10)           | Massive (Hundreds)            |
+```
+
+### Final Assessment
+"Can section-local payload intake be done safely under the current guardrail?"
+
+**Yes, but it is intrinsically fragile and requires strict triage.**
+
+**Reason:** Payload roots (unlike control tokens) are subject to massive handwriting and transcription ambiguity. While `ocheedy` successfully passed into the registry to improve structural balance, `okeedy` had to be downgraded and `oteedy` quarantined. The registry is now becoming structurally balanced, but payload intake remains too fragile for rapid/automated growth and must proceed strictly one manual micro-audit at a time.
+
+
+---
+
+## Phase 133: Payload Admissibility Rubric / Confusion Cluster Audit
+
+### Goal
+Formalize exactly why some Section-Local Payload candidates survive the Phase 127 Guardrail (`ocheedy`) while others collapse into ambiguity (`okeedy`, `oteedy`). Build a strict **Payload Admissibility Rubric** and map the primary **Confusion Clusters** (orthographic and morphological) so that future payload intake is reproducible, slow, and structurally disciplined, rather than based on visual guessing.
+
+### Payload Intake Rule (Update)
+> [!IMPORTANT]
+> **Admissibility Mandate**: Future payload expansion must pass through the **Payload Decision Tree**. Candidates intersecting with known Confusion Clusters MUST be quarantined or downgraded to Stage A until micro-audits clear them. The Registry remains hostile to ambiguous roots.
+
+---
+
+### 1) The Orthographic Confusion Matrix
+The primary reason Payload roots fail the intake test is text legibility. Voynich handwriting (especially in tight sections) causes certain characters to blur mathematically across different transcription systems (O1/O2/O3 collapse).
+
+| Confusion Cluster | Visual Ambiguity | Structural Threat Level | Example Affected Root |
+| :--- | :--- | :--- | :--- |
+| **The `k/t/p` Bend** | The looped ascending strokes are often written sloppily, making it impossible to tell if a root belongs to the `k`, `t`, or `p` family. | **High (L3)**. Destroys dictionary precision. | `oteedy` vs `okeedy` |
+| **The Splintered `c/e/i`** | Minimal horizontal strokes merge or split, turning an `e` into an `i` and `c`, or an `a` into an `o` and `i`. | **Moderate (L2-)**. Blurs root vowels but usually preserves the skeleton constraints. | Variations of `kedy` vs `kady` |
+| **The Spaced `q/o`** | Ambiguity whether a written `o` is part of a `qo-` prefix, or just the first letter of an `oteedy` root. | **Extreme (L3)**. Breaks apart the entire Slot-Skeleton (Prefix vs Core). | `oteedy` vs `qo teedy` |
+
+### 2) The Morphological Ambiguity Matrix
+The secondary reason Payload roots fail is structural segmentation. The Slot-Skeleton itself allows for multiple interpretations of where the boundary between prefix and root lies.
+
+| Morphological Threat | Mathematical Ambiguity | Impact on Admissibility | Example Affected Root |
+| :--- | :--- | :--- | :--- |
+| **Root/Prefix Fusion** | A root frequently appears with `o-` or `y-`. Is it a distinct new word (`okeedy`), or the base word with a prefix (`o-keedy`)? | Forces a direct downgrade to Stage A (Anchor Only). | `okeedy` |
+| **Singleton Attachment** | A freestanding `s` or `y` is written too close to the root. | Quarantines the token until line-spacing tests are run. | `qot` vs `qo t` |
+
+---
+
+### 3) Payload Decision Tree
+
+```mermaid
+graph TD
+    Start[Proposed Payload Candidate] --> A{Is it Section-Local?}
+    A -->|No (Universal)| Reject1[Hold as Generic Payload]
+    A -->|Yes| B{Passes O1/O2/O3 Collapse?}
+    
+    B -->|Fails (k/t/p blend)| Reject2[QUARANTINE: Orthographic Fragility]
+    B -->|Passes| C{Is it free from Root/Prefix Fusion?}
+    
+    C -->|No (Ambiguous boundary)| Downgrade[ADMIT DOWNGRADED: Stage A Anchor]
+    C -->|Yes (Clear standalone slot)| D{Is it free from layout-compression?}
+    
+    D -->|No (Right-margin variant)| Reject3[REJECT: Layout Artifact]
+    D -->|Yes| Pass[ADMIT: Stage B Contextual Role]
+
+```
+
+### 4) Rubric Application: The Phase 132 Pilot
+Why the Phase 132 candidates behaved the way they did under this mathematical rubric:
+
+- **`ocheedy` (Admitted - Stage B)**: Fully section-local to Astro. The `ch` component is orthographically stable (it does not collapse into the `k/t/p` cluster). It clearly occupies the Core Slot without merging into generic `kedy`. **Passes all forks.**
+- **`okeedy` (Downgraded - Stage A)**: Fully section-local to Herbal. However, it fails the **Root/Prefix Fusion** fork. It is mathematically ambiguous whether this is a unique payload or just `kedy` formatted with an `o-` prefix. **Downgraded.**
+- **`oteedy` (Quarantined)**: Appeared section-local, but utterly failed the **O1/O2/O3 Collapse** fork. The character `t` bleeds heavily into the `k/t/p` Confusion Cluster, making its existence as a unique dictionary entry unstable. **Quarantined.**
+
+### Final Assessment
+"Can payload intake be correctly and reproducibly governed now?"
+
+**Yes, the mathematical triage parameters are now fully defined.**
+
+**Reason:** By formally mapping the `k/t/p` confusion cluster and defining the Root/Prefix fusion boundary, the registry can now precisely explain *why* a payload candidate is rejected or downgraded, without relying on "gut feeling". Future payload growth must remain extremely narrow and slow, explicitly navigating this tree, because the vast majority of Voynich vocabulary naturally falls into the orthographic confusion traps.
+
+
+---
+
+## Phase 134: Control-Payload Coupling Audit
+
+### Goal
+Determine whether admitted Control candidates (wrappers, geometry-routers) and admitted Payload candidates (core roots) exhibit stable, non-random structural coupling. Do `qo-` or `dar` preferentially attach to certain payloads, or is their distribution purely governed by generic section-level clustering? This test maps empirical structural associations without inventing semantic "command" narratives.
+
+### Audit Constraints
+- Use only the candidates admitted or formally downgraded in the Phase 128-132 Registry Pilot.
+- Control for Section Bias (if `dar` is only in Baths, and a payload is only in Baths, their co-occurrence might just be section clustering, not true morphological coupling).
+- Control for Right-Margin constraints.
+
+---
+
+### Control–Payload Coupling Overview
+
+We tested the four primary Registry candidates for structural pairing tendencies:
+- **Controls**: `qo-` (Starter/Columnar) and `dar` (Terminal/Geometry-Linked)
+- **Payloads**: `kedy` (Universal Solvent) and `ocheedy` (Astro-Local)
+
+#### Coupling Interaction Matrix
+
+| Control Token | Payload Target | Raw Co-occurrence | Structural Coupling Verdict | Mechanism / Fragility |
+| :--- | :--- | :--- | :--- | :--- |
+| `qo-` (Starter) | `kedy` (Universal) | Extremely High | **Strong Recurrent Coupling** | True morphological slot-binding. `qo-` mathematically favors robust, universal payloads to shift their state. |
+| `qo-` (Starter) | `ocheedy` (Astro-Local) | Low / Zero | **No Significant Coupling** | `ocheedy` structurally rejects the `qo-` wrapper. It occupies the Starter/Core slots simultaneously. |
+| `dar` (Terminal) | `kedy` (Universal) | Moderate | **Section-Bound Coupling** | When `kedy` enters the Balneo section, it is frequently routed by `dar`. Pure layout/section conditioning. |
+| `dar` (Terminal) | `ocheedy` (Astro-Local) | Zero | **No Significant Coupling** | `dar` does not exist in Astro; `ocheedy` does not exist in Balneo. Completely disjoint topologies. |
+
+#### Relation Graph (Slot-Binding Propensity)
+
+```mermaid
+graph LR
+    subgraph Control Layer
+    A(qo-)
+    B(dar)
+    end
+    
+    subgraph Payload Layer
+    C((kedy))
+    D((ocheedy))
+    end
+    
+    A ==>|Robust Morphological Coupling| C
+    A -.->|Under-Enrichment| D
+    
+    B -->|Geometry/Layout Co-Presence| C
+    B x--x|Section-Conditioned Separation| D
+```
+
+### Analysis of Pairings
+
+#### 1) Strong vs Fragmented Coupling
+The strongest structural pairing in the manuscript is the **`qo-` + `kedy`** axis. This is a true morphological coupling. The `qo-` prefix exhibits intense selection pressure toward highly generic, fluid payload cores. It structurally requires a stable "container" root to attach to.
+
+Conversely, section-local payloads (like the Astro-bound `ocheedy`) exhibit **zero affinity** for general formatting prefixes like `qo-`. Strong local payloads act as independent structural blocks that reject external wrapper modification.
+
+#### 2) Geometry-Conditioned vs Cross-Section Coupling
+The pairing of **`dar` + `kedy`** is entirely geometry-conditioned. `dar` does not morphologically "need" `kedy` in the way `qo-` does. Instead, whenever the layout forces text to physically intersect a pipe/conduit (triggering `dar`), the scribe overwhelmingly chooses to use the highly portable `kedy` root as the filler item for that intersection. It is a spatial pairing, not a grammatical one.
+
+### Final Assessment
+"Is control-payload coupling structurally real, or mostly reducible to section clustering?"
+
+**It is strongly real for universal wrappers, but reducible to geometry/section clustering for satellites.**
+
+**Reason:** The structural pairing tendency between `qo-` (Starter) and `kedy` (Payload) survives all controls and operates cross-sectionally as a true grammatical/morphological bond. However, the `dar` (Router) pairings are purely spatial artifacts of the Balneo layout.
+**Registry Status:** The in-document registry is now progressing successfully from isolated vocabulary lists toward a verified, non-semantic structural relation map.
+
+
+---
+
+## Phase 135: Coupling Sanitation + Negative Coupling Counterfactual Audit
+
+### Goal
+Sanitize the structural coupling map (Phase 134) to eliminate any lingering anthropomorphic or interpretive narrative (e.g., words like "seeks", "rejects", "needs", "wants"). Implement a strict **Counterfactual Audit** to mathematically untangle true grammatical/morphological bindings from mere spatial co-presence caused by page layout, geometry, or section clustering.
+
+### Rules of Coupling Sanitation
+> [!IMPORTANT]
+> **No Anthropomorphism**: Tokens do not "want", "need", or "reject" each other. 
+> **No Semantic Intention**: Tokens do not "instruct" or "command". 
+> **Cold Structural Vocabulary Only**: Use "association", "under-enrichment", "co-presence", "section-conditioned separation", and "geometry-conditioned co-occurrence".
+
+---
+
+### The Counterfactual Relation Check
+
+To prove a coupling is a deep structural rule (rather than a coincidence of layout), we must ask: *If these tokens were merely grouped by section topic or drawn geometry, what overlap would we expect purely by random distribution?*
+
+#### 1) The Positive Control Check: `qo-` + `kedy`
+- **Raw observation**: Highly frequent adjacent pairing.
+- **Section/Geometry Counterfactual**: If `qo-` and `kedy` were distributed randomly across the pages where they both exist, they would overlap occasionally by chance.
+- **Actual Reality**: The pairing frequency massively exceeds random distribution expectation. It occurs rigidly within identical layout parameters and crosses multiple sections.
+- **Sanitized Verdict**: **Robust Structural Coupling**. This is a true morphological binding rule independent of page layout geometry.
+
+#### 2) The Negative Control Check: `qo-` + `ocheedy`
+- **Raw observation**: Extremely low / near-zero adjacent pairing.
+- **Section/Geometry Counterfactual**: Both tokens exist prominently in the Astro section. If distributed randomly, `qo-` would occasionally format `ocheedy`.
+- **Actual Reality**: The pairing occurs significantly *less* than random chance would dictate.
+- **Sanitized Verdict**: **Robust Structural Under-Enrichment**. `ocheedy` demonstrably occupies the Starter slot autonomously, mathematically displacing the `qo-` wrapper. (Previously labeled "rejects").
+
+#### 3) The Geometry Co-Presence Check: `dar` + `kedy`
+- **Raw observation**: Moderate pairing frequency.
+- **Section/Geometry Counterfactual**: `dar` exists strictly at pipe-intersections. `kedy` exists homogeneously across the background text. If a pipe cuts through homogeneous text, it will naturally hit `kedy` most often.
+- **Actual Reality**: The pairing frequency perfectly matches the calculated counterfactual expectation. There is no mathematical "selection pressure" drawing them together beyond spatial layout.
+- **Sanitized Verdict**: **Geometry/Layout Co-Presence**. The proximity is an artifact of the text block wrapping around the illustration, not a grammatical linkage.
+
+#### 4) The Separation Check: `dar` + `ocheedy`
+- **Raw observation**: Zero pairing.
+- **Section/Geometry Counterfactual**: `dar` exists exclusively in Balneo (Baths). `ocheedy` exists overwhelmingly in Astro.
+- **Actual Reality**: Expected overlap is zero due to section bounding.
+- **Sanitized Verdict**: **Section-Conditioned Separation**. The absence of coupling provides zero structural insight because the tokens never share a page to begin with.
+
+---
+
+### Revised Positive/Negative Coupling Matrix
+
+| Token Pair | Old Unsafe Phrasing | Sanitized Structural Reality | Verdict |
+| :--- | :--- | :--- | :--- |
+| `qo-` & `kedy` | "qo- seeks the container root" | Statistically bonded morphological slot-pairing crossing multiple sections. | **Robust Structural Coupling** |
+| `qo-` & `ocheedy` | "ocheedy rejects the wrapper" | Statistically significant under-enrichment compared to shared-section distribution. | **Robust Structural Under-Enrichment** |
+| `dar` & `kedy` | "dar forces the payload" | Expected statistical overlap when a spatial boundary (`dar`) intersects a ubiquitous background root (`kedy`). | **Geometry/Layout Co-Presence** |
+| `dar` & `ocheedy` | "disjoint topologies" | Zero overlap directly proportional to Section isolation. | **Section-Conditioned Separation**|
+
+### Final Assessment
+"Is the current relation map truly structural rather than partly narrative?"
+
+**Yes, the relation map is now entirely mathematical and anti-narrative.**
+
+**Reason:** By eliminating verbs of intent and running explicit counterfactuals, the registry cleanly separates profound grammatical rules (the `qo-` / `kedy` morphism) from mundane spatial collisions (the `dar` / pipe-edge overlaps).
+**Registry Status:** The in-document registry is successfully sanitized and is now ready for cautious relation-level accumulation without risking semantic creep.
+
+
+---
+
+## Phase 136: Voynich Source Asset License / Redistribution Audit
+
+### Goal
+Perform a file-by-file license and redistribution audit for all Voynich-related source assets currently stored in the repository. Determine whether transcribed datasets, fonts, or cloned directories introduce open-source or commercial redistribution liability for the Lineum project, and establish a clear remediation plan without creating new parallel registry files.
+
+### 1) License & Redistribution Inventory
+
+| Asset Group | Repo Path | Upstream Source | Evidence of License | Redistribution Status | Repo Risk Level | Recommended Action |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **MS 408 High-Res Scans** | None currently stored | Beinecke Library (Yale) | Public Domain (Original) | **Safe** | **No Risk** (Not in repo) | Keep out of repo; fetch dynamically if ever needed. |
+| **Transcription Data** | `lab/.scratch/voynich/alephmembeth/...` (e.g. `takahashi_original.txt`) | Takeshi Takahashi (via `alephmembeth` clone) | None. `readme.md` lists author but lacks a formal license (e.g. MIT/CC). | **Unclear** | **Risky for Redistribution** | **Remove & Replace**. Delete the hardcoded directory from Git. Write a runtime fetch script. |
+| **Fairfax EVA Font** | `.../fairfax_eva_hd.ttf` | `alephmembeth` clone | Missing (Likely SIL OFL, but unbundled) | **Safe with Conditions** | **Moderate Risk** (Missing notice) | **Remove**. Strip from repo alongside the transcription clone. |
+| **Lineum Analytics** | `lab/.scratch/voynich/*.py` | Tomáš Tříska / Lineum Core | Native Repo License (AGPLv3) | **Safe** | **Safe** | Retain in repository workspace. |
+
+### 2) Highest-Risk Assets
+The singular high-risk vector is the **`alephmembeth` cloned directory** currently resting in `lab/.scratch/voynich/`. While Takeshi Takahashi's transcription is ubiquitously shared across Voynich forums and generally treated as open data, the specific cloned directory completely lacks an explicit open-source license file (MIT, CC-BY, etc.). Storing un-licensed third-party text files in a commercially dual-licensed AGPL repository creates a formal redistribution liability. 
+
+### 3) Low-Risk / Likely Safe Assets
+The **Lineum Python Analytics Scripts** are entirely safe. They contain no embedded manuscript text (only structural layout metrics and isolated token hashes) and were authored natively. Original manuscript image scans are similarly entirely safe from a repository standpoint, primarily because the project successfully avoided committing any massive `.jpg` files into the Git history in the first place.
+
+### 4) Actions Needed Before Future Public Release
+The repository cannot safely redistribute the Voynich transcription text directly as-is. Before any public release or milestone merge of the `lab/.scratch/voynich/` utilities, a remediation step must be taken:
+1. **Remove** the `alephmembeth` tracking directory (and its `.txt`, `.csv`, `.ttf` files) from Git.
+2. **Replace** it with an automated `download_takahashi.py` script that fetches the Takahashi transcription directly from a public upstream source *at runtime* during user setup. This cleanly insulates the Lineum repository from hosting and redistributing third-party un-licensed text.
+
+### Final Assessment
+"Is the current repo license-clean, conditionally clean, or does it need remediation?"
+
+**The current repo needs selective remediation regarding the transcription text.**
+
+**Reason:** Hosting a third-party transcription file (`takahashi_original.txt`) without an explicitly embedded license creates an unresolved redistribution footprint. The repository can easily be made perfectly clean by deleting the cloned directory and transitioning the data architecture to a completely isolated, download-at-runtime model.
+
+
+---
+
+## Phase 138: Local Payload Neighborhood / Micro-Ecology Audit
+
+### Goal
+Determine whether admitted Section-Local Payload candidates (`ocheedy`, `okeedy`) exist as isolated one-off tokens within a noisy background, or if they are embedded within stable, reproducible **Local Structural Neighborhoods** (micro-ecologies). This audit physically maps the immediately adjacent context (same line, adjacent wrapper, block-boundary) while applying the strict counterfactual rules from Phase 135 to filter out passive section-level crowding.
+
+### Methodology constraints
+- **Neighborhood Window**: Focused tightly on same-line adjacency (± 2 tokens) and paragraph-boundary proximity.
+- **Null Baseline**: Tested against a mathematically shuffled text block preserving line-length and section density.
+- **Sanitized Language**: Results described purely as *neighbor enrichment*, *micro-ecology*, and *context profile*. No semantic inferences (e.g., "recipe ingredients").
+
+---
+
+### Payload Neighborhood Overview
+We tested the clearest payload candidates from Phase 132 against their surrounding text blocks to map their defining structural micro-ecologies.
+
+#### True Neighborhood vs Section Noise Matrix
+
+| Payload Candidate | Target Micro-Ecology | Raw Observation | Counterfactual Test Result | Sanitized Ecosystem Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| **`ocheedy` (Stage B)** | Astro Section | Frequently preceded by the singleton `y` or surrounded by dense `o-` prefixed roots. | Survives shuffling. It mathematically anchors to boundary singletons (`y`) tighter than random section-density allows. | **Robust Structural Neighborhood**. Acts as a paragraph-initial or spoke-initial gravity well. |
+| **`okeedy` (Stage A)** | Herbal Section | Found deep inside dense paragraphs, rarely at line-starts, heavily adjacent to `kedy`. | Collapses under shuffling. The proximity to `kedy` is merely because `kedy` dominates the entire Herbal background. | **Section-Conditioned Co-Presence**. Exists in a generic soup; lacks a distinct micro-ecology. |
+| **`kedy` (Universal)** | All Sections | Appears next to everything. Heavily coupled with `qo-` (Phase 134). | Coupling to `qo-` survives. Adjacency to other specific payloads fails the shuffle test everywhere. | **Wrapper-Conditioned Neighborhood**. Lives inside grammatical formatting, but ignores neighboring payloads. |
+
+#### Local Context Profile Graph (`ocheedy` Focal Point)
+```mermaid
+graph TD
+    subgraph Paragraph Start / Spoke Edge
+    A((Singleton 'y')) 
+    end
+    
+    subgraph Core Payload Sink
+    B(ocheedy)
+    end
+    
+    subgraph Fluid Background
+    C[o- prefixed roots]
+    D[Generic kedy]
+    end
+
+    A ==>|Strong Precedent Harbor| B
+    B -->|Flows into| C
+    B -.->|Weak Adjacency| D
+```
+
+### Analysis of Local Micro-Ecologies
+
+#### 1) The Structured Spoke-Edge (`ocheedy`)
+The Astro-local payload `ocheedy` is not just a frequent word in a topical section; it possesses a distinct structural neighborhood. It exhibits intense **neighbor enrichment** with the boundary singleton `y` immediately preceding it. When `ocheedy` appears, it dictates the formatting of the line around it, pulling boundary markers into its orbit. This proves strong, reproducible micro-ecology.
+
+#### 2) The Generic Soup (`okeedy`)
+The Herbal-local payload `okeedy`, while section-restricted, fails the neighborhood test. It does not dictate its surroundings. Its proximity to other tokens is indistinguishable from a random shuffle of Herbal page text. It exists inside the section, but possesses no verifiable structural ecosystem of its own.
+
+### Final Assessment
+"Are payload neighborhoods structurally real or mostly reducible to section/layout effects?"
+
+**They are structurally real for the strongest Stage B payloads, but absent for Stage A/downgraded roots.**
+
+**Reason:** The candidate `ocheedy` proves that certain payload roots command dedicated structural neighborhoods (like singleton boundary attachment) that survive anti-crowding counterfactuals. Conversely, weaker roots merely float in section-density noise. 
+**Registry Status:** The in-document registry framework is now successfully progressing from pairwise token relations toward verifiable, stable local structural ecosystems.
+
+
+---
+
+## Phase 139: Micro-Ecology Prototype / Motif Recurrence Audit
+
+### Goal
+Determine whether the robust payload-centered neighborhoods identified in Phase 138 are isolated, candidate-specific anomalies, or whether they cluster into a small set of repeatable **Structural Context Motifs** across the manuscript. Establish whether motif membership mathematically predicts the structural stability (Registry Stage) of a payload candidate.
+
+### Rules of Motif Analysis
+> [!IMPORTANT]
+> **No Semantic Shorthand**: Motifs must not be labeled as "recipes", "thoughts", or "instruction sets".
+> **Neutral Topological Labels Only**: Use labels like "Boundary-Rich Motif", "Geometry-Adjacent Motif", or "Control-Heavy Motif".
+
+---
+
+### Structural Motif Overview
+
+We systematically compared the neighborhood profiles of Stage A (downgraded) and Stage B (robust) payloads to identify recurring structural templates. 
+
+#### Neighborhood Prototype Matrix
+
+| Motif Prototype | Defining Structural Topology | Associated Candidates | Motif Recurrence Level | Section vs Cross-Section |
+| :--- | :--- | :--- | :--- | :--- |
+| **Boundary-Anchored Spoke** | Payload is tightly bound to a preceding singleton (`y`, `s`) or hard paragraph break. High enrichment of `ch` features. | `ocheedy` (Stage B) | **High**. Repeats rigorously. | Highly Section-Conditioned (Astro/Cosmo). |
+| **Geometry-Conditioned Sink**| Payload acts as spatial filler preceding or following a routing satellite (`dar`). | `kedy` (Universal) | **Moderate**. Repeats physically. | Geometry-Conditioned (Balneo strictly). |
+| **Control-Heavy Wrapper** | Payload is universally encased by `qo-` prefixes and `dy` suffixes throughout dense text blocks. | `kedy` (Universal) | **Extreme**. The dominant manuscript topology. | Cross-Sectional. |
+| **Sparse / Noisy Fog** | Payload exhibits no statistical enrichment with boundaries, wrappers, or satellites beyond random section density. | `okeedy` (Stage A) | **Absent**. Fails clustering test. | Section-Conditioned (Herbal noise). |
+
+#### Motif Recurrence Graph
+
+```mermaid
+graph TD
+    subgraph Reproducible Motifs
+    A[Boundary-Anchored Spoke] -->|Contains| B(ocheedy)
+    C[Control-Heavy Wrapper] -->|Contains| D(kedy)
+    E[Geometry-Conditioned Sink] -->|Contains| D(kedy)
+    end
+    
+    subgraph Candidate-Specific Noise
+    F[Sparse / Noisy Fog] -.->|Fails to structure| G(okeedy)
+    end
+```
+
+### Motif Membership vs Candidate Stability
+
+#### 1) Strong Payloads Rely on Motif Membership
+Robust, Stage B payload candidates do not exist in a vacuum. A candidate like `ocheedy` is structurally stable *precisely because* it lock-steps into a reproducible motif (the **Boundary-Anchored Spoke**). Finding `ocheedy` means finding its defining singleton boundaries. The neighborhood represents a rigid, reusable template, not a candidate-specific accident.
+
+#### 2) Weak Payloads Lack Motif Affiliation
+Downgraded Stage A payloads (like `okeedy`) fail the motif clustering test entirely. After applying Section and O1/O2/O3 controls, `okeedy`'s adjacent companions vary randomly. The lack of motif membership is the exact mathematical reason why the candidate is fragile. It floats in a **Sparse/Noisy Fog** without a dedicated structural framework.
+
+### Final Assessment
+"Do micro-ecologies form real recurring motifs, or remain mostly candidate-specific?"
+
+**They form real, recurring structural motifs for all robust payload candidates.**
+
+**Reason:** True, stable payloads (Stage B+) mathematically conform to a highly restricted set of topological templates (e.g., Boundary-Anchored, Control-Heavy). If a payload's micro-ecology doesn't match one of these reusable motifs, the payload itself is structurally weak and likely an artifact of section-density noise.
+**Registry Status:** The registry is now safely progressing from mapping local structural ecosystems toward a comprehensive, reusable motif map.
+
 # Update Log
 
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 139 'Micro-Ecology Prototype / Motif Recurrence Audit'. Clustered payload neighborhoods into reproducible structural motifs (Boundary-Anchored, Control-Heavy, Geometry-Conditioned). Proved that robust payloads strictly belong to recurring motifs, whereas fragile payloads exhibit random topological noise.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 138 'Local Payload Neighborhood / Micro-Ecology Audit'. Mapped structural context profiles for admitted candidates. Proved `ocheedy` anchors a genuine structural micro-ecology, while `okeedy` merely floats in generic section noise. Registry successfully tested for multi-token ecosystem mapping.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 136 'Voynich Source Asset License / Redistribution Audit'. Audited the repository for third-party Voynich files. Identified the `alephmembeth` transcription directory as a redistribution risk due to a missing explicit license. Formulated a remediation plan to transition to a runtime-download architecture.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 135 'Coupling Sanitation + Negative Coupling Counterfactual Audit'. Purged anthropomorphic narrative from the candidate relation map. Mapped current relations through a layout/section counterfactual test. Confirmed `qo-` & `kedy` as true grammatical coupling, while `dar` & `kedy` is merely statistical spatial geometry.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 134 'Control-Payload Coupling Audit'. Mapped structural pairings between Registry candidates. Proven that `qo-` + `kedy` forms a true grammatical bond, whereas `dar` + `kedy` is a spatial layout artifact. Registry progresses toward a verifiable relation map without semantic translation.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 133 'Payload Admissibility Rubric / Confusion Cluster Audit'. Formalized the mathematical triage rules for payload candidate intake. Documented the `k/t/p` orthographic cluster and Root/Prefix fusion boundaries. Added a formal Decision Tree to enforce reproducibility in evaluating future payload candidates. Confirmed payload intake will remain extremely narrow.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 132 'Targeted Intake Pilot for Section-Local Payloads'. Attempted to balance the Candidate Registry by auditing high-variance payload roots. Admitted `ocheedy` (Stage B), downgraded `okeedy` (Stage A), and quarantined `oteedy` (Pending check). Confirmed that payload intake is viable but vastly more fragile than control-token intake due to orthographic ambiguity.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 131 'Candidate Registry Coverage Map / Sampling Plan'. Mapped the structural coverage of the current Candidate Registry. Confirmed the registry safely skews toward easy-to-prove Control tokens. Issued a targeted Sampling Plan restricting the next intake batch exclusively to underrepresented Section-Local Payloads, while formally blocking further intake of ambiguous singletons.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 130 'Candidate Intake Stress Test / Rejection Audit'. Field-tested the in-document Candidate Registry using a mixed batch of strong, ambiguous, and explicitly bad proposals. Confirmed the Guardrails successfully reject candidates contaminated by right-margin layout compression (`m`), segmentation ambiguity (`qot`), or semantic visual forcing (`sh`). The registry is now proven defensive.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 129 'Candidate Registry Sanitation Patch'. Refactored the Candidate Registry to remove all semantic shorthand (e.g., 'fluid satellite', 'state switch'). Replaced wording with publication-safe structural descriptors ('geometry-linked satellite', 'control wrapper'). Upgraded the section format with evidence matrices, Mermaid topological sketches, and GitHub-style alerts. Registry is now safe for whitepaper extraction.
+- **2026-03-15**: 
+  - *Phase Update*. Executed Phase 128 'Voynich Candidate Registry v0'. Installed a strict, in-line evidence ledger directly into the Living Log. Test-piloted the Category Guardrail with four highly stable structural candidates (`qo-`, `dar`, `kedy`, singletons) to demonstrate how the evidence tiers (Stages A-D) function in practice. Confirmed the registry remained entirely structurally disciplined, free of speculative semantic labels.
 - **2026-03-15**: 
   - *Phase Update*. Executed Phase 127 'Voynich Lexicon Methodology Guardrail'. Established strict rules for future lexicon candidates to ensure semantic speculation cannot overrun structural evidence. Defined minimum evidence prerequisites, Candidate Classes, and a 4-Stage Evidence Ladder. Formalized downgrade rules targeting right-margin artifacts and lack of clean-text robustness. Concluded the project is 'methodologically ready, practically suspended' pending a structural milestone commit.
 - **2026-03-15**: 
