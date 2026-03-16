@@ -16,6 +16,13 @@ test.describe('Voynich Frontend Integration', () => {
         const canvasMap = page.locator('main.overflow-x-hidden');
         await expect(canvasMap).toBeVisible({ timeout: 15000 });
         await expect(canvasMap).toHaveClass(/custom-scrollbar/);
+        
+        console.log("Marker: 1.5 - Horizontal Overflow Test");
+        // Explicitly test that the horizontal flow is contained properly after the Faza 187 fix
+        const isHorizontalScrollContained = await page.evaluate(() => {
+            return document.documentElement.scrollWidth <= window.innerWidth;
+        });
+        expect(isHorizontalScrollContained).toBe(true);
 
         // 2. Verify the base Folio image is massive and spans coordinate parity
         console.log("Marker: 2 - Folio Image Check");
