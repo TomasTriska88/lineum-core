@@ -11,11 +11,18 @@
     import { hudActive } from "$lib/stores/hudStore";
     import * as m from "$lib/paraglide/messages.js";
     import { page } from "$app/stores";
+
+    $: isVoynich = $page.url.pathname.startsWith('/voynich');
 </script>
 
 <svelte:head>
-    <meta property="og:title" content={m.meta_title()} />
-    <meta property="og:description" content={m.meta_description()} />
+    {#if isVoynich}
+        <meta property="og:title" content="Voynich Object-Topology Archive | Lineum Lab" />
+        <meta property="og:description" content="Structural analysis and interactive overlay for the Voynich Manuscript." />
+    {:else}
+        <meta property="og:title" content={m.meta_title()} />
+        <meta property="og:description" content={m.meta_description()} />
+    {/if}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lineum.io" />
     <meta property="og:image" content="https://lineum.io/social-preview.png" />
@@ -38,19 +45,22 @@
 </svelte:head>
 
 <ParaglideJS {i18n}>
-    <Navigation />
+    {#if !isVoynich}
+        <Navigation />
+        <div class="grid-bg"></div>
+    {/if}
 
-    <div class="grid-bg"></div>
-
-    <main class:hud-pushed={$hudActive}>
+    <main class:hud-pushed={$hudActive && !isVoynich} class:is-voynich={isVoynich}>
         {#key $page.url.pathname}
             <slot />
         {/key}
     </main>
 
-    <ResonanceDeck active={$hudActive} />
-    <CookieBanner />
-    <ContactFooter />
+    {#if !isVoynich}
+        <ResonanceDeck active={$hudActive} />
+        <CookieBanner />
+        <ContactFooter />
+    {/if}
 </ParaglideJS>
 
 <style>
@@ -66,12 +76,20 @@
         transform: translateY(-20px);
     }
 
+    main.is-voynich {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     @media (max-width: 768px) {
         main {
             padding-top: var(
                 --nav-height,
                 120px
             ); /* Standard padding is enough now */
+        }
+        main.is-voynich {
+            padding-top: 0;
         }
     }
 </style>

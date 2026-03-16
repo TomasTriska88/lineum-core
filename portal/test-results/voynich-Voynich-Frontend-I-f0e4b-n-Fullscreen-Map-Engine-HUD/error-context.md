@@ -1,0 +1,45 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - strong [ref=e8]: "GUEST RESEARCH ARCHIVE:"
+        - text: This is an independent historical and cryptographic project hosted by Lineum. It is entirely unrelated to Lineum's core cosmological and physics frameworks.
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - heading "Voynich Archiva" [level=1] [ref=e11]
+          - paragraph [ref=e12]: Structural Decipherment Harness
+          - 'button "Load Pilot: okam / kald" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]: Layers
+          - button "[0] Raw Folio" [ref=e17]:
+            - generic [ref=e19]: "[0]"
+            - generic: Raw Folio
+          - button "[1] Target Segmentation" [ref=e20]:
+            - generic [ref=e22]: "[1]"
+            - generic: Target Segmentation
+          - button "[2] Physical Distortion" [ref=e23]:
+            - generic [ref=e25]: "[2]"
+            - generic: Physical Distortion
+          - button "[3] Variable Slots" [ref=e26]:
+            - generic [ref=e28]: "[3]"
+            - generic: Variable Slots
+          - button "[4] Boutique Anchors" [ref=e29]:
+            - generic [ref=e31]: "[4]"
+            - generic: Boutique Anchors
+          - button "[5] Visual Hooks" [ref=e32]:
+            - generic [ref=e34]: "[5]"
+            - generic: Visual Hooks
+          - button "[6] Record Families" [ref=e35]:
+            - generic [ref=e37]: "[6]"
+            - generic: Record Families
+          - button "[7] Semantic Hypothesis" [ref=e38]:
+            - generic [ref=e40]: "[7]"
+            - generic: Semantic Hypothesis
+        - main [ref=e41]:
+          - img "Voynich f1v" [ref=e43]
+  - generic [ref=e44]: untitled page
+```
