@@ -13,7 +13,7 @@ test.describe('Voynich Frontend Integration', () => {
         await expect(page).toHaveURL(/.*voynich/);
         
         console.log("Marker: 1 - Canvas Check");
-        const canvasMap = page.locator('main.overflow-auto');
+        const canvasMap = page.locator('main.overflow-x-hidden');
         await expect(canvasMap).toBeVisible({ timeout: 15000 });
         await expect(canvasMap).toHaveClass(/custom-scrollbar/);
 

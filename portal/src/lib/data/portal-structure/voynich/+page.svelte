@@ -172,11 +172,11 @@
     </div>
 
     <!-- Main Canvas (Background/Interactive Map) -->
-    <main class="absolute inset-0 overflow-auto flex items-start justify-center p-0 custom-scrollbar">
+    <main class="absolute inset-0 overflow-y-auto overflow-x-hidden flex items-start justify-center p-0 custom-scrollbar">
         <div class="absolute inset-0 pattern-dots opacity-20 pointer-events-none fixed"></div>
         
-        <!-- Massive map container for structural coordinate parity. min-w is used to guarantee large scale -->
-        <div class="relative shadow-[0_20px_50px_rgba(0,0,0,0.8)] rendering-pixelated bg-[#121110] border-x border-[#221f1a] w-full min-w-[1200px] max-w-[1600px] aspect-[3/4] hover:cursor-crosshair transition-transform duration-500 origin-top">
+        <!-- Centralized map container for structural coordinate parity that respects viewport width -->
+        <div class="relative shadow-[0_20px_50px_rgba(0,0,0,0.8)] rendering-pixelated bg-[#121110] border-x border-[#221f1a] w-full max-w-[1200px] mx-auto aspect-[3/4] hover:cursor-crosshair transition-transform duration-500 origin-top">
             <!-- Base Image -->
             <img src={currentFolio.imageUrl} alt="Voynich {currentFolio.id}" class="absolute inset-0 w-full h-full object-cover opacity-90" />
             
