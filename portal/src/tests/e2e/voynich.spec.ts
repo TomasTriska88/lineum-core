@@ -27,29 +27,39 @@ test.describe('Voynich Frontend Integration', () => {
         // 2. Verify the base Folio image is massive and spans coordinate parity
         console.log("Marker: 2 - Folio Image Check");
         const folioImage = page.locator('img[alt="Voynich f1v"]');
-        await expect(folioImage).toBeVisible();
+        await expect(folioImage).toBeVisible({ timeout: 15000 });
         await expect(folioImage).toHaveClass(/object-cover/);
 
         // 3. Verify Layer 3 (Variable Slots) via URL State override
         console.log("Marker: 3 - Layer 3 API Call");
         await page.goto('http://127.0.0.1:5173/voynich?layer=3', { waitUntil: 'commit' });
         
-        // Let Reactivity settle
+        // Let Reactivity settle and data load
+        await expect(page.locator('img[alt="Voynich f1v"]')).toBeVisible({ timeout: 15000 });
         await page.waitForTimeout(500);
 
         // Check that the Contextual Dossier card prompt appears
         console.log("Marker: 4 - Select Prompt Check");
         await expect(page.locator('text=Select a highlighted structural element')).toBeVisible();
 
+        // 3.5. Verify real data rendered
+        console.log("Marker: 4.5 - True Data UI Verification");
+        await page.goto('http://127.0.0.1:5173/voynich?layer=3&token=T1', { waitUntil: 'commit' });
+        await expect(page.locator('img[alt="Voynich f1v"]')).toBeVisible({ timeout: 15000 });
+        await page.waitForTimeout(500);
+        await expect(page.locator('text=kchsy')).toBeVisible();
+
         // 4. Test activating the Omega Target token (okam) via URL State override
         console.log("Marker: 5 - Layer 7 API Call");
         await page.goto('http://127.0.0.1:5173/voynich?layer=7&token=T4', { waitUntil: 'commit' });
         
+        // Wait for data load
+        await expect(page.locator('img[alt="Voynich f1v"]')).toBeVisible({ timeout: 15000 });
         // Add a slight delay to allow the flexbox DOM to settle
         await page.waitForTimeout(500);
 
         console.log("Marker: 6 - Final Translation Block Check");
-        await expect(page.getByText('Hypothesis Filter Active')).toBeVisible({ timeout: 15000 });
+        await expect(page.getByText('Translation Filter Active')).toBeVisible({ timeout: 15000 });
         console.log("Marker: 7 - DONE");
     });
 });

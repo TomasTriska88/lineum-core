@@ -13,8 +13,7 @@ This document serves as the single source of truth for all permanent legal, admi
 
 ## 📧 Communication & Infrastructure
 - **Primary Domain:** `lineum.io`
-- **Main Contact Email:** `info@lineum.io` (For general inquiries, humans and bots)
-- **Transactional/Newsletter Delivery:** `noreply@lineum.io` (via Resend/Loops.so, *not* Railway)
+- **Main Contact & System Email:** `core@lineum.io` (For general inquiries, system alerts, humans, and bots)
 
 ---
 
