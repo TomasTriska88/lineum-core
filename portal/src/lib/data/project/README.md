@@ -64,6 +64,13 @@ An interactive 3D laboratory for visualizing field data and harmonics.
 
 ---
 
+## 🔬 Research & Audits
+The `research/` directory contains exploratory materials, raw-data logs, and non-canonical working documentation.
+*   **Purpose:** This is the project's internal scratchpad for testing hypotheses (e.g. `research/audits/`). 
+*   **Disclaimer:** Documents located here are **not official product docs**, they make **no marketing claims**, their content is highly volatile, and they frequently document explicit *failed tests* used to map the engine's theoretical boundaries. Do not extrapolate these logs into official Lineum capabilities.
+
+---
+
 ## 🚀 Deployment & Workflow
 
 ### Git Protocol
