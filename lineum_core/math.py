@@ -373,16 +373,15 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
         
         if cfg.dt != 0:
             symbol = _get_fft_symbol(size, cfg.stencil_type, device, torch.float64)
+            
             psi_hat = torch.fft.fft2(psi)
             psi_hat = psi_hat * torch.exp(1j * cfg.psi_diffusion * symbol * cfg.dt)
             
             if getattr(cfg, "wave_lpf_enabled", False):
-                # Spectral filter (low pass) to prevent aliasing speckles
                 freqs = torch.fft.fftfreq(size, device=device)
                 fx, fy = torch.meshgrid(freqs, freqs, indexing='ij')
                 fr = torch.sqrt(fx**2 + fy**2)
-                # Cutoff high frequencies (Nyquist is 0.5)
-                lpf = torch.exp(-(fr / getattr(cfg, "wave_lpf_cutoff", 0.35))**8)  # Super-Gaussian smooth rolloff
+                lpf = torch.exp(-(fr / getattr(cfg, "wave_lpf_cutoff", 0.35))**8)
                 psi_hat = psi_hat * lpf
                 
             psi = torch.fft.ifft2(psi_hat)
@@ -417,6 +416,21 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
                 ring = torch.clamp(dilated - not_kappa, 0.0, 1.0)
                 psi = psi * torch.exp(-gamma_obs * ring * cfg.dt)
                 
+        # --- HARD PADDING WALL & PML Absorbing Boundary (Torus Fix) ---
+        pml_depth = 6
+        if size > pml_depth * 2:
+            pml_mask = torch.zeros_like(phi)
+            pml_mask[:pml_depth, :] = 1.0
+            pml_mask[-pml_depth:, :] = 1.0
+            pml_mask[:, :pml_depth] = 1.0
+            pml_mask[:, -pml_depth:] = 1.0
+            psi = psi * torch.exp(-20.0 * pml_mask * cfg.dt)
+            
+        psi[0, :] = 0.0
+        psi[-1, :] = 0.0
+        psi[:, 0] = 0.0
+        psi[:, -1] = 0.0
+        
         amp_post = torch.abs(psi)
         cap_mask = amp_post > cfg.psi_amp_cap
         cap_trigger_count = int(cap_mask.sum().item())

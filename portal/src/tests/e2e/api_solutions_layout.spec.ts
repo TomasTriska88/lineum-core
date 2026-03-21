@@ -52,4 +52,44 @@ test.describe('API Solutions Layout', () => {
         }
     });
 
+    test('Ambient background should bridge the navigation gap completely', async ({ page }) => {
+        await page.goto('/api-solutions');
+        
+        const ambientBg = page.locator('div[aria-hidden="true"]').first();
+        await expect(ambientBg).toBeAttached();
+        
+        const bgBox = await ambientBg.boundingBox();
+        expect(bgBox).not.toBeNull();
+        
+        if (bgBox) {
+            // The top of the background should be negative to hide the nav gap
+            expect(bgBox.y).toBeLessThan(0);
+        }
+    });
+
+    test('Hero CTA buttons should utilize correct Tailwind utility classes', async ({ page }) => {
+        await page.goto('/api-solutions');
+        
+        const primaryBtn = page.locator('.bg-cyan-400').first();
+        const secondaryBtn = page.locator('.border-white\\/10').first();
+        
+        await expect(primaryBtn).toBeVisible();
+        await expect(primaryBtn).toHaveClass(/bg-cyan-400/);
+        
+        await expect(secondaryBtn).toBeVisible();
+        await expect(secondaryBtn).toHaveClass(/bg-white\/5/);
+    });
+
+    test('ROI component should maintain mx-auto centering and proper bottom spacing', async ({ page }) => {
+        await page.goto('/api-solutions');
+        
+        // Target the ROI grid container via input[type="range"]
+        const roiGrid = page.locator('.grid.lg\\:grid-cols-2').filter({ has: page.locator('input[type="range"]') }).first();
+        await expect(roiGrid).toBeVisible();
+        
+        // Assert centering and margin-bottom are applied
+        await expect(roiGrid).toHaveClass(/mx-auto/);
+        await expect(roiGrid).toHaveClass(/mb-32/);
+    });
+
 });

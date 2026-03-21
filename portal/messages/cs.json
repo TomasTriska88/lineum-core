@@ -112,7 +112,7 @@
     "api_solutions_roi_title": "Neuromorfní ekosystém AI",
     "api_solutions_roi_subtitle": "Lineum představuje revoluční ne-von-Neumannovskou architekturu. Prostřednictvím výpočtů založených čistě na interferenci vln odemykáme <strong class='text-white font-semibold'>absolutní náhodnost (True RNG), nevratné hašování a LPL překladače</strong>. Nevyžaduje se žádný trénink neuronových sítí.",
     "api_solutions_features_rng_title": "Těžba True RNG",
-    "api_solutions_features_rng_desc": "Generuje matematicky dokonalou náhodnost zesílením kvantového a termálního šumu procesorů na samou hranici chaosu.",
+    "api_solutions_features_rng_desc": "Generuje matematicky nestabilní chaotickou turbulenci zesílením kvantového a termálního šumu procesorů na samou hranici chaosu.",
     "api_solutions_features_hash_title": "Kryptografická lavina",
     "api_solutions_features_hash_desc": "Jednosměrné hardwarové hašování. Změna jediného bytu nevyhnutelně spouští masivní topologické makro-fraktury.",
     "api_solutions_features_lpl_title": "Vizuální logická hradla",

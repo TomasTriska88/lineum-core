@@ -3,8 +3,7 @@
     import * as m from "$lib/paraglide/messages.js";
     import LogoCloud from "$lib/components/LogoCloud.svelte";
     import { portal } from "$lib/actions/portal";
-    import UrbanRoutingApp from "$lib/components/api-showcase/UrbanRoutingApp.svelte";
-    import EvacRoutingApp from "$lib/components/api-showcase/EvacRoutingApp.svelte";
+    import DiffusionShowcase from "$lib/components/api-showcase/DiffusionShowcase.svelte";
     import FastTrngApp from "$lib/components/api-showcase/FastTrngApp.svelte";
     import ZetaEntropyApp from "$lib/components/api-showcase/ZetaEntropyApp.svelte";
     import Web3VrfApp from "$lib/components/api-showcase/Web3VrfApp.svelte";
@@ -38,23 +37,25 @@
     const SNIPPETS = {
         python: `import lineum
 
-# 1. Initialize the AI LTM Field
+# 1. Initialize the Core Fluid Backend
 solver = lineum.Client(api_key="lnm_enterprise_***")
 
-# 2. Extract paths directly from the field
-result = solver.route(
-    map="urban_city_block.bin",
-    agents=[{"start_x": 10, "start_y": 10}, {"start_x": 20, "start_y": 20}],
-    target={"x": 60, "y": 110}
+# 2. Mathematically extract critical pressure bottlenecks natively
+result = solver.infer_diffusion(
+    map="organic_terrain.bin",
+    sources=[{"x": 10, "y": 10}],
+    drains=[{"x": 60, "y": 110}]
 )
+
+print(result["ranked_bottlenecks"])
 `,
-        curl: `curl -X POST https://api.lineum.io/v1/compute/swarm \\
+        curl: `curl -X POST https://api.lineum.io/v1/spatial/diffusion/infer \\
   -H "Authorization: Bearer lnm_enterprise_***" \\
   -H "Content-Type: application/json" \\
   -d '{
-    "map": "urban_city_block.bin",
-    "target": {"x": 60, "y": 110},
-    "agents": [{"start_x": 10, "start_y": 10}, {"start_x": 20, "start_y": 20}]
+    "grid_size": [128, 128],
+    "source_seeds": [{"x": 10, "y": 10, "intensity": 20}],
+    "kappa": [...]
   }'`,
     };
 
@@ -62,19 +63,37 @@ result = solver.route(
 </script>
 
 <svelte:head>
-    <title>{m.common_brand()} API Solutions | Swarm Routing Showcase</title>
+    <title>{m.common_brand()} API Solutions | Diffusion Inference Showcase</title>
 </svelte:head>
 
 <div
     data-hydrated={pageHydrated}
-    class="min-h-screen text-slate-50 font-sans flex flex-col pt-[104px]"
+    class="min-h-screen text-slate-50 font-sans flex flex-col relative"
+    style="padding-top: 8rem;"
 >
+    <!-- Premium Ambient Background (Simulacrum Aesthetic) -->
+    <div class="absolute -top-[150px] inset-x-0 bottom-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <!-- High-Tech CSS Dot Grid Fade -->
+        <div 
+            class="absolute inset-0 opacity-[0.05]" 
+            style="background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 32px 32px; mask-image: linear-gradient(to bottom, black 0%, black 30%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 0%, black 30%, transparent 100%);"
+        ></div>
+        
+        <!-- Cyan Wave (Top Left) -->
+        <div class="absolute -top-40 -left-40 w-[800px] h-[800px] bg-cyan-500/10 rounded-full blur-[150px]"></div>
+        
+        <!-- Purple Memory (Center Right) -->
+        <div class="absolute top-[10%] -right-40 w-[1000px] h-[1000px] bg-violet-600/10 rounded-full blur-[150px]"></div>
+        
+        <!-- Amber Identity (Bottom Center) -->
+        <div class="absolute top-[50%] left-1/4 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-[150px]"></div>
+    </div>
+
     <!-- Main Content -->
-    <main class="flex-1 w-full flex flex-col items-center">
+    <main class="flex-1 w-full flex flex-col items-center relative z-10">
         <!-- VERCEL-STYLE HERO SECTION (Centered, Clean, Massive) -->
         <div
-            class="w-full flex flex-col items-center justify-center text-center px-4 pt-16 pb-16 max-w-5xl mx-auto"
-            style="margin-top: calc(180px - var(--nav-height, 120px));"
+            class="w-full flex flex-col items-center justify-center text-center px-4 pt-8 pb-16 max-w-5xl mx-auto"
         >
             <div class="flex items-center gap-3 mb-8">
                 <span
@@ -106,17 +125,15 @@ result = solver.route(
                 {m.api_solutions_hero_subtitle()}
             </p>
 
-            <div class="cta-group">
+            <div class="flex flex-wrap items-center justify-center gap-4">
                 <a
                     href="#roi"
-                    class="btn btn-primary"
-                    style="background-color: var(--accent-cyan); color: #020617;"
+                    class="px-8 py-4 rounded-full bg-cyan-400 text-slate-950 font-bold hover:bg-cyan-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.4)] transition-all"
                     >{m.api_solutions_hero_cta_build()}</a
                 >
                 <a
                     href="/wiki"
-                    class="btn btn-outline"
-                    style="border-color: rgba(255,255,255,0.2); color: white;"
+                    class="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition-all backdrop-blur-md"
                     >{m.api_solutions_hero_cta_docs()}</a
                 >
             </div>
@@ -154,7 +171,7 @@ result = solver.route(
                     <div
                         class="text-5xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-violet-500/50 drop-shadow-[0_0_15px_rgba(139,92,246,0.3)] select-none uppercase"
                     >
-                        ENTROPY
+                        PHASE EXTRACT
                     </div>
                     <h4 class="text-lg font-bold text-white mb-3">
                         {m.api_solutions_features_rng_title()}
@@ -179,7 +196,7 @@ result = solver.route(
                     <div
                         class="text-4xl sm:text-5xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-emerald-500/50 drop-shadow-[0_0_15px_rgba(16,185,129,0.3)] select-none uppercase"
                     >
-                        AVALANCHE
+                        TOPOLOGY
                     </div>
                     <h4 class="text-xl font-bold text-white mb-3">
                         {m.api_solutions_features_hash_title()}
@@ -229,7 +246,7 @@ result = solver.route(
             class="hidden xl:flex fixed left-8 top-1/2 -translate-y-1/2 z-50 flex-col gap-3 bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-3xl shadow-2xl"
         >
             <a
-                href="#routing"
+                href="#pressure-inference"
                 class="group flex items-center gap-4 px-2 py-2 rounded-xl transition-all hover:bg-slate-800"
             >
                 <div
@@ -237,7 +254,7 @@ result = solver.route(
                 ></div>
                 <span
                     class="text-xs font-bold text-slate-400 group-hover:text-white transition-colors uppercase tracking-widest hidden lg:block pr-2"
-                    >Routing</span
+                    >Pressure Inference</span
                 >
             </a>
             <a
@@ -249,7 +266,7 @@ result = solver.route(
                 ></div>
                 <span
                     class="text-xs font-bold text-slate-400 group-hover:text-white transition-colors uppercase tracking-widest hidden lg:block pr-2"
-                    >Fast TRNG</span
+                    >Wave Phase</span
                 >
             </a>
             <a
@@ -285,7 +302,7 @@ result = solver.route(
                 ></div>
                 <span
                     class="text-xs font-bold text-slate-400 group-hover:text-white transition-colors uppercase tracking-widest hidden lg:block pr-2"
-                    >LineumHash</span
+                    >Topo Signature</span
                 >
             </a>
             <a
@@ -304,20 +321,20 @@ result = solver.route(
 
         <!-- Mobile/Tablet Top Navigation (Hidden on Large Screens) -->
         <div
-            class="w-full max-w-6xl mx-auto px-4 mb-24 sticky top-[100px] z-[110] xl:hidden"
+            class="w-full max-w-6xl mx-auto px-4 mb-24 sticky top-32 z-[110] xl:hidden"
         >
             <div
-                class="flex items-center gap-3 bg-slate-900/90 backdrop-blur-xl border border-slate-700 p-3 rounded-2xl shadow-xl overflow-x-auto overflow-y-hidden snap-x snap-mandatory"
+                class="flex items-center gap-3 bg-slate-900/90 backdrop-blur-xl border border-slate-700 p-3 px-4 rounded-2xl shadow-xl overflow-x-auto overflow-y-hidden snap-x snap-mandatory"
             >
                 <a
-                    href="#routing"
+                    href="#pressure-inference"
                     class="snap-start px-5 py-3 rounded-full text-base font-bold transition-all !text-slate-300 hover:!text-white hover:bg-slate-800 whitespace-nowrap !no-underline flex-shrink-0"
-                    >Routing</a
+                    >Pressure Inference</a
                 >
                 <a
                     href="#fast_trng"
                     class="snap-start px-5 py-3 rounded-full text-base font-bold transition-all !text-slate-300 hover:!text-white hover:bg-slate-800 whitespace-nowrap !no-underline flex-shrink-0"
-                    >Fast TRNG</a
+                    >Wave Phase</a
                 >
                 <a
                     href="#zeta"
@@ -343,21 +360,34 @@ result = solver.route(
         </div>
 
         <!-- content wrapped -->
-        <div
-            id="routing"
-            class="w-full flex-col flex items-center scroll-mt-48"
-        >
-            <UrbanRoutingApp />
-
-            <div
-                class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent my-32 max-w-4xl mx-auto"
-            ></div>
-
-            <div id="evac" class="scroll-mt-48 w-full">
-                <EvacRoutingApp />
-            </div>
+        <div id="pressure-inference" class="w-full flex flex-col items-center gap-16 scroll-mt-48">
+            <DiffusionShowcase 
+                title="Crowd Pressure at Narrow Exits" 
+                scenarioId="evacuation_door" 
+                baselineName="Geometric Distance Baseline (EDT)" 
+            />
+            
+            <DiffusionShowcase 
+                title="Topographical Friction & Bypasses" 
+                scenarioId="swamp_bypass" 
+                baselineName="Weighted Journey-Cost Baseline (Dijkstra)" 
+            />
+            
+            <DiffusionShowcase 
+                title="Continuous Flow Through Terrain" 
+                scenarioId="organic_canyon" 
+                baselineName="Terrain Topology Baseline" 
+            />
         </div>
-        <!-- End of routing section div -->
+        <!-- End of diffusion section div -->
+
+        <div class="w-full max-w-7xl mx-auto px-4 mt-32 mb-16 flex flex-col items-center text-center">
+             <div class="inline-block px-4 py-1.5 border border-rose-500/30 bg-rose-500/10 text-rose-400 text-xs font-bold rounded-full tracking-widest uppercase mb-4">
+                 Lineum Labs / Experimental
+             </div>
+             <h2 class="text-3xl font-bold text-white mb-2">Wave Topology & Applied Cryptography</h2>
+             <p class="text-slate-400 text-sm max-w-2xl">The following modules represent active mathematical research into standing wave heuristics and localized entropy generators. They are firmly experimental and fall explicitly outside current core commercial product boundaries.</p>
+        </div>
 
         <div
             class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-32 max-w-4xl mx-auto"
@@ -413,7 +443,7 @@ result = solver.route(
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
                 <!-- Hardware & Circuits -->
                 <a
-                    href="/api-solutions/hardware-routing"
+                    href="/api-solutions/embedded-hardware"
                     class="group relative bg-slate-900/40 border border-slate-800 rounded-2xl p-6 overflow-hidden transition-all hover:bg-slate-900/60 hover:border-violet-500/50 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] flex flex-col h-full"
                 >
                     <div
@@ -649,7 +679,7 @@ result = solver.route(
 
         <!-- ROI & Integration Section -->
         <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 w-full max-w-7xl"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 mb-32 w-full max-w-7xl mx-auto px-4"
         >
             <!-- ROI Calculator -->
             <div
@@ -755,7 +785,7 @@ result = solver.route(
                         ></span>
                     </div>
                     <div class="text-xs font-mono text-slate-500">
-                        POST /api/v1/compute/swarm
+                        POST /api/v1/spatial/diffusion/infer
                     </div>
                     <div class="flex gap-2">
                         <button

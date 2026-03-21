@@ -273,8 +273,8 @@
                 <h2>2. Physics Configuration</h2>
                 <div class="grid-2">
                     <div class="input-group">
-                        <label>Discretization Stencil</label>
-                        <select bind:value={stencilType}>
+                        <label for="stencilType">Discretization Stencil</label>
+                        <select id="stencilType" bind:value={stencilType}>
                             <option value="LAP4"
                                 >LAP4 (Default, Deterministic)</option
                             >
@@ -284,16 +284,18 @@
                         </select>
                     </div>
                     <div class="input-group">
-                        <label>Identity Alias</label>
+                        <label for="identityName">Identity Alias</label>
                         <input
+                            id="identityName"
                             type="text"
                             bind:value={identityName}
                             placeholder="E.g. Lina_Base"
                         />
                     </div>
                     <div class="input-group">
-                        <label>Personalization Depth (Scraping Strength)</label>
+                        <label for="personalizationDepth">Personalization Depth (Scraping Strength)</label>
                         <input
+                            id="personalizationDepth"
                             type="range"
                             min="0.1"
                             max="2.0"

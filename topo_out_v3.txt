@@ -1,0 +1,7 @@
+\n=== TOPOLOGY CORRECTNESS: TUNNELING VS WRAP-AROUND ===
+\nMode: wave_projected_soft
+  1-px Wall -> Top: 1804.56 | Tunnel Leak: 28.2869 | Wrap Leak: 4.2535
+  10-px Wall-> Top: 1797.96 | Tunnel Leak: 15.2881 | Wrap Leak: 4.3098
+\nMode: wave_projected
+  1-px Wall -> Top: 1803.29 | Tunnel Leak: 28.7274 | Wrap Leak: 4.1818
+  10-px Wall-> Top: 1798.96 | Tunnel Leak: 15.6212 | Wrap Leak: 4.3551
