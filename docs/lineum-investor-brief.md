@@ -36,20 +36,15 @@ We maintain a strict boundary between our commercially ready Core API and our ad
 - **Acoustic Resonance / Material Stress:** ❄️ **FROZEN.** (Capability explored, but entirely isolated from current SaaS commercial focus).
 - **A* Route Replacement:** ❄️ **FROZEN.**
 
-## 5. Next Step: The Interactive Web Demo
-We do not make investors read whitepapers. The sole, immediate next step is deploying the **Lineum Live Interactive Prototype**. 
+## 5. Long-Term Compute Hardware Vision
+*Note: This is explicitly NOT the current product. It is NOT a physically verified prototype, and it is NOT an investor promise for near-term delivery. It is a long-horizon architecture hypothesis derived purely from internal Lineum research into continuous-wave scaling.*
 
-Partner executives will open a web canvas, sketch a corridor with their mouse, and watch as Lineum renders the Organic Heatmap. If they draw a brick wall across the main artery, the Lineum API will recalculate the global pressure topology and pinpoint the newly emergent secondary bottlenecks. **This sandbox demonstrates the baseline analytical capability.**
-
-## 6. Long-Term Compute Hardware Vision: Optical / In-Materio Substrate
-*Note: This is NOT the current v1 product. This is not a physically built or experimentally verified hardware prototype. This section outlines a long-horizon hardware design hypothesis derived from internal Lineum research into non-Boolean continuous-wave scaling. The present product remains entirely the SaaS Flow Vulnerability API.*
-
-While Lineum is currently deployed as an enterprise software API, the underlying mathematical core (`Eq-7 Wave Engine`) is not a traditional digital algorithm. It is a mathematically exact emulator for **Continuous-Wave Diffractive Optical Computing**. Internal R&D has exhaustively mapped how Lineum’s 2维 grid behaves mathematically. We have mapped that our topology can form RAM Vaults, engrave permanent structural memory paths, and execute reusable erase cycles within the math. Because Lineum computes logic by allowing continuous waves to diffract off topographies rather than using discrete Boolean silicon transistors, the engine naturally aligns with future **Compute-in-Memory (In-Materio)** paradigms.
+While Lineum is currently implemented and benchmarked as a software API, the underlying mathematical core (`Eq-7 Wave Engine`) structurally emulates **Continuous-Wave Diffractive Optical Computing**. Internal R&D has systematically mapped how Lineum’s grid behaves mathematically, extracting robust software primitives like RAM Vaults, structural memory paths, and reusable erasure mechanisms within the mathematical sandbox.
 
 **The Photonic Architecture Hypothesis:**
-The long-term vision scales Lineum out of the software GPU and into a physical, solid-state optical substrate (such as a Phase-Change photodetractive medium). Instead of rendering architecture on a processor, a Spatial Light Modulator (SLM) projects the building's walls as physical light-barriers onto the medium. An edge-injected laser then passes through this layer. Because light natively computes wave-interference and spatial congestion at $300,000$ km/s across massive macroscopic node clusters, the physical glass itself could theoretically solve the entire multi-lane flow congestion matrix instantly, in parallel, with near-zero energy consumption. 
+The long-horizon hypothesis scales Lineum physically into a solid-state optical substrate (such as a Phase-Change photorefractive medium). Instead of rendering architecture on a software processor, a Spatial Light Modulator (SLM) physically programs the topology onto the medium, and an edge-injected laser computes through native optical propagation inside the substrate.
 
-The current Lineum software serves as the vital digital sandbox to design, test, and benchmark the wall topologies, memory paths, and routing fields required for this class of spatial-compute hardware. This positions Lineum not just as a simulation tool, but as a foundational design research framework for the next century of in-materio optical processing architectures.
+The current Lineum software explicitly does **not** prove that a Turing-complete optical computer is finished today. Rather, the Eq-7 software serves as the vital digital emulator to design and test the topological bounds required for this class of spatial-compute architecture, positioning Lineum as a foundational design framework for the future of in-materio optical processing.
 
 ---
 # Internal Appendix: Pitch Governance & Due Diligence
@@ -62,7 +57,7 @@ The current Lineum software serves as the vital digital sandbox to design, test,
 ## Claims Matrix Checklist
 | Claim Text | Status | Supporting Audit | Investor-Safe Wording | Forbidden Wording |
 |---|---|---|---|---|
-| Instantly extracts bottlenecks from static binary shapes | 🟢 PROVEN | `topological-vulnerability` | "Lineum delivers fast macro-scale flow analytics." | "Lineum guarantees flawless real-time pedestrian simulation." |
+| Instantly extracts bottlenecks from static binary shapes | 🟢 PROVEN | `topological-vulnerability` | "Lineum delivers fast macro-scale flow analytics." | "Real-time pedestrian simulation." |
 | Generates physically bounded fluid heatmaps without cost | 🟢 PROVEN | `organic-heatmap` | "Outputs premium structural gradient layer." | "Calculates perfect global fluid mass tracking." |
 | Organic Dynamic Swarm Traffic Capacity Routing natively | 🟡 EXPLORATORY | `games-qa-audit` | "Lab R&D indicates swarm flow potential." | "The API handles live multidirectional crowd evasion natively." |
 | Acoustic Resonance detects ambush corners automatically | ❄️ FROZEN | `resonance-vulnerability` | N/A | "Lineum accelerates acoustics for games." |

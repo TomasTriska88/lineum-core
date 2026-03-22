@@ -9,58 +9,24 @@
 - `mu` layer biases flow speed organically (30% speedup).
 
 ## DON’T REINVENT WHAT ALREADY EXISTS
-We mathematically forbid pursuing "water-blocking-water" transistors (fluidic gates). Lineum's fundamental logic relies on **Architectural Kappa Switching** (externally programmable walls) and **Congestion API** (nodes actively avoiding `phi` pressure). The physics engine is not the logic gate; the physics engine computes the pressure topology. The API/Hardware is the logic gate.
+We mathematically forbid pursuing "water-blocking-water" transistors (fluidic gates). Lineum's fundamental logic relies on **Architectural Kappa Switching** (externally programmable walls) and **Congestion API** (nodes actively avoiding `phi` pressure). The physics engine computes the pressure topology. The API/Hardware is the logic gate.
 
-## HISTORICAL EQ-4 EVIDENCE
-- **What worked:** Strict Boolean logic gates (AND, OR, XOR) via destructive interference, precise topological trapping.
-- **Why it is historical:** Eq-4 used hard-clipped amplitudes resembling clean laser pulses.
-- **Current Status:** Retained strictly as theoretical foundation for future hardware. Fails in current Eq-7 software due to thermal washout.
+## HISTORICAL EQ-4 HARDWARE EVIDENCE
+- **OR / XOR / Gate Feasibility:** Worked strictly in the old Eq-4 limit using hard-clipped amplitudes and interference. Completely fails in current Eq-7 software due to thermal washout.
+- **Historical Oscillators / Memory Chambers:** Eq-4 exhibited stable rhythmic bouncing between parallel walls, behaving as a primitive clock/oscillator. Modern Eq-7 lacks this un-damped stability.
 
-## CURRENT EQ-7 EVIDENCE
-- **What works:** Analog thermodynamics, perfect topographical isolation (`kappa`), organic path scarring (`mu`), macroscopic pressure gradient routing.
-- **What failed:** Delicate structural intelligence (words, XOR gates, analog multi-state memory) due to Atwood Attractor collapse and linear superposition washout.
+## CURRENT EQ-7 SUPPORTED PRIMITIVES
+- **RAM-like Vault:** PERFECT ISOLATION. Tested in `AI-LAB-003`. Enclosures isolate `psi` signals from external noise.
+- **Local PML Erase:** REUSABLE RESET. Inserting a geometrically bound damping mask instantly purges a vault to 0.00 without damaging neighbors (`AI-LAB-006`).
+- **Mu Engraving:** STRUCTURAL MEMORY. Historical flow creates static scars that organically bias future path querying by 30% (`AI-LAB-002`).
+- **Architectural Kappa Switching:** SUPPORTED ROUTING. Dynamic, externally programmable barriers are the only unconditionally verified routing primitives. (Wave-vs-wave fluid switches failed).
+- **RAM-ROM Coupling:** NO MEANINGFUL COUPLING. Tested in `AI-LAB-011`. While RAM vaults can flawlessly cycle (Write, Hold, Erase, Rewrite, Discharge), the downstream discharge mathematically ignores `mu`/`delta` engraved friction tracks during Eq-7 diffusion routing (splitting strictly 50/50 geometrically). Mu-engraving cannot reliably steer RAM states without `kappa` help.
 
----
-
-### 1) Memory
-*RAM vaults, mu ROM/HDD engraving, WORM vs Reusable distinction.*
-- **RAM Vaults:** PROVEN (`AI-LAB-003`). `kappa=0.05` enclosures perfectly isolate `psi` signals from external thermal detonation. Functions as 1-bit WORM memory.
-- **Mu ROM / HDD Engraving:** PROVEN (`AI-LAB-002`). Historical flow scars the `mu` matrix, permanently biasing future queries by 30%.
-- **Reusable Erase (Local PML):** PROVEN (`AI-LAB-006`). Inserting a mathematically matched damping mask (`PML`) inside a vault instantly resets the cell to exactly 0.00 without damaging adjacent cells, allowing infinite write/erase cycles.
-- **WORM vs Reusable:** RAM + PML is infinitely reusable (SRAM analogue). Mu saturation is WORM (Write Once Read Many).
-
-### 2) Switching / Routing
-*Failed fluidic switches, supported architectural switching, congestion routing.*
-- **Internal Fluidic Switch:** FAILED (`AI-LAB-007`). No robust internal wave-vs-wave fluidic switch was found in the current Eq-7 formulation. Cross-flow pressure blocks only 7% of flow due to superposition.
-- **Architectural Switching (Kappa Mask):** SUPPORTED SIGNAL. Dynamic, externally programmed topological barriers (`kappa=0` to `1`) are the true, highly robust routing primitives.
-- **Congestion / Phi Routing:** PROVEN. Nodes/agents actively avoid high `phi` pressure, creating the primary network routing logic.
-- **Mu Tracks:** PROVEN. Engraved `mu` paths act as preference lanes (Soft Bias), but not as hard logic gates.
-
-### 3) Read / Write / Erase
-*Lifecycle paths and signals.*
-- **Write:** PROVEN. Direct array injection (Laser Input).
-- **Hold:** PROVEN. Continuous internal rotation inside Kappa Vaults.
-- **Read:** PROVEN. Opening a `kappa` wall vents pressure (flux) to a measurable sensor destination.
-- **Erase:** PROVEN. Local PML damping masks instantly extinguish state. Destructive interference (-psi) FAILED.
-
-### 4) Timing
-*Return echo, oscillators.*
-- **Return Echo:** HISTORICAL / HYPOTHESIS. Eq-4 exhibited rhythmic bouncing between parallel walls.
-- **Current Eq-7 Timing:** NOT BENCHMARKED. Strong likelihood of thermal washout preventing stable long-term oscillators without strict PML sinks.
-
-### 5) Native Structures
-*Nodes, topological phenomena.*
-- **Linons / Nodes:** PROVEN. The core semantic carriers that read the `phi` gradients.
-- **Attractors:** PROVEN. The terminal thermal state of all enclosed `psi` energy.
-- **Vortices / Traps:** CONCEPT / HISTORICAL. Clean vortices wash out in Eq-7.
-
-### 6) Hardware Translation Layer
-*Mapping abstract software to physical instantiation.*
-- **Optical / Photonic Substrate:** PLAUSIBLE VISION. The Eq-7 array explicitly maps to continuous-variable diffractive optics.
-- **The Medium:** GST / Phase-Change photorefractive materials naturally emulate the `mu` (memory) and `phi` (pressure) dynamics natively.
-- **The Architect:** A top-down Spatial Light Modulator (SLM) directly replaces the Python `kappa` API, drawing walls with light.
-- **The Compute:** Edge-injected lasers (`psi`) continuously solve the Navier-Stokes / Schrödinger arrays in sub-nanoseconds in free space without CPU cycles.
-
----
-## LONG-HORIZON HARDWARE VISION
-Lineum is not merely a software algorithm; it is a direct emulator for Compute-In-Memory diffractive optical hardware. The long-term architecture physically replaces the GPU with a solid-state non-linear glass/GST crystal. The current Eq-7 software acts as the exact architectural layout tool to design and test the `kappa` wall geometries and `mu` memory routing traces for this future zero-watt photonic substrate.
+## LONG-HORIZON HARDWARE HYPOTHESIS
+*Note: This architecture is explicitly NOT hardware-proven today.*
+- **Optical / Photonic / In-Materio Architecture:** The long-horizon hypothesis scales Lineum physically into a solid-state computation module, abandoning CPU/GPU bounds for passive physical refraction.
+- **SLM / Side-Laser / Substrate Concept:** A top-down Spatial Light Modulator (SLM) physically draws the architectural `kappa` layout dynamically onto a Phase-Change photodetractive substrate material. A side-injected laser acts as the physical `psi` computing wave. 
+- **The Equation Context:** Eq-7 acts as the exact architectural layout tool / design emulator for this future zero-watt hardware, rather than being the final commercial hardware product itself.
+- **Topological Ping-Pong (Spatial Pipelining):** CENTRAL ORCHESTRATION HYPOTHESIS. Instead of an infinitely large grid for deep programs, the architecture splits the substrate into Left/Right dynamic memory banks. State is held in RAM A while SLM reconfigures the compute field on side B. The wave is discharged through the new circuit, captured in RAM B, and the cycle reverses. 
+  - *Compelling solving power:* Bypasses the need for complex permanent flow routing ("wires"), resolves finite spatial area constraints, and mathematically bridges the time-asymmetry between fast optical physics and slower SLM reconfiguration.
+  - *Benchmarked Primitive:* Tested in `AI-LAB-012`. State successfully shuttled from Vault A to Vault B, survived spatial wiping, and successfully rebounded from B back to A. Mass accumulation (`phi`) proves state mathematically expands rather than decaying during A->B->A pipelining. What remains unproven is Turing-complete logic processing *during* the shuttling.
