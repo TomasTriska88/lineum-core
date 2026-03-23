@@ -88,9 +88,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "water_ripple_idle":
         dt = 0.8
-        contrast_scale = 2.5
-        dissipation = 0.02
-        impact = 0.5 * np.exp(-(dist**2) / 10.0)
+        contrast_scale = 4.5  # Boost visual threshold so ripples reach the full 100% edge
+        dissipation = 0.005   # Let it survive the full extended 45-frame sequence
+        impact = 0.8 * np.exp(-(dist**2) / 12.0)
         psi = psi + impact + 0j
         
     elif preset_name == "explosion":
@@ -186,7 +186,11 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     # Calculate bounding
     base_phase_velocity = 0.10
     total_required_steps = (view_radius / base_phase_velocity) * steps_factor
-    steps_per_frame = math.ceil(total_required_steps / frames)
+    
+    # We keep physical speed calibrated to 30 frames, but simulate 45 frames
+    # so the engine physically advances 50% further into the ripples' future.
+    steps_per_frame = max(1, math.ceil(total_required_steps / 30.0)) 
+    
     total_sim_steps = frames * steps_per_frame
     decay_per_step = math.pow(0.2, 1.0 / total_sim_steps)
     
@@ -276,11 +280,16 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         alpha_raw = np.abs(np.tanh(wave_centered * contrast_scale))
         vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
         
-        # Global smooth alpha fade over the last 30% of the animation to prevent hard cuts
+        # Global smooth alpha fade ending in completely transparent padding frames
         if preset_name != "linon_vortex":
-            fade_start_frame = int(frames * 0.70)
-            if f >= fade_start_frame:
-                global_fade = 1.0 - ((f - fade_start_frame) / (frames - 1 - fade_start_frame))
+            empty_frames = 5 # 5 frames of pure invisible padding at the end
+            fade_start_frame = int(frames * 0.60) # Start fading at 60% completion
+            fade_end_frame = frames - empty_frames
+            
+            if f >= fade_end_frame:
+                global_fade = 0.0
+            elif f >= fade_start_frame:
+                global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
             else:
                 global_fade = 1.0
         else:
