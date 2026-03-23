@@ -110,6 +110,29 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         psi = psi + (impact_ring - impact_core_dip) + 0j
         # Phi is left untouched to prevent PDE numerical ringing
         
+    elif preset_name == "gas_explosion":
+        noise_enabled = True      # Chaotic fiery gas
+        dt = 1.2                  # Moderate shockwave expansion
+        steps_factor = 1.2
+        contrast_scale = 4.5      # Puffy gas clouds
+        dissipation = 0.05        # Very high dissipation so smoke dissolves organically
+        
+        # Central blast core
+        impact_core = 4.0 * np.exp(-(dist**2) / 10.0)
+        phi_core = 8.0 * np.exp(-(dist**2) / 6.0)
+        psi = psi + impact_core + 0j
+        phi = phi + phi_core
+        
+        # 12 asymmetrical fluffy secondary gas clouds spreading out
+        for p in range(12):
+            np.random.seed(800 + p * 13 + variant * 37) # Deterministic chaotic placement per variant
+            bx = cx + (np.random.rand() - 0.5) * 12.0
+            by = cy + (np.random.rand() - 0.5) * 12.0
+            p_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
+            blob = (1.5 + np.random.rand()) * np.exp(-(p_dist**2) / (4.0 + np.random.rand() * 5.0))
+            psi = psi + blob + 0j
+            phi = phi + blob * 2.0
+        
     elif preset_name == "fire_burst":
         dt = 1.2
         noise_enabled = True
@@ -317,7 +340,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
         if preset_name == "water_wake":
             f_name = f"water_wake_{angle_deg}_{view_size}"
-        elif preset_name in ["water_drop", "water_splash_solid", "water_mud"]:
+        elif preset_name in ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]:
             f_name = f"{preset_name}_v{variant}_{view_size}"
         else:
             f_name = f"{preset_name}_{view_size}"
@@ -341,14 +364,11 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 
 if __name__ == "__main__":
     t0 = time.time()
-    # Adding Extreme AAA industry standard sizes
-    sizes = [16, 32, 48, 64, 128, 256, 512]
-    
-    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
+    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "gas_explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
     
-    multi_variant = ["water_drop", "water_splash_solid", "water_mud"]
+    multi_variant = ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]
     for p in base_presets:
         if p in multi_variant:
             for v in [1, 2, 3]:
