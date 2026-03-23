@@ -151,6 +151,20 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         strike = (np.random.rand(sim_size, sim_size) > 0.95).astype(float) * np.exp(-(dist**2) / 25.0)
         psi = psi + strike * 3.0 + 0j
         
+    elif preset_name == "linon_vortex":
+        dt = 0.8
+        noise_enabled = False
+        contrast_scale = 15.0 # extreme contrast to capture fine 4D phase wrapping
+        dissipation = 0.0   # Linons are eternal standing waves
+        
+        # Real topological quantum phase vortex (Charge = 3 for beautiful spirals)
+        theta = np.arctan2(Y - cy, X - cx)
+        amp = 1.0 - np.exp(-(dist**2) / 10.0) # Hollow core
+        # Inject the exact fundamental string equation directly into psi
+        psi_defect = amp * np.exp(1j * theta * 3.0) 
+        # Overlay the defect on the baseline
+        psi = 0.5 + psi_defect * 0.4 * np.exp(-(dist**2) / 150.0)
+        
     elif preset_name == "water_wake":
         dt = 1.0
         contrast_scale = 3.5  # Softer visual contrast for elegant game-feel
@@ -301,7 +315,7 @@ if __name__ == "__main__":
     t0 = time.time()
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
+    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")

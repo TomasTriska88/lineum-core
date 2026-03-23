@@ -250,3 +250,16 @@ def test_preset_lightning_strike_stability():
     state["psi"] += 3.0 * np.exp(-(dist**2) / 25.0)
     for _ in range(5): state = step_core(state, config)
     assert not np.isnan(np.sum(state["psi"])), "Lightning Strike caused NaN"
+
+def test_preset_linon_vortex_stability():
+    state, dist, X, Y, cx, cy = get_base_state()
+    config = CoreConfig(
+        disable_quantum_noise=True, use_mode_coupling=False, 
+        physics_mode_psi="wave_baseline", dt=0.8, dissipation_rate=0.0, stencil_type="ISOTROPIC"
+    )
+    theta = np.arctan2(Y - cy, X - cx)
+    amp = 1.0 - np.exp(-(dist**2) / 10.0)
+    psi_defect = amp * np.exp(1j * theta * 3.0) 
+    state["psi"] = 0.5 + psi_defect * 0.4 * np.exp(-(dist**2) / 150.0)
+    for _ in range(20): state = step_core(state, config)
+    assert not np.isnan(np.sum(state["psi"])), "Linon Vortex caused NaN"
