@@ -112,10 +112,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 0.5                  # Pomalý a těžký vývoj
+        dt = 1.0                  
         steps_factor = 1.0
-        contrast_scale = 1.6      # Měkký kontrast
-        dissipation = 0.15        # Extrémní rozpad k utlumení jakýchkoliv odrazů a vln
+        contrast_scale = 3.5      # Středně vysoký kontrast pro FBM procedurální mrak
+        dissipation = 0.05
 
         
     elif preset_name == "fire_burst":
@@ -252,28 +252,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
         elif preset_name == "gas_explosion" and f < 14:
-            # Opravdová procedurální objemová textura (Sine-wave interference hluku)
-            # Tímto se natrvalo vyhneme Central Limit Theorému, který předtím z random teček udělal kruh.
-            np.random.seed(800 + variant * 15)
-            
-            # 4-oktávový nízkofrekvenční šum tvořící organické "obří vlny" v prostoru (mraky)
-            noise = np.sin(X * 0.1 + np.random.rand() * 10)
-            noise += np.cos(Y * 0.11 + np.random.rand() * 10)
-            noise += np.sin((X + Y) * 0.07 + np.random.rand() * 10)
-            noise += np.cos((X - Y) * 0.08 + np.random.rand() * 10)
-            noise *= 0.25 # Normalizace šumu zhruba na rozsah -1.0 až 1.0
-            
-            # Plynule expandující sférická maska, která postupně odkrývá strukturu vnitřního šumu
-            c_rad = 8.0 + f * 2.5
-            mask = np.exp(-(dist**2) / (c_rad**2))
-            
-            fade = 1.0 - (f / 14.0)
-            
-            # Vstřikujeme přímo do PSI jako hotovou krajinu, aby PDE nemuselo vlnit, ale jen vyhlazovat
-            psi = psi + (mask * (1.0 + noise)) * fade * 0.4
-            
-            # Jen lehký tah do PHI, aby ty oblaka uvnitř pomalu vřela a hýbala se
-            phi = phi + (mask * (1.0 + noise)) * fade * 0.05
+            pass # PDE vstřikování je vypnuto. Plynulý mrak neze vyrobit z 2D Vlnové rovnice (Besselovy kruhy).
+                 # Fyzika je kompletně převedena do analytického FBM renderu na konci snímku.
 
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
@@ -312,6 +292,41 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         offset = (sim_size - phys_size) // 2
         wave_crop = wave[offset:offset+phys_size, offset:offset+phys_size]
         wave_centered = wave_crop - 0.5
+        
+        if preset_name == "gas_explosion":
+            # ÚPLNÉ OBEJITÍ VLNOVÉ ROVNICE pro plynoucí mrak
+            # Lineární vlnové rovnice fyzikálně nemohou tvořit mraky, tvoří Besselovy interference.
+            dist_crop = dist[offset:offset+phys_size, offset:offset+phys_size]
+            X_crop = X[offset:offset+phys_size, offset:offset+phys_size]
+            Y_crop = Y[offset:offset+phys_size, offset:offset+phys_size]
+            
+            c_rad = 5.0 + f * 1.5
+            mask = np.exp(-(dist_crop**2) / (c_rad**2))
+            
+            np.random.seed(900 + variant * 10)
+            noise = np.zeros((phys_size, phys_size))
+            freq = 0.08
+            amp = 1.0
+            
+            for i in range(4):
+                px_offset = np.random.rand() * 1000.0 + f * 0.4 * (i+1)
+                py_offset = np.random.rand() * 1000.0 - f * 0.2 * (i+1)
+                
+                px = X_crop * freq + px_offset
+                py = Y_crop * freq + py_offset
+                
+                noise += (np.sin(px) + np.cos(py)) * amp
+                freq *= 1.8
+                amp *= 0.5
+                
+            noise = noise * 0.25
+            cloud = mask * (1.0 + noise)
+            
+            fade = 1.0 - (f / 30.0)**1.5
+            if fade < 0: fade = 0.0
+            
+            # Přepíšeme wave_centered naším dokonalým, Bessel-free fraktálním mrakem
+            wave_centered = cloud * fade * 0.5
         
         volume_contrast = np.tanh(wave_centered * contrast_scale)
         norm = np.clip((volume_contrast * 0.5) + 0.5, 0.0, 1.0)
