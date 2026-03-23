@@ -112,10 +112,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 0.6                  # Pomalý plyn = menší turbulence a méně vysokofrekvenčních interferencí
+        dt = 0.8
         steps_factor = 1.0
-        contrast_scale = 1.8      # Měkký kontrast (nesmí být 3.5, jinak to dělá "zebra pruhy" u vlnění)
-        dissipation = 0.15        # Extrémní rozpad (okamžitě požírá okrajové vlnění, takže zbudou jen hlavní oblaka)
+        contrast_scale = 2.0      # Měkký kontrast
+        dissipation = 0.08        # Střední rozpad
 
         
     elif preset_name == "fire_burst":
@@ -252,26 +252,27 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
         elif preset_name == "gas_explosion" and f < 14:
-            # Organický oblak z jemných tepelných vrstev (bez zebra ringů)
+            # Extrémně kritická úprava: V PDE nesmí jít injekce amplitudy do extrémních hodnot (jako 6.0), 
+            # jinak to začne prostorově "zvonit" a dělat ty hrozné černé prstence!
             np.random.seed(1000 + variant * 42)
             fade = 1.0 - (f / 14.0)
             
-            # Jedno gigantické měkké jádro
+            # Centrální jádro držíme na amplitudě max 1.5!
             c_rad = 6.0 + f * 2.0
-            phi = phi + 6.0 * np.exp(-(dist**2) / (c_rad**2)) * fade
+            phi = phi + 1.5 * np.exp(-(dist**2) / (c_rad**2)) * fade
             
-            # Jen 4-5 satelitních měkkých bublin tvořících asymetrii (aby nevznikl interferenční chaos)
-            for _ in range(5):
+            # Satelitní bubliny pro asymetrii držíme na amplitudě max 0.8!
+            for _ in range(6):
                 angle = np.random.rand() * 2 * math.pi
-                speed = 0.8 + np.random.rand() * 1.2
+                speed = 1.0 + np.random.rand() * 1.5
                 
-                bx = cx + math.cos(angle) * speed * f + math.sin(f * 0.5 + angle) * 2.0
-                by = cy + math.sin(angle) * speed * f + math.cos(f * 0.5 + angle) * 2.0
+                bx = cx + math.cos(angle) * speed * f
+                by = cy + math.sin(angle) * speed * f
                 
                 p_dist_sq = (X - bx)**2 + (Y - by)**2
                 
-                b_rad = 5.0 + np.random.rand() * 2.0 + (f * 1.5)
-                blob = 2.5 * np.exp(-p_dist_sq / (b_rad**2)) * fade
+                b_rad = 4.0 + np.random.rand() * 3.0 + f
+                blob = 0.8 * np.exp(-p_dist_sq / (b_rad**2)) * fade
                 phi = phi + blob
 
         elif preset_name == "smoke_grenade" and f < 15:
