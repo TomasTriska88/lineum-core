@@ -100,7 +100,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     elif preset_name == "explosion":
         dt = 1.5                  # Fast shockwave expansion
         steps_factor = 1.5
-        contrast_scale = 4.5      # Smooth gradients
+        contrast_scale = 0.8      # Mnohem menší kontrast proti bandingu (dovolí plynulý gradient energie)
         dissipation = 0.08        # Extreme dissipation to instantly kill trailing "zebra" ringing
         
         # Clean massive hollow shockwave (pure displacement, no kinetic phi instability)
@@ -370,8 +370,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 if __name__ == "__main__":
     t0 = time.time()
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "gas_explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
-    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
+    base_presets = ["explosion"]
+    wake_angles = []
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
     
     multi_variant = ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]
