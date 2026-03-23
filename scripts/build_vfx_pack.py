@@ -112,10 +112,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 1.2
+        dt = 1.0                  # Sníženo z 1.2 pro pomalejší měkčí výbuch
         steps_factor = 1.0
-        contrast_scale = 2.2
-        dissipation = 0.1
+        contrast_scale = 1.8      # Sníženo na 1.8 pro eliminaci zebra-stripů u překrývajících se vln
+        dissipation = 0.05
 
         
     elif preset_name == "fire_burst":
@@ -251,27 +251,27 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             v_dist = np.sqrt((X - vx)**2 + (Y - vy)**2)
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
-        elif preset_name == "gas_explosion" and f < 12:
-            # Stochastické vstřikování (Micro-explosions) k vytvoření fraktální turbulence
-            # Bez pevných geometrických struktur, čistý proměnlivý termální chaos
-            np.random.seed(300 + variant * 37 + f) # Seed se MĚNÍ každý frame!
-            fade = 1.0 - (f / 12.0)
+        elif preset_name == "gas_explosion" and f < 14:
+            # Absolutní pop-corn destrukce symetrie:
+            # ÚPLNĚ SMAZÁNO CENTRÁLNÍ JÁDRO. Spoléháme se pouze na stovky drobných stochastických explozí,
+            # které generují čistý fraktální šum bez jediné geometrické symetrie.
+            np.random.seed(300 + variant * 37 + f)
+            fade = 1.0 - (f / 14.0)
             
-            # Centrální mohutné jádro
-            c_rad = 5.0 + f * 1.5
-            phi = phi + 2.0 * np.exp(-(dist**2) / (c_rad**2)) * fade
-            
-            # Subsekventní satelitní exploze (popcorning) vržené náhodně do prostoru
-            for _ in range(6):
+            # 20 náhodných injekcí každý frame, tvořících strukturu "mozečku" / květáku
+            for _ in range(20):
                 angle = np.random.rand() * 2 * math.pi
-                r_dist = np.random.rand() * (8.0 + f * 2.0) # Rozšiřující se rádius exploze
+                # Radius injekce se rozšiřuje v čase, ale pozice jsou naprosto chaotické
+                r_dist = (np.random.rand() ** 0.5) * (4.0 + f * 1.5)
                 
                 bx = cx + math.cos(angle) * r_dist
                 by = cy + math.sin(angle) * r_dist
                 p_dist_sq = (X - bx)**2 + (Y - by)**2
                 
-                b_rad = 2.0 + np.random.rand() * 4.0 + f * 0.5
-                phi = phi + 1.8 * np.exp(-p_dist_sq / (b_rad**2)) * fade
+                b_rad = 2.0 + np.random.rand() * 2.0 + (f * 0.3)
+                
+                # Velmi malá amplituda (0.8), aby se netvořila tvrdá vlna, ale jen jemné narůstající hrboly
+                phi = phi + 0.8 * np.exp(-p_dist_sq / (b_rad**2)) * fade
 
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
