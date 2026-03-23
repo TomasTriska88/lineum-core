@@ -112,10 +112,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 1.0                  # Sníženo z 1.2 pro pomalejší měkčí výbuch
+        dt = 0.5                  # Pomalý a těžký vývoj
         steps_factor = 1.0
-        contrast_scale = 1.8      # Sníženo na 1.8 pro eliminaci zebra-stripů u překrývajících se vln
-        dissipation = 0.05
+        contrast_scale = 1.6      # Měkký kontrast
+        dissipation = 0.15        # Extrémní rozpad k utlumení jakýchkoliv odrazů a vln
 
         
     elif preset_name == "fire_burst":
@@ -252,26 +252,28 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
         elif preset_name == "gas_explosion" and f < 14:
-            # Absolutní pop-corn destrukce symetrie:
-            # ÚPLNĚ SMAZÁNO CENTRÁLNÍ JÁDRO. Spoléháme se pouze na stovky drobných stochastických explozí,
-            # které generují čistý fraktální šum bez jediné geometrické symetrie.
-            np.random.seed(300 + variant * 37 + f)
+            # Opravdová procedurální objemová textura (Sine-wave interference hluku)
+            # Tímto se natrvalo vyhneme Central Limit Theorému, který předtím z random teček udělal kruh.
+            np.random.seed(800 + variant * 15)
+            
+            # 4-oktávový nízkofrekvenční šum tvořící organické "obří vlny" v prostoru (mraky)
+            noise = np.sin(X * 0.1 + np.random.rand() * 10)
+            noise += np.cos(Y * 0.11 + np.random.rand() * 10)
+            noise += np.sin((X + Y) * 0.07 + np.random.rand() * 10)
+            noise += np.cos((X - Y) * 0.08 + np.random.rand() * 10)
+            noise *= 0.25 # Normalizace šumu zhruba na rozsah -1.0 až 1.0
+            
+            # Plynule expandující sférická maska, která postupně odkrývá strukturu vnitřního šumu
+            c_rad = 8.0 + f * 2.5
+            mask = np.exp(-(dist**2) / (c_rad**2))
+            
             fade = 1.0 - (f / 14.0)
             
-            # 20 náhodných injekcí každý frame, tvořících strukturu "mozečku" / květáku
-            for _ in range(20):
-                angle = np.random.rand() * 2 * math.pi
-                # Radius injekce se rozšiřuje v čase, ale pozice jsou naprosto chaotické
-                r_dist = (np.random.rand() ** 0.5) * (4.0 + f * 1.5)
-                
-                bx = cx + math.cos(angle) * r_dist
-                by = cy + math.sin(angle) * r_dist
-                p_dist_sq = (X - bx)**2 + (Y - by)**2
-                
-                b_rad = 2.0 + np.random.rand() * 2.0 + (f * 0.3)
-                
-                # Velmi malá amplituda (0.8), aby se netvořila tvrdá vlna, ale jen jemné narůstající hrboly
-                phi = phi + 0.8 * np.exp(-p_dist_sq / (b_rad**2)) * fade
+            # Vstřikujeme přímo do PSI jako hotovou krajinu, aby PDE nemuselo vlnit, ale jen vyhlazovat
+            psi = psi + (mask * (1.0 + noise)) * fade * 0.4
+            
+            # Jen lehký tah do PHI, aby ty oblaka uvnitř pomalu vřela a hýbala se
+            phi = phi + (mask * (1.0 + noise)) * fade * 0.05
 
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
@@ -372,8 +374,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 if __name__ == "__main__":
     t0 = time.time()
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "gas_explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
-    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
+    base_presets = ["gas_explosion"]
+    wake_angles = []
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
     
     multi_variant = ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]
