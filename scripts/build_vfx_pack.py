@@ -111,27 +111,12 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         # Phi is left untouched to prevent PDE numerical ringing
         
     elif preset_name == "gas_explosion":
-        noise_enabled = True      # Chaotic fiery gas
-        dt = 1.2                  # Moderate shockwave expansion
-        steps_factor = 1.2
-        contrast_scale = 4.5      # Puffy gas clouds
-        dissipation = 0.05        # Very high dissipation so smoke dissolves organically
-        
-        # Central blast core
-        impact_core = 4.0 * np.exp(-(dist**2) / 10.0)
-        phi_core = 8.0 * np.exp(-(dist**2) / 6.0)
-        psi = psi + impact_core + 0j
-        phi = phi + phi_core
-        
-        # 12 asymmetrical fluffy secondary gas clouds spreading out
-        for p in range(12):
-            np.random.seed(800 + p * 13 + variant * 37) # Deterministic chaotic placement per variant
-            bx = cx + (np.random.rand() - 0.5) * 12.0
-            by = cy + (np.random.rand() - 0.5) * 12.0
-            p_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
-            blob = (1.5 + np.random.rand()) * np.exp(-(p_dist**2) / (4.0 + np.random.rand() * 5.0))
-            psi = psi + blob + 0j
-            phi = phi + blob * 2.0
+        noise_enabled = False     # No TV static.
+        dt = 1.0                  # Stable puff expansion
+        steps_factor = 1.0
+        contrast_scale = 3.2      # Soft puffy smoke clouds
+        dissipation = 0.06        # Fades gracefully
+        # Injection is handled dynamically in the frame loop to create solid billowing clouds!
         
     elif preset_name == "fire_burst":
         dt = 1.2
@@ -266,6 +251,26 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             v_dist = np.sqrt((X - vx)**2 + (Y - vy)**2)
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
+        elif preset_name == "gas_explosion" and f < 10:
+            np.random.seed(800 + variant * 37)
+            
+            # Center blast that billows outward
+            smoke_core = 4.0 * np.exp(-(dist**2) / (6.0 + f * 2.0)) * (1.0 - f/10.0)
+            phi = phi + smoke_core
+            
+            for p in range(16):
+                # Expanding outward trajectories for gas blobs
+                angle = np.random.rand() * 2 * math.pi
+                speed = 1.5 + np.random.rand() * 2.5
+                
+                bx = cx + math.cos(angle) * speed * f
+                by = cy + math.sin(angle) * speed * f
+                p_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
+                
+                # Blobs grow larger but fainter over time
+                blob = (2.0 + np.random.rand()) * np.exp(-(p_dist**2) / (3.0 + f * 1.5)) * (1.0 - f/10.0)
+                phi = phi + blob
+                
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
             smoke = 1.0 * np.exp(-(dist**2) / (4.0 + f))
@@ -364,6 +369,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 
 if __name__ == "__main__":
     t0 = time.time()
+    sizes = [16, 32, 48, 64, 128, 256, 512]
     base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "gas_explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
