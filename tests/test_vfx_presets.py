@@ -80,6 +80,26 @@ def test_preset_water_splash_solid_stability():
     for _ in range(5): state = step_core(state, config)
     assert not np.isnan(np.sum(state["psi"])), "Water Splash Solid caused NaN"
 
+def test_preset_water_mud_stability():
+    state, dist, X, Y, cx, cy = get_base_state()
+    config = CoreConfig(
+        disable_quantum_noise=True, use_mode_coupling=False, 
+        physics_mode_psi="wave_baseline", dt=0.6, dissipation_rate=0.04, stencil_type="ISOTROPIC"
+    )
+    impact = np.zeros_like(dist)
+    np.random.seed(210)
+    for _ in range(15):
+        angle = np.random.rand() * np.pi * 2
+        radius = (np.random.rand()**1.2) * 35.0
+        dx = np.cos(angle) * radius
+        dy = np.sin(angle) * radius
+        drop_dist2 = (X - (cx + dx))**2 + (Y - (cy + dy))**2
+        impact += np.exp(-drop_dist2 / 3.0) * 1.0
+        
+    state["phi"] += impact * 0.5
+    for _ in range(5): state = step_core(state, config)
+    assert not np.isnan(np.sum(state["psi"])), "Water Mud caused NaN"
+
 def test_preset_explosion_stability():
     state, dist, _, _, _, _ = get_base_state()
     state["psi"] += 3.0 * np.exp(-(dist**2) / 16.0)

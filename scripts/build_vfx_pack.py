@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from lineum_core.math import step_core, CoreConfig
 import matplotlib.pyplot as plt
 
-def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
+def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     frames = 30
     phys_size = 96
     sim_size = phys_size * 6 
@@ -40,7 +40,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         noise_enabled = False
         contrast_scale = 4.0
         dissipation = 0.015
-        impact = 1.5 * np.cos(dist * 0.5) * np.exp(-(dist**2) / 8.0)
+        np.random.seed(50 + variant)
+        asym = (np.random.rand(sim_size, sim_size) - 0.5) * 0.2
+        impact = 1.5 * np.cos(dist * 0.5) * np.exp(-(dist**2) / 8.0) * (1.0 + asym)
         psi = psi + impact + 0j
         
     elif preset_name == "water_splash_solid":
@@ -50,7 +52,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         dissipation = 0.08
         
         impact = np.zeros((sim_size, sim_size))
-        np.random.seed(104)
+        np.random.seed(104 + variant**2 * 10)
         for _ in range(25):
             angle = np.random.rand() * np.pi * 2
             # Wide scatter across the 96px screen, leaving isolated drops
@@ -64,6 +66,25 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         psi = psi + impact + 0j
         # Microscopic phi to prevent global shockwave ring merging
         phi = phi + impact * 0.1
+        
+    elif preset_name == "water_mud":
+        dt = 0.6
+        noise_enabled = False
+        contrast_scale = 3.2
+        dissipation = 0.04
+        
+        impact = np.zeros((sim_size, sim_size))
+        np.random.seed(200 + variant * 10)
+        for _ in range(15):
+            angle = np.random.rand() * np.pi * 2
+            radius = (np.random.rand()**1.2) * 35.0
+            dx = np.cos(angle) * radius
+            dy = np.sin(angle) * radius
+            drop_dist2 = (X - (cx + dx))**2 + (Y - (cy + dy))**2
+            impact += np.exp(-drop_dist2 / 3.0) * 1.0
+            
+        psi = psi + impact + 0j
+        phi = phi + impact * 0.5
         
     elif preset_name == "water_ripple_idle":
         dt = 0.8
@@ -161,7 +182,11 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
 
     for f in range(frames):
         if preset_name == "water_drop" and f == 8:
-            crown = 0.8 * np.exp(-(dist**2) / 3.0)
+            np.random.seed(100 + variant)
+            dx = (np.random.rand() - 0.5) * 4.0
+            dy = (np.random.rand() - 0.5) * 4.0
+            crown_dist = np.sqrt((X - (cx + dx))**2 + (Y - (cy + dy))**2)
+            crown = 0.8 * np.exp(-(crown_dist**2) / (3.0 + np.random.rand()))
             psi = psi + crown + 0j
             
         elif preset_name == "water_ripple_idle" and f < 20:
@@ -250,6 +275,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         
         if preset_name == "water_wake":
             f_name = f"water_wake_{angle_deg}_{view_size}"
+        elif preset_name in ["water_drop", "water_splash_solid", "water_mud"]:
+            f_name = f"{preset_name}_v{variant}_{view_size}"
         else:
             f_name = f"{preset_name}_{view_size}"
             
@@ -274,12 +301,17 @@ if __name__ == "__main__":
     t0 = time.time()
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "water_splash_solid", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
+    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
+    multi_variant = ["water_drop", "water_splash_solid", "water_mud"]
     for p in base_presets:
-        run_vfx(p, view_sizes=sizes)
+        if p in multi_variant:
+            for v in [1, 2, 3]:
+                run_vfx(p, view_sizes=sizes, variant=v)
+        else:
+            run_vfx(p, view_sizes=sizes)
         
     for ang in wake_angles:
         run_vfx("water_wake", view_sizes=sizes, angle_deg=ang)
