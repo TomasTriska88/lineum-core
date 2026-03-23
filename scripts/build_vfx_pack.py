@@ -111,11 +111,11 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         # Phi is left untouched to prevent PDE numerical ringing
         
     elif preset_name == "gas_explosion":
-        noise_enabled = False     # No TV static.
-        dt = 1.0                  # Stable puff expansion
+        noise_enabled = True      # Zapnutí quantum noise pro simulaci chaotického turbulentního plynu
+        dt = 1.3                  # Mírně asymetričtější a živější expanze
         steps_factor = 1.0
-        contrast_scale = 3.2      # Soft puffy smoke clouds
-        dissipation = 0.06        # Fades gracefully
+        contrast_scale = 1.2      # Drastické snížení kontrastu proti color-bandingu v CSS ohni
+        dissipation = 0.12        # Rychlý rozpad vlny, aby vznikl jen mrak ohně, ne nekonečné kruhy
         # Injection is handled dynamically in the frame loop to create solid billowing clouds!
         
     elif preset_name == "fire_burst":
@@ -214,6 +214,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     dir_x = math.sin(rad) # X axis
     dir_y = -math.cos(rad) # Y axis (negative is up array)
 
+    if preset_name == "gas_explosion":
+        np.random.seed(800 + variant * 37)
+
     for f in range(frames):
         if preset_name == "water_drop" and f == 8:
             np.random.seed(100 + variant)
@@ -252,7 +255,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
         elif preset_name == "gas_explosion" and f < 10:
-            np.random.seed(800 + variant * 37)
+            # Seed je nyní nastaven zcela mimo loop!
+            # Tím pádem každá iterace (frame) vygeneruje odlišné pozice částic a vznikne chaotický, kouřový mrak, místo perfectních linek.
             
             # Center blast that billows outward
             smoke_core = 4.0 * np.exp(-(dist**2) / (6.0 + f * 2.0)) * (1.0 - f/10.0)
@@ -370,8 +374,8 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 if __name__ == "__main__":
     t0 = time.time()
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["explosion"]
-    wake_angles = []
+    base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "gas_explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
+    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
     
     multi_variant = ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]
