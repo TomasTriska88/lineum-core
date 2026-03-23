@@ -90,8 +90,12 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         dt = 1.0 # Ensure wave speed matches the walking phase (100% speed)
         contrast_scale = 5.0  # Even higher contrast for far edge visibility
         dissipation = 0.005
-        impact = 1.5 * np.exp(-(dist**2) / 16.0) # Massive boost to starting energy
-        psi = psi + impact + 0j
+        
+        # Hollow Ring Injection: Push water outwards from a radius, leaving the very center clean for models
+        impact_ring = 1.0 * np.exp(-((dist - 6.0)**2) / 8.0)
+        impact_core_dip = 0.6 * np.exp(-(dist**2) / 4.0)  # Gently depress the exact center
+        
+        psi = psi + (impact_ring - impact_core_dip) + 0j
         
     elif preset_name == "explosion":
         dt = 1.8
@@ -337,10 +341,6 @@ if __name__ == "__main__":
     sizes = [16, 32, 48, 64, 128, 256, 512]
     base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
-    
-    # Temporarily isolate water_ripple_idle to save 8 minutes
-    base_presets = ["water_ripple_idle"]
-    wake_angles = []
     
     multi_variant = ["water_drop", "water_splash_solid", "water_mud"]
     for p in base_presets:
