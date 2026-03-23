@@ -44,15 +44,26 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         psi = psi + impact + 0j
         
     elif preset_name == "water_splash_solid":
-        dt = 1.6
-        noise_enabled = True
-        contrast_scale = 8.0
+        dt = 1.4
+        noise_enabled = False
+        contrast_scale = 3.5
         dissipation = 0.08
-        np.random.seed(101)
-        asym = np.random.rand(sim_size, sim_size) * 0.8
-        impact = (1.0 + asym) * np.exp(-(dist**2) / 6.0)
+        
+        impact = np.zeros((sim_size, sim_size))
+        np.random.seed(104)
+        for _ in range(25):
+            angle = np.random.rand() * np.pi * 2
+            # Wide scatter across the 96px screen, leaving isolated drops
+            radius = (np.random.rand()**1.2) * 44.0
+            dx = np.cos(angle) * radius
+            dy = np.sin(angle) * radius
+            drop_dist2 = (X - (cx + dx))**2 + (Y - (cy + dy))**2
+            # Sharper, heavier isolated droplets
+            impact += np.exp(-drop_dist2 / 1.0) * 1.2
+        
         psi = psi + impact + 0j
-        phi = phi + impact * 2.5
+        # Microscopic phi to prevent global shockwave ring merging
+        phi = phi + impact * 0.1
         
     elif preset_name == "water_ripple_idle":
         dt = 0.8

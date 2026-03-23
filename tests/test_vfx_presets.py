@@ -61,14 +61,22 @@ def test_preset_water_ripple_idle_stability():
     assert not np.isnan(np.sum(state["psi"])), "Water Ripple Idle caused NaN"
 
 def test_preset_water_splash_solid_stability():
-    state, dist, _, _, _, _ = get_base_state()
+    state, dist, X, Y, cx, cy = get_base_state()
     config = CoreConfig(
-        disable_quantum_noise=False, use_mode_coupling=False, 
-        physics_mode_psi="wave_baseline", dt=1.6, dissipation_rate=0.08, stencil_type="ISOTROPIC"
+        disable_quantum_noise=True, use_mode_coupling=False, 
+        physics_mode_psi="wave_baseline", dt=1.4, dissipation_rate=0.08, stencil_type="ISOTROPIC"
     )
-    np.random.seed(101)
-    impact = (1.0 + np.random.rand(*dist.shape) * 0.8) * np.exp(-(dist**2) / 6.0)
-    state["phi"] += impact * 2.5
+    impact = np.zeros_like(dist)
+    np.random.seed(104)
+    for _ in range(25):
+        angle = np.random.rand() * np.pi * 2
+        radius = (np.random.rand()**1.2) * 44.0
+        dx = np.cos(angle) * radius
+        dy = np.sin(angle) * radius
+        drop_dist2 = (X - (cx + dx))**2 + (Y - (cy + dy))**2
+        impact += np.exp(-drop_dist2 / 1.0) * 1.2
+        
+    state["phi"] += impact * 0.1
     for _ in range(5): state = step_core(state, config)
     assert not np.isnan(np.sum(state["psi"])), "Water Splash Solid caused NaN"
 
