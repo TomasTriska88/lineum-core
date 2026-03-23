@@ -98,21 +98,17 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         psi = psi + (impact_ring - impact_core_dip) + 0j
         
     elif preset_name == "explosion":
-        dt = 1.3                  # Fast but stable under the CFL numerical limit
-        steps_factor = 1.3
-        contrast_scale = 4.0      # Lower contrast for extremely smooth AAA gradients
-        dissipation = 0.015       # Normal dissipation
+        dt = 1.5                  # Fast shockwave expansion
+        steps_factor = 1.5
+        contrast_scale = 4.5      # Smooth gradients
+        dissipation = 0.08        # Extreme dissipation to instantly kill trailing "zebra" ringing
         
-        # Smooth hollow shockwave thrust
-        impact_psi = 2.5 * np.exp(-((dist - 4.0)**2) / 8.0)
-        # Suppress the exact center to keep it hollow
-        impact_core_dip = 1.5 * np.exp(-(dist**2) / 4.0)
+        # Clean massive hollow shockwave (pure displacement, no kinetic phi instability)
+        impact_ring = 8.0 * np.exp(-((dist - 3.0)**2) / 6.0)
+        impact_core_dip = 6.0 * np.exp(-(dist**2) / 4.0)
         
-        # Kinetic outward explosion force
-        impact_phi = 5.0 * np.exp(-(dist**2) / 8.0)
-        
-        psi = psi + (impact_psi - impact_core_dip) + 0j
-        phi = phi + impact_phi
+        psi = psi + (impact_ring - impact_core_dip) + 0j
+        # Phi is left untouched to prevent PDE numerical ringing
         
     elif preset_name == "fire_burst":
         dt = 1.2
@@ -347,7 +343,9 @@ if __name__ == "__main__":
     t0 = time.time()
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
+    
     base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
+    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
     
     multi_variant = ["water_drop", "water_splash_solid", "water_mud"]
