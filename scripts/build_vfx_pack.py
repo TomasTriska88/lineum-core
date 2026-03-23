@@ -98,19 +98,18 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         psi = psi + (impact_ring - impact_core_dip) + 0j
         
     elif preset_name == "explosion":
-        noise_enabled = True      # Add chaotic flickering for the blast wave
-        dt = 1.8
-        steps_factor = 1.5
-        contrast_scale = 6.0      # Lowered from 12.0 to restore anti-aliasing and smooth shader blending
-        dissipation = 0.04        # Higher dissipation causes the shockwave to thin out dynamically
+        dt = 1.3                  # Fast but stable under the CFL numerical limit
+        steps_factor = 1.3
+        contrast_scale = 4.0      # Lower contrast for extremely smooth AAA gradients
+        dissipation = 0.015       # Normal dissipation
         
-        # Massive hollow shockwave thrust
-        impact_psi = 5.0 * np.exp(-((dist - 6.0)**2) / 12.0)
-        # Deep vacuum core to suck the center flat
-        impact_core_dip = 2.0 * np.exp(-(dist**2) / 5.0)
+        # Smooth hollow shockwave thrust
+        impact_psi = 2.5 * np.exp(-((dist - 4.0)**2) / 8.0)
+        # Suppress the exact center to keep it hollow
+        impact_core_dip = 1.5 * np.exp(-(dist**2) / 4.0)
         
-        # Kinetic kinetic outward thrust
-        impact_phi = 25.0 * np.exp(-((dist - 4.0)**2) / 10.0)
+        # Kinetic outward explosion force
+        impact_phi = 5.0 * np.exp(-(dist**2) / 8.0)
         
         psi = psi + (impact_psi - impact_core_dip) + 0j
         phi = phi + impact_phi
