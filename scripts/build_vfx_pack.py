@@ -87,10 +87,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         phi = phi + impact * 0.5
         
     elif preset_name == "water_ripple_idle":
-        dt = 0.8
-        contrast_scale = 4.5  # Boost visual threshold so ripples reach the full 100% edge
-        dissipation = 0.005   # Let it survive the full extended 45-frame sequence
-        impact = 0.8 * np.exp(-(dist**2) / 12.0)
+        dt = 1.0 # Ensure wave speed matches the walking phase (100% speed)
+        contrast_scale = 5.0  # Even higher contrast for far edge visibility
+        dissipation = 0.005
+        impact = 1.5 * np.exp(-(dist**2) / 16.0) # Massive boost to starting energy
         psi = psi + impact + 0j
         
     elif preset_name == "explosion":
@@ -336,9 +336,12 @@ if __name__ == "__main__":
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
     base_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex"]
-    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
-    
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
+    
+    # Temporarily isolate water_ripple_idle to save 8 minutes
+    base_presets = ["water_ripple_idle"]
+    wake_angles = []
+    
     multi_variant = ["water_drop", "water_splash_solid", "water_mud"]
     for p in base_presets:
         if p in multi_variant:
