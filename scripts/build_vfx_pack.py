@@ -43,6 +43,17 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
         impact = 1.5 * np.cos(dist * 0.5) * np.exp(-(dist**2) / 8.0)
         psi = psi + impact + 0j
         
+    elif preset_name == "water_splash_solid":
+        dt = 1.6
+        noise_enabled = True
+        contrast_scale = 8.0
+        dissipation = 0.08
+        np.random.seed(101)
+        asym = np.random.rand(sim_size, sim_size) * 0.8
+        impact = (1.0 + asym) * np.exp(-(dist**2) / 6.0)
+        psi = psi + impact + 0j
+        phi = phi + impact * 2.5
+        
     elif preset_name == "water_ripple_idle":
         dt = 0.8
         contrast_scale = 2.5
@@ -252,7 +263,7 @@ if __name__ == "__main__":
     t0 = time.time()
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
+    base_presets = ["water_drop", "water_splash_solid", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")

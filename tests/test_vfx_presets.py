@@ -60,6 +60,18 @@ def test_preset_water_ripple_idle_stability():
         
     assert not np.isnan(np.sum(state["psi"])), "Water Ripple Idle caused NaN"
 
+def test_preset_water_splash_solid_stability():
+    state, dist, _, _, _, _ = get_base_state()
+    config = CoreConfig(
+        disable_quantum_noise=False, use_mode_coupling=False, 
+        physics_mode_psi="wave_baseline", dt=1.6, dissipation_rate=0.08, stencil_type="ISOTROPIC"
+    )
+    np.random.seed(101)
+    impact = (1.0 + np.random.rand(*dist.shape) * 0.8) * np.exp(-(dist**2) / 6.0)
+    state["phi"] += impact * 2.5
+    for _ in range(5): state = step_core(state, config)
+    assert not np.isnan(np.sum(state["psi"])), "Water Splash Solid caused NaN"
+
 def test_preset_explosion_stability():
     state, dist, _, _, _, _ = get_base_state()
     state["psi"] += 3.0 * np.exp(-(dist**2) / 16.0)
