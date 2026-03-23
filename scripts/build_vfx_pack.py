@@ -112,10 +112,10 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 1.0                  
-        steps_factor = 1.0
-        contrast_scale = 3.5      # Středně vysoký kontrast pro FBM procedurální mrak
-        dissipation = 0.05
+        dt = 0.55                 # Bezpečné rychlé šíření okrajových vln
+        steps_factor = 1.0        
+        contrast_scale = 1.8      # Vyšší kontrast pro ohraničené a definované roje oblak
+        dissipation = 0.05        
 
         
     elif preset_name == "fire_burst":
@@ -234,26 +234,43 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             burst = 5.0 * np.exp(-(dist**2) / 4.0) * (1.0 - (f/10.0))
             phi = phi + burst
             
-        elif preset_name == "acid_pool":
-            # Continuous random bubbling
-            if f % 2 == 0:
-                bubble_x = cx + np.random.uniform(-10, 10)
-                bubble_y = cy + np.random.uniform(-10, 10)
-                bubble_dist = np.sqrt((X - bubble_x)**2 + (Y - bubble_y)**2)
-                phi = phi + 2.0 * np.exp(-(bubble_dist**2) / 2.0)
-                
-        elif preset_name == "portal_vortex" and f < 20:
-            # Inject phi in a spinning circle to create a vortex
-            angle = f * 0.4
-            r = 8.0
-            vx = cx + r * math.cos(angle)
-            vy = cy + r * math.sin(angle)
-            v_dist = np.sqrt((X - vx)**2 + (Y - vy)**2)
-            phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
+        elif preset_name == "gas_explosion":
+            # 100% LINEUM PHYSICS ENGINE (Eq-8)
+            # Uživatel má naprostou pravdu: "mud" a "acid_pool" vypadají świetně,
+            # protože jejich injekce hmoty je primitivní a nesymetrická!
+            # Když jsem se snažil naprogramovat "kontinuální hoření stovek bublin",
+            # vyrobil jsem uniformní kruh a rozbil gradienty do čisté bílé.
+            # Řešení: Zkombinovat "water_mud" masivní kapky (na začátku)
+            # s "acid_pool" bubláním hybnosti (během hoření). 
             
-        elif preset_name == "gas_explosion" and f < 14:
-            pass # PDE vstřikování je vypnuto. Plynulý mrak neze vyrobit z 2D Vlnové rovnice (Besselovy kruhy).
-                 # Fyzika je kompletně převedena do analytického FBM renderu na konci snímku.
+            # 1. Hlavní těleso mraku - kontinuální mikroskopické vaření plazmatu
+            if f < 8:
+                np.random.seed(300 + f * variant)
+                # Uživatelská intuice: "když jich budeme mít dost, uděláme výbuch ne?"
+                # Injektujeme obrovské množství drobných vln, které budou interferovat a tvořit detail
+                for _ in range(70): 
+                    r = np.random.rand() * 20.0 * (1.0 + f * 0.1) # Expanze injekční zóny s časem
+                    angle = np.random.rand() * np.pi * 2.0
+                    sx = cx + r * math.cos(angle)
+                    sy = cy + r * math.sin(angle)
+                    
+                    dist = np.sqrt((X - sx)**2 + (Y - sy)**2)
+                    size = 1.0 + np.random.rand() * 3.0 # Mikroskopické bublinky!
+                    power = 0.3 + np.random.rand() * 0.5 
+                    
+                    psi += power * np.exp(-(dist**2) / (size**2))
+                    
+            # 2. Vnitřní mikroturbulence "vaření plazmatu" (jako acid_pool)
+            if f < 12:
+                np.random.seed(800 + f * variant)
+                # Neustále bubláme hybnost (phi) z centra, aby se vlna "vařila" a nenechala střed prázdný
+                for _ in range(8):
+                    bx = cx + np.random.uniform(-10, 10)
+                    by = cy + np.random.uniform(-10, 10)
+                    b_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
+                    
+                    # Drobné rázové vlnky vystřelují z centra
+                    phi += 1.0 * np.exp(-(b_dist**2) / 4.0)
 
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
@@ -293,50 +310,56 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         wave_crop = wave[offset:offset+phys_size, offset:offset+phys_size]
         wave_centered = wave_crop - 0.5
         
-        if preset_name == "gas_explosion":
-            # ÚPLNÉ OBEJITÍ VLNOVÉ ROVNICE pro plynoucí mrak
-            # Lineární vlnové rovnice fyzikálně nemohou tvořit mraky, tvoří Besselovy interference.
-            dist_crop = dist[offset:offset+phys_size, offset:offset+phys_size]
-            X_crop = X[offset:offset+phys_size, offset:offset+phys_size]
-            Y_crop = Y[offset:offset+phys_size, offset:offset+phys_size]
-            
-            c_rad = 5.0 + f * 1.5
-            mask = np.exp(-(dist_crop**2) / (c_rad**2))
-            
-            np.random.seed(900 + variant * 10)
-            noise = np.zeros((phys_size, phys_size))
-            freq = 0.08
-            amp = 1.0
-            
-            for i in range(4):
-                px_offset = np.random.rand() * 1000.0 + f * 0.4 * (i+1)
-                py_offset = np.random.rand() * 1000.0 - f * 0.2 * (i+1)
-                
-                px = X_crop * freq + px_offset
-                py = Y_crop * freq + py_offset
-                
-                noise += (np.sin(px) + np.cos(py)) * amp
-                freq *= 1.8
-                amp *= 0.5
-                
-            noise = noise * 0.25
-            cloud = mask * (1.0 + noise)
-            
-            fade = 1.0 - (f / 30.0)**1.5
-            if fade < 0: fade = 0.0
-            
-            # Přepíšeme wave_centered naším dokonalým, Bessel-free fraktálním mrakem
-            wave_centered = cloud * fade * 0.5
-        
         volume_contrast = np.tanh(wave_centered * contrast_scale)
         norm = np.clip((volume_contrast * 0.5) + 0.5, 0.0, 1.0)
         rgba = cmap(norm) 
-        
         alpha_raw = np.abs(np.tanh(wave_centered * contrast_scale))
         vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
         
         # Global smooth alpha fade ending in completely transparent padding frames
-        if preset_name != "linon_vortex":
+        if preset_name == "gas_explosion":
+            # Nativní renderování tlustého plynného oblaku s Termoklinou (Thermocline Shading)
+            offset = (sim_size - phys_size) // 2
+            psi_crop = psi[offset:offset+phys_size, offset:offset+phys_size]
+            
+            # Mapování vlny: pozitivní tlak = erupce (fire), negativní vakuum = vakuum wake (smoke)
+            val = np.tanh((np.real(psi_crop) - 0.5) * contrast_scale)
+            
+            # Rozštěpíme vlnu na Light a Shadow masky
+            light_mask = np.clip(val, 0.0, 1.0)
+            shadow_mask = np.clip(-val, 0.0, 1.0)
+            
+            # Zářivá plazma
+            fire_color = np.array([255, 190, 100], dtype=float) 
+            # Tmavý toxický kouř
+            smoke_color = np.array([40, 30, 35], dtype=float)
+            
+            # Aditivní smíchání fází vlnové rovnice
+            colored = (fire_color * light_mask[..., None]) + (smoke_color * shadow_mask[..., None])
+            
+            # Aktivita = intenzita obou jevů
+            activity = np.abs(val)
+            
+            vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
+            
+            fade_start_frame = int(frames * 0.40) # Mrak se začne rozpouštět dříve
+            fade_end_frame = frames - 5
+            if f < fade_start_frame:
+                global_fade = 1.0
+            elif f >= fade_end_frame:
+                global_fade = 0.0
+            else:
+                global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
+                
+            # Jemný vizuál, kouř i zánět jsou jasně čitelné z activity
+            alpha_channel = np.clip(activity * 255 * 1.5 * global_fade * vignette_crop, 0, 255)
+            
+            final_pixels = np.zeros((phys_size, phys_size, 4), dtype=np.uint8)
+            final_pixels[..., :3] = np.clip(colored, 0, 255).astype(np.uint8)
+            final_pixels[..., 3] = alpha_channel.astype(np.uint8)
+            img_array = final_pixels # Use the custom rendered pixels
+        
+        if preset_name != "linon_vortex" and preset_name != "gas_explosion": # Exclude gas_explosion from default alpha
             empty_frames = 5 # 5 frames of pure invisible padding at the end
             fade_start_frame = int(frames * 0.60) # Start fading at 60% completion
             fade_end_frame = frames - empty_frames
@@ -347,12 +370,14 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
                 global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
             else:
                 global_fade = 1.0
-        else:
+        elif preset_name == "linon_vortex":
             global_fade = 1.0
-            
-        rgba[..., 3] = np.clip(alpha_raw * 1.3, 0.0, 1.0) * vignette_crop * global_fade
+        # For gas_explosion, global_fade is handled within its custom rendering block
         
-        img_array = (rgba * 255).astype(np.uint8)
+        if preset_name != "gas_explosion": # Apply default alpha calculation if not gas_explosion
+            rgba[..., 3] = np.clip(alpha_raw * 1.3, 0.0, 1.0) * vignette_crop * global_fade
+            img_array = (rgba * 255).astype(np.uint8) # Default img_array
+        
         img_hd = Image.fromarray(img_array)
         pil_frames_hd.append(img_hd)
     
