@@ -275,7 +275,18 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         
         alpha_raw = np.abs(np.tanh(wave_centered * contrast_scale))
         vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
-        rgba[..., 3] = np.clip(alpha_raw * 1.2, 0.0, 1.0) * vignette_crop
+        
+        # Global smooth alpha fade over the last 30% of the animation to prevent hard cuts
+        if preset_name != "linon_vortex":
+            fade_start_frame = int(frames * 0.70)
+            if f >= fade_start_frame:
+                global_fade = 1.0 - ((f - fade_start_frame) / (frames - 1 - fade_start_frame))
+            else:
+                global_fade = 1.0
+        else:
+            global_fade = 1.0
+            
+        rgba[..., 3] = np.clip(alpha_raw * 1.3, 0.0, 1.0) * vignette_crop * global_fade
         
         img_array = (rgba * 255).astype(np.uint8)
         img_hd = Image.fromarray(img_array)
