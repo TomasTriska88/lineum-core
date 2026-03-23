@@ -86,6 +86,7 @@ class CoreConfig:
     # --- Integration Specifics ---
     stencil_type: str = "LAP4"  # "LAP4" or "LAP8"
     physics_mode_psi: str = "diffusion"  # "diffusion" | "wave_baseline" | "wave_projected" | "wave_projected_soft"
+    disable_quantum_noise: bool = False
     wave_damping_edge: float = 0.05
     wave_lpf_enabled: bool = False
     wave_lpf_cutoff: float = 0.35
@@ -217,12 +218,16 @@ def _step_numpy(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
     grad_mag = np.sqrt(np.clip(grad_x**2 + grad_y**2, 0.0, 1e12))
     
     # Probabilistic Linon Generation
-    probability = (1.0 / (1.0 + np.exp(-5.0 * (amp + grad_mag)))) * kappa
-    linons = (np.random.rand(size, size) < probability).astype(np.float64)
-    linon_effect = np.clip((0.03 + 0.02 * np.clip(amp, a_min=0, a_max=None)) * linons, 0.0, 10.0)
-    linon_complex = linon_effect * np.exp(1j * np.angle(psi))
+    if getattr(cfg, "disable_quantum_noise", False):
+        linon_complex = 0.0
+        fluctuation = 0.0
+    else:
+        probability = (1.0 / (1.0 + np.exp(-5.0 * (amp + grad_mag)))) * kappa
+        linons = (np.random.rand(size, size) < probability).astype(np.float64)
+        linon_effect = np.clip((0.03 + 0.02 * np.clip(amp, a_min=0, a_max=None)) * linons, 0.0, 10.0)
+        linon_complex = linon_effect * np.exp(1j * np.angle(psi))
 
-    fluctuation = np.clip(np.random.normal(0.0, cfg.noise_strength, (size, size)), -1.0, 1.0) * np.exp(1j * np.angle(psi))
+        fluctuation = np.clip(np.random.normal(0.0, cfg.noise_strength, (size, size)), -1.0, 1.0) * np.exp(1j * np.angle(psi))
 
     # Calculate mu-modulated drift multiplier (ALWAYS READ)
     drift_multiplier = 1.0 + mu
@@ -291,23 +296,33 @@ _fft_symbol_cache = {}
 
 def _get_fft_symbol(size: int, stencil_type: str, device, dtype):
     import torch
+    import numpy as np
     key = (size, stencil_type, device, dtype)
     if key in _fft_symbol_cache:
         return _fft_symbol_cache[key]
     
-    kernel = torch.zeros((size, size), device=device, dtype=dtype)
-    if stencil_type == "LAP8":
-        kernel[0, 0] = -5.0
-        kernel[1, 0] = 1.0; kernel[-1, 0] = 1.0
-        kernel[0, 1] = 1.0; kernel[0, -1] = 1.0
-        kernel[1, 1] = 0.25; kernel[-1, 1] = 0.25
-        kernel[1, -1] = 0.25; kernel[-1, -1] = 0.25
+    if stencil_type == "ISOTROPIC":
+        # Analytical Isotropic Laplacian in Fourier Space
+        # Bypasses all grid geometry artifacts ensuring perfectly radial boundary traversal.
+        kx = torch.fft.fftfreq(size, d=1.0, device=device) * 2 * np.pi
+        ky = torch.fft.fftfreq(size, d=1.0, device=device) * 2 * np.pi
+        Ky, Kx = torch.meshgrid(ky, kx, indexing='ij')
+        symbol = -(Kx**2 + Ky**2)
     else:
-        kernel[0, 0] = -4.0
-        kernel[1, 0] = 1.0; kernel[-1, 0] = 1.0
-        kernel[0, 1] = 1.0; kernel[0, -1] = 1.0
+        kernel = torch.zeros((size, size), device=device, dtype=dtype)
+        if stencil_type == "LAP8":
+            kernel[0, 0] = -5.0
+            kernel[1, 0] = 1.0; kernel[-1, 0] = 1.0
+            kernel[0, 1] = 1.0; kernel[0, -1] = 1.0
+            kernel[1, 1] = 0.25; kernel[-1, 1] = 0.25
+            kernel[1, -1] = 0.25; kernel[-1, -1] = 0.25
+        else:
+            kernel[0, 0] = -4.0
+            kernel[1, 0] = 1.0; kernel[-1, 0] = 1.0
+            kernel[0, 1] = 1.0; kernel[0, -1] = 1.0
+            
+        symbol = torch.fft.fft2(kernel).real
         
-    symbol = torch.fft.fft2(kernel).real
     _fft_symbol_cache[key] = symbol
     return symbol
 
@@ -331,10 +346,13 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
     grad_y = torch.clamp(grads[1], -cfg.grad_cap, cfg.grad_cap)
     grad_mag = torch.sqrt(torch.clamp(grad_x**2 + grad_y**2, 0.0, 1e12))
     
-    probability = torch.sigmoid(5.0 * (amp + grad_mag)) * kappa
-    linons = (torch.rand(size, size, device=device, dtype=torch.float64) < probability).to(torch.float64)
-
-    fluct_base = torch.clamp(torch.normal(0.0, cfg.noise_strength, (size, size), device=device, dtype=torch.float64), min=-1.0, max=1.0)
+    if getattr(cfg, "disable_quantum_noise", False):
+        linons = torch.zeros((size, size), device=device, dtype=torch.float64)
+        fluct_base = torch.zeros((size, size), device=device, dtype=torch.float64)
+    else:
+        probability = torch.sigmoid(5.0 * (amp + grad_mag)) * kappa
+        linons = (torch.rand(size, size, device=device, dtype=torch.float64) < probability).to(torch.float64)
+        fluct_base = torch.clamp(torch.normal(0.0, cfg.noise_strength, (size, size), device=device, dtype=torch.float64), min=-1.0, max=1.0)
 
     # Calculate mu-modulated drift multiplier (ALWAYS READ)
     drift_multiplier = 1.0 + mu

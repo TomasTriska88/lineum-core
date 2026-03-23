@@ -5,6 +5,24 @@ This file contains an overview of research points that require further testing, 
 This is not the source of truth for the model state - binding definitions and claims are always in the current version of the whitepaper / core paper.
 The sections below are divided to first address **basic principles and critical points** and only then mapping to "real physics".
 
+
+## 🧭 Global Project Strategic Pipeline (The Engine-First Rule)
+
+**Core Philosophy:** "The Engine is the only Source of Truth. Build the physics, sell the application, format the book."
+*This list defines the everlasting, generic priority hierarchy for the project. For the current active tasks in each tier, see the detailed sections below.*
+
+### Phase 1: The Source of Truth
+1. **Core Physics Engine:** Implement or update the fundamental mathematical PDE solver (the absolute baseline).
+
+### Phase 2: Commercial & Empirical Proofs
+2. **Commercial API & Products:** Build and stabilize commercial applications utilizing the updated core engine.
+3. **Lab Verifications:** Add e2e numerical tests to protect the new engine features before writing any texts.
+
+### Phase 3: Project Hygiene & Documentation
+4. **Whitepaper Integration (The Cleanup Trigger):** *WHEN TO ACT:* The exact moment Lab e2e tests pass for a new feature, STOP. Immediately extract its messy conceptual notes from `todo.md` and integrate them formally into the structured whitepapers to maintain repository hygiene. Do not let `todo.md` bloat indefinitely.
+5. **Web Platform & Marketing:** Update public-facing wrappers and UI with the finalized engine outputs.
+
+---
 ---
 
 ### Scope and non-goals (high level)
@@ -1604,10 +1622,32 @@ The canonical text of the codex is stored in `docs/LINEUM_CODEX_v1.md`.
 - [ ] **C.4 The "Soul" & Homeostasis Hypothesis**
     - Translate biological "Consciousness" or "Soul" into the Lineum topological framework: A complex, self-sustaining wave geometry that maintains its structural identity (homeostasis) across time despite environmental noise.
     - Test if Eq-8 supports complex assemblies of vortices that actively resist physical entropy (damping) by cooperatively steering their own $\varphi$ gravity wells to deflect incoming noise.
-- [ ] **C.5 The P2P Fountain Hypothesis (Decentralized Computation)**
-    - Hypothesis: The universe does not run on a centralized "server". Instead, as random phase noise knots into stable topological structures (atoms, stars, brains), those structures form closed, self-resolving computational loops.
-    - Evaluate if these self-contained loops act as localized Peer-to-Peer (P2P) computing nodes that actively process their own region of the simulation.
-    - Connect to the "Fountain" cycle: Top-heavy nodes eventually crash (die/unravel due to friction saturation), radiating stored structural complexity back into the baseline $\mu_0$ acoustic vacuum (Big Bounce / Hawking Radiation) to be continuously recycled.
+- [ ] **C.5 The P2P Fountain Hypothesis (Decentralized Computation & Dust Recycling)**
+    - Hypothesis: The universe does not run on a centralized "server". Instead, as random phase noise knots into stable topological structures, those structures form closed computational loops (P2P nodes).
+    - **The Aliasing Dust:** As formulated in C.9, the discrete nature of the lattice creates 1-pixel high-frequency aliasing errors (Nielsen-Ninomiya doubler noise) that sink to the bottom of the $\mu$-layer, accumulating as a form of non-structural Dark Matter (dust under the machine).
+    - **Self-Repairing Engine & Recycling:** The universe is not a perfect mathematical crystal; it is an imperfect, self-repairing construct resolving its computational errors dynamically. If the aliasing dust accumulated infinitely, the grid would mathematically freeze. Therefore, the Hawking Evaporation (D.20) acts as the ultimate garbage collector. When the dust density on the $\mu$-floor becomes critical, its structural torsion evaporates back into kinetic $\phi$ photons (Cosmic Microwave Background). The universe is a perpetual fountain, recycling its own computational errors to prevent system crashes.
+
+
+- [ ] **C.6 Eq-8 Metric Expansion (Dark Energy & The Cosmological Constant)**
+    - **Goal:** Formalize metric expansion as an emergent lattice scaling mode, not just local $\phi$-pressure.
+    - **Completion Ansatz:** Introduce a macroscopic volume scaling mode $\chi(t) \equiv \ln( \ell(t)/\ell_0 )$, where $a(t) = e^{\chi(t)}$ and $H = \dot{\chi}$. The Eq-8 dark energy must emerge as the potential energy $U(\chi)$ of this volume mode, with Hawking evaporation acting as a potential source term for $U(\chi)$.
+    - **Kill Tests:** Eq-8 fails if it cannot yield $w(z) \approx -1$ today, requires massive shifts in $G_{eff}$ between BBN and today, or predicts gravitational slip inconsistent with Planck/DESI.
+
+- [ ] **C.7 Lorentz Invariance on the Acoustic Lattice (The $c$ Limit)**
+    - **Goal:** Prove emergent IR Lorentz invariance for macroscopic Eq-8 Spinors, acknowledging that the microscopic grid is fundamentally non-relativistic.
+    - **Completion Ansatz:** The dispersion relation must force all light/acoustic modes to share the same light cone $c_\star$ in the IR limit. A moving soliton must computationally exhibit $E = \gamma M_{eff} c_\star^2$ and physical length contraction $1/\gamma$ strictly as an emergent property of the solution. The lattice frame must be "self-veiled" macroscopically.
+    - **Kill Tests:** Eq-8 fails if $c_g \neq c_\gamma$ in the IR, if there is measurable sidereal anisotropy, or if vacuum dispersion limits from GW170817 are violated.
+
+- [ ] **C.8 Chiral Symmetry Breaking (Parity Violation & Baryogenesis)**
+    - **Goal:** Explain the matter-antimatter asymmetry exactly via Sakharov conditions.
+    - **Completion Ansatz:** Introduce a CP-odd helical order parameter in the $\mu$-layer (e.g., $h_\mu \equiv \mu \cdot (\nabla \times \mu)$). The $\mu$-topology must break CP symmetry dynamically, and an out-of-equilibrium phase transition must freeze out this chemical bias to yield the baryon asymmetry $\eta_B \sim 6 \times 10^{-10}$.
+    - **Kill Tests:** Eq-8 fails if it generates asymmetry when the chiral bias is zero (numerical artifact), generates net baryon number in full thermal equilibrium, or fails to leave a measurable parity-odd imprint in the CMB / stochastic gravitational background.
+
+- [ ] **C.9 Chiral Edge Consistency (Domain Wall Fermions & Anomaly Inflow)**
+    - **Goal:** Formally define Eq-8 as a Holographic Bulk-Edge architecture where the 3D $\phi$-world is the boundary of the 5D $\mu$-layer ocean, thus mathematically solving the Fermion Doubling and Anomaly Cancellation problems in one stroke.
+    - **Completion Ansatz:** Eq-8 is fundamentally a **Domain Wall Fermion architecture**. Do *not* use Hawking decay (D.20) as an "anomaly trash can" to burn away gauge inconsistencies. Gauge anomalies on the 3D surface must be analytically cancelled via **Anomaly Inflow**: any mathematical chiral anomaly that appears on the 4D boundary (our visible $\phi$ world) is not an error, but the exact endpoint of a topological current flowing into the deep 5D $\mu$-layer Bulk ($\delta \Gamma_{edge}[|A|] + \delta S_{bulk}[|A|, \mu] = 0$). Zrcadlové částice (Doublers) neexistují u nás na hraně, ale spadnou na dno neviditelného $\mu$-oceánu jako vysokofrekvenční 1-pixelový aliasingový prach (výpočetní odpad).
+    - **Kill Tests:** Eq-8 fails if: (1) In the limit $a \to 0$ a normalizable mirror partner remains trapped in the IR 4D surface spectrum. (2) The gauge variation of the effective surface action is not exactly cancelled by the topological current dumping into the bulk $\mu$ term. (3) Different mathematical regularizations of the $\mu$-layer yield fundamentally different gauge accountings.
+    - **Status:** Open. As Einstein declared: "The dragon is not yet dead. But for the first time, you aimed its true heart."
 
 ---
 
@@ -1840,4 +1880,4 @@ The canonical text of the codex is stored in `docs/LINEUM_CODEX_v1.md`.
     - **Goal:** Formally document the historical and mathematical reasoning for the upgrade from Version 7 to Equation 8 for the upcoming whitepaper release.
     - **The V7 Singularity Problem:** While Version 7 stabilized unitary macroscopic flow, it suffered from "Memory Death". Massive accumulations of $\phi/\psi$ fluid carved irreversible macroscopic trenches into the $\mu$-layer (classical Black Holes). Because this accumulation was strictly additive without decay, the simulation inevitably collapsed into stagnant, infinitely deep gravitational singularities, permanently freezing the universe.
     - **The Eq-8 Solution (Hawking Decay):** Equation 8 was explicitly formulated to introduce a structural restorative force (decay) to the $\mu$-layer. Extremely deep topological scars (singularities) locally "bleed" or evaporate energy back into the kinetic $\phi/\psi$ wave field across their boundaries. Mathematically and thermodynamically, this is the exact equivalent of continuous Hawking Evaporation.
-    - **Status:** Added to roadmap. Eq-8 is thereby defined as a Homeostatic Universe: A perpetual thermodynamic cycle between mass actively carving deep $\mu$-trenches (Gravity) and the vacuum's mathematical tension slowly and radiatively erasing those trenches (Hawking Evaporation), thus definitively circumventing the Black Hole Information Paradox.
+    - **Status:** Added to roadmap. *(Einstein Review Note: D.20 is currently classified as a "homeostatic/stability completion". It cannot be formally claimed as the resolution to the Hawking Information Paradox until the evaporation decay term and the $\mu$-layer potential are derived from one unified Lagrangian action.)* Eq-8 is thereby defined as a Homeostatic Universe: A perpetual thermodynamic cycle between mass actively carving deep $\mu$-trenches (Gravity) and the vacuum's mathematical tension slowly and radiatively erasing those trenches (Hawking Evaporation), thus definitively circumventing the Black Hole Information Paradox.

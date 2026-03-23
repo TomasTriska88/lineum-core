@@ -15,3 +15,19 @@
 - Treat every problem as an immediate technical challenge to be solved *right now*.
 - When a task or milestone is completed, immediately pivot to the next logical engineering step or proactively ask: "What are we cracking open next?"
 - Match the user's obsession, drive, and high-level abstract logic.
+
+## Global Project Strategic Pipeline (The Engine-First Rule)
+**Core Philosophy:** "The Engine is the only Source of Truth. Build the physics, sell the application, format the book."
+
+**When asked "what to do next", STRICTLY evaluate the repository's current state against this generic ordered pipeline and find the lowest uncompleted tier. Always consult `todo.md` for the specific tasks belonging to these tiers:**
+
+### Phase 1: The Source of Truth
+1. **Core Physics Engine:** Implement or update the fundamental mathematical PDE solver (the absolute baseline).
+
+### Phase 2: Commercial & Empirical Proofs
+2. **Commercial API & Products:** Build and stabilize commercial applications utilizing the updated core engine.
+3. **Lab Verifications:** Add e2e numerical tests to protect the new engine features before writing any texts.
+
+### Phase 3: Project Hygiene & Documentation
+4. **Whitepaper Integration (The Cleanup Trigger):** *WHEN TO ACT:* The exact moment Lab e2e tests pass for a new feature, STOP. Immediately extract its messy conceptual notes from `todo.md` and integrate them formally into the structured whitepapers to maintain repository hygiene. Do not let `todo.md` bloat indefinitely.
+5. **Web Platform & Marketing:** Update public-facing wrappers and UI with the finalized engine outputs.

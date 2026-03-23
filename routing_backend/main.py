@@ -36,11 +36,13 @@ from routing_backend.entity_api import router as entity_router, _entity_dream_lo
 from routing_backend.engraving_api import router as engraving_router
 from routing_backend.lab_api import router as lab_router
 from routing_backend.spatial_api import router as spatial_router
+from routing_backend.asset_api import router as asset_router
 
 app.include_router(entity_router)
 app.include_router(engraving_router)
 app.include_router(lab_router, prefix="/api/lab")
 app.include_router(spatial_router)
+app.include_router(asset_router)
 
 allowed_origins = [
     "http://localhost:5173", 
