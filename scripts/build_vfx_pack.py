@@ -111,27 +111,12 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         # Phi is left untouched to prevent PDE numerical ringing
         
     elif preset_name == "gas_explosion":
-        noise_enabled = False     # No static noise. Gas explosions are smooth volumetric puffs.
-        dt = 0.8                  # Těžší a pomalejší expanze (heavy gas)
+        noise_enabled = False     
+        dt = 0.6                  # Pomalý plyn = menší turbulence a méně vysokofrekvenčních interferencí
         steps_factor = 1.0
-        contrast_scale = 1.8      # Optimal soft alpha gradient
-        dissipation = 0.04        # Střední rozpad
-        
-        # Puffy Cauliflower Explosion:
-        # Vytvoříme masivní, hrbolatý bublinatý mrak hned na začátku
-        np.random.seed(800 + variant * 37)
-        impact = 6.0 * np.exp(-(dist**2) / 12.0)
-        for _ in range(30):
-            angle = np.random.rand() * 2 * math.pi
-            r_dist = (np.random.rand()**0.8) * 15.0
-            bx = cx + math.cos(angle) * r_dist
-            by = cy + math.sin(angle) * r_dist
-            p_dist = ((X - bx)**2 + (Y - by)**2)
-            b_size = 4.0 + np.random.rand() * 6.0
-            impact += 4.0 * np.exp(-p_dist / b_size)
-            
-        psi = psi + (impact * 0.5) + 0j
-        phi = phi + (impact * 1.5)
+        contrast_scale = 1.8      # Měkký kontrast (nesmí být 3.5, jinak to dělá "zebra pruhy" u vlnění)
+        dissipation = 0.15        # Extrémní rozpad (okamžitě požírá okrajové vlnění, takže zbudou jen hlavní oblaka)
+
         
     elif preset_name == "fire_burst":
         dt = 1.2
@@ -266,6 +251,29 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             v_dist = np.sqrt((X - vx)**2 + (Y - vy)**2)
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
+        elif preset_name == "gas_explosion" and f < 14:
+            # Organický oblak z jemných tepelných vrstev (bez zebra ringů)
+            np.random.seed(1000 + variant * 42)
+            fade = 1.0 - (f / 14.0)
+            
+            # Jedno gigantické měkké jádro
+            c_rad = 6.0 + f * 2.0
+            phi = phi + 6.0 * np.exp(-(dist**2) / (c_rad**2)) * fade
+            
+            # Jen 4-5 satelitních měkkých bublin tvořících asymetrii (aby nevznikl interferenční chaos)
+            for _ in range(5):
+                angle = np.random.rand() * 2 * math.pi
+                speed = 0.8 + np.random.rand() * 1.2
+                
+                bx = cx + math.cos(angle) * speed * f + math.sin(f * 0.5 + angle) * 2.0
+                by = cy + math.sin(angle) * speed * f + math.cos(f * 0.5 + angle) * 2.0
+                
+                p_dist_sq = (X - bx)**2 + (Y - by)**2
+                
+                b_rad = 5.0 + np.random.rand() * 2.0 + (f * 1.5)
+                blob = 2.5 * np.exp(-p_dist_sq / (b_rad**2)) * fade
+                phi = phi + blob
+
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
             smoke = 1.0 * np.exp(-(dist**2) / (4.0 + f))
