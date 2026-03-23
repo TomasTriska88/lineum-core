@@ -111,12 +111,27 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         # Phi is left untouched to prevent PDE numerical ringing
         
     elif preset_name == "gas_explosion":
-        noise_enabled = True      # Zapnutí quantum noise pro simulaci chaotického turbulentního plynu
-        dt = 1.3                  # Mírně asymetričtější a živější expanze
+        noise_enabled = False     # No static noise. Gas explosions are smooth volumetric puffs.
+        dt = 0.8                  # Těžší a pomalejší expanze (heavy gas)
         steps_factor = 1.0
-        contrast_scale = 1.2      # Drastické snížení kontrastu proti color-bandingu v CSS ohni
-        dissipation = 0.12        # Rychlý rozpad vlny, aby vznikl jen mrak ohně, ne nekonečné kruhy
-        # Injection is handled dynamically in the frame loop to create solid billowing clouds!
+        contrast_scale = 1.8      # Optimal soft alpha gradient
+        dissipation = 0.04        # Střední rozpad
+        
+        # Puffy Cauliflower Explosion:
+        # Vytvoříme masivní, hrbolatý bublinatý mrak hned na začátku
+        np.random.seed(800 + variant * 37)
+        impact = 6.0 * np.exp(-(dist**2) / 12.0)
+        for _ in range(30):
+            angle = np.random.rand() * 2 * math.pi
+            r_dist = (np.random.rand()**0.8) * 15.0
+            bx = cx + math.cos(angle) * r_dist
+            by = cy + math.sin(angle) * r_dist
+            p_dist = ((X - bx)**2 + (Y - by)**2)
+            b_size = 4.0 + np.random.rand() * 6.0
+            impact += 4.0 * np.exp(-p_dist / b_size)
+            
+        psi = psi + (impact * 0.5) + 0j
+        phi = phi + (impact * 1.5)
         
     elif preset_name == "fire_burst":
         dt = 1.2
@@ -214,9 +229,6 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     dir_x = math.sin(rad) # X axis
     dir_y = -math.cos(rad) # Y axis (negative is up array)
 
-    if preset_name == "gas_explosion":
-        np.random.seed(800 + variant * 37)
-
     for f in range(frames):
         if preset_name == "water_drop" and f == 8:
             np.random.seed(100 + variant)
@@ -254,27 +266,6 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             v_dist = np.sqrt((X - vx)**2 + (Y - vy)**2)
             phi = phi + 4.0 * np.exp(-(v_dist**2) / 5.0)
             
-        elif preset_name == "gas_explosion" and f < 10:
-            # Seed je nyní nastaven zcela mimo loop!
-            # Tím pádem každá iterace (frame) vygeneruje odlišné pozice částic a vznikne chaotický, kouřový mrak, místo perfectních linek.
-            
-            # Center blast that billows outward
-            smoke_core = 4.0 * np.exp(-(dist**2) / (6.0 + f * 2.0)) * (1.0 - f/10.0)
-            phi = phi + smoke_core
-            
-            for p in range(16):
-                # Expanding outward trajectories for gas blobs
-                angle = np.random.rand() * 2 * math.pi
-                speed = 1.5 + np.random.rand() * 2.5
-                
-                bx = cx + math.cos(angle) * speed * f
-                by = cy + math.sin(angle) * speed * f
-                p_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
-                
-                # Blobs grow larger but fainter over time
-                blob = (2.0 + np.random.rand()) * np.exp(-(p_dist**2) / (3.0 + f * 1.5)) * (1.0 - f/10.0)
-                phi = phi + blob
-                
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
             smoke = 1.0 * np.exp(-(dist**2) / (4.0 + f))
