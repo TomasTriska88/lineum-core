@@ -37,7 +37,17 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
     steps_factor = 1.0
     
     if preset_name == "water_drop":
+        noise_enabled = False
+        contrast_scale = 4.0
+        dissipation = 0.015
         impact = 1.5 * np.cos(dist * 0.5) * np.exp(-(dist**2) / 8.0)
+        psi = psi + impact + 0j
+        
+    elif preset_name == "water_ripple_idle":
+        dt = 0.8
+        contrast_scale = 2.5
+        dissipation = 0.02
+        impact = 0.5 * np.exp(-(dist**2) / 10.0)
         psi = psi + impact + 0j
         
     elif preset_name == "explosion":
@@ -128,7 +138,18 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0):
     dir_y = -math.cos(rad) # Y axis (negative is up array)
 
     for f in range(frames):
-        if preset_name == "fire_burst" and f < 10:
+        if preset_name == "water_drop" and f == 8:
+            crown = 0.8 * np.exp(-(dist**2) / 3.0)
+            psi = psi + crown + 0j
+            
+        elif preset_name == "water_ripple_idle" and f < 20:
+            shift = math.sin(f * 0.5) * 0.5
+            shift_x = cx + shift
+            shift_dist = np.sqrt((X - shift_x)**2 + (Y - cy)**2)
+            ripple = 0.05 * np.exp(-(shift_dist**2) / 6.0)
+            phi = phi + ripple
+            
+        elif preset_name == "fire_burst" and f < 10:
             burst = 5.0 * np.exp(-(dist**2) / 4.0) * (1.0 - (f/10.0))
             phi = phi + burst
             
@@ -231,7 +252,7 @@ if __name__ == "__main__":
     t0 = time.time()
     # Adding Extreme AAA industry standard sizes
     sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["water_drop", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
+    base_presets = ["water_drop", "water_ripple_idle", "explosion", "fire_burst", "magic_shield", "acid_pool", "blood_splatter", "portal_vortex", "smoke_grenade", "lightning_strike"]
     wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     
     print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")

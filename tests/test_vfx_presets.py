@@ -1,4 +1,5 @@
 import pytest
+import math
 import numpy as np
 from lineum_core.math import step_core, CoreConfig
 
@@ -24,17 +25,40 @@ def test_preset_water_drop_stability():
         use_mode_coupling=False, 
         physics_mode_psi="wave_baseline", 
         dt=1.0, 
-        dissipation_rate=0.005,
+        dissipation_rate=0.015,
         stencil_type="ISOTROPIC"
     )
     
     # Run 10 steps to test immediate numeric limits
-    for _ in range(10):
+    for f in range(10):
+        if f == 8:
+            state["psi"] += 0.8 * np.exp(-(dist**2) / 3.0)
         state = step_core(state, config)
         
     assert not np.isnan(np.sum(state["psi"])), "Water Drop caused NaN in psi"
     assert not np.isnan(np.sum(state["phi"])), "Water Drop caused NaN in phi"
     assert np.max(np.abs(state["psi"])) < config.psi_amp_cap * 0.9, "Water Drop triggered divergence fail-safe"
+
+def test_preset_water_ripple_idle_stability():
+    state, dist, X, Y, cx, cy = get_base_state()
+    state["psi"] += 0.5 * np.exp(-(dist**2) / 10.0)
+    
+    config = CoreConfig(
+        disable_quantum_noise=True, 
+        use_mode_coupling=False, 
+        physics_mode_psi="wave_baseline", 
+        dt=0.8, 
+        dissipation_rate=0.02,
+        stencil_type="ISOTROPIC"
+    )
+    
+    for f in range(10):
+        shift = math.sin(f * 0.5) * 0.5
+        shift_dist = np.sqrt((X - (cx + shift))**2 + (Y - cy)**2)
+        state["phi"] += 0.05 * np.exp(-(shift_dist**2) / 6.0)
+        state = step_core(state, config)
+        
+    assert not np.isnan(np.sum(state["psi"])), "Water Ripple Idle caused NaN"
 
 def test_preset_explosion_stability():
     state, dist, _, _, _, _ = get_base_state()
