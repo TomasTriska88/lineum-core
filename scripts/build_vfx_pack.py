@@ -9,10 +9,37 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from lineum_core.math import step_core, CoreConfig
 import matplotlib.pyplot as plt
 
-def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
+# Global configuration map for VFX pipeline presets exposed to Pytest integration validators
+preset_configs = {
+    "water_drop": {"dt": 1.0, "disable_quantum_noise": True, "contrast_scale": 4.0, "dissipation": 0.015},
+    "water_splash_solid": {"dt": 1.4, "disable_quantum_noise": True, "contrast_scale": 3.5, "dissipation": 0.08},
+    "water_mud": {"dt": 0.6, "disable_quantum_noise": True, "contrast_scale": 3.2, "dissipation": 0.04},
+    "water_ripple_idle": {"dt": 1.0, "disable_quantum_noise": True, "contrast_scale": 5.0, "dissipation": 0.005},
+    "explosion": {"dt": 1.5, "disable_quantum_noise": True, "contrast_scale": 0.8, "dissipation": 0.08, "steps_factor": 1.5},
+    "fire_burst": {"dt": 1.2, "disable_quantum_noise": False, "contrast_scale": 3.0, "dissipation": 0.03},
+    "magic_shield": {"dt": 1.0, "disable_quantum_noise": False, "contrast_scale": 6.0},
+    "acid_pool": {"dt": 0.8, "disable_quantum_noise": False, "contrast_scale": 4.0, "dissipation": 0.015},
+    "blood_splatter": {"dt": 1.4, "disable_quantum_noise": True, "contrast_scale": 8.0, "dissipation": 0.02},
+    "portal_vortex": {"dt": 1.2, "disable_quantum_noise": False, "contrast_scale": 5.0, "dissipation": 0.01},
+    "smoke_grenade": {"dt": 0.5, "disable_quantum_noise": False, "contrast_scale": 2.5, "dissipation": 0.002},
+    "lightning_strike": {"dt": 2.0, "disable_quantum_noise": False, "contrast_scale": 20.0, "dissipation": 0.08},
+    "linon_vortex": {"dt": 0.8, "disable_quantum_noise": True, "contrast_scale": 15.0, "dissipation": 0.0},
+    "water_wake": {"dt": 1.0, "disable_quantum_noise": True, "contrast_scale": 3.5, "dissipation": 0.015},
+    # 5. Volumetric Multi-Phase Substepped Fire Physics
+    "gas_explosion": {"dt": 0.55, "disable_quantum_noise": False, "contrast_scale": 1.8, "dissipation": 0.05, "steps_factor": 1.0},
+    "campfire": {"dt": 1.2, "disable_quantum_noise": False, "contrast_scale": 2.2, "steps_factor": 1.5, "decay_per_step": 0.90},
+    "fireball": {"dt": 1.4, "disable_quantum_noise": False, "contrast_scale": 2.0, "steps_factor": 2.0, "decay_per_step": 0.93},
+}
+
+def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=None):
     frames = 30
     phys_size = 96
     sim_size = phys_size * 6 
+
+    if phase in ["loop", "end"]:
+        warmup_frames = 60
+    else:
+        warmup_frames = 0
 
     pil_frames_hd = []   
     cmap = plt.get_cmap("gray")
@@ -30,28 +57,6 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     safe_zone = view_radius * 0.85  
     vignette = 1.0 - np.clip((dist - safe_zone) / (view_radius - safe_zone), 0.0, 1.0)
 
-    # Configuration map for presets
-    preset_configs = {
-        "water_drop": {"dt": 1.0, "disable_quantum_noise": False, "contrast_scale": 4.0, "dissipation": 0.015},
-        "water_splash_solid": {"dt": 1.4, "disable_quantum_noise": False, "contrast_scale": 3.5, "dissipation": 0.08},
-        "water_mud": {"dt": 0.6, "disable_quantum_noise": False, "contrast_scale": 3.2, "dissipation": 0.04},
-        "water_ripple_idle": {"dt": 1.0, "disable_quantum_noise": False, "contrast_scale": 5.0, "dissipation": 0.005},
-        "explosion": {"dt": 1.5, "disable_quantum_noise": False, "contrast_scale": 0.8, "dissipation": 0.08, "steps_factor": 1.5},
-        "fire_burst": {"dt": 1.2, "disable_quantum_noise": True, "contrast_scale": 3.0, "dissipation": 0.03},
-        "magic_shield": {"dt": 1.0, "disable_quantum_noise": False, "contrast_scale": 6.0},
-        "acid_pool": {"dt": 0.8, "disable_quantum_noise": True, "contrast_scale": 4.0, "dissipation": 0.015},
-        "blood_splatter": {"dt": 1.4, "disable_quantum_noise": False, "contrast_scale": 8.0, "dissipation": 0.02},
-        "portal_vortex": {"dt": 1.2, "disable_quantum_noise": False, "contrast_scale": 5.0, "dissipation": 0.01},
-        "smoke_grenade": {"dt": 0.5, "disable_quantum_noise": False, "contrast_scale": 2.5, "dissipation": 0.002},
-        "lightning_strike": {"dt": 2.0, "disable_quantum_noise": True, "contrast_scale": 20.0, "dissipation": 0.08},
-        "linon_vortex": {"dt": 0.8, "disable_quantum_noise": False, "contrast_scale": 15.0, "dissipation": 0.0},
-        "water_wake": {"dt": 1.0, "disable_quantum_noise": False, "contrast_scale": 3.5, "dissipation": 0.015},
-        # 5. Volumetric Multi-Phase Substepped Fire Physics
-        "gas_explosion": {"dt": 0.55, "disable_quantum_noise": False, "contrast_scale": 1.8, "dissipation": 0.05, "steps_factor": 1.0},
-        "campfire": {"dt": 1.2, "disable_quantum_noise": False, "contrast_scale": 2.2, "steps_factor": 1.5, "decay_per_step": 0.90},
-        "fireball": {"dt": 1.4, "disable_quantum_noise": False, "contrast_scale": 2.0, "steps_factor": 2.0, "decay_per_step": 0.93},
-    }
-
     if preset_name not in preset_configs:
         raise ValueError(f"Unknown preset {preset_name}")
 
@@ -61,7 +66,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     contrast_scale = config_params.get("contrast_scale", 5.0)
     dissipation = config_params.get("dissipation", 0.005)
     steps_factor = config_params.get("steps_factor", 1.0)
-    decay_per_step = config_params.get("decay_per_step", None) # New parameter for fire physics
+    decay_per_step = config_params.get("decay_per_step", 1.0) # Bezpečný fallback
 
     # Apply specific initial conditions based on preset
     if preset_name == "water_drop":
@@ -211,16 +216,18 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         # Dynamic injection in loop with 'angle_deg'
 
     elif preset_name == "campfire":
-        dt = 1.2
+        dt = 0.8
         noise_enabled = False
-        contrast_scale = 2.2
-        steps_factor = 1.5
+        contrast_scale = 3.5
+        dissipation = 0.05
+        steps_factor = 1.0
         
     elif preset_name == "fireball":
-        dt = 1.4
+        dt = 1.0
         noise_enabled = False
-        contrast_scale = 2.0
-        steps_factor = 2.0
+        contrast_scale = 3.0
+        dissipation = 0.05
+        steps_factor = 1.2
 
     else:
         raise ValueError(f"Unknown preset {preset_name}")
@@ -254,8 +261,29 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
     rad = math.radians(angle_deg)
     dir_x = math.sin(rad) # X axis
     dir_y = -math.cos(rad) # Y axis (negative is up array)
+    
+    # Campfire spark particles (Physical buoyant sources)
+    sparks = []
+    if preset_name == "campfire":
+        np.random.seed(600 + variant)
+    if preset_name == "campfire":
+        np.random.seed(600 + variant)
+        num_pulsers = 14
+        for _ in range(num_pulsers):
+            # [y, x, dx, freq, phase_offset, life]
+            sparks.append([
+                cy + 25 + np.random.uniform(-4, 4),  # base Y
+                cx + np.random.uniform(-14, 14),     # base X
+                np.random.uniform(-0.8, 0.8),        # Horizontal drift speed! (for snaking wiggles)
+                np.random.uniform(0.12, 0.35),       # Temporal frequency
+                np.random.uniform(0, 2*np.pi),       # Phase offset
+                np.random.randint(20, 45)            # Lifetime before respawning at base
+            ])
 
-    for f in range(frames):
+    total_frames = frames + warmup_frames
+    for f_idx in range(total_frames):
+        f = f_idx - warmup_frames
+        
         if preset_name == "water_drop" and f == 8:
             np.random.seed(100 + variant)
             dx = (np.random.rand() - 0.5) * 4.0
@@ -318,6 +346,14 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
                     
                     # Drobné rázové vlnky vystřelují z centra
                     phi += 1.0 * np.exp(-(b_dist**2) / 4.0)
+                    
+            # 3. Termální vztlak (Mushroom cloud effect)
+            if f > 3:
+                # Tlumíme kinetickou odchylku směrem dolů, takže těžiště horkého plynu přirozeně stoupá nahoru
+                dist_down = np.clip((Y - cy) / 30.0, 0.0, 1.0)
+                buoy_mask = 1.0 - (dist_down * 0.1) # Jemný, ale setrvalý odtok energie zespoda
+                psi = 0.5 + (psi - 0.5) * buoy_mask
+                phi *= buoy_mask
 
         elif preset_name == "smoke_grenade" and f < 15:
             # Continuous thick injection expanding outwards
@@ -325,43 +361,60 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             phi = phi + smoke
             
         elif preset_name == "campfire":
-            # Kontinuální lokální hoření posazené lehce dolů
-            np.random.seed(400 + f * variant)
-            
-            # Ohniště (pevě ukotvené)
             burn_cx = cx
-            burn_cy = cy + 10 # Ohniště je posunuté dolů od čistého středu
+            burn_cy = cy + 25 
             
-            # Křičíme tepelnou energii
-            for _ in range(8):
-                bx = burn_cx + np.random.uniform(-4, 4)
-                by = burn_cy + np.random.uniform(-2, 2)
-                b_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
-                phi += 0.8 * np.exp(-(b_dist**2) / 3.0)
+            allow_sparks = True
+            if phase == "end" and f >= 0:
+                allow_sparks = False
                 
-            # Umělá gravitace / vztlak: potlačíme šíření vlny směrem dolů a do stran
-            # Maska musí být absolutně plynulá (gradient), jinak vyvolá PDE ringing!
-            dist_down = np.clip((Y - burn_cy) / 30.0, 0.0, 1.0)
-            dist_side = np.clip(np.abs(X - cx) / 40.0, 0.0, 1.0)
-            
-            buoyancy_mask = 1.0 - (dist_down * 0.3) - (dist_side * 0.15)
-            
-            # Nesmíme škálovat absolutní psi (zničilo by to hladinu 0.5 a vyvolalo globální šok)
-            # Tlumíme pouze relativní výchylku od 0.5 a kinetickou hybnost phi
-            psi = 0.5 + (psi - 0.5) * buoyancy_mask
-            phi *= buoyancy_mask
+            spark_power = 2.0
+            if phase == "start" and f >= 0:
+                # Ignite naturally
+                spark_power = min(2.0, (f / 10.0) * 2.0)
+                
+            for p in sparks:
+                p[5] -= 1 # Snížit životnost zdroje
+                p[1] += p[2] # Aplikovat horizontální snášení větrem (tvoří nádherné organické hady)
+                
+                # Oscilujeme energii jako harmonický oscilátor přes čas (f),
+                # tvoří vlnové "zášlehy" fyzikálního ohně.
+                wobble = np.sin((total_frames - frames + f) * p[3] + p[4])
+                spark_dist = np.sqrt((X - p[1])**2 + (Y - p[0])**2)
+                
+                # Zvětšená šířka paprsku (20.0), aby se plameny krásně slévaly dohromady!
+                impact = wobble * spark_power * 1.5 * np.exp(-(spark_dist**2) / 20.0)
+                psi = psi + impact + 0j
+                
+                # Zbytkové teplo
+                phi += np.abs(impact) * 0.1
+                
+                if p[5] <= 0 and allow_sparks:
+                    # Rspawn at the base to start a new flame lick!
+                    p[0] = burn_cy + np.random.uniform(-4, 4)
+                    p[1] = burn_cx + np.random.uniform(-14, 14)
+                    p[2] = np.random.uniform(-0.8, 0.8)
+                    p[3] = np.random.uniform(0.12, 0.35)
+                    p[4] = np.random.uniform(0, 2*np.pi)
+                    p[5] = np.random.randint(20, 45)
+                    
+            # Fyzikální podlaha: Energie, která se šíří "pod polena", musí rychle zaniknout
+            # Simulujeme tak fakt, že oheň se neodráží rovnoměrně dolů do země.
+            ground_mask = np.clip((Y - (burn_cy + 10)) / 15.0, 0.0, 1.0)
+            psi *= (1.0 - ground_mask * 0.95)
+            phi *= (1.0 - ground_mask * 0.95)
             
         elif preset_name == "fireball":
-            # Letící ohnivá koule. Silný kontinuální zdroj letící vpřed.
+            # Letící ohnivá koule. Musí letět NADZVUKOVĚ!
             np.random.seed(500 + f * variant)
             
-            # Startujeme vlevo a letíme doprava a lehce nahoru (jako kometa)
-            fly_x = cx - 15 + (f / 30.0) * 30.0
-            fly_y = cy + 5 - (f / 30.0) * 10.0
+            # Startujeme masivně vlevo a nízko a proletíme celou obrazovkou vysokou rychlostí
+            fly_x = cx - 80 + (f / 30.0) * 260.0
+            fly_y = cy + 30 - (f / 30.0) * 120.0
             
-            # Ohnisko plazmy vpředu (Shockwave head)
+            # Ohnisko plazmy vpředu (Shockwave head s Machovým oknem)
             dist_head = np.sqrt((X - fly_x)**2 + (Y - fly_y)**2)
-            phi += 1.5 * np.exp(-(dist_head**2) / 4.0)
+            phi += 4.0 * np.exp(-(dist_head**2) / 6.0)
             
             # Chaos v ohonu (mikrovýbuchy tažené za sebou)
             if f > 2:
@@ -386,7 +439,15 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             state = step_core({"psi": psi, "phi": phi, "kappa": kappa, "delta": delta}, config)
             psi, phi = state["psi"], state["phi"]
             phi = phi * decay_per_step
-        
+            
+            # Fyzikální Convection (Termální vztlak ohně v PDE)
+            if preset_name in ["campfire", "fireball"]:
+                # Tekutina stoupá nahoru (roll po ose y)
+                psi = np.roll(psi, -1, axis=0)
+                phi = np.roll(phi, -1, axis=0)
+                psi[-1, :] = 0.5
+                phi[-1, :] = 0.0
+                
         wave = np.real(psi)
         
         # Game-Feel Character Hollow Mask for wakes
@@ -401,6 +462,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             # Must offset wave back to 0.5 baseline for masking cleanly
             wave = (wave - 0.5) * char_mask + 0.5
 
+        if f < 0:
+            continue # Invisible matrix warm-up phase
+
         offset = (sim_size - phys_size) // 2
         wave_crop = wave[offset:offset+phys_size, offset:offset+phys_size]
         wave_centered = wave_crop - 0.5
@@ -412,46 +476,72 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
         
         # Global smooth alpha fade ending in completely transparent padding frames
-        if preset_name == "gas_explosion" or preset_name == "campfire" or preset_name == "fireball":
-            # Nativní renderování Thermocline Shading (pozitivní = bílá plazma, negativní = kouř)
+        if preset_name in ["gas_explosion", "campfire", "fireball"]:
             offset = (sim_size - phys_size) // 2
             psi_crop = psi[offset:offset+phys_size, offset:offset+phys_size]
-            
-            # Mapování vlny: pozitivní tlak = erupce (fire), negativní vakuum = vakuum wake (smoke)
-            val = np.tanh((np.real(psi_crop) - 0.5) * contrast_scale)
-            
-            # Rozštěpíme vlnu na Light a Shadow masky pro zachování stínování
-            light_mask = np.clip(val, 0.0, 1.0)
-            shadow_mask = np.clip(-val, 0.0, 1.0)
-            
-            # Grayscale Raw výstup: Zářivá plazma = Bílá, Toxický kouř = Tmavě šedá
-            peak_color = np.array([255, 255, 255], dtype=float) 
-            trough_color = np.array([80, 80, 80], dtype=float)
-            
-            # Aditivní smíchání fází vlnové rovnice do šedotónového bufferu
-            colored = (peak_color * light_mask[..., None]) + (trough_color * shadow_mask[..., None])
-            
-            # Aktivita = intenzita obou jevů
-            activity = np.abs(val)
-            
+            phi_crop = phi[offset:offset+phys_size, offset:offset+phys_size]
             vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
             
-            # Fireball and Campfire don't fade out as quickly as an explosion
             if preset_name == "gas_explosion":
+                # Nativní renderování Thermocline Shading (pozitivní = bílá plazma, negativní = kouř)
+                val = np.tanh((np.real(psi_crop) - 0.5) * contrast_scale)
+                light_mask = np.clip(val, 0.0, 1.0)
+                shadow_mask = np.clip(-val, 0.0, 1.0)
+                peak_color = np.array([255, 255, 255], dtype=float) 
+                trough_color = np.array([80, 80, 80], dtype=float)
+                colored = (peak_color * light_mask[..., None]) + (trough_color * shadow_mask[..., None])
+                activity = np.abs(val)
                 fade_start_frame = int(frames * 0.40)
             else:
+                # Additivní Thermodynamika (Additive Thermodynamics) pro Oheň
+                wave_centered = np.real(psi_crop) - 0.5
+                
+                # Zásadní objev: Nebereme absolutní hodnotu! 
+                # Pozitivní kopce = oheň. Negativní údolí = samovolné maskování (černá vrstva).
+                # Soften the edges: menší násobič (3.0 místo 6.0) zařídí elegantní gradient kolem plamenů.
+                activity = wave_centered * contrast_scale * 3.0
+                
+                # Kladné vrcholy limitujeme logistickou křivkou na maximum 1.0. 
+                val = np.clip(np.tanh(activity), 0.0, 1.0)
+                colored = np.zeros((phys_size, phys_size, 3))
+                colored[:, :, 0] = 255
+                colored[:, :, 1] = 255
+                colored[:, :, 2] = 255
+                activity = np.clip(val, 0.0, 1.0)
                 fade_start_frame = int(frames * 0.70)
                 
-            fade_end_frame = frames - 5
-            if f < fade_start_frame:
+            if preset_name == "campfire" and phase is not None:
+                # 3-Phase thermodynamic fire is purely natural, no artificial fades!
                 global_fade = 1.0
-            elif f >= fade_end_frame:
-                global_fade = 0.0
             else:
-                global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
+                fade_end_frame = frames - 5
+                if f < fade_start_frame:
+                    global_fade = 1.0
+                elif f >= fade_end_frame:
+                    global_fade = 0.0
+                else:
+                    global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
                 
             # Jemný vizuál, kouř i zánět jsou jasně čitelné z activity
-            alpha_channel = np.clip(activity * 255 * 1.5 * global_fade * vignette_crop, 0, 255)
+            final_mask = vignette_crop
+            if preset_name == "campfire":
+                # Vytvoření dynamické Teardrop masky místo kruhové Vignette, 
+                # aby oheň přirozeně mizel směrem nahoru a do stran (tvar plamene)!
+                teardrop_Y, teardrop_X = np.ogrid[0:phys_size, 0:phys_size]
+                base_y = phys_size - 10
+                base_x = phys_size / 2.0
+                # Vertikální fade (1.0 dole, 0.0 nahoře)
+                vert_fade = np.clip(1.0 - (base_y - teardrop_Y) / (phys_size * 0.9), 0.0, 1.0)
+                # Horizontální šířka plamene se zužuje nahoru
+                width = 8.0 + (teardrop_Y / phys_size) * 32.0 
+                horiz_dist = np.abs(teardrop_X - base_x)
+                # Ostrý přechod do prázdna
+                horiz_fade = np.clip(1.0 - (horiz_dist / width)**1.5, 0.0, 1.0)
+                fire_mask = vert_fade * horiz_fade
+                 # Use fire mask instead of circle vignette!
+                final_mask = fire_mask
+
+            alpha_channel = np.clip(activity * 255 * 1.5 * global_fade * final_mask, 0, 255)
             
             final_pixels = np.zeros((phys_size, phys_size, 4), dtype=np.uint8)
             final_pixels[..., :3] = np.clip(colored, 0, 255).astype(np.uint8)
@@ -473,7 +563,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
             global_fade = 1.0
         # For gas_explosion, global_fade is handled within its custom rendering block
         
-        if preset_name != "gas_explosion": # Apply default alpha calculation if not gas_explosion
+        if preset_name not in ["gas_explosion", "campfire", "fireball"]: # Apply default alpha calculation if not custom
             rgba[..., 3] = np.clip(alpha_raw * 1.3, 0.0, 1.0) * vignette_crop * global_fade
             img_array = (rgba * 255).astype(np.uint8) # Default img_array
         
@@ -487,7 +577,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
         pil_frames_upscaled = [img.resize((256, 256), Image.Resampling.NEAREST) for img in pil_frames_native]
         
         if preset_name == "water_wake":
-            f_name = f"water_wake_{angle_deg}_{view_size}"
+            f_name = f"{preset_name}_{angle_deg}_{view_size}"
+        elif preset_name == "campfire" and phase is not None:
+            f_name = f"{preset_name}_{phase}_{variant}_{view_size}"
         elif preset_name in ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]:
             f_name = f"{preset_name}_v{variant}_{view_size}"
         else:
@@ -512,20 +604,28 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1):
 
 if __name__ == "__main__":
     t0 = time.time()
-    sizes = [16, 32, 48, 64, 128, 256, 512]
-    base_presets = ["gas_explosion", "campfire", "fireball"]
-    wake_angles = []
-    print("Starting Final Full Optimized VFX Multiplexer Generation (with 16px-512px and masks)...")
+    sizes = [64, 128, 256]
+    base_presets = [
+        "water_drop", "water_splash_solid", "water_mud", "water_ripple_idle",
+        "explosion", "fire_burst", "acid_pool", "blood_splatter",
+        "portal_vortex", "smoke_grenade", "lightning_strike", "linon_vortex",
+        "water_wake", "gas_explosion", "campfire", "fireball"
+    ]
+    wake_angles = [0, 45, 90, 135, 180, 225, 270, 315]
     
-    multi_variant = ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]
     for p in base_presets:
-        if p in multi_variant:
-            for v in [1, 2, 3]:
+        if p == "water_wake":
+            for angle in wake_angles:
+                run_vfx(p, view_sizes=sizes, angle_deg=angle)
+        elif p == "campfire":
+            run_vfx(p, view_sizes=sizes, variant=1, phase="start")
+            run_vfx(p, view_sizes=sizes, variant=1, phase="loop")
+            run_vfx(p, view_sizes=sizes, variant=1, phase="end")
+        elif p in ["water_drop", "water_splash_solid", "water_mud", "gas_explosion"]:
+            # Generate 3 variants for specific natural random presets
+            for v in range(1, 4):
                 run_vfx(p, view_sizes=sizes, variant=v)
         else:
             run_vfx(p, view_sizes=sizes)
-        
-    for ang in wake_angles:
-        run_vfx("water_wake", view_sizes=sizes, angle_deg=ang)
             
-    print(f"VFX AAA Matrix Generation completed perfectly via Multiplexing in {time.time()-t0:.2f}s")
+    print(f"Total VFX Pack completed in {time.time()-t0:.2f}s")

@@ -3,6 +3,11 @@ import math
 import numpy as np
 from lineum_core.math import step_core, CoreConfig
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from scripts.build_vfx_pack import preset_configs
+
 # Fixtures for creating the base arrays
 def get_base_state(sim_size=96):
     psi = np.full((sim_size, sim_size), 0.5, dtype=np.complex128)
@@ -263,3 +268,14 @@ def test_preset_linon_vortex_stability():
     state["psi"] = 0.5 + psi_defect * 0.4 * np.exp(-(dist**2) / 150.0)
     for _ in range(20): state = step_core(state, config)
     assert not np.isnan(np.sum(state["psi"])), "Linon Vortex caused NaN"
+
+def test_vfx_noise_boolean_invariants():
+    """Ensure that standard elemental/physical simulations have noise disabled, while magical/chaotic ones have it enabled."""
+    smooth_presets = ["water_drop", "water_splash_solid", "water_mud", "water_ripple_idle", "explosion", "blood_splatter", "linon_vortex", "water_wake"]
+    chaotic_presets = ["fire_burst", "magic_shield", "acid_pool", "portal_vortex", "smoke_grenade", "lightning_strike", "gas_explosion", "campfire", "fireball"]
+    
+    for p in smooth_presets:
+        assert preset_configs[p].get("disable_quantum_noise", False) is True, f"CRITICAL GEOMETRY BUG: Preset '{p}' MUST have quantum noise legally disabled (set to True) to avoid render static!"
+        
+    for p in chaotic_presets:
+        assert preset_configs[p].get("disable_quantum_noise", False) is False, f"CRITICAL FX BUG: Preset '{p}' MUST have quantum noise enabled (set to False) to ensure turbulent phase generation!"
