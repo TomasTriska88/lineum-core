@@ -20,7 +20,9 @@ To mathematically prove periodic boundary wrapping does not shatter the atomic g
 
 ## Results (Sweeps)
 
-| Grid | Z | $\epsilon$ | E (Start) | E (End) | dE Drift | $\langle r angle$ | $\langle r^2 angle$ | Edge Mass | Max Edge |
+| Grid | Z | $\epsilon$ | E (Start) | E (End) | dE Drift | $\langle r 
+angle$ | $\langle r^2 
+angle$ | Edge Mass | Max Edge |
 |------|---|------------|-----------|---------|----------|---------------------|-----------------------|-----------|----------|
 | 64 | 1.0 | 0.1 | -4.23e+00 | -5.14e+03 | 1.21e+03 | 0.3158 | 0.1644 | **4.40e-02** | 7.38e-02 |
 | 64 | 2.0 | 0.1 | -5.76e+00 | -1.17e+04 | 2.04e+03 | 0.4154 | 0.2258 | **5.01e-02** | 1.53e-01 |
