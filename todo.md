@@ -851,7 +851,7 @@ Statuses such as `#disproved` for the points below reflect the **current state i
 
 ## 🧬 O. Hypotheses from correspondence with T. Mikolov (OEA & OE) #hypothesis #external
 
-This section contains hypotheses extracted from the analysis of Vlasta's "Open-Ended Algorithm" (OEA) and Mikolov's requirements for OE systems.
+This section contains hypotheses extracted from the analysis of Vlasta's "obecně evoluční algoritmus" (OEA) and Mikolov's requirements for OE systems.
 
 ### 🔲 18. Lineum as a continuous limit of OEA (V. Smetak) #hypothesis
 
