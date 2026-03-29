@@ -154,6 +154,33 @@ By shifting from explicit heat-like diffusion to a mathematically rigorous Stran
 While Lineum is fundamentally a discrete computational model (cellular automaton), its dynamics analogize to continuous physical fields. When stripped of discrete step mechanics, artificial damping, noise, and the spatial performance mask ($\kappa$), the universe's core engine reduces to this elegant PDE pair.
 This continuous formulation serves as the **canonical emblem** of the Lineum project—representing the pure mathematical concept of wave diffusion, memory interaction, and emergent gravitational drift, unburdened by algorithmic implementation details.
 
+---
+
+### 🔹 Version 8 – The String Tension Limit & Quantum Collapse
+
+```text
+ψ_collapse ← sigmoid(amp + grad_mag_phi) * kappa (The Boundary Tear)
+```
+
+As the discrete model was formalized philosophically, Version 8 defined the **Continuous-Field Physical Interpretation**. It established that "quantum collapse" is not probabilistic magic, but rather the phase field hitting the *hard mechanical ceiling of the Laplacian string tension* and violently redistributing. It also established the speed of light ($c$) as explicit **Processor Lag**—where heavy topological knots require dense cyclical updates, causing their internal states to tick slower relative to flat vacuum (Relativistic Time Dilation).
+
+---
+
+### 🔹 Version 9 – The Extreme Gradient Boundaries (Hawking Evaporation & Jet Emission)
+
+Version 9 shifted focus from particle formation to macro-gravitational limits (Critical $\phi$-Traps / Black Holes).
+- **Hawking Radiation:** At the extreme shear boundary of a deep $\phi$-trap, the steep gradient `grad_mag` geometrically forces the spontaneous generation of $\psi$ virtual pairs. Those with enough outward kinetic diffusion escape, leading to the gradual geometric unwinding (evaporation) of the $\phi$ tension well.
+- **Astrophysical Jets:** When a $\phi$-trap becomes maximally saturated and can dig no deeper (`PHI_CAP`), the immense $\nabla^2\psi$ repulsive diffusion violently overcomes the saturated in-flow, blowing the excess $\psi$ energy outward along the topological axis of rotation, creating collimated relativistic back-pressure Jets.
+
+---
+
+### 🔹 Exploratory Candidate Eq-10 – The Macroscopic Topology Limit (derived from OEA)
+
+Candidate Eq-10 represents the **Macroscopic Cosmological Limit** discovered via the experimental OEA phenomenological engine. Its core mandate is to prove that at astronomical scales, the universe does **not** rely on the explicit hardcoded "HDD" algorithm ($\mu$) introduced in Version 6.
+
+- **Emergent Mass:** When the fundamental $\Phi$ grid is structured from a probabilistic **Quantum Foam** seed (Baryon Acoustic Noise) and iteratively scaled outward by powers of 2 (up to the Phase 11 observable horizon limit), the destructive/additive overlaps instantly form indestructible prime-number knots (Cosmic Web Dark Matter vertices).
+- **Conclusion Overcome:** Stable macroscopic memory ($\mu$) emerges natively from pure scale intersection. It does not require an exogenous rate algorithm with arbitrary thresholds (`thresh`) and decays (`rho`). Macro-matter is a geometric illusion cast by deep $\Phi$ overlaps evaluated strictly on infinite-precision Integer coordinates to bypass the Float Precision Collapse.
+
 ## 4. Discussion
 
 This progression shows a shift from a minimalistic ψ–φ interaction model to a more versatile three-field system capable of sustaining richer emergent structures **within the simulation**. Each modification was driven by simulation feedback and aimed at increasing stability, scalability, and interpretability of the model, not by fitting any specific physical constant or established gravitational law.

@@ -1,3 +1,5 @@
+> **[OEA Eq-10 RECTIFICATION PENDING]** This hypothesis relies on the archaic V6 interpretation of $\mu$ as an explicitly calculated memory field. Recent macro-simulations (Candidate Eq-10 / OEA) mathematically prove that mass is an instantaneous, emergent topological byproduct of overlapping space grids ($\Phi$), requiring no arbitrary time-decay variables. This recontextualizes the mechanical analogies described below without invalidating the broader philosophical intent.
+
 # Title: Lineum Cosmology: Theoretical Foundations of the Anti-Gravity Drive
 Document ID: antigravity-drive-cosmology
 Document Type: Hypothesis

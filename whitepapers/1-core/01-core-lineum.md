@@ -200,6 +200,8 @@ Understanding this Planck-scale structure could explain mysteries of quantum gra
 
 Their properties govern the fundamental rules of the cosmos: reality may be far stranger than it appears. The universe might not be smooth and continuous, but a quantum mosaic of minuscule pixels, revealing the hidden architecture of existence. The discrete mathematical steps in Lineum are not an approximation of a continuous reality; they *are* the reality.
 
+**The Float Precision Collapse:** A critical premise of this discrete approach is that simulating deep macroscopic spacetime (e.g. crossing Phase 137, translating to $10^{41}$ pixels of universe diameter) via continuous Floating-Point logic (UV mappings `float32`/`float64`) inevitably fails due to rounding truncation—collapsing the universe into numeric noise. Lineum implicitly theorizes that nature itself does not calculate infinite trailing decimals; nature evaluates **absolute, arbitrary-precision Integer coordinates** (e.g., native `int256_t` hashing) to maintain perfect fractal permanence across infinite distances without requiring zettabytes of continuous matrix memory.
+
 Many approaches in theoretical physics rely on continuous equations embedded in a predefined spacetime geometry, with global constants and symmetries fixed a priori. Such frameworks limit the exploration of systems where both the geometry and the interaction rules could emerge from purely local processes.
 
 Lineum is designed as a minimal model to investigate whether complex, stable, and potentially physics-analogous structures can arise from:
