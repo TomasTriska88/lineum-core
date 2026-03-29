@@ -3,7 +3,7 @@ from typing import Optional
 
 class MacroTopology:
     """
-    Lineum Macroscopic Hash Generator (Eq-10 Topological Limit)
+    Lineum Macroscopic Hash Generator (The Topological OEA Limit)
     
     This module mathematically describes the emergence of macroscopic Universe structures
     (matter knots and dark filaments) strictly through Phase Overlaps of the Quantum Foam,
