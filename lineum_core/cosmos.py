@@ -92,3 +92,38 @@ class MacroTopology:
             amp *= self.persistence
             
         return val
+
+    def generate_patch(self, center_x: float, center_y: float, width: int, height: int, scale_zoom: float = 1.0, phases: int = 11, mode: str = 'phi'):
+        """
+        Generates a 2D Bounding Box (Data Matrix) around a center coordinate.
+        Returns a 2D List (array) of computed floating values.
+        
+        Args:
+            center_x, center_y: The astronomical/coordinate center.
+            width, height: Resolution of the box in pixels (e.g. 1024x1024).
+            scale_zoom: The physical size step between each pixel.
+            phases: The depth of $2^N$ layers (e.g. 1000 layers).
+            mode: 'phi' for gravity/memory, 'psi' for kinetic matter.
+        """
+        patch = []
+        half_w = width / 2.0
+        half_h = height / 2.0
+        
+        print(f"Generating {width}x{height} patch at [{center_x}, {center_y}] (Zoom: {scale_zoom}, Phases: {phases})...")
+        
+        # We process row by row
+        for row in range(height):
+            y_coord = center_y + (row - half_h) * scale_zoom
+            row_data = []
+            for col in range(width):
+                x_coord = center_x + (col - half_w) * scale_zoom
+                
+                if mode == 'psi':
+                    val = self.evaluate_psi(x_coord, y_coord, phases)
+                else:
+                    val = self.evaluate_phi(x_coord, y_coord, phases)
+                    
+                row_data.append(val)
+            patch.append(row_data)
+            
+        return patch
