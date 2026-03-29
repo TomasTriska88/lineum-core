@@ -214,8 +214,8 @@ def _compute_canonical_hash(obj):
 
 def _json_safe(obj):
     """
-    Převádí numpy typy na primitivní Python (kvůli JSON serializaci).
-    Nyní využívá unifikovanou normalizaci pro stabilitu.
+    Converts numpy types to primitive Python (for JSON serialization).
+    Now uses unified normalization for stability.
     """
     return _canonical_json_normalize(obj)
 
@@ -878,11 +878,11 @@ def save_manifest(
     """
     Save a JSON manifest for this run for machine parsing.
 
-    Použití:
+    Usage:
       • save_manifest(manifest_dict)
       • save_manifest("file.json", run_info=..., metrics=..., data_files=...)
     """
-    # Když nedostaneme hotový manifest, složíme ho z dílků
+    # If no ready manifest is provided, assemble it from pieces
     if manifest is None:
         manifest = {
             "run": run_info or {},
@@ -1306,8 +1306,8 @@ def save_state_checkpoint(run_dir: str, run_prefix: str, step_idx: int,
                           psi: np.ndarray, phi: np.ndarray, kappa: np.ndarray, delta: np.ndarray,
                           active_tracks: dict, next_id: int) -> Optional[str]:
     """
-    Uloží minimální deterministický stav (pro restart) do NPZ (bez pickle).
-    Vrací relativní cestu k vytvořenému souboru (vůči run_dir), nebo None při chybě.
+    Saves minimal deterministic state (for restart) to NPZ (without pickle).
+    Returns the relative path to the created file, or None on error.
     """
     # Force checkpoints subdir
     ckpt_subdir = os.path.join(run_dir, "checkpoints")
@@ -1329,11 +1329,11 @@ def save_state_checkpoint(run_dir: str, run_prefix: str, step_idx: int,
     # state = ('MT19937', keys, pos, has_gauss, cached_gauss)
     rng_algo_str, rng_keys, rng_pos, rng_has_gauss, rng_cached_gauss = np.random.get_state()
 
-    # 3. Uložení
+    # 3. Save
     try:
         np.savez_compressed(
             tmp_path,
-            # Fyzikální pole
+            # Physical fields
             psi=psi,
             phi=phi,
             kappa=kappa,
@@ -1521,7 +1521,7 @@ def export_rolling_metrics(step_idx: int, payload: dict) -> None:
 
 
 def generate_kappa(step, total_steps=None):
-    """Postupná změna z island na constant"""
+    """Gradual change from island to constant"""
     if total_steps is None:
         total_steps = 1
     progress = step / float(max(1, total_steps))
@@ -1540,7 +1540,7 @@ def generate_structured_delta(scale=10):
 def initialize_fields():
     amp = np.random.normal(0.0, 0.1, (size, size))
     phase = np.random.uniform(0, 2*np.pi, (size, size))
-    amp[size//2, size//2] += 1.0  # asymetrie uprostřed
+    amp[size//2, size//2] += 1.0  # asymmetry in the center
     psi = amp * np.exp(1j * phase)
     delta = generate_structured_delta()
     return psi, delta
@@ -1840,10 +1840,10 @@ if __name__ == "__main__":
             resumed = False
 
     if not resumed:
-        # Inicializace polí
+        # Initialize fields
         psi, delta = initialize_fields()
         phi = initialize_interaction_field()
-        # Ladicí pole (KAPPA)
+        # Tuning field (KAPPA)
         kappa = np.ones((size, size), dtype=np.float64)
 
         if KAPPA_MODE == "gradient":
@@ -1943,7 +1943,7 @@ if __name__ == "__main__":
     grad_x = np.zeros((size, size), dtype=np.float32)
     grad_y = np.zeros((size, size), dtype=np.float32)
 
-    # Ladicí konstanta aplikovaná na víc složek systému
+    # Tuning constant applied to multiple system components
     TUNING_CONST = 1 / 137
     APPLY_TUNING = True
 
@@ -2077,7 +2077,7 @@ if __name__ == "__main__":
                         x_max = min(cx + 2, size)
                         phi[y_min:y_max, x_min:x_max] += injection_amount
 
-                # Trackování trajektorií (greedy match)
+                # Trajectory tracking (greedy match)
                 if FAST_TRACKING:
                     active_tracks, next_id = _track_quasiparticles_fast(
                         coords, active_tracks, next_id, i, amp, trajectories)
@@ -2234,11 +2234,11 @@ if __name__ == "__main__":
     else:
         phi_half_life_steps = None
 
-    # 🔍 SPEKTRÁLNÍ ANALÝZA OSCILACE V CENTRU
+    # 🔍 SPECTRAL ANALYSIS OF CENTER OSCILLATION
 
     # Get amplitudes and create the time axis
     amplitudes = np.array([row[1] for row in amplitude_log])
-    times = np.arange(len(amplitudes)) * TIME_STEP  # čas v sekundách
+    times = np.arange(len(amplitudes)) * TIME_STEP  # time in seconds
 
     # Windowed estimates + 95% CI (W=256, hop=128, guard=2)
     spectral_meta = {}
@@ -2371,7 +2371,7 @@ if __name__ == "__main__":
     try:
         import numpy as np
 
-        # vezmeme středové okno délky WINDOW_W (vyhneme se okrajům)
+        # take a central window of length WINDOW_W (avoid edges)
         Wp = int(WINDOW_W) if WINDOW_W else 256
         i0 = max(0, len(amplitudes)//2 - Wp//2)
         seg = np.asarray(amplitudes[i0:i0+Wp], dtype=float)
@@ -2379,18 +2379,18 @@ if __name__ == "__main__":
         if seg.size < 16:
             raise RuntimeError("Too few samples for Figure 0")
 
-        # odstraníme DC a použijeme Hann okno
+        # remove DC and apply Hann window
         seg_zm = seg - float(np.mean(seg))
         win = np.hanning(seg.size)
         seg_win = seg_zm * win
 
-        # FFT (prezentační větev): spočti výkon, vyčisti NaN/Inf a NORMALIZUJ do [0,1]
+        # FFT (presentation branch): compute power, clean NaN/Inf and NORMALIZE to [0,1]
         F = np.fft.rfft(seg_win)
         P = np.abs(F)**2  # power
-        # normalizace o energii okna a vlastní maximum
+        # normalization by window energy and own maximum
         denom = float((win**2).sum()) + 1e-12
         P = P / denom
-        # nahradit ne-finitní
+        # replace non-finite
         P = np.where(np.isfinite(P), P, 0.0)
         Pmax = float(np.max(P)) if np.any(P > 0) else 1.0
         Pn = P / (Pmax + 1e-12)  # 0..1
@@ -2401,7 +2401,7 @@ if __name__ == "__main__":
         if not np.isfinite(df_plot) or df_plot <= 0:
             df_plot = max(1.0, dominant_freq/10.0)
 
-        # vykreslení
+        # plotting
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4), dpi=160)
 
         # TIME TRACE — zero-mean normalization (±1 around 0)
@@ -2412,7 +2412,7 @@ if __name__ == "__main__":
         ax1.set_ylabel("zero-mean normalized |ψ| at center")
         ax1.set_title("Center-amplitude trace (windowed, zero-mean)")
 
-        # SPECTRUM — semilogy, používáme Pn∈[0,1], přidáme ε
+        # SPECTRUM -- semilogy, using Pn in [0,1], add epsilon
         ax2.semilogy(freqs, Pn + 1e-12)
         ax2.axvline(float(dominant_freq), linestyle="--")
         ax2.set_xlabel("frequency [Hz]")
@@ -2445,27 +2445,27 @@ if __name__ == "__main__":
     
     print(f"DEBUG: Final logs - amplitude_log={len(amplitude_log)}, topo_log={len(topo_log)}")
 
-    # Spočteme energii: E = h·f
+    # Calculate energy: E = h * f
     h = 6.62607015e-34  # Planck constant [J·s]
     energy = h * dominant_freq
 
-    # Spočteme vlnovou délku: λ = c / f
+    # Calculate wavelength: lambda = c / f
     c = 299_792_458  # speed of light [m/s]
     wavelength = c / dominant_freq if dominant_freq != 0 else np.inf
 
-    # Spočteme efektivní hmotnost částice: m = E/c²
+    # Calculate effective particle mass: m = E/c^2
     mass = energy / c**2  # effective mass [kg]
 
     # Compare with electron
     electron_mass = 9.10938356e-31  # electron mass [kg]
     mass_ratio = mass / electron_mass
 
-    # Uložení do CSV
+    # Save to CSV
     if do_legacy_fft and positive_freqs is not None and positive_spectrum is not None:
         save_csv("spectrum_log.csv", ["frequency_Hz", "amplitude"], zip(
             positive_freqs, positive_spectrum))
 
-    # Nyní exportuj jen čisté trajektorie
+    # Now export only clean trajectories
     save_csv(
         "trajectories.csv",
         ["id", "step", "y", "x", "amplitude"],
@@ -2502,7 +2502,7 @@ if __name__ == "__main__":
             dom_idx = np.argmax(positive_spectrum)
             dom_freq = positive_freqs[dom_idx]
 
-        # Lokální přepočet – NEPŘEPISUJE globální mass/mass_ratio
+        # Local recalculation - DOES NOT OVERWRITE global mass/mass_ratio
         energy_i = h * dom_freq
         mass_i = energy_i / c**2
         mass_ratio_i = mass_i / electron_mass
@@ -2515,14 +2515,14 @@ if __name__ == "__main__":
             "mass_ratio": float(mass_ratio_i)
         })
 
-        # Uložení spektra pro každý bod zvlášť
+        # Save spectrum for each point separately
         save_csv(
             f"spectrum_log_point_{pt[0]}_{pt[1]}.csv",
             ["frequency_Hz", "amplitude"],
             zip(positive_freqs, positive_spectrum),
         )
 
-    # Uložení shrnutí výsledků pro všechny body
+    # Save summary of results for all points
     save_csv(
         "multi_spectrum_summary.csv",
         ["y", "x", "dominant_freq_Hz", "energy_J", "mass_kg", "mass_ratio"],
@@ -2639,7 +2639,7 @@ if __name__ == "__main__":
         finally:
             plt.close()
 
-    # Funkce pro uložení GIFů
+    # Functions for saving GIFs
 
     # NOTE:
     # GIF/overlay generation requires stored frames. When SAVE_GIFS/SAVE_FRAMES/SAVE_PNGS are disabled,
@@ -2684,7 +2684,7 @@ if __name__ == "__main__":
         norm = colors.Normalize(vmin=vmin, vmax=vmax, clip=True)
         mapper = cm.ScalarMappable(norm=norm, cmap=cmap)
 
-        # zvol resampling (nejvěrnější předchozímu vzhledu bývá 'nearest')
+        # select resampling (closest to previous appearance is usually 'nearest')
         RESAMPLE = {
             'nearest': Image.NEAREST,
             'bilinear': Image.BILINEAR,
@@ -2744,7 +2744,7 @@ if __name__ == "__main__":
         amp_map = cm.ScalarMappable(norm=amp_norm,  cmap='plasma')
         curl_map = cm.ScalarMappable(norm=curl_norm, cmap='bwr')
 
-        # Resample režim
+        # Resample mode
         RESAMPLE = {
             'nearest': Image.NEAREST,
             'bilinear': Image.BILINEAR,
@@ -2757,7 +2757,7 @@ if __name__ == "__main__":
             print(f"[!] Skipping {filename}: No frames provided.")
             return
 
-        # Globální statistiky curlu (konzistentní napříč snímky)
+        # Global curl statistics (consistent across frames)
         if not frames_curl:
              print(f"[!] Skipping {filename}: No curl frames provided.")
              return
@@ -2766,7 +2766,7 @@ if __name__ == "__main__":
              print(f"[!] Skipping {filename}: abs_curl_all is empty.")
              return
         max_abs_curl = max(1e-9, float(abs_curl_all.max()))
-        # např. 90. percentil
+        # e.g., 90th percentile
         try:
             curl_q = float(np.quantile(abs_curl_all, curl_alpha_quantile))
         except Exception as e:
@@ -2787,15 +2787,15 @@ if __name__ == "__main__":
             curl_rgba = curl_map.to_rgba(curl, bytes=True).copy()
             abs_curl = np.abs(curl)
 
-            # 1) normalizovaný příspěvek z curlu
-            #    (lineárně od prahu curl_q do maxima; pod prahem = 0)
+            # 1) normalized curl contribution
+            #    (linearly from curl_q threshold to max; below threshold = 0)
             denom = max(1e-12, (max_abs_curl - curl_q))
             alpha_f = np.clip((abs_curl - curl_q) / denom, 0.0, 1.0)
 
-            # 2) potlačení mimo "hmotu": v nízké amplitudě nulová alfa
+            # 2) suppression outside 'matter': zero alpha at low amplitude
             alpha_f[amp < amp_alpha_floor] = 0.0
 
-            # 3) zmenšení celkové krytí (méně "fialového sněhu")
+            # 3) reduce overall opacity (less 'purple snow')
             # typicky 96 (0..96)
             alpha = (alpha_f * alpha_scale).astype(np.uint8)
             curl_rgba[..., 3] = alpha
@@ -2804,7 +2804,7 @@ if __name__ == "__main__":
             # Kompozice amplitude + curl
             comp = Image.alpha_composite(base, over)
 
-            # --- ŠIPKY se špičkou (arrowheads) ---
+            # --- ARROWS with arrowheads ---
             draw = ImageDraw.Draw(comp)
             H, W = amp.shape
             arrow_rgba = (144, 238, 144, 200)
@@ -2820,10 +2820,10 @@ if __name__ == "__main__":
                     x2 = x1 + dx * vec_scale
                     y2 = y1 + dy * vec_scale
 
-                    # tělo šipky
+                    # arrow body
                     draw.line([(x1, y1), (x2, y2)], fill=arrow_rgba, width=1)
 
-                    # špička šipky („V“)
+                    # arrowhead ('V')
                     theta = math.atan2(dy, dx)
                     head_len = 0.6 * vec_scale
                     head_wide = 0.35 * vec_scale
@@ -2875,7 +2875,7 @@ if __name__ == "__main__":
         # showing the flow of vectors as arrows on a sparse grid.
         """
         Ultra-fast FLOW GIF: sparse vector field with arrowheads (no Matplotlib).
-        Vykreslí se řídká šachovnice šipek z (frames_vecx, frames_vecy).
+        Draws a sparse checkerboard of arrows from (frames_vecx, frames_vecy).
         """
         from PIL import Image, ImageDraw
         import numpy as np
@@ -2899,7 +2899,7 @@ if __name__ == "__main__":
             vx = frames_vecx[i]
             vy = frames_vecy[i]
 
-            # plátno
+            # canvas
             if bg == "black":
                 comp = Image.new("RGBA", (W, H), (0, 0, 0, 255))
             else:
@@ -2907,7 +2907,7 @@ if __name__ == "__main__":
 
             draw = ImageDraw.Draw(comp)
 
-            # šipky se špičkou (stejná orientace jako u overlay funkce)
+            # arrows with arrowheads (same orientation as overlay function)
             for y in range(0, H, vec_stride):
                 for x in range(0, W, vec_stride):
                     dx = float(vx[y, x])
@@ -2918,7 +2918,7 @@ if __name__ == "__main__":
                     x1, y1 = float(x), float(y)
                     x2 = x1 + dx * vec_scale
                     y2 = y1 + dy * vec_scale
-                    # tělo šipky
+                    # arrow body
                     draw.line([(x1, y1), (x2, y2)], fill=arrow_rgba, width=2)
 
                     # arrowhead ("V" shape with two short strokes)
@@ -3001,8 +3001,8 @@ if __name__ == "__main__":
                     vec_stride=12,   # sparsity of arrow grid
                     vec_scale=9.0,   # arrow length (scale)
                     k_skip=GIFT_SKIP,  # skip frames (smaller file)
-                    fps=5,          # snímková frekvence GIFu
-                    bg="black"      # nebo "black", chceš-li tmavé pozadí
+                    fps=5,          # GIF framerate
+                    bg="black"      # or "black" if you want a dark background
                 )
             else:
                 _warn_skip("GIF flow (frames_vecx/frames_vecy empty)")
@@ -3038,7 +3038,7 @@ if __name__ == "__main__":
         figure0_html=""
     ):
 
-        # [check] Detekce jevů na základě logů
+        # [check] Phenomenon detection based on logs
         quasiparticles_present = len(trajectories) > 0
         # total vortices > 0
         if len(topo_log) > 0:
@@ -3058,7 +3058,7 @@ if __name__ == "__main__":
              
         phi_gravitation_confirmed = False
 
-        # 🧪 Dynamický seznam potvrzených jevů
+        # 🧪 Dynamic list of confirmed phenomena
         confirmations = []
         if vortices_present:
             confirmations.append("🌀 Spontaneous vortex formation (±1 winding)")
@@ -3084,35 +3084,35 @@ if __name__ == "__main__":
         # [ARXIV_V1] Blackhole/wormhole/closure confirmations are disabled for the initial release.
         # if blackhole_count > 0:
         #     confirmations.append(
-        #         f"🕳️ Detekce {blackhole_count} kvazičástic uvězněných ve φ-pasti (černá díra)")
+        #         f"🕳️ Detection of {blackhole_count} quasiparticles trapped in φ-trap (black hole)")
 
         #     if mass_ratio_blackholes is not None and mass_ratio_blackholes < 0.01:
         #         confirmations.append(
-        #             "🪐 Třískova hypotéza strukturálního uzavření potvrzena: částice zanikají v silných φ-zónách bez zbytkové hmotnosti"
+        #             "🪐 Triska Hypothesis of structural closure confirmed: particles decay in strong φ-zones without residual mass"
         #         )
         #     elif mass_ratio_blackholes is not None:
         #         confirmations.append(
-        #             f"🪐 Třískova hypotéza strukturálního uzavření částečně potvrzena: návratové částice mají hmotnost {mass_ratio_blackholes:.2e}× elektronová"
+        #             f"🪐 Triska Hypothesis of structural closure partially confirmed: return particles have mass {mass_ratio_blackholes:.2e}x electron mass"
         #         )
         #     else:
         #         confirmations.append(
-        #             "🪐 Třískova hypotéza strukturálního uzavření zatím neověřena – spektrální data nedostupná"
+        #             "🪐 Triska Hypothesis of structural closure unverified - spectral data unavailable"
         #         )
 
         # [ARXIV_V1] Blackhole/wormhole/closure confirmations are disabled for the initial release.
         # if avg_phi_death is not None and avg_phi_death > 0.25:
         #     confirmations.append(
-        #         f"🌀 φ v místě zániku návratových částic potvrzuje strukturální uzavření (⟨φ⟩ = {avg_phi_death:.3f})"
+        #         f"🌀 φ at destruction site of return particles confirms structural closure (⟨φ⟩ = {avg_phi_death:.3f})"
         #     )
         # elif avg_phi_death is not None:
         #     confirmations.append(
-        #         f"🌀 φ v místě zániku návratových částic: {avg_phi_death:.3f} (hranice potvrzení je 0.25)"
+        #         f"🌀 φ at destruction site of return particles: {avg_phi_death:.3f} (confirmation threshold is 0.25)"
         #     )
 
         # [ARXIV_V1] Blackhole/wormhole/closure confirmations are disabled for the initial release.
         # if wormhole_count > 0:
         #     confirmations.append(
-        #         f"🌉 Podezření na {wormhole_count} případů červí díry (skoková relokace mezi φ-zónami)")
+        #         f"🌉 Suspected {wormhole_count} wormhole events (jump relocation between φ-zones)")
 
         _curl_std = 0.0 if ("curl_std" not in globals()
                             or curl_std is None) else float(curl_std)
@@ -3120,7 +3120,7 @@ if __name__ == "__main__":
             confirmations.append(
                 f"🔄 Significant curl activity inside high-φ regions (σ = {curl_std:.2e})")
 
-        # Potvrzení homogenního výskytu kvazičástic
+        # Confirmation of homogeneous occurrence of quasiparticles
         try:
             with open(_os.path.join(output_dir, f"{RUN_TAG}_multi_spectrum_summary.csv")) as f:
                 import csv
@@ -3154,7 +3154,7 @@ if __name__ == "__main__":
             confirmations.append(
                 "🌠 Elevated φ near quasiparticles (mean > field mean + 3σ)")
 
-        # 💫 φ-gravitační interakce: ověření sbližování částic
+        # 💫 φ-gravitational interaction: verification of particle convergence
         try:
             top_trajs = pd.read_csv(_os.path.join(
                 output_dir, f"{RUN_TAG}_trajectories.csv"))
@@ -3212,7 +3212,7 @@ if __name__ == "__main__":
         # Try to include Git commit (short SHA) if available
         commit_short = None
         try:
-            import subprocess              # ponecháme jen subprocess
+            import subprocess              # keep only subprocess
             commit_short = subprocess.check_output(
                 ["git", "rev-parse", "--short", "HEAD"],
                 stderr=subprocess.DEVNULL,
@@ -3495,9 +3495,9 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
                 vec_stride=12,         # sparser arrows = cleaner look
                 vec_scale=6.0,
                 k_skip=GIFT_SKIP,
-                # sladěno s ostatními GIFy (při k_skip=2)
+                # aligned with other GIFs (at k_skip=2)
                 fps=5,
-                amp_alpha_floor=0.30,  # skryje curl v nízké |ψ|
+                amp_alpha_floor=0.30,  # hides curl in low |ψ|
                 curl_alpha_quantile=0.95,  # ignore weak curl below the 95th percentile
                 alpha_scale=80,        # gentler overall curl alpha
                 resample="bilinear"
@@ -3535,7 +3535,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     else:
         _warn_skip("NPY dumps (no stored frames)")
 
-    # 🧪 Analýza φ v okolí kvazičástic
+    # 🧪 Analysis of φ around quasiparticles
     import random
     phi_values_near_particles = []
     phi_values_field = []
@@ -3567,8 +3567,8 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
         phi_std_field = float(np.std(phi_values_field)
                               ) if phi_values_field else 0.0
 
-        # 🌀 Uložení φ polí pro pozdější analýzu
-        frames_phi_np = np.array(frames_phi)  # φ v čase (throttled)
+        # 🌀 Save φ fields for later analysis
+        frames_phi_np = np.array(frames_phi)  # φ over time (throttled)
         phi_npy_path = _os.path.join(output_dir, f"{RUN_TAG}_frames_phi.npy")
         try:
             np.save(phi_npy_path, frames_phi_np)
@@ -3586,7 +3586,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     if KAPPA_MODE == "island_to_constant":
         kappa = generate_kappa(i, total_steps=steps)
 
-    # 📈 Výpočet životnosti kvazičástic
+    # 📈 Calculation of quasiparticle lifespan
     lifespan_df = pd.DataFrame(trajectories, columns=[
         "id", "step", "y", "x", "amplitude"])
     # frames_phi is throttled; use _phi_at(step, y, x) to access step-aligned values.
@@ -3606,7 +3606,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
             blackhole_candidates.append(tid)
     blackhole_count = len(blackhole_candidates)
 
-    # Získání φ při posledním výskytu každé černoděrové částice
+    # Getting φ at last occurrence of each black hole particle
     phi_at_death = []
 
     for tid in blackhole_candidates:
@@ -3623,7 +3623,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     else:
         avg_phi_death = None
 
-    # Výpočet průměrné hmotnosti návratových částic
+    # Calculation of average mass of return particles
     blackhole_masses = []
 
     for tid in blackhole_candidates:
@@ -3667,7 +3667,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
         median_lifespan = int(lifespans["duration"].median())
         print(f"DEBUG: median_lifespan={median_lifespan}")
 
-    # 📊 Analýza průměrné spinové aury kvazičástic
+    # 📊 Analysis of average spin aura of quasiparticles
     # seaborn is optional; keep fallback without seaborn to avoid dependency issues
     try:
         import seaborn as sns
@@ -3766,7 +3766,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
 
     # Only export plots/profile if we actually have a valid map
     if upsampled_spin_map is not None:
-        # Uložení obrázku
+        # Save image
         spin_img_path = _os.path.join(
             output_dir, f"{RUN_TAG}_spin_aura_avg.png")
         plt.figure(figsize=(6, 6))
@@ -3826,27 +3826,27 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     low_mass_count = sum(
         1 for d in multi_spectrum_details if d["mass_ratio"] < 0.01)
 
-    # 📊 Export φ a curl v místech kvazičástic s mass_ratio < 0.01
+    # 📊 Export φ and curl at low mass_ratio quasiparticle points
     low_mass_coords = [
         (d["point"][0], d["point"][1])
         for d in multi_spectrum_details
         if d["mass_ratio"] < 0.01
     ]
 
-    phi_final = np.abs(phi.copy())  # poslední stav φ
+    phi_final = np.abs(phi.copy())  # final state of φ
 
-    # 📊 Výstup φ hodnot v mřížce 20×20
+    # 📊 Output φ values in 20x20 grid
     grid_points = [(y, x) for y in range(0, size, 20)
                    for x in range(0, size, 20)]
     phi_grid_rows = [(y, x, phi_final[y, x]) for y, x in grid_points]
     save_csv("phi_grid_summary.csv", ["y", "x", "phi"], phi_grid_rows)
 
-    # 🧠 Detekce deja vu / Mandela efekt kandidátů (φ > 0.25 na mřížce)
+    # 🧠 Detection of deja vu / Mandela effect candidates (φ > 0.25 on grid)
     phi_deja_rows = [(y, x, phi_final[y, x])
                      for y, x in grid_points if phi_final[y, x] > 0.25]
     save_csv("phi_grid_dejavu.csv", ["y", "x", "phi"], phi_deja_rows)
 
-    curl_final = curl  # poslední stav curl (v hlavní smyčce už ho máš)
+    curl_final = curl  # final state of curl (already in main loop)
 
     rows = []
     for y, x in low_mass_coords:
@@ -3855,7 +3855,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
 
     save_csv("phi_curl_low_mass.csv", ["y", "x", "phi", "curl"], rows)
 
-    # 📊 Vyhodnocení paměťové stopy ve φ-pastích
+    # 📊 Evaluation of memory trace in φ-traps
     df_low_mass = pd.read_csv(_os.path.join(
         output_dir, f"{RUN_TAG}_phi_curl_low_mass.csv"))
 
@@ -3914,7 +3914,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     # --- Tesla-Edison Synchronicity Hook ---
     export_portal_params()
 
-    # --- JSON manifest tohoto běhu (strojově čitelný souhrn) ---
+    # --- JSON manifest of this run (machine-readable summary) ---
     run_meta = {
         "run_id": int(RUN_ID),
         "run_tag": str(RUN_TAG),
@@ -3990,7 +3990,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
         # HTML report
         "html_report": _os.path.join(output_dir, f"{RUN_TAG}_lineum_report.html"),
 
-        # CSV logy (vše přes save_csv má prefix RUN_TAG_)
+        # CSV logs (everything via save_csv has prefix RUN_TAG_)
         "amplitude_log_csv": _os.path.join(output_dir, f"{RUN_TAG}_amplitude_log.csv"),
         "phi_center_log_csv": _os.path.join(output_dir, f"{RUN_TAG}_phi_center_log.csv"),
         "topo_log_csv": _os.path.join(output_dir, f"{RUN_TAG}_topo_log.csv"),
@@ -4002,7 +4002,7 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
         "phi_curl_low_mass_csv": _os.path.join(output_dir, f"{RUN_TAG}_phi_curl_low_mass.csv"),
         "spin_aura_profile_csv": _os.path.join(output_dir, f"{RUN_TAG}_spin_aura_profile.csv"),
 
-        # Obrázky a GIFy
+        # Images and GIFs
         "spectrum_plot_png": _os.path.join(output_dir, f"{RUN_TAG}_spectrum_plot.png"),
         "phi_center_plot_png": _os.path.join(output_dir, f"{RUN_TAG}_phi_center_plot.png"),
         "topo_charge_plot_png": _os.path.join(output_dir, f"{RUN_TAG}_topo_charge_plot.png"),
@@ -4030,9 +4030,9 @@ No cosmological, gravitational, biomedical or metaphysical claims are made.</sma
     latest_ckpt_path = None
     if SAVE_STATE:
         try:
-            # Uložení stavu po posledním kroku (i)
-            # Pokud běh skončil normálně, i je poslední krok.
-            # Pokud byl přerušen, i je krok přerušení.
+            # Save state after the last step (i)
+            # If run ended normally, i is the last step.
+            # If interrupted, i is the interruption step.
             latest_ckpt_path = save_state_checkpoint(
                 output_dir, RUN_TAG, int(i),
                 psi, phi, kappa, delta, active_tracks, int(next_id)

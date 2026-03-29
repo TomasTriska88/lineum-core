@@ -13,9 +13,9 @@ setup(
     version='1.0.0',
     description='Core physics engine and generative algorithms for Lineum and OEA',
     author='Tomáš Tříska',
-    # Registruje strukturu složek, pro nás stěžejní "lineum_core/" složku:
+    # Registers the package directory structure, specifically the core "lineum_core/"
     packages=find_packages(include=['lineum_core', 'lineum_core.*']),
-    # Registruje uvolněné soubory u rootu, tj. "import lineum" skrze "lineum.py"
+    # Registers top-level modules at the root, e.g. "import lineum" via "lineum.py"
     py_modules=['lineum'],
     install_requires=read_requirements(),
     python_requires='>=3.8',

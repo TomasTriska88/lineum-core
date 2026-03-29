@@ -66,7 +66,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
     contrast_scale = config_params.get("contrast_scale", 5.0)
     dissipation = config_params.get("dissipation", 0.005)
     steps_factor = config_params.get("steps_factor", 1.0)
-    decay_per_step = config_params.get("decay_per_step", 1.0) # Bezpečný fallback
+    decay_per_step = config_params.get("decay_per_step", 1.0) # Safe fallback
 
     # Apply specific initial conditions based on preset
     if preset_name == "water_drop":
@@ -128,7 +128,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
     elif preset_name == "explosion":
         dt = 1.5                  # Fast shockwave expansion
         steps_factor = 1.5
-        contrast_scale = 0.8      # Mnohem menší kontrast proti bandingu (dovolí plynulý gradient energie)
+        contrast_scale = 0.8      # Much smaller contrast against banding (allows smooth energy gradient)
         dissipation = 0.08        # Extreme dissipation to instantly kill trailing "zebra" ringing
         
         # Clean massive hollow shockwave (pure displacement, no kinetic phi instability)
@@ -140,9 +140,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
         
     elif preset_name == "gas_explosion":
         noise_enabled = False     
-        dt = 0.55                 # Bezpečné rychlé šíření okrajových vln
+        dt = 0.55                 # Safe fast propagation of edge waves
         steps_factor = 1.0        
-        contrast_scale = 1.8      # Vyšší kontrast pro ohraničené a definované roje oblak
+        contrast_scale = 1.8      # Higher contrast for bounded and defined cloud swarms
         dissipation = 0.05        
 
         
@@ -305,24 +305,24 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
             
         elif preset_name == "gas_explosion":
             # 100% LINEUM PHYSICS ENGINE (Eq-8)
-            # Uživatel má naprostou pravdu: "mud" a "acid_pool" vypadají świetně,
-            # protože jejich injekce hmoty je primitivní a nesymetrická!
-            # Když jsem se snažil naprogramovat "kontinuální hoření stovek bublin",
-            # vyrobil jsem uniformní kruh a rozbil gradienty do čisté bílé.
-            # Řešení: Zkombinovat "water_mud" masivní kapky (na začátku)
-            # s "acid_pool" bubláním hybnosti (během hoření). 
+            # The user is absolutely right: 'mud' and 'acid_pool' look great,
+            # because their mass injection is primitive and asymmetrical!
+            # When I tried to program 'continuous burning of hundreds of bubbles',
+            # I created a uniform circle and broke gradients down to pure white.
+            # Solution: Combine 'water_mud' massive drops (at the beginning)
+            # with 'acid_pool' momentum bubbling (during burning). 
             
-            # 1. Hlavní těleso mraku - kontinuální mikroskopické vaření plazmatu
+            # 1. Main cloud body - continuous microscopic boiling of plasma
             if f < 8:
                 np.random.seed(300 + f * variant)
-                # Uživatelská intuice: "když jich budeme mít dost, uděláme výbuch ne?"
-                # Injektujeme obrovské množství drobných vln, které budou interferovat a tvořit detail
+                # User intuition: 'if we have enough of them, we make an explosion, right?'
+                # Inject a huge amount of tiny waves to interfere and create detail
                 for _ in range(70): 
                     if f < 2:
-                        # 1. Počáteční zažehnutí: Udržujeme symetrický kulatý tlak pro hladký oválný start
+                        # 1. Initial ignition: Maintain symmetrical round pressure for a smooth oval start
                         r = np.random.rand() * 8.0
                     else:
-                        # 2. Rayleigho–Taylorovy nestability: Expanze do zubatých tvarů s časem
+                        # 2. Rayleigh-Taylor instabilities: Expansion into jagged shapes over time
                         r = np.random.rand() * 20.0 * (1.0 + f * 0.1) 
                     
                     angle = np.random.rand() * np.pi * 2.0
@@ -330,28 +330,28 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
                     sy = cy + r * math.sin(angle)
                     
                     dist = np.sqrt((X - sx)**2 + (Y - sy)**2)
-                    size = 1.0 + np.random.rand() * 3.0 # Mikroskopické bublinky!
+                    size = 1.0 + np.random.rand() * 3.0 # Microscopic bubbles!
                     power = 0.3 + np.random.rand() * 0.5 
                     
                     psi += power * np.exp(-(dist**2) / (size**2))
                     
-            # 2. Vnitřní mikroturbulence "vaření plazmatu" (jako acid_pool)
+            # 2. Internal microturbulence 'plasma boiling' (like acid_pool)
             if f < 12:
                 np.random.seed(800 + f * variant)
-                # Neustále bubláme hybnost (phi) z centra, aby se vlna "vařila" a nenechala střed prázdný
+                # Constantly bubble momentum (phi) from the center so the wave 'boils' and leaves no empty middle
                 for _ in range(8):
                     bx = cx + np.random.uniform(-10, 10)
                     by = cy + np.random.uniform(-10, 10)
                     b_dist = np.sqrt((X - bx)**2 + (Y - by)**2)
                     
-                    # Drobné rázové vlnky vystřelují z centra
+                    # Tiny shockwaves shooting from the center
                     phi += 1.0 * np.exp(-(b_dist**2) / 4.0)
                     
-            # 3. Termální vztlak (Mushroom cloud effect)
+            # 3. Thermal buoyancy (Mushroom cloud effect)
             if f > 3:
-                # Tlumíme kinetickou odchylku směrem dolů, takže těžiště horkého plynu přirozeně stoupá nahoru
+                # Dampen downward kinetic deviation so the hot gas center naturally rises
                 dist_down = np.clip((Y - cy) / 30.0, 0.0, 1.0)
-                buoy_mask = 1.0 - (dist_down * 0.1) # Jemný, ale setrvalý odtok energie zespoda
+                buoy_mask = 1.0 - (dist_down * 0.1) # Gentle but constant energy drain from below
                 psi = 0.5 + (psi - 0.5) * buoy_mask
                 phi *= buoy_mask
 
@@ -374,19 +374,19 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
                 spark_power = min(2.0, (f / 10.0) * 2.0)
                 
             for p in sparks:
-                p[5] -= 1 # Snížit životnost zdroje
-                p[1] += p[2] # Aplikovat horizontální snášení větrem (tvoří nádherné organické hady)
+                p[5] -= 1 # Decrease source lifespan
+                p[1] += p[2] # Apply horizontal wind drift (forms beautiful organic snakes)
                 
-                # Oscilujeme energii jako harmonický oscilátor přes čas (f),
-                # tvoří vlnové "zášlehy" fyzikálního ohně.
+                # Oscillate energy as a harmonic oscillator over time (f),
+                # forms wave 'flashes' of physical fire.
                 wobble = np.sin((total_frames - frames + f) * p[3] + p[4])
                 spark_dist = np.sqrt((X - p[1])**2 + (Y - p[0])**2)
                 
-                # Zvětšená šířka paprsku (20.0), aby se plameny krásně slévaly dohromady!
+                # Increased beam width (20.0) so flames blend beautifully together!
                 impact = wobble * spark_power * 1.5 * np.exp(-(spark_dist**2) / 20.0)
                 psi = psi + impact + 0j
                 
-                # Zbytkové teplo
+                # Residual heat
                 phi += np.abs(impact) * 0.1
                 
                 if p[5] <= 0 and allow_sparks:
@@ -398,28 +398,28 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
                     p[4] = np.random.uniform(0, 2*np.pi)
                     p[5] = np.random.randint(20, 45)
                     
-            # Fyzikální podlaha: Energie, která se šíří "pod polena", musí rychle zaniknout
-            # Simulujeme tak fakt, že oheň se neodráží rovnoměrně dolů do země.
+            # Physical floor: Energy spreading 'under the logs' must quickly decay
+            # Thus simulating the fact that fire does not reflect evenly down into the ground.
             ground_mask = np.clip((Y - (burn_cy + 10)) / 15.0, 0.0, 1.0)
             psi *= (1.0 - ground_mask * 0.95)
             phi *= (1.0 - ground_mask * 0.95)
             
         elif preset_name == "fireball":
-            # Letící ohnivá koule. Musí letět NADZVUKOVĚ!
+            # Flying fireball. Must fly SUPERSONICALLY!
             np.random.seed(500 + f * variant)
             
-            # Startujeme masivně vlevo a nízko a proletíme celou obrazovkou vysokou rychlostí
+            # Start massively low-left and fly across the whole screen at high speed
             fly_x = cx - 80 + (f / 30.0) * 260.0
             fly_y = cy + 30 - (f / 30.0) * 120.0
             
-            # Ohnisko plazmy vpředu (Shockwave head s Machovým oknem)
+            # Plasma focus in front (Shockwave head with Mach window)
             dist_head = np.sqrt((X - fly_x)**2 + (Y - fly_y)**2)
             phi += 4.0 * np.exp(-(dist_head**2) / 6.0)
             
-            # Chaos v ohonu (mikrovýbuchy tažené za sebou)
+            # Tail chaos (micro-explosions trailing behind)
             if f > 2:
                 for _ in range(5):
-                    # Injektujeme do vlečky za kometou
+                    # Injecting into the comet tail
                     tail_x = fly_x - np.random.rand() * 8.0
                     tail_y = fly_y + np.random.rand() * 4.0
                     b_dist = np.sqrt((X - tail_x)**2 + (Y - tail_y)**2)
@@ -440,9 +440,9 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
             psi, phi = state["psi"], state["phi"]
             phi = phi * decay_per_step
             
-            # Fyzikální Convection (Termální vztlak ohně v PDE)
+            # Physical Convection (Thermal buoyancy of fire in PDE)
             if preset_name in ["campfire", "fireball"]:
-                # Tekutina stoupá nahoru (roll po ose y)
+                # Fluid rises up (roll on y axis)
                 psi = np.roll(psi, -1, axis=0)
                 phi = np.roll(phi, -1, axis=0)
                 psi[-1, :] = 0.5
@@ -483,7 +483,7 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
             vignette_crop = vignette[offset:offset+phys_size, offset:offset+phys_size]
             
             if preset_name == "gas_explosion":
-                # Nativní renderování Thermocline Shading (pozitivní = bílá plazma, negativní = kouř)
+                # Native rendering Thermocline Shading (positive = white plasma, negative = smoke)
                 val = np.tanh((np.real(psi_crop) - 0.5) * contrast_scale)
                 light_mask = np.clip(val, 0.0, 1.0)
                 shadow_mask = np.clip(-val, 0.0, 1.0)
@@ -493,15 +493,15 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
                 activity = np.abs(val)
                 fade_start_frame = int(frames * 0.40)
             else:
-                # Additivní Thermodynamika (Additive Thermodynamics) pro Oheň
+                # Additive Thermodynamics for Fire
                 wave_centered = np.real(psi_crop) - 0.5
                 
-                # Zásadní objev: Nebereme absolutní hodnotu! 
-                # Pozitivní kopce = oheň. Negativní údolí = samovolné maskování (černá vrstva).
-                # Soften the edges: menší násobič (3.0 místo 6.0) zařídí elegantní gradient kolem plamenů.
+                # Crucial discovery: We don't take the absolute value! 
+                # Positive hills = fire. Negative valleys = self-masking (black layer).
+                # Soften the edges: smaller multiplier (3.0 instead of 6.0) ensures elegant gradient around flames.
                 activity = wave_centered * contrast_scale * 3.0
                 
-                # Kladné vrcholy limitujeme logistickou křivkou na maximum 1.0. 
+                # Limit positive peaks with logistic curve to max 1.0. 
                 val = np.clip(np.tanh(activity), 0.0, 1.0)
                 colored = np.zeros((phys_size, phys_size, 3))
                 colored[:, :, 0] = 255
@@ -522,20 +522,20 @@ def run_vfx(preset_name, view_sizes=[32, 48, 64], angle_deg=0, variant=1, phase=
                 else:
                     global_fade = 1.0 - ((f - fade_start_frame) / (fade_end_frame - fade_start_frame))
                 
-            # Jemný vizuál, kouř i zánět jsou jasně čitelné z activity
+            # Subtle visual, smoke and ignition are clearly readable from activity
             final_mask = vignette_crop
             if preset_name == "campfire":
-                # Vytvoření dynamické Teardrop masky místo kruhové Vignette, 
-                # aby oheň přirozeně mizel směrem nahoru a do stran (tvar plamene)!
+                # Creation of dynamic Teardrop mask instead of circular Vignette, 
+                # so the fire naturally fades upwards and sideways (flame shape)!
                 teardrop_Y, teardrop_X = np.ogrid[0:phys_size, 0:phys_size]
                 base_y = phys_size - 10
                 base_x = phys_size / 2.0
-                # Vertikální fade (1.0 dole, 0.0 nahoře)
+                # Vertical fade (1.0 at bottom, 0.0 at top)
                 vert_fade = np.clip(1.0 - (base_y - teardrop_Y) / (phys_size * 0.9), 0.0, 1.0)
-                # Horizontální šířka plamene se zužuje nahoru
+                # Horizontal flame width narrows upwards
                 width = 8.0 + (teardrop_Y / phys_size) * 32.0 
                 horiz_dist = np.abs(teardrop_X - base_x)
-                # Ostrý přechod do prázdna
+                # Sharp transition to void
                 horiz_fade = np.clip(1.0 - (horiz_dist / width)**1.5, 0.0, 1.0)
                 fire_mask = vert_fade * horiz_fade
                  # Use fire mask instead of circle vignette!

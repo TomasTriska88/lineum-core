@@ -16,6 +16,7 @@ The sections below are divided to first address **basic principles and critical 
 
 ### Phase 2: Commercial & Empirical Proofs
 2. **Commercial API & Products:** Build and stabilize commercial applications utilizing the updated core engine.
+   - [ ] **PyPI Publishing:** Publish `lineum-core` to the public Python Package Index (pypi.org) to enable clean `pip install lineum_core` usage without direct `git+https` links in downstream products like OEA.
 3. **Lab Verifications:** Add e2e numerical tests to protect the new engine features before writing any texts.
 
 ### Phase 3: Project Hygiene & Documentation
