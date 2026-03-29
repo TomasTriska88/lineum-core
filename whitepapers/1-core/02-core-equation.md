@@ -172,15 +172,6 @@ Version 9 shifted focus from particle formation to macro-gravitational limits (C
 - **Hawking Radiation:** At the extreme shear boundary of a deep $\phi$-trap, the steep gradient `grad_mag` geometrically forces the spontaneous generation of $\psi$ virtual pairs. Those with enough outward kinetic diffusion escape, leading to the gradual geometric unwinding (evaporation) of the $\phi$ tension well.
 - **Astrophysical Jets:** When a $\phi$-trap becomes maximally saturated and can dig no deeper (`PHI_CAP`), the immense $\nabla^2\psi$ repulsive diffusion violently overcomes the saturated in-flow, blowing the excess $\psi$ energy outward along the topological axis of rotation, creating collimated relativistic back-pressure Jets.
 
----
-
-### 🔹 Exploratory Candidate Eq-10 – The Macroscopic Topology Limit (derived from OEA)
-
-Candidate Eq-10 represents the **Macroscopic Cosmological Limit** discovered via the experimental OEA phenomenological engine. Its core mandate is to prove that at astronomical scales, the universe does **not** rely on the explicit hardcoded "HDD" algorithm ($\mu$) introduced in Version 6.
-
-- **Emergent Mass:** When the fundamental $\Phi$ grid is structured from a probabilistic **Quantum Foam** seed (Baryon Acoustic Noise) and iteratively scaled outward by powers of 2 (up to the Phase 11 observable horizon limit), the destructive/additive overlaps instantly form indestructible prime-number knots (Cosmic Web Dark Matter vertices).
-- **Conclusion Overcome:** Stable macroscopic memory ($\mu$) emerges natively from pure scale intersection. It does not require an exogenous rate algorithm with arbitrary thresholds (`thresh`) and decays (`rho`). Macro-matter is a geometric illusion cast by deep $\Phi$ overlaps evaluated strictly on infinite-precision Integer coordinates to bypass the Float Precision Collapse.
-
 ## 4. Discussion
 
 This progression shows a shift from a minimalistic ψ–φ interaction model to a more versatile three-field system capable of sustaining richer emergent structures **within the simulation**. Each modification was driven by simulation feedback and aimed at increasing stability, scalability, and interpretability of the model, not by fitting any specific physical constant or established gravitational law.

@@ -1,4 +1,4 @@
-> **[OEA Eq-10 RECTIFICATION PENDING]** This hypothesis relies on the archaic V6 interpretation of $\mu$ as an explicitly calculated memory field. Recent macro-simulations (Candidate Eq-10 / OEA) mathematically prove that mass is an instantaneous, emergent topological byproduct of overlapping space grids ($\Phi$), requiring no arbitrary time-decay variables. This recontextualizes the mechanical analogies described below without invalidating the broader philosophical intent.
+> **[OEA MACRO-TOPOLOGY RECTIFICATION PENDING]** This hypothesis relies on the archaic V6 interpretation of $\mu$ as an explicitly calculated memory field. Recent macro-simulations (The OEA Topological Limit) mathematically prove that mass is an instantaneous, emergent topological byproduct of overlapping space grids ($\Phi$), requiring no arbitrary time-decay variables. This recontextualizes the mechanical analogies described below without invalidating the broader philosophical intent.
 
 **Title:** Hypothesis: Spin Aura of Quasiparticles (Emergent Particle Spin Aura)
 **Document ID:** 25-cosmo-hyp-spin-aura
