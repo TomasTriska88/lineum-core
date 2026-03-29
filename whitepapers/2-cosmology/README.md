@@ -41,4 +41,5 @@
 | Unknown | - | [35-cosmo-hyp-neural-resonance.md](hypotheses/35-cosmo-hyp-neural-resonance.md) |
 | Unknown | Draft | [36-cosmo-hyp-quantum-microscopy.md](hypotheses/36-cosmo-hyp-quantum-microscopy.md) |
 | Unknown | Draft | [37-cosmo-hyp-quantum-corral.md](hypotheses/37-cosmo-hyp-quantum-corral.md) |
+| Lineum Cosmology: Quantum Foam, the Bekenstein Horizon, and Emergent Mu-Tensors | Draft | [38-cosmo-hyp-quantum-foam-and-mu-emergence.md](hypotheses/38-cosmo-hyp-quantum-foam-and-mu-emergence.md) |
 <!-- INDEX_END -->
