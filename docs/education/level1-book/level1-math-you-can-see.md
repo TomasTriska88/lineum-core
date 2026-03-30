@@ -422,9 +422,9 @@ Formulas are structural corrections to fix areas where pieces were dug out twice
 **Imagine forcing a puzzle piece with three wide stripes to lock into a space cut for four thin stripes.**
 They do not fit. You must pass both shapes through a tool that cuts them entirely into 12 identical, smaller squares before they can connect.
 ![Common Denominator](images/level1-common-denominator.png)
-[IMAGE_PROMPT: Two mismatched puzzle blocks being fed into a calibrator, which outputs them as perfectly identical fine square grids. Flat vector style, white background.]
+[IMAGE_PROMPT: Two mismatched puzzle blocks being fed into a calibrator, which outputs them as perfectly identical fine square pieces. Flat vector style, white background.]
 > [!NOTE]
-> **💡 AHA MOMENT:** Common denominators standardize fragmented pieces into identically sized grids so they can merge.
+> **💡 AHA MOMENT:** Common denominators standardize fragmented pieces into identically sized pieces so they can merge.
 
 **What it is:**
 It is a scaling process ensuring two fractions use the exact same base slice size before combining.
@@ -433,14 +433,14 @@ It is a scaling process ensuring two fractions use the exact same base slice siz
 To add $\frac{1}{3} + \frac{1}{4}$, find a common multiple for the bottoms (12). Multiply the first fraction by $\frac{4}{4}$ to get $\frac{4}{12}$. Multiply the second by $\frac{3}{3}$ to get $\frac{3}{12}$. Add the tops to get $\frac{7}{12}$.
 
 **Why it works in space:**
-Merging pieces requires matching lines. You must slice different grids into the exact same piece size so they fit together perfectly.
+Merging pieces requires matching lines. You must slice different shapes into the exact same piece size so they fit together perfectly.
 
 **Summary:**
-Adding fractions requires you to cut completely different shapes into an identical pixel size.
+Adding fractions requires you to cut completely different shapes into an identical piece size.
 
 ### Dividing by a Fraction ($\frac{a}{b} \div \frac{c}{d}$)
 **Imagine a parachute catching wind, only to be inverted inside out to become a sail.**
-Division generally acts as a brake. However, when you divide by a fraction, the direction flips. It transforms into forward movement, accelerating your system.
+Division generally acts as a brake. However, when you divide by a fraction, the direction flips. It transforms into forward movement, making the shape grow instead of shrink.
 ![Dividing by Fraction](images/level1-dividing-fractions.png)
 [IMAGE_PROMPT: A large open parachute gently inverted inside out forming a sleek forward-facing sail. Clean vector style, white background.]
 > [!NOTE]
