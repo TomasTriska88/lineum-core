@@ -7,29 +7,27 @@ import { execSync } from 'child_process';
 const args = process.argv.slice(2);
 const targetArg = args.find(a => a.startsWith('--target='));
 const specificTarget = targetArg ? targetArg.split('=')[1] : 'all';
+const isDryRun = args.includes('--dry-run');
 
 // Fixed Export Configurations mapped to user requirements
 const configs = {
   'print-global': { // 6x9" with 3mm bleed
     width: '158mm', // 152mm + 3mm left + 3mm right
     height: '235mm', // 229mm + 3mm top + 3mm bottom
-    directory: 'exports/print-global',
-    filenameSuffix: 'Print6x9.pdf',
+    filenameSuffix: 'Print-6x9.pdf',
     printBackground: true,
     scale: 1
   },
   'print-eu': { // B5 with 3mm bleed
     width: '182mm', // 176mm + 3mm left + 3mm right
     height: '256mm', // 250mm + 3mm top + 3mm bottom
-    directory: 'exports/print-eu',
-    filenameSuffix: 'PrintB5.pdf',
+    filenameSuffix: 'Print-B5.pdf',
     printBackground: true,
     scale: 1 
   },
   'ebook': { // Digital display (6x9 default, RGB, no bleeds)
     width: '152mm',
     height: '229mm',
-    directory: 'exports/ebook',
     filenameSuffix: 'Digital.pdf',
     printBackground: true,
     scale: 1
@@ -54,8 +52,8 @@ async function exportTarget(target, bookId) {
   const bookNameCap = bookId.charAt(0).toUpperCase() + bookId.slice(1);
   const targetFilename = `${bookNameCap}-${conf.filenameSuffix}`;
   
-  // Ensure export directories exist
-  const outDirStr = path.join(process.cwd(), conf.directory);
+  // Ensure book-specific export directory exists
+  const outDirStr = path.join(process.cwd(), 'exports', bookId);
   if (!fs.existsSync(outDirStr)) {
     fs.mkdirSync(outDirStr, { recursive: true });
   }
@@ -63,6 +61,16 @@ async function exportTarget(target, bookId) {
   console.log(`\n================================`);
   console.log(`Initializing PDF Production Pipeline [Book: ${bookNameCap} | Target: ${target}]...`);
   
+  if (isDryRun) {
+    console.log(`[DRY RUN] Simulating physical page generation to ${targetFilename}...`);
+    const outFile = path.join(outDirStr, targetFilename);
+    const coverFile = path.join(outDirStr, `Cover-${targetFilename}`);
+    fs.writeFileSync(outFile, 'DRY RUN PDF BODY');
+    fs.writeFileSync(coverFile, 'DRY RUN PDF COVER');
+    console.log(`[DRY RUN] 🚀 Pipeline Completed: ${outDirStr}\n`);
+    return;
+  }
+
   const browser = await chromium.launch();
   const page = await browser.newPage();
   
@@ -123,7 +131,24 @@ async function exportTarget(target, bookId) {
 }
 
 async function runBatch() {
-  for (const book of defaultBooks) {
+  const exportsDir = path.join(process.cwd(), 'exports');
+  
+  // Wipe the exports directory at the start of the batch
+  if (!process.env.SKIP_WIPE && fs.existsSync(exportsDir)) {
+    console.log('🧹 Wiping existing exports directory...');
+    try {
+      // Safely delete the full tree, capturing Windows EBUSY exceptions if files are locked
+      fs.rmSync(exportsDir, { recursive: true, force: true });
+    } catch (e) {
+      console.error(`❌ CRITICAL ERROR: Cannot wipe exports directory. Is a PDF or folder open? Error: ${e.message}`);
+      process.exit(1);
+    }
+  }
+
+  // Allow passing a specific test book if needed
+  const targetBooks = process.env.TEST_BOOK ? [process.env.TEST_BOOK] : defaultBooks;
+
+  for (const book of targetBooks) {
     for (const t of activeTargets) {
       await exportTarget(t, book);
     }
