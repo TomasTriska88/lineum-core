@@ -220,5 +220,167 @@ export const level2Concepts: Concept[] = [
       }
     ],
     summary: "They provide the invisible rotational depth required to make waves function correctly."
-  }
+  },
+{
+    "id": "domain-range",
+    "layer": "core",
+    "chapterNumber": 1,
+    "chapterTitle": "The Shape of Rules (Functions & Boundaries)",
+    "title": "Domain & Range",
+    "hook": "Imagine an engine that instantly explodes if fed the wrong type of fuel.",
+    "explain": "The Domain acts as absolute security boundaries. It explicitly lists exactly what raw numbers the function can safely consume without breaking physics.",
+    "image": {
+      "path": "images/level2-domain-range.png",
+      "prompt": "A glowing grid with the left axis heavily shielded by forcefields, funneling blocks into a machine. Conceptual abstract vector."
+    },
+    "aha": "Math naturally defends against impossibilities by setting physical limit walls.",
+    "summary": "The domain strictly dictates safe boundaries, preventing mathematical collapse by explicitly forbidding impossible absolute inputs.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Domain lists all valid X inputs. Range lists all possible resulting Y outputs."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Scan the equation for inherent traps. Exclude any numbers that force a division by absolute zero or place a negative inside an even root."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Dividing by zero demands infinite mass. Negative roots attempt to locate shapes spanning a dimension orthogonal to standard reality. The Domain structurally bans access to those voids."
+      }
+    ]
+  },
+  {
+    "id": "polynomials",
+    "layer": "core",
+    "chapterNumber": 1,
+    "chapterTitle": "The Shape of Rules (Functions & Boundaries)",
+    "title": "Polynomials",
+    "hook": "Imagine lashing together several individual mechanical gears of entirely different sizes on a single shaft.",
+    "explain": "A polynomial combines vastly different exponential powers ($x^3, x^2, x$) into one continuous flowing chain.",
+    "image": {
+      "path": "images/level2-polynomials.png",
+      "prompt": "A smooth continuous curved line undulating up and down across a minimalist grid layout. Flat vector style."
+    },
+    "aha": "Polynomials weave erratic individual exponent curves into one smooth unified wave.",
+    "summary": "Polynomials weave independent exponents together into a single, cohesive geometric curve that spans gracefully across the infinite axis.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "An algebraic expression composed entirely of variables harboring positive whole-number exponents."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Factor the polynomial to locate its roots. Every distinct intersection where the curve perfectly strikes the zero line pinpoints a root."
+      },
+      {
+        "label": "Why it works.",
+        "body": "The dominant term ($x^3$) controls the macro-scale trajectory infinitely outward, while the smaller localized terms twist and warp the geometry around the origin."
+      }
+    ]
+  },
+  {
+    "id": "graph-transformations",
+    "layer": "core",
+    "chapterNumber": 1,
+    "chapterTitle": "The Shape of Rules (Functions & Boundaries)",
+    "title": "Formal Graph Transformations",
+    "hook": "Imagine physically dragging an unbending metal wire across an infinite floor without ever altering its shape.",
+    "explain": "Instead of recalculating every dot individually, you perform a universal override. You slide, stretch, or flip the entirety of the shape at once.",
+    "image": {
+      "path": "images/level2-graph-transformations.png",
+      "prompt": "A solid curve on a grid, ghosted out and dragged perfectly up and to the right without losing proportion. Clean minimalist vector."
+    },
+    "aha": "Adding numbers inside or outside the parenthesis acts as a physical joystick for the coordinate plane.",
+    "summary": "Transformations allow you to mechanically slide, flip, or dilate the entire system universally without individually calculating every internal dot.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A geometric manipulation that systematically translates or dilates a completed curve."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Adding directly outside the function ($f(x)+2$) drifts it physically vertically. Adding inside ($f(x+2)$) slides it heavily horizontally in reverse."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Editing the pure input tricks the engine into reaching points sooner in time, sliding the physical timeline sideways along the infinite axis."
+      }
+    ]
+  },
+  {
+  "id": "fibonacci-deep",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Continuous Flow",
+  "title": "Fibonacci (Convergence of Sequences)",
+  "hook": "Imagine observing a sequence that seems erratic but slowly orbits a completely singular, infinite limit.",
+  "explain": "When you continuously divide adjacent numbers in the Fibonacci sequence (like 8/5, then 13/8), the resulting fraction wildly swings back and forth but eventually converges exactly onto the Golden Ratio, $\\phi$.",
+  "image": {
+    "path": "images/enrichment-fibonacci-deep.png",
+    "prompt": "A plotted sequence graphing a wave that oscillates wildly before settling into a perfectly flat razor wire at 1.618. Clean dark conceptual vector."
+  },
+  "aha": "Biological additive memory inherently locks onto geometric perfection at infinity.",
+  "summary": "The discrete steps of Fibonacci perfectly translate into the continuous irrational limit of the Golden Ratio as time approaches infinity.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "The analysis of the ratio limits between cascading terms of the biological sequence."
+    },
+    {
+      "label": "Why it works.",
+      "body": "As the sequence grows, the local 'noise' of starting at 1 falls effectively to zero, leaving behind the pure geometric eigenvalue of the generative system."
+    }
+  ]
+},
+{
+  "id": "benfords-law-basic",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Continuous Flow",
+  "title": "Benford's Law (The Rule of 1)",
+  "hook": "Imagine looking at the population of every city on Earth and realizing the number 1 starts almost a third of them.",
+  "explain": "Benford\u2019s Law proves that in naturally behaving exponential datasets, numbers starting with the digit 1 appear far more frequently (about 30%) than numbers staring with 9 (less than 5%).",
+  "image": {
+    "path": "images/enrichment-benford.png",
+    "prompt": "A towering bar graph dominated massively by the number 1, gradually decaying to a tiny sliver at 9. Minimalist glowing architecture style."
+  },
+  "aha": "The universe stretches out natural growth; crossing a massive decade like the 10-19 range takes significantly longer than the faster 90-99 range.",
+  "summary": "The law provides a microscopic fingerprint to detect artificial numbers, as human fraud fundamentally violates this hidden exponential delay.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A statistical anomaly detailing the frequency distribution of leading digits in massive natural datasets."
+    },
+    {
+      "label": "Why it works.",
+      "body": "When a population grows exponentially, doubling from 1 million to 2 million takes a vast amount of time. Doubling from 9 million to 10 million completes the order of magnitude almost instantly, trapping the system in the '1' territory much longer."
+    }
+  ]
+},
+{
+  "id": "fractals-basic",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Continuous Flow",
+  "title": "Fractals (Infinite Detail)",
+  "hook": "Imagine zooming a microscope into the rugged edge of a coastline, only to find the exact same jagged shape repeating forever.",
+  "explain": "A fractal is a geometric object that maintains structural self-similarity across an infinite scale of magnification.",
+  "image": {
+    "path": "images/enrichment-fractal.png",
+    "prompt": "A glowing geometric snowflake resolving into infinite identical repeating structures along its perimeter. Dark conceptual abstract vector."
+  },
+  "aha": "The universe generates infinite complexity by looping simple iterative rules.",
+  "summary": "Fractals bridge the gap between dimensions, holding infinite boundary length within a finite containing space.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A geometric configuration that fractures endlessly, retaining its original structure upon every recursive depth."
+    },
+    {
+      "label": "Why it works.",
+      "body": "Standard geometry bends straight lines smoothly. Fractal geometry forces every straight segment to permanently branch into smaller identical versions of itself, building natural chaotic boundaries like clouds, lungs, and mountain ranges."
+    }
+  ]
+}
 ];

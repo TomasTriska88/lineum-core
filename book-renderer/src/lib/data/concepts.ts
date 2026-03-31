@@ -1,5 +1,6 @@
 export interface Concept {
   id: string;
+  layer?: 'core' | 'enrichment';
   chapterNumber: number;
   chapterTitle: string;
   title: string;

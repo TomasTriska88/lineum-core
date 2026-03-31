@@ -1,21 +1,4 @@
-export interface Concept {
-  id: string;
-  chapterNumber: number;
-  chapterTitle: string;
-  title: string;
-  hook: string;
-  explain: string;
-  image: {
-    path: string;
-    prompt: string;
-  };
-  aha: string;
-  proseSegments: {
-    label: string;
-    body: string;
-  }[];
-  summary: string;
-}
+import type { Concept } from '../concepts';
 
 export const level1Concepts: Concept[] = [
   {
@@ -437,5 +420,229 @@ export const level1Concepts: Concept[] = [
         "body": "Coordinates pin shapes onto a flat floor. The grid stops a point from drifting away completely."
       }
     ]
-  }
+  },
+{
+    "id": "fractions",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Scale and The Map (Equations & Geometry)",
+    "title": "Fractions",
+    "hook": "Imagine a solid brick shattered into exactly identical pieces.",
+    "explain": "A fraction records how many pieces exist (top) compared to how many pieces make a whole brick (bottom).",
+    "image": {
+      "path": "images/level1-fractions.png",
+      "prompt": "A solid rectangular brick alongside another identical brick broken into exactly three perfect slices. Clean minimalist vector."
+    },
+    "aha": "Fractions aren't incomplete numbers; they are perfectly rigid geometry locked into grids.",
+    "summary": "Fractions establish rigorous part-to-whole relationships mapped over universally locked structural grids.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A ratio comparing a part of an object strictly against its absolute whole."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To add or subtract, you must force the bottom numbers (the structural grid) to be identical first. To multiply, just multiply straight across to create a completely new grid."
+      },
+      {
+        "label": "Why it works.",
+        "body": "You cannot add a slice of a 3-part grid to a slice of a 4-part grid directly. You must subdivide both into a universal 12-part grid before combining them physically."
+      }
+    ]
+  },
+  {
+    "id": "ratios-proportions",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Scale and The Map (Equations & Geometry)",
+    "title": "Ratios & Proportions",
+    "hook": "Imagine mixing exactly two cups of blue paint with three cups of yellow to make green.",
+    "explain": "A ratio locks two separate objects into a permanent relationship. If one scales up, the other must scale up identically to maintain the structure.",
+    "image": {
+      "path": "images/level1-ratios.png",
+      "prompt": "Two blue blocks locked to three yellow blocks, scaling up to four blue blocks and six yellow blocks. Abstract vector style."
+    },
+    "aha": "Proportions operate like physical gears; turning one forces the other to turn in lockstep.",
+    "summary": "Proportions lock independent objects together so they dynamically expand or shrink in absolute structural harmony.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A mathematical gear connecting two completely different units together permanently."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Set two fractions equal to each other. Cross-multiply the diagonals to form a straight equation, then solve for the missing piece."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Cross-multiplication acts as a geometric pivot, balancing the missing mass across the center of the equation."
+      }
+    ]
+  },
+  {
+    "id": "inequalities",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Scale and The Map (Equations & Geometry)",
+    "title": "Inequalities ($<$, $>$)",
+    "hook": "Imagine measuring the minimum height required to ride a roller coaster.",
+    "explain": "An equation demands exact equality. An inequality establishes a strict boundary line where an infinite amount of valid answers extend endlessly in one direction.",
+    "image": {
+      "path": "images/level1-inequalities.png",
+      "prompt": "A solid line drawn on a grid, with a massive glowing area shaded strictly below it. Conceptual abstract vector."
+    },
+    "aha": "An inequality doesn't point to a single dot; it highlights an entire infinite territory.",
+    "summary": "Inequalities map entire infinite oceans of acceptable values rather than highlighting a single isolated geometric dot.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A mathematical statement dictating that one side must strictly remain physically larger or smaller than the other."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Solve exactly like a standard equation. However, if you multiply or divide by a negative number, you must physically flip the inequality symbol."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Multiplying by a negative physically flips the geometry across the zero-axis perfectly into a mirror dimension, reversing the territory completely."
+      }
+    ]
+  },
+  {
+    "id": "basic-geometry",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Scale and The Map (Equations & Geometry)",
+    "title": "Geometry (Area, Perimeter, Volume)",
+    "hook": "Imagine tracing a fence around a yard, laying sod on the grass, and filling a pool with water.",
+    "explain": "Perimeter is the 1D line wrapping the object. Area is the flat 2D surface. Volume is the 3D space contained inside.",
+    "image": {
+      "path": "images/level1-basic-geometry.png",
+      "prompt": "A glowing wireframe box. The edges are red, one flat face is blue, and the hollow interior glows yellow. Abstract conceptual vector."
+    },
+    "aha": "Geometry calculates precise mass across progressing dimensions.",
+    "summary": "Basic geometry provides the exact spatial capacity scaling entirely from 1D outlines to 3D physical containment.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "The rigid measurement of physical boundary lines, flat spans, and 3D containment."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Perimeter: add the edges. Area: multiply base length by height. Volume: multiply the flat area by the deep dimension."
+      },
+      {
+        "label": "Why it works.",
+        "body": "You drag a 1D line to weave a 2D mat, and stack 2D mats upward to construct a solid 3D box."
+      }
+    ]
+  },
+  {
+    "id": "intro-functions",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Scale and The Map (Equations & Geometry)",
+    "title": "Intro to Functions ($f(x)$)",
+    "hook": "Imagine dropping a raw block of wood into a carving machine.",
+    "explain": "A function is a perfect industrial machine. You drop one raw number in ($x$), it performs an action, and it drops exactly one finished product out the other side ($y$).",
+    "image": {
+      "path": "images/level1-intro-functions.png",
+      "prompt": "A mechanical conveyor belt feeding generic blocks into a glowing machine, producing perfectly carved spheres. Industrial abstract vector."
+    },
+    "aha": "A function guarantees absolute predictability: one physical input produces exactly one physical output.",
+    "summary": "Functions act as perfectly reliable input-output pathways, ensuring every starting point maps cleanly to exactly one destination.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A rigid geometric rule mapping every individual dot from an origin set to a destination set."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Replace the $x$ inside the parenthesis with your input number, execute the math stated, and record the final value acting as the output."
+      },
+      {
+        "label": "Why it works.",
+        "body": "The graph of a function creates an unbroken curve spanning from left to right, preventing a single input from fracturing into two erratic outputs."
+      }
+    ]
+  },
+  {
+  "id": "primenumbers-basic",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Intrinsic Patterns",
+  "title": "Prime Numbers (The Atoms)",
+  "hook": "Imagine an indivisible crystal block that refuses to shatter into smaller perfect squares.",
+  "explain": "Prime numbers construct the foundation of all other numbers. Every number is either a prime or built exclusively by multiplying primes together.",
+  "image": {
+    "path": "images/enrichment-primes.png",
+    "prompt": "A single solid glowing crystal block alongside a shattered block. Abstract dark conceptual vector style."
+  },
+  "aha": "Primes are the elemental atoms that weave all other mathematical quantities.",
+  "summary": "Because primes cannot be divided evenly, they act as the base structural material for the entire number line.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A prime number can solely be divided by itself and 1. Examples include 2, 3, 5, 7, and 11."
+    },
+    {
+      "label": "How to explore",
+      "body": "Attempt to arrange a prime number of physical blocks into a perfect 2D grid. You will always be forced to leave them in a single 1D line."
+    },
+    {
+      "label": "Why it works.",
+      "body": "Geometrically, primes refuse to fold into secondary dimensions evenly. The lack of divisors gives them immense structural strength, which modern cryptography relies upon absolutely."
+    }
+  ]
+},
+{
+  "id": "fibonacci-basic",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Intrinsic Patterns",
+  "title": "The Fibonacci Sequence",
+  "hook": "Imagine a spiral seashell expanding its chambers by continuously adding its two previous structural walls.",
+  "explain": "The sequence generates numbers by adding the two previous numbers together: 1, 1, 2, 3, 5, 8. It serves as nature's native algorithm for biological scaling.",
+  "image": {
+    "path": "images/enrichment-fibonacci.png",
+    "prompt": "A geometric spiral seashell overlaid with ascending square boxes mapping the golden spiral. Abstract deep conceptual vector style."
+  },
+  "aha": "The sequence is memory-driven; the future always directly inherits the sum of its past.",
+  "summary": "By constantly adding the immediate past, the sequence creates a perfectly proportional scaling factor found across tree branches and spiral galaxies.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "An unbroken chain of numbers where every new tier is precisely the sum of the two tiers directly beneath it."
+    },
+    {
+      "label": "Why it works.",
+      "body": "Geometrically, if you build squares matching these values, they pack perfectly into a tightening spiral. Nature optimizes physical space by growing through this exact additive ratio."
+    }
+  ]
+},
+{
+  "id": "goldenratio-basic",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: Intrinsic Patterns",
+  "title": "The Golden Ratio ($\\phi$)",
+  "hook": "Imagine cutting a wooden plank so that the ratio of the long half relates to the short half perfectly identically as the whole plank relates to the long half.",
+  "explain": "The Golden Ratio ($1 : 1.618$) is the universal constant of harmonious asymmetry. It balances structure between monotonous symmetry and chaotic randomness.",
+  "image": {
+    "path": "images/enrichment-golden-ratio.png",
+    "prompt": "A glowing rectangle sliced into the golden proportion, overlaying ancient architectural columns. Deep abstract minimalist vector."
+  },
+  "aha": "The Golden Ratio is the mathematical blueprint for aesthetic stability in the physical world.",
+  "summary": "This specific ratio allows physical and visual elements to scale infinitely while preserving identical internal harmony.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A specific geometric proportion, approximately 1.618, heavily observed in art, architecture, and biological leaf arrangements."
+    },
+    {
+      "label": "Why it works.",
+      "body": "It represents the absolute limit where proportion becomes self-similar. Splitting a space by the Golden Ratio ensures the visual weight of light and structure never collapses."
+    }
+  ]
+}
 ];

@@ -220,5 +220,167 @@ export const level3Concepts: Concept[] = [
       }
     ],
     summary: "Every algorithm that actively calculates the fastest drive home is fundamentally just a digital spider cleanly navigating a rigid Graph Theory web."
-  }
+  },
+{
+    "id": "solving-systems",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Architecture of Logic (Systems & Statistics)",
+    "title": "Solving Systems ($Ax = B$)",
+    "hook": "Imagine two laser beams intersecting perfectly on a grid. You need the exact coordinates of the collision.",
+    "explain": "Solving a system uses substitution or elimination to mechanically destroy unknown variables until only the exact geometric point of intersection remains standing.",
+    "image": {
+      "path": "images/level3-systems.png",
+      "prompt": "Two overlapping grids violently colliding, highlighting a single perfect red intersection point. Dark abstract conceptual vector."
+    },
+    "aha": "Solving systems forcefully crunches multidimensional lines down into a singular physical dot.",
+    "summary": "Solving systems forcefully crunches overlapping multidimensional lines down until only their identical physical collision point survives.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "The algebraic extraction of an intersection coordinate spanning multiple overlapping functions simultaneously."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Use Gaussian Elimination. Methodically subtract rows from each other structurally to obliterate terms, isolating variables linearly downward."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Subtracting equations from each other calculates the exact distance between lines. When the distance zeroes out, you hit the structural crossing point."
+      }
+    ]
+  },
+  {
+    "id": "statistics-basics",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Architecture of Logic (Systems & Statistics)",
+    "title": "Statistics (Distributions)",
+    "hook": "Imagine dropping identical marbles uniformly bouncing down a pegboard to form an organic glowing mound.",
+    "explain": "Statistics mathematically stabilizes massive chaos. Variance determines exactly how wide and flat the resulting marble pile stretches.",
+    "image": {
+      "path": "images/level3-statistics.png",
+      "prompt": "A perfectly symmetrical bell curve composed of hundreds of glowing falling dots resting on a line. Abstract deep vector."
+    },
+    "aha": "True randomness acts incredibly predictably when forced into massive aggregated quantities.",
+    "summary": "Statistics translates sprawling physical chaos into predictable, stable central masses anchored by geometric variance.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "The calculation of the central mass (Mean) and the boundary dissipation rate (Variance) of enormous datasets."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Calculate the mean by evening the weight of all terms. Calculate variance by measuring the exact squared tension pulling each point away from the center anchor."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Squaring the distance removes minus signs, ensuring erratic data points that stray too far from the anchor generate exponential tension against the structural mean."
+      }
+    ]
+  },
+  {
+    "id": "combinatorics",
+    "layer": "core",
+    "chapterNumber": 4,
+    "chapterTitle": "The Architecture of Logic (Systems & Statistics)",
+    "title": "Combinatorics",
+    "hook": "Imagine spinning the combination lock of an impenetrable vault.",
+    "explain": "Combinatorics calculates exact factorial permutations without forcing you to manually map every singular physical combination possible.",
+    "image": {
+      "path": "images/level3-combinatorics.png",
+      "prompt": "A branching fractal tree breaking down into massive exponential endpoints spanning a matrix grid. Clean conceptual vector style."
+    },
+    "aha": "Combinatorics mathematically constructs infinite branching timelines instantly.",
+    "summary": "Combinatorics maps massive branching timelines instantly, reducing chaotic infinite sets into structured, solvable algorithms.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "The rigorous mathematics governing counting, recursive arrangements, and discrete structural grouping."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Utilize factorials ($!$). If order matters, use Permutations ($n!/(n-r)!$). If order is irrelevant, collapse the duplicates using physical Combinations."
+      },
+      {
+        "label": "Why it works.",
+        "body": "A tree branches out continuously. The math fundamentally multiplies the number of paths extending forward, mapping massive timeline grids onto a single equation."
+      }
+    ]
+  },
+  {
+  "id": "benfords-law-probability",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: The Global Network",
+  "title": "Benford & Probability Scales",
+  "hook": "Imagine auditing a massive tax spreadsheet spanning thousands of accounts. The subtle distribution of leading digits will expose human fraud.",
+  "explain": "When analyzing deep statistical matrices, Benford's Law emerges as an irrefutable mathematical truth. Any fabricated data typically features random, evenly distributed leading digits, which flagrantly breaks the natural logarithmic hierarchy.",
+  "image": {
+    "path": "images/enrichment-benford-fraud.png",
+    "prompt": "A massive matrix grid glowing blue, with artificial anomalies highlighted violently in red. Deep abstract conceptual vector view."
+  },
+  "aha": "Nature generates numbers via multiplicative scale; humans fabricate numbers via additive randomness.",
+  "summary": "Utilizing probabilities driven by logarithms acts as an unassailable verification mechanism against artificial system interference.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "The application of Benford's macroscopic distribution properties to detect systemic localized tampering within stochastic data."
+    },
+    {
+      "label": "Why it works.",
+      "body": "Because random number generators output flat distributions naturally, they fail entirely to replicate the delayed velocity curves inherent to multiplicative organic world-growth. The matrix mismatch exposes the fabrication."
+    }
+  ]
+},
+{
+  "id": "pareto-principle",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: The Global Network",
+  "title": "The Pareto Principle (80/20)",
+  "hook": "Imagine recognizing that 80% of an entire empire's wealth is monopolized by merely 20% of its architects.",
+  "explain": "The Pareto Principle observes that for numerous events in structural, economic, and network systems, roughly 80% of the consequences stem from exactly 20% of the causes.",
+  "image": {
+    "path": "images/enrichment-pareto.png",
+    "prompt": "A heavy unbalanced lever highlighting a massive glowing cluster of output derived from a tiny glowing source node. Abstract physics vector art."
+  },
+  "aha": "Systems are inherently unequal; input almost never maps linearly to output.",
+  "summary": "Pareto reveals that networks establish steep hierarchical dependencies rather than flat, even distributions.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A power-law probability distribution detailing extreme inequality in cause-to-effect mappings across discrete nodes."
+    },
+    {
+      "label": "Why it works.",
+      "body": "In a connected topology, success acts as an attractor. The nodes possessing slight initial traffic dynamically accumulate vastly higher exponential returns, consolidating structural load mathematically rather than fairly."
+    }
+  ]
+},
+{
+  "id": "riemann-teaser",
+  "layer": "enrichment",
+  "chapterNumber": 5,
+  "chapterTitle": "Enrichment: The Global Network",
+  "title": "The Riemann Zeros (Teaser)",
+  "hook": "Imagine discovering that the erratic, chaotic distribution of prime numbers is actually perfectly orchestrated by a hidden oscillating wave.",
+  "explain": "The Riemann Hypothesis suggests that the elemental primes (the atoms of math) are not entirely chaotic. Instead, they are the harmonic beats governed by the zeros of a complex multidimensional spectrum.",
+  "image": {
+    "path": "images/enrichment-riemann.png",
+    "prompt": "A glowing complex coordinate plane with points precisely aligned on an imaginary axis line of 1/2. Deep enigmatic celestial vector."
+  },
+  "aha": "The apparent randomness of the primes masks an acoustic structure echoing from higher dimensions.",
+  "summary": "While remaining formally unsolved, Riemann implies that absolute chaos in the real dimension resolves into perfect symphony in the complex dimension.",
+  "proseSegments": [
+    {
+      "label": "What it is.",
+      "body": "A conjecture identifying the critical, non-trivial zeroes of the Riemann Zeta Function mapped atop the complex plane of reality."
+    },
+    {
+      "label": "Why it works.",
+      "body": "By analyzing the shadow of the prime numbers using imaginary wave frequencies, the erratic nature condenses into a rigid, structured line. It represents the ultimate bridge between absolute arithmetic structure and continuous wave physics."
+    }
+  ]
+}
 ];
