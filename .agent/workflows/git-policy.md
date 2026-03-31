@@ -7,7 +7,7 @@ description: How to manage git branches and commits
 **# Git Policy (STRICT)
 
 **CRITICAL RULE 1:** NEVER WORK DIRECTLY ON `main`.
-**CRITICAL RULE 2 (NO PUSH):** The AI Agent is strictly FORBIDDEN from ever executing `git push`. The agent may only cleanly `git add` and `git commit` work locally. The human user retains sole explicit authority to push code to remote origins.
+**CRITICAL RULE 2 (NO AUTO-PUSH):** The AI Agent is strictly FORBIDDEN from ever executing `git push` automatically on its own initiative. However, if the human user EXPLICITLY commands a push (e.g., "push prosím", "push please"), the agent MUST execute the `git push` command immediately.
 
 1.  **BEFORE YOU WRITE ANY CODE:** Check the current branch:
     ```bash
