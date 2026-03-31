@@ -18,6 +18,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -46,7 +47,8 @@ p {
   margin-top: 0; 
   margin-bottom: 1.5rem;
   max-width: 65ch;
-  word-break: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
 }
 strong { color: #000; }

@@ -29,4 +29,5 @@ Generates pure PDF or EPUB readiness.
 The export script does not run if CI verification fails.
 Prior to any `--target` export, Playwright will run:
 - **`tests/book.test.ts`**: Verifies 100% `innerText()` checksum match against source MD.
-- Mathematical integrity confirmation (`.katex` DOM presence without stray double-dollar `$$` artifacts).
+- **Layout Validation**: Computes `Element.getBoundingClientRect()` dynamically to ensure zero horizontal or vertical text/content spill outside page boundaries coordinates.
+- **Mathematical Integrity**: Confirmation (`.katex` DOM presence without stray double-dollar `$$` artifacts).

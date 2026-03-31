@@ -10,8 +10,8 @@
 <div class="page right-page title-page">
   <div class="inner-content">
     <div class="front-meta">
-       <span class="lineum-brand">LINEUM CORE // OEA</span>
-       <span class="version-brand">LEVEL 1</span>
+       <span class="lineum-brand">FOUNDATIONS // OEA</span>
+       <span class="version-brand">BOOK 1</span>
     </div>
     <div class="title-block">
       <h1>{frontMatter.title}</h1>

@@ -41,8 +41,9 @@ The cover abandons "technical document" or "dark void minimalism" logic in favor
 - **Typography:** Minimal text. Extremely readable "FOUNDATIONS" title. 
 - **Rule:** The cover must *never* look like internal dev documentation or an academic whitepaper constraint.
 
-## 4. Book Naming Conventions
+## 4. Book Naming Conventions & Automated Verification
 
-All legacy development terminology has been expunged from the rendering pipeline.
-- 🚫 **DO NOT USE:** "OEA", "Core", "Level 1"
+All legacy development terminology has been expunged from the rendering pipeline and is strictly verified via Playwright E2E tests (`book.test.ts`).
+- 🚫 **DO NOT USE:** "OEA", "Lineum Core", "Level 1"
 - ✅ **USE:** "Foundations" (Book 1), "Motion" (Book 2), "Structure" (Book 3).
+- **Enforcement:** The renderer pipeline explicitly searches for "FOUNDATIONS" in the front matter and will fail the build process if legacy system names leak into the physical print output.

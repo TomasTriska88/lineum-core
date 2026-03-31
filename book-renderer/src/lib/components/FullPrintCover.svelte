@@ -81,7 +81,7 @@
          <h1 class="main-title">{frontMatter.title}</h1>
          <h2 class="sub-title">A Simple Way to Finally<br/>Understand Math Through Shapes.</h2>
          
-         <div class="author-label">Tomáš Tříska</div>
+         <div class="author-label">TOMAS TRISKA</div>
       </div>
     </div>
   </div>

@@ -7,8 +7,8 @@
   <div class="inner-content">
     
     <div class="front-matter">
-       <span class="lineum-brand">LINEUM CORE // OEA</span>
-       <span class="version-brand">LEVEL 1</span>
+       <span class="lineum-brand">FOUNDATIONS // OEA</span>
+       <span class="version-brand">BOOK 1</span>
     </div>
 
     <div class="title-block">
