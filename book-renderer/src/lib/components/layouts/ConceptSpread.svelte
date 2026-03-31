@@ -3,32 +3,32 @@
   import { renderMath } from '$lib/utils/mathRender';
   export let concept: Concept;
   export let startPageNum: number;
-  export let leftHeavy: boolean = true;
+  export let layoutVariant: 'standard' | 'shifted' | 'text-first' = 'standard';
 </script>
 
 <div class="page left-page">
-  <div class="page-number left">{startPageNum}</div>
+  <div class="page-number left" class:hidden={startPageNum === 0}>{startPageNum}</div>
   
   <div class="inner-content">
     
-    {#if leftHeavy}
-      <!-- HERO IMAGE BLOCK (LEFT HEAVY) -->
+    {#if layoutVariant === 'standard' || layoutVariant === 'shifted'}
+      <!-- VISUAL/HOOK FOCUS (LEFT) -->
       <div class="page-header">
         <h3 class="meta-subtitle">Chapter {concept.chapterNumber} &mdash; {concept.chapterTitle}</h3>
         <h2 class="concept-title">{@html renderMath(concept.title)}</h2>
       </div>
 
-      <div class="prose-p concept-hook">{@html renderMath(concept.hook)}</div>
+      <div class="prose-p concept-hook" style={layoutVariant === 'shifted' ? 'font-size: 1.5rem;' : ''}>{@html renderMath(concept.hook)}</div>
       
-      <div class="image-box">
+      <div class="image-box" class:hero-shifted={layoutVariant === 'shifted'}>
         {#if concept.image.path}
-          <img src="/{concept.image.path}" alt="{concept.title}" data-prompt="{concept.image.prompt}" class="hero-image" />
+          <img src="/{concept.image.path}" alt="{concept.title}" data-prompt="{concept.image.prompt}" data-style="vector" data-variant="{layoutVariant}" class="hero-image" />
         {:else}
-          <div class="placeholder-img" data-prompt="{concept.image.prompt}"></div>
+          <div class="placeholder-img" data-prompt="{concept.image.prompt}" data-style="vector" data-variant="{layoutVariant}"></div>
         {/if}
       </div>
-    {:else}
-      <!-- TEXT/EXPLAIN BLOCK (RIGHT HEAVY, implies Text is on LEFT) -->
+    {:else if layoutVariant === 'text-first'}
+      <!-- TEXT FOCUS (LEFT) -->
       <div class="page-header">
         <h3 class="meta-subtitle">Chapter {concept.chapterNumber} &mdash; {concept.chapterTitle}</h3>
         <h2 class="concept-title">{@html renderMath(concept.title)}</h2>
@@ -37,11 +37,9 @@
       <div class="prose-p concept-hook">{@html renderMath(concept.hook)}</div>
       <div class="prose-p explain-text">{@html renderMath(concept.explain)}</div>
       
-      <div class="prose-flow" style="margin-top: 2rem;">
-        <div class="prose-segment">
-          <h4 class="run-in-header">What it is.</h4>
-          <div class="prose-p">{@html renderMath(concept.whatItIs)}</div>
-        </div>
+      <div class="aha-editorial" style="margin-top: auto;">
+        <span class="aha-icon">💡</span>
+        <div class="prose-p aha-quote">{@html renderMath(concept.aha)}</div>
       </div>
     {/if}
 
@@ -53,13 +51,37 @@
   
   <div class="inner-content right-rhythm">
     
-    {#if leftHeavy}
-      <!-- PROSE BLOCK (Since Image was Left) -->
+    {#if layoutVariant === 'standard' || layoutVariant === 'shifted'}
+      <!-- EXPLANATION/AHA FOCUS (RIGHT) -->
       <div class="prose-p explain-text">{@html renderMath(concept.explain)}</div>
       
       <div class="aha-editorial">
         <span class="aha-icon">💡</span>
         <div class="prose-p aha-quote">{@html renderMath(concept.aha)}</div>
+      </div>
+
+      <div class="prose-flow" class:shifted-flow={layoutVariant === 'shifted'}>
+        <div class="prose-segment">
+          <h4 class="run-in-header">What it is.</h4>
+          <div class="prose-p">{@html renderMath(concept.whatItIs)}</div>
+        </div>
+        <div class="prose-segment">
+          <h4 class="run-in-header">How to solve.</h4>
+          <div class="prose-p">{@html renderMath(concept.howToSolve)}</div>
+        </div>
+        <div class="prose-segment">
+          <h4 class="run-in-header">Why it works.</h4>
+          <div class="prose-p">{@html renderMath(concept.whyItWorks)}</div>
+        </div>
+      </div>
+    {:else if layoutVariant === 'text-first'}
+      <!-- VISUAL/WHAT FOCUS (RIGHT) -->
+      <div class="image-box" style="margin-top: 0; margin-bottom: 2rem;">
+        {#if concept.image.path}
+          <img src="/{concept.image.path}" alt="{concept.title}" data-prompt="{concept.image.prompt}" data-style="vector" data-variant="{layoutVariant}" class="hero-image" />
+        {:else}
+          <div class="placeholder-img" data-prompt="{concept.image.prompt}" data-style="vector" data-variant="{layoutVariant}"></div>
+        {/if}
       </div>
 
       <div class="prose-flow">
@@ -76,34 +98,9 @@
           <div class="prose-p">{@html renderMath(concept.whyItWorks)}</div>
         </div>
       </div>
-    {:else}
-      <!-- IMAGE & AHA BLOCK (Since Text was Left) -->
-      <div class="image-box" style="margin-top: 0; margin-bottom: 2rem;">
-        {#if concept.image.path}
-          <img src="/{concept.image.path}" alt="{concept.title}" data-prompt="{concept.image.prompt}" class="hero-image" />
-        {:else}
-          <div class="placeholder-img" data-prompt="{concept.image.prompt}"></div>
-        {/if}
-      </div>
-
-      <div class="aha-editorial">
-        <span class="aha-icon">💡</span>
-        <div class="prose-p aha-quote">{@html renderMath(concept.aha)}</div>
-      </div>
-
-      <div class="prose-flow">
-        <div class="prose-segment">
-          <h4 class="run-in-header">How to solve.</h4>
-          <div class="prose-p">{@html renderMath(concept.howToSolve)}</div>
-        </div>
-        <div class="prose-segment">
-          <h4 class="run-in-header">Why it works.</h4>
-          <div class="prose-p">{@html renderMath(concept.whyItWorks)}</div>
-        </div>
-      </div>
     {/if}
 
-    <!-- Heavy final summary block bounding the page root -->
+    <!-- FIXED: Summary always caps the right page -->
     <div class="summary-editorial">
       <h4 class="summary-label">Summary</h4>
       <div class="prose-p">{@html renderMath(concept.summary)}</div>

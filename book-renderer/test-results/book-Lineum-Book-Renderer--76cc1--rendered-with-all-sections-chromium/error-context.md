@@ -13,19 +13,19 @@
           - generic [ref=e14]: LINEUM CORE // OEA
           - generic [ref=e15]: LEVEL 1
         - generic [ref=e16]:
-          - heading "Math You Can See" [level=1] [ref=e17]
+          - heading "Foundations" [level=1] [ref=e17]
           - heading "A Simple Way to Finally Understand Math Through Shapes" [level=2] [ref=e18]
         - generic [ref=e20]: The Official Documentation for Flow Geometry
       - generic [ref=e24]:
         - heading "Imprint / Legal" [level=4] [ref=e25]
         - generic [ref=e26]:
           - strong [ref=e27]: "Published by:"
-          - text: Lineum Core
+          - text: Lineum
         - generic [ref=e28]: © 2026 Tomáš Tříska. All rights reserved.
         - generic [ref=e29]: Released under AGPLv3 for code / CC-BY-4.0 for whitepapers.
         - generic [ref=e30]:
           - strong [ref=e31]: "ISBN:"
-          - text: OEA-LEVEL1-001
+          - text: 978-0-00-000000-0
       - generic [ref=e33]:
         - heading "Contents" [level=3] [ref=e34]
         - list [ref=e35]:
@@ -65,14 +65,14 @@
                 - generic [ref=e73]: +
               - text: )
           - generic [ref=e74]: Imagine two small pools of water merging on a flat surface.
-          - img "Addition ($+$)" [ref=e76]
-      - generic [ref=e77]:
-        - generic [ref=e78]: "6"
-        - generic [ref=e79]:
-          - generic [ref=e80]: Addition is the act of bringing pieces together. The water combines into a single, deeper pool.
-          - generic [ref=e81]:
-            - generic [ref=e82]: 💡
-            - generic [ref=e83]: Positive numbers add size without creating conflict.
+          - generic [ref=e75]: Addition is the act of bringing pieces together. The water combines into a single, deeper pool.
+          - generic [ref=e76]:
+            - generic [ref=e77]: 💡
+            - generic [ref=e78]: Positive numbers add size without creating conflict.
+      - generic [ref=e79]:
+        - generic [ref=e80]: "6"
+        - generic [ref=e81]:
+          - img "Addition ($+$)" [ref=e83]
           - generic [ref=e84]:
             - generic [ref=e85]:
               - heading "What it is." [level=4] [ref=e86]
@@ -100,721 +100,725 @@
                 - generic [ref=e111]: −
               - text: )
           - generic [ref=e112]: Imagine rowing a boat upstream and hitting a fast river current.
-          - generic [ref=e113]: A minus sign fights your progress. You move forward, but the current pushes you backward.
-          - generic [ref=e115]:
-            - heading "What it is." [level=4] [ref=e116]
-            - generic [ref=e117]: Subtraction calculates the difference between two numbers. It determines what remains after pieces are removed.
-      - generic [ref=e118]:
-        - generic [ref=e119]: "8"
-        - generic [ref=e120]:
-          - img "Subtraction ($-$)" [ref=e122]
-          - generic [ref=e123]:
-            - generic [ref=e124]: 💡
-            - generic [ref=e125]: A minus sign pushes backward against your forward movement.
-          - generic [ref=e126]:
-            - generic [ref=e127]:
-              - heading "How to solve." [level=4] [ref=e128]
-              - generic [ref=e129]: Line the numbers up vertically. Subtract the bottom digit from the top. If the top digit is smaller, borrow 1 from the next column before subtracting.
-            - generic [ref=e130]:
-              - heading "Why it works." [level=4] [ref=e131]
-              - generic [ref=e132]: Subtraction shrinks the original shape. When you apply a minus, the shape slides backward along the grid, making it shorter.
-          - generic [ref=e133]:
-            - heading "Summary" [level=4] [ref=e134]
-            - generic [ref=e135]: Subtracting measures opposing numbers. You calculate if your forward movement is bigger than the backward push.
-    - generic [ref=e136]:
-      - generic [ref=e137]:
-        - generic [ref=e138]: "9"
-        - generic [ref=e139]:
-          - generic [ref=e140]:
-            - heading "Chapter 1 — The Flow of Numbers (Basic Intuition)" [level=3] [ref=e141]
-            - heading "Negative Numbers (Standalone)" [level=2] [ref=e142]
-          - generic [ref=e143]: Imagine a flat landscape. Positive numbers build towers upwards. Negative numbers dig holes downward.
-          - img "Negative Numbers (Standalone)" [ref=e145]
-      - generic [ref=e146]:
-        - generic [ref=e147]: "10"
-        - generic [ref=e148]:
-          - generic [ref=e149]: A negative number represents debt or depth.
-          - generic [ref=e150]:
-            - generic [ref=e151]: 💡
-            - generic [ref=e152]: Negative numbers extend the world downward below zero.
-          - generic [ref=e153]:
-            - generic [ref=e154]:
-              - heading "What it is." [level=4] [ref=e155]
-              - generic [ref=e156]: A negative number is any value less than zero. It is the exact opposite of a positive amount.
-            - generic [ref=e157]:
-              - heading "How to solve." [level=4] [ref=e158]
-              - generic [ref=e159]:
+          - img "Subtraction ($-$)" [ref=e114]
+      - generic [ref=e115]:
+        - generic [ref=e116]: "8"
+        - generic [ref=e117]:
+          - generic [ref=e118]: A minus sign fights your progress. You move forward, but the current pushes you backward.
+          - generic [ref=e119]:
+            - generic [ref=e120]: 💡
+            - generic [ref=e121]: A minus sign pushes backward against your forward movement.
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - heading "What it is." [level=4] [ref=e124]
+              - generic [ref=e125]: Subtraction calculates the difference between two numbers. It determines what remains after pieces are removed.
+            - generic [ref=e126]:
+              - heading "How to solve." [level=4] [ref=e127]
+              - generic [ref=e128]: Line the numbers up vertically. Subtract the bottom digit from the top. If the top digit is smaller, borrow 1 from the next column before subtracting.
+            - generic [ref=e129]:
+              - heading "Why it works." [level=4] [ref=e130]
+              - generic [ref=e131]: Subtraction shrinks the original shape. When you apply a minus, the shape slides backward along the grid, making it shorter.
+          - generic [ref=e132]:
+            - heading "Summary" [level=4] [ref=e133]
+            - generic [ref=e134]: Subtracting measures opposing numbers. You calculate if your forward movement is bigger than the backward push.
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]: "9"
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - heading "Chapter 1 — The Flow of Numbers (Basic Intuition)" [level=3] [ref=e140]
+            - heading "Negative Numbers (Standalone)" [level=2] [ref=e141]
+          - generic [ref=e142]: Imagine a flat landscape. Positive numbers build towers upwards. Negative numbers dig holes downward.
+          - img "Negative Numbers (Standalone)" [ref=e144]
+      - generic [ref=e145]:
+        - generic [ref=e146]: "10"
+        - generic [ref=e147]:
+          - generic [ref=e148]: A negative number represents debt or depth.
+          - generic [ref=e149]:
+            - generic [ref=e150]: 💡
+            - generic [ref=e151]: Negative numbers extend the world downward below zero.
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - heading "What it is." [level=4] [ref=e154]
+              - generic [ref=e155]: A negative number is any value less than zero. It is the exact opposite of a positive amount.
+            - generic [ref=e156]:
+              - heading "How to solve." [level=4] [ref=e157]
+              - generic [ref=e158]:
                 - text: To subtract a negative number, like
-                - generic [ref=e160]:
-                  - math [ref=e162]:
-                    - generic [ref=e164]:
-                      - generic [ref=e165]: "5"
-                      - generic [ref=e166]: −
-                      - generic [ref=e167]: (
-                      - generic [ref=e168]: −
-                      - generic [ref=e169]: "3"
-                      - generic [ref=e170]: )
-                  - generic [ref=e171]:
-                    - generic [ref=e172]: 5 −
-                    - generic [ref=e173]: (−3)
+                - generic [ref=e159]:
+                  - math [ref=e161]:
+                    - generic [ref=e163]:
+                      - generic [ref=e164]: "5"
+                      - generic [ref=e165]: −
+                      - generic [ref=e166]: (
+                      - generic [ref=e167]: −
+                      - generic [ref=e168]: "3"
+                      - generic [ref=e169]: )
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: 5 −
+                    - generic [ref=e172]: (−3)
                 - text: ", change the double minus into a plus. The equation becomes"
-                - generic [ref=e174]:
-                  - math [ref=e176]:
-                    - generic [ref=e178]:
-                      - generic [ref=e179]: "5"
-                      - generic [ref=e180]: +
-                      - generic [ref=e181]: "3"
-                      - generic [ref=e182]: =
-                      - generic [ref=e183]: "8"
-                  - generic [ref=e184]:
-                    - generic [ref=e185]: 5 +
-                    - generic [ref=e186]: 3 =
-                    - generic [ref=e187]: "8"
+                - generic [ref=e173]:
+                  - math [ref=e175]:
+                    - generic [ref=e177]:
+                      - generic [ref=e178]: "5"
+                      - generic [ref=e179]: +
+                      - generic [ref=e180]: "3"
+                      - generic [ref=e181]: =
+                      - generic [ref=e182]: "8"
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: 5 +
+                    - generic [ref=e185]: 3 =
+                    - generic [ref=e186]: "8"
                 - text: .
-            - generic [ref=e188]:
-              - heading "Why it works." [level=4] [ref=e189]
-              - generic [ref=e190]: Removing a deep hole is the exact geometric equivalent of filling it with dirt. The double negative flips a downward hole into an upward block.
-          - generic [ref=e191]:
-            - heading "Summary" [level=4] [ref=e192]
-            - generic [ref=e193]: Removing a hole means filling it. Two negatives flip to form a positive block.
-    - generic [ref=e194]:
-      - generic [ref=e195]:
-        - generic [ref=e196]: "11"
-        - generic [ref=e197]:
-          - generic [ref=e198]:
-            - heading "Chapter 1 — The Flow of Numbers (Basic Intuition)" [level=3] [ref=e199]
-            - heading "Absolute Value ( )" [level=2] [ref=e200]:
+            - generic [ref=e187]:
+              - heading "Why it works." [level=4] [ref=e188]
+              - generic [ref=e189]: Removing a deep hole is the exact geometric equivalent of filling it with dirt. The double negative flips a downward hole into an upward block.
+          - generic [ref=e190]:
+            - heading "Summary" [level=4] [ref=e191]
+            - generic [ref=e192]: Removing a hole means filling it. Two negatives flip to form a positive block.
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]: "11"
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - heading "Chapter 1 — The Flow of Numbers (Basic Intuition)" [level=3] [ref=e198]
+            - heading "Absolute Value ( )" [level=2] [ref=e199]:
               - text: Absolute Value (
-              - generic [ref=e201]:
-                - math [ref=e203]:
-                  - generic [ref=e205]:
-                    - generic [ref=e206]: ∣
-                    - generic [ref=e207]: −
-                    - generic [ref=e208]: "5"
-                    - generic [ref=e209]: ∣
-                - generic [ref=e210]:
-                  - generic [ref=e211]: ∣ −
-                  - generic [ref=e212]: 5∣
+              - generic [ref=e200]:
+                - math [ref=e202]:
+                  - generic [ref=e204]:
+                    - generic [ref=e205]: ∣
+                    - generic [ref=e206]: −
+                    - generic [ref=e207]: "5"
+                    - generic [ref=e208]: ∣
+                - generic [ref=e209]:
+                  - generic [ref=e210]: ∣ −
+                  - generic [ref=e211]: 5∣
               - text: )
-          - generic [ref=e213]: Imagine driving a car. Driving five miles forward consumes fuel. Driving five miles in reverse consumes the same fuel.
-          - generic [ref=e214]: Absolute value ignores whether you traveled forward or backward. It focuses exclusively on the total distance.
-          - generic [ref=e216]:
-            - heading "What it is." [level=4] [ref=e217]
-            - generic [ref=e218]: Absolute value calculates the strict distance a number sits from zero.
-      - generic [ref=e219]:
-        - generic [ref=e220]: "12"
-        - generic [ref=e221]:
-          - img "Absolute Value ($|-5|$)" [ref=e223]
-          - generic [ref=e224]:
-            - generic [ref=e225]: 💡
-            - generic [ref=e226]: Absolute value is the total distance traveled, ignoring direction entirely.
-          - generic [ref=e227]:
-            - generic [ref=e228]:
-              - heading "How to solve." [level=4] [ref=e229]
-              - generic [ref=e230]:
+          - generic [ref=e212]: Imagine driving a car. Driving five miles forward consumes fuel. Driving five miles in reverse consumes the same fuel.
+          - img "Absolute Value ($|-5|$)" [ref=e214]
+      - generic [ref=e215]:
+        - generic [ref=e216]: "12"
+        - generic [ref=e217]:
+          - generic [ref=e218]: Absolute value ignores whether you traveled forward or backward. It focuses exclusively on the total distance.
+          - generic [ref=e219]:
+            - generic [ref=e220]: 💡
+            - generic [ref=e221]: Absolute value is the total distance traveled, ignoring direction entirely.
+          - generic [ref=e222]:
+            - generic [ref=e223]:
+              - heading "What it is." [level=4] [ref=e224]
+              - generic [ref=e225]: Absolute value calculates the strict distance a number sits from zero.
+            - generic [ref=e226]:
+              - heading "How to solve." [level=4] [ref=e227]
+              - generic [ref=e228]:
                 - text: Look at the number inside the parallel bars
-                - generic [ref=e231]:
-                  - math [ref=e233]:
-                    - generic [ref=e235]:
-                      - generic [ref=e236]: ∣
-                      - generic [ref=e237]: −
-                      - generic [ref=e238]: "5"
-                      - generic [ref=e239]: ∣
-                  - generic [ref=e240]:
-                    - generic [ref=e241]: ∣ −
-                    - generic [ref=e242]: 5∣
+                - generic [ref=e229]:
+                  - math [ref=e231]:
+                    - generic [ref=e233]:
+                      - generic [ref=e234]: ∣
+                      - generic [ref=e235]: −
+                      - generic [ref=e236]: "5"
+                      - generic [ref=e237]: ∣
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: ∣ −
+                    - generic [ref=e240]: 5∣
                 - text: . Remove the negative sign. The result is always positive or zero.
-                - generic [ref=e243]:
-                  - math [ref=e245]:
-                    - generic [ref=e247]:
-                      - generic [ref=e248]: ∣
-                      - generic [ref=e249]: −
-                      - generic [ref=e250]: "5"
-                      - generic [ref=e251]: ∣
-                  - generic [ref=e252]:
-                    - generic [ref=e253]: ∣ −
-                    - generic [ref=e254]: 5∣
+                - generic [ref=e241]:
+                  - math [ref=e243]:
+                    - generic [ref=e245]:
+                      - generic [ref=e246]: ∣
+                      - generic [ref=e247]: −
+                      - generic [ref=e248]: "5"
+                      - generic [ref=e249]: ∣
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: ∣ −
+                    - generic [ref=e252]: 5∣
                 - text: becomes 5.
-            - generic [ref=e255]:
-              - heading "Why it works." [level=4] [ref=e256]
-              - generic [ref=e257]: The parallel bars act as a geometric filter. They remove direction from the grid and force the object to report its total size.
-          - generic [ref=e258]:
-            - heading "Summary" [level=4] [ref=e259]
-            - generic [ref=e260]: Absolute value removes minus signs and reports the raw size of the number.
-    - generic [ref=e261]:
-      - generic [ref=e262]:
-        - generic [ref=e263]: "13"
-        - generic [ref=e264]:
-          - generic [ref=e265]:
-            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e266]
-            - heading "Multiplying Variables ( )" [level=2] [ref=e267]:
+            - generic [ref=e253]:
+              - heading "Why it works." [level=4] [ref=e254]
+              - generic [ref=e255]: The parallel bars act as a geometric filter. They remove direction from the grid and force the object to report its total size.
+          - generic [ref=e256]:
+            - heading "Summary" [level=4] [ref=e257]
+            - generic [ref=e258]: Absolute value removes minus signs and reports the raw size of the number.
+    - generic [ref=e259]:
+      - generic [ref=e260]:
+        - generic [ref=e261]: "13"
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e264]
+            - heading "Multiplying Variables ( )" [level=2] [ref=e265]:
               - text: Multiplying Variables (
-              - generic [ref=e268]:
-                - math [ref=e270]:
-                  - generic [ref=e272]:
+              - generic [ref=e266]:
+                - math [ref=e268]:
+                  - generic [ref=e270]:
+                    - generic [ref=e271]: x
+                    - generic [ref=e272]: ⋅
                     - generic [ref=e273]: x
-                    - generic [ref=e274]: ⋅
-                    - generic [ref=e275]: x
-                - generic [ref=e276]:
-                  - generic [ref=e277]: x ⋅
-                  - generic [ref=e278]: x
+                - generic [ref=e274]:
+                  - generic [ref=e275]: x ⋅
+                  - generic [ref=e276]: x
               - text: )
-          - generic [ref=e279]: Imagine weaving horizontal blue threads crosswise with vertical red threads.
-          - img "Multiplying Variables ($x \\cdot x$)" [ref=e281]
-      - generic [ref=e282]:
-        - generic [ref=e283]: "14"
-        - generic [ref=e284]:
-          - generic [ref=e285]:
+          - generic [ref=e277]: Imagine weaving horizontal blue threads crosswise with vertical red threads.
+          - generic [ref=e278]:
             - text: When you multiply a variable by another variable, you weave them together. You take lines and lock them into a flat 2D surface (
-            - generic [ref=e286]:
-              - math [ref=e288]:
-                - generic [ref=e291]:
-                  - generic [ref=e292]: x
-                  - generic [ref=e293]: "2"
-              - generic [ref=e296]:
+            - generic [ref=e279]:
+              - math [ref=e281]:
+                - generic [ref=e284]:
+                  - generic [ref=e285]: x
+                  - generic [ref=e286]: "2"
+              - generic [ref=e289]:
                 - text: x
-                - generic [ref=e301]: "2"
+                - generic [ref=e294]: "2"
             - text: ).
-          - generic [ref=e302]:
-            - generic [ref=e303]: 💡
-            - generic [ref=e304]: Multiplying variables weaves lines into solid flat shapes.
-          - generic [ref=e305]:
-            - generic [ref=e306]:
-              - heading "What it is." [level=4] [ref=e307]
-              - generic [ref=e308]: Multiplying letters builds a new term with a higher exponent.
-            - generic [ref=e309]:
-              - heading "How to solve." [level=4] [ref=e310]
-              - generic [ref=e311]:
+          - generic [ref=e295]:
+            - generic [ref=e296]: 💡
+            - generic [ref=e297]: Multiplying variables weaves lines into solid flat shapes.
+      - generic [ref=e298]:
+        - generic [ref=e299]: "14"
+        - generic [ref=e300]:
+          - img "Multiplying Variables ($x \\cdot x$)" [ref=e302]
+          - generic [ref=e303]:
+            - generic [ref=e304]:
+              - heading "What it is." [level=4] [ref=e305]
+              - generic [ref=e306]: Multiplying letters builds a new term with a higher exponent.
+            - generic [ref=e307]:
+              - heading "How to solve." [level=4] [ref=e308]
+              - generic [ref=e309]:
                 - text: Count the number of identical letters being multiplied. Write that number as a small exponent at the top right. For
-                - generic [ref=e312]:
-                  - math [ref=e314]:
-                    - generic [ref=e316]:
+                - generic [ref=e310]:
+                  - math [ref=e312]:
+                    - generic [ref=e314]:
+                      - generic [ref=e315]: x
+                      - generic [ref=e316]: ⋅
                       - generic [ref=e317]: x
-                      - generic [ref=e318]: ⋅
-                      - generic [ref=e319]: x
-                  - generic [ref=e320]:
-                    - generic [ref=e321]: x ⋅
-                    - generic [ref=e322]: x
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: x ⋅
+                    - generic [ref=e320]: x
                 - text: ", write"
-                - generic [ref=e323]:
-                  - math [ref=e325]:
-                    - generic [ref=e328]:
-                      - generic [ref=e329]: x
-                      - generic [ref=e330]: "2"
-                  - generic [ref=e333]:
+                - generic [ref=e321]:
+                  - math [ref=e323]:
+                    - generic [ref=e326]:
+                      - generic [ref=e327]: x
+                      - generic [ref=e328]: "2"
+                  - generic [ref=e331]:
                     - text: x
-                    - generic [ref=e338]: "2"
+                    - generic [ref=e336]: "2"
                 - text: .
-            - generic [ref=e339]:
-              - heading "Why it works." [level=4] [ref=e340]
-              - generic [ref=e341]:
+            - generic [ref=e337]:
+              - heading "Why it works." [level=4] [ref=e338]
+              - generic [ref=e339]:
                 - text: A single
-                - generic [ref=e342]:
-                  - math [ref=e344]:
-                    - generic [ref=e347]: x
-                  - generic [ref=e349]: x
+                - generic [ref=e340]:
+                  - math [ref=e342]:
+                    - generic [ref=e345]: x
+                  - generic [ref=e347]: x
                 - text: is a flat line. Mutiplying it by another
-                - generic [ref=e350]:
-                  - math [ref=e352]:
-                    - generic [ref=e355]: x
-                  - generic [ref=e357]: x
+                - generic [ref=e348]:
+                  - math [ref=e350]:
+                    - generic [ref=e353]: x
+                  - generic [ref=e355]: x
                 - text: stretches that line sideways to make a square. Multiplying a third time stretches the square upward to form a 3D box.
-          - generic [ref=e358]:
-            - heading "Summary" [level=4] [ref=e359]
-            - generic [ref=e360]:
+          - generic [ref=e356]:
+            - heading "Summary" [level=4] [ref=e357]
+            - generic [ref=e358]:
               - text: Multiplying variables creates shapes. Variables like
-              - generic [ref=e361]:
-                - math [ref=e363]:
-                  - generic [ref=e366]:
-                    - generic [ref=e367]: x
-                    - generic [ref=e368]: "2"
-                - generic [ref=e371]:
+              - generic [ref=e359]:
+                - math [ref=e361]:
+                  - generic [ref=e364]:
+                    - generic [ref=e365]: x
+                    - generic [ref=e366]: "2"
+                - generic [ref=e369]:
                   - text: x
-                  - generic [ref=e376]: "2"
+                  - generic [ref=e374]: "2"
               - text: act as physical objects, not abstract letters.
-    - generic [ref=e377]:
-      - generic [ref=e378]:
-        - generic [ref=e379]: "15"
-        - generic [ref=e380]:
-          - generic [ref=e381]:
-            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e382]
-            - heading "Multiplying by Numbers ( )" [level=2] [ref=e383]:
+    - generic [ref=e375]:
+      - generic [ref=e376]:
+        - generic [ref=e377]: "15"
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e380]
+            - heading "Multiplying by Numbers ( )" [level=2] [ref=e381]:
               - text: Multiplying by Numbers (
-              - generic [ref=e384]:
-                - math [ref=e386]:
-                  - generic [ref=e388]:
-                    - generic [ref=e389]: "5"
-                    - generic [ref=e390]: ⋅
-                    - generic [ref=e391]: x
-                - generic [ref=e392]:
-                  - generic [ref=e393]: 5 ⋅
-                  - generic [ref=e394]: x
+              - generic [ref=e382]:
+                - math [ref=e384]:
+                  - generic [ref=e386]:
+                    - generic [ref=e387]: "5"
+                    - generic [ref=e388]: ⋅
+                    - generic [ref=e389]: x
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 5 ⋅
+                  - generic [ref=e392]: x
               - text: )
-          - generic [ref=e395]: Imagine turning the volume dial on a speaker.
-          - generic [ref=e396]: Standard numbers act as amplifiers. Multiplying a glowing wire by 5 makes it glow 5 times brighter. The shape of the wire stays identical.
-          - generic [ref=e398]:
-            - heading "What it is." [level=4] [ref=e399]
-            - generic [ref=e400]: Multiplying a variable by a raw number increases the quantity of that item.
-      - generic [ref=e401]:
-        - generic [ref=e402]: "16"
-        - generic [ref=e403]:
-          - img "Multiplying by Numbers ($5 \\cdot x$)" [ref=e405]
-          - generic [ref=e406]:
-            - generic [ref=e407]: 💡
-            - generic [ref=e408]: Numbers act as amplifiers, scaling the amount without altering the shape.
-          - generic [ref=e409]:
-            - generic [ref=e410]:
-              - heading "How to solve." [level=4] [ref=e411]
-              - generic [ref=e412]:
+          - generic [ref=e393]: Imagine turning the volume dial on a speaker.
+          - img "Multiplying by Numbers ($5 \\cdot x$)" [ref=e395]
+      - generic [ref=e396]:
+        - generic [ref=e397]: "16"
+        - generic [ref=e398]:
+          - generic [ref=e399]: Standard numbers act as amplifiers. Multiplying a glowing wire by 5 makes it glow 5 times brighter. The shape of the wire stays identical.
+          - generic [ref=e400]:
+            - generic [ref=e401]: 💡
+            - generic [ref=e402]: Numbers act as amplifiers, scaling the amount without altering the shape.
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - heading "What it is." [level=4] [ref=e405]
+              - generic [ref=e406]: Multiplying a variable by a raw number increases the quantity of that item.
+            - generic [ref=e407]:
+              - heading "How to solve." [level=4] [ref=e408]
+              - generic [ref=e409]:
                 - text: When you add
-                - generic [ref=e413]:
-                  - math [ref=e415]:
-                    - generic [ref=e417]:
-                      - generic [ref=e418]: "2"
+                - generic [ref=e410]:
+                  - math [ref=e412]:
+                    - generic [ref=e414]:
+                      - generic [ref=e415]: "2"
+                      - generic [ref=e416]: x
+                      - generic [ref=e417]: +
+                      - generic [ref=e418]: "3"
                       - generic [ref=e419]: x
-                      - generic [ref=e420]: +
-                      - generic [ref=e421]: "3"
-                      - generic [ref=e422]: x
-                  - generic [ref=e423]:
-                    - generic [ref=e424]: 2x +
-                    - generic [ref=e425]: 3x
+                  - generic [ref=e420]:
+                    - generic [ref=e421]: 2x +
+                    - generic [ref=e422]: 3x
                 - text: ", you add the numbers together to get"
-                - generic [ref=e426]:
-                  - math [ref=e428]:
-                    - generic [ref=e430]:
-                      - generic [ref=e431]: "5"
-                      - generic [ref=e432]: x
-                  - generic [ref=e434]: 5x
+                - generic [ref=e423]:
+                  - math [ref=e425]:
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: "5"
+                      - generic [ref=e429]: x
+                  - generic [ref=e431]: 5x
                 - text: . You never change the exponent.
-            - generic [ref=e435]:
-              - heading "Why it works." [level=4] [ref=e436]
-              - generic [ref=e437]:
+            - generic [ref=e432]:
+              - heading "Why it works." [level=4] [ref=e433]
+              - generic [ref=e434]:
                 - text: You are placing five individual wires side-by-side (
-                - generic [ref=e438]:
-                  - math [ref=e440]:
-                    - generic [ref=e442]:
-                      - generic [ref=e443]: "5"
-                      - generic [ref=e444]: x
-                  - generic [ref=e446]: 5x
+                - generic [ref=e435]:
+                  - math [ref=e437]:
+                    - generic [ref=e439]:
+                      - generic [ref=e440]: "5"
+                      - generic [ref=e441]: x
+                  - generic [ref=e443]: 5x
                 - text: ). Because they never cross, they cannot weave into a square. The shape stays flat.
-          - generic [ref=e447]:
-            - heading "Summary" [level=4] [ref=e448]
-            - generic [ref=e449]:
+          - generic [ref=e444]:
+            - heading "Summary" [level=4] [ref=e445]
+            - generic [ref=e446]:
               - text: Multiplying by a number (
-              - generic [ref=e450]:
-                - math [ref=e452]:
-                  - generic [ref=e454]:
-                    - generic [ref=e455]: "5"
-                    - generic [ref=e456]: x
-                - generic [ref=e458]: 5x
+              - generic [ref=e447]:
+                - math [ref=e449]:
+                  - generic [ref=e451]:
+                    - generic [ref=e452]: "5"
+                    - generic [ref=e453]: x
+                - generic [ref=e455]: 5x
               - text: ) scales the amount, while multiplying the variables (
-              - generic [ref=e459]:
-                - math [ref=e461]:
-                  - generic [ref=e464]:
-                    - generic [ref=e465]: x
-                    - generic [ref=e466]: "2"
-                - generic [ref=e469]:
+              - generic [ref=e456]:
+                - math [ref=e458]:
+                  - generic [ref=e461]:
+                    - generic [ref=e462]: x
+                    - generic [ref=e463]: "2"
+                - generic [ref=e466]:
                   - text: x
-                  - generic [ref=e474]: "2"
+                  - generic [ref=e471]: "2"
               - text: ) builds a completely new shape.
-    - generic [ref=e475]:
-      - generic [ref=e476]:
-        - generic [ref=e477]: "17"
-        - generic [ref=e478]:
-          - generic [ref=e479]:
-            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e480]
-            - heading "Division ( )" [level=2] [ref=e481]:
+    - generic [ref=e472]:
+      - generic [ref=e473]:
+        - generic [ref=e474]: "17"
+        - generic [ref=e475]:
+          - generic [ref=e476]:
+            - heading "Chapter 2 — Weaving Surfaces (Multiplication & Division)" [level=3] [ref=e477]
+            - heading "Division ( )" [level=2] [ref=e478]:
               - text: Division (
-              - generic [ref=e482]:
-                - math [ref=e484]:
-                  - generic [ref=e487]: ÷
-                - generic [ref=e489]: ÷
+              - generic [ref=e479]:
+                - math [ref=e481]:
+                  - generic [ref=e484]: ÷
+                - generic [ref=e486]: ÷
               - text: )
-          - generic [ref=e490]: Imagine breaking a large chocolate bar into equal smaller squares.
-          - img "Division ($\\div$)" [ref=e492]
-      - generic [ref=e493]:
-        - generic [ref=e494]: "18"
-        - generic [ref=e495]:
-          - generic [ref=e496]: The top number is the total size. The bottom number is how many pieces you must break it into.
+          - generic [ref=e487]: Imagine breaking a large chocolate bar into equal smaller squares.
+          - img "Division ($\\div$)" [ref=e489]
+      - generic [ref=e490]:
+        - generic [ref=e491]: "18"
+        - generic [ref=e492]:
+          - generic [ref=e493]: The top number is the total size. The bottom number is how many pieces you must break it into.
+          - generic [ref=e494]:
+            - generic [ref=e495]: 💡
+            - generic [ref=e496]: Division separates a total amount into identical pieces.
           - generic [ref=e497]:
-            - generic [ref=e498]: 💡
-            - generic [ref=e499]: Division separates a total amount into identical pieces.
-          - generic [ref=e500]:
+            - generic [ref=e498]:
+              - heading "What it is." [level=4] [ref=e499]
+              - generic [ref=e500]: Division splits a total amount into equal groups to see how much goes into each piece.
             - generic [ref=e501]:
-              - heading "What it is." [level=4] [ref=e502]
-              - generic [ref=e503]: Division splits a total amount into equal groups to see how much goes into each piece.
-            - generic [ref=e504]:
-              - heading "How to solve." [level=4] [ref=e505]
-              - generic [ref=e506]:
+              - heading "How to solve." [level=4] [ref=e502]
+              - generic [ref=e503]:
                 - text: To solve
-                - generic [ref=e507]:
-                  - math [ref=e509]:
-                    - generic [ref=e511]:
-                      - generic [ref=e512]: "20"
-                      - generic [ref=e513]: ÷
-                      - generic [ref=e514]: "4"
-                  - generic [ref=e515]:
-                    - generic [ref=e516]: 20 ÷
-                    - generic [ref=e517]: "4"
+                - generic [ref=e504]:
+                  - math [ref=e506]:
+                    - generic [ref=e508]:
+                      - generic [ref=e509]: "20"
+                      - generic [ref=e510]: ÷
+                      - generic [ref=e511]: "4"
+                  - generic [ref=e512]:
+                    - generic [ref=e513]: 20 ÷
+                    - generic [ref=e514]: "4"
                 - text: ", ask yourself what number multiplied by 4 equals 20. The answer is 5."
-            - generic [ref=e518]:
-              - heading "Why it works." [level=4] [ref=e519]
-              - generic [ref=e520]: Division breaks a large block into a grid of smaller exact squares. The starting shape is cut into equal pieces.
-          - generic [ref=e521]:
-            - heading "Summary" [level=4] [ref=e522]
-            - generic [ref=e523]: Division cracks a big shape perfectly into smaller, identical pieces.
-    - generic [ref=e524]:
-      - generic [ref=e525]:
-        - generic [ref=e526]: "19"
-        - generic [ref=e527]:
-          - generic [ref=e528]:
-            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e529]
-            - heading "Exponents ( )" [level=2] [ref=e530]:
+            - generic [ref=e515]:
+              - heading "Why it works." [level=4] [ref=e516]
+              - generic [ref=e517]: Division breaks a large block into a grid of smaller exact squares. The starting shape is cut into equal pieces.
+          - generic [ref=e518]:
+            - heading "Summary" [level=4] [ref=e519]
+            - generic [ref=e520]: Division cracks a big shape perfectly into smaller, identical pieces.
+    - generic [ref=e521]:
+      - generic [ref=e522]:
+        - generic [ref=e523]: "19"
+        - generic [ref=e524]:
+          - generic [ref=e525]:
+            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e526]
+            - heading "Exponents ( )" [level=2] [ref=e527]:
               - text: Exponents (
-              - generic [ref=e531]:
-                - math [ref=e533]:
-                  - generic [ref=e535]:
-                    - generic [ref=e536]:
-                      - generic [ref=e537]: x
-                      - generic [ref=e538]: "2"
-                    - generic [ref=e539]: ","
-                    - generic [ref=e540]:
-                      - generic [ref=e541]: x
-                      - generic [ref=e542]: "3"
-                - generic [ref=e544]:
-                  - generic [ref=e545]:
+              - generic [ref=e528]:
+                - math [ref=e530]:
+                  - generic [ref=e532]:
+                    - generic [ref=e533]:
+                      - generic [ref=e534]: x
+                      - generic [ref=e535]: "2"
+                    - generic [ref=e536]: ","
+                    - generic [ref=e537]:
+                      - generic [ref=e538]: x
+                      - generic [ref=e539]: "3"
+                - generic [ref=e541]:
+                  - generic [ref=e542]:
                     - text: x
-                    - generic [ref=e550]: "2"
+                    - generic [ref=e547]: "2"
                   - text: ","
-                  - generic [ref=e551]:
+                  - generic [ref=e548]:
                     - text: x
-                    - generic [ref=e556]: "3"
+                    - generic [ref=e553]: "3"
               - text: )
-          - generic [ref=e557]: Imagine a thin wooden rod inflating sideways to become a solid flat table.
-          - generic [ref=e558]:
+          - generic [ref=e554]: Imagine a thin wooden rod inflating sideways to become a solid flat table.
+          - img "Exponents ($x^2, x^3$)" [ref=e556]
+      - generic [ref=e557]:
+        - generic [ref=e558]: "20"
+        - generic [ref=e559]:
+          - generic [ref=e560]:
             - text: Squaring an object (
-            - generic [ref=e559]:
-              - math [ref=e561]:
-                - generic [ref=e564]:
-                  - generic [ref=e565]: x
-                  - generic [ref=e566]: "2"
-              - generic [ref=e569]:
+            - generic [ref=e561]:
+              - math [ref=e563]:
+                - generic [ref=e566]:
+                  - generic [ref=e567]: x
+                  - generic [ref=e568]: "2"
+              - generic [ref=e571]:
                 - text: x
-                - generic [ref=e574]: "2"
+                - generic [ref=e576]: "2"
             - text: ) pulls a 1D line into a 2D plane. Cubing it (
-            - generic [ref=e575]:
-              - math [ref=e577]:
-                - generic [ref=e580]:
-                  - generic [ref=e581]: x
-                  - generic [ref=e582]: "3"
-              - generic [ref=e585]:
+            - generic [ref=e577]:
+              - math [ref=e579]:
+                - generic [ref=e582]:
+                  - generic [ref=e583]: x
+                  - generic [ref=e584]: "3"
+              - generic [ref=e587]:
                 - text: x
-                - generic [ref=e590]: "3"
+                - generic [ref=e592]: "3"
             - text: ) raises that plane vertically into a 3D box.
-          - generic [ref=e592]:
-            - heading "What it is." [level=4] [ref=e593]
-            - generic [ref=e594]: An exponent tells you how many times to multiply the base number by itself.
-      - generic [ref=e595]:
-        - generic [ref=e596]: "20"
-        - generic [ref=e597]:
-          - img "Exponents ($x^2, x^3$)" [ref=e599]
-          - generic [ref=e600]:
-            - generic [ref=e601]: 💡
-            - generic [ref=e602]: Exponents scale objects upward into entirely new dimensions of space.
-          - generic [ref=e603]:
-            - generic [ref=e604]:
-              - heading "How to solve." [level=4] [ref=e605]
-              - generic [ref=e606]:
+          - generic [ref=e593]:
+            - generic [ref=e594]: 💡
+            - generic [ref=e595]: Exponents scale objects upward into entirely new dimensions of space.
+          - generic [ref=e596]:
+            - generic [ref=e597]:
+              - heading "What it is." [level=4] [ref=e598]
+              - generic [ref=e599]: An exponent tells you how many times to multiply the base number by itself.
+            - generic [ref=e600]:
+              - heading "How to solve." [level=4] [ref=e601]
+              - generic [ref=e602]:
                 - text: To solve
-                - generic [ref=e607]:
-                  - math [ref=e609]:
-                    - generic [ref=e612]:
-                      - generic [ref=e613]: "4"
-                      - generic [ref=e614]: "3"
-                  - generic [ref=e617]:
+                - generic [ref=e603]:
+                  - math [ref=e605]:
+                    - generic [ref=e608]:
+                      - generic [ref=e609]: "4"
+                      - generic [ref=e610]: "3"
+                  - generic [ref=e613]:
                     - text: "4"
-                    - generic [ref=e622]: "3"
+                    - generic [ref=e618]: "3"
                 - text: ", you multiply"
-                - generic [ref=e623]:
-                  - math [ref=e625]:
-                    - generic [ref=e627]:
+                - generic [ref=e619]:
+                  - math [ref=e621]:
+                    - generic [ref=e623]:
+                      - generic [ref=e624]: "4"
+                      - generic [ref=e625]: ×
+                      - generic [ref=e626]: "4"
+                      - generic [ref=e627]: ×
                       - generic [ref=e628]: "4"
-                      - generic [ref=e629]: ×
-                      - generic [ref=e630]: "4"
-                      - generic [ref=e631]: ×
-                      - generic [ref=e632]: "4"
-                  - generic [ref=e633]:
-                    - generic [ref=e634]: 4 ×
-                    - generic [ref=e635]: 4 ×
-                    - generic [ref=e636]: "4"
+                  - generic [ref=e629]:
+                    - generic [ref=e630]: 4 ×
+                    - generic [ref=e631]: 4 ×
+                    - generic [ref=e632]: "4"
                 - text: . The first pair equals 16. Then multiply
-                - generic [ref=e637]:
-                  - math [ref=e639]:
-                    - generic [ref=e641]:
-                      - generic [ref=e642]: "16"
-                      - generic [ref=e643]: ×
-                      - generic [ref=e644]: "4"
-                  - generic [ref=e645]:
-                    - generic [ref=e646]: 16 ×
-                    - generic [ref=e647]: "4"
+                - generic [ref=e633]:
+                  - math [ref=e635]:
+                    - generic [ref=e637]:
+                      - generic [ref=e638]: "16"
+                      - generic [ref=e639]: ×
+                      - generic [ref=e640]: "4"
+                  - generic [ref=e641]:
+                    - generic [ref=e642]: 16 ×
+                    - generic [ref=e643]: "4"
                 - text: to get 64.
-            - generic [ref=e648]:
-              - heading "Why it works." [level=4] [ref=e649]
-              - generic [ref=e650]: Exponents stretch shapes. You drag a line into a square, and pull that square upwards into a box.
-          - generic [ref=e651]:
-            - heading "Summary" [level=4] [ref=e652]
-            - generic [ref=e653]: Exponents stretch shapes from lines, to squares, to boxes.
-    - generic [ref=e654]:
-      - generic [ref=e655]:
-        - generic [ref=e656]: "21"
-        - generic [ref=e657]:
-          - generic [ref=e658]:
-            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e659]
-            - heading "Square Roots ( )" [level=2] [ref=e660]:
+            - generic [ref=e644]:
+              - heading "Why it works." [level=4] [ref=e645]
+              - generic [ref=e646]: Exponents stretch shapes. You drag a line into a square, and pull that square upwards into a box.
+          - generic [ref=e647]:
+            - heading "Summary" [level=4] [ref=e648]
+            - generic [ref=e649]: Exponents stretch shapes from lines, to squares, to boxes.
+    - generic [ref=e650]:
+      - generic [ref=e651]:
+        - generic [ref=e652]: "21"
+        - generic [ref=e653]:
+          - generic [ref=e654]:
+            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e655]
+            - heading "Square Roots ( )" [level=2] [ref=e656]:
               - text: Square Roots (
-              - generic [ref=e661]:
-                - math [ref=e663]:
-                  - generic [ref=e667]: x
-                - generic [ref=e673]:
-                  - generic [ref=e674]: x
-                  - img [ref=e676]
+              - generic [ref=e657]:
+                - math [ref=e659]:
+                  - generic [ref=e663]: x
+                - generic [ref=e669]:
+                  - generic [ref=e670]: x
+                  - img [ref=e672]
               - text: )
-          - generic [ref=e681]: Imagine an industrial press flattening a solid box back down to the floor.
-          - 'img "Square Roots ($\\sqrt{x}$)" [ref=e683]'
-      - generic [ref=e684]:
-        - generic [ref=e685]: "22"
-        - generic [ref=e686]:
-          - generic [ref=e687]: Roots reverse shape expansion. A square root compresses a 2D square firmly back down into a 1D line.
-          - generic [ref=e688]:
-            - generic [ref=e689]: 💡
-            - generic [ref=e690]: Roots compress shapes down into lower dimensions.
-          - generic [ref=e691]:
-            - generic [ref=e692]:
-              - heading "What it is." [level=4] [ref=e693]
-              - generic [ref=e694]: A square root asks what original base number was multiplied by itself to produce the current value.
-            - generic [ref=e695]:
-              - heading "How to solve." [level=4] [ref=e696]
-              - generic [ref=e697]:
+          - generic [ref=e677]: Imagine an industrial press flattening a solid box back down to the floor.
+          - generic [ref=e678]: Roots reverse shape expansion. A square root compresses a 2D square firmly back down into a 1D line.
+          - generic [ref=e679]:
+            - generic [ref=e680]: 💡
+            - generic [ref=e681]: Roots compress shapes down into lower dimensions.
+      - generic [ref=e682]:
+        - generic [ref=e683]: "22"
+        - generic [ref=e684]:
+          - 'img "Square Roots ($\\sqrt{x}$)" [ref=e686]'
+          - generic [ref=e687]:
+            - generic [ref=e688]:
+              - heading "What it is." [level=4] [ref=e689]
+              - generic [ref=e690]: A square root asks what original base number was multiplied by itself to produce the current value.
+            - generic [ref=e691]:
+              - heading "How to solve." [level=4] [ref=e692]
+              - generic [ref=e693]:
                 - text: To find
-                - generic [ref=e698]:
-                  - math [ref=e700]:
-                    - generic [ref=e704]: "25"
-                  - generic [ref=e710]:
-                    - generic [ref=e711]: "25"
-                    - img [ref=e713]
+                - generic [ref=e694]:
+                  - math [ref=e696]:
+                    - generic [ref=e700]: "25"
+                  - generic [ref=e706]:
+                    - generic [ref=e707]: "25"
+                    - img [ref=e709]
                 - text: ", find the number that equals 25 when multiplied by itself. Because"
-                - generic [ref=e718]:
-                  - math [ref=e720]:
-                    - generic [ref=e722]:
-                      - generic [ref=e723]: "5"
-                      - generic [ref=e724]: ×
-                      - generic [ref=e725]: "5"
-                      - generic [ref=e726]: =
-                      - generic [ref=e727]: "25"
-                  - generic [ref=e728]:
-                    - generic [ref=e729]: 5 ×
-                    - generic [ref=e730]: 5 =
-                    - generic [ref=e731]: "25"
+                - generic [ref=e714]:
+                  - math [ref=e716]:
+                    - generic [ref=e718]:
+                      - generic [ref=e719]: "5"
+                      - generic [ref=e720]: ×
+                      - generic [ref=e721]: "5"
+                      - generic [ref=e722]: =
+                      - generic [ref=e723]: "25"
+                  - generic [ref=e724]:
+                    - generic [ref=e725]: 5 ×
+                    - generic [ref=e726]: 5 =
+                    - generic [ref=e727]: "25"
                 - text: ", the answer is 5."
-            - generic [ref=e732]:
-              - heading "Why it works." [level=4] [ref=e733]
-              - generic [ref=e734]: A root presses a shape flat downward. It finds the exact length of one side of a square and discards the rest of the shape.
-          - generic [ref=e735]:
-            - heading "Summary" [level=4] [ref=e736]
-            - generic [ref=e737]: While exponents inflate shapes, roots compress them flat.
-    - generic [ref=e738]:
-      - generic [ref=e739]:
-        - generic [ref=e740]: "23"
-        - generic [ref=e741]:
-          - generic [ref=e742]:
-            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e743]
-            - heading "Scientific Notation ( )" [level=2] [ref=e744]:
+            - generic [ref=e728]:
+              - heading "Why it works." [level=4] [ref=e729]
+              - generic [ref=e730]: A root presses a shape flat downward. It finds the exact length of one side of a square and discards the rest of the shape.
+          - generic [ref=e731]:
+            - heading "Summary" [level=4] [ref=e732]
+            - generic [ref=e733]: While exponents inflate shapes, roots compress them flat.
+    - generic [ref=e734]:
+      - generic [ref=e735]:
+        - generic [ref=e736]: "23"
+        - generic [ref=e737]:
+          - generic [ref=e738]:
+            - heading "Chapter 3 — Mastering the Dimensions (Exponents & Roots)" [level=3] [ref=e739]
+            - heading "Scientific Notation ( )" [level=2] [ref=e740]:
               - text: Scientific Notation (
-              - generic [ref=e745]:
-                - math [ref=e747]:
-                  - generic [ref=e749]:
-                    - generic [ref=e750]: a
-                    - generic [ref=e751]: ×
-                    - generic [ref=e752]:
-                      - generic [ref=e753]: "10"
-                      - generic [ref=e754]: b
-                - generic [ref=e755]:
-                  - generic [ref=e756]: a ×
-                  - generic [ref=e757]:
+              - generic [ref=e741]:
+                - math [ref=e743]:
+                  - generic [ref=e745]:
+                    - generic [ref=e746]: a
+                    - generic [ref=e747]: ×
+                    - generic [ref=e748]:
+                      - generic [ref=e749]: "10"
+                      - generic [ref=e750]: b
+                - generic [ref=e751]:
+                  - generic [ref=e752]: a ×
+                  - generic [ref=e753]:
                     - text: "1"
-                    - generic [ref=e758]:
+                    - generic [ref=e754]:
                       - text: "0"
-                      - generic [ref=e763]: b
+                      - generic [ref=e759]: b
               - text: )
-          - generic [ref=e764]: Imagine packing a massive banner into a highly compressed zip file.
-          - generic [ref=e765]:
+          - generic [ref=e760]: Imagine packing a massive banner into a highly compressed zip file.
+          - img "Scientific Notation ($a \\times 10^b$)" [ref=e762]
+      - generic [ref=e763]:
+        - generic [ref=e764]: "24"
+        - generic [ref=e765]:
+          - generic [ref=e766]:
             - text: Writing out 300,000,000 is inefficient. Scientific notation packages all the trailing zeros into a compact format (
-            - generic [ref=e766]:
-              - math [ref=e768]:
-                - generic [ref=e770]:
-                  - generic [ref=e771]: "3"
-                  - generic [ref=e772]: ×
-                  - generic [ref=e773]:
-                    - generic [ref=e774]: "10"
-                    - generic [ref=e775]: "8"
-              - generic [ref=e776]:
-                - generic [ref=e777]: 3 ×
-                - generic [ref=e778]:
+            - generic [ref=e767]:
+              - math [ref=e769]:
+                - generic [ref=e771]:
+                  - generic [ref=e772]: "3"
+                  - generic [ref=e773]: ×
+                  - generic [ref=e774]:
+                    - generic [ref=e775]: "10"
+                    - generic [ref=e776]: "8"
+              - generic [ref=e777]:
+                - generic [ref=e778]: 3 ×
+                - generic [ref=e779]:
                   - text: "1"
-                  - generic [ref=e779]:
+                  - generic [ref=e780]:
                     - text: "0"
-                    - generic [ref=e784]: "8"
+                    - generic [ref=e785]: "8"
             - text: ).
           - generic [ref=e786]:
-            - heading "What it is." [level=4] [ref=e787]
-            - generic [ref=e788]: It is a shorthand method for writing extremely large or extremely tiny numbers.
-      - generic [ref=e789]:
-        - generic [ref=e790]: "24"
-        - generic [ref=e791]:
-          - img "Scientific Notation ($a \\times 10^b$)" [ref=e793]
-          - generic [ref=e794]:
-            - generic [ref=e795]: 💡
-            - generic [ref=e796]: Scientific notation acts as simple data packing for massive numbers of zeros.
-          - generic [ref=e797]:
-            - generic [ref=e798]:
-              - heading "How to solve." [level=4] [ref=e799]
-              - generic [ref=e800]:
+            - generic [ref=e787]: 💡
+            - generic [ref=e788]: Scientific notation acts as simple data packing for massive numbers of zeros.
+          - generic [ref=e789]:
+            - generic [ref=e790]:
+              - heading "What it is." [level=4] [ref=e791]
+              - generic [ref=e792]: It is a shorthand method for writing extremely large or extremely tiny numbers.
+            - generic [ref=e793]:
+              - heading "How to solve." [level=4] [ref=e794]
+              - generic [ref=e795]:
                 - text: Count the jumps from the original decimal point to the new location behind the first digit. Write that jump count as the exponent.
-                - generic [ref=e801]:
-                  - math [ref=e803]:
-                    - generic [ref=e805]:
-                      - generic [ref=e806]: "4"
-                      - generic [ref=e807]: ","
-                      - generic [ref=e808]: "500"
-                      - generic [ref=e809]: ","
-                      - generic [ref=e810]: "000"
-                  - generic [ref=e812]: 4, 500, 000
+                - generic [ref=e796]:
+                  - math [ref=e798]:
+                    - generic [ref=e800]:
+                      - generic [ref=e801]: "4"
+                      - generic [ref=e802]: ","
+                      - generic [ref=e803]: "500"
+                      - generic [ref=e804]: ","
+                      - generic [ref=e805]: "000"
+                  - generic [ref=e807]: 4, 500, 000
                 - text: becomes
-                - generic [ref=e813]:
-                  - math [ref=e815]:
-                    - generic [ref=e817]:
-                      - generic [ref=e818]: "4.5"
-                      - generic [ref=e819]: ×
-                      - generic [ref=e820]:
-                        - generic [ref=e821]: "10"
-                        - generic [ref=e822]: "6"
-                  - generic [ref=e823]:
-                    - generic [ref=e824]: 4.5 ×
-                    - generic [ref=e825]:
+                - generic [ref=e808]:
+                  - math [ref=e810]:
+                    - generic [ref=e812]:
+                      - generic [ref=e813]: "4.5"
+                      - generic [ref=e814]: ×
+                      - generic [ref=e815]:
+                        - generic [ref=e816]: "10"
+                        - generic [ref=e817]: "6"
+                  - generic [ref=e818]:
+                    - generic [ref=e819]: 4.5 ×
+                    - generic [ref=e820]:
                       - text: "1"
-                      - generic [ref=e826]:
+                      - generic [ref=e821]:
                         - text: "0"
-                        - generic [ref=e831]: "6"
+                        - generic [ref=e826]: "6"
                 - text: .
-            - generic [ref=e832]:
-              - heading "Why it works." [level=4] [ref=e833]
-              - generic [ref=e834]: Instead of drawing a long flat line, you fold the distance onto itself into a small package that keeps the total length.
-          - generic [ref=e835]:
-            - heading "Summary" [level=4] [ref=e836]
-            - generic [ref=e837]: Scientific notation manages massive sizes cleanly without wasting space.
-    - generic [ref=e838]:
-      - generic [ref=e839]:
-        - generic [ref=e840]: "25"
-        - generic [ref=e841]:
-          - generic [ref=e842]:
-            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e843]
-            - heading "Balancing Equations ( )" [level=2] [ref=e844]:
+            - generic [ref=e827]:
+              - heading "Why it works." [level=4] [ref=e828]
+              - generic [ref=e829]: Instead of drawing a long flat line, you fold the distance onto itself into a small package that keeps the total length.
+          - generic [ref=e830]:
+            - heading "Summary" [level=4] [ref=e831]
+            - generic [ref=e832]: Scientific notation manages massive sizes cleanly without wasting space.
+    - generic [ref=e833]:
+      - generic [ref=e834]:
+        - generic [ref=e835]: "25"
+        - generic [ref=e836]:
+          - generic [ref=e837]:
+            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e838]
+            - heading "Balancing Equations ( )" [level=2] [ref=e839]:
               - text: Balancing Equations (
-              - generic [ref=e845]:
-                - math [ref=e847]:
-                  - generic [ref=e849]:
-                    - generic [ref=e850]: "2"
-                    - generic [ref=e851]: x
-                    - generic [ref=e852]: +
-                    - generic [ref=e853]: "4"
-                    - generic [ref=e854]: =
-                    - generic [ref=e855]: "10"
-                - generic [ref=e856]:
-                  - generic [ref=e857]: 2x +
-                  - generic [ref=e858]: 4 =
-                  - generic [ref=e859]: "10"
+              - generic [ref=e840]:
+                - math [ref=e842]:
+                  - generic [ref=e844]:
+                    - generic [ref=e845]: "2"
+                    - generic [ref=e846]: x
+                    - generic [ref=e847]: +
+                    - generic [ref=e848]: "4"
+                    - generic [ref=e849]: =
+                    - generic [ref=e850]: "10"
+                - generic [ref=e851]:
+                  - generic [ref=e852]: 2x +
+                  - generic [ref=e853]: 4 =
+                  - generic [ref=e854]: "10"
               - text: )
-          - generic [ref=e860]: Imagine a brass scale delicately hovering in perfect balance.
-          - img "Balancing Equations ($2x + 4 = 10$)" [ref=e862]
-      - generic [ref=e863]:
-        - generic [ref=e864]: "26"
-        - generic [ref=e865]:
-          - generic [ref=e866]: If you remove a weight from the left side, the scale tilts. To fix it, you must remove the exact same amount from the right.
-          - generic [ref=e867]:
-            - generic [ref=e868]: 💡
-            - generic [ref=e869]: Equations require you to adjust both sides identically to maintain physical balance.
-          - generic [ref=e870]:
-            - generic [ref=e871]:
-              - heading "What it is." [level=4] [ref=e872]
-              - generic [ref=e873]: An equation states that the left side and the right side are exactly equal, even if they look different.
-            - generic [ref=e874]:
-              - heading "How to solve." [level=4] [ref=e875]
-              - generic [ref=e876]:
+          - generic [ref=e855]: Imagine a brass scale delicately hovering in perfect balance.
+          - img "Balancing Equations ($2x + 4 = 10$)" [ref=e857]
+      - generic [ref=e858]:
+        - generic [ref=e859]: "26"
+        - generic [ref=e860]:
+          - generic [ref=e861]: If you remove a weight from the left side, the scale tilts. To fix it, you must remove the exact same amount from the right.
+          - generic [ref=e862]:
+            - generic [ref=e863]: 💡
+            - generic [ref=e864]: Equations require you to adjust both sides identically to maintain physical balance.
+          - generic [ref=e865]:
+            - generic [ref=e866]:
+              - heading "What it is." [level=4] [ref=e867]
+              - generic [ref=e868]: An equation states that the left side and the right side are exactly equal, even if they look different.
+            - generic [ref=e869]:
+              - heading "How to solve." [level=4] [ref=e870]
+              - generic [ref=e871]:
                 - text: Isolate the unknown letter. If the equation is
-                - generic [ref=e877]:
-                  - math [ref=e879]:
-                    - generic [ref=e881]:
-                      - generic [ref=e882]: "2"
-                      - generic [ref=e883]: x
-                      - generic [ref=e884]: +
-                      - generic [ref=e885]: "4"
-                      - generic [ref=e886]: =
-                      - generic [ref=e887]: "10"
-                  - generic [ref=e888]:
-                    - generic [ref=e889]: 2x +
-                    - generic [ref=e890]: 4 =
-                    - generic [ref=e891]: "10"
+                - generic [ref=e872]:
+                  - math [ref=e874]:
+                    - generic [ref=e876]:
+                      - generic [ref=e877]: "2"
+                      - generic [ref=e878]: x
+                      - generic [ref=e879]: +
+                      - generic [ref=e880]: "4"
+                      - generic [ref=e881]: =
+                      - generic [ref=e882]: "10"
+                  - generic [ref=e883]:
+                    - generic [ref=e884]: 2x +
+                    - generic [ref=e885]: 4 =
+                    - generic [ref=e886]: "10"
                 - text: ", subtract 4 from both sides to get"
-                - generic [ref=e892]:
-                  - math [ref=e894]:
-                    - generic [ref=e896]:
-                      - generic [ref=e897]: "2"
-                      - generic [ref=e898]: x
-                      - generic [ref=e899]: =
-                      - generic [ref=e900]: "6"
-                  - generic [ref=e901]:
-                    - generic [ref=e902]: 2x =
-                    - generic [ref=e903]: "6"
+                - generic [ref=e887]:
+                  - math [ref=e889]:
+                    - generic [ref=e891]:
+                      - generic [ref=e892]: "2"
+                      - generic [ref=e893]: x
+                      - generic [ref=e894]: =
+                      - generic [ref=e895]: "6"
+                  - generic [ref=e896]:
+                    - generic [ref=e897]: 2x =
+                    - generic [ref=e898]: "6"
                 - text: . Then divide both sides by 2 to find that
-                - generic [ref=e904]:
-                  - math [ref=e906]:
-                    - generic [ref=e908]:
-                      - generic [ref=e909]: x
-                      - generic [ref=e910]: =
-                      - generic [ref=e911]: "3"
-                  - generic [ref=e912]:
-                    - generic [ref=e913]: x =
-                    - generic [ref=e914]: "3"
+                - generic [ref=e899]:
+                  - math [ref=e901]:
+                    - generic [ref=e903]:
+                      - generic [ref=e904]: x
+                      - generic [ref=e905]: =
+                      - generic [ref=e906]: "3"
+                  - generic [ref=e907]:
+                    - generic [ref=e908]: x =
+                    - generic [ref=e909]: "3"
                 - text: .
-            - generic [ref=e915]:
-              - heading "Why it works." [level=4] [ref=e916]
-              - generic [ref=e917]: A balanced shape must stay balanced. If you cut a block off the left side of a flat scale, you must cut the exact same block off the right side to keep it flat.
-          - generic [ref=e918]:
-            - heading "Summary" [level=4] [ref=e919]
-            - generic [ref=e920]: You strip weights from both sides equally to expose the hidden value.
-    - generic [ref=e921]:
-      - generic [ref=e922]:
-        - generic [ref=e923]: "27"
-        - generic [ref=e924]:
-          - generic [ref=e925]:
-            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e926]
-            - heading "Linear Lines ( )" [level=2] [ref=e927]:
+            - generic [ref=e910]:
+              - heading "Why it works." [level=4] [ref=e911]
+              - generic [ref=e912]: A balanced shape must stay balanced. If you cut a block off the left side of a flat scale, you must cut the exact same block off the right side to keep it flat.
+          - generic [ref=e913]:
+            - heading "Summary" [level=4] [ref=e914]
+            - generic [ref=e915]: You strip weights from both sides equally to expose the hidden value.
+    - generic [ref=e916]:
+      - generic [ref=e917]:
+        - generic [ref=e918]: "27"
+        - generic [ref=e919]:
+          - generic [ref=e920]:
+            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e921]
+            - heading "Linear Lines ( )" [level=2] [ref=e922]:
               - text: Linear Lines (
-              - generic [ref=e928]:
-                - math [ref=e930]:
-                  - generic [ref=e932]:
-                    - generic [ref=e933]: "y"
-                    - generic [ref=e934]: =
-                    - generic [ref=e935]: m
-                    - generic [ref=e936]: x
-                    - generic [ref=e937]: +
-                    - generic [ref=e938]: b
-                - generic [ref=e939]:
-                  - generic [ref=e940]: y =
-                  - generic [ref=e941]: mx +
-                  - generic [ref=e942]: b
+              - generic [ref=e923]:
+                - math [ref=e925]:
+                  - generic [ref=e927]:
+                    - generic [ref=e928]: "y"
+                    - generic [ref=e929]: =
+                    - generic [ref=e930]: m
+                    - generic [ref=e931]: x
+                    - generic [ref=e932]: +
+                    - generic [ref=e933]: b
+                - generic [ref=e934]:
+                  - generic [ref=e935]: y =
+                  - generic [ref=e936]: mx +
+                  - generic [ref=e937]: b
               - text: )
-          - generic [ref=e943]: Imagine aiming a laser pointer into the night sky from a specific step on a ladder.
+          - generic [ref=e938]: Imagine aiming a laser pointer into the night sky from a specific step on a ladder.
+          - img "Linear Lines ($y = mx + b$)" [ref=e940]
+      - generic [ref=e941]:
+        - generic [ref=e942]: "28"
+        - generic [ref=e943]:
           - generic [ref=e944]:
             - text: The constant '
             - generic [ref=e945]:
@@ -827,194 +831,190 @@
                 - generic [ref=e958]: m
               - generic [ref=e960]: m
             - text: "' is the angle of the beam pointing upward."
-          - generic [ref=e962]:
-            - heading "What it is." [level=4] [ref=e963]
-            - generic [ref=e964]: It is the standard equation used to draw straight lines predictably on a graph.
-      - generic [ref=e965]:
-        - generic [ref=e966]: "28"
-        - generic [ref=e967]:
-          - img "Linear Lines ($y = mx + b$)" [ref=e969]
-          - generic [ref=e970]:
-            - generic [ref=e971]: 💡
-            - generic [ref=e972]: A linear equation is the blueprint for a straight line.
-          - generic [ref=e973]:
-            - generic [ref=e974]:
-              - heading "How to solve." [level=4] [ref=e975]
-              - generic [ref=e976]:
+          - generic [ref=e961]:
+            - generic [ref=e962]: 💡
+            - generic [ref=e963]: A linear equation is the blueprint for a straight line.
+          - generic [ref=e964]:
+            - generic [ref=e965]:
+              - heading "What it is." [level=4] [ref=e966]
+              - generic [ref=e967]: It is the standard equation used to draw straight lines predictably on a graph.
+            - generic [ref=e968]:
+              - heading "How to solve." [level=4] [ref=e969]
+              - generic [ref=e970]:
                 - text: Mark your starting point on the vertical Y-axis using '
-                - generic [ref=e977]:
-                  - math [ref=e979]:
-                    - generic [ref=e982]: b
-                  - generic [ref=e984]: b
+                - generic [ref=e971]:
+                  - math [ref=e973]:
+                    - generic [ref=e976]: b
+                  - generic [ref=e978]: b
                 - text: "'. Look at the slope '"
-                - generic [ref=e985]:
-                  - math [ref=e987]:
-                    - generic [ref=e990]: m
-                  - generic [ref=e992]: m
+                - generic [ref=e979]:
+                  - math [ref=e981]:
+                    - generic [ref=e984]: m
+                  - generic [ref=e986]: m
                 - text: "' as a fraction. Move up the 'rise' number, and right the 'run' number to plot your next dot."
-            - generic [ref=e993]:
-              - heading "Why it works." [level=4] [ref=e994]
-              - generic [ref=e995]: The line climbs perfectly without bending, creating identical triangles at every step.
-          - generic [ref=e996]:
-            - heading "Summary" [level=4] [ref=e997]
-            - generic [ref=e998]: Linear lines establish a starting height, set an angle, and travel straight forever.
-    - generic [ref=e999]:
-      - generic [ref=e1000]:
-        - generic [ref=e1001]: "29"
-        - generic [ref=e1002]:
-          - generic [ref=e1003]:
-            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e1004]
-            - heading "Percentages ( )" [level=2] [ref=e1005]:
+            - generic [ref=e987]:
+              - heading "Why it works." [level=4] [ref=e988]
+              - generic [ref=e989]: The line climbs perfectly without bending, creating identical triangles at every step.
+          - generic [ref=e990]:
+            - heading "Summary" [level=4] [ref=e991]
+            - generic [ref=e992]: Linear lines establish a starting height, set an angle, and travel straight forever.
+    - generic [ref=e993]:
+      - generic [ref=e994]:
+        - generic [ref=e995]: "29"
+        - generic [ref=e996]:
+          - generic [ref=e997]:
+            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e998]
+            - heading "Percentages ( )" [level=2] [ref=e999]:
               - text: Percentages (
-              - generic [ref=e1006]:
-                - math [ref=e1008]:
-                  - generic [ref=e1011]: "%"
-                - generic [ref=e1013]: "%"
+              - generic [ref=e1000]:
+                - math [ref=e1002]:
+                  - generic [ref=e1005]: "%"
+                - generic [ref=e1007]: "%"
               - text: )
-          - generic [ref=e1014]: Imagine a transparent grid that slices any shape directly into exactly 100 equal sections.
-          - img "Percentages ($\\%$)" [ref=e1016]
-      - generic [ref=e1017]:
-        - generic [ref=e1018]: "30"
-        - generic [ref=e1019]:
-          - generic [ref=e1020]: Percentages force different objects into the exact same 100-piece scale. "50%" indicates you select exactly half of those available sections.
-          - generic [ref=e1021]:
-            - generic [ref=e1022]: 💡
-            - generic [ref=e1023]: Percentages force completely different shapes into a universal 100-piece scale.
-          - generic [ref=e1024]:
-            - generic [ref=e1025]:
-              - heading "What it is." [level=4] [ref=e1026]
-              - generic [ref=e1027]: A percentage is a ratio that compares a number specifically out of a set of 100.
-            - generic [ref=e1028]:
-              - heading "How to solve." [level=4] [ref=e1029]
-              - generic [ref=e1030]:
+          - generic [ref=e1008]: Imagine a transparent grid that slices any shape directly into exactly 100 equal sections.
+          - generic [ref=e1009]: Percentages force different objects into the exact same 100-piece scale. "50%" indicates you select exactly half of those available sections.
+          - generic [ref=e1010]:
+            - generic [ref=e1011]: 💡
+            - generic [ref=e1012]: Percentages force completely different shapes into a universal 100-piece scale.
+      - generic [ref=e1013]:
+        - generic [ref=e1014]: "30"
+        - generic [ref=e1015]:
+          - img "Percentages ($\\%$)" [ref=e1017]
+          - generic [ref=e1018]:
+            - generic [ref=e1019]:
+              - heading "What it is." [level=4] [ref=e1020]
+              - generic [ref=e1021]: A percentage is a ratio that compares a number specifically out of a set of 100.
+            - generic [ref=e1022]:
+              - heading "How to solve." [level=4] [ref=e1023]
+              - generic [ref=e1024]:
                 - text: To find 30% of a number, convert the percentage into a decimal by moving the dot two places left (
-                - generic [ref=e1031]:
-                  - math [ref=e1033]:
-                    - generic [ref=e1036]: "0.30"
-                  - generic [ref=e1038]: "0.30"
+                - generic [ref=e1025]:
+                  - math [ref=e1027]:
+                    - generic [ref=e1030]: "0.30"
+                  - generic [ref=e1032]: "0.30"
                 - text: ). Then multiply the original number by
-                - generic [ref=e1039]:
-                  - math [ref=e1041]:
-                    - generic [ref=e1044]: "0.30"
-                  - generic [ref=e1046]: "0.30"
+                - generic [ref=e1033]:
+                  - math [ref=e1035]:
+                    - generic [ref=e1038]: "0.30"
+                  - generic [ref=e1040]: "0.30"
                 - text: .
-            - generic [ref=e1047]:
-              - heading "Why it works." [level=4] [ref=e1048]
-              - generic [ref=e1049]: You put a universal mask over random shapes. By chopping every object into 100 identical pieces, comparing sizes becomes easy.
-          - generic [ref=e1050]:
-            - heading "Summary" [level=4] [ref=e1051]
-            - generic [ref=e1052]: Percentages allow completely different sizes to share the exact same 100-piece grid.
-    - generic [ref=e1053]:
-      - generic [ref=e1054]:
-        - generic [ref=e1055]: "31"
-        - generic [ref=e1056]:
-          - generic [ref=e1057]:
-            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e1058]
-            - heading "Percentage Increase/Decrease" [level=2] [ref=e1059]
-          - generic [ref=e1060]: Imagine a grid of 100 blocks expanding outward to add 20 new edge pieces.
-          - generic [ref=e1061]: Applying a 20% increase tells the system to attach 20 fresh blocks directly to the rim of the original shape.
-          - generic [ref=e1063]:
-            - heading "What it is." [level=4] [ref=e1064]
-            - generic [ref=e1065]: It calculates the exact amount a value grows or shrinks relative to its initial size.
-      - generic [ref=e1066]:
-        - generic [ref=e1067]: "32"
-        - generic [ref=e1068]:
-          - img "Percentage Increase/Decrease" [ref=e1070]
-          - generic [ref=e1071]:
-            - generic [ref=e1072]: 💡
-            - generic [ref=e1073]: Percentage increases add calculated modular blocks directly onto an existing structure.
-          - generic [ref=e1074]:
-            - generic [ref=e1075]:
-              - heading "How to solve." [level=4] [ref=e1076]
-              - generic [ref=e1077]:
+            - generic [ref=e1041]:
+              - heading "Why it works." [level=4] [ref=e1042]
+              - generic [ref=e1043]: You put a universal mask over random shapes. By chopping every object into 100 identical pieces, comparing sizes becomes easy.
+          - generic [ref=e1044]:
+            - heading "Summary" [level=4] [ref=e1045]
+            - generic [ref=e1046]: Percentages allow completely different sizes to share the exact same 100-piece grid.
+    - generic [ref=e1047]:
+      - generic [ref=e1048]:
+        - generic [ref=e1049]: "31"
+        - generic [ref=e1050]:
+          - generic [ref=e1051]:
+            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e1052]
+            - heading "Percentage Increase/Decrease" [level=2] [ref=e1053]
+          - generic [ref=e1054]: Imagine a grid of 100 blocks expanding outward to add 20 new edge pieces.
+          - img "Percentage Increase/Decrease" [ref=e1056]
+      - generic [ref=e1057]:
+        - generic [ref=e1058]: "32"
+        - generic [ref=e1059]:
+          - generic [ref=e1060]: Applying a 20% increase tells the system to attach 20 fresh blocks directly to the rim of the original shape.
+          - generic [ref=e1061]:
+            - generic [ref=e1062]: 💡
+            - generic [ref=e1063]: Percentage increases add calculated modular blocks directly onto an existing structure.
+          - generic [ref=e1064]:
+            - generic [ref=e1065]:
+              - heading "What it is." [level=4] [ref=e1066]
+              - generic [ref=e1067]: It calculates the exact amount a value grows or shrinks relative to its initial size.
+            - generic [ref=e1068]:
+              - heading "How to solve." [level=4] [ref=e1069]
+              - generic [ref=e1070]:
                 - text: To increase 50 by 20%, multiply
-                - generic [ref=e1078]:
-                  - math [ref=e1080]:
-                    - generic [ref=e1082]:
-                      - generic [ref=e1083]: "50"
-                      - generic [ref=e1084]: ×
-                      - generic [ref=e1085]: "1.20"
-                  - generic [ref=e1086]:
-                    - generic [ref=e1087]: 50 ×
-                    - generic [ref=e1088]: "1.20"
+                - generic [ref=e1071]:
+                  - math [ref=e1073]:
+                    - generic [ref=e1075]:
+                      - generic [ref=e1076]: "50"
+                      - generic [ref=e1077]: ×
+                      - generic [ref=e1078]: "1.20"
+                  - generic [ref=e1079]:
+                    - generic [ref=e1080]: 50 ×
+                    - generic [ref=e1081]: "1.20"
                 - text: . The '1' keeps the original value intact, while the '.20' calculates the brand new addition. The answer is 60.
-            - generic [ref=e1089]:
-              - heading "Why it works." [level=4] [ref=e1090]
-              - generic [ref=e1091]: Expansion snaps pieces directly onto the outside border. The shape widens evenly.
+            - generic [ref=e1082]:
+              - heading "Why it works." [level=4] [ref=e1083]
+              - generic [ref=e1084]: Expansion snaps pieces directly onto the outside border. The shape widens evenly.
+          - generic [ref=e1085]:
+            - heading "Summary" [level=4] [ref=e1086]
+            - generic [ref=e1087]: You dynamically scale the object based on how many extra 100-scale blocks fall away or attach.
+    - generic [ref=e1088]:
+      - generic [ref=e1089]:
+        - generic [ref=e1090]: "33"
+        - generic [ref=e1091]:
           - generic [ref=e1092]:
-            - heading "Summary" [level=4] [ref=e1093]
-            - generic [ref=e1094]: You dynamically scale the object based on how many extra 100-scale blocks fall away or attach.
-    - generic [ref=e1095]:
-      - generic [ref=e1096]:
-        - generic [ref=e1097]: "33"
-        - generic [ref=e1098]:
-          - generic [ref=e1099]:
-            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e1100]
-            - heading "The Coordinates Grid ( and )" [level=2] [ref=e1101]:
+            - heading "Chapter 4 — The Scale and The Map (Equations & Geometry)" [level=3] [ref=e1093]
+            - heading "The Coordinates Grid ( and )" [level=2] [ref=e1094]:
               - text: The Coordinates Grid (
-              - generic [ref=e1102]:
-                - math [ref=e1104]:
-                  - generic [ref=e1107]: X
-                - generic [ref=e1109]: X
+              - generic [ref=e1095]:
+                - math [ref=e1097]:
+                  - generic [ref=e1100]: X
+                - generic [ref=e1102]: X
               - text: and
-              - generic [ref=e1110]:
-                - math [ref=e1112]:
-                  - generic [ref=e1115]: "Y"
-                - generic [ref=e1117]: "Y"
+              - generic [ref=e1103]:
+                - math [ref=e1105]:
+                  - generic [ref=e1108]: "Y"
+                - generic [ref=e1110]: "Y"
               - text: )
-          - generic [ref=e1118]: Imagine walking through a city block grid using exact directions.
-          - img "The Coordinates Grid ($X$ and $Y$)" [ref=e1120]
-      - generic [ref=e1121]:
-        - generic [ref=e1122]: "34"
-        - generic [ref=e1123]:
-          - generic [ref=e1124]:
+          - generic [ref=e1111]: Imagine walking through a city block grid using exact directions.
+          - img "The Coordinates Grid ($X$ and $Y$)" [ref=e1113]
+      - generic [ref=e1114]:
+        - generic [ref=e1115]: "34"
+        - generic [ref=e1116]:
+          - generic [ref=e1117]:
             - text: To find a location, you determine a starting point, walk a precise number of units right (the
-            - generic [ref=e1125]:
-              - math [ref=e1127]:
-                - generic [ref=e1130]: X
-              - generic [ref=e1132]: X
+            - generic [ref=e1118]:
+              - math [ref=e1120]:
+                - generic [ref=e1123]: X
+              - generic [ref=e1125]: X
             - text: axis), turn 90 degrees, and walk forward (the
-            - generic [ref=e1133]:
-              - math [ref=e1135]:
-                - generic [ref=e1138]: "Y"
-              - generic [ref=e1140]: "Y"
+            - generic [ref=e1126]:
+              - math [ref=e1128]:
+                - generic [ref=e1131]: "Y"
+              - generic [ref=e1133]: "Y"
             - text: axis).
-          - generic [ref=e1141]:
-            - generic [ref=e1142]: 💡
-            - generic [ref=e1143]: The coordinate system is a rigid map locating points perfectly.
-          - generic [ref=e1144]:
-            - generic [ref=e1145]:
-              - heading "What it is." [level=4] [ref=e1146]
-              - generic [ref=e1147]: It is a 2D mapping system that uses a horizontal and vertical number line to pinpoint locations.
-            - generic [ref=e1148]:
-              - heading "How to solve." [level=4] [ref=e1149]
-              - generic [ref=e1150]:
+          - generic [ref=e1134]:
+            - generic [ref=e1135]: 💡
+            - generic [ref=e1136]: The coordinate system is a rigid map locating points perfectly.
+          - generic [ref=e1137]:
+            - generic [ref=e1138]:
+              - heading "What it is." [level=4] [ref=e1139]
+              - generic [ref=e1140]: It is a 2D mapping system that uses a horizontal and vertical number line to pinpoint locations.
+            - generic [ref=e1141]:
+              - heading "How to solve." [level=4] [ref=e1142]
+              - generic [ref=e1143]:
                 - text: Plot the point
-                - generic [ref=e1151]:
-                  - math [ref=e1153]:
-                    - generic [ref=e1155]:
-                      - generic [ref=e1156]: (
-                      - generic [ref=e1157]: "3"
-                      - generic [ref=e1158]: ","
-                      - generic [ref=e1159]: −
-                      - generic [ref=e1160]: "4"
-                      - generic [ref=e1161]: )
-                  - generic [ref=e1163]: (3, −4)
+                - generic [ref=e1144]:
+                  - math [ref=e1146]:
+                    - generic [ref=e1148]:
+                      - generic [ref=e1149]: (
+                      - generic [ref=e1150]: "3"
+                      - generic [ref=e1151]: ","
+                      - generic [ref=e1152]: −
+                      - generic [ref=e1153]: "4"
+                      - generic [ref=e1154]: )
+                  - generic [ref=e1156]: (3, −4)
                 - text: . Start at the absolute center
-                - generic [ref=e1164]:
-                  - math [ref=e1166]:
-                    - generic [ref=e1168]:
-                      - generic [ref=e1169]: (
-                      - generic [ref=e1170]: "0"
-                      - generic [ref=e1171]: ","
-                      - generic [ref=e1172]: "0"
-                      - generic [ref=e1173]: )
-                  - generic [ref=e1175]: (0, 0)
+                - generic [ref=e1157]:
+                  - math [ref=e1159]:
+                    - generic [ref=e1161]:
+                      - generic [ref=e1162]: (
+                      - generic [ref=e1163]: "0"
+                      - generic [ref=e1164]: ","
+                      - generic [ref=e1165]: "0"
+                      - generic [ref=e1166]: )
+                  - generic [ref=e1168]: (0, 0)
                 - text: . Move 3 units right on the X-axis. Move 4 units down on the Y-axis. Place your dot.
-            - generic [ref=e1176]:
-              - heading "Why it works." [level=4] [ref=e1177]
-              - generic [ref=e1178]: Coordinates pin shapes onto a flat floor. The grid stops a point from drifting away completely.
-          - generic [ref=e1179]:
-            - heading "Summary" [level=4] [ref=e1180]
-            - generic [ref=e1181]: Coordinates act as an irrefutable GPS map pinning geometry perfectly down.
+            - generic [ref=e1169]:
+              - heading "Why it works." [level=4] [ref=e1170]
+              - generic [ref=e1171]: Coordinates pin shapes onto a flat floor. The grid stops a point from drifting away completely.
+          - generic [ref=e1172]:
+            - heading "Summary" [level=4] [ref=e1173]
+            - generic [ref=e1174]: Coordinates act as an irrefutable GPS map pinning geometry perfectly down.
 ```
