@@ -10,9 +10,10 @@ export interface Concept {
     prompt: string;
   };
   aha: string;
-  whatItIs: string;
-  howToSolve: string;
-  whyItWorks: string;
+  proseSegments: {
+    label: string;
+    body: string;
+  }[];
   summary: string;
 }
 
@@ -29,10 +30,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "Two streams of blue water merging into a single larger puddle. Flat vector style, white background."
     },
     "aha": "Positive numbers add size without creating conflict.",
-    "whatItIs": "Addition calculates the total amount of two separate groups.",
-    "howToSolve": "Line up the numbers vertically by place value. Add the columns from right to left. If a column totals more than 9, carry the extra 1 over to the next column.",
-    "whyItWorks": "When you add positive numbers, you extend a straight line in one direction. The shape grows longer.",
-    "summary": "Addition adds pieces into the exact same space to build a larger shape."
+    "summary": "Addition adds pieces into the exact same space to build a larger shape.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Addition calculates the total amount of two separate groups."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Line up the numbers vertically by place value. Add the columns from right to left. If a column totals more than 9, carry the extra 1 over to the next column."
+      },
+      {
+        "label": "Why it works.",
+        "body": "When you add positive numbers, you extend a straight line in one direction. The shape grows longer."
+      }
+    ]
   },
   {
     "id": "subtraction",
@@ -46,10 +58,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A yellow boat pushing forward, while a red water current pushes it backward. Flat vector style, white background."
     },
     "aha": "A minus sign pushes backward against your forward movement.",
-    "whatItIs": "Subtraction calculates the difference between two numbers. It determines what remains after pieces are removed.",
-    "howToSolve": "Line the numbers up vertically. Subtract the bottom digit from the top. If the top digit is smaller, borrow 1 from the next column before subtracting.",
-    "whyItWorks": "Subtraction shrinks the original shape. When you apply a minus, the shape slides backward along the grid, making it shorter.",
-    "summary": "Subtracting measures opposing numbers. You calculate if your forward movement is bigger than the backward push."
+    "summary": "Subtracting measures opposing numbers. You calculate if your forward movement is bigger than the backward push.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Subtraction calculates the difference between two numbers. It determines what remains after pieces are removed."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Line the numbers up vertically. Subtract the bottom digit from the top. If the top digit is smaller, borrow 1 from the next column before subtracting."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Subtraction shrinks the original shape. When you apply a minus, the shape slides backward along the grid, making it shorter."
+      }
+    ]
   },
   {
     "id": "negativenumbersstandalone",
@@ -63,10 +86,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A flat ground line with a red hole dug into the earth, placed directly next to a blue rising tower. Minimalistic vector style, white background."
     },
     "aha": "Negative numbers extend the world downward below zero.",
-    "whatItIs": "A negative number is any value less than zero. It is the exact opposite of a positive amount.",
-    "howToSolve": "To subtract a negative number, like $5 - (-3)$, change the double minus into a plus. The equation becomes $5 + 3 = 8$.",
-    "whyItWorks": "Removing a deep hole is the exact geometric equivalent of filling it with dirt. The double negative flips a downward hole into an upward block.",
-    "summary": "Removing a hole means filling it. Two negatives flip to form a positive block."
+    "summary": "Removing a hole means filling it. Two negatives flip to form a positive block.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A negative number is any value less than zero. It is the exact opposite of a positive amount."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To subtract a negative number, like $5 - (-3)$, change the double minus into a plus. The equation becomes $5 + 3 = 8$."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Removing a deep hole is the exact geometric equivalent of filling it with dirt. The double negative flips a downward hole into an upward block."
+      }
+    ]
   },
   {
     "id": "absolutevalue5",
@@ -80,10 +114,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "Two cars parked side by side facing opposite directions. Both leave a yellow trail exactly 5 blocks long. Flat vector style, white background."
     },
     "aha": "Absolute value is the total distance traveled, ignoring direction entirely.",
-    "whatItIs": "Absolute value calculates the strict distance a number sits from zero.",
-    "howToSolve": "Look at the number inside the parallel bars $|-5|$. Remove the negative sign. The result is always positive or zero. $|-5|$ becomes 5.",
-    "whyItWorks": "The parallel bars act as a geometric filter. They remove direction from the grid and force the object to report its total size.",
-    "summary": "Absolute value removes minus signs and reports the raw size of the number."
+    "summary": "Absolute value removes minus signs and reports the raw size of the number.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Absolute value calculates the strict distance a number sits from zero."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Look at the number inside the parallel bars $|-5|$. Remove the negative sign. The result is always positive or zero. $|-5|$ becomes 5."
+      },
+      {
+        "label": "Why it works.",
+        "body": "The parallel bars act as a geometric filter. They remove direction from the grid and force the object to report its total size."
+      }
+    ]
   },
   {
     "id": "multiplyingvariablesxcdotx",
@@ -97,10 +142,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "Horizontal blue strings and vertical red strings locking tightly crosswise to create a flat 2D square. Flat vector style, white background."
     },
     "aha": "Multiplying variables weaves lines into solid flat shapes.",
-    "whatItIs": "Multiplying letters builds a new term with a higher exponent.",
-    "howToSolve": "Count the number of identical letters being multiplied. Write that number as a small exponent at the top right. For $x \\cdot x$, write $x^2$.",
-    "whyItWorks": "A single $x$ is a flat line. Mutiplying it by another $x$ stretches that line sideways to make a square. Multiplying a third time stretches the square upward to form a 3D box.",
-    "summary": "Multiplying variables creates shapes. Variables like $x^2$ act as physical objects, not abstract letters."
+    "summary": "Multiplying variables creates shapes. Variables like $x^2$ act as physical objects, not abstract letters.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Multiplying letters builds a new term with a higher exponent."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Count the number of identical letters being multiplied. Write that number as a small exponent at the top right. For $x \\cdot x$, write $x^2$."
+      },
+      {
+        "label": "Why it works.",
+        "body": "A single $x$ is a flat line. Mutiplying it by another $x$ stretches that line sideways to make a square. Multiplying a third time stretches the square upward to form a 3D box."
+      }
+    ]
   },
   {
     "id": "multiplyingbynumbers5cdotx",
@@ -114,10 +170,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A single straight line glowing intensely next to an analog volume dial. Minimalistic vector style, white background."
     },
     "aha": "Numbers act as amplifiers, scaling the amount without altering the shape.",
-    "whatItIs": "Multiplying a variable by a raw number increases the quantity of that item.",
-    "howToSolve": "When you add $2x + 3x$, you add the numbers together to get $5x$. You never change the exponent.",
-    "whyItWorks": "You are placing five individual wires side-by-side ($5x$). Because they never cross, they cannot weave into a square. The shape stays flat.",
-    "summary": "Multiplying by a number ($5x$) scales the amount, while multiplying the variables ($x^2$) builds a completely new shape."
+    "summary": "Multiplying by a number ($5x$) scales the amount, while multiplying the variables ($x^2$) builds a completely new shape.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Multiplying a variable by a raw number increases the quantity of that item."
+      },
+      {
+        "label": "How to solve.",
+        "body": "When you add $2x + 3x$, you add the numbers together to get $5x$. You never change the exponent."
+      },
+      {
+        "label": "Why it works.",
+        "body": "You are placing five individual wires side-by-side ($5x$). Because they never cross, they cannot weave into a square. The shape stays flat."
+      }
+    ]
   },
   {
     "id": "divisiondiv",
@@ -131,10 +198,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A large blue square actively splitting cleanly into four identical smaller squares. Flat vector style, white background."
     },
     "aha": "Division separates a total amount into identical pieces.",
-    "whatItIs": "Division splits a total amount into equal groups to see how much goes into each piece.",
-    "howToSolve": "To solve $20 \\div 4$, ask yourself what number multiplied by 4 equals 20. The answer is 5.",
-    "whyItWorks": "Division breaks a large block into a grid of smaller exact squares. The starting shape is cut into equal pieces.",
-    "summary": "Division cracks a big shape perfectly into smaller, identical pieces."
+    "summary": "Division cracks a big shape perfectly into smaller, identical pieces.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "Division splits a total amount into equal groups to see how much goes into each piece."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To solve $20 \\div 4$, ask yourself what number multiplied by 4 equals 20. The answer is 5."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Division breaks a large block into a grid of smaller exact squares. The starting shape is cut into equal pieces."
+      }
+    ]
   },
   {
     "id": "exponentsx2x3",
@@ -148,10 +226,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A thin line inflating outward horizontally to form a solid flat square. Minimalistic vector style, white background."
     },
     "aha": "Exponents scale objects upward into entirely new dimensions of space.",
-    "whatItIs": "An exponent tells you how many times to multiply the base number by itself.",
-    "howToSolve": "To solve $4^3$, you multiply $4 \\times 4 \\times 4$. The first pair equals 16. Then multiply $16 \\times 4$ to get 64.",
-    "whyItWorks": "Exponents stretch shapes. You drag a line into a square, and pull that square upwards into a box.",
-    "summary": "Exponents stretch shapes from lines, to squares, to boxes."
+    "summary": "Exponents stretch shapes from lines, to squares, to boxes.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "An exponent tells you how many times to multiply the base number by itself."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To solve $4^3$, you multiply $4 \\times 4 \\times 4$. The first pair equals 16. Then multiply $16 \\times 4$ to get 64."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Exponents stretch shapes. You drag a line into a square, and pull that square upwards into a box."
+      }
+    ]
   },
   {
     "id": "squarerootssqrtx",
@@ -165,10 +254,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A heavy iron plate crushing a 2D square strictly down into a 1D straight line. Flat industrial vector style, white background."
     },
     "aha": "Roots compress shapes down into lower dimensions.",
-    "whatItIs": "A square root asks what original base number was multiplied by itself to produce the current value.",
-    "howToSolve": "To find $\\sqrt{25}$, find the number that equals 25 when multiplied by itself. Because $5 \\times 5 = 25$, the answer is 5.",
-    "whyItWorks": "A root presses a shape flat downward. It finds the exact length of one side of a square and discards the rest of the shape.",
-    "summary": "While exponents inflate shapes, roots compress them flat."
+    "summary": "While exponents inflate shapes, roots compress them flat.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A square root asks what original base number was multiplied by itself to produce the current value."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To find $\\sqrt{25}$, find the number that equals 25 when multiplied by itself. Because $5 \\times 5 = 25$, the answer is 5."
+      },
+      {
+        "label": "Why it works.",
+        "body": "A root presses a shape flat downward. It finds the exact length of one side of a square and discards the rest of the shape."
+      }
+    ]
   },
   {
     "id": "scientificnotationatimes10b",
@@ -182,10 +282,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A massive line of zeroes zip-compressing into a tiny capsule labeled '10^x'. Clean vector style, white background."
     },
     "aha": "Scientific notation acts as simple data packing for massive numbers of zeros.",
-    "whatItIs": "It is a shorthand method for writing extremely large or extremely tiny numbers.",
-    "howToSolve": "Count the jumps from the original decimal point to the new location behind the first digit. Write that jump count as the exponent. $4,500,000$ becomes $4.5 \\times 10^6$.",
-    "whyItWorks": "Instead of drawing a long flat line, you fold the distance onto itself into a small package that keeps the total length.",
-    "summary": "Scientific notation manages massive sizes cleanly without wasting space."
+    "summary": "Scientific notation manages massive sizes cleanly without wasting space.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "It is a shorthand method for writing extremely large or extremely tiny numbers."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Count the jumps from the original decimal point to the new location behind the first digit. Write that jump count as the exponent. $4,500,000$ becomes $4.5 \\times 10^6$."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Instead of drawing a long flat line, you fold the distance onto itself into a small package that keeps the total length."
+      }
+    ]
   },
   {
     "id": "balancingequations2x410",
@@ -199,10 +310,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A balance scale. The left plate shows a heavy block being removed, causing the right plate to dip downward. Flat vector style, white background."
     },
     "aha": "Equations require you to adjust both sides identically to maintain physical balance.",
-    "whatItIs": "An equation states that the left side and the right side are exactly equal, even if they look different.",
-    "howToSolve": "Isolate the unknown letter. If the equation is $2x + 4 = 10$, subtract 4 from both sides to get $2x = 6$. Then divide both sides by 2 to find that $x = 3$.",
-    "whyItWorks": "A balanced shape must stay balanced. If you cut a block off the left side of a flat scale, you must cut the exact same block off the right side to keep it flat.",
-    "summary": "You strip weights from both sides equally to expose the hidden value."
+    "summary": "You strip weights from both sides equally to expose the hidden value.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "An equation states that the left side and the right side are exactly equal, even if they look different."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Isolate the unknown letter. If the equation is $2x + 4 = 10$, subtract 4 from both sides to get $2x = 6$. Then divide both sides by 2 to find that $x = 3$."
+      },
+      {
+        "label": "Why it works.",
+        "body": "A balanced shape must stay balanced. If you cut a block off the left side of a flat scale, you must cut the exact same block off the right side to keep it flat."
+      }
+    ]
   },
   {
     "id": "linearlinesymxb",
@@ -216,10 +338,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A red laser beam originating from a blue dot on the Y-axis wall, angling upward across a minimal grid. Flat vector style, white background."
     },
     "aha": "A linear equation is the blueprint for a straight line.",
-    "whatItIs": "It is the standard equation used to draw straight lines predictably on a graph.",
-    "howToSolve": "Mark your starting point on the vertical Y-axis using '$b$'. Look at the slope '$m$' as a fraction. Move up the 'rise' number, and right the 'run' number to plot your next dot.",
-    "whyItWorks": "The line climbs perfectly without bending, creating identical triangles at every step.",
-    "summary": "Linear lines establish a starting height, set an angle, and travel straight forever."
+    "summary": "Linear lines establish a starting height, set an angle, and travel straight forever.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "It is the standard equation used to draw straight lines predictably on a graph."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Mark your starting point on the vertical Y-axis using '$b$'. Look at the slope '$m$' as a fraction. Move up the 'rise' number, and right the 'run' number to plot your next dot."
+      },
+      {
+        "label": "Why it works.",
+        "body": "The line climbs perfectly without bending, creating identical triangles at every step."
+      }
+    ]
   },
   {
     "id": "percentages",
@@ -233,10 +366,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A large circle and a tiny circle covered by an identical transparent grid composed of exactly 100 squares. Minimalistic vector style, white background."
     },
     "aha": "Percentages force completely different shapes into a universal 100-piece scale.",
-    "whatItIs": "A percentage is a ratio that compares a number specifically out of a set of 100.",
-    "howToSolve": "To find 30% of a number, convert the percentage into a decimal by moving the dot two places left ($0.30$). Then multiply the original number by $0.30$.",
-    "whyItWorks": "You put a universal mask over random shapes. By chopping every object into 100 identical pieces, comparing sizes becomes easy.",
-    "summary": "Percentages allow completely different sizes to share the exact same 100-piece grid."
+    "summary": "Percentages allow completely different sizes to share the exact same 100-piece grid.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "A percentage is a ratio that compares a number specifically out of a set of 100."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To find 30% of a number, convert the percentage into a decimal by moving the dot two places left ($0.30$). Then multiply the original number by $0.30$."
+      },
+      {
+        "label": "Why it works.",
+        "body": "You put a universal mask over random shapes. By chopping every object into 100 identical pieces, comparing sizes becomes easy."
+      }
+    ]
   },
   {
     "id": "percentageincreasedecrease",
@@ -250,10 +394,21 @@ export const level1Concepts: Concept[] = [
       "prompt": "A 100-unit square grid inflating outward, gaining 20 new external grid pixels snapping onto the rim. Minimalistic vector style, white background."
     },
     "aha": "Percentage increases add calculated modular blocks directly onto an existing structure.",
-    "whatItIs": "It calculates the exact amount a value grows or shrinks relative to its initial size.",
-    "howToSolve": "To increase 50 by 20%, multiply $50 \\times 1.20$. The '1' keeps the original value intact, while the '.20' calculates the brand new addition. The answer is 60.",
-    "whyItWorks": "Expansion snaps pieces directly onto the outside border. The shape widens evenly.",
-    "summary": "You dynamically scale the object based on how many extra 100-scale blocks fall away or attach."
+    "summary": "You dynamically scale the object based on how many extra 100-scale blocks fall away or attach.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "It calculates the exact amount a value grows or shrinks relative to its initial size."
+      },
+      {
+        "label": "How to solve.",
+        "body": "To increase 50 by 20%, multiply $50 \\times 1.20$. The '1' keeps the original value intact, while the '.20' calculates the brand new addition. The answer is 60."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Expansion snaps pieces directly onto the outside border. The shape widens evenly."
+      }
+    ]
   },
   {
     "id": "thecoordinatesgridxandy",
@@ -267,9 +422,20 @@ export const level1Concepts: Concept[] = [
       "prompt": "A floor grid made of square tiles. A bright red target dot rests on a crossing. Arrows trace the path along the bottom edge, then straight upward to the dot. Flat vector style, white background."
     },
     "aha": "The coordinate system is a rigid map locating points perfectly.",
-    "whatItIs": "It is a 2D mapping system that uses a horizontal and vertical number line to pinpoint locations.",
-    "howToSolve": "Plot the point $(3, -4)$. Start at the absolute center $(0,0)$. Move 3 units right on the X-axis. Move 4 units down on the Y-axis. Place your dot.",
-    "whyItWorks": "Coordinates pin shapes onto a flat floor. The grid stops a point from drifting away completely.",
-    "summary": "Coordinates act as an irrefutable GPS map pinning geometry perfectly down."
+    "summary": "Coordinates act as an irrefutable GPS map pinning geometry perfectly down.",
+    "proseSegments": [
+      {
+        "label": "What it is.",
+        "body": "It is a 2D mapping system that uses a horizontal and vertical number line to pinpoint locations."
+      },
+      {
+        "label": "How to solve.",
+        "body": "Plot the point $(3, -4)$. Start at the absolute center $(0,0)$. Move 3 units right on the X-axis. Move 4 units down on the Y-axis. Place your dot."
+      },
+      {
+        "label": "Why it works.",
+        "body": "Coordinates pin shapes onto a flat floor. The grid stops a point from drifting away completely."
+      }
+    ]
   }
 ];

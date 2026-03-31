@@ -91,7 +91,9 @@ test.describe('Lineum Book Renderer - Layout & Content Integrity', () => {
       // Calculate basic expected string length (stripped of LaTeX metadata for safer bounds)
       totalExpectedChars += concept.title.length;
       totalExpectedChars += concept.hook.length;
-      totalExpectedChars += concept.whatItIs.length;
+      for (const seg of concept.proseSegments) {
+        totalExpectedChars += seg.body.length;
+      }
     }
 
     // Measure total character output
@@ -243,5 +245,36 @@ test.describe('Lineum Book Renderer - Layout & Content Integrity', () => {
          await expect(btn).toHaveCSS('white-space', 'nowrap');
        }
     }
+  });
+
+  test('Content Integrity: 1:1 Generalization of Books 1, 2, and 3', async ({ page }) => {
+    // 1. Verify Foundations (Book 1) did NOT regress. It must keep its hardcoded legacy text formats.
+    await page.goto('/?book=foundations');
+    await page.click('text=Public Reader (Scroll)');
+    const b1Labels = page.locator('.prose-flow .run-in-header');
+    await expect(b1Labels.nth(0)).toHaveText('What it is.');
+    await expect(b1Labels.nth(1)).toHaveText('How to solve.');
+    await expect(b1Labels.nth(2)).toHaveText('Why it works.');
+
+    // 2. Verify Motion (Book 2) safely renders its custom markdown labels 1:1 without forcing Book 1 labels
+    await page.goto('/?book=motion');
+    await page.click('text=Public Reader (Scroll)');
+    const b2Labels = page.locator('.prose-flow .run-in-header');
+    expect(await b2Labels.count()).toBeGreaterThan(0);
+    // The first concept in Book 2 has "Consider this..."
+    await expect(b2Labels.first()).toHaveText('Consider this...');
+    
+    // Check that Motion's original hook text isn't lost
+    await expect(page.locator('body')).toContainText('Imagine dropping a raw block of wood');
+
+    // 3. Verify Structure (Book 3) safely renders its custom markdown labels
+    await page.goto('/?book=structure');
+    await page.click('text=Public Reader (Scroll)');
+    const b3Labels = page.locator('.prose-flow .run-in-header');
+    expect(await b3Labels.count()).toBeGreaterThan(0);
+    await expect(b3Labels.first()).toHaveText('Consider this...');
+    
+    // Check that Structure's original hook text isn't lost
+    await expect(page.locator('body')).toContainText('Imagine a glowing arrow that isn\'t just statically pointing');
   });
 });

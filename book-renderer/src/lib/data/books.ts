@@ -1,4 +1,6 @@
 import { level1Concepts } from './concepts';
+import { level2Concepts } from './books/motion';
+import { level3Concepts } from './books/structure';
 
 export type BookData = {
   id: string;
@@ -67,9 +69,13 @@ export const books: Record<string, BookData> = {
         hook: "Calculus is usually taught as abstract equations measuring invisible speeds. But motion is inherently visual. What happens when you track change entirely through expanding shapes and bending curves?",
         howToUse: "Observe how variables warp geometries over time."
       },
-      toc: [] // To be scaled later
+      toc: level2Concepts.map(c => ({
+        number: c.chapterNumber,
+        chapter: c.chapterTitle,
+        title: c.title
+      }))
     },
-    concepts: [],
+    concepts: level2Concepts,
     theme: {
       primaryColor: '#F59E0B',
       accentColor: '#10B981'
@@ -90,9 +96,13 @@ export const books: Record<string, BookData> = {
         hook: "Once you can describe numbers as blocks and motion as folding fields, you can build universes. This book applies visual mathematics to the physical rules holding our reality together.",
         howToUse: "Look at the tension and equilibrium in the diagrams."
       },
-      toc: [] // To be scaled later
+      toc: level3Concepts.map(c => ({
+        number: c.chapterNumber,
+        chapter: c.chapterTitle,
+        title: c.title
+      }))
     },
-    concepts: [],
+    concepts: level3Concepts,
     theme: {
       primaryColor: '#8B5CF6',
       accentColor: '#EC4899'

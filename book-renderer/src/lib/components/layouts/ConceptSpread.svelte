@@ -61,18 +61,14 @@
       </div>
 
       <div class="prose-flow" class:shifted-flow={layoutVariant === 'shifted'}>
-        <div class="prose-segment">
-          <h4 class="run-in-header">What it is.</h4>
-          <div class="prose-p">{@html renderMath(concept.whatItIs)}</div>
-        </div>
-        <div class="prose-segment">
-          <h4 class="run-in-header">How to solve.</h4>
-          <div class="prose-p">{@html renderMath(concept.howToSolve)}</div>
-        </div>
-        <div class="prose-segment">
-          <h4 class="run-in-header">Why it works.</h4>
-          <div class="prose-p">{@html renderMath(concept.whyItWorks)}</div>
-        </div>
+        {#if concept.proseSegments}
+          {#each concept.proseSegments as segment}
+            <div class="prose-segment">
+              <h4 class="run-in-header">{segment.label}</h4>
+              <div class="prose-p">{@html renderMath(segment.body)}</div>
+            </div>
+          {/each}
+        {/if}
       </div>
     {:else if layoutVariant === 'text-first'}
       <!-- VISUAL/WHAT FOCUS (RIGHT) -->
@@ -85,18 +81,14 @@
       </div>
 
       <div class="prose-flow">
-        <div class="prose-segment">
-          <h4 class="run-in-header">What it is.</h4>
-          <div class="prose-p">{@html renderMath(concept.whatItIs)}</div>
-        </div>
-        <div class="prose-segment">
-          <h4 class="run-in-header">How to solve.</h4>
-          <div class="prose-p">{@html renderMath(concept.howToSolve)}</div>
-        </div>
-        <div class="prose-segment">
-          <h4 class="run-in-header">Why it works.</h4>
-          <div class="prose-p">{@html renderMath(concept.whyItWorks)}</div>
-        </div>
+        {#if concept.proseSegments}
+          {#each concept.proseSegments as segment}
+            <div class="prose-segment">
+              <h4 class="run-in-header">{segment.label}</h4>
+              <div class="prose-p">{@html renderMath(segment.body)}</div>
+            </div>
+          {/each}
+        {/if}
       </div>
     {/if}
 
