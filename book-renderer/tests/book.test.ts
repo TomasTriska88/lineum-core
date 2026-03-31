@@ -157,8 +157,7 @@ test.describe('Lineum Book Renderer - Layout & Content Integrity', () => {
   });
 
   test('Print mode establishes CSS page breaks correctly', async ({ page }) => {
-    await page.goto('/');
-    await page.click('text=Internal QA Print Bounds');
+    await page.goto('/?export=true');
     const pages = page.locator('.page');
     // 4 Front matter pages + 15 spreads (30 pages) = 34 pages expected
     const count = await pages.count();

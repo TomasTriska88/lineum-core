@@ -12,7 +12,6 @@
 <div class="page right-page title-page" style="border-left-color: {activeBook.theme.primaryColor}">
   <div class="inner-content">
     <div class="front-meta">
-       <span class="lineum-brand">LINEUM SERIES</span>
        <span class="version-brand">VOLUME {activeBook.id === 'foundations' ? '1' : activeBook.id === 'motion' ? '2' : '3'}</span>
     </div>
     <div class="title-block">

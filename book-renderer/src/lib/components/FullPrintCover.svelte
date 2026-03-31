@@ -76,13 +76,8 @@
     <!-- FRONT COVER -->
     <div class="front-cover panel">
       <div class="safe-zone">
-         <div class="branding" style="color: {activeBook.theme.primaryColor}">
-            LINEUM SERIES
-         </div>
          <h1 class="main-title">{activeBook.frontMatter.title}</h1>
          <h2 class="sub-title">{activeBook.frontMatter.subtitle}</h2>
-         
-         <div class="author-label">TOMAS TRISKA</div>
       </div>
     </div>
   </div>
@@ -150,17 +145,11 @@
   }
 
   /* FRONT COVER TYPOGRAPHY */
-  .branding {
-    font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.3em; color: #0EA5E9; margin-bottom: auto;
-  }
   .main-title {
     font-family: var(--font-sans); font-size: 3.5rem; font-weight: 900; letter-spacing: -0.05em; color: #0F172A; line-height: 1; margin: 0 0 1rem 0; text-transform: uppercase; word-break: break-word; text-wrap: wrap; max-width: 10ch;
   }
   .sub-title {
     font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300; font-style: italic; color: #334155; text-wrap: pretty; line-height: 1.4; margin: 0 0 auto 0; word-break: break-word;
-  }
-  .author-label {
-    font-family: var(--font-mono); font-size: 0.875rem; letter-spacing: 0.1em; color: #475569; text-transform: uppercase;
   }
 
   /* BACK COVER TYPOGRAPHY */

@@ -127,4 +127,13 @@
  .print-mode .spread-preview {
    flex-direction: column;
  }
+ 
+ .spread-preview-wrapper {
+   transform: scale(var(--responsive-scale, 1));
+   transform-origin: top center;
+   transition: transform 0.2s ease;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+ }
 </style>

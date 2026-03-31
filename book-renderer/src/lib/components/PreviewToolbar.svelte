@@ -14,10 +14,6 @@
     <button on:click={() => mode = 'spread'} class:active={mode === 'spread'} class="view-btn">Public Reader (Spread)</button>
     <button on:click={() => mode = 'epub'} class:active={mode === 'epub'} class="view-btn">Public Reader (Scroll)</button>
   </div>
-  
-  <div class="mode-group qa-modes glass-pill">
-    <button on:click={() => mode = 'qa-print'} class="print-btn" title="Internal diagnostic mode showing flat DOM for automated scaling/page breaks">Internal QA Print Bounds</button>
-  </div>
 </div>
 
 <style>
@@ -76,14 +72,7 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
   
-  .print-btn { 
-    color: #60A5FA; 
-  }
-  
-  .print-btn:hover { 
-    background: rgba(96, 165, 250, 0.15); 
-    color: #93C5FD;
-  }
+
   
   .book-pill {
     font-size: 0.75rem;
