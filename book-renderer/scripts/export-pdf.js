@@ -139,6 +139,8 @@ async function runBatch() {
     try {
       // Safely delete the full tree, capturing Windows EBUSY exceptions if files are locked
       fs.rmSync(exportsDir, { recursive: true, force: true });
+      // Pause to allow Windows NTFS kernel to fully flush 'Delete Pending' locks before recreation
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 500);
     } catch (e) {
       console.error(`❌ CRITICAL ERROR: Cannot wipe exports directory. Is a PDF or folder open? Error: ${e.message}`);
       process.exit(1);

@@ -1,4 +1,4 @@
-import { level1Concepts } from './concepts';
+import { level1Concepts } from './books/foundations';
 import { level2Concepts } from './books/motion';
 import { level3Concepts } from './books/structure';
 

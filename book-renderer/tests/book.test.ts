@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { level1Concepts } from '../src/lib/data/concepts';
+import { level1Concepts } from '../src/lib/data/books/foundations';
 
 const lengthOfConcepts = level1Concepts.length;
 
