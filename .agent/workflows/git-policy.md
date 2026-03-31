@@ -8,6 +8,7 @@ description: How to manage git branches and commits
 
 **CRITICAL RULE 1:** NEVER WORK DIRECTLY ON `main`.
 **CRITICAL RULE 2 (NO AUTO-PUSH):** The AI Agent is strictly FORBIDDEN from ever executing `git push` automatically on its own initiative. However, if the human user EXPLICITLY commands a push (e.g., "push prosím", "push please"), the agent MUST execute the `git push` command immediately.
+**CRITICAL RULE 3 (PULL REQUESTS):** NEVER run interactive GitHub CLI commands like `gh pr create` directly, as they hang waiting for GUI/Terminal input. To create a pull request, either output the direct `https://github.com/[repo]/compare/main...dev?expand=1` URL for the user to click, or explicitly use `gh` with strict non-interactive flags (e.g., `--fill`) if you are absolutely certain it won't prompt.
 
 1.  **BEFORE YOU WRITE ANY CODE:** Check the current branch:
     ```bash
