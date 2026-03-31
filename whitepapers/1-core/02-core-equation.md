@@ -1,9 +1,10 @@
 **Title:** Lineum Appendix – Equation History
-**Document ID:** core-equation-history
-**Document Type:** Core
-**Version:** 1.1.0
+# Core Engine Dynamics and Mathematical History
+**Document ID:** 02-core-equation
+**Status:** Canonical Source of Truth (Eq-1 through Eq-9)
+**Version:** 1.2.11 (April 2026)
 **Status:** Draft
-**Date:** 2025-11-14
+**Date:** 2026-03-31
 
 **Relates to:** `lineum-core.md` §3  
 **Equation versions:** V1–V7 (canonical: V7)  
@@ -172,9 +173,29 @@ Version 9 shifted focus from particle formation to macro-gravitational limits (C
 - **Hawking Radiation:** At the extreme shear boundary of a deep $\phi$-trap, the steep gradient `grad_mag` geometrically forces the spontaneous generation of $\psi$ virtual pairs. Those with enough outward kinetic diffusion escape, leading to the gradual geometric unwinding (evaporation) of the $\phi$ tension well.
 - **Astrophysical Jets:** When a $\phi$-trap becomes maximally saturated and can dig no deeper (`PHI_CAP`), the immense $\nabla^2\psi$ repulsive diffusion violently overcomes the saturated in-flow, blowing the excess $\psi$ energy outward along the topological axis of rotation, creating collimated relativistic back-pressure Jets.
 
+### 🔹 Version 9.1 – Eq9 Runtime Refinement (SoftAbs Escape Fold)
+
+Recent development of the Eq9 runtime identified instability under extreme boundary saturation ($\varphi \rightarrow \text{phi\_cap}$). Previously, numerical bounding relied exclusively on a destructive `clamp` operation.
+- **Initial hypothesis & origins:** The intuition for an "absolute difference" smooth-fold originated from the proprietary OEA structural generator, where an absolute-difference operator successfully structures high-density phase fields. This inspired tests within the Lineum core, with the initial hypothesis that a similar fold principle could regulate complex phase interference ($\psi$ collisions) globally.
+- **Refuted dead branch:** Regression tests definitively refuted applying this globally to $\psi$; diffusion flattened the sharp folds, cleanly causing energy loss rather than achieving spatial stability.
+- **Validated mechanism:** The `SoftAbs` fold operator was instead newly validated in the Eq9 escape channel ($\varphi$ overflow limits) under heavy saturation conditions. 
+
+**Canonical conclusion:** The validated principle is a local smooth-fold in the escape channel, not a global absolute-difference mechanism.
+
 ## 4. Discussion
 
-This progression shows a shift from a minimalistic ψ–φ interaction model to a more versatile three-field system capable of sustaining richer emergent structures **within the simulation**. Each modification was driven by simulation feedback and aimed at increasing stability, scalability, and interpretability of the model, not by fitting any specific physical constant or established gravitational law.
+This progression shows a shift from a minimalistic ψ–φ interaction model to a more versatile three-field system capable of sustaining richer emergent structures within the simulation. This document strictly registers the mathematical lineage and explicit additions/removals of terms in the simulation loop. The emergent philosophical/physical interpretations of these terms are maintained under the `2-cosmology` directory to prevent mixing numerics with human analogy.
+
+---
+
+## Appendix A: Phenomenological Mapping (Force Analogies)
+
+The emergent dynamics of Lineum produce phenomena analogous to classical forces. This is strictly phenomenological (an analogy, not a demonstrated isomorphism to the Standard Model) and serves as a historical tracking notation of what the model does and does not replicate.
+
+- **Gravity [Confirmed Analogy]:** The drift term $+ \nabla \varphi$ acts as a macroscopic attractor. Gravity in Lineum is modeled fundamentally as $\Phi$-gradient guided motion (sink geometry), directing $\psi$ excitations to roll into regions of high historical tension. (Historically reduced to mere "phase speed slow-down/light bending", it is now verified as the unified engine of macroscopic basin capture).
+- **Strong-like [Partial Analogy]:** Topological smoothing/diffusion ($\nabla^2$) and phase-interference act as structural scaffolds enforcing confinement. Cohesion is maintained by *Dynamically Maintained Confinement* (amplitude digging the sink, symmetrical phase-locking preserving internal barriers). **Status:** *Confinement- and decay-like behaviors are robustly reproduced under canonical continuous regimes, but clean QCD-like hadronization (string-breaking into pair-creation) is comprehensively falsified.* In the canonical continuous Eq-4 model, separation tension resolves via symmetric restoring forces or radiative phase noise. Active non-linear boundary limits (Eq8 gradient tears, Eq9 SoftAbs jets) were also explicitly tested and proved to actively vaporize composite structure scaffolds into topological chaos rather than nucleating new particle pairs.
+- **Weak-like [Confirmed Analogy]:** Phenomenological decay and structural collapse are primarily governed by *Phase-lock failure / Symmetry-loss decay*, exacerbated by the damping factor $\delta$. Detuning localized frequencies ruins the interference barriers, causing bound structures to unravel and radiatively shed energy.
+- **Electromagnetism [Open / Unverified]:** While structural parameters (spin/topological charge via phase winding) represent local topological features, formal mapping of these chiral states into a macroscopic, distance-mediated ($1/r^2$) attractive or repulsive force remains the primary open frontier for validation.
 
 ## 5. Versioning & Changelog
 
@@ -183,6 +204,46 @@ This progression shows a shift from a minimalistic ψ–φ interaction model to 
 - **MAJOR**: structural changes that alter interpretation of historical entries.
 - **MINOR**: new archival variants, added rationale, artifacts.
 - **PATCH**: wording/formatting fixes.
+
+- **v1.2.9 (March 2026):** Verified Eq9 Absolute Difference vs SoftAbs limit stability paths under phase-locked interference geometries.
+- **v1.2.10 (March 2026):** Confirmed Generalized Symmetry Principle and Formation Basin (Self-Assembly) Attractors across multiple phase states.
+- **v1.2.11 (April 2026):** Concluded the comprehensive *Hadronization and Relocalization Audit*. Tests universally confirmed that extreme spatial pulling, high-energy collisions, and explicitly triggered non-linear boundaries (Eq8 active fracture / Eq9 active SoftAbs limits) all fail to nucleate clean particle pairs. They invariably act as structural vaporizers, decaying confinement into massive thermodynamic phase noise. The Strong-like force mapping in Appendix A was amended to formally reject the string-breaking/hadronization hypothesis under all known Lineum regimes.
+
+**1.2.9 — 2026-04-01**
+
+- Conducted *Generalized Symmetry Audit*. Confirmed that $120^\circ$ (triad), $180^\circ$ (pair), and $90^\circ$ (quad) uniformly distributed phase-locks define the optimal structural frameworks across N-node bound geometries, preserving separation via destructive interference rather than depth maximization. Sanity checked documentation tone.
+
+**1.2.8 — 2026-04-01**
+
+- Validated *Three-Phase Synchronization Hypothesis*. Verified that the exactly symmetric $120^\circ$ phase offset is mechanically privileged (maximizes structural $\Phi$ barriers through perfect destructive interference, preventing rotational collapse).
+
+**1.2.7 — 2026-04-01**
+
+- Outlined the *Sink/Attractor Hypothesis*. Verified that bound triads behave as dominant macro-sinks, cannibalizing local environmental $\Psi$ amplitude to dynamically deepen and tighten their confinement rather than nucleating separate standalone vortices.
+
+**1.2.6 — 2026-04-01**
+
+- Outlined the *Confinement Motor* mechanism (Amplitude acting as metabolic digging motor, Phase interference as structural barrier scaffold). Confinement requires absolute harmonic resonance, with frequency detuning identified as a structural failure state.
+
+**1.2.5 — 2026-04-01**
+
+- Conducted Active Maintenance audit. Refined structural locking model from strictly passive geometry yielding to *Dynamically Maintained Confinement* (triads behave as active, sustained phase storms rather than rigid or strictly solid geometrical bound states).
+
+**1.2.4 — 2026-03-31**
+
+- Validated *anisotropic restoring geometry* in bound triads. Confirmed that structural confinement is radially stiff (deep pockets) but tangentially moderate (shallow angular basin), formally ruling out absolute rigidity.
+
+**1.2.3 — 2026-03-31**
+
+- Added historical context regarding the "Vortex Deformation & Gear" hypothesis under the Strong-like Force mapping, formally reclassifying it as a *Relative-Geometry Stabilization* problem.
+
+**1.2.2 — 2026-03-31**
+
+- Relocated Force Analogies from Core Whitepaper into Appendix A to safely quarantine partial analogies from rigorous numerical claims.
+
+**1.2.1 — 2026-03-31**
+
+- Adds Version 9.1 (Eq9 Runtime Refinement) documenting the origin, validation, and restricted scope of the SoftAbs Escape Fold.
 
 **1.2.0 — 2026-03-05**
 
