@@ -14,7 +14,7 @@ const configs = {
     width: '158mm', // 152mm + 3mm left + 3mm right
     height: '235mm', // 229mm + 3mm top + 3mm bottom
     directory: 'exports/print-global',
-    filename: 'Foundations-Print6x9.pdf',
+    filenameSuffix: 'Print6x9.pdf',
     printBackground: true,
     scale: 1
   },
@@ -22,7 +22,7 @@ const configs = {
     width: '182mm', // 176mm + 3mm left + 3mm right
     height: '256mm', // 250mm + 3mm top + 3mm bottom
     directory: 'exports/print-eu',
-    filename: 'Foundations-PrintB5.pdf',
+    filenameSuffix: 'PrintB5.pdf',
     printBackground: true,
     scale: 1 
   },
@@ -30,11 +30,13 @@ const configs = {
     width: '152mm',
     height: '229mm',
     directory: 'exports/ebook',
-    filename: 'Foundations-Digital.pdf',
+    filenameSuffix: 'Digital.pdf',
     printBackground: true,
     scale: 1
   }
 };
+
+const defaultBooks = ['foundations', 'motion', 'structure'];
 
 const activeTargets = specificTarget === 'all' 
   ? Object.keys(configs) 
@@ -47,8 +49,10 @@ for (const t of activeTargets) {
   }
 }
 
-async function exportTarget(target) {
+async function exportTarget(target, bookId) {
   const conf = configs[target];
+  const bookNameCap = bookId.charAt(0).toUpperCase() + bookId.slice(1);
+  const targetFilename = `${bookNameCap}-${conf.filenameSuffix}`;
   
   // Ensure export directories exist
   const outDirStr = path.join(process.cwd(), conf.directory);
@@ -57,12 +61,12 @@ async function exportTarget(target) {
   }
 
   console.log(`\n================================`);
-  console.log(`Initializing PDF Production Pipeline [Target: ${target}]...`);
+  console.log(`Initializing PDF Production Pipeline [Book: ${bookNameCap} | Target: ${target}]...`);
   
   const browser = await chromium.launch();
   const page = await browser.newPage();
   
-  const devServerUrl = `http://localhost:5173/?export=true&format=${target}`;
+  const devServerUrl = `http://localhost:5173/?export=true&format=${target}&book=${bookId}`;
   console.log(`Loading Book Architecture from ${devServerUrl}`);
   
   await page.goto(devServerUrl, { waitUntil: 'networkidle' });
@@ -70,8 +74,8 @@ async function exportTarget(target) {
   // Extra pause for KaTeX font loading (embedded fonts synchronization factor)
   await page.waitForTimeout(2000);
   
-  const outFile = path.join(outDirStr, conf.filename);
-  console.log(`Generating physical pages to ${conf.filename} (Dimensions: ${conf.width} x ${conf.height})...`);
+  const outFile = path.join(outDirStr, targetFilename);
+  console.log(`Generating physical pages to ${targetFilename} (Dimensions: ${conf.width} x ${conf.height})...`);
   
   await page.pdf({
     path: outFile,
@@ -87,11 +91,11 @@ async function exportTarget(target) {
 
   // Export Cover
   console.log(`Loading Cover Assembly...`);
-  const coverUrl = `http://localhost:5173/?cover=true&format=${target}`;
+  const coverUrl = `http://localhost:5173/?cover=true&format=${target}&book=${bookId}`;
   await page.goto(coverUrl, { waitUntil: 'networkidle' });
   await page.waitForTimeout(1000);
   
-  const coverFile = path.join(outDirStr, `Cover-${conf.filename}`);
+  const coverFile = path.join(outDirStr, `Cover-${targetFilename}`);
   
   // Covers have dynamic widths, we can let Playwright use preferCSSPageSize if possible
   // However, Playwright 'preferCSSPageSize' requires @page CSS rules. Since our Svelte DOM sets specific mm pixels on .full-print-cover,
@@ -119,18 +123,12 @@ async function exportTarget(target) {
 }
 
 async function runBatch() {
-  for (const t of activeTargets) {
-    await exportTarget(t);
+  for (const book of defaultBooks) {
+    for (const t of activeTargets) {
+      await exportTarget(t, book);
+    }
   }
-  console.log('✅ ALL EXPORTS FINISHED');
-
-  console.log('📦 Zipping all exports to exports/Lineum-Foundations-Release.zip...');
-  try {
-    execSync('powershell -Command "Compress-Archive -Path exports/print-global, exports/print-eu, exports/ebook -DestinationPath exports/Lineum-Foundations-Release.zip -Force"', { stdio: 'inherit' });
-    console.log('✅ Archive created successfully in exports folder!');
-  } catch (err) {
-    console.error('Failed to create ZIP archive.', err.message);
-  }
+  console.log('\n🌟 ALL BOOKS EXPORTED FINISHED');
 }
 
 runBatch().catch(console.error);

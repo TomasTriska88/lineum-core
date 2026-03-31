@@ -1,25 +1,27 @@
 <script lang="ts">
-  import { frontMatter } from '$lib/data/frontMatter';
+  import type { BookData } from '$lib/data/books';
   import { renderMath } from '$lib/utils/mathRender';
   
+  export let activeBook: BookData;
+
   // Aggregate chapter names for TOC
-  const chapters = Array.from(new Set(frontMatter.toc.map(t => t.chapter)));
+  $: chapters = Array.from(new Set(activeBook.frontMatter.toc.map(t => t.chapter)));
 </script>
 
 <!-- TITLE PAGE -->
-<div class="page right-page title-page">
+<div class="page right-page title-page" style="border-left-color: {activeBook.theme.primaryColor}">
   <div class="inner-content">
     <div class="front-meta">
-       <span class="lineum-brand">FOUNDATIONS // OEA</span>
-       <span class="version-brand">BOOK 1</span>
+       <span class="lineum-brand">LINEUM SERIES</span>
+       <span class="version-brand">VOLUME {activeBook.id === 'foundations' ? '1' : activeBook.id === 'motion' ? '2' : '3'}</span>
     </div>
     <div class="title-block">
-      <h1>{frontMatter.title}</h1>
-      <h2>{frontMatter.subtitle}</h2>
+      <h1>{activeBook.frontMatter.title}</h1>
+      <h2>{activeBook.frontMatter.subtitle}</h2>
     </div>
     <div class="colophon-block">
-       <div class="prose-p">The Official Documentation for Flow Geometry</div>
-       <div class="spine-anchor"></div>
+       <div class="prose-p">The Official Documentation for {activeBook.frontMatter.title}</div>
+       <div class="spine-anchor" style="background: {activeBook.theme.accentColor}"></div>
     </div>
   </div>
 </div>
@@ -29,10 +31,10 @@
   <div class="inner-content bottom-heavy">
     <div class="legal-text">
        <h4 class="run-in-header">Imprint / Legal</h4>
-       <div class="prose-p"><strong>Published by:</strong> {frontMatter.imprint.publisher}</div>
-       <div class="prose-p">{frontMatter.imprint.copyright}</div>
-       <div class="prose-p">{frontMatter.imprint.license}</div>
-       <div class="prose-p"><strong>ISBN:</strong> {frontMatter.imprint.isbn}</div>
+       <div class="prose-p"><strong>Published by:</strong> {activeBook.frontMatter.imprint.publisher}</div>
+       <div class="prose-p">{activeBook.frontMatter.imprint.copyright}</div>
+       <div class="prose-p">{activeBook.frontMatter.imprint.license}</div>
+       <div class="prose-p"><strong>ISBN:</strong> {activeBook.frontMatter.imprint.isbn}</div>
     </div>
   </div>
 </div>
@@ -56,18 +58,18 @@
 <div class="page left-page preface-page">
   <div class="inner-content">
     <div class="page-header">
-       <h3 class="meta-subtitle">Preface</h3>
+       <h3 class="meta-subtitle" style="color: {activeBook.theme.primaryColor}">Preface</h3>
        <h2 class="concept-title">Hook Intro</h2>
     </div>
     
     <div class="prose-segment">
-      <h4 class="run-in-header">Why School Mathematics Fails You</h4>
-      <div class="prose-p">{frontMatter.preface.hook}</div>
+      <h4 class="run-in-header" style="--accent: {activeBook.theme.primaryColor}">Context & Method</h4>
+      <div class="prose-p">{activeBook.frontMatter.preface.hook}</div>
     </div>
 
     <div class="prose-segment" style="margin-top: 4rem;">
-      <h4 class="run-in-header">How to Use This Book</h4>
-      <div class="prose-p">{frontMatter.preface.howToUse}</div>
+      <h4 class="run-in-header" style="--accent: {activeBook.theme.primaryColor}">How to Use This Book</h4>
+      <div class="prose-p">{activeBook.frontMatter.preface.howToUse}</div>
     </div>
   </div>
 </div>

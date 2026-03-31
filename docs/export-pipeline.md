@@ -1,6 +1,16 @@
 # Print Export Pipeline
 
-This document catalogs the node-based rendering orchestration script used to bridge Svelte Web DOMs into static, DTP-ready PDF distributions.
+This document catalogs the node-based rendering## The Architecture Disconnect
+
+**CRITICAL RULE:** The public-facing Web Viewer (`+page.svelte` in `spread`/`epub` modes) is structurally separated from the rigorous Print QA Mode. 
+The PDF export scripts strictly bypass the interactive DOM and enforce real millimeter bounding boxes for generating print-ready `Foundations`, `Motion`, and `Structure` volumes.
+
+### Structural Flow
+1. **Multi-Book Loading**: The pipeline evaluates `?book=[id]` to compile isolated book payloads (`foundations`, `motion`, `structure`).
+2. **Cover Render**: The Full Wrap Paperback format (Back Cover + Spine + Front Cover) calculates spine thickness dynamically based on total content length, rendering natively without interactive CSS rules. 
+3. **Interior Iteration**: The viewer natively supports `<FrontMatter />` and `<BackMatter />` as bookends to the `<ConceptSpread />` generation array.
+2. **QA Print Mode (`viewMode="qa-print"`):** An internal diagnostic debug tool for verifying page breaks, bleed zones, and explicit page numbering prior to PDF compilation.
+3. **PDF Export:** The immutable, final deployment artifact generated headlessly via Playwright. **The web viewer is NOT a substitute for the printed PDF.**
 
 ## Run Architecture
 

@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { frontMatter } from '$lib/data/frontMatter';
+  import type { BookData } from '$lib/data/books';
 
+  export let activeBook: BookData;
   // Config parameters for physical printing logic
   export let totalPages: number = 34; // This is dynamic based on concepts * 2 + 4 front matter
   export let paperThicknessMm: number = 0.05; // Standard interior paper
@@ -52,16 +53,16 @@
     <!-- BACK COVER -->
     <div class="back-cover panel">
       <div class="safe-zone">
-        <h3 class="subtitle">{frontMatter.subtitle}</h3>
-        <p class="blurb">{frontMatter.preface.hook}</p>
+        <h3 class="subtitle">{activeBook.frontMatter.subtitle}</h3>
+        <p class="blurb">{activeBook.frontMatter.preface.hook}</p>
         
         <div class="bottom-group">
           <div class="isbn-box">
              <div class="barcode">|||||| ||| || |||</div>
-             <span>{frontMatter.imprint.isbn}</span>
+             <span>{activeBook.frontMatter.imprint.isbn}</span>
           </div>
           <div class="author-block">
-             <span>{frontMatter.imprint.copyright}</span>
+             <span>{activeBook.frontMatter.imprint.copyright}</span>
           </div>
         </div>
       </div>
@@ -69,17 +70,17 @@
 
     <!-- SPINE -->
     <div class="spine-strip">
-       <span class="spine-title">{frontMatter.title}</span>
+       <span class="spine-title">{activeBook.frontMatter.title}</span>
     </div>
 
     <!-- FRONT COVER -->
     <div class="front-cover panel">
       <div class="safe-zone">
-         <div class="branding">
-            LINEUM
+         <div class="branding" style="color: {activeBook.theme.primaryColor}">
+            LINEUM SERIES
          </div>
-         <h1 class="main-title">{frontMatter.title}</h1>
-         <h2 class="sub-title">A Simple Way to Finally<br/>Understand Math Through Shapes.</h2>
+         <h1 class="main-title">{activeBook.frontMatter.title}</h1>
+         <h2 class="sub-title">{activeBook.frontMatter.subtitle}</h2>
          
          <div class="author-label">TOMAS TRISKA</div>
       </div>
@@ -153,10 +154,10 @@
     font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.3em; color: #0EA5E9; margin-bottom: auto;
   }
   .main-title {
-    font-family: var(--font-sans); font-size: 4rem; font-weight: 800; letter-spacing: -0.05em; color: #0F172A; text-wrap: balance; line-height: 1; margin: 0 0 1rem 0;
+    font-family: var(--font-sans); font-size: 3.5rem; font-weight: 900; letter-spacing: -0.05em; color: #0F172A; line-height: 1; margin: 0 0 1rem 0; text-transform: uppercase; word-break: break-word; text-wrap: wrap; max-width: 10ch;
   }
   .sub-title {
-    font-family: var(--font-serif); font-size: 1.25rem; font-weight: 400; font-style: italic; color: #334155; text-wrap: balance; line-height: 1.4; margin: 0 0 auto 0;
+    font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300; font-style: italic; color: #334155; text-wrap: pretty; line-height: 1.4; margin: 0 0 auto 0; word-break: break-word;
   }
   .author-label {
     font-family: var(--font-mono); font-size: 0.875rem; letter-spacing: 0.1em; color: #475569; text-transform: uppercase;

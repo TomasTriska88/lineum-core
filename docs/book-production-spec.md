@@ -20,7 +20,14 @@ Target market: European Academic/Technical Distribution.
 
 ## 2. Cover Architecture & Spine Math
 
-The cover is rendered as a single continuous wide layout integrating the Back Cover, Spine, and Front Cover.
+### Full Wrap Paperback Architecture
+The cover is rendered as a **single continuous flat layout** designed strictly for Paperback Print on Demand (not a hardback wrapper or dust jacket).
+It integrates:
+- **Back Cover** (Left)
+- **Spine** (Center)
+- **Front Cover** (Right)
+
+All three components are exported as one contiguous PDF arch.
 
 ### Spine Calculation
 Because page counts will exceed 120+ pages, spine width cannot be static.

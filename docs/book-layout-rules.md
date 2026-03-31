@@ -31,8 +31,16 @@ Page numbers (folios) map purely to internal engine indexes via the CSS `.page-n
 - **Typography:** Primary text (body, explanations) enforces a Serif font for prolonged print readability. Line lengths are strictly bounded to `max-width: 65ch` for optimal reading rhythm.
 - **Margins:** Margins dynamically lock absolute bounding boxes via `app.css`. The *inner* margin (Spine side) must always exceed the outer margin (e.g., 25mm inner, 15mm outer) to safeguard text from physical binding cuts.
 - **Strict Overflow Control (Zero-Spill Policy):** All global text is enforced by `overflow-wrap: break-word` and `word-break: break-word` to guarantee zero horizontal or vertical content spill. 
-- **DOM Validation:** Playwright automated tests actively calculate `Element.getBoundingClientRect()` dynamically for every `.inner-content` box against its parent `.page` boundary. Any layout break or text overflow fails the CI pipeline immediately.
+- To guarantee stability, the Playwright layout tests enforce strict text truncation rules:
+- Inner text blocks (`.prose-p`) must dynamically wrap gracefully.
+- The `Layout Overflow Test` extracts physical constraints via `.boundingBox()`.
+- The `Truncation Check` explicitly tests whether `.scrollHeight > .clientHeight` to catch text cut-offs that overflow rules might hide.
 - **Equations:** (`KaTeX` integrations) are forced into `white-space: nowrap !important;` to avoid shattering formula blocks during natural paragraph wrapping.
+
+### 5. Multi-Book Architecture
+The system binds three distinct identities (`Foundations`, `Motion`, `Structure`) within a single unified layout tree. Books enforce unique color accents and conceptual assets while deriving structural sizing from the global scale.
+- `<FrontMatter />` creates the dynamic Title, Imprint, and Book Preface logic.
+- `<BackMatter />` enforces the "Next System" book-specific teaser.
 
 ## 4. Universal Image Prompts
 

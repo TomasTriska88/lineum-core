@@ -7,8 +7,8 @@
   <div class="inner-content">
     
     <div class="front-matter">
-       <span class="lineum-brand">FOUNDATIONS // OEA</span>
-       <span class="version-brand">BOOK 1</span>
+       <span class="lineum-brand">LINEUM SERIES</span>
+       <span class="version-brand">VOLUME 1</span>
     </div>
 
     <div class="title-block">
@@ -43,8 +43,9 @@
     justify-content: space-between;
     font-family: var(--font-mono);
     font-size: 0.875rem;
-    letter-spacing: 0.3em;
-    color: #94A3B8;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    color: #64748B;
     text-transform: uppercase;
   }
 
@@ -54,24 +55,25 @@
 
   h1 {
     font-family: var(--font-sans);
-    font-size: 6rem;
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    line-height: 0.95;
+    font-size: 6.5rem;
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    line-height: 0.9;
     color: #FFFFFF;
-    margin-bottom: 2rem;
-    text-wrap: balance;
+    margin-bottom: 2.5rem;
+    max-width: 12ch;
+    word-break: break-word; /* Strict break */
   }
 
   h2 {
     font-family: var(--font-serif);
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 300;
     font-style: italic;
-    color: #CBD5E1;
-    max-width: 25ch;
-    line-height: 1.4;
-    text-wrap: balance;
+    color: #94A3B8;
+    max-width: 22ch;
+    line-height: 1.35;
+    word-break: break-word; /* Strict break */
   }
 
   .colophon-block {

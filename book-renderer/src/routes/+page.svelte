@@ -1,20 +1,32 @@
 <script lang="ts">
-  import { level1Concepts } from '$lib/data/concepts';
+  import { books, type BookData } from '$lib/data/books';
   import PreviewToolbar from '$lib/components/PreviewToolbar.svelte';
   import FrontMatter from '$lib/components/FrontMatter.svelte';
   import ConceptSpread from '$lib/components/layouts/ConceptSpread.svelte';
   import FullPrintCover from '$lib/components/FullPrintCover.svelte';
+  import BackMatter from '$lib/components/BackMatter.svelte';
   import { onMount } from 'svelte';
 
-  let viewMode: 'single' | 'spread' | 'print' = 'spread';
+  let viewMode: 'epub' | 'spread' | 'qa-print' = 'spread';
   let isExportMode = false;
   let isCoverMode = false;
   let printFormat: 'ebook' | 'print-global' | 'print-eu' = 'ebook';
+  let clientWidth = 1600;
+  
+  // URL selected Book default to Foundations
+  let activeBook: BookData = books['foundations'];
+
+  // Svelte reactive derived scale for spread layout
+  $: scaleFactor = Math.min(1, clientWidth / 1700);
 
   onMount(() => {
     const params = new URLSearchParams(window.location.search);
+    const bId = params.get('book');
+    if (bId && books[bId]) {
+      activeBook = books[bId];
+    }
     if (params.get('export') === 'true') {
-      viewMode = 'single';
+      viewMode = 'epub'; // For ebooks layout
       isExportMode = true;
     }
     if (params.get('cover') === 'true') {
@@ -27,38 +39,51 @@
   });
 </script>
 
-<main class:print-mode={viewMode === 'print' || isExportMode}>
+<svelte:window bind:innerWidth={clientWidth} />
+
+<main class:print-mode={viewMode === 'qa-print' || isExportMode}>
   {#if !isExportMode}
-    <PreviewToolbar bind:mode={viewMode} />
+    <PreviewToolbar bind:mode={viewMode} activeBookId={activeBook.id} />
   {/if}
 
   <div class="book-preview-container {viewMode === 'spread' && !isExportMode ? 'spread-mode' : 'single-mode'} {isExportMode ? 'export-clean' : ''}">
     
     {#if isCoverMode}
-      <FullPrintCover mode={printFormat} />
+      <FullPrintCover mode={printFormat} {activeBook} />
     {:else}
       <!-- Front Matter (Handles its own 4 pages: Title, Imprint, TOC, Preface) -->
       {#if viewMode === 'spread'}
-        <div class="spread-preview">
-          <!-- Title & Imprint -->
-          <FrontMatter />
+        <div class="spread-preview-wrapper" style="--responsive-scale: {scaleFactor}">
+          <div class="spread-preview">
+            <FrontMatter {activeBook} />
+          </div>
         </div>
       {:else}
-        <FrontMatter />
+        <FrontMatter {activeBook} />
       {/if}
 
-      <!-- Concepts flow: StartPageNum = 5 because FrontMatter takes 4 pages -->
+      <!-- Concepts flow -->
       {#if viewMode === 'spread'}
-        {#each level1Concepts as concept, i}
-          <div class="spread-preview">
-             <ConceptSpread {concept} startPageNum={(i * 2) + 5} layoutVariant={i % 4 === 0 ? 'text-first' : (i % 3 === 0 ? 'shifted' : 'standard')} />
+        {#each activeBook.concepts as concept, i}
+          <div class="spread-preview-wrapper" style="--responsive-scale: {scaleFactor}">
+            <div class="spread-preview">
+               <ConceptSpread {concept} startPageNum={(i * 2) + 5} layoutVariant={i % 4 === 0 ? 'text-first' : (i % 3 === 0 ? 'shifted' : 'standard')} />
+            </div>
           </div>
         {/each}
+        
+        <!-- Back Matter Spread matching last single page and back matter -->
+        <div class="spread-preview-wrapper" style="--responsive-scale: {scaleFactor}">
+          <div class="spread-preview">
+             <div class="page left-page empty-page"></div>
+             <BackMatter {activeBook} />
+          </div>
+        </div>
       {:else}
-        {#each level1Concepts as concept, i}
-           <!-- In single mode, just render them consecutively -->
+        {#each activeBook.concepts as concept, i}
            <ConceptSpread {concept} startPageNum={(i * 2) + 5} layoutVariant={i % 4 === 0 ? 'text-first' : (i % 3 === 0 ? 'shifted' : 'standard')} />
         {/each}
+        <BackMatter {activeBook} />
       {/if}
     {/if}
 
