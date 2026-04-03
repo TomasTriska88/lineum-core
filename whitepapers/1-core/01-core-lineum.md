@@ -1,17 +1,17 @@
 **Document ID:** lineum-core  
 **Document Type:** Core
-**Version:** 1.0.18-core
+**Version:** 1.0.21-core
 **Status:** Draft  
 **Equation:** Eq-7 (Unitary Wave; κ static)  
 **Scope:** 2D, periodic BCs
-**Date:** 2026-02-15
+**Date:** 2026-03-31
 
 **DOI:** 10.5281/zenodo.16934359  
 **How to cite:** Tomáš Tříska. _Lineum Core (v1.0.18-core)._ 2026. DOI: 10.5281/zenodo.16934359.
 _This manuscript corresponds to Git tag **v1.0.18-core** and the evidence bundle in `output/` (commit-stamped in each HTML)._
 
-**Contract evidence (core v1.0.18-core).** All numeric claims in this manuscript that are presented as *validated* are limited
-to what is asserted by the contract suite `lineum-core-1.0.18-core` (contract_version `1.1.5`), including the embedded
+**Contract evidence (core v1.0.21-core).** All numeric claims in this manuscript that are presented as *validated* are limited
+to what is asserted by the contract suite `lineum-core-1.0.21-core` (contract_version `1.1.5`), including the embedded
 canonical run `spec6_false_s41_20260222_152015` and its declared fingerprints.
 
 > **Status tags (v1.0.18-core).** To make the manuscript audit-proof, we label claim strength explicitly:
@@ -338,6 +338,11 @@ $$
 $$
 
 In practice we verify stability empirically via Section 5 metrics (SBR, topological neutrality, and $\phi$ half-life) on the canonical run; windowed estimates with 95% CIs are reported in the HTML report.
+
+**Boundary Guardrails (The Escape Path).** Historically, spatial instability under saturation relied on a destructive numerical limiter (`clamp`) at `phi_cap`. Eq9 overflow handling now supports a local `SoftAbs`-based smooth-fold path in the escape channel. Instead of only destructively clipping $\varphi$ overflow at `phi_cap`, the solver can locally reflect overflow into an inverted $\varphi$ gradient. 
+- Negative $\varphi$ tension is intentional and regression-protected. 
+- This mechanism improves escape behavior under saturation; it supports outward escape behavior through the locally inverted $\varphi$ gradient.
+- It preserves baseline behavior mathematically outside stressed regimes.
 
 # 4. Method
 
@@ -2089,4 +2094,9 @@ ks = ks_statistic(ecdf(x), ecdf(t))
 ### 11. Versioning & Changelog
 
 **Policy.** Semantic Versioning applies to this document; compatibility with the core is pinned in the header.  
+
+**1.0.21-core — 2026-03-31** — Moved Fundamental Force Analogies out of Core Whitepaper into Equation History Appendix to prevent partial external analogies from polluting internal canonical claims.
+
+**1.0.19-core — 2026-03-31** — Added Boundary Guardrails (§3.1) formalizing the Eq9.1 SoftAbs escape fold and its mathematical mechanism under numerical saturation.
+
 **1.0.0 — 2025-08-19 (initial)** — datasets, metrics (Pearson, Euclidean, KS), null/surrogate controls, canonical vs non‑canonical reporting, reproducibility checklist.

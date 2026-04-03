@@ -17,6 +17,13 @@ The sections below are divided to first address **basic principles and critical 
 ### Phase 2: Commercial & Empirical Proofs
 2. **Commercial API & Products:** Build and stabilize commercial applications utilizing the updated core engine.
    - [ ] **PyPI Publishing:** Publish `lineum-core` to the public Python Package Index (pypi.org) to enable clean `pip install lineum_core` usage without direct `git+https` links in downstream products like OEA.
+   - [ ] **OEA Laboratory (Vlasta Mode):** Implement empirical discoveries from Vlasta's Gimp tests directly into the OEA WebGL generator.
+         - *Context:* Preserve 1:1 mathematical computation for infinite zoom. Do NOT use image "baking/caching" (which solves GPU framerate lag at 250+ layers but destroys the ability to zoom infinitely without pixelation).
+         - `[ ]` **Shader (Math Core):** Add `Absolute Difference (|A - B|)` blend mode to the recursive fractal loop. This replicates the hard "folding/origami" of the topological space rather than additive "clouds" or subtractive "black voids."
+         - `[ ]` **Shader (Color Core):** Add an iterative `Hue/Color Offset per Octave` (e.g., +20 hue shift per layer). This creates a topographic "depth map" revealing the geological age/rings of the crater formations.
+         - `[ ]` **UI Controls:** Add a UI toggle for "Blend Mode: Soft Additive vs. Absolute Difference" and a slider for "Iterative Hue Shift (0-360)".
+         - `[ ]` **Architecture Fix (Future):** OEA currently uses raw GPU Float32 precision, resulting in floating-point jitter at extreme micro-zooms. Add a task to port the `BigNum` CPU precision engine from `lineum-core` to the OEA laboratory for flawless microscopic stability.
+         - `[ ]` **Performance Status:** Officially document that FPS lag at 200+ layers is an expected GPU fill-rate limit (200 math loops per pixel per frame) and an acceptable trade-off to maintain pure real-time vector resolution.
 3. **Lab Verifications:** Add e2e numerical tests to protect the new engine features before writing any texts.
 
 ### Phase 3: Project Hygiene & Documentation
