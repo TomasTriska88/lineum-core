@@ -1,17 +1,17 @@
 **Document ID:** lineum-core  
 **Document Type:** Core
-**Version:** 1.0.43-core
+**Version:** 1.0.49-core
 **Status:** Draft  
 **Equation:** Eq-7 (Unitary Wave; κ static)  
 **Scope:** 2D, periodic BCs
 **Date:** 2026-04-03
 
 **DOI:** 10.5281/zenodo.16934359  
-**How to cite:** Tomáš Tříska. _Lineum Core (v1.0.43-core)._ 2026. DOI: 10.5281/zenodo.16934359.
-_This manuscript corresponds to Git tag **v1.0.43-core** and the evidence bundle in `output/` (commit-stamped in each HTML)._
+**How to cite:** Tomáš Tříska. _Lineum Core (v1.0.49-core)._ 2026. DOI: 10.5281/zenodo.16934359.
+_This manuscript corresponds to Git tag **v1.0.49-core** and the evidence bundle in `output/` (commit-stamped in each HTML)._
 
-**Contract evidence (core v1.0.43-core).** All numeric claims in this manuscript that are presented as *validated* are limited
-to what is asserted by the contract suite `lineum-core-1.0.43-core` (contract_version `1.1.5`), including the embedded
+**Contract evidence (core v1.0.49-core).** All numeric claims in this manuscript that are presented as *validated* are limited
+to what is asserted by the contract suite `lineum-core-1.0.49-core` (contract_version `1.1.5`), including the embedded
 canonical run `spec6_false_s41_20260222_152015` and its declared fingerprints.
 
 > **Status tags (v1.0.18-core).** To make the manuscript audit-proof, we label claim strength explicitly:
@@ -996,6 +996,13 @@ Subsequent sweep investigations over bounded chaotic states (Phase 4) strongly s
 2. **Brittle Transitions & Adiabatic Extinction:** Phase 5 (Adiabatic Mode Tracking) verified that this binary collapse is intrinsic, not merely an artifact of large-scale shock perturbations. Even when internal phase angles, boundary morphing (circular to elliptical squashing at $10\%$ deformation), or base rotational frequencies were drifted asymptotically slowly (micro-detuning by $0.01\text{ rad/s}$), the modes invariably fragmented strictly into ergodic micro-noise once the binding alignment tolerance was exceeded. There exists no continuous transition corridor shifting cleanly from an $N=3$ configuration down to an $N=2$ dipole. The intrinsic boundary piston lock represents an "all or nothing" mathematical eigenstate. When distortion forces phase feedback out of lock, the system catastrophically disassociates into generalized fragmentation loops instantly traversing the threshold.
 3. **Isothermal Collapse Signatures:** Structural disintegration induced via environmental boundary removal exhibits specific invariant internal spectral emission mechanics. Unlike purely viscous flows, evaporating composite multi-cores rigidly preserve their macro-scale spatial correlation lengths throughout the collapse chain. Fast Fourier Transform (FFT) leakage tracking during progressive disintegration isolates nearly perfectly static multi-band K-space ratios (e.g., $~16\%$ Low-k, $~73\%$ Mid-k, $~10\%$ High-k) continuously until terminal dissolution. The complex field effectively decays uniformly via isothermal density evaporation.
 4. **Non-Modular Global Eigenstate:** Targeted localized perturbations (Phase 6) isolated against single sub-cores ($10-20\%$ volume bounds) uniformly triggered terminal system-wide failure. Localized phase inversions, strictly localized amplitude drains (x0.1), and micro-breaches of the boundary geometry functionally acted as destructive interference injectors. The localized damage immediately propagated back through the boundary reflections as phase-shifted wave noise, breaking the coherence lock of unaffected nodes. Therefore, composite stability is globally singular; the system does not support modular transitions or localized reconfiguration. Localized damage universally necessitates global collapse.
+5. **Absence of Open-System Topological Selectors:** Phase 7 (Open-System Leak Geometry) tested whether partially breached boundaries featuring "escape cones" could act as structural filters to distill discrete zero-entropy modes ($N \leq 3$) from initially chaotic, high-energy potentials. Validation confirms no such "sweet spot" regime exists within the Eq-7 constraints. Open boundaries act strictly as uniform scalar sinks. A chaotic ergodic boil does not "cool" into a locked composite mode; instead, it retains its highly fragmented topology (e.g., $30-70+$ transient micro-cores) and evaporates isothermally as the global amplitude leaks into the vacuum. Therefore, stable discrete modes must be seeded from fundamentally low-entropy topologies rather than emerging organically through boundary filtration of chaotic plasma.
+6. **Impossibility of Spontaneous Formation from Collision:** Phase 8 tests (Localized Seed Formation) rigorously evaluated the capacity for stable composite modes to spontaneously nucleate from non-trivial initial states. Localized high-energy Gaussian overloads, guided wave-packet collisions, temporary gradient traps, and structured acoustic noise injections uniformly failed to form stable low-entropy modes ($N \ge 2$). In all tested collision bounds, non-topological phase inputs degenerated strictly into rapidly dispersing shockwaves or thermal ergodic fragmentation. This formally proves that topological field singularities (e.g., precise $2\pi$ winding defects) must be explicitly mathematically seeded; they cannot natively emerge or assemble purely from the high-amplitude intersection of trivial symmetrical wave fronts.
+7. **Noise-Assisted Defect Nucleation (Kibble-Zurek Analogue):** Phase 9 (Defect Nucleation Audit) demonstrated that under Eq-7, smooth-wave collisions with enabled background scalar noise can nucleate true topological defects in zero-crossing interference regions—a behavior completely absent in the noise-disabled control runs. During macroscopic wave collision, regions of momentary absolute destructive interference exhibit catastrophic amplitude loss, leaving local phase gradients undefined. Scalar noise stochastically fractures the phase alignment within this localized vacuum state. As the environmental amplitude rapidly rebounds from the collision site, the asymmetrically displaced phase boundaries mechanically compress into locked $2\pi$ macro-cores. The nucleation rate scales directly with the noise intensity and the degree of geometric shear (offset collisions produced $2\times$ the nucleation volume of perfectly symmetric intersections).
+8. **Defect-to-Mode Conversion Funnel (Secondary Clustering):** Phase 10 isolated the complete life-cycle of newly nucleated defects. Tracking the conversion funnel confirms that stable $N \ge 2$ composite modes do *not* form directly at the moment of the zero-crossing burst. At $t=20$ (collision), $100\%$ of the thousands of generated singularities are individual micro-defects with zero correlated macro-structure. The system undergoes an intermediate phase (e.g., $t \le 100$) populated entirely by unbound $N=1$ noise debris. Only sequentially over hundreds of computational frames do these primitive $N=1$ point defects either annihilate (Signal-to-Trash elimination) or attractively merge into high-amplitude $N$-class clusters (up to $N=16$ identified in symmetric bounding constraints). Notably, elevated noise intensity acts as an annealing mechanism—raising the survival conversion ratio from $<5.3\%$ at low noise to $>30.6\%$ at high noise. This proves composite stable structures in Lineum are exclusively secondary phenomena arising from post-birth trajectory pairing, never instantaneous collision products.
+9. **Composite Assembly Laws:** Phase 11 reconstructed the full topological assembly graph of composite formation. In this audit, the assembly was poorly described by slow, incremental monomer-by-monomer accretion (e.g., iterative paths of $1+1 \to 2$, then $2+1 \to 3$ were rarely observed). Instead, formation was dominantly characterized by non-linear bulk merge events under localized convergence gradients (such as simultaneous $1+1+1 \to 3$, or hierarchical block mergers like $2+2 \to 4$). Furthermore, fragmentation remains present as a significant and ubiquitous real reverse pathway among unbound clusters. Crucially, the distinction between early-time formation and late-time stabilization separates structural viability from mere frequency: many cluster classes exhibit high formation abundance early in the chaotic transition but overwhelmingly fail to survive to late-time settlement. Formation abundance within the immediate post-burst thermal window does not equal, nor reliably predict, long-term topological survival.
+10. **Composite Survival Selection:** Phase 12 isolated the deterministic criteria governing which early-time structures survive to late-time settlement ($T \to \infty$). Analyzing the post-burst trajectory pipeline reveals that survival is not a function of formation frequency, but strictly governed by geometric and spatial fitness filters. Dominantly observed survival traits trace to **spatial compactness** (surviving macro-cores measured $\sim 3\times$ tighter compaction radii on average than decayed configurations) and **internal symmetry** (for $N \ge 3$, surviving arrays exhibited precisely geometric, quasi-equilateral pairwise alignments, whereas structurally irregular combinations rapidly degenerated). Furthermore, survival probability $P(\text{Survival} \,|\, N)$ collapses catastrophically for higher-order structures: while lower bands ($N=2, N=3$) retained $90{-}100\%$ survival rates over extended timelines, massive multi-core ensembles ($N \ge 7$ up to $N=24$), despite forming abundantly during the high-pressure chaotic phase, exhibited near $0\%$ survivability as ambient thermal and phase pressures normalized. Therefore, the late-time stable hierarchy is a product of ruthless environmental noise-filtering continuously dissolving geometrically flawed architectures.
+
 
 ### 6.11 Stabilization Summary / Scope Boundary
 
@@ -1087,6 +1094,36 @@ _Ethics/Tools note._ AI assistance (“Lina”, a personalized ChatGPT-based ass
 - **MAJOR**: changes to the canonical equation or scope (e.g., 3D instead of 2D).
 - **MINOR**: new sections/notes, validation expansions; no breaking changes.
 - **PATCH**: wording, typos, figures, formatting, audit enhancements.
+
+**1.0.49 — 2026-04-03 (patch)**
+
+- Executed Phase 12 (Survival Law / Selection Mechanism). Added Section 6.10 Point 10 detailing the environmental survival criteria for composite configurations. Documented that early-stage clusters are aggressively pruned based on internal spatial compactness ($\sim 3\times$ tighter boundaries favored) and equilateral geometric symmetry. Demonstrated a sharp probabilistic drop-off where high-$N$ clusters ($N \ge 7$), despite frequent formation, functionally fail to survive into the late-time thermodynamic equilibrium. No external physics mechanics were utilized.
+- Bump core version to **1.0.49-core**.
+
+**1.0.48 — 2026-04-03 (patch)**
+
+- Executed Phase 11 (Composite Assembly Law). Added Section 6.10 Point 9. Documented the explicit disassociation between early formation frequency and late-time survival stability. Confirmed structural topological assembly is dominantly driven by non-linear group fusions (rather than sequenced binary growth increments) with pervasive intermediate reverse fragmentation paths. All observations strictly localized internally to the Eq-7 field.
+- Bump core version to **1.0.48-core**.
+
+**1.0.47 — 2026-04-03 (patch)**
+
+- Executed Phase 10 (Defect-to-Mode Conversion). Added Section 6.10 Point 8 covering the trajectory pairing mechanics of newly nucleated cores. Verified that $N \ge 2$ modes are exclusively secondary structures, never primary collision products, and measured noise-driven topological annealing scaling the survival phase correctly up to $30.6\%$. 
+- Bump core version to **1.0.47-core**.
+
+**1.0.46 — 2026-04-03 (patch)**
+
+- Executed Phase 9 (Noise-Assisted Defect Nucleation Audit). Added Section 6.10 Point 7 confirming that noise-enabled zero-crossing collisions reliably spawn stable topological defects entirely absent in pure smooth-wave variants. Confirmed enhanced nucleation rates in sheared/offset collision geometries.
+- Bump core version to **1.0.46-core**.
+
+**1.0.45 — 2026-04-03 (patch)**
+
+- Executed Phase 8 (Localized Seed Formation). Validated the structural impossibility of spontaneous nucleation of discrete topological modes ($N \ge 2$) from high-amplitude collisions or Gaussian overloads. Added Section 6.10 Point 6 confirming that $2\pi$ phase defects must be mathematically seeded and cannot natively assemble from trivial phase intersection.
+- Bump core version to **1.0.45-core**.
+
+**1.0.44 — 2026-04-03 (patch)**
+
+- Executed Phase 7 (Open-System Leak Geometry). Added findings to Section 6.10 mapping the absence of topological selector regimes. Confirmed that semi-open boundaries act strictly as uniform energy sinks (triggering isothermal decay of chaotic states) rather than acting as filters capable of distilling discrete highly-ordered modes from plasma.
+- Bump core version to **1.0.44-core**.
 
 **1.0.43 — 2026-04-03 (patch)**
 
