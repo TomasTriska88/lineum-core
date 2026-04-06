@@ -1,9 +1,13 @@
 # Appendix: Vortex Deformation, Shear Stress & Phase Locking
 **Document ID:** 07-core-ext-vortex-rigidity
-**Status:** Historical Context / Open Problem (Pending Proof 3)
+**Status:** Legacy / Deprecated (Eq-4 Context only; ref. Eq-11)
 **Domain:** Strong-like Force / Structural Coherence
 
 ## 1. The Core Problem: Rigidity in a Fluid Grid
+
+> [!WARNING]
+> **Deprecation Notice (April 2026)**
+> The hypotheses and structural properties described in this document apply explicitly to the deprecated `Eq-4` iteration, which contained continuous bridge-suppression phase mechanisms and visual alpha-thresholding logic. Audits of the current minimal baseline `Eq-11.1` have not found robust mechanisms for these structures (Triads, N>2 compositions) to survive compositing in an open vacuum under tested conditions, as they failed scaling invariance checks. The findings below are preserved strictly as historical development context and should not be cited as supported claims of the current continuous engine.
 Early Lineum simulations confirmed that multiple phase vortices (e.g., $+1, +1, -1$) naturally attract and bind together into stable composite structures known as Triads or Linons. However, while the *binding* proved mathematically robust, the *macroscopic rotation* of these structures revealed a physical paradox.
 
 Because Lineum operates as a continuous reaction-diffusion (fluid) topology rather than a simulation of classical rigid bodies, creating a macroscopic "proton" that spins like a solid CD disc presents a challenge. In a fluid, the inner radius rotates at a different angular velocity than the outer perimeter. 

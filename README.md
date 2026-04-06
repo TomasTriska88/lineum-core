@@ -1,6 +1,7 @@
 # Lineum™
 
-> **Emergence of stable localized excitations in discrete fields without physical constants.**
+> **"No Magic, Just Structure."**
+> Emergence of stable localized excitations in discrete fields without physical constants.
 
 Lineum is an open research project investigating whether particle-like structures ("linons") and field-mediated interactions can arise from simple, local update rules on a discrete grid, without embedding any physical laws or constants a priori.
 

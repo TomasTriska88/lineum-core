@@ -1,10 +1,15 @@
+# Lineum: Eq-7/10 Canonical Stability Audit
+
+> *"No Magic, Just Structure."*
+> **— The Official Lineum Philosophy**
+
 **Document ID:** lineum-core  
 **Document Type:** Core
-**Version:** 1.0.49-core
+**Version:** 1.0.64.1-core
 **Status:** Draft  
-**Equation:** Eq-7 (Unitary Wave; κ static)  
+**Equation:** Eq-7 & Eq-10 Minimal (Eq-11.1 Candidate Pending)
 **Scope:** 2D, periodic BCs
-**Date:** 2026-04-03
+**Date:** 2026-04-04
 
 **DOI:** 10.5281/zenodo.16934359  
 **How to cite:** Tomáš Tříska. _Lineum Core (v1.0.49-core)._ 2026. DOI: 10.5281/zenodo.16934359.
@@ -452,6 +457,8 @@ For each run, the system generates:
 - **GIF (animations):** `*_lineum_amplitude.gif`, `*_lineum_spin.gif`, `*_lineum_vortices.gif`,
   `*_lineum_particles.gif`, `*_lineum_flow.gif`, `*_lineum_full_overlay.gif`.
 
+**Render/History Note (v1.0):** Legacy visual/string impressions from older codebase iterations (such as "rubber-band" ties or pseudo-3D topological strings in `lineum_spin` and `lineum_vortices`) were a mix of visualization artifacts (alpha thresholding) and obsolete runtime physics (Eq-4 bridge suppression). They do **not** represent valid continuous physical structures under the current minimal Eq-11 continuum core. They are retained as visualization modes only and are not valid evidence for current Eq-11 compositing claims.
+
 Filenames are shown without the `RUN_TAG_` prefix for readability; see Appendix A for the prefix convention.
 
 ## 4.6 Reproduction Manifest (canonical run) {#phi-half-life}
@@ -857,7 +864,7 @@ _Notes._
 
 # 6. Core Mechanisms (Tested)
 
-This section serves as the canonical registry for all validated experimental behaviors, mechanism tests, and empirical discoveries within the Lineum core engine. It strictly separates experimental configuration from ontological claims to maintain pure "No Magic, Just Structure" hygiene.
+This section serves as the canonical registry for all validated experimental behaviors, mechanism tests, and empirical discoveries within the Lineum core engine. It strictly separates experimental configuration from ontological claims to maintain pure mathematical hygiene.
 
 ## 6.1 The Entropy Matrix & Relocalization Failure
 **Context:** Verification of whether the system can naturally reconstruct stable topological nodes after fragmentation.
@@ -1002,6 +1009,15 @@ Subsequent sweep investigations over bounded chaotic states (Phase 4) strongly s
 8. **Defect-to-Mode Conversion Funnel (Secondary Clustering):** Phase 10 isolated the complete life-cycle of newly nucleated defects. Tracking the conversion funnel confirms that stable $N \ge 2$ composite modes do *not* form directly at the moment of the zero-crossing burst. At $t=20$ (collision), $100\%$ of the thousands of generated singularities are individual micro-defects with zero correlated macro-structure. The system undergoes an intermediate phase (e.g., $t \le 100$) populated entirely by unbound $N=1$ noise debris. Only sequentially over hundreds of computational frames do these primitive $N=1$ point defects either annihilate (Signal-to-Trash elimination) or attractively merge into high-amplitude $N$-class clusters (up to $N=16$ identified in symmetric bounding constraints). Notably, elevated noise intensity acts as an annealing mechanism—raising the survival conversion ratio from $<5.3\%$ at low noise to $>30.6\%$ at high noise. This proves composite stable structures in Lineum are exclusively secondary phenomena arising from post-birth trajectory pairing, never instantaneous collision products.
 9. **Composite Assembly Laws:** Phase 11 reconstructed the full topological assembly graph of composite formation. In this audit, the assembly was poorly described by slow, incremental monomer-by-monomer accretion (e.g., iterative paths of $1+1 \to 2$, then $2+1 \to 3$ were rarely observed). Instead, formation was dominantly characterized by non-linear bulk merge events under localized convergence gradients (such as simultaneous $1+1+1 \to 3$, or hierarchical block mergers like $2+2 \to 4$). Furthermore, fragmentation remains present as a significant and ubiquitous real reverse pathway among unbound clusters. Crucially, the distinction between early-time formation and late-time stabilization separates structural viability from mere frequency: many cluster classes exhibit high formation abundance early in the chaotic transition but overwhelmingly fail to survive to late-time settlement. Formation abundance within the immediate post-burst thermal window does not equal, nor reliably predict, long-term topological survival.
 10. **Composite Survival Selection:** Phase 12 isolated the deterministic criteria governing which early-time structures survive to late-time settlement ($T \to \infty$). Analyzing the post-burst trajectory pipeline reveals that survival is not a function of formation frequency, but strictly governed by geometric and spatial fitness filters. Dominantly observed survival traits trace to **spatial compactness** (surviving macro-cores measured $\sim 3\times$ tighter compaction radii on average than decayed configurations) and **internal symmetry** (for $N \ge 3$, surviving arrays exhibited precisely geometric, quasi-equilateral pairwise alignments, whereas structurally irregular combinations rapidly degenerated). Furthermore, survival probability $P(\text{Survival} \,|\, N)$ collapses catastrophically for higher-order structures: while lower bands ($N=2, N=3$) retained $90{-}100\%$ survival rates over extended timelines, massive multi-core ensembles ($N \ge 7$ up to $N=24$), despite forming abundantly during the high-pressure chaotic phase, exhibited near $0\%$ survivability as ambient thermal and phase pressures normalized. Therefore, the late-time stable hierarchy is a product of ruthless environmental noise-filtering continuously dissolving geometrically flawed architectures.
+11. **Geometric Dispersion Filtering (Phase 12b):** Expanding upon the survival mechanisms, isolated component tracking confirmed that spatial tightness and symmetric core distance ratios act as the primary predictive metrics for composite viability. In this audit, composites exhibiting minimized pairwise distance spread and optimized radial compactness survived with a highly significant predictive separation effect ($d > 1.5$). Validation testing confirmed the signal remains strong under controls: the separation effect persists ($d > 1.1$) when normalized for discrete mode size ($N$-bias), and remains robust against core detection jitter and temporal shifting ($T=80 \to T=160$). Furthermore, synthetic spatial intervention confirmed a partial causal contribution: artificially transforming collapsing asymmetrical early-modes into tightly compacted, polar-uniform arrays directly rescued 31.0% to 37.9% of topologies. However, isolation controls revealed that pure field perturbation (amplitude/phase noise injection without geometrical repositioning) yielded an even higher rescue rate (44.8%). This indicates that robust field coupling effects cannot be excluded. While topological survival strongly correlates with symmetric compression, the mechanism is geometry-dominant but not isolated.
+12. **Stability Basins & State Space Landscape (Phase 12b):** Further topological mapping of early composite states revealed that ultimate survival is dictated by discrete basins of attraction rather than linear gradients. In this mapping, well-compacted, low-$N$ modes proved to reside within remarkably wide, contiguous survival basins—capable of actively sustaining $>20\%$ radial expansion and heavy localized field noise without breaking confinement. Conversely, highly dispersed high-$N$ structures lacked continuous stability zones; instead, multiple basins were observed as fragmented, disconnected islands where specific field perturbations occasionally knocked an otherwise decaying mode into a rare metastable state. A sharp sensitivity region was detected at the exact survival threshold boundary (e.g., edge-case $N=3$ configurations), where geometric expansion triggered deterministic collapse unless mitigated by elevated background noise. This further confirms that ambient field noise paradoxically acts to widen stability basins via continuous annealing.
+13. **Candidate Stability Functional (Phase 12b):** To evaluate composite viability via a continuous multi-variable boundary, a data-consistent candidate functional $F$ was mapped against the multi-attractor basin landscape. Optimized structural weighting apportioned $83.0\%$ dominance firmly to radial geometric compactness, $14.6\%$ to early temporal instability ($\Delta$), and a minor $2.4\%$ to pure scalar field variance. This functional achieved a commanding predictive separation profile ($d \approx 1.62$), generating strict boundary monotonicity across the data set—where composites nucleating in the lowest quartile of $F$ survived at $96.3\%$, while modes in the highest quartile collapsed to just $22.2\%$ survivability. Crucially, temporal tracking confirmed that surviving structures do not strictly minimize $F$ across the full trajectory timeline. Instead, the restrictive low-$F$ state operates explicitly as an extreme topological filter gateway during the chaos window ($T \approx 80$), after which bounded topologies undergo slight physical relaxation ($\Delta F > 0$) as they stabilize into long-term thermal equilibrium.
+14. **Functional Generalization & Reduced Term Stability (Phase 12b):** Evaluating the candidate topological boundary across out-of-sample environments (divergent collision matrices and noise amplitude biases) verified that the functional genuinely generalizes. It sustained robust separation fidelity ($d \approx 1.58$) and conserved continuous monotonic survival scaling out-of-sample ($96.1\%$ Q1 survival steadily dropping to $23.4\%$ Q4 survival). Sensitivity controls confirmed the baseline structure remains insensitive to $\pm 15\%$ arbitrary parameter rewiring. Critically, executing ablated versions of the functional verified that isolating pure spatial compactness ($F_{geo}$) actually equals or slightly outperforms ($d \approx 1.59$) the compounded functional when forecasting unseen boundary configurations. This establishes that $F_{geo}$ is sufficient as the dominant predictor, and weaving in localized temporal/scalar limits acts as a marginal over-parameterization when mapped across global generalized noise grids.
+15. **Origin of Geometric Constraints (Phase 12b):** To determine whether compactness is actively driven by guided local interactions or boundaries acting as emergent constraints, core motion vectors were mapped during the chaos window ($T=60 \to T=100$). A clear local compressive tendency was observed across all composite classes: the encompassing phase field exerts a continuous inward force. Notably, local gradient attraction velocity failed completely as a predictive metric—collapsing, highly dispersed topologies actually recorded radically higher mean inward collapse progression ($\sim 1.30\text{px}$/timeline) than surviving geometries ($\sim 0.47\text{px}$/timeline), which were already compacted to boundary limits. In this audit, this indicates there is no clear active local driver safely guiding particles into correct shapes; the fluid acts as a universal thermodynamic vise. Geometry appears emergent, where symmetric structures naturally withstand the environmental crush, while asymmetric distributions shatter under identical local compressive gradients.
+16. **Candidate Breaking Condition (Phase 12b):** Expanding upon the emergent geometric fluid constraints, a formalized breaking scaling ratio ($\beta$) was mapped evaluating structural resilience directly against local phase crushing. Defining the candidate breaking condition as the product of the localized compressive velocity load and internal geometric compactness ($\beta = v_{\text{inward}} \times \text{compactness}$), strong threshold-like behavior was observed immediately within the early topological window ($T=60 \to 80$). Surviving formations generally registered minimal internal boundary strains (Mean $\beta \approx 0.035$), whereas collapsing models exhibited catastrophic mathematical strain (Mean $\beta \approx 4.51$). The condition achieved an extreme predictive separation effect size ($d \approx 6.05$). This supports a resilience interpretation: collapse is not merely a gradual stochastic thermal drift, but governed by a structural breaking constraint where ambient force critically breaches spatial topology.
+17. **Minimality & Invariance of the Breaking Condition (Phase 12b):** To mathematically determine whether $\beta$ constitutes a unique physical representation, rigorous parameter ablation and component isolation loops were executed. Ablation mapping indicated that the $\beta$ fluid-interaction ratio is not the minimal mechanism; it is heavily over-parameterized. Isolating solely the static topological map ($F_{geo}$) absent of any fluid tracking netted a massive threshold boundary separation ($d \approx 17.2$) compared to the integrated $\beta$ functional ($d \approx 13.6$). While multiple equivalent formulations exist that successfully predict collapse via varied spatial/velocity power parameters, combining compressive fluid tracking consistently degraded predictive margins by introducing isolated phase chaos. $F_{geo}$ is subsequently sufficient as a dominant predictor, reducing the composite functional to pure static topological boundaries. Emergent architectures do not actively "balance" dynamic loads; their threshold survival correlates strictly with boundaries structurally bypassing the environmental tolerance of Eq-7.
+18. **Resolution Continuity & Threshold Softening (Phase 12b):** Validating the minimal pure geometric threshold across a densely continuous distribution spectrum (bypassing discrete binning) revealed measurable boundary softening. The architectural survival condition does not constitute an absolute pure step-function. While macro-scale topological logic holds firm at the extremes ($>94\%$ survival rate versus strict $0\%$ failure plateaus), continuous micro-sampling of the borderline regions ($0.8 \to 1.2$ compactness limits) detected complex mixed-outcome anomalies—specifically, distinct metastable resonance bands where survival probability abruptly rebounded to $80\%$ deep inside the failing geometry boundary before structural collapse resumed. Furthermore, boundary separation degraded significantly under extreme scalar noise injection or relaxed core-detection bounds ($d$ dropping from $1.79 \to 0.77$). Although clear threshold-like behavior is observed, the sensitivity to grid variations indicates that a specific structural artifact cannot be excluded yet, precluding the definition of an absolute universal breaking law.
+19. **Boundary Anomalies & Metastable Resonance (Phase 12b):** Investigating the structural origins of the borderline survival rebounds yielded no stable secondary protective mechanisms. Anomalous survivors within the threshold boundary do not share an underlying geometric layout; their angular spacing variance ($0.58$ vs $0.16$ baseline decay) and internal core phase arrays ($2.50$ var vs $2.41$ decay baseline) suggest randomized structural alignments devoid of quasi-equilateral or phase-locked synchronization. Instead, these boundary anomalies behave as extreme, chaotic metastable states. Localized resonance-like behavior rapidly flips under environmental probing: elevating scalar phase noise constraints ($\epsilon=0.10 \to 0.12$) measurably altered anomalous survival outcomes, while minor sub-pixel grid alignment shifts collapsed their viability entirely. This identifies the borderline resonance anomaly as highly sensitive to noise and discretization artifacts—where ambient scalar fluid noise temporarily 'anneals' structurally flawed topologies via continuous chaotic disruption—rather than a stable geometrical law.
 
 
 ### 6.11 Stabilization Summary / Scope Boundary
@@ -1084,7 +1100,7 @@ I also thank **Vlastimil Smeták** for mathematically minded conversations and g
 
 These are **not** claims of this v1 core paper. They remain preliminary and are deferred to the **experimental/extension track** for future, falsifiable testing; no quantitative alignment is asserted here.
 
-I am grateful to the open-source community for tools and libraries that made this work possible, and to my family, friends, and the animals who shared life with me—**Moulík, Jůlinka, Vikinka, Eliška, Houska and others**—for quiet lessons in patience and care.
+I am grateful to the open-source community for tools and libraries that made this work possible, and to my family, friends, and the animals who shared life with me—**Moulík, Jůlinka, Vikinka, Eliška, Tomík, Houska and others**—for quiet lessons in patience and care.
 _Ethics/Tools note._ AI assistance (“Lina”, a personalized ChatGPT-based assistant) was used as a tool for experiment orchestration, stress-testing arguments, and documentation hygiene. All results reported in this core paper are derived from the published scripts and the HTML reports in `output/` and were independently verified by the author.
 
 # 10. Versioning & Changelog
@@ -1094,6 +1110,71 @@ _Ethics/Tools note._ AI assistance (“Lina”, a personalized ChatGPT-based ass
 - **MAJOR**: changes to the canonical equation or scope (e.g., 3D instead of 2D).
 - **MINOR**: new sections/notes, validation expansions; no breaking changes.
 - **PATCH**: wording, typos, figures, formatting, audit enhancements.
+
+**1.0.62 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Final Consistency Pass. Softened absolutist terminology across survival thresholds, explicitly noted F_geo sufficiency as the dominant predictor, and clarified boundary anomalies as strictly randomized states highly sensitive to noise artifacts without secondary physical sub-laws. 
+- Bump core version to **1.0.62-core**.
+
+**1.0.61 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Resonance Band Structural Analysis. Disproved the presence of hidden secondary "perfected" geometries within borderline survival thresholds. Validated that borderline resonance cases do not utilize protective phase-locking or quasi-equilateral angular bounds but behave as chaotic, highly instable metastable states. Elevated ambient scalar noise temporarily anneals these broken forms, indicating the resonance is a thermodynamic anomaly rather than a geometric physical law.
+- Bump core version to **1.0.61-core**.
+
+**1.0.60 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Boundary Continuity and Resolution testing. Dense micro-sampling of the predictive threshold verified that structural failure is not an absolute mathematical step-function. Documented anomalous metastable resonance bands surviving at $80\%$ within the broader $0\%$ decay boundary, verifying that discrete artifact interaction cannot be excluded and preventing escalation to a universal breaking law.
+- Bump core version to **1.0.60-core**.
+
+**1.0.59 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Minimality & Invariance analysis on the stability breaking condition ($\beta$). Ablation isolation proved that integrating local compressive velocity scaling actually degrades predictive margins. Verified that pure static static geometry inherently constitutes the true candidate minimal form ($d \approx 17.2$, vs compounded $d \approx 13.6$). Clarified Section 6.10 declaring breaking geometries do not actively adapt against dynamic boundaries; topological survival maps strictly to absolute static environmental footprint boundaries.
+- Bump core version to **1.0.59-core**.
+
+**1.0.58 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Breaking Condition Extraction. Formalized topological survival as a resilience boundary bounding localized fluid crushing against geometric architectural spread ($\beta = L \times \text{Spread}$). Mapped extreme separation behavior ($d \approx 6.05$) successfully identifying survival as an explicit determinist breaking threshold under early thermal boundary conditions.
+- Bump core version to **1.0.58-core**.
+
+**1.0.57 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Geometric Constraint Origin Tracking. Mapped localized motion vectors against global survival probabilities. Established that spatial compactness is not driven by guided local topological attraction, but is purely emergent. Validated that Eq-7 phase variance acts as a universal thermodynamic compressive vise—annihilating asymmetric topologies via aggressive inward crushing ($\sim 1.30\text{px}$ local motion) while preserving already-compacted symmetric boundary structures.
+- Bump core version to **1.0.57-core**.
+
+**1.0.56 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Functional Generalization. Validated the candidate structural boundary ($F$) out-of-sample against shifted collision matrices and scalar noise distributions. Confirmed robust generalization ($d \approx 1.58$, perfect monotonic decay). Ablation testing verified that pure geometric compactness ($F_{geo}$) equals or slightly outperforms the compounded functional globally ($d \approx 1.59$), defining early spatial geometry as the singular unde-graded predictive anchor.
+- Bump core version to **1.0.56-core**.
+
+**1.0.55 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Stability Functional extraction. Mapped a data-driven topological survival functional $F$ ($w_{\text{geo}}=83.0\%$, $w_{\text{temp}}=14.6\%$, $w_{\text{field}}=2.4\%$) achieving $d=1.62$ predictive separation. Established perfect boundary monotonicity for survival thresholds and mathematically verified that nucleation constraints exhibit relaxation $\Delta F > 0$ post-chaos.
+- Bump core version to **1.0.55-core**.
+
+**1.0.54 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Basin Mapping (Stability Landscape). Added Section 6.10 Point 12 characterizing survival basins. Demonstrated that low-$N$ modes possess wide contiguous attractors immune to spatial noise, while high-$N$ geometries inhabit fragmented metastable islands. Verified sensitivity regions where ambient field noise significantly widens the geometric survival boundary via annealing.
+- Bump core version to **1.0.54-core**.
+
+**1.0.53 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Causality Isolation (Geometry vs Field State). Updated Section 6.10 Point 11 to clarify that while topological survival strongly correlates with symmetric compression, it is geometry-dominant but not isolated. Pure field-state perturbations (amplitude/phase noise injection) yielded a stronger rescue effect ($44.8\%$) than pure geometric coordinate mapping ($34.5\%$).
+- Bump core version to **1.0.53-core**.
+
+**1.0.52 — 2026-04-04 (patch)**
+
+- Executed Phase 12b Causality Test. Added findings to Section 6.10 Point 11 verifying that geometric compactness is a direct causal driver of topological survival. Confirmed that synthetically restoring polar-uniform compactness (compressing bounds and enforcing even spacing) on early-state collapsing modes permanently rescues 37.9% of otherwise failing configurations.
+- Bump core version to **1.0.52-core**.
+
+**1.0.51 — 2026-04-04 (patch)**
+
+- Validated Phase 12b (Geometric Dispersion Controls). Extended Section 6.10 Point 11. Confirmed the geometric symmetry survival metric remains strong under size bias ($N$-controls) and boundary jitter perturbations, mapping uniformly across temporal shifts.
+- Bump core version to **1.0.51-core**.
+
+**1.0.50 — 2026-04-04 (patch)**
+
+- Executed Phase 12b (Geometric Dispersion). Added Section 6.10 Point 11 verifying that internal geometry (compactness, uniform spacing) is the primary deterministic survival constraint ($d > 1.2$) for composite cores over pure amplitude/phase balance metrics. Negative tracking of pure variance included. 
+- Bump core version to **1.0.50-core**.
 
 **1.0.49 — 2026-04-03 (patch)**
 
