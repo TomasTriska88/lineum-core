@@ -257,7 +257,7 @@ The canonical form is:
 | Symbol | Type / Range | Role | Default / Notes |
 |---|---|---|---|
 | ψ(x,y,t) | ℂ | primary field; &#124;ψ&#124;² = density, arg ψ = phase • linons = localized &#124;ψ&#124;² maxima |
-| φ(x,y,t) | ℝ | interaction / memory field | accumulates response to &#124;ψ&#124;² |
+| φ(x,y,t) | ℝ | interaction / transient scalar memory | accumulates response to &#124;ψ&#124;² |
 | κ(x,y) | ℝ⁺ (static) | spatial tuning map | no time evolution; often normalized to [0,1] |
 | μ(x,y,t) | ℝ⁺ | structural memory | slow-decay field recording stable energetic pathways |
 | 𝛌̃(x,y,t) | ℂ | external stimulus | 0 unless stimulus experiments |

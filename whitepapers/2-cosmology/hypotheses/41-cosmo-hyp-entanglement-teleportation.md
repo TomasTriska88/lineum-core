@@ -1,10 +1,12 @@
 ---
 title: "Cosmology Hypothesis: Entanglement, Antimatter, and Teleportation"
-hypothesisNum: 42
+hypothesisNum: 41
 status: "proposed"
 ---
 
 
+
+## Original Extract (Verbatim)
 
          - **[HYPOTHESIS] Quantum Entanglement (The "Mandela / Deja Vu" Update):** The user asked how quantum entanglement worksÔÇöhow two particles far apart can instantly update their reality without waiting for light ($c$).
            - **The Shared $\varphi$ Memory:** In Lineum, when two vortices are created together, they physically share the exact same historical "dent" in the $\varphi$ gravity/memory field. $\varphi$ is not bound by the phase wave speed limit ($c$) in the same way $\psi$ is; $\varphi$ acts as the universal *memory* of the grid.
@@ -20,17 +22,12 @@ status: "proposed"
            - **The Mechanics of Teleportation:** In real physics, teleportation does *not* mean moving a physical object instantly from A to B. It means scanning object A so perfectly that you destroy it, and using that scanned information to force generic material at location B to take the exact same shape. 
            - **Lineum Teleportation:** In Lineum, you cannot move a $\psi$ vortex instantly across the grid (that violates $c$). But because of the superluminal $\varphi$ memory link between entangled particles, you can force a generic, unformed patch of $\psi$ energy on the other side of the universe to instantly fold itself into the exact geometric signature of your original particle. The "information" (the geometric blueprint) traveled instantly through the shared $\varphi$ memory floor, while the "hardware" (the actual $\psi$ energy) was provided locally at the destination. The object was successfully teleported without moving a single drop of energy faster than light!
 
-
 ## Interpretation (Non-verbatim)
-
-(Non-verbatim)
-
-# [HYPOTHESIS] Entanglement, Antimatter, and Teleportation
 
 > **[DRAFT – UNVERIFIED]**
 > **[HYPOTHESIS – NOT ENGINE-VALIDATED YET]**
 
-**Document ID:** 42-cosmo-hyp-entanglement-teleportation
+**Document ID:** 41-cosmo-hyp-entanglement-teleportation
 **Status:** Hypothesis
 
 ## Quantum Entanglement & $\varphi$ Memory

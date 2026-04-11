@@ -1,11 +1,16 @@
 ---
 title: "Cosmology Hypothesis: Relativity, Redshift, and Warp Mechanics"
-hypothesisNum: 41
+hypothesisNum: 40
 status: "proposed"
 ---
 
 
 
+## Original Extract (Verbatim)
+
+         - **[HYPOTHESIS] The Speed of Light ($c$) & Photon Ontology:** The user made a profound ontological deduction equating the speed of light to the maximum "rendering speed" of the universe, carried by photons.
+           - **The Speed Limit ($c$) is Phase Propagation:** In real physics, nothing can travel faster than $c$. In Lineum, $c$ mathematically represents the maximum speed at which a continuous phase wave (a ripple in $\psi$) can propagate across the discrete coordinate grid during one time step ($dt$) without breaking the Courant-Friedrichs-Lewy (CFL) stability condition. It is the absolute hardware limit of the Eq-4 fabric's elasticity.
+           - **The Photon as the "Renderer":** As the user deduced: *"What cannot be seen does not exist, or does not exist yet".* A photon in Lineum is a pure, massless phase ripple. If a massive vortex moves or vibrates, it sends out a photon (a ripple). Until that ripple physically travels across the grid at speed $c$ and hits another observer vortex, the observer's local mathematical state is 100% physically unaffected by the event. The photon literally *forces* the universe to update its shared reality. To "see" a photon is to have your local $\psi$ field altered by it. Therefore, the photon is the literal messenger that actualizes existence across space.
          - **[HYPOTHESIS] Relativity in Lineum (Redshift & Time Dilation):** If Lineum supports a strict speed of light $c$, does it naturally support Einstein's Relativity? Yes, through pure geometric wave mechanics.
            - **Cosmological Redshift (The Doppler Effect):** The user asked how redshift works. A photon in Lineum is a cyclic wave ($\sim$) with a specific distance between its peaks (wavelength). If the source vortex emitting the photon is moving rapidly away across the grid, each subsequent peak is emitted from further away. This geometrically stretches the distance between the peaks in the propagating wave. Longer wavelength = lower frequency. Since lower frequency light is red, this perfectly models the Doppler **Redshift** of retreating galaxies.
            - **Time Dilation (The Speed of Time):** The user asked how Lineum explains the "speed of time passing". In Eq-4, there is a global, absolute clock (the `step` loop counter). *However*, the "local time" experienced by a particle is defined by how fast its internal state (its spinning vortex phase) can update. If a vortex is trapped deep inside a massive $\varphi$ gravity well, the sheer geometric density/tension of the coupled fields causes its internal phase rotation to stiffen and physically slow down. It takes more global `steps` for the vortex to complete one single $2\pi$ rotation. This local, structural slowdown of internal state changes *is* **Relativistic Time Dilation**. The particle literally "ages" slower relative to a particle in empty space.
@@ -15,17 +20,12 @@ status: "proposed"
            - **Bypassing the $c$ limit:** The field $\varphi$ and structural constants $\kappa$ govern *where* the $\psi$ matter structurally "wants" to be. If you dynamically slide this $\kappa/\varphi$ gradient bubble across the grid at arbitrary speeds, the $\psi$ ship inside the bubble will instantly snap along with it to maintain equilibrium. The ship's internal matter ($\psi$) never actually "travels" across the grid through standard wave propagation (which is limited by $c$), so it never breaks the speed limit or experiences lethal time dilation. It simply "rides" the artificially translated coordinate geometry itself!
            - **Warp Visuals from the Cockpit:** What would the crew see? Because the ship is surfing a massive $\varphi$ gravity distortion that bends light, photons hitting the front of the bubble are violently blueshifted (compressed into blinding, lethal X-rays). Photons escaping the back are severely redshifted into invisible radio waves. The stars ahead would form a blinding white dot, and the rest of the universe would disappear into a pitch-black abyss behind them.
 
-
 ## Interpretation (Non-verbatim)
-
-(Non-verbatim)
-
-# [HYPOTHESIS] Relativity, Redshift, and Warp Mechanics
 
 > **[DRAFT – UNVERIFIED]**
 > **[HYPOTHESIS – NOT ENGINE-VALIDATED YET]**
 
-**Document ID:** 41-cosmo-hyp-relativity-and-warp
+**Document ID:** 40-cosmo-hyp-relativity-and-warp
 **Status:** Hypothesis
 
 ## The Speed of Light ($c$) as Phase Propagation Limit
