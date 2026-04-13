@@ -21,10 +21,11 @@ description: How to manage git branches and commits
     (Create it if it doesn't exist: `git checkout -b dev`)
 
 3.  **Commit Only:** Only when you are safely on `dev` (or a feature branch), you may proceed with `git add` and `git commit`. Do NOT push!
-4.  **Watcher Sync Delay:** ALWAYS wait 2 seconds before running `git add` to allow the Svelte/Vite dev server watcher to sync generated JSON files (e.g., `ai_index.json` or `portal-structure`). DO NOT use the `&&` operator to chain Git commands together on Windows. ALWAYS execute commands on separate lines:
+4.  **Watcher Sync Delay:** ALWAYS wait 2 seconds before running `git add` to allow the Svelte/Vite dev server watcher to sync generated.
+5.  **NEVER blindly `git add .`:** Because `.agent/scratch`, temporary test JSONs, and local generated artifacts can bleed into the working directory, NEVER use `git add .` unless you have meticulously verified `git status`. Preferred method is exact file staging: `git add src/file.py whitepapers/doc.md` or `git add -u` to stage only tracked modifications.
     ```bash
     Start-Sleep -Seconds 2
-    git add .
+    git add <specific file paths>
     git commit -m "..."
     # STOP HERE. DO NOT PUSH.
     ```
