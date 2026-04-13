@@ -178,7 +178,7 @@ To verify if $\Psi_H/\Psi_L$ separation is merely an artifact of the $P_{overlap
 ### 7.4 Final Evaluation: Robust Minimal Emergent Regime
 
 > [!NOTE] Executive Summary: Two-Species Structural Separation
-> **What works:** A dual-diffusion system ($\Psi_H$ and $\Psi_L$) emergentely forms a stable "Core-Halo" topology without utilizing rigid synthetic penalties, establishing a **Robust Minimal Emergent Regime**.
+> **What works:** A dual-diffusion system ($\Psi_H$ and $\Psi_L$) emergentely forms a stable "Core-Halo" topology without utilizing rigid synthetic penalties, constituting a **Robust Minimal Emergent Regime** within a constrained parameter window.
 > **Why it works:** The phenomenon relies on a *timing-race confinement mechanism*. The lighter field diffuses rapidly outward, acting as an exhaust thermal sink that gradually erects a steep, dense $\epsilon$-field wall at the perimeter. This traps the heavier field deeply in a potential well.
 > **Where it fails:** If the diffusion ratio nears $1:1$, the heavy central core possesses too much kinetic energy and escapes, escaping the perimeter boundary *before* the outer wall completes formation.
 > **What remains unresolved:** The scaling relationship behind the $1:10$ "Golden Ratio" window is not purely mathematically derived from universal Grid topology. It is unclear if this defines a native structure, or if we have merely tuned a grid artifact resonance.
