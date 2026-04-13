@@ -262,3 +262,16 @@ Mechanistically, this aligns with the fundamental mathematical construction of t
 
 **Remaining Ambiguity**: It remains unresolved whether the absence of traveling emission bursts during annihilation is a core, fundamental property governing the Lineum medium, or strictly an artifact of the specific dissipative diffusion mechanics dominating the current Eq-11 iteration.
 
+### 8.7 Locomotion and Transport Mechanics
+Empirical audits measuring the spatial translation of complex composites (e.g., the N=3 Triad) suggest that Lineum transport mechanics deviate significantly from paradigms rooted in classical kinematic momentum. Motion is observed to be continuous (speed variance $\sim 10^{-5}$), with translation natively correlating to topological asymmetry rather than internal inertial force.
+
+Current Eq-11 measurements are highly consistent with a macroscopic **Thermodynamic Wake-Drive** mechanism:
+
+1. **Gradient Propulsion:** Causal control tests demonstrate that topological structures naturally surf away from localized $\epsilon$-field saturations. By enforcing an artificial linear $\epsilon$ gradient across the grid, even a perfectly static, symmetric N=1 Linon is causally forced into rapid continuous locomotion scaling precisely with gradient strength ($0.5 \to 2.0$). 
+2. **Asymmetric Exhaust Routing:** Translating Triads continuously saturate the $\epsilon$ field behind their trailing edges, erecting a local thermodynamic "rut" or exhaust wake. Because raised $\epsilon$ severely penalizes structural growth via the $\tanh(\epsilon)$ reaction term, the Triad is aggressively blocked from expanding backward. 
+3. **No Internal Kinetic Engine:** The structural translation observed occurs because the composite's asymmetric shape continuously dumps $\epsilon$ disproportionally, maintaining a permanent internal gradient slope. The structure continuously "slides" forward into unbroken, low-$\epsilon$ space simply to survive its own saturation footprint. 
+
+This mechanism consistently predicts the empirical speed-bounds of isolated structures: counter-intuitively, tighter boundary isolation (a $10:1$ Heavy/Light ratio) physically *slows down* the Triad and degrades flight straightness, as the trapped thermal exhaust rut forces the structure to aggressively steer away from micro-fluctuations in its own wake.
+
+**Remaining Ambiguity:** While the "Thermodynamic Treadmilling" hypothesis accurately predicts and causally replicates motion in Eq-11 boundary testing, it is currently unknown if this localized gradient-surfing scales harmonically when handling massive composite structures (e.g., macroscopic biological analogues), or if the dissipative exhaust mechanics ultimately forbid runaway continuous acceleration required for universal expansion.
+
