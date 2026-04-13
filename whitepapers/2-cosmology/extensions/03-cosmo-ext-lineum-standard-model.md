@@ -946,3 +946,28 @@ The required interpretive lens for all phenomena is strictly mechanical physics:
 - It involves zero **"decisions."**
 
 The system experiences only transport, thermodynamic gradient response, and structural collision across an inert, fluid geometry.
+
+## 25. Limit Analysis: The Non-Stateful Breakpoint Search
+
+The formal definition of Eq-11 as a *Non-Stateful* Passive Substrate (Section 24) inherently invites limit stress-testing. A complete "Breakpoint Sweep" was executed (`eval_foam_memory_breakpoint.py`) to systematically detune canonical limits, explicitly attempting to break the fluid constraints and force the emergence of stable "Memory" (permanent structural state flips > 1.0px variance).
+
+### 25.1 Active Field Set (Section B)
+- Eq-11 Phase 2 Canonical parameters with controlled multi-axis deviation:
+- $\Phi$-leak (healing rate) lowered from $0.05$ down to absolute $0.00$.
+- $\gamma$ (Foam persistence) lowered from $0.10$ down to absolute $0.00$.
+- $\mu$ Memory Field Reactivation (Coupling strengths from $0.0$, $0.5$, up to $5.0$).
+
+### 25.2 Observed Metrics (Section A & C)
+The environment was evaluated on a `MEMORY_CELL` routing test (Burn Pass followed by Probe Pass). None of the parameters successfully unlocked stable state logic. The physics actively rejected phase transition:
+- **Lowering $\Phi$-Leak:** Counter-intuitively, reducing gradient "healing" towards zero completely ruined what little sub-pixel variance existed (dropping from $0.71$px to $0.26$px). 
+- **Absolute Freeze ($\gamma = 0$):** Attempting to stop Foam degradation entirely yielded almost identical $\Delta Y$ ($0.07$px variance vs unburned controls).
+- **$\mu$-Coupling Reactivation:** Even injecting raw background $\mu$-potential to force associative connections failed to alter passing logic ($0.35$px variance).
+
+### 25.3 Inferred Limits (Section D)
+**Inferred:**
+- **No Phase Transition to Memory:** The Eq-11 standard model does not contain a "hidden" threshold where it smoothly transitions into a stateful matrix. 
+- **The Rigidity of Fluidity (Systemic Blur vs Local Memory):** "Memory" implies writing a sharp, high-contrast, permanent bit into the matrix that drastically alters future routing. However, making the structures permanent ($\gamma=0$) or preventing ambient thermal leak ($\Phi$-leak $=0$) does not create memories; it completely floods the entire board with global $\Phi$ tension. Sharp, localized "bits" (scars) become invisible when the ambient structural sea level rises identically. The environment drowns in its own exhaust before it can stabilize a discrete circuit state. 
+
+### 25.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- We empirically confirm that modifying Eq-11 internal decay/persistence parameters **cannot** force the medium to become stateful or compute Turing-complete logic. Making the universe "remember longer" does not create intelligence; it merely turns a beautiful transport filter into a blurry, flooded swamp.
