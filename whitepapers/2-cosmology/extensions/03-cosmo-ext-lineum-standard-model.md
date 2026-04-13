@@ -702,3 +702,33 @@ An incoming Triad ($N=1$) was injected to impact the target Foam across $36$ rig
 
 **Unresolved:**
 - Does there exist a "Golden Impact Vector"—a highly specific resonance frequency or non-linear grazing angle—that can cleanly knock a perfect $N=1$ Triad out of the Relic Foam matrix without accidentally boiling the entire structural shelf into transient secondary emission? The current matrix indicates the $\Phi$ interaction is too volatile, preventing perfect extraction.
+
+## 17. Multi-Hit Stateful Response and Foam Fatigue
+
+Having mapped the singular Re-Ignition conditions, the investigation advanced to explicitly testing whether Relic Foam acts as a passive, single-use active residue or a **stateful material** retaining a history across sequential interactions.
+
+### 17.1 Active Field Set (Section B)
+- **Grid parameters:** $128\times128$, canonical periodic setup.
+- **Active Fields:** Canonical Phase 2 ($\Psi$, $\Phi$, $\mu=0$, $\kappa$, $\rho$).
+- **Base State:** Mature Relic Foam ($T=2500$ decay, Baseline Size = $17$ Nodes).
+- **Protocol:** `eval_foam_stateful.py` injected three successive $N=1$ Triad impacts, separated by either a Short Recovery ($T=500$) or a Long Recovery ($T=1500$) stabilization windows. We tracked Peak Secondary Emission and Restabilized Node Integrity.
+
+### 17.2 Full Sweep Observations (Section A & C)
+Across all permutations (Direct/Grazing, Fast/Slow, $\Phi$ ON/OFF):
+
+**Observed:**
+- **Universal Fatigue under Deep Stabilization:** Under the Long Recovery spacing ($T=1500$), $100\%$ of the tests exhibited explicitly **FATIGUE**. 
+  - E.g., The Canonical Direct-Slow strike generated an initial secondary emission burst of $28$ Peak Nodes. However, the exact same strike on the second pass generated only $26$ nodes, and the third hit degraded to $23$ nodes.
+- **Structural Sponging (Short Recovery):** When hit consecutively without time to restabilize ($T=500$), the behavior skewed toward *Memoryless/Clumpy* response. The structure's integrity artificially ballooed ($17 \to 27 \to 29$ nodes) into an unresolved mess, trapping subsequent hits in a sustained boiling reaction rather than discreet bursts.
+- **Catastrophic Collapse in $\Phi$-OFF:** If the $\Phi$ exhaust layer is artificially neutralized, the foam suffers massive critical collapse upon multiple hits. The first hit peaked at $25$, but the second hit collapsed entirely to a peak of $6$, with final static integrity permanently crashing to $4$ dead nodes.
+
+### 17.3 Inferred Mechanics (Section D)
+**Inferred:**
+- **Foam is a Stateful, Degraded Resource:** Relic Foam is intrinsically not an infinite geometry fountain. It demonstrably "remembers" prior collisions. Every hit structurally shears the tight geometry of the parent state, loosening the $\Phi$ nodes.
+- Repeated secondary emission implies that generating active matter physically permanently spends the internal structural potential energy of the dormant foam mesh.
+- Therefore, Relic Foam is empirically classified as an **Exhaustible Stateful Material**.
+
+### 17.4 Negative / Failed (Section E)
+**Negative Result / Failed:**
+- The hypothesis that Relic Foam could serve as a permanent, immortal re-ignition substrate—where a particle passes through, spawns a new structure, and the foam returns exactly to its $17$-node ground truth—is definitively **falsified**. Foam suffers permanent structural fatigue after secondary emission.
+- We found no evidence of **Conditioning** (where a prior hit makes the foam highly organized or tuned for a stronger subsequent response).
