@@ -17,10 +17,6 @@ def main():
     deleted_count = 0
     for filepath in scratch_dir.glob("**/*"):
         if filepath.is_file() and filepath.name != "README.md":
-            name = filepath.name.lower()
-            if name.startswith("keep_") or "_keep." in name:
-                continue
-                
             try:
                 mtime = filepath.stat().st_mtime
                 if mtime < threshold_time:
