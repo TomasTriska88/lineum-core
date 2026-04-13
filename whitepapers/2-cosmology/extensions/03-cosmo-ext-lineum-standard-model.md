@@ -207,14 +207,14 @@ The failure mode at $1:1$ is not that the well is impossible to construct—the 
 We must rigidly clarify that this behavior is classified solely as a "Robust Minimal Emergent Regime."
 Because we arrived at the functional viability window ($1:3 \to 1:15$) exclusively via parametric sweeping rather than directly parsing the topological constants of the grid scale itself, we cannot mathematically predict whether this $1:10$ threshold maps to a fundamental scaling law of the universe simulation, or if it amounts to a trivial, massive simulation tuning resonance. Until this is derived natively, elevating the core to a "canonical atomic building block" is strictly forbidden.
 
-## 8. Spectral Incommensurability Hypothesis
+## 8. Spectral Signature Hypothesis
 
 Does Lineum possess a "unified frequency scale" underpinning its $\Psi$ field dynamics? Can the various phenomena (Chaos, Free waves, Static solids) be placed along a single dimensional continuum of frequency?
 
 To answer this, we introduced the first direct temporal Fast Fourier Transform (FFT) analysis of the local $\Psi(t)$ field, logging complex values over both strictly fixed spatial points and comoving coordinates (anchored to the moving peaks) for $4096$ timesteps.
 
 ### 8.1 Observed Spectra
-We empirically cross-analyzed the temporal Power Spectrum across three distinct Lineum regimes:
+We empirically cross-analyzed the temporal Power Spectrum across three distinct Lineum regimes. Currently, these metrics are extracted from the complex amplitude tracked exactly at the comoving peak:
 
 | Regime | Translation Speed ($v_g$) | Dominant Freq ($f_{peak}$) [comoving] | Spectral FWHM | Peak Spectral Power |
 | :--- | :--- | :--- | :--- | :--- |
@@ -223,14 +223,15 @@ We empirically cross-analyzed the temporal Power Spectrum across three distinct 
 | **Free Chaos (Unbound Noise)** | 0.854 units/s | **-0.153 rad/s** | 0.383 | $3.76 \times 10^6$ |
 
 ### 8.2 Regime Comparison
-The data definitively **rejects** the hypothesis of a unified scale:
-1. **Static Structures operate strictly at Absolute Temporal DC ($0.000$ Hz).** They possess absolutely zero intrinsic phase oscillation or structural breathing in their own exact inertial frame. They are locked, rigid topological cysts.
-2. **Propagating Composites (Triads) oscillate violently ($1.917$ rad/s).** Even in their own traveling comoving frame, the internal structure pulses intensely, distributing across a broad, multi-band thermal profile (FWHM = 2.838).
+The current measurements do not support a simple unified spectral continuum:
+1. **Static Structures show a dominant DC-like signature ($0.000$ Hz) in the tested observables.** In the exact peak comoving frame, the observed complex amplitude is functionally flat, indicating extreme temporal rigidity.
+2. **Propagating Composites (Triads) exhibit a high-frequency temporal signature ($1.917$ rad/s).** In their own traveling comoving frame, the tracked point pulses intensely across a broad thermal profile (FWHM = 2.838).
 
 ### 8.3 Correlation with Propagation & Localization
-Measurement confirms a profound correlation between temporal spectral behavior and physical localization:
-- **Immobility demands Zero-Frequency.** To survive permanently localized without drift, the $\Psi$ core must shed all intrinsic rotation. The static linon survives *because* its temporal envelope is perfectly frozen.
-- **Propagation requires an AC Engine.** The Triad cannot translate by smoothly sliding. Its massive internal frequency peak ($1.917$ rad/s) reveals that it survives propagation by functioning as a high-frequency alternating "engine", constantly shifting internal localized phase tension to paddle itself forward through the grid friction.
+Initial observations suggest a correlation between temporal spectral behavior and physical localization:
+- **Immobility correlates with localized phase-locking.** The strict survival of the static linon correlates with the total suppression of complex amplitude oscillation at its core.
+- **Propagation correlates with internal frequency shifting.** The Triad does not translate smoothly; its travel is accompanied by a massive internal oscillation peak ($1.917$ rad/s), suggesting internal phase tension may be necessary for locomotion.
 
 ### 8.4 Unresolved Ambiguity
-Because the spectral signatures are fundamentally incommensurable (Zero-Hz Solitons vs 1.9-Hz Propulsion Engines), we cannot map them onto a single unified energy contour. It remains completely theoretically unresolved *how* the universe grid natively spawns both an engine-like Triad and a rigidly silent Linon under the exact same unadjusted Eq-11 differential ruleset without one behavior mathematically overriding and shredding the other at macroscopic boundaries.
+Because the regimes appear **strongly spectrally distinct under current probes** (DC-like Solitons vs AC-like Triads), we cannot currently map them onto a single unified energy contour. It remains theoretically unresolved *how* the universe natively spawns both highly oscillatory propagating complexes and rigidly silent structures without one erasing the other. Furthermore, whether the "DC signature" is absolute, or merely a local artifact of tracing the absolute amplitude peak, remains under active verification.
+
