@@ -848,3 +848,30 @@ The topologies exhibited deterministic translation to specific transport regimes
 ### 21.4 Negative / Failed (Section E)
 **Negative Result / Boundary:**
 - These properties prove the environment is mechanically programmable, but they **falsify** theories predicting universal attraction. A single WALL configuration or STAGGERED LINE exerted mathematically NO EFFECT on passing particles. Only overlapping, structured $\Phi$-bowlbay geometries (Arcs, Rings, Funnels, Gates) successfully engaged transport scaling. Uniform walls of foam act effectively identical to flat vacuum.
+
+## 22. Foam Composite Logic & Routing Capabilities
+
+Transitioning from isolated geographic atlas geometries, we queried whether compound sequences of Relic Foam clusters could function as higher-order spatial routing circuits (analogous to fluid-logic or electronic gates).
+
+### 22.1 Active Field Set (Section B)
+- Eq-11 Canonical Fields: $\Psi$, $\Phi$ (Active); $\mu=\kappa=\rho=0$
+- Sweep Matrix: Geometric Composites (Velocity Filter, Splitter, One-Way Funnel, Memory Cell, Shield Corridor).
+
+### 22.2 Observed Macro-Logic (Section A & C)
+**Functional Roles Confirmed:**
+- **VELOCITY FILTER:** A multi-cluster staggered offset successfully operated as a passive velocity filter. Incoming structures at low speed ($v=0.2$) passed through the central channel largely unperturbed ($\Delta Y = -1.65$px). However, ultra-fast structures ($v=0.6$) striking the same topology gradient bounds were aggressively diverted off-axis ($\Delta Y = -7.32$px). The composite arrangement successfully sorts traffic based on internal momentum.
+- **CORRIDOR SHIELDING:** Long sequences of parallel dual-walls structurally protected extreme-speed waves. 
+
+**Failed / Non-Functional Roles:**
+- **SPLITTER / SWITCH:** Attempts to create a diverging Y-junction that reliably sliced equivalent passing offset routes failed. Triads consistently absorbed the gradient and stayed straight or simply diverted slightly rather than committing to distinct isolated switch-paths. 
+- **TRAP AND RELEASE:** An 'open ring' geometry completely failed to induce dwelling/containment. Orbit dynamics remain stubbornly unresolved.
+- **STATE-DRIVEN MEMORY CELL:** A dual-wall topology was queried: Can a first high-speed grazing pass 'burn' one wall of foam, causing a secondary structural pass to route differently? **No.** Under canonical limits, the single-pass fatigue degraded the foam visually but mathematically exerted strictly $ < 1.0$px variance on the secondary trajectory. True logic-state routing remains unproven.
+
+### 22.3 Inferred Mechanics (Section D)
+**Inferred:**
+- **Passive Sorting Substrate:** Eq-11 space acts excellently as an emergent **passive logic substrate**. Just as a physical sieve sorts rocks by size, foam gradients can passively filter waves by velocity (diverting fast waves while passing slow ones) and protect fragile currents without any centralized ruleset.
+- **Lacking State-Driven Fluid Dynamics:** While passive topology is highly successful, the threshold required for one traveling wave to permanently re-write the geometry enough to conditionally switch the path of the *next* tracking wave (dynamic memory logic) is too robust. Foam exhaust heals/buffers too quickly under canonical $\Phi$ recovery rules to produce a delicate, easily flipped "bit".
+
+### 22.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- The hypothesis that Relic Foam easily forms Turing-complete spatial logic via structural degradation is currently **falsified**. Composite arrays act purely as monolithic geometric features, not sequential state machines.
