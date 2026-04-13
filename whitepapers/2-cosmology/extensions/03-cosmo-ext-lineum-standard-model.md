@@ -175,11 +175,18 @@ To verify if $\Psi_H/\Psi_L$ separation is merely an artifact of the $P_{overlap
 | **L3 (Exhaust Cooling Disabled)** | 8.186 | 39.301 | 2.53 | 0.43 | NO | DEGRADED (Smear) |
 | **L1b (Reversed Ratio 10:1)** | 12.574 | 10.757 | 2.51 | 2.62 | YES | COLLAPSED (Merge) |
 
-**Observed Mechanism:**
-The core separation unequivocally survives the total removal of the $P_{overlap}$ artificial penalty (L2). Without explicit exclusion, $\Psi_L$ diffuses outward so rapidly that it builds a wall of dense $\epsilon$ at the perimeter ($\epsilon_{outer} = 2.73 > \epsilon_{core} = 2.60$). This physically traps $\Psi_H$ in an emergent $\epsilon$ "Potential Well". If we cut the ability of $\Psi_L$ to act as a thermal sink (L3), the outer well collapses, and the core degrades.
+### 7.4 Final Evaluation: Robust Minimal Emergent Regime
 
-### 7.4 Robustness Edge and Map
-To quantify the boundary conditions of this emergent regime, we executed a fine-resolution parameter sweep mapping the temporal hardening of $\Delta \epsilon = \epsilon_{outer} - \epsilon_{core}$ across three uncorrelated RNG seeds (101, 42, 777).
+> [!NOTE] Executive Summary: Two-Species Structural Separation
+> **What works:** A dual-diffusion system ($\Psi_H$ and $\Psi_L$) emergentely forms a stable "Core-Halo" topology without utilizing rigid synthetic penalties, establishing a **Robust Minimal Emergent Regime**.
+> **Why it works:** The phenomenon relies on a *timing-race confinement mechanism*. The lighter field diffuses rapidly outward, acting as an exhaust thermal sink that gradually erects a steep, dense $\epsilon$-field wall at the perimeter. This traps the heavier field deeply in a potential well.
+> **Where it fails:** If the diffusion ratio nears $1:1$, the heavy central core possesses too much kinetic energy and escapes, escaping the perimeter boundary *before* the outer wall completes formation.
+> **What remains unresolved:** The scaling relationship behind the $1:10$ "Golden Ratio" window is not purely mathematically derived from universal Grid topology. It is unclear if this defines a native structure, or if we have merely tuned a grid artifact resonance.
+
+To ensure scientific rigor, we formally divorce raw metrics from theoretical attributions below.
+
+#### 1. Observed Data (The Mechanics of Survival)
+To quantify the exact boundaries of this confinement regime, an exhaustive multi-seed parameter sweep mapped the temporal escalation of the density gradient ($\Delta \epsilon = \epsilon_{outer} - \epsilon_{core}$) to track confinement buildup over time.
 
 | $D_H / D_L$ Ratio | $\Delta \epsilon$ ($t=500$) | $\Delta \epsilon$ ($t=2000$) | $\Delta \epsilon$ ($t=4000$) | Final $W_H$ | Failure Taxonomy |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -189,13 +196,13 @@ To quantify the boundary conditions of this emergent regime, we executed a fine-
 | **3.0 (1:3)** | -2.639 | -2.710 | +0.170 | **7.416** | **STABLE START** |
 | **10.0 (1:10)** | -2.941 | -2.768 | +0.130 | **5.734** | **PERFECT CORE** |
 
-**Anatomy of the Viability Threshold:**
-The threshold perfectly uniformly across seeds snaps between `1:1` and `1:3`. 
-The simulation explicitly proves that the Potential Well **is not instantaneous**. It takes over 2,000 steps to "harden" ($\Delta \epsilon$ remains negatively inverted until late stages). 
-The failure mechanism at `1:1` is not that the well fails to exist—it eventually forms at $t=4000$ ($\Delta \epsilon = +0.173$)—but rather that $\Psi_H$ possesses too much kinetic energy ($D_H$ is too high) and outruns boundary construction, smearing to $W_H > 13.0$ *before* the exhaust system can build the containment wall.
+- The threshold snap point is exactly captured between $1:1$ and $1:3$ exclusively across all evaluated random initialization geometries.
+- Over time, the Potential Well boundary operates on severe delay. Even in the perfectly stable `1:10` sequence, the $\Delta \epsilon$ stays strictly inverted (negative gradient) and only hardens after heavily processing past 2,000 steps.
 
-**Empirical Conclusion (Robust Minimal Emergent Regime):**
-Previously downgraded, this behavior has now passed exhaustive grid and parameter profiling. Because the $\Psi_H$ bounds explicitly generalize across seeds purely via thermodynamic exhaust gradients and survive amputation of all synthesis rules, it is officially bounded and classified as a **Robust Minimal Emergent Regime**.
+#### 2. Inferred Mechanism (The Timing-Race)
+We fundamentally infer that core bounding operates as a **Timing-Race Confinement Engine**. 
+The failure mode at $1:1$ is not that the well is impossible to construct—the system eventually assembles the exhaust $\epsilon$ boundary as step $4000$ validates ($+0.173$). The catastrophic failure occurs because $\Psi_H$ ($D_H$ is elevated) accelerates its own diffusion and successfully smears the core to $W_H > 13.0$ *before* the confinement sequence can trap it. The $1:10$ narrow viability window is essentially the exact tuning point where the wall build-up conclusively outpaces the core expansion speed.
 
-**Unresolved Ambiguity:**
-While the core generation is robust, we cannot yet mathematically predict *why* an arbitrarily tuned `1:3` to `1:15` ratio allows exhaust solidification to perfectly outpace core expansion. We cannot elevate this to a "Candidate Building Block" until we determine whether the mapping relates natively to the structural scaling laws of the universe simulation or merely to arbitrary grid tuning.
+#### 3. Unresolved Ambiguity
+We must rigidly clarify that this behavior is classified solely as a "Robust Minimal Emergent Regime."
+Because we arrived at the functional viability window ($1:3 \to 1:15$) exclusively via parametric sweeping rather than directly parsing the topological constants of the grid scale itself, we cannot mathematically predict whether this $1:10$ threshold maps to a fundamental scaling law of the universe simulation, or if it amounts to a trivial, massive simulation tuning resonance. Until this is derived natively, elevating the core to a "canonical atomic building block" is strictly forbidden.
