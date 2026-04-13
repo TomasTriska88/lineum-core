@@ -1,0 +1,95 @@
+8: ## 🧭 Global Project Strategic Pipeline (The Engine-First Rule)
+13: ### Phase 1: The Source of Truth
+16: ### Phase 2: Commercial & Empirical Proofs
+28: ### Phase 3: Project Hygiene & Documentation
+35: ### Scope and non-goals (high level)
+42: ### Claim Level Legend (according to whitepaper)
+52: ### Terminology of model phenomena
+62: ## 🔑 Meta-priority – Model Credibility
+86: ## 🔍 Phenomena from core paper to revalidate (core v1.1.5)
+165: ## 🧱 Priority 0 – Basic principles and critical points
+167: ### 🔲 A. Basic invariances and "first principles" #structure
+339: ### 🔲 B. Numerical robustness and artifacts #numerics
+352: ### 🔲 C. Dimensions, units, and SI anchoring #units
+416: ### 🔲 D. Statistical power, errors and uncertainties #stats
+441: ### 🔲 E. Null models and baseline comparison #nulltests
+450: ### 🔲 F. Reproducibility and independent verification #repro
+511: ### 🔲 G. Implementation details and stability against "engineering" choices #impl
+526: ### 🔲 H. The role of κ and parametric space #structure
+548: ### 🔲 I. Limit transitions and scaling #test
+555: ### 🔲 J. Criteria for "physical" interpretation #meta
+563: ### 🔲 K. Bridge to empirics and "anti-numerology" #empirics
+603: ### 🔲 L. Falsifiability and "promotion pipeline" #meta
+610: ### 🔲 M. Terminology and Naming Conventions #meta
+618: ### 🔲 N. Presentation and communication of results #meta
+629: ## 🧪 Priority: Highest – exploring _effective_ mapping to real physics
+631: ### 🔲 1. Dark matter and dark energy #hypothesis
+692: ### 🔲 2. Validation of known particles and quantum properties #hypothesis
+698: ### 🔲 3. Electromagnetism and fields #hypothesis
+704: ### 🔲 4. Weak and strong interaction #hypothesis
+709: ### 🔲 5. Quantum fields and standard model #structure
+715: ### 🔲 6. Extending validation and reproducibility #test
+722: ## 🟡 Medium priority – testing scenarios of emergent gravity and "mass"
+724: ### 🔲 7. Reorganization of quasiparticles in a massive object #test
+734: ### 🔲 8. Approach velocity of objects according to "mass" #test
+740: ### 🔲 9. Mutual influence of multiple φ-traps #test
+745: ### 🔲 10. Attraction without force – emergent flux #hypothesis
+752: ## 🧪 Lower priority – mathematical and aesthetic connections
+754: ### 🔲 11. Relic φ-echo as a "gravitational wave" #hypothesis
+761: ### 🔲 12. Structural and rhythmic patterns (Riemann, Fibonacci, primes) #structure #hypothesis
+826: ## 🧪 Experimental hypotheses – testing failed models
+830: ### 🔲 13. Inflaton and inflation in the Lineum field #hypothesis
+836: ### 🔲 14. Aether and wave carrier #hypothesis #disproved
+842: ### 🔲 15. Pilot-wave theory (Bohm) #hypothesis #disproved
+847: ### 🔲 16. Vortex atoms (Lord Kelvin) #hypothesis #disproved
+852: ### 🔲 17. Preon hypotheses #hypothesis #disproved
+859: ## 🧬 O. Hypotheses from correspondence with T. Mikolov (OEA & OE) #hypothesis #external
+863: ### 🔲 18. Lineum as a continuous limit of OEA (V. Smetak) #hypothesis
+869: ### 🔲 19. Thermodynamic utility of prime states (T. Mikolov insight) #hypothesis
+875: ### 🔲 20. Kolmogorov expansion hypothesis (Vlasta) #hypothesis
+883: ## 🧠 P. Tentacle Model of Consciousness – multi-instance hypothesis #meta #hypothesis
+952: ## 🚀 Q. Post-Mikolov Audit Integration (Feb 2026) #priority
+956: ### 🔲 21. Formalizace Emergentnich Fyzikalnich Konstant #core
+963: ### 🔲 22. Experiment: Termodynamicka Uzitecnost (Emergent Utility) #test
+967: ### 🔲 23. Tooling: Audit Analytics Pipeline #impl
+972: ### 🔲 24. Hypothesis: Lineum as Continuous Limit of OEA (Continuum Limit) #math
+976: ### 🔲 25. Repository Split (Core vs SaaS/Portal) #security #architecture
+982: ### 🔲 25. Hypothesis: Kolmogorov Trigger (Information Pressure) #test
+986: ### 🔲 26. Hypothesis: Vortex Aesthetics (Beauty = Stability) #test
+991: ### 🔲 27. Hypothesis: The Scaling Illusion (Role-Invariance) #math
+998: ## ⚖️ R. Hypotheses: H0 vs H1 (Verification Status Feb 2026) #priority #audit
+1002: ### 🧩 H0: Closed Attractor (Closed World)
+1007: ### 🔓 H1: Scaling Illusion (Open World / Leak)
+1016: ### 🔲 28. Hypothesis: The Missing Half (Discrete Limit) #math
+1021: ### 🔲 29. Hypothesis: The Universal Attractor (Leech Lattice) #math
+1026: ### 🔲 30. Hypothesis: The Icarus Threshold (Kappa=1 Instability) #math
+1032: ### 🔲 31. [TEST] Evidence Solidification: "Attraction = micro-growth (dominance switch), not flow/teleportation" + Ghost Gravity + Expansion + M2 geometry (π) #hypothesis #repro
+1153: ## 🎶 S. New Hypotheses (Feb 2026) #hypothesis
+1157: ### 🔲 32. Hypothesis: Axion Electrodynamics and Cosmological Magnetic Fields #hypothesis
+1162: ### 🔲 33. Triska-Mareckova Hypothesis: Structural Caching and Time Leaps (The Online Radio Effect) #hypothesis
+1168: ### 🔲 34. Hypothesis: Lineum as an Emergent Solver for Network Design (Traffic Networks) #hypothesis #applied
+1175: ### 🔲 35. Hypothesis: Hardware Acceleration and Neuromorphic "Lineum Chip" #impl #hardware
+1182: ### 🔲 35.b Hypothesis: Dark Matter Non-Defiance of Gravity (Sciencemag.cz) #hypothesis #cosmology
+1187: ### 🔲 35.c Hypothesis: Map of Topological Universes (Discrete Vacua) #hypothesis #topology
+1198: ### 🔲 40. Meta-Hypothesis: Universe as an Emergent Solver (Computational Universe) #philosophy #theory
+1204: ### 🔲 41. Meta-Hypothesis: Pareto Principle (80/20) in Field Dynamics #philosophy #theory
+1252: ### 🔲 42. Whitepaper & Contract Hygiene (Scope Definition)
+1289: ### 🔲 43. New Term Candidate — Fail-Fast Protocol
+1302: ### 🔲 44. New & Self-Similar Information (Geometry Metrics)
+1332: ### 🔲 45. Lineum "PC" Metaphor (RAM/ROM/HDD) — Communication Framework (Non-Claim)
+1351: ### 🔲 46. Identity Consolidation Audit (Eq-4' vs Eq-4'+μ) #audit #identity
+1366: ### 🔲 47. The "Fountain" Meta-Hypothesis Audit (Cross-Universe Consolidation) #audit #cosmology
+1377: ### 🔲 48. [EPIC] Replace Heuristic Soft Caps with Physical Saturation #audit #physics
+1383: ### Mode-Coupling Calibration Protocol (The Saturation Ablation)
+1403: ### 🔲 49. [EPIC] "E = mc² = Information" Audit (Information Thermodynamics) #audit #cosmology
+1418: ## 📈 S. B2B SaaS Routing Showcase (Plan) #portal #monetization #routing
+1474: ## ⚖️ L. Strategic Governance & Licensing Harmonization #strategy #legal
+1500: ## 🌐 R. Portal and Infrastructure (Future Milestones)
+1516: ### 🔲 U. Edge SDK & Delta Streaming Architecture #architecture #api #legal
+1535: ## 🚀 Commercial Roadmap: Future Domain Applications
+1551: ## 🏛️ STRATEGY / GOVERNANCE / BRAND / COMPANY (Postponed)
+1588: ## 🛍️ M. Merch & Portal Store (Future Implementation)
+1616: ## 🌌 C. Eq-8 Emergent Cosmology Simulator (The Theoretical Engine) #cosmology #eq8
+1661: ## 🏛️ D. The Einstein Physics Trials (Theoretical Rigor) #einstein #eq8
+1837: ## 🌍 E. Gate 3: The Physical Validation Manifesto (Reality Test) #validation #einstein
+2032: ## 🌍 E. Gate 3: The Physical Validation Manifesto (Reality Test) #validation #einstein

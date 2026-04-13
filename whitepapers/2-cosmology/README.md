@@ -1,6 +1,13 @@
 
 <!-- INDEX_START -->
-## 📚 Document Index
+## 📚 Canonical Extensions (Mathematical Foundations)
+
+| Document | Description | File |
+| :--- | :--- | :--- |
+| 04 — Vortex Rigidity | Analyzes open-medium failures, boundary requirements, and the physics of Vortex Drag. | [04-cosmo-ext-vortex-rigidity.md](extensions/04-cosmo-ext-vortex-rigidity.md) |
+| 05 — Thermodynamic Attractor (Closed-Energy Model) | Introduces a closed-energy formulation via environmental field E(x,y), transforming the system from an open unstable saddle into a dynamic attractor. Provides experimental validation, robustness testing, and distinction from prior depletion-based boundary models. | [05-cosmo-ext-thermodynamic-attractor.md](extensions/05-cosmo-ext-thermodynamic-attractor.md) |
+
+## 📚 Theoretical Hypotheses
 
 | Document | Status | File |
 | :--- | :--- | :--- |

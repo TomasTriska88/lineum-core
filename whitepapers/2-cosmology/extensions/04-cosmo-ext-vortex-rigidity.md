@@ -533,6 +533,8 @@ Lineum does NOT collapse entirely into any established canonical model. While pl
 
 ## 50. Boundary Origin Audit: Finite Medium Exhaustion
 
+> [!NOTE]
+> **Superseded by Closed-Energy Formulation:** The unilateral depletion and R-field models explored in Sections 50-52 have been formally superseded. For the definitive closed-energy limit cycle and resolution of Vortex Drag, see [05-cosmo-ext-thermodynamic-attractor.md](./05-cosmo-ext-thermodynamic-attractor.md).
 *Status: **TEST EXECUTED. ORIGIN CLASSIFIED.***
 
 **Objective:**
