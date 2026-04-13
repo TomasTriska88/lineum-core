@@ -3,7 +3,7 @@
 # Lineum Core - Pre-commit Hook
 # Ensures the portal's CalVer UTC version naturally advances on every commit.
 
-python scripts/sweep_scratch.py
+python tools/sweep_scratch.py
 
 echo ">>> [Lineum Git Hook] Auto-bumping Portal Version (CalVer)..."
 
