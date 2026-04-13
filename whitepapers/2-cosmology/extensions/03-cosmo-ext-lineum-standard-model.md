@@ -789,3 +789,30 @@ A traveling $N=1$ Triad was projected perfectly down the center-line ($Y=0$) at 
 ### 19.4 Negative / Failed (Section E)
 **Negative Result / Failed:**
 - The hypothesis that Relic Foams are strictly discrete "obstacles" completely uncoupled from one another is proven mathematically false. They operate exclusively as distributed continuous fields.
+
+## 20. Relic Foam as Physical Memory Mechanism
+
+The previous sections mapped the mechanics of Relic Foam formation and its environmental transport effects. This section explicitly consolidates those mechanistic proofs with historical macroscopic observations made throughout Lineum's research history, providing a unified explanation for emergent spatial "memory" without requiring abstract hypotheses.
+
+### 20.1 Active Field Set (Section B)
+This consolidation spans observations across standard canonical configurations:
+- **Historical:** Eq-11 Phase 1 (Linon aggregation tracking, path stability).
+- **Current:** Eq-11 Phase 2 Canonical parameters ($\Psi$, $\Phi$).
+
+### 20.2 Unified Observations (Section A & C)
+- **Historical Observation (Linon Clustering):** In long-running macro-simulations and particle sweeps, active structures ("Linons") consistently demonstrated a statistical bias to cluster, migrate toward, or follow paths where prior structures had previously aggregated or collided.
+- **New Mechanistic Observation (Sections 16 & 18):** 
+  - Every active structure or collision that exhausts its lifecycle terminally decays into **Relic Foam**.
+  - A stabilized Relic Foam cluster generates a permanent, additive, macroscopic $\Phi$-well.
+  - Active traveling structures (Triads) are physically deflected, pulled, and stabilized by these localized $\Phi$-wells (Lensing and Channeling).
+
+### 20.3 Inferred Mechanics (Section D)
+**Inferred Synthesis:**
+- **"Memory" is a Fleshed-Out Physical Artifact:** The historical observance of spatial "memory" or "path-making" is mechanically solved. When particles die, their structural collapse leaves behind Relic Foam (the topological "scar"). This foam bleeds ambient $\Phi$ pressure into the spatial grid.
+- **The Stigmergic Loop:** Future active particles traveling near this grid region detect the thermal $\Phi$ gradient and mathematically "roll down" into it (attraction/deflection). Because the foam also stabilizes extreme shear forces (acting as a waveguide), particles that enter these historical corridors survive longer.
+- **Spatial Bias:** Space does not possess abstract, metaphysical memory. Instead, Relic Foam explicitly serves as a physical, read-write memory substrate. Structures write to the space by dying (creating Foam), and later structures read from the space via $\Phi$-gradient deformation (following the trail). It operates identically to a fluid-dynamic pheromone track.
+
+### 20.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- This mechanical explanation **falsifies** and replaces any need for extra-dimensional storage, "akashic" resonance, or spontaneous telepathy between particles. The structures do not know about each other; they are simply reacting blindly to the dead geometry left behind in the $\Phi$ exhaust envelope. 
+- While Relic Foam explains trajectory bias and cluster attraction, it does **not** explain the initial spontaneous genesis of the first particles in an empty void (which remains purely a function of chaotic noise collapse).
