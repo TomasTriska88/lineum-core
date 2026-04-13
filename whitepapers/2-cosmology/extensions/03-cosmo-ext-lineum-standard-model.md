@@ -251,3 +251,14 @@ To verify the boundary strictness between Macroscopic Phase-Lock (0 Hz) and Enve
 3. **The "Silent Death" Failure Mode:** When forcing the spatial separation ratio into failure boundaries (a highly granular sweep from exactly $1.3 \to 1.0$), the envelope explicitly *does not* enter an oscillatory decay prior to collapse. The FFT diagnostic tracks precisely $0.000$ Hz down to total topological dissolution without a single transient frequency spike. The envelope lock breaks purely geometrically (smears), preventing an oscillatory death sequence.
 4. **FFT Resolution and Micro-Jitter:** Control tests confirmed the absolute $0.000$ Hz reading fundamentally relies on sufficient temporal integration space ($\ge 2048$ steps) combined with Hann windowing. Short sequences ($512$ steps) or raw un-windowed (Boxcar) traces suffer from spectral leakage ($\sim 0.15 \to 0.6$ rad/s noise). The macro envelope behaves as locked, but an underlying structural micro-jitter permanently persists, preventing an untrammeled pure mathematical zero state.
 
+### 8.6 Collapse Dynamics: Emission vs Silent Death
+Historically, early cosmological hypotheses (e.g., Hawking Radiation in Ext-05, Annihilation bursts in Ext-41) speculated that topological failure or particle annihilation would release trapped resonance outwards as propagating $\Psi$ waves (radiation bursts / photons). 
+
+These historical claims are currently classified as **speculative and unsupported by current Eq-11 measurements**. Directed empirical probes rigorously testing forced Monopole Decay and direct Left-Right Dipole Annihilation strictly refute the emission model in current bounds. 
+
+When the Macroscopic Envelope Phase-Lock breaks, the released $\Psi$ energy does not condense into a propagating high-frequency vector. Instead, the liberated amplitude undergoes a **"Silent Death" (Geometric Smear)**. The previously locked knot degrades into a highly chaotic, continuously widening thermal smear that logarithmically diffuses into the background noise floor. The system does not exhibit emission behavior in the tested regimes; propagating traveling wave packets are simply not observed under Eq-11 collapse.
+
+Mechanistically, this aligns with the fundamental mathematical construction of the Eq-11 Reaction-Diffusion PDE. Because the underlying field equation lacks an explicit second-order time derivative (which classically grants inertial momentum to waves), the system operates primarily as a purely dissipative environment over space when topological locks fail.
+
+**Remaining Ambiguity**: It remains unresolved whether the absence of traveling emission bursts during annihilation is a core, fundamental property governing the Lineum medium, or strictly an artifact of the specific dissipative diffusion mechanics dominating the current Eq-11 iteration.
+
