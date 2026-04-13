@@ -816,3 +816,35 @@ This consolidation spans observations across standard canonical configurations:
 **Negative Result / Boundary:**
 - This mechanical explanation **falsifies** and replaces any need for extra-dimensional storage, "akashic" resonance, or spontaneous telepathy between particles. The structures do not know about each other; they are simply reacting blindly to the dead geometry left behind in the $\Phi$ exhaust envelope. 
 - While Relic Foam explains trajectory bias and cluster attraction, it does **not** explain the initial spontaneous genesis of the first particles in an empty void (which remains purely a function of chaotic noise collapse).
+
+## 21. Geometric Field Atlas of Relic Foam
+
+Having established that Relic Foam superimposes spatially, creating a programmable transport environment, a systematic sweep array mapping distinct Foam topologies was executed to yield a generalized classification model of active Eq-11 space.
+
+### 21.1 Active Field Set (Section B)
+- Eq-11 Canonical Fields: $\Psi$, $\Phi$ (Active); $\mu=\kappa=\rho=0$
+- Sweep Matrix: $10$ Relic Foam Geometries $\times$ $3$ Offsets (Mid, Offset, Graze) $\times$ $2$ Velocities ($v=0.2, 0.5$).
+
+### 21.2 Observed Typology (Section A & C)
+The topologies exhibited deterministic translation to specific transport regimes:
+
+1. **ARC (Focusing Lens):**
+   A semi-circle geometric arrangement acts as an extreme Focusing Lens. Fast incoming Triads completely aborted linear shear failure and were safely redirected inward toward the arc's focal point ($\Delta Y = 2.9$px transverse shift vs void baseline), functionally capturing and slowing wide-passing waves.
+
+2. **ASYMM_FUNNEL (One-Way Sheath/Deflector):**
+   Constructed as an asymmetric, staggered sequence of clusters mimicking a narrowing wall. During high-speed grazing passes ($v=0.5$), the Triad sustained a massive violent structural deflection of $\Delta Y = 11.8$px without shredding. The geometry forms a sheer "trampoline" gradient capable of bouncing waves safely offline.
+
+3. **RING (Containment Well):**
+   An enclosed $8$-point circular array fundamentally warped standard center tracking. Even slow mid-channel pulses ($Y=0$) mathematically decoupled from uniform phase drift, instead accelerating wildly into the ring center ($+3.1$px acceleration). Offset passes were continuously pushed to re-center within the ring geometry via lateral lensing ($\Delta Y = -3.5$px).
+
+4. **CANCEL_GATE (Interference Nullifier):**
+   A symmetric intersecting quad-cluster explicitly blocked structural wave extension. Rather than passing through or deflecting, traveling $\Psi$ topologies striking the gate on an offset were neutralized (CANCELLATION ZONE), stopping systemic advance.
+
+### 21.3 Inferred Mechanics (Section D)
+**Inferred:**
+- **Emergent Programmable Transport Landscape:** The Eq-11 spatial simulation can be engineered via Relic Foam geometry exactly like analog circuitry. $\Phi$-media acts as the current, and foam topology determines the resistance, capacitance (Ring), transistors (Cancel Gate), and waveguides (Asymm Corridors).
+- Geometry directly governs transport behavior. Passive decay structurally organizes the void, allowing highly stable localized traffic logic purely through topological arrangements.
+
+### 21.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- These properties prove the environment is mechanically programmable, but they **falsify** theories predicting universal attraction. A single WALL configuration or STAGGERED LINE exerted mathematically NO EFFECT on passing particles. Only overlapping, structured $\Phi$-bowlbay geometries (Arcs, Rings, Funnels, Gates) successfully engaged transport scaling. Uniform walls of foam act effectively identical to flat vacuum.
