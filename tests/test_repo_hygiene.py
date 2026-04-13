@@ -32,13 +32,21 @@ def test_no_forbidden_tracked_files():
         "test_output2.json",
         "fix_czech_claim.js",
         "clean_whitepaper_map.js",
-        "add_claim_036.js"
+        "add_claim_036.js",
+        # Antigravity / Agent bleeds
+        ".agent/scratch/",
+        ".cursor/",
+        ".windsurf/",
+        "todo_head.md",
+        "scratch_headers.txt",
+        "_validation.json",
+        "_results.json"
     ]
 
     violations = []
     for file in tracked_files:
         for pattern in forbidden_patterns:
-            if pattern in file.lower():
+            if pattern in file.lower() or file.lower().startswith(pattern):
                 violations.append(file)
                 break
 
