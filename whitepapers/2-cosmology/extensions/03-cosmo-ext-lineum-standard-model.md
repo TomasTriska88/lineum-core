@@ -732,3 +732,31 @@ Across all permutations (Direct/Grazing, Fast/Slow, $\Phi$ ON/OFF):
 **Negative Result / Failed:**
 - The hypothesis that Relic Foam could serve as a permanent, immortal re-ignition substrate—where a particle passes through, spawns a new structure, and the foam returns exactly to its $17$-node ground truth—is definitively **falsified**. Foam suffers permanent structural fatigue after secondary emission.
 - We found no evidence of **Conditioning** (where a prior hit makes the foam highly organized or tuned for a stronger subsequent response).
+
+## 18. Relic Foam As Environment (Transport & Trajectory)
+
+Upon determining that Relic Foam is a depleted, stateful mass, testing shifted from material properties to field interactions: Does the localized presence of Relic Foam actively modify the dynamics of surrounding space? Does it bend trajectories, induce drag, or trap traveling structures passing nearby?
+
+### 18.1 Active Field Set (Section B)
+Canonical bounded Eq-11 Phase 2 parameters.
+- **Active Fields:** $\Psi$ (structure), $\Phi$ (thermal exhaust layer / bow wave medium).
+- **Base Control:** Matured canonical Relic Foam isolated as a stable $17$-node localized cluster at $(0, 0)$.
+- **Vacuum Control:** A perfect baseline void with identical propagation tracking but no Foam cluster.
+
+### 18.2 Full Sweep Observations (Section A & C)
+A traveling $N=1$ Triad was launched from outside the domain boundary toward the central region, sweeping crossing velocity, internal phase orientation, entry $Y$-offset (Grazing vs Direct), and $\Phi$-ablation. We rigorously tracked the Center of Mass across $1500$ timesteps against a flat baseline void.
+
+**Observed:**
+- **Attractive Deflection (Lensing):** Slower and medium-speed Triads grazing the lateral boundary of the Foam ($Y=20$px offset) did not maintain purely linear phase travel. They universally curved inward toward the Relic Foam, pulling their trajectory precisely $\approx -1.8$px off straight-line baseline by step $1500$. This curvature was independent of the Triad's internal signed orientation (aligned or anti-aligned made zero difference).
+- **High-Speed Environmental Stabilization:** In a pure vacuum context, pushing a Triad's velocity to extreme shear modes ($v=0.5$, $\Phi$ OFF) naturally causes catastrophic structural shredding; the Triad dies completely in the empty void. **Crucially**, when that exact same fatal trajectory grazes the edge of the Relic Foam, the Triad **survives** the journey effortlessly. The nearby resting mass of the foam stabilizes the traveling structure's field geometry.
+- **Zero Drag Acceleration Anomaly:** During slow direct hits (center passes), tracking indicated the Triad was physically *drawn into* the deep center of the Foam collision region significantly faster than its native vacuum travel parameter, functioning as a sudden localized "suck" effect pulling the wave packet inward.
+
+### 18.3 Inferred Mechanics (Section D)
+**Inferred:**
+- **Foam is an Active Deflection Environment:** Relic Foam is NOT just a passive isolated scar. It sustains a macroscopic ambient $\Phi$-well. Traveling structures sense this thermal gradient and “roll down” into it. This gravitational-like lensing operates purely on the fluid-thermodynamic $\Phi$ pressure boundary.
+- **Co-stabilization Waveguiding:** High-speed structures shear apart because they lack a stabilizing thermal "carpet." Relic Foam bleeds ambient $\Phi$ into the surrounding grid. By flying physically near the Foam cluster, the extreme Triad structurally leeches off this ambient thermal blanket, surviving speeds that would otherwise shred it. The environment acts as an invisible waveguide or protective sleeve.
+- Thus, while visually resting and dead, **Relic Foam creates profound macro-structuring currents** in the void.
+
+### 18.4 Negative / Failed (Section E)
+**Negative Result / Failed:**
+- **No True Localization/Trapping Observed:** While the foam pulls Triads inward (Deflection/Lensing), it does not act as a permanent "Venus Flytrap" that seamlessly sticks the particle to its outer edge as a satellite (Orbit). If it impacts, it shatters (Section 16); if it grazes, it curves but continues. Clean permanent orbital localization around Relic Foam was falsified under canonical limits.
