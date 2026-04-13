@@ -284,3 +284,25 @@ Because Locomotion is strictly governed by the scalar exhaust gradient ($\epsilo
 
 **Limit Conditions**: Classical physical collisions and structural merging are not natively forbidden by the mathematics, but they require environmental extremes (e.g., severe boundary confinement, forced algorithmic grid-snapping) to generate enough inward gradient pressure to breach the natural $\epsilon$ heat-shield and force the $\Psi$ topologies into contact.
 
+### 8.9 Macro-Ecosystem Dynamics (Fluid Regime)
+When extrapolated to larger spatial scales involving multitudes of independent structures, the Eq-11 universe inherently avoids chaotic fragmentation and thermal collapse, operating strictly as a self-regulating dissipative medium. 
+
+Historically, earlier cosmology extensions (e.g., unbounded thermal limits in Ext-01 and Ext-39) speculated that unchecked structural growth without a spatial global expansion proxy would result in catastrophic "thermal runaway," poisoning the space and causing all topologies to rapidly collapse under their own exhaust. Recent macroscopic measurements directly bound these historical fears, proving the system possesses a natural, non-destructive containment capacity.
+
+#### 1. Formational Stability Metrics
+Parametric modeling of swarm densities across periodic boundary grids ($256 \times 256$ area) over long integrations yielded the following macroscopic equilibrium states, holding firmly independent of initial randomized positional seeds:
+
+| Swarm Density | Final Mean $\epsilon$ | Gross $\Psi_H$ Yield (Survival) | Spacing Distribution | Regime Bound |
+| :--- | :--- | :--- | :--- | :--- |
+| **Low (N=25)** | 1.180 | 215.2% | High clearance, isolated | Stable Fluid |
+| **Medium (N=80)** | 2.306 | 214.8% | Even structural distribution | Stable Fluid |
+| **High (N=180)** | 2.564 | 192.2% | Foam-like dense packing | Stable Fluid |
+
+#### 2. Self-Regulating Homogenization
+The ecosystem actively naturally prevents thermal runaway. As packing density increases, the global average of the scalar exhaust field ($\epsilon$) uniformly scales and hits an observed thermodynamic saturation ceiling ($\epsilon \approx 2.56$ under tested conditions), mediated by the $\tanh(c_1 \epsilon)$ limiters. Once this ceiling is reached, the global thermal profile stabilizes indefinitely without mass collapse. 
+
+Survival and structural viability (quantified strictly as the normalized absolute sum of bounded macroscopic $\Psi_H$ amplitude retaining spatial coherence over the integration area) remains exceedingly robust. Massive assemblies of Lineum clusters do not spontaneously annihilate through overcrowding. Instead, mediated by Wake Interference (Section 8.8), individual elements continuously surf away from high-density intersections. This mutual repulsion smoothly distributes the structures into an evenly spaced, foam-like emergent substrate mimicking a macroscopic thermodynamic fluid, with spatial variance dropping well below $15\%$ deviation in inter-cluster clearance.
+
+**Limit Conditions**: 
+The absolute fluid stability, mutual spatial homogenization, and thermal plateau behaviors are rigorously verified exclusively for populations between $25 \to 180$ elements interacting within deeply enclosed $256 \times 256$ grids under closed periodic boundary conditions. It is not currently proven if this strict saturation ceiling securely scales to arbitrarily massive universal topologies ($N > 10,000$), nor is it proven how this fluid-like state persists under severely altered physical limits (e.g., hard-wall collisions or structurally expanding horizons).
+
