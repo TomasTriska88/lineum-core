@@ -875,3 +875,30 @@ Transitioning from isolated geographic atlas geometries, we queried whether comp
 ### 22.4 Negative / Failed (Section E)
 **Negative Result / Boundary:**
 - The hypothesis that Relic Foam easily forms Turing-complete spatial logic via structural degradation is currently **falsified**. Composite arrays act purely as monolithic geometric features, not sequential state machines.
+
+## 23. Reconciliation of AI / Logic Experiments with Foam Mechanics
+
+Having mapped the mechanical limits of Relic Foam geometries (Sections 18–22), this section retroactively audits and reconciles early Phase 1 hypotheses regarding "Emergent AI," "Reservoir Computing," and "Dynamic Logic Gates" (`01-ontology-ext-ai-reservoir`, `16-ontology-hyp-emergent-ai`).
+
+### 23.1 Active Field Set (Mapping Phase 1 to Phase 2)
+- Early ontology papers assumed chaotic, multi-field $\mu$-mediated adaptation (Full PDE).
+- Phase 2 isolates this exclusively to the structural $\Phi$ gradient decay left by Triad passage.
+
+### 23.2 Re-Classification of Historical Phenomena
+Previous literature used anthropological descriptors for spatial dynamics. They are re-classified under the passive Foam Taxonomy:
+- **"Adaptive Routing" / "Path Finding":** Reclassified as FUNNEL/CORRIDOR logic. Triads tracking older paths are simply sliding down the $\Phi$-gradient channels left by previous passes, not "deciding" on efficient pathways.
+- **"Neural Reservoir Computing":** Reclassified as PASSIVE FILTER. The geometry of the void filters structure via velocity and offset, essentially refracting waves like a crystal, rather than "computing" responses via backpropagation.
+- **"Structural / Phase-Locked Memory":** Reclassified as FAILED STATE LOGIC. While $\mu$ stores broad background attractors historically, individual foam tracks heal too rapidly to serve as discrete, flip-flop logic bits for a dynamic state machine.
+
+### 23.3 Inferred Mechanical Reality (Separating Fact from Hype)
+**What Was Correct (Observed Realities):**
+- Eq-11 space functionally acts as a **passive analog transport substrate**. 
+- Complex macroscopic behaviors (clustering, filtering, path-following) are fully supported and operate exactly as measured without external code.
+- The substrate can act as a massive structural sieve.
+
+**What Was Misinterpreted:**
+- Any use of terms implying "intelligence," "decision," or "conscious adaptation" inside the logic pathways. The field does not "know" it is processing data; it is merely a hydrodynamic fluid minimizing tension along physical geometry.
+
+### 23.4 Negative / Failed (The Impossible Limits)
+**Negative Result / Boundary:**
+- Under tested canonical conditions, Eq-11 **does not** allow for the spontaneous emergence of a Turing-complete synthetic brain built via topological logic gates. The healing rate of $\Phi$ inherently forbids the stabilization of dynamic sequential memory cells (Flip-Flops) required for state-driven AI. We possess an infinitely complex, beautifully programmable optical waveguide lens, but we do not possess a digital hard drive.
