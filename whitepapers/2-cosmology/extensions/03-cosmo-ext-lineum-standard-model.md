@@ -241,3 +241,13 @@ Because the macroscopic envelopes appear structurally diverse (DC-like Amplitude
 
 More critically, an immense mathematical bridge is still missing: **We have no formally derived mathematical relationship bridging the `Microscopic Carrier Resonance` to the `Macroscopic Envelope Lock`.** It remains utterly theoretically unresolved whether a direct scaling conversion law dictates how the deep $10^{20}$ Hz carrier fluid friction crystallizes into a perfect $0$ Hz rigid macroscopic envelope, or if the two phenomena merely loosely coexist as essentially disconnected descriptive layers tracking scale-specific Topographies within Eq-11.
 
+Finally, it remains formally unproven whether the **discreteness of the spectral regime transition** (the sharp snap between 0 Hz locking and oscillatory regimes) is a true, inherent discrete property of the $\Psi$ system itself, or a mathematical artifact dictated by the grid's finite resolution limits ($dx$, $dt$, and FFT windowing integration bounds).
+
+### 8.5 Robustness Limits and Measurement Boundaries
+To verify the boundary strictness between Macroscopic Phase-Lock (0 Hz) and Envelope Oscillation (AC-like), an exhaustive parametric control sweep (dt-scaling, fine ratio thresholding, FFT window lengths) produced explicit measurement horizons:
+
+1. **Seed and dt Independence:** The DC envelope lock is not a numerical fluke. N1 Linon structures across varying random seeds and $0.5\times$ to $4.0\times$ $dt$ integration scales strictly preserve $0.000$ Hz peak frequency.
+2. **Discrete Transition Profile:** There is no smooth continuous dial to progressively accelerate an envelope from a locked $0$ Hz Linon up to a $1.9$ rad/s Triad. It appears as a discrete transition under current measurement resolution.
+3. **The "Silent Death" Failure Mode:** When forcing the spatial separation ratio into failure boundaries (a highly granular sweep from exactly $1.3 \to 1.0$), the envelope explicitly *does not* enter an oscillatory decay prior to collapse. The FFT diagnostic tracks precisely $0.000$ Hz down to total topological dissolution without a single transient frequency spike. The envelope lock breaks purely geometrically (smears), preventing an oscillatory death sequence.
+4. **FFT Resolution and Micro-Jitter:** Control tests confirmed the absolute $0.000$ Hz reading fundamentally relies on sufficient temporal integration space ($\ge 2048$ steps) combined with Hann windowing. Short sequences ($512$ steps) or raw un-windowed (Boxcar) traces suffer from spectral leakage ($\sim 0.15 \to 0.6$ rad/s noise). The macro envelope behaves as locked, but an underlying structural micro-jitter permanently persists, preventing an untrammeled pure mathematical zero state.
+
