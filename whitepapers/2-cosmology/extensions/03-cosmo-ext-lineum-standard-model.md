@@ -207,31 +207,37 @@ The failure mode at $1:1$ is not that the well is impossible to construct—the 
 We must rigidly clarify that this behavior is classified solely as a "Robust Minimal Emergent Regime."
 Because we arrived at the functional viability window ($1:3 \to 1:15$) exclusively via parametric sweeping rather than directly parsing the topological constants of the grid scale itself, we cannot mathematically predict whether this $1:10$ threshold maps to a fundamental scaling law of the universe simulation, or if it amounts to a trivial, massive simulation tuning resonance. Until this is derived natively, elevating the core to a "canonical atomic building block" is strictly forbidden.
 
-## 8. Spectral Signature Hypothesis
+## 8. Spectral Signature Hypothesis (Macroscopic Envelope vs Microscopic Carrier)
 
-Does Lineum possess a "unified frequency scale" underpinning its $\Psi$ field dynamics? Can the various phenomena (Chaos, Free waves, Static solids) be placed along a single dimensional continuum of frequency?
+Does Lineum possess a "unified frequency scale" underpinning its $\Psi$ field dynamics? Historically, earlier physics (Ext-02) hypothesized a continuous logarithmic scale, estimating atomic structure generation at a hyper-frantic $10^{20}$ Hz. 
 
-To answer this, we introduced the first direct temporal Fast Fourier Transform (FFT) analysis of the local $\Psi(t)$ field, logging complex values over both strictly fixed spatial points and comoving coordinates (anchored to the moving peaks) for $4096$ timesteps.
+To expand this analytically to the Eq-11 bound phenomena without colliding with historical mechanisms, we applied temporal Fast Fourier Transform (FFT) tracking to localized comoving peaks. **Crucially, this new Eq-11 diagnostic does not measure the underlying microscopic grid-carrier frequency. It measures the macroscopic structural envelope.**
 
-### 8.1 Observed Spectra
-We empirically cross-analyzed the temporal Power Spectrum across three distinct Lineum regimes. Currently, these metrics are extracted from the complex amplitude tracked exactly at the comoving peak:
+### 8.1 Disambiguation: What is Being Measured
+Before analyzing the data, we must strictly separate the two levels of topological measurement to avoid methodological collision. The historical $10^{20}$ Hz boundary is a *Historical Inferred Interpretation* (derived by mapping arbitrary simulation parameters to real-world SI constants post-hoc), while the Eq-11 FFT diagnostic logs a direct dynamic observable.
+
+| Metric Name | Measured Object | Spatial/Temporal Scale | Observable | Physical Interpretation | Layer |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Grid-Level Oscillation** | $\Psi$ Fluid Friction | Microscopic / Grid $dt$ | Average phase rotation rate | The fundamental engine tick rate creating the minimal defect. | **Microscopic Carrier Resonance** |
+| **Spectral Envelope FFT** | Bound defect (Linon/Triad) | Macroscopic / Comoving | Complex amplitude & phase drift | The structural shape rigidity as the composite travels through space. | **Macroscopic Envelope Phase-Lock** |
+
+### 8.2 Observed Measurement
+We empirically cross-analyzed the temporal Power Spectrum of the macroscopic envelope across three distinct Lineum regimes. These metrics are extracted from tracking the complex amplitude exactly at the comoving peak:
 
 | Regime | Translation Speed ($v_g$) | Dominant Freq ($f_{peak}$) [comoving] | Spectral FWHM | Peak Spectral Power |
 | :--- | :--- | :--- | :--- | :--- |
-| **Static Linon (Eq-11 Core-Halo)** | 0.098 units/s | **0.000 rad/s** | 0.000 | $5.43 \times 10^4$ |
-| **Propagating Triad (N=3)** | 0.148 units/s | **1.917 rad/s** | 2.838 | $8.11 \times 10^5$ |
-| **Free Chaos (Unbound Noise)** | 0.854 units/s | **-0.153 rad/s** | 0.383 | $3.76 \times 10^6$ |
+| **Static Linon (Eq-11 Core-Halo)** | 0.098 units/s | **0.000 rad/s (Envelope Phase-Lock)** | 0.000 | $5.43 \times 10^4$ |
+| **Propagating Triad (N=3)** | 0.148 units/s | **1.917 rad/s (Internal Phase Shift)** | 2.838 | $8.11 \times 10^5$ |
+| **Free Chaos (Unbound Noise)**| 0.854 units/s | **-0.153 rad/s (Broadband Phase Static)**| 0.383 | $3.76 \times 10^6$ |
 
-### 8.2 Regime Comparison
-The current measurements do not support a simple unified spectral continuum:
-1. **Static Structures show a dominant DC-like signature ($0.000$ Hz) in the tested observables.** In the exact peak comoving frame, the observed complex amplitude is functionally flat, indicating extreme temporal rigidity.
-2. **Propagating Composites (Triads) exhibit a high-frequency temporal signature ($1.917$ rad/s).** In their own traveling comoving frame, the tracked point pulses intensely across a broad thermal profile (FWHM = 2.838).
+### 8.3 Historical Compatibility
+The measurements describe entirely distinct mechanical layers than the historical Unified $\Psi$ Scale, yet remain remarkably compatible under the new terminology split:
+1. **Static Structures (0 Hz Envelope Lock):** The $0.000$ Hz peak does exactly *not* assert that the underlying water has stopped moving or oscillating (which conflicts with the $\sim 10^{20}$ Hz carrier requirement). It states that the macroscopic boundary of the composite shape rests in a state of absolute extreme topological rigidity (Macroscopic Envelope Phase-Lock). 
+2. **Propagating Composites (AC-like Transport):** The Triad transports itself not smoothly, but via massive macroscopic internal structural pulsing ($1.917$ rad/s). The macro envelope periodically warps to induce locomotion.
+3. **Free Chaos (Thermodynamic Heat):** The broadband temporal static phase (-0.153 peak, vast FWHM thermal profile) provides quantitative support for earlier qualitative interpretations (Section 5) mathematically classifying extreme topological asymmetry and shape-loss squarely as classical Thermodynamic Chaos/Heat.
 
-### 8.3 Correlation with Propagation & Localization
-Initial observations suggest a correlation between temporal spectral behavior and physical localization:
-- **Immobility correlates with localized phase-locking.** The strict survival of the static linon correlates with the total suppression of complex amplitude oscillation at its core.
-- **Propagation correlates with internal frequency shifting.** The Triad does not translate smoothly; its travel is accompanied by a massive internal oscillation peak ($1.917$ rad/s), suggesting internal phase tension may be necessary for locomotion.
+### 8.4 Remaining Ambiguity
+Because the macroscopic envelopes appear structurally diverse (DC-like Amplitude Solitons vs AC-like Triads), we cannot trace an easy unified phenomenological energy curve for complex composites. 
 
-### 8.4 Unresolved Ambiguity
-Because the regimes appear **strongly spectrally distinct under current probes** (DC-like Solitons vs AC-like Triads), we cannot currently map them onto a single unified energy contour. It remains theoretically unresolved *how* the universe natively spawns both highly oscillatory propagating complexes and rigidly silent structures without one erasing the other. Furthermore, whether the "DC signature" is absolute, or merely a local artifact of tracing the absolute amplitude peak, remains under active verification.
+More critically, an immense mathematical bridge is still missing: **We have no formally derived mathematical relationship bridging the `Microscopic Carrier Resonance` to the `Macroscopic Envelope Lock`.** It remains utterly theoretically unresolved whether a direct scaling conversion law dictates how the deep $10^{20}$ Hz carrier fluid friction crystallizes into a perfect $0$ Hz rigid macroscopic envelope, or if the two phenomena merely loosely coexist as essentially disconnected descriptive layers tracking scale-specific Topographies within Eq-11.
 
