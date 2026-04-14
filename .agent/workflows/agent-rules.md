@@ -15,11 +15,11 @@ These rules are absolutely binding for any agent operating within this project.
    - Whenever the supervisor (ChatGPT) sends a new instruction to program, investigate, or audit, the agent **MUST ALWAYS FIRST SEARCH THE ENTIRE REPOSITORY** (via `grep_search` and reading historical code or `.scratch/` and `whitepapers/`).
    - The supervisor (ChatGPT) does not have the complete systemic and historical context of the project stored in persistent memory. The agent must not blindly and hastily accept its instruction and start "reinventing the wheel" if the exact same problem, equation, or mechanism was solved or rejected previously. In such cases, the agent confronts the task with historical findings from the repository and adjusts the plan accordingly.
 
-4. **RULE OF CONTINUOUS VISIBILITY (PROGRESS TRACKING & ETA)**
-   - For ANY script or computational task the agent executes, it **MUST ALWAYS implement a progress tracking mechanism** (e.g., Python's `tqdm`).
-   - The implementation must visually output its **current percentage to completion** and a dynamically updated **Estimated Time of Arrival (ETA)** to the log.
-   - The agent must explicitly embed the scope into the string description of the innermost visible progress bar (e.g., `desc="[Run 2 of 8] Simulation"`), to ensure the user is always aware of the total operation duration, even if terminal logs scroll out of view.
-   - It is strictly forbidden to launch a long-running "black box" script that provides no feedback. The total progress of the overarching script/sweep must be clearly visible.
+4. **RULE OF CONTINUOUS REPORTING (PROGRESS LOGGING & ETA)**
+   - For ANY long-running script the agent executes, it **MUST ALWAYS implement a progress tracking mechanism** that outputs cleanly to piped logs.
+   - Standard `tqdm` with carriage returns (`\r`) can break in remote agent terminals. Instead, the script must output an explicit new line periodically (e.g., every 10%), embedding the **Global ETA and Total Percentage** directly into the string.
+   - Example pattern: `print(f"[Global: {run_idx}/{total_runs} - {pct}% | ETA: {eta}] -> Integrating d={d} at step {step}/{steps}...")`
+   - It is strictly forbidden to launch a "black box" script. The total overarching progress and ETA must be the most visible piece of information in every output cycle.
 
 5. **RULE OF WHITEPAPER DIFF REPORTING**
    - Whenever the agent silently and automatically updates the whitepapers (as per Rule 2), it **MUST ALWAYS prepare a markdown diff** of that change and output it directly into the chat.
