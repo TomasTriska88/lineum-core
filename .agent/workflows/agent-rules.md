@@ -17,5 +17,6 @@ These rules are absolutely binding for any agent operating within this project.
 
 4. **RULE OF CONTINUOUS VISIBILITY (PROGRESS TRACKING & ETA)**
    - For ANY script or computational task the agent executes, it **MUST ALWAYS implement a progress tracking mechanism** (e.g., Python's `tqdm`).
-   - The implementation must visually output its **current percentage to completion** and an dynamically updated **Estimated Time of Arrival (ETA)** to the log.
+   - The implementation must visually output its **current percentage to completion** and a dynamically updated **Estimated Time of Arrival (ETA)** to the log.
+   - The agent must explicitly embed the scope into the string description of the innermost visible progress bar (e.g., `desc="[Run 2 of 8] Simulation"`), to ensure the user is always aware of the total operation duration, even if terminal logs scroll out of view.
    - It is strictly forbidden to launch a long-running "black box" script that provides no feedback. The total progress of the overarching script/sweep must be clearly visible.
