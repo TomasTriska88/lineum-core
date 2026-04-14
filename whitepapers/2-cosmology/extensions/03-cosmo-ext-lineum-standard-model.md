@@ -1059,3 +1059,31 @@ Having formally closed the Phase 2 standard model as a sequence-blind, Non-State
 - **SECTION C (Expected Behavior):** Route finding becomes directionally biased. A "One-Way" flow memory arises naturally, creating true unidirectional circuit gates and adaptive routing pathways.
 - **SECTION D (Risk):** Requires a massive overhaul of the fundamental Eq-7 mathematical framework.
 - **SECTION E (Testability):** Highly complex. Requires rewriting the core engine to support $x$ and $y$ complex phase tracking for the secondary field.
+
+## 29. Extension Test: $\Phi$ Hysteresis
+
+Following the identification of `Candidate II: Phase-Locked Lag` (Section 28.2), a localized delay mechanism was implemented to test whether giving the secondary $\Phi$ field mechanical "inertia" could suppress thermal flooding and successfully induce a stateful memory scar. The goal was to extend the local contrast lifetime of an ablated path strictly through soft lag, evaluating the system's capacity for memory before hitting chaotic oscillation limiters.
+
+### 29.1 Active Field Set (Section B)
+- Eq-11 Phase 2 Canonical parameters.
+- Fields Operational: $\Psi$, $\Phi$ ON; $\mu \approx 0$.
+- **Hysteresis Implementation:** A soft `Exponential Moving Average (EMA)` carry was integrated into the secondary field solver: $\Phi_{eff} = (1 - \alpha) \cdot \Phi_{new} + \alpha \cdot \Phi_{prev}$.
+- $\alpha$ (Hysteresis Lag) parameter linearly stepped from $0.00$ (No Lag) to $0.95$ (Extreme Lag).
+
+### 29.2 Observed Metrics (Section A & C)
+The `MEMORY_CELL` Burn-Probe sweep (`eval_phi_hysteresis.py`) yielded continuous results with no chaotic breakdown. However, the anticipated memory effect categorically failed:
+- **Canonical (No Lag):** Triad $\Delta Y=0.36$px.
+- **Weak Lag ($\alpha=0.30$):** Triad $\Delta Y=0.41$px.
+- **Medium Lag ($\alpha=0.60$):** Triad $\Delta Y=0.54$px.
+- **Extreme Lag ($\alpha=0.95$):** Triad $\Delta Y=0.17$px.
+
+The system remained completely stable (Zero global blur anomaly, Zero numerical oscillation detected), yet uniformly refused to retain the target path definition. 
+
+### 29.3 Inferred Topographic Interaction (Section D)
+**Inferred:**
+- **Inertial Reversal (Write-Resistance vs Erase-Resistance):** The hypothesis assumed that "lag" would make the scar *slower to heal* (Erase Resistance), thereby extending memory. However, the lag applies uniformly: it equally induces *Write Resistance*. At high lag settings ($\alpha=0.95$), the field was so "stiff" with its historical flat background that the Burn Pass completely failed to carve a deep scar in the first place. The medium simply remembered its flat resting state and refused to engrave the new input.
+- **Symmetric Inertia Fails Memory Capture:** Soft hysteresis provides symmetric thermal inertia. For true memory, a material must be topologically soft enough to accept a deep write operation instantly, but suddenly rigid enough to resist erasing. A symmetric lag filters out both evenly.
+
+### 29.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- We explicitly confirm that **minimální $\Phi$ lag nedokáže vytvořit statefulness**. Symmetric hysteresis acts as a low-pass mechanical filter that stiffens the fluid against accepting the write-state entirely. Eq-11 remains definitively Non-Stateful under Candidate II modifications without experiencing a chaotic break. 
