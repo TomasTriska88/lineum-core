@@ -1087,3 +1087,60 @@ The system remained completely stable (Zero global blur anomaly, Zero numerical 
 ### 29.4 Negative / Failed (Section E)
 **Negative Result / Boundary:**
 - We explicitly confirm that **minimální $\Phi$ lag nedokáže vytvořit statefulness**. Symmetric hysteresis acts as a low-pass mechanical filter that stiffens the fluid against accepting the write-state entirely. Eq-11 remains definitively Non-Stateful under Candidate II modifications without experiencing a chaotic break. 
+
+## 30. Application Impact Audit After Eq-11 Closure
+
+This audit evaluates all historically proposed and prototyped Lineum applications against the mature Phase 2 canonical baseline (Sections 24-29), strictly determining their viability based on whether they rely on verifiable passive transport dynamics or falsified stateful memory assumptions.
+
+### 30.1 Full Sweep (Section A)
+A comprehensive repository scan identified five major application clusters across `routing_backend`, `portal`, `skills/oea_workflow`, and `ai` prototypes:
+1. **Entity Affect & Trait API** (Mood/Novelty/Arousal scoring mechanisms in `entity_api.py`).
+2. **Semantic Imprint Memory System** (Text-to-Wave journal recording in `test_memory_api.py`).
+3. **Fluid Pathfinding & Flow Routing** (Lab API topological mapping).
+4. **Procedural Asset Generation** (VFX Water drop generation in `asset_api.py`).
+5. **Proprietary OEA Texture Protocol** (Relic Foam surface mapping in `skills`).
+
+### 30.2 Canonical Eq-11 Capability Baseline (Section B)
+- **Verifiable Baseline:** Eq-11 is a massive Passive Analog Transport Substrate. It inherently supports routing, spatial filtering, geometric channeling, shielding, and continuous thermodynamic field shaping.
+- **Falsified Capabilities:** Eq-11 does NOT support stable stateful memory, sequential Turing-logic, or emergent deterministic cognitive behavior.
+
+### 30.3 Executive Application Classification (Section C)
+- **STRENGTHENED:** Fluid Pathfinding & Flow Routing, Proprietary OEA Texture Protocol.
+- **NEUTRAL:** Procedural Asset Generation.
+- **BROKEN:** Entity Affect & Trait API, Semantic Imprint Memory System.
+
+### 30.4 Detailed Per-Application Impact Matrix (Section D)
+
+#### Application 1: Fluid Pathfinding & Flow Routing (Lab API)
+- **Description:** Using Eq-11 geometry to study how energetic pulses deflect, channel, or traverse complex static spatial structures.
+- **Implicit Assumptions:** Relies heavily on passive analog transport and geometric deflection filtering.
+- **Status:** **STRENGTHENED**
+- **Rationale:** The formal closure confirming Eq-11 exclusively as a transport substrate rigorously validates this use-case as the engine's primary and most robust function.
+- **Recommendation:** **KEEP AS IS**. Expand the API to focus purely on structural viscosity and deflection metrics.
+
+#### Application 2: Procedural Asset & OEA Texture Generation
+- **Description:** Using $\Phi$ Relic Foam spatial settling mechanics to generate non-repeating procedural textures, topographical maps, and visual assets.
+- **Implicit Assumptions:** Relies purely on geometric field shaping and localized topological accumulation.
+- **Status:** **STRENGTHENED / NEUTRAL**
+- **Rationale:** Generative map textures rely entirely on transient structural collision. The complete lack of stateful sequence memory is irrelevant for single-pass procedural mesh and asset generation.
+- **Recommendation:** **KEEP AS IS**.
+
+#### Application 3: Semantic Imprint Memory System
+- **Description:** An API (`text_to_wave_encoder`) designed to convert text strings into physical $\Psi$ wave impacts ("identity_burn"), attempting to carve permanent logic states into a "journal."
+- **Implicit Assumptions:** Relies on a persistent writable substrate and stabilizing readable stateful memory.
+- **Status:** **BROKEN**
+- **Rationale:** Systematic testing proved that Eq-11 cannot hold discrete burns without flooding or blurring them into unrecoverable noise. Thermodynamic fluidity inherently degrades any encoded semantic values within ticks.
+- **Recommendation:** **ARCHIVE / REDESIGN**. Deprecate entirely as a logic-storage database. Redesign as a simple "transient acoustic impact profile" if needed, devoid of data-retrieval promises.
+
+#### Application 4: Entity Affect API (`entity_api.py`)
+- **Description:** Prototyped endpoints inferring sentient psychological metrics (Mood, Safety, Novelty, Arousal) by monitoring fluid grid resilience and instability.
+- **Implicit Assumptions:** Relies inherently on Emergent AI, survival instincts, and cognitive learning mapping applied to fluid dynamics.
+- **Status:** **BROKEN**
+- **Rationale:** Labeling localized transient fluid turbulence as an emotional "Mood" or "Novelty response" is scientifically invalid and definitively falsified by the non-cognitive limits of Phase 2.
+- **Recommendation:** **REFRAME**. Strip all AI/Psychological hype terminology. Rebrand "Mood" as `Dynamic Grid Turbulence`, and "Novelty" as `Phase Collision Variance`. 
+
+### 30.5 Broken Assumptions (Section E)
+The primary systemic failure point across all historically broken applications is the attempt to treat a continuous, dissipative PDE flow field like a Von Neumann storage drive. The falsification that thermal scarring could serve as a persistent logic switch cleanly collapses any utility for long-term memory registries or biologically analogous entity modules.
+
+### 30.6 Salvage / Reframe Opportunities (Section F)
+Despite collapsing the cognitive branches, the underlying architecture retains immense functional value. The `Text-to-Wave Encoder` and `Entity Affect API` need not be utterly discarded. By stripping the hype terminology and rebranding their outputs into rigid, mechanical equivalents (e.g., converting "Cognitive Arousal" simply to `Wave Interference Kinetics`), the API survives as a powerful, purely physical deformation engine free from false claims of synthetic sentience.
