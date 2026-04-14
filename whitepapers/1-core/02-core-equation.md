@@ -41,17 +41,46 @@ In the experimental context of the broader project, **DTH** denotes the **Dimens
 
 > **Interpretation note:** Terms like “gravity” or “gravitational” in this appendix describe **gravity-like patterns in the simulation**, not a confirmed physical gravitational force in nature.
 
-### 🔹 Version 1 – Purely oscillating field
+### Eq-1: Purely Oscillating Field
 
-```text
-ψ ← ψ + 𝛌̃ + ξ + φψ − δψ + ∇²ψ
-```
+**FORMAL STATUS:** [INITIAL_BASELINE]
+**DIRECTION:** [INITIAL_PROTOTYPE]
+**CANON CONSISTENCY:** [SUPERSEDED]
+**RETEST STATUS:** [NOT_VERIFIED]
 
-The first version contained only the ψ field. It generated linons, spin, and vortices, but did not allow accumulation or emergent attraction. The φ field was not yet dynamic.
+**WHY THIS CLASSIFICATION:**
 
-- ✅ Generated **linons** and flows
-- ❌ No accumulation or emergent gravity-like behavior (in the simulation)
-- ❌ φ was static, without memory
+- Direction:
+  Established the initial discrete continuous integration baseline for a scalar field under diffusion ($\nabla^2$) and static local modification ($\varphi$, $\delta$).
+- Canon Consistency:
+  Superseded due to the explicitly static condition of the accumulation field ($\partial_t \varphi = 0$). Lacking secondary coupled momentum, the framework could not maintain deterministic spatial memory or coupled topologies.
+
+**EXACT EQUATION:**
+
+∂ₜψ = ∇²ψ + (φ - δ) ψ + 𝛌̃ + ξ  
+∂ₜφ = 0
+
+*(Note: Original documentation provided this as a discrete normalized update function `ψ ← ψ + 𝛌̃ + ξ + φψ − δψ + ∇²ψ` implying dt=1).*
+
+**EVIDENCE SNAPSHOT:**
+
+- Analytical limit analysis
+  - Setup:
+    Evaluate the amplitude limits of isolated spatial domains assuming absence of injection terms ($\tilde{\lambda}$, $\xi$).
+  - Derived:
+    - If $(\varphi - \delta) < 0$: 
+      The coordinate encounters terminal exponential decay dictated linearly by the static damping factor $-\delta$.
+    - If $(\varphi - \delta) > 0$: 
+      The framework initiates runaway exponential amplification lacking any inherent nonlinear mathematical bounding mechanism.
+  - Implication:
+    The mathematical formulation lacks a native continuous stability bound. Any macroscopic topological bounding requires non-mathematical arbitrary numerical clamping.
+  - Constraint:
+    The generation of stable non-runaway localized peaks (`linons`) is not analytically supported by the unmodified linear equation. 
+
+- Numerical validation
+  - Setup: [NOT_VERIFIED]
+  - Observed: [NOT_VERIFIED] (Historical claims of "generated linons and flows" are not mechanically traceable to the unbounded analytical formulation).
+  - Measured: [NOT_VERIFIED]
 
 ---
 
@@ -184,12 +213,50 @@ Recent development of the Eq9 runtime identified instability under extreme bound
 
 ---
 
-The *Advection Hypothesis* (gradient-guided sliding flow $+\nabla\varphi$) was formally eliminated. Exhaustive minimal-core testing verified that direct scalar advection is non-causal and purely descriptive. Instead, the Universe acts as a thermodynamically localized **Metabolic Amplification Engine**. Topologies survive not by actively tracking gradients, but because their shapes mechanically bounded and trap $\varphi$ locally, directly amplifying their structural depth via the non-linear hyperbolic saturation parameter $\tanh(c_1 \varphi)$. Topologies that fail to seal $\varphi$ simply starve and fracture into ambient noise.
+### Eq-10: The Minimal Equation
 
-- ✅ **Removed:** $\nabla \varphi$ Advection flow.
-- ✅ **Removed:** Global Numerical Clamping loops (`phi_cap`, `softabs`).
-- ✅ **Retained:** Bounded Non-linear Saturation ($\tanh$) as the absolute requirement for stability limit without explosive singularities.
-- ✅ **Retained:** Spatial-gradient targeted Noise (`Linons`) as the required sparsity-filter to prevent Brownian thermal swamping.
+**FORMAL STATUS:** [CONCEPTUAL_REDUCTION_ONLY]
+**DIRECTION:** [STEP_FORWARD]
+**CANON CONSISTENCY:** [SUPERSEDED]
+**RETEST STATUS:** [NOT_VERIFIED]
+
+**WHY THIS CLASSIFICATION:**
+
+- Direction:
+  Isolated minimal scalar bounding by mathematically eliminating non-causal advection limits.
+- Canon Consistency:
+  Superseded due to analytically identified scaling instability under grid discretization variation ($dx$);
+  numerical validation not yet embedded.
+
+**EXACT EQUATION:**
+
+∂ₜψ = ∇²ψ + [α tanh(c₁ φ) - γ] ψ  
+∂ₜφ = β ∇²φ + α_φ (|ψ|² - φ)
+
+**EVIDENCE SNAPSHOT:**
+
+- Analytical limit analysis
+  - Setup:
+    Evaluate structural limit bounds as φ → 0 and φ → large.
+  - Derived:
+    - φ → 0:
+      tanh(c₁ φ) → 0, isolating the negative term -γ ψ and causing exponential decay.
+    - φ → large:
+      tanh(c₁ φ) → 1, bounding topological growth as (α - γ) ψ.
+  - Implication:
+    Structural existence strictly requires satisfying α tanh(c₁ φ) > γ,
+    establishing the precise limit:
+    φ > (1 / c₁) * atanh(γ / α).
+  - Constraint:
+    |γ / α| < 1  
+    Reason: atanh(γ / α) is undefined otherwise.
+  - Degenerate case:
+    If α ≤ γ, no stable structure can exist for any φ.
+
+- Numerical validation
+  - Setup: [NOT_VERIFIED]
+  - Observed: [NOT_VERIFIED]
+  - Measured: [NOT_VERIFIED]
 
 ### 🔹 Version 11 – The Dimensionally Invariant Core (CANDIDATE)
 
