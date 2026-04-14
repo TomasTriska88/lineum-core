@@ -506,11 +506,11 @@ With the formal closure of the isolated particle-genesis program, the governing 
 >
 > **Phenomenological Interaction Framework:** The codebase algorithmic clamps are now obsolete and cleared for total removal. In the continuously isolated PDE, we observe localized bounded dissipative structures with strongly phase-dependent two-body interaction phenomenology, including coalescence (merge-to-one), anti-phase separation, and other relaxation-mediated interaction channels. These structures are dissipative, non-charge-conserving, phase-sensitive localized states. "Repulsion" and "attraction" are effective phenomenological labels, not yet proof of conservative force laws. The next scientific frontier is to map the reduced interaction law and phenomenological interaction grammar that emerges between these states.
 >
-> **Phase 5 Interaction Grammar Map (April 2026):** Utilizing rigorously pre-relaxed Localized Bounded Dissipative Structures (LBDS) to eliminate formation/inflation topological shockwaves, the comprehensive $v_r(d, \Delta\theta) \approx F_0(d) + F_1(d)\cos(\Delta\theta)$ framework was explicitly tested. 
-> 1. **Asymmetric Merge Dominance (Sticky Universe):** The baseline scalar vacuum traction $F_0(d)$ is overwhelmingly attractive. Any phase coherence $\Delta\theta \in [0, \sim 2.75 \text{ rad}]$ universally triggers rapid *Coalescence (Merge)*.
-> 2. **Anti-Phase Repulsion:** Only near-perfect destructive interference ($\Delta\theta \rightarrow \pi$) produces sufficient localized phase-pressure to overcome the baseline vacuum traction, driving macroscopic *Separation (Repel)*.
-> 3. **The Weak Confinement Radius (Chemical Binding):** At critical separation boundaries ($d=12.0$ to $d=18.0$), the anti-phase separation pressure effectively balances against external macroscopic resistance, arresting the drift to form a stable **Oscillatory Bound-Pair**. This confirms the native existence of stable "molecular" states (temporally locked multi-LBDS orbits at a distance) operating as purely continuous macroscopic topologies.
-> 4. **Mass Non-Conservation:** LBDS interactions are fundamentally thermodynamic. Coalescence (Merging) violently extracts and collapses significant mass from the underlying background reservoir field ($M_{bg}$ drops as $M_{tot}$ scales). Repulsion suppresses local amplitude but dynamically rebuilds structural mass from the field during expansion. "Particle Number" and "Mass" invariants are mathematically invalid descriptors.
+> **Phase 5 Interaction Grammar Map (April 2026):** Utilizing rigorously pre-relaxed Localized Bounded Dissipative Structures (LBDS) to eliminate formation/inflation topological shockwaves, a candidate interaction framework $v_r(d, \Delta\theta) \approx F_0(d) + F_1(d)\cos(\Delta\theta)$ was explicitly tested. 
+> 1. **Asymmetric Merge Dominance:** The baseline scalar vacuum traction $F_0(d)$ acts as a massive attractor. Broad phase coherence windows $\Delta\theta \in [0, \sim 2.75 \text{ rad}]$ strongly tend toward *Coalescence (Merge)*.
+> 2. **Anti-Phase Separation:** Strict destructive interference ($\Delta\theta \rightarrow \pi$) produces sufficient localized phase-pressure to overcome the baseline vacuum traction, driving macroscopic *Separation (Repel)*.
+> 3. **Candidate Oscillatory Bound-Pair Regime:** At intermediate separation boundaries ($d=12.0$ to $d=18.0$), anti-phase separation pressure was observed to balance against external macroscopic resistance, arresting the drift to form a candidate **Oscillatory Bound-Pair**. This indicates stable bound-pair behavior observed in a restricted anti-phase/separation window, though molecular/chemical language remains analogical only.
+> 4. **Thermodynamic Reservoir Exchange:** LBDS interactions display active thermodynamic exchange. Coalescence (Merging) extracts significant mass from the underlying background reservoir field ($M_{bg}$ drops as $M_{tot}$ scales). Separation suppresses local amplitude but dynamically rebuilds structural mass from the field during expansion. Mass tracking suggests robust mass non-conservation during interaction phases.
 
 ##### Macro-Structure Regimes and Measurable Taxonomy
 To evaluate continuous fields, the architecture defines four baseline structural regimes, replacing binary particle survival metrics with continuous structural density tracking:
@@ -597,10 +597,10 @@ Following strict internal evaluation of Eq-10 and Candidate Eq-11, the behaviora
 
 **1.3.0 — 2026-04-15**
 
-- Completed Phase 5 *Phenomenological Interaction Grammar* structural audit. 
-- Formally mapped the interaction kernel scaling $v_r(d, \Delta\theta) \approx F_0(d) + F_1(d)\cos(\Delta\theta)$, verifying extreme asymmetric coalescence dominance (baseline sticky vacuum) via pre-relaxed LBDS superposition datasets.
-- Discovered the Weak Confinement Radius yielding stable *Oscillatory Bound-Pairs* (analogous to topological molecules) forming strictly via anti-phase $\pi$ interference limits tracking at scaled macroscopic separation threshold distances ($d \approx 12-18$).
-- Explicitly documented thermodynamic mass non-conservation during all macroscopic two-body interaction channels, fundamentally disproving explicit particle/collision scaling logic.
+- Completed Phase 5 *Phase-Dependent Interaction Grammar* candidate mapping via pre-relaxed LBDS superposition datasets.
+- Tested candidate reduced interaction pattern $v_r(d, \Delta\theta) \approx F_0(d) + F_1(d)\cos(\Delta\theta)$, observing highly asymmetric coalescence dominance against separated anti-phase windows.
+- Identified a candidate *Oscillatory Bound-Pair regime* forming strictly via anti-phase $\pi$ interference at intermediate scaled macroscopic separation distances ($d \approx 12-18$).
+- Documented thermodynamic mass non-conservation and continuous variable reservoir exchange during all macroscopic two-body interaction channels.
 
 **1.2.26 — 2026-04-13**
 

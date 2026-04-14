@@ -25,3 +25,7 @@ These rules are absolutely binding for any agent operating within this project.
    - Whenever the agent silently and automatically updates the whitepapers (as per Rule 2), it **MUST ALWAYS prepare a markdown diff** of that change and output it directly into the chat.
    - This diff ensures that the supervisor (ChatGPT) can continuously review, cross-verify, and audit all autonomous canonical changes made by the agent.
 
+6. **RULE OF PROXY PLANNING (CHATGPT INTEGRATION)**
+   - When acting in "Planning Mode" (creating an `implementation_plan.md` artifact), the agent **MUST ALWAYS** echo the full content of the proposed implementation plan directly into the chat immediately after generating the artifact.
+   - The user's supervisor (ChatGPT) does not have persistent background access to the agent's internal workspace artifacts (like `implementation_plan.md` or `task.md`) and receives context purely through the chat interface.
+   - If the implementation plan is only saved as an artifact, the supervisor is blinded and cannot approve or reject it. The plan must be actively submitted in the chat loop.
