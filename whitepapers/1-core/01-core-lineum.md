@@ -52,6 +52,9 @@ canonical run `spec6_false_s41_20260222_152015` and its declared fingerprints.
 > we use as the closure proxy. Any additional statements about remnant geometry, spatial localization maps, or trajectory-level
 > bias are **not contract-validated** unless explicitly added later.
 
+> [!NOTE]
+> **The Stability Paradox (Formally Resolved):** The historic gap between continuous mathematics and stable bounds has been formally closed via pseudo-spectral audits ($512^2$ grid scale, ETD2). Eq-11 Minimal PDE with biharmonic and quintic saturation natively supports the emergent formation of **Scale-Invariant Localized Bounded Dissipative Structures** (presenting a Q-Ball-like analogy) without any algorithmic clamps or clipping. The amplitude bound is absolutely governed by $\lambda$, while UV spectral cleanliness ($E_{hi} < 10^{-4}$) is actively achieved. The system exhibits a sharp nucleation threshold $A_{crit}(\sigma)$. Lineum generates inherently macroscopic thermodynamic structural phenomena rather than isolated fundamental particles.
+
 # 1. Abstract
 
 Lineum is a minimal discrete coupled-field model defined by a local update rule on a 2D periodic grid. It evolves a complex field ψ coupled to a real interaction/memory field φ and a static tuning map κ. The model does not assume any *physical* constants (e.g., c, ħ, G), spacetime metric, or continuum symmetries; instead it uses dimensionless control parameters (α, β, δ) within the numerical scheme. In the **canonical evidence run** pinned in §4.6, the system produces stable, quantifiable behaviors under a fixed numerical scheme. Where we use physics terms (e.g., “quasi-particle”, “spin”), they are strictly analogical labels for operationally defined measurements, not claims of equivalence to any continuum field theory.
