@@ -971,3 +971,30 @@ The environment was evaluated on a `MEMORY_CELL` routing test (Burn Pass followe
 ### 25.4 Negative / Failed (Section E)
 **Negative Result / Boundary:**
 - We empirically confirm that modifying Eq-11 internal decay/persistence parameters **cannot** force the medium to become stateful or compute Turing-complete logic. Making the universe "remember longer" does not create intelligence; it merely turns a beautiful transport filter into a blurry, flooded swamp.
+
+## 26. Scale Invariance of Non-Stateful Limits (Linon vs Triad)
+
+Following the Limit Analysis in Section 25, an investigative pivot queried whether the failure to observe "Memory" was an artifact of the probe size. Specifically: Is a robust $N=1$ Triad simply too large and structurally dominant to "feel" a delicate memory scar left in the Foam? Would a single Linon (a bare monopolar phase peak) be significantly more sensitive to the burn?
+
+### 26.1 Active Field Set (Section B)
+- Eq-11 Phase 2 Canonical parameters.
+- Fields Operational: $\Psi$, $\Phi$ ON; $\mu \approx 0$ (Mild $\mu$ reactivation tested alongside strict canonical).
+- Test Probes: Single Linon ($N=0.33$) vs Triad ($N=1$).
+
+### 26.2 Observed Sensitivities (Section A & C)
+The `MEMORY_CELL` Burn-Probe sequence was executed simultaneously for both probe classes:
+- **Canonical:** Triad variance ($\Delta Y=0.36$px) vs Linon variance ($\\Delta Y=0.21$px).
+- **Reduced $\Phi$-Leak:** Triad ($\Delta Y=0.71$px) vs Linon ($\Delta Y=0.50$px).
+- **Extended Foam Persistence (Low $\gamma$):** Triad ($\Delta Y=0.67$px) vs Linon ($\Delta Y=0.39$px).
+
+Across all combinations, the Single Linon displayed **less** sensitivity to the routing scar than the Triad. Both strictly read as `NO MEMORY` (variance $<1.0$px), but the Linon deviated computationally less.
+
+### 26.3 Inferred Topographic Interaction (Section D)
+**Inferred:**
+- **The Non-Stateful limit is absolute across probe scales.** A smaller structure does not suddenly unlock "sub-threshold memory".
+- **Cross-Sectional Filtering:** A Single Linon is *less* sensitive to distant topological burns because its $\Phi$ phase footprint is physically narrower. A Triad, being spatially extended across $S=8.0$, "clips" the side walls of passing $\Phi$ gradients heavily. A Linon traveling perfectly down the center of a modified channel does not extend far enough radially to feel the ablated edge strongly. 
+- Therefore, routing sensitivity is a function of geometric cross-section.
+
+### 26.4 Negative / Failed (Section E)
+**Negative Result / Boundary:**
+- We **falsify** the hypothesis that the medium carries sub-threshold localized "memory" readable only by simple organisms. The medium is completely and universally Non-Stateful to all structural classes. A single particle cannot read a "quiet" memory that a larger Triad smashes over.
