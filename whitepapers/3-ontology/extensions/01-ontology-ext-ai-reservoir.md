@@ -6,6 +6,11 @@
 **Date:** 2026-02-24
 ---
 
+> [!CAUTION]
+> **PHASE 2 DEPRECATION NOTICE:** 
+> The hypotheses in this document regarding "Emergent AI," "Reservoir Computing," and "Structural Memory" were formally **falsified** under canonical mechanical testing (Phase 2). Eq-11 space was empirically proven to be a **Non-Stateful Passive Analog Transport Substrate** incapable of stabilizing sequence memory or Turing-logic. All cognitive analogies ("intelligence", "learning", "decision") contained herein are historically preserved but practically superseded by the formal limits defined in Standard Model Sections 22-27.
+
+
 ### 1. Introduction: Escaping the Silicon Bottleneck
 Modern Artificial Intelligence (e.g., LLMs) relies on rigid, discrete neural networks simulated on conventional Von Neumann architecture. This requires manually updating billions of weights using massive energy grids (GPUs) to brute-force statistical prediction. 
 Lineum allows for a fundamentally different paradigm: **Morphological** or **Reservoir Computing**. Instead of programming artificial neurons to predict text, we use the intrinsic self-stabilizing physics of the Lineum Equation (Eq-7) as an organic, fluid math-processor.

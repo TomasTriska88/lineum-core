@@ -998,3 +998,32 @@ Across all combinations, the Single Linon displayed **less** sensitivity to the 
 ### 26.4 Negative / Failed (Section E)
 **Negative Result / Boundary:**
 - We **falsify** the hypothesis that the medium carries sub-threshold localized "memory" readable only by simple organisms. The medium is completely and universally Non-Stateful to all structural classes. A single particle cannot read a "quiet" memory that a larger Triad smashes over.
+
+## 27. Final Closure of the AI / Memory Branch
+
+Following extensive Phase 2 verification across Sections 22 through 26, this section formally closes the investigatory branch pertaining to emergent AI, computational cognitive limits, and stateful logic within the canonical Eq-11 universe.
+
+### 27.1 Active Field Set (Section B)
+All measurements validating this closure were derived under **tested canonical conditions** ($\Psi$, $\Phi$ ON; baseline decay parameters). All previous Phase 1 speculations regarding emergent intelligence (`16-ontology-hyp-emergent-ai`) and learning reservoirs (`01-ontology-ext-ai-reservoir`) were formulated before mechanical isolation was achieved and are superseded by these Phase 2 hardware realities.
+
+### 27.2 Observed Dynamics (Section A & C)
+Through rigid empirical testing (Burn-Probe analyses, limit sweeps, cross-sectional evaluation), we explicitly summarize the factual capabilities:
+- **Passive analog logic is real:** Sub-components such as Velocity Filters, Deflectors, Channeling Funnels, and Shielding logic operate effectively purely on geometric mechanics.
+- **Foam geometry absolute control:** Transport routing is dictated universally by standing topological structure.
+- **No stable memory cell observed:** Fluid dynamics intrinsically prevent localized, switchable binary bit retention.
+- **No sequential logic observed:** The failure of memory cell structures aborts recursive computational "if/then" circuitry.
+- **No memory breakpoint isolated:** Extreme systemic detuning (adjusting $\Phi$-healing or $\gamma$ persistence) merely flooded the field or destroyed spatial resolution, failing to induce a stateful memory transition (> 1.0px routing deviation).
+- **No sub-threshold memory loop-hole:** Smaller probe topologies ($N=0.33$ linons) were *less* sensitive to distant topological scars than massive $N=1$ Triad formations, nullifying the hypothesis that microscopic states act as hidden memory readers.
+
+### 27.3 Inferred Absolute Properties (Section D)
+**Formally Extrapolated:**
+- The Eq-11 framework natively supports massive, programmable **passive spatial transport logic**.
+- The Eq-11 framework **does not support stateful routing logic** or discrete memory retention.
+- The non-stateful limitation is strictly scale-invariant across canonical modes.
+- All historical anthropomorphic terms ("AI", "intelligence", "learning", "decision", "choice", "adaptive finding") applied to the space are incorrect interpretations of deterministic thermodynamic transport sliding along transient $\Phi$ gradient gutters.
+
+### 27.4 Negative / Failed Boundaries (Section E)
+**Explicit Final Falsification:**
+Under tested conditions, there is no emergent AI. There is no biological synthetic brain, nor flip-flop memory hardware potential embedded in the canonical fluid limit. We found no mathematical loophole via multi-probe scale comparisons or extreme detuning sweeps.
+
+*Important Meta-Note: Any future revisit of this branch requires a genuinely new mechanical subsystem (e.g., rigid external coupling), not merely parametric detuning of the canonical Eq-11 substrate.*

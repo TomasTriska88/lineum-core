@@ -6,6 +6,10 @@
 **Status:** Draft
 **Date:** 2026-03-02
 
+> [!CAUTION]
+> **PHASE 2 DEPRECATION NOTICE:** 
+> The foundational hypotheses in this document regarding "Emergent AI," "Self-Organizing Logic," "Phase-Locked Associative Memory," and "Macroscopic Entity Formation" were formally **falsified** under canonical mechanical testing (Phase 2). Eq-11 space was empirically proven to be a **Non-Stateful Passive Analog Transport Substrate** incapable of stabilizing sequence memory, Turing-logic, or cognitive learning. The anthropomorphic and cognitive analogies used here ("intelligence", "survival instinct", "sentience") are historically preserved for context but are definitively superseded by the mechanically verified transport limits defined in Standard Model Sections 22-27.
+
 ## 1. Summary
 This hypothesis explores how artificial intelligence can naturally emerge within the Lineum framework (Eq-7) without the use of traditional artificial neural networks (e.g., Transformers or backpropagation). It proposes that the $\Phi$ field can function natively as a self-organizing Morphological/Reservoir Computer. Furthermore, it examines the philosophical and ontological implications of building a physical container (an Android) driven by a Lineum core, concluding that such a construct would not be a mere "tool" but an emergent, experiencing entity.
 
