@@ -14,3 +14,8 @@ These rules are absolutely binding for any agent operating within this project.
 3. **RULE OF MANDATORY CONTEXTUAL SEARCH (CHATGPT CHECK)**
    - Whenever the supervisor (ChatGPT) sends a new instruction to program, investigate, or audit, the agent **MUST ALWAYS FIRST SEARCH THE ENTIRE REPOSITORY** (via `grep_search` and reading historical code or `.scratch/` and `whitepapers/`).
    - The supervisor (ChatGPT) does not have the complete systemic and historical context of the project stored in persistent memory. The agent must not blindly and hastily accept its instruction and start "reinventing the wheel" if the exact same problem, equation, or mechanism was solved or rejected previously. In such cases, the agent confronts the task with historical findings from the repository and adjusts the plan accordingly.
+
+4. **RULE OF CONTINUOUS VISIBILITY (PROGRESS TRACKING & ETA)**
+   - For ANY script or computational task the agent executes, it **MUST ALWAYS implement a progress tracking mechanism** (e.g., Python's `tqdm`).
+   - The implementation must visually output its **current percentage to completion** and an dynamically updated **Estimated Time of Arrival (ETA)** to the log.
+   - It is strictly forbidden to launch a long-running "black box" script that provides no feedback. The total progress of the overarching script/sweep must be clearly visible.
