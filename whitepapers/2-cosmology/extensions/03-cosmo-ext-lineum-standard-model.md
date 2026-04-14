@@ -1027,3 +1027,35 @@ Through rigid empirical testing (Burn-Probe analyses, limit sweeps, cross-sectio
 Under tested conditions, there is no emergent AI. There is no biological synthetic brain, nor flip-flop memory hardware potential embedded in the canonical fluid limit. We found no mathematical loophole via multi-probe scale comparisons or extreme detuning sweeps.
 
 *Important Meta-Note: Any future revisit of this branch requires a genuinely new mechanical subsystem (e.g., rigid external coupling), not merely parametric detuning of the canonical Eq-11 substrate.*
+
+## 28. Minimal Extension Candidates Beyond Passive Transport
+
+Having formally closed the Phase 2 standard model as a sequence-blind, Non-Stateful Passive Transport Substrate (Section 27), the next horizon requires identifying the minimal mechanical extensions capable of bridging this gap. The following four extensions are hypothesized as the least intrusive modifications to canonical Eq-11 capable of unlocking stateful memory behavior.
+
+### 28.1 Candidate I: Threshold-Gated Decay (Non-linear $\gamma$)
+- **SECTION A (Definition):** Modifying the continuous Relic Foam degradation rate so that it only triggers under a critical impact threshold, otherwise remaining perfectly frozen.
+- **SECTION B (Mechanism):** The linear decay parameter $\gamma$ is replaced by a Heaviside step function $\gamma(\Psi) = \gamma_0 \cdot H(|\Psi|^2 - C_{break})$.
+- **SECTION C (Expected Behavior):** Relic Foam becomes literally "solid rock." A light wave bounces off it perpetually without eroding it. An intense, high-mass Triad shatters it. This hypothesized mechanism could enable perfect flip-flop memory switching, as walls endure until explicitly ablated.
+- **SECTION D (Risk):** Introducing non-linear step-functions risks destroying the continuous scale-invariance and organic fluidity of the $\Psi$ field, potentially causing Triads to violently shred upon any impact rather than reflecting.
+- **SECTION E (Testability):** Modifiable directly in `step_engine` with a binary `torch.where` mask for $\gamma$ decay.
+
+### 28.2 Candidate II: $\Phi$ Hysteresis (Phase-Locked Lag)
+- **SECTION A (Definition):** Inducing a temporal delay in how fast the $\Phi$ gradient heals, preventing the "thermal flooding" identified in Section 25.
+- **SECTION B (Mechanism):** Instead of a linear drain `dPhi/dt = -leak * Phi`, the system introduces a second-order momentum term or a time-delayed moving average, slowing the immediate gradient collapse.
+- **SECTION C (Expected Behavior):** A sharp routing scar remains physically sharp longer before diffusing into systemic blur. This could provide a temporary "Short-Term Memory" state where routing biases endure just enough for rapid subsequent logic operations.
+- **SECTION D (Risk):** Second-order time derivatives historically induce catastrophic grid oscillation or explosive divergence in continuous PDE solvers.
+- **SECTION E (Testability):** Adding a `dPhi_prev` momentum tensor or tracking a rolling average within the kernel loop.
+
+### 28.3 Candidate III: Macro-Structural Crystallization (Localized $\mu$ Coupling)
+- **SECTION A (Definition):** Reintroducing the slow $\mu$ Background Field, but locking its interaction exclusively to highly dense, stable foam nodes.
+- **SECTION B (Mechanism):** $\mu$ coupling is reactivated, but only where $\Phi$ exceeds a massive threshold. The system "crystallizes" the deepest historical $\Phi$ scars into immovable $\mu$ bedrock.
+- **SECTION C (Expected Behavior):** True Long-Term Memory (LTM). Foam logic arrays could be "carved" and hardened over thousands of ticks, permanently locking a passive routing state that never degrades.
+- **SECTION D (Risk):** Complete loss of environmental reversibility; the grid eventually "freezes" entirely into dead logic paths filled with unbreakable bedrock.
+- **SECTION E (Testability):** Reactivating the $\mu$ matrix with a high saturation threshold in `eval_foam_logic.py`.
+
+### 28.4 Candidate IV: Bi-Directional $\Phi$ Anisotropy
+- **SECTION A (Definition):** Changing the $\Phi$ exhaust from a scalar (heat) into a vector (momentum trail), retaining the directional velocity of the passing Triad.
+- **SECTION B (Mechanism):** The scalar $\Phi$ field extends into $\vec{\Phi} = (\Phi_x, \Phi_y)$. Trailing foam pushes incoming waves not just "away" via scalar repulsion, but selectively "along" the stored vector path.
+- **SECTION C (Expected Behavior):** Route finding becomes directionally biased. A "One-Way" flow memory arises naturally, creating true unidirectional circuit gates and adaptive routing pathways.
+- **SECTION D (Risk):** Requires a massive overhaul of the fundamental Eq-7 mathematical framework.
+- **SECTION E (Testability):** Highly complex. Requires rewriting the core engine to support $x$ and $y$ complex phase tracking for the secondary field.
