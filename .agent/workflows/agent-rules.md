@@ -18,6 +18,7 @@ These rules are absolutely binding for any agent operating within this project.
 4. **RULE OF CONTINUOUS REPORTING (PROGRESS LOGGING & ETA)**
    - For ANY long-running script the agent executes, it **MUST ALWAYS implement a progress tracking mechanism** that outputs cleanly to piped logs.
    - Standard `tqdm` with carriage returns (`\r`) can break in remote agent terminals. Instead, the script must output an explicit new line periodically (e.g., every 10%), embedding the **Global ETA and Total Percentage** directly into the string.
+   - **PYTHON UNBUFFERED EXECUTION**: NEVER run python evaluation scripts implicitly. ALWAYS use the `-u` flag (`python -u script.py`) in `run_command` to force standard output to be unbuffered. Otherwise, interactive progress tracking will falsely appear dead or hanging.
    - Example pattern: `print(f"[Global: {run_idx}/{total_runs} - {pct}% | ETA: {eta}] -> Integrating d={d} at step {step}/{steps}...")`
    - It is strictly forbidden to launch a "black box" script. The total overarching progress and ETA must be the most visible piece of information in every output cycle.
 
