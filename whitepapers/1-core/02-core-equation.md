@@ -521,6 +521,21 @@ To evaluate continuous fields, the architecture defines four baseline structural
 
 - 🚧 **Status (The Branching Point):** Eq-11.1 operates with a practical open-vacuum N=2 limit under tested conditions. Producing stable $N \ge 3$ composition would likely require extrinsic environmental modification (containment barriers, geometric constraints, or external macro-gravitational $\Phi$ sinks) to assemble.
 
+### 13.10 Phase 6: The Pinnacle (Long-Horizon Interaction Audit)
+**Status:** Canonical (Passed Phase 6 Level 2 Rigor)
+Following the provisional candidate formulation, the Lineum project executed "Phase 6: The Pinnacle", a rigorous multi-candidate 200,000-step persistence audit on the Continuous reaction-diffusion core (Eq-11.1). The audit mathematically separated *formation physics* from *interaction physics* and established the behavioral reality of Eq-11 two-body phase interactions:
+
+1. **Phase-Strain-Mediated Interaction and Exclusion:** It is formally verified that strict anti-phase preparation ($\Delta\theta = \pi$) acts as an intense local spatial exclusion barrier. 
+2. **The Topological Dyad (Metastable Carrier):** An isolated, pre-relaxed two-body pair interacting across the strict anti-phase barrier forms a highly resilient geometric configuration. However, extremely long-horizon integration ($T \rightarrow \infty$, measured over 80,000 algorithmic steps) proves this exact anti-phase condition is not a permanently bound memory attractor. It acts as a **slow net-repulsive saddle-like interaction channel**. The pair configuration forces an infinitesimally slow outward secular drift (separation escape), proving it to be *long-lived but metastable/drifting*.
+3. **Formation Dependency:** Pairs synthetically injected into the grid (e.g., Gaussian amplitude overriding) without pre-relaxed internal $\phi/\psi$ topological alignment suffer early catastrophic Layer-A failure. Only naturally pre-relaxed formations preserve long-lived stability, highlighting Eq-11's profound structural sensitivity.
+4. **Current Phenomenological Canonical Status:** Eq-11 supports exceptionally long-lived localized dissipative carriers (LBDS), while strict anti-phase two-body pairing produces a highly stable temporary transmissive state, but is not a permanently bound memory node.
+
+### 13.11 Phase 7: Propagation Audit
+**Status:** Canonical (Negative / Narrowing Result)
+Phase 7 propagation audit did not confirm a simple finite-speed propagation law in the tested Eq-11 kick-and-receiver configurations. Although isolated LBDS survived strong local phase kicks and delayed receiver-side responses were observed in two-LBDS setups, the lag-vs-distance data did not support an approximately linear time-of-flight relation. Multiple diagnostics instead pointed toward LBDS-dependent collective relaxational / stress-redistribution behavior rather than clean ballistic front transport. Under the same tested protocol, the background-only control showed no measurable receiver response.
+
+This result narrows the current transport interpretation but does not exclude more complex collective transmission channels under different observables, driving protocols, or geometries.
+
 ## 4. Discussion & The Entropy Crisis
 
 This progression shows a shift from a minimalistic $\psi$–$\varphi$ interaction model to a robust, wave-native three-field system capable of sustaining massive emergent symmetries. However, the comprehensive *Equation History Audit* revealed a profound, invariant boundary condition across all iterations: **Topological Re-localization (Chaos $\rightarrow$ Structure) is mathematically impossible in the current canonical family.**

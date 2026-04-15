@@ -2495,7 +2495,16 @@ ks = ks_statistic(ecdf(x), ecdf(t))
 
 ---
 
-### 11. Versioning & Changelog
+### 11. Forward Ontological Trajectories (PDE Continuous Fields)
+
+While the Core Mathematics (Document 02) strictly audits observable localized formations, the emergent behavior of Eq-11 inspires parallel macroscopic and quantum-analogous hypotheses for future investigation:
+*   **The Macroscopic "Dark Energy" Hypothesis:** The discovery of "Separation Escape" (infinitesimally slow, continuous, monotone outward drift of anti-phase LBDS pairs over extreme horizons) mathematically mirrors a positive cosmological constant. If extrapolated to a ubiquitous macro-grid of LBDS pairs, this intrinsic net-repulsion represents an emergent dynamic indistinguishable from cosmological metric expansion.
+*   **The QFT/Dirac-Sea Substrate Hypothesis:** The empirical data showing that $M_{bg}$ (background mass) does not vanish, but acts as a latent carrier reservoir, provides a compelling mathematical analog to Quantum Field Theory's "Vacuum Expectation Value" (or the historical Dirac Sea). In this interpretation, LBDS cores are simply localized structural phase-excitations violently rising out of a completely full, otherwise invisible background medium (the underlying continuous foam).
+*   **The Topological Relaxation Hypothesis:** Following Phase 7 propagation audits, Lineum does not exhibit simple ballistic wave transport. Instead, signal transmission between topological formations behaves as global *collective relaxation* or stress-redistribution. This implies that the spatial field acts less like an empty vacuum carrying discrete waves, and more like a globally coupled, highly rigid elastic network where perturbations are mediated by structural tension.
+
+---
+
+### 12. Versioning & Changelog
 
 **Policy.** Semantic Versioning applies to this document; compatibility with the core is pinned in the header.  
 
