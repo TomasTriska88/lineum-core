@@ -35,3 +35,7 @@ These rules are absolutely binding for any agent operating within this project.
    - When acting in "Planning Mode" (creating an `implementation_plan.md` artifact), the agent **MUST ALWAYS** echo the full content of the proposed implementation plan directly into the chat immediately after generating the artifact.
    - The user's supervisor (ChatGPT) does not have persistent background access to the agent's internal workspace artifacts (like `implementation_plan.md` or `task.md`) and receives context purely through the chat interface.
    - If the implementation plan is only saved as an artifact, the supervisor is blinded and cannot approve or reject it. The plan must be actively submitted in the chat loop.
+
+7. **RULE OF SUPERVISOR PRE-APPROVAL**
+   - If the user provides a prompt from the Supervisor (ChatGPT) that explicitly contains an "APPROVED" decision or a clear, mandated engineering instruction, the agent **MUST treat this as implicit approval from the user**.
+   - The agent should generate the `implementation_plan.md` (as required by the system) but is authorized to immediately proceed to the Execution and Verification phases without blocking the chat to ask the user "Can I proceed?". The Supervisor's mandate serves as the green light.
