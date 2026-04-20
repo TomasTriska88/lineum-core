@@ -27,8 +27,9 @@ These rules are absolutely binding for any agent operating within this project.
    - Example pattern: `print(f"[Global: {run_idx}/{total_runs} - {pct}% | ETA: {eta}] -> Integrating d={d} at step {step}/{steps}...")`
    - It is strictly forbidden to launch a "black box" script. The total overarching progress and ETA must be the most visible piece of information in every output cycle.
 
-5. **RULE OF WHITEPAPER DIFF REPORTING**
-   - Whenever the agent silently and automatically updates the whitepapers (as per Rule 2), it **MUST ALWAYS prepare a markdown diff** of that change and output it directly into the chat.
+5. **RULE OF WHITEPAPER DIFF REPORTING (BULLETPROOF TRIGGER)**
+   - Whenever the agent silently and automatically updates the whitepapers or docs (as per Rule 2), it **MUST ALWAYS embed a strict markdown diff** of that change and output it directly into the chat.
+   - Because "AI promises" fail in long context windows, **the agent MUST rigidly append the string `render_diffs(file:///absolute/path/to/modifiedfile)` on its own line during the final phase of its chat response.** This trigger strictly forces the UI to parse and append the visual diff block automatically. Do not bypass this hardware trigger.
    - This diff ensures that the supervisor (ChatGPT) can continuously review, cross-verify, and audit all autonomous canonical changes made by the agent.
 
 6. **RULE OF PROXY PLANNING (CHATGPT INTEGRATION)**
