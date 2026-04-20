@@ -651,6 +651,16 @@ To empirically test whether molecular N-body primitives structurally confine the
 > - **[Test] N=2 Symmetric Pair:** `Nodes = 288`. Far-field maximum tracked growth: `+0.876`.
 > - **[Test] N=3 Triad:** `Nodes = 292`. Far-field maximum tracked growth: `+0.460`.
 
+**Phase 21: Source-Normalized Composite & Minimal Confinement Benchmark**
+To mathematically rule out the confound that Phase 20 composites failed merely due to higher brute-force mass injection, a rigorous Source-Normalized audit was executed. The integrated initial scalar generation capacity ($\int |\Psi|^2$) was unified across geometries by scaling initial core amplitudes by $1/\sqrt{N}$.
+* **A. Raw Observation (Source-Normalized Open Limit):** Normalizing the physics injection (e.g. N=3 initialized with A=0.577 per core) did **not** rescue the topology. All geometries (N=1, N=2, N=3) universally triggered far-field boiling at identical temporal horizons. The geometries failed to act as geometric self-traps. The Nucleation Crisis remains robust across all discrete geometries in the open vacuum.
+* **B. Raw Observation (Minimal Smooth Confinement):** A weak, flawlessly smooth external Gaussian gravity well ($\kappa$ sink up to $0.05$ boundary strength) was introduced to test if soft non-breaking boundaries could save the topology without invoking Phase 9 Gibbs ringing. The weak well completely failed to contain the scalar exhaust; the generation vector ($\alpha \tanh \Phi \to 1.0$) drastically overwhelmed the smooth $0.05$ boundary, causing total lattice boiling. 
+* **C. Conservative Claim:** The tested open continuous slice robustly fails for both standalone and source-normalized composites. The failure is insensitive to geometry. Eq-11.1 isolated topological nucleation in an unconstrained generic vacuum is not mathematically supported. Explicit closure mechanisms (either massive universe-scale $\kappa$ walls or intrinsic dissipative operator modifications) are mandatory to proceed.
+
+> [!WARNING]
+> **Phase 22 Extension Framing Constraint**
+> The static open Eq-11.1 failed robustly in the tested canonical slice. A "Dynamic Expansion / Metric Dilution" extension is currently being investigated as a possible theoretical closure bypass mechanism. This is strictly an explicit extension hypothesis under test—it is NOT a confirmed cosmological truth, it is NOT verified "Dark Energy," and it does NOT represent a validated rescue of the core foundational Eq-11.1 matrix.
+
 ## Appendix A: Phenomenological Mapping (Force Analogies)
 
 The emergent dynamics of Lineum produce phenomena analogous to classical forces. This is strictly phenomenological (an analogy, not a demonstrated isomorphism to the Standard Model) and serves as a historical tracking notation of what the model does and does not replicate.
