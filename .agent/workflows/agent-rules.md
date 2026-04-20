@@ -39,3 +39,7 @@ These rules are absolutely binding for any agent operating within this project.
 7. **RULE OF SUPERVISOR PRE-APPROVAL**
    - If the user provides a prompt from the Supervisor (ChatGPT) that explicitly contains an "APPROVED" decision or a clear, mandated engineering instruction, the agent **MUST treat this as implicit approval from the user**.
    - The agent should generate the `implementation_plan.md` (as required by the system) but is authorized to immediately proceed to the Execution and Verification phases without blocking the chat to ask the user "Can I proceed?". The Supervisor's mandate serves as the green light.
+
+8. **RULE OF DIAGNOSTIC PROGRESS STREAMING**
+   - Whenever the agent executes a heavy mathematical or loop-intensive script (especially PDE solvers running thousands of steps for state generation or phase collision), the script **MUST NOT** run completely silently across major blocks.
+   - The agent must embed explicit and frequent `print()` statements inside any setup or execution loop (e.g., `if step % 500 == 0: print(...)`), logging the exact current phase, the current step, and the total target steps. This ensures that the background process provides constant, readable telemetry indicating that it is actively computing and has not frozen or fallen into a silent infinite loop.
