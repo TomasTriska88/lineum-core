@@ -44,3 +44,9 @@ These rules are absolutely binding for any agent operating within this project.
 8. **RULE OF DIAGNOSTIC PROGRESS STREAMING**
    - Whenever the agent executes a heavy mathematical or loop-intensive script (especially PDE solvers running thousands of steps for state generation or phase collision), the script **MUST NOT** run completely silently across major blocks.
    - The agent must embed explicit and frequent `print()` statements inside any setup or execution loop (e.g., `if step % 500 == 0: print(...)`), logging the exact current phase, the current step, and the total target steps. This ensures that the background process provides constant, readable telemetry indicating that it is actively computing and has not frozen or fallen into a silent infinite loop.
+
+9. **RULE OF EMPIRICAL COMPLETENESS (NO ORPHANED CLAIMS)**
+   - The whitepaper is the ultimate, self-contained Registry of Truth. The project does NOT rely on separate, external `constants.json` files or `.scratch` scripts to store historical parameters because they are easily unlinked or forgotten.
+   - If the agent writes an empirical conclusion into a whitepaper (e.g., "The node survives" or "Equation X fails"), the agent **MUST immediately append a localized Reproduction Block** directly beneath it.
+   - This block must explicitly list the absolute floating-point parameters used (`alpha=1.0`, `lam=0.01`, etc.), the explicit mathematical formula evaluated, and the exact spatial/temporal integration limits (`N=64`, `dt=0.04`, `steps=10000`).
+   - A claim without a directly attached reproduction matrix is considered a "fairy tale" and is invalid. Ensure any future AI can instantly reconstruct the environment reading only the whitepaper.
