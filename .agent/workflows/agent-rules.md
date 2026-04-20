@@ -27,10 +27,10 @@ These rules are absolutely binding for any agent operating within this project.
    - Example pattern: `print(f"[Global: {run_idx}/{total_runs} - {pct}% | ETA: {eta}] -> Integrating d={d} at step {step}/{steps}...")`
    - It is strictly forbidden to launch a "black box" script. The total overarching progress and ETA must be the most visible piece of information in every output cycle.
 
-5. **RULE OF WHITEPAPER DIFF REPORTING (BULLETPROOF TRIGGER)**
-   - Whenever the agent silently and automatically updates the whitepapers or docs (as per Rule 2), it **MUST ALWAYS embed a strict markdown diff** of that change and output it directly into the chat.
-   - Because "AI promises" fail in long context windows, **the agent MUST rigidly append the string `render_diffs(file:///absolute/path/to/modifiedfile)` on its own line during the final phase of its chat response.** This trigger strictly forces the UI to parse and append the visual diff block automatically. Do not bypass this hardware trigger.
-   - This diff ensures that the supervisor (ChatGPT) can continuously review, cross-verify, and audit all autonomous canonical changes made by the agent.
+5. **RULE OF WHITEPAPER DIFF REPORTING (MANUAL DIFF BLOCK)**
+   - Whenever the agent silently and automatically updates the whitepapers or docs (as per Rule 2), it **MUST ALWAYS output a strict markdown `diff` block** of that change directly into the chat.
+   - Do NOT use the `render_diffs` UI macro since it frequently fails to parse. Produce the raw markdown diff explicitly in the text response so the supervisor can read it.
+   - This explicitly printed diff ensures that the supervisor (ChatGPT) can continuously review, cross-verify, and audit all autonomous canonical changes made by the agent.
 
 6. **RULE OF PROXY PLANNING (CHATGPT INTEGRATION)**
    - When acting in "Planning Mode" (creating an `implementation_plan.md` artifact), the agent **MUST ALWAYS** echo the full content of the proposed implementation plan directly into the chat immediately after generating the artifact.
