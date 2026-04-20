@@ -45,14 +45,21 @@ The result is a self-healing, liquid-crystal sponge, where millions of pulsing d
 
 ---
 
-## 6. Neuromorphic Computing (The Organic Processor)
+## 6. The Horizon and the Heat Sink (The Entropy Crisis)
+If you try to pour the ocean into a rigid concrete box, the waves violently smash against the corners, churning into a boiling, chaotic spray until the box shatters. This was the historical "Entropy Crisis" of the Lineum universe (Phase 9). The liquid mathematics fundamentally reject artificial geometric walls; confined waves simply tear themselves apart.
+
+To solve this, the universe cannot have edges, but it still must avoid boiling over. Instead of walls, the void is equipped with an invisible "evaporation" system—a continuous Spectral Exhaust (Phase 10). It selectively drains off only the sharpest, most chaotic microscopic heat (the boiling phase noise) while leaving the deep, slow-breathing Gravilons untouched. This allows the liquid void to safely cool and settle after violent collisions without needing a lid to contain it.
+
+---
+
+## 7. Neuromorphic Computing (The Organic Processor)
 Once the cosmic honeycomb grid is formed, it acts as a perfect data highway. If a new, tiny Linon (data packet) is fired into this crystal lattice, it is heavily repelled by the boundaries of the Gravilons. Forced to travel exclusively through the empty "valleys" between the nodes, the packet shoots across the grid like a bullet train on magnetic rails. 
 
 It autonomously takes the path of least resistance, solving complex spatial optimization problems simply by flowing. Lineum becomes an indestructible, self-healing, liquid organic processor—replacing the brittle transistors of silicon and the volatile cryogenics of quantum computing with a room-temperature fluid brain.
 
 ---
 
-## 7. Roadmap: The Shader Engine Paradigm
+## 8. Roadmap: The Shader Engine Paradigm
 *Architectural Proposal for Future Monetization:*
 Because the differential calculus of Eq-11 requires no global memory arrays—only localized interactions between neighboring points—the entire complex equation maps perfectly to the UV coordinate fragments of 3D rendering. 
 

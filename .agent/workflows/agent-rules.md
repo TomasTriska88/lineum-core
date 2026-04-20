@@ -3,11 +3,16 @@
 These rules are absolutely binding for any agent operating within this project.
 
 1. **RULE OF DIRECT SUPERVISOR COMMUNICATION**
+   - The "Supervisor" is the ChatGPT instance orchestrating the scientific research alongside the user.
+   - **CRITICAL DISTINCTION:** Do not confuse the Supervisor (ChatGPT) with "Lina". `LINA_PERSONA.md` contains instructions exclusively for the Gemini-based public web portal Agent. `LINA_PERSONA.md` is NOT the prompt for ChatGPT. ChatGPT is governed by the *Assistant Handoff Protocol*.
    - All messages intended for the user to copy and send to the supervisor (e.g., ChatGPT) must be output **DIRECTLY INTO THE CHAT**.
    - It is strictly forbidden to save these texts into external files (e.g., `output_report.md` or other temporary .md files) and force the user to copy from them. The chat is the sole medium for returning communication outputs.
 
 2. **RULE OF SILENT CANON SYNCHRONIZATION**
    - The agent must **CONTINUOUSLY AND AUTOMATICALLY update the whitepapers** (e.g., `01-core-lineum.md`, `02-core-equation.md`) whenever discussions or code analyses lead to the clarification of principles, the discovery of new connections, or the refutation of previous hypotheses.
+   - **Dual-Document Research Architecture:** 
+     - Use `02-core-equation.md` exclusively for the strict chronological mathematical history, technical audits, and equation permutations.
+     - You MUST always simultaneously update `00-lore-layman.md` whenever a new mechanical or mathematical principle is discovered or audited, translating the findings into the project's visual and conceptual lore layer to ensure conceptual synchronization.
    - The agent **MUST NOT** alert or ask for permission regarding these updates ("Should I write this to the whitepaper?"). The agent performs these updates silently and routinely in the background, point by point, precisely, and surgically—ensuring that not even the smallest detail, thought, or change is ever lost in the conversation log.
    - No "batch" updates at the end of the week. Recording into the whitepaper happens **immediately** after the factual point is established.
 

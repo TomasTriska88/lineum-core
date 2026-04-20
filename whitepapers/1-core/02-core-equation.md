@@ -577,6 +577,18 @@ A stress-test was applied to stable phase-coherent towers post-relaxation to eva
 *   **B. Interpretation**: The HF spectral decrease indicates an internal ordering rather than disorganized noise. The structural mass redistributes its stored amplitude bounds into sub-structures within localized basins. The standing wave tower acts as an energy reservoir when under shock, breaking down into a field of candidate stable nodes (unverified) instead of collapsing entirely.
 *   **C. Minimal Claim**: A highly saturated standing-wave structure under perturbation transitions into a multi-cluster structured state. The decrease in HF spectrum and local amplitude redistribution indicates localized sub-structural locking rather than global diffuse chaos. Long-term cluster isolation and stability verification remain open tasks.
 
+**Phase 9: Spatial Confinement Audit**
+To resolve the Entropy Crisis, a naive Phase 9 pilot hypothesized that enforcing explicit spatial containment (geometric bounding masks `confinement_mask_psi`) could isolate thermodynamics. 
+* **A. Raw Observation**: When tested inside the continuous spectral ETDRK2 framework, explicit rectangular real-space multiplicative boundaries instantly fracture the psi continuity.
+* **B. Interpretation**: Real-space binary limits are mathematically incompatible with FFT-based linear operators. They inject unbounded high-frequency Gibbs artifacts (UV ringing) causing instant numerical runaway (NaN collision).
+* **C. Minimal Claim**: Phase 9 spatial confinement is mathematically incompatible with the FFT-based solver path and is formally rejected.
+
+**Phase 10: Spectral Exhaust Initialization**
+Following Phase 9 failure, the architecture transitions out of real-space barriers toward *Frequency-Domain Spectral Exhaust* (`nu * k^4` biharmonic hyperdiffusion) to test if high-k spectral occupancy can be damped natively.
+* **A. Raw Observation**: A strict ablation matrix verified that under open periodic boundaries with standard SoftAbs, short-horizon runaway is prevented regardless of the exhaust parameter `nu` (even at `nu=0.0`). While `nu > 0` explicitly reduces high-k spectral occupancy relative to baseline (-25% relative reduction), the fields settle into an overdamped, sustained plateau of low-level noise without topological relocalization.
+* **B. Interpretation**: Short-horizon NaN suppression alone does not establish a valid entropy-resolution mechanism. The original runaway was driven by Phase 9 masks, not the open periodic vacuum. There is no evidence yet of spontaneous relocalization from chaos under spectral exhaust alone.
+* **C. Minimal Claim**: Phase 10 spectral exhaust has been initialized as an engineering test path. While it suppresses high-k spectral occupancy, it overdamps coherent structures without spontaneous relocalization. The Entropy target claim remains not ready for editorial wording.
+
 ## Appendix A: Phenomenological Mapping (Force Analogies)
 
 The emergent dynamics of Lineum produce phenomena analogous to classical forces. This is strictly phenomenological (an analogy, not a demonstrated isomorphism to the Standard Model) and serves as a historical tracking notation of what the model does and does not replicate.
