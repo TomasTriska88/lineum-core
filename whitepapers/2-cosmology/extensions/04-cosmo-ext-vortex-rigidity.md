@@ -1884,6 +1884,86 @@ Phase 69 provides crucial clarity on the limits of the current successor archite
 * **Q5) What is the strongest safe claim now?**
   Stable identity plus nontrivial anisotropic mechanics are supported, and elongated compound analogues and higher-order body shapes may begin to appear, but no literal nuclear/orbital equivalence should yet be claimed.
 
+---
+
+## 111. Phase 70: Short-Range Boundary-Glue / Meson-Shell Audit
+
+*Status: **TESTING. MESON-SHELL AUDIT.***
+
+**Objective:**
+Phase 69 clarified the limits of the current architecture: Eq-12 + U supports stable anisotropic mechanics, but the Aegis wall ($S$) acts as a hard repulsive quarantine shell that strictly enforces slip-and-separation for opposite-type (A+B) pairs. Phase 70 tests whether a short-range, boundary-localized attractive shell (a "meson-like" analogue) can be added on top of this hard core to create a finite-distance attractive trap without breaking the Aegis barrier, reintroducing foam, causing full merge, or acting as a long-range force.
+
+**Methodology:**
+We introduce exactly one minimal candidate class, $M_{shell}$, a real-valued field sourced strictly by interface/wall conditions ($1-S^2$), decaying rapidly to ensure a finite range (only a few wall widths), and modifying interfacial free energy (lowering effective surface tension) rather than directly driving bulk Linon growth. The target is a stable or metastable A+B near-contact attractor with a preferred separation, verifying if the architecture can support the qualitative pattern: too close $\to$ repelled by hard core, slightly separated $\to$ attracted into a local well, far apart $\to$ no interaction.
+
+**Execution:**
+A strict prototype matrix (`eval_phase70_meson_shell.py`) was executed over 3000 steps. Stage A tested baseline A+B, isolated A, and isolated B controls without $M_{shell}$. Stage B tested A+B pairs with the $M_{shell}$ field active under slight gap and near-contact conditions. Stage C verified the same-type control (A+A) with $M_{shell}$. Stage D performed a long-horizon audit of the near-contact E configuration to ensure stability. No new bulk forces or direct Psi boosters were added; $M_{shell}$ was strictly sourced by boundary conditions ($1-S^2$) and only lowered effective surface tension ($D_B$).
+
+**Finding:**
+1. **Baseline Controls (Stage A):** Isolated bodies remained stable. A+B without $M_{shell}$ smoothly separated as expected, establishing the hard-core repulsion baseline.
+2. **Meson-Shell Attractor Failure (Stage B & D):** The architecture **failed** to support an A+B near-contact attractor even with $M_{shell}$. In all tested A+B configurations (slight gap, near-contact, elongated analogue), the repulsive hard core of the Aegis field overwhelmed the attractive potential of the lowered surface tension. The pair actively separated (e.g., Separation distance growing from $29.90\text{px}$ to $115.18\text{px}$ over 3000 steps). The $M_{shell}$ failed to "sew" the interfaces together.
+3. **Identity Asymmetry Maintained (Stage C):** The addition of the $M_{shell}$ did not disrupt the fundamental identity rules. Same-type controls (A+A) still successfully merged into a single body (`TotEnvs` dropping to 1), preserving the Cahn-Hilliard asymmetry. Vacuum remained perfectly quiet ($Bg \approx 0.001$) across all tests.
+
+**Conclusion:**
+Phase 70 demonstrates the absolute robustness of the Aegis ($S$) quarantine field. The interface boundary acts as such a powerful repulsive core that even introducing a localized, strong, attractive scalar mediator ($M_{shell}$) directly on the interface is insufficient to overcome top-level topological separation. The architecture fiercely protects identity boundaries against both merge and forced proximity.
+
+**Final Interpretation Questions:**
+* **Q1) Does the M_shell mediator successfully create a stable near-contact A+B trap?**
+  No. The $M_{shell}$ was unable to overcome the inherent Aegis hard-core repulsion. A+B pairs continued to actively slip and separate, failing to form an attractive well.
+* **Q2) Does the addition of the M_shell field inadvertently break vacuum (cause foam) or cause A+B cannibalism (merge)?**
+  No. The vacuum remained perfectly quiet (Background Mass $\approx 0.001$) and A+B pairs never merged, confirming the strict boundary-localized nature of the implementation.
+* **Q3) Are the observed separation states true repellors, or only long-lived jammed geometries?**
+  They are true repellors. The A+B pairs actively distance themselves across the grid indefinitely under all tested conditions, demonstrating the Aegis field's absolute prohibition of overlapping opposite-phase interfaces.
+* **Q4) Does same-type vs opposite-type asymmetry remain intact under this new mediator physics?**
+  Yes. A+B pairs strictly separate, while A+A pairs merge into larger single identity bodies, preserving the fundamental Cahn-Hilliard asymmetry even in the presence of $M_{shell}$.
+* **Q5) What is the strongest safe claim now?**
+  The Lineum Eq-12 architecture features a nearly impenetrable identity boundary. While this guarantees absolute protection against topological collapse (cannibalism) and foam, it strictly prohibits the formation of compound A+B orbital structures via localized interfacial mediators.
+
+## 112. Phase 71: S-Softening / Barrier-Softening Audit
+
+*Status: **CLOSED. SOFTENING FAILS TO BIND.***
+
+**Objective:**
+Phase 71 closed the S-softening route for the current successor branch. Conservative Aegis-side softening acts merely as a local wall discount; the Aegis hard core remains robust and dominant, causing droplets to slip and separate.
+
+## 113. Phase 72: Upsilon-Space Registry Well Audit
+
+*Status: **CLOSED. REGISTRY WELL FAILS TO BIND.***
+
+**Objective:**
+Phase 72 closes the Upsilon-space registry-well pathway. Modifying existing Aegis/Upsilon mechanics (whether via softening, glue, or registry well) is structurally insufficient to overcome the dominant topological quarantine of the Aegis boundary. Eq-12 remains the stable hard-core / identity / anisotropic-contact baseline, but it lacks a true A+B near-contact attractor.
+
+## 114. Phase 73: Short-Range Bond-Order / Linker Field Audit
+
+*Status: **CLOSED. WALL-ATTACHED BOND SHELLS REJECTED.***
+
+**Objective:**
+Phase 73 proved that a wall-attached bond-order shell ($B_{link}$) is too co-located with the Aegis hard-core repulsion to create a true bond attractor. The linker was mathematically clean, perfectly selective (A/B only), and completely safe regarding vacuum and foam—but because it was anchored directly to the steep $S=0$ topological wall, its weak attractive gradient was entirely overwhelmed by the exponential-like Aegis repulsion. It could not arrest sliding. The failure is architectural: the attractive field was too close to the repulsive Aegis core.
+
+## 115. Phase 74: Gap-Halo / Mid-Gap Bond Architecture Audit
+
+*Status: **CLOSED. MID-GAP ATTRACTION FAILS AGAINST HARD-CORE.**
+
+**Objective:**
+Phase 74 rigorously tested whether spatial displacement of the attractive well into the mid-gap vacuum ($B_{gap}$) could create a stable compound bond. The implementation perfectly displaced the peak away from the wall and preserved same-type neutrality. However, the purely local interfacial attraction was still entirely overwhelmed by the Aegis kinetic boundary repulsion. Particles continued to slip sideways and separate indefinitely. The Aegis boundaries act as effectively frictionless, hyper-rigid bags. The failure is architectural: no local interfacial glue or magnetic gap can hold two frictionless fluid boundaries together.
+
+## 116. Phase 75: Soft Shared Cloak / Compliant Common Envelope Planning Audit
+
+*Status: **CLOSED. EXHAUSTION OF CONTINUOUS CONFINEMENT ROUTE.***
+
+**Objective:**
+Following the architectural failure of localized interfacial bonding, Phase 75 tested a paradigm shift inspired by the MIT Bag Model of QCD confinement. Instead of engineering local attraction between particles, Phase 75 implemented a shared, external compliant envelope ($E_{cloak}$) to encapsulate two distinct Eq-12 particles. By penalizing large macroscopic separation via perimeter surface tension, this model aimed to confine the particles globally. 
+
+**Result:**
+The implementation successfully created a single shared envelope enclosing two distinct internal identities without merging them (no cannibalism). However, because the internal Eq-12 boundaries are perfectly frictionless and incompressible, the objects deformed into elongated "pancakes" under the envelope's pressure, slipped tangentially, and separated. The strongest safe claim is: Eq-12 successor mechanics support robust objects, anisotropic contact algebra, and even shared compliant envelopes, but not persistent multi-body binding within the tested continuous PDE routes.
+
+## 117. Phase 76: BondGraph Emergent State Layer Planning Audit
+
+*Status: **PLANNING. HIGHER-LEVEL EMERGENT BOND-STATE.***
+
+**Objective:**
+Phase 75 exhausted the continuous PDE route for confinement and multi-body chemistry. Phase 76 shifts the binding mechanism to a higher-level emergent BondGraph layer. Eq-12 remains the fundamental substrate providing robust objects, identity, anisotropic contact events, and same/opposite asymmetry. Phase 76 will test whether "bonding" must be represented as a distinct emergent state transition (a coarse-grained graph edge) between these already-formed continuous objects, rather than as another local continuum field.
+
 ## 108. Phase 67: Minimal Rigid-Scaffold / Structural Registry Audit
 
 *Status: **TESTING. RIGID SCAFFOLD AUDIT.***
