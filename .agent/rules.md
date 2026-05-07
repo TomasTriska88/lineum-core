@@ -95,3 +95,6 @@ The portal seamlessly integrates three distinct worlds, and the copy must reflec
 
 ## 19. Browser Usage (Subagent vs MCP)
 - **Subagent vs MCP:** Before starting a browser, you MUST explicitly realize whether you are launching it as a standalone subagent (`browser_subagent`) or via MCP (`chrome-devtools-mcp`). Use the MCP version ONLY if you absolutely cannot accomplish the task with the standard subagent. The MCP version does not support logins, runs exclusively in incognito mode, and is generally more restrictive.
+
+## 20. Git vs MCP
+- **Local Commits:** For committing and pushing code changes in local repositories, ALWAYS use standard local `git` CLI commands via the terminal. NEVER use GitHub MCP tools (`mcp_github_push_files`, etc.) for direct file modifications or pushes. This ensures all local Git hooks (like CalVer version bumps and cleanup scripts) are properly triggered. Use GitHub MCP only for PRs, issues, or remote repository management.
