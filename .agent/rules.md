@@ -84,6 +84,11 @@ The portal seamlessly integrates three distinct worlds, and the copy must reflec
 - **Prevent Ping-Pong:** This prevents cycles where the AI repeatedly adds, removes, and re-adds code elements. First align on the architectural plan, *then* execute the file modifications.
 
 ## 17. Knowledge Base Synchronization
-- **Primary Source of Truth**: The `.agent/knowledge/` directory contains critical, long-term Knowledge Items (KIs) backed up from the AI's internal memory (e.g., company administration, licensing, and branding details).
+- **Primary Source of Truth**: The `.agent/knowledge/` directory contains critical, long-term Knowledge Items (KIs). 
+- **Strict Local Knowledge (No Central Brain)**: NEVER save or create new Knowledge Items in the agent's global `appDataDir` (e.g., `~/.gemini/antigravity/knowledge`). All AI knowledge must be version-controlled directly within the repository.
 - **Mandatory Initialization**: Any agent starting a session in this repository MUST proactively check the `.agent/knowledge/` directory to assimilate critical project context if they don't already have it.
 - **Auto-Restoration**: If the local agent KI store is empty on a new machine, the agent MUST automatically execute `.agent/restore-knowledge.ps1` in the terminal WITHOUT asking for permission (use `SafeToAutoRun: true`). Do not ask the user, just run it to instantly restore native memory.
+
+## 18. Auto-Configuration of MCP & Environment
+- **Auto-Restoration of MCP Config:** Upon starting a session, the agent MUST verify if the MCP configuration exists in the global `appDataDir`. If missing, the agent MUST auto-run `.agent/restore-mcp.ps1` (with `SafeToAutoRun: true`) without asking. Next, the agent MUST verify via PowerShell if the `$env:GITHUB_PERSONAL_ACCESS_TOKEN` environment variable exists. If it is missing, the agent MUST explicitly warn the user and wait for them to resolve it ad-hoc. Do NOT attempt to set the environment variable automatically.
+- **Ecosystem Mirroring:** Whenever you modify the global workspace files `mcp_config.json` or `restore-mcp.ps1` in this repository, you are STRICTLY FORBIDDEN from finishing your task until you manually copy these exact files to the `.agent/` (or `.agents/`) directories of the other two repositories (`../lineum-dynamics` and `../oea`) via terminal to ensure 100% workspace consistency.
