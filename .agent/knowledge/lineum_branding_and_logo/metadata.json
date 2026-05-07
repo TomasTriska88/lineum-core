@@ -1,0 +1,50 @@
+{
+    "title": "Lineum Branding and Logo",
+    "summary": "Codifies the visual identity and branding strategy of the Lineum project, including the 'Simulacrum' aesthetic, semantic color palette (Cyan/Wave, Purple/Memory, Amber/Identity), and 'Gravilon' terminology. Documents the 'happy accident' logo animation philosophy (Incompleteness Theorem) and trademark protection. Establishes global UI patterns: flow-based 'Unified Global Footer', hyper-condensed 'Unified Navigation Menu (Mega-Dropdown)', and 'Language Picker' dropdown to ensure UX horizontal resilience on 1024px+ viewports.",
+    "references": [
+        {
+            "type": "conversation_id",
+            "value": "615b7eac-dcd4-4643-9098-54d9ae0a9e77"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/routes/brand/+page.svelte"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/tests/e2e/brand_page.spec.ts"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/lib/data/docs/design/DESIGN_GUIDE.md"
+        },
+        {
+            "type": "file",
+            "value": "marketing/brand-assets/lineum-brand-guidelines.md"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/lib/components/ContactFooter.svelte"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/routes/+layout.svelte"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/app.css"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/tests/e2e/layout_overlap.spec.ts"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/tests/e2e/navigation.spec.ts"
+        },
+        {
+            "type": "file",
+            "value": "portal/src/lib/components/Navigation.svelte"
+        }
+    ]
+}

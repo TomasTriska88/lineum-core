@@ -1,0 +1,174 @@
+{
+    "title": "Lineum Core: Architecture, Lab UI & Verification Standards",
+    "summary": "Master KI for Lineum Core and Lab UI. Solidifies 'Registry of Truth' data model (v1.0.0), Assistant Handoff Protocol (v1.0.0), and Gravilon (φ) terminology. **March 2026 Stability Update**: Defines Portal layout standard incorporating the 'Unified Global Footer' for flow-based resilience and the 'Mega-Dropdown' for horizontal menu compression. Codifies the 'Hardcoded Inline Support' fix for Tailwind JIT stability issues on new routes and the Playwright bounding box (y-coordinate) math verification for navigation clearance.",
+    "references": [
+        {
+            "type": "conversation_id",
+            "value": "7285"
+        },
+        {
+            "type": "conversation_id",
+            "value": "79a43cc7-a559-4fa6-b78e-376d8edea203"
+        },
+        {
+            "type": "conversation_id",
+            "value": "80112b17-98f6-4873-b9ed-f4d59c69fca8"
+        },
+        {
+            "type": "conversation_id",
+            "value": "2617467e-95ca-4ff1-a23d-722a3800a85f"
+        },
+        {
+            "type": "conversation_id",
+            "value": "5de9873b-83e1-4472-a74a-b5bc2ed78a92"
+        },
+        {
+            "type": "conversation_id",
+            "value": "fd6037bf-b420-47dc-94c9-733730746cb8"
+        },
+        {
+            "type": "conversation_id",
+            "value": "7e5cd007-2146-4f73-b0dc-a68b39ab50bf"
+        },
+        {
+            "type": "conversation_id",
+            "value": "60b7d991-eece-48cc-a9c4-39b0614b8c81"
+        },
+        {
+            "type": "conversation_id",
+            "value": "f58d7fac-4ece-4ab4-a6b4-257610dd802c"
+        },
+        {
+            "type": "conversation_id",
+            "value": "74b04115-1d90-4ab9-9489-d9535647176b"
+        },
+        {
+            "type": "conversation_id",
+            "value": "8664"
+        },
+        {
+            "type": "conversation_id",
+            "value": "8667"
+        },
+        {
+            "type": "conversation_id",
+            "value": "assistant_handoff_protocol_impl"
+        },
+        {
+            "type": "conversation_id",
+            "value": "canonical_promotion_policy_design"
+        },
+        {
+            "type": "conversation_id",
+            "value": "f12121a7-90d4-435d-9d9e-00fe8aa56f57"
+        },
+        {
+            "type": "conversation_id",
+            "value": "lineum_multi_agent_evolution"
+        },
+        {
+            "type": "conversation_id",
+            "value": "ux_falsification_gap_analysis"
+        },
+        {
+            "type": "conversation_id",
+            "value": "claim_analysis_turn_34"
+        },
+        {
+            "type": "file",
+            "value": "whitepapers/1-core/01-core-lineum.md"
+        },
+        {
+            "type": "file",
+            "value": "routing_backend/lab_api.py"
+        },
+        {
+            "type": "file",
+            "value": "tools/whitepaper_contract.py"
+        },
+        {
+            "type": "file",
+            "value": "routing_backend/test_lab_api.py"
+        },
+        {
+            "type": "file",
+            "value": "lab/src/lib/components/WhitepaperClaims.svelte"
+        },
+        {
+            "type": "file",
+            "value": "tests/test_claim_verification.py"
+        },
+        {
+            "type": "file",
+            "value": "lab/tests/whitepaper-claims.spec.js"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/assistant_handoff_protocol.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/whitepaper_verification_and_audit_rigor.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/lab_ui_and_systems.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/ontology/registry_of_truth_and_ingestion.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/theory/physics_and_cosmology.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/claims_system_audit_2026_03_07.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/claim_management_standards.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/ssr_and_localization_stabilization.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/project_status_summary_v1.md"
+        },
+        {
+            "type": "test_case",
+            "value": "test_health_returns_all_required_fields"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/theory/claim_gap_analysis_v1.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/implementation/claim_mapping_conventions.md"
+        },
+        {
+            "type": "test_case",
+            "value": "test_health_no_build_unknown"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/history/playwright_debug_log_2026_03_08.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/hygiene/repo_hygiene_and_safety.md"
+        },
+        {
+            "type": "file",
+            "value": "artifacts/walkthroughs/whitepaper_claims_test_fix_v2.md"
+        },
+        {
+            "type": "conversation_id",
+            "value": "615b7eac-dcd4-4643-9098-54d9ae0a9e77"
+        }
+    ]
+}

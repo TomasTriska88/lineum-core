@@ -1,0 +1,38 @@
+{
+    "title": "Lineum Licensing & Legal Framework",
+    "summary": "Knowledge Item for the dual-licensing structure (AGPLv3 and Commercial) and copyright facts for the Lineum project. Consolidates the authorship audit, DCO/CLA requirements, and directory-specific license invariants (AGPLv3 for code, CC-BY-4.0 for whitepapers). It validates Tomáš Tříska as sole author and documents the trademark protection of 'Lineum™', 'Lina™', and the official 'Happy Accident' logo symbol.",
+    "references": [
+        {
+            "type": "conversation_id",
+            "value": "b1861d87-6e54-46c5-9275-69bc298da78f"
+        },
+        {
+            "type": "file",
+            "value": "LICENSE-CC-BY-4.0.md"
+        },
+        {
+            "type": "file",
+            "value": "LICENSING.md"
+        },
+        {
+            "type": "file",
+            "value": "CONTRIBUTING.md"
+        },
+        {
+            "type": "file",
+            "value": "COMMERCIAL_LICENSE.md"
+        },
+        {
+            "type": "file",
+            "value": "whitepaper/LICENSE-CC-BY-4.0.md"
+        },
+        {
+            "type": "conversation_id",
+            "value": "ccb8c7e3-039b-4afd-9f85-ff9e59af2903"
+        },
+        {
+            "type": "conversation_id",
+            "value": "615b7eac-dcd4-4643-9098-54d9ae0a9e77"
+        }
+    ]
+}
