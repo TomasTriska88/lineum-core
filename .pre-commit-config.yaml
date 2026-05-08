@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-no-czech-diacritics
+        name: Check for Czech diacritics (Non-ASCII)
+        entry: "[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]"
+        language: pygrep
+        # Will check only selected file types (scripts)
+        files: \.(sh|php|py)$
+        # If you need an exception for a specific file in the future, add it here (separated by |)
+        exclude: ^(tests/some-allowed-file\.py)$
