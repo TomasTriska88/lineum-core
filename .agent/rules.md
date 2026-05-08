@@ -98,3 +98,6 @@ The portal seamlessly integrates three distinct worlds, and the copy must reflec
 
 ## 20. Git vs MCP
 - **Local Commits:** For committing and pushing code changes in local repositories, ALWAYS use standard local `git` CLI commands via the terminal. NEVER use GitHub MCP tools (`mcp_github_push_files`, etc.) for direct file modifications or pushes. This ensures all local Git hooks (like CalVer version bumps and cleanup scripts) are properly triggered. Use GitHub MCP only for PRs, issues, or remote repository management.
+
+## 21. Workspace Discovery & Documentation Strategy
+- **Scan First:** Before proposing or making any architectural, deployment, or documentation changes, the agent MUST thoroughly scan the repository directory structure (specifically `docs/` and `.agent/`) to understand established patterns. NEVER create scattered `README.md` files in subdirectories unless explicitly requested; always look for and update existing consolidated documentation files.
