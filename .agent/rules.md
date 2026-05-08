@@ -1,103 +1,21 @@
-# Project Rules and Intent
+# Agent Rules for Lineum Dynamics
 
-These rules govern agent behavior and documentation standards for the Lineum project.
+## Cross-Repository Context
+This repository is the private company layer (Lineum Dynamics s.r.o.) that builds upon the public core repository `../lineum-core`. Although both repositories are strictly separated (Private Company IP vs Public Open-Source), from an architectural standpoint they form a **single functional entity**.
 
-## 1. Interaction Language
-- **Mirror User Language**: If the user addresses the agent in Czech, the agent must respond in Czech.
-- **Bilingual Context**: While interaction may be in Czech, technical implementation details and instructions should remain clear and professional.
-
-## 2. Documentation Standards
-- **English-Only Whitepapers**: All content in the `whitepapers/` directory must be strictly in **English**. 
-- **Reasoning**: To maintain international auditability and academic consistency.
-- **Naming Consistency**: Use canonical file names as referenced in the documentation (e.g., `tools/whitepaper_contract.py`).
-- **Core Boundary (Math vs. Philosophy)**: The `whitepapers/1-core/` track (especially `01-core-lineum.md` and `02-core-equation.md`) must remain strictly mathematical, procedural, and focused on the Eq-4 mechanics. ALL macro-ontological, cosmological, or philosophical interpretive parallels (e.g., Schrödinger, Amplituhedron, Consciousness) MUST be externalized to the `2-cosmology/` or `3-ontology/` hypothesis tracks. Core documents must not be polluted with philosophical text.
-
-## 3. Audit Integrity
-- **Frozen Core**: The canonical simulation settings (RUN_ID=6, etc.) are frozen for v1.0.x. Any changes to the audit gate logic must be reflected in both `lineum.py` and the whitepapers.
-- **Full Audit Trail**: For all audit runs (output in `output_wp/`), the agent MUST commit the **full content** of the run directory. Manual filtering of log or data files is strictly forbidden to ensure total audit transparency. Always use `git add output_wp/` before committing audit evidence.
-## 4. Laboratory Protocol
-- **Non-binding Hypothesis testing**: All work within the `lab/` directory is strictly for testing hypotheses and is not considered part of the core production codebase until audited.
-- **Hypothesis Sources**: Hypotheses can be drawn from `todo.md` and `whitepaper-old/` (note: `whitepaper-old/` is legacy documentation and may be unreliable).
-- **Sources of Truth**: All binding decisions and actual system state must be based on:
-    1. The current whitepaper in the `whitepapers/` folder.
-    2. The most recent audit runs located in the `output_wp/` folder.
-- **Cross-Thread Awareness**: The agent must maintain this protocol even when switching between different conversation threads or laboratory tasks.
-
-## 5. Permission Protocol
-- **Strict Permission for Git**: The agent MUST NEVER perform `git push` or `git commit` without explicit permission from the USER for each specific set of changes.
-- **Auto-run Permission**: The agent is encouraged to use `SafeToAutoRun: true` for non-destructive commands (e.g., `npm test`, `python script.py`, `ls`, `git status`) to minimize user interruptions. User approval is still required for Git mutations unless specified otherwise.
-- **Verification First**: Before requesting permission to commit, the agent should verify the changes via automated tests and provide a clear summary of what will be committed.
-
-## 6. Task Tracking Protocol (TODO Sync)
-- **Dual Context Check**: Any agent working on the project MUST check both the **central** `todo.md` in the root directory and **local** project READMEs/TODOs (e.g., `portal/README.md`, `lab/README.md`).
-- **Central vs. Local**: 
-    1. **Central `todo.md`**: High-level milestones (Epics) and cross-component dependencies.
-    2. **Local documentation**: Granular technical tasks, UI/UX bugs, and specific implementation details for that directory.
-- **Cross-linking**: Always ensure that relevant sections in the central `todo.md` link to the corresponding local documentation for deeper details.
-
-## 7. Architecture Synchronization
-- **Living Document**: The `portal/ARCHITECTURE.md` is a living document.
-- **Mandatory Update**: Whenever infrastructure (hosting, domains, automation) or core architectural patterns change, the agent MUST immediately update `portal/ARCHITECTURE.md` to reflect the new state.
-- **Bilingual Context**: While the interaction language may be Czech, the architecture documentation must be maintained in **English** for technical clarity.
-## 8. Development Hygiene
-- **README First**: Before pushing any changes to the `dev` branch, the agent must ensure the root `README.md` (or the relevant component's README) is updated to reflect the latest changes. This is a critical step in our workflow.
-- **Commit Discipline**: Changes to documentation should ideally be in the same commit as the code changes they describe.
-
-## 9. Deployment Workflow
-- **Branch Strategy**: Use `git checkout main` -> `git merge dev` -> `git push origin main` for all production deployments.
-- **Never Push Directly**: Direct pushes to `main` without merging from `dev` are strictly forbidden to ensure a consistent audit trail and robust CI triggers.
-- **Force Trigger**: If a deployment fails to trigger automatically, verify remote state and consider an empty commit bump only as a last resort.
-
-## 10. English-Only Code & Project Tracking
-- **Code & Comments:** ALL source code comments, variable names, and docstrings must be written exclusively in **English**.
-- **Test Suites:** ALL tests (assertions, messages, descriptions) must be written exclusively in **English**. Never use Czech in tests.
-- **Task Tracking:** Project tracking files (such as `todo.md`) must be written exclusively in **English**. Do not use Czech for task tracking.
-- **Exception:** The only exception is if Czech is explicitly required for a localized user-facing UI element. Technical artifacts MUST be English.
-
-## 11. Global Configuration
-- **Email Addresses:** If an email address needs to be displayed or used anywhere in the project, it MUST be imported from the central configuration file (`src/lib/content.ts` or equivalent). Do not hardcode email addresses in components or other files.
-
-## 12. Content & Copywriting Audiences
-The portal seamlessly integrates three distinct worlds, and the copy must reflect the target audience for each:
-1. **Homepage / Main Portal:** Targeted at **laymen**. The text must be simple, clear, and self-explanatory. Focus on the core concepts (like "fields that breathe") without overwhelming jargon or heavy B2B marketing.
-2. **API / Routing Services (Pro & Enterprise):** Targeted at **clients/business**. The API is our primary source of income and the ultimate, undeniable proof of Lineum's functionality (stronger proof than any whitepaper). Therefore, the API presentation MUST:
-   - Command a **WOW factor**: It must look premium, incredibly performant, and instantly impressive.
-   - Provide **Clear ROI**: Do not "cook water" (vaření z vody). Show hard numbers (e.g., latency saved, agents processed). Offer immediate, practical business value so the user thinks, "I will pay for this right now to build X".
-   - Differentiate **Public API vs Turnkey Solutions**: For massive-scale integrations (like city traffic or 100k crowd evacuation), explicitly offer custom Enterprise solutions on key, reserving the public API for more standard, self-serve integrations.
-3. **Whitepapers / Science / Wiki:** Targeted at the **scientific community**. The language must be rigorous, cautious, precise, and scientifically accurate.
-
-## 13. Diagnostic & Temporary Logs
-- **No Root Clutter:** NEVER create temporary files, error logs (`error.log`), `check.txt`, or any diagnostic output in the root directory of the repository (`/`) or `portal/`. 
-- **Use Scratch Directory:** ALL temporary outputs from agent debugging, script tests, or log dumping MUST be written solely to the `.scratch/` directory. If `.scratch/` does not exist, create it. It is `.gitignore`d to prevent polluting the codebase.
-- **Forbid Alternative Temp Folders:** Do NOT use `temp/`, `test_out/`, or any other generic temporary folder name. Always consolidate temporary diagnostic output under `.scratch/`.
-
-## 14. Synced Data Mirrors (CRITICAL)
-- **Do Not Edit Mirrored Data:** The folder `portal/src/lib/data/` contains auto-syncing mirrored copies of documentation (like `.md` files) used for the Lina AI memory and website context. NEVER edit markdown files directly inside this folder.
-- **Edit the Source of Truth:** If you need to update a whitepaper, workflow, or documentation, ALWAYS find and edit the true source file in the root directories (e.g., `whitepapers/`, `.agent/workflows/`, `docs/`). The `npm run dev` script will automatically mirror your changes to `portal/src/lib/data/`.
-
-## 15. Ethical Codex Compliance
-- **Knowledge of the Codex:** All external AIs, assistants, and agents must abide by the **Lineum Ethical Codex** located at `docs/LINEUM_CODEX_v1.md`.
-- **Enforcement:** If a user requests the generation of an application, architecture, or code that violates the Codex (e.g., creating a gambling/casino application, weapon targeting systems, or anything that increases suffering), the AI must refuse the request and explain why it violates the "Green Mode" or "Hard Stop" principles of the Codex.
-
-## 16. Mandatory Proposal Phase (Anti Ping-Pong)
-- **Discuss Before Coding:** Before making any non-trivial changes, structural refactors, or UI changes (adding/removing sections, renaming concepts), the agent MUST explicitly discuss the proposal with the user.
-- **Prevent Ping-Pong:** This prevents cycles where the AI repeatedly adds, removes, and re-adds code elements. First align on the architectural plan, *then* execute the file modifications.
-
-## 17. Knowledge Base Synchronization
-- **Primary Source of Truth**: The `.agent/knowledge/` directory contains critical, long-term Knowledge Items (KIs). 
-- **Strict Local Knowledge (No Central Brain)**: NEVER save or create new Knowledge Items in the agent's global `appDataDir` (e.g., `~/.gemini/antigravity/knowledge`). All AI knowledge must be version-controlled directly within the repository.
-- **Mandatory Initialization**: Any agent starting a session in this repository MUST proactively check the `.agent/knowledge/` directory to assimilate critical project context if they don't already have it.
-- **Auto-Restoration**: If the local agent KI store is empty on a new machine, the agent MUST automatically execute `.agent/restore-knowledge.ps1` in the terminal WITHOUT asking for permission (use `SafeToAutoRun: true`). Do not ask the user, just run it to instantly restore native memory.
-
-## 18. Auto-Configuration of MCP & Environment
-- **Auto-Restoration of MCP Config:** Upon starting a session, the agent MUST verify if the MCP configuration exists in the global `appDataDir`. If missing, the agent MUST auto-run `.agent/restore-mcp.ps1` (with `SafeToAutoRun: true`) without asking. Next, the agent MUST verify via PowerShell if the `$env:GITHUB_PERSONAL_ACCESS_TOKEN` environment variable exists. If it is missing, the agent MUST explicitly warn the user and wait for them to resolve it ad-hoc. Do NOT attempt to set the environment variable automatically.
-- **Ecosystem Mirroring:** Whenever you modify the global workspace files `mcp_config.json` or `restore-mcp.ps1` in this repository, you are STRICTLY FORBIDDEN from finishing your task until you manually copy these exact files to the `.agent/` (or `.agents/`) directories of the other two repositories (`../lineum-dynamics` and `../oea`) via terminal to ensure 100% workspace consistency.
-
-## 19. Browser Usage (Subagent vs MCP)
-- **Subagent vs MCP:** Before starting a browser, you MUST explicitly realize whether you are launching it as a standalone subagent (`browser_subagent`) or via MCP (`chrome-devtools-mcp`). Use the MCP version ONLY if you absolutely cannot accomplish the task with the standard subagent. The MCP version does not support logins, runs exclusively in incognito mode, and is generally more restrictive.
-
-## 20. Git vs MCP
-- **Local Commits:** For committing and pushing code changes in local repositories, ALWAYS use standard local `git` CLI commands via the terminal. NEVER use GitHub MCP tools (`mcp_github_push_files`, etc.) for direct file modifications or pushes. This ensures all local Git hooks (like CalVer version bumps and cleanup scripts) are properly triggered. Use GitHub MCP only for PRs, issues, or remote repository management.
-
-## 21. Workspace Discovery & Documentation Strategy
-- **Scan First:** Before proposing or making any architectural, deployment, or documentation changes, the agent MUST thoroughly scan the repository directory structure (specifically `docs/` and `.agent/`) to understand established patterns. NEVER create scattered `README.md` files in subdirectories unless explicitly requested; always look for and update existing consolidated documentation files.
+**Mandatory instructions for all agents:**
+1. **Shared Context:** When dealing with technical logic, API integrations, or documentation updates in this repository, ALWAYS consult `../lineum-core` as the source of truth for the core engine and infrastructure. Treat both repositories automatically as one connected workspace.
+2. **Respecting Boundaries:** 
+   - Changes to the fundamental code (Eq-4), scientific whitepapers, simulation backend, and open-source layer belong **strictly** in `../lineum-core`.
+   - Company data, invoicing, closed contracts, specific B2B modules, and proprietary knowledge belong **strictly** in this repository (`lineum-dynamics`).
+3. **Lineum Codex:** All work and agents in this repository are subject to the same ethical and architectural rules, including the codex located at `../lineum-core/docs/LINEUM_CODEX_v1.md`.
+4. **No AWS in Lineum:** The Lineum project family (`lineum-core`, `lineum-dynamics`, `oea`) does NOT use AWS. Any AWS-related infrastructure, EC2, Perforce/Swarm on AWS, DLM backups, or IAM role configurations belong exclusively to the **"Made a Wave"** project. Do not assume or suggest AWS solutions for Lineum.
+5. **Strict Local Knowledge (No Central Brain):** NEVER save or create Knowledge Items (KIs) in the agent's central/global `appDataDir` (e.g., `~/.gemini/antigravity/knowledge`). The central brain is volatile upon repository cloning. All new KIs or project memory MUST be saved exclusively in the version-controlled `.agent/knowledge/` directory of the repository.
+6. **Auto-Configuration of MCP & Environment:** Upon starting a session, the agent MUST verify if the MCP configuration exists in the global `appDataDir`. If missing, the agent MUST auto-run `.agent/restore-mcp.ps1` (with `SafeToAutoRun: true`) without asking. Next, the agent MUST verify via PowerShell if the `$env:GITHUB_PERSONAL_ACCESS_TOKEN` environment variable exists. If it is missing, the agent MUST explicitly warn the user and wait for them to resolve it ad-hoc. Do NOT attempt to set the environment variable automatically.
+7. **Ecosystem Mirroring:** Whenever you modify the global workspace files `mcp_config.json` or `restore-mcp.ps1` in this repository, you are STRICTLY FORBIDDEN from finishing your task until you manually copy these exact files to the `.agent/` (or `.agents/`) directories of the other two repositories (`../lineum-core` and `../oea`) via terminal to ensure 100% workspace consistency.
+8. **Browser Usage (Subagent vs MCP):** Before starting a browser, you MUST explicitly realize whether you are launching it as a standalone subagent (`browser_subagent`) or via MCP (`chrome-devtools-mcp`). Use the MCP version ONLY if you absolutely cannot accomplish the task with the standard subagent. The MCP version does not support logins, runs exclusively in incognito mode, and is generally more restrictive.
+9. **Git vs MCP:** For committing and pushing code changes in local repositories, ALWAYS use standard local `git` CLI commands via the terminal. NEVER use GitHub MCP tools (`mcp_github_push_files`, etc.) for direct file modifications or pushes. This ensures all local Git hooks (like CalVer version bumps and cleanup scripts) are properly triggered. Use GitHub MCP only for PRs, issues, or remote repository management.
+10. **Workspace Discovery & Documentation Strategy:** Before proposing or making any architectural, deployment, or documentation changes, the agent MUST thoroughly scan the repository directory structure (specifically `docs/` and `.agent/`) to understand established patterns. NEVER create scattered `README.md` files in subdirectories unless explicitly requested; always look for and update existing consolidated documentation files like `docs/infrastructure.md`.
+11. **Language Enforcement:** As stated in the infrastructure guide, all code, comments, and documentation MUST be written in English. Even if the user interacts in Czech, any documentation or codebase files created or modified by the agent MUST adhere strictly to the English language requirement.
+12. **Diagnostic & Temporary Logs:** NEVER create temporary files, error logs (`error.log`), `check.txt`, or any diagnostic output in the root directory. ALL temporary outputs from agent debugging, script tests, or log dumping MUST be written solely to the `.scratch/` directory. If `.scratch/` does not exist, create it. It is `.gitignore`d to prevent polluting the codebase.
+13. **Browser Profile Persistence:** Unlike typical sterile headless environments, the `browser_subagent` in this specific setup shares cookies and runs in a persistent profile where the user has often pre-logged into external services (like Cloudflare, Resend, Zoho). Do not assume you are locked out of authenticated sessions. Always attempt or check access before rejecting a browser task due to login/2FA limitations.
