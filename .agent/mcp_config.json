@@ -6,6 +6,12 @@
         "-y",
         "@modelcontextprotocol/server-github"
       ]
+    },
+    "clickup": {
+      "command": "node",
+      "args": [
+        "${SCRIPT_PATH}"
+      ]
     }
   }
 }
