@@ -47,7 +47,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest pytest-asyncio
+          pip install pytest pytest-asyncio pip-licenses
+      - name: Check License Compliance
+        run: pip-licenses --fail-on="GPL;AGPL;LGPL" --format=markdown
       - name: Run fast unit tests
         run: pytest -m "not integration" -v
 
@@ -65,6 +67,9 @@ jobs:
       - name: Install dependencies
         working-directory: portal
         run: npm install
+      - name: Check License Compliance
+        working-directory: portal
+        run: npm run check:licenses
       - name: Run svelte-check
         working-directory: portal
         run: npm run check
