@@ -1,6 +1,29 @@
 # Restore MCP Configuration
 # This script securely copies the repository's MCP config to the global agent directory.
 # The config in git contains NO secrets. Secrets are loaded from Windows Environment Variables.
+#
+# ============================================================
+# ONBOARDING: Required Environment Variables
+# ============================================================
+# Before running this script, ensure the following Windows User
+# environment variables are set. These are SHARED service account
+# credentials — every team member uses the same values.
+#
+# Run the following two commands in PowerShell (no admin required):
+#
+#   [System.Environment]::SetEnvironmentVariable("CLICKUP_API_TOKEN", "<obtain from team password manager>", "User")
+#   [System.Environment]::SetEnvironmentVariable("CLICKUP_TEAM_ID", "<obtain from team password manager>", "User")
+#
+# CLICKUP_API_TOKEN : API token for the core@lineum.io ClickUp service account.
+#                     Used by the MCP to authenticate against the ClickUp API.
+#                     Obtain the value from the shared team password manager — NEVER hardcode it here.
+# CLICKUP_TEAM_ID   : Workspace ID for the "Lineum Dynamics" ClickUp workspace.
+#                     Obtain the value from the shared team password manager — NEVER hardcode it here.
+#
+# After setting these variables, close and reopen PowerShell,
+# then run this script to restore the MCP configuration.
+# Finally, restart your Gemini/Antigravity session.
+# ============================================================
 
 $appDataPath = "$env:USERPROFILE\.gemini\antigravity"
 $repoConfigPath = Join-Path $PSScriptRoot "mcp_config.json"
