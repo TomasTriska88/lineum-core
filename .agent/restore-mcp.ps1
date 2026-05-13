@@ -63,9 +63,20 @@ $configContent = $configContent.Replace('${SCRIPT_PATH}', $escapedScriptPath)
 $utf8NoBom = New-Object System.Text.UTF8Encoding $False
 [System.IO.File]::WriteAllText($targetConfigPath, $configContent, $utf8NoBom)
 
+# Install MCP dependencies (node_modules are gitignored — must be installed locally)
+$mcpDir = Join-Path $PSScriptRoot "mcp\lineum-clickup"
+if (Test-Path $mcpDir) {
+    Write-Host "----------------------------------------"
+    Write-Host "Installing ClickUp MCP dependencies..." -ForegroundColor Cyan
+    Push-Location $mcpDir
+    npm install --silent
+    Pop-Location
+    Write-Host "Dependencies installed successfully." -ForegroundColor Green
+} else {
+    Write-Host "WARNING: MCP directory not found at $mcpDir. Skipping npm install." -ForegroundColor Yellow
+}
+
 Write-Host "----------------------------------------"
 Write-Host "MCP Configuration restoration complete!" -ForegroundColor Green
 Write-Host "IMPORTANT: Restart your Gemini session after running this script." -ForegroundColor Yellow
-Write-Host "IMPORTANT: Ensure CLICKUP_API_TOKEN is set in Windows Environment Variables." -ForegroundColor Yellow
-Write-Host "IMPORTANT: Ensure CLICKUP_TEAM_ID is set in Windows Environment Variables." -ForegroundColor Yellow
 
