@@ -1,5 +1,0 @@
-﻿[36mvite v7.3.1 [32mbuilding ssr environment for production...[36m[39m
-Using existing cloned repo
-[info] [1m[34m[paraglide] [39m[22mCompiling Messagesinto C:/Users/Tom├í┼í/Documents/GitHub/lineum-core/portal/src/lib/paraglide/
-transforming...
-[32mÔťô[39m 217 modules transformed.
