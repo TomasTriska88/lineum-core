@@ -20,7 +20,12 @@ jobs:
       - name: Install Railway CLI
         run: npm install -g @railway/cli
 
-      - name: Deploy to Railway (Dev Environment)
+      - name: Deploy Portal to Railway (Dev)
         run: railway up --environment 3cec8fab-725c-443f-9bb5-cc5bdb0cd628 --service 9a7e4300-27e4-48c8-962c-403bfcf95533 -d
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
+      - name: Deploy Simulacrum to Railway (Dev)
+        run: railway up --environment 3cec8fab-725c-443f-9bb5-cc5bdb0cd628 --service 83ae8764-22ac-4e69-b4ee-7eb22d676cc7 -d
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
