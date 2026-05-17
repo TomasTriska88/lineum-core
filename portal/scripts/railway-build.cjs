@@ -24,8 +24,9 @@ function main() {
     const branch = process.env.RAILWAY_GIT_BRANCH || process.env.HEAD || 'unknown';
     log(`Detected Branch: ${branch}`, colors.yellow);
 
-    if (branch === 'main') {
-        log("MAIN BRANCH DETECTED - PROCEEDING WITH PRODUCTION GATES", colors.green);
+    if (branch === 'main' || branch === 'develop') {
+        const isProduction = branch === 'main';
+        log(isProduction ? "MAIN BRANCH - PRODUCTION GATES ENABLED" : "DEVELOP BRANCH - DEV BUILD", colors.green);
 
         try {
             // 1. Sync Data
