@@ -1,0 +1,9 @@
+node_modules/
+.git/
+.scratch/
+output/
+tmp/
+*.png
+__pycache__/
+.pytest_cache/
+test-results/
