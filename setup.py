@@ -2,7 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="lineum-core",
-    version="1.0.0",
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     description="Lineum Core library",
     packages=find_packages(),
     install_requires=[
