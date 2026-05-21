@@ -17,6 +17,15 @@ This monorepo contains three distinct components:
 
 ---
 
+## 🛠️ Prerequisites
+
+To run and develop the various components of the monorepo, you need the following prerequisites installed on your system:
+*   **Git** (for version control and project hooks)
+*   **Python 3.11** (required for **Core**)
+*   **Node.js (LTS version)** (required for **Portal** and **Lab**)
+
+---
+
 ## 🔬 Core (Simulation Engine)
 The heart of the project. A Python-based engine that runs the discrete field updates.
 
