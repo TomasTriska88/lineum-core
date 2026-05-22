@@ -57,6 +57,16 @@ if (-not $clickupTeamId) {
 }
 
 $configContent = [System.IO.File]::ReadAllText($repoConfigPath, [System.Text.Encoding]::UTF8)
+
+# Dynamically resolve Node.exe path on Windows to avoid sandbox/PATH resolution issues
+$nodePath = "node"
+$nodeCmd = Get-Command node -ErrorAction SilentlyContinue
+if ($nodeCmd) {
+    $nodePath = $nodeCmd.Source
+}
+$escapedNodePath = $nodePath -replace '\\', '\\'
+$configContent = $configContent.Replace('"command": "node"', "`"command`": `"$escapedNodePath`"")
+
 $scriptPath = Join-Path $PSScriptRoot "mcp\lineum-clickup\index.js"
 $escapedScriptPath = $scriptPath -replace '\\', '\\'
 $configContent = $configContent.Replace('${SCRIPT_PATH}', $escapedScriptPath)
