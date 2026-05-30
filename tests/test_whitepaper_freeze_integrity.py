@@ -2,8 +2,8 @@ import os
 import json
 import pytest
 from pathlib import Path
-from scripts.verify_whitepaper_lock import verify_locks
-from scripts.lock_whitepaper import main as lock_main
+from tools.verify_whitepaper_lock import verify_locks
+from tools.lock_whitepaper import main as lock_main
 import sys
 from unittest.mock import patch
 

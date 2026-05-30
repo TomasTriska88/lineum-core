@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import pytest
 import subprocess
@@ -31,7 +32,7 @@ def test_contract_tool_strictly_readonly_on_locked_runs(project_root):
     # We just run it to let it scan and generate the suite.
     try:
         subprocess.check_call(
-            ["python", "tools/whitepaper_contract.py"], 
+            [sys.executable, "tools/whitepaper_contract.py"], 
             cwd=project_root
         )
     except subprocess.CalledProcessError as e:

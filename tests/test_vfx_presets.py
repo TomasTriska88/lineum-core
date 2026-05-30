@@ -6,7 +6,7 @@ from lineum_core.math import step_core, CoreConfig
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from scripts.build_vfx_pack import preset_configs
+from tools.build_vfx_pack import preset_configs
 
 # Fixtures for creating the base arrays
 def get_base_state(sim_size=96):

@@ -43,25 +43,29 @@ class TestBrocaSpec(unittest.TestCase):
         
         import json
         prompt_text = json.dumps(payload, ensure_ascii=False)
-        with open("dump.txt", "w", encoding="utf-8") as f:
-            f.write(prompt_text)
-        
-        # Assertions based on User Requirements
-        
-        # 1. The prompt MUST contain the strict language mirroring rule
-        self.assertIn("Answer in the same language as the input [USER_INPUT_X]", prompt_text, 
-                      "BrocaSpec language mirror rule missing from prompt")
-                      
-        # 2. Emergence check: The prompt MUST NOT contain arbitrary emotion mappings
-        # The old heuristic mapped "Higher mean_pressure = heavier, more serious"
-        self.assertNotIn("Higher mean_pressure = heavier", prompt_text, 
-                         "Heuristic mappings are still present. output should be purely emergent.")
-        self.assertNotIn("Higher max_psi =", prompt_text, 
-                         "Heuristic mappings are still present.")
-                         
-        # 3. Must instruct the model to rely purely on the numbers
-        self.assertIn("purely from", prompt_text,
-                      "Prompt does not demand purely emergent topology interpretation.")
+        try:
+            with open("dump.txt", "w", encoding="utf-8") as f:
+                f.write(prompt_text)
+            
+            # Assertions based on User Requirements
+            
+            # 1. The prompt MUST contain the strict language mirroring rule
+            self.assertIn("Answer in the same language as the input [USER_INPUT_X]", prompt_text, 
+                          "BrocaSpec language mirror rule missing from prompt")
+                          
+            # 2. Emergence check: The prompt MUST NOT contain arbitrary emotion mappings
+            # The old heuristic mapped "Higher mean_pressure = heavier, more serious"
+            self.assertNotIn("Higher mean_pressure = heavier", prompt_text, 
+                             "Heuristic mappings are still present. output should be purely emergent.")
+            self.assertNotIn("Higher max_psi =", prompt_text, 
+                             "Heuristic mappings are still present.")
+                             
+            # 3. Must instruct the model to rely purely on the numbers
+            self.assertIn("purely from", prompt_text,
+                          "Prompt does not demand purely emergent topology interpretation.")
+        finally:
+            if os.path.exists("dump.txt"):
+                os.remove("dump.txt")
 
 if __name__ == '__main__':
     unittest.main()

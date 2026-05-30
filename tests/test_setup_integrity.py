@@ -1,3 +1,4 @@
+import sys
 import subprocess
 from pathlib import Path
 
@@ -11,9 +12,8 @@ def test_setup_py_integrity():
     
     assert setup_file.exists(), "setup.py is missing from the repository root!"
 
-    # Run check command. It exits with 0 on success.
     result = subprocess.run(
-        ["python", "setup.py", "check"],
+        [sys.executable, "setup.py", "check"],
         cwd=root,
         capture_output=True,
         text=True

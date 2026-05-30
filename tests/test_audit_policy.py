@@ -1,4 +1,5 @@
 import os
+import sys
 import subprocess
 import pytest
 import json
@@ -25,7 +26,7 @@ def _run_lineum_with_env(env_updates=None):
     env["LINEUM_DISABLE_TRACKING"] = "true"
     
     result = subprocess.run(
-        ["python", str(LINEUM_SCRIPT)],
+        [sys.executable, str(LINEUM_SCRIPT)],
         capture_output=True,
         text=True,
         cwd=str(REPO_ROOT),
@@ -153,7 +154,7 @@ lineum._update_latest_run_pointer("output_wp", "fake_run_dir")
         del env["LINEUM_ORCHESTRATION_TOKEN"]
         
     result = subprocess.run(
-        ["python", "-c", script],
+        [sys.executable, "-c", script],
         capture_output=True,
         text=True,
         cwd=str(REPO_ROOT),

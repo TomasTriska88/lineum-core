@@ -16,7 +16,7 @@ def test_audit_run_locks_mutability_check(tmp_path, capsys):
     shutil.copytree(fixture_dir, run_dir)
     
     # 2. Lock the run via the actual tool
-    lock_script = root / "scripts" / "lock_audit_run.py"
+    lock_script = root / "tools" / "lock_audit_run.py"
     # To bypass Windows ACL issues breaking the Python file edits later, we just generate the _LOCK.json
     # The ACL itself is a system-level defense, Python edits might fail if we don't handle it
     # We will mock the subprocess Windows call, but for verification the _LOCK.json is the real target

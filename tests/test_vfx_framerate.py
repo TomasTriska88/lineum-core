@@ -10,8 +10,11 @@ def test_webp_framerate_is_cinematic():
     are properly encoded at a cinematic 30+ FPS (duration <= 34ms).
     Prevents regressions into a 'slideshow' 10 FPS state.
     """
-    webp_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output_assets', 'water_drop_32.webp'))
-    assert os.path.exists(webp_path), "Asset WebP does not exist. Run generate_droplet.py first."
+    from tools.build_vfx_pack import run_vfx
+    run_vfx("water_drop", view_sizes=[64], variant=1)
+    
+    webp_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output_assets', 'vfx_pack', 'water_drop_v1_64.webp'))
+    assert os.path.exists(webp_path), "Generated WebP asset does not exist."
     
     with Image.open(webp_path) as img:
         assert getattr(img, "is_animated", False), "Output is not an animated format."

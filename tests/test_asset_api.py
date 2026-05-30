@@ -9,19 +9,19 @@ def test_ripple_vfx_endpoint_returns_base64_webp():
     Asserts the asset generation pipeline correctly hooks into the Lineum core
     and successfully compiles an isolated WEBP output payload with pure alpha transparency.
     """
-    response = client.post("/api/v1/assets/generate/ripple-vfx", json={
+    response = client.post("/api/v1/assets/generate/water_drop", json={
         "grid_size": 32,
         "frames": 4, # Short integration cycle limits IO overload
-        "colormap": "Blues_r"
+        "colormap": "gray"
     })
     
     assert response.status_code == 200
     data = response.json()
-    assert "images_base64" in data
-    assert len(data["images_base64"]) == 4
+    assert "frames" in data
+    assert len(data["frames"]) == 4
     
     # Validate the data represents a fully rendered base64 matrix sequence
-    for frame in data["images_base64"]:
+    for frame in data["frames"]:
         assert isinstance(frame, str)
         # B64 image string is roughly thousands of characters, easily bypass 100 byte verification 
         assert len(frame) > 100 

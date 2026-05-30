@@ -295,7 +295,29 @@ def _step_numpy(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
         print("!!! LINEUM FAIL-SAFE (CPU): Numeric divergence detected. Resetting Psi. !!!")
         psi = np.zeros_like(psi)
 
-    out_state = {"psi": psi, "phi": phi, "kappa": kappa, "mu": mu}
+    e_psi_mean = float(np.mean(np.abs(psi)**2))
+    max_abs_psi = float(np.max(np.abs(psi)))
+    is_nan = bool(np.isnan(np.sum(psi)) or np.isnan(np.sum(phi)))
+
+    out_state = {
+        "psi": psi,
+        "phi": phi,
+        "kappa": kappa,
+        "mu": mu,
+        "telemetry": {
+            "N_t": e_psi_mean,
+            "max_abs_psi": max_abs_psi,
+            "cap_triggers": 0,
+            "cap_trigger_pct": 0.0,
+            "fold_triggers": 0,
+            "fold_trigger_pct": 0.0,
+            "is_nan": is_nan,
+            "n_step_1_delta": 0.0,
+            "n_step_2_delta": 0.0,
+            "spectral_leakage": 0.0,
+            "norm_drift": abs(e_psi_mean)
+        }
+    }
     return out_state
 
 

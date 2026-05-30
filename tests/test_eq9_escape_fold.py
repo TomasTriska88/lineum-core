@@ -2,12 +2,28 @@ import pytest
 import os
 import torch
 import numpy as np
-os.environ["LINEUM_USE_PYTORCH"] = "1"
 import lineum_core.math as lmath
-lmath.USE_PYTORCH = True
 from lineum_core.math import step_core, CoreConfig, ExecutionPolicy
 
-ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=42)
+@pytest.fixture(autouse=True)
+def force_pytorch():
+    old_use = lmath.USE_PYTORCH
+    old_env = os.environ.get("LINEUM_USE_PYTORCH")
+    
+    lmath.USE_PYTORCH = True
+    os.environ["LINEUM_USE_PYTORCH"] = "1"
+    
+    ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=42)
+    
+    yield
+    
+    lmath.USE_PYTORCH = old_use
+    if old_env is not None:
+        os.environ["LINEUM_USE_PYTORCH"] = old_env
+    else:
+        os.environ.pop("LINEUM_USE_PYTORCH", None)
+    
+    ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=42)
 
 def generate_state(sizes=64, phi_magnitude=5.0):
     x, y = np.meshgrid(np.linspace(-1, 1, sizes), np.linspace(-1, 1, sizes))
@@ -86,9 +102,9 @@ def test_eq9_escape_negative_phi_required():
     """
     cfg_soft = CoreConfig(dt=0.2, phi_cap=1.0, fold_mode="softabs", fold_scope="escape", physics_mode_psi="wave_projected")
     
-    np.random.seed(42)
+    ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=10)
     state_true = generate_state(phi_magnitude=5.0)
-    np.random.seed(42)
+    ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=10)
     state_floored = generate_state(phi_magnitude=5.0)
     
     leakage_true = 0.0

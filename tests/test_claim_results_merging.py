@@ -1,6 +1,7 @@
 import pytest
 from unittest.mock import patch, mock_open
 import json
+import asyncio
 from routing_backend.lab_api import get_claim_results
 
 @pytest.fixture
@@ -23,8 +24,7 @@ def mock_static_claims():
         }
     ]
 
-@pytest.mark.asyncio
-async def test_claim_results_no_evidence_is_untested(mock_static_claims):
+def test_claim_results_no_evidence_is_untested(mock_static_claims):
     """
     State 1: No evidence at all -> plain UNTESTED
     """
@@ -41,15 +41,14 @@ async def test_claim_results_no_evidence_is_untested(mock_static_claims):
          patch('os.path.exists', return_value=True), \
          patch('builtins.open', mock_open(read_data=json.dumps(mock_static_claims))):
 
-        response = await get_claim_results()
+        response = asyncio.run(get_claim_results())
         
         # Only SUPPORTED, CONTRADICTED, or EXPERIMENTAL_RUN merge automatically
         # meaning CL-CORE-003 shouldn't even be in the results dict, and if the UI asks, it defaults to UNTESTED
         assert "CL-CORE-003" not in response["results"]
 
 
-@pytest.mark.asyncio
-async def test_claim_results_historical_experimental_remains_experimental(mock_static_claims):
+def test_claim_results_historical_experimental_remains_experimental(mock_static_claims):
     """
     State 2: Historical experimental evidence -> EXPERIMENTAL_RUN
     """
@@ -65,7 +64,7 @@ async def test_claim_results_historical_experimental_remains_experimental(mock_s
          patch('os.path.exists', return_value=True), \
          patch('builtins.open', mock_open(read_data=json.dumps(mock_static_claims))):
 
-        response = await get_claim_results()
+        response = asyncio.run(get_claim_results())
         
         # EXPERIMENTAL_RUN should be merged so it doesn't drop to UNTESTED
         assert "CL-CORE-002" in response["results"]
@@ -78,8 +77,7 @@ async def test_claim_results_historical_experimental_remains_experimental(mock_s
         assert c2["is_stale"] == True  # Synthetic merges are stale by definition
 
 
-@pytest.mark.asyncio
-async def test_historical_canonical_evidence_survives_stale_dynamic_claim_payload(mock_static_claims):
+def test_historical_canonical_evidence_survives_stale_dynamic_claim_payload(mock_static_claims):
     """
     State 3: Historical canonical evidence + stale current build -> STALE_EVIDENCE
     (Explicit fix for the Claims UI paradox)
@@ -96,7 +94,7 @@ async def test_historical_canonical_evidence_survives_stale_dynamic_claim_payloa
          patch('os.path.exists', return_value=True), \
          patch('builtins.open', mock_open(read_data=json.dumps(mock_static_claims))):
 
-        response = await get_claim_results()
+        response = asyncio.run(get_claim_results())
         
         assert "CL-CORE-001" in response["results"]
         c1 = response["results"]["CL-CORE-001"]
@@ -108,8 +106,7 @@ async def test_historical_canonical_evidence_survives_stale_dynamic_claim_payloa
         assert c1["is_stale"] == True
 
 
-@pytest.mark.asyncio
-async def test_claim_results_clean_canonical_is_supported(mock_static_claims):
+def test_claim_results_clean_canonical_is_supported(mock_static_claims):
     """
     State 4: Clean canonical current build -> CANONICAL_SUITE
     """
@@ -125,7 +122,7 @@ async def test_claim_results_clean_canonical_is_supported(mock_static_claims):
          patch('os.path.exists', return_value=True), \
          patch('builtins.open', mock_open(read_data=json.dumps(mock_static_claims))):
 
-        response = await get_claim_results()
+        response = asyncio.run(get_claim_results())
         
         assert "CL-CORE-001" in response["results"]
         c1 = response["results"]["CL-CORE-001"]

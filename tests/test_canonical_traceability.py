@@ -85,9 +85,12 @@ has_torch = importlib.util.find_spec('torch') is not None
 @pytest.mark.skipif(not has_torch, reason="Requires PyTorch")
 def test_execution_policy_canonical_path():
     """Verify device rules for canonical vs exploratory paths"""
+    import lineum_core.math as lmath
+    old_use = lmath.USE_PYTORCH
     original_device = ExecutionPolicy._device
     
     try:
+        lmath.USE_PYTORCH = True
         # Canonical (enforce_canonical = True) MUST result in CPU mode
         ExecutionPolicy.init_core_determinism(enforce_canonical=True, seed=1)
         assert ExecutionPolicy.get_device().type == "cpu"
@@ -97,4 +100,5 @@ def test_execution_policy_canonical_path():
         ExecutionPolicy.init_core_determinism(enforce_canonical=False, seed=1)
         
     finally:
+        lmath.USE_PYTORCH = old_use
         ExecutionPolicy._device = original_device
