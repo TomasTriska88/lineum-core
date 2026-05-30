@@ -88,7 +88,7 @@
 
 <div class="zeta-scanner">
     <div class="scanner-header">
-        <div class="scanner-title">{$t('zeta_title')}</div>
+        <div class="scanner-title">{$t('zeta_title')} <span class="quarantine-badge">⚠️ FAILED AUDIT</span></div>
         <button
             type="button"
             class="info-toggle"
@@ -99,35 +99,38 @@
     </div>
 
     <!-- 🌐 Layman Insights: Now permanent and condensed -->
-    <div class="permanent-insights">
-        <div class="insight-item">
-            <span class="label">{$t('zeta_phi_state')}</span>
-            <span
-                class="value"
-                style="color: {harmonyPercent > 30 ? '#00ffff' : '#ffaa00'}"
-            >
-                {harmonyStatus} ({harmonyPercent.toFixed(1)}%)
-            </span>
-            <div class="sub-label">{harmonyInsight}</div>
-            <div class="cumulative-label">
-                {$t('zeta_total_avg')}
-                {(avgHarmony * 100).toFixed(1)}%
+    <div class="permanent-insights" style="border: 1px solid rgba(255, 0, 0, 0.4); background: rgba(255, 0, 0, 0.08); flex-direction: column; gap: 5px;">
+        <div style="color: #ff4444; font-weight: bold; font-size: 0.6rem; text-transform: uppercase; border-bottom: 1px solid rgba(255, 0, 0, 0.3); padding-bottom: 4px; width: 100%;">⚠️ QUARANTINED: BRANCH CLOSED NEGATIVE (Tested Formulations)</div>
+        <div style="display: flex; gap: 10px; width: 100%;">
+            <div class="insight-item">
+                <span class="label">{$t('zeta_phi_state')}</span>
+                <span
+                    class="value"
+                    style="color: {harmonyPercent > 30 ? '#00ffff' : '#ffaa00'}"
+                >
+                    {harmonyStatus} ({harmonyPercent.toFixed(1)}%)
+                </span>
+                <div class="sub-label">{harmonyInsight}</div>
+                <div class="cumulative-label">
+                    {$t('zeta_total_avg')}
+                    {(avgHarmony * 100).toFixed(1)}%
+                </div>
             </div>
-        </div>
-        <div class="insight-item">
-            <span class="label">{$t('zeta_correlation')}</span>
-            <span class="value" class:discovery={hasConfirmedDiscovery}>
-                {discoveryStatus} ({correlationPercent.toFixed(1)}%)
-            </span>
-            <div
-                class="sub-label conclusion-text"
-                class:revolutionary={hasConfirmedDiscovery}
-            >
-                {cosmicConclusion}
-            </div>
-            <div class="cumulative-label">
-                {$t('zeta_match_stable')}
-                {(windowAvg * 100).toFixed(1)}%
+            <div class="insight-item">
+                <span class="label">{$t('zeta_correlation')}</span>
+                <span class="value" class:discovery={hasConfirmedDiscovery}>
+                    {discoveryStatus} ({correlationPercent.toFixed(1)}%)
+                </span>
+                <div
+                    class="sub-label conclusion-text"
+                    class:revolutionary={hasConfirmedDiscovery}
+                >
+                    {cosmicConclusion}
+                </div>
+                <div class="cumulative-label">
+                    {$t('zeta_match_stable')}
+                    {(windowAvg * 100).toFixed(1)}%
+                </div>
             </div>
         </div>
     </div>
@@ -206,6 +209,15 @@
         font-family: "Courier New", Courier, monospace;
         font-size: 0.7rem;
         position: relative; /* ⚓ Base for absolute children */
+    }
+    .quarantine-badge {
+        background: rgba(255, 0, 0, 0.2);
+        border: 1px solid #ff0000;
+        color: #ff3333;
+        padding: 1px 4px;
+        font-size: 0.55rem;
+        margin-left: 5px;
+        font-weight: bold;
     }
 
     .scanner-header {

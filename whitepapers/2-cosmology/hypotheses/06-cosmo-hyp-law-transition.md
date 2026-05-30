@@ -8,6 +8,12 @@
 ---
 # Hypothesis: Emergent Spectrum During Law Transition (Tříska’s Law Transition Hypothesis)
 
+> [!IMPORTANT]
+> **QUARANTINE / NEGATIVE AUDIT RECORD (May 2026)**
+> The tested RZ/Zeta-resonance formulations have been audited and closed negative.
+> Following the RZ-0 and RZ-1 audits, it was confirmed that apparent Riemann/GUE spectral spacing similarities in the law transition runs are look-elsewhere density artifacts and do not survive random-weight controls. No robust GUE level statistics or zeta-zero matches are verified.
+> The RZ/Zeta-resonance branch remains a documented negative audit result. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer.
+
 ## Author / Origin
 
 T. Tříska (2025), formulation based on the results of the `spec7_true` simulation, in which the κ field smoothly transitions from a local (island) to a global (constant) structure.
@@ -32,11 +38,10 @@ However, **during the transition** from an island to a constant structure, the f
 
 ## Testing Status
 
+- ❌ **Audited / Refuted:** Riemann zeta zeros / GUE spectral alignment (tested formulations of which were audited and closed negative as look-elsewhere density artifacts)
 - ✅ Implementation of dynamic `generate_kappa(step)` in `spec7_true`
 - ✅ Visualization of κ trajectory across the 3D simulation space
 - ✅ Spectral diversity over time – emergence of secondary peaks
-- 🔄 Partial agreement with the distribution of zeta function zeros
-- 🔄 Full GUE distribution not yet confirmed
 
 ---
 

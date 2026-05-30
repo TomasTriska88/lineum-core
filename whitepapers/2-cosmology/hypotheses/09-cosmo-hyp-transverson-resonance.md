@@ -2,11 +2,18 @@
 **Document ID:** 09-cosmo-hyp-transverson-resonance
 **Document Type:** Hypothesis
 **Version:** 0.1.0
-**Status:** Draft
+**Status:** Draft (Term Clarified)
 **Date:** 2026-02-23
 
 ---
 # Tříska’s Conceptual Notes on Transverson Resonance (Hypothesis)
+
+> [!IMPORTANT]
+> **TERMINOLOGY CLARIFICATION (May 2026)**
+> The term "zeta-zero" in this document refers strictly to local physical wave-interference cancellation nodes (where opposite-chirality vortex pairs destructively interfere to zero amplitude).
+> It has **no** mathematical relationship to the Riemann zeta function or the failed divisor-graph Hamiltonian models.
+> The RZ/Zeta-resonance branch remains a documented negative audit result. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer.
+> *Terminology Recommendation:* To avoid confusion, a future version of this hypothesis should rename these wave-interference nodes from "zeta-zeros" to "zero-amplitude cancellation nodes" or "destructive interference nulls".
 
 > _Formulated based on observations from the visual-analytical part of the conversation on August 4, 2025. The hypothesis explores emergent configurations formed by pairs of vortices, which appear to be the fundamental form of resonance in the Lineum system._
 

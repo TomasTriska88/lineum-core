@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | Ontology of the Soul and the Database | Draft | [01-ontology-hyp-genesis.md](hypotheses/01-ontology-hyp-genesis.md) |
 | Tříska’s Spectral Observer Hypothesis | Draft | [02-ontology-hyp-spectral-observer.md](hypotheses/02-ontology-hyp-spectral-observer.md) |
-| Tříska-Smeták Zeta–RNB Resonance Hypothesis | Draft | [03-ontology-hyp-zeta-resonance.md](hypotheses/03-ontology-hyp-zeta-resonance.md) |
+| Tříska-Smeták Zeta–RNB Resonance Hypothesis | ⚠️ Refuted | [03-ontology-hyp-zeta-resonance.md](hypotheses/03-ontology-hyp-zeta-resonance.md) |
 | Unknown | Draft | [04-ontology-hyp-sixth-sense.md](hypotheses/04-ontology-hyp-sixth-sense.md) |
 | Lineum Ontology: The Mathematics of Consciousness, Ego, and Death | Draft | [05-ontology-hyp-consciousness.md](hypotheses/05-ontology-hyp-consciousness.md) |
 | Lineum Ontology: The Holographic Principle and Information Equivalency | Draft | [06-ontology-hyp-holographic-principle.md](hypotheses/06-ontology-hyp-holographic-principle.md) |

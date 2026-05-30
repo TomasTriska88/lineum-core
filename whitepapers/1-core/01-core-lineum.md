@@ -15,8 +15,8 @@
 **How to cite:** Tomáš Tříska. _Lineum Core (v1.0.49-core)._ 2026. DOI: 10.5281/zenodo.16934359.
 _This manuscript corresponds to Git tag **v1.0.49-core** and the evidence bundle in `output/` (commit-stamped in each HTML)._
 
-**Contract evidence (core v1.0.49-core).** All numeric claims in this manuscript that are presented as *validated* are limited
-to what is asserted by the contract suite `lineum-core-1.0.49-core` (contract_version `1.1.5`), including the embedded
+**Contract evidence (core v1.0.18-core).** All numeric claims in this manuscript that are presented as *validated* are limited
+to what is asserted by the contract suite `lineum-core-1.0.18-core` (contract_version `1.1.5`), including the embedded
 canonical run `spec6_false_s41_20260222_152015` and its declared fingerprints.
 
 > **Status tags (v1.0.18-core).** To make the manuscript audit-proof, we label claim strength explicitly:
@@ -1077,7 +1077,7 @@ Stable linons frequently co-occur with small sets of phase vortices. In multiple
 
 _Scope._ This note refers to **experimental variants** where κ changes over time (non-canonical to Eq. 1). When κ follows a slow, coherent trajectory (e.g., `island_to_constant`), the system passes through **effective regimes** without losing linon stability: interaction patterns reorganize while macroscopic order persists. We observe **spectral restructuring** (secondary peaks, spacing shifts) concurrent with the κ-trajectory, suggesting an emergent **principle of law transition**: order can remain intact while the “rules” drift smoothly.
 
-_Evidence._ Runs with dynamic `generate_kappa(step)` show time-resolved spectral changes (see `multi_spectrum_summary.csv`, `*_spectrum_log.csv`; sliding-FFT recommended). Exploratory overlays with Riemann ζ zeros are noted but not claimed as established. See the dedicated hypothesis file for parameters and logs.
+_Evidence._ Runs with dynamic `generate_kappa(step)` show time-resolved spectral changes (see `multi_spectrum_summary.csv`, `*_spectrum_log.csv`; sliding-FFT recommended). Exploratory overlays with Riemann ζ zeros are noted but not claimed as established (tested formulations were audited and closed negative in May 2026). See the dedicated hypothesis file for parameters and logs.
 
 Together, these results strengthen the case that a simple, metric-free local update rule can give rise to robust and quantifiable macroscopic effects, offering a controlled platform for exploring emergent analogues of known physical phenomena.
 
@@ -1099,7 +1099,7 @@ My partner, **Kateřina Marečková**, provided what mattered most—patience, h
 I also thank **Vlastimil Smeták** for mathematically minded conversations and guidance. His focus on the **Riemann Hypothesis** and prime numbers—and his independent, visualization-first approach—suggested lines of inquiry that I would not have tried on my own. In particular, his advice motivated two **working hypotheses** explored outside the core:
 
 - an **Evolution–Mutation** view (order vs. disruption as complementary regimes), and
-- a **Zeta–RNB Resonance** idea (visual/structural echoes between Lineum’s return points and ζ-structure).
+- a **Zeta–RNB Resonance** idea (visual/structural echoes between Lineum’s return points and ζ-structure, tested formulations of which were audited and closed negative in May 2026).
 
 These are **not** claims of this v1 core paper. They remain preliminary and are deferred to the **experimental/extension track** for future, falsifiable testing; no quantitative alignment is asserted here.
 
@@ -2385,6 +2385,13 @@ ER = bootstrap_ratio(p_echo, p_control)
 
 
 ## Appendix N — Zeta–RNB Resonance
+
+> [!IMPORTANT]
+> **QUARANTINE / NEGATIVE AUDIT RECORD (May 2026)**
+> The tested Zeta–RNB / Riemann-resonance formulations have been audited and closed negative.
+> Initial observations of high Pearson correlation (e.g., ≈ 0.9842 on run `spec7_true`) were look-elsewhere density artifacts that did not survive random-weight control testing.
+> Furthermore, the proposed underlying divisor-graph Hamiltonian models (RZ-0 and RZ-1) failed to produce GUE level repulsion or robust Riemann zero matching.
+> The RZ/Zeta-resonance branch remains a documented negative audit result. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer.
 
 ### 1. Abstract
 

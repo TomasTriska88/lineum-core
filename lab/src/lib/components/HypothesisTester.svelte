@@ -186,7 +186,12 @@
 
 <div class="hypothesis-tester">
     <div class="panel-header">
-        <div class="panel-title">{$t('hypo_title')}</div>
+        <div class="panel-title">{$t('hypo_title')} <span class="quarantine-badge">⚠️ QUARANTINED</span></div>
+    </div>
+
+    <div class="quarantine-banner" style="background: rgba(255, 0, 0, 0.08); border: 1px solid rgba(255, 0, 0, 0.4); color: #ff4444; padding: 10px; margin-bottom: 20px; font-size: 0.75rem; border-radius: 4px;">
+        <strong>⚠️ QUARANTINED: BRANCH CLOSED NEGATIVE (Tested Formulations)</strong><br>
+        The tested RZ/Zeta-resonance formulations remain a documented negative audit result. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer. Riemann-zero matching was found to be a density artifact that does not survive random controls.
     </div>
 
     <div class="insight-cards">
@@ -282,6 +287,15 @@
         border: 1px solid rgba(0, 255, 255, 0.2);
         color: #00ffff;
         font-family: "Courier New", Courier, monospace;
+    }
+    .quarantine-badge {
+        background: rgba(255, 0, 0, 0.2);
+        border: 1px solid #ff0000;
+        color: #ff3333;
+        padding: 1px 4px;
+        font-size: 0.65rem;
+        margin-left: 5px;
+        font-weight: bold;
     }
 
     .panel-header {

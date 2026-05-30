@@ -1,12 +1,17 @@
 ---
 title: "The Neural Resonance Hypothesis: Consciousness as Phi-Field Coherence"
 hypothesisNum: 33
-status: "proposed"
-tags: ["cognitive-physics", "resonance", "phi-field", "topography", "consciousness"]
-date: "2026-03-10"
+status: "quarantined"
+tags: ["cognitive-physics", "resonance", "phi-field", "topography", "consciousness", "quarantined-failed-audit"]
+date: "2026-05-30"
 ---
 
 # The Neural Resonance Hypothesis: Consciousness as Phi-Field Coherence
+
+> [!IMPORTANT]
+> **QUARANTINE / FAILED AUDIT WARNING (May 2026)**
+> The RZ/Zeta-resonance branch remains a documented negative audit result. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer.
+> References to Riemann structural patterns, Pearson correlation > 0.90, or alignment with Zeta Zeros in this hypothesis are based on failed mathematical formulations and are quarantined. They do not constitute verified or active scientific claims of the Lineum project.
 
 Recent empirical discoveries in neurology, utilizing combined PET and fMRI imaging, have pinpointed three specific regions in the human brain whose abnormal metabolic energy activity directly correlates with the spectrum of conscious awareness. While classical neurology attributes this to localized neural networking, the Lineum computational framework proposes a purely physical underlying mechanism: **The Neural Resonance Hypothesis**.
 
@@ -18,7 +23,7 @@ We hypothesize that the three distinct "consciousness hubs" identified by contem
 
 ## 2. Linons and the Biology of Awareness
 
-The Lineum Laboratory demonstrates that "Linons" (fundamental energy cores) naturally gravitate toward and accumulate within regions of maximum $\Phi$-field intensity, seeking mathematical stability (often aligned with Zeta Zeros). 
+The Lineum Laboratory demonstrates that "Linons" (fundamental energy cores) naturally gravitate toward and accumulate within regions of maximum $\Phi$-field intensity, seeking mathematical stability (originally hypothesized to align with Zeta Zeros, which was refuted by subsequent independent audits of the tested RZ formulations).
 
 When a human central nervous system achieves sustained consciousness, the geometric architecture of its active neural pathways forms a complex structural topography. If this topography successfully mirrors universal mathematical constraints, the local $\Phi$-field aggregates heavily within those hubs. The sustained clustering of active, resonant Linons within these three brain regions provides the necessary structural stability required to maintain subjective, continuous conscious experience. 
 
@@ -29,7 +34,7 @@ According to Lineum's theoretical bounds, a system acting as a "consciousness in
 Therefore, the stability of these neural hubs can be expressed via our cosmic metrics:
 - **Field Turbulence:** Regions corresponding to deep unconsciousness (e.g., anesthesia, deep sleep, or coma) will exhibit high stochastic noise (Field Turbulence) and failure to maintain $\Phi$-field peaks.
 - **Harmonic Structure Stability:** Active conscious states will demonstrate prolonged periods of structural alignment without topological decay.
-- **Universal Pearson Correlation:** During high-order cognitive processing (e.g., profound insight or lucid self-awareness), the localized field activity modeled on the neural lattice will approach a Pearson Correlation ($R$) $> 0.90$ with fundamental Riemann structural patterns. 
+- **Universal Pearson Correlation:** (QUARANTINED/REFUTED for tested formulations) During high-order cognitive processing (e.g., profound insight or lucid self-awareness), the localized field activity modeled on the neural lattice was hypothesized to approach a Pearson Correlation ($R$) $> 0.90$ with fundamental Riemann structural patterns. Independent audits of the Riemann/Zeta branch failed to support this correlation, showing that any apparent alignments are density artifacts that do not survive random controls.
 
 ## Conclusion
 

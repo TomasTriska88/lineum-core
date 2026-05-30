@@ -15,5 +15,5 @@
 | **Local PML Memory Erase**| Memory | 🟢 BENCHMARKED | "N/A (Internal R&D Only)" | "N/A" |
 | **Internal Fluidic Wave-Switching**| Hardware | ❌ FAILED CURRENT FORMULATION | "N/A" | "Waves act as solid blockades against other waves natively." |
 | **Boundary Digital Transduction (I/O)**| Hardware | 🚫 CONCEPT ONLY | "N/A" | "Lineum serves as a binary I/O boundary controller." |
-| **Extreme Zeta Entropy / Oracle** | Crypto / Entropy | 🚫 CONCEPT ONLY / UI TRACE | "Theoretical foundations exist for chaotic cryptographic entropy generation." | "Lineum provides production-ready Web3 oracles and TRNG hashes." |
+| **Extreme Zeta Entropy / Oracle** | Crypto / Entropy | ❌ REFUTED / FAILED AUDIT | "N/A (Refuted: tested arithmetic Hamiltonian formulations fail to generate chaotic GUE statistics or stable spectral resonance)." | "Lineum provides production-ready Web3 oracles and TRNG hashes." |
 | **Lina / Neuro-Symbolic Identity** | AI / Cognition | ❌ CONCEPT ONLY / FAILED | "N/A (Theoretical)" | "Lineum is a conscious, feeling Artificial General Intelligence." |

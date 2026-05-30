@@ -21,12 +21,11 @@ This document serves as a central inventory of all pre-prepared applications, Po
 - **Remaining:** Robust NIST statistical tests, operationalizing a secure streaming path (Hex strings via API).
 
 ### Extreme Zeta Entropy API (Quantum Chaos)
-- **What it solves:** Generating cryptographic noise ("unbreakable entropy") for post-quantum security and extreme use-cases (military, banking).
-- **Status:** Experimental idea (zeta models audit in progress).
+- **Status:** CLOSED_NEGATIVE / REFUTED (May 2026).
 - **Traces in the repo:** `ZetaEntropyApp` in the portal, mentions in `todo.md`.
-- **Lineum core mechanism used:** Extracting patterns generated from collisions of massive `phi` structures (topological defects, collapse into "zeta" points, GUE distribution).
-- **Actually completed:** Discovery of zeta-nodes as mathematically unique anomalies of the engine.
-- **Remaining:** Mechanism for parallel densification and irreversible "hashing" of these topological patterns before distribution to clients.
+- **Lineum core mechanism used:** Originally hypothesized to read patterns from divisor-graph Hamiltonians and GUE level repulsion. This was refuted by the RZ-0/RZ-1 audits of the tested formulations. Tested Hamiltonian formulations do not currently support a verified arithmetic spectral stabilizer.
+- **Actually completed:** Diagnostic audits confirming that the proposed separable and non-separable arithmetic models revert to Poisson statistics and fail random-weight controls.
+- **Remaining:** None. The tested formulations are closed negative. Unrelated local wave-interference nodes (zeta-zeros) remain as physical features but cannot be used for arithmetic chaotic entropy.
 
 ### Web3 Oracle API (ZK-Proof Trusted Seed)
 - **What it solves:** Delivering transparent and auditable randomness for smart contracts (e.g., Ethereum VRF replacement).
