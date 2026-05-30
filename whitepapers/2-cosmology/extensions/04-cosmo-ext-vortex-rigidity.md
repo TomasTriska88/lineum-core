@@ -714,12 +714,12 @@ Given that stable Lineum topology requires a two-layer active medium (a slow cor
 
 To sustain rotating active models, the minimal mathematically viable environment is uniquely a strictly isotropic, two-speed medium. A single-field universe comprehensively shatters, and multi-field hierarchical universes empirically offer no topological stability advantage over the exact two-tier (slow structure, fast isotropic inhibition) scale-separation boundary.
 
-## 57. Two-Layer Interaction Audit: Proto-Force Derivation
+## 57. Two-Layer Interaction Audit: Rudimentary-Force Derivation
 
-*Status: **THEORETICAL DERIVATION EXECUTED. PROTO-FORCES IDENTIFIED.***
+*Status: **THEORETICAL DERIVATION EXECUTED. RUDIMENTARY-FORCES IDENTIFIED.***
 
 **Objective:**
-Ascertain whether the required secondary wide boundary medium (the fast-propagating $R$-field) functions exclusively as a sterile survival stabilizer, or whether its presence structurally mandates the emergence of interaction behaviors (proto-forces) between independent stable geometries.
+Ascertain whether the required secondary wide boundary medium (the fast-propagating $R$-field) functions exclusively as a sterile survival stabilizer, or whether its presence structurally mandates the emergence of interaction behaviors (rudimentary-forces) between independent stable geometries.
 
 **[RESULTS - INTERACTION DERIVATION AUDIT]**
 
@@ -735,15 +735,15 @@ Ascertain whether the required secondary wide boundary medium (the fast-propagat
   *Condition:* Does structural alteration of the overlapping $R$-field exert physical drift on the $\Psi$ topologies?
   *Result:* **PASS.** When the spatial inhibitor plateaus of Particle A and Particle B sequentially intersect, the interstitial region experiences heavy additive scalar damping. Consequently, Particle A endures heavier mathematical amplitude suppression on its "near" side (facing B) than its "far" side. This structurally translates into a sharp mechanical density gradient asymmetry across Particle A's core footprint.
 
-- **4. Emergent Attractor Repulsion (Proto-Forces)**
+- **4. Emergent Attractor Repulsion (Rudimentary-Forces)**
   *Condition:* Is the resulting topological drift structurally attractive or repulsive?
-  *Result:* **REPULSIVE PROTO-FORCE.** Because the geometric Lineum topography necessarily drifts away from heavy internal gradient decay into areas of lower scalar equilibrium, the $R$-layer damping overlap definitively mathematically pushes Particle A away from Particle B. Long-range repulsion is intrinsically logically native to the dual-layer system.
+  *Result:* **REPULSIVE RUDIMENTARY-FORCE.** Because the geometric Lineum topography necessarily drifts away from heavy internal gradient decay into areas of lower scalar equilibrium, the $R$-layer damping overlap definitively mathematically pushes Particle A away from Particle B. Long-range repulsion is intrinsically logically native to the dual-layer system.
 
 **[FINAL CLASSIFICATION: LAYER INTERACTION]**
 
-**Decision: (B) Creates Interactions (Proto-Forces)**
+**Decision: (B) Creates Interactions (Rudimentary-Forces)**
 
-The required two-speed background medium does definitively not solely serve as a sterile uniform stabilizer. The fast bounding layer functionally generates emergent geometrical interaction. By transmitting spatial scale-separated inhibition prior to direct intersection, the secondary layer intrinsically governs primitive interaction protocols, physically operating as a repulsive long-range topological proto-force between independent particles.
+The required two-speed background medium does definitively not solely serve as a sterile uniform stabilizer. The fast bounding layer functionally generates emergent geometrical interaction. By transmitting spatial scale-separated inhibition prior to direct intersection, the secondary layer intrinsically governs primitive interaction protocols, physically operating as a repulsive long-range topological rudimentary-force between independent particles.ndent particles.
 
 ## 58. Force Polarity Audit: Identifying Attraction Mechanics
 
@@ -776,14 +776,14 @@ Given that the scale-separated $R$-field natively induces macroscopic topologica
 
 In its absolutely minimal linear baseline parameter, the Lineum macro environmental medium is inherently locked into generating **(A) Pure Repulsion**. Nevertheless, by applying intentional non-linear actuation thresholds to the generalized feedback layer, the topological architecture securely harbors a mechanically proven **(C) Combination (Equilibrium Distance)** matrix, validating its potential for constructing complex macro "atomic" spacing physics.
 
-## 59. Proto-Chemistry Audit: Topology Valency and Bonding
+## 59. Nascent-Chemistry Audit: Topology Valency and Bonding
 
 *Status: **THEORETICAL DERIVATION EXECUTED. VALENCY CLASSIFIED.***
 
 **Objective:**
-Ascertain whether the emergent Combination Equilibrium (derived via Non-Linear Thresholding in Section 58) exclusively generates a single rigid, universal mechanical bonding distance, or if the spatial system natively organically constructs heterogeneous bonding parameters (Proto-Chemistry valency) structurally dictated by native intrinsic particle metrics.
+Ascertain whether the emergent Combination Equilibrium (derived via Non-Linear Thresholding in Section 58) exclusively generates a single rigid, universal mechanical bonding distance, or if the spatial system natively organically constructs heterogeneous bonding parameters (Nascent-Chemistry valency) structurally dictated by native intrinsic particle metrics.
 
-**[RESULTS - PROTO-CHEMISTRY DERIVATION]**
+**[RESULTS - NASCENT-CHEMISTRY DERIVATION]**
 
 - **1. Modulating Threshold Calibration ($R_{crit}$ Tuning)**
   *Condition:* Can the equilibrium mathematical distance be globally mathematically tuned?
@@ -791,7 +791,7 @@ Ascertain whether the emergent Combination Equilibrium (derived via Non-Linear T
 
 - **2. Heterogeneous Particle Valency (N=2 vs N=3 vs N=4)**
   *Condition:* Do distinct mathematical topological particles ($N$-class geometries) structurally bind interchangeably at identical generic distances, or diverse specialized mappings?
-  *Result:* **HETEROGENEOUS PROTO-VALENCY.** Distinct topologic $N$-states inherently rigorously possess natively diverse underlying spatial mass footprints. Consequently, they natively project varying spatial volumetric widths into their respective secondary $R$-field inhibitor plateaus. A heavy geometric structure ($N=4$) intersecting with a physically lighter phase node ($N=2$) will strictly inevitably trigger equilibrium threshold repulsion bounds at a geometric distance mapping completely distinctly from a homogeneous $N=3 \leftrightarrow N=3$ intersection. This rigidly mathematically dictates that diverse topological "valencies" intrinsically assemble specialized, distinct spacing bonds entirely based upon varying fundamental aggregated spatial mass.
+  *Result:* **HETEROGENEOUS NASCENT-VALENCY.** Distinct topologic $N$-states inherently rigorously possess natively diverse underlying spatial mass footprints. Consequently, they natively project varying spatial volumetric widths into their respective secondary $R$-field inhibitor plateaus. A heavy geometric structure ($N=4$) intersecting with a physically lighter phase node ($N=2$) will strictly inevitably trigger equilibrium threshold repulsion bounds at a geometric distance mapping completely distinctly from a homogeneous $N=3 \leftrightarrow N=3$ intersection. This rigidly mathematically dictates that diverse topological "valencies" intrinsically assemble specialized, distinct spacing bonds entirely based upon varying fundamental aggregated spatial mass.
 
 - **3. Stability of Multi-Body Structures (3+ Objects)**
   *Condition:* Do molecular bindings stably geometrically transcend binary 2-body (dyad) bonds into compounding complex macroscopic arrangements?
@@ -801,7 +801,7 @@ Ascertain whether the emergent Combination Equilibrium (derived via Non-Linear T
   *Condition:* What precise physical matrix geometry do these emergent binding groups natively physically orient towards (e.g., rigid lattice grids vs fluid arrays)?
   *Result:* **DYNAMIC TRIANGULATED ARRAYS.** Because the stable component core nodes ($N \ge 3$) structurally rely upon actively continuous localized angular phase advection gradients (they must continuously rotate), any bound geometry automatically mechanically drifts sequentially along the immediate intersecting outer rotational perimeter until locking cleanly into a topological field scalar saddle point. Crucially, generic rigid orthogonal Cartesian grid lattices are therefore mechanically physically impossible; the dual-system strictly rigidly favors densely packed fluidic triangulated orbital ring clusters and flexibly bounded structural macromolecular chains.
 
-**[FINAL CLASSIFICATION: PROTO-CHEMISTRY]**
+**[FINAL CLASSIFICATION: NASCENT-CHEMISTRY]**
 
 **Decision: (B) Multiple Bond Types & (C) Complex Structures**
 
@@ -839,7 +839,7 @@ Ascertain whether the pure dual-layer environment (specifically without explicit
 
 **Decision: (C) Continuum of Behaviors (Force Spectrum)**
 
-Even strictly entirely absent explicit intentionally engineered manual threshold bounding logic, the pristine basic Lineum dual-layer topology natively organically intrinsically constructs a rigorous **(C) Continuum of primitive proto-forces**. This extensive robust structural interaction spectrum is dynamically driven explicitly by asymmetrical phase $N$-valency discrepancies inherently commanding wildly distinct spatial gradient pressures, empirically validating a full generative physics scale from continuous symmetric repulsion out to asymmetric scattering deflection and aggressive targeted phase absorption.
+Even strictly entirely absent explicit intentionally engineered manual threshold bounding logic, the pristine basic Lineum dual-layer topology natively organically intrinsically constructs a rigorous **(C) Continuum of primitive rudimentary-forces**. This extensive robust structural interaction spectrum is dynamically driven explicitly by asymmetrical phase $N$-valency discrepancies inherently commanding wildly distinct spatial gradient pressures, empirically validating a full generative physics scale from continuous symmetric repulsion out to asymmetric scattering deflection and aggressive targeted phase absorption.
 
 ## 61. Empirical Matrix Audit: Continuous Validation
 
@@ -874,7 +874,7 @@ Directly computationally validate Section 60. Evaluate whether the native un-tun
 
 **CUMULATIVE BEHAVIORAL DISTRIBUTION:**
 - **Scatter (Symmetric Repulsion):** 25.0%
-- **Orbit (Deflection / Proto-Capture):** 33.3%
+- **Orbit (Deflection / Nascent-Capture):** 33.3%
 - **Absorption (Topological Consumption):** 25.0%
 - **Storm (Numerical Exceedance Phase):** 16.7%
 
@@ -886,10 +886,10 @@ The strictly measured simulation data structurally validates the continuous forc
 
 ## 62. Expanded Native Sweep Matrix: Phase Boundaries
 
-*Status: **SIMULATION EXECUTED. PROTO-FORCE REGIMES MAPPED.***
+*Status: **SIMULATION EXECUTED. RUDIMENTARY-FORCE REGIMES MAPPED.***
 
 **Objective:**
-Ascertain whether the broad interaction continuum empirically proven in Section 61 formally transitions mathematically smoothly, or if it actively harbors sharp discrete behavioral "modes" (Phase Boundaries) mathematically dictating explicit discrete native regimes of proto-chemistry.
+Ascertain whether the broad interaction continuum empirically proven in Section 61 formally transitions mathematically smoothly, or if it actively harbors sharp discrete behavioral "modes" (Phase Boundaries) mathematically dictating explicit discrete native regimes of nascent-chemistry.
 
 **[RESULTS - EXTENDED SWEEP DEPLOYMENT]**
 
@@ -900,7 +900,7 @@ Ascertain whether the broad interaction continuum empirically proven in Section 
 
 **[N1 vs N2 DOMINANT BEHAVIOR HEATMAP]**
 
-| Valency Pair | Scatter % | Orbit % | Absorb % | Storm % | Dominant Proto-Force |
+| Valency Pair | Scatter % | Orbit % | Absorb % | Storm % | Dominant Rudimentary-Force |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1 v 1** | 16.0% | 64.0% | 0.0% | 20.0% | **Orbit** (Weak Binding) |
 | **2 v 1** | 0.0% | 84.0% | 0.0% | 16.0% | **Orbit** (Capture) |
@@ -929,14 +929,14 @@ Ascertain whether the broad interaction continuum empirically proven in Section 
 
 The systematic simulation matrix conclusively empirically confirms that basic environmental interactions do NOT function as a uniformly mathematically blurred homogenous continuum. Specifically, they strictly organically organize into aggressively isolated phase discrete topological regimes **(C)** structurally defined by mathematically sharp phase transition thresholds **(B)**. Macroscopic high-mass combinations ($3v3, 4v3, 4v4$) explicitly rigidly definitively establish an exclusively **Scattering (Repulsive)** domain, abruptly contrasting asymmetrical and low-valency pairings ($2v1, 4v1$) which exclusively stably permanently trigger **Orbiting (Gravitational/Capture)** domains.
 
-Most critically, the foundational distance/advection velocity mapping empirically exposes a sharp apparent thermodynamic phase transition boundary explicitly straddling $Velocity \ge 0.5$ vs $Distance \ge 10px$. Crucially, any topological approach vector resolving slower than the generic mathematical advective threshold rigidly continuously scatters upon intersection. Conversely, any local system structurally possessing higher topological spatial momentum aggressively punches straight through the requisite outer $R$-field inhibitor boundary, abruptly locking flawlessly into an inner topological orbital capture well. This confirms absolutely definitive discrete Lineum Proto-Chemistry interactive domains.
+Most critically, the foundational distance/advection velocity mapping empirically exposes a sharp apparent thermodynamic phase transition boundary explicitly straddling $Velocity \ge 0.5$ vs $Distance \ge 10px$. Crucially, any topological approach vector resolving slower than the generic mathematical advective threshold rigidly continuously scatters upon intersection. Conversely, any local system structurally possessing higher topological spatial momentum aggressively punches straight through the requisite outer $R$-field inhibitor boundary, abruptly locking flawlessly into an inner topological orbital capture well. This confirms absolutely definitive discrete Lineum Nascent-Chemistry interactive domains.
 
 ## 63. Fine Boundary Sensitivity: The Transition Structure
 
 *Status: **SENSITIVITY ANALYSIS EXECUTED. MAPPING IN PROGRESS.***
 
 **Objective:**
-Investigate the precise mathematical nature of the emergent proto-force phase boundary identified in Section 62 between the Scattering and Orbiting regimes. Ascertain whether the interaction threshold mathematically strictly operates as a flawless discrete partition (True Phase Transition), a measurable structurally gradual slope (Soft Boundary), or a bifurcating topological fractal (Chaotic Mixed Regime).
+Investigate the precise mathematical nature of the emergent rudimentary-force phase boundary identified in Section 62 between the Scattering and Orbiting regimes. Ascertain whether the interaction threshold mathematically strictly operates as a flawless discrete partition (True Phase Transition), a measurable structurally gradual slope (Soft Boundary), or a bifurcating topological fractal (Chaotic Mixed Regime).
 
 **[RESULTS - FINE-GRAINED TRANSITION ZONE]**
 
@@ -959,7 +959,7 @@ Investigate the precise mathematical nature of the emergent proto-force phase bo
 
 The empirical fine-grained noise derivation rigorously demonstrates that the macro interaction boundary identified previously is definitively **NOT uniquely sharp**. Deep firmly inside the critical $\sim0.48 \rightarrow 0.52$ velocity threshold, intentionally introducing purely invisible microscopic spatial jitter rigorously forcibly initiates immense outcome bifurcation. Identical macroscopic input collision parameters explicitly mathematically yield fragmented structural probabilities (e.g., 60% Orbit vs 40% Scatter). This definitively actively aligns exactly with mathematically canonical **Chaotic Scattering** kinetics routinely rigorously observed strictly exclusively within non-integrable topological soliton physics (such as $\phi^4$ defect collision resonances). 
 
-**Warning:** The localized boundary mapping is currently rigorously locked structurally mathematically INCONCLUSIVE. While the presence of a chaotic fractal basin explicitly straddling the gap exactly between distinct interacting macroscopic proto-forces is verified, the precise total topological metric underlying the width and absolute geometric depth of this volatile mixed resonance interaction strictly natively requires extreme further mathematical topological isolation definitively prior to conclusively safely formally classifying it as a permanently strictly logically closed fundamental physical law.
+**Warning:** The localized boundary mapping is currently rigorously locked structurally mathematically INCONCLUSIVE. While the presence of a chaotic fractal basin explicitly straddling the gap exactly between distinct interacting macroscopic rudimentary-forces is verified, the precise total topological metric underlying the width and absolute geometric depth of this volatile mixed resonance interaction strictly natively requires extreme further mathematical topological isolation definitively prior to conclusively safely formally classifying it as a permanently strictly logically closed fundamental physical law.
 
 ## 64. High-Resolution Probability Mapping: The Thermodynamic Wall
 
