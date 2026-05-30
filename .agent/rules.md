@@ -35,3 +35,6 @@ This repository is the private company layer (Lineum Dynamics s.r.o.) that build
 
 25. **Lina vs. Lineum (Portal Overlay Definition):** Never refer to the physics engine, mathematical model, simulation code, or core platform as 'Lina'. Lina is strictly the persona/portal overlay model used for querying and interacting with Lineum. The physics engine and mathematical models are called 'Lineum' or 'Wave Core'. All technical calculations, simulations, and scientific whitepapers refer to Lineum.
 
+26. **Permanent Task Documentation of Calculations and Diagnostics:** Whenever performing quick calculations, simulation runs, or diagnostic sweeps for a task (including exploratory scripts in `.scratch/`), the agent MUST document the setup, setup parameters, code snippets, raw numeric outputs, and analytical conclusions directly in the ClickUp task description or as a comment. Never leave research data or calculation logs solely in the `.scratch/` folder, as scratch files are volatile and are cleaned up at the end of the session. This ensures that the entire context and work history can be revisited at any time.
+
+
