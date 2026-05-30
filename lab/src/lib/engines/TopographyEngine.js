@@ -32,6 +32,9 @@ export class TopographyEngine {
         this.initLinony();
         this.initHarmonics();
 
+        this.contactGraphGroup = new THREE.Group();
+        this.terrainGroup.add(this.contactGraphGroup);
+
         this.updateTopography(); // 🖼️ Initial render for frame 0
 
         this.onResizeBound = this.onResize.bind(this);
@@ -250,6 +253,73 @@ export class TopographyEngine {
             }
         });
 
+        // 🔗 Draw Diagnostic ContactGraph edges
+        // Clear previous lines
+        if (this.contactGraphGroup && this.contactGraphGroup.children) {
+            while (this.contactGraphGroup.children.length > 0) {
+                const child = this.contactGraphGroup.children[0];
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) child.material.dispose();
+                if (typeof this.contactGraphGroup.remove === 'function') {
+                    this.contactGraphGroup.remove(child);
+                } else {
+                    break;
+                }
+            }
+        }
+
+        const activeLinons = [];
+        this.linony.forEach(c => {
+            const point = c.traj.path[this.currentFrameIndex];
+            if (point && point[2] >= 100000) {
+                const x = point[0];
+                const y = point[1];
+                const tx = (x - 64) * 0.5;
+                const tz = (y - 64) * 0.5;
+                // Get the local ground height
+                const vx = (tx / 80 + 0.5) * 63;
+                const vz = (tz / 80 + 0.5) * 63;
+                const ix = Math.floor(vx);
+                const iy = Math.floor(vz);
+                let ty = 0;
+                if (ix >= 0 && ix < 64 && iy >= 0 && iy < 64) {
+                    ty = (frame[iy][ix] - meanPhi) * hScale;
+                }
+                activeLinons.push({
+                    id: c.traj.id,
+                    pos: new THREE.Vector3(tx, ty, tz),
+                    rawX: x,
+                    rawY: y
+                });
+            }
+        });
+
+        const LineMaterialClass = THREE.LineDashedMaterial || THREE.LineBasicMaterial;
+        const edgeMaterial = new LineMaterialClass({
+            color: 0x00ffff,
+            dashSize: 0.5,
+            gapSize: 0.25,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        for (let i = 0; i < activeLinons.length; i++) {
+            for (let j = i + 1; j < activeLinons.length; j++) {
+                const l1 = activeLinons[i];
+                const l2 = activeLinons[j];
+                const dx = l1.rawX - l2.rawX;
+                const dy = l1.rawY - l2.rawY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 12.0) {
+                    const points = [l1.pos, l2.pos];
+                    const geom = new THREE.BufferGeometry().setFromPoints(points);
+                    const line = new THREE.Line(geom, edgeMaterial);
+                    line.computeLineDistances();
+                    this.contactGraphGroup.add(line);
+                }
+            }
+        }
+
         // This line is now handled by the animate function
         // this.currentFrameIndex = (this.currentFrameIndex + 1) % this.frameCount;
     }
@@ -322,6 +392,20 @@ export class TopographyEngine {
         if (this.goldenSpiral) {
             if (this.goldenSpiral.geometry) this.goldenSpiral.geometry.dispose();
             if (this.goldenSpiral.material) this.goldenSpiral.material.dispose();
+        }
+
+        // Dispose of contact graph lines
+        if (this.contactGraphGroup && this.contactGraphGroup.children) {
+            while (this.contactGraphGroup.children.length > 0) {
+                const child = this.contactGraphGroup.children[0];
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) child.material.dispose();
+                if (typeof this.contactGraphGroup.remove === 'function') {
+                    this.contactGraphGroup.remove(child);
+                } else {
+                    break;
+                }
+            }
         }
 
         // Dispose renderer context

@@ -43,6 +43,7 @@ vi.mock('three', () => {
         MeshPhongMaterial: function () { this.dispose = vi.fn(); },
         MeshBasicMaterial: function () { this.dispose = vi.fn(); },
         LineBasicMaterial: function () { this.dispose = vi.fn(); },
+        LineDashedMaterial: function () { this.dispose = vi.fn(); },
         Mesh: function () { this.position = { set: vi.fn() }; },
         Line: function () { },
         SphereGeometry: function () { },

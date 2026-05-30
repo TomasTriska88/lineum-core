@@ -12,6 +12,7 @@
     import ContactFooter from "./lib/components/ContactFooter.svelte";
     import Logo from "./lib/components/Logo.svelte";
     import NavButton from "./lib/components/NavButton.svelte";
+    import ContactGraph from "./lib/components/ContactGraph.svelte";
     import { t } from "./lib/i18n";
 
     let container;
@@ -593,6 +594,14 @@
                     >
                         {$t('tab_spikes')}
                     </button>
+                    <button
+                        class="tab-btn"
+                        class:active={activeTab === "contact_graph"}
+                        on:click={() => (activeTab = "contact_graph")}
+                        data-testid="tab-contact-graph"
+                    >
+                        {$t('tab_contact_graph') || "Contact Graph"}
+                    </button>
                 </div>
 
                 <div class="tab-content">
@@ -685,6 +694,8 @@
                         />
                     {:else if activeTab === "spikes"}
                         <ExtremeSpikes {engine} {frame} />
+                    {:else if activeTab === "contact_graph"}
+                        <ContactGraph trajData={engine ? engine.trajData : []} {frame} />
                     {/if}
                 </div>
             </div>
