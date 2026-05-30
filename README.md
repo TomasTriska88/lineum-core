@@ -21,7 +21,7 @@ This monorepo contains three distinct components:
 
 To run and develop the various components of the monorepo, you need the following prerequisites installed on your system:
 *   **Git** (for version control and project hooks)
-*   **Python 3.11** (required for **Core**)
+*   **Python 3.11** with **pip** or **uv** (required for **Core** dependencies, manage via [requirements.txt](requirements.txt))
 *   **Node.js (LTS version)** (required for **Portal** and **Lab**)
 
 ---
@@ -33,6 +33,9 @@ The heart of the project. A Python-based engine that runs the discrete field upd
 *   **Documentation**: `whitepapers/lineum-core.md` (Scientific paper)
 *   **Usage**:
     ```bash
+    # Install dependencies
+    pip install -r requirements.txt
+
     # Run a simulation
     python lineum.py
     ```
