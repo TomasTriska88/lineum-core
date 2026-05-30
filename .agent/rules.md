@@ -33,7 +33,8 @@ This repository is the private company layer (Lineum Dynamics s.r.o.) that build
 
 24. **Python Dependency & Environment Hygiene (requirements.txt):** Whenever the agent is tasked with running Python calculations, simulation runs, or test suites, and encounters missing dependencies or imports, the agent MUST check `requirements.txt` (and `requirements-dev.txt` for development/testing tools) in the repository root and install them. If Python, `pip`, or `uv` is not installed on the host system, the agent MUST notify the user and suggest installing them (recommending `uv` or standard Python via `winget`) instead of bypassing the dependency structure or skipping the task.
 
-25. **Lina vs. Lineum (Portal Overlay Definition):** Never refer to the physics engine, mathematical model, simulation code, or core platform as 'Lina'. Lina is strictly the persona/portal overlay model used for querying and interacting with Lineum. The physics engine and mathematical models are called 'Lineum' or 'Wave Core'. All technical calculations, simulations, and scientific whitepapers refer to Lineum.
+25. **Lina vs. Lineum (Portal Overlay Definition and Engine Naming):** Never refer to the physics engine, mathematical model, simulation code, or core platform as 'Lina'. Lina is strictly the persona/portal overlay model used for querying and interacting with Lineum. The physics engine and mathematical models are called 'Lineum' or 'Wave Core'. Do not refer to the engine itself as "Lineum Core"—the engine is strictly named "Lineum" (or "Lineum Engine"), whereas "Lineum Core" (repository `lineum-core`) refers strictly to the core open-source library within the broader ecosystem. All technical calculations, simulations, and scientific whitepapers refer to Lineum.
+
 
 
 
