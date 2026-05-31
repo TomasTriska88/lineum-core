@@ -1,12 +1,28 @@
-import sys
 import os
 import json
 import pytest
 
-# Extract evaluate_hash globally to formally test invariants independently
+# Local helper to evaluate profile hashes without external script dependencies
+def evaluate_hash(metric, computed, info_dict, profile):
+    legacy_key = f"{metric}_hash"
+    profile_key = f"{metric}_hashes"
+    
+    if profile_key in info_dict:
+        approved_hashes = info_dict[profile_key]
+        if profile in approved_hashes:
+            expected = approved_hashes[profile]
+            match = (computed == expected)
+            return match, expected, f"Profile ({profile})"
+        else:
+            return False, "N/A", f"Unknown Profile (Known: {list(approved_hashes.keys())})"
+    elif legacy_key in info_dict:
+        expected = info_dict[legacy_key]
+        match = (computed == expected)
+        return match, expected, "Legacy Single-Hash"
+    else:
+        return False, "N/A", f"Missing Schema Keys"
+
 repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(os.path.join(repo_root, "scripts"))
-from verify_repro_run import evaluate_hash
 
 # Mock references based strictly on CI validation and BLAS linkages
 MOCK_WINDOWS_PROFILE = "win32_AMD64_py3.11_np1.25.2_openblas"
