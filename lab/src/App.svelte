@@ -28,6 +28,8 @@
     let metadata = null; // 📦 Audit metadata
     let harmonicData = null; // 🌀 Fibonacci & Golden Ratio
     let showSpiral = false;
+    let debugView = false;
+    let showNodeIds = false;
 
     // Global Modal State
     let maximizedChart = null; // { title, config }
@@ -369,7 +371,13 @@
         const t_now = Date.now();
 
         try {
-            if (engine) engine.dispose();
+            if (engine) {
+                engine.dispose();
+                engine = null;
+            }
+            if (typeof window !== 'undefined') {
+                window.engine = null;
+            }
 
             const phiRes = await fetch(
                 `${dataRoot}/phi_frames.json?t=${t_now}`,
@@ -395,6 +403,13 @@
             totalFrames = phiData.metadata.frame_count;
 
             engine = new TopographyEngine(container, phiData, trajData);
+            engine.runId = runId;
+            if (typeof window !== 'undefined' && (import.meta.env.DEV || window.__playwright_test__)) {
+                // Browser QA hook for automated testing and development environment
+                window.engine = engine;
+            }
+            engine.debugContactView = debugView;
+            engine.showNodeIds = showNodeIds;
             engine.harmonicData = harmonicData;
             engine.playbackSpeed = playbackSpeed;
             engine.onFrameUpdate = (newFrame) => (frame = newFrame);
@@ -695,7 +710,29 @@
                     {:else if activeTab === "spikes"}
                         <ExtremeSpikes {engine} {frame} />
                     {:else if activeTab === "contact_graph"}
-                        <ContactGraph trajData={engine ? engine.trajData : []} {frame} />
+                        <ContactGraph 
+                            trajData={engine ? engine.trajData : []} 
+                            {frame} 
+                            bind:debugView={debugView}
+                            bind:showNodeIds={showNodeIds}
+                            on:toggleDebug={(e) => {
+                                if (engine) {
+                                    engine.debugContactView = e.detail;
+                                    engine.updateTopography();
+                                }
+                            }}
+                            on:toggleNodeIds={(e) => {
+                                if (engine) {
+                                    engine.showNodeIds = e.detail;
+                                    engine.updateTopography();
+                                }
+                            }}
+                            on:focusContacts={() => {
+                                if (engine) {
+                                    engine.focusOnActiveContacts();
+                                }
+                            }}
+                        />
                     {/if}
                 </div>
             </div>

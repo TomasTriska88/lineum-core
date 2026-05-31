@@ -1,8 +1,18 @@
 <script>
+    import { createEventDispatcher } from "svelte";
     import { t } from "../i18n";
+
+    const dispatch = createEventDispatcher();
 
     export let trajData = [];
     export let frame = 0;
+
+    // Visual Clarity Pass bindings
+    export let debugView = false;
+    export let showNodeIds = false;
+
+    // UI observer threshold only; not a physics parameter.
+    const ACTIVE_AMPLITUDE_THRESHOLD = 1000;
 
     // Configuration
     const CONTACT_THRESHOLD = 12.0;
@@ -29,7 +39,7 @@
         // 1. Identify active (born) nodes in the current frame
         trajData.forEach(traj => {
             const point = traj.path[frame];
-            if (point && point[2] >= 100000) {
+            if (point && point[2] >= ACTIVE_AMPLITUDE_THRESHOLD) {
                 activeNodes.push({
                     id: traj.id,
                     x: point[0],
@@ -102,7 +112,7 @@
         while (start >= 0) {
             const p1 = t1.path[start];
             const p2 = t2.path[start];
-            if (!p1 || !p2 || p1[2] < 100000 || p2[2] < 100000) break;
+            if (!p1 || !p2 || p1[2] < ACTIVE_AMPLITUDE_THRESHOLD || p2[2] < ACTIVE_AMPLITUDE_THRESHOLD) break;
             const dist = Math.sqrt(Math.pow(p1[0] - p2[0], 2) + Math.pow(p1[1] - p2[1], 2));
             if (dist >= CONTACT_THRESHOLD) break;
             start--;
@@ -114,7 +124,7 @@
         while (end < totalFrames) {
             const p1 = t1.path[end];
             const p2 = t2.path[end];
-            if (!p1 || !p2 || p1[2] < 100000 || p2[2] < 100000) break;
+            if (!p1 || !p2 || p1[2] < ACTIVE_AMPLITUDE_THRESHOLD || p2[2] < ACTIVE_AMPLITUDE_THRESHOLD) break;
             const dist = Math.sqrt(Math.pow(p1[0] - p2[0], 2) + Math.pow(p1[1] - p2[1], 2));
             if (dist >= CONTACT_THRESHOLD) break;
             end++;
@@ -174,6 +184,34 @@
         <div class="diagnostic-meta">
             <span class="meta-label">{$t('contact_graph_threshold') || "Distance Threshold"}:</span>
             <span class="meta-value">{CONTACT_THRESHOLD.toFixed(1)} px</span>
+        </div>
+
+        <div class="diagnostic-controls" style="margin: 10px 0; padding: 10px; background: rgba(0, 255, 255, 0.05); border: 1px solid rgba(0, 255, 255, 0.1); border-radius: 4px; display: flex; flex-direction: column; gap: 8px;">
+            <label class="control-label" style="display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; color: #cbd5e1; cursor: pointer; user-select: none;">
+                <span>{$t('contact_graph_debug_view') || "ContactGraph debug view"}</span>
+                <input 
+                    type="checkbox" 
+                    bind:checked={debugView} 
+                    on:change={() => dispatch('toggleDebug', debugView)}
+                    style="accent-color: #00ffff; cursor: pointer; width: 14px; height: 14px;"
+                />
+            </label>
+            <label class="control-label" style="display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; color: #cbd5e1; cursor: pointer; user-select: none;">
+                <span>{$t('contact_graph_show_node_ids') || "Show node IDs"}</span>
+                <input 
+                    type="checkbox" 
+                    bind:checked={showNodeIds} 
+                    on:change={() => dispatch('toggleNodeIds', showNodeIds)}
+                    style="accent-color: #00ffff; cursor: pointer; width: 14px; height: 14px;"
+                />
+            </label>
+            <button 
+                type="button" 
+                on:click={() => dispatch('focusContacts')}
+                style="margin-top: 4px; background: rgba(0, 255, 255, 0.1); border: 1px solid rgba(0, 255, 255, 0.4); color: #00ffff; font-size: 0.65rem; padding: 6px 10px; border-radius: 4px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.2s;"
+            >
+                {$t('contact_graph_focus_contacts') || "Focus active contact"}
+            </button>
         </div>
 
         {#if activeNodes.length === 0}

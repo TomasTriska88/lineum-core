@@ -45,7 +45,9 @@ vi.mock('three', () => {
         LineBasicMaterial: function () { this.dispose = vi.fn(); },
         LineDashedMaterial: function () { this.dispose = vi.fn(); },
         Mesh: function () { this.position = { set: vi.fn() }; },
-        Line: function () { },
+        Line: function () {
+            this.computeLineDistances = vi.fn();
+        },
         SphereGeometry: function () { },
         Vector3: function (x, y, z) { this.x = x; this.y = y; this.z = z; },
         DoubleSide: 2

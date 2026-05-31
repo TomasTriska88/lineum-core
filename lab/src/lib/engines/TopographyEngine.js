@@ -1,5 +1,8 @@
 import * as THREE from 'three';
 
+// UI observer threshold only; not a physics parameter.
+const ACTIVE_AMPLITUDE_THRESHOLD = 1000;
+
 export class TopographyEngine {
     constructor(container, phiData, trajData) {
         this.container = container;
@@ -16,9 +19,16 @@ export class TopographyEngine {
         this.showSpiral = false; // 🌀 Toggle for Golden Spiral overlay
         this.harmonicData = null;
 
+        // Visual Clarity Pass controls
+        this.debugContactView = false;
+        this.showNodeIds = false;
+
         this.scene = new THREE.Scene();
-        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
+
+        // Gate preserveDrawingBuffer to avoid performance impact in production
+        const usePreserve = (typeof window !== 'undefined' && (import.meta.env.DEV || window.__playwright_test__));
+        this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: !!usePreserve });
 
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.setPixelRatio(window.devicePixelRatio);
@@ -29,11 +39,20 @@ export class TopographyEngine {
 
         this.initLights();
         this.initGrid();
-        this.initLinony();
         this.initHarmonics();
 
         this.contactGraphGroup = new THREE.Group();
         this.terrainGroup.add(this.contactGraphGroup);
+
+        this.edgeMaterial = new THREE.LineDashedMaterial({
+            color: 0xff6600, // Bright diagnostic orange
+            dashSize: 0.6,
+            gapSize: 0.3,
+            transparent: true,
+            opacity: 1.0,
+            depthTest: false,
+            depthWrite: false
+        });
 
         this.updateTopography(); // 🖼️ Initial render for frame 0
 
@@ -130,12 +149,49 @@ export class TopographyEngine {
             const coreMat = new THREE.MeshBasicMaterial({ color: 0xffaa00, transparent: true, opacity: 1.0 });
             const core = new THREE.Mesh(coreGeom, coreMat);
 
+            // Add a halo ring for active nodes in contact debug mode
+            const haloGeom = new THREE.RingGeometry(0.8, 1.0, 16);
+            haloGeom.rotateX(-Math.PI / 2);
+            const haloMat = new THREE.MeshBasicMaterial({
+                color: 0x00ffff, // Diagnostic cyan halo
+                side: THREE.DoubleSide,
+                transparent: true,
+                opacity: 0.0,
+                depthTest: false,
+                depthWrite: false
+            });
+            const halo = new THREE.Mesh(haloGeom, haloMat);
+
+            // Add text label sprite for optional node IDs display
+            const canvas = document.createElement('canvas');
+            canvas.width = 64;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#00ffff';
+            ctx.font = 'bold 18px monospace';
+            ctx.textAlign = 'center';
+            ctx.fillText(`#${traj.id.toString().slice(-4)}`, 32, 20);
+
+            const texture = new THREE.CanvasTexture(canvas);
+            const spriteMat = new THREE.SpriteMaterial({
+                map: texture,
+                transparent: true,
+                opacity: 0.0,
+                depthTest: false,
+                depthWrite: false
+            });
+            const labelSprite = new THREE.Sprite(spriteMat);
+            labelSprite.position.set(0, 1.2, 0); // Position above the core
+            labelSprite.scale.set(3, 1.5, 1);
+
             const group = new THREE.Group();
             group.add(line);
             group.add(core);
+            group.add(halo);
+            group.add(labelSprite);
 
             this.terrainGroup.add(group);
-            this.linony.push({ group, traj, core, line });
+            this.linony.push({ group, traj, core, line, halo, labelSprite });
         });
     }
 
@@ -157,7 +213,7 @@ export class TopographyEngine {
         }
 
         const geometry = new THREE.BufferGeometry().setFromPoints(points);
-        const material = new THREE.LineBasicMaterial({
+        const material = new THREE.LineDashedMaterial({
             color: 0xff00ff,
             transparent: true,
             opacity: 0.4,
@@ -165,6 +221,9 @@ export class TopographyEngine {
             gapSize: 0.5
         });
         this.goldenSpiral = new THREE.Line(geometry, material);
+        if (typeof this.goldenSpiral.computeLineDistances === 'function') {
+            this.goldenSpiral.computeLineDistances();
+        }
         this.goldenSpiral.visible = false;
         this.harmonicsGroup.add(this.goldenSpiral);
     }
@@ -186,7 +245,23 @@ export class TopographyEngine {
             }
         }
         const meanPhi = sum / count;
-        const hScale = -0.2; // Reduced to prevent "over-the-screen" mountains
+        // Calculate max absolute relative phi to scale height dynamically
+        let maxAbsPhi = 0.0001;
+        for (let y = 0; y < 64; y++) {
+            for (let x = 0; x < 64; x++) {
+                const val = Math.abs(frame[y][x] - meanPhi);
+                if (val > maxAbsPhi) maxAbsPhi = val;
+            }
+        }
+        const hScale = -Math.min(0.2, 15.0 / maxAbsPhi); // Prevents mountains from going off-screen in chaotic runs
+
+        // Visual Clarity Pass: Dim grid & hide solid terrain background in debug view
+        if (this.plane && this.plane.material) {
+            this.plane.material.opacity = this.debugContactView ? 0.02 : 0.2;
+        }
+        if (this.solidPlane) {
+            this.solidPlane.visible = !this.debugContactView;
+        }
 
         const segments = 128;
         for (let i = 0; i < positions.length; i += 3) {
@@ -205,9 +280,15 @@ export class TopographyEngine {
         }
 
         this.geometry.computeVertexNormals();
+        if (typeof this.geometry.computeBoundingBox === 'function') {
+            this.geometry.computeBoundingBox();
+        }
+        if (typeof this.geometry.computeBoundingSphere === 'function') {
+            this.geometry.computeBoundingSphere();
+        }
         this.geometry.attributes.position.needsUpdate = true;
 
-        // Update linony positions and visual states
+        // Update linons position and visual states
         this.linony.forEach(c => {
             const path = c.traj.path;
 
@@ -241,15 +322,32 @@ export class TopographyEngine {
                 c.core.position.y = relativePhi * hScale;
             }
 
+            // Position halo & label sprite at the core height
+            if (c.halo) c.halo.position.y = c.core.position.y;
+            if (c.labelSprite) c.labelSprite.position.y = c.core.position.y + 1.2;
+
             // 👻 Ghost state for unborn linony (amplitude-based)
-            if (amplitude < 100000) {
+            if (amplitude < ACTIVE_AMPLITUDE_THRESHOLD) {
                 c.core.material.opacity = 0.2;
                 c.core.scale.set(0.5, 0.5, 0.5);
                 c.line.material.opacity = 0.1;
+                c.line.visible = !this.debugContactView; // hide fiber in debug view
+                if (c.halo) c.halo.material.opacity = 0.0;
+                if (c.labelSprite) c.labelSprite.material.opacity = 0.0;
             } else {
                 c.core.material.opacity = 1.0;
                 c.core.scale.set(1.0, 1.0, 1.0);
                 c.line.material.opacity = 0.5;
+                c.line.visible = !this.debugContactView; // hide fiber in debug view
+
+                // Active node visibility options in debug view
+                if (c.halo) {
+                    c.halo.material.opacity = this.debugContactView ? 0.4 : 0.0;
+                    c.halo.material.color.setHex(0x00ffff); // Cyan halo by default
+                }
+                if (c.labelSprite) {
+                    c.labelSprite.material.opacity = (this.debugContactView && this.showNodeIds) ? 1.0 : 0.0;
+                }
             }
         });
 
@@ -259,7 +357,7 @@ export class TopographyEngine {
             while (this.contactGraphGroup.children.length > 0) {
                 const child = this.contactGraphGroup.children[0];
                 if (child.geometry) child.geometry.dispose();
-                if (child.material) child.material.dispose();
+                // do NOT dispose child.material if it is the shared this.edgeMaterial
                 if (typeof this.contactGraphGroup.remove === 'function') {
                     this.contactGraphGroup.remove(child);
                 } else {
@@ -271,7 +369,7 @@ export class TopographyEngine {
         const activeLinons = [];
         this.linony.forEach(c => {
             const point = c.traj.path[this.currentFrameIndex];
-            if (point && point[2] >= 100000) {
+            if (point && point[2] >= ACTIVE_AMPLITUDE_THRESHOLD) {
                 const x = point[0];
                 const y = point[1];
                 const tx = (x - 64) * 0.5;
@@ -289,19 +387,13 @@ export class TopographyEngine {
                     id: c.traj.id,
                     pos: new THREE.Vector3(tx, ty, tz),
                     rawX: x,
-                    rawY: y
+                    rawY: y,
+                    ref: c
                 });
             }
         });
 
-        const LineMaterialClass = THREE.LineDashedMaterial || THREE.LineBasicMaterial;
-        const edgeMaterial = new LineMaterialClass({
-            color: 0x00ffff,
-            dashSize: 0.5,
-            gapSize: 0.25,
-            transparent: true,
-            opacity: 0.8
-        });
+        const inContact = new Set();
 
         for (let i = 0; i < activeLinons.length; i++) {
             for (let j = i + 1; j < activeLinons.length; j++) {
@@ -311,17 +403,38 @@ export class TopographyEngine {
                 const dy = l1.rawY - l2.rawY;
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 12.0) {
-                    const points = [l1.pos, l2.pos];
+                    // Add slight vertical offset (Y + 0.2) to avoid z-fighting with the grid mesh
+                    const p1 = l1.pos.clone().add(new THREE.Vector3(0, 0.2, 0));
+                    const p2 = l2.pos.clone().add(new THREE.Vector3(0, 0.2, 0));
+                    const points = [p1, p2];
                     const geom = new THREE.BufferGeometry().setFromPoints(points);
-                    const line = new THREE.Line(geom, edgeMaterial);
-                    line.computeLineDistances();
+
+                    const line = new THREE.Line(geom, this.edgeMaterial);
+                    if (typeof line.computeLineDistances === 'function') {
+                        line.computeLineDistances();
+                    }
                     this.contactGraphGroup.add(line);
+
+                    inContact.add(l1.id);
+                    inContact.add(l2.id);
                 }
             }
         }
 
-        // This line is now handled by the animate function
-        // this.currentFrameIndex = (this.currentFrameIndex + 1) % this.frameCount;
+        // Selected contact pair highlight & color styling (Cyan for active, Orange for contact)
+        if (this.debugContactView) {
+            this.linony.forEach(c => {
+                if (c.halo && c.group.visible && c.traj.path[this.currentFrameIndex] && c.traj.path[this.currentFrameIndex][2] >= ACTIVE_AMPLITUDE_THRESHOLD) {
+                    if (inContact.has(c.traj.id)) {
+                        c.halo.material.color.setHex(0xff6600); // Diagnostic Orange highlight for contacts
+                        c.halo.material.opacity = 0.9;
+                    } else {
+                        c.halo.material.color.setHex(0x00ffff); // Diagnostic Cyan for non-contact active nodes
+                        c.halo.material.opacity = 0.4;
+                    }
+                }
+            });
+        }
     }
 
     animate() {
@@ -348,6 +461,22 @@ export class TopographyEngine {
             }
         }
 
+        // Animate the edge material dashOffset for a crawling diagnostic pulse effect
+        if (this.edgeMaterial) {
+            this.edgeMaterial.dashOffset -= 0.02;
+        }
+
+        // Pulse active halos in debug mode
+        if (this.debugContactView) {
+            const time = performance.now() * 0.005;
+            const pulse = 1.0 + Math.sin(time) * 0.15;
+            this.linony.forEach(c => {
+                if (c.halo && c.halo.material.opacity > 0) {
+                    c.halo.scale.set(pulse, pulse, pulse);
+                }
+            });
+        }
+
         this.terrainGroup.rotation.y += 0.001;
         this.renderer.render(this.scene, this.camera);
     }
@@ -360,7 +489,70 @@ export class TopographyEngine {
             if (this.onFrameUpdate) {
                 this.onFrameUpdate(this.currentFrameIndex);
             }
+            this.renderer.render(this.scene, this.camera);
         }
+    }
+
+    focusOnActiveContacts() {
+        const activeLinons = [];
+        this.linony.forEach(c => {
+            const point = c.traj.path[this.currentFrameIndex];
+            if (point && point[2] >= ACTIVE_AMPLITUDE_THRESHOLD) {
+                const tx = (point[0] - 64) * 0.5;
+                const tz = (point[1] - 64) * 0.5;
+                const ty = c.core ? c.core.position.y : 0;
+                activeLinons.push(new THREE.Vector3(tx, ty, tz));
+            }
+        });
+
+        const contactPoints = [];
+        for (let i = 0; i < this.linony.length; i++) {
+            for (let j = i + 1; j < this.linony.length; j++) {
+                const c1 = this.linony[i];
+                const c2 = this.linony[j];
+                const p1 = c1.traj.path[this.currentFrameIndex];
+                const p2 = c2.traj.path[this.currentFrameIndex];
+                if (p1 && p2 && p1[2] >= ACTIVE_AMPLITUDE_THRESHOLD && p2[2] >= ACTIVE_AMPLITUDE_THRESHOLD) {
+                    const dx = p1[0] - p2[0];
+                    const dy = p1[1] - p2[1];
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 12.0) {
+                        const tx1 = (p1[0] - 64) * 0.5;
+                        const tz1 = (p1[1] - 64) * 0.5;
+                        const tx2 = (p2[0] - 64) * 0.5;
+                        const tz2 = (p2[1] - 64) * 0.5;
+                        const ty1 = c1.core ? c1.core.position.y : 0;
+                        const ty2 = c2.core ? c2.core.position.y : 0;
+                        contactPoints.push(new THREE.Vector3((tx1 + tx2) * 0.5, (ty1 + ty2) * 0.5, (tz1 + tz2) * 0.5));
+                    }
+                }
+            }
+        }
+
+        if (contactPoints.length > 0) {
+            // Focus on the first contact pair midpoint to avoid height averaging issues
+            const centroid = contactPoints[0];
+
+            // Transform local centroid to world space
+            this.terrainGroup.updateMatrixWorld(true);
+            const worldCentroid = centroid.clone().applyMatrix4(this.terrainGroup.matrixWorld);
+
+            // Position camera closer to focus on contact pair
+            this.camera.position.set(worldCentroid.x + 15, worldCentroid.y + 15, worldCentroid.z + 15);
+            this.camera.lookAt(worldCentroid);
+        } else if (activeLinons.length > 0) {
+            // Focus on the first active linon position
+            const centroid = activeLinons[0];
+
+            // Transform local centroid to world space
+            this.terrainGroup.updateMatrixWorld(true);
+            const worldCentroid = centroid.clone().applyMatrix4(this.terrainGroup.matrixWorld);
+
+            this.camera.position.set(worldCentroid.x + 20, worldCentroid.y + 20, worldCentroid.z + 20);
+            this.camera.lookAt(worldCentroid);
+        }
+
+        this.renderer.render(this.scene, this.camera);
     }
 
     onResize() {
@@ -378,14 +570,28 @@ export class TopographyEngine {
         if (this.material) this.material.dispose();
         if (this.solidPlane && this.solidPlane.material) this.solidPlane.material.dispose();
 
-        // Dispose of linony fibers and cores
+        // Dispose of linony fibers, cores, halos, and label sprites
         if (this.linony) {
             this.linony.forEach(c => {
                 if (c.line.geometry) c.line.geometry.dispose();
                 if (c.line.material) c.line.material.dispose();
                 if (c.core.geometry) c.core.geometry.dispose();
                 if (c.core.material) c.core.material.dispose();
+                if (c.halo) {
+                    if (c.halo.geometry) c.halo.geometry.dispose();
+                    if (c.halo.material) c.halo.material.dispose();
+                }
+                if (c.labelSprite) {
+                    if (c.labelSprite.material) {
+                        if (c.labelSprite.material.map) c.labelSprite.material.map.dispose();
+                        c.labelSprite.material.dispose();
+                    }
+                }
             });
+        }
+
+        if (this.edgeMaterial) {
+            this.edgeMaterial.dispose();
         }
 
         // Dispose of harmonics
@@ -399,7 +605,7 @@ export class TopographyEngine {
             while (this.contactGraphGroup.children.length > 0) {
                 const child = this.contactGraphGroup.children[0];
                 if (child.geometry) child.geometry.dispose();
-                if (child.material) child.material.dispose();
+                // do NOT dispose child.material if it is the shared this.edgeMaterial
                 if (typeof this.contactGraphGroup.remove === 'function') {
                     this.contactGraphGroup.remove(child);
                 } else {
@@ -412,6 +618,9 @@ export class TopographyEngine {
         if (this.renderer) {
             this.renderer.dispose();
             this.renderer.forceContextLoss();
+            if (this.renderer.domElement && this.renderer.domElement.parentNode) {
+                this.renderer.domElement.parentNode.removeChild(this.renderer.domElement);
+            }
         }
     }
 }
