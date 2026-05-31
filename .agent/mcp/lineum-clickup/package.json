@@ -1,7 +1,7 @@
 {
-  "name": "lineum-clickup-mcp",
-  "version": "1.0.0",
-  "description": "Custom stable ClickUp MCP for Lineum Dynamics",
+  "name": "lineum-clickup",
+  "version": "1.2.0",
+  "description": "Lineum custom stable ClickUp MCP wrapper",
   "main": "index.js",
   "type": "module",
   "scripts": {
