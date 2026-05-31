@@ -60,6 +60,9 @@ contract_*.txt
 debug_*.txt
 pytest_output.txt
 validation_errors.txt
+*search_*.txt
+*search*.txt
+violations.json
 
 # Portal build-time synced data
 portal/src/lib/data/ai_index.json
