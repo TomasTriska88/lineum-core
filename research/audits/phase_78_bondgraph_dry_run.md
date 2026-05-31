@@ -68,10 +68,10 @@ To establish scientific validation integrity, we address the origin, canonical s
    No. A repository-wide data discovery pass was executed for all `manifest.json` and `trajectories.json` files. No other trajectory files exist in the repository. The newest trajectory pack is `spec6_false_s41_20260310_130840` (Run 4). While newer metrics directories exist in `output_wp/runs/` (up to March 13, 2026), they do not contain raw trajectory coordinate streams (`trajectories.json`), only aggregated CSV/JSON summaries.
 
 7. **Did Phase 78 analyze all available relevant runs, or only the Lab-visible preset runs?**
-   This audit was expanded to analyze all available run directories in the repository. In total, 8 run directories were found. Of these, 7 populated trajectory runs were analyzed, and 1 empty/stub run was excluded. The audit covers 100% of populated raw trajectory datasets available in the repository. This represents a significant expansion compared to analyzing only the 4 runs visible in the Lab's Svelte manifest.
+   This audit was expanded to analyze all available run directories in the repository at audit time. In total, 8 run directories were found. Of these, 7 populated trajectory runs were analyzed, and 1 empty/stub run was excluded. The audit covered 100% of populated raw trajectory datasets available in the repository at audit time. This represented a significant expansion compared to analyzing only the 4 runs visible in the Lab's Svelte manifest.
 
 > [!NOTE]
-> **Dataset hygiene note:** The repository currently contains 8 run directories, of which 7 contain populated trajectory data and 1 is an intentional quarantine/test fixture stub. During hygiene review, three populated unregistered runs were found to be exact duplicates of each other. Phase 78 analyzed the available populated trajectory set as it existed at audit time. Future dataset cleanup should preserve at least one representative of any trajectory group used in this audit, or amend the report accordingly.
+> **Dataset hygiene note:** Dataset counts in this section describe the repository state at the time of the Phase 78 audit. A later dataset hygiene cleanup removed two unregistered exact duplicate run directories while preserving one representative duplicate-group trajectory. The audit-time metrics for the removed duplicates remain recorded in this report, but current repository replay should use the retained representative `spec6_false_s41_20260307_162450` for that duplicate group.
 
 ## 4. Threshold & Hysteresis Sweep Results (Pair-States Only)
 
