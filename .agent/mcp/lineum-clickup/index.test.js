@@ -488,9 +488,25 @@ test('delete_list tool handles delete_list tool call and hits API', async () => 
   const res = responses.find(r => r.id === 80);
   assert.ok(res);
   const content = res.result?.content?.[0]?.text ?? '';
-  // Since we pass 'test-key' as CLICKUP_API_KEY, the API call will return an error,
-  // but it proves the delete_list tool is registered and executing the API call.
   assert.ok(content.includes('ClickUp API Error') || content.includes('Unauthorized') || content.includes('API Error') || res.result?.isError === true);
 });
+
+test('delete_task tool handles delete_task tool call and hits API', async () => {
+  const messages = [
+    {
+      jsonrpc: '2.0',
+      id: 81,
+      method: 'tools/call',
+      params: { name: 'delete_task', arguments: { task_id: 'task-123' } }
+    }
+  ];
+
+  const responses = await runMcpSession(messages, 6000);
+  const res = responses.find(r => r.id === 81);
+  assert.ok(res);
+  const content = res.result?.content?.[0]?.text ?? '';
+  assert.ok(content.includes('ClickUp API Error') || content.includes('Unauthorized') || content.includes('API Error') || res.result?.isError === true);
+});
+
 
 

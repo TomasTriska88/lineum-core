@@ -173,6 +173,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             due_date: {
               type: "string",
               description: "Due date for the task as an ISO date string (YYYY-MM-DD), e.g. '2026-07-13'. Per Deadline Policy, set to the maximum legally permissible date, not an artificially compressed one."
+            },
+            parent: {
+              type: "string",
+              description: "The ID of the parent task to move this task under. Set to null to remove parent."
             }
           },
           required: ["task_id"]
@@ -376,7 +380,19 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
           required: ["list_id"]
         }
+      },
+      {
+        name: "delete_task",
+        description: "Delete an existing Task in ClickUp.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            task_id: { type: "string", description: "The ID of the ClickUp Task to delete." }
+          },
+          required: ["task_id"]
+        }
       }
+
     ]
   };
 });
@@ -457,7 +473,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 
   if (request.params.name === "update_task") {
-    let { task_id, description, status, time_estimate_hours, name, assignees_add, assignees_rem, points, dod_audit_confirmed, dob_audit_confirmed, sou_comment, due_date, dod_comment } = request.params.arguments;
+    let { task_id, description, status, time_estimate_hours, name, assignees_add, assignees_rem, points, dod_audit_confirmed, dob_audit_confirmed, sou_comment, due_date, dod_comment, parent } = request.params.arguments;
     name = normalizeText(name);
     description = normalizeText(description);
     sou_comment = normalizeText(sou_comment);
@@ -560,6 +576,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       if (assignees_rem !== undefined) updateData.assignees_rem = assignees_rem;
       if (points !== undefined) updateData.points = points;
       if (due_date !== undefined) updateData.due_date = due_date;
+      if (parent !== undefined) updateData.parent = parent;
       
       await api.updateTask(task_id, updateData);
       return {
@@ -739,6 +756,15 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       return { content: [{ type: "text", text: `List ${list_id} deleted successfully.` }] };
     } catch (e) { return { content: [{ type: "text", text: e.message }], isError: true }; }
   }
+
+  if (request.params.name === "delete_task") {
+    const { task_id } = request.params.arguments;
+    try {
+      await api.deleteTask(task_id);
+      return { content: [{ type: "text", text: `Task ${task_id} deleted successfully.` }] };
+    } catch (e) { return { content: [{ type: "text", text: e.message }], isError: true }; }
+  }
+
 
   throw new Error("Tool not found");
 });

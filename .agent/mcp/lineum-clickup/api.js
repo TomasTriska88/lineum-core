@@ -346,6 +346,17 @@ export class ClickUpAPI {
     return { success: true };
   }
 
+  async deleteTask(taskId) {
+    this.requireAuth();
+    if (!taskId) throw new Error("taskId is required");
+    const response = await fetch(`${this.baseUrl}/task/${taskId}`, {
+      method: "DELETE",
+      headers: { "Authorization": this.apiKey }
+    });
+    if (!response.ok) throw new Error(`API Error: ${await response.text()}`);
+    return { success: true };
+  }
+
   async getList(listId) {
     this.requireAuth();
     if (!listId) throw new Error("listId is required");

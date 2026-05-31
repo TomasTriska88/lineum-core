@@ -15,8 +15,8 @@ test('normalizeText unescapes literal \\n and \\t sequences sent by the MCP fram
 // causing literal \\n to be stored in ClickUp comments instead of actual newlines.
 // Fix: added `dor_comment = normalizeText(dor_comment)` in index.js create_task handler.
 test('normalizeText correctly handles multi-line DoR comment as sent by MCP framework', (t) => {
-  const rawFromMcp = '1. Assignee: Tomas Triska\\n\\n2. Research: verified.\\n\\n3. Time estimate: 2h.\\n\\n4. Priority: Urgent.\\n\\n5. Language: English.';
-  const expected   = '1. Assignee: Tomas Triska\n\n2. Research: verified.\n\n3. Time estimate: 2h.\n\n4. Priority: Urgent.\n\n5. Language: English.';
+  const rawFromMcp = '1. Assignee: Lina\\n\\n2. Research: verified.\\n\\n3. Time estimate: 2h.\\n\\n4. Priority: Urgent.\\n\\n5. Language: English.';
+  const expected   = '1. Assignee: Lina\n\n2. Research: verified.\n\n3. Time estimate: 2h.\n\n4. Priority: Urgent.\n\n5. Language: English.';
   assert.strictEqual(normalizeText(rawFromMcp), expected);
 });
 
@@ -476,5 +476,31 @@ test('deleteList sends correct payload', async () => {
   assert.strictEqual(capturedOptions.method, 'DELETE');
   assert.deepStrictEqual(res, { success: true });
 });
+
+test('deleteTask throws on missing args', async () => {
+  const api = new ClickUpAPI('fake-key');
+  await assert.rejects(() => api.deleteTask(), /taskId is required/);
+});
+
+test('deleteTask sends correct payload', async () => {
+  const api = new ClickUpAPI('fake-key');
+  let capturedUrl = null;
+  let capturedOptions = null;
+
+  global.fetch = async (url, options) => {
+    capturedUrl = url;
+    capturedOptions = options;
+    return {
+      ok: true,
+      json: async () => ({})
+    };
+  };
+
+  const res = await api.deleteTask('task-123');
+  assert.strictEqual(capturedUrl, 'https://api.clickup.com/api/v2/task/task-123');
+  assert.strictEqual(capturedOptions.method, 'DELETE');
+  assert.deepStrictEqual(res, { success: true });
+});
+
 
 
