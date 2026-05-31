@@ -206,6 +206,12 @@ def _cap_complex_magnitude_torch(z, cap):
     return z
 
 
+def _safe_angle_torch(z):
+    import torch
+    angles = torch.angle(z)
+    return torch.where(torch.isnan(angles), torch.zeros_like(angles), angles)
+
+
 def _step_numpy(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
     psi = np.asarray(state.get("psi"), dtype=np.complex128)
     phi = np.asarray(state.get("phi"), dtype=np.float64)
@@ -397,8 +403,8 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
     def compute_N(curr_psi):
         amp_c = torch.clamp(torch.abs(curr_psi), 0.0, cfg.psi_amp_cap)
         linon_eff = torch.clamp((0.03 + 0.02 * amp_c) * linons, max=10.0)
-        linon_comp = linon_eff * torch.exp(1j * torch.angle(curr_psi))
-        fluct_comp = fluct_base * torch.exp(1j * torch.angle(curr_psi))
+        linon_comp = linon_eff * torch.exp(1j * _safe_angle_torch(curr_psi))
+        fluct_comp = fluct_base * torch.exp(1j * _safe_angle_torch(curr_psi))
         
         int_term = interaction_factor * curr_psi
         int_mag_c = torch.abs(int_term)
@@ -495,8 +501,8 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
     else:
         # Standard diffusion mode
         linon_effect = torch.clamp((0.03 + 0.02 * torch.clamp(amp, min=0.0)) * linons, max=10.0)
-        linon_complex = linon_effect * torch.exp(1j * torch.angle(psi))
-        fluctuation = fluct_base * torch.exp(1j * torch.angle(psi))
+        linon_complex = linon_effect * torch.exp(1j * _safe_angle_torch(psi))
+        fluctuation = fluct_base * torch.exp(1j * _safe_angle_torch(psi))
         
         interaction_term = interaction_factor * psi
         int_mag = torch.abs(interaction_term)
