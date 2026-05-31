@@ -452,3 +452,29 @@ test('createList sends correct payload', async () => {
   assert.strictEqual(res.name, 'New List');
 });
 
+test('deleteList throws on missing args', async () => {
+  const api = new ClickUpAPI('fake-key');
+  await assert.rejects(() => api.deleteList(), /listId is required/);
+});
+
+test('deleteList sends correct payload', async () => {
+  const api = new ClickUpAPI('fake-key');
+  let capturedUrl = null;
+  let capturedOptions = null;
+
+  global.fetch = async (url, options) => {
+    capturedUrl = url;
+    capturedOptions = options;
+    return {
+      ok: true,
+      json: async () => ({})
+    };
+  };
+
+  const res = await api.deleteList('list-123');
+  assert.strictEqual(capturedUrl, 'https://api.clickup.com/api/v2/list/list-123');
+  assert.strictEqual(capturedOptions.method, 'DELETE');
+  assert.deepStrictEqual(res, { success: true });
+});
+
+

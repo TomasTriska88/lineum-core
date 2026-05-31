@@ -11,7 +11,7 @@ const api = new ClickUpAPI(process.env.CLICKUP_API_KEY);
 const server = new Server(
   {
     name: "lineum-clickup",
-    version: "1.2.0",
+    version: "1.2.1",
   },
   {
     capabilities: {
@@ -364,6 +364,17 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             name: { type: "string", description: "Name of the new list." }
           },
           required: ["folder_id", "name"]
+        }
+      },
+      {
+        name: "delete_list",
+        description: "Delete an existing List in ClickUp.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            list_id: { type: "string", description: "The ID of the ClickUp List to delete." }
+          },
+          required: ["list_id"]
         }
       }
     ]
@@ -718,6 +729,14 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     try {
       const data = await api.createList(folder_id, name);
       return { content: [{ type: "text", text: `List created. ID: ${data.id}, Name: ${data.name}` }] };
+    } catch (e) { return { content: [{ type: "text", text: e.message }], isError: true }; }
+  }
+
+  if (request.params.name === "delete_list") {
+    const { list_id } = request.params.arguments;
+    try {
+      await api.deleteList(list_id);
+      return { content: [{ type: "text", text: `List ${list_id} deleted successfully.` }] };
     } catch (e) { return { content: [{ type: "text", text: e.message }], isError: true }; }
   }
 
