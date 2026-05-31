@@ -1957,12 +1957,26 @@ Following the architectural failure of localized interfacial bonding, Phase 75 t
 **Result:**
 The implementation successfully created a single shared envelope enclosing two distinct internal identities without merging them (no cannibalism). However, because the internal Eq-12 boundaries are perfectly frictionless and incompressible, the objects deformed into elongated "pancakes" under the envelope's pressure, slipped tangentially, and separated. The strongest safe claim is: Eq-12 successor mechanics support robust objects, anisotropic contact algebra, and even shared compliant envelopes, but not persistent multi-body binding within the tested continuous PDE routes.
 
-## 117. Phase 76: BondGraph Emergent State Layer Planning Audit
+## 117. Phase 76: BondGraph Emergent State Layer Audits
 
-*Status: **PLANNING. HIGHER-LEVEL EMERGENT BOND-STATE.***
+*Status: **CLOSED. OBSERVER LAYER ONLY JUSTIFIED.***
 
-**Objective:**
-Phase 75 exhausted the continuous PDE route for confinement and multi-body chemistry. Phase 76 shifts the binding mechanism to a higher-level emergent BondGraph layer. Eq-12 remains the fundamental substrate providing robust objects, identity, anisotropic contact events, and same/opposite asymmetry. Phase 76 will test whether "bonding" must be represented as a distinct emergent state transition (a coarse-grained graph edge) between these already-formed continuous objects, rather than as another local continuum field.
+**Objective & Audit Conclusions:**
+Phase 75 exhausted the continuous PDE route for confinement and persistent multi-body binding. Phase 76 evaluated whether the post-continuum binding problem could be represented as a higher-level observer/contact graph layer. Audits of Phase 76 parameters were corrected and finalized. The analysis concluded that while a node/contact graph is fully justified as a passive diagnostic tool, an active physical BondGraph (modifying coordinates or injecting forces) is not justified by current mathematical or empirical evidence. Phase 76 closed with only passive node/contact observation justified; active BondGraph physics remained unsupported.
+
+## 118. Phase 77: ContactGraph Browser Validation & UX Stabilization
+
+*Status: **CLOSED. DIAGNOSTIC OBSERVER VALIDATED.***
+
+**Objective & Findings:**
+Phase 77 validated the ContactGraph diagnostic observer inside the real Svelte/WebGL Lab browser UI. The visualizer now dynamically renders active nodes, diagnostic candidate proximity/contact edges, proximity duration metrics, connected component counts, and warning labels to assist operator inspection. Playwright E2E browser tests successfully validated screenshot capture, auto-camera framing, shared material disposal, and browser-based visual stability. ContactGraph is validated strictly as a diagnostic observer to visualize and analyze candidate contact metrics; it does not validate or mediate physical interactions. It operates in a strictly observer-only mode; there is no PDE feedback, no force injection, and no coordinate pulling. Active physical coupling remains unsupported.
+
+## 119. Phase 78: Passive Observer-Only BondGraph FSM Evaluation
+
+*Status: **CLOSED. FSM DRY-RUN COMPLETE.***
+
+**Objective & Findings:**
+Phase 78 evaluated the passive observer-only BondGraph finite state machine (FSM) over the available pre-generated Lab preset trajectory pack. The offline FSM successfully separated pair-level states from component/global instability flags to construct a post-hoc taxonomy of slips, mergers, and decay phases. However, those preset trajectories are not a universal test of all future Eq-12 behavior. No recurrent observer hysteresis loops were detected on the available pre-generated Lab preset trajectory pack, and the FSM analysis serves as a post-hoc taxonomy only, mostly mirroring ContactGraph telemetry. The ContactGraph remains sufficient for current real-time diagnostics, but active BondGraph physics remains blocked. Broader conclusions require fresh current Eq-12 trajectory packs, as active physical coupling remains unsupported.
 
 ## 108. Phase 67: Minimal Rigid-Scaffold / Structural Registry Audit
 
