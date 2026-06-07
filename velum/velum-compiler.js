@@ -29,6 +29,20 @@ export function validateVelum(velum) {
     return errors;
   }
 
+  if (typeof velum.velum_version !== 'string' || !velum.velum_version.trim()) {
+    errors.push('Missing or invalid property: "velum_version" must be a non-empty string.');
+  } else {
+    const semverRegex = /^\d+\.\d+\.\d+$/;
+    if (!semverRegex.test(velum.velum_version)) {
+      errors.push('Property "velum_version" must match semantic versioning format (X.Y.Z).');
+    } else {
+      const [major] = velum.velum_version.split('.').map(Number);
+      if (major !== 1) {
+        errors.push(`Incompatible Velum version: compiler supports version 1.x.x, but input file requires version ${velum.velum_version}.`);
+      }
+    }
+  }
+
   if (typeof velum.name !== 'string' || !velum.name.trim()) {
     errors.push('Missing or invalid property: "name" must be a non-empty string.');
   }
@@ -189,7 +203,7 @@ export function compileToSvelte(velum) {
         htmlContent += `        {#each ${loopData} as ${itemVar}}\n`;
         if (noTranslate) {
           htmlContent += `            <svelte:element\n`;
-          htmlContent += `                this="a"\n`;
+          htmlContent += `                this={"a"}\n`;
           htmlContent += `                data-no-translate\n`;
         } else {
           htmlContent += `            <a\n`;
@@ -226,6 +240,104 @@ export function compileToSvelte(velum) {
   scriptContent += `</script>\n\n`;
 
   return `${scriptContent}${htmlContent}${styleContent}`;
+}
+
+/**
+ * Compiles Velum into Vitest unit test suite using Svelte Testing Library.
+ */
+export function compileToVitest(velum) {
+  const { name, imports = [], states = {}, helpers = [], nodes = [], paths = [] } = velum;
+  
+  const hasPageStore = imports.some(imp => imp.includes('$app/stores'));
+  const hasI18n = imports.some(imp => imp.includes('$lib/i18n'));
+  const hasParaglide = imports.some(imp => imp.includes('$lib/paraglide'));
+
+  let testCode = `import { render, fireEvent } from '@testing-library/svelte';\n`;
+  testCode += `import { describe, it, expect, vi } from 'vitest';\n`;
+  testCode += `import ${name} from '$lib/components/${name}.svelte';\n\n`;
+
+  if (hasPageStore) {
+    testCode += `vi.mock('$app/stores', () => {\n`;
+    testCode += `  return {\n`;
+    testCode += `    page: {\n`;
+    testCode += `      subscribe(run) {\n`;
+    testCode += `        run({\n`;
+    testCode += `          url: new URL('http://127.0.0.1/'),\n`;
+    testCode += `          params: {}\n`;
+    testCode += `        });\n`;
+    testCode += `        return () => {};\n`;
+    testCode += `      }\n`;
+    testCode += `    }\n`;
+    testCode += `  };\n`;
+    testCode += `});\n\n`;
+  }
+
+  if (hasI18n) {
+    testCode += `vi.mock('$lib/i18n', () => {\n`;
+    testCode += `  return {\n`;
+    testCode += `    i18n: {\n`;
+    testCode += `      resolveRoute: vi.fn((path, lang) => \`/\${lang}\${path === '/' ? '' : path}\`)\n`;
+    testCode += `    },\n`;
+    testCode += `    pathnames: {}\n`;
+    testCode += `  };\n`;
+    testCode += `});\n\n`;
+  }
+
+  if (hasParaglide) {
+    testCode += `vi.mock('$lib/paraglide/runtime.js', () => {\n`;
+    testCode += `  return {\n`;
+    testCode += `    languageTag: vi.fn(() => 'en')\n`;
+    testCode += `  };\n`;
+    testCode += `});\n\n`;
+  }
+
+  testCode += `describe('${name} Component (auto-generated from Velum)', () => {\n`;
+  testCode += `  it('renders correctly', () => {\n`;
+  testCode += `    const { container } = render(${name});\n`;
+  testCode += `    expect(container).toBeTruthy();\n`;
+  testCode += `  });\n\n`;
+
+  const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
+  const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
+  const menuNode = uiNodes.find(n => n.id.includes('MenuContainer') || n.type === 'menu_container');
+
+  if (toggleNode) {
+    testCode += `  it('renders the dropdown toggle button', () => {\n`;
+    testCode += `    const { getByRole } = render(${name});\n`;
+    testCode += `    const button = getByRole('button');\n`;
+    testCode += `    expect(button).toBeTruthy();\n`;
+    if (toggleNode.label) {
+      testCode += `    expect(button.textContent?.trim()).toBeTruthy();\n`;
+    }
+    testCode += `  });\n\n`;
+
+    if (menuNode) {
+      testCode += `  it('toggles menu visibility when clicked', async () => {\n`;
+      testCode += `    const { getByRole, container } = render(${name});\n`;
+      testCode += `    const button = getByRole('button');\n`;
+      testCode += `    \n`;
+      testCode += `    let menu = container.querySelector('.dropdown-menu');\n`;
+      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n\n`;
+      testCode += `    await fireEvent.click(button);\n`;
+      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(true);\n\n`;
+      testCode += `    await fireEvent.click(button);\n`;
+      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n`;
+      testCode += `  });\n\n`;
+
+      if (menuNode.loop_data) {
+        testCode += `  it('renders all loop list options', async () => {\n`;
+        testCode += `    const { getByRole, container } = render(${name});\n`;
+        testCode += `    const button = getByRole('button');\n`;
+        testCode += `    await fireEvent.click(button);\n\n`;
+        testCode += `    const items = container.querySelectorAll('.lang-btn');\n`;
+        testCode += `    expect(items.length).toBeGreaterThan(0);\n`;
+        testCode += `  });\n`;
+      }
+    }
+  }
+
+  testCode += `});\n`;
+  return testCode;
 }
 
 /**
@@ -446,6 +558,7 @@ export function compileToVanilla(velum) {
 // Register default target strategies
 registerTarget('svelte', compileToSvelte);
 registerTarget('vanilla', compileToVanilla);
+registerTarget('test-svelte', compileToVitest);
 
 function printUsage() {
   console.log('Velum Compiler');
@@ -496,8 +609,8 @@ async function main() {
       const ext = path.extname(inputPath);
       const dir = path.dirname(inputPath);
       const base = path.basename(inputPath, ext);
-      const outExt = target === 'svelte' ? '.svelte' : '.js';
-      outputPath = path.join(dir, `${base}Velum${outExt}`);
+      const outExt = target === 'svelte' ? '.svelte' : (target === 'test-svelte' ? '.test.ts' : '.js');
+      outputPath = path.join(dir, `${base}${target === 'test-svelte' ? '' : 'Velum'}${outExt}`);
     }
 
     console.log(`Reading Velum canvas: ${inputPath}...`);

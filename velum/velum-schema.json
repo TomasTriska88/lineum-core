@@ -4,6 +4,7 @@
   "description": "Standard schema for Velum semantic-geometric visual programming component definitions.",
   "type": "object",
   "required": [
+    "velum_version",
     "name",
     "nodes"
   ],
@@ -11,6 +12,11 @@
     "$schema": {
       "type": "string",
       "description": "Path or URL to the Velum JSON Schema file."
+    },
+    "velum_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "The Velum syntax specification version used by this canvas definition."
     },
     "name": {
       "type": "string",

@@ -1,4 +1,4 @@
-import { validateVelum, compileToSvelte, sortNodes, compileToVanilla, targetDrivers } from '../velum-compiler.js';
+import { validateVelum, compileToSvelte, sortNodes, compileToVanilla, compileToVitest, targetDrivers } from '../velum-compiler.js';
 
 const tests = [];
 
@@ -21,6 +21,7 @@ const assert = {
 
 // Mock valid Velum object matching draft-07 schema
 const createValidVelum = () => ({
+  velum_version: '1.0.0',
   name: 'TestComponent',
   imports: ['import { onMount } from "svelte";'],
   helpers: ['const limit = 100;'],
@@ -61,6 +62,30 @@ const createValidVelum = () => ({
   ],
   custom_styles: '.lang-btn { color: red; }'
 });
+
+test('Compiler rejects missing velum_version', () => {
+  const velum = createValidVelum();
+  delete velum.velum_version;
+  const errors = validateVelum(velum);
+  assert.ok(errors.length > 0, 'Should fail without velum_version');
+  assert.ok(errors.some(e => e.includes('velum_version')), 'Error should mention velum_version');
+});
+
+test('Compiler rejects invalid velum_version format', () => {
+  const velum = createValidVelum();
+  velum.velum_version = '1.0';
+  const errors = validateVelum(velum);
+  assert.ok(errors.length > 0, 'Should fail with non-semver version');
+});
+
+test('Compiler rejects incompatible major version', () => {
+  const velum = createValidVelum();
+  velum.velum_version = '2.0.0';
+  const errors = validateVelum(velum);
+  assert.ok(errors.length > 0, 'Should fail with incompatible major version');
+  assert.ok(errors.some(e => e.includes('Incompatible Velum version')), 'Error should mention compatibility');
+});
+
 
 test('Compiler Velum validation', () => {
   const velum = createValidVelum();
@@ -119,11 +144,13 @@ test('Compiler visual-geometric sorting sorts top-to-bottom and left-to-right', 
   assert.strictEqual(sorted[3].id, 'ui.NodeA', 'Should sort NodeA fourth (larger y, larger x)');
 });
 
-test('Compiler registers svelte and vanilla drivers', () => {
+test('Compiler registers svelte, vanilla and test-svelte drivers', () => {
   assert.ok(targetDrivers.svelte, 'Svelte driver should be registered');
   assert.ok(targetDrivers.vanilla, 'Vanilla driver should be registered');
+  assert.ok(targetDrivers['test-svelte'], 'Test-svelte driver should be registered');
   assert.strictEqual(targetDrivers.svelte, compileToSvelte, 'Svelte driver should match compileToSvelte');
   assert.strictEqual(targetDrivers.vanilla, compileToVanilla, 'Vanilla driver should match compileToVanilla');
+  assert.strictEqual(targetDrivers['test-svelte'], compileToVitest, 'Test-svelte driver should match compileToVitest');
 });
 
 test('Compiler vanilla driver output contains Web Component structure', () => {
@@ -136,6 +163,18 @@ test('Compiler vanilla driver output contains Web Component structure', () => {
   assert.ok(vanillaCode.includes('get isOpen()'), 'Should define getter for isOpen state');
   assert.ok(vanillaCode.includes('set isOpen(val)'), 'Should define setter for isOpen state');
   assert.ok(vanillaCode.includes('this.render()'), 'Should call render');
+});
+
+test('Compiler test-svelte driver output contains Vitest testing code', () => {
+  const velum = createValidVelum();
+  const testCode = compileToVitest(velum);
+  
+  assert.ok(testCode.includes("import { render, fireEvent } from '@testing-library/svelte'"), 'Should import Svelte Testing Library');
+  assert.ok(testCode.includes("import { describe, it, expect, vi } from 'vitest'"), 'Should import Vitest elements');
+  assert.ok(testCode.includes("describe('TestComponent Component (auto-generated from Velum)'"), 'Should declare describe block');
+  assert.ok(testCode.includes("it('renders correctly'"), 'Should declare renders correctly test');
+  assert.ok(testCode.includes("it('renders the dropdown toggle button'"), 'Should declare toggle button rendering test');
+  assert.ok(testCode.includes("it('toggles menu visibility when clicked'"), 'Should declare menu visibility toggle test');
 });
 
 // Run tests
