@@ -29,6 +29,17 @@ export function validateVelum(velum) {
     return errors;
   }
 
+  if (velum.$schema !== undefined) {
+    if (typeof velum.$schema !== 'string') {
+      errors.push('Property "$schema" must be a string.');
+    } else if (
+      !velum.$schema.endsWith('velum-schema.json') &&
+      velum.$schema !== 'https://lineum.io/schemas/velum-schema.json'
+    ) {
+      errors.push('Property "$schema" must point to a valid velum-schema.json path or URL.');
+    }
+  }
+
   if (typeof velum.velum_version !== 'string' || !velum.velum_version.trim()) {
     errors.push('Missing or invalid property: "velum_version" must be a non-empty string.');
   } else {
@@ -341,6 +352,80 @@ export function compileToVitest(velum) {
 }
 
 /**
+ * Compiles Velum into a zero-dependency vanilla JS unit test (veltest).
+ */
+export function compileToVeltest(velum, outputPath) {
+  const { name, nodes = [] } = velum;
+  
+  let importPath = `./${name}.js`;
+  if (outputPath && (outputPath.includes('tests/components') || outputPath.includes('tests\\components'))) {
+    importPath = `../../lib/components/${name}.js`;
+  }
+
+  let testCode = `// Node.js DOM mock environment helper\n`;
+  testCode += `if (typeof window === 'undefined') {\n`;
+  testCode += `  global.window = {};\n`;
+  testCode += `  global.document = {\n`;
+  testCode += `    createElement() {\n`;
+  testCode += `      return {\n`;
+  testCode += `        attachShadow() { return { innerHTML: '' }; },\n`;
+  testCode += `        setAttribute() {},\n`;
+  testCode += `        getAttribute() { return null; },\n`;
+  testCode += `        appendChild() {},\n`;
+  testCode += `        addEventListener() {},\n`;
+  testCode += `        querySelectorAll() { return []; },\n`;
+  testCode += `        querySelector() { return null; }\n`;
+  testCode += `      };\n`;
+  testCode += `    }\n`;
+  testCode += `  };\n`;
+  testCode += `  global.HTMLElement = class HTMLElement {\n`;
+  testCode += `    attachShadow() {\n`;
+  testCode += `      this.shadowRoot = {\n`;
+  testCode += `        innerHTML: '',\n`;
+  testCode += `        querySelector() { return null; },\n`;
+  testCode += `        querySelectorAll() { return []; }\n`;
+  testCode += `      };\n`;
+  testCode += `      return this.shadowRoot;\n`;
+  testCode += `    }\n`;
+  testCode += `  };\n`;
+  testCode += `  global.customElements = {\n`;
+  testCode += `    get() { return null; },\n`;
+  testCode += `    define() {}\n`;
+  testCode += `  };\n`;
+  testCode += `}\n\n`;
+
+  testCode += `import { describe, it, expect, runTests } from './veltest.js';\n`;
+  testCode += `const { ${name} } = await import('${importPath}');\n\n`;
+
+  testCode += `describe('${name} Component (veltest)', () => {\n`;
+  testCode += `  it('can instantiate component', () => {\n`;
+  testCode += `    const instance = new ${name}();\n`;
+  testCode += `    expect(instance).toBeTruthy();\n`;
+  testCode += `  });\n\n`;
+
+  const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
+  const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
+
+  if (toggleNode) {
+    testCode += `  it('has correct initial state values', () => {\n`;
+    testCode += `    const instance = new ${name}();\n`;
+    if (velum.states) {
+      Object.keys(velum.states).forEach(stateKey => {
+        const val = velum.states[stateKey];
+        const initialValue = typeof val.init === 'string' ? `"${val.init}"` : JSON.stringify(val.init);
+        testCode += `    expect(instance.${stateKey}).toBe(${initialValue});\n`;
+      });
+    }
+    testCode += `  });\n`;
+  }
+
+  testCode += `});\n\n`;
+  testCode += `runTests();\n`;
+
+  return testCode;
+}
+
+/**
  * Compiles Velum into pure Vanilla JS Web Component (Custom Element).
  */
 export function compileToVanilla(velum) {
@@ -559,6 +644,7 @@ export function compileToVanilla(velum) {
 registerTarget('svelte', compileToSvelte);
 registerTarget('vanilla', compileToVanilla);
 registerTarget('test-svelte', compileToVitest);
+registerTarget('veltest', compileToVeltest);
 
 function printUsage() {
   console.log('Velum Compiler');
@@ -609,8 +695,8 @@ async function main() {
       const ext = path.extname(inputPath);
       const dir = path.dirname(inputPath);
       const base = path.basename(inputPath, ext);
-      const outExt = target === 'svelte' ? '.svelte' : (target === 'test-svelte' ? '.test.ts' : '.js');
-      outputPath = path.join(dir, `${base}${target === 'test-svelte' ? '' : 'Velum'}${outExt}`);
+      const outExt = target === 'svelte' ? '.svelte' : (target === 'test-svelte' ? '.test.ts' : (target === 'veltest' ? '.veltest.js' : '.js'));
+      outputPath = path.join(dir, `${base}${target === 'test-svelte' || target === 'veltest' ? '' : 'Velum'}${outExt}`);
     }
 
     console.log(`Reading Velum canvas: ${inputPath}...`);
@@ -623,7 +709,7 @@ async function main() {
     }
 
     console.log(`Compiling Velum to '${target}' target: ${outputPath}...`);
-    const compiledCode = targetDrivers[target](velum);
+    const compiledCode = targetDrivers[target](velum, outputPath);
 
     fs.writeFileSync(outputPath, compiledCode, 'utf8');
     console.log(`✅ Compilation successful! Generated: ${path.basename(outputPath)}`);

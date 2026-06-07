@@ -1,4 +1,4 @@
-import { validateVelum, compileToSvelte, sortNodes, compileToVanilla, compileToVitest, targetDrivers } from '../velum-compiler.js';
+import { validateVelum, compileToSvelte, sortNodes, compileToVanilla, compileToVitest, compileToVeltest, targetDrivers } from '../velum-compiler.js';
 
 const tests = [];
 
@@ -124,7 +124,7 @@ test('Compiler respects no_translate flag in paths and generates svelte:element'
   const svelteCode = compileToSvelte(velum);
   
   assert.ok(svelteCode.includes('<svelte:element'), 'Should contain svelte:element tag');
-  assert.ok(svelteCode.includes('this="a"'), 'Should compile to this="a"');
+  assert.ok(svelteCode.includes('this={"a"}'), 'Should compile to this={"a"}');
   assert.ok(svelteCode.includes('data-no-translate'), 'Should contain data-no-translate attribute');
 });
 
@@ -144,13 +144,15 @@ test('Compiler visual-geometric sorting sorts top-to-bottom and left-to-right', 
   assert.strictEqual(sorted[3].id, 'ui.NodeA', 'Should sort NodeA fourth (larger y, larger x)');
 });
 
-test('Compiler registers svelte, vanilla and test-svelte drivers', () => {
+test('Compiler registers svelte, vanilla, test-svelte and veltest drivers', () => {
   assert.ok(targetDrivers.svelte, 'Svelte driver should be registered');
   assert.ok(targetDrivers.vanilla, 'Vanilla driver should be registered');
   assert.ok(targetDrivers['test-svelte'], 'Test-svelte driver should be registered');
+  assert.ok(targetDrivers.veltest, 'Veltest driver should be registered');
   assert.strictEqual(targetDrivers.svelte, compileToSvelte, 'Svelte driver should match compileToSvelte');
   assert.strictEqual(targetDrivers.vanilla, compileToVanilla, 'Vanilla driver should match compileToVanilla');
   assert.strictEqual(targetDrivers['test-svelte'], compileToVitest, 'Test-svelte driver should match compileToVitest');
+  assert.strictEqual(targetDrivers.veltest, compileToVeltest, 'Veltest driver should match compileToVeltest');
 });
 
 test('Compiler vanilla driver output contains Web Component structure', () => {
@@ -175,6 +177,18 @@ test('Compiler test-svelte driver output contains Vitest testing code', () => {
   assert.ok(testCode.includes("it('renders correctly'"), 'Should declare renders correctly test');
   assert.ok(testCode.includes("it('renders the dropdown toggle button'"), 'Should declare toggle button rendering test');
   assert.ok(testCode.includes("it('toggles menu visibility when clicked'"), 'Should declare menu visibility toggle test');
+});
+
+test('Compiler veltest driver output contains veltest testing code', () => {
+  const velum = createValidVelum();
+  const testCode = compileToVeltest(velum);
+  
+  assert.ok(testCode.includes("import { describe, it, expect, runTests } from './veltest.js'"), 'Should import veltest runner');
+  assert.ok(testCode.includes("const { TestComponent } = await import('./TestComponent.js')"), 'Should import Vanilla Custom Element');
+  assert.ok(testCode.includes("describe('TestComponent Component (veltest)'"), 'Should declare describe block');
+  assert.ok(testCode.includes("it('can instantiate component'"), 'Should declare instantiation test');
+  assert.ok(testCode.includes("it('has correct initial state values'"), 'Should declare state initialization test');
+  assert.ok(testCode.includes("runTests()"), 'Should run tests');
 });
 
 // Run tests
