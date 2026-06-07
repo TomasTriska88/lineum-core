@@ -10,7 +10,10 @@ export function checkFile(filePath) {
 
     lines.forEach((line, index) => {
         // Safe words whitelist
-        let sanitizedLine = line.replace(/Čeština/g, '');
+        let sanitizedLine = line
+            .replace(/Čeština/g, '')
+            .replace(/Tomáš Tříska/g, '')
+            .replace(/Lineum Dynamics s.r.o./g, '');
 
         if (CZECH_CHARS.test(sanitizedLine)) {
             console.error(`Czech character found in ${filePath}:${index + 1}:`);

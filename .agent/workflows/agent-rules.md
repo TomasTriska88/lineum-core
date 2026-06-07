@@ -50,3 +50,8 @@ These rules are absolutely binding for any agent operating within this project.
    - If the agent writes an empirical conclusion into a whitepaper (e.g., "The node survives" or "Equation X fails"), the agent **MUST immediately append a localized Reproduction Block** directly beneath it.
    - This block must explicitly list the absolute floating-point parameters used (`alpha=1.0`, `lam=0.01`, etc.), the explicit mathematical formula evaluated, and the exact spatial/temporal integration limits (`N=64`, `dt=0.04`, `steps=10000`).
    - A claim without a directly attached reproduction matrix is considered a "fairy tale" and is invalid. Ensure any future AI can instantly reconstruct the environment reading only the whitepaper.
+
+10. **RULE OF ENGLISH-ONLY CODE COMMENTS & LOGS**
+    - All code comments, variable names, console log statements, error messages, and documentation in source files (`.js`, `.ts`, `.svelte`, `.py`, `.lta`, etc.) MUST be written in English.
+    - No Czech diacritics or words are allowed in source code comments or logs (e.g., do not write 'sémanticko-geometrické' or 'plátno' inside source code).
+    - The only exceptions are user-visible localized UI label strings and translation files (e.g., `messages/*.json`), which are excluded by the pre-commit configuration.

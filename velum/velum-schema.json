@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Velum Specification",
+  "description": "Standard schema for Velum semantic-geometric visual programming component definitions.",
+  "type": "object",
+  "required": [
+    "name",
+    "nodes"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path or URL to the Velum JSON Schema file."
+    },
+    "name": {
+      "type": "string",
+      "description": "Unique name/class of the Velum component."
+    },
+    "imports": {
+      "type": "array",
+      "description": "List of ES module import statements required by the Svelte component.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "helpers": {
+      "type": "array",
+      "description": "Constants, functions, or derived states used within the script section.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "states": {
+      "type": "object",
+      "description": "Reactive state variables. Generates Svelte 5 state bindings.",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "init"
+        ],
+        "properties": {
+          "init": {
+            "description": "Initial value for the state variable."
+          }
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "description": "Visual and functional canvas nodes sorted and parsed into HTML structures.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "pos",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique node ID starting with its layer prefix (ui., db., net.)."
+          },
+          "pos": {
+            "type": "array",
+            "description": "2D [x, y] coordinates on the visual canvas.",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          },
+          "type": {
+            "type": "string",
+            "description": "Functional type (e.g. dropdown_toggle, menu_container, state_node)."
+          },
+          "label": {
+            "type": "string",
+            "description": "Static display label text."
+          },
+          "label_binding": {
+            "type": "string",
+            "description": "Dynamic/reactive text binding expression."
+          },
+          "show_condition": {
+            "type": "string",
+            "description": "Boolean condition mapping node visibility."
+          },
+          "loop_data": {
+            "type": "string",
+            "description": "Collection expression for loops (creates {#each} wrapper)."
+          },
+          "loop_item": {
+            "type": "string",
+            "description": "Loop item variable name (defaults to 'item')."
+          },
+          "active_condition": {
+            "type": "string",
+            "description": "Expression determining active highlights."
+          },
+          "default_href": {
+            "type": "string",
+            "description": "Default anchor fallback href link."
+          },
+          "no_translate": {
+            "type": "boolean",
+            "description": "Bypass Paraglide auto-translation on generated anchor tag."
+          }
+        }
+      }
+    },
+    "paths": {
+      "type": "array",
+      "description": "Directional lines/arrows linking user actions to database state updates or routing flows.",
+      "items": {
+        "type": "object",
+        "required": [
+          "from"
+        ],
+        "properties": {
+          "from": {
+            "type": "string",
+            "description": "Origin node ID."
+          },
+          "to": {
+            "type": "string",
+            "description": "Destination target node ID."
+          },
+          "action": {
+            "type": "string",
+            "description": "Trigger event (e.g. click, hover)."
+          },
+          "flow": {
+            "type": "string",
+            "description": "Logic/data routing flow (e.g. resolve_route)."
+          },
+          "handler": {
+            "type": "string",
+            "description": "Handler expression or function logic."
+          },
+          "href_binding": {
+            "type": "string",
+            "description": "Anchor route target expression."
+          }
+        }
+      }
+    },
+    "custom_styles": {
+      "type": "string",
+      "description": "Raw CSS styles injected into the Svelte style block."
+    }
+  }
+}

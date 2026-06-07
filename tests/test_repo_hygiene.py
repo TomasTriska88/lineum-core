@@ -103,3 +103,25 @@ def test_no_duplicate_whitepaper_numbers():
                 if num in seen_numbers:
                     assert False, f"DUPLICATE WHITEPAPER NUMBER DETECTED in {category_dir.name}: #{num}\nFiles: {seen_numbers[num]} AND {name}"
                 seen_numbers[num] = name
+
+def test_no_absolute_paths_in_markdown():
+    """Ensures that no markdown files contain local absolute paths (e.g. file:///, C:/Users, c:/Projects)."""
+    root = Path(__file__).resolve().parent.parent
+    violations = []
+    
+    for md_file in root.rglob("*.md"):
+        # Skip package environments, hidden directories, historical research audits, and agent instructions
+        if any(part in md_file.parts for part in ["node_modules", ".venv", ".git", ".scratch", "tmp", "audits", ".agent"]):
+            continue
+        try:
+            content = md_file.read_text(encoding="utf-8")
+            if "file:///" in content or "C:/Users" in content or "c:/Projects" in content:
+                lines = content.splitlines()
+                for idx, line in enumerate(lines):
+                    if "file:///" in line or "C:/Users" in line or "c:/Projects" in line:
+                        violations.append(f"{md_file.relative_to(root)}:{idx+1} -> {line.strip()}")
+        except Exception:
+            pass
+            
+    assert not violations, f"Found absolute local paths or file:/// links in markdown files:\n" + "\n".join(violations)
+

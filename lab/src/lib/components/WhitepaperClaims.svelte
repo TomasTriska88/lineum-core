@@ -809,7 +809,7 @@ F) AUTOMATION ROUTING
             </CollapsibleBox>
         {/if}
 
-        <!-- Vyjmutý CollapsibleBox volně v parent divu -->
+        <!-- Extracted CollapsibleBox loosely in parent div -->
         <CollapsibleBox
             title={$t('claims.filter_claims')}
             badgeText={hasActiveFilters ? $t('claims.showing_x_claims').replace('{count}', filteredClaims.length.toString()) : ""}
