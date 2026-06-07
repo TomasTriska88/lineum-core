@@ -9,3 +9,8 @@ repos:
         files: \.(sh|php|py)$
         # If you need an exception for a specific file in the future, add it here (separated by |)
         exclude: ^(tests/some-allowed-file\.py)$
+      - id: check-no-absolute-paths
+        name: Check for local absolute file paths in markdown
+        entry: "(file:///|C:/Users|c:/Projects)"
+        language: pygrep
+        files: \.md$

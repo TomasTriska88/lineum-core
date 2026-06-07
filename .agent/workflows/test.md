@@ -20,13 +20,20 @@ Located in the `portal/` directory. Tests cover Wiki loaders, metadata extractio
 
 > [!IMPORTANT]
 > **Playwright E2E tests (`npm run test:e2e`) are now fully automated in GitHub Actions CI**.
-> They will run against a headless Chromium browser instance upon every Push/PR to the `main` branch. If the E2E tests fail, the deployment to production is automatically aborted. You should run them locally before pushing if you made significant UI changes.
+> They will run against a headless Chromium browser instance upon every Push/PR to the `main` branch. If the E2E tests fail, the deployment to production is automatically aborted.
+> 
+> **CRITICAL DEV EFFICIENCY RULE:** Running the entire test suite (`npm run test:e2e`) is heavy and wastes CPU/time. During active local development, **NEVER** run the full E2E suite. Always run targeted tests by specifying the file path (e.g. using `npx` with file path):
+> ```bash
+> npx playwright test src/tests/e2e/evolution.spec.ts
+> ```
+> Use targeted runs for validation and only run the full E2E suite before final pull requests/releases.
 
 // turbo
 ```bash
 cd portal
 npm run test
-npm run test:e2e
+# Run targeted test instead of full test:e2e
+npx playwright test src/tests/e2e/your-test.spec.ts
 ```
 
 ## 3. Simulacrum (Lab)

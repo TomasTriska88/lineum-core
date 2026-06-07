@@ -27,7 +27,7 @@ A Lineum-based AI is not composed of interconnected nodes. It is a bounded geome
 **How it "Thinks" without Code:**
 Because the Lineum equation biologically resists entropy (via the Reaction term $R \cdot \Psi(1-\Psi)$ vs. Dissipation $\gamma$), the chaotic waves inside the reservoir naturally seek the lowest energy state (Phase Resonance). By pulsing inputs into the reservoir and reading the output, the fluid dynamics of the $\Psi$ field *automatically* compute complex non-linear transformations of the input data—without a single line of traditional backpropagation code.
 
-![Concept Art of the Reservoir Chip](file:///C:/Users/Tom%C3%A1%C5%A1/.gemini/antigravity/brain/48e6c21d-87d9-4448-ac46-4d6f7461264f/lineum_reservoir_chip_1771902533031.png)
+![Concept Art of the Reservoir Chip](../../assets/lineum_reservoir_chip_1771902533031.png)
 
 ### 3. Comparison to Modern Systems (GPUs / LLMs)
 

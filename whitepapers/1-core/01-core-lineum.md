@@ -62,7 +62,7 @@ Lineum is a minimal discrete coupled-field model defined by a local update rule 
 
 The system evolves according to a coupled three-field update rule (see [Equation (1)](#eq1) (Version 4) in Section 3), which governs the primary field ψ, the interaction field φ, and the spatial tuning map κ.
 
-**Terminology.** We use **linon** to denote a **stable, localized excitation** of |ψ|² (a quasi-particle analogue emergent from the Lineum rule). It is **not** a fundamental particle. On first mention we may write “linon (localized excitation)”; thereafter we use **linon**.
+**Terminology.** We use **linon** to denote a **stable, localized excitation** of |ψ|² (a quasi-particle analogue emergent from the Lineum rule). It is **not** a fundamental particle. On first mention we may write “linon (localized excitation)”; thereafter we use **linon**. When discussing the first, solitary linon nucleated directly from vacuum fluctuations before symmetry breaking or swarm expansion, we refer to it specifically as the **primordial linon**.
 
 **Pronunciation (model name).** _Lineum_ = Czech **/ˈlɪ.nɛ.um/** (short **i**, three syllables: “**LIH-neh-oom**”, stress on the first).  
 For readers in English: **/ˈlɪniəm/** (UK/US ≈ “**LIH-nee-um**”).  
