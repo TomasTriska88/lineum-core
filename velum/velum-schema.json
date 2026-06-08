@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Velum Specification",
   "description": "Standard schema for Velum semantic-geometric visual programming component definitions.",
+  "version": "1.0.1",
   "type": "object",
   "required": [
     "velum_version",
@@ -17,6 +18,16 @@
       "type": "string",
       "pattern": "^\\d+\\.\\d+\\.\\d+$",
       "description": "The Velum syntax specification version used by this canvas definition."
+    },
+    "target": {
+      "type": "string",
+      "enum": [
+        "svelte",
+        "vanilla",
+        "test-svelte",
+        "veltest"
+      ],
+      "description": "The default compilation target for this Velum file."
     },
     "name": {
       "type": "string",
@@ -153,6 +164,70 @@
     "custom_styles": {
       "type": "string",
       "description": "Raw CSS styles injected into the Svelte style block."
+    },
+    "tests": {
+      "type": "array",
+      "description": "List of test cases to verify the component's functionality.",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "steps"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The description/name of the test case."
+          },
+          "steps": {
+            "type": "array",
+            "description": "The sequence of actions and assertions to perform in this test case.",
+            "items": {
+              "type": "object",
+              "required": [
+                "type"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "assert_exists",
+                    "assert_truthy",
+                    "assert_class",
+                    "assert_count",
+                    "click"
+                  ],
+                  "description": "The type of action or assertion."
+                },
+                "target": {
+                  "type": "string",
+                  "description": "The DOM selector or property target (e.g. 'button', 'container', '.lang-btn')."
+                },
+                "class": {
+                  "type": "string",
+                  "description": "The class name to verify (required for assert_class)."
+                },
+                "exists": {
+                  "type": "boolean",
+                  "description": "Whether the class is expected to exist or not (required for assert_class)."
+                },
+                "operator": {
+                  "type": "string",
+                  "enum": [
+                    "greaterthan",
+                    "lessthan",
+                    "toBe"
+                  ],
+                  "description": "The operator for count assertion."
+                },
+                "value": {
+                  "description": "The value to compare against."
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

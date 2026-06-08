@@ -183,12 +183,30 @@ test('Compiler veltest driver output contains veltest testing code', () => {
   const velum = createValidVelum();
   const testCode = compileToVeltest(velum);
   
-  assert.ok(testCode.includes("import { describe, it, expect, runTests } from './veltest.js'"), 'Should import veltest runner');
+  assert.ok(testCode.includes("import { suite, test, expect, run } from './veltest.js';"), 'Should import veltest runner');
   assert.ok(testCode.includes("const { TestComponent } = await import('./TestComponent.js')"), 'Should import Vanilla Custom Element');
-  assert.ok(testCode.includes("describe('TestComponent Component (veltest)'"), 'Should declare describe block');
-  assert.ok(testCode.includes("it('can instantiate component'"), 'Should declare instantiation test');
-  assert.ok(testCode.includes("it('has correct initial state values'"), 'Should declare state initialization test');
-  assert.ok(testCode.includes("runTests()"), 'Should run tests');
+  assert.ok(testCode.includes("suite('TestComponent Component (veltest)');"), 'Should declare suite');
+  assert.ok(testCode.includes("test('can instantiate component'"), 'Should declare instantiation test');
+  assert.ok(testCode.includes("test('has correct initial state values'"), 'Should declare state initialization test');
+  assert.ok(testCode.includes("run();"), 'Should run tests');
+});
+
+test('Compiler compiles custom tests dynamically if provided', () => {
+  const velum = createValidVelum();
+  velum.tests = [
+    {
+      name: 'should click a button',
+      steps: [
+        { type: 'click', target: '.my-btn' },
+        { type: 'assert_class', target: '.panel', class: 'active', exists: true }
+      ]
+    }
+  ];
+  
+  const testCode = compileToVeltest(velum);
+  assert.ok(testCode.includes("test('should click a button'"), 'Should contain custom test name');
+  assert.ok(testCode.includes("instance.shadowRoot.querySelector('.my-btn')"), 'Should query custom button');
+  assert.ok(testCode.includes("classList.contains('active')"), 'Should check class active');
 });
 
 // Run tests

@@ -4,6 +4,8 @@
  * Converts semantic-geometric Velum canvas (.velum JSON) into a Svelte component or Vanilla Custom Element.
  */
 
+export const COMPILER_VERSION = '1.0.1';
+
 // Target compilation registry (Strategy Pattern)
 export const targetDrivers = {};
 
@@ -48,8 +50,9 @@ export function validateVelum(velum) {
       errors.push('Property "velum_version" must match semantic versioning format (X.Y.Z).');
     } else {
       const [major] = velum.velum_version.split('.').map(Number);
-      if (major !== 1) {
-        errors.push(`Incompatible Velum version: compiler supports version 1.x.x, but input file requires version ${velum.velum_version}.`);
+      const [compilerMajor] = COMPILER_VERSION.split('.').map(Number);
+      if (major !== compilerMajor) {
+        errors.push(`Incompatible Velum version: compiler supports version ${compilerMajor}.x.x, but input file requires version ${velum.velum_version}.`);
       }
     }
   }
@@ -303,46 +306,92 @@ export function compileToVitest(velum) {
   }
 
   testCode += `describe('${name} Component (auto-generated from Velum)', () => {\n`;
-  testCode += `  it('renders correctly', () => {\n`;
-  testCode += `    const { container } = render(${name});\n`;
-  testCode += `    expect(container).toBeTruthy();\n`;
-  testCode += `  });\n\n`;
-
-  const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
-  const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
-  const menuNode = uiNodes.find(n => n.id.includes('MenuContainer') || n.type === 'menu_container');
-
-  if (toggleNode) {
-    testCode += `  it('renders the dropdown toggle button', () => {\n`;
-    testCode += `    const { getByRole } = render(${name});\n`;
-    testCode += `    const button = getByRole('button');\n`;
-    testCode += `    expect(button).toBeTruthy();\n`;
-    if (toggleNode.label) {
-      testCode += `    expect(button.textContent?.trim()).toBeTruthy();\n`;
-    }
+  if (velum.tests && Array.isArray(velum.tests)) {
+    velum.tests.forEach(tc => {
+      const hasClick = tc.steps.some(s => s.type === 'click');
+      const asyncStr = hasClick ? 'async ' : '';
+      
+      testCode += `  it('${tc.name.replace(/'/g, "\\'")}', ${asyncStr}() => {\n`;
+      testCode += `    const { container, getByRole } = render(${name});\n`;
+      
+      tc.steps.forEach(step => {
+        if (step.type === 'assert_exists') {
+          if (step.target === 'container') {
+            testCode += `    expect(container).toBeTruthy();\n`;
+          } else if (step.target === 'button' || step.target === '.lang-toggle') {
+            testCode += `    expect(container.querySelector('button') || container.querySelector('.lang-toggle') || getByRole('button')).toBeTruthy();\n`;
+          } else {
+            testCode += `    expect(container.querySelector('${step.target}')).toBeTruthy();\n`;
+          }
+        } else if (step.type === 'assert_truthy') {
+          if (step.target.endsWith('.textContent')) {
+            const targetEl = step.target.replace('.textContent', '');
+            if (targetEl === 'button' || targetEl === '.lang-toggle') {
+              testCode += `    expect((container.querySelector('button') || container.querySelector('.lang-toggle') || getByRole('button'))?.textContent?.trim()).toBeTruthy();\n`;
+            } else {
+              testCode += `    expect(container.querySelector('${targetEl}')?.textContent?.trim()).toBeTruthy();\n`;
+            }
+          } else {
+            testCode += `    expect(${step.target}).toBeTruthy();\n`;
+          }
+        } else if (step.type === 'assert_class') {
+          const expected = step.exists === false ? 'toBe(false)' : 'toBe(true)';
+          testCode += `    expect(container.querySelector('${step.target}')?.classList.contains('${step.class}')).${expected};\n`;
+        } else if (step.type === 'click') {
+          if (step.target === 'button' || step.target === '.lang-toggle') {
+            testCode += `    await fireEvent.click(container.querySelector('button') || container.querySelector('.lang-toggle') || getByRole('button'));\n`;
+          } else {
+            testCode += `    await fireEvent.click(container.querySelector('${step.target}'));\n`;
+          }
+        } else if (step.type === 'assert_count') {
+          const op = step.operator === 'greaterthan' ? 'toBeGreaterThan' : (step.operator === 'lessthan' ? 'toBeLessThan' : 'toBe');
+          testCode += `    expect(container.querySelectorAll('${step.target}').length).${op}(${step.value});\n`;
+        }
+      });
+      testCode += `  });\n\n`;
+    });
+  } else {
+    testCode += `  it('renders correctly', () => {\n`;
+    testCode += `    const { container } = render(${name});\n`;
+    testCode += `    expect(container).toBeTruthy();\n`;
     testCode += `  });\n\n`;
 
-    if (menuNode) {
-      testCode += `  it('toggles menu visibility when clicked', async () => {\n`;
-      testCode += `    const { getByRole, container } = render(${name});\n`;
+    const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
+    const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
+    const menuNode = uiNodes.find(n => n.id.includes('MenuContainer') || n.type === 'menu_container');
+
+    if (toggleNode) {
+      testCode += `  it('renders the dropdown toggle button', () => {\n`;
+      testCode += `    const { getByRole } = render(${name});\n`;
       testCode += `    const button = getByRole('button');\n`;
-      testCode += `    \n`;
-      testCode += `    let menu = container.querySelector('.dropdown-menu');\n`;
-      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n\n`;
-      testCode += `    await fireEvent.click(button);\n`;
-      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(true);\n\n`;
-      testCode += `    await fireEvent.click(button);\n`;
-      testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n`;
+      testCode += `    expect(button).toBeTruthy();\n`;
+      if (toggleNode.label) {
+        testCode += `    expect(button.textContent?.trim()).toBeTruthy();\n`;
+      }
       testCode += `  });\n\n`;
 
-      if (menuNode.loop_data) {
-        testCode += `  it('renders all loop list options', async () => {\n`;
+      if (menuNode) {
+        testCode += `  it('toggles menu visibility when clicked', async () => {\n`;
         testCode += `    const { getByRole, container } = render(${name});\n`;
         testCode += `    const button = getByRole('button');\n`;
-        testCode += `    await fireEvent.click(button);\n\n`;
-        testCode += `    const items = container.querySelectorAll('.lang-btn');\n`;
-        testCode += `    expect(items.length).toBeGreaterThan(0);\n`;
-        testCode += `  });\n`;
+        testCode += `    \n`;
+        testCode += `    let menu = container.querySelector('.dropdown-menu');\n`;
+        testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n\n`;
+        testCode += `    await fireEvent.click(button);\n`;
+        testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(true);\n\n`;
+        testCode += `    await fireEvent.click(button);\n`;
+        testCode += `    expect(menu?.classList.contains('mobile-open')).toBe(false);\n`;
+        testCode += `  });\n\n`;
+
+        if (menuNode.loop_data) {
+          testCode += `  it('renders all loop list options', async () => {\n`;
+          testCode += `    const { getByRole, container } = render(${name});\n`;
+          testCode += `    const button = getByRole('button');\n`;
+          testCode += `    await fireEvent.click(button);\n\n`;
+          testCode += `    const items = container.querySelectorAll('.lang-btn');\n`;
+          testCode += `    expect(items.length).toBeGreaterThan(0);\n`;
+          testCode += `  });\n`;
+        }
       }
     }
   }
@@ -362,65 +411,104 @@ export function compileToVeltest(velum, outputPath) {
     importPath = `../../lib/components/${name}.js`;
   }
 
-  let testCode = `// Node.js DOM mock environment helper\n`;
-  testCode += `if (typeof window === 'undefined') {\n`;
-  testCode += `  global.window = {};\n`;
-  testCode += `  global.document = {\n`;
-  testCode += `    createElement() {\n`;
-  testCode += `      return {\n`;
-  testCode += `        attachShadow() { return { innerHTML: '' }; },\n`;
-  testCode += `        setAttribute() {},\n`;
-  testCode += `        getAttribute() { return null; },\n`;
-  testCode += `        appendChild() {},\n`;
-  testCode += `        addEventListener() {},\n`;
-  testCode += `        querySelectorAll() { return []; },\n`;
-  testCode += `        querySelector() { return null; }\n`;
-  testCode += `      };\n`;
-  testCode += `    }\n`;
-  testCode += `  };\n`;
-  testCode += `  global.HTMLElement = class HTMLElement {\n`;
-  testCode += `    attachShadow() {\n`;
-  testCode += `      this.shadowRoot = {\n`;
-  testCode += `        innerHTML: '',\n`;
-  testCode += `        querySelector() { return null; },\n`;
-  testCode += `        querySelectorAll() { return []; }\n`;
-  testCode += `      };\n`;
-  testCode += `      return this.shadowRoot;\n`;
-  testCode += `    }\n`;
-  testCode += `  };\n`;
-  testCode += `  global.customElements = {\n`;
-  testCode += `    get() { return null; },\n`;
-  testCode += `    define() {}\n`;
-  testCode += `  };\n`;
-  testCode += `}\n\n`;
-
-  testCode += `import { describe, it, expect, runTests } from './veltest.js';\n`;
+  let testCode = `import { suite, test, expect, run } from './veltest.js';\n`;
   testCode += `const { ${name} } = await import('${importPath}');\n\n`;
 
-  testCode += `describe('${name} Component (veltest)', () => {\n`;
-  testCode += `  it('can instantiate component', () => {\n`;
-  testCode += `    const instance = new ${name}();\n`;
-  testCode += `    expect(instance).toBeTruthy();\n`;
-  testCode += `  });\n\n`;
+  testCode += `suite('${name} Component (veltest)');\n\n`;
 
-  const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
-  const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
-
-  if (toggleNode) {
-    testCode += `  it('has correct initial state values', () => {\n`;
-    testCode += `    const instance = new ${name}();\n`;
-    if (velum.states) {
-      Object.keys(velum.states).forEach(stateKey => {
-        const val = velum.states[stateKey];
-        const initialValue = typeof val.init === 'string' ? `"${val.init}"` : JSON.stringify(val.init);
-        testCode += `    expect(instance.${stateKey}).toBe(${initialValue});\n`;
+  if (velum.tests && Array.isArray(velum.tests)) {
+    velum.tests.forEach(tc => {
+      testCode += `test('${tc.name.replace(/'/g, "\\'")}', () => {\n`;
+      testCode += `  const instance = new ${name}();\n`;
+      
+      const needsConnected = tc.steps.some(s => s.type === 'click' || (s.type === 'assert_exists' && s.target !== 'container' && s.target !== 'instance') || s.type === 'assert_class' || s.type === 'assert_count' || (s.type === 'assert_truthy' && s.target.startsWith('button')));
+      if (needsConnected) {
+        testCode += `  instance.connectedCallback();\n`;
+      }
+      
+      tc.steps.forEach(step => {
+        if (step.type === 'assert_exists') {
+          if (step.target === 'container' || step.target === 'instance') {
+            testCode += `  expect(instance).toBeTruthy();\n`;
+          } else if (step.target === 'button' || step.target === '.lang-toggle') {
+            testCode += `  expect(instance.shadowRoot.querySelector('button') || instance.shadowRoot.querySelector('.lang-toggle')).toBeTruthy();\n`;
+          } else {
+            testCode += `  expect(instance.shadowRoot.querySelector('${step.target}')).toBeTruthy();\n`;
+          }
+        } else if (step.type === 'assert_truthy') {
+          if (step.target.endsWith('.textContent')) {
+            const targetEl = step.target.replace('.textContent', '');
+            if (targetEl === 'button' || targetEl === '.lang-toggle') {
+              testCode += `  expect((instance.shadowRoot.querySelector('button') || instance.shadowRoot.querySelector('.lang-toggle'))?.textContent?.trim()).toBeTruthy();\n`;
+            } else {
+              testCode += `  expect(instance.shadowRoot.querySelector('${targetEl}')?.textContent?.trim()).toBeTruthy();\n`;
+            }
+          } else {
+            testCode += `  expect(${step.target}).toBeTruthy();\n`;
+          }
+        } else if (step.type === 'assert_class') {
+          const expected = step.exists === false ? 'toBe(false)' : 'toBe(true)';
+          testCode += `  expect(instance.shadowRoot.querySelector('${step.target}')?.classList.contains('${step.class}')).${expected};\n`;
+        } else if (step.type === 'click') {
+          if (step.target === 'button' || step.target === '.lang-toggle') {
+            testCode += `  (instance.shadowRoot.querySelector('button') || instance.shadowRoot.querySelector('.lang-toggle'))?.click();\n`;
+          } else {
+            testCode += `  instance.shadowRoot.querySelector('${step.target}')?.click();\n`;
+          }
+        } else if (step.type === 'assert_count') {
+          const op = step.operator === 'greaterthan' ? 'toBeGreaterThan' : (step.operator === 'lessthan' ? 'toBeLessThan' : 'toBe');
+          testCode += `  expect(instance.shadowRoot.querySelectorAll('${step.target}').length).${op}(${step.value});\n`;
+        }
       });
+      testCode += `});\n\n`;
+    });
+  } else {
+    testCode += `test('can instantiate component', () => {\n`;
+    testCode += `  const instance = new ${name}();\n`;
+    testCode += `  expect(instance).toBeTruthy();\n`;
+    testCode += `});\n\n`;
+
+    const uiNodes = sortNodes(nodes.filter(n => n.id.startsWith('ui.')));
+    const toggleNode = uiNodes.find(n => n.id.includes('DropdownToggle') || n.type === 'dropdown_toggle');
+    const menuNode = uiNodes.find(n => n.id.includes('MenuContainer') || n.type === 'menu_container');
+
+    if (toggleNode) {
+      testCode += `test('has correct initial state values', () => {\n`;
+      testCode += `  const instance = new ${name}();\n`;
+      if (velum.states) {
+        Object.keys(velum.states).forEach(stateKey => {
+          const val = velum.states[stateKey];
+          const initialValue = typeof val.init === 'string' ? `"${val.init}"` : JSON.stringify(val.init);
+          testCode += `  expect(instance.${stateKey}).toBe(${initialValue});\n`;
+        });
+      }
+      testCode += `});\n\n`;
+
+      if (menuNode) {
+        testCode += `test('toggles menu visibility when clicked', () => {\n`;
+        testCode += `  const instance = new ${name}();\n`;
+        testCode += `  instance.connectedCallback();\n`;
+        testCode += `  const button = instance.shadowRoot.querySelector('.lang-toggle');\n`;
+        testCode += `  expect(instance.devToolsOpen).toBe(false);\n\n`;
+        testCode += `  button.click();\n`;
+        testCode += `  expect(instance.devToolsOpen).toBe(true);\n\n`;
+        testCode += `  button.click();\n`;
+        testCode += `  expect(instance.devToolsOpen).toBe(false);\n`;
+        testCode += `});\n\n`;
+
+        if (menuNode.loop_data) {
+          testCode += `test('renders all loop list options', () => {\n`;
+          testCode += `  const instance = new ${name}();\n`;
+          testCode += `  instance.connectedCallback();\n`;
+          testCode += `  const items = instance.shadowRoot.querySelectorAll('.lang-btn');\n`;
+          testCode += `  expect(items.length).toBeGreaterThan(0);\n`;
+          testCode += `});\n`;
+        }
+      }
     }
-    testCode += `  });\n`;
   }
 
-  testCode += `});\n\n`;
-  testCode += `runTests();\n`;
+  testCode += `\nrun();\n`;
 
   return testCode;
 }
@@ -649,18 +737,139 @@ registerTarget('veltest', compileToVeltest);
 function printUsage() {
   console.log('Velum Compiler');
   console.log('Usage: node velum-compiler.js <input_file.velum> [output_file.js] [--target <target>]');
+  console.log('       node velum-compiler.js --bump [patch|minor|major]');
+}
+
+async function syncSchemaToPortal(__dirname, schemaContent) {
+  const fs = await import('fs');
+  const path = await import('path');
+
+  const possiblePaths = [
+    path.resolve(__dirname, '../portal/static/schemas'),
+    path.resolve(__dirname, '../../lineum-dynamics/portal/static/schemas'),
+    path.resolve(process.cwd(), 'portal/static/schemas'),
+    path.resolve(process.cwd(), '../lineum-dynamics/portal/static/schemas')
+  ];
+
+  let synced = false;
+  for (const dir of possiblePaths) {
+    try {
+      const parentDir = path.dirname(dir);
+      if (fs.existsSync(parentDir) && fs.statSync(parentDir).isDirectory()) {
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir, { recursive: true });
+        }
+        const targetFile = path.join(dir, 'velum-schema.json');
+        fs.writeFileSync(targetFile, schemaContent, 'utf8');
+        console.log(`✨ Automatically synced schema to portal assets: ${targetFile}`);
+        synced = true;
+      }
+    } catch (e) {
+      // Ignore
+    }
+  }
+  return synced;
+}
+
+async function bumpVersion(bumpType) {
+  const fs = await import('fs');
+  const path = await import('path');
+  const { fileURLToPath } = await import('url');
+
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+
+  const schemaPath = path.join(__dirname, 'velum-schema.json');
+  if (!fs.existsSync(schemaPath)) {
+    console.error(`Error: Schema file not found at ${schemaPath}`);
+    process.exit(1);
+  }
+
+  const schemaContent = fs.readFileSync(schemaPath, 'utf8');
+  const schema = JSON.parse(schemaContent);
+  const currentVersion = schema.version || '1.0.0';
+
+  const parts = currentVersion.split('.').map(Number);
+  if (parts.some(isNaN) || parts.length !== 3) {
+    console.error(`Error: Invalid version format in schema: ${currentVersion}`);
+    process.exit(1);
+  }
+
+  if (bumpType === 'major') {
+    parts[0]++;
+    parts[1] = 0;
+    parts[2] = 0;
+  } else if (bumpType === 'minor') {
+    parts[1]++;
+    parts[2] = 0;
+  } else {
+    parts[2]++;
+  }
+  const newVersion = parts.join('.');
+  console.log(`Bumping version from ${currentVersion} to ${newVersion} (${bumpType})...`);
+
+  // 1. Update Schema
+  schema.version = newVersion;
+  const newSchemaContent = JSON.stringify(schema, null, 2) + '\n';
+  fs.writeFileSync(schemaPath, newSchemaContent, 'utf8');
+  console.log(`✔ Updated schema version to ${newVersion} in: ${schemaPath}`);
+
+  // 2. Update Compiler constant
+  const compilerPath = __filename;
+  const compilerContent = fs.readFileSync(compilerPath, 'utf8');
+  const updatedCompilerContent = compilerContent.replace(
+    /export const COMPILER_VERSION = '\d+\.\d+\.\d+';/,
+    `export const COMPILER_VERSION = '${newVersion}';`
+  );
+  fs.writeFileSync(compilerPath, updatedCompilerContent, 'utf8');
+  console.log(`✔ Updated COMPILER_VERSION constant to ${newVersion} in: ${compilerPath}`);
+
+  // 3. Sync to Portal static schemas
+  await syncSchemaToPortal(__dirname, newSchemaContent);
+
+  console.log(`🎉 Success! Version bumped to ${newVersion}`);
 }
 
 // ── CLI Main Execution ──────────────────────────────────────────────────
 async function main() {
   const fs = await import('fs');
   const path = await import('path');
+  const { fileURLToPath } = await import('url');
+
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
 
   const args = process.argv.slice(2);
+
+  // Check for --bump command
+  const bumpIndex = args.indexOf('--bump');
+  if (bumpIndex !== -1) {
+    const bumpType = args[bumpIndex + 1] || 'patch';
+    args.splice(bumpIndex, 2);
+    await bumpVersion(bumpType);
+    process.exit(0);
+  }
+
   if (args.length < 1) {
     printUsage();
     process.exit(1);
   }
+
+  // Read local schema and check version alignment
+  const schemaPath = path.join(__dirname, 'velum-schema.json');
+  if (!fs.existsSync(schemaPath)) {
+    console.error(`Error: Schema file not found at ${schemaPath}`);
+    process.exit(1);
+  }
+  const schemaContent = fs.readFileSync(schemaPath, 'utf8');
+  const schema = JSON.parse(schemaContent);
+  if (schema.version !== COMPILER_VERSION) {
+    console.error(`❌ Version mismatch: Compiler version is ${COMPILER_VERSION}, but schema version is ${schema.version}.`);
+    process.exit(1);
+  }
+
+  // Auto-sync schema to portal static folder
+  await syncSchemaToPortal(__dirname, schemaContent);
 
   let target = 'vanilla'; // Default to vanilla
   const targetIndex = args.indexOf('--target');
@@ -713,6 +922,14 @@ async function main() {
 
     fs.writeFileSync(outputPath, compiledCode, 'utf8');
     console.log(`✅ Compilation successful! Generated: ${path.basename(outputPath)}`);
+
+    // Auto-upgrade version in input .velum file if compatible and older
+    if (velum.velum_version !== COMPILER_VERSION) {
+      console.log(`Bumping input file version from ${velum.velum_version} to match compiler version ${COMPILER_VERSION}...`);
+      velum.velum_version = COMPILER_VERSION;
+      fs.writeFileSync(inputPath, JSON.stringify(velum, null, 2) + '\n', 'utf8');
+      console.log(`✅ Successfully updated ${path.basename(inputPath)} to version ${COMPILER_VERSION}`);
+    }
   } catch (err) {
     console.error('❌ Compilation failed:', err.message);
     process.exit(1);
