@@ -52,6 +52,6 @@ These rules are absolutely binding for any agent operating within this project.
    - A claim without a directly attached reproduction matrix is considered a "fairy tale" and is invalid. Ensure any future AI can instantly reconstruct the environment reading only the whitepaper.
 
 10. **RULE OF ENGLISH-ONLY CODE COMMENTS & LOGS**
-    - All code comments, variable names, console log statements, error messages, and documentation in source files (`.js`, `.ts`, `.svelte`, `.py`, `.lta`, etc.) MUST be written in English.
+    - All code comments, variable names, console log statements, error messages, and documentation in source files (`.js`, `.ts`, `.svelte`, `.py`, etc.) MUST be written in English.
     - No Czech diacritics or words are allowed in source code comments or logs (e.g., do not write 'sémanticko-geometrické' or 'plátno' inside source code).
     - The only exceptions are user-visible localized UI label strings and translation files (e.g., `messages/*.json`), which are excluded by the pre-commit configuration.

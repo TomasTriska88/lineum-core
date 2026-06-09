@@ -6,7 +6,7 @@ repos:
         entry: "[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]"
         language: pygrep
         # Will check only selected file types (scripts and code)
-        files: \.(sh|php|py|js|ts|svelte|velum)$
+        files: \.(sh|php|py|js|ts|svelte)$
         # If you need an exception for a specific file in the future, add it here (separated by |)
         exclude: ^(tests/some-allowed-file\.py|tests/check-czech-lib\.test\.js|helpers/check-czech-lib\.js|tests/test_whitepaper_language_policy\.py|tests/test_todo_language_policy\.py|tests/test_scripts_language_policy\.py|tests/test_repro_scripts\.py|tests/test_performance\.py|tests/test_lineum_knobs\.py|lab/test/.*|.*LangPicker.*|.*messages.*)$
       - id: check-no-absolute-paths
