@@ -55,3 +55,8 @@ These rules are absolutely binding for any agent operating within this project.
     - All code comments, variable names, console log statements, error messages, and documentation in source files (`.js`, `.ts`, `.svelte`, `.py`, etc.) MUST be written in English.
     - No Czech diacritics or words are allowed in source code comments or logs (e.g., do not write 'sémanticko-geometrické' or 'plátno' inside source code).
     - The only exceptions are user-visible localized UI label strings and translation files (e.g., `messages/*.json`), which are excluded by the pre-commit configuration.
+
+11. **RULE OF FORBIDDING EXTERNAL LLM API CALLS IN TESTS, SCRIPTS, AND HOOKS**
+    - The agent is strictly forbidden from writing or running any tests, development/utility scripts, or git hooks that invoke external LLM APIs (such as Google Gemini, OpenAI, etc.).
+    - All semantic checks, translation audits, and quality assurances must be performed offline/in-context by the agent during development, or implemented as deterministic offline algorithms.
+    - Live API keys (like `GEMINI_API_KEY`) must never be consumed during testing or scripts; tests covering code that integrates with these APIs must use mocks to prevent real token usage and credit consumption.
