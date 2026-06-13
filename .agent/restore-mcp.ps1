@@ -38,13 +38,15 @@
 # Finally, restart your Gemini/Antigravity session.
 # ============================================================
 
-$appDataPath = "$env:USERPROFILE\.gemini\antigravity"
-$repoConfigPath = Join-Path $PSScriptRoot "mcp_config.json"
-$targetConfigPath = Join-Path $appDataPath "mcp_config.json"
+$appDataPaths = @(
+    "$env:USERPROFILE\.gemini\antigravity",
+    "$env:USERPROFILE\.gemini\antigravity-ide"
+)
+$repoConfigPath = Join-Path $PSScriptRoot "mcp_config.template.json"
 
 Write-Host "Restoring MCP Configuration..."
 Write-Host "From: $repoConfigPath"
-Write-Host "To:   $targetConfigPath"
+Write-Host "To:   $appDataPaths"
 Write-Host "----------------------------------------"
 
 if (-Not (Test-Path -Path $repoConfigPath)) {
@@ -52,8 +54,10 @@ if (-Not (Test-Path -Path $repoConfigPath)) {
     Exit 1
 }
 
-if (-Not (Test-Path -Path $appDataPath)) {
-    New-Item -ItemType Directory -Force -Path $appDataPath | Out-Null
+foreach ($appDataPath in $appDataPaths) {
+    if (-Not (Test-Path -Path $appDataPath)) {
+        New-Item -ItemType Directory -Force -Path $appDataPath | Out-Null
+    }
 }
 
 $clickupToken = [System.Environment]::GetEnvironmentVariable("CLICKUP_API_TOKEN", "User")
@@ -102,7 +106,13 @@ if ($nodeCmd) {
 $escapedNodePath = $nodePath -replace '\\', '\\'
 $configContent = $configContent.Replace('"command": "node"', "`"command`": `"$escapedNodePath`"")
 
-$scriptPath = Join-Path $PSScriptRoot "mcp\lineum-clickup\index.js"
+$proxyPath = "$env:USERPROFILE\.gemini\config\mcp_proxy.js"
+if (Test-Path $proxyPath) {
+    $scriptPath = $proxyPath
+    Write-Host "Using unified ClickUp proxy: $scriptPath" -ForegroundColor Green
+} else {
+    $scriptPath = Join-Path $PSScriptRoot "mcp\lineum-clickup\index.js"
+}
 $escapedScriptPath = $scriptPath -replace '\\', '\\'
 $configContent = $configContent.Replace('${SCRIPT_PATH}', $escapedScriptPath)
 
@@ -119,7 +129,11 @@ $escapedRailwayScriptPath = $railwayScriptPath -replace '\\', '\\'
 $configContent = $configContent.Replace('${RAILWAY_SCRIPT_PATH}', $escapedRailwayScriptPath)
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding $False
-[System.IO.File]::WriteAllText($targetConfigPath, $configContent, $utf8NoBom)
+foreach ($appDataPath in $appDataPaths) {
+    $targetConfigPath = Join-Path $appDataPath "mcp_config.json"
+    [System.IO.File]::WriteAllText($targetConfigPath, $configContent, $utf8NoBom)
+    Write-Host "MCP Configuration written to: $targetConfigPath" -ForegroundColor Green
+}
 
 # Install MCP dependencies (node_modules are gitignored — must be installed locally)
 $clickupMcpDir = Join-Path $PSScriptRoot "mcp\lineum-clickup"

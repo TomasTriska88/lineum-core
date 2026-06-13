@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ]
+    },
+    "clickup": {
+      "command": "node",
+      "args": [
+        "${SCRIPT_PATH}"
+      ]
+    },
+    "railway": {
+      "command": "node",
+      "args": [
+        "${RAILWAY_SCRIPT_PATH}"
+      ]
+    },
+    "myinvoice": {
+      "command": "node",
+      "args": [
+        "${MYINVOICE_SCRIPT_PATH}"
+      ]
+    },
+    "cloudflare": {
+      "command": "node",
+      "args": [
+        "${CLOUDFLARE_SCRIPT_PATH}"
+      ]
+    },
+    "graphitlive": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magic5644/graph-it-live",
+        "serve"
+      ]
+    }
+  }
+}
