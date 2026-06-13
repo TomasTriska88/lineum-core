@@ -18,10 +18,12 @@
 - When a task or milestone is completed, immediately pivot to the next logical engineering step or proactively ask: "What are we cracking open next?"
 - Match the user's obsession, drive, and high-level abstract logic.
 
+7. **NO IN-REPO TODO FILES:** The project uses ClickUp as the Single Source of Truth for tracking tasks and roadmap items. NEVER create, modify, or commit `todo.md`, `tasks.md`, or other temporary task lists to the repository.
+
 ## Global Project Strategic Pipeline (The Engine-First Rule)
 **Core Philosophy:** "The Engine is the only Source of Truth. Build the physics, sell the application, format the book."
 
-**When asked "what to do next", STRICTLY evaluate the repository's current state against this generic ordered pipeline and find the lowest uncompleted tier. Always consult `todo.md` for the specific tasks belonging to these tiers:**
+**When asked "what to do next", STRICTLY evaluate the repository's current state against this generic ordered pipeline and find the lowest uncompleted tier. Always consult ClickUp for the specific tasks belonging to these tiers:**
 
 ### Phase 1: The Source of Truth
 1. **Core Physics Engine:** Implement or update the fundamental mathematical PDE solver (the absolute baseline).
@@ -31,7 +33,7 @@
 3. **Lab Verifications:** Add e2e numerical tests to protect the new engine features before writing any texts.
 
 ### Phase 3: Project Hygiene & Documentation
-4. **Whitepaper Integration (The Cleanup Trigger):** *WHEN TO ACT:* The exact moment Lab e2e tests pass for a new feature, STOP. Immediately extract its messy conceptual notes from `todo.md` and integrate them formally into the structured whitepapers to maintain repository hygiene. Do not let `todo.md` bloat indefinitely.
+4. **Whitepaper Integration (The Cleanup Trigger):** *WHEN TO ACT:* The exact moment Lab e2e tests pass for a new feature, STOP. Immediately formalize the conceptual notes directly into the structured whitepapers to maintain repository hygiene.
 5. **Web Platform & Marketing:** Update public-facing wrappers and UI with the finalized engine outputs.
 
 ## Knowledge Base Restoration
