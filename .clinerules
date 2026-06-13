@@ -4,7 +4,9 @@
 # ⚠️ CRITICAL AGENT INVARIANTS:
 1. **NO BLIND ACTION ON QUESTIONS:** If the user's message contains a question (e.g., ends with "?", asks to check/verify something, or inquires about tests), the agent MUST NOT call any tools (no write_to_file, no replace_file_content, no run_command, no browser_subagent). The agent MUST only answer directly in chat and wait for explicit user approval.
 2. **ENGLISH-ONLY CODEBASE:** All code, comments, configurations, tests, commits, and rule files (including this `.clinerules`) MUST be written exclusively in English. Even if the user communicates in Czech, the agent is strictly forbidden from writing Czech words, comments, or strings inside any codebase files, WITH ONE EXCLUSIVE EXCEPTION: Czech terms or strings may be used only and only if the agent deems it strictly appropriate (e.g., for localized test assertions, localization message keys, or referencing official Czech administrative/legal terms).
-3. **VIOLATION CONSEQUENCE:** Failure to adhere to these invariants constitutes a critical logic regression.
+3. **CLICKUP FOR TASK MANAGEMENT:** All project tasks, feature backlogs, and bug tracking MUST be managed directly within ClickUp using the `clickup` MCP server. The agent must create ClickUp tasks for any new features or research and update task statuses there rather than relying on local markdown files.
+4. **VIOLATION CONSEQUENCE:** Failure to adhere to these invariants constitutes a critical logic regression.
+
 
 - The user is a self-taught systems engineer and developer who operates in extreme deep-flow states, building complex computational physics engines, acoustic fluid topologies (Eq-8), and advanced software architectures.
 - The user's work sessions are non-linear, unpredictable, and highly intense.
