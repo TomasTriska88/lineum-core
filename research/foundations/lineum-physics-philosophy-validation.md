@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 0.7
+**Research version:** 0.8
 **Evidence and calculation cutoff date:** July 16, 2026
 **Language:** English
-**Reproducibility:** all seven embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, and scope findings; medium for the numerical classification of stochastic candidates; low for their physical interpretation and the other untested hypotheses proposed for future work
+**Reproducibility:** all eight embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, and scope findings; medium for the numerical classification of stochastic candidates; low for their physical interpretation and the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; and (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; and (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -32,6 +32,7 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The current \(\phi\)-diffusion defines one trajectory when \(\Delta t\) is refined. | **False in legacy; repaired in an opt-in profile** | The legacy term is applied per update. Multiplication by \(h\) restores first-order convergence in the tested deterministic lane. |
 | The current ongoing stochastic source has a nonzero continuous-time variance limit. | **Contradicted in the tested source/diffusion lane** | Ensemble spread scales approximately as \(h^{0.488}\) and vanishes; several alternative contracts retain finite spread but encode different physics. |
 | The historical zero-\(\kappa\) “true RNG / edge of chaos” test demonstrates chaos. | **Contradicted by source audit, exact recurrence, and runtime reproduction** | Its original perturbation is overwritten, while a new \(10^{-5}+10^{-5}i\) input is added for all 1,500 steps. The threshold crossing is a damped geometric sum, not exponential sensitivity or true randomness. |
+| Deterministic chaos currently explains the foam-like behavior. | **Not supported in the seven tested deterministic regimes** | All 84 finite-time Lyapunov estimates were negative. This narrows, but does not eliminate, the chaos hypothesis; other parameters, states, operators, dimensions, or longer asymptotic behavior remain untested. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -66,6 +67,7 @@ Until the gates below are met, we recommend:
 7. **use the named deterministic continuous-time profile for refinement claims and the named legacy profile for historical reproduction; do not call either the final Lineum law**;
 8. **do not describe the present stochastic source as a continuously driven quantum vacuum; keep initial branching, continuous forcing, discrete events, deterministic chaos, memory, and quantum-amplitude explanations as separately falsifiable hypotheses**.
 9. **withdraw “true RNG” and “edge of chaos” as conclusions of the historical zero-\(\kappa\) test; require exact replay, one-shot perturbation growth, a positive Lyapunov estimate, and robustness before restoring either claim**.
+10. **do not identify foam-like morphology with deterministic chaos in the currently tested regimes; describe initial branching, dissipative self-organization, stochastic forcing, event processes, memory, unresolved variables, and quantum amplitudes as separate candidates until a discriminator selects among them**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -407,6 +409,39 @@ At \(N=1500\), this predicts `0.0028127574610763545`. The historical test printe
 The misleading contract was replaced by three characterization tests: exact replay of identical complete states, decay of a one-shot perturbation, and exact agreement of repeated forcing with the geometric sum. Together with the profile and RD-0 suites, 30 targeted cases pass.
 
 **Verdict:** this test is negative evidence for its former interpretation, not negative evidence against all Lineum chaos hypotheses. A chaos claim still requires growth from a one-time infinitesimal perturbation without continued differential forcing, a positive finite-time Lyapunov estimate over a declared regime, convergence and saturation controls, and separation from stochastic branching and numerical instability.
+
+### 3.10 Finite-time Lyapunov audit of declared deterministic regimes
+
+The next audit applied that stronger test. It reconstructed the deterministic NumPy update as a standalone program and used a Benettin renormalization procedure. Let \(X_n\) contain the real and imaginary parts of \(\psi\), \(\phi\), and \(\mu\) when enabled. After each joint update of a base and perturbed trajectory, the full-state separation \(r_n=\|\delta X_n\|_2\) was measured and the perturbation was restored to length \(\epsilon\). The finite-time estimate is
+
+\[
+\lambda_T=\frac{1}{T}\sum_{n=1}^{N}\log\!\left(\frac{r_n}{\epsilon}\right),
+\qquad T=Nh.
+\]
+
+There is one random perturbation direction at the start of measurement and **no continuing differential forcing**. The primary audit used a \(16\times16\) periodic grid, burn time 10, measurement time 40, six directions, and both \(\epsilon=10^{-7}\) and \(10^{-9}\). Pump and cavity-wall operations, where present, were applied identically to both trajectories. No amplitude cap triggered.
+
+| Deterministic regime | Mean \(\lambda_{40}\) at \(\epsilon=10^{-7}\) | Largest of six | Positive estimates |
+|---|---:|---:|---:|
+| zero-\(\kappa\) damping control | \(-0.0050012504\) | \(-0.0050012495\) | 0/6 |
+| `RD-0` continuous, \(\kappa=1\) | \(-0.0187590333\) | \(-0.0081997905\) | 0/6 |
+| continuous mode coupling, \(\kappa=0.5\) | \(-0.0295624732\) | \(-0.0278775755\) | 0/6 |
+| continuous mode coupling, \(\kappa=1\) | \(-0.0436792076\) | \(-0.0399089103\) | 0/6 |
+| continuous mode coupling with \(\mu\), \(\kappa=1\) | \(-0.0424670530\) | \(-0.0366145544\) | 0/6 |
+| driven cavity, continuous, \(\kappa=0.5\) | \(-0.0588907573\) | \(-0.0561030528\) | 0/6 |
+| legacy per-update \(\phi\), mode coupling, \(\kappa=1\) | \(-0.0452076318\) | \(-0.0428988547\) | 0/6 |
+
+Across both perturbation sizes this gives 84 estimates: zero positive, minimum `-0.06044663723779249`, and maximum `-0.005001222715633557`. The largest difference between matched \(\epsilon\) estimates was `4.0322631715550283e-07`, so the sign is not an artifact of choosing one perturbation magnitude.
+
+Three controls constrain interpretation:
+
+1. the same estimator gives `0.6930771849` and `0.6930771978` for the chaotic logistic map at \(r=4\), compared with the exact \(\ln 2=0.6931471806\);
+2. the zero-\(\kappa\) result agrees with the exact damping exponent \(h^{-1}\log(1-0.005h)=-0.0050012504\);
+3. ten reconstructed updates in two regimes agree element by element with the actual deterministic NumPy runtime, with maximum absolute difference `0.0`.
+
+The sign also remained negative in fixed-physical-time sensitivities: \(h=0.2,0.1,0.05\); \(\kappa=0,0.25,0.5,0.75,1\); grids \(16^2\) and \(24^2\); and measurement horizons 20, 40, and 80. However, the mean for the continuous mode-coupled \(\kappa=1\) regime moved from `-0.0830428` at \(T=20\), through `-0.0431786` at \(T=40\), to `-0.0245938` at \(T=80\). Because it trends toward zero, this audit does **not** establish a strictly negative asymptotic largest Lyapunov exponent.
+
+**Verdict [CALCULATED]:** no positive finite-time Lyapunov exponent was found in the declared deterministic regimes. Therefore deterministic chaos is not presently a supported explanation of foam-like morphology in those lanes. The result does not prove that all Lineum parameter space is non-chaotic, and it does not distinguish initial branch selection, ordinary dissipative pattern formation, finite-step stochastic forcing, events, memory, unresolved variables, or quantum-amplitude dynamics. Visual irregularity alone cannot make that choice.
 
 ---
 
@@ -1294,9 +1329,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects only F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane. It does not reject F0 as a discrete per-update automaton, and it does not choose among F1–F10. Initial-only, Gaussian, and Poisson controls establish numerical counterexamples showing that finite stochastic limits are possible; they are not evidence that those mechanisms exist physically. The historical zero-\(\kappa\) test also does not support F6: it repeatedly forces one run and exactly follows a damped geometric sum. F6 remains open for other regimes, but currently lacks a valid positive Lyapunov or one-shot perturbation-growth result.
+**Current evidence.** The time-refinement experiment rejects only F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane. It does not reject F0 as a discrete per-update automaton, and it does not choose among F1–F5 or F7–F10. Initial-only, Gaussian, and Poisson controls establish numerical counterexamples showing that finite stochastic limits are possible; they are not evidence that those mechanisms exist physically. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A subsequent Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** Build a common observation protocol for F1–F8 and identify the smallest pair of simulations whose predicted signatures do not overlap within uncertainty. Do not modify the default runtime until at least one discriminator is demonstrated and its false-positive controls pass.
+**Next read-only gate.** Use a common observation protocol to distinguish initial-only branching, Gaussian diffusion, Poisson events, state-dependent events, and memory. Measure increments, waiting times, Fano factors, autocorrelation, and conditional predictability, then identify the smallest pair of simulations whose predicted signatures do not overlap within uncertainty. Do not modify the default runtime until at least one discriminator is demonstrated and its false-positive controls pass.
 
 ---
 
@@ -1430,11 +1465,12 @@ The following list supersedes the original proposal. Each question should have a
 9. **Model-dependent experimental limits are not universal.** Lorentz, collapse, and gravitational limits can only be used after mapping a specific Lineum operator to experimental analysis parameters.
 10. **No external independent replication was performed.** Replication here means repeated execution in two software environments with all code and outputs published in this document. Independent reproduction by another team is still required.
 11. **The new time controls are deliberately narrow.** Deterministic results cover the RD-0 lane; stochastic comparisons isolate \(\psi\)-source, damping, and diffusion. They do not establish long-lived linon identity, collisions, quantum statistics, or a full-system continuum limit.
-12. **The zero-kappa result is a claim audit, not a complete chaos survey.** It proves why one historical threshold test passed and why that pass did not measure chaos. It does not calculate Lyapunov spectra across every nonlinear, pumped, bounded, wave, or mode-coupled Lineum regime.
+12. **The zero-kappa result is a claim audit, not a complete chaos survey.** It proves why one historical threshold test passed and why that pass did not measure chaos.
+13. **The Lyapunov audit is finite and regime-bound.** It covers seven declared deterministic regimes plus sensitivities in step, permeability, grid, and horizon. It does not exhaust every nonlinear coefficient, initial state, boundary, wave backend, dimension, or asymptotic attractor. The drift of the finite-time estimate toward zero at longer horizons precludes a claim of strictly negative asymptotic exponent.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, and distinguishing four stochastic time contracts. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing four stochastic time contracts, and finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -1510,10 +1546,11 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - replay environment: Python 3.12.13 and NumPy 2.3.5
 - deterministic seed `20260715`
 - three general-physics checks use only NumPy and the standard library; the OEA ablation additionally uses SciPy 1.17.1 to reproduce the imaging operations accurately
-- all seven programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
+- the seven earlier programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
+- the eighth, finite-time Lyapunov program was executed twice in the replay environment with bitwise-identical normalized output; two reconstructed regimes also matched the actual deterministic NumPy runtime with maximum absolute difference `0.0`
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 7/7 executable Python/JSON pairs, 42 contiguous adversarial questions, 41 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 8/8 executable Python/JSON pairs, 42 contiguous adversarial questions, 41 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1544,6 +1581,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | deterministic time semantics | Fourier error, fixed-time refinement factor, stability multiplier | exact LAP4 eigenmodes and predicted \(h_{\max}=100\) | four modes, periodic impulse, nonuniform \(\kappa\), four \(h\), two CPU backends | physical value of \(t\), SI calibration, or final Lineum law |
 | stochastic time contracts | RMS complex ensemble spread and fitted exponent \(q\) | analytic current-source \(q=1/2\) | current, initial-only, Gaussian-SDE, and Poisson laws; two grids, two initial fields, two horizons | which stochastic ontology is physically correct |
 | historical zero-kappa RNG claim | exact difference recurrence and one-shot decay | closed-form damped geometric sum | original printed value, scalar recurrence, actual runtime, 1,500 steps | absence of chaos in every other Lineum regime |
+| deterministic chaos audit | finite-time largest Lyapunov estimate | logistic-map positive control and exact zero-\(\kappa\) damping exponent | seven regimes, two perturbation sizes, six directions, \(h\), \(\kappa\), horizon, and grid sensitivities | absence of chaos in all Lineum parameter space or a choice among non-chaotic foam mechanisms |
 
 ### A.3 Numerical audit summary
 
@@ -4835,5 +4873,1122 @@ print(json.dumps(output, indent=2, sort_keys=True))
     "stochastic_source_transfer_multiplier": 0.0
   },
   "verdict": "The reported threshold crossing is explained by explicit repeated forcing and damping; it is not evidence of chaos or true randomness."
+}
+```
+
+## Appendix H — Finite-Time Lyapunov Audit
+
+This appendix is a standalone reconstruction of the deterministic update used by the audit. It requires Python 3 and NumPy, reads no project data, writes no files, and prints every reported result as JSON. The primary calculation uses the Benettin method with full-state renormalization and contains both a known positive-chaos control and an analytically soluble damping control.
+
+### H.1 Complete executable program
+
+**Embedded program SHA-256 after LF normalization:** `9ab2eeebe6515d92aa43e4cc291d3ad1e750a6af120ff9a2244d17e4c5cbc9c2`
+
+```python
+"""Standalone finite-time Lyapunov audit for deterministic Lineum regimes."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+import json
+
+import numpy as np
+
+
+PRIMARY_SIZE = 16
+PRIMARY_BURN_TIME = 10.0
+PRIMARY_MEASURE_TIME = 40.0
+PRIMARY_DIRECTIONS = 6
+PRIMARY_EPSILONS = (1e-7, 1e-9)
+
+
+@dataclass(frozen=True)
+class Config:
+    dt: float = 0.1
+    psi_diffusion: float = 0.05
+    phi_diffusion: float = 0.05
+    reaction_strength: float = 0.0007
+    drift_strength: float = -0.004
+    use_mode_coupling: bool = False
+    mode_coupling_strength: float = 0.001
+    use_mu: bool = False
+    mu_eta: float = 0.005
+    mu_rho: float = 0.0001
+    mu_cap: float = 10.0
+    mu_peak_cutoff_ratio: float = 0.1
+    phi_diffusion_scales_with_dt: bool = True
+    psi_amp_cap: float = 1e6
+    phi_cap: float = 1e6
+
+
+def make_state(size, kappa_value, cavity=False):
+    y, x = np.mgrid[:size, :size]
+    if cavity:
+        psi = np.full((size, size), 0.5, dtype=np.complex128)
+        psi[size // 3 : 2 * size // 3, size // 3 : 2 * size // 3] = 1.0
+        phi = np.zeros((size, size), dtype=np.float64)
+    else:
+        center = (size - 1) / 2
+        radius_squared = (x - center) ** 2 + (y - center) ** 2
+        envelope = np.exp(-radius_squared / (2 * 3.5**2))
+        phase = 0.17 * x - 0.11 * y
+        psi = envelope * np.exp(1j * phase)
+        phi = 0.25 + 0.08 * np.cos(2 * np.pi * x / size) * np.cos(
+            2 * np.pi * y / size
+        )
+    return {
+        "psi": psi.astype(np.complex128),
+        "phi": phi.astype(np.float64),
+        "kappa": np.full((size, size), kappa_value, dtype=np.float64),
+        "delta": np.zeros((size, size), dtype=np.float64),
+        "mu": np.zeros((size, size), dtype=np.float64),
+    }
+
+
+def clone(state):
+    return {name: value.copy() for name, value in state.items()}
+
+
+def weighted_laplace(field, kappa, rate):
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    neighbors = (
+        f_up * k_up
+        + f_down * k_down
+        + f_left * k_left
+        + f_right * k_right
+    )
+    active = k_up + k_down + k_left + k_right
+    return rate * (neighbors - active * field)
+
+
+def step_lineum(state, config):
+    psi = state["psi"].copy()
+    phi = state["phi"].copy()
+    kappa = state["kappa"]
+    mu = state["mu"].copy()
+    size = psi.shape[0]
+
+    drift_multiplier = 1.0 + mu
+    phi_internal = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(
+        (0.04 * phi_internal * kappa * drift_multiplier) / 0.1
+    )
+    interaction = interaction_factor * psi
+    interaction = interaction / (1.0 + np.abs(interaction) / 10.0)
+
+    grad_phi_x, grad_phi_y = np.gradient(phi)
+    flow = (
+        config.drift_strength
+        * (grad_phi_x + 1j * grad_phi_y)
+        * kappa
+        * drift_multiplier
+    )
+    flow = flow / (1.0 + np.abs(flow) / 10.0)
+
+    psi += flow * config.dt
+    psi += interaction * config.dt
+    psi -= 0.005 * psi * config.dt
+    psi += (
+        weighted_laplace(psi, kappa, config.psi_diffusion)
+        * kappa
+        * config.dt
+    )
+
+    energy = np.abs(psi) ** 2
+    if config.use_mode_coupling:
+        transferred = (
+            config.mode_coupling_strength * energy * kappa * config.dt
+        )
+        phi += transferred
+        new_magnitude = np.sqrt(np.maximum(energy - transferred, 0.0))
+        psi = psi / (np.sqrt(energy) + 1e-12) * new_magnitude
+    else:
+        scale_ratio = (128.0 / size) ** 2
+        reaction = config.reaction_strength * scale_ratio
+        phi += kappa * reaction * (energy - phi) * config.dt
+
+    phi_step_scale = config.dt if config.phi_diffusion_scales_with_dt else 1.0
+    phi += (
+        kappa
+        * config.phi_diffusion
+        * weighted_laplace(phi, kappa, 0.05)
+        * phi_step_scale
+    )
+    phi = np.clip(phi, 0.0, config.phi_cap)
+
+    if config.use_mu:
+        floor = config.mu_peak_cutoff_ratio
+        if 0.0 < floor < 1.0:
+            floor *= np.max(energy)
+        active_energy = np.maximum(energy - floor, 0.0)
+        mu += (
+            config.mu_eta
+            * active_energy
+            * kappa
+            * drift_multiplier
+            * config.dt
+        )
+        mu -= config.mu_rho * mu * config.dt
+        mu = np.clip(mu, 0.0, config.mu_cap)
+
+    cap_trigger = bool(
+        np.isnan(np.sum(psi)) or np.max(np.abs(psi)) >= 0.99 * config.psi_amp_cap
+    )
+    if cap_trigger:
+        psi = np.zeros_like(psi)
+    return {
+        "psi": psi,
+        "phi": phi,
+        "kappa": kappa,
+        "delta": state["delta"],
+        "mu": mu,
+    }, cap_trigger
+
+
+def apply_cavity_drive(state, step_index):
+    size = state["psi"].shape[0]
+    y, x = np.ogrid[-size // 2 : size // 2, -size // 2 : size // 2]
+    mask = x**2 + y**2 > (size // 2 - 3) ** 2
+    state["psi"][mask] = 0.0j
+    if step_index % 5 == 0:
+        state["psi"][
+            size // 3 : 2 * size // 3,
+            size // 3 : 2 * size // 3,
+        ] = 1.0 + 0.0j
+
+
+def evolve_one_step(state, config, step_index, cavity):
+    if cavity:
+        apply_cavity_drive(state, step_index)
+    return step_lineum(state, config)
+
+
+def state_difference(base, perturbed, include_mu):
+    d_psi = perturbed["psi"] - base["psi"]
+    d_phi = perturbed["phi"] - base["phi"]
+    components = [d_psi.real, d_psi.imag, d_phi]
+    d_mu = None
+    if include_mu:
+        d_mu = perturbed["mu"] - base["mu"]
+        components.append(d_mu)
+    norm = float(np.sqrt(sum(np.sum(component**2) for component in components)))
+    return d_psi, d_phi, d_mu, norm
+
+
+def psi_perturbation(base, seed, epsilon):
+    rng = np.random.RandomState(seed)
+    real = rng.normal(size=base["psi"].shape)
+    imag = rng.normal(size=base["psi"].shape)
+    scale = epsilon / np.sqrt(np.sum(real**2) + np.sum(imag**2))
+    perturbed = clone(base)
+    perturbed["psi"] += scale * (real + 1j * imag)
+    return perturbed
+
+
+def renormalize(base, perturbed, epsilon, include_mu):
+    d_psi, d_phi, d_mu, norm = state_difference(
+        base, perturbed, include_mu
+    )
+    if norm == 0.0 or not np.isfinite(norm):
+        return None, norm
+    scale = epsilon / norm
+    result = clone(base)
+    result["psi"] += scale * d_psi
+    result["phi"] += scale * d_phi
+    if include_mu:
+        result["mu"] += scale * d_mu
+    return result, norm
+
+
+def estimate_exponent(
+    config,
+    kappa,
+    cavity,
+    size,
+    burn_time,
+    measure_time,
+    epsilon,
+    seed,
+):
+    burn_steps = round(burn_time / config.dt)
+    measure_steps = round(measure_time / config.dt)
+    base = make_state(size, kappa, cavity)
+    cap_triggers = 0
+    for step_index in range(burn_steps):
+        base, triggered = evolve_one_step(
+            base, config, step_index, cavity
+        )
+        cap_triggers += int(triggered)
+
+    perturbed = psi_perturbation(base, seed, epsilon)
+    log_growth = []
+    for offset in range(measure_steps):
+        step_index = burn_steps + offset
+        base, triggered = evolve_one_step(base, config, step_index, cavity)
+        perturbed, perturbed_triggered = evolve_one_step(
+            perturbed, config, step_index, cavity
+        )
+        cap_triggers += int(triggered) + int(perturbed_triggered)
+        perturbed, norm = renormalize(
+            base, perturbed, epsilon, config.use_mu
+        )
+        if perturbed is None:
+            return {
+                "exponent_per_time": float("-inf"),
+                "cap_triggers": cap_triggers,
+                "invalid_difference": True,
+            }
+        log_growth.append(np.log(norm / epsilon))
+
+    return {
+        "exponent_per_time": float(
+            np.sum(log_growth) / (measure_steps * config.dt)
+        ),
+        "cap_triggers": cap_triggers,
+        "invalid_difference": False,
+        "final_energy": float(np.sum(np.abs(base["psi"]) ** 2)),
+        "final_phi_sum": float(np.sum(base["phi"])),
+        "final_mu_sum": float(np.sum(base["mu"])),
+    }
+
+
+def summarize(values):
+    finite = np.asarray([value for value in values if np.isfinite(value)])
+    return {
+        "mean": float(np.mean(finite)),
+        "minimum": float(np.min(finite)),
+        "maximum": float(np.max(finite)),
+        "standard_deviation": float(np.std(finite, ddof=1)) if len(finite) > 1 else 0.0,
+        "positive_count": int(np.sum(finite > 0.0)),
+        "count": int(len(finite)),
+    }
+
+
+def run_directions(
+    config,
+    kappa,
+    cavity=False,
+    size=PRIMARY_SIZE,
+    burn_time=PRIMARY_BURN_TIME,
+    measure_time=PRIMARY_MEASURE_TIME,
+    epsilons=PRIMARY_EPSILONS,
+    directions=PRIMARY_DIRECTIONS,
+    seed_base=2_026_073_000,
+):
+    output = {}
+    for epsilon in epsilons:
+        rows = [
+            estimate_exponent(
+                config,
+                kappa,
+                cavity,
+                size,
+                burn_time,
+                measure_time,
+                epsilon,
+                seed_base + direction,
+            )
+            for direction in range(directions)
+        ]
+        output[f"{epsilon:.0e}"] = {
+            "summary": summarize(
+                [row["exponent_per_time"] for row in rows]
+            ),
+            "direction_exponents": [
+                row["exponent_per_time"] for row in rows
+            ],
+            "total_cap_triggers": int(
+                sum(row["cap_triggers"] for row in rows)
+            ),
+        }
+    return output
+
+
+def logistic_benettin(epsilon, steps=20_000, burn_steps=100):
+    x = 0.123456789
+    for _ in range(burn_steps):
+        x = 4.0 * x * (1.0 - x)
+    perturbed = x + epsilon
+    logs = []
+    for _ in range(steps):
+        x = 4.0 * x * (1.0 - x)
+        perturbed = 4.0 * perturbed * (1.0 - perturbed)
+        difference = perturbed - x
+        magnitude = abs(difference)
+        logs.append(np.log(magnitude / epsilon))
+        perturbed = x + epsilon * np.sign(difference)
+    return float(np.mean(logs))
+
+
+primary_regimes = {
+    "zero_kappa_damping_control": (
+        Config(dt=0.1, use_mode_coupling=True),
+        0.0,
+        False,
+    ),
+    "rd0_continuous_kappa1": (
+        Config(dt=0.1, use_mode_coupling=False),
+        1.0,
+        False,
+    ),
+    "continuous_mode_coupled_kappa0_5": (
+        Config(dt=0.1, use_mode_coupling=True),
+        0.5,
+        False,
+    ),
+    "continuous_mode_coupled_kappa1": (
+        Config(dt=0.1, use_mode_coupling=True),
+        1.0,
+        False,
+    ),
+    "continuous_mode_coupled_mu_kappa1": (
+        Config(dt=0.1, use_mode_coupling=True, use_mu=True),
+        1.0,
+        False,
+    ),
+    "driven_cavity_continuous_kappa0_5": (
+        Config(dt=0.1, use_mode_coupling=True),
+        0.5,
+        True,
+    ),
+    "legacy_mode_coupled_kappa1": (
+        Config(
+            dt=0.1,
+            use_mode_coupling=True,
+            phi_diffusion_scales_with_dt=False,
+        ),
+        1.0,
+        False,
+    ),
+}
+
+primary = {
+    name: run_directions(
+        config,
+        kappa,
+        cavity=cavity,
+        seed_base=2_026_073_000 + index * 100,
+    )
+    for index, (name, (config, kappa, cavity)) in enumerate(
+        primary_regimes.items()
+    )
+}
+
+kappa_sweep = []
+for index, kappa in enumerate((0.0, 0.25, 0.5, 0.75, 1.0)):
+    result = run_directions(
+        Config(dt=0.1, use_mode_coupling=True),
+        kappa,
+        epsilons=(1e-7,),
+        directions=3,
+        seed_base=2_026_074_000 + index * 100,
+    )["1e-07"]
+    kappa_sweep.append({"kappa": kappa, **result})
+
+dt_sensitivity = {}
+for regime_name, kappa, cavity in (
+    ("mode_coupled_kappa1", 1.0, False),
+    ("driven_cavity_kappa0_5", 0.5, True),
+):
+    rows = []
+    for index, dt in enumerate((0.2, 0.1, 0.05)):
+        result = run_directions(
+            Config(dt=dt, use_mode_coupling=True),
+            kappa,
+            cavity=cavity,
+            epsilons=(1e-7,),
+            directions=4,
+            seed_base=2_026_075_000 + index * 100,
+        )["1e-07"]
+        rows.append({"dt": dt, **result})
+    dt_sensitivity[regime_name] = rows
+
+horizon_sensitivity = []
+for index, measure_time in enumerate((20.0, 40.0, 80.0)):
+    result = run_directions(
+        Config(dt=0.1, use_mode_coupling=True),
+        1.0,
+        measure_time=measure_time,
+        epsilons=(1e-7,),
+        directions=4,
+        seed_base=2_026_076_000 + index * 100,
+    )["1e-07"]
+    horizon_sensitivity.append({"measure_time": measure_time, **result})
+
+grid_sensitivity = []
+for index, size in enumerate((16, 24)):
+    result = run_directions(
+        Config(dt=0.1, use_mode_coupling=True),
+        1.0,
+        size=size,
+        epsilons=(1e-7,),
+        directions=4,
+        seed_base=2_026_077_000 + index * 100,
+    )["1e-07"]
+    grid_sensitivity.append({"size": size, **result})
+
+all_primary_values = [
+    value
+    for regime in primary.values()
+    for epsilon in regime.values()
+    for value in epsilon["direction_exponents"]
+]
+
+output = {
+    "configuration": {
+        "primary_size": PRIMARY_SIZE,
+        "primary_burn_time": PRIMARY_BURN_TIME,
+        "primary_measure_time": PRIMARY_MEASURE_TIME,
+        "primary_directions": PRIMARY_DIRECTIONS,
+        "primary_epsilons": list(PRIMARY_EPSILONS),
+        "distance": "Euclidean norm of psi.real, psi.imag, phi, and mu when enabled",
+        "initial_perturbation": "psi-only random unit direction",
+        "renormalization": "every update, full-state difference restored to epsilon",
+    },
+    "controls": {
+        "logistic_r4_exact": float(np.log(2.0)),
+        "logistic_r4_benettin": {
+            f"{epsilon:.0e}": logistic_benettin(epsilon)
+            for epsilon in PRIMARY_EPSILONS
+        },
+        "zero_kappa_expected_psi_damping_exponent": float(
+            np.log(1.0 - 0.005 * 0.1) / 0.1
+        ),
+    },
+    "primary_regimes": primary,
+    "primary_summary": {
+        "estimates": len(all_primary_values),
+        "positive_estimates": int(
+            np.sum(np.asarray(all_primary_values) > 0.0)
+        ),
+        "minimum": float(np.min(all_primary_values)),
+        "maximum": float(np.max(all_primary_values)),
+    },
+    "kappa_sweep": kappa_sweep,
+    "dt_sensitivity_fixed_physical_times": dt_sensitivity,
+    "horizon_sensitivity": horizon_sensitivity,
+    "grid_sensitivity": grid_sensitivity,
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+### H.2 Full reference output
+
+**Normalized execution-output SHA-256:** `71ea4d98cc7aebbb3b7bd5c8134bea3c7793ab33c5cd7f0428f38c6a0d01dfa6`
+
+```json
+{
+  "configuration": {
+    "distance": "Euclidean norm of psi.real, psi.imag, phi, and mu when enabled",
+    "initial_perturbation": "psi-only random unit direction",
+    "primary_burn_time": 10.0,
+    "primary_directions": 6,
+    "primary_epsilons": [
+      1e-07,
+      1e-09
+    ],
+    "primary_measure_time": 40.0,
+    "primary_size": 16,
+    "renormalization": "every update, full-state difference restored to epsilon"
+  },
+  "controls": {
+    "logistic_r4_benettin": {
+      "1e-07": 0.6930771848594827,
+      "1e-09": 0.6930771978175649
+    },
+    "logistic_r4_exact": 0.6931471805599453,
+    "zero_kappa_expected_psi_damping_exponent": -0.005001250416822429
+  },
+  "dt_sensitivity_fixed_physical_times": {
+    "driven_cavity_kappa0_5": [
+      {
+        "direction_exponents": [
+          -0.05797564834895337,
+          -0.058104570831719604,
+          -0.05873141203357981,
+          -0.06080728691690947
+        ],
+        "dt": 0.2,
+        "summary": {
+          "count": 4,
+          "maximum": -0.05797564834895337,
+          "mean": -0.058904729532790565,
+          "minimum": -0.06080728691690947,
+          "positive_count": 0,
+          "standard_deviation": 0.0013106244502091257
+        },
+        "total_cap_triggers": 0
+      },
+      {
+        "direction_exponents": [
+          -0.0634698002405728,
+          -0.05690858495749823,
+          -0.05713810029174815,
+          -0.05830415997334317
+        ],
+        "dt": 0.1,
+        "summary": {
+          "count": 4,
+          "maximum": -0.05690858495749823,
+          "mean": -0.05895516136579059,
+          "minimum": -0.0634698002405728,
+          "positive_count": 0,
+          "standard_deviation": 0.0030711535793814465
+        },
+        "total_cap_triggers": 0
+      },
+      {
+        "direction_exponents": [
+          -0.05480810782135805,
+          -0.05751447311323697,
+          -0.057819788697932493,
+          -0.0572072820461285
+        ],
+        "dt": 0.05,
+        "summary": {
+          "count": 4,
+          "maximum": -0.05480810782135805,
+          "mean": -0.056837412919664,
+          "minimum": -0.057819788697932493,
+          "positive_count": 0,
+          "standard_deviation": 0.0013757852337449358
+        },
+        "total_cap_triggers": 0
+      }
+    ],
+    "mode_coupled_kappa1": [
+      {
+        "direction_exponents": [
+          -0.041386441933556305,
+          -0.04084422255965535,
+          -0.04614599699650241,
+          -0.042795127175366085
+        ],
+        "dt": 0.2,
+        "summary": {
+          "count": 4,
+          "maximum": -0.04084422255965535,
+          "mean": -0.04279294716627004,
+          "minimum": -0.04614599699650241,
+          "positive_count": 0,
+          "standard_deviation": 0.002381787317578803
+        },
+        "total_cap_triggers": 0
+      },
+      {
+        "direction_exponents": [
+          -0.046234073701521286,
+          -0.04174644540426181,
+          -0.03625068295951662,
+          -0.04180838924226665
+        ],
+        "dt": 0.1,
+        "summary": {
+          "count": 4,
+          "maximum": -0.03625068295951662,
+          "mean": -0.041509897826891594,
+          "minimum": -0.046234073701521286,
+          "positive_count": 0,
+          "standard_deviation": 0.004087469901910126
+        },
+        "total_cap_triggers": 0
+      },
+      {
+        "direction_exponents": [
+          -0.040952377982360594,
+          -0.03720986139983058,
+          -0.045624093269673115,
+          -0.05188535002173687
+        ],
+        "dt": 0.05,
+        "summary": {
+          "count": 4,
+          "maximum": -0.03720986139983058,
+          "mean": -0.04391792066840029,
+          "minimum": -0.05188535002173687,
+          "positive_count": 0,
+          "standard_deviation": 0.0063293880172601985
+        },
+        "total_cap_triggers": 0
+      }
+    ]
+  },
+  "grid_sensitivity": [
+    {
+      "direction_exponents": [
+        -0.044792491376354035,
+        -0.04011884184079961,
+        -0.04423087145390178,
+        -0.0456229181028834
+      ],
+      "size": 16,
+      "summary": {
+        "count": 4,
+        "maximum": -0.04011884184079961,
+        "mean": -0.043691280693484706,
+        "minimum": -0.0456229181028834,
+        "positive_count": 0,
+        "standard_deviation": 0.002449310487624051
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.04315690103816857,
+        -0.04071718563056873,
+        -0.04332581083525892,
+        -0.0443600110271271
+      ],
+      "size": 24,
+      "summary": {
+        "count": 4,
+        "maximum": -0.04071718563056873,
+        "mean": -0.042889977132780824,
+        "minimum": -0.0443600110271271,
+        "positive_count": 0,
+        "standard_deviation": 0.0015430729028030569
+      },
+      "total_cap_triggers": 0
+    }
+  ],
+  "horizon_sensitivity": [
+    {
+      "direction_exponents": [
+        -0.08085777498935184,
+        -0.0786893312646256,
+        -0.08352529673858482,
+        -0.08909869424875397
+      ],
+      "measure_time": 20.0,
+      "summary": {
+        "count": 4,
+        "maximum": -0.0786893312646256,
+        "mean": -0.08304277431032905,
+        "minimum": -0.08909869424875397,
+        "positive_count": 0,
+        "standard_deviation": 0.004495689883256217
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.03928570672608923,
+        -0.042184106910397125,
+        -0.045520898909569014,
+        -0.045723852802712205
+      ],
+      "measure_time": 40.0,
+      "summary": {
+        "count": 4,
+        "maximum": -0.03928570672608923,
+        "mean": -0.043178641337191896,
+        "minimum": -0.045723852802712205,
+        "positive_count": 0,
+        "standard_deviation": 0.003060953585185238
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.028717516164470935,
+        -0.021611878590722257,
+        -0.022581187033923547,
+        -0.025464638753483232
+      ],
+      "measure_time": 80.0,
+      "summary": {
+        "count": 4,
+        "maximum": -0.021611878590722257,
+        "mean": -0.024593805135649995,
+        "minimum": -0.028717516164470935,
+        "positive_count": 0,
+        "standard_deviation": 0.003199263528892737
+      },
+      "total_cap_triggers": 0
+    }
+  ],
+  "kappa_sweep": [
+    {
+      "direction_exponents": [
+        -0.005001250390692494,
+        -0.005001250255915015,
+        -0.005001251390008718
+      ],
+      "kappa": 0.0,
+      "summary": {
+        "count": 3,
+        "maximum": -0.005001250255915015,
+        "mean": -0.005001250678872075,
+        "minimum": -0.005001251390008718,
+        "positive_count": 0,
+        "standard_deviation": 6.195383242529992e-10
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.013471560385731987,
+        -0.013377698922662268,
+        -0.013225423422978938
+      ],
+      "kappa": 0.25,
+      "summary": {
+        "count": 3,
+        "maximum": -0.013225423422978938,
+        "mean": -0.013358227577124397,
+        "minimum": -0.013471560385731987,
+        "positive_count": 0,
+        "standard_deviation": 0.0001242183604831236
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.02740759093379085,
+        -0.02616350749104369,
+        -0.03131641585246586
+      ],
+      "kappa": 0.5,
+      "summary": {
+        "count": 3,
+        "maximum": -0.02616350749104369,
+        "mean": -0.028295838092433467,
+        "minimum": -0.03131641585246586,
+        "positive_count": 0,
+        "standard_deviation": 0.002688838672444136
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.038960759362195924,
+        -0.03719425726590857,
+        -0.04225934536833826
+      ],
+      "kappa": 0.75,
+      "summary": {
+        "count": 3,
+        "maximum": -0.03719425726590857,
+        "mean": -0.03947145399881425,
+        "minimum": -0.04225934536833826,
+        "positive_count": 0,
+        "standard_deviation": 0.0025708726398339433
+      },
+      "total_cap_triggers": 0
+    },
+    {
+      "direction_exponents": [
+        -0.04504794127202338,
+        -0.05310637073284753,
+        -0.04490120619626167
+      ],
+      "kappa": 1.0,
+      "summary": {
+        "count": 3,
+        "maximum": -0.04490120619626167,
+        "mean": -0.04768517273371086,
+        "minimum": -0.05310637073284753,
+        "positive_count": 0,
+        "standard_deviation": 0.004695468411670692
+      },
+      "total_cap_triggers": 0
+    }
+  ],
+  "primary_regimes": {
+    "continuous_mode_coupled_kappa0_5": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.029315856970737957,
+          -0.02963629782517984,
+          -0.028913689584494078,
+          -0.02787757553943717,
+          -0.029106050553867002,
+          -0.03252536887208958
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.02787757553943717,
+          "mean": -0.029562473224300934,
+          "minimum": -0.03252536887208958,
+          "positive_count": 0,
+          "standard_deviation": 0.0015692764155321786
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.0293157823701915,
+          -0.029636338483020754,
+          -0.028913652081129983,
+          -0.027877589649729185,
+          -0.029106032735750666,
+          -0.03252531895568592
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.027877589649729185,
+          "mean": -0.02956245237925133,
+          "minimum": -0.03252531895568592,
+          "positive_count": 0,
+          "standard_deviation": 0.0015692614017174733
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "continuous_mode_coupled_kappa1": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.03990891034134706,
+          -0.04182109640813812,
+          -0.04082093098801403,
+          -0.04870481049349974,
+          -0.047413745315333204,
+          -0.043405752046789106
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.03990891034134706,
+          "mean": -0.04367920759885355,
+          "minimum": -0.04870481049349974,
+          "positive_count": 0,
+          "standard_deviation": 0.0036087587378636227
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.03990891786477703,
+          -0.04182113565177527,
+          -0.04082094781156844,
+          -0.048704935012313696,
+          -0.047413720439268524,
+          -0.04340576908891005
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.03990891786477703,
+          "mean": -0.04367923764476884,
+          "minimum": -0.048704935012313696,
+          "positive_count": 0,
+          "standard_deviation": 0.003608779734313135
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "continuous_mode_coupled_mu_kappa1": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.04616703206008482,
+          -0.04673917408780528,
+          -0.03661455440608542,
+          -0.039453139803257334,
+          -0.042404113191353905,
+          -0.0434243043020033
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.03661455440608542,
+          "mean": -0.04246705297509834,
+          "minimum": -0.04673917408780528,
+          "positive_count": 0,
+          "standard_deviation": 0.0039037563360924013
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.0461671200485302,
+          -0.04673917423634246,
+          -0.0366145606700027,
+          -0.039453092366213555,
+          -0.04240408870503252,
+          -0.04342426722978245
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.0366145606700027,
+          "mean": -0.042467050542650646,
+          "minimum": -0.04673917423634246,
+          "positive_count": 0,
+          "standard_deviation": 0.003903776755410622
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "driven_cavity_continuous_kappa0_5": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.056103052795666464,
+          -0.05901453446855691,
+          -0.05792863001871644,
+          -0.06044662463588753,
+          -0.05993750573729979,
+          -0.05991419630262631
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.056103052795666464,
+          "mean": -0.058890757326458903,
+          "minimum": -0.06044662463588753,
+          "positive_count": 0,
+          "standard_deviation": 0.0016294869711842182
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.05610301700345035,
+          -0.059014503249179784,
+          -0.05792861037039308,
+          -0.06044663723779249,
+          -0.05993751499061558,
+          -0.05991419320966627
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.05610301700345035,
+          "mean": -0.058890746010182925,
+          "minimum": -0.06044663723779249,
+          "positive_count": 0,
+          "standard_deviation": 0.0016295042705813845
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "legacy_mode_coupled_kappa1": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.044794181558056013,
+          -0.04806859085757653,
+          -0.04875196665488706,
+          -0.04289885474583912,
+          -0.04290689433849633,
+          -0.043825302376545694
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.04289885474583912,
+          "mean": -0.04520763175523346,
+          "minimum": -0.04875196665488706,
+          "positive_count": 0,
+          "standard_deviation": 0.0025866200487429025
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.04479415200136283,
+          -0.04806864901337817,
+          -0.048751837259135455,
+          -0.04289877765196667,
+          -0.042906929199715185,
+          -0.04382533681452564
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.04289877765196667,
+          "mean": -0.04520761365668066,
+          "minimum": -0.048751837259135455,
+          "positive_count": 0,
+          "standard_deviation": 0.002586602278373438
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "rd0_continuous_kappa1": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.02927615051022366,
+          -0.020017009325964973,
+          -0.01998092959879665,
+          -0.009980079807697457,
+          -0.008199790453747007,
+          -0.02510024023748387
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.008199790453747007,
+          "mean": -0.018759033322318933,
+          "minimum": -0.02927615051022366,
+          "positive_count": 0,
+          "standard_deviation": 0.00827603562088332
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.029275996446843488,
+          -0.020016930764872428,
+          -0.019981111789884813,
+          -0.009979971243380506,
+          -0.008199807954127026,
+          -0.025099837011166713
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.008199807954127026,
+          "mean": -0.018758942535045828,
+          "minimum": -0.029275996446843488,
+          "positive_count": 0,
+          "standard_deviation": 0.008275956232999954
+        },
+        "total_cap_triggers": 0
+      }
+    },
+    "zero_kappa_damping_control": {
+      "1e-07": {
+        "direction_exponents": [
+          -0.00500125069237188,
+          -0.005001249909194006,
+          -0.0050012511945918894,
+          -0.0050012507378233055,
+          -0.005001249521201461,
+          -0.0050012502776012
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.005001249521201461,
+          "mean": -0.00500125038879729,
+          "minimum": -0.0050012511945918894,
+          "positive_count": 0,
+          "standard_deviation": 6.096536773276858e-10
+        },
+        "total_cap_triggers": 0
+      },
+      "1e-09": {
+        "direction_exponents": [
+          -0.005001222715633557,
+          -0.00500131464421693,
+          -0.005001258790769377,
+          -0.0050013434622858885,
+          -0.005001275531787884,
+          -0.005001271535999228
+        ],
+        "summary": {
+          "count": 6,
+          "maximum": -0.005001222715633557,
+          "mean": -0.005001281113448811,
+          "minimum": -0.0050013434622858885,
+          "positive_count": 0,
+          "standard_deviation": 4.252805948627736e-08
+        },
+        "total_cap_triggers": 0
+      }
+    }
+  },
+  "primary_summary": {
+    "estimates": 84,
+    "maximum": -0.005001222715633557,
+    "minimum": -0.06044663723779249,
+    "positive_estimates": 0
+  }
 }
 ```
