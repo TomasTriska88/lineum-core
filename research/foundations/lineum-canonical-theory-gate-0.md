@@ -1,10 +1,10 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** active — RD-0 characterization approved and implemented; physics corrections and whitepaper changes remain gated
-**Research version:** 0.2
+**Document status:** active — RD-0 characterized and phi time-step inconsistency reproduced; physics corrections and whitepaper changes remain gated
+**Research version:** 0.3
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
-**Current confidence:** high for the source audit, backend-divergence result, and RD-0 software fingerprint; medium for the recommended sequencing; no claim of physical validation
+**Current confidence:** high for the source audit, backend-divergence result, RD-0 software fingerprint, and phi time-step inconsistency; medium for the recommended sequencing; no claim of physical validation
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
 **Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
@@ -15,6 +15,8 @@
 **The immediate recommendation is to freeze meaning before freezing ambitious physics.** Lineum should presently be described as a research platform for effective, open, coupled-field dynamics. Claims about fundamental spacetime, quantum mechanics, particles, gravity, or an ontic lattice should remain separate hypotheses.
 
 **The smallest safe software step is a provisional deterministic reference lane, not promotion of Eq-11.1 or the biharmonic candidate.** A noise-free diffusive subset already agrees across NumPy and PyTorch to approximately machine precision in the tested configuration. It can serve as a ruler for later changes while the physical theory remains open. This proposed lane is named **Reference Dynamics 0 (`RD-0`)** to avoid assigning another historical `Eq-N` label prematurely.
+
+**A fixed-physical-time refinement experiment now identifies one concrete numerical inconsistency.** The current \(\phi\)-diffusion is applied once per update without multiplication by the time step \(h\). Halving \(h\) therefore applies nearly twice as much \(\phi\)-diffusion over the same declared time. An otherwise identical hypothetical variant containing the missing factor converges at the expected first-order rate. This is strong evidence for a numerical defect if \(h\) is intended as physical or continuum time; it is not yet authorization to change the production solver.
 
 **On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
@@ -268,17 +270,114 @@ The contract was executed with Python 3.11.15, NumPy 1.26.4, and PyTorch 2.5.1+c
 
 This passes only the first **RD-0 characterization increment**. Full Gate 0 remains open until mode rejection, parameter semantics, boundary controls, time-step refinement, and broader fixtures are resolved.
 
-## 11. Limitations and Robustness
+## 11. Phi-Diffusion Time-Step Refinement
+
+### 11.1 Question and two competing interpretations
+
+The experiment asks whether a trajectory at a fixed declared physical time \(T\) approaches one result as the integration step \(h\) is reduced. The audited ordered map applies the \(\phi\) reaction with \(h\), but applies \(\phi\)-diffusion without it:
+
+\[
+\phi_{n+1}
+=\phi_n+hR(\psi_n,\phi_n)
++\kappa D_\phi\mathcal L_\kappa[\phi_n].
+\]
+
+The tested hypothetical candidate is
+
+\[
+\phi_{n+1}^{\mathrm{candidate}}
+=\phi_n+hR(\psi_n,\phi_n)
++h\kappa D_\phi\mathcal L_\kappa[\phi_n].
+\]
+
+The first equation can still define a discrete automaton in which `phi_diffusion` is a per-update mixing fraction. It cannot simultaneously treat \(h\) as a freely refinable physical-time step while keeping the same diffusion coefficient. The second equation is the usual explicit-Euler interpretation of a diffusion term in a continuous-time PDE.
+
+### 11.2 Analytically checkable isolated mode
+
+To isolate the issue, set \(\psi=0\), reaction and drift to zero, \(\kappa=1\), and initialize
+
+\[
+\phi_{ij}(0)=0.5+0.1\cos\left(\frac{2\pi i}{32}\right)
+\cos\left(\frac{2\pi j}{32}\right).
+\]
+
+For this LAP4 Fourier mode,
+
+\[
+\lambda_4=4\cos\left(\frac{2\pi}{32}\right)-4
+=-0.07685887838707828.
+\]
+
+With \(D_\phi=0.05\), the inner Laplace rate \(r_L=0.05\), and \(\alpha=D_\phi r_L=0.0025\), the amplitude ratios at \(T=10\) are exactly
+
+\[
+\frac{A_h^{\mathrm{current}}(T)}{A_0}
+=(1+\alpha\lambda_4)^{T/h},
+\qquad
+\frac{A_h^{\mathrm{candidate}}(T)}{A_0}
+=(1+h\alpha\lambda_4)^{T/h}.
+\]
+
+The candidate has the finite limit \(\exp(\alpha\lambda_4T)=0.9980803728857736\). For the current rule, the effective diffusion per declared unit time is proportional to \(1/h\); every nonconstant stable Fourier mode is driven toward zero as \(h\rightarrow0\).
+
+| \(h\) | Steps to \(T=10\) | Current amplitude ratio | Candidate amplitude ratio |
+|---:|---:|---:|---:|
+| 0.2 | 50 | 0.9904377291366023 | 0.9980803360351589 |
+| 0.1 | 100 | 0.9809668952972694 | 0.9980803544607016 |
+| 0.05 | 200 | 0.9622960496691637 | 0.9980803636732973 |
+| 0.025 | 400 | 0.9260136872088776 | 0.9980803682795497 |
+
+Across the tested steps, the current amplitude ratios span `0.06442404192772477`; the candidate ratios span only `3.224439082405439e-08` and approach the analytic continuum limit. Numerical and analytic ratios agree within \(8.8818\times10^{-15}\).
+
+### 11.3 Coupled RD-0 refinement
+
+The same comparison was repeated with the full deterministic RD-0 Gaussian \(\psi\) packet and smooth \(\phi\) fixture, keeping the final declared time at \(T=10\). Each row compares a coarse result with the next halved-step result; errors use the finer state as the denominator.
+
+| Coarse/fine \(h\) | Current \(\phi\) relative L2 | Candidate \(\phi\) relative L2 | Current \(\psi\) relative L2 | Candidate \(\psi\) relative L2 |
+|---:|---:|---:|---:|---:|
+| 0.2 / 0.1 | 0.001788257370643413 | 0.00005472604949309865 | 0.00004983371913436278 | 0.00020154848536682308 |
+| 0.1 / 0.05 | 0.003492066024134346 | 0.00002733544309864967 | 0.0002991370408839292 | 0.00010083083048908117 |
+| 0.05 / 0.025 | 0.006706569703660991 | 0.000013660892239002042 | 0.0007104033537449127 | 0.000050429604214551325 |
+
+When \(h\) is halved, the current \(\phi\) discrepancy grows by factors `1.952775971435199` and `1.9205162953136015`. The candidate discrepancy shrinks by factors `2.0020180135950105` and `2.000999833715611`, the expected signature of first-order convergence. The candidate \(\psi\) discrepancy also halves; the current \(\psi\) discrepancy grows.
+
+### 11.4 Runtime cross-check
+
+The standalone reconstruction was checked against the audited NumPy runtime for every tested \(h\). The maximum isolated amplitude-ratio difference was exactly `0`; the maximum coupled \(\phi\) element difference was exactly `0`; and the maximum coupled \(\psi\) element difference was \(1.1102230246251565\times10^{-16}\).
+
+### 11.5 Historical-intent audit and conclusion
+
+The source history makes the likely intent more nuanced than a simple typographical omission. Before the March 3, 2026 configuration refactor, both the baseline \(\phi\) reaction and \(\phi\)-diffusion were written as per-update increments without an explicit `DT` multiplier. Revision `ce5c855bde32dd2f0b37d247f65061ef6fba2550` then multiplied the reaction by configurable `cfg.dt` but left \(\phi\)-diffusion unchanged. The same revision already multiplied \(\psi\)-drift, interaction, damping, and \(\psi\)-diffusion by `cfg.dt`. No adjacent comment or commit rationale identifies \(\phi\)-diffusion as an intentional exception.
+
+The canonical whitepaper also describes its main update as a per-step increment with the internal scheme step absorbed and labels at least one coefficient as a per-step quantity. That provides evidence that early Lineum semantics were closer to a discrete update rule than to a conventional method-of-lines PDE integrator.
+
+The most defensible interpretation is therefore:
+
+1. the original absence of an explicit \(h\) may have been compatible with a deliberate per-update automaton convention;
+2. after `dt` became a configurable integration parameter and neighboring terms adopted it, retaining only \(\phi\)-diffusion in per-update units created mixed time semantics;
+3. the present behavior is best classified as **legacy time-semantics migration debt**, and as a numerical defect whenever `dt` is used to refine a fixed physical-time trajectory.
+
+The evidence supports this narrow conclusion with high confidence:
+
+> **If `dt`/\(h\) represents physical or continuum time, the missing factor on \(\phi\)-diffusion is a numerical inconsistency. Multiplying that term by \(h\) restores the expected refinement behavior in both the isolated analytic control and the coupled RD-0 fixture.**
+
+This does not prove that the candidate is the final Lineum law, nor does it decide the physical value or units of \(D_\phi\). If Lineum instead chooses a strictly discrete per-update automaton semantics, the current term may be retained, but then changing \(h\) changes the model rather than merely refining its integration.
+
+No production equation, default, dispatch, whitepaper, or RD-0 fingerprint was changed by this experiment.
+
+## 12. Limitations and Robustness
 
 - The backend comparison isolates deterministic evolution. It does not assess stochastic equivalence across random-number generators.
 - The comparison disables the absorbing boundary to isolate bulk dynamics. Boundary policy remains a separate Gate 0 choice.
 - The test covers one smooth initial state and three horizons. A permanent contract should add impulses, edge-localized states, nonuniform \(\kappa\), and zero-state controls.
 - The fingerprint is sensitive at \(10^{-12}\) resolution but is not a proof of bitwise portability across every future Python, NumPy, PyTorch, compiler, or CPU combination.
+- The refinement experiment tests one Fourier mode and one coupled smooth fixture. Additional modes, nonuniform \(\kappa\), boundary-localized states, and stability limits should be tested before promotion.
+- The hypothetical time-scaled branch tests numerical consistency only. It does not calibrate \(h\), \(D_\phi\), or any field to SI units.
 - The source snapshot contained uncommitted work. Revision identifiers and working-tree counts are therefore recorded explicitly.
 - The option assessment concerns readiness for canonicalization, not ultimate scientific merit.
 - No chart is used because three exact time checkpoints and five discrete options are clearer as audit tables than as plots.
 
-## 12. Decision Record and Next Gate
+## 13. Decision Record and Next Gate
 
 The approved decision is:
 
@@ -286,12 +385,12 @@ The approved decision is:
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-The next proposed gate is a read-only time-step refinement experiment focused on the missing \(h\) factor in \(\phi\)-diffusion. No correction should be applied until the experiment measures whether trajectories converge to a common physical-time horizon when \(h\) is halved.
+The approved read-only time-step refinement experiment is complete. The next proposed gate is an isolated, non-default candidate implementation that adds \(h\) only to \(\phi\)-diffusion, preserves RD-0 as the before-state, and must pass the refinement controls above before any default or canonical text changes. This requires a separate owner decision because it changes an equation rather than merely observing it.
 
-## 13. Further Questions
+## 14. Further Questions
 
 1. Should \(\kappa\) be a fixed part of the Lineum law, an environmental coefficient map, or an extension?
-2. After a time-step refinement experiment, should the missing \(h\) factor in \(\phi\)-diffusion be the first isolated correction?
+2. Should the missing \(h\) factor in \(\phi\)-diffusion become the first isolated non-default correction candidate?
 3. Is locality a hard architectural requirement, or may a global spectral update remain a candidate if its nonlocal numerical kernel is declared?
 4. Is the core research target an effective nonlinear medium, or must every retained candidate aim at fundamental spacetime?
 5. Which single observable should be the first physical discriminator after software identity is achieved?
@@ -565,6 +664,361 @@ The output SHA-256 after normalizing line endings to LF and including the final 
     ],
     "quantization_scale": 1000000000000,
     "resolution": 1e-12
+  }
+}
+```
+
+## Appendix C — Standalone Phi Time-Step Refinement Program
+
+The following independent program reproduces the isolated analytic control and the coupled RD-0 refinement tables. It requires only NumPy and no Lineum repository or data file. It was executed with Python 3.11.15 and NumPy 1.26.4. Two consecutive runs produced bitwise-identical LF-normalized output. The embedded program SHA-256 is `12c10b6f9d6e72f43b283c324d683701dcdfa05bf19207499de6c11c9a1975d1`.
+
+```python
+"""Standalone time-step refinement study for the Lineum phi diffusion term."""
+
+import json
+
+import numpy as np
+
+
+SIZE = 32
+PHYSICAL_TIME = 10.0
+TIME_STEPS = (0.2, 0.1, 0.05, 0.025)
+D_PSI = 0.05
+D_PHI_CONFIG = 0.05
+PHI_LAPLACE_RATE = 0.05
+REACTION = 0.0007
+DRIFT = -0.004
+
+
+def weighted_laplace(field, kappa, rate):
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    neighbors = (
+        f_up * k_up
+        + f_down * k_down
+        + f_left * k_left
+        + f_right * k_right
+    )
+    active = k_up + k_down + k_left + k_right
+    return rate * (neighbors - active * field)
+
+
+def make_phi_mode(size=SIZE):
+    y, x = np.mgrid[:size, :size]
+    mode = np.cos(2 * np.pi * x / size) * np.cos(2 * np.pi * y / size)
+    phi = 0.5 + 0.1 * mode
+    kappa = np.ones((size, size), dtype=np.float64)
+    return phi.astype(np.float64), kappa, mode
+
+
+def mode_amplitude(phi, mode):
+    centered = phi - np.mean(phi)
+    return float(np.sum(centered * mode) / np.sum(mode**2))
+
+
+def evolve_phi_mode(dt, diffusion_scales_with_dt):
+    phi, kappa, mode = make_phi_mode()
+    initial_amplitude = mode_amplitude(phi, mode)
+    multiplier = dt if diffusion_scales_with_dt else 1.0
+    steps = round(PHYSICAL_TIME / dt)
+    for _ in range(steps):
+        phi += (
+            kappa
+            * D_PHI_CONFIG
+            * weighted_laplace(phi, kappa, PHI_LAPLACE_RATE)
+            * multiplier
+        )
+    return mode_amplitude(phi, mode) / initial_amplitude
+
+
+def analytic_mode_ratio(dt, diffusion_scales_with_dt):
+    wave_number = 2 * np.pi / SIZE
+    lap4_eigenvalue = 4 * np.cos(wave_number) - 4
+    alpha = D_PHI_CONFIG * PHI_LAPLACE_RATE
+    multiplier = dt if diffusion_scales_with_dt else 1.0
+    per_step_factor = 1 + alpha * lap4_eigenvalue * multiplier
+    return float(per_step_factor ** round(PHYSICAL_TIME / dt))
+
+
+def make_coupled_state(size=SIZE):
+    y, x = np.mgrid[:size, :size]
+    center = (size - 1) / 2
+    radius_squared = (x - center) ** 2 + (y - center) ** 2
+    envelope = np.exp(-radius_squared / (2 * 3.5**2))
+    phase = 0.17 * x - 0.11 * y
+    psi = (envelope * np.exp(1j * phase)).astype(np.complex128)
+    phi = (
+        0.25
+        + 0.08
+        * np.cos(2 * np.pi * x / size)
+        * np.cos(2 * np.pi * y / size)
+    ).astype(np.float64)
+    return psi, phi, np.ones((size, size), dtype=np.float64)
+
+
+def coupled_step(psi, phi, kappa, dt, diffusion_scales_with_dt):
+    phi_clipped = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(0.4 * phi_clipped * kappa)
+    interaction = interaction_factor * psi
+    interaction = interaction / (1.0 + np.abs(interaction) / 10.0)
+    grad_phi_x, grad_phi_y = np.gradient(phi)
+    flow = DRIFT * (grad_phi_x + 1j * grad_phi_y) * kappa
+    flow = flow / (1.0 + np.abs(flow) / 10.0)
+
+    psi += flow * dt
+    psi += interaction * dt
+    psi -= 0.005 * psi * dt
+    psi += weighted_laplace(psi, kappa, D_PSI) * kappa * dt
+
+    scale_ratio = (128.0 / SIZE) ** 2
+    phi += kappa * REACTION * scale_ratio * (np.abs(psi) ** 2 - phi) * dt
+    phi_diffusion_multiplier = dt if diffusion_scales_with_dt else 1.0
+    phi += (
+        kappa
+        * D_PHI_CONFIG
+        * weighted_laplace(phi, kappa, PHI_LAPLACE_RATE)
+        * phi_diffusion_multiplier
+    )
+    return psi, phi
+
+
+def evolve_coupled(dt, diffusion_scales_with_dt):
+    psi, phi, kappa = make_coupled_state()
+    for _ in range(round(PHYSICAL_TIME / dt)):
+        psi, phi = coupled_step(
+            psi, phi, kappa, dt, diffusion_scales_with_dt
+        )
+    return psi, phi
+
+
+def relative_to_reference(estimate, reference):
+    return float(
+        np.linalg.norm(estimate - reference)
+        / (np.linalg.norm(reference) + 1e-30)
+    )
+
+
+isolated = {"current_missing_dt": [], "hypothetical_with_dt": []}
+for dt in TIME_STEPS:
+    for label, scaled in (
+        ("current_missing_dt", False),
+        ("hypothetical_with_dt", True),
+    ):
+        numerical = evolve_phi_mode(dt, scaled)
+        analytic = analytic_mode_ratio(dt, scaled)
+        isolated[label].append(
+            {
+                "dt": dt,
+                "steps": round(PHYSICAL_TIME / dt),
+                "numerical_amplitude_ratio": numerical,
+                "analytic_amplitude_ratio": analytic,
+                "absolute_numerical_error": abs(numerical - analytic),
+            }
+        )
+
+
+coupled_states = {"current_missing_dt": {}, "hypothetical_with_dt": {}}
+for label, scaled in (
+    ("current_missing_dt", False),
+    ("hypothetical_with_dt", True),
+):
+    for dt in TIME_STEPS:
+        coupled_states[label][dt] = evolve_coupled(dt, scaled)
+
+
+coupled_pairwise = {"current_missing_dt": [], "hypothetical_with_dt": []}
+for label in coupled_pairwise:
+    for coarse, fine in zip(TIME_STEPS, TIME_STEPS[1:]):
+        coarse_psi, coarse_phi = coupled_states[label][coarse]
+        fine_psi, fine_phi = coupled_states[label][fine]
+        coupled_pairwise[label].append(
+            {
+                "coarse_dt": coarse,
+                "fine_dt": fine,
+                "psi_relative_l2": relative_to_reference(
+                    coarse_psi, fine_psi
+                ),
+                "phi_relative_l2": relative_to_reference(
+                    coarse_phi, fine_phi
+                ),
+            }
+        )
+
+
+lap4_eigenvalue = 4 * np.cos(2 * np.pi / SIZE) - 4
+alpha = D_PHI_CONFIG * PHI_LAPLACE_RATE
+output = {
+    "configuration": {
+        "grid_size": SIZE,
+        "physical_time": PHYSICAL_TIME,
+        "time_steps": list(TIME_STEPS),
+        "phi_diffusion_config": D_PHI_CONFIG,
+        "inner_laplace_rate": PHI_LAPLACE_RATE,
+        "effective_alpha": alpha,
+        "lap4_mode_eigenvalue": float(lap4_eigenvalue),
+    },
+    "isolated_phi_mode": isolated,
+    "isolated_summary": {
+        "current_ratio_spread": max(
+            row["numerical_amplitude_ratio"]
+            for row in isolated["current_missing_dt"]
+        )
+        - min(
+            row["numerical_amplitude_ratio"]
+            for row in isolated["current_missing_dt"]
+        ),
+        "hypothetical_ratio_spread": max(
+            row["numerical_amplitude_ratio"]
+            for row in isolated["hypothetical_with_dt"]
+        )
+        - min(
+            row["numerical_amplitude_ratio"]
+            for row in isolated["hypothetical_with_dt"]
+        ),
+        "hypothetical_continuous_limit": float(
+            np.exp(alpha * lap4_eigenvalue * PHYSICAL_TIME)
+        ),
+    },
+    "coupled_rd0_pairwise_refinement": coupled_pairwise,
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+## Appendix D — Full Phi Time-Step Refinement Output
+
+The output SHA-256 after normalizing line endings to LF and including the final newline is `e90f66e55d27345a4221b5cedc5c945b8912365355431e7a94b231ed602993d5`.
+
+```json
+{
+  "configuration": {
+    "effective_alpha": 0.0025000000000000005,
+    "grid_size": 32,
+    "inner_laplace_rate": 0.05,
+    "lap4_mode_eigenvalue": -0.07685887838707828,
+    "phi_diffusion_config": 0.05,
+    "physical_time": 10.0,
+    "time_steps": [
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ]
+  },
+  "coupled_rd0_pairwise_refinement": {
+    "current_missing_dt": [
+      {
+        "coarse_dt": 0.2,
+        "fine_dt": 0.1,
+        "phi_relative_l2": 0.001788257370643413,
+        "psi_relative_l2": 4.983371913436278e-05
+      },
+      {
+        "coarse_dt": 0.1,
+        "fine_dt": 0.05,
+        "phi_relative_l2": 0.003492066024134346,
+        "psi_relative_l2": 0.0002991370408839292
+      },
+      {
+        "coarse_dt": 0.05,
+        "fine_dt": 0.025,
+        "phi_relative_l2": 0.006706569703660991,
+        "psi_relative_l2": 0.0007104033537449127
+      }
+    ],
+    "hypothetical_with_dt": [
+      {
+        "coarse_dt": 0.2,
+        "fine_dt": 0.1,
+        "phi_relative_l2": 5.472604949309865e-05,
+        "psi_relative_l2": 0.00020154848536682308
+      },
+      {
+        "coarse_dt": 0.1,
+        "fine_dt": 0.05,
+        "phi_relative_l2": 2.7335443098649967e-05,
+        "psi_relative_l2": 0.00010083083048908117
+      },
+      {
+        "coarse_dt": 0.05,
+        "fine_dt": 0.025,
+        "phi_relative_l2": 1.3660892239002042e-05,
+        "psi_relative_l2": 5.0429604214551325e-05
+      }
+    ]
+  },
+  "isolated_phi_mode": {
+    "current_missing_dt": [
+      {
+        "absolute_numerical_error": 1.3322676295501878e-15,
+        "analytic_amplitude_ratio": 0.990437729136601,
+        "dt": 0.2,
+        "numerical_amplitude_ratio": 0.9904377291366023,
+        "steps": 50
+      },
+      {
+        "absolute_numerical_error": 2.55351295663786e-15,
+        "analytic_amplitude_ratio": 0.9809668952972669,
+        "dt": 0.1,
+        "numerical_amplitude_ratio": 0.9809668952972694,
+        "steps": 100
+      },
+      {
+        "absolute_numerical_error": 4.6629367034256575e-15,
+        "analytic_amplitude_ratio": 0.962296049669159,
+        "dt": 0.05,
+        "numerical_amplitude_ratio": 0.9622960496691637,
+        "steps": 200
+      },
+      {
+        "absolute_numerical_error": 8.881784197001252e-15,
+        "analytic_amplitude_ratio": 0.9260136872088687,
+        "dt": 0.025,
+        "numerical_amplitude_ratio": 0.9260136872088776,
+        "steps": 400
+      }
+    ],
+    "hypothetical_with_dt": [
+      {
+        "absolute_numerical_error": 8.881784197001252e-16,
+        "analytic_amplitude_ratio": 0.9980803360351598,
+        "dt": 0.2,
+        "numerical_amplitude_ratio": 0.9980803360351589,
+        "steps": 50
+      },
+      {
+        "absolute_numerical_error": 1.3322676295501878e-15,
+        "analytic_amplitude_ratio": 0.998080354460703,
+        "dt": 0.1,
+        "numerical_amplitude_ratio": 0.9980803544607016,
+        "steps": 100
+      },
+      {
+        "absolute_numerical_error": 3.3306690738754696e-16,
+        "analytic_amplitude_ratio": 0.9980803636732977,
+        "dt": 0.05,
+        "numerical_amplitude_ratio": 0.9980803636732973,
+        "steps": 200
+      },
+      {
+        "absolute_numerical_error": 9.992007221626409e-16,
+        "analytic_amplitude_ratio": 0.9980803682795507,
+        "dt": 0.025,
+        "numerical_amplitude_ratio": 0.9980803682795497,
+        "steps": 400
+      }
+    ]
+  },
+  "isolated_summary": {
+    "current_ratio_spread": 0.06442404192772477,
+    "hypothetical_continuous_limit": 0.9980803728857736,
+    "hypothetical_ratio_spread": 3.224439082405439e-08
   }
 }
 ```
