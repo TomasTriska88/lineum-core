@@ -1,11 +1,11 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** active — named deterministic and legacy time profiles implemented; stochastic time semantics remain unresolved; default physics and whitepaper changes remain gated
-**Research version:** 0.6
+**Document status:** active — deterministic time profiles implemented and stochastic contracts numerically separated; physical stochastic semantics remain unresolved; default physics and whitepaper changes remain gated
+**Research version:** 0.7
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
-**Current confidence:** high for the source audit, RD-0 fingerprint, deterministic time-scaled candidate, and distinction between initial branch selection and ongoing stochastic forcing; medium for stochastic interpretation and sequencing; no claim of physical validation
-**Decision readiness:** deterministic continuous-time profile implemented for explicit opt-in use; stochastic theory needs revision; major-discovery and fundamental-physics claims are not ready
+**Current confidence:** high for the source audit, RD-0 fingerprint, deterministic time-scaled candidate, and numerical distinction among current, initial-only, Gaussian-SDE, and Poisson-event stochastic contracts; medium for physical stochastic interpretation and sequencing; no claim of physical validation
+**Decision readiness:** deterministic continuous-time profile implemented for explicit opt-in use; three time-consistent stochastic alternatives are now characterized but no physical contract is selected; major-discovery and fundamental-physics claims are not ready
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
 **Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
@@ -22,6 +22,8 @@
 **Broader falsification supports `RD-0-C1=True` for deterministic continuous-time simulations but not yet for the entire stochastic theory.** Four Fourier modes, periodic edge coupling, nonuniform \(\kappa\), the analytic stability boundary, and cross-backend parity passed. The stochastic audit found two different effects: vacuum noise selects persistent phase branches, while fresh randomness added after a shared nonzero state shrinks as \(\sqrt h\). Current “quantum foam” therefore behaves more like stochastic branch selection than a demonstrated continuously driven quantum vacuum.
 
 **The approved profile gate is now implemented without changing the default runtime.** `legacy-per-update-v1` fixes `phi_diffusion_scales_with_dt=False`. `rd0-c1-deterministic-continuous-time-v1` fixes the validated deterministic subset and `phi_diffusion_scales_with_dt=True`. Profile-defining values fail closed if a caller attempts to override them, while \(h\) and numerical coefficients remain adjustable for controlled refinement experiments.
+
+**A direct stochastic-contract comparison confirms that the current ongoing randomness has no nonzero continuous-time variance limit.** Its measured ensemble-spread exponent is `0.4883584910429441`, close to the analytic value \(1/2\). Initial-condition randomness, Gaussian \(\sqrt h\) forcing, and Poisson-rate events instead have exponents near zero and retain finite ensemble spread as \(h\) is refined. This separation survives a second initial field, a doubled grid, and a fourfold longer horizon. Numerical time consistency therefore leaves three physically inequivalent candidates; it does not select one as real physics.
 
 **On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
@@ -527,6 +529,70 @@ The broader eight-case suite now obtains its configuration through the named pro
 
 This gate does **not** switch the historical simulator, audit run, stochastic linon dynamics, or any unnamed default to the new convention. It creates an explicit opt-in lane only. It also does not establish that the RD-0 subset is fundamental physics.
 
+### 12.6 Direct comparison of stochastic time contracts
+
+The next read-only gate compared four precisely declared update laws while keeping the deterministic damping and periodic LAP4 diffusion common. The nonzero initial field avoids the singular phase of exact vacuum and isolates ongoing stochastic semantics.
+
+Let \(L_4\) be the periodic four-neighbor Laplacian, \(\gamma=0.005\), \(D_\psi=0.05\), and \(h\in\{0.2,0.1,0.05,0.025\}\). Every step ends with
+
+\[
+\psi\leftarrow\psi-\gamma h\psi,
+\qquad
+\psi\leftarrow\psi+hD_\psi L_4\psi.
+\]
+
+The four stochastic contracts are:
+
+1. **current runtime semantics:** \(\Delta\psi=h(aB+\sigma Z)e^{i\arg\psi}\), with the actual amplitude- and gradient-dependent Bernoulli probability, \(a=0.03+0.02|\psi|\), and \(\sigma=0.005\);
+2. **initial-only branching:** one isotropic complex Gaussian perturbation with RMS scale `0.005` is added at \(t=0\), followed by deterministic evolution;
+3. **Gaussian SDE forcing:** \(\Delta\psi=0.005\sqrt h\,(Z_R+iZ_I)/\sqrt2\) at every step;
+4. **Poisson events:** each cell receives an integer event count \(N_h\sim\operatorname{Poisson}(2.5h)\) and increment \(0.01N_he^{i\arg\psi}\) at every step.
+
+The Gaussian and Poisson parameter values are controls chosen to give visible, comparable finite stochastic spread; they are **not** calibrated physical constants. The comparison tests time scaling, not which amplitude is correct.
+
+For ensemble \(\{\psi_s\}_{s=1}^S\), the primary observable is the RMS complex ensemble spread
+
+\[
+R(h)=\sqrt{\frac{1}{S|\Omega|}
+\sum_{s=1}^{S}\sum_{x\in\Omega}
+|\psi_s(x)-\bar\psi(x)|^2},
+\qquad
+R(h)\propto h^q.
+\]
+
+A continuous-time stochastic contract should approach \(q=0\): changing numerical resolution should not erase the physical ensemble spread. The current source-only law predicts \(q=1/2\).
+
+**Primary experiment:** phase-gradient initial field, \(8\times8\) grid, \(T=1\), and 1,024 ensemble members.
+
+| Contract | \(R(0.2)\) | \(R(0.1)\) | \(R(0.05)\) | \(R(0.025)\) | fitted \(q\) |
+|---|---:|---:|---:|---:|---:|
+| current runtime | 0.006477012524774123 | 0.004633481607547739 | 0.003309189397166538 | 0.002344596767140405 | 0.4883584910429441 |
+| initial-only | 0.004081199330359511 | 0.004090371984334379 | 0.004094852960511229 | 0.004097067965236058 | -0.0018375549150722406 |
+| Gaussian SDE | 0.004426727569595373 | 0.004493112487890099 | 0.0045196908818695425 | 0.0045298361259017445 | -0.010816373320071146 |
+| Poisson events | 0.014039277842503736 | 0.01425411108923073 | 0.014301595583609309 | 0.014322490076541412 | -0.009123887126903518 |
+
+The current spread shrinks by factors `1.3979`, `1.4002`, and `1.4114` whenever \(h\) halves, approaching \(\sqrt2\). The finest-step factors for initial-only, Gaussian, and Poisson are `0.99946`, `0.99776`, and `0.99854`; their spread is effectively stable. Splitting the primary ensemble into 16 independent blocks of 64 gives a 95% t interval `[0.4841855067201953, 0.49252687348968344]` for the current exponent. Zero is not a plausible explanation of the current result in this control.
+
+**Robustness exponents:**
+
+| Condition | Current | Initial-only | Gaussian SDE | Poisson events |
+|---|---:|---:|---:|---:|
+| packet initial field, \(8\times8\), \(T=1\), 256 members | 0.4908912808483476 | -0.0018262355838070882 | -0.011403265686550323 | -0.010601093072029558 |
+| phase-gradient field, \(16\times16\), \(T=1\), 256 members | 0.49028328526425435 | -0.0018170837095550757 | -0.010621292989555154 | -0.009446051344368614 |
+| phase-gradient field, \(8\times8\), \(T=4\), 256 members | 0.4883346728799905 | -0.00404317777227548 | -0.011315921805392133 | -0.009747470923399684 |
+
+Two complete executions were identical after text normalization. A separate validator reproduced selected current-contract trajectories through the audited NumPy runtime with maximum absolute element difference `0`. The analytic frozen-source exponent recomputed independently as `0.4999999999999996`.
+
+The decision consequence is narrow but strong:
+
+- the current **mean source** can remain finite while its **ongoing stochastic spread** vanishes under refinement;
+- initial-only randomness is a coherent model of branch selection but cannot by itself describe continuously renewed foam;
+- Gaussian \(\sqrt h\) forcing is a coherent model of continuous agitation but does not by itself define discrete linon births;
+- Poisson-rate forcing is the cleanest of these controls for genuinely discrete births with a finite rate, but the rate law and jump amplitude remain uncalibrated hypotheses;
+- a hybrid is mathematically possible, but adding all three mechanisms before identifying observables would create an underdetermined model.
+
+No production stochastic code is changed by this experiment. Before choosing a contract, Lineum must state whether “quantum foam” primarily means persistent initial branching, continuous small fluctuations, discrete localized events, or an empirically distinguishable combination.
+
 ## 13. Limitations and Robustness
 
 - The backend comparison isolates deterministic evolution. It does not assess stochastic equivalence across random-number generators.
@@ -534,6 +600,10 @@ This gate does **not** switch the historical simulator, audit run, stochastic li
 - The initial characterization used one smooth state, but the later deterministic suite adds an impulse, periodic edges, four Fourier modes, nonuniform \(\kappa\), and an analytic stability boundary.
 - The fingerprint is sensitive at \(10^{-12}\) resolution but is not a proof of bitwise portability across every future Python, NumPy, PyTorch, compiler, or CPU combination.
 - The stochastic ensemble uses an \(8\times8\) source-isolation control, 128 seeds, and short horizons. It distinguishes branch selection from ongoing forcing but does not validate long-lived linon counts, collisions, or macroscopic observables.
+- The contract-comparison suite expands to 1,024 members in the primary control and adds a packet, a \(16\times16\) grid, and \(T=4\), but still isolates \(\psi\)-source, damping, and diffusion. It does not yet include evolving \(\phi\), mode coupling, \(\mu\), detector thresholds, collisions, or long-lived linon identity.
+- The Gaussian control uses isotropic complex increments, while the current runtime and Poisson control align increments to the local phase. This is a declared physical distinction, not a calibrated equivalence.
+- The Gaussian amplitude, Poisson rate, and Poisson jump size are illustrative controls. Time-stable scaling validates their numerical form, not their physical values.
+- Moment convergence does not establish pathwise convergence, equality of full probability distributions, quantum statistics, Bell correlations, or Lorentz invariance.
 - The hypothetical time-scaled branch tests numerical consistency only. It does not calibrate \(h\), \(D_\phi\), or any field to SI units.
 - The source snapshot contained uncommitted work. Revision identifiers and working-tree counts are therefore recorded explicitly.
 - The option assessment concerns readiness for canonicalization, not ultimate scientific merit.
@@ -547,12 +617,12 @@ The approved decision is:
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-The approved read-only experiment, opt-in implementation, broader deterministic falsification, and named-profile gate are complete. The historical default remains legacy, while deterministic continuous-time experiments now have an explicit fail-closed lane. The next material physics decision is the stochastic contract: initial-condition branching, Gaussian \(\sqrt h\) forcing, Poisson-rate events, or a declared hybrid must be chosen and falsified before stochastic canonical promotion. No fundamental-time, quantum-foam, particle, or gravitational whitepaper claim follows from this software decision.
+The approved read-only experiment, opt-in implementation, broader deterministic falsification, named-profile gate, and stochastic-contract comparison are complete. The historical default remains legacy, while deterministic continuous-time experiments now have an explicit fail-closed lane. Three alternative stochastic contracts have a finite refinement limit, but they encode different physics. The next material decision is therefore semantic before it is numerical: define the intended observable meaning of foam and linon birth, then falsify the smallest matching contract. No fundamental-time, quantum-foam, particle, or gravitational whitepaper claim follows from this software decision.
 
 ## 15. Further Questions
 
 1. Should \(\kappa\) be a fixed part of the Lineum law, an environmental coefficient map, or an extension?
-2. Should continuous stochastic forcing use Gaussian \(\sqrt h\) increments, Poisson-rate linon events, initial-condition randomness only, or an explicitly tested hybrid?
+2. Is Lineum foam intended to mean initial branch selection, continuous microscopic agitation, discrete linon-birth events, or several independently measurable processes?
 3. Is locality a hard architectural requirement, or may a global spectral update remain a candidate if its nonlocal numerical kernel is declared?
 4. Is the core research target an effective nonlinear medium, or must every retained candidate aim at fundamental spacetime?
 5. Which single observable should be the first physical discriminator after software identity is achieved?
@@ -1839,6 +1909,753 @@ The output SHA-256 after normalizing line endings to LF and including the final 
     "current_ratio_spread": 0.06442404192772477,
     "hypothetical_continuous_limit": 0.9980803728857736,
     "hypothetical_ratio_spread": 3.224439082405439e-08
+  }
+}
+```
+
+## Appendix G — Standalone Stochastic-Contract Comparison Program
+
+Save the following block as `stochastic_contract_comparison.py` and run it with Python 3 and NumPy. It contains every input fixture, stochastic law, parameter, seed, metric, uncertainty calculation, robustness condition, and output-selection rule used in Section 12.6.
+
+**Embedded program SHA-256:** `46381f186273e8d95f81bd8d0d1c506ad7f09125ceb9ef3050540f1a5f6dfd25`
+
+```python
+"""Standalone comparison of candidate stochastic time contracts for Lineum."""
+
+import json
+
+import numpy as np
+
+
+TIME_STEPS = (0.2, 0.1, 0.05, 0.025)
+CONTRACTS = ("current", "initial_only", "gaussian_sde", "poisson_events")
+PSI_DIFFUSION = 0.05
+DAMPING = 0.005
+CURRENT_NOISE_SIGMA = 0.005
+INITIAL_SIGMA = 0.005
+GAUSSIAN_SIGMA = 0.005
+POISSON_RATE = 2.5
+POISSON_JUMP = 0.01
+
+
+def initial_fixture(size, kind):
+    y, x = np.mgrid[:size, :size]
+    phase = 0.2 * x - 0.1 * y
+    if kind == "phase_gradient":
+        amplitude = np.full((size, size), 0.02)
+    elif kind == "packet":
+        center = (size - 1) / 2
+        radius_squared = (x - center) ** 2 + (y - center) ** 2
+        amplitude = 0.015 + 0.015 * np.exp(
+            -radius_squared / (2 * (size / 5) ** 2)
+        )
+    else:
+        raise ValueError(kind)
+    return amplitude * np.exp(1j * phase)
+
+
+def lap4(field):
+    return (
+        np.roll(field, 1, axis=-2)
+        + np.roll(field, -1, axis=-2)
+        + np.roll(field, 1, axis=-1)
+        + np.roll(field, -1, axis=-1)
+        - 4 * field
+    )
+
+
+def deterministic_step(psi, dt):
+    psi = psi - DAMPING * psi * dt
+    return psi + PSI_DIFFUSION * lap4(psi) * dt
+
+
+def current_source(psi, rng):
+    amplitude = np.abs(psi)
+    grad_y, grad_x = np.gradient(amplitude, axis=(-2, -1))
+    grad_magnitude = np.sqrt(grad_x**2 + grad_y**2)
+    probability = 1.0 / (
+        1.0 + np.exp(-5.0 * (amplitude + grad_magnitude))
+    )
+    linons = (rng.rand(*psi.shape) < probability).astype(np.float64)
+    linon_effect = np.clip((0.03 + 0.02 * amplitude) * linons, 0.0, 10.0)
+    phase = np.exp(1j * np.angle(psi))
+    fluctuation = np.clip(
+        rng.normal(0.0, CURRENT_NOISE_SIGMA, psi.shape), -1.0, 1.0
+    ) * phase
+    return linon_effect * phase + fluctuation
+
+
+def evolve_ensemble(contract, dt, physical_time, initial, seeds, seed):
+    rng = np.random.RandomState(seed)
+    psi = np.broadcast_to(initial, (seeds, *initial.shape)).astype(
+        np.complex128
+    ).copy()
+    if contract == "initial_only":
+        initial_rng = np.random.RandomState(seed)
+        perturbation = (
+            initial_rng.normal(size=psi.shape)
+            + 1j * initial_rng.normal(size=psi.shape)
+        ) / np.sqrt(2.0)
+        psi += INITIAL_SIGMA * perturbation
+
+    for _ in range(round(physical_time / dt)):
+        if contract == "current":
+            psi += current_source(psi, rng) * dt
+        elif contract == "gaussian_sde":
+            increment = (
+                rng.normal(size=psi.shape) + 1j * rng.normal(size=psi.shape)
+            ) / np.sqrt(2.0)
+            psi += GAUSSIAN_SIGMA * np.sqrt(dt) * increment
+        elif contract == "poisson_events":
+            counts = rng.poisson(POISSON_RATE * dt, size=psi.shape)
+            psi += POISSON_JUMP * counts * np.exp(1j * np.angle(psi))
+        elif contract != "initial_only":
+            raise ValueError(contract)
+        psi = deterministic_step(psi, dt)
+    return psi
+
+
+def current_single_run(dt, seed, initial, physical_time):
+    rng = np.random.RandomState(seed)
+    psi = initial.astype(np.complex128).copy()
+    for _ in range(round(physical_time / dt)):
+        psi += current_source(psi, rng) * dt
+        psi = deterministic_step(psi, dt)
+    return psi
+
+
+def rms_complex_spread(ensemble):
+    mean = np.mean(ensemble, axis=0)
+    return float(np.sqrt(np.mean(np.abs(ensemble - mean) ** 2)))
+
+
+def mean_cellwise_complex_std(ensemble):
+    variance = np.var(ensemble.real, axis=0, ddof=1) + np.var(
+        ensemble.imag, axis=0, ddof=1
+    )
+    return float(np.mean(np.sqrt(variance)))
+
+
+def scaling_exponent(rows):
+    x = np.log([row["dt"] for row in rows])
+    y = np.log([row["rms_complex_spread"] for row in rows])
+    return float(np.polyfit(x, y, 1)[0])
+
+
+def summarize_ensembles(ensembles):
+    rows = []
+    for dt in TIME_STEPS:
+        ensemble = ensembles[dt]
+        ensemble_mean = np.mean(ensemble, axis=0)
+        rows.append(
+            {
+                "dt": dt,
+                "steps": None,
+                "rms_complex_spread": rms_complex_spread(ensemble),
+                "mean_cellwise_complex_std": mean_cellwise_complex_std(
+                    ensemble
+                ),
+                "ensemble_mean_energy": float(
+                    np.sum(np.abs(ensemble_mean) ** 2)
+                ),
+                "ensemble_mean_spatial_real_psi": float(
+                    np.mean(ensemble_mean.real)
+                ),
+            }
+        )
+    return {
+        "rows": rows,
+        "spread_reduction_factors_when_dt_halves": [
+            rows[index]["rms_complex_spread"]
+            / rows[index + 1]["rms_complex_spread"]
+            for index in range(len(rows) - 1)
+        ],
+        "fitted_dt_power_exponent": scaling_exponent(rows),
+    }
+
+
+def block_exponent_interval(ensembles, block_size=64):
+    seed_count = next(iter(ensembles.values())).shape[0]
+    exponents = []
+    for start in range(0, seed_count, block_size):
+        stop = start + block_size
+        block_rows = [
+            {
+                "dt": dt,
+                "rms_complex_spread": rms_complex_spread(
+                    ensembles[dt][start:stop]
+                ),
+            }
+            for dt in TIME_STEPS
+        ]
+        exponents.append(scaling_exponent(block_rows))
+    mean = float(np.mean(exponents))
+    standard_error = float(np.std(exponents, ddof=1) / np.sqrt(len(exponents)))
+    t_critical_df15 = 2.131449545559323
+    return {
+        "independent_seed_blocks": len(exponents),
+        "seeds_per_block": block_size,
+        "mean_exponent": mean,
+        "lower_95_t_interval": mean - t_critical_df15 * standard_error,
+        "upper_95_t_interval": mean + t_critical_df15 * standard_error,
+        "minimum_block_exponent": float(np.min(exponents)),
+        "maximum_block_exponent": float(np.max(exponents)),
+    }
+
+
+def run_condition(size, fixture, physical_time, seeds, seed_offset):
+    initial = initial_fixture(size, fixture)
+    results = {}
+    for contract_index, contract in enumerate(CONTRACTS):
+        ensembles = {}
+        for dt_index, dt in enumerate(TIME_STEPS):
+            ensemble_seed = seed_offset + contract_index * 100_000
+            if contract != "initial_only":
+                ensemble_seed += dt_index * 10_000
+            ensembles[dt] = evolve_ensemble(
+                contract,
+                dt,
+                physical_time,
+                initial,
+                seeds,
+                ensemble_seed,
+            )
+        summary = summarize_ensembles(ensembles)
+        for row in summary["rows"]:
+            row["steps"] = round(physical_time / row["dt"])
+        if seeds == 1024:
+            summary["block_exponent_95"] = block_exponent_interval(ensembles)
+        results[contract] = summary
+    return results
+
+
+base_amplitude = 0.02
+base_probability = 1.0 / (1.0 + np.exp(-5.0 * base_amplitude))
+base_linon_amplitude = 0.03 + 0.02 * base_amplitude
+current_variance_rate_coefficient = (
+    base_linon_amplitude**2 * base_probability * (1 - base_probability)
+    + CURRENT_NOISE_SIGMA**2
+)
+
+analytic_source_only = {
+    "current": [
+        {
+            "dt": dt,
+            "expected_mean_at_T1": base_probability * base_linon_amplitude,
+            "expected_std_at_T1": float(
+                np.sqrt(dt * current_variance_rate_coefficient)
+            ),
+        }
+        for dt in TIME_STEPS
+    ],
+    "initial_only": {
+        "expected_std_without_dynamics_at_T1": INITIAL_SIGMA,
+        "expected_dt_power_exponent": 0.0,
+    },
+    "gaussian_sde": {
+        "expected_std_without_dynamics_at_T1": GAUSSIAN_SIGMA,
+        "expected_dt_power_exponent": 0.0,
+    },
+    "poisson_events": {
+        "expected_mean_at_T1": POISSON_RATE * POISSON_JUMP,
+        "expected_std_at_T1": float(
+            np.sqrt(POISSON_RATE) * POISSON_JUMP
+        ),
+        "expected_dt_power_exponent": 0.0,
+    },
+}
+
+
+def compact_robustness(condition):
+    return {
+        contract: {
+            "fitted_dt_power_exponent": summary[
+                "fitted_dt_power_exponent"
+            ],
+            "rms_complex_spreads": [
+                row["rms_complex_spread"] for row in summary["rows"]
+            ],
+            "spread_reduction_factors_when_dt_halves": summary[
+                "spread_reduction_factors_when_dt_halves"
+            ],
+        }
+        for contract, summary in condition.items()
+    }
+
+
+primary = run_condition(8, "phase_gradient", 1.0, 1024, 2_026_071_600)
+packet_robustness = run_condition(8, "packet", 1.0, 256, 2_026_071_700)
+grid_robustness = run_condition(
+    16, "phase_gradient", 1.0, 256, 2_026_071_800
+)
+horizon_robustness = run_condition(
+    8, "phase_gradient", 4.0, 256, 2_026_071_900
+)
+
+output = {
+    "configuration": {
+        "time_steps": list(TIME_STEPS),
+        "psi_diffusion": PSI_DIFFUSION,
+        "damping": DAMPING,
+        "current_noise_sigma": CURRENT_NOISE_SIGMA,
+        "initial_condition_sigma": INITIAL_SIGMA,
+        "gaussian_sde_sigma": GAUSSIAN_SIGMA,
+        "poisson_rate_per_cell_per_time": POISSON_RATE,
+        "poisson_jump_amplitude": POISSON_JUMP,
+    },
+    "analytic_source_only": analytic_source_only,
+    "primary_phase_gradient_grid8_T1_seeds1024": primary,
+    "robustness_packet_grid8_T1_seeds256": compact_robustness(
+        packet_robustness
+    ),
+    "robustness_phase_gradient_grid16_T1_seeds256": compact_robustness(
+        grid_robustness
+    ),
+    "robustness_phase_gradient_grid8_T4_seeds256": compact_robustness(
+        horizon_robustness
+    ),
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+## Appendix H — Full Stochastic-Contract Comparison Output
+
+**Normalized output SHA-256:** `95b33e072da0f320e1e79d7e0b4676d5e5060f4ec90d3aced1bdadc84f52bc48`
+
+```json
+{
+  "analytic_source_only": {
+    "current": [
+      {
+        "dt": 0.2,
+        "expected_mean_at_T1": 0.015959367299359775,
+        "expected_std_at_T1": 0.007147913839780989
+      },
+      {
+        "dt": 0.1,
+        "expected_mean_at_T1": 0.015959367299359775,
+        "expected_std_at_T1": 0.005054338347446311
+      },
+      {
+        "dt": 0.05,
+        "expected_mean_at_T1": 0.015959367299359775,
+        "expected_std_at_T1": 0.0035739569198904946
+      },
+      {
+        "dt": 0.025,
+        "expected_mean_at_T1": 0.015959367299359775,
+        "expected_std_at_T1": 0.0025271691737231553
+      }
+    ],
+    "gaussian_sde": {
+      "expected_dt_power_exponent": 0.0,
+      "expected_std_without_dynamics_at_T1": 0.005
+    },
+    "initial_only": {
+      "expected_dt_power_exponent": 0.0,
+      "expected_std_without_dynamics_at_T1": 0.005
+    },
+    "poisson_events": {
+      "expected_dt_power_exponent": 0.0,
+      "expected_mean_at_T1": 0.025,
+      "expected_std_at_T1": 0.0158113883008419
+    }
+  },
+  "configuration": {
+    "current_noise_sigma": 0.005,
+    "damping": 0.005,
+    "gaussian_sde_sigma": 0.005,
+    "initial_condition_sigma": 0.005,
+    "poisson_jump_amplitude": 0.01,
+    "poisson_rate_per_cell_per_time": 2.5,
+    "psi_diffusion": 0.05,
+    "time_steps": [
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ]
+  },
+  "primary_phase_gradient_grid8_T1_seeds1024": {
+    "current": {
+      "block_exponent_95": {
+        "independent_seed_blocks": 16,
+        "lower_95_t_interval": 0.4841855067201953,
+        "maximum_block_exponent": 0.5023339044656487,
+        "mean_exponent": 0.48835619010493936,
+        "minimum_block_exponent": 0.4763282434792172,
+        "seeds_per_block": 64,
+        "upper_95_t_interval": 0.49252687348968344
+      },
+      "fitted_dt_power_exponent": 0.4883584910429441,
+      "rows": [
+        {
+          "dt": 0.2,
+          "ensemble_mean_energy": 0.08246842852465047,
+          "ensemble_mean_spatial_real_psi": 0.029922558517219457,
+          "mean_cellwise_complex_std": 0.006478956276162863,
+          "rms_complex_spread": 0.006477012524774123,
+          "steps": 5
+        },
+        {
+          "dt": 0.1,
+          "ensemble_mean_energy": 0.08242897851247968,
+          "ensemble_mean_spatial_real_psi": 0.02990188677026183,
+          "mean_cellwise_complex_std": 0.00463467871503456,
+          "rms_complex_spread": 0.004633481607547739,
+          "steps": 10
+        },
+        {
+          "dt": 0.05,
+          "ensemble_mean_energy": 0.08241677992007483,
+          "ensemble_mean_spatial_real_psi": 0.029895560207200345,
+          "mean_cellwise_complex_std": 0.0033099329282166266,
+          "rms_complex_spread": 0.003309189397166538,
+          "steps": 20
+        },
+        {
+          "dt": 0.025,
+          "ensemble_mean_energy": 0.08239833411531253,
+          "ensemble_mean_spatial_real_psi": 0.029894412691645566,
+          "mean_cellwise_complex_std": 0.002345081524964385,
+          "rms_complex_spread": 0.002344596767140405,
+          "steps": 40
+        }
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        1.3978716380838447,
+        1.4001862847484987,
+        1.4114108846113447
+      ]
+    },
+    "gaussian_sde": {
+      "block_exponent_95": {
+        "independent_seed_blocks": 16,
+        "lower_95_t_interval": -0.013698082559373425,
+        "maximum_block_exponent": -0.00256055148190971,
+        "mean_exponent": -0.010940959310200374,
+        "minimum_block_exponent": -0.02107381467738071,
+        "seeds_per_block": 64,
+        "upper_95_t_interval": -0.008183836061027324
+      },
+      "fitted_dt_power_exponent": -0.010816373320071146,
+      "rows": [
+        {
+          "dt": 0.2,
+          "ensemble_mean_energy": 0.02467154571769403,
+          "ensemble_mean_spatial_real_psi": 0.016362359491959043,
+          "mean_cellwise_complex_std": 0.004428416695036037,
+          "rms_complex_spread": 0.004426727569595373,
+          "steps": 5
+        },
+        {
+          "dt": 0.1,
+          "ensemble_mean_energy": 0.024620861591628483,
+          "ensemble_mean_spatial_real_psi": 0.01634169862028973,
+          "mean_cellwise_complex_std": 0.004494887476495649,
+          "rms_complex_spread": 0.004493112487890099,
+          "steps": 10
+        },
+        {
+          "dt": 0.05,
+          "ensemble_mean_energy": 0.024663324384987993,
+          "ensemble_mean_spatial_real_psi": 0.016348319778253857,
+          "mean_cellwise_complex_std": 0.004521477164038717,
+          "rms_complex_spread": 0.0045196908818695425,
+          "steps": 20
+        },
+        {
+          "dt": 0.025,
+          "ensemble_mean_energy": 0.024624811230657656,
+          "ensemble_mean_spatial_real_psi": 0.016341699216082382,
+          "mean_cellwise_complex_std": 0.004531540776558599,
+          "rms_complex_spread": 0.0045298361259017445,
+          "steps": 40
+        }
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9852251822153023,
+        0.9941194221741886,
+        0.997760350760993
+      ]
+    },
+    "initial_only": {
+      "block_exponent_95": {
+        "independent_seed_blocks": 16,
+        "lower_95_t_interval": -0.0018480367028937924,
+        "maximum_block_exponent": -0.0017886357731242497,
+        "mean_exponent": -0.0018364415616148495,
+        "minimum_block_exponent": -0.0018710586287576238,
+        "seeds_per_block": 64,
+        "upper_95_t_interval": -0.0018248464203359067
+      },
+      "fitted_dt_power_exponent": -0.0018375549150722406,
+      "rows": [
+        {
+          "dt": 0.2,
+          "ensemble_mean_energy": 0.02462849579927516,
+          "ensemble_mean_spatial_real_psi": 0.01634796639854512,
+          "mean_cellwise_complex_std": 0.004082562037128639,
+          "rms_complex_spread": 0.004081199330359511,
+          "steps": 5
+        },
+        {
+          "dt": 0.1,
+          "ensemble_mean_energy": 0.024632020738579067,
+          "ensemble_mean_spatial_real_psi": 0.016347986853968766,
+          "mean_cellwise_complex_std": 0.004091737531942177,
+          "rms_complex_spread": 0.004090371984334379,
+          "steps": 10
+        },
+        {
+          "dt": 0.05,
+          "ensemble_mean_energy": 0.024633760342845888,
+          "ensemble_mean_spatial_real_psi": 0.016347997076574725,
+          "mean_cellwise_complex_std": 0.004096219895287795,
+          "rms_complex_spread": 0.004094852960511229,
+          "steps": 20
+        },
+        {
+          "dt": 0.025,
+          "ensemble_mean_energy": 0.024634624543592564,
+          "ensemble_mean_spatial_real_psi": 0.016348002186602074,
+          "mean_cellwise_complex_std": 0.004098435585566003,
+          "rms_complex_spread": 0.004097067965236058,
+          "steps": 40
+        }
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9977575012712784,
+        0.998905705230429,
+        0.9994593683229999
+      ]
+    },
+    "poisson_events": {
+      "block_exponent_95": {
+        "independent_seed_blocks": 16,
+        "lower_95_t_interval": -0.011550888975693892,
+        "maximum_block_exponent": -0.00048515417249803724,
+        "mean_exponent": -0.008857043132295475,
+        "minimum_block_exponent": -0.0168207889507734,
+        "seeds_per_block": 64,
+        "upper_95_t_interval": -0.006163197288897059
+      },
+      "fitted_dt_power_exponent": -0.009123887126903518,
+      "rows": [
+        {
+          "dt": 0.2,
+          "ensemble_mean_energy": 0.12526282807295921,
+          "ensemble_mean_spatial_real_psi": 0.03688423325997961,
+          "mean_cellwise_complex_std": 0.014042152511038346,
+          "rms_complex_spread": 0.014039277842503736,
+          "steps": 5
+        },
+        {
+          "dt": 0.1,
+          "ensemble_mean_energy": 0.12656964961621275,
+          "ensemble_mean_spatial_real_psi": 0.037071705759489204,
+          "mean_cellwise_complex_std": 0.014256136630850425,
+          "rms_complex_spread": 0.01425411108923073,
+          "steps": 10
+        },
+        {
+          "dt": 0.05,
+          "ensemble_mean_energy": 0.1264373030126293,
+          "ensemble_mean_spatial_real_psi": 0.03705354064078942,
+          "mean_cellwise_complex_std": 0.014303531708996578,
+          "rms_complex_spread": 0.014301595583609309,
+          "steps": 20
+        },
+        {
+          "dt": 0.025,
+          "ensemble_mean_energy": 0.1257080280049453,
+          "ensemble_mean_spatial_real_psi": 0.03695299352102705,
+          "mean_cellwise_complex_std": 0.01432481277643377,
+          "rms_complex_spread": 0.014322490076541412,
+          "steps": 40
+        }
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9849283308245503,
+        0.9966797764556425,
+        0.9985411410431817
+      ]
+    }
+  },
+  "robustness_packet_grid8_T1_seeds256": {
+    "current": {
+      "fitted_dt_power_exponent": 0.4908912808483476,
+      "rms_complex_spreads": [
+        0.00645213012364146,
+        0.004639868743193143,
+        0.0033073763700386147,
+        0.0023234525567024976
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        1.3905846222712595,
+        1.4028850133977862,
+        1.4234748889095143
+      ]
+    },
+    "gaussian_sde": {
+      "fitted_dt_power_exponent": -0.011403265686550323,
+      "rms_complex_spreads": [
+        0.004434346810032629,
+        0.00446349948338111,
+        0.0045390404718023535,
+        0.004527334162032967
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9934686508966731,
+        0.9833574983764691,
+        1.0025856959858537
+      ]
+    },
+    "initial_only": {
+      "fitted_dt_power_exponent": -0.0018262355838070882,
+      "rms_complex_spreads": [
+        0.004090173935938564,
+        0.0040993098235694286,
+        0.004103773017915712,
+        0.004105979276393661
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9977713595643988,
+        0.9989124168596073,
+        0.9994626717941241
+      ]
+    },
+    "poisson_events": {
+      "fitted_dt_power_exponent": -0.010601093072029558,
+      "rms_complex_spreads": [
+        0.014051085370087802,
+        0.014222129343753118,
+        0.014296262012130663,
+        0.014374565873878208
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9879733920616856,
+        0.9948145418491462,
+        0.9945526103233601
+      ]
+    }
+  },
+  "robustness_phase_gradient_grid16_T1_seeds256": {
+    "current": {
+      "fitted_dt_power_exponent": 0.49028328526425435,
+      "rms_complex_spreads": [
+        0.006473693393076739,
+        0.004630853379867862,
+        0.0032810052154164777,
+        0.0023392155686119583
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        1.3979482531708791,
+        1.4114129895645533,
+        1.4026091735373314
+      ]
+    },
+    "gaussian_sde": {
+      "fitted_dt_power_exponent": -0.010621292989555154,
+      "rms_complex_spreads": [
+        0.0044194720293460575,
+        0.004487966527352967,
+        0.004504321969215145,
+        0.004523780697418101
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9847381887566554,
+        0.9963689447659472,
+        0.9956985695141981
+      ]
+    },
+    "initial_only": {
+      "fitted_dt_power_exponent": -0.0018170837095550757,
+      "rms_complex_spreads": [
+        0.004096440545051363,
+        0.004105544266493287,
+        0.0041099919471333365,
+        0.004112190584534552
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9977825786665554,
+        0.998917837140009,
+        0.9994653366968242
+      ]
+    },
+    "poisson_events": {
+      "fitted_dt_power_exponent": -0.009446051344368614,
+      "rms_complex_spreads": [
+        0.013996548750423445,
+        0.014215120263869374,
+        0.014294831540133881,
+        0.014278741874469368
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9846240123622821,
+        0.9944237694553649,
+        1.001126826565391
+      ]
+    }
+  },
+  "robustness_phase_gradient_grid8_T4_seeds256": {
+    "current": {
+      "fitted_dt_power_exponent": 0.4883346728799905,
+      "rms_complex_spreads": [
+        0.011014470919017442,
+        0.007917521291920554,
+        0.005643476232654814,
+        0.003989941599085501
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        1.3911514112702388,
+        1.4029511183386307,
+        1.414425773537213
+      ]
+    },
+    "gaussian_sde": {
+      "fitted_dt_power_exponent": -0.011315921805392133,
+      "rms_complex_spreads": [
+        0.007075298426445509,
+        0.007149270382092737,
+        0.007154844146617378,
+        0.007260837494904736
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.989653216105449,
+        0.9992209803022368,
+        0.9854020492316845
+      ]
+    },
+    "initial_only": {
+      "fitted_dt_power_exponent": -0.00404317777227548,
+      "rms_complex_spreads": [
+        0.002536259179672041,
+        0.0025487346154962794,
+        0.002554918058842884,
+        0.00255799625887062
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9951052433045058,
+        0.9975797879993831,
+        0.9987966362276482
+      ]
+    },
+    "poisson_events": {
+      "fitted_dt_power_exponent": -0.009747470923399684,
+      "rms_complex_spreads": [
+        0.022662606687303178,
+        0.022831807299402308,
+        0.0230965000780326,
+        0.023089906312168593
+      ],
+      "spread_reduction_factors_when_dt_halves": [
+        0.9925892589281112,
+        0.9885397017844255,
+        1.000285569190921
+      ]
+    }
   }
 }
 ```
