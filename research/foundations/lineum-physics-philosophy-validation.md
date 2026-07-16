@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 0.6
+**Research version:** 0.7
 **Evidence and calculation cutoff date:** July 16, 2026
 **Language:** English
-**Reproducibility:** all six embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, and scope findings; medium for the numerical classification of stochastic candidates; low for their physical interpretation and the other untested hypotheses proposed for future work
+**Reproducibility:** all seven embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, and scope findings; medium for the numerical classification of stochastic candidates; low for their physical interpretation and the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -31,6 +31,7 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | Lineum has one reproducible software reference lane. | **Implemented and characterized** | Yes: `RD-0` is a deterministic regression ruler with named legacy and continuous-time profiles; it is not a declaration of fundamental physics. |
 | The current \(\phi\)-diffusion defines one trajectory when \(\Delta t\) is refined. | **False in legacy; repaired in an opt-in profile** | The legacy term is applied per update. Multiplication by \(h\) restores first-order convergence in the tested deterministic lane. |
 | The current ongoing stochastic source has a nonzero continuous-time variance limit. | **Contradicted in the tested source/diffusion lane** | Ensemble spread scales approximately as \(h^{0.488}\) and vanishes; several alternative contracts retain finite spread but encode different physics. |
+| The historical zero-\(\kappa\) “true RNG / edge of chaos” test demonstrates chaos. | **Contradicted by source audit, exact recurrence, and runtime reproduction** | Its original perturbation is overwritten, while a new \(10^{-5}+10^{-5}i\) input is added for all 1,500 steps. The threshold crossing is a damped geometric sum, not exponential sensitivity or true randomness. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -64,6 +65,7 @@ Until the gates below are met, we recommend:
 6. **cite Jan Fikáček's work as a source of research questions and philosophical premises, not as empirical validation of a particular Lineum dynamics**.
 7. **use the named deterministic continuous-time profile for refinement claims and the named legacy profile for historical reproduction; do not call either the final Lineum law**;
 8. **do not describe the present stochastic source as a continuously driven quantum vacuum; keep initial branching, continuous forcing, discrete events, deterministic chaos, memory, and quantum-amplitude explanations as separately falsifiable hypotheses**.
+9. **withdraw “true RNG” and “edge of chaos” as conclusions of the historical zero-\(\kappa\) test; require exact replay, one-shot perturbation growth, a positive Lyapunov estimate, and robustness before restoring either claim**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -376,6 +378,35 @@ Two stable names now prevent the time convention from being hidden inside one Bo
 The continuous-time profile defaults to \(h=0.1\) but permits \(h\) and non-identity numerical coefficients to vary. Attempts to change a profile-defining value or use the ambiguous name `canonical` fail closed. The implementation contract contains 13 profile tests, two legacy characterization cases, four original time-refinement cases, and eight broader deterministic falsification cases: 27 passing cases in both the working state and a clean isolated tree.
 
 The broader suite checks four Fourier modes, a corner impulse with periodic wrapping, nonuniform \(\kappa\), the analytic LAP4 stability boundary, and NumPy/PyTorch CPU parity. It therefore enforces the tested software meaning of the profile. It does not prove that the profile is the unique, final, or physically correct Lineum dynamics.
+
+### 3.9 The historical zero-kappa test did not demonstrate chaos or true randomness
+
+A permanent test previously claimed that two almost identical runs at \(\kappa=0\) amplified thermal floating-point noise into “True Randomness” at an “Edge of Chaos.” The implementation does not test that proposition.
+
+The source audit gives four decisive facts:
+
+1. the initial \(10^{-15}+10^{-15}i\) perturbation is placed at cell `[32,32]`, inside a region reset to exactly `1+0i` at step zero and every fifth step;
+2. \(\kappa=0\) multiplies the stochastic source, interaction, diffusion, reaction, and field-flow transfer by zero in this branch;
+3. the second run receives a new explicit \(j=10^{-5}+10^{-5}i\) injection at cell `[15,15]` on **every** one of 1,500 steps;
+4. the remaining difference obeys deterministic damping with factor \(r=1-0.005=0.995\).
+
+The exact scalar recurrence is therefore
+
+\[
+d_{n+1}=r(d_n+j),\qquad d_0=0,
+\]
+
+with solution
+
+\[
+|d_N|=|j|r\frac{1-r^N}{1-r}.
+\]
+
+At \(N=1500\), this predicts `0.0028127574610763545`. The historical test printed `0.0028127574077312194`, an absolute difference of `5.334513516683237e-11` and relative difference `1.8965423043058553e-08`. The apparent “amplification ratio” of `198.89198745601468` is simply the ratio of a damped 1,500-step geometric sum to one injection. A single one-time \(10^{-5}+10^{-5}i\) perturbation instead decays to `7.67602033217176e-09` after 1,500 steps.
+
+The misleading contract was replaced by three characterization tests: exact replay of identical complete states, decay of a one-shot perturbation, and exact agreement of repeated forcing with the geometric sum. Together with the profile and RD-0 suites, 30 targeted cases pass.
+
+**Verdict:** this test is negative evidence for its former interpretation, not negative evidence against all Lineum chaos hypotheses. A chaos claim still requires growth from a one-time infinitesimal perturbation without continued differential forcing, a positive finite-time Lyapunov estimate over a declared regime, convergence and saturation controls, and separation from stochastic branching and numerical instability.
 
 ---
 
@@ -1263,7 +1294,7 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects only F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane. It does not reject F0 as a discrete per-update automaton, and it does not choose among F1–F10. Initial-only, Gaussian, and Poisson controls establish numerical counterexamples showing that finite stochastic limits are possible; they are not evidence that those mechanisms exist physically.
+**Current evidence.** The time-refinement experiment rejects only F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane. It does not reject F0 as a discrete per-update automaton, and it does not choose among F1–F10. Initial-only, Gaussian, and Poisson controls establish numerical counterexamples showing that finite stochastic limits are possible; they are not evidence that those mechanisms exist physically. The historical zero-\(\kappa\) test also does not support F6: it repeatedly forces one run and exactly follows a damped geometric sum. F6 remains open for other regimes, but currently lacks a valid positive Lyapunov or one-shot perturbation-growth result.
 
 **Next read-only gate.** Build a common observation protocol for F1–F8 and identify the smallest pair of simulations whose predicted signatures do not overlap within uncertainty. Do not modify the default runtime until at least one discriminator is demonstrated and its false-positive controls pass.
 
@@ -1399,6 +1430,7 @@ The following list supersedes the original proposal. Each question should have a
 9. **Model-dependent experimental limits are not universal.** Lorentz, collapse, and gravitational limits can only be used after mapping a specific Lineum operator to experimental analysis parameters.
 10. **No external independent replication was performed.** Replication here means repeated execution in two software environments with all code and outputs published in this document. Independent reproduction by another team is still required.
 11. **The new time controls are deliberately narrow.** Deterministic results cover the RD-0 lane; stochastic comparisons isolate \(\psi\)-source, damping, and diffusion. They do not establish long-lived linon identity, collisions, quantum statistics, or a full-system continuum limit.
+12. **The zero-kappa result is a claim audit, not a complete chaos survey.** It proves why one historical threshold test passed and why that pass did not measure chaos. It does not calculate Lyapunov spectra across every nonlinear, pumped, bounded, wave, or mode-coupled Lineum regime.
 
 ## 11. Final Assessment
 
@@ -1478,10 +1510,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - replay environment: Python 3.12.13 and NumPy 2.3.5
 - deterministic seed `20260715`
 - three general-physics checks use only NumPy and the standard library; the OEA ablation additionally uses SciPy 1.17.1 to reproduce the imaging operations accurately
-- all six programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
+- all seven programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 6/6 executable Python/JSON pairs, 42 contiguous adversarial questions, 41 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 7/7 executable Python/JSON pairs, 42 contiguous adversarial questions, 41 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1511,6 +1543,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | OEA image ablation | relative \(L^2\), spectral anisotropy, sum of intensities | reference step 5, `DIFFUSE`, ordered scales | steps 4/6, staggered scales, `WAVE`, random seed | similarity or dissimilarity to actual cosmological data |
 | deterministic time semantics | Fourier error, fixed-time refinement factor, stability multiplier | exact LAP4 eigenmodes and predicted \(h_{\max}=100\) | four modes, periodic impulse, nonuniform \(\kappa\), four \(h\), two CPU backends | physical value of \(t\), SI calibration, or final Lineum law |
 | stochastic time contracts | RMS complex ensemble spread and fitted exponent \(q\) | analytic current-source \(q=1/2\) | current, initial-only, Gaussian-SDE, and Poisson laws; two grids, two initial fields, two horizons | which stochastic ontology is physically correct |
+| historical zero-kappa RNG claim | exact difference recurrence and one-shot decay | closed-form damped geometric sum | original printed value, scalar recurrence, actual runtime, 1,500 steps | absence of chaos in every other Lineum regime |
 
 ### A.3 Numerical audit summary
 
@@ -3292,6 +3325,7 @@ print(canonical)
 }
 ```
 
+
 ## Appendix E — Gate-0 Continuous-Time Decision Suite
 
 This appendix independently reconstructs the deterministic `RD-0-C1` time-scaled candidate, its Fourier, boundary, nonuniform-medium, and stability controls, and the current stochastic source semantics. Save the program as `gate0_time_decision.py` and run it with Python 3 and NumPy.
@@ -4677,5 +4711,129 @@ print(json.dumps(output, indent=2, sort_keys=True))
       ]
     }
   }
+}
+```
+
+## Appendix G — Zero-Kappa RNG-Claim Audit
+
+This appendix reproduces the exact scalar recurrence hidden inside the historical zero-kappa test and compares it with the test's printed difference. Save the program as `zero_kappa_rng_claim_audit.py` and run it with Python 3; it uses only the standard library.
+
+### G.1 Complete executable program
+
+**Embedded program SHA-256:** `2eb0527436ece128673bca1a322491274ce4e04c493a0b10015fa891b89b47c7`
+
+```python
+"""Standalone audit of the historical zero-kappa true-RNG test claim."""
+
+import json
+
+
+STEPS = 1_500
+DT = 1.0
+DAMPING_RATE = 0.005
+INJECTION = 1e-5 + 1e-5j
+INITIAL_PERTURBATION = 1e-15 + 1e-15j
+ORIGINAL_REPORTED_DIFFERENCE = 0.0028127574077312194
+
+damping_factor = 1.0 - DAMPING_RATE * DT
+
+difference = 0.0j
+for _ in range(STEPS):
+    difference = (difference + INJECTION) * damping_factor
+
+analytic_repeated_forcing = (
+    abs(INJECTION)
+    * damping_factor
+    * (1.0 - damping_factor**STEPS)
+    / (1.0 - damping_factor)
+)
+single_perturbation_after_steps = (
+    abs(INJECTION) * damping_factor**STEPS
+)
+
+output = {
+    "configuration": {
+        "steps": STEPS,
+        "dt": DT,
+        "damping_rate": DAMPING_RATE,
+        "damping_factor": damping_factor,
+        "repeated_injection_real": INJECTION.real,
+        "repeated_injection_imag": INJECTION.imag,
+        "initial_perturbation_real": INITIAL_PERTURBATION.real,
+        "initial_perturbation_imag": INITIAL_PERTURBATION.imag,
+        "kappa": 0.0,
+    },
+    "source_path_implications": {
+        "diffusion_transfer_multiplier": 0.0,
+        "interaction_transfer_multiplier": 0.0,
+        "stochastic_source_transfer_multiplier": 0.0,
+        "initial_perturbation_is_overwritten_by_step_zero_pump": True,
+        "remaining_difference_equation": "d[n+1]=(d[n]+j)*(1-0.005*dt)",
+    },
+    "results": {
+        "scalar_recurrence_repeated_forcing": abs(difference),
+        "analytic_repeated_forcing": analytic_repeated_forcing,
+        "recurrence_vs_analytic_absolute_error": abs(
+            abs(difference) - analytic_repeated_forcing
+        ),
+        "original_test_reported_difference": ORIGINAL_REPORTED_DIFFERENCE,
+        "original_vs_analytic_absolute_error": abs(
+            ORIGINAL_REPORTED_DIFFERENCE - analytic_repeated_forcing
+        ),
+        "original_vs_analytic_relative_error": abs(
+            ORIGINAL_REPORTED_DIFFERENCE - analytic_repeated_forcing
+        )
+        / analytic_repeated_forcing,
+        "single_1e_5_perturbation_after_1500_steps": (
+            single_perturbation_after_steps
+        ),
+        "repeated_sum_to_one_injection_ratio": (
+            analytic_repeated_forcing / abs(INJECTION)
+        ),
+    },
+    "verdict": (
+        "The reported threshold crossing is explained by explicit repeated "
+        "forcing and damping; it is not evidence of chaos or true randomness."
+    ),
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+### G.2 Full reference output
+
+**Normalized execution-output SHA-256:** `40d54a9d1721d118b6d9533bffab078a9062d43fbd9a2e304693bd0fa550ab16`
+
+```json
+{
+  "configuration": {
+    "damping_factor": 0.995,
+    "damping_rate": 0.005,
+    "dt": 1.0,
+    "initial_perturbation_imag": 1e-15,
+    "initial_perturbation_real": 1e-15,
+    "kappa": 0.0,
+    "repeated_injection_imag": 1e-05,
+    "repeated_injection_real": 1e-05,
+    "steps": 1500
+  },
+  "results": {
+    "analytic_repeated_forcing": 0.0028127574610763545,
+    "original_test_reported_difference": 0.0028127574077312194,
+    "original_vs_analytic_absolute_error": 5.334513516683237e-11,
+    "original_vs_analytic_relative_error": 1.8965423043058553e-08,
+    "recurrence_vs_analytic_absolute_error": 8.239936510889834e-18,
+    "repeated_sum_to_one_injection_ratio": 198.89198745601468,
+    "scalar_recurrence_repeated_forcing": 0.002812757461076363,
+    "single_1e_5_perturbation_after_1500_steps": 7.67602033217176e-09
+  },
+  "source_path_implications": {
+    "diffusion_transfer_multiplier": 0.0,
+    "initial_perturbation_is_overwritten_by_step_zero_pump": true,
+    "interaction_transfer_multiplier": 0.0,
+    "remaining_difference_equation": "d[n+1]=(d[n]+j)*(1-0.005*dt)",
+    "stochastic_source_transfer_multiplier": 0.0
+  },
+  "verdict": "The reported threshold crossing is explained by explicit repeated forcing and damping; it is not evidence of chaos or true randomness."
 }
 ```
