@@ -1,12 +1,12 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** draft — project-owner decision required before any physics implementation or whitepaper change
-**Research version:** 0.1
+**Document status:** active — RD-0 characterization approved and implemented; physics corrections and whitepaper changes remain gated
+**Research version:** 0.2
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
-**Current confidence:** high for the source audit and backend-divergence result; medium for the recommended sequencing; no claim of physical validation
+**Current confidence:** high for the source audit, backend-divergence result, and RD-0 software fingerprint; medium for the recommended sequencing; no claim of physical validation
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
-**Decision boundary:** this brief proposes a small next step; it does not declare a new Lineum law
+**Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
 ## 1. Technical Summary
 
@@ -16,13 +16,13 @@
 
 **The smallest safe software step is a provisional deterministic reference lane, not promotion of Eq-11.1 or the biharmonic candidate.** A noise-free diffusive subset already agrees across NumPy and PyTorch to approximately machine precision in the tested configuration. It can serve as a ruler for later changes while the physical theory remains open. This proposed lane is named **Reference Dynamics 0 (`RD-0`)** to avoid assigning another historical `Eq-N` label prematurely.
 
-**No code or whitepaper should change until the project owner approves this separation:**
+**On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
 1. **identity layer:** Lineum is currently an effective coupled-field research platform;
 2. **software-reference layer:** `RD-0` is a deterministic regression baseline, not a law of nature;
 3. **physics-candidate layer:** wave, Eq-11.1, biharmonic, discrete-spacetime, quantum, and gravitational models remain competing hypotheses.
 
-In plain language: the project currently has several different engines sharing one name. The next safe move is to select one small engine as a measuring ruler. That does not crown it as the final theory; it merely gives every later experiment the same starting point.
+In plain language: the project currently has several different engines sharing one name. One small engine has now been selected as a measuring ruler. That does not crown it as the final theory; it gives every later experiment the same starting point.
 
 ## 2. Decision to Be Made
 
@@ -214,16 +214,15 @@ If approved, `RD-0` should initially freeze only the following:
 7. **Backend contract:** NumPy and PyTorch CPU must agree within a declared tolerance for the complete state, not merely aggregate metrics.
 8. **Claim boundary:** no SI calibration, particle identity, quantum unitarity, Lorentz invariance, gravity, black hole, or ontic-lattice claim.
 
-Two points deliberately remain for owner approval rather than silent selection:
+One conceptual point remains deliberately open rather than silently selected:
 
 - whether \(\kappa\) is part of the reference law or only an externally supplied environment map;
-- whether `RD-0` freezes the exact current ordered map, including its edge gradient and missing \(h\) on \(\phi\)-diffusion, or whether those are first classified as defects and corrected before freezing.
 
-The safer recommendation is to create a characterization test for the exact current behavior first, then correct one discrepancy at a time. That preserves a before/after measurement for every change.
+The project owner approved freezing the exact current ordered map first, including its edge gradient and missing \(h\) on \(\phi\)-diffusion. These behaviors are frozen only as a measurement baseline, not endorsed as correct physics. Each discrepancy can now be changed separately with a measured before/after result.
 
-## 9. Acceptance Tests for the Next Code Step
+## 9. Acceptance Roadmap
 
-No implementation should begin until the owner approves the boundary above. Once approved, the first code change should be limited to a reference-mode contract with these tests:
+The complete RD-0 roadmap contains these tests:
 
 1. same initial state and parameters produce the same complete \(\psi,\phi\) arrays on NumPy and PyTorch CPU within \(\mathrm{rtol}=10^{-12}\), \(\mathrm{atol}=10^{-13}\);
 2. requesting an unsupported physics mode fails explicitly instead of silently running diffusion;
@@ -233,29 +232,66 @@ No implementation should begin until the owner approves the boundary above. Once
 6. caps and resets remain at zero activation in every accepted reference run;
 7. the complete reference state and configuration receive reproducible fingerprints.
 
-Passing these tests would validate a software law. It would not validate a physical theory of nature.
+The approved first increment implements items 1 and 7 for one smooth fixture and confirms item 6 at all three checkpoints. The other items remain explicit future gates. Passing the complete roadmap would validate a software law. It would not validate a physical theory of nature.
 
-## 10. Limitations and Robustness
+## 10. Approved RD-0 Characterization Result
+
+The owner approved the following decision on July 16, 2026:
+
+> **Freeze the exact current deterministic diffusive behavior as a measurement baseline before correcting it. Preserve known discrepancies so that every later correction has an auditable before/after comparison.**
+
+The first implementation increment changed no solver equation, runtime dispatch, default, or whitepaper claim. It added an independently executable regression contract around this fixed fixture:
+
+- grid: \(32\times32\), periodic LAP4 neighbor operator;
+- \(h=0.1\), \(D_\psi=D_\phi=0.05\), reaction strength \(0.0007\), drift strength \(-0.004\);
+- constant \(\kappa=1\), \(\mu=0\), zero external \(\delta\);
+- stochastic generation, mode coupling, and PML disabled;
+- checkpoints after 1, 10, and 100 ordered updates.
+
+The complete \(\psi\) real part, \(\psi\) imaginary part, and \(\phi\) array are multiplied by \(10^{12}\), rounded to signed integers, serialized as little-endian 64-bit arrays with component names and shapes, and hashed with SHA-256. This gives a full-state fingerprint with resolution \(10^{-12}\); it is deliberately not described as bitwise identity.
+
+| Step | RD-0 full-state SHA-256 at \(10^{-12}\) resolution | \(\sum|\psi|^2\) | \(\sum\phi\) |
+|---:|---|---:|---:|
+| 1 | `b4a47af600aecced9718600330b8e618d4f6888ec2465acf2f611dcc399fd3af` | 38.495239595839806 | 255.75639466834733 |
+| 10 | `e57d5a18a8ef8dbed48fe06eccc3108251ecda1afa7f1855801374092a5faf3f` | 38.59659161057613 | 253.57674659985213 |
+| 100 | `211dda7f2230625c9f4f1d92982dc022c1f6b6c7e3ba3aadffe5d0c78719418f` | 40.049514813584835 | 233.01762766274334 |
+
+The backend comparison covers every array element:
+
+| Step | \(\psi\) relative L2 | \(\phi\) relative L2 | max \(|\Delta\psi|\) | max \(|\Delta\phi|\) |
+|---:|---:|---:|---:|---:|
+| 1 | 0 | 0 | 0 | 0 |
+| 10 | \(4.3629\times10^{-21}\) | \(6.9149\times10^{-18}\) | \(2.7105\times10^{-20}\) | \(5.5511\times10^{-17}\) |
+| 100 | \(2.5707\times10^{-17}\) | \(2.5947\times10^{-17}\) | \(1.1102\times10^{-16}\) | \(1.1102\times10^{-16}\) |
+
+The contract was executed with Python 3.11.15, NumPy 1.26.4, and PyTorch 2.5.1+cu121 on CPU. Both the audited working state and an isolated clean source snapshot produced `2 passed`; no cap, reset, or non-finite value activated. The clean-snapshot check matters because execution-policy work was present in the audited working state: it demonstrates that the RD-0 result is a property of the already committed diffusive update, not an accidental dependency on that unfinished policy work.
+
+This passes only the first **RD-0 characterization increment**. Full Gate 0 remains open until mode rejection, parameter semantics, boundary controls, time-step refinement, and broader fixtures are resolved.
+
+## 11. Limitations and Robustness
 
 - The backend comparison isolates deterministic evolution. It does not assess stochastic equivalence across random-number generators.
 - The comparison disables the absorbing boundary to isolate bulk dynamics. Boundary policy remains a separate Gate 0 choice.
 - The test covers one smooth initial state and three horizons. A permanent contract should add impulses, edge-localized states, nonuniform \(\kappa\), and zero-state controls.
+- The fingerprint is sensitive at \(10^{-12}\) resolution but is not a proof of bitwise portability across every future Python, NumPy, PyTorch, compiler, or CPU combination.
 - The source snapshot contained uncommitted work. Revision identifiers and working-tree counts are therefore recorded explicitly.
 - The option assessment concerns readiness for canonicalization, not ultimate scientific merit.
 - No chart is used because three exact time checkpoints and five discrete options are clearer as audit tables than as plots.
 
-## 11. Recommended Owner Decision
+## 12. Decision Record and Next Gate
 
-The proposed decision is:
+The approved decision is:
 
-> **Approve the three-layer separation and authorize only an `RD-0` characterization contract. Do not yet promote any current equation as fundamental Lineum physics.**
+> **Approve the three-layer separation and authorize only an `RD-0` characterization contract. Do not promote any current equation as fundamental Lineum physics.**
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-## 12. Further Questions
+The next proposed gate is a read-only time-step refinement experiment focused on the missing \(h\) factor in \(\phi\)-diffusion. No correction should be applied until the experiment measures whether trajectories converge to a common physical-time horizon when \(h\) is halved.
+
+## 13. Further Questions
 
 1. Should \(\kappa\) be a fixed part of the Lineum law, an environmental coefficient map, or an extension?
-2. Should the first reference contract preserve the current ordered update exactly, including known discrepancies, or correct the periodic gradient and \(\phi\)-step scaling first?
+2. After a time-step refinement experiment, should the missing \(h\) factor in \(\phi\)-diffusion be the first isolated correction?
 3. Is locality a hard architectural requirement, or may a global spectral update remain a candidate if its nonlocal numerical kernel is declared?
 4. Is the core research target an effective nonlinear medium, or must every retained candidate aim at fundamental spacetime?
 5. Which single observable should be the first physical discriminator after software identity is achieved?
@@ -264,11 +300,12 @@ This decision preserves the long-term ambition of Lineum while giving the projec
 
 ## Appendix A — Standalone Reproduction Program
 
-The following NumPy program reconstructs the deterministic diffusive and spectral-wave maps used in the comparison. It requires no Lineum repository or data file. It was executed with Python 3.11.15 and NumPy 1.26.4. Two consecutive runs produced bitwise-identical LF-normalized output. The program SHA-256 is `af39d50d7c6734f40911ab6a6e085c0b9348f3c4ed3abfd8719c8b44f1e922f4`.
+The following NumPy program reconstructs the deterministic diffusive and spectral-wave maps used in the comparison and derives the RD-0 fingerprints above. It requires no Lineum repository or data file. It was executed with Python 3.11.15 and NumPy 1.26.4. Two consecutive runs produced bitwise-identical LF-normalized output. The program SHA-256 is `7027b161c9fdf263428fd4437d426b51d11f9575dc4e30d7d7d7e9ebda4242ac`.
 
 ```python
 """Standalone numerical reproduction for the Lineum Gate 0 decision brief."""
 
+import hashlib
 import json
 
 import numpy as np
@@ -280,6 +317,7 @@ D_PSI = 0.05
 D_PHI_CONFIG = 0.05
 REACTION = 0.0007
 DRIFT = -0.004
+FINGERPRINT_SCALE = 10**12
 
 
 def make_state(size=SIZE):
@@ -340,13 +378,19 @@ def update_phi(phi, psi, kappa):
 
 
 def diffusion_step(psi, phi, kappa):
-    nonlinear = common_terms(psi, phi, kappa)
-    psi_a = psi + nonlinear(psi) * DT
-    psi_b = (1.0 - 0.005 * DT) * psi_a
-    psi_next = psi_b + weighted_laplace(
-        psi_b, kappa, rate=D_PSI
-    ) * kappa * DT
-    return psi_next, update_phi(phi, psi_next, kappa)
+    phi_clipped = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(0.4 * phi_clipped * kappa)
+    interaction = interaction_factor * psi
+    interaction = interaction / (1.0 + np.abs(interaction) / 10.0)
+    grad_phi_x, grad_phi_y = np.gradient(phi)
+    flow = DRIFT * (grad_phi_x + 1j * grad_phi_y) * kappa
+    flow = flow / (1.0 + np.abs(flow) / 10.0)
+
+    psi += flow * DT
+    psi += interaction * DT
+    psi -= 0.005 * psi * DT
+    psi += weighted_laplace(psi, kappa, rate=D_PSI) * kappa * DT
+    return psi, update_phi(phi, psi, kappa)
 
 
 def lap4_fft_symbol(size):
@@ -378,6 +422,20 @@ def relative_l2(left, right):
     return float(np.linalg.norm(left - right) / (np.linalg.norm(left) + 1e-30))
 
 
+def state_fingerprint(psi, phi):
+    digest = hashlib.sha256()
+    for name, component in (
+        ("psi.real", psi.real),
+        ("psi.imag", psi.imag),
+        ("phi", phi),
+    ):
+        quantized = np.rint(component * FINGERPRINT_SCALE).astype("<i8")
+        digest.update(name.encode("ascii"))
+        digest.update(np.asarray(quantized.shape, dtype="<i8").tobytes())
+        digest.update(np.ascontiguousarray(quantized).tobytes())
+    return digest.hexdigest()
+
+
 comparisons = []
 for count in (1, 10, 100):
     diffusion_psi, diffusion_phi = evolve(diffusion_step, count)
@@ -392,6 +450,10 @@ for count in (1, 10, 100):
                 diffusion_phi, wave_phi
             ),
             "diffusion_norm": float(np.sum(np.abs(diffusion_psi) ** 2)),
+            "diffusion_phi_sum": float(np.sum(diffusion_phi)),
+            "rd0_quantized_state_sha256": state_fingerprint(
+                diffusion_psi, diffusion_phi
+            ),
             "wave_norm": float(np.sum(np.abs(wave_psi) ** 2)),
         }
     )
@@ -424,6 +486,12 @@ print(
                 "The audited NumPy wave-mode dispatch executes diffusion_step; "
                 "the PyTorch wave-mode dispatch executes wave_step."
             ),
+            "rd0_fingerprint": {
+                "algorithm": "SHA-256 over little-endian signed int64 arrays",
+                "components": ["psi.real", "psi.imag", "phi"],
+                "quantization_scale": FINGERPRINT_SCALE,
+                "resolution": 1 / FINGERPRINT_SCALE,
+            },
         },
         indent=2,
         sort_keys=True,
@@ -434,29 +502,35 @@ print(
 
 ## Appendix B — Full Reference Output
 
-The output SHA-256 after normalizing line endings to LF and including the final newline is `021df938cc07f7298c22d9bef453a45b2e9b2d11055dcdc6540f6a955093148d`.
+The output SHA-256 after normalizing line endings to LF and including the final newline is `f8ec27fd30717bf20d8eada9cfc67f6db34f8dc3d1a629e1815a043a74cb3775`.
 
 ```json
 {
   "comparisons": [
     {
-      "diffusion_norm": 38.49523959583981,
+      "diffusion_norm": 38.495239595839806,
+      "diffusion_phi_sum": 255.75639466834733,
       "phi_relative_l2_diffusion_vs_wave": 1.6351787835780562e-06,
-      "psi_relative_l2_diffusion_vs_wave": 0.0014903411106810297,
+      "psi_relative_l2_diffusion_vs_wave": 0.001490341110681058,
+      "rd0_quantized_state_sha256": "b4a47af600aecced9718600330b8e618d4f6888ec2465acf2f611dcc399fd3af",
       "steps": 1,
       "wave_norm": 38.580413360465
     },
     {
-      "diffusion_norm": 38.59659161057617,
-      "phi_relative_l2_diffusion_vs_wave": 9.071425004146083e-05,
-      "psi_relative_l2_diffusion_vs_wave": 0.014932486520445624,
+      "diffusion_norm": 38.59659161057613,
+      "diffusion_phi_sum": 253.57674659985213,
+      "phi_relative_l2_diffusion_vs_wave": 9.071425004146495e-05,
+      "psi_relative_l2_diffusion_vs_wave": 0.014932486520446023,
+      "rd0_quantized_state_sha256": "e57d5a18a8ef8dbed48fe06eccc3108251ecda1afa7f1855801374092a5faf3f",
       "steps": 10,
       "wave_norm": 39.45731115125693
     },
     {
-      "diffusion_norm": 40.04951481358527,
-      "phi_relative_l2_diffusion_vs_wave": 0.00921926469811089,
-      "psi_relative_l2_diffusion_vs_wave": 0.15356322590250238,
+      "diffusion_norm": 40.049514813584835,
+      "diffusion_phi_sum": 233.01762766274334,
+      "phi_relative_l2_diffusion_vs_wave": 0.009219264698111216,
+      "psi_relative_l2_diffusion_vs_wave": 0.1535632259025071,
+      "rd0_quantized_state_sha256": "211dda7f2230625c9f4f1d92982dc022c1f6b6c7e3ba3aadffe5d0c78719418f",
       "steps": 100,
       "wave_norm": 49.83494026441414
     }
@@ -481,6 +555,16 @@ The output SHA-256 after normalizing line endings to LF and including the final 
     "whitepaper_phi_diffusion": 0.0075,
     "whitepaper_phi_reaction": 0.00035
   },
-  "dispatch_observation": "The audited NumPy wave-mode dispatch executes diffusion_step; the PyTorch wave-mode dispatch executes wave_step."
+  "dispatch_observation": "The audited NumPy wave-mode dispatch executes diffusion_step; the PyTorch wave-mode dispatch executes wave_step.",
+  "rd0_fingerprint": {
+    "algorithm": "SHA-256 over little-endian signed int64 arrays",
+    "components": [
+      "psi.real",
+      "psi.imag",
+      "phi"
+    ],
+    "quantization_scale": 1000000000000,
+    "resolution": 1e-12
+  }
 }
 ```
