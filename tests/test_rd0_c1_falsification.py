@@ -6,6 +6,10 @@ import numpy as np
 import pytest
 
 from lineum_core import math as lineum_math
+from lineum_core.profiles import (
+    RD0_C1_CONTINUOUS_TIME_PROFILE,
+    make_core_config,
+)
 
 
 SIZE = 32
@@ -15,19 +19,13 @@ EFFECTIVE_PHI_ALPHA = 0.05 * 0.05
 
 
 def _config(dt: float) -> lineum_math.CoreConfig:
-    return lineum_math.CoreConfig(
+    return make_core_config(
+        RD0_C1_CONTINUOUS_TIME_PROFILE,
         dt=dt,
         psi_diffusion=0.0,
         phi_diffusion=0.05,
         reaction_strength=0.0,
         drift_strength=0.0,
-        physics_mode_psi="diffusion",
-        disable_quantum_noise=True,
-        phi_diffusion_scales_with_dt=True,
-        use_mode_coupling=False,
-        use_mu=False,
-        disable_pml=True,
-        stencil_type="LAP4",
     )
 
 

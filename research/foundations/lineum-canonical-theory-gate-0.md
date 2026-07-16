@@ -1,11 +1,11 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** active — deterministic continuous-time recommendation supported; stochastic time semantics remain unresolved; default physics and whitepaper changes remain gated
-**Research version:** 0.5
+**Document status:** active — named deterministic and legacy time profiles implemented; stochastic time semantics remain unresolved; default physics and whitepaper changes remain gated
+**Research version:** 0.6
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
 **Current confidence:** high for the source audit, RD-0 fingerprint, deterministic time-scaled candidate, and distinction between initial branch selection and ongoing stochastic forcing; medium for stochastic interpretation and sequencing; no claim of physical validation
-**Decision readiness:** deterministic continuous-time profile ready for an explicit opt-in-to-canonical step; stochastic theory needs revision; major-discovery and fundamental-physics claims are not ready
+**Decision readiness:** deterministic continuous-time profile implemented for explicit opt-in use; stochastic theory needs revision; major-discovery and fundamental-physics claims are not ready
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
 **Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
@@ -20,6 +20,8 @@
 **A fixed-physical-time refinement experiment identifies one concrete numerical inconsistency.** The legacy \(\phi\)-diffusion is applied once per update without multiplication by the time step \(h\). Halving \(h\) therefore applies nearly twice as much \(\phi\)-diffusion over the same declared time. The project owner authorized an opt-in candidate containing the missing factor; it is now implemented in both CPU backends and converges at the expected first-order rate while the default remains unchanged.
 
 **Broader falsification supports `RD-0-C1=True` for deterministic continuous-time simulations but not yet for the entire stochastic theory.** Four Fourier modes, periodic edge coupling, nonuniform \(\kappa\), the analytic stability boundary, and cross-backend parity passed. The stochastic audit found two different effects: vacuum noise selects persistent phase branches, while fresh randomness added after a shared nonzero state shrinks as \(\sqrt h\). Current “quantum foam” therefore behaves more like stochastic branch selection than a demonstrated continuously driven quantum vacuum.
+
+**The approved profile gate is now implemented without changing the default runtime.** `legacy-per-update-v1` fixes `phi_diffusion_scales_with_dt=False`. `rd0-c1-deterministic-continuous-time-v1` fixes the validated deterministic subset and `phi_diffusion_scales_with_dt=True`. Profile-defining values fail closed if a caller attempts to override them, while \(h\) and numerical coefficients remain adjustable for controlled refinement experiments.
 
 **On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
@@ -494,12 +496,36 @@ The validation assessment is split:
 
 | Decision layer | Assessment | Recommendation |
 |---|---|---|
-| deterministic continuous-time Lineum | **ready for the next explicit profile step** | set `phi_diffusion_scales_with_dt=True` in a named canonical deterministic profile |
-| historical reproducibility | **ready** | retain an explicit legacy profile with the option `False` |
+| deterministic continuous-time Lineum | **explicit profile implemented** | use `rd0-c1-deterministic-continuous-time-v1` only for the validated deterministic lane |
+| historical reproducibility | **explicit profile implemented** | use `legacy-per-update-v1`; the unnamed default also remains unchanged |
 | stochastic linon/foam dynamics | **needs revision before canonical promotion** | define whether randomness is initial branch selection, Gaussian SDE forcing, Poisson events, or a specified combination |
 | fundamental physical time | **unverified** | treat \(t\) as an evolution parameter; test internal clocks before any proper-time or gravitational interpretation |
 
 Thus `RD-0-C1=True` is supported for every simulation claiming refinement of the same continuous-time trajectory. It is necessary but insufficient for a canonical stochastic Lineum model. The unresolved stochastic contract is not evidence that legacy `False` is preferable; it is a separate time-semantics problem.
+
+### 12.5 Named-profile implementation gate
+
+On July 16, 2026, the project owner authorized the next small code gate. Two stable names now make the time convention explicit rather than requiring callers to know a hidden Boolean:
+
+| Stable profile name | Fixed identity | Adjustable values | Intended use |
+|---|---|---|---|
+| `legacy-per-update-v1` | `phi_diffusion_scales_with_dt=False` | all non-identity `CoreConfig` values | historical reproduction and unchanged default behavior |
+| `rd0-c1-deterministic-continuous-time-v1` | `phi_diffusion_scales_with_dt=True`; noise disabled; diffusive \(\psi\); LAP4; mode coupling off; \(\mu\) off; PML off | \(h\), diffusion coefficients, reaction, drift, dissipation, and numerical safety values | deterministic refinement of one declared continuous-time trajectory |
+
+The continuous-time profile defaults to \(h=0.1\), the characterized RD-0 value, but deliberately permits \(h\) to change. Preventing a change in \(h\) would make refinement testing impossible. Attempts to change any fixed identity value raise an error instead of silently creating a third, mislabeled model. An unknown profile name also raises an error; the generic word `canonical` is intentionally not accepted because it is ambiguous in the historical corpus.
+
+The verification matrix contained 27 passing cases:
+
+| Verification group | Cases | Result |
+|---|---:|---|
+| named-profile discovery, defaults, adjustable refinement values, rejected identity changes, and unknown-name rejection | 13 | passed |
+| RD-0 legacy characterization and backend comparison | 2 | passed |
+| original C1 time-refinement candidate tests | 4 | passed |
+| broader Fourier, boundary, nonuniform-medium, stability, and backend falsification using the named continuous-time profile | 8 | passed |
+
+The broader eight-case suite now obtains its configuration through the named profile rather than reconstructing the Boolean choice by hand. This is the physical enforcement point: future drift in profile identity will fail the same tests that support the deterministic recommendation.
+
+This gate does **not** switch the historical simulator, audit run, stochastic linon dynamics, or any unnamed default to the new convention. It creates an explicit opt-in lane only. It also does not establish that the RD-0 subset is fundamental physics.
 
 ## 13. Limitations and Robustness
 
@@ -521,7 +547,7 @@ The approved decision is:
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-The approved read-only experiment, opt-in implementation, and broader deterministic falsification are complete. The next proposed code gate is to make `RD-0-C1=True` explicit only in a named deterministic canonical profile while preserving a named legacy profile. In parallel, stochastic model work must remain a research candidate until its event/noise time law is chosen and falsified. No fundamental-time, quantum-foam, particle, or gravitational whitepaper claim follows from this software decision.
+The approved read-only experiment, opt-in implementation, broader deterministic falsification, and named-profile gate are complete. The historical default remains legacy, while deterministic continuous-time experiments now have an explicit fail-closed lane. The next material physics decision is the stochastic contract: initial-condition branching, Gaussian \(\sqrt h\) forcing, Poisson-rate events, or a declared hybrid must be chosen and falsified before stochastic canonical promotion. No fundamental-time, quantum-foam, particle, or gravitational whitepaper claim follows from this software decision.
 
 ## 15. Further Questions
 
