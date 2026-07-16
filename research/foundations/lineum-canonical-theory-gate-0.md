@@ -1,10 +1,11 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** active — RD-0-C1 time-scaled phi candidate implemented and validated as opt-in; default physics and whitepaper changes remain gated
-**Research version:** 0.4
+**Document status:** active — deterministic continuous-time recommendation supported; stochastic time semantics remain unresolved; default physics and whitepaper changes remain gated
+**Research version:** 0.5
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
-**Current confidence:** high for the source audit, backend-divergence result, RD-0 software fingerprint, phi time-step inconsistency, and opt-in candidate implementation; medium for the recommended sequencing; no claim of physical validation
+**Current confidence:** high for the source audit, RD-0 fingerprint, deterministic time-scaled candidate, and distinction between initial branch selection and ongoing stochastic forcing; medium for stochastic interpretation and sequencing; no claim of physical validation
+**Decision readiness:** deterministic continuous-time profile ready for an explicit opt-in-to-canonical step; stochastic theory needs revision; major-discovery and fundamental-physics claims are not ready
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
 **Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
@@ -17,6 +18,8 @@
 **The smallest safe software step is a provisional deterministic reference lane, not promotion of Eq-11.1 or the biharmonic candidate.** A noise-free diffusive subset already agrees across NumPy and PyTorch to approximately machine precision in the tested configuration. It can serve as a ruler for later changes while the physical theory remains open. This proposed lane is named **Reference Dynamics 0 (`RD-0`)** to avoid assigning another historical `Eq-N` label prematurely.
 
 **A fixed-physical-time refinement experiment identifies one concrete numerical inconsistency.** The legacy \(\phi\)-diffusion is applied once per update without multiplication by the time step \(h\). Halving \(h\) therefore applies nearly twice as much \(\phi\)-diffusion over the same declared time. The project owner authorized an opt-in candidate containing the missing factor; it is now implemented in both CPU backends and converges at the expected first-order rate while the default remains unchanged.
+
+**Broader falsification supports `RD-0-C1=True` for deterministic continuous-time simulations but not yet for the entire stochastic theory.** Four Fourier modes, periodic edge coupling, nonuniform \(\kappa\), the analytic stability boundary, and cross-backend parity passed. The stochastic audit found two different effects: vacuum noise selects persistent phase branches, while fresh randomness added after a shared nonzero state shrinks as \(\sqrt h\). Current “quantum foam” therefore behaves more like stochastic branch selection than a demonstrated continuously driven quantum vacuum.
 
 **On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
@@ -388,19 +391,129 @@ The targeted candidate, legacy-characterization, and core-math test set produced
 
 No default equation, stochastic linon/noise setting, dispatch rule, whitepaper claim, or RD-0 fingerprint changed. The new branch changes behavior only when the opt-in value is explicitly enabled.
 
-## 12. Limitations and Robustness
+## 12. Numerical Time, Internal Clocks, and Stochastic Semantics
+
+### 12.1 Four distinct meanings of time
+
+The project must not use one word, “time,” for four different structures:
+
+1. **causal order \(n\):** the sequence stating which field state is evaluated before another;
+2. **numerical step \(h\):** the resolution used to approximate a declared evolution parameter \(t\);
+3. **operational or internal clocks:** repeatable processes inside the model, such as phase rotation, damping, diffusion, propagation, or a localized structure traversing a distance;
+4. **time arrow:** irreversible loss of recoverable information through damping, diffusion, coarse-graining, or stochastic branching.
+
+Setting `phi_diffusion_scales_with_dt=True` addresses only item 2. It means that increasing the temporal resolution changes the number of computational updates but not the intended trajectory. It does not assert that \(t\) is an ontologically fundamental universal clock.
+
+The project-owner hypothesis that time may be measured by \(\psi\)-wave friction, permeability of the medium, or a linon’s interaction with its environment is compatible with this separation. Those processes can define **rates relative to \(t\)** and may later define an operational proper clock. They do not by themselves supply causal ordering; a relational reformulation would still need one dynamical variable to serve as a clock for the others.
+
+Current deterministic rates already imply characteristic simulation-time scales. For uniform \(\kappa=1\), the lowest tested two-axis LAP4 mode has
+
+| Process | Characteristic time in current dimensionless \(t\) units |
+|---|---:|
+| hard-coded global \(\psi\) damping, rate \(0.005\) | 200.0 |
+| low-mode \(\psi\) diffusion, coefficient \(0.05\) | 260.2171722995434 |
+| low-mode `RD-0-C1` \(\phi\) diffusion, effective coefficient \(0.0025\) | 5204.343445990867 |
+
+These rates can be slowed or reshaped by the field state and \(\kappa\). The present solver nevertheless has one global update parameter and no derived local proper-time field. It also has no explicit velocity-dependent “linon friction” law; that phrase currently refers only to field damping, diffusion, drift, and interaction interpreted at the level of detected structures.
+
+### 12.2 Deterministic falsification results
+
+The opt-in candidate was challenged beyond the original smooth fixture.
+
+**Fourier controls.** On a \(32\times32\) periodic grid at \(h=0.1\), \(T=10\), four modes matched the exact discrete LAP4 amplification law:
+
+| Mode \((m_x,m_y)\) | LAP4 eigenvalue | Analytic amplitude ratio | Observed ratio | Absolute error |
+|---:|---:|---:|---:|---:|
+| (1,0) | -0.03842943919353914 | 0.9990397207685476 | 0.9990397207685489 | \(1.2212\times10^{-15}\) |
+| (1,1) | -0.07685887838707828 | 0.998080354460703 | 0.9980803544607025 | \(4.4409\times10^{-16}\) |
+| (2,3) | -0.4893017103723363 | 0.9878412315137362 | 0.9878412315137292 | \(6.9944\times10^{-15}\) |
+| (8,8) | -4.0 | 0.9047921471137089 | 0.9047921471137096 | \(6.6613\times10^{-16}\) |
+
+**Periodic edge control.** A \(+0.1\) impulse at the upper-left corner produced a center decrement of approximately \(-10^{-4}\) and equal \(+2.5\times10^{-5}\) increments in all four neighbors, including the two wrapped neighbors on the opposite edges.
+
+**Nonuniform-medium control.** With smooth \(\kappa\in[0.3,0.9]\), pairwise \(\phi\) errors for \(h=0.2/0.1\), \(0.1/0.05\), and \(0.05/0.025\) were `3.4681650239936567e-09`, `1.733968527375885e-09`, and `8.669556780505624e-10`. Error reduction factors were `2.000131472537297` and `2.0000659448645504`, consistent with first-order convergence.
+
+**Stability control.** For the highest-frequency checkerboard mode, the predicted uniform LAP4 limit is \(h_{\max}=100\). One step at \(h=99\) had amplitude factor \(-0.98\), while \(h=101\) had factor \(-1.02\) and therefore grew in magnitude. This matches the analytic explicit-Euler boundary.
+
+The permanent falsification suite produced `8 passed`, including nonuniform-\(\kappa\) NumPy/PyTorch CPU parity. These results materially reduce the risk that the earlier success was caused by one unusually smooth mode or one backend.
+
+### 12.3 Why stochastic time requires a separate contract
+
+The current stochastic source is schematically
+
+\[
+\Delta\psi_n=h\left(aB_n+\sigma Z_n\right),
+\]
+
+where \(B_n\) is a Bernoulli linon-source mask and \(Z_n\) is Gaussian noise. In a frozen source-only control with probability \(p\), after \(T/h\) steps,
+
+\[
+\mathbb E[\Delta\psi(T)]=Tpa,
+\qquad
+\operatorname{Var}[\Delta\psi(T)]
+=Th\left(a^2p(1-p)+\sigma^2\right).
+\]
+
+The mean is step-independent, but the standard deviation is proportional to \(\sqrt h\) and vanishes as \(h\rightarrow0\). A conventional finite-variance Gaussian stochastic differential equation instead uses an increment proportional to \(\sqrt h\). A Poisson jump process requires a declared rate, step-dependent event probability such as \(1-e^{-\lambda h}\), and a separately defined jump amplitude. Neither physical interpretation is currently declared for the combined linon/noise source.
+
+The nonlinear runtime complicates the source-only result because each initial fluctuation also selects a complex phase and later linon-source terms reinforce that phase. Two ensemble experiments separate these effects.
+
+**Vacuum branch selection.** Starting every run at exact \(\psi=0\), 128 seeds produce a persistent ensemble spread:
+
+| \(h\) | Steps to \(T=2\) | Mean cellwise complex ensemble std. | Mean total \(\psi\) energy |
+|---:|---:|---:|---:|
+| 0.2 | 10 | 0.02881458225082336 | 0.07378548000540894 |
+| 0.1 | 20 | 0.027996834103568465 | 0.06904762936513884 |
+| 0.05 | 40 | 0.02747828967664654 | 0.06621789351723734 |
+| 0.025 | 80 | 0.02720371152154367 | 0.06487020763061033 |
+
+The spread-reduction factors when \(h\) halves are `1.0292`, `1.0189`, and `1.0101`, approaching 1 rather than \(\sqrt2\). The initial tiny perturbation therefore selects a persistent phase branch.
+
+**Ongoing stochastic branching.** Starting all seeds from the same nonzero complex wave removes the singular phase choice and measures only new randomness added over \(T=1\):
+
+| \(h\) | Steps | Mean cellwise complex ensemble std. | Energy of ensemble-mean \(\psi\) |
+|---:|---:|---:|---:|
+| 0.2 | 5 | 0.007258234066983663 | 0.08529647704710092 |
+| 0.1 | 10 | 0.005179413153950338 | 0.084696643068043 |
+| 0.05 | 20 | 0.0036780697661307803 | 0.0845031895276381 |
+| 0.025 | 40 | 0.002604566167739291 | 0.08428553361262872 |
+
+Here the reduction factors are `1.4014`, `1.4082`, and `1.4122`, close to \(\sqrt2\). A 1,000-resample bootstrap gives the following 95% intervals: `[1.3801, 1.4218]`, `[1.3875, 1.4309]`, and `[1.3888, 1.4349]`. The result is therefore not explained by an unusually convenient set of 128 seeds.
+
+The standalone stochastic reconstruction matched the audited NumPy runtime exactly for the selected seed, step-size, vacuum, and nonzero-state cross-checks; maximum elementwise difference was `0`.
+
+The narrow supported interpretation is:
+
+- vacuum noise can select persistent emergent branches;
+- fresh stochastic forcing after a shared nonzero state vanishes as \(\sqrt h\) under the current increment convention;
+- the present mechanism is therefore closer to stochastic initial-branch selection plus an increasingly deterministic mean source than to a demonstrated continuously driven quantum vacuum.
+
+### 12.4 Canonical recommendation
+
+The validation assessment is split:
+
+| Decision layer | Assessment | Recommendation |
+|---|---|---|
+| deterministic continuous-time Lineum | **ready for the next explicit profile step** | set `phi_diffusion_scales_with_dt=True` in a named canonical deterministic profile |
+| historical reproducibility | **ready** | retain an explicit legacy profile with the option `False` |
+| stochastic linon/foam dynamics | **needs revision before canonical promotion** | define whether randomness is initial branch selection, Gaussian SDE forcing, Poisson events, or a specified combination |
+| fundamental physical time | **unverified** | treat \(t\) as an evolution parameter; test internal clocks before any proper-time or gravitational interpretation |
+
+Thus `RD-0-C1=True` is supported for every simulation claiming refinement of the same continuous-time trajectory. It is necessary but insufficient for a canonical stochastic Lineum model. The unresolved stochastic contract is not evidence that legacy `False` is preferable; it is a separate time-semantics problem.
+
+## 13. Limitations and Robustness
 
 - The backend comparison isolates deterministic evolution. It does not assess stochastic equivalence across random-number generators.
 - The comparison disables the absorbing boundary to isolate bulk dynamics. Boundary policy remains a separate Gate 0 choice.
-- The test covers one smooth initial state and three horizons. A permanent contract should add impulses, edge-localized states, nonuniform \(\kappa\), and zero-state controls.
+- The initial characterization used one smooth state, but the later deterministic suite adds an impulse, periodic edges, four Fourier modes, nonuniform \(\kappa\), and an analytic stability boundary.
 - The fingerprint is sensitive at \(10^{-12}\) resolution but is not a proof of bitwise portability across every future Python, NumPy, PyTorch, compiler, or CPU combination.
-- The refinement experiment tests one Fourier mode and one coupled smooth fixture. Additional modes, nonuniform \(\kappa\), boundary-localized states, and stability limits should be tested before promotion.
+- The stochastic ensemble uses an \(8\times8\) source-isolation control, 128 seeds, and short horizons. It distinguishes branch selection from ongoing forcing but does not validate long-lived linon counts, collisions, or macroscopic observables.
 - The hypothetical time-scaled branch tests numerical consistency only. It does not calibrate \(h\), \(D_\phi\), or any field to SI units.
 - The source snapshot contained uncommitted work. Revision identifiers and working-tree counts are therefore recorded explicitly.
 - The option assessment concerns readiness for canonicalization, not ultimate scientific merit.
 - No chart is used because three exact time checkpoints and five discrete options are clearer as audit tables than as plots.
 
-## 13. Decision Record and Next Gate
+## 14. Decision Record and Next Gate
 
 The approved decision is:
 
@@ -408,15 +521,38 @@ The approved decision is:
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-The approved read-only experiment and isolated non-default implementation are complete. The next proposed gate is broader falsification of `RD-0-C1` using nonuniform \(\kappa\), boundary-localized states, additional Fourier modes, and explicit stability limits. No default or canonical text should change before those controls pass and the owner reviews the results.
+The approved read-only experiment, opt-in implementation, and broader deterministic falsification are complete. The next proposed code gate is to make `RD-0-C1=True` explicit only in a named deterministic canonical profile while preserving a named legacy profile. In parallel, stochastic model work must remain a research candidate until its event/noise time law is chosen and falsified. No fundamental-time, quantum-foam, particle, or gravitational whitepaper claim follows from this software decision.
 
-## 14. Further Questions
+## 15. Further Questions
 
 1. Should \(\kappa\) be a fixed part of the Lineum law, an environmental coefficient map, or an extension?
-2. After broader falsification, should `RD-0-C1` replace legacy per-update \(\phi\)-diffusion as the default continuous-time interpretation?
+2. Should continuous stochastic forcing use Gaussian \(\sqrt h\) increments, Poisson-rate linon events, initial-condition randomness only, or an explicitly tested hybrid?
 3. Is locality a hard architectural requirement, or may a global spectral update remain a candidate if its nonlocal numerical kernel is declared?
 4. Is the core research target an effective nonlinear medium, or must every retained candidate aim at fundamental spacetime?
 5. Which single observable should be the first physical discriminator after software identity is achieved?
+
+## 16. Preliminary Novelty Boundary
+
+The broad idea “simple local rules generate autonomous particle-like structures” is established prior art, not a Lineum-exclusive discovery:
+
+| Prior result | Demonstrated scope | Portable citation |
+|---|---|---|
+| Lenia | continuous cellular automata with more than 400 catalogued autonomous pattern species | Bert Wang-Chak Chan, “Lenia: Biology of Artificial Life,” *Complex Systems* 28(3), 2019, DOI [10.25088/ComplexSystems.28.3.251](https://doi.org/10.25088/ComplexSystems.28.3.251) |
+| dissipative reaction-diffusion solitons | localized structures in two and three dimensions with particle-like motion and interaction | M. Bode, A. W. Liehr, C. P. Schenk, H.-G. Purwins, “Interaction of dissipative solitons: particle-like behaviour of localized structures in a three-component reaction-diffusion system,” *Physica D* 161, 2002, DOI [10.1016/S0167-2789(01)00360-8](https://doi.org/10.1016/S0167-2789(01)00360-8) |
+| discrete Lorentz-covariant quantum automata | exact or controlled discrete Lorentz covariance in specified quantum-walk/automaton models | P. Arrighi, S. Facchini, M. Forets, “Discrete Lorentz covariance for quantum walks and quantum cellular automata,” *New Journal of Physics* 16, 2014, DOI [10.1088/1367-2630/16/9/093007](https://doi.org/10.1088/1367-2630/16/9/093007) |
+| quantum-cellular-automaton electrodynamics | Maxwell behavior and composite-photon interpretation in a relativistic low-wave-vector regime | A. Bisio, G. M. D’Ariano, P. Perinotti, “Quantum cellular automaton theory of light,” *Annals of Physics* 368, 2016, DOI [10.1016/j.aop.2016.02.009](https://doi.org/10.1016/j.aop.2016.02.009) |
+
+Lineum may still become scientifically novel through its **specific** coupled complex-field, memory-field, medium-map, optional long-memory, and stochastic-branch architecture, or through an unexpected verified result produced by that architecture. At present, however, uniqueness of the combination is not yet a demonstrated scientific discovery; a new combination of known ingredients and a substantial software system are not by themselves a new physical law.
+
+A strong Lineum novelty claim would require at least one of the following:
+
+1. a new mathematically characterized dynamical class or universality result;
+2. linon candidates that retain localization, identity, conserved structure, dispersion, and collision behavior across \(h\), grid spacing, domain size, boundary controls, and independent implementations;
+3. recovery of a nontrivial symmetry or known low-energy equation from fewer or different assumptions than existing models;
+4. a quantitative falsifiable prediction not fitted into the model after observation;
+5. independent reproduction and external technical review.
+
+The present assessment is therefore **promising original research platform, not yet a major physical discovery**. The project has passed the “nontrivial dynamics exist” threshold and no longer resembles an immediate dead end. The possible size of the discovery cannot be assessed responsibly until particle criteria, stochastic time semantics, symmetry, scaling, and at least one discriminating prediction are resolved.
 
 ---
 
@@ -691,7 +827,642 @@ The output SHA-256 after normalizing line endings to LF and including the final 
 }
 ```
 
-## Appendix C — Standalone Phi Time-Step Refinement Program
+## Appendix C — Standalone Canonical-Time Decision Suite
+
+The following program reproduces the broader deterministic falsification, internal-rate examples, stochastic branch-selection experiment, ongoing-forcing experiment, and bootstrap intervals. It requires only NumPy and no Lineum repository or data file. It was executed with Python 3.11.15 and NumPy 1.26.4. Two consecutive runs produced bitwise-identical LF-normalized output. The embedded program SHA-256 is `2208d7c491173e24aa3d552527f221a268b59d29f333c79cabe6454fdf9dcc7e`.
+
+```python
+"""Standalone deterministic and stochastic time-semantics decision suite."""
+
+import json
+
+import numpy as np
+
+
+SIZE = 32
+PHYSICAL_TIME = 10.0
+TIME_STEPS = (0.2, 0.1, 0.05, 0.025)
+D_PHI = 0.05
+PHI_LAPLACE_RATE = 0.05
+PHI_ALPHA = D_PHI * PHI_LAPLACE_RATE
+
+STOCHASTIC_SIZE = 8
+STOCHASTIC_TIME = 2.0
+STOCHASTIC_SEEDS = 128
+NOISE_SIGMA = 0.005
+
+
+def weighted_laplace(field, kappa, rate):
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    neighbors = (
+        f_up * k_up
+        + f_down * k_down
+        + f_left * k_left
+        + f_right * k_right
+    )
+    active = k_up + k_down + k_left + k_right
+    return rate * (neighbors - active * field)
+
+
+def mode(mode_x, mode_y, size=SIZE):
+    y, x = np.mgrid[:size, :size]
+    return np.cos(2 * np.pi * mode_x * x / size) * np.cos(
+        2 * np.pi * mode_y * y / size
+    )
+
+
+def mode_amplitude(phi, spatial_mode):
+    centered = phi - np.mean(phi)
+    return float(
+        np.sum(centered * spatial_mode) / np.sum(spatial_mode**2)
+    )
+
+
+def evolve_phi(phi, kappa, dt, physical_time=PHYSICAL_TIME):
+    phi = phi.copy()
+    for _ in range(round(physical_time / dt)):
+        phi += (
+            dt
+            * kappa
+            * D_PHI
+            * weighted_laplace(phi, kappa, PHI_LAPLACE_RATE)
+        )
+    return phi
+
+
+def relative_to_reference(estimate, reference):
+    return float(
+        np.linalg.norm(estimate - reference)
+        / (np.linalg.norm(reference) + 1e-30)
+    )
+
+
+multiple_modes = []
+for mode_x, mode_y in ((1, 0), (1, 1), (2, 3), (8, 8)):
+    spatial_mode = mode(mode_x, mode_y)
+    initial_phi = 0.5 + 0.05 * spatial_mode
+    final_phi = evolve_phi(initial_phi, np.ones_like(initial_phi), 0.1)
+    observed = mode_amplitude(final_phi, spatial_mode) / 0.05
+    eigenvalue = (
+        2 * np.cos(2 * np.pi * mode_x / SIZE)
+        + 2 * np.cos(2 * np.pi * mode_y / SIZE)
+        - 4
+    )
+    expected = float(
+        (1 + 0.1 * PHI_ALPHA * eigenvalue)
+        ** round(PHYSICAL_TIME / 0.1)
+    )
+    multiple_modes.append(
+        {
+            "mode": [mode_x, mode_y],
+            "lap4_eigenvalue": float(eigenvalue),
+            "observed_amplitude_ratio": observed,
+            "analytic_amplitude_ratio": expected,
+            "absolute_error": abs(observed - expected),
+        }
+    )
+
+
+edge_phi = np.full((SIZE, SIZE), 0.5, dtype=np.float64)
+edge_phi[0, 0] += 0.1
+edge_after = evolve_phi(edge_phi, np.ones_like(edge_phi), 0.1, 0.1)
+edge_delta = edge_after - edge_phi
+periodic_edge = {
+    "center_delta": float(edge_delta[0, 0]),
+    "down_neighbor_delta": float(edge_delta[1, 0]),
+    "up_wrapped_neighbor_delta": float(edge_delta[-1, 0]),
+    "right_neighbor_delta": float(edge_delta[0, 1]),
+    "left_wrapped_neighbor_delta": float(edge_delta[0, -1]),
+}
+
+
+y, x = np.mgrid[:SIZE, :SIZE]
+nonuniform_phi = 0.5 + 0.08 * mode(2, 1)
+nonuniform_kappa = 0.6 + 0.3 * np.cos(2 * np.pi * x / SIZE) * np.cos(
+    2 * np.pi * y / SIZE
+)
+nonuniform_states = {
+    dt: evolve_phi(nonuniform_phi, nonuniform_kappa, dt)
+    for dt in TIME_STEPS
+}
+nonuniform_errors = []
+for coarse, fine in zip(TIME_STEPS, TIME_STEPS[1:]):
+    nonuniform_errors.append(
+        {
+            "coarse_dt": coarse,
+            "fine_dt": fine,
+            "phi_relative_l2": relative_to_reference(
+                nonuniform_states[coarse], nonuniform_states[fine]
+            ),
+        }
+    )
+
+
+checkerboard = mode(SIZE // 2, SIZE // 2)
+stability = []
+for dt in (99.0, 101.0):
+    initial_phi = 0.5 + 0.1 * checkerboard
+    final_phi = evolve_phi(initial_phi, np.ones_like(initial_phi), dt, dt)
+    stability.append(
+        {
+            "dt": dt,
+            "amplitude_ratio_after_one_step": mode_amplitude(
+                final_phi, checkerboard
+            )
+            / 0.1,
+        }
+    )
+
+
+def stochastic_run(dt, seed, initial_psi, physical_time):
+    np.random.seed(seed)
+    psi = initial_psi.astype(np.complex128).copy()
+    kappa = np.ones((STOCHASTIC_SIZE, STOCHASTIC_SIZE), dtype=np.float64)
+    for _ in range(round(physical_time / dt)):
+        amplitude = np.abs(psi)
+        grad_x, grad_y = np.gradient(amplitude)
+        grad_magnitude = np.sqrt(grad_x**2 + grad_y**2)
+        probability = 1.0 / (
+            1.0 + np.exp(-5.0 * (amplitude + grad_magnitude))
+        )
+        linons = (
+            np.random.rand(STOCHASTIC_SIZE, STOCHASTIC_SIZE) < probability
+        ).astype(np.float64)
+        linon_effect = (0.03 + 0.02 * amplitude) * linons
+        phase = np.exp(1j * np.angle(psi))
+        linon_complex = linon_effect * phase
+        fluctuation = np.clip(
+            np.random.normal(
+                0.0,
+                NOISE_SIGMA,
+                (STOCHASTIC_SIZE, STOCHASTIC_SIZE),
+            ),
+            -1.0,
+            1.0,
+        ) * phase
+        psi += (linon_complex + fluctuation) * kappa * dt
+        psi -= 0.005 * psi * dt
+    return psi
+
+
+stochastic_rows = []
+vacuum_ensembles = {}
+vacuum = np.zeros(
+    (STOCHASTIC_SIZE, STOCHASTIC_SIZE), dtype=np.complex128
+)
+for dt in TIME_STEPS:
+    ensemble = np.stack(
+        [
+            stochastic_run(dt, seed, vacuum, STOCHASTIC_TIME)
+            for seed in range(STOCHASTIC_SEEDS)
+        ]
+    )
+    vacuum_ensembles[dt] = ensemble
+    per_seed_spatial_mean = np.mean(ensemble.real, axis=(1, 2))
+    cellwise_ensemble_std = np.std(ensemble.real, axis=0, ddof=1)
+    cellwise_complex_std = np.sqrt(
+        np.var(ensemble.real, axis=0, ddof=1)
+        + np.var(ensemble.imag, axis=0, ddof=1)
+    )
+    stochastic_rows.append(
+        {
+            "dt": dt,
+            "steps": round(STOCHASTIC_TIME / dt),
+            "ensemble_mean_spatial_mean_real_psi": float(
+                np.mean(per_seed_spatial_mean)
+            ),
+            "ensemble_std_spatial_mean_real_psi": float(
+                np.std(per_seed_spatial_mean, ddof=1)
+            ),
+            "mean_cellwise_ensemble_std_real_psi": float(
+                np.mean(cellwise_ensemble_std)
+            ),
+            "mean_cellwise_ensemble_std_complex_psi": float(
+                np.mean(cellwise_complex_std)
+            ),
+            "ensemble_mean_total_psi_energy": float(
+                np.mean(np.sum(np.abs(ensemble) ** 2, axis=(1, 2)))
+            ),
+        }
+    )
+
+
+branch_y, branch_x = np.mgrid[:STOCHASTIC_SIZE, :STOCHASTIC_SIZE]
+branch_initial = 0.02 * np.exp(1j * (0.2 * branch_x - 0.1 * branch_y))
+branch_rows = []
+branch_ensembles = {}
+for dt in TIME_STEPS:
+    ensemble = np.stack(
+        [
+            stochastic_run(dt, seed, branch_initial, 1.0)
+            for seed in range(STOCHASTIC_SEEDS)
+        ]
+    )
+    branch_ensembles[dt] = ensemble
+    cellwise_complex_std = np.sqrt(
+        np.var(ensemble.real, axis=0, ddof=1)
+        + np.var(ensemble.imag, axis=0, ddof=1)
+    )
+    ensemble_mean = np.mean(ensemble, axis=0)
+    branch_rows.append(
+        {
+            "dt": dt,
+            "steps": round(1.0 / dt),
+            "mean_cellwise_ensemble_std_complex_psi": float(
+                np.mean(cellwise_complex_std)
+            ),
+            "ensemble_mean_total_psi_energy": float(
+                np.sum(np.abs(ensemble_mean) ** 2)
+            ),
+        }
+    )
+
+
+def mean_cellwise_complex_std(ensemble):
+    return float(
+        np.mean(
+            np.sqrt(
+                np.var(ensemble.real, axis=0, ddof=1)
+                + np.var(ensemble.imag, axis=0, ddof=1)
+            )
+        )
+    )
+
+
+bootstrap_rng = np.random.default_rng(20260716)
+bootstrap_repetitions = 1000
+vacuum_bootstrap_factors = [[], [], []]
+branch_bootstrap_factors = [[], [], []]
+for _ in range(bootstrap_repetitions):
+    indices = bootstrap_rng.integers(
+        0, STOCHASTIC_SEEDS, size=STOCHASTIC_SEEDS
+    )
+    vacuum_spreads = [
+        mean_cellwise_complex_std(vacuum_ensembles[dt][indices])
+        for dt in TIME_STEPS
+    ]
+    branch_spreads = [
+        mean_cellwise_complex_std(branch_ensembles[dt][indices])
+        for dt in TIME_STEPS
+    ]
+    for index in range(3):
+        vacuum_bootstrap_factors[index].append(
+            vacuum_spreads[index] / vacuum_spreads[index + 1]
+        )
+        branch_bootstrap_factors[index].append(
+            branch_spreads[index] / branch_spreads[index + 1]
+        )
+
+
+def bootstrap_intervals(samples):
+    return [
+        {
+            "lower_95": float(np.percentile(values, 2.5)),
+            "upper_95": float(np.percentile(values, 97.5)),
+        }
+        for values in samples
+    ]
+
+
+source_only_control = []
+probability = 0.5
+linon_amplitude = 0.03
+source_variance = (
+    linon_amplitude**2 * probability * (1 - probability)
+    + NOISE_SIGMA**2
+)
+for dt in TIME_STEPS:
+    source_only_control.append(
+        {
+            "dt": dt,
+            "expected_final_mean": STOCHASTIC_TIME
+            * probability
+            * linon_amplitude,
+            "expected_final_std_current_dt_scaling": float(
+                np.sqrt(STOCHASTIC_TIME * dt * source_variance)
+            ),
+            "expected_final_std_sde_sqrt_dt_scaling": float(
+                np.sqrt(STOCHASTIC_TIME) * NOISE_SIGMA
+            ),
+        }
+    )
+
+
+low_mode_eigenvalue = 4 * np.cos(2 * np.pi / SIZE) - 4
+output = {
+    "configuration": {
+        "deterministic_grid_size": SIZE,
+        "deterministic_physical_time": PHYSICAL_TIME,
+        "time_steps": list(TIME_STEPS),
+        "stochastic_grid_size": STOCHASTIC_SIZE,
+        "stochastic_physical_time": STOCHASTIC_TIME,
+        "stochastic_seed_count": STOCHASTIC_SEEDS,
+    },
+    "deterministic_candidate": {
+        "multiple_fourier_modes": multiple_modes,
+        "periodic_edge": periodic_edge,
+        "nonuniform_kappa_pairwise_refinement": nonuniform_errors,
+        "nonuniform_kappa_error_reduction_factors": [
+            nonuniform_errors[0]["phi_relative_l2"]
+            / nonuniform_errors[1]["phi_relative_l2"],
+            nonuniform_errors[1]["phi_relative_l2"]
+            / nonuniform_errors[2]["phi_relative_l2"],
+        ],
+        "uniform_checkerboard_stability": stability,
+        "predicted_uniform_lap4_max_stable_dt": 2
+        / (8 * PHI_ALPHA),
+    },
+    "stochastic_current_runtime_semantics": {
+        "ensemble_results": stochastic_rows,
+        "cellwise_std_reduction_factors_when_dt_halves": [
+            stochastic_rows[0]["mean_cellwise_ensemble_std_complex_psi"]
+            / stochastic_rows[1]["mean_cellwise_ensemble_std_complex_psi"],
+            stochastic_rows[1]["mean_cellwise_ensemble_std_complex_psi"]
+            / stochastic_rows[2]["mean_cellwise_ensemble_std_complex_psi"],
+            stochastic_rows[2]["mean_cellwise_ensemble_std_complex_psi"]
+            / stochastic_rows[3]["mean_cellwise_ensemble_std_complex_psi"],
+        ],
+        "common_nonzero_state_branching": branch_rows,
+        "branching_std_reduction_factors_when_dt_halves": [
+            branch_rows[0]["mean_cellwise_ensemble_std_complex_psi"]
+            / branch_rows[1]["mean_cellwise_ensemble_std_complex_psi"],
+            branch_rows[1]["mean_cellwise_ensemble_std_complex_psi"]
+            / branch_rows[2]["mean_cellwise_ensemble_std_complex_psi"],
+            branch_rows[2]["mean_cellwise_ensemble_std_complex_psi"]
+            / branch_rows[3]["mean_cellwise_ensemble_std_complex_psi"],
+        ],
+        "branching_std_reduction_factor_bootstrap_95": bootstrap_intervals(
+            branch_bootstrap_factors
+        ),
+        "vacuum_std_reduction_factor_bootstrap_95": bootstrap_intervals(
+            vacuum_bootstrap_factors
+        ),
+        "bootstrap_repetitions": bootstrap_repetitions,
+        "source_only_analytic_control": source_only_control,
+    },
+    "internal_rate_examples": {
+        "global_psi_damping_time_constant": 1 / 0.005,
+        "low_mode_psi_diffusion_time_constant_at_kappa_1": float(
+            1 / (0.05 * abs(low_mode_eigenvalue))
+        ),
+        "low_mode_phi_diffusion_time_constant_at_kappa_1": float(
+            1 / (PHI_ALPHA * abs(low_mode_eigenvalue))
+        ),
+    },
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+## Appendix D — Full Canonical-Time Decision Output
+
+The output SHA-256 after normalizing line endings to LF and including the final newline is `a2d508368032cea8ba25c9970e0dc37a83d597101ce844005bf8d5a6515b9e6e`.
+
+```json
+{
+  "configuration": {
+    "deterministic_grid_size": 32,
+    "deterministic_physical_time": 10.0,
+    "stochastic_grid_size": 8,
+    "stochastic_physical_time": 2.0,
+    "stochastic_seed_count": 128,
+    "time_steps": [
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ]
+  },
+  "deterministic_candidate": {
+    "multiple_fourier_modes": [
+      {
+        "absolute_error": 1.2212453270876722e-15,
+        "analytic_amplitude_ratio": 0.9990397207685476,
+        "lap4_eigenvalue": -0.03842943919353914,
+        "mode": [
+          1,
+          0
+        ],
+        "observed_amplitude_ratio": 0.9990397207685489
+      },
+      {
+        "absolute_error": 4.440892098500626e-16,
+        "analytic_amplitude_ratio": 0.998080354460703,
+        "lap4_eigenvalue": -0.07685887838707828,
+        "mode": [
+          1,
+          1
+        ],
+        "observed_amplitude_ratio": 0.9980803544607025
+      },
+      {
+        "absolute_error": 6.994405055138486e-15,
+        "analytic_amplitude_ratio": 0.9878412315137362,
+        "lap4_eigenvalue": -0.4893017103723363,
+        "mode": [
+          2,
+          3
+        ],
+        "observed_amplitude_ratio": 0.9878412315137292
+      },
+      {
+        "absolute_error": 6.661338147750939e-16,
+        "analytic_amplitude_ratio": 0.9047921471137089,
+        "lap4_eigenvalue": -3.9999999999999996,
+        "mode": [
+          8,
+          8
+        ],
+        "observed_amplitude_ratio": 0.9047921471137096
+      }
+    ],
+    "nonuniform_kappa_error_reduction_factors": [
+      2.000131472537297,
+      2.0000659448645504
+    ],
+    "nonuniform_kappa_pairwise_refinement": [
+      {
+        "coarse_dt": 0.2,
+        "fine_dt": 0.1,
+        "phi_relative_l2": 3.4681650239936567e-09
+      },
+      {
+        "coarse_dt": 0.1,
+        "fine_dt": 0.05,
+        "phi_relative_l2": 1.733968527375885e-09
+      },
+      {
+        "coarse_dt": 0.05,
+        "fine_dt": 0.025,
+        "phi_relative_l2": 8.669556780505624e-10
+      }
+    ],
+    "periodic_edge": {
+      "center_delta": -9.999999999998899e-05,
+      "down_neighbor_delta": 2.5000000000052758e-05,
+      "left_wrapped_neighbor_delta": 2.5000000000052758e-05,
+      "right_neighbor_delta": 2.5000000000052758e-05,
+      "up_wrapped_neighbor_delta": 2.5000000000052758e-05
+    },
+    "predicted_uniform_lap4_max_stable_dt": 99.99999999999999,
+    "uniform_checkerboard_stability": [
+      {
+        "amplitude_ratio_after_one_step": -0.9799999999999994,
+        "dt": 99.0
+      },
+      {
+        "amplitude_ratio_after_one_step": -1.0199999999999994,
+        "dt": 101.0
+      }
+    ]
+  },
+  "internal_rate_examples": {
+    "global_psi_damping_time_constant": 200.0,
+    "low_mode_phi_diffusion_time_constant_at_kappa_1": 5204.343445990867,
+    "low_mode_psi_diffusion_time_constant_at_kappa_1": 260.2171722995434
+  },
+  "stochastic_current_runtime_semantics": {
+    "bootstrap_repetitions": 1000,
+    "branching_std_reduction_factor_bootstrap_95": [
+      {
+        "lower_95": 1.380100685682375,
+        "upper_95": 1.421757148019419
+      },
+      {
+        "lower_95": 1.387459161864581,
+        "upper_95": 1.4308822629478066
+      },
+      {
+        "lower_95": 1.3887844422350775,
+        "upper_95": 1.4349241478590746
+      }
+    ],
+    "branching_std_reduction_factors_when_dt_halves": [
+      1.4013622492053581,
+      1.408187849410732,
+      1.4121621526410548
+    ],
+    "cellwise_std_reduction_factors_when_dt_halves": [
+      1.0292085935227464,
+      1.0188710590442107,
+      1.0100934078383172
+    ],
+    "common_nonzero_state_branching": [
+      {
+        "dt": 0.2,
+        "ensemble_mean_total_psi_energy": 0.08529647704710092,
+        "mean_cellwise_ensemble_std_complex_psi": 0.007258234066983663,
+        "steps": 5
+      },
+      {
+        "dt": 0.1,
+        "ensemble_mean_total_psi_energy": 0.084696643068043,
+        "mean_cellwise_ensemble_std_complex_psi": 0.005179413153950338,
+        "steps": 10
+      },
+      {
+        "dt": 0.05,
+        "ensemble_mean_total_psi_energy": 0.0845031895276381,
+        "mean_cellwise_ensemble_std_complex_psi": 0.0036780697661307803,
+        "steps": 20
+      },
+      {
+        "dt": 0.025,
+        "ensemble_mean_total_psi_energy": 0.08428553361262872,
+        "mean_cellwise_ensemble_std_complex_psi": 0.002604566167739291,
+        "steps": 40
+      }
+    ],
+    "ensemble_results": [
+      {
+        "dt": 0.2,
+        "ensemble_mean_spatial_mean_real_psi": 0.01787051141925871,
+        "ensemble_mean_total_psi_energy": 0.07378548000540894,
+        "ensemble_std_spatial_mean_real_psi": 0.0035329295364034887,
+        "mean_cellwise_ensemble_std_complex_psi": 0.02881458225082336,
+        "mean_cellwise_ensemble_std_real_psi": 0.02881458225082336,
+        "steps": 10
+      },
+      {
+        "dt": 0.1,
+        "ensemble_mean_spatial_mean_real_psi": 0.017066526935238868,
+        "ensemble_mean_total_psi_energy": 0.06904762936513884,
+        "ensemble_std_spatial_mean_real_psi": 0.0034087546062588786,
+        "mean_cellwise_ensemble_std_complex_psi": 0.027996834103568465,
+        "mean_cellwise_ensemble_std_real_psi": 0.027996834103568465,
+        "steps": 20
+      },
+      {
+        "dt": 0.05,
+        "ensemble_mean_spatial_mean_real_psi": 0.016603226985407026,
+        "ensemble_mean_total_psi_energy": 0.06621789351723734,
+        "ensemble_std_spatial_mean_real_psi": 0.0033186245019622956,
+        "mean_cellwise_ensemble_std_complex_psi": 0.02747828967664654,
+        "mean_cellwise_ensemble_std_real_psi": 0.02747828967664654,
+        "steps": 40
+      },
+      {
+        "dt": 0.025,
+        "ensemble_mean_spatial_mean_real_psi": 0.01641395396640176,
+        "ensemble_mean_total_psi_energy": 0.06487020763061033,
+        "ensemble_std_spatial_mean_real_psi": 0.003285649392178308,
+        "mean_cellwise_ensemble_std_complex_psi": 0.02720371152154367,
+        "mean_cellwise_ensemble_std_real_psi": 0.02720371152154367,
+        "steps": 80
+      }
+    ],
+    "source_only_analytic_control": [
+      {
+        "dt": 0.2,
+        "expected_final_mean": 0.03,
+        "expected_final_std_current_dt_scaling": 0.01,
+        "expected_final_std_sde_sqrt_dt_scaling": 0.007071067811865476
+      },
+      {
+        "dt": 0.1,
+        "expected_final_mean": 0.03,
+        "expected_final_std_current_dt_scaling": 0.007071067811865475,
+        "expected_final_std_sde_sqrt_dt_scaling": 0.007071067811865476
+      },
+      {
+        "dt": 0.05,
+        "expected_final_mean": 0.03,
+        "expected_final_std_current_dt_scaling": 0.005,
+        "expected_final_std_sde_sqrt_dt_scaling": 0.007071067811865476
+      },
+      {
+        "dt": 0.025,
+        "expected_final_mean": 0.03,
+        "expected_final_std_current_dt_scaling": 0.0035355339059327377,
+        "expected_final_std_sde_sqrt_dt_scaling": 0.007071067811865476
+      }
+    ],
+    "vacuum_std_reduction_factor_bootstrap_95": [
+      {
+        "lower_95": 1.0237213486317018,
+        "upper_95": 1.0353375308393835
+      },
+      {
+        "lower_95": 1.0144254432593718,
+        "upper_95": 1.0234777396838273
+      },
+      {
+        "lower_95": 1.007380788718166,
+        "upper_95": 1.0128752595785082
+      }
+    ]
+  }
+}
+```
+
+## Appendix E — Standalone Phi Time-Step Refinement Program
 
 The following independent program reproduces the isolated analytic control and the coupled RD-0 refinement tables. It requires only NumPy and no Lineum repository or data file. It was executed with Python 3.11.15 and NumPy 1.26.4. Two consecutive runs produced bitwise-identical LF-normalized output. The embedded program SHA-256 is `12c10b6f9d6e72f43b283c324d683701dcdfa05bf19207499de6c11c9a1975d1`.
 
@@ -914,7 +1685,7 @@ output = {
 print(json.dumps(output, indent=2, sort_keys=True))
 ```
 
-## Appendix D — Full Phi Time-Step Refinement Output
+## Appendix F — Full Phi Time-Step Refinement Output
 
 The output SHA-256 after normalizing line endings to LF and including the final newline is `e90f66e55d27345a4221b5cedc5c945b8912365355431e7a94b231ed602993d5`.
 
