@@ -1,10 +1,10 @@
 # Lineum Gate 0: Canonical-Theory Decision Brief
 
-**Document status:** active — RD-0 characterized and phi time-step inconsistency reproduced; physics corrections and whitepaper changes remain gated
-**Research version:** 0.3
+**Document status:** active — RD-0-C1 time-scaled phi candidate implemented and validated as opt-in; default physics and whitepaper changes remain gated
+**Research version:** 0.4
 **Evidence cutoff date:** July 16, 2026
 **Language:** English
-**Current confidence:** high for the source audit, backend-divergence result, RD-0 software fingerprint, and phi time-step inconsistency; medium for the recommended sequencing; no claim of physical validation
+**Current confidence:** high for the source audit, backend-divergence result, RD-0 software fingerprint, phi time-step inconsistency, and opt-in candidate implementation; medium for the recommended sequencing; no claim of physical validation
 **Standalone portability:** all decision-relevant definitions, equations, observations, calculations, executable reproduction code, and outputs are embedded in this document
 **Decision boundary:** this brief records one approved software-characterization step; it does not declare a new Lineum law
 
@@ -16,7 +16,7 @@
 
 **The smallest safe software step is a provisional deterministic reference lane, not promotion of Eq-11.1 or the biharmonic candidate.** A noise-free diffusive subset already agrees across NumPy and PyTorch to approximately machine precision in the tested configuration. It can serve as a ruler for later changes while the physical theory remains open. This proposed lane is named **Reference Dynamics 0 (`RD-0`)** to avoid assigning another historical `Eq-N` label prematurely.
 
-**A fixed-physical-time refinement experiment now identifies one concrete numerical inconsistency.** The current \(\phi\)-diffusion is applied once per update without multiplication by the time step \(h\). Halving \(h\) therefore applies nearly twice as much \(\phi\)-diffusion over the same declared time. An otherwise identical hypothetical variant containing the missing factor converges at the expected first-order rate. This is strong evidence for a numerical defect if \(h\) is intended as physical or continuum time; it is not yet authorization to change the production solver.
+**A fixed-physical-time refinement experiment identifies one concrete numerical inconsistency.** The legacy \(\phi\)-diffusion is applied once per update without multiplication by the time step \(h\). Halving \(h\) therefore applies nearly twice as much \(\phi\)-diffusion over the same declared time. The project owner authorized an opt-in candidate containing the missing factor; it is now implemented in both CPU backends and converges at the expected first-order rate while the default remains unchanged.
 
 **On July 16, 2026, the project owner approved this separation and the characterization-first path:**
 
@@ -343,7 +343,7 @@ When \(h\) is halved, the current \(\phi\) discrepancy grows by factors `1.95277
 
 ### 11.4 Runtime cross-check
 
-The standalone reconstruction was checked against the audited NumPy runtime for every tested \(h\). The maximum isolated amplitude-ratio difference was exactly `0`; the maximum coupled \(\phi\) element difference was exactly `0`; and the maximum coupled \(\psi\) element difference was \(1.1102230246251565\times10^{-16}\).
+The standalone reconstruction was checked against the audited NumPy runtime for every tested \(h\) in both the legacy and time-scaled branches. The maximum isolated amplitude-ratio difference was exactly `0`; the maximum coupled \(\phi\) element difference was \(5.551115123125783\times10^{-17}\); and the maximum coupled \(\psi\) element difference was \(2.220446049250313\times10^{-16}\).
 
 ### 11.5 Historical-intent audit and conclusion
 
@@ -361,9 +361,32 @@ The evidence supports this narrow conclusion with high confidence:
 
 > **If `dt`/\(h\) represents physical or continuum time, the missing factor on \(\phi\)-diffusion is a numerical inconsistency. Multiplying that term by \(h\) restores the expected refinement behavior in both the isolated analytic control and the coupled RD-0 fixture.**
 
-This does not prove that the candidate is the final Lineum law, nor does it decide the physical value or units of \(D_\phi\). If Lineum instead chooses a strictly discrete per-update automaton semantics, the current term may be retained, but then changing \(h\) changes the model rather than merely refining its integration.
+This does not prove that the candidate is the final Lineum law, nor does it decide the physical value or units of \(D_\phi\). If Lineum instead chooses a strictly discrete per-update automaton semantics, the legacy term may be retained, but then changing \(h\) changes the model rather than merely refining its integration.
 
-No production equation, default, dispatch, whitepaper, or RD-0 fingerprint was changed by this experiment.
+### 11.6 Opt-in `RD-0-C1` implementation result
+
+The implementation adds one explicit configuration value, `phi_diffusion_scales_with_dt`, whose default is `False`. Both NumPy and PyTorch CPU compute the same step scale:
+
+\[
+s_\phi=
+\begin{cases}
+h,&\text{if `phi_diffusion_scales_with_dt=True`,}\\
+1,&\text{otherwise,}
+\end{cases}
+\qquad
+\Delta\phi_{\mathrm{diff}}=s_\phi\kappa D_\phi\mathcal L_\kappa(\phi).
+\]
+
+The first implementation test increment verifies four properties:
+
+1. the option is off by default;
+2. legacy RD-0 full-state fingerprints at steps 1, 10, and 100 remain unchanged;
+3. the opt-in isolated and coupled trajectories reproduce the analytic and standalone refinement results;
+4. complete NumPy and PyTorch CPU candidate states agree within \(\mathrm{rtol}=10^{-12}\), \(\mathrm{atol}=10^{-13}\), with no cap activation.
+
+The targeted candidate, legacy-characterization, and core-math test set produced `9 passed` in the audited working state. An isolated Git tree containing only the intended candidate changes initially produced `8 passed, 1 failed`: the failure occurred in a pre-existing generic smoke test because the base revision automatically selected a visible `sm_120` GPU unsupported by its PyTorch build. The candidate tests had already passed, and the failure occurred before candidate arithmetic was reached. Repeating the exact isolated tree with CUDA hidden produced `9 passed`; the dedicated candidate parity test still executed PyTorch explicitly on CPU, so backend comparison was not skipped. This separates candidate correctness from the independently pending execution-device policy work.
+
+No default equation, stochastic linon/noise setting, dispatch rule, whitepaper claim, or RD-0 fingerprint changed. The new branch changes behavior only when the opt-in value is explicitly enabled.
 
 ## 12. Limitations and Robustness
 
@@ -385,12 +408,12 @@ The approved decision is:
 
 This decision preserves the long-term ambition of Lineum while giving the project one reproducible software baseline. It is reversible: a later wave, Eq-11.1, biharmonic, quantum-automaton, or other candidate can replace the scientific model after it reproduces the baseline controls and passes stronger physical tests.
 
-The approved read-only time-step refinement experiment is complete. The next proposed gate is an isolated, non-default candidate implementation that adds \(h\) only to \(\phi\)-diffusion, preserves RD-0 as the before-state, and must pass the refinement controls above before any default or canonical text changes. This requires a separate owner decision because it changes an equation rather than merely observing it.
+The approved read-only experiment and isolated non-default implementation are complete. The next proposed gate is broader falsification of `RD-0-C1` using nonuniform \(\kappa\), boundary-localized states, additional Fourier modes, and explicit stability limits. No default or canonical text should change before those controls pass and the owner reviews the results.
 
 ## 14. Further Questions
 
 1. Should \(\kappa\) be a fixed part of the Lineum law, an environmental coefficient map, or an extension?
-2. Should the missing \(h\) factor in \(\phi\)-diffusion become the first isolated non-default correction candidate?
+2. After broader falsification, should `RD-0-C1` replace legacy per-update \(\phi\)-diffusion as the default continuous-time interpretation?
 3. Is locality a hard architectural requirement, or may a global spectral update remain a candidate if its nonlocal numerical kernel is declared?
 4. Is the core research target an effective nonlinear medium, or must every retained candidate aim at fundamental spacetime?
 5. Which single observable should be the first physical discriminator after software identity is achieved?

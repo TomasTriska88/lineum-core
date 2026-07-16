@@ -87,6 +87,8 @@ class CoreConfig:
     stencil_type: str = "LAP4"  # "LAP4" or "LAP8"
     physics_mode_psi: str = "diffusion"  # "diffusion" | "wave_baseline" | "wave_projected" | "wave_projected_soft"
     disable_quantum_noise: bool = False
+    # Experimental RD-0-C1 path. False preserves legacy per-update semantics.
+    phi_diffusion_scales_with_dt: bool = False
     wave_damping_edge: float = 0.05
     wave_lpf_enabled: bool = False
     wave_lpf_cutoff: float = 0.35
@@ -281,7 +283,17 @@ def _step_numpy(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
         # This is strictly a fallback mapping, avoiding amp^2 clipping logic (now driven purely by generic absorption)
         phi += kappa * dynamic_reaction * (e_psi - phi) * cfg.dt
 
-    phi += kappa * cfg.phi_diffusion * _diffuse_complex_numpy(phi, kappa, rate=0.05, stencil_type=cfg.stencil_type)
+    phi_diffusion_step_scale = (
+        cfg.dt if cfg.phi_diffusion_scales_with_dt else 1.0
+    )
+    phi += (
+        kappa
+        * cfg.phi_diffusion
+        * _diffuse_complex_numpy(
+            phi, kappa, rate=0.05, stencil_type=cfg.stencil_type
+        )
+        * phi_diffusion_step_scale
+    )
     phi = np.clip(phi, 0.0, cfg.phi_cap)
 
     # 3. Mu update (The HDD track)
@@ -534,7 +546,17 @@ def _step_pytorch(state: Dict[str, Any], cfg: CoreConfig) -> Dict[str, Any]:
         dynamic_reaction = cfg.reaction_strength * scale_ratio
         phi += kappa * dynamic_reaction * (e_psi - phi) * cfg.dt
 
-    phi += kappa * cfg.phi_diffusion * _diffuse_complex_torch(phi, kappa, rate=0.05, stencil_type=cfg.stencil_type)
+    phi_diffusion_step_scale = (
+        cfg.dt if cfg.phi_diffusion_scales_with_dt else 1.0
+    )
+    phi += (
+        kappa
+        * cfg.phi_diffusion
+        * _diffuse_complex_torch(
+            phi, kappa, rate=0.05, stencil_type=cfg.stencil_type
+        )
+        * phi_diffusion_step_scale
+    )
     
     # ---------------------------------------------
     # [Eq9 Escape Channel / Overflow-Fold]
