@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 1.4
+**Research version:** 1.5
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all fourteen embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, exact separation of its coherent conditional mean from its centered random component, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen, and the synthetic validation of a minimum-flux topological-transport observable together with its explicit non-particle ambiguity; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, for substrate or simulation interpretations, and for the other untested hypotheses proposed for future work
+**Reproducibility:** all fifteen embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, exact separation of its coherent conditional mean from its centered random component, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen, the synthetic validation of a minimum-flux topological-transport observable together with its explicit non-particle ambiguity, and the P1 finding that centered randomness nucleates dense winding activity while the present coherent pump raises field norm but reduces defect number, localization, and continuous defect span in both faithful and scalar-budget-matched local-phase controls; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, for substrate or simulation interpretations, and for the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls; (xv) a three-version synthetic audit in which two frozen topological-current observers fail at \(7/12\) and \(11/12\) on exactly advected smooth textures before a representation-invariant minimum-flux transport rule passes a new holdout, while deliberately non-particle smooth disorder passes the same rule and therefore blocks any particle interpretation; and (xvi) an exact source-accounting audit showing that F0 is not pure zero-mean noise: at vacuum and \(\kappa=1\) it contains a time-step-independent coherent amplitude pump of \(0.015\) per unit model time, while its centered variance rate decreases exactly in proportion to \(h\).
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls; (xv) a three-version synthetic audit in which two frozen topological-current observers fail at \(7/12\) and \(11/12\) on exactly advected smooth textures before a representation-invariant minimum-flux transport rule passes a new holdout, while deliberately non-particle smooth disorder passes the same rule and therefore blocks any particle interpretation; (xvi) an exact source-accounting audit showing that F0 is not pure zero-mean noise: at vacuum and \(\kappa=1\) it contains a time-step-independent coherent amplitude pump of \(0.015\) per unit model time, while its centered variance rate decreases exactly in proportion to \(h\); and (xvii) a fine-cadence P1 factorial in which centered randomness, but not the coherent pump, nucleates winding activity from exact vacuum in \(12/12\) seeds, while adding the pump shortens continuous defect span from \(60\) to \(29.24\) in the faithful source and to \(41.63\) under a scalar-budget-matched local-phase control, with no stable transport candidate in any retained inferential lane.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -36,6 +36,9 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The isolated current source is continuous Gaussian noise, a Poisson birth law, or colored memory. | **Contradicted for the audited source contract** | It is a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\). Its centered excess kurtosis is about \(-1.615\), lag-one correlation is consistent with zero, and variance rate scales as \(h^{0.99974}\). |
 | The present F0 source is pure zero-mean noise. | **Contradicted exactly** | Its Bernoulli event term has a positive conditional mean aligned with the phase of \(\psi\). At exact vacuum, \(\mathbb E[\Delta\psi]/h=0.015\kappa^2e^{i\theta}\), whereas the centered variance rate is proportional to \(h\) and disappears under time refinement. |
 | The present F0 source is already a physically budgeted fuel or reservoir. | **Not supported** | It is a software pump: amplitude is added without debiting an explicit reservoir. The fields \(\phi\) and \(\mu\) can store and feed back state, but neither closes the source-energy account, and \(\kappa\) is not evolved by the canonical step. |
+| The coherent F0 pump alone nucleates winding structure from exact vacuum. | **Contradicted in the declared P1 lane** | Pump-only evolution remained spatially uniform and produced no winding defect in \(12/12\) runs. Centered randomness produced winding activity in \(12/12\) runs with and without the pump. This identifies a numerical symmetry-breaking role in this lane, not quantum ontology. |
+| The coherent F0 pump maintains the winding activity that randomness creates. | **Contradicted in both retained P1 controls** | With the faithful state-dependent source, adding the pump reduced mean continuous defect span from \(60\) to \(29.24\) model-time units. With frozen scalar input budgets and local phase alignment, it reduced the span to \(41.63\); the paired descriptive 95% bootstrap interval for the latter change was \([-21.48,-15.30]\). The pump raised field norm but reduced defect count and localization. |
+| Long-lived dense winding activity in the centered-only lane is already a particle population. | **Not supported** | The activity was low-norm, dense, and insufficiently core-resolved: mean frozen resolved-core fractions were \(0.764\) for faithful centered-only and \(0.749\) for its scalar-budget control, below the predeclared \(0.9\) gate. No retained lane produced a population-level stable transport candidate. |
 | The historical closed-energy \(\epsilon\) mechanism is reproducible in the present canonical solver. | **Contradicted at the public solver boundary** | A retained exact reachability probe found no \(\epsilon\) configuration, removal of supplied \(\epsilon\), and bitwise-identical known fields with and without it. The historical manuscript is a useful candidate mechanism, not current executable evidence. |
 | The current F0 source has no causal effect on the visible numerical morphology. | **Contradicted in the declared nonlinear lane** | Relative late residual RMS was \(0.02600\) against exactly zero for the conditional-mean control in the independent post-revision audit. Removing endogenous source-mean feedback reduced it to \(0.01356\). |
 | The current F0 morphological effect survives time refinement as a nonzero continuous forcing. | **Not supported** | A three-point navigation fit gave residual RMS \(\propto h^{0.596}\) for faithful F0 and \(\propto h^{0.541}\) for open-loop matched F0, while Gaussian, Poisson, state/history-event, and colored-memory controls were approximately step-independent. |
@@ -44,7 +47,7 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | A source-blind observer can pass tests before seeing Lineum physics. | **Implemented and synthetically characterized** | A frozen replacement uses relative density contrast, periodic components and winding, toroidal distance, shape/mass/charge attributes, and global assignment. It passes the declared synthetic controls. This validates a measuring protocol, not a linon or particle. |
 | The tested exact-vacuum F0 lane produces no organized phase structure. | **Contradicted in the declared Gate-3B screen** | All 12 runs produced a transient periodic winding-defect burst with zero net topological charge in every frame. This establishes numerical topological activity, not stable identity, a particle, or physical quantum foam. |
 | The frozen observer identifies a recurrent linon in the tested F0 lane. | **Not supported in the declared Gate-3B screen** | Zero of 12 seeds passed the envelope screen and zero of 12 passed the topological identity screen; nine were required. Independent cell-phase nulls produced longer apparent track IDs than the actual dynamics, so topology identity is non-identifying in this dense regime. |
-| A source-blind observable can measure coherent topological transport without assigning vortex IDs. | **Synthetically validated within the declared families; not yet applied to actual Lineum data** | Two frozen versions exposed representation-dependent failures at \(7/12\) and \(11/12\). Version 3 uses exact lattice charge conservation, translation-registered coherence, resolved cores, and minimum toroidal integer flux; it passed \(12/12\) constructed pairs and \(12/12\) exactly advected smooth textures while all six declared negative families scored \(0/12\). Frozen and advected smooth disorder also pass, so this is a transport observable, not a particle observer. |
+| A source-blind observable can measure coherent topological transport without assigning vortex IDs. | **Synthetically validated and now applied at fine cadence; still non-identifying** | Two frozen versions exposed representation-dependent failures at \(7/12\) and \(11/12\). Version 3 passed its untouched synthetic holdout and was then applied to every P1 update. No faithful or scalar-budget local-phase seed passed because the resolved-core fraction remained below \(0.9\). A deliberately confounded global-vector control produced \(11/12\) brief transport passes lasting only \(0.4\)–\(0.7\) units, showing again that a transport pass can be a transient phase-locking artifact rather than a particle. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -89,6 +92,9 @@ Until the gates below are met, we recommend:
 17. **separate the present source into its coherent conditional mean and centered random innovation in every equation, plot, and claim; call the first component a software pump and reserve “physical fuel” for a model with an explicit reservoir, debit, return path, and closed accounting test**.
 18. **retain the historical \(\epsilon\)-circulation or “metabolic engine” only as a reconstruction candidate until its complete equations, initializer, boundary law, parameters, and controls are independently replayed in Core; the current public solver does not execute that mechanism**.
 19. **treat simulation, holographic, and hardware-substrate accounts as optional interpretations unless one supplies a measurable internal prediction that differs from ordinary stochastic, hidden-variable, reservoir, or discretization models; hardware power does not become in-model energy without an explicit mapping law**.
+20. **state the P1 mechanism plainly: centered randomness breaks exact-vacuum spatial symmetry and nucleates dense winding activity in the tested lane, while the present coherent pump raises field norm but does not nucleate or maintain a stable winding object; do not call added norm particle fuel**.
+21. **preserve the distinction between faithful feedback, scalar-budget matching with local phase alignment, and complete complex-vector matching; the latter introduces an external phase reference and may be used only as an adverse control, never as evidence about the present locally phase-aligned source**.
+22. **do not proceed directly from the P1 foam to particle shutdown claims; first select one independently justified stabilizing mechanism and require it to improve core resolution, localization, continuous survival, and null separation without using a cap, injected object, or globally imposed phase**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -1661,7 +1667,7 @@ particle from selecting its own test:
 | Gate | Intervention | Required outputs | Permitted conclusion |
 |---|---|---|---|
 | P0 — exact source accounting | algebraically separate conditional mean and centered innovation | mean work proxy, centered variance, \(h\)-scaling, cap dependence | completed here: coherent software pump plus vanishing centered variance rate |
-| P1 — \(2\times2\) source factorial | pump off/on crossed with centered randomness off/on, with matched declared input | nucleation rate, localized norm, defect counts, v3 transport, survival | whether seed, selector, and pump roles separate |
+| P1 — \(2\times2\) source factorial | pump off/on crossed with centered randomness off/on, with faithful feedback and a scalar-budget-matched local-phase control | nucleation rate, localized norm, defect counts, v3 transport, survival | completed in Section 3.16: randomness nucleates dense winding activity, whereas the present pump raises norm but suppresses its defect count, localization, and continuous span |
 | P2 — schedule challenge | always on, formation-only, off interval, pulse train, and restart | shutdown lifetime, recovery curve, restart dose, hysteresis | whether continuous drive maintains the process |
 | P3 — state/history replay | identical saved visible state with independent future random streams | within-state versus between-state outcome variance | whether identity is carried by state or future noise history |
 | P4 — medium ablation | freeze, reset, spatially shuffle, and delay \(\phi\) and \(\mu\); only later evolve \(\kappa\) | response kernel, lifetime, repair, transport, budget | whether a slow field stores a causal catchment |
@@ -1688,10 +1694,213 @@ phase-aligned coherent pump that survives time-step refinement. It does not
 yet support the stronger physical claim that quantum noise is an energy
 reservoir, that the universe is externally powered, or that a particle is a
 self-restoring process. Those options remain open in the explicit P1–P7
-program. The next permitted dynamic step is the frozen pump-by-randomness
-factorial followed by shutdown and same-state replay; the first new equation,
-if needed afterward, is one debited reservoir term rather than an
-unconstrained hybrid.
+program. P1 is completed below. Because it produced no stable candidate, the
+next permitted dynamic step is not yet a particle-shutdown claim: first test
+one independently motivated stabilizing mechanism against the unchanged
+observer and source-accounting gates. If an added resource is needed, the
+first new equation is one debited reservoir term rather than an unconstrained
+hybrid.
+
+### 3.16 P1 separates winding nucleation from pumping: randomness creates dense activity, while the present pump suppresses it
+
+#### Lay result
+
+The simplest accurate picture is not “noise is fuel for particles.” In this
+bounded experiment:
+
+- with neither source component, exact vacuum stayed empty;
+- with the coherent pump alone, the field grew but remained spatially
+  uniform;
+- with centered randomness alone, a dense, low-norm foam of positive and
+  negative winding defects appeared in every seed and remained active for the
+  full observed horizon;
+- with both components, the field norm grew, but the number, localization,
+  core quality, and continuous span of the winding activity decreased.
+
+The current source therefore separates into two numerical roles. Centered
+randomness breaks the exact spatial symmetry and nucleates phase structure.
+The coherent pump supplies field amplitude but, in this lane, does not
+maintain an individual defect. Added amplitude is not automatically added
+identity.
+
+This is a negative result for one proposed mechanism, not for every
+out-of-the-box alternative. A different nonlinear gain, a conserving pair
+source, a slow catchment field, topological or gauge support, or a debited
+reservoir could behave differently. Each must be added separately and must
+beat the same controls.
+
+#### Frozen question and exact factorial
+
+The P1 question was frozen before the primary trajectories were inspected:
+**does the coherent conditional mean, the centered innovation, or their
+interaction cause nucleation, localization, coherent transport, and
+survival?** For each cell and update, the already audited F0 increment was
+written exactly as
+
+\[
+\Delta\psi_{\rm F0}=P+R,
+\]
+
+\[
+P=h\kappa a p\,e^{i\theta},\qquad
+R=h\kappa\left[a(B-p)+\xi\right]e^{i\theta}.
+\]
+
+The four branches were
+
+\[
+\begin{array}{c|cc}
+ & R=0 & R\ne0\\ \hline
+P=0 & D0 & C0\\
+P\ne0 & P0 & F0 .
+\end{array}
+\]
+
+All branches began from the same exact vacuum on a \(32\times32\) periodic
+grid. The declared opt-in continuous-time correction was used with
+\(h=0.1\), a \(60\)-unit horizon, LAP4 diffusion, mode coupling on, and
+\(\mu\) off. Every update was recorded. Twelve paired seeds were fixed in
+advance. C0 and F0 used common uniform and Gaussian random arrays at each
+paired update. No numerical cap triggered.
+
+The primary protocol preserved the faithful endogenous source: after branch
+states diverged, their amplitudes, gradients, probabilities, phases, and
+therefore realized source budgets were allowed to diverge. Its result
+characterizes the implemented feedback but does not by itself identify a
+pure pump main effect.
+
+Inspection of that primary accounting exposed unequal centered-input budgets:
+the mean squared centered-increment rate was
+\(2.51927\times10^{-5}\) in C0 but
+\(1.13652\times10^{-5}\) in F0. A second protocol was therefore specified
+before its outcomes were run. It froze the pump-only schedule of scalar event
+probability, event amplitude, pump magnitude, and random draws, while each
+branch retained its own local phase. C0 and F0 then had exactly equal mean
+centered squared-increment rates,
+\(1.09488\times10^{-5}\), and P0 and F0 had exactly equal mean pump
+projection rates, \(0.0460222\). These are software norm-input diagnostics,
+not physical energies.
+
+A first development formulation froze the entire complex source vector. That
+introduced a common external phase reference absent from the current source.
+Its result is retained as an adverse control because it demonstrates a real
+failure mode: an unnoticed global phase “metronome” can create a deceptively
+clean but very brief transport signal. It is excluded from inference about
+the locally phase-aligned F0 mechanism.
+
+#### Frozen observables and acceptance rule
+
+The run retained mean \(|\psi|^2\), maximum amplitude, relative inverse
+participation ratio, top-one-percent norm share, density variation, exact
+source-substep norm change, pump projection, centered squared increment,
+periodic winding, lattice-current conservation, net charge, core resolution,
+translation-registered coherence, minimum toroidal transport, and continuous
+defect span.
+
+The previously frozen v3 observer was not retuned. It required nonzero
+temporal winding flux, exact lattice-current conservation, zero net charge,
+mean registered adjacent overlap at least \(0.9\), resolved-core fraction at
+least \(0.9\), and minimum-transport time orientation at least \(1/3\).
+A stable transport candidate additionally had to remain continuously active
+for at least \(15\) model-time units. Population support required \(9/12\)
+seeds. Even a pass would remain only a transport result because advected
+smooth disorder is already known to pass the same rule.
+
+#### Primary faithful-source result
+
+| Branch | any winding seeds | final mean \(|\psi|^2\) | mean maximum relative IPR | mean maximum defects per frame | mean longest continuous defect span | v3 passes | stable candidates |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| D0: neither component | \(0/12\) | \(0\) | \(0\) | \(0\) | \(0\) | \(0/12\) | \(0/12\) |
+| P0: pump only | \(0/12\) | \(6.33722\) | \(1.00000\) | \(0\) | \(0\) | \(0/12\) | \(0/12\) |
+| C0: centered only | \(12/12\) | \(1.02603\times10^{-4}\) | \(3.37909\) | \(346.83\) | \(60.00\) | \(0/12\) | \(0/12\) |
+| F0: faithful full source | \(12/12\) | \(4.85147\) | \(2.12417\) | \(240.17\) | \(29.24\) | \(0/12\) | \(0/12\) |
+
+At common seeds, adding the faithful pump to centered randomness changed the
+longest continuous span by \(-30.7583\) units; the descriptive paired
+10,000-replicate bootstrap interval was
+\([-33.2000,-28.2831]\). It reduced the maximum defect count by \(106.67\)
+and the maximum relative IPR by \(1.25492\), while increasing final mean
+field norm by \(4.85137\). Thus “more field” and “more localized persistent
+structure” moved in opposite directions.
+
+The faithful centered-only and full-source movies both conserved the integer
+spacetime current exactly, remained globally charge-neutral, and exceeded the
+coherence threshold. Their mean resolved-core fractions were only \(0.7636\)
+and \(0.5698\), respectively, below the frozen \(0.9\) gate. The failure was
+therefore not caused by net-charge leakage or coarse temporal sampling. Dense
+winding alone did not supply clean resolved objects.
+
+#### Scalar-budget-matched local-phase result
+
+| Branch | any winding seeds | final mean \(|\psi|^2\) | mean maximum relative IPR | mean maximum defects per frame | mean longest continuous defect span | v3 passes | stable candidates |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| D0: neither component | \(0/12\) | \(0\) | \(0\) | \(0\) | \(0\) | \(0/12\) | \(0/12\) |
+| P0: pump only | \(0/12\) | \(6.33722\) | \(1.00000\) | \(0\) | \(0\) | \(0/12\) | \(0/12\) |
+| C0: centered only | \(12/12\) | \(1.50564\times10^{-5}\) | \(3.29253\) | \(347.33\) | \(60.00\) | \(0/12\) | \(0/12\) |
+| F0: pump plus centered | \(12/12\) | \(5.27681\) | \(2.12417\) | \(240.17\) | \(41.63\) | \(0/12\) | \(0/12\) |
+
+The exact input match did not reverse the conclusion. Adding the pump changed
+continuous defect span by \(-18.3667\) units with a paired descriptive
+interval \([-21.4833,-15.2998]\), maximum defect count by \(-107.17\)
+with interval \([-116.83,-97.83]\), and maximum relative IPR by
+\(-1.16836\) with interval \([-1.31158,-1.03898]\). Final mean norm
+increased by \(5.27679\), with interval \([5.20055,5.35192]\).
+
+All matched C0 and F0 seeds again conserved current, remained neutral, and
+passed registered coherence. Their mean resolved-core fractions were
+\(0.7488\) and \(0.5827\); no seed reached the complete v3 rule. The robust
+mechanistic result is therefore narrower than “pump destroys particles”:
+at matched scalar input and preserved local phase, the present pump suppresses
+the tested dense winding activity, while no accepted particle existed to be
+destroyed.
+
+#### Adverse global-phase control
+
+When the complete complex pump vector was frozen, F0 winding survived only
+\(0.4\)–\(0.7\) units. Eleven of twelve seeds briefly passed v3 transport,
+but zero reached the \(15\)-unit stability gate. The remaining seed missed
+the \(0.9\) core threshold by less than \(0.001\). This is not stronger
+particle evidence. It shows that a shared phase reference can rapidly
+phase-lock a field while leaving a short, orderly annihilation transient.
+Future matched controls must preserve local phase unless a global reference is
+itself the explicit hypothesis.
+
+#### What P1 establishes and what it leaves open
+
+**Established for this finite reconstructed lane [CALCULATED]:**
+
+1. deterministic translation-symmetric evolution from exact vacuum does not
+   spontaneously choose a spatial winding pattern;
+2. the centered F0 innovation is sufficient to break that symmetry and create
+   dense, neutral winding activity in every tested seed;
+3. the coherent pump is sufficient to grow a spatially uniform field but not
+   to nucleate winding;
+4. adding the pump reduces defect number, localization, core resolution, and
+   continuous defect span both in the faithful source and under matched scalar
+   budgets with local phase preserved;
+5. no retained inferential lane produces a population-level stable transport
+   candidate;
+6. a hidden global phase reference can manufacture short clean transport
+   transients and must be treated as a confound.
+
+**Still open [HYPOTHESES]:** whether a different source scaling has a
+continuous stochastic limit; whether a conserving pair bath, nonlinear
+saturation, topological or gauge charge, slow medium memory, or explicit
+resource reservoir can select and maintain localized objects; whether any
+such object survives open boundaries and refinement; and whether its
+dispersion, collisions, charge, spin, statistics, or measurement behavior
+match a physical particle.
+
+**Verdict [FROZEN NUMERICAL ABLATION]:** the intuition that ongoing activity
+may be necessary for a living field process remains researchable, but the
+present F0 coherent mean is not demonstrated maintenance fuel for a winding
+object. In the tested lane, centered randomness nucleates foam-like phase
+activity, whereas the pump raises background norm and suppresses that
+activity. P2 should therefore first be a source-schedule map of foam
+formation and erasure, not a claim about particle starvation. A particle
+maintenance experiment becomes meaningful only after one independently
+defined stabilizer produces a source-blind, core-resolved localized candidate
+without an injected object or global phase reference.
 
 ---
 
@@ -2823,9 +3032,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the twelfth, Gate-3B actual-dynamics program was executed twice with bitwise-identical normalized output; its exact-vacuum D0 lane remained empty, its F0 cap comparison was exactly identical with finite and disabled caps, and its standalone reconstruction matched the clean committed NumPy runtime within \(3.47\times10^{-17}\) for \(\psi\) and \(1.27\times10^{-21}\) for \(\phi\)
 - the thirteenth, minimum-flux topological-transport program was executed twice with byte-identical normalized output; it reproduces the frozen v1 \(7/12\) and v2 \(11/12\) failures, passes 48 exhaustive small-assignment controls, and its v3 untouched holdout classifies all eight declared families at their frozen expected counts
 - the fourteenth, source pump/fuel audit was executed twice with byte-identical output; its standard-library calculation reproduces the exact F0 conditional mean, centered variance, time-step exponent, uniform mean-source/damping balances, and source-cap boundary
+- the fifteenth, P1 pump-by-centered-randomness factorial was executed twice with byte-identical output; it runs 12 paired seeds through faithful endogenous, scalar-budget-matched local-phase, and deliberately confounded global-vector protocols at every \(h=0.1\) update, passes all algebraic, budget, transport, vacuum, uniformity, and registration controls, and retains the global-phase failure mode without using it for current-source inference
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 14/14 executable Python/JSON pairs, 42 contiguous adversarial questions, 45 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 15/15 executable Python/JSON pairs, 42 contiguous adversarial questions, 45 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -41995,6 +42205,13528 @@ if __name__ == "__main__":
     "interpretation": "Below critical kappa, mean pumping and damping can create a uniform pre-cap balance. At and above critical kappa, the first finite balance is imposed by the source-amplitude clip, not derived particle homeostasis.",
     "scope": "phi=mu=gradient=diffusion=0; this is a source accounting limit, not the full dynamics",
     "source_amplitude_clip_onset": 498.5
+  }
+}
+```
+
+
+---
+
+## Appendix O — P1 Pump-by-Randomness Factorial
+
+### O.1 Reproduction contract
+
+This appendix is self-contained. The program reads no Lineum source,
+configuration, dataset, or prior report and writes no file. It reconstructs
+the audited committed NumPy source and diffusion backbone internally. It
+requires Python 3.11 or later, NumPy, and SciPy. The reference environment
+used Python 3.11.15, NumPy 1.26.4, and SciPy 1.17.1.
+
+To reproduce the result, copy the complete Python block into a new UTF-8 file
+without adding or removing a line inside the block and execute it. Compare the
+parsed JSON with the complete reference JSON below. Runtime-version strings
+are provenance; every scientific field must be semantically identical. The
+program hash is computed over the UTF-8 code block without a terminal newline:
+`2d18d70e49bd5594e996060880ff2c54c556b686eccf5093a940764ce06ed752`. The reference-output hash is computed over the UTF-8 JSON
+block with exactly one terminal newline: `d51db564e8e0b3cdc95d7f48d36d82ed51ca6e215459f8e265eeb21b84e74035`. Two complete
+executions were byte-identical.
+
+The embedded program preserves three epistemically distinct protocols. The
+faithful endogenous protocol was frozen before P1 outcomes. The scalar-budget
+local-phase protocol was added after primary accounting exposed unequal
+realized centered-input budgets and was frozen before its outcomes. The
+complete-vector protocol is retained as an adverse global-phase control and
+is explicitly excluded from inference about the current source.
+
+### O.2 Complete executable program
+
+```python
+"""Standalone P1 audit: coherent pump crossed with centered randomness.
+
+The program reconstructs the committed NumPy diffusion backbone and the
+audited F0 source without importing the project.  It begins from exact vacuum,
+uses common random numbers for the two stochastic lanes, records every model
+update, applies the already-frozen v3 minimum-transport observer, and prints a
+complete deterministic JSON result.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import platform
+from dataclasses import dataclass
+
+import numpy as np
+import scipy
+from scipy.optimize import linear_sum_assignment
+
+
+SCHEMA = "lineum.p1-source-factorial.v2"
+AUDITED_COMMIT = "9e7c5602066299f035ce50120746618fe3a9d614"
+AUDITED_MATH_BLOB = "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa"
+SIZE = 32
+DT = 0.1
+TOTAL_TIME = 60.0
+STEPS = int(round(TOTAL_TIME / DT))
+SEEDS = tuple(2026242000 + index for index in range(12))
+LANES = (
+    "D0_none",
+    "P0_pump_only",
+    "C0_centered_only",
+    "F0_full",
+)
+BOOTSTRAP_REPLICATES = 10_000
+BOOTSTRAP_SEED = 2026243000
+TWO_PI = 2.0 * np.pi
+
+# Frozen before this program sees P1 trajectories.  These values are inherited
+# from the synthetic v3 holdout audit.
+MINIMUM_TIME_ORIENTATION = 1.0 / 3.0
+MINIMUM_ADJACENT_OVERLAP = 0.9
+MINIMUM_RESOLVED_CORE_FRACTION = 0.9
+MINIMUM_PHYSICAL_SPAN = 15.0
+MINIMUM_SEED_PREVALENCE = 0.75
+MINIMUM_PASSING_SEEDS = math.ceil(MINIMUM_SEED_PREVALENCE * len(SEEDS))
+
+
+@dataclass(frozen=True)
+class Config:
+    dt: float = DT
+    psi_diffusion: float = 0.05
+    phi_diffusion: float = 0.05
+    dissipation_rate: float = 0.005
+    drift_strength: float = -0.004
+    mode_coupling_strength: float = 0.001
+    noise_strength: float = 0.005
+    stencil_type: str = "LAP4"
+    phi_diffusion_scales_with_dt: bool = True
+    psi_amp_cap: float = 1e6
+    grad_cap: float = 1e6
+    phi_cap: float = 1e6
+
+
+def plain(value):
+    """Convert NumPy scalars and arrays to JSON-safe built-ins."""
+    if isinstance(value, dict):
+        return {str(key): plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [plain(item) for item in value]
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, np.integer):
+        return int(value)
+    if isinstance(value, np.floating):
+        return float(value)
+    return value
+
+
+def initial_state() -> dict[str, np.ndarray]:
+    """Return the exact-vacuum state used in all four lanes."""
+    shape = (SIZE, SIZE)
+    return {
+        "psi": np.zeros(shape, dtype=np.complex128),
+        "phi": np.zeros(shape, dtype=np.float64),
+        "kappa": np.ones(shape, dtype=np.float64),
+        "mu": np.zeros(shape, dtype=np.float64),
+    }
+
+
+def diffuse(
+    field: np.ndarray,
+    kappa: np.ndarray,
+    rate: float,
+    stencil_type: str,
+) -> np.ndarray:
+    """Reconstruct the committed periodic permeability-weighted stencil."""
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    if stencil_type == "LAP8":
+        k_up_left = np.roll(k_up, 1, axis=1)
+        k_up_right = np.roll(k_up, -1, axis=1)
+        k_down_left = np.roll(k_down, 1, axis=1)
+        k_down_right = np.roll(k_down, -1, axis=1)
+        f_up_left = np.roll(f_up, 1, axis=1)
+        f_up_right = np.roll(f_up, -1, axis=1)
+        f_down_left = np.roll(f_down, 1, axis=1)
+        f_down_right = np.roll(f_down, -1, axis=1)
+        neighbor_sum = (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+            + 0.25
+            * (
+                f_up_left * k_up_left
+                + f_up_right * k_up_right
+                + f_down_left * k_down_left
+                + f_down_right * k_down_right
+            )
+        )
+        active_neighbors = (
+            k_up
+            + k_down
+            + k_left
+            + k_right
+            + 0.25
+            * (
+                k_up_left
+                + k_up_right
+                + k_down_left
+                + k_down_right
+            )
+        )
+    else:
+        neighbor_sum = (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+        )
+        active_neighbors = k_up + k_down + k_left + k_right
+    return rate * (neighbor_sum - active_neighbors * field)
+
+
+def source_parameters(
+    psi: np.ndarray,
+    kappa: np.ndarray,
+    config: Config,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Return event probability, event amplitude, and current phase."""
+    amplitude = np.clip(np.abs(psi), 0.0, config.psi_amp_cap)
+    gradient_x, gradient_y = np.gradient(amplitude)
+    gradient_x = np.clip(gradient_x, -config.grad_cap, config.grad_cap)
+    gradient_y = np.clip(gradient_y, -config.grad_cap, config.grad_cap)
+    gradient_magnitude = np.sqrt(
+        np.clip(gradient_x**2 + gradient_y**2, 0.0, 1e12)
+    )
+    probability = (
+        1.0
+        / (1.0 + np.exp(-5.0 * (amplitude + gradient_magnitude)))
+    ) * kappa
+    event_amplitude = np.clip(
+        0.03 + 0.02 * np.clip(amplitude, 0.0, None),
+        0.0,
+        10.0,
+    )
+    phase = np.exp(1j * np.angle(psi))
+    return probability, event_amplitude, phase
+
+
+def source_components(
+    state: dict[str, np.ndarray],
+    rng: np.random.RandomState,
+    config: Config,
+) -> dict[str, np.ndarray]:
+    """Draw and exactly split F0 into conditional mean and innovation."""
+    probability, event_amplitude, phase = source_parameters(
+        state["psi"],
+        state["kappa"],
+        config,
+    )
+    uniform_draw = rng.rand(*state["psi"].shape)
+    events = (uniform_draw < probability).astype(np.float64)
+    gaussian = np.clip(
+        rng.normal(0.0, config.noise_strength, state["psi"].shape),
+        -1.0,
+        1.0,
+    )
+    pump = (
+        config.dt * event_amplitude * probability * phase
+    )
+    centered = (
+        config.dt
+        * (event_amplitude * (events - probability) + gaussian)
+        * phase
+    )
+    return {
+        "pump": pump,
+        "centered": centered,
+        "full": pump + centered,
+        "probability": probability,
+        "events": events,
+        "gaussian": gaussian,
+        "phase": phase,
+    }
+
+
+def deterministic_pump_components(
+    state: dict[str, np.ndarray],
+    config: Config,
+) -> dict[str, np.ndarray]:
+    """Return the conditional-mean source without consuming randomness."""
+    probability, event_amplitude, phase = source_parameters(
+        state["psi"],
+        state["kappa"],
+        config,
+    )
+    pump = config.dt * event_amplitude * probability * phase
+    zeros = np.zeros_like(probability)
+    return {
+        "pump": pump,
+        "centered": np.zeros_like(pump),
+        "full": pump,
+        "probability": probability,
+        "event_amplitude": event_amplitude,
+        "events": zeros,
+        "gaussian": zeros,
+        "phase": phase,
+    }
+
+
+def matched_schedule_components(
+    reference: dict[str, np.ndarray],
+    rng: np.random.RandomState,
+    config: Config,
+    state: dict[str, np.ndarray],
+    phase_mode: str,
+) -> dict[str, np.ndarray]:
+    """Draw from one frozen scalar schedule under a declared phase rule."""
+    probability = reference["probability"]
+    event_amplitude = reference["event_amplitude"]
+    if phase_mode == "local_state_aligned":
+        phase = np.exp(1j * np.angle(state["psi"]))
+        pump = np.abs(reference["pump"]) * phase
+    elif phase_mode == "global_reference_vector":
+        phase = reference["phase"]
+        pump = reference["pump"]
+    else:
+        raise ValueError(phase_mode)
+    events = (
+        rng.rand(*probability.shape) < probability
+    ).astype(np.float64)
+    gaussian = np.clip(
+        rng.normal(0.0, config.noise_strength, probability.shape),
+        -1.0,
+        1.0,
+    )
+    centered = (
+        config.dt
+        * (event_amplitude * (events - probability) + gaussian)
+        * phase
+    )
+    return {
+        "pump": pump,
+        "centered": centered,
+        "full": pump + centered,
+        "probability": probability,
+        "events": events,
+        "gaussian": gaussian,
+        "phase": phase,
+    }
+
+
+def selected_increment(
+    lane: str,
+    components: dict[str, np.ndarray],
+) -> np.ndarray:
+    """Select one branch of the frozen 2x2 factorial."""
+    if lane == "D0_none":
+        return np.zeros_like(components["full"])
+    if lane == "P0_pump_only":
+        return components["pump"]
+    if lane == "C0_centered_only":
+        return components["centered"]
+    if lane == "F0_full":
+        return components["full"]
+    raise ValueError(lane)
+
+
+def backbone_step(
+    state: dict[str, np.ndarray],
+    increment: np.ndarray,
+    components: dict[str, np.ndarray],
+    lane: str,
+    config: Config,
+) -> tuple[dict[str, np.ndarray], dict[str, float]]:
+    """Apply the reconstructed backbone and return source-only accounting."""
+    psi = np.array(state["psi"], dtype=np.complex128, copy=True)
+    phi = np.array(state["phi"], dtype=np.float64, copy=True)
+    kappa = np.array(state["kappa"], dtype=np.float64, copy=True)
+    mu = np.array(state["mu"], dtype=np.float64, copy=True)
+    drift_multiplier = 1.0 + mu
+
+    phi_interaction = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(
+        (0.04 * phi_interaction * kappa * drift_multiplier) / 0.1
+    )
+    interaction_term = interaction_factor * psi
+    interaction_term /= 1.0 + np.abs(interaction_term) / 10.0
+
+    gradient_phi_x, gradient_phi_y = np.gradient(phi)
+    phi_flow_term = (
+        config.drift_strength
+        * (gradient_phi_x + 1j * gradient_phi_y)
+        * kappa
+        * drift_multiplier
+    )
+    phi_flow_term /= 1.0 + np.abs(phi_flow_term) / 10.0
+
+    psi += phi_flow_term * config.dt
+    source_delta = increment * kappa
+    pump_delta = (
+        components["pump"] * kappa
+        if lane in {"P0_pump_only", "F0_full"}
+        else np.zeros_like(source_delta)
+    )
+    centered_delta = (
+        components["centered"] * kappa
+        if lane in {"C0_centered_only", "F0_full"}
+        else np.zeros_like(source_delta)
+    )
+    norm_before_source = np.mean(np.abs(psi) ** 2)
+    norm_after_source = np.mean(np.abs(psi + source_delta) ** 2)
+    psi += source_delta + interaction_term * config.dt
+    psi -= config.dissipation_rate * psi * config.dt
+    psi += (
+        diffuse(
+            psi,
+            kappa,
+            rate=config.psi_diffusion,
+            stencil_type=config.stencil_type,
+        )
+        * kappa
+        * config.dt
+    )
+
+    energy = np.abs(psi) ** 2
+    delta_energy = (
+        config.mode_coupling_strength * energy * kappa * config.dt
+    )
+    phi += delta_energy
+    new_magnitude = np.sqrt(np.maximum(energy - delta_energy, 0.0))
+    psi = (psi / (np.sqrt(energy) + 1e-12)) * new_magnitude
+
+    phi_step_scale = (
+        config.dt if config.phi_diffusion_scales_with_dt else 1.0
+    )
+    phi += (
+        kappa
+        * config.phi_diffusion
+        * diffuse(
+            phi,
+            kappa,
+            rate=0.05,
+            stencil_type=config.stencil_type,
+        )
+        * phi_step_scale
+    )
+    phi = np.clip(phi, 0.0, config.phi_cap)
+    if not np.all(np.isfinite(psi)) or not np.all(np.isfinite(phi)):
+        raise FloatingPointError("Non-finite reconstructed state")
+    if np.max(np.abs(psi)) >= config.psi_amp_cap * 0.99:
+        raise FloatingPointError("Unexpected proximity to numerical cap")
+
+    phase = components["phase"]
+    diagnostics = {
+        "source_only_norm_change": float(
+            norm_after_source - norm_before_source
+        ),
+        "pump_projection_rate": float(
+            np.mean(np.real(np.conj(phase) * pump_delta)) / config.dt
+        ),
+        "centered_projection_rate": float(
+            np.mean(np.real(np.conj(phase) * centered_delta)) / config.dt
+        ),
+        "centered_squared_increment_rate": float(
+            np.mean(np.abs(centered_delta) ** 2) / config.dt
+        ),
+        "total_squared_increment_rate": float(
+            np.mean(np.abs(source_delta) ** 2) / config.dt
+        ),
+        "admitted_event_fraction": (
+            float(np.mean(components["events"]))
+            if lane in {"C0_centered_only", "F0_full"}
+            else 0.0
+        ),
+        "counterfactual_event_fraction": float(
+            np.mean(components["events"])
+        ),
+        "counterfactual_mean_event_probability": float(
+            np.mean(components["probability"])
+        ),
+    }
+    return {
+        "psi": psi,
+        "phi": phi,
+        "kappa": kappa,
+        "mu": mu,
+    }, diagnostics
+
+
+def wrap_phase(value: np.ndarray) -> np.ndarray:
+    return (value + np.pi) % TWO_PI - np.pi
+
+
+def periodic_winding(theta: np.ndarray) -> np.ndarray:
+    """Return integer winding through each periodic spatial plaquette."""
+    link_x = wrap_phase(np.roll(theta, -1, axis=-1) - theta)
+    link_y = wrap_phase(np.roll(theta, -1, axis=-2) - theta)
+    flux = (
+        link_x
+        + np.roll(link_y, -1, axis=-1)
+        - np.roll(link_x, -1, axis=-2)
+        - link_y
+    )
+    return np.rint(flux / TWO_PI).astype(np.int16)
+
+
+def spacetime_current(fields: np.ndarray) -> dict[str, np.ndarray]:
+    """Return the integer dual phase current on a periodic spatial torus."""
+    theta = np.angle(fields)
+    link_x = wrap_phase(np.roll(theta, -1, axis=2) - theta)
+    link_y = wrap_phase(np.roll(theta, -1, axis=1) - theta)
+    link_t = wrap_phase(theta[1:] - theta[:-1])
+    flux_xy = (
+        link_x
+        + np.roll(link_y, -1, axis=2)
+        - np.roll(link_x, -1, axis=1)
+        - link_y
+    )
+    flux_tx = (
+        link_t
+        + link_x[1:]
+        - np.roll(link_t, -1, axis=2)
+        - link_x[:-1]
+    )
+    flux_ty = (
+        link_t
+        + link_y[1:]
+        - np.roll(link_t, -1, axis=1)
+        - link_y[:-1]
+    )
+    j_t = np.rint(flux_xy / TWO_PI).astype(np.int16)
+    j_x = -np.rint(flux_ty / TWO_PI).astype(np.int16)
+    j_y = np.rint(flux_tx / TWO_PI).astype(np.int16)
+    divergence = (
+        j_t[1:]
+        - j_t[:-1]
+        + np.roll(j_x, -1, axis=2)
+        - j_x
+        + np.roll(j_y, -1, axis=1)
+        - j_y
+    )
+    return {
+        "j_t": j_t,
+        "j_x": j_x,
+        "j_y": j_y,
+        "divergence": divergence,
+    }
+
+
+def align_global_phase(
+    fields: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Remove one global phase offset and retain normalized overlap."""
+    aligned = np.array(fields, dtype=np.complex128, copy=True)
+    overlaps = []
+    for time_index in range(1, len(aligned)):
+        previous = aligned[time_index - 1]
+        current = aligned[time_index]
+        overlap = np.vdot(previous, current)
+        denominator = float(
+            np.linalg.norm(previous) * np.linalg.norm(current)
+        )
+        overlaps.append(
+            float(np.abs(overlap) / denominator)
+            if denominator > 0.0
+            else 0.0
+        )
+        if np.abs(overlap) > 0.0:
+            aligned[time_index] *= np.exp(-1j * np.angle(overlap))
+    return aligned, np.asarray(overlaps, dtype=np.float64)
+
+
+def translation_registered_overlaps(fields: np.ndarray) -> np.ndarray:
+    """Return best adjacent normalized overlap under one torus shift."""
+    overlaps = []
+    for time_index in range(1, len(fields)):
+        previous = fields[time_index - 1]
+        current = fields[time_index]
+        denominator = float(
+            np.linalg.norm(previous) * np.linalg.norm(current)
+        )
+        if denominator == 0.0:
+            overlaps.append(0.0)
+            continue
+        correlation = np.fft.ifft2(
+            np.conj(np.fft.fft2(previous)) * np.fft.fft2(current)
+        )
+        overlaps.append(
+            float(
+                np.clip(
+                    np.max(np.abs(correlation)) / denominator,
+                    0.0,
+                    1.0,
+                )
+            )
+        )
+    return np.asarray(overlaps, dtype=np.float64)
+
+
+def resolved_core_metrics(
+    fields: np.ndarray,
+    j_t: np.ndarray,
+    threshold: float = 0.5,
+) -> dict[str, float | int]:
+    """Measure whether winding sites have grid-resolved amplitude cores."""
+    ratios = []
+    for time_index, y, x in np.argwhere(j_t != 0):
+        amplitude = np.abs(fields[time_index])
+        vertices = np.asarray(
+            [
+                amplitude[y, x],
+                amplitude[y, (x + 1) % amplitude.shape[1]],
+                amplitude[(y + 1) % amplitude.shape[0], x],
+                amplitude[
+                    (y + 1) % amplitude.shape[0],
+                    (x + 1) % amplitude.shape[1],
+                ],
+            ]
+        )
+        ys = (np.arange(y - 2, y + 3) % amplitude.shape[0]).astype(int)
+        xs = (np.arange(x - 2, x + 3) % amplitude.shape[1]).astype(int)
+        reference = float(np.median(amplitude[np.ix_(ys, xs)]))
+        ratios.append(float(np.min(vertices)) / max(reference, 1e-15))
+    if not ratios:
+        return {
+            "defects": 0,
+            "resolved_fraction": 0.0,
+            "median_core_ratio": 0.0,
+            "maximum_core_ratio": 0.0,
+        }
+    values = np.asarray(ratios)
+    return {
+        "defects": int(values.size),
+        "resolved_fraction": float(np.mean(values <= threshold)),
+        "median_core_ratio": float(np.median(values)),
+        "maximum_core_ratio": float(np.max(values)),
+    }
+
+
+def expanded_positions(values: np.ndarray) -> np.ndarray:
+    """Expand nonnegative integer weights into unit positions."""
+    coordinates = np.argwhere(values > 0)
+    if coordinates.size == 0:
+        return np.empty((0, 2), dtype=np.int16)
+    multiplicities = values[tuple(coordinates.T)].astype(int)
+    return np.repeat(coordinates, multiplicities, axis=0).astype(np.int16)
+
+
+def minimum_toroidal_transport(
+    spatial_charge: np.ndarray,
+) -> dict[str, object]:
+    """Return exact minimum integer L1 flux between adjacent charge maps."""
+    _frames, size_y, size_x = spatial_charge.shape
+    slab_fluxes = []
+    transported_units = []
+    for time_index in range(len(spatial_charge) - 1):
+        delta = (
+            spatial_charge[time_index + 1].astype(np.int32)
+            - spatial_charge[time_index].astype(np.int32)
+        )
+        positive = expanded_positions(np.maximum(delta, 0))
+        negative = expanded_positions(np.maximum(-delta, 0))
+        if len(positive) != len(negative):
+            raise AssertionError("Periodic charge difference is not neutral")
+        transported_units.append(int(len(positive)))
+        if len(positive) == 0:
+            slab_fluxes.append(0)
+            continue
+        delta_y = np.abs(
+            positive[:, None, 0].astype(np.int32)
+            - negative[None, :, 0].astype(np.int32)
+        )
+        delta_x = np.abs(
+            positive[:, None, 1].astype(np.int32)
+            - negative[None, :, 1].astype(np.int32)
+        )
+        distance = (
+            np.minimum(delta_y, size_y - delta_y)
+            + np.minimum(delta_x, size_x - delta_x)
+        )
+        rows, columns = linear_sum_assignment(distance)
+        slab_fluxes.append(int(np.sum(distance[rows, columns])))
+    return {
+        "spatial_flux": int(sum(slab_fluxes)),
+        "slab_count": len(slab_fluxes),
+        "nonzero_slabs": int(np.count_nonzero(slab_fluxes)),
+        "maximum_slab_flux": int(max(slab_fluxes, default=0)),
+        "transported_units": int(sum(transported_units)),
+        "solver": "exact minimum-cost assignment per time slab",
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "persistent_point_ids_assigned": False,
+    }
+
+
+def longest_true_run(values: np.ndarray) -> int:
+    """Return the longest consecutive run of true values."""
+    best = 0
+    current = 0
+    for value in values:
+        if value:
+            current += 1
+            best = max(best, current)
+        else:
+            current = 0
+    return best
+
+
+def topology_metrics(fields: np.ndarray) -> dict[str, object]:
+    """Apply the frozen v3 transport observer at update cadence."""
+    aligned, overlaps = align_global_phase(fields)
+    registered = translation_registered_overlaps(aligned)
+    current = spacetime_current(aligned)
+    j_t = current["j_t"]
+    temporal_flux = int(np.sum(np.abs(j_t)))
+    spatial_flux = int(
+        np.sum(np.abs(current["j_x"]))
+        + np.sum(np.abs(current["j_y"]))
+    )
+    total_flux = temporal_flux + spatial_flux
+    defects_per_frame = np.sum(np.abs(j_t), axis=(1, 2)).astype(int)
+    net_charge = np.sum(j_t, axis=(1, 2)).astype(int)
+    active = defects_per_frame > 0
+    active_indices = np.flatnonzero(active)
+    core = resolved_core_metrics(aligned, j_t)
+    mean_registered_overlap = (
+        float(np.mean(registered)) if registered.size else 0.0
+    )
+    preconditions = bool(
+        temporal_flux > 0
+        and int(np.max(np.abs(current["divergence"]))) == 0
+        and int(np.max(np.abs(net_charge))) == 0
+        and mean_registered_overlap >= MINIMUM_ADJACENT_OVERLAP
+        and core["resolved_fraction"] >= MINIMUM_RESOLVED_CORE_FRACTION
+    )
+    if preconditions:
+        transport = minimum_toroidal_transport(j_t)
+        minimum_orientation = float(
+            temporal_flux
+            / (temporal_flux + int(transport["spatial_flux"]))
+        )
+        transport["time_orientation_fraction"] = minimum_orientation
+        transport["evaluated"] = True
+        transport["not_evaluated_reason"] = None
+    else:
+        transport = {
+            "evaluated": False,
+            "not_evaluated_reason": (
+                "A frozen coherence, resolution, conservation, neutrality, "
+                "or nonzero-flux precondition failed."
+            ),
+            "spatial_flux": None,
+            "time_orientation_fraction": None,
+            "solver": "exact minimum-cost assignment per time slab",
+            "cost": "unit integer flux with toroidal Manhattan distance",
+            "persistent_point_ids_assigned": False,
+        }
+    v3_pass = bool(
+        preconditions
+        and transport["time_orientation_fraction"]
+        >= MINIMUM_TIME_ORIENTATION
+    )
+    return {
+        "temporal_flux": temporal_flux,
+        "raw_spacetime_spatial_flux": spatial_flux,
+        "raw_time_orientation_fraction": (
+            float(temporal_flux / total_flux) if total_flux else 0.0
+        ),
+        "maximum_abs_divergence": int(
+            np.max(np.abs(current["divergence"]))
+        ),
+        "maximum_abs_net_charge": int(np.max(np.abs(net_charge))),
+        "mean_adjacent_overlap": (
+            float(np.mean(overlaps)) if overlaps.size else 0.0
+        ),
+        "mean_translation_registered_overlap": mean_registered_overlap,
+        "resolved_core": core,
+        "ever_has_defect": bool(np.any(active)),
+        "defect_active_frame_fraction": float(np.mean(active)),
+        "first_defect_time": (
+            float(active_indices[0] * DT) if active_indices.size else None
+        ),
+        "last_defect_time": (
+            float(active_indices[-1] * DT) if active_indices.size else None
+        ),
+        "active_support_span": (
+            float((active_indices[-1] - active_indices[0]) * DT)
+            if active_indices.size
+            else 0.0
+        ),
+        "longest_consecutive_defect_span": float(
+            longest_true_run(active) * DT
+        ),
+        "maximum_defects_in_frame": int(
+            np.max(defects_per_frame)
+        ),
+        "defects_in_final_frame": int(defects_per_frame[-1]),
+        "minimum_toroidal_transport": transport,
+        "v3_transport_rule": v3_pass,
+        "stable_transport_candidate": bool(
+            v3_pass
+            and longest_true_run(active) * DT >= MINIMUM_PHYSICAL_SPAN
+        ),
+    }
+
+
+def field_metrics(psi: np.ndarray) -> dict[str, float]:
+    """Return source-blind norm and localization diagnostics."""
+    density = np.abs(psi) ** 2
+    total = float(np.sum(density))
+    mean = float(np.mean(density))
+    if total == 0.0:
+        return {
+            "mean_norm_density": 0.0,
+            "maximum_abs_psi": 0.0,
+            "relative_ipr": 0.0,
+            "top_one_percent_norm_fraction": 0.0,
+            "density_cv": 0.0,
+        }
+    relative_ipr = float(
+        density.size * np.sum(density**2) / (total * total)
+    )
+    top_cells = max(1, math.ceil(0.01 * density.size))
+    top_fraction = float(
+        np.sum(np.partition(density.ravel(), -top_cells)[-top_cells:])
+        / total
+    )
+    return {
+        "mean_norm_density": mean,
+        "maximum_abs_psi": float(np.max(np.abs(psi))),
+        "relative_ipr": relative_ipr,
+        "top_one_percent_norm_fraction": top_fraction,
+        "density_cv": float(np.std(density) / max(mean, 1e-30)),
+    }
+
+
+def build_pump_reference_schedule() -> list[dict[str, np.ndarray]]:
+    """Build the deterministic schedule used only by the matched diagnostic."""
+    config = Config()
+    state = initial_state()
+    schedule = []
+    for _step in range(STEPS):
+        components = deterministic_pump_components(state, config)
+        schedule.append(
+            {
+                key: np.array(components[key], copy=True)
+                for key in (
+                    "pump",
+                    "probability",
+                    "event_amplitude",
+                    "phase",
+                )
+            }
+        )
+        state, _diagnostics = backbone_step(
+            state,
+            components["pump"],
+            components,
+            "P0_pump_only",
+            config,
+        )
+    return schedule
+
+
+def run_lane(
+    lane: str,
+    seed: int,
+    source_protocol: str = "endogenous",
+    reference_schedule: list[dict[str, np.ndarray]] | None = None,
+) -> dict[str, object]:
+    """Run one branch from exact vacuum at fine observation cadence."""
+    config = Config()
+    state = initial_state()
+    rng = np.random.RandomState(seed)
+    frames = [np.array(state["psi"], copy=True)]
+    histories = {
+        "mean_norm_density": [0.0],
+        "maximum_abs_psi": [0.0],
+        "relative_ipr": [0.0],
+        "top_one_percent_norm_fraction": [0.0],
+        "density_cv": [0.0],
+    }
+    source_totals = {
+        "source_only_norm_change": 0.0,
+        "pump_projection_rate": 0.0,
+        "centered_projection_rate": 0.0,
+        "centered_squared_increment_rate": 0.0,
+        "total_squared_increment_rate": 0.0,
+        "admitted_event_fraction": 0.0,
+        "counterfactual_event_fraction": 0.0,
+        "counterfactual_mean_event_probability": 0.0,
+    }
+    for step_index in range(STEPS):
+        if source_protocol == "endogenous":
+            components = source_components(state, rng, config)
+        elif source_protocol in {
+            "scalar_budget_matched_local_phase",
+            "global_vector_matched_adverse_control",
+        }:
+            if reference_schedule is None:
+                raise ValueError("Matched protocol requires a schedule")
+            components = matched_schedule_components(
+                reference_schedule[step_index],
+                rng,
+                config,
+                state,
+                (
+                    "local_state_aligned"
+                    if source_protocol
+                    == "scalar_budget_matched_local_phase"
+                    else "global_reference_vector"
+                ),
+            )
+        else:
+            raise ValueError(source_protocol)
+        increment = selected_increment(lane, components)
+        state, diagnostics = backbone_step(
+            state,
+            increment,
+            components,
+            lane,
+            config,
+        )
+        frames.append(np.array(state["psi"], copy=True))
+        current = field_metrics(state["psi"])
+        for key, value in current.items():
+            histories[key].append(value)
+        for key, value in diagnostics.items():
+            source_totals[key] += value
+    movie = np.asarray(frames)
+    topology = topology_metrics(movie)
+    final = field_metrics(state["psi"])
+    return {
+        "lane": lane,
+        "source_protocol": source_protocol,
+        "seed": seed,
+        "final": final,
+        "maxima": {
+            key: float(np.max(values))
+            for key, values in histories.items()
+        },
+        "means_over_recorded_time": {
+            key: float(np.mean(values))
+            for key, values in histories.items()
+        },
+        "source_accounting": {
+            "integrated_source_only_norm_change": (
+                source_totals["source_only_norm_change"]
+            ),
+            "mean_pump_projection_rate": (
+                source_totals["pump_projection_rate"] / STEPS
+            ),
+            "mean_centered_projection_rate": (
+                source_totals["centered_projection_rate"] / STEPS
+            ),
+            "mean_centered_squared_increment_rate": (
+                source_totals["centered_squared_increment_rate"] / STEPS
+            ),
+            "mean_total_squared_increment_rate": (
+                source_totals["total_squared_increment_rate"] / STEPS
+            ),
+            "mean_admitted_event_fraction": (
+                source_totals["admitted_event_fraction"] / STEPS
+            ),
+            "mean_counterfactual_event_fraction": (
+                source_totals["counterfactual_event_fraction"] / STEPS
+            ),
+            "mean_counterfactual_event_probability": (
+                source_totals["counterfactual_mean_event_probability"]
+                / STEPS
+            ),
+            "is_physical_energy": False,
+        },
+        "topology": topology,
+        "all_fields_finite": True,
+        "cap_triggered": False,
+    }
+
+
+def scalar_summary(values: list[float]) -> dict[str, float]:
+    array = np.asarray(values, dtype=np.float64)
+    return {
+        "mean": float(np.mean(array)),
+        "standard_deviation": float(np.std(array, ddof=1))
+        if len(array) > 1
+        else 0.0,
+        "minimum": float(np.min(array)),
+        "median": float(np.median(array)),
+        "maximum": float(np.max(array)),
+    }
+
+
+def bootstrap_mean_interval(
+    values: np.ndarray,
+    seed: int,
+) -> dict[str, float]:
+    """Return deterministic paired-seed percentile interval for the mean."""
+    rng = np.random.RandomState(seed)
+    indices = rng.randint(
+        0,
+        len(values),
+        size=(BOOTSTRAP_REPLICATES, len(values)),
+    )
+    means = np.mean(values[indices], axis=1)
+    return {
+        "mean": float(np.mean(values)),
+        "lower_95_percentile": float(np.quantile(means, 0.025)),
+        "upper_95_percentile": float(np.quantile(means, 0.975)),
+        "replicates": BOOTSTRAP_REPLICATES,
+    }
+
+
+def extract_metric(entry: dict[str, object], metric: str) -> float:
+    """Extract one preregistered scalar used by factorial contrasts."""
+    if metric == "ever_has_defect":
+        return float(entry["topology"]["ever_has_defect"])
+    if metric == "stable_transport_candidate":
+        return float(entry["topology"]["stable_transport_candidate"])
+    if metric == "longest_consecutive_defect_span":
+        return float(
+            entry["topology"]["longest_consecutive_defect_span"]
+        )
+    if metric == "maximum_defects_in_frame":
+        return float(entry["topology"]["maximum_defects_in_frame"])
+    if metric == "final_mean_norm_density":
+        return float(entry["final"]["mean_norm_density"])
+    if metric == "maximum_relative_ipr":
+        return float(entry["maxima"]["relative_ipr"])
+    raise ValueError(metric)
+
+
+def factorial_contrasts(
+    by_lane: dict[str, list[dict[str, object]]],
+) -> dict[str, object]:
+    """Return paired 2x2 main effects and interaction by seed."""
+    metrics = (
+        "ever_has_defect",
+        "stable_transport_candidate",
+        "longest_consecutive_defect_span",
+        "maximum_defects_in_frame",
+        "final_mean_norm_density",
+        "maximum_relative_ipr",
+    )
+    result = {}
+    for metric_index, metric in enumerate(metrics):
+        d0 = np.asarray(
+            [extract_metric(entry, metric) for entry in by_lane["D0_none"]]
+        )
+        p0 = np.asarray(
+            [
+                extract_metric(entry, metric)
+                for entry in by_lane["P0_pump_only"]
+            ]
+        )
+        c0 = np.asarray(
+            [
+                extract_metric(entry, metric)
+                for entry in by_lane["C0_centered_only"]
+            ]
+        )
+        f0 = np.asarray(
+            [extract_metric(entry, metric) for entry in by_lane["F0_full"]]
+        )
+        pump_main = 0.5 * ((p0 + f0) - (d0 + c0))
+        centered_main = 0.5 * ((c0 + f0) - (d0 + p0))
+        interaction = f0 - p0 - c0 + d0
+        result[metric] = {
+            "pump_main_effect": bootstrap_mean_interval(
+                pump_main,
+                BOOTSTRAP_SEED + 10 * metric_index,
+            ),
+            "centered_randomness_main_effect": bootstrap_mean_interval(
+                centered_main,
+                BOOTSTRAP_SEED + 10 * metric_index + 1,
+            ),
+            "pump_by_randomness_interaction": bootstrap_mean_interval(
+                interaction,
+                BOOTSTRAP_SEED + 10 * metric_index + 2,
+            ),
+            "simple_pump_effect_when_randomness_on": (
+                bootstrap_mean_interval(
+                    f0 - c0,
+                    BOOTSTRAP_SEED + 10 * metric_index + 3,
+                )
+            ),
+        }
+    return result
+
+
+def aggregate_lane(
+    entries: list[dict[str, object]],
+) -> dict[str, object]:
+    """Summarize all preregistered outcomes while retaining seed rows."""
+    return {
+        "seeds_with_any_defect": int(
+            sum(entry["topology"]["ever_has_defect"] for entry in entries)
+        ),
+        "seeds_passing_v3_transport": int(
+            sum(entry["topology"]["v3_transport_rule"] for entry in entries)
+        ),
+        "stable_transport_candidates": int(
+            sum(
+                entry["topology"]["stable_transport_candidate"]
+                for entry in entries
+            )
+        ),
+        "final_mean_norm_density": scalar_summary(
+            [entry["final"]["mean_norm_density"] for entry in entries]
+        ),
+        "maximum_relative_ipr": scalar_summary(
+            [entry["maxima"]["relative_ipr"] for entry in entries]
+        ),
+        "maximum_defects_in_frame": scalar_summary(
+            [
+                entry["topology"]["maximum_defects_in_frame"]
+                for entry in entries
+            ]
+        ),
+        "longest_consecutive_defect_span": scalar_summary(
+            [
+                entry["topology"]["longest_consecutive_defect_span"]
+                for entry in entries
+            ]
+        ),
+        "integrated_source_only_norm_change": scalar_summary(
+            [
+                entry["source_accounting"][
+                    "integrated_source_only_norm_change"
+                ]
+                for entry in entries
+            ]
+        ),
+        "mean_pump_projection_rate": scalar_summary(
+            [
+                entry["source_accounting"]["mean_pump_projection_rate"]
+                for entry in entries
+            ]
+        ),
+        "mean_centered_squared_increment_rate": scalar_summary(
+            [
+                entry["source_accounting"][
+                    "mean_centered_squared_increment_rate"
+                ]
+                for entry in entries
+            ]
+        ),
+        "seed_rows": entries,
+    }
+
+
+def unit_controls(
+    reference_schedule: list[dict[str, np.ndarray]],
+) -> dict[str, object]:
+    """Run algebraic, deterministic, and observer controls."""
+    config = Config()
+    rng = np.random.RandomState(2026244000)
+    state = initial_state()
+    state["psi"] = (
+        rng.normal(size=(SIZE, SIZE))
+        + 1j * rng.normal(size=(SIZE, SIZE))
+    ) * 0.01
+    draw_rng = np.random.RandomState(2026244001)
+    components = source_components(state, draw_rng, config)
+    decomposition_error = float(
+        np.max(
+            np.abs(
+                components["full"]
+                - components["pump"]
+                - components["centered"]
+            )
+        )
+    )
+
+    size = 8
+    transport_movie = np.zeros((2, size, size), dtype=np.int16)
+    transport_movie[:, 4, 4] = -1
+    transport_movie[0, 0, 0] = 1
+    transport_movie[1, 0, size - 1] = 1
+    transport = minimum_toroidal_transport(transport_movie)
+
+    texture_rng = np.random.RandomState(2026244002)
+    base = (
+        texture_rng.normal(size=(16, 16))
+        + 1j * texture_rng.normal(size=(16, 16))
+    )
+    transformed = (
+        2.7
+        * np.exp(1.3j)
+        * np.roll(np.roll(base, 5, axis=0), -3, axis=1)
+    )
+    registered = float(
+        translation_registered_overlaps(
+            np.stack([base, transformed])
+        )[0]
+    )
+
+    deterministic_entries = {
+        lane: run_lane(lane, SEEDS[0])
+        for lane in ("D0_none", "P0_pump_only")
+    }
+    matched_rng_left = np.random.RandomState(2026244003)
+    matched_rng_right = np.random.RandomState(2026244003)
+    matched_left = matched_schedule_components(
+        reference_schedule[0],
+        matched_rng_left,
+        config,
+        initial_state(),
+        "local_state_aligned",
+    )
+    phase_probe_state = initial_state()
+    phase_probe_state["psi"] = np.exp(
+        1j
+        * np.random.RandomState(2026244004).uniform(
+            -np.pi,
+            np.pi,
+            (SIZE, SIZE),
+        )
+    )
+    matched_right = matched_schedule_components(
+        reference_schedule[0],
+        matched_rng_right,
+        config,
+        phase_probe_state,
+        "local_state_aligned",
+    )
+    pump_final = deterministic_entries["P0_pump_only"]["final"]
+    controls = {
+        "exact_source_decomposition": {
+            "maximum_absolute_error": decomposition_error,
+            "passes": decomposition_error <= 1e-15,
+        },
+        "minimum_transport_periodic_one_cell": {
+            "expected": 1,
+            "observed": transport["spatial_flux"],
+            "passes": transport["spatial_flux"] == 1,
+        },
+        "translation_phase_scale_registration": {
+            "expected": 1.0,
+            "observed": registered,
+            "absolute_error": abs(registered - 1.0),
+            "passes": abs(registered - 1.0) <= 1e-12,
+        },
+        "no_source_exact_vacuum": {
+            "final_mean_norm_density": (
+                deterministic_entries["D0_none"]["final"][
+                    "mean_norm_density"
+                ]
+            ),
+            "passes": (
+                deterministic_entries["D0_none"]["final"][
+                    "mean_norm_density"
+                ]
+                == 0.0
+            ),
+        },
+        "pump_only_preserves_spatial_uniformity": {
+            "final_relative_ipr": pump_final["relative_ipr"],
+            "expected_uniform_relative_ipr": 1.0,
+            "absolute_error": abs(pump_final["relative_ipr"] - 1.0),
+            "passes": abs(pump_final["relative_ipr"] - 1.0) <= 1e-12,
+        },
+        "matched_schedule_supplies_identical_scalar_budgets_across_phases": {
+            "maximum_pump_magnitude_difference": float(
+                np.max(
+                    np.abs(
+                        np.abs(matched_left["pump"])
+                        - np.abs(matched_right["pump"])
+                    )
+                )
+            ),
+            "maximum_centered_magnitude_difference": float(
+                np.max(
+                    np.abs(
+                        np.abs(matched_left["centered"])
+                        - np.abs(matched_right["centered"])
+                    )
+                )
+            ),
+            "passes": bool(
+                np.max(
+                    np.abs(
+                        np.abs(matched_left["pump"])
+                        - np.abs(matched_right["pump"])
+                    )
+                )
+                <= 1e-15
+                and np.max(
+                    np.abs(
+                        np.abs(matched_left["centered"])
+                        - np.abs(matched_right["centered"])
+                    )
+                )
+                <= 1e-15
+            ),
+        },
+    }
+    controls["all_pass"] = all(
+        value["passes"]
+        for key, value in controls.items()
+        if key != "all_pass"
+    )
+    return controls
+
+
+def build_decision(
+    by_lane: dict[str, list[dict[str, object]]],
+    aggregates: dict[str, dict[str, object]],
+    contrasts: dict[str, object],
+) -> dict[str, object]:
+    """Apply only the thresholds frozen before the P1 trajectories."""
+    defect_counts = {
+        lane: aggregate["seeds_with_any_defect"]
+        for lane, aggregate in aggregates.items()
+    }
+    randomness_required_for_nucleation = bool(
+        defect_counts["D0_none"] <= len(SEEDS) - MINIMUM_PASSING_SEEDS
+        and defect_counts["P0_pump_only"]
+        <= len(SEEDS) - MINIMUM_PASSING_SEEDS
+        and defect_counts["C0_centered_only"] >= MINIMUM_PASSING_SEEDS
+        and defect_counts["F0_full"] >= MINIMUM_PASSING_SEEDS
+    )
+    stable_counts = {
+        lane: aggregate["stable_transport_candidates"]
+        for lane, aggregate in aggregates.items()
+    }
+    pump_span_effect = contrasts[
+        "longest_consecutive_defect_span"
+    ]["simple_pump_effect_when_randomness_on"]
+    if pump_span_effect["lower_95_percentile"] > 0.0:
+        pump_survival_direction = "increases measured defect-span survival"
+    elif pump_span_effect["upper_95_percentile"] < 0.0:
+        pump_survival_direction = "decreases measured defect-span survival"
+    else:
+        pump_survival_direction = "not resolved by the declared paired interval"
+    any_particle_candidate = any(
+        stable_counts[lane] >= MINIMUM_PASSING_SEEDS for lane in LANES
+    )
+    return {
+        "randomness_required_for_winding_nucleation_in_this_lane": (
+            randomness_required_for_nucleation
+        ),
+        "pump_effect_on_defect_span": pump_survival_direction,
+        "stable_candidate_counts": stable_counts,
+        "any_lane_meets_population_particle_screen": any_particle_candidate,
+        "current_source_is_budgeted_physical_energy": False,
+        "transport_pass_alone_would_establish_particle": False,
+        "allowed_interpretation": (
+            "The factorial can separate numerical branch seeding, coherent "
+            "pumping, and their interaction in this bounded reconstruction."
+        ),
+        "forbidden_interpretation": (
+            "It cannot by itself establish quantum vacuum, physical fuel, "
+            "a Standard Model particle, or a continuum law."
+        ),
+        "next_gate": (
+            "If no population-level stable candidate appears, diagnose which "
+            "frozen screen fails before testing source shutdown. If one does "
+            "appear, run P2 source schedules without changing its observer."
+        ),
+    }
+
+
+def build_result() -> dict[str, object]:
+    """Run controls, all paired lanes, aggregates, and frozen decisions."""
+    reference_schedule = build_pump_reference_schedule()
+    controls = unit_controls(reference_schedule)
+    if not controls["all_pass"]:
+        raise AssertionError("A preregistered control failed")
+    endogenous_by_lane = {lane: [] for lane in LANES}
+    for seed in SEEDS:
+        for lane in LANES:
+            endogenous_by_lane[lane].append(run_lane(lane, seed))
+    endogenous_aggregates = {
+        lane: aggregate_lane(entries)
+        for lane, entries in endogenous_by_lane.items()
+    }
+    endogenous_contrasts = factorial_contrasts(endogenous_by_lane)
+    endogenous_decision = build_decision(
+        endogenous_by_lane,
+        endogenous_aggregates,
+        endogenous_contrasts,
+    )
+
+    # The deterministic D0 and P0 trajectories are exactly the same under each
+    # matched schedule, but every lane is rerun rather than silently aliased.
+    matched_by_lane = {lane: [] for lane in LANES}
+    for seed in SEEDS:
+        for lane in LANES:
+            matched_by_lane[lane].append(
+                run_lane(
+                    lane,
+                    seed,
+                    source_protocol="scalar_budget_matched_local_phase",
+                    reference_schedule=reference_schedule,
+                )
+            )
+    matched_aggregates = {
+        lane: aggregate_lane(entries)
+        for lane, entries in matched_by_lane.items()
+    }
+    matched_contrasts = factorial_contrasts(matched_by_lane)
+    matched_decision = build_decision(
+        matched_by_lane,
+        matched_aggregates,
+        matched_contrasts,
+    )
+    centered_budget_difference = abs(
+        matched_aggregates["C0_centered_only"][
+            "mean_centered_squared_increment_rate"
+        ]["mean"]
+        - matched_aggregates["F0_full"][
+            "mean_centered_squared_increment_rate"
+        ]["mean"]
+    )
+    pump_budget_difference = abs(
+        matched_aggregates["P0_pump_only"][
+            "mean_pump_projection_rate"
+        ]["mean"]
+        - matched_aggregates["F0_full"][
+            "mean_pump_projection_rate"
+        ]["mean"]
+    )
+    matched_budget_control = {
+        "centered_squared_increment_rate_absolute_difference": (
+            centered_budget_difference
+        ),
+        "pump_projection_rate_absolute_difference": pump_budget_difference,
+        "exact_at_reported_float_precision": bool(
+            centered_budget_difference == 0.0
+            and pump_budget_difference == 0.0
+        ),
+    }
+
+    global_vector_by_lane = {lane: [] for lane in LANES}
+    for seed in SEEDS:
+        for lane in LANES:
+            global_vector_by_lane[lane].append(
+                run_lane(
+                    lane,
+                    seed,
+                    source_protocol="global_vector_matched_adverse_control",
+                    reference_schedule=reference_schedule,
+                )
+            )
+    global_vector_aggregates = {
+        lane: aggregate_lane(entries)
+        for lane, entries in global_vector_by_lane.items()
+    }
+    global_vector_contrasts = factorial_contrasts(global_vector_by_lane)
+    global_vector_decision = build_decision(
+        global_vector_by_lane,
+        global_vector_aggregates,
+        global_vector_contrasts,
+    )
+    return {
+        "schema": SCHEMA,
+        "runtime": {
+            "python": platform.python_version(),
+            "implementation": platform.python_implementation(),
+            "numpy": np.__version__,
+            "scipy": scipy.__version__,
+        },
+        "reconstruction_provenance": {
+            "audited_commit": AUDITED_COMMIT,
+            "audited_math_blob": AUDITED_MATH_BLOB,
+            "imports_project_code": False,
+            "reason": (
+                "The committed NumPy source and backbone are reconstructed "
+                "inside this standalone program so the audit is independent "
+                "of later working-tree changes."
+            ),
+        },
+        "frozen_protocol": {
+            "grid": [SIZE, SIZE],
+            "spatial_boundary": "periodic",
+            "initial_state": "exact vacuum",
+            "dt": DT,
+            "total_time": TOTAL_TIME,
+            "updates": STEPS,
+            "observation_cadence": DT,
+            "seeds": list(SEEDS),
+            "common_random_numbers": (
+                "C0 and F0 use the same uniform and Gaussian random arrays "
+                "at each paired update; their state-dependent parameters can "
+                "diverge after their trajectories diverge."
+            ),
+            "protocol_history": {
+                "endogenous_factorial": (
+                    "Frozen before any P1 trajectory was inspected. It "
+                    "preserves the current state-dependent source feedback."
+                ),
+                "open_loop_matched_follow_up": (
+                    "Added after the primary output exposed unequal realized "
+                    "centered-input budgets. The retained scalar-budget "
+                    "version freezes probability and amplitude while keeping "
+                    "each lane aligned to its own local phase. Its schedule "
+                    "and unchanged thresholds were frozen before its outcomes "
+                    "were run. It is a mechanistic control, not the current "
+                    "source law."
+                ),
+                "global_vector_adverse_control": (
+                    "The first matched implementation froze the entire "
+                    "complex source vector and therefore imposed a common "
+                    "external phase reference. Its output is retained as an "
+                    "adverse control, but it is excluded from conclusions "
+                    "about the present locally phase-aligned source."
+                ),
+            },
+            "lanes": {
+                "D0_none": "pump off, centered innovation off",
+                "P0_pump_only": "conditional-mean pump on, innovation off",
+                "C0_centered_only": "pump off, centered innovation on",
+                "F0_full": "conditional-mean pump on, innovation on",
+            },
+            "profile": {
+                "psi_mode": "periodic LAP4 diffusion",
+                "phi_diffusion_scales_with_dt": True,
+                "profile_status": (
+                    "declared opt-in continuous-time correction, not the "
+                    "legacy default and not a final canonical law"
+                ),
+                "mode_coupling": True,
+                "mu": False,
+                "numerical_caps": "finite defaults; no trigger permitted",
+            },
+            "v3_thresholds": {
+                "minimum_time_orientation": MINIMUM_TIME_ORIENTATION,
+                "minimum_translation_registered_adjacent_overlap": (
+                    MINIMUM_ADJACENT_OVERLAP
+                ),
+                "minimum_resolved_core_fraction": (
+                    MINIMUM_RESOLVED_CORE_FRACTION
+                ),
+                "minimum_consecutive_physical_span": MINIMUM_PHYSICAL_SPAN,
+                "minimum_seed_prevalence": MINIMUM_SEED_PREVALENCE,
+                "minimum_passing_seeds": MINIMUM_PASSING_SEEDS,
+            },
+            "budget_definition": (
+                "The source-only change of mean |psi|^2 at the source "
+                "substep, phase projection, and squared increment are exact "
+                "software accounting proxies. None is called physical energy."
+            ),
+            "post_result_tuning_permitted": False,
+        },
+        "unit_controls": controls,
+        "protocol_results": {
+            "endogenous_current_source": {
+                "scope": (
+                    "Faithful state-dependent source components; realized "
+                    "budgets may diverge causally after states diverge."
+                ),
+                "lane_results": endogenous_aggregates,
+                "paired_factorial_contrasts": endogenous_contrasts,
+                "decision": endogenous_decision,
+            },
+            "open_loop_input_matched": {
+                "scope": (
+                    "Pump-only reference schedule supplies identical scalar "
+                    "pump amplitudes, event probabilities, event amplitudes, "
+                    "and random draws across paired branches. Each branch "
+                    "retains its own local phase; amplitude/probability "
+                    "feedback is deliberately removed."
+                ),
+                "matched_budget_control": matched_budget_control,
+                "lane_results": matched_aggregates,
+                "paired_factorial_contrasts": matched_contrasts,
+                "decision": matched_decision,
+            },
+            "global_vector_matched_adverse_control": {
+                "scope": (
+                    "The complete complex source vector is shared across "
+                    "branches. This creates an external global phase "
+                    "reference absent from the present source and is retained "
+                    "only to quantify that confound."
+                ),
+                "lane_results": global_vector_aggregates,
+                "paired_factorial_contrasts": global_vector_contrasts,
+                "decision": global_vector_decision,
+                "permitted_for_current_source_inference": False,
+            },
+        },
+        "decision": {
+            "endogenous_current_source": endogenous_decision,
+            "open_loop_input_matched": matched_decision,
+            "matched_budget_control_passes": matched_budget_control[
+                "exact_at_reported_float_precision"
+            ],
+            "interpretive_rule": (
+                "Use the endogenous factorial to characterize implemented "
+                "feedback and the scalar-budget/local-phase factorial to "
+                "isolate input effects. A conclusion is robust only where "
+                "both agree. The global-vector control is excluded because "
+                "it injects an external phase reference."
+            ),
+        },
+        "limitations": [
+            "This is one finite 32x32 periodic grid, one dt, one horizon, and twelve seeds.",
+            "The source components are algebraically matched, not matched by a derived Hamiltonian.",
+            "A centered finite-step innovation has no nonzero diffusion limit under the current dt scaling.",
+            "The v3 rule detects coherent resolved topological transport but is known to accept advected smooth disorder.",
+            "No open boundary, grid refinement, alternative lattice, collision, mass, spin, charge, or Bell test is included here.",
+            "No production default or canonical ontology is selected by this audit.",
+        ],
+    }
+
+
+def main() -> None:
+    result = build_result()
+    canonical = json.dumps(
+        plain(result),
+        ensure_ascii=False,
+        indent=2,
+        sort_keys=True,
+        allow_nan=False,
+    )
+    result["result_payload_sha256_before_hash_field"] = hashlib.sha256(
+        canonical.encode("utf-8")
+    ).hexdigest()
+    print(
+        json.dumps(
+            plain(result),
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+            allow_nan=False,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### O.3 Complete output
+
+```json
+{
+  "decision": {
+    "endogenous_current_source": {
+      "allowed_interpretation": "The factorial can separate numerical branch seeding, coherent pumping, and their interaction in this bounded reconstruction.",
+      "any_lane_meets_population_particle_screen": false,
+      "current_source_is_budgeted_physical_energy": false,
+      "forbidden_interpretation": "It cannot by itself establish quantum vacuum, physical fuel, a Standard Model particle, or a continuum law.",
+      "next_gate": "If no population-level stable candidate appears, diagnose which frozen screen fails before testing source shutdown. If one does appear, run P2 source schedules without changing its observer.",
+      "pump_effect_on_defect_span": "decreases measured defect-span survival",
+      "randomness_required_for_winding_nucleation_in_this_lane": true,
+      "stable_candidate_counts": {
+        "C0_centered_only": 0,
+        "D0_none": 0,
+        "F0_full": 0,
+        "P0_pump_only": 0
+      },
+      "transport_pass_alone_would_establish_particle": false
+    },
+    "interpretive_rule": "Use the endogenous factorial to characterize implemented feedback and the scalar-budget/local-phase factorial to isolate input effects. A conclusion is robust only where both agree. The global-vector control is excluded because it injects an external phase reference.",
+    "matched_budget_control_passes": true,
+    "open_loop_input_matched": {
+      "allowed_interpretation": "The factorial can separate numerical branch seeding, coherent pumping, and their interaction in this bounded reconstruction.",
+      "any_lane_meets_population_particle_screen": false,
+      "current_source_is_budgeted_physical_energy": false,
+      "forbidden_interpretation": "It cannot by itself establish quantum vacuum, physical fuel, a Standard Model particle, or a continuum law.",
+      "next_gate": "If no population-level stable candidate appears, diagnose which frozen screen fails before testing source shutdown. If one does appear, run P2 source schedules without changing its observer.",
+      "pump_effect_on_defect_span": "decreases measured defect-span survival",
+      "randomness_required_for_winding_nucleation_in_this_lane": true,
+      "stable_candidate_counts": {
+        "C0_centered_only": 0,
+        "D0_none": 0,
+        "F0_full": 0,
+        "P0_pump_only": 0
+      },
+      "transport_pass_alone_would_establish_particle": false
+    }
+  },
+  "frozen_protocol": {
+    "budget_definition": "The source-only change of mean |psi|^2 at the source substep, phase projection, and squared increment are exact software accounting proxies. None is called physical energy.",
+    "common_random_numbers": "C0 and F0 use the same uniform and Gaussian random arrays at each paired update; their state-dependent parameters can diverge after their trajectories diverge.",
+    "dt": 0.1,
+    "grid": [
+      32,
+      32
+    ],
+    "initial_state": "exact vacuum",
+    "lanes": {
+      "C0_centered_only": "pump off, centered innovation on",
+      "D0_none": "pump off, centered innovation off",
+      "F0_full": "conditional-mean pump on, innovation on",
+      "P0_pump_only": "conditional-mean pump on, innovation off"
+    },
+    "observation_cadence": 0.1,
+    "post_result_tuning_permitted": false,
+    "profile": {
+      "mode_coupling": true,
+      "mu": false,
+      "numerical_caps": "finite defaults; no trigger permitted",
+      "phi_diffusion_scales_with_dt": true,
+      "profile_status": "declared opt-in continuous-time correction, not the legacy default and not a final canonical law",
+      "psi_mode": "periodic LAP4 diffusion"
+    },
+    "protocol_history": {
+      "endogenous_factorial": "Frozen before any P1 trajectory was inspected. It preserves the current state-dependent source feedback.",
+      "global_vector_adverse_control": "The first matched implementation froze the entire complex source vector and therefore imposed a common external phase reference. Its output is retained as an adverse control, but it is excluded from conclusions about the present locally phase-aligned source.",
+      "open_loop_matched_follow_up": "Added after the primary output exposed unequal realized centered-input budgets. The retained scalar-budget version freezes probability and amplitude while keeping each lane aligned to its own local phase. Its schedule and unchanged thresholds were frozen before its outcomes were run. It is a mechanistic control, not the current source law."
+    },
+    "seeds": [
+      2026242000,
+      2026242001,
+      2026242002,
+      2026242003,
+      2026242004,
+      2026242005,
+      2026242006,
+      2026242007,
+      2026242008,
+      2026242009,
+      2026242010,
+      2026242011
+    ],
+    "spatial_boundary": "periodic",
+    "total_time": 60.0,
+    "updates": 600,
+    "v3_thresholds": {
+      "minimum_consecutive_physical_span": 15.0,
+      "minimum_passing_seeds": 9,
+      "minimum_resolved_core_fraction": 0.9,
+      "minimum_seed_prevalence": 0.75,
+      "minimum_time_orientation": 0.3333333333333333,
+      "minimum_translation_registered_adjacent_overlap": 0.9
+    }
+  },
+  "limitations": [
+    "This is one finite 32x32 periodic grid, one dt, one horizon, and twelve seeds.",
+    "The source components are algebraically matched, not matched by a derived Hamiltonian.",
+    "A centered finite-step innovation has no nonzero diffusion limit under the current dt scaling.",
+    "The v3 rule detects coherent resolved topological transport but is known to accept advected smooth disorder.",
+    "No open boundary, grid refinement, alternative lattice, collision, mass, spin, charge, or Bell test is included here.",
+    "No production default or canonical ontology is selected by this audit."
+  ],
+  "protocol_results": {
+    "endogenous_current_source": {
+      "decision": {
+        "allowed_interpretation": "The factorial can separate numerical branch seeding, coherent pumping, and their interaction in this bounded reconstruction.",
+        "any_lane_meets_population_particle_screen": false,
+        "current_source_is_budgeted_physical_energy": false,
+        "forbidden_interpretation": "It cannot by itself establish quantum vacuum, physical fuel, a Standard Model particle, or a continuum law.",
+        "next_gate": "If no population-level stable candidate appears, diagnose which frozen screen fails before testing source shutdown. If one does appear, run P2 source schedules without changing its observer.",
+        "pump_effect_on_defect_span": "decreases measured defect-span survival",
+        "randomness_required_for_winding_nucleation_in_this_lane": true,
+        "stable_candidate_counts": {
+          "C0_centered_only": 0,
+          "D0_none": 0,
+          "F0_full": 0,
+          "P0_pump_only": 0
+        },
+        "transport_pass_alone_would_establish_particle": false
+      },
+      "lane_results": {
+        "C0_centered_only": {
+          "final_mean_norm_density": {
+            "maximum": 0.00011885382205390388,
+            "mean": 0.00010260321208575183,
+            "median": 0.00010306448589069952,
+            "minimum": 8.56992700740447e-05,
+            "standard_deviation": 8.409061367898627e-06
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0015262138301608468,
+            "mean": 0.00149812007477142,
+            "median": 0.0014926093886897536,
+            "minimum": 0.0014711504526855432,
+            "standard_deviation": 1.9081462956097495e-05
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 60.0,
+            "mean": 60.0,
+            "median": 60.0,
+            "minimum": 60.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 374.0,
+            "mean": 346.8333333333333,
+            "median": 347.0,
+            "minimum": 326.0,
+            "standard_deviation": 15.098665403594351
+          },
+          "maximum_relative_ipr": {
+            "maximum": 3.6203841814661284,
+            "mean": 3.3790926913030828,
+            "median": 3.3611074725088415,
+            "minimum": 3.2628555011748257,
+            "standard_deviation": 0.10643669413567097
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 2.5214007801066402e-05,
+            "mean": 2.519269317895296e-05,
+            "median": 2.518938455098177e-05,
+            "minimum": 2.517922006426932e-05,
+            "standard_deviation": 1.3698347418760512e-08
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3514849076299214,
+                "maximum_abs_psi": 0.032383302417787085,
+                "mean_norm_density": 8.56992700740447e-05,
+                "relative_ipr": 2.826511455551457,
+                "top_one_percent_norm_fraction": 0.08563244979954043
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.516767767332507,
+                "maximum_abs_psi": 0.04033253142377855,
+                "mean_norm_density": 0.00010285770355355089,
+                "relative_ipr": 3.3005844600188383,
+                "top_one_percent_norm_fraction": 0.10349799883247363
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4016728527395992,
+                "maximum_abs_psi": 0.030904382058042516,
+                "mean_norm_density": 8.505849285187202e-05,
+                "relative_ipr": 2.970387009604727,
+                "top_one_percent_norm_fraction": 0.08785253413101221
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0014930307430321731,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5149641927083334,
+                "mean_centered_projection_rate": -1.7654416182041694e-05,
+                "mean_centered_squared_increment_rate": 2.5190234355352054e-05,
+                "mean_counterfactual_event_fraction": 0.5149641927083334,
+                "mean_counterfactual_event_probability": 0.5154033691511383,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5190234355352054e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 226,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 328,
+                "mean_adjacent_overlap": 0.9819551074018293,
+                "mean_translation_registered_overlap": 0.9819551074018293,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 62370,
+                "raw_time_orientation_fraction": 0.7003430416358377,
+                "resolved_core": {
+                  "defects": 145768,
+                  "maximum_core_ratio": 3.2578527421991224,
+                  "median_core_ratio": 0.2562720651364696,
+                  "resolved_fraction": 0.7645436584161133
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 145768,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4025130344915697,
+                "maximum_abs_psi": 0.033564120282851155,
+                "mean_norm_density": 0.00010457902742767649,
+                "relative_ipr": 2.9670428119187515,
+                "top_one_percent_norm_fraction": 0.08874115736724585
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.547200414226704,
+                "maximum_abs_psi": 0.040587135805061667,
+                "mean_norm_density": 0.00011127326533570735,
+                "relative_ipr": 3.393829121783284,
+                "top_one_percent_norm_fraction": 0.10725590525824857
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.389789542864758,
+                "maximum_abs_psi": 0.030682576054782043,
+                "mean_norm_density": 8.430349304474709e-05,
+                "relative_ipr": 2.937159464431589,
+                "top_one_percent_norm_fraction": 0.08709869976804258
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0015075168531358822,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5152880859375,
+                "mean_centered_projection_rate": -1.9617494606655905e-06,
+                "mean_centered_squared_increment_rate": 2.5196689545986442e-05,
+                "mean_counterfactual_event_fraction": 0.5152880859375,
+                "mean_counterfactual_event_probability": 0.5153446405538223,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5196689545986442e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 214,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9816362621633908,
+                "mean_translation_registered_overlap": 0.9816362621633911,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 60753,
+                "raw_time_orientation_fraction": 0.7046997807838314,
+                "resolved_core": {
+                  "defects": 144980,
+                  "maximum_core_ratio": 3.7360439511470314,
+                  "median_core_ratio": 0.26322865256762706,
+                  "resolved_fraction": 0.7552214098496345
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 144980,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4423907008943249,
+                "maximum_abs_psi": 0.038329363868453495,
+                "mean_norm_density": 9.695921835619085e-05,
+                "relative_ipr": 3.0804909340264217,
+                "top_one_percent_norm_fraction": 0.09732510543779142
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5524999010995455,
+                "maximum_abs_psi": 0.04302313859595053,
+                "mean_norm_density": 0.0001082544638957204,
+                "relative_ipr": 3.4102559429140977,
+                "top_one_percent_norm_fraction": 0.10611278992026364
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4070886990290254,
+                "maximum_abs_psi": 0.031802858337127496,
+                "mean_norm_density": 8.78173543178028e-05,
+                "relative_ipr": 2.985496247303557,
+                "top_one_percent_norm_fraction": 0.08794724211352863
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0014876583964777096,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5147444661458334,
+                "mean_centered_projection_rate": -2.9407046692486264e-05,
+                "mean_centered_squared_increment_rate": 2.521178328930267e-05,
+                "mean_counterfactual_event_fraction": 0.5147444661458334,
+                "mean_counterfactual_event_probability": 0.5156076452704124,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.521178328930267e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 254,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 358,
+                "mean_adjacent_overlap": 0.9823013646179356,
+                "mean_translation_registered_overlap": 0.9823013646179356,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 61432,
+                "raw_time_orientation_fraction": 0.6976920427144333,
+                "resolved_core": {
+                  "defects": 141778,
+                  "maximum_core_ratio": 3.5654322946403054,
+                  "median_core_ratio": 0.2555913419497151,
+                  "resolved_fraction": 0.7693083553160575
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 141778,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4003978814546312,
+                "maximum_abs_psi": 0.035289894713123,
+                "mean_norm_density": 0.00010343716253541651,
+                "relative_ipr": 2.961114226382619,
+                "top_one_percent_norm_fraction": 0.08177181196287468
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5397486607037292,
+                "maximum_abs_psi": 0.04107791024777533,
+                "mean_norm_density": 0.00011026000278731526,
+                "relative_ipr": 3.370825938138928,
+                "top_one_percent_norm_fraction": 0.10705493625878351
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3819301586260835,
+                "maximum_abs_psi": 0.03053173781975966,
+                "mean_norm_density": 8.620704937680399e-05,
+                "relative_ipr": 2.9147738878863008,
+                "top_one_percent_norm_fraction": 0.08515388966403267
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0015225774814124902,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.515517578125,
+                "mean_centered_projection_rate": 8.565321098192694e-06,
+                "mean_centered_squared_increment_rate": 2.521313344073529e-05,
+                "mean_counterfactual_event_fraction": 0.515517578125,
+                "mean_counterfactual_event_probability": 0.5154755121739572,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.521313344073529e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 232,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 336,
+                "mean_adjacent_overlap": 0.9817795421113094,
+                "mean_translation_registered_overlap": 0.9817795421113094,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 60833,
+                "raw_time_orientation_fraction": 0.7038589419673935,
+                "resolved_core": {
+                  "defects": 144586,
+                  "maximum_core_ratio": 2.68606788006966,
+                  "median_core_ratio": 0.26279132653579934,
+                  "resolved_fraction": 0.7585727525486562
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 144586,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3370201723001984,
+                "maximum_abs_psi": 0.037103061048535765,
+                "mean_norm_density": 9.913450656539035e-05,
+                "relative_ipr": 2.787622941137653,
+                "top_one_percent_norm_fraction": 0.08509084501937048
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5285624674943024,
+                "maximum_abs_psi": 0.0424664585801979,
+                "mean_norm_density": 0.00011272011558112753,
+                "relative_ipr": 3.3365032170322695,
+                "top_one_percent_norm_fraction": 0.10734495458661025
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3985809337629587,
+                "maximum_abs_psi": 0.032185585573672036,
+                "mean_norm_density": 8.910643112734845e-05,
+                "relative_ipr": 2.9611899199067793,
+                "top_one_percent_norm_fraction": 0.08723365397568612
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0015121905729989706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5164046223958333,
+                "mean_centered_projection_rate": 1.327222243469747e-05,
+                "mean_centered_squared_increment_rate": 2.5188534746611483e-05,
+                "mean_counterfactual_event_fraction": 0.5164046223958333,
+                "mean_counterfactual_event_probability": 0.5157065477222706,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5188534746611483e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 218,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9821580220512988,
+                "mean_translation_registered_overlap": 0.9821580220512988,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 60176,
+                "raw_time_orientation_fraction": 0.7023848383235902,
+                "resolved_core": {
+                  "defects": 142018,
+                  "maximum_core_ratio": 3.627006606495243,
+                  "median_core_ratio": 0.25804884362629077,
+                  "resolved_fraction": 0.7664310157867312
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 142018,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.5047764198939628,
+                "maximum_abs_psi": 0.043119173689486166,
+                "mean_norm_density": 0.00010242764021451645,
+                "relative_ipr": 3.2643520738688925,
+                "top_one_percent_norm_fraction": 0.09593043926025284
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.618760075324978,
+                "maximum_abs_psi": 0.047973937155568344,
+                "mean_norm_density": 0.00010887144832475838,
+                "relative_ipr": 3.6203841814661284,
+                "top_one_percent_norm_fraction": 0.11478921049256355
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4362257620400045,
+                "maximum_abs_psi": 0.033075578482495704,
+                "mean_norm_density": 8.74434649616029e-05,
+                "relative_ipr": 3.070249769387044,
+                "top_one_percent_norm_fraction": 0.0929985370831615
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0014836096236438719,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5146630859375,
+                "mean_centered_projection_rate": -3.665263453442674e-05,
+                "mean_centered_squared_increment_rate": 2.5196528886757727e-05,
+                "mean_counterfactual_event_fraction": 0.5146630859375,
+                "mean_counterfactual_event_probability": 0.5154665128926722,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5196528886757727e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 248,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 374,
+                "mean_adjacent_overlap": 0.9819125542993379,
+                "mean_translation_registered_overlap": 0.9819125542993379,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 61929,
+                "raw_time_orientation_fraction": 0.6954216606746767,
+                "resolved_core": {
+                  "defects": 141398,
+                  "maximum_core_ratio": 3.097362892778316,
+                  "median_core_ratio": 0.2554972341100723,
+                  "resolved_fraction": 0.7692470897749615
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 141398,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.380927942651932,
+                "maximum_abs_psi": 0.033915416096958854,
+                "mean_norm_density": 0.00010356769634198229,
+                "relative_ipr": 2.906961982796898,
+                "top_one_percent_norm_fraction": 0.08310699767439349
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.504279063596521,
+                "maximum_abs_psi": 0.03741360137341301,
+                "mean_norm_density": 0.00010373419086827054,
+                "relative_ipr": 3.2628555011748257,
+                "top_one_percent_norm_fraction": 0.09938046741882954
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3900617007168872,
+                "maximum_abs_psi": 0.030055806094984622,
+                "mean_norm_density": 8.163411308021679e-05,
+                "relative_ipr": 2.937019207907393,
+                "top_one_percent_norm_fraction": 0.08630991543892069
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0014711504526855432,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.51396484375,
+                "mean_centered_projection_rate": -4.029693206770564e-05,
+                "mean_centered_squared_increment_rate": 2.5180934754855862e-05,
+                "mean_counterfactual_event_fraction": 0.51396484375,
+                "mean_counterfactual_event_probability": 0.5151028238712517,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5180934754855862e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 258,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 364,
+                "mean_adjacent_overlap": 0.9813332359626075,
+                "mean_translation_registered_overlap": 0.9813332359626077,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 63085,
+                "raw_time_orientation_fraction": 0.7007054782497307,
+                "resolved_core": {
+                  "defects": 147694,
+                  "maximum_core_ratio": 3.8099289359376534,
+                  "median_core_ratio": 0.259935956673922,
+                  "resolved_fraction": 0.7630032364212493
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 147694,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3757684817164813,
+                "maximum_abs_psi": 0.0299855513510828,
+                "mean_norm_density": 9.43513472923288e-05,
+                "relative_ipr": 2.892738915284472,
+                "top_one_percent_norm_fraction": 0.083289670186118
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5334239488408792,
+                "maximum_abs_psi": 0.03987999150157708,
+                "mean_norm_density": 0.0001030760638084221,
+                "relative_ipr": 3.351389006878755,
+                "top_one_percent_norm_fraction": 0.1057721234582174
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4041752886688375,
+                "maximum_abs_psi": 0.030705918415033066,
+                "mean_norm_density": 8.22802396237276e-05,
+                "relative_ipr": 2.9766087815453264,
+                "top_one_percent_norm_fraction": 0.08776556854921724
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.001477092435784911,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5144156901041667,
+                "mean_centered_projection_rate": -2.0980939987076524e-05,
+                "mean_centered_squared_increment_rate": 2.517922006426932e-05,
+                "mean_counterfactual_event_fraction": 0.5144156901041667,
+                "mean_counterfactual_event_probability": 0.5151592579659855,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.517922006426932e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 208,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 360,
+                "mean_adjacent_overlap": 0.9812577261774906,
+                "mean_translation_registered_overlap": 0.981257726177491,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 62657,
+                "raw_time_orientation_fraction": 0.7020008655990945,
+                "resolved_core": {
+                  "defects": 147602,
+                  "maximum_core_ratio": 3.7429512323474765,
+                  "median_core_ratio": 0.2626481967640997,
+                  "resolved_fraction": 0.7604368504491809
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 147602,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4019444325452375,
+                "maximum_abs_psi": 0.04190727372227053,
+                "mean_norm_density": 0.00010779641212488834,
+                "relative_ipr": 2.9654481919445876,
+                "top_one_percent_norm_fraction": 0.08923999478106909
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.595130461658114,
+                "maximum_abs_psi": 0.046239943604695855,
+                "mean_norm_density": 0.00011421720398775981,
+                "relative_ipr": 3.544441189709627,
+                "top_one_percent_norm_fraction": 0.11437578087572896
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4216170131729056,
+                "maximum_abs_psi": 0.03275356824856799,
+                "mean_norm_density": 8.833566474687144e-05,
+                "relative_ipr": 3.028478214385971,
+                "top_one_percent_norm_fraction": 0.09074747166687777
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0015262138301608468,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5153125,
+                "mean_centered_projection_rate": -1.0417491672607098e-05,
+                "mean_centered_squared_increment_rate": 2.5179394824363573e-05,
+                "mean_counterfactual_event_fraction": 0.5153125,
+                "mean_counterfactual_event_probability": 0.515602549854142,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5179394824363573e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 206,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 338,
+                "mean_adjacent_overlap": 0.9819360690068715,
+                "mean_translation_registered_overlap": 0.9819360690068715,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 61260,
+                "raw_time_orientation_fraction": 0.6984791061672491,
+                "resolved_core": {
+                  "defects": 141910,
+                  "maximum_core_ratio": 3.959062077823014,
+                  "median_core_ratio": 0.2570984467753231,
+                  "resolved_fraction": 0.7654851666549222
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 141910,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3494507341921007,
+                "maximum_abs_psi": 0.03226641060903747,
+                "mean_norm_density": 0.00011885382205390388,
+                "relative_ipr": 2.8210172840116003,
+                "top_one_percent_norm_fraction": 0.08135151634037305
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5130505032112795,
+                "maximum_abs_psi": 0.04169951853598332,
+                "mean_norm_density": 0.00011904302025577612,
+                "relative_ipr": 3.289321825267906,
+                "top_one_percent_norm_fraction": 0.10028346988119731
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3641218213822968,
+                "maximum_abs_psi": 0.030846464044585756,
+                "mean_norm_density": 8.867400850361116e-05,
+                "relative_ipr": 2.8660233497895495,
+                "top_one_percent_norm_fraction": 0.08327265668383946
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0015214586387152342,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5163688151041667,
+                "mean_centered_projection_rate": 2.160417058794398e-05,
+                "mean_centered_squared_increment_rate": 2.5180754897224324e-05,
+                "mean_counterfactual_event_fraction": 0.5163688151041667,
+                "mean_counterfactual_event_probability": 0.5156763515196383,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5180754897224324e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 204,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 344,
+                "mean_adjacent_overlap": 0.9821555658073169,
+                "mean_translation_registered_overlap": 0.9821555658073169,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 60287,
+                "raw_time_orientation_fraction": 0.702187884386439,
+                "resolved_core": {
+                  "defects": 142146,
+                  "maximum_core_ratio": 4.2293875649572605,
+                  "median_core_ratio": 0.2582165766388858,
+                  "resolved_fraction": 0.7611821648164563
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 142146,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.395109494665518,
+                "maximum_abs_psi": 0.03486983885488408,
+                "mean_norm_density": 0.00011174063279670071,
+                "relative_ipr": 2.946330502105877,
+                "top_one_percent_norm_fraction": 0.08431578511512468
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5141462597925366,
+                "maximum_abs_psi": 0.03995251496823379,
+                "mean_norm_density": 0.00011174063279670071,
+                "relative_ipr": 3.2926388960437283,
+                "top_one_percent_norm_fraction": 0.10210257398693358
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3818500957608664,
+                "maximum_abs_psi": 0.030649661786082624,
+                "mean_norm_density": 8.555064450511736e-05,
+                "relative_ipr": 2.9139212404325225,
+                "top_one_percent_norm_fraction": 0.08506187594387732
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.001492188034347334,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5156656901041666,
+                "mean_centered_projection_rate": -3.4512999293266303e-06,
+                "mean_centered_squared_increment_rate": 2.5181101540910366e-05,
+                "mean_counterfactual_event_fraction": 0.5156656901041666,
+                "mean_counterfactual_event_probability": 0.515420950355438,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5181101540910366e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 216,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 334,
+                "mean_adjacent_overlap": 0.9818048108692532,
+                "mean_translation_registered_overlap": 0.9818048108692532,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 61283,
+                "raw_time_orientation_fraction": 0.6991846772333021,
+                "resolved_core": {
+                  "defects": 142440,
+                  "maximum_core_ratio": 4.2230416088433556,
+                  "median_core_ratio": 0.2556957801595946,
+                  "resolved_fraction": 0.7671159786576804
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 142440,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4085180538209863,
+                "maximum_abs_psi": 0.030982083369567495,
+                "mean_norm_density": 0.0001026918092459825,
+                "relative_ipr": 2.9839231079396584,
+                "top_one_percent_norm_fraction": 0.08428203285811875
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5414548372263797,
+                "maximum_abs_psi": 0.04032259045073439,
+                "mean_norm_density": 0.00010497402950690113,
+                "relative_ipr": 3.376083015208604,
+                "top_one_percent_norm_fraction": 0.10298514113287871
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.391045279671645,
+                "maximum_abs_psi": 0.03095517305683155,
+                "mean_norm_density": 8.686856727501393e-05,
+                "relative_ipr": 2.9410021984161125,
+                "top_one_percent_norm_fraction": 0.08577871557530474
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0014827538348620743,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.5154296875,
+                "mean_centered_projection_rate": -1.8438844607307103e-05,
+                "mean_centered_squared_increment_rate": 2.5214007801066402e-05,
+                "mean_counterfactual_event_fraction": 0.5154296875,
+                "mean_counterfactual_event_probability": 0.5154707130778938,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 2.5214007801066402e-05
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 218,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 326,
+                "mean_adjacent_overlap": 0.9820467578102864,
+                "mean_translation_registered_overlap": 0.9820467578102866,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 61765,
+                "raw_time_orientation_fraction": 0.6974009749405972,
+                "resolved_core": {
+                  "defects": 142350,
+                  "maximum_core_ratio": 3.280463403051713,
+                  "median_core_ratio": 0.26066024601840504,
+                  "resolved_fraction": 0.7628451001053741
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 142350,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "D0_none": {
+          "final_mean_norm_density": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.49947265625,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.4998974609375,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.498994140625,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.5000374348958333,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.5005192057291666,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.49932942708333333,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.4987711588541667,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.4991324869791667,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.4996110026041667,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.5006087239583333,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.50017578125,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.5000358072916666,
+                "mean_counterfactual_event_probability": 0.5,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        },
+        "F0_full": {
+          "final_mean_norm_density": {
+            "maximum": 5.067060105726189,
+            "mean": 4.851470343971383,
+            "median": 4.8299330964411515,
+            "minimum": 4.557041047743681,
+            "standard_deviation": 0.14787021631851174
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 5.67311807907621,
+            "mean": 5.45364600569815,
+            "median": 5.429597947977099,
+            "minimum": 5.1469636484782155,
+            "standard_deviation": 0.15148528296851343
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 36.800000000000004,
+            "mean": 29.241666666666664,
+            "median": 29.35,
+            "minimum": 20.8,
+            "standard_deviation": 4.56019503835952
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 252.0,
+            "mean": 240.16666666666666,
+            "median": 239.0,
+            "minimum": 224.0,
+            "standard_deviation": 9.203095658362447
+          },
+          "maximum_relative_ipr": {
+            "maximum": 2.269162506863306,
+            "mean": 2.124171004744329,
+            "median": 2.1098373966257276,
+            "minimum": 2.0334345853325204,
+            "standard_deviation": 0.06899053111528902
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 1.1572842006847349e-05,
+            "mean": 1.1365181486425028e-05,
+            "median": 1.1339077150938523e-05,
+            "minimum": 1.1234533485556047e-05,
+            "standard_deviation": 1.1376092171617631e-07
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.042896031755674253,
+            "mean": 0.04236874428678877,
+            "median": 0.0423182309500002,
+            "minimum": 0.04158984957855615,
+            "standard_deviation": 0.00039074743053659134
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.12258048947115883,
+                "maximum_abs_psi": 2.4056288966229014,
+                "mean_norm_density": 4.824252784594949,
+                "relative_ipr": 1.0150259763989888,
+                "top_one_percent_norm_fraction": 0.01279819483227396
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.084300708180045,
+                "maximum_abs_psi": 2.4056288966229014,
+                "mean_norm_density": 4.824252784594949,
+                "relative_ipr": 2.1757080257597474,
+                "top_one_percent_norm_fraction": 0.04097212484336913
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3523830332333261,
+                "maximum_abs_psi": 0.9502527935358254,
+                "mean_norm_density": 1.0841166229483419,
+                "relative_ipr": 1.1540395058737902,
+                "top_one_percent_norm_fraction": 0.01755278776279715
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.429525122652481,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.88482421875,
+                "mean_centered_projection_rate": -1.2462866990884427e-06,
+                "mean_centered_squared_increment_rate": 1.1333796906795554e-05,
+                "mean_counterfactual_event_fraction": 0.88482421875,
+                "mean_counterfactual_event_probability": 0.8847284209490108,
+                "mean_pump_projection_rate": 0.042335991055884065,
+                "mean_total_squared_increment_rate": 0.00021978296800756063
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 30.3,
+                "defect_active_frame_fraction": 0.5058236272878536,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 30.400000000000002,
+                "longest_consecutive_defect_span": 30.400000000000002,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 240,
+                "mean_adjacent_overlap": 0.9977657677282438,
+                "mean_translation_registered_overlap": 0.9977657677282438,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1830,
+                "raw_time_orientation_fraction": 0.9191052957298206,
+                "resolved_core": {
+                  "defects": 20792,
+                  "maximum_core_ratio": 1.4157157558644318,
+                  "median_core_ratio": 0.41878959045417463,
+                  "resolved_fraction": 0.5986437091188919
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 20792,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0913950350185557,
+                "maximum_abs_psi": 2.4317904801181776,
+                "mean_norm_density": 5.026339610410014,
+                "relative_ipr": 1.008353052426043,
+                "top_one_percent_norm_fraction": 0.01252359432486881
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0515767126862796,
+                "maximum_abs_psi": 2.4317904801181776,
+                "mean_norm_density": 5.026339610410014,
+                "relative_ipr": 2.105813582664082,
+                "top_one_percent_norm_fraction": 0.03988781335594288
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.32019717576150397,
+                "maximum_abs_psi": 0.9694864744310555,
+                "mean_norm_density": 1.1352437809913336,
+                "relative_ipr": 1.1410178800305741,
+                "top_one_percent_norm_fraction": 0.017800883731159567
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.630291959518919,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8868505859375,
+                "mean_centered_projection_rate": 2.0597536621329644e-05,
+                "mean_centered_squared_increment_rate": 1.1235909382050753e-05,
+                "mean_counterfactual_event_fraction": 0.8868505859375,
+                "mean_counterfactual_event_probability": 0.8861997536510156,
+                "mean_pump_projection_rate": 0.042817892575600223,
+                "mean_total_squared_increment_rate": 0.00022460470656813212
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 20.700000000000003,
+                "defect_active_frame_fraction": 0.34608985024958405,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 20.8,
+                "longest_consecutive_defect_span": 20.8,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 226,
+                "mean_adjacent_overlap": 0.9977733797906289,
+                "mean_translation_registered_overlap": 0.9977733797906289,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1868,
+                "raw_time_orientation_fraction": 0.9062248995983936,
+                "resolved_core": {
+                  "defects": 18052,
+                  "maximum_core_ratio": 1.3447531311958567,
+                  "median_core_ratio": 0.4548622639538959,
+                  "resolved_fraction": 0.5592732107245735
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 18052,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.14858426759143123,
+                "maximum_abs_psi": 2.4193700572817676,
+                "mean_norm_density": 4.7997904999203325,
+                "relative_ipr": 1.0220772845756818,
+                "top_one_percent_norm_fraction": 0.01299941816988617
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0349925740746662,
+                "maximum_abs_psi": 2.4193700572817676,
+                "mean_norm_density": 4.7997904999203325,
+                "relative_ipr": 2.071209628389704,
+                "top_one_percent_norm_fraction": 0.040968692912013334
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.36926253512243584,
+                "maximum_abs_psi": 0.9608057396686618,
+                "mean_norm_density": 1.0799688491779031,
+                "relative_ipr": 1.1637401131010459,
+                "top_one_percent_norm_fraction": 0.01793363357564376
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.4092357241547475,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8848779296875,
+                "mean_centered_projection_rate": 1.8121334007394267e-05,
+                "mean_centered_squared_increment_rate": 1.1307917818803203e-05,
+                "mean_counterfactual_event_fraction": 0.8848779296875,
+                "mean_counterfactual_event_probability": 0.8842067892046303,
+                "mean_pump_projection_rate": 0.04226473136748614,
+                "mean_total_squared_increment_rate": 0.00021923910163784357
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 36.7,
+                "defect_active_frame_fraction": 0.6123128119800333,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 36.800000000000004,
+                "longest_consecutive_defect_span": 36.800000000000004,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977916416280274,
+                "mean_translation_registered_overlap": 0.9977916416280274,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1854,
+                "raw_time_orientation_fraction": 0.9152805702796564,
+                "resolved_core": {
+                  "defects": 20030,
+                  "maximum_core_ratio": 1.7614156620177406,
+                  "median_core_ratio": 0.44420294560903206,
+                  "resolved_fraction": 0.5761357963055417
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 20030,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.10907857000304069,
+                "maximum_abs_psi": 2.5029808594517653,
+                "mean_norm_density": 5.067060105726189,
+                "relative_ipr": 1.0118981344339084,
+                "top_one_percent_norm_fraction": 0.013142667699643408
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0484965047225419,
+                "maximum_abs_psi": 2.5029808594517653,
+                "mean_norm_density": 5.067060105726189,
+                "relative_ipr": 2.0993449204153873,
+                "top_one_percent_norm_fraction": 0.043536023995017784
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3203519766172859,
+                "maximum_abs_psi": 0.9907349545521625,
+                "mean_norm_density": 1.1464457894771602,
+                "relative_ipr": 1.1353044781365491,
+                "top_one_percent_norm_fraction": 0.017887603136364616
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.67311807907621,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8866438802083333,
+                "mean_centered_projection_rate": 2.5453958602733618e-05,
+                "mean_centered_squared_increment_rate": 1.1251649740019467e-05,
+                "mean_counterfactual_event_fraction": 0.8866438802083333,
+                "mean_counterfactual_event_probability": 0.8861251015877336,
+                "mean_pump_projection_rate": 0.042896031755674253,
+                "mean_total_squared_increment_rate": 0.00022562853819767424
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 31.400000000000002,
+                "defect_active_frame_fraction": 0.5241264559068219,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 31.5,
+                "longest_consecutive_defect_span": 31.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977550150044071,
+                "mean_translation_registered_overlap": 0.9977550150044071,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1786,
+                "raw_time_orientation_fraction": 0.9093032703635995,
+                "resolved_core": {
+                  "defects": 17906,
+                  "maximum_core_ratio": 1.6105397549901823,
+                  "median_core_ratio": 0.4375510627032644,
+                  "resolved_fraction": 0.5833240254663241
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 17906,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.09899658321645277,
+                "maximum_abs_psi": 2.435875048604139,
+                "mean_norm_density": 4.96104419478765,
+                "relative_ipr": 1.0098003234885318,
+                "top_one_percent_norm_fraction": 0.01277768229639102
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0703559014945347,
+                "maximum_abs_psi": 2.435875048604139,
+                "mean_norm_density": 4.96104419478765,
+                "relative_ipr": 2.1456617558641784,
+                "top_one_percent_norm_fraction": 0.04188111342395341
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.31970735532292394,
+                "maximum_abs_psi": 0.9632051367965919,
+                "mean_norm_density": 1.119114051641554,
+                "relative_ipr": 1.1342894049561063,
+                "top_one_percent_norm_fraction": 0.017361639906936847
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.568469090822049,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8864599609375,
+                "mean_centered_projection_rate": 7.761561297988309e-06,
+                "mean_centered_squared_increment_rate": 1.1234533485556047e-05,
+                "mean_counterfactual_event_fraction": 0.8864599609375,
+                "mean_counterfactual_event_probability": 0.8860301212413504,
+                "mean_pump_projection_rate": 0.04268424292989349,
+                "mean_total_squared_increment_rate": 0.00022313237633855065
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 31.900000000000002,
+                "defect_active_frame_fraction": 0.5324459234608985,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 32.0,
+                "longest_consecutive_defect_span": 32.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 224,
+                "mean_adjacent_overlap": 0.9977630365188539,
+                "mean_translation_registered_overlap": 0.9977630365188541,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1758,
+                "raw_time_orientation_fraction": 0.9139416487174467,
+                "resolved_core": {
+                  "defects": 18670,
+                  "maximum_core_ratio": 1.6510765622020964,
+                  "median_core_ratio": 0.4496306057089492,
+                  "resolved_fraction": 0.5656668452062131
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 18670,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.10124678522553303,
+                "maximum_abs_psi": 2.435759991702879,
+                "mean_norm_density": 5.016062771683071,
+                "relative_ipr": 1.010250911518505,
+                "top_one_percent_norm_fraction": 0.012590215610609913
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0165798470029397,
+                "maximum_abs_psi": 2.435759991702879,
+                "mean_norm_density": 5.016062771683071,
+                "relative_ipr": 2.0334345853325204,
+                "top_one_percent_norm_fraction": 0.040466623918288445
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3199004046284601,
+                "maximum_abs_psi": 0.9673692906213354,
+                "mean_norm_density": 1.1330563439115755,
+                "relative_ipr": 1.1355402636641474,
+                "top_one_percent_norm_fraction": 0.017442118599980325
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.620882265388,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8858268229166667,
+                "mean_centered_projection_rate": -3.521575202601936e-05,
+                "mean_centered_squared_increment_rate": 1.1306286918180627e-05,
+                "mean_counterfactual_event_fraction": 0.8858268229166667,
+                "mean_counterfactual_event_probability": 0.8864871855233669,
+                "mean_pump_projection_rate": 0.042807903494011944,
+                "mean_total_squared_increment_rate": 0.00022423912400512016
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 28.1,
+                "defect_active_frame_fraction": 0.46921797004991683,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 28.200000000000003,
+                "longest_consecutive_defect_span": 28.200000000000003,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977798357405038,
+                "mean_translation_registered_overlap": 0.9977798357405038,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1662,
+                "raw_time_orientation_fraction": 0.9150306748466258,
+                "resolved_core": {
+                  "defects": 17898,
+                  "maximum_core_ratio": 1.8266240287745383,
+                  "median_core_ratio": 0.42906235134383985,
+                  "resolved_fraction": 0.5944239579841323
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 17898,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.18246808681556992,
+                "maximum_abs_psi": 2.467563320302452,
+                "mean_norm_density": 4.687079881098001,
+                "relative_ipr": 1.0332946027061345,
+                "top_one_percent_norm_fraction": 0.013819090300496824
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0174065899927138,
+                "maximum_abs_psi": 2.467563320302452,
+                "mean_norm_density": 4.687079881098001,
+                "relative_ipr": 2.035116169360602,
+                "top_one_percent_norm_fraction": 0.04120478881254214
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3992963734533096,
+                "maximum_abs_psi": 0.9754150884159778,
+                "mean_norm_density": 1.0507938545491955,
+                "relative_ipr": 1.1842765938670234,
+                "top_one_percent_norm_fraction": 0.018797166389925457
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.286883025820208,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8809423828125,
+                "mean_centered_projection_rate": -8.600625966599368e-06,
+                "mean_centered_squared_increment_rate": 1.155838585741418e-05,
+                "mean_counterfactual_event_fraction": 0.8809423828125,
+                "mean_counterfactual_event_probability": 0.8809789189710099,
+                "mean_pump_projection_rate": 0.041879279520510446,
+                "mean_total_squared_increment_rate": 0.00021595658688430816
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 30.200000000000003,
+                "defect_active_frame_fraction": 0.5041597337770383,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 30.3,
+                "longest_consecutive_defect_span": 30.3,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 244,
+                "mean_adjacent_overlap": 0.9977889650142325,
+                "mean_translation_registered_overlap": 0.9977889650142325,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1884,
+                "raw_time_orientation_fraction": 0.9169458649268206,
+                "resolved_core": {
+                  "defects": 20800,
+                  "maximum_core_ratio": 1.4742197648215334,
+                  "median_core_ratio": 0.46690237429286463,
+                  "resolved_fraction": 0.5429807692307692
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 20800,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.10803839886304596,
+                "maximum_abs_psi": 2.3972900490604006,
+                "mean_norm_density": 4.835613408287354,
+                "relative_ipr": 1.0116722956288906,
+                "top_one_percent_norm_fraction": 0.0126908818879676
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0639648002986575,
+                "maximum_abs_psi": 2.3972900490604006,
+                "mean_norm_density": 4.835613408287354,
+                "relative_ipr": 2.132021096274562,
+                "top_one_percent_norm_fraction": 0.04162823396591164
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.34104129671946354,
+                "maximum_abs_psi": 0.954848162771438,
+                "mean_norm_density": 1.084568812274549,
+                "relative_ipr": 1.1529305936547098,
+                "top_one_percent_norm_fraction": 0.017971735933812218
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.429670773301717,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8836083984375,
+                "mean_centered_projection_rate": -8.294098343105207e-07,
+                "mean_centered_squared_increment_rate": 1.142709468961462e-05,
+                "mean_counterfactual_event_fraction": 0.8836083984375,
+                "mean_counterfactual_event_probability": 0.8836369095828412,
+                "mean_pump_projection_rate": 0.04230047084411633,
+                "mean_total_squared_increment_rate": 0.00021967729465740673
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 24.0,
+                "defect_active_frame_fraction": 0.40099833610648916,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 24.1,
+                "longest_consecutive_defect_span": 24.1,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 234,
+                "mean_adjacent_overlap": 0.9977718611115383,
+                "mean_translation_registered_overlap": 0.9977718611115383,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1878,
+                "raw_time_orientation_fraction": 0.9073416222616933,
+                "resolved_core": {
+                  "defects": 18390,
+                  "maximum_core_ratio": 1.4304232634956708,
+                  "median_core_ratio": 0.4571647708287545,
+                  "resolved_fraction": 0.5513322457857531
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 18390,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.11601683288472699,
+                "maximum_abs_psi": 2.4327282964357213,
+                "mean_norm_density": 4.794512411240023,
+                "relative_ipr": 1.0134599055126026,
+                "top_one_percent_norm_fraction": 0.013010536913882962
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1265711281864565,
+                "maximum_abs_psi": 2.4327282964357213,
+                "mean_norm_density": 4.794512411240023,
+                "relative_ipr": 2.269162506863306,
+                "top_one_percent_norm_fraction": 0.045625084532214616
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.349046859439303,
+                "maximum_abs_psi": 0.9691086848275857,
+                "mean_norm_density": 1.0753756449630234,
+                "relative_ipr": 1.1535815204825632,
+                "top_one_percent_norm_fraction": 0.01819256589791393
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.39586836305225,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8829947916666666,
+                "mean_centered_projection_rate": -2.0851930154714462e-05,
+                "mean_centered_squared_increment_rate": 1.1397176038238987e-05,
+                "mean_counterfactual_event_fraction": 0.8829947916666666,
+                "mean_counterfactual_event_probability": 0.8835351942379391,
+                "mean_pump_projection_rate": 0.04222508847808351,
+                "mean_total_squared_increment_rate": 0.0002188272433609976
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 28.3,
+                "defect_active_frame_fraction": 0.47254575707154745,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 28.400000000000002,
+                "longest_consecutive_defect_span": 28.400000000000002,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977493084681068,
+                "mean_translation_registered_overlap": 0.9977493084681069,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1864,
+                "raw_time_orientation_fraction": 0.9118092354277063,
+                "resolved_core": {
+                  "defects": 19272,
+                  "maximum_core_ratio": 1.5299916753741296,
+                  "median_core_ratio": 0.4433097595942712,
+                  "resolved_fraction": 0.5711394769613948
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 19272,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.08854465932262197,
+                "maximum_abs_psi": 2.3984373243034223,
+                "mean_norm_density": 4.858211141032705,
+                "relative_ipr": 1.0078401566945592,
+                "top_one_percent_norm_fraction": 0.012607683986788945
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0479593781116465,
+                "maximum_abs_psi": 2.3984373243034223,
+                "mean_norm_density": 4.858211141032705,
+                "relative_ipr": 2.098218858172149,
+                "top_one_percent_norm_fraction": 0.04115041787804233
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3170793137199063,
+                "maximum_abs_psi": 0.9468927565363459,
+                "mean_norm_density": 1.0907356153860397,
+                "relative_ipr": 1.1351658794316473,
+                "top_one_percent_norm_fraction": 0.017452098321909686
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.458734540015817,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8846223958333334,
+                "mean_centered_projection_rate": 1.1902804799976757e-06,
+                "mean_centered_squared_increment_rate": 1.1344357395081493e-05,
+                "mean_counterfactual_event_fraction": 0.8846223958333334,
+                "mean_counterfactual_event_probability": 0.8846324085554217,
+                "mean_pump_projection_rate": 0.04240501956136816,
+                "mean_total_squared_increment_rate": 0.00022048200526723563
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 25.3,
+                "defect_active_frame_fraction": 0.4226289517470882,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 25.400000000000002,
+                "longest_consecutive_defect_span": 25.400000000000002,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977646648902292,
+                "mean_translation_registered_overlap": 0.9977646648902292,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1792,
+                "raw_time_orientation_fraction": 0.9130181535773226,
+                "resolved_core": {
+                  "defects": 18810,
+                  "maximum_core_ratio": 1.581790552601258,
+                  "median_core_ratio": 0.41058987626746335,
+                  "resolved_fraction": 0.6059011164274322
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 18810,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.14647287645854226,
+                "maximum_abs_psi": 2.4327702109143727,
+                "mean_norm_density": 4.557041047743681,
+                "relative_ipr": 1.0214543035380397,
+                "top_one_percent_norm_fraction": 0.013770297616276697
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1002271207565901,
+                "maximum_abs_psi": 2.4327702109143727,
+                "mean_norm_density": 4.557041047743681,
+                "relative_ipr": 2.2104997172483363,
+                "top_one_percent_norm_fraction": 0.043602271590065675
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.38923806744894063,
+                "maximum_abs_psi": 0.9639792952656923,
+                "mean_norm_density": 1.0137033942021392,
+                "relative_ipr": 1.1840317070446182,
+                "top_one_percent_norm_fraction": 0.0192009527937394
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.1469636484782155,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8810139973958333,
+                "mean_centered_projection_rate": -6.446370744464696e-06,
+                "mean_centered_squared_increment_rate": 1.1572842006847349e-05,
+                "mean_counterfactual_event_fraction": 0.8810139973958333,
+                "mean_counterfactual_event_probability": 0.8808203847420104,
+                "mean_pump_projection_rate": 0.04158984957855615,
+                "mean_total_squared_increment_rate": 0.00021278956580346833
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 35.4,
+                "defect_active_frame_fraction": 0.5906821963394343,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 35.5,
+                "longest_consecutive_defect_span": 35.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977616491008905,
+                "mean_translation_registered_overlap": 0.9977616491008905,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1866,
+                "raw_time_orientation_fraction": 0.9220876826722338,
+                "resolved_core": {
+                  "defects": 22084,
+                  "maximum_core_ratio": 2.079232990633917,
+                  "median_core_ratio": 0.47390718323414327,
+                  "resolved_fraction": 0.5354102517659844
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 22084,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.1376108383689068,
+                "maximum_abs_psi": 2.4157313945807948,
+                "mean_norm_density": 4.790636271132625,
+                "relative_ipr": 1.0189367428365932,
+                "top_one_percent_norm_fraction": 0.013032761506930526
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.055396233927037,
+                "maximum_abs_psi": 2.4157313945807948,
+                "mean_norm_density": 4.790636271132625,
+                "relative_ipr": 2.113861210587373,
+                "top_one_percent_norm_fraction": 0.042609550470202213
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3566727636479973,
+                "maximum_abs_psi": 0.9653017606726112,
+                "mean_norm_density": 1.075921955848494,
+                "relative_ipr": 1.1571874607885755,
+                "top_one_percent_norm_fraction": 0.01847797766354371
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.394109476097196,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8839990234375,
+                "mean_centered_projection_rate": -3.357473114875919e-06,
+                "mean_centered_squared_increment_rate": 1.141222759849806e-05,
+                "mean_counterfactual_event_fraction": 0.8839990234375,
+                "mean_counterfactual_event_probability": 0.8835706672058453,
+                "mean_pump_projection_rate": 0.04221843028028051,
+                "mean_total_squared_increment_rate": 0.00021878371037052592
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 27.400000000000002,
+                "defect_active_frame_fraction": 0.45757071547420963,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 27.5,
+                "longest_consecutive_defect_span": 27.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977742149817966,
+                "mean_translation_registered_overlap": 0.9977742149817966,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1894,
+                "raw_time_orientation_fraction": 0.9128072921462113,
+                "resolved_core": {
+                  "defects": 19828,
+                  "maximum_core_ratio": 1.8763154901083015,
+                  "median_core_ratio": 0.4581729026901322,
+                  "resolved_fraction": 0.5532580189630825
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 19828,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "P0_pump_only": {
+          "final_mean_norm_density": {
+            "maximum": 6.337215347214793,
+            "mean": 6.337215347214793,
+            "median": 6.337215347214793,
+            "minimum": 6.337215347214793,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 7.005357321299706,
+            "mean": 7.005357321299708,
+            "median": 7.005357321299706,
+            "minimum": 7.005357321299706,
+            "standard_deviation": 1.8553442084620055e-15
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 1.000000000000001,
+            "mean": 1.0000000000000013,
+            "median": 1.000000000000001,
+            "minimum": 1.000000000000001,
+            "standard_deviation": 2.319180260577507e-16
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.04602223919986345,
+            "mean": 0.04602223919986346,
+            "median": 0.04602223919986345,
+            "minimum": 0.04602223919986345,
+            "standard_deviation": 7.247438314304709e-18
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "endogenous",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        }
+      },
+      "paired_factorial_contrasts": {
+        "ever_has_defect": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 1.0,
+            "mean": 1.0,
+            "replicates": 10000,
+            "upper_95_percentile": 1.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        },
+        "final_mean_norm_density": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": -0.7844073848526113,
+            "mean": -0.7428212000156623,
+            "replicates": 10000,
+            "upper_95_percentile": -0.7034057651279835
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -1.5645391548621548,
+            "mean": -1.485847606455496,
+            "replicates": 10000,
+            "upper_95_percentile": -1.4075427126688167
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 5.553549260230312,
+            "mean": 5.594291543987045,
+            "replicates": 10000,
+            "upper_95_percentile": 5.633194438001604
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 4.769755299124587,
+            "mean": 4.851367740759296,
+            "replicates": 10000,
+            "upper_95_percentile": 4.929154554770877
+          }
+        },
+        "longest_consecutive_defect_span": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 43.387499999999996,
+            "mean": 44.62083333333333,
+            "replicates": 10000,
+            "upper_95_percentile": 45.854166666666664
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -33.26687499999999,
+            "mean": -30.758333333333336,
+            "replicates": 10000,
+            "upper_95_percentile": -28.308333333333326
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -16.59166666666667,
+            "mean": -15.379166666666668,
+            "replicates": 10000,
+            "upper_95_percentile": -14.154166666666667
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -33.199999999999996,
+            "mean": -30.758333333333336,
+            "replicates": 10000,
+            "upper_95_percentile": -28.283125
+          }
+        },
+        "maximum_defects_in_frame": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 289.4166666666667,
+            "mean": 293.5,
+            "replicates": 10000,
+            "upper_95_percentile": 297.9166666666667
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -117.33333333333333,
+            "mean": -106.66666666666667,
+            "replicates": 10000,
+            "upper_95_percentile": -96.16666666666667
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -58.666666666666664,
+            "mean": -53.333333333333336,
+            "replicates": 10000,
+            "upper_95_percentile": -48.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -117.33333333333333,
+            "mean": -106.66666666666667,
+            "replicates": 10000,
+            "upper_95_percentile": -96.32916666666672
+          }
+        },
+        "maximum_relative_ipr": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 2.2190926498084753,
+            "mean": 2.2516318480237056,
+            "replicates": 10000,
+            "upper_95_percentile": 2.288444905480724
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -2.3286559225508405,
+            "mean": -2.2549216865587547,
+            "replicates": 10000,
+            "upper_95_percentile": -2.1936272551876503
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -0.16428415257852175,
+            "mean": -0.12746084327937623,
+            "replicates": 10000,
+            "upper_95_percentile": -0.09660366594066809
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -1.331473490453519,
+            "mean": -1.2549216865587536,
+            "replicates": 10000,
+            "upper_95_percentile": -1.1929184678884557
+          }
+        },
+        "stable_transport_candidate": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        }
+      },
+      "scope": "Faithful state-dependent source components; realized budgets may diverge causally after states diverge."
+    },
+    "global_vector_matched_adverse_control": {
+      "decision": {
+        "allowed_interpretation": "The factorial can separate numerical branch seeding, coherent pumping, and their interaction in this bounded reconstruction.",
+        "any_lane_meets_population_particle_screen": false,
+        "current_source_is_budgeted_physical_energy": false,
+        "forbidden_interpretation": "It cannot by itself establish quantum vacuum, physical fuel, a Standard Model particle, or a continuum law.",
+        "next_gate": "If no population-level stable candidate appears, diagnose which frozen screen fails before testing source shutdown. If one does appear, run P2 source schedules without changing its observer.",
+        "pump_effect_on_defect_span": "decreases measured defect-span survival",
+        "randomness_required_for_winding_nucleation_in_this_lane": true,
+        "stable_candidate_counts": {
+          "C0_centered_only": 0,
+          "D0_none": 0,
+          "F0_full": 0,
+          "P0_pump_only": 0
+        },
+        "transport_pass_alone_would_establish_particle": false
+      },
+      "lane_results": {
+        "C0_centered_only": {
+          "final_mean_norm_density": {
+            "maximum": 1.9857456412011683e-05,
+            "mean": 1.633581100137344e-05,
+            "median": 1.6077395294558336e-05,
+            "minimum": 1.439499939272865e-05,
+            "standard_deviation": 1.4675265916183037e-06
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0006739463325916387,
+            "mean": 0.0006572413946607801,
+            "median": 0.0006571277063314266,
+            "minimum": 0.0006419340030543602,
+            "standard_deviation": 9.597117860961325e-06
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 60.0,
+            "mean": 60.0,
+            "median": 60.0,
+            "minimum": 60.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 372.0,
+            "mean": 345.6666666666667,
+            "median": 345.0,
+            "minimum": 332.0,
+            "standard_deviation": 9.975728119548542
+          },
+          "maximum_relative_ipr": {
+            "maximum": 3.683845631963634,
+            "mean": 3.526618465268998,
+            "median": 3.5353945266840388,
+            "minimum": 3.349096474730097,
+            "standard_deviation": 0.09874191798342899
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 1.0974393822792757e-05,
+            "mean": 1.0948837346268125e-05,
+            "median": 1.0950526326025039e-05,
+            "minimum": 1.0915789395459547e-05,
+            "standard_deviation": 1.695687938945548e-08
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4478776751404954,
+                "maximum_abs_psi": 0.015862521710629584,
+                "mean_norm_density": 1.4981137023571603e-05,
+                "relative_ipr": 3.096349762170246,
+                "top_one_percent_norm_fraction": 0.0930345166612311
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6197509950666427,
+                "maximum_abs_psi": 0.033696712363069724,
+                "mean_norm_density": 8.357753580099259e-05,
+                "relative_ipr": 3.623593286019378,
+                "top_one_percent_norm_fraction": 0.11466802336623154
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4289622671776485,
+                "maximum_abs_psi": 0.021094468377564228,
+                "mean_norm_density": 4.031725117004024e-05,
+                "relative_ipr": 3.049449037395805,
+                "top_one_percent_norm_fraction": 0.09073987239103233
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006588628034532676,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965511067708334,
+                "mean_centered_projection_rate": -2.2494857394735273e-06,
+                "mean_centered_squared_increment_rate": 1.0969565706430735e-05,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0969565706430735e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 122,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 338,
+                "mean_adjacent_overlap": 0.985730690108299,
+                "mean_translation_registered_overlap": 0.9857306901082992,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 20264,
+                "raw_time_orientation_fraction": 0.8391924706778612,
+                "resolved_core": {
+                  "defects": 105750,
+                  "maximum_core_ratio": 2.932775649168043,
+                  "median_core_ratio": 0.26373934317424025,
+                  "resolved_fraction": 0.7532955082742316
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 105750,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.385933166295714,
+                "maximum_abs_psi": 0.014343954467010872,
+                "mean_norm_density": 1.9857456412011683e-05,
+                "relative_ipr": 2.9208107414384634,
+                "top_one_percent_norm_fraction": 0.08159964531087904
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6135302166976417,
+                "maximum_abs_psi": 0.038577135436106885,
+                "mean_norm_density": 8.31008091918554e-05,
+                "relative_ipr": 3.6034797601963384,
+                "top_one_percent_norm_fraction": 0.11691903886552103
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3851315388115912,
+                "maximum_abs_psi": 0.02308893770071076,
+                "mean_norm_density": 4.605160709728048e-05,
+                "relative_ipr": 2.9245904099784843,
+                "top_one_percent_norm_fraction": 0.08607974127168432
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.000666792482875684,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8969775390625,
+                "mean_centered_projection_rate": 1.5895816411147426e-05,
+                "mean_centered_squared_increment_rate": 1.0937587697175719e-05,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0937587697175719e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 90,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 346,
+                "mean_adjacent_overlap": 0.9868845365671575,
+                "mean_translation_registered_overlap": 0.9868845365671575,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19078,
+                "raw_time_orientation_fraction": 0.8329509833108594,
+                "resolved_core": {
+                  "defects": 95128,
+                  "maximum_core_ratio": 2.8932253993417523,
+                  "median_core_ratio": 0.25508632863713493,
+                  "resolved_fraction": 0.7689639222941721
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 95128,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.358701452353504,
+                "maximum_abs_psi": 0.012273223462873992,
+                "mean_norm_density": 1.606723043942082e-05,
+                "relative_ipr": 2.8460696366275204,
+                "top_one_percent_norm_fraction": 0.08038693165389629
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.610288529217888,
+                "maximum_abs_psi": 0.03570288213674648,
+                "mean_norm_density": 8.531476389023643e-05,
+                "relative_ipr": 3.5930291473307086,
+                "top_one_percent_norm_fraction": 0.11875933483475828
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4265173295149371,
+                "maximum_abs_psi": 0.02201709227403198,
+                "mean_norm_density": 4.427541760197239e-05,
+                "relative_ipr": 3.0425375481019543,
+                "top_one_percent_norm_fraction": 0.09008579015725972
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.00065796225182481,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8971305338541666,
+                "mean_centered_projection_rate": 1.811648239814804e-05,
+                "mean_centered_squared_increment_rate": 1.0915789395459547e-05,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0915789395459547e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 86,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 338,
+                "mean_adjacent_overlap": 0.9866014683736591,
+                "mean_translation_registered_overlap": 0.9866014683736591,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19151,
+                "raw_time_orientation_fraction": 0.8382639833120793,
+                "resolved_core": {
+                  "defects": 99258,
+                  "maximum_core_ratio": 2.8332667611561013,
+                  "median_core_ratio": 0.26611813012813573,
+                  "resolved_fraction": 0.7510024380906325
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 99258,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.373829752286187,
+                "maximum_abs_psi": 0.012395304433170691,
+                "mean_norm_density": 1.608756014969585e-05,
+                "relative_ipr": 2.8874081882667264,
+                "top_one_percent_norm_fraction": 0.07636667283192111
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5514067788893204,
+                "maximum_abs_psi": 0.037229233968933906,
+                "mean_norm_density": 7.932603628803773e-05,
+                "relative_ipr": 3.4068629935837365,
+                "top_one_percent_norm_fraction": 0.10746225801620592
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3944543985893045,
+                "maximum_abs_psi": 0.021084437699476277,
+                "mean_norm_density": 4.1105238777495864e-05,
+                "relative_ipr": 2.9497587201162347,
+                "top_one_percent_norm_fraction": 0.08685590179281559
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006592087219454886,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966634114583333,
+                "mean_centered_projection_rate": 1.4781515808815785e-05,
+                "mean_centered_squared_increment_rate": 1.0934214611749423e-05,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0934214611749423e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 106,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 340,
+                "mean_adjacent_overlap": 0.9856574089686259,
+                "mean_translation_registered_overlap": 0.985657408968626,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19791,
+                "raw_time_orientation_fraction": 0.8385159558409556,
+                "resolved_core": {
+                  "defects": 102766,
+                  "maximum_core_ratio": 3.402277693114345,
+                  "median_core_ratio": 0.26614037435648685,
+                  "resolved_fraction": 0.7535371620964132
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 102766,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4833225710464162,
+                "maximum_abs_psi": 0.01678917731187763,
+                "mean_norm_density": 1.8155373088901185e-05,
+                "relative_ipr": 3.2002458497757496,
+                "top_one_percent_norm_fraction": 0.09929230223619147
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5913453115772853,
+                "maximum_abs_psi": 0.03337650855900948,
+                "mean_norm_density": 8.144949391254121e-05,
+                "relative_ipr": 3.532379900679007,
+                "top_one_percent_norm_fraction": 0.11539582245619957
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.427506548707036,
+                "maximum_abs_psi": 0.022566924097393297,
+                "mean_norm_density": 4.457108691365243e-05,
+                "relative_ipr": 3.044298061904175,
+                "top_one_percent_norm_fraction": 0.09211870941414882
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006739463325916387,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966031901041667,
+                "mean_centered_projection_rate": -2.6353094815325876e-06,
+                "mean_centered_squared_increment_rate": 1.0943499923189116e-05,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0943499923189116e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 76,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 344,
+                "mean_adjacent_overlap": 0.9863804758979995,
+                "mean_translation_registered_overlap": 0.9863804758979995,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19332,
+                "raw_time_orientation_fraction": 0.83548634158795,
+                "resolved_core": {
+                  "defects": 98178,
+                  "maximum_core_ratio": 3.647131684631492,
+                  "median_core_ratio": 0.2694568913149878,
+                  "resolved_fraction": 0.7489356067550775
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 98178,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3315800113110157,
+                "maximum_abs_psi": 0.01169457087475936,
+                "mean_norm_density": 1.5501120096803267e-05,
+                "relative_ipr": 2.7731053265230448,
+                "top_one_percent_norm_fraction": 0.0755545891648832
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5512833299237203,
+                "maximum_abs_psi": 0.037187568459826244,
+                "mean_norm_density": 8.65373358435984e-05,
+                "relative_ipr": 3.406479969699226,
+                "top_one_percent_norm_fraction": 0.10373298595232724
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.362111245451476,
+                "maximum_abs_psi": 0.021193939914103753,
+                "mean_norm_density": 4.327671960600048e-05,
+                "relative_ipr": 2.859747294541324,
+                "top_one_percent_norm_fraction": 0.08348825501422671
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006562931608380431,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8960774739583334,
+                "mean_centered_projection_rate": -2.500796205995514e-05,
+                "mean_centered_squared_increment_rate": 1.0959340557421884e-05,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0959340557421884e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 94,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9861746955564736,
+                "mean_translation_registered_overlap": 0.9861746955564736,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 18571,
+                "raw_time_orientation_fraction": 0.8344461778471138,
+                "resolved_core": {
+                  "defects": 93604,
+                  "maximum_core_ratio": 5.297909755395434,
+                  "median_core_ratio": 0.2632578512625303,
+                  "resolved_fraction": 0.7582902440066663
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 93604,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4267922505821773,
+                "maximum_abs_psi": 0.012481448280694814,
+                "mean_norm_density": 1.439499939272865e-05,
+                "relative_ipr": 3.0357361263213543,
+                "top_one_percent_norm_fraction": 0.08769417672472503
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5859276340496975,
+                "maximum_abs_psi": 0.03894308194268248,
+                "mean_norm_density": 8.020738234782298e-05,
+                "relative_ipr": 3.515166460442471,
+                "top_one_percent_norm_fraction": 0.11522260784566875
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.419330643850001,
+                "maximum_abs_psi": 0.020710676169917574,
+                "mean_norm_density": 3.8282917786584663e-05,
+                "relative_ipr": 3.020784010514133,
+                "top_one_percent_norm_fraction": 0.09007380328414834
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006492449807704134,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962288411458333,
+                "mean_centered_projection_rate": -1.5136190823872488e-05,
+                "mean_centered_squared_increment_rate": 1.0953786093723916e-05,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0953786093723916e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 104,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 372,
+                "mean_adjacent_overlap": 0.9850511814313506,
+                "mean_translation_registered_overlap": 0.9850511814313506,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 20563,
+                "raw_time_orientation_fraction": 0.8372317605059644,
+                "resolved_core": {
+                  "defects": 105770,
+                  "maximum_core_ratio": 4.425442322599439,
+                  "median_core_ratio": 0.2658144071213996,
+                  "resolved_fraction": 0.7482840124799093
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 105770,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4234642662568675,
+                "maximum_abs_psi": 0.012614045255272334,
+                "mean_norm_density": 1.6092649682735657e-05,
+                "relative_ipr": 3.026250517310202,
+                "top_one_percent_norm_fraction": 0.0866226723854245
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.601902383534788,
+                "maximum_abs_psi": 0.033069624260005745,
+                "mean_norm_density": 7.729489111812369e-05,
+                "relative_ipr": 3.5660912463744356,
+                "top_one_percent_norm_fraction": 0.11279861330864434
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4211274008195778,
+                "maximum_abs_psi": 0.021638380194942488,
+                "mean_norm_density": 4.244562911580076e-05,
+                "relative_ipr": 3.026035922761554,
+                "top_one_percent_norm_fraction": 0.0894549287688043
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006485910109781774,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965201822916666,
+                "mean_centered_projection_rate": 2.283017079827079e-06,
+                "mean_centered_squared_increment_rate": 1.0962570739097948e-05,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0962570739097948e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 104,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 348,
+                "mean_adjacent_overlap": 0.9860299548585562,
+                "mean_translation_registered_overlap": 0.9860299548585562,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 20489,
+                "raw_time_orientation_fraction": 0.8337997550272147,
+                "resolved_core": {
+                  "defects": 102790,
+                  "maximum_core_ratio": 2.894125317490175,
+                  "median_core_ratio": 0.26288453092429853,
+                  "resolved_fraction": 0.7566202938028991
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 102790,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3307913451967586,
+                "maximum_abs_psi": 0.013696356113833666,
+                "mean_norm_density": 1.6871561346549923e-05,
+                "relative_ipr": 2.771005604450598,
+                "top_one_percent_norm_fraction": 0.08525406756274477
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.593238573688533,
+                "maximum_abs_psi": 0.042137558983562855,
+                "mean_norm_density": 8.717436341307588e-05,
+                "relative_ipr": 3.538409152689071,
+                "top_one_percent_norm_fraction": 0.11564637066863459
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4051221350242604,
+                "maximum_abs_psi": 0.02215558589709944,
+                "mean_norm_density": 4.35650811582253e-05,
+                "relative_ipr": 2.9805007469141405,
+                "top_one_percent_norm_fraction": 0.08874480857963682
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006711868027728229,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962060546875,
+                "mean_centered_projection_rate": -1.0567323561328464e-05,
+                "mean_centered_squared_increment_rate": 1.0932910238549593e-05,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0932910238549593e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 98,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 342,
+                "mean_adjacent_overlap": 0.9862162846175924,
+                "mean_translation_registered_overlap": 0.9862162846175924,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19730,
+                "raw_time_orientation_fraction": 0.8354132603690481,
+                "resolved_core": {
+                  "defects": 100146,
+                  "maximum_core_ratio": 3.1419489433178693,
+                  "median_core_ratio": 0.25361615164750984,
+                  "resolved_fraction": 0.7707447127194297
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 100146,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3703656126694055,
+                "maximum_abs_psi": 0.01213627460280432,
+                "mean_norm_density": 1.5568761252048137e-05,
+                "relative_ipr": 2.877901912386795,
+                "top_one_percent_norm_fraction": 0.08008702361895058
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5326762458947736,
+                "maximum_abs_psi": 0.033942727638233104,
+                "mean_norm_density": 7.948083476937384e-05,
+                "relative_ipr": 3.349096474730097,
+                "top_one_percent_norm_fraction": 0.10612242194916072
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3673347274387468,
+                "maximum_abs_psi": 0.019890490929017787,
+                "mean_norm_density": 3.924473546632662e-05,
+                "relative_ipr": 2.8754096870262553,
+                "top_one_percent_norm_fraction": 0.08413260208380446
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.000651516946486998,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8963118489583334,
+                "mean_centered_projection_rate": -4.091936730961282e-06,
+                "mean_centered_squared_increment_rate": 1.0955122811300686e-05,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0955122811300686e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 96,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9852704689057918,
+                "mean_translation_registered_overlap": 0.9852704689057921,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 20063,
+                "raw_time_orientation_fraction": 0.8367600992636589,
+                "resolved_core": {
+                  "defects": 102842,
+                  "maximum_core_ratio": 3.4146788853822425,
+                  "median_core_ratio": 0.27165640313812167,
+                  "resolved_fraction": 0.7455805993660177
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 102842,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3268215516025983,
+                "maximum_abs_psi": 0.013098400951111812,
+                "mean_norm_density": 1.5684574444485158e-05,
+                "relative_ipr": 2.7604554297971267,
+                "top_one_percent_norm_fraction": 0.08195269824356961
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6382446801267612,
+                "maximum_abs_psi": 0.03998665284378349,
+                "mean_norm_density": 7.886494541581326e-05,
+                "relative_ipr": 3.683845631963634,
+                "top_one_percent_norm_fraction": 0.10826405566442328
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4070483608204332,
+                "maximum_abs_psi": 0.02171372601170241,
+                "mean_norm_density": 4.018363493849557e-05,
+                "relative_ipr": 2.986825711029725,
+                "top_one_percent_norm_fraction": 0.08704878603640123
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006419340030543602,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8964420572916667,
+                "mean_centered_projection_rate": -1.3115362787313068e-05,
+                "mean_centered_squared_increment_rate": 1.0974393822792757e-05,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0974393822792757e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 104,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 348,
+                "mean_adjacent_overlap": 0.9855562426838388,
+                "mean_translation_registered_overlap": 0.9855562426838388,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 20439,
+                "raw_time_orientation_fraction": 0.8306557852437964,
+                "resolved_core": {
+                  "defects": 100256,
+                  "maximum_core_ratio": 3.480481754982588,
+                  "median_core_ratio": 0.2632014590988825,
+                  "resolved_fraction": 0.7565532237472071
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 100256,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3528026333501686,
+                "maximum_abs_psi": 0.01261580765491626,
+                "mean_norm_density": 1.6767308687529372e-05,
+                "relative_ipr": 2.83007496479915,
+                "top_one_percent_norm_fraction": 0.08570073638754833
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.5814510929901924,
+                "maximum_abs_psi": 0.036588541640446115,
+                "mean_norm_density": 7.78856939325488e-05,
+                "relative_ipr": 3.5009875595198743,
+                "top_one_percent_norm_fraction": 0.1109768791699351
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3848288022077004,
+                "maximum_abs_psi": 0.020872462606881713,
+                "mean_norm_density": 4.166372964597927e-05,
+                "relative_ipr": 2.924095216804789,
+                "top_one_percent_norm_fraction": 0.0860918115522439
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006513572383376581,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8968522135416667,
+                "mean_centered_projection_rate": -4.7734195005009005e-06,
+                "mean_centered_squared_increment_rate": 1.094726655832616e-05,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.094726655832616e-05
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 90,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 332,
+                "mean_adjacent_overlap": 0.9858299243260469,
+                "mean_translation_registered_overlap": 0.9858299243260469,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 19301,
+                "raw_time_orientation_fraction": 0.8368511364885083,
+                "resolved_core": {
+                  "defects": 99002,
+                  "maximum_core_ratio": 2.6474944000278247,
+                  "median_core_ratio": 0.2662217211724641,
+                  "resolved_fraction": 0.7540453728207511
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 99002,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "D0_none": {
+          "final_mean_norm_density": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        },
+        "F0_full": {
+          "final_mean_norm_density": {
+            "maximum": 6.342036809305307,
+            "mean": 6.336598090593534,
+            "median": 6.336322953556342,
+            "minimum": 6.330410945630424,
+            "standard_deviation": 0.003634228780613925
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 7.01131447336437,
+            "mean": 7.005334419872022,
+            "median": 7.00504111404443,
+            "minimum": 6.998589018385232,
+            "standard_deviation": 0.003953606750082596
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.7000000000000001,
+            "mean": 0.525,
+            "median": 0.5,
+            "minimum": 0.4,
+            "standard_deviation": 0.09653072991634232
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 252.0,
+            "mean": 240.16666666666666,
+            "median": 239.0,
+            "minimum": 224.0,
+            "standard_deviation": 9.203095658362447
+          },
+          "maximum_relative_ipr": {
+            "maximum": 2.269162506863306,
+            "mean": 2.124171004744329,
+            "median": 2.1098373966257276,
+            "minimum": 2.0334345853325204,
+            "standard_deviation": 0.06899053111528902
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 1.0974393822792757e-05,
+            "mean": 1.0948837346268125e-05,
+            "median": 1.0950526326025039e-05,
+            "minimum": 1.0915789395459547e-05,
+            "standard_deviation": 1.695687938945548e-08
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.04602223919986345,
+            "mean": 0.04602223919986346,
+            "median": 0.04602223919986345,
+            "minimum": 0.04602223919986345,
+            "standard_deviation": 7.247438314304709e-18
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0033707277787372964,
+                "maximum_abs_psi": 2.53407137235881,
+                "mean_norm_density": 6.33656797191207,
+                "relative_ipr": 1.0000113618057584,
+                "top_one_percent_norm_fraction": 0.010837583732891789
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.084300708180045,
+                "maximum_abs_psi": 2.53407137235881,
+                "mean_norm_density": 6.33656797191207,
+                "relative_ipr": 2.1757080257597474,
+                "top_one_percent_norm_fraction": 0.04183413478553757
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.06109586152525898,
+                "maximum_abs_psi": 0.9964223914848279,
+                "mean_norm_density": 1.4932370456847668,
+                "relative_ipr": 1.018386644882564,
+                "top_one_percent_norm_fraction": 0.012594826291507006
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.0053173375486235,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965511067708334,
+                "mean_centered_projection_rate": -2.2494857394735273e-06,
+                "mean_centered_squared_increment_rate": 1.0969565706430735e-05,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025705907299083524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.6000000000000001,
+                "defect_active_frame_fraction": 0.011647254575707155,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.7000000000000001,
+                "longest_consecutive_defect_span": 0.7000000000000001,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 240,
+                "mean_adjacent_overlap": 0.9977413997030483,
+                "mean_translation_registered_overlap": 0.9977413997030485,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 256,
+                  "nonzero_slabs": 8,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 572,
+                  "time_orientation_fraction": 0.4041666666666667,
+                  "transported_units": 348
+                },
+                "raw_spacetime_spatial_flux": 1012,
+                "raw_time_orientation_fraction": 0.27714285714285714,
+                "resolved_core": {
+                  "defects": 388,
+                  "maximum_core_ratio": 1.293034080256387,
+                  "median_core_ratio": 0.13943936183966898,
+                  "resolved_fraction": 0.904639175257732
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 388,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.003912656329849477,
+                "maximum_abs_psi": 2.532453488632695,
+                "mean_norm_density": 6.341458279739745,
+                "relative_ipr": 1.0000153088795556,
+                "top_one_percent_norm_fraction": 0.010845686310899046
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0515767126862796,
+                "maximum_abs_psi": 2.532453488632695,
+                "mean_norm_density": 6.341458279739745,
+                "relative_ipr": 2.105813582664082,
+                "top_one_percent_norm_fraction": 0.04078385274621635
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.060945879694128,
+                "maximum_abs_psi": 0.9999481335191928,
+                "mean_norm_density": 1.4951719348704433,
+                "relative_ipr": 1.0172931625381711,
+                "top_one_percent_norm_fraction": 0.012619954903049428
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.010654665977794,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8969775390625,
+                "mean_centered_projection_rate": 1.5895816411147426e-05,
+                "mean_centered_squared_increment_rate": 1.0937587697175719e-05,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025709311298123424
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.4,
+                "defect_active_frame_fraction": 0.008319467554076539,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.5,
+                "longest_consecutive_defect_span": 0.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 226,
+                "mean_adjacent_overlap": 0.9977532340577601,
+                "mean_translation_registered_overlap": 0.9977532340577602,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 262,
+                  "nonzero_slabs": 6,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 564,
+                  "time_orientation_fraction": 0.3882863340563991,
+                  "transported_units": 321
+                },
+                "raw_spacetime_spatial_flux": 968,
+                "raw_time_orientation_fraction": 0.26998491704374056,
+                "resolved_core": {
+                  "defects": 358,
+                  "maximum_core_ratio": 1.0,
+                  "median_core_ratio": 0.14015229161602705,
+                  "resolved_fraction": 0.9217877094972067
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 358,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.003487565493465281,
+                "maximum_abs_psi": 2.531609470595548,
+                "mean_norm_density": 6.342036809305307,
+                "relative_ipr": 1.0000121631130714,
+                "top_one_percent_norm_fraction": 0.010838757325642163
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0349925740746662,
+                "maximum_abs_psi": 2.531609470595548,
+                "mean_norm_density": 6.342036809305307,
+                "relative_ipr": 2.071209628389704,
+                "top_one_percent_norm_fraction": 0.0424036215779554
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.06084585137052838,
+                "maximum_abs_psi": 0.9995271453902048,
+                "mean_norm_density": 1.4955300793705928,
+                "relative_ipr": 1.0174127795281216,
+                "top_one_percent_norm_fraction": 0.012600617810602087
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.01131447336437,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8971305338541666,
+                "mean_centered_projection_rate": 1.811648239814804e-05,
+                "mean_centered_squared_increment_rate": 1.0915789395459547e-05,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.000257068680753717
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.4,
+                "defect_active_frame_fraction": 0.008319467554076539,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.5,
+                "longest_consecutive_defect_span": 0.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977666248816767,
+                "mean_translation_registered_overlap": 0.9977666248816767,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 263,
+                  "nonzero_slabs": 6,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 600,
+                  "time_orientation_fraction": 0.3877551020408163,
+                  "transported_units": 346
+                },
+                "raw_spacetime_spatial_flux": 978,
+                "raw_time_orientation_fraction": 0.27982326951399117,
+                "resolved_core": {
+                  "defects": 380,
+                  "maximum_core_ratio": 1.7250266832007548,
+                  "median_core_ratio": 0.1233395324139161,
+                  "resolved_fraction": 0.9342105263157895
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 380,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0034241918054239,
+                "maximum_abs_psi": 2.5307591679239154,
+                "mean_norm_density": 6.341509290142118,
+                "relative_ipr": 1.0000117250895204,
+                "top_one_percent_norm_fraction": 0.010833080903587878
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0484965047225419,
+                "maximum_abs_psi": 2.5307591679239154,
+                "mean_norm_density": 6.341509290142118,
+                "relative_ipr": 2.0993449204153873,
+                "top_one_percent_norm_fraction": 0.044794268942530135
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.06014627050156318,
+                "maximum_abs_psi": 0.9966957384038353,
+                "mean_norm_density": 1.4945771437022388,
+                "relative_ipr": 1.0175275348156294,
+                "top_one_percent_norm_fraction": 0.012598472383901639
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.010569657510892,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966634114583333,
+                "mean_centered_projection_rate": 1.4781515808815785e-05,
+                "mean_centered_squared_increment_rate": 1.0934214611749423e-05,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.000257181290164198
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.5,
+                "defect_active_frame_fraction": 0.009983361064891847,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.6000000000000001,
+                "longest_consecutive_defect_span": 0.6000000000000001,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977315831262061,
+                "mean_translation_registered_overlap": 0.9977315831262061,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 924,
+                "raw_time_orientation_fraction": 0.26782884310618066,
+                "resolved_core": {
+                  "defects": 338,
+                  "maximum_core_ratio": 1.336051718238425,
+                  "median_core_ratio": 0.1498777203492836,
+                  "resolved_fraction": 0.8994082840236687
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 338,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0037735787682545243,
+                "maximum_abs_psi": 2.5333077498372942,
+                "mean_norm_density": 6.336499865573303,
+                "relative_ipr": 1.0000142398967202,
+                "top_one_percent_norm_fraction": 0.010850714870916843
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0703559014945347,
+                "maximum_abs_psi": 2.5333077498372942,
+                "mean_norm_density": 6.336499865573303,
+                "relative_ipr": 2.1456617558641784,
+                "top_one_percent_norm_fraction": 0.043492924059681526
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.06054041313992697,
+                "maximum_abs_psi": 0.9986270473671401,
+                "mean_norm_density": 1.4934635758082149,
+                "relative_ipr": 1.0172461816142846,
+                "top_one_percent_norm_fraction": 0.012631986849062691
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005308150984365,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966031901041667,
+                "mean_centered_projection_rate": -2.6353094815325876e-06,
+                "mean_centered_squared_increment_rate": 1.0943499923189116e-05,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025701528332562775
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.5,
+                "defect_active_frame_fraction": 0.009983361064891847,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.6000000000000001,
+                "longest_consecutive_defect_span": 0.6000000000000001,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 224,
+                "mean_adjacent_overlap": 0.9977380586405921,
+                "mean_translation_registered_overlap": 0.9977380586405923,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 261,
+                  "nonzero_slabs": 7,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 558,
+                  "time_orientation_fraction": 0.3841059602649007,
+                  "transported_units": 316
+                },
+                "raw_spacetime_spatial_flux": 952,
+                "raw_time_orientation_fraction": 0.2676923076923077,
+                "resolved_core": {
+                  "defects": 348,
+                  "maximum_core_ratio": 1.6510765622020964,
+                  "median_core_ratio": 0.1255759085022285,
+                  "resolved_fraction": 0.9281609195402298
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 348,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0032968551732612122,
+                "maximum_abs_psi": 2.528614993367256,
+                "mean_norm_density": 6.330410945630424,
+                "relative_ipr": 1.0000108692540335,
+                "top_one_percent_norm_fraction": 0.010830603604098734
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0165798470029397,
+                "maximum_abs_psi": 2.528614993367256,
+                "mean_norm_density": 6.330410945630424,
+                "relative_ipr": 2.0334345853325204,
+                "top_one_percent_norm_fraction": 0.041399824029562104
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.061193956056200705,
+                "maximum_abs_psi": 0.99606517320746,
+                "mean_norm_density": 1.490808983409829,
+                "relative_ipr": 1.0175255520767177,
+                "top_one_percent_norm_fraction": 0.01263039765766572
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 6.998589018385232,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8960774739583334,
+                "mean_centered_projection_rate": -2.500796205995514e-05,
+                "mean_centered_squared_increment_rate": 1.0959340557421884e-05,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002569541731451437
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.30000000000000004,
+                "defect_active_frame_fraction": 0.0066555740432612314,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.4,
+                "longest_consecutive_defect_span": 0.4,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977586384283664,
+                "mean_translation_registered_overlap": 0.9977586384283664,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 261,
+                  "nonzero_slabs": 5,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 550,
+                  "time_orientation_fraction": 0.3778280542986425,
+                  "transported_units": 312
+                },
+                "raw_spacetime_spatial_flux": 878,
+                "raw_time_orientation_fraction": 0.2755775577557756,
+                "resolved_core": {
+                  "defects": 334,
+                  "maximum_core_ratio": 1.8266240287745383,
+                  "median_core_ratio": 0.11445519463111134,
+                  "resolved_fraction": 0.9221556886227545
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 334,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0032235859910532886,
+                "maximum_abs_psi": 2.530213218605645,
+                "mean_norm_density": 6.332956737137594,
+                "relative_ipr": 1.0000103915066416,
+                "top_one_percent_norm_fraction": 0.010835939664357174
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0174065899927138,
+                "maximum_abs_psi": 2.530213218605645,
+                "mean_norm_density": 6.332956737137594,
+                "relative_ipr": 2.035116169360602,
+                "top_one_percent_norm_fraction": 0.04252576923002068
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.05850615471761921,
+                "maximum_abs_psi": 0.9955425135804093,
+                "mean_norm_density": 1.4920210584944413,
+                "relative_ipr": 1.0165929864860543,
+                "top_one_percent_norm_fraction": 0.01252496436437569
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.001416386933741,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962288411458333,
+                "mean_centered_projection_rate": -1.5136190823872488e-05,
+                "mean_centered_squared_increment_rate": 1.0953786093723916e-05,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002569582274894925
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.5,
+                "defect_active_frame_fraction": 0.009983361064891847,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.6000000000000001,
+                "longest_consecutive_defect_span": 0.6000000000000001,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 244,
+                "mean_adjacent_overlap": 0.9977675896833932,
+                "mean_translation_registered_overlap": 0.9977675896833932,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 265,
+                  "nonzero_slabs": 7,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 570,
+                  "time_orientation_fraction": 0.38177874186550975,
+                  "transported_units": 330
+                },
+                "raw_spacetime_spatial_flux": 986,
+                "raw_time_orientation_fraction": 0.26307922272047835,
+                "resolved_core": {
+                  "defects": 352,
+                  "maximum_core_ratio": 1.3747558866251497,
+                  "median_core_ratio": 0.13349537421029978,
+                  "resolved_fraction": 0.9204545454545454
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 352,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.00353600558750315,
+                "maximum_abs_psi": 2.530747000513955,
+                "mean_norm_density": 6.3378280466533194,
+                "relative_ipr": 1.000012503335515,
+                "top_one_percent_norm_fraction": 0.010843423973127545
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0639648002986575,
+                "maximum_abs_psi": 2.530747000513955,
+                "mean_norm_density": 6.3378280466533194,
+                "relative_ipr": 2.132021096274562,
+                "top_one_percent_norm_fraction": 0.04318829908703449
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.05980400766103996,
+                "maximum_abs_psi": 0.9977242889340366,
+                "mean_norm_density": 1.493681826076745,
+                "relative_ipr": 1.017144951617668,
+                "top_one_percent_norm_fraction": 0.012589437818566416
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.006666564745526,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965201822916666,
+                "mean_centered_projection_rate": 2.283017079827079e-06,
+                "mean_centered_squared_increment_rate": 1.0962570739097948e-05,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025707450357175
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.4,
+                "defect_active_frame_fraction": 0.008319467554076539,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.5,
+                "longest_consecutive_defect_span": 0.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 234,
+                "mean_adjacent_overlap": 0.9977455059481577,
+                "mean_translation_registered_overlap": 0.9977455059481577,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 250,
+                  "nonzero_slabs": 6,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 558,
+                  "time_orientation_fraction": 0.37861915367483295,
+                  "transported_units": 313
+                },
+                "raw_spacetime_spatial_flux": 946,
+                "raw_time_orientation_fraction": 0.2643856920684292,
+                "resolved_core": {
+                  "defects": 340,
+                  "maximum_core_ratio": 1.0,
+                  "median_core_ratio": 0.12878834319889895,
+                  "resolved_fraction": 0.9411764705882353
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 340,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.003593723675670036,
+                "maximum_abs_psi": 2.5316034380400154,
+                "mean_norm_density": 6.334659864744918,
+                "relative_ipr": 1.000012914849857,
+                "top_one_percent_norm_fraction": 0.010837839218465931
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1265711281864565,
+                "maximum_abs_psi": 2.5316034380400154,
+                "mean_norm_density": 6.334659864744918,
+                "relative_ipr": 2.269162506863306,
+                "top_one_percent_norm_fraction": 0.045625084532214616
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0609242737384818,
+                "maximum_abs_psi": 0.9962906407916178,
+                "mean_norm_density": 1.4918131427597163,
+                "relative_ipr": 1.0177983725358877,
+                "top_one_percent_norm_fraction": 0.012617251552389241
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.003086529782449,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962060546875,
+                "mean_centered_projection_rate": -1.0567323561328464e-05,
+                "mean_centered_squared_increment_rate": 1.0932910238549593e-05,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002570794250332815
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.30000000000000004,
+                "defect_active_frame_fraction": 0.0066555740432612314,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.4,
+                "longest_consecutive_defect_span": 0.4,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977226687902274,
+                "mean_translation_registered_overlap": 0.9977226687902274,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 262,
+                  "nonzero_slabs": 5,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 554,
+                  "time_orientation_fraction": 0.3704545454545455,
+                  "transported_units": 305
+                },
+                "raw_spacetime_spatial_flux": 962,
+                "raw_time_orientation_fraction": 0.2531055900621118,
+                "resolved_core": {
+                  "defects": 326,
+                  "maximum_core_ratio": 1.1936414827497854,
+                  "median_core_ratio": 0.1447145964046467,
+                  "resolved_fraction": 0.9049079754601227
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 326,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.003407094880628456,
+                "maximum_abs_psi": 2.529323568324449,
+                "mean_norm_density": 6.336146041539383,
+                "relative_ipr": 1.0000116082955255,
+                "top_one_percent_norm_fraction": 0.010830394129041573
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0479593781116465,
+                "maximum_abs_psi": 2.529323568324449,
+                "mean_norm_density": 6.336146041539383,
+                "relative_ipr": 2.098218858172149,
+                "top_one_percent_norm_fraction": 0.04254988684180649
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.05928452205357052,
+                "maximum_abs_psi": 0.9965967208502491,
+                "mean_norm_density": 1.4927440649618349,
+                "relative_ipr": 1.0170383512459606,
+                "top_one_percent_norm_fraction": 0.012517732648994286
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.0047740771044955,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8963118489583334,
+                "mean_centered_projection_rate": -4.091936730961282e-06,
+                "mean_centered_squared_increment_rate": 1.0955122811300686e-05,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025706928829578564
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.4,
+                "defect_active_frame_fraction": 0.008319467554076539,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.5,
+                "longest_consecutive_defect_span": 0.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977449895268118,
+                "mean_translation_registered_overlap": 0.9977449895268118,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 269,
+                  "nonzero_slabs": 6,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 568,
+                  "time_orientation_fraction": 0.3758241758241758,
+                  "transported_units": 322
+                },
+                "raw_spacetime_spatial_flux": 970,
+                "raw_time_orientation_fraction": 0.2606707317073171,
+                "resolved_core": {
+                  "defects": 342,
+                  "maximum_core_ratio": 1.581790552601258,
+                  "median_core_ratio": 0.10935538627057852,
+                  "resolved_fraction": 0.9181286549707602
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 342,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.003422255157296777,
+                "maximum_abs_psi": 2.5286341474505396,
+                "mean_norm_density": 6.333419785163757,
+                "relative_ipr": 1.0000117118303615,
+                "top_one_percent_norm_fraction": 0.01083285151758262
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1002271207565901,
+                "maximum_abs_psi": 2.5286341474505396,
+                "mean_norm_density": 6.333419785163757,
+                "relative_ipr": 2.2104997172483363,
+                "top_one_percent_norm_fraction": 0.04509735867832462
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.06024407709643212,
+                "maximum_abs_psi": 0.9964334747745327,
+                "mean_norm_density": 1.492298752891165,
+                "relative_ipr": 1.0182714940728652,
+                "top_one_percent_norm_fraction": 0.012606307136046034
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.001933251575861,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8964420572916667,
+                "mean_centered_projection_rate": -1.3115362787313068e-05,
+                "mean_centered_squared_increment_rate": 1.0974393822792757e-05,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025696382752384304
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.30000000000000004,
+                "defect_active_frame_fraction": 0.0066555740432612314,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.4,
+                "longest_consecutive_defect_span": 0.4,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977381602128464,
+                "mean_translation_registered_overlap": 0.9977381602128464,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 257,
+                  "nonzero_slabs": 5,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 578,
+                  "time_orientation_fraction": 0.4004149377593361,
+                  "transported_units": 356
+                },
+                "raw_spacetime_spatial_flux": 1030,
+                "raw_time_orientation_fraction": 0.2725988700564972,
+                "resolved_core": {
+                  "defects": 386,
+                  "maximum_core_ratio": 1.0,
+                  "median_core_ratio": 0.13597991851891653,
+                  "resolved_fraction": 0.9145077720207254
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 386,
+                "v3_transport_rule": true
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0035917183054822747,
+                "maximum_abs_psi": 2.5317751483202584,
+                "mean_norm_density": 6.335683449580477,
+                "relative_ipr": 1.000012900440386,
+                "top_one_percent_norm_fraction": 0.010847960241783331
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.055396233927037,
+                "maximum_abs_psi": 2.5317751483202584,
+                "mean_norm_density": 6.335683449580477,
+                "relative_ipr": 2.113861210587373,
+                "top_one_percent_norm_fraction": 0.042609550470202213
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0597487736521932,
+                "maximum_abs_psi": 0.9982154750703525,
+                "mean_norm_density": 1.4930717448819457,
+                "relative_ipr": 1.017046549590849,
+                "top_one_percent_norm_fraction": 0.012560368548970033
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.004382924550912,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8968522135416667,
+                "mean_centered_projection_rate": -4.7734195005009005e-06,
+                "mean_centered_squared_increment_rate": 1.094726655832616e-05,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025697852087822645
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.5,
+                "defect_active_frame_fraction": 0.009983361064891847,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 0.6000000000000001,
+                "longest_consecutive_defect_span": 0.6000000000000001,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977476561281449,
+                "mean_translation_registered_overlap": 0.997747656128145,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": true,
+                  "maximum_slab_flux": 268,
+                  "nonzero_slabs": 7,
+                  "not_evaluated_reason": null,
+                  "persistent_point_ids_assigned": false,
+                  "slab_count": 600,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": 570,
+                  "time_orientation_fraction": 0.3804347826086957,
+                  "transported_units": 317
+                },
+                "raw_spacetime_spatial_flux": 932,
+                "raw_time_orientation_fraction": 0.27301092043681746,
+                "resolved_core": {
+                  "defects": 350,
+                  "maximum_core_ratio": 1.5117341144792509,
+                  "median_core_ratio": 0.11358603028457671,
+                  "resolved_fraction": 0.9257142857142857
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 350,
+                "v3_transport_rule": true
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 11,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "P0_pump_only": {
+          "final_mean_norm_density": {
+            "maximum": 6.337215347214793,
+            "mean": 6.337215347214793,
+            "median": 6.337215347214793,
+            "minimum": 6.337215347214793,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 7.005357321299706,
+            "mean": 7.005357321299708,
+            "median": 7.005357321299706,
+            "minimum": 7.005357321299706,
+            "standard_deviation": 1.8553442084620055e-15
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 1.000000000000001,
+            "mean": 1.0000000000000013,
+            "median": 1.000000000000001,
+            "minimum": 1.000000000000001,
+            "standard_deviation": 2.319180260577507e-16
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.04602223919986345,
+            "mean": 0.04602223919986346,
+            "median": 0.04602223919986345,
+            "minimum": 0.04602223919986345,
+            "standard_deviation": 7.247438314304709e-18
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "global_vector_matched_adverse_control",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        }
+      },
+      "paired_factorial_contrasts": {
+        "ever_has_defect": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 1.0,
+            "mean": 1.0,
+            "replicates": 10000,
+            "upper_95_percentile": 1.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        },
+        "final_mean_norm_density": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": -0.0012769081228553773,
+            "mean": -0.00030046040512872924,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0006856313978762654
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -0.0025343159703995707,
+            "mean": -0.0006335924322600765,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0013703085696821235
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 6.335917834551913,
+            "mean": 6.336898550998664,
+            "replicates": 10000,
+            "upper_95_percentile": 6.337888805766767
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 6.334700188449509,
+            "mean": 6.336581754782533,
+            "replicates": 10000,
+            "upper_95_percentile": 6.338572296175055
+          }
+        },
+        "longest_consecutive_defect_span": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 30.237499999999997,
+            "mean": 30.2625,
+            "replicates": 10000,
+            "upper_95_percentile": 30.287500000000005
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -59.525000000000006,
+            "mean": -59.475,
+            "replicates": 10000,
+            "upper_95_percentile": -59.42499999999999
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -29.762500000000003,
+            "mean": -29.7375,
+            "replicates": 10000,
+            "upper_95_percentile": -29.712499999999995
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -59.525000000000006,
+            "mean": -59.475,
+            "replicates": 10000,
+            "upper_95_percentile": -59.42499999999999
+          }
+        },
+        "maximum_defects_in_frame": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 289.4166666666667,
+            "mean": 292.9166666666667,
+            "replicates": 10000,
+            "upper_95_percentile": 296.9166666666667
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -112.66666666666667,
+            "mean": -105.5,
+            "replicates": 10000,
+            "upper_95_percentile": -98.33333333333333
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -56.333333333333336,
+            "mean": -52.75,
+            "replicates": 10000,
+            "upper_95_percentile": -49.166666666666664
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -112.66666666666667,
+            "mean": -105.5,
+            "replicates": 10000,
+            "upper_95_percentile": -98.33333333333333
+          }
+        },
+        "maximum_relative_ipr": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 2.286106764089898,
+            "mean": 2.3253947350066624,
+            "replicates": 10000,
+            "upper_95_percentile": 2.3637736930508866
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -2.4490270674281946,
+            "mean": -2.40244746052467,
+            "replicates": 10000,
+            "upper_95_percentile": -2.352209371916884
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -0.2246372641307541,
+            "mean": -0.20122373026233395,
+            "replicates": 10000,
+            "upper_95_percentile": -0.17710364572318296
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -1.4501971198739385,
+            "mean": -1.4024474605246693,
+            "replicates": 10000,
+            "upper_95_percentile": -1.3518021767374335
+          }
+        },
+        "stable_transport_candidate": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        }
+      },
+      "permitted_for_current_source_inference": false,
+      "scope": "The complete complex source vector is shared across branches. This creates an external global phase reference absent from the present source and is retained only to quantify that confound."
+    },
+    "open_loop_input_matched": {
+      "decision": {
+        "allowed_interpretation": "The factorial can separate numerical branch seeding, coherent pumping, and their interaction in this bounded reconstruction.",
+        "any_lane_meets_population_particle_screen": false,
+        "current_source_is_budgeted_physical_energy": false,
+        "forbidden_interpretation": "It cannot by itself establish quantum vacuum, physical fuel, a Standard Model particle, or a continuum law.",
+        "next_gate": "If no population-level stable candidate appears, diagnose which frozen screen fails before testing source shutdown. If one does appear, run P2 source schedules without changing its observer.",
+        "pump_effect_on_defect_span": "decreases measured defect-span survival",
+        "randomness_required_for_winding_nucleation_in_this_lane": true,
+        "stable_candidate_counts": {
+          "C0_centered_only": 0,
+          "D0_none": 0,
+          "F0_full": 0,
+          "P0_pump_only": 0
+        },
+        "transport_pass_alone_would_establish_particle": false
+      },
+      "lane_results": {
+        "C0_centered_only": {
+          "final_mean_norm_density": {
+            "maximum": 1.7549752829058256e-05,
+            "mean": 1.5056389047294895e-05,
+            "median": 1.5072590755207025e-05,
+            "minimum": 1.2758019788313443e-05,
+            "standard_deviation": 1.4959594053807159e-06
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0006770774740278008,
+            "mean": 0.0006537938445079968,
+            "median": 0.0006493829998884149,
+            "minimum": 0.0006309965304255389,
+            "standard_deviation": 1.4354362003643894e-05
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 60.0,
+            "mean": 60.0,
+            "median": 60.0,
+            "minimum": 60.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 374.0,
+            "mean": 347.3333333333333,
+            "median": 349.0,
+            "minimum": 326.0,
+            "standard_deviation": 13.812598553055786
+          },
+          "maximum_relative_ipr": {
+            "maximum": 3.8002524201617067,
+            "mean": 3.292531932382547,
+            "median": 3.1985288310722546,
+            "minimum": 3.057730673667677,
+            "standard_deviation": 0.26089808410731535
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 1.0974393822792757e-05,
+            "mean": 1.0948837346268125e-05,
+            "median": 1.0950526326025037e-05,
+            "minimum": 1.0915789395459547e-05,
+            "standard_deviation": 1.695687938945536e-08
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.374114654271157,
+                "maximum_abs_psi": 0.013525877840290558,
+                "mean_norm_density": 1.4614392111276641e-05,
+                "relative_ipr": 2.8881910830827415,
+                "top_one_percent_norm_fraction": 0.0811315412450411
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4462459456654326,
+                "maximum_abs_psi": 0.03356180056516434,
+                "mean_norm_density": 7.916091401934843e-05,
+                "relative_ipr": 3.0916273353537016,
+                "top_one_percent_norm_fraction": 0.09800946773456544
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.2960274774022893,
+                "maximum_abs_psi": 0.01913967490001944,
+                "mean_norm_density": 4.0384702571944874e-05,
+                "relative_ipr": 2.6845666583010397,
+                "top_one_percent_norm_fraction": 0.07757615648613146
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006504165672958583,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965511067708334,
+                "mean_centered_projection_rate": -2.249485739473518e-06,
+                "mean_centered_squared_increment_rate": 1.0969565706430733e-05,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0969565706430733e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 154,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 332,
+                "mean_adjacent_overlap": 0.9857578239283998,
+                "mean_translation_registered_overlap": 0.9857578239283998,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 40233,
+                "raw_time_orientation_fraction": 0.7510780862345248,
+                "resolved_core": {
+                  "defects": 121396,
+                  "maximum_core_ratio": 3.1277857306482355,
+                  "median_core_ratio": 0.289967988304075,
+                  "resolved_fraction": 0.7511285380078421
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 121396,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3615837059142244,
+                "maximum_abs_psi": 0.013118005746084623,
+                "mean_norm_density": 1.3912774434885555e-05,
+                "relative_ipr": 2.8539101882111133,
+                "top_one_percent_norm_fraction": 0.08868499261310987
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4694840356524865,
+                "maximum_abs_psi": 0.03122454743747358,
+                "mean_norm_density": 8.683658945069319e-05,
+                "relative_ipr": 3.1593833310375183,
+                "top_one_percent_norm_fraction": 0.09887347855188024
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3459128619279415,
+                "maximum_abs_psi": 0.02073373133481039,
+                "mean_norm_density": 4.38997965371666e-05,
+                "relative_ipr": 2.8159167509129257,
+                "top_one_percent_norm_fraction": 0.08243291050233646
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006770774740278008,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8969775390625,
+                "mean_centered_projection_rate": 1.5895816411147433e-05,
+                "mean_centered_squared_increment_rate": 1.0937587697175715e-05,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0937587697175715e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 204,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9862849701468417,
+                "mean_translation_registered_overlap": 0.9862849701468421,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 39516,
+                "raw_time_orientation_fraction": 0.7545925401497932,
+                "resolved_core": {
+                  "defects": 121506,
+                  "maximum_core_ratio": 2.7079802084254267,
+                  "median_core_ratio": 0.28851079056552,
+                  "resolved_fraction": 0.751436143071124
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 121506,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3735101484963435,
+                "maximum_abs_psi": 0.011842149222357358,
+                "mean_norm_density": 1.2758019788313443e-05,
+                "relative_ipr": 2.8865301280224474,
+                "top_one_percent_norm_fraction": 0.08474920647444006
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4378416457300587,
+                "maximum_abs_psi": 0.03591079281330682,
+                "mean_norm_density": 8.892220745214968e-05,
+                "relative_ipr": 3.067388598195723,
+                "top_one_percent_norm_fraction": 0.09355677825308414
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3085908060615823,
+                "maximum_abs_psi": 0.02032887994105334,
+                "mean_norm_density": 4.2938260176369565e-05,
+                "relative_ipr": 2.7161094610014866,
+                "top_one_percent_norm_fraction": 0.08031438864027929
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006738823335704596,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8971305338541666,
+                "mean_centered_projection_rate": 1.811648239814804e-05,
+                "mean_centered_squared_increment_rate": 1.0915789395459547e-05,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0915789395459547e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 202,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 356,
+                "mean_adjacent_overlap": 0.9860429666083865,
+                "mean_translation_registered_overlap": 0.9860429666083868,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 39186,
+                "raw_time_orientation_fraction": 0.75700714356583,
+                "resolved_core": {
+                  "defects": 122078,
+                  "maximum_core_ratio": 3.1215442059450327,
+                  "median_core_ratio": 0.28558452070479035,
+                  "resolved_fraction": 0.7544193056898049
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 122078,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3839372362504885,
+                "maximum_abs_psi": 0.014062303418474665,
+                "mean_norm_density": 1.569000540444475e-05,
+                "relative_ipr": 2.915282273880641,
+                "top_one_percent_norm_fraction": 0.08681144310156215
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4450878256738307,
+                "maximum_abs_psi": 0.03455885023786485,
+                "mean_norm_density": 8.394885624576326e-05,
+                "relative_ipr": 3.088278823910719,
+                "top_one_percent_norm_fraction": 0.09872297852149446
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3442323332677695,
+                "maximum_abs_psi": 0.020354627096076734,
+                "mean_norm_density": 4.332441845426931e-05,
+                "relative_ipr": 2.8107478432999256,
+                "top_one_percent_norm_fraction": 0.08236754349384155
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006694799083579022,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966634114583333,
+                "mean_centered_projection_rate": 1.4781515808815795e-05,
+                "mean_centered_squared_increment_rate": 1.0934214611749423e-05,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0934214611749423e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 172,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 334,
+                "mean_adjacent_overlap": 0.9860888342902864,
+                "mean_translation_registered_overlap": 0.9860888342902865,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 38906,
+                "raw_time_orientation_fraction": 0.7615381786532969,
+                "resolved_core": {
+                  "defects": 124248,
+                  "maximum_core_ratio": 3.6217156314013925,
+                  "median_core_ratio": 0.2917663267770766,
+                  "resolved_fraction": 0.7437866203077715
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 124248,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.5471944088740595,
+                "maximum_abs_psi": 0.013776066888916581,
+                "mean_norm_density": 1.5585421734484663e-05,
+                "relative_ipr": 3.3938105388511497,
+                "top_one_percent_norm_fraction": 0.10683741589303124
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6177571439293015,
+                "maximum_abs_psi": 0.03450178283116679,
+                "mean_norm_density": 8.537817735918755e-05,
+                "relative_ipr": 3.6171381767342905,
+                "top_one_percent_norm_fraction": 0.11530964199464677
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.4396437771443935,
+                "maximum_abs_psi": 0.022327700805834058,
+                "mean_norm_density": 4.428993783058646e-05,
+                "relative_ipr": 3.0847750934460967,
+                "top_one_percent_norm_fraction": 0.09316889775191807
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006630259552482044,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966031901041667,
+                "mean_centered_projection_rate": -2.6353094815325855e-06,
+                "mean_centered_squared_increment_rate": 1.0943499923189116e-05,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0943499923189116e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 202,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 352,
+                "mean_adjacent_overlap": 0.986301698889846,
+                "mean_translation_registered_overlap": 0.986301698889846,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 39662,
+                "raw_time_orientation_fraction": 0.7518364180150418,
+                "resolved_core": {
+                  "defects": 120160,
+                  "maximum_core_ratio": 3.617546930693649,
+                  "median_core_ratio": 0.28789828411191654,
+                  "resolved_fraction": 0.7493425432756325
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 120160,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.2531778614291744,
+                "maximum_abs_psi": 0.012134916406822406,
+                "mean_norm_density": 1.5078004777475067e-05,
+                "relative_ipr": 2.570454752376199,
+                "top_one_percent_norm_fraction": 0.06991198790400846
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4992567169836983,
+                "maximum_abs_psi": 0.032473200655898336,
+                "mean_norm_density": 7.617835199178377e-05,
+                "relative_ipr": 3.2477707034207377,
+                "top_one_percent_norm_fraction": 0.10136210924015922
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3607984434529456,
+                "maximum_abs_psi": 0.02057538433818642,
+                "mean_norm_density": 4.0299489338996584e-05,
+                "relative_ipr": 2.8579314302794407,
+                "top_one_percent_norm_fraction": 0.08571896185412
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006309965304255389,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8960774739583334,
+                "mean_centered_projection_rate": -2.5007962059955138e-05,
+                "mean_centered_squared_increment_rate": 1.0959340557421882e-05,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0959340557421882e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 158,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 374,
+                "mean_adjacent_overlap": 0.9854800638146703,
+                "mean_translation_registered_overlap": 0.9854800638146703,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 40793,
+                "raw_time_orientation_fraction": 0.7495102945601247,
+                "resolved_core": {
+                  "defects": 122060,
+                  "maximum_core_ratio": 3.114613742930313,
+                  "median_core_ratio": 0.28930696263449257,
+                  "resolved_fraction": 0.7470260527609373
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 122060,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4990746036471903,
+                "maximum_abs_psi": 0.013447972631233356,
+                "mean_norm_density": 1.3120930905133784e-05,
+                "relative_ipr": 3.24722466729998,
+                "top_one_percent_norm_fraction": 0.1019478807858817
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6334123489796388,
+                "maximum_abs_psi": 0.03288573273770058,
+                "mean_norm_density": 8.266315031018944e-05,
+                "relative_ipr": 3.6680359017991817,
+                "top_one_percent_norm_fraction": 0.11911130401356498
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3582089970324827,
+                "maximum_abs_psi": 0.019648577619622142,
+                "mean_norm_density": 4.0364064098074527e-05,
+                "relative_ipr": 2.8574300168850173,
+                "top_one_percent_norm_fraction": 0.08352933509113333
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006443799454975505,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962288411458333,
+                "mean_centered_projection_rate": -1.5136190823872485e-05,
+                "mean_centered_squared_increment_rate": 1.0953786093723914e-05,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0953786093723914e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 204,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 364,
+                "mean_adjacent_overlap": 0.9855890995860068,
+                "mean_translation_registered_overlap": 0.9855890995860069,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 40626,
+                "raw_time_orientation_fraction": 0.7583511777301927,
+                "resolved_core": {
+                  "defects": 127494,
+                  "maximum_core_ratio": 3.190131013136841,
+                  "median_core_ratio": 0.29380225873099547,
+                  "resolved_fraction": 0.7444193452240889
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 127494,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.410373328498839,
+                "maximum_abs_psi": 0.01407282407449283,
+                "mean_norm_density": 1.7549752829058256e-05,
+                "relative_ipr": 2.989152925740894,
+                "top_one_percent_norm_fraction": 0.09566667500652108
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4958858014925438,
+                "maximum_abs_psi": 0.03536937524289354,
+                "mean_norm_density": 8.075714983887434e-05,
+                "relative_ipr": 3.237674331106991,
+                "top_one_percent_norm_fraction": 0.10145427235981666
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3501872517305233,
+                "maximum_abs_psi": 0.020913676442471846,
+                "mean_norm_density": 4.227435194560644e-05,
+                "relative_ipr": 2.8293136872756346,
+                "top_one_percent_norm_fraction": 0.08443527090210591
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.000645994707854084,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965201822916666,
+                "mean_centered_projection_rate": 2.283017079827074e-06,
+                "mean_centered_squared_increment_rate": 1.0962570739097948e-05,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0962570739097948e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 146,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 350,
+                "mean_adjacent_overlap": 0.9859688622683981,
+                "mean_translation_registered_overlap": 0.9859688622683984,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 38836,
+                "raw_time_orientation_fraction": 0.7505876308522252,
+                "resolved_core": {
+                  "defects": 116874,
+                  "maximum_core_ratio": 3.3411272203455473,
+                  "median_core_ratio": 0.2867958426373046,
+                  "resolved_fraction": 0.7502951896914626
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 116874,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.4681629855300296,
+                "maximum_abs_psi": 0.0133225656467329,
+                "mean_norm_density": 1.7308381356004593e-05,
+                "relative_ipr": 3.15550255208045,
+                "top_one_percent_norm_fraction": 0.08933977594602438
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.6733954763180479,
+                "maximum_abs_psi": 0.03340456484274345,
+                "mean_norm_density": 8.004552071556822e-05,
+                "relative_ipr": 3.8002524201617067,
+                "top_one_percent_norm_fraction": 0.12425487048164865
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3898054863797367,
+                "maximum_abs_psi": 0.020303452511616738,
+                "mean_norm_density": 3.9059741852527806e-05,
+                "relative_ipr": 2.9463752532730956,
+                "top_one_percent_norm_fraction": 0.08890762762804064
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.000643071078154468,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962060546875,
+                "mean_centered_projection_rate": -1.056732356132844e-05,
+                "mean_centered_squared_increment_rate": 1.0932910238549593e-05,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0932910238549593e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 202,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 336,
+                "mean_adjacent_overlap": 0.9851703626665101,
+                "mean_translation_registered_overlap": 0.9851703626665104,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 41475,
+                "raw_time_orientation_fraction": 0.7562745708728279,
+                "resolved_core": {
+                  "defects": 128696,
+                  "maximum_core_ratio": 3.273448871056856,
+                  "median_core_ratio": 0.2967224210227144,
+                  "resolved_fraction": 0.7376375334120718
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 128696,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.3615898831365285,
+                "maximum_abs_psi": 0.01291047021937191,
+                "mean_norm_density": 1.5067176732938983e-05,
+                "relative_ipr": 2.8539270098597456,
+                "top_one_percent_norm_fraction": 0.0818595568876633
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.534818563660471,
+                "maximum_abs_psi": 0.034497659644850485,
+                "mean_norm_density": 7.669746032026926e-05,
+                "relative_ipr": 3.355668023356791,
+                "top_one_percent_norm_fraction": 0.10841875970646388
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3193439974110595,
+                "maximum_abs_psi": 0.019568824823521798,
+                "mean_norm_density": 4.001609990809367e-05,
+                "relative_ipr": 2.7489310687397905,
+                "top_one_percent_norm_fraction": 0.08145679065732699
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006483494324809716,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8963118489583334,
+                "mean_centered_projection_rate": -4.091936730961277e-06,
+                "mean_centered_squared_increment_rate": 1.0955122811300686e-05,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0955122811300686e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 194,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 346,
+                "mean_adjacent_overlap": 0.9854923157655242,
+                "mean_translation_registered_overlap": 0.9854923157655242,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 40277,
+                "raw_time_orientation_fraction": 0.7565770785864947,
+                "resolved_core": {
+                  "defects": 125184,
+                  "maximum_core_ratio": 3.1039306997072695,
+                  "median_core_ratio": 0.2906694549176925,
+                  "resolved_fraction": 0.7488337167689162
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 125184,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.422645084298752,
+                "maximum_abs_psi": 0.011173806186291716,
+                "mean_norm_density": 1.396936958851588e-05,
+                "relative_ipr": 3.023919035879403,
+                "top_one_percent_norm_fraction": 0.08264406157253025
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4558278984294553,
+                "maximum_abs_psi": 0.035402224527253404,
+                "mean_norm_density": 8.354040842002941e-05,
+                "relative_ipr": 3.119434869845524,
+                "top_one_percent_norm_fraction": 0.0972165746204027
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.309866300135806,
+                "maximum_abs_psi": 0.019143843873688206,
+                "mean_norm_density": 4.091781845630484e-05,
+                "relative_ipr": 2.722737582641878,
+                "top_one_percent_norm_fraction": 0.07830694119590415
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006414819122346995,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8964420572916667,
+                "mean_centered_projection_rate": -1.3115362787313077e-05,
+                "mean_centered_squared_increment_rate": 1.0974393822792757e-05,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.0974393822792757e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 186,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 348,
+                "mean_adjacent_overlap": 0.98560463777718,
+                "mean_translation_registered_overlap": 0.98560463777718,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 40697,
+                "raw_time_orientation_fraction": 0.7518642042302041,
+                "resolved_core": {
+                  "defects": 123314,
+                  "maximum_core_ratio": 2.8658296174921625,
+                  "median_core_ratio": 0.2873644697552054,
+                  "resolved_fraction": 0.7519827432408324
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 123314,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 1.320044060061881,
+                "maximum_abs_psi": 0.011686238758885912,
+                "mean_norm_density": 1.6022438905007163e-05,
+                "relative_ipr": 2.742516320504655,
+                "top_one_percent_norm_fraction": 0.07334891033130879
+              },
+              "lane": "C0_centered_only",
+              "maxima": {
+                "density_cv": 1.4344792343103738,
+                "maximum_abs_psi": 0.0367695529590095,
+                "mean_norm_density": 8.029377258211638e-05,
+                "relative_ipr": 3.057730673667677,
+                "top_one_percent_norm_fraction": 0.09618035443073843
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.3252091392026446,
+                "maximum_abs_psi": 0.020239445213476676,
+                "mean_norm_density": 4.2008275322321645e-05,
+                "relative_ipr": 2.759914426371396,
+                "top_one_percent_norm_fraction": 0.07986146282690063
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0006573702889484255,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8968522135416667,
+                "mean_centered_projection_rate": -4.7734195005009e-06,
+                "mean_centered_squared_increment_rate": 1.094726655832616e-05,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 1.094726655832616e-05
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 59.900000000000006,
+                "defect_active_frame_fraction": 0.9983361064891847,
+                "defects_in_final_frame": 176,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 60.0,
+                "longest_consecutive_defect_span": 60.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 326,
+                "mean_adjacent_overlap": 0.9859739107902874,
+                "mean_translation_registered_overlap": 0.9859739107902874,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 39789,
+                "raw_time_orientation_fraction": 0.7533459380714751,
+                "resolved_core": {
+                  "defects": 121526,
+                  "maximum_core_ratio": 3.021826544416526,
+                  "median_core_ratio": 0.285421097399588,
+                  "resolved_fraction": 0.7551470467225121
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 121526,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "D0_none": {
+          "final_mean_norm_density": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "lane": "D0_none",
+              "maxima": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.0,
+                "maximum_abs_psi": 0.0,
+                "mean_norm_density": 0.0,
+                "relative_ipr": 0.0,
+                "top_one_percent_norm_fraction": 0.0
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 0.0,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.0,
+                "mean_total_squared_increment_rate": 0.0
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.0,
+                "mean_translation_registered_overlap": 0.0,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        },
+        "F0_full": {
+          "final_mean_norm_density": {
+            "maximum": 5.475803601933925,
+            "mean": 5.276805370420509,
+            "median": 5.262623030056965,
+            "minimum": 5.022304752547415,
+            "standard_deviation": 0.14119926312484735
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 6.148336824552868,
+            "mean": 5.970896331291036,
+            "median": 5.959147392604697,
+            "minimum": 5.733538626329676,
+            "standard_deviation": 0.12481704781225104
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 52.0,
+            "mean": 41.63333333333333,
+            "median": 40.95,
+            "minimum": 31.0,
+            "standard_deviation": 5.7829425245651755
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 252.0,
+            "mean": 240.16666666666666,
+            "median": 239.0,
+            "minimum": 224.0,
+            "standard_deviation": 9.203095658362447
+          },
+          "maximum_relative_ipr": {
+            "maximum": 2.269162506863306,
+            "mean": 2.124171004744329,
+            "median": 2.1098373966257276,
+            "minimum": 2.0334345853325204,
+            "standard_deviation": 0.06899053111528902
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 1.0974393822792757e-05,
+            "mean": 1.0948837346268125e-05,
+            "median": 1.0950526326025039e-05,
+            "minimum": 1.0915789395459547e-05,
+            "standard_deviation": 1.6956879389455332e-08
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.04602223919986345,
+            "mean": 0.04602223919986346,
+            "median": 0.04602223919986345,
+            "minimum": 0.04602223919986345,
+            "standard_deviation": 7.247438314304709e-18
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.11773566817789458,
+                "maximum_abs_psi": 2.450173660668076,
+                "mean_norm_density": 5.207055516000365,
+                "relative_ipr": 1.0138616875612954,
+                "top_one_percent_norm_fraction": 0.012342446086505062
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.084300708180045,
+                "maximum_abs_psi": 2.450173660668076,
+                "mean_norm_density": 5.207055516000365,
+                "relative_ipr": 2.1757080257597474,
+                "top_one_percent_norm_fraction": 0.0411435289602349
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.385879730351243,
+                "maximum_abs_psi": 0.954623603212322,
+                "mean_norm_density": 1.1208078788716216,
+                "relative_ipr": 1.1755601309153783,
+                "top_one_percent_norm_fraction": 0.01769987994121776
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.912702748538185,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965511067708334,
+                "mean_centered_projection_rate": -2.2494857394735133e-06,
+                "mean_centered_squared_increment_rate": 1.0969565706430733e-05,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025705907299083524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 43.1,
+                "defect_active_frame_fraction": 0.718801996672213,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 43.2,
+                "longest_consecutive_defect_span": 43.2,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 240,
+                "mean_adjacent_overlap": 0.9977598294943533,
+                "mean_translation_registered_overlap": 0.9977598294943533,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1900,
+                "raw_time_orientation_fraction": 0.9326766352490965,
+                "resolved_core": {
+                  "defects": 26322,
+                  "maximum_core_ratio": 1.4154578736169663,
+                  "median_core_ratio": 0.4065045903038014,
+                  "resolved_fraction": 0.6183040802370641
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 26322,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0660198892561401,
+                "maximum_abs_psi": 2.4563489917363297,
+                "mean_norm_density": 5.455510723805816,
+                "relative_ipr": 1.0043586257773929,
+                "top_one_percent_norm_fraction": 0.011847459707788527
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0515767126862796,
+                "maximum_abs_psi": 2.4563489917363297,
+                "mean_norm_density": 5.455510723805816,
+                "relative_ipr": 2.105813582664082,
+                "top_one_percent_norm_fraction": 0.03989800772292017
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3399283684230181,
+                "maximum_abs_psi": 0.9643175618334802,
+                "mean_norm_density": 1.1886623753654162,
+                "relative_ipr": 1.1568197981461352,
+                "top_one_percent_norm_fraction": 0.017613645892917945
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 6.123525455250636,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8969775390625,
+                "mean_centered_projection_rate": 1.5895816411147416e-05,
+                "mean_centered_squared_increment_rate": 1.0937587697175719e-05,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025709311298123424
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 30.900000000000002,
+                "defect_active_frame_fraction": 0.5158069883527454,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 31.0,
+                "longest_consecutive_defect_span": 31.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 226,
+                "mean_adjacent_overlap": 0.9977675586358653,
+                "mean_translation_registered_overlap": 0.9977675586358653,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1874,
+                "raw_time_orientation_fraction": 0.925075963537502,
+                "resolved_core": {
+                  "defects": 23138,
+                  "maximum_core_ratio": 1.343209821949876,
+                  "median_core_ratio": 0.43033153184120715,
+                  "resolved_fraction": 0.588469184890656
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 23138,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.13766789846321117,
+                "maximum_abs_psi": 2.4530651181889462,
+                "mean_norm_density": 5.173194752918561,
+                "relative_ipr": 1.0189524502672769,
+                "top_one_percent_norm_fraction": 0.012439529839097227
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0349925740746662,
+                "maximum_abs_psi": 2.4530651181889462,
+                "mean_norm_density": 5.173194752918561,
+                "relative_ipr": 2.071209628389704,
+                "top_one_percent_norm_fraction": 0.04105113358616636
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.398923219148004,
+                "maximum_abs_psi": 0.959096993294995,
+                "mean_norm_density": 1.113849979099729,
+                "relative_ipr": 1.185424068681301,
+                "top_one_percent_norm_fraction": 0.01802076408345723
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.885496033253735,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8971305338541666,
+                "mean_centered_projection_rate": 1.8116482398148043e-05,
+                "mean_centered_squared_increment_rate": 1.0915789395459547e-05,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.000257068680753717
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 46.2,
+                "defect_active_frame_fraction": 0.7703826955074875,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 46.300000000000004,
+                "longest_consecutive_defect_span": 46.300000000000004,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977826851432156,
+                "mean_translation_registered_overlap": 0.9977826851432156,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1920,
+                "raw_time_orientation_fraction": 0.9298809436856329,
+                "resolved_core": {
+                  "defects": 25462,
+                  "maximum_core_ratio": 1.7614221838581756,
+                  "median_core_ratio": 0.4393691362765994,
+                  "resolved_fraction": 0.5813368941952713
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 25462,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.08634559358928286,
+                "maximum_abs_psi": 2.502161430996721,
+                "mean_norm_density": 5.475803601933925,
+                "relative_ipr": 1.0074555615322858,
+                "top_one_percent_norm_fraction": 0.012206475459173707
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0484965047225419,
+                "maximum_abs_psi": 2.502161430996721,
+                "mean_norm_density": 5.475803601933925,
+                "relative_ipr": 2.0993449204153873,
+                "top_one_percent_norm_fraction": 0.043671226872351636
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3416559306872053,
+                "maximum_abs_psi": 0.9822356144111416,
+                "mean_norm_density": 1.197737167298685,
+                "relative_ipr": 1.151364542802456,
+                "top_one_percent_norm_fraction": 0.017763475405285292
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 6.148336824552868,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966634114583333,
+                "mean_centered_projection_rate": 1.4781515808815788e-05,
+                "mean_centered_squared_increment_rate": 1.0934214611749422e-05,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.000257181290164198
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 41.300000000000004,
+                "defect_active_frame_fraction": 0.6888519134775375,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 41.400000000000006,
+                "longest_consecutive_defect_span": 41.400000000000006,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977481789295126,
+                "mean_translation_registered_overlap": 0.9977481789295128,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1890,
+                "raw_time_orientation_fraction": 0.9177688827010094,
+                "resolved_core": {
+                  "defects": 21094,
+                  "maximum_core_ratio": 1.6110817505924087,
+                  "median_core_ratio": 0.4343052103538042,
+                  "resolved_fraction": 0.5875130368825259
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 21094,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.08174495710599958,
+                "maximum_abs_psi": 2.469142233175124,
+                "mean_norm_density": 5.391137982032371,
+                "relative_ipr": 1.0066822380122618,
+                "top_one_percent_norm_fraction": 0.012107711710836721
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0703559014945347,
+                "maximum_abs_psi": 2.469142233175124,
+                "mean_norm_density": 5.391137982032371,
+                "relative_ipr": 2.1456617558641784,
+                "top_one_percent_norm_fraction": 0.04230112210379444
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.34159509144004824,
+                "maximum_abs_psi": 0.9628252586432755,
+                "mean_norm_density": 1.172688611460962,
+                "relative_ipr": 1.1485368613679814,
+                "top_one_percent_norm_fraction": 0.017247800128506866
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 6.077091353188419,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8966031901041667,
+                "mean_centered_projection_rate": -2.6353094815325978e-06,
+                "mean_centered_squared_increment_rate": 1.0943499923189116e-05,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025701528332562775
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 39.1,
+                "defect_active_frame_fraction": 0.6522462562396006,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 39.2,
+                "longest_consecutive_defect_span": 39.2,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 224,
+                "mean_adjacent_overlap": 0.9977540268864995,
+                "mean_translation_registered_overlap": 0.9977540268864995,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1814,
+                "raw_time_orientation_fraction": 0.9262421728876962,
+                "resolved_core": {
+                  "defects": 22780,
+                  "maximum_core_ratio": 1.6510765622020964,
+                  "median_core_ratio": 0.44977429049193657,
+                  "resolved_fraction": 0.5621597892888499
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 22780,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.0821890849678341,
+                "maximum_abs_psi": 2.473358650433624,
+                "mean_norm_density": 5.4298722296832755,
+                "relative_ipr": 1.00675504568785,
+                "top_one_percent_norm_fraction": 0.012012676013537829
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0165798470029397,
+                "maximum_abs_psi": 2.473358650433624,
+                "mean_norm_density": 5.4298722296832755,
+                "relative_ipr": 2.0334345853325204,
+                "top_one_percent_norm_fraction": 0.04048664507139071
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.34554191698363607,
+                "maximum_abs_psi": 0.9677114030059805,
+                "mean_norm_density": 1.1826545968004032,
+                "relative_ipr": 1.1536951474558854,
+                "top_one_percent_norm_fraction": 0.017448474238556583
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 6.103586348850628,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8960774739583334,
+                "mean_centered_projection_rate": -2.500796205995512e-05,
+                "mean_centered_squared_increment_rate": 1.0959340557421882e-05,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002569541731451437
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 39.6,
+                "defect_active_frame_fraction": 0.6605657237936772,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 39.7,
+                "longest_consecutive_defect_span": 39.7,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977736834569496,
+                "mean_translation_registered_overlap": 0.9977736834569496,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1746,
+                "raw_time_orientation_fraction": 0.9290878076516936,
+                "resolved_core": {
+                  "defects": 22876,
+                  "maximum_core_ratio": 1.8266240287745383,
+                  "median_core_ratio": 0.4177703575167155,
+                  "resolved_fraction": 0.6147490820073439
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 22876,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.16371569313553266,
+                "maximum_abs_psi": 2.4840496764459368,
+                "mean_norm_density": 5.112328269813253,
+                "relative_ipr": 1.0268028281788477,
+                "top_one_percent_norm_fraction": 0.012899235274454045
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0174065899927138,
+                "maximum_abs_psi": 2.4840496764459368,
+                "mean_norm_density": 5.112328269813253,
+                "relative_ipr": 2.035116169360602,
+                "top_one_percent_norm_fraction": 0.04123774683316662
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.4205640681014468,
+                "maximum_abs_psi": 0.9718701411398815,
+                "mean_norm_density": 1.0996797348117446,
+                "relative_ipr": 1.2010808023116064,
+                "top_one_percent_norm_fraction": 0.018699674229161363
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.833345501863905,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962288411458333,
+                "mean_centered_projection_rate": -1.5136190823872492e-05,
+                "mean_centered_squared_increment_rate": 1.0953786093723916e-05,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002569582274894925
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 46.7,
+                "defect_active_frame_fraction": 0.778702163061564,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 46.800000000000004,
+                "longest_consecutive_defect_span": 46.800000000000004,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 244,
+                "mean_adjacent_overlap": 0.9977814081909914,
+                "mean_translation_registered_overlap": 0.9977814081909914,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1928,
+                "raw_time_orientation_fraction": 0.9306325106138016,
+                "resolved_core": {
+                  "defects": 25866,
+                  "maximum_core_ratio": 1.4728343957377983,
+                  "median_core_ratio": 0.4511731267421939,
+                  "resolved_fraction": 0.5672697749942008
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 25866,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.08629517860995,
+                "maximum_abs_psi": 2.4490830795190406,
+                "mean_norm_density": 5.297473774069588,
+                "relative_ipr": 1.007446857851323,
+                "top_one_percent_norm_fraction": 0.01210433809459594
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0639648002986575,
+                "maximum_abs_psi": 2.4490830795190406,
+                "mean_norm_density": 5.297473774069588,
+                "relative_ipr": 2.132021096274562,
+                "top_one_percent_norm_fraction": 0.04159346088663181
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3654348237133594,
+                "maximum_abs_psi": 0.9564010989099544,
+                "mean_norm_density": 1.140202034374602,
+                "relative_ipr": 1.1713407357266485,
+                "top_one_percent_norm_fraction": 0.017949254099243465
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.975647158962317,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8965201822916666,
+                "mean_centered_projection_rate": 2.283017079827083e-06,
+                "mean_centered_squared_increment_rate": 1.0962570739097948e-05,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025707450357175
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 33.5,
+                "defect_active_frame_fraction": 0.5590682196339434,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 33.6,
+                "longest_consecutive_defect_span": 33.6,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 234,
+                "mean_adjacent_overlap": 0.9977642622096154,
+                "mean_translation_registered_overlap": 0.9977642622096154,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1926,
+                "raw_time_orientation_fraction": 0.9214518760195759,
+                "resolved_core": {
+                  "defects": 22594,
+                  "maximum_core_ratio": 1.4310071436309002,
+                  "median_core_ratio": 0.45459071211059365,
+                  "resolved_fraction": 0.5586881472957422
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 22594,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.10246253050635094,
+                "maximum_abs_psi": 2.4626117138140327,
+                "mean_norm_density": 5.240395563588709,
+                "relative_ipr": 1.0104985701577647,
+                "top_one_percent_norm_fraction": 0.012346761318119088
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1265711281864565,
+                "maximum_abs_psi": 2.4626117138140327,
+                "mean_norm_density": 5.240395563588709,
+                "relative_ipr": 2.269162506863306,
+                "top_one_percent_norm_fraction": 0.045625084532214616
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3759493076362164,
+                "maximum_abs_psi": 0.9664585821596572,
+                "mean_norm_density": 1.128942157222763,
+                "relative_ipr": 1.1718111533144768,
+                "top_one_percent_norm_fraction": 0.018029487409624057
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.943899955530508,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8962060546875,
+                "mean_centered_projection_rate": -1.0567323561328454e-05,
+                "mean_centered_squared_increment_rate": 1.0932910238549593e-05,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002570794250332815
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 40.400000000000006,
+                "defect_active_frame_fraction": 0.6738768718801996,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 40.5,
+                "longest_consecutive_defect_span": 40.5,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 238,
+                "mean_adjacent_overlap": 0.9977411084465795,
+                "mean_translation_registered_overlap": 0.9977411084465797,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1928,
+                "raw_time_orientation_fraction": 0.9207236842105263,
+                "resolved_core": {
+                  "defects": 22392,
+                  "maximum_core_ratio": 1.5294937876673889,
+                  "median_core_ratio": 0.4432398773855038,
+                  "resolved_fraction": 0.5754733833511969
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 22392,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.08021582550509929,
+                "maximum_abs_psi": 2.445904497161448,
+                "mean_norm_density": 5.284850496525221,
+                "relative_ipr": 1.0064345786614644,
+                "top_one_percent_norm_fraction": 0.012081574307545239
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.0479593781116465,
+                "maximum_abs_psi": 2.445904497161448,
+                "mean_norm_density": 5.284850496525221,
+                "relative_ipr": 2.098218858172149,
+                "top_one_percent_norm_fraction": 0.041397672532809474
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3507580514211849,
+                "maximum_abs_psi": 0.9519736243743379,
+                "mean_norm_density": 1.137785471028465,
+                "relative_ipr": 1.1566312201953126,
+                "top_one_percent_norm_fraction": 0.01765339378401715
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.974394829678885,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8963118489583334,
+                "mean_centered_projection_rate": -4.091936730961283e-06,
+                "mean_centered_squared_increment_rate": 1.0955122811300686e-05,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002570692882957856
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 39.900000000000006,
+                "defect_active_frame_fraction": 0.6655574043261231,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 40.0,
+                "longest_consecutive_defect_span": 40.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977572401375041,
+                "mean_translation_registered_overlap": 0.9977572401375043,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1888,
+                "raw_time_orientation_fraction": 0.9208252956470687,
+                "resolved_core": {
+                  "defects": 21958,
+                  "maximum_core_ratio": 1.581790552601258,
+                  "median_core_ratio": 0.43043566546918444,
+                  "resolved_fraction": 0.5895801074779123
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 21958,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.1308999674237912,
+                "maximum_abs_psi": 2.461638978489292,
+                "mean_norm_density": 5.022304752547415,
+                "relative_ipr": 1.0171348014715498,
+                "top_one_percent_norm_fraction": 0.012885285573634135
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.1002271207565901,
+                "maximum_abs_psi": 2.461638978489292,
+                "mean_norm_density": 5.022304752547415,
+                "relative_ipr": 2.2104997172483363,
+                "top_one_percent_norm_fraction": 0.04360063434220923
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.4165148889180308,
+                "maximum_abs_psi": 0.9625391555313723,
+                "mean_norm_density": 1.0633013956076698,
+                "relative_ipr": 1.2044446853774906,
+                "top_one_percent_norm_fraction": 0.019208535981409296
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.733538626329676,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8964420572916667,
+                "mean_centered_projection_rate": -1.3115362787313075e-05,
+                "mean_centered_squared_increment_rate": 1.0974393822792757e-05,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.0002569638275238431
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 45.800000000000004,
+                "defect_active_frame_fraction": 0.7637271214642263,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 45.900000000000006,
+                "longest_consecutive_defect_span": 45.900000000000006,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 252,
+                "mean_adjacent_overlap": 0.9977547142053789,
+                "mean_translation_registered_overlap": 0.9977547142053789,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1948,
+                "raw_time_orientation_fraction": 0.9358239441259801,
+                "resolved_core": {
+                  "defects": 28406,
+                  "maximum_core_ratio": 2.079450997272981,
+                  "median_core_ratio": 0.4601823354812853,
+                  "resolved_fraction": 0.5527001337745546
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 28406,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 0.1302266339501965,
+                "maximum_abs_psi": 2.455264321182897,
+                "mean_norm_density": 5.231736782127614,
+                "relative_ipr": 1.0169589761899984,
+                "top_one_percent_norm_fraction": 0.012326870314714073
+              },
+              "lane": "F0_full",
+              "maxima": {
+                "density_cv": 1.055396233927037,
+                "maximum_abs_psi": 2.455264321182897,
+                "mean_norm_density": 5.231736782127614,
+                "relative_ipr": 2.113861210587373,
+                "top_one_percent_norm_fraction": 0.042609550470202213
+              },
+              "means_over_recorded_time": {
+                "density_cv": 0.3801867403920256,
+                "maximum_abs_psi": 0.9612454371683511,
+                "mean_norm_density": 1.1304277589665424,
+                "relative_ipr": 1.1726601383480142,
+                "top_one_percent_norm_fraction": 0.018172233344138804
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 5.939191139492666,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.8968522135416667,
+                "mean_centered_projection_rate": -4.7734195005008784e-06,
+                "mean_centered_squared_increment_rate": 1.094726655832616e-05,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00025697852087822645
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 51.900000000000006,
+                "defect_active_frame_fraction": 0.8652246256239601,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": true,
+                "first_defect_time": 0.1,
+                "last_defect_time": 52.0,
+                "longest_consecutive_defect_span": 52.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 248,
+                "mean_adjacent_overlap": 0.9977666874130667,
+                "mean_translation_registered_overlap": 0.9977666874130667,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 1952,
+                "raw_time_orientation_fraction": 0.9280607356084617,
+                "resolved_core": {
+                  "defects": 25182,
+                  "maximum_core_ratio": 1.8746911801050918,
+                  "median_core_ratio": 0.4210183576231674,
+                  "resolved_fraction": 0.5962592327853229
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 25182,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 12,
+          "stable_transport_candidates": 0
+        },
+        "P0_pump_only": {
+          "final_mean_norm_density": {
+            "maximum": 6.337215347214793,
+            "mean": 6.337215347214793,
+            "median": 6.337215347214793,
+            "minimum": 6.337215347214793,
+            "standard_deviation": 0.0
+          },
+          "integrated_source_only_norm_change": {
+            "maximum": 7.005357321299706,
+            "mean": 7.005357321299708,
+            "median": 7.005357321299706,
+            "minimum": 7.005357321299706,
+            "standard_deviation": 1.8553442084620055e-15
+          },
+          "longest_consecutive_defect_span": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_defects_in_frame": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "maximum_relative_ipr": {
+            "maximum": 1.000000000000001,
+            "mean": 1.0000000000000013,
+            "median": 1.000000000000001,
+            "minimum": 1.000000000000001,
+            "standard_deviation": 2.319180260577507e-16
+          },
+          "mean_centered_squared_increment_rate": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "standard_deviation": 0.0
+          },
+          "mean_pump_projection_rate": {
+            "maximum": 0.04602223919986345,
+            "mean": 0.04602223919986346,
+            "median": 0.04602223919986345,
+            "minimum": 0.04602223919986345,
+            "standard_deviation": 7.247438314304709e-18
+          },
+          "seed_rows": [
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242000,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965511067708334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242001,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8969775390625,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242002,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8971305338541666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242003,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966634114583333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242004,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8966031901041667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242005,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8960774739583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242006,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962288411458333,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242007,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8965201822916666,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242008,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8962060546875,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242009,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8963118489583334,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242010,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8964420572916667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            },
+            {
+              "all_fields_finite": true,
+              "cap_triggered": false,
+              "final": {
+                "density_cv": 2.8030558251124597e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 0.9999999999999991,
+                "top_one_percent_norm_fraction": 0.010742187499999997
+              },
+              "lane": "P0_pump_only",
+              "maxima": {
+                "density_cv": 4.98404457905208e-16,
+                "maximum_abs_psi": 2.5173826382206563,
+                "mean_norm_density": 6.337215347214793,
+                "relative_ipr": 1.000000000000001,
+                "top_one_percent_norm_fraction": 0.010742187500000005
+              },
+              "means_over_recorded_time": {
+                "density_cv": 1.6718214433979811e-16,
+                "maximum_abs_psi": 0.9779865229727235,
+                "mean_norm_density": 1.4932525580681348,
+                "relative_ipr": 0.9983361064891847,
+                "top_one_percent_norm_fraction": 0.010724313643926788
+              },
+              "seed": 2026242011,
+              "source_accounting": {
+                "integrated_source_only_norm_change": 7.005357321299706,
+                "is_physical_energy": false,
+                "mean_admitted_event_fraction": 0.0,
+                "mean_centered_projection_rate": 0.0,
+                "mean_centered_squared_increment_rate": 0.0,
+                "mean_counterfactual_event_fraction": 0.8968522135416667,
+                "mean_counterfactual_event_probability": 0.8964750830974016,
+                "mean_pump_projection_rate": 0.04602223919986345,
+                "mean_total_squared_increment_rate": 0.00024612388786597524
+              },
+              "source_protocol": "scalar_budget_matched_local_phase",
+              "topology": {
+                "active_support_span": 0.0,
+                "defect_active_frame_fraction": 0.0,
+                "defects_in_final_frame": 0,
+                "ever_has_defect": false,
+                "first_defect_time": null,
+                "last_defect_time": null,
+                "longest_consecutive_defect_span": 0.0,
+                "maximum_abs_divergence": 0,
+                "maximum_abs_net_charge": 0,
+                "maximum_defects_in_frame": 0,
+                "mean_adjacent_overlap": 0.9983333333333333,
+                "mean_translation_registered_overlap": 0.9983333333333324,
+                "minimum_toroidal_transport": {
+                  "cost": "unit integer flux with toroidal Manhattan distance",
+                  "evaluated": false,
+                  "not_evaluated_reason": "A frozen coherence, resolution, conservation, neutrality, or nonzero-flux precondition failed.",
+                  "persistent_point_ids_assigned": false,
+                  "solver": "exact minimum-cost assignment per time slab",
+                  "spatial_flux": null,
+                  "time_orientation_fraction": null
+                },
+                "raw_spacetime_spatial_flux": 0,
+                "raw_time_orientation_fraction": 0.0,
+                "resolved_core": {
+                  "defects": 0,
+                  "maximum_core_ratio": 0.0,
+                  "median_core_ratio": 0.0,
+                  "resolved_fraction": 0.0
+                },
+                "stable_transport_candidate": false,
+                "temporal_flux": 0,
+                "v3_transport_rule": false
+              }
+            }
+          ],
+          "seeds_passing_v3_transport": 0,
+          "seeds_with_any_defect": 0,
+          "stable_transport_candidates": 0
+        }
+      },
+      "matched_budget_control": {
+        "centered_squared_increment_rate_absolute_difference": 0.0,
+        "exact_at_reported_float_precision": true,
+        "pump_projection_rate_absolute_difference": 0.0
+      },
+      "paired_factorial_contrasts": {
+        "ever_has_defect": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 1.0,
+            "mean": 1.0,
+            "replicates": 10000,
+            "upper_95_percentile": 1.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        },
+        "final_mean_norm_density": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": -0.5690315941578068,
+            "mean": -0.5301974602026184,
+            "replicates": 10000,
+            "upper_95_percentile": -0.4921070372740512
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -1.1352801534571921,
+            "mean": -1.0604250331833314,
+            "replicates": 10000,
+            "upper_95_percentile": -0.9862359355945586
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 5.7684714435189255,
+            "mean": 5.807002830623127,
+            "replicates": 10000,
+            "upper_95_percentile": 5.844748866221627
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 5.200552606561439,
+            "mean": 5.276790314031461,
+            "replicates": 10000,
+            "upper_95_percentile": 5.351919135321177
+          }
+        },
+        "longest_consecutive_defect_span": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 49.2125,
+            "mean": 50.81666666666667,
+            "replicates": 10000,
+            "upper_95_percentile": 52.34166666666666
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -21.575,
+            "mean": -18.366666666666664,
+            "replicates": 10000,
+            "upper_95_percentile": -15.291666666666663
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -10.808437499999998,
+            "mean": -9.183333333333332,
+            "replicates": 10000,
+            "upper_95_percentile": -7.674999999999998
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -21.483333333333334,
+            "mean": -18.366666666666664,
+            "replicates": 10000,
+            "upper_95_percentile": -15.299791666666666
+          }
+        },
+        "maximum_defects_in_frame": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 289.6666666666667,
+            "mean": 293.75,
+            "replicates": 10000,
+            "upper_95_percentile": 298.0833333333333
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -116.66666666666667,
+            "mean": -107.16666666666667,
+            "replicates": 10000,
+            "upper_95_percentile": -97.83333333333333
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -58.416666666666664,
+            "mean": -53.583333333333336,
+            "replicates": 10000,
+            "upper_95_percentile": -48.833333333333336
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -116.83333333333333,
+            "mean": -107.16666666666667,
+            "replicates": 10000,
+            "upper_95_percentile": -97.83333333333333
+          }
+        },
+        "maximum_relative_ipr": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 2.1387344262457146,
+            "mean": 2.208351468563438,
+            "replicates": 10000,
+            "upper_95_percentile": 2.290473856027515
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": -2.3111454151011506,
+            "mean": -2.168360927638219,
+            "replicates": 10000,
+            "upper_95_percentile": -2.0355995788481884
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": -0.15453290042650572,
+            "mean": -0.08418046381910828,
+            "replicates": 10000,
+            "upper_95_percentile": -0.019521513573258972
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": -1.311582353927568,
+            "mean": -1.1683609276382179,
+            "replicates": 10000,
+            "upper_95_percentile": -1.0389773685676322
+          }
+        },
+        "stable_transport_candidate": {
+          "centered_randomness_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_by_randomness_interaction": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "pump_main_effect": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          },
+          "simple_pump_effect_when_randomness_on": {
+            "lower_95_percentile": 0.0,
+            "mean": 0.0,
+            "replicates": 10000,
+            "upper_95_percentile": 0.0
+          }
+        }
+      },
+      "scope": "Pump-only reference schedule supplies identical scalar pump amplitudes, event probabilities, event amplitudes, and random draws across paired branches. Each branch retains its own local phase; amplitude/probability feedback is deliberately removed."
+    }
+  },
+  "reconstruction_provenance": {
+    "audited_commit": "9e7c5602066299f035ce50120746618fe3a9d614",
+    "audited_math_blob": "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa",
+    "imports_project_code": false,
+    "reason": "The committed NumPy source and backbone are reconstructed inside this standalone program so the audit is independent of later working-tree changes."
+  },
+  "result_payload_sha256_before_hash_field": "3a55f667c6ee636fcfaf7943892c40a3ce6412dfefc67c1f984bf9b137ee9cc7",
+  "runtime": {
+    "implementation": "CPython",
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "schema": "lineum.p1-source-factorial.v2",
+  "unit_controls": {
+    "all_pass": true,
+    "exact_source_decomposition": {
+      "maximum_absolute_error": 4.84869951806108e-19,
+      "passes": true
+    },
+    "matched_schedule_supplies_identical_scalar_budgets_across_phases": {
+      "maximum_centered_magnitude_difference": 4.336808689942018e-19,
+      "maximum_pump_magnitude_difference": 4.336808689942018e-19,
+      "passes": true
+    },
+    "minimum_transport_periodic_one_cell": {
+      "expected": 1,
+      "observed": 1,
+      "passes": true
+    },
+    "no_source_exact_vacuum": {
+      "final_mean_norm_density": 0.0,
+      "passes": true
+    },
+    "pump_only_preserves_spatial_uniformity": {
+      "absolute_error": 8.881784197001252e-16,
+      "expected_uniform_relative_ipr": 1.0,
+      "final_relative_ipr": 0.9999999999999991,
+      "passes": true
+    },
+    "translation_phase_scale_registration": {
+      "absolute_error": 0.0,
+      "expected": 1.0,
+      "observed": 1.0,
+      "passes": true
+    }
   }
 }
 ```
