@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 0.9
+**Research version:** 1.0
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all nine embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, and mathematical classification of the isolated current source; medium for the signature protocol within its declared resolution; low for the physical interpretation and the other untested hypotheses proposed for future work
+**Reproducibility:** all ten embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, and the declared source-to-morphology causal ablation; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation and the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; and (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; and (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -34,6 +34,9 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The historical zero-\(\kappa\) “true RNG / edge of chaos” test demonstrates chaos. | **Contradicted by source audit, exact recurrence, and runtime reproduction** | Its original perturbation is overwritten, while a new \(10^{-5}+10^{-5}i\) input is added for all 1,500 steps. The threshold crossing is a damped geometric sum, not exponential sensitivity or true randomness. |
 | Deterministic chaos currently explains the foam-like behavior. | **Not supported in the seven tested deterministic regimes** | All 84 finite-time Lyapunov estimates were negative. This narrows, but does not eliminate, the chaos hypothesis; other parameters, states, operators, dimensions, or longer asymptotic behavior remain untested. |
 | The isolated current source is continuous Gaussian noise, a Poisson birth law, or colored memory. | **Contradicted for the audited source contract** | It is a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\). Its centered excess kurtosis is about \(-1.615\), lag-one correlation is consistent with zero, and variance rate scales as \(h^{0.99974}\). |
+| The current F0 source has no causal effect on the visible numerical morphology. | **Contradicted in the declared nonlinear lane** | Relative late residual RMS was \(0.02600\) against exactly zero for the conditional-mean control in the independent post-revision audit. Removing endogenous source-mean feedback reduced it to \(0.01356\). |
+| The current F0 morphological effect survives time refinement as a nonzero continuous forcing. | **Not supported** | A three-point navigation fit gave residual RMS \(\propto h^{0.596}\) for faithful F0 and \(\propto h^{0.541}\) for open-loop matched F0, while Gaussian, Poisson, state/history-event, and colored-memory controls were approximately step-independent. |
+| Final morphology alone identifies whether memoryless forcing is F0, Gaussian, independent-Poisson, or state/history-event driven. | **Not demonstrated** | A frozen centroid classifier scored \(8/48=16.7\%\) in the post-revision audit against a \(25\%\) balanced chance level. Direct temporal and event observables remain informative even when final morphology is not. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -70,6 +73,7 @@ Until the gates below are met, we recommend:
 9. **withdraw “true RNG” and “edge of chaos” as conclusions of the historical zero-\(\kappa\) test; require exact replay, one-shot perturbation growth, a positive Lyapunov estimate, and robustness before restoring either claim**.
 10. **do not identify foam-like morphology with deterministic chaos in the currently tested regimes; describe initial branching, dissipative self-organization, stochastic forcing, event processes, memory, unresolved variables, and quantum amplitudes as separate candidates until a discriminator selects among them**.
 11. **describe the current random source as the finite-step F0 software contract, not as verified quantum foam; use the validated signature protocol only within its temporal and amplitude resolution, and preserve the documented equivalences between short memory and white noise, high-rate events and Gaussian forcing, and weak dependence and independent events**.
+12. **state that current F0 randomness and its state-dependent feedback causally refresh the tested numerical morphology, but do not promote that mechanism as continuous quantum forcing: its late morphological residual decreases under time refinement, and final images do not reliably distinguish it from several variance-matched memoryless alternatives**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -528,6 +532,113 @@ The standalone source reconstruction was also compared with actual deterministic
 `4.628188023797497e-18`.
 
 **Verdict [CALCULATED]:** the protocol can distinguish declared, sufficiently resolved F1–F5 controls, and its failure boundaries are now explicit. The isolated current source is not one of those continuous controls: it is the finite-step F0 state-dependent Bernoulli-plus-Gaussian software law, with no detected lag memory and a variance rate that vanishes linearly under refinement. This classifies the implemented source contract, **not the physical ontology of quantum foam and not the full visual morphology of an evolving nonlinear simulation**. No production default should change on this evidence alone.
+
+### 3.12 Current F0 causally refreshes numerical morphology, but its effect is not continuous-time stable
+
+The next gate moved from isolated source increments to the evolving nonlinear field. Its primary question was causal rather than visual: **if the initial complete state and nonlinear backbone are held fixed, which part of late morphology is caused by the source, and can different source laws still be identified after the backbone processes them?**
+
+The standalone experiment reconstructs the committed NumPy update with mode coupling enabled and the already-audited \(h\)-scaled \(\phi\) diffusion. It does not import Lineum. A separate audit against the clean committed runtime compared faithful F0 steps at \(h=0.2,0.1,0.05\); the largest absolute field difference was \(1.0444\times10^{-17}\), and the open-loop reference replay was bitwise exact.
+
+#### Causal lanes and input matching
+
+Two questions must not be conflated:
+
+1. **Faithful-current causality:** compare no source, the conditional mean alone, and the implemented F0 source with its endogenous state feedback.
+2. **Source-law comparison:** give F0–F5 the same precomputed open-loop conditional-mean trajectory and matched source variance, so a classifier cannot exploit a different mean drive.
+
+On the mean-only reference trajectory define
+
+\[
+\bar r_n=hA_np_ne^{i\theta_n},
+\qquad
+C_n=A_n^2p_n(1-p_n)+\sigma^2.
+\]
+
+The matched stochastic lanes are
+
+\[
+\begin{aligned}
+\text{F0:}\quad&r_n=\bar r_n+h\left[A_n(B_n-p_n)+\sigma Z_n\right]e^{i\theta_n},\\
+\text{F2:}\quad&r_n=\bar r_n+\sqrt{hh_0C_n}\,Z_ne^{i\theta_n},\\
+\text{F3:}\quad&r_n=\bar r_n+\sqrt{\frac{h_0C_n}{\lambda}}\,(N_n^+-N_n^-)e^{i\theta_n},\\
+\text{F4:}\quad&r_n=\bar r_n+\sqrt{\frac{h_0C_n}{\lambda_n(X_n,H_n)}}\,(N_n^+-N_n^-)e^{i\theta_n},\\
+\text{F5:}\quad&r_n=\bar r_n+h\sqrt{C_n}\,\eta_ne^{i\theta_n},
+\qquad
+\eta_{n+1}=e^{-h/\tau}\eta_n+\sqrt{1-e^{-2h/\tau}}Z_n .
+\end{aligned}
+\]
+
+Here \(h_0=0.1\). F1 places the total scheduled variance \(\sum_n h^2C_n\) into one initial perturbation and then receives only \(\bar r_n\). At \(h=h_0\), F0, F2, F3, F4, and F5 have the same expected one-step centered input power. In the post-revision audit their observed lane means differed by at most `0.5951%`. Final energy was deliberately **not** forced to agree: it is a downstream result and matching it after the simulation would erase a possible causal effect.
+
+The primary lane used a \(24\times24\) periodic grid, \(h=0.1\), physical time 30, one fixed smooth complete state, eight calibration runs per lane, eight held-out validation runs per lane, and a separate 12-run-per-lane post-revision audit. Every interval below treats one independently seeded run as the unit and uses 10,000 percentile-bootstrap draws. Seven navigation sensitivities changed \(h\), grid, horizon, or the initial state; each used independent four-run calibration and validation splits. Detector thresholds used the top 20%, 10%, and 5% of the absolute energy residual.
+
+#### The first development rule was rejected before the audit
+
+The original development protocol let every lane recompute its own state-dependent mean. Its classifier scored \(16/48=33.3\%\), apparently above the six-class \(16.7\%\) benchmark. That result was not accepted: the initial-only perturbation changed both the random timing and all later mean increments, and its final energy differed substantially. The classifier could therefore recognize a confounded drive rather than a source law.
+
+The complete failed program and normalized output were retained by hashes in the revised output. The recorded correction separated faithful F0 from the source-law contest and froze one open-loop mean trajectory. New seed families were then used. No final-image feature or threshold was tuned after the correction.
+
+#### The current source changes the image, and its state feedback amplifies that change
+
+| Paired result | Held-out validation mean difference and 95% interval | Independent post-revision mean difference and 95% interval |
+|---|---:|---:|
+| faithful F0 minus mean-only: relative late residual RMS | \(0.02784\;[0.02654,0.02920]\) | \(0.02600\;[0.02444,0.02782]\) |
+| faithful F0 minus open-loop matched F0: relative late residual RMS | \(0.01407\;[0.01275,0.01541]\) | \(0.01244\;[0.01104,0.01399]\) |
+| matched F0 minus F1: late top-decile turnover | \(0.59550\;[0.56615,0.62339]\) | \(0.59164\;[0.56385,0.61957]\) |
+| F5 minus F2: late residual-map correlation | \(0.02485\;[0.02188,0.02769]\) | \(0.02502\;[0.02302,0.02691]\) |
+| F4 minus F3: high-state/low-state event-rate ratio | \(4.3373\;[4.2182,4.4560]\) | \(4.3149\;[4.2018,4.4138]\) |
+
+Faithful F0 therefore has a causal numerical effect in this lane. Moreover, its residual is about twice the open-loop matched F0 residual even though the faithful lane has slightly lower centered input power. The most direct implementation-level interpretation is **endogenous amplification**: an early stochastic change alters amplitude, gradient, probability, and phase; those altered variables then change the future conditional mean. This contrast was noticed after the first revised development run, so it is labeled secondary. It was not used to change the equations or metrics, and its lower interval remained positive in the independent post-revision audit and all seven declared sensitivities. In the vacuum-initial sensitivity the faithful-minus-open-loop lower bound increased to `0.3489`, showing that the magnitude is strongly initial-state dependent.
+
+The detector choice does not explain the ongoing-versus-initial result. In the post-revision audit, matched F0 minus F1 turnover was \(0.5410\), \(0.5916\), and \(0.6023\) at the 80th, 90th, and 95th-percentile thresholds; all three 95% lower bounds exceeded `0.50`. One initial perturbation selects a persistent branch, while ongoing forcing continually refreshes which cells occupy the high-residual set.
+
+#### Time refinement separates the current finite-step source from continuous alternatives
+
+The following three-point slopes use \(h=0.05,0.1,0.2\), equal physical time, and independent seed families. They are navigation fits, not asymptotic proofs:
+
+| Lane | one-step centered input-power exponent | late residual-RMS exponent | Interpretation |
+|---|---:|---:|---|
+| faithful F0 | \(1.9869\) | \(0.5959\) | input variance is approximately \(h^2\); late effect shrinks |
+| open-loop matched F0 | \(2.0017\) | \(0.5408\) | same finite-step scaling without endogenous mean feedback |
+| Gaussian F2 | \(1.0005\) | \(-0.0053\) | input variance is approximately \(h\); late effect is stable |
+| Poisson F3 | \(1.0074\) | \(-0.0104\) | rate-scaled events retain a finite late effect |
+| state/history events F4 | \(1.0038\) | \(-0.0172\) | conditional events retain a finite late effect |
+| colored memory F5 | \(2.0043\) | \(-0.0053\) | correlated \(h\)-increments accumulate to a finite late effect |
+
+Thus state feedback amplifies present F0 morphology but does not repair its time contract. The faithful F0 residual changed from `0.01994` at \(h=0.05\), through `0.02784` at \(h=0.1\), to `0.04555` at \(h=0.2\). A claim of a nonzero continuously driven foam cannot be based on this source without changing its mathematical contract.
+
+#### Final images retain initial-only and memory signatures but lose several memoryless source identities
+
+A nearest-centroid classifier was frozen on the calibration runs using eight scale and morphology features. Evaluation uses balanced classes, Wilson intervals, and 10,000 balanced-label permutations conditional on the trained centroids.
+
+| Classification task | Held-out validation | Post-revision audit | Balanced chance |
+|---|---:|---:|---:|
+| all matched F0–F5 | \(17/48=35.4\%\), \(p=0.00130\) | \(35/72=48.6\%\), \(p<0.00010\) | \(16.7\%\) |
+| ongoing F0, F2, F3, F4, F5 | \(7/40=17.5\%\), \(p=0.715\) | \(20/60=33.3\%\), \(p=0.0105\) | \(20.0\%\) |
+| memoryless F0, F2, F3, F4 | \(1/32=3.1\%\), \(p=1.000\) | \(8/48=16.7\%\), \(p=0.942\) | \(25.0\%\) |
+
+The apparently successful broad classifier is carried mainly by F1 and F5: in the post-revision audit both were identified in \(12/12\) runs. The memoryless laws did **not** generalize as visually separable classes. Across the grid, horizon, step, and vacuum sensitivities, their accuracy ranged from \(18.8\%\) to \(43.8\%\) with a \(25\%\) chance level; no conditional permutation result crossed \(p=0.05\). This is failure to demonstrate identification, not proof that the laws are mathematically identical.
+
+Branch metrics explain part of the result:
+
+| Lane | within-seed late/final correlation | late top-decile turnover | between-seed final correlation | between-seed top-decile Jaccard |
+|---|---:|---:|---:|---:|
+| faithful F0 | \(0.8632\) | \(0.5146\) | \(0.0099\) | \(0.0552\) |
+| matched F0 | \(0.7284\) | \(0.7224\) | \(-0.0119\) | \(0.0529\) |
+| F1 initial-only | \(0.9956\) | \(0.1308\) | \(-0.0229\) | \(0.0469\) |
+| Gaussian F2 | \(0.7415\) | \(0.7227\) | \(-0.0035\) | \(0.0451\) |
+| Poisson F3 | \(0.7270\) | \(0.7254\) | \(0.0163\) | \(0.0535\) |
+| state/history F4 | \(0.7437\) | \(0.7326\) | \(0.0156\) | \(0.0568\) |
+| memory F5 | \(0.7666\) | \(0.7099\) | \(-0.0036\) | \(0.0467\) |
+
+F1 therefore behaves like persistent branch selection: one seed keeps its late spatial identity, while different seeds select unrelated branches. Ongoing forcing continually changes the late high-residual set. Faithful F0 is more persistent than its open-loop version, consistent with state-dependent reinforcement. Between-seed overlaps are near the random top-decile Jaccard value \(0.1^2/(0.2-0.1^2)\approx0.0526\), so no universal seed-independent detailed pattern was found.
+
+#### Direct event records recover information that final morphology loses
+
+An event-history control demonstrates why raw burst clustering is insufficient. A persistent high-rate state alone produced an unconditional after-event rate ratio of \(1.389\), which could be mistaken for self-excitation. After fitting the declared state, decayed event history, and an irrelevant \(\phi\) control separately in each run, its history coefficient was
+\(-0.0206\;[-0.0527,0.0140]\), consistent with zero. The true state-plus-history lane produced a raw ratio of \(2.687\) and recovered a history coefficient of \(1.0043\;[0.9799,1.0321]\). The independent control recovered neither state nor history dependence. This validates conditioned event analysis as a discriminator even when final images overlap.
+
+**Verdict [CALCULATED]:** the present F0 source causally changes and refreshes numerical morphology, and its endogenous state dependence amplifies branch differences. That is a software-level mechanism worth studying. It is **not** evidence of quantum ontology: its late effect decreases under time refinement, its magnitude depends strongly on the initial state, and its final morphology does not identify it against several memoryless alternatives. Initial-only branching and colored memory are distinguishable in this lane; Gaussian, independent-event, state/history-event, and matched F0 explanations require direct temporal or event measurements. No production default should change from this gate alone.
 
 ---
 
@@ -1415,9 +1526,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit now classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). A common protocol separates declared, sufficiently resolved F1–F5 controls, but it also demonstrates observational equivalences: short memory looks white, many small Poisson jumps look Gaussian, and weak dependence looks independent. These controls validate the discriminator, not any physical ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A subsequent Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
+**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. These results validate a bounded software discriminator, not a physical ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** Move from the isolated source to source-to-morphology causality. Starting from identical complete states, compare deterministic-only, initial-only, current F0, Gaussian, Poisson, state-dependent, and memory controls under the same nonlinear backbone. Measure which source changes persistent morphology, localization, event topology, and seed-to-seed branch identity after matching coarse variance. Separate state dependence from self-excitation by conditioning history tests on the full declared state. Do not modify the default runtime until the result survives time, grid, horizon, detector-threshold, and observation-scale controls.
+**Next read-only gate.** Move from field morphology to object-level claims. Freeze a source-blind detector before evaluation, track localized candidates under deterministic, mean-only, F0, and F1–F5 lanes from matched complete states, and test whether any candidate preserves identity, lifetime, localization without a cap, an energy or charge proxy, motion, and collision behavior when \(h\), grid size, initial state, source law, boundary condition, and nonuniform \(\kappa\) are changed. Retain direct temporal and event observables so a visually persistent spot is not mistaken for one physical object. Do not modify the default runtime or call a candidate a particle until the detector and tracking conclusions survive these controls.
 
 ---
 
@@ -1554,10 +1665,11 @@ The following list supersedes the original proposal. Each question should have a
 12. **The zero-kappa result is a claim audit, not a complete chaos survey.** It proves why one historical threshold test passed and why that pass did not measure chaos.
 13. **The Lyapunov audit is finite and regime-bound.** It covers seven declared deterministic regimes plus sensitivities in step, permeability, grid, and horizon. It does not exhaust every nonlinear coefficient, initial state, boundary, wave backend, dimension, or asymptotic attractor. The drift of the finite-time estimate toward zero at longer horizons precludes a claim of strictly negative asymptotic exponent.
 14. **The foam-signature protocol is an identifiability test, not an ontology detector.** Its 180/180 post-revision score concerns five declared, sufficiently separated synthetic controls. Short memory, frequent small jumps, weak dependence, state heterogeneity, coarse observations, and an incorrect deterministic backbone can make distinct mechanisms observationally equivalent. The current F0 conclusion classifies the isolated implemented source, not the complete nonlinear morphology or a physical quantum vacuum.
+15. **The source-to-morphology ablation is causal only within its declared numerical experiment.** It uses a periodic two-dimensional grid, a uniform-\(\kappa\) nonlinear backbone, synthetic matched source laws, one primary structured state, finite horizons, a frozen eight-feature classifier, and only four calibration plus four evaluation runs per navigation sensitivity. Its independent post-revision lane and bootstrap intervals strengthen the software conclusion, but they do not establish an asymptotic continuum limit, a unique microscopic source, a three-dimensional vacuum, stable objects, or quantum behavior. Open-loop input matching is exact in expectation at \(h=0.1\); the deliberately different contracts diverge away from that reference step.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing four stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, and classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract with explicit observational alternatives. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, and causally tracing that source into nonlinear morphology. The last result is deliberately two-sided: the current source and its state feedback matter numerically, but the effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -1640,9 +1752,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the seven earlier programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
 - the eighth, finite-time Lyapunov program was executed twice in the replay environment with bitwise-identical normalized output; two reconstructed regimes also matched the actual deterministic NumPy runtime with maximum absolute difference `0.0`
 - the ninth, foam-signature program was executed twice with bitwise-identical normalized output; its analytical Gaussian, Poisson, memory, and current-source controls passed, and its reconstructed current source matched actual runtime steps within `4.63e-18`
+- the tenth, source-to-morphology program was executed twice with bitwise-identical normalized output; its complete-state and open-loop controls passed, and its faithful F0 reconstruction matched the clean committed NumPy runtime within `1.05e-17`
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 9/9 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 10/10 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1675,6 +1788,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | historical zero-kappa RNG claim | exact difference recurrence and one-shot decay | closed-form damped geometric sum | original printed value, scalar recurrence, actual runtime, 1,500 steps | absence of chaos in every other Lineum regime |
 | deterministic chaos audit | finite-time largest Lyapunov estimate | logistic-map positive control and exact zero-\(\kappa\) damping exponent | seven regimes, two perturbation sizes, six directions, \(h\), \(\kappa\), horizon, and grid sensitivities | absence of chaos in all Lineum parameter space or a choice among non-chaotic foam mechanisms |
 | foam-source signatures | innovation scale, kurtosis, lag correlation, event-rate ratios, Fano factor, waiting times | Gaussian, compound-Poisson, exact OU lag, and current-source variance formulas | three independent seed families, three \(h\), memory, event-rate, dependence, and resolution boundaries | a physical ontology, full nonlinear morphology, or mechanisms below observation resolution |
+| source-to-morphology causality | paired late residual RMS, branch persistence, turnover, classifier accuracy, and conditioned event history | no-source and mean-only lanes, exact common open-loop mean, variance matching at \(h=0.1\), clean-runtime reconstruction, and balanced-label permutations | independent post-revision seeds; \(h=0.05/0.2\), grids 16/32, horizons 15/60, vacuum initial state, and three detector thresholds | a continuum quantum source, unique identification of memoryless laws, stable particles, or physical vacuum ontology |
 
 ### A.3 Numerical audit summary
 
@@ -1702,6 +1816,14 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | current F0: variance-rate exponent in \(h\) | \(0.9997376\) |
 | current F0: centered excess kurtosis | \(\approx-1.615\) |
 | current F0 reconstruction: maximum runtime difference | \(4.63\times10^{-18}\) |
+| morphology audit: faithful F0 late residual RMS versus mean-only | \(0.02600\;[0.02444,0.02782]\) |
+| morphology audit: faithful minus open-loop F0 residual RMS | \(0.01244\;[0.01104,0.01399]\) |
+| morphology audit: residual exponent, faithful / matched F0 | \(0.5959 / 0.5408\) |
+| morphology audit: residual exponent, F2 / F3 / F4 / F5 | \(-0.0053 / -0.0104 / -0.0172 / -0.0053\) |
+| morphology classifier: all F0–F5 / memoryless F0,F2,F3,F4 | \(35/72\) / \(8/48\) |
+| event-history control: state-only raw ratio / conditioned history coefficient | \(1.389 / -0.0206\;[-0.0527,0.0140]\) |
+| event-history control: true history raw ratio / conditioned history coefficient | \(2.687 / 1.0043\;[0.9799,1.0321]\) |
+| morphology reconstruction: maximum clean-runtime difference | \(1.05\times10^{-17}\) |
 
 ### A.4 Complete executable program
 
@@ -11033,5 +11155,9074 @@ print(json.dumps(output, indent=2, sort_keys=True))
     ]
   },
   "schema": "lineum.foam-signature-protocol.v1"
+}
+```
+
+---
+
+## Appendix J — Source-to-Morphology Causal Ablation
+
+This appendix is the authoritative, standalone reproduction record for Section 3.12. The program reconstructs the declared nonlinear update from equations embedded in its own source, imports no Lineum package, reads no project data, and writes no files. It contains the deterministic, mean-only, faithful-current, initial-only, Gaussian, independent-event, state/history-event, and colored-memory lanes; the failed development rule and its correction; calibration, held-out, post-revision, threshold, time, grid, horizon, and initial-state checks; bootstrap and permutation procedures; analytical controls; and all output fields needed to audit the reported conclusions.
+
+The program requires Python, NumPy, and the standard library. Save the Python block as a script and execute it once. Normalize line endings to LF; the complete stdout must equal the JSON block semantically, and two executions with the recorded environment produced byte-identical normalized stdout.
+
+- embedded program SHA-256 after LF normalization and removal of the final newline: `aab0de12008a4638800db5ce0f4e775667f658defb16a355d4e7e30056626f93`
+- complete normalized JSON stdout SHA-256 including its final newline: `4e5d915b4420f0343eb406016565d95ecca63af7c8268403c99c9b069a72a1fa`
+- audited clean Core revision: `50fe92716bbd0a999c4b1b23132d08d6f0cc755d`
+- audited numerical-update Git blob: `cc6f4a56448f7176438da406b9b8ab9b4fca2dfa`
+- maximum absolute difference from clean committed runtime steps: `1.0444418402013022e-17`
+
+```python
+"""Standalone causal ablation of Lineum-like foam sources and morphology.
+
+Protocol status: preregistered development version 0.1.
+
+The program deliberately imports only NumPy and the Python standard library.
+It reconstructs the committed NumPy backbone instead of importing repository
+code. Production code and defaults are not modified by this experiment.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import platform
+from dataclasses import dataclass
+
+import numpy as np
+
+
+SCHEMA = "lineum.foam-source-morphology-ablation.v1"
+PROTOCOL_VERSION = "0.2-recorded-revision"
+AUDITED_CORE_COMMIT = "50fe92716bbd0a999c4b1b23132d08d6f0cc755d"
+AUDITED_CORE_MATH_GIT_BLOB = "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa"
+DEVELOPMENT_V01_PROGRAM_SHA256 = (
+    "101e083c4433f2cee2152062d2a9b0244b27594b466267dbdb9b5480769a6ccf"
+)
+DEVELOPMENT_V01_OUTPUT_SHA256 = (
+    "bf85e73af50f148c52c7c191b1fb0a5b5848f5dc3d995313fd6d5889175b71f4"
+)
+PRIMARY_SIZE = 24
+PRIMARY_DT = 0.1
+REFERENCE_DT = 0.1
+PRIMARY_TIME = 30.0
+LATE_LAG_TIME = 5.0
+CALIBRATION_REPLICATES = 8
+VALIDATION_REPLICATES = 8
+POST_REVISION_REPLICATES = 12
+CALIBRATION_SEED_BASE = 2026212000
+VALIDATION_SEED_BASE = 2026213000
+POST_REVISION_SEED_BASE = 2026214000
+BOOTSTRAP_SEED = 2026219000
+SENSITIVITY_REPLICATES = 4
+SENSITIVITY_SETTINGS = (
+    ("dt_0_2", PRIMARY_SIZE, 0.2, PRIMARY_TIME, "structured"),
+    ("dt_0_05", PRIMARY_SIZE, 0.05, PRIMARY_TIME, "structured"),
+    ("grid_16", 16, PRIMARY_DT, PRIMARY_TIME, "structured"),
+    ("grid_32", 32, PRIMARY_DT, PRIMARY_TIME, "structured"),
+    ("horizon_15", PRIMARY_SIZE, PRIMARY_DT, 15.0, "structured"),
+    ("horizon_60", PRIMARY_SIZE, PRIMARY_DT, 60.0, "structured"),
+    ("vacuum_initial", PRIMARY_SIZE, PRIMARY_DT, PRIMARY_TIME, "vacuum"),
+)
+MATCHED_SOURCE_LANES = (
+    "F0_matched",
+    "F1_initial_only",
+    "F2_gaussian",
+    "F3_poisson",
+    "F4_state_history",
+    "F5_memory",
+)
+ONGOING_MATCHED_LANES = tuple(
+    lane for lane in MATCHED_SOURCE_LANES if lane != "F1_initial_only"
+)
+MEMORYLESS_MATCHED_LANES = (
+    "F0_matched",
+    "F2_gaussian",
+    "F3_poisson",
+    "F4_state_history",
+)
+ALL_LANES = (
+    "D0_no_source",
+    "M0_mean_only",
+    "F0_current",
+) + MATCHED_SOURCE_LANES
+CLASSIFIER_FEATURES = (
+    "residual_rms_relative",
+    "residual_localization",
+    "residual_neighbor_correlation",
+    "residual_high_frequency_fraction",
+    "late_temporal_correlation",
+    "late_top_decile_turnover",
+    "top_decile_components",
+    "energy_coefficient_of_variation",
+)
+
+
+@dataclass(frozen=True)
+class BackboneConfig:
+    dt: float
+    psi_diffusion: float = 0.05
+    phi_diffusion: float = 0.05
+    dissipation_rate: float = 0.005
+    drift_strength: float = -0.004
+    mode_coupling_strength: float = 0.001
+    noise_strength: float = 0.005
+    stencil_type: str = "LAP4"
+    phi_diffusion_scales_with_dt: bool = True
+    psi_amp_cap: float = 1e6
+    grad_cap: float = 1e6
+    phi_cap: float = 1e6
+
+
+def initial_state(
+    size: int,
+    mode: str = "structured",
+) -> dict[str, np.ndarray]:
+    """Return a deterministic, smooth, low-amplitude complete state."""
+    if mode == "vacuum":
+        return {
+            "psi": np.zeros((size, size), dtype=np.complex128),
+            "phi": np.zeros((size, size), dtype=np.float64),
+            "kappa": np.ones((size, size), dtype=np.float64),
+            "mu": np.zeros((size, size), dtype=np.float64),
+        }
+    if mode != "structured":
+        raise ValueError(mode)
+    yy, xx = np.mgrid[:size, :size]
+    cx = (size - 1.0) / 2.0
+    cy = (size - 1.0) / 2.0
+    dx = (xx - cx) / size
+    dy = (yy - cy) / size
+    radius2 = dx**2 + dy**2
+    envelope = (
+        0.012
+        + 0.020 * np.exp(-radius2 / (2.0 * 0.13**2))
+        + 0.003 * np.cos(2.0 * np.pi * xx / size)
+    )
+    phase_angle = (
+        0.25 * np.sin(2.0 * np.pi * xx / size)
+        - 0.18 * np.cos(2.0 * np.pi * yy / size)
+    )
+    psi = envelope * np.exp(1j * phase_angle)
+    phi = (
+        0.015
+        + 0.008 * np.cos(2.0 * np.pi * xx / size)
+        * np.cos(2.0 * np.pi * yy / size)
+        + 0.006 * np.exp(-radius2 / (2.0 * 0.20**2))
+    )
+    return {
+        "psi": psi.astype(np.complex128),
+        "phi": phi.astype(np.float64),
+        "kappa": np.ones((size, size), dtype=np.float64),
+        "mu": np.zeros((size, size), dtype=np.float64),
+    }
+
+
+def copy_state(state: dict[str, np.ndarray]) -> dict[str, np.ndarray]:
+    return {key: np.array(value, copy=True) for key, value in state.items()}
+
+
+def diffuse_complex(
+    field: np.ndarray,
+    kappa: np.ndarray,
+    rate: float,
+    stencil_type: str,
+) -> np.ndarray:
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    if stencil_type == "LAP8":
+        weight_orthogonal = 1.0
+        weight_diagonal = 0.25
+        k_up_left = np.roll(k_up, 1, axis=1)
+        k_up_right = np.roll(k_up, -1, axis=1)
+        k_down_left = np.roll(k_down, 1, axis=1)
+        k_down_right = np.roll(k_down, -1, axis=1)
+        f_up_left = np.roll(f_up, 1, axis=1)
+        f_up_right = np.roll(f_up, -1, axis=1)
+        f_down_left = np.roll(f_down, 1, axis=1)
+        f_down_right = np.roll(f_down, -1, axis=1)
+        neighbor_sum = weight_orthogonal * (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+        ) + weight_diagonal * (
+            f_up_left * k_up_left
+            + f_up_right * k_up_right
+            + f_down_left * k_down_left
+            + f_down_right * k_down_right
+        )
+        active_neighbors = weight_orthogonal * (
+            k_up + k_down + k_left + k_right
+        ) + weight_diagonal * (
+            k_up_left + k_up_right + k_down_left + k_down_right
+        )
+    else:
+        neighbor_sum = (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+        )
+        active_neighbors = k_up + k_down + k_left + k_right
+    return rate * (neighbor_sum - active_neighbors * field)
+
+
+def cap_complex_magnitude(field: np.ndarray, cap: float) -> np.ndarray:
+    result = np.asarray(field, dtype=np.complex128)
+    magnitude = np.abs(result)
+    mask = magnitude > cap
+    if np.any(mask):
+        result[mask] = result[mask] * (cap / (magnitude[mask] + 1e-30))
+    return result
+
+
+def source_parameters(
+    psi: np.ndarray,
+    kappa: np.ndarray,
+    config: BackboneConfig,
+) -> tuple[
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+]:
+    amplitude = np.clip(np.abs(psi), 0.0, config.psi_amp_cap)
+    gradient_x, gradient_y = np.gradient(amplitude)
+    gradient_x = np.clip(gradient_x, -config.grad_cap, config.grad_cap)
+    gradient_y = np.clip(gradient_y, -config.grad_cap, config.grad_cap)
+    gradient_magnitude = np.sqrt(
+        np.clip(gradient_x**2 + gradient_y**2, 0.0, 1e12)
+    )
+    probability = (
+        1.0 / (1.0 + np.exp(-5.0 * (amplitude + gradient_magnitude)))
+    ) * kappa
+    linon_amplitude = np.clip(
+        0.03 + 0.02 * np.clip(amplitude, 0.0, None),
+        0.0,
+        10.0,
+    )
+    phase = np.exp(1j * np.angle(psi))
+    conditional_variance_coefficient = (
+        linon_amplitude**2 * probability * (1.0 - probability)
+        + config.noise_strength**2
+    )
+    state_score_raw = amplitude + gradient_magnitude
+    state_score = (
+        state_score_raw - float(np.mean(state_score_raw))
+    ) / (float(np.std(state_score_raw)) + 1e-12)
+    state_score = np.clip(state_score, -2.0, 2.0)
+    return (
+        probability,
+        linon_amplitude,
+        phase,
+        conditional_variance_coefficient,
+        state_score,
+    )
+
+
+def make_initial_perturbation(
+    reference_schedule: list[dict[str, np.ndarray]],
+    rng: np.random.RandomState,
+) -> np.ndarray:
+    """Match the total raw F0 innovation variance in one initial draw."""
+    total_variance = np.sum(
+        [
+            entry["dt"] ** 2
+            * entry["conditional_variance_coefficient"]
+            for entry in reference_schedule
+        ],
+        axis=0,
+    )
+    phase = reference_schedule[0]["phase"]
+    return (
+        np.sqrt(total_variance)
+        * rng.normal(size=phase.shape)
+        * phase
+    )
+
+
+def source_increment(
+    lane: str,
+    state: dict[str, np.ndarray],
+    rng: np.random.RandomState,
+    config: BackboneConfig,
+    auxiliary: dict[str, np.ndarray],
+    reference: dict[str, np.ndarray],
+) -> tuple[np.ndarray, dict[str, np.ndarray], dict[str, float]]:
+    (
+        probability,
+        linon_amplitude,
+        phase,
+        conditional_variance_coefficient,
+        state_score,
+    ) = source_parameters(state["psi"], state["kappa"], config)
+    shape = state["psi"].shape
+    current_mean_increment = (
+        config.dt * linon_amplitude * probability * phase
+    )
+    reference_mean_increment = reference["mean_increment"]
+    reference_probability = reference["probability"]
+    reference_linon_amplitude = reference["linon_amplitude"]
+    reference_phase = reference["phase"]
+    reference_variance = reference["conditional_variance_coefficient"]
+    event_counts = np.zeros(shape, dtype=np.float64)
+    event_intensity = np.zeros(shape, dtype=np.float64)
+
+    if lane == "D0_no_source":
+        increment = np.zeros(shape, dtype=np.complex128)
+        expected_increment = np.zeros(shape, dtype=np.complex128)
+    elif lane in {"M0_mean_only", "F1_initial_only"}:
+        increment = reference_mean_increment
+        expected_increment = reference_mean_increment
+    elif lane == "F0_current":
+        linons = (rng.rand(*shape) < probability).astype(np.float64)
+        gaussian = np.clip(
+            rng.normal(0.0, config.noise_strength, shape),
+            -1.0,
+            1.0,
+        )
+        increment = (
+            config.dt * (linon_amplitude * linons + gaussian) * phase
+        )
+        expected_increment = current_mean_increment
+        event_counts = linons
+        event_intensity = probability / config.dt
+    elif lane == "F0_matched":
+        linons = (
+            rng.rand(*shape) < reference_probability
+        ).astype(np.float64)
+        gaussian = np.clip(
+            rng.normal(0.0, config.noise_strength, shape),
+            -1.0,
+            1.0,
+        )
+        residual = config.dt * (
+            reference_linon_amplitude
+            * (linons - reference_probability)
+            + gaussian
+        ) * reference_phase
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+        event_counts = linons
+        event_intensity = reference_probability / config.dt
+    elif lane == "F2_gaussian":
+        diffusion_scale = np.sqrt(
+            REFERENCE_DT * reference_variance
+        )
+        residual = (
+            np.sqrt(config.dt)
+            * diffusion_scale
+            * rng.normal(size=shape)
+            * reference_phase
+        )
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+    elif lane == "F3_poisson":
+        event_intensity.fill(0.5)
+        jump = np.sqrt(
+            REFERENCE_DT
+            * reference_variance
+            / event_intensity
+        )
+        positive = rng.poisson(event_intensity * config.dt / 2.0)
+        negative = rng.poisson(event_intensity * config.dt / 2.0)
+        signed_counts = positive - negative
+        event_counts = positive + negative
+        increment = (
+            reference_mean_increment
+            + jump * signed_counts * reference_phase
+        )
+        expected_increment = reference_mean_increment
+    elif lane == "F4_state_history":
+        history = auxiliary["event_history"]
+        event_intensity = 0.5 * np.exp(
+            0.55 * state_score + 0.45 * np.clip(history, 0.0, 3.0)
+        )
+        event_intensity = np.clip(event_intensity, 0.025, 5.0)
+        jump = np.sqrt(
+            REFERENCE_DT
+            * reference_variance
+            / event_intensity
+        )
+        positive = rng.poisson(event_intensity * config.dt / 2.0)
+        negative = rng.poisson(event_intensity * config.dt / 2.0)
+        signed_counts = positive - negative
+        event_counts = positive + negative
+        increment = (
+            reference_mean_increment
+            + jump * signed_counts * reference_phase
+        )
+        expected_increment = reference_mean_increment
+        decay = math.exp(-config.dt / 0.5)
+        auxiliary["event_history"] = (
+            decay * history + event_counts
+        )
+    elif lane == "F5_memory":
+        correlation = math.exp(-config.dt / 0.5)
+        eta = (
+            correlation * auxiliary["eta"]
+            + math.sqrt(1.0 - correlation**2)
+            * rng.normal(size=shape)
+        )
+        auxiliary["eta"] = eta
+        residual = (
+            config.dt
+            * np.sqrt(reference_variance)
+            * eta
+            * reference_phase
+        )
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+    else:
+        raise ValueError(lane)
+
+    metadata = {
+        "events": float(np.sum(event_counts)),
+        "event_state_sum": float(np.sum(event_counts * state_score)),
+        "event_history_sum": float(
+            np.sum(event_counts * auxiliary["event_history"])
+        ),
+        "state_high_events": float(
+            np.sum(event_counts[state_score > 0.5])
+        ),
+        "state_low_events": float(
+            np.sum(event_counts[state_score < -0.5])
+        ),
+        "state_high_exposure": float(np.sum(state_score > 0.5)),
+        "state_low_exposure": float(np.sum(state_score < -0.5)),
+        "injected_centered_power": float(
+            np.mean(np.abs(increment - expected_increment) ** 2)
+        ),
+        "mean_intensity": float(np.mean(event_intensity)),
+    }
+    return increment, auxiliary, metadata
+
+
+def backbone_step(
+    state: dict[str, np.ndarray],
+    config: BackboneConfig,
+    increment: np.ndarray,
+) -> dict[str, np.ndarray]:
+    psi = np.array(state["psi"], dtype=np.complex128, copy=True)
+    phi = np.array(state["phi"], dtype=np.float64, copy=True)
+    kappa = np.array(state["kappa"], dtype=np.float64, copy=True)
+    mu = np.array(state["mu"], dtype=np.float64, copy=True)
+    amplitude = np.clip(np.abs(psi), 0.0, config.psi_amp_cap)
+    drift_multiplier = 1.0 + mu
+
+    phi_interaction = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(
+        (0.04 * phi_interaction * kappa * drift_multiplier) / 0.1
+    )
+    interaction_term = interaction_factor * psi
+    interaction_magnitude = np.abs(interaction_term)
+    interaction_term = interaction_term / (
+        1.0 + interaction_magnitude / 10.0
+    )
+
+    gradient_phi_x, gradient_phi_y = np.gradient(phi)
+    phi_flow_term = (
+        config.drift_strength
+        * (gradient_phi_x + 1j * gradient_phi_y)
+        * kappa
+        * drift_multiplier
+    )
+    flow_magnitude = np.abs(phi_flow_term)
+    phi_flow_term = phi_flow_term / (1.0 + flow_magnitude / 10.0)
+
+    psi += phi_flow_term * config.dt
+    psi = cap_complex_magnitude(psi, config.psi_amp_cap)
+    psi += increment * kappa + interaction_term * config.dt
+    psi -= config.dissipation_rate * psi * config.dt
+    psi += (
+        diffuse_complex(
+            psi,
+            kappa,
+            rate=config.psi_diffusion,
+            stencil_type=config.stencil_type,
+        )
+        * kappa
+        * config.dt
+    )
+
+    energy = np.abs(psi) ** 2
+    delta_energy = (
+        config.mode_coupling_strength * energy * kappa * config.dt
+    )
+    phi += delta_energy
+    new_magnitude = np.sqrt(np.maximum(energy - delta_energy, 0.0))
+    psi = (psi / (np.sqrt(energy) + 1e-12)) * new_magnitude
+
+    phi_step_scale = (
+        config.dt if config.phi_diffusion_scales_with_dt else 1.0
+    )
+    phi += (
+        kappa
+        * config.phi_diffusion
+        * diffuse_complex(
+            phi,
+            kappa,
+            rate=0.05,
+            stencil_type=config.stencil_type,
+        )
+        * phi_step_scale
+    )
+    phi = np.clip(phi, 0.0, config.phi_cap)
+    if np.isnan(np.sum(psi)) or np.max(np.abs(psi)) >= (
+        config.psi_amp_cap * 0.99
+    ):
+        raise FloatingPointError("Backbone divergence or cap proximity")
+    return {"psi": psi, "phi": phi, "kappa": kappa, "mu": mu}
+
+
+def build_reference_trajectory(
+    size: int,
+    dt: float,
+    total_time: float,
+    initial_mode: str = "structured",
+) -> tuple[
+    list[dict[str, np.ndarray]],
+    dict[str, np.ndarray],
+    dict[str, np.ndarray],
+]:
+    """Precompute the common open-loop conditional-mean drive."""
+    config = BackboneConfig(dt=dt)
+    state = initial_state(size, initial_mode)
+    steps = int(round(total_time / dt))
+    late_step = steps - int(round(LATE_LAG_TIME / dt))
+    schedule: list[dict[str, np.ndarray]] = []
+    late_state = None
+    for step_index in range(steps):
+        (
+            probability,
+            linon_amplitude,
+            phase,
+            conditional_variance_coefficient,
+            state_score,
+        ) = source_parameters(state["psi"], state["kappa"], config)
+        mean_increment = (
+            dt * linon_amplitude * probability * phase
+        )
+        phi_score = (
+            state["phi"] - float(np.mean(state["phi"]))
+        ) / (float(np.std(state["phi"])) + 1e-12)
+        phi_score = np.clip(phi_score, -3.0, 3.0)
+        schedule.append(
+            {
+                "dt": np.asarray(dt),
+                "probability": np.array(probability, copy=True),
+                "linon_amplitude": np.array(linon_amplitude, copy=True),
+                "phase": np.array(phase, copy=True),
+                "conditional_variance_coefficient": np.array(
+                    conditional_variance_coefficient,
+                    copy=True,
+                ),
+                "state_score": np.array(state_score, copy=True),
+                "phi_score": np.array(phi_score, copy=True),
+                "mean_increment": np.array(mean_increment, copy=True),
+            }
+        )
+        state = backbone_step(state, config, mean_increment)
+        if step_index + 1 == late_step:
+            late_state = copy_state(state)
+    if late_state is None:
+        raise AssertionError("Reference late snapshot was not recorded")
+    return schedule, copy_state(state), late_state
+
+
+def correlation(left: np.ndarray, right: np.ndarray) -> float:
+    x = np.ravel(np.asarray(left, dtype=np.float64))
+    y = np.ravel(np.asarray(right, dtype=np.float64))
+    x = x - np.mean(x)
+    y = y - np.mean(y)
+    denominator = math.sqrt(float(np.sum(x * x) * np.sum(y * y)))
+    if denominator < 1e-30:
+        return 0.0
+    return float(np.sum(x * y) / denominator)
+
+
+def neighbor_correlation(field: np.ndarray) -> float:
+    return 0.5 * (
+        correlation(field, np.roll(field, 1, axis=0))
+        + correlation(field, np.roll(field, 1, axis=1))
+    )
+
+
+def high_frequency_fraction(field: np.ndarray) -> float:
+    centered = np.asarray(field, dtype=np.float64) - float(np.mean(field))
+    spectrum = np.abs(np.fft.fft2(centered)) ** 2
+    size_y, size_x = centered.shape
+    ky = np.fft.fftfreq(size_y)
+    kx = np.fft.fftfreq(size_x)
+    radius = np.sqrt(ky[:, None] ** 2 + kx[None, :] ** 2)
+    nonzero = radius > 0.0
+    high = radius >= (1.0 / 3.0)
+    denominator = float(np.sum(spectrum[nonzero]))
+    if denominator < 1e-30:
+        return 0.0
+    return float(np.sum(spectrum[high]) / denominator)
+
+
+def periodic_component_count(mask: np.ndarray) -> int:
+    active = np.asarray(mask, dtype=bool)
+    height, width = active.shape
+    visited = np.zeros_like(active)
+    count = 0
+    for row in range(height):
+        for column in range(width):
+            if not active[row, column] or visited[row, column]:
+                continue
+            count += 1
+            stack = [(row, column)]
+            visited[row, column] = True
+            while stack:
+                current_row, current_column = stack.pop()
+                for next_row, next_column in (
+                    ((current_row - 1) % height, current_column),
+                    ((current_row + 1) % height, current_column),
+                    (current_row, (current_column - 1) % width),
+                    (current_row, (current_column + 1) % width),
+                ):
+                    if (
+                        active[next_row, next_column]
+                        and not visited[next_row, next_column]
+                    ):
+                        visited[next_row, next_column] = True
+                        stack.append((next_row, next_column))
+    return count
+
+
+def top_mask(field: np.ndarray, quantile: float = 0.9) -> np.ndarray:
+    absolute = np.abs(np.asarray(field, dtype=np.float64))
+    threshold = float(np.quantile(absolute, quantile))
+    return absolute >= threshold
+
+
+def morphology_metrics(
+    final_state: dict[str, np.ndarray],
+    late_state: dict[str, np.ndarray],
+    baseline_final: dict[str, np.ndarray],
+    baseline_late: dict[str, np.ndarray],
+    event_totals: dict[str, float],
+) -> dict[str, float]:
+    energy = np.abs(final_state["psi"]) ** 2
+    late_energy = np.abs(late_state["psi"]) ** 2
+    baseline_energy = np.abs(baseline_final["psi"]) ** 2
+    baseline_late_energy = np.abs(baseline_late["psi"]) ** 2
+    residual = energy - baseline_energy
+    late_residual = late_energy - baseline_late_energy
+    residual_power = residual**2
+    baseline_scale = math.sqrt(float(np.mean(baseline_energy**2))) + 1e-30
+    residual_power_sum = float(np.sum(residual_power))
+    if residual_power_sum < 1e-30:
+        residual_localization = 0.0
+    else:
+        residual_localization = float(
+            residual.size
+            * np.sum(residual_power**2)
+            / (residual_power_sum**2)
+        )
+    detector_metrics = {}
+    for quantile, label in (
+        (0.80, "q80"),
+        (0.90, "q90"),
+        (0.95, "q95"),
+    ):
+        final_mask = top_mask(residual, quantile)
+        late_mask = top_mask(late_residual, quantile)
+        union = int(np.sum(final_mask | late_mask))
+        intersection = int(np.sum(final_mask & late_mask))
+        detector_metrics[f"{label}_turnover"] = (
+            0.0 if union == 0 else 1.0 - intersection / union
+        )
+        detector_metrics[f"{label}_components"] = float(
+            periodic_component_count(final_mask)
+        )
+    final_top = top_mask(residual, 0.90)
+    high_rate = (
+        event_totals["state_high_events"]
+        / max(event_totals["state_high_exposure"], 1.0)
+    )
+    low_rate = (
+        event_totals["state_low_events"]
+        / max(event_totals["state_low_exposure"], 1.0)
+    )
+    result = {
+        "mean_energy": float(np.mean(energy)),
+        "energy_coefficient_of_variation": float(
+            np.std(energy) / (np.mean(energy) + 1e-30)
+        ),
+        "residual_rms_relative": float(
+            math.sqrt(float(np.mean(residual_power))) / baseline_scale
+        ),
+        "residual_localization": residual_localization,
+        "residual_neighbor_correlation": neighbor_correlation(residual),
+        "residual_high_frequency_fraction": high_frequency_fraction(residual),
+        "late_temporal_correlation": correlation(
+            residual,
+            late_residual,
+        ),
+        "late_top_decile_turnover": detector_metrics["q90_turnover"],
+        "top_decile_components": float(
+            periodic_component_count(final_top)
+        ),
+        "event_state_mean": float(
+            event_totals["event_state_sum"]
+            / max(event_totals["events"], 1.0)
+        ),
+        "event_state_rate_ratio": float(
+            high_rate / max(low_rate, 1e-30)
+        ),
+        "mean_injected_centered_power": float(
+            event_totals["injected_centered_power"]
+            / max(event_totals["steps"], 1.0)
+        ),
+        "total_events": float(event_totals["events"]),
+    }
+    result.update(detector_metrics)
+    return result
+
+
+def run_lane(
+    lane: str,
+    seed: int,
+    size: int,
+    dt: float,
+    total_time: float,
+    reference_schedule: list[dict[str, np.ndarray]],
+    baseline_snapshots: tuple[
+        dict[str, np.ndarray],
+        dict[str, np.ndarray],
+    ],
+    initial_mode: str = "structured",
+) -> tuple[
+    dict[str, float],
+    dict[str, np.ndarray],
+    dict[str, np.ndarray],
+]:
+    config = BackboneConfig(dt=dt)
+    state = initial_state(size, initial_mode)
+    rng = np.random.RandomState(seed)
+    auxiliary = {
+        "eta": (
+            rng.normal(size=(size, size))
+            if lane == "F5_memory"
+            else np.zeros((size, size), dtype=np.float64)
+        ),
+        "event_history": np.zeros((size, size), dtype=np.float64),
+    }
+    if lane == "F1_initial_only":
+        state["psi"] += make_initial_perturbation(
+            reference_schedule,
+            rng,
+        )
+    steps = int(round(total_time / dt))
+    late_step = steps - int(round(LATE_LAG_TIME / dt))
+    late_state = None
+    event_totals = {
+        "events": 0.0,
+        "event_state_sum": 0.0,
+        "event_history_sum": 0.0,
+        "state_high_events": 0.0,
+        "state_low_events": 0.0,
+        "state_high_exposure": 0.0,
+        "state_low_exposure": 0.0,
+        "injected_centered_power": 0.0,
+        "mean_intensity": 0.0,
+        "steps": float(steps),
+    }
+    for step_index in range(steps):
+        increment, auxiliary, metadata = source_increment(
+            lane,
+            state,
+            rng,
+            config,
+            auxiliary,
+            reference_schedule[step_index],
+        )
+        for key in metadata:
+            event_totals[key] += metadata[key]
+        state = backbone_step(state, config, increment)
+        if step_index + 1 == late_step:
+            late_state = copy_state(state)
+    if late_state is None:
+        raise AssertionError("Late snapshot was not recorded")
+    baseline_final, baseline_late = baseline_snapshots
+    metrics = morphology_metrics(
+        state,
+        late_state,
+        baseline_final,
+        baseline_late,
+        event_totals,
+    )
+    return metrics, copy_state(state), copy_state(late_state)
+
+
+def summarize_rows(rows: list[dict[str, float]]) -> dict[str, dict[str, float]]:
+    summary: dict[str, dict[str, float]] = {}
+    for feature in sorted(rows[0]):
+        values = np.asarray([row[feature] for row in rows], dtype=np.float64)
+        summary[feature] = {
+            "mean": float(np.mean(values)),
+            "standard_deviation": float(np.std(values, ddof=1))
+            if len(values) > 1
+            else 0.0,
+            "minimum": float(np.min(values)),
+            "maximum": float(np.max(values)),
+        }
+    return summary
+
+
+def bootstrap_mean_interval(
+    values: np.ndarray,
+    rng: np.random.RandomState,
+    draws: int = 10000,
+) -> dict[str, float]:
+    data = np.asarray(values, dtype=np.float64)
+    indices = rng.randint(0, len(data), size=(draws, len(data)))
+    means = np.mean(data[indices], axis=1)
+    return {
+        "mean": float(np.mean(data)),
+        "lower_95_percentile_bootstrap": float(np.quantile(means, 0.025)),
+        "upper_95_percentile_bootstrap": float(np.quantile(means, 0.975)),
+        "replicates": int(len(data)),
+    }
+
+
+def train_centroid_classifier(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+    lanes: tuple[str, ...],
+) -> dict[str, object]:
+    matrix = np.asarray(
+        [
+            [row[feature] for feature in CLASSIFIER_FEATURES]
+            for lane in lanes
+            for row in rows_by_lane[lane]
+        ],
+        dtype=np.float64,
+    )
+    mean = np.mean(matrix, axis=0)
+    scale = np.std(matrix, axis=0, ddof=1)
+    scale = np.where(scale > 1e-12, scale, 1.0)
+    centroids = {}
+    for lane in lanes:
+        lane_matrix = np.asarray(
+            [
+                [row[feature] for feature in CLASSIFIER_FEATURES]
+                for row in rows_by_lane[lane]
+            ],
+            dtype=np.float64,
+        )
+        centroids[lane] = np.mean((lane_matrix - mean) / scale, axis=0)
+    return {
+        "mean": mean,
+        "scale": scale,
+        "centroids": centroids,
+        "lanes": lanes,
+    }
+
+
+def classify(
+    row: dict[str, float],
+    classifier: dict[str, object],
+) -> str:
+    vector = np.asarray(
+        [row[feature] for feature in CLASSIFIER_FEATURES],
+        dtype=np.float64,
+    )
+    standardized = (
+        vector - np.asarray(classifier["mean"])
+    ) / np.asarray(classifier["scale"])
+    distances = {
+        lane: float(
+            np.sum(
+                (
+                    standardized
+                    - np.asarray(classifier["centroids"][lane])
+                )
+                ** 2
+            )
+        )
+        for lane in classifier["lanes"]
+    }
+    return min(distances, key=distances.get)
+
+
+def exact_binomial_upper_tail(
+    successes: int,
+    total: int,
+    probability: float,
+) -> float:
+    return float(
+        sum(
+            math.comb(total, count)
+            * probability**count
+            * (1.0 - probability) ** (total - count)
+            for count in range(successes, total + 1)
+        )
+    )
+
+
+def wilson_interval(successes: int, total: int) -> dict[str, float]:
+    z = 1.959963984540054
+    proportion = successes / total
+    denominator = 1.0 + z**2 / total
+    center = (
+        proportion + z**2 / (2.0 * total)
+    ) / denominator
+    half_width = (
+        z
+        * math.sqrt(
+            proportion * (1.0 - proportion) / total
+            + z**2 / (4.0 * total**2)
+        )
+        / denominator
+    )
+    return {
+        "lower_95_wilson": float(center - half_width),
+        "upper_95_wilson": float(center + half_width),
+    }
+
+
+def fit_poisson_log_rate(
+    counts: np.ndarray,
+    state_score: np.ndarray,
+    history_predictor: np.ndarray,
+    phi_score: np.ndarray,
+    dt: float,
+) -> dict[str, float]:
+    """Fit a Poisson log-rate model by deterministic Newton iterations."""
+    y = np.asarray(counts, dtype=np.float64).ravel()
+    design = np.column_stack(
+        (
+            np.ones_like(y),
+            np.asarray(state_score, dtype=np.float64).ravel(),
+            np.asarray(history_predictor, dtype=np.float64).ravel(),
+            np.asarray(phi_score, dtype=np.float64).ravel(),
+        )
+    )
+    coefficients = np.zeros(design.shape[1], dtype=np.float64)
+    coefficients[0] = math.log(max(float(np.mean(y)) / dt, 1e-12))
+    offset = math.log(dt)
+    for _ in range(40):
+        linear = np.clip(
+            offset + design @ coefficients,
+            -20.0,
+            20.0,
+        )
+        fitted = np.exp(linear)
+        gradient = design.T @ (y - fitted)
+        information = design.T @ (fitted[:, None] * design)
+        information += np.eye(design.shape[1]) * 1e-9
+        update = np.linalg.solve(information, gradient)
+        coefficients += update
+        if float(np.max(np.abs(update))) < 1e-10:
+            break
+    return {
+        "intercept": float(coefficients[0]),
+        "state_score_coefficient": float(coefficients[1]),
+        "history_coefficient": float(coefficients[2]),
+        "phi_control_coefficient": float(coefficients[3]),
+    }
+
+
+def event_conditional_control(
+    seed_base: int,
+    replicates: int,
+) -> dict[str, object]:
+    """Separate persistent state heterogeneity from true event history."""
+    size = 16
+    dt = 0.1
+    total_time = 40.0
+    schedule, _final, _late = build_reference_trajectory(
+        size,
+        dt,
+        total_time,
+    )
+    lanes = {
+        "independent": {"state_beta": 0.0, "history": False},
+        "state_only": {"state_beta": 0.55, "history": False},
+        "state_and_history": {"state_beta": 0.55, "history": True},
+    }
+    rows_by_lane: dict[str, list[dict[str, float]]] = {
+        lane: [] for lane in lanes
+    }
+    for lane_index, (lane, parameters) in enumerate(lanes.items()):
+        for replicate in range(replicates):
+            rng = np.random.RandomState(
+                seed_base + lane_index * 1000 + replicate
+            )
+            history = np.zeros((size, size), dtype=np.float64)
+            previous_event = np.zeros((size, size), dtype=bool)
+            collected_counts = []
+            collected_state = []
+            collected_history = []
+            collected_phi = []
+            events_after_previous = 0.0
+            exposure_after_previous = 0.0
+            events_without_previous = 0.0
+            exposure_without_previous = 0.0
+            decay = math.exp(-dt / 0.5)
+            for entry in schedule:
+                state_score = entry["state_score"]
+                phi_score = entry["phi_score"]
+                bounded_history = np.clip(history, 0.0, 3.0)
+                if parameters["history"]:
+                    history_predictor = np.log1p(
+                        0.6 * bounded_history
+                    )
+                else:
+                    history_predictor = np.zeros_like(history)
+                intensity = 0.5 * np.exp(
+                    parameters["state_beta"] * state_score
+                    + history_predictor
+                )
+                counts = rng.poisson(intensity * dt)
+                events_after_previous += float(
+                    np.sum(counts[previous_event])
+                )
+                exposure_after_previous += float(np.sum(previous_event))
+                events_without_previous += float(
+                    np.sum(counts[~previous_event])
+                )
+                exposure_without_previous += float(
+                    np.sum(~previous_event)
+                )
+                collected_counts.append(counts.ravel())
+                collected_state.append(state_score.ravel())
+                collected_history.append(
+                    np.log1p(0.6 * bounded_history).ravel()
+                )
+                collected_phi.append(phi_score.ravel())
+                previous_event = counts > 0
+                history = decay * history + counts
+            fit = fit_poisson_log_rate(
+                np.concatenate(collected_counts),
+                np.concatenate(collected_state),
+                np.concatenate(collected_history),
+                np.concatenate(collected_phi),
+                dt,
+            )
+            fit["unconditional_previous_event_rate_ratio"] = float(
+                (
+                    events_after_previous
+                    / max(exposure_after_previous, 1.0)
+                )
+                / max(
+                    events_without_previous
+                    / max(exposure_without_previous, 1.0),
+                    1e-30,
+                )
+            )
+            rows_by_lane[lane].append(fit)
+    bootstrap_rng = np.random.RandomState(seed_base + 9000)
+    return {
+        "design": {
+            "size": size,
+            "dt": dt,
+            "physical_time": total_time,
+            "replicates_per_lane": replicates,
+            "fitted_predictors": [
+                "state score used by the intensity",
+                "pre-event decayed history",
+                "phi state as an irrelevant full-state control",
+            ],
+            "interpretation": (
+                "A raw after-event rate ratio can be elevated by persistent "
+                "high-rate state alone. The fitted history coefficient asks "
+                "whether history adds predictive rate after declared state "
+                "is held fixed."
+            ),
+        },
+        "lane_summaries": {
+            lane: {
+                feature: bootstrap_mean_interval(
+                    np.asarray(
+                        [row[feature] for row in rows],
+                        dtype=np.float64,
+                    ),
+                    bootstrap_rng,
+                )
+                for feature in rows[0]
+            }
+            for lane, rows in rows_by_lane.items()
+        },
+    }
+
+
+def run_dataset(
+    seed_base: int,
+    replicates: int,
+    size: int,
+    dt: float,
+    total_time: float,
+    initial_mode: str = "structured",
+) -> dict[str, list[dict[str, float]]]:
+    (
+        reference_schedule,
+        baseline_final,
+        baseline_late,
+    ) = build_reference_trajectory(
+        size=size,
+        dt=dt,
+        total_time=total_time,
+        initial_mode=initial_mode,
+    )
+    baseline_snapshots = (baseline_final, baseline_late)
+    rows_by_lane = {lane: [] for lane in ALL_LANES}
+    residual_maps_by_lane = {lane: [] for lane in ALL_LANES}
+    baseline_energy = np.abs(baseline_final["psi"]) ** 2
+    for replicate in range(replicates):
+        seed = seed_base + replicate
+        for lane in ALL_LANES:
+            metrics, final_state, _late = run_lane(
+                lane,
+                seed=seed,
+                size=size,
+                dt=dt,
+                total_time=total_time,
+                reference_schedule=reference_schedule,
+                baseline_snapshots=baseline_snapshots,
+                initial_mode=initial_mode,
+            )
+            metrics["replicate"] = float(replicate)
+            rows_by_lane[lane].append(metrics)
+            residual_maps_by_lane[lane].append(
+                np.abs(final_state["psi"]) ** 2 - baseline_energy
+            )
+    for lane in ALL_LANES:
+        pairwise_correlations = []
+        pairwise_jaccards = []
+        maps = residual_maps_by_lane[lane]
+        for left_index in range(len(maps)):
+            for right_index in range(left_index + 1, len(maps)):
+                pairwise_correlations.append(
+                    correlation(maps[left_index], maps[right_index])
+                )
+                left_mask = top_mask(maps[left_index], 0.90)
+                right_mask = top_mask(maps[right_index], 0.90)
+                union = int(np.sum(left_mask | right_mask))
+                pairwise_jaccards.append(
+                    1.0
+                    if union == 0
+                    else float(np.sum(left_mask & right_mask) / union)
+                )
+        mean_pairwise_correlation = (
+            float(np.mean(pairwise_correlations))
+            if pairwise_correlations
+            else 1.0
+        )
+        mean_pairwise_jaccard = (
+            float(np.mean(pairwise_jaccards))
+            if pairwise_jaccards
+            else 1.0
+        )
+        for row in rows_by_lane[lane]:
+            row["ensemble_pairwise_final_correlation"] = (
+                mean_pairwise_correlation
+            )
+            row["ensemble_pairwise_top_decile_jaccard"] = (
+                mean_pairwise_jaccard
+            )
+    return rows_by_lane
+
+
+def paired_contrast(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+    left_lane: str,
+    right_lane: str,
+    feature: str,
+    rng: np.random.RandomState,
+) -> dict[str, object]:
+    left = np.asarray(
+        [row[feature] for row in rows_by_lane[left_lane]],
+        dtype=np.float64,
+    )
+    right = np.asarray(
+        [row[feature] for row in rows_by_lane[right_lane]],
+        dtype=np.float64,
+    )
+    return {
+        "left": left_lane,
+        "right": right_lane,
+        "feature": feature,
+        "left_mean": float(np.mean(left)),
+        "right_mean": float(np.mean(right)),
+        "left_minus_right": bootstrap_mean_interval(
+            left - right,
+            rng,
+        ),
+    }
+
+
+def evaluate_classifier(
+    calibration: dict[str, list[dict[str, float]]],
+    validation: dict[str, list[dict[str, float]]],
+    lanes: tuple[str, ...],
+) -> dict[str, object]:
+    classifier = train_centroid_classifier(calibration, lanes)
+    confusion = {
+        actual: {predicted: 0 for predicted in lanes}
+        for actual in lanes
+    }
+    correct = 0
+    total = 0
+    actual_labels = []
+    predicted_labels = []
+    for actual in lanes:
+        for row in validation[actual]:
+            predicted = classify(row, classifier)
+            confusion[actual][predicted] += 1
+            correct += int(predicted == actual)
+            total += 1
+            actual_labels.append(actual)
+            predicted_labels.append(predicted)
+    chance = 1.0 / len(lanes)
+    permutation_rng = np.random.RandomState(2026219500 + len(lanes))
+    permuted_correct = np.empty(10000, dtype=np.int64)
+    actual_array = np.asarray(actual_labels, dtype=object)
+    predicted_array = np.asarray(predicted_labels, dtype=object)
+    for draw in range(len(permuted_correct)):
+        permuted = permutation_rng.permutation(actual_array)
+        permuted_correct[draw] = int(np.sum(permuted == predicted_array))
+    return {
+        "lanes": list(lanes),
+        "correct": correct,
+        "total": total,
+        "accuracy": correct / total,
+        "accuracy_interval": wilson_interval(correct, total),
+        "uniform_chance": chance,
+        "balanced_independent_binomial_tail_benchmark": (
+            exact_binomial_upper_tail(correct, total, chance)
+        ),
+        "conditional_balanced_label_permutation_p": float(
+            (1 + np.sum(permuted_correct >= correct))
+            / (1 + len(permuted_correct))
+        ),
+        "permutation_draws": int(len(permuted_correct)),
+        "permutation_scope": (
+            "Evaluation labels only, conditional on the frozen trained "
+            "centroids and balanced evaluation set; calibration labels "
+            "are not re-permuted."
+        ),
+        "confusion": confusion,
+    }
+
+
+def analyze_dataset_pair(
+    calibration: dict[str, list[dict[str, float]]],
+    evaluation: dict[str, list[dict[str, float]]],
+    bootstrap_seed: int,
+) -> dict[str, object]:
+    bootstrap_rng = np.random.RandomState(bootstrap_seed)
+    paired_contrasts = [
+        paired_contrast(
+            evaluation,
+            "F0_current",
+            "M0_mean_only",
+            "residual_rms_relative",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F0_current",
+            "F0_matched",
+            "residual_rms_relative",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F0_matched",
+            "F1_initial_only",
+            "late_top_decile_turnover",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F5_memory",
+            "F2_gaussian",
+            "late_temporal_correlation",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F4_state_history",
+            "F3_poisson",
+            "event_state_rate_ratio",
+            bootstrap_rng,
+        ),
+    ]
+    detector_threshold_contrasts = {
+        label: paired_contrast(
+            evaluation,
+            "F0_matched",
+            "F1_initial_only",
+            f"{label}_turnover",
+            bootstrap_rng,
+        )
+        for label in ("q80", "q90", "q95")
+    }
+    input_power = {
+        lane: float(
+            np.mean(
+                [
+                    row["mean_injected_centered_power"]
+                    for row in evaluation[lane]
+                ]
+            )
+        )
+        for lane in (
+            "F0_matched",
+            "F2_gaussian",
+            "F3_poisson",
+            "F4_state_history",
+            "F5_memory",
+        )
+    }
+    positive_input_values = list(input_power.values())
+    return {
+        "classifier_all_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            MATCHED_SOURCE_LANES,
+        ),
+        "classifier_ongoing_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            ONGOING_MATCHED_LANES,
+        ),
+        "classifier_memoryless_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            MEMORYLESS_MATCHED_LANES,
+        ),
+        "paired_contrasts": paired_contrasts,
+        "detector_threshold_contrasts": (
+            detector_threshold_contrasts
+        ),
+        "matched_input_power_by_lane": input_power,
+        "matched_input_power_maximum_relative_spread": float(
+            max(positive_input_values) / min(positive_input_values) - 1.0
+        ),
+    }
+
+
+def compact_sensitivity_summary(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+) -> dict[str, dict[str, float]]:
+    features = (
+        "mean_energy",
+        "residual_rms_relative",
+        "late_temporal_correlation",
+        "late_top_decile_turnover",
+        "event_state_rate_ratio",
+        "mean_injected_centered_power",
+        "ensemble_pairwise_final_correlation",
+        "ensemble_pairwise_top_decile_jaccard",
+    )
+    return {
+        lane: {
+            feature: float(
+                np.mean([row[feature] for row in rows_by_lane[lane]])
+            )
+            for feature in features
+        }
+        for lane in ALL_LANES
+    }
+
+
+def main() -> None:
+    calibration = run_dataset(
+        CALIBRATION_SEED_BASE,
+        CALIBRATION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    validation = run_dataset(
+        VALIDATION_SEED_BASE,
+        VALIDATION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    post_revision = run_dataset(
+        POST_REVISION_SEED_BASE,
+        POST_REVISION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    primary_analysis = analyze_dataset_pair(
+        calibration,
+        validation,
+        BOOTSTRAP_SEED,
+    )
+    post_revision_analysis = analyze_dataset_pair(
+        calibration,
+        post_revision,
+        BOOTSTRAP_SEED + 100,
+    )
+    sensitivity_results = {}
+    for setting_index, (
+        setting_name,
+        size,
+        dt,
+        total_time,
+        initial_mode,
+    ) in enumerate(SENSITIVITY_SETTINGS):
+        sensitivity_calibration = run_dataset(
+            2026220000 + setting_index * 2000,
+            SENSITIVITY_REPLICATES,
+            size,
+            dt,
+            total_time,
+            initial_mode,
+        )
+        sensitivity_validation = run_dataset(
+            2026221000 + setting_index * 2000,
+            SENSITIVITY_REPLICATES,
+            size,
+            dt,
+            total_time,
+            initial_mode,
+        )
+        sensitivity_results[setting_name] = {
+            "setting": {
+                "size": size,
+                "dt": dt,
+                "physical_time": total_time,
+                "initial_mode": initial_mode,
+                "calibration_replicates_per_lane": (
+                    SENSITIVITY_REPLICATES
+                ),
+                "validation_replicates_per_lane": (
+                    SENSITIVITY_REPLICATES
+                ),
+            },
+            "analysis": analyze_dataset_pair(
+                sensitivity_calibration,
+                sensitivity_validation,
+                BOOTSTRAP_SEED + 1000 + setting_index * 10,
+            ),
+            "validation_compact_summary": (
+                compact_sensitivity_summary(sensitivity_validation)
+            ),
+        }
+    primary_compact = compact_sensitivity_summary(validation)
+    dt_scaling = {}
+    for lane in (
+        "F0_current",
+        "F0_matched",
+        "F2_gaussian",
+        "F3_poisson",
+        "F4_state_history",
+        "F5_memory",
+    ):
+        dt_values = np.asarray((0.05, 0.1, 0.2), dtype=np.float64)
+        residual_values = np.asarray(
+            (
+                sensitivity_results["dt_0_05"][
+                    "validation_compact_summary"
+                ][lane]["residual_rms_relative"],
+                primary_compact[lane]["residual_rms_relative"],
+                sensitivity_results["dt_0_2"][
+                    "validation_compact_summary"
+                ][lane]["residual_rms_relative"],
+            ),
+            dtype=np.float64,
+        )
+        input_power_values = np.asarray(
+            (
+                sensitivity_results["dt_0_05"][
+                    "validation_compact_summary"
+                ][lane]["mean_injected_centered_power"],
+                primary_compact[lane]["mean_injected_centered_power"],
+                sensitivity_results["dt_0_2"][
+                    "validation_compact_summary"
+                ][lane]["mean_injected_centered_power"],
+            ),
+            dtype=np.float64,
+        )
+        dt_scaling[lane] = {
+            "dt": dt_values.tolist(),
+            "residual_rms_relative": residual_values.tolist(),
+            "residual_rms_exponent": float(
+                np.polyfit(
+                    np.log(dt_values),
+                    np.log(residual_values),
+                    1,
+                )[0]
+            ),
+            "mean_injected_centered_power": (
+                input_power_values.tolist()
+            ),
+            "one_step_input_power_exponent": float(
+                np.polyfit(
+                    np.log(dt_values),
+                    np.log(input_power_values),
+                    1,
+                )[0]
+            ),
+            "warning": (
+                "Three-point navigation fit across independent seed "
+                "families; it is not an asymptotic convergence proof."
+            ),
+        }
+    result = {
+        "schema": SCHEMA,
+        "protocol": {
+            "version": PROTOCOL_VERSION,
+            "status": (
+                "recorded protocol revision; new seed families were frozen "
+                "before the revised output"
+            ),
+            "question": (
+                "Under an identical reconstructed nonlinear backbone and "
+                "initial state, which declared source contracts causally "
+                "change late morphology after matching an open-loop F0 "
+                "conditional-mean trajectory and primary-step variance?"
+            ),
+            "primary": {
+                "size": PRIMARY_SIZE,
+                "dt": PRIMARY_DT,
+                "reference_dt": REFERENCE_DT,
+                "physical_time": PRIMARY_TIME,
+                "initial_mode": "structured",
+                "late_lag_time": LATE_LAG_TIME,
+                "calibration_replicates_per_lane": CALIBRATION_REPLICATES,
+                "validation_replicates_per_lane": VALIDATION_REPLICATES,
+                "post_revision_replicates_per_lane": (
+                    POST_REVISION_REPLICATES
+                ),
+                "lanes": list(ALL_LANES),
+            },
+            "sensitivity_settings": [
+                {
+                    "name": name,
+                    "size": size,
+                    "dt": dt,
+                    "physical_time": total_time,
+                    "initial_mode": initial_mode,
+                    "replicates_per_lane_per_split": (
+                        SENSITIVITY_REPLICATES
+                    ),
+                }
+                for name, size, dt, total_time, initial_mode
+                in SENSITIVITY_SETTINGS
+            ],
+            "controls": {
+                "D0_no_source": "no conditional mean and no stochastic residual",
+                "M0_mean_only": "deterministic conditional mean of current F0",
+                "F0_current": (
+                    "faithful implemented Bernoulli plus Gaussian source "
+                    "with endogenous state feedback"
+                ),
+                "F0_matched": (
+                    "centered F0 Bernoulli plus Gaussian residual around "
+                    "the common open-loop conditional mean"
+                ),
+                "F1_initial_only": (
+                    "one initial perturbation with total raw variance equal "
+                    "to the scheduled F0 injection, then common mean only"
+                ),
+                "F2_gaussian": (
+                    "Gaussian square-root-dt residual calibrated to F0 at "
+                    "reference dt"
+                ),
+                "F3_poisson": (
+                    "independent signed compound-Poisson events calibrated "
+                    "to F0 variance at reference dt"
+                ),
+                "F4_state_history": (
+                    "state- and history-dependent signed events with "
+                    "conditional variance matching"
+                ),
+                "F5_memory": (
+                    "exact OU memory with correlation time 0.5 and "
+                    "primary-step variance matching"
+                ),
+            },
+            "classifier_features": list(CLASSIFIER_FEATURES),
+            "branch_identity_metrics": (
+                "Within-seed persistence uses the late-to-final residual "
+                "correlation and top-mask turnover. Between-seed branch "
+                "identity uses pairwise final residual-map correlation and "
+                "top-decile Jaccard overlap; pairwise summaries are lane-level "
+                "descriptions and are not treated as independent replicates."
+            ),
+            "predeclared_contrasts": [
+                "faithful F0 vs M0 residual RMS",
+                "matched F0 vs F1 late top-decile turnover",
+                "F5 vs F2 late temporal correlation",
+                "F4 vs F3 high-state/low-state event-rate ratio",
+            ],
+            "conditional_history_control": (
+                "Fit one coefficient per independent run for declared state, "
+                "pre-event history, and phi control; aggregate runs, not "
+                "individual cell-steps, as replication units."
+            ),
+            "recorded_revision_from_v0_1": {
+                "development_program_sha256": (
+                    DEVELOPMENT_V01_PROGRAM_SHA256
+                ),
+                "development_output_sha256": (
+                    DEVELOPMENT_V01_OUTPUT_SHA256
+                ),
+                "observed_all_lane_classifier": "16/48 = 33.333%",
+                "diagnosis": (
+                    "Each lane recomputed its own state-dependent mean. "
+                    "The initial-only perturbation therefore changed both "
+                    "the random timing and the later mean drive, while its "
+                    "final energy was not comparable. The classifier could "
+                    "exploit that confound."
+                ),
+                "revision": (
+                    "Preserve faithful F0 as a separate causal lane, but "
+                    "compare F0-F5 around one precomputed open-loop mean "
+                    "trajectory. Match raw conditional input variance at "
+                    "the reference step. Do not force final energy to match "
+                    "because it is a post-treatment outcome."
+                ),
+                "new_seed_families": [
+                    CALIBRATION_SEED_BASE,
+                    VALIDATION_SEED_BASE,
+                    POST_REVISION_SEED_BASE,
+                ],
+            },
+            "recorded_secondary_analysis": {
+                "discovery": (
+                    "The faithful F0 lane had a larger late residual than "
+                    "the open-loop matched F0 lane despite comparable or "
+                    "lower centered input power, suggesting amplification "
+                    "through state-dependent future mean drive."
+                ),
+                "status": (
+                    "This contrast was identified after the first revised "
+                    "development run. No source equation, feature, or "
+                    "threshold was changed afterward. It is evaluated on "
+                    "the separate post-revision seeds and every declared "
+                    "sensitivity, and remains an interpretation rather than "
+                    "a proof of a physical feedback mechanism."
+                ),
+            },
+            "claim_boundary": (
+                "Classification concerns source-attributable numerical "
+                "morphology in this lane, not quantum ontology, particles, "
+                "gravity, or experimental validation."
+            ),
+        },
+        "primary_results": {
+            "calibration_summary": {
+                lane: summarize_rows(calibration[lane])
+                for lane in ALL_LANES
+            },
+            "validation_summary": {
+                lane: summarize_rows(validation[lane])
+                for lane in ALL_LANES
+            },
+            "validation_analysis": primary_analysis,
+            "post_revision_summary": {
+                lane: summarize_rows(post_revision[lane])
+                for lane in ALL_LANES
+            },
+            "post_revision_analysis": post_revision_analysis,
+            "conditional_event_history": event_conditional_control(
+                2026215000,
+                8,
+            ),
+            "sensitivities": sensitivity_results,
+            "three_point_dt_scaling": dt_scaling,
+        },
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "audited_core_commit": AUDITED_CORE_COMMIT,
+            "audited_core_math_git_blob": AUDITED_CORE_MATH_GIT_BLOB,
+        },
+    }
+    normalized = json.dumps(result, indent=2, sort_keys=True)
+    result["normalized_payload_sha256_before_hash_field"] = hashlib.sha256(
+        (normalized + "\n").encode("utf-8")
+    ).hexdigest()
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```json
+{
+  "normalized_payload_sha256_before_hash_field": "1db4d9f503b95f6777c2b04c135a7b2c3af703b7e5a01b0db554a1d6a7c29e59",
+  "primary_results": {
+    "calibration_summary": {
+      "D0_no_source": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.4475814633357095,
+          "mean": 0.4475814633357095,
+          "minimum": 0.4475814633357095,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9988691779751661,
+          "mean": 0.9988691779751661,
+          "minimum": 0.9988691779751661,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.00015426251702631587,
+          "mean": 0.00015426251702631587,
+          "minimum": 0.00015426251702631587,
+          "standard_deviation": 0.0
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 3.94937505790685e-08,
+          "mean": 3.94937505790685e-08,
+          "minimum": 3.94937505790685e-08,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 1.002456461959503,
+          "mean": 1.002456461959503,
+          "minimum": 1.002456461959503,
+          "standard_deviation": 0.0
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.969495775417412,
+          "mean": 0.969495775417412,
+          "minimum": 0.969495775417412,
+          "standard_deviation": 0.0
+        },
+        "residual_rms_relative": {
+          "maximum": 0.9998058355743846,
+          "mean": 0.9998058355743846,
+          "minimum": 0.9998058355743846,
+          "standard_deviation": 0.0
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F0_current": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03499380139782262,
+          "mean": 0.030619547990620898,
+          "minimum": 0.025770521053033853,
+          "standard_deviation": 0.0029096831144369614
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.004194298107428744,
+          "mean": 0.004194298107428744,
+          "minimum": 0.004194298107428744,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.046539836541135325,
+          "mean": 0.046539836541135325,
+          "minimum": 0.046539836541135325,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0027660280440442346,
+          "mean": -0.0032787166146386283,
+          "minimum": -0.013779968652695547,
+          "standard_deviation": 0.005244251571245467
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.027210561693539,
+          "mean": 1.0174754003034834,
+          "minimum": 1.0043652503333542,
+          "standard_deviation": 0.006978826215702676
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.891058271807433,
+          "mean": 0.8731660499990208,
+          "minimum": 0.8574678947792556,
+          "standard_deviation": 0.011488515271001842
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.6024096385542168,
+          "mean": 0.5175319350640137,
+          "minimum": 0.410958904109589,
+          "standard_deviation": 0.06381859838079254
+        },
+        "mean_energy": {
+          "maximum": 0.8216888903339976,
+          "mean": 0.8172872415649319,
+          "minimum": 0.8128166364561067,
+          "standard_deviation": 0.0031938646964121188
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.7873472602221163e-06,
+          "mean": 1.7724049655675734e-06,
+          "minimum": 1.7646693069860887e-06,
+          "standard_deviation": 7.890265627320734e-09
+        },
+        "q80_components": {
+          "maximum": 23.0,
+          "mean": 17.5,
+          "minimum": 11.0,
+          "standard_deviation": 4.535573676110727
+        },
+        "q80_turnover": {
+          "maximum": 0.5222929936305732,
+          "mean": 0.46555049493430006,
+          "minimum": 0.34285714285714286,
+          "standard_deviation": 0.05790966284988367
+        },
+        "q90_components": {
+          "maximum": 20.0,
+          "mean": 14.25,
+          "minimum": 11.0,
+          "standard_deviation": 2.9154759474226504
+        },
+        "q90_turnover": {
+          "maximum": 0.6024096385542168,
+          "mean": 0.5175319350640137,
+          "minimum": 0.410958904109589,
+          "standard_deviation": 0.06381859838079254
+        },
+        "q95_components": {
+          "maximum": 11.0,
+          "mean": 9.25,
+          "minimum": 5.0,
+          "standard_deviation": 2.1213203435596424
+        },
+        "q95_turnover": {
+          "maximum": 0.6818181818181819,
+          "mean": 0.549840281097931,
+          "minimum": 0.4736842105263158,
+          "standard_deviation": 0.08669671323276565
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.13015325718646073,
+          "mean": 0.10726998609506308,
+          "minimum": 0.08506926941234712,
+          "standard_deviation": 0.015163068167184358
+        },
+        "residual_localization": {
+          "maximum": 3.2379783022505757,
+          "mean": 2.6501549632298302,
+          "minimum": 2.1132814872776122,
+          "standard_deviation": 0.3835069261768668
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.7575909123731919,
+          "mean": 0.7169045019590028,
+          "minimum": 0.6768568810210353,
+          "standard_deviation": 0.028251111900768018
+        },
+        "residual_rms_relative": {
+          "maximum": 0.03178054331191947,
+          "mean": 0.028111827833328676,
+          "minimum": 0.024197101218285406,
+          "standard_deviation": 0.003050593309954664
+        },
+        "top_decile_components": {
+          "maximum": 20.0,
+          "mean": 14.25,
+          "minimum": 11.0,
+          "standard_deviation": 2.9154759474226504
+        },
+        "total_events": {
+          "maximum": 141603.0,
+          "mean": 141342.75,
+          "minimum": 141040.0,
+          "standard_deviation": 214.9463388183864
+        }
+      },
+      "F0_matched": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.029737404541637022,
+          "mean": 0.028149194574889017,
+          "minimum": 0.02581284487351473,
+          "standard_deviation": 0.001377674953487885
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.009194083779544763,
+          "mean": -0.009194083779544763,
+          "minimum": -0.009194083779544763,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05047518415794248,
+          "mean": 0.05047518415794248,
+          "minimum": 0.05047518415794248,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": -0.009500530687368653,
+          "mean": -0.014509293674059093,
+          "minimum": -0.01862520633179507,
+          "standard_deviation": 0.0032122312195110294
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.003431392243983,
+          "mean": 0.9963308142850956,
+          "minimum": 0.9855744120102186,
+          "standard_deviation": 0.005889556231248867
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7596918048794348,
+          "mean": 0.7314467340972177,
+          "minimum": 0.6748020438723066,
+          "standard_deviation": 0.026602413747155083
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.8163265306122449,
+          "mean": 0.7341985163012791,
+          "minimum": 0.6818181818181819,
+          "standard_deviation": 0.04600498487238845
+        },
+        "mean_energy": {
+          "maximum": 0.8039631656918148,
+          "mean": 0.8022495943659151,
+          "minimum": 0.8001051233613992,
+          "standard_deviation": 0.00120488054186226
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8225521899967518e-06,
+          "mean": 1.8115583981357432e-06,
+          "minimum": 1.7998647820335047e-06,
+          "standard_deviation": 6.4534998886022375e-09
+        },
+        "q80_components": {
+          "maximum": 51.0,
+          "mean": 45.625,
+          "minimum": 38.0,
+          "standard_deviation": 4.34042460069124
+        },
+        "q80_turnover": {
+          "maximum": 0.7322404371584699,
+          "mean": 0.6716601992894025,
+          "minimum": 0.6272189349112426,
+          "standard_deviation": 0.03310166675603733
+        },
+        "q90_components": {
+          "maximum": 39.0,
+          "mean": 32.625,
+          "minimum": 29.0,
+          "standard_deviation": 2.9730936268953445
+        },
+        "q90_turnover": {
+          "maximum": 0.8163265306122449,
+          "mean": 0.7341985163012791,
+          "minimum": 0.6818181818181819,
+          "standard_deviation": 0.04600498487238845
+        },
+        "q95_components": {
+          "maximum": 24.0,
+          "mean": 18.625,
+          "minimum": 11.0,
+          "standard_deviation": 3.9618718519695424
+        },
+        "q95_turnover": {
+          "maximum": 0.9056603773584906,
+          "mean": 0.790674010980593,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.07355693457295849
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.26733429863165625,
+          "mean": 0.2339314155297702,
+          "minimum": 0.19633985863328007,
+          "standard_deviation": 0.022108001610474198
+        },
+        "residual_localization": {
+          "maximum": 3.472674681279973,
+          "mean": 3.028316085484517,
+          "minimum": 2.592100525385389,
+          "standard_deviation": 0.26874734347472706
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.5793832850962344,
+          "mean": 0.5323940210034801,
+          "minimum": 0.4951026571012226,
+          "standard_deviation": 0.02467409349842227
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014551240250563735,
+          "mean": 0.01327602467352126,
+          "minimum": 0.012530458956860504,
+          "standard_deviation": 0.00066726660981648
+        },
+        "top_decile_components": {
+          "maximum": 39.0,
+          "mean": 32.625,
+          "minimum": 29.0,
+          "standard_deviation": 2.9730936268953445
+        },
+        "total_events": {
+          "maximum": 140465.0,
+          "mean": 140291.5,
+          "minimum": 140090.0,
+          "standard_deviation": 114.60989735371274
+        }
+      },
+      "F1_initial_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.026905387312188608,
+          "mean": 0.025259628701622232,
+          "minimum": 0.023163009082712814,
+          "standard_deviation": 0.001099803127048871
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.02468647289876428,
+          "mean": -0.02468647289876428,
+          "minimum": -0.02468647289876428,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.056174346233233696,
+          "mean": 0.056174346233233696,
+          "minimum": 0.056174346233233696,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9966062003911201,
+          "mean": 0.9954672911029554,
+          "minimum": 0.9942630341962203,
+          "standard_deviation": 0.0007083689900805225
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.1536076336628293,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.05574051414091794
+        },
+        "mean_energy": {
+          "maximum": 0.8051325659318197,
+          "mean": 0.8023232723125842,
+          "minimum": 0.8009905478775692,
+          "standard_deviation": 0.0012505440374404782
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 10.0,
+          "mean": 7.125,
+          "minimum": 4.0,
+          "standard_deviation": 2.416461403433896
+        },
+        "q80_turnover": {
+          "maximum": 0.17322834645669294,
+          "mean": 0.13019175048137183,
+          "minimum": 0.050420168067226934,
+          "standard_deviation": 0.039733236604397225
+        },
+        "q90_components": {
+          "maximum": 12.0,
+          "mean": 6.0,
+          "minimum": 3.0,
+          "standard_deviation": 2.878491668515698
+        },
+        "q90_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.1536076336628293,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.05574051414091794
+        },
+        "q95_components": {
+          "maximum": 6.0,
+          "mean": 4.125,
+          "minimum": 3.0,
+          "standard_deviation": 1.1259916264596033
+        },
+        "q95_turnover": {
+          "maximum": 0.24242424242424243,
+          "mean": 0.19254948680351908,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.06533636307508497
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0003291904221864546,
+          "mean": 0.00022529987311593102,
+          "minimum": 0.0001437077628004264,
+          "standard_deviation": 7.12023978919551e-05
+        },
+        "residual_localization": {
+          "maximum": 3.7871885983690796,
+          "mean": 2.9337245517730404,
+          "minimum": 2.283523659240396,
+          "standard_deviation": 0.47656994671783726
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.9293486597298053,
+          "mean": 0.9123367878028668,
+          "minimum": 0.8953063003240647,
+          "standard_deviation": 0.010359727268834596
+        },
+        "residual_rms_relative": {
+          "maximum": 0.009381189446342739,
+          "mean": 0.007632381907681696,
+          "minimum": 0.006042333180344532,
+          "standard_deviation": 0.0010874451516356093
+        },
+        "top_decile_components": {
+          "maximum": 12.0,
+          "mean": 6.0,
+          "minimum": 3.0,
+          "standard_deviation": 2.878491668515698
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F2_gaussian": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03016974448790743,
+          "mean": 0.02812895350495303,
+          "minimum": 0.025361753181209253,
+          "standard_deviation": 0.0018259651515125307
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.004383175921135763,
+          "mean": 0.004383175921135763,
+          "minimum": 0.004383175921135763,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.04984049108156552,
+          "mean": 0.04984049108156552,
+          "minimum": 0.04984049108156552,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.78958979290197,
+          "mean": 0.7566735184876963,
+          "minimum": 0.714896319640311,
+          "standard_deviation": 0.02984586446575628
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.7141318521081588,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.02860213310588825
+        },
+        "mean_energy": {
+          "maximum": 0.8056476861702186,
+          "mean": 0.8029050292007077,
+          "minimum": 0.799769472309823,
+          "standard_deviation": 0.001948444996084167
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.818241865211988e-06,
+          "mean": 1.8116011625829606e-06,
+          "minimum": 1.79966022770014e-06,
+          "standard_deviation": 6.321098617120969e-09
+        },
+        "q80_components": {
+          "maximum": 49.0,
+          "mean": 37.625,
+          "minimum": 25.0,
+          "standard_deviation": 7.46300399111702
+        },
+        "q80_turnover": {
+          "maximum": 0.6892655367231638,
+          "mean": 0.6281201795546433,
+          "minimum": 0.5590062111801242,
+          "standard_deviation": 0.05805683756027887
+        },
+        "q90_components": {
+          "maximum": 32.0,
+          "mean": 27.0,
+          "minimum": 18.0,
+          "standard_deviation": 5.154748157905347
+        },
+        "q90_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.7141318521081588,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.02860213310588825
+        },
+        "q95_components": {
+          "maximum": 22.0,
+          "mean": 17.625,
+          "minimum": 12.0,
+          "standard_deviation": 3.2923070504261465
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.785125674300728,
+          "minimum": 0.6511627906976745,
+          "standard_deviation": 0.07019639016079524
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.2690642618065688,
+          "mean": 0.2120879378815514,
+          "minimum": 0.1427528313057432,
+          "standard_deviation": 0.04301019680110355
+        },
+        "residual_localization": {
+          "maximum": 3.386578098263636,
+          "mean": 3.005312448644243,
+          "minimum": 2.6434371528803986,
+          "standard_deviation": 0.25364986770525844
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6638161256289277,
+          "mean": 0.5720631508784082,
+          "minimum": 0.5154418322453176,
+          "standard_deviation": 0.05132269329049406
+        },
+        "residual_rms_relative": {
+          "maximum": 0.01567935290650432,
+          "mean": 0.014222548660957216,
+          "minimum": 0.013275177207417862,
+          "standard_deviation": 0.0008517036131203492
+        },
+        "top_decile_components": {
+          "maximum": 32.0,
+          "mean": 27.0,
+          "minimum": 18.0,
+          "standard_deviation": 5.154748157905347
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F3_poisson": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.02961280431902374,
+          "mean": 0.02743440831305318,
+          "minimum": 0.024576790338620837,
+          "standard_deviation": 0.0015615962711398987
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.009541109651906394,
+          "mean": -0.009541109651906394,
+          "minimum": -0.009541109651906394,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.06190989195304064,
+          "mean": 0.06190989195304064,
+          "minimum": 0.06190989195304064,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0005753871032033794,
+          "mean": -0.01007384211995272,
+          "minimum": -0.02312103702286993,
+          "standard_deviation": 0.007944694968817823
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.0616637342571933,
+          "mean": 1.0216824878979063,
+          "minimum": 0.9472594004308239,
+          "standard_deviation": 0.03597595927759956
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7753895902491434,
+          "mean": 0.7255478378268576,
+          "minimum": 0.6819673581690849,
+          "standard_deviation": 0.033505917878588226
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.84,
+          "mean": 0.756599468984149,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.062494287317522164
+        },
+        "mean_energy": {
+          "maximum": 0.8037129743229098,
+          "mean": 0.8019979309089704,
+          "minimum": 0.800698244812721,
+          "standard_deviation": 0.0010125991664103405
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8708631637346103e-06,
+          "mean": 1.816019341823117e-06,
+          "minimum": 1.7756099070244994e-06,
+          "standard_deviation": 3.01476434619964e-08
+        },
+        "q80_components": {
+          "maximum": 51.0,
+          "mean": 44.75,
+          "minimum": 36.0,
+          "standard_deviation": 5.338539126015656
+        },
+        "q80_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.6701767985832847,
+          "minimum": 0.6107784431137724,
+          "standard_deviation": 0.04359146975915326
+        },
+        "q90_components": {
+          "maximum": 41.0,
+          "mean": 31.125,
+          "minimum": 22.0,
+          "standard_deviation": 5.792544469278715
+        },
+        "q90_turnover": {
+          "maximum": 0.84,
+          "mean": 0.756599468984149,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.062494287317522164
+        },
+        "q95_components": {
+          "maximum": 25.0,
+          "mean": 19.625,
+          "minimum": 14.0,
+          "standard_deviation": 3.583194903195431
+        },
+        "q95_turnover": {
+          "maximum": 0.9056603773584906,
+          "mean": 0.8257627423603903,
+          "minimum": 0.7391304347826086,
+          "standard_deviation": 0.05824955459977207
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.27971292635669703,
+          "mean": 0.24249504714638834,
+          "minimum": 0.18024992010689198,
+          "standard_deviation": 0.03239505779887015
+        },
+        "residual_localization": {
+          "maximum": 3.460469621461646,
+          "mean": 3.0141177872900533,
+          "minimum": 2.6423581971378143,
+          "standard_deviation": 0.22660778599869535
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.630689607927369,
+          "mean": 0.5313764852902583,
+          "minimum": 0.4652180201122537,
+          "standard_deviation": 0.05316344708865221
+        },
+        "residual_rms_relative": {
+          "maximum": 0.015394331785760537,
+          "mean": 0.013472749657472385,
+          "minimum": 0.012026598827061082,
+          "standard_deviation": 0.0010996108366777785
+        },
+        "top_decile_components": {
+          "maximum": 41.0,
+          "mean": 31.125,
+          "minimum": 22.0,
+          "standard_deviation": 5.792544469278715
+        },
+        "total_events": {
+          "maximum": 8863.0,
+          "mean": 8678.0,
+          "minimum": 8498.0,
+          "standard_deviation": 106.66770832824712
+        }
+      },
+      "F4_state_history": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03209624430480018,
+          "mean": 0.02775894501229333,
+          "minimum": 0.026121767575251635,
+          "standard_deviation": 0.0018615186155062778
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.008634439589086383,
+          "mean": -0.008634439589086383,
+          "minimum": -0.008634439589086383,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.054529285071570066,
+          "mean": 0.054529285071570066,
+          "minimum": 0.054529285071570066,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.7210661923728051,
+          "mean": 0.7024309751587653,
+          "minimum": 0.6905758033506234,
+          "standard_deviation": 0.012059836967804733
+        },
+        "event_state_rate_ratio": {
+          "maximum": 5.3923799434480255,
+          "mean": 5.215437199385352,
+          "minimum": 5.020840196731582,
+          "standard_deviation": 0.11194249435785933
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7615915089315539,
+          "mean": 0.7252649517622269,
+          "minimum": 0.6640786029623268,
+          "standard_deviation": 0.03517012081264978
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.8282828282828283,
+          "mean": 0.7609163187497063,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.050297288625005626
+        },
+        "mean_energy": {
+          "maximum": 0.8047177590140647,
+          "mean": 0.8028032220080601,
+          "minimum": 0.8012735758559154,
+          "standard_deviation": 0.0012560809557769126
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8446628666810196e-06,
+          "mean": 1.812666306749807e-06,
+          "minimum": 1.765747943722195e-06,
+          "standard_deviation": 2.3530492042620105e-08
+        },
+        "q80_components": {
+          "maximum": 52.0,
+          "mean": 44.0,
+          "minimum": 35.0,
+          "standard_deviation": 6.524678426668135
+        },
+        "q80_turnover": {
+          "maximum": 0.7459459459459459,
+          "mean": 0.6805744169934292,
+          "minimum": 0.6272189349112426,
+          "standard_deviation": 0.043100915467201975
+        },
+        "q90_components": {
+          "maximum": 37.0,
+          "mean": 31.5,
+          "minimum": 27.0,
+          "standard_deviation": 3.585685828003181
+        },
+        "q90_turnover": {
+          "maximum": 0.8282828282828283,
+          "mean": 0.7609163187497063,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.050297288625005626
+        },
+        "q95_components": {
+          "maximum": 25.0,
+          "mean": 20.25,
+          "minimum": 15.0,
+          "standard_deviation": 2.866057521105554
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.8121331192051289,
+          "minimum": 0.7659574468085106,
+          "standard_deviation": 0.039676242169855026
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.2644631927011473,
+          "mean": 0.2365654833229734,
+          "minimum": 0.1988635130695947,
+          "standard_deviation": 0.020706345620434278
+        },
+        "residual_localization": {
+          "maximum": 3.1209989300877354,
+          "mean": 2.8286554057153674,
+          "minimum": 2.6180009282076533,
+          "standard_deviation": 0.17401797254715382
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.602806055655126,
+          "mean": 0.5313869791268865,
+          "minimum": 0.49044719982849044,
+          "standard_deviation": 0.03875682052356531
+        },
+        "residual_rms_relative": {
+          "maximum": 0.01470770213193626,
+          "mean": 0.013335310601617155,
+          "minimum": 0.012563162772571624,
+          "standard_deviation": 0.0006841864010849214
+        },
+        "top_decile_components": {
+          "maximum": 37.0,
+          "mean": 31.5,
+          "minimum": 27.0,
+          "standard_deviation": 3.585685828003181
+        },
+        "total_events": {
+          "maximum": 14060.0,
+          "mean": 13858.875,
+          "minimum": 13558.0,
+          "standard_deviation": 160.45331986949617
+        }
+      },
+      "F5_memory": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.05577397765555464,
+          "mean": 0.049836763374223964,
+          "minimum": 0.04487031338361297,
+          "standard_deviation": 0.0036137734641811373
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.005578544436942377,
+          "mean": 0.005578544436942377,
+          "minimum": 0.005578544436942377,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.051880816286082584,
+          "mean": 0.051880816286082584,
+          "minimum": 0.051880816286082584,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.8111916595973935,
+          "mean": 0.7811447567119089,
+          "minimum": 0.7404539672890208,
+          "standard_deviation": 0.02777494100346477
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7252747252747253,
+          "mean": 0.6753197600051994,
+          "minimum": 0.6352941176470588,
+          "standard_deviation": 0.03596809580077617
+        },
+        "mean_energy": {
+          "maximum": 0.8135101424884615,
+          "mean": 0.8043762552842469,
+          "minimum": 0.7944826920721113,
+          "standard_deviation": 0.006255584140586262
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.833498197242293e-06,
+          "mean": 1.8111514204288325e-06,
+          "minimum": 1.7955758166921586e-06,
+          "standard_deviation": 1.321442330246888e-08
+        },
+        "q80_components": {
+          "maximum": 45.0,
+          "mean": 36.875,
+          "minimum": 26.0,
+          "standard_deviation": 6.599512969043355
+        },
+        "q80_turnover": {
+          "maximum": 0.6892655367231638,
+          "mean": 0.6108971340596495,
+          "minimum": 0.5222929936305732,
+          "standard_deviation": 0.05613806057803015
+        },
+        "q90_components": {
+          "maximum": 32.0,
+          "mean": 26.5,
+          "minimum": 22.0,
+          "standard_deviation": 3.585685828003181
+        },
+        "q90_turnover": {
+          "maximum": 0.7252747252747253,
+          "mean": 0.6753197600051994,
+          "minimum": 0.6352941176470588,
+          "standard_deviation": 0.03596809580077617
+        },
+        "q95_components": {
+          "maximum": 22.0,
+          "mean": 15.875,
+          "minimum": 12.0,
+          "standard_deviation": 3.181980515339464
+        },
+        "q95_turnover": {
+          "maximum": 0.84,
+          "mean": 0.733928488130553,
+          "minimum": 0.5853658536585367,
+          "standard_deviation": 0.08788280816397652
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.25384452841372346,
+          "mean": 0.20146538769300662,
+          "minimum": 0.13407007519602215,
+          "standard_deviation": 0.039848240258395756
+        },
+        "residual_localization": {
+          "maximum": 3.430609494696255,
+          "mean": 3.0283231669653397,
+          "minimum": 2.6091281505111694,
+          "standard_deviation": 0.27016997971280565
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6717825550806737,
+          "mean": 0.5861163697164786,
+          "minimum": 0.5331357080034784,
+          "standard_deviation": 0.046869440842509005
+        },
+        "residual_rms_relative": {
+          "maximum": 0.048464962866152136,
+          "mean": 0.044407855813070635,
+          "minimum": 0.04169841704591293,
+          "standard_deviation": 0.002309465715162634
+        },
+        "top_decile_components": {
+          "maximum": 32.0,
+          "mean": 26.5,
+          "minimum": 22.0,
+          "standard_deviation": 3.585685828003181
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "M0_mean_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.024489444954562307,
+          "mean": 0.024489444954562307,
+          "minimum": 0.024489444954562307,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.8024099462222999,
+          "mean": 0.8024099462222999,
+          "minimum": 0.8024099462222999,
+          "standard_deviation": 0.0
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_rms_relative": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      }
+    },
+    "conditional_event_history": {
+      "design": {
+        "dt": 0.1,
+        "fitted_predictors": [
+          "state score used by the intensity",
+          "pre-event decayed history",
+          "phi state as an irrelevant full-state control"
+        ],
+        "interpretation": "A raw after-event rate ratio can be elevated by persistent high-rate state alone. The fitted history coefficient asks whether history adds predictive rate after declared state is held fixed.",
+        "physical_time": 40.0,
+        "replicates_per_lane": 8,
+        "size": 16
+      },
+      "lane_summaries": {
+        "independent": {
+          "history_coefficient": {
+            "lower_95_percentile_bootstrap": -0.08011038430887264,
+            "mean": -0.008513642525707459,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.06246440652528237
+          },
+          "intercept": {
+            "lower_95_percentile_bootstrap": -0.7094546427517933,
+            "mean": -0.6913757350378407,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": -0.6760203344638814
+          },
+          "phi_control_coefficient": {
+            "lower_95_percentile_bootstrap": -0.008586326070242005,
+            "mean": 0.010545733535787354,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.029990496761842848
+          },
+          "state_score_coefficient": {
+            "lower_95_percentile_bootstrap": -0.02857506436783081,
+            "mean": -0.00814679846390829,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.014117830272112037
+          },
+          "unconditional_previous_event_rate_ratio": {
+            "lower_95_percentile_bootstrap": 0.8906507200919568,
+            "mean": 0.9447987625086548,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 1.0100810547612542
+          }
+        },
+        "state_and_history": {
+          "history_coefficient": {
+            "lower_95_percentile_bootstrap": 0.9799129061909057,
+            "mean": 1.0042708471010013,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 1.0320842852147984
+          },
+          "intercept": {
+            "lower_95_percentile_bootstrap": -0.7027606963785762,
+            "mean": -0.6952231114281204,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": -0.68835923422504
+          },
+          "phi_control_coefficient": {
+            "lower_95_percentile_bootstrap": -0.009628783603775263,
+            "mean": 0.008807454251465037,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.028147602806426503
+          },
+          "state_score_coefficient": {
+            "lower_95_percentile_bootstrap": 0.5145696613061739,
+            "mean": 0.538521534640285,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.5591964584230951
+          },
+          "unconditional_previous_event_rate_ratio": {
+            "lower_95_percentile_bootstrap": 2.6474108858014485,
+            "mean": 2.6874238361782252,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 2.7259716459180496
+          }
+        },
+        "state_only": {
+          "history_coefficient": {
+            "lower_95_percentile_bootstrap": -0.05270583900842752,
+            "mean": -0.02056382789116574,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.014025522269897384
+          },
+          "intercept": {
+            "lower_95_percentile_bootstrap": -0.6934551960473064,
+            "mean": -0.6880757009473908,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": -0.6823370802650639
+          },
+          "phi_control_coefficient": {
+            "lower_95_percentile_bootstrap": -0.0383747922671706,
+            "mean": -0.014670855680105881,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.006416723259163376
+          },
+          "state_score_coefficient": {
+            "lower_95_percentile_bootstrap": 0.5467602548213498,
+            "mean": 0.5636580403311636,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.5820526358635391
+          },
+          "unconditional_previous_event_rate_ratio": {
+            "lower_95_percentile_bootstrap": 1.3558644217361113,
+            "mean": 1.389362142522225,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 1.425100528433454
+          }
+        }
+      }
+    },
+    "post_revision_analysis": {
+      "classifier_all_matched_sources": {
+        "accuracy": 0.4861111111111111,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.37432674529071863,
+          "upper_95_wilson": 0.5993024539480719
+        },
+        "balanced_independent_binomial_tail_benchmark": 3.693882922611593e-10,
+        "conditional_balanced_label_permutation_p": 9.999000099990002e-05,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 2,
+            "F1_initial_only": 0,
+            "F2_gaussian": 4,
+            "F3_poisson": 3,
+            "F4_state_history": 3,
+            "F5_memory": 0
+          },
+          "F1_initial_only": {
+            "F0_matched": 0,
+            "F1_initial_only": 12,
+            "F2_gaussian": 0,
+            "F3_poisson": 0,
+            "F4_state_history": 0,
+            "F5_memory": 0
+          },
+          "F2_gaussian": {
+            "F0_matched": 1,
+            "F1_initial_only": 0,
+            "F2_gaussian": 2,
+            "F3_poisson": 3,
+            "F4_state_history": 6,
+            "F5_memory": 0
+          },
+          "F3_poisson": {
+            "F0_matched": 2,
+            "F1_initial_only": 0,
+            "F2_gaussian": 5,
+            "F3_poisson": 2,
+            "F4_state_history": 3,
+            "F5_memory": 0
+          },
+          "F4_state_history": {
+            "F0_matched": 0,
+            "F1_initial_only": 0,
+            "F2_gaussian": 4,
+            "F3_poisson": 3,
+            "F4_state_history": 5,
+            "F5_memory": 0
+          },
+          "F5_memory": {
+            "F0_matched": 0,
+            "F1_initial_only": 0,
+            "F2_gaussian": 0,
+            "F3_poisson": 0,
+            "F4_state_history": 0,
+            "F5_memory": 12
+          }
+        },
+        "correct": 35,
+        "lanes": [
+          "F0_matched",
+          "F1_initial_only",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history",
+          "F5_memory"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 72,
+        "uniform_chance": 0.16666666666666666
+      },
+      "classifier_memoryless_matched_sources": {
+        "accuracy": 0.16666666666666666,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.08695513576485567,
+          "upper_95_wilson": 0.295778284012556
+        },
+        "balanced_independent_binomial_tail_benchmark": 0.9388556692786901,
+        "conditional_balanced_label_permutation_p": 0.9421057894210579,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 1,
+            "F2_gaussian": 6,
+            "F3_poisson": 3,
+            "F4_state_history": 2
+          },
+          "F2_gaussian": {
+            "F0_matched": 2,
+            "F2_gaussian": 4,
+            "F3_poisson": 2,
+            "F4_state_history": 4
+          },
+          "F3_poisson": {
+            "F0_matched": 2,
+            "F2_gaussian": 5,
+            "F3_poisson": 1,
+            "F4_state_history": 4
+          },
+          "F4_state_history": {
+            "F0_matched": 2,
+            "F2_gaussian": 6,
+            "F3_poisson": 2,
+            "F4_state_history": 2
+          }
+        },
+        "correct": 8,
+        "lanes": [
+          "F0_matched",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 48,
+        "uniform_chance": 0.25
+      },
+      "classifier_ongoing_matched_sources": {
+        "accuracy": 0.3333333333333333,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.2272926152352268,
+          "upper_95_wilson": 0.4594313354788031
+        },
+        "balanced_independent_binomial_tail_benchmark": 0.010668297571044233,
+        "conditional_balanced_label_permutation_p": 0.010498950104989501,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 1,
+            "F2_gaussian": 5,
+            "F3_poisson": 4,
+            "F4_state_history": 2,
+            "F5_memory": 0
+          },
+          "F2_gaussian": {
+            "F0_matched": 1,
+            "F2_gaussian": 4,
+            "F3_poisson": 3,
+            "F4_state_history": 4,
+            "F5_memory": 0
+          },
+          "F3_poisson": {
+            "F0_matched": 2,
+            "F2_gaussian": 5,
+            "F3_poisson": 2,
+            "F4_state_history": 3,
+            "F5_memory": 0
+          },
+          "F4_state_history": {
+            "F0_matched": 2,
+            "F2_gaussian": 6,
+            "F3_poisson": 2,
+            "F4_state_history": 2,
+            "F5_memory": 0
+          },
+          "F5_memory": {
+            "F0_matched": 0,
+            "F2_gaussian": 0,
+            "F3_poisson": 0,
+            "F4_state_history": 1,
+            "F5_memory": 11
+          }
+        },
+        "correct": 20,
+        "lanes": [
+          "F0_matched",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history",
+          "F5_memory"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 60,
+        "uniform_chance": 0.2
+      },
+      "detector_threshold_contrasts": {
+        "q80": {
+          "feature": "q80_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.6707013132402159,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5096936075452817,
+            "mean": 0.541014429183863,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.5758016071918368
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.12968688405635306
+        },
+        "q90": {
+          "feature": "q90_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7224319761477466,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5634716192502481,
+            "mean": 0.5916442463383351,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.6195819375394775
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.13078772980941145
+        },
+        "q95": {
+          "feature": "q95_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7632634454961259,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.560245846205245,
+            "mean": 0.6022545783617844,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.6480267357860975
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.1610088671343415
+        }
+      },
+      "matched_input_power_by_lane": {
+        "F0_matched": 1.813884377958411e-06,
+        "F2_gaussian": 1.80828512793557e-06,
+        "F3_poisson": 1.8126803109660404e-06,
+        "F4_state_history": 1.8154965168806266e-06,
+        "F5_memory": 1.8047568971251628e-06
+      },
+      "matched_input_power_maximum_relative_spread": 0.005950729304634361,
+      "paired_contrasts": [
+        {
+          "feature": "residual_rms_relative",
+          "left": "F0_current",
+          "left_mean": 0.026000608025255664,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.024443083655797632,
+            "mean": 0.026000608025255664,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.027823374890150316
+          },
+          "right": "M0_mean_only",
+          "right_mean": 0.0
+        },
+        {
+          "feature": "residual_rms_relative",
+          "left": "F0_current",
+          "left_mean": 0.026000608025255664,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.011044618192180305,
+            "mean": 0.01244216375228989,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.013989576986082518
+          },
+          "right": "F0_matched",
+          "right_mean": 0.013558444272965773
+        },
+        {
+          "feature": "late_top_decile_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7224319761477466,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5638472519061013,
+            "mean": 0.5916442463383351,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.6195682344497281
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.13078772980941145
+        },
+        {
+          "feature": "late_temporal_correlation",
+          "left": "F5_memory",
+          "left_mean": 0.7665632517113606,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.023022867441760502,
+            "mean": 0.02501747161609737,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 0.026914683573363605
+          },
+          "right": "F2_gaussian",
+          "right_mean": 0.7415457800952631
+        },
+        {
+          "feature": "event_state_rate_ratio",
+          "left": "F4_state_history",
+          "left_mean": 5.314312165826703,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 4.20184096596068,
+            "mean": 4.3148660098739855,
+            "replicates": 12,
+            "upper_95_percentile_bootstrap": 4.413834222048105
+          },
+          "right": "F3_poisson",
+          "right_mean": 0.9994461559527181
+        }
+      ]
+    },
+    "post_revision_summary": {
+      "D0_no_source": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.4475814633357095,
+          "mean": 0.4475814633357096,
+          "minimum": 0.4475814633357095,
+          "standard_deviation": 1.1595901302887535e-16
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9988691779751661,
+          "mean": 0.9988691779751661,
+          "minimum": 0.9988691779751661,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.00015426251702631587,
+          "mean": 0.0001542625170263159,
+          "minimum": 0.00015426251702631587,
+          "standard_deviation": 2.831030591525277e-20
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 3.94937505790685e-08,
+          "mean": 3.94937505790685e-08,
+          "minimum": 3.94937505790685e-08,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 1.002456461959503,
+          "mean": 1.0024564619595033,
+          "minimum": 1.002456461959503,
+          "standard_deviation": 2.319180260577507e-16
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.969495775417412,
+          "mean": 0.9694957754174122,
+          "minimum": 0.969495775417412,
+          "standard_deviation": 1.1595901302887535e-16
+        },
+        "residual_rms_relative": {
+          "maximum": 0.9998058355743846,
+          "mean": 0.9998058355743847,
+          "minimum": 0.9998058355743846,
+          "standard_deviation": 1.1595901302887535e-16
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F0_current": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03575519413072554,
+          "mean": 0.0300541723532535,
+          "minimum": 0.025253128855819457,
+          "standard_deviation": 0.0031402408456120278
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.009858752227673523,
+          "mean": 0.00985875222767352,
+          "minimum": 0.009858752227673523,
+          "standard_deviation": 1.8118595785761773e-18
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.055234602426176116,
+          "mean": 0.055234602426176116,
+          "minimum": 0.055234602426176116,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.009182128610123819,
+          "mean": -0.000550465091697125,
+          "minimum": -0.02343135623148598,
+          "standard_deviation": 0.009072652368348578
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.0383780499279234,
+          "mean": 1.0217944952357643,
+          "minimum": 1.0091462771958288,
+          "standard_deviation": 0.008754677664899142
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9051218582396242,
+          "mean": 0.863150628742121,
+          "minimum": 0.8321216147039875,
+          "standard_deviation": 0.022317306539108496
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.6024096385542168,
+          "mean": 0.5145631251655196,
+          "minimum": 0.45333333333333337,
+          "standard_deviation": 0.04774160619008509
+        },
+        "mean_energy": {
+          "maximum": 0.819113049281521,
+          "mean": 0.8149157979806172,
+          "minimum": 0.8088170064866149,
+          "standard_deviation": 0.0029607847002513102
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.7942030887287932e-06,
+          "mean": 1.7779952813485878e-06,
+          "minimum": 1.7673241032243757e-06,
+          "standard_deviation": 8.39102788424678e-09
+        },
+        "q80_components": {
+          "maximum": 26.0,
+          "mean": 19.083333333333332,
+          "minimum": 9.0,
+          "standard_deviation": 6.067174470921868
+        },
+        "q80_turnover": {
+          "maximum": 0.5408805031446541,
+          "mean": 0.46785393706939343,
+          "minimum": 0.3776223776223776,
+          "standard_deviation": 0.052411273470720304
+        },
+        "q90_components": {
+          "maximum": 18.0,
+          "mean": 13.833333333333334,
+          "minimum": 9.0,
+          "standard_deviation": 2.2495790852081776
+        },
+        "q90_turnover": {
+          "maximum": 0.6024096385542168,
+          "mean": 0.5145631251655196,
+          "minimum": 0.45333333333333337,
+          "standard_deviation": 0.04774160619008509
+        },
+        "q95_components": {
+          "maximum": 14.0,
+          "mean": 9.25,
+          "minimum": 5.0,
+          "standard_deviation": 2.8324419275118906
+        },
+        "q95_turnover": {
+          "maximum": 0.7111111111111111,
+          "mean": 0.557735421759812,
+          "minimum": 0.34285714285714286,
+          "standard_deviation": 0.10862689638463337
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.145690043072711,
+          "mean": 0.11656346680398853,
+          "minimum": 0.0760164649579139,
+          "standard_deviation": 0.02196039474267012
+        },
+        "residual_localization": {
+          "maximum": 3.4203608835674038,
+          "mean": 2.7430539814779866,
+          "minimum": 2.3662137036365487,
+          "standard_deviation": 0.31164276958672926
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.8021047953260653,
+          "mean": 0.7044673140365886,
+          "minimum": 0.6379340941825928,
+          "standard_deviation": 0.04793153060334801
+        },
+        "residual_rms_relative": {
+          "maximum": 0.032903266019976334,
+          "mean": 0.026000608025255664,
+          "minimum": 0.02292572416352617,
+          "standard_deviation": 0.0031885198967639052
+        },
+        "top_decile_components": {
+          "maximum": 18.0,
+          "mean": 13.833333333333334,
+          "minimum": 9.0,
+          "standard_deviation": 2.2495790852081776
+        },
+        "total_events": {
+          "maximum": 141477.0,
+          "mean": 141178.0,
+          "minimum": 140788.0,
+          "standard_deviation": 202.9881322101906
+        }
+      },
+      "F0_matched": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.030239141155976798,
+          "mean": 0.027902381255746095,
+          "minimum": 0.023062883266191842,
+          "standard_deviation": 0.002009646564658119
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.0119168722859243,
+          "mean": -0.011916872285924302,
+          "minimum": -0.0119168722859243,
+          "standard_deviation": 1.8118595785761773e-18
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.052891976948529255,
+          "mean": 0.05289197694852924,
+          "minimum": 0.052891976948529255,
+          "standard_deviation": 1.4494876628609418e-17
+        },
+        "event_state_mean": {
+          "maximum": -0.0034949547121736835,
+          "mean": -0.011246196767561766,
+          "minimum": -0.029638079878483437,
+          "standard_deviation": 0.007128748254582588
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.013967905359137,
+          "mean": 1.0001977909385222,
+          "minimum": 0.986278499806959,
+          "standard_deviation": 0.007782511773132974
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7905098926659768,
+          "mean": 0.7284360142733574,
+          "minimum": 0.6541827791662581,
+          "standard_deviation": 0.042897816686176295
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.8041237113402062,
+          "mean": 0.7224319761477466,
+          "minimum": 0.6511627906976745,
+          "standard_deviation": 0.04816362438476479
+        },
+        "mean_energy": {
+          "maximum": 0.8036707551570275,
+          "mean": 0.801716638300639,
+          "minimum": 0.7987418402710307,
+          "standard_deviation": 0.001291966167643497
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8270142181784291e-06,
+          "mean": 1.813884377958411e-06,
+          "minimum": 1.8043411008112903e-06,
+          "standard_deviation": 7.677500559993624e-09
+        },
+        "q80_components": {
+          "maximum": 51.0,
+          "mean": 44.083333333333336,
+          "minimum": 36.0,
+          "standard_deviation": 5.071459057282921
+        },
+        "q80_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.6707013132402159,
+          "minimum": 0.6107784431137724,
+          "standard_deviation": 0.03896811975109599
+        },
+        "q90_components": {
+          "maximum": 36.0,
+          "mean": 30.916666666666668,
+          "minimum": 28.0,
+          "standard_deviation": 2.353269807709857
+        },
+        "q90_turnover": {
+          "maximum": 0.8041237113402062,
+          "mean": 0.7224319761477466,
+          "minimum": 0.6511627906976745,
+          "standard_deviation": 0.04816362438476479
+        },
+        "q95_components": {
+          "maximum": 23.0,
+          "mean": 19.166666666666668,
+          "minimum": 17.0,
+          "standard_deviation": 1.9462473604038075
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.7632634454961259,
+          "minimum": 0.5853658536585367,
+          "standard_deviation": 0.08374406824078812
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.28735342868762104,
+          "mean": 0.2353241336903419,
+          "minimum": 0.17926830726276916,
+          "standard_deviation": 0.03845704609970771
+        },
+        "residual_localization": {
+          "maximum": 3.3126558194782225,
+          "mean": 2.9848840358660613,
+          "minimum": 2.6545687586533235,
+          "standard_deviation": 0.21281003769503287
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6286948836734356,
+          "mean": 0.5336536562464954,
+          "minimum": 0.45535398034882313,
+          "standard_deviation": 0.05564920158846999
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014976844251221023,
+          "mean": 0.013558444272965773,
+          "minimum": 0.012148625689937494,
+          "standard_deviation": 0.0009516460460953336
+        },
+        "top_decile_components": {
+          "maximum": 36.0,
+          "mean": 30.916666666666668,
+          "minimum": 28.0,
+          "standard_deviation": 2.353269807709857
+        },
+        "total_events": {
+          "maximum": 140414.0,
+          "mean": 140223.5,
+          "minimum": 139973.0,
+          "standard_deviation": 122.3991235856918
+        }
+      },
+      "F1_initial_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.028896837417314972,
+          "mean": 0.02523399244816558,
+          "minimum": 0.023573043813329184,
+          "standard_deviation": 0.0016396190653103148
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.02291754406199255,
+          "mean": -0.02291754406199255,
+          "minimum": -0.02291754406199255,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.04691278961144836,
+          "mean": 0.04691278961144837,
+          "minimum": 0.04691278961144836,
+          "standard_deviation": 7.247438314304709e-18
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9973863842247653,
+          "mean": 0.9955587456388209,
+          "minimum": 0.9937702100640057,
+          "standard_deviation": 0.0009838266532632939
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.13078772980941145,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.039053988170570174
+        },
+        "mean_energy": {
+          "maximum": 0.8049919502082327,
+          "mean": 0.8025605575877757,
+          "minimum": 0.7998833917493889,
+          "standard_deviation": 0.0011643026375666523
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 13.0,
+          "mean": 7.916666666666667,
+          "minimum": 5.0,
+          "standard_deviation": 2.2343733444579583
+        },
+        "q80_turnover": {
+          "maximum": 0.1875,
+          "mean": 0.12968688405635306,
+          "minimum": 0.050420168067226934,
+          "standard_deviation": 0.03521698267237757
+        },
+        "q90_components": {
+          "maximum": 9.0,
+          "mean": 6.416666666666667,
+          "minimum": 2.0,
+          "standard_deviation": 1.8809249819912512
+        },
+        "q90_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.13078772980941145,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.039053988170570174
+        },
+        "q95_components": {
+          "maximum": 7.0,
+          "mean": 3.75,
+          "minimum": 1.0,
+          "standard_deviation": 1.3568010505999362
+        },
+        "q95_turnover": {
+          "maximum": 0.2941176470588235,
+          "mean": 0.1610088671343415,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.07173288243804053
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0002806465990633738,
+          "mean": 0.00020931007833218423,
+          "minimum": 0.00012298205364435737,
+          "standard_deviation": 4.514325658838562e-05
+        },
+        "residual_localization": {
+          "maximum": 4.117746204166202,
+          "mean": 2.8809640874722793,
+          "minimum": 2.30782187604389,
+          "standard_deviation": 0.4987914584581037
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.931064593990443,
+          "mean": 0.9073692289624019,
+          "minimum": 0.8891434076142443,
+          "standard_deviation": 0.011576789581007068
+        },
+        "residual_rms_relative": {
+          "maximum": 0.00909990435027574,
+          "mean": 0.007606114450871615,
+          "minimum": 0.006038045370707386,
+          "standard_deviation": 0.0009924724291719687
+        },
+        "top_decile_components": {
+          "maximum": 9.0,
+          "mean": 6.416666666666667,
+          "minimum": 2.0,
+          "standard_deviation": 1.8809249819912512
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F2_gaussian": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.030732820996387848,
+          "mean": 0.028247358482414886,
+          "minimum": 0.02446538023829196,
+          "standard_deviation": 0.0019875312250518065
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.0034564988505181144,
+          "mean": -0.003456498850518115,
+          "minimum": -0.0034564988505181144,
+          "standard_deviation": 4.529648946440443e-19
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.045089969781074886,
+          "mean": 0.045089969781074886,
+          "minimum": 0.045089969781074886,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.8011699337995826,
+          "mean": 0.7415457800952631,
+          "minimum": 0.6970307675685883,
+          "standard_deviation": 0.03105788034373997
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7227380610990412,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.04354512334855042
+        },
+        "mean_energy": {
+          "maximum": 0.8047632935277735,
+          "mean": 0.8021343012018417,
+          "minimum": 0.7998582408636712,
+          "standard_deviation": 0.0014077034935986138
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8222517276089528e-06,
+          "mean": 1.80828512793557e-06,
+          "minimum": 1.7931274725905676e-06,
+          "standard_deviation": 7.547646119746928e-09
+        },
+        "q80_components": {
+          "maximum": 55.0,
+          "mean": 45.083333333333336,
+          "minimum": 39.0,
+          "standard_deviation": 4.294993561924127
+        },
+        "q80_turnover": {
+          "maximum": 0.7252747252747253,
+          "mean": 0.6715610601242455,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.03482208885172517
+        },
+        "q90_components": {
+          "maximum": 35.0,
+          "mean": 29.333333333333332,
+          "minimum": 25.0,
+          "standard_deviation": 3.550501458394378
+        },
+        "q90_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7227380610990412,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.04354512334855042
+        },
+        "q95_components": {
+          "maximum": 22.0,
+          "mean": 18.0,
+          "minimum": 14.0,
+          "standard_deviation": 2.088931871468374
+        },
+        "q95_turnover": {
+          "maximum": 0.8846153846153846,
+          "mean": 0.7705460314260035,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.04993261531599473
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.28813593862039394,
+          "mean": 0.2270069539767006,
+          "minimum": 0.18782882821256303,
+          "standard_deviation": 0.030675132768253212
+        },
+        "residual_localization": {
+          "maximum": 3.355222285221501,
+          "mean": 2.8890153777654,
+          "minimum": 2.5994197951662663,
+          "standard_deviation": 0.22936315012954142
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6065920509036586,
+          "mean": 0.5471562870835359,
+          "minimum": 0.4891506918394255,
+          "standard_deviation": 0.03898093669229186
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014882206854636395,
+          "mean": 0.013719092118016649,
+          "minimum": 0.012786425788478552,
+          "standard_deviation": 0.0006016615409525255
+        },
+        "top_decile_components": {
+          "maximum": 35.0,
+          "mean": 29.333333333333332,
+          "minimum": 25.0,
+          "standard_deviation": 3.550501458394378
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F3_poisson": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.0293441028942414,
+          "mean": 0.026957275748688492,
+          "minimum": 0.02351609047691846,
+          "standard_deviation": 0.0015422104506589965
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.016341658090493004,
+          "mean": 0.016341658090493007,
+          "minimum": 0.016341658090493004,
+          "standard_deviation": 3.6237191571523546e-18
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05345342860152461,
+          "mean": 0.053453428601524605,
+          "minimum": 0.05345342860152461,
+          "standard_deviation": 7.247438314304709e-18
+        },
+        "event_state_mean": {
+          "maximum": -0.0029133884306452866,
+          "mean": -0.01591114121842995,
+          "minimum": -0.027441347079054858,
+          "standard_deviation": 0.007397723575952376
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.037663202818453,
+          "mean": 0.9994461559527181,
+          "minimum": 0.956026117219007,
+          "standard_deviation": 0.023152807937219747
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7843102150707428,
+          "mean": 0.7269542555616715,
+          "minimum": 0.681311593042946,
+          "standard_deviation": 0.03308615121067383
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7253910535858609,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.038009588518834535
+        },
+        "mean_energy": {
+          "maximum": 0.8056613443924378,
+          "mean": 0.8033453598931612,
+          "minimum": 0.8003852802827109,
+          "standard_deviation": 0.0013631282707717947
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8642021858451266e-06,
+          "mean": 1.8126803109660404e-06,
+          "minimum": 1.7654972353954673e-06,
+          "standard_deviation": 3.061797539797803e-08
+        },
+        "q80_components": {
+          "maximum": 57.0,
+          "mean": 45.333333333333336,
+          "minimum": 33.0,
+          "standard_deviation": 7.6078109781189935
+        },
+        "q80_turnover": {
+          "maximum": 0.7039106145251397,
+          "mean": 0.6613329273591783,
+          "minimum": 0.6107784431137724,
+          "standard_deviation": 0.03520073603129908
+        },
+        "q90_components": {
+          "maximum": 40.0,
+          "mean": 30.916666666666668,
+          "minimum": 23.0,
+          "standard_deviation": 4.851585182997284
+        },
+        "q90_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7253910535858609,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.038009588518834535
+        },
+        "q95_components": {
+          "maximum": 25.0,
+          "mean": 19.166666666666668,
+          "minimum": 13.0,
+          "standard_deviation": 4.152399817265221
+        },
+        "q95_turnover": {
+          "maximum": 0.84,
+          "mean": 0.7803362081804662,
+          "minimum": 0.7391304347826086,
+          "standard_deviation": 0.031387184220743596
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.2841408108523019,
+          "mean": 0.2277474919004884,
+          "minimum": 0.16454246361779645,
+          "standard_deviation": 0.03296679074286637
+        },
+        "residual_localization": {
+          "maximum": 3.289212808605335,
+          "mean": 2.994610355276894,
+          "minimum": 2.637337749849946,
+          "standard_deviation": 0.17485710662703785
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6371020399247832,
+          "mean": 0.5438017124769366,
+          "minimum": 0.4811658303110231,
+          "standard_deviation": 0.04606302654232532
+        },
+        "residual_rms_relative": {
+          "maximum": 0.015531765628362688,
+          "mean": 0.013601770782025534,
+          "minimum": 0.01255752266083876,
+          "standard_deviation": 0.0009777525368173273
+        },
+        "top_decile_components": {
+          "maximum": 40.0,
+          "mean": 30.916666666666668,
+          "minimum": 23.0,
+          "standard_deviation": 4.851585182997284
+        },
+        "total_events": {
+          "maximum": 8834.0,
+          "mean": 8652.75,
+          "minimum": 8421.0,
+          "standard_deviation": 133.45624070015677
+        }
+      },
+      "F4_state_history": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03198232321059827,
+          "mean": 0.028752574910111156,
+          "minimum": 0.026618601975089543,
+          "standard_deviation": 0.001527645903631953
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.015603212720646149,
+          "mean": 0.015603212720646152,
+          "minimum": 0.015603212720646149,
+          "standard_deviation": 3.6237191571523546e-18
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.0567956272928675,
+          "mean": 0.056795627292867495,
+          "minimum": 0.0567956272928675,
+          "standard_deviation": 7.247438314304709e-18
+        },
+        "event_state_mean": {
+          "maximum": 0.7461351624497631,
+          "mean": 0.7102719918508876,
+          "minimum": 0.6673528840326972,
+          "standard_deviation": 0.018617327513160115
+        },
+        "event_state_rate_ratio": {
+          "maximum": 5.578601407999682,
+          "mean": 5.314312165826703,
+          "minimum": 4.8528829119458585,
+          "standard_deviation": 0.19983259971013867
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7741784239017074,
+          "mean": 0.7436915353521601,
+          "minimum": 0.6926212099804492,
+          "standard_deviation": 0.028357172560877476
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7326228879236284,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.03275343569477324
+        },
+        "mean_energy": {
+          "maximum": 0.8045921646855562,
+          "mean": 0.8027759084488612,
+          "minimum": 0.8012431800403209,
+          "standard_deviation": 0.001109976281203879
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8503816511407196e-06,
+          "mean": 1.8154965168806266e-06,
+          "minimum": 1.777827294207334e-06,
+          "standard_deviation": 2.166682835097748e-08
+        },
+        "q80_components": {
+          "maximum": 52.0,
+          "mean": 43.0,
+          "minimum": 36.0,
+          "standard_deviation": 5.443929062392679
+        },
+        "q80_turnover": {
+          "maximum": 0.7039106145251397,
+          "mean": 0.6447590226285309,
+          "minimum": 0.5853658536585367,
+          "standard_deviation": 0.041320574592464424
+        },
+        "q90_components": {
+          "maximum": 34.0,
+          "mean": 28.5,
+          "minimum": 22.0,
+          "standard_deviation": 3.7779263191236634
+        },
+        "q90_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7326228879236284,
+          "minimum": 0.6666666666666667,
+          "standard_deviation": 0.03275343569477324
+        },
+        "q95_components": {
+          "maximum": 22.0,
+          "mean": 17.916666666666668,
+          "minimum": 14.0,
+          "standard_deviation": 2.874917653629668
+        },
+        "q95_turnover": {
+          "maximum": 0.8846153846153846,
+          "mean": 0.7895635726878294,
+          "minimum": 0.6818181818181819,
+          "standard_deviation": 0.05280870836430589
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.26498971598253473,
+          "mean": 0.22706342897108334,
+          "minimum": 0.19698604857559177,
+          "standard_deviation": 0.021085078840313
+        },
+        "residual_localization": {
+          "maximum": 3.2244437722981143,
+          "mean": 2.904636705599046,
+          "minimum": 2.686660490506784,
+          "standard_deviation": 0.13787848661481977
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6045662213944413,
+          "mean": 0.551145777414574,
+          "minimum": 0.5038654259041855,
+          "standard_deviation": 0.036666688652210615
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014472463783194259,
+          "mean": 0.01359807138583357,
+          "minimum": 0.012562723958557198,
+          "standard_deviation": 0.0005930941789795497
+        },
+        "top_decile_components": {
+          "maximum": 34.0,
+          "mean": 28.5,
+          "minimum": 22.0,
+          "standard_deviation": 3.7779263191236634
+        },
+        "total_events": {
+          "maximum": 14269.0,
+          "mean": 13919.916666666666,
+          "minimum": 13483.0,
+          "standard_deviation": 225.38833491365855
+        }
+      },
+      "F5_memory": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.053711565811232945,
+          "mean": 0.049372393286133374,
+          "minimum": 0.04198672451959575,
+          "standard_deviation": 0.003632974890065199
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.0036358032237193403,
+          "mean": -0.0036358032237193403,
+          "minimum": -0.0036358032237193403,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.0467203861170376,
+          "mean": 0.0467203861170376,
+          "minimum": 0.0467203861170376,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.8225513659946329,
+          "mean": 0.7665632517113606,
+          "minimum": 0.7239300602262865,
+          "standard_deviation": 0.029576213432169023
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7098619705338626,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.04200891453100382
+        },
+        "mean_energy": {
+          "maximum": 0.8100057542110176,
+          "mean": 0.801734591605351,
+          "minimum": 0.7946045773505248,
+          "standard_deviation": 0.004459010153002057
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8272741638715086e-06,
+          "mean": 1.8047568971251628e-06,
+          "minimum": 1.7851425344442542e-06,
+          "standard_deviation": 1.2086169663796911e-08
+        },
+        "q80_components": {
+          "maximum": 54.0,
+          "mean": 44.666666666666664,
+          "minimum": 39.0,
+          "standard_deviation": 4.417595671307133
+        },
+        "q80_turnover": {
+          "maximum": 0.7111111111111111,
+          "mean": 0.6523522580035214,
+          "minimum": 0.5679012345679013,
+          "standard_deviation": 0.04611398544455823
+        },
+        "q90_components": {
+          "maximum": 34.0,
+          "mean": 28.333333333333332,
+          "minimum": 24.0,
+          "standard_deviation": 3.550501458394378
+        },
+        "q90_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7098619705338626,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.04200891453100382
+        },
+        "q95_components": {
+          "maximum": 21.0,
+          "mean": 18.0,
+          "minimum": 13.0,
+          "standard_deviation": 2.1320071635561044
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.742265302415082,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.07066029110230419
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.26912971468472113,
+          "mean": 0.21501534512358889,
+          "minimum": 0.1786297847249308,
+          "standard_deviation": 0.02826637175010497
+        },
+        "residual_localization": {
+          "maximum": 3.309166725460027,
+          "mean": 2.883105681653007,
+          "minimum": 2.5468544941618028,
+          "standard_deviation": 0.2539174799115335
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6187769981753835,
+          "mean": 0.5624948539290946,
+          "minimum": 0.5129428276439753,
+          "standard_deviation": 0.03755252482378978
+        },
+        "residual_rms_relative": {
+          "maximum": 0.04645903830255908,
+          "mean": 0.04270677096295853,
+          "minimum": 0.03997721197297714,
+          "standard_deviation": 0.001971822084930004
+        },
+        "top_decile_components": {
+          "maximum": 34.0,
+          "mean": 28.333333333333332,
+          "minimum": 24.0,
+          "standard_deviation": 3.550501458394378
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "M0_mean_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.024489444954562307,
+          "mean": 0.024489444954562307,
+          "minimum": 0.024489444954562307,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.8024099462222999,
+          "mean": 0.8024099462222999,
+          "minimum": 0.8024099462222999,
+          "standard_deviation": 0.0
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 11.0,
+          "mean": 5.5,
+          "minimum": 0.0,
+          "standard_deviation": 3.605551275463989
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_rms_relative": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      }
+    },
+    "sensitivities": {
+      "dt_0_05": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.5,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.3142742581957335,
+              "upper_95_wilson": 0.6857257418042665
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.00016969920626322285,
+            "conditional_balanced_label_permutation_p": 9.999000099990002e-05,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 1,
+                "F4_state_history": 3,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 3,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 12,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.375,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.18481232558863633,
+              "upper_95_wilson": 0.6135895945449727
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.1896545726340264,
+            "conditional_balanced_label_permutation_p": 0.18518148185181482,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F2_gaussian": 0,
+                "F3_poisson": 1,
+                "F4_state_history": 1
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 2,
+                "F4_state_history": 2
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 1
+              }
+            },
+            "correct": 6,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.35,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.18119182410108206,
+              "upper_95_wilson": 0.5671457233147638
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.08669251356740035,
+            "conditional_balanced_label_permutation_p": 0.08449155084491551,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 3,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 1,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 2,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 7,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6794656632160465,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.48222185671150264,
+                "mean": 0.5329343702526669,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5786903443427953
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.14653129296337958
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7122010872525628,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4775793650793651,
+                "mean": 0.5851177539192296,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.692656142759094
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.12708333333333333
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7823282936362951,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5668546439146018,
+                "mean": 0.6542704979373704,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.741686351960139
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.12805779569892473
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 4.515835391768335e-07,
+            "F2_gaussian": 9.041584817449162e-07,
+            "F3_poisson": 9.004267315159183e-07,
+            "F4_state_history": 8.981557830348154e-07,
+            "F5_memory": 4.51963670535149e-07
+          },
+          "matched_input_power_maximum_relative_spread": 1.0021953931116632,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.019937669057196423,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.01747208104687373,
+                "mean": 0.019937669057196423,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.022167473078316423
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.019937669057196423,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.007912646211673103,
+                "mean": 0.01029968693851452,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.012409895552692157
+              },
+              "right": "F0_matched",
+              "right_mean": 0.009637982118681903
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7122010872525628,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4775793650793651,
+                "mean": 0.5851177539192296,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.692656142759094
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.12708333333333333
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.7747284756668336,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.027725557343649176,
+                "mean": 0.030022773283253285,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.03266568555056476
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7447057023835802
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.217285126310863,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 3.9136160108866225,
+                "mean": 4.233615296045732,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.553614581204842
+              },
+              "right": "F3_poisson",
+              "right_mean": 0.9836698302651302
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.05,
+          "initial_mode": "structured",
+          "physical_time": 30.0,
+          "size": 24,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9988679459895464,
+            "late_top_decile_turnover": 0.03389830508474578,
+            "mean_energy": 0.00015426915550413703,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.999806466025169
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": 0.008856948906174826,
+            "ensemble_pairwise_top_decile_jaccard": 0.04896867926460341,
+            "event_state_rate_ratio": 1.017775699862697,
+            "late_temporal_correlation": 0.8763960199954148,
+            "late_top_decile_turnover": 0.5709229060683659,
+            "mean_energy": 0.815296724132338,
+            "mean_injected_centered_power": 4.451707096705366e-07,
+            "residual_rms_relative": 0.019937669057196423
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": 0.0012977456170431283,
+            "ensemble_pairwise_top_decile_jaccard": 0.0582121071430473,
+            "event_state_rate_ratio": 0.9990353385442082,
+            "late_temporal_correlation": 0.7459337029932336,
+            "late_top_decile_turnover": 0.7122010872525628,
+            "mean_energy": 0.8052783840786937,
+            "mean_injected_centered_power": 4.515835391768335e-07,
+            "residual_rms_relative": 0.009637982118681903
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": -0.03068422441062313,
+            "ensemble_pairwise_top_decile_jaccard": 0.03211140810985377,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9954442574735123,
+            "late_top_decile_turnover": 0.12708333333333333,
+            "mean_energy": 0.8046413577695244,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.005361723691346428
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": 0.0350768211386219,
+            "ensemble_pairwise_top_decile_jaccard": 0.06170459692150581,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7447057023835802,
+            "late_top_decile_turnover": 0.6873200994827706,
+            "mean_energy": 0.8059551539516275,
+            "mean_injected_centered_power": 9.041584817449162e-07,
+            "residual_rms_relative": 0.013770464213969378
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": 0.02826492301974208,
+            "ensemble_pairwise_top_decile_jaccard": 0.03757910160254516,
+            "event_state_rate_ratio": 0.9836698302651302,
+            "late_temporal_correlation": 0.746384953368643,
+            "late_top_decile_turnover": 0.7096358320042531,
+            "mean_energy": 0.8056106971779652,
+            "mean_injected_centered_power": 9.004267315159183e-07,
+            "residual_rms_relative": 0.013972158441560297
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": -0.011345610741762617,
+            "ensemble_pairwise_top_decile_jaccard": 0.04982352482352482,
+            "event_state_rate_ratio": 5.217285126310863,
+            "late_temporal_correlation": 0.7401075597508288,
+            "late_top_decile_turnover": 0.7386159098973744,
+            "mean_energy": 0.8052154589874332,
+            "mean_injected_centered_power": 8.981557830348154e-07,
+            "residual_rms_relative": 0.013920022835793277
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": 0.03719273445857153,
+            "ensemble_pairwise_top_decile_jaccard": 0.051719673492569035,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7747284756668336,
+            "late_top_decile_turnover": 0.6781995176411095,
+            "mean_energy": 0.8080355992179471,
+            "mean_injected_centered_power": 4.51963670535149e-07,
+            "residual_rms_relative": 0.043031614438394324
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.8050534968684525,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "dt_0_2": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.5416666666666666,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.3507486535891948,
+              "upper_95_wilson": 0.72108666268789
+            },
+            "balanced_independent_binomial_tail_benchmark": 3.0370121329052564e-05,
+            "conditional_balanced_label_permutation_p": 9.999000099990002e-05,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 13,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.375,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.18481232558863633,
+              "upper_95_wilson": 0.6135895945449727
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.1896545726340264,
+            "conditional_balanced_label_permutation_p": 0.1947805219478052,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 3,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 2
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 1
+              }
+            },
+            "correct": 6,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.4,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.21880653237281705,
+              "upper_95_wilson": 0.6134184992377469
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.03214266308087517,
+            "conditional_balanced_label_permutation_p": 0.034996500349965,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 2,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 8,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6422672587201361,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4414665592988297,
+                "mean": 0.5099147236186912,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5699693584135128
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.13235253510144498
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7024523617820719,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4831233855942813,
+                "mean": 0.5529834336246192,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6441560562863129
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.14946892815745275
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7673028360528361,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4805871212121212,
+                "mean": 0.5953056464145174,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.7122070581748001
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.17199718963831867
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 7.242754060748116e-06,
+            "F2_gaussian": 3.619073452460341e-06,
+            "F3_poisson": 3.63889203844044e-06,
+            "F4_state_history": 3.611835804164073e-06,
+            "F5_memory": 7.2750414730552424e-06
+          },
+          "matched_input_power_maximum_relative_spread": 1.0142226467404396,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.04554793843045425,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.039471256835534194,
+                "mean": 0.04554793843045425,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.051141216057758926
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.04554793843045425,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.02012953619634536,
+                "mean": 0.025150797725541085,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.029237456649066552
+              },
+              "right": "F0_matched",
+              "right_mean": 0.020397140704913167
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7024523617820719,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4831233855942813,
+                "mean": 0.5529834336246192,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6441560562863129
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.14946892815745275
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.7638206001140141,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.01869451597064095,
+                "mean": 0.022638638437113917,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.025646580546645092
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7411819616769001
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.628004857052671,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 4.39361296851471,
+                "mean": 4.637575523020121,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.917498748210482
+              },
+              "right": "F3_poisson",
+              "right_mean": 0.9904293340325496
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.2,
+          "initial_mode": "structured",
+          "physical_time": 30.0,
+          "size": 24,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9988716281307217,
+            "late_top_decile_turnover": 0.03389830508474578,
+            "mean_energy": 0.00015424922407406816,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.9998045695014182
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": -0.012584506733194492,
+            "ensemble_pairwise_top_decile_jaccard": 0.050580352704405356,
+            "event_state_rate_ratio": 1.0340090322915305,
+            "late_temporal_correlation": 0.8871511428626089,
+            "late_top_decile_turnover": 0.48231806481806483,
+            "mean_energy": 0.8234062921941437,
+            "mean_injected_centered_power": 6.994768565306134e-06,
+            "residual_rms_relative": 0.04554793843045425
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": -0.017914967909363092,
+            "ensemble_pairwise_top_decile_jaccard": 0.06956146272916301,
+            "event_state_rate_ratio": 1.0078995796693362,
+            "late_temporal_correlation": 0.7586631069918542,
+            "late_top_decile_turnover": 0.7024523617820719,
+            "mean_energy": 0.7998599403679726,
+            "mean_injected_centered_power": 7.242754060748116e-06,
+            "residual_rms_relative": 0.020397140704913167
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": -0.08354327563721253,
+            "ensemble_pairwise_top_decile_jaccard": 0.0913342778878286,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9954189402833977,
+            "late_top_decile_turnover": 0.14946892815745275,
+            "mean_energy": 0.795017268739565,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.011257472535698516
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": -0.01501400775885734,
+            "ensemble_pairwise_top_decile_jaccard": 0.06616128242260605,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7411819616769001,
+            "late_top_decile_turnover": 0.6763462210983631,
+            "mean_energy": 0.7965876253006914,
+            "mean_injected_centered_power": 3.619073452460341e-06,
+            "residual_rms_relative": 0.013669294363215215
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": -0.028805486533598445,
+            "ensemble_pairwise_top_decile_jaccard": 0.05647683081311399,
+            "event_state_rate_ratio": 0.9904293340325496,
+            "late_temporal_correlation": 0.7414499338777296,
+            "late_top_decile_turnover": 0.7447152981427174,
+            "mean_energy": 0.7970266561706973,
+            "mean_injected_centered_power": 3.63889203844044e-06,
+            "residual_rms_relative": 0.013772712253535607
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": 0.04092779528761586,
+            "ensemble_pairwise_top_decile_jaccard": 0.06634301744364639,
+            "event_state_rate_ratio": 5.628004857052671,
+            "late_temporal_correlation": 0.7311849427999868,
+            "late_top_decile_turnover": 0.7368655244891458,
+            "mean_energy": 0.7979656724744952,
+            "mean_injected_centered_power": 3.611835804164073e-06,
+            "residual_rms_relative": 0.01359126831289462
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": -0.017389394664834523,
+            "ensemble_pairwise_top_decile_jaccard": 0.05985606647942426,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7638206001140141,
+            "late_top_decile_turnover": 0.6540642681983672,
+            "mean_energy": 0.7954350621852515,
+            "mean_injected_centered_power": 7.2750414730552424e-06,
+            "residual_rms_relative": 0.04271416725360698
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.7971528422129184,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "grid_16": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.5,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.3142742581957335,
+              "upper_95_wilson": 0.6857257418042665
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.00016969920626322285,
+            "conditional_balanced_label_permutation_p": 0.00019998000199980003,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 1,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 12,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.4375,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.23098652405492354,
+              "upper_95_wilson": 0.6682144360118811
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.07955725188367069,
+            "conditional_balanced_label_permutation_p": 0.07899210078992101,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F2_gaussian": 0,
+                "F3_poisson": 1,
+                "F4_state_history": 1
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 1
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 3
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 2
+              }
+            },
+            "correct": 7,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.5,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.2992980081982123,
+              "upper_95_wilson": 0.7007019918017877
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.0025948274006740205,
+            "conditional_balanced_label_permutation_p": 0.0027997200279972004,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 3,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 10,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6824882327770646,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5413179174350972,
+                "mean": 0.5915487390073821,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6409522049765952
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.09093949376968247
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7515873015873016,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4662137825096667,
+                "mean": 0.5489753459163915,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6317369093231162
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.20261195567091006
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.804112554112554,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.6753246753246752,
+                "mean": 0.7326839826839826,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.7900432900432901
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.07142857142857145
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 1.8077888332416588e-06,
+            "F2_gaussian": 1.8099468556685742e-06,
+            "F3_poisson": 1.8246116739931313e-06,
+            "F4_state_history": 1.8263708912960013e-06,
+            "F5_memory": 1.8232958656408987e-06
+          },
+          "matched_input_power_maximum_relative_spread": 0.010278887507575662,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.027559844975490713,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.025598593218852862,
+                "mean": 0.027559844975490713,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.029521096732128563
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.027559844975490713,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.012290877749422875,
+                "mean": 0.01409483922033048,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.015898800691238085
+              },
+              "right": "F0_matched",
+              "right_mean": 0.013465005755160233
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7515873015873016,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4662137825096667,
+                "mean": 0.5489753459163915,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6317369093231162
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.20261195567091006
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.7742719882028531,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.012282809288851254,
+                "mean": 0.015632102069267767,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.01870544266076002
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7586398861335852
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.1798018871138805,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 4.122989260423164,
+                "mean": 4.174767841854006,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.213601046323027
+              },
+              "right": "F3_poisson",
+              "right_mean": 1.005034045259874
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.1,
+          "initial_mode": "structured",
+          "physical_time": 30.0,
+          "size": 16,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9985052553870623,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.00015077939360890293,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.9998103229393117
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": 0.023006814158376413,
+            "ensemble_pairwise_top_decile_jaccard": 0.044535885276096254,
+            "event_state_rate_ratio": 1.0289934553052555,
+            "late_temporal_correlation": 0.8607838407548614,
+            "late_top_decile_turnover": 0.6111111111111112,
+            "mean_energy": 0.8148386238239997,
+            "mean_injected_centered_power": 1.7693612444387762e-06,
+            "residual_rms_relative": 0.027559844975490713
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": 1.0446800813593282e-05,
+            "ensemble_pairwise_top_decile_jaccard": 0.04160841148053424,
+            "event_state_rate_ratio": 1.0048541994475721,
+            "late_temporal_correlation": 0.701824555539686,
+            "late_top_decile_turnover": 0.7515873015873016,
+            "mean_energy": 0.8006671980190156,
+            "mean_injected_centered_power": 1.8077888332416588e-06,
+            "residual_rms_relative": 0.013465005755160233
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": 0.11032891734013943,
+            "ensemble_pairwise_top_decile_jaccard": 0.13275431880083044,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9958166358271281,
+            "late_top_decile_turnover": 0.20261195567091006,
+            "mean_energy": 0.7989815185219297,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.009700957823879787
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": 0.005847055423721277,
+            "ensemble_pairwise_top_decile_jaccard": 0.05869421527476238,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7586398861335852,
+            "late_top_decile_turnover": 0.6935672514619884,
+            "mean_energy": 0.7986507701527024,
+            "mean_injected_centered_power": 1.8099468556685742e-06,
+            "residual_rms_relative": 0.015507659121147621
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": 0.03373785621022641,
+            "ensemble_pairwise_top_decile_jaccard": 0.04396225156729358,
+            "event_state_rate_ratio": 1.005034045259874,
+            "late_temporal_correlation": 0.6910987137066607,
+            "late_top_decile_turnover": 0.7972415181717507,
+            "mean_energy": 0.8001829851336437,
+            "mean_injected_centered_power": 1.8246116739931313e-06,
+            "residual_rms_relative": 0.013051884785447516
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": -0.06385963104816815,
+            "ensemble_pairwise_top_decile_jaccard": 0.05827738187473572,
+            "event_state_rate_ratio": 5.1798018871138805,
+            "late_temporal_correlation": 0.7480109845788634,
+            "late_top_decile_turnover": 0.7453488372093022,
+            "mean_energy": 0.800212685997076,
+            "mean_injected_centered_power": 1.8263708912960013e-06,
+            "residual_rms_relative": 0.013872039539697102
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": 0.011523264839621244,
+            "ensemble_pairwise_top_decile_jaccard": 0.062433408145867036,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7742719882028531,
+            "late_top_decile_turnover": 0.7176865890280524,
+            "mean_energy": 0.7956835889508964,
+            "mean_injected_centered_power": 1.8232958656408987e-06,
+            "residual_rms_relative": 0.048093032418711205
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.8001418653078884,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "grid_32": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.4583333333333333,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.2789133373121099,
+              "upper_95_wilson": 0.6492513464108051
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.0008127565213440087,
+            "conditional_balanced_label_permutation_p": 0.0008999100089991,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 2,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 2,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 3,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 2,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 2,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 11,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.1875,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.06591599071428142,
+              "upper_95_wilson": 0.4300888096197414
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.8028889501001686,
+            "conditional_balanced_label_permutation_p": 0.7965203479652034,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 2,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 1
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 0
+              }
+            },
+            "correct": 3,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.4,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.21880653237281705,
+              "upper_95_wilson": 0.6134184992377469
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.03214266308087517,
+            "conditional_balanced_label_permutation_p": 0.0334966503349665,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 2,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 8,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.639493977181757,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.48208457093694707,
+                "mean": 0.5096484964558383,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.548684310271107
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.1298454807259187
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.741293999952749,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5435969869882225,
+                "mean": 0.5899304380934236,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6546975905483037
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.15136356185932537
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.8204184704184705,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5677217136233529,
+                "mean": 0.6563882383554515,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.7248196248196248
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.16403023206301898
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 1.8082695472260332e-06,
+            "F2_gaussian": 1.8154559867335318e-06,
+            "F3_poisson": 1.8207545612962305e-06,
+            "F4_state_history": 1.809532331420121e-06,
+            "F5_memory": 1.814138191331745e-06
+          },
+          "matched_input_power_maximum_relative_spread": 0.006904398787973776,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.02700304587971569,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.025281796811146395,
+                "mean": 0.02700304587971569,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.028724294948284986
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.02700304587971569,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.011865122283204427,
+                "mean": 0.013495358097693595,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.015268407825583075
+              },
+              "right": "F0_matched",
+              "right_mean": 0.013507687782022096
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.741293999952749,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5435969869882225,
+                "mean": 0.5899304380934236,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6546975905483037
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.15136356185932537
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.7784679370254414,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.021485327699592854,
+                "mean": 0.025216013086915734,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.028739231542894872
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7532519239385256
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.208844448198912,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 4.102881488685357,
+                "mean": 4.19025799172884,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.23457945542772
+              },
+              "right": "F3_poisson",
+              "right_mean": 1.018586456470072
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.1,
+          "initial_mode": "structured",
+          "physical_time": 30.0,
+          "size": 32,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9990731337651579,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.0001560037777264363,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.9998034936016649
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": 0.012654589467915972,
+            "ensemble_pairwise_top_decile_jaccard": 0.05530013881514597,
+            "event_state_rate_ratio": 1.0132075021218268,
+            "late_temporal_correlation": 0.8653942784566145,
+            "late_top_decile_turnover": 0.5272540076571431,
+            "mean_energy": 0.817180891685212,
+            "mean_injected_centered_power": 1.7716566869502595e-06,
+            "residual_rms_relative": 0.02700304587971569
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": -0.00857843924732757,
+            "ensemble_pairwise_top_decile_jaccard": 0.053880793999096926,
+            "event_state_rate_ratio": 0.9930380061389366,
+            "late_temporal_correlation": 0.732956075676065,
+            "late_top_decile_turnover": 0.741293999952749,
+            "mean_energy": 0.8032817034562775,
+            "mean_injected_centered_power": 1.8082695472260332e-06,
+            "residual_rms_relative": 0.013507687782022096
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": -0.014872228577289266,
+            "ensemble_pairwise_top_decile_jaccard": 0.07695576884569365,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.995234549557867,
+            "late_top_decile_turnover": 0.15136356185932537,
+            "mean_energy": 0.8034172020590304,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.007523701788608318
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": -0.0004955513618607951,
+            "ensemble_pairwise_top_decile_jaccard": 0.05109295827861218,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7532519239385256,
+            "late_top_decile_turnover": 0.7337505407473961,
+            "mean_energy": 0.803099254348803,
+            "mean_injected_centered_power": 1.8154559867335318e-06,
+            "residual_rms_relative": 0.013877977616955873
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": 0.0014330545631090809,
+            "ensemble_pairwise_top_decile_jaccard": 0.05139969378064616,
+            "event_state_rate_ratio": 1.018586456470072,
+            "late_temporal_correlation": 0.7416330792375914,
+            "late_top_decile_turnover": 0.6969648264616818,
+            "mean_energy": 0.8025981502549637,
+            "mean_injected_centered_power": 1.8207545612962305e-06,
+            "residual_rms_relative": 0.013779799221346745
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": -0.013635828203445152,
+            "ensemble_pairwise_top_decile_jaccard": 0.05121974812146823,
+            "event_state_rate_ratio": 5.208844448198912,
+            "late_temporal_correlation": 0.7514133541086425,
+            "late_top_decile_turnover": 0.7119109348787556,
+            "mean_energy": 0.8028524901838299,
+            "mean_injected_centered_power": 1.809532331420121e-06,
+            "residual_rms_relative": 0.013662979237237142
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": -0.0026553986932731505,
+            "ensemble_pairwise_top_decile_jaccard": 0.04847874508064263,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7784679370254414,
+            "late_top_decile_turnover": 0.7160958518328615,
+            "mean_energy": 0.8029582844416194,
+            "mean_injected_centered_power": 1.814138191331745e-06,
+            "residual_rms_relative": 0.04325099416243103
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.8032417519334194,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "horizon_15": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.4583333333333333,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.2789133373121099,
+              "upper_95_wilson": 0.6492513464108051
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.0008127565213440087,
+            "conditional_balanced_label_permutation_p": 0.000999900009999,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 2,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 11,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.3125,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.14164643854782039,
+              "upper_95_wilson": 0.5559564416525933
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.36981382477097213,
+            "conditional_balanced_label_permutation_p": 0.36896310368963103,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 2,
+                "F4_state_history": 2
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 3,
+                "F4_state_history": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 1
+              }
+            },
+            "correct": 5,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.35,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.18119182410108206,
+              "upper_95_wilson": 0.5671457233147638
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.08669251356740035,
+            "conditional_balanced_label_permutation_p": 0.0866913308669133,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 1
+              },
+              "F2_gaussian": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 3,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 7,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7783850710481145,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4625241103501973,
+                "mean": 0.4879720567545033,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5134200031588092
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.2904130142936113
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.8450564691896176,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4791834533166017,
+                "mean": 0.515061137723698,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5559759502506506
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.32999533146591964
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.9050643318123894,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5252003340238635,
+                "mean": 0.5892913395688091,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6267418917252436
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.31577299224358046
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 2.491751744737628e-06,
+            "F2_gaussian": 2.4966035513195667e-06,
+            "F3_poisson": 2.4853356343747825e-06,
+            "F4_state_history": 2.4817357564705166e-06,
+            "F5_memory": 2.509396578417019e-06
+          },
+          "matched_input_power_maximum_relative_spread": 0.011145756301565779,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.07135568402243703,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.0698559880166841,
+                "mean": 0.07135568402243703,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.07323040963598262
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.07135568402243703,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.018880742779489555,
+                "mean": 0.019987681757591948,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.02138696530509356
+              },
+              "right": "F0_matched",
+              "right_mean": 0.05136800226484508
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.8450564691896176,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.4791834533166017,
+                "mean": 0.515061137723698,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5559759502506506
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.32999533146591964
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.5527187124869368,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.028419677206829433,
+                "mean": 0.035037904967808134,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.041427014197597534
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.5176808075191288
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.128540228985421,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 3.9876327508789586,
+                "mean": 4.131669447849074,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.241897715283079
+              },
+              "right": "F3_poisson",
+              "right_mean": 0.9968707811363463
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.1,
+          "initial_mode": "structured",
+          "physical_time": 15.0,
+          "size": 24,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9983325049268726,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.00018040653681250898,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.9984579469153723
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": -0.020589638707139556,
+            "ensemble_pairwise_top_decile_jaccard": 0.037751312026109714,
+            "event_state_rate_ratio": 1.0464847831811053,
+            "late_temporal_correlation": 0.6593189615677623,
+            "late_top_decile_turnover": 0.720499967868389,
+            "mean_energy": 0.1223471315898908,
+            "mean_injected_centered_power": 2.455875072563442e-06,
+            "residual_rms_relative": 0.07135568402243703
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": -0.02266939330122635,
+            "ensemble_pairwise_top_decile_jaccard": 0.04060291683441972,
+            "event_state_rate_ratio": 1.0182213241233498,
+            "late_temporal_correlation": 0.5370956639220796,
+            "late_top_decile_turnover": 0.8450564691896176,
+            "mean_energy": 0.11923505221173512,
+            "mean_injected_centered_power": 2.491751744737628e-06,
+            "residual_rms_relative": 0.05136800226484508
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": -0.02031976661597815,
+            "ensemble_pairwise_top_decile_jaccard": 0.05333518855209742,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9726919177570459,
+            "late_top_decile_turnover": 0.32999533146591964,
+            "mean_energy": 0.11910021815643311,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.02484948898222686
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": -0.016532288334632533,
+            "ensemble_pairwise_top_decile_jaccard": 0.05647524556688043,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.5176808075191288,
+            "late_top_decile_turnover": 0.8868066197089052,
+            "mean_energy": 0.11901303818133423,
+            "mean_injected_centered_power": 2.4966035513195667e-06,
+            "residual_rms_relative": 0.0503817595169289
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": 0.023603131098049752,
+            "ensemble_pairwise_top_decile_jaccard": 0.05310734798502383,
+            "event_state_rate_ratio": 0.9968707811363463,
+            "late_temporal_correlation": 0.5319949973760607,
+            "late_top_decile_turnover": 0.8570041635802643,
+            "mean_energy": 0.1195530204746674,
+            "mean_injected_centered_power": 2.4853356343747825e-06,
+            "residual_rms_relative": 0.05041054879006054
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": 0.005779195694205018,
+            "ensemble_pairwise_top_decile_jaccard": 0.05213045146673465,
+            "event_state_rate_ratio": 5.128540228985421,
+            "late_temporal_correlation": 0.5192792055282733,
+            "late_top_decile_turnover": 0.8522663663606024,
+            "mean_energy": 0.1194375850821773,
+            "mean_injected_centered_power": 2.4817357564705166e-06,
+            "residual_rms_relative": 0.04918033677267829
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": -0.014888429390991538,
+            "ensemble_pairwise_top_decile_jaccard": 0.05157974579370481,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.5527187124869368,
+            "late_top_decile_turnover": 0.8621013688494266,
+            "mean_energy": 0.1193892623102648,
+            "mean_injected_centered_power": 2.509396578417019e-06,
+            "residual_rms_relative": 0.1540253883165252
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.11910023359955065,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "horizon_60": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.5,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.3142742581957335,
+              "upper_95_wilson": 0.6857257418042665
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.00016969920626322285,
+            "conditional_balanced_label_permutation_p": 0.00029997000299970003,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 12,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.25,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.10182067491213048,
+              "upper_95_wilson": 0.49498316535508774
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.5950128899421543,
+            "conditional_balanced_label_permutation_p": 0.5956404359564044,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0
+              }
+            },
+            "correct": 4,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.3,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.1454772448676043,
+              "upper_95_wilson": 0.5189728183535235
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.1957922145404508,
+            "conditional_balanced_label_permutation_p": 0.19588041195880412,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F2_gaussian": 2,
+                "F3_poisson": 1,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 3
+              }
+            },
+            "correct": 6,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6292768959435626,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5190840149052942,
+                "mean": 0.5632180217843992,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6073520286635041
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.06605887415916348
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6758956647705191,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5555951077035415,
+                "mean": 0.6092289981038523,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6645161290322581
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.06666666666666665
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7519664148422243,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.6019590271353685,
+                "mean": 0.6717580815088909,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.7548611111111111
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.08020833333333333
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 1.0499769151423307e-06,
+            "F2_gaussian": 1.0520878916531876e-06,
+            "F3_poisson": 1.0491754421445166e-06,
+            "F4_state_history": 1.0495288233723052e-06,
+            "F5_memory": 1.0501399990246074e-06
+          },
+          "matched_input_power_maximum_relative_spread": 0.002775941364694834,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.013327605566199819,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.012073627049224402,
+                "mean": 0.013327605566199819,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.014028686951293428
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.013327605566199819,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.008387398945964093,
+                "mean": 0.010031179182102888,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.010942421473397102
+              },
+              "right": "F0_matched",
+              "right_mean": 0.003296426384096932
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6758956647705191,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5555951077035415,
+                "mean": 0.6092289981038523,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6645161290322581
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.06666666666666665
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.8022641875018439,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.019973754994904114,
+                "mean": 0.02817615331165571,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.03637855162840731
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7740880341901882
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 5.883759156229591,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 4.653076997669817,
+                "mean": 4.895228422226598,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 5.0282895919660415
+              },
+              "right": "F3_poisson",
+              "right_mean": 0.9885307340029929
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.1,
+          "initial_mode": "structured",
+          "physical_time": 60.0,
+          "size": 24,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 1.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9996715246953236,
+            "late_top_decile_turnover": 0.03389830508474578,
+            "mean_energy": 0.00011348718549470821,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.9999836069755024
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": 0.09879167951219357,
+            "ensemble_pairwise_top_decile_jaccard": 0.04153311051401232,
+            "event_state_rate_ratio": 1.000023665828148,
+            "late_temporal_correlation": 0.9527891876560479,
+            "late_top_decile_turnover": 0.461702726774631,
+            "mean_energy": 7.046070066039016,
+            "mean_injected_centered_power": 1.0297213235459333e-06,
+            "residual_rms_relative": 0.013327605566199819
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": 0.008742978919788995,
+            "ensemble_pairwise_top_decile_jaccard": 0.03899199088721059,
+            "event_state_rate_ratio": 0.9874762732557288,
+            "late_temporal_correlation": 0.7859562051595425,
+            "late_top_decile_turnover": 0.6758956647705191,
+            "mean_energy": 6.967426591306442,
+            "mean_injected_centered_power": 1.0499769151423307e-06,
+            "residual_rms_relative": 0.003296426384096932
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": 0.20843026907121628,
+            "ensemble_pairwise_top_decile_jaccard": 0.06167840413381417,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9993226361472902,
+            "late_top_decile_turnover": 0.06666666666666665,
+            "mean_energy": 6.973389253888145,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.00199787696151164
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": 0.0038882197395176724,
+            "ensemble_pairwise_top_decile_jaccard": 0.04082928241166249,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7740880341901882,
+            "late_top_decile_turnover": 0.6440276313646843,
+            "mean_energy": 6.966896246471877,
+            "mean_injected_centered_power": 1.0520878916531876e-06,
+            "residual_rms_relative": 0.0033387338154250695
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": -0.0012883971647539617,
+            "ensemble_pairwise_top_decile_jaccard": 0.05839878596887942,
+            "event_state_rate_ratio": 0.9885307340029929,
+            "late_temporal_correlation": 0.7763147007742784,
+            "late_top_decile_turnover": 0.6891882264431285,
+            "mean_energy": 6.973951585489612,
+            "mean_injected_centered_power": 1.0491754421445166e-06,
+            "residual_rms_relative": 0.003380220000661174
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": -0.03768747862771415,
+            "ensemble_pairwise_top_decile_jaccard": 0.04438436698162099,
+            "event_state_rate_ratio": 5.883759156229591,
+            "late_temporal_correlation": 0.7797091689685292,
+            "late_top_decile_turnover": 0.6789579508698314,
+            "mean_energy": 6.969343609281017,
+            "mean_injected_centered_power": 1.0495288233723052e-06,
+            "residual_rms_relative": 0.003351785101850806
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": 0.00522968736061354,
+            "ensemble_pairwise_top_decile_jaccard": 0.04091647095450852,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.8022641875018439,
+            "late_top_decile_turnover": 0.602651635823028,
+            "mean_energy": 6.9618481607757365,
+            "mean_injected_centered_power": 1.0501399990246074e-06,
+            "residual_rms_relative": 0.010379535798255407
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 6.969524809156742,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      },
+      "vacuum_initial": {
+        "analysis": {
+          "classifier_all_matched_sources": {
+            "accuracy": 0.5,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.3142742581957335,
+              "upper_95_wilson": 0.6857257418042665
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.00016969920626322285,
+            "conditional_balanced_label_permutation_p": 0.00039996000399960006,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F1_initial_only": {
+                "F0_matched": 0,
+                "F1_initial_only": 4,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 1,
+                "F1_initial_only": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 2,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F1_initial_only": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 12,
+            "lanes": [
+              "F0_matched",
+              "F1_initial_only",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 24,
+            "uniform_chance": 0.16666666666666666
+          },
+          "classifier_memoryless_matched_sources": {
+            "accuracy": 0.25,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.10182067491213048,
+              "upper_95_wilson": 0.49498316535508774
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.5950128899421543,
+            "conditional_balanced_label_permutation_p": 0.5988401159884011,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F2_gaussian": 1,
+                "F3_poisson": 1,
+                "F4_state_history": 2
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 3
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 3,
+                "F4_state_history": 1
+              }
+            },
+            "correct": 4,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 16,
+            "uniform_chance": 0.25
+          },
+          "classifier_ongoing_matched_sources": {
+            "accuracy": 0.4,
+            "accuracy_interval": {
+              "lower_95_wilson": 0.21880653237281705,
+              "upper_95_wilson": 0.6134184992377469
+            },
+            "balanced_independent_binomial_tail_benchmark": 0.03214266308087517,
+            "conditional_balanced_label_permutation_p": 0.034596540345965404,
+            "confusion": {
+              "F0_matched": {
+                "F0_matched": 0,
+                "F2_gaussian": 2,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F2_gaussian": {
+                "F0_matched": 1,
+                "F2_gaussian": 3,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 0
+              },
+              "F3_poisson": {
+                "F0_matched": 1,
+                "F2_gaussian": 1,
+                "F3_poisson": 0,
+                "F4_state_history": 2,
+                "F5_memory": 0
+              },
+              "F4_state_history": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 3,
+                "F4_state_history": 1,
+                "F5_memory": 0
+              },
+              "F5_memory": {
+                "F0_matched": 0,
+                "F2_gaussian": 0,
+                "F3_poisson": 0,
+                "F4_state_history": 0,
+                "F5_memory": 4
+              }
+            },
+            "correct": 8,
+            "lanes": [
+              "F0_matched",
+              "F2_gaussian",
+              "F3_poisson",
+              "F4_state_history",
+              "F5_memory"
+            ],
+            "permutation_draws": 10000,
+            "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+            "total": 20,
+            "uniform_chance": 0.2
+          },
+          "detector_threshold_contrasts": {
+            "q80": {
+              "feature": "q80_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.6624606015686784,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.533430370708546,
+                "mean": 0.5487641446675678,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.5640979186265896
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.11369645690111052
+            },
+            "q90": {
+              "feature": "q90_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7717556375225271,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5868859273114593,
+                "mean": 0.6432102302885954,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6995345332657316
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.12854540723393182
+            },
+            "q95": {
+              "feature": "q95_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.8191143697019414,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5509037001897533,
+                "mean": 0.6488107643888484,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.7437979306147291
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.17030360531309297
+            }
+          },
+          "matched_input_power_by_lane": {
+            "F0_matched": 1.885590591643928e-06,
+            "F2_gaussian": 1.885997546972312e-06,
+            "F3_poisson": 1.8969103934923982e-06,
+            "F4_state_history": 1.8944825100646541e-06,
+            "F5_memory": 1.8951117904483892e-06
+          },
+          "matched_input_power_maximum_relative_spread": 0.006003319012427344,
+          "paired_contrasts": [
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.4010436503358876,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.3635366765867748,
+                "mean": 0.4010436503358876,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.42568250368027577
+              },
+              "right": "M0_mean_only",
+              "right_mean": 0.0
+            },
+            {
+              "feature": "residual_rms_relative",
+              "left": "F0_current",
+              "left_mean": 0.4010436503358876,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.34892363354606937,
+                "mean": 0.38614063241849483,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.410781934629013
+              },
+              "right": "F0_matched",
+              "right_mean": 0.014903017917392817
+            },
+            {
+              "feature": "late_top_decile_turnover",
+              "left": "F0_matched",
+              "left_mean": 0.7717556375225271,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.5868859273114593,
+                "mean": 0.6432102302885954,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.6995345332657315
+              },
+              "right": "F1_initial_only",
+              "right_mean": 0.12854540723393182
+            },
+            {
+              "feature": "late_temporal_correlation",
+              "left": "F5_memory",
+              "left_mean": 0.7478762410634625,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 0.011990442159612758,
+                "mean": 0.023284612350565365,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 0.03080552999895869
+              },
+              "right": "F2_gaussian",
+              "right_mean": 0.7245916287128972
+            },
+            {
+              "feature": "event_state_rate_ratio",
+              "left": "F4_state_history",
+              "left_mean": 4.989928291367498,
+              "left_minus_right": {
+                "lower_95_percentile_bootstrap": 3.872275637317058,
+                "mean": 3.976525635122341,
+                "replicates": 4,
+                "upper_95_percentile_bootstrap": 4.110288319777158
+              },
+              "right": "F3_poisson",
+              "right_mean": 1.0134026562451577
+            }
+          ]
+        },
+        "setting": {
+          "calibration_replicates_per_lane": 4,
+          "dt": 0.1,
+          "initial_mode": "vacuum",
+          "physical_time": 30.0,
+          "size": 24,
+          "validation_replicates_per_lane": 4
+        },
+        "validation_compact_summary": {
+          "D0_no_source": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.0,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 1.0
+          },
+          "F0_current": {
+            "ensemble_pairwise_final_correlation": -0.012383795963252871,
+            "ensemble_pairwise_top_decile_jaccard": 0.05833669933964919,
+            "event_state_rate_ratio": 1.1832524983839487,
+            "late_temporal_correlation": 0.9858534396769986,
+            "late_top_decile_turnover": 0.20756787263317114,
+            "mean_energy": 0.4705707172908621,
+            "mean_injected_centered_power": 1.9250318940389276e-06,
+            "residual_rms_relative": 0.4010436503358876
+          },
+          "F0_matched": {
+            "ensemble_pairwise_final_correlation": 0.013075585060630878,
+            "ensemble_pairwise_top_decile_jaccard": 0.04515892336993254,
+            "event_state_rate_ratio": 1.0001920412869,
+            "late_temporal_correlation": 0.7302037326044519,
+            "late_top_decile_turnover": 0.7717556375225271,
+            "mean_energy": 0.7189201840539611,
+            "mean_injected_centered_power": 1.885590591643928e-06,
+            "residual_rms_relative": 0.014903017917392817
+          },
+          "F1_initial_only": {
+            "ensemble_pairwise_final_correlation": -0.11897000034108711,
+            "ensemble_pairwise_top_decile_jaccard": 0.05520755050424178,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.9960856039067592,
+            "late_top_decile_turnover": 0.12854540723393182,
+            "mean_energy": 0.71842223154547,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.008287945275737361
+          },
+          "F2_gaussian": {
+            "ensemble_pairwise_final_correlation": 0.013361152048947037,
+            "ensemble_pairwise_top_decile_jaccard": 0.05642267565943578,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7245916287128972,
+            "late_top_decile_turnover": 0.6929264555669049,
+            "mean_energy": 0.718393594889936,
+            "mean_injected_centered_power": 1.885997546972312e-06,
+            "residual_rms_relative": 0.014773935944413783
+          },
+          "F3_poisson": {
+            "ensemble_pairwise_final_correlation": -0.01263836225095421,
+            "ensemble_pairwise_top_decile_jaccard": 0.05161277918287264,
+            "event_state_rate_ratio": 1.0134026562451577,
+            "late_temporal_correlation": 0.7170330972194863,
+            "late_top_decile_turnover": 0.7456112255014109,
+            "mean_energy": 0.7189321825352433,
+            "mean_injected_centered_power": 1.8969103934923982e-06,
+            "residual_rms_relative": 0.014704105128028468
+          },
+          "F4_state_history": {
+            "ensemble_pairwise_final_correlation": 0.0062400590272897695,
+            "ensemble_pairwise_top_decile_jaccard": 0.06938942155417199,
+            "event_state_rate_ratio": 4.989928291367498,
+            "late_temporal_correlation": 0.7247108633275259,
+            "late_top_decile_turnover": 0.757887506568157,
+            "mean_energy": 0.7187577911365898,
+            "mean_injected_centered_power": 1.8944825100646541e-06,
+            "residual_rms_relative": 0.015312377956210684
+          },
+          "F5_memory": {
+            "ensemble_pairwise_final_correlation": 0.00995420696301322,
+            "ensemble_pairwise_top_decile_jaccard": 0.05666685987786905,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.7478762410634625,
+            "late_top_decile_turnover": 0.6815598498705371,
+            "mean_energy": 0.7191837204827863,
+            "mean_injected_centered_power": 1.8951117904483892e-06,
+            "residual_rms_relative": 0.04604382312728522
+          },
+          "M0_mean_only": {
+            "ensemble_pairwise_final_correlation": 0.0,
+            "ensemble_pairwise_top_decile_jaccard": 1.0,
+            "event_state_rate_ratio": 0.0,
+            "late_temporal_correlation": 0.0,
+            "late_top_decile_turnover": 0.0,
+            "mean_energy": 0.7181759343229879,
+            "mean_injected_centered_power": 0.0,
+            "residual_rms_relative": 0.0
+          }
+        }
+      }
+    },
+    "three_point_dt_scaling": {
+      "F0_current": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          4.451707096705366e-07,
+          1.77404283363766e-06,
+          6.994768565306134e-06
+        ],
+        "one_step_input_power_exponent": 1.9869228731149111,
+        "residual_rms_exponent": 0.5959445024809291,
+        "residual_rms_relative": [
+          0.019937669057196423,
+          0.027840663031177527,
+          0.04554793843045425
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      },
+      "F0_matched": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          4.515835391768335e-07,
+          1.8125971718505556e-06,
+          7.242754060748116e-06
+        ],
+        "one_step_input_power_exponent": 2.0017367915519255,
+        "residual_rms_exponent": 0.540781949061784,
+        "residual_rms_relative": [
+          0.009637982118681903,
+          0.013770955135126346,
+          0.020397140704913167
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      },
+      "F2_gaussian": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          9.041584817449162e-07,
+          1.8073609631964208e-06,
+          3.619073452460341e-06
+        ],
+        "one_step_input_power_exponent": 1.000486405994868,
+        "residual_rms_exponent": -0.005319212373450174,
+        "residual_rms_relative": [
+          0.013770464213969378,
+          0.013285661024899606,
+          0.013669294363215215
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      },
+      "F3_poisson": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          9.004267315159183e-07,
+          1.8132751566454829e-06,
+          3.63889203844044e-06
+        ],
+        "one_step_input_power_exponent": 1.0074092280393356,
+        "residual_rms_exponent": -0.010371105567187643,
+        "residual_rms_relative": [
+          0.013972158441560297,
+          0.014172688992903595,
+          0.013772712253535607
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      },
+      "F4_state_history": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          8.981557830348154e-07,
+          1.808989365412319e-06,
+          3.611835804164073e-06
+        ],
+        "one_step_input_power_exponent": 1.00384735239733,
+        "residual_rms_exponent": -0.01724074290818908,
+        "residual_rms_relative": [
+          0.013920022835793277,
+          0.013532169713780278,
+          0.01359126831289462
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      },
+      "F5_memory": {
+        "dt": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "mean_injected_centered_power": [
+          4.51963670535149e-07,
+          1.801231092138043e-06,
+          7.2750414730552424e-06
+        ],
+        "one_step_input_power_exponent": 2.004338377934867,
+        "residual_rms_exponent": -0.005341155711740698,
+        "residual_rms_relative": [
+          0.043031614438394324,
+          0.04129537486640704,
+          0.04271416725360698
+        ],
+        "warning": "Three-point navigation fit across independent seed families; it is not an asymptotic convergence proof."
+      }
+    },
+    "validation_analysis": {
+      "classifier_all_matched_sources": {
+        "accuracy": 0.3541666666666667,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.23433644125604858,
+          "upper_95_wilson": 0.4956094298965691
+        },
+        "balanced_independent_binomial_tail_benchmark": 0.0013167669176208652,
+        "conditional_balanced_label_permutation_p": 0.0012998700129987,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 1,
+            "F1_initial_only": 0,
+            "F2_gaussian": 3,
+            "F3_poisson": 1,
+            "F4_state_history": 3,
+            "F5_memory": 0
+          },
+          "F1_initial_only": {
+            "F0_matched": 0,
+            "F1_initial_only": 8,
+            "F2_gaussian": 0,
+            "F3_poisson": 0,
+            "F4_state_history": 0,
+            "F5_memory": 0
+          },
+          "F2_gaussian": {
+            "F0_matched": 2,
+            "F1_initial_only": 0,
+            "F2_gaussian": 0,
+            "F3_poisson": 2,
+            "F4_state_history": 4,
+            "F5_memory": 0
+          },
+          "F3_poisson": {
+            "F0_matched": 0,
+            "F1_initial_only": 0,
+            "F2_gaussian": 7,
+            "F3_poisson": 0,
+            "F4_state_history": 1,
+            "F5_memory": 0
+          },
+          "F4_state_history": {
+            "F0_matched": 4,
+            "F1_initial_only": 0,
+            "F2_gaussian": 3,
+            "F3_poisson": 1,
+            "F4_state_history": 0,
+            "F5_memory": 0
+          },
+          "F5_memory": {
+            "F0_matched": 0,
+            "F1_initial_only": 0,
+            "F2_gaussian": 0,
+            "F3_poisson": 0,
+            "F4_state_history": 0,
+            "F5_memory": 8
+          }
+        },
+        "correct": 17,
+        "lanes": [
+          "F0_matched",
+          "F1_initial_only",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history",
+          "F5_memory"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 48,
+        "uniform_chance": 0.16666666666666666
+      },
+      "classifier_memoryless_matched_sources": {
+        "accuracy": 0.03125,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.005537860164003122,
+          "upper_95_wilson": 0.15744263820012558
+        },
+        "balanced_independent_binomial_tail_benchmark": 0.9998995475742793,
+        "conditional_balanced_label_permutation_p": 1.0,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 0,
+            "F2_gaussian": 5,
+            "F3_poisson": 1,
+            "F4_state_history": 2
+          },
+          "F2_gaussian": {
+            "F0_matched": 2,
+            "F2_gaussian": 1,
+            "F3_poisson": 1,
+            "F4_state_history": 4
+          },
+          "F3_poisson": {
+            "F0_matched": 0,
+            "F2_gaussian": 8,
+            "F3_poisson": 0,
+            "F4_state_history": 0
+          },
+          "F4_state_history": {
+            "F0_matched": 2,
+            "F2_gaussian": 4,
+            "F3_poisson": 2,
+            "F4_state_history": 0
+          }
+        },
+        "correct": 1,
+        "lanes": [
+          "F0_matched",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 32,
+        "uniform_chance": 0.25
+      },
+      "classifier_ongoing_matched_sources": {
+        "accuracy": 0.175,
+        "accuracy_interval": {
+          "lower_95_wilson": 0.0874541374603592,
+          "upper_95_wilson": 0.31949990331787714
+        },
+        "balanced_independent_binomial_tail_benchmark": 0.7141086301686946,
+        "conditional_balanced_label_permutation_p": 0.7150284971502849,
+        "confusion": {
+          "F0_matched": {
+            "F0_matched": 1,
+            "F2_gaussian": 4,
+            "F3_poisson": 1,
+            "F4_state_history": 2,
+            "F5_memory": 0
+          },
+          "F2_gaussian": {
+            "F0_matched": 1,
+            "F2_gaussian": 1,
+            "F3_poisson": 3,
+            "F4_state_history": 3,
+            "F5_memory": 0
+          },
+          "F3_poisson": {
+            "F0_matched": 0,
+            "F2_gaussian": 8,
+            "F3_poisson": 0,
+            "F4_state_history": 0,
+            "F5_memory": 0
+          },
+          "F4_state_history": {
+            "F0_matched": 2,
+            "F2_gaussian": 4,
+            "F3_poisson": 2,
+            "F4_state_history": 0,
+            "F5_memory": 0
+          },
+          "F5_memory": {
+            "F0_matched": 0,
+            "F2_gaussian": 0,
+            "F3_poisson": 2,
+            "F4_state_history": 1,
+            "F5_memory": 5
+          }
+        },
+        "correct": 7,
+        "lanes": [
+          "F0_matched",
+          "F2_gaussian",
+          "F3_poisson",
+          "F4_state_history",
+          "F5_memory"
+        ],
+        "permutation_draws": 10000,
+        "permutation_scope": "Evaluation labels only, conditional on the frozen trained centroids and balanced evaluation set; calibration labels are not re-permuted.",
+        "total": 40,
+        "uniform_chance": 0.2
+      },
+      "detector_threshold_contrasts": {
+        "q80": {
+          "feature": "q80_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.673980150297464,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.530269298993211,
+            "mean": 0.5585093536698785,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.5845174406595226
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.11547079662758551
+        },
+        "q90": {
+          "feature": "q90_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7307546701471554,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5658128764141627,
+            "mean": 0.5954990599419485,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.6227694465422375
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.135255610205207
+        },
+        "q95": {
+          "feature": "q95_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7754761623220234,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5716509204847979,
+            "mean": 0.6337820029867351,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.7039947824083739
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.14169415933528837
+        }
+      },
+      "matched_input_power_by_lane": {
+        "F0_matched": 1.8125971718505556e-06,
+        "F2_gaussian": 1.8073609631964208e-06,
+        "F3_poisson": 1.8132751566454829e-06,
+        "F4_state_history": 1.808989365412319e-06,
+        "F5_memory": 1.801231092138043e-06
+      },
+      "matched_input_power_maximum_relative_spread": 0.0066865737328261066,
+      "paired_contrasts": [
+        {
+          "feature": "residual_rms_relative",
+          "left": "F0_current",
+          "left_mean": 0.027840663031177527,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.02654117294308621,
+            "mean": 0.027840663031177527,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.02919803189466301
+          },
+          "right": "M0_mean_only",
+          "right_mean": 0.0
+        },
+        {
+          "feature": "residual_rms_relative",
+          "left": "F0_current",
+          "left_mean": 0.027840663031177527,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.012754780669574193,
+            "mean": 0.014069707896051182,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.015414318890274501
+          },
+          "right": "F0_matched",
+          "right_mean": 0.013770955135126346
+        },
+        {
+          "feature": "late_top_decile_turnover",
+          "left": "F0_matched",
+          "left_mean": 0.7307546701471554,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.5661524277564325,
+            "mean": 0.5954990599419485,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.6233913593634929
+          },
+          "right": "F1_initial_only",
+          "right_mean": 0.135255610205207
+        },
+        {
+          "feature": "late_temporal_correlation",
+          "left": "F5_memory",
+          "left_mean": 0.7493434121523315,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 0.021884460762089095,
+            "mean": 0.024848156839945262,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 0.027693728556825857
+          },
+          "right": "F2_gaussian",
+          "right_mean": 0.7244952553123862
+        },
+        {
+          "feature": "event_state_rate_ratio",
+          "left": "F4_state_history",
+          "left_mean": 5.3405170154144574,
+          "left_minus_right": {
+            "lower_95_percentile_bootstrap": 4.218158970807718,
+            "mean": 4.3373257024351,
+            "replicates": 8,
+            "upper_95_percentile_bootstrap": 4.4559986642146825
+          },
+          "right": "F3_poisson",
+          "right_mean": 1.0031913129793577
+        }
+      ]
+    },
+    "validation_summary": {
+      "D0_no_source": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.4475814633357095,
+          "mean": 0.4475814633357095,
+          "minimum": 0.4475814633357095,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9988691779751661,
+          "mean": 0.9988691779751661,
+          "minimum": 0.9988691779751661,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.00015426251702631587,
+          "mean": 0.00015426251702631587,
+          "minimum": 0.00015426251702631587,
+          "standard_deviation": 0.0
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.03389830508474578,
+          "mean": 0.03389830508474578,
+          "minimum": 0.03389830508474578,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 3.94937505790685e-08,
+          "mean": 3.94937505790685e-08,
+          "minimum": 3.94937505790685e-08,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 1.002456461959503,
+          "mean": 1.002456461959503,
+          "minimum": 1.002456461959503,
+          "standard_deviation": 0.0
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.969495775417412,
+          "mean": 0.969495775417412,
+          "minimum": 0.969495775417412,
+          "standard_deviation": 0.0
+        },
+        "residual_rms_relative": {
+          "maximum": 0.9998058355743846,
+          "mean": 0.9998058355743846,
+          "minimum": 0.9998058355743846,
+          "standard_deviation": 0.0
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F0_current": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.03196792639497566,
+          "mean": 0.029389292321375507,
+          "minimum": 0.026331306403301308,
+          "standard_deviation": 0.0020328605920721062
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.0018068351593052512,
+          "mean": -0.0018068351593052512,
+          "minimum": -0.0018068351593052512,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.06881230604404685,
+          "mean": 0.06881230604404685,
+          "minimum": 0.06881230604404685,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.005849795184162395,
+          "mean": -0.0021462968260280114,
+          "minimum": -0.009775071348407311,
+          "standard_deviation": 0.005934224019721721
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.0296144532367864,
+          "mean": 1.0196045148097819,
+          "minimum": 1.0081166012501892,
+          "standard_deviation": 0.007457429926809799
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.9075136526007602,
+          "mean": 0.8734126450088466,
+          "minimum": 0.8365829792471178,
+          "standard_deviation": 0.023190653106130995
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.6666666666666667,
+          "mean": 0.5218805313742022,
+          "minimum": 0.43243243243243246,
+          "standard_deviation": 0.06647130341448199
+        },
+        "mean_energy": {
+          "maximum": 0.8197719457189623,
+          "mean": 0.8163203545646691,
+          "minimum": 0.8135516777602583,
+          "standard_deviation": 0.0019762707334074828
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.7872756019056744e-06,
+          "mean": 1.77404283363766e-06,
+          "minimum": 1.7630137973412987e-06,
+          "standard_deviation": 8.22869235139375e-09
+        },
+        "q80_components": {
+          "maximum": 18.0,
+          "mean": 15.0,
+          "minimum": 10.0,
+          "standard_deviation": 2.8284271247461903
+        },
+        "q80_turnover": {
+          "maximum": 0.5316455696202531,
+          "mean": 0.438199547972572,
+          "minimum": 0.3776223776223776,
+          "standard_deviation": 0.061095604489834955
+        },
+        "q90_components": {
+          "maximum": 16.0,
+          "mean": 12.5,
+          "minimum": 7.0,
+          "standard_deviation": 3.070597894314954
+        },
+        "q90_turnover": {
+          "maximum": 0.6666666666666667,
+          "mean": 0.5218805313742022,
+          "minimum": 0.43243243243243246,
+          "standard_deviation": 0.06647130341448199
+        },
+        "q95_components": {
+          "maximum": 13.0,
+          "mean": 9.625,
+          "minimum": 5.0,
+          "standard_deviation": 2.615202805574687
+        },
+        "q95_turnover": {
+          "maximum": 0.7659574468085106,
+          "mean": 0.5967294213247885,
+          "minimum": 0.4736842105263158,
+          "standard_deviation": 0.09381617011307915
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.12502641688682833,
+          "mean": 0.1012614225803881,
+          "minimum": 0.07305490549193357,
+          "standard_deviation": 0.018849537197129774
+        },
+        "residual_localization": {
+          "maximum": 3.3447928882669213,
+          "mean": 2.7334300507797007,
+          "minimum": 2.2360365013753274,
+          "standard_deviation": 0.3121232814139095
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.7872115817594603,
+          "mean": 0.7295190620859761,
+          "minimum": 0.6897089304883526,
+          "standard_deviation": 0.03310733778491299
+        },
+        "residual_rms_relative": {
+          "maximum": 0.031339676592835444,
+          "mean": 0.027840663031177527,
+          "minimum": 0.024836685917680845,
+          "standard_deviation": 0.002047458344422797
+        },
+        "top_decile_components": {
+          "maximum": 16.0,
+          "mean": 12.5,
+          "minimum": 7.0,
+          "standard_deviation": 3.070597894314954
+        },
+        "total_events": {
+          "maximum": 141415.0,
+          "mean": 141248.5,
+          "minimum": 141128.0,
+          "standard_deviation": 103.73868268738661
+        }
+      },
+      "F0_matched": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.029180243250552768,
+          "mean": 0.027291508028278892,
+          "minimum": 0.024754623504394384,
+          "standard_deviation": 0.001541320119622451
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.022959322141249967,
+          "mean": -0.022959322141249967,
+          "minimum": -0.022959322141249967,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05244366610369415,
+          "mean": 0.05244366610369415,
+          "minimum": 0.05244366610369415,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": -0.005597424491613219,
+          "mean": -0.01256031623384497,
+          "minimum": -0.02011070260476675,
+          "standard_deviation": 0.0049978910798220075
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.0048209742985024,
+          "mean": 0.9982828832674217,
+          "minimum": 0.9884026185199212,
+          "standard_deviation": 0.00529003282557715
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7695618869501757,
+          "mean": 0.7404454628037547,
+          "minimum": 0.6868571042606325,
+          "standard_deviation": 0.026594532818392486
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7307546701471554,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.04781459510979392
+        },
+        "mean_energy": {
+          "maximum": 0.8042140890023843,
+          "mean": 0.8020238259719781,
+          "minimum": 0.8004685983852586,
+          "standard_deviation": 0.001294704275671497
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8267337477879392e-06,
+          "mean": 1.8125971718505556e-06,
+          "minimum": 1.8042948690151512e-06,
+          "standard_deviation": 7.388382912915794e-09
+        },
+        "q80_components": {
+          "maximum": 46.0,
+          "mean": 41.5,
+          "minimum": 33.0,
+          "standard_deviation": 4.566962103755937
+        },
+        "q80_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.673980150297464,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.04365015981418001
+        },
+        "q90_components": {
+          "maximum": 37.0,
+          "mean": 30.0,
+          "minimum": 26.0,
+          "standard_deviation": 3.854496446637726
+        },
+        "q90_turnover": {
+          "maximum": 0.7789473684210526,
+          "mean": 0.7307546701471554,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.04781459510979392
+        },
+        "q95_components": {
+          "maximum": 23.0,
+          "mean": 18.375,
+          "minimum": 16.0,
+          "standard_deviation": 2.615202805574687
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.7754761623220234,
+          "minimum": 0.6511627906976745,
+          "standard_deviation": 0.07059936899109559
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.24221917368321613,
+          "mean": 0.2163044207873764,
+          "minimum": 0.19478981176348575,
+          "standard_deviation": 0.014989954092851697
+        },
+        "residual_localization": {
+          "maximum": 3.2160300715377774,
+          "mean": 2.9288829216826944,
+          "minimum": 2.6774239936223356,
+          "standard_deviation": 0.18234434582666592
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.5963039202833249,
+          "mean": 0.5638688552950044,
+          "minimum": 0.5431535289204722,
+          "standard_deviation": 0.02043082533464229
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014329071030893783,
+          "mean": 0.013770955135126346,
+          "minimum": 0.01296328348029563,
+          "standard_deviation": 0.00045706959720556636
+        },
+        "top_decile_components": {
+          "maximum": 37.0,
+          "mean": 30.0,
+          "minimum": 26.0,
+          "standard_deviation": 3.854496446637726
+        },
+        "total_events": {
+          "maximum": 140382.0,
+          "mean": 140225.0,
+          "minimum": 140136.0,
+          "standard_deviation": 94.39279633531363
+        }
+      },
+      "F1_initial_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.027625571395332307,
+          "mean": 0.02488144264570776,
+          "minimum": 0.023144803914826886,
+          "standard_deviation": 0.0015231174845550333
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.006959426003824864,
+          "mean": 0.006959426003824864,
+          "minimum": 0.006959426003824864,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05903986333192059,
+          "mean": 0.05903986333192059,
+          "minimum": 0.05903986333192059,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.996388321323375,
+          "mean": 0.9956949837108864,
+          "minimum": 0.9947949849933985,
+          "standard_deviation": 0.0005405954996055287
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.135255610205207,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.05240810304249514
+        },
+        "mean_energy": {
+          "maximum": 0.8040017895917863,
+          "mean": 0.8025354887297891,
+          "minimum": 0.8002321646533699,
+          "standard_deviation": 0.0012456395031571258
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 10.0,
+          "mean": 8.0,
+          "minimum": 7.0,
+          "standard_deviation": 1.1952286093343936
+        },
+        "q80_turnover": {
+          "maximum": 0.14400000000000002,
+          "mean": 0.11547079662758551,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.024040733059523253
+        },
+        "q90_components": {
+          "maximum": 9.0,
+          "mean": 6.375,
+          "minimum": 4.0,
+          "standard_deviation": 1.8468119248354136
+        },
+        "q90_turnover": {
+          "maximum": 0.2153846153846154,
+          "mean": 0.135255610205207,
+          "minimum": 0.06666666666666665,
+          "standard_deviation": 0.05240810304249514
+        },
+        "q95_components": {
+          "maximum": 6.0,
+          "mean": 4.25,
+          "minimum": 1.0,
+          "standard_deviation": 1.4880476182856899
+        },
+        "q95_turnover": {
+          "maximum": 0.24242424242424243,
+          "mean": 0.14169415933528837,
+          "minimum": 0.0,
+          "standard_deviation": 0.07077270406227723
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0003213452013171418,
+          "mean": 0.0002233598531156491,
+          "minimum": 0.00017187312883767272,
+          "standard_deviation": 5.638615014784654e-05
+        },
+        "residual_localization": {
+          "maximum": 3.885596071075654,
+          "mean": 2.8898644380151834,
+          "minimum": 2.3848991778454276,
+          "standard_deviation": 0.47251142924885303
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.9263641711652014,
+          "mean": 0.9014396595236611,
+          "minimum": 0.8737735038174879,
+          "standard_deviation": 0.016038880002437937
+        },
+        "residual_rms_relative": {
+          "maximum": 0.008278840894680822,
+          "mean": 0.007294668441466595,
+          "minimum": 0.006114029258720384,
+          "standard_deviation": 0.0009171172054058343
+        },
+        "top_decile_components": {
+          "maximum": 9.0,
+          "mean": 6.375,
+          "minimum": 4.0,
+          "standard_deviation": 1.8468119248354136
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F2_gaussian": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.029695157349584812,
+          "mean": 0.027686593167836768,
+          "minimum": 0.025559730682243372,
+          "standard_deviation": 0.0013897779191361266
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.0033671683440933474,
+          "mean": -0.0033671683440933474,
+          "minimum": -0.0033671683440933474,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05361182092287057,
+          "mean": 0.05361182092287057,
+          "minimum": 0.05361182092287057,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.766825756610594,
+          "mean": 0.7244952553123862,
+          "minimum": 0.7046876631606648,
+          "standard_deviation": 0.022641259509842807
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.8163265306122449,
+          "mean": 0.7633581541726835,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.03664553520476351
+        },
+        "mean_energy": {
+          "maximum": 0.8038490754390339,
+          "mean": 0.8022175303808798,
+          "minimum": 0.799747397705602,
+          "standard_deviation": 0.0013183814632956883
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8179007507072943e-06,
+          "mean": 1.8073609631964208e-06,
+          "minimum": 1.8015563003025582e-06,
+          "standard_deviation": 6.345308093387566e-09
+        },
+        "q80_components": {
+          "maximum": 51.0,
+          "mean": 44.125,
+          "minimum": 36.0,
+          "standard_deviation": 4.703721930556695
+        },
+        "q80_turnover": {
+          "maximum": 0.7039106145251397,
+          "mean": 0.6660598351053766,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.030732087912791438
+        },
+        "q90_components": {
+          "maximum": 36.0,
+          "mean": 32.75,
+          "minimum": 28.0,
+          "standard_deviation": 2.712405363721075
+        },
+        "q90_turnover": {
+          "maximum": 0.8163265306122449,
+          "mean": 0.7633581541726835,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.03664553520476351
+        },
+        "q95_components": {
+          "maximum": 23.0,
+          "mean": 19.375,
+          "minimum": 18.0,
+          "standard_deviation": 1.685018016012207
+        },
+        "q95_turnover": {
+          "maximum": 0.8627450980392157,
+          "mean": 0.7919942303162399,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.06250482434328238
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.278884204706428,
+          "mean": 0.23708994817254198,
+          "minimum": 0.20464464965890736,
+          "standard_deviation": 0.02523586944559944
+        },
+        "residual_localization": {
+          "maximum": 3.840695319473187,
+          "mean": 2.9937408012011293,
+          "minimum": 2.5885902347171648,
+          "standard_deviation": 0.3809670923547993
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.5805032785618078,
+          "mean": 0.5292598216205808,
+          "minimum": 0.4793104491873097,
+          "standard_deviation": 0.03374673410060316
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014703809549823664,
+          "mean": 0.013285661024899606,
+          "minimum": 0.012414406996693671,
+          "standard_deviation": 0.0007337092592770386
+        },
+        "top_decile_components": {
+          "maximum": 36.0,
+          "mean": 32.75,
+          "minimum": 28.0,
+          "standard_deviation": 2.712405363721075
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "F3_poisson": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.030592674439953362,
+          "mean": 0.02765540455609085,
+          "minimum": 0.02595207016611632,
+          "standard_deviation": 0.0013859107679951863
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.0036650652726644495,
+          "mean": 0.0036650652726644495,
+          "minimum": 0.0036650652726644495,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.052968877212024965,
+          "mean": 0.052968877212024965,
+          "minimum": 0.052968877212024965,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.009618743327736247,
+          "mean": -0.012567770927252989,
+          "minimum": -0.03491768613276325,
+          "standard_deviation": 0.012583265437475216
+        },
+        "event_state_rate_ratio": {
+          "maximum": 1.0612149793414627,
+          "mean": 1.0031913129793577,
+          "minimum": 0.9494682105536123,
+          "standard_deviation": 0.03243832644335099
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7730564297761091,
+          "mean": 0.7535064146656265,
+          "minimum": 0.7150976398219914,
+          "standard_deviation": 0.018411831438266992
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.6728483359782735,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.04683255888073479
+        },
+        "mean_energy": {
+          "maximum": 0.8062253073637253,
+          "mean": 0.8031182827252343,
+          "minimum": 0.7988141561110931,
+          "standard_deviation": 0.002051266888280778
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.828865170224325e-06,
+          "mean": 1.8132751566454829e-06,
+          "minimum": 1.774344019052769e-06,
+          "standard_deviation": 1.7490746794725608e-08
+        },
+        "q80_components": {
+          "maximum": 46.0,
+          "mean": 41.375,
+          "minimum": 36.0,
+          "standard_deviation": 3.4615231989895516
+        },
+        "q80_turnover": {
+          "maximum": 0.7111111111111111,
+          "mean": 0.6229960941872377,
+          "minimum": 0.5766871165644172,
+          "standard_deviation": 0.042217033968906616
+        },
+        "q90_components": {
+          "maximum": 30.0,
+          "mean": 26.375,
+          "minimum": 23.0,
+          "standard_deviation": 3.020761493398643
+        },
+        "q90_turnover": {
+          "maximum": 0.7391304347826086,
+          "mean": 0.6728483359782735,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.04683255888073479
+        },
+        "q95_components": {
+          "maximum": 21.0,
+          "mean": 15.75,
+          "minimum": 13.0,
+          "standard_deviation": 2.49284690951645
+        },
+        "q95_turnover": {
+          "maximum": 0.8163265306122449,
+          "mean": 0.7256892138546933,
+          "minimum": 0.6190476190476191,
+          "standard_deviation": 0.06731801300501221
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.23903739322824238,
+          "mean": 0.20495501549009854,
+          "minimum": 0.17707474917667315,
+          "standard_deviation": 0.022521473559374814
+        },
+        "residual_localization": {
+          "maximum": 3.7115076652689054,
+          "mean": 3.1378889061637194,
+          "minimum": 2.8392153027050617,
+          "standard_deviation": 0.30364741695539266
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.6048023908902744,
+          "mean": 0.5652060407289414,
+          "minimum": 0.5266098526273425,
+          "standard_deviation": 0.02825201239637485
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014953845441285184,
+          "mean": 0.014172688992903595,
+          "minimum": 0.013542095302955717,
+          "standard_deviation": 0.0004769099341716999
+        },
+        "top_decile_components": {
+          "maximum": 30.0,
+          "mean": 26.375,
+          "minimum": 23.0,
+          "standard_deviation": 3.020761493398643
+        },
+        "total_events": {
+          "maximum": 8743.0,
+          "mean": 8654.25,
+          "minimum": 8496.0,
+          "standard_deviation": 77.95740595259146
+        }
+      },
+      "F4_state_history": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.030355004270962844,
+          "mean": 0.027798045901096198,
+          "minimum": 0.025493634145046597,
+          "standard_deviation": 0.0018504720728396724
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.03621500587909752,
+          "mean": 0.03621500587909752,
+          "minimum": 0.03621500587909752,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05623503419910501,
+          "mean": 0.05623503419910501,
+          "minimum": 0.05623503419910501,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.7383500097809699,
+          "mean": 0.7180587116475021,
+          "minimum": 0.6938977711926477,
+          "standard_deviation": 0.013664083446506449
+        },
+        "event_state_rate_ratio": {
+          "maximum": 5.613237412228383,
+          "mean": 5.3405170154144574,
+          "minimum": 4.987418174994455,
+          "standard_deviation": 0.20077677508806907
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7695235455176378,
+          "mean": 0.7381534119386335,
+          "minimum": 0.6919980367847269,
+          "standard_deviation": 0.02779281167512727
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7060117598499248,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.07046219160004395
+        },
+        "mean_energy": {
+          "maximum": 0.8051933207822939,
+          "mean": 0.8020742907279933,
+          "minimum": 0.800114167207099,
+          "standard_deviation": 0.0018345428159439036
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.8321418698750036e-06,
+          "mean": 1.808989365412319e-06,
+          "minimum": 1.7858710194938066e-06,
+          "standard_deviation": 1.4234422342977786e-08
+        },
+        "q80_components": {
+          "maximum": 50.0,
+          "mean": 44.875,
+          "minimum": 40.0,
+          "standard_deviation": 3.313931631332013
+        },
+        "q80_turnover": {
+          "maximum": 0.718232044198895,
+          "mean": 0.6553933979334566,
+          "minimum": 0.6107784431137724,
+          "standard_deviation": 0.03140468454051461
+        },
+        "q90_components": {
+          "maximum": 39.0,
+          "mean": 29.75,
+          "minimum": 24.0,
+          "standard_deviation": 4.803272693844122
+        },
+        "q90_turnover": {
+          "maximum": 0.7916666666666666,
+          "mean": 0.7060117598499248,
+          "minimum": 0.6024096385542168,
+          "standard_deviation": 0.07046219160004395
+        },
+        "q95_components": {
+          "maximum": 23.0,
+          "mean": 18.375,
+          "minimum": 12.0,
+          "standard_deviation": 3.543101950067402
+        },
+        "q95_turnover": {
+          "maximum": 0.9259259259259259,
+          "mean": 0.7967734494259304,
+          "minimum": 0.6818181818181819,
+          "standard_deviation": 0.0758136336185808
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.2719070459913952,
+          "mean": 0.23384252195184987,
+          "minimum": 0.21153992336777452,
+          "standard_deviation": 0.021176875634281587
+        },
+        "residual_localization": {
+          "maximum": 3.964802488465189,
+          "mean": 3.1788401650429856,
+          "minimum": 2.7558707653929866,
+          "standard_deviation": 0.37886425125496115
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.5670376714626251,
+          "mean": 0.5300456771969144,
+          "minimum": 0.47552784496181894,
+          "standard_deviation": 0.03251084755070887
+        },
+        "residual_rms_relative": {
+          "maximum": 0.014204615444009796,
+          "mean": 0.013532169713780278,
+          "minimum": 0.01227796305702854,
+          "standard_deviation": 0.0006548265945266565
+        },
+        "top_decile_components": {
+          "maximum": 39.0,
+          "mean": 29.75,
+          "minimum": 24.0,
+          "standard_deviation": 4.803272693844122
+        },
+        "total_events": {
+          "maximum": 14010.0,
+          "mean": 13908.375,
+          "minimum": 13792.0,
+          "standard_deviation": 75.1644625376343
+        }
+      },
+      "F5_memory": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.0516124854625901,
+          "mean": 0.04749001008922314,
+          "minimum": 0.041790078548568615,
+          "standard_deviation": 0.002958187029361299
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": -0.004517055086044842,
+          "mean": -0.004517055086044842,
+          "minimum": -0.004517055086044842,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 0.05571197442827349,
+          "mean": 0.05571197442827349,
+          "minimum": 0.05571197442827349,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.7892286317668036,
+          "mean": 0.7493434121523315,
+          "minimum": 0.7253988840514713,
+          "standard_deviation": 0.02244139469431396
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.8041237113402062,
+          "mean": 0.7447804842967671,
+          "minimum": 0.696629213483146,
+          "standard_deviation": 0.04075881498321878
+        },
+        "mean_energy": {
+          "maximum": 0.8071994024813791,
+          "mean": 0.802118481058522,
+          "minimum": 0.7939264286688787,
+          "standard_deviation": 0.004273676272365014
+        },
+        "mean_injected_centered_power": {
+          "maximum": 1.82658948738193e-06,
+          "mean": 1.801231092138043e-06,
+          "minimum": 1.7841063427966418e-06,
+          "standard_deviation": 1.266959816657561e-08
+        },
+        "q80_components": {
+          "maximum": 51.0,
+          "mean": 45.5,
+          "minimum": 40.0,
+          "standard_deviation": 4.20883424647321
+        },
+        "q80_turnover": {
+          "maximum": 0.6818181818181819,
+          "mean": 0.638959901891047,
+          "minimum": 0.6107784431137724,
+          "standard_deviation": 0.022768373172288657
+        },
+        "q90_components": {
+          "maximum": 34.0,
+          "mean": 30.625,
+          "minimum": 26.0,
+          "standard_deviation": 2.445841952609133
+        },
+        "q90_turnover": {
+          "maximum": 0.8041237113402062,
+          "mean": 0.7447804842967671,
+          "minimum": 0.696629213483146,
+          "standard_deviation": 0.04075881498321878
+        },
+        "q95_components": {
+          "maximum": 23.0,
+          "mean": 18.875,
+          "minimum": 16.0,
+          "standard_deviation": 2.5319388392523003
+        },
+        "q95_turnover": {
+          "maximum": 0.8846153846153846,
+          "mean": 0.7953530001744288,
+          "minimum": 0.7111111111111111,
+          "standard_deviation": 0.05983486284640308
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.26111365543289833,
+          "mean": 0.2212923541750719,
+          "minimum": 0.18935178791646448,
+          "standard_deviation": 0.024437893374061725
+        },
+        "residual_localization": {
+          "maximum": 3.7920648212841304,
+          "mean": 3.012990908540168,
+          "minimum": 2.5879023001971,
+          "standard_deviation": 0.363599920750525
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.5967782795780481,
+          "mean": 0.5485545809656542,
+          "minimum": 0.49779455631543307,
+          "standard_deviation": 0.03242514591482693
+        },
+        "residual_rms_relative": {
+          "maximum": 0.04597756206377022,
+          "mean": 0.04129537486640704,
+          "minimum": 0.03872009705079909,
+          "standard_deviation": 0.0022678555203967054
+        },
+        "top_decile_components": {
+          "maximum": 34.0,
+          "mean": 30.625,
+          "minimum": 26.0,
+          "standard_deviation": 2.445841952609133
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      },
+      "M0_mean_only": {
+        "energy_coefficient_of_variation": {
+          "maximum": 0.024489444954562307,
+          "mean": 0.024489444954562307,
+          "minimum": 0.024489444954562307,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_final_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "ensemble_pairwise_top_decile_jaccard": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_mean": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "event_state_rate_ratio": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_temporal_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "late_top_decile_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "mean_energy": {
+          "maximum": 0.8024099462222999,
+          "mean": 0.8024099462222999,
+          "minimum": 0.8024099462222999,
+          "standard_deviation": 0.0
+        },
+        "mean_injected_centered_power": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q80_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q80_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q90_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q90_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "q95_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "q95_turnover": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "replicate": {
+          "maximum": 7.0,
+          "mean": 3.5,
+          "minimum": 0.0,
+          "standard_deviation": 2.449489742783178
+        },
+        "residual_high_frequency_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_localization": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_neighbor_correlation": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "residual_rms_relative": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        },
+        "top_decile_components": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "standard_deviation": 0.0
+        },
+        "total_events": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "standard_deviation": 0.0
+        }
+      }
+    }
+  },
+  "protocol": {
+    "branch_identity_metrics": "Within-seed persistence uses the late-to-final residual correlation and top-mask turnover. Between-seed branch identity uses pairwise final residual-map correlation and top-decile Jaccard overlap; pairwise summaries are lane-level descriptions and are not treated as independent replicates.",
+    "claim_boundary": "Classification concerns source-attributable numerical morphology in this lane, not quantum ontology, particles, gravity, or experimental validation.",
+    "classifier_features": [
+      "residual_rms_relative",
+      "residual_localization",
+      "residual_neighbor_correlation",
+      "residual_high_frequency_fraction",
+      "late_temporal_correlation",
+      "late_top_decile_turnover",
+      "top_decile_components",
+      "energy_coefficient_of_variation"
+    ],
+    "conditional_history_control": "Fit one coefficient per independent run for declared state, pre-event history, and phi control; aggregate runs, not individual cell-steps, as replication units.",
+    "controls": {
+      "D0_no_source": "no conditional mean and no stochastic residual",
+      "F0_current": "faithful implemented Bernoulli plus Gaussian source with endogenous state feedback",
+      "F0_matched": "centered F0 Bernoulli plus Gaussian residual around the common open-loop conditional mean",
+      "F1_initial_only": "one initial perturbation with total raw variance equal to the scheduled F0 injection, then common mean only",
+      "F2_gaussian": "Gaussian square-root-dt residual calibrated to F0 at reference dt",
+      "F3_poisson": "independent signed compound-Poisson events calibrated to F0 variance at reference dt",
+      "F4_state_history": "state- and history-dependent signed events with conditional variance matching",
+      "F5_memory": "exact OU memory with correlation time 0.5 and primary-step variance matching",
+      "M0_mean_only": "deterministic conditional mean of current F0"
+    },
+    "predeclared_contrasts": [
+      "faithful F0 vs M0 residual RMS",
+      "matched F0 vs F1 late top-decile turnover",
+      "F5 vs F2 late temporal correlation",
+      "F4 vs F3 high-state/low-state event-rate ratio"
+    ],
+    "primary": {
+      "calibration_replicates_per_lane": 8,
+      "dt": 0.1,
+      "initial_mode": "structured",
+      "lanes": [
+        "D0_no_source",
+        "M0_mean_only",
+        "F0_current",
+        "F0_matched",
+        "F1_initial_only",
+        "F2_gaussian",
+        "F3_poisson",
+        "F4_state_history",
+        "F5_memory"
+      ],
+      "late_lag_time": 5.0,
+      "physical_time": 30.0,
+      "post_revision_replicates_per_lane": 12,
+      "reference_dt": 0.1,
+      "size": 24,
+      "validation_replicates_per_lane": 8
+    },
+    "question": "Under an identical reconstructed nonlinear backbone and initial state, which declared source contracts causally change late morphology after matching an open-loop F0 conditional-mean trajectory and primary-step variance?",
+    "recorded_revision_from_v0_1": {
+      "development_output_sha256": "bf85e73af50f148c52c7c191b1fb0a5b5848f5dc3d995313fd6d5889175b71f4",
+      "development_program_sha256": "101e083c4433f2cee2152062d2a9b0244b27594b466267dbdb9b5480769a6ccf",
+      "diagnosis": "Each lane recomputed its own state-dependent mean. The initial-only perturbation therefore changed both the random timing and the later mean drive, while its final energy was not comparable. The classifier could exploit that confound.",
+      "new_seed_families": [
+        2026212000,
+        2026213000,
+        2026214000
+      ],
+      "observed_all_lane_classifier": "16/48 = 33.333%",
+      "revision": "Preserve faithful F0 as a separate causal lane, but compare F0-F5 around one precomputed open-loop mean trajectory. Match raw conditional input variance at the reference step. Do not force final energy to match because it is a post-treatment outcome."
+    },
+    "recorded_secondary_analysis": {
+      "discovery": "The faithful F0 lane had a larger late residual than the open-loop matched F0 lane despite comparable or lower centered input power, suggesting amplification through state-dependent future mean drive.",
+      "status": "This contrast was identified after the first revised development run. No source equation, feature, or threshold was changed afterward. It is evaluated on the separate post-revision seeds and every declared sensitivity, and remains an interpretation rather than a proof of a physical feedback mechanism."
+    },
+    "sensitivity_settings": [
+      {
+        "dt": 0.2,
+        "initial_mode": "structured",
+        "name": "dt_0_2",
+        "physical_time": 30.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 24
+      },
+      {
+        "dt": 0.05,
+        "initial_mode": "structured",
+        "name": "dt_0_05",
+        "physical_time": 30.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 24
+      },
+      {
+        "dt": 0.1,
+        "initial_mode": "structured",
+        "name": "grid_16",
+        "physical_time": 30.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 16
+      },
+      {
+        "dt": 0.1,
+        "initial_mode": "structured",
+        "name": "grid_32",
+        "physical_time": 30.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 32
+      },
+      {
+        "dt": 0.1,
+        "initial_mode": "structured",
+        "name": "horizon_15",
+        "physical_time": 15.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 24
+      },
+      {
+        "dt": 0.1,
+        "initial_mode": "structured",
+        "name": "horizon_60",
+        "physical_time": 60.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 24
+      },
+      {
+        "dt": 0.1,
+        "initial_mode": "vacuum",
+        "name": "vacuum_initial",
+        "physical_time": 30.0,
+        "replicates_per_lane_per_split": 4,
+        "size": 24
+      }
+    ],
+    "status": "recorded protocol revision; new seed families were frozen before the revised output",
+    "version": "0.2-recorded-revision"
+  },
+  "runtime": {
+    "audited_core_commit": "50fe92716bbd0a999c4b1b23132d08d6f0cc755d",
+    "audited_core_math_git_blob": "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa",
+    "numpy": "1.26.4",
+    "python": "3.11.15"
+  },
+  "schema": "lineum.foam-source-morphology-ablation.v1"
 }
 ```
