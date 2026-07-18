@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 0.8
-**Evidence and calculation cutoff date:** July 16, 2026
+**Research version:** 0.9
+**Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all eight embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, and scope findings; medium for the numerical classification of stochastic candidates; low for their physical interpretation and the other untested hypotheses proposed for future work
+**Reproducibility:** all nine embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, and mathematical classification of the isolated current source; medium for the signature protocol within its declared resolution; low for the physical interpretation and the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; and (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; and (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -33,6 +33,7 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The current ongoing stochastic source has a nonzero continuous-time variance limit. | **Contradicted in the tested source/diffusion lane** | Ensemble spread scales approximately as \(h^{0.488}\) and vanishes; several alternative contracts retain finite spread but encode different physics. |
 | The historical zero-\(\kappa\) “true RNG / edge of chaos” test demonstrates chaos. | **Contradicted by source audit, exact recurrence, and runtime reproduction** | Its original perturbation is overwritten, while a new \(10^{-5}+10^{-5}i\) input is added for all 1,500 steps. The threshold crossing is a damped geometric sum, not exponential sensitivity or true randomness. |
 | Deterministic chaos currently explains the foam-like behavior. | **Not supported in the seven tested deterministic regimes** | All 84 finite-time Lyapunov estimates were negative. This narrows, but does not eliminate, the chaos hypothesis; other parameters, states, operators, dimensions, or longer asymptotic behavior remain untested. |
+| The isolated current source is continuous Gaussian noise, a Poisson birth law, or colored memory. | **Contradicted for the audited source contract** | It is a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\). Its centered excess kurtosis is about \(-1.615\), lag-one correlation is consistent with zero, and variance rate scales as \(h^{0.99974}\). |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -68,6 +69,7 @@ Until the gates below are met, we recommend:
 8. **do not describe the present stochastic source as a continuously driven quantum vacuum; keep initial branching, continuous forcing, discrete events, deterministic chaos, memory, and quantum-amplitude explanations as separately falsifiable hypotheses**.
 9. **withdraw “true RNG” and “edge of chaos” as conclusions of the historical zero-\(\kappa\) test; require exact replay, one-shot perturbation growth, a positive Lyapunov estimate, and robustness before restoring either claim**.
 10. **do not identify foam-like morphology with deterministic chaos in the currently tested regimes; describe initial branching, dissipative self-organization, stochastic forcing, event processes, memory, unresolved variables, and quantum amplitudes as separate candidates until a discriminator selects among them**.
+11. **describe the current random source as the finite-step F0 software contract, not as verified quantum foam; use the validated signature protocol only within its temporal and amplitude resolution, and preserve the documented equivalences between short memory and white noise, high-rate events and Gaussian forcing, and weak dependence and independent events**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -442,6 +444,90 @@ Three controls constrain interpretation:
 The sign also remained negative in fixed-physical-time sensitivities: \(h=0.2,0.1,0.05\); \(\kappa=0,0.25,0.5,0.75,1\); grids \(16^2\) and \(24^2\); and measurement horizons 20, 40, and 80. However, the mean for the continuous mode-coupled \(\kappa=1\) regime moved from `-0.0830428` at \(T=20\), through `-0.0431786` at \(T=40\), to `-0.0245938` at \(T=80\). Because it trends toward zero, this audit does **not** establish a strictly negative asymptotic largest Lyapunov exponent.
 
 **Verdict [CALCULATED]:** no positive finite-time Lyapunov exponent was found in the declared deterministic regimes. Therefore deterministic chaos is not presently a supported explanation of foam-like morphology in those lanes. The result does not prove that all Lineum parameter space is non-chaotic, and it does not distinguish initial branch selection, ordinary dissipative pattern formation, finite-step stochastic forcing, events, memory, unresolved variables, or quantum-amplitude dynamics. Visual irregularity alone cannot make that choice.
+
+### 3.11 A common observation protocol separates declared foam controls, not hidden ontologies below resolution
+
+The next gate asked a narrower question: **if a deterministic backbone is known and subtracted, can observable source residuals distinguish F1–F5 under controlled conditions?** Let \(D_h\) be that declared deterministic update and define the observed innovation
+
+\[
+r_n=X_{n+1}-D_h(X_n).
+\]
+
+Five controls were constructed on an \(8\times8\) field. Their approximate one-step marginal scale was matched at the primary step \(h=0.1\), so classification could not rely merely on one candidate being visibly larger:
+
+| Candidate | Controlled residual law | Primary signature |
+|---|---|---|
+| F1 initial only | \(r_n=0\) after the initial branch | zero matched-state future innovation |
+| F2 Gaussian white | \(r_n=\sigma\sqrt h\,Z_n\) | Gaussian kurtosis and zero temporal correlation |
+| F3 independent events | \(r_n=A(N_n^+-N_n^-)\), \(N_n^\pm\sim{\rm Poisson}(\lambda h/2)\), \(A=\sigma/\sqrt\lambda\) | heavy tails, independent event times |
+| F4 state/history events | Poisson intensity depends on a declared state score and a stable Hawkes excitation | high state-rate or previous-event rate ratio |
+| F5 colored memory | \(\eta_{n+1}=\rho\eta_n+\sqrt{1-\rho^2}Z_n\), \(\rho=e^{-h/\tau}\), \(r_n=Gh\eta_n\) | nonzero signed lag correlation and accumulated variance |
+
+The protocol measures innovation RMS, one-step and one-unit variance rates, excess kurtosis, signed and absolute lag-one correlations, the tail fraction above \(2.5\) standard deviations, event-count Fano factor, waiting-time coefficient of variation, and event-rate ratios conditioned on the previous event and on high versus low state score. Each confidence interval treats an independently seeded run—not individual correlated cells—as the replication unit.
+
+The original decision tree allowed any one of state dependence, event-history dependence, or Fano factor above `1.3` to select F4. This rule was preserved as a negative result: it classified 79/80 calibration runs correctly and 174/180 time-step sensitivity runs correctly. Six independent Poisson runs were false positives because a Fano estimate based on only 25 windows fluctuated above the threshold.
+
+The recorded correction did **not** tune the Fano threshold. Instead, Fano factor became supporting evidence and F4 selection required direct state-rate or history-rate ratio above `1.5`. A third seed family, not used to diagnose the failure, then supplied the post-revision audit:
+
+| Dataset | Original rule | Revised rule |
+|---|---:|---:|
+| calibration, \(h=0.1\), 16 runs per candidate | 79/80 | 80/80 |
+| first separate validation, \(h=0.1\), 16 runs per candidate | 80/80 | 80/80 |
+| development sensitivity, \(h=0.2,0.1,0.05\), 12 runs per candidate and step | 174/180 | 180/180 |
+| post-revision audit, new seeds, same three steps | 177/180 | **180/180** |
+
+Four predeclared pairwise checks also had non-overlapping run-level 95% \(t\)-intervals:
+
+| Pair | Metric | Left 95% interval | Right 95% interval |
+|---|---|---:|---:|
+| F1 vs. F2 | innovation RMS | exactly \(0\) | \([0.00157894,0.00158321]\) |
+| F2 vs. F3 | excess kurtosis | \([-0.00600,0.00937]\) | \([19.4617,20.0713]\) |
+| F2 vs. F5 | signed lag-one correlation | \([-0.00336,0.000121]\) | \([0.818523,0.821349]\) |
+| F3 vs. F4 | high-state/low-state event-rate ratio | \([1.00605,1.06151]\) | \([7.98509,9.61900]\) |
+
+The perfect post-revision score applies only to these declared controls. Deliberately weaker boundary cases demonstrate three observational equivalences:
+
+| Boundary test at \(h=0.1\) | Result | Meaning |
+|---|---|---|
+| colored memory \(\tau/h=0.2\) or \(0.5\) | 24/24 classified as F2 | memory shorter than the observation interval is unresolved and looks white |
+| colored memory \(\tau/h=1,2,5\) | 36/36 classified as F5 | resolved memory produces the predicted lag |
+| Poisson rate \(10\), jump size reduced to preserve variance | 12/12 classified as F2 | many small jumps approach a Gaussian law |
+| Hawkes branching \(0.1\), no state dependence | 7/12 F3 and 5/12 F4 | weak history dependence overlaps independent events at this sample size |
+| branching \(0.3\) or \(0.6\), or state coefficient \(0.3\) or \(0.9\) | every declared run classified as F4 | stronger dependence is resolved |
+
+These are not defects that can be removed by better labeling. They are identifiability limits: two different hidden mechanisms can induce the same observable law after temporal or amplitude coarse-graining. State heterogeneity can also imitate event memory because repeated events occur in the same high-rate cells. Separating state dependence from genuine self-excitation therefore requires a conditional ablation, not only an unconditional waiting-time statistic. Exact tables are used here because the decision depends on interval boundaries and classification counts rather than on a visual trend.
+
+The same protocol was then applied to the **isolated present source contract** on a controlled positive-phase field. After subtracting its conditional mean, the projected innovation is
+
+\[
+r_h=h\left[A(B-p)+\sigma Z\right],\qquad
+p=\frac{1}{1+e^{-5(|\psi|+|\nabla|\psi||)}},\qquad
+A=0.03+0.02|\psi|,
+\]
+
+where \(B\) is Bernoulli and \(Z\) is Gaussian. Consequently,
+
+\[
+\frac{{\rm Var}(r_h)}{h}
+=h\,\mathbb E\!\left[A^2p(1-p)+\sigma^2\right].
+\]
+
+The controlled fixture gives the coefficient
+`0.0002551958227644319`. The simulation agrees with this formula within
+`0.1216%`, and its fitted variance-rate exponent is
+`0.999737593589198`, compared with the exact exponent \(1\):
+
+| \(h\) | innovation RMS | variance per unit time | excess kurtosis | signed lag-one correlation |
+|---:|---:|---:|---:|---:|
+| 0.200 | 0.00319384 | \(5.09992\times10^{-5}\) | -1.61489 | 0.000871 |
+| 0.100 | 0.00159848 | \(2.55506\times10^{-5}\) | -1.61621 | -0.000932 |
+| 0.050 | 0.000798670 | \(1.27574\times10^{-5}\) | -1.61574 | 0.001168 |
+| 0.025 | 0.000399430 | \(6.38175\times10^{-6}\) | -1.61440 | -0.00000848 |
+
+The standalone source reconstruction was also compared with actual deterministic and stochastic runtime steps at \(h=0.2,0.1,0.05\). After accounting for the subsequent damping factor, the maximum absolute difference was
+`4.628188023797497e-18`.
+
+**Verdict [CALCULATED]:** the protocol can distinguish declared, sufficiently resolved F1–F5 controls, and its failure boundaries are now explicit. The isolated current source is not one of those continuous controls: it is the finite-step F0 state-dependent Bernoulli-plus-Gaussian software law, with no detected lag memory and a variance rate that vanishes linearly under refinement. This classifies the implemented source contract, **not the physical ontology of quantum foam and not the full visual morphology of an evolving nonlinear simulation**. No production default should change on this evidence alone.
 
 ---
 
@@ -1329,9 +1415,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects only F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane. It does not reject F0 as a discrete per-update automaton, and it does not choose among F1–F5 or F7–F10. Initial-only, Gaussian, and Poisson controls establish numerical counterexamples showing that finite stochastic limits are possible; they are not evidence that those mechanisms exist physically. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A subsequent Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
+**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit now classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). A common protocol separates declared, sufficiently resolved F1–F5 controls, but it also demonstrates observational equivalences: short memory looks white, many small Poisson jumps look Gaussian, and weak dependence looks independent. These controls validate the discriminator, not any physical ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A subsequent Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** Use a common observation protocol to distinguish initial-only branching, Gaussian diffusion, Poisson events, state-dependent events, and memory. Measure increments, waiting times, Fano factors, autocorrelation, and conditional predictability, then identify the smallest pair of simulations whose predicted signatures do not overlap within uncertainty. Do not modify the default runtime until at least one discriminator is demonstrated and its false-positive controls pass.
+**Next read-only gate.** Move from the isolated source to source-to-morphology causality. Starting from identical complete states, compare deterministic-only, initial-only, current F0, Gaussian, Poisson, state-dependent, and memory controls under the same nonlinear backbone. Measure which source changes persistent morphology, localization, event topology, and seed-to-seed branch identity after matching coarse variance. Separate state dependence from self-excitation by conditioning history tests on the full declared state. Do not modify the default runtime until the result survives time, grid, horizon, detector-threshold, and observation-scale controls.
 
 ---
 
@@ -1467,10 +1553,11 @@ The following list supersedes the original proposal. Each question should have a
 11. **The new time controls are deliberately narrow.** Deterministic results cover the RD-0 lane; stochastic comparisons isolate \(\psi\)-source, damping, and diffusion. They do not establish long-lived linon identity, collisions, quantum statistics, or a full-system continuum limit.
 12. **The zero-kappa result is a claim audit, not a complete chaos survey.** It proves why one historical threshold test passed and why that pass did not measure chaos.
 13. **The Lyapunov audit is finite and regime-bound.** It covers seven declared deterministic regimes plus sensitivities in step, permeability, grid, and horizon. It does not exhaust every nonlinear coefficient, initial state, boundary, wave backend, dimension, or asymptotic attractor. The drift of the finite-time estimate toward zero at longer horizons precludes a claim of strictly negative asymptotic exponent.
+14. **The foam-signature protocol is an identifiability test, not an ontology detector.** Its 180/180 post-revision score concerns five declared, sufficiently separated synthetic controls. Short memory, frequent small jumps, weak dependence, state heterogeneity, coarse observations, and an incorrect deterministic backbone can make distinct mechanisms observationally equivalent. The current F0 conclusion classifies the isolated implemented source, not the complete nonlinear morphology or a physical quantum vacuum.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing four stochastic time contracts, and finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing four stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, and classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract with explicit observational alternatives. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -1536,6 +1623,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 
 41. Fikáček, J. *Jsou všichni géniové proti nekonečnu? A co na to logika* [*Are All Geniuses Against Infinity? What Does Logic Say?*]. Mensa 33(3), 14–16 (2026). [Mensa Czech Republic magazine](https://magazin.mensa.cz/wp-content/uploads/mensa_cz154_casopis_03-2026.pdf).
 
+### Statistical process source
+
+42. Hawkes, A. G. *Spectra of Some Self-Exciting and Mutually Exciting Point Processes*. Biometrika 58(1), 83–90 (1971). [DOI](https://doi.org/10.1093/biomet/58.1.83).
+
 ---
 
 ## Appendix A — Reproduction Log and Control Outputs
@@ -1548,9 +1639,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - three general-physics checks use only NumPy and the standard library; the OEA ablation additionally uses SciPy 1.17.1 to reproduce the imaging operations accurately
 - the seven earlier programs were executed against their embedded JSON in the audit environment; with the frozen versions, they reproduced exactly the same structure and values
 - the eighth, finite-time Lyapunov program was executed twice in the replay environment with bitwise-identical normalized output; two reconstructed regimes also matched the actual deterministic NumPy runtime with maximum absolute difference `0.0`
+- the ninth, foam-signature program was executed twice with bitwise-identical normalized output; its analytical Gaussian, Poisson, memory, and current-source controls passed, and its reconstructed current source matched actual runtime steps within `4.63e-18`
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 8/8 executable Python/JSON pairs, 42 contiguous adversarial questions, 41 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 9/9 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1582,6 +1674,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | stochastic time contracts | RMS complex ensemble spread and fitted exponent \(q\) | analytic current-source \(q=1/2\) | current, initial-only, Gaussian-SDE, and Poisson laws; two grids, two initial fields, two horizons | which stochastic ontology is physically correct |
 | historical zero-kappa RNG claim | exact difference recurrence and one-shot decay | closed-form damped geometric sum | original printed value, scalar recurrence, actual runtime, 1,500 steps | absence of chaos in every other Lineum regime |
 | deterministic chaos audit | finite-time largest Lyapunov estimate | logistic-map positive control and exact zero-\(\kappa\) damping exponent | seven regimes, two perturbation sizes, six directions, \(h\), \(\kappa\), horizon, and grid sensitivities | absence of chaos in all Lineum parameter space or a choice among non-chaotic foam mechanisms |
+| foam-source signatures | innovation scale, kurtosis, lag correlation, event-rate ratios, Fano factor, waiting times | Gaussian, compound-Poisson, exact OU lag, and current-source variance formulas | three independent seed families, three \(h\), memory, event-rate, dependence, and resolution boundaries | a physical ontology, full nonlinear morphology, or mechanisms below observation resolution |
 
 ### A.3 Numerical audit summary
 
@@ -1605,6 +1698,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | advection: asymptotic error ratio | \(\approx4\) |
 | diffusion after 1000 steps: norm | \(0.3065662\) |
 | wave after 1000 steps: norm | \(1.0\) |
+| foam protocol: revised post-audit classifications | \(180/180\) in declared controls |
+| current F0: variance-rate exponent in \(h\) | \(0.9997376\) |
+| current F0: centered excess kurtosis | \(\approx-1.615\) |
+| current F0 reconstruction: maximum runtime difference | \(4.63\times10^{-18}\) |
 
 ### A.4 Complete executable program
 
@@ -5990,5 +6087,4951 @@ print(json.dumps(output, indent=2, sort_keys=True))
     "minimum": -0.06044663723779249,
     "positive_estimates": 0
   }
+}
+```
+
+## Appendix I — Observable Foam-Source Signature Protocol
+
+This appendix validates an offline observation protocol for five declared source families and then characterizes the isolated current F0 source. It contains the original decision-rule failure, the recorded correction, a separate post-revision audit, analytical controls, and explicit identifiability boundaries. It requires Python 3 and NumPy, reads no project data, and writes no files.
+
+### I.1 Complete executable program
+
+**Embedded program SHA-256 after LF normalization:** `86a836a40fe11aa1f6ef1408cb720a0381a5432535db95a4ec3f70ae6d295c8f`
+
+```python
+"""Standalone validation of observable signatures for candidate foam sources."""
+
+from __future__ import annotations
+
+import json
+import math
+
+import numpy as np
+
+
+PRIMARY_DT = 0.1
+PRIMARY_TIME = 100.0
+PRIMARY_REPLICATES = 16
+SENSITIVITY_TIME = 50.0
+SENSITIVITY_REPLICATES = 12
+GRID_SIZE = 8
+SOURCE_SIGMA = 0.005
+POISSON_RATE = 0.5
+MEMORY_TIME = 0.5
+HAWKES_BRANCHING_RATIO = 0.6
+STATE_COEFFICIENT = 0.9
+EVENT_THRESHOLD_SIGMA = 2.5
+FANO_WINDOW_TIME = 2.0
+T_CRITICAL_DF15 = 2.131449545559323
+T_CRITICAL_DF11 = 2.200985160082949
+CANDIDATES = (
+    "F1_initial_only",
+    "F2_gaussian_white",
+    "F3_poisson_events",
+    "F4_state_hawkes_events",
+    "F5_colored_memory",
+)
+
+
+def state_fixture(size):
+    y, x = np.mgrid[:size, :size]
+    amplitude = (
+        0.02
+        + 0.006 * np.cos(2.0 * np.pi * x / size)
+        + 0.004 * np.sin(2.0 * np.pi * y / size)
+    )
+    grad_y, grad_x = np.gradient(amplitude)
+    source_state = amplitude + np.sqrt(grad_x**2 + grad_y**2)
+    score = (source_state - np.mean(source_state)) / np.std(source_state)
+    return amplitude, source_state, score
+
+
+def candidate_residuals(
+    candidate,
+    dt,
+    physical_time,
+    replicates,
+    seed,
+    poisson_rate=POISSON_RATE,
+    memory_time=MEMORY_TIME,
+    hawkes_branching_ratio=HAWKES_BRANCHING_RATIO,
+    state_coefficient=STATE_COEFFICIENT,
+):
+    steps = round(physical_time / dt)
+    shape = (replicates, steps, GRID_SIZE, GRID_SIZE)
+    rng = np.random.RandomState(seed)
+    _, _, state_score = state_fixture(GRID_SIZE)
+
+    if candidate == "F1_initial_only":
+        residuals = np.zeros(shape, dtype=np.float64)
+    elif candidate == "F2_gaussian_white":
+        residuals = SOURCE_SIGMA * np.sqrt(dt) * rng.normal(size=shape)
+    elif candidate == "F3_poisson_events":
+        jump = SOURCE_SIGMA / np.sqrt(poisson_rate)
+        positive = rng.poisson(poisson_rate * dt / 2.0, size=shape)
+        negative = rng.poisson(poisson_rate * dt / 2.0, size=shape)
+        residuals = jump * (positive - negative)
+    elif candidate == "F4_state_hawkes_events":
+        decay = np.exp(-dt / memory_time)
+        alpha = (
+            hawkes_branching_ratio * (1.0 - decay) / dt
+        )
+        base_mean = poisson_rate * (1.0 - hawkes_branching_ratio)
+        state_multiplier = np.exp(state_coefficient * state_score)
+        state_multiplier /= np.mean(state_multiplier)
+        baseline = base_mean * state_multiplier
+        excitation = np.zeros(
+            (replicates, GRID_SIZE, GRID_SIZE), dtype=np.float64
+        )
+        jump = SOURCE_SIGMA / np.sqrt(poisson_rate)
+        residuals = np.empty(shape, dtype=np.float64)
+        for step in range(steps):
+            intensity = baseline + excitation
+            positive = rng.poisson(intensity * dt / 2.0)
+            negative = rng.poisson(intensity * dt / 2.0)
+            event_count = positive + negative
+            residuals[:, step] = jump * (positive - negative)
+            excitation = decay * excitation + alpha * event_count
+    elif candidate == "F5_colored_memory":
+        rho = np.exp(-dt / memory_time)
+        innovation_scale = np.sqrt(1.0 - rho**2)
+        eta = rng.normal(size=(replicates, GRID_SIZE, GRID_SIZE))
+        forcing = SOURCE_SIGMA / np.sqrt(PRIMARY_DT)
+        residuals = np.empty(shape, dtype=np.float64)
+        for step in range(steps):
+            eta = rho * eta + innovation_scale * rng.normal(size=eta.shape)
+            residuals[:, step] = forcing * dt * eta
+    else:
+        raise ValueError(candidate)
+
+    return residuals, np.broadcast_to(
+        state_score, (steps, GRID_SIZE, GRID_SIZE)
+    )
+
+
+def current_f0_residuals(dt, physical_time, replicates, seed):
+    steps = round(physical_time / dt)
+    rng = np.random.RandomState(seed)
+    amplitude, source_state, state_score = state_fixture(GRID_SIZE)
+    probability = 1.0 / (1.0 + np.exp(-5.0 * source_state))
+    linon_amplitude = 0.03 + 0.02 * amplitude
+    shape = (replicates, steps, GRID_SIZE, GRID_SIZE)
+    linons = rng.rand(*shape) < probability
+    gaussian = rng.normal(0.0, SOURCE_SIGMA, size=shape)
+    residuals = dt * (
+        linon_amplitude * (linons - probability) + gaussian
+    )
+    return residuals, np.broadcast_to(
+        state_score, (steps, GRID_SIZE, GRID_SIZE)
+    )
+
+
+def correlation(left, right):
+    left = np.asarray(left, dtype=np.float64).ravel()
+    right = np.asarray(right, dtype=np.float64).ravel()
+    left -= np.mean(left)
+    right -= np.mean(right)
+    denominator = np.sqrt(np.sum(left**2) * np.sum(right**2))
+    if denominator == 0.0:
+        return 0.0
+    return float(np.sum(left * right) / denominator)
+
+
+def waiting_time_cv(events, dt):
+    gaps = []
+    for y in range(events.shape[1]):
+        for x in range(events.shape[2]):
+            indices = np.flatnonzero(events[:, y, x])
+            if len(indices) >= 3:
+                gaps.extend(np.diff(indices) * dt)
+    if len(gaps) < 2 or np.mean(gaps) == 0.0:
+        return 0.0
+    return float(np.std(gaps, ddof=1) / np.mean(gaps))
+
+
+def safe_rate_ratio(
+    numerator_events,
+    numerator_total,
+    denominator_events,
+    denominator_total,
+):
+    if (
+        numerator_total < 20
+        or denominator_total < 20
+        or numerator_events + denominator_events < 20
+    ):
+        return 1.0
+    numerator_rate = (numerator_events + 0.5) / (numerator_total + 1.0)
+    denominator_rate = (denominator_events + 0.5) / (
+        denominator_total + 1.0
+    )
+    return float(numerator_rate / denominator_rate)
+
+
+def replicate_features(residuals, state_score, dt):
+    rms = float(np.sqrt(np.mean(residuals**2)))
+    if rms < 1e-15:
+        return {
+            "innovation_rms": rms,
+            "one_step_variance_rate": 0.0,
+            "one_unit_variance_rate": 0.0,
+            "excess_kurtosis": 0.0,
+            "signed_lag1_correlation": 0.0,
+            "absolute_lag1_correlation": 0.0,
+            "tail_fraction": 0.0,
+            "event_count_fano": 0.0,
+            "waiting_time_cv": 0.0,
+            "history_rate_ratio": 0.0,
+            "state_rate_ratio": 0.0,
+        }
+
+    centered = residuals - np.mean(residuals)
+    variance = float(np.mean(centered**2))
+    standardized = centered / np.sqrt(variance)
+    excess_kurtosis = float(np.mean(standardized**4) - 3.0)
+    signed_lag1 = correlation(centered[:-1], centered[1:])
+    absolute_lag1 = correlation(
+        np.abs(centered[:-1]), np.abs(centered[1:])
+    )
+    events = np.abs(standardized) > EVENT_THRESHOLD_SIGMA
+    tail_fraction = float(np.mean(events))
+
+    window_steps = max(1, round(FANO_WINDOW_TIME / dt))
+    usable_steps = events.shape[0] // window_steps * window_steps
+    window_counts = events[:usable_steps].reshape(
+        -1, window_steps, GRID_SIZE, GRID_SIZE
+    ).sum(axis=(1, 2, 3))
+    event_count_fano = (
+        float(np.var(window_counts, ddof=1) / np.mean(window_counts))
+        if (
+            len(window_counts) > 1
+            and np.mean(window_counts) > 0.0
+            and np.sum(window_counts) >= 20
+        )
+        else 0.0
+    )
+
+    previous = events[:-1]
+    following = events[1:]
+    history_rate_ratio = safe_rate_ratio(
+        np.sum(following & previous),
+        np.sum(previous),
+        np.sum(following & ~previous),
+        np.sum(~previous),
+    )
+
+    high_state = state_score > np.quantile(state_score, 0.75)
+    low_state = state_score < np.quantile(state_score, 0.25)
+    state_rate_ratio = safe_rate_ratio(
+        np.sum(events & high_state),
+        np.sum(high_state),
+        np.sum(events & low_state),
+        np.sum(low_state),
+    )
+
+    unit_steps = max(1, round(1.0 / dt))
+    usable_unit_steps = residuals.shape[0] // unit_steps * unit_steps
+    unit_sums = residuals[:usable_unit_steps].reshape(
+        -1, unit_steps, GRID_SIZE, GRID_SIZE
+    ).sum(axis=1)
+    one_unit_variance_rate = float(np.var(unit_sums, ddof=1))
+
+    return {
+        "innovation_rms": rms,
+        "one_step_variance_rate": variance / dt,
+        "one_unit_variance_rate": one_unit_variance_rate,
+        "excess_kurtosis": excess_kurtosis,
+        "signed_lag1_correlation": signed_lag1,
+        "absolute_lag1_correlation": absolute_lag1,
+        "tail_fraction": tail_fraction,
+        "event_count_fano": event_count_fano,
+        "waiting_time_cv": waiting_time_cv(events, dt),
+        "history_rate_ratio": history_rate_ratio,
+        "state_rate_ratio": state_rate_ratio,
+    }
+
+
+def feature_rows(residuals, state_score, dt):
+    return [
+        replicate_features(residuals[index], state_score, dt)
+        for index in range(residuals.shape[0])
+    ]
+
+
+def interval(values):
+    values = np.asarray(values, dtype=np.float64)
+    mean = float(np.mean(values))
+    if len(values) == 1:
+        return {
+            "mean": mean,
+            "standard_deviation": 0.0,
+            "lower_95_t": mean,
+            "upper_95_t": mean,
+        }
+    standard_deviation = float(np.std(values, ddof=1))
+    standard_error = standard_deviation / np.sqrt(len(values))
+    critical = (
+        T_CRITICAL_DF15
+        if len(values) == PRIMARY_REPLICATES
+        else T_CRITICAL_DF11
+    )
+    return {
+        "mean": mean,
+        "standard_deviation": standard_deviation,
+        "lower_95_t": mean - critical * standard_error,
+        "upper_95_t": mean + critical * standard_error,
+    }
+
+
+def summarize(rows):
+    return {
+        metric: interval([row[metric] for row in rows])
+        for metric in rows[0]
+    }
+
+
+def classify_original(row):
+    if row["innovation_rms"] < 1e-15:
+        return "F1_initial_only"
+    if row["signed_lag1_correlation"] > 0.3:
+        return "F5_colored_memory"
+    if row["excess_kurtosis"] < 2.0:
+        return "F2_gaussian_white"
+    if (
+        row["state_rate_ratio"] > 1.5
+        or row["history_rate_ratio"] > 1.5
+        or row["event_count_fano"] > 1.3
+    ):
+        return "F4_state_hawkes_events"
+    return "F3_poisson_events"
+
+
+def classify_revised(row):
+    if row["innovation_rms"] < 1e-15:
+        return "F1_initial_only"
+    if row["signed_lag1_correlation"] > 0.3:
+        return "F5_colored_memory"
+    if row["excess_kurtosis"] < 2.0:
+        return "F2_gaussian_white"
+    if (
+        row["state_rate_ratio"] > 1.5
+        or row["history_rate_ratio"] > 1.5
+    ):
+        return "F4_state_hawkes_events"
+    return "F3_poisson_events"
+
+
+def classification_counts(rows, classifier):
+    counts = {candidate: 0 for candidate in CANDIDATES}
+    for row in rows:
+        counts[classifier(row)] += 1
+    return counts
+
+
+def run_candidate_set(dt, physical_time, replicates, seed_offset):
+    summaries = {}
+    original_classifications = {}
+    revised_classifications = {}
+    for index, candidate in enumerate(CANDIDATES):
+        residuals, score = candidate_residuals(
+            candidate,
+            dt,
+            physical_time,
+            replicates,
+            seed_offset + index * 10_000,
+        )
+        rows = feature_rows(residuals, score, dt)
+        summaries[candidate] = summarize(rows)
+        original_classifications[candidate] = classification_counts(
+            rows, classify_original
+        )
+        revised_classifications[candidate] = classification_counts(
+            rows, classify_revised
+        )
+    return summaries, {
+        "original": original_classifications,
+        "revised": revised_classifications,
+    }
+
+
+def intervals_overlap(left, right):
+    return not (
+        left["upper_95_t"] < right["lower_95_t"]
+        or right["upper_95_t"] < left["lower_95_t"]
+    )
+
+
+def pair_check(summaries, left, right, metric):
+    left_interval = summaries[left][metric]
+    right_interval = summaries[right][metric]
+    return {
+        "left": left,
+        "right": right,
+        "pre_registered_metric": metric,
+        "left_interval": left_interval,
+        "right_interval": right_interval,
+        "intervals_overlap": intervals_overlap(
+            left_interval, right_interval
+        ),
+    }
+
+
+calibration_summaries, calibration_classification = run_candidate_set(
+    PRIMARY_DT,
+    PRIMARY_TIME,
+    PRIMARY_REPLICATES,
+    2_026_078_000,
+)
+validation_summaries, validation_classification = run_candidate_set(
+    PRIMARY_DT,
+    PRIMARY_TIME,
+    PRIMARY_REPLICATES,
+    2_026_088_000,
+)
+
+pre_registered_pair_checks = [
+    pair_check(
+        validation_summaries,
+        "F1_initial_only",
+        "F2_gaussian_white",
+        "innovation_rms",
+    ),
+    pair_check(
+        validation_summaries,
+        "F2_gaussian_white",
+        "F3_poisson_events",
+        "excess_kurtosis",
+    ),
+    pair_check(
+        validation_summaries,
+        "F2_gaussian_white",
+        "F5_colored_memory",
+        "signed_lag1_correlation",
+    ),
+    pair_check(
+        validation_summaries,
+        "F3_poisson_events",
+        "F4_state_hawkes_events",
+        "state_rate_ratio",
+    ),
+]
+
+dt_sensitivity = {}
+for dt_index, dt in enumerate((0.2, 0.1, 0.05)):
+    summaries, classifications = run_candidate_set(
+        dt,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_098_000 + dt_index * 100_000,
+    )
+    dt_sensitivity[f"{dt:.2f}"] = {
+        "summaries": summaries,
+        "classification_counts": classifications,
+    }
+
+audit_dt_sensitivity = {}
+for dt_index, dt in enumerate((0.2, 0.1, 0.05)):
+    summaries, classifications = run_candidate_set(
+        dt,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_208_000 + dt_index * 100_000,
+    )
+    audit_dt_sensitivity[f"{dt:.2f}"] = {
+        "summaries": summaries,
+        "classification_counts": classifications,
+    }
+
+memory_resolution_sweep = []
+for index, memory_time in enumerate((0.02, 0.05, 0.1, 0.2, 0.5)):
+    residuals, score = candidate_residuals(
+        "F5_colored_memory",
+        PRIMARY_DT,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_408_000 + index * 10_000,
+        memory_time=memory_time,
+    )
+    rows = feature_rows(residuals, score, PRIMARY_DT)
+    summary = summarize(rows)
+    memory_resolution_sweep.append(
+        {
+            "memory_time": memory_time,
+            "memory_to_observation_step_ratio": (
+                memory_time / PRIMARY_DT
+            ),
+            "expected_lag1_correlation": float(
+                np.exp(-PRIMARY_DT / memory_time)
+            ),
+            "observed_lag1_interval": summary[
+                "signed_lag1_correlation"
+            ],
+            "revised_classification_counts": classification_counts(
+                rows, classify_revised
+            ),
+        }
+    )
+
+poisson_resolution_sweep = []
+for index, poisson_rate in enumerate((0.25, 0.5, 1.0, 2.0, 5.0, 10.0)):
+    residuals, score = candidate_residuals(
+        "F3_poisson_events",
+        PRIMARY_DT,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_508_000 + index * 10_000,
+        poisson_rate=poisson_rate,
+    )
+    rows = feature_rows(residuals, score, PRIMARY_DT)
+    summary = summarize(rows)
+    poisson_resolution_sweep.append(
+        {
+            "poisson_rate": poisson_rate,
+            "expected_excess_kurtosis": (
+                1.0 / (poisson_rate * PRIMARY_DT)
+            ),
+            "observed_excess_kurtosis_interval": summary[
+                "excess_kurtosis"
+            ],
+            "revised_classification_counts": classification_counts(
+                rows, classify_revised
+            ),
+        }
+    )
+
+event_dependence_sweep = []
+for index, (branching_ratio, state_coefficient) in enumerate(
+    (
+        (0.0, 0.0),
+        (0.1, 0.0),
+        (0.3, 0.0),
+        (0.6, 0.0),
+        (0.0, 0.3),
+        (0.0, 0.9),
+        (0.3, 0.3),
+    )
+):
+    residuals, score = candidate_residuals(
+        "F4_state_hawkes_events",
+        PRIMARY_DT,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_608_000 + index * 10_000,
+        hawkes_branching_ratio=branching_ratio,
+        state_coefficient=state_coefficient,
+    )
+    rows = feature_rows(residuals, score, PRIMARY_DT)
+    summary = summarize(rows)
+    event_dependence_sweep.append(
+        {
+            "hawkes_branching_ratio": branching_ratio,
+            "state_coefficient": state_coefficient,
+            "history_rate_ratio_interval": summary[
+                "history_rate_ratio"
+            ],
+            "state_rate_ratio_interval": summary[
+                "state_rate_ratio"
+            ],
+            "revised_classification_counts": classification_counts(
+                rows, classify_revised
+            ),
+        }
+    )
+
+current_f0 = {}
+f0_variance_rates = []
+for dt_index, dt in enumerate((0.2, 0.1, 0.05, 0.025)):
+    residuals, score = current_f0_residuals(
+        dt,
+        SENSITIVITY_TIME,
+        SENSITIVITY_REPLICATES,
+        2_026_108_000 + dt_index * 100_000,
+    )
+    rows = feature_rows(residuals, score, dt)
+    summary = summarize(rows)
+    current_f0[f"{dt:.3f}"] = summary
+    f0_variance_rates.append(
+        summary["one_step_variance_rate"]["mean"]
+    )
+
+f0_variance_rate_exponent = float(
+    np.polyfit(
+        np.log(np.asarray((0.2, 0.1, 0.05, 0.025))),
+        np.log(np.asarray(f0_variance_rates)),
+        1,
+    )[0]
+)
+
+amplitude, source_state, _ = state_fixture(GRID_SIZE)
+probability = 1.0 / (1.0 + np.exp(-5.0 * source_state))
+linon_amplitude = 0.03 + 0.02 * amplitude
+f0_variance_coefficient = float(
+    np.mean(
+        linon_amplitude**2 * probability * (1.0 - probability)
+        + SOURCE_SIGMA**2
+    )
+)
+
+def score_classifications(classifications, replicates):
+    correct = sum(
+        classifications[candidate][candidate]
+        for candidate in CANDIDATES
+    )
+    total = len(CANDIDATES) * replicates
+    return {
+        "correct": correct,
+        "total": total,
+        "accuracy": correct / total,
+    }
+
+
+def score_dt_collection(collection, classifier_name):
+    correct = 0
+    total = 0
+    for result in collection.values():
+        classifications = result["classification_counts"][classifier_name]
+        score = score_classifications(
+            classifications, SENSITIVITY_REPLICATES
+        )
+        correct += score["correct"]
+        total += score["total"]
+    return {
+        "correct": correct,
+        "total": total,
+        "accuracy": correct / total,
+    }
+
+output = {
+    "schema": "lineum.foam-signature-protocol.v1",
+    "configuration": {
+        "primary_dt": PRIMARY_DT,
+        "primary_physical_time": PRIMARY_TIME,
+        "primary_replicates_per_candidate": PRIMARY_REPLICATES,
+        "sensitivity_time_steps": [0.2, 0.1, 0.05],
+        "sensitivity_physical_time": SENSITIVITY_TIME,
+        "sensitivity_replicates_per_candidate": SENSITIVITY_REPLICATES,
+        "grid_size": GRID_SIZE,
+        "source_sigma": SOURCE_SIGMA,
+        "poisson_target_rate_per_cell_per_time": POISSON_RATE,
+        "memory_time": MEMORY_TIME,
+        "hawkes_branching_ratio": HAWKES_BRANCHING_RATIO,
+        "state_coefficient": STATE_COEFFICIENT,
+        "event_threshold_sigma": EVENT_THRESHOLD_SIGMA,
+        "fano_window_time": FANO_WINDOW_TIME,
+    },
+    "original_pre_registered_decision_tree": [
+        "innovation_rms < 1e-15 -> F1_initial_only",
+        "signed_lag1_correlation > 0.3 -> F5_colored_memory",
+        "excess_kurtosis < 2.0 -> F2_gaussian_white",
+        (
+            "state_rate_ratio > 1.5 OR history_rate_ratio > 1.5 "
+            "OR event_count_fano > 1.3 -> F4_state_hawkes_events"
+        ),
+        "otherwise -> F3_poisson_events",
+    ],
+    "recorded_protocol_revision": {
+        "failure": (
+            "The original OR rule allowed a noisy Fano estimate from only "
+            "25 windows to misclassify independent Poisson runs as F4."
+        ),
+        "change": (
+            "Fano factor remains a supporting metric but cannot alone select "
+            "F4; state-rate or event-history dependence must exceed 1.5."
+        ),
+        "revised_decision_tree": [
+            "innovation_rms < 1e-15 -> F1_initial_only",
+            "signed_lag1_correlation > 0.3 -> F5_colored_memory",
+            "excess_kurtosis < 2.0 -> F2_gaussian_white",
+            (
+                "state_rate_ratio > 1.5 OR history_rate_ratio > 1.5 "
+                "-> F4_state_hawkes_events"
+            ),
+            "otherwise -> F3_poisson_events",
+        ],
+        "audit_seed_family": "2026208000 plus fixed candidate and dt offsets",
+    },
+    "calibration_seed_family": {
+        "summaries": calibration_summaries,
+        "classification_counts": calibration_classification,
+        "scores": {
+            classifier_name: score_classifications(
+                calibration_classification[classifier_name],
+                PRIMARY_REPLICATES,
+            )
+            for classifier_name in ("original", "revised")
+        },
+    },
+    "held_out_validation_seed_family": {
+        "summaries": validation_summaries,
+        "classification_counts": validation_classification,
+        "scores": {
+            classifier_name: score_classifications(
+                validation_classification[classifier_name],
+                PRIMARY_REPLICATES,
+            )
+            for classifier_name in ("original", "revised")
+        },
+    },
+    "pre_registered_pair_checks": pre_registered_pair_checks,
+    "dt_sensitivity": dt_sensitivity,
+    "dt_sensitivity_classification_scores": {
+        classifier_name: score_dt_collection(
+            dt_sensitivity, classifier_name
+        )
+        for classifier_name in ("original", "revised")
+    },
+    "post_revision_audit_dt_sensitivity": audit_dt_sensitivity,
+    "post_revision_audit_classification_scores": {
+        classifier_name: score_dt_collection(
+            audit_dt_sensitivity, classifier_name
+        )
+        for classifier_name in ("original", "revised")
+    },
+    "identifiability_boundaries": {
+        "memory_resolution_sweep": memory_resolution_sweep,
+        "poisson_resolution_sweep": poisson_resolution_sweep,
+        "event_dependence_sweep": event_dependence_sweep,
+        "interpretation": [
+            (
+                "Colored memory shorter than the observation interval can "
+                "be observationally equivalent to white Gaussian forcing."
+            ),
+            (
+                "High-rate small Poisson jumps approach a Gaussian law and "
+                "cannot always be identified as discrete events."
+            ),
+            (
+                "Weak state or history dependence can be observationally "
+                "equivalent to independent Poisson events."
+            ),
+        ],
+    },
+    "current_f0_controlled_source": {
+        "summaries_by_dt": current_f0,
+        "analytic_pre_damping_variance_coefficient": (
+            f0_variance_coefficient
+        ),
+        "expected_one_step_variance_rate": (
+            "dt * analytic_pre_damping_variance_coefficient"
+        ),
+        "fitted_variance_rate_dt_exponent": f0_variance_rate_exponent,
+        "interpretation": (
+            "The isolated current source is an iid state-dependent Bernoulli "
+            "plus Gaussian per-update law. Its one-step variance rate vanishes "
+            "linearly as dt decreases and is outside F1-F5 continuous controls."
+        ),
+    },
+    "limitations": [
+        (
+            "Synthetic identifiability does not establish which candidate, "
+            "if any, exists in nature."
+        ),
+        (
+            "The controls isolate source innovations after a known deterministic "
+            "backbone; detector performance can degrade when the backbone is "
+            "misspecified or observations are coarse."
+        ),
+        (
+            "The F4 control combines state dependence and Hawkes memory; a later "
+            "ablation must separate those two mechanisms."
+        ),
+        (
+            "F7-F10 are not classified by this protocol."
+        ),
+        (
+            "The decision tree identifies declared observable regimes, not "
+            "hidden ontologies below the temporal or amplitude resolution."
+        ),
+    ],
+}
+
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+### I.2 Full reference output
+
+**Normalized execution-output SHA-256:** `8ed3a0f31cb5b8a7f6180d052ecee18c236a7810c2c9afcb6674d6a40aafa258`
+
+```json
+{
+  "calibration_seed_family": {
+    "classification_counts": {
+      "original": {
+        "F1_initial_only": {
+          "F1_initial_only": 16,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F2_gaussian_white": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 16,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F3_poisson_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 15,
+          "F4_state_hawkes_events": 1,
+          "F5_colored_memory": 0
+        },
+        "F4_state_hawkes_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 16,
+          "F5_colored_memory": 0
+        },
+        "F5_colored_memory": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 16
+        }
+      },
+      "revised": {
+        "F1_initial_only": {
+          "F1_initial_only": 16,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F2_gaussian_white": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 16,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F3_poisson_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 16,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F4_state_hawkes_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 16,
+          "F5_colored_memory": 0
+        },
+        "F5_colored_memory": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 16
+        }
+      }
+    },
+    "scores": {
+      "original": {
+        "accuracy": 0.9875,
+        "correct": 79,
+        "total": 80
+      },
+      "revised": {
+        "accuracy": 1.0,
+        "correct": 80,
+        "total": 80
+      }
+    },
+    "summaries": {
+      "F1_initial_only": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      },
+      "F2_gaussian_white": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.003133666799836006,
+          "mean": -0.0014595282285578305,
+          "standard_deviation": 0.0031417840966793467,
+          "upper_95_t": 0.00021461034272034479
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.872897555328334,
+          "mean": 0.9667359664061161,
+          "standard_deviation": 0.17610252379332322,
+          "upper_95_t": 1.0605743774838983
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -0.015846703565262465,
+          "mean": -0.00706369703164017,
+          "standard_deviation": 0.01648269188810192,
+          "upper_95_t": 0.001719309501982123
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 0.9026803075629555,
+          "mean": 1.058704080822078,
+          "standard_deviation": 0.292803127494495,
+          "upper_95_t": 1.2147278540812005
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015797868300506267,
+          "mean": 0.0015819572097811017,
+          "standard_deviation": 4.073058609333307e-06,
+          "upper_95_t": 0.0015841275895115768
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.4957134819229265e-05,
+          "mean": 2.5025750583765732e-05,
+          "standard_deviation": 1.2876826416918036e-07,
+          "upper_95_t": 2.50943663483022e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.4815909261114608e-05,
+          "mean": 2.5047859536664387e-05,
+          "standard_deviation": 4.3529113984053825e-07,
+          "upper_95_t": 2.5279809812214167e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.001816642287045969,
+          "mean": 3.3274727424157985e-05,
+          "standard_deviation": 0.0034716599664754108,
+          "upper_95_t": 0.0018831917418942851
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.9768421956830777,
+          "mean": 1.0250683959927391,
+          "standard_deviation": 0.09050404296012764,
+          "upper_95_t": 1.0732945963024005
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.01213558487652073,
+          "mean": 0.0122783203125,
+          "standard_deviation": 0.00026786547451079985,
+          "upper_95_t": 0.01242105574847927
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.9574588342945344,
+          "mean": 0.9761661458732345,
+          "standard_deviation": 0.03510720977219487,
+          "upper_95_t": 0.9948734574519346
+        }
+      },
+      "F3_poisson_events": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.0032018202245171377,
+          "mean": -0.0010362525775109617,
+          "standard_deviation": 0.004064027978551845,
+          "upper_95_t": 0.0011293150694952141
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.8097426871542137,
+          "mean": 0.8994132667363455,
+          "standard_deviation": 0.16828093307477454,
+          "upper_95_t": 0.9890838463184772
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 19.577819855133793,
+          "mean": 19.829025849520974,
+          "standard_deviation": 0.47142752200828597,
+          "upper_95_t": 20.080231843908155
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 0.9329656436821773,
+          "mean": 0.9798654830069967,
+          "standard_deviation": 0.08801491815282396,
+          "upper_95_t": 1.026765322331816
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015689604374599752,
+          "mean": 0.001577522212090158,
+          "standard_deviation": 1.606751545776973e-05,
+          "upper_95_t": 0.0015860839867203407
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.461768660943092e-05,
+          "mean": 2.4887652915954583e-05,
+          "standard_deviation": 5.06634195655462e-07,
+          "upper_95_t": 2.5157619222478245e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.44116614545009e-05,
+          "mean": 2.4792024007046997e-05,
+          "standard_deviation": 7.138100985567255e-07,
+          "upper_95_t": 2.5172386559593094e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.003976636828651215,
+          "mean": -0.0021295366879728723,
+          "standard_deviation": 0.0034663736601724475,
+          "upper_95_t": -0.00028243654729452963
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.978650074460928,
+          "mean": 1.0012792987488637,
+          "standard_deviation": 0.04246729524530674,
+          "upper_95_t": 1.0239085230367992
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.047676521402058435,
+          "mean": 0.0481357421875,
+          "standard_deviation": 0.0008617999640635258,
+          "upper_95_t": 0.04859496297294156
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.9690843848820939,
+          "mean": 0.977432054592875,
+          "standard_deviation": 0.01566571393289152,
+          "upper_95_t": 0.985779724303656
+        }
+      },
+      "F4_state_hawkes_events": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.16054154118272884,
+          "mean": 0.1659453628192322,
+          "standard_deviation": 0.010141120436581243,
+          "upper_95_t": 0.17134918445573555
+        },
+        "event_count_fano": {
+          "lower_95_t": 2.4576091452685938,
+          "mean": 2.6850488637583285,
+          "standard_deviation": 0.42682637074583224,
+          "upper_95_t": 2.9124885822480633
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 26.725429350095066,
+          "mean": 27.474508348009564,
+          "standard_deviation": 1.4057644469701571,
+          "upper_95_t": 28.223587345924063
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 5.133839224405149,
+          "mean": 5.281522700843929,
+          "standard_deviation": 0.27715124994906093,
+          "upper_95_t": 5.42920617728271
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015657849179120293,
+          "mean": 0.0015850987076276983,
+          "standard_deviation": 3.624536129585107e-05,
+          "upper_95_t": 0.0016044124973433672
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.452182789906487e-05,
+          "mean": 2.5137465591430657e-05,
+          "standard_deviation": 1.1553408686560982e-06,
+          "upper_95_t": 2.5753103283796445e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.4473646171210954e-05,
+          "mean": 2.5265322370927092e-05,
+          "standard_deviation": 1.4857047897108734e-06,
+          "upper_95_t": 2.605699857064323e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.0002359837191459515,
+          "mean": 0.004257169824104711,
+          "standard_deviation": 0.008432108660721957,
+          "upper_95_t": 0.008750323367355373
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 8.568659417499372,
+          "mean": 9.857382047275436,
+          "standard_deviation": 2.4184905196766158,
+          "upper_95_t": 11.1461046770515
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.04372182542294847,
+          "mean": 0.044650390624999994,
+          "standard_deviation": 0.0017425985128029105,
+          "upper_95_t": 0.04557895582705152
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 2.2556483361540383,
+          "mean": 2.3230763451620646,
+          "standard_deviation": 0.1265392542807428,
+          "upper_95_t": 2.390504354170091
+        }
+      },
+      "F5_colored_memory": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.6278017549802759,
+          "mean": 0.6302647627537912,
+          "standard_deviation": 0.0046222211145401215,
+          "upper_95_t": 0.6327277705273064
+        },
+        "event_count_fano": {
+          "lower_95_t": 2.09149317556939,
+          "mean": 2.3839660562813716,
+          "standard_deviation": 0.5488713187160759,
+          "upper_95_t": 2.6764389369933532
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -0.020118619225794575,
+          "mean": -0.001622682163171213,
+          "standard_deviation": 0.03471053227820087,
+          "upper_95_t": 0.01687325489945215
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 45.09224637993597,
+          "mean": 46.79745217917734,
+          "standard_deviation": 3.2000866317366166,
+          "upper_95_t": 48.50265797841871
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015787623267941456,
+          "mean": 0.001582810223176542,
+          "standard_deviation": 7.596513632386545e-06,
+          "upper_95_t": 0.0015868581195589383
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.4922685667081262e-05,
+          "mean": 2.504979299292643e-05,
+          "standard_deviation": 2.3853687010323123e-07,
+          "upper_95_t": 2.51769003187716e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 0.00014239122837381109,
+          "mean": 0.00014349965605674672,
+          "standard_deviation": 2.0801387210782044e-06,
+          "upper_95_t": 0.00014460808373968235
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": 0.8184751365611971,
+          "mean": 0.8194636821029018,
+          "standard_deviation": 0.0018551610452412829,
+          "upper_95_t": 0.8204522276446065
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.8616110490488063,
+          "mean": 0.9368517555332989,
+          "standard_deviation": 0.14120100875247027,
+          "upper_95_t": 1.0120924620177916
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.01203241181850986,
+          "mean": 0.01233203125,
+          "standard_deviation": 0.0005622829442327055,
+          "upper_95_t": 0.01263165068149014
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 1.6132833495555046,
+          "mean": 1.6474681295178732,
+          "standard_deviation": 0.06415311126381479,
+          "upper_95_t": 1.681652909480242
+        }
+      }
+    }
+  },
+  "configuration": {
+    "event_threshold_sigma": 2.5,
+    "fano_window_time": 2.0,
+    "grid_size": 8,
+    "hawkes_branching_ratio": 0.6,
+    "memory_time": 0.5,
+    "poisson_target_rate_per_cell_per_time": 0.5,
+    "primary_dt": 0.1,
+    "primary_physical_time": 100.0,
+    "primary_replicates_per_candidate": 16,
+    "sensitivity_physical_time": 50.0,
+    "sensitivity_replicates_per_candidate": 12,
+    "sensitivity_time_steps": [
+      0.2,
+      0.1,
+      0.05
+    ],
+    "source_sigma": 0.005,
+    "state_coefficient": 0.9
+  },
+  "current_f0_controlled_source": {
+    "analytic_pre_damping_variance_coefficient": 0.0002551958227644319,
+    "expected_one_step_variance_rate": "dt * analytic_pre_damping_variance_coefficient",
+    "fitted_variance_rate_dt_exponent": 0.999737593589198,
+    "interpretation": "The isolated current source is an iid state-dependent Bernoulli plus Gaussian per-update law. Its one-step variance rate vanishes linearly as dt decreases and is outside F1-F5 continuous controls.",
+    "summaries_by_dt": {
+      "0.025": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.0017913877846502681,
+          "mean": 0.00017723615931085866,
+          "standard_deviation": 0.00309839135108825,
+          "upper_95_t": 0.0021458601032719854
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -1.6158616374796602,
+          "mean": -1.614397839783796,
+          "standard_deviation": 0.0023038519543162397,
+          "upper_95_t": -1.6129340420879317
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0003991561247136573,
+          "mean": 0.00039943048400623455,
+          "standard_deviation": 4.318104845873359e-07,
+          "upper_95_t": 0.0003997048432988118
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 6.372974236256657e-06,
+          "mean": 6.381749911304037e-06,
+          "standard_deviation": 1.3811919615309114e-08,
+          "upper_95_t": 6.390525586351417e-06
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 6.337576945032023e-06,
+          "mean": 6.4129782156902435e-06,
+          "standard_deviation": 1.1867306886373398e-07,
+          "upper_95_t": 6.488379486348464e-06
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.0028635723988226316,
+          "mean": -8.477756339548e-06,
+          "standard_deviation": 0.0044935959322979085,
+          "upper_95_t": 0.0028466168861435354
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "tail_fraction": {
+          "lower_95_t": -7.818913802623367e-07,
+          "mean": 6.510416666666666e-07,
+          "standard_deviation": 2.2552744890219758e-06,
+          "upper_95_t": 2.08397471359567e-06
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      },
+      "0.050": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.0005325724967244847,
+          "mean": 0.002144272252173652,
+          "standard_deviation": 0.004213050767585177,
+          "upper_95_t": 0.004821117001071789
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -1.6174318287542087,
+          "mean": -1.6157420376779872,
+          "standard_deviation": 0.0026595399653505224,
+          "upper_95_t": -1.6140522466017657
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0007979711034977829,
+          "mean": 0.0007986695829128914,
+          "standard_deviation": 1.0993275710802976e-06,
+          "upper_95_t": 0.0007993680623279998
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 1.2735076251627746e-05,
+          "mean": 1.275738936597898e-05,
+          "standard_deviation": 3.511831740834962e-08,
+          "upper_95_t": 1.2779702480330214e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 1.2448875446591706e-05,
+          "mean": 1.2663037300836514e-05,
+          "standard_deviation": 3.370665275918422e-07,
+          "upper_95_t": 1.2877199155081323e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.001012694239469818,
+          "mean": 0.001168425087191132,
+          "standard_deviation": 0.0034328350410184586,
+          "upper_95_t": 0.0033495444138520823
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      },
+      "0.100": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.006586463286167401,
+          "mean": -0.0034938770070528417,
+          "standard_deviation": 0.004867380897756648,
+          "upper_95_t": -0.00040129072793828203
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -1.6178847333543318,
+          "mean": -1.6162108608846983,
+          "standard_deviation": 0.0026344858796655372,
+          "upper_95_t": -1.6145369884150649
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.001596945746037247,
+          "mean": 0.00159848073163464,
+          "standard_deviation": 2.415893656885044e-06,
+          "upper_95_t": 0.001600015717232033
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.550168779241622e-05,
+          "mean": 2.555060688732759e-05,
+          "standard_deviation": 7.699312052025352e-08,
+          "upper_95_t": 2.559952598223896e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.5009382415851183e-05,
+          "mean": 2.5358407989326524e-05,
+          "standard_deviation": 5.493267627278054e-07,
+          "upper_95_t": 2.5707433562801864e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.00286994934618004,
+          "mean": -0.000932211679876221,
+          "standard_deviation": 0.003049779844632549,
+          "upper_95_t": 0.0010055259864275978
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      },
+      "0.200": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.005766646834221772,
+          "mean": -0.0011835160974528365,
+          "standard_deviation": 0.007213329228912392,
+          "upper_95_t": 0.0033996146393160988
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -1.6189116779094828,
+          "mean": -1.6148947258783244,
+          "standard_deviation": 0.006322228005636494,
+          "upper_95_t": -1.610877773847166
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0031877074756844585,
+          "mean": 0.0031938419055018152,
+          "standard_deviation": 9.65489846258393e-06,
+          "upper_95_t": 0.003199976335319172
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 5.080370807317834e-05,
+          "mean": 5.099919520740151e-05,
+          "standard_deviation": 3.0767463119815914e-07,
+          "upper_95_t": 5.119468234162468e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 5.0150192027055856e-05,
+          "mean": 5.064381610939636e-05,
+          "standard_deviation": 7.769084553219702e-07,
+          "upper_95_t": 5.1137440191736864e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.0031577110338639855,
+          "mean": 0.0008713085822339084,
+          "standard_deviation": 0.006341221018964259,
+          "upper_95_t": 0.004900328198331802
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 1.0,
+          "mean": 1.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 1.0
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      }
+    }
+  },
+  "dt_sensitivity": {
+    "0.05": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 10,
+            "F4_state_hawkes_events": 2,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.0028798389594410726,
+            "mean": -0.0001611932284404773,
+            "standard_deviation": 0.004278840783911327,
+            "upper_95_t": 0.0025574525025601176
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7319733187944546,
+            "mean": 0.8935739811806641,
+            "standard_deviation": 0.2543411585556996,
+            "upper_95_t": 1.0551746435668736
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.010666248475310312,
+            "mean": 0.0027039735994062544,
+            "standard_deviation": 0.02104321679389724,
+            "upper_95_t": 0.01607419567412282
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.8943725438935611,
+            "mean": 1.1392899956980005,
+            "standard_deviation": 0.38547235835938437,
+            "upper_95_t": 1.38420744750244
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0011176253555500682,
+            "mean": 0.0011192524119976466,
+            "standard_deviation": 2.5608027578720783e-06,
+            "upper_95_t": 0.0011208794684452249
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.498138165971039e-05,
+            "mean": 2.5054338156042248e-05,
+            "standard_deviation": 1.1482527068399348e-07,
+            "upper_95_t": 2.5127294652374106e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.452954934113419e-05,
+            "mean": 2.4979553879500176e-05,
+            "standard_deviation": 7.08256228367384e-07,
+            "upper_95_t": 2.5429558417866164e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.002325198749351136,
+            "mean": 0.00017296677275251032,
+            "standard_deviation": 0.003931829880976822,
+            "upper_95_t": 0.002671132294856157
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9238685085203583,
+            "mean": 0.9729055521288226,
+            "standard_deviation": 0.07717875842436837,
+            "upper_95_t": 1.021942595737287
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.012230957858091748,
+            "mean": 0.01245703125,
+            "standard_deviation": 0.000355813940162839,
+            "upper_95_t": 0.012683104641908253
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9802694124681901,
+            "mean": 0.9980726083764685,
+            "standard_deviation": 0.028020216046416625,
+            "upper_95_t": 1.0158758042847469
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.0014816734196333493,
+            "mean": 0.0010947606581201035,
+            "standard_deviation": 0.004055015732003085,
+            "upper_95_t": 0.0036711947358735566
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7680945331140193,
+            "mean": 0.9529451844363264,
+            "standard_deviation": 0.2909340105594974,
+            "upper_95_t": 1.1377958357586335
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 39.946122943161846,
+            "mean": 40.81815292926939,
+            "standard_deviation": 1.3724765337399336,
+            "upper_95_t": 41.69018291537693
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9447259166748447,
+            "mean": 1.0498005370031753,
+            "standard_deviation": 0.16537556390232022,
+            "upper_95_t": 1.154875157331506
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0011065579462786349,
+            "mean": 0.0011135786225516127,
+            "standard_deviation": 1.1049750110839178e-05,
+            "upper_95_t": 0.0011205992988245906
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.448844648859898e-05,
+            "mean": 2.4802582865397126e-05,
+            "standard_deviation": 4.944151146384732e-07,
+            "upper_95_t": 2.5116719242195273e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.4370187170794264e-05,
+            "mean": 2.504255602336667e-05,
+            "standard_deviation": 1.0582324998850132e-06,
+            "upper_95_t": 2.5714924875939077e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.002409860387392269,
+            "mean": 0.00014562590657585887,
+            "standard_deviation": 0.004022046290427402,
+            "upper_95_t": 0.002701112200543987
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9457851745806632,
+            "mean": 0.9876140920676545,
+            "standard_deviation": 0.0658339834607015,
+            "upper_95_t": 1.0294430095546458
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.02400314947523778,
+            "mean": 0.024290364583333335,
+            "standard_deviation": 0.0004520440836630989,
+            "upper_95_t": 0.02457757969142889
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9759184288539443,
+            "mean": 0.9957067130341889,
+            "standard_deviation": 0.031144520386955667,
+            "upper_95_t": 1.0154949972144336
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.09591978582978772,
+            "mean": 0.10165812374591537,
+            "standard_deviation": 0.009031494625213599,
+            "upper_95_t": 0.10739646166204303
+          },
+          "event_count_fano": {
+            "lower_95_t": 2.2747183696721374,
+            "mean": 3.060835834084177,
+            "standard_deviation": 1.2372599450216701,
+            "upper_95_t": 3.8469532984962163
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 47.04058263826101,
+            "mean": 48.89881049429045,
+            "standard_deviation": 2.9246403992669197,
+            "upper_95_t": 50.757038350319895
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 5.49941809537111,
+            "mean": 5.826521068282162,
+            "standard_deviation": 0.5148230698360696,
+            "upper_95_t": 6.153624041193214
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0010893352779627876,
+            "mean": 0.001108930595476307,
+            "standard_deviation": 3.0840812686425286e-05,
+            "upper_95_t": 0.0011285259129898265
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.3734912248512885e-05,
+            "mean": 2.4611756551106764e-05,
+            "standard_deviation": 1.380053723181539e-06,
+            "upper_95_t": 2.5488600853700643e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.3415458250925503e-05,
+            "mean": 2.4821012588569342e-05,
+            "standard_deviation": 2.212183498325998e-06,
+            "upper_95_t": 2.622656692621318e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.007639159639774854,
+            "mean": -0.0003941080704270001,
+            "standard_deviation": 0.011402891440752998,
+            "upper_95_t": 0.006850943498920854
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 7.549396626892133,
+            "mean": 9.557955206184811,
+            "standard_deviation": 3.161243948761716,
+            "upper_95_t": 11.56651378547749
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.02225216564123634,
+            "mean": 0.02306380208333333,
+            "standard_deviation": 0.0012774239285951775,
+            "upper_95_t": 0.023875438525430323
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 2.087876388260958,
+            "mean": 2.156424219441692,
+            "standard_deviation": 0.10788653054726667,
+            "upper_95_t": 2.2249720506224255
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.7865374218447387,
+            "mean": 0.7890680748392453,
+            "standard_deviation": 0.003982961486797693,
+            "upper_95_t": 0.791598727833752
+          },
+          "event_count_fano": {
+            "lower_95_t": 4.102981631073504,
+            "mean": 5.115062102506216,
+            "standard_deviation": 1.5929001518607724,
+            "upper_95_t": 6.127142573938928
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.019420533988395633,
+            "mean": 0.017012080564851706,
+            "standard_deviation": 0.0573408131987764,
+            "upper_95_t": 0.053444695118099045
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 85.95532285892394,
+            "mean": 90.37478777268582,
+            "standard_deviation": 6.9557377411986705,
+            "upper_95_t": 94.7942526864477
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.000788990142222395,
+            "mean": 0.0007933066639735613,
+            "standard_deviation": 6.793716850607331e-06,
+            "upper_95_t": 0.0007976231857247275
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 1.2444169862093476e-05,
+            "mean": 1.2582830382454503e-05,
+            "standard_deviation": 2.1823597053256299e-07,
+            "upper_95_t": 1.272149090281553e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.00014130383048551354,
+            "mean": 0.00014381220819498488,
+            "standard_deviation": 3.947902708452494e-06,
+            "upper_95_t": 0.0001463205859044562
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.9043162629880939,
+            "mean": 0.90559688082319,
+            "standard_deviation": 0.0020155475790502677,
+            "upper_95_t": 0.9068774986582862
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.750761564428392,
+            "mean": 0.8731029302567649,
+            "standard_deviation": 0.19255146770196918,
+            "upper_95_t": 0.9954442960851377
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.012305039503800965,
+            "mean": 0.012584635416666668,
+            "standard_deviation": 0.0004400523324325822,
+            "upper_95_t": 0.012864231329532372
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 2.2015971808005372,
+            "mean": 2.26062868318893,
+            "standard_deviation": 0.09290890573743452,
+            "upper_95_t": 2.3196601855773227
+          }
+        }
+      }
+    },
+    "0.10": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 10,
+            "F4_state_hawkes_events": 2,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.004386976652333363,
+            "mean": -0.00019061387728065474,
+            "standard_deviation": 0.006604600217393648,
+            "upper_95_t": 0.004005748897772054
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.8653562131923338,
+            "mean": 1.0259959944381936,
+            "standard_deviation": 0.25282884035809977,
+            "upper_95_t": 1.1866357756840533
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.028252475927441102,
+            "mean": -0.011326525847391614,
+            "standard_deviation": 0.02663953036731548,
+            "upper_95_t": 0.005599424232657876
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 1.107447644421124,
+            "mean": 1.3182865804105905,
+            "standard_deviation": 0.3318366302240362,
+            "upper_95_t": 1.529125516400057
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015760958452098208,
+            "mean": 0.001581077529954389,
+            "standard_deviation": 7.840608143452928e-06,
+            "upper_95_t": 0.001586059214698957
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.484053813965251e-05,
+            "mean": 2.499803619983669e-05,
+            "standard_deviation": 2.4788412687186536e-07,
+            "upper_95_t": 2.5155534260020873e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.4618963842202045e-05,
+            "mean": 2.5130520220416314e-05,
+            "standard_deviation": 8.051318601072604e-07,
+            "upper_95_t": 2.5642076598630582e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.000781372883643045,
+            "mean": 0.0018923934284471179,
+            "standard_deviation": 0.0042082056563540774,
+            "upper_95_t": 0.004566159740537281
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9507338014162575,
+            "mean": 1.0347044769397993,
+            "standard_deviation": 0.1321603425505816,
+            "upper_95_t": 1.118675152463341
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.011957932455702518,
+            "mean": 0.012299479166666669,
+            "standard_deviation": 0.0005375558793187472,
+            "upper_95_t": 0.012641025877630819
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9167473725988048,
+            "mean": 0.9422899390671152,
+            "standard_deviation": 0.04020110964960023,
+            "upper_95_t": 0.9678325055354257
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.004297198688914875,
+            "mean": 0.00025393674987623946,
+            "standard_deviation": 0.007162972249950477,
+            "upper_95_t": 0.004805072188667355
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7001485006527008,
+            "mean": 0.9370288447464512,
+            "standard_deviation": 0.37282286016804506,
+            "upper_95_t": 1.1739091888402016
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 19.64707232941522,
+            "mean": 20.21563995372612,
+            "standard_deviation": 0.8948611110200334,
+            "upper_95_t": 20.784207578037023
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.919999522100735,
+            "mean": 1.0074499214248605,
+            "standard_deviation": 0.13763703410509484,
+            "upper_95_t": 1.0949003207489858
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015801963874053334,
+            "mean": 0.0015893339123423146,
+            "standard_deviation": 1.4381430400632782e-05,
+            "upper_95_t": 0.0015984714372792959
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.4970454011187738e-05,
+            "mean": 2.5261030639648436e-05,
+            "standard_deviation": 4.5733473638415867e-07,
+            "upper_95_t": 2.5551607268109133e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.5063233164449883e-05,
+            "mean": 2.545550082382515e-05,
+            "standard_deviation": 6.173849133798598e-07,
+            "upper_95_t": 2.5847768483200417e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.005796828876500549,
+            "mean": -0.000934325258009167,
+            "standard_deviation": 0.007653030535559977,
+            "upper_95_t": 0.003928178360482215
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9384378863664496,
+            "mean": 0.9803417963719068,
+            "standard_deviation": 0.06595201319986205,
+            "upper_95_t": 1.022245706377364
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.04777451904815635,
+            "mean": 0.048421875,
+            "standard_deviation": 0.00101886502418132,
+            "upper_95_t": 0.04906923095184366
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.961265687352756,
+            "mean": 0.9768394034614171,
+            "standard_deviation": 0.024511267092630712,
+            "upper_95_t": 0.9924131195700782
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.1597380841731125,
+            "mean": 0.16724815937171256,
+            "standard_deviation": 0.011820008647534894,
+            "upper_95_t": 0.17475823457031261
+          },
+          "event_count_fano": {
+            "lower_95_t": 1.8480814759285495,
+            "mean": 2.3451880649010093,
+            "standard_deviation": 0.782389526738208,
+            "upper_95_t": 2.842294653873469
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 25.86229236312633,
+            "mean": 27.054724629746005,
+            "standard_deviation": 1.876753471878893,
+            "upper_95_t": 28.24715689636568
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 5.132139432532634,
+            "mean": 5.326940464972627,
+            "standard_deviation": 0.30659478461928885,
+            "upper_95_t": 5.52174149741262
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015481729710566427,
+            "mean": 0.001571255008701592,
+            "standard_deviation": 3.632851567410212e-05,
+            "upper_95_t": 0.0015943370463465415
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.3982472799473104e-05,
+            "mean": 2.469987231445311e-05,
+            "standard_deviation": 1.1291056675946091e-06,
+            "upper_95_t": 2.541727182943312e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.3179679737127444e-05,
+            "mean": 2.4297982930863806e-05,
+            "standard_deviation": 1.7600826983721442e-06,
+            "upper_95_t": 2.5416286124600167e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.006617746745858716,
+            "mean": -0.002819300590228956,
+            "standard_deviation": 0.0059783244800409975,
+            "upper_95_t": 0.0009791455654008046
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 6.4031381853937575,
+            "mean": 8.994169320542492,
+            "standard_deviation": 4.077989848783295,
+            "upper_95_t": 11.585200455691226
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.04298376508004173,
+            "mean": 0.044171875,
+            "standard_deviation": 0.0018699505872786155,
+            "upper_95_t": 0.04535998491995827
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.969670734534311,
+            "mean": 2.0286072262203865,
+            "standard_deviation": 0.09275936964181641,
+            "upper_95_t": 2.087543717906462
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.6244961107480707,
+            "mean": 0.6291004300494503,
+            "standard_deviation": 0.007246677632264444,
+            "upper_95_t": 0.6337047493508299
+          },
+          "event_count_fano": {
+            "lower_95_t": 2.3331280715864113,
+            "mean": 3.036153233794945,
+            "standard_deviation": 1.106482062694726,
+            "upper_95_t": 3.7391783960034783
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.03390567979697582,
+            "mean": -0.00649684344024289,
+            "standard_deviation": 0.04313840729795137,
+            "upper_95_t": 0.020911992916490037
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 45.24726954918188,
+            "mean": 48.781910798316666,
+            "standard_deviation": 5.5631254049885985,
+            "upper_95_t": 52.31655204745145
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015744527502979894,
+            "mean": 0.0015819998210689571,
+            "standard_deviation": 1.1878235492638724e-05,
+            "upper_95_t": 0.0015895468918399249
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.477860316144159e-05,
+            "mean": 2.5019556539829937e-05,
+            "standard_deviation": 3.792333553109941e-07,
+            "upper_95_t": 2.526050991821828e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.00014129154644091572,
+            "mean": 0.0001433900904840782,
+            "standard_deviation": 3.3028708876360236e-06,
+            "upper_95_t": 0.0001454886345272407
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.8164821431558469,
+            "mean": 0.8187694620259239,
+            "standard_deviation": 0.0035999811065834026,
+            "upper_95_t": 0.821056780896001
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.721905862427529,
+            "mean": 0.8603842449817449,
+            "standard_deviation": 0.21794930623232575,
+            "upper_95_t": 0.9988626275359609
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.011983943620568696,
+            "mean": 0.012411458333333333,
+            "standard_deviation": 0.0006728597874450559,
+            "upper_95_t": 0.012838973046097971
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.6049161475587457,
+            "mean": 1.6513389012872974,
+            "standard_deviation": 0.07306416194289922,
+            "upper_95_t": 1.6977616550158492
+          }
+        }
+      }
+    },
+    "0.20": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 10,
+            "F4_state_hawkes_events": 2,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.003557385846438699,
+            "mean": -0.0005237229204360719,
+            "standard_deviation": 0.00477464220674399,
+            "upper_95_t": 0.002509940005566555
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.8471104262060813,
+            "mean": 0.9394829106530848,
+            "standard_deviation": 0.14538383918730843,
+            "upper_95_t": 1.0318553951000882
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.022684646285773713,
+            "mean": -0.0022029975330395413,
+            "standard_deviation": 0.032235797774464184,
+            "upper_95_t": 0.01827865121969463
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 1.0521617611894252,
+            "mean": 1.447143159034054,
+            "standard_deviation": 0.6216560306891759,
+            "upper_95_t": 1.8421245568786828
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0022278181420867455,
+            "mean": 0.00223728933253222,
+            "standard_deviation": 1.4906582158967924e-05,
+            "upper_95_t": 0.0022467605229776946
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.4814863226919904e-05,
+            "mean": 2.5027039845695875e-05,
+            "standard_deviation": 3.339419915800814e-07,
+            "upper_95_t": 2.5239216464471846e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.4457335692598214e-05,
+            "mean": 2.4907949671186458e-05,
+            "standard_deviation": 7.092154183231105e-07,
+            "upper_95_t": 2.5358563649774702e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.005701571761209016,
+            "mean": -0.0012644235416271223,
+            "standard_deviation": 0.006983569263810925,
+            "upper_95_t": 0.0031727246779547713
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.8470327482256312,
+            "mean": 0.9999233171556311,
+            "standard_deviation": 0.24063245694477214,
+            "upper_95_t": 1.152813886085631
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.012030190343027374,
+            "mean": 0.012458333333333335,
+            "standard_deviation": 0.0006738486252096754,
+            "upper_95_t": 0.012886476323639297
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.8181454089860499,
+            "mean": 0.8554516151830672,
+            "standard_deviation": 0.05871574760498576,
+            "upper_95_t": 0.8927578213800845
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.0037772978330241416,
+            "mean": 0.0015206750110693462,
+            "standard_deviation": 0.008338409826210983,
+            "upper_95_t": 0.0068186478551628335
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7426286011685925,
+            "mean": 0.9212625938967892,
+            "standard_deviation": 0.2811496933059425,
+            "upper_95_t": 1.099896586624986
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 9.745904747522113,
+            "mean": 10.165462218935934,
+            "standard_deviation": 0.6603359898678066,
+            "upper_95_t": 10.585019690349755
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9587439314330608,
+            "mean": 1.0178702406641387,
+            "standard_deviation": 0.09305812098105738,
+            "upper_95_t": 1.0769965498952165
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0022104909853248008,
+            "mean": 0.00222860998214838,
+            "standard_deviation": 2.8517250956326464e-05,
+            "upper_95_t": 0.002246728978971959
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.443237172374091e-05,
+            "mean": 2.48357627766927e-05,
+            "standard_deviation": 6.348918763313028e-07,
+            "upper_95_t": 2.5239153829644488e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.4555337059332628e-05,
+            "mean": 2.4941816534463894e-05,
+            "standard_deviation": 6.082749662743559e-07,
+            "upper_95_t": 2.532829600959516e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.000273832546157678,
+            "mean": 0.004607390941971869,
+            "standard_deviation": 0.0068205306017001775,
+            "upper_95_t": 0.00894094933778606
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9705032549943459,
+            "mean": 1.0194408365374426,
+            "standard_deviation": 0.07702221638695103,
+            "upper_95_t": 1.0683784180805393
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.09065861936826818,
+            "mean": 0.09234895833333334,
+            "standard_deviation": 0.0026604022804005804,
+            "upper_95_t": 0.09403929729839851
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9324454511061855,
+            "mean": 0.9482673834948144,
+            "standard_deviation": 0.024901931433278856,
+            "upper_95_t": 0.9640893158834434
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.23637567111316232,
+            "mean": 0.25073643302768844,
+            "standard_deviation": 0.02260221442876235,
+            "upper_95_t": 0.26509719494221456
+          },
+          "event_count_fano": {
+            "lower_95_t": 1.8311260009014232,
+            "mean": 2.1938291679098882,
+            "standard_deviation": 0.5708537474202012,
+            "upper_95_t": 2.5565323349183533
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 15.88555016278816,
+            "mean": 16.858732568581793,
+            "standard_deviation": 1.5316789976022898,
+            "upper_95_t": 17.831914974375426
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 4.715147760657016,
+            "mean": 4.941520276211384,
+            "standard_deviation": 0.35628472693797325,
+            "upper_95_t": 5.167892791765753
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0021631521505162256,
+            "mean": 0.0022129684770414294,
+            "standard_deviation": 7.840526156463713e-05,
+            "upper_95_t": 0.0022627848035666333
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.3432521644771326e-05,
+            "mean": 2.4512656168619787e-05,
+            "standard_deviation": 1.70000953049974e-06,
+            "upper_95_t": 2.5592790692468248e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.35552012963934e-05,
+            "mean": 2.4623058882333018e-05,
+            "standard_deviation": 1.6806870192850936e-06,
+            "upper_95_t": 2.5690916468272636e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.008314711352164834,
+            "mean": -0.00205727974645052,
+            "standard_deviation": 0.009848489360624341,
+            "upper_95_t": 0.004200151859263794
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 8.147745697006373,
+            "mean": 9.159787095762544,
+            "standard_deviation": 1.5928386558887115,
+            "upper_95_t": 10.171828494518715
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0773384045428331,
+            "mean": 0.080421875,
+            "standard_deviation": 0.0048530336254056766,
+            "upper_95_t": 0.08350534545716691
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.8443896650103258,
+            "mean": 1.8994866425120749,
+            "standard_deviation": 0.08671640873118133,
+            "upper_95_t": 1.954583620013824
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.4054337237799187,
+            "mean": 0.4127926564714177,
+            "standard_deviation": 0.011582127442127301,
+            "upper_95_t": 0.4201515891629167
+          },
+          "event_count_fano": {
+            "lower_95_t": 1.2528465143810112,
+            "mean": 1.44704480197319,
+            "standard_deviation": 0.30564613242539984,
+            "upper_95_t": 1.641243089565369
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.02606228199799306,
+            "mean": 0.0003227705582035852,
+            "standard_deviation": 0.04152708743023542,
+            "upper_95_t": 0.026707823114400227
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 18.939569083586857,
+            "mean": 21.70930937782225,
+            "standard_deviation": 4.359257845432884,
+            "upper_95_t": 24.479049672057645
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.003148983296820672,
+            "mean": 0.003170532962201633,
+            "standard_deviation": 3.39167351083148e-05,
+            "upper_95_t": 0.0031920826275825937
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 4.956685325158618e-05,
+            "mean": 5.0252639750442196e-05,
+            "standard_deviation": 1.079350357017972e-06,
+            "upper_95_t": 5.093842624929821e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0001438806025233335,
+            "mean": 0.00014721119885385416,
+            "standard_deviation": 5.241981789415424e-06,
+            "upper_95_t": 0.0001505417951843748
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.6661256819723627,
+            "mean": 0.6705303903215957,
+            "standard_deviation": 0.006932512578237306,
+            "upper_95_t": 0.6749350986708287
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.7305236901542586,
+            "mean": 0.8974389483748298,
+            "standard_deviation": 0.26270573108781214,
+            "upper_95_t": 1.064354206595401
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.01210027975278221,
+            "mean": 0.01255729166666667,
+            "standard_deviation": 0.0007192850445955259,
+            "upper_95_t": 0.01301430358055113
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.2370643650938158,
+            "mean": 1.2804356333520117,
+            "standard_deviation": 0.06826146906784543,
+            "upper_95_t": 1.3238069016102076
+          }
+        }
+      }
+    }
+  },
+  "dt_sensitivity_classification_scores": {
+    "original": {
+      "accuracy": 0.9666666666666667,
+      "correct": 174,
+      "total": 180
+    },
+    "revised": {
+      "accuracy": 1.0,
+      "correct": 180,
+      "total": 180
+    }
+  },
+  "held_out_validation_seed_family": {
+    "classification_counts": {
+      "original": {
+        "F1_initial_only": {
+          "F1_initial_only": 16,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F2_gaussian_white": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 16,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F3_poisson_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 16,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F4_state_hawkes_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 16,
+          "F5_colored_memory": 0
+        },
+        "F5_colored_memory": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 16
+        }
+      },
+      "revised": {
+        "F1_initial_only": {
+          "F1_initial_only": 16,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F2_gaussian_white": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 16,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F3_poisson_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 16,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "F4_state_hawkes_events": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 16,
+          "F5_colored_memory": 0
+        },
+        "F5_colored_memory": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 16
+        }
+      }
+    },
+    "scores": {
+      "original": {
+        "accuracy": 1.0,
+        "correct": 80,
+        "total": 80
+      },
+      "revised": {
+        "accuracy": 1.0,
+        "correct": 80,
+        "total": 80
+      }
+    },
+    "summaries": {
+      "F1_initial_only": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.0,
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "upper_95_t": 0.0
+        }
+      },
+      "F2_gaussian_white": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.0021417801932316887,
+          "mean": -6.673054833990417e-05,
+          "standard_deviation": 0.003894156723934578,
+          "upper_95_t": 0.00200831909655188
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.9055358413430492,
+          "mean": 1.0124577250308913,
+          "standard_deviation": 0.2006557160325072,
+          "upper_95_t": 1.1193796087187333
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -0.006001158487488359,
+          "mean": 0.0016832691444405579,
+          "standard_deviation": 0.014421035952624275,
+          "upper_95_t": 0.009367696776369474
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 0.8062247419506688,
+          "mean": 0.9878654913615342,
+          "standard_deviation": 0.34087740859603644,
+          "upper_95_t": 1.1695062407723995
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015789417989476218,
+          "mean": 0.0015810773663915854,
+          "standard_deviation": 4.0077278834265796e-06,
+          "upper_95_t": 0.0015832129338355491
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.4930377272601164e-05,
+          "mean": 2.4997859732625106e-05,
+          "standard_deviation": 1.2664144016833473e-07,
+          "upper_95_t": 2.506534219264905e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.4655316700650107e-05,
+          "mean": 2.4865327097672468e-05,
+          "standard_deviation": 3.9411751023597936e-07,
+          "upper_95_t": 2.507533749469483e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.003359656822413814,
+          "mean": -0.0016192347429133194,
+          "standard_deviation": 0.0032661755153932733,
+          "upper_95_t": 0.00012118733658717548
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.96904993189409,
+          "mean": 1.0230305697850293,
+          "standard_deviation": 0.10130314931151492,
+          "upper_95_t": 1.0770112076759684
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.012250216993062708,
+          "mean": 0.012438476562500002,
+          "standard_deviation": 0.0003532986644314728,
+          "upper_95_t": 0.012626736131937296
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.9809300001031774,
+          "mean": 1.0042308939393625,
+          "standard_deviation": 0.04372778869615807,
+          "upper_95_t": 1.0275317877755477
+        }
+      },
+      "F3_poisson_events": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": -0.0003377975338171471,
+          "mean": 0.0018773957298295978,
+          "standard_deviation": 0.004157158246155803,
+          "upper_95_t": 0.004092588993476342
+        },
+        "event_count_fano": {
+          "lower_95_t": 0.8725678435561115,
+          "mean": 0.971985090292474,
+          "standard_deviation": 0.18657208554336013,
+          "upper_95_t": 1.0714023370288366
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 19.4617330403842,
+          "mean": 19.766507271374188,
+          "standard_deviation": 0.571956735499478,
+          "upper_95_t": 20.071281502364176
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 1.0002803351753775,
+          "mean": 1.0474752404180654,
+          "standard_deviation": 0.08856865571322402,
+          "upper_95_t": 1.0946701456607533
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.001575199354915086,
+          "mean": 0.0015835956082375984,
+          "standard_deviation": 1.575688871454697e-05,
+          "upper_95_t": 0.0015919918615601109
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.481430108400412e-05,
+          "mean": 2.5079804306030267e-05,
+          "standard_deviation": 4.982585162839967e-07,
+          "upper_95_t": 2.5345307528056415e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.475580314694732e-05,
+          "mean": 2.5101769899349503e-05,
+          "standard_deviation": 6.492609747633429e-07,
+          "upper_95_t": 2.5447736651751685e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.0021794572554494633,
+          "mean": 2.5133905121690832e-05,
+          "standard_deviation": 0.004137261733760886,
+          "upper_95_t": 0.002229725065692845
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 1.006051221147317,
+          "mean": 1.0337807370600158,
+          "standard_deviation": 0.05203879391932281,
+          "upper_95_t": 1.0615102529727147
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.04792632740333358,
+          "mean": 0.0484306640625,
+          "standard_deviation": 0.0009464669904425595,
+          "upper_95_t": 0.04893500072166643
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 0.9805515117712592,
+          "mean": 0.9884076123076616,
+          "standard_deviation": 0.014743207133886624,
+          "upper_95_t": 0.996263712844064
+        }
+      },
+      "F4_state_hawkes_events": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.16516346274702093,
+          "mean": 0.17164315047595982,
+          "standard_deviation": 0.012160152216483314,
+          "upper_95_t": 0.17812283820489871
+        },
+        "event_count_fano": {
+          "lower_95_t": 2.5144055845075424,
+          "mean": 2.8675193769168383,
+          "standard_deviation": 0.6626735183949829,
+          "upper_95_t": 3.2206331693261343
+        },
+        "excess_kurtosis": {
+          "lower_95_t": 25.546409638611163,
+          "mean": 26.30417064832703,
+          "standard_deviation": 1.4220576063732626,
+          "upper_95_t": 27.061931658042898
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 5.230675220240294,
+          "mean": 5.414852651145839,
+          "standard_deviation": 0.3456378900251461,
+          "upper_95_t": 5.599030082051384
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.00155851569348418,
+          "mean": 0.001576874641229414,
+          "standard_deviation": 3.4453450298146986e-05,
+          "upper_95_t": 0.001595233588974648
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.4291395132136824e-05,
+          "mean": 2.487603369903564e-05,
+          "standard_deviation": 1.0971661386343568e-06,
+          "upper_95_t": 2.546067226593446e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 2.410603582560317e-05,
+          "mean": 2.4808646935190064e-05,
+          "standard_deviation": 1.318560152738715e-06,
+          "upper_95_t": 2.5511258044776956e-05
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": -0.00549237939954668,
+          "mean": -0.0020501110466119477,
+          "standard_deviation": 0.006459957469049884,
+          "upper_95_t": 0.0013921573063227846
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 7.985086510131881,
+          "mean": 8.802041365348774,
+          "standard_deviation": 1.5331441589484365,
+          "upper_95_t": 9.618996220565668
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.043719796081690035,
+          "mean": 0.044672851562500004,
+          "standard_deviation": 0.0017885583692010343,
+          "upper_95_t": 0.045625907043309974
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 2.261411878694311,
+          "mean": 2.331644184029331,
+          "standard_deviation": 0.13180195699465191,
+          "upper_95_t": 2.4018764893643514
+        }
+      },
+      "F5_colored_memory": {
+        "absolute_lag1_correlation": {
+          "lower_95_t": 0.6288203463036125,
+          "mean": 0.6314316141960827,
+          "standard_deviation": 0.004900454524782103,
+          "upper_95_t": 0.634042882088553
+        },
+        "event_count_fano": {
+          "lower_95_t": 2.1132800454205403,
+          "mean": 2.4097603546397206,
+          "standard_deviation": 0.5563918880216886,
+          "upper_95_t": 2.706240663858901
+        },
+        "excess_kurtosis": {
+          "lower_95_t": -0.01765234444642067,
+          "mean": -0.004896200320778449,
+          "standard_deviation": 0.023938908903039176,
+          "upper_95_t": 0.007859943804863772
+        },
+        "history_rate_ratio": {
+          "lower_95_t": 46.83076241549249,
+          "mean": 49.19901168823206,
+          "standard_deviation": 4.444391897849242,
+          "upper_95_t": 51.56726096097164
+        },
+        "innovation_rms": {
+          "lower_95_t": 0.0015782184538583035,
+          "mean": 0.0015841052772068683,
+          "standard_deviation": 1.1047549046290055e-05,
+          "upper_95_t": 0.001589992100555433
+        },
+        "one_step_variance_rate": {
+          "lower_95_t": 2.4907061255280772e-05,
+          "mean": 2.50935819802582e-05,
+          "standard_deviation": 3.5003544956722444e-07,
+          "upper_95_t": 2.5280102705235628e-05
+        },
+        "one_unit_variance_rate": {
+          "lower_95_t": 0.00014266202848022214,
+          "mean": 0.000144488711285054,
+          "standard_deviation": 3.428057321155193e-06,
+          "upper_95_t": 0.00014631539408988588
+        },
+        "signed_lag1_correlation": {
+          "lower_95_t": 0.8185227491198667,
+          "mean": 0.8199360115863727,
+          "standard_deviation": 0.002652209093009847,
+          "upper_95_t": 0.8213492740528788
+        },
+        "state_rate_ratio": {
+          "lower_95_t": 0.9419563121016483,
+          "mean": 1.0338810440658153,
+          "standard_deviation": 0.17251120422847177,
+          "upper_95_t": 1.1258057760299822
+        },
+        "tail_fraction": {
+          "lower_95_t": 0.012131814303381961,
+          "mean": 0.0123564453125,
+          "standard_deviation": 0.0004215553862600923,
+          "upper_95_t": 0.01258107632161804
+        },
+        "waiting_time_cv": {
+          "lower_95_t": 1.6524751567654725,
+          "mean": 1.677718774409299,
+          "standard_deviation": 0.04737361519332059,
+          "upper_95_t": 1.7029623920531254
+        }
+      }
+    }
+  },
+  "identifiability_boundaries": {
+    "event_dependence_sweep": [
+      {
+        "hawkes_branching_ratio": 0.0,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 0.9519391229451754,
+          "mean": 1.009251391473191,
+          "standard_deviation": 0.09020302616107863,
+          "upper_95_t": 1.066563660001207
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 12,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.0,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 0.9458577403368084,
+          "mean": 0.9988323303621768,
+          "standard_deviation": 0.08337601097738583,
+          "upper_95_t": 1.0518069203875453
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.1,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 1.3445252260182434,
+          "mean": 1.4401605578331782,
+          "standard_deviation": 0.15051919177495282,
+          "upper_95_t": 1.535795889648113
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 7,
+          "F4_state_hawkes_events": 5,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.0,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 0.9490822387883561,
+          "mean": 1.0103746331659527,
+          "standard_deviation": 0.09646729392354962,
+          "upper_95_t": 1.0716670275435494
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.3,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 2.1493959616598977,
+          "mean": 2.2803162398541863,
+          "standard_deviation": 0.2060537051190422,
+          "upper_95_t": 2.411236518048475
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 12,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.0,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 0.9216908711684244,
+          "mean": 0.9852353567508146,
+          "standard_deviation": 0.10001183067075295,
+          "upper_95_t": 1.0487798423332049
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.6,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 4.340778488953402,
+          "mean": 4.5673595685799615,
+          "standard_deviation": 0.35661298318996404,
+          "upper_95_t": 4.793940648206521
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 12,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.0,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 0.895755263962104,
+          "mean": 1.0391676894239603,
+          "standard_deviation": 0.22571493151481145,
+          "upper_95_t": 1.1825801148858166
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.0,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 1.0000767098945935,
+          "mean": 1.08083328445917,
+          "standard_deviation": 0.12710171129531772,
+          "upper_95_t": 1.1615898590237463
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 12,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.3,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 2.095840080848945,
+          "mean": 2.199729147853607,
+          "standard_deviation": 0.16350963710834007,
+          "upper_95_t": 2.3036182148582696
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.0,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 1.5500678031933532,
+          "mean": 1.647612273431086,
+          "standard_deviation": 0.15352395964612153,
+          "upper_95_t": 1.745156743668819
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 12,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.9,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 8.628145135876908,
+          "mean": 9.051853113512685,
+          "standard_deviation": 0.6668684170589916,
+          "upper_95_t": 9.475561091148462
+        }
+      },
+      {
+        "hawkes_branching_ratio": 0.3,
+        "history_rate_ratio_interval": {
+          "lower_95_t": 2.1260449693707266,
+          "mean": 2.2620947684885993,
+          "standard_deviation": 0.2141269906815857,
+          "upper_95_t": 2.398144567606472
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 12,
+          "F5_colored_memory": 0
+        },
+        "state_coefficient": 0.3,
+        "state_rate_ratio_interval": {
+          "lower_95_t": 1.9577763120539615,
+          "mean": 2.1221509372352525,
+          "standard_deviation": 0.25870706213971634,
+          "upper_95_t": 2.2865255624165433
+        }
+      }
+    ],
+    "interpretation": [
+      "Colored memory shorter than the observation interval can be observationally equivalent to white Gaussian forcing.",
+      "High-rate small Poisson jumps approach a Gaussian law and cannot always be identified as discrete events.",
+      "Weak state or history dependence can be observationally equivalent to independent Poisson events."
+    ],
+    "memory_resolution_sweep": [
+      {
+        "expected_lag1_correlation": 0.006737946999085467,
+        "memory_time": 0.02,
+        "memory_to_observation_step_ratio": 0.19999999999999998,
+        "observed_lag1_interval": {
+          "lower_95_t": 0.0020295857499592843,
+          "mean": 0.0058114260867197,
+          "standard_deviation": 0.0059521887999786135,
+          "upper_95_t": 0.009593266423480115
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 12,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_lag1_correlation": 0.1353352832366127,
+        "memory_time": 0.05,
+        "memory_to_observation_step_ratio": 0.5,
+        "observed_lag1_interval": {
+          "lower_95_t": 0.1304563284918801,
+          "mean": 0.133277683255733,
+          "standard_deviation": 0.004440493180776869,
+          "upper_95_t": 0.1360990380195859
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 12,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_lag1_correlation": 0.36787944117144233,
+        "memory_time": 0.1,
+        "memory_to_observation_step_ratio": 1.0,
+        "observed_lag1_interval": {
+          "lower_95_t": 0.3661243227512503,
+          "mean": 0.36934540963818235,
+          "standard_deviation": 0.005069626315472252,
+          "upper_95_t": 0.3725664965251144
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 12
+        }
+      },
+      {
+        "expected_lag1_correlation": 0.6065306597126334,
+        "memory_time": 0.2,
+        "memory_to_observation_step_ratio": 2.0,
+        "observed_lag1_interval": {
+          "lower_95_t": 0.606670771726395,
+          "mean": 0.6088933379476377,
+          "standard_deviation": 0.0034980677636494615,
+          "upper_95_t": 0.6111159041688803
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 12
+        }
+      },
+      {
+        "expected_lag1_correlation": 0.8187307530779818,
+        "memory_time": 0.5,
+        "memory_to_observation_step_ratio": 5.0,
+        "observed_lag1_interval": {
+          "lower_95_t": 0.8158811345901793,
+          "mean": 0.8177931702299973,
+          "standard_deviation": 0.003009327762957323,
+          "upper_95_t": 0.8197052058698153
+        },
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 12
+        }
+      }
+    ],
+    "poisson_resolution_sweep": [
+      {
+        "expected_excess_kurtosis": 40.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 39.22755510172541,
+          "mean": 40.53108043233804,
+          "standard_deviation": 2.0516013851624515,
+          "upper_95_t": 41.834605762950666
+        },
+        "poisson_rate": 0.25,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 10,
+          "F4_state_hawkes_events": 2,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_excess_kurtosis": 20.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 19.944789417794553,
+          "mean": 20.316329871066554,
+          "standard_deviation": 0.5847626361188422,
+          "upper_95_t": 20.687870324338554
+        },
+        "poisson_rate": 0.5,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 12,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_excess_kurtosis": 10.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 9.70901860706072,
+          "mean": 10.009215112974049,
+          "standard_deviation": 0.47247533506944833,
+          "upper_95_t": 10.309411618887378
+        },
+        "poisson_rate": 1.0,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 12,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_excess_kurtosis": 5.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 4.877697365384861,
+          "mean": 4.984815336265657,
+          "standard_deviation": 0.1685915664803759,
+          "upper_95_t": 5.091933307146453
+        },
+        "poisson_rate": 2.0,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 0,
+          "F3_poisson_events": 7,
+          "F4_state_hawkes_events": 5,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_excess_kurtosis": 2.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 1.952886369713992,
+          "mean": 2.0022175197315444,
+          "standard_deviation": 0.077641648636089,
+          "upper_95_t": 2.051548669749097
+        },
+        "poisson_rate": 5.0,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 5,
+          "F3_poisson_events": 7,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      },
+      {
+        "expected_excess_kurtosis": 1.0,
+        "observed_excess_kurtosis_interval": {
+          "lower_95_t": 0.9448760197160776,
+          "mean": 0.9852721187870627,
+          "standard_deviation": 0.06357888938778235,
+          "upper_95_t": 1.0256682178580478
+        },
+        "poisson_rate": 10.0,
+        "revised_classification_counts": {
+          "F1_initial_only": 0,
+          "F2_gaussian_white": 12,
+          "F3_poisson_events": 0,
+          "F4_state_hawkes_events": 0,
+          "F5_colored_memory": 0
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic identifiability does not establish which candidate, if any, exists in nature.",
+    "The controls isolate source innovations after a known deterministic backbone; detector performance can degrade when the backbone is misspecified or observations are coarse.",
+    "The F4 control combines state dependence and Hawkes memory; a later ablation must separate those two mechanisms.",
+    "F7-F10 are not classified by this protocol.",
+    "The decision tree identifies declared observable regimes, not hidden ontologies below the temporal or amplitude resolution."
+  ],
+  "original_pre_registered_decision_tree": [
+    "innovation_rms < 1e-15 -> F1_initial_only",
+    "signed_lag1_correlation > 0.3 -> F5_colored_memory",
+    "excess_kurtosis < 2.0 -> F2_gaussian_white",
+    "state_rate_ratio > 1.5 OR history_rate_ratio > 1.5 OR event_count_fano > 1.3 -> F4_state_hawkes_events",
+    "otherwise -> F3_poisson_events"
+  ],
+  "post_revision_audit_classification_scores": {
+    "original": {
+      "accuracy": 0.9833333333333333,
+      "correct": 177,
+      "total": 180
+    },
+    "revised": {
+      "accuracy": 1.0,
+      "correct": 180,
+      "total": 180
+    }
+  },
+  "post_revision_audit_dt_sensitivity": {
+    "0.05": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 11,
+            "F4_state_hawkes_events": 1,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.003758729728416599,
+            "mean": -0.0006910396818853295,
+            "standard_deviation": 0.00482819704451369,
+            "upper_95_t": 0.00237665036464594
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.8051520301208053,
+            "mean": 0.9311138369814991,
+            "standard_deviation": 0.1982496322580178,
+            "upper_95_t": 1.0570756438421929
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.010028512815035143,
+            "mean": -0.0016961049959058523,
+            "standard_deviation": 0.013114267150780979,
+            "upper_95_t": 0.006636302823223438
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.8894898468141725,
+            "mean": 1.1199987869660168,
+            "standard_deviation": 0.3627949912454669,
+            "upper_95_t": 1.3505077271178612
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0011150424854540965,
+            "mean": 0.0011168449959558704,
+            "standard_deviation": 2.836947587716601e-06,
+            "upper_95_t": 0.0011186475064576442
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.48662386515447e-05,
+            "mean": 2.4946758707416315e-05,
+            "standard_deviation": 1.267294576331138e-07,
+            "upper_95_t": 2.502727876328793e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.461986126131317e-05,
+            "mean": 2.5039945202370127e-05,
+            "standard_deviation": 6.611645935195675e-07,
+            "upper_95_t": 2.5460029143427086e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.00332758294679295,
+            "mean": -0.0008870668368469442,
+            "standard_deviation": 0.003841096228888274,
+            "upper_95_t": 0.0015534492730990613
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9220581052775485,
+            "mean": 0.9920562631307565,
+            "standard_deviation": 0.11016918063492391,
+            "upper_95_t": 1.0620544209839644
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.012225814011963524,
+            "mean": 0.012382812500000001,
+            "standard_deviation": 0.0002470978568346407,
+            "upper_95_t": 0.01253981098803648
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9653638278026359,
+            "mean": 0.9911681611177382,
+            "standard_deviation": 0.040613101049272994,
+            "upper_95_t": 1.0169724944328407
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.00133900275980424,
+            "mean": 0.0009566766012113406,
+            "standard_deviation": 0.003613139573386663,
+            "upper_95_t": 0.0032523559622269216
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7809004658902713,
+            "mean": 0.9357082424833777,
+            "standard_deviation": 0.24364992488720555,
+            "upper_95_t": 1.090516019076484
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 38.90992912718407,
+            "mean": 40.12637570255209,
+            "standard_deviation": 1.9145492767894579,
+            "upper_95_t": 41.342822277920106
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9521404107954831,
+            "mean": 1.0520242474276091,
+            "standard_deviation": 0.15720585766714737,
+            "upper_95_t": 1.1519080840597353
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0011104583278944524,
+            "mean": 0.0011188072854409524,
+            "standard_deviation": 1.3140314549170886e-05,
+            "upper_95_t": 0.0011271562429874525
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.46627118035689e-05,
+            "mean": 2.5037425150553378e-05,
+            "standard_deviation": 5.897564118304579e-07,
+            "upper_95_t": 2.5412138497537857e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.427602160700792e-05,
+            "mean": 2.485132113225487e-05,
+            "standard_deviation": 9.054563614235476e-07,
+            "upper_95_t": 2.5426620657501817e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.0011528104532524412,
+            "mean": 0.001146851400781371,
+            "standard_deviation": 0.00361940756680476,
+            "upper_95_t": 0.003446513254815183
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9214628274702409,
+            "mean": 0.9700532517325594,
+            "standard_deviation": 0.07647583010554367,
+            "upper_95_t": 1.018643675994878
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.024169355757807227,
+            "mean": 0.024567708333333337,
+            "standard_deviation": 0.0006269618829334964,
+            "upper_95_t": 0.024966060908859448
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.967985878573856,
+            "mean": 0.9804298892506577,
+            "standard_deviation": 0.01958546484823894,
+            "upper_95_t": 0.9928738999274593
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.09210907537991013,
+            "mean": 0.09894635224811227,
+            "standard_deviation": 0.0107611001981451,
+            "upper_95_t": 0.1057836291163144
+          },
+          "event_count_fano": {
+            "lower_95_t": 2.6226139201351986,
+            "mean": 3.015104824679718,
+            "standard_deviation": 0.6177362760175569,
+            "upper_95_t": 3.407595729224237
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 46.12254249866498,
+            "mean": 48.63802814371106,
+            "standard_deviation": 3.9590897948314954,
+            "upper_95_t": 51.153513788757145
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 5.340108743161103,
+            "mean": 5.657727592949765,
+            "standard_deviation": 0.4998961331068833,
+            "upper_95_t": 5.975346442738427
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0010739625823203709,
+            "mean": 0.0011015623353015209,
+            "standard_deviation": 4.343888846383744e-05,
+            "upper_95_t": 0.0011291620882826708
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.3060919963323164e-05,
+            "mean": 2.43032212524414e-05,
+            "standard_deviation": 1.9552416709433958e-06,
+            "upper_95_t": 2.5545522541559637e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.2840634606401342e-05,
+            "mean": 2.4229548866182137e-05,
+            "standard_deviation": 2.185993898483706e-06,
+            "upper_95_t": 2.561846312596293e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.008353438772641645,
+            "mean": -0.0009008395807513048,
+            "standard_deviation": 0.011729547916001712,
+            "upper_95_t": 0.006551759611139034
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 8.882898154637463,
+            "mean": 10.131165958124157,
+            "standard_deviation": 1.964632289487928,
+            "upper_95_t": 11.379433761610851
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.021809088914608137,
+            "mean": 0.0229140625,
+            "standard_deviation": 0.0017391034029944328,
+            "upper_95_t": 0.02401903608539186
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 2.0640728227385226,
+            "mean": 2.1259543590376464,
+            "standard_deviation": 0.09739453665054353,
+            "upper_95_t": 2.1878358953367703
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.783577184143274,
+            "mean": 0.7857409794512433,
+            "standard_deviation": 0.0034055689956952536,
+            "upper_95_t": 0.7879047747592126
+          },
+          "event_count_fano": {
+            "lower_95_t": 3.5177397082598256,
+            "mean": 4.386488838016436,
+            "standard_deviation": 1.3673128370506478,
+            "upper_95_t": 5.255237967773046
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.04294478594387599,
+            "mean": -0.018613351882092084,
+            "standard_deviation": 0.038294924273304456,
+            "upper_95_t": 0.005718082179691827
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 87.97559175264861,
+            "mean": 91.13962256047483,
+            "standard_deviation": 4.979826502475537,
+            "upper_95_t": 94.30365336830106
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0007852845937243646,
+            "mean": 0.0007893421756430705,
+            "standard_deviation": 6.3861748516345694e-06,
+            "upper_95_t": 0.0007933997575617763
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 1.2328415009070442e-05,
+            "mean": 1.245630805072766e-05,
+            "standard_deviation": 2.012891773213722e-07,
+            "upper_95_t": 1.2584201092384877e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.00013928336227333807,
+            "mean": 0.0001415006241198529,
+            "standard_deviation": 3.489719277982726e-06,
+            "upper_95_t": 0.00014371788596636775
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.9037660701246631,
+            "mean": 0.9046756406221411,
+            "standard_deviation": 0.0014315610511777984,
+            "upper_95_t": 0.9055852111196191
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 1.0029313059150047,
+            "mean": 1.1515907192673251,
+            "standard_deviation": 0.23397309679261824,
+            "upper_95_t": 1.3002501326196456
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.01161772856640573,
+            "mean": 0.011949218749999999,
+            "standard_deviation": 0.0005217280430677418,
+            "upper_95_t": 0.012280708933594267
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 2.1400731275835287,
+            "mean": 2.2101220168917215,
+            "standard_deviation": 0.11024902620514324,
+            "upper_95_t": 2.2801709061999142
+          }
+        }
+      }
+    },
+    "0.10": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 11,
+            "F4_state_hawkes_events": 1,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.0030732067839221847,
+            "mean": -0.00039664332751789596,
+            "standard_deviation": 0.004212608045026235,
+            "upper_95_t": 0.002279920128886393
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7811644388216028,
+            "mean": 0.9854587455847063,
+            "standard_deviation": 0.3215361243030115,
+            "upper_95_t": 1.1897530523478097
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.01609676099265355,
+            "mean": 0.005321823628430959,
+            "standard_deviation": 0.033710428823185375,
+            "upper_95_t": 0.02674040824951547
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.7206476658108891,
+            "mean": 0.9813957924471314,
+            "standard_deviation": 0.4103880494090698,
+            "upper_95_t": 1.2421439190833736
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015803021252035051,
+            "mean": 0.0015839526265777365,
+            "standard_deviation": 5.745476133087931e-06,
+            "upper_95_t": 0.001587603127951968
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.497305545446829e-05,
+            "mean": 2.5087889967431295e-05,
+            "standard_deviation": 1.807365306423571e-07,
+            "upper_95_t": 2.52027244803943e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.492978046330272e-05,
+            "mean": 2.52566828155059e-05,
+            "standard_deviation": 5.145073155407741e-07,
+            "upper_95_t": 2.5583585167709077e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.00224921836410809,
+            "mean": 0.0021849205036871683,
+            "standard_deviation": 0.006978832884586901,
+            "upper_95_t": 0.0066190593714824265
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9360619607099413,
+            "mean": 1.0084367130822347,
+            "standard_deviation": 0.11390967151210048,
+            "upper_95_t": 1.080811465454528
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.012023412889690582,
+            "mean": 0.012369791666666666,
+            "standard_deviation": 0.0005451610045053968,
+            "upper_95_t": 0.01271617044364275
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9066908850508832,
+            "mean": 0.9409594296984561,
+            "standard_deviation": 0.05393481201736216,
+            "upper_95_t": 0.975227974346029
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.004725315636769461,
+            "mean": -0.0019176279610509028,
+            "standard_deviation": 0.004418982730393545,
+            "upper_95_t": 0.0008900597146676553
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.6643050227222055,
+            "mean": 0.8258700534575506,
+            "standard_deviation": 0.2542850783687234,
+            "upper_95_t": 0.9874350841928957
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 19.976208802082034,
+            "mean": 20.541131998490588,
+            "standard_deviation": 0.8891251938445172,
+            "upper_95_t": 21.10605519489914
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9093994209481081,
+            "mean": 0.9688061785704272,
+            "standard_deviation": 0.09349951501800076,
+            "upper_95_t": 1.0282129361927461
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015654036559884339,
+            "mean": 0.0015782992871590724,
+            "standard_deviation": 2.0296264407682862e-05,
+            "upper_95_t": 0.0015911949183297109
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.450642829733185e-05,
+            "mean": 2.491310188802083e-05,
+            "standard_deviation": 6.400582193323246e-07,
+            "upper_95_t": 2.531977547870981e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.4321952654701717e-05,
+            "mean": 2.4844511956861512e-05,
+            "standard_deviation": 8.22449217489854e-07,
+            "upper_95_t": 2.5367071259021307e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.0061407094932403525,
+            "mean": -0.0032431122981307057,
+            "standard_deviation": 0.004560490141250959,
+            "upper_95_t": -0.00034551510302105936
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9478253025663278,
+            "mean": 0.9887920604112957,
+            "standard_deviation": 0.06447704173178635,
+            "upper_95_t": 1.0297588182562638
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.04700752307454474,
+            "mean": 0.04772395833333334,
+            "standard_deviation": 0.001127588037448504,
+            "upper_95_t": 0.04844039359212193
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9690339850408911,
+            "mean": 0.9868546564552999,
+            "standard_deviation": 0.028047720515828562,
+            "upper_95_t": 1.0046753278697087
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.16205300888740393,
+            "mean": 0.17219350567032432,
+            "standard_deviation": 0.015959994606546967,
+            "upper_95_t": 0.18233400245324471
+          },
+          "event_count_fano": {
+            "lower_95_t": 2.2381674170774515,
+            "mean": 2.855713302002449,
+            "standard_deviation": 0.971947351662169,
+            "upper_95_t": 3.4732591869274465
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 25.70757270259635,
+            "mean": 27.042378102265193,
+            "standard_deviation": 2.100832674725152,
+            "upper_95_t": 28.377183501934034
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 5.317156311229929,
+            "mean": 5.5626958981703645,
+            "standard_deviation": 0.3864515286729904,
+            "upper_95_t": 5.8082354851108
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015375020314202705,
+            "mean": 0.0015683397614184988,
+            "standard_deviation": 4.8535097933153905e-05,
+            "upper_95_t": 0.001599177491416727
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.3632003061240914e-05,
+            "mean": 2.461794478352864e-05,
+            "standard_deviation": 1.5517607181321928e-06,
+            "upper_95_t": 2.560388650581637e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.326176856109481e-05,
+            "mean": 2.4602500700088564e-05,
+            "standard_deviation": 2.110160691851427e-06,
+            "upper_95_t": 2.5943232839082317e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.012842283743913559,
+            "mean": 9.490085658127561e-05,
+            "standard_deviation": 0.020361664804782444,
+            "upper_95_t": 0.013032085457076108
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 9.192103979024619,
+            "mean": 10.528937412334423,
+            "standard_deviation": 2.104024570217508,
+            "upper_95_t": 11.865770845644228
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.042361465659153205,
+            "mean": 0.044039062500000004,
+            "standard_deviation": 0.0026403476185674884,
+            "upper_95_t": 0.0457166593408468
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 2.006799215074401,
+            "mean": 2.063503017782392,
+            "standard_deviation": 0.08924536980422054,
+            "upper_95_t": 2.120206820490383
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.6261984865172984,
+            "mean": 0.6294514123749323,
+            "standard_deviation": 0.005119737252989209,
+            "upper_95_t": 0.6327043382325662
+          },
+          "event_count_fano": {
+            "lower_95_t": 2.11172159958326,
+            "mean": 2.5602700152189235,
+            "standard_deviation": 0.7059644559404589,
+            "upper_95_t": 3.008818430854587
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.04802265485803392,
+            "mean": -0.013390089934370408,
+            "standard_deviation": 0.05450773874545549,
+            "upper_95_t": 0.021242474989293103
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 44.19743759933262,
+            "mean": 47.47583431671927,
+            "standard_deviation": 5.159825504381595,
+            "upper_95_t": 50.75423103410592
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0015737293226827421,
+            "mean": 0.0015836578752982304,
+            "standard_deviation": 1.5626418467081786e-05,
+            "upper_95_t": 0.0015935864279137187
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.4762946093517535e-05,
+            "mean": 2.507741726066599e-05,
+            "standard_deviation": 4.949420367705567e-07,
+            "upper_95_t": 2.5391888427814448e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.00014096250140055536,
+            "mean": 0.00014363463961338912,
+            "standard_deviation": 4.205643212333093e-06,
+            "upper_95_t": 0.00014630677782622288
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.8167185666459948,
+            "mean": 0.8189628069525434,
+            "standard_deviation": 0.0035321803216425873,
+            "upper_95_t": 0.821207047259092
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 1.0045054633845405,
+            "mean": 1.1019376996062606,
+            "standard_deviation": 0.1533473160034499,
+            "upper_95_t": 1.1993699358279808
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.011657292332125015,
+            "mean": 0.012226562499999998,
+            "standard_deviation": 0.0008959668351017644,
+            "upper_95_t": 0.012795832667874981
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.626215129969153,
+            "mean": 1.6846123463298948,
+            "standard_deviation": 0.09191061129515773,
+            "upper_95_t": 1.7430095626906366
+          }
+        }
+      }
+    },
+    "0.20": {
+      "classification_counts": {
+        "original": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 11,
+            "F4_state_hawkes_events": 1,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        },
+        "revised": {
+          "F1_initial_only": {
+            "F1_initial_only": 12,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F2_gaussian_white": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 12,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F3_poisson_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 12,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 0
+          },
+          "F4_state_hawkes_events": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 12,
+            "F5_colored_memory": 0
+          },
+          "F5_colored_memory": {
+            "F1_initial_only": 0,
+            "F2_gaussian_white": 0,
+            "F3_poisson_events": 0,
+            "F4_state_hawkes_events": 0,
+            "F5_colored_memory": 12
+          }
+        }
+      },
+      "summaries": {
+        "F1_initial_only": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.0,
+            "mean": 0.0,
+            "standard_deviation": 0.0,
+            "upper_95_t": 0.0
+          }
+        },
+        "F2_gaussian_white": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.003943029417941897,
+            "mean": 0.0007846746348429967,
+            "standard_deviation": 0.007440871270812315,
+            "upper_95_t": 0.0055123786876278905
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.8411810577170579,
+            "mean": 0.9752444842046247,
+            "standard_deviation": 0.21100066490633668,
+            "upper_95_t": 1.1093079106921917
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.023526610730082862,
+            "mean": -0.005837020448963726,
+            "standard_deviation": 0.02784141364298908,
+            "upper_95_t": 0.01185256983215541
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9168523386408511,
+            "mean": 1.280498794293349,
+            "standard_deviation": 0.5723383770190721,
+            "upper_95_t": 1.6441452499458469
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.002224620529116067,
+            "mean": 0.0022336168757106345,
+            "standard_deviation": 1.4159231663063728e-05,
+            "upper_95_t": 0.002242613222305202
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.4744728509226566e-05,
+            "mean": 2.4944685421134225e-05,
+            "standard_deviation": 3.1470955554792266e-07,
+            "upper_95_t": 2.5144642333041884e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.5002826411552155e-05,
+            "mean": 2.5340232397213278e-05,
+            "standard_deviation": 5.31038846187308e-07,
+            "upper_95_t": 2.56776383828744e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.00011612289540557062,
+            "mean": 0.005085508541737701,
+            "standard_deviation": 0.008186779352060802,
+            "upper_95_t": 0.010287139978880972
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9584338693883774,
+            "mean": 1.0820080618320047,
+            "standard_deviation": 0.19449179730824737,
+            "upper_95_t": 1.205582254275632
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.01170995845647709,
+            "mean": 0.012223958333333333,
+            "standard_deviation": 0.0008089776505041111,
+            "upper_95_t": 0.012737958210189576
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.7992434410398234,
+            "mean": 0.8413346514127115,
+            "standard_deviation": 0.06624680278640745,
+            "upper_95_t": 0.8834258617855996
+          }
+        },
+        "F3_poisson_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": -0.0053067144018958765,
+            "mean": 0.0002874169093614297,
+            "standard_deviation": 0.00880452974516593,
+            "upper_95_t": 0.005881548220618735
+          },
+          "event_count_fano": {
+            "lower_95_t": 0.7837539656706936,
+            "mean": 0.9447798204031876,
+            "standard_deviation": 0.25343647634441474,
+            "upper_95_t": 1.1058056751356817
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 9.819284208205142,
+            "mean": 10.185147070524236,
+            "standard_deviation": 0.57582675034062,
+            "upper_95_t": 10.55100993284333
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 0.9516641350351708,
+            "mean": 1.0133579692966983,
+            "standard_deviation": 0.09709911488060378,
+            "upper_95_t": 1.0750518035582257
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0022020288245356186,
+            "mean": 0.002220180126017066,
+            "standard_deviation": 2.8568094832754295e-05,
+            "upper_95_t": 0.0022383314274985137
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.424578383927529e-05,
+            "mean": 2.4647682047526028e-05,
+            "standard_deviation": 6.325423076772981e-07,
+            "upper_95_t": 2.5049580255776767e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.413236105825106e-05,
+            "mean": 2.469143881225904e-05,
+            "standard_deviation": 8.799251288789471e-07,
+            "upper_95_t": 2.525051656626702e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.006136149256059982,
+            "mean": -0.000498879859862236,
+            "standard_deviation": 0.008872424210074769,
+            "upper_95_t": 0.00513838953633551
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.9331479069990084,
+            "mean": 0.9755005336496035,
+            "standard_deviation": 0.06665824243000514,
+            "upper_95_t": 1.0178531603001986
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.09038229687813899,
+            "mean": 0.09164583333333333,
+            "standard_deviation": 0.0019886634197293653,
+            "upper_95_t": 0.09290936978852767
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 0.9316987924463216,
+            "mean": 0.9482829211338362,
+            "standard_deviation": 0.026101542170282745,
+            "upper_95_t": 0.9648670498213507
+          }
+        },
+        "F4_state_hawkes_events": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.2363782406865469,
+            "mean": 0.25333665236328606,
+            "standard_deviation": 0.026690621247691268,
+            "upper_95_t": 0.27029506404002523
+          },
+          "event_count_fano": {
+            "lower_95_t": 1.788858946767896,
+            "mean": 2.3249576492979087,
+            "standard_deviation": 0.843758701779472,
+            "upper_95_t": 2.8610563518279215
+          },
+          "excess_kurtosis": {
+            "lower_95_t": 16.1231336515353,
+            "mean": 17.121285636453067,
+            "standard_deviation": 1.5709782900018634,
+            "upper_95_t": 18.11943762137083
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 4.716152707620733,
+            "mean": 4.937323492652244,
+            "standard_deviation": 0.3480977916362079,
+            "upper_95_t": 5.158494277683754
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0021409080418723293,
+            "mean": 0.0022092532005776604,
+            "standard_deviation": 0.00010756754700202527,
+            "upper_95_t": 0.0022775983592829914
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 2.2946714031479797e-05,
+            "mean": 2.4455719807942698e-05,
+            "standard_deviation": 2.3750043581849205e-06,
+            "upper_95_t": 2.59647255844056e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 2.2651928973225636e-05,
+            "mean": 2.4674330601359796e-05,
+            "standard_deviation": 3.1830313413892992e-06,
+            "upper_95_t": 2.6696732229493957e-05
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": -0.009029187799059304,
+            "mean": 0.0012555429783943815,
+            "standard_deviation": 0.016187002594825122,
+            "upper_95_t": 0.011540273755848067
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 7.35181435248869,
+            "mean": 9.535256372235995,
+            "standard_deviation": 3.436490697139108,
+            "upper_95_t": 11.7186983919833
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.07591041976358565,
+            "mean": 0.07967708333333333,
+            "standard_deviation": 0.005928302285850835,
+            "upper_95_t": 0.08344374690308101
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.8965791410199624,
+            "mean": 1.946879394967498,
+            "standard_deviation": 0.07916690857421804,
+            "upper_95_t": 1.9971796489150337
+          }
+        },
+        "F5_colored_memory": {
+          "absolute_lag1_correlation": {
+            "lower_95_t": 0.4043191174345639,
+            "mean": 0.4094527210068353,
+            "standard_deviation": 0.008079711189652889,
+            "upper_95_t": 0.41458632457910666
+          },
+          "event_count_fano": {
+            "lower_95_t": 1.0577979025571913,
+            "mean": 1.257846206762142,
+            "standard_deviation": 0.31485339668342976,
+            "upper_95_t": 1.4578945109670929
+          },
+          "excess_kurtosis": {
+            "lower_95_t": -0.018012427887076434,
+            "mean": 0.019144884066087425,
+            "standard_deviation": 0.058481404911553944,
+            "upper_95_t": 0.05630219601925128
+          },
+          "history_rate_ratio": {
+            "lower_95_t": 18.668366924885415,
+            "mean": 20.458413339322465,
+            "standard_deviation": 2.8173305244771583,
+            "upper_95_t": 22.248459753759516
+          },
+          "innovation_rms": {
+            "lower_95_t": 0.0031398134053078727,
+            "mean": 0.003153453447330935,
+            "standard_deviation": 2.1467882864260648e-05,
+            "upper_95_t": 0.003167093489353997
+          },
+          "one_step_variance_rate": {
+            "lower_95_t": 4.928823966765595e-05,
+            "mean": 4.9716730994153205e-05,
+            "standard_deviation": 6.743968669628526e-07,
+            "upper_95_t": 5.0145222320650464e-05
+          },
+          "one_unit_variance_rate": {
+            "lower_95_t": 0.00014344402108157171,
+            "mean": 0.00014541493564683628,
+            "standard_deviation": 3.1019965298513195e-06,
+            "upper_95_t": 0.00014738585021210085
+          },
+          "signed_lag1_correlation": {
+            "lower_95_t": 0.665127829462874,
+            "mean": 0.6683238060309097,
+            "standard_deviation": 0.005030105514595004,
+            "upper_95_t": 0.6715197825989454
+          },
+          "state_rate_ratio": {
+            "lower_95_t": 0.8429314107915641,
+            "mean": 0.9773233298339846,
+            "standard_deviation": 0.21151767502092844,
+            "upper_95_t": 1.111715248876405
+          },
+          "tail_fraction": {
+            "lower_95_t": 0.011893382627475798,
+            "mean": 0.012588541666666668,
+            "standard_deviation": 0.0010941016750644285,
+            "upper_95_t": 0.013283700705857538
+          },
+          "waiting_time_cv": {
+            "lower_95_t": 1.2333123316640138,
+            "mean": 1.2724446811888594,
+            "standard_deviation": 0.0615898905870151,
+            "upper_95_t": 1.3115770307137051
+          }
+        }
+      }
+    }
+  },
+  "pre_registered_pair_checks": [
+    {
+      "intervals_overlap": false,
+      "left": "F1_initial_only",
+      "left_interval": {
+        "lower_95_t": 0.0,
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "upper_95_t": 0.0
+      },
+      "pre_registered_metric": "innovation_rms",
+      "right": "F2_gaussian_white",
+      "right_interval": {
+        "lower_95_t": 0.0015789417989476218,
+        "mean": 0.0015810773663915854,
+        "standard_deviation": 4.0077278834265796e-06,
+        "upper_95_t": 0.0015832129338355491
+      }
+    },
+    {
+      "intervals_overlap": false,
+      "left": "F2_gaussian_white",
+      "left_interval": {
+        "lower_95_t": -0.006001158487488359,
+        "mean": 0.0016832691444405579,
+        "standard_deviation": 0.014421035952624275,
+        "upper_95_t": 0.009367696776369474
+      },
+      "pre_registered_metric": "excess_kurtosis",
+      "right": "F3_poisson_events",
+      "right_interval": {
+        "lower_95_t": 19.4617330403842,
+        "mean": 19.766507271374188,
+        "standard_deviation": 0.571956735499478,
+        "upper_95_t": 20.071281502364176
+      }
+    },
+    {
+      "intervals_overlap": false,
+      "left": "F2_gaussian_white",
+      "left_interval": {
+        "lower_95_t": -0.003359656822413814,
+        "mean": -0.0016192347429133194,
+        "standard_deviation": 0.0032661755153932733,
+        "upper_95_t": 0.00012118733658717548
+      },
+      "pre_registered_metric": "signed_lag1_correlation",
+      "right": "F5_colored_memory",
+      "right_interval": {
+        "lower_95_t": 0.8185227491198667,
+        "mean": 0.8199360115863727,
+        "standard_deviation": 0.002652209093009847,
+        "upper_95_t": 0.8213492740528788
+      }
+    },
+    {
+      "intervals_overlap": false,
+      "left": "F3_poisson_events",
+      "left_interval": {
+        "lower_95_t": 1.006051221147317,
+        "mean": 1.0337807370600158,
+        "standard_deviation": 0.05203879391932281,
+        "upper_95_t": 1.0615102529727147
+      },
+      "pre_registered_metric": "state_rate_ratio",
+      "right": "F4_state_hawkes_events",
+      "right_interval": {
+        "lower_95_t": 7.985086510131881,
+        "mean": 8.802041365348774,
+        "standard_deviation": 1.5331441589484365,
+        "upper_95_t": 9.618996220565668
+      }
+    }
+  ],
+  "recorded_protocol_revision": {
+    "audit_seed_family": "2026208000 plus fixed candidate and dt offsets",
+    "change": "Fano factor remains a supporting metric but cannot alone select F4; state-rate or event-history dependence must exceed 1.5.",
+    "failure": "The original OR rule allowed a noisy Fano estimate from only 25 windows to misclassify independent Poisson runs as F4.",
+    "revised_decision_tree": [
+      "innovation_rms < 1e-15 -> F1_initial_only",
+      "signed_lag1_correlation > 0.3 -> F5_colored_memory",
+      "excess_kurtosis < 2.0 -> F2_gaussian_white",
+      "state_rate_ratio > 1.5 OR history_rate_ratio > 1.5 -> F4_state_hawkes_events",
+      "otherwise -> F3_poisson_events"
+    ]
+  },
+  "schema": "lineum.foam-signature-protocol.v1"
 }
 ```
