@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 1.3
+**Research version:** 1.4
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all thirteen embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen, and the synthetic validation of a minimum-flux topological-transport observable together with its explicit non-particle ambiguity; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, and for the other untested hypotheses proposed for future work
+**Reproducibility:** all fourteen embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, exact separation of its coherent conditional mean from its centered random component, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen, and the synthetic validation of a minimum-flux topological-transport observable together with its explicit non-particle ambiguity; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, for substrate or simulation interpretations, and for the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls; and (xv) a three-version synthetic audit in which two frozen topological-current observers fail at \(7/12\) and \(11/12\) on exactly advected smooth textures before a representation-invariant minimum-flux transport rule passes a new holdout, while deliberately non-particle smooth disorder passes the same rule and therefore blocks any particle interpretation.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls; (xv) a three-version synthetic audit in which two frozen topological-current observers fail at \(7/12\) and \(11/12\) on exactly advected smooth textures before a representation-invariant minimum-flux transport rule passes a new holdout, while deliberately non-particle smooth disorder passes the same rule and therefore blocks any particle interpretation; and (xvi) an exact source-accounting audit showing that F0 is not pure zero-mean noise: at vacuum and \(\kappa=1\) it contains a time-step-independent coherent amplitude pump of \(0.015\) per unit model time, while its centered variance rate decreases exactly in proportion to \(h\).
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -34,6 +34,9 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The historical zero-\(\kappa\) “true RNG / edge of chaos” test demonstrates chaos. | **Contradicted by source audit, exact recurrence, and runtime reproduction** | Its original perturbation is overwritten, while a new \(10^{-5}+10^{-5}i\) input is added for all 1,500 steps. The threshold crossing is a damped geometric sum, not exponential sensitivity or true randomness. |
 | Deterministic chaos currently explains the foam-like behavior. | **Not supported in the seven tested deterministic regimes** | All 84 finite-time Lyapunov estimates were negative. This narrows, but does not eliminate, the chaos hypothesis; other parameters, states, operators, dimensions, or longer asymptotic behavior remain untested. |
 | The isolated current source is continuous Gaussian noise, a Poisson birth law, or colored memory. | **Contradicted for the audited source contract** | It is a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\). Its centered excess kurtosis is about \(-1.615\), lag-one correlation is consistent with zero, and variance rate scales as \(h^{0.99974}\). |
+| The present F0 source is pure zero-mean noise. | **Contradicted exactly** | Its Bernoulli event term has a positive conditional mean aligned with the phase of \(\psi\). At exact vacuum, \(\mathbb E[\Delta\psi]/h=0.015\kappa^2e^{i\theta}\), whereas the centered variance rate is proportional to \(h\) and disappears under time refinement. |
+| The present F0 source is already a physically budgeted fuel or reservoir. | **Not supported** | It is a software pump: amplitude is added without debiting an explicit reservoir. The fields \(\phi\) and \(\mu\) can store and feed back state, but neither closes the source-energy account, and \(\kappa\) is not evolved by the canonical step. |
+| The historical closed-energy \(\epsilon\) mechanism is reproducible in the present canonical solver. | **Contradicted at the public solver boundary** | A retained exact reachability probe found no \(\epsilon\) configuration, removal of supplied \(\epsilon\), and bitwise-identical known fields with and without it. The historical manuscript is a useful candidate mechanism, not current executable evidence. |
 | The current F0 source has no causal effect on the visible numerical morphology. | **Contradicted in the declared nonlinear lane** | Relative late residual RMS was \(0.02600\) against exactly zero for the conditional-mean control in the independent post-revision audit. Removing endogenous source-mean feedback reduced it to \(0.01356\). |
 | The current F0 morphological effect survives time refinement as a nonzero continuous forcing. | **Not supported** | A three-point navigation fit gave residual RMS \(\propto h^{0.596}\) for faithful F0 and \(\propto h^{0.541}\) for open-loop matched F0, while Gaussian, Poisson, state/history-event, and colored-memory controls were approximately step-independent. |
 | Final morphology alone identifies whether memoryless forcing is F0, Gaussian, independent-Poisson, or state/history-event driven. | **Not demonstrated** | A frozen centroid classifier scored \(8/48=16.7\%\) in the post-revision audit against a \(25\%\) balanced chance level. Direct temporal and event observables remain informative even when final morphology is not. |
@@ -83,6 +86,9 @@ Until the gates below are met, we recommend:
 14. **preserve the failed v1 and v2 topological-current protocols as negative evidence; v3 may be used only to measure conserved, resolved minimum-flux topological transport, never to draw or name an individual worldline that the data do not identify**.
 15. **re-enter actual F0 data only with the frozen v3 transport rule and correlated surrogates; do not tune time step, grid, boundary, permeability, source law, or collision behavior around the earlier failed candidate, and do not promote a transport pass to a localized object, linon, or particle without independent energy, stability, boundary, dispersion, and interaction gates**.
 16. **treat the particle failure as a formation-versus-stabilization question: let matched source laws nucleate candidates, switch the source off at a frozen trigger, replay the same state with independent future noise, and add topological charge, Noether charge, competing nonlinearity, medium feedback, stochastic stabilization, or gauge support only as separate falsifiable mechanisms rather than one unconstrained hybrid**.
+17. **separate the present source into its coherent conditional mean and centered random innovation in every equation, plot, and claim; call the first component a software pump and reserve “physical fuel” for a model with an explicit reservoir, debit, return path, and closed accounting test**.
+18. **retain the historical \(\epsilon\)-circulation or “metabolic engine” only as a reconstruction candidate until its complete equations, initializer, boundary law, parameters, and controls are independently replayed in Core; the current public solver does not execute that mechanism**.
+19. **treat simulation, holographic, and hardware-substrate accounts as optional interpretations unless one supplies a measurable internal prediction that differs from ordinary stochastic, hidden-variable, reservoir, or discretization models; hardware power does not become in-model energy without an explicit mapping law**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -1325,6 +1331,368 @@ formation-versus-stabilization experiment. Particle status must remain closed
 until independent localization, energy, stability, continuum, open-boundary,
 dispersion, and interaction gates pass.
 
+### 3.15 The present source is a coherent software pump plus vanishing centered noise; physical fuel remains an open mechanism
+
+#### Lay result and evidential boundary
+
+The working “noise as fuel” hypothesis is worth testing now, but it must be
+split into claims that the present software can decide and claims that remain
+interpretive. The simplest picture is:
+
+- a **seed** starts a pattern;
+- a **selector** chooses one of several possible branches;
+- a **pump** continuously increases an already present field;
+- a **fuel reservoir** loses a measurable resource when the visible field
+  gains it;
+- a **repair bath** preferentially restores a damaged organized state;
+- a **substrate interface** connects the visible model to hidden degrees of
+  freedom.
+
+One source can play several of these roles, but irregular motion alone cannot
+tell which role is present. Exact accounting shows that the current F0 source
+already contains a pump. It does **not** yet contain a fuel reservoir, a debit
+from that reservoir, or a demonstrated repair mechanism. Calling it “quantum
+noise” therefore hides the most important distinction: part of the update has
+a nonzero coherent mean, while the genuinely centered random part disappears
+in the tested continuous-time refinement.
+
+This is constructive rather than terminal. It turns the intuitive question
+“does the noise power the universe?” into several small experiments that can
+fail separately. The bare statement that the universe is a simulation cannot
+be tested if it reproduces every internally observable statistic exactly.
+Its testable content begins only when a proposed substrate predicts a
+distinguishing correlation, symmetry violation, memory kernel, energy
+exchange, discreteness scale, or compression artifact.
+
+#### The options that remain open
+
+No declared option is discarded at this stage. The following
+map makes the alternatives mutually testable:
+
+| Question | Open alternatives | First discriminator |
+|---|---|---|
+| Is an organized object autonomous or driven? | self-sustaining after formation; continuously driven; metastable with occasional refuelling | freeze one formed state and compare source-on, source-off, pulsed, and restart schedules |
+| What does randomness do? | seed; branch selector; continuous pump; damage/repair bath; some combination | separate the conditional mean from centered innovations and match their input budgets independently |
+| Does the medium remember an object? | no material change; reversible wake; slowly adapting catchment; permanent scar | freeze, reset, shuffle, and time-reverse the slow fields while holding the fast state fixed |
+| What is a particle-like candidate? | stable object; metastable excitation; continuously maintained process; transient event | measure survival, recovery, transport, localization, and energy balance rather than peak count |
+| Where does identity reside? | event tokens; field envelope; topology; conserved charge; response and recovery spectrum of the whole process | compare within-lineage perturbation responses against matched surrogate fields |
+| What happens if the source stops? | persistence; homeostatic relaxation; dormant state; gradual dissolution; abrupt extinction | run a predeclared shutdown-duration and restart-dose curve |
+| Where does supplied capacity originate? | explicit reservoir inside the modeled state; unresolved hidden state; boundary flux; external drive; no physical capacity, only an algorithmic update | require a term-by-term balance law and measure every flux |
+
+#### What the four software layers presently contain
+
+The canonical Core source uses a state-dependent Bernoulli event and a small
+Gaussian fluctuation. Both are aligned with the current complex phase and
+multiplied by the time step. The \(\phi\) field receives a named transfer from
+\(\psi\), but it also feeds \(\psi\) through interaction and gradients; the
+complete update has no closed conserved energy. The optional \(\mu\) field
+accumulates activity, decays slowly, and amplifies later drift. It is therefore
+a plausible memory-like medium, but it is not debited when the source adds
+amplitude. The permeability \(\kappa\) modulates several processes but is
+provided to each step rather than evolved by the canonical law. No explicit
+source reservoir or source-work ledger is present. A configured dissipation
+parameter is exposed, while the audited canonical NumPy source lane applies
+the numerical value \(0.005\) directly; this implementation mismatch must be
+resolved before the parameter can be interpreted physically.
+
+A historical Core manuscript describes an environmental \(\epsilon\) field,
+closed circulation, a “metabolic engine,” metastable particles, and eventual
+evaporation. That concept closely matches a driven, self-restoring process.
+It is not current evidence: the named historical generator is unavailable,
+the complete exact experiment cannot be replayed from the retained material,
+and an exact downstream reachability probe found that the current public
+solver neither configures nor preserves supplied \(\epsilon\). Known output
+fields were bitwise identical with and without the proposed field. This
+falsifies present mechanism reachability, not every possible closed-energy
+model.
+
+Dynamics uses slow state and externally supplied deltas for application
+behavior. OEA uses deterministic multiscale interference, averaging, and
+memory-like pooling. Lina EI contains bounded feedback experiments and an
+explicit hypothesis that identity could be a metastable, self-restoring
+topological process with a boundary discovered after formation. These layers
+are useful sources of mechanisms and adverse controls. They are not
+independent physical confirmation, and none currently supplies the missing
+canonical source-energy account.
+
+#### Exact decomposition of the current F0 source
+
+For one cell, let
+
+- \(A=|\psi|\);
+- \(g=|\nabla\psi|\);
+- \(\theta=\arg\psi\);
+- \(h\) be the step size;
+- \(B\sim\operatorname{Bernoulli}(p)\);
+- \(\xi=\operatorname{clip}(\mathcal N(0,0.005^2),-1,1)\).
+
+The audited source contract is
+
+\[
+p=\kappa\,\sigma\!\left(5(A+g)\right),\qquad
+a(A)=\min(0.03+0.02A,10),
+\]
+
+\[
+\Delta\psi_{\rm src}
+=h\kappa\left[a(A)B+\xi\right]e^{i\theta}.
+\]
+
+Conditional on the visible state,
+
+\[
+\mathbb E[\Delta\psi_{\rm src}\mid\psi]
+=h\kappa\,a(A)p\,e^{i\theta},
+\]
+
+\[
+\operatorname{Var}(\Delta\psi_{\rm src}\mid\psi)
+=h^2\kappa^2
+\left[a(A)^2p(1-p)+\sigma_\xi^2\right],
+\]
+
+where \(\sigma_\xi^2\) is the exact variance after clipping. With a
+\(0.005\) standard deviation and a clip at \(1\), clipping is numerically
+irrelevant but is retained in the embedded calculation.
+
+At exact vacuum, the implementation convention gives
+\(\sigma(0)=1/2\), \(p=\kappa/2\), and \(a=0.03\). Thus
+
+\[
+\frac{\mathbb E[\Delta\psi_{\rm src}]}{h}
+=0.015\kappa^2 e^{i\theta}.
+\]
+
+The mean amplitude rate is finite and independent of \(h\). It is a coherent
+pump because the increment is aligned with the phase already represented by
+the cell. In contrast,
+
+\[
+\frac{\operatorname{Var}(\Delta\psi_{\rm src})}{h}
+=h\kappa^2
+\left[
+0.03^2\frac{\kappa}{2}\left(1-\frac{\kappa}{2}\right)
++\sigma_\xi^2
+\right]\xrightarrow[h\to0]{}0 .
+\]
+
+The centered stochastic forcing therefore has no nonzero diffusion limit
+under the present scaling. At \(h=0.1\), \(\kappa=1\), the exact one-step mean
+increment is \(0.0015\), centered variance is \(2.5\times10^{-6}\), and
+second moment is \(4.75\times10^{-6}\). The squared coherent mean accounts for
+\(47.3684\%\) of that one-step second moment. This fraction is a source
+accounting diagnostic, not a thermodynamic efficiency.
+
+| Exact analytical check | Result |
+|---|---:|
+| vacuum event probability at \(\kappa=1\) | \(0.5\) |
+| vacuum mean amplitude rate at \(\kappa=1\) | \(0.015\) |
+| vacuum mean rate at \(\kappa=0.25,0.5,1\) | \(0.0009375,\ 0.00375,\ 0.015\) |
+| fitted exponent of centered variance rate versus \(h\) | \(1.0000000000000002\) |
+| large-\(A\), uncapped mean-gain threshold | \(\kappa_c=0.5\) |
+| source-amplitude clip begins | \(A=498.5\) |
+| first positive mean source/damping balance at \(\kappa=0.1\) | \(A\approx0.0332036\), before cap |
+| first positive mean source/damping balance at \(\kappa=0.25\) | \(A\approx0.433914\), before cap |
+| first positive mean source/damping balance at \(\kappa=0.4\) | \(A\approx2.66665\), before cap |
+| first positive mean source/damping balance at \(\kappa=0.49\) | \(A\approx36.3788\), before cap |
+| first positive balance at \(\kappa=0.5,0.75,1\) | \(A=500,1125,2000\), source-cap-defined |
+
+The balance calculation intentionally removes gradients, diffusion,
+\(\phi\), and \(\mu\) so that it answers only one question: can the mean
+source and the hard-coded linear damping balance in a uniform cell? Below
+\(\kappa_c\), a pre-cap balance exists. At and above \(\kappa_c\), the first
+finite balance is created by the source-amplitude clip. It is therefore not a
+derived particle homeostasis. The full dynamics can change these values, but
+cannot change what this isolated accounting limit means.
+
+The closest simple analogy is a stimulated pump or proto-laser: an existing
+phase receives a phase-aligned gain, and larger amplitude increases event
+amplitude until the cap. This analogy describes the algebra only. Lineum has
+not derived atomic inversion, photons, a laser Hamiltonian, or quantum
+statistics.
+
+#### A falsifiable candidate: pumped autopoietic field defect
+
+An explicit mechanism can preserve these possibilities without adding
+them all to production. Let \(\psi\) be a fast complex field, \(R\ge0\) an
+explicit resource density, \(M\) a slower medium, \(Q\) a source-blind
+organization diagnostic, and \(F(Q,M)\) a bounded nonnegative coupling.
+A dimensionless candidate family is
+
+\[
+\partial_t\psi
+=\mathcal L_\psi[\psi,\phi,M]
++\left[gRF(Q,M)-\gamma-\beta|\psi|^2\right]\psi
++\sqrt{DR}\,\eta,
+\]
+
+\[
+\partial_tR
+=P_{\rm ext}-\lambda_R(R-R_0)+D_R\nabla^2R
+-2gRF(Q,M)|\psi|^2-\mathcal J_\eta+\rho\mathcal D_\psi,
+\]
+
+\[
+\tau_M\partial_tM
+=H(|\psi|^2,Q)-M+D_M\nabla^2M,\qquad
+\kappa=\kappa_0+\chi S(M).
+\]
+
+Here \(\mathcal L_\psi\) contains the declared deterministic field dynamics;
+\(P_{\rm ext}\) is visible-subsystem input; \(\mathcal D_\psi\) is measured
+dissipation; and \(\mathcal J_\eta\) debits the stochastic work admitted into
+\(\psi\). The factor \(2gRF|\psi|^2\) is written with opposite signs in the
+field intensity and reservoir equations so that the deterministic gain is
+paid for. Exact coefficients depend on the final norm or Hamiltonian
+definition; the displayed form is a hypothesis, not a canonical law.
+
+This mechanism can represent:
+
+- **fuel:** \(R\) is depleted by visible gain;
+- **external supply:** \(P_{\rm ext}\) replenishes the visible subsystem;
+- **self-created catchment:** \(M\) changes locally in response to organized
+  activity and redirects later flux;
+- **homeostasis:** nonlinear loss and finite supply prevent unrestricted
+  growth;
+- **metastability:** the structure can survive temporary loss of input and
+  later recover;
+- **field-level identity:** persistence belongs to a response pattern, not to
+  individual Bernoulli events or lattice cells.
+
+No experiment should introduce all of these terms together. A factorial
+sequence must first test the existing coherent pump and centered innovations,
+then one reservoir term, then one medium-memory term. Otherwise a successful
+image would not reveal which mechanism caused it.
+
+#### Identity as a response process
+
+If a particle is a continuing event rather than a permanent object, position
+and peak identity are insufficient. A source-blind test can apply the same
+small standardized perturbation at several phases of a candidate's history
+and record a response kernel
+
+\[
+\mathcal R(\tau)
+=\frac{\delta\mathcal O(t+\tau)}{\delta u(t)},
+\]
+
+where \(\mathcal O\) contains localization, topology, transport, energy
+exchange, and medium recovery. A lineage has operational identity only if its
+response spectrum and recovery trajectory are more stable within that
+lineage than across time-shuffled, translated, phase-randomized, and
+energy-matched surrogate fields. This directly tests the working hypothesis
+that identity may live in the fields and their organization rather than in
+the injected “linon” tokens.
+
+#### A conserving alternative to independent bulk births
+
+If the bath represents vacuum activity, independent births in every cell are
+not the only option. Two conservative candidates are:
+
+\[
+\partial_t q+\nabla\!\cdot\!
+\left(\mathbf J_{\rm det}+\sqrt{D_J}\,\boldsymbol\eta_J\right)=0
+\]
+
+for a noisy conserved current, or neutral vortex–antivortex creation events
+that enforce
+
+\[
+\sum_{\rm periodic\ grid}q_{\rm top}=0
+\]
+
+at every step. These mechanisms can inject local activity without creating
+net charge from nowhere. They must be compared with the current bulk source
+at matched work, event rate, spatial spectrum, and temporal resolution.
+
+#### If reality were software on a hidden substrate
+
+“Holographic” and “simulated” are not synonyms. A physical holographic
+description can be a dual encoding entirely inside physics; a simulation
+hypothesis additionally posits a host or substrate. From inside a simulated
+world, apparently quantum noise could be:
+
+1. an explicitly sampled random update;
+2. a deterministic projection of hidden host state;
+3. exchange with a hidden simulated reservoir;
+4. admitted hardware noise;
+5. quantization, scheduling, finite precision, compression, error correction,
+   or adaptive-detail residue.
+
+All could look irregular. They look physically equivalent only if they
+reproduce the complete joint statistics: multi-time correlations, spatial
+correlations, amplitudes, contextual measurement probabilities, conservation
+laws, no-signalling constraints, rotational and Lorentz symmetries, and
+scale dependence. Matching a noisy image is not enough.
+
+Host electricity does not automatically become internal energy. Electricity
+can run a game without becoming the fuel shown in its vehicles. For substrate
+power to be the visible universe's fuel, the theory needs a mapping
+
+\[
+\Delta E_{\rm host}
+\longrightarrow
+\Delta R_{\rm hidden}
+\longrightarrow
+\Delta E_{\rm visible}
+\]
+
+with internally measurable consequences and a balance law. Without such a
+mapping, the host computes the update but does not inject energy as defined
+inside the model. If an exact simulator reproduces every observable of a
+non-simulation model, the two are observationally equivalent and no internal
+experiment can choose between them.
+
+A substrate hypothesis becomes researchable only by predicting a difference:
+residual anisotropy, temporal periodicity, finite-state recurrence, correlated
+rounding, bandwidth saturation, adaptive-resolution transitions,
+error-correction signatures, non-Markovian memory, or a mismatch between
+visible work and a fitted reservoir. Each candidate signature must first beat
+ordinary numerical artifacts and standard physical alternatives. A vague
+future task called “test whether the universe is a simulation” would not be
+scientifically actionable; a later task specifying one signature, null
+models, data source, sensitivity, and rejection threshold would be.
+
+#### Frozen small-step experiment sequence
+
+The following order prevents the substrate story or a visually attractive
+particle from selecting its own test:
+
+| Gate | Intervention | Required outputs | Permitted conclusion |
+|---|---|---|---|
+| P0 — exact source accounting | algebraically separate conditional mean and centered innovation | mean work proxy, centered variance, \(h\)-scaling, cap dependence | completed here: coherent software pump plus vanishing centered variance rate |
+| P1 — \(2\times2\) source factorial | pump off/on crossed with centered randomness off/on, with matched declared input | nucleation rate, localized norm, defect counts, v3 transport, survival | whether seed, selector, and pump roles separate |
+| P2 — schedule challenge | always on, formation-only, off interval, pulse train, and restart | shutdown lifetime, recovery curve, restart dose, hysteresis | whether continuous drive maintains the process |
+| P3 — state/history replay | identical saved visible state with independent future random streams | within-state versus between-state outcome variance | whether identity is carried by state or future noise history |
+| P4 — medium ablation | freeze, reset, spatially shuffle, and delay \(\phi\) and \(\mu\); only later evolve \(\kappa\) | response kernel, lifetime, repair, transport, budget | whether a slow field stores a causal catchment |
+| P5 — one explicit reservoir | add \(R\) with deterministic debit first; add stochastic debit only after that passes | term-by-term balance residual, depletion, replenishment, conservation in the closed limit | whether “fuel” has become a physical model rather than a metaphor |
+| P6 — robustness | open boundaries, fixed-horizon refinement, larger boxes, alternative grids, blinded seeds | convergence, boundary leakage, anisotropy, familywise null comparison | whether the phenomenon survives numerical representation |
+| P7 — substrate signature | only after one distinguishing prediction is frozen | real-data sensitivity, confound controls, competing physical models | support or rejection for that signature, never proof of simulation in general |
+
+Every dynamic gate must retain at least these observables: source work,
+declared visible norm or derived energy, reservoir level if present,
+\(\phi\), \(\mu\), localized energy, topological charge and transport,
+perturbation recovery, entropy production or dissipation, cap activity, and
+open-boundary flux. A transport pass alone remains explicitly insufficient
+for a particle claim.
+
+The immediate test belongs in this research, not merely in a future task,
+because P0 is exactly decidable and P1–P4 use existing state fields. The
+speculative substrate branch should remain documented here with its
+falsifiability requirements. It should become a separate tracked experiment
+only after a concrete distinguishing signal and accessible data are named.
+
+**Verdict [EXACT CALCULATION + HYPOTHESIS DESIGN]:** the present implementation
+supports the fuel hypothesis only at the software level: F0 contains a
+phase-aligned coherent pump that survives time-step refinement. It does not
+yet support the stronger physical claim that quantum noise is an energy
+reservoir, that the universe is externally powered, or that a particle is a
+self-restoring process. Those options remain open in the explicit P1–P7
+program. The next permitted dynamic step is the frozen pump-by-randomness
+factorial followed by shutdown and same-state replay; the first new equation,
+if needed afterward, is one debited reservoir term rather than an
+unconstrained hybrid.
+
 ---
 
 ## 4. Jan Fikáček's Published Argumentative Corpus and Its Relevance to Lineum
@@ -2360,12 +2728,13 @@ The following list supersedes the original proposal. Each question should have a
 16. **The Gate-3A linon-observer result validates a measuring instrument on sparse synthetic controls, not Lineum objects.** Its positive controls are synthetic Gaussians and a constructed neutral vortex pair; its negative calibration is a finite collection of smoothed IID fields. The Gate-3B application shows why that distinction matters: correlated dense topological backgrounds can create apparent identity even when phase history is destroyed.
 17. **The Gate-3B result is a bounded primary screen, not a global nonexistence theorem.** It covers one \(32\times32\), periodic, two-dimensional, exact-vacuum, \(h=0.1\), \(T=60\) nonlinear F0 lane and 12 seeds. Its envelope nulls are well separated from the actual result, but its topology identity rule becomes non-identifying because independent-cell-phase surrogates span almost the full record. The transient defects remain valid mathematical detections; their individual identity, stability in open space, continuum behavior, energy, momentum, interactions, and physical ontology remain unresolved.
 18. **The v3 topological-transport result validates an observable, not an object.** It covers finite periodic \(32\times32\), \(48\times48\), and \(64\times64\) synthetic movies of 25 frames at declared one- or two-cell cadence, with 12 replicates per family. Its minimum-flow cost discards divergence-free circulation and persistent point labels by construction. It can therefore measure the least transport required by adjacent integer charge maps, but cannot recover a unique microscopic current, crossing identity, localized energy, inertia, or particle ontology. Smooth complex disorder is an explicit passing ambiguity, not an accidental caveat.
+19. **The pump/fuel result is exact source accounting, not thermodynamics.** Its conditional moments follow exactly from the audited one-cell F0 update, and the uniform source/damping balances deliberately set gradients, diffusion, \(\phi\), and \(\mu\) to zero. The calculation uses amplitude and squared increment as diagnostics because the model has not derived a Hamiltonian energy. The phase assigned at exact zero amplitude is an implementation convention. A coherent mean pump is therefore established as software behavior, while physical work, a fuel reservoir, repair, homeostasis, and a substrate interpretation remain unverified.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, replacing an inadequate historical peak tracker with a source-blind observer that passes exact sparse synthetic controls, applying that observer to a frozen actual-dynamics screen, and then replacing non-identifying point tracks with a synthetically validated minimum-flux topological-transport observable. The latest results sharpen rather than validate the particle narrative: the current source produces a transient net-neutral burst of periodic winding defects, but the envelope channel finds no recurrent localized object and the original topology channel cannot establish individual identity against dense phase-randomized nulls. V3 can measure coherent resolved transport without inventing IDs, yet smooth disorder passes the same rule and therefore blocks any particle inference. The source and its state feedback matter numerically, but their morphological effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Lineum's strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, replacing an inadequate historical peak tracker with a source-blind observer that passes exact sparse synthetic controls, applying that observer to a frozen actual-dynamics screen, and then replacing non-identifying point tracks with a synthetically validated minimum-flux topological-transport observable. The latest results sharpen rather than validate the particle narrative: the current source produces a transient net-neutral burst of periodic winding defects, but the envelope channel finds no recurrent localized object and the original topology channel cannot establish individual identity against dense phase-randomized nulls. V3 can measure coherent resolved transport without inventing IDs, yet smooth disorder passes the same rule and therefore blocks any particle inference. The source and its state feedback matter numerically, but their morphological effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Exact accounting now adds that F0 contains a phase-aligned mean pump that survives time refinement, whereas its centered random variance rate vanishes; this makes “noise as fuel” a concrete experimental question but does not supply a reservoir or physical energy law. The historical \(\epsilon\)-circulation proposal is conceptually relevant but is not reachable through the present canonical solver. Lineum's strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
-For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
+For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification. The next causal sequence is a frozen pump-by-randomness factorial, source shutdown and restart, identical-state replay with independent future noise, and slow-medium ablations. An explicit debited reservoir should be introduced only if those existing-field controls show that a missing maintenance mechanism is required.
 
 The reviewed Fikáček corpus is relevant to this program where it raises foundational questions: what infinity could mean physically, when a singularity signals model failure, how abstraction relates to a physical carrier, and whether probabilistic formalism is the final ontological layer. For Lineum, this suggests a methodological safeguard: broad synthesis should be paired with precise definitions, primary sources, derivations, and experimental falsification tests.
 
@@ -2453,9 +2822,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the eleventh, linon-observer program was executed twice with bitwise-identical normalized output; the historical observer reproduced all declared failure controls, the replacement passed the declared positive controls, and its 24-by-40-frame smoothed-IID calibration produced a familywise 99th-percentile maximum lifetime of one observation
 - the twelfth, Gate-3B actual-dynamics program was executed twice with bitwise-identical normalized output; its exact-vacuum D0 lane remained empty, its F0 cap comparison was exactly identical with finite and disabled caps, and its standalone reconstruction matched the clean committed NumPy runtime within \(3.47\times10^{-17}\) for \(\psi\) and \(1.27\times10^{-21}\) for \(\phi\)
 - the thirteenth, minimum-flux topological-transport program was executed twice with byte-identical normalized output; it reproduces the frozen v1 \(7/12\) and v2 \(11/12\) failures, passes 48 exhaustive small-assignment controls, and its v3 untouched holdout classifies all eight declared families at their frozen expected counts
+- the fourteenth, source pump/fuel audit was executed twice with byte-identical output; its standard-library calculation reproduces the exact F0 conditional mean, centered variance, time-step exponent, uniform mean-source/damping balances, and source-cap boundary
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 13/13 executable Python/JSON pairs, 42 contiguous adversarial questions, 45 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 14/14 executable Python/JSON pairs, 42 contiguous adversarial questions, 45 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -2492,6 +2862,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | linon observer | track lifetime, coverage, shape correlation, mass/radius variation, signed winding, and toroidal assignment | flat field, scale copies, input-order reversal, crossing identities, periodic edge crossing, neutral vortex pair, and smoothed-IID nulls | fixed synthetic controls before physical data; frozen Gate-3B thresholds and mandatory time/source/grid/boundary/cap surrogates | that actual Lineum contains a stable localized object, a fundamental particle, or a unique observer |
 | Gate-3B actual dynamics | recurrent envelope or signed-topology identity above familywise null thresholds | exact-vacuum D0, conditional-mean M0, seeded-envelope positive challenge, disabled caps, finite-vs-disabled cap identity, and clean-runtime reconstruction | 12 F0 seeds; time shuffle, random torus shift, Fourier-phase and cell-phase nulls; stop before candidate sensitivities after primary failure | that transient winding defects are stable objects, that no future equation can stabilize an object, or that the tested two-dimensional periodic lane is physical vacuum |
 | minimum-flux topological transport | exact integer-current divergence, registered overlap, resolved-core fraction, and minimum toroidal transport orientation | analytic boundary, pair-creation, and two-defect shift costs; 48 exhaustive assignment controls; global phase/scale/translation invariance | preserved v1 and v2 failures; three untouched seed families; grids 32/48/64; one- and two-cell cadence; coherent, shuffled, random-shift, phase, smooth-disorder, creation, and exchange controls | a unique worldline, localized energy, collision identity, particle ontology, or physical validation of any Lineum equation |
+| source pump and fuel accounting | conditional mean, centered variance rate, source/damping drift, cap-defined balance | exact Bernoulli and clipped-Gaussian moments; four \(h\); three vacuum \(\kappa\); seven equilibrium searches | zero gradient and uniform-field accounting limit; pre-cap versus source-cap balance; host/internal energy distinction; six falsifiable mechanism hypotheses | a thermodynamic energy, reservoir, quantum vacuum, particle, or simulation substrate |
 
 ### A.3 Numerical audit summary
 
@@ -2547,6 +2918,13 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | topological transport v3: six declared negative families | \(0/12\) each |
 | minimum-transport assignment controls | \(48/48\) exhaustive comparisons plus \(3/3\) analytic costs |
 | v3 normalized output identity across two runs | exact; SHA-256 `b32bb536e78ed6a5a44df8a63c8020ff18f0519c683112fadd898fe24d9b41b5` |
+| F0 vacuum conditional mean amplitude rate, \(\kappa=1\) | \(0.015\) |
+| F0 vacuum centered variance / rate, \(h=0.1,\kappa=1\) | \(2.5\times10^{-6}\) / \(2.5\times10^{-5}\) |
+| F0 centered variance-rate exponent in \(h\) | \(1.0000000000000002\) |
+| F0 one-step coherent second-moment fraction, \(h=0.1,\kappa=1\) | \(0.47368421052631576\) |
+| uncapped large-amplitude pump/damping threshold | \(\kappa_c=0.5\) |
+| source-amplitude clip onset | \(A=498.5\) |
+| pump/fuel program and output SHA-256 | `8ff6003fbc5377d4d79edbe02af99bc756786ef6f659f4a4a6d709d17d8e9026` / `f2b36e6927ebe661c6376d995351afb7d032919c20b1d8923b76e7327eeec555` |
 
 ### A.4 Complete executable program
 
@@ -4304,6 +4682,7 @@ print(canonical)
 }
 ```
 
+---
 
 ## Appendix E — Gate-0 Continuous-Time Decision Suite
 
@@ -40911,6 +41290,711 @@ if __name__ == "__main__":
         ]
       }
     }
+  }
+}
+```
+
+---
+
+## Appendix N — Pump, Fuel, and Field-Process Hypothesis Audit
+
+### N.1 Reproduction contract
+
+This appendix reproduces the exact analytical source decomposition used in
+Section 3.15. It requires only the Python standard library, reads no project
+data, writes no files, and prints the complete JSON result. The embedded
+program has SHA-256
+`8ff6003fbc5377d4d79edbe02af99bc756786ef6f659f4a4a6d709d17d8e9026`
+when hashed without the code-block terminal newline. The embedded JSON,
+including one terminal newline, has SHA-256
+`f2b36e6927ebe661c6376d995351afb7d032919c20b1d8923b76e7327eeec555`.
+Two executions were byte-identical. Runtime metadata is provenance rather
+than a physical result.
+
+### N.2 Complete executable program
+
+```python
+"""Standalone audit of the present Lineum source as pump, noise, and fuel.
+
+This program imports only the Python standard library, reads no project file,
+writes no file, and prints one complete JSON result.  It reconstructs the
+audited finite-step source contract algebraically and separates its coherent
+conditional mean from its centered random component.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import platform
+
+
+SCHEMA = "lineum.fuel-process-hypothesis-audit.v1"
+NOISE_STRENGTH = 0.005
+NOISE_CLIP = 1.0
+HARD_CODED_DAMPING_RATE = 0.005
+SOURCE_AMPLITUDE_OFFSET = 0.03
+SOURCE_AMPLITUDE_SLOPE = 0.02
+SOURCE_AMPLITUDE_CAP = 10.0
+
+
+def sigmoid(value: float) -> float:
+    """Return a stable logistic sigmoid."""
+    if value >= 0.0:
+        decay = math.exp(-value)
+        return 1.0 / (1.0 + decay)
+    growth = math.exp(value)
+    return growth / (1.0 + growth)
+
+
+def clipped_normal_variance(sigma: float, clip: float) -> float:
+    """Return E[clip(X,-c,c)^2] exactly for centered Gaussian X."""
+    z = clip / sigma
+    density = math.exp(-0.5 * z * z) / math.sqrt(2.0 * math.pi)
+    upper_tail = 0.5 * math.erfc(z / math.sqrt(2.0))
+    central_second_moment = sigma * sigma * (
+        1.0 - 2.0 * (z * density + upper_tail)
+    )
+    clipped_tail = 2.0 * clip * clip * upper_tail
+    return central_second_moment + clipped_tail
+
+
+def source_moments(
+    amplitude: float,
+    gradient_magnitude: float,
+    kappa: float,
+    dt: float,
+) -> dict[str, float]:
+    """Return exact one-cell moments of the audited source increment."""
+    probability = sigmoid(5.0 * (amplitude + gradient_magnitude)) * kappa
+    linon_amplitude = min(
+        SOURCE_AMPLITUDE_CAP,
+        SOURCE_AMPLITUDE_OFFSET + SOURCE_AMPLITUDE_SLOPE * amplitude,
+    )
+    gaussian_variance = clipped_normal_variance(
+        NOISE_STRENGTH,
+        NOISE_CLIP,
+    )
+    mean_increment = dt * kappa * linon_amplitude * probability
+    centered_variance = (
+        dt
+        * dt
+        * kappa
+        * kappa
+        * (
+            linon_amplitude
+            * linon_amplitude
+            * probability
+            * (1.0 - probability)
+            + gaussian_variance
+        )
+    )
+    second_moment = centered_variance + mean_increment * mean_increment
+    coherent_fraction = (
+        mean_increment * mean_increment / second_moment
+        if second_moment > 0.0
+        else 0.0
+    )
+    return {
+        "amplitude": amplitude,
+        "gradient_magnitude": gradient_magnitude,
+        "kappa": kappa,
+        "dt": dt,
+        "event_probability": probability,
+        "linon_amplitude": linon_amplitude,
+        "mean_amplitude_increment": mean_increment,
+        "mean_amplitude_rate": mean_increment / dt,
+        "centered_variance": centered_variance,
+        "centered_variance_rate": centered_variance / dt,
+        "second_moment": second_moment,
+        "coherent_energy_fraction": coherent_fraction,
+    }
+
+
+def mean_source_damping_drift(amplitude: float, kappa: float) -> float:
+    """Return the uniform mean-source drift minus current hard-coded damping."""
+    moments = source_moments(amplitude, 0.0, kappa, 1.0)
+    return (
+        moments["mean_amplitude_rate"]
+        - HARD_CODED_DAMPING_RATE * amplitude
+    )
+
+
+def first_positive_equilibrium(kappa: float) -> dict[str, float | str]:
+    """Find the first positive mean-source/damping equilibrium, if bracketed."""
+    lower = 0.0
+    lower_value = mean_source_damping_drift(lower, kappa)
+    upper = 1e-6
+    upper_value = mean_source_damping_drift(upper, kappa)
+    while upper < 1e6 and lower_value * upper_value > 0.0:
+        lower = upper
+        lower_value = upper_value
+        upper *= 1.5
+        upper_value = mean_source_damping_drift(upper, kappa)
+    if lower_value * upper_value > 0.0:
+        return {
+            "status": "not_bracketed_below_1e6",
+            "amplitude": math.nan,
+        }
+    for _ in range(120):
+        midpoint = 0.5 * (lower + upper)
+        midpoint_value = mean_source_damping_drift(midpoint, kappa)
+        if lower_value * midpoint_value <= 0.0:
+            upper = midpoint
+            upper_value = midpoint_value
+        else:
+            lower = midpoint
+            lower_value = midpoint_value
+    equilibrium = 0.5 * (lower + upper)
+    clip_onset = (
+        SOURCE_AMPLITUDE_CAP - SOURCE_AMPLITUDE_OFFSET
+    ) / SOURCE_AMPLITUDE_SLOPE
+    return {
+        "status": (
+            "source-cap-defined"
+            if equilibrium >= clip_onset
+            else "pre-cap-mean-balance"
+        ),
+        "amplitude": equilibrium,
+        "residual_drift": mean_source_damping_drift(
+            equilibrium,
+            kappa,
+        ),
+    }
+
+
+def log_log_slope(x_values: list[float], y_values: list[float]) -> float:
+    """Return the least-squares slope in log-log coordinates."""
+    log_x = [math.log(value) for value in x_values]
+    log_y = [math.log(value) for value in y_values]
+    mean_x = sum(log_x) / len(log_x)
+    mean_y = sum(log_y) / len(log_y)
+    numerator = sum(
+        (x_value - mean_x) * (y_value - mean_y)
+        for x_value, y_value in zip(log_x, log_y)
+    )
+    denominator = sum((x_value - mean_x) ** 2 for x_value in log_x)
+    return numerator / denominator
+
+
+def build_result() -> dict[str, object]:
+    """Build the complete analytical audit result."""
+    dt_values = [0.2, 0.1, 0.05, 0.025]
+    vacuum_by_kappa = {
+        f"{kappa:g}": source_moments(0.0, 0.0, kappa, 0.1)
+        for kappa in (0.25, 0.5, 1.0)
+    }
+    refinement = [
+        source_moments(0.0, 0.0, 1.0, dt)
+        for dt in dt_values
+    ]
+    mean_rates = [entry["mean_amplitude_rate"] for entry in refinement]
+    variance_rates = [
+        entry["centered_variance_rate"] for entry in refinement
+    ]
+    drift_table = {
+        f"{kappa:g}": [
+            {
+                "amplitude": amplitude,
+                "mean_source_minus_damping_rate": (
+                    mean_source_damping_drift(amplitude, kappa)
+                ),
+            }
+            for amplitude in (0.0, 0.1, 1.0, 10.0, 100.0)
+        ]
+        for kappa in (0.25, 0.5, 1.0)
+    }
+    equilibria = {
+        f"{kappa:g}": first_positive_equilibrium(kappa)
+        for kappa in (0.1, 0.25, 0.4, 0.49, 0.5, 0.75, 1.0)
+    }
+    clip_onset = (
+        SOURCE_AMPLITUDE_CAP - SOURCE_AMPLITUDE_OFFSET
+    ) / SOURCE_AMPLITUDE_SLOPE
+    return {
+        "schema": SCHEMA,
+        "runtime": {
+            "python": platform.python_version(),
+            "implementation": platform.python_implementation(),
+        },
+        "audited_source_contract": {
+            "event_probability": (
+                "sigmoid(5*(amplitude+gradient_magnitude))*kappa"
+            ),
+            "event_amplitude": "min(0.03+0.02*amplitude,10)",
+            "increment": (
+                "dt*kappa*(event_amplitude*Bernoulli(probability)"
+                "+clip(Normal(0,0.005),-1,1))*phase(psi)"
+            ),
+            "configured_dissipation_rate_is_read": False,
+            "actual_damping_rate": HARD_CODED_DAMPING_RATE,
+            "explicit_source_reservoir_state": False,
+            "source_energy_budget_enforced": False,
+        },
+        "exact_vacuum_source_moments_dt_0_1": vacuum_by_kappa,
+        "dt_refinement_at_vacuum_kappa_1": {
+            "rows": refinement,
+            "mean_amplitude_rate_min": min(mean_rates),
+            "mean_amplitude_rate_max": max(mean_rates),
+            "centered_variance_rate_loglog_exponent": log_log_slope(
+                dt_values,
+                variance_rates,
+            ),
+            "interpretation": (
+                "The conditional mean survives as a finite coherent pump, "
+                "while the centered random variance rate vanishes linearly "
+                "with dt."
+            ),
+        },
+        "uniform_mean_source_minus_damping": {
+            "scope": (
+                "phi=mu=gradient=diffusion=0; this is a source accounting "
+                "limit, not the full dynamics"
+            ),
+            "critical_kappa_for_uncapped_large_amplitude_linear_gain": (
+                math.sqrt(
+                    HARD_CODED_DAMPING_RATE / SOURCE_AMPLITUDE_SLOPE
+                )
+            ),
+            "source_amplitude_clip_onset": clip_onset,
+            "drift_table": drift_table,
+            "first_positive_equilibria": equilibria,
+            "interpretation": (
+                "Below critical kappa, mean pumping and damping can create a "
+                "uniform pre-cap balance. At and above critical kappa, the "
+                "first finite balance is imposed by the source-amplitude "
+                "clip, not derived particle homeostasis."
+            ),
+        },
+        "cross_layer_energy_distinction": {
+            "host_hardware_power_automatically_becomes_internal_energy": False,
+            "mapping_rule_required": True,
+            "internally_observable_noise_can_be": [
+                "an explicit stochastic update law",
+                "a projection of unresolved deterministic host state",
+                "exchange with a hidden simulated reservoir",
+                "admitted hardware noise",
+                "quantization, scheduling, compression, or correction residue",
+            ],
+            "observational_equivalence_condition": (
+                "Any substrate account must reproduce the complete internal "
+                "joint statistics and symmetries, not irregularity alone."
+            ),
+        },
+        "open_hypothesis_map": [
+            {
+                "id": "P1",
+                "name": "stimulated vacuum pump",
+                "mechanism": (
+                    "The present phase-aligned conditional mean is separated "
+                    "from centered randomness and treated as explicit drive."
+                ),
+                "cheapest_falsifier": (
+                    "An energy-matched deterministic pump and the stochastic "
+                    "source have identical formation, repair, and transport "
+                    "statistics after branch selection."
+                ),
+            },
+            {
+                "id": "P2",
+                "name": "autopoietic catchment",
+                "mechanism": (
+                    "A localized process slowly changes a medium field that "
+                    "redirects later reservoir flux back toward the process."
+                ),
+                "cheapest_falsifier": (
+                    "Freezing or shuffling the medium leaves recovery and "
+                    "lifetime unchanged at matched state and input."
+                ),
+            },
+            {
+                "id": "P3",
+                "name": "hidden-reservoir projection",
+                "mechanism": (
+                    "The visible fields are an open projection of a larger "
+                    "closed state; colored noise and memory are the eliminated "
+                    "reservoir's observable trace."
+                ),
+                "cheapest_falsifier": (
+                    "No finite-memory reservoir model improves multi-time "
+                    "conditional predictions over a memoryless source."
+                ),
+            },
+            {
+                "id": "P4",
+                "name": "field-response identity",
+                "mechanism": (
+                    "Identity is the persistent response spectrum and causal "
+                    "organization of the full field process, not event tokens "
+                    "or tracked lattice cells."
+                ),
+                "cheapest_falsifier": (
+                    "Response signatures are no more stable within a candidate "
+                    "lineage than across matched surrogate fields."
+                ),
+            },
+            {
+                "id": "P5",
+                "name": "pair-conserving bath current",
+                "mechanism": (
+                    "The bath enters as a conserved random flux or neutral "
+                    "defect-pair process rather than independent bulk births."
+                ),
+                "cheapest_falsifier": (
+                    "Matched independent bulk injection is equally stable and "
+                    "equally conserving under refinement and open boundaries."
+                ),
+            },
+            {
+                "id": "P6",
+                "name": "substrate-interface hypothesis",
+                "mechanism": (
+                    "Quantum-looking noise is the internal image of an "
+                    "interface to hidden simulation or hardware state."
+                ),
+                "cheapest_falsifier": (
+                    "The proposal supplies no deviation from, compression of, "
+                    "or mechanism for the complete quantum statistics and is "
+                    "therefore observationally empty."
+                ),
+            },
+        ],
+        "decision": {
+            "current_source_is_pure_zero_mean_noise": False,
+            "current_source_contains_a_coherent_pump": True,
+            "current_source_is_a_budgeted_physical_fuel": False,
+            "particle_or_quantum_vacuum_demonstrated": False,
+            "next_gate": (
+                "Separate pump power from centered randomness, then run "
+                "energy-matched seed, selector, maintenance, shutdown, and "
+                "restart controls before adding one reservoir or medium term."
+            ),
+        },
+    }
+
+
+def main() -> None:
+    result = build_result()
+    canonical = json.dumps(
+        result,
+        ensure_ascii=False,
+        indent=2,
+        sort_keys=True,
+        allow_nan=False,
+    )
+    result["result_payload_sha256_before_hash_field"] = hashlib.sha256(
+        canonical.encode("utf-8")
+    ).hexdigest()
+    print(
+        json.dumps(
+            result,
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+            allow_nan=False,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### N.3 Complete output
+
+```json
+{
+  "audited_source_contract": {
+    "actual_damping_rate": 0.005,
+    "configured_dissipation_rate_is_read": false,
+    "event_amplitude": "min(0.03+0.02*amplitude,10)",
+    "event_probability": "sigmoid(5*(amplitude+gradient_magnitude))*kappa",
+    "explicit_source_reservoir_state": false,
+    "increment": "dt*kappa*(event_amplitude*Bernoulli(probability)+clip(Normal(0,0.005),-1,1))*phase(psi)",
+    "source_energy_budget_enforced": false
+  },
+  "cross_layer_energy_distinction": {
+    "host_hardware_power_automatically_becomes_internal_energy": false,
+    "internally_observable_noise_can_be": [
+      "an explicit stochastic update law",
+      "a projection of unresolved deterministic host state",
+      "exchange with a hidden simulated reservoir",
+      "admitted hardware noise",
+      "quantization, scheduling, compression, or correction residue"
+    ],
+    "mapping_rule_required": true,
+    "observational_equivalence_condition": "Any substrate account must reproduce the complete internal joint statistics and symmetries, not irregularity alone."
+  },
+  "decision": {
+    "current_source_contains_a_coherent_pump": true,
+    "current_source_is_a_budgeted_physical_fuel": false,
+    "current_source_is_pure_zero_mean_noise": false,
+    "next_gate": "Separate pump power from centered randomness, then run energy-matched seed, selector, maintenance, shutdown, and restart controls before adding one reservoir or medium term.",
+    "particle_or_quantum_vacuum_demonstrated": false
+  },
+  "dt_refinement_at_vacuum_kappa_1": {
+    "centered_variance_rate_loglog_exponent": 1.0000000000000002,
+    "interpretation": "The conditional mean survives as a finite coherent pump, while the centered random variance rate vanishes linearly with dt.",
+    "mean_amplitude_rate_max": 0.015,
+    "mean_amplitude_rate_min": 0.015,
+    "rows": [
+      {
+        "amplitude": 0.0,
+        "centered_variance": 1.0000000000000003e-05,
+        "centered_variance_rate": 5.000000000000001e-05,
+        "coherent_energy_fraction": 0.47368421052631576,
+        "dt": 0.2,
+        "event_probability": 0.5,
+        "gradient_magnitude": 0.0,
+        "kappa": 1.0,
+        "linon_amplitude": 0.03,
+        "mean_amplitude_increment": 0.003,
+        "mean_amplitude_rate": 0.015,
+        "second_moment": 1.9e-05
+      },
+      {
+        "amplitude": 0.0,
+        "centered_variance": 2.5000000000000006e-06,
+        "centered_variance_rate": 2.5000000000000005e-05,
+        "coherent_energy_fraction": 0.47368421052631576,
+        "dt": 0.1,
+        "event_probability": 0.5,
+        "gradient_magnitude": 0.0,
+        "kappa": 1.0,
+        "linon_amplitude": 0.03,
+        "mean_amplitude_increment": 0.0015,
+        "mean_amplitude_rate": 0.015,
+        "second_moment": 4.75e-06
+      },
+      {
+        "amplitude": 0.0,
+        "centered_variance": 6.250000000000002e-07,
+        "centered_variance_rate": 1.2500000000000002e-05,
+        "coherent_energy_fraction": 0.47368421052631576,
+        "dt": 0.05,
+        "event_probability": 0.5,
+        "gradient_magnitude": 0.0,
+        "kappa": 1.0,
+        "linon_amplitude": 0.03,
+        "mean_amplitude_increment": 0.00075,
+        "mean_amplitude_rate": 0.015,
+        "second_moment": 1.1875e-06
+      },
+      {
+        "amplitude": 0.0,
+        "centered_variance": 1.5625000000000004e-07,
+        "centered_variance_rate": 6.250000000000001e-06,
+        "coherent_energy_fraction": 0.47368421052631576,
+        "dt": 0.025,
+        "event_probability": 0.5,
+        "gradient_magnitude": 0.0,
+        "kappa": 1.0,
+        "linon_amplitude": 0.03,
+        "mean_amplitude_increment": 0.000375,
+        "mean_amplitude_rate": 0.015,
+        "second_moment": 2.96875e-07
+      }
+    ]
+  },
+  "exact_vacuum_source_moments_dt_0_1": {
+    "0.25": {
+      "amplitude": 0.0,
+      "centered_variance": 7.714843750000002e-08,
+      "centered_variance_rate": 7.714843750000002e-07,
+      "coherent_energy_fraction": 0.10227272727272725,
+      "dt": 0.1,
+      "event_probability": 0.125,
+      "gradient_magnitude": 0.0,
+      "kappa": 0.25,
+      "linon_amplitude": 0.03,
+      "mean_amplitude_increment": 9.375e-05,
+      "mean_amplitude_rate": 0.0009375,
+      "second_moment": 8.593750000000002e-08
+    },
+    "0.5": {
+      "amplitude": 0.0,
+      "centered_variance": 4.843750000000001e-07,
+      "centered_variance_rate": 4.843750000000001e-06,
+      "coherent_energy_fraction": 0.22499999999999995,
+      "dt": 0.1,
+      "event_probability": 0.25,
+      "gradient_magnitude": 0.0,
+      "kappa": 0.5,
+      "linon_amplitude": 0.03,
+      "mean_amplitude_increment": 0.000375,
+      "mean_amplitude_rate": 0.00375,
+      "second_moment": 6.250000000000002e-07
+    },
+    "1": {
+      "amplitude": 0.0,
+      "centered_variance": 2.5000000000000006e-06,
+      "centered_variance_rate": 2.5000000000000005e-05,
+      "coherent_energy_fraction": 0.47368421052631576,
+      "dt": 0.1,
+      "event_probability": 0.5,
+      "gradient_magnitude": 0.0,
+      "kappa": 1.0,
+      "linon_amplitude": 0.03,
+      "mean_amplitude_increment": 0.0015,
+      "mean_amplitude_rate": 0.015,
+      "second_moment": 4.75e-06
+    }
+  },
+  "open_hypothesis_map": [
+    {
+      "cheapest_falsifier": "An energy-matched deterministic pump and the stochastic source have identical formation, repair, and transport statistics after branch selection.",
+      "id": "P1",
+      "mechanism": "The present phase-aligned conditional mean is separated from centered randomness and treated as explicit drive.",
+      "name": "stimulated vacuum pump"
+    },
+    {
+      "cheapest_falsifier": "Freezing or shuffling the medium leaves recovery and lifetime unchanged at matched state and input.",
+      "id": "P2",
+      "mechanism": "A localized process slowly changes a medium field that redirects later reservoir flux back toward the process.",
+      "name": "autopoietic catchment"
+    },
+    {
+      "cheapest_falsifier": "No finite-memory reservoir model improves multi-time conditional predictions over a memoryless source.",
+      "id": "P3",
+      "mechanism": "The visible fields are an open projection of a larger closed state; colored noise and memory are the eliminated reservoir's observable trace.",
+      "name": "hidden-reservoir projection"
+    },
+    {
+      "cheapest_falsifier": "Response signatures are no more stable within a candidate lineage than across matched surrogate fields.",
+      "id": "P4",
+      "mechanism": "Identity is the persistent response spectrum and causal organization of the full field process, not event tokens or tracked lattice cells.",
+      "name": "field-response identity"
+    },
+    {
+      "cheapest_falsifier": "Matched independent bulk injection is equally stable and equally conserving under refinement and open boundaries.",
+      "id": "P5",
+      "mechanism": "The bath enters as a conserved random flux or neutral defect-pair process rather than independent bulk births.",
+      "name": "pair-conserving bath current"
+    },
+    {
+      "cheapest_falsifier": "The proposal supplies no deviation from, compression of, or mechanism for the complete quantum statistics and is therefore observationally empty.",
+      "id": "P6",
+      "mechanism": "Quantum-looking noise is the internal image of an interface to hidden simulation or hardware state.",
+      "name": "substrate-interface hypothesis"
+    }
+  ],
+  "result_payload_sha256_before_hash_field": "94e58843911e0830cf0d4f79318c6e270d28f96d05e8b6d9954165d6a271c6f6",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.12.13"
+  },
+  "schema": "lineum.fuel-process-hypothesis-audit.v1",
+  "uniform_mean_source_minus_damping": {
+    "critical_kappa_for_uncapped_large_amplitude_linear_gain": 0.5,
+    "drift_table": {
+      "0.25": [
+        {
+          "amplitude": 0.0,
+          "mean_source_minus_damping_rate": 0.0009375
+        },
+        {
+          "amplitude": 0.1,
+          "mean_source_minus_damping_rate": 0.0007449186624037092
+        },
+        {
+          "amplitude": 1.0,
+          "mean_source_minus_damping_rate": -0.0018959151591383897
+        },
+        {
+          "amplitude": 10.0,
+          "mean_source_minus_damping_rate": -0.035625000000000004
+        },
+        {
+          "amplitude": 100.0,
+          "mean_source_minus_damping_rate": -0.37312500000000004
+        }
+      ],
+      "0.5": [
+        {
+          "amplitude": 0.0,
+          "mean_source_minus_damping_rate": 0.00375
+        },
+        {
+          "amplitude": 0.1,
+          "mean_source_minus_damping_rate": 0.004479674649614837
+        },
+        {
+          "amplitude": 1.0,
+          "mean_source_minus_damping_rate": 0.0074163393634464414
+        },
+        {
+          "amplitude": 10.0,
+          "mean_source_minus_damping_rate": 0.0075
+        },
+        {
+          "amplitude": 100.0,
+          "mean_source_minus_damping_rate": 0.007499999999999951
+        }
+      ],
+      "1": [
+        {
+          "amplitude": 0.0,
+          "mean_source_minus_damping_rate": 0.015
+        },
+        {
+          "amplitude": 0.1,
+          "mean_source_minus_damping_rate": 0.019418698598459346
+        },
+        {
+          "amplitude": 1.0,
+          "mean_source_minus_damping_rate": 0.04466535745378577
+        },
+        {
+          "amplitude": 10.0,
+          "mean_source_minus_damping_rate": 0.18
+        },
+        {
+          "amplitude": 100.0,
+          "mean_source_minus_damping_rate": 1.5299999999999998
+        }
+      ]
+    },
+    "first_positive_equilibria": {
+      "0.1": {
+        "amplitude": 0.03320363954830584,
+        "residual_drift": 5.421010862427522e-20,
+        "status": "pre-cap-mean-balance"
+      },
+      "0.25": {
+        "amplitude": 0.43391387889472033,
+        "residual_drift": 0.0,
+        "status": "pre-cap-mean-balance"
+      },
+      "0.4": {
+        "amplitude": 2.6666546689876665,
+        "residual_drift": 1.734723475976807e-18,
+        "status": "pre-cap-mean-balance"
+      },
+      "0.49": {
+        "amplitude": 36.378787878787804,
+        "residual_drift": 2.7755575615628914e-17,
+        "status": "pre-cap-mean-balance"
+      },
+      "0.5": {
+        "amplitude": 500.0,
+        "residual_drift": 0.0,
+        "status": "source-cap-defined"
+      },
+      "0.75": {
+        "amplitude": 1125.0,
+        "residual_drift": 0.0,
+        "status": "source-cap-defined"
+      },
+      "1": {
+        "amplitude": 2000.0,
+        "residual_drift": 0.0,
+        "status": "source-cap-defined"
+      }
+    },
+    "interpretation": "Below critical kappa, mean pumping and damping can create a uniform pre-cap balance. At and above critical kappa, the first finite balance is imposed by the source-amplitude clip, not derived particle homeostasis.",
+    "scope": "phi=mu=gradient=diffusion=0; this is a source accounting limit, not the full dynamics",
+    "source_amplitude_clip_onset": 498.5
   }
 }
 ```
