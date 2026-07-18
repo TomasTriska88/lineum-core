@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 1.0
+**Research version:** 1.1
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all ten embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, and the declared source-to-morphology causal ablation; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation and the other untested hypotheses proposed for future work
+**Reproducibility:** all eleven embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, and the synthetic linon-observer controls; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for object existence in actual Lineum dynamics, and for the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; and (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; and (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -37,6 +37,8 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The current F0 source has no causal effect on the visible numerical morphology. | **Contradicted in the declared nonlinear lane** | Relative late residual RMS was \(0.02600\) against exactly zero for the conditional-mean control in the independent post-revision audit. Removing endogenous source-mean feedback reduced it to \(0.01356\). |
 | The current F0 morphological effect survives time refinement as a nonzero continuous forcing. | **Not supported** | A three-point navigation fit gave residual RMS \(\propto h^{0.596}\) for faithful F0 and \(\propto h^{0.541}\) for open-loop matched F0, while Gaussian, Poisson, state/history-event, and colored-memory controls were approximately step-independent. |
 | Final morphology alone identifies whether memoryless forcing is F0, Gaussian, independent-Poisson, or state/history-event driven. | **Not demonstrated** | A frozen centroid classifier scored \(8/48=16.7\%\) in the post-revision audit against a \(25\%\) balanced chance level. Direct temporal and event observables remain informative even when final morphology is not. |
+| Historical linon trajectory IDs demonstrate persistent object identity. | **Contradicted as an observer claim** | The audited detector finds absolute-amplitude local maxima and links them greedily by nonperiodic pixel distance. Exact controls produce 256 detections on a flat plateau, lose an unchanged shape after amplitude rescaling, split one boundary-crossing path, depend on coordinate order, swap crossing identities, and omit a translated boundary vortex. These failures concern the old observer; actual Lineum object existence remains untested. |
+| A source-blind observer can pass tests before seeing Lineum physics. | **Implemented and synthetically characterized** | A frozen replacement uses relative density contrast, periodic components and winding, toroidal distance, shape/mass/charge attributes, and global assignment. It passes the declared synthetic controls. This validates a measuring protocol, not a linon or particle. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -74,6 +76,7 @@ Until the gates below are met, we recommend:
 10. **do not identify foam-like morphology with deterministic chaos in the currently tested regimes; describe initial branching, dissipative self-organization, stochastic forcing, event processes, memory, unresolved variables, and quantum amplitudes as separate candidates until a discriminator selects among them**.
 11. **describe the current random source as the finite-step F0 software contract, not as verified quantum foam; use the validated signature protocol only within its temporal and amplitude resolution, and preserve the documented equivalences between short memory and white noise, high-rate events and Gaussian forcing, and weak dependence and independent events**.
 12. **state that current F0 randomness and its state-dependent feedback causally refresh the tested numerical morphology, but do not promote that mechanism as continuous quantum forcing: its late morphological residual decreases under time refinement, and final images do not reliably distinguish it from several variance-matched memoryless alternatives**.
+13. **do not treat historical peak counts, trajectory IDs, contact graphs, or injected vortex presets as evidence of linons; first require the frozen source-blind observer to pass an actual-dynamics gate against time-shuffled, phase-randomized, cap-free, time-step, grid, boundary, source, and permeability controls**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -83,7 +86,7 @@ Until the gates below are met, we recommend:
 | "Discrete steps are a reality." | "Discrete update is a candidate microdynamics and numerical method." | empirically distinguish the ontic discreteness from the regulator |
 | "Changing `dt` only changes simulation precision." | "This is true for the validated deterministic profile, not for the legacy \(\phi\)-diffusion or unresolved stochastic source." | convergence of every retained deterministic and stochastic term at fixed physical time |
 | "Coordinates are integer to arbitrarily large distances." | "Each run has a finite periodic domain; enlarging the box is a numerical sequence of finite models." | define the global topology and explain its relation to the rejection of actual infinity |
-| "Linon is a particle." | "A linon is a candidate localized excitation." | cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
+| "Linon is a particle." | "A linon is a candidate localized excitation; historical peak tracks do not yet establish one persistent object." | source-blind identity tracking above correlated nulls, cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
 | "Frequency gives mass \(m=hf/c^2\)." | "Under a chosen SI calibration, a frequency can be converted to a mass-equivalent energy." | a dynamically derived energy, independent calibration of \(\Delta t\), and independent tests of inertial and gravitational mass |
 | "The model is isotropic." | "The chosen spectral space operator is angularly isotropic on the periodic box; local stencils have a measured residual anisotropy." | rotational and Lorentz Ward identities or the experimentally sufficient emergent limit |
 | "The model is a local cellular automaton." | "An explicit finite stencil can be local; a spectral exponential has a global real-space kernel." | one canonical update law with an exact discrete causal cone |
@@ -639,6 +642,164 @@ An event-history control demonstrates why raw burst clustering is insufficient. 
 \(-0.0206\;[-0.0527,0.0140]\), consistent with zero. The true state-plus-history lane produced a raw ratio of \(2.687\) and recovered a history coefficient of \(1.0043\;[0.9799,1.0321]\). The independent control recovered neither state nor history dependence. This validates conditioned event analysis as a discriminator even when final images overlap.
 
 **Verdict [CALCULATED]:** the present F0 source causally changes and refreshes numerical morphology, and its endogenous state dependence amplifies branch differences. That is a software-level mechanism worth studying. It is **not** evidence of quantum ontology: its late effect decreases under time refinement, its magnitude depends strongly on the initial state, and its final morphology does not identify it against several memoryless alternatives. Initial-only branching and colored memory are distinguishable in this lane; Gaussian, independent-event, state/history-event, and matched F0 explanations require direct temporal or event measurements. No production default should change from this gate alone.
+
+### 3.13 Historical linon tracks do not establish identity; a replacement observer is now frozen before physics
+
+The next object-level gate began by auditing the measuring instrument rather than searching the actual dynamics for a favorable picture. This order matters. An object cannot be said to persist, move, collide, or form a contact network until the observer can distinguish one continuing object from peaks, noise, periodic copies, crossings, and topology changes in examples whose correct answer is already known.
+
+The exact historical amplitude observer bound to audited Core revision
+`ce2940ec96dfa3c24fae5dad51f5ec14e285666f` and numerical-program blob
+`a57171a633b85d02e4c2047d367cab5b534181aa` is
+
+\[
+\mathcal P_n
+=
+\left\{
+\mathbf x:
+A_n(\mathbf x)>0.12
+\;\land\;
+A_n(\mathbf x)
+=
+\max_{\mathbf y\in 3\times3(\mathbf x)} A_n(\mathbf y)
+\right\},
+\qquad A_n=|\psi_n|.
+\]
+
+Candidates are then processed in coordinate order. Each one is greedily attached to the nearest still-unassigned previous coordinate at ordinary Euclidean pixel distance strictly below three. A candidate without such a match gets a new integer ID; an unmatched old ID is immediately removed. This contract does not use periodic distance, shape, integrated excess, phase, winding charge, a motion prediction, uncertainty, or a missed-observation allowance. The associated audited visual preset also injects a \(q=3\) vortex by construction and checks only that a short run remains finite; it is not an emergence test.
+
+#### Exact failure controls for the historical observer
+
+Every row below has a known answer by construction. No Lineum trajectory was used to select the examples or thresholds.
+
+| Control | Known answer | Historical observer result |
+|---|---|---|
+| flat \(16\times16\) amplitude plateau at \(A=0.2\) | no localized object | all 256 cells are reported as local maxima |
+| Gaussian and its exact half-amplitude copy | same normalized shape | one peak becomes zero peaks although normalized correlation is \(1.0\) |
+| one peak moving from column 15 to column 0 | one periodic path | trajectory ID changes from 0 to 1 |
+| two ambiguous coordinates in reversed input order | same assignment result | next-ID and track assignment change with input order |
+| two labeled signatures crossing | each identity follows its signature | track 0 receives amplitude 0.5 instead of 1.0 and track 1 receives 1.0 instead of 0.5 |
+| same amplitude with constant phase or a vortex pair | topologically different fields | both have one amplitude peak, although periodic winding gives 0 versus 2 defects |
+| translate a neutral vortex pair through every horizontal shift | total charge-defect count is translation invariant | nonperiodic winding alternates between total counts 1 and 2; periodic winding remains 2 |
+
+These are counterexamples to the inference “historical track ID = continuing physical object.” They do **not** imply that Lineum contains no localized objects. They show that the old data product cannot decide that question.
+
+#### Frozen source-blind replacement
+
+The replacement has separate envelope and topological channels. For an envelope candidate, define density \(\rho=|\psi|^2\), a periodic Gaussian background, and a local contrast:
+
+\[
+b=G_{\sigma}*\rho,\qquad
+c=\rho-b,\qquad
+\sigma=N/16 .
+\]
+
+The threshold is relative to the field rather than an absolute amplitude:
+
+\[
+\tau
+=
+\operatorname{median}(c)
++3.5(1.4826)\operatorname{MAD}(c),
+\]
+
+with a numerical floor of \(10^{-12}\max(1,\|\rho\|_\infty)\). Four-neighbor components are joined across periodic edges. A component must occupy between \(0.00075N^2\) and \(0.08N^2\) cells and have compactness at least \(0.15\). Its recorded attributes are toroidal centroid, integrated positive contrast \(m\), area, equivalent radius, compactness, peak contrast, and a normalized local contrast patch.
+
+Topological candidates are measured independently on **all** periodic plaquettes:
+
+\[
+q_{ij}
+=
+\operatorname{round}
+\left[
+\frac{1}{2\pi}
+\sum_{\square_{ij}}
+\operatorname{wrap}_{(-\pi,\pi]}
+\bigl(\Delta\arg\psi\bigr)
+\right].
+\]
+
+The signed minimal displacement on a periodic axis of length \(N\) is
+
+\[
+\delta_N(x',x)
+=
+\left[(x'-x+N/2)\bmod N\right]-N/2,
+\]
+
+and the two-dimensional tracking distance is the Euclidean norm of the two wrapped displacements. Assignment is global, using the Hungarian minimum-cost solution rather than candidate order. For compatible envelope candidates,
+
+\[
+C_{ij}
+=
+\frac{d_{\mathbb T}(\mathbf x_i,\widehat{\mathbf x}_j)}{0.08N}
++1.5\left|\log\frac{m_i}{m_j}\right|
++0.5(1-r_{ij}),
+\]
+
+where \(r_{ij}\) is normalized-patch correlation and
+\(\widehat{\mathbf x}_j\) is a one-step constant-velocity prediction on the
+torus. Links require distance at most \(0.08N\), mass ratio at most 4,
+\(r_{ij}\ge0.35\), and total cost at most 3. Topological links must preserve
+signed charge. One missing frame is tolerated. All numerical choices were
+frozen before any actual Lineum trajectory was evaluated.
+
+Two corrections were made during synthetic-only calibration and are retained
+in the output. First, the Gaussian positive-control peak density was changed
+from 0.16 to 0.056 so its original amplitude is above 0.12 and its exact
+half-scale copy is below 0.12. Second, the robust threshold was changed from
+6.0 to 3.5 median-absolute-deviation standard deviations because the higher
+value produced no false detections in the declared null and therefore a
+degenerate zero lifetime threshold. Neither change used physical Lineum data.
+
+#### Replacement positive controls and null calibration
+
+| Control | Result |
+|---|---:|
+| flat plateau envelope count | 0 |
+| Gaussian count, original / half amplitude | \(1/1\) |
+| moving Gaussian across periodic edge | one track, 6/6 observations, median adjacent shape correlation \(1.0\) |
+| reversed detection order | identical summaries |
+| crossing signature identities | final masses remain \(1.0\) and \(0.5\) on the original IDs |
+| translated vortex–antivortex pair | two periodic detections in every frame; two tracks, each with 6/6 observations |
+| old nonperiodic winding during the same edge passage | counts \(2,2,1,2,2,2\) |
+| new periodic winding during the same edge passage | counts \(2,2,2,2,2,2\) |
+
+The negative calibration used 24 independently seeded sequences of 40 frames
+on \(32\times32\) grids. Each frame was a smoothed independent Gaussian
+perturbation of a uniform positive density. Across 960 frames, detections were
+rare and never exceeded one per frame. The familywise 99th-percentile maximum
+track length and span were both one observation. Gate 3B therefore requires
+strictly more than one observation and span, but this IID null is only a floor:
+actual correlated Lineum backgrounds must also be challenged by time-shuffled
+frames, phase-randomized spatial surrogates, deterministic and conditional-mean
+counterfactuals, and source-law controls.
+
+#### Frozen decision rule for actual dynamics
+
+An envelope candidate in Gate 3B must exceed both null lifetime thresholds,
+have coverage at least 0.9, median adjacent shape correlation at least 0.6,
+and mass and radius coefficients of variation at most 0.5. A topological
+candidate must retain signed periodic charge in at least 90% of observations
+and beat the same lifetime controls. Observation cadence must represent the
+same physical interval when \(h\) changes. Every retained candidate must be
+challenged under time-step and grid refinement at fixed physical horizon and
+domain, periodic versus open or absorbing boundaries, uniform versus
+nonuniform \(\kappa\), structured versus vacuum initial conditions, source
+ablations, and cap-disabled finite-field runs.
+
+The stop rule is deliberately strict: **no collision or particle claim is
+allowed until at least one single-object candidate survives lifetime, shape,
+mass or charge, cap, time, grid, and boundary controls.** Passing that gate
+would establish a numerical localized-object candidate, not a fundamental
+particle.
+
+**Verdict [IMPLEMENTATION AUDIT + CALCULATED]:** the historical observer is
+insufficient evidence for linon identity. The replacement observer passes its
+declared synthetic controls and supplies a frozen protocol for the actual
+dynamics. Gate 3A validates the measuring method only. Whether current Lineum
+dynamics produces even one robust object remains untested and is the subject
+of Gate 3B. No production code, runtime default, or whitepaper particle claim
+should change on the synthetic result alone.
 
 ---
 
@@ -1528,7 +1689,7 @@ These families are not mutually exclusive in nature, but they must be tested sep
 
 **Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. These results validate a bounded software discriminator, not a physical ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** Move from field morphology to object-level claims. Freeze a source-blind detector before evaluation, track localized candidates under deterministic, mean-only, F0, and F1–F5 lanes from matched complete states, and test whether any candidate preserves identity, lifetime, localization without a cap, an energy or charge proxy, motion, and collision behavior when \(h\), grid size, initial state, source law, boundary condition, and nonuniform \(\kappa\) are changed. Retain direct temporal and event observables so a visually persistent spot is not mistaken for one physical object. Do not modify the default runtime or call a candidate a particle until the detector and tracking conclusions survive these controls.
+**Next read-only gate.** Gate 3A has now frozen and synthetically validated a source-blind envelope/topology observer. Gate 3B must apply that unchanged observer to actual deterministic, mean-only, F0, and F1–F5 dynamics from matched complete states and test whether any candidate preserves identity, lifetime, localization without a cap, an energy or charge proxy, and motion when \(h\), grid size, initial state, source law, boundary condition, and nonuniform \(\kappa\) are changed. Retain direct temporal and event observables so a visually persistent spot is not mistaken for one physical object. Do not begin collision claims, modify the default runtime, or call a candidate a particle until one single-object result survives every frozen control.
 
 ---
 
@@ -1567,6 +1728,8 @@ These families are not mutually exclusive in nature, but they must be tested sep
 
 ### Gate 3 — Particle
 
+- **Gate 3A, observer prerequisite — completed synthetically:** the historical amplitude-peak tracker fails exact identity controls; a source-blind periodic envelope/topology observer is now frozen and passes the declared positive and IID-null controls. This is not evidence that an object exists in Lineum.
+- **Gate 3B, actual dynamics — pending:** apply the unchanged observer to actual matched dynamics and declared surrogates; require lifetime beyond correlated nulls, coverage, shape, mass/radius or signed-charge stability, and robustness to source, cap, time step, grid, boundary, initial state, and nonuniform permeability.
 - isolated stable object in open/large vacuum;
 - energy, momentum, effective mass and dissipation;
 - stability when changing resolution and box;
@@ -1614,7 +1777,7 @@ The following list supersedes the original proposal. Each question should have a
 8. What is the total dispersion relation throughout the Brillouin zone and its angular anisotropy?
 9. Does the inferred anisotropy satisfy the particular experimental Lorentz-invariance bounds without an additional fit?
 10. Is macroscopic smooth motion a property of observable fields or just an interpolation visualization?
-11. Is there a stable localized object without cap, reset, noise, active background and periodic image of itself?
+11. Does a source-blind observer, frozen on synthetic positive and null controls, find a stable localized object above correlated surrogates without cap, reset, noise, active background or a periodic image of itself?
 12. What invariant or energy minimum prevents the collapse of an object into a single cell or its dissolution?
 13. Do the size, energy and frequency of the object converge at \(a\to0\), \(\Delta t\to0\), \(L\to\infty\)?
 14. Does the object move in any direction without grid pinning and direction-dependent mass?
@@ -1666,10 +1829,11 @@ The following list supersedes the original proposal. Each question should have a
 13. **The Lyapunov audit is finite and regime-bound.** It covers seven declared deterministic regimes plus sensitivities in step, permeability, grid, and horizon. It does not exhaust every nonlinear coefficient, initial state, boundary, wave backend, dimension, or asymptotic attractor. The drift of the finite-time estimate toward zero at longer horizons precludes a claim of strictly negative asymptotic exponent.
 14. **The foam-signature protocol is an identifiability test, not an ontology detector.** Its 180/180 post-revision score concerns five declared, sufficiently separated synthetic controls. Short memory, frequent small jumps, weak dependence, state heterogeneity, coarse observations, and an incorrect deterministic backbone can make distinct mechanisms observationally equivalent. The current F0 conclusion classifies the isolated implemented source, not the complete nonlinear morphology or a physical quantum vacuum.
 15. **The source-to-morphology ablation is causal only within its declared numerical experiment.** It uses a periodic two-dimensional grid, a uniform-\(\kappa\) nonlinear backbone, synthetic matched source laws, one primary structured state, finite horizons, a frozen eight-feature classifier, and only four calibration plus four evaluation runs per navigation sensitivity. Its independent post-revision lane and bootstrap intervals strengthen the software conclusion, but they do not establish an asymptotic continuum limit, a unique microscopic source, a three-dimensional vacuum, stable objects, or quantum behavior. Open-loop input matching is exact in expectation at \(h=0.1\); the deliberately different contracts diverge away from that reference step.
+16. **The linon-observer result validates a measuring instrument, not Lineum objects.** Its positive controls are synthetic Gaussians and a constructed neutral vortex pair; its negative calibration is a finite collection of smoothed IID fields. Correlated nonlinear backgrounds can create longer accidental tracks, and the declared thresholds are protocol choices rather than physical constants. Gate 3B must retain the frozen observer and add time-shuffled, phase-randomized, source, cap, time, grid, boundary, initial-state, and permeability controls before any object claim. The observer has not yet measured an actual Lineum trajectory in this gate.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, and causally tracing that source into nonlinear morphology. The last result is deliberately two-sided: the current source and its state feedback matter numerically, but the effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, and replacing an inadequate historical peak tracker with a source-blind object observer that passes exact synthetic controls. The last two results are deliberately bounded: the current source and its state feedback matter numerically, but the effect shrinks under time refinement; final morphology does not identify several variance-matched memoryless alternatives; and a calibrated observer does not imply that the actual dynamics contains a stable object. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -1753,9 +1917,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the eighth, finite-time Lyapunov program was executed twice in the replay environment with bitwise-identical normalized output; two reconstructed regimes also matched the actual deterministic NumPy runtime with maximum absolute difference `0.0`
 - the ninth, foam-signature program was executed twice with bitwise-identical normalized output; its analytical Gaussian, Poisson, memory, and current-source controls passed, and its reconstructed current source matched actual runtime steps within `4.63e-18`
 - the tenth, source-to-morphology program was executed twice with bitwise-identical normalized output; its complete-state and open-loop controls passed, and its faithful F0 reconstruction matched the clean committed NumPy runtime within `1.05e-17`
+- the eleventh, linon-observer program was executed twice with bitwise-identical normalized output; the historical observer reproduced all declared failure controls, the replacement passed the declared positive controls, and its 24-by-40-frame smoothed-IID calibration produced a familywise 99th-percentile maximum lifetime of one observation
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 10/10 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 11/11 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1789,6 +1954,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | deterministic chaos audit | finite-time largest Lyapunov estimate | logistic-map positive control and exact zero-\(\kappa\) damping exponent | seven regimes, two perturbation sizes, six directions, \(h\), \(\kappa\), horizon, and grid sensitivities | absence of chaos in all Lineum parameter space or a choice among non-chaotic foam mechanisms |
 | foam-source signatures | innovation scale, kurtosis, lag correlation, event-rate ratios, Fano factor, waiting times | Gaussian, compound-Poisson, exact OU lag, and current-source variance formulas | three independent seed families, three \(h\), memory, event-rate, dependence, and resolution boundaries | a physical ontology, full nonlinear morphology, or mechanisms below observation resolution |
 | source-to-morphology causality | paired late residual RMS, branch persistence, turnover, classifier accuracy, and conditioned event history | no-source and mean-only lanes, exact common open-loop mean, variance matching at \(h=0.1\), clean-runtime reconstruction, and balanced-label permutations | independent post-revision seeds; \(h=0.05/0.2\), grids 16/32, horizons 15/60, vacuum initial state, and three detector thresholds | a continuum quantum source, unique identification of memoryless laws, stable particles, or physical vacuum ontology |
+| linon observer | track lifetime, coverage, shape correlation, mass/radius variation, signed winding, and toroidal assignment | flat field, scale copies, input-order reversal, crossing identities, periodic edge crossing, neutral vortex pair, and smoothed-IID nulls | fixed synthetic controls before physical data; frozen Gate-3B thresholds and mandatory time/source/grid/boundary/cap surrogates | that actual Lineum contains a stable localized object, a fundamental particle, or a unique observer |
 
 ### A.3 Numerical audit summary
 
@@ -1824,6 +1990,13 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | event-history control: state-only raw ratio / conditioned history coefficient | \(1.389 / -0.0206\;[-0.0527,0.0140]\) |
 | event-history control: true history raw ratio / conditioned history coefficient | \(2.687 / 1.0043\;[0.9799,1.0321]\) |
 | morphology reconstruction: maximum clean-runtime difference | \(1.05\times10^{-17}\) |
+| historical observer: flat-plateau detections / available cells | \(256/256\) |
+| historical observer: original / half-scale Gaussian peaks | \(1/0\), despite normalized correlation \(1.0\) |
+| historical observer: one boundary-crossing path IDs | \(0\to1\) |
+| historical / periodic vortex counts during edge passage | \(2,2,1,2,2,2\) / \(2,2,2,2,2,2\) |
+| replacement observer: moving Gaussian track | one ID, \(6/6\) observations, median shape correlation \(1.0\) |
+| replacement observer: vortex and antivortex tracks | two IDs, each \(6/6\) observations |
+| observer smoothed-IID familywise 99% lifetime / span | \(1/1\) observation |
 
 ### A.4 Complete executable program
 
@@ -3046,7 +3219,6 @@ Reference output:
   }
 }
 ```
-
 ---
 
 ## Appendix C — OEA Imaging-Mechanism Ablation
@@ -20224,5 +20396,1736 @@ if __name__ == "__main__":
     "python": "3.11.15"
   },
   "schema": "lineum.foam-source-morphology-ablation.v1"
+}
+```
+
+---
+
+## Appendix K — Source-Blind Linon Observer Gate
+
+This appendix is the authoritative, standalone reproduction record for
+Section 3.13. It reproduces the audited historical amplitude observer,
+challenges it with exact synthetic counterexamples, implements the replacement
+source-blind envelope and periodic-topology observer, calibrates a declared
+smoothed-IID null, and prints the complete frozen Gate-3B protocol. It imports
+no Lineum package, reads no project data, writes no files, and evaluates no
+physical Lineum trajectory.
+
+The program requires Python 3.11 or compatible, NumPy, and SciPy. Save the
+Python block as a script and execute it once. Normalize line endings to LF; the
+complete stdout must equal the JSON block semantically. Two executions in the
+recorded environment produced byte-identical normalized stdout.
+
+- embedded program SHA-256 after LF normalization and removal of the final
+  newline: `ed30b04ed6c90f65c2ab2b2f1d268fe6948d9faf6db52c38c445ab823b8a34e2`
+- complete normalized JSON stdout SHA-256 including its final newline:
+  `c6c243c29c18f19927494879bcc08b7ddf5c3367e6edf3270787f114def82676`
+- audited Core revision:
+  `ce2940ec96dfa3c24fae5dad51f5ec14e285666f`
+- audited historical observer Git blob:
+  `a57171a633b85d02e4c2047d367cab5b534181aa`
+- audited injected-vortex preset Git blob:
+  `8df7a63e87446cc9c3de5db9cbeef094b0a4f675`
+- audited injected-vortex test Git blob:
+  `6dcc111ad9ebe9624b490eaebec0c651c8796511`
+- protocol status: synthetic calibration corrections recorded, then frozen
+  before physical Lineum trajectories
+
+```python
+"""Standalone Gate 3A audit of Lineum object detection and identity tracking.
+
+Protocol status: frozen synthetic-observer calibration before any physical
+Lineum trajectory is evaluated.  The program reproduces the audited legacy
+observer, challenges it with exact synthetic controls, and validates a
+source-blind replacement protocol.  It imports no Lineum package and reads or
+writes no files.
+"""
+
+from __future__ import annotations
+
+import json
+import math
+import platform
+from dataclasses import dataclass
+
+import numpy as np
+import scipy
+from scipy.ndimage import gaussian_filter, maximum_filter
+from scipy.optimize import linear_sum_assignment
+
+
+SCHEMA = "lineum.linon-observer-gate-3a.v1"
+PROTOCOL_VERSION = "1.0-frozen-before-physics"
+AUDITED_CORE_COMMIT = "ce2940ec96dfa3c24fae5dad51f5ec14e285666f"
+AUDITED_LINEUM_PY_GIT_BLOB = "a57171a633b85d02e4c2047d367cab5b534181aa"
+AUDITED_VFX_PROGRAM_GIT_BLOB = "8df7a63e87446cc9c3de5db9cbeef094b0a4f675"
+AUDITED_VFX_TEST_GIT_BLOB = "6dcc111ad9ebe9624b490eaebec0c651c8796511"
+
+LEGACY_AMPLITUDE_THRESHOLD = 0.12
+LEGACY_NEIGHBORHOOD_SIZE = 3
+LEGACY_LINK_DISTANCE = 3.0
+
+BACKGROUND_SIGMA_FRACTION = 1.0 / 16.0
+ROBUST_Z_THRESHOLD = 3.5
+MIN_COMPONENT_AREA_FRACTION = 0.00075
+MAX_COMPONENT_AREA_FRACTION = 0.08
+MIN_COMPACTNESS = 0.15
+PATCH_RADIUS_FRACTION = 0.08
+MAX_LINK_FRACTION = 0.08
+MAX_MASS_RATIO = 4.0
+MASS_COST_WEIGHT = 1.5
+SHAPE_COST_WEIGHT = 0.5
+MIN_SHAPE_CORRELATION = 0.35
+MAX_ASSIGNMENT_COST = 3.0
+MAX_MISSED_FRAMES = 1
+
+NULL_SEQUENCES = 24
+NULL_FRAMES = 40
+NULL_SIZE = 32
+NULL_SEED_BASE = 2026220000
+
+
+def plain(value):
+    """Convert NumPy values recursively to JSON-safe Python values."""
+    if isinstance(value, dict):
+        return {str(key): plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [plain(item) for item in value]
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, (np.integer,)):
+        return int(value)
+    if isinstance(value, (np.floating,)):
+        return float(value)
+    return value
+
+
+def legacy_detect_amplitude_peaks(amplitude: np.ndarray) -> np.ndarray:
+    """Reproduce the audited legacy amplitude-only particle detector."""
+    local_maximum = (
+        amplitude
+        == maximum_filter(amplitude, size=LEGACY_NEIGHBORHOOD_SIZE)
+    )
+    particles = (amplitude > LEGACY_AMPLITUDE_THRESHOLD) & local_maximum
+    return np.argwhere(particles)
+
+
+def legacy_track(
+    coordinates: np.ndarray,
+    active_tracks: dict[int, np.ndarray],
+    next_id: int,
+    step_index: int,
+    amplitude: np.ndarray,
+    trajectories: list[tuple[int, int, int, int, float]],
+) -> tuple[dict[int, np.ndarray], int]:
+    """Reproduce the audited greedy nearest-neighbor tracker."""
+    if len(coordinates) == 0:
+        return {}, next_id
+    if not active_tracks:
+        new_active_tracks = {}
+        for cy, cx in coordinates:
+            new_active_tracks[next_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            trajectories.append(
+                (
+                    int(next_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+            next_id += 1
+        return new_active_tracks, next_id
+
+    track_ids = list(active_tracks.keys())
+    track_positions = np.array(
+        list(active_tracks.values()),
+        dtype=np.float64,
+    )
+    candidate_positions = np.asarray(coordinates, dtype=np.float64)
+    distances = np.linalg.norm(
+        candidate_positions[:, None, :] - track_positions[None, :, :],
+        axis=2,
+    )
+    assigned_track_ids = set()
+    new_active_tracks = {}
+    for candidate_index, (cy, cx) in enumerate(coordinates):
+        best_track_index = -1
+        minimum_distance = LEGACY_LINK_DISTANCE
+        for track_index, track_id in enumerate(track_ids):
+            if track_id in assigned_track_ids:
+                continue
+            distance = distances[candidate_index, track_index]
+            if distance < minimum_distance:
+                minimum_distance = distance
+                best_track_index = track_index
+        if best_track_index != -1:
+            track_id = track_ids[best_track_index]
+            new_active_tracks[track_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            assigned_track_ids.add(track_id)
+            trajectories.append(
+                (
+                    int(track_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+        else:
+            new_active_tracks[next_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            trajectories.append(
+                (
+                    int(next_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+            next_id += 1
+    return new_active_tracks, next_id
+
+
+def legacy_winding(phase: np.ndarray) -> np.ndarray:
+    """Reproduce the non-periodic-edge legacy plaquette observer."""
+    p00 = phase[:-1, :-1]
+    p01 = phase[:-1, 1:]
+    p11 = phase[1:, 1:]
+    p10 = phase[1:, :-1]
+    differences = (
+        np.angle(np.exp(1j * (p01 - p00)))
+        + np.angle(np.exp(1j * (p11 - p01)))
+        + np.angle(np.exp(1j * (p10 - p11)))
+        + np.angle(np.exp(1j * (p00 - p10)))
+    )
+    winding = differences / (2.0 * np.pi)
+    result = np.zeros_like(phase, dtype=np.int8)
+    result[:-1, :-1][winding > 0.5] = 1
+    result[:-1, :-1][winding < -0.5] = -1
+    return result
+
+
+def periodic_winding(phase: np.ndarray) -> np.ndarray:
+    """Measure wrapped phase winding on every periodic plaquette."""
+    p00 = phase
+    p01 = np.roll(phase, -1, axis=1)
+    p11 = np.roll(np.roll(phase, -1, axis=0), -1, axis=1)
+    p10 = np.roll(phase, -1, axis=0)
+    differences = (
+        np.angle(np.exp(1j * (p01 - p00)))
+        + np.angle(np.exp(1j * (p11 - p01)))
+        + np.angle(np.exp(1j * (p10 - p11)))
+        + np.angle(np.exp(1j * (p00 - p10)))
+    )
+    winding = differences / (2.0 * np.pi)
+    result = np.zeros_like(phase, dtype=np.int8)
+    result[winding > 0.5] = 1
+    result[winding < -0.5] = -1
+    return result
+
+
+def periodic_delta(new: float, old: float, size: int) -> float:
+    """Return the signed minimal displacement on a periodic axis."""
+    return float((new - old + size / 2.0) % size - size / 2.0)
+
+
+def periodic_distance(
+    first: np.ndarray,
+    second: np.ndarray,
+    size: int,
+) -> float:
+    delta_y = periodic_delta(first[0], second[0], size)
+    delta_x = periodic_delta(first[1], second[1], size)
+    return float(math.hypot(delta_y, delta_x))
+
+
+def periodic_components(mask: np.ndarray) -> list[np.ndarray]:
+    """Return four-neighbor connected components with periodic edges."""
+    size_y, size_x = mask.shape
+    visited = np.zeros_like(mask, dtype=bool)
+    components = []
+    for start_y, start_x in np.argwhere(mask):
+        if visited[start_y, start_x]:
+            continue
+        stack = [(int(start_y), int(start_x))]
+        visited[start_y, start_x] = True
+        coordinates = []
+        while stack:
+            y, x = stack.pop()
+            coordinates.append((y, x))
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                ny = (y + dy) % size_y
+                nx = (x + dx) % size_x
+                if mask[ny, nx] and not visited[ny, nx]:
+                    visited[ny, nx] = True
+                    stack.append((ny, nx))
+        components.append(np.asarray(coordinates, dtype=np.int64))
+    return components
+
+
+def circular_coordinate(
+    coordinates: np.ndarray,
+    weights: np.ndarray,
+    size: int,
+) -> float:
+    angles = 2.0 * np.pi * coordinates / size
+    vector = np.sum(weights * np.exp(1j * angles))
+    if abs(vector) < 1e-15:
+        return float(np.average(coordinates, weights=weights) % size)
+    angle = math.atan2(vector.imag, vector.real) % (2.0 * np.pi)
+    return float(size * angle / (2.0 * np.pi))
+
+
+def normalized_patch(
+    field: np.ndarray,
+    center_y: float,
+    center_x: float,
+    radius: int,
+) -> np.ndarray:
+    size = field.shape[0]
+    y0 = int(round(center_y))
+    x0 = int(round(center_x))
+    offsets = np.arange(-radius, radius + 1)
+    ys = (y0 + offsets) % size
+    xs = (x0 + offsets) % size
+    patch = np.asarray(field[np.ix_(ys, xs)], dtype=np.float64).ravel()
+    patch = patch - float(np.mean(patch))
+    norm = float(np.linalg.norm(patch))
+    if norm < 1e-15:
+        return np.zeros_like(patch)
+    return patch / norm
+
+
+def shape_correlation(first: np.ndarray, second: np.ndarray) -> float:
+    if first.size != second.size:
+        return -1.0
+    first_norm = float(np.linalg.norm(first))
+    second_norm = float(np.linalg.norm(second))
+    if first_norm < 1e-15 or second_norm < 1e-15:
+        return 1.0 if first_norm < 1e-15 and second_norm < 1e-15 else 0.0
+    return float(
+        np.clip(
+            np.dot(first, second) / (first_norm * second_norm),
+            -1.0,
+            1.0,
+        )
+    )
+
+
+@dataclass
+class Detection:
+    kind: str
+    y: float
+    x: float
+    mass: float
+    area: float
+    radius: float
+    compactness: float
+    peak: float
+    charge: int
+    signature: np.ndarray
+
+
+def envelope_detections(psi: np.ndarray) -> list[Detection]:
+    """Detect localized positive density contrast without source labels."""
+    size = psi.shape[0]
+    density = np.abs(psi) ** 2
+    sigma = max(1.0, BACKGROUND_SIGMA_FRACTION * size)
+    background = gaussian_filter(density, sigma=sigma, mode="wrap")
+    contrast = density - background
+    median = float(np.median(contrast))
+    robust_sigma = 1.4826 * float(np.median(np.abs(contrast - median)))
+    numerical_floor = 1e-12 * max(1.0, float(np.max(np.abs(density))))
+    threshold = median + max(
+        ROBUST_Z_THRESHOLD * robust_sigma,
+        numerical_floor,
+    )
+    mask = contrast > threshold
+    minimum_area = max(
+        2,
+        int(round(MIN_COMPONENT_AREA_FRACTION * size * size)),
+    )
+    maximum_area = int(
+        math.floor(MAX_COMPONENT_AREA_FRACTION * size * size)
+    )
+    patch_radius = max(2, int(round(PATCH_RADIUS_FRACTION * size)))
+    detections = []
+    for coordinates in periodic_components(mask):
+        area = int(len(coordinates))
+        if area < minimum_area or area > maximum_area:
+            continue
+        ys = coordinates[:, 0]
+        xs = coordinates[:, 1]
+        component_weights = np.maximum(contrast[ys, xs], 0.0)
+        mass = float(np.sum(component_weights))
+        if mass <= numerical_floor:
+            continue
+        center_y = circular_coordinate(
+            ys.astype(np.float64),
+            component_weights,
+            size,
+        )
+        center_x = circular_coordinate(
+            xs.astype(np.float64),
+            component_weights,
+            size,
+        )
+        radial_square = np.array(
+            [
+                periodic_delta(float(y), center_y, size) ** 2
+                + periodic_delta(float(x), center_x, size) ** 2
+                for y, x in coordinates
+            ],
+            dtype=np.float64,
+        )
+        radius = float(
+            np.sqrt(
+                np.sum(component_weights * radial_square)
+                / max(mass, 1e-30)
+            )
+        )
+        component_set = {
+            (int(y), int(x)) for y, x in coordinates
+        }
+        perimeter = 0
+        for y, x in component_set:
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                if (
+                    ((y + dy) % size, (x + dx) % size)
+                    not in component_set
+                ):
+                    perimeter += 1
+        compactness = float(
+            4.0 * np.pi * area / max(perimeter**2, 1)
+        )
+        if compactness < MIN_COMPACTNESS:
+            continue
+        detections.append(
+            Detection(
+                kind="envelope",
+                y=center_y,
+                x=center_x,
+                mass=mass,
+                area=float(area),
+                radius=radius,
+                compactness=compactness,
+                peak=float(np.max(contrast[ys, xs])),
+                charge=0,
+                signature=normalized_patch(
+                    contrast,
+                    center_y,
+                    center_x,
+                    patch_radius,
+                ),
+            )
+        )
+    return sorted(
+        detections,
+        key=lambda item: (item.kind, item.charge, item.y, item.x),
+    )
+
+
+def topology_detections(psi: np.ndarray) -> list[Detection]:
+    """Detect every periodic phase defect and preserve its signed charge."""
+    size = psi.shape[0]
+    winding = periodic_winding(np.angle(psi))
+    amplitude = np.abs(psi)
+    detections = []
+    for y, x in np.argwhere(winding != 0):
+        charge = int(winding[y, x])
+        ys = np.array([(y + offset) % size for offset in (-1, 0, 1)])
+        xs = np.array([(x + offset) % size for offset in (-1, 0, 1)])
+        local = amplitude[np.ix_(ys, xs)]
+        ring_mass = float(np.sum(local**2))
+        phase_patch = psi[np.ix_(ys, xs)]
+        unit_phase = phase_patch / (np.abs(phase_patch) + 1e-15)
+        signature = np.concatenate(
+            [unit_phase.real.ravel(), unit_phase.imag.ravel()]
+        )
+        signature_norm = float(np.linalg.norm(signature))
+        if signature_norm > 0.0:
+            signature = signature / signature_norm
+        detections.append(
+            Detection(
+                kind="topology",
+                y=float((y + 0.5) % size),
+                x=float((x + 0.5) % size),
+                mass=max(ring_mass, 1e-15),
+                area=1.0,
+                radius=0.0,
+                compactness=1.0,
+                peak=float(np.max(local)),
+                charge=charge,
+                signature=signature,
+            )
+        )
+    return sorted(
+        detections,
+        key=lambda item: (item.kind, item.charge, item.y, item.x),
+    )
+
+
+class GlobalTracker:
+    """Global, toroidal, attribute-aware observer with one-frame tolerance."""
+
+    def __init__(self, size: int):
+        self.size = int(size)
+        self.max_link = MAX_LINK_FRACTION * size
+        self.next_id = 0
+        self.active: dict[int, dict] = {}
+        self.records: dict[int, list[dict]] = {}
+
+    def _new_track(self, detection: Detection, frame: int) -> None:
+        track_id = self.next_id
+        self.next_id += 1
+        position = np.array([detection.y, detection.x], dtype=np.float64)
+        state = {
+            "kind": detection.kind,
+            "charge": detection.charge,
+            "position": position,
+            "previous_position": position.copy(),
+            "mass": detection.mass,
+            "area": detection.area,
+            "radius": detection.radius,
+            "signature": detection.signature.copy(),
+            "missed": 0,
+        }
+        self.active[track_id] = state
+        self.records[track_id] = []
+        self._record(track_id, detection, frame, None)
+
+    def _record(
+        self,
+        track_id: int,
+        detection: Detection,
+        frame: int,
+        correlation_value: float | None,
+    ) -> None:
+        self.records[track_id].append(
+            {
+                "frame": int(frame),
+                "y": float(detection.y),
+                "x": float(detection.x),
+                "mass": float(detection.mass),
+                "area": float(detection.area),
+                "radius": float(detection.radius),
+                "compactness": float(detection.compactness),
+                "peak": float(detection.peak),
+                "kind": detection.kind,
+                "charge": int(detection.charge),
+                "shape_correlation": (
+                    None
+                    if correlation_value is None
+                    else float(correlation_value)
+                ),
+            }
+        )
+
+    def _predicted_position(self, state: dict) -> np.ndarray:
+        velocity = np.array(
+            [
+                periodic_delta(
+                    state["position"][axis],
+                    state["previous_position"][axis],
+                    self.size,
+                )
+                for axis in (0, 1)
+            ],
+            dtype=np.float64,
+        )
+        return (state["position"] + velocity) % self.size
+
+    def update(self, detections: list[Detection], frame: int) -> None:
+        detections = sorted(
+            detections,
+            key=lambda item: (
+                item.kind,
+                item.charge,
+                item.y,
+                item.x,
+                item.mass,
+            ),
+        )
+        if not self.active:
+            for detection in detections:
+                self._new_track(detection, frame)
+            return
+        track_ids = sorted(self.active)
+        if not detections:
+            for track_id in list(track_ids):
+                self.active[track_id]["missed"] += 1
+                if (
+                    self.active[track_id]["missed"]
+                    > MAX_MISSED_FRAMES
+                ):
+                    del self.active[track_id]
+            return
+
+        costs = np.full(
+            (len(track_ids), len(detections)),
+            1e9,
+            dtype=np.float64,
+        )
+        correlations = np.full_like(costs, np.nan)
+        for row, track_id in enumerate(track_ids):
+            state = self.active[track_id]
+            predicted = self._predicted_position(state)
+            for column, detection in enumerate(detections):
+                if state["kind"] != detection.kind:
+                    continue
+                if (
+                    detection.kind == "topology"
+                    and state["charge"] != detection.charge
+                ):
+                    continue
+                position = np.array(
+                    [detection.y, detection.x],
+                    dtype=np.float64,
+                )
+                distance = periodic_distance(
+                    position,
+                    predicted,
+                    self.size,
+                )
+                if distance > self.max_link:
+                    continue
+                mass_ratio = max(
+                    detection.mass / max(state["mass"], 1e-30),
+                    state["mass"] / max(detection.mass, 1e-30),
+                )
+                if (
+                    detection.kind == "envelope"
+                    and mass_ratio > MAX_MASS_RATIO
+                ):
+                    continue
+                correlation_value = shape_correlation(
+                    state["signature"],
+                    detection.signature,
+                )
+                if (
+                    detection.kind == "envelope"
+                    and correlation_value < MIN_SHAPE_CORRELATION
+                ):
+                    continue
+                correlations[row, column] = correlation_value
+                costs[row, column] = (
+                    distance / max(self.max_link, 1e-30)
+                    + MASS_COST_WEIGHT * abs(math.log(mass_ratio))
+                    + SHAPE_COST_WEIGHT * (1.0 - correlation_value)
+                )
+
+        rows, columns = linear_sum_assignment(costs)
+        assigned_tracks = set()
+        assigned_detections = set()
+        for row, column in zip(rows, columns):
+            if costs[row, column] > MAX_ASSIGNMENT_COST:
+                continue
+            track_id = track_ids[row]
+            detection = detections[column]
+            state = self.active[track_id]
+            new_position = np.array(
+                [detection.y, detection.x],
+                dtype=np.float64,
+            )
+            state["previous_position"] = state["position"].copy()
+            state["position"] = new_position
+            state["mass"] = detection.mass
+            state["area"] = detection.area
+            state["radius"] = detection.radius
+            state["signature"] = detection.signature.copy()
+            state["charge"] = detection.charge
+            state["missed"] = 0
+            self._record(
+                track_id,
+                detection,
+                frame,
+                correlations[row, column],
+            )
+            assigned_tracks.add(track_id)
+            assigned_detections.add(column)
+
+        for track_id in list(track_ids):
+            if track_id in assigned_tracks:
+                continue
+            self.active[track_id]["missed"] += 1
+            if self.active[track_id]["missed"] > MAX_MISSED_FRAMES:
+                del self.active[track_id]
+        for column, detection in enumerate(detections):
+            if column not in assigned_detections:
+                self._new_track(detection, frame)
+
+    def summaries(self) -> list[dict]:
+        summaries = []
+        for track_id, records in sorted(self.records.items()):
+            frames = np.array(
+                [record["frame"] for record in records],
+                dtype=np.int64,
+            )
+            masses = np.array(
+                [record["mass"] for record in records],
+                dtype=np.float64,
+            )
+            radii = np.array(
+                [record["radius"] for record in records],
+                dtype=np.float64,
+            )
+            correlations = np.array(
+                [
+                    record["shape_correlation"]
+                    for record in records
+                    if record["shape_correlation"] is not None
+                ],
+                dtype=np.float64,
+            )
+            span = int(frames[-1] - frames[0] + 1)
+            summaries.append(
+                {
+                    "id": int(track_id),
+                    "kind": self.records[track_id][0].get(
+                        "kind",
+                        self.active.get(track_id, {}).get(
+                            "kind",
+                            "unknown",
+                        ),
+                    ),
+                    "observations": int(len(records)),
+                    "first_frame": int(frames[0]),
+                    "last_frame": int(frames[-1]),
+                    "span_frames": span,
+                    "coverage": float(len(records) / span),
+                    "mass_coefficient_of_variation": float(
+                        np.std(masses) / max(np.mean(masses), 1e-30)
+                    ),
+                    "radius_coefficient_of_variation": float(
+                        np.std(radii) / max(np.mean(radii), 1e-30)
+                    )
+                    if float(np.mean(radii)) > 0.0
+                    else 0.0,
+                    "median_shape_correlation": float(
+                        np.median(correlations)
+                    )
+                    if len(correlations)
+                    else None,
+                    "final_mass": float(masses[-1]),
+                    "final_y": float(records[-1]["y"]),
+                    "final_x": float(records[-1]["x"]),
+                    "charge": int(records[-1]["charge"]),
+                }
+            )
+        return summaries
+
+
+def gaussian_psi(
+    size: int,
+    center_y: float,
+    center_x: float,
+    width: float,
+    peak_density: float = 1.0,
+    background_density: float = 0.05,
+) -> np.ndarray:
+    yy, xx = np.mgrid[:size, :size]
+    dy = (yy - center_y + size / 2.0) % size - size / 2.0
+    dx = (xx - center_x + size / 2.0) % size - size / 2.0
+    density = background_density + peak_density * np.exp(
+        -(dx**2 + dy**2) / (2.0 * width**2)
+    )
+    return np.sqrt(density).astype(np.complex128)
+
+
+def planar_vortex_pair(size: int) -> np.ndarray:
+    """Return a deterministic vortex-antivortex field for observer controls."""
+    yy, xx = np.mgrid[:size, :size]
+    first = (0.35 * size, 0.35 * size)
+    second = (0.65 * size, 0.65 * size)
+    z_first = (xx - first[1]) + 1j * (yy - first[0])
+    z_second = (xx - second[1]) + 1j * (yy - second[0])
+    radius_first = np.abs(z_first)
+    radius_second = np.abs(z_second)
+    phase = (
+        z_first / (radius_first + 1e-15)
+        * np.conj(z_second / (radius_second + 1e-15))
+    )
+    amplitude = np.tanh(radius_first / 1.3) * np.tanh(
+        radius_second / 1.3
+    )
+    return amplitude * phase
+
+
+def detection_for_assignment(
+    y: float,
+    x: float,
+    mass: float,
+    signature: tuple[float, ...],
+) -> Detection:
+    vector = np.asarray(signature, dtype=np.float64)
+    vector /= max(float(np.linalg.norm(vector)), 1e-30)
+    return Detection(
+        kind="envelope",
+        y=float(y),
+        x=float(x),
+        mass=float(mass),
+        area=5.0,
+        radius=1.0,
+        compactness=0.7,
+        peak=float(mass),
+        charge=0,
+        signature=vector,
+    )
+
+
+def legacy_controls() -> dict:
+    size = 16
+    flat = np.full((size, size), 0.2, dtype=np.float64)
+    gaussian = np.abs(
+        gaussian_psi(
+            size,
+            center_y=8.0,
+            center_x=8.0,
+            width=1.2,
+            peak_density=0.056,
+            background_density=0.0001,
+        )
+    )
+    scaled_gaussian = 0.5 * gaussian
+
+    initial_amplitude = np.zeros((size, size), dtype=np.float64)
+    initial_amplitude[8, 15] = 1.0
+    next_amplitude = np.zeros_like(initial_amplitude)
+    next_amplitude[8, 0] = 1.0
+    trajectories = []
+    active, next_id = legacy_track(
+        np.array([[8, 15]], dtype=np.int64),
+        {},
+        0,
+        0,
+        initial_amplitude,
+        trajectories,
+    )
+    active, next_id = legacy_track(
+        np.array([[8, 0]], dtype=np.int64),
+        active,
+        next_id,
+        1,
+        next_amplitude,
+        trajectories,
+    )
+
+    ambiguous_amplitude = np.ones((size, size), dtype=np.float64)
+    base_tracks = {
+        0: np.array([8.0, 5.0]),
+        1: np.array([8.0, 9.0]),
+    }
+    order_first_trajectories = []
+    order_first, order_first_next = legacy_track(
+        np.array([[8, 7], [8, 6]], dtype=np.int64),
+        {key: value.copy() for key, value in base_tracks.items()},
+        2,
+        1,
+        ambiguous_amplitude,
+        order_first_trajectories,
+    )
+    order_second_trajectories = []
+    order_second, order_second_next = legacy_track(
+        np.array([[8, 6], [8, 7]], dtype=np.int64),
+        {key: value.copy() for key, value in base_tracks.items()},
+        2,
+        1,
+        ambiguous_amplitude,
+        order_second_trajectories,
+    )
+
+    crossing_amplitude = np.zeros((size, size), dtype=np.float64)
+    crossing_amplitude[8, 6] = 0.5
+    crossing_amplitude[8, 8] = 1.0
+    crossing_trajectories = []
+    legacy_track(
+        np.array([[8, 6], [8, 8]], dtype=np.int64),
+        {
+            0: np.array([8.0, 5.0]),
+            1: np.array([8.0, 9.0]),
+        },
+        2,
+        1,
+        crossing_amplitude,
+        crossing_trajectories,
+    )
+
+    pair = planar_vortex_pair(32)
+    amplitude = np.abs(
+        gaussian_psi(
+            32,
+            center_y=16.0,
+            center_x=16.0,
+            width=3.0,
+        )
+    )
+    constant_phase = amplitude.astype(np.complex128)
+    vortex_phase = amplitude * np.exp(1j * np.angle(pair))
+    legacy_shift_counts = []
+    periodic_shift_counts = []
+    for shift in range(32):
+        shifted = np.roll(pair, shift, axis=1)
+        legacy_shift_counts.append(
+            int(np.sum(np.abs(legacy_winding(np.angle(shifted)))))
+        )
+        periodic_shift_counts.append(
+            int(np.sum(np.abs(periodic_winding(np.angle(shifted)))))
+        )
+
+    result = {
+        "flat_plateau_detected_peaks": int(
+            len(legacy_detect_amplitude_peaks(flat))
+        ),
+        "amplitude_rescaling": {
+            "original_detected_peaks": int(
+                len(legacy_detect_amplitude_peaks(gaussian))
+            ),
+            "half_scale_detected_peaks": int(
+                len(legacy_detect_amplitude_peaks(scaled_gaussian))
+            ),
+            "normalized_shape_correlation": float(
+                np.corrcoef(
+                    gaussian.ravel() / np.max(gaussian),
+                    scaled_gaussian.ravel()
+                    / np.max(scaled_gaussian),
+                )[0, 1]
+            ),
+        },
+        "periodic_boundary_track": {
+            "trajectory_ids": [
+                int(row[0]) for row in trajectories
+            ],
+            "next_id": int(next_id),
+            "active_ids_after_crossing": sorted(
+                int(track_id) for track_id in active
+            ),
+        },
+        "coordinate_order_dependence": {
+            "first_order_next_id": int(order_first_next),
+            "second_order_next_id": int(order_second_next),
+            "first_order_tracks": {
+                str(key): value.tolist()
+                for key, value in sorted(order_first.items())
+            },
+            "second_order_tracks": {
+                str(key): value.tolist()
+                for key, value in sorted(order_second.items())
+            },
+        },
+        "crossing_identity": {
+            "track_zero_assigned_amplitude": float(
+                crossing_trajectories[0][4]
+            ),
+            "track_one_assigned_amplitude": float(
+                crossing_trajectories[1][4]
+            ),
+            "expected_if_amplitude_identity_preserved": {
+                "track_zero": 1.0,
+                "track_one": 0.5,
+            },
+        },
+        "phase_topology_blindness": {
+            "constant_phase_peak_count": int(
+                len(legacy_detect_amplitude_peaks(np.abs(constant_phase)))
+            ),
+            "vortex_phase_peak_count": int(
+                len(legacy_detect_amplitude_peaks(np.abs(vortex_phase)))
+            ),
+            "constant_phase_periodic_defects": int(
+                np.sum(
+                    np.abs(periodic_winding(np.angle(constant_phase)))
+                )
+            ),
+            "vortex_phase_periodic_defects": int(
+                np.sum(
+                    np.abs(periodic_winding(np.angle(vortex_phase)))
+                )
+            ),
+        },
+        "topology_translation_invariance": {
+            "legacy_unique_total_defect_counts": sorted(
+                set(legacy_shift_counts)
+            ),
+            "periodic_unique_total_defect_counts": sorted(
+                set(periodic_shift_counts)
+            ),
+        },
+    }
+    assert result["flat_plateau_detected_peaks"] == size * size
+    assert result["amplitude_rescaling"]["original_detected_peaks"] > 0
+    assert result["amplitude_rescaling"]["half_scale_detected_peaks"] == 0
+    assert result["periodic_boundary_track"]["trajectory_ids"] == [0, 1]
+    assert order_first_next != order_second_next
+    assert (
+        result["crossing_identity"]["track_zero_assigned_amplitude"]
+        == 0.5
+    )
+    assert (
+        result["phase_topology_blindness"][
+            "constant_phase_peak_count"
+        ]
+        == result["phase_topology_blindness"]["vortex_phase_peak_count"]
+    )
+    assert (
+        result["phase_topology_blindness"][
+            "vortex_phase_periodic_defects"
+        ]
+        > 0
+    )
+    assert (
+        len(
+            result["topology_translation_invariance"][
+                "periodic_unique_total_defect_counts"
+            ]
+        )
+        == 1
+    )
+    assert (
+        len(
+            result["topology_translation_invariance"][
+                "legacy_unique_total_defect_counts"
+            ]
+        )
+        > 1
+    )
+    return result
+
+
+def new_observer_positive_controls() -> dict:
+    size = 64
+    flat = np.sqrt(
+        np.full((size, size), 0.2, dtype=np.float64)
+    ).astype(np.complex128)
+    gaussian = gaussian_psi(
+        size,
+        center_y=32.0,
+        center_x=32.0,
+        width=3.0,
+    )
+    scaled = 0.5 * gaussian
+    flat_count = len(envelope_detections(flat))
+    gaussian_count = len(envelope_detections(gaussian))
+    scaled_count = len(envelope_detections(scaled))
+
+    moving_tracker = GlobalTracker(size)
+    moving_counts = []
+    for frame, x in enumerate((58.0, 60.0, 62.0, 0.0, 2.0, 4.0)):
+        detections = envelope_detections(
+            gaussian_psi(
+                size,
+                center_y=32.0,
+                center_x=x,
+                width=3.0,
+            )
+        )
+        moving_counts.append(len(detections))
+        moving_tracker.update(detections, frame)
+    moving_summaries = moving_tracker.summaries()
+
+    initial = [
+        detection_for_assignment(8.0, 5.0, 1.0, (1.0, 0.0)),
+        detection_for_assignment(8.0, 9.0, 0.5, (0.0, 1.0)),
+    ]
+    crossing = [
+        detection_for_assignment(8.0, 6.0, 0.5, (0.0, 1.0)),
+        detection_for_assignment(8.0, 8.0, 1.0, (1.0, 0.0)),
+    ]
+    tracker_first = GlobalTracker(64)
+    tracker_first.update(initial, 0)
+    tracker_first.update(crossing, 1)
+    tracker_second = GlobalTracker(64)
+    tracker_second.update(list(reversed(initial)), 0)
+    tracker_second.update(list(reversed(crossing)), 1)
+    summaries_first = tracker_first.summaries()
+    summaries_second = tracker_second.summaries()
+
+    pair = planar_vortex_pair(32)
+    legacy_counts = []
+    periodic_counts = []
+    topology_tracker = GlobalTracker(32)
+    topology_frame_counts = []
+    for frame, shift in enumerate((9, 10, 11, 12, 13, 14)):
+        shifted = np.roll(pair, shift, axis=1)
+        legacy_counts.append(
+            int(np.sum(np.abs(legacy_winding(np.angle(shifted)))))
+        )
+        periodic_counts.append(
+            int(np.sum(np.abs(periodic_winding(np.angle(shifted)))))
+        )
+        detections = topology_detections(shifted)
+        topology_frame_counts.append(len(detections))
+        topology_tracker.update(detections, frame)
+    topology_summaries = topology_tracker.summaries()
+
+    result = {
+        "flat_plateau_envelope_count": int(flat_count),
+        "scale_equivariance": {
+            "original_envelope_count": int(gaussian_count),
+            "half_scale_envelope_count": int(scaled_count),
+        },
+        "periodic_moving_gaussian": {
+            "detections_per_frame": moving_counts,
+            "track_count": int(len(moving_summaries)),
+            "track_summaries": moving_summaries,
+        },
+        "global_assignment": {
+            "order_invariant": summaries_first == summaries_second,
+            "first_order": summaries_first,
+            "reversed_order": summaries_second,
+            "identity_final_masses": {
+                str(row["id"]): row["final_mass"]
+                for row in summaries_first
+            },
+        },
+        "periodic_topology": {
+            "legacy_counts_during_edge_crossing": legacy_counts,
+            "periodic_counts_during_edge_crossing": periodic_counts,
+            "detections_per_frame": topology_frame_counts,
+            "track_summaries": topology_summaries,
+        },
+    }
+    assert flat_count == 0
+    assert gaussian_count == scaled_count == 1
+    assert moving_counts == [1] * len(moving_counts)
+    assert len(moving_summaries) == 1
+    assert moving_summaries[0]["observations"] == len(moving_counts)
+    assert summaries_first == summaries_second
+    assert result["global_assignment"]["identity_final_masses"] == {
+        "0": 1.0,
+        "1": 0.5,
+    }
+    assert len(set(periodic_counts)) == 1
+    assert len(set(legacy_counts)) > 1
+    assert len(set(topology_frame_counts)) == 1
+    assert all(
+        row["observations"] == len(topology_frame_counts)
+        for row in topology_summaries
+    )
+    return result
+
+
+def null_calibration() -> dict:
+    maximum_observations = []
+    maximum_spans = []
+    track_counts = []
+    detections_per_frame = []
+    for sequence_index in range(NULL_SEQUENCES):
+        rng = np.random.RandomState(NULL_SEED_BASE + sequence_index)
+        tracker = GlobalTracker(NULL_SIZE)
+        sequence_detections = []
+        for frame in range(NULL_FRAMES):
+            raw = gaussian_filter(
+                rng.normal(size=(NULL_SIZE, NULL_SIZE)),
+                sigma=0.6,
+                mode="wrap",
+            )
+            density = np.clip(0.2 + 0.02 * raw, 1e-8, None)
+            psi = np.sqrt(density).astype(np.complex128)
+            detections = envelope_detections(psi)
+            sequence_detections.append(len(detections))
+            tracker.update(detections, frame)
+        summaries = tracker.summaries()
+        maximum_observations.append(
+            max((row["observations"] for row in summaries), default=0)
+        )
+        maximum_spans.append(
+            max((row["span_frames"] for row in summaries), default=0)
+        )
+        track_counts.append(len(summaries))
+        detections_per_frame.extend(sequence_detections)
+    observation_threshold = int(
+        np.quantile(maximum_observations, 0.99, method="higher")
+    )
+    span_threshold = int(
+        np.quantile(maximum_spans, 0.99, method="higher")
+    )
+    return {
+        "sequences": NULL_SEQUENCES,
+        "frames_per_sequence": NULL_FRAMES,
+        "size": NULL_SIZE,
+        "maximum_track_observations_by_sequence": maximum_observations,
+        "maximum_track_span_by_sequence": maximum_spans,
+        "tracks_per_sequence": track_counts,
+        "detections_per_frame_summary": {
+            "minimum": int(min(detections_per_frame)),
+            "median": float(np.median(detections_per_frame)),
+            "maximum": int(max(detections_per_frame)),
+        },
+        "familywise_99_percent_observation_threshold": (
+            observation_threshold
+        ),
+        "familywise_99_percent_span_threshold": span_threshold,
+    }
+
+
+def main() -> None:
+    legacy = legacy_controls()
+    positive = new_observer_positive_controls()
+    null = null_calibration()
+    gate_3b = {
+        "observer_is_source_blind": True,
+        "observation_interval_must_be_fixed_in_physical_time": True,
+        "envelope_candidate_requirements": {
+            "observations_strictly_greater_than_iid_null_99_percent": (
+                null["familywise_99_percent_observation_threshold"]
+            ),
+            "span_strictly_greater_than_iid_null_99_percent": (
+                null["familywise_99_percent_span_threshold"]
+            ),
+            "coverage_minimum": 0.9,
+            "median_adjacent_shape_correlation_minimum": 0.6,
+            "mass_coefficient_of_variation_maximum": 0.5,
+            "radius_coefficient_of_variation_maximum": 0.5,
+        },
+        "topological_candidate_requirements": {
+            "periodic_signed_charge_required": True,
+            "charge_retention_fraction_minimum": 0.9,
+            "same_null_lifetime_controls_required": True,
+        },
+        "mandatory_controls": [
+            "deterministic and mean-only counterfactuals",
+            "time-shuffled actual frames",
+            "phase-randomized spatial surrogates",
+            "dt refinement at equal physical time",
+            "grid refinement at equal physical domain",
+            "periodic and open-or-absorbing boundary sensitivity",
+            "uniform and nonuniform kappa",
+            "caps disabled with finite-field assertion",
+            "seeded Gaussian blob and neutral vortex-pair positive challenges",
+        ],
+        "stop_rule": (
+            "Do not run collision claims unless one single-object candidate "
+            "passes lifetime, shape, mass-or-charge, cap, time, grid, and "
+            "boundary controls."
+        ),
+        "interpretation_boundary": (
+            "Passing Gate 3B establishes a numerical localized object "
+            "candidate, not a fundamental particle."
+        ),
+    }
+    result = {
+        "schema": SCHEMA,
+        "protocol_version": PROTOCOL_VERSION,
+        "audit_binding": {
+            "core_commit": AUDITED_CORE_COMMIT,
+            "lineum_py_git_blob": AUDITED_LINEUM_PY_GIT_BLOB,
+            "vfx_program_git_blob": AUDITED_VFX_PROGRAM_GIT_BLOB,
+            "vfx_test_git_blob": AUDITED_VFX_TEST_GIT_BLOB,
+        },
+        "synthetic_protocol_correction_log": [
+            {
+                "stage": "pre-physics positive-control calibration",
+                "change": (
+                    "Gaussian peak density changed from 0.16 to 0.056 so "
+                    "the original peak is above the legacy amplitude "
+                    "threshold and its exact half-scale copy is below it."
+                ),
+                "reason": (
+                    "The initial 0.16 control made both copies exceed 0.12 "
+                    "and therefore could not test absolute-threshold scale "
+                    "sensitivity."
+                ),
+                "physical_lineum_data_seen": False,
+            },
+            {
+                "stage": "pre-physics null calibration",
+                "change": (
+                    "Robust contrast threshold changed from 6.0 to 3.5 "
+                    "median absolute-deviation standard deviations."
+                ),
+                "reason": (
+                    "At 6.0 the declared IID null produced no detections in "
+                    "24 x 40 frames, leaving a degenerate zero lifetime "
+                    "threshold. At 3.5 the null retains rare one-frame false "
+                    "positives and therefore supplies a nonzero lifetime "
+                    "challenge."
+                ),
+                "physical_lineum_data_seen": False,
+            }
+        ],
+        "legacy_observer_contract": {
+            "amplitude_threshold": LEGACY_AMPLITUDE_THRESHOLD,
+            "maximum_filter_size": LEGACY_NEIGHBORHOOD_SIZE,
+            "greedy_link_distance_pixels_strictly_less_than": (
+                LEGACY_LINK_DISTANCE
+            ),
+            "uses_amplitude_only_for_detection": True,
+            "uses_phase_or_topological_charge_for_particle_identity": False,
+            "uses_periodic_distance_for_tracking": False,
+            "allows_missing_observations": False,
+        },
+        "legacy_exact_controls": legacy,
+        "replacement_observer_contract": {
+            "background_sigma_fraction_of_grid": (
+                BACKGROUND_SIGMA_FRACTION
+            ),
+            "robust_z_threshold": ROBUST_Z_THRESHOLD,
+            "minimum_component_area_fraction": (
+                MIN_COMPONENT_AREA_FRACTION
+            ),
+            "maximum_component_area_fraction": (
+                MAX_COMPONENT_AREA_FRACTION
+            ),
+            "minimum_compactness": MIN_COMPACTNESS,
+            "patch_radius_fraction_of_grid": PATCH_RADIUS_FRACTION,
+            "maximum_link_fraction_of_grid_per_observation": (
+                MAX_LINK_FRACTION
+            ),
+            "maximum_mass_ratio": MAX_MASS_RATIO,
+            "minimum_shape_correlation": MIN_SHAPE_CORRELATION,
+            "maximum_missed_frames": MAX_MISSED_FRAMES,
+            "global_assignment": "Hungarian minimum-cost matching",
+            "distance_geometry": "toroidal",
+            "topology_geometry": "all periodic plaquettes",
+        },
+        "replacement_positive_controls": positive,
+        "iid_noise_null_calibration": null,
+        "frozen_gate_3b_protocol": gate_3b,
+        "verdict": {
+            "legacy_observer_validates_particle_identity": False,
+            "replacement_observer_passes_declared_synthetic_controls": True,
+            "physical_lineum_trajectory_evaluated": False,
+            "reason_physics_is_deferred": (
+                "Observer validity is a prerequisite; Gate 3B must use the "
+                "frozen protocol without retuning on source labels."
+            ),
+        },
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "scipy": scipy.__version__,
+        },
+    }
+    print(json.dumps(plain(result), indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### K.1 Full reference output
+
+```json
+{
+  "audit_binding": {
+    "core_commit": "ce2940ec96dfa3c24fae5dad51f5ec14e285666f",
+    "lineum_py_git_blob": "a57171a633b85d02e4c2047d367cab5b534181aa",
+    "vfx_program_git_blob": "8df7a63e87446cc9c3de5db9cbeef094b0a4f675",
+    "vfx_test_git_blob": "6dcc111ad9ebe9624b490eaebec0c651c8796511"
+  },
+  "frozen_gate_3b_protocol": {
+    "envelope_candidate_requirements": {
+      "coverage_minimum": 0.9,
+      "mass_coefficient_of_variation_maximum": 0.5,
+      "median_adjacent_shape_correlation_minimum": 0.6,
+      "observations_strictly_greater_than_iid_null_99_percent": 1,
+      "radius_coefficient_of_variation_maximum": 0.5,
+      "span_strictly_greater_than_iid_null_99_percent": 1
+    },
+    "interpretation_boundary": "Passing Gate 3B establishes a numerical localized object candidate, not a fundamental particle.",
+    "mandatory_controls": [
+      "deterministic and mean-only counterfactuals",
+      "time-shuffled actual frames",
+      "phase-randomized spatial surrogates",
+      "dt refinement at equal physical time",
+      "grid refinement at equal physical domain",
+      "periodic and open-or-absorbing boundary sensitivity",
+      "uniform and nonuniform kappa",
+      "caps disabled with finite-field assertion",
+      "seeded Gaussian blob and neutral vortex-pair positive challenges"
+    ],
+    "observation_interval_must_be_fixed_in_physical_time": true,
+    "observer_is_source_blind": true,
+    "stop_rule": "Do not run collision claims unless one single-object candidate passes lifetime, shape, mass-or-charge, cap, time, grid, and boundary controls.",
+    "topological_candidate_requirements": {
+      "charge_retention_fraction_minimum": 0.9,
+      "periodic_signed_charge_required": true,
+      "same_null_lifetime_controls_required": true
+    }
+  },
+  "iid_noise_null_calibration": {
+    "detections_per_frame_summary": {
+      "maximum": 1,
+      "median": 0.0,
+      "minimum": 0
+    },
+    "familywise_99_percent_observation_threshold": 1,
+    "familywise_99_percent_span_threshold": 1,
+    "frames_per_sequence": 40,
+    "maximum_track_observations_by_sequence": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "maximum_track_span_by_sequence": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sequences": 24,
+    "size": 32,
+    "tracks_per_sequence": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "legacy_exact_controls": {
+    "amplitude_rescaling": {
+      "half_scale_detected_peaks": 0,
+      "normalized_shape_correlation": 1.0,
+      "original_detected_peaks": 1
+    },
+    "coordinate_order_dependence": {
+      "first_order_next_id": 3,
+      "first_order_tracks": {
+        "0": [
+          8.0,
+          7.0
+        ],
+        "2": [
+          8.0,
+          6.0
+        ]
+      },
+      "second_order_next_id": 2,
+      "second_order_tracks": {
+        "0": [
+          8.0,
+          6.0
+        ],
+        "1": [
+          8.0,
+          7.0
+        ]
+      }
+    },
+    "crossing_identity": {
+      "expected_if_amplitude_identity_preserved": {
+        "track_one": 0.5,
+        "track_zero": 1.0
+      },
+      "track_one_assigned_amplitude": 1.0,
+      "track_zero_assigned_amplitude": 0.5
+    },
+    "flat_plateau_detected_peaks": 256,
+    "periodic_boundary_track": {
+      "active_ids_after_crossing": [
+        1
+      ],
+      "next_id": 2,
+      "trajectory_ids": [
+        0,
+        1
+      ]
+    },
+    "phase_topology_blindness": {
+      "constant_phase_peak_count": 1,
+      "constant_phase_periodic_defects": 0,
+      "vortex_phase_peak_count": 1,
+      "vortex_phase_periodic_defects": 2
+    },
+    "topology_translation_invariance": {
+      "legacy_unique_total_defect_counts": [
+        1,
+        2
+      ],
+      "periodic_unique_total_defect_counts": [
+        2
+      ]
+    }
+  },
+  "legacy_observer_contract": {
+    "allows_missing_observations": false,
+    "amplitude_threshold": 0.12,
+    "greedy_link_distance_pixels_strictly_less_than": 3.0,
+    "maximum_filter_size": 3,
+    "uses_amplitude_only_for_detection": true,
+    "uses_periodic_distance_for_tracking": false,
+    "uses_phase_or_topological_charge_for_particle_identity": false
+  },
+  "protocol_version": "1.0-frozen-before-physics",
+  "replacement_observer_contract": {
+    "background_sigma_fraction_of_grid": 0.0625,
+    "distance_geometry": "toroidal",
+    "global_assignment": "Hungarian minimum-cost matching",
+    "maximum_component_area_fraction": 0.08,
+    "maximum_link_fraction_of_grid_per_observation": 0.08,
+    "maximum_mass_ratio": 4.0,
+    "maximum_missed_frames": 1,
+    "minimum_compactness": 0.15,
+    "minimum_component_area_fraction": 0.00075,
+    "minimum_shape_correlation": 0.35,
+    "patch_radius_fraction_of_grid": 0.08,
+    "robust_z_threshold": 3.5,
+    "topology_geometry": "all periodic plaquettes"
+  },
+  "replacement_positive_controls": {
+    "flat_plateau_envelope_count": 0,
+    "global_assignment": {
+      "first_order": [
+        {
+          "charge": 0,
+          "coverage": 1.0,
+          "final_mass": 1.0,
+          "final_x": 8.0,
+          "final_y": 8.0,
+          "first_frame": 0,
+          "id": 0,
+          "kind": "envelope",
+          "last_frame": 1,
+          "mass_coefficient_of_variation": 0.0,
+          "median_shape_correlation": 1.0,
+          "observations": 2,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 2
+        },
+        {
+          "charge": 0,
+          "coverage": 1.0,
+          "final_mass": 0.5,
+          "final_x": 6.0,
+          "final_y": 8.0,
+          "first_frame": 0,
+          "id": 1,
+          "kind": "envelope",
+          "last_frame": 1,
+          "mass_coefficient_of_variation": 0.0,
+          "median_shape_correlation": 1.0,
+          "observations": 2,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 2
+        }
+      ],
+      "identity_final_masses": {
+        "0": 1.0,
+        "1": 0.5
+      },
+      "order_invariant": true,
+      "reversed_order": [
+        {
+          "charge": 0,
+          "coverage": 1.0,
+          "final_mass": 1.0,
+          "final_x": 8.0,
+          "final_y": 8.0,
+          "first_frame": 0,
+          "id": 0,
+          "kind": "envelope",
+          "last_frame": 1,
+          "mass_coefficient_of_variation": 0.0,
+          "median_shape_correlation": 1.0,
+          "observations": 2,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 2
+        },
+        {
+          "charge": 0,
+          "coverage": 1.0,
+          "final_mass": 0.5,
+          "final_x": 6.0,
+          "final_y": 8.0,
+          "first_frame": 0,
+          "id": 1,
+          "kind": "envelope",
+          "last_frame": 1,
+          "mass_coefficient_of_variation": 0.0,
+          "median_shape_correlation": 1.0,
+          "observations": 2,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 2
+        }
+      ]
+    },
+    "periodic_moving_gaussian": {
+      "detections_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "track_count": 1,
+      "track_summaries": [
+        {
+          "charge": 0,
+          "coverage": 1.0,
+          "final_mass": 20.36844695458182,
+          "final_x": 4.0,
+          "final_y": 32.0,
+          "first_frame": 0,
+          "id": 0,
+          "kind": "envelope",
+          "last_frame": 5,
+          "mass_coefficient_of_variation": 2.66434637717041e-16,
+          "median_shape_correlation": 1.0,
+          "observations": 6,
+          "radius_coefficient_of_variation": 1.289264183500798e-16,
+          "span_frames": 6
+        }
+      ]
+    },
+    "periodic_topology": {
+      "detections_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "legacy_counts_during_edge_crossing": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "periodic_counts_during_edge_crossing": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "track_summaries": [
+        {
+          "charge": -1,
+          "coverage": 1.0,
+          "final_mass": 5.301753650770037,
+          "final_x": 2.5,
+          "final_y": 20.5,
+          "first_frame": 0,
+          "id": 0,
+          "kind": "topology",
+          "last_frame": 5,
+          "mass_coefficient_of_variation": 1.67525403518348e-16,
+          "median_shape_correlation": 1.0,
+          "observations": 6,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 6
+        },
+        {
+          "charge": 1,
+          "coverage": 1.0,
+          "final_mass": 4.2802516973552285,
+          "final_x": 25.5,
+          "final_y": 11.5,
+          "first_frame": 0,
+          "id": 1,
+          "kind": "topology",
+          "last_frame": 5,
+          "mass_coefficient_of_variation": 0.0,
+          "median_shape_correlation": 1.0,
+          "observations": 6,
+          "radius_coefficient_of_variation": 0.0,
+          "span_frames": 6
+        }
+      ]
+    },
+    "scale_equivariance": {
+      "half_scale_envelope_count": 1,
+      "original_envelope_count": 1
+    }
+  },
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "schema": "lineum.linon-observer-gate-3a.v1",
+  "synthetic_protocol_correction_log": [
+    {
+      "change": "Gaussian peak density changed from 0.16 to 0.056 so the original peak is above the legacy amplitude threshold and its exact half-scale copy is below it.",
+      "physical_lineum_data_seen": false,
+      "reason": "The initial 0.16 control made both copies exceed 0.12 and therefore could not test absolute-threshold scale sensitivity.",
+      "stage": "pre-physics positive-control calibration"
+    },
+    {
+      "change": "Robust contrast threshold changed from 6.0 to 3.5 median absolute-deviation standard deviations.",
+      "physical_lineum_data_seen": false,
+      "reason": "At 6.0 the declared IID null produced no detections in 24 x 40 frames, leaving a degenerate zero lifetime threshold. At 3.5 the null retains rare one-frame false positives and therefore supplies a nonzero lifetime challenge.",
+      "stage": "pre-physics null calibration"
+    }
+  ],
+  "verdict": {
+    "legacy_observer_validates_particle_identity": false,
+    "physical_lineum_trajectory_evaluated": false,
+    "reason_physics_is_deferred": "Observer validity is a prerequisite; Gate 3B must use the frozen protocol without retuning on source labels.",
+    "replacement_observer_passes_declared_synthetic_controls": true
+  }
 }
 ```
