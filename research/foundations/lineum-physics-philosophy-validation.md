@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 1.1
+**Research version:** 1.2
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all eleven embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, and the synthetic linon-observer controls; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for object existence in actual Lineum dynamics, and for the other untested hypotheses proposed for future work
+**Reproducibility:** all twelve embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, and the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, and for the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; and (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; and (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -37,8 +37,10 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | The current F0 source has no causal effect on the visible numerical morphology. | **Contradicted in the declared nonlinear lane** | Relative late residual RMS was \(0.02600\) against exactly zero for the conditional-mean control in the independent post-revision audit. Removing endogenous source-mean feedback reduced it to \(0.01356\). |
 | The current F0 morphological effect survives time refinement as a nonzero continuous forcing. | **Not supported** | A three-point navigation fit gave residual RMS \(\propto h^{0.596}\) for faithful F0 and \(\propto h^{0.541}\) for open-loop matched F0, while Gaussian, Poisson, state/history-event, and colored-memory controls were approximately step-independent. |
 | Final morphology alone identifies whether memoryless forcing is F0, Gaussian, independent-Poisson, or state/history-event driven. | **Not demonstrated** | A frozen centroid classifier scored \(8/48=16.7\%\) in the post-revision audit against a \(25\%\) balanced chance level. Direct temporal and event observables remain informative even when final morphology is not. |
-| Historical linon trajectory IDs demonstrate persistent object identity. | **Contradicted as an observer claim** | The audited detector finds absolute-amplitude local maxima and links them greedily by nonperiodic pixel distance. Exact controls produce 256 detections on a flat plateau, lose an unchanged shape after amplitude rescaling, split one boundary-crossing path, depend on coordinate order, swap crossing identities, and omit a translated boundary vortex. These failures concern the old observer; actual Lineum object existence remains untested. |
+| Historical linon trajectory IDs demonstrate persistent object identity. | **Contradicted as an observer claim** | The audited detector finds absolute-amplitude local maxima and links them greedily by nonperiodic pixel distance. Exact controls produce 256 detections on a flat plateau, lose an unchanged shape after amplitude rescaling, split one boundary-crossing path, depend on coordinate order, swap crossing identities, and omit a translated boundary vortex. In the actual M0 counterfactual it eventually labels all 1,024 cells of a uniform field as peaks. The first actual-dynamics Gate-3B lane found no replacement-observer identity candidate; broader object existence remains unresolved. |
 | A source-blind observer can pass tests before seeing Lineum physics. | **Implemented and synthetically characterized** | A frozen replacement uses relative density contrast, periodic components and winding, toroidal distance, shape/mass/charge attributes, and global assignment. It passes the declared synthetic controls. This validates a measuring protocol, not a linon or particle. |
+| The tested exact-vacuum F0 lane produces no organized phase structure. | **Contradicted in the declared Gate-3B screen** | All 12 runs produced a transient periodic winding-defect burst with zero net topological charge in every frame. This establishes numerical topological activity, not stable identity, a particle, or physical quantum foam. |
+| The frozen observer identifies a recurrent linon in the tested F0 lane. | **Not supported in the declared Gate-3B screen** | Zero of 12 seeds passed the envelope screen and zero of 12 passed the topological identity screen; nine were required. Independent cell-phase nulls produced longer apparent track IDs than the actual dynamics, so topology identity is non-identifying in this dense regime. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -76,7 +78,8 @@ Until the gates below are met, we recommend:
 10. **do not identify foam-like morphology with deterministic chaos in the currently tested regimes; describe initial branching, dissipative self-organization, stochastic forcing, event processes, memory, unresolved variables, and quantum amplitudes as separate candidates until a discriminator selects among them**.
 11. **describe the current random source as the finite-step F0 software contract, not as verified quantum foam; use the validated signature protocol only within its temporal and amplitude resolution, and preserve the documented equivalences between short memory and white noise, high-rate events and Gaussian forcing, and weak dependence and independent events**.
 12. **state that current F0 randomness and its state-dependent feedback causally refresh the tested numerical morphology, but do not promote that mechanism as continuous quantum forcing: its late morphological residual decreases under time refinement, and final images do not reliably distinguish it from several variance-matched memoryless alternatives**.
-13. **do not treat historical peak counts, trajectory IDs, contact graphs, or injected vortex presets as evidence of linons; first require the frozen source-blind observer to pass an actual-dynamics gate against time-shuffled, phase-randomized, cap-free, time-step, grid, boundary, source, and permeability controls**.
+13. **do not treat historical peak counts, trajectory IDs, contact graphs, or injected vortex presets as evidence of linons; the first frozen actual-dynamics screen found transient net-neutral winding defects but no recurrent object above correlated nulls, so retain “topological activity” and “particle identity” as separate claims**.
+14. **do not tune time step, grid, boundary, permeability, source law, or collision behavior around a candidate that failed the primary actual-versus-surrogate identity screen; first replace or extend the dense-topology identity observable and validate it on adversarial birth, annihilation, crossing, splitting, and merging controls without using Lineum labels**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -86,7 +89,7 @@ Until the gates below are met, we recommend:
 | "Discrete steps are a reality." | "Discrete update is a candidate microdynamics and numerical method." | empirically distinguish the ontic discreteness from the regulator |
 | "Changing `dt` only changes simulation precision." | "This is true for the validated deterministic profile, not for the legacy \(\phi\)-diffusion or unresolved stochastic source." | convergence of every retained deterministic and stochastic term at fixed physical time |
 | "Coordinates are integer to arbitrarily large distances." | "Each run has a finite periodic domain; enlarging the box is a numerical sequence of finite models." | define the global topology and explain its relation to the rejection of actual infinity |
-| "Linon is a particle." | "A linon is a candidate localized excitation; historical peak tracks do not yet establish one persistent object." | source-blind identity tracking above correlated nulls, cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
+| "Linon is a particle." | "The tested source produces transient net-neutral winding defects; neither historical peak tracks nor the first frozen actual-dynamics screen establishes one persistent linon." | a topology-aware source-blind identity observable that beats correlated phase nulls, followed by cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
 | "Frequency gives mass \(m=hf/c^2\)." | "Under a chosen SI calibration, a frequency can be converted to a mass-equivalent energy." | a dynamically derived energy, independent calibration of \(\Delta t\), and independent tests of inertial and gravitational mass |
 | "The model is isotropic." | "The chosen spectral space operator is angularly isotropic on the periodic box; local stencils have a measured residual anisotropy." | rotational and Lorentz Ward identities or the experimentally sufficient emergent limit |
 | "The model is a local cellular automaton." | "An explicit finite stencil can be local; a spectral exponential has a global real-space kernel." | one canonical update law with an exact discrete causal cone |
@@ -796,10 +799,218 @@ particle.
 **Verdict [IMPLEMENTATION AUDIT + CALCULATED]:** the historical observer is
 insufficient evidence for linon identity. The replacement observer passes its
 declared synthetic controls and supplies a frozen protocol for the actual
-dynamics. Gate 3A validates the measuring method only. Whether current Lineum
-dynamics produces even one robust object remains untested and is the subject
-of Gate 3B. No production code, runtime default, or whitepaper particle claim
+dynamics. Gate 3A validates the measuring method only. The first actual-dynamics
+application and its correlated nulls are reported next; they do not establish a
+robust object. No production code, runtime default, or whitepaper particle claim
 should change on the synthetic result alone.
+
+### 3.14 The tested source creates transient neutral winding defects, not an identified linon
+
+**Result first.** The frozen Gate-3A observer was applied without retuning to
+the committed nonlinear NumPy dynamics in an exact-vacuum primary screen.
+The current F0 source generated abundant periodic phase-winding defects in all
+12 seeded runs, but no recurrent envelope candidate and no individually
+identifiable topological candidate passed the preregistered
+actual-versus-surrogate rule. This is positive evidence for transient numerical
+topological activity and negative evidence for the current particle claim. It
+is not evidence that no vortex, soliton, or future stabilized object can exist.
+
+#### Bound numerical law and source counterfactuals
+
+The screen is bound to candidate-physics revision
+`7657f1edb6bc0cf53c4a473999dedbd7ca77d13b` and numerical-update blob
+`cc6f4a56448f7176438da406b9b8ab9b4fca2dfa`. It uses the implemented
+nonlinear diffusion map with mode coupling enabled and opt-in
+\(h\)-scaled \(\phi\) diffusion. This is a current experimental lane, not a
+declaration that the map is the final physical law and not the historical
+default time contract.
+
+Every primary run starts from
+
+\[
+\psi_0=0,\qquad
+\phi_0=0,\qquad
+\mu_0=0,\qquad
+\kappa=1
+\]
+
+on a periodic \(32\times32\) grid. With
+\(A_n=|\psi_n|\), the implemented source parameters are
+
+\[
+p_n
+=
+\kappa\,
+\operatorname{sigmoid}
+\!\left(5[A_n+|\nabla A_n|]\right),
+\qquad
+a_n
+=
+\operatorname{clip}(0.03+0.02A_n,0,10),
+\qquad
+u_n=e^{i\arg\psi_n}.
+\]
+
+The actual F0 increment is
+
+\[
+\Delta\psi_n^{\mathrm{F0}}
+=
+h\,[a_n B_n+Z_n]u_n,
+\qquad
+B_n\sim\operatorname{Bernoulli}(p_n),
+\qquad
+Z_n\sim
+\operatorname{clip}\!\left(\mathcal N(0,0.005^2),-1,1\right).
+\]
+
+The D0 counterfactual sets the complete increment to zero. The M0
+counterfactual supplies the conditional mean
+
+\[
+\Delta\psi_n^{\mathrm{M0}}
+=h\,a_n p_n u_n
+\]
+
+along the deterministic conditional-mean trajectory. M0 is a mathematical
+counterfactual, not a separately exposed runtime switch. After the increment,
+the same ordered nonlinear interaction, drift, damping, \(\psi\)-diffusion,
+mode-coupling transfer to \(\phi\), and \(h\)-scaled \(\phi\)-diffusion update
+is used in every lane. The complete executable program below records the exact
+ordered operations rather than treating these compact equations as an
+alternative implementation.
+
+#### Frozen sample, observer, nulls, and pass rule
+
+The primary horizon is \(T=60\), the step is \(h=0.1\), and fields are observed
+every one unit of physical simulation time, including the initial frame:
+61 observations per sequence. F0 uses the 12 consecutive seeds
+`2026231000` through `2026231011`. The primary runs disable the amplitude,
+gradient, and \(\phi\) caps and assert finite fields at every step.
+
+Envelope identity is challenged by three independently generated surrogate
+families, each with eight replicates per actual seed: shuffled frame order,
+an independent random torus shift in every frame, and independently randomized
+Fourier phase with the frame norm restored. Topological identity is challenged
+by one surrogate per actual seed in three families: shuffled frame order,
+random torus shifts, and independent cell phases that preserve every amplitude
+but destroy phase history. Each threshold is the higher-method familywise 99th
+percentile of the maximum track statistic. A candidate must be strictly above
+the most demanding family threshold, not merely equal to it.
+
+An envelope track must additionally start after the initial frame, span at
+least 15 physical units, cover at least 90% of its frame span, have median
+adjacent shape correlation at least 0.6, and have mass and radius coefficients
+of variation no greater than 0.5. A topological track must start after the
+initial frame, meet the same lifetime and coverage conditions, and preserve
+signed charge \(|q|=1\). A recurrent result requires passing candidates in at
+least \(9/12\) F0 seeds.
+
+The development protocol already required a phase-randomized null if long
+topological tracks appeared. The first run triggered that branch. The recorded
+revision added the required topology surrogates and compacted the machine
+output; it did not change the observer, numerical dynamics, candidate
+thresholds, seed prevalence, or any actual-data-dependent parameter.
+
+#### Exact vacuum, mean-only input, and a seeded positive challenge
+
+| Lane or control | Envelope result | Topology result | Historical peak result | Interpretation |
+|---|---:|---:|---:|---|
+| D0, exact vacuum and no source | 0 detections | 0 defects | 0 peaks | exact vacuum is an invariant state in this lane |
+| M0, exact vacuum with conditional mean | 0 detections | 0 defects | eventually 1,024 peaks per frame | the field becomes spatially uniform; the old absolute-maximum detector mistakes every cell for a peak |
+| D0, deliberately seeded smooth structure | one track for 61/61 observations | 0 defects | 0 peaks | the replacement envelope channel can follow a known persistent bump; this is seeded structure, not emergence |
+
+M0 reached maximum \(|\psi|=2.51738\) and maximum
+\(|\phi|=0.0897535\) while remaining finite. Its old-observer result is an
+actual-dynamics counterexample to interpreting historical peak counts as an
+object count: a uniform field contains no localized envelope, yet every one of
+the 1,024 cells becomes an equal absolute maximum.
+
+#### F0 produces a transient topological burst but almost no envelope candidate
+
+Eleven of the 12 F0 runs had no envelope detection in any observed frame. One
+run had one detection in one frame. The combined envelope null required more
+than four observations and a span strictly greater than four; therefore no F0
+seed came close to passing the full envelope rule.
+
+The phase channel told a different but bounded story:
+
+| F0 topology statistic across 12 seeds | Measured result |
+|---|---:|
+| peak winding-defect count in a sequence | 170–220 |
+| mean peak winding-defect count | 197 |
+| last time with a nonzero defect count | 20–45 |
+| mean last nonzero time | 30.8333 |
+| longest actual track length | 20–45 observations |
+| maximum absolute net charge in every seed | 0 |
+
+Thus the current source creates a dense, transient, globally neutral defect
+burst. It does not produce a stationary late-time defect population over the
+tested \(T=60\) horizon: the last nonzero frame occurs between time 20 and 45
+even though F0 forcing continues.
+
+#### The dense-topology tracker cannot establish individual identity
+
+| Topology surrogate | Sequences | 99% maximum track observations | 99% maximum span |
+|---|---:|---:|---:|
+| shuffled time | 12 | 8 | 13 |
+| independent torus shift per frame | 12 | 15 | 19 |
+| independent cell phase, exact amplitude preserved | 12 | 59 | 60 |
+
+The strongest combined rule therefore required more than 59 observations and
+a span strictly greater than 60. The longest actual track had 45 observations.
+More importantly, the independent-cell-phase null has no continuing phase
+identity by construction, yet its dense random defects let the tracker
+percolate an apparent ID through 55–59 observations and the entire 60-unit
+span. The present topology tracker is therefore **non-identifying in this
+dense regime**. The result does not say that the detected winding defects are
+mathematically unreal; it says that their individual histories cannot be
+inferred from the current nearest-compatible assignment.
+
+No trajectory figure is presented as evidence because drawing these
+non-identifying IDs as continuous paths would visually imply the very identity
+that the null test rejects. The full per-frame counts, compact track summaries,
+surrogate maxima, and executable reconstruction are retained in the machine
+output instead.
+
+#### Caps and runtime reconstruction do not explain the result
+
+The first F0 seed was run for all 600 steps with the default finite caps and
+with caps replaced by infinity, using identical random streams. The maximum
+difference was exactly zero for both \(\psi\) and \(\phi\). Across all
+cap-disabled F0 runs, maximum \(|\psi|\) remained between 2.41671 and 2.48757
+and maximum \(|\phi|\) between 0.0832795 and 0.0886824, far below the default
+caps of \(10^6\).
+
+An external clean committed-runtime comparison used the same complete vacuum
+state, `RandomState` stream, \(h\), and ordered operations for 20 steps. The
+maximum differences between the committed NumPy runtime and the standalone
+reconstruction were \(3.47\times10^{-17}\) for \(\psi\) and
+\(1.27\times10^{-21}\) for \(\phi\), consistent with floating-point ordering
+rather than a different numerical law.
+
+#### Stop decision and exact scope
+
+Zero of 12 F0 seeds passed the envelope screen and zero of 12 passed the
+topological identity screen; nine were required. The preregistered stop rule
+therefore prevents candidate-centered \(h\), grid, boundary, permeability,
+source-law, and collision studies. Running those sensitivities after selecting
+or retuning a favorable failed track would convert a blind test into
+post-selection.
+
+The current nonlinear NumPy lane also has no implemented open or absorbing
+boundary comparator. This missing comparator would have prevented a complete
+Gate-3B pass even if a primary candidate had survived, because a periodic box
+can recycle an object or its field through its own images.
+
+**Verdict [CALCULATED + NEGATIVE RESULT]:** the tested F0 dynamics produces
+transient net-neutral periodic winding defects, but no source-blind recurrent
+envelope candidate and no resolved individual topological identity. The
+historical peak observer is further contradicted by its 1,024 false peaks on
+the M0 uniform field. A numerical localized object, linon, or physical particle
+has not been demonstrated. The next admissible step is an observer-design
+gate for dense topological birth, annihilation, crossing, splitting, and
+merging—not parameter tuning, collision claims, or production-physics changes.
 
 ---
 
@@ -1687,9 +1898,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. These results validate a bounded software discriminator, not a physical ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
+**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. The Gate-3B screen adds a distinct observation: exact-vacuum F0 creates a transient net-neutral winding-defect burst in all 12 runs, while D0 exact vacuum stays exactly empty. This supports source-driven topological activity in the tested finite-step lane, not a physical quantum vacuum or a stable particle. These results validate bounded software discriminators, not an ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** Gate 3A has now frozen and synthetically validated a source-blind envelope/topology observer. Gate 3B must apply that unchanged observer to actual deterministic, mean-only, F0, and F1–F5 dynamics from matched complete states and test whether any candidate preserves identity, lifetime, localization without a cap, an energy or charge proxy, and motion when \(h\), grid size, initial state, source law, boundary condition, and nonuniform \(\kappa\) are changed. Retain direct temporal and event observables so a visually persistent spot is not mistaken for one physical object. Do not begin collision claims, modify the default runtime, or call a candidate a particle until one single-object result survives every frozen control.
+**Next read-only gate.** The first Gate-3B actual-versus-surrogate screen is complete. It found no recurrent envelope candidate, and its dense topological assignment is non-identifying because amplitude-preserving random-phase nulls percolate longer apparent IDs than the actual trajectories. The next admissible step is therefore to design and synthetically freeze an observer for topological birth, annihilation, crossing, splitting, and merging before returning to actual Lineum data. Do not tune \(h\), grid, source law, boundary condition, or \(\kappa\) around a failed selected track. Do not begin collision claims, modify the default runtime, or call a candidate a particle until one single-object result survives the complete frozen control sequence.
 
 ---
 
@@ -1729,7 +1940,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 ### Gate 3 — Particle
 
 - **Gate 3A, observer prerequisite — completed synthetically:** the historical amplitude-peak tracker fails exact identity controls; a source-blind periodic envelope/topology observer is now frozen and passes the declared positive and IID-null controls. This is not evidence that an object exists in Lineum.
-- **Gate 3B, actual dynamics — pending:** apply the unchanged observer to actual matched dynamics and declared surrogates; require lifetime beyond correlated nulls, coverage, shape, mass/radius or signed-charge stability, and robustness to source, cap, time step, grid, boundary, initial state, and nonuniform permeability.
+- **Gate 3B, primary actual-dynamics screen — completed without a candidate:** exact-vacuum F0 produced transient net-neutral winding defects, but \(0/12\) seeds passed the envelope rule and \(0/12\) passed the topological identity rule; \(9/12\) were required. Cap controls were inactive. The topology tracker is non-identifying in this dense regime because independent cell-phase nulls produce longer apparent IDs.
+- **Gate 3B, full particle gate — not passed:** the stop rule correctly prevents candidate-centered time-step, grid, boundary, source, permeability, and collision sensitivities after the primary failure. An open or absorbing comparator is also not implemented for this nonlinear lane.
+- **Observer continuation before re-entry — pending:** validate a topology-aware identity method on blind synthetic birth, annihilation, crossing, splitting, merging, and dense-null controls without using actual Lineum labels.
 - isolated stable object in open/large vacuum;
 - energy, momentum, effective mass and dissipation;
 - stability when changing resolution and box;
@@ -1777,7 +1990,7 @@ The following list supersedes the original proposal. Each question should have a
 8. What is the total dispersion relation throughout the Brillouin zone and its angular anisotropy?
 9. Does the inferred anisotropy satisfy the particular experimental Lorentz-invariance bounds without an additional fit?
 10. Is macroscopic smooth motion a property of observable fields or just an interpolation visualization?
-11. Does a source-blind observer, frozen on synthetic positive and null controls, find a stable localized object above correlated surrogates without cap, reset, noise, active background or a periodic image of itself?
+11. Does a source-blind observer, frozen on synthetic positive and null controls, find a stable localized object above correlated surrogates without cap, reset, noise, active background or a periodic image of itself? The first exact-vacuum F0 screen answered **no** for its declared envelope and topology-identity rules; the question remains open for future equations and a validated dense-topology observer.
 12. What invariant or energy minimum prevents the collapse of an object into a single cell or its dissolution?
 13. Do the size, energy and frequency of the object converge at \(a\to0\), \(\Delta t\to0\), \(L\to\infty\)?
 14. Does the object move in any direction without grid pinning and direction-dependent mass?
@@ -1829,11 +2042,12 @@ The following list supersedes the original proposal. Each question should have a
 13. **The Lyapunov audit is finite and regime-bound.** It covers seven declared deterministic regimes plus sensitivities in step, permeability, grid, and horizon. It does not exhaust every nonlinear coefficient, initial state, boundary, wave backend, dimension, or asymptotic attractor. The drift of the finite-time estimate toward zero at longer horizons precludes a claim of strictly negative asymptotic exponent.
 14. **The foam-signature protocol is an identifiability test, not an ontology detector.** Its 180/180 post-revision score concerns five declared, sufficiently separated synthetic controls. Short memory, frequent small jumps, weak dependence, state heterogeneity, coarse observations, and an incorrect deterministic backbone can make distinct mechanisms observationally equivalent. The current F0 conclusion classifies the isolated implemented source, not the complete nonlinear morphology or a physical quantum vacuum.
 15. **The source-to-morphology ablation is causal only within its declared numerical experiment.** It uses a periodic two-dimensional grid, a uniform-\(\kappa\) nonlinear backbone, synthetic matched source laws, one primary structured state, finite horizons, a frozen eight-feature classifier, and only four calibration plus four evaluation runs per navigation sensitivity. Its independent post-revision lane and bootstrap intervals strengthen the software conclusion, but they do not establish an asymptotic continuum limit, a unique microscopic source, a three-dimensional vacuum, stable objects, or quantum behavior. Open-loop input matching is exact in expectation at \(h=0.1\); the deliberately different contracts diverge away from that reference step.
-16. **The linon-observer result validates a measuring instrument, not Lineum objects.** Its positive controls are synthetic Gaussians and a constructed neutral vortex pair; its negative calibration is a finite collection of smoothed IID fields. Correlated nonlinear backgrounds can create longer accidental tracks, and the declared thresholds are protocol choices rather than physical constants. Gate 3B must retain the frozen observer and add time-shuffled, phase-randomized, source, cap, time, grid, boundary, initial-state, and permeability controls before any object claim. The observer has not yet measured an actual Lineum trajectory in this gate.
+16. **The Gate-3A linon-observer result validates a measuring instrument on sparse synthetic controls, not Lineum objects.** Its positive controls are synthetic Gaussians and a constructed neutral vortex pair; its negative calibration is a finite collection of smoothed IID fields. The Gate-3B application shows why that distinction matters: correlated dense topological backgrounds can create apparent identity even when phase history is destroyed.
+17. **The Gate-3B result is a bounded primary screen, not a global nonexistence theorem.** It covers one \(32\times32\), periodic, two-dimensional, exact-vacuum, \(h=0.1\), \(T=60\) nonlinear F0 lane and 12 seeds. Its envelope nulls are well separated from the actual result, but its topology identity rule becomes non-identifying because independent-cell-phase surrogates span almost the full record. The transient defects remain valid mathematical detections; their individual identity, stability in open space, continuum behavior, energy, momentum, interactions, and physical ontology remain unresolved.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, and replacing an inadequate historical peak tracker with a source-blind object observer that passes exact synthetic controls. The last two results are deliberately bounded: the current source and its state feedback matter numerically, but the effect shrinks under time refinement; final morphology does not identify several variance-matched memoryless alternatives; and a calibrated observer does not imply that the actual dynamics contains a stable object. Its strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, replacing an inadequate historical peak tracker with a source-blind observer that passes exact sparse synthetic controls, and applying that observer to a frozen actual-dynamics screen. The latest result sharpens rather than validates the particle narrative: the current source produces a transient net-neutral burst of periodic winding defects, but the envelope channel finds no recurrent localized object and the topology channel cannot establish individual identity against dense phase-randomized nulls. The source and its state feedback matter numerically, but their morphological effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Lineum's strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -1918,9 +2132,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the ninth, foam-signature program was executed twice with bitwise-identical normalized output; its analytical Gaussian, Poisson, memory, and current-source controls passed, and its reconstructed current source matched actual runtime steps within `4.63e-18`
 - the tenth, source-to-morphology program was executed twice with bitwise-identical normalized output; its complete-state and open-loop controls passed, and its faithful F0 reconstruction matched the clean committed NumPy runtime within `1.05e-17`
 - the eleventh, linon-observer program was executed twice with bitwise-identical normalized output; the historical observer reproduced all declared failure controls, the replacement passed the declared positive controls, and its 24-by-40-frame smoothed-IID calibration produced a familywise 99th-percentile maximum lifetime of one observation
+- the twelfth, Gate-3B actual-dynamics program was executed twice with bitwise-identical normalized output; its exact-vacuum D0 lane remained empty, its F0 cap comparison was exactly identical with finite and disabled caps, and its standalone reconstruction matched the clean committed NumPy runtime within \(3.47\times10^{-17}\) for \(\psi\) and \(1.27\times10^{-21}\) for \(\phi\)
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 11/11 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 12/12 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -1955,6 +2170,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | foam-source signatures | innovation scale, kurtosis, lag correlation, event-rate ratios, Fano factor, waiting times | Gaussian, compound-Poisson, exact OU lag, and current-source variance formulas | three independent seed families, three \(h\), memory, event-rate, dependence, and resolution boundaries | a physical ontology, full nonlinear morphology, or mechanisms below observation resolution |
 | source-to-morphology causality | paired late residual RMS, branch persistence, turnover, classifier accuracy, and conditioned event history | no-source and mean-only lanes, exact common open-loop mean, variance matching at \(h=0.1\), clean-runtime reconstruction, and balanced-label permutations | independent post-revision seeds; \(h=0.05/0.2\), grids 16/32, horizons 15/60, vacuum initial state, and three detector thresholds | a continuum quantum source, unique identification of memoryless laws, stable particles, or physical vacuum ontology |
 | linon observer | track lifetime, coverage, shape correlation, mass/radius variation, signed winding, and toroidal assignment | flat field, scale copies, input-order reversal, crossing identities, periodic edge crossing, neutral vortex pair, and smoothed-IID nulls | fixed synthetic controls before physical data; frozen Gate-3B thresholds and mandatory time/source/grid/boundary/cap surrogates | that actual Lineum contains a stable localized object, a fundamental particle, or a unique observer |
+| Gate-3B actual dynamics | recurrent envelope or signed-topology identity above familywise null thresholds | exact-vacuum D0, conditional-mean M0, seeded-envelope positive challenge, disabled caps, finite-vs-disabled cap identity, and clean-runtime reconstruction | 12 F0 seeds; time shuffle, random torus shift, Fourier-phase and cell-phase nulls; stop before candidate sensitivities after primary failure | that transient winding defects are stable objects, that no future equation can stabilize an object, or that the tested two-dimensional periodic lane is physical vacuum |
 
 ### A.3 Numerical audit summary
 
@@ -1997,6 +2213,14 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | replacement observer: moving Gaussian track | one ID, \(6/6\) observations, median shape correlation \(1.0\) |
 | replacement observer: vortex and antivortex tracks | two IDs, each \(6/6\) observations |
 | observer smoothed-IID familywise 99% lifetime / span | \(1/1\) observation |
+| Gate-3B envelope passing F0 seeds / required | \(0/12\) / \(9/12\) |
+| Gate-3B topology-identity passing F0 seeds / required | \(0/12\) / \(9/12\) |
+| Gate-3B F0 peak winding defects / mean | \(170\text{–}220\) / \(197\) |
+| Gate-3B F0 last nonzero defect time / mean | \(20\text{–}45\) / \(30.8333\) |
+| Gate-3B maximum absolute periodic net charge | \(0\) in every frame and seed |
+| Gate-3B longest actual / independent-cell-phase-null track | \(45/59\) observations |
+| Gate-3B finite-cap versus disabled-cap maximum difference, \(\psi/\phi\) | \(0/0\) |
+| Gate-3B clean-runtime reconstruction difference, \(\psi/\phi\) | \(3.47\times10^{-17}/1.27\times10^{-21}\) |
 
 ### A.4 Complete executable program
 
@@ -22126,6 +22350,10277 @@ if __name__ == "__main__":
     "physical_lineum_trajectory_evaluated": false,
     "reason_physics_is_deferred": "Observer validity is a prerequisite; Gate 3B must use the frozen protocol without retuning on source labels.",
     "replacement_observer_passes_declared_synthetic_controls": true
+  }
+}
+```
+
+---
+
+## Appendix L — Gate-3B Actual-Dynamics Linon Identity Screen
+
+This appendix is the authoritative reproduction record for the frozen primary
+Gate-3B screen described above. The program is self-contained: it imports only
+the Python standard library, NumPy, and SciPy; it imports no Lineum package,
+reads no project file or external dataset, writes no file, and prints the
+complete JSON result to standard output.
+
+- normalized executable SHA-256, excluding terminal newline:
+  `0cc70213cbe4f452eaf54f0cdc984ddd595ab6468903a0c41749c32c575e741a`
+- normalized reference-output SHA-256, including one terminal newline:
+  `365ed79874b9b2ac3b00c582b773a66b10cbf1c3f659df294695cf09f398cb04`
+- recorded runtime: Python 3.11.15, NumPy 1.26.4, SciPy 1.17.1
+
+### L.1 Complete executable program
+
+Copy the following block to a Python file and execute it. No command-line
+arguments or hidden state are required.
+
+```python
+"""Standalone Gate 3B screen of actual Lineum numerical dynamics.
+
+The program embeds the audited nonlinear NumPy backbone and the frozen Gate 3A
+observer. It imports no Lineum package, reads no project data, writes no files,
+and prints one complete machine-readable result. The development revision and
+its triggered topology-null continuation are both recorded in the output.
+"""
+
+from __future__ import annotations
+
+"""Standalone causal ablation of Lineum-like foam sources and morphology.
+
+Protocol status: preregistered development version 0.1.
+
+The program deliberately imports only NumPy and the Python standard library.
+It reconstructs the committed NumPy backbone instead of importing repository
+code. Production code and defaults are not modified by this experiment.
+"""
+
+
+import hashlib
+import json
+import math
+import platform
+from dataclasses import dataclass
+
+import numpy as np
+
+
+SCHEMA = "lineum.foam-source-morphology-ablation.v1"
+PROTOCOL_VERSION = "0.2-recorded-revision"
+AUDITED_CORE_COMMIT = "50fe92716bbd0a999c4b1b23132d08d6f0cc755d"
+AUDITED_CORE_MATH_GIT_BLOB = "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa"
+DEVELOPMENT_V01_PROGRAM_SHA256 = (
+    "101e083c4433f2cee2152062d2a9b0244b27594b466267dbdb9b5480769a6ccf"
+)
+DEVELOPMENT_V01_OUTPUT_SHA256 = (
+    "bf85e73af50f148c52c7c191b1fb0a5b5848f5dc3d995313fd6d5889175b71f4"
+)
+PRIMARY_SIZE = 24
+PRIMARY_DT = 0.1
+REFERENCE_DT = 0.1
+PRIMARY_TIME = 30.0
+LATE_LAG_TIME = 5.0
+CALIBRATION_REPLICATES = 8
+VALIDATION_REPLICATES = 8
+POST_REVISION_REPLICATES = 12
+CALIBRATION_SEED_BASE = 2026212000
+VALIDATION_SEED_BASE = 2026213000
+POST_REVISION_SEED_BASE = 2026214000
+BOOTSTRAP_SEED = 2026219000
+SENSITIVITY_REPLICATES = 4
+SENSITIVITY_SETTINGS = (
+    ("dt_0_2", PRIMARY_SIZE, 0.2, PRIMARY_TIME, "structured"),
+    ("dt_0_05", PRIMARY_SIZE, 0.05, PRIMARY_TIME, "structured"),
+    ("grid_16", 16, PRIMARY_DT, PRIMARY_TIME, "structured"),
+    ("grid_32", 32, PRIMARY_DT, PRIMARY_TIME, "structured"),
+    ("horizon_15", PRIMARY_SIZE, PRIMARY_DT, 15.0, "structured"),
+    ("horizon_60", PRIMARY_SIZE, PRIMARY_DT, 60.0, "structured"),
+    ("vacuum_initial", PRIMARY_SIZE, PRIMARY_DT, PRIMARY_TIME, "vacuum"),
+)
+MATCHED_SOURCE_LANES = (
+    "F0_matched",
+    "F1_initial_only",
+    "F2_gaussian",
+    "F3_poisson",
+    "F4_state_history",
+    "F5_memory",
+)
+ONGOING_MATCHED_LANES = tuple(
+    lane for lane in MATCHED_SOURCE_LANES if lane != "F1_initial_only"
+)
+MEMORYLESS_MATCHED_LANES = (
+    "F0_matched",
+    "F2_gaussian",
+    "F3_poisson",
+    "F4_state_history",
+)
+ALL_LANES = (
+    "D0_no_source",
+    "M0_mean_only",
+    "F0_current",
+) + MATCHED_SOURCE_LANES
+CLASSIFIER_FEATURES = (
+    "residual_rms_relative",
+    "residual_localization",
+    "residual_neighbor_correlation",
+    "residual_high_frequency_fraction",
+    "late_temporal_correlation",
+    "late_top_decile_turnover",
+    "top_decile_components",
+    "energy_coefficient_of_variation",
+)
+
+
+@dataclass(frozen=True)
+class BackboneConfig:
+    dt: float
+    psi_diffusion: float = 0.05
+    phi_diffusion: float = 0.05
+    dissipation_rate: float = 0.005
+    drift_strength: float = -0.004
+    mode_coupling_strength: float = 0.001
+    noise_strength: float = 0.005
+    stencil_type: str = "LAP4"
+    phi_diffusion_scales_with_dt: bool = True
+    psi_amp_cap: float = 1e6
+    grad_cap: float = 1e6
+    phi_cap: float = 1e6
+
+
+def initial_state(
+    size: int,
+    mode: str = "structured",
+) -> dict[str, np.ndarray]:
+    """Return a deterministic, smooth, low-amplitude complete state."""
+    if mode == "vacuum":
+        return {
+            "psi": np.zeros((size, size), dtype=np.complex128),
+            "phi": np.zeros((size, size), dtype=np.float64),
+            "kappa": np.ones((size, size), dtype=np.float64),
+            "mu": np.zeros((size, size), dtype=np.float64),
+        }
+    if mode != "structured":
+        raise ValueError(mode)
+    yy, xx = np.mgrid[:size, :size]
+    cx = (size - 1.0) / 2.0
+    cy = (size - 1.0) / 2.0
+    dx = (xx - cx) / size
+    dy = (yy - cy) / size
+    radius2 = dx**2 + dy**2
+    envelope = (
+        0.012
+        + 0.020 * np.exp(-radius2 / (2.0 * 0.13**2))
+        + 0.003 * np.cos(2.0 * np.pi * xx / size)
+    )
+    phase_angle = (
+        0.25 * np.sin(2.0 * np.pi * xx / size)
+        - 0.18 * np.cos(2.0 * np.pi * yy / size)
+    )
+    psi = envelope * np.exp(1j * phase_angle)
+    phi = (
+        0.015
+        + 0.008 * np.cos(2.0 * np.pi * xx / size)
+        * np.cos(2.0 * np.pi * yy / size)
+        + 0.006 * np.exp(-radius2 / (2.0 * 0.20**2))
+    )
+    return {
+        "psi": psi.astype(np.complex128),
+        "phi": phi.astype(np.float64),
+        "kappa": np.ones((size, size), dtype=np.float64),
+        "mu": np.zeros((size, size), dtype=np.float64),
+    }
+
+
+def copy_state(state: dict[str, np.ndarray]) -> dict[str, np.ndarray]:
+    return {key: np.array(value, copy=True) for key, value in state.items()}
+
+
+def diffuse_complex(
+    field: np.ndarray,
+    kappa: np.ndarray,
+    rate: float,
+    stencil_type: str,
+) -> np.ndarray:
+    k_up = np.roll(kappa, 1, axis=0)
+    k_down = np.roll(kappa, -1, axis=0)
+    k_left = np.roll(kappa, 1, axis=1)
+    k_right = np.roll(kappa, -1, axis=1)
+    f_up = np.roll(field, 1, axis=0)
+    f_down = np.roll(field, -1, axis=0)
+    f_left = np.roll(field, 1, axis=1)
+    f_right = np.roll(field, -1, axis=1)
+    if stencil_type == "LAP8":
+        weight_orthogonal = 1.0
+        weight_diagonal = 0.25
+        k_up_left = np.roll(k_up, 1, axis=1)
+        k_up_right = np.roll(k_up, -1, axis=1)
+        k_down_left = np.roll(k_down, 1, axis=1)
+        k_down_right = np.roll(k_down, -1, axis=1)
+        f_up_left = np.roll(f_up, 1, axis=1)
+        f_up_right = np.roll(f_up, -1, axis=1)
+        f_down_left = np.roll(f_down, 1, axis=1)
+        f_down_right = np.roll(f_down, -1, axis=1)
+        neighbor_sum = weight_orthogonal * (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+        ) + weight_diagonal * (
+            f_up_left * k_up_left
+            + f_up_right * k_up_right
+            + f_down_left * k_down_left
+            + f_down_right * k_down_right
+        )
+        active_neighbors = weight_orthogonal * (
+            k_up + k_down + k_left + k_right
+        ) + weight_diagonal * (
+            k_up_left + k_up_right + k_down_left + k_down_right
+        )
+    else:
+        neighbor_sum = (
+            f_up * k_up
+            + f_down * k_down
+            + f_left * k_left
+            + f_right * k_right
+        )
+        active_neighbors = k_up + k_down + k_left + k_right
+    return rate * (neighbor_sum - active_neighbors * field)
+
+
+def cap_complex_magnitude(field: np.ndarray, cap: float) -> np.ndarray:
+    result = np.asarray(field, dtype=np.complex128)
+    magnitude = np.abs(result)
+    mask = magnitude > cap
+    if np.any(mask):
+        result[mask] = result[mask] * (cap / (magnitude[mask] + 1e-30))
+    return result
+
+
+def source_parameters(
+    psi: np.ndarray,
+    kappa: np.ndarray,
+    config: BackboneConfig,
+) -> tuple[
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+]:
+    amplitude = np.clip(np.abs(psi), 0.0, config.psi_amp_cap)
+    gradient_x, gradient_y = np.gradient(amplitude)
+    gradient_x = np.clip(gradient_x, -config.grad_cap, config.grad_cap)
+    gradient_y = np.clip(gradient_y, -config.grad_cap, config.grad_cap)
+    gradient_magnitude = np.sqrt(
+        np.clip(gradient_x**2 + gradient_y**2, 0.0, 1e12)
+    )
+    probability = (
+        1.0 / (1.0 + np.exp(-5.0 * (amplitude + gradient_magnitude)))
+    ) * kappa
+    linon_amplitude = np.clip(
+        0.03 + 0.02 * np.clip(amplitude, 0.0, None),
+        0.0,
+        10.0,
+    )
+    phase = np.exp(1j * np.angle(psi))
+    conditional_variance_coefficient = (
+        linon_amplitude**2 * probability * (1.0 - probability)
+        + config.noise_strength**2
+    )
+    state_score_raw = amplitude + gradient_magnitude
+    state_score = (
+        state_score_raw - float(np.mean(state_score_raw))
+    ) / (float(np.std(state_score_raw)) + 1e-12)
+    state_score = np.clip(state_score, -2.0, 2.0)
+    return (
+        probability,
+        linon_amplitude,
+        phase,
+        conditional_variance_coefficient,
+        state_score,
+    )
+
+
+def make_initial_perturbation(
+    reference_schedule: list[dict[str, np.ndarray]],
+    rng: np.random.RandomState,
+) -> np.ndarray:
+    """Match the total raw F0 innovation variance in one initial draw."""
+    total_variance = np.sum(
+        [
+            entry["dt"] ** 2
+            * entry["conditional_variance_coefficient"]
+            for entry in reference_schedule
+        ],
+        axis=0,
+    )
+    phase = reference_schedule[0]["phase"]
+    return (
+        np.sqrt(total_variance)
+        * rng.normal(size=phase.shape)
+        * phase
+    )
+
+
+def source_increment(
+    lane: str,
+    state: dict[str, np.ndarray],
+    rng: np.random.RandomState,
+    config: BackboneConfig,
+    auxiliary: dict[str, np.ndarray],
+    reference: dict[str, np.ndarray],
+) -> tuple[np.ndarray, dict[str, np.ndarray], dict[str, float]]:
+    (
+        probability,
+        linon_amplitude,
+        phase,
+        conditional_variance_coefficient,
+        state_score,
+    ) = source_parameters(state["psi"], state["kappa"], config)
+    shape = state["psi"].shape
+    current_mean_increment = (
+        config.dt * linon_amplitude * probability * phase
+    )
+    reference_mean_increment = reference["mean_increment"]
+    reference_probability = reference["probability"]
+    reference_linon_amplitude = reference["linon_amplitude"]
+    reference_phase = reference["phase"]
+    reference_variance = reference["conditional_variance_coefficient"]
+    event_counts = np.zeros(shape, dtype=np.float64)
+    event_intensity = np.zeros(shape, dtype=np.float64)
+
+    if lane == "D0_no_source":
+        increment = np.zeros(shape, dtype=np.complex128)
+        expected_increment = np.zeros(shape, dtype=np.complex128)
+    elif lane in {"M0_mean_only", "F1_initial_only"}:
+        increment = reference_mean_increment
+        expected_increment = reference_mean_increment
+    elif lane == "F0_current":
+        linons = (rng.rand(*shape) < probability).astype(np.float64)
+        gaussian = np.clip(
+            rng.normal(0.0, config.noise_strength, shape),
+            -1.0,
+            1.0,
+        )
+        increment = (
+            config.dt * (linon_amplitude * linons + gaussian) * phase
+        )
+        expected_increment = current_mean_increment
+        event_counts = linons
+        event_intensity = probability / config.dt
+    elif lane == "F0_matched":
+        linons = (
+            rng.rand(*shape) < reference_probability
+        ).astype(np.float64)
+        gaussian = np.clip(
+            rng.normal(0.0, config.noise_strength, shape),
+            -1.0,
+            1.0,
+        )
+        residual = config.dt * (
+            reference_linon_amplitude
+            * (linons - reference_probability)
+            + gaussian
+        ) * reference_phase
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+        event_counts = linons
+        event_intensity = reference_probability / config.dt
+    elif lane == "F2_gaussian":
+        diffusion_scale = np.sqrt(
+            REFERENCE_DT * reference_variance
+        )
+        residual = (
+            np.sqrt(config.dt)
+            * diffusion_scale
+            * rng.normal(size=shape)
+            * reference_phase
+        )
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+    elif lane == "F3_poisson":
+        event_intensity.fill(0.5)
+        jump = np.sqrt(
+            REFERENCE_DT
+            * reference_variance
+            / event_intensity
+        )
+        positive = rng.poisson(event_intensity * config.dt / 2.0)
+        negative = rng.poisson(event_intensity * config.dt / 2.0)
+        signed_counts = positive - negative
+        event_counts = positive + negative
+        increment = (
+            reference_mean_increment
+            + jump * signed_counts * reference_phase
+        )
+        expected_increment = reference_mean_increment
+    elif lane == "F4_state_history":
+        history = auxiliary["event_history"]
+        event_intensity = 0.5 * np.exp(
+            0.55 * state_score + 0.45 * np.clip(history, 0.0, 3.0)
+        )
+        event_intensity = np.clip(event_intensity, 0.025, 5.0)
+        jump = np.sqrt(
+            REFERENCE_DT
+            * reference_variance
+            / event_intensity
+        )
+        positive = rng.poisson(event_intensity * config.dt / 2.0)
+        negative = rng.poisson(event_intensity * config.dt / 2.0)
+        signed_counts = positive - negative
+        event_counts = positive + negative
+        increment = (
+            reference_mean_increment
+            + jump * signed_counts * reference_phase
+        )
+        expected_increment = reference_mean_increment
+        decay = math.exp(-config.dt / 0.5)
+        auxiliary["event_history"] = (
+            decay * history + event_counts
+        )
+    elif lane == "F5_memory":
+        correlation = math.exp(-config.dt / 0.5)
+        eta = (
+            correlation * auxiliary["eta"]
+            + math.sqrt(1.0 - correlation**2)
+            * rng.normal(size=shape)
+        )
+        auxiliary["eta"] = eta
+        residual = (
+            config.dt
+            * np.sqrt(reference_variance)
+            * eta
+            * reference_phase
+        )
+        increment = reference_mean_increment + residual
+        expected_increment = reference_mean_increment
+    else:
+        raise ValueError(lane)
+
+    metadata = {
+        "events": float(np.sum(event_counts)),
+        "event_state_sum": float(np.sum(event_counts * state_score)),
+        "event_history_sum": float(
+            np.sum(event_counts * auxiliary["event_history"])
+        ),
+        "state_high_events": float(
+            np.sum(event_counts[state_score > 0.5])
+        ),
+        "state_low_events": float(
+            np.sum(event_counts[state_score < -0.5])
+        ),
+        "state_high_exposure": float(np.sum(state_score > 0.5)),
+        "state_low_exposure": float(np.sum(state_score < -0.5)),
+        "injected_centered_power": float(
+            np.mean(np.abs(increment - expected_increment) ** 2)
+        ),
+        "mean_intensity": float(np.mean(event_intensity)),
+    }
+    return increment, auxiliary, metadata
+
+
+def backbone_step(
+    state: dict[str, np.ndarray],
+    config: BackboneConfig,
+    increment: np.ndarray,
+) -> dict[str, np.ndarray]:
+    psi = np.array(state["psi"], dtype=np.complex128, copy=True)
+    phi = np.array(state["phi"], dtype=np.float64, copy=True)
+    kappa = np.array(state["kappa"], dtype=np.float64, copy=True)
+    mu = np.array(state["mu"], dtype=np.float64, copy=True)
+    amplitude = np.clip(np.abs(psi), 0.0, config.psi_amp_cap)
+    drift_multiplier = 1.0 + mu
+
+    phi_interaction = np.clip(phi, 0.0, 10.0)
+    interaction_factor = 0.1 * np.tanh(
+        (0.04 * phi_interaction * kappa * drift_multiplier) / 0.1
+    )
+    interaction_term = interaction_factor * psi
+    interaction_magnitude = np.abs(interaction_term)
+    interaction_term = interaction_term / (
+        1.0 + interaction_magnitude / 10.0
+    )
+
+    gradient_phi_x, gradient_phi_y = np.gradient(phi)
+    phi_flow_term = (
+        config.drift_strength
+        * (gradient_phi_x + 1j * gradient_phi_y)
+        * kappa
+        * drift_multiplier
+    )
+    flow_magnitude = np.abs(phi_flow_term)
+    phi_flow_term = phi_flow_term / (1.0 + flow_magnitude / 10.0)
+
+    psi += phi_flow_term * config.dt
+    psi = cap_complex_magnitude(psi, config.psi_amp_cap)
+    psi += increment * kappa + interaction_term * config.dt
+    psi -= config.dissipation_rate * psi * config.dt
+    psi += (
+        diffuse_complex(
+            psi,
+            kappa,
+            rate=config.psi_diffusion,
+            stencil_type=config.stencil_type,
+        )
+        * kappa
+        * config.dt
+    )
+
+    energy = np.abs(psi) ** 2
+    delta_energy = (
+        config.mode_coupling_strength * energy * kappa * config.dt
+    )
+    phi += delta_energy
+    new_magnitude = np.sqrt(np.maximum(energy - delta_energy, 0.0))
+    psi = (psi / (np.sqrt(energy) + 1e-12)) * new_magnitude
+
+    phi_step_scale = (
+        config.dt if config.phi_diffusion_scales_with_dt else 1.0
+    )
+    phi += (
+        kappa
+        * config.phi_diffusion
+        * diffuse_complex(
+            phi,
+            kappa,
+            rate=0.05,
+            stencil_type=config.stencil_type,
+        )
+        * phi_step_scale
+    )
+    phi = np.clip(phi, 0.0, config.phi_cap)
+    if np.isnan(np.sum(psi)) or np.max(np.abs(psi)) >= (
+        config.psi_amp_cap * 0.99
+    ):
+        raise FloatingPointError("Backbone divergence or cap proximity")
+    return {"psi": psi, "phi": phi, "kappa": kappa, "mu": mu}
+
+
+def build_reference_trajectory(
+    size: int,
+    dt: float,
+    total_time: float,
+    initial_mode: str = "structured",
+) -> tuple[
+    list[dict[str, np.ndarray]],
+    dict[str, np.ndarray],
+    dict[str, np.ndarray],
+]:
+    """Precompute the common open-loop conditional-mean drive."""
+    config = BackboneConfig(dt=dt)
+    state = initial_state(size, initial_mode)
+    steps = int(round(total_time / dt))
+    late_step = steps - int(round(LATE_LAG_TIME / dt))
+    schedule: list[dict[str, np.ndarray]] = []
+    late_state = None
+    for step_index in range(steps):
+        (
+            probability,
+            linon_amplitude,
+            phase,
+            conditional_variance_coefficient,
+            state_score,
+        ) = source_parameters(state["psi"], state["kappa"], config)
+        mean_increment = (
+            dt * linon_amplitude * probability * phase
+        )
+        phi_score = (
+            state["phi"] - float(np.mean(state["phi"]))
+        ) / (float(np.std(state["phi"])) + 1e-12)
+        phi_score = np.clip(phi_score, -3.0, 3.0)
+        schedule.append(
+            {
+                "dt": np.asarray(dt),
+                "probability": np.array(probability, copy=True),
+                "linon_amplitude": np.array(linon_amplitude, copy=True),
+                "phase": np.array(phase, copy=True),
+                "conditional_variance_coefficient": np.array(
+                    conditional_variance_coefficient,
+                    copy=True,
+                ),
+                "state_score": np.array(state_score, copy=True),
+                "phi_score": np.array(phi_score, copy=True),
+                "mean_increment": np.array(mean_increment, copy=True),
+            }
+        )
+        state = backbone_step(state, config, mean_increment)
+        if step_index + 1 == late_step:
+            late_state = copy_state(state)
+    if late_state is None:
+        raise AssertionError("Reference late snapshot was not recorded")
+    return schedule, copy_state(state), late_state
+
+
+def correlation(left: np.ndarray, right: np.ndarray) -> float:
+    x = np.ravel(np.asarray(left, dtype=np.float64))
+    y = np.ravel(np.asarray(right, dtype=np.float64))
+    x = x - np.mean(x)
+    y = y - np.mean(y)
+    denominator = math.sqrt(float(np.sum(x * x) * np.sum(y * y)))
+    if denominator < 1e-30:
+        return 0.0
+    return float(np.sum(x * y) / denominator)
+
+
+def neighbor_correlation(field: np.ndarray) -> float:
+    return 0.5 * (
+        correlation(field, np.roll(field, 1, axis=0))
+        + correlation(field, np.roll(field, 1, axis=1))
+    )
+
+
+def high_frequency_fraction(field: np.ndarray) -> float:
+    centered = np.asarray(field, dtype=np.float64) - float(np.mean(field))
+    spectrum = np.abs(np.fft.fft2(centered)) ** 2
+    size_y, size_x = centered.shape
+    ky = np.fft.fftfreq(size_y)
+    kx = np.fft.fftfreq(size_x)
+    radius = np.sqrt(ky[:, None] ** 2 + kx[None, :] ** 2)
+    nonzero = radius > 0.0
+    high = radius >= (1.0 / 3.0)
+    denominator = float(np.sum(spectrum[nonzero]))
+    if denominator < 1e-30:
+        return 0.0
+    return float(np.sum(spectrum[high]) / denominator)
+
+
+def periodic_component_count(mask: np.ndarray) -> int:
+    active = np.asarray(mask, dtype=bool)
+    height, width = active.shape
+    visited = np.zeros_like(active)
+    count = 0
+    for row in range(height):
+        for column in range(width):
+            if not active[row, column] or visited[row, column]:
+                continue
+            count += 1
+            stack = [(row, column)]
+            visited[row, column] = True
+            while stack:
+                current_row, current_column = stack.pop()
+                for next_row, next_column in (
+                    ((current_row - 1) % height, current_column),
+                    ((current_row + 1) % height, current_column),
+                    (current_row, (current_column - 1) % width),
+                    (current_row, (current_column + 1) % width),
+                ):
+                    if (
+                        active[next_row, next_column]
+                        and not visited[next_row, next_column]
+                    ):
+                        visited[next_row, next_column] = True
+                        stack.append((next_row, next_column))
+    return count
+
+
+def top_mask(field: np.ndarray, quantile: float = 0.9) -> np.ndarray:
+    absolute = np.abs(np.asarray(field, dtype=np.float64))
+    threshold = float(np.quantile(absolute, quantile))
+    return absolute >= threshold
+
+
+def morphology_metrics(
+    final_state: dict[str, np.ndarray],
+    late_state: dict[str, np.ndarray],
+    baseline_final: dict[str, np.ndarray],
+    baseline_late: dict[str, np.ndarray],
+    event_totals: dict[str, float],
+) -> dict[str, float]:
+    energy = np.abs(final_state["psi"]) ** 2
+    late_energy = np.abs(late_state["psi"]) ** 2
+    baseline_energy = np.abs(baseline_final["psi"]) ** 2
+    baseline_late_energy = np.abs(baseline_late["psi"]) ** 2
+    residual = energy - baseline_energy
+    late_residual = late_energy - baseline_late_energy
+    residual_power = residual**2
+    baseline_scale = math.sqrt(float(np.mean(baseline_energy**2))) + 1e-30
+    residual_power_sum = float(np.sum(residual_power))
+    if residual_power_sum < 1e-30:
+        residual_localization = 0.0
+    else:
+        residual_localization = float(
+            residual.size
+            * np.sum(residual_power**2)
+            / (residual_power_sum**2)
+        )
+    detector_metrics = {}
+    for quantile, label in (
+        (0.80, "q80"),
+        (0.90, "q90"),
+        (0.95, "q95"),
+    ):
+        final_mask = top_mask(residual, quantile)
+        late_mask = top_mask(late_residual, quantile)
+        union = int(np.sum(final_mask | late_mask))
+        intersection = int(np.sum(final_mask & late_mask))
+        detector_metrics[f"{label}_turnover"] = (
+            0.0 if union == 0 else 1.0 - intersection / union
+        )
+        detector_metrics[f"{label}_components"] = float(
+            periodic_component_count(final_mask)
+        )
+    final_top = top_mask(residual, 0.90)
+    high_rate = (
+        event_totals["state_high_events"]
+        / max(event_totals["state_high_exposure"], 1.0)
+    )
+    low_rate = (
+        event_totals["state_low_events"]
+        / max(event_totals["state_low_exposure"], 1.0)
+    )
+    result = {
+        "mean_energy": float(np.mean(energy)),
+        "energy_coefficient_of_variation": float(
+            np.std(energy) / (np.mean(energy) + 1e-30)
+        ),
+        "residual_rms_relative": float(
+            math.sqrt(float(np.mean(residual_power))) / baseline_scale
+        ),
+        "residual_localization": residual_localization,
+        "residual_neighbor_correlation": neighbor_correlation(residual),
+        "residual_high_frequency_fraction": high_frequency_fraction(residual),
+        "late_temporal_correlation": correlation(
+            residual,
+            late_residual,
+        ),
+        "late_top_decile_turnover": detector_metrics["q90_turnover"],
+        "top_decile_components": float(
+            periodic_component_count(final_top)
+        ),
+        "event_state_mean": float(
+            event_totals["event_state_sum"]
+            / max(event_totals["events"], 1.0)
+        ),
+        "event_state_rate_ratio": float(
+            high_rate / max(low_rate, 1e-30)
+        ),
+        "mean_injected_centered_power": float(
+            event_totals["injected_centered_power"]
+            / max(event_totals["steps"], 1.0)
+        ),
+        "total_events": float(event_totals["events"]),
+    }
+    result.update(detector_metrics)
+    return result
+
+
+def run_lane(
+    lane: str,
+    seed: int,
+    size: int,
+    dt: float,
+    total_time: float,
+    reference_schedule: list[dict[str, np.ndarray]],
+    baseline_snapshots: tuple[
+        dict[str, np.ndarray],
+        dict[str, np.ndarray],
+    ],
+    initial_mode: str = "structured",
+) -> tuple[
+    dict[str, float],
+    dict[str, np.ndarray],
+    dict[str, np.ndarray],
+]:
+    config = BackboneConfig(dt=dt)
+    state = initial_state(size, initial_mode)
+    rng = np.random.RandomState(seed)
+    auxiliary = {
+        "eta": (
+            rng.normal(size=(size, size))
+            if lane == "F5_memory"
+            else np.zeros((size, size), dtype=np.float64)
+        ),
+        "event_history": np.zeros((size, size), dtype=np.float64),
+    }
+    if lane == "F1_initial_only":
+        state["psi"] += make_initial_perturbation(
+            reference_schedule,
+            rng,
+        )
+    steps = int(round(total_time / dt))
+    late_step = steps - int(round(LATE_LAG_TIME / dt))
+    late_state = None
+    event_totals = {
+        "events": 0.0,
+        "event_state_sum": 0.0,
+        "event_history_sum": 0.0,
+        "state_high_events": 0.0,
+        "state_low_events": 0.0,
+        "state_high_exposure": 0.0,
+        "state_low_exposure": 0.0,
+        "injected_centered_power": 0.0,
+        "mean_intensity": 0.0,
+        "steps": float(steps),
+    }
+    for step_index in range(steps):
+        increment, auxiliary, metadata = source_increment(
+            lane,
+            state,
+            rng,
+            config,
+            auxiliary,
+            reference_schedule[step_index],
+        )
+        for key in metadata:
+            event_totals[key] += metadata[key]
+        state = backbone_step(state, config, increment)
+        if step_index + 1 == late_step:
+            late_state = copy_state(state)
+    if late_state is None:
+        raise AssertionError("Late snapshot was not recorded")
+    baseline_final, baseline_late = baseline_snapshots
+    metrics = morphology_metrics(
+        state,
+        late_state,
+        baseline_final,
+        baseline_late,
+        event_totals,
+    )
+    return metrics, copy_state(state), copy_state(late_state)
+
+
+def summarize_rows(rows: list[dict[str, float]]) -> dict[str, dict[str, float]]:
+    summary: dict[str, dict[str, float]] = {}
+    for feature in sorted(rows[0]):
+        values = np.asarray([row[feature] for row in rows], dtype=np.float64)
+        summary[feature] = {
+            "mean": float(np.mean(values)),
+            "standard_deviation": float(np.std(values, ddof=1))
+            if len(values) > 1
+            else 0.0,
+            "minimum": float(np.min(values)),
+            "maximum": float(np.max(values)),
+        }
+    return summary
+
+
+def bootstrap_mean_interval(
+    values: np.ndarray,
+    rng: np.random.RandomState,
+    draws: int = 10000,
+) -> dict[str, float]:
+    data = np.asarray(values, dtype=np.float64)
+    indices = rng.randint(0, len(data), size=(draws, len(data)))
+    means = np.mean(data[indices], axis=1)
+    return {
+        "mean": float(np.mean(data)),
+        "lower_95_percentile_bootstrap": float(np.quantile(means, 0.025)),
+        "upper_95_percentile_bootstrap": float(np.quantile(means, 0.975)),
+        "replicates": int(len(data)),
+    }
+
+
+def train_centroid_classifier(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+    lanes: tuple[str, ...],
+) -> dict[str, object]:
+    matrix = np.asarray(
+        [
+            [row[feature] for feature in CLASSIFIER_FEATURES]
+            for lane in lanes
+            for row in rows_by_lane[lane]
+        ],
+        dtype=np.float64,
+    )
+    mean = np.mean(matrix, axis=0)
+    scale = np.std(matrix, axis=0, ddof=1)
+    scale = np.where(scale > 1e-12, scale, 1.0)
+    centroids = {}
+    for lane in lanes:
+        lane_matrix = np.asarray(
+            [
+                [row[feature] for feature in CLASSIFIER_FEATURES]
+                for row in rows_by_lane[lane]
+            ],
+            dtype=np.float64,
+        )
+        centroids[lane] = np.mean((lane_matrix - mean) / scale, axis=0)
+    return {
+        "mean": mean,
+        "scale": scale,
+        "centroids": centroids,
+        "lanes": lanes,
+    }
+
+
+def classify(
+    row: dict[str, float],
+    classifier: dict[str, object],
+) -> str:
+    vector = np.asarray(
+        [row[feature] for feature in CLASSIFIER_FEATURES],
+        dtype=np.float64,
+    )
+    standardized = (
+        vector - np.asarray(classifier["mean"])
+    ) / np.asarray(classifier["scale"])
+    distances = {
+        lane: float(
+            np.sum(
+                (
+                    standardized
+                    - np.asarray(classifier["centroids"][lane])
+                )
+                ** 2
+            )
+        )
+        for lane in classifier["lanes"]
+    }
+    return min(distances, key=distances.get)
+
+
+def exact_binomial_upper_tail(
+    successes: int,
+    total: int,
+    probability: float,
+) -> float:
+    return float(
+        sum(
+            math.comb(total, count)
+            * probability**count
+            * (1.0 - probability) ** (total - count)
+            for count in range(successes, total + 1)
+        )
+    )
+
+
+def wilson_interval(successes: int, total: int) -> dict[str, float]:
+    z = 1.959963984540054
+    proportion = successes / total
+    denominator = 1.0 + z**2 / total
+    center = (
+        proportion + z**2 / (2.0 * total)
+    ) / denominator
+    half_width = (
+        z
+        * math.sqrt(
+            proportion * (1.0 - proportion) / total
+            + z**2 / (4.0 * total**2)
+        )
+        / denominator
+    )
+    return {
+        "lower_95_wilson": float(center - half_width),
+        "upper_95_wilson": float(center + half_width),
+    }
+
+
+def fit_poisson_log_rate(
+    counts: np.ndarray,
+    state_score: np.ndarray,
+    history_predictor: np.ndarray,
+    phi_score: np.ndarray,
+    dt: float,
+) -> dict[str, float]:
+    """Fit a Poisson log-rate model by deterministic Newton iterations."""
+    y = np.asarray(counts, dtype=np.float64).ravel()
+    design = np.column_stack(
+        (
+            np.ones_like(y),
+            np.asarray(state_score, dtype=np.float64).ravel(),
+            np.asarray(history_predictor, dtype=np.float64).ravel(),
+            np.asarray(phi_score, dtype=np.float64).ravel(),
+        )
+    )
+    coefficients = np.zeros(design.shape[1], dtype=np.float64)
+    coefficients[0] = math.log(max(float(np.mean(y)) / dt, 1e-12))
+    offset = math.log(dt)
+    for _ in range(40):
+        linear = np.clip(
+            offset + design @ coefficients,
+            -20.0,
+            20.0,
+        )
+        fitted = np.exp(linear)
+        gradient = design.T @ (y - fitted)
+        information = design.T @ (fitted[:, None] * design)
+        information += np.eye(design.shape[1]) * 1e-9
+        update = np.linalg.solve(information, gradient)
+        coefficients += update
+        if float(np.max(np.abs(update))) < 1e-10:
+            break
+    return {
+        "intercept": float(coefficients[0]),
+        "state_score_coefficient": float(coefficients[1]),
+        "history_coefficient": float(coefficients[2]),
+        "phi_control_coefficient": float(coefficients[3]),
+    }
+
+
+def event_conditional_control(
+    seed_base: int,
+    replicates: int,
+) -> dict[str, object]:
+    """Separate persistent state heterogeneity from true event history."""
+    size = 16
+    dt = 0.1
+    total_time = 40.0
+    schedule, _final, _late = build_reference_trajectory(
+        size,
+        dt,
+        total_time,
+    )
+    lanes = {
+        "independent": {"state_beta": 0.0, "history": False},
+        "state_only": {"state_beta": 0.55, "history": False},
+        "state_and_history": {"state_beta": 0.55, "history": True},
+    }
+    rows_by_lane: dict[str, list[dict[str, float]]] = {
+        lane: [] for lane in lanes
+    }
+    for lane_index, (lane, parameters) in enumerate(lanes.items()):
+        for replicate in range(replicates):
+            rng = np.random.RandomState(
+                seed_base + lane_index * 1000 + replicate
+            )
+            history = np.zeros((size, size), dtype=np.float64)
+            previous_event = np.zeros((size, size), dtype=bool)
+            collected_counts = []
+            collected_state = []
+            collected_history = []
+            collected_phi = []
+            events_after_previous = 0.0
+            exposure_after_previous = 0.0
+            events_without_previous = 0.0
+            exposure_without_previous = 0.0
+            decay = math.exp(-dt / 0.5)
+            for entry in schedule:
+                state_score = entry["state_score"]
+                phi_score = entry["phi_score"]
+                bounded_history = np.clip(history, 0.0, 3.0)
+                if parameters["history"]:
+                    history_predictor = np.log1p(
+                        0.6 * bounded_history
+                    )
+                else:
+                    history_predictor = np.zeros_like(history)
+                intensity = 0.5 * np.exp(
+                    parameters["state_beta"] * state_score
+                    + history_predictor
+                )
+                counts = rng.poisson(intensity * dt)
+                events_after_previous += float(
+                    np.sum(counts[previous_event])
+                )
+                exposure_after_previous += float(np.sum(previous_event))
+                events_without_previous += float(
+                    np.sum(counts[~previous_event])
+                )
+                exposure_without_previous += float(
+                    np.sum(~previous_event)
+                )
+                collected_counts.append(counts.ravel())
+                collected_state.append(state_score.ravel())
+                collected_history.append(
+                    np.log1p(0.6 * bounded_history).ravel()
+                )
+                collected_phi.append(phi_score.ravel())
+                previous_event = counts > 0
+                history = decay * history + counts
+            fit = fit_poisson_log_rate(
+                np.concatenate(collected_counts),
+                np.concatenate(collected_state),
+                np.concatenate(collected_history),
+                np.concatenate(collected_phi),
+                dt,
+            )
+            fit["unconditional_previous_event_rate_ratio"] = float(
+                (
+                    events_after_previous
+                    / max(exposure_after_previous, 1.0)
+                )
+                / max(
+                    events_without_previous
+                    / max(exposure_without_previous, 1.0),
+                    1e-30,
+                )
+            )
+            rows_by_lane[lane].append(fit)
+    bootstrap_rng = np.random.RandomState(seed_base + 9000)
+    return {
+        "design": {
+            "size": size,
+            "dt": dt,
+            "physical_time": total_time,
+            "replicates_per_lane": replicates,
+            "fitted_predictors": [
+                "state score used by the intensity",
+                "pre-event decayed history",
+                "phi state as an irrelevant full-state control",
+            ],
+            "interpretation": (
+                "A raw after-event rate ratio can be elevated by persistent "
+                "high-rate state alone. The fitted history coefficient asks "
+                "whether history adds predictive rate after declared state "
+                "is held fixed."
+            ),
+        },
+        "lane_summaries": {
+            lane: {
+                feature: bootstrap_mean_interval(
+                    np.asarray(
+                        [row[feature] for row in rows],
+                        dtype=np.float64,
+                    ),
+                    bootstrap_rng,
+                )
+                for feature in rows[0]
+            }
+            for lane, rows in rows_by_lane.items()
+        },
+    }
+
+
+def run_dataset(
+    seed_base: int,
+    replicates: int,
+    size: int,
+    dt: float,
+    total_time: float,
+    initial_mode: str = "structured",
+) -> dict[str, list[dict[str, float]]]:
+    (
+        reference_schedule,
+        baseline_final,
+        baseline_late,
+    ) = build_reference_trajectory(
+        size=size,
+        dt=dt,
+        total_time=total_time,
+        initial_mode=initial_mode,
+    )
+    baseline_snapshots = (baseline_final, baseline_late)
+    rows_by_lane = {lane: [] for lane in ALL_LANES}
+    residual_maps_by_lane = {lane: [] for lane in ALL_LANES}
+    baseline_energy = np.abs(baseline_final["psi"]) ** 2
+    for replicate in range(replicates):
+        seed = seed_base + replicate
+        for lane in ALL_LANES:
+            metrics, final_state, _late = run_lane(
+                lane,
+                seed=seed,
+                size=size,
+                dt=dt,
+                total_time=total_time,
+                reference_schedule=reference_schedule,
+                baseline_snapshots=baseline_snapshots,
+                initial_mode=initial_mode,
+            )
+            metrics["replicate"] = float(replicate)
+            rows_by_lane[lane].append(metrics)
+            residual_maps_by_lane[lane].append(
+                np.abs(final_state["psi"]) ** 2 - baseline_energy
+            )
+    for lane in ALL_LANES:
+        pairwise_correlations = []
+        pairwise_jaccards = []
+        maps = residual_maps_by_lane[lane]
+        for left_index in range(len(maps)):
+            for right_index in range(left_index + 1, len(maps)):
+                pairwise_correlations.append(
+                    correlation(maps[left_index], maps[right_index])
+                )
+                left_mask = top_mask(maps[left_index], 0.90)
+                right_mask = top_mask(maps[right_index], 0.90)
+                union = int(np.sum(left_mask | right_mask))
+                pairwise_jaccards.append(
+                    1.0
+                    if union == 0
+                    else float(np.sum(left_mask & right_mask) / union)
+                )
+        mean_pairwise_correlation = (
+            float(np.mean(pairwise_correlations))
+            if pairwise_correlations
+            else 1.0
+        )
+        mean_pairwise_jaccard = (
+            float(np.mean(pairwise_jaccards))
+            if pairwise_jaccards
+            else 1.0
+        )
+        for row in rows_by_lane[lane]:
+            row["ensemble_pairwise_final_correlation"] = (
+                mean_pairwise_correlation
+            )
+            row["ensemble_pairwise_top_decile_jaccard"] = (
+                mean_pairwise_jaccard
+            )
+    return rows_by_lane
+
+
+def paired_contrast(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+    left_lane: str,
+    right_lane: str,
+    feature: str,
+    rng: np.random.RandomState,
+) -> dict[str, object]:
+    left = np.asarray(
+        [row[feature] for row in rows_by_lane[left_lane]],
+        dtype=np.float64,
+    )
+    right = np.asarray(
+        [row[feature] for row in rows_by_lane[right_lane]],
+        dtype=np.float64,
+    )
+    return {
+        "left": left_lane,
+        "right": right_lane,
+        "feature": feature,
+        "left_mean": float(np.mean(left)),
+        "right_mean": float(np.mean(right)),
+        "left_minus_right": bootstrap_mean_interval(
+            left - right,
+            rng,
+        ),
+    }
+
+
+def evaluate_classifier(
+    calibration: dict[str, list[dict[str, float]]],
+    validation: dict[str, list[dict[str, float]]],
+    lanes: tuple[str, ...],
+) -> dict[str, object]:
+    classifier = train_centroid_classifier(calibration, lanes)
+    confusion = {
+        actual: {predicted: 0 for predicted in lanes}
+        for actual in lanes
+    }
+    correct = 0
+    total = 0
+    actual_labels = []
+    predicted_labels = []
+    for actual in lanes:
+        for row in validation[actual]:
+            predicted = classify(row, classifier)
+            confusion[actual][predicted] += 1
+            correct += int(predicted == actual)
+            total += 1
+            actual_labels.append(actual)
+            predicted_labels.append(predicted)
+    chance = 1.0 / len(lanes)
+    permutation_rng = np.random.RandomState(2026219500 + len(lanes))
+    permuted_correct = np.empty(10000, dtype=np.int64)
+    actual_array = np.asarray(actual_labels, dtype=object)
+    predicted_array = np.asarray(predicted_labels, dtype=object)
+    for draw in range(len(permuted_correct)):
+        permuted = permutation_rng.permutation(actual_array)
+        permuted_correct[draw] = int(np.sum(permuted == predicted_array))
+    return {
+        "lanes": list(lanes),
+        "correct": correct,
+        "total": total,
+        "accuracy": correct / total,
+        "accuracy_interval": wilson_interval(correct, total),
+        "uniform_chance": chance,
+        "balanced_independent_binomial_tail_benchmark": (
+            exact_binomial_upper_tail(correct, total, chance)
+        ),
+        "conditional_balanced_label_permutation_p": float(
+            (1 + np.sum(permuted_correct >= correct))
+            / (1 + len(permuted_correct))
+        ),
+        "permutation_draws": int(len(permuted_correct)),
+        "permutation_scope": (
+            "Evaluation labels only, conditional on the frozen trained "
+            "centroids and balanced evaluation set; calibration labels "
+            "are not re-permuted."
+        ),
+        "confusion": confusion,
+    }
+
+
+def analyze_dataset_pair(
+    calibration: dict[str, list[dict[str, float]]],
+    evaluation: dict[str, list[dict[str, float]]],
+    bootstrap_seed: int,
+) -> dict[str, object]:
+    bootstrap_rng = np.random.RandomState(bootstrap_seed)
+    paired_contrasts = [
+        paired_contrast(
+            evaluation,
+            "F0_current",
+            "M0_mean_only",
+            "residual_rms_relative",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F0_current",
+            "F0_matched",
+            "residual_rms_relative",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F0_matched",
+            "F1_initial_only",
+            "late_top_decile_turnover",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F5_memory",
+            "F2_gaussian",
+            "late_temporal_correlation",
+            bootstrap_rng,
+        ),
+        paired_contrast(
+            evaluation,
+            "F4_state_history",
+            "F3_poisson",
+            "event_state_rate_ratio",
+            bootstrap_rng,
+        ),
+    ]
+    detector_threshold_contrasts = {
+        label: paired_contrast(
+            evaluation,
+            "F0_matched",
+            "F1_initial_only",
+            f"{label}_turnover",
+            bootstrap_rng,
+        )
+        for label in ("q80", "q90", "q95")
+    }
+    input_power = {
+        lane: float(
+            np.mean(
+                [
+                    row["mean_injected_centered_power"]
+                    for row in evaluation[lane]
+                ]
+            )
+        )
+        for lane in (
+            "F0_matched",
+            "F2_gaussian",
+            "F3_poisson",
+            "F4_state_history",
+            "F5_memory",
+        )
+    }
+    positive_input_values = list(input_power.values())
+    return {
+        "classifier_all_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            MATCHED_SOURCE_LANES,
+        ),
+        "classifier_ongoing_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            ONGOING_MATCHED_LANES,
+        ),
+        "classifier_memoryless_matched_sources": evaluate_classifier(
+            calibration,
+            evaluation,
+            MEMORYLESS_MATCHED_LANES,
+        ),
+        "paired_contrasts": paired_contrasts,
+        "detector_threshold_contrasts": (
+            detector_threshold_contrasts
+        ),
+        "matched_input_power_by_lane": input_power,
+        "matched_input_power_maximum_relative_spread": float(
+            max(positive_input_values) / min(positive_input_values) - 1.0
+        ),
+    }
+
+
+def compact_sensitivity_summary(
+    rows_by_lane: dict[str, list[dict[str, float]]],
+) -> dict[str, dict[str, float]]:
+    features = (
+        "mean_energy",
+        "residual_rms_relative",
+        "late_temporal_correlation",
+        "late_top_decile_turnover",
+        "event_state_rate_ratio",
+        "mean_injected_centered_power",
+        "ensemble_pairwise_final_correlation",
+        "ensemble_pairwise_top_decile_jaccard",
+    )
+    return {
+        lane: {
+            feature: float(
+                np.mean([row[feature] for row in rows_by_lane[lane]])
+            )
+            for feature in features
+        }
+        for lane in ALL_LANES
+    }
+
+
+def main() -> None:
+    calibration = run_dataset(
+        CALIBRATION_SEED_BASE,
+        CALIBRATION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    validation = run_dataset(
+        VALIDATION_SEED_BASE,
+        VALIDATION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    post_revision = run_dataset(
+        POST_REVISION_SEED_BASE,
+        POST_REVISION_REPLICATES,
+        PRIMARY_SIZE,
+        PRIMARY_DT,
+        PRIMARY_TIME,
+    )
+    primary_analysis = analyze_dataset_pair(
+        calibration,
+        validation,
+        BOOTSTRAP_SEED,
+    )
+    post_revision_analysis = analyze_dataset_pair(
+        calibration,
+        post_revision,
+        BOOTSTRAP_SEED + 100,
+    )
+    sensitivity_results = {}
+    for setting_index, (
+        setting_name,
+        size,
+        dt,
+        total_time,
+        initial_mode,
+    ) in enumerate(SENSITIVITY_SETTINGS):
+        sensitivity_calibration = run_dataset(
+            2026220000 + setting_index * 2000,
+            SENSITIVITY_REPLICATES,
+            size,
+            dt,
+            total_time,
+            initial_mode,
+        )
+        sensitivity_validation = run_dataset(
+            2026221000 + setting_index * 2000,
+            SENSITIVITY_REPLICATES,
+            size,
+            dt,
+            total_time,
+            initial_mode,
+        )
+        sensitivity_results[setting_name] = {
+            "setting": {
+                "size": size,
+                "dt": dt,
+                "physical_time": total_time,
+                "initial_mode": initial_mode,
+                "calibration_replicates_per_lane": (
+                    SENSITIVITY_REPLICATES
+                ),
+                "validation_replicates_per_lane": (
+                    SENSITIVITY_REPLICATES
+                ),
+            },
+            "analysis": analyze_dataset_pair(
+                sensitivity_calibration,
+                sensitivity_validation,
+                BOOTSTRAP_SEED + 1000 + setting_index * 10,
+            ),
+            "validation_compact_summary": (
+                compact_sensitivity_summary(sensitivity_validation)
+            ),
+        }
+    primary_compact = compact_sensitivity_summary(validation)
+    dt_scaling = {}
+    for lane in (
+        "F0_current",
+        "F0_matched",
+        "F2_gaussian",
+        "F3_poisson",
+        "F4_state_history",
+        "F5_memory",
+    ):
+        dt_values = np.asarray((0.05, 0.1, 0.2), dtype=np.float64)
+        residual_values = np.asarray(
+            (
+                sensitivity_results["dt_0_05"][
+                    "validation_compact_summary"
+                ][lane]["residual_rms_relative"],
+                primary_compact[lane]["residual_rms_relative"],
+                sensitivity_results["dt_0_2"][
+                    "validation_compact_summary"
+                ][lane]["residual_rms_relative"],
+            ),
+            dtype=np.float64,
+        )
+        input_power_values = np.asarray(
+            (
+                sensitivity_results["dt_0_05"][
+                    "validation_compact_summary"
+                ][lane]["mean_injected_centered_power"],
+                primary_compact[lane]["mean_injected_centered_power"],
+                sensitivity_results["dt_0_2"][
+                    "validation_compact_summary"
+                ][lane]["mean_injected_centered_power"],
+            ),
+            dtype=np.float64,
+        )
+        dt_scaling[lane] = {
+            "dt": dt_values.tolist(),
+            "residual_rms_relative": residual_values.tolist(),
+            "residual_rms_exponent": float(
+                np.polyfit(
+                    np.log(dt_values),
+                    np.log(residual_values),
+                    1,
+                )[0]
+            ),
+            "mean_injected_centered_power": (
+                input_power_values.tolist()
+            ),
+            "one_step_input_power_exponent": float(
+                np.polyfit(
+                    np.log(dt_values),
+                    np.log(input_power_values),
+                    1,
+                )[0]
+            ),
+            "warning": (
+                "Three-point navigation fit across independent seed "
+                "families; it is not an asymptotic convergence proof."
+            ),
+        }
+    result = {
+        "schema": SCHEMA,
+        "protocol": {
+            "version": PROTOCOL_VERSION,
+            "status": (
+                "recorded protocol revision; new seed families were frozen "
+                "before the revised output"
+            ),
+            "question": (
+                "Under an identical reconstructed nonlinear backbone and "
+                "initial state, which declared source contracts causally "
+                "change late morphology after matching an open-loop F0 "
+                "conditional-mean trajectory and primary-step variance?"
+            ),
+            "primary": {
+                "size": PRIMARY_SIZE,
+                "dt": PRIMARY_DT,
+                "reference_dt": REFERENCE_DT,
+                "physical_time": PRIMARY_TIME,
+                "initial_mode": "structured",
+                "late_lag_time": LATE_LAG_TIME,
+                "calibration_replicates_per_lane": CALIBRATION_REPLICATES,
+                "validation_replicates_per_lane": VALIDATION_REPLICATES,
+                "post_revision_replicates_per_lane": (
+                    POST_REVISION_REPLICATES
+                ),
+                "lanes": list(ALL_LANES),
+            },
+            "sensitivity_settings": [
+                {
+                    "name": name,
+                    "size": size,
+                    "dt": dt,
+                    "physical_time": total_time,
+                    "initial_mode": initial_mode,
+                    "replicates_per_lane_per_split": (
+                        SENSITIVITY_REPLICATES
+                    ),
+                }
+                for name, size, dt, total_time, initial_mode
+                in SENSITIVITY_SETTINGS
+            ],
+            "controls": {
+                "D0_no_source": "no conditional mean and no stochastic residual",
+                "M0_mean_only": "deterministic conditional mean of current F0",
+                "F0_current": (
+                    "faithful implemented Bernoulli plus Gaussian source "
+                    "with endogenous state feedback"
+                ),
+                "F0_matched": (
+                    "centered F0 Bernoulli plus Gaussian residual around "
+                    "the common open-loop conditional mean"
+                ),
+                "F1_initial_only": (
+                    "one initial perturbation with total raw variance equal "
+                    "to the scheduled F0 injection, then common mean only"
+                ),
+                "F2_gaussian": (
+                    "Gaussian square-root-dt residual calibrated to F0 at "
+                    "reference dt"
+                ),
+                "F3_poisson": (
+                    "independent signed compound-Poisson events calibrated "
+                    "to F0 variance at reference dt"
+                ),
+                "F4_state_history": (
+                    "state- and history-dependent signed events with "
+                    "conditional variance matching"
+                ),
+                "F5_memory": (
+                    "exact OU memory with correlation time 0.5 and "
+                    "primary-step variance matching"
+                ),
+            },
+            "classifier_features": list(CLASSIFIER_FEATURES),
+            "branch_identity_metrics": (
+                "Within-seed persistence uses the late-to-final residual "
+                "correlation and top-mask turnover. Between-seed branch "
+                "identity uses pairwise final residual-map correlation and "
+                "top-decile Jaccard overlap; pairwise summaries are lane-level "
+                "descriptions and are not treated as independent replicates."
+            ),
+            "predeclared_contrasts": [
+                "faithful F0 vs M0 residual RMS",
+                "matched F0 vs F1 late top-decile turnover",
+                "F5 vs F2 late temporal correlation",
+                "F4 vs F3 high-state/low-state event-rate ratio",
+            ],
+            "conditional_history_control": (
+                "Fit one coefficient per independent run for declared state, "
+                "pre-event history, and phi control; aggregate runs, not "
+                "individual cell-steps, as replication units."
+            ),
+            "recorded_revision_from_v0_1": {
+                "development_program_sha256": (
+                    DEVELOPMENT_V01_PROGRAM_SHA256
+                ),
+                "development_output_sha256": (
+                    DEVELOPMENT_V01_OUTPUT_SHA256
+                ),
+                "observed_all_lane_classifier": "16/48 = 33.333%",
+                "diagnosis": (
+                    "Each lane recomputed its own state-dependent mean. "
+                    "The initial-only perturbation therefore changed both "
+                    "the random timing and the later mean drive, while its "
+                    "final energy was not comparable. The classifier could "
+                    "exploit that confound."
+                ),
+                "revision": (
+                    "Preserve faithful F0 as a separate causal lane, but "
+                    "compare F0-F5 around one precomputed open-loop mean "
+                    "trajectory. Match raw conditional input variance at "
+                    "the reference step. Do not force final energy to match "
+                    "because it is a post-treatment outcome."
+                ),
+                "new_seed_families": [
+                    CALIBRATION_SEED_BASE,
+                    VALIDATION_SEED_BASE,
+                    POST_REVISION_SEED_BASE,
+                ],
+            },
+            "recorded_secondary_analysis": {
+                "discovery": (
+                    "The faithful F0 lane had a larger late residual than "
+                    "the open-loop matched F0 lane despite comparable or "
+                    "lower centered input power, suggesting amplification "
+                    "through state-dependent future mean drive."
+                ),
+                "status": (
+                    "This contrast was identified after the first revised "
+                    "development run. No source equation, feature, or "
+                    "threshold was changed afterward. It is evaluated on "
+                    "the separate post-revision seeds and every declared "
+                    "sensitivity, and remains an interpretation rather than "
+                    "a proof of a physical feedback mechanism."
+                ),
+            },
+            "claim_boundary": (
+                "Classification concerns source-attributable numerical "
+                "morphology in this lane, not quantum ontology, particles, "
+                "gravity, or experimental validation."
+            ),
+        },
+        "primary_results": {
+            "calibration_summary": {
+                lane: summarize_rows(calibration[lane])
+                for lane in ALL_LANES
+            },
+            "validation_summary": {
+                lane: summarize_rows(validation[lane])
+                for lane in ALL_LANES
+            },
+            "validation_analysis": primary_analysis,
+            "post_revision_summary": {
+                lane: summarize_rows(post_revision[lane])
+                for lane in ALL_LANES
+            },
+            "post_revision_analysis": post_revision_analysis,
+            "conditional_event_history": event_conditional_control(
+                2026215000,
+                8,
+            ),
+            "sensitivities": sensitivity_results,
+            "three_point_dt_scaling": dt_scaling,
+        },
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "audited_core_commit": AUDITED_CORE_COMMIT,
+            "audited_core_math_git_blob": AUDITED_CORE_MATH_GIT_BLOB,
+        },
+    }
+    normalized = json.dumps(result, indent=2, sort_keys=True)
+    result["normalized_payload_sha256_before_hash_field"] = hashlib.sha256(
+        (normalized + "\n").encode("utf-8")
+    ).hexdigest()
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+"""Standalone Gate 3A audit of Lineum object detection and identity tracking.
+
+Protocol status: frozen synthetic-observer calibration before any physical
+Lineum trajectory is evaluated.  The program reproduces the audited legacy
+observer, challenges it with exact synthetic controls, and validates a
+source-blind replacement protocol.  It imports no Lineum package and reads or
+writes no files.
+"""
+
+
+import json
+import math
+import platform
+from dataclasses import dataclass
+
+import numpy as np
+import scipy
+from scipy.ndimage import gaussian_filter, maximum_filter
+from scipy.optimize import linear_sum_assignment
+
+
+SCHEMA = "lineum.linon-observer-gate-3a.v1"
+PROTOCOL_VERSION = "1.0-frozen-before-physics"
+AUDITED_CORE_COMMIT = "ce2940ec96dfa3c24fae5dad51f5ec14e285666f"
+AUDITED_LINEUM_PY_GIT_BLOB = "a57171a633b85d02e4c2047d367cab5b534181aa"
+AUDITED_VFX_PROGRAM_GIT_BLOB = "8df7a63e87446cc9c3de5db9cbeef094b0a4f675"
+AUDITED_VFX_TEST_GIT_BLOB = "6dcc111ad9ebe9624b490eaebec0c651c8796511"
+
+LEGACY_AMPLITUDE_THRESHOLD = 0.12
+LEGACY_NEIGHBORHOOD_SIZE = 3
+LEGACY_LINK_DISTANCE = 3.0
+
+BACKGROUND_SIGMA_FRACTION = 1.0 / 16.0
+ROBUST_Z_THRESHOLD = 3.5
+MIN_COMPONENT_AREA_FRACTION = 0.00075
+MAX_COMPONENT_AREA_FRACTION = 0.08
+MIN_COMPACTNESS = 0.15
+PATCH_RADIUS_FRACTION = 0.08
+MAX_LINK_FRACTION = 0.08
+MAX_MASS_RATIO = 4.0
+MASS_COST_WEIGHT = 1.5
+SHAPE_COST_WEIGHT = 0.5
+MIN_SHAPE_CORRELATION = 0.35
+MAX_ASSIGNMENT_COST = 3.0
+MAX_MISSED_FRAMES = 1
+
+NULL_SEQUENCES = 24
+NULL_FRAMES = 40
+NULL_SIZE = 32
+NULL_SEED_BASE = 2026220000
+
+
+def plain(value):
+    """Convert NumPy values recursively to JSON-safe Python values."""
+    if isinstance(value, dict):
+        return {str(key): plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [plain(item) for item in value]
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, (np.integer,)):
+        return int(value)
+    if isinstance(value, (np.floating,)):
+        return float(value)
+    return value
+
+
+def legacy_detect_amplitude_peaks(amplitude: np.ndarray) -> np.ndarray:
+    """Reproduce the audited legacy amplitude-only particle detector."""
+    local_maximum = (
+        amplitude
+        == maximum_filter(amplitude, size=LEGACY_NEIGHBORHOOD_SIZE)
+    )
+    particles = (amplitude > LEGACY_AMPLITUDE_THRESHOLD) & local_maximum
+    return np.argwhere(particles)
+
+
+def legacy_track(
+    coordinates: np.ndarray,
+    active_tracks: dict[int, np.ndarray],
+    next_id: int,
+    step_index: int,
+    amplitude: np.ndarray,
+    trajectories: list[tuple[int, int, int, int, float]],
+) -> tuple[dict[int, np.ndarray], int]:
+    """Reproduce the audited greedy nearest-neighbor tracker."""
+    if len(coordinates) == 0:
+        return {}, next_id
+    if not active_tracks:
+        new_active_tracks = {}
+        for cy, cx in coordinates:
+            new_active_tracks[next_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            trajectories.append(
+                (
+                    int(next_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+            next_id += 1
+        return new_active_tracks, next_id
+
+    track_ids = list(active_tracks.keys())
+    track_positions = np.array(
+        list(active_tracks.values()),
+        dtype=np.float64,
+    )
+    candidate_positions = np.asarray(coordinates, dtype=np.float64)
+    distances = np.linalg.norm(
+        candidate_positions[:, None, :] - track_positions[None, :, :],
+        axis=2,
+    )
+    assigned_track_ids = set()
+    new_active_tracks = {}
+    for candidate_index, (cy, cx) in enumerate(coordinates):
+        best_track_index = -1
+        minimum_distance = LEGACY_LINK_DISTANCE
+        for track_index, track_id in enumerate(track_ids):
+            if track_id in assigned_track_ids:
+                continue
+            distance = distances[candidate_index, track_index]
+            if distance < minimum_distance:
+                minimum_distance = distance
+                best_track_index = track_index
+        if best_track_index != -1:
+            track_id = track_ids[best_track_index]
+            new_active_tracks[track_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            assigned_track_ids.add(track_id)
+            trajectories.append(
+                (
+                    int(track_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+        else:
+            new_active_tracks[next_id] = np.array(
+                [float(cy), float(cx)]
+            )
+            trajectories.append(
+                (
+                    int(next_id),
+                    int(step_index),
+                    int(cy),
+                    int(cx),
+                    float(amplitude[int(cy), int(cx)]),
+                )
+            )
+            next_id += 1
+    return new_active_tracks, next_id
+
+
+def legacy_winding(phase: np.ndarray) -> np.ndarray:
+    """Reproduce the non-periodic-edge legacy plaquette observer."""
+    p00 = phase[:-1, :-1]
+    p01 = phase[:-1, 1:]
+    p11 = phase[1:, 1:]
+    p10 = phase[1:, :-1]
+    differences = (
+        np.angle(np.exp(1j * (p01 - p00)))
+        + np.angle(np.exp(1j * (p11 - p01)))
+        + np.angle(np.exp(1j * (p10 - p11)))
+        + np.angle(np.exp(1j * (p00 - p10)))
+    )
+    winding = differences / (2.0 * np.pi)
+    result = np.zeros_like(phase, dtype=np.int8)
+    result[:-1, :-1][winding > 0.5] = 1
+    result[:-1, :-1][winding < -0.5] = -1
+    return result
+
+
+def periodic_winding(phase: np.ndarray) -> np.ndarray:
+    """Measure wrapped phase winding on every periodic plaquette."""
+    p00 = phase
+    p01 = np.roll(phase, -1, axis=1)
+    p11 = np.roll(np.roll(phase, -1, axis=0), -1, axis=1)
+    p10 = np.roll(phase, -1, axis=0)
+    differences = (
+        np.angle(np.exp(1j * (p01 - p00)))
+        + np.angle(np.exp(1j * (p11 - p01)))
+        + np.angle(np.exp(1j * (p10 - p11)))
+        + np.angle(np.exp(1j * (p00 - p10)))
+    )
+    winding = differences / (2.0 * np.pi)
+    result = np.zeros_like(phase, dtype=np.int8)
+    result[winding > 0.5] = 1
+    result[winding < -0.5] = -1
+    return result
+
+
+def periodic_delta(new: float, old: float, size: int) -> float:
+    """Return the signed minimal displacement on a periodic axis."""
+    return float((new - old + size / 2.0) % size - size / 2.0)
+
+
+def periodic_distance(
+    first: np.ndarray,
+    second: np.ndarray,
+    size: int,
+) -> float:
+    delta_y = periodic_delta(first[0], second[0], size)
+    delta_x = periodic_delta(first[1], second[1], size)
+    return float(math.hypot(delta_y, delta_x))
+
+
+def periodic_components(mask: np.ndarray) -> list[np.ndarray]:
+    """Return four-neighbor connected components with periodic edges."""
+    size_y, size_x = mask.shape
+    visited = np.zeros_like(mask, dtype=bool)
+    components = []
+    for start_y, start_x in np.argwhere(mask):
+        if visited[start_y, start_x]:
+            continue
+        stack = [(int(start_y), int(start_x))]
+        visited[start_y, start_x] = True
+        coordinates = []
+        while stack:
+            y, x = stack.pop()
+            coordinates.append((y, x))
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                ny = (y + dy) % size_y
+                nx = (x + dx) % size_x
+                if mask[ny, nx] and not visited[ny, nx]:
+                    visited[ny, nx] = True
+                    stack.append((ny, nx))
+        components.append(np.asarray(coordinates, dtype=np.int64))
+    return components
+
+
+def circular_coordinate(
+    coordinates: np.ndarray,
+    weights: np.ndarray,
+    size: int,
+) -> float:
+    angles = 2.0 * np.pi * coordinates / size
+    vector = np.sum(weights * np.exp(1j * angles))
+    if abs(vector) < 1e-15:
+        return float(np.average(coordinates, weights=weights) % size)
+    angle = math.atan2(vector.imag, vector.real) % (2.0 * np.pi)
+    return float(size * angle / (2.0 * np.pi))
+
+
+def normalized_patch(
+    field: np.ndarray,
+    center_y: float,
+    center_x: float,
+    radius: int,
+) -> np.ndarray:
+    size = field.shape[0]
+    y0 = int(round(center_y))
+    x0 = int(round(center_x))
+    offsets = np.arange(-radius, radius + 1)
+    ys = (y0 + offsets) % size
+    xs = (x0 + offsets) % size
+    patch = np.asarray(field[np.ix_(ys, xs)], dtype=np.float64).ravel()
+    patch = patch - float(np.mean(patch))
+    norm = float(np.linalg.norm(patch))
+    if norm < 1e-15:
+        return np.zeros_like(patch)
+    return patch / norm
+
+
+def shape_correlation(first: np.ndarray, second: np.ndarray) -> float:
+    if first.size != second.size:
+        return -1.0
+    first_norm = float(np.linalg.norm(first))
+    second_norm = float(np.linalg.norm(second))
+    if first_norm < 1e-15 or second_norm < 1e-15:
+        return 1.0 if first_norm < 1e-15 and second_norm < 1e-15 else 0.0
+    return float(
+        np.clip(
+            np.dot(first, second) / (first_norm * second_norm),
+            -1.0,
+            1.0,
+        )
+    )
+
+
+@dataclass
+class Detection:
+    kind: str
+    y: float
+    x: float
+    mass: float
+    area: float
+    radius: float
+    compactness: float
+    peak: float
+    charge: int
+    signature: np.ndarray
+
+
+def envelope_detections(psi: np.ndarray) -> list[Detection]:
+    """Detect localized positive density contrast without source labels."""
+    size = psi.shape[0]
+    density = np.abs(psi) ** 2
+    sigma = max(1.0, BACKGROUND_SIGMA_FRACTION * size)
+    background = gaussian_filter(density, sigma=sigma, mode="wrap")
+    contrast = density - background
+    median = float(np.median(contrast))
+    robust_sigma = 1.4826 * float(np.median(np.abs(contrast - median)))
+    numerical_floor = 1e-12 * max(1.0, float(np.max(np.abs(density))))
+    threshold = median + max(
+        ROBUST_Z_THRESHOLD * robust_sigma,
+        numerical_floor,
+    )
+    mask = contrast > threshold
+    minimum_area = max(
+        2,
+        int(round(MIN_COMPONENT_AREA_FRACTION * size * size)),
+    )
+    maximum_area = int(
+        math.floor(MAX_COMPONENT_AREA_FRACTION * size * size)
+    )
+    patch_radius = max(2, int(round(PATCH_RADIUS_FRACTION * size)))
+    detections = []
+    for coordinates in periodic_components(mask):
+        area = int(len(coordinates))
+        if area < minimum_area or area > maximum_area:
+            continue
+        ys = coordinates[:, 0]
+        xs = coordinates[:, 1]
+        component_weights = np.maximum(contrast[ys, xs], 0.0)
+        mass = float(np.sum(component_weights))
+        if mass <= numerical_floor:
+            continue
+        center_y = circular_coordinate(
+            ys.astype(np.float64),
+            component_weights,
+            size,
+        )
+        center_x = circular_coordinate(
+            xs.astype(np.float64),
+            component_weights,
+            size,
+        )
+        radial_square = np.array(
+            [
+                periodic_delta(float(y), center_y, size) ** 2
+                + periodic_delta(float(x), center_x, size) ** 2
+                for y, x in coordinates
+            ],
+            dtype=np.float64,
+        )
+        radius = float(
+            np.sqrt(
+                np.sum(component_weights * radial_square)
+                / max(mass, 1e-30)
+            )
+        )
+        component_set = {
+            (int(y), int(x)) for y, x in coordinates
+        }
+        perimeter = 0
+        for y, x in component_set:
+            for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                if (
+                    ((y + dy) % size, (x + dx) % size)
+                    not in component_set
+                ):
+                    perimeter += 1
+        compactness = float(
+            4.0 * np.pi * area / max(perimeter**2, 1)
+        )
+        if compactness < MIN_COMPACTNESS:
+            continue
+        detections.append(
+            Detection(
+                kind="envelope",
+                y=center_y,
+                x=center_x,
+                mass=mass,
+                area=float(area),
+                radius=radius,
+                compactness=compactness,
+                peak=float(np.max(contrast[ys, xs])),
+                charge=0,
+                signature=normalized_patch(
+                    contrast,
+                    center_y,
+                    center_x,
+                    patch_radius,
+                ),
+            )
+        )
+    return sorted(
+        detections,
+        key=lambda item: (item.kind, item.charge, item.y, item.x),
+    )
+
+
+def topology_detections(psi: np.ndarray) -> list[Detection]:
+    """Detect every periodic phase defect and preserve its signed charge."""
+    size = psi.shape[0]
+    winding = periodic_winding(np.angle(psi))
+    amplitude = np.abs(psi)
+    detections = []
+    for y, x in np.argwhere(winding != 0):
+        charge = int(winding[y, x])
+        ys = np.array([(y + offset) % size for offset in (-1, 0, 1)])
+        xs = np.array([(x + offset) % size for offset in (-1, 0, 1)])
+        local = amplitude[np.ix_(ys, xs)]
+        ring_mass = float(np.sum(local**2))
+        phase_patch = psi[np.ix_(ys, xs)]
+        unit_phase = phase_patch / (np.abs(phase_patch) + 1e-15)
+        signature = np.concatenate(
+            [unit_phase.real.ravel(), unit_phase.imag.ravel()]
+        )
+        signature_norm = float(np.linalg.norm(signature))
+        if signature_norm > 0.0:
+            signature = signature / signature_norm
+        detections.append(
+            Detection(
+                kind="topology",
+                y=float((y + 0.5) % size),
+                x=float((x + 0.5) % size),
+                mass=max(ring_mass, 1e-15),
+                area=1.0,
+                radius=0.0,
+                compactness=1.0,
+                peak=float(np.max(local)),
+                charge=charge,
+                signature=signature,
+            )
+        )
+    return sorted(
+        detections,
+        key=lambda item: (item.kind, item.charge, item.y, item.x),
+    )
+
+
+class GlobalTracker:
+    """Global, toroidal, attribute-aware observer with one-frame tolerance."""
+
+    def __init__(self, size: int):
+        self.size = int(size)
+        self.max_link = MAX_LINK_FRACTION * size
+        self.next_id = 0
+        self.active: dict[int, dict] = {}
+        self.records: dict[int, list[dict]] = {}
+
+    def _new_track(self, detection: Detection, frame: int) -> None:
+        track_id = self.next_id
+        self.next_id += 1
+        position = np.array([detection.y, detection.x], dtype=np.float64)
+        state = {
+            "kind": detection.kind,
+            "charge": detection.charge,
+            "position": position,
+            "previous_position": position.copy(),
+            "mass": detection.mass,
+            "area": detection.area,
+            "radius": detection.radius,
+            "signature": detection.signature.copy(),
+            "missed": 0,
+        }
+        self.active[track_id] = state
+        self.records[track_id] = []
+        self._record(track_id, detection, frame, None)
+
+    def _record(
+        self,
+        track_id: int,
+        detection: Detection,
+        frame: int,
+        correlation_value: float | None,
+    ) -> None:
+        self.records[track_id].append(
+            {
+                "frame": int(frame),
+                "y": float(detection.y),
+                "x": float(detection.x),
+                "mass": float(detection.mass),
+                "area": float(detection.area),
+                "radius": float(detection.radius),
+                "compactness": float(detection.compactness),
+                "peak": float(detection.peak),
+                "kind": detection.kind,
+                "charge": int(detection.charge),
+                "shape_correlation": (
+                    None
+                    if correlation_value is None
+                    else float(correlation_value)
+                ),
+            }
+        )
+
+    def _predicted_position(self, state: dict) -> np.ndarray:
+        velocity = np.array(
+            [
+                periodic_delta(
+                    state["position"][axis],
+                    state["previous_position"][axis],
+                    self.size,
+                )
+                for axis in (0, 1)
+            ],
+            dtype=np.float64,
+        )
+        return (state["position"] + velocity) % self.size
+
+    def update(self, detections: list[Detection], frame: int) -> None:
+        detections = sorted(
+            detections,
+            key=lambda item: (
+                item.kind,
+                item.charge,
+                item.y,
+                item.x,
+                item.mass,
+            ),
+        )
+        if not self.active:
+            for detection in detections:
+                self._new_track(detection, frame)
+            return
+        track_ids = sorted(self.active)
+        if not detections:
+            for track_id in list(track_ids):
+                self.active[track_id]["missed"] += 1
+                if (
+                    self.active[track_id]["missed"]
+                    > MAX_MISSED_FRAMES
+                ):
+                    del self.active[track_id]
+            return
+
+        costs = np.full(
+            (len(track_ids), len(detections)),
+            1e9,
+            dtype=np.float64,
+        )
+        correlations = np.full_like(costs, np.nan)
+        for row, track_id in enumerate(track_ids):
+            state = self.active[track_id]
+            predicted = self._predicted_position(state)
+            for column, detection in enumerate(detections):
+                if state["kind"] != detection.kind:
+                    continue
+                if (
+                    detection.kind == "topology"
+                    and state["charge"] != detection.charge
+                ):
+                    continue
+                position = np.array(
+                    [detection.y, detection.x],
+                    dtype=np.float64,
+                )
+                distance = periodic_distance(
+                    position,
+                    predicted,
+                    self.size,
+                )
+                if distance > self.max_link:
+                    continue
+                mass_ratio = max(
+                    detection.mass / max(state["mass"], 1e-30),
+                    state["mass"] / max(detection.mass, 1e-30),
+                )
+                if (
+                    detection.kind == "envelope"
+                    and mass_ratio > MAX_MASS_RATIO
+                ):
+                    continue
+                correlation_value = shape_correlation(
+                    state["signature"],
+                    detection.signature,
+                )
+                if (
+                    detection.kind == "envelope"
+                    and correlation_value < MIN_SHAPE_CORRELATION
+                ):
+                    continue
+                correlations[row, column] = correlation_value
+                costs[row, column] = (
+                    distance / max(self.max_link, 1e-30)
+                    + MASS_COST_WEIGHT * abs(math.log(mass_ratio))
+                    + SHAPE_COST_WEIGHT * (1.0 - correlation_value)
+                )
+
+        rows, columns = linear_sum_assignment(costs)
+        assigned_tracks = set()
+        assigned_detections = set()
+        for row, column in zip(rows, columns):
+            if costs[row, column] > MAX_ASSIGNMENT_COST:
+                continue
+            track_id = track_ids[row]
+            detection = detections[column]
+            state = self.active[track_id]
+            new_position = np.array(
+                [detection.y, detection.x],
+                dtype=np.float64,
+            )
+            state["previous_position"] = state["position"].copy()
+            state["position"] = new_position
+            state["mass"] = detection.mass
+            state["area"] = detection.area
+            state["radius"] = detection.radius
+            state["signature"] = detection.signature.copy()
+            state["charge"] = detection.charge
+            state["missed"] = 0
+            self._record(
+                track_id,
+                detection,
+                frame,
+                correlations[row, column],
+            )
+            assigned_tracks.add(track_id)
+            assigned_detections.add(column)
+
+        for track_id in list(track_ids):
+            if track_id in assigned_tracks:
+                continue
+            self.active[track_id]["missed"] += 1
+            if self.active[track_id]["missed"] > MAX_MISSED_FRAMES:
+                del self.active[track_id]
+        for column, detection in enumerate(detections):
+            if column not in assigned_detections:
+                self._new_track(detection, frame)
+
+    def summaries(self) -> list[dict]:
+        summaries = []
+        for track_id, records in sorted(self.records.items()):
+            frames = np.array(
+                [record["frame"] for record in records],
+                dtype=np.int64,
+            )
+            masses = np.array(
+                [record["mass"] for record in records],
+                dtype=np.float64,
+            )
+            radii = np.array(
+                [record["radius"] for record in records],
+                dtype=np.float64,
+            )
+            correlations = np.array(
+                [
+                    record["shape_correlation"]
+                    for record in records
+                    if record["shape_correlation"] is not None
+                ],
+                dtype=np.float64,
+            )
+            span = int(frames[-1] - frames[0] + 1)
+            summaries.append(
+                {
+                    "id": int(track_id),
+                    "kind": self.records[track_id][0].get(
+                        "kind",
+                        self.active.get(track_id, {}).get(
+                            "kind",
+                            "unknown",
+                        ),
+                    ),
+                    "observations": int(len(records)),
+                    "first_frame": int(frames[0]),
+                    "last_frame": int(frames[-1]),
+                    "span_frames": span,
+                    "coverage": float(len(records) / span),
+                    "mass_coefficient_of_variation": float(
+                        np.std(masses) / max(np.mean(masses), 1e-30)
+                    ),
+                    "radius_coefficient_of_variation": float(
+                        np.std(radii) / max(np.mean(radii), 1e-30)
+                    )
+                    if float(np.mean(radii)) > 0.0
+                    else 0.0,
+                    "median_shape_correlation": float(
+                        np.median(correlations)
+                    )
+                    if len(correlations)
+                    else None,
+                    "final_mass": float(masses[-1]),
+                    "final_y": float(records[-1]["y"]),
+                    "final_x": float(records[-1]["x"]),
+                    "charge": int(records[-1]["charge"]),
+                }
+            )
+        return summaries
+
+
+def gaussian_psi(
+    size: int,
+    center_y: float,
+    center_x: float,
+    width: float,
+    peak_density: float = 1.0,
+    background_density: float = 0.05,
+) -> np.ndarray:
+    yy, xx = np.mgrid[:size, :size]
+    dy = (yy - center_y + size / 2.0) % size - size / 2.0
+    dx = (xx - center_x + size / 2.0) % size - size / 2.0
+    density = background_density + peak_density * np.exp(
+        -(dx**2 + dy**2) / (2.0 * width**2)
+    )
+    return np.sqrt(density).astype(np.complex128)
+
+
+def planar_vortex_pair(size: int) -> np.ndarray:
+    """Return a deterministic vortex-antivortex field for observer controls."""
+    yy, xx = np.mgrid[:size, :size]
+    first = (0.35 * size, 0.35 * size)
+    second = (0.65 * size, 0.65 * size)
+    z_first = (xx - first[1]) + 1j * (yy - first[0])
+    z_second = (xx - second[1]) + 1j * (yy - second[0])
+    radius_first = np.abs(z_first)
+    radius_second = np.abs(z_second)
+    phase = (
+        z_first / (radius_first + 1e-15)
+        * np.conj(z_second / (radius_second + 1e-15))
+    )
+    amplitude = np.tanh(radius_first / 1.3) * np.tanh(
+        radius_second / 1.3
+    )
+    return amplitude * phase
+
+
+def detection_for_assignment(
+    y: float,
+    x: float,
+    mass: float,
+    signature: tuple[float, ...],
+) -> Detection:
+    vector = np.asarray(signature, dtype=np.float64)
+    vector /= max(float(np.linalg.norm(vector)), 1e-30)
+    return Detection(
+        kind="envelope",
+        y=float(y),
+        x=float(x),
+        mass=float(mass),
+        area=5.0,
+        radius=1.0,
+        compactness=0.7,
+        peak=float(mass),
+        charge=0,
+        signature=vector,
+    )
+
+
+def legacy_controls() -> dict:
+    size = 16
+    flat = np.full((size, size), 0.2, dtype=np.float64)
+    gaussian = np.abs(
+        gaussian_psi(
+            size,
+            center_y=8.0,
+            center_x=8.0,
+            width=1.2,
+            peak_density=0.056,
+            background_density=0.0001,
+        )
+    )
+    scaled_gaussian = 0.5 * gaussian
+
+    initial_amplitude = np.zeros((size, size), dtype=np.float64)
+    initial_amplitude[8, 15] = 1.0
+    next_amplitude = np.zeros_like(initial_amplitude)
+    next_amplitude[8, 0] = 1.0
+    trajectories = []
+    active, next_id = legacy_track(
+        np.array([[8, 15]], dtype=np.int64),
+        {},
+        0,
+        0,
+        initial_amplitude,
+        trajectories,
+    )
+    active, next_id = legacy_track(
+        np.array([[8, 0]], dtype=np.int64),
+        active,
+        next_id,
+        1,
+        next_amplitude,
+        trajectories,
+    )
+
+    ambiguous_amplitude = np.ones((size, size), dtype=np.float64)
+    base_tracks = {
+        0: np.array([8.0, 5.0]),
+        1: np.array([8.0, 9.0]),
+    }
+    order_first_trajectories = []
+    order_first, order_first_next = legacy_track(
+        np.array([[8, 7], [8, 6]], dtype=np.int64),
+        {key: value.copy() for key, value in base_tracks.items()},
+        2,
+        1,
+        ambiguous_amplitude,
+        order_first_trajectories,
+    )
+    order_second_trajectories = []
+    order_second, order_second_next = legacy_track(
+        np.array([[8, 6], [8, 7]], dtype=np.int64),
+        {key: value.copy() for key, value in base_tracks.items()},
+        2,
+        1,
+        ambiguous_amplitude,
+        order_second_trajectories,
+    )
+
+    crossing_amplitude = np.zeros((size, size), dtype=np.float64)
+    crossing_amplitude[8, 6] = 0.5
+    crossing_amplitude[8, 8] = 1.0
+    crossing_trajectories = []
+    legacy_track(
+        np.array([[8, 6], [8, 8]], dtype=np.int64),
+        {
+            0: np.array([8.0, 5.0]),
+            1: np.array([8.0, 9.0]),
+        },
+        2,
+        1,
+        crossing_amplitude,
+        crossing_trajectories,
+    )
+
+    pair = planar_vortex_pair(32)
+    amplitude = np.abs(
+        gaussian_psi(
+            32,
+            center_y=16.0,
+            center_x=16.0,
+            width=3.0,
+        )
+    )
+    constant_phase = amplitude.astype(np.complex128)
+    vortex_phase = amplitude * np.exp(1j * np.angle(pair))
+    legacy_shift_counts = []
+    periodic_shift_counts = []
+    for shift in range(32):
+        shifted = np.roll(pair, shift, axis=1)
+        legacy_shift_counts.append(
+            int(np.sum(np.abs(legacy_winding(np.angle(shifted)))))
+        )
+        periodic_shift_counts.append(
+            int(np.sum(np.abs(periodic_winding(np.angle(shifted)))))
+        )
+
+    result = {
+        "flat_plateau_detected_peaks": int(
+            len(legacy_detect_amplitude_peaks(flat))
+        ),
+        "amplitude_rescaling": {
+            "original_detected_peaks": int(
+                len(legacy_detect_amplitude_peaks(gaussian))
+            ),
+            "half_scale_detected_peaks": int(
+                len(legacy_detect_amplitude_peaks(scaled_gaussian))
+            ),
+            "normalized_shape_correlation": float(
+                np.corrcoef(
+                    gaussian.ravel() / np.max(gaussian),
+                    scaled_gaussian.ravel()
+                    / np.max(scaled_gaussian),
+                )[0, 1]
+            ),
+        },
+        "periodic_boundary_track": {
+            "trajectory_ids": [
+                int(row[0]) for row in trajectories
+            ],
+            "next_id": int(next_id),
+            "active_ids_after_crossing": sorted(
+                int(track_id) for track_id in active
+            ),
+        },
+        "coordinate_order_dependence": {
+            "first_order_next_id": int(order_first_next),
+            "second_order_next_id": int(order_second_next),
+            "first_order_tracks": {
+                str(key): value.tolist()
+                for key, value in sorted(order_first.items())
+            },
+            "second_order_tracks": {
+                str(key): value.tolist()
+                for key, value in sorted(order_second.items())
+            },
+        },
+        "crossing_identity": {
+            "track_zero_assigned_amplitude": float(
+                crossing_trajectories[0][4]
+            ),
+            "track_one_assigned_amplitude": float(
+                crossing_trajectories[1][4]
+            ),
+            "expected_if_amplitude_identity_preserved": {
+                "track_zero": 1.0,
+                "track_one": 0.5,
+            },
+        },
+        "phase_topology_blindness": {
+            "constant_phase_peak_count": int(
+                len(legacy_detect_amplitude_peaks(np.abs(constant_phase)))
+            ),
+            "vortex_phase_peak_count": int(
+                len(legacy_detect_amplitude_peaks(np.abs(vortex_phase)))
+            ),
+            "constant_phase_periodic_defects": int(
+                np.sum(
+                    np.abs(periodic_winding(np.angle(constant_phase)))
+                )
+            ),
+            "vortex_phase_periodic_defects": int(
+                np.sum(
+                    np.abs(periodic_winding(np.angle(vortex_phase)))
+                )
+            ),
+        },
+        "topology_translation_invariance": {
+            "legacy_unique_total_defect_counts": sorted(
+                set(legacy_shift_counts)
+            ),
+            "periodic_unique_total_defect_counts": sorted(
+                set(periodic_shift_counts)
+            ),
+        },
+    }
+    assert result["flat_plateau_detected_peaks"] == size * size
+    assert result["amplitude_rescaling"]["original_detected_peaks"] > 0
+    assert result["amplitude_rescaling"]["half_scale_detected_peaks"] == 0
+    assert result["periodic_boundary_track"]["trajectory_ids"] == [0, 1]
+    assert order_first_next != order_second_next
+    assert (
+        result["crossing_identity"]["track_zero_assigned_amplitude"]
+        == 0.5
+    )
+    assert (
+        result["phase_topology_blindness"][
+            "constant_phase_peak_count"
+        ]
+        == result["phase_topology_blindness"]["vortex_phase_peak_count"]
+    )
+    assert (
+        result["phase_topology_blindness"][
+            "vortex_phase_periodic_defects"
+        ]
+        > 0
+    )
+    assert (
+        len(
+            result["topology_translation_invariance"][
+                "periodic_unique_total_defect_counts"
+            ]
+        )
+        == 1
+    )
+    assert (
+        len(
+            result["topology_translation_invariance"][
+                "legacy_unique_total_defect_counts"
+            ]
+        )
+        > 1
+    )
+    return result
+
+
+def new_observer_positive_controls() -> dict:
+    size = 64
+    flat = np.sqrt(
+        np.full((size, size), 0.2, dtype=np.float64)
+    ).astype(np.complex128)
+    gaussian = gaussian_psi(
+        size,
+        center_y=32.0,
+        center_x=32.0,
+        width=3.0,
+    )
+    scaled = 0.5 * gaussian
+    flat_count = len(envelope_detections(flat))
+    gaussian_count = len(envelope_detections(gaussian))
+    scaled_count = len(envelope_detections(scaled))
+
+    moving_tracker = GlobalTracker(size)
+    moving_counts = []
+    for frame, x in enumerate((58.0, 60.0, 62.0, 0.0, 2.0, 4.0)):
+        detections = envelope_detections(
+            gaussian_psi(
+                size,
+                center_y=32.0,
+                center_x=x,
+                width=3.0,
+            )
+        )
+        moving_counts.append(len(detections))
+        moving_tracker.update(detections, frame)
+    moving_summaries = moving_tracker.summaries()
+
+    initial = [
+        detection_for_assignment(8.0, 5.0, 1.0, (1.0, 0.0)),
+        detection_for_assignment(8.0, 9.0, 0.5, (0.0, 1.0)),
+    ]
+    crossing = [
+        detection_for_assignment(8.0, 6.0, 0.5, (0.0, 1.0)),
+        detection_for_assignment(8.0, 8.0, 1.0, (1.0, 0.0)),
+    ]
+    tracker_first = GlobalTracker(64)
+    tracker_first.update(initial, 0)
+    tracker_first.update(crossing, 1)
+    tracker_second = GlobalTracker(64)
+    tracker_second.update(list(reversed(initial)), 0)
+    tracker_second.update(list(reversed(crossing)), 1)
+    summaries_first = tracker_first.summaries()
+    summaries_second = tracker_second.summaries()
+
+    pair = planar_vortex_pair(32)
+    legacy_counts = []
+    periodic_counts = []
+    topology_tracker = GlobalTracker(32)
+    topology_frame_counts = []
+    for frame, shift in enumerate((9, 10, 11, 12, 13, 14)):
+        shifted = np.roll(pair, shift, axis=1)
+        legacy_counts.append(
+            int(np.sum(np.abs(legacy_winding(np.angle(shifted)))))
+        )
+        periodic_counts.append(
+            int(np.sum(np.abs(periodic_winding(np.angle(shifted)))))
+        )
+        detections = topology_detections(shifted)
+        topology_frame_counts.append(len(detections))
+        topology_tracker.update(detections, frame)
+    topology_summaries = topology_tracker.summaries()
+
+    result = {
+        "flat_plateau_envelope_count": int(flat_count),
+        "scale_equivariance": {
+            "original_envelope_count": int(gaussian_count),
+            "half_scale_envelope_count": int(scaled_count),
+        },
+        "periodic_moving_gaussian": {
+            "detections_per_frame": moving_counts,
+            "track_count": int(len(moving_summaries)),
+            "track_summaries": moving_summaries,
+        },
+        "global_assignment": {
+            "order_invariant": summaries_first == summaries_second,
+            "first_order": summaries_first,
+            "reversed_order": summaries_second,
+            "identity_final_masses": {
+                str(row["id"]): row["final_mass"]
+                for row in summaries_first
+            },
+        },
+        "periodic_topology": {
+            "legacy_counts_during_edge_crossing": legacy_counts,
+            "periodic_counts_during_edge_crossing": periodic_counts,
+            "detections_per_frame": topology_frame_counts,
+            "track_summaries": topology_summaries,
+        },
+    }
+    assert flat_count == 0
+    assert gaussian_count == scaled_count == 1
+    assert moving_counts == [1] * len(moving_counts)
+    assert len(moving_summaries) == 1
+    assert moving_summaries[0]["observations"] == len(moving_counts)
+    assert summaries_first == summaries_second
+    assert result["global_assignment"]["identity_final_masses"] == {
+        "0": 1.0,
+        "1": 0.5,
+    }
+    assert len(set(periodic_counts)) == 1
+    assert len(set(legacy_counts)) > 1
+    assert len(set(topology_frame_counts)) == 1
+    assert all(
+        row["observations"] == len(topology_frame_counts)
+        for row in topology_summaries
+    )
+    return result
+
+
+def null_calibration() -> dict:
+    maximum_observations = []
+    maximum_spans = []
+    track_counts = []
+    detections_per_frame = []
+    for sequence_index in range(NULL_SEQUENCES):
+        rng = np.random.RandomState(NULL_SEED_BASE + sequence_index)
+        tracker = GlobalTracker(NULL_SIZE)
+        sequence_detections = []
+        for frame in range(NULL_FRAMES):
+            raw = gaussian_filter(
+                rng.normal(size=(NULL_SIZE, NULL_SIZE)),
+                sigma=0.6,
+                mode="wrap",
+            )
+            density = np.clip(0.2 + 0.02 * raw, 1e-8, None)
+            psi = np.sqrt(density).astype(np.complex128)
+            detections = envelope_detections(psi)
+            sequence_detections.append(len(detections))
+            tracker.update(detections, frame)
+        summaries = tracker.summaries()
+        maximum_observations.append(
+            max((row["observations"] for row in summaries), default=0)
+        )
+        maximum_spans.append(
+            max((row["span_frames"] for row in summaries), default=0)
+        )
+        track_counts.append(len(summaries))
+        detections_per_frame.extend(sequence_detections)
+    observation_threshold = int(
+        np.quantile(maximum_observations, 0.99, method="higher")
+    )
+    span_threshold = int(
+        np.quantile(maximum_spans, 0.99, method="higher")
+    )
+    return {
+        "sequences": NULL_SEQUENCES,
+        "frames_per_sequence": NULL_FRAMES,
+        "size": NULL_SIZE,
+        "maximum_track_observations_by_sequence": maximum_observations,
+        "maximum_track_span_by_sequence": maximum_spans,
+        "tracks_per_sequence": track_counts,
+        "detections_per_frame_summary": {
+            "minimum": int(min(detections_per_frame)),
+            "median": float(np.median(detections_per_frame)),
+            "maximum": int(max(detections_per_frame)),
+        },
+        "familywise_99_percent_observation_threshold": (
+            observation_threshold
+        ),
+        "familywise_99_percent_span_threshold": span_threshold,
+    }
+
+
+def main() -> None:
+    legacy = legacy_controls()
+    positive = new_observer_positive_controls()
+    null = null_calibration()
+    gate_3b = {
+        "observer_is_source_blind": True,
+        "observation_interval_must_be_fixed_in_physical_time": True,
+        "envelope_candidate_requirements": {
+            "observations_strictly_greater_than_iid_null_99_percent": (
+                null["familywise_99_percent_observation_threshold"]
+            ),
+            "span_strictly_greater_than_iid_null_99_percent": (
+                null["familywise_99_percent_span_threshold"]
+            ),
+            "coverage_minimum": 0.9,
+            "median_adjacent_shape_correlation_minimum": 0.6,
+            "mass_coefficient_of_variation_maximum": 0.5,
+            "radius_coefficient_of_variation_maximum": 0.5,
+        },
+        "topological_candidate_requirements": {
+            "periodic_signed_charge_required": True,
+            "charge_retention_fraction_minimum": 0.9,
+            "same_null_lifetime_controls_required": True,
+        },
+        "mandatory_controls": [
+            "deterministic and mean-only counterfactuals",
+            "time-shuffled actual frames",
+            "phase-randomized spatial surrogates",
+            "dt refinement at equal physical time",
+            "grid refinement at equal physical domain",
+            "periodic and open-or-absorbing boundary sensitivity",
+            "uniform and nonuniform kappa",
+            "caps disabled with finite-field assertion",
+            "seeded Gaussian blob and neutral vortex-pair positive challenges",
+        ],
+        "stop_rule": (
+            "Do not run collision claims unless one single-object candidate "
+            "passes lifetime, shape, mass-or-charge, cap, time, grid, and "
+            "boundary controls."
+        ),
+        "interpretation_boundary": (
+            "Passing Gate 3B establishes a numerical localized object "
+            "candidate, not a fundamental particle."
+        ),
+    }
+    result = {
+        "schema": SCHEMA,
+        "protocol_version": PROTOCOL_VERSION,
+        "audit_binding": {
+            "core_commit": AUDITED_CORE_COMMIT,
+            "lineum_py_git_blob": AUDITED_LINEUM_PY_GIT_BLOB,
+            "vfx_program_git_blob": AUDITED_VFX_PROGRAM_GIT_BLOB,
+            "vfx_test_git_blob": AUDITED_VFX_TEST_GIT_BLOB,
+        },
+        "synthetic_protocol_correction_log": [
+            {
+                "stage": "pre-physics positive-control calibration",
+                "change": (
+                    "Gaussian peak density changed from 0.16 to 0.056 so "
+                    "the original peak is above the legacy amplitude "
+                    "threshold and its exact half-scale copy is below it."
+                ),
+                "reason": (
+                    "The initial 0.16 control made both copies exceed 0.12 "
+                    "and therefore could not test absolute-threshold scale "
+                    "sensitivity."
+                ),
+                "physical_lineum_data_seen": False,
+            },
+            {
+                "stage": "pre-physics null calibration",
+                "change": (
+                    "Robust contrast threshold changed from 6.0 to 3.5 "
+                    "median absolute-deviation standard deviations."
+                ),
+                "reason": (
+                    "At 6.0 the declared IID null produced no detections in "
+                    "24 x 40 frames, leaving a degenerate zero lifetime "
+                    "threshold. At 3.5 the null retains rare one-frame false "
+                    "positives and therefore supplies a nonzero lifetime "
+                    "challenge."
+                ),
+                "physical_lineum_data_seen": False,
+            }
+        ],
+        "legacy_observer_contract": {
+            "amplitude_threshold": LEGACY_AMPLITUDE_THRESHOLD,
+            "maximum_filter_size": LEGACY_NEIGHBORHOOD_SIZE,
+            "greedy_link_distance_pixels_strictly_less_than": (
+                LEGACY_LINK_DISTANCE
+            ),
+            "uses_amplitude_only_for_detection": True,
+            "uses_phase_or_topological_charge_for_particle_identity": False,
+            "uses_periodic_distance_for_tracking": False,
+            "allows_missing_observations": False,
+        },
+        "legacy_exact_controls": legacy,
+        "replacement_observer_contract": {
+            "background_sigma_fraction_of_grid": (
+                BACKGROUND_SIGMA_FRACTION
+            ),
+            "robust_z_threshold": ROBUST_Z_THRESHOLD,
+            "minimum_component_area_fraction": (
+                MIN_COMPONENT_AREA_FRACTION
+            ),
+            "maximum_component_area_fraction": (
+                MAX_COMPONENT_AREA_FRACTION
+            ),
+            "minimum_compactness": MIN_COMPACTNESS,
+            "patch_radius_fraction_of_grid": PATCH_RADIUS_FRACTION,
+            "maximum_link_fraction_of_grid_per_observation": (
+                MAX_LINK_FRACTION
+            ),
+            "maximum_mass_ratio": MAX_MASS_RATIO,
+            "minimum_shape_correlation": MIN_SHAPE_CORRELATION,
+            "maximum_missed_frames": MAX_MISSED_FRAMES,
+            "global_assignment": "Hungarian minimum-cost matching",
+            "distance_geometry": "toroidal",
+            "topology_geometry": "all periodic plaquettes",
+        },
+        "replacement_positive_controls": positive,
+        "iid_noise_null_calibration": null,
+        "frozen_gate_3b_protocol": gate_3b,
+        "verdict": {
+            "legacy_observer_validates_particle_identity": False,
+            "replacement_observer_passes_declared_synthetic_controls": True,
+            "physical_lineum_trajectory_evaluated": False,
+            "reason_physics_is_deferred": (
+                "Observer validity is a prerequisite; Gate 3B must use the "
+                "frozen protocol without retuning on source labels."
+            ),
+        },
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "scipy": scipy.__version__,
+        },
+    }
+    print(json.dumps(plain(result), indent=2, sort_keys=True))
+
+import json
+import math
+import platform
+
+import numpy as np
+import scipy
+
+
+CORE_COMMIT = "7657f1edb6bc0cf53c4a473999dedbd7ca77d13b"
+CORE_MATH_BLOB = "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa"
+OBSERVER_PROTOCOL = "1.0-frozen-before-physics"
+SCREEN_PROTOCOL = "0.2-recorded-triggered-topology-null"
+DEVELOPMENT_V01_PROGRAM_SHA256 = (
+    "a348c8089f032fe97112957a87af1e34a2e24921aa3194bb3e2e6edbe500dd7c"
+)
+DEVELOPMENT_V01_OUTPUT_SHA256 = (
+    "3f0c59a73076b4339873a42be9498da1efd22862872b4824b1c493427bbca526"
+)
+
+SIZE = 32
+DT = 0.1
+TOTAL_TIME = 60.0
+OBSERVATION_INTERVAL = 1.0
+F0_SEEDS = tuple(2026231000 + index for index in range(12))
+SURROGATES_PER_SEED = 8
+TOPOLOGY_SURROGATES_PER_SEED = 1
+SURROGATE_SEED_BASE = 2026235000
+MINIMUM_PHYSICAL_SPAN = 15.0
+MINIMUM_SEED_PREVALENCE = 0.75
+MINIMUM_PASSING_SEEDS = math.ceil(
+    MINIMUM_SEED_PREVALENCE * len(F0_SEEDS)
+)
+IID_NULL_OBSERVATIONS = 1
+IID_NULL_SPAN = 1
+
+
+
+def plain(value):
+    if isinstance(value, dict):
+        return {str(key): plain(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [plain(item) for item in value]
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, np.integer):
+        return int(value)
+    if isinstance(value, np.floating):
+        return float(value)
+    return value
+
+
+def cap_disabled_config(dt: float) -> object:
+    return BackboneConfig(
+        dt=dt,
+        psi_amp_cap=float("inf"),
+        grad_cap=float("inf"),
+        phi_cap=float("inf"),
+    )
+
+
+def finite_default_cap_config(dt: float) -> object:
+    return BackboneConfig(dt=dt)
+
+
+def build_reference_schedule(
+    size: int,
+    dt: float,
+    total_time: float,
+    initial_mode: str,
+) -> list[dict[str, np.ndarray]]:
+    schedule, _final, _late = build_reference_trajectory(
+        size=size,
+        dt=dt,
+        total_time=total_time,
+        initial_mode=initial_mode,
+    )
+    return schedule
+
+
+def run_frames(
+    lane: str,
+    seed: int,
+    size: int = SIZE,
+    dt: float = DT,
+    total_time: float = TOTAL_TIME,
+    initial_mode: str = "vacuum",
+) -> tuple[list[np.ndarray], dict[str, float]]:
+    observation_steps = int(round(OBSERVATION_INTERVAL / dt))
+    assert math.isclose(
+        observation_steps * dt,
+        OBSERVATION_INTERVAL,
+        rel_tol=0.0,
+        abs_tol=1e-12,
+    )
+    steps = int(round(total_time / dt))
+    config = cap_disabled_config(dt)
+    state = initial_state(size, initial_mode)
+    schedule = build_reference_schedule(
+        size,
+        dt,
+        total_time,
+        initial_mode,
+    )
+    rng = np.random.RandomState(seed)
+    auxiliary = {
+        "eta": np.zeros((size, size), dtype=np.float64),
+        "event_history": np.zeros((size, size), dtype=np.float64),
+    }
+    frames = [np.array(state["psi"], copy=True)]
+    maximum_amplitude = float(np.max(np.abs(state["psi"])))
+    maximum_phi = float(np.max(np.abs(state["phi"])))
+    for step_index in range(steps):
+        increment, auxiliary, _metadata = source_increment(
+            lane,
+            state,
+            rng,
+            config,
+            auxiliary,
+            schedule[step_index],
+        )
+        state = backbone_step(state, config, increment)
+        if not (
+            np.all(np.isfinite(state["psi"]))
+            and np.all(np.isfinite(state["phi"]))
+        ):
+            raise FloatingPointError("Non-finite cap-disabled state")
+        maximum_amplitude = max(
+            maximum_amplitude,
+            float(np.max(np.abs(state["psi"]))),
+        )
+        maximum_phi = max(
+            maximum_phi,
+            float(np.max(np.abs(state["phi"]))),
+        )
+        if (step_index + 1) % observation_steps == 0:
+            frames.append(np.array(state["psi"], copy=True))
+    assert len(frames) == int(round(total_time / OBSERVATION_INTERVAL)) + 1
+    return frames, {
+        "maximum_abs_psi": maximum_amplitude,
+        "maximum_abs_phi": maximum_phi,
+        "all_fields_finite": True,
+        "caps_enabled": False,
+    }
+
+
+def cap_equivalence_control(seed: int) -> dict[str, object]:
+    schedule = build_reference_schedule(
+        SIZE,
+        DT,
+        TOTAL_TIME,
+        "vacuum",
+    )
+    states = {
+        "finite_default_caps": initial_state(SIZE, "vacuum"),
+        "disabled_caps": initial_state(SIZE, "vacuum"),
+    }
+    configs = {
+        "finite_default_caps": finite_default_cap_config(DT),
+        "disabled_caps": cap_disabled_config(DT),
+    }
+    random_generators = {
+        key: np.random.RandomState(seed) for key in states
+    }
+    auxiliaries = {
+        key: {
+            "eta": np.zeros((SIZE, SIZE), dtype=np.float64),
+            "event_history": np.zeros(
+                (SIZE, SIZE),
+                dtype=np.float64,
+            ),
+        }
+        for key in states
+    }
+    maximum_psi_difference = 0.0
+    maximum_phi_difference = 0.0
+    steps = int(round(TOTAL_TIME / DT))
+    for step_index in range(steps):
+        for key in states:
+            increment, auxiliaries[key], _metadata = (
+                source_increment(
+                    "F0_current",
+                    states[key],
+                    random_generators[key],
+                    configs[key],
+                    auxiliaries[key],
+                    schedule[step_index],
+                )
+            )
+            states[key] = backbone_step(
+                states[key],
+                configs[key],
+                increment,
+            )
+        maximum_psi_difference = max(
+            maximum_psi_difference,
+            float(
+                np.max(
+                    np.abs(
+                        states["finite_default_caps"]["psi"]
+                        - states["disabled_caps"]["psi"]
+                    )
+                )
+            ),
+        )
+        maximum_phi_difference = max(
+            maximum_phi_difference,
+            float(
+                np.max(
+                    np.abs(
+                        states["finite_default_caps"]["phi"]
+                        - states["disabled_caps"]["phi"]
+                    )
+                )
+            ),
+        )
+    return {
+        "seed": seed,
+        "steps": steps,
+        "maximum_psi_difference": maximum_psi_difference,
+        "maximum_phi_difference": maximum_phi_difference,
+        "default_psi_cap": 1e6,
+        "default_phi_cap": 1e6,
+        "cap_disabled": True,
+        "exactly_inactive_in_control": (
+            maximum_psi_difference == 0.0
+            and maximum_phi_difference == 0.0
+        ),
+    }
+
+
+def analyze_frames(
+    frames: list[np.ndarray],
+    include_envelope: bool = True,
+    include_topology: bool = True,
+) -> dict[str, object]:
+    size = frames[0].shape[0]
+    tracker = GlobalTracker(size)
+    envelope_counts = []
+    topology_counts = []
+    topology_net_charges = []
+    legacy_counts = []
+    for frame_index, psi in enumerate(frames):
+        detections = []
+        if include_envelope:
+            envelope = envelope_detections(psi)
+            detections.extend(envelope)
+            envelope_counts.append(len(envelope))
+        if include_topology:
+            topology = topology_detections(psi)
+            detections.extend(topology)
+            topology_counts.append(len(topology))
+            topology_net_charges.append(
+                int(sum(item.charge for item in topology))
+            )
+        legacy_counts.append(
+            len(legacy_detect_amplitude_peaks(np.abs(psi)))
+        )
+        tracker.update(detections, frame_index)
+    summaries = tracker.summaries()
+    return {
+        "track_summaries": summaries,
+        "envelope_counts": envelope_counts,
+        "topology_counts": topology_counts,
+        "topology_net_charges": topology_net_charges,
+        "legacy_peak_counts": legacy_counts,
+        "maximum_track_observations": {
+            kind: max(
+                (
+                    row["observations"]
+                    for row in summaries
+                    if row["kind"] == kind
+                ),
+                default=0,
+            )
+            for kind in ("envelope", "topology")
+        },
+        "maximum_track_span": {
+            kind: max(
+                (
+                    row["span_frames"]
+                    for row in summaries
+                    if row["kind"] == kind
+                ),
+                default=0,
+            )
+            for kind in ("envelope", "topology")
+        },
+    }
+
+
+def count_summary(values: list[int]) -> dict[str, float | int]:
+    if not values:
+        return {"minimum": 0, "median": 0.0, "maximum": 0}
+    return {
+        "minimum": int(min(values)),
+        "median": float(np.median(values)),
+        "maximum": int(max(values)),
+    }
+
+
+def track_observation_histogram(
+    rows: list[dict[str, object]],
+    kind: str,
+) -> dict[str, int]:
+    observations = [
+        int(row["observations"])
+        for row in rows
+        if row["kind"] == kind
+    ]
+    return {
+        "one": int(sum(value == 1 for value in observations)),
+        "two_to_four": int(sum(2 <= value <= 4 for value in observations)),
+        "five_to_fourteen": int(
+            sum(5 <= value <= 14 for value in observations)
+        ),
+        "fifteen_to_twenty_nine": int(
+            sum(15 <= value <= 29 for value in observations)
+        ),
+        "thirty_or_more": int(sum(value >= 30 for value in observations)),
+    }
+
+
+def compact_analysis(analysis: dict[str, object]) -> dict[str, object]:
+    rows = analysis["track_summaries"]
+    top_tracks = {}
+    for kind in ("envelope", "topology"):
+        top_tracks[kind] = sorted(
+            [row for row in rows if row["kind"] == kind],
+            key=lambda row: (
+                int(row["observations"]),
+                int(row["span_frames"]),
+            ),
+            reverse=True,
+        )[:3]
+    return {
+        "track_counts": {
+            kind: int(sum(row["kind"] == kind for row in rows))
+            for kind in ("envelope", "topology")
+        },
+        "maximum_track_observations": analysis[
+            "maximum_track_observations"
+        ],
+        "maximum_track_span": analysis["maximum_track_span"],
+        "track_observation_histograms": {
+            kind: track_observation_histogram(rows, kind)
+            for kind in ("envelope", "topology")
+        },
+        "top_three_tracks": top_tracks,
+        "envelope_detections_per_frame": analysis["envelope_counts"],
+        "topology_detections_per_frame": analysis["topology_counts"],
+        "topology_net_charge_per_frame": analysis[
+            "topology_net_charges"
+        ],
+        "legacy_peaks_per_frame": analysis["legacy_peak_counts"],
+        "detection_count_summaries": {
+            "envelope": count_summary(analysis["envelope_counts"]),
+            "topology": count_summary(analysis["topology_counts"]),
+            "legacy": count_summary(analysis["legacy_peak_counts"]),
+        },
+    }
+
+
+def time_shuffle(
+    frames: list[np.ndarray],
+    rng: np.random.RandomState,
+) -> list[np.ndarray]:
+    order = rng.permutation(len(frames))
+    return [np.array(frames[index], copy=True) for index in order]
+
+
+def random_torus_shift(
+    frames: list[np.ndarray],
+    rng: np.random.RandomState,
+) -> list[np.ndarray]:
+    size = frames[0].shape[0]
+    return [
+        np.roll(
+            np.roll(frame, int(rng.randint(size)), axis=0),
+            int(rng.randint(size)),
+            axis=1,
+        )
+        for frame in frames
+    ]
+
+
+def independent_fourier_phase(
+    frames: list[np.ndarray],
+    rng: np.random.RandomState,
+) -> list[np.ndarray]:
+    surrogates = []
+    for frame in frames:
+        spectrum = np.fft.fft2(frame)
+        randomized = np.abs(spectrum) * np.exp(
+            1j * rng.uniform(-np.pi, np.pi, frame.shape)
+        )
+        surrogate = np.fft.ifft2(randomized)
+        original_norm = float(np.linalg.norm(frame))
+        surrogate_norm = float(np.linalg.norm(surrogate))
+        if surrogate_norm > 0.0:
+            surrogate *= original_norm / surrogate_norm
+        surrogates.append(surrogate.astype(np.complex128))
+    return surrogates
+
+
+def independent_cell_phase(
+    frames: list[np.ndarray],
+    rng: np.random.RandomState,
+) -> list[np.ndarray]:
+    """Preserve every amplitude while independently destroying phase history."""
+    return [
+        np.abs(frame)
+        * np.exp(1j * rng.uniform(-np.pi, np.pi, frame.shape))
+        for frame in frames
+    ]
+
+
+def higher_quantile(values: list[int], quantile: float = 0.99) -> int:
+    if not values:
+        return 0
+    return int(np.quantile(values, quantile, method="higher"))
+
+
+def build_surrogate_nulls(
+    actual_by_seed: dict[int, list[np.ndarray]],
+) -> dict[str, object]:
+    results = {}
+    for surrogate_index, (name, transform) in enumerate(
+        (
+            ("time_shuffle", time_shuffle),
+            ("random_torus_shift", random_torus_shift),
+            ("independent_fourier_phase", independent_fourier_phase),
+        )
+    ):
+        maxima_observations = []
+        maxima_spans = []
+        for seed_index, seed in enumerate(sorted(actual_by_seed)):
+            frames = actual_by_seed[seed]
+            for replicate in range(SURROGATES_PER_SEED):
+                rng = np.random.RandomState(
+                    SURROGATE_SEED_BASE
+                    + surrogate_index * 100_000
+                    + seed_index * 100
+                    + replicate
+                )
+                surrogate = transform(frames, rng)
+                analysis = analyze_frames(
+                    surrogate,
+                    include_envelope=True,
+                    include_topology=False,
+                )
+                maxima_observations.append(
+                    analysis["maximum_track_observations"]["envelope"]
+                )
+                maxima_spans.append(
+                    analysis["maximum_track_span"]["envelope"]
+                )
+        results[name] = {
+            "sequences": len(maxima_observations),
+            "maximum_track_observations": maxima_observations,
+            "maximum_track_span": maxima_spans,
+            "familywise_99_percent_observations": higher_quantile(
+                maxima_observations
+            ),
+            "familywise_99_percent_span": higher_quantile(maxima_spans),
+        }
+    results["combined_envelope_thresholds"] = {
+        "observations_strictly_greater_than": max(
+            IID_NULL_OBSERVATIONS,
+            *[
+                result["familywise_99_percent_observations"]
+                for result in results.values()
+            ],
+        ),
+        "span_strictly_greater_than": max(
+            IID_NULL_SPAN,
+            *[
+                result["familywise_99_percent_span"]
+                for result in results.values()
+            ],
+        ),
+    }
+    return results
+
+
+def build_topology_surrogate_nulls(
+    actual_by_seed: dict[int, list[np.ndarray]],
+) -> dict[str, object]:
+    results = {}
+    for surrogate_index, (name, transform) in enumerate(
+        (
+            ("time_shuffle", time_shuffle),
+            ("random_torus_shift", random_torus_shift),
+            ("independent_cell_phase", independent_cell_phase),
+        )
+    ):
+        maxima_observations = []
+        maxima_spans = []
+        maximum_detections = []
+        median_detections = []
+        for seed_index, seed in enumerate(sorted(actual_by_seed)):
+            frames = actual_by_seed[seed]
+            for replicate in range(TOPOLOGY_SURROGATES_PER_SEED):
+                rng = np.random.RandomState(
+                    SURROGATE_SEED_BASE
+                    + 1_000_000
+                    + surrogate_index * 100_000
+                    + seed_index * 100
+                    + replicate
+                )
+                surrogate = transform(frames, rng)
+                analysis = analyze_frames(
+                    surrogate,
+                    include_envelope=False,
+                    include_topology=True,
+                )
+                maxima_observations.append(
+                    analysis["maximum_track_observations"]["topology"]
+                )
+                maxima_spans.append(
+                    analysis["maximum_track_span"]["topology"]
+                )
+                maximum_detections.append(
+                    max(analysis["topology_counts"], default=0)
+                )
+                median_detections.append(
+                    float(np.median(analysis["topology_counts"]))
+                    if analysis["topology_counts"]
+                    else 0.0
+                )
+        results[name] = {
+            "sequences": len(maxima_observations),
+            "maximum_track_observations": maxima_observations,
+            "maximum_track_span": maxima_spans,
+            "maximum_defects_per_sequence": maximum_detections,
+            "median_defects_per_sequence": median_detections,
+            "familywise_99_percent_observations": higher_quantile(
+                maxima_observations
+            ),
+            "familywise_99_percent_span": higher_quantile(maxima_spans),
+        }
+    results["combined_topology_thresholds"] = {
+        "observations_strictly_greater_than": max(
+            IID_NULL_OBSERVATIONS,
+            *[
+                result["familywise_99_percent_observations"]
+                for result in results.values()
+            ],
+        ),
+        "span_strictly_greater_than": max(
+            IID_NULL_SPAN,
+            *[
+                result["familywise_99_percent_span"]
+                for result in results.values()
+            ],
+        ),
+    }
+    return results
+
+
+def envelope_track_passes(
+    row: dict[str, object],
+    thresholds: dict[str, int],
+) -> bool:
+    physical_span = (
+        int(row["span_frames"]) - 1
+    ) * OBSERVATION_INTERVAL
+    median_correlation = row["median_shape_correlation"]
+    return bool(
+        row["kind"] == "envelope"
+        and int(row["first_frame"]) > 0
+        and int(row["observations"])
+        > thresholds["observations_strictly_greater_than"]
+        and int(row["span_frames"])
+        > thresholds["span_strictly_greater_than"]
+        and physical_span >= MINIMUM_PHYSICAL_SPAN
+        and float(row["coverage"]) >= 0.9
+        and median_correlation is not None
+        and float(median_correlation) >= 0.6
+        and float(row["mass_coefficient_of_variation"]) <= 0.5
+        and float(row["radius_coefficient_of_variation"]) <= 0.5
+    )
+
+
+def topology_track_passes(
+    row: dict[str, object],
+    thresholds: dict[str, int],
+) -> bool:
+    physical_span = (
+        int(row["span_frames"]) - 1
+    ) * OBSERVATION_INTERVAL
+    return bool(
+        row["kind"] == "topology"
+        and int(row["first_frame"]) > 0
+        and int(row["observations"])
+        > thresholds["observations_strictly_greater_than"]
+        and int(row["span_frames"])
+        > thresholds["span_strictly_greater_than"]
+        and physical_span >= MINIMUM_PHYSICAL_SPAN
+        and float(row["coverage"]) >= 0.9
+        and abs(int(row["charge"])) == 1
+    )
+
+
+def main() -> None:
+    deterministic_frames, deterministic_numeric = run_frames(
+        "D0_no_source",
+        F0_SEEDS[0],
+    )
+    mean_frames, mean_numeric = run_frames(
+        "M0_mean_only",
+        F0_SEEDS[0],
+    )
+    deterministic = analyze_frames(deterministic_frames)
+    mean_only = analyze_frames(mean_frames)
+
+    f0_frames = {}
+    f0_analyses = {}
+    f0_numeric = {}
+    for seed in F0_SEEDS:
+        frames, numeric = run_frames("F0_current", seed)
+        f0_frames[seed] = frames
+        f0_analyses[seed] = analyze_frames(frames)
+        f0_numeric[seed] = numeric
+
+    nulls = build_surrogate_nulls(f0_frames)
+    envelope_thresholds = nulls["combined_envelope_thresholds"]
+    passing_envelopes = {}
+    for seed in F0_SEEDS:
+        qualified = [
+            row
+            for row in f0_analyses[seed]["track_summaries"]
+            if envelope_track_passes(row, envelope_thresholds)
+        ]
+        passing_envelopes[seed] = qualified
+    passing_envelope_seed_count = sum(
+        bool(rows) for rows in passing_envelopes.values()
+    )
+
+    structured_frames, structured_numeric = run_frames(
+        "D0_no_source",
+        F0_SEEDS[0],
+        initial_mode="structured",
+    )
+    structured = analyze_frames(structured_frames)
+
+    topology_candidate_seen = any(
+        row["kind"] == "topology"
+        and (row["span_frames"] - 1) * OBSERVATION_INTERVAL
+        >= MINIMUM_PHYSICAL_SPAN
+        and row["coverage"] >= 0.9
+        for analysis in f0_analyses.values()
+        for row in analysis["track_summaries"]
+    )
+    topology_nulls = (
+        build_topology_surrogate_nulls(f0_frames)
+        if topology_candidate_seen
+        else None
+    )
+    passing_topologies = {seed: [] for seed in F0_SEEDS}
+    if topology_nulls is not None:
+        topology_thresholds = topology_nulls[
+            "combined_topology_thresholds"
+        ]
+        for seed in F0_SEEDS:
+            passing_topologies[seed] = [
+                row
+                for row in f0_analyses[seed]["track_summaries"]
+                if topology_track_passes(row, topology_thresholds)
+            ]
+    passing_topology_seed_count = sum(
+        bool(rows) for rows in passing_topologies.values()
+    )
+    any_recurrent_candidate = (
+        passing_envelope_seed_count >= MINIMUM_PASSING_SEEDS
+        or passing_topology_seed_count >= MINIMUM_PASSING_SEEDS
+    )
+    topology_peak_counts = []
+    topology_last_nonzero_times = []
+    topology_actual_longest_observations = []
+    topology_actual_longest_spans = []
+    topology_net_charge_maxima = []
+    for seed in F0_SEEDS:
+        counts = np.asarray(
+            f0_analyses[seed]["topology_counts"],
+            dtype=np.int64,
+        )
+        nonzero = np.flatnonzero(counts)
+        topology_peak_counts.append(int(np.max(counts)))
+        topology_last_nonzero_times.append(
+            0.0
+            if len(nonzero) == 0
+            else float(nonzero[-1] * OBSERVATION_INTERVAL)
+        )
+        topology_actual_longest_observations.append(
+            int(
+                f0_analyses[seed]["maximum_track_observations"][
+                    "topology"
+                ]
+            )
+        )
+        topology_actual_longest_spans.append(
+            int(f0_analyses[seed]["maximum_track_span"]["topology"])
+        )
+        topology_net_charge_maxima.append(
+            max(
+                (
+                    abs(int(value))
+                    for value in f0_analyses[seed][
+                        "topology_net_charges"
+                    ]
+                ),
+                default=0,
+            )
+        )
+    cap_control = cap_equivalence_control(F0_SEEDS[0])
+
+    result = {
+        "schema": "lineum.linon-gate-3b-screen.v1",
+        "protocol_version": SCREEN_PROTOCOL,
+        "recorded_protocol_revision": {
+            "development_v0_1_program_sha256": (
+                DEVELOPMENT_V01_PROGRAM_SHA256
+            ),
+            "development_v0_1_output_sha256": (
+                DEVELOPMENT_V01_OUTPUT_SHA256
+            ),
+            "trigger": (
+                "The pre-registered branch detected long-lived topology "
+                "tracks in actual F0 frames."
+            ),
+            "change": (
+                "Executed the already-required phase-randomized topology "
+                "null, plus time-shuffle and random-torus-shift topology "
+                "nulls; compacted machine output without changing any "
+                "observer or pass threshold."
+            ),
+            "observer_retuned_after_actual_data": False,
+        },
+        "audit_binding": {
+            "core_commit": CORE_COMMIT,
+            "core_math_git_blob": CORE_MATH_BLOB,
+            "observer_protocol": OBSERVER_PROTOCOL,
+            "observer_program_sha256": (
+                "ed30b04ed6c90f65c2ab2b2f1d268fe6948d9faf6db52c38c445ab823b8a34e2"
+            ),
+        },
+        "model_scope": {
+            "update": (
+                "Committed NumPy nonlinear diffusion map with mode coupling "
+                "enabled and opt-in dt-scaled phi diffusion."
+            ),
+            "status": (
+                "Current implemented experimental lane, not a declaration "
+                "of the final canonical physical law and not the legacy "
+                "default phi time contract."
+            ),
+            "boundary": "periodic",
+            "D0": "actual source-disabled counterfactual",
+            "M0": (
+                "conditional-mean mathematical counterfactual; not a "
+                "separately exposed runtime switch"
+            ),
+            "F0": "actual committed Bernoulli-plus-Gaussian source contract",
+        },
+        "external_clean_runtime_reconstruction_audit": {
+            "commit": CORE_COMMIT,
+            "core_math_git_blob": CORE_MATH_BLOB,
+            "seed": F0_SEEDS[0],
+            "steps": 20,
+            "maximum_abs_psi_difference": (
+                3.469446951953614e-17
+            ),
+            "maximum_abs_phi_difference": (
+                1.2705494208814505e-21
+            ),
+            "method": (
+                "Clean detached committed NumPy runtime versus the "
+                "standalone reconstruction, with identical complete vacuum "
+                "state, RandomState stream, dt, and ordered operations."
+            ),
+        },
+        "pre_registered_design": {
+            "size": SIZE,
+            "dt": DT,
+            "total_time": TOTAL_TIME,
+            "observation_interval": OBSERVATION_INTERVAL,
+            "observations_per_sequence": len(deterministic_frames),
+            "initial_state": "exact vacuum",
+            "caps_enabled": False,
+            "f0_seeds": list(F0_SEEDS),
+            "surrogates_per_seed_per_family": SURROGATES_PER_SEED,
+            "topology_surrogates_per_seed_per_family": (
+                TOPOLOGY_SURROGATES_PER_SEED
+            ),
+            "minimum_physical_span": MINIMUM_PHYSICAL_SPAN,
+            "minimum_seed_prevalence": MINIMUM_SEED_PREVALENCE,
+            "minimum_passing_seeds": MINIMUM_PASSING_SEEDS,
+            "observer_thresholds": {
+                "coverage_minimum": 0.9,
+                "median_shape_correlation_minimum": 0.6,
+                "mass_coefficient_of_variation_maximum": 0.5,
+                "radius_coefficient_of_variation_maximum": 0.5,
+            },
+            "surrogate_threshold_rule": (
+                "Strictly exceed the largest familywise higher-method "
+                "99th percentile across IID, time-shuffled, independently "
+                "toroidally shifted, and phase-randomized sequences. "
+                "Envelope phase randomization preserves Fourier power; "
+                "topology phase randomization preserves every amplitude "
+                "and independently destroys cell phase history."
+            ),
+            "stop_rule": (
+                "Do not run collision or particle claims. If fewer than "
+                "9 of 12 exact-vacuum F0 seeds contain a passing envelope "
+                "or topology candidate, record a negative recurrent-"
+                "candidate screen. If 9 or more of either kind pass, run "
+                "all frozen dt, grid, boundary, kappa, initial-state, "
+                "source, and cap sensitivities."
+            ),
+        },
+        "actual_dynamics": {
+            "D0_no_source_vacuum": {
+                "analysis": compact_analysis(deterministic),
+                "numeric": deterministic_numeric,
+            },
+            "M0_conditional_mean_vacuum": {
+                "analysis": compact_analysis(mean_only),
+                "numeric": mean_numeric,
+                "status": (
+                    "mathematical conditional-mean counterfactual; not a "
+                    "separately exposed runtime mode"
+                ),
+            },
+            "F0_current_vacuum_by_seed": {
+                str(seed): {
+                    "analysis": compact_analysis(f0_analyses[seed]),
+                    "numeric": f0_numeric[seed],
+                    "passing_envelope_tracks": passing_envelopes[seed],
+                    "passing_topology_tracks": passing_topologies[seed],
+                }
+                for seed in F0_SEEDS
+            },
+        },
+        "surrogate_nulls": nulls,
+        "topology_surrogate_nulls": topology_nulls,
+        "cap_inactivity_control": cap_control,
+        "seeded_positive_challenge": {
+            "status": (
+                "seeded structure only; never counted as spontaneous "
+                "object emergence"
+            ),
+            "D0_structured": {
+                "analysis": compact_analysis(structured),
+                "numeric": structured_numeric,
+            },
+        },
+        "topology_screen": {
+            "long_lived_actual_candidate_seen": topology_candidate_seen,
+            "phase_randomized_topology_tracking_executed": (
+                topology_nulls is not None
+            ),
+            "interpretation_warning": (
+                "Dense same-charge defect fields permit track IDs to "
+                "percolate between physically unrelated defects. Passing "
+                "charge retention and coverage is therefore insufficient "
+                "unless actual lifetimes exceed the independent-phase null."
+            ),
+            "actual_transient_defect_burst": {
+                "peak_defects_by_seed": topology_peak_counts,
+                "peak_defect_range": [
+                    int(min(topology_peak_counts)),
+                    int(max(topology_peak_counts)),
+                ],
+                "mean_peak_defects": float(
+                    np.mean(topology_peak_counts)
+                ),
+                "last_nonzero_time_by_seed": (
+                    topology_last_nonzero_times
+                ),
+                "last_nonzero_time_range": [
+                    float(min(topology_last_nonzero_times)),
+                    float(max(topology_last_nonzero_times)),
+                ],
+                "mean_last_nonzero_time": float(
+                    np.mean(topology_last_nonzero_times)
+                ),
+                "longest_track_observations_by_seed": (
+                    topology_actual_longest_observations
+                ),
+                "longest_track_span_by_seed": (
+                    topology_actual_longest_spans
+                ),
+                "maximum_absolute_net_charge_by_seed": (
+                    topology_net_charge_maxima
+                ),
+                "all_periodic_frames_net_neutral": all(
+                    value == 0 for value in topology_net_charge_maxima
+                ),
+            },
+            "identity_result": (
+                "Non-identifying in this dense regime: independent "
+                "cell-phase nulls produce longer apparent track IDs than "
+                "actual dynamics."
+            ),
+        },
+        "decision": {
+            "transient_periodic_winding_defects_detected": True,
+            "individual_topological_identity_resolved": False,
+            "passing_envelope_f0_seeds": passing_envelope_seed_count,
+            "passing_topology_f0_seeds": passing_topology_seed_count,
+            "required_passing_f0_seeds": MINIMUM_PASSING_SEEDS,
+            "recurrent_envelope_candidate_passes_primary_screen": (
+                passing_envelope_seed_count >= MINIMUM_PASSING_SEEDS
+            ),
+            "recurrent_topology_candidate_passes_primary_screen": (
+                passing_topology_seed_count >= MINIMUM_PASSING_SEEDS
+            ),
+            "any_recurrent_candidate_passes_primary_screen": (
+                any_recurrent_candidate
+            ),
+            "full_gate_3b_passed": False,
+            "full_gate_reason": (
+                (
+                    "A recurrent periodic candidate passed the primary "
+                    "screen, but the current NumPy nonlinear diffusion lane "
+                    "has no implemented open-or-absorbing boundary "
+                    "comparator and the remaining sensitivities are pending."
+                )
+                if any_recurrent_candidate
+                else (
+                    "No recurrent envelope or topology candidate passed "
+                    "the primary actual-versus-surrogate screen. In "
+                    "addition, the current NumPy nonlinear diffusion lane "
+                    "has no implemented open-or-absorbing boundary "
+                    "comparator."
+                )
+            ),
+            "frozen_stop_rule_applied": (
+                (
+                    "Primary candidate passed; all remaining sensitivities "
+                    "are required before collision claims."
+                )
+                if any_recurrent_candidate
+                else (
+                    "No dt, grid, boundary, kappa, source-law, or collision "
+                    "claim is run for a candidate that failed the primary "
+                    "actual-versus-surrogate screen."
+                )
+            ),
+            "physical_particle_demonstrated": False,
+            "narrow_conclusion": (
+                "The tested exact-vacuum F0 lane produces a transient, "
+                "net-neutral burst of periodic winding defects but no "
+                "source-blind recurrent envelope candidate. The frozen "
+                "topology tracker cannot establish individual identity in "
+                "the dense defect regime because independent phase nulls "
+                "percolate longer IDs. This is negative evidence for the "
+                "current particle claim, not evidence that no vortices or "
+                "future stabilized objects can exist."
+            ),
+        },
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "scipy": scipy.__version__,
+        },
+    }
+    print(json.dumps(plain(result), indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### L.2 Full reference output
+
+```json
+{
+  "actual_dynamics": {
+    "D0_no_source_vacuum": {
+      "analysis": {
+        "detection_count_summaries": {
+          "envelope": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          },
+          "legacy": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          },
+          "topology": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          }
+        },
+        "envelope_detections_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "legacy_peaks_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_track_observations": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "maximum_track_span": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "top_three_tracks": {
+          "envelope": [],
+          "topology": []
+        },
+        "topology_detections_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "topology_net_charge_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "track_counts": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "track_observation_histograms": {
+          "envelope": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 0,
+            "two_to_four": 0
+          },
+          "topology": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 0,
+            "two_to_four": 0
+          }
+        }
+      },
+      "numeric": {
+        "all_fields_finite": true,
+        "caps_enabled": false,
+        "maximum_abs_phi": 0.0,
+        "maximum_abs_psi": 0.0
+      }
+    },
+    "F0_current_vacuum_by_seed": {
+      "2026231000": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 71,
+              "median": 18.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 212,
+              "median": 2.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            56,
+            71,
+            69,
+            69,
+            68,
+            67,
+            63,
+            61,
+            55,
+            49,
+            46,
+            38,
+            40,
+            39,
+            36,
+            36,
+            35,
+            29,
+            26,
+            26,
+            27,
+            25,
+            22,
+            20,
+            21,
+            20,
+            19,
+            19,
+            18,
+            18,
+            18,
+            17,
+            16,
+            17,
+            17,
+            16,
+            17,
+            16,
+            15,
+            15,
+            16,
+            15,
+            15,
+            15,
+            16,
+            14,
+            15,
+            15,
+            14,
+            14,
+            14,
+            14,
+            14,
+            15
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 32
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 32
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 1.2800969709656964,
+                "final_x": 16.5,
+                "final_y": 15.5,
+                "first_frame": 1,
+                "id": 157,
+                "kind": "topology",
+                "last_frame": 32,
+                "mass_coefficient_of_variation": 1.2791869452079392,
+                "median_shape_correlation": 0.9999964228722191,
+                "observations": 32,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 32
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 2.1286929997778503,
+                "final_x": 16.5,
+                "final_y": 14.5,
+                "first_frame": 3,
+                "id": 241,
+                "kind": "topology",
+                "last_frame": 32,
+                "mass_coefficient_of_variation": 1.1459235381621444,
+                "median_shape_correlation": 0.99998732708088,
+                "observations": 30,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 30
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.2281647825815276,
+                "final_x": 7.5,
+                "final_y": 8.5,
+                "first_frame": 1,
+                "id": 23,
+                "kind": "topology",
+                "last_frame": 26,
+                "mass_coefficient_of_variation": 0.9986361655901408,
+                "median_shape_correlation": 0.999999926774159,
+                "observations": 26,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 26
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            212,
+            188,
+            200,
+            184,
+            166,
+            148,
+            136,
+            114,
+            108,
+            98,
+            88,
+            74,
+            56,
+            54,
+            40,
+            28,
+            24,
+            14,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            6,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 305
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 26,
+              "five_to_fourteen": 138,
+              "one": 66,
+              "thirty_or_more": 2,
+              "two_to_four": 73
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08625290008527321,
+          "maximum_abs_psi": 2.4603286754020255
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231001": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 70,
+              "median": 22.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 210,
+              "median": 6.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            48,
+            68,
+            70,
+            70,
+            68,
+            62,
+            60,
+            56,
+            58,
+            54,
+            47,
+            49,
+            44,
+            40,
+            43,
+            38,
+            35,
+            36,
+            35,
+            35,
+            33,
+            31,
+            31,
+            28,
+            30,
+            28,
+            26,
+            25,
+            25,
+            23,
+            22,
+            21,
+            22,
+            17,
+            19,
+            19,
+            17,
+            18,
+            17,
+            16,
+            16,
+            14,
+            14,
+            14,
+            13,
+            13,
+            14,
+            15,
+            13,
+            13,
+            14,
+            14,
+            14,
+            13
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 45
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 45
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 3.004596921089845,
+                "final_x": 6.5,
+                "final_y": 1.5,
+                "first_frame": 1,
+                "id": 117,
+                "kind": "topology",
+                "last_frame": 45,
+                "mass_coefficient_of_variation": 0.9507697243318506,
+                "median_shape_correlation": 0.9981644959092522,
+                "observations": 45,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 45
+              },
+              {
+                "charge": -1,
+                "coverage": 0.9777777777777777,
+                "final_mass": 2.122007230357453,
+                "final_x": 6.5,
+                "final_y": 0.5,
+                "first_frame": 1,
+                "id": 17,
+                "kind": "topology",
+                "last_frame": 45,
+                "mass_coefficient_of_variation": 1.1242309157532062,
+                "median_shape_correlation": 0.9966594369572022,
+                "observations": 44,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 45
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.6604875048792099,
+                "final_x": 8.5,
+                "final_y": 17.5,
+                "first_frame": 1,
+                "id": 58,
+                "kind": "topology",
+                "last_frame": 32,
+                "mass_coefficient_of_variation": 0.878138461207705,
+                "median_shape_correlation": 0.9999869900130662,
+                "observations": 32,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 32
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            210,
+            200,
+            170,
+            156,
+            142,
+            132,
+            120,
+            114,
+            96,
+            98,
+            88,
+            66,
+            56,
+            60,
+            60,
+            48,
+            38,
+            32,
+            30,
+            22,
+            18,
+            16,
+            16,
+            10,
+            10,
+            8,
+            8,
+            6,
+            6,
+            6,
+            6,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 310
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 39,
+              "five_to_fourteen": 97,
+              "one": 70,
+              "thirty_or_more": 5,
+              "two_to_four": 99
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08530100382665814,
+          "maximum_abs_psi": 2.4463847931105382
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231002": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 74,
+              "median": 22.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 194,
+              "median": 0.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            53,
+            69,
+            74,
+            72,
+            69,
+            64,
+            58,
+            55,
+            54,
+            56,
+            51,
+            46,
+            44,
+            42,
+            41,
+            37,
+            37,
+            33,
+            34,
+            33,
+            31,
+            30,
+            30,
+            30,
+            27,
+            26,
+            25,
+            23,
+            23,
+            22,
+            22,
+            22,
+            21,
+            21,
+            19,
+            17,
+            18,
+            18,
+            18,
+            16,
+            17,
+            17,
+            17,
+            16,
+            16,
+            16,
+            16,
+            15,
+            15,
+            14,
+            15,
+            15,
+            15,
+            14
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 20
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 20
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.4864210900535273,
+                "final_x": 26.5,
+                "final_y": 0.5,
+                "first_frame": 1,
+                "id": 106,
+                "kind": "topology",
+                "last_frame": 20,
+                "mass_coefficient_of_variation": 0.9419411413204465,
+                "median_shape_correlation": 0.99908397019457,
+                "observations": 20,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 20
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.18930379080666818,
+                "final_x": 23.5,
+                "final_y": 23.5,
+                "first_frame": 1,
+                "id": 176,
+                "kind": "topology",
+                "last_frame": 20,
+                "mass_coefficient_of_variation": 0.8437681976156013,
+                "median_shape_correlation": 0.9999999828538494,
+                "observations": 20,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 20
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.5517087374123726,
+                "final_x": 10.5,
+                "final_y": 24.5,
+                "first_frame": 1,
+                "id": 179,
+                "kind": "topology",
+                "last_frame": 19,
+                "mass_coefficient_of_variation": 1.0071858562471618,
+                "median_shape_correlation": 0.9999998715470142,
+                "observations": 19,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 19
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            194,
+            182,
+            166,
+            146,
+            138,
+            134,
+            112,
+            114,
+            104,
+            98,
+            86,
+            76,
+            66,
+            56,
+            40,
+            32,
+            20,
+            10,
+            8,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 299
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 25,
+              "five_to_fourteen": 123,
+              "one": 72,
+              "thirty_or_more": 0,
+              "two_to_four": 79
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08391663893128637,
+          "maximum_abs_psi": 2.4206520964547984
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231003": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 75,
+              "median": 29.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 190,
+              "median": 0.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            61,
+            67,
+            75,
+            71,
+            68,
+            64,
+            62,
+            59,
+            54,
+            57,
+            53,
+            50,
+            46,
+            45,
+            44,
+            43,
+            40,
+            36,
+            35,
+            36,
+            34,
+            33,
+            31,
+            29,
+            31,
+            32,
+            30,
+            31,
+            28,
+            29,
+            30,
+            28,
+            27,
+            31,
+            26,
+            23,
+            21,
+            21,
+            21,
+            20,
+            18,
+            19,
+            21,
+            19,
+            20,
+            21,
+            22,
+            22,
+            18,
+            19,
+            19,
+            19,
+            18,
+            17
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 28
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 28
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.127174268564633,
+                "final_x": 10.5,
+                "final_y": 12.5,
+                "first_frame": 1,
+                "id": 33,
+                "kind": "topology",
+                "last_frame": 28,
+                "mass_coefficient_of_variation": 0.8564375553219978,
+                "median_shape_correlation": 0.9995711740670196,
+                "observations": 28,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 28
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.8010507022421017,
+                "final_x": 10.5,
+                "final_y": 13.5,
+                "first_frame": 1,
+                "id": 137,
+                "kind": "topology",
+                "last_frame": 28,
+                "mass_coefficient_of_variation": 0.9119511329280519,
+                "median_shape_correlation": 0.9999999996935804,
+                "observations": 28,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 28
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.41851844123931753,
+                "final_x": 31.5,
+                "final_y": 0.5,
+                "first_frame": 1,
+                "id": 99,
+                "kind": "topology",
+                "last_frame": 21,
+                "mass_coefficient_of_variation": 0.8308388837472943,
+                "median_shape_correlation": 0.9999971528907505,
+                "observations": 21,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 21
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            190,
+            174,
+            168,
+            156,
+            138,
+            136,
+            124,
+            106,
+            96,
+            108,
+            90,
+            80,
+            66,
+            46,
+            36,
+            28,
+            24,
+            18,
+            16,
+            12,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 282
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 25,
+              "five_to_fourteen": 113,
+              "one": 54,
+              "thirty_or_more": 0,
+              "two_to_four": 90
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.0832794861279257,
+          "maximum_abs_psi": 2.4167079838849443
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231004": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 77,
+              "median": 27.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 186,
+              "median": 0.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            48,
+            66,
+            77,
+            75,
+            73,
+            66,
+            63,
+            61,
+            62,
+            56,
+            54,
+            55,
+            52,
+            48,
+            49,
+            47,
+            46,
+            42,
+            40,
+            33,
+            33,
+            31,
+            31,
+            31,
+            30,
+            29,
+            30,
+            29,
+            28,
+            27,
+            27,
+            25,
+            27,
+            27,
+            25,
+            25,
+            27,
+            24,
+            24,
+            22,
+            23,
+            22,
+            22,
+            23,
+            22,
+            23,
+            23,
+            22,
+            21,
+            21,
+            20,
+            20,
+            19,
+            18
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 25
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 25
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.510253670032298,
+                "final_x": 21.5,
+                "final_y": 2.5,
+                "first_frame": 1,
+                "id": 100,
+                "kind": "topology",
+                "last_frame": 25,
+                "mass_coefficient_of_variation": 0.9180654829256636,
+                "median_shape_correlation": 0.9998811031029446,
+                "observations": 25,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 25
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.5039024232923571,
+                "final_x": 13.5,
+                "final_y": 5.5,
+                "first_frame": 1,
+                "id": 105,
+                "kind": "topology",
+                "last_frame": 20,
+                "mass_coefficient_of_variation": 0.9234542689214988,
+                "median_shape_correlation": 0.9999999998736124,
+                "observations": 20,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 20
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.5211991764872591,
+                "final_x": 12.5,
+                "final_y": 5.5,
+                "first_frame": 2,
+                "id": 186,
+                "kind": "topology",
+                "last_frame": 20,
+                "mass_coefficient_of_variation": 0.826647537040898,
+                "median_shape_correlation": 0.9999999994734112,
+                "observations": 19,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 19
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            184,
+            186,
+            160,
+            150,
+            144,
+            118,
+            102,
+            96,
+            90,
+            86,
+            86,
+            62,
+            54,
+            52,
+            36,
+            30,
+            18,
+            16,
+            8,
+            6,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 272
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 25,
+              "five_to_fourteen": 108,
+              "one": 54,
+              "thirty_or_more": 0,
+              "two_to_four": 85
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08496408875623897,
+          "maximum_abs_psi": 2.434053104596147
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231005": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 73,
+              "median": 21.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 190,
+              "median": 4.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            53,
+            73,
+            70,
+            70,
+            62,
+            65,
+            61,
+            57,
+            52,
+            49,
+            43,
+            42,
+            39,
+            41,
+            40,
+            37,
+            32,
+            30,
+            30,
+            30,
+            28,
+            26,
+            26,
+            25,
+            24,
+            22,
+            23,
+            21,
+            17,
+            19,
+            21,
+            20,
+            22,
+            18,
+            18,
+            21,
+            21,
+            18,
+            19,
+            19,
+            18,
+            15,
+            15,
+            16,
+            15,
+            16,
+            17,
+            15,
+            15,
+            15,
+            15,
+            15,
+            14,
+            15
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 33
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 34
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.566543521080101,
+                "final_x": 13.5,
+                "final_y": 24.5,
+                "first_frame": 2,
+                "id": 196,
+                "kind": "topology",
+                "last_frame": 34,
+                "mass_coefficient_of_variation": 1.0149467923034456,
+                "median_shape_correlation": 0.9999889200939198,
+                "observations": 33,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 33
+              },
+              {
+                "charge": 1,
+                "coverage": 0.9411764705882353,
+                "final_mass": 0.8103453279858945,
+                "final_x": 13.5,
+                "final_y": 25.5,
+                "first_frame": 1,
+                "id": 162,
+                "kind": "topology",
+                "last_frame": 34,
+                "mass_coefficient_of_variation": 1.0134453958195053,
+                "median_shape_correlation": 0.9999939393196023,
+                "observations": 32,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 34
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 2.458550251812303,
+                "final_x": 31.5,
+                "final_y": 25.5,
+                "first_frame": 2,
+                "id": 194,
+                "kind": "topology",
+                "last_frame": 33,
+                "mass_coefficient_of_variation": 0.9345967240671293,
+                "median_shape_correlation": 0.9999760010652888,
+                "observations": 32,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 32
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            182,
+            190,
+            170,
+            146,
+            146,
+            138,
+            130,
+            126,
+            112,
+            100,
+            92,
+            84,
+            68,
+            46,
+            42,
+            34,
+            30,
+            28,
+            22,
+            20,
+            18,
+            14,
+            12,
+            8,
+            6,
+            6,
+            6,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 271
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 28,
+              "five_to_fourteen": 123,
+              "one": 55,
+              "thirty_or_more": 3,
+              "two_to_four": 62
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08614779428485561,
+          "maximum_abs_psi": 2.446534198447109
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231006": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 73,
+              "median": 18.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 208,
+              "median": 4.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            50,
+            67,
+            72,
+            70,
+            69,
+            73,
+            64,
+            60,
+            55,
+            52,
+            49,
+            42,
+            43,
+            42,
+            42,
+            39,
+            38,
+            38,
+            31,
+            28,
+            27,
+            22,
+            20,
+            23,
+            20,
+            21,
+            20,
+            19,
+            19,
+            19,
+            18,
+            18,
+            18,
+            17,
+            17,
+            15,
+            15,
+            17,
+            17,
+            17,
+            16,
+            15,
+            16,
+            16,
+            15,
+            14,
+            14,
+            14,
+            15,
+            14,
+            14,
+            14,
+            13,
+            13
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 34
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 34
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 2.6704440922082466,
+                "final_x": 22.5,
+                "final_y": 20.5,
+                "first_frame": 1,
+                "id": 63,
+                "kind": "topology",
+                "last_frame": 34,
+                "mass_coefficient_of_variation": 0.9513119576254654,
+                "median_shape_correlation": 0.9999995254743912,
+                "observations": 34,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 34
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.8603614198212565,
+                "final_x": 23.5,
+                "final_y": 21.5,
+                "first_frame": 1,
+                "id": 172,
+                "kind": "topology",
+                "last_frame": 34,
+                "mass_coefficient_of_variation": 1.003987678602025,
+                "median_shape_correlation": 0.999999947353001,
+                "observations": 34,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 34
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.9387618274333611,
+                "final_x": 14.5,
+                "final_y": 18.5,
+                "first_frame": 2,
+                "id": 245,
+                "kind": "topology",
+                "last_frame": 32,
+                "mass_coefficient_of_variation": 0.9771309480022163,
+                "median_shape_correlation": 0.9999998717567367,
+                "observations": 31,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 31
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            208,
+            206,
+            182,
+            170,
+            158,
+            138,
+            122,
+            106,
+            102,
+            96,
+            84,
+            76,
+            74,
+            56,
+            50,
+            42,
+            36,
+            32,
+            28,
+            24,
+            16,
+            14,
+            14,
+            10,
+            10,
+            10,
+            6,
+            6,
+            6,
+            6,
+            4,
+            4,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 316
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 36,
+              "five_to_fourteen": 119,
+              "one": 79,
+              "thirty_or_more": 4,
+              "two_to_four": 78
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08514453218651283,
+          "maximum_abs_psi": 2.4351060885762554
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231007": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 73,
+              "median": 23.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 220,
+              "median": 2.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            55,
+            68,
+            71,
+            73,
+            68,
+            66,
+            64,
+            55,
+            57,
+            57,
+            51,
+            53,
+            47,
+            49,
+            48,
+            41,
+            42,
+            38,
+            34,
+            34,
+            34,
+            34,
+            34,
+            31,
+            29,
+            30,
+            29,
+            27,
+            27,
+            27,
+            23,
+            23,
+            23,
+            21,
+            20,
+            19,
+            19,
+            20,
+            17,
+            16,
+            19,
+            15,
+            16,
+            17,
+            16,
+            15,
+            13,
+            13,
+            15,
+            14,
+            13,
+            13,
+            13,
+            16
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 33
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 33
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.2159782259077936,
+                "final_x": 1.5,
+                "final_y": 13.5,
+                "first_frame": 1,
+                "id": 41,
+                "kind": "topology",
+                "last_frame": 33,
+                "mass_coefficient_of_variation": 1.0178611080868556,
+                "median_shape_correlation": 0.9984731747714746,
+                "observations": 33,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 33
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.3404797847671588,
+                "final_x": 6.5,
+                "final_y": 19.5,
+                "first_frame": 1,
+                "id": 60,
+                "kind": "topology",
+                "last_frame": 27,
+                "mass_coefficient_of_variation": 0.9935124760892667,
+                "median_shape_correlation": 0.9999999183847951,
+                "observations": 27,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 27
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.6706869705447606,
+                "final_x": 7.5,
+                "final_y": 19.5,
+                "first_frame": 1,
+                "id": 175,
+                "kind": "topology",
+                "last_frame": 27,
+                "mass_coefficient_of_variation": 0.8461894003049889,
+                "median_shape_correlation": 0.9999999984619314,
+                "observations": 27,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 27
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            214,
+            220,
+            200,
+            168,
+            158,
+            134,
+            128,
+            112,
+            106,
+            94,
+            76,
+            64,
+            58,
+            42,
+            26,
+            20,
+            18,
+            10,
+            12,
+            10,
+            8,
+            8,
+            8,
+            4,
+            4,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 293
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 20,
+              "five_to_fourteen": 143,
+              "one": 45,
+              "thirty_or_more": 1,
+              "two_to_four": 84
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08868235856091049,
+          "maximum_abs_psi": 2.487567640127547
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231008": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 1,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 77,
+              "median": 18.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 202,
+              "median": 2.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            55,
+            66,
+            73,
+            77,
+            73,
+            73,
+            63,
+            61,
+            55,
+            55,
+            52,
+            49,
+            48,
+            45,
+            39,
+            36,
+            35,
+            31,
+            32,
+            29,
+            30,
+            24,
+            22,
+            23,
+            23,
+            22,
+            24,
+            20,
+            18,
+            16,
+            15,
+            18,
+            18,
+            17,
+            17,
+            16,
+            16,
+            15,
+            14,
+            15,
+            14,
+            13,
+            13,
+            14,
+            13,
+            14,
+            15,
+            13,
+            14,
+            14,
+            14,
+            14,
+            14,
+            15
+          ],
+          "maximum_track_observations": {
+            "envelope": 1,
+            "topology": 33
+          },
+          "maximum_track_span": {
+            "envelope": 1,
+            "topology": 33
+          },
+          "top_three_tracks": {
+            "envelope": [
+              {
+                "charge": 0,
+                "coverage": 1.0,
+                "final_mass": 0.0009230544666303771,
+                "final_x": 0.4467677269782075,
+                "final_y": 2.0000000000000004,
+                "first_frame": 1,
+                "id": 0,
+                "kind": "envelope",
+                "last_frame": 1,
+                "mass_coefficient_of_variation": 0.0,
+                "median_shape_correlation": null,
+                "observations": 1,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 1
+              }
+            ],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.8097726955811129,
+                "final_x": 30.5,
+                "final_y": 26.5,
+                "first_frame": 2,
+                "id": 219,
+                "kind": "topology",
+                "last_frame": 34,
+                "mass_coefficient_of_variation": 1.1444529059558972,
+                "median_shape_correlation": 0.9999815061465313,
+                "observations": 33,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 33
+              },
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 0.5763321006782144,
+                "final_x": 7.5,
+                "final_y": 20.5,
+                "first_frame": 1,
+                "id": 166,
+                "kind": "topology",
+                "last_frame": 27,
+                "mass_coefficient_of_variation": 0.9294465083111649,
+                "median_shape_correlation": 0.9999999814418077,
+                "observations": 27,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 27
+              },
+              {
+                "charge": -1,
+                "coverage": 0.9629629629629629,
+                "final_mass": 1.2020640015561075,
+                "final_x": 7.5,
+                "final_y": 19.5,
+                "first_frame": 1,
+                "id": 58,
+                "kind": "topology",
+                "last_frame": 27,
+                "mass_coefficient_of_variation": 0.954508830677166,
+                "median_shape_correlation": 0.9916120867309306,
+                "observations": 26,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 27
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            202,
+            178,
+            156,
+            162,
+            136,
+            116,
+            104,
+            100,
+            94,
+            90,
+            64,
+            58,
+            50,
+            40,
+            34,
+            34,
+            24,
+            16,
+            14,
+            16,
+            12,
+            12,
+            10,
+            8,
+            6,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 1,
+            "topology": 286
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 1,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 27,
+              "five_to_fourteen": 105,
+              "one": 73,
+              "thirty_or_more": 1,
+              "two_to_four": 80
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08579587105494185,
+          "maximum_abs_psi": 2.4427362664950896
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231009": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 73,
+              "median": 20.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 170,
+              "median": 0.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            50,
+            73,
+            71,
+            71,
+            66,
+            61,
+            56,
+            61,
+            55,
+            44,
+            47,
+            45,
+            41,
+            37,
+            30,
+            31,
+            29,
+            26,
+            25,
+            26,
+            28,
+            24,
+            25,
+            25,
+            26,
+            23,
+            22,
+            22,
+            20,
+            19,
+            20,
+            21,
+            19,
+            17,
+            16,
+            18,
+            17,
+            18,
+            19,
+            17,
+            17,
+            16,
+            16,
+            16,
+            16,
+            16,
+            15,
+            16,
+            17,
+            16,
+            15,
+            16,
+            16,
+            15
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 24
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 24
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 1.1868530648268318,
+                "final_x": 14.5,
+                "final_y": 7.5,
+                "first_frame": 1,
+                "id": 18,
+                "kind": "topology",
+                "last_frame": 24,
+                "mass_coefficient_of_variation": 1.1957734332397294,
+                "median_shape_correlation": 0.9999664843854261,
+                "observations": 24,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 24
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.617417162569597,
+                "final_x": 7.5,
+                "final_y": 29.5,
+                "first_frame": 1,
+                "id": 78,
+                "kind": "topology",
+                "last_frame": 21,
+                "mass_coefficient_of_variation": 0.9478322647840406,
+                "median_shape_correlation": 0.9999999999922622,
+                "observations": 21,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 21
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.432202042792495,
+                "final_x": 23.5,
+                "final_y": 27.5,
+                "first_frame": 3,
+                "id": 222,
+                "kind": "topology",
+                "last_frame": 23,
+                "mass_coefficient_of_variation": 0.8086021546388524,
+                "median_shape_correlation": 0.9999999777018866,
+                "observations": 21,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 21
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            170,
+            170,
+            160,
+            152,
+            150,
+            134,
+            120,
+            102,
+            96,
+            80,
+            76,
+            58,
+            50,
+            42,
+            40,
+            40,
+            26,
+            18,
+            14,
+            12,
+            8,
+            4,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 279
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 25,
+              "five_to_fourteen": 120,
+              "one": 53,
+              "thirty_or_more": 0,
+              "two_to_four": 81
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08812050515695212,
+          "maximum_abs_psi": 2.4787221614322874
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231010": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 74,
+              "median": 19.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 194,
+              "median": 2.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            46,
+            66,
+            74,
+            69,
+            69,
+            66,
+            61,
+            66,
+            65,
+            57,
+            52,
+            54,
+            52,
+            42,
+            47,
+            45,
+            42,
+            41,
+            33,
+            31,
+            31,
+            28,
+            28,
+            23,
+            25,
+            19,
+            20,
+            20,
+            22,
+            19,
+            20,
+            20,
+            18,
+            19,
+            19,
+            18,
+            19,
+            18,
+            16,
+            16,
+            15,
+            17,
+            16,
+            14,
+            13,
+            15,
+            16,
+            16,
+            16,
+            16,
+            13,
+            14,
+            12,
+            15
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 33
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 33
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": 1,
+                "coverage": 1.0,
+                "final_mass": 1.142884198365849,
+                "final_x": 16.5,
+                "final_y": 10.5,
+                "first_frame": 1,
+                "id": 144,
+                "kind": "topology",
+                "last_frame": 33,
+                "mass_coefficient_of_variation": 1.1050477060022226,
+                "median_shape_correlation": 0.9813347525805866,
+                "observations": 33,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 33
+              },
+              {
+                "charge": -1,
+                "coverage": 0.9655172413793104,
+                "final_mass": 2.2743793214035737,
+                "final_x": 16.5,
+                "final_y": 9.5,
+                "first_frame": 5,
+                "id": 243,
+                "kind": "topology",
+                "last_frame": 33,
+                "mass_coefficient_of_variation": 0.9498113347221421,
+                "median_shape_correlation": 0.9984130600914665,
+                "observations": 28,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 29
+              },
+              {
+                "charge": -1,
+                "coverage": 0.9642857142857143,
+                "final_mass": 0.7531819973964703,
+                "final_x": 28.5,
+                "final_y": 20.5,
+                "first_frame": 1,
+                "id": 71,
+                "kind": "topology",
+                "last_frame": 28,
+                "mass_coefficient_of_variation": 0.9920136384683925,
+                "median_shape_correlation": 0.9980325808271839,
+                "observations": 27,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 28
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            194,
+            184,
+            154,
+            136,
+            136,
+            124,
+            116,
+            104,
+            100,
+            88,
+            80,
+            72,
+            62,
+            50,
+            42,
+            32,
+            18,
+            16,
+            14,
+            14,
+            12,
+            12,
+            10,
+            10,
+            8,
+            4,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 276
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 31,
+              "five_to_fourteen": 94,
+              "one": 60,
+              "thirty_or_more": 1,
+              "two_to_four": 90
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08556272506134871,
+          "maximum_abs_psi": 2.4432217665122
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      },
+      "2026231011": {
+        "analysis": {
+          "detection_count_summaries": {
+            "envelope": {
+              "maximum": 0,
+              "median": 0.0,
+              "minimum": 0
+            },
+            "legacy": {
+              "maximum": 85,
+              "median": 26.0,
+              "minimum": 0
+            },
+            "topology": {
+              "maximum": 188,
+              "median": 0.0,
+              "minimum": 0
+            }
+          },
+          "envelope_detections_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legacy_peaks_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            52,
+            81,
+            85,
+            80,
+            77,
+            68,
+            67,
+            66,
+            62,
+            60,
+            52,
+            54,
+            58,
+            51,
+            50,
+            48,
+            45,
+            44,
+            42,
+            41,
+            37,
+            37,
+            37,
+            35,
+            31,
+            29,
+            29,
+            27,
+            28,
+            26,
+            27,
+            23,
+            24,
+            22,
+            22,
+            22,
+            21,
+            21,
+            20,
+            20,
+            19,
+            20,
+            18,
+            19,
+            21,
+            20,
+            19,
+            18,
+            18,
+            18,
+            19,
+            18,
+            18,
+            17
+          ],
+          "maximum_track_observations": {
+            "envelope": 0,
+            "topology": 28
+          },
+          "maximum_track_span": {
+            "envelope": 0,
+            "topology": 28
+          },
+          "top_three_tracks": {
+            "envelope": [],
+            "topology": [
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.8214443736702975,
+                "final_x": 5.5,
+                "final_y": 1.5,
+                "first_frame": 1,
+                "id": 0,
+                "kind": "topology",
+                "last_frame": 28,
+                "mass_coefficient_of_variation": 0.8687383099140165,
+                "median_shape_correlation": 0.9999974619051082,
+                "observations": 28,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 28
+              },
+              {
+                "charge": 1,
+                "coverage": 0.9642857142857143,
+                "final_mass": 0.6807613393150024,
+                "final_x": 4.5,
+                "final_y": 1.5,
+                "first_frame": 1,
+                "id": 102,
+                "kind": "topology",
+                "last_frame": 28,
+                "mass_coefficient_of_variation": 0.9341992220118209,
+                "median_shape_correlation": 0.9999992416695328,
+                "observations": 27,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 28
+              },
+              {
+                "charge": -1,
+                "coverage": 1.0,
+                "final_mass": 0.39333630814808107,
+                "final_x": 12.5,
+                "final_y": 1.5,
+                "first_frame": 1,
+                "id": 7,
+                "kind": "topology",
+                "last_frame": 21,
+                "mass_coefficient_of_variation": 0.8516864324419584,
+                "median_shape_correlation": 0.9999999996578357,
+                "observations": 21,
+                "radius_coefficient_of_variation": 0.0,
+                "span_frames": 21
+              }
+            ]
+          },
+          "topology_detections_per_frame": [
+            0,
+            188,
+            184,
+            154,
+            122,
+            120,
+            102,
+            98,
+            88,
+            76,
+            72,
+            52,
+            50,
+            40,
+            24,
+            18,
+            14,
+            12,
+            12,
+            10,
+            10,
+            10,
+            6,
+            6,
+            4,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "topology_net_charge_per_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "track_counts": {
+            "envelope": 0,
+            "topology": 266
+          },
+          "track_observation_histograms": {
+            "envelope": {
+              "fifteen_to_twenty_nine": 0,
+              "five_to_fourteen": 0,
+              "one": 0,
+              "thirty_or_more": 0,
+              "two_to_four": 0
+            },
+            "topology": {
+              "fifteen_to_twenty_nine": 11,
+              "five_to_fourteen": 110,
+              "one": 63,
+              "thirty_or_more": 0,
+              "two_to_four": 82
+            }
+          }
+        },
+        "numeric": {
+          "all_fields_finite": true,
+          "caps_enabled": false,
+          "maximum_abs_phi": 0.08561343625051895,
+          "maximum_abs_psi": 2.429198131958997
+        },
+        "passing_envelope_tracks": [],
+        "passing_topology_tracks": []
+      }
+    },
+    "M0_conditional_mean_vacuum": {
+      "analysis": {
+        "detection_count_summaries": {
+          "envelope": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          },
+          "legacy": {
+            "maximum": 1024,
+            "median": 1024.0,
+            "minimum": 0
+          },
+          "topology": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          }
+        },
+        "envelope_detections_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "legacy_peaks_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "maximum_track_observations": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "maximum_track_span": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "top_three_tracks": {
+          "envelope": [],
+          "topology": []
+        },
+        "topology_detections_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "topology_net_charge_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "track_counts": {
+          "envelope": 0,
+          "topology": 0
+        },
+        "track_observation_histograms": {
+          "envelope": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 0,
+            "two_to_four": 0
+          },
+          "topology": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 0,
+            "two_to_four": 0
+          }
+        }
+      },
+      "numeric": {
+        "all_fields_finite": true,
+        "caps_enabled": false,
+        "maximum_abs_phi": 0.08975345408542099,
+        "maximum_abs_psi": 2.5173826382206563
+      },
+      "status": "mathematical conditional-mean counterfactual; not a separately exposed runtime mode"
+    }
+  },
+  "audit_binding": {
+    "core_commit": "7657f1edb6bc0cf53c4a473999dedbd7ca77d13b",
+    "core_math_git_blob": "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa",
+    "observer_program_sha256": "ed30b04ed6c90f65c2ab2b2f1d268fe6948d9faf6db52c38c445ab823b8a34e2",
+    "observer_protocol": "1.0-frozen-before-physics"
+  },
+  "cap_inactivity_control": {
+    "cap_disabled": true,
+    "default_phi_cap": 1000000.0,
+    "default_psi_cap": 1000000.0,
+    "exactly_inactive_in_control": true,
+    "maximum_phi_difference": 0.0,
+    "maximum_psi_difference": 0.0,
+    "seed": 2026231000,
+    "steps": 600
+  },
+  "decision": {
+    "any_recurrent_candidate_passes_primary_screen": false,
+    "frozen_stop_rule_applied": "No dt, grid, boundary, kappa, source-law, or collision claim is run for a candidate that failed the primary actual-versus-surrogate screen.",
+    "full_gate_3b_passed": false,
+    "full_gate_reason": "No recurrent envelope or topology candidate passed the primary actual-versus-surrogate screen. In addition, the current NumPy nonlinear diffusion lane has no implemented open-or-absorbing boundary comparator.",
+    "individual_topological_identity_resolved": false,
+    "narrow_conclusion": "The tested exact-vacuum F0 lane produces a transient, net-neutral burst of periodic winding defects but no source-blind recurrent envelope candidate. The frozen topology tracker cannot establish individual identity in the dense defect regime because independent phase nulls percolate longer IDs. This is negative evidence for the current particle claim, not evidence that no vortices or future stabilized objects can exist.",
+    "passing_envelope_f0_seeds": 0,
+    "passing_topology_f0_seeds": 0,
+    "physical_particle_demonstrated": false,
+    "recurrent_envelope_candidate_passes_primary_screen": false,
+    "recurrent_topology_candidate_passes_primary_screen": false,
+    "required_passing_f0_seeds": 9,
+    "transient_periodic_winding_defects_detected": true
+  },
+  "external_clean_runtime_reconstruction_audit": {
+    "commit": "7657f1edb6bc0cf53c4a473999dedbd7ca77d13b",
+    "core_math_git_blob": "cc6f4a56448f7176438da406b9b8ab9b4fca2dfa",
+    "maximum_abs_phi_difference": 1.2705494208814505e-21,
+    "maximum_abs_psi_difference": 3.469446951953614e-17,
+    "method": "Clean detached committed NumPy runtime versus the standalone reconstruction, with identical complete vacuum state, RandomState stream, dt, and ordered operations.",
+    "seed": 2026231000,
+    "steps": 20
+  },
+  "model_scope": {
+    "D0": "actual source-disabled counterfactual",
+    "F0": "actual committed Bernoulli-plus-Gaussian source contract",
+    "M0": "conditional-mean mathematical counterfactual; not a separately exposed runtime switch",
+    "boundary": "periodic",
+    "status": "Current implemented experimental lane, not a declaration of the final canonical physical law and not the legacy default phi time contract.",
+    "update": "Committed NumPy nonlinear diffusion map with mode coupling enabled and opt-in dt-scaled phi diffusion."
+  },
+  "pre_registered_design": {
+    "caps_enabled": false,
+    "dt": 0.1,
+    "f0_seeds": [
+      2026231000,
+      2026231001,
+      2026231002,
+      2026231003,
+      2026231004,
+      2026231005,
+      2026231006,
+      2026231007,
+      2026231008,
+      2026231009,
+      2026231010,
+      2026231011
+    ],
+    "initial_state": "exact vacuum",
+    "minimum_passing_seeds": 9,
+    "minimum_physical_span": 15.0,
+    "minimum_seed_prevalence": 0.75,
+    "observation_interval": 1.0,
+    "observations_per_sequence": 61,
+    "observer_thresholds": {
+      "coverage_minimum": 0.9,
+      "mass_coefficient_of_variation_maximum": 0.5,
+      "median_shape_correlation_minimum": 0.6,
+      "radius_coefficient_of_variation_maximum": 0.5
+    },
+    "size": 32,
+    "stop_rule": "Do not run collision or particle claims. If fewer than 9 of 12 exact-vacuum F0 seeds contain a passing envelope or topology candidate, record a negative recurrent-candidate screen. If 9 or more of either kind pass, run all frozen dt, grid, boundary, kappa, initial-state, source, and cap sensitivities.",
+    "surrogate_threshold_rule": "Strictly exceed the largest familywise higher-method 99th percentile across IID, time-shuffled, independently toroidally shifted, and phase-randomized sequences. Envelope phase randomization preserves Fourier power; topology phase randomization preserves every amplitude and independently destroys cell phase history.",
+    "surrogates_per_seed_per_family": 8,
+    "topology_surrogates_per_seed_per_family": 1,
+    "total_time": 60.0
+  },
+  "protocol_version": "0.2-recorded-triggered-topology-null",
+  "recorded_protocol_revision": {
+    "change": "Executed the already-required phase-randomized topology null, plus time-shuffle and random-torus-shift topology nulls; compacted machine output without changing any observer or pass threshold.",
+    "development_v0_1_output_sha256": "3f0c59a73076b4339873a42be9498da1efd22862872b4824b1c493427bbca526",
+    "development_v0_1_program_sha256": "a348c8089f032fe97112957a87af1e34a2e24921aa3194bb3e2e6edbe500dd7c",
+    "observer_retuned_after_actual_data": false,
+    "trigger": "The pre-registered branch detected long-lived topology tracks in actual F0 frames."
+  },
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "schema": "lineum.linon-gate-3b-screen.v1",
+  "seeded_positive_challenge": {
+    "D0_structured": {
+      "analysis": {
+        "detection_count_summaries": {
+          "envelope": {
+            "maximum": 1,
+            "median": 1.0,
+            "minimum": 1
+          },
+          "legacy": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          },
+          "topology": {
+            "maximum": 0,
+            "median": 0.0,
+            "minimum": 0
+          }
+        },
+        "envelope_detections_per_frame": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "legacy_peaks_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "maximum_track_observations": {
+          "envelope": 61,
+          "topology": 0
+        },
+        "maximum_track_span": {
+          "envelope": 61,
+          "topology": 0
+        },
+        "top_three_tracks": {
+          "envelope": [
+            {
+              "charge": 0,
+              "coverage": 1.0,
+              "final_mass": 0.0017822037802015718,
+              "final_x": 15.429960781682393,
+              "final_y": 15.66299645673968,
+              "first_frame": 0,
+              "id": 0,
+              "kind": "envelope",
+              "last_frame": 60,
+              "mass_coefficient_of_variation": 0.3035215458733805,
+              "median_shape_correlation": 0.9999985219865475,
+              "observations": 61,
+              "radius_coefficient_of_variation": 0.023897404665717,
+              "span_frames": 61
+            }
+          ],
+          "topology": []
+        },
+        "topology_detections_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "topology_net_charge_per_frame": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "track_counts": {
+          "envelope": 1,
+          "topology": 0
+        },
+        "track_observation_histograms": {
+          "envelope": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 1,
+            "two_to_four": 0
+          },
+          "topology": {
+            "fifteen_to_twenty_nine": 0,
+            "five_to_fourteen": 0,
+            "one": 0,
+            "thirty_or_more": 0,
+            "two_to_four": 0
+          }
+        }
+      },
+      "numeric": {
+        "all_fields_finite": true,
+        "caps_enabled": false,
+        "maximum_abs_phi": 0.0289634904379318,
+        "maximum_abs_psi": 0.028770797253337064
+      }
+    },
+    "status": "seeded structure only; never counted as spontaneous object emergence"
+  },
+  "surrogate_nulls": {
+    "combined_envelope_thresholds": {
+      "observations_strictly_greater_than": 4,
+      "span_strictly_greater_than": 4
+    },
+    "independent_fourier_phase": {
+      "familywise_99_percent_observations": 4,
+      "familywise_99_percent_span": 4,
+      "maximum_track_observations": [
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        4,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "maximum_track_span": [
+        4,
+        1,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        4,
+        3,
+        3,
+        2,
+        2,
+        4,
+        1,
+        3,
+        3,
+        2,
+        1,
+        3,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2,
+        1,
+        3,
+        3,
+        1,
+        4,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        4,
+        1,
+        3,
+        1,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3,
+        3,
+        2,
+        1,
+        4,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "sequences": 96
+    },
+    "random_torus_shift": {
+      "familywise_99_percent_observations": 1,
+      "familywise_99_percent_span": 1,
+      "maximum_track_observations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximum_track_span": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sequences": 96
+    },
+    "time_shuffle": {
+      "familywise_99_percent_observations": 1,
+      "familywise_99_percent_span": 1,
+      "maximum_track_observations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximum_track_span": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sequences": 96
+    }
+  },
+  "topology_screen": {
+    "actual_transient_defect_burst": {
+      "all_periodic_frames_net_neutral": true,
+      "last_nonzero_time_by_seed": [
+        32.0,
+        45.0,
+        20.0,
+        28.0,
+        25.0,
+        34.0,
+        34.0,
+        33.0,
+        34.0,
+        24.0,
+        33.0,
+        28.0
+      ],
+      "last_nonzero_time_range": [
+        20.0,
+        45.0
+      ],
+      "longest_track_observations_by_seed": [
+        32,
+        45,
+        20,
+        28,
+        25,
+        33,
+        34,
+        33,
+        33,
+        24,
+        33,
+        28
+      ],
+      "longest_track_span_by_seed": [
+        32,
+        45,
+        20,
+        28,
+        25,
+        34,
+        34,
+        33,
+        33,
+        24,
+        33,
+        28
+      ],
+      "maximum_absolute_net_charge_by_seed": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_last_nonzero_time": 30.833333333333332,
+      "mean_peak_defects": 197.0,
+      "peak_defect_range": [
+        170,
+        220
+      ],
+      "peak_defects_by_seed": [
+        212,
+        210,
+        194,
+        190,
+        186,
+        190,
+        208,
+        220,
+        202,
+        170,
+        194,
+        188
+      ]
+    },
+    "identity_result": "Non-identifying in this dense regime: independent cell-phase nulls produce longer apparent track IDs than actual dynamics.",
+    "interpretation_warning": "Dense same-charge defect fields permit track IDs to percolate between physically unrelated defects. Passing charge retention and coverage is therefore insufficient unless actual lifetimes exceed the independent-phase null.",
+    "long_lived_actual_candidate_seen": true,
+    "phase_randomized_topology_tracking_executed": true
+  },
+  "topology_surrogate_nulls": {
+    "combined_topology_thresholds": {
+      "observations_strictly_greater_than": 59,
+      "span_strictly_greater_than": 60
+    },
+    "independent_cell_phase": {
+      "familywise_99_percent_observations": 59,
+      "familywise_99_percent_span": 60,
+      "maximum_defects_per_sequence": [
+        384,
+        386,
+        390,
+        384,
+        368,
+        378,
+        370,
+        376,
+        390,
+        386,
+        386,
+        390
+      ],
+      "maximum_track_observations": [
+        56,
+        59,
+        57,
+        57,
+        58,
+        56,
+        56,
+        57,
+        55,
+        56,
+        55,
+        57
+      ],
+      "maximum_track_span": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "median_defects_per_sequence": [
+        338.0,
+        344.0,
+        346.0,
+        344.0,
+        340.0,
+        340.0,
+        344.0,
+        342.0,
+        342.0,
+        348.0,
+        342.0,
+        338.0
+      ],
+      "sequences": 12
+    },
+    "random_torus_shift": {
+      "familywise_99_percent_observations": 15,
+      "familywise_99_percent_span": 19,
+      "maximum_defects_per_sequence": [
+        212,
+        210,
+        194,
+        190,
+        186,
+        190,
+        208,
+        220,
+        202,
+        170,
+        194,
+        188
+      ],
+      "maximum_track_observations": [
+        13,
+        14,
+        13,
+        13,
+        12,
+        13,
+        15,
+        13,
+        12,
+        13,
+        13,
+        13
+      ],
+      "maximum_track_span": [
+        15,
+        16,
+        16,
+        16,
+        15,
+        16,
+        19,
+        15,
+        17,
+        18,
+        15,
+        14
+      ],
+      "median_defects_per_sequence": [
+        2.0,
+        6.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        4.0,
+        2.0,
+        2.0,
+        0.0,
+        2.0,
+        0.0
+      ],
+      "sequences": 12
+    },
+    "time_shuffle": {
+      "familywise_99_percent_observations": 8,
+      "familywise_99_percent_span": 13,
+      "maximum_defects_per_sequence": [
+        212,
+        210,
+        194,
+        190,
+        186,
+        190,
+        208,
+        220,
+        202,
+        170,
+        194,
+        188
+      ],
+      "maximum_track_observations": [
+        8,
+        6,
+        4,
+        4,
+        3,
+        7,
+        6,
+        3,
+        6,
+        4,
+        7,
+        4
+      ],
+      "maximum_track_span": [
+        13,
+        10,
+        5,
+        5,
+        4,
+        11,
+        8,
+        5,
+        8,
+        6,
+        10,
+        6
+      ],
+      "median_defects_per_sequence": [
+        2.0,
+        6.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        4.0,
+        2.0,
+        2.0,
+        0.0,
+        2.0,
+        0.0
+      ],
+      "sequences": 12
+    }
   }
 }
 ```
