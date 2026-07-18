@@ -1,11 +1,11 @@
 # Lineum Under Adversarial Review: Fundamental Physics, Philosophy, and a Verification Program
 
 **Document status:** active research basis for future whitepaper revisions; not itself a whitepaper or evidence that the theory is physically valid
-**Research version:** 1.2
+**Research version:** 1.3
 **Evidence and calculation cutoff date:** July 18, 2026
 **Language:** English
-**Reproducibility:** all twelve embedded programs reproduce the embedded JSON outputs with semantic identity
-**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, and the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, and for the other untested hypotheses proposed for future work
+**Reproducibility:** all thirteen embedded programs reproduce the embedded JSON outputs with semantic identity
+**Current confidence:** high for the reproduced numerical results, deterministic reference lane, time-step diagnosis, zero-kappa RNG-claim audit, finite-time Lyapunov calculations in the declared regimes, mathematical classification of the isolated current source, the declared source-to-morphology causal ablation, the synthetic linon-observer controls, the Gate-3B finding that the tested F0 lane produces a transient net-neutral winding-defect burst but no candidate that passes the frozen identity screen, and the synthetic validation of a minimum-flux topological-transport observable together with its explicit non-particle ambiguity; medium for the source-signature and morphology classifiers within their declared resolutions; low for the physical interpretation, for stable object existence beyond the tested lane, and for the other untested hypotheses proposed for future work
 **Standalone portability:** all essential equations, inputs, programs, outputs, limitations, and external source metadata are embedded in this single document; no repository file is required
 **Scope of evaluation:** published arguments, mathematical statements, and physical claims only; this document contains no personal or reputational assessment
 
@@ -15,7 +15,7 @@ This study subjects the Lineum project to adversarial physical, mathematical, an
 
 The result is demanding but constructive. Lineum has a legitimate research objective: to investigate whether finite local microdynamics can produce smooth macroscopic phenomena, stable localized objects, and a physical account of information. A later Gate-0 audit has now established one named deterministic regression lane and corrected one opt-in time-step inconsistency without changing historical defaults. The implementation is nevertheless not yet a physical theory of spacetime or quantum mechanics. It still does not supply one final canonical physical law, a relativistic structure, the Born rule, a measurement mechanism, a model of gravity, a derivation of mass, or demonstrated stable particles. Its stochastic ontology is also unresolved. A regular square lattice introduces preferred directions; some numerical schemes reduce that artifact but may replace strict locality with a global update.
 
-The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; and (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls.
+The original calculations in this report show, among other results: (i) angular anisotropy of lattice dispersion relations that grows with wavenumber; (ii) instantaneous nonzero tails under spectral evolution; (iii) finite-lattice wave-packet energy saturation without a dynamical prohibition against collapse into one cell; (iv) logical independence between a field norm and Shannon information; (v) the Bell bound \(|S|\le 2\) for local hidden-variable models, compared with the quantum value \(2\sqrt 2\); (vi) decoherence without selection of a unique outcome; (vii) regularization of black-hole curvature by a cutoff without derived gravitational dynamics; (viii) numerical convergence of discrete transport to smooth macroscopic motion, which does not by itself establish ontically continuous motion; (ix) a state-independent Peres–Mermin contradiction for noncontextual hidden values; (x) no positive finite-time Lyapunov exponent in 84 estimates across seven declared deterministic Lineum regimes, while the same estimator correctly detects a positive logistic-map control; (xi) a validated but resolution-limited observation protocol that separates five declared stochastic controls and identifies the present isolated source as a finite-step Bernoulli-plus-Gaussian law rather than a continuous Gaussian, Poisson, or memory process; (xii) a causal morphology ablation showing that the present source and its endogenous state feedback change the numerical pattern, but that this effect shrinks under time refinement while several variance-matched memoryless alternatives remain visually non-identifiable; (xiii) an exact observer audit showing that the historical linon tracker measured thresholded amplitude peaks rather than demonstrated object identity, followed by a source-blind replacement that passes declared synthetic scale, ordering, crossing, periodic-boundary, topology, and noise-null controls before it sees any physical Lineum trajectory; (xiv) a frozen actual-dynamics screen in which exact vacuum remains vacuum, the conditional-mean counterfactual becomes spatially uniform while the historical detector eventually labels all 1,024 cells as peaks, and the present F0 source produces a transient net-neutral winding-defect burst but no recurrent envelope or topological identity candidate above correlated surrogate nulls; and (xv) a three-version synthetic audit in which two frozen topological-current observers fail at \(7/12\) and \(11/12\) on exactly advected smooth textures before a representation-invariant minimum-flux transport rule passes a new holdout, while deliberately non-particle smooth disorder passes the same rule and therefore blocks any particle interpretation.
 
 The most defensible next step is to avoid claiming that “the lattice already explains the physics” and instead let several clearly separated hypotheses compete: an effective reaction–diffusion medium, a local unitary quantum automaton, Lorentz-compatible random causal discreteness, charge- or topology-stabilized particles, a derived nonsingular gravitational sector, and operational finitism with certified error bounds. This document defines decision gates and rejection criteria for each option.
 
@@ -41,6 +41,7 @@ The most defensible next step is to avoid claiming that “the lattice already e
 | A source-blind observer can pass tests before seeing Lineum physics. | **Implemented and synthetically characterized** | A frozen replacement uses relative density contrast, periodic components and winding, toroidal distance, shape/mass/charge attributes, and global assignment. It passes the declared synthetic controls. This validates a measuring protocol, not a linon or particle. |
 | The tested exact-vacuum F0 lane produces no organized phase structure. | **Contradicted in the declared Gate-3B screen** | All 12 runs produced a transient periodic winding-defect burst with zero net topological charge in every frame. This establishes numerical topological activity, not stable identity, a particle, or physical quantum foam. |
 | The frozen observer identifies a recurrent linon in the tested F0 lane. | **Not supported in the declared Gate-3B screen** | Zero of 12 seeds passed the envelope screen and zero of 12 passed the topological identity screen; nine were required. Independent cell-phase nulls produced longer apparent track IDs than the actual dynamics, so topology identity is non-identifying in this dense regime. |
+| A source-blind observable can measure coherent topological transport without assigning vortex IDs. | **Synthetically validated within the declared families; not yet applied to actual Lineum data** | Two frozen versions exposed representation-dependent failures at \(7/12\) and \(11/12\). Version 3 uses exact lattice charge conservation, translation-registered coherence, resolved cores, and minimum toroidal integer flux; it passed \(12/12\) constructed pairs and \(12/12\) exactly advected smooth textures while all six declared negative families scored \(0/12\). Frozen and advected smooth disorder also pass, so this is a transport observable, not a particle observer. |
 | All four audited repositories jointly define Lineum physics. | **No** | Core is the canonical research authority. Dynamics is mainly a company and product layer; OEA and Lina EI are purpose-built applications and stress tests. |
 | Discrete microdynamics can approximate smooth macroscopic motion. | **Established in general and reproduced here** | Yes, for smooth data and within a stated resolution; this does not establish whether nature is ontically discrete or continuous. |
 | Physical space is a regular lattice. | **Not demonstrated** | This is an ontological hypothesis, not a consequence of the code or of Fikáček's critique of infinity. |
@@ -79,7 +80,9 @@ Until the gates below are met, we recommend:
 11. **describe the current random source as the finite-step F0 software contract, not as verified quantum foam; use the validated signature protocol only within its temporal and amplitude resolution, and preserve the documented equivalences between short memory and white noise, high-rate events and Gaussian forcing, and weak dependence and independent events**.
 12. **state that current F0 randomness and its state-dependent feedback causally refresh the tested numerical morphology, but do not promote that mechanism as continuous quantum forcing: its late morphological residual decreases under time refinement, and final images do not reliably distinguish it from several variance-matched memoryless alternatives**.
 13. **do not treat historical peak counts, trajectory IDs, contact graphs, or injected vortex presets as evidence of linons; the first frozen actual-dynamics screen found transient net-neutral winding defects but no recurrent object above correlated nulls, so retain “topological activity” and “particle identity” as separate claims**.
-14. **do not tune time step, grid, boundary, permeability, source law, or collision behavior around a candidate that failed the primary actual-versus-surrogate identity screen; first replace or extend the dense-topology identity observable and validate it on adversarial birth, annihilation, crossing, splitting, and merging controls without using Lineum labels**.
+14. **preserve the failed v1 and v2 topological-current protocols as negative evidence; v3 may be used only to measure conserved, resolved minimum-flux topological transport, never to draw or name an individual worldline that the data do not identify**.
+15. **re-enter actual F0 data only with the frozen v3 transport rule and correlated surrogates; do not tune time step, grid, boundary, permeability, source law, or collision behavior around the earlier failed candidate, and do not promote a transport pass to a localized object, linon, or particle without independent energy, stability, boundary, dispersion, and interaction gates**.
+16. **treat the particle failure as a formation-versus-stabilization question: let matched source laws nucleate candidates, switch the source off at a frozen trigger, replay the same state with independent future noise, and add topological charge, Noether charge, competing nonlinearity, medium feedback, stochastic stabilization, or gauge support only as separate falsifiable mechanisms rather than one unconstrained hybrid**.
 
 ### 1.4 Claim-language guide for future whitepaper editing
 
@@ -89,7 +92,7 @@ Until the gates below are met, we recommend:
 | "Discrete steps are a reality." | "Discrete update is a candidate microdynamics and numerical method." | empirically distinguish the ontic discreteness from the regulator |
 | "Changing `dt` only changes simulation precision." | "This is true for the validated deterministic profile, not for the legacy \(\phi\)-diffusion or unresolved stochastic source." | convergence of every retained deterministic and stochastic term at fixed physical time |
 | "Coordinates are integer to arbitrarily large distances." | "Each run has a finite periodic domain; enlarging the box is a numerical sequence of finite models." | define the global topology and explain its relation to the rejection of actual infinity |
-| "Linon is a particle." | "The tested source produces transient net-neutral winding defects; neither historical peak tracks nor the first frozen actual-dynamics screen establishes one persistent linon." | a topology-aware source-blind identity observable that beats correlated phase nulls, followed by cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
+| "Linon is a particle." | "The tested source produces transient net-neutral winding defects; neither historical peak tracks, the first actual-dynamics screen, nor a synthetically validated topological-transport observable establishes one persistent linon." | a separately validated identity and energy-localization observable that beats correlated phase nulls, followed by cap-free stability, \(E(p)\), spin and statistics, collisions, and convergence |
 | "Frequency gives mass \(m=hf/c^2\)." | "Under a chosen SI calibration, a frequency can be converted to a mass-equivalent energy." | a dynamically derived energy, independent calibration of \(\Delta t\), and independent tests of inertial and gravitational mass |
 | "The model is isotropic." | "The chosen spectral space operator is angularly isotropic on the periodic box; local stencils have a measured residual anisotropy." | rotational and Lorentz Ward identities or the experimentally sufficient emergent limit |
 | "The model is a local cellular automaton." | "An explicit finite stencil can be local; a spectral exponential has a global real-space kernel." | one canonical update law with an exact discrete causal cone |
@@ -1012,6 +1015,316 @@ has not been demonstrated. The next admissible step is an observer-design
 gate for dense topological birth, annihilation, crossing, splitting, and
 merging—not parameter tuning, collision claims, or production-physics changes.
 
+### 3.15 Conserved minimum-flux transport is measurable without inventing a particle
+
+**Result first.** A source-blind observable can now measure whether a sequence
+contains coherent, grid-resolved transport of integer phase winding without
+assigning a persistent ID to any vortex. Two frozen versions failed before the
+final rule was accepted: v1 recognized only \(7/12\) exactly advected smooth
+textures, and v2 recognized \(11/12\). The final v3 rule passed a new untouched
+holdout: \(12/12\) constructed moving vortex pairs and \(12/12\) exactly
+advected smooth complex textures passed, while all six declared negative
+families scored \(0/12\). This validates the declared synthetic transport
+measurement, not a particle detector. Frozen and advected smooth disorder
+deliberately pass the same rule, proving that coherent topological transport
+alone does not establish localization, energy, inertia, or particle ontology.
+
+Integer plaquette excitations and vortex-loop or worldline representations are
+standard tools in compact lattice models [43–45]. That literature motivates a
+mathematical observable; it does not establish that Lineum is one of those
+physical models or that a detected lattice defect is a particle.
+
+#### Integer spacetime current and exact conservation
+
+Let
+
+\[
+\theta_{t,y,x}=\arg\psi_{t,y,x},
+\qquad
+W(\alpha)=((\alpha+\pi)\bmod 2\pi)-\pi
+\]
+
+be the principal phase and wrapped phase difference. Define periodic spatial
+links
+
+\[
+\ell_x=W(\theta_{t,y,x+1}-\theta_{t,y,x}),
+\qquad
+\ell_y=W(\theta_{t,y+1,x}-\theta_{t,y,x}).
+\]
+
+The integer winding through each spatial plaquette is
+
+\[
+q_{t,y,x}
+=
+\operatorname{round}
+\frac{
+\ell_x(t,y,x)
++\ell_y(t,y,x+1)
+-\ell_x(t,y+1,x)
+-\ell_y(t,y,x)
+}{2\pi}.
+\]
+
+The program applies the same wrapped exterior difference to the \(t\)-\(x\)
+and \(t\)-\(y\) plaquettes. Their duals define integer
+\((j_t,j_x,j_y)\), with \(j_t=q\). On every spacetime cube the discrete
+Bianchi identity becomes
+
+\[
+\Delta_t j_t+\Delta_x j_x+\Delta_y j_y=0.
+\]
+
+The maximum absolute divergence was exactly zero in every declared movie and
+holdout replicate. The periodic total charge
+\(\sum_{x,y}q_{t,y,x}\) was also exactly zero in every frame. These are
+algebraic conservation checks for the discrete observable, not evidence for a
+physical conservation law of the complete Lineum dynamics.
+
+One exploratory version failed before the first frozen holdout because a
+time-dependent global phase changed the temporal plaquette representative even
+though the spatial defects did not move. The retained construction first
+aligns one global phase between adjacent frames by their full-field complex
+overlap. After alignment, all four arrays \(j_t,j_x,j_y,\nabla\!\cdot j\)
+were invariant under arbitrary positive frame rescaling and time-dependent
+global phase in the declared control.
+
+#### Coherence is registered before motion is measured
+
+A zero-shift overlap confuses coherent translation with decorrelation. V2 and
+v3 therefore use the best normalized overlap under one uniform integer
+translation of the periodic field:
+
+\[
+\chi_t^\star
+=
+\max_{\Delta y,\Delta x}
+\frac{
+\left|
+\sum_{y,x}
+\overline{\psi_{t,y,x}}\,
+\psi_{t+1,y+\Delta y,x+\Delta x}
+\right|
+}{
+\|\psi_t\|_2\,\|\psi_{t+1}\|_2
+}.
+\]
+
+The maximum is evaluated by periodic FFT cross-correlation and clipped only
+against floating-point excursions outside the mathematical interval
+\([0,1]\). A unit control translated a random complex field by
+\((5,-3)\), multiplied it by a positive factor and a global phase, and
+recovered \(\chi^\star=1\) exactly; its unregistered overlap was only
+\(0.00681316\). Registration is a measurement convention that asks whether
+one coherent texture was uniformly transported. It does not make translation
+physically unobservable.
+
+#### Minimum toroidal flux removes representation-dependent closed loops
+
+The compact temporal-plaquette current is conserved, but it is not the unique
+current compatible with two adjacent charge maps. Branch choices of wrapped
+phase can add closed integer loops without changing
+\(q_t\), \(q_{t+1}\), or the divergence. Consequently, summing
+\(|j_x|+|j_y|\) for that one representative can overstate motion.
+
+V2 and v3 instead compute the minimum spatial \(L^1\) flux required by the
+observed charge change. For one time slab,
+
+\[
+\delta q_t=q_{t+1}-q_t,
+\qquad
+\sum_{x,y}\delta q_t=0.
+\]
+
+Expand the positive and negative integer parts of \(\delta q_t\) into equal
+sets of unit supplies \(P_t\) and demands \(N_t\). With toroidal Manhattan
+distance
+
+\[
+d_{\mathbb T}\big((y,x),(y',x')\big)
+=
+\min(|y-y'|,L_y-|y-y'|)
++
+\min(|x-x'|,L_x-|x-x'|),
+\]
+
+the minimum compatible spatial flux is
+
+\[
+M_t
+=
+\min_{\pi:N_t\to P_t}
+\sum_{n\in N_t}d_{\mathbb T}\big(n,\pi(n)\big).
+\]
+
+The assignment is exact for the declared integer unit-flow cost and does not
+name a persistent defect. The time-orientation score is
+
+\[
+\eta
+=
+\frac{\sum_{t,x,y}|q_{t,y,x}|}
+{\sum_{t,x,y}|q_{t,y,x}|+\sum_t M_t}.
+\]
+
+Analytical controls returned cost \(1\) for a unit crossing one periodic
+boundary, cost \(3\) for neutral-pair creation at toroidal separation three,
+and cost \(2\) when two defects each moved by one cell. Forty-eight random
+small cases with one to six transport units matched exhaustive permutation
+search exactly.
+
+#### The two failed protocols were retained rather than tuned away
+
+The numerical thresholds were frozen before the first holdout:
+
+- nonzero temporal winding flux;
+- exact zero dual divergence;
+- exact zero periodic net charge;
+- mean registered adjacent overlap at least \(0.9\);
+- resolved-core fraction at least \(0.9\);
+- time-orientation score at least \(1/3\).
+
+V1 used the zero-shift overlap, the compact-current orientation, and a compact
+network irregular-node fraction no greater than \(0.05\). On seeds
+`2026238000–2026238011`, every expected family classified correctly except
+exactly advected smooth disorder, which passed only \(7/12\). The rejected
+program and output have SHA-256
+`9be011b8d87de4bb597c52692b2db00db5cdd73eec35311e9a60f8968fcfc074`
+and
+`e1581b5f8e980633f53d5f5e141c5dfca32390a71232952470d7582cbbeb8e81`.
+
+V2 introduced translation registration and minimum flux without changing a
+threshold. It repaired the old seed family and passed a pre-freeze screen, but
+the next untouched seeds `2026240000–2026240011` exposed one remaining false
+negative: \(11/12\) advected textures passed. The failed replicate had exact
+registered overlap \(1\), fully resolved cores, exact conservation, and a
+valid minimum-flux orientation, but the old compact-current branch fraction
+was \(0.0588235\), just above \(0.05\). Because that statistic came from the
+non-minimal representative already shown to contain branch-dependent loops,
+it could not legitimately veto the representation-invariant transport
+measurement. The frozen v2 program and output have SHA-256
+`a32697a609c9e7c56b39b6ddd365e1e74b019db074876574a312f192159d24a7`
+and
+`ad2ef6b942a4d519fe54a9ce4ca08971d27f64dee78404e94810ed1598807380`.
+
+V3 retains the compact branch fraction as a published diagnostic but retires
+it as a decision gate. No numerical threshold was changed. V3 was developed
+only on the failed v2 seeds, then frozen before the independent seeds
+`2026241000–2026241011` were evaluated.
+
+#### Final synthetic holdout separates transport from six declared failures
+
+| Synthetic family | Intended role | V3 passes |
+|---|---|---:|
+| constructed pair with translation, random global phase, positive rescaling, and optional noise | positive transport control | 12/12 |
+| independent cell phase with preserved amplitude | incoherent and unresolved null | 0/12 |
+| frozen constant-amplitude random phase | coherent but unresolved null | 0/12 |
+| independent random torus shift | broken-transport null | 0/12 |
+| time-shuffled coherent pair | broken-time-order null | 0/12 |
+| independent smooth complex disorder | resolved but temporally incoherent null | 0/12 |
+| frozen smooth complex disorder | coherent resolved non-particle ambiguity | 12/12 |
+| exactly advected smooth complex disorder | coherent transported non-particle ambiguity | 12/12 |
+
+The constructed pair's registered overlap ranged from \(0.998076\) to \(1\),
+its resolved-core fraction from \(0.96\) to \(1\), and its minimum-flux
+orientation from \(0.342466\) to \(0.510204\). Exactly advected smooth disorder
+had registered overlap numerically equal to \(1\), core fraction \(1\), and
+the same orientation range. Random torus shifts failed with
+\(\eta\in[0.0341064,0.0748503]\); time-shuffled pairs failed with
+\(\eta\in[0.0593824,0.133690]\). Independent smooth disorder failed the
+coherence gate with registered mean overlap in
+\([0.275714,0.464202]\). Frozen constant-amplitude random phase failed because
+its resolved-core fraction was exactly zero.
+
+The three-cell-per-frame constructed translation also failed
+(\(\eta=0.257732\)), explicitly recording the cadence limit. A same-charge
+exchange control remained unresolved near coincidence and failed its core
+gate; no identity was invented through the event. Neutral pair creation and
+annihilation passed as a conserved transport loop. These outcomes are
+consistent with the declared scope: transport can be measured, while collision
+identity remains unresolved.
+
+The final v3 program has SHA-256
+`8229a32eb91914240ffc4f61221b268c1b2f8b5e0b61477631eea1c6e8a820e2`.
+Two complete executions produced normalized output SHA-256
+`b32bb536e78ed6a5a44df8a63c8020ff18f0519c683112fadd898fe24d9b41b5`
+with byte-for-byte and semantic identity. The complete program and output are
+embedded in Appendix M.
+
+#### A failed particle screen is a mechanism question, not a reason to stop
+
+The present negative particle result does not select between two logically
+different failures:
+
+1. **formation failure:** the source never nucleates the required localized
+   state; or
+2. **stabilization failure:** the source creates defects, but the deterministic
+   medium has no invariant, energy minimum, feedback loop, or driven balance
+   that keeps one defect localized.
+
+Gate 3B already gives a first clue: F0 clearly nucleates a transient neutral
+defect burst, so “nothing forms” is false at the topological-activity level.
+The burst nevertheless disappears while forcing continues, and no envelope or
+individual identity survives. The missing ingredient may therefore lie in
+stabilization, observability, or both. That inference is provisional because
+the current observer has not yet been applied at the fine cadence needed to
+separate individual birth, motion, reconnection, and annihilation rates.
+
+The next mechanism experiment should separate source from support rather than
+blindly search coefficients:
+
+| Phase | Intervention | Question answered |
+|---|---|---|
+| nucleation | run F0, matched Gaussian, matched Poisson/event, colored-memory, and state-dependent sources at equal declared input budget | which source laws create resolved transport or localized energy? |
+| source-off challenge | after a frozen trigger time or source-blind formation event, set the source exactly to zero | was noise only a seed, or is continuous driving required? |
+| replay challenge | initialize the deterministic medium from the same detected state with independent future random streams | is later survival a property of state or continued stochastic history? |
+| open-boundary challenge | repeat without periodic recycling | is persistence intrinsic or supplied by the box? |
+| refinement challenge | hold physical domain, horizon, cadence, and input law fixed while changing \(h\) and grid scale | is the object a convergent feature or a cell-scale artifact? |
+
+If the source-off candidate dies, the result should not be discarded. It
+narrows the missing-mechanism search. The following mutually distinguishable
+hypotheses should then be added **one at a time**, each with its own conservation
+or rejection test:
+
+- **topological protection:** enlarge the order parameter or vacuum manifold
+  so a nontrivial homotopy class prevents continuous unwinding;
+- **Noether-charge stabilization:** introduce a genuine global or gauge
+  symmetry and test whether fixed charge produces an energy minimum, as in a
+  Q-ball-like mechanism;
+- **competing nonlinearities:** balance focusing against higher-order
+  repulsion or dispersion so collapse and dissolution are both disfavored;
+- **driven-dissipative localization:** treat the object as a maintained
+  nonequilibrium structure whose input and loss balance is explicitly
+  measurable;
+- **dynamic medium feedback:** evolve permeability or another environmental
+  field with finite response time, allowing a defect to create the trap that
+  subsequently supports it;
+- **stochastic stabilization:** test multiplicative or colored fluctuations
+  for a reproducible metastable distribution rather than assuming that more
+  white noise creates a particle;
+- **gauge-field support:** couple phase winding to a dynamical connection and
+  test a complete gauge-invariant energy balance.
+
+This is the intended out-of-the-box role of negative evidence: not to reduce
+the theory to the present implementation, but to identify which class of
+mechanism is absent. Creativity generates the competing mechanisms; frozen
+controls prevent a visually attractive pattern from deciding among them. A
+hybrid that adds every mechanism simultaneously would be less informative
+because almost any finite behavior could then be fitted.
+
+**Verdict [CALCULATED + METHOD VALIDATION]:** v3 is validated as a synthetic
+observer of coherent, resolved, minimum-flux topological transport within the
+declared families and cadence. It does not observe a particle, a unique
+worldline, localized energy, inertia, or a physical quantum excitation. Its
+strongest counterexample is intentional: smooth complex disorder passes
+whether frozen or coherently advected. The next allowed step is to apply this
+already frozen observable to fine-cadence actual F0 and correlated surrogates
+as a transport measurement only, followed by the frozen source-off
+formation-versus-stabilization experiment. Particle status must remain closed
+until independent localization, energy, stability, continuum, open-boundary,
+dispersion, and interaction gates pass.
+
 ---
 
 ## 4. Jan Fikáček's Published Argumentative Corpus and Its Relevance to Lineum
@@ -1898,9 +2211,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 6. compare propagation by Euclidean and causal-graph distance if geometry itself becomes dynamic;
 7. reserve interference, Born probabilities, Bell, contextuality, and no-signalling tests for F10, because no classical noise law is validated as quantum merely by looking irregular.
 
-**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. The Gate-3B screen adds a distinct observation: exact-vacuum F0 creates a transient net-neutral winding-defect burst in all 12 runs, while D0 exact vacuum stays exactly empty. This supports source-driven topological activity in the tested finite-step lane, not a physical quantum vacuum or a stable particle. These results validate bounded software discriminators, not an ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
+**Current evidence.** The time-refinement experiment rejects F0 as a nonzero continuous-variance forcing law in the tested source/diffusion lane but preserves it as a discrete per-update software contract. A direct signature audit classifies that isolated source more precisely: a state-dependent Bernoulli linon term plus Gaussian fluctuation, both multiplied by \(h\), with excess kurtosis near \(-1.615\), no detected lag memory, and variance rate proportional to \(h^{0.99974}\). The subsequent source-to-morphology ablation establishes a causal numerical effect in the declared nonlinear lane: faithful F0 produced a post-revision late residual RMS of \(0.02600\) relative to the mean-only control, while removing endogenous source-mean feedback reduced it to \(0.01356\). That effect is not continuous-time stable: three-point navigation fits gave residual exponents \(0.5959\) for faithful F0 and \(0.5408\) for its open-loop counterpart, whereas Gaussian, Poisson, state/history-event, and colored-memory controls had exponents close to zero. Initial-only branching retained within-seed spatial identity and colored memory retained a temporal signature, but a frozen final-morphology classifier did not identify the four memoryless laws above chance in the independent audit (\(8/48=16.7\%\) against \(25\%\)). Direct conditioned event records remained informative: controlling for state removed spurious event-history dependence and recovered the declared history coefficient only when it was present. The Gate-3B screen adds a distinct observation: exact-vacuum F0 creates a transient net-neutral winding-defect burst in all 12 runs, while D0 exact vacuum stays exactly empty. This supports source-driven topological activity in the tested finite-step lane, not a physical quantum vacuum or a stable particle. A subsequent three-version synthetic observer audit validated a conserved minimum-flux topological-transport measurement after retaining two frozen failures. Its most important ambiguity is that frozen and coherently advected smooth disorder pass exactly as intended; transport is therefore not particle identity. These results validate bounded software discriminators, not an ontology. The historical zero-\(\kappa\) test does not support F6 because it repeatedly forces one run and exactly follows a damped geometric sum. A Benettin audit also found zero positive finite-time Lyapunov estimates among 84 measurements in seven declared deterministic regimes. This is reproducible negative evidence for F6 **within those regimes**, but not a global rejection: other parameter ranges, initial states, dimensions, operators, and asymptotic horizons remain open.
 
-**Next read-only gate.** The first Gate-3B actual-versus-surrogate screen is complete. It found no recurrent envelope candidate, and its dense topological assignment is non-identifying because amplitude-preserving random-phase nulls percolate longer apparent IDs than the actual trajectories. The next admissible step is therefore to design and synthetically freeze an observer for topological birth, annihilation, crossing, splitting, and merging before returning to actual Lineum data. Do not tune \(h\), grid, source law, boundary condition, or \(\kappa\) around a failed selected track. Do not begin collision claims, modify the default runtime, or call a candidate a particle until one single-object result survives the complete frozen control sequence.
+**Next read-only gate.** The first Gate-3B actual-versus-surrogate screen found no recurrent envelope candidate, and its dense point assignment was non-identifying because amplitude-preserving random-phase nulls percolated longer apparent IDs than the actual trajectories. The observer-design prerequisite is now complete at a narrower level: v3 can measure coherent resolved topological transport without point IDs, but cannot decide whether the transported texture is a particle. It may now be applied without retuning to fine-cadence actual F0 and correlated surrogates as a transport-only readout. The subsequent source-off experiment must distinguish stochastic nucleation from deterministic or driven stabilization before a new interaction term is chosen. Do not tune \(h\), grid, source law, boundary condition, or \(\kappa\) around the earlier failed selected track. Do not begin collision claims, modify the default runtime, or call a transport candidate a particle until one localized energetic object survives the complete frozen control sequence.
 
 ---
 
@@ -1942,7 +2255,9 @@ These families are not mutually exclusive in nature, but they must be tested sep
 - **Gate 3A, observer prerequisite — completed synthetically:** the historical amplitude-peak tracker fails exact identity controls; a source-blind periodic envelope/topology observer is now frozen and passes the declared positive and IID-null controls. This is not evidence that an object exists in Lineum.
 - **Gate 3B, primary actual-dynamics screen — completed without a candidate:** exact-vacuum F0 produced transient net-neutral winding defects, but \(0/12\) seeds passed the envelope rule and \(0/12\) passed the topological identity rule; \(9/12\) were required. Cap controls were inactive. The topology tracker is non-identifying in this dense regime because independent cell-phase nulls produce longer apparent IDs.
 - **Gate 3B, full particle gate — not passed:** the stop rule correctly prevents candidate-centered time-step, grid, boundary, source, permeability, and collision sensitivities after the primary failure. An open or absorbing comparator is also not implemented for this nonlinear lane.
-- **Observer continuation before re-entry — pending:** validate a topology-aware identity method on blind synthetic birth, annihilation, crossing, splitting, merging, and dense-null controls without using actual Lineum labels.
+- **Observer continuation before re-entry — completed for transport, not identity:** after frozen v1 and v2 failures, the v3 minimum-flux observable passed a new synthetic holdout without point IDs. It measures coherent resolved topological transport and explicitly cannot distinguish a constructed vortex pair from frozen or advected smooth complex disorder.
+- **Next Gate-3B re-entry — allowed only as a read-only transport screen:** apply frozen v3 at fine cadence to actual F0 and correlated surrogates. A pass may establish bounded topological transport, never a localized object or particle by itself.
+- **Formation-versus-stabilization gate — pending:** compare matched source laws, switch forcing off after a frozen trigger, replay the same state with independent future randomness, and test open boundaries before changing the equation. Only then add one candidate stabilization mechanism at a time.
 - isolated stable object in open/large vacuum;
 - energy, momentum, effective mass and dissipation;
 - stability when changing resolution and box;
@@ -1990,8 +2305,8 @@ The following list supersedes the original proposal. Each question should have a
 8. What is the total dispersion relation throughout the Brillouin zone and its angular anisotropy?
 9. Does the inferred anisotropy satisfy the particular experimental Lorentz-invariance bounds without an additional fit?
 10. Is macroscopic smooth motion a property of observable fields or just an interpolation visualization?
-11. Does a source-blind observer, frozen on synthetic positive and null controls, find a stable localized object above correlated surrogates without cap, reset, noise, active background or a periodic image of itself? The first exact-vacuum F0 screen answered **no** for its declared envelope and topology-identity rules; the question remains open for future equations and a validated dense-topology observer.
-12. What invariant or energy minimum prevents the collapse of an object into a single cell or its dissolution?
+11. Does a source-blind observer, frozen on synthetic positive and null controls, find a stable localized object above correlated surrogates without cap, reset, noise, active background or a periodic image of itself? The first exact-vacuum F0 screen answered **no** for its declared envelope and topology-identity rules. A later synthetic v3 observer can measure topological transport without IDs, but its smooth-disorder ambiguity means the localized-object question remains open.
+12. After a frozen source-off trigger, does a candidate survive without continued stochastic input, and what invariant, energy minimum, driven balance, or medium feedback prevents its collapse into one cell or its dissolution?
 13. Do the size, energy and frequency of the object converge at \(a\to0\), \(\Delta t\to0\), \(L\to\infty\)?
 14. Does the object move in any direction without grid pinning and direction-dependent mass?
 15. What is its relationship \(E(p)\), rest mass, momentum, and dispersion law?
@@ -2044,10 +2359,11 @@ The following list supersedes the original proposal. Each question should have a
 15. **The source-to-morphology ablation is causal only within its declared numerical experiment.** It uses a periodic two-dimensional grid, a uniform-\(\kappa\) nonlinear backbone, synthetic matched source laws, one primary structured state, finite horizons, a frozen eight-feature classifier, and only four calibration plus four evaluation runs per navigation sensitivity. Its independent post-revision lane and bootstrap intervals strengthen the software conclusion, but they do not establish an asymptotic continuum limit, a unique microscopic source, a three-dimensional vacuum, stable objects, or quantum behavior. Open-loop input matching is exact in expectation at \(h=0.1\); the deliberately different contracts diverge away from that reference step.
 16. **The Gate-3A linon-observer result validates a measuring instrument on sparse synthetic controls, not Lineum objects.** Its positive controls are synthetic Gaussians and a constructed neutral vortex pair; its negative calibration is a finite collection of smoothed IID fields. The Gate-3B application shows why that distinction matters: correlated dense topological backgrounds can create apparent identity even when phase history is destroyed.
 17. **The Gate-3B result is a bounded primary screen, not a global nonexistence theorem.** It covers one \(32\times32\), periodic, two-dimensional, exact-vacuum, \(h=0.1\), \(T=60\) nonlinear F0 lane and 12 seeds. Its envelope nulls are well separated from the actual result, but its topology identity rule becomes non-identifying because independent-cell-phase surrogates span almost the full record. The transient defects remain valid mathematical detections; their individual identity, stability in open space, continuum behavior, energy, momentum, interactions, and physical ontology remain unresolved.
+18. **The v3 topological-transport result validates an observable, not an object.** It covers finite periodic \(32\times32\), \(48\times48\), and \(64\times64\) synthetic movies of 25 frames at declared one- or two-cell cadence, with 12 replicates per family. Its minimum-flow cost discards divergence-free circulation and persistent point labels by construction. It can therefore measure the least transport required by adjacent integer charge maps, but cannot recover a unique microscopic current, crossing identity, localized energy, inertia, or particle ontology. Smooth complex disorder is an explicit passing ambiguity, not an accidental caveat.
 
 ## 11. Final Assessment
 
-Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, replacing an inadequate historical peak tracker with a source-blind observer that passes exact sparse synthetic controls, and applying that observer to a frozen actual-dynamics screen. The latest result sharpens rather than validates the particle narrative: the current source produces a transient net-neutral burst of periodic winding defects, but the envelope channel finds no recurrent localized object and the topology channel cannot establish individual identity against dense phase-randomized nulls. The source and its state feedback matter numerically, but their morphological effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Lineum's strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
+Lineum has credible research potential if it maintains the distinction between an idea and its proof: ontological intuition can motivate a program, but does not confirm it. The project has now moved beyond a purely narrative starting point by establishing a reproducible deterministic reference lane, identifying and repairing one opt-in time-step inconsistency, distinguishing stochastic time contracts, finding no support for deterministic chaos as the current explanation in seven tested deterministic regimes, classifying the isolated current source as a finite-step Bernoulli-plus-Gaussian contract, causally tracing that source into nonlinear morphology, replacing an inadequate historical peak tracker with a source-blind observer that passes exact sparse synthetic controls, applying that observer to a frozen actual-dynamics screen, and then replacing non-identifying point tracks with a synthetically validated minimum-flux topological-transport observable. The latest results sharpen rather than validate the particle narrative: the current source produces a transient net-neutral burst of periodic winding defects, but the envelope channel finds no recurrent localized object and the original topology channel cannot establish individual identity against dense phase-randomized nulls. V3 can measure coherent resolved transport without inventing IDs, yet smooth disorder passes the same rule and therefore blocks any particle inference. The source and its state feedback matter numerically, but their morphological effect shrinks under time refinement and final morphology does not identify several variance-matched memoryless alternatives. Lineum's strongest assets are still not a ready-made “theory of everything,” but an open simulation laboratory, a willingness to preserve negative results, and an improving ability to formulate sharp tests of finite microdynamics.
 
 For future work, Lineum Core should remain the sole repository in which canonical candidate physics is accepted and versioned. Dynamics is primarily the company and product-integration layer, OEA is custom generative-imaging software, and Lina EI is a purpose-built application of candidate equations. Their results can falsify a claim, reveal a constraint, or expose a missing Core contract; they cannot redefine the candidate theory without an explicit change to the Core research specification.
 
@@ -2116,6 +2432,9 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 ### Statistical process source
 
 42. Hawkes, A. G. *Spectra of Some Self-Exciting and Mutually Exciting Point Processes*. Biometrika 58(1), 83–90 (1971). [DOI](https://doi.org/10.1093/biomet/58.1.83).
+43. DeGrand, T. A.; Toussaint, D. *Topological excitations and Monte Carlo simulation of Abelian gauge theory*. Physical Review D 22, 2478–2489 (1980). [DOI](https://doi.org/10.1103/PhysRevD.22.2478).
+44. Hulsebos, A. *The Behavior of Vortex Loops in the 3-d XY Model*. Nuclear Physics B Proceedings Supplements 34, 695–697 (1994); arXiv:hep-lat/9311042. [Preprint](https://arxiv.org/abs/hep-lat/9311042).
+45. Begun, A. M.; Chernodub, M. N.; Goy, V. A.; Molochkov, A. V. *Vortex wall phase in fractonic XY-plaquette model on square lattice*. arXiv:2409.15638v2 (2025). [Preprint](https://arxiv.org/abs/2409.15638).
 
 ---
 
@@ -2133,9 +2452,10 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 - the tenth, source-to-morphology program was executed twice with bitwise-identical normalized output; its complete-state and open-loop controls passed, and its faithful F0 reconstruction matched the clean committed NumPy runtime within `1.05e-17`
 - the eleventh, linon-observer program was executed twice with bitwise-identical normalized output; the historical observer reproduced all declared failure controls, the replacement passed the declared positive controls, and its 24-by-40-frame smoothed-IID calibration produced a familywise 99th-percentile maximum lifetime of one observation
 - the twelfth, Gate-3B actual-dynamics program was executed twice with bitwise-identical normalized output; its exact-vacuum D0 lane remained empty, its F0 cap comparison was exactly identical with finite and disabled caps, and its standalone reconstruction matched the clean committed NumPy runtime within \(3.47\times10^{-17}\) for \(\psi\) and \(1.27\times10^{-21}\) for \(\phi\)
+- the thirteenth, minimum-flux topological-transport program was executed twice with byte-identical normalized output; it reproduces the frozen v1 \(7/12\) and v2 \(11/12\) failures, passes 48 exhaustive small-assignment controls, and its v3 untouched holdout classifies all eight declared families at their frozen expected counts
 - in the newer Python/NumPy environment, the three programs that do not require SciPy passed semantic comparison with \(\mathrm{rtol}=10^{-11}\) and \(\mathrm{atol}=10^{-13}\); differences were limited to runtime metadata and final floating-point bits
 - the OEA program was not replayed in the second environment because SciPy was not installed there; its full reproduction therefore applies to the stated audit environment with SciPy 1.17.1
-- the automatic document audit passed: 12/12 executable Python/JSON pairs, 42 contiguous adversarial questions, 42 contiguous bibliographic entries, balanced code fences, and no local-file references
+- the automatic document audit passed: 13/13 executable Python/JSON pairs, 42 contiguous adversarial questions, 45 contiguous bibliographic entries, balanced code fences, and no local-file references
 
 ### A.2 Control principles
 
@@ -2171,6 +2491,7 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | source-to-morphology causality | paired late residual RMS, branch persistence, turnover, classifier accuracy, and conditioned event history | no-source and mean-only lanes, exact common open-loop mean, variance matching at \(h=0.1\), clean-runtime reconstruction, and balanced-label permutations | independent post-revision seeds; \(h=0.05/0.2\), grids 16/32, horizons 15/60, vacuum initial state, and three detector thresholds | a continuum quantum source, unique identification of memoryless laws, stable particles, or physical vacuum ontology |
 | linon observer | track lifetime, coverage, shape correlation, mass/radius variation, signed winding, and toroidal assignment | flat field, scale copies, input-order reversal, crossing identities, periodic edge crossing, neutral vortex pair, and smoothed-IID nulls | fixed synthetic controls before physical data; frozen Gate-3B thresholds and mandatory time/source/grid/boundary/cap surrogates | that actual Lineum contains a stable localized object, a fundamental particle, or a unique observer |
 | Gate-3B actual dynamics | recurrent envelope or signed-topology identity above familywise null thresholds | exact-vacuum D0, conditional-mean M0, seeded-envelope positive challenge, disabled caps, finite-vs-disabled cap identity, and clean-runtime reconstruction | 12 F0 seeds; time shuffle, random torus shift, Fourier-phase and cell-phase nulls; stop before candidate sensitivities after primary failure | that transient winding defects are stable objects, that no future equation can stabilize an object, or that the tested two-dimensional periodic lane is physical vacuum |
+| minimum-flux topological transport | exact integer-current divergence, registered overlap, resolved-core fraction, and minimum toroidal transport orientation | analytic boundary, pair-creation, and two-defect shift costs; 48 exhaustive assignment controls; global phase/scale/translation invariance | preserved v1 and v2 failures; three untouched seed families; grids 32/48/64; one- and two-cell cadence; coherent, shuffled, random-shift, phase, smooth-disorder, creation, and exchange controls | a unique worldline, localized energy, collision identity, particle ontology, or physical validation of any Lineum equation |
 
 ### A.3 Numerical audit summary
 
@@ -2221,6 +2542,11 @@ This conclusion is not a loss. It is an accurate starting point from which to bu
 | Gate-3B longest actual / independent-cell-phase-null track | \(45/59\) observations |
 | Gate-3B finite-cap versus disabled-cap maximum difference, \(\psi/\phi\) | \(0/0\) |
 | Gate-3B clean-runtime reconstruction difference, \(\psi/\phi\) | \(3.47\times10^{-17}/1.27\times10^{-21}\) |
+| topological transport: frozen v1 / v2 advected-smooth passes | \(7/12\) / \(11/12\) |
+| topological transport v3: constructed / advected-smooth holdout passes | \(12/12\) / \(12/12\) |
+| topological transport v3: six declared negative families | \(0/12\) each |
+| minimum-transport assignment controls | \(48/48\) exhaustive comparisons plus \(3/3\) analytic costs |
+| v3 normalized output identity across two runs | exact; SHA-256 `b32bb536e78ed6a5a44df8a63c8020ff18f0519c683112fadd898fe24d9b41b5` |
 
 ### A.4 Complete executable program
 
@@ -32620,6 +32946,7970 @@ if __name__ == "__main__":
         0.0
       ],
       "sequences": 12
+    }
+  }
+}
+```
+
+## Appendix M — Conserved Topological-Transport Feasibility Audit
+
+This appendix is self-contained. The program reads no Lineum source,
+configuration, dataset, or prior report. It requires Python 3.11 or later,
+NumPy, and SciPy. The reference environment used Python 3.11.15,
+NumPy 1.26.4, and SciPy 1.17.1.
+
+To reproduce the result, copy the complete Python block into a new UTF-8 file
+without adding or removing a line inside the block and execute it. Compare the
+parsed JSON with the complete reference JSON below. Runtime-version strings are
+provenance; every scientific field must be semantically identical. The program
+hash is computed over the UTF-8 code block without a terminal newline:
+`8229a32eb91914240ffc4f61221b268c1b2f8b5e0b61477631eea1c6e8a820e2`. The reference-output hash is computed over the UTF-8 JSON
+block with exactly one terminal newline: `b32bb536e78ed6a5a44df8a63c8020ff18f0519c683112fadd898fe24d9b41b5`.
+
+### M.1 Complete executable program
+
+```python
+"""Synthetic feasibility audit for a spacetime topological-current observer.
+
+This development script uses no Lineum trajectory.  It tests whether integer
+phase winding and minimum transport between adjacent spatial charge maps can
+replace frame-by-frame vortex IDs with a conserved transport observable, and
+records adversarial nulls that expose what it still cannot establish.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import itertools
+import json
+import math
+import platform
+
+import numpy as np
+from scipy.optimize import linear_sum_assignment
+
+
+SIZE = 48
+FRAMES = 25
+SEED = 2026237000
+TWO_PI = 2.0 * np.pi
+MINIMUM_TIME_ORIENTATION = 1.0 / 3.0
+MINIMUM_ADJACENT_OVERLAP = 0.9
+MINIMUM_RESOLVED_CORE_FRACTION = 0.9
+MAXIMUM_IRREGULAR_INTERNAL_FRACTION = 0.05
+HOLDOUT_REPLICATES = 12
+FAILED_V1_HOLDOUT_SEED_BASE = 2026238000
+PREFREEZE_V2_SCREEN_SEED_BASE = 2026239000
+FAILED_V2_HOLDOUT_SEED_BASE = 2026240000
+V3_HOLDOUT_SEED_BASE = 2026241000
+FROZEN_DEVELOPMENT_PROGRAM_SHA256 = (
+    "c9a33942b853a9e04cc792da44d1bf0d1a0078449ab2488eacd54b96e0f82154"
+)
+FROZEN_DEVELOPMENT_OUTPUT_SHA256 = (
+    "c9f78a3b24d700fc4f56162c04b61e581ba6ce6a5ce02c5f99a41501128a08a2"
+)
+FAILED_V1_PROGRAM_SHA256 = (
+    "9be011b8d87de4bb597c52692b2db00db5cdd73eec35311e9a60f8968fcfc074"
+)
+FAILED_V1_OUTPUT_SHA256 = (
+    "e1581b5f8e980633f53d5f5e141c5dfca32390a71232952470d7582cbbeb8e81"
+)
+FAILED_V2_PROGRAM_SHA256 = (
+    "a32697a609c9e7c56b39b6ddd365e1e74b019db074876574a312f192159d24a7"
+)
+FAILED_V2_OUTPUT_SHA256 = (
+    "ad2ef6b942a4d519fe54a9ce4ca08971d27f64dee78404e94810ed1598807380"
+)
+
+
+def wrap_phase(value: np.ndarray) -> np.ndarray:
+    return (value + np.pi) % TWO_PI - np.pi
+
+
+def periodic_winding(theta: np.ndarray) -> np.ndarray:
+    """Integer winding on every periodic spatial plaquette."""
+    link_x = wrap_phase(np.roll(theta, -1, axis=-1) - theta)
+    link_y = wrap_phase(np.roll(theta, -1, axis=-2) - theta)
+    flux = (
+        link_x
+        + np.roll(link_y, -1, axis=-1)
+        - np.roll(link_x, -1, axis=-2)
+        - link_y
+    )
+    return np.rint(flux / TWO_PI).astype(np.int16)
+
+
+def spacetime_current(
+    fields: np.ndarray,
+) -> dict[str, np.ndarray]:
+    """Return the integer dual current of a complex field movie.
+
+    Coordinates are ordered as (time, y, x).  Spatial axes are periodic and
+    time is open.  j_t pierces spatial x-y plaquettes.  j_x and j_y pierce
+    temporal plaquettes.  The forward dual divergence must vanish on every
+    spacetime cube.
+    """
+    theta = np.angle(fields)
+    link_x = wrap_phase(np.roll(theta, -1, axis=2) - theta)
+    link_y = wrap_phase(np.roll(theta, -1, axis=1) - theta)
+    link_t = wrap_phase(theta[1:] - theta[:-1])
+
+    flux_xy = (
+        link_x
+        + np.roll(link_y, -1, axis=2)
+        - np.roll(link_x, -1, axis=1)
+        - link_y
+    )
+    flux_tx = (
+        link_t
+        + link_x[1:]
+        - np.roll(link_t, -1, axis=2)
+        - link_x[:-1]
+    )
+    flux_ty = (
+        link_t
+        + link_y[1:]
+        - np.roll(link_t, -1, axis=1)
+        - link_y[:-1]
+    )
+
+    j_t = np.rint(flux_xy / TWO_PI).astype(np.int16)
+    j_x = -np.rint(flux_ty / TWO_PI).astype(np.int16)
+    j_y = np.rint(flux_tx / TWO_PI).astype(np.int16)
+
+    divergence = (
+        j_t[1:]
+        - j_t[:-1]
+        + np.roll(j_x, -1, axis=2)
+        - j_x
+        + np.roll(j_y, -1, axis=1)
+        - j_y
+    )
+    return {
+        "j_t": j_t,
+        "j_x": j_x,
+        "j_y": j_y,
+        "divergence": divergence,
+    }
+
+
+def align_global_phase(
+    fields: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Remove one unobservable global phase offset between adjacent frames.
+
+    The alignment phase maximizes the complex full-field overlap.  The
+    normalized overlap magnitude is retained as a sampling/coherence
+    diagnostic; alignment cannot create overlap where the field has none.
+    """
+    aligned = np.array(fields, dtype=np.complex128, copy=True)
+    overlaps = []
+    for time_index in range(1, len(aligned)):
+        previous = aligned[time_index - 1]
+        current = aligned[time_index]
+        overlap = np.vdot(previous, current)
+        denominator = float(
+            np.linalg.norm(previous) * np.linalg.norm(current)
+        )
+        overlaps.append(
+            float(np.abs(overlap) / denominator)
+            if denominator > 0.0
+            else 0.0
+        )
+        if np.abs(overlap) > 0.0:
+            aligned[time_index] *= np.exp(-1j * np.angle(overlap))
+    return aligned, np.asarray(overlaps, dtype=np.float64)
+
+
+def translation_registered_overlaps(fields: np.ndarray) -> np.ndarray:
+    """Return the best normalized overlap under a uniform torus shift.
+
+    For each adjacent pair, the periodic cross-correlation is evaluated by
+    FFT.  Its maximum magnitude is the normalized complex overlap after the
+    best single integer translation.  This is a coherence diagnostic, not an
+    assertion that translation is physically unobservable.
+    """
+    overlaps = []
+    for time_index in range(1, len(fields)):
+        previous = fields[time_index - 1]
+        current = fields[time_index]
+        denominator = float(
+            np.linalg.norm(previous) * np.linalg.norm(current)
+        )
+        if denominator == 0.0:
+            overlaps.append(0.0)
+            continue
+        correlation = np.fft.ifft2(
+            np.conj(np.fft.fft2(previous)) * np.fft.fft2(current)
+        )
+        raw_overlap = float(np.max(np.abs(correlation)) / denominator)
+        overlaps.append(float(np.clip(raw_overlap, 0.0, 1.0)))
+    return np.asarray(overlaps, dtype=np.float64)
+
+
+def _expanded_integer_positions(values: np.ndarray) -> np.ndarray:
+    """Expand nonnegative integer site weights into unit positions."""
+    coordinates = np.argwhere(values > 0)
+    if coordinates.size == 0:
+        return np.empty((0, 2), dtype=np.int16)
+    multiplicities = values[tuple(coordinates.T)].astype(int)
+    return np.repeat(coordinates, multiplicities, axis=0).astype(
+        np.int16
+    )
+
+
+def minimum_toroidal_transport(
+    spatial_charge: np.ndarray,
+) -> dict[str, object]:
+    """Compute the exact minimum L1 flux between adjacent charge maps.
+
+    For one time slab, ``delta = q[t+1] - q[t]`` has zero total charge.
+    The positive and negative integer parts of ``delta`` are therefore equal
+    unit supplies and demands.  On a periodic square grid, the shortest-path
+    cost is toroidal Manhattan distance.  A minimum-cost bipartite assignment
+    consequently gives the minimum integer L1 spatial flux compatible with
+    the slab boundary data.  It deliberately assigns no persistent point ID.
+    """
+    _frames, size_y, size_x = spatial_charge.shape
+    slab_fluxes: list[int] = []
+    transported_units: list[int] = []
+    for time_index in range(len(spatial_charge) - 1):
+        delta = (
+            spatial_charge[time_index + 1].astype(np.int32)
+            - spatial_charge[time_index].astype(np.int32)
+        )
+        positive = _expanded_integer_positions(np.maximum(delta, 0))
+        negative = _expanded_integer_positions(np.maximum(-delta, 0))
+        if len(positive) != len(negative):
+            raise AssertionError(
+                "Periodic charge difference is not globally neutral."
+            )
+        transported_units.append(int(len(positive)))
+        if len(positive) == 0:
+            slab_fluxes.append(0)
+            continue
+        delta_y = np.abs(
+            positive[:, None, 0].astype(np.int32)
+            - negative[None, :, 0].astype(np.int32)
+        )
+        delta_x = np.abs(
+            positive[:, None, 1].astype(np.int32)
+            - negative[None, :, 1].astype(np.int32)
+        )
+        distance = (
+            np.minimum(delta_y, size_y - delta_y)
+            + np.minimum(delta_x, size_x - delta_x)
+        )
+        rows, columns = linear_sum_assignment(distance)
+        slab_fluxes.append(int(np.sum(distance[rows, columns])))
+    return {
+        "spatial_flux": int(sum(slab_fluxes)),
+        "slab_spatial_fluxes": slab_fluxes,
+        "slab_transport_unit_counts": transported_units,
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "persistent_point_ids_assigned": False,
+    }
+
+
+def minimum_transport_unit_controls() -> dict[str, object]:
+    """Check the transport solver against analytic and brute-force cases."""
+    size = 8
+    boundary_movie = np.zeros((2, size, size), dtype=np.int16)
+    boundary_movie[:, 4, 4] = -1
+    boundary_movie[0, 0, 0] = 1
+    boundary_movie[1, 0, size - 1] = 1
+    boundary_result = minimum_toroidal_transport(boundary_movie)
+
+    creation_movie = np.zeros((2, size, size), dtype=np.int16)
+    creation_movie[1, 2, 2] = 1
+    creation_movie[1, 2, 5] = -1
+    creation_result = minimum_toroidal_transport(creation_movie)
+
+    shift_movie = np.zeros((2, size, size), dtype=np.int16)
+    shift_movie[0, 1, 1] = 1
+    shift_movie[0, 6, 6] = -1
+    shift_movie[1, 1, 2] = 1
+    shift_movie[1, 6, 7] = -1
+    shift_result = minimum_toroidal_transport(shift_movie)
+
+    rng = np.random.RandomState(2026239001)
+    brute_force_cases = []
+    for case_index in range(48):
+        small_size = 5
+        units = 1 + case_index % 6
+        chosen = rng.choice(
+            small_size * small_size,
+            size=2 * units,
+            replace=False,
+        )
+        positive = np.column_stack(
+            (chosen[:units] // small_size, chosen[:units] % small_size)
+        )
+        negative = np.column_stack(
+            (chosen[units:] // small_size, chosen[units:] % small_size)
+        )
+        delta = np.zeros((small_size, small_size), dtype=np.int16)
+        for y, x in positive:
+            delta[y, x] += 1
+        for y, x in negative:
+            delta[y, x] -= 1
+        movie = np.stack([np.zeros_like(delta), delta])
+        assignment_cost = minimum_toroidal_transport(movie)[
+            "spatial_flux"
+        ]
+        brute_costs = []
+        for ordering in itertools.permutations(range(units)):
+            cost = 0
+            for positive_index, negative_index in enumerate(ordering):
+                delta_y = abs(
+                    int(positive[positive_index, 0])
+                    - int(negative[negative_index, 0])
+                )
+                delta_x = abs(
+                    int(positive[positive_index, 1])
+                    - int(negative[negative_index, 1])
+                )
+                cost += min(delta_y, small_size - delta_y)
+                cost += min(delta_x, small_size - delta_x)
+            brute_costs.append(cost)
+        brute_minimum = int(min(brute_costs))
+        brute_force_cases.append(
+            {
+                "case": case_index,
+                "units": units,
+                "assignment_cost": assignment_cost,
+                "brute_force_cost": brute_minimum,
+                "equal": bool(assignment_cost == brute_minimum),
+            }
+        )
+    return {
+        "periodic_boundary_one_step": {
+            "expected": 1,
+            "observed": boundary_result["spatial_flux"],
+            "passes": boundary_result["spatial_flux"] == 1,
+        },
+        "neutral_pair_creation_distance_three": {
+            "expected": 3,
+            "observed": creation_result["spatial_flux"],
+            "passes": creation_result["spatial_flux"] == 3,
+        },
+        "two_defects_shift_one_cell": {
+            "expected": 2,
+            "observed": shift_result["spatial_flux"],
+            "passes": shift_result["spatial_flux"] == 2,
+        },
+        "brute_force_assignment_comparison": {
+            "cases": brute_force_cases,
+            "all_equal": all(case["equal"] for case in brute_force_cases),
+        },
+        "all_controls_pass": bool(
+            boundary_result["spatial_flux"] == 1
+            and creation_result["spatial_flux"] == 3
+            and shift_result["spatial_flux"] == 2
+            and all(case["equal"] for case in brute_force_cases)
+        ),
+    }
+
+
+def registered_overlap_unit_control() -> dict[str, object]:
+    """Check torus registration under translation, phase, and scale."""
+    rng = np.random.RandomState(2026239002)
+    base = (
+        rng.normal(size=(16, 16))
+        + 1j * rng.normal(size=(16, 16))
+    )
+    transformed = (
+        2.7
+        * np.exp(1.3j)
+        * np.roll(np.roll(base, 5, axis=0), -3, axis=1)
+    )
+    movie = np.stack([base, transformed])
+    registered = float(translation_registered_overlaps(movie)[0])
+    zero_shift = float(
+        np.abs(np.vdot(base, transformed))
+        / (np.linalg.norm(base) * np.linalg.norm(transformed))
+    )
+    return {
+        "expected_registered_overlap": 1.0,
+        "observed_registered_overlap": registered,
+        "absolute_error": float(abs(registered - 1.0)),
+        "zero_shift_overlap": zero_shift,
+        "passes": bool(abs(registered - 1.0) <= 1e-12),
+    }
+
+
+class UnionFind:
+    def __init__(self) -> None:
+        self.parent: dict[tuple[int, int, int], tuple[int, int, int]] = {}
+        self.rank: dict[tuple[int, int, int], int] = {}
+
+    def add(self, item: tuple[int, int, int]) -> None:
+        if item not in self.parent:
+            self.parent[item] = item
+            self.rank[item] = 0
+
+    def find(self, item: tuple[int, int, int]) -> tuple[int, int, int]:
+        parent = self.parent[item]
+        if parent != item:
+            self.parent[item] = self.find(parent)
+        return self.parent[item]
+
+    def union(
+        self,
+        left: tuple[int, int, int],
+        right: tuple[int, int, int],
+    ) -> None:
+        self.add(left)
+        self.add(right)
+        root_left = self.find(left)
+        root_right = self.find(right)
+        if root_left == root_right:
+            return
+        if self.rank[root_left] < self.rank[root_right]:
+            root_left, root_right = root_right, root_left
+        self.parent[root_right] = root_left
+        if self.rank[root_left] == self.rank[root_right]:
+            self.rank[root_left] += 1
+
+
+def current_graph_metrics(current: dict[str, np.ndarray]) -> dict[str, object]:
+    """Summarize the undirected dual network without assigning vortex IDs."""
+    j_t = current["j_t"]
+    j_x = current["j_x"]
+    j_y = current["j_y"]
+    frames, size_y, size_x = j_t.shape
+    union_find = UnionFind()
+    edges: list[
+        tuple[
+            tuple[int, int, int],
+            tuple[int, int, int],
+            int,
+        ]
+    ] = []
+    degree: dict[tuple[int, int, int], int] = {}
+
+    def add_edge(
+        left: tuple[int, int, int],
+        right: tuple[int, int, int],
+        value: int,
+    ) -> None:
+        weight = abs(int(value))
+        if weight == 0:
+            return
+        union_find.union(left, right)
+        edges.append((left, right, weight))
+        degree[left] = degree.get(left, 0) + weight
+        degree[right] = degree.get(right, 0) + weight
+
+    for time_index, y, x in np.argwhere(j_t != 0):
+        add_edge(
+            (int(time_index) - 1, int(y), int(x)),
+            (int(time_index), int(y), int(x)),
+            int(j_t[time_index, y, x]),
+        )
+    for time_index, y, x in np.argwhere(j_x != 0):
+        add_edge(
+            (int(time_index), int(y), (int(x) - 1) % size_x),
+            (int(time_index), int(y), int(x)),
+            int(j_x[time_index, y, x]),
+        )
+    for time_index, y, x in np.argwhere(j_y != 0):
+        add_edge(
+            (int(time_index), (int(y) - 1) % size_y, int(x)),
+            (int(time_index), int(y), int(x)),
+            int(j_y[time_index, y, x]),
+        )
+
+    component_flux: dict[tuple[int, int, int], int] = {}
+    component_times: dict[tuple[int, int, int], set[int]] = {}
+    for left, _right, weight in edges:
+        root = union_find.find(left)
+        component_flux[root] = component_flux.get(root, 0) + weight
+    for node in union_find.parent:
+        root = union_find.find(node)
+        component_times.setdefault(root, set()).add(node[0])
+
+    total_flux = sum(component_flux.values())
+    spanning = sum(
+        -1 in times and frames - 1 in times
+        for times in component_times.values()
+    )
+    closed = sum(
+        -1 not in times and frames - 1 not in times
+        for times in component_times.values()
+    )
+    internal_nodes = [
+        node for node in degree if 0 <= node[0] <= frames - 2
+    ]
+    irregular_internal_nodes = [
+        node for node in internal_nodes if degree[node] != 2
+    ]
+    return {
+        "components": int(len(component_flux)),
+        "total_segment_flux": int(total_flux),
+        "largest_component_flux_fraction": (
+            float(max(component_flux.values()) / total_flux)
+            if total_flux
+            else 0.0
+        ),
+        "spanning_temporal_components": int(spanning),
+        "closed_internal_components": int(closed),
+        "active_internal_nodes": int(len(internal_nodes)),
+        "branch_or_endpoint_internal_nodes": int(
+            len(irregular_internal_nodes)
+        ),
+        "branch_or_endpoint_internal_fraction": (
+            float(len(irregular_internal_nodes) / len(internal_nodes))
+            if internal_nodes
+            else 0.0
+        ),
+        "maximum_node_flux_degree": int(max(degree.values(), default=0)),
+    }
+
+
+def planar_vortex_pair(size: int) -> np.ndarray:
+    yy, xx = np.mgrid[:size, :size]
+    plus = (0.35 * size, 0.35 * size)
+    minus = (0.65 * size, 0.65 * size)
+    z_plus = (xx - plus[1]) + 1j * (yy - plus[0])
+    z_minus = (xx - minus[1]) + 1j * (yy - minus[0])
+    r_plus = np.abs(z_plus)
+    r_minus = np.abs(z_minus)
+    phase = (
+        z_plus / (r_plus + 1e-15)
+        * np.conj(z_minus / (r_minus + 1e-15))
+    )
+    amplitude = np.tanh(r_plus / 1.3) * np.tanh(r_minus / 1.3)
+    return (amplitude * phase).astype(np.complex128)
+
+
+def vortex_pair_at(
+    size: int,
+    plus_y: float,
+    plus_x: float,
+    minus_y: float,
+    minus_x: float,
+) -> np.ndarray:
+    yy, xx = np.mgrid[:size, :size]
+    z_plus = (xx - plus_x) + 1j * (yy - plus_y)
+    z_minus = (xx - minus_x) + 1j * (yy - minus_y)
+    r_plus = np.abs(z_plus)
+    r_minus = np.abs(z_minus)
+    phase = (
+        z_plus / (r_plus + 1e-15)
+        * np.conj(z_minus / (r_minus + 1e-15))
+    )
+    amplitude = np.tanh(r_plus / 1.3) * np.tanh(r_minus / 1.3)
+    return (amplitude * phase).astype(np.complex128)
+
+
+def neutral_multivortex_field(
+    size: int,
+    plus_positions: list[tuple[float, float]],
+    minus_positions: list[tuple[float, float]],
+) -> np.ndarray:
+    """Build a neutral planar multi-vortex field away from periodic cuts."""
+    assert len(plus_positions) == len(minus_positions)
+    yy, xx = np.mgrid[:size, :size]
+    phase = np.ones((size, size), dtype=np.complex128)
+    amplitude = np.ones((size, size), dtype=np.float64)
+    for y, x in plus_positions:
+        z = (xx - x) + 1j * (yy - y)
+        radius = np.abs(z)
+        phase *= z / (radius + 1e-15)
+        amplitude *= np.tanh(radius / 1.3)
+    for y, x in minus_positions:
+        z = (xx - x) + 1j * (yy - y)
+        radius = np.abs(z)
+        phase *= np.conj(z / (radius + 1e-15))
+        amplitude *= np.tanh(radius / 1.3)
+    return (amplitude * phase).astype(np.complex128)
+
+
+def smooth_complex_disorder(
+    size: int,
+    rng: np.random.RandomState,
+    correlation_length: float = 3.0,
+) -> np.ndarray:
+    """Return a periodic low-pass complex texture with resolved random zeros."""
+    noise = (
+        rng.normal(size=(size, size))
+        + 1j * rng.normal(size=(size, size))
+    )
+    ky = np.fft.fftfreq(size)[:, None]
+    kx = np.fft.fftfreq(size)[None, :]
+    filter_kernel = np.exp(
+        -2.0
+        * np.pi**2
+        * correlation_length**2
+        * (kx**2 + ky**2)
+    )
+    field = np.fft.ifft2(np.fft.fft2(noise) * filter_kernel)
+    field /= max(float(np.sqrt(np.mean(np.abs(field) ** 2))), 1e-15)
+    return field.astype(np.complex128)
+
+
+def resolved_core_metrics(
+    fields: np.ndarray,
+    j_t: np.ndarray,
+    threshold: float = 0.5,
+) -> dict[str, float | int]:
+    """Measure whether a spatial defect has a grid-resolved amplitude core.
+
+    This is a resolution diagnostic, not a topological definition.  For every
+    nonzero spatial plaquette, compare its minimum vertex amplitude with the
+    median amplitude in a 5x5 periodic neighborhood.  A ratio below the frozen
+    synthetic threshold is called grid-resolved.
+    """
+    ratios = []
+    for time_index, y, x in np.argwhere(j_t != 0):
+        amplitude = np.abs(fields[time_index])
+        vertices = np.asarray(
+            [
+                amplitude[y, x],
+                amplitude[y, (x + 1) % amplitude.shape[1]],
+                amplitude[(y + 1) % amplitude.shape[0], x],
+                amplitude[
+                    (y + 1) % amplitude.shape[0],
+                    (x + 1) % amplitude.shape[1],
+                ],
+            ]
+        )
+        ys = (np.arange(y - 2, y + 3) % amplitude.shape[0]).astype(int)
+        xs = (np.arange(x - 2, x + 3) % amplitude.shape[1]).astype(int)
+        neighborhood = amplitude[np.ix_(ys, xs)]
+        reference = float(np.median(neighborhood))
+        ratios.append(float(np.min(vertices)) / max(reference, 1e-15))
+    if not ratios:
+        return {
+            "defects": 0,
+            "resolved_fraction": 0.0,
+            "median_core_ratio": 0.0,
+            "maximum_core_ratio": 0.0,
+        }
+    values = np.asarray(ratios)
+    return {
+        "defects": int(values.size),
+        "resolved_fraction": float(np.mean(values <= threshold)),
+        "median_core_ratio": float(np.median(values)),
+        "maximum_core_ratio": float(np.max(values)),
+    }
+
+
+def movie_metrics(fields: np.ndarray) -> dict[str, object]:
+    aligned, overlaps = align_global_phase(fields)
+    registered_overlaps = translation_registered_overlaps(aligned)
+    current = spacetime_current(aligned)
+    temporal_flux = int(np.sum(np.abs(current["j_t"])))
+    spatial_flux = int(
+        np.sum(np.abs(current["j_x"]))
+        + np.sum(np.abs(current["j_y"]))
+    )
+    total_flux = temporal_flux + spatial_flux
+    defects_per_frame = np.sum(np.abs(current["j_t"]), axis=(1, 2))
+    net_charge_per_frame = np.sum(current["j_t"], axis=(1, 2))
+    core_metrics = resolved_core_metrics(aligned, current["j_t"])
+    network_metrics = current_graph_metrics(current)
+    result = {
+        "frames": int(fields.shape[0]),
+        "temporal_flux": temporal_flux,
+        "spatial_flux": spatial_flux,
+        "time_orientation_fraction": (
+            float(temporal_flux / total_flux) if total_flux else 0.0
+        ),
+        "spatial_to_temporal_flux": (
+            float(spatial_flux / temporal_flux)
+            if temporal_flux
+            else None
+        ),
+        "maximum_abs_divergence": int(
+            np.max(np.abs(current["divergence"]))
+        ),
+        "nonzero_divergence_cubes": int(
+            np.count_nonzero(current["divergence"])
+        ),
+        "defects_per_frame": defects_per_frame.astype(int).tolist(),
+        "net_charge_per_frame": net_charge_per_frame.astype(int).tolist(),
+        "maximum_abs_net_charge": int(
+            np.max(np.abs(net_charge_per_frame))
+        ),
+        "adjacent_overlap": {
+            "minimum": float(np.min(overlaps)) if overlaps.size else 0.0,
+            "mean": float(np.mean(overlaps)) if overlaps.size else 0.0,
+            "maximum": float(np.max(overlaps)) if overlaps.size else 0.0,
+        },
+        "translation_registered_adjacent_overlap": {
+            "minimum": (
+                float(np.min(registered_overlaps))
+                if registered_overlaps.size
+                else 0.0
+            ),
+            "mean": (
+                float(np.mean(registered_overlaps))
+                if registered_overlaps.size
+                else 0.0
+            ),
+            "maximum": (
+                float(np.max(registered_overlaps))
+                if registered_overlaps.size
+                else 0.0
+            ),
+        },
+        "resolved_core": core_metrics,
+        "worldline_network": network_metrics,
+    }
+    result["v1_compact_current_rule"] = bool(
+        temporal_flux > 0
+        and result["maximum_abs_divergence"] == 0
+        and result["maximum_abs_net_charge"] == 0
+        and result["time_orientation_fraction"]
+        >= MINIMUM_TIME_ORIENTATION
+        and result["adjacent_overlap"]["mean"]
+        >= MINIMUM_ADJACENT_OVERLAP
+        and result["resolved_core"]["resolved_fraction"]
+        >= MINIMUM_RESOLVED_CORE_FRACTION
+        and result["worldline_network"][
+            "branch_or_endpoint_internal_fraction"
+        ]
+        <= MAXIMUM_IRREGULAR_INTERNAL_FRACTION
+    )
+    transport_compute_preconditions = bool(
+        temporal_flux > 0
+        and result["maximum_abs_divergence"] == 0
+        and result["maximum_abs_net_charge"] == 0
+        and result["translation_registered_adjacent_overlap"]["mean"]
+        >= MINIMUM_ADJACENT_OVERLAP
+        and result["resolved_core"]["resolved_fraction"]
+        >= MINIMUM_RESOLVED_CORE_FRACTION
+    )
+    if transport_compute_preconditions:
+        minimum_transport = minimum_toroidal_transport(current["j_t"])
+        minimum_spatial_flux = int(minimum_transport["spatial_flux"])
+        minimum_total_flux = temporal_flux + minimum_spatial_flux
+        minimum_orientation = (
+            float(temporal_flux / minimum_total_flux)
+            if minimum_total_flux
+            else 0.0
+        )
+        minimum_transport["time_orientation_fraction"] = (
+            minimum_orientation
+        )
+        minimum_transport["evaluated"] = True
+        minimum_transport["not_evaluated_reason"] = None
+    else:
+        minimum_transport = {
+            "evaluated": False,
+            "not_evaluated_reason": (
+                "At least one cheaper coherence, resolution, conservation, "
+                "or neutrality precondition failed; the assignment solve "
+                "cannot change the verdict."
+            ),
+            "spatial_flux": None,
+            "slab_spatial_fluxes": None,
+            "slab_transport_unit_counts": None,
+            "time_orientation_fraction": None,
+            "cost": "unit integer flux with toroidal Manhattan distance",
+            "solver": (
+                "exact minimum-cost bipartite assignment per time slab"
+            ),
+            "persistent_point_ids_assigned": False,
+        }
+    result["minimum_toroidal_transport"] = minimum_transport
+    result["v2_minimum_transport_rule"] = bool(
+        transport_compute_preconditions
+        and result["worldline_network"][
+            "branch_or_endpoint_internal_fraction"
+        ]
+        <= MAXIMUM_IRREGULAR_INTERNAL_FRACTION
+        and minimum_transport["time_orientation_fraction"]
+        >= MINIMUM_TIME_ORIENTATION
+    )
+    result["v3_transport_without_compact_branch_gate_rule"] = bool(
+        transport_compute_preconditions
+        and minimum_transport["time_orientation_fraction"]
+        >= MINIMUM_TIME_ORIENTATION
+    )
+    result["coherent_resolved_worldline_rule"] = result[
+        "v1_compact_current_rule"
+    ]
+    return result
+
+
+def build_movies() -> dict[str, np.ndarray]:
+    base = planar_vortex_pair(SIZE)
+    static = np.stack([base for _ in range(FRAMES)])
+    translate_x = np.stack(
+        [np.roll(base, frame_index, axis=1) for frame_index in range(FRAMES)]
+    )
+    translate_xy = np.stack(
+        [
+            np.roll(
+                np.roll(base, frame_index // 2, axis=0),
+                frame_index,
+                axis=1,
+            )
+            for frame_index in range(FRAMES)
+        ]
+    )
+    translate_x_two = np.stack(
+        [
+            np.roll(base, 2 * frame_index, axis=1)
+            for frame_index in range(FRAMES)
+        ]
+    )
+    translate_x_three = np.stack(
+        [
+            np.roll(base, 3 * frame_index, axis=1)
+            for frame_index in range(FRAMES)
+        ]
+    )
+
+    rng = np.random.RandomState(SEED)
+    phases = rng.uniform(-np.pi, np.pi, FRAMES)
+    scales = np.exp(rng.uniform(-1.0, 1.0, FRAMES))
+    transformed = np.stack(
+        [
+            scales[index]
+            * np.exp(1j * phases[index])
+            * translate_x[index]
+            for index in range(FRAMES)
+        ]
+    )
+
+    order = rng.permutation(FRAMES)
+    shuffled = translate_x[order]
+    random_shift = np.stack(
+        [
+            np.roll(
+                np.roll(base, int(rng.randint(SIZE)), axis=0),
+                int(rng.randint(SIZE)),
+                axis=1,
+            )
+            for _ in range(FRAMES)
+        ]
+    )
+
+    base_amplitude = np.abs(base)
+    independent_phase = np.stack(
+        [
+            base_amplitude
+            * np.exp(
+                1j * rng.uniform(-np.pi, np.pi, (SIZE, SIZE))
+            )
+            for _ in range(FRAMES)
+        ]
+    )
+    frozen_phase_frame = np.exp(
+        1j * rng.uniform(-np.pi, np.pi, (SIZE, SIZE))
+    )
+    frozen_random_phase = np.stack(
+        [frozen_phase_frame for _ in range(FRAMES)]
+    )
+    smooth_disorder = smooth_complex_disorder(SIZE, rng)
+    frozen_smooth_disorder = np.stack(
+        [smooth_disorder for _ in range(FRAMES)]
+    )
+    advected_smooth_disorder = np.stack(
+        [
+            np.roll(smooth_disorder, frame_index, axis=1)
+            for frame_index in range(FRAMES)
+        ]
+    )
+
+    additive_noise_rng = np.random.RandomState(SEED + 1)
+    noisy_translation = translate_x + 0.02 * (
+        additive_noise_rng.normal(size=translate_x.shape)
+        + 1j * additive_noise_rng.normal(size=translate_x.shape)
+    )
+
+    center = SIZE / 2.0
+    half = (FRAMES - 1) // 2
+    separations = [
+        min(index, FRAMES - 1 - index, half) * 0.75
+        for index in range(FRAMES)
+    ]
+    creation_annihilation = np.stack(
+        [
+            vortex_pair_at(
+                SIZE,
+                center,
+                center - separation,
+                center,
+                center + separation,
+            )
+            for separation in separations
+        ]
+    )
+    exchange_frames = []
+    for frame_index in range(FRAMES):
+        fraction = frame_index / (FRAMES - 1)
+        first_plus_x = 14.0 + 20.0 * fraction
+        second_plus_x = 34.0 - 20.0 * fraction
+        exchange_frames.append(
+            neutral_multivortex_field(
+                SIZE,
+                plus_positions=[
+                    (16.0, first_plus_x),
+                    (16.0, second_plus_x),
+                ],
+                minus_positions=[(34.0, 16.0), (34.0, 32.0)],
+            )
+        )
+    same_charge_exchange = np.stack(exchange_frames)
+
+    grid_32_base = planar_vortex_pair(32)
+    grid_32_translation = np.stack(
+        [
+            np.roll(grid_32_base, frame_index, axis=1)
+            for frame_index in range(FRAMES)
+        ]
+    )
+    grid_64_base = planar_vortex_pair(64)
+    grid_64_translation = np.stack(
+        [
+            np.roll(grid_64_base, frame_index, axis=1)
+            for frame_index in range(FRAMES)
+        ]
+    )
+
+    uniform = np.ones((FRAMES, SIZE, SIZE), dtype=np.complex128)
+    return {
+        "uniform": uniform,
+        "static_pair": static,
+        "translate_x_one_cell_per_frame": translate_x,
+        "translate_x_two_cells_per_frame": translate_x_two,
+        "translate_x_three_cells_per_frame_sampling_limit": (
+            translate_x_three
+        ),
+        "translate_xy": translate_xy,
+        "noisy_translation": noisy_translation,
+        "global_phase_and_amplitude_transform": transformed,
+        "time_shuffled_translation": shuffled,
+        "independent_random_torus_shift": random_shift,
+        "independent_cell_phase_preserved_amplitude": independent_phase,
+        "frozen_random_phase": frozen_random_phase,
+        "frozen_smooth_complex_disorder": frozen_smooth_disorder,
+        "advected_smooth_complex_disorder": advected_smooth_disorder,
+        "pair_creation_annihilation": creation_annihilation,
+        "same_charge_exchange_without_identity_labels": (
+            same_charge_exchange
+        ),
+        "grid_32_translation": grid_32_translation,
+        "grid_64_translation": grid_64_translation,
+    }
+
+
+def transformed_pair_movie(
+    size: int,
+    speed: int,
+    rng: np.random.RandomState,
+) -> np.ndarray:
+    base = planar_vortex_pair(size)
+    initial_y = int(rng.randint(size))
+    initial_x = int(rng.randint(size))
+    phases = rng.uniform(-np.pi, np.pi, FRAMES)
+    scales = np.exp(rng.uniform(-1.0, 1.0, FRAMES))
+    noise_strength = float(rng.choice([0.0, 0.01, 0.02]))
+    frames = []
+    for frame_index in range(FRAMES):
+        frame = np.roll(
+            np.roll(base, initial_y, axis=0),
+            initial_x + speed * frame_index,
+            axis=1,
+        )
+        frame = scales[frame_index] * np.exp(1j * phases[frame_index]) * frame
+        frame += noise_strength * (
+            rng.normal(size=frame.shape) + 1j * rng.normal(size=frame.shape)
+        )
+        frames.append(frame)
+    return np.stack(frames)
+
+
+def compact_metric_record(
+    seed: int,
+    metrics: dict[str, object],
+) -> dict[str, object]:
+    return {
+        "seed": seed,
+        "passes_v1_compact_current_rule": metrics[
+            "v1_compact_current_rule"
+        ],
+        "passes_v2_minimum_transport_rule": metrics[
+            "v2_minimum_transport_rule"
+        ],
+        "passes_v3_transport_without_compact_branch_gate_rule": metrics[
+            "v3_transport_without_compact_branch_gate_rule"
+        ],
+        "peak_spatial_defects": int(max(metrics["defects_per_frame"])),
+        "compact_current_time_orientation_fraction": metrics[
+            "time_orientation_fraction"
+        ],
+        "zero_shift_mean_adjacent_overlap": metrics[
+            "adjacent_overlap"
+        ]["mean"],
+        "registered_mean_adjacent_overlap": metrics[
+            "translation_registered_adjacent_overlap"
+        ]["mean"],
+        "minimum_transport_evaluated": metrics[
+            "minimum_toroidal_transport"
+        ]["evaluated"],
+        "minimum_transport_time_orientation_fraction": metrics[
+            "minimum_toroidal_transport"
+        ]["time_orientation_fraction"],
+        "minimum_transport_spatial_flux": metrics[
+            "minimum_toroidal_transport"
+        ]["spatial_flux"],
+        "resolved_core_fraction": metrics["resolved_core"][
+            "resolved_fraction"
+        ],
+        "network_components": metrics["worldline_network"]["components"],
+        "largest_component_flux_fraction": metrics["worldline_network"][
+            "largest_component_flux_fraction"
+        ],
+        "irregular_internal_fraction": metrics["worldline_network"][
+            "branch_or_endpoint_internal_fraction"
+        ],
+        "maximum_abs_divergence": metrics["maximum_abs_divergence"],
+        "maximum_abs_net_charge": metrics["maximum_abs_net_charge"],
+    }
+
+
+def summarize_records(
+    records: list[dict[str, object]],
+    expected_role: str,
+    pass_key: str,
+    include_records: bool,
+) -> dict[str, object]:
+    def bounds(key: str) -> list[float] | None:
+        values = [
+            float(record[key])
+            for record in records
+            if record[key] is not None
+        ]
+        if not values:
+            return None
+        return [float(min(values)), float(max(values))]
+
+    summary = {
+        "expected_role": expected_role,
+        "replicates": len(records),
+        "passing_replicates": int(
+            sum(record[pass_key] for record in records)
+        ),
+        "all_exactly_conserved": all(
+            record["maximum_abs_divergence"] == 0 for record in records
+        ),
+        "all_periodic_net_neutral": all(
+            record["maximum_abs_net_charge"] == 0 for record in records
+        ),
+        "compact_current_time_orientation_range": bounds(
+            "compact_current_time_orientation_fraction"
+        ),
+        "zero_shift_mean_adjacent_overlap_range": bounds(
+            "zero_shift_mean_adjacent_overlap"
+        ),
+        "registered_mean_adjacent_overlap_range": bounds(
+            "registered_mean_adjacent_overlap"
+        ),
+        "minimum_transport_time_orientation_range": bounds(
+            "minimum_transport_time_orientation_fraction"
+        ),
+        "resolved_core_fraction_range": bounds("resolved_core_fraction"),
+        "irregular_internal_fraction_range": bounds(
+            "irregular_internal_fraction"
+        ),
+    }
+    if include_records:
+        summary["records"] = records
+    return summary
+
+
+def build_holdout_records(
+    seed_base: int,
+) -> dict[str, list[dict[str, object]]]:
+    family_records: dict[str, list[dict[str, object]]] = {
+        "coherent_transformed_pair": [],
+        "independent_cell_phase": [],
+        "frozen_constant_amplitude_random_phase": [],
+        "independent_random_torus_shift": [],
+        "time_shuffled_coherent_pair": [],
+        "independent_smooth_complex_disorder": [],
+        "frozen_smooth_complex_disorder_ambiguity": [],
+        "advected_smooth_complex_disorder_ambiguity": [],
+    }
+    for replicate in range(HOLDOUT_REPLICATES):
+        seed = seed_base + replicate
+        rng = np.random.RandomState(seed)
+        size = (32, 48, 64)[replicate % 3]
+        speed = 1 + replicate % 2
+        coherent = transformed_pair_movie(size, speed, rng)
+        base = planar_vortex_pair(size)
+        amplitude = np.abs(base)
+        independent_phase = np.stack(
+            [
+                amplitude
+                * np.exp(
+                    1j * rng.uniform(-np.pi, np.pi, (size, size))
+                )
+                for _ in range(FRAMES)
+            ]
+        )
+        frozen_phase = np.exp(
+            1j * rng.uniform(-np.pi, np.pi, (size, size))
+        )
+        frozen_constant = np.stack(
+            [frozen_phase for _ in range(FRAMES)]
+        )
+        random_shift = np.stack(
+            [
+                np.roll(
+                    np.roll(base, int(rng.randint(size)), axis=0),
+                    int(rng.randint(size)),
+                    axis=1,
+                )
+                for _ in range(FRAMES)
+            ]
+        )
+        order = rng.permutation(FRAMES)
+        shuffled = coherent[order]
+        independent_smooth = np.stack(
+            [
+                smooth_complex_disorder(size, rng)
+                for _ in range(FRAMES)
+            ]
+        )
+        smooth = smooth_complex_disorder(size, rng)
+        frozen_smooth = np.stack([smooth for _ in range(FRAMES)])
+        advected_smooth = np.stack(
+            [
+                np.roll(smooth, speed * frame_index, axis=1)
+                for frame_index in range(FRAMES)
+            ]
+        )
+
+        movies = {
+            "coherent_transformed_pair": coherent,
+            "independent_cell_phase": independent_phase,
+            "frozen_constant_amplitude_random_phase": frozen_constant,
+            "independent_random_torus_shift": random_shift,
+            "time_shuffled_coherent_pair": shuffled,
+            "independent_smooth_complex_disorder": independent_smooth,
+            "frozen_smooth_complex_disorder_ambiguity": frozen_smooth,
+            "advected_smooth_complex_disorder_ambiguity": advected_smooth,
+        }
+        for family, movie in movies.items():
+            family_records[family].append(
+                compact_metric_record(seed, movie_metrics(movie))
+            )
+    return family_records
+
+
+def summarize_holdout(
+    family_records: dict[str, list[dict[str, object]]],
+    pass_key: str,
+    include_records: bool,
+) -> dict[str, object]:
+    roles = {
+        "coherent_transformed_pair": (
+            "positive worldline control; should pass"
+        ),
+        "independent_cell_phase": (
+            "incoherent null; should fail"
+        ),
+        "frozen_constant_amplitude_random_phase": (
+            "unresolved frozen null; should fail"
+        ),
+        "independent_random_torus_shift": (
+            "broken-transport null; should fail"
+        ),
+        "time_shuffled_coherent_pair": (
+            "broken-time-order null; should fail"
+        ),
+        "independent_smooth_complex_disorder": (
+            "resolved but temporally incoherent null; should fail"
+        ),
+        "frozen_smooth_complex_disorder_ambiguity": (
+            "coherent resolved texture; expected to pass worldline rule but "
+            "must never be promoted to a particle"
+        ),
+        "advected_smooth_complex_disorder_ambiguity": (
+            "coherently transported resolved texture; expected to pass "
+            "worldline rule but must never be promoted to a particle"
+        ),
+    }
+    summaries = {
+        family: summarize_records(
+            records,
+            roles[family],
+            pass_key,
+            include_records,
+        )
+        for family, records in family_records.items()
+    }
+    expected_pass_counts = {
+        "coherent_transformed_pair": HOLDOUT_REPLICATES,
+        "independent_cell_phase": 0,
+        "frozen_constant_amplitude_random_phase": 0,
+        "independent_random_torus_shift": 0,
+        "time_shuffled_coherent_pair": 0,
+        "independent_smooth_complex_disorder": 0,
+        "frozen_smooth_complex_disorder_ambiguity": HOLDOUT_REPLICATES,
+        "advected_smooth_complex_disorder_ambiguity": HOLDOUT_REPLICATES,
+    }
+    return {
+        "classification_rule": pass_key,
+        "families": summaries,
+        "expected_pass_counts_frozen_before_holdout": expected_pass_counts,
+        "all_frozen_expectations_met": all(
+            summaries[family]["passing_replicates"] == expected
+            for family, expected in expected_pass_counts.items()
+        ),
+    }
+
+
+def main() -> None:
+    movies = build_movies()
+    metrics = {name: movie_metrics(movie) for name, movie in movies.items()}
+    base_aligned, _base_overlaps = align_global_phase(
+        movies["translate_x_one_cell_per_frame"]
+    )
+    transformed_aligned, _transformed_overlaps = align_global_phase(
+        movies["global_phase_and_amplitude_transform"]
+    )
+    base_current = spacetime_current(base_aligned)
+    transformed_current = spacetime_current(transformed_aligned)
+    unaligned_base_current = spacetime_current(
+        movies["translate_x_one_cell_per_frame"]
+    )
+    unaligned_transformed_current = spacetime_current(
+        movies["global_phase_and_amplitude_transform"]
+    )
+    current_invariance = {
+        key: bool(
+            np.array_equal(base_current[key], transformed_current[key])
+        )
+        for key in ("j_t", "j_x", "j_y", "divergence")
+    }
+    unaligned_current_invariance = {
+        key: bool(
+            np.array_equal(
+                unaligned_base_current[key],
+                unaligned_transformed_current[key],
+            )
+        )
+        for key in ("j_t", "j_x", "j_y", "divergence")
+    }
+    failed_v1_records = build_holdout_records(
+        FAILED_V1_HOLDOUT_SEED_BASE
+    )
+    reproduced_failed_v1 = summarize_holdout(
+        failed_v1_records,
+        "passes_v1_compact_current_rule",
+        include_records=False,
+    )
+    v2_development_repair = summarize_holdout(
+        failed_v1_records,
+        "passes_v2_minimum_transport_rule",
+        include_records=False,
+    )
+    prefreeze_v2_records = build_holdout_records(
+        PREFREEZE_V2_SCREEN_SEED_BASE
+    )
+    prefreeze_v2_screen = summarize_holdout(
+        prefreeze_v2_records,
+        "passes_v2_minimum_transport_rule",
+        include_records=False,
+    )
+    failed_v2_records = build_holdout_records(
+        FAILED_V2_HOLDOUT_SEED_BASE
+    )
+    reproduced_failed_v2 = summarize_holdout(
+        failed_v2_records,
+        "passes_v2_minimum_transport_rule",
+        include_records=False,
+    )
+    v3_development_repair = summarize_holdout(
+        failed_v2_records,
+        "passes_v3_transport_without_compact_branch_gate_rule",
+        include_records=False,
+    )
+    v3_holdout_records = build_holdout_records(V3_HOLDOUT_SEED_BASE)
+    v3_holdout = summarize_holdout(
+        v3_holdout_records,
+        "passes_v3_transport_without_compact_branch_gate_rule",
+        include_records=True,
+    )
+    transport_controls = minimum_transport_unit_controls()
+    overlap_control = registered_overlap_unit_control()
+
+    result = {
+        "schema": "lineum.topological-worldline-gate-3a2.v3",
+        "protocol_version": "3.0-frozen-before-independent-holdout",
+        "protocol_status": (
+            "synthetic observer validation only; no Lineum trajectory "
+            "evaluated"
+        ),
+        "development_record": {
+            "frozen_pre_holdout_program_sha256": (
+                FROZEN_DEVELOPMENT_PROGRAM_SHA256
+            ),
+            "frozen_pre_holdout_output_sha256": (
+                FROZEN_DEVELOPMENT_OUTPUT_SHA256
+            ),
+            "first_exploratory_failure_reproduced": (
+                "Unaligned temporal plaquette currents changed under a "
+                "time-dependent global phase although spatial vortex "
+                "positions did not."
+            ),
+            "unaligned_current_invariance": unaligned_current_invariance,
+            "repair_frozen_before_holdout": (
+                "Align one global phase per adjacent frame by the full-field "
+                "complex overlap; retain overlap magnitude as a sampling "
+                "diagnostic."
+            ),
+            "thresholds_retuned_after_holdout": False,
+            "failed_v1_program_sha256": FAILED_V1_PROGRAM_SHA256,
+            "failed_v1_output_sha256": FAILED_V1_OUTPUT_SHA256,
+            "failed_v1_seed_base": FAILED_V1_HOLDOUT_SEED_BASE,
+            "failed_v1_expectations_met": reproduced_failed_v1[
+                "all_frozen_expectations_met"
+            ],
+            "v1_failure_preserved_and_reproduced": (
+                reproduced_failed_v1["families"][
+                    "advected_smooth_complex_disorder_ambiguity"
+                ]["passing_replicates"]
+                == 7
+            ),
+            "v2_repair_developed_on_failed_v1_seeds": (
+                "Register one uniform torus translation for coherence and "
+                "replace branch-dependent compact spatial flux by the exact "
+                "minimum integer L1 flux compatible with adjacent spatial "
+                "charge maps. No threshold was changed."
+            ),
+            "v2_development_seed_base": FAILED_V1_HOLDOUT_SEED_BASE,
+            "prefreeze_v2_screen_seed_base": (
+                PREFREEZE_V2_SCREEN_SEED_BASE
+            ),
+            "prefreeze_v2_screen_expectations_all_met": (
+                prefreeze_v2_screen["all_frozen_expectations_met"]
+            ),
+            "reason_prefreeze_screen_is_not_final_holdout": (
+                "A numerical Cauchy-Schwarz clipping safeguard and explicit "
+                "unit controls were added after this screen. They did not "
+                "change a classification, but a new untouched seed family "
+                "was reserved for the final protocol."
+            ),
+            "failed_v2_program_sha256": FAILED_V2_PROGRAM_SHA256,
+            "failed_v2_output_sha256": FAILED_V2_OUTPUT_SHA256,
+            "failed_v2_seed_base": FAILED_V2_HOLDOUT_SEED_BASE,
+            "failed_v2_expectations_met": reproduced_failed_v2[
+                "all_frozen_expectations_met"
+            ],
+            "v2_failure_preserved_and_reproduced": (
+                reproduced_failed_v2["families"][
+                    "advected_smooth_complex_disorder_ambiguity"
+                ]["passing_replicates"]
+                == 11
+            ),
+            "v3_repair_developed_on_failed_v2_seeds": (
+                "Retain the branch-dependent compact-current network metric "
+                "as a diagnostic but retire it as a transport decision gate. "
+                "The exact conservation, neutrality, registered coherence, "
+                "resolved-core, and minimum-flux orientation requirements "
+                "remain unchanged; no numerical threshold was retuned."
+            ),
+            "v3_development_seed_base": FAILED_V2_HOLDOUT_SEED_BASE,
+            "v3_independent_holdout_seed_base": V3_HOLDOUT_SEED_BASE,
+            "failed_v2_seeds_used_to_develop_v3": True,
+            "v3_holdout_seeds_used_during_repair": False,
+        },
+        "lattice": {
+            "size": SIZE,
+            "frames": FRAMES,
+            "spatial_boundary": "periodic",
+            "temporal_boundary": "open",
+        },
+        "frozen_v3_synthetic_rule": {
+            "minimum_time_orientation_fraction": (
+                MINIMUM_TIME_ORIENTATION
+            ),
+            "minimum_mean_adjacent_overlap": MINIMUM_ADJACENT_OVERLAP,
+            "minimum_resolved_core_fraction": (
+                MINIMUM_RESOLVED_CORE_FRACTION
+            ),
+            "retired_v2_maximum_internal_branch_or_endpoint_fraction": (
+                MAXIMUM_IRREGULAR_INTERNAL_FRACTION
+            ),
+            "requires_nonzero_temporal_flux": True,
+            "requires_exact_zero_dual_divergence": True,
+            "requires_zero_periodic_net_charge": True,
+            "meaning": (
+                "coherent resolved topological transport at the declared "
+                "cadence; not a particle classification"
+            ),
+            "coherence_registration": (
+                "maximum normalized complex overlap under one uniform "
+                "integer torus translation per adjacent frame"
+            ),
+            "spatial_transport_measure": (
+                "exact minimum unit integer L1 flux compatible with adjacent "
+                "spatial charge maps under toroidal Manhattan cost"
+            ),
+            "thresholds_changed_from_failed_v1": False,
+            "thresholds_changed_from_failed_v2": False,
+            "compact_current_branch_metric_role": (
+                "reported diagnostic only; not a v3 decision gate because "
+                "the compact temporal-plaquette current is not the minimum "
+                "representative of its divergence-equivalence class"
+            ),
+        },
+        "current_invariance_under_time_dependent_global_phase_and_positive_amplitude": (
+            current_invariance
+        ),
+        "unit_controls": {
+            "minimum_toroidal_transport": transport_controls,
+            "translation_registered_overlap": overlap_control,
+        },
+        "movies": metrics,
+        "failed_v1_protocol_reproduction": reproduced_failed_v1,
+        "v2_development_repair_on_failed_v1_seed_family": (
+            v2_development_repair
+        ),
+        "prefreeze_v2_screen": prefreeze_v2_screen,
+        "failed_v2_protocol_reproduction": reproduced_failed_v2,
+        "v3_development_repair_on_failed_v2_seed_family": (
+            v3_development_repair
+        ),
+        "independent_v3_holdout_validation": v3_holdout,
+        "decision": {
+            "spacetime_current_exactly_conserved_in_all_declared_movies": all(
+                movie["maximum_abs_divergence"] == 0
+                for movie in metrics.values()
+            )
+            and all(
+                family["all_exactly_conserved"]
+                for family in v3_holdout["families"].values()
+            ),
+            "global_phase_and_positive_amplitude_invariance_passes": all(
+                current_invariance.values()
+            ),
+            "minimum_transport_unit_controls_pass": (
+                transport_controls["all_controls_pass"]
+            ),
+            "registered_overlap_unit_control_pass": (
+                overlap_control["passes"]
+            ),
+            "failed_v1_holdout_expectations_all_met": reproduced_failed_v1[
+                "all_frozen_expectations_met"
+            ],
+            "v2_development_expectations_all_met": v2_development_repair[
+                "all_frozen_expectations_met"
+            ],
+            "failed_v2_holdout_expectations_all_met": reproduced_failed_v2[
+                "all_frozen_expectations_met"
+            ],
+            "v3_development_expectations_all_met": v3_development_repair[
+                "all_frozen_expectations_met"
+            ],
+            "v3_independent_holdout_expectations_all_met": v3_holdout[
+                "all_frozen_expectations_met"
+            ],
+            "arbitrary_point_ids_required": False,
+            "topological_transport_observer_validated_synthetically": (
+                all(current_invariance.values())
+                and transport_controls["all_controls_pass"]
+                and overlap_control["passes"]
+                and v2_development_repair[
+                    "all_frozen_expectations_met"
+                ]
+                and v3_development_repair[
+                    "all_frozen_expectations_met"
+                ]
+                and v3_holdout["all_frozen_expectations_met"]
+            ),
+            "particle_observer_validated": False,
+            "reason_particle_is_not_validated": (
+                "Frozen and coherently advected smooth complex disorder pass "
+                "the same conserved, resolved worldline rule as constructed "
+                "vortices. Worldline coherence is therefore not sufficient "
+                "for localized energy, inertial identity, or particle "
+                "ontology."
+            ),
+            "collision_identity_resolved": False,
+            "reason_collision_identity_is_not_resolved": (
+                "The same-charge exchange control becomes under-resolved "
+                "near coincidence and the network deliberately does not "
+                "invent labels through that event."
+            ),
+            "three_cell_per_frame_sampling_is_adequate": False,
+            "next_gate": (
+                "If and only if the independent v3 holdout passes, apply the "
+                "frozen transport observer to fine-cadence actual F0 and its "
+                "surrogates to measure conserved, resolved topological "
+                "transport only. Keep particle status gated by independent "
+                "energy localization, stability, dispersion, open-boundary, "
+                "and interaction evidence."
+            ),
+        },
+        "interpretation_boundary": (
+            "A conserved, time-directed, grid-resolved minimum-transport "
+            "observable can measure coherent topological transport without "
+            "arbitrary point IDs. It cannot by itself establish a localized "
+            "energetic object or particle; frozen and advected smooth complex "
+            "disorder are explicit adversarial ambiguities."
+        ),
+        "runtime": {
+            "python": platform.python_version(),
+            "numpy": np.__version__,
+            "scipy": __import__("scipy").__version__,
+        },
+    }
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### M.2 Full reference output
+
+```json
+{
+  "current_invariance_under_time_dependent_global_phase_and_positive_amplitude": {
+    "divergence": true,
+    "j_t": true,
+    "j_x": true,
+    "j_y": true
+  },
+  "decision": {
+    "arbitrary_point_ids_required": false,
+    "collision_identity_resolved": false,
+    "failed_v1_holdout_expectations_all_met": false,
+    "failed_v2_holdout_expectations_all_met": false,
+    "global_phase_and_positive_amplitude_invariance_passes": true,
+    "minimum_transport_unit_controls_pass": true,
+    "next_gate": "If and only if the independent v3 holdout passes, apply the frozen transport observer to fine-cadence actual F0 and its surrogates to measure conserved, resolved topological transport only. Keep particle status gated by independent energy localization, stability, dispersion, open-boundary, and interaction evidence.",
+    "particle_observer_validated": false,
+    "reason_collision_identity_is_not_resolved": "The same-charge exchange control becomes under-resolved near coincidence and the network deliberately does not invent labels through that event.",
+    "reason_particle_is_not_validated": "Frozen and coherently advected smooth complex disorder pass the same conserved, resolved worldline rule as constructed vortices. Worldline coherence is therefore not sufficient for localized energy, inertial identity, or particle ontology.",
+    "registered_overlap_unit_control_pass": true,
+    "spacetime_current_exactly_conserved_in_all_declared_movies": true,
+    "three_cell_per_frame_sampling_is_adequate": false,
+    "topological_transport_observer_validated_synthetically": true,
+    "v2_development_expectations_all_met": true,
+    "v3_development_expectations_all_met": true,
+    "v3_independent_holdout_expectations_all_met": true
+  },
+  "development_record": {
+    "failed_v1_expectations_met": false,
+    "failed_v1_output_sha256": "e1581b5f8e980633f53d5f5e141c5dfca32390a71232952470d7582cbbeb8e81",
+    "failed_v1_program_sha256": "9be011b8d87de4bb597c52692b2db00db5cdd73eec35311e9a60f8968fcfc074",
+    "failed_v1_seed_base": 2026238000,
+    "failed_v2_expectations_met": false,
+    "failed_v2_output_sha256": "ad2ef6b942a4d519fe54a9ce4ca08971d27f64dee78404e94810ed1598807380",
+    "failed_v2_program_sha256": "a32697a609c9e7c56b39b6ddd365e1e74b019db074876574a312f192159d24a7",
+    "failed_v2_seed_base": 2026240000,
+    "failed_v2_seeds_used_to_develop_v3": true,
+    "first_exploratory_failure_reproduced": "Unaligned temporal plaquette currents changed under a time-dependent global phase although spatial vortex positions did not.",
+    "frozen_pre_holdout_output_sha256": "c9f78a3b24d700fc4f56162c04b61e581ba6ce6a5ce02c5f99a41501128a08a2",
+    "frozen_pre_holdout_program_sha256": "c9a33942b853a9e04cc792da44d1bf0d1a0078449ab2488eacd54b96e0f82154",
+    "prefreeze_v2_screen_expectations_all_met": true,
+    "prefreeze_v2_screen_seed_base": 2026239000,
+    "reason_prefreeze_screen_is_not_final_holdout": "A numerical Cauchy-Schwarz clipping safeguard and explicit unit controls were added after this screen. They did not change a classification, but a new untouched seed family was reserved for the final protocol.",
+    "repair_frozen_before_holdout": "Align one global phase per adjacent frame by the full-field complex overlap; retain overlap magnitude as a sampling diagnostic.",
+    "thresholds_retuned_after_holdout": false,
+    "unaligned_current_invariance": {
+      "divergence": true,
+      "j_t": true,
+      "j_x": false,
+      "j_y": false
+    },
+    "v1_failure_preserved_and_reproduced": true,
+    "v2_development_seed_base": 2026238000,
+    "v2_failure_preserved_and_reproduced": true,
+    "v2_repair_developed_on_failed_v1_seeds": "Register one uniform torus translation for coherence and replace branch-dependent compact spatial flux by the exact minimum integer L1 flux compatible with adjacent spatial charge maps. No threshold was changed.",
+    "v3_development_seed_base": 2026240000,
+    "v3_holdout_seeds_used_during_repair": false,
+    "v3_independent_holdout_seed_base": 2026241000,
+    "v3_repair_developed_on_failed_v2_seeds": "Retain the branch-dependent compact-current network metric as a diagnostic but retire it as a transport decision gate. The exact conservation, neutrality, registered coherence, resolved-core, and minimum-flux orientation requirements remain unchanged; no numerical threshold was retuned."
+  },
+  "failed_v1_protocol_reproduction": {
+    "all_frozen_expectations_met": false,
+    "classification_rule": "passes_v1_compact_current_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.30685920577617326,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.014492753623188406
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 7,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.8765320575364823,
+          0.9817432769744464
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.998027934391161,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9421122613127505,
+          0.9903951658806687
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999999,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0000000000000007
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.34222953634802517,
+          0.35057865236501473
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.2101240694789082,
+          0.2217481893044945
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.04588021658499528,
+          0.08480240404545991
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0017860279908649061,
+          0.007936507936507936
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.01186331894729061,
+          0.03134363229952491
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.02693965517241379,
+          0.06265664160401002
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0005396654074473826
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.03342245989304813,
+          0.0728862973760933
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.3392237615714629,
+          0.44375108607517877
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07473177950425453,
+          0.08820203543158689
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0007429420505200594,
+          0.0030816640986132513
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.26556927560210913,
+          0.4538759329495785
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.998046875,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.10175386295061574,
+          0.21513260623087246
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.03937007874015748,
+          0.12077294685990338
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.054945054945054944,
+          0.1282051282051282
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.998122951463119,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.4762844769972076,
+          0.8434718539216856
+        ]
+      }
+    }
+  },
+  "failed_v2_protocol_reproduction": {
+    "all_frozen_expectations_met": false,
+    "classification_rule": "passes_v2_minimum_transport_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3048780487804878,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.058823529411764705
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 11,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.885085824804194,
+          0.9731370798524092
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9979107862068354,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.94,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.943522839694306,
+          0.9907298187524546
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999992,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0000000000000007
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.34193522168488644,
+          0.35003027245206864
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.21142083625789632,
+          0.21664654109972736
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.04529463533910582,
+          0.08767213020512284
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.001805790178831479,
+          0.00841789667896679
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.010604669064229792,
+          0.03296860323646424
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.02465483234714004,
+          0.0576036866359447
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0011560693641618498
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.031210986267166042,
+          0.06963788300835655
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.31565209204939876,
+          0.4166778212210866
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07250322395758704,
+          0.08675263774912075
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0014942099364960778,
+          0.004330708661417323
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.26312542375916065,
+          0.47223931883660925
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.9959839357429718,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.09352183676351124,
+          0.22927096012079676
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.04230118443316413,
+          0.1366120218579235
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.006825938566552901
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.0585480093676815,
+          0.15337423312883436
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9980313840641397,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.94,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.5388240664934559,
+          0.8164755144997828
+        ]
+      }
+    }
+  },
+  "frozen_v3_synthetic_rule": {
+    "coherence_registration": "maximum normalized complex overlap under one uniform integer torus translation per adjacent frame",
+    "compact_current_branch_metric_role": "reported diagnostic only; not a v3 decision gate because the compact temporal-plaquette current is not the minimum representative of its divergence-equivalence class",
+    "meaning": "coherent resolved topological transport at the declared cadence; not a particle classification",
+    "minimum_mean_adjacent_overlap": 0.9,
+    "minimum_resolved_core_fraction": 0.9,
+    "minimum_time_orientation_fraction": 0.3333333333333333,
+    "requires_exact_zero_dual_divergence": true,
+    "requires_nonzero_temporal_flux": true,
+    "requires_zero_periodic_net_charge": true,
+    "retired_v2_maximum_internal_branch_or_endpoint_fraction": 0.05,
+    "spatial_transport_measure": "exact minimum unit integer L1 flux compatible with adjacent spatial charge maps under toroidal Manhattan cost",
+    "thresholds_changed_from_failed_v1": false,
+    "thresholds_changed_from_failed_v2": false
+  },
+  "independent_v3_holdout_validation": {
+    "all_frozen_expectations_met": true,
+    "classification_rule": "passes_v3_transport_without_compact_branch_gate_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.24271844660194175,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.024390243902439025
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.1,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 240,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 10,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 10,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.9756405003460932
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.35545023696682465,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.05766192733017378,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 816,
+            "minimum_transport_time_orientation_fraction": 0.35545023696682465,
+            "network_components": 41,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 18,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.900206426938416
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.49800796812749004,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.04830677290836653,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 960,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 40,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 40,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.9699408120086875
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3213367609254499,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.15552699228791775,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 480,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 10,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 10,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.9220354576359672
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.02127659574468085,
+            "largest_component_flux_fraction": 0.08333333333333333,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 576,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 46,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 24,
+            "registered_mean_adjacent_overlap": 0.9999999999999996,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.9735995151241245
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3213367609254499,
+            "irregular_internal_fraction": 0.010526315789473684,
+            "largest_component_flux_fraction": 0.06255355612682091,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1440,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 29,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 30,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.8971625936932011
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.125,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 192,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 8,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 8,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.9774895956610502
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.32894736842105265,
+            "irregular_internal_fraction": 0.02040816326530612,
+            "largest_component_flux_fraction": 0.12006578947368421,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 768,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 15,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 16,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.900071468798727
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.024390243902439025,
+            "largest_component_flux_fraction": 0.047619047619047616,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1008,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 40,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 42,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.9738592082469597
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.24271844660194175,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.14684466019417475,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 384,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 32,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 8,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.8864645538191619
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.05555555555555555,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 432,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 18,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 18,
+            "registered_mean_adjacent_overlap": 0.9999999999999994,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.9698426780430512
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3246753246753247,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.03273809523809524,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 2256,
+            "minimum_transport_time_orientation_fraction": 0.3472222222222222,
+            "network_components": 71,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 48,
+            "registered_mean_adjacent_overlap": 0.9999999999999999,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.8963946454643513
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.8864645538191619,
+          0.9774895956610502
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9982946595884586,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.9769393902107416
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9997819197885858,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.9667044931264431
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9997469836268991,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.9904838820316687
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.9439668764511037
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999999,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.9869492194710872
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9996605148998011,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.9767678003640873
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9996823509697617,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.9783103810224475
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.998637065865922,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.9655712425305812
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9990688889135825,
+            "resolved_core_fraction": 0.96,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.9898207390604387
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9980755091971206,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.9422008360194818
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.5102040816326531,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 48,
+            "minimum_transport_time_orientation_fraction": 0.5102040816326531,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.999615364825638,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.9865563186609148
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3424657534246575,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 96,
+            "minimum_transport_time_orientation_fraction": 0.3424657534246575,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.998420891527137,
+            "resolved_core_fraction": 0.96,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.9755500526098101
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9980755091971206,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9422008360194818,
+          0.9904838820316687
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0029411764705882353,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 340,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 340,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0012919896640826874,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 774,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 774,
+            "registered_mean_adjacent_overlap": 0.9999999999999996,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0007194244604316547,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 1390,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1390,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999999
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0032258064516129032,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 310,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 310,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0012953367875647669,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 772,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 772,
+            "registered_mean_adjacent_overlap": 0.9999999999999996,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0007309941520467836,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 1368,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1368,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000002
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0028735632183908046,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 348,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 348,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0012755102040816326,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 784,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 784,
+            "registered_mean_adjacent_overlap": 0.9999999999999996,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0007530120481927711,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 1328,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1328,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0030864197530864196,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 324,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 324,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999999
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0014204545454545455,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 704,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 704,
+            "registered_mean_adjacent_overlap": 0.9999999999999996,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0007429420505200594,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 1346,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1346,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 0.0,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999999,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.1,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 10,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 10,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999997
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.05555555555555555,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 18,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 18,
+            "registered_mean_adjacent_overlap": 0.9999999999999994,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999992
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.025,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 40,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 40,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999997
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.1,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 10,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 10,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000004
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.041666666666666664,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 24,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 24,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000002
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.03333333333333333,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 30,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 30,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000004
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.125,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 8,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 8,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 1.0
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.0625,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 16,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 16,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999997
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.023809523809523808,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 42,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 42,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000004
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.125,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 8,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 8,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000004
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.05555555555555555,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 18,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 18,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 1.0000000000000004
+          },
+          {
+            "compact_current_time_orientation_fraction": 1.0,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.020833333333333332,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 0,
+            "minimum_transport_time_orientation_fraction": 1.0,
+            "network_components": 48,
+            "passes_v1_compact_current_rule": true,
+            "passes_v2_minimum_transport_rule": true,
+            "passes_v3_transport_without_compact_branch_gate_rule": true,
+            "peak_spatial_defects": 48,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.9999999999999997
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999992,
+          1.0000000000000004
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3420204239684455,
+          0.34984783931832014
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.20957547404568755,
+          0.2188486397114084
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.3497907269698078,
+            "irregular_internal_fraction": 0.20976609356257497,
+            "largest_component_flux_fraction": 0.97895079036125,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 101,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 372,
+            "registered_mean_adjacent_overlap": 0.0855317802631065,
+            "resolved_core_fraction": 0.008596654275092937,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.02664346733178467
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34367807825086305,
+            "irregular_internal_fraction": 0.21466154563417178,
+            "largest_component_flux_fraction": 0.9777941599539701,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 245,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 808,
+            "registered_mean_adjacent_overlap": 0.05773324415673529,
+            "resolved_core_fraction": 0.003191378047504447,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.018818133046013426
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34461495057785124,
+            "irregular_internal_fraction": 0.21421731398226568,
+            "largest_component_flux_fraction": 0.9783570284240329,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 461,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1420,
+            "registered_mean_adjacent_overlap": 0.04663731604900387,
+            "resolved_core_fraction": 0.0019589497690193558,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.014229896405085147
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34984783931832014,
+            "irregular_internal_fraction": 0.21326066303315167,
+            "largest_component_flux_fraction": 0.975613714749442,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 115,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 368,
+            "registered_mean_adjacent_overlap": 0.08536637819196553,
+            "resolved_core_fraction": 0.008466713059614939,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.028075978280623082
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3420204239684455,
+            "irregular_internal_fraction": 0.21262428977272727,
+            "largest_component_flux_fraction": 0.9773067017272121,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 257,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 810,
+            "registered_mean_adjacent_overlap": 0.06069832489490499,
+            "resolved_core_fraction": 0.003896787783043707,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.018119394012018578
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3451592177649279,
+            "irregular_internal_fraction": 0.21557658674538893,
+            "largest_component_flux_fraction": 0.9760972573585511,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 488,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1426,
+            "registered_mean_adjacent_overlap": 0.04687318215062226,
+            "resolved_core_fraction": 0.0018614391251236112,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.014368402005850189
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34461513517895503,
+            "irregular_internal_fraction": 0.20957547404568755,
+            "largest_component_flux_fraction": 0.975639414697418,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 123,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 366,
+            "registered_mean_adjacent_overlap": 0.0863527276137896,
+            "resolved_core_fraction": 0.007998118089861209,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.02704957543766894
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.346897381127605,
+            "irregular_internal_fraction": 0.21173170785573886,
+            "largest_component_flux_fraction": 0.9776704780025489,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 254,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 826,
+            "registered_mean_adjacent_overlap": 0.060311258530448324,
+            "resolved_core_fraction": 0.003984269895477595,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.0187506246900267
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.3438940558026688,
+            "irregular_internal_fraction": 0.21391601501602625,
+            "largest_component_flux_fraction": 0.9753133845531743,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 490,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1414,
+            "registered_mean_adjacent_overlap": 0.04603141588385307,
+            "resolved_core_fraction": 0.002204715150802516,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.012638949043749964
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34844135365705736,
+            "irregular_internal_fraction": 0.2188486397114084,
+            "largest_component_flux_fraction": 0.9771560263615413,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 108,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 374,
+            "registered_mean_adjacent_overlap": 0.08463000468842667,
+            "resolved_core_fraction": 0.008818751450452541,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.02585999939755609
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34491560460894105,
+            "irregular_internal_fraction": 0.21662888385118015,
+            "largest_component_flux_fraction": 0.976973270298934,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 256,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 828,
+            "registered_mean_adjacent_overlap": 0.05839128975339288,
+            "resolved_core_fraction": 0.00375234521575985,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.02200188268409593
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.34412543680325475,
+            "irregular_internal_fraction": 0.21701613706544476,
+            "largest_component_flux_fraction": 0.977170421244499,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 467,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 1416,
+            "registered_mean_adjacent_overlap": 0.045332667701453645,
+            "resolved_core_fraction": 0.0019314058293339576,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.014735204110681148
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.045332667701453645,
+          0.0863527276137896
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0018614391251236112,
+          0.008818751450452541
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.012638949043749964,
+          0.028075978280623082
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.02615062761506276,
+          0.06377551020408163
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0007733952049497294
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.034106412005457026,
+          0.0748502994011976
+        ],
+        "passing_replicates": 0,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.05434782608695652,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.39565217391304347,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 680,
+            "minimum_transport_time_orientation_fraction": 0.0684931506849315,
+            "network_components": 5,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.36526701577316506
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.034530386740331494,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.3328729281767956,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1092,
+            "minimum_transport_time_orientation_fraction": 0.043782837127845885,
+            "network_components": 6,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.3593033982461287
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.028768699654775604,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5166858457997698,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1312,
+            "minimum_transport_time_orientation_fraction": 0.03671071953010279,
+            "network_components": 6,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.39978821539124104
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.05241090146750524,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.6352201257861635,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 684,
+            "minimum_transport_time_orientation_fraction": 0.0681198910081744,
+            "network_components": 3,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.3451510525040589
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.038461538461538464,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.7584615384615384,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1004,
+            "minimum_transport_time_orientation_fraction": 0.04743833017077799,
+            "network_components": 4,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.41806216360994436
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.03184713375796178,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.4484076433121019,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1196,
+            "minimum_transport_time_orientation_fraction": 0.04012841091492777,
+            "network_components": 5,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.44978039259039004
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.05219206680584551,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.3465553235908142,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 720,
+            "minimum_transport_time_orientation_fraction": 0.06493506493506493,
+            "network_components": 8,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.3334304044254415
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.03209242618741977,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5250320924261874,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1178,
+            "minimum_transport_time_orientation_fraction": 0.04071661237785016,
+            "network_components": 3,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.30583536051438714
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.02615062761506276,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5209205020920502,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1416,
+            "minimum_transport_time_orientation_fraction": 0.034106412005457026,
+            "network_components": 4,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.36161389247609366
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.06377551020408163,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5051020408163265,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 618,
+            "minimum_transport_time_orientation_fraction": 0.0748502994011976,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.44040828495246265
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.038580246913580245,
+            "irregular_internal_fraction": 0.0007733952049497294,
+            "largest_component_flux_fraction": 0.5138888888888888,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1088,
+            "minimum_transport_time_orientation_fraction": 0.043936731107205626,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.4001366310707574
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.028506271379703536,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.6408209806157354,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 1406,
+            "minimum_transport_time_orientation_fraction": 0.034340659340659344,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999999,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.36974659600487186
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.30583536051438714,
+          0.44978039259039004
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07479902132121635,
+          0.09304084720121028
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0011074197120708748,
+          0.005858659831563529
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.08130671506352087,
+            "irregular_internal_fraction": 0.005858659831563529,
+            "largest_component_flux_fraction": 0.3176043557168784,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 29,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 14,
+            "registered_mean_adjacent_overlap": 0.46420182438128493,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.20289825439971787
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08068888534523999,
+            "irregular_internal_fraction": 0.0038560411311053984,
+            "largest_component_flux_fraction": 0.2133630999840536,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 88,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 30,
+            "registered_mean_adjacent_overlap": 0.3394710245145536,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.13805280267201747
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07834428850595132,
+            "irregular_internal_fraction": 0.001697034655234012,
+            "largest_component_flux_fraction": 0.32412506661929297,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 133,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 48,
+            "registered_mean_adjacent_overlap": 0.2798164768457286,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.098192649817771
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.09304084720121028,
+            "irregular_internal_fraction": 0.0026646364674533687,
+            "largest_component_flux_fraction": 0.2118003025718608,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 42,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 14,
+            "registered_mean_adjacent_overlap": 0.46013224564242994,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.22157449853458297
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08305274971941638,
+            "irregular_internal_fraction": 0.002740167633784655,
+            "largest_component_flux_fraction": 0.5592432259098926,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 75,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 28,
+            "registered_mean_adjacent_overlap": 0.3416023094106196,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.14992148128595745
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07574133619149696,
+            "irregular_internal_fraction": 0.0026055705300988318,
+            "largest_component_flux_fraction": 0.6651482672382993,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 135,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 46,
+            "registered_mean_adjacent_overlap": 0.2868124545009724,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.09972995459036128
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08832807570977919,
+            "irregular_internal_fraction": 0.0015854141894569957,
+            "largest_component_flux_fraction": 0.30954258675078866,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 38,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 12,
+            "registered_mean_adjacent_overlap": 0.44620720166849087,
+            "resolved_core_fraction": 0.9955357142857143,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.19735687863171078
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07800963081861959,
+            "irregular_internal_fraction": 0.002096774193548387,
+            "largest_component_flux_fraction": 0.20481540930979134,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 76,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 28,
+            "registered_mean_adjacent_overlap": 0.34696992515013675,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.1396685615011324
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07479902132121635,
+            "irregular_internal_fraction": 0.0031651134165640933,
+            "largest_component_flux_fraction": 0.6403355470115344,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 133,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 48,
+            "registered_mean_adjacent_overlap": 0.28057481588120825,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.10645453960724187
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08826774549466716,
+            "irregular_internal_fraction": 0.0011074197120708748,
+            "largest_component_flux_fraction": 0.3177638837808018,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 27,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 20,
+            "registered_mean_adjacent_overlap": 0.4382893983606251,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.1905893018500594
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08273615635179153,
+            "irregular_internal_fraction": 0.002293202293202293,
+            "largest_component_flux_fraction": 0.2921824104234528,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 72,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 26,
+            "registered_mean_adjacent_overlap": 0.35365348113153416,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.15042879205225618
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.078942668333631,
+            "irregular_internal_fraction": 0.001795170990036801,
+            "largest_component_flux_fraction": 0.24432934452580818,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": false,
+            "minimum_transport_spatial_flux": null,
+            "minimum_transport_time_orientation_fraction": null,
+            "network_components": 120,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 46,
+            "registered_mean_adjacent_overlap": 0.2757144471122967,
+            "resolved_core_fraction": 0.997737556561086,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.11676365465016536
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.2757144471122967,
+          0.46420182438128493
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.9955357142857143,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.098192649817771,
+          0.22157449853458297
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.04310344827586207,
+          0.1059322033898305
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0015220700152207
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.05938242280285035,
+          0.13368983957219252
+        ],
+        "passing_replicates": 0,
+        "records": [
+          {
+            "compact_current_time_orientation_fraction": 0.1059322033898305,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5720338983050848,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 324,
+            "minimum_transport_time_orientation_fraction": 0.13368983957219252,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9983161510612857,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241000,
+            "zero_shift_mean_adjacent_overlap": 0.6646253715402245
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07598784194528875,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.506079027355623,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 492,
+            "minimum_transport_time_orientation_fraction": 0.09225092250922509,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9997770559563746,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241001,
+            "zero_shift_mean_adjacent_overlap": 0.6617797650916675
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.09191176470588236,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5055147058823529,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 460,
+            "minimum_transport_time_orientation_fraction": 0.09803921568627451,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9997178271788568,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241002,
+            "zero_shift_mean_adjacent_overlap": 0.7781388102848309
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08833922261484099,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5971731448763251,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 400,
+            "minimum_transport_time_orientation_fraction": 0.1111111111111111,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 1.0,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241003,
+            "zero_shift_mean_adjacent_overlap": 0.5796742280703043
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08143322475570032,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.504885993485342,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 478,
+            "minimum_transport_time_orientation_fraction": 0.0946969696969697,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9999999999999997,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241004,
+            "zero_shift_mean_adjacent_overlap": 0.671318788953624
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.04310344827586207,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.6068965517241379,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 792,
+            "minimum_transport_time_orientation_fraction": 0.05938242280285035,
+            "network_components": 3,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9996710728656589,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241005,
+            "zero_shift_mean_adjacent_overlap": 0.575800851028034
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07575757575757576,
+            "irregular_internal_fraction": 0.0015220700152207,
+            "largest_component_flux_fraction": 1.0,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 448,
+            "minimum_transport_time_orientation_fraction": 0.10040160642570281,
+            "network_components": 1,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.999707303830523,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241006,
+            "zero_shift_mean_adjacent_overlap": 0.5175200921973164
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07530120481927711,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.9307228915662651,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 468,
+            "minimum_transport_time_orientation_fraction": 0.09652509652509653,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9986457569451993,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241007,
+            "zero_shift_mean_adjacent_overlap": 0.6826261215463661
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.08012820512820513,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5016025641025641,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 524,
+            "minimum_transport_time_orientation_fraction": 0.08710801393728224,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9990672690363823,
+            "resolved_core_fraction": 0.96,
+            "seed": 2026241008,
+            "zero_shift_mean_adjacent_overlap": 0.7431929767935926
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.07462686567164178,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.573134328358209,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 444,
+            "minimum_transport_time_orientation_fraction": 0.10121457489878542,
+            "network_components": 3,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9980667570622231,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241009,
+            "zero_shift_mean_adjacent_overlap": 0.5217921343082962
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.09025270758122744,
+            "irregular_internal_fraction": 0.0,
+            "largest_component_flux_fraction": 0.5090252707581228,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 430,
+            "minimum_transport_time_orientation_fraction": 0.10416666666666667,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.9996205124993613,
+            "resolved_core_fraction": 1.0,
+            "seed": 2026241010,
+            "zero_shift_mean_adjacent_overlap": 0.7107644809333694
+          },
+          {
+            "compact_current_time_orientation_fraction": 0.048638132295719845,
+            "irregular_internal_fraction": 0.000975609756097561,
+            "largest_component_flux_fraction": 0.504863813229572,
+            "maximum_abs_divergence": 0,
+            "maximum_abs_net_charge": 0,
+            "minimum_transport_evaluated": true,
+            "minimum_transport_spatial_flux": 704,
+            "minimum_transport_time_orientation_fraction": 0.06631299734748011,
+            "network_components": 2,
+            "passes_v1_compact_current_rule": false,
+            "passes_v2_minimum_transport_rule": false,
+            "passes_v3_transport_without_compact_branch_gate_rule": false,
+            "peak_spatial_defects": 2,
+            "registered_mean_adjacent_overlap": 0.998532322213619,
+            "resolved_core_fraction": 0.96,
+            "seed": 2026241011,
+            "zero_shift_mean_adjacent_overlap": 0.6285309831131825
+          }
+        ],
+        "registered_mean_adjacent_overlap_range": [
+          0.9980667570622231,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.5175200921973164,
+          0.7781388102848309
+        ]
+      }
+    }
+  },
+  "interpretation_boundary": "A conserved, time-directed, grid-resolved minimum-transport observable can measure coherent topological transport without arbitrary point IDs. It cannot by itself establish a localized energetic object or particle; frozen and advected smooth complex disorder are explicit adversarial ambiguities.",
+  "lattice": {
+    "frames": 25,
+    "size": 48,
+    "spatial_boundary": "periodic",
+    "temporal_boundary": "open"
+  },
+  "movies": {
+    "advected_smooth_complex_disorder": {
+      "adjacent_overlap": {
+        "maximum": 0.9714944335697004,
+        "mean": 0.9714944335696997,
+        "minimum": 0.9714944335696993
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "slab_transport_unit_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 384,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 400,
+        "maximum_core_ratio": 0.30362157249341415,
+        "median_core_ratio": 0.21819580179700554,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 384,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 400,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999994
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 768,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 16,
+        "largest_component_flux_fraction": 0.0625,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 16,
+        "total_segment_flux": 784
+      }
+    },
+    "frozen_random_phase": {
+      "adjacent_overlap": {
+        "maximum": 0.9999999999999996,
+        "mean": 0.9999999999999996,
+        "minimum": 0.9999999999999996
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798,
+        798
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": false,
+        "not_evaluated_reason": "At least one cheaper coherence, resolution, conservation, or neutrality precondition failed; the assignment solve cannot change the verdict.",
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": null,
+        "slab_transport_unit_counts": null,
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": null,
+        "time_orientation_fraction": null
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 19950,
+        "maximum_core_ratio": 1.0,
+        "median_core_ratio": 0.9999999999999999,
+        "resolved_fraction": 0.0
+      },
+      "spatial_flux": 0,
+      "spatial_to_temporal_flux": 0.0,
+      "temporal_flux": 19950,
+      "time_orientation_fraction": 1.0,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9999999999999992,
+        "mean": 0.9999999999999992,
+        "minimum": 0.9999999999999992
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 19152,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 798,
+        "largest_component_flux_fraction": 0.0012531328320802004,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 798,
+        "total_segment_flux": 19950
+      }
+    },
+    "frozen_smooth_complex_disorder": {
+      "adjacent_overlap": {
+        "maximum": 0.9999999999999996,
+        "mean": 0.9999999999999996,
+        "minimum": 0.9999999999999996
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "slab_transport_unit_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 0,
+        "time_orientation_fraction": 1.0
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 400,
+        "maximum_core_ratio": 0.30362157249341404,
+        "median_core_ratio": 0.21819580179700557,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 0,
+      "spatial_to_temporal_flux": 0.0,
+      "temporal_flux": 400,
+      "time_orientation_fraction": 1.0,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9999999999999994,
+        "mean": 0.9999999999999994,
+        "minimum": 0.9999999999999994
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 384,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 16,
+        "largest_component_flux_fraction": 0.0625,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 16,
+        "total_segment_flux": 400
+      }
+    },
+    "global_phase_and_amplitude_transform": {
+      "adjacent_overlap": {
+        "maximum": 0.9869492194710877,
+        "mean": 0.9869492194710872,
+        "minimum": 0.9869492194710867
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 48,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066738,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 48,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 0.9999999999999996
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 96,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 98
+      }
+    },
+    "grid_32_translation": {
+      "adjacent_overlap": {
+        "maximum": 0.978643667629824,
+        "mean": 0.9786436676298237,
+        "minimum": 0.9786436676298234
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 48,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193635200683,
+        "median_core_ratio": 0.2359419363520068,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 48,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999999,
+        "minimum": 0.9999999999999997
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 96,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 98
+      }
+    },
+    "grid_64_translation": {
+      "adjacent_overlap": {
+        "maximum": 0.9907298187524555,
+        "mean": 0.9907298187524548,
+        "minimum": 0.9907298187524541
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 48,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.4505076867815145,
+        "median_core_ratio": 0.4505076867815144,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 48,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 0.9999999999999997
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 96,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 98
+      }
+    },
+    "independent_cell_phase_preserved_amplitude": {
+      "adjacent_overlap": {
+        "maximum": 0.03741084615533144,
+        "mean": 0.016260235917030737,
+        "minimum": 0.0038368999289629595
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        780,
+        746,
+        790,
+        768,
+        756,
+        784,
+        740,
+        780,
+        774,
+        794,
+        764,
+        808,
+        792,
+        742,
+        770,
+        766,
+        780,
+        772,
+        760,
+        802,
+        786,
+        730,
+        780,
+        778,
+        738
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": false,
+        "not_evaluated_reason": "At least one cheaper coherence, resolution, conservation, or neutrality precondition failed; the assignment solve cannot change the verdict.",
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": null,
+        "slab_transport_unit_counts": null,
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": null,
+        "time_orientation_fraction": null
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 19280,
+        "maximum_core_ratio": 1.0000004198589991,
+        "median_core_ratio": 0.9999999997281799,
+        "resolved_fraction": 0.0031120331950207467
+      },
+      "spatial_flux": 36513,
+      "spatial_to_temporal_flux": 1.8938278008298755,
+      "temporal_flux": 19280,
+      "time_orientation_fraction": 0.34556306346674315,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.0679431056548627,
+        "mean": 0.060151528739792764,
+        "minimum": 0.05252865073167092
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 45247,
+        "branch_or_endpoint_internal_fraction": 0.21276548721462196,
+        "branch_or_endpoint_internal_nodes": 9627,
+        "closed_internal_components": 152,
+        "components": 277,
+        "largest_component_flux_fraction": 0.9749430932195795,
+        "maximum_node_flux_degree": 6,
+        "spanning_temporal_components": 1,
+        "total_segment_flux": 55793
+      }
+    },
+    "independent_random_torus_shift": {
+      "adjacent_overlap": {
+        "maximum": 0.89847863594228,
+        "mean": 0.37237427553743957,
+        "minimum": 0.07031742205849204
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          50,
+          60,
+          60,
+          60,
+          60,
+          52,
+          44,
+          10,
+          26,
+          16,
+          56,
+          16,
+          60,
+          60,
+          60,
+          52,
+          22,
+          56,
+          42,
+          44,
+          22,
+          54,
+          60,
+          30
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 1072,
+        "time_orientation_fraction": 0.044563279857397504
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066733,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 1372,
+      "spatial_to_temporal_flux": 27.44,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.035161744022503515,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999994
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 1420,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 4,
+        "components": 6,
+        "largest_component_flux_fraction": 0.30239099859353025,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 0,
+        "total_segment_flux": 1422
+      }
+    },
+    "noisy_translation": {
+      "adjacent_overlap": {
+        "maximum": 0.9862924662868663,
+        "mean": 0.9861276445746806,
+        "minimum": 0.9859380168944983
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 48,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.2820071909515875,
+        "median_core_ratio": 0.22914068427752393,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 48,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9992194843511234,
+        "mean": 0.999194750814644,
+        "minimum": 0.9991660535829726
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 96,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 98
+      }
+    },
+    "pair_creation_annihilation": {
+      "adjacent_overlap": {
+        "maximum": 0.9965622525349649,
+        "mean": 0.9960352585673551,
+        "minimum": 0.9954333955163014
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          3,
+          3,
+          1,
+          1,
+          2,
+          3,
+          4,
+          2,
+          3,
+          2,
+          3,
+          1,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 56,
+        "time_orientation_fraction": 0.45098039215686275
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 46,
+        "maximum_core_ratio": 0.42985574927874287,
+        "median_core_ratio": 0.20787881989812063,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 80,
+      "spatial_to_temporal_flux": 1.7391304347826086,
+      "temporal_flux": 46,
+      "time_orientation_fraction": 0.36507936507936506,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9965622525349644,
+        "mean": 0.9960352585673548,
+        "minimum": 0.9954333955163014
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 126,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 1,
+        "components": 1,
+        "largest_component_flux_fraction": 1.0,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 0,
+        "total_segment_flux": 126
+      }
+    },
+    "same_charge_exchange_without_identity_labels": {
+      "adjacent_overlap": {
+        "maximum": 0.9998337542336698,
+        "mean": 0.9982852661993021,
+        "minimum": 0.9975676973044109
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": false,
+        "not_evaluated_reason": "At least one cheaper coherence, resolution, conservation, or neutrality precondition failed; the assignment solve cannot change the verdict.",
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": null,
+        "slab_transport_unit_counts": null,
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": null,
+        "time_orientation_fraction": null
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 124,
+        "maximum_core_ratio": 1.000000000802925,
+        "median_core_ratio": 0.13436695104533158,
+        "resolved_fraction": 0.8064516129032258
+      },
+      "spatial_flux": 92,
+      "spatial_to_temporal_flux": 0.7419354838709677,
+      "temporal_flux": 124,
+      "time_orientation_fraction": 0.5740740740740741,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9998337542336696,
+        "mean": 0.9982852661993019,
+        "minimum": 0.9975676973044104
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 210,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 6,
+        "largest_component_flux_fraction": 0.35648148148148145,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 4,
+        "total_segment_flux": 216
+      }
+    },
+    "static_pair": {
+      "adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "slab_transport_unit_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 0,
+        "time_orientation_fraction": 1.0
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.2359419300506673,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 0,
+      "spatial_to_temporal_flux": 0.0,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 1.0,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 0.9999999999999998,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999998
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 48,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 50
+      }
+    },
+    "time_shuffled_translation": {
+      "adjacent_overlap": {
+        "maximum": 0.9869492194710876,
+        "mean": 0.7290925567252172,
+        "minimum": 0.19332175740674704
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          12,
+          2,
+          8,
+          4,
+          22,
+          2,
+          18,
+          10,
+          2,
+          20,
+          26,
+          8,
+          4,
+          40,
+          34,
+          42,
+          46,
+          12,
+          8,
+          14,
+          20,
+          8,
+          26,
+          20
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 408,
+        "time_orientation_fraction": 0.1091703056768559
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066733,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 512,
+      "spatial_to_temporal_flux": 10.24,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.08896797153024912,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 0.9999999999999996
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 560,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.701067615658363,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 0,
+        "total_segment_flux": 562
+      }
+    },
+    "translate_x_one_cell_per_frame": {
+      "adjacent_overlap": {
+        "maximum": 0.9869492194710876,
+        "mean": 0.9869492194710873,
+        "minimum": 0.9869492194710868
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 48,
+        "time_orientation_fraction": 0.5102040816326531
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066733,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 48,
+      "spatial_to_temporal_flux": 0.96,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.5102040816326531,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999994
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 96,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 98
+      }
+    },
+    "translate_x_three_cells_per_frame_sampling_limit": {
+      "adjacent_overlap": {
+        "maximum": 0.9412881109526917,
+        "mean": 0.9412881109526913,
+        "minimum": 0.9412881109526909
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 144,
+        "time_orientation_fraction": 0.25773195876288657
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066735,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 144,
+      "spatial_to_temporal_flux": 2.88,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.25773195876288657,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999994
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 192,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 194
+      }
+    },
+    "translate_x_two_cells_per_frame": {
+      "adjacent_overlap": {
+        "maximum": 0.966922710858839,
+        "mean": 0.9669227108588386,
+        "minimum": 0.9669227108588382
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 96,
+        "time_orientation_fraction": 0.3424657534246575
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066735,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 96,
+      "spatial_to_temporal_flux": 1.92,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.3424657534246575,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999999,
+        "minimum": 0.9999999999999992
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 144,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 146
+      }
+    },
+    "translate_xy": {
+      "adjacent_overlap": {
+        "maximum": 0.9869492194710876,
+        "mean": 0.9803868724411249,
+        "minimum": 0.9738245254111623
+      },
+      "coherent_resolved_worldline_rule": true,
+      "defects_per_frame": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": true,
+        "not_evaluated_reason": null,
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": [
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4
+        ],
+        "slab_transport_unit_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": 72,
+        "time_orientation_fraction": 0.4098360655737705
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 50,
+        "maximum_core_ratio": 0.23594193005066735,
+        "median_core_ratio": 0.2359419300506673,
+        "resolved_fraction": 1.0
+      },
+      "spatial_flux": 72,
+      "spatial_to_temporal_flux": 1.44,
+      "temporal_flux": 50,
+      "time_orientation_fraction": 0.4098360655737705,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 0.9999999999999997,
+        "minimum": 0.9999999999999988
+      },
+      "v1_compact_current_rule": true,
+      "v2_minimum_transport_rule": true,
+      "v3_transport_without_compact_branch_gate_rule": true,
+      "worldline_network": {
+        "active_internal_nodes": 120,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 2,
+        "largest_component_flux_fraction": 0.5,
+        "maximum_node_flux_degree": 2,
+        "spanning_temporal_components": 2,
+        "total_segment_flux": 122
+      }
+    },
+    "uniform": {
+      "adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "coherent_resolved_worldline_rule": false,
+      "defects_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "frames": 25,
+      "maximum_abs_divergence": 0,
+      "maximum_abs_net_charge": 0,
+      "minimum_toroidal_transport": {
+        "cost": "unit integer flux with toroidal Manhattan distance",
+        "evaluated": false,
+        "not_evaluated_reason": "At least one cheaper coherence, resolution, conservation, or neutrality precondition failed; the assignment solve cannot change the verdict.",
+        "persistent_point_ids_assigned": false,
+        "slab_spatial_fluxes": null,
+        "slab_transport_unit_counts": null,
+        "solver": "exact minimum-cost bipartite assignment per time slab",
+        "spatial_flux": null,
+        "time_orientation_fraction": null
+      },
+      "net_charge_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_divergence_cubes": 0,
+      "resolved_core": {
+        "defects": 0,
+        "maximum_core_ratio": 0.0,
+        "median_core_ratio": 0.0,
+        "resolved_fraction": 0.0
+      },
+      "spatial_flux": 0,
+      "spatial_to_temporal_flux": null,
+      "temporal_flux": 0,
+      "time_orientation_fraction": 0.0,
+      "translation_registered_adjacent_overlap": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "v1_compact_current_rule": false,
+      "v2_minimum_transport_rule": false,
+      "v3_transport_without_compact_branch_gate_rule": false,
+      "worldline_network": {
+        "active_internal_nodes": 0,
+        "branch_or_endpoint_internal_fraction": 0.0,
+        "branch_or_endpoint_internal_nodes": 0,
+        "closed_internal_components": 0,
+        "components": 0,
+        "largest_component_flux_fraction": 0.0,
+        "maximum_node_flux_degree": 0,
+        "spanning_temporal_components": 0,
+        "total_segment_flux": 0
+      }
+    }
+  },
+  "prefreeze_v2_screen": {
+    "all_frozen_expectations_met": true,
+    "classification_rule": "passes_v2_minimum_transport_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.30589543937708563,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.015384615384615385
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.8832867576912028,
+          0.9770314148128726
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.99809532359103,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.92,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.943678030869763,
+          0.9907298187524546
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999999,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0000000000000007
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3405277732529728,
+          0.3486083677500449
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.208406217202259,
+          0.21935684518255893
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.04520895547463877,
+          0.08858566608658895
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0017888563049853372,
+          0.007867543447627995
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.012779792257752666,
+          0.02912239359321327
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.024630541871921183,
+          0.06510416666666667
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0005934718100890207
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.0327653997378768,
+          0.0748502994011976
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.3050528743595455,
+          0.477235032692771
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07593135947363741,
+          0.08652482269503546
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0011174968071519795,
+          0.003929974991068239
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.2784759460296186,
+          0.4813819452458124
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.9954128440366973,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.09037330656888327,
+          0.22428831200196367
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.041390728476821195,
+          0.10822510822510822
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.004032258064516129
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.057208237986270026,
+          0.1366120218579235
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9981936980424422,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.92,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.5123552822486616,
+          0.814015731719242
+        ]
+      }
+    }
+  },
+  "protocol_status": "synthetic observer validation only; no Lineum trajectory evaluated",
+  "protocol_version": "3.0-frozen-before-independent-holdout",
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "schema": "lineum.topological-worldline-gate-3a2.v3",
+  "unit_controls": {
+    "minimum_toroidal_transport": {
+      "all_controls_pass": true,
+      "brute_force_assignment_comparison": {
+        "all_equal": true,
+        "cases": [
+          {
+            "assignment_cost": 2,
+            "brute_force_cost": 2,
+            "case": 0,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 1,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 2,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 3,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 4,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 10,
+            "brute_force_cost": 10,
+            "case": 5,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 2,
+            "brute_force_cost": 2,
+            "case": 6,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 3,
+            "brute_force_cost": 3,
+            "case": 7,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 8,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 6,
+            "brute_force_cost": 6,
+            "case": 9,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 10,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 11,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 3,
+            "brute_force_cost": 3,
+            "case": 12,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 13,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 3,
+            "brute_force_cost": 3,
+            "case": 14,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 15,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 16,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 10,
+            "brute_force_cost": 10,
+            "case": 17,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 3,
+            "brute_force_cost": 3,
+            "case": 18,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 19,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 20,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 21,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 9,
+            "brute_force_cost": 9,
+            "case": 22,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 23,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 2,
+            "brute_force_cost": 2,
+            "case": 24,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 4,
+            "brute_force_cost": 4,
+            "case": 25,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 26,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 27,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 9,
+            "brute_force_cost": 9,
+            "case": 28,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 9,
+            "brute_force_cost": 9,
+            "case": 29,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 3,
+            "brute_force_cost": 3,
+            "case": 30,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 4,
+            "brute_force_cost": 4,
+            "case": 31,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 4,
+            "brute_force_cost": 4,
+            "case": 32,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 6,
+            "brute_force_cost": 6,
+            "case": 33,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 8,
+            "brute_force_cost": 8,
+            "case": 34,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 9,
+            "brute_force_cost": 9,
+            "case": 35,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 2,
+            "brute_force_cost": 2,
+            "case": 36,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 37,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 38,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 39,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 40,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 41,
+            "equal": true,
+            "units": 6
+          },
+          {
+            "assignment_cost": 4,
+            "brute_force_cost": 4,
+            "case": 42,
+            "equal": true,
+            "units": 1
+          },
+          {
+            "assignment_cost": 2,
+            "brute_force_cost": 2,
+            "case": 43,
+            "equal": true,
+            "units": 2
+          },
+          {
+            "assignment_cost": 5,
+            "brute_force_cost": 5,
+            "case": 44,
+            "equal": true,
+            "units": 3
+          },
+          {
+            "assignment_cost": 7,
+            "brute_force_cost": 7,
+            "case": 45,
+            "equal": true,
+            "units": 4
+          },
+          {
+            "assignment_cost": 10,
+            "brute_force_cost": 10,
+            "case": 46,
+            "equal": true,
+            "units": 5
+          },
+          {
+            "assignment_cost": 10,
+            "brute_force_cost": 10,
+            "case": 47,
+            "equal": true,
+            "units": 6
+          }
+        ]
+      },
+      "neutral_pair_creation_distance_three": {
+        "expected": 3,
+        "observed": 3,
+        "passes": true
+      },
+      "periodic_boundary_one_step": {
+        "expected": 1,
+        "observed": 1,
+        "passes": true
+      },
+      "two_defects_shift_one_cell": {
+        "expected": 2,
+        "observed": 2,
+        "passes": true
+      }
+    },
+    "translation_registered_overlap": {
+      "absolute_error": 0.0,
+      "expected_registered_overlap": 1.0,
+      "observed_registered_overlap": 1.0,
+      "passes": true,
+      "zero_shift_overlap": 0.006813160472350321
+    }
+  },
+  "v2_development_repair_on_failed_v1_seed_family": {
+    "all_frozen_expectations_met": true,
+    "classification_rule": "passes_v2_minimum_transport_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.30685920577617326,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.014492753623188406
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.8765320575364823,
+          0.9817432769744464
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.998027934391161,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9421122613127505,
+          0.9903951658806687
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999999,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0000000000000007
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.34222953634802517,
+          0.35057865236501473
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.2101240694789082,
+          0.2217481893044945
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.04588021658499528,
+          0.08480240404545991
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0017860279908649061,
+          0.007936507936507936
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.01186331894729061,
+          0.03134363229952491
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.02693965517241379,
+          0.06265664160401002
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0005396654074473826
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.03342245989304813,
+          0.0728862973760933
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.3392237615714629,
+          0.44375108607517877
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07473177950425453,
+          0.08820203543158689
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0007429420505200594,
+          0.0030816640986132513
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.26556927560210913,
+          0.4538759329495785
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.998046875,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.10175386295061574,
+          0.21513260623087246
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.03937007874015748,
+          0.12077294685990338
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.054945054945054944,
+          0.1282051282051282
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.998122951463119,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.96,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.4762844769972076,
+          0.8434718539216856
+        ]
+      }
+    }
+  },
+  "v3_development_repair_on_failed_v2_seed_family": {
+    "all_frozen_expectations_met": true,
+    "classification_rule": "passes_v3_transport_without_compact_branch_gate_rule",
+    "expected_pass_counts_frozen_before_holdout": {
+      "advected_smooth_complex_disorder_ambiguity": 12,
+      "coherent_transformed_pair": 12,
+      "frozen_constant_amplitude_random_phase": 0,
+      "frozen_smooth_complex_disorder_ambiguity": 12,
+      "independent_cell_phase": 0,
+      "independent_random_torus_shift": 0,
+      "independent_smooth_complex_disorder": 0,
+      "time_shuffled_coherent_pair": 0
+    },
+    "families": {
+      "advected_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3048780487804878,
+          0.5102040816326531
+        ],
+        "expected_role": "coherently transported resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.058823529411764705
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.885085824804194,
+          0.9731370798524092
+        ]
+      },
+      "coherent_transformed_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "expected_role": "positive worldline control; should pass",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.3424657534246575,
+          0.5102040816326531
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9979107862068354,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.94,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.943522839694306,
+          0.9907298187524546
+        ]
+      },
+      "frozen_constant_amplitude_random_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "unresolved frozen null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999992,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999996,
+          1.0000000000000002
+        ]
+      },
+      "frozen_smooth_complex_disorder_ambiguity": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "expected_role": "coherent resolved texture; expected to pass worldline rule but must never be promoted to a particle",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "minimum_transport_time_orientation_range": [
+          1.0,
+          1.0
+        ],
+        "passing_replicates": 12,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.9999999999999994,
+          1.0000000000000007
+        ]
+      },
+      "independent_cell_phase": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.34193522168488644,
+          0.35003027245206864
+        ],
+        "expected_role": "incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.21142083625789632,
+          0.21664654109972736
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.04529463533910582,
+          0.08767213020512284
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.001805790178831479,
+          0.00841789667896679
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.010604669064229792,
+          0.03296860323646424
+        ]
+      },
+      "independent_random_torus_shift": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.02465483234714004,
+          0.0576036866359447
+        ],
+        "expected_role": "broken-transport null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.0011560693641618498
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.031210986267166042,
+          0.06963788300835655
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9999999999999997,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.31565209204939876,
+          0.4166778212210866
+        ]
+      },
+      "independent_smooth_complex_disorder": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.07250322395758704,
+          0.08675263774912075
+        ],
+        "expected_role": "resolved but temporally incoherent null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0014942099364960778,
+          0.004330708661417323
+        ],
+        "minimum_transport_time_orientation_range": null,
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.26312542375916065,
+          0.47223931883660925
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.9959839357429718,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.09352183676351124,
+          0.22927096012079676
+        ]
+      },
+      "time_shuffled_coherent_pair": {
+        "all_exactly_conserved": true,
+        "all_periodic_net_neutral": true,
+        "compact_current_time_orientation_range": [
+          0.04230118443316413,
+          0.1366120218579235
+        ],
+        "expected_role": "broken-time-order null; should fail",
+        "irregular_internal_fraction_range": [
+          0.0,
+          0.006825938566552901
+        ],
+        "minimum_transport_time_orientation_range": [
+          0.0585480093676815,
+          0.15337423312883436
+        ],
+        "passing_replicates": 0,
+        "registered_mean_adjacent_overlap_range": [
+          0.9980313840641397,
+          1.0
+        ],
+        "replicates": 12,
+        "resolved_core_fraction_range": [
+          0.94,
+          1.0
+        ],
+        "zero_shift_mean_adjacent_overlap_range": [
+          0.5388240664934559,
+          0.8164755144997828
+        ]
+      }
     }
   }
 }
