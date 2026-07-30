@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.3.0  
+**Version:** 0.4.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -146,7 +146,19 @@ If no candidate passes, the provenance lane ends with `no_reproducible_eq11_base
 
 This provenance work cannot establish particles, biology, heredity, consciousness, cosmology, or correspondence with nature. A successful baseline would establish only that one documented numerical mechanism can maintain one operationally defined structure under frozen simulation conditions.
 
-## 9. Next provenance actions
+## 9. Operational tracking boundary
+
+The durable scientific source of truth is this version-controlled report. It records equations, evidence, negative results, uncertainty, and the scientific decision trail.
+
+Operational status, priority, assignment, and completion are tracked in the Lineum Dynamics ClickUp workspace, task:
+
+```text
+869ebyvpb — Research: Active Growth and Scaffold Repair (Eq-11.1 Provenance Gate)
+```
+
+Repository `todo.md` files are historical evidence only. They may help reconstruct old ideas or experiment history, but they do not define current priority, status, or planned work.
+
+## 10. Next provenance actions
 
 Before any implementation:
 
@@ -156,9 +168,10 @@ Before any implementation:
 4. trace the later Phase 15–21 reconstruction chain separately from the original survivor claim;
 5. populate the provenance matrix before selecting an executable candidate.
 
-## 10. Continuous ledger
+## 11. Continuous ledger
 
 - `2026-07-30 lane creation`: opened a separate live report before further Eq-11.1 archaeology or numerical implementation.
 - `initial retrieval`: recorded the explicit equation, all already known negative history, commit `4b08ab1`, and two failed exact-path fetches.
 - `source-commit classification`: inspected changed-file evidence, `found.txt`, `search_out.txt`, and `phase_mismatch_results.txt`; classified the cited commit as documentation/search evidence without a located Eq-11.1 executable or complete numerical chain.
 - `root-runner check`: inspected the active simulation loop and classified `lineum.py` as a harness for public `step_core`, not an implementation of the documented Eq-11.1 growth/leakage law.
+- `task-system correction`: confirmed ClickUp workspace `90121717552` as Lineum Dynamics, created active task `869ebyvpb` in `Research & Engineering → Engine R&D → Core Simulations`, and classified repository `todo.md` files as historical evidence rather than the active backlog.
