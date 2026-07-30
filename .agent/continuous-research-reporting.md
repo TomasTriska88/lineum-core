@@ -32,6 +32,24 @@ After executing the step, and before beginning another consequential step, updat
 
 Any project-owner hypothesis, analogy, correction, architectural constraint, or response at a negative-result gate must be recorded in the active report before it is translated into code or a new experiment. Preserve the owner's idea distinctly from the agent's formalization and from experimental evidence.
 
+## Root programme and report hierarchy
+
+A child research lane never becomes an isolated source of truth merely because it is the currently active report.
+
+For every decision-relevant child report:
+
+- declare the exact root or master report path, its version, and its evidence cutoff;
+- declare the full report lineage from the root programme through every immediate predecessor;
+- before selecting, replacing, ranking, or rejecting a mechanism, re-read the root report and recover all inherited positive results, negative results, contradictions, open variants, stop conditions, and deferred gates that can affect the decision;
+- restate every decision-relevant inherited premise inside the child report or its mandatory continuity ledger so that the child remains auditable without pretending that recent work reset the programme;
+- maintain both a local verdict and a root-programme impact matrix using `supports`, `contradicts`, `constrains`, `depends_on`, `reopens`, `observationally_equivalent`, `unaffected`, or `not_yet_compared`;
+- choose the next discriminator by its value across the complete programme, not merely by proximity to the newest experiment, metaphor, or report;
+- preserve older and incompatible equation families as separate variants rather than silently narrowing the programme to the latest candidate.
+
+When the root report is too large to re-read as one tool response, retrieve it by immutable blob or bounded sections, identify the sections relevant to the current decision, and explicitly register every material family that remains `not_yet_compared`. A ClickUp task, chat summary, child report, or whitepaper is not a substitute for the root scientific record.
+
+A child lane is not ready for a consequential experiment while its report chain cannot explain how the proposed action follows from the complete inherited programme rather than only from recent work.
+
 ## Whitepaper handoff
 
 When the project owner designates an active report as the future source for whitepaper updates, record that purpose in the report immediately. Maintain a live whitepaper handoff section that separates:
