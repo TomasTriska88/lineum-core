@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active research report; active `mu × kappa` feasibility matrix completed with a verified bounded negative result; permanent harness/test capture pending; owner failure-gate interpretation required before replacement-mechanism selection
+**Status:** active research report; active `mu × kappa` feasibility matrix completed with a reproducible bounded negative result; permanent research runner and regression specification committed; standalone-verifier embedding and supported-environment execution pending
 
-**Version:** 0.5.0
+**Version:** 0.6.0
 
 **Evidence cutoff:** 2026-07-30
 
@@ -10,13 +10,13 @@
 
 **Predecessor:** `Static Baseline and Live-State Transplant Matrix in Lineum Core`, which showed that a static initializer is not an active repair or hereditary mechanism in the tested Core path.
 
-**Current confidence:** High for the isolated deterministic result and exact repetition of the frozen matrix; medium for active-Core equivalence because the isolated verifier recreates only the inspected NumPy path; low for portability across supported dependencies; no support for interpreting the tested `mu × kappa` implementation as an active repair or hereditary mechanism.
+**Current confidence:** High for the isolated deterministic lane relationships and exact repetition of the frozen matrix; medium for equivalence to the inspected active NumPy path; low for portability until execution is repeated inside the repository-supported dependency range. There is no support for interpreting the tested `mu × kappa` implementation as an active repair, hereditary, identity, biological, or physical-universe mechanism.
 
 ## 1. Answer first
 
 The tested combination failed its preregistered repair criterion in all eight cells.
 
-The slow `mu` trace accumulated substantially, but it produced effectively no improvement in reconstruction. Across the full grid, enabling `mu` changed the recovery fraction by at most:
+The slow `mu` trace accumulated substantially, but enabling it changed the recovery fraction by at most:
 
 ```text
 0.00004216379362752265
@@ -33,18 +33,20 @@ The structured `kappa` scaffold produced a small local increase in energy return
 However:
 
 - the same `kappa` benefit appeared with and without `mu`;
-- structured-`kappa` lanes had greater change outside the damaged region;
+- structured-`kappa` lanes changed more outside the damaged region;
 - the combined lane never exceeded both single-factor lanes by the required `0.10`;
-- after replacing structured `kappa` with the uniform map, the scaffolded lanes retained less of their repaired damage-region energy than the uniform lanes;
+- after replacing structured `kappa` with the uniform map, previously scaffolded lanes retained less of their repaired damage-region energy than uniform lanes;
 - no cell satisfied the preregistered combined-mechanism verdict.
 
-Plain interpretation: the mould slightly redirects or slows the spreading dough, but the tested `mu` is not acting like yeast. The combined result is practically the mould-only result.
+Plain interpretation: the mould slightly redirected or slowed the spreading dough, but the tested `mu` did not act like yeast. The combined result was practically the mould-only result.
 
-## 2. Owner hypothesis and tested operational mapping
+## 2. Owner hypothesis and operational mapping
 
 Owner hypothesis:
 
 > Yeast makes dough from flour and water, while a mould gives it shape.
+
+This remains an owner-generated candidate hypothesis, not experimental evidence.
 
 First-pilot mapping:
 
@@ -57,7 +59,25 @@ First-pilot mapping:
 
 This operational mapping is now `unsupported_under_tested_conditions`. The broader owner hypothesis remains open because other active processes and scaffold types were not tested by this matrix.
 
-## 3. Whitepaper handoff contract
+## 3. Delegated scientific autonomy
+
+On 2026-07-30, after reviewing the bounded negative result and the continuous-report discipline, the project owner granted the research agent full methodological discretion and expressed trust that the work would remain scientifically correct.
+
+Operational meaning:
+
+- the agent may choose the order of open mechanism families, the cheapest decisive discriminator, controls, observers, horizons, and implementation strategy;
+- routine mechanism-selection questions do not require an owner interruption when the report contains enough evidence to choose conservatively;
+- negative findings, contradictory evidence, null effects, unstable branches, unsupported analogies, and implementation/documentation conflicts retain equal reporting priority with positive findings;
+- every consequential protocol remains preregistered in this report before execution;
+- thresholds may not be relaxed after results are inspected;
+- failed mechanisms may not be rescued by relabelling, selective parameter reporting, or changing the target observable post hoc;
+- numerical claims require independent sanity checks, unit or scale checks where applicable, toy cases, repeat execution, explicit assumptions, and failure reporting;
+- public-library placement remains governed by the separate promotion gate;
+- whitepaper promotion remains governed by the evidence classifications below.
+
+This delegation is permission to proceed rigorously, not permission to overclaim.
+
+## 4. Whitepaper handoff contract
 
 The project owner designated this report as the evidence source for updating relevant whitepapers after the research programme is complete.
 
@@ -69,25 +89,25 @@ Final statements must be classified as:
 - `hypothesis_only`;
 - `unresolved`.
 
-No whitepaper is updated from chat memory, scripts, images, or a final summary. Whitepaper changes must be derived from this report’s final evidence table.
+No whitepaper is updated from chat memory, scripts, images, or a final conversational summary. Whitepaper changes must be derived from this report’s final evidence table.
 
-## 4. Whitepaper impact registry after this result
+## 5. Whitepaper impact registry after the first matrix
 
 | Whitepaper | Relationship after matrix | Current promotion status |
 |---|---|---|
-| `whitepapers/1-core/02-core-equation.md` | active `mu` is verified as a slow path-reinforcement variable in code, but the tested implementation did not repair an erased pattern | `implementation_fact_plus_bounded_negative_result` |
+| `whitepapers/1-core/02-core-equation.md` | active `mu` is implemented as a slow path-reinforcement variable, but the tested implementation did not repair an erased pattern | `implementation_fact_plus_bounded_negative_result` |
 | `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | Relic Foam remains a distinct environmental scaffold family; prior true-re-ignition and infinite-reuse failures remain relevant | `unaffected_distinct_variant` |
-| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | `epsilon` remains a distinct active-cycle candidate; its reported shock recovery must not be conflated with spatial regrowth | `reopened_as_distinct_candidate_not_selected` |
-| `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | active solver explicitly implements `mu`; current test provides no support for calling it emergent mass or repair information | `hypothesis_only_and_implementation_conflict` |
-| `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | existing deprecation remains consistent with lack of demonstrated active memory repair | `bounded_negative_result_already_recorded` |
-| `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | claims of dynamic `kappa` memory conflict with code; tested `mu` trace did not reconstruct damage | `requires_scope_correction_after_program_completion` |
+| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | `epsilon` remains a distinct active-cycle candidate; reported shock recovery must not be conflated with spatial regrowth | `reopened_as_distinct_candidate_not_selected` |
+| `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | active solver implements `mu`; this test provides no support for calling it emergent mass or repair information | `hypothesis_only_and_implementation_conflict` |
+| `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | existing deprecation remains consistent with absent demonstrated active memory repair | `bounded_negative_result_already_recorded` |
+| `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | claims of dynamic `kappa` memory conflict with code; tested `mu` did not reconstruct damage | `requires_scope_correction_after_program_completion` |
 | `whitepapers/3-ontology/hypotheses/11-ontology-hyp-kinetic-ignition.md` | no verified mechanism link to this matrix | `hypothesis_only` |
 | `whitepapers/3-ontology/hypotheses/12-ontology-hyp-order-vs-chaos.md` | no support for moral or psychological persistence claims | `hypothesis_only` |
 | `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | existing deprecation remains consistent with the result | `bounded_negative_result_already_recorded` |
 
-No canonical wording is yet authorized because the report still requires permanent executable capture, supported-environment validation, and comparison with distinct mechanism families.
+No canonical wording is authorized yet. Permanent executable files now exist, but the report still requires an embedded standalone verifier, supported-environment validation, and comparison with distinct mechanism families.
 
-## 5. Retrieved implementation facts
+## 6. Retrieved implementation facts
 
 Active source: `lineum_core/math.py`, blob SHA `bb877021810691223a0eb960a45493a2e351112a`.
 
@@ -97,21 +117,22 @@ Active source: `lineum_core/math.py`, blob SHA `bb877021810691223a0eb960a45493a2
 - `mu` accumulates above a relative `psi`-energy threshold and decays slowly.
 - no active term compares the current state with a target pattern or detects a missing sector.
 
-The observed negative result is mechanically plausible: `mu` can amplify routes that already have a usable `phi` gradient or interaction, but it does not encode where erased `psi` and `phi` values should be rebuilt.
+The negative result is mechanically plausible: `mu` can amplify routes that already have a usable `phi` gradient or interaction, but it does not encode where erased `psi` and `phi` values should be rebuilt.
 
-## 6. Mechanism-family ledger
+## 7. Mechanism-family ledger
 
 | Family | Active factor | Scaffold | Status after this matrix |
 |---|---|---|---|
 | `A_active_mu_kappa` | current `mu` reinforcement | structured static `kappa` | `unsupported_under_tested_conditions` |
-| `B_eq11_growth_kappa` | Eq-11 growth/leakage | geometric or `kappa` closure | open distinct historical/experimental family; weak smooth well previously failed |
+| `B_eq11_growth_kappa` | Eq-11 growth/leakage | geometric or `kappa` closure | open historical/experimental family; weak smooth well previously failed |
 | `C_epsilon_scaffold` | closed-energy `epsilon` cycle | geometric/environmental scaffold | open distinct extension; erasure regrowth untested |
 | `D_active_foam` | structured active excitation | Relic Foam/ambient `phi` | bounded co-stabilization evidence; true re-ignition and infinite reuse previously rejected |
-| `E_dynamic_scaffold` | unspecified active process | scaffold that changes with the live state | untested family generated by failure analysis |
+| `E_dynamic_scaffold` | unspecified active process | scaffold changing with live state | untested family generated by failure analysis |
+| `F_generative_controller` | compact target-generating programme | passive or active environment | untested; distinct from reinforcement of current traffic |
 
-No replacement family is selected in this version.
+No replacement family has yet produced a preregistered result.
 
-## 7. Frozen factorial lanes
+## 8. Frozen factorial lanes
 
 | Lane | `mu` accumulation | structured `kappa` | Meaning |
 |---|---:|---:|---|
@@ -122,7 +143,7 @@ No replacement family is selected in this version.
 
 Each lane had a damaged run and a no-damage twin.
 
-## 8. Frozen environment
+## 9. Frozen environment
 
 - isolated NumPy reproduction of the inspected active path;
 - Python `3.13.5`;
@@ -131,9 +152,9 @@ Each lane had a damaged run and a no-damage twin.
 - deterministic seed `314159`;
 - stochastic generation disabled;
 - `noise_strength=0`;
-- PyTorch, CUDA, full repository CI and supported-environment execution not tested.
+- PyTorch, CUDA, full repository CI, and supported-environment execution not tested.
 
-## 9. Frozen geometry
+## 10. Frozen geometry
 
 Grid:
 
@@ -172,7 +193,7 @@ ring > 0.20 and abs(theta) <= pi/4
 
 Damage set `psi=0` and `phi=0` inside the mask while preserving `mu` and `kappa`.
 
-## 10. Frozen finite grid
+## 11. Frozen finite grid
 
 Eight cells:
 
@@ -187,7 +208,7 @@ Eight cells:
 
 All cells were reported. No post-hoc selection or parameter change occurred.
 
-## 11. Preregistered verdict
+## 12. Preregistered verdict
 
 Combined support required all of:
 
@@ -199,7 +220,7 @@ Combined support required all of:
 
 No cell passed condition 1. Stability conditions passed.
 
-## 12. Machine-readable compact result
+## 13. Machine-readable compact result
 
 ```json
 {
@@ -220,7 +241,7 @@ No cell passed condition 1. Stability conditions passed.
 
 Full output was generated twice and canonical JSON was byte-identical between repetitions.
 
-## 13. Complete eight-cell recovery table
+## 14. Complete eight-cell recovery table
 
 Recovery fraction is measured against each lane’s matched no-damage twin. Values are not clipped.
 
@@ -237,7 +258,7 @@ Recovery fraction is measured against each lane’s matched no-damage twin. Valu
 
 `mu` accumulation never improved recovery. The structured map increased local recovery modestly and monotonically with contrast and formation time.
 
-## 14. Collateral and removal results
+## 15. Collateral and scaffold-removal results
 
 Outside-mask NRMSE ranges:
 
@@ -251,11 +272,11 @@ Damage-region energy retention over the 40-step post-removal continuation:
 - uniform-map lanes: approximately `0.8407–0.8950` of their repaired value;
 - previously structured lanes after replacing `kappa` with uniform: approximately `0.7140–0.8086`.
 
-The scaffolded lanes therefore remained more dependent on their former spatial environment; scaffold removal did not reveal a hidden autonomous `mu`-maintained reconstruction.
+The scaffolded lanes therefore remained more dependent on their former spatial environment. Scaffold removal did not reveal a hidden autonomous `mu`-maintained reconstruction.
 
-## 15. Stability and sanity checks
+## 16. Stability, sanity, and permanent-capture status
 
-Passed:
+Passed in the isolated execution:
 
 - toy recovery metric: half recovery `0.5`, worsening `-0.125`;
 - structured and uniform mean `kappa` equality;
@@ -266,14 +287,23 @@ Passed:
 - no fail-safe reset;
 - energy ratios to no-damage twins approximately `0.717–0.735`, excluding global runaway as the explanation.
 
-Pending permanent capture:
+Permanent files now committed outside the installable library:
 
-- repository research harness;
-- regression tests;
-- complete standalone verifier embedded in this report;
-- supported NumPy rerun and full repository CI.
+- `scripts/research/active_mu_kappa_repair_matrix.py`;
+- `tests/research/test_active_mu_kappa_repair_matrix.py`.
 
-## 16. Narrow scientific interpretation
+The regression specification checks exact repetition, absence of supportive cells, bounded negative `mu` effects, bounded positive `kappa` effects, valid geometry, finite states, and absence of fail-safe resets.
+
+Still pending:
+
+- embed the complete standalone verifier in this report;
+- execute the commit-scoped regression test in the supported dependency environment;
+- rerun with NumPy `<2.0`;
+- run relevant full repository CI paths.
+
+No pending item reverses the recorded isolated result; each limits its promotion strength.
+
+## 17. Narrow scientific interpretation
 
 Supported within the frozen isolated setup:
 
@@ -291,13 +321,13 @@ Not supported:
 - semantic memory, identity, life, or consciousness;
 - any physical-universe claim.
 
-## 17. Failure-to-mechanism map
+## 18. Failure-to-mechanism map
 
 What failed:
 
-- preserving a learned `mu` trace did not tell the active solver how to recreate erased `psi` and `phi`;
+- preserving a learned `mu` trace did not tell the solver how to recreate erased `psi` and `phi`;
 - the static scaffold guided common dynamics but supplied no selective active source;
-- increasing `mu_eta` by fourfold increased total `mu` strongly but did not improve repair.
+- increasing `mu_eta` fourfold increased total `mu` strongly but did not improve repair.
 
 What remained positive:
 
@@ -311,36 +341,34 @@ Qualitatively distinct repair classes still open:
 2. an Eq-11 growth/leakage process with explicit closure stronger or different from the failed weak well;
 3. a stateful environmental scaffold such as Relic Foam, tested through erasure rather than impact only;
 4. a dynamic scaffold that changes in response to the live state;
-5. a controller that encodes a target or generative programme rather than only reinforcing current traffic.
+5. a controller encoding a target or generative programme rather than only reinforcing current traffic.
 
-No class is selected here.
-
-## 18. Limitations
+## 19. Limitations
 
 - unsupported NumPy version;
 - isolated NumPy path only;
 - one ring geometry and one damage shape;
 - deterministic source-off regime only;
-- eight feasibility cells, not a broad parameter inference;
+- eight feasibility cells, not broad parameter inference;
 - `mu` preserved during damage but not separately erased;
 - no shuffled-scaffold control because the structured scaffold did not meet the preregistered support threshold;
 - no second damage after scaffold removal;
 - no topology-specific node observer;
-- no biological or empirical-universe comparison in this isolated implementation test.
+- no biological or empirical-universe comparison in this implementation test.
 
-## 19. Next allowed actions
+## 20. Next actions under delegated autonomy
 
-Before selecting another mechanism:
+Before executing another mechanism family:
 
-1. preserve the executed matrix as a permanent research harness outside `lineum_core/`;
-2. add regression tests for the negative result and metric receipts;
-3. embed the complete standalone verifier and machine-readable output in this report;
-4. report the negative result to the project owner through the common-sense failure gate;
-5. wait for the owner’s interpretation before choosing among the open repair classes.
+1. embed the complete standalone verifier and command receipt in this report;
+2. attempt supported-environment execution and record success or blocker;
+3. rank the remaining mechanism families by causal distinctness, existing implementation traceability, and cheapest falsifying experiment;
+4. preregister the selected family and all controls in this report;
+5. execute without post-hoc parameter rescue.
 
-Parameter tuning of the active `mu × kappa` implementation is not authorized after this result without a new hypothesis and frozen discriminator.
+The active `mu × kappa` implementation will not be tuned further without a new causal hypothesis and frozen discriminator.
 
-## 20. Continuous-report ledger
+## 21. Continuous-report ledger
 
 ### 2026-07-30 — owner failure-gate response
 
@@ -364,4 +392,12 @@ Selected active `mu × kappa` as the smallest current-Core test and committed th
 
 ### 2026-07-30 — matrix execution
 
-Executed all eight frozen cells twice in the isolated NumPy verifier. The canonical outputs matched exactly. No cell met the combined-support criterion. `mu` had negligible slightly negative effects; structured `kappa` had a small local effect with collateral deviation and scaffold dependence. Recorded the bounded negative result before any replacement-mechanism selection.
+Executed all eight frozen cells twice in the isolated NumPy verifier. Canonical outputs matched exactly. No cell met the combined-support criterion. `mu` had negligible slightly negative effects; structured `kappa` had a small local effect with collateral deviation and scaffold dependence. Recorded the bounded negative result before replacement-mechanism selection.
+
+### 2026-07-30 — permanent executable capture
+
+Committed the research runner and regression specification outside `lineum_core/`. Updated this report to stop describing those files as pending. Commit-scoped supported-environment execution remains pending and is not implied by file presence.
+
+### 2026-07-30 — delegated scientific autonomy
+
+Recorded the owner’s grant of methodological discretion and trust. Preserved all preregistration, negative-result, independent-verification, public-library, and whitepaper-promotion gates as non-waivable constraints.
