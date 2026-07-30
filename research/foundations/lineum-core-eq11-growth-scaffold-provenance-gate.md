@@ -1,8 +1,8 @@
 # Eq-11.1 Growth and Scaffold Provenance Gate
 
-**Status:** active provenance report; source commit classified as documentation/search evidence rather than an executable Eq-11.1 receipt; no numerical repair experiment authorized
+**Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.2.0  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -11,7 +11,7 @@
 
 Eq-11.1 remains the highest-priority distinct “active growth” candidate for the owner’s yeast-plus-mould hypothesis because an explicit growth/leakage equation survives in the repository. It is **not yet reproducible enough to run a repair experiment**.
 
-The repository commit cited near the historical survivor claim does not presently provide an executable reproduction receipt. The immediate task remains provenance reconstruction, not parameter tuning and not code promotion.
+Neither the repository commit cited near the historical survivor claim nor the active root `lineum.py` presently supplies the claimed Eq-11.1 mechanism as a complete executable reproduction chain. The immediate task remains provenance reconstruction, not parameter tuning and not code promotion.
 
 ## 2. Gate question
 
@@ -94,6 +94,24 @@ These results are classified as `not_located_at_tested_paths`, not proof that no
 
 The commit may establish when wording was introduced. It does not currently establish that the claimed Eq-11.1 survivor was reproducibly executed.
 
+### 5.4 Active root-runner check
+
+Current `lineum.py` on `develop`, blob `a57171a633b85d02e4c2047d367cab5b534181aa`, imports:
+
+```python
+from lineum_core.math import step_core, CoreConfig
+```
+
+Its active simulation loop constructs a standard `CoreConfig` from noise, drift, dissipation, diffusion, reaction, and mode-coupling settings, then calls:
+
+```python
+state = step_core({"psi": psi, "phi": phi, "kappa": kappa, "delta": delta}, cfg)
+```
+
+It does not execute the explicit Eq-11.1 `alpha tanh(c1 Phi) - gamma - lambda Phi² - c_w |∇Psi|²` law in that loop.
+
+A stale code-search hit for `c_w` in `lineum.py` therefore does not establish that the current root runner is Eq-11.1. Classification: `active_harness_for_public_step_core`, not an Eq-11.1 reproduction implementation.
+
 ## 6. Required provenance matrix
 
 For every discovered Eq-11 or Eq-11.1 artifact, record:
@@ -143,3 +161,4 @@ Before any implementation:
 - `2026-07-30 lane creation`: opened a separate live report before further Eq-11.1 archaeology or numerical implementation.
 - `initial retrieval`: recorded the explicit equation, all already known negative history, commit `4b08ab1`, and two failed exact-path fetches.
 - `source-commit classification`: inspected changed-file evidence, `found.txt`, `search_out.txt`, and `phase_mismatch_results.txt`; classified the cited commit as documentation/search evidence without a located Eq-11.1 executable or complete numerical chain.
+- `root-runner check`: inspected the active simulation loop and classified `lineum.py` as a harness for public `step_core`, not an implementation of the documented Eq-11.1 growth/leakage law.
