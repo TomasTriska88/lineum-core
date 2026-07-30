@@ -8,9 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const SRC_DIR = path.join(__dirname, '../src');
-const DOC_FILE = path.join(__dirname, '../../portal/LAB_UX_CANON.md');
-
-console.log('Checking for Czech characters in Lab src and documentation...');
+console.log('Checking for Czech characters in Lab source...');
 let hasErrors = false;
 
 walkDir(SRC_DIR, (filePath) => {
@@ -20,11 +18,6 @@ walkDir(SRC_DIR, (filePath) => {
         }
     }
 });
-
-// Also check the UX Canon documentation specifically
-if (checkFile(DOC_FILE)) {
-    hasErrors = true;
-}
 
 if (hasErrors) {
     console.error('\nFAIL: Czech characters detected! Please use only English in the Laboratory and Documentation.');

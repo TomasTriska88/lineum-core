@@ -1,25 +1,6 @@
 import os
-import pytest
-import sys
-from unittest.mock import patch, MagicMock
 
-# Inject path for tools testing
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-sys.path.append(os.path.join(REPO_ROOT, "tools"))
-sys.path.append(os.path.join(REPO_ROOT, "routing_backend"))
-
-def test_quarantine_directory_ignored_by_lab_api():
-    """
-    Test that the Lab API health context correctly derives its data ONLY from
-    the _whitepaper_contract suite, inherently ignoring output_wp/archive/quarantine.
-    """
-    from routing_backend.lab_api import _get_audit_context
-    ctx = _get_audit_context()
-    
-    # Just asserting the path logic doesn't point to the archive
-    assert "archive" not in ctx["suite_abs_path"]
-    assert "quarantine" not in ctx["suite_abs_path"]
-    assert ctx["suite_abs_path"].endswith("output_wp\\runs\\_whitepaper_contract\\whitepaper_contract_suite.json") or ctx["suite_abs_path"].endswith("output_wp/runs/_whitepaper_contract/whitepaper_contract_suite.json")
 
 def test_whitepaper_contract_quarantine_scanning_logic():
     """

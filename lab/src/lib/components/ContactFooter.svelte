@@ -1,6 +1,6 @@
 <script lang="ts">
     import { t } from '../i18n.js';
-    import pkg from '../../../../portal/package.json';
+    import pkg from '../../../package.json';
     // @ts-ignore
     const commitHash =
         typeof __GIT_HASH__ !== "undefined" ? __GIT_HASH__ : "dev";

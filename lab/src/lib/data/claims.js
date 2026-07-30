@@ -1,4 +1,4 @@
-import claimsData from './claims.json' with { type: 'json' };
+import claimsData from '../../../../lineum_core/data/claims.json' with { type: 'json' };
 
 /**
  * Lineum Claims Registry — Full Ingest from All Whitepapers

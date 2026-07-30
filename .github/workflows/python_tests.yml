@@ -6,18 +6,24 @@ on:
     branches: [ "dev", "debug-v1.1.6-ci" ]
     paths:
       - 'lineum.py'
+      - 'setup.py'
+      - 'lineum_core/_version.py'
       - 'lineum_core/**'
       - 'scripts/**'
       - 'tests/**'
       - 'requirements.txt'
+      - 'requirements-dev.txt'
   pull_request:
     branches: [ "main", "dev" ]
     paths:
       - 'lineum.py'
+      - 'setup.py'
+      - 'lineum_core/_version.py'
       - 'lineum_core/**'
       - 'scripts/**'
       - 'tests/**'
       - 'requirements.txt'
+      - 'requirements-dev.txt'
 
 permissions:
   contents: read
@@ -39,7 +45,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install pytest pytest-asyncio
+        pip install -r requirements-dev.txt pytest-asyncio
 
     - name: Run PyTest Suite (Includes Core & Scripts)
       run: |
@@ -54,20 +60,17 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install Frontend Dependencies
+    - name: Install Simulacrum Dependencies
       run: |
-        cd portal && npm install
-        cd ../lab && npm install
+        cd lab && npm install
 
     - name: Install Playwright Browsers
       run: |
-        cd portal && npx playwright install --with-deps chromium
-        cd ../lab && npx playwright install --with-deps chromium
+        cd lab && npx playwright install --with-deps chromium
 
-    - name: Execute UI Suite Gates (Vitest + Playwright)
+    - name: Execute Simulacrum Suite Gates (Vitest + Playwright)
       env:
         PUBLIC_SIMULACRUM_URL: 'http://127.0.0.1:5174'
         PUBLIC_ENABLE_API_SOLUTIONS: 'true'
       run: |
-        cd portal && npm run test && npm run test:e2e
-        cd ../lab && npm run test && npm run test:e2e
+        cd lab && npm run test && npm run test:e2e

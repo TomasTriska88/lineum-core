@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { svelte, vitePreprocess } from '@sveltejs/vite-plugin-svelte'
-import pkg from '../portal/package.json'
+import pkg from './package.json'
 
 export default defineConfig({
     plugins: [svelte({ preprocess: vitePreprocess() })],

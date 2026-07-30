@@ -11,13 +11,13 @@ When the user asks `/release [version]` or just `/release`, follow these steps:
 2. Execute the version synchronization script to update all references:
    `python tools/sync_version.py [version]`
 // turbo
-3. Verify the changes using `git diff`. Ensure `CITATION.cff`, `todo.md`, and any other config files have been correctly updated to the new version.
+3. Verify the changes using `git diff`. Ensure `CITATION.cff` and all public version sources have been correctly updated to the new version.
 // turbo
 4. Stage the modified files:
-   `git add CITATION.cff todo.md tools/sync_version.py`
+   `git add CITATION.cff tools/sync_version.py`
 // turbo
 5. **CRITICAL: Run the test suites** before committing.
-   Execute `pytest tests/` and `npm run test` (in portal/lab).
+   Execute `pytest tests/` and `npm run test` in `lab/`.
    **IF ANY TESTS FAIL**, abort the release process immediately and notify the user to fix the errors. The release MUST NOT proceed if the code is broken.
 // turbo
 6. Commit the version bump and push `dev`:

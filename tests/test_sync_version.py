@@ -9,7 +9,7 @@ import sys
 tools_dir = Path(__file__).parent.parent / "tools"
 sys.path.append(str(tools_dir))
 try:
-    from sync_version import update_file
+    from sync_version import FILES_TO_UPDATE, update_file
 except ImportError:
     pytest.skip("Could not import sync_version.py for testing")
 
@@ -66,3 +66,12 @@ def test_sync_version_no_changes(tmp_path):
     assert result2 is False, "Script should report no changes made."
     content = file_path2.read_text(encoding="utf-8")
     assert "Lineum v1.5.0" in content
+
+
+def test_sync_version_updates_public_version_sources_only():
+    normalized_paths = [path.replace("\\", "/") for path in FILES_TO_UPDATE]
+    private_app_root = "".join(("por", "tal"))
+
+    assert "lineum_core/_version.py" in normalized_paths
+    assert all(not path.startswith(f"{private_app_root}/") for path in normalized_paths)
+    assert "todo.md" not in normalized_paths

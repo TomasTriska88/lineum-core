@@ -6,21 +6,15 @@ from pathlib import Path
 
 # Files to update and their regex patterns
 FILES_TO_UPDATE = {
+    "lineum_core/_version.py": [
+        (r'__version__\s*=\s*"\d+\.\d+\.\d+"', '__version__ = "__PACKAGE_VERSION__"'),
+    ],
     "CITATION.cff": [
         (r'version:\s+v\d+\.\d+\.\d+(-core)?', lambda m: f"version: {m.group(0).split(' ')[1].split('-')[0].replace('v', 'v') if not '-core' in m.group(0) else 'v' + '__CANONICAL_VERSION__'}"), # Will be replaced dynamically
     ],
     "README.md": [
         (r'v\d+\.\d+\.\d+(-core)?', '__CANONICAL_VERSION__'),
     ],
-    "todo.md": [
-       (r'v\d+\.\d+\.\d+(-core)?', '__CANONICAL_VERSION__')
-    ],
-    "portal/static/portal_params.json": [
-       (r'"version":\s*"v\d+\.\d+\.\d+(-core)?"', '"version": "v__CANONICAL_VERSION__"')
-    ],
-    "portal/src/lib/data/core/lineum.py": [
-       (r'"version":\s*"v\d+\.\d+\.\d+(-core)?"', '"version": "v__CANONICAL_VERSION__"')
-    ]
 }
 
 
@@ -44,6 +38,7 @@ def update_file(filepath, patterns_and_replacements, canonical_version, core_ver
             val = replacement
             if isinstance(val, str):
                 val = val.replace('__CANONICAL_VERSION__', canonical_version)
+                val = val.replace('__PACKAGE_VERSION__', canonical_version.removeprefix('v'))
             
             # Special case for CITATION.cff core version
             if "CITATION.cff" in filepath:

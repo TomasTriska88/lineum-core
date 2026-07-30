@@ -33,14 +33,3 @@ def test_webp_framerate_is_cinematic():
         if duration is not None and duration > 0:
             # 33ms or 16ms is allowed (30-60 fps). 100ms (10 fps) or slideshows are forbidden!
             assert duration <= 34, f"VFX exported as an unacceptable slideshow! Duration must be <= 34ms. Found: {duration}ms"
-
-def test_api_dynamic_frame_scaling():
-    """
-    Test that the asset API accurately bounds the physics dynamically,
-    no matter what frame count is requested via REST payload without crashing velocity limits.
-    """
-    from routing_backend.asset_api import generate_water_drop, VfxRequest
-    req = VfxRequest(grid_size=16, frames=5, colormap="magma")
-    
-    res = generate_water_drop(req)
-    assert len(res["frames"]) == 5, "API failed to generate the explicitly requested dynamic frame count bounds."

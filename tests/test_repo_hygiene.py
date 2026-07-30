@@ -66,7 +66,6 @@ def test_critical_files_exist():
         
         # Sub-projects
         "lab/package.json",
-        "portal/package.json",
         
         # Important infrastructure
         "scripts/check-czech.mjs",

@@ -5,14 +5,23 @@ import sys
 import math
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from lineum_core.math import step_core, CoreConfig
+from lineum_core.math import CoreConfig, ExecutionPolicy, step_core
 
 def test_wave_is_perfectly_isotropic():
-    import lineum_core.math as lmath
-    old_use = lmath.USE_PYTORCH
-    
+    original_policy = {
+        "device": ExecutionPolicy._device,
+        "backend": ExecutionPolicy._backend,
+        "requested_mode": ExecutionPolicy._requested_mode,
+        "selection_reason": ExecutionPolicy._selection_reason,
+        "deterministic_mode": ExecutionPolicy._deterministic_mode,
+        "is_canonical_run": ExecutionPolicy._is_canonical_run,
+    }
     try:
-        lmath.USE_PYTORCH = True
+        ExecutionPolicy.init_core_determinism(
+            enforce_canonical=False,
+            seed=42,
+            device_mode="torch-cpu",
+        )
         
         frames = 15
         phys_size = 96
@@ -70,4 +79,9 @@ def test_wave_is_perfectly_isotropic():
         # ISOTROPIC Operator mathematically corrects limits yielding symmetrical results essentially indistinguishable (<1.0)
         assert diff < 1.0, f"Grid Anisotropy Failure Occurred! Straight Radius: {r_straight:.1f}, Diagonal Radius: {r_diag:.1f}, Difference: {diff:.3f}"
     finally:
-        lmath.USE_PYTORCH = old_use
+        ExecutionPolicy._device = original_policy["device"]
+        ExecutionPolicy._backend = original_policy["backend"]
+        ExecutionPolicy._requested_mode = original_policy["requested_mode"]
+        ExecutionPolicy._selection_reason = original_policy["selection_reason"]
+        ExecutionPolicy._deterministic_mode = original_policy["deterministic_mode"]
+        ExecutionPolicy._is_canonical_run = original_policy["is_canonical_run"]

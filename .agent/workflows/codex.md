@@ -6,7 +6,7 @@ description: Lineum Ethical Codex, open-source defense, and dual-use API restric
 
 If the user asks about ethics, open-source strategy, dual-use technology, or restricting access to hostile entities (e.g., weapons manufacturers, mass surveillance, or specific states), **DO NOT propose creating a new ethical manifesto**. The project already has a robust ethical framework in place.
 
-**The single source of truth is:** `docs/LINEUM_CODEX_v1.md` (and its translations in `portal/src/lib/data/docs/`).
+**The single source of truth is:** `docs/LINEUM_CODEX_v1.md`.
 
 ### How the defense strategy works:
 1. **The Science is Open (Cypherpunk/MAD Doctrine):** The mathematical core and the Lineum equation are released as open-science under the AGPLv3 license out of principle, ensuring no single state or corporation can monopolize it. This mathematically "arms" everyone equally and removes the exclusive threat vector from the creators. 

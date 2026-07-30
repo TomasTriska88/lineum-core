@@ -1,13 +1,12 @@
 {
-    "name": "lineum-monorepo",
+    "name": "lineum-core-workspace",
     "private": true,
-    "description": "Monorepo root for Lineum",
+    "description": "Public Lineum Core research workspace",
     "scripts": {
-        "portal:sync": "cd portal && npm run sync",
-        "build": "npm run portal:sync && cd portal && npm install && npm run build",
-        "start": "cd portal && node build",
-        "test": "cd portal && npm test && cd ../lab && npm test",
-        "clean:scratch": "npx -y rimraf .scratch portal/.scratch lab/.scratch routing_backend/.scratch"
+        "build": "npm --prefix lab run build",
+        "test": "npm --prefix lab run test",
+        "test:e2e": "npm --prefix lab run test:e2e",
+        "clean:scratch": "npx -y rimraf .scratch lab/.scratch"
     },
     "engines": {
         "node": ">=20.0.0"

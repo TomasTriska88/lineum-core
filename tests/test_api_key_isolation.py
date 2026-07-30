@@ -2,11 +2,9 @@ import pytest
 from pathlib import Path
 import re
 
-def test_gemini_api_key_isolation(project_root):
+def test_external_llm_api_key_isolation(project_root):
     """
-    Ensure that the GEMINI_API_KEY is strictly isolated to the portal application
-    and is not being accessed by offline simulation scripts, data processing tools,
-    or random scratch scripts to avoid burning user credits unconditionally.
+    Ensure that the public physics repository never consumes external LLM keys.
     """
     root = Path(project_root)
     
@@ -36,7 +34,7 @@ def test_gemini_api_key_isolation(project_root):
                 
                 for pattern in forbidden_patterns:
                     if pattern.search(content):
-                        errors.append(f"Security Violation: File {filepath.relative_to(root)} accesses forbidden pattern '{pattern.pattern}'. API keys must only be used by the portal backend.")
+                        errors.append(f"Security Violation: File {filepath.relative_to(root)} accesses forbidden pattern '{pattern.pattern}'. External LLM keys do not belong in Lineum Core.")
                         break
 
     assert not errors, "API Key Isolation Failed:\n" + "\n".join(errors)

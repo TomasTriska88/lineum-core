@@ -2,10 +2,10 @@
 
 Thank you for contributing to Lineum! 
 
-As Lineum is a rigorous scientific simulation environment, we require all contributions to follow a strict verification protocol before being merged into the `dev` branch.
+As Lineum is a rigorous scientific simulation environment, we require all contributions to follow a strict verification protocol before being merged into the `develop` branch.
 
 ## 📋 Pre-Flight Checklist
-- [ ] I have forked the repository and created a new branch based on `dev` (not `main`).
+- [ ] I have forked the repository and created a new branch based on `develop` (not `main`).
 - [ ] My code has been successfully tested locally.
 - [ ] If I modified the simulation core (`lineum.py`), my run successfully reproduces the baseline without errors or diverging seeds.
 - [ ] I have checked the `docs/verification_checklist.md` if submitting scientific or numerical alterations.
@@ -16,7 +16,7 @@ As Lineum is a rigorous scientific simulation environment, we require all contri
 
 ## 🔬 Type of Change
 - [ ] Core Engine Bugfix / Optimization
-- [ ] New Portal / UI Feature
+- [ ] New Simulacrum / UI Feature
 - [ ] Whitepaper / Documentation adjustment
 - [ ] Extension / Hypothesis Track
 - [ ] Other: _____

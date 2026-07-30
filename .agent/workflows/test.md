@@ -13,30 +13,7 @@ Located in the root directory. Tests cover physics, simulation logic, and output
 pytest tests/ -v
 ```
 
-## 2. Portal (Frontend/Wiki)
-Located in the `portal/` directory. Tests cover Wiki loaders, metadata extraction, and asset routing.
-
-**CRITICAL COMPONENT TESTING POLICY**: For testing Svelte UI components (especially interactive ones with DOM changes, Canvas, or complex `bind:value` reactivity), **always use Playwright over Vitest/JSDOM**. JSDOM has severe limitations with Svelte lifecycle rendering and `IntersectionObserver`. You should run end-to-end tests via Playwright instead of struggling with mocked unit tests.
-
-> [!IMPORTANT]
-> **Playwright E2E tests (`npm run test:e2e`) are now fully automated in GitHub Actions CI**.
-> They will run against a headless Chromium browser instance upon every Push/PR to the `main` branch. If the E2E tests fail, the deployment to production is automatically aborted.
-> 
-> **CRITICAL DEV EFFICIENCY RULE:** Running the entire test suite (`npm run test:e2e`) is heavy and wastes CPU/time. During active local development, **NEVER** run the full E2E suite. Always run targeted tests by specifying the file path (e.g. using `npx` with file path):
-> ```bash
-> npx playwright test src/tests/e2e/evolution.spec.ts
-> ```
-> Use targeted runs for validation and only run the full E2E suite before final pull requests/releases.
-
-// turbo
-```bash
-cd portal
-npm run test
-# Run targeted test instead of full test:e2e
-npx playwright test src/tests/e2e/your-test.spec.ts
-```
-
-## 3. Simulacrum (Lab)
+## 2. Simulacrum (Lab)
 Located in the `lab/` directory. Tests cover visualization components and harmonic analysis.
 // turbo
 ```bash

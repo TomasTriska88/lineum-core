@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const claimsPath = path.resolve(__dirname, '../src/lib/data/claims.json');
+const claimsPath = path.resolve(__dirname, '../../lineum_core/data/claims.json');
 const mapPath = path.resolve(__dirname, '../src/lib/data/whitepaper_map.json');
 
 try {

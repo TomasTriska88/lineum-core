@@ -4,12 +4,12 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "predev": "npx -y kill-port 8000",
-        "dev": "concurrently -k -n \"SVELTE,PYTHON\" -c \"cyan,magenta\" \"vite\" \"cd .. && python -m uvicorn routing_backend.main:app --host 127.0.0.1 --port 8000\"",
+        "predev": "npx -y kill-port 5174",
+        "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
         "pretest": "node ../scripts/generate_whitepaper_map.js",
-        "test": "node ../portal/scripts/check-localhost-e2e.js && node scripts/validate_claims.js && vitest run",
+        "test": "node scripts/validate_claims.js && vitest run",
         "test:e2e": "playwright test"
     },
     "devDependencies": {

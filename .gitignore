@@ -64,13 +64,10 @@ validation_errors.txt
 *search*.txt
 violations.json
 
-# Portal build-time synced data
-portal/src/lib/data/ai_index.json
 docs/reports/2026-02-17-audit/audit_report.md
 
 # Generated Ingestion Artifacts
 artifacts/
-routing_backend/artifacts/
 book-renderer/exports/
 book-renderer/test-results/
 book-renderer/playwright-report/

@@ -7,22 +7,23 @@ Lineum is an open research project investigating whether particle-like structure
 
 ## 📂 Project Structure
 
-This monorepo contains three distinct components:
+This public repository contains two distinct components:
 
 | Component | Path | Description | Tech Stack |
 | :--- | :--- | :--- | :--- |
 | **Core** | `/` | The simulation engine and audit tools. | Python 3.11 |
-| **Portal** | `/portal` | Official web interface and knowledge base. | SvelteKit (Node) |
 | **Lab** | `/lab` | "Simulacrum" - Interactive 3D visualizer. | Svelte/Vite |
+
+Commercial applications, the hosted Portal, and company-specific services live in the private `lineum-dynamics` repository. They consume released versions of Lineum Core; this public repository never depends on them.
 
 ---
 
 ## 🛠️ Prerequisites
 
-To run and develop the various components of the monorepo, you need the following prerequisites installed on your system:
+To run and develop this repository, you need the following prerequisites installed on your system:
 *   **Git** (for version control and project hooks)
 *   **Python 3.11** with **pip** or **uv** (required for **Core** dependencies, manage via [requirements.txt](requirements.txt))
-*   **Node.js (LTS version)** (required for **Portal** and **Lab**)
+*   **Node.js (LTS version)** (required for **Lab**)
 
 ---
 
@@ -41,30 +42,39 @@ The heart of the project. A Python-based engine that runs the discrete field upd
     ```
 *   **Audit**: See `whitepapers/` for full scientific methodology or [Verification Checklist](docs/verification_checklist.md) for independent reproduction.
 
+### Reusable Python Library
+
+`lineum-core` is also an application-neutral Python library for Lina EI and other independent Lineum applications. Its public package version has one source in `lineum_core/_version.py`; `setup.py`, built wheels, and runtime introspection all read that value.
+
+Tagged releases build and attach a versioned `lineum_core-<version>-py3-none-any.whl`. Downstream applications pin an immutable release artifact or source commit and update deliberately. Lineum Core never depends on Lina-specific identity, cognition, embodiment, devices, or product policy.
+
+For local development, install the active checkout explicitly:
+
+```bash
+python -m pip install --editable .
+python -c "import lineum_core; print(lineum_core.__version__)"
+```
+
+See [Library Distribution Contract](docs/library-distribution.md) for the release and downstream update boundary.
+
 ### ⚡ Hardware Acceleration (CUDA/GPU)
-Lineum Core runs on standard CPU (NumPy) by default and does **not** force heavy GPU dependencies in `requirements.txt`.
-However, for massive scientific grid runs, reference pack generations, or local testing, you can seamlessly unlock **10x-30x speedups** if you have an Nvidia GPU:
-1. Install PyTorch with CUDA support locally: `pip install torch --index-url https://download.pytorch.org/whl/cu121`
-2. The core physics engine (`lineum_core/math.py`) will **auto-detect** the GPU and automatically route tensor calculations through hardware CUDA cores.
+Lineum Core uses the safe NumPy CPU backend by default and does **not** select a visible GPU implicitly. Select a backend explicitly through the cross-platform `LINEUM_DEVICE` environment variable:
+
+- `LINEUM_DEVICE=numpy` — NumPy CPU, the default.
+- `LINEUM_DEVICE=torch-cpu` — PyTorch on CPU.
+- `LINEUM_DEVICE=cuda` — PyTorch on CUDA for exploratory runs only.
+
+An explicit CUDA request is accepted only when PyTorch reports CUDA as available and the installed PyTorch build contains the detected GPU architecture. An incompatible request fails before a physics kernel is launched. Canonical audit runs always use CPU for cross-hardware determinism, even if CUDA was requested. The legacy `LINEUM_USE_PYTORCH=1` switch remains supported and maps to `torch-cpu`; it never enables CUDA implicitly.
+
+See [Execution Device Policy](docs/execution-device-policy.md) for the runtime contract and verification commands.
 
 ### 📦 Reference Pack
-For independent offline verification without reproducing the entire run, download the pre-built reference pack from the [GitHub Releases](https://github.com/TomasTriska88/lineum-private/releases) page (attached as an asset to `v*` tags).
+For independent offline verification without reproducing the entire run, download the pre-built reference pack from the [Lineum Core GitHub Releases](https://github.com/TomasTriska88/lineum-core/releases) page (attached as an asset to `v*` tags).
 
 To verify the downloaded pack:
 ```bash
 python scripts/verify_reference_pack.py --pack <path_to_downloaded_zip>
 ```
-
----
-
-## 🌐 Portal (Web Interface)
-The public face of Lineum ([lineum.io](https://lineum.io)). It serves as:
-1.  **Wiki**: Hosting the whitepapers and documentation.
-2.  **Context**: Explaining the mission and finding linons.
-3.  **Lina**: An AI assistant with full context of the project.
-
-*   **Deployment**: Deployed to Railway from `main`.
-*   **Safety**: Uses `npm run safe-merge` to ensure quality.
 
 ---
 
@@ -84,19 +94,13 @@ The `research/` directory contains exploratory materials, raw-data logs, and non
 
 ---
 
-## 🚀 Deployment & Workflow
+## 🚀 Release Workflow
 
 ### Git Protocol
 *   **`dev` branch**: All development happens here.
 *   **`main` branch**: Production releases only.
 
-### How to Deploy (Portal)
-We use a **Safe Merge** protocol to prevent broken builds in production.
-```bash
-cd portal
-npm run safe-merge
-```
-This script runs tests, builds the site, checks for i18n issues, and only then merges `dev` into `main` and pushes.
+Tagged Core releases build the reusable Python wheel and the canonical reference pack. Commercial deployment is intentionally outside this public repository.
 
 ---
 
@@ -105,13 +109,10 @@ This script runs tests, builds the site, checks for i18n issues, and only then m
 SvelteKit (Vite) development servers on Windows frequently bind to the IPv6 loopback (`::1`) while browsers attempt to resolve `localhost` via IPv4. This results in standard `npm run dev` endpoints returning a **404 error** or `ERR_CONNECTION_REFUSED`.
 To bypass this, always run the dev servers bound explicitly to IPv4 via `--host` and navigate to the numeric IP:
 ```bash
-# Portal
-npx vite dev --host 127.0.0.1 --port 5173
-
 # Lab
 npx vite dev --host 127.0.0.1 --port 5174
 ```
-**Do not use `localhost`** in the browser in these cases, always use `http://127.0.0.1:5173` explicitly.
+**Do not use `localhost`** in the browser in these cases; use `http://127.0.0.1:5174` explicitly.
 
 ---
 
@@ -124,7 +125,7 @@ npx vite dev --host 127.0.0.1 --port 5174
 
 ## 📜 AGPLv3 + Commercial License
 
-This entire repository (including the core engine and `/portal`) is open-source and natively governed by the **GNU AGPLv3 License**. 
+This entire repository, including the Core engine and Simulacrum, is open-source and natively governed by the **GNU AGPLv3 License**.
 If you operate Lineum as a network service (SaaS) and modify the codebase, you must offer the source code of your running version to the users of your service. 
 
 If you wish to operate Lineum in a closed-source ecosystem or cannot comply with the AGPLv3 requirements, a **Commercial License / Exception** is available from the copyright holder.
@@ -133,4 +134,4 @@ Contact for commercial licensing: TODO_CONTACT
 
 ### 🛡️ Trademarks
 "Lineum™" and "Lina™" are trademarks of Tomáš Tříska.
-Explicit permission is granted to contributors and users of the AGPLv3 Core Engine to use the "Lineum" and "Lina" names in connection with the project, including the Portal and Lab interfaces, as long as such use is non-commercial (in accordance with the Codex) and accurately refers to this original repository.
+Explicit permission is granted to contributors and users of the AGPLv3 Core Engine to use the "Lineum" and "Lina" names in connection with this project and its Lab interface, as long as such use is non-commercial (in accordance with the Codex) and accurately refers to this original repository.

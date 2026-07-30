@@ -5,9 +5,29 @@ from typing import Dict, Any
 
 try:
     import torch
-    USE_PYTORCH = torch.cuda.is_available() or os.environ.get("LINEUM_USE_PYTORCH", "0") == "1"
 except ImportError:
-    USE_PYTORCH = False
+    torch = None
+
+
+TORCH_AVAILABLE = torch is not None
+DEVICE_MODES = frozenset({"numpy", "torch-cpu", "cuda"})
+_configured_device_mode = os.environ.get("LINEUM_DEVICE", "").strip().lower()
+USE_PYTORCH = TORCH_AVAILABLE and (
+    _configured_device_mode in {"torch-cpu", "cuda"}
+    or (
+        not _configured_device_mode
+        and os.environ.get("LINEUM_USE_PYTORCH", "0") == "1"
+    )
+)
+
+
+@dataclass(frozen=True)
+class CudaCompatibility:
+    available: bool
+    compatible: bool
+    device_architecture: str | None
+    compiled_architectures: tuple[str, ...]
+    reason: str
 
 class ExecutionPolicy:
     """
@@ -15,39 +35,138 @@ class ExecutionPolicy:
     All execution paths (CLI, API, Exploratory) must consult this layer.
     """
     _device = None
+    _backend = None
+    _requested_mode = None
+    _selection_reason = None
     _deterministic_mode = False
     _is_canonical_run = False
-    
+
     @classmethod
-    def init_core_determinism(cls, enforce_canonical=True, seed=42):
+    def _resolve_device_mode(cls, device_mode=None):
+        raw_mode = device_mode
+        if raw_mode is None:
+            raw_mode = os.environ.get("LINEUM_DEVICE")
+        if raw_mode is None or not str(raw_mode).strip():
+            legacy_pytorch = os.environ.get("LINEUM_USE_PYTORCH", "0") == "1"
+            raw_mode = "torch-cpu" if legacy_pytorch or USE_PYTORCH else "numpy"
+        mode = str(raw_mode).strip().lower()
+        if mode not in DEVICE_MODES:
+            valid = ", ".join(sorted(DEVICE_MODES))
+            raise ValueError(f"LINEUM_DEVICE must be one of: {valid}")
+        return mode
+
+    @classmethod
+    def cuda_compatibility(cls):
+        if not TORCH_AVAILABLE:
+            return CudaCompatibility(
+                available=False,
+                compatible=False,
+                device_architecture=None,
+                compiled_architectures=(),
+                reason="PyTorch is not installed.",
+            )
+        if not torch.cuda.is_available():
+            return CudaCompatibility(
+                available=False,
+                compatible=False,
+                device_architecture=None,
+                compiled_architectures=(),
+                reason="CUDA is not available to PyTorch.",
+            )
+        try:
+            major, minor = torch.cuda.get_device_capability()
+            device_architecture = f"sm_{major}{minor}"
+            compiled_architectures = tuple(torch.cuda.get_arch_list())
+        except (AssertionError, RuntimeError) as exc:
+            return CudaCompatibility(
+                available=True,
+                compatible=False,
+                device_architecture=None,
+                compiled_architectures=(),
+                reason=f"CUDA compatibility could not be verified: {exc}",
+            )
+        compatible = device_architecture in compiled_architectures
+        reason = (
+            "CUDA device architecture is supported by this PyTorch build."
+            if compatible
+            else (
+                f"CUDA device architecture {device_architecture} is not present in "
+                f"this PyTorch build ({', '.join(compiled_architectures) or 'none'})."
+            )
+        )
+        return CudaCompatibility(
+            available=True,
+            compatible=compatible,
+            device_architecture=device_architecture,
+            compiled_architectures=compiled_architectures,
+            reason=reason,
+        )
+
+    @classmethod
+    def _select_device(cls, requested_mode, enforce_canonical):
+        cls._requested_mode = requested_mode
+        cls._selection_reason = None
+        if requested_mode == "numpy":
+            cls._backend = "numpy"
+            cls._device = None
+            return
+        if not TORCH_AVAILABLE:
+            raise RuntimeError(
+                f"LINEUM_DEVICE={requested_mode} requires an installed PyTorch build."
+            )
+        cls._backend = "pytorch"
+        if enforce_canonical:
+            cls._device = torch.device("cpu")
+            if requested_mode == "cuda":
+                cls._selection_reason = (
+                    "Canonical audit requires the deterministic CPU pipeline; "
+                    "the explicit CUDA request was not used."
+                )
+            return
+        if requested_mode == "torch-cpu":
+            cls._device = torch.device("cpu")
+            return
+        compatibility = cls.cuda_compatibility()
+        if not compatibility.compatible:
+            raise RuntimeError(compatibility.reason)
+        cls._device = torch.device("cuda")
+
+    @classmethod
+    def init_core_determinism(
+        cls,
+        enforce_canonical=True,
+        seed=42,
+        device_mode=None,
+    ):
         cls._is_canonical_run = enforce_canonical
         cls._deterministic_mode = True
-        
+        requested_mode = cls._resolve_device_mode(device_mode)
+        cls._select_device(requested_mode, enforce_canonical)
+
         # Lock seeds
-        if USE_PYTORCH:
+        if cls._backend == "pytorch":
             torch.manual_seed(seed)
-            if torch.cuda.is_available():
+            if cls._device.type == "cuda":
                 torch.cuda.manual_seed_all(seed)
             torch.use_deterministic_algorithms(True, warn_only=True)
-            
+
             # OS/environment level determinism
             os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
-            
+
         np.random.seed(seed)
         np.random.RandomState(seed) # Explicit initialization fallback
-        
-        if enforce_canonical or not (USE_PYTORCH and torch.cuda.is_available()):
-            cls._device = torch.device('cpu') if USE_PYTORCH else None
-        else:
-            cls._device = torch.device('cuda')
-            
+
     @classmethod
     def get_device(cls):
-        if cls._device is None:
-            # Fallback for uninitialized (exploratory)
-            if USE_PYTORCH:
-                cls._device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+        if cls._backend is None:
+            requested_mode = cls._resolve_device_mode()
+            cls._select_device(requested_mode, cls._is_canonical_run)
         return cls._device
+
+    @classmethod
+    def uses_pytorch(cls):
+        cls.get_device()
+        return cls._backend == "pytorch"
 
     @classmethod
     def get_metadata(cls):
@@ -55,21 +174,29 @@ class ExecutionPolicy:
         device_name = "CPU"
         if d is not None and d.type == 'cuda':
             device_name = torch.cuda.get_device_name(d)
-            
-        cuda_avail = USE_PYTORCH and torch.cuda.is_available()
-        
-        reason = None
-        if cls._is_canonical_run and cuda_avail and d.type == 'cpu':
-            reason = "Canonical audit strictly requires CPU pipeline for bitwise cross-hardware determinism. CUDA is disabled."
-            
+        cuda_available = TORCH_AVAILABLE and torch.cuda.is_available()
+        inspect_cuda = cls._requested_mode == "cuda" or (
+            d is not None and d.type == "cuda"
+        )
+        cuda_status = cls.cuda_compatibility() if inspect_cuda else None
+
         return {
             "execution_device": d.type if d else "numpy",
+            "execution_backend": cls._backend,
+            "requested_device_mode": cls._requested_mode,
             "deterministic_mode": cls._deterministic_mode,
             "canonical_audit_allowed_on_cuda": False,
-            "cuda_available": cuda_avail,
+            "cuda_available": cuda_available,
+            "cuda_compatible": cuda_status.compatible if cuda_status else None,
+            "cuda_device_architecture": (
+                cuda_status.device_architecture if cuda_status else None
+            ),
+            "cuda_compiled_architectures": (
+                list(cuda_status.compiled_architectures) if cuda_status else []
+            ),
             "device_name": device_name,
             "enforced_canonical": cls._is_canonical_run,
-            "reason": reason
+            "reason": cls._selection_reason,
         }
 
 @dataclass(frozen=True)
@@ -636,11 +763,11 @@ def step_core(state: Dict[str, Any], cfg: CoreConfig = CoreConfig()) -> Dict[str
     """
     The Single Source of Truth for Lineum Canonical Eq-4' Physics.
     Evaluates the continuous topological math across the discretized ROM (\\kappa) and RAM (\\phi).
-    Uses GPU acceleration if available.
+    Uses the explicit execution policy; CUDA is never selected implicitly.
     """
     assert "psi" in state and "phi" in state and "kappa" in state, "State must contain psi, phi, and kappa."
     
-    if USE_PYTORCH:
+    if ExecutionPolicy.uses_pytorch():
         return _step_pytorch(state, cfg)
             
     return _step_numpy(state, cfg)

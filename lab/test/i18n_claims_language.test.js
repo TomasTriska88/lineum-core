@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import claimsData from '../src/lib/data/claims.json';
+import claimsData from '../../lineum_core/data/claims.json';
 
 describe('Claims Metadata Language Integrity', () => {
     // Regex matching specific Czech diacritics to strictly forbid Czech language artifacts

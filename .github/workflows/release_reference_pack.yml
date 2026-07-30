@@ -27,7 +27,30 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest pytest-asyncio
+          pip install -r requirements-dev.txt pytest-asyncio
+
+      - name: Prepare installable Lineum Core wheel
+        id: prepare_library
+        run: |
+          python -m build --wheel
+          WHEEL_FILE=$(ls dist/lineum_core-*.whl | head -n 1)
+          if [ -z "$WHEEL_FILE" ]; then
+            echo "Error: Lineum Core wheel was not generated."
+            exit 1
+          fi
+          PACKAGE_VERSION=$(python -c 'import lineum_core; print(lineum_core.__version__)')
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            TAG_NAME=${GITHUB_REF#refs/tags/}
+            if [ "$TAG_NAME" != "v${PACKAGE_VERSION}" ]; then
+              echo "Error: release tag ${TAG_NAME} does not match package version v${PACKAGE_VERSION}."
+              exit 1
+            fi
+          fi
+          python -m pip install --force-reinstall --no-deps "$WHEEL_FILE"
+          cd /tmp
+          python -c 'import lineum_core; print(f"Validated installed Lineum Core {lineum_core.__version__}")'
+          cd "$GITHUB_WORKSPACE"
+          echo "wheel_file=$WHEEL_FILE" >> $GITHUB_OUTPUT
 
       - name: Execute Golden PyTest Gate (Core & Scripts)
         run: |
@@ -42,23 +65,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Frontend Dependencies
+      - name: Install Simulacrum Dependencies
         run: |
-          cd portal && npm install
-          cd ../lab && npm install
+          cd lab && npm install
 
       - name: Install Playwright Browsers
         run: |
-          cd portal && npx playwright install --with-deps chromium
-          cd ../lab && npx playwright install --with-deps chromium
+          cd lab && npx playwright install --with-deps chromium
 
-      - name: Execute UI Suite Gates (Vitest + Playwright)
+      - name: Execute Simulacrum Suite Gates (Vitest + Playwright)
         env:
           PUBLIC_SIMULACRUM_URL: 'http://127.0.0.1:5174'
           PUBLIC_ENABLE_API_SOLUTIONS: 'true'
         run: |
-          cd portal && npm run test && npm run test:e2e
-          cd ../lab && npm run test && npm run test:e2e
+          cd lab && npm run test && npm run test:e2e
 
       - name: Run audit pipeline (Generate canonical run)
         run: |
@@ -109,6 +129,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
+            ${{ steps.prepare_library.outputs.wheel_file }}
             ${{ steps.prepare_assets.outputs.audit_zip }}
             ${{ steps.prepare_assets.outputs.alias_zip }}
         env:
