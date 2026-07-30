@@ -2,8 +2,8 @@
 
 **Status:** active mandatory synthesis companion for all child research under `research/foundations/`
 
-**Version:** 0.1.0  
-**Evidence cutoff:** 2026-07-30
+**Version:** 0.2.0  
+**Evidence cutoff:** 2026-07-31
 
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
 **Recovered root version:** `0.4.14`  
@@ -24,12 +24,16 @@ The project-owner correction on 2026-07-30 is binding:
 
 Consequently, no mechanism may be selected, rejected, ranked, or promoted from the latest child report alone. Every child result must be interpreted against the full source-accounting, localization, transport, boundary, copying, identity, resource, abiogenesis, relativity, and open-variant history below.
 
+The 2026-07-31 whole-programme review further established that bounded Eq-11.1 provenance must not block the stronger current-Core discriminator. The primary numerical lane is recovery and exact replay of the retained P2 package followed, only if recovered, by a preregistered long-horizon centered-only C0 source-off continuation. Eq-11.1, the epsilon cycle, and Relic Foam remain parallel provenance or reconstruction families.
+
 ## 2. Report lineage
 
-The currently active repair branch has the following lineage:
+The active root and repair branches have the following lineage and cross-cutting decision companions:
 
 ```text
 lineum-continuous-source-cosmology-validation.md v0.4.14
+    |
+    +-- lineum-root-programme-cross-branch-priority-review.md v0.1.0
     |
     +-- lineum-core-deterministic-state-transplant-pilot.md v0.2.0
             |
@@ -38,6 +42,10 @@ lineum-continuous-source-cosmology-validation.md v0.4.14
                     +-- lineum-core-active-growth-scaffold-repair-matrix.md v0.8.0
                             |
                             +-- lineum-core-eq11-growth-scaffold-provenance-gate.md v0.9.0
+                                    |
+                                    +-- lineum-eq11-epsilon-relic-foam-provenance-comparison.md v0.1.0
+                                            |
+                                            +-- lineum-eq11-epsilon-relic-foam-whitepaper-claim-correction-map.md v0.1.0
 ```
 
 The versions above are the values recovered at this checkpoint. They are historical coordinates, not permanent assumptions. Re-fetch every file and update this ledger when any version or SHA changes.
@@ -224,7 +232,7 @@ static_recipe_broad_morphology_prior_supported_in_tested_observable;
 static_recipe_runtime_causality_falsified_in_current_implementation
 ```
 
-## 8. Current repair-child evidence
+## 8. Current repair-child and mechanism-provenance evidence
 
 ### 8.1 `mu x kappa` repair matrix
 
@@ -255,17 +263,60 @@ The explicit historical equation survives in prose, but the current active root 
 
 No numerical repair experiment is authorized until a complete baseline law, initializer, integration convention, parameter set, topological observer, far-field observer, and independent reproduction are recovered and pass without post-hoc rescue.
 
+### 8.3 Eq-11.1, epsilon, and Relic-Foam comparison
+
+The versioned three-family comparison established that the mechanisms must remain distinct:
+
+```text
+Eq-11.1:
+    local growth-and-leakage law;
+    no complete finite stock and return ledger recovered;
+    active provenance only.
+
+Epsilon cycle:
+    added environmental stock/circulation candidate;
+    documented local recycling remains net dissipative;
+    shock recovery is not spatial regrowth;
+    dormant reconstruction candidate.
+
+Relic Foam:
+    collapse-generated residual environment state;
+    aging and local node-count re-equilibration reported;
+    true stable re-ignition and infinite reuse negative in the documented qualification;
+    dormant reopenable environment candidate.
+```
+
+The active Core implements none of the three historical families as claimed. The comparison is recorded in:
+
+```text
+research/foundations/lineum-eq11-epsilon-relic-foam-provenance-comparison.md
+commit: 33ae087a27913420e9fabe807db52bf52e32e69c
+```
+
+The associated non-editing whitepaper correction map is:
+
+```text
+research/foundations/lineum-eq11-epsilon-relic-foam-whitepaper-claim-correction-map.md
+commit: c192fa31e43f0ee5a1465bd97d942ce757c1c947
+```
+
+It maps overstrong `canonical`, `validated`, `immortal`, `closed`, `healed`, `re-ignited`, `memory`, particle, and physical-cosmology wording without changing any whitepaper.
+
 ## 9. Open programme branches that must remain visible
 
 | Branch | Current status | Cheapest next discriminator or reopen condition |
 |---|---|---|
+| P2 retained package recovery | `blocked_by_current_execution_access` | recover exact runner, observer, environment, and output through a reliable local repository route; never approximate from prose |
+| C0 long source-off continuation | `primary_numerical_queue_after_P2_recovery` | replay P2 baseline exactly, then extend only the horizon and observation windows |
 | P3 same-state future-history replay | `open` | replay the same detected state under independent future random streams and separate visible-state variance from future-history variance |
 | P4 slow-medium causal ablations | `open` | freeze, reset, shuffle, and delay `phi` and `mu` while holding the fast state fixed; only then test one explicitly evolved `kappa` |
 | explicit resource reservoir | `open` | require a finite stock, debit, transfer, loss, return path, and closed residual before interpreting activity as fuel |
 | robustness and boundary qualification | `open` | extend horizon, refine timestep and grid, separate periodic from open boundaries, and preserve frozen observers |
 | substrate/noise hypotheses | `open` | compare seed, selector, pump, repair-bath, and numerical-null roles without ontological labels |
-| historical `epsilon` closed cycle | `reconstruction_candidate` | recover or independently specify a complete executable cycle and distinguish spatial regrowth from amplitude shock recovery |
-| active Relic Foam/environment | `dormant_reopenable` | preserve prior failed re-ignition and reuse results; require source accounting and intervention-based co-stabilization |
+| Eq-11.1 local growth/leakage | `active_provenance_only` | recover one complete baseline law, initializer, integration convention, observers, output, and verifier |
+| historical `epsilon` cycle | `dormant_reconstruction_candidate` | recover complete equations and resource residual; distinguish amplitude shock recovery from spatial regrowth |
+| active Relic Foam/environment | `dormant_reopenable` | reproduce parent formation, aging, local lesion, re-ignition, repeated-hit fatigue, and environmental co-stabilization with source accounting |
+| Quantum Foam / emergent-mu | `hypothesis_only_and_implementation_conflict` | define equations and reconcile the proposal with explicit active-Core `mu` |
 | dynamic state-responsive scaffold | `untested` | introduce only one declared dynamic degree of freedom and require storage, return, source-off persistence, and ablation |
 | compressed generative controller | `untested_high_target_copying_risk` | require compression, transfer, causal ablation, unseen-target generalization, and comparison with direct target injection |
 | delayed/active/new membrane | `untested` | compare against ST1C passive-field failures with explicit storage and reciprocal return |
@@ -275,40 +326,49 @@ No numerical repair experiment is authorized until a complete baseline law, init
 
 This registry is incomplete by design. Newly recovered historical, conventional, cross-disciplinary, or project-owner variants must be added rather than forced into one of the existing labels.
 
-## 10. Root-programme impact matrix for the current Eq-11.1 lane
+## 10. Root-programme impact matrix for the current mechanism-provenance lane
 
 | Root branch | Relationship | Required handling |
 |---|---|---|
-| source accounting | `constrains` | distinguish active growth from an unbudgeted software pump and record all admitted input |
-| P1/P2 formation and schedules | `constrains` | separate symmetry breaking, dense population activity, smooth norm growth, localized survival, and repair |
-| observer audit | `constrains` | transport or amplitude alone cannot qualify a surviving object |
-| ST1B seam | `unaffected` for provenance; later `depends_on` only for numerical decomposition | do not interpret a reversible split as a physical mould |
-| ST1C passive membrane | `contradicts` any assumption that tested passive current fields already provide a complete reversible scaffold | keep active/delayed/dynamic/new-boundary variants distinct |
-| AB1-C copying | `constrains` | repair cannot be relabelled as copying without parent-specific content controls |
-| AB1-E engineered accounting | `constrains` | inserted life mechanics remain engineering controls, not emergence evidence |
+| source accounting | `constrains` all three mechanism families | distinguish active growth, local recycling, residual redistribution, and physical fuel |
+| P1/P2 formation and schedules | `constrains` | separate symmetry breaking, dense population activity, smooth norm growth, localized survival, environmental assistance, and repair |
+| C0 primary continuation | `unaffected` by provenance and remains higher priority | do not let historical archaeology block an already observed current-Core source-off phenomenon |
+| observer audit | `constrains` | transport, amplitude, node count, local gap closure, and secondary emission cannot qualify an object alone |
+| ST1B seam | `unaffected` for provenance; later `depends_on` only for numerical decomposition | do not interpret a reversible split as a physical mould or environment |
+| ST1C passive membrane | `contradicts` any assumption that tested current passive fields already provide a complete reversible scaffold | keep epsilon new-state and foam history-dependent variants distinct |
+| AB1-C copying | `constrains` | repair or secondary emission cannot be relabelled as copying without parent-specific content controls |
+| AB1-E engineered accounting | `constrains` | use explicit ledgers; inserted life mechanics remain engineering controls, not emergence evidence |
 | deterministic transplant | `observationally_equivalent` only to exact replay | do not infer self-maintenance or identity |
 | static recipe matrix | `supports` the need for runtime causality and `contradicts` a passive provenance-only recipe | require intervention and source-off persistence |
-| `mu x kappa` matrix | `motivates` a causally distinct active process but does not privilege Eq-11.1 globally | preserve all alternative active/scaffold families |
-| P3-P7 and alternative families | `not_yet_compared` | complete cross-program ranking after Eq-11.1 provenance closes or reaches a decisive blocker |
+| `mu x kappa` matrix | `motivates` causally distinct active/environment families but supports none of them | preserve alternatives without inheriting evidence |
+| Eq-11.1 | `active_provenance_only` | no numerical repair execution without a complete baseline receipt |
+| epsilon cycle | `reopens` explicit resource architecture | distinguish local circulation from verified conservation and shock recovery from regrowth |
+| Relic Foam | `reopens` a residual environment state | distinguish node-count re-equilibration, transient emission, fatigue, and transport shaping |
+| Quantum Foam | `not_same_mechanism` | preserve as a separate hypothesis with active-implementation conflict |
+| P3-P7 and alternative families | `not_yet_numerically_compared` | retain full registry and dependency order |
 
 ## 11. Immediate decision rule
 
-The next research action is not to forget Eq-11.1, nor to let Eq-11.1 dominate the programme.
+The current decision order is:
 
-Proceed in this order:
+1. preserve the P2/C0 continuation as the primary numerical programme;
+2. do not approximate the missing P2 package from prose while reliable local repository execution is unavailable;
+3. preserve Eq-11.1 as an active provenance-only local-law candidate;
+4. preserve epsilon as a dormant explicit-resource reconstruction candidate;
+5. preserve Relic Foam as a dormant residual-environment candidate with documented aging, transient emission, and fatigue qualifications;
+6. preserve Quantum Foam separately as hypothesis-only;
+7. use the completed whitepaper claim-correction map for later editorial review, but do not edit canonical text until the promotion gate is opened;
+8. authorize a future numerical mechanism experiment only when its prerequisite package is complete and its protocol discriminates across the combined programme.
 
-1. preserve Eq-11.1 as an active provenance-only child lane;
-2. complete a bounded retrieval of its documented phases and executable evidence;
-3. simultaneously maintain the full open-branch registry in this ledger;
-4. when the provenance gate closes, propagate its local verdict into this root impact matrix;
-5. re-rank Eq-11.1, `epsilon`, active foam, dynamic scaffold, generative controller, P3, P4, explicit reservoir, robustness, and substrate/noise branches at the whole-programme level;
-6. authorize the next numerical experiment only when its protocol discriminates among more than the latest local metaphor and does not bypass inherited gates.
+The superseded v0.1.0 ordering that placed bounded Eq-11.1 retrieval before whole-programme re-ranking remains visible in Git history. Version 0.2.0 does not erase that decision; it records why the programme order changed.
 
 ## 12. Prohibited interpretations
 
 This continuity ledger does not validate any equation, particle, membrane, fuel, identity, heredity, life process, cosmology, or physical correspondence.
 
 It validates only the research hierarchy and preserves the decision constraints already recorded by the root and child reports. Numerical and physical claims retain the evidence status assigned by their original reproducible programmes.
+
+The three-family provenance comparison and editorial map do not validate their source-whitepaper claims. They classify evidence and contradictions only.
 
 ## 13. Continuous ledger
 
@@ -317,4 +377,11 @@ It validates only the research hierarchy and preserves the decision constraints 
 - `lineage reconstruction`: connected the root report to deterministic transplant, static-recipe/live-state, active-growth/scaffold, and Eq-11.1 provenance reports.
 - `inherited evidence synthesis`: preserved source accounting, P1/P2, observer limitations, ST1B, ST1C, AB1-C, AB1-E, transplant, static-recipe, `mu x kappa`, and Eq-11.1 constraints.
 - `open registry`: retained P3-P7, `epsilon`, foam, dynamic scaffold, controller, new membrane, RNA-like copying, generic-particle, and physical-universe branches.
-- `decision correction`: limited Eq-11.1 priority to its child subprogramme and required a whole-programme re-ranking before the next mechanism experiment.
+- `2026-07-30 decision correction`: limited Eq-11.1 priority to its child subprogramme and required a whole-programme re-ranking before the next mechanism experiment.
+- `2026-07-31 whole-programme re-ranking`: selected retained P2 recovery and long C0 source-off continuation as the primary numerical queue; moved Eq-11.1 to a parallel bounded provenance queue.
+- `P2 execution deferral`: preserved the exact Codex recovery brief but recorded that current execution access is unavailable; prohibited approximate reconstruction.
+- `three-family mechanism separation`: commit `33ae087a27913420e9fabe807db52bf52e32e69c` separated Eq-11.1 local growth/leakage, epsilon explicit circulation, Relic Foam residual environment, and Quantum Foam speculation.
+- `three-family evidence verdict`: no family is authorized for numerical repair; epsilon shock recovery is not spatial regrowth; foam local healing is not content reconstruction; foam true re-ignition and infinite reuse are negative in the documented qualification.
+- `whitepaper claim-correction map`: commit `c192fa31e43f0ee5a1465bd97d942ce757c1c947` mapped overstrong and contradictory wording without changing source whitepapers.
+- `external analogy audit`: driven dissipative solitons and metastable physical foams were used only as causal-structure comparisons, never as validation of Lineum or nature claims.
+- `operational limitation`: cross-repository connector searches were blocked by upstream errors and ClickUp was rate-limited; neither absence nor task state was inferred.
