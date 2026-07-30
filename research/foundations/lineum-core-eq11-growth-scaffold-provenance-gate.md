@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.8.0  
+**Version:** 0.9.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -71,14 +71,16 @@ The changed-file evidence is documentation- and search-heavy. It includes reposi
 
 No Eq-11.1 survivor/reproduction solver has been identified in the commit’s recovered changed-file evidence.
 
+A committed mention of a local `.scratch/` path is classified only as `unversioned_local_reference`. It does not imply that the path should be visible in GitHub or that its absence is evidence.
+
 ### 5.2 Exact-path checks
 
-Direct fetches at the cited commit returned `404 Not Found` for:
+Direct fetches at the cited commit returned `404 Not Found` for the repository-visible paths:
 
 - `eval_closed_system_stress.py`;
 - `scripts/eval_closed_system_stress.py`.
 
-These results are classified as `not_located_at_tested_paths`, not proof that no relevant code exists anywhere in the commit or ancestry.
+These results are classified as `not_located_at_tested_repository_paths`, not proof that no relevant code existed locally, under another name, or in an intermediate commit.
 
 ### 5.3 Current classification of `4b08ab1`
 
@@ -117,9 +119,11 @@ A stale code-search hit for `c_w` in `lineum.py` therefore does not establish th
 The active state was re-read before continuing:
 
 - target repository and branch: `TomasTriska88/lineum-core`, `develop`;
-- root router blob: `5568c13966b501de68297a7856edfb7ef746c890`;
+- root router blob: `2999e8a88cce742685e792eb37fe0039966655bb`;
 - Core rules blob: `cb1bb75d1266eb403bf522086b9286113e88bc13`;
 - repository-boundary blob: `05b805c16c68b52c8618c564f9155e9cef913254`;
+- scratch workflow blob after owner correction: `b4762c7ef6f63e29b9598dd18f78d9810f432d33`;
+- continuous-reporting protocol blob after owner correction: `0724c61c38bf0f5f8c440d18d95bf80d410508af`;
 - the Core Codex path is a relocation and scope notice, while the canonical operational Codex remains in `lineum-dynamics/docs/LINEUM_CODEX_v1.md`;
 - ClickUp task `869ebyvpb` remains `in progress` with high priority under `Research & Engineering → Engine R&D → Core Simulations`.
 
@@ -149,7 +153,7 @@ Classification: `strong_prose_claim_without_recovered_executable_receipt`.
 
 The document separately claims indefinite vortex-core preservation with approximately `Max Psi ≈ 1.87` and `Core Psi ≈ 0.00019`. Elsewhere in the recorded reconstruction history, a nominal topological node decays into a scalar puddle and no tested open-vacuum frontier preserves both topology and a quiet far field.
 
-Classification: `direct_internal_conflict_requiring_commit_and_runner separation`.
+Classification: `direct_internal_conflict_requiring_commit_and_runner_separation`.
 
 #### Claim family D — pair and multi-body binding
 
@@ -248,42 +252,57 @@ This broad comparison is useful for confirming branch ancestry and large reposit
 
 Classification: `ancestry_confirmed_but_file_provenance_incomplete`.
 
-### 5.10 Exact named-script receipt audit
+### 5.10 Exact named-script receipt audit — corrected methodology
 
 The current equation-history whitepaper explicitly names two Eq-11 manipulation scripts:
 
 - `eval_eq11_flow_redistribution.py`;
 - `eval_eq11_pair_overlap.py`.
 
-The earlier provenance trail also names `eval_closed_system_stress.py` as a candidate stress/reconstruction receipt. A symmetric exact-path audit tested each filename at:
+The earlier provenance trail also names `eval_closed_system_stress.py` as a candidate stress/reconstruction receipt.
+
+Only repository-visible locations are valid targets for GitHub provenance checks. The corrected symmetric audit therefore tests each filename at:
 
 - repository root;
-- `scripts/`;
-- `.scratch/`.
+- `scripts/`.
 
-Each path was tested against both:
+Each repository-visible path was tested against both:
 
 - historical source commit `4b08ab1ebac1beb287c5ecd7f74803e530e7e7ad`;
 - current branch `develop` at the evidence cutoff.
 
-| Named artifact | Root at `4b08ab1` | `scripts/` at `4b08ab1` | `.scratch/` at `4b08ab1` | Root on `develop` | `scripts/` on `develop` | `.scratch/` on `develop` | Current classification |
-|---|---:|---:|---:|---:|---:|---:|---|
-| `eval_closed_system_stress.py` | 404 | 404 | 404 | 404 | 404 | 404 | `named_in_provenance_but_not_located_at_18_cell_audit_subset` |
-| `eval_eq11_flow_redistribution.py` | 404 | 404 | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_18_cell_audit_subset` |
-| `eval_eq11_pair_overlap.py` | 404 | 404 | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_18_cell_audit_subset` |
+| Named artifact | Root at `4b08ab1` | `scripts/` at `4b08ab1` | Root on `develop` | `scripts/` on `develop` | Current classification |
+|---|---:|---:|---:|---:|---|
+| `eval_closed_system_stress.py` | 404 | 404 | 404 | 404 | `named_in_provenance_but_not_located_at_tested_repository_paths` |
+| `eval_eq11_flow_redistribution.py` | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_tested_repository_paths` |
+| `eval_eq11_pair_overlap.py` | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_tested_repository_paths` |
 
-Receipt totals:
+Valid receipt totals:
 
 ```text
 named artifacts: 3
 refs per artifact: 2
-paths per ref: 3
-exact fetches: 18
+repository-visible paths per ref: 2
+valid exact fetches: 12
 located files: 0
-404 responses: 18
+valid 404 responses: 12
 ```
 
-This result establishes only that none of the three named files is versioned at the tested exact paths in the cited bulk documentation commit or current `develop`.
+#### Methodological correction to version 0.8.0
+
+Version 0.8.0 incorrectly treated `.scratch/` as a third repository path and counted six GitHub fetch attempts against it. The project owner corrected the model: `.scratch/` is a temporary local Codex workspace, ignored by Git and not expected to be visible in the repository or connector.
+
+Those six attempts are now classified as:
+
+```text
+methodologically_invalid_repository_queries
+```
+
+They are excluded from the receipt matrix and all totals. Their expected `404` responses carry no evidence about whether a local scratch script existed, whether it ran, or what it contained.
+
+A committed document that mentions a `.scratch/` filename establishes only an `unversioned_local_reference`. It does not create a recoverable repository path and must never be used as a provenance lookup target.
+
+The corrected result establishes only that none of the three named files is versioned at the tested repository-visible paths in the cited bulk documentation commit or current `develop`.
 
 It does **not** establish that:
 
@@ -293,19 +312,17 @@ It does **not** establish that:
 - prose values are necessarily false;
 - the equations cannot be reconstructed independently.
 
-It does establish that the present whitepaper references are not sufficient executable receipts. Until a renamed or intermediate artifact is recovered, claims depending on these scripts remain `unreproduced_prose_claims` rather than validated results.
+It does establish that the present whitepaper references are not sufficient executable receipts. Until a renamed or intermediate committed artifact is recovered, claims depending on these scripts remain `unreproduced_prose_claims` rather than validated results.
 
-The `.scratch/` checks are especially important: repository policy treats `.scratch/` as disposable. A local script may have existed there and later vanished. Such a possibility preserves historical uncertainty but cannot satisfy permanent reproducibility.
-
-Classification of the exact-path lane:
+Classification of the corrected exact-path lane:
 
 ```text
-complete_for_three_named_artifacts_and_two_tested_refs;
-negative_for_file_location;
-inconclusive_for_unversioned_or_renamed_history
+complete_for_three_named_artifacts_two_refs_and_two_repository_visible_paths;
+negative_for_location_at_those_paths;
+inconclusive_for_unversioned_local_or_renamed_history
 ```
 
-The next safe discriminator is not parameter tuning. It is recovery of additional filenames, output names, immutable commit SHAs, or code fragments from committed documentation/search artifacts and intermediate commit patches.
+The next safe discriminator is not parameter tuning. It is recovery of additional committed filenames, output names, immutable commit SHAs, or embedded code fragments from documentation and intermediate commit patches.
 
 ## 6. Required provenance matrix
 
@@ -313,24 +330,25 @@ For every discovered Eq-11 or Eq-11.1 artifact, record:
 
 | Field | Required value |
 |---|---|
-| path / commit | exact immutable location |
+| path / commit | exact immutable repository location, or `unversioned_local_reference` when only a local filename is mentioned |
 | equation variant | Eq-11, Eq-11.1, later modification, or sandbox reduction |
 | status | canonical, candidate, historical, experimental, deprecated, contradicted, or unreproducible |
 | integration | spatial stencil/spectral operator, `dx`, `dt`, boundary conditions, update order |
 | parameters | every coefficient and initial field value |
 | initializer | exact amplitude, phase winding, centering, grid and domain |
 | observer | survival, topology, far-field quietness and failure thresholds |
-| evidence | script, test, output artifact, prose only, or missing |
+| evidence | committed script, test, output artifact, prose only, unversioned local reference, or missing |
 | known failure | decay, boiling, fragmentation, numerical reset, boundary artefact, or unknown |
 
 ### 6.1 Initial populated artifact matrix
 
 | Artifact / claim family | Exact evidence recovered | Equation / algorithm | Parameters and initializer | Observer and output | Status | Reopen trigger |
 |---|---|---|---|---|---|---|
-| `eval_closed_system_stress.py` | filename in provenance; 6 exact path/ref checks all 404 | not recovered | not recovered | not recovered | `unreproduced_named_artifact` | recover renamed/deleted file, immutable patch, or complete embedded code |
-| `eval_eq11_flow_redistribution.py` | filename in current whitepaper; 6 exact path/ref checks all 404 | prose describes negative flow divergence redistributed into imaginary phase rotation | coefficients, grid, timestep, seed and initializer not recovered | prose later reports generic-isolation failure and `+300%` defect density | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both engineered success and generic-isolation failure |
-| `eval_eq11_pair_overlap.py` | filename in current whitepaper; 6 exact path/ref checks all 404 | prose describes super-linear `Phi` coupling weighted by `|Psi|^4` in overlap regions | coefficients, grid, timestep, seed and initializer not recovered | prose later reports `0%` deviation under generic random thermal isolation | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both forced-overlap success and generic-isolation null result |
+| `eval_closed_system_stress.py` | filename in provenance; 4 valid repository path/ref checks all 404 | not recovered | not recovered | not recovered | `unreproduced_named_artifact` | recover renamed/deleted committed file, immutable patch, or complete embedded code |
+| `eval_eq11_flow_redistribution.py` | filename in current whitepaper; 4 valid repository path/ref checks all 404 | prose describes negative flow divergence redistributed into imaginary phase rotation | coefficients, grid, timestep, seed and initializer not recovered | prose later reports generic-isolation failure and `+300%` defect density | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both engineered success and generic-isolation failure |
+| `eval_eq11_pair_overlap.py` | filename in current whitepaper; 4 valid repository path/ref checks all 404 | prose describes super-linear `Phi` coupling weighted by `|Psi|^4` in overlap regions | coefficients, grid, timestep, seed and initializer not recovered | prose later reports `0%` deviation under generic random thermal isolation | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both forced-overlap success and generic-isolation null result |
 | Eq-11.1 bulk claim bundle in `4b08ab1` | complete documentation patch recovered | explicit Eq-11.1 law plus multiple later assisted variants | incomplete and internally mixed | many scalar, topology, binding and limit values in prose | `bulk_retrospective_documentation_without_executable_chain` | split into claim-specific receipts with exact code and outputs |
+| prior `.scratch/` GitHub lookup lane | six connector attempts recorded in report history | not applicable | not applicable | six expected 404 responses | `methodologically_invalid_and_excluded` | never reopen as a repository lookup; only independently committed evidence can replace it |
 
 ## 7. Hard preregistered gate
 
@@ -366,8 +384,8 @@ Repository `todo.md` files are historical evidence only. They may help reconstru
 
 Before any implementation, the next retrieval pass is frozen as follows:
 
-1. extract additional output filenames, experiment labels (`EXP24`–`EXP39`, Phase 15–21), immutable SHAs, and code fragments from the current whitepaper, `4b08ab1` patch, and committed search artifacts;
-2. test every newly recovered exact path at its associated commit and current `develop`, preserving every 404 and every located file;
+1. extract additional committed output filenames, experiment labels (`EXP24`–`EXP39`, Phase 15–21), immutable SHAs, and code fragments from the current whitepaper, `4b08ab1` patch, and committed search artifacts;
+2. test every newly recovered **repository-visible** exact path at its associated commit and current `develop`, preserving every valid 404 and every located file; never query `.scratch/` through GitHub or count its absence;
 3. inspect located outputs for embedded parameters, command lines, source hashes, seeds, grids, timesteps, observers, and parent script names;
 4. trace later Phase 15–21 reconstruction separately from the original bulk documentation payload;
 5. classify every artifact in the provenance matrix before selecting an executable candidate;
@@ -386,5 +404,7 @@ Before any implementation, the next retrieval pass is frozen as follows:
 - `search-index limitation`: exact phrase and commit searches failed to recover known Eq-11.1 provenance, and nominal recent-commit search stopped before known later history; immutable fetches and branch comparisons now take precedence.
 - `source-payload audit`: established that `4b08ab1` introduced most Eq-11 and Eq-11.1 positive, negative, intrinsic, assisted, and N=2-limit claims together in a bulk documentation patch without a recovered executable chain.
 - `broad-compare audit`: confirmed 227-commit ancestry from `4b08ab1` to `develop` while recording that the large Portal migration and response limits make the broad file inventory insufficient for exact script provenance.
-- `named-script audit`: extracted three explicit or provenance-named scripts and completed 18 exact path/ref fetches; all returned 404, so none is currently a recoverable executable receipt at the tested paths.
-- `artifact-matrix initialization`: populated the first permanent matrix rows, preserving both the missing receipts and the negative prose results associated with the two engineered stabilization mechanisms.
+- `named-script audit v0.8.0`: extracted three explicit or provenance-named scripts and mistakenly counted six `.scratch/` connector attempts among 18 path/ref fetches.
+- `owner scratch-boundary correction`: the owner clarified that `.scratch/` is a temporary local Codex directory that is never a repository evidence source and is not expected to be visible through GitHub.
+- `scratch-method correction`: updated `.agent/workflows/scratch.md` and `.agent/continuous-research-reporting.md`; reclassified the six scratch connector attempts as methodologically invalid, excluded them from evidence, and corrected the valid repository-path total to 12 checks with 12 404 responses.
+- `artifact-matrix correction`: updated the permanent matrix to distinguish repository absence, unversioned local references, and invalid scratch queries without hiding the earlier methodological error.
