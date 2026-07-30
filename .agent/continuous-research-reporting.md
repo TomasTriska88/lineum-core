@@ -32,6 +32,19 @@ After executing the step, and before beginning another consequential step, updat
 
 Any project-owner hypothesis, analogy, correction, architectural constraint, or response at a negative-result gate must be recorded in the active report before it is translated into code or a new experiment. Preserve the owner's idea distinctly from the agent's formalization and from experimental evidence.
 
+## Whitepaper handoff
+
+When the project owner designates an active report as the future source for whitepaper updates, record that purpose in the report immediately. Maintain a live whitepaper handoff section that separates:
+
+- validated statements eligible for canonical wording;
+- bounded negative results that constrain or supersede prior claims;
+- hypotheses and analogies that must remain explicitly non-canonical;
+- implementation facts that describe software behavior but not physical reality;
+- unresolved contradictions, limitations, evidence cutoffs, and required citations;
+- exact whitepaper sections or claims likely to be affected, once repository retrieval identifies them.
+
+Do not update a whitepaper from chat memory, a script, or a final summary while the designated report is incomplete. On completion, derive every whitepaper change from the report's evidence and promotion table, preserve scope and uncertainty, and never promote a research hypothesis merely because the report is finished.
+
 ## No deferred batching
 
 Do not run a sequence of consequential experiments and plan to document them afterward. Do not allow code, chat, `.scratch/`, terminal history, or an external task system to become temporarily more authoritative than the active report.
