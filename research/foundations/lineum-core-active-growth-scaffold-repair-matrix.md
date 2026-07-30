@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active preregistered research report; repository retrieval pending; no experimental result yet
+**Status:** active preregistered research report; repository retrieval pending; no experimental result yet; designated future whitepaper source
 
-**Version:** 0.1.0
+**Version:** 0.1.1
 
 **Evidence cutoff:** 2026-07-30
 
@@ -11,6 +11,20 @@
 **Predecessor:** `Static Baseline and Live-State Transplant Matrix in Lineum Core`, which found that a static initializer alone is not an active repair or hereditary mechanism in the tested Core path.
 
 **Current confidence:** High that the prior static initializer does not remain causally active after initialization; no confidence yet that the combined growth-plus-scaffold candidate repairs a damaged pattern, because the exact Core-native mechanisms and frozen intervention have not yet been selected or run.
+
+## Intended downstream use and whitepaper handoff
+
+The project owner designated this report as the evidence source for updating the relevant Lineum whitepapers after this research lane is complete.
+
+Completion of the report does not automatically make every idea canonical. The final handoff must classify every material statement as one of:
+
+- `eligible_for_canonical_wording`: independently supported within a clearly stated domain and ready to update or constrain a whitepaper claim;
+- `implementation_fact_only`: verified behavior of the current software that must not be presented as a fact about nature;
+- `bounded_negative_result`: evidence that rejects or constrains an exact mechanism under declared conditions without claiming universal impossibility;
+- `hypothesis_only`: an owner or agent candidate that remains speculative or insufficiently tested;
+- `unresolved`: contradictory, underpowered, environment-limited, or awaiting a discriminator.
+
+As repository retrieval identifies affected documents, this report will maintain a whitepaper impact table containing the exact whitepaper path and section, current claim, evidence relationship, proposed scope-safe change, and any reason the text must not yet be changed. Whitepaper edits must be derived from this completed report rather than from chat memory, scripts, or visual impressions.
 
 ## 1. Owner hypothesis recorded before formalization
 
@@ -159,3 +173,7 @@ Recorded the owner proposal that active transformation and spatial shaping may b
 ### 2026-07-30 — protocol creation
 
 Created this report before repository retrieval or implementation. Preregistered the two-factor `Y × S` matrix, damage stage, scaffold-removal stage, minimum controls, observables, and outcome interpretation. Exact Core-native mappings remain pending and no result has been generated.
+
+### 2026-07-30 — whitepaper handoff designation
+
+The project owner designated this report as the source for later whitepaper updates after completion. Added an explicit claim-promotion classification and required whitepaper impact table so validated implementation observations, bounded negative results, and remaining hypotheses cannot be merged into one canonical claim.
