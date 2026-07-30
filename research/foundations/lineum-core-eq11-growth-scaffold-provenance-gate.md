@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.5.0  
+**Version:** 0.6.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -125,6 +125,78 @@ The active state was re-read before continuing:
 
 This revalidation changes no scientific result. It confirms that provenance reconstruction remains the authorized next action and that no Eq-11.1 numerical repair run is currently permitted.
 
+### 5.6 Current equation-history whitepaper consistency audit
+
+The current source is `whitepapers/1-core/02-core-equation.md`, blob `64f8341551d5737a6eb4919030bbb85a4b50380c`.
+
+The document is not one coherent Eq-11.1 validation receipt. It layers several scientifically distinct claim families and sometimes presents later limitations beside earlier strong language without resolving their evidentiary status.
+
+#### Claim family A — Eq-11 dimensional scaling
+
+The Version 11 section states that multi-scale sweeps confirmed numerical stability and bounded gradients, then the immediately following destructive audit states that the same minimal equation encounters unavoidable exponential divergence after longer horizons and is barred from canonical promotion.
+
+Classification: `documented_candidate_then_destructive_failure`; the positive and negative claims must not be merged into a generic statement that Eq-11 is stable.
+
+#### Claim family B — Eq-11.1 scalar amplitude bounding
+
+The Version 11.1 section claims that `-lambda Phi² Psi` and the phase-gradient leakage term bound amplitude over long horizons, including strong language about 50,000- to 100,000-step persistence, broad parameter robustness, and no fine-tuning.
+
+This is a scalar-amplitude and global-energy claim. It does not by itself prove preservation of a topological core, repair, heredity, or independence from external scaffolding.
+
+Classification: `strong_prose_claim_without_recovered_executable_receipt`.
+
+#### Claim family C — isolated topological-core survival
+
+The document separately claims indefinite vortex-core preservation with approximately `Max Psi ≈ 1.87` and `Core Psi ≈ 0.00019`. Elsewhere in the recorded reconstruction history, a nominal topological node decays into a scalar puddle and no tested open-vacuum frontier preserves both topology and a quiet far field.
+
+Classification: `direct_internal_conflict_requiring_commit_and_runner separation`.
+
+#### Claim family D — pair and multi-body binding
+
+The document records short-term stationary locks, oscillatory pair states, wakes, phase-locked forcing, static confinement, and rotational backgrounds. It also records that symmetric locks eventually scatter, third-body interference shatters locks, generic ambient backgrounds fail to capture, and the unmodified minimal open-vacuum system fails to spontaneously bind `N >= 3` structures.
+
+Classification: `mixed_intrinsic_and_extrinsic_mechanisms`; pair binding, environmental forcing, confinement, and spontaneous self-assembly must remain separate variants.
+
+#### Claim family E — engineered stabilization principles
+
+Later minimal-isolation tests explicitly classify kinetic-to-phase redistribution and super-linear overlap troughs as failed mechanisms for spontaneous stabilization. Their earlier engineered successes depended on rigid symmetric seeds or forced high-amplitude overlaps.
+
+Classification: `unsupported_under_generic_isolation`; earlier demonstrations cannot be used as evidence of native spontaneous stabilization.
+
+#### Claim family F — closed-energy and scaffold variants
+
+The changelog later introduces a closed-energy thermodynamic cycle as a candidate after unilateral open-vacuum and local-depletion variants failed. Static `kappa` confinement and phase-locked external forcing are also described as viable extrinsic architectures.
+
+Classification: `separate_environment_or_boundary_variants`, not evidence that the unmodified Eq-11.1 law is self-sufficient.
+
+#### Whitepaper-level verdict
+
+The whitepaper is a valuable hypothesis and chronology source, but currently has the provenance status:
+
+```text
+internally_layered_claim_record_with_unresolved_conflicts
+```
+
+It must not be treated as a single validated experiment. Commit archaeology must split at least the following variants before any code is reconstructed:
+
+1. isolated scalar amplitude bound;
+2. isolated topological vortex survival;
+3. open-vacuum pair dynamics;
+4. phase-gradient leakage / bridge suppression;
+5. background-flow or rotational-frame assistance;
+6. static `kappa` confinement;
+7. phase-locked external forcing;
+8. closed-energy thermodynamic circulation;
+9. engineered overlap and flow-warp mechanisms already negative under generic isolation.
+
+No numerical repair experiment is authorized by this audit.
+
+### 5.7 Search-index limitations observed
+
+Repository file search located the current equation-history path only through a broad `equation history` query. Exact searches for `Eq-11.1`, `Near-Threshold Coupling Corridor`, and the explicit operator phrase returned no useful file or commit results despite the known commit `4b08ab1` existing.
+
+Classification: `search_index_incomplete_for_provenance`. Exact commit fetches, changelog phrases, changed-file inspection, and immutable SHAs must take precedence over search absence.
+
 ## 6. Required provenance matrix
 
 For every discovered Eq-11 or Eq-11.1 artifact, record:
@@ -175,7 +247,7 @@ Repository `todo.md` files are historical evidence only. They may help reconstru
 
 Before any implementation, the next retrieval pass is frozen as follows:
 
-1. search commit history using the unique equation operators and historical phrases rather than relying on the label `Eq-11.1` alone;
+1. use changelog dates and unique phrases to locate commits for each separated claim family;
 2. identify commits that introduced and later modified Eq-11 and Eq-11.1 wording;
 3. inspect complete changed-file lists for versioned scripts, tests, outputs, parameter manifests, and references to uncommitted `.scratch` paths;
 4. trace the original survivor claim separately from the later Phase 15–21 reconstruction chain;
@@ -191,3 +263,5 @@ Before any implementation, the next retrieval pass is frozen as follows:
 - `task-system correction`: confirmed ClickUp workspace `90121717552` as Lineum Dynamics, created active task `869ebyvpb` in `Research & Engineering → Engine R&D → Core Simulations`, and classified repository `todo.md` files as historical evidence rather than the active backlog.
 - `state revalidation`: re-read the current Core rules, repository boundaries, Codex routing notice, canonical Dynamics Codex, active report, and ClickUp task before resuming provenance archaeology; no scientific result changed and no numerical run was authorized.
 - `next-pass preregistration`: froze a retrieval-first plan using unique operators, exact commit archaeology, explicit separation of original and reconstructed claims, and a prohibition on code synthesis before a complete baseline candidate is recovered.
+- `current-whitepaper consistency audit`: split the equation-history document into distinct scalar, topological, binding, scaffold, forcing, and closed-cycle claim families; recorded direct internal conflicts and negative isolation results; classified the document as a layered claim record rather than a single validation receipt.
+- `search-index limitation`: exact phrase and commit searches failed to recover known Eq-11.1 provenance, so immutable commit fetches and changelog-guided archaeology are now required.
