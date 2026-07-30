@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active preregistered research report; current whitepaper and mechanism retrieval in progress; no experimental result yet; designated future whitepaper source
+**Status:** active preregistered research report; first mechanism and whitepaper retrieval complete; no new experiment run yet; designated future whitepaper source
 
-**Version:** 0.1.2
+**Version:** 0.2.0
 
 **Evidence cutoff:** 2026-07-30
 
@@ -10,7 +10,7 @@
 
 **Predecessor:** `Static Baseline and Live-State Transplant Matrix in Lineum Core`, which found that a static initializer alone is not an active repair or hereditary mechanism in the tested Core path.
 
-**Current confidence:** High that the prior static initializer does not remain causally active after initialization; no confidence yet that the combined growth-plus-scaffold candidate repairs a damaged pattern, because the exact Core-native mechanisms and frozen intervention have not yet been selected or run.
+**Current confidence:** High that the prior static initializer does not remain causally active after initialization; high that the active public solver contains a static `kappa` map and `psi`–`phi`–`mu` feedback but no explicit target-pattern repair controller; medium that several historical and extension mechanisms are scientifically relevant candidates; no confidence yet that any growth-plus-scaffold combination repairs a damaged pattern under a frozen factorial test.
 
 ## Intended downstream use and whitepaper handoff
 
@@ -30,13 +30,11 @@ As repository retrieval identifies affected documents, this report will maintain
 
 The current generated whitepaper map was read from `lab/src/lib/data/whitepaper_map.json` on `develop`, blob SHA `f6dad7c79b1563f796dac36fc50a140fb2a08096`. It supersedes historical paths encountered in older search indexes.
 
-The following current documents are registered for retrieval. Registration means only that their subject could bear on the experiment; every relationship remains `not_yet_compared` until the exact text and implementation evidence are inspected.
-
 | Current whitepaper path | Potential relevance | Current relationship |
 |---|---|---|
-| `whitepapers/1-core/02-core-equation.md` | implemented field roles, update law, `kappa`, `mu`, coupling and boundaries | `not_yet_compared` |
-| `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | foam, memory, transport, re-ignition and composite mechanisms | `not_yet_compared` |
-| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | active attractor or homeostatic candidate | `not_yet_compared` |
+| `whitepapers/1-core/02-core-equation.md` | implemented field roles, update law, `kappa`, `mu`, coupling and boundaries | `implementation_fact_and_variant_provenance_retrieved` |
+| `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | foam, memory, transport, re-ignition and composite mechanisms | `bounded_positive_and_negative_evidence_retrieved` |
+| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | active attractor or homeostatic candidate | `candidate_mechanism_and_limitations_retrieved` |
 | `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | `mu`, persistent medium and emergence candidate | `not_yet_compared` |
 | `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | reservoir and sustained activity analogy or mechanism | `not_yet_compared` |
 | `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | reconstruction, persistence or identity-bearing claims | `not_yet_compared` |
@@ -45,6 +43,69 @@ The following current documents are registered for retrieval. Registration means
 | `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | prior emergence and self-organization claims | `not_yet_compared` |
 
 Other documents remain open for registration if retrieval reveals a material equation, contradiction, or historical variant. The current list is not evidence that all listed documents will require modification.
+
+## Retrieved implementation facts and mechanism families
+
+### Active public Core implementation
+
+The active source inspected is `lineum_core/math.py`, blob SHA `bb877021810691223a0eb960a45493a2e351112a`.
+
+Observed implementation facts:
+
+- `kappa` is supplied as a spatial array and returned unchanged by the NumPy step. It is not dynamically reconstructed by the solver.
+- `kappa` multiplies stochastic linon generation, noise injection, `phi` interaction, `phi`-gradient drift, `psi` diffusion, `phi` accumulation and diffusion, and `mu` growth. It is therefore a broad spatial permeability or activity map, not merely a visual mask.
+- `mu` is always read through the multiplier `1 + mu`, even when `use_mu=False`; the flag controls whether `mu` is updated, not whether an already supplied nonzero `mu` affects drift and interaction.
+- With `use_mu=True`, `mu` accumulates above a dynamic `psi`-energy threshold and decays slowly. This is path reinforcement, not an explicit comparison against a desired target shape.
+- `phi` receives energy through mode coupling or a fallback reaction and then diffuses. The active solver contains no stored target pattern, missing-region detector, or term that directly restores erased values.
+- The default NumPy path includes literal linear dissipation, stochastic generation and noise, diffusion, and optional `mu` reinforcement. A visually returning pattern could therefore result from diffusion, continued forcing, confinement, or amplification rather than genuine repair; the factorial controls must distinguish these.
+
+These are `implementation_fact_only` until a report compares them with physical evidence. They do not establish biological growth, heredity, or self-repair.
+
+### Historical and extension mechanism families
+
+#### Family A — active public feedback plus static `kappa`
+
+- Candidate yeast `Y_A`: active `psi`–`phi` mode coupling, `phi`-gradient drift, stochastic generation, and optional `mu` reinforcement in the current solver.
+- Candidate scaffold `S_A`: a structured static `kappa` map.
+- Status: implemented and cheapest to test, but no prior evidence retrieved yet that it restores a specific damaged organization.
+
+#### Family B — Eq-11 growth/leakage plus geometric closure
+
+The equation-history whitepaper records `tanh`-bounded growth and leakage variants, including extensive persistence and failure audits. It also records that a weak smooth external Gaussian `kappa` well with approximately `0.05` boundary strength failed to contain the active scalar exhaust, and that explicit closure mechanisms were considered mandatory under that tested slice.
+
+- Candidate yeast `Y_B`: Eq-11 active growth balanced by leakage.
+- Candidate scaffold `S_B`: strong `kappa` walls, geometric containment, or another explicit closure.
+- Status: historical/experimental equation family, not the active public NumPy law. The weak-scaffold instance is `unsupported_under_tested_conditions`; stronger and qualitatively different scaffolds remain open.
+
+#### Family C — closed-energy epsilon attractor
+
+The thermodynamic-attractor extension defines an active environmental `epsilon` cycle that supplies growth and returns dissipative losses to the environment. Reported tests show bounded response to amplitude shocks and convergence across randomized starts, but also long-horizon evaporation. The reported node-amputation result says the remaining subset stayed stable; it does not demonstrate regrowth of the removed node.
+
+- Candidate yeast `Y_C`: the active closed-energy `epsilon` metabolic cycle.
+- Candidate scaffold `S_C`: geometric or environmental organization coupled to the cycle.
+- Status: extension mechanism with reported perturbation robustness, not current public Core behavior and not yet independently reproduced in this lane.
+
+#### Family D — Relic Foam as stateful environment
+
+The Lineum Standard Model extension reports that Relic Foam can absorb a raw `phi` heat shock and partially reorganize, modify trajectories, and stabilize a passing high-speed structure. It also reports that structured impacts cause transient secondary emission rather than a stable re-created particle, repeated impacts cause fatigue, and permanent clean trapping was not observed.
+
+- Candidate active factor `Y_D`: a traveling structured excitation or another active impact.
+- Candidate scaffold `S_D`: mature Relic Foam and its ambient `phi` environment.
+- Status: bounded evidence for environmental shaping and co-stabilization; bounded negative evidence against permanent true re-ignition and immortal reusable repair under the recorded parameters.
+
+## Variant ledger after retrieval step 1
+
+| Variant | Yeast factor | Scaffold factor | Implementation status | Evidence status | Cheapest next discriminator |
+|---|---|---|---|---|---|
+| `A_active_mu_kappa` | current `psi`–`phi` feedback with `mu` update enabled | structured static `kappa` | active public implementation | `untested_for_damage_repair` | four-lane matched damage matrix in research harness |
+| `A_active_no_mu_kappa` | current feedback with `mu` frozen/zero | structured static `kappa` | active public implementation | required ablation | compare with `A_active_mu_kappa` |
+| `B_eq11_growth_kappa` | Eq-11 growth/leakage | explicit `kappa` confinement | historical/experimental | weak Gaussian well failed; broader family open | reproduce weak-well negative control before stronger closure |
+| `C_epsilon_scaffold` | closed-energy `epsilon` cycle | geometric/environmental scaffold | extension, not active library | shock recovery reported; missing-part regrowth unproven | node-erasure recovery versus no-`epsilon` and no-scaffold controls |
+| `D_active_foam` | structured active impact | Relic Foam/ambient `phi` | extension experiment | transient emission and co-stabilization supported; true re-ignition and infinite reuse rejected | matched erasure repair rather than impact-only assay |
+| `null_diffusion_only` | no active reinforcement beyond passive diffusion | no structured scaffold | control | `queued` | matched damage horizon |
+| `null_scaffold_mass_shuffled` | matched active factor | shuffled or rotated scaffold with equal total magnitude | control | `queued` | tests spatial information versus total drive |
+
+No variant is yet selected as the final mechanism. The active public `A` family is the smallest first implementation candidate because it can be tested without changing the library, but selection remains pending completion of the registered ontology and `mu` retrieval.
 
 ## 1. Owner hypothesis recorded before formalization
 
@@ -192,7 +253,7 @@ Recorded the owner proposal that active transformation and spatial shaping may b
 
 ### 2026-07-30 — protocol creation
 
-Created this report before repository retrieval or implementation. Preregistered the two-factor `Y × S` matrix, damage stage, scaffold-removal stage, minimum controls, observables, and outcome interpretation. Exact Core-native mappings remain pending and no result has been generated.
+Created this report before repository retrieval or implementation. Preregistered the two-factor `Y × S` matrix, damage stage, scaffold-removal stage, minimum controls, observables, and outcome interpretation. Exact Core-native mappings remained pending and no result was generated.
 
 ### 2026-07-30 — whitepaper handoff designation
 
@@ -200,4 +261,8 @@ The project owner designated this report as the source for later whitepaper upda
 
 ### 2026-07-30 — current whitepaper manifest retrieval
 
-Read the generated current whitepaper map on `develop` and registered nine potentially affected current documents as `not_yet_compared`. Historical extension paths returned by the stale code-search index were not treated as current sources. No whitepaper claim has yet been selected for modification.
+Read the generated current whitepaper map on `develop` and registered nine potentially affected current documents. Historical extension paths returned by the stale code-search index were not treated as current sources.
+
+### 2026-07-30 — mechanism retrieval step 1
+
+Inspected the active public Core NumPy law, the canonical equation-history appendix, the thermodynamic-attractor extension, and the Relic Foam sections of the Lineum Standard Model extension. Registered four scientifically distinct growth/scaffold families and their known failures. No mechanism was promoted and no new simulation was run. The active public `mu × kappa` family remains the cheapest first test, pending the remaining registered retrieval.
