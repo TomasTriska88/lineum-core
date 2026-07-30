@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.4.0  
+**Version:** 0.5.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -112,6 +112,19 @@ It does not execute the explicit Eq-11.1 `alpha tanh(c1 Phi) - gamma - lambda Ph
 
 A stale code-search hit for `c_w` in `lineum.py` therefore does not establish that the current root runner is Eq-11.1. Classification: `active_harness_for_public_step_core`, not an Eq-11.1 reproduction implementation.
 
+### 5.5 Current-state revalidation before the next provenance pass
+
+The active state was re-read before continuing:
+
+- target repository and branch: `TomasTriska88/lineum-core`, `develop`;
+- root router blob: `5568c13966b501de68297a7856edfb7ef746c890`;
+- Core rules blob: `cb1bb75d1266eb403bf522086b9286113e88bc13`;
+- repository-boundary blob: `05b805c16c68b52c8618c564f9155e9cef913254`;
+- the Core Codex path is a relocation and scope notice, while the canonical operational Codex remains in `lineum-dynamics/docs/LINEUM_CODEX_v1.md`;
+- ClickUp task `869ebyvpb` remains `in progress` with high priority under `Research & Engineering → Engine R&D → Core Simulations`.
+
+This revalidation changes no scientific result. It confirms that provenance reconstruction remains the authorized next action and that no Eq-11.1 numerical repair run is currently permitted.
+
 ## 6. Required provenance matrix
 
 For every discovered Eq-11 or Eq-11.1 artifact, record:
@@ -160,13 +173,14 @@ Repository `todo.md` files are historical evidence only. They may help reconstru
 
 ## 10. Next provenance actions
 
-Before any implementation:
+Before any implementation, the next retrieval pass is frozen as follows:
 
-1. identify commits that introduced and later modified Eq-11 and Eq-11.1 wording;
-2. inspect their complete changed-file lists for versioned scripts, tests, outputs, or parameter manifests;
-3. recover any referenced `.scratch` filenames from committed search artifacts while treating absent scratch contents as unavailable evidence;
-4. trace the later Phase 15–21 reconstruction chain separately from the original survivor claim;
-5. populate the provenance matrix before selecting an executable candidate.
+1. search commit history using the unique equation operators and historical phrases rather than relying on the label `Eq-11.1` alone;
+2. identify commits that introduced and later modified Eq-11 and Eq-11.1 wording;
+3. inspect complete changed-file lists for versioned scripts, tests, outputs, parameter manifests, and references to uncommitted `.scratch` paths;
+4. trace the original survivor claim separately from the later Phase 15–21 reconstruction chain;
+5. classify every located artifact in the provenance matrix before selecting an executable candidate;
+6. do not synthesize missing code or tune parameters until the matrix shows one fully specified baseline candidate.
 
 ## 11. Continuous ledger
 
@@ -175,3 +189,5 @@ Before any implementation:
 - `source-commit classification`: inspected changed-file evidence, `found.txt`, `search_out.txt`, and `phase_mismatch_results.txt`; classified the cited commit as documentation/search evidence without a located Eq-11.1 executable or complete numerical chain.
 - `root-runner check`: inspected the active simulation loop and classified `lineum.py` as a harness for public `step_core`, not an implementation of the documented Eq-11.1 growth/leakage law.
 - `task-system correction`: confirmed ClickUp workspace `90121717552` as Lineum Dynamics, created active task `869ebyvpb` in `Research & Engineering → Engine R&D → Core Simulations`, and classified repository `todo.md` files as historical evidence rather than the active backlog.
+- `state revalidation`: re-read the current Core rules, repository boundaries, Codex routing notice, canonical Dynamics Codex, active report, and ClickUp task before resuming provenance archaeology; no scientific result changed and no numerical run was authorized.
+- `next-pass preregistration`: froze a retrieval-first plan using unique operators, exact commit archaeology, explicit separation of original and reconstructed claims, and a prohibition on code synthesis before a complete baseline candidate is recovered.
