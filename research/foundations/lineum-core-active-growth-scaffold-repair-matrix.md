@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active research report; active `mu × kappa` feasibility matrix completed with a reproducible bounded negative result; permanent research runner and regression specification committed; standalone-verifier embedding and supported-environment execution pending
+**Status:** active research report; active `mu × kappa` feasibility matrix completed with a reproducible bounded negative result; permanent research runner and regression specification committed; independent frozen-verifier rerun passed on NumPy 2.3.5; NumPy `<2.0` execution blocked by the available host/runtime
 
-**Version:** 0.6.0
+**Version:** 0.7.0
 
 **Evidence cutoff:** 2026-07-30
 
@@ -10,7 +10,7 @@
 
 **Predecessor:** `Static Baseline and Live-State Transplant Matrix in Lineum Core`, which showed that a static initializer is not an active repair or hereditary mechanism in the tested Core path.
 
-**Current confidence:** High for the isolated deterministic lane relationships and exact repetition of the frozen matrix; medium for equivalence to the inspected active NumPy path; low for portability until execution is repeated inside the repository-supported dependency range. There is no support for interpreting the tested `mu × kappa` implementation as an active repair, hereditary, identity, biological, or physical-universe mechanism.
+**Current confidence:** High for the isolated deterministic lane relationships, exact repeated output, and independent reproduction of all decision-relevant metrics on the available NumPy 2.3.5 host; medium for equivalence to the inspected active NumPy path; low for portability until execution is repeated inside the declared NumPy `<2.0` range. There is no support for interpreting the tested `mu × kappa` implementation as an active repair, hereditary, identity, biological, or physical-universe mechanism.
 
 ## 1. Answer first
 
@@ -65,13 +65,13 @@ On 2026-07-30, after reviewing the bounded negative result and the continuous-re
 
 Operational meaning:
 
-- the agent may choose the order of open mechanism families, the cheapest decisive discriminator, controls, observers, horizons, and implementation strategy;
-- routine mechanism-selection questions do not require an owner interruption when the report contains enough evidence to choose conservatively;
+- the agent may choose the order of open mechanism families, cheapest decisive discriminator, controls, observers, horizons, and implementation strategy;
+- routine mechanism-selection questions do not require an owner interruption when the report contains enough evidence for a conservative choice;
 - negative findings, contradictory evidence, null effects, unstable branches, unsupported analogies, and implementation/documentation conflicts retain equal reporting priority with positive findings;
 - every consequential protocol remains preregistered in this report before execution;
 - thresholds may not be relaxed after results are inspected;
 - failed mechanisms may not be rescued by relabelling, selective parameter reporting, or changing the target observable post hoc;
-- numerical claims require independent sanity checks, unit or scale checks where applicable, toy cases, repeat execution, explicit assumptions, and failure reporting;
+- numerical claims require independent sanity checks, scale checks where applicable, toy cases, repeat execution, explicit assumptions, and failure reporting;
 - public-library placement remains governed by the separate promotion gate;
 - whitepaper promotion remains governed by the evidence classifications below.
 
@@ -105,7 +105,7 @@ No whitepaper is updated from chat memory, scripts, images, or a final conversat
 | `whitepapers/3-ontology/hypotheses/12-ontology-hyp-order-vs-chaos.md` | no support for moral or psychological persistence claims | `hypothesis_only` |
 | `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | existing deprecation remains consistent with the result | `bounded_negative_result_already_recorded` |
 
-No canonical wording is authorized yet. Permanent executable files now exist, but the report still requires an embedded standalone verifier, supported-environment validation, and comparison with distinct mechanism families.
+No canonical wording is authorized yet. Permanent executable files now exist, but the report still requires the complete standalone verifier to be embedded, successful supported-environment execution, and comparison with distinct mechanism families.
 
 ## 6. Retrieved implementation facts
 
@@ -143,16 +143,33 @@ No replacement family has yet produced a preregistered result.
 
 Each lane had a damaged run and a no-damage twin.
 
-## 9. Frozen environment
+## 9. Frozen environment and portability status
 
-- isolated NumPy reproduction of the inspected active path;
+Original and independent-reproduction host:
+
 - Python `3.13.5`;
 - NumPy `2.3.5`;
-- repository-supported NumPy range `<2.0`;
-- deterministic seed `314159`;
+- deterministic NumPy backend;
+- seed `314159`;
 - stochastic generation disabled;
-- `noise_strength=0`;
-- PyTorch, CUDA, full repository CI, and supported-environment execution not tested.
+- `noise_strength=0`.
+
+Declared repository range:
+
+```text
+NumPy < 2.0
+```
+
+Supported-environment attempt on 2026-07-30:
+
+1. inspected the host and found only Python `3.13.5`;
+2. selected Python `3.12` as the compatible isolation target for NumPy `1.26.4` rather than forcing an unsupported build;
+3. attempted `uv python install 3.12`;
+4. the download failed after three retries because the environment could not resolve the GitHub release host (`Temporary failure in name resolution`).
+
+Verdict: `blocked_by_execution_environment`, not passed and not a scientific failure. The NumPy `<2.0` portability question remains open.
+
+PyTorch, CUDA, full repository CI, and commit-scoped package execution remain untested.
 
 ## 10. Frozen geometry
 
@@ -258,7 +275,36 @@ Recovery fraction is measured against each lane’s matched no-damage twin. Valu
 
 `mu` accumulation never improved recovery. The structured map increased local recovery modestly and monotonically with contrast and formation time.
 
-## 15. Collateral and scaffold-removal results
+## 15. Independent frozen-verifier receipt
+
+A second self-contained verifier was reconstructed independently from the inspected NumPy law and the committed research protocol. It was not imported from the committed runner.
+
+Command:
+
+```text
+python verify_mu_kappa_frozen.py
+```
+
+Available-host receipt:
+
+```json
+{
+  "max_abs_mu_effect": 0.00004216379362752265,
+  "max_abs_psi": 0.14159671954731448,
+  "max_kappa_effect": 0.024091442639686052,
+  "min_kappa_effect": 0.011078889497591261,
+  "mu_effects_all_negative": true,
+  "numpy": "2.3.5",
+  "python": "3.13.5",
+  "supportive_cells": []
+}
+```
+
+All decision-relevant values matched the original run exactly. The independent verifier’s whole-JSON hash is not expected to equal the original result hash because its environment metadata and backend label differ; the scientific comparison is made on frozen lane outputs and decision metrics, not metadata bytes.
+
+The complete verifier code still must be embedded in this report before the lane is considered standalone-complete.
+
+## 16. Collateral and scaffold-removal results
 
 Outside-mask NRMSE ranges:
 
@@ -274,20 +320,21 @@ Damage-region energy retention over the 40-step post-removal continuation:
 
 The scaffolded lanes therefore remained more dependent on their former spatial environment. Scaffold removal did not reveal a hidden autonomous `mu`-maintained reconstruction.
 
-## 16. Stability, sanity, and permanent-capture status
+## 17. Stability, sanity, and permanent-capture status
 
-Passed in the isolated execution:
+Passed:
 
 - toy recovery metric: half recovery `0.5`, worsening `-0.125`;
 - structured and uniform mean `kappa` equality;
 - valid `kappa` interval;
 - exact repeated output;
+- independent frozen-verifier metric reproduction;
 - finite values in all cells;
 - maximum observed `abs(psi)` below `0.142`;
 - no fail-safe reset;
 - energy ratios to no-damage twins approximately `0.717–0.735`, excluding global runaway as the explanation.
 
-Permanent files now committed outside the installable library:
+Permanent files committed outside the installable library:
 
 - `scripts/research/active_mu_kappa_repair_matrix.py`;
 - `tests/research/test_active_mu_kappa_repair_matrix.py`.
@@ -297,20 +344,21 @@ The regression specification checks exact repetition, absence of supportive cell
 Still pending:
 
 - embed the complete standalone verifier in this report;
-- execute the commit-scoped regression test in the supported dependency environment;
+- execute the commit-scoped regression test in a compatible supported dependency environment;
 - rerun with NumPy `<2.0`;
 - run relevant full repository CI paths.
 
 No pending item reverses the recorded isolated result; each limits its promotion strength.
 
-## 17. Narrow scientific interpretation
+## 18. Narrow scientific interpretation
 
-Supported within the frozen isolated setup:
+Supported within the frozen available-host setup:
 
 - structured static `kappa` can modestly alter passive return of local energy after erasure;
 - `mu` accumulated but was causally negligible for reconstruction;
 - the combined lane was observationally equivalent to scaffold-only at the measured resolution;
-- scaffold removal reduced retention more in previously scaffolded lanes.
+- scaffold removal reduced retention more in previously scaffolded lanes;
+- an independently reconstructed verifier reproduced all decision-relevant metrics.
 
 Not supported:
 
@@ -319,9 +367,10 @@ Not supported:
 - autonomous regrowth;
 - hereditary information;
 - semantic memory, identity, life, or consciousness;
-- any physical-universe claim.
+- any physical-universe claim;
+- portability to NumPy `<2.0` until the blocked execution is completed elsewhere.
 
-## 18. Failure-to-mechanism map
+## 19. Failure-to-mechanism map
 
 What failed:
 
@@ -333,6 +382,7 @@ What remained positive:
 
 - spatial `kappa` information measurably affected local redistribution;
 - all cells were stable and reproducible;
+- independent reconstruction reproduced the decision metrics;
 - distinct active-cycle and environmental-scaffold families remain untested by this matrix.
 
 Qualitatively distinct repair classes still open:
@@ -343,9 +393,10 @@ Qualitatively distinct repair classes still open:
 4. a dynamic scaffold that changes in response to the live state;
 5. a controller encoding a target or generative programme rather than only reinforcing current traffic.
 
-## 19. Limitations
+## 20. Limitations
 
-- unsupported NumPy version;
+- unsupported NumPy version on both completed runs;
+- compatible Python 3.12 / NumPy 1.26 environment could not be downloaded because DNS/network access was unavailable;
 - isolated NumPy path only;
 - one ring geometry and one damage shape;
 - deterministic source-off regime only;
@@ -356,19 +407,19 @@ Qualitatively distinct repair classes still open:
 - no topology-specific node observer;
 - no biological or empirical-universe comparison in this implementation test.
 
-## 20. Next actions under delegated autonomy
+## 21. Next actions under delegated autonomy
 
 Before executing another mechanism family:
 
 1. embed the complete standalone verifier and command receipt in this report;
-2. attempt supported-environment execution and record success or blocker;
-3. rank the remaining mechanism families by causal distinctness, existing implementation traceability, and cheapest falsifying experiment;
-4. preregister the selected family and all controls in this report;
-5. execute without post-hoc parameter rescue.
+2. rank the remaining mechanism families by causal distinctness, implementation traceability, prior failures, and cheapest falsifying experiment;
+3. preregister the selected family and all controls in this report;
+4. execute without post-hoc parameter rescue;
+5. repeat the supported-environment check when a compatible Python runtime or CI runner is available.
 
 The active `mu × kappa` implementation will not be tuned further without a new causal hypothesis and frozen discriminator.
 
-## 21. Continuous-report ledger
+## 22. Continuous-report ledger
 
 ### 2026-07-30 — owner failure-gate response
 
@@ -401,3 +452,11 @@ Committed the research runner and regression specification outside `lineum_core/
 ### 2026-07-30 — delegated scientific autonomy
 
 Recorded the owner’s grant of methodological discretion and trust. Preserved all preregistration, negative-result, independent-verification, public-library, and whitepaper-promotion gates as non-waivable constraints.
+
+### 2026-07-30 — independent frozen-verifier reproduction
+
+Reconstructed the inspected NumPy path independently of the committed runner and repeated the full matrix twice. All decision-relevant metrics matched exactly, including the maximum absolute `mu` effect, `kappa` effect range, stability ceiling, and absence of supportive cells.
+
+### 2026-07-30 — supported-environment attempt blocked
+
+Confirmed that the host exposes only Python 3.13.5. Attempted to install isolated Python 3.12 for NumPy 1.26.4 using `uv`; the download failed after three retries because DNS/network resolution was unavailable. Recorded this as an infrastructure blocker, not a successful validation and not a scientific failure.
