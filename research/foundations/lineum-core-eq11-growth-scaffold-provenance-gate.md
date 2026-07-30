@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.7.0  
+**Version:** 0.8.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -248,7 +248,64 @@ This broad comparison is useful for confirming branch ancestry and large reposit
 
 Classification: `ancestry_confirmed_but_file_provenance_incomplete`.
 
-The next safe discriminator is an exact-path receipt audit for every script filename explicitly named by the whitepaper and committed search artifacts, checked at `4b08ab1`, current `develop`, and any later exact commit recovered from immutable evidence.
+### 5.10 Exact named-script receipt audit
+
+The current equation-history whitepaper explicitly names two Eq-11 manipulation scripts:
+
+- `eval_eq11_flow_redistribution.py`;
+- `eval_eq11_pair_overlap.py`.
+
+The earlier provenance trail also names `eval_closed_system_stress.py` as a candidate stress/reconstruction receipt. A symmetric exact-path audit tested each filename at:
+
+- repository root;
+- `scripts/`;
+- `.scratch/`.
+
+Each path was tested against both:
+
+- historical source commit `4b08ab1ebac1beb287c5ecd7f74803e530e7e7ad`;
+- current branch `develop` at the evidence cutoff.
+
+| Named artifact | Root at `4b08ab1` | `scripts/` at `4b08ab1` | `.scratch/` at `4b08ab1` | Root on `develop` | `scripts/` on `develop` | `.scratch/` on `develop` | Current classification |
+|---|---:|---:|---:|---:|---:|---:|---|
+| `eval_closed_system_stress.py` | 404 | 404 | 404 | 404 | 404 | 404 | `named_in_provenance_but_not_located_at_18_cell_audit_subset` |
+| `eval_eq11_flow_redistribution.py` | 404 | 404 | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_18_cell_audit_subset` |
+| `eval_eq11_pair_overlap.py` | 404 | 404 | 404 | 404 | 404 | 404 | `whitepaper_named_but_not_located_at_18_cell_audit_subset` |
+
+Receipt totals:
+
+```text
+named artifacts: 3
+refs per artifact: 2
+paths per ref: 3
+exact fetches: 18
+located files: 0
+404 responses: 18
+```
+
+This result establishes only that none of the three named files is versioned at the tested exact paths in the cited bulk documentation commit or current `develop`.
+
+It does **not** establish that:
+
+- the experiments never ran locally;
+- no renamed implementation existed;
+- no deleted file existed in an intermediate commit;
+- prose values are necessarily false;
+- the equations cannot be reconstructed independently.
+
+It does establish that the present whitepaper references are not sufficient executable receipts. Until a renamed or intermediate artifact is recovered, claims depending on these scripts remain `unreproduced_prose_claims` rather than validated results.
+
+The `.scratch/` checks are especially important: repository policy treats `.scratch/` as disposable. A local script may have existed there and later vanished. Such a possibility preserves historical uncertainty but cannot satisfy permanent reproducibility.
+
+Classification of the exact-path lane:
+
+```text
+complete_for_three_named_artifacts_and_two_tested_refs;
+negative_for_file_location;
+inconclusive_for_unversioned_or_renamed_history
+```
+
+The next safe discriminator is not parameter tuning. It is recovery of additional filenames, output names, immutable commit SHAs, or code fragments from committed documentation/search artifacts and intermediate commit patches.
 
 ## 6. Required provenance matrix
 
@@ -265,6 +322,15 @@ For every discovered Eq-11 or Eq-11.1 artifact, record:
 | observer | survival, topology, far-field quietness and failure thresholds |
 | evidence | script, test, output artifact, prose only, or missing |
 | known failure | decay, boiling, fragmentation, numerical reset, boundary artefact, or unknown |
+
+### 6.1 Initial populated artifact matrix
+
+| Artifact / claim family | Exact evidence recovered | Equation / algorithm | Parameters and initializer | Observer and output | Status | Reopen trigger |
+|---|---|---|---|---|---|---|
+| `eval_closed_system_stress.py` | filename in provenance; 6 exact path/ref checks all 404 | not recovered | not recovered | not recovered | `unreproduced_named_artifact` | recover renamed/deleted file, immutable patch, or complete embedded code |
+| `eval_eq11_flow_redistribution.py` | filename in current whitepaper; 6 exact path/ref checks all 404 | prose describes negative flow divergence redistributed into imaginary phase rotation | coefficients, grid, timestep, seed and initializer not recovered | prose later reports generic-isolation failure and `+300%` defect density | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both engineered success and generic-isolation failure |
+| `eval_eq11_pair_overlap.py` | filename in current whitepaper; 6 exact path/ref checks all 404 | prose describes super-linear `Phi` coupling weighted by `|Psi|^4` in overlap regions | coefficients, grid, timestep, seed and initializer not recovered | prose later reports `0%` deviation under generic random thermal isolation | `unreproduced_engineered_mechanism_with_negative_prose_result` | recover executable receipt and reproduce both forced-overlap success and generic-isolation null result |
+| Eq-11.1 bulk claim bundle in `4b08ab1` | complete documentation patch recovered | explicit Eq-11.1 law plus multiple later assisted variants | incomplete and internally mixed | many scalar, topology, binding and limit values in prose | `bulk_retrospective_documentation_without_executable_chain` | split into claim-specific receipts with exact code and outputs |
 
 ## 7. Hard preregistered gate
 
@@ -300,10 +366,10 @@ Repository `todo.md` files are historical evidence only. They may help reconstru
 
 Before any implementation, the next retrieval pass is frozen as follows:
 
-1. extract every explicit Eq-11 or Eq-11.1 script filename from the current whitepaper, `4b08ab1` patch, and committed search artifacts;
-2. test every exact path at `4b08ab1` and current `develop`, preserving every 404 and every located file;
-3. inspect located files for equation, initializer, integration, parameters, observers, and output provenance;
-4. use any immutable commit references inside those files or outputs to trace later Phase 15–21 reconstruction separately from the original bulk documentation payload;
+1. extract additional output filenames, experiment labels (`EXP24`–`EXP39`, Phase 15–21), immutable SHAs, and code fragments from the current whitepaper, `4b08ab1` patch, and committed search artifacts;
+2. test every newly recovered exact path at its associated commit and current `develop`, preserving every 404 and every located file;
+3. inspect located outputs for embedded parameters, command lines, source hashes, seeds, grids, timesteps, observers, and parent script names;
+4. trace later Phase 15–21 reconstruction separately from the original bulk documentation payload;
 5. classify every artifact in the provenance matrix before selecting an executable candidate;
 6. do not synthesize missing code or tune parameters until the matrix shows one fully specified baseline candidate.
 
@@ -320,3 +386,5 @@ Before any implementation, the next retrieval pass is frozen as follows:
 - `search-index limitation`: exact phrase and commit searches failed to recover known Eq-11.1 provenance, and nominal recent-commit search stopped before known later history; immutable fetches and branch comparisons now take precedence.
 - `source-payload audit`: established that `4b08ab1` introduced most Eq-11 and Eq-11.1 positive, negative, intrinsic, assisted, and N=2-limit claims together in a bulk documentation patch without a recovered executable chain.
 - `broad-compare audit`: confirmed 227-commit ancestry from `4b08ab1` to `develop` while recording that the large Portal migration and response limits make the broad file inventory insufficient for exact script provenance.
+- `named-script audit`: extracted three explicit or provenance-named scripts and completed 18 exact path/ref fetches; all returned 404, so none is currently a recoverable executable receipt at the tested paths.
+- `artifact-matrix initialization`: populated the first permanent matrix rows, preserving both the missing receipts and the negative prose results associated with the two engineered stabilization mechanisms.
