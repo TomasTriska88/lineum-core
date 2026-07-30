@@ -51,6 +51,21 @@ Do not run a sequence of consequential experiments and plan to document them aft
 
 Mechanical actions that do not change scientific meaning—such as reading a file, listing paths, formatting unchanged text, or verifying that a committed file exists—do not require a separate report revision. However, any discovery from those actions that changes scope, assumptions, protocol, interpretation, or the next step must be recorded immediately.
 
+## Scratch is local and non-evidentiary
+
+`.scratch/` is a temporary local Codex workspace, ignored by Git and not expected to be visible through GitHub, repository connectors, CI, another checkout, or a later session.
+
+Therefore:
+
+- never query GitHub or a repository connector for `.scratch/` contents as part of provenance reconstruction;
+- never count a `.scratch/` `404`, missing path, or absent filename as a receipt, negative result, or evidence that an experiment did not occur;
+- treat a committed mention of a `.scratch/` filename only as an `unversioned_local_reference`, not as recovered code or output;
+- exclude repository-presence cells for `.scratch/` from provenance matrices and receipt totals;
+- correct any prior report that counted scratch-path absence as evidence, preserving the methodological correction in the report history;
+- promote all retained evidence into the active standalone report or another explicitly permanent research-scoped path before the next consequential lane.
+
+The binding operational details are in `.agent/workflows/scratch.md`.
+
 ## Git checkpoint cadence
 
 The report may receive several small edits within one coherent local work session, but every independently retained result or owner-approved mechanism decision must be committed to the development branch before the next research lane begins. A later polished rewrite may improve clarity but must not erase the chronological evidence, failed paths, or decision rationale.
