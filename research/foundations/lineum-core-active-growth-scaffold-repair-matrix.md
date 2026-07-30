@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active preregistered research report; repository retrieval pending; no experimental result yet; designated future whitepaper source
+**Status:** active preregistered research report; current whitepaper and mechanism retrieval in progress; no experimental result yet; designated future whitepaper source
 
-**Version:** 0.1.1
+**Version:** 0.1.2
 
 **Evidence cutoff:** 2026-07-30
 
@@ -25,6 +25,26 @@ Completion of the report does not automatically make every idea canonical. The f
 - `unresolved`: contradictory, underpowered, environment-limited, or awaiting a discriminator.
 
 As repository retrieval identifies affected documents, this report will maintain a whitepaper impact table containing the exact whitepaper path and section, current claim, evidence relationship, proposed scope-safe change, and any reason the text must not yet be changed. Whitepaper edits must be derived from this completed report rather than from chat memory, scripts, or visual impressions.
+
+## Initial whitepaper impact registry
+
+The current generated whitepaper map was read from `lab/src/lib/data/whitepaper_map.json` on `develop`, blob SHA `f6dad7c79b1563f796dac36fc50a140fb2a08096`. It supersedes historical paths encountered in older search indexes.
+
+The following current documents are registered for retrieval. Registration means only that their subject could bear on the experiment; every relationship remains `not_yet_compared` until the exact text and implementation evidence are inspected.
+
+| Current whitepaper path | Potential relevance | Current relationship |
+|---|---|---|
+| `whitepapers/1-core/02-core-equation.md` | implemented field roles, update law, `kappa`, `mu`, coupling and boundaries | `not_yet_compared` |
+| `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | foam, memory, transport, re-ignition and composite mechanisms | `not_yet_compared` |
+| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | active attractor or homeostatic candidate | `not_yet_compared` |
+| `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | `mu`, persistent medium and emergence candidate | `not_yet_compared` |
+| `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | reservoir and sustained activity analogy or mechanism | `not_yet_compared` |
+| `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | reconstruction, persistence or identity-bearing claims | `not_yet_compared` |
+| `whitepapers/3-ontology/hypotheses/11-ontology-hyp-kinetic-ignition.md` | active ignition or growth candidate | `not_yet_compared` |
+| `whitepapers/3-ontology/hypotheses/12-ontology-hyp-order-vs-chaos.md` | guided organization under noise | `not_yet_compared` |
+| `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | prior emergence and self-organization claims | `not_yet_compared` |
+
+Other documents remain open for registration if retrieval reveals a material equation, contradiction, or historical variant. The current list is not evidence that all listed documents will require modification.
 
 ## 1. Owner hypothesis recorded before formalization
 
@@ -177,3 +197,7 @@ Created this report before repository retrieval or implementation. Preregistered
 ### 2026-07-30 — whitepaper handoff designation
 
 The project owner designated this report as the source for later whitepaper updates after completion. Added an explicit claim-promotion classification and required whitepaper impact table so validated implementation observations, bounded negative results, and remaining hypotheses cannot be merged into one canonical claim.
+
+### 2026-07-30 — current whitepaper manifest retrieval
+
+Read the generated current whitepaper map on `develop` and registered nine potentially affected current documents as `not_yet_compared`. Historical extension paths returned by the stale code-search index were not treated as current sources. No whitepaper claim has yet been selected for modification.
