@@ -1,0 +1,1 @@
+Temporary trigger for the one-shot root research continuity patch. This file must not remain in the final tree.
