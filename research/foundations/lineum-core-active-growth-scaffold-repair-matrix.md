@@ -1,8 +1,8 @@
 # Active Growth and Spatial Scaffold Repair Matrix in Lineum Core
 
-**Status:** active preregistered research report; first mechanism and whitepaper retrieval complete; no new experiment run yet; designated future whitepaper source
+**Status:** active preregistered research report; repository retrieval complete for the first pilot; active `mu × kappa` feasibility protocol pending; no new experiment run yet; designated future whitepaper source
 
-**Version:** 0.2.0
+**Version:** 0.3.0
 
 **Evidence cutoff:** 2026-07-30
 
@@ -10,7 +10,7 @@
 
 **Predecessor:** `Static Baseline and Live-State Transplant Matrix in Lineum Core`, which found that a static initializer alone is not an active repair or hereditary mechanism in the tested Core path.
 
-**Current confidence:** High that the prior static initializer does not remain causally active after initialization; high that the active public solver contains a static `kappa` map and `psi`–`phi`–`mu` feedback but no explicit target-pattern repair controller; medium that several historical and extension mechanisms are scientifically relevant candidates; no confidence yet that any growth-plus-scaffold combination repairs a damaged pattern under a frozen factorial test.
+**Current confidence:** High that the prior static initializer does not remain causally active after initialization; high that the active public solver contains a static `kappa` map and `psi`–`phi`–`mu` feedback but no explicit target-pattern repair controller; high that several ontology texts cannot serve as implementation evidence because they are deprecated or conflict with the active solver; no confidence yet that the selected active `mu × kappa` combination repairs a damaged pattern under a frozen factorial test.
 
 ## Intended downstream use and whitepaper handoff
 
@@ -26,23 +26,33 @@ Completion of the report does not automatically make every idea canonical. The f
 
 As repository retrieval identifies affected documents, this report will maintain a whitepaper impact table containing the exact whitepaper path and section, current claim, evidence relationship, proposed scope-safe change, and any reason the text must not yet be changed. Whitepaper edits must be derived from this completed report rather than from chat memory, scripts, or visual impressions.
 
-## Initial whitepaper impact registry
+## Whitepaper impact registry
 
 The current generated whitepaper map was read from `lab/src/lib/data/whitepaper_map.json` on `develop`, blob SHA `f6dad7c79b1563f796dac36fc50a140fb2a08096`. It supersedes historical paths encountered in older search indexes.
 
-| Current whitepaper path | Potential relevance | Current relationship |
+| Current whitepaper path | Retrieved relationship to this lane | Promotion status before new experiment |
 |---|---|---|
-| `whitepapers/1-core/02-core-equation.md` | implemented field roles, update law, `kappa`, `mu`, coupling and boundaries | `implementation_fact_and_variant_provenance_retrieved` |
-| `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | foam, memory, transport, re-ignition and composite mechanisms | `bounded_positive_and_negative_evidence_retrieved` |
-| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | active attractor or homeostatic candidate | `candidate_mechanism_and_limitations_retrieved` |
-| `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | `mu`, persistent medium and emergence candidate | `not_yet_compared` |
-| `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | reservoir and sustained activity analogy or mechanism | `not_yet_compared` |
-| `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | reconstruction, persistence or identity-bearing claims | `not_yet_compared` |
-| `whitepapers/3-ontology/hypotheses/11-ontology-hyp-kinetic-ignition.md` | active ignition or growth candidate | `not_yet_compared` |
-| `whitepapers/3-ontology/hypotheses/12-ontology-hyp-order-vs-chaos.md` | guided organization under noise | `not_yet_compared` |
-| `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | prior emergence and self-organization claims | `not_yet_compared` |
+| `whitepapers/1-core/02-core-equation.md` | records canonical static `kappa`, historical `mu`, Eq-11 active-growth variants, and prior confinement failures | `implementation_fact_and_variant_provenance` |
+| `whitepapers/2-cosmology/extensions/03-cosmo-ext-lineum-standard-model.md` | reports Relic Foam heat-shock resilience, environmental co-stabilization, transient secondary emission, fatigue, and failure of true re-ignition | `bounded_positive_and_negative_evidence` |
+| `whitepapers/2-cosmology/extensions/05-cosmo-ext-thermodynamic-attractor.md` | reports closed-energy `epsilon` feedback, shock recovery and random-start convergence, but terminal evaporation and no demonstrated missing-node regrowth | `candidate_extension_with_unresolved_repair_claim` |
+| `whitepapers/2-cosmology/hypotheses/37-cosmo-hyp-quantum-foam-and-mu-emergence.md` | describes `mu` as an emergent geometric byproduct, while the active solver implements `mu` explicitly as an input/update field | `hypothesis_only_and_implementation_conflict` |
+| `whitepapers/3-ontology/extensions/01-ontology-ext-ai-reservoir.md` | explicitly deprecated after tests classified Eq-11 as non-stateful passive transport | `bounded_negative_result_already_recorded` |
+| `whitepapers/3-ontology/extensions/03-ontology-ext-identity-layer.md` | states that structural memory resides in deformable `kappa`, but active `step_core` returns `kappa` unchanged; also mixes product architecture with Core claims | `unresolved_contradiction_requires_future_whitepaper_correction` |
+| `whitepapers/3-ontology/hypotheses/11-ontology-hyp-kinetic-ignition.md` | proposes action-driven `phi` grooves without a linked verified implementation or repair test | `hypothesis_only` |
+| `whitepapers/3-ontology/hypotheses/12-ontology-hyp-order-vs-chaos.md` | applies moral and psychological analogies to coherence and `mu` persistence without mechanical validation | `hypothesis_only` |
+| `whitepapers/3-ontology/hypotheses/16-ontology-hyp-emergent-ai.md` | explicitly deprecated for memory, learning, self-organization and cognitive claims | `bounded_negative_result_already_recorded` |
 
-Other documents remain open for registration if retrieval reveals a material equation, contradiction, or historical variant. The current list is not evidence that all listed documents will require modification.
+### Current whitepaper handoff implications
+
+These implications are provisional until the new matrix is complete:
+
+1. Any claim that active Core dynamically carves `kappa` is inconsistent with the inspected implementation and must not be repeated as an implementation fact.
+2. `mu` may be tested as path reinforcement because that is what the active code computes; it must not be called semantic memory, identity, DNA, or autonomous repair without separate evidence.
+3. Relic Foam evidence supports environmental shaping and co-stabilization, but existing tests already reject clean permanent re-ignition and infinite reuse under their parameters.
+4. The `epsilon` attractor is a distinct extension mechanism, not a feature of the active public solver. Its reported amplitude recovery does not yet demonstrate spatial regrowth after erasure.
+5. Deprecated AI and reservoir documents remain historical provenance, not candidate evidence for this repair experiment.
+
+No whitepaper is edited during this lane until the final promotion table is complete.
 
 ## Retrieved implementation facts and mechanism families
 
@@ -67,7 +77,7 @@ These are `implementation_fact_only` until a report compares them with physical 
 
 - Candidate yeast `Y_A`: active `psi`–`phi` mode coupling, `phi`-gradient drift, stochastic generation, and optional `mu` reinforcement in the current solver.
 - Candidate scaffold `S_A`: a structured static `kappa` map.
-- Status: implemented and cheapest to test, but no prior evidence retrieved yet that it restores a specific damaged organization.
+- Status: implemented and cheapest to test, but no prior evidence retrieved that it restores a specific damaged organization.
 
 #### Family B — Eq-11 growth/leakage plus geometric closure
 
@@ -93,19 +103,30 @@ The Lineum Standard Model extension reports that Relic Foam can absorb a raw `ph
 - Candidate scaffold `S_D`: mature Relic Foam and its ambient `phi` environment.
 - Status: bounded evidence for environmental shaping and co-stabilization; bounded negative evidence against permanent true re-ignition and immortal reusable repair under the recorded parameters.
 
-## Variant ledger after retrieval step 1
+## Variant ledger after repository retrieval
 
 | Variant | Yeast factor | Scaffold factor | Implementation status | Evidence status | Cheapest next discriminator |
 |---|---|---|---|---|---|
-| `A_active_mu_kappa` | current `psi`–`phi` feedback with `mu` update enabled | structured static `kappa` | active public implementation | `untested_for_damage_repair` | four-lane matched damage matrix in research harness |
-| `A_active_no_mu_kappa` | current feedback with `mu` frozen/zero | structured static `kappa` | active public implementation | required ablation | compare with `A_active_mu_kappa` |
+| `A_active_mu_kappa` | current feedback with `mu` accumulation enabled | structured static `kappa` | active public implementation | `selected_for_first_feasibility_test` | four-lane matched formation, damage and scaffold-removal matrix |
+| `A_active_no_mu_kappa` | current feedback with `mu` zero/frozen | structured static `kappa` | active public implementation | required ablation | compare with `A_active_mu_kappa` |
+| `A_mu_uniform_kappa` | current feedback with `mu` accumulation enabled | uniform `kappa` matched in mean magnitude | active public implementation | required ablation | tests `mu` without spatial form |
 | `B_eq11_growth_kappa` | Eq-11 growth/leakage | explicit `kappa` confinement | historical/experimental | weak Gaussian well failed; broader family open | reproduce weak-well negative control before stronger closure |
 | `C_epsilon_scaffold` | closed-energy `epsilon` cycle | geometric/environmental scaffold | extension, not active library | shock recovery reported; missing-part regrowth unproven | node-erasure recovery versus no-`epsilon` and no-scaffold controls |
 | `D_active_foam` | structured active impact | Relic Foam/ambient `phi` | extension experiment | transient emission and co-stabilization supported; true re-ignition and infinite reuse rejected | matched erasure repair rather than impact-only assay |
-| `null_diffusion_only` | no active reinforcement beyond passive diffusion | no structured scaffold | control | `queued` | matched damage horizon |
-| `null_scaffold_mass_shuffled` | matched active factor | shuffled or rotated scaffold with equal total magnitude | control | `queued` | tests spatial information versus total drive |
+| `null_diffusion_only` | no `mu` accumulation and no structured scaffold | uniform matched `kappa` | control | `queued` | matched damage horizon |
+| `null_scaffold_mass_shuffled` | selected active factor | shuffled scaffold with equal distribution | control | `queued_after_feasibility` | tests spatial information versus total drive |
 
-No variant is yet selected as the final mechanism. The active public `A` family is the smallest first implementation candidate because it can be tested without changing the library, but selection remains pending completion of the registered ontology and `mu` retrieval.
+## First-pilot selection rationale
+
+The first feasibility pilot will test `A_active_mu_kappa` because:
+
+- it uses only the active public Core law without adding a new field or modifying `lineum_core/`;
+- both factors have exact operational definitions in current code;
+- it directly tests whether a slow internal trace (`mu`) and a static spatial form (`kappa`) interact after damage;
+- failure is informative and does not invalidate the distinct Eq-11, `epsilon`, or Relic Foam families;
+- it is the cheapest test capable of separating passive diffusion, reinforcement, confinement and their combination.
+
+This selection is methodological, not a claim that `mu` is biologically yeast or `kappa` is a literal mould.
 
 ## 1. Owner hypothesis recorded before formalization
 
@@ -137,113 +158,111 @@ The combined hypothesis is:
 
 > A Lineum pattern may require both an active state-transforming process and a spatial scaffold; the active process supplies growth or restoration, while the scaffold constrains that process into a reproducible organization.
 
-This formalization does not yet assign `Y` or `S` to a specific field. Candidate mappings must first be retrieved from existing Core code, research history, and whitepapers. The mapping must not be chosen merely because a field name fits the analogy.
+This formalization does not assign the analogy universally. For the first pilot only, `Y` is operationalized as `mu` accumulation plus the active common feedback law, and `S` as a structured static `kappa` map.
 
 ## 3. Questions
 
-1. Does an active Core-native process increase recovery after standardized damage?
-2. Does a spatial Core-native scaffold increase recovery after the same damage?
+1. Does active `mu` accumulation increase recovery after standardized damage?
+2. Does a structured `kappa` map increase recovery after the same damage relative to a mean-matched uniform map?
 3. Is their combination more effective than either factor alone?
-4. Does any recovered organization persist after the scaffold is removed?
-5. Is the result exact replay, broad morphological repair, temporary confinement, or uncontrolled amplification?
+4. Does any recovered organization persist after the structured `kappa` map is replaced by the matched uniform map?
+5. Is the result exact replay, broad morphological repair, temporary confinement, passive diffusion, or uncontrolled amplification?
 
 ## 4. Required repository retrieval before mechanism selection
 
-Before implementing the matrix, retrieve every recorded Core candidate relevant to:
+The first retrieval gate is complete for the active pilot. It covered the active Core law, equation history, current whitepaper manifest, thermodynamic-attractor extension, Relic Foam experiments, `mu` emergence hypothesis, AI reservoir deprecation, identity-layer claims, kinetic-ignition hypothesis, order-versus-chaos hypothesis, and emergent-AI deprecation.
 
-- active attractors, homeostasis, source terms, mode coupling, hysteresis, memory, self-maintenance, growth, regeneration, or re-ignition;
-- `psi`, `phi`, `kappa`, `mu`, `delta`, boundaries, gradients, reservoirs, foam, environmental transport, and spatial permeability;
-- prior perturbation, source-off, field-freeze, scaffold-removal, damage-recovery, and ablation experiments;
-- historical, experimental, deprecated, unsupported, and canonical equation variants.
-
-For each retrieved candidate, record its exact implementation or equation status, causal role, assumptions, known failures, and cheapest discriminator. Retrieval is provenance, not validation.
+Further retrieval remains mandatory before testing the distinct Eq-11, `epsilon`, or Relic Foam families.
 
 ## 5. Preregistered factorial structure
 
-The minimum matrix contains four lanes built from the same weak or standardized starting material:
+The minimum matrix contains four lanes built from matched starting material:
 
-| Lane | Active growth `Y` | Scaffold `S` | Purpose |
+| Lane | Active `mu` accumulation `Y` | Structured `kappa` scaffold `S` | Purpose |
 |---|---:|---:|---|
-| `YS00` | absent | absent | null: material without growth or shape guidance |
-| `Y1S0` | present | absent | active process alone |
-| `Y0S1` | absent | present | scaffold alone |
-| `Y1S1` | present | present | combined owner hypothesis |
+| `YS00` | absent | absent | passive-base null under mean-matched uniform `kappa` |
+| `Y1S0` | present | absent | internal reinforcement without spatial form |
+| `Y0S1` | absent | present | spatial form without internal reinforcement |
+| `Y1S1` | present | present | combined owner hypothesis in the active implementation |
 
-The experiment must not silently give one lane a more developed live state than another. Any seed, initial perturbation, resource, boundary, or challenge must be matched unless it is the declared factor under test.
+All lanes retain the same base `psi`–`phi` dynamics, stochastic policy, initial weak seed, total `kappa` mean, grid, horizons and damage mask. Only `mu` accumulation and the spatial arrangement of `kappa` differ.
+
+A no-damage twin for each lane is required. The damaged lane must not receive values copied from its no-damage twin after the intervention.
 
 ## 6. Planned stages
 
 ### Stage A — formation
 
-Start all four lanes from matched weak material and allow a frozen formation horizon. Measure whether an organized pattern forms and whether the combined lane exceeds both single-factor lanes.
+Start all four lanes from matched weak material and allow a frozen formation horizon. `Y` lanes update `mu`; non-`Y` lanes keep `mu=0`. `S` lanes use the structured map; non-`S` lanes use a uniform map with the same mean `kappa`.
 
 ### Stage B — damage and repair
 
-Apply the same spatial erasure or attenuation mask to the formed pattern in every lane. Continue for a frozen repair horizon under matched stochastic history. Compare the state immediately before damage, immediately after damage, and after repair.
+Apply the same spatial attenuation mask to `psi` and `phi` in every damaged lane while preserving `mu` and `kappa`. Preserving `mu` is intentional: the test asks whether an internal trace can guide reconstruction after the fast live state is damaged. A separate later control may erase `mu` inside the damaged region.
+
+Continue damaged and no-damage twins for a frozen repair horizon under matched random draws. Compare recovery inside the damage region and collateral change outside it.
 
 ### Stage C — scaffold removal
 
-For lanes containing `S`, replace or neutralize the scaffold after the repair horizon while preserving the current live fields. Continue under a matched challenge. This distinguishes:
-
-- autonomous persistence: organization remains without the scaffold;
-- scaffold dependence: organization degrades when the scaffold is removed;
-- mechanical confinement: apparent repair existed only while the mould constrained the state;
-- delayed collapse or adaptation: an intermediate dependence requiring a longer horizon.
+For `S` lanes, replace structured `kappa` with the mean-matched uniform map while preserving `psi`, `phi` and `mu`. Continue under matched challenge. This tests whether any organization is autonomous, internally retained through `mu`, or continuously scaffold-dependent.
 
 ## 7. Minimum controls
 
 The retained protocol must include:
 
-- no-damage controls for every lane;
+- no-damage twins for every lane;
 - identical-noise comparisons to isolate deterministic causal differences;
-- independent-noise repeats to distinguish exact replay from robust organization;
-- scaffold shuffling or spatial rotation when meaningful, to test whether location-specific structure matters;
-- active-process freeze or zero-strength ablation;
-- matched energy, amplitude, or source accounting where the candidate mechanism changes available drive;
-- at least one null morphology with the same total scaffold magnitude but no organized spatial pattern.
+- independent-noise repeats before any robustness claim;
+- uniform `kappa` matched to the exact mean of the structured scaffold;
+- later shuffled-scaffold control with the same value distribution if structured `kappa` appears beneficial;
+- `mu` zero/freeze ablation;
+- total `psi`, `phi`, `mu` and injected-noise ledgers;
+- saturation, clipping, fail-safe and collapse checks;
+- a post-removal challenge for scaffolded lanes.
 
 ## 8. Observables
 
 No single image or amplitude correlation is sufficient. At minimum record:
 
 - exact array equality and cryptographic hashes for replay controls;
-- normalized RMS error relative to the undamaged lane-specific reference;
+- normalized RMS error relative to the lane's no-damage twin;
 - amplitude-shape correlation;
-- recovered fraction inside the damaged region;
+- recovered `psi` energy fraction inside the damaged region;
 - unintended change outside the damaged region;
+- damage-region phase coherence when amplitude is non-negligible;
 - localization or concentration statistics;
-- total `psi`, `phi`, `mu`, and other relevant field ledgers;
+- total `psi`, `phi`, `mu` and `kappa` ledgers;
 - survival after scaffold removal;
-- growth without bound, clipping, numerical saturation, or collapse;
+- growth without bound, clipping, numerical fail-safe reset or collapse;
 - dependence on seed and horizon.
 
 Additional topology or functional metrics may be added only after their causal meaning and failure cases are declared.
 
 ## 9. Frozen decision logic before results
 
-The combined mechanism receives provisional support only if `Y1S1` repairs the damaged organization materially better than `Y1S0`, `Y0S1`, and `YS00` under matched controls, without merely injecting more unconstrained amplitude or copying the erased values directly.
+The combined mechanism receives provisional support only if `Y1S1` restores the damaged lane materially closer to its own no-damage twin than `Y1S0`, `Y0S1`, and `YS00`, without merely increasing total amplitude everywhere.
 
-- If only `Y1S0` succeeds, the scaffold is unnecessary under the tested conditions.
-- If only `Y0S1` appears to succeed while the active state does not regenerate, the result is confinement or passive shaping, not active repair.
-- If `Y1S1` succeeds only while the scaffold remains, the mechanism is distributed between system and environment.
-- If `Y1S1` persists after scaffold removal, the scaffold may act developmentally rather than continuously; further damage after removal is then required to test retained autonomous repair.
-- If no lane succeeds, this implementation of the owner hypothesis is unsupported under the frozen conditions; the broader combination idea remains open unless the test has power over all plausible active-process and scaffold mappings.
+- If only `Y1S0` succeeds, structured `kappa` is unnecessary under the tested conditions.
+- If only `Y0S1` appears to succeed while local erased energy is not regenerated, the result is confinement or passive shaping, not active repair.
+- If `Y1S1` succeeds only while structured `kappa` remains, the mechanism is distributed between internal trace and environment.
+- If `Y1S1` remains organized after scaffold removal, `mu` may retain a developmental trace; a second damage after removal is then required to test autonomous repair.
+- If all lanes recover similarly, passive diffusion or common forcing explains the result.
+- If `Y` lanes grow globally rather than selectively restoring the damaged region, the result is uncontrolled reinforcement, not repair.
+- If no lane succeeds, the active `mu × kappa` implementation is unsupported under the frozen conditions; distinct Eq-11, `epsilon` and Relic Foam families remain open.
 
-Exact byte reconstruction is not required for morphological repair, but any relaxed success threshold must be preregistered before results are inspected.
+Exact byte reconstruction is not required for morphological repair, but any relaxed success threshold must be preregistered before the feasibility result is interpreted as success.
 
-## 10. Current unresolved choices
+## 10. Current unresolved choices before the feasibility run
 
-The following are intentionally unresolved pending repository retrieval:
+The selected mechanism is fixed, but the following pilot parameters remain to be frozen after inspecting the available isolated verifier environment:
 
-- which existing Core variable or equation variant best represents `Y`;
-- which existing Core field, boundary, or permeability structure best represents `S`;
-- whether the standard material should be blank, weakly seeded, or donor-derived;
-- the damage geometry and severity;
-- formation, repair, and scaffold-removal horizons;
-- success thresholds and topology metrics;
-- whether the first run should use the active Core adapter, a frozen standalone model, or both.
+- grid size and weak-seed geometry;
+- structured `kappa` geometry and contrast while preserving a matched mean;
+- formation, repair and scaffold-removal horizons;
+- damage geometry and attenuation severity;
+- deterministic seed set for the initial feasibility lane;
+- exploratory selection rule and success thresholds.
 
-No code change or numerical result is authorized until these choices are recorded here with their provenance and falsification rationale.
+The next action is environment inspection only. No numerical result is authorized until the exact finite parameter grid and selection rule are appended here.
 
 ## 11. Continuous-report ledger
 
@@ -253,11 +272,11 @@ Recorded the owner proposal that active transformation and spatial shaping may b
 
 ### 2026-07-30 — protocol creation
 
-Created this report before repository retrieval or implementation. Preregistered the two-factor `Y × S` matrix, damage stage, scaffold-removal stage, minimum controls, observables, and outcome interpretation. Exact Core-native mappings remained pending and no result was generated.
+Created this report before repository retrieval or implementation. Preregistered the two-factor `Y × S` matrix, damage stage, scaffold-removal stage, minimum controls, observables, and outcome interpretation.
 
 ### 2026-07-30 — whitepaper handoff designation
 
-The project owner designated this report as the source for later whitepaper updates after completion. Added an explicit claim-promotion classification and required whitepaper impact table so validated implementation observations, bounded negative results, and remaining hypotheses cannot be merged into one canonical claim.
+The project owner designated this report as the source for later whitepaper updates after completion. Added an explicit claim-promotion classification and required whitepaper impact table.
 
 ### 2026-07-30 — current whitepaper manifest retrieval
 
@@ -265,4 +284,8 @@ Read the generated current whitepaper map on `develop` and registered nine poten
 
 ### 2026-07-30 — mechanism retrieval step 1
 
-Inspected the active public Core NumPy law, the canonical equation-history appendix, the thermodynamic-attractor extension, and the Relic Foam sections of the Lineum Standard Model extension. Registered four scientifically distinct growth/scaffold families and their known failures. No mechanism was promoted and no new simulation was run. The active public `mu × kappa` family remains the cheapest first test, pending the remaining registered retrieval.
+Inspected the active public Core NumPy law, the canonical equation-history appendix, the thermodynamic-attractor extension, and the Relic Foam sections of the Lineum Standard Model extension. Registered four scientifically distinct growth/scaffold families and their known failures.
+
+### 2026-07-30 — mechanism retrieval step 2 and first-pilot selection
+
+Inspected the `mu`-emergence, AI-reservoir, identity-layer, kinetic-ignition, order-versus-chaos, and emergent-AI documents. Separated implementation evidence from deprecated or speculative ontology. Selected the active public `mu × kappa` family for the first feasibility test because it is the smallest reversible test using current code. No simulation was run and no claim was promoted.
