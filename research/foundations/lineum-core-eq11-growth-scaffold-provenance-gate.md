@@ -2,7 +2,7 @@
 
 **Status:** active provenance report; cited source commit and active root runner do not provide an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.6.0  
+**Version:** 0.7.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
@@ -195,7 +195,60 @@ No numerical repair experiment is authorized by this audit.
 
 Repository file search located the current equation-history path only through a broad `equation history` query. Exact searches for `Eq-11.1`, `Near-Threshold Coupling Corridor`, and the explicit operator phrase returned no useful file or commit results despite the known commit `4b08ab1` existing.
 
-Classification: `search_index_incomplete_for_provenance`. Exact commit fetches, changelog phrases, changed-file inspection, and immutable SHAs must take precedence over search absence.
+A nominal “most recent commits” search also returned results ending on 2026-03-13 even though later immutable commits on `develop` are known and directly fetchable. Broad commit-message searches for terms visibly present in later history returned no matches.
+
+Classification: `search_index_incomplete_for_provenance`. Exact commit fetches, changelog phrases, changed-file inspection, immutable SHAs, and branch comparisons must take precedence over search absence.
+
+### 5.8 Exact payload audit of commit `4b08ab1`
+
+Commit `4b08ab1ebac1beb287c5ecd7f74803e530e7e7ad` was created on 2026-04-06. Its patch changed the equation-history whitepaper from version `1.2.11` to `1.2.20`, changed the document date from 2026-03-31 to 2026-04-06, and expanded the declared equation range from V1–V7 to V1–V11.1.
+
+The same documentation commit introduced, in one payload:
+
+- removal of the advection hypothesis and promotion of a metabolic-amplification framing;
+- the Eq-11 dimensionally invariant candidate;
+- the destructive long-horizon Eq-11 divergence claim;
+- the Eq-11.1 equation and “code-backed” gradient-dissipation wording;
+- claimed 50,000- and 100,000-step amplitude-bounding audits;
+- cluster ceiling and lambda-limit claims;
+- scalar collision and fragmentation claims;
+- indefinite isolated vortex-core preservation claims;
+- failed advection results;
+- bridge-suppression, oscillatory-pair, wake, rotational-frame, channel-flow, torque, self-repairing wake, and thermodynamic-minimization claims;
+- the practical open-vacuum N=2 limit and Near-Threshold Coupling Corridor;
+- rejection of N>=3 spontaneous composition without external geometry or fields.
+
+Strong positive, negative, intrinsic, and externally assisted claims were therefore introduced together inside a bulk retrospective documentation patch. They were not represented in that commit as a sequence of separately versioned executable experiments with one receipt per claim.
+
+The commit uses phrases such as “code-backed”, “validated”, “proved”, and “verified”, but no corresponding complete Eq-11.1 runner, initializer, parameter manifest, raw state, or command receipt has yet been recovered from its changed-file evidence.
+
+Classification:
+
+```text
+bulk_retrospective_documentation_bundle_without_recovered_executable_chain
+```
+
+Consequences:
+
+1. the commit can date the introduction of wording and candidate equations;
+2. it cannot validate any of the numerical or physical interpretations by itself;
+3. each claim family must be independently traced to an executable artifact or downgraded to unreproduced prose;
+4. contradictions inside the payload are historical evidence, not a reason to select whichever sentence supports the preferred story.
+
+### 5.9 Broad branch-compare limitation
+
+Comparing `4b08ab1` with current `develop` confirms that `develop` is 227 commits ahead. The returned changed-file inventory is dominated by later governance, Core-library evolution, output updates, and the major Portal migration out of Core.
+
+This broad comparison is useful for confirming branch ancestry and large repository movement. It is not sufficient to prove whether a short-lived Eq-11.1 research script existed and was later deleted because:
+
+- the change set is very large;
+- the API inventory is mixed with an extensive Portal removal;
+- returned file lists may be capped or omit detail needed for exhaustive provenance;
+- a missing filename in this broad response is not proof of historical absence.
+
+Classification: `ancestry_confirmed_but_file_provenance_incomplete`.
+
+The next safe discriminator is an exact-path receipt audit for every script filename explicitly named by the whitepaper and committed search artifacts, checked at `4b08ab1`, current `develop`, and any later exact commit recovered from immutable evidence.
 
 ## 6. Required provenance matrix
 
@@ -247,11 +300,11 @@ Repository `todo.md` files are historical evidence only. They may help reconstru
 
 Before any implementation, the next retrieval pass is frozen as follows:
 
-1. use changelog dates and unique phrases to locate commits for each separated claim family;
-2. identify commits that introduced and later modified Eq-11 and Eq-11.1 wording;
-3. inspect complete changed-file lists for versioned scripts, tests, outputs, parameter manifests, and references to uncommitted `.scratch` paths;
-4. trace the original survivor claim separately from the later Phase 15–21 reconstruction chain;
-5. classify every located artifact in the provenance matrix before selecting an executable candidate;
+1. extract every explicit Eq-11 or Eq-11.1 script filename from the current whitepaper, `4b08ab1` patch, and committed search artifacts;
+2. test every exact path at `4b08ab1` and current `develop`, preserving every 404 and every located file;
+3. inspect located files for equation, initializer, integration, parameters, observers, and output provenance;
+4. use any immutable commit references inside those files or outputs to trace later Phase 15–21 reconstruction separately from the original bulk documentation payload;
+5. classify every artifact in the provenance matrix before selecting an executable candidate;
 6. do not synthesize missing code or tune parameters until the matrix shows one fully specified baseline candidate.
 
 ## 11. Continuous ledger
@@ -264,4 +317,6 @@ Before any implementation, the next retrieval pass is frozen as follows:
 - `state revalidation`: re-read the current Core rules, repository boundaries, Codex routing notice, canonical Dynamics Codex, active report, and ClickUp task before resuming provenance archaeology; no scientific result changed and no numerical run was authorized.
 - `next-pass preregistration`: froze a retrieval-first plan using unique operators, exact commit archaeology, explicit separation of original and reconstructed claims, and a prohibition on code synthesis before a complete baseline candidate is recovered.
 - `current-whitepaper consistency audit`: split the equation-history document into distinct scalar, topological, binding, scaffold, forcing, and closed-cycle claim families; recorded direct internal conflicts and negative isolation results; classified the document as a layered claim record rather than a single validation receipt.
-- `search-index limitation`: exact phrase and commit searches failed to recover known Eq-11.1 provenance, so immutable commit fetches and changelog-guided archaeology are now required.
+- `search-index limitation`: exact phrase and commit searches failed to recover known Eq-11.1 provenance, and nominal recent-commit search stopped before known later history; immutable fetches and branch comparisons now take precedence.
+- `source-payload audit`: established that `4b08ab1` introduced most Eq-11 and Eq-11.1 positive, negative, intrinsic, assisted, and N=2-limit claims together in a bulk documentation patch without a recovered executable chain.
+- `broad-compare audit`: confirmed 227-commit ancestry from `4b08ab1` to `develop` while recording that the large Portal migration and response limits make the broad file inventory insufficient for exact script provenance.
