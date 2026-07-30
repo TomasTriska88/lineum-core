@@ -1,17 +1,17 @@
 # Eq-11.1 Growth and Scaffold Provenance Gate
 
-**Status:** active provenance report; no numerical Eq-11.1 repair experiment authorized
+**Status:** active provenance report; source commit classified as documentation/search evidence rather than an executable Eq-11.1 receipt; no numerical repair experiment authorized
 
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-07-30
 
 **Parent programme:** `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md`
 
 ## 1. Answer first
 
-Eq-11.1 is currently the highest-priority distinct “active growth” candidate for the owner’s yeast-plus-mould hypothesis because an explicit growth/leakage equation survives in the repository. It is **not yet reproducible enough to run a repair experiment**.
+Eq-11.1 remains the highest-priority distinct “active growth” candidate for the owner’s yeast-plus-mould hypothesis because an explicit growth/leakage equation survives in the repository. It is **not yet reproducible enough to run a repair experiment**.
 
-The immediate task is provenance reconstruction, not parameter tuning and not code promotion.
+The repository commit cited near the historical survivor claim does not presently provide an executable reproduction receipt. The immediate task remains provenance reconstruction, not parameter tuning and not code promotion.
 
 ## 2. Gate question
 
@@ -58,14 +58,41 @@ Commit message:
 docs: Formalize Eq-11.1 syntax and add Near-Threshold Coupling Corridor limits
 ```
 
-Initial inspection shows a documentation-heavy commit containing repository prose and auxiliary search/result files such as `found.txt`, `found2.txt`, `search_out.txt`, `search_results.txt`, and `phase_mismatch_results.txt`, plus unrelated or adjacent files including an Eq-9 escape-fold test. No Eq-11.1 survivor/reproduction solver has yet been identified in the returned changed-file evidence.
+### 5.1 Evidence actually recovered from the commit
 
-Direct fetches at that commit returned `404 Not Found` for:
+The changed-file evidence is documentation- and search-heavy. It includes repository prose plus auxiliary files such as:
+
+- `found.txt` and `found2.txt` — extracted prose lines about earlier Eq-4/Eq-8 claims and todo material, not executable Eq-11.1 code;
+- `search_out.txt` and other search files — Windows filesystem search listings, including many local `.scratch` paths;
+- `phase_mismatch_results.txt` — six summary values (`Survivors: 52`, `Decays: 44`, two mismatch summaries, effect size `0.142`) without equation, parameters, initializer, command, seed, or state artifact;
+- an adjacent Eq-9 escape-fold test and unrelated documentation/portal changes.
+
+`search_out.txt` contains no `eq11` match in the retrieved content. It is a path inventory rather than source code or a numerical receipt.
+
+No Eq-11.1 survivor/reproduction solver has been identified in the commit’s recovered changed-file evidence.
+
+### 5.2 Exact-path checks
+
+Direct fetches at the cited commit returned `404 Not Found` for:
 
 - `eval_closed_system_stress.py`;
 - `scripts/eval_closed_system_stress.py`.
 
-This is classified as `not_located_at_tested_paths`, not proof that no relevant code exists anywhere in the commit or its ancestry.
+These results are classified as `not_located_at_tested_paths`, not proof that no relevant code exists anywhere in the commit or ancestry.
+
+### 5.3 Current classification of `4b08ab1`
+
+| Property | Classification |
+|---|---|
+| equation prose | `historical_documentation_evidence` |
+| exact survivor executable | `not_located` |
+| complete parameter set | `not_recovered` |
+| initializer | `not_recovered` |
+| integration convention | `not_recovered` |
+| numerical output provenance | `insufficient`; summary text exists without runnable chain |
+| use as validation receipt | `prohibited` |
+
+The commit may establish when wording was introduced. It does not currently establish that the claimed Eq-11.1 survivor was reproducibly executed.
 
 ## 6. Required provenance matrix
 
@@ -101,7 +128,18 @@ If no candidate passes, the provenance lane ends with `no_reproducible_eq11_base
 
 This provenance work cannot establish particles, biology, heredity, consciousness, cosmology, or correspondence with nature. A successful baseline would establish only that one documented numerical mechanism can maintain one operationally defined structure under frozen simulation conditions.
 
-## 9. Continuous ledger
+## 9. Next provenance actions
+
+Before any implementation:
+
+1. identify commits that introduced and later modified Eq-11 and Eq-11.1 wording;
+2. inspect their complete changed-file lists for versioned scripts, tests, outputs, or parameter manifests;
+3. recover any referenced `.scratch` filenames from committed search artifacts while treating absent scratch contents as unavailable evidence;
+4. trace the later Phase 15–21 reconstruction chain separately from the original survivor claim;
+5. populate the provenance matrix before selecting an executable candidate.
+
+## 10. Continuous ledger
 
 - `2026-07-30 lane creation`: opened a separate live report before further Eq-11.1 archaeology or numerical implementation.
 - `initial retrieval`: recorded the explicit equation, all already known negative history, commit `4b08ab1`, and two failed exact-path fetches.
+- `source-commit classification`: inspected changed-file evidence, `found.txt`, `search_out.txt`, and `phase_mismatch_results.txt`; classified the cited commit as documentation/search evidence without a located Eq-11.1 executable or complete numerical chain.
