@@ -2,7 +2,7 @@
 
 **Status:** active mandatory synthesis companion for all child research under `research/foundations/`
 
-**Version:** 0.2.0  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-07-31
 
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -12,7 +12,9 @@
 
 **Broad ClickUp programme:** `869dpg9hb — Research: Formation and Stability of Standard Model Particles (Protons, Neutrons, Electrons) in the Lineum Wave Core`
 
-**Current child task:** `869ebyvpb — Research: Active Growth and Scaffold Repair (Eq-11.1 Provenance Gate)`
+**Current operational child task:** `869ebyvpb — Research: Active Growth and Scaffold Repair (Eq-11.1 Provenance Gate)`
+
+**Current conceptual child report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`
 
 ## 1. Answer first
 
@@ -24,11 +26,13 @@ The project-owner correction on 2026-07-30 is binding:
 
 Consequently, no mechanism may be selected, rejected, ranked, or promoted from the latest child report alone. Every child result must be interpreted against the full source-accounting, localization, transport, boundary, copying, identity, resource, abiogenesis, relativity, and open-variant history below.
 
-The 2026-07-31 whole-programme review further established that bounded Eq-11.1 provenance must not block the stronger current-Core discriminator. The primary numerical lane is recovery and exact replay of the retained P2 package followed, only if recovered, by a preregistered long-horizon centered-only C0 source-off continuation. Eq-11.1, the epsilon cycle, and Relic Foam remain parallel provenance or reconstruction families.
+The 2026-07-31 whole-programme review further established that bounded Eq-11.1 provenance must not block the stronger current-Core discriminator. The primary numerical lane is recovery and exact replay of the retained P2 package followed, only if recovered, by a preregistered long-horizon centered-only C0 source-off continuation. Eq-11.1, the epsilon cycle, Relic Foam, and the newly formalized branch-relative `mu` hypothesis remain parallel provenance, reconstruction, or conceptual families.
+
+The branch-relative `mu` report preserves the project-owner intuition that an unfiltered soul-like layer may span multiple reality layers while ego supplies a branch-relative filter. The report converts this metaphysical intuition into four distinct physical mechanism variants and hard Bell, no-signalling, decoherence, Born-rule, quantum-eraser, and accounting gates. It does not validate a soul, ego selection, quantum measurement, many worlds, consciousness, or physical correspondence.
 
 ## 2. Report lineage
 
-The active root and repair branches have the following lineage and cross-cutting decision companions:
+The active root and child branches have the following lineage and cross-cutting decision companions:
 
 ```text
 lineum-continuous-source-cosmology-validation.md v0.4.14
@@ -46,6 +50,8 @@ lineum-continuous-source-cosmology-validation.md v0.4.14
                                     +-- lineum-eq11-epsilon-relic-foam-provenance-comparison.md v0.1.0
                                             |
                                             +-- lineum-eq11-epsilon-relic-foam-whitepaper-claim-correction-map.md v0.1.0
+                                            |
+                                            +-- lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md v0.1.0
 ```
 
 The versions above are the values recovered at this checkpoint. They are historical coordinates, not permanent assumptions. Re-fetch every file and update this ledger when any version or SHA changes.
@@ -62,7 +68,7 @@ The broad programme first asks whether the present Lineum dynamics can produce a
 - supported by a declared energy, resource, and information account;
 - capable of repair or copying only if content-specific controls pass.
 
-Mapping such a process to protons, neutrons, electrons, quarks, life, cognition, cosmology, or nature is a later gate and must never be an input assumption.
+Mapping such a process to protons, neutrons, electrons, quarks, life, cognition, cosmology, souls, ego, quantum measurement, entanglement, or nature is a later gate and must never be an input assumption.
 
 ## 4. Inherited implementation and source-accounting facts
 
@@ -80,7 +86,7 @@ physical_fuel_reservoir_not_demonstrated;
 complete_source_energy_ledger_open
 ```
 
-`phi` and `mu` can carry state and feedback, but neither presently closes the source-energy account. `kappa` is supplied rather than canonically evolved. A mechanism that raises field norm therefore cannot be called fuel, metabolism, vacuum energy, or a closed cycle without an explicit debit, stock, return path, and residual audit.
+`phi` and `mu` can carry state and feedback, but neither presently closes the source-energy account. `kappa` is supplied rather than canonically evolved. A mechanism that raises field norm therefore cannot be called fuel, metabolism, vacuum energy, cross-branch capacity, or a closed cycle without an explicit debit, stock, return path, and residual audit.
 
 ### 4.2 Pump and randomness have different causal roles
 
@@ -108,7 +114,7 @@ P2 ran 168 trajectories across two source families and seven schedules.
 
 A centered-only formation period left a reproducible source-off late multi-defect signal in `12/12` seeds. Over the late window its mean defect count was `20.5232`, final-frame mean `15.6667`, mean resolved-core fraction `0.974687`, minimum resolved-core fraction `0.941535`, mean overlap `0.99999892`, and mean orientation `0.990655`.
 
-This did not pass the whole-movie population rule and did not assign persistent object identities. It is classified as a transported multi-defect or vortex-gas remnant, not a localized particle.
+This did not pass the whole-movie population rule and did not assign persistent object identities. It is classified as a transported multi-defect or vortex-gas remnant, not a localized particle, observer, ego, or branch.
 
 For complete `F0`, formation-only and continuous-to-30 schedules reached winding extinction in `12/12` seeds while retaining a larger smooth norm. Formation-only extinction occurred at mean model time `28.13`.
 
@@ -116,9 +122,9 @@ Restart behavior established descriptive history gating only. Compared states an
 
 ## 5. Inherited observer constraints
 
-The frozen v3 minimum-flux observer measures coherent resolved transport, but it is not a particle, identity, or lineage observer. Frozen and advected smooth disorder can also pass.
+The frozen v3 minimum-flux observer measures coherent resolved transport, but it is not a particle, identity, lineage, observer-memory, ego, or branch observer. Frozen and advected smooth disorder can also pass.
 
-Every later localization, survival, repair, or copying claim must therefore include observers that separately test:
+Every later localization, survival, repair, copying, identity, or branch claim must therefore include observers that separately test:
 
 - topological winding or another explicit structure invariant;
 - localization against energy-matched, shifted, shuffled, and phase-randomized nulls;
@@ -127,9 +133,11 @@ Every later localization, survival, repair, or copying claim must therefore incl
 - source-off persistence;
 - content dependence for copying or heredity;
 - boundary and resolution refinement;
-- distinction between a hollow topological core and a filled scalar puddle.
+- distinction between a hollow topological core and a filled scalar puddle;
+- registered observer-memory consistency for any branch-relative claim;
+- local marginal invariance for any nonlocal or cross-branch correlation claim.
 
-A single transport score, amplitude plateau, image resemblance, or high correlation is non-identifying.
+A single transport score, amplitude plateau, image resemblance, high correlation, memory trace, or branch diagram is non-identifying.
 
 ## 6. Inherited boundary and scaffold evidence
 
@@ -143,7 +151,7 @@ Current classification:
 supported_numerical_domain_decomposition_for_frozen_linear_subset
 ```
 
-This is not evidence of a physical membrane, independent universe, particle boundary, dynamic scaffold, or nonlinear/stochastic seam.
+This is not evidence of a physical membrane, independent universe, reality branch, particle boundary, dynamic scaffold, or nonlinear/stochastic seam.
 
 ### 6.2 ST1C current-field passive membrane gate
 
@@ -166,7 +174,7 @@ Current classification:
 passive_elastic_reversible_membrane_from_tested_current_field_roles_unsupported
 ```
 
-This does not reject delayed, nonlinear, stochastic, active, state-responsive, born/deleted, topology-changing, or new-state boundaries. Those remain separate variants.
+This does not reject delayed, nonlinear, stochastic, active, state-responsive, born/deleted, topology-changing, relational, branch-aware, or new-state boundaries. Those remain separate variants.
 
 ## 7. Inherited copying, heredity, and synthetic-life evidence
 
@@ -187,7 +195,7 @@ Current classification:
 current_deterministic_and_stochastic_copying_unsupported_under_tested_conditions
 ```
 
-This does not reject RNA-like complement cycles, content-dependent stochastic coupling, dynamic membranes, three-dimensional domains, topology-changing compartments, multilevel reproduction, or abiogenesis. It does prohibit treating activity amplification or generic reconstruction as copying.
+This does not reject RNA-like complement cycles, content-dependent stochastic coupling, dynamic membranes, three-dimensional domains, topology-changing compartments, multilevel reproduction, branch-relative observer histories, or abiogenesis. It does prohibit treating activity amplification, shared ancestry, branching, or generic reconstruction as copying.
 
 ### 7.2 AB1-E engineered accounting prerequisite
 
@@ -210,7 +218,7 @@ Current classification:
 
 ```text
 exact_software_continuation_supported;
-heredity_repair_and_autonomous_copying_not_established
+heredity_repair_identity_and_autonomous_copying_not_established
 ```
 
 ### 7.4 Static recipe versus live state
@@ -253,7 +261,7 @@ static_structured_kappa_as_weak_passive_shaper_supported;
 mu_x_kappa_repair_synergy_unsupported_under_tested_conditions
 ```
 
-The broader active-process-plus-scaffold hypothesis remains open for causally different mechanisms.
+The broader active-process-plus-scaffold hypothesis remains open for causally different mechanisms. The negative result motivates investigation of relational `mu`, but it supplies no positive evidence for that replacement.
 
 ### 8.2 Eq-11.1 provenance gate
 
@@ -302,6 +310,37 @@ commit: c192fa31e43f0ee5a1465bd97d942ce757c1c947
 
 It maps overstrong `canonical`, `validated`, `immortal`, `closed`, `healed`, `re-ignited`, `memory`, particle, and physical-cosmology wording without changing any whitepaper.
 
+### 8.4 Branch-relative `mu` identity and entanglement hypothesis
+
+The project-owner proposed that experience may be rooted in a wider `mu` layer rather than only the active `Psi/Phi` branch, that ego may operate as a branch-relative filter, and that an unfiltered soul-like layer may span multiple correlated reality layers.
+
+The permanent formalization is:
+
+```text
+research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md
+commit: 78c7d82356b70f54099e41ca737fc38de8595b6a
+```
+
+The report separates:
+
+```text
+M0 ordinary local memory null;
+M1 branch-indexed copied continuity;
+M2 shared global mu with local projections;
+M3 explicit cross-branch correlation kernel M_ab
+```
+
+It records the implementation correction that current `mu` already has local write-and-feedback coupling. The missing proposed ingredient is therefore not generic coupling, but branch-aware, relational, nonlocal, or off-diagonal structure. No current Core mechanism implements quantum entanglement, observer selection, ego, a soul, the Born rule, Bell correlations, no-signalling, or quantum-eraser behavior.
+
+Current classification:
+
+```text
+owner_hypothesis_preserved;
+physical_mechanism_untested;
+current_local_mu_entanglement_absent;
+soul_and_ego_mapping_metaphorical_until_operationally_defined
+```
+
 ## 9. Open programme branches that must remain visible
 
 | Branch | Current status | Cheapest next discriminator or reopen condition |
@@ -309,7 +348,7 @@ It maps overstrong `canonical`, `validated`, `immortal`, `closed`, `healed`, `re
 | P2 retained package recovery | `blocked_by_current_execution_access` | recover exact runner, observer, environment, and output through a reliable local repository route; never approximate from prose |
 | C0 long source-off continuation | `primary_numerical_queue_after_P2_recovery` | replay P2 baseline exactly, then extend only the horizon and observation windows |
 | P3 same-state future-history replay | `open` | replay the same detected state under independent future random streams and separate visible-state variance from future-history variance |
-| P4 slow-medium causal ablations | `open` | freeze, reset, shuffle, and delay `phi` and `mu` while holding the fast state fixed; only then test one explicitly evolved `kappa` |
+| P4 slow-medium causal ablations | `open_and_conservative_mu_null` | freeze, reset, shuffle, and delay `phi` and current local `mu` while holding the fast state fixed; only then test one explicitly evolved `kappa` |
 | explicit resource reservoir | `open` | require a finite stock, debit, transfer, loss, return path, and closed residual before interpreting activity as fuel |
 | robustness and boundary qualification | `open` | extend horizon, refine timestep and grid, separate periodic from open boundaries, and preserve frozen observers |
 | substrate/noise hypotheses | `open` | compare seed, selector, pump, repair-bath, and numerical-null roles without ontological labels |
@@ -317,34 +356,39 @@ It maps overstrong `canonical`, `validated`, `immortal`, `closed`, `healed`, `re
 | historical `epsilon` cycle | `dormant_reconstruction_candidate` | recover complete equations and resource residual; distinguish amplitude shock recovery from spatial regrowth |
 | active Relic Foam/environment | `dormant_reopenable` | reproduce parent formation, aging, local lesion, re-ignition, repeated-hit fatigue, and environmental co-stabilization with source accounting |
 | Quantum Foam / emergent-mu | `hypothesis_only_and_implementation_conflict` | define equations and reconcile the proposal with explicit active-Core `mu` |
+| branch-relative `mu` integration | `owner_hypothesis_formalized` | complete Q0 formal comparison of M0-M3, then a finite-dimensional measurement/memory toy model |
+| `mu` cross-branch kernel | `new_mechanism_untested` | derive Bell/no-signalling, Born-weight, decoherence, quantum-eraser, and accounting behavior before PDE mapping |
 | dynamic state-responsive scaffold | `untested` | introduce only one declared dynamic degree of freedom and require storage, return, source-off persistence, and ablation |
 | compressed generative controller | `untested_high_target_copying_risk` | require compression, transfer, causal ablation, unseen-target generalization, and comparison with direct target injection |
 | delayed/active/new membrane | `untested` | compare against ST1C passive-field failures with explicit storage and reciprocal return |
 | RNA-like complement and topology-changing copying | `untested` | require parent-specific content transfer, wrong-parent controls, mutation accounting, and second generation |
 | Standard Model mapping | `blocked_by_generic_particle_gate` | first establish a source-blind localized persistent process with non-circular observers |
-| physical universe, life, identity, cognition, and cosmology claims | `unresolved` | require independent empirical and theoretical comparison after the numerical mechanism is established |
+| soul, ego, measurement, entanglement, identity, cognition, and physical-universe claims | `unresolved` | require an explicit mechanical model, quantum-compatibility gates, independent reproduction, and empirical discrimination |
 
 This registry is incomplete by design. Newly recovered historical, conventional, cross-disciplinary, or project-owner variants must be added rather than forced into one of the existing labels.
 
-## 10. Root-programme impact matrix for the current mechanism-provenance lane
+## 10. Root-programme impact matrix for the current mechanism-provenance and identity lanes
 
 | Root branch | Relationship | Required handling |
 |---|---|---|
-| source accounting | `constrains` all three mechanism families | distinguish active growth, local recycling, residual redistribution, and physical fuel |
-| P1/P2 formation and schedules | `constrains` | separate symmetry breaking, dense population activity, smooth norm growth, localized survival, environmental assistance, and repair |
-| C0 primary continuation | `unaffected` by provenance and remains higher priority | do not let historical archaeology block an already observed current-Core source-off phenomenon |
-| observer audit | `constrains` | transport, amplitude, node count, local gap closure, and secondary emission cannot qualify an object alone |
-| ST1B seam | `unaffected` for provenance; later `depends_on` only for numerical decomposition | do not interpret a reversible split as a physical mould or environment |
-| ST1C passive membrane | `contradicts` any assumption that tested current passive fields already provide a complete reversible scaffold | keep epsilon new-state and foam history-dependent variants distinct |
-| AB1-C copying | `constrains` | repair or secondary emission cannot be relabelled as copying without parent-specific content controls |
-| AB1-E engineered accounting | `constrains` | use explicit ledgers; inserted life mechanics remain engineering controls, not emergence evidence |
-| deterministic transplant | `observationally_equivalent` only to exact replay | do not infer self-maintenance or identity |
-| static recipe matrix | `supports` the need for runtime causality and `contradicts` a passive provenance-only recipe | require intervention and source-off persistence |
-| `mu x kappa` matrix | `motivates` causally distinct active/environment families but supports none of them | preserve alternatives without inheriting evidence |
-| Eq-11.1 | `active_provenance_only` | no numerical repair execution without a complete baseline receipt |
-| epsilon cycle | `reopens` explicit resource architecture | distinguish local circulation from verified conservation and shock recovery from regrowth |
-| Relic Foam | `reopens` a residual environment state | distinguish node-count re-equilibration, transient emission, fatigue, and transport shaping |
-| Quantum Foam | `not_same_mechanism` | preserve as a separate hypothesis with active-implementation conflict |
+| source accounting | `constrains` all mechanism families | distinguish active growth, local recycling, residual redistribution, local memory, cross-branch correlation, and physical fuel |
+| P1/P2 formation and schedules | `constrains` | separate symmetry breaking, dense population activity, smooth norm growth, localized survival, environmental assistance, branch language, and repair |
+| C0 primary continuation | `unaffected` by conceptual `mu` work and remains higher numerical priority | do not let ontology block an already observed current-Core source-off phenomenon |
+| observer audit | `reopens` for the `mu` lane | transport, amplitude, node count, memory trace, local gap closure, and secondary emission cannot qualify an object or ego alone |
+| ST1B seam | `unaffected` | do not interpret a reversible numerical split as a universe branch |
+| ST1C passive membrane | `contradicts` any assumption that current passive fields already provide complete storage | any global or branch-aware `mu` must declare storage and reciprocal effects |
+| AB1-C copying | `constrains` | branching and shared history cannot be relabelled as reproduction or heredity |
+| AB1-E engineered accounting | `constrains` | use explicit ledgers; inserted observer or branch mechanics remain engineering controls |
+| deterministic transplant | `observationally_equivalent` only to exact replay | copied software state is not proof of one continuing ego |
+| static recipe matrix | `supports` the need for runtime causality | broad resemblance is not branch identity |
+| `mu x kappa` matrix | `motivates` causally distinct `mu` families but supports none | preserve negative local-reinforcement evidence |
+| Eq-11.1 | `unaffected` by branch-aware `mu` | no evidence transfer |
+| epsilon cycle | `not_yet_compared` with branch-aware `mu` | resource stock and identity integration must remain separate |
+| Relic Foam | `not_yet_compared` with branch-aware `mu` | environmental scars are not cross-branch continuity |
+| Quantum Foam | `not_same_mechanism` | primordial fractal substrate differs from branch-relative integration |
+| P3 future-history replay | `supports` a precursor question | same visible state with different future histories can help separate state from history |
+| P4 slow-medium ablations | `depends_on` before new `mu` architecture | current local `mu` is the required conservative null |
+| Bell/no-signalling/Born/decoherence/eraser evidence | `constrains` | no branch-aware mechanism is viable without these gates |
 | P3-P7 and alternative families | `not_yet_numerically_compared` | retain full registry and dependency order |
 
 ## 11. Immediate decision rule
@@ -357,31 +401,39 @@ The current decision order is:
 4. preserve epsilon as a dormant explicit-resource reconstruction candidate;
 5. preserve Relic Foam as a dormant residual-environment candidate with documented aging, transient emission, and fatigue qualifications;
 6. preserve Quantum Foam separately as hypothesis-only;
-7. use the completed whitepaper claim-correction map for later editorial review, but do not edit canonical text until the promotion gate is opened;
-8. authorize a future numerical mechanism experiment only when its prerequisite package is complete and its protocol discriminates across the combined programme.
+7. preserve the branch-relative `mu` proposal as a separate conceptual lane, not evidence for any prior family;
+8. begin that conceptual lane with Q0 formal comparison of M0-M3 and a simple physical memory register, not human consciousness;
+9. require Bell, no-signalling, Born-rule, decoherence, quantum-eraser, and accounting compatibility before considering a PDE implementation;
+10. use the completed whitepaper claim-correction map for later editorial review, but do not edit canonical text until the promotion gate is opened;
+11. authorize a future numerical mechanism experiment only when its prerequisite package is complete and its protocol discriminates across the combined programme.
 
-The superseded v0.1.0 ordering that placed bounded Eq-11.1 retrieval before whole-programme re-ranking remains visible in Git history. Version 0.2.0 does not erase that decision; it records why the programme order changed.
+The superseded v0.1.0 ordering that placed bounded Eq-11.1 retrieval before whole-programme re-ranking remains visible in Git history. Version 0.3.0 does not erase earlier decisions; it records why the programme order changed and how the new `mu` intuition enters without inheriting evidence.
 
 ## 12. Prohibited interpretations
 
-This continuity ledger does not validate any equation, particle, membrane, fuel, identity, heredity, life process, cosmology, or physical correspondence.
+This continuity ledger does not validate any equation, particle, membrane, fuel, identity, heredity, life process, cosmology, soul, ego, many-world ontology, quantum measurement mechanism, entanglement mechanism, or physical correspondence.
 
 It validates only the research hierarchy and preserves the decision constraints already recorded by the root and child reports. Numerical and physical claims retain the evidence status assigned by their original reproducible programmes.
 
-The three-family provenance comparison and editorial map do not validate their source-whitepaper claims. They classify evidence and contradictions only.
+The three-family provenance comparison and editorial map do not validate their source-whitepaper claims. The branch-relative `mu` report preserves and formalizes a project-owner intuition; it does not validate its metaphysical or physical interpretation.
 
 ## 13. Continuous ledger
 
 - `2026-07-30 owner correction`: the owner required explicit continuation from the complete Codex research report and prohibited concentration on only the latest lanes.
 - `root recovery`: recovered `lineum-continuous-source-cosmology-validation.md` version `0.4.14`, evidence cutoff `2026-07-29`, blob SHA `3fba3925553cd5596e46c02fa35d1db91523537d`.
-- `lineage reconstruction`: connected the root report to deterministic transplant, static-recipe/live-state, active-growth/scaffold, and Eq-11.1 provenance reports.
+- `lineage reconstruction`: connected the root report to deterministic transplant, static-recipe/live-state, active-growth/scaffold, Eq-11.1 provenance, three-family comparison, and subsequent conceptual lanes.
 - `inherited evidence synthesis`: preserved source accounting, P1/P2, observer limitations, ST1B, ST1C, AB1-C, AB1-E, transplant, static-recipe, `mu x kappa`, and Eq-11.1 constraints.
-- `open registry`: retained P3-P7, `epsilon`, foam, dynamic scaffold, controller, new membrane, RNA-like copying, generic-particle, and physical-universe branches.
+- `open registry`: retained P3-P7, `epsilon`, foam, dynamic scaffold, controller, new membrane, RNA-like copying, generic-particle, branch-relative `mu`, and physical-universe branches.
 - `2026-07-30 decision correction`: limited Eq-11.1 priority to its child subprogramme and required a whole-programme re-ranking before the next mechanism experiment.
 - `2026-07-31 whole-programme re-ranking`: selected retained P2 recovery and long C0 source-off continuation as the primary numerical queue; moved Eq-11.1 to a parallel bounded provenance queue.
 - `P2 execution deferral`: preserved the exact Codex recovery brief but recorded that current execution access is unavailable; prohibited approximate reconstruction.
 - `three-family mechanism separation`: commit `33ae087a27913420e9fabe807db52bf52e32e69c` separated Eq-11.1 local growth/leakage, epsilon explicit circulation, Relic Foam residual environment, and Quantum Foam speculation.
 - `three-family evidence verdict`: no family is authorized for numerical repair; epsilon shock recovery is not spatial regrowth; foam local healing is not content reconstruction; foam true re-ignition and infinite reuse are negative in the documented qualification.
 - `whitepaper claim-correction map`: commit `c192fa31e43f0ee5a1465bd97d942ce757c1c947` mapped overstrong and contradictory wording without changing source whitepapers.
-- `external analogy audit`: driven dissipative solitons and metastable physical foams were used only as causal-structure comparisons, never as validation of Lineum or nature claims.
-- `operational limitation`: cross-repository connector searches were blocked by upstream errors and ClickUp was rate-limited; neither absence nor task state was inferred.
+- `branch-relative mu owner intuition`: commit `78c7d82356b70f54099e41ca737fc38de8595b6a` preserved the unfiltered-soul / filtered-ego proposal and the possibility that experience is rooted in a richer `mu` relation rather than only local `Psi/Phi` dynamics.
+- `mu implementation correction`: recorded that current `mu` already has local write-and-feedback coupling; the proposed missing ingredient is branch-aware, relational, nonlocal, or off-diagonal structure rather than generic coupling.
+- `mu mechanism split`: separated M0 local memory, M1 branch-indexed continuity, M2 global projected `mu`, and M3 explicit cross-branch kernel.
+- `quantum compatibility gates`: registered Bell, no-signalling, decoherence, Born-rule, quantum-eraser, observer-memory, and accounting requirements before any PDE mapping.
+- `research ordering`: preserved P2/C0 as the main numerical programme and queued Q0-Q4 as a parallel ChatGPT conceptual programme.
+- `external analogy and constraint audit`: external quantum references constrain the branch-relative hypothesis only; they do not validate Lineum or nature claims.
+- `operational limitation`: the root report body was not returned by the GitHub Contents connector because of its extreme size; its immutable SHA and the current ledger were reverified. ClickUp was not read or updated in this checkpoint.
