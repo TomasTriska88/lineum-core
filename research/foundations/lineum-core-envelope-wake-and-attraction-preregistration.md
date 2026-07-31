@@ -1,473 +1,578 @@
-# Core, Envelope, Wake, and Attraction Decomposition Preregistration
+# Core, Collective, Envelope, Wake, and Attraction Decomposition Preregistration
 
 **Status:** active preregistration  
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-07-31  
 **Repository:** TomasTriska88/lineum-core  
 **Target branch:** develop  
-**Scope:** This report preregisters a no-equation-change intervention programme for separating a transported Lineum structure into a compact core, a required near envelope, an outgoing wake, and the far environment before interpreting any gravity-like attraction. It also preserves the research provenance that the observed attraction may be only one projection of richer dynamics whose opposite contribution is stored in an unobserved field component, wake flow, boundary mode, phase or correlation structure, or a coupled depth-like layer.  
-**Central questions:** What part of the observed broad transported structure is the object? Which surrounding disturbance is required for its persistence? Which part is merely a wake? Which component carries the measured attraction-like response? Does an opposite contribution exist elsewhere in the declared state and accounting domain?  
-**Current confidence:** high that the decomposition problem is decision-relevant; medium that the present observer may conflate core and wake; low that any specific hidden-compensation mechanism is correct; no evidential support yet for identifying the simulated attraction with physical gravity or for claiming a verified deviation from general relativity.
+**Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
+**Recovered root version:** 0.4.14  
+**Root evidence cutoff:** 2026-07-29  
+**Mandatory continuity companion:** `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, recovered version 0.3.0, evidence cutoff 2026-07-31  
+**Scope:** This report preregisters a no-equation-change programme for deciding whether a broad transported Lineum structure is best described as a compact core with a required envelope and separable wake, as a self-maintaining collective of vortices whose identity lies in relational and macroscopic invariants, as a non-identifying vortex gas, or as a hybrid of these classes. Only after that decision may the programme decompose any attraction-like response or search for a compensating contribution in the declared state and accounting domain.  
+**Central questions:** Is the observed entity a compact object, a collective object, a population-level remnant, or an observer artifact? Which parts are causally required for persistence, repair, motion, and attraction-like response? Can collective identity survive turnover of individual vortices? Does an opposite contribution exist elsewhere in the same layer, at the boundary, or in a relational observable?  
+**Current confidence:** high that the object-definition problem is decision-relevant; medium that the current observer conflates collective body, envelope, and wake; medium that collective identity is a scientifically plausible alternative deserving direct tests; low that either the compact-core or collective-particle ontology is correct; no evidential support yet for identifying the simulated response with physical gravity or for claiming a verified deviation from general relativity.
 
 ## 1. Answer first
 
-The next useful Lineum experiment is not another parameter search and not an immediate new field. It is a causal disassembly of the moving structure.
+The broad structure must not be forced into a bead-like particle model.
 
-The practical picture is a duck crossing a pond. The duck is not the entire disturbed region behind it. The nearby water may be required for swimming, the long wake may carry away energy or momentum, and a return current may close the flow somewhere that a surface-only observer does not see. A detector that labels every disturbed patch as part of the duck will overestimate the object's size and may misidentify the source of its motion or attraction.
+Two ontologies are now frozen as equally admissible:
 
-This analogy is used only to generate distinct, falsifiable tests. It is not evidence that Lineum fields are water, that a Lineum structure is alive, or that gravity is literally fluid flow.
+```text
+Model A — compact process:
+    a compact core is the principal object;
+    a bounded near envelope may be functionally required;
+    a downstream wake may be passive, propulsive, compensating, or partly constitutive.
 
-The frozen first-stage decision is:
+Model B — collective process:
+    no individual vortex is privileged;
+    the object is a stable organization of many vortices;
+    individual members may appear, disappear, or exchange while the collective
+    preserves macroscopic and relational properties.
+```
+
+The everyday picture for Model B is a flock of birds. A flock has a position, scale, heading, shape, response to obstacles, and recovery after disturbance even though its individual members move through different internal positions. The flock is not a substance added on top of the birds. It is a persistent organization generated by local interactions.
+
+In Lineum this analogy is stronger only if the apparent flocking rules arise from the existing field evolution. Vortices are not coded agents with explicit separation, alignment, and cohesion commands. Any collective organization must emerge from the declared `Psi`, `Phi`, `mu`, and `kappa` dynamics and must outperform matched vortex-gas controls.
+
+The frozen first-stage decision is therefore:
 
 ```text
 Do not change the Core equation.
 Do not add a depth field.
-Do not promote a new public-library concept.
-First separate core, near envelope, wake, and far environment by causal interventions.
+Do not insert boids rules or explicit agent logic.
+Do not promote a collective-particle concept into the public library or whitepaper.
+Recover and replay the exact retained P2 state.
+Then test compact, collective, gas, and hybrid interpretations adversarially.
 ```
 
-## 2. Provenance recovery ledger
+## 2. Report lineage and inherited programme constraints
 
-This preregistration preserves the decision-relevant content recovered from the preceding research discussion so that no conclusion depends on chat history.
-
-### 2.1 Broad transported structure
-
-A previous Lineum observation was described as a moving object that leaves a broad trail. The unresolved concern was whether the wide disturbed region means:
-
-- localization failed;
-- the observer incorrectly includes the wake in the object;
-- the medium relaxes too slowly;
-- the wake is a propulsion exhaust;
-- a compensating return flow is missing or unobserved;
-- a two-dimensional layer has no channel into which the disturbance can disperse;
-- the structure lacks front-back geometry and therefore radiates broadly;
-- the moving entity is not a compact particle but a maintained process involving a core and surrounding flow.
-
-The existing evidence did not establish an isolated particle ontology. It supported only a transported organized structure within the tested simulation lane.
-
-### 2.2 Pond and duck analogy
-
-The working mapping proposed in the discussion was:
+The active lineage is:
 
 ```text
-Psi   -> fast activity, wave-like disturbance, and immediate dynamics;
-Phi   -> responsive medium and transported environmental state;
-kappa -> accessibility, geometry, obstacles, or local transport structure;
-mu    -> slow causal memory of prior activity in the current implementation;
-vortex -> organized rotation in the modeled medium;
-linon -> model-specific local generation event, with no claim that it is a literal bubble or droplet.
+lineum-continuous-source-cosmology-validation.md v0.4.14
+    |
+    +-- lineum-root-programme-continuity-and-impact-ledger.md v0.3.0
+            |
+            +-- lineum-core-envelope-wake-and-attraction-preregistration.md v0.2.0
 ```
 
-The duck itself was used as a picture of a maintained process with a boundary, internal organization, energy exchange, and directed interaction with its surroundings. This is a hypothesis-generation analogy only.
+This child report does not reset the root programme. It inherits all source-accounting, observer, localization, topology, boundary, transplant, copying, identity, and physical-correspondence restrictions.
 
-### 2.3 Three original intervention ideas
+The most important inherited constraints are:
 
-The discussion proposed three immediate causal tests:
+1. the current coherent source is a software pump, not a demonstrated physical fuel reservoir;
+2. centered stochastic activity can nucleate dense defects, but no stable localized object has yet been demonstrated;
+3. the existing minimum-flux observer can be passed by smooth or transported disorder and is not an identity observer;
+4. source-off persistence of a population does not by itself establish a particle;
+5. exact software-state continuation is not heredity, autonomous repair, or physical identity;
+6. any physical gravity, particle, quantum, biological, or cosmological interpretation remains downstream of simulation-level causal evidence.
 
-1. **Duck without wake:** transplant the same core into a clean environment.
-2. **Wake without duck:** remove the core and preserve only the trail.
-3. **Immobilized duck:** prevent core displacement and observe whether the surroundings relax.
+## 3. Provenance recovery ledger
 
-This report retains those tests and adds component-wise attraction, boundary, accounting, and observer controls.
+### 3.1 The retained P2 observation
 
-### 2.4 Wide-wake interpretations retained
+The current decision-relevant candidate is the retained P2 source-schedule result, not the historical unseeded 2025 visualization lane.
 
-The following mutually competing repair classes must remain open until tested:
+P2 ran 168 trajectories across two source families and seven schedules. A centered-only formation period left a reproducible late source-off multi-defect signal in 12 of 12 seeds. The inherited summary records:
 
 ```text
-W0 observer conflation:
-    the object mask includes passive environmental disturbance;
-
-W1 slow relaxation:
-    Phi or mu returns to baseline too slowly after passage;
-
-W2 propulsion exhaust:
-    the wake is causally required for motion and carries an opposite flux;
-
-W3 missing return circulation:
-    the implementation contains outward disturbance without a closed return path;
-
-W4 hidden same-layer compensation:
-    an opposite contribution exists in the far field, phase, correlation, or boundary flux;
-
-W5 missing depth-like channel:
-    a second coupled mode is required for flow closure or disturbance removal;
-
-W6 unsuitable object geometry:
-    excessive symmetry or absent front-back structure generates a broad wake;
-
-W7 distributed process identity:
-    some near-environment region is genuinely part of the functioning object.
+late-window mean defect count:          20.5232
+final-frame mean defect count:          15.6667
+late mean resolved-core fraction:       0.974687
+minimum resolved-core fraction:         0.941535
+late mean overlap:                      0.99999892
+late mean orientation:                  0.990655
 ```
 
-No class is privileged by the analogy.
+The result failed the whole-movie population rule and did not assign persistent identities to individual objects. The correct retained classification is:
 
-### 2.5 Attraction and hidden compensation provenance
+```text
+transported multi-defect or vortex-gas remnant;
+not yet a localized particle;
+not yet a collective particle;
+not yet an observer, branch, organism, or physical object.
+```
 
-A public discussion raised a second possibility: even when the resultant gravitational acceleration can cancel vectorially, an observed one-sign attraction may still be a projection of richer dynamics whose positive and negative contributions are not both visible to the chosen observer.
+This classification is conservative, but it does not test the project-owner's new hypothesis that the entire multi-vortex organization is the object. High frame-to-frame overlap and orientation are compatible with collective identity, frozen or advected disorder, a coherent population mode, or an observer artifact. A new relational observer and causal perturbations are required.
 
-The retained Lineum research question is therefore:
+### 3.2 Broad wake and pond analogy
 
-> Does the measured attraction-like acceleration arise from one locally visible projection while an opposite reaction, flux, or compensating contribution is stored in another declared component or outside the measured subdomain?
+The earlier discussion described a moving structure with a broad trail. The pond mapping was:
 
-Candidate locations include:
+```text
+Psi     -> fast activity, wave-like disturbance, and immediate dynamics;
+Phi     -> responsive medium and transported environmental state;
+kappa   -> accessibility, geometry, obstacles, or local transport structure;
+mu      -> slow causal memory of prior activity in the current implementation;
+vortex  -> organized rotation in the modeled medium;
+linon   -> model-specific local generation event, not a literal bubble or droplet.
+```
 
-- another existing field component;
-- an opposite flow in the near envelope or wake;
-- a distant same-layer return flow;
-- a boundary flux;
-- phase information or cross-field correlations;
-- a global mode removed by a local scalar observer;
-- only after same-layer controls fail, a separately preregistered coupled depth-like mode.
+The analogy generated the original interventions:
+
+1. duck without wake: transplant a compact candidate into a clean environment;
+2. wake without duck: remove the compact candidate and retain the trail;
+3. immobilized duck: prevent translation and observe environmental relaxation.
+
+These remain valid for Model A and hybrid models. They are insufficient for Model B because a flock has no necessary single bird corresponding to a unique core.
+
+### 3.3 Project-owner collective-particle hypothesis
+
+The project owner proposed on 2026-07-31:
+
+> The particle may be the flock itself, analogous to birds: simple local constraints among vortices could produce an emergent structure.
+
+Formalized operationally:
+
+> A Lineum collective-particle candidate is a bounded, transported, self-maintaining organization whose macroscopic and relational invariants persist or recover despite turnover, removal, displacement, or exchange of individual detected vortices.
+
+This hypothesis does not assume consciousness, life, agency, intention, or explicit agent rules. It asks whether a higher-level identity can be causally real even when no microscopic member is permanently privileged.
+
+### 3.4 Competing interpretation classes
+
+The complete frozen set is:
+
+```text
+H0 observer artifact:
+    apparent persistence is created by a non-identifying observer, smoothing,
+    periodic translation, thresholding, or baseline subtraction.
+
+H1 vortex gas:
+    only population statistics persist; there is no bounded recoverable individual.
+
+H2 compact-core object:
+    a small causally privileged region is necessary and approximately sufficient.
+
+H3 collective object:
+    relational and macroscopic organization is necessary and sufficient even when
+    individual vortex membership turns over.
+
+H4 hybrid collective core plus envelope and wake:
+    a collective body is the object, a bounded surrounding field is required,
+    and a separable outgoing wake remains.
+
+H5 distributed field process:
+    no clean body-wake boundary exists, but a larger causally closed pattern may persist.
+```
+
+No class is privileged by visual compactness or by the flock analogy.
+
+### 3.5 Wake and hidden-compensation hypotheses retained
+
+The wake may still be:
+
+```text
+W0 observer conflation;
+W1 slow relaxation in Phi or mu;
+W2 propulsion exhaust;
+W3 missing return circulation;
+W4 hidden same-layer compensation;
+W5 missing depth-like channel;
+W6 unsuitable front-back geometry;
+W7 a genuine component of distributed identity.
+```
+
+A separate public discussion suggested that observed one-sign attraction might be one projection of richer dynamics with an opposite reaction, flux, or contribution elsewhere. Candidate locations remain another existing field component, the collective interior, the near envelope, the wake, a distant return flow, a boundary flux, phase or correlation information, or a global mode removed by the observer.
 
 This is an untested family, not a finding.
 
-### 2.6 Related mu-Phi and completion-residual discussion
+### 3.6 Mu-Phi reconstruction and completion residual
 
-Earlier research separately examined whether current `mu` can be reconstructed from consecutive `Phi` history. In one regular deterministic unsaturated lane with uniform `kappa`, exact closed-loop reconstruction was supported to floating-point tolerance. Universal `Phi` sufficiency was falsified by saturation and a `kappa = 0` hidden-threshold counterexample.
+Prior work found that current `mu` could be reconstructed from consecutive `Phi` history in one regular deterministic unsaturated lane with uniform `kappa`, while universal `Phi` sufficiency was falsified by saturation and a `kappa = 0` hidden-threshold counterexample.
 
-That prior result constrains the present work:
+Consequences for this programme:
 
 - `mu` must not automatically be treated as an independent hidden substance;
-- a broad wake can include memory encoded across `Phi` history;
-- explicit many-to-one operations such as clipping and masking can destroy observer information;
-- ordinary `float64` roundoff must be distinguished from explicit projection loss;
-- a residual must be measured before it is named quantum, cross-universe, dark matter, Heka, spirit, or another ontology.
+- collective identity may depend on history distributed across fields rather than a single snapshot;
+- clipping, masking, thresholding, or coarse observers can erase relational information;
+- ordinary `float64` roundoff must remain distinct from explicit many-to-one projection loss;
+- an unexplained residual must be measured before it is named quantum, dark matter, another universe, Heka, spirit, or another ontology.
 
-The Eye-of-Horus and Rhind-papyrus dyadic sequence
+The Eye-of-Horus and Rhind-papyrus dyadic sequence summing to `63/64` is retained only as provenance for a finite multiscale observer and unresolved completion residual. It is not evidence for collective particles, wakes, or gravity.
 
-```text
-1/2 + 1/4 + 1/8 + 1/16 + 1/32 + 1/64 = 63/64
-```
+## 4. Evidence layers
 
-was retained only as provenance for a finite multiscale observer and an unresolved completion residual. It supplies no evidence for the present wake or attraction hypotheses.
+### 4.1 What the implementation computes
 
-## 3. Evidence layers
+The exact active P2 implementation, update order, source schedule, observer, seeds, configuration, saved state, dependency versions, and available accounting quantities must be recovered and SHA-pinned before execution.
 
-### 3.1 What the current implementation computes
+The active programme evolves declared field state. It does not contain a programmed duck, flock, bird, physical fluid, biological organism, gravitational charge, negative mass, general-relativistic metric, or depth field merely because those analogies are useful.
 
-The exact active implementation must be transcribed and SHA-pinned before execution. This preregistration does not replace that audit.
+### 4.2 What has been reproducibly observed
 
-The current programme is known to evolve declared `Psi`, `Phi`, `kappa`, and `mu` state with local numerical rules, including a slow causal `mu` update and a `Phi` write/diffusion path in the previously audited deterministic NumPy lane.
+The inherited P2 summary supports a persistent source-off multi-defect population across 12 seeds under its declared lane. It does not establish individual or collective identity.
 
-No duck, pond, physical fluid, general-relativistic metric, gravitational charge, negative mass, cross-universe index, or depth field is established merely by these variables.
+No new collective perturbation run is reported in version 0.2.0. This version freezes the hypothesis, observers, interventions, controls, and decision rules before those outputs exist.
 
-### 3.2 What has been reproducibly observed
+### 4.3 Cautious interpretation
 
-No new run is reported here. The preregistration records questions, frozen definitions, controls, and decision rules before intervention outputs exist.
+The broad transported pattern may be a compact core with a wake, a collective body, a hybrid collective with a wake, a gas-like remnant, or an observer-sensitive population mode.
 
-### 3.3 Cautious interpretation
+### 4.4 Hypotheses
 
-A broad transported disturbance may be decomposable into a compact causal core and a passive or partly causal wake. This would improve object localization and prevent interpreting the full disturbed field as one particle-like entity.
+Collective identity may reside in stable relations and macroscopic invariants rather than permanent microscopic membership. This is scientifically testable but currently unverified.
 
-### 3.4 Hypotheses
+### 4.5 Real-physics boundary
 
-The wake may be passive memory, required support, propulsion exhaust, a return-flow failure, a hidden reaction channel, a boundary artifact, or a distributed component of identity. These remain competing hypotheses.
+A simulation-level collective object is not automatically a Standard Model particle. A simulation-level attraction-like response is not automatically gravity. Physical correspondence requires recovery of relevant established observations and a discriminating prediction against accepted effective models.
 
-### 3.5 Real-physics boundary
+## 5. Frozen object representations
 
-A simulation-level attraction-like response is not yet physical gravity. Any claim of correspondence with gravity must eventually reproduce relevant established observations and supply a discriminating prediction against general relativity or another accepted effective model.
+### 5.1 Model A: compact decomposition
 
-The present experiment can locate simulated causal carriers. It cannot by itself validate a cosmology.
-
-## 4. Frozen object decomposition
-
-The intervention requires four mutually exclusive spatial classes at every analyzed frame:
+Use four mutually exclusive spatial classes:
 
 ```text
 C: compact core
 E: near envelope
-W: wake
+W: outgoing wake
 F: far environment
 ```
 
-The masks must be defined without using post-intervention outcomes.
+The masks must be frozen from pre-intervention data and may not use post-intervention success.
 
-### 4.1 Candidate core observables
+A compact core detector may combine amplitude or energy concentration, valid phase winding, local coherence, connected-component persistence, and motion-consistent tracking. A single amplitude threshold is insufficient unless adversarial controls show that it does not absorb the wake.
 
-The core detector must use a frozen conjunction of local observables selected from existing implemented state, for example:
+The near envelope is the smallest bounded region outside the core whose removal materially changes short-horizon survival, motion, or recovery beyond sham-edit effects.
 
-- local energy or amplitude concentration;
-- phase winding or topological density when applicable;
-- local coherence;
-- persistent connected-component membership;
-- motion-consistent centroid tracking.
+The wake is a downstream disturbed region outside the provisional object and connected to recent trajectory history or a frozen disturbance threshold.
 
-A single amplitude threshold is insufficient unless preregistered controls show that it does not absorb the wake.
+### 5.2 Model B: collective representation
 
-### 4.2 Near envelope
+Let the detected vortex members at time `t` be `V(t) = {v_1, ..., v_n}`. Membership identity is provisional and may turn over.
 
-The near envelope is the smallest annular or morphology-derived region outside the core whose removal materially affects short-horizon survival or motion.
+The collective representation must include:
 
-It is not assumed to be part of the object. Its status is decided by intervention.
+```text
+G(t): spatial support of the collective;
+X(t): centroid on the correct periodic or non-periodic geometry;
+S(t): scale and shape tensor;
+U(t): bulk velocity and heading;
+Q(t): positive, negative, and net winding composition;
+R(t): relational graph or pairwise-distance structure;
+L(t): graph-spectrum or another permutation-invariant relational signature;
+B(t): boundary and far-field quietness observables;
+M(t): field-history observables required by the recovered implementation.
+```
 
-### 4.3 Wake
+No metric may require a permanent label for each vortex unless label persistence is independently demonstrated.
 
-The wake is the disturbed region that is:
+### 5.3 Collective identity invariants
 
-- spatially downstream relative to the measured velocity;
-- outside the frozen core and provisional envelope;
-- connected to recent trajectory history or a frozen disturbance threshold;
-- distinguishable from the far environment.
+The first-stage invariant vector is:
 
-### 4.4 Far environment
+```text
+I(t) = [
+    total member count and charge composition,
+    equivalent radius and principal-axis ratio,
+    orientation and bulk velocity,
+    radial and angular member-density profiles,
+    pair-distance distribution,
+    nearest-neighbour distance distribution,
+    permutation-invariant graph spectrum,
+    resolved support overlap after translation and rotation alignment,
+    far-field quietness,
+    declared field-history summaries
+]
+```
 
-The far environment is the remaining declared domain after excluding core, envelope, wake, intervention buffer, and boundary guard bands.
+The exact normalization, smoothing, periodic-distance convention, and tolerances must be frozen after exact P2 recovery but before intervention outcomes are inspected.
 
-### 4.5 Observer ensemble
+### 5.4 Observer ensemble
 
-At least three object observers must be compared:
+Compare at least:
 
 ```text
 O0 disturbance observer:
-    all cells differing from the matched baseline;
+    all cells differing from a matched baseline;
 
 O1 compact observer:
-    core only;
+    a candidate compact core only;
 
-O2 functional observer:
-    core plus the minimum causally required envelope.
+O2 functional compact observer:
+    core plus the minimum causally required envelope;
+
+O3 collective observer:
+    the bounded multi-vortex support plus relational invariants;
+
+O4 population observer:
+    aggregate defect count, overlap, and orientation without individual identity;
+
+O5 matched-gas observer:
+    the same observables applied to norm-, count-, charge-, and scale-matched nulls.
 ```
 
-If conclusions depend strongly on the observer, the result must be classified as observer-sensitive rather than a unique object decomposition.
+If O3 does not outperform O4 and O5 under perturbation, collective identity is unsupported.
 
-## 5. Frozen intervention matrix
+## 6. Frozen intervention matrix
 
-Each intervention must begin from the same saved pre-intervention state and matched controls.
+Every intervention must start from the same saved pre-intervention state and matched future-randomness controls whenever the recovered implementation permits that comparison.
 
 ### I0: untouched continuation
 
-Continue the complete state without intervention. This is the reference trajectory.
+Continue the complete state without intervention. Measure natural membership turnover and the stability of `I(t)`.
 
-### I1: core transplanted into a clean environment
+### I1: compact candidate transplanted into clean environment
 
-Procedure:
+Extract all declared state inside the frozen compact mask, place it at a matched location in a clean baseline environment, blend with a frozen method, and continue with unchanged dynamics.
 
-1. extract the complete state in the frozen core mask, including all declared fields needed for a fair transplant;
-2. place it at a matched location in a baseline environment;
-3. use a frozen blending or boundary method that minimizes artificial discontinuity;
-4. continue with unchanged equation and parameters.
+### I2: wake retained after compact candidate removal
 
-Questions:
+Replace the compact candidate and provisional envelope with a matched baseline while preserving the wake and far environment.
 
-- Does the core survive?
-- Does it keep moving?
-- Does it rebuild an envelope or wake?
-- Does it retain attraction-like influence on a probe or matched second object?
+### I3: immobilized compact candidate
 
-### I2: wake retained after core removal
+Prevent translation by the least invasive frozen method while preserving internal updates as far as possible. Include a sham-pinning control and a ledger for intervention work.
 
-Procedure:
+### I4: fractional collective ablation
 
-1. replace the core and provisional envelope with a matched baseline state;
-2. preserve the wake and far environment;
-3. continue without further forcing.
+Remove a preregistered fraction of detected vortex members and their local field support while preserving the rest of the state.
 
-Questions:
-
-- Does the wake decay monotonically?
-- Does it move independently?
-- Does it continue to accelerate a probe?
-- Does it regenerate a compact core?
-
-### I3: immobilized core
-
-The least invasive frozen pinning method must prevent translation while preserving internal update dynamics as much as possible. At least one sham-pinning control is required.
-
-Questions:
-
-- Does the existing wake detach and decay?
-- Does a stationary envelope remain?
-- Does attraction persist without motion-generated wake?
-- Does pinning inject or remove energy in a way that invalidates interpretation?
-
-### I4: component-wise attraction
-
-Compare attraction-like response under:
+Frozen fractions:
 
 ```text
-A0 complete object versus complete object;
-A1 transplanted core versus matched complete object;
-A2 wake-only state versus a passive probe;
-A3 core plus minimum envelope versus matched complete object;
-A4 orientation-reversed or phase-transformed matched states;
-A5 baseline disturbance and sham-edit controls.
+10%, 20%, and 40% of members;
+central, peripheral, and uniformly sampled ablation;
+charge-balanced ablation when possible;
+matched sham edits with equal spatial and norm footprint.
 ```
 
-The exact attraction observable must be defined from measured centroid acceleration or another implementation-supported causal response, not from visual convergence alone.
+Question: does the collective restore its invariant vector better than matched gas controls?
 
-### I5: boundary and domain-size controls
+### I5: member displacement
 
-Repeat the cheapest informative subset across:
+Displace a frozen subset of members by a declared fraction of the equivalent collective radius while preserving charge composition and minimizing norm changes.
 
-- at least three domain sizes;
-- periodic and one non-periodic boundary family if the implementation supports both without equation changes;
-- at least two distances from the boundary;
-- matched trajectory duration in object-length units.
+Question: do members rejoin or does the collective reconstruct its shape and relations without preserving the same microscopic positions?
 
-A compensating contribution that changes with domain size or boundary placement must be classified as boundary-sensitive.
+### I6: relational shuffle
 
-### I6: wrong-mask negative controls
+Preserve member count, charge composition, total support norm, centroid, and approximate radial profile, but shuffle angular positions or pair relations.
 
-Deliberately use masks that are too small, too large, upstream, and spatially shuffled while preserving area or energy as applicable.
+Question: is the original relational organization causally important, or are only coarse population statistics sufficient?
 
-The true decomposition should outperform these controls on survival, prediction, and causal specificity.
+### I7: split intervention
 
-## 6. Measurements
+Divide the collective support across its minor and major axes with matched seam widths.
 
-### 6.1 Geometry and persistence
+Possible outcomes:
+
+```text
+repair: the parts reunite and recover one invariant vector;
+fission: two bounded descendants form reproducibly;
+gas dispersal: no bounded relational structure remains;
+core reveal: only one specific subregion retains organization.
+```
+
+Fission is not reproduction unless content-specific inheritance and accounting gates are separately passed.
+
+### I8: member exchange
+
+Exchange a frozen fraction of members or local field patches with a matched collective from another seed while preserving count and charge budgets.
+
+Question: is collective identity robust to component replacement, or does history-specific relational state matter?
+
+### I9: matched vortex-gas nulls
+
+Create null states matched in member count, charge composition, norm, scale, centroid, and broad radial profile but with randomized relations or phase-compatible shuffling.
+
+The exact null must remain a valid state for the recovered implementation. Invalid synthetic states are classified as intervention failures rather than scientific controls.
+
+### I10: component-wise attraction
+
+After object classification, compare attraction-like response for:
+
+```text
+complete collective versus complete collective;
+compact candidate versus complete collective;
+collective body with wake removed versus matched complete state;
+wake-only state versus a passive probe;
+relationally shuffled collective versus untouched collective;
+orientation- or phase-transformed matched states;
+matched gas and sham-edit controls.
+```
+
+Visual convergence is insufficient. The observable must be a frozen centroid or support acceleration, relative motion, or another implementation-supported causal response.
+
+### I11: boundary and domain controls
+
+Repeat the cheapest informative subset across at least three domain sizes, at least two boundary distances, and supported boundary families. A compensating contribution or collective identity that depends strongly on the periodic seam must be classified as boundary-sensitive.
+
+## 7. Measurements
+
+### 7.1 Geometry, motion, and persistence
 
 Record:
 
 ```text
-core area and equivalent radius;
+collective support area and equivalent radius;
+compact-core area when detected;
 envelope thickness;
 wake length and width;
+member count and charge composition;
+centroid, orientation, and principal axes;
+bulk displacement, velocity, and acceleration;
 connected-component count;
-centroid and orientation;
-core survival time;
+source-off survival time;
 wake relaxation time;
-regeneration latency;
-trajectory displacement and velocity.
+repair latency;
+far-field activity.
 ```
 
-Define the dimensionless wake persistence ratio:
+For compact or hybrid models retain:
 
 ```text
-chi_w = v * tau_w / R_c
+chi_w = v * tau_w / R_object
 ```
 
-where:
+where `v` is pre-intervention bulk speed, `tau_w` is frozen-threshold wake relaxation time, and `R_object` is the equivalent radius of the selected object representation.
 
-- `v` is pre-intervention core speed;
-- `tau_w` is the wake relaxation time under a frozen threshold;
-- `R_c` is equivalent core radius.
+### 7.2 Membership turnover
 
-`chi_w` estimates how many core radii are traversed before the wake relaxes.
+When provisional vortex matching is available, record birth, death, exchange, and track duration. Membership continuity is descriptive only.
 
-### 6.2 Attraction-like response
-
-For each probe or object pair record:
+Define a turnover measure over interval `Delta t`:
 
 ```text
-relative separation;
-relative velocity;
-relative acceleration;
-transverse and longitudinal components;
-dependence on orientation and phase;
-dependence on core, envelope, wake, and far-field state;
-time lag relative to wake formation.
+T_member = 1 - |V(t) intersect V(t + Delta t)| / |V(t) union V(t + Delta t)|
 ```
 
-Acceleration must be estimated with a frozen smoothing and differentiation method. Raw finite differences and the frozen estimator must both be reported.
+This requires an auditable matching rule. If vortex identities cannot be matched reliably, use only permutation-invariant observables and classify member turnover as unresolved.
 
-### 6.3 Available accounting
+### 7.3 Collective recovery score
 
-For each declared field and region, report every implemented quantity that can legitimately be calculated:
+For each invariant `I_k`, define a baseline-normalized deviation from the untouched reference. Combine only preregistered dimensionless components:
+
+```text
+d_k(t) = |I_k^intervention(t) - I_k^reference(t)| / s_k
+D_collective(t) = weighted_median_k d_k(t)
+```
+
+The scale `s_k`, weights, recovery window, and acceptance threshold must be frozen from untouched and sham-control variability, not chosen after seeing the intervention.
+
+A collective recovers only if `D_collective` returns inside the frozen reference envelope and remains there for the declared dwell time while far-field and accounting controls pass.
+
+### 7.4 Relational memory
+
+Compare pair-distance distributions, angular correlations, graph spectra, and aligned support maps. High image overlap alone is non-identifying. Relational recovery must exceed matched gas and shuffled nulls.
+
+### 7.5 Attraction-like response
+
+Record relative separation, velocity, acceleration, longitudinal and transverse components, dependence on orientation and relational state, dependence on body and wake, and time lag relative to wake formation or collective repair.
+
+Report raw finite differences and the frozen smoothing or differentiation estimator.
+
+### 7.6 Available accounting
+
+For every declared field and spatial class report all legitimate implemented quantities:
 
 ```text
 state norms or energies used by the implementation;
 local source and sink terms;
-transport across C/E/W/F mask boundaries;
-flux across the simulation boundary;
+transport across object, wake, and far-field boundaries;
+simulation-boundary flux;
 intervention work or numerical injection;
-residual of the declared balance equation.
+residual of any declared balance equation.
 ```
 
-Do not call a quantity momentum unless the implementation or a derived conservation law justifies that name. Otherwise use `directed transport proxy` and define it explicitly.
+Do not call a proxy momentum unless the implementation or a derived conservation law justifies that name.
 
-### 6.4 Compensation ledger
+### 7.7 Compensation ledger
 
-Define the observed attraction channel `a_obs` and a complete set of candidate compensating contributions `q_i` from the declared state and boundary accounting.
-
-The first-stage compensation residual is:
+Define an observed attraction channel `a_obs` and dimensionally compatible candidate contributions `q_i` only when the recovered implementation supports them:
 
 ```text
 r_comp(t) = a_obs(t) + sum_i q_i(t)
 ```
 
-The dimensions of all terms must match. If no same-dimension decomposition is available, no compensation sum may be claimed.
-
-Candidate locations are classified as:
+Candidate locations are:
 
 ```text
 C0 no detected compensation in declared accounting;
-C1 core internal contribution;
-C2 near-envelope contribution;
-C3 wake contribution;
-C4 far-field same-layer contribution;
-C5 boundary-flux contribution;
-C6 phase or relational contribution;
-C7 observer/projection artifact;
+C1 compact internal contribution;
+C2 collective relational contribution;
+C3 near-envelope contribution;
+C4 wake contribution;
+C5 far-field same-layer contribution;
+C6 boundary-flux contribution;
+C7 phase or observer-projection contribution;
 C8 unresolved residual requiring a new preregistration.
 ```
 
-A low residual alone is not enough. The decomposition must also pass interventions that selectively remove or reverse the candidate term.
+A low residual is insufficient without selective causal interventions and held-out reproduction.
 
-## 7. Frozen decision rules
+## 8. Frozen decision rules
 
-### 7.1 Wake is not part of object identity
+### 8.1 Collective particle supported
 
-Supported only if:
+Model B is supported only if all of the following hold:
 
-- I1 core transplant survives and preserves key trajectory or attraction behavior within frozen tolerance;
-- I2 wake-only state does not regenerate a core within the horizon;
-- removing the wake does not cause immediate catastrophic failure beyond sham-edit effects.
+1. the untouched source-off collective remains bounded and distinguishable from matched gas nulls;
+2. individual membership can change, or microscopic positions can be displaced, while the macroscopic invariant vector persists or recovers;
+3. at least one nontrivial perturbation among I4-I8 produces recovery beyond sham and gas controls;
+4. relational shuffling impairs recovery or continuation more than a coarse-statistics-matched control, demonstrating that organization matters;
+5. the result survives held-out seeds, estimator alternatives, resolution, and boundary controls;
+6. source, norm, and intervention accounting do not explain the recovery as hidden forcing;
+7. the observer was frozen before the outcome and does not classify smooth transported disorder as the same object.
 
-### 7.2 Near envelope is functionally required
+### 8.2 Vortex gas supported
 
-Supported only if:
+Model H1 is supported when population statistics persist but:
 
-- core-only transplant fails reproducibly;
-- core plus a bounded near envelope succeeds;
-- adding more distant wake does not materially improve the result at matched intervention cost;
-- wrong-mask controls fail.
+- no bounded relational invariant outperforms matched nulls;
+- perturbations produce no specific recovery;
+- member displacement or relational shuffle has no effect beyond coarse density and norm;
+- apparent identity depends on smoothing, translation alignment, or periodic geometry.
 
-### 7.3 Wake is a propulsion exhaust
+### 8.3 Compact-core object supported
 
-Supported only if:
+Model H2 is supported only if a small region is necessary and approximately sufficient:
 
-- wake production covaries with directed motion under intervention, not merely correlation;
-- suppressing or reversing the wake changes motion in the predicted direction;
-- an opposite directed transport or accounting term is measurable;
-- the effect survives boundary and domain-size controls.
+- its clean-environment transplant survives or reconstructs the same higher-level observables;
+- wake-only and peripheral collective remnants do not;
+- removal of the candidate core destroys the organization beyond sham effects;
+- wrong-location and matched-norm controls fail.
 
-### 7.4 Wake is passive memory
+### 8.4 Hybrid collective plus wake supported
 
-Supported only if:
+Model H4 is supported if a collective body passes the relational identity gates while a separable wake has a distinct relaxation, propulsion, memory, attraction, or compensation role.
 
-- wake-only states decay without regeneration;
-- they do not materially accelerate probes after matched baseline subtraction;
-- their lifetime follows the relevant implemented relaxation parameters;
-- removing them does not materially change core continuation after sham correction.
+### 8.5 Distributed process retained
 
-### 7.5 Hidden same-layer compensation
+Model H5 is retained only when no stable compact or collective boundary exists but a larger causal pattern passes boundedness, persistence, intervention, and accounting tests. It must not be relabeled a particle merely to preserve the hypothesis.
 
-Supported only if:
+### 8.6 Wake classifications
 
-- a dimensionally valid opposite contribution is located in C1-C7;
-- selective intervention changes `a_obs` and the candidate term together as preregistered;
-- the compensation is not caused by boundary placement, estimator leakage, or intervention work;
-- held-out states reproduce the relation.
+A wake is passive memory only if it decays without regeneration, does not materially accelerate probes, follows declared relaxation parameters, and is unnecessary for body continuation beyond sham effects.
 
-### 7.6 Need for a depth-like second layer
+A wake is propulsion exhaust only if suppressing or reversing it changes directed motion as preregistered and an opposite directed transport or valid accounting term is measurable across boundary controls.
 
-A coupled depth-like mode may be proposed only if:
+A wake is part of identity only if removing it causes specific reproducible failure that cannot be explained by edit damage or missing near-envelope state.
 
-- same-layer core, envelope, wake, far-field, phase, relational, and boundary accounting all fail under declared controls;
-- the unresolved residual is reproducible across resolution and domain size;
-- at least three distinct repair classes are compared;
-- the new layer makes a discriminating prediction rather than merely absorbing the residual.
+### 8.7 Hidden same-layer compensation
 
-## 8. Failure classification
+Supported only if a dimensionally valid opposite term is causally localized, changes with `a_obs` under selective intervention, survives held-out states, and is not created by the boundary, estimator, or intervention work.
 
-Every negative result must be assigned to at least one location:
+### 8.8 Need for a depth-like second layer
+
+A depth-like mode may be proposed only after compact, collective, envelope, wake, far-field, phase, relational, and boundary accounting fail under declared controls and a reproducible resolution-stable residual remains. A new layer must make a discriminating prediction rather than absorb unexplained error.
+
+## 9. Failure classification
+
+Every negative or ambiguous result must be assigned to one or more locations:
 
 ```text
 equation;
 parameter regime;
 initial state;
+source schedule;
 observer;
+vortex detector;
+member matcher;
+collective invariant;
 mask definition;
 intervention artifact;
 resolution;
@@ -478,100 +583,126 @@ interpretation.
 
 The programme must distinguish:
 
-- object localization failed;
-- the chosen observer was non-identifying;
-- the intervention destroyed necessary state;
-- the wake hypothesis was falsified;
+- no collective object exists in the tested regime;
+- a collective may exist but the observer is non-identifying;
+- the intervention destroyed necessary continuous-field state;
+- only population persistence was demonstrated;
+- a compact core was revealed;
+- a hybrid body and wake was revealed;
 - attraction was not robust;
 - compensation was not found in the declared domain;
 - physical interpretation remains unsupported.
 
-## 9. Required adversarial controls
+## 10. Required adversarial controls
 
 At minimum:
 
 1. deterministic replay from identical saved state;
-2. sham editing with equal numerical footprint;
-3. mask translation and spatial shuffle;
-4. energy- or norm-matched synthetic disturbance;
-5. reversed orientation or phase transformation when defined;
-6. boundary-distance sweep;
-7. domain-size sweep;
+2. independent future-randomness replay when applicable;
+3. sham editing with equal spatial and norm footprint;
+4. member-count-, charge-, norm-, scale-, and centroid-matched gas nulls;
+5. spatial translation, rotation, and shuffle controls;
+6. wrong-region ablation and displacement;
+7. boundary-distance and domain-size sweeps;
 8. timestep and resolution sensitivity;
-9. estimator alternatives frozen before result inspection;
-10. held-out initial conditions and seeds.
+9. at least two frozen observer or estimator families;
+10. held-out initial conditions and seeds;
+11. a toy collective with known invariants to verify the observer;
+12. a smooth transported-disorder null to verify that motion and overlap alone do not imply identity.
 
-## 10. Minimal execution phases
+## 11. Minimal execution phases
 
-### Phase P0: implementation and provenance audit
+### Phase D0: exact P2 package recovery
 
-- pin the active implementation file paths and blob SHAs;
-- transcribe exact update order and available accounting quantities;
-- locate the existing run or initializer that produced the broad transported structure;
-- verify supported dependency versions and device policy;
-- restate all required implementation details inside the executable successor report.
+- recover and SHA-pin the runner, implementation, observer, source schedules, seeds, configuration, dependency environment, and retained state or complete regeneration path;
+- reproduce the registered P2 summary before extending it;
+- reject approximate reconstruction from prose;
+- preserve complete executable verification material in this report or a justified permanent research-scoped tool.
 
-### Phase P1: observer-only decomposition
+### Phase D1: untouched observer audit
 
-No state intervention. Compare O0-O2 and quantify C/E/W/F geometry, persistence, and sensitivity.
+No intervention. Apply O0-O5 to exact P2 continuations. Measure natural turnover, invariants, boundedness, far-field quietness, and observer false positives.
 
-### Phase P2: single-object causal interventions
+### Phase D2: cheapest collective perturbation pilot
 
-Run I0-I3 and wrong-mask controls. Decide whether a compact core and minimum envelope can be separated from the wake.
+Run I0, the 20% charge-balanced version of I4, I6 relational shuffle, I9 matched gas, and matched sham controls on a small frozen seed subset. This is the first discriminator because it separates recovery of organization from mere persistence at lower cost than the complete matrix.
 
-### Phase P3: attraction decomposition
+### Phase D3: complete identity matrix
 
-Run I4 and the cheapest I5 controls. Locate which component carries the attraction-like response.
+Only if D2 is informative, run the remaining ablation fractions, member displacement, split, exchange, compact transplant, wake-only, and pinning lanes.
 
-### Phase P4: compensation accounting
+### Phase D4: attraction and wake decomposition
 
-Construct only dimensionally valid candidate terms and test them causally.
+Only after object classification, run I10 and the cheapest I11 controls.
 
-### Phase P5: mechanism decision
+### Phase D5: compensation accounting and mechanism decision
 
-Retain, falsify, or constrain W0-W7 and C0-C8. Only then decide whether a new equation term or coupled layer deserves preregistration.
+Construct only dimensionally valid terms. Retain, constrain, or falsify H0-H5, W0-W7, and C0-C8. Only then decide whether any equation change, new field, or public concept deserves a separate preregistration.
 
-## 11. Promotion boundary
+## 12. Root-programme impact matrix
+
+| Inherited result or branch | Relation | Impact of the collective hypothesis |
+|---|---|---|
+| No stable localized object demonstrated | `reopens` | Failure of a compact particle observer does not decide whether a relational collective persists. |
+| P2 source-off multi-defect remnant | `depends_on` | This is the exact state family to recover and test; the existing summary is not enough. |
+| Existing minimum-flux observer is non-identifying | `constrains` | Collective claims require a new permutation-invariant relational observer and nulls. |
+| Source energy ledger remains open | `constrains` | Repair or persistence cannot be called autonomous self-maintenance without accounting. |
+| Exact software-state transplant | `unaffected` | Exact continuation is a reproducibility tool, not collective identity evidence. |
+| Current copying and heredity negative results | `unaffected` | Collective persistence is not reproduction or inheritance. |
+| Boundary and seam results | `depends_on` | Periodic translation and seam sensitivity must be explicitly controlled. |
+| Physical particle and gravity mapping | `unaffected` | No physical correspondence is promoted by this hypothesis alone. |
+| Core-envelope-wake programme v0.1.0 | `supersedes` | Compact decomposition is retained but is no longer the sole first-stage ontology. |
+
+## 13. Promotion boundary
 
 This programme is research only.
 
-Until a result passes the declared gates:
+Until the declared gates pass:
 
 - do not alter the canonical Core equation;
-- do not add `core`, `envelope`, `wake`, `duck`, `pond`, `depth`, or `compensation` as public `lineum_core` API concepts;
-- do not update whitepapers to present the hypothesis as established;
-- do not claim physical gravity or a deviation from general relativity;
-- do not identify a residual as quantum, dark matter, another universe, or metaphysical substance.
+- do not add boids rules or explicit inter-vortex agent logic;
+- do not add `collective particle`, `flock`, `core`, `envelope`, `wake`, `duck`, `pond`, `depth`, or `compensation` as public `lineum_core` API concepts;
+- do not update whitepapers to present collective identity as established;
+- do not call recovery self-healing, life, metabolism, heredity, consciousness, or agency;
+- do not claim a Standard Model particle, physical gravity, dark matter, quantum mechanics, or a deviation from general relativity.
 
-## 12. Reopen triggers
+## 14. Reopen triggers
 
 Reopen or supersede this preregistration if:
 
-- the active implementation or broad-structure initializer changes before execution;
-- the object is shown not to possess a stable trackable core under untouched continuation;
-- a conserved or balance quantity invalidates the proposed accounting language;
-- the intervention method injects changes larger than the measured effect;
-- the attraction observable is not reproducible;
-- a prior report already contains stronger frozen definitions that conflict with this programme;
-- the project owner supplies additional missing provenance that changes the hypothesis set.
+- the exact retained P2 package cannot be recovered;
+- exact replay contradicts the inherited P2 summary;
+- the active implementation changes before execution;
+- vortex detection is shown to be phase-wrap or threshold dominated;
+- no valid member or permutation-invariant collective observer can be constructed;
+- intervention edits exceed the measured effect;
+- the object or collective is boundary-locked;
+- a balance law invalidates the proposed accounting language;
+- a prior report contains stronger incompatible frozen definitions;
+- new project-owner provenance materially changes the hypothesis set.
 
-## 13. Operational checkpoint
+## 15. Operational checkpoint
 
-The operational task search in the Lineum Dynamics ClickUp workspace and Core Simulations list returned no matching task for this specific wake-decomposition programme.
+The previous targeted search in the Lineum Dynamics ClickUp workspace and Core Simulations list found no matching task. A creation attempt then hit a rolling rate limit and was not retried during that window.
 
-A task creation attempt was made after the Git scope was resolved, but ClickUp returned a rolling rate limit with a 28-minute wait. No retry or polling was performed. Git remains the scientific source of truth. One batched ClickUp synchronization is pending after the returned window expires.
+The Git report remains the scientific source of truth. One batched ClickUp creation or synchronization remains pending. A ClickUp description will not substitute for this preregistration, executable receipts, or the later result checkpoint.
 
-## 14. Current verdict
+## 16. Current verdict
 
 ```text
-broad_wake_as_object_failure = untested
-core_wake_observer_conflation = plausible_untested
-near_envelope_as_required_identity = plausible_untested
-wake_as_propulsion_exhaust = plausible_untested
+compact_core_particle = plausible_untested
+collective_vortex_particle = plausible_untested
+vortex_gas_only = plausible_untested
+hybrid_collective_envelope_wake = plausible_untested
+distributed_field_process = plausible_untested
+observer_artifact = plausible_untested
+collective_identity_observer = preregistered_not_executed
+collective_repair = not_tested
+wake_as_propulsion_or_memory = not_tested
 same_layer_hidden_compensation = plausible_untested
-boundary_compensation = plausible_untested
 depth_like_second_layer = deferred_pending_same_layer_controls
+physical_particle_identity = not_established
 physical_gravity_identity = not_established
 general_relativity_deviation = not_derived
-next_action = implementation_audit_then_observer_only_P1
+next_action = recover_exact_P2_package_then_run_D1_observer_audit
 ```
