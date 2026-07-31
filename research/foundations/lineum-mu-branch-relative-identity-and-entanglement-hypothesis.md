@@ -78,9 +78,9 @@ Mandatory continuity companion:
 
 ```text
 path: research/foundations/lineum-root-programme-continuity-and-impact-ledger.md
-version before this report revision: 0.2.0
+version at this report revision: 0.3.0
 evidence cutoff: 2026-07-31
-blob SHA before this report revision: 47b3c23cfa2bc28981defe016749a29eaccb9508
+blob SHA at this report revision: 5304874451caf32313ad0e8e3c59e53958698d79
 ```
 
 Immediate conceptual predecessor:
