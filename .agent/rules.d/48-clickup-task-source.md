@@ -6,7 +6,11 @@
 
 The Lineum Dynamics ClickUp workspace is the single operational source of truth for active tasks, priorities, owners, statuses, dates, dependencies, and workflow decisions across the Lineum project family.
 
+- Workspace name: `Lineum Dynamics`.
 - Workspace ID: `90121717552`.
+- Every ClickUp read, search, lookup, create, update, or status operation performed from or for `lineum-core` MUST explicitly target workspace ID `90121717552` whenever the connector accepts a workspace identifier.
+- Do not probe, search, infer from, or write to another ClickUp workspace for `lineum-core` work unless the project owner explicitly directs that specific operation elsewhere.
+- If a connector omits workspace selection or returns ambiguous multi-workspace results, stop treating the result as authoritative and retry with workspace ID `90121717552` before drawing a task-state conclusion.
 - For public Core research and simulation work, use `Research & Engineering -> Engine R&D -> Core Simulations` unless the task clearly belongs in another ClickUp location.
 - Core Simulations list ID: `901217864718`.
 
