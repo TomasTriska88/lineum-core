@@ -2,6 +2,8 @@
 
 Project-wide implementation rules live in `.agent/rules.md`.
 
+Before any analysis, proposal, test, edit, commit, publication, or external operation for this repository, read `.agent/rules.md` in full and enumerate and read every Markdown file under `.agent/rules.d/` in lexical filename order. Treat every `.agent/rules.d/*.md` file as a binding supplement to `.agent/rules.md`, not as optional documentation. Re-fetch these files after changing branches and whenever the repository state may have changed. If a tool cannot enumerate the directory reliably, do not assume that an omitted supplement is absent; resolve the repository tree or fetch known supplements directly before proceeding.
+
 ## Model and Execution Routing
 
 Before deciding whether Lineum work should remain in ChatGPT or be proposed for execution in Codex, read and follow `.agent/workflows/model-tool-routing.md` in full. It is the binding source of truth for choosing ChatGPT Sol Pro or Extra High for scientific judgment, Codex Max for repository-local execution, and Codex Ultra only for safely parallelizable lanes. When proposing Codex to the project owner, provide the smallest exact copyable execution brief required by that workflow rather than a vague tool recommendation.
