@@ -1,7 +1,7 @@
 # Autonomous Cohesion Causal-Path Discriminator
 
-**Status:** active negative-result report; frozen causal-path matrix executed; local path dependence supported; preregistered autonomy gate failed because the coordinate-frame observer was non-invariant  
-**Version:** 0.2.0  
+**Status:** active preregistration; prior causal-path negative result preserved; angular-momentum and symmetry audit frozen before execution  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-08-01  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -50,6 +50,8 @@ force constants and thresholds = frozen
 ```
 
 Version `0.2.0` records the first execution without changing any seed, timestep, force, graph, partition, challenge, horizon, threshold, or declared gate. The rotation-aligned diagnostic was calculated only after the frozen gate failed and is explicitly non-confirmatory.
+
+Version `0.3.0` freezes the angular-momentum, timestep, rotation-equivariance, and reflection-equivariance audit in Section 17 before execution. It does not alter or reinterpret the failed version-0.1.0 protocol.
 
 ## 3. Owner failure-gate response and formalization
 
@@ -729,3 +731,196 @@ print(json.dumps(RECEIPT, indent=2, sort_keys=True))
 ```
 
 The executable code above contains the primary matrix and post-hoc rotation diagnostic. The independent explicit-loop continuation check was executed separately because embedding a second complete duplicate runner would obscure the primary reproduction path; its numerical comparison receipt is stated in Section 8.
+
+## 17. Frozen angular-momentum and symmetry audit preregistration
+
+### 17.1 Motivation and owner checkpoint
+
+The project owner asked whether the approximately `6.31 degree` reorientation is genuinely an error. The prior report could only say that the absolute-orientation observer was non-invariant; it did not yet determine whether the reorientation came from legitimate internal shape dynamics, injected angular momentum, numerical torque, or axis-dependent implementation bias.
+
+This section freezes the smallest audit before execution. It does not change the failed version-0.1.0 gates and cannot retroactively pass them.
+
+### 17.2 Competing explanations
+
+```text
+H1 legitimate zero-angular-momentum reorientation:
+    the network changes shape during repair and returns to an equivalent geometry with a
+    geometric orientation shift, while total relative angular momentum remains zero;
+
+H2 intervention injection:
+    the positional challenge or velocity reset injects non-zero relative angular momentum;
+
+H3 numerical torque:
+    the integrator or force assembly creates angular momentum that does not converge away;
+
+H4 coordinate-axis bias:
+    the reported angle depends on the laboratory axes or implementation orientation;
+
+H5 physical orientation state:
+    absolute orientation is meaningful only if an explicit external anisotropy or anchor is
+    present; no such anchor exists in the current local toy.
+```
+
+Only `H1` can support treating the reorientation as an admissible symmetry-equivalent repair in this toy. `H5` remains a separate untested variant rather than an assumption.
+
+### 17.3 Frozen dynamics and data
+
+The audit reuses the exact `L_INTact` local-force system, graph, rest lengths, formation law, velocity reset, partition, challenge magnitude, seeds `500..511`, formation horizon `4.0`, challenge horizon `6.0`, and semi-implicit Euler convention from Sections 6–9.
+
+The timestep grid is extended by one refinement level:
+
+```text
+dt = [0.01, 0.005, 0.0025, 0.00125]
+```
+
+No Lineum package is imported.
+
+### 17.4 Angular-momentum observables
+
+All quantities use center-of-mass coordinates:
+
+```text
+r_i = x_i - mean(x)
+u_i = v_i - mean(v)
+L = sum_i (r_ix u_iy - r_iy u_ix)
+```
+
+The direct torque is
+
+```text
+tau = sum_i (r_ix F_iy - r_iy F_ix)
+```
+
+The force law predicts:
+
+```text
+central spring torque = 0
+damping torque = -gamma L
+```
+
+For the semi-implicit update, the discrete residual is
+
+```text
+epsilon_L = L_(n+1) - L_n - dt * tau_n
+```
+
+The audit records initial, maximum, and final absolute `L`; maximum spring torque; maximum total torque; and maximum absolute `epsilon_L`.
+
+### 17.5 Symmetry controls
+
+Three geometrically equivalent lanes are frozen for every seed and timestep:
+
+```text
+BASE:
+    the original formed state, bulk velocity, and challenge;
+
+ROTATED:
+    rotate the entire formed state, bulk velocity, and challenge by +37 degrees before the
+    challenge; use the same distance-based graph and rest lengths;
+
+MIRRORED:
+    reflect the entire formed state, bulk velocity, and challenge across the x axis.
+```
+
+The rotated lane tests rotational equivariance. The mirrored lane tests handedness: a genuine geometric reorientation must reverse sign under reflection while invariant recovery scores remain unchanged.
+
+A descriptive `REVERSED_DELTA` lane applies `-delta` to the untransformed formed state. Its angle is recorded but no odd-symmetry gate is imposed because the irregular shape and fixed partition do not guarantee that reversing only the challenge is an exact symmetry.
+
+### 17.6 Frozen recovery metrics
+
+For each lane, the final challenged state is aligned to its matched twin by translation and optimal proper rotation.
+
+```text
+theta_final = signed proper-rotation angle
+R_aligned_cross = 1 - aligned cross-group discrepancy / initial discrepancy
+R_pair = permutation-invariant pair-distance recovery
+coordinate_mismatch = normalized labeled-coordinate RMS after proper alignment
+```
+
+### 17.7 Frozen gates
+
+The audit supports legitimate symmetry-equivalent reorientation only if every gate holds:
+
+```text
+G_initial_L:
+    absolute L immediately after the challenge < 1e-12;
+
+G_angular_closure:
+    maximum absolute L during the challenge < 1e-10;
+    maximum absolute spring torque < 1e-11;
+    maximum absolute discrete angular residual < 1e-11;
+
+G_geometry:
+    R_pair > 0.95 for every BASE run;
+    R_aligned_cross > 0.995 for every BASE run;
+
+G_timestep:
+    for each seed, absolute difference in theta_final between dt=0.0025 and dt=0.00125
+    < 0.01 degree;
+    mean angle difference at those timesteps < 0.005 degree;
+
+G_rotation_equivariance:
+    absolute BASE-minus-ROTATED angle difference < 1e-8 degree;
+    absolute recovery-metric differences < 1e-10;
+
+G_reflection_equivariance:
+    absolute (theta_BASE + theta_MIRRORED) < 1e-8 degree;
+    absolute recovery-metric differences < 1e-10.
+```
+
+The angular-momentum thresholds are intentionally many orders of magnitude below the observed six-degree orientation change. Failure of an equivariance or closure gate blocks the geometric-phase interpretation.
+
+### 17.8 Independent checks
+
+Two force assemblies remain mandatory:
+
+```text
+A. incidence-matrix vectorization;
+B. explicit equal-and-opposite edge loop.
+```
+
+For seed `500` at every timestep, final coordinates, velocities, angular-momentum extrema, and orientation metrics must agree below `1e-10`.
+
+The signed angle is also computed through two independent paths:
+
+```text
+A. SVD proper Procrustes rotation;
+B. atan2 of the summed two-dimensional cross and dot products after centering.
+```
+
+The two angle calculations must agree below `1e-10` degree.
+
+### 17.9 Outcome meanings
+
+```text
+all gates pass:
+    the reorientation is numerically consistent with a symmetry-equivalent internal
+    deformation cycle at effectively zero angular momentum in this synthetic model;
+
+non-zero initial L:
+    the intervention or velocity reset injected rotation;
+
+L or angular residual fails to converge:
+    numerical torque remains a plausible cause;
+
+rotated control differs:
+    axis or implementation bias invalidates the interpretation;
+
+mirrored angle does not reverse:
+    handedness or angle extraction is inconsistent;
+
+geometry fails:
+    the object did not actually restore even modulo rigid motion.
+```
+
+Even a complete pass validates only this known-answer local point network. It does not establish a Lineum object, a particle, physical pneuma, life, identity, or correspondence to nature.
+
+### 17.10 Pre-execution status
+
+```text
+owner_question_recorded = yes
+angular_audit_preregistered = yes
+execution = not_started
+prior_failed_gate = preserved
+P2_application = prohibited
+```
