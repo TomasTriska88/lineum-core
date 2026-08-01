@@ -1,7 +1,7 @@
 # Collective Member-Turnover Protocol Known-Answer Fixture
 
-**Status:** active preregistration; protocol frozen before confirmatory held-out execution  
-**Version:** 0.1.0  
+**Status:** validated known-answer fixture; no Lineum application executed  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-01  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -15,156 +15,103 @@
 **Object-definition predecessor:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
 **Scope:** Validate a label-free observer of organization recovery after explicit member removal and insertion.  
-**Central question:** Can a collective reconstruct its relational organization after 25% member turnover without relying on permanent member identity or an active external organizer?  
-**Current confidence:** high that the synthetic cases have known causal differences; medium that the frozen observer will classify held-out cases across timestep refinement; no result yet on confirmatory seeds, self-generated local flocking, actual Lineum vortices, P2, physical particles, life, soul, or ancient encoded physics.
+**Central question:** Can a collective reconstruct its relational organization after 25% member turnover without permanent member identity or an active external organizer?  
+**Current confidence:** high that the frozen observer passed the declared synthetic fixtures and timestep checks; low that the inserted global protocol represents any actual Lineum mechanism; no evidence yet for a Lineum collective particle, P2 identity, strictly local flocking, life, soul, or ancient encoded physics.
 
 ## 1. Answer first
 
-Mechanical cohesion is weaker than collective identity.
+The known-answer member-turnover fixture passed.
 
-A rubber frame can restore its shape while every component remains permanently assigned to one slot. A flock-like collective must do something harder: lose members, accept replacements, and rebuild the relevant relations without requiring the replacements to be the same microscopic individuals.
-
-This fixture replaces `4/16 = 25%` of a ring collective with new points at random positions. It then compares:
+Four of sixteen members were removed and replaced by points at random positions. A dynamic protocol that continually rebuilt roles from the current population restored one collective ring in every held-out run, even after arbitrary array relabeling. Fixed member slots, a broken template, and a gas did not integrate the replacements. An external controller repaired the geometry but was rejected because it remained active, and a no-turnover sham was rejected because no material replacement occurred.
 
 ```text
-a label-free dynamic protocol that reorders and reintegrates all current members;
-the same protocol after arbitrary array relabeling;
-a fixed slot/template network;
-a template whose edges to replaced members are removed;
-a turnover gas;
-an active external repair controller;
-a no-turnover sham.
+confirmatory trajectories:        252
+turnover-robust positives:          72 / 72
+registered controls rejected:     180 / 180
+false positives:                     0
+false negatives:                     0
+classification changes across dt:    0
 ```
 
-The observer uses only population geometry and source accounting. It does not know the final assignment of members to positions.
-
-A pass validates only a synthetic **turnover-robust organization observer**. The dynamic protocol is inserted by design and uses the global centroid and angular ordering; it is not evidence that such a protocol emerges from the Lineum equation or from strictly local rules.
-
-## 2. Exploratory history and held-out boundary
-
-Exploratory development used seeds `0..29` and is excluded from the retained result.
-
-Frozen confirmatory set:
+This is the first synthetic result in this programme that directly demonstrates the distinction suggested by the flock analogy:
 
 ```text
+the microscopic members can change while a declared higher-level organization recovers.
+```
+
+The protocol was inserted by design, uses the global centroid and global angular ordering, and already knows the target radius and equal-spacing rule. The result therefore validates the **observer and causal distinction**, not emergence of such a protocol from Lineum or from purely local rules.
+
+## 2. Version history and preregistration receipt
+
+Version 0.1.0 was committed before confirmatory execution:
+
+```text
+preregistration commit: c4d8b107454ee363bf563d425fe3659dc6a4817d
+exploratory seeds excluded: 0..29
 held-out seeds: 600..611
 timesteps: 0.01, 0.005, 0.0025
-horizon: 8.0 model units
-early horizon: 0.5 model units
 population: 16
 replaced members: 4
 turnover fraction: 0.25
+horizon: 8.0
+thresholds, cases, and expected results: frozen
 ```
 
-No confirmatory output for seeds `600..611` existed when this version was committed.
+No threshold, force, case, seed, observer, or classification rule changed after the preregistration commit.
 
-## 3. Known-answer cases
+## 3. Case definitions
 
-### 3.1 Dynamic protocol
+| Case | Construction | Frozen answer |
+|---|---|---|
+| `protocol` | Roles rebuilt each step from current centroid and angular ordering | turnover robust |
+| `protocol_relabelled` | Same physical state after arbitrary array permutation | turnover robust |
+| `fixed_slots` | Original labelled spring slots, no role reassignment | not robust |
+| `broken_template` | New members disconnected from surviving old template | not robust |
+| `turnover_gas` | Same replacement state, no relative force | not robust |
+| `external_active` | External controller continuously assigns and repairs roles | not autonomous |
+| `protocol_sham` | Dynamic protocol but no replaced members | not eligible |
 
-At every step, members are sorted by angle around the instantaneous centroid. Radial forces restore a declared radius, while tangential forces move each member toward the larger of its adjacent angular gaps. The graph is rebuilt from the current population rather than retained by member label.
+## 4. Geometry, challenge, and inserted protocol
 
-```text
-turnover recovery = present by construction
-external source during challenge = absent
-expected verdict = turnover robust
-```
-
-### 3.2 Dynamic protocol relabelled
-
-The same state is randomly permuted in array order before evolution. No force or observer may depend on that order.
-
-```text
-same physical process under relabeling
-expected verdict = turnover robust
-```
-
-### 3.3 Fixed slots
-
-A sparse spring graph retains original member-slot labels and reference distances. Replacements inherit arbitrary removed array slots but no role reassignment mechanism.
-
-```text
-fixed internal template = present
-label-free reintegration protocol = absent
-expected verdict = not turnover robust
-```
-
-### 3.4 Broken template
-
-All template edges incident to replaced indices are removed. Surviving members retain a partial network; new members are disconnected.
-
-```text
-partial old organization = present
-new-member integration = absent
-expected verdict = not turnover robust
-```
-
-### 3.5 Turnover gas
-
-The same turnover state translates without internal force.
-
-```text
-member turnover = present
-reorganization = absent
-expected verdict = not turnover robust
-```
-
-### 3.6 Active external controller
-
-An external controller sorts members and continuously pulls them toward a regular ring assignment. It should repair geometry but fail source-off autonomy.
-
-```text
-geometric recovery = present
-external organizer = active
-expected verdict = not turnover robust
-```
-
-### 3.7 Protocol sham
-
-The dynamic protocol receives only tiny position noise and no member replacement.
-
-```text
-repair ability = present
-material turnover challenge = absent
-expected verdict = not eligible
-```
-
-## 4. Frozen geometry and turnover challenge
-
-The reference population is a regular ring:
+The reference population is a regular unit ring:
 
 ```text
 R_i = [cos(2 pi i / 16), sin(2 pi i / 16)].
 ```
 
-All members receive small position noise. For non-sham cases, four indices are sampled without replacement. Their points are replaced by independent positions with random angle and radius uniformly sampled from `[0.15, 1.75]`, plus Gaussian noise of standard deviation `0.03`.
+For a material challenge, four indices are sampled without replacement and replaced by random points with radii in `[0.15, 1.75]`, random angles, and small Gaussian noise. Every point begins with common velocity `[0.25, -0.10]`.
 
-Every member begins with common velocity
+The dynamic protocol is permutation-invariant but not strictly local:
 
-```text
-v_bulk = [0.25, -0.10].
-```
+1. find the instantaneous centroid;
+2. sort all current members by polar angle;
+3. pull each member toward unit radius;
+4. move each member tangentially toward its larger adjacent angular gap;
+5. apply only relative damping;
+6. subtract mean force so bulk motion remains free.
 
-## 5. Frozen observer
+This rule intentionally embodies the Community-Rule/covenant abstraction from the parent audit: current members are assigned roles by a reconstructive protocol rather than by permanent biological or numerical identity. The historical motif is only provenance for the systems question.
 
-The observer removes translation and uses no member correspondence.
+## 5. Frozen label-free observer
 
-### 5.1 Pair-distance error
+The observer receives no old-to-new member mapping.
+
+### 5.1 Pair structure
 
 ```text
 E_pair = RMS(sort(all pair distances) - sort(reference pair distances))
          / mean(reference pair distances).
 ```
 
-### 5.2 Radial error
+### 5.2 Radial organization
 
 ```text
 E_radial = RMS(r_i - 1).
 ```
 
-### 5.3 Angular-gap error
+### 5.3 Cyclic angular organization
 
-Sort polar angles around the instantaneous centroid. For cyclic gaps `g_i`,
+After sorting current polar angles, let `g_i` be cyclic gaps:
 
 ```text
 E_gap = RMS(g_i - 2 pi / 16) / (2 pi / 16).
@@ -172,70 +119,28 @@ E_gap = RMS(g_i - 2 pi / 16) / (2 pi / 16).
 
 ### 5.4 Participation
 
-Let each member's nearest-neighbor distance be divided by the regular-ring chord length. Final integration requires
+Every final member must have a nearest-neighbor distance between `0.70` and `1.30` times the regular-ring chord. This rejects a good-looking core plus isolated replacements.
+
+### 5.5 Frozen verdict
 
 ```text
-minimum ratio > 0.70
-maximum ratio < 1.30.
+turnover fraction >= 0.25
+external organizer absent
+pair recovery by t=0.5 > 0.05
+gap recovery by t=0.5 > 0.20
+final pair recovery > 0.90
+final gap recovery > 0.90
+final radial error < 0.02
+final gap error < 0.05
+participation bounds pass
+maximum RMS radius < 1.8
+final radius ratio in [0.7, 1.3]
+bulk-velocity error < 1e-8
 ```
 
-This rejects an apparently good aggregate made from a dense clump plus isolated replacements.
+All gates are required.
 
-### 5.5 Frozen gates
-
-```text
-G_turnover = replaced fraction >= 0.25
-G_source_off = no external organizer active during challenge
-G_early_pair = pair recovery by t=0.5 > 0.05
-G_early_gap = angular-gap recovery by t=0.5 > 0.20
-G_pair = final pair recovery > 0.90
-G_gap = final angular-gap recovery > 0.90
-G_radial = final radial error < 0.02
-G_gap_absolute = final angular-gap error < 0.05
-G_participation = nearest-neighbor ratio bounds pass
-G_bounded = maximum RMS radius < 1.8 and final radius ratio in [0.7, 1.3]
-G_bulk = final bulk-velocity error < 1e-8
-```
-
-```text
-turnover_robust = all eleven gates pass.
-```
-
-## 6. Frozen expected classification
-
-For every held-out seed and timestep:
-
-```text
-protocol              -> turnover robust
-protocol_relabelled   -> turnover robust
-fixed_slots           -> not turnover robust
-broken_template       -> not turnover robust
-turnover_gas          -> not turnover robust
-external_active       -> not turnover robust
-protocol_sham         -> not turnover robust
-```
-
-Additional frozen checks:
-
-```text
-protocol and protocol_relabelled:
-    all observer metrics match within 1e-10 for the same seed and timestep;
-
-external_active:
-    final pair and gap recovery exceed 0.90,
-    but source-off count is zero;
-
-protocol_sham:
-    final pair and gap recovery exceed 0.90,
-    but turnover fraction is zero;
-
-turnover_gas:
-    absolute final pair and gap recovery remain below 1e-8.
-```
-
-Classification must remain unchanged across all three timesteps. For both positive cases, coarse-versus-fine relative differences in mean final pair and gap recovery must remain below `0.01`.
-
-## 7. Complete executable verification code
+## 6. Complete executable verification code
 
 ```python
 import hashlib
@@ -300,7 +205,6 @@ def ring_metrics(x):
     centered = x - x.mean(axis=0)
     radius = np.linalg.norm(centered, axis=1)
     radial_error = float(np.sqrt(np.mean((radius - RADIUS) ** 2)) / RADIUS)
-
     angle = np.mod(np.arctan2(centered[:, 1], centered[:, 0]), 2.0 * np.pi)
     angle = np.sort(angle)
     gaps = np.diff(np.concatenate((angle, [angle[0] + 2.0 * np.pi])))
@@ -308,7 +212,6 @@ def ring_metrics(x):
         np.sqrt(np.mean((gaps - 2.0 * np.pi / N) ** 2))
         / (2.0 * np.pi / N)
     )
-
     distance_matrix = np.linalg.norm(
         centered[:, None, :] - centered[None, :, :],
         axis=2,
@@ -365,7 +268,6 @@ def external_forces(x, v):
     offsets = np.angle(np.exp(1j * (angle[order] - THETA)))
     phase = np.angle(np.mean(np.exp(1j * offsets)))
     anchors = np.column_stack((np.cos(THETA + phase), np.sin(THETA + phase)))
-
     forces = np.zeros_like(x)
     for position, index in enumerate(order):
         forces[index] += -5.0 * (centered[index] - anchors[position])
@@ -431,7 +333,6 @@ def simulate(case, seed, dt):
 
     pair_final = pair_error(x)
     radial_final, gap_final, nearest_min, nearest_max = ring_metrics(x)
-
     recovery_pair_early = (pair_0 - pair_early) / pair_0
     recovery_gap_early = (gap_0 - gap_early) / gap_0
     recovery_pair = (pair_0 - pair_final) / pair_0
@@ -573,58 +474,159 @@ print(json.dumps({
 }, indent=2, sort_keys=True))
 ```
 
-## 8. Analytic sanity checks
+## 7. Reproducible result
 
-1. Protocol radial and angular forces are mean-subtracted, so they do not accelerate the center of mass.
-2. Spring forces are equal and opposite; relative damping sums to zero.
-3. The observer uses sorted pair distances, radial distributions, sorted angular gaps, and nearest-neighbor participation, none of which uses member identity.
-4. The relabelled protocol is numerically the same physical state under array permutation.
-5. The external controller should recover geometry but is explicitly marked source-active.
-6. The sham should recover tiny noise but has zero turnover fraction.
-7. The gas has no relative force and therefore cannot change its co-moving geometry.
-8. A positive protocol is inserted by design; the fixture tests the observer, not emergence of the protocol.
-
-## 9. Result placeholder
+### 7.1 Environment
 
 ```text
-confirmatory_seeds_600_to_611 = not_executed_at_commit
-fixture_verdict = preregistered
+Python: 3.13.5
+NumPy: 2.3.5
+Platform: Linux 6.12.13 x86_64, glibc 2.41
 ```
 
-## 10. Interpretation boundary
+### 7.2 Classification
 
-A pass will establish only that the observer recognizes organization recovery after synthetic member replacement and rejects the registered controls.
+| Case | Expected per dt | dt=0.01 | dt=0.005 | dt=0.0025 |
+|---|---:|---:|---:|---:|
+| protocol | 12 | 12 | 12 | 12 |
+| protocol relabelled | 12 | 12 | 12 | 12 |
+| fixed slots | 0 | 0 | 0 | 0 |
+| broken template | 0 | 0 | 0 | 0 |
+| turnover gas | 0 | 0 | 0 | 0 |
+| active external controller | 0 | 0 | 0 | 0 |
+| protocol sham | 0 | 0 | 0 | 0 |
 
-It will not establish:
+### 7.3 Machine-readable checkpoint
+
+```json
+{
+  "raw_row_count": 252,
+  "raw_rows_canonical_json_sha256": "12488c9c625e025ed24745f3a6ad80d90a67254acc5258370bac5d8622158f17",
+  "summary_canonical_json_sha256": "52f67f6896d8d4d768577ca147199e04e35347401c8ceea2a649b37bda7f1ce3",
+  "positive_recovery_ranges": {
+    "pair_mean": [0.9992182682653242, 0.9992617413839343],
+    "gap_mean": [0.9997167526681335, 0.9997327210596786],
+    "maximum_final_radial_error": 0.00013260419310918555,
+    "maximum_final_gap_error": 0.00023392881125974019
+  },
+  "controls": {
+    "fixed_slots_pair_recovery_range": [-0.5033838636079552, -0.5030658992030251],
+    "broken_template_pair_recovery_range": [-0.00503870349341016, -0.0050386588212312],
+    "turnover_gas_absolute_recovery": "floating_point_zero",
+    "external_active_pair_recovery_range": [0.9991787175738032, 0.999224325201835],
+    "external_active_gap_recovery_range": [0.9996428991942131, 0.9996627361586921],
+    "external_active_source_off_count_per_dt": 0,
+    "protocol_sham_pair_recovery_range": [0.9996818459370257, 0.9996999165550694],
+    "protocol_sham_turnover_fraction": 0.0
+  },
+  "maximum_bulk_velocity_error": 8.886119947416683e-16,
+  "positive_pair_coarse_fine_relative_difference_max": 0.00004350712951390797,
+  "positive_gap_coarse_fine_relative_difference_max": 0.000015972915830731634
+}
+```
+
+The canonical digests use `json.dumps(..., sort_keys=True, separators=(",", ":"))`.
+
+## 8. Decision-relevant observations
+
+### 8.1 Membership labels were unnecessary
+
+The protocol and randomly relabelled protocol matched in all declared metrics within `1e-10` for every seed and timestep. Array identity was not used by the dynamics or observer.
+
+### 8.2 New members were genuinely integrated in the toy model
+
+All positive runs ended with every member's nearest-neighbor distance within the frozen participation range. The result was not produced by a good core plus isolated replacements.
+
+### 8.3 Fixed slots did not substitute for a reconstructive protocol
+
+The fixed-slot network moved away from the reference pair distribution after arbitrary member replacement, with mean pair recovery near `-0.503`. It retained internal forces but lacked a mechanism for assigning replacements to current collective roles.
+
+### 8.4 Old partial structure did not integrate replacements
+
+Removing all template edges incident to replaced members left the old subnetwork partially active but produced no collective repair. This distinguishes persistence of surviving structure from restoration of the complete population.
+
+### 8.5 External and sham gates were independently necessary
+
+The external controller and no-turnover sham both achieved more than `99.9%` final pair and gap recovery. They failed solely because the former was externally maintained and the latter had no member turnover. Geometry alone would have produced two false claims.
+
+## 9. Evidence layers
 
 ```text
-strictly local flocking rules;
-self-generated protocol or template;
-continuous-field vortex membership;
-Lineum collective identity;
-P2 particle status;
-copying, heredity, reproduction, life, agency, consciousness, ego, or soul;
-ancient encoded physics.
+implementation:
+    an explicitly engineered global role-reconstruction protocol and six controls were executed;
+
+reproducible observation:
+    the frozen label-free observer separated every held-out known-answer case;
+
+cautious interpretation:
+    higher-level organization can be operationally tracked across component replacement
+    without tracking microscopic identity in this synthetic system;
+
+hypothesis:
+    a comparable observer may test whether a Lineum vortex collective preserves relations
+    while individual detected defects turn over;
+
+real-physics boundary:
+    no physical particle, living system, soul, or actual Lineum state was tested.
 ```
+
+## 10. Limitations and next discriminator
+
+This result still inserts the answer into the toy dynamics:
+
+- the target radius is declared;
+- equal angular spacing is declared;
+- the protocol has global centroid and global angular ordering;
+- the population count remains constant after replacement;
+- all members are identical points;
+- no continuous field, phase winding, wake, resource stock, boundary, or history field exists;
+- no mechanism must discover the protocol;
+- no reproduction or descendant is created.
+
+The next meaningful discriminator is therefore a **local-versus-global protocol comparison**:
+
+```text
+strictly local neighbor rules with no global centroid or ordering;
+global protocol positive control;
+local rules plus a hidden common clock;
+local rules plus external boundary guidance;
+matched gas and fixed-template controls;
+member turnover, split, obstacle, and source-off challenges;
+observer frozen before held-out cases.
+```
+
+This will determine whether turnover-robust organization can arise from local interactions rather than from a globally informed controller embedded inside the dynamics.
 
 ## 11. Root-programme impact matrix
 
-| Root branch | Relation | Expected impact |
+| Root branch | Relation | Result impact |
 |---|---|---|
-| Collective-particle hypothesis | `supports` | Tests the defining claim that organization can outlive microscopic membership. |
-| Mechanical cohesion fixtures | `depends_on` | Turnover robustness is a stronger gate built on prior source-off cohesion controls. |
-| P2 remnant | `depends_on` | No actual P2 state is used. |
-| Static recipe versus live state | `constrains` | A fixed template is tested separately from a dynamic role-reconstruction protocol. |
-| Copying and heredity | `unaffected` | Replacement of members is not creation of a descendant. |
-| Physical correspondence | `unaffected` | Synthetic observer validation says nothing about nature. |
+| Collective-particle hypothesis | `supports` | The defining organization-with-member-turnover distinction is operationally measurable in a known-answer system. |
+| Mechanical cohesion fixtures | `supports` | Adds a stronger gate beyond shape repair with fixed components. |
+| P2 vortex-gas remnant | `depends_on` | P2 remains unrecovered and untested. |
+| Static recipe versus live state | `constrains` | Fixed slots and surviving old structure failed to integrate replacements. |
+| Protocol identity | `supports` | A dynamic current-population protocol succeeded where fixed membership structures failed. |
+| Emergence from local rules | `not_yet_compared` | Current protocol uses global information and was inserted by design. |
+| Copying and heredity | `unaffected` | No descendant or inherited content was produced. |
+| Physical correspondence | `unaffected` | Synthetic observer success says nothing about nature. |
 
 ## 12. Current verdict
 
 ```text
-member_turnover_fixture = preregistered
-confirmatory_execution = pending
-held_out_seeds = frozen_600_to_611
-observer_thresholds = frozen
-lineum_application = not_authorized
-next_action = execute_exact_embedded_code_then_record_complete_output
+member_turnover_known_answer_fixture = validated_within_declared_synthetic_domain
+confirmatory_trajectories = 252
+turnover_robust_true_positive_rate = 1.0
+registered_control_true_negative_rate = 1.0
+member_label_invariance = passed
+replacement_participation_gate = passed
+external_source_gate = independently_exercised_and_passed
+material_turnover_gate = independently_exercised_and_passed
+timestep_classification_stability = passed
+organization_persists_across_member_replacement_in_toy = supported_by_inserted_global_protocol
+strictly_local_emergent_protocol = not_tested
+lineum_collective_identity = not_tested
+p2_particle_status = unchanged
+public_api_or_whitepaper_change = not_authorized
+clickup_checkpoint_sync = failed_once_connector_tool_not_found_no_retry
+next_action = preregister_local_versus_global_turnover_protocol_comparison
 ```
