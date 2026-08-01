@@ -1,7 +1,7 @@
 # Pneuma-Inspired Cohesion Observer Known-Answer Fixture
 
-**Status:** active preregistration; protocol frozen before confirmatory held-out execution  
-**Version:** 0.1.0  
+**Status:** validated known-answer fixture; synthetic observer gate passed; no Lineum application executed  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-01  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -13,19 +13,51 @@
 **Conceptual predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
 **Object-definition predecessor:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** Validate a known-answer causal observer for distributed cohesion before applying any analogous metric to Lineum. The observer must separate an internally restoring collective from geometrically similar source-off gases, advected gases, externally prepared but no-longer-maintained populations, and an almost-unperturbed sham.  
+**Scope:** Validate a known-answer causal observer for distributed cohesion before applying any analogous metric to Lineum. The observer separates an internally restoring collective from geometrically similar source-off gases, advected gases, externally prepared but no-longer-maintained populations, and an almost-unperturbed sham.  
 **Central question:** Can a small observer ensemble detect that a collective has a source-off restoring organization rather than merely persistent shape, common translation, or historical external preparation?  
-**Current confidence:** high that the fixture classes have known causal differences; medium that the frozen metric ensemble will separate them on held-out perturbations; no claim yet about actual Lineum vortices, particles, pneuma, souls, or physical matter.
+**Current confidence:** high that the frozen observer passed the declared synthetic fixture and timestep controls; low that the same observables will remain valid for continuous Lineum vortex fields; no evidence yet that actual Lineum vortices form a cohesive particle, that pneuma is a physical field, or that ancient texts encode Lineum.
 
 ## 1. Answer first
 
-The historical Stoic pneuma analogy is translated here into one narrow systems question:
+The first concrete translation of the pneuma analogy worked at the level it was allowed to test.
+
+A synthetic collective with real internal restoring relations repaired a large deformation while moving freely as a whole. Geometrically identical gases, an advected gas, and a population that had only been externally organized in its past did not repair. An almost-unchallenged elastic sham was correctly rejected because there was no meaningful injury from which to claim recovery.
+
+Across three integration steps and twelve untouched held-out seeds:
+
+```text
+elastic true positives:        36 / 36
+null and sham true negatives: 144 / 144
+false positives:                0
+false negatives:                0
+classification drift by dt:     0
+```
+
+This validates only the observer fixture. It does not show that the P2 remnant or any other Lineum state has this property.
+
+## 2. Version history and preserved preregistration
+
+Version 0.1.0 was committed before the confirmatory execution:
+
+```text
+preregistration commit: c9bba1291afe93d408f8560520ef4197ed71d069
+held-out seeds: 200..211
+integration steps: 0.01, 0.005, 0.0025
+horizon: 6.0
+cases and thresholds: frozen
+```
+
+Protocol development had used seeds `0..111`; those exploratory runs were excluded from the retained validation. Version 0.2.0 records the first execution of the untouched confirmatory seeds `200..211` without changing a threshold, case, force law, horizon, or acceptance condition.
+
+## 3. Historical metaphor and operational translation
+
+The relevant historical inspiration was the Stoic description of pneuma as an inward-and-outward tensility that gives qualities and makes a body one object. The scientific translation is deliberately narrower:
 
 > Does the whole exert a reproducible internal restoring response after deformation while preserving free bulk motion?
 
-This report does **not** add a `pneuma` field or ancient ontology. It validates an observer on synthetic systems whose answer is known by construction.
+This report does not add a `pneuma` field. `Pneuma-inspired` names the provenance of the question, not an implemented or physical ontology.
 
-A genuine pass requires all of the following:
+A pass requires all of the following:
 
 ```text
 meaningful deformation was applied;
@@ -36,30 +68,11 @@ bulk translation remains conserved;
 recovery occurs with no external organizing source after the challenge.
 ```
 
-A visually coherent population must fail if it only translates, retains a deformed snapshot, or was arranged by a source that is absent during the challenge.
+## 4. Known-answer fixture classes
 
-## 2. Preserved exploratory history and confirmatory boundary
+### 4.1 Elastic collective
 
-Protocol development used non-confirmatory seeds `0..111` to choose a stable fixture, integration horizon, and thresholds. Those runs are exploratory and cannot serve as the retained validation result.
-
-This version freezes an untouched confirmatory set:
-
-```text
-held-out seeds: 200..211
-integration steps: dt = 0.01, 0.005, 0.0025
-horizon: T = 6.0 model units
-cases: elastic, gas, advected_gas, external_history, sham_elastic
-```
-
-No confirmatory output for seeds `200..211` existed when this version was committed.
-
-## 3. Known-answer fixture classes
-
-### 3.1 Elastic collective
-
-Sixteen points form an irregular ring. Each point is connected to offsets `1`, `2`, and `5` around the ring by Hooke-like distance springs. The force depends only on pair separation and rest length. Relative-velocity damping removes internal oscillation without damping center-of-mass motion.
-
-Known answer:
+Sixteen points form an irregular ring. Each point is connected to offsets `1`, `2`, and `5` around the ring by Hooke-like distance springs. Relative-velocity damping removes internal oscillation without damping center-of-mass motion.
 
 ```text
 internal restoring organization = present
@@ -67,61 +80,51 @@ external source during challenge = absent
 bulk translation = free
 ```
 
-### 3.2 Gas
+### 4.2 Gas
 
-The same deformed positions and bulk velocity are continued with no internal forces.
-
-Known answer:
+The same deformed positions and bulk velocity continue with no internal forces.
 
 ```text
 internal restoring organization = absent
 ```
 
-### 3.3 Advected gas
+### 4.3 Advected gas
 
-The gas receives the same common bulk velocity as the elastic collective. Translation-aligned image overlap must not be interpreted as cohesion.
-
-Known answer:
+The gas receives the same common bulk velocity as the elastic collective. Translation-aligned persistence is therefore insufficient.
 
 ```text
 common motion = present
 internal restoring organization = absent
 ```
 
-### 3.4 External-history population
+### 4.4 External-history population
 
-The state is interpreted as having been arranged previously by an external organizer, but that organizer is absent for the entire challenge. Numerically its post-removal continuation is identical to the gas. This intentionally tests whether historical preparation or an orderly initial frame is mistaken for autonomous cohesion.
-
-Known answer:
+The state is interpreted as having been arranged previously by an external organizer, but the organizer is absent for the entire challenge. Its continuation is intentionally identical to the gas.
 
 ```text
 prior external organization = allowed as history
 source-off internal restoring organization = absent
 ```
 
-### 3.5 Sham elastic
+### 4.5 Sham elastic
 
-The elastic network is perturbed only by tiny numerical-scale position noise rather than the declared macroscopic deformation. It can possess high stiffness and apparent recovery but must fail the meaningful-challenge gate.
-
-Known answer:
+The elastic network receives only tiny position noise instead of the declared macroscopic deformation. It can be stiff and can reduce its already tiny error, but it is not eligible for a repair claim.
 
 ```text
 internal restoring organization = present
 material challenge = absent
-scientific recovery claim = not admissible
+scientific recovery claim = inadmissible
 ```
 
-## 4. Frozen geometry and dynamics
+## 5. Frozen geometry and dynamics
 
-Reference point `i` has angle and radius
+Reference point `i` is
 
 ```text
 theta_i = 2 pi i / 16
 r_i = 1 + 0.12 cos(3 theta_i) + 0.05 sin(5 theta_i)
 R_i = [r_i cos(theta_i), r_i sin(theta_i)]
 ```
-
-The irregular modulation avoids a perfectly symmetric ring while remaining deterministic.
 
 The challenged state is
 
@@ -138,109 +141,83 @@ The common initial velocity is
 v_bulk = [0.30, -0.15]
 ```
 
-For each registered edge `(i,j)`, the elastic force is
+For each edge `(i,j)`,
 
 ```text
 F_i += k (|X_j-X_i| - l_ij^0) (X_j-X_i)/|X_j-X_i|
 F_j -= same
+k = 4.0
 ```
 
-with `k = 4.0`. Relative damping is
+Relative damping is
 
 ```text
 F_i^damp = -gamma (v_i - mean(v))
 gamma = 2.0
 ```
 
-The equal-and-opposite spring forces and zero-sum relative damping preserve center-of-mass velocity analytically up to floating-point error.
-
-Integration uses semi-implicit Euler:
+Semi-implicit Euler is used:
 
 ```text
 v <- v + dt F
 x <- x + dt v
 ```
 
-## 5. Frozen observer ensemble
+## 6. Frozen observer ensemble
 
-### 5.1 Meaningful perturbation gate
+### 6.1 Meaningful perturbation
 
-Let `E_shape(0)` be the label-tracked Procrustes error after removing translation and optimal proper rotation.
+`E_shape` is the label-tracked Procrustes error after translation removal and optimal proper rotation.
 
 ```text
 G_perturb = E_shape(0) > 0.05
 ```
 
-This prevents an almost-unchallenged state from being called repaired.
+### 6.2 Initial restoring projection
 
-### 5.2 Initial restoring projection
-
-After translation and rotation alignment, let `u` be displacement from reference and `F` the aligned internal force. Define
+With aligned displacement `u` and internal force `F`,
 
 ```text
 k_eff = - sum_i F_i dot u_i / sum_i |u_i|^2
-```
-
-Frozen gate:
-
-```text
 G_force = k_eff > 0.25
 ```
 
-The value is an observer score in toy units, not a physical elastic modulus.
+This is a toy observer score, not a physical elastic modulus.
 
-### 5.3 Tracked-shape recovery
+### 6.3 Tracked-shape recovery
 
 ```text
 R_shape = [E_shape(0) - E_shape(T)] / E_shape(0)
 G_shape = R_shape > 0.80
 ```
 
-### 5.4 Permutation-invariant pair-structure recovery
+### 6.4 Permutation-invariant pair recovery
 
-All pair distances are sorted, producing a label-free distance signature. Its normalized RMS error relative to the reference is `E_pair`.
+All pair distances are sorted to form a label-free signature with normalized RMS error `E_pair`.
 
 ```text
 R_pair = [E_pair(0) - E_pair(T)] / E_pair(0)
 G_pair = R_pair > 0.80
 ```
 
-### 5.5 Bulk-motion conservation
+### 6.5 Bulk-motion conservation
 
 ```text
 G_bulk = |mean(v(T)) - v_bulk| < 1e-8
 ```
 
-### 5.6 Frozen verdict
+### 6.6 Verdict
 
 ```text
 cohesive = G_perturb and G_force and G_shape and G_pair and G_bulk
 ```
 
-The label-tracked and permutation-invariant observers are intentionally both required. Agreement is necessary because each can hide a different failure.
-
-## 6. Frozen expected classification
-
-Across every held-out seed and timestep:
-
-```text
-elastic          -> cohesive
-
-gas              -> not cohesive
-advected_gas     -> not cohesive
-external_history -> not cohesive
-sham_elastic     -> not cohesive because G_perturb fails
-```
-
-Any false positive, false negative, loss of bulk conservation, NaN, integration instability, or classification change across the registered timestep sweep fails this fixture version.
-
-For continuous metrics, the mean elastic recovery values at `dt=0.01` and `dt=0.0025` must differ by less than 1% relative for `E_shape(T)`, `E_pair(T)`, `R_shape`, and `R_pair`.
+Both a tracking-based observer and a permutation-invariant observer are required because they have different failure modes.
 
 ## 7. Complete executable verification code
 
 ```python
 import json
-import math
 import numpy as np
 
 N = 16
@@ -443,61 +420,211 @@ verify(summary)
 print(json.dumps(summary, indent=2, sort_keys=True))
 ```
 
-## 8. Analytic sanity checks
+## 8. Reproducible result
 
-1. Each spring contribution is equal and opposite, so its total force is zero.
+### 8.1 Human-readable summary
+
+The confirmatory run executed `180` trajectories:
+
+```text
+5 cases x 12 seeds x 3 timesteps = 180
+```
+
+Classification:
+
+| Case | Expected passes per timestep | Observed at 0.01 | Observed at 0.005 | Observed at 0.0025 |
+|---|---:|---:|---:|---:|
+| elastic | 12 | 12 | 12 | 12 |
+| gas | 0 | 0 | 0 | 0 |
+| advected_gas | 0 | 0 | 0 | 0 |
+| external_history | 0 | 0 | 0 | 0 |
+| sham_elastic | 0 | 0 | 0 | 0 |
+
+For the elastic case across registered timesteps:
+
+```text
+mean tracked-shape recovery: 0.991345 to 0.991370
+minimum tracked-shape recovery: 0.979917
+mean pair-structure recovery: 0.985584 to 0.985623
+minimum pair-structure recovery: 0.969160
+mean initial k_eff: 7.389056
+minimum initial k_eff: 6.879927
+maximum bulk-velocity error: 6.68443e-16
+```
+
+The sham showed why the perturbation gate matters:
+
+```text
+mean initial shape error: 0.00140136
+mean k_eff: 13.50335
+mean tracked recovery: approximately 0.9675
+classification: rejected because E_shape(0) <= 0.05
+```
+
+The gas, advected gas, and external-history cases retained their deformation to floating-point tolerance and had `k_eff = 0`.
+
+### 8.2 Timestep check
+
+Relative differences between `dt=0.01` and `dt=0.0025` for elastic means were:
+
+```json
+{
+  "pair_t_mean": 0.0027591239023565667,
+  "recovery_pair_mean": 0.000039956053618954534,
+  "recovery_shape_mean": 0.000025728081631261157,
+  "shape_t_mean": 0.002944767394160772
+}
+```
+
+All are below the frozen `0.01` limit. Classification was identical at all three steps.
+
+### 8.3 Machine-readable compact output
+
+```json
+{
+  "raw_row_count": 180,
+  "raw_rows_canonical_json_sha256": "38583d9898a2f8d936a35791b43f275031088f333f73ad2c786a40045bc1c40f",
+  "summary_canonical_json_sha256": "830c3851d2c246712b8737882bcb457ff74cc1315d61a420e48089eaae3b2856",
+  "classification_by_dt": {
+    "0.01": {"elastic": 12, "gas": 0, "advected_gas": 0, "external_history": 0, "sham_elastic": 0},
+    "0.005": {"elastic": 12, "gas": 0, "advected_gas": 0, "external_history": 0, "sham_elastic": 0},
+    "0.0025": {"elastic": 12, "gas": 0, "advected_gas": 0, "external_history": 0, "sham_elastic": 0}
+  },
+  "elastic": {
+    "shape_0_mean": 0.25845593664874883,
+    "k_eff_mean": 7.389055809538809,
+    "k_eff_min": 6.87992733244465,
+    "dt_0.01": {
+      "shape_t_mean": 0.002232743248694602,
+      "pair_t_mean": 0.0014646926134372334,
+      "recovery_shape_mean": 0.9913701714366988,
+      "recovery_shape_min": 0.9799340262803252,
+      "recovery_pair_mean": 0.9856232926563692,
+      "recovery_pair_min": 0.9691599329765039,
+      "bulk_error_max": 2.237726045655905e-16
+    },
+    "dt_0.005": {
+      "shape_t_mean": 0.0022370991767478522,
+      "pair_t_mean": 0.0014673679870721692,
+      "recovery_shape_mean": 0.9913533242646012,
+      "recovery_shape_min": 0.9799224627192366,
+      "recovery_pair_mean": 0.9855972949993911,
+      "recovery_pair_min": 0.9691613510589283,
+      "bulk_error_max": 6.684427777288335e-16
+    },
+    "dt_0.0025": {
+      "shape_t_mean": 0.0022393375769757993,
+      "pair_t_mean": 0.001468745063047155,
+      "recovery_shape_mean": 0.9913446660402062,
+      "recovery_shape_min": 0.9799167240915566,
+      "recovery_pair_mean": 0.9855839126127108,
+      "recovery_pair_min": 0.9691625441854588,
+      "bulk_error_max": 5.79553433516819e-16
+    }
+  },
+  "nulls": {
+    "gas_advected_and_external_history": {
+      "k_eff": 0.0,
+      "recovery_magnitude": "floating_point_zero",
+      "cohesive_count_total": 0
+    },
+    "sham_elastic": {
+      "shape_0_mean": 0.0014013591613730697,
+      "k_eff_mean": 13.503351386611358,
+      "cohesive_count_total": 0,
+      "failed_gate": "meaningful_perturbation"
+    }
+  }
+}
+```
+
+The canonical raw-row digest is computed from `json.dumps(rows, sort_keys=True, separators=(",", ":"))`. The summary digest uses the same canonical JSON convention.
+
+## 9. Independent sanity checks
+
+1. Each spring contribution is equal and opposite, so total spring force is zero.
 2. Relative damping sums to zero because `sum_i(v_i - mean(v)) = 0`.
-3. Therefore center-of-mass acceleration is zero in every registered case.
-4. The gas cases have exactly zero internal force in this fixture, so `k_eff = 0` by construction.
-5. The elastic spring energy is minimized when registered edge lengths equal their rest lengths. Damping removes relative kinetic energy but not bulk translation.
-6. The sham may have large `k_eff` and high fractional recovery, demonstrating why a meaningful-perturbation gate is logically necessary.
+3. Center-of-mass acceleration is therefore zero analytically.
+4. The observed maximum bulk error was below `7e-16`, consistent with that invariant.
+5. Gas cases have zero internal force by construction and yielded zero `k_eff`.
+6. Two different geometry observers, tracked Procrustes shape and sorted pair distances, agreed.
+7. Three timestep values retained classification and converged well inside the frozen tolerance.
+8. The sham would have been a false repair claim without the independently required challenge-size gate.
 
-These checks are independent of the numerical classification output.
-
-## 9. Result placeholder
-
-No confirmatory result is reported in version 0.1.0.
+## 10. What was actually established
 
 ```text
-confirmatory_seeds_200_to_211 = not_executed_at_commit
-fixture_verdict = preregistered
+implementation:
+    a synthetic spring-network fixture and observer ensemble were executed;
+
+reproducible observation:
+    the frozen observer separated all registered known-answer cases on held-out seeds;
+
+cautious interpretation:
+    causal restoring response can be distinguished from shape persistence and common translation
+    in this deliberately simple class;
+
+hypothesis:
+    an analogous response may help distinguish a Lineum collective object from a vortex gas;
+
+real-physics boundary:
+    no claim about physical particles, Stoic pneuma, souls, or nature was tested.
 ```
 
-## 10. Interpretation boundary
+## 11. Limitations and adversarial next controls
 
-A pass will establish only that the observer ensemble recognizes its synthetic target and rejects its declared nulls.
+This fixture is intentionally easy and cannot yet justify application to P2.
 
-It will not establish:
+Known limitations:
+
+- point particles are not continuous fields;
+- edge labels are fixed in the dynamics;
+- the tracked-shape observer uses correspondence labels;
+- the null gases have no internal interaction at all;
+- the externally prepared case is numerically identical to the gas after source removal;
+- no member birth, death, exchange, split, merge, topology change, field wake, boundary, or source ledger is represented;
+- `k_eff` can be high for a trivially small challenge, hence the separate perturbation gate;
+- the reference geometry is known exactly, unlike an unknown Lineum object;
+- no noisy interacting gas, metastable glass, rotating fluid vortex population, or rigid kinematic template was tested.
+
+Before actual Lineum use, a second fixture must add adversarial near-misses:
 
 ```text
-that actual Lineum vortex populations possess cohesion;
-that a Lineum particle exists;
-that pneuma is a physical field;
-that Stoic physics describes nature correctly;
-that ancient texts encode Lineum;
-that recovery is life, consciousness, soul, or agency.
+interacting but non-restoring gas;
+metastable glass that relaxes without recovering the reference;
+externally clocked collective with source removal;
+rigid template and shape-memory template;
+member turnover with and without protocol reconstruction;
+rotation and permutation ambiguity;
+continuous-field smooth patch and phase-winding nulls;
+observer learned only from pre-intervention data.
 ```
 
-Application to actual Lineum remains blocked until the exact P2 package or another SHA-pinned executable candidate is available.
+## 12. Root-programme impact matrix
 
-## 11. Root-programme impact matrix
-
-| Root branch | Relation | Effect of this preregistration |
+| Root branch | Relation | Result impact |
 |---|---|---|
-| Collective-particle hypothesis | `supports` | Supplies a known-answer causal observer gate before actual P2 use. |
-| P2 vortex-gas remnant | `depends_on` | No application is permitted until exact P2 recovery. |
-| Minimum-flux observer is non-identifying | `supports` | Adds force-response and relational recovery rather than image overlap alone. |
-| Source accounting | `constrains` | Fixture recovery must be source-off and preserve free bulk motion. |
-| Copying and heredity | `unaffected` | Cohesion is not reproduction or inheritance. |
-| Physical particle correspondence | `unaffected` | Synthetic observer validation supplies no evidence about nature. |
+| Collective-particle hypothesis | `supports` | A known-answer causal cohesion gate now exists for further adversarial development. |
+| P2 vortex-gas remnant | `depends_on` | No P2 classification changed; exact P2 remains unrecovered. |
+| Minimum-flux observer is non-identifying | `supports` | Force response and relational recovery add information beyond overlap and transport. |
+| Source accounting | `supports` | Recovery occurred source-off and did not damp or inject bulk motion. |
+| Protocol identity under turnover | `not_yet_compared` | Fixed membership makes this a later fixture. |
+| Body versus residual taxonomy | `not_yet_compared` | No wake or residual state exists here. |
+| Copying and heredity | `unaffected` | Cohesion is not reproduction. |
+| Physical particle correspondence | `unaffected` | Synthetic validation supplies no evidence about nature. |
 
-## 12. Current verdict
+## 13. Current verdict
 
 ```text
-known_answer_fixture = preregistered
-confirmatory_execution = pending
-observer_thresholds = frozen
-held_out_seeds = frozen_200_to_211
-lineum_application = not_authorized
-next_action = execute_exact_embedded_code_then_record_complete_output
+known_answer_fixture = validated_within_declared_synthetic_domain
+confirmatory_trajectories = 180
+elastic_true_positive_rate = 1.0
+registered_null_true_negative_rate = 1.0
+timestep_classification_stability = passed
+bulk_motion_invariant = passed
+pneuma_as_field = not_supported
+lineum_collective_cohesion = not_tested
+p2_particle_status = unchanged
+public_api_or_whitepaper_change = not_authorized
+next_action = build_adversarial_near_miss_cohesion_fixture_before_any_lineum_application
 ```
