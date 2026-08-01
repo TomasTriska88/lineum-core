@@ -1,7 +1,7 @@
 # Autonomous Cohesion Causal-Path Discriminator
 
-**Status:** active preregistration; owner failure-gate response formalized; no confirmatory numerical result yet  
-**Version:** 0.1.0  
+**Status:** active negative-result report; frozen causal-path matrix executed; local path dependence supported; preregistered autonomy gate failed because the coordinate-frame observer was non-invariant  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-01  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -10,91 +10,94 @@
 **Root evidence cutoff:** 2026-07-29  
 **Root blob SHA:** `3fba3925553cd5596e46c02fa35d1db91523537d`  
 **Mandatory continuity companion:** `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, version 0.3.0, blob `5304874451caf32313ad0e8e3c59e53958698d79`  
-**Conceptual lineage:** `lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md` v0.2.0 -> `lineum-pneuma-cohesion-observer-fixture.md` v0.2.0 -> `lineum-pneuma-cohesion-observer-adversarial-audit.md` v0.1.0  
+**Conceptual lineage:** `lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md` v0.2.0 -> `lineum-pneuma-cohesion-observer-fixture.md` v0.2.0 -> `lineum-pneuma-cohesion-observer-adversarial-audit.md` v0.1.0 -> this report  
 **Immediate predecessor blob SHA:** `c3371db997abdd172485bcdadb65ef43467d71a6`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** A synthetic known-answer causal intervention that tests whether restoration depends on an intact local reciprocal interaction path and whether any external organizer performs work during the challenge. It does not import Lineum modules and cannot establish a Lineum particle or a physical pneuma.  
-**Central question:** Can a counterfactual graph cut plus an explicit organizer ledger distinguish internally mediated restoration from continuous global reference control and from order that survives only as preparation history?  
-**Current confidence:** high in the analytic null predictions; medium that the frozen positive local and global controllers will meet the quantitative horizon thresholds without retuning; zero evidence yet for application to P2 or nature.
+**Scope:** A synthetic known-answer causal intervention testing whether restoration depends on an intact local reciprocal interaction path and whether an external organizer acts during the challenge. No Lineum module is imported.  
+**Central question:** Can a graph cut plus an organizer ledger distinguish internally mediated restoration from global reference control and from preparation history alone?  
+**Current confidence:** high in the numerical and analytic results for this synthetic system; high that the graph cut has causal power; high that the frozen absolute-orientation recovery gate is invalid for autonomy; zero evidence for P2, particles, pneuma as a field, souls, life, or nature.
 
 ## 1. Answer first
 
-The next test will no longer ask only whether a deformed shape returns. It will ask whether the repair requires an intact chain of interactions inside the object and whether any external organizer supplies force or information during the repair.
+The causal cut worked, but the frozen autonomy verdict did not.
 
-The key intervention is a causal cut. Two halves are displaced rigidly relative to one another. All distances inside each half remain unchanged, so only links crossing between the halves know that the whole has been damaged.
+The local reciprocal network repaired the damaged geometry only when its cross-links remained intact. Removing those links reduced whole-object repair to zero. A global reference controller repaired the object whether the graph was intact or cut, but its external action ledger was large. Removing either organizer before the challenge produced no repair.
 
-Expected distinction:
+However, the local intact network restored the shape while the whole object settled approximately `6.31 degrees` rotated relative to its matched twin. The preregistered `R_cross` observer compared an absolute oriented vector and therefore counted only about `61.8%` recovery. The permutation-invariant pair geometry counted about `97.3%` recovery, and a post-hoc proper-rotation diagnostic counted more than `99.90%` cross-group recovery.
+
+The frozen protocol therefore fails exactly as preregistered:
 
 ```text
-local reciprocal collective with intact cross-links:
-    should pull the halves back together;
-
-same collective after all cross-links are cut:
-    should preserve each half but lose whole-object restoration;
-
-global reference controller:
-    should restore the whole even when the declared interaction graph is cut,
-    because it does not need that graph;
-
-controller removed before the challenge:
-    should not restore merely because it organized the object in the past.
+local causal path dependence = supported in the synthetic domain
+external-controller distinction = supported by action ledger and cut invariance
+preparation history alone = insufficient
+absolute-orientation autonomy gate = failed
+rotation-invariant autonomy verdict = not preregistered and therefore not accepted
+P2 application = prohibited
 ```
 
-A recovery score alone remains insufficient. The autonomy gate additionally requires zero external organizing action during the challenge, reciprocal internal forces, and a large loss of whole-object recovery when the internal causal path is severed.
+## 2. Version history and frozen execution receipt
 
-## 2. Owner failure-gate response
+Version `0.1.0` was committed before confirmatory execution:
+
+```text
+preregistration commit = 671d1d8747783fc3533811adbb04fd8dab5dd896
+confirmatory seeds = 500..511
+integration steps = 0.01, 0.005, 0.0025
+formation horizon = 4.0
+challenge horizon = 6.0
+force constants and thresholds = frozen
+```
+
+Version `0.2.0` records the first execution without changing any seed, timestep, force, graph, partition, challenge, horizon, threshold, or declared gate. The rotation-aligned diagnostic was calculated only after the frozen gate failed and is explicitly non-confirmatory.
+
+## 3. Owner failure-gate response and formalization
 
 The project owner rejected the premise that repair instructions should be supplied from outside:
 
 > No external instructions should be given.
 
-This is recorded as an architectural constraint, not experimental evidence. The agent formalizes it as:
+This is an architectural constraint, not evidence. It was formalized before execution as:
 
 ```text
-autonomous_cohesion_candidate = restoration after a local relational injury
+autonomous_cohesion_candidate = restoration after a relational injury
                                 with no external reference controller active,
                                 through declared internal interactions,
-                                and with a counterfactual dependence on an intact causal path.
+                                and with counterfactual dependence on an intact causal path.
 ```
 
-The external controller is retained only as an adversarial null. It is not proposed as a Lineum mechanism.
+The global controller remains an adversarial null, not a proposed Lineum mechanism.
 
-## 3. Inherited evidence and mechanism retrieval
+## 4. Inherited evidence
 
-Decision-relevant inherited facts are:
+The lane inherits these programme facts:
 
-- the first cohesion fixture reproduced shape and pair-distance restoration but classified a continuous external reference controller as cohesive in `36/36` runs;
-- the minimum-flux Lineum observer is already known to be non-identifying because matched smooth disorder can pass;
-- current Core source accounting contains a coherent software pump without a demonstrated physical stock or closed energy ledger;
-- the completed `mu x kappa` repair matrix found no repair synergy: structured static `kappa` weakly redirected activity, while the tested `mu` contribution was negligible and slightly negative;
-- the active Core implementation has no term that detects missing structure or compares the state against a target;
-- passive reversible membrane candidates tested in current fields did not close their receiving-store and return-path gates;
-- exact state transplant reproduces software continuation but does not establish autonomous identity or heredity.
+- the first cohesion fixture classified a continuous external reference controller as cohesive in `36/36` adversarial runs;
+- the minimum-flux Lineum observer is non-identifying because matched smooth disorder can pass;
+- current Core source accounting includes a coherent software pump without a demonstrated physical stock or closed energy ledger;
+- the tested `mu x kappa` repair matrix showed no synergy, with a negligible and slightly negative `mu` effect;
+- active Core has no term that detects missing structure or compares the current state with a target;
+- tested passive boundary candidates did not close receiving-store and return-path gates;
+- exact state transplant supports software continuation, not autonomous identity or heredity.
 
-The present repair is therefore an observer-and-intervention repair. It does not add a new Lineum field, controller, scaffold, or target-copying term.
+This report repairs an observer protocol only. It adds no field, scaffold, target-copying controller, equation, public API, or whitepaper claim.
 
-Repository code search was not authoritative in this checkpoint: one multi-repository search returned an upstream error and narrower code searches returned no indexed matches despite known reports. Explicitly known reports and immutable blobs were used instead. Cross-repository families not directly retrieved remain `not_yet_compared`, not absent.
+## 5. Cross-disciplinary structure
 
-## 4. Cross-disciplinary causal-isomorphism audit
-
-Distributed formation-control research distinguishes controllers using local relative measurements from leader or global-reference control. The relevant shared mathematical structure is a graph whose edges carry the information needed to constrain global shape.
+Distributed formation-control literature distinguishes local relative constraints from global or leader reference control. The shared mathematical object is an information graph whose edges specify which relationships can carry corrective information.
 
 Portable references:
 
 - Olfati-Saber, Reza. `Flocking for Multi-Agent Dynamic Systems: Algorithms and Theory`. *IEEE Transactions on Automatic Control* 51(3), 2006, 401-420. DOI `10.1109/TAC.2005.864190`.
-- Aranda, Miguel, et al. `Distributed Formation Stabilization Using Relative Position Measurements in Local Coordinates`. *IEEE Transactions on Automatic Control*, 2016. The method uses relative neighbour positions in independent local frames and no common reference.
+- Aranda, Miguel, et al. `Distributed Formation Stabilization Using Relative Position Measurements in Local Coordinates`. *IEEE Transactions on Automatic Control*, 2016.
 - Suttner, Raik, and Zhiyong Sun. `Formation Shape Control Based on Distance Measurements Using Lie Bracket Approximations`. *SIAM Journal on Control and Optimization* 58, 2020. DOI `10.1137/18M117131X`.
-- Belabbas, M.-A. `Decentralized Formation Control Part I: Geometric Aspects`, 2011, arXiv `1101.2416`, on information graphs, rigidity, and formation equivalence modulo rigid transformations.
+- Belabbas, M.-A. `Decentralized Formation Control Part I: Geometric Aspects`, 2011, arXiv `1101.2416`.
 
-These works do not validate Lineum. They justify the discriminator: if recovery is genuinely mediated by local relations, changing the information graph should change the recovery in a predictable way. A global controller should instead be insensitive to that cut while revealing external action.
+These references justify a known-answer graph intervention. They do not establish that Lineum or physical particles use this architecture.
 
-Biological self-repair, tissue morphogenesis, animal flocking, and autonomous robotics remain only cross-scale analogy families. No biological or empirical-universe correspondence is tested here.
+## 6. Frozen synthetic system
 
-## 5. Frozen synthetic system
-
-### 5.1 Reference geometry
-
-There are `N = 16` unit-mass points:
+Sixteen unit-mass points use the irregular reference ring
 
 ```text
 theta_i = 2 pi i / 16
@@ -102,349 +105,627 @@ r_i = 1 + 0.12 cos(3 theta_i) + 0.05 sin(5 theta_i)
 R_i = [r_i cos(theta_i), r_i sin(theta_i)]
 ```
 
-The internal graph contains undirected edges at cyclic offsets `1`, `2`, and `5`. Duplicate edges are removed. Every edge stores its local rest length `l_ij = |R_j - R_i|`.
-
-The partition is fixed before execution:
+The full undirected graph contains cyclic offsets `1`, `2`, and `5`:
 
 ```text
-left group:  i = 0..7
-right group: i = 8..15
-cross edge: one endpoint in each group
+full edges = 48
+cross-partition edges = 16
+edges after cut = 32
+left group = nodes 0..7
+right group = nodes 8..15
 ```
 
-### 5.2 Formation state
-
-For seed `s`, initial positions are:
+Initial formation states are
 
 ```text
 X_i = A R_i + eta_i
 A = [[1.20, 0.08],
      [0.03, 0.82]]
 eta_i ~ Normal(0, 0.05^2 I)
-```
-
-Initial velocities are the common bulk velocity:
-
-```text
 v_bulk = [0.30, -0.15]
 ```
 
-Formation horizon is `T_form = 4.0`.
-
-### 5.3 Internal reciprocal dynamics
-
-For every active edge `(i,j)`:
+Local edge forces are equal and opposite:
 
 ```text
-d_ij = X_j - X_i
-F_ij = k_s (|d_ij| - l_ij) d_ij / |d_ij|
+F_ij = 4 (|X_j-X_i| - l_ij) (X_j-X_i) / |X_j-X_i|
 F_i += F_ij
 F_j -= F_ij
-k_s = 4.0
+F_damp,i = -2 (v_i - mean(v))
 ```
 
-Relative damping preserves center-of-mass velocity:
+The global adversarial controller is
 
 ```text
-F_i^damp = -gamma (v_i - mean(v))
-gamma = 2.0
+F_ext = -4 ((X - mean(X)) - R) - 2 (v - mean(v))
 ```
 
-The graph-cut lane removes every cross edge immediately before the challenge. All within-group edges remain unchanged.
-
-### 5.4 Global reference controller
-
-The adversarial external controller acts on centered coordinates:
-
-```text
-X_c = X - mean(X)
-V_c = V - mean(V)
-F_ext = -k_g (X_c - R) - gamma V_c
-k_g = 4.0
-gamma = 2.0
-```
-
-It preserves net center-of-mass force but has coordinate-wise access to the global target `R`. It is external by construction.
-
-### 5.5 Challenge
-
-At the end of formation, the complete pre-challenge state is recorded. Immediately before the positional challenge, all point velocities are set to the common `v_bulk`; the intervention is applied identically to challenged and matched-twin lanes and is not counted as repair.
-
-The two equal groups are shifted rigidly in opposite directions:
+After formation, velocities are normalized to `v_bulk`. The challenged state receives opposite half translations:
 
 ```text
 delta = [0.35, 0.12]
-left:  X_i <- X_i - delta / 2
-right: X_i <- X_i + delta / 2
+left half  <- left half  - delta / 2
+right half <- right half + delta / 2
 ```
 
-This preserves total center of mass and every within-group pair distance. Only the relationship between the two groups and cross-edge lengths is damaged.
+This preserves every within-half distance and the total center of mass. Every challenged lane has a matched no-shift twin.
 
-Challenge horizon is `T_test = 6.0`.
-
-Every case has a matched no-shift twin evolved with the same formation history, law, seed, timestep, and velocity normalization.
-
-## 6. Frozen cases
+## 7. Frozen cases and gates
 
 ```text
-L_INTact:
-    local reciprocal graph during formation and challenge;
-    all cross edges retained;
-
-L_CUT:
-    local reciprocal graph during formation;
-    all cross edges removed before challenge;
-
-L_REMOVED:
-    local reciprocal graph during formation;
-    all internal forces removed before challenge;
-
-G_CONTINUOUS:
-    global controller during formation and challenge;
-
-G_CUT:
-    global controller during formation and challenge;
-    the same graph cut is declared, but the controller does not use the graph;
-
-G_REMOVED:
-    global controller during formation;
-    controller removed before challenge.
+L_INTact:      local reciprocal forces, full graph
+L_CUT:         local reciprocal forces, all cross edges removed
+L_REMOVED:     local formation, no force during challenge
+G_CONTINUOUS:  global controller remains active
+G_CUT:         global controller remains active; graph cut is irrelevant to its law
+G_REMOVED:     global formation, controller removed before challenge
 ```
 
-`L_REMOVED` and `G_REMOVED` share force-free challenge dynamics but have genuinely different simulated preparation histories. They are retained only to test whether preparation history alone creates repair; they are not counted as independent challenge mechanisms.
-
-## 7. Frozen execution grid
-
-```text
-confirmatory seeds = 500..511
-integration steps = [0.01, 0.005, 0.0025]
-formation horizon = 4.0
-challenge horizon = 6.0
-integrator = semi-implicit Euler
-cases = 6
-matched twin per case = yes
-expected trajectories = 12 * 3 * 6 * 2 = 432
-```
-
-No threshold, force constant, seed, horizon, partition, graph, or challenge vector may be changed after confirmatory execution. A failure may motivate a new version, but must remain recorded as the result of this frozen version.
-
-## 8. Frozen observer and ledgers
-
-### 8.1 Differential cross-group injury
-
-For challenged run `C` and twin `T`:
+The preregistered primary metric was
 
 ```text
 d(t) = centroid_right(t) - centroid_left(t)
-e_cross(t) = |d_C(t) - d_T(t)| / |delta|
-R_cross = 1 - e_cross(T_test) / e_cross(0)
+e_cross(t) = |d_challenged(t) - d_twin(t)| / |delta|
+R_cross = 1 - e_cross(T) / e_cross(0)
 ```
 
-The challenge should give `e_cross(0) = 1` within numerical tolerance.
+The second geometry metric used sorted all-pair distances between challenged and twin states. Additional ledgers recorded external action, external work, internal reciprocity, bulk velocity, spring energy, and damping dissipation.
 
-### 8.2 Differential permutation-invariant geometry
-
-At each time, all pair distances are sorted. The challenged-to-twin normalized RMS discrepancy is:
+The decisive frozen requirements included:
 
 ```text
-e_pair(t) = RMS(sort(D_C(t)) - sort(D_T(t))) / mean(sort(D_T(t)))
-R_pair = 1 - e_pair(T_test) / e_pair(0)
+L_INTact: R_cross > 0.90 and R_pair > 0.80
+L_CUT: R_cross < 0.05
+L_REMOVED: R_cross < 0.05
+G_CONTINUOUS and G_CUT: R_cross > 0.90, R_pair > 0.80, A_ext > 0.01
+G_REMOVED: R_cross < 0.05
+local cut sensitivity: R_cross(L_INTact) - R_cross(L_CUT) > 0.85
+global cut invariance: absolute difference < 0.02
 ```
 
-This remains an ensemble metric, not a complete identity invariant.
+No post-hoc metric may convert this frozen version into a pass.
 
-### 8.3 External organizer action
-
-For declared external force `F_ext`:
+## 8. Execution environment and independent checks
 
 ```text
-A_ext = integral sum_i |F_ext_i| dt
-W_ext = integral sum_i F_ext_i dot v_i dt
+Python = 3.13.5
+NumPy = 2.3.5
+platform = Linux 6.12.13 x86_64, glibc 2.41
+reported trajectories = 432 including matched twins
+standalone code SHA-256 = 0e41ef6ec3922989e72e96f2b3b04dfc71c258dc647167cd3c7821744960b399
+standalone JSON output SHA-256 = d7f00875408229cec4bea43c1d39225ccabb8cd3dff9c42214de2eddbfff21fe
 ```
 
-`A_ext` is the primary non-cancelling action ledger. External autonomy gate:
+Independent checks:
+
+- explicit edge-loop and incidence-matrix force implementations agreed at the initial challenge to maximum error `1.5543122344752192e-15`;
+- final local decision metrics and coordinates for seed `500` agreed between both implementations to maximum error `4.884981308350689e-15` across all three timesteps;
+- `G_CONTINUOUS` and `G_CUT` were bit-for-bit identical for every matched seed and timestep;
+- removed-force and cut analytic nulls reproduced to roundoff;
+- all bulk-velocity errors were below `1.56e-15`;
+- the local mechanical ledger residual decreased from at most `3.1215907903825446e-4` at `dt=0.01` to `1.9323379502500515e-5` at `dt=0.0025` for `L_INTact`.
+
+The reciprocity ratio gate failed narrowly in near-zero-force late states: maximum ratio `7.722571531188021e-12` exceeded the frozen `1e-12` threshold. At that instant the absolute net-force numerator was only `3.73471365847992e-15`, divided by a total-force denominator `4.8361010880858507e-4`. The ratio design is therefore ill-conditioned near quiescence, but the frozen gate remains failed.
+
+## 9. Confirmatory results
+
+### 9.1 Mean and range by timestep
+
+| dt | case | mean `R_cross` | range `R_cross` | mean `R_pair` | minimum `R_pair` | external action range |
+|---:|---|---:|---:|---:|---:|---:|
+| 0.0100 | `L_INTact` | 0.617924 | 0.613491–0.620265 | 0.972595 | 0.969619 | 0 |
+| 0.0100 | `L_CUT` | 3.52e-16 | -4.88e-15–4.55e-15 | -0.002061 | -0.004202 | 0 |
+| 0.0100 | `L_REMOVED` | -3.87e-14 | -4.37e-14–-3.53e-14 | 7.64e-15 | 9.99e-16 | 0 |
+| 0.0100 | `G_CONTINUOUS` | 0.997625 | 0.997625–0.997625 | 0.995691 | 0.995674 | 7.666–7.695 |
+| 0.0100 | `G_CUT` | 0.997625 | 0.997625–0.997625 | 0.995691 | 0.995674 | 7.666–7.695 |
+| 0.0100 | `G_REMOVED` | -3.71e-14 | -4.09e-14–-3.44e-14 | 1.97e-14 | 1.84e-14 | 0 |
+| 0.0050 | `L_INTact` | 0.617907 | 0.613474–0.620252 | 0.972568 | 0.969593 | 0 |
+| 0.0050 | `L_CUT` | 6.94e-16 | -5.33e-15–7.22e-15 | -0.002092 | -0.004236 | 0 |
+| 0.0050 | `L_REMOVED` | -2.16e-14 | -2.55e-14–-1.87e-14 | -8.38e-15 | -1.09e-14 | 0 |
+| 0.0050 | `G_CONTINUOUS` | 0.997521 | 0.997521–0.997521 | 0.995503 | 0.995485 | 7.663–7.692 |
+| 0.0050 | `G_CUT` | 0.997521 | 0.997521–0.997521 | 0.995503 | 0.995485 | 7.663–7.692 |
+| 0.0050 | `G_REMOVED` | -2.15e-14 | -2.46e-14–-1.78e-14 | -1.75e-14 | -1.98e-14 | 0 |
+| 0.0025 | `L_INTact` | 0.617898 | 0.613465–0.620246 | 0.972555 | 0.969580 | 0 |
+| 0.0025 | `L_CUT` | 3.24e-16 | -5.77e-15–1.03e-14 | -0.002108 | -0.004253 | 0 |
+| 0.0025 | `L_REMOVED` | -1.90e-14 | -2.24e-14–-1.71e-14 | -2.04e-14 | -2.33e-14 | 0 |
+| 0.0025 | `G_CONTINUOUS` | 0.997468 | 0.997468–0.997468 | 0.995407 | 0.995389 | 7.662–7.691 |
+| 0.0025 | `G_CUT` | 0.997468 | 0.997468–0.997468 | 0.995407 | 0.995389 | 7.662–7.691 |
+| 0.0025 | `G_REMOVED` | -1.78e-14 | -1.95e-14–-1.53e-14 | -2.58e-14 | -2.73e-14 | 0 |
+
+### 9.2 Frozen gate results
+
+```json
+{
+  "L_INTact_R_cross_all_gt_0_90": false,
+  "L_INTact_R_pair_all_gt_0_80": true,
+  "L_CUT_R_cross_all_lt_0_05": true,
+  "L_REMOVED_R_cross_all_lt_0_05": true,
+  "G_CONTINUOUS_R_cross_all_gt_0_90": true,
+  "G_CUT_R_cross_all_gt_0_90": true,
+  "G_REMOVED_R_cross_all_lt_0_05": true,
+  "local_cut_sensitivity_all_gt_0_85": false,
+  "global_cut_invariance_all_lt_0_02": true,
+  "global_cut_bit_identical_all": true,
+  "bulk_error_all_lt_1e_10": true,
+  "reciprocity_ratio_all_lt_1e_12": false,
+  "force_implementations_all_lt_1e_12": true
+}
+```
+
+The local cut-sensitivity score ranged only `0.613465–0.620265`, below the frozen `0.85` requirement because the same orientation-sensitive `R_cross` metric was used in both terms.
+
+## 10. Post-hoc rotation diagnostic
+
+The disagreement between `R_cross` and `R_pair` prompted a diagnostic that was not part of the frozen gate.
+
+After aligning the final challenged local state to its twin by translation and the best proper rotation:
 
 ```text
-G_no_external = A_ext < 1e-10 during the challenge
+dt = 0.0100:
+    mean rotation = 6.31137 degrees
+    rotation range = 6.27899–6.38260 degrees
+    minimum aligned R_cross = 0.999083
+
+dt = 0.0050:
+    mean rotation = 6.31175 degrees
+    rotation range = 6.27933–6.38300 degrees
+    minimum aligned R_cross = 0.999088
+
+dt = 0.0025:
+    mean rotation = 6.31195 degrees
+    rotation range = 6.27951–6.38320 degrees
+    minimum aligned R_cross = 0.999090
 ```
 
-### 8.4 Reciprocity
+The mean normalized labeled-coordinate mismatch after alignment was approximately `0.00294`.
 
-For internal edge forces:
+This diagnostic strongly suggests that the local positive control restored its relational geometry up to a legitimate rigid transformation. It does not retroactively pass the preregistered protocol. A new version would have to freeze an observer on the quotient space of translations and rotations before execution.
+
+## 11. Interpretation
+
+### What the toy implementation computes
+
+- local lanes use stored edge rest lengths and reciprocal pair forces;
+- global lanes use coordinate-wise access to a centered absolute reference;
+- cut lanes remove all declared information and force paths between two equal halves;
+- removed lanes contain preparation history but no challenge force.
+
+### What was reproducibly observed
+
+- the cut destroyed local whole-object correction while preserving each half's internal relationships;
+- the global controller was completely insensitive to the graph cut and used substantial external action;
+- preparation history alone produced no correction;
+- the local intact network restored pair geometry but acquired a reproducible rigid rotation;
+- results were stable across three timesteps and two force implementations.
+
+### Cautious interpretation
+
+The causal-path intervention is useful. It distinguishes a correction that depends on internal links from a global oracle. The failure lies primarily in the frozen observer's insistence on absolute orientation, not in an absence of local shape restoration.
+
+### Prohibited interpretation
+
+This does not establish a Lineum particle, `pneuma`, autonomous life, memory, heredity, consciousness, quantum mechanics, gravity, cosmology, or correspondence to physical matter.
+
+## 12. Failure-to-mechanism analysis
+
+### Exact failures
 
 ```text
-r_recip = max_t |sum_i F_internal_i| / (sum_i |F_internal_i| + 1e-15)
-G_recip = r_recip < 1e-12
+frozen local absolute-orientation recovery gate = failed
+frozen local cut-sensitivity threshold = failed through the same metric
+frozen normalized reciprocity ratio = failed near quiescence
+complete autonomy verdict = not accepted
 ```
 
-This checks action-reaction closure in the point toy. It is not a universal definition of locality.
-
-### 8.5 Bulk conservation
+### Positive behavior that remains
 
 ```text
-G_bulk = |mean(v(T_test)) - v_bulk| < 1e-10
+local pair-geometry restoration = supported
+counterfactual dependence on cross-links = supported
+external-controller graph-cut invariance = supported
+external organizer action ledger = supported
+source-removal null = supported
+preparation-history-only repair = unsupported
+bulk conservation = supported
+numerical implementation agreement = supported
 ```
 
-### 8.6 Local mechanical ledger
-
-For local-force lanes, record relative kinetic energy, spring potential, damping dissipation, and the semi-implicit integration residual:
+### Failure location
 
 ```text
-E_mech = K_relative + U_spring
-ledger_residual = E_mech(T) - E_mech(0) + integral dissipation dt
+local force law = positive control remained functional
+causal graph intervention = functional
+integration = not the primary failure
+absolute coordinate-frame observer = primary failure
+reciprocity ratio conditioning = secondary observer failure
+interpretation = frozen protocol correctly remains negative
 ```
 
-The absolute residual must decrease under timestep refinement. It is diagnostic and is not allowed to rescue a failed causal classification.
-
-## 9. Frozen family-level gates
-
-The protocol passes only if all conditions hold for all twelve seeds at every timestep:
+### Reopenable repair classes
 
 ```text
-L_INTact:
-    R_cross > 0.90
-    R_pair > 0.80
-    G_no_external
-    G_recip
-    G_bulk
+R1 quotient-space observer:
+    compare states modulo translation and proper rotation before applying cross-group metrics;
 
-L_CUT:
-    R_cross < 0.05
-    G_no_external
-    G_recip
-    G_bulk
+R2 purely relational observer:
+    use labeled edge lengths, graph stress, rigidity-matrix modes, and topology without
+    absolute orientation;
 
-L_REMOVED:
-    R_cross < 0.05
-    G_no_external
-    G_bulk
+R3 orientation-as-state variant:
+    retain orientation as a real identity variable only if another mechanism physically
+    anchors it and a separate intervention demonstrates that requirement;
 
-G_CONTINUOUS:
-    R_cross > 0.90
-    R_pair > 0.80
-    A_ext > 0.01
-    G_bulk
+R4 causal-response observer:
+    score changes in recovery after graph cuts, edge freezes, and pathway scrambles without
+    requiring return to one absolute pose;
 
-G_CUT:
-    R_cross > 0.90
-    R_pair > 0.80
-    A_ext > 0.01
-    G_bulk
+R5 reciprocity conditioning repair:
+    report absolute closure residual and a normalized ratio only above a frozen force floor;
 
-G_REMOVED:
-    R_cross < 0.05
-    G_no_external
-    G_bulk
-
-local cut sensitivity:
-    R_cross(L_INTact) - R_cross(L_CUT) > 0.85 for every matched seed and dt
-
-global cut invariance:
-    |R_cross(G_CONTINUOUS) - R_cross(G_CUT)| < 0.02
+R6 functional rather than geometric recovery:
+    test restored transport, boundedness, source ledger, or task response while allowing
+    multiple equivalent shapes.
 ```
 
-Classification must be unchanged across all three timesteps. Mean final metrics at `dt = 0.01` and `dt = 0.0025` must differ by less than `2%` for the two restoring positive controls.
+No repair is selected here. This verified negative result reopens the owner failure gate before the next consequential observer is frozen.
 
-### Autonomy verdict
+## 13. Root-programme impact matrix
 
-```text
-autonomous_cohesion_fixture = restoration
-                              and zero external organizer action
-                              and reciprocal internal closure
-                              and strong counterfactual dependence on intact local paths
-```
-
-Only `L_INTact` is expected to pass. `G_CONTINUOUS` is expected to restore but must fail autonomy because it uses external action and is graph-cut invariant.
-
-## 10. Analytic sanity checks
-
-Before interpreting numerical output:
-
-1. `L_CUT`: the challenge is a rigid translation of each disconnected group. Within-group distances and forces match the twin. With equal normalized velocities and no cross edges, the difference in group-centroid separation must remain exactly `delta`; therefore `R_cross = 0` up to numerical roundoff.
-2. `L_REMOVED` and `G_REMOVED`: zero challenge force implies ballistic challenged and twin states with identical velocities; therefore `R_cross = 0` exactly up to roundoff.
-3. `G_CONTINUOUS` and `G_CUT`: the controller equation does not read the graph; both trajectories must match bit for bit for a given seed and timestep.
-4. Internal edge forces are equal and opposite, so total internal force and center-of-mass acceleration vanish analytically.
-5. The positional challenge preserves total center of mass because the groups have equal size and receive opposite shifts.
-
-Violation of any analytic check invalidates the implementation before scientific interpretation.
-
-## 11. Independent numerical check
-
-The retained result requires two implementations of internal edge forces:
-
-```text
-implementation A: explicit edge loop with equal-and-opposite accumulation;
-implementation B: incidence-matrix/vectorized edge force assembly.
-```
-
-One-step forces must agree to maximum absolute error below `1e-12`. Final decision metrics must agree below `1e-10` for at least one seed at each timestep. Timestep refinement is an additional, not substitute, check.
-
-## 12. Outcome interpretation
-
-```text
-all gates pass:
-    the toy observer distinguishes local reciprocal path-mediated restoration from
-    continuous global reference control within the frozen synthetic domain;
-
-local intact restores but cut also restores:
-    the graph intervention lacks causal power or an undeclared pathway remains;
-
-local intact fails to restore:
-    the chosen local toy is not a valid positive control at the frozen horizon;
-    do not retune this version after seeing confirmatory results;
-
-global controller fails to restore:
-    the adversarial positive control or numerical setup is invalid;
-
-removed controllers restore:
-    hidden state, unmatched twins, velocity normalization, or bookkeeping is wrong;
-
-numerical implementations disagree:
-    no scientific verdict is allowed.
-```
-
-A successful toy result authorizes only a later observer-transfer design. It does not authorize P2 classification, a new Core API, a Lineum equation change, whitepaper promotion, or physical claims.
-
-## 13. Root-programme impact matrix before execution
-
-| Root branch | Relation | Pre-execution impact |
+| Root branch | Relation | Result |
 |---|---|---|
-| Collective-particle preregistration | `depends_on` | Supplies a causal autonomy gate stronger than shape persistence. |
-| P2 vortex-gas remnant | `unaffected` | Application remains prohibited until the toy passes and a field-compatible intervention exists. |
-| Minimum-flux observer limitation | `supports` | Explicitly addresses another non-identifying observer failure. |
-| Source-accounting programme | `supports` | External organizer action receives its own ledger. |
-| Active `mu x kappa` repair matrix | `constrains` | No target-detection or repair recipe is attributed to current `mu` or static `kappa`. |
-| Passive boundary programme | `supports` | The graph cut is a causal intervention, not a claim of a physical membrane. |
-| Mu/history reconstruction | `supports` | Observables are relative to matched pre-challenge history rather than a privileged observer target. |
-| Copying and heredity | `unaffected` | No member turnover, replication, content transfer, or descent is tested. |
-| Physical particle, life, soul, or cosmology mappings | `unaffected` | No correspondence claim is advanced. |
-| Cross-repository mechanism families | `not_yet_compared` | Connector search was incomplete; absence is not inferred. |
+| Collective-particle preregistration | `supports` and `constrains` | Causal-path ablation is useful, but identity metrics must respect physical symmetries. |
+| P2 vortex-gas remnant | `unaffected` | Application remains prohibited. |
+| Minimum-flux observer limitation | `supports` | A second observer failed by encoding a non-identifying coordinate choice. |
+| Source-accounting programme | `supports` | Continuous global correction was exposed by external action `A_ext ≈ 7.66–7.69`. |
+| Active `mu x kappa` repair matrix | `unaffected` | No new repair role is assigned to current fields. |
+| Passive boundary programme | `supports` | A cut can be a causal intervention without being a physical membrane claim. |
+| Mu/history reconstruction | `supports` | Matched twins remove baseline history drift, but history alone did not repair. |
+| Copying and heredity | `unaffected` | No turnover, replication, or descent was tested. |
+| Ancient-text structural audit | `constrains` | Pneuma-inspired cohesion remains an observer question, not an ontology. |
+| Physical particle, soul, life, or cosmology | `unaffected` | No correspondence advanced. |
+| Cross-repository variants | `not_yet_compared` | Connector indexing remained incomplete. |
 
-## 14. Three-layer evidence separation
+## 14. Three evidence layers
 
 ```text
 current Lineum implementation:
-    not executed in this lane;
-    inherited facts only, including open source accounting and no demonstrated repair recipe;
+    not executed;
+    inherited source, observer, and repair constraints remain unchanged;
 
 established mathematical and empirical domains:
-    distributed-control literature provides known systems in which local relative constraints
-    and global or leader control are operationally distinct;
-    this does not establish that physical particles use either architecture;
+    distributed-control and rigidity research shows that local relative constraints and
+    global reference control are operationally distinct, and that formation states are often
+    considered modulo rigid transformations;
 
-Lineum hypothesis and analogy:
-    an emergent collective object may require internally mediated, source-accounted,
-    counterfactually path-dependent restoration;
+Lineum hypothesis:
+    a candidate collective object may require source-accounted restoration that depends on
+    internal causal paths and is evaluated under the actual symmetries of the state space;
     this remains untested in Lineum.
 ```
 
 ## 15. Current verdict
 
 ```text
-owner_failure_gate = resolved
-selected_repair = locality_reciprocity_plus_source_ledger
-preregistration = frozen
-confirmatory_execution = not_started
+owner_external_instruction_constraint = preserved
+frozen_matrix_execution = completed
+analytic_nulls = passed
+independent_numerical_check = passed
+local_path_dependence = supported_in_toy
+external_global_control = distinguished_in_toy
+absolute_orientation_observer = falsified_within_domain
+reciprocity_ratio_observer = ill_conditioned_and_failed
+complete_autonomy_gate = failed
 P2_application = prohibited
-next_action = execute_frozen_synthetic_matrix_in_chatgpt_then_embed_code_and_results
+next_action = owner_failure_gate_before_selecting_symmetry_invariant_repair
 ```
+
+## 16. Complete executable verification code
+
+```python
+import json
+import math
+import platform
+import sys
+import numpy as np
+
+N = 16
+SEEDS = list(range(500, 512))
+DTS = [0.01, 0.005, 0.0025]
+T_FORM = 4.0
+T_TEST = 6.0
+BULK = np.array([0.30, -0.15], dtype=float)
+DELTA = np.array([0.35, 0.12], dtype=float)
+K = 4.0
+GAMMA = 2.0
+CASES = ["L_INTact", "L_CUT", "L_REMOVED", "G_CONTINUOUS", "G_CUT", "G_REMOVED"]
+
+theta = np.linspace(0.0, 2.0 * np.pi, N, endpoint=False)
+radius = 1.0 + 0.12 * np.cos(3.0 * theta) + 0.05 * np.sin(5.0 * theta)
+REFERENCE = np.column_stack((radius * np.cos(theta), radius * np.sin(theta)))
+REFERENCE -= REFERENCE.mean(axis=0)
+
+edge_set = set()
+for i in range(N):
+    for offset in (1, 2, 5):
+        edge_set.add(tuple(sorted((i, (i + offset) % N))))
+FULL_EDGES = sorted(edge_set)
+CROSS_EDGES = [edge for edge in FULL_EDGES if (edge[0] < 8) != (edge[1] < 8)]
+CUT_EDGES = [edge for edge in FULL_EDGES if edge not in CROSS_EDGES]
+PAIR_I, PAIR_J = np.triu_indices(N, 1)
+
+
+def make_graph(edges):
+    incidence = np.zeros((len(edges), N), dtype=float)
+    for row, (i, j) in enumerate(edges):
+        incidence[row, i] = -1.0
+        incidence[row, j] = 1.0
+    return incidence, np.linalg.norm(incidence @ REFERENCE, axis=1)
+
+
+FULL_B, FULL_REST = make_graph(FULL_EDGES)
+CUT_B, CUT_REST = make_graph(CUT_EDGES)
+
+
+def local_force_vectorized(x, v, incidence, rest):
+    edge_vectors = incidence @ x
+    distances = np.linalg.norm(edge_vectors, axis=1)
+    units = np.divide(edge_vectors, distances[:, None], out=np.zeros_like(edge_vectors), where=distances[:, None] > 1e-15)
+    edge_forces = K * (distances - rest)[:, None] * units
+    force = -(incidence.T @ edge_forces)
+    force += -GAMMA * (v - v.mean(axis=0))
+    return force
+
+
+def local_force_loop(x, v, edges, rest):
+    force = np.zeros_like(x)
+    for (i, j), rest_length in zip(edges, rest):
+        delta = x[j] - x[i]
+        distance = float(np.sqrt(delta @ delta))
+        if distance > 1e-15:
+            pair_force = K * (distance - rest_length) * delta / distance
+            force[i] += pair_force
+            force[j] -= pair_force
+    force += -GAMMA * (v - v.mean(axis=0))
+    return force
+
+
+def global_force(x, v):
+    return -K * ((x - x.mean(axis=0)) - REFERENCE) - GAMMA * (v - v.mean(axis=0))
+
+
+def pair_signature(x):
+    return np.sort(np.linalg.norm(x[PAIR_J] - x[PAIR_I], axis=1))
+
+
+def cross_vector(x):
+    return x[8:].mean(axis=0) - x[:8].mean(axis=0)
+
+
+def relative_kinetic(v):
+    centered = v - v.mean(axis=0)
+    return 0.5 * np.sum(centered * centered)
+
+
+def spring_energy(x, incidence, rest):
+    distances = np.linalg.norm(incidence @ x, axis=1)
+    return 0.5 * K * np.sum((distances - rest) ** 2)
+
+
+def damping_rate(v):
+    centered = v - v.mean(axis=0)
+    return GAMMA * np.sum(centered * centered)
+
+
+def initial_state(seed):
+    rng = np.random.default_rng(seed)
+    transform = np.array([[1.20, 0.08], [0.03, 0.82]], dtype=float)
+    x = REFERENCE @ transform.T + rng.normal(0.0, 0.05, size=REFERENCE.shape)
+    x -= x.mean(axis=0)
+    return x, np.tile(BULK, (N, 1))
+
+
+def form_state(seed, dt, mode):
+    x, v = initial_state(seed)
+    for _ in range(int(round(T_FORM / dt))):
+        force = local_force_vectorized(x, v, FULL_B, FULL_REST) if mode == "local" else global_force(x, v)
+        v += dt * force
+        x += dt * v
+    return x
+
+
+def case_spec(case):
+    if case == "L_INTact":
+        return "local", "local", FULL_B, FULL_REST, FULL_EDGES
+    if case == "L_CUT":
+        return "local", "local", CUT_B, CUT_REST, CUT_EDGES
+    if case == "L_REMOVED":
+        return "local", "zero", None, None, None
+    if case in ("G_CONTINUOUS", "G_CUT"):
+        return "global", "global", None, None, None
+    if case == "G_REMOVED":
+        return "global", "zero", None, None, None
+    raise ValueError(case)
+
+
+FORMATION = {}
+for dt in DTS:
+    for seed in SEEDS:
+        FORMATION[(dt, seed, "local")] = form_state(seed, dt, "local")
+        FORMATION[(dt, seed, "global")] = form_state(seed, dt, "global")
+
+
+def run_case(case, seed, dt):
+    formation_mode, challenge_mode, incidence, rest, edges = case_spec(case)
+    pre = FORMATION[(dt, seed, formation_mode)].copy()
+    twin_x = pre.copy()
+    challenged_x = pre.copy()
+    twin_v = np.tile(BULK, (N, 1))
+    challenged_v = np.tile(BULK, (N, 1))
+    challenged_x[:8] -= DELTA / 2.0
+    challenged_x[8:] += DELTA / 2.0
+
+    cross_0 = np.linalg.norm(cross_vector(challenged_x) - cross_vector(twin_x)) / np.linalg.norm(DELTA)
+    twin_pair_0 = pair_signature(twin_x)
+    pair_0 = np.sqrt(np.mean((pair_signature(challenged_x) - twin_pair_0) ** 2)) / np.mean(twin_pair_0)
+
+    force_impl_error = 0.0
+    if challenge_mode == "local":
+        force_impl_error = float(np.max(np.abs(local_force_vectorized(challenged_x, challenged_v, incidence, rest) - local_force_loop(challenged_x, challenged_v, edges, rest))))
+        energy_0 = relative_kinetic(challenged_v) + spring_energy(challenged_x, incidence, rest)
+    else:
+        energy_0 = None
+
+    external_action = 0.0
+    external_work = 0.0
+    reciprocity_max = 0.0
+    dissipation = 0.0
+
+    for _ in range(int(round(T_TEST / dt))):
+        if challenge_mode == "local":
+            challenged_force = local_force_vectorized(challenged_x, challenged_v, incidence, rest)
+            twin_force = local_force_vectorized(twin_x, twin_v, incidence, rest)
+            denominator = np.sum(np.linalg.norm(challenged_force, axis=1)) + 1e-15
+            reciprocity_max = max(reciprocity_max, float(np.linalg.norm(challenged_force.sum(axis=0)) / denominator))
+            dissipation += dt * damping_rate(challenged_v)
+            external_force = np.zeros_like(challenged_force)
+        elif challenge_mode == "global":
+            challenged_force = global_force(challenged_x, challenged_v)
+            twin_force = global_force(twin_x, twin_v)
+            external_force = challenged_force
+        else:
+            challenged_force = np.zeros_like(challenged_x)
+            twin_force = np.zeros_like(twin_x)
+            external_force = challenged_force
+
+        external_action += dt * np.sum(np.linalg.norm(external_force, axis=1))
+        external_work += dt * np.sum(external_force * challenged_v)
+        challenged_v += dt * challenged_force
+        challenged_x += dt * challenged_v
+        twin_v += dt * twin_force
+        twin_x += dt * twin_v
+
+    cross_f = np.linalg.norm(cross_vector(challenged_x) - cross_vector(twin_x)) / np.linalg.norm(DELTA)
+    twin_pair_f = pair_signature(twin_x)
+    pair_f = np.sqrt(np.mean((pair_signature(challenged_x) - twin_pair_f) ** 2)) / np.mean(twin_pair_f)
+
+    ledger = None
+    if challenge_mode == "local":
+        energy_f = relative_kinetic(challenged_v) + spring_energy(challenged_x, incidence, rest)
+        ledger = float(energy_f - energy_0 + dissipation)
+
+    return {
+        "case": case,
+        "seed": seed,
+        "dt": dt,
+        "R_cross": float(1.0 - cross_f / cross_0),
+        "R_pair": float(1.0 - pair_f / pair_0),
+        "A_ext": float(external_action),
+        "W_ext": float(external_work),
+        "recip_max": float(reciprocity_max),
+        "bulk_error": float(max(np.linalg.norm(challenged_v.mean(axis=0) - BULK), np.linalg.norm(twin_v.mean(axis=0) - BULK))),
+        "ledger_residual": ledger,
+        "force_impl_error": force_impl_error,
+        "challenged_x": challenged_x,
+        "twin_x": twin_x,
+    }
+
+
+ROWS = [run_case(case, seed, dt) for dt in DTS for case in CASES for seed in SEEDS]
+
+
+def summarize(case, dt):
+    selected = [row for row in ROWS if row["case"] == case and row["dt"] == dt]
+    output = {}
+    for key in ("R_cross", "R_pair", "A_ext", "recip_max", "bulk_error", "force_impl_error"):
+        values = [row[key] for row in selected]
+        output[f"{key}_min"] = float(np.min(values))
+        output[f"{key}_max"] = float(np.max(values))
+        output[f"{key}_mean"] = float(np.mean(values))
+    ledgers = [row["ledger_residual"] for row in selected if row["ledger_residual"] is not None]
+    if ledgers:
+        output["ledger_abs_max"] = float(np.max(np.abs(ledgers)))
+    return output
+
+
+SUMMARY = {str(dt): {case: summarize(case, dt) for case in CASES} for dt in DTS}
+
+
+def procrustes_diagnostic(row):
+    challenged = row["challenged_x"] - row["challenged_x"].mean(axis=0)
+    twin = row["twin_x"] - row["twin_x"].mean(axis=0)
+    u, _, vt = np.linalg.svd(challenged.T @ twin)
+    rotation = u @ vt
+    if np.linalg.det(rotation) < 0.0:
+        u[:, -1] *= -1.0
+        rotation = u @ vt
+    aligned = challenged @ rotation
+    angle_deg = math.degrees(math.atan2(rotation[1, 0], rotation[0, 0]))
+    aligned_cross_error = np.linalg.norm(cross_vector(aligned) - cross_vector(twin)) / np.linalg.norm(DELTA)
+    return angle_deg, 1.0 - aligned_cross_error
+
+
+ROTATION_DIAGNOSTIC = {}
+for dt in DTS:
+    values = [procrustes_diagnostic(row) for row in ROWS if row["case"] == "L_INTact" and row["dt"] == dt]
+    ROTATION_DIAGNOSTIC[str(dt)] = {
+        "angle_deg_min": float(np.min([value[0] for value in values])),
+        "angle_deg_max": float(np.max([value[0] for value in values])),
+        "angle_deg_mean": float(np.mean([value[0] for value in values])),
+        "aligned_R_cross_min": float(np.min([value[1] for value in values])),
+        "aligned_R_cross_mean": float(np.mean([value[1] for value in values])),
+    }
+
+
+def select(case, seed, dt):
+    return next(row for row in ROWS if row["case"] == case and row["seed"] == seed and row["dt"] == dt)
+
+
+local_cut_sensitivity = []
+global_cut_difference = []
+global_cut_exact = []
+for dt in DTS:
+    for seed in SEEDS:
+        local_intact = select("L_INTact", seed, dt)
+        local_cut = select("L_CUT", seed, dt)
+        global_full = select("G_CONTINUOUS", seed, dt)
+        global_cut = select("G_CUT", seed, dt)
+        local_cut_sensitivity.append(local_intact["R_cross"] - local_cut["R_cross"])
+        global_cut_difference.append(abs(global_full["R_cross"] - global_cut["R_cross"]))
+        global_cut_exact.append(np.array_equal(global_full["challenged_x"], global_cut["challenged_x"]) and np.array_equal(global_full["twin_x"], global_cut["twin_x"]))
+
+
+GATES = {
+    "L_INTact_R_cross_all_gt_0_90": all(row["R_cross"] > 0.90 for row in ROWS if row["case"] == "L_INTact"),
+    "L_INTact_R_pair_all_gt_0_80": all(row["R_pair"] > 0.80 for row in ROWS if row["case"] == "L_INTact"),
+    "L_CUT_R_cross_all_lt_0_05": all(row["R_cross"] < 0.05 for row in ROWS if row["case"] == "L_CUT"),
+    "L_REMOVED_R_cross_all_lt_0_05": all(row["R_cross"] < 0.05 for row in ROWS if row["case"] == "L_REMOVED"),
+    "G_CONTINUOUS_R_cross_all_gt_0_90": all(row["R_cross"] > 0.90 for row in ROWS if row["case"] == "G_CONTINUOUS"),
+    "G_CUT_R_cross_all_gt_0_90": all(row["R_cross"] > 0.90 for row in ROWS if row["case"] == "G_CUT"),
+    "G_REMOVED_R_cross_all_lt_0_05": all(row["R_cross"] < 0.05 for row in ROWS if row["case"] == "G_REMOVED"),
+    "local_cut_sensitivity_all_gt_0_85": all(value > 0.85 for value in local_cut_sensitivity),
+    "global_cut_invariance_all_lt_0_02": all(value < 0.02 for value in global_cut_difference),
+    "global_cut_bit_identical_all": all(global_cut_exact),
+    "bulk_error_all_lt_1e_10": all(row["bulk_error"] < 1e-10 for row in ROWS),
+    "reciprocity_ratio_all_lt_1e_12": all(row["recip_max"] < 1e-12 for row in ROWS if row["case"] in ("L_INTact", "L_CUT")),
+    "force_implementations_all_lt_1e_12": all(row["force_impl_error"] < 1e-12 for row in ROWS if row["case"] in ("L_INTact", "L_CUT")),
+}
+
+
+RECEIPT = {
+    "environment": {"python": sys.version, "numpy": np.__version__, "platform": platform.platform()},
+    "trajectory_count": len(ROWS) * 2,
+    "edge_count_full": len(FULL_EDGES),
+    "edge_count_cross": len(CROSS_EDGES),
+    "edge_count_cut": len(CUT_EDGES),
+    "summary": SUMMARY,
+    "rotation_diagnostic": ROTATION_DIAGNOSTIC,
+    "gates": GATES,
+    "local_cut_sensitivity_min": float(np.min(local_cut_sensitivity)),
+    "local_cut_sensitivity_max": float(np.max(local_cut_sensitivity)),
+    "global_cut_difference_max": float(np.max(global_cut_difference)),
+}
+
+print(json.dumps(RECEIPT, indent=2, sort_keys=True))
+```
+
+The executable code above contains the primary matrix and post-hoc rotation diagnostic. The independent explicit-loop continuation check was executed separately because embedding a second complete duplicate runner would obscure the primary reproduction path; its numerical comparison receipt is stated in Section 8.
