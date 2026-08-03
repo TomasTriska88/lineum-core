@@ -1,113 +1,187 @@
-# Lineum Model and Execution Routing
+# Fixed Lineum Codex Configuration and Execution Workflow
 
 ## Purpose
 
-Use this workflow whenever deciding whether Lineum work should remain in ChatGPT or be proposed for execution in Codex. The routing decision is based on the kind of work required, not on the assumption that a higher reasoning-effort label guarantees a more correct answer.
+This workflow is the binding source of truth for the model, capability mode, speed, and coordination pattern used for Lineum work in `TomasTriska88/lineum-core`.
 
-Use the named current models when they are available. If product names or effort labels change, preserve the role definitions below and select the nearest available equivalent.
+Lineum research and repository work are performed directly in Codex. An external ChatGPT supervisor is not required for scientific reasoning, interpretation, experiment selection, repository execution, or claim review.
 
-## ChatGPT-First Hard Gate
+If product labels change, preserve the capability roles and safeguards below rather than relying on obsolete names.
 
-Lineum work stays in ChatGPT by default. The agent MUST NOT recommend Codex merely because Codex would be faster, more convenient, more automated, better at repository navigation, or capable of producing a larger implementation in one pass.
+## Fixed configuration
 
-Before recommending Codex, the agent must first determine whether the required result can be produced reliably inside ChatGPT by using available reasoning, Python execution, file uploads, GitHub or other connected-source tools, web research, document analysis, or a smaller repository operation performed directly by the current agent. If it can, keep the work in ChatGPT.
+Use one configuration for all Lineum work and do not switch it task by task:
 
-Recommend Codex only when a concrete required step cannot be completed reliably in ChatGPT or by the current agent with available tools. Convenience, preference, task size, the presence of code, or a desire for extra confirmation is not sufficient. When only one bounded step crosses this boundary, delegate only that smallest step and retain all scientific reasoning, interpretation, and decisions in ChatGPT.
+- model: the strongest available GPT-5.6 Sol-tier model;
+- capability mode: `ultra`;
+- processing speed: standard, not fast mode;
+- repository: `TomasTriska88/lineum-core`;
+- default branch: `develop`.
 
-The burden of proof is therefore on switching to Codex, not on staying in ChatGPT.
+Do not downgrade to Max or another capability mode merely because an individual task appears small, tightly coupled, or inexpensive. Ultra remains selected, while the coordination rules below determine whether work stays in one lead lane or uses independent supporting lanes.
 
-## Default Roles
+Do not enable fast mode. Standard speed preserves the same selected model and capability mode while avoiding the disproportionate credit cost of fast processing. Tool execution, builds, tests, and simulations may dominate wall-clock time and are not necessarily accelerated by model fast mode.
 
-- **Primary Lineum workspace and scientific lead:** ChatGPT with GPT-5.6 Sol Pro. Use GPT-5.6 Sol Extra High as the fallback when Pro is unavailable.
-- **Exceptional repository executor:** Codex with GPT-5.6 Sol Max, only after the ChatGPT-first hard gate is satisfied.
-- **Exceptional parallel repository executor:** Codex Ultra, only when the hard gate is satisfied and the work is safely divisible into independent lanes with frozen inputs and explicit merge criteria.
-- **Do not recommend Codex merely because a task is difficult, mathematical, scientific, large, or contains code.** Recommend it only when an indispensable repository-local execution requirement cannot be met reliably in ChatGPT.
+## Codex is the primary scientific workspace
 
-ChatGPT owns the scientific question, assumptions, falsification criteria, interpretation, evidence strength, next-step selection, and claim wording. Codex may produce narrowly scoped repository-grounded evidence, code changes, tests, reproducible runs, or Git checkpoints when those cannot be produced reliably in ChatGPT. Codex output is evidence to evaluate, not an automatic scientific verdict.
+Codex owns the complete Lineum research cycle:
 
-## Keep the Work in ChatGPT
+1. repository and evidence retrieval;
+2. formulation of the scientific question;
+3. identification of assumptions and competing explanations;
+4. preregistration of observables, controls, and falsification criteria;
+5. implementation and execution;
+6. independent verification;
+7. adversarial interpretation;
+8. permanent report capture;
+9. selection of the next discriminating step;
+10. bounded promotion into code or whitepapers.
 
-Keep the task in ChatGPT Sol Pro or Extra High whenever ChatGPT can complete it with sufficient reliability, including when its primary deliverable is any of the following:
+Codex output is not automatically correct merely because it was produced in Ultra mode. Every material conclusion remains subject to the repository evidence gates.
 
-1. Defining the research question, null hypothesis, competing mechanisms, assumptions, observables, controls, or falsification criteria.
-2. Scientific, mathematical, physical, ontological, causal, statistical, or cross-disciplinary reasoning.
-3. Detecting a faulty premise, circular definition, confounder, alternative explanation, scope error, or claim stronger than the evidence.
-4. Interpreting simulation or test output and deciding whether a result is supported, constrained, unresolved, or falsified within a declared domain.
-5. Comparing Lineum with empirical evidence, established models, contested models, or external literature.
-6. Selecting the next discriminating experiment or deciding whether a mechanism should be promoted, retained, reopened, or rejected.
-7. Writing or auditing scientific conclusions, whitepaper claims, investor-facing scientific language, or public explanations.
-8. Performing analytic checks, dimensional checks, toy cases, statistics, plots, Monte Carlo runs, numerical integration, or prototype simulations that can be executed reliably in ChatGPT's Python environment.
-9. Reading, searching, comparing, or making a small precise change to repository files through available GitHub or connected-source tools when local execution is not required.
-10. Reviewing a Codex result, diff, report, or raw output for scientific validity.
-11. Designing code, tests, commands, experiment specifications, migration plans, or repository edits that can be handed back as text without requiring immediate local execution.
+## Ultra coordination model
 
-Do not suggest Codex while a reliable ChatGPT path remains. A task involving multiple files, repository knowledge, or executable code still remains in ChatGPT when connected tools and Python are sufficient for the required evidence and change.
+Ultra is used as a lead researcher with independent internal reviewers, not as an uncontrolled collection of agents.
 
-## Recommend Codex Max Only When ChatGPT Cannot Reliably Complete the Required Step
+### Lead-agent ownership
 
-Recommend **Codex Max** only when at least one requirement below is indispensable and cannot be satisfied reliably by ChatGPT or the current agent's available tools:
+One lead agent must own the active goal from question through final synthesis. The lead agent is responsible for:
 
-1. The task requires a local checkout and direct modification of many interdependent files where connector-based edits would be unsafe or incomplete.
-2. The result depends on the exact local package graph, generated files, uncommitted workspace state, build cache, operating-system environment, or repository-specific toolchain that ChatGPT cannot access.
-3. The required evidence can only be obtained by running the real test suite, build, linter, type checker, benchmark, CI reproduction, development server, runtime smoke check, or interactive local application.
-4. The calculation or simulation must import Lineum modules, use repository-only datasets, reproduce a historical checkout, or execute from a clean local environment unavailable to ChatGPT.
-5. The experiment exceeds the practical ChatGPT execution boundary because it requires extended runtime, large memory, GPU or external tooling, extensive repeated orchestration, or outputs too large to produce reliably in ChatGPT.
-6. The required implementation cannot be safely committed through available repository tools because it needs broad refactoring, generated artifacts, conflict resolution, or immediate local validation.
-7. The task requires local Git operations that available GitHub tools cannot safely perform, such as resolving merge conflicts, manipulating worktrees, or validating uncommitted changes.
-8. A repository-wide factual claim remains unresolved after using available ChatGPT repository search and reading tools and requires systematic local execution or indexing.
+- the exact question and scope;
+- the frozen protocol;
+- the active research report;
+- consistency with repository history;
+- deciding which supporting lanes are scientifically independent;
+- reconciling evidence without hiding disagreement;
+- the final narrow conclusion and prohibited over-interpretations;
+- the final repository diff and checkpoint.
 
-The presence of one of these categories is not enough by itself; the agent must state why the exact current step cannot be completed reliably in ChatGPT. Codex Max is the default Codex recommendation once that necessity is established. Do not recommend Ultra merely as a stronger-sounding setting.
+There must never be multiple competing final editors or multiple agents independently changing the same files.
 
-## Recommend Codex Ultra Only for Necessary Safe Parallelism
+### Supporting-agent roles
 
-Recommend **Codex Ultra** only when the ChatGPT-first hard gate is satisfied and all of the following are true:
+Supporting agents may be used for genuinely separable checks such as:
 
-1. The indispensable repository-local work contains at least three substantial lanes that can be executed independently.
-2. Every lane can receive frozen inputs, an exact scope, and an explicit output contract.
-3. Failure or bias in one lane will not silently contaminate the others.
-4. The outputs can be checked separately before synthesis.
-5. The final synthesis uses predetermined comparison or merge criteria.
-6. A single Codex Max run would be materially less reliable or impractical, not merely slower.
+- implementation audit against the declared equation;
+- independent analytic or dimensional verification;
+- second numerical implementation or reproduction;
+- test and metric validity audit;
+- historical variant and contradiction retrieval;
+- comparison with current primary or authoritative external evidence;
+- adversarial claim-strength review;
+- documentation and repository-boundary audit.
 
-Appropriate examples include separately auditing implementation, tests, and documentation when all require local execution; running independent simulation families over frozen parameter grids that exceed ChatGPT limits; searching distinct historical branches or variant families in local checkouts; or reproducing the same result through genuinely separate local implementations.
+A supporting agent receives frozen inputs, a narrow question, declared files or evidence, an output contract, and explicit conclusions it is not authorized to make.
 
-Do **not** recommend Ultra for a single theoretical derivation, one tightly coupled scientific argument, interpretation of one result, ontology selection, final claim wording, ordinary repository browsing, or any task where parallel agents would merely elaborate the same uncertain premise.
+### Tightly coupled work stays in one lane
 
-## Calculation and Simulation Boundary
+Ultra selection does not require parallel execution. Keep a derivation, ontology decision, causal argument, single-file edit, or tightly coupled implementation in the lead lane when splitting it would destroy shared assumptions or produce artificial disagreement.
 
-ChatGPT is sufficient by default for analytic derivations, dimensional and unit checks, toy models with known answers, independent recalculation, numerical integration, Monte Carlo experiments, statistical analysis, plotting, and prototype ODE or PDE simulations that fit within its execution environment.
+Supporting agents may still audit the completed result afterward using frozen inputs.
 
-Keep scaling the work inside ChatGPT where practical by reducing the model, freezing a representative parameter set, sampling the space, batching inputs, or first running a smaller discriminating experiment. Recommend Codex Max only after these options are inadequate and the required result genuinely needs the real repository, local dependencies, extended runtime, large memory, GPU or external tooling, broad parameter sweeps, repeated command-line orchestration, durable generated artifacts, or integration that cannot be performed safely through available tools.
+### No voting and no averaging away contradictions
 
-Regardless of tool, no decision-relevant numerical result is accepted from a single calculation path. Require at least one independent check such as an analytic sanity check, a toy case with a known output, a second implementation, a resolution or timestep convergence check, dimensional analysis, or reproduction with frozen inputs and seeds.
+Do not decide scientific truth by majority vote, confidence averaging, or stylistic consensus among agents.
 
-## Required Owner-Facing Recommendation
+When lanes disagree:
 
-Do not burden the project owner with a long workflow explanation. Give exactly one clear routing sentence first:
+1. preserve each result and its assumptions;
+2. identify the first concrete point of divergence;
+3. check equations, units, parameters, seeds, boundaries, observers, metrics, and environments;
+4. run the cheapest frozen discriminator capable of resolving the difference;
+5. record unresolved disagreement explicitly when the available evidence cannot decide it.
 
-- `Keep this in ChatGPT Sol Pro.`
-- `This exact local repository step cannot be completed reliably in ChatGPT; run it in Codex Max.`
-- `These necessary independent local lanes cannot be completed reliably in ChatGPT; run them in Codex Ultra.`
+An unresolved contradiction is a valid result. It must not be rewritten into a smooth compromise.
 
-Then give one sentence naming the missing capability that makes Codex necessary. Never describe Codex as merely preferable when ChatGPT can still do the work reliably.
+## Mandatory scientific loop
 
-When recommending Codex, provide one copyable execution brief containing:
+For every decision-relevant lane, perform this sequence before advancing:
 
-- the exact Codex mode;
-- repository and branch, normally `TomasTriska88/lineum-core` on `develop`;
-- the exact smallest goal and scientific question it serves;
-- the specific capability unavailable in ChatGPT;
-- files or directories to inspect or modify;
-- commands, tests, simulations, or checks to run;
-- required raw outputs and permanent artifacts;
-- stop conditions and failure conditions;
-- conclusions Codex is not authorized to make;
-- the return package: commit SHA when applicable, changed-file list, diff summary, commands executed, raw results, failed checks, limitations, and remaining uncommitted work.
+1. **Retrieve:** read all current applicable repository rules, the active root and child reports, relevant code, tests, whitepapers, historical variants, and recorded negative results.
+2. **State:** separate what the implementation currently computes, what prior reproducible runs observed, what is interpreted, what is hypothesized, and what is known about real physics.
+3. **Freeze:** record the question, assumptions, equations, units, inputs, parameters, seeds, boundaries, observables, controls, success criteria, failure criteria, and meaning of each possible outcome in the active report.
+4. **Sanity-check:** perform analytic, dimensional, symmetry, limiting-case, and toy-case checks wherever applicable.
+5. **Execute:** run the smallest discriminating experiment before broad sweeps or implementation expansion.
+6. **Verify independently:** use at least one check that does not merely repeat the same calculation path, such as a second implementation, known-answer case, convergence study, conservation audit, intervention, ablation, or independent supporting lane.
+7. **Attack the result:** search for circular metrics, leakage, observer dependence, numerical artifacts, hidden tuning, confounders, alternative explanations, and claims stronger than the test had power to establish.
+8. **Record:** update the active standalone report with commands, raw and human-readable results, failures, uncertainty, environment limits, and prohibited over-interpretations before the next consequential step.
+9. **Decide narrowly:** assign only a scope-safe status such as `supported`, `unsupported_under_tested_conditions`, `falsified_within_domain`, `unresolved`, or `reopened`.
+10. **Promote cautiously:** modify canonical code or whitepapers only through the repository promotion gates after the report supports the exact change.
 
-Never give a vague instruction such as `try this in Codex`. Recommend only the smallest repository-local execution package that cannot be completed as reliably in ChatGPT.
+A green test proves only that the asserted test condition passed. It does not prove that the metric is valid, the mechanism is unique, or nature behaves like the simulation.
 
-## Mixed Tasks
+## Independence requirements
 
-For a mixed scientific and repository task, keep the entire task in ChatGPT unless one exact indispensable execution step crosses the hard boundary. When it does, retain the scientific reasoning and all other work in ChatGPT and delegate only that smallest repository-execution slice. Avoid repeated handoffs and do not create ceremony for small tasks. A single bounded Codex run should obtain or implement only the missing evidence, after which ChatGPT evaluates what the evidence means.
+A result is not independently verified when the second check:
 
-If repository work can be completed directly and safely by the current agent with available tools, follow Rule 14 in `.agent/rules.md` and do it rather than delegating it to the owner. This workflow governs owner-facing model recommendations; it does not excuse an agent from using its own available tools.
+- imports the same unreviewed implementation for the disputed quantity;
+- copies the same formula or mistaken assumption without re-derivation;
+- uses the same circular observer or fitted threshold;
+- differs only in formatting, wrapper code, or agent wording;
+- sees the desired outcome before selecting its method when blinding was practical.
+
+Record exactly what is independent and what remains shared.
+
+## Claim ladder
+
+Use the following evidence ladder and never skip levels silently:
+
+1. `implemented`: the code contains the stated operation;
+2. `reproduced`: a frozen run produced the stated output;
+3. `robust_within_tested_domain`: controls and independent checks support the observation in the declared domain;
+4. `mechanistically_supported`: interventions or discriminating tests support the proposed causal explanation over recorded alternatives;
+5. `empirically_connected`: a defined observable has been compared responsibly with current real-world evidence;
+6. `canonical`: the exact bounded claim has passed promotion into the relevant whitepaper or public contract.
+
+Similarity of images, labels, metaphors, or internal behavior cannot by itself advance a claim up this ladder.
+
+## Report-first and whitepaper promotion
+
+The active standalone report under `research/` is the live scientific record during research. Update it before and after every consequential step as required by `.agent/continuous-research-reporting.md`.
+
+Do not continuously synchronize provisional ideas, exploratory results, or bounded failures directly into whitepapers. Whitepapers are canonical claim surfaces and may be updated only after:
+
+- the relevant report is current and reproducible;
+- independent checks are recorded;
+- contradictory evidence is addressed or preserved;
+- the exact claim scope and confidence are stated;
+- the promotion gate in `.agent/rules.md` and `docs/repository-boundaries.md` is satisfied.
+
+Negative results remain permanently available in the research history even when they do not alter a whitepaper.
+
+## Owner interaction and stop gates
+
+Continue autonomously through ordinary uncertainty by using the cheapest safe discriminator and the most conservative evidence-preserving path.
+
+Stop and ask the project owner only when required by the binding owner gates, including:
+
+- a verified decision-relevant negative result that opens the owner intuition gate;
+- a material architectural or conceptual decision the owner has stated they do not understand;
+- missing authorization, credentials, access, or a destructive operation decision;
+- two consequential options that remain observationally equivalent after the permitted discriminating work and require an owner preference rather than a scientific verdict.
+
+Questions are hard stops as defined in `.agent/rules.md`. Do not ask optional questions while continuing work in parallel.
+
+## Repository execution discipline
+
+Before every change, verify the repository, branch, target path, current blob or commit SHA, and repository boundary. Use local Git when available. Connector writes are limited to small, precise, reversible changes permitted by `.agent/rules.md`.
+
+Parallel agents must not write concurrently to the same branch or overlapping paths. The lead agent serializes final edits and verifies the combined diff.
+
+For code changes, run the required tests, static checks, and runtime verification. For rule or documentation-only changes, verify exact file contents, stale conflicting instructions, branch state, and resulting commits; do not claim runtime validation that was not performed.
+
+## Completion package
+
+A completed checkpoint must report:
+
+- repository and branch;
+- commit SHA or an explicit statement that no commit was created;
+- changed files and purpose;
+- commands, tests, simulations, and checks actually performed;
+- raw failures and unresolved contradictions;
+- scientific evidence level reached;
+- claims explicitly not established;
+- remaining uncommitted or unsynchronized work;
+- ClickUp mode if ClickUp was touched.
+
+The absence of a positive discovery does not make a checkpoint incomplete. A well-scoped negative, null, contradictory, or inconclusive result is a valid completed research output when it is reproducible and honestly recorded.
