@@ -39,6 +39,70 @@ Calls four and five are reserved for one necessary task discovery or one necessa
 - Do not search other workspaces, retrieve broad workspace hierarchies, paginate speculatively, or fetch every comment to orient routine work.
 - Batch coherent Git results into one ClickUp update instead of posting progress after every small commit, document edit, or experiment step.
 
+## Mandatory ClickUp pre-flight
+
+Before every ClickUp call, determine all of the following in the current working context:
+
+1. the exact workspace ID and target object ID;
+2. whether the target ID is already known, in which case search is forbidden;
+3. the current capability state of the exact connector action: `native-verified`, `degraded`, or `unknown`;
+4. the exact-operation latch state for the current coherent checkpoint: `OPEN` or `CLOSED`;
+5. the permitted operating mode: `native`, `fallback`, or `unsynchronized`;
+6. whether the proposed call remains within the checkpoint call budget.
+
+Do not invoke the tool until this pre-flight has a single unambiguous permitted path.
+
+### Persistent degraded capability state
+
+An action enters `degraded` state when any of the following occurs:
+
+- an action exposed in the connector schema returns `Tool ... not found`;
+- client and server schemas make the action impossible to invoke consistently;
+- a server or authorization error occurs for a target independently verified as correct;
+- a write reports success but the intended change cannot be confirmed by readback.
+
+A degraded state persists across later checkpoints and connector rediscovery. The mere continued presence of an action in the exposed schema is not evidence of recovery. Reconnecting, reinstalling, rediscovering, or refreshing the connector does not by itself restore `native-verified` status.
+
+When a documented fallback exists for a degraded action, use that fallback immediately. Do not reopen the fallback-design question, repeatedly troubleshoot the known failure, or perform a speculative native call during an ordinary research checkpoint.
+
+### Exact-operation latch
+
+Maintain a `CLICKUP_OPERATION_LATCH` for the exact connector action in each coherent checkpoint.
+
+- The latch is `CLOSED` immediately after the first server, tool, schema, authorization, or readback-verification failure for that action.
+- A closed latch forbids every further call to the same action for the remainder of the checkpoint.
+- A closed latch also forbids rediscovery, reconnect probing, alternate-task probing, workspace fan-out, and equivalent-action substitution intended only to see whether the same failure persists.
+- A new checkpoint does not reopen a persistently degraded action. It begins in fallback or unsynchronized mode until a successful restoration test retires the degraded state.
+
+### Restoration test gate
+
+A native restoration test is allowed only when the project owner explicitly asks whether the reconnected or updated connector works again, or when verifiable deployment evidence shows that the connector implementation changed.
+
+The restoration test is one single-use round trip on the dedicated connector bug task, never on an active scientific task:
+
+1. perform one narrow native write with a unique harmless test marker;
+2. if the write fails, close the latch immediately and perform no further probe;
+3. if the write reports success, perform one readback;
+4. restore `native-verified` status only when the exact marker, correct parent or container, and unchanged unrelated metadata are confirmed;
+5. if readback fails or differs, retain `degraded` status and close the latch.
+
+One reconnect authorizes at most one such round-trip attempt when explicitly requested. Reconnecting does not authorize repeated tests.
+
+### Safe task-description fallback
+
+When native task comments are degraded, an operational checkpoint may be appended to the task's complete `markdown_description` only through this procedure:
+
+1. retrieve the exact task with detailed output and verify that the complete current `markdown_description` is present and not truncated;
+2. preserve the complete existing description without deletion, reordering, summarization, or normalization;
+3. append a clearly separated entry under `## Operational Checkpoints`, creating that section only when it is absent;
+4. prefix the entry with `[Connector fallback; native comment unavailable]`, an ISO date, and the checkpoint type;
+5. update only `markdown_description` unless another metadata change was independently requested;
+6. read the task back and verify that the prior description remains present, the new entry appears exactly once, and unrelated metadata did not change.
+
+If the complete description cannot be retrieved or verified, do not use the fallback. Record the checkpoint as unsynchronized in Git or the owner-facing summary instead.
+
+Whenever ClickUp is touched during a checkpoint, the closing summary must identify the actual mode used: `ClickUp mode = native`, `ClickUp mode = fallback`, or `ClickUp mode = unsynchronized`.
+
 ### Failure and rate-limit handling
 
 - A ClickUp server error receives at most one attempted call for the requested operation. Do not immediately retry, fan out across workspaces, or substitute repeated searches.
