@@ -1,0 +1,88 @@
+{
+  "schema": "lineum-b4-early-threshold-scale-audit-1.0",
+  "seed": 20260804,
+  "source_status": "image-derived exact reconstruction verified by matching published metrics; named raw CSV unavailable on current develop",
+  "screenshot_reconstruction": {
+    "49_point": {
+      "formula": "floor(index/7)/6",
+      "pearson": 0.9842156096489157,
+      "euclidean": 0.7254094546265594
+    },
+    "15_point": {
+      "formula": "floor(index/7)/2",
+      "pearson": 0.8624831263677383,
+      "euclidean": 1.1669392742086542
+    },
+    "riemann_vs_linear_49": {
+      "pearson": 0.9952551158558309,
+      "rmse": 0.07676718573258266,
+      "euclidean": 0.5373703001280786,
+      "max_abs": 0.10984494056485139,
+      "sse": 0.28876683945974135
+    },
+    "staircase_vs_linear_49": {
+      "pearson": 0.9899494936611667,
+      "rmse": 0.05892556509887896,
+      "euclidean": 0.4124789556921527,
+      "max_abs": 0.125,
+      "sse": 0.1701388888888889
+    },
+    "riemann_vs_linear_15": {
+      "pearson": 0.9936251336683052,
+      "rmse": 0.0679814114740103,
+      "euclidean": 0.2632908744905157,
+      "max_abs": 0.1052679922793314,
+      "sse": 0.06932208458998049
+    }
+  },
+  "full_series_candidates": [
+    {"candidate":"fibonacci_log","pearson":0.9900504419855182,"rmse":0.05692883820720523,"euclidean":0.39850186745043664,"max_abs":0.12677558701456493,"sse":0.15880373836148534,"fraction_random_monotone_better":0.052325},
+    {"candidate":"riemann_unfolded","pearson":0.9901317016572299,"rmse":0.05812948356071377,"euclidean":0.4069063849249964,"max_abs":0.1277909593716773,"sse":0.16557280609272934,"fraction_random_monotone_better":0.07097},
+    {"candidate":"linear_index","pearson":0.9899494936611667,"rmse":0.05892556509887896,"euclidean":0.4124789556921527,"max_abs":0.125,"sse":0.1701388888888889,"fraction_random_monotone_better":0.084345},
+    {"candidate":"phi_power_log","pearson":0.9899494936611667,"rmse":0.05892556509887897,"euclidean":0.4124789556921528,"max_abs":0.125,"sse":0.17013888888888895,"fraction_random_monotone_better":0.084345},
+    {"candidate":"beatty_phi2","pearson":0.9898157259659617,"rmse":0.05954270297279311,"euclidean":0.41679892080955183,"max_abs":0.12698412698412698,"sse":0.17372134038800705,"fraction_random_monotone_better":0.095245},
+    {"candidate":"beatty_phi","pearson":0.989704062350937,"rmse":0.05996595437269194,"euclidean":0.41976168060884356,"max_abs":0.1282051282051282,"sse":0.1761998685075608,"fraction_random_monotone_better":0.103325},
+    {"candidate":"primes_unfolded_li","pearson":0.987779087761996,"rmse":0.06755799360320411,"euclidean":0.4729059552224288,"max_abs":0.1445375722875398,"sse":0.22364004248483782,"fraction_random_monotone_better":0.28236},
+    {"candidate":"primes_raw","pearson":0.9855210528543656,"rmse":0.09111553553772557,"euclidean":0.637808748764079,"max_abs":0.19111111111111106,"sse":0.4068,"fraction_random_monotone_better":0.762545},
+    {"candidate":"riemann_raw","pearson":0.9842156096489157,"rmse":0.10362992208950847,"euclidean":0.7254094546265594,"max_abs":0.21091588729400498,"sse":0.5262188768616022,"fraction_random_monotone_better":0.88465},
+    {"candidate":"phi_power_raw","pearson":0.4559464517627427,"rmse":0.5365714901940448,"euclidean":3.756000431358314,"max_abs":0.9442719100869984,"sse":14.107539240363842,"fraction_random_monotone_better":1.0},
+    {"candidate":"fibonacci_raw","pearson":0.455946451759191,"rmse":0.5365714902222911,"euclidean":3.756000431556038,"max_abs":0.9442719101205501,"sse":14.107539241849143,"fraction_random_monotone_better":1.0}
+  ],
+  "transition_candidates": [
+    {"candidate":"linear","pearson":0.9999999999999999,"rmse":4.1962486042515756e-17,"euclidean":1.1102230246251565e-16,"max_abs":1.1102230246251565e-16,"sse":1.232595164407831e-32,"values":[0.0,0.16666666666666666,0.3333333333333333,0.5,0.6666666666666666,0.8333333333333333,1.0],"fraction_random_monotone_better":0.0},
+    {"candidate":"beatty_phi2","pearson":0.9989061072386718,"rmse":0.015748519708717813,"euclidean":0.0416666666666667,"max_abs":0.02083333333333337,"sse":0.0017361111111111138,"values":[0.0,0.1875,0.3125,0.5,0.6875,0.8125,1.0],"fraction_random_monotone_better":0.000092},
+    {"candidate":"riemann_unfolded","pearson":0.998426707084073,"rmse":0.018755986353394014,"euclidean":0.04962367548480178,"max_abs":0.03422906702787121,"sse":0.002462509168620917,"values":[0.0,0.1832365554567692,0.3178799250029833,0.526771148037208,0.6324375996387954,0.8411318414118963,1.0],"fraction_random_monotone_better":0.000202},
+    {"candidate":"primes_unfolded_li","pearson":0.9979687203418481,"rmse":0.022273536201581515,"euclidean":0.058930237607378914,"max_abs":0.041497348883677954,"sse":0.003472772904462136,"values":[0.0,0.1428146919995155,0.3306506274583294,0.47398102451223284,0.7081640155503446,0.8110254367870156,1.0],"fraction_random_monotone_better":0.000422},
+    {"candidate":"beatty_phi","pearson":0.9971764649527377,"rmse":0.02519763153394848,"euclidean":0.06666666666666667,"max_abs":0.033333333333333354,"sse":0.0044444444444444444,"values":[0.0,0.2,0.3,0.5,0.7,0.8,1.0],"fraction_random_monotone_better":0.00082},
+    {"candidate":"riemann_raw","pearson":0.9931348585326947,"rmse":0.06348479675582384,"euclidean":0.16796498424939,"max_abs":0.10820470102182522,"sse":0.02821223593389783,"values":[0.0,0.2571429238805569,0.40606835899949256,0.6082047010218252,0.7019243111003124,0.875577149940915,1.0],"fraction_random_monotone_better":0.075572},
+    {"candidate":"primes_raw","pearson":0.9853511024347297,"rmse":0.1,"euclidean":0.2645751311064591,"max_abs":0.16666666666666669,"sse":0.07,"values":[0.0,0.06666666666666667,0.2,0.3333333333333333,0.6,0.7333333333333333,1.0],"fraction_random_monotone_better":0.34655},
+    {"candidate":"phi_power_raw","pearson":0.9295037587336393,"rmse":0.2167066679192289,"euclidean":0.5733519507637387,"max_abs":0.32117516385414036,"sse":0.3287324594445847,"values":[0.0,0.03647450843757886,0.09549150281252627,0.19098300562505255,0.3454915028125263,0.5954915028125263,1.0],"fraction_random_monotone_better":0.921148},
+    {"candidate":"fibonacci_raw","pearson":0.9242936410000813,"rmse":0.23145502494313785,"euclidean":0.6123724356957945,"max_abs":0.33333333333333337,"sse":0.375,"values":[0.0,0.0,0.08333333333333333,0.16666666666666666,0.3333333333333333,0.5833333333333334,1.0],"fraction_random_monotone_better":0.944148}
+  ],
+  "spacing_candidates": [
+    {"candidate":"target_equal","cv":0.0,"gaps":[7.0,7.0,7.0,7.0,7.0,7.0]},
+    {"candidate":"beatty_phi2","cv":0.1767766952966369,"gaps":[3.0,2.0,3.0,3.0,2.0,3.0]},
+    {"candidate":"riemann_unfolded","cv":0.22756703586832447,"gaps":[1.1206178168753067,0.8234369962996353,1.2775137894155275,0.6462231731848282,1.2763091132511253,0.9715882761723451]},
+    {"candidate":"primes_unfolded_li","cv":0.2532450406087697,"gaps":[1.1184248145496989,1.4709997153654601,1.1224634559649544,1.8339574497236075,0.8055387324669123,1.4799166518302576]},
+    {"candidate":"beatty_phi","cv":0.282842712474619,"gaps":[2.0,1.0,2.0,2.0,1.0,2.0]},
+    {"candidate":"riemann_raw","cv":0.318560091607833,"gaps":[6.887314497036861,3.9888179413741334,5.414018545713823,2.5101854618796793,4.651116571086483,3.3325408533218237]},
+    {"candidate":"primes_raw","cv":0.447213595499958,"gaps":[1.0,2.0,2.0,4.0,2.0,4.0]},
+    {"candidate":"phi_power_raw","cv":0.7639320225002103,"gaps":[0.6180339887498949,1.0,1.618033988749895,2.618033988749896,4.236067977499791,6.8541019662496865]},
+    {"candidate":"fibonacci_raw","cv":0.816496580927726,"gaps":[0.0,1.0,1.0,2.0,3.0,5.0]}
+  ],
+  "random_controls": {
+    "full_49":{"n":200000,"median":0.07648268970736859,"p05":0.05675784808721337,"p01":0.05219318882112465},
+    "transitions_7":{"n":500000,"median":0.1193324274348218,"p05":0.05783454331486291,"p01":0.041570348128568975}
+  },
+  "smooth_fits_to_drawn_staircase": {
+    "linear":{"pearson":0.9899494936611667,"rmse":0.05892556509887896,"euclidean":0.4124789556921527,"max_abs":0.125,"sse":0.1701388888888889},
+    "half_tanh":{"parameters":{"k":0.21269380021200274},"pearson":0.9899616618283122,"rmse":0.058775734941196416,"euclidean":0.4114301445883749,"max_abs":0.12684939683078714,"sse":0.1692747638760111},
+    "power":{"parameters":{"a":1.0253682605145311},"pearson":0.9899911074509775,"rmse":0.05851035926449161,"euclidean":0.40957251485144125,"max_abs":0.12795901216464767,"sse":0.16774964492173408},
+    "logistic":{"parameters":{"a":3.6475237138611205,"c":0.4999999999601782},"pearson":0.989755108265198,"rmse":0.04844821941319979,"euclidean":0.3391375358923985,"max_abs":0.08862323052788017,"sse":0.11501426825116788},
+    "quantized_linear":{"formula":"floor(index/7)/6","rmse":0.0,"euclidean":0.0,"max_abs":0.0,"sse":0.0}
+  },
+  "gap_trends": {
+    "riemann_zero_gaps":{"first_half_mean":3.1114327527458236,"second_half_mean":2.1797748415161116},
+    "prime_gaps":{"first_half_mean":3.9583333333333335,"second_half_mean":5.416666666666667}
+  }
+}
