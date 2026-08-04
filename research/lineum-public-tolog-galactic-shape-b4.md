@@ -1,12 +1,12 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active; question 1 observational target validated, question 2 homogeneous saturation phase completed, localized saturation phase pending  
-**Version:** 0.9.0  
+**Status:** active development programme; question 1 observational target validated, question 2 homogeneous saturation phase completed, localized saturation phase preregistered  
+**Version:** 0.9.1  
 **Evidence cutoff:** 2026-08-04  
 **Repository:** `TomasTriska88/lineum-core`  
 **Branch at preregistration:** `develop`  
-**Branch head at preregistration:** `aa3a1d248c02146072b8862ca96f2c97572a7524`  
-**Scope:** one permanent report answering exactly three public comparison questions: autonomous galactic emergence, natural saturation/divergence control, and scalar-potential memory; no private TOLOG material; no Lineum engine or whitepaper change  
+**Branch head at localized-phase preregistration:** `d70c9181bba25e7f7fa968192a44fdfdcdf8f1c3`  
+**Scope:** one permanent report answering exactly three public comparison questions by auditing, repairing, implementing, and validating Lineum capabilities; no private TOLOG material; no whitepaper change  
 **Question 1 status:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
 **Question 2 status:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
 **Question 3 status:** `no_explicit_scalar_potential_minimum_yet_demonstrated`  
@@ -14,7 +14,7 @@
 
 ## Plain result
 
-This report now stays anchored to three questions only.
+This report stays anchored to three questions only.
 
 1. Can a grid produce realistic galactic rotation from observable initial conditions without fitting the final curve galaxy by galaxy?
 2. Does Lineum stop divergence through a genuine attractor, or through inserted nonlinear bounds, damping, clipping, noise handling, and emergency resets?
@@ -22,11 +22,30 @@ This report now stays anchored to three questions only.
 
 The current answer is:
 
-- the desired galactic output is now tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
+- the desired galactic output is tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
 - current Lineum contains several explicit saturation and numerical safety devices; the first dynamic ablation supports only a partial dissipative `psi` equilibrium under selected homogeneous conditions, not a full natural attractor;
 - current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously.
 
-The report must not become a general galaxy notebook. Every retained calculation below either defines the target for question 1, separates physical from software stabilization for question 2, or tests persistent scalar memory for question 3.
+These are development coordinates, not a terminal verdict. The project-owner objective is to use every bounded failure to identify the missing operation, construct the smallest Lineum-native repair, attack it with ablations and held-out controls, and continue until the three capabilities are implemented and validated within a declared domain. The report is not complete merely because the current engine fails a question.
+
+The report must not become a general galaxy notebook. Every retained calculation below either defines the target for question 1, separates physical from software stabilization for question 2, develops the missing mechanism, or tests persistent scalar memory for question 3.
+
+## Programme objective and owner direction
+
+The project owner clarified on 2026-08-04 that the final purpose of B4 is not to conclude that Lineum cannot answer the three comparison questions. Its purpose is to determine what the current implementation does, identify exactly what is missing, develop a Lineum variant that gains the missing capability, and verify the result adversarially.
+
+Therefore each negative or null result must be converted into a mechanism-development record containing:
+
+1. the exact implementation or regime that failed;
+2. the behavior that remained positive;
+3. the location of the failure in the equation, state, source, observer, boundary, resolution, or interpretation;
+4. at least three distinct repair classes when scientifically plausible;
+5. the cheapest frozen discriminator among those repairs;
+6. a research-only implementation of the selected candidate;
+7. independent verification and ablation;
+8. promotion into the engine only after the exact bounded capability is supported.
+
+A question may be closed successfully only when an implemented Lineum variant passes its frozen gates without hiding the target output in its inputs. A current failure may falsify an implementation or regime, but it does not by itself falsify the broader Lineum development programme.
 
 ## The three controlling questions
 
@@ -360,7 +379,7 @@ It does not reject:
 
 Because the denominator is the farthest measured rotation-curve point rather than a physical edge, observer and measurement geometry remain material alternative explanations.
 
-## Question 1 verdict
+## Question 1 verdict and development target
 
 ### Current implementation
 
@@ -372,11 +391,15 @@ A two-parameter finite saturating addition describes many SPARC galaxies well. `
 
 ### Interpretation
 
-The target for a future emergent mechanism is now constrained: it must commonly produce `tanh`-like finite transitions, produce systematic non-`tanh` exceptions, and explain which source or observer variables select the curvature.
+The target for a future emergent mechanism is constrained: it must commonly produce `tanh`-like finite transitions, produce systematic non-`tanh` exceptions, and explain which source or observer variables select the curvature.
 
 ### Hypothesis
 
 A shared grid mechanism may project differently through different source geometries or may change regime when a transport, screening, leakage, memory, or coupling contribution becomes weak or dominant.
+
+### Development completion condition
+
+Question 1 is not closed by recording that blind prediction is absent. It requires a research variant that accepts only independently observable source conditions, freezes universal parameters before held-out evaluation, and predicts held-out rotation curves without using their observed velocities during calibration.
 
 ### Not established
 
@@ -507,8 +530,6 @@ That equilibrium, if reproduced, would be caused by the inserted bounded interac
 Meanwhile, default mode coupling continually adds non-negative energy to `phi`. In a homogeneous driven state, `phi` has no explicit local decay term in that branch and can continue toward the hard `phi_cap` unless diffusion or geometry exports it. A `phi` value stopped by the cap is not a natural minimum.
 
 ## Frozen dynamic saturation audit
-
-This audit is the next active experiment and remains inside this report.
 
 ### Question
 
@@ -775,6 +796,139 @@ The evidence supports a finite and perturbation-recovering `psi` equilibrium in 
 
 The homogeneous reduction contains no spatial gradients, diffusion, localization, radial profile, boundary interaction, or stochastic forcing. The preregistered localized phase remains necessary before question 2 can be closed.
 
+## Localized spatial phase preregistration
+
+### Development question
+
+Can spatial transport and neighbour coupling turn the partial homogeneous `psi` equilibrium into a localized, perturbation-recovering full state without hard `phi` containment? Does the eight-neighbour 3x3 stencil add a reproducible stabilizing or isotropy advantage over the four-neighbour stencil?
+
+### Source snapshot and implementation boundary
+
+The research runner must embed a frozen reference update derived from:
+
+```text
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+```
+
+It must not modify or import a mutable production implementation as its sole reproduction path. The exact current NumPy diffusion order, coefficients, periodic `np.roll` boundary convention, explicit interaction, damping, diffusion, mode transfer, `phi` diffusion, caps, and reset must be represented. One operation may be changed per declared ablation.
+
+### Stage L1 screening domain
+
+The first retained spatial step is intentionally small and frozen before result inspection:
+
+```text
+grid size = 32 x 32
+dt = 1.0
+primary updates = 5000
+recovery updates = 1000
+stencils = {LAP4, LAP8}
+initial phi = {0, 1}
+kappa = 1 everywhere
+mu = 0 everywhere
+delta = 0 everywhere
+quantum noise and linon generation = disabled
+```
+
+Initial `psi` is a centered real Gaussian with peak magnitude `1` and standard deviation `3` cells:
+
+```text
+psi(x,y) = exp(-(x^2 + y^2) / (2 * 3^2))
+```
+
+The field is placed far enough from the periodic boundary that initial wrap-around is negligible. This stage tests the checked-in cell-scale dynamics and boundary interaction; it is not yet a continuum-limit claim.
+
+Frozen single-operation lanes:
+
+```text
+baseline
+no hard guards
+no linear dissipation
+no explicit tanh
+no interaction denominator
+no mode coupling
+no phi cap
+```
+
+Total retained L1 runs before any fail-fast termination:
+
+```text
+2 stencils * 2 phi starts * 7 lanes = 28
+```
+
+### Perturbation
+
+After 5000 updates:
+
+- multiply `psi` inside radius `2` cells by `1.5`;
+- multiply `psi` in the neighbouring annulus from radius `3` through `5` cells by `0.5`;
+- preserve phase;
+- do not alter `phi` directly;
+- continue for 1000 updates.
+
+The pre-perturbation state of the same lane is the only recovery target.
+
+### Spatial observables
+
+For every run record:
+
+- total and mean `psi` energy;
+- maximum `|psi|`;
+- minimum, mean, and maximum `phi`;
+- late-window energy and `phi` slopes and coefficients of variation;
+- reset, cap, and non-finite events;
+- energy fraction within radii `3`, `6`, and `10` cells;
+- energy half-radius;
+- centre-of-energy displacement;
+- radial profiles of `|psi|^2` and `phi` using fixed integer-radius bins;
+- fourfold angular anisotropy of `|psi|^2`, where zero is rotationally uniform and larger values indicate square-grid imprint;
+- post-perturbation energy, radial-profile, half-radius, and centre recovery errors.
+
+### L1 gates
+
+`localized_psi_recovery` requires:
+
+```text
+no reset or non-finite event
+relative total-energy recovery error <= 5%
+relative radial-profile L2 error <= 10%
+absolute half-radius change <= 1 cell
+centre displacement after recovery <= 0.5 cell
+```
+
+`localized_full_state_recovery` additionally requires:
+
+```text
+no phi-cap hit
+relative phi radial-profile L2 error <= 10%
+late phi slope <= max(1e-10, 1e-8 * abs(late phi mean)) per update
+```
+
+`spatial_transport_resolves_phi` requires the uncapped-phi lane to remain finite, avoid a persistent positive late-time `phi` slope, and recover its pre-perturbation `phi` profile.
+
+`lap8_specific_stabilization` requires LAP8 to pass `localized_full_state_recovery` while the paired LAP4 run fails, without relying on a reset or cap, and with lower fourfold anisotropy.
+
+`stencil_not_decisive_in_L1` applies when paired LAP4 and LAP8 runs receive the same boundedness and recovery classification and neither has a material advantage larger than ten percentage points in radial recovery or anisotropy.
+
+A candidate that passes L1 must proceed to the already frozen `dt` values `{0.1, 0.5, 1.0}` and grids `{32, 64, 128}` before any stable-attractor claim. L1 failure is not a terminal programme verdict; it activates the repair map below.
+
+### Repair map if the current spatial system fails
+
+The following candidate classes are registered before execution:
+
+1. **Transport repair:** current `phi` diffusion or boundary export is insufficient; test a conservative flux or physically scaled diffusion without a local hard cap.
+2. **Bidirectional exchange repair:** mode coupling deposits energy into `phi` one way; test a reversible or detailed-balance exchange between `psi` and `phi`.
+3. **Local relaxation repair:** add the smallest explicit return term for `phi`, first as a linear leakage control and then as a potential-derived force.
+4. **Existing-field feedback repair:** test whether `mu`, dynamic `kappa`, or the existing foam/topology can provide state-dependent release without a new fundamental field.
+5. **Potential-minimum repair:** only if existing ingredients cannot produce the required observable, introduce a research-only scalar potential candidate with declared minima and energy accounting.
+6. **Localization repair:** if every bounded state simply disperses, test a conservative nonlinear localization term separately from saturation.
+7. **Boundary and scaling repair:** if results change qualitatively with stencil, domain, or time step, correct discretization and physical scaling before interpreting a mechanism.
+
+The cheapest next discriminator will be selected from the exact L1 failure location. No blind parameter sweep or unrestricted hybrid is permitted.
+
+### Prohibited interpretation
+
+L1 can identify what the current spatial implementation does and which operation is necessary under the tested cell-scale conditions. It cannot establish a physical 3x3 elementary cell, continuum convergence, a galactic attractor, or a TOLOG Dark Heart mechanism.
+
 # Question 3 — scalar minimum and information persistence
 
 ## Current implementation audit
@@ -822,6 +976,8 @@ This test will begin only after question 2 identifies which stabilization operat
 
 A memory claim requires persistence without continued source input and recovery toward a predeclared state after perturbation. Slow decay alone is not a stable potential minimum.
 
+Question 3 is not closed by documenting that the current field lacks a demonstrated minimum. The development target is a smallest-ingredient Lineum mechanism that stores a localized state after source removal, returns toward a declared state after perturbation, and passes destructive controls without continued driving or hard clipping.
+
 # Root-programme impact
 
 | Statement | Current impact |
@@ -832,13 +988,14 @@ A memory claim requires persistence without continued source input and recovery 
 | Broad bounded-transition family is common | `supports` descriptively |
 | Disk concentration alone monotonically controls population `tanh` penalty | `contradicts` under frozen extension |
 | Observer and measurement geometry are irrelevant | `contradicts` as an allowed assumption |
-| Lineum currently predicts galactic rotation blindly | `not_yet_supported` |
+| Lineum currently predicts galactic rotation blindly | `not_yet_supported`; development target remains active |
 | Public TOLOG evidence reproduces blind 98% emergence | `not_yet_supported` from public reproducible material |
 | Lineum stability is purely emergent | `contradicts` in the homogeneous tested regime; explicit denominator, damping, cap, and guards materially shape the result |
 | A partial dissipative `psi` equilibrium exists | `supports` for six high-`phi`, `dt=1` homogeneous lanes only |
-| Current Lineum has a proven fixed potential attractor | `contradicts` as a conclusion from the homogeneous phase; full-state `phi` remains cap-supported or unbounded |
-| Current Lineum has a proven persistent scalar minimum | `not_yet_supported` |
-| A 3x3 neighborhood is uniquely required | `not_yet_supported` |
+| Current Lineum has a proven fixed potential attractor | `contradicts` as a conclusion from the homogeneous phase; repair programme remains active |
+| Current Lineum has a proven persistent scalar minimum | `not_yet_supported`; development target remains active |
+| A 3x3 neighbourhood is uniquely required | `not_yet_supported`; L1 comparison preregistered |
+| B4 is intended only to judge the present engine | `contradicts`; B4 is an audit-repair-validation programme |
 
 # Retained artifacts and reproduction
 
@@ -991,7 +1148,7 @@ The repository declares NumPy below `2.0`. Independent reconstruction and altern
 
 The population concentration extension additionally used scikit-learn `1.8.0`. Its principal rank, permutation, and independent-check results do not depend on the cross-validation model.
 
-The homogeneous deterministic phase of the question-2 audit is complete. It used Python `3.13.5` and NumPy `2.3.5`, but the independently checked recurrence is scalar and does not depend on SciPy, scikit-learn, PyTorch, or GPU behavior. The localized spatial phase and stochastic controls remain pending.
+The homogeneous deterministic phase of the question-2 audit is complete. It used Python `3.13.5` and NumPy `2.3.5`, but the independently checked recurrence is scalar and does not depend on SciPy, scikit-learn, PyTorch, or GPU behavior. The localized spatial phase must record its own environment and remains subject to a repository-supported NumPy rerun if executed under NumPy 2.x.
 
 # Prohibited conclusions
 
@@ -1008,7 +1165,8 @@ This report does not establish:
 - a stable scalar potential minimum;
 - a persistent information field;
 - that disk concentration causes the observed shape family;
-- that a lower chi-squared identifies physical truth.
+- that a lower chi-squared identifies physical truth;
+- that current implementation failures are terminal limits on future Lineum development.
 
 # Version history
 
@@ -1021,4 +1179,5 @@ This report does not establish:
 - `0.6.1`: corrected `SBdisk` and `SBbul` provenance before source execution.
 - `0.7.0`: completed the extreme source discriminator; compact disk association supported inside the selected contrast.
 - `0.8.0`: reorganized the single report around the three controlling questions; completed the all-102 population concentration extension as `no_population_extension`; recorded observer/measurement confounding; opened and preregistered the question-2 saturation audit; documented the unused `dissipation_rate` configuration contradiction.
-- `0.9.0`: completed and independently checked the homogeneous deterministic saturation phase; retained the initial checker failure; classified question 2 provisionally as `explicitly_stabilized_partial_dissipative_equilibrium_only`; localized spatial phase remains pending.
+- `0.9.0`: completed and independently checked the homogeneous deterministic saturation phase; retained the initial checker failure; classified question 2 provisionally as `explicitly_stabilized_partial_dissipative_equilibrium_only`; localized spatial phase remained pending.
+- `0.9.1`: recorded the owner's audit-repair-validation objective; made current failures explicitly non-terminal; preregistered the L1 localized LAP4/LAP8 screening and its repair map before execution.
