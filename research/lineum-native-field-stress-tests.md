@@ -1,17 +1,32 @@
 # Lineum-Native Field Stress-Test Programme
 
 **Status:** active  
-**Version:** 0.2.0  
+**Version:** 0.2.1  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** a Lineum-only research programme testing three field-dynamics questions with current and historically relevant Lineum equation families  
-**Current confidence:** high in the programme structure; high that the default radial-drift lane is unsupported under the tested conditions; low on the replacement mechanism until historical retrieval and discriminating controls are complete  
+**Current confidence:** high in the programme structure; high that the default radial-drift lane is unsupported under the tested conditions; low on the replacement mechanism until historical and public-source retrieval plus discriminating controls are complete  
 **Operational task:** ClickUp task `869edcdkk`
 
 ## 1. Repository and ownership boundary
 
 This is a native Lineum research programme. Its equations, runners, controls, results, negative outcomes, and interpretations belong in `TomasTriska88/lineum-core` under `research/`.
 
-The programme does not reproduce, validate, or archive any external private theory. External conversation supplied motivation only. No external manuscript, unpublished equation, private dataset, or collaboration brief is part of the evidence chain.
+The programme does not reproduce, validate, or archive any external private theory. External conversation supplied motivation only. No external private manuscript, unpublished equation, private dataset, sent attachment, or collaboration brief is part of the evidence chain.
+
+### Public external-source policy
+
+Publicly accessible TOLOG material may be used as an attributed source of candidate mechanisms, test ideas, comparison targets, terminology, or falsifiable questions. Permitted public sources include:
+
+- public source-code repositories and their released histories;
+- official public websites and documentation;
+- public papers, preprints, technical notes, and datasets;
+- public videos, talks, interviews, demonstrations, and presentation materials;
+- public social-media posts or discussion threads when they contain decision-relevant technical claims;
+- independent public coverage that can be traced to a stable source.
+
+Every retained use must record the public source title or description, author or publisher when available, stable URL or repository reference, access date, and the exact idea or claim imported into the Lineum hypothesis ledger. A public TOLOG claim remains external evidence about what TOLOG publicly proposes or reports; it is not evidence that the claim is correct and is never evidence that Lineum implements the same mechanism.
+
+The privately supplied file used in earlier communication work is explicitly excluded even when a similar statement can be remembered from chat. A claim may enter this programme only after it is independently recovered from a public source. Private-source wording, equations, figures, tables, unpublished numerical values, and conclusions must not be reconstructed, paraphrased into the report, or treated as search hints beyond generic public terminology already present in the public record.
 
 Canonical Core code and whitepapers remain unchanged unless a later result independently passes the repository promotion gates.
 
@@ -125,7 +140,7 @@ Where applicable, child reports must include:
 
 The first retained checkpoint was the preregistered galactic radial-locking Lane A/Lane B pair. It used the current engine without adding a new equation and discriminated between active `phi`-gradient feedback and passive smoothing.
 
-Because Lane B reproduced Lane A almost exactly, blind local parameter tuning of the default drift is now prohibited. The next step is mandatory existing-hypothesis retrieval before choosing a replacement mechanism.
+Because Lane B reproduced Lane A almost exactly, blind local parameter tuning of the default drift is now prohibited. The next step is mandatory existing-hypothesis and public-source retrieval before choosing a replacement mechanism.
 
 The saturation lane and scalar-minimum lane remain active programme questions. Their exact order after retrieval will be selected by the cheapest test that discriminates across the complete inherited mechanism set, not merely by proximity to the latest galaxy result.
 
@@ -203,7 +218,7 @@ No candidate in Batch 1 is promoted to a current Lineum mechanism or physical cl
 | Scalar minimum and information retention | programme-level scope frozen | not run | no independent check | unresolved |
 | Compute reduction | metrics frozen at programme level | no reference benchmark | not applicable yet | unresolved |
 
-## 9. Prohibited conclusions at version 0.2.0
+## 9. Prohibited conclusions at version 0.2.1
 
 This programme does not establish that:
 
@@ -211,6 +226,7 @@ This programme does not establish that:
 - Lineum contains a proven global attractor analogous to a cosmological endpoint;
 - Eq-11 historical claims are reproduced by the current programme;
 - collective relaxation is distinct from diffusion under the relevant conditions;
+- any publicly reported TOLOG mechanism is correct or implemented by Lineum;
 - Lineum proves information conservation or information loss in nature;
 - any Lineum field is a real gravitational, quantum, cosmological, or Standard-Model field;
 - Lineum accelerates an external solver by any measured percentage.
@@ -224,3 +240,4 @@ This programme does not establish that:
 5. ClickUp routing governance was corrected in commit `41d7e16342cd2d4170ccf807f7d4dd60ae1a3aa6`.
 6. A later ClickUp checkpoint attempt returned `RATE_LIMIT_EXCEEDED` with a reported wait of `531` minutes. No retry or polling was performed. The rule-governance checkpoint is therefore operationally unsynchronized while Git remains complete.
 7. Historical retrieval Batch 1 recovered Eq-11 intrinsic saturation and collective-relaxation candidates from the current canonical whitepaper. No new simulation was run and no replacement mechanism was selected.
+8. The project owner authorized use of any publicly accessible TOLOG material, not only repositories, as attributed inspiration or comparison evidence. The privately supplied attachment remains excluded. The public-source boundary was recorded before public retrieval began.
