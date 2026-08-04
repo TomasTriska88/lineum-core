@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, base64, csv, glob, json, lzma, platform, sys, zipfile
+import argparse, base64, csv, glob, hashlib, json, lzma, platform, sys, zipfile
 from pathlib import Path
 import numpy as np
-sys.path.insert(0,'/mnt/data')
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lineum_b4_sparc_population_shape_census as core
 
 def main():
@@ -43,5 +43,5 @@ def main():
     raw=json.dumps(full,separators=(',',':'),sort_keys=True).encode()
     wrapper={'schema':'compressed-research-receipt/1','classification':agg['classification'],'summary':agg,'uncompressed_sha256':core.sha_bytes(raw),'encoding':'lzma+base64 UTF-8 JSON','payload':base64.b64encode(lzma.compress(raw,preset=9)).decode()}
     a.output.write_text(json.dumps(wrapper,separators=(',',':'),sort_keys=True)+'\n')
-    print(json.dumps({'classification':agg['classification'],'summary':agg,'checks':full['checks'],'audit_max_difference':audit_max},indent=2))
+    print(json.dumps({'classification':agg['classification'],'summary':agg,'checks':full['checks'],'audit_max_difference':audit_max,'audit_names':audit_names},indent=2))
 if __name__=='__main__': main()
