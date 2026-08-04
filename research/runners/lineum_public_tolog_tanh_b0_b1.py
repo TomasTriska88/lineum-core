@@ -249,6 +249,14 @@ def analytic_audit() -> dict[str, Any]:
     }
 
 
+def classify_archive_result(selected_source: str, archive_receipt: dict[str, Any]) -> tuple[str, bool, str | None]:
+    if not archive_receipt["passed"]:
+        return "archive_validation_failed", False, "Archive bytes were retrieved, but one or more provenance or structure gates failed."
+    if selected_source in {"official_sparc", "local_archive"}:
+        return "passed", True, None
+    return "archival_mirror_only", False, "The archival mirror was usable, but the preregistered official-primary gate was not met."
+
+
 def load_local_archive(path: Path) -> tuple[bytes | None, dict[str, Any]]:
     started = time.time()
     try:
@@ -313,14 +321,14 @@ def main() -> int:
     else:
         try:
             archive_receipt = inspect_archive(payload)
-            strict_primary = selected_source in {"official_sparc", "local_archive"}
+            status, passed, reason = classify_archive_result(selected_source, archive_receipt)
             b0 = {
-                "status": "passed" if archive_receipt["passed"] and strict_primary else "archival_mirror_only",
-                "passed": bool(archive_receipt["passed"] and strict_primary),
+                "status": status,
+                "passed": passed,
                 "selected_source": selected_source,
                 "attempts": attempts,
                 "archive": archive_receipt,
-                "reason": None if strict_primary else "The archival mirror was usable, but the preregistered official-primary gate was not met.",
+                "reason": reason,
             }
         except Exception as exc:
             b0 = {
