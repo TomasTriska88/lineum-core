@@ -1,0 +1,37 @@
+{
+  "schema": "lineum-public-tolog-shape-b4-evidence-manifest-1.0",
+  "repository": "TomasTriska88/lineum-core",
+  "branch": "develop",
+  "evidence_cutoff": "2026-08-04",
+  "archive": {
+    "format": "tar.xz",
+    "encoding": "lexically concatenate the ten .b64.part files, base64-decode, then open the resulting tar.xz archive",
+    "sha256": "e403cb963abe7c3d148df58c3a631a6ab531cd47576952ad9910beda83715bca",
+    "raw_download_reassembly_verified": true
+  },
+  "parts": [
+    {"order": 0, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part00", "characters": 18000, "git_blob_sha1": "e72e749c61f8d0acbbbd2479f1d1df91b4654bcb"},
+    {"order": 1, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part01", "characters": 18000, "git_blob_sha1": "2c0d0d0ab7555587596ad5bb94e2c865a95cfb35"},
+    {"order": 2, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part02", "characters": 18000, "git_blob_sha1": "befcc6bed51dc0477343793522e4c71fc2617c76"},
+    {"order": 3, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part03", "characters": 18000, "git_blob_sha1": "3362bca66a0af4b14cd23888f803ce4045e5d2a7"},
+    {"order": 4, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part04", "characters": 18000, "git_blob_sha1": "4d782ec7cef150506cd7c251a9354dcaa65e8aa2"},
+    {"order": 5, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part05", "characters": 18000, "git_blob_sha1": "417b7d1ae45d9abfb2d2c213a26a9d6076f2e7fa"},
+    {"order": 6, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part06", "characters": 18000, "git_blob_sha1": "b6ee83fc4e93bc801f96d826b6d74f4a699df722"},
+    {"order": 7, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part07", "characters": 18000, "git_blob_sha1": "2fcee62170e12727e3ac8df012b44de5bc72d6ac"},
+    {"order": 8, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part08", "characters": 18000, "git_blob_sha1": "79ae89f3ed831ace49a5723484bad6114abe5a89"},
+    {"order": 9, "path": "research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part09", "characters": 14636, "git_blob_sha1": "dd2f7aace99b3bc04fad64ecd9b3a29c68f442ce"}
+  ],
+  "archive_members": {
+    "full_output_json_sha256": "47502688e3290a055124d6834e46ba73c3e669b5cad494cabc170e77cbf6a9d7",
+    "curves_csv_sha256": "7d4dacef62c182435ecaec53a7d50afbfd16ad07c424d8a0ca8dd711266fb8f1",
+    "rows_csv_sha256": "863b4a3fdf8b4d009076ba97f14749612ad1bc3cb6444b8b89539334da42d2e6",
+    "independent_checker_included": true,
+    "all_primary_start_receipts_included": true,
+    "all_primary_fitted_curves_included": true
+  },
+  "verification": {
+    "procedure": "Each part was downloaded from raw.githubusercontent.com at branch develop, concatenated in lexical order, decoded with strict base64 validation, and compared to the retained archive SHA-256.",
+    "result": "passed",
+    "byte_identity_claim": "The reconstructed archive SHA-256 exactly matched the independently retained local archive."
+  }
+}
