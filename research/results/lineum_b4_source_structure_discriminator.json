@@ -1,75 +1,69 @@
 {
-  "checks": {
-    "all_files_present": true,
-    "all_have_eight_columns": true,
-    "all_radii_strictly_increasing": true,
-    "all_velocity_uncertainties_positive": true,
-    "selected_galaxies": 20
-  },
   "classification": "simple_source_separator_supported",
-  "control_statistics": {
-    "median_fractional_velocity_error": {"auc_direction_agnostic": 0.8214285714285714, "auc_positive_high": 0.17857142857142858, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.02564499484004128, "extreme_assignments": 994, "total_assignments": 38760},
-    "radial_step_cv": {"auc_direction_agnostic": 0.5119047619040319, "auc_positive_high": 0.4880952380952381, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.9679566563467492, "extreme_assignments": 37518, "total_assignments": 38760},
-    "rmax": {"auc_direction_agnostic": 0.6547619047619048, "auc_positive_high": 0.6547619047619048, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.31186790505675954, "extreme_assignments": 12088, "total_assignments": 38760},
-    "row_count": {"auc_direction_agnostic": 0.5357142857142857, "auc_positive_high": 0.5357142857142857, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.8243550051599587, "extreme_assignments": 31952, "total_assignments": 38760}
-  },
-  "feature_statistics": {
-    "abs_gas_velocity_peak_r_over_rmax": {"auc_direction_agnostic": 0.5535714285714286, "auc_positive_high": 0.44642857142857145, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.7345717234262126, "extreme_assignments": 28472, "holm_adjusted_p": 1.0, "total_assignments": 38760},
-    "disk_half_light_r_over_rmax": {"auc_direction_agnostic": 0.9047619047619048, "auc_positive_high": 0.09523809523809523, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.003302373581011352, "extreme_assignments": 128, "holm_adjusted_p": 0.039628482972136225, "total_assignments": 38760},
-    "disk_light_fraction_inner_quarter": {"auc_direction_agnostic": 0.7738095238095238, "auc_positive_high": 0.7738095238095238, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.06217750257997936, "extreme_assignments": 2410, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760},
-    "disk_r80_over_rmax": {"auc_direction_agnostic": 0.7857142857142857, "auc_positive_high": 0.21428571428571427, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.05067079463364293, "extreme_assignments": 1964, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760},
-    "disk_velocity_peak_r_over_rmax": {"auc_direction_agnostic": 0.8095238095238095, "auc_positive_high": 0.19047619047619047, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.032559339525283795, "extreme_assignments": 1262, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760},
-    "median_bulge_v2_fraction_inner_quarter": {"auc_direction_agnostic": 0.5059523809523809, "auc_positive_high": 0.5059523809523809, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.9976780185758514, "extreme_assignments": 38670, "holm_adjusted_p": 1.0, "total_assignments": 38760},
-    "median_disk_v2_fraction_inner_quarter": {"auc_direction_agnostic": 0.5357142857142857, "auc_positive_high": 0.5357142857142857, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.841124871001032, "extreme_assignments": 32602, "holm_adjusted_p": 1.0, "total_assignments": 38760},
-    "median_gas_v2_fraction_outer_quarter": {"auc_direction_agnostic": 0.5595238095238095, "auc_positive_high": 0.44047619047619047, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.7180598555211558, "extreme_assignments": 27832, "holm_adjusted_p": 1.0, "total_assignments": 38760},
-    "median_vbar_inner_to_outer": {"auc_direction_agnostic": 0.7976190476190477, "auc_positive_high": 0.7976190476190477, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.04076367389060888, "extreme_assignments": 1580, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760},
-    "stellar_half_light_r_over_rmax": {"auc_direction_agnostic": 0.8333333333333334, "auc_positive_high": 0.16666666666666666, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.02002063983488132, "extreme_assignments": 776, "holm_adjusted_p": 0.22022703818369452, "total_assignments": 38760},
-    "stellar_light_fraction_inner_quarter": {"auc_direction_agnostic": 0.8095238095238095, "auc_positive_high": 0.8095238095238095, "direction": "higher_in_strong_tanh", "exact_two_sided_p": 0.032559339525283795, "extreme_assignments": 1262, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760},
-    "stellar_r80_over_rmax": {"auc_direction_agnostic": 0.8095238095238095, "auc_positive_high": 0.19047619047619047, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.032559339525283795, "extreme_assignments": 1262, "holm_adjusted_p": 0.3255933952528379, "total_assignments": 38760}
-  },
+  "control_statistics": [
+    {"auc": 0.5357142857142857, "control": "row_count", "direction": "higher_in_strong_tanh", "extreme": 31952, "p": 0.8243550051599587, "total": 38760},
+    {"auc": 0.6547619047619048, "control": "rmax", "direction": "higher_in_strong_tanh", "extreme": 12088, "p": 0.31186790505675954, "total": 38760},
+    {"auc": 0.8214285714285714, "control": "median_fractional_velocity_error", "direction": "lower_in_strong_tanh", "extreme": 994, "p": 0.02564499484004128, "total": 38760},
+    {"auc": 0.5119047619047619, "control": "radial_step_cv", "direction": "lower_in_strong_tanh", "extreme": 37518, "p": 0.9679566563467492, "total": 38760}
+  ],
+  "feature_statistics": [
+    {"auc": 0.8333333333333334, "direction": "lower_in_strong_tanh", "extreme": 776, "feature": "stellar_half_light_r_over_rmax", "holm_p": 0.22022703818369452, "p": 0.02002063983488132, "total": 38760},
+    {"auc": 0.8095238095238095, "direction": "lower_in_strong_tanh", "extreme": 1262, "feature": "stellar_r80_over_rmax", "holm_p": 0.3255933952528379, "p": 0.032559339525283795, "total": 38760},
+    {"auc": 0.9047619047619048, "direction": "lower_in_strong_tanh", "extreme": 128, "feature": "disk_half_light_r_over_rmax", "holm_p": 0.039628482972136225, "p": 0.003302373581011352, "total": 38760},
+    {"auc": 0.7857142857142857, "direction": "lower_in_strong_tanh", "extreme": 1964, "feature": "disk_r80_over_rmax", "holm_p": 0.3255933952528379, "p": 0.05067079463364293, "total": 38760},
+    {"auc": 0.8095238095238095, "direction": "higher_in_strong_tanh", "extreme": 1262, "feature": "stellar_light_fraction_inner_quarter", "holm_p": 0.3255933952528379, "p": 0.032559339525283795, "total": 38760},
+    {"auc": 0.7738095238095238, "direction": "higher_in_strong_tanh", "extreme": 2410, "feature": "disk_light_fraction_inner_quarter", "holm_p": 0.3255933952528379, "p": 0.06217750257997936, "total": 38760},
+    {"auc": 0.8095238095238095, "direction": "lower_in_strong_tanh", "extreme": 1262, "feature": "disk_velocity_peak_r_over_rmax", "holm_p": 0.3255933952528379, "p": 0.032559339525283795, "total": 38760},
+    {"auc": 0.5535714285714286, "direction": "lower_in_strong_tanh", "extreme": 28472, "feature": "abs_gas_velocity_peak_r_over_rmax", "holm_p": 1.0, "p": 0.7345717234262126, "total": 38760},
+    {"auc": 0.5059523809523809, "direction": "higher_in_strong_tanh", "extreme": 38670, "feature": "median_bulge_v2_fraction_inner_quarter", "holm_p": 1.0, "p": 0.9976780185758514, "total": 38760},
+    {"auc": 0.5357142857142857, "direction": "higher_in_strong_tanh", "extreme": 32602, "feature": "median_disk_v2_fraction_inner_quarter", "holm_p": 1.0, "p": 0.841124871001032, "total": 38760},
+    {"auc": 0.5595238095238095, "direction": "lower_in_strong_tanh", "extreme": 27832, "feature": "median_gas_v2_fraction_outer_quarter", "holm_p": 1.0, "p": 0.7180598555211558, "total": 38760},
+    {"auc": 0.7976190476190477, "direction": "higher_in_strong_tanh", "extreme": 1580, "feature": "median_vbar_inner_to_outer", "holm_p": 0.3255933952528379, "p": 0.04076367389060888, "total": 38760}
+  ],
   "groups": {
     "strong_rejection": ["UGC06787", "UGC11914", "NGC6015", "NGC2403", "NGC1003", "UGC03205", "UGC02953", "UGC08699", "NGC0801", "NGC2998", "UGC06786", "NGC5907", "UGC02885", "UGC00128"],
     "strong_tanh": ["UGC05253", "NGC5055", "UGC09133", "NGC2903", "NGC5033", "NGC3198"]
   },
-  "independent_check": {"max_auc_difference": 0.0, "max_exact_p_difference": 0.0, "max_feature_difference": 4.440892098500626e-16, "passed": true, "toy_concentration_ordering_passed": true, "toy_inner_fraction_ordering_passed": true, "toy_uniform_half_radius_abs_error": 6.740562874529843e-08},
-  "interpretation_limits": ["The selected contrast compares outcome-defined extremes and is not a held-out population predictor.", "A source separator is not evidence of causation or a Lineum/TOLOG mechanism.", "Median fractional velocity uncertainty also separates the selected groups and remains a possible measurement confound.", "The result does not establish dark-matter replacement, modified gravity, or an emergent tanh."],
+  "independent_check": {"concentration_ordering_passed": true, "max_auc_difference": 0.0, "max_feature_difference": 4.440892098500626e-16, "max_p_difference": 0.0, "passed": true, "uniform_disk_half_radius_abs_error": 6.740562874529843e-08},
+  "limitations": ["Outcome-defined extremes are not a held-out population predictor.", "The separator is not causal evidence for Lineum or TOLOG.", "Median fractional velocity uncertainty also separates the selected groups (AUC 0.8214, p 0.02564).", "No dark-matter replacement, modified gravity, or emergent tanh is established."],
   "method": {
     "cumulative_rule": "trapezoidal 2*pi*r*Sigma over measured samples; linear interpolation of cumulative endpoint values",
     "exact_assignments": 38760,
-    "measurement_controls": ["row_count", "rmax", "median_fractional_velocity_error", "radial_step_cv"],
     "negative_count": 14,
-    "partial_gate": "raw p <= 0.05 and direction-agnostic AUC >= 0.75, strong gate failed",
     "positive_count": 6,
     "primary_features": ["stellar_half_light_r_over_rmax", "stellar_r80_over_rmax", "disk_half_light_r_over_rmax", "disk_r80_over_rmax", "stellar_light_fraction_inner_quarter", "disk_light_fraction_inner_quarter", "disk_velocity_peak_r_over_rmax", "abs_gas_velocity_peak_r_over_rmax", "median_bulge_v2_fraction_inner_quarter", "median_disk_v2_fraction_inner_quarter", "median_gas_v2_fraction_outer_quarter", "median_vbar_inner_to_outer"],
     "stellar_proxy": "0.5*SBdisk + 0.7*SBbul",
     "strong_gate": "Holm-adjusted p <= 0.05 and direction-agnostic AUC >= 0.80"
   },
-  "partial_source_separators": ["stellar_half_light_r_over_rmax", "stellar_r80_over_rmax", "stellar_light_fraction_inner_quarter", "disk_velocity_peak_r_over_rmax", "median_vbar_inner_to_outer"],
-  "per_galaxy_winning_feature": {
-    "NGC0801": {"disk_half_light_r_over_rmax": 0.1767405465750907, "group": "strong_rejection", "median_fractional_velocity_error": 0.026050420168067228, "rmax": 59.82, "row_count": 13.0},
-    "NGC1003": {"disk_half_light_r_over_rmax": 0.11185182732995438, "group": "strong_rejection", "median_fractional_velocity_error": 0.02577394620305068, "rmax": 30.24, "row_count": 36.0},
-    "NGC2403": {"disk_half_light_r_over_rmax": 0.1062533582038341, "group": "strong_rejection", "median_fractional_velocity_error": 0.02015748031496063, "rmax": 20.87, "row_count": 73.0},
-    "NGC2903": {"disk_half_light_r_over_rmax": 0.10488092630538508, "group": "strong_tanh", "median_fractional_velocity_error": 0.01671425910981439, "rmax": 24.96, "row_count": 34.0},
-    "NGC2998": {"disk_half_light_r_over_rmax": 0.16485651491270395, "group": "strong_rejection", "median_fractional_velocity_error": 0.02358490566037736, "rmax": 42.28, "row_count": 13.0},
-    "NGC3198": {"disk_half_light_r_over_rmax": 0.12375951199604603, "group": "strong_tanh", "median_fractional_velocity_error": 0.01761194029850746, "rmax": 44.08, "row_count": 43.0},
-    "NGC5033": {"disk_half_light_r_over_rmax": 0.08518194601260655, "group": "strong_tanh", "median_fractional_velocity_error": 0.015309709167599656, "rmax": 44.59, "row_count": 22.0},
-    "NGC5055": {"disk_half_light_r_over_rmax": 0.09070366524685868, "group": "strong_tanh", "median_fractional_velocity_error": 0.012260574620909816, "rmax": 54.59, "row_count": 28.0},
-    "NGC5907": {"disk_half_light_r_over_rmax": 0.21990251768383776, "group": "strong_rejection", "median_fractional_velocity_error": 0.013888888888888888, "rmax": 50.33, "row_count": 19.0},
-    "NGC6015": {"disk_half_light_r_over_rmax": 0.1350591064644466, "group": "strong_rejection", "median_fractional_velocity_error": 0.023378256963162623, "rmax": 29.23, "row_count": 44.0},
-    "UGC00128": {"disk_half_light_r_over_rmax": 0.19215400105575395, "group": "strong_rejection", "median_fractional_velocity_error": 0.010437445319335083, "rmax": 53.75, "row_count": 22.0},
-    "UGC02885": {"disk_half_light_r_over_rmax": 0.2004025582029235, "group": "strong_rejection", "median_fractional_velocity_error": 0.03484320557491289, "rmax": 74.07, "row_count": 19.0},
-    "UGC02953": {"disk_half_light_r_over_rmax": 0.09710414855218176, "group": "strong_rejection", "median_fractional_velocity_error": 0.017870722433460075, "rmax": 62.39, "row_count": 115.0},
-    "UGC03205": {"disk_half_light_r_over_rmax": 0.15197703592041703, "group": "strong_rejection", "median_fractional_velocity_error": 0.030856064657990137, "rmax": 40.04, "row_count": 48.0},
-    "UGC05253": {"disk_half_light_r_over_rmax": 0.15034255514760722, "group": "strong_tanh", "median_fractional_velocity_error": 0.01695238095238095, "rmax": 53.29, "row_count": 73.0},
-    "UGC06786": {"disk_half_light_r_over_rmax": 0.1538408056163767, "group": "strong_rejection", "median_fractional_velocity_error": 0.023105022831050228, "rmax": 34.05, "row_count": 45.0},
-    "UGC06787": {"disk_half_light_r_over_rmax": 0.16693069810394795, "group": "strong_rejection", "median_fractional_velocity_error": 0.0157847533632287, "rmax": 37.19, "row_count": 71.0},
-    "UGC08699": {"disk_half_light_r_over_rmax": 0.18866371434914758, "group": "strong_rejection", "median_fractional_velocity_error": 0.032058823529411765, "rmax": 25.7, "row_count": 41.0},
-    "UGC09133": {"disk_half_light_r_over_rmax": 0.07869195439328679, "group": "strong_tanh", "median_fractional_velocity_error": 0.016809618794326242, "rmax": 108.31, "row_count": 68.0},
-    "UGC11914": {"disk_half_light_r_over_rmax": 0.3827974845493204, "group": "strong_rejection", "median_fractional_velocity_error": 0.028056537102473498, "rmax": 9.83, "row_count": 65.0}
+  "pairwise_ordering": {"correctly_ordered_pairs": 76, "total_pairs": 84},
+  "per_galaxy_disk_half_light_r_over_rmax": {
+    "NGC0801": 0.1767405465750907,
+    "NGC1003": 0.11185182732995438,
+    "NGC2403": 0.1062533582038341,
+    "NGC2903": 0.10488092630538508,
+    "NGC2998": 0.16485651491270395,
+    "NGC3198": 0.12375951199604603,
+    "NGC5033": 0.08518194601260655,
+    "NGC5055": 0.09070366524685868,
+    "NGC5907": 0.21990251768383776,
+    "NGC6015": 0.1350591064644466,
+    "UGC00128": 0.19215400105575395,
+    "UGC02885": 0.2004025582029235,
+    "UGC02953": 0.09710414855218176,
+    "UGC03205": 0.15197703592041703,
+    "UGC05253": 0.15034255514760722,
+    "UGC06786": 0.1538408056163767,
+    "UGC06787": 0.16693069810394795,
+    "UGC08699": 0.18866371434914758,
+    "UGC09133": 0.07869195439328679,
+    "UGC11914": 0.3827974845493204
   },
-  "post_hoc_robustness": {"leave_one_out_max_exact_p": 0.010319917440660475, "leave_one_out_min_auc": 0.8857142857142857, "winning_feature_measured_span_normalization": {"auc_direction_agnostic": 0.8571428571428572, "auc_positive_high": 0.14285714285714285, "direction": "lower_in_strong_tanh", "exact_two_sided_p": 0.011713106295149638, "extreme_assignments": 454, "total_assignments": 38760}},
-  "schema": "lineum-b4-source-structure-discriminator-summary/1",
+  "post_hoc_robustness": {"leave_one_out_max_p": 0.010319917440660475, "leave_one_out_min_auc": 0.8857142857142857, "measured_span_auc": 0.8571428571428572, "measured_span_p": 0.011713106295149638},
+  "schema": "lineum-b4-source-structure-discriminator-summary/2",
   "strong_source_separators": ["disk_half_light_r_over_rmax"],
   "winning_feature": "disk_half_light_r_over_rmax",
-  "winning_feature_group_summary": {"strong_rejection": {"max": 0.3827974845493204, "mean": 0.17489530839428116, "median": 0.16589360650832596, "min": 0.09710414855218176}, "strong_tanh": {"max": 0.15034255514760722, "mean": 0.10559342651696506, "median": 0.09779229577612188, "min": 0.07869195439328679}}
+  "winning_feature_summary": {
+    "strong_rejection": {"max": 0.3827974845493204, "mean": 0.17489530839428116, "median": 0.16589360650832596, "min": 0.09710414855218176},
+    "strong_tanh": {"max": 0.15034255514760722, "mean": 0.10559342651696506, "median": 0.09779229577612188, "min": 0.07869195439328679}
+  }
 }
