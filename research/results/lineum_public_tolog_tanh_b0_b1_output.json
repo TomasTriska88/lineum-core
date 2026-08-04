@@ -11,7 +11,7 @@
       {
         "content_length_header": null,
         "content_type": null,
-        "elapsed_seconds": 0.021840810775756836,
+        "elapsed_seconds": 0.018793821334838867,
         "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
         "error_type": "URLError",
         "ok": false,
@@ -22,7 +22,7 @@
       {
         "content_length_header": null,
         "content_type": null,
-        "elapsed_seconds": 5.006422996520996,
+        "elapsed_seconds": 5.006264686584473,
         "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
         "error_type": "URLError",
         "ok": false,
