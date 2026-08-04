@@ -1,109 +1,117 @@
-# Lineum Public-TOLOG Galactic Shape Benchmark — B4
+# Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** validated within the declared descriptive scope  
-**Version:** 0.7.0  
+**Status:** active; question 1 observational target validated, population source extension closed negatively, question 2 implementation audit opened  
+**Version:** 0.8.0  
 **Evidence cutoff:** 2026-08-04  
-**Scope:** public-formula reconstruction, NGC 3198 source-convention audit, equal-flexibility shape ablation, early-Lineum threshold audit, complete 175-galaxy SPARC population census, and a preregistered source-structure discriminator on the strongest shape-identifying galaxies; no Lineum-native galactic derivation  
-**NGC 3198 classification:** `tanh_shape_preferred`  
-**Early-threshold classification:** `quantized_linear_rendering_supported`; original raw-run mechanism `provenance_blocked`  
-**Population classification:** `mixed_population_evidence`  
-**Source-structure classification:** `simple_source_separator_supported` within the selected extreme contrast  
-**Confidence:** high for the reported numerical comparisons inside the tested SPARC archive and five-shape family; moderate for the source-structure association; no causal mechanism or exact universal law established
+**Repository:** `TomasTriska88/lineum-core`  
+**Branch at preregistration:** `develop`  
+**Branch head at preregistration:** `aa3a1d248c02146072b8862ca96f2c97572a7524`  
+**Scope:** one permanent report answering exactly three public comparison questions: autonomous galactic emergence, natural saturation/divergence control, and scalar-potential memory; no private TOLOG material; no Lineum engine or whitepaper change  
+**Question 1 status:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
+**Question 2 status:** `explicitly_stabilized_not_yet_attractor_proven`  
+**Question 3 status:** `no_explicit_scalar_potential_minimum_yet_demonstrated`  
+**Confidence:** high for the reported SPARC calculations and the static implementation facts; moderate for source-structure associations; no causal galactic mechanism established
 
 ## Plain result
 
-The public TOLOG-like `tanh` addition is not merely a lucky fit to NGC 3198. Across the informative SPARC population it is the most frequent winner and remains compatible with about four galaxies out of five.
+This report now stays anchored to three questions only.
 
-It is not one exact key for every galaxy. Fourteen informative galaxies strongly prefer another equally adjustable saturating curve. The correct population verdict is therefore mixed evidence: a common bounded-transition family is supported, while one immutable normalized `tanh` is not.
+1. Can a grid produce realistic galactic rotation from observable initial conditions without fitting the final curve galaxy by galaxy?
+2. Does Lineum stop divergence through a genuine attractor, or through inserted nonlinear bounds, damping, clipping, noise handling, and emergency resets?
+3. Does the current complex-plus-auxiliary field system contain, or generate, a real scalar field with a stable potential minimum that preserves information after the original drive is removed?
 
-A new preregistered comparison now supplies a concrete clue about the exceptions. Among the six strongest `tanh` wins and fourteen strongest rejections, the strongest `tanh` galaxies usually have a more centrally concentrated luminous disk relative to the measured radial extent. The median disk half-light proxy lies at about `9.78%` of the measured outer radius in the strong-`tanh` group and `16.59%` in the rejection group.
+The current answer is:
 
-In everyday terms, `tanh` works most cleanly when the visible disk is packed into a relatively small central part of the region over which rotation is measured. More radially extended disks more often require a slower or differently curved saturation profile.
+- the desired galactic output is now tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
+- current Lineum contains several explicit saturation and numerical safety devices, so stable output cannot yet be called a single natural attractor;
+- current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously.
 
-This association supports the project owner's working idea that one common mechanism may change regime when a contribution becomes weak, strong, or effectively absent. It does not yet identify that contribution, prove causation, validate a 3×3 grid mechanism, derive TOLOG, or show that Lineum generates the response emergently.
+The report must not become a general galaxy notebook. Every retained calculation below either defines the target for question 1, separates physical from software stabilization for question 2, or tests persistent scalar memory for question 3.
 
-No private TOLOG document, code, data, or convention was used.
+## The three controlling questions
 
-## Questions addressed
+### Question 1 — autonomous astrophysical emergence
 
-1. Can the public TOLOG-like NGC 3198 formula be reconstructed from public information and official SPARC data?
-2. Does its result depend materially on the stellar mass-to-light convention?
-3. Is exact `tanh` transition curvature preferred over equally flexible normalized saturation alternatives on NGC 3198?
-4. Did early Lineum DejaVu/RNB plots contain a hidden `tanh`, Fibonacci, golden-ratio, prime, or Riemann scale?
-5. Is exact `tanh` compatible with most informative galaxies in all 175 official SPARC rotation curves?
-6. Do measured radial source properties distinguish the strongest `tanh` cases from the strongest rejections?
-7. Does the evidence favor a source-geometry-dependent regime of one broad mechanism over a simple bulge, gas, data-count, or grid-resolution explanation?
+Can the grid take only defensible source and initial conditions for a real galaxy and produce its rotation curve without manually fitting galaxy-specific output values? Can it reach a declared agreement target without a dark-matter component and without hiding the observed rotation curve in the inputs?
 
-## Evidence lineage
+### Question 2 — natural saturation and divergence control
 
-B0/B1 validated the public formula and official SPARC archive. B2 reconstructed the literal public comparator on NGC 3198 with tabulated stellar `M/L=1`. B3 audited the baryonic source convention. B4 froze and executed an equal-flexibility shape comparison on NGC 3198, audited the early Lineum stair plots, extended the same five-shape family to all 175 rotation curves, and then preregistered a source-only discriminator before inspecting the selected radial features.
+What exactly stops growth near singular, highly concentrated, or long-running conditions? Is there a stable mathematical attractor comparable to a fixed-potential minimum, or is stability produced by explicit `tanh`, bounded denominators, linear damping, hard caps, clipping, absorbing boundaries, random forcing choices, or fail-safe resets?
 
-Earlier Git versions preserve every preregistration and correction chronologically. Version `0.7.0` retains all earlier numerical verdicts and completes the corrected source-structure discriminator.
+### Question 3 — scalar minimum and information persistence
 
-## Inputs and provenance
+How does the current complex field plus auxiliary fields integrate a real scalar degree of freedom with a stable potential minimum? After a localized state is written and the source is removed, does the state return to a preferred minimum after perturbation, merely decay slowly, require continued driving, or disappear?
 
-Official SPARC rotation-model archive:
+## Evidence separation used throughout
 
-- stable source page: `http://astroweb.cwru.edu/SPARC/`;
-- archive: `Rotmod_LTG.zip`;
-- archive SHA-256: `0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588`;
-- galaxies: `175`;
-- columns: radius, observed velocity, velocity uncertainty, gas velocity contribution, disk velocity contribution, bulge velocity contribution, disk surface brightness, bulge surface brightness;
-- rows per galaxy: `4` to `115`;
-- every file passed the eight-numeric-column check;
-- every quoted velocity uncertainty was positive.
+Every conclusion must remain in one of these layers:
 
-Version `0.6.0` incorrectly named the eighth column as gas surface density. Direct header inspection established that columns seven and eight are `SBdisk` and `SBbul`, both in luminosity per square parsec. This was corrected in version `0.6.1` before the source-structure calculation. Earlier B2–B4 fits are unaffected because they used columns one through six.
+1. **Current implementation:** what the checked-in code actually computes.
+2. **Reproduced observation:** what a frozen executable run actually produced.
+3. **Cautious interpretation:** the narrow explanation compatible with the result.
+4. **Hypothesis:** an unverified mechanism or analogy.
+5. **Known real physics:** what has been connected to external empirical evidence, if anything.
 
-NGC 3198:
+Internal agreement, visual similarity, or a green unit test cannot by itself establish a physical law.
 
-- rows: `43`;
-- file SHA-256: `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`.
+# Question 1 — autonomous galactic emergence
 
-SPARC already includes helium in the gas contribution. Disk and bulge velocity columns correspond to stellar `M/L=1`. The fiducial lanes weight their squared contributions by `0.5` and `0.7`, respectively.
+## Publicly reconstructible descriptive target
 
-## Common descriptive model family
-
-Every tested candidate used the same two fitted quantities: a finite amplitude and a radial transition scale. The added squared-velocity contribution was
+The publicly described TOLOG-like galactic addition uses a finite saturating radial contribution. For a radius `r`, the frozen reconstruction tested
 
 ```text
 Vmodel^2(r) = Vbar^2(r) + V0^2 S(k_eff r / 5 kpc)
 ```
 
-with primary baryonic lanes
+with two baryonic source lanes:
 
 ```text
 unsigned: Vbar^2 = Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
 signed:   Vbar^2 = sign(Vgas) Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
 ```
 
-The frozen shapes were
+Five shapes were given equal flexibility:
 
 ```text
-tanh:        tanh(x)
-exponential: 1 - exp(-x)
-rational:    x / (1 + x)
-arctan:      (2/pi) atan((pi/2) x)
-algebraic:   x / sqrt(1 + x^2)
+tanh:        S(x) = tanh(x)
+exponential: S(x) = 1 - exp(-x)
+rational:    S(x) = x / (1 + x)
+arctan:      S(x) = (2/pi) atan((pi/2) x)
+algebraic:   S(x) = x / sqrt(1 + x^2)
 ```
 
-All begin at zero, have the same initial slope, and saturate at one. Consequently the test compares transition curvature rather than giving one function an extra amplitude, slope, or plateau.
+All start at zero, have unit initial slope, and saturate at one. Each receives the same two fitted parameters, amplitude `V0` and scale `k_eff`.
 
-Bounds and starts:
+Frozen bounds and starts:
 
 ```text
 V0 in [0, 400] km/s
 k_eff in [1e-6, 100]
 V0 starts = [25, 75, 150, 250]
 k_eff starts = [0.01, 0.1, 1, 10]
-16 starts per fit
+16 starts per shape fit
 ```
 
-The objective was quoted-error chi-squared. Every two-parameter candidate used `AIC = chi2 + 4`; baryons-only used `AIC = chi2`.
+The objective was quoted-error chi-squared. Two-parameter candidates used `AIC = chi2 + 4`; baryons-only used `AIC = chi2`.
+
+## Official SPARC provenance
+
+Input archive:
+
+```text
+Rotmod_LTG.zip
+SHA-256 = 0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588
+profiles = 175
+```
+
+Each profile contains radius, observed velocity, quoted velocity uncertainty, gas velocity contribution, disk velocity contribution, bulge velocity contribution, disk surface brightness, and bulge surface brightness.
+
+The earlier mistaken label of the eighth column as gas surface density was corrected before any source-structure calculation. It is `SBbul`. The prior shape fits are unaffected because they used only columns one through six.
 
 ## NGC 3198 source-convention result
 
-Literal tabulated stellar `M/L=1` gave
+Literal tabulated stellar `M/L=1` produced:
 
 ```text
 V0 = 161.2955688 km/s
@@ -112,7 +120,7 @@ chi2 = 605.6090070
 reduced chi2 = 14.7709514
 ```
 
-Standard fiducial stellar weighting gave
+Fiducial stellar weighting produced:
 
 ```text
 V0 = 132.3866012 km/s
@@ -122,9 +130,9 @@ reduced chi2 = 0.68443469
 half-saturation radius = 5.26169863 kpc
 ```
 
-The numerical fit changes dramatically under plausible stellar calibration. This establishes source-policy sensitivity, not that the lower number is automatically more physically truthful. The publicly quoted value near reduced chi-squared `1.5` was not uniquely reproduced from the under-specified public convention.
+This demonstrates strong source-policy sensitivity. A lower statistic under one stellar calibration is not by itself proof that the physical interpretation is true.
 
-## NGC 3198 equal-flexibility result
+Equal-flexibility shape comparison:
 
 | Shape | Chi-squared | Reduced chi-squared | Delta AIC |
 |---|---:|---:|---:|
@@ -134,56 +142,29 @@ The numerical fit changes dramatically under plausible stellar calibration. This
 | arctan | `62.226443` | `1.517718` | `34.164620` |
 | rational | `101.042285` | `2.464446` | `72.980463` |
 
-Inside this frozen family, `tanh` reduced chi-squared by about `33.1%` relative to the nearest algebraic competitor. Most discrimination accumulated between `5` and `15 kpc`. The best velocity curves differed by at most about `1.66 km/s`, so the evidence comes from many small coherent residuals rather than one dramatic point.
+Inside this family, `tanh` lowers chi-squared by about `33.1%` relative to the nearest algebraic competitor. The best `tanh` and algebraic velocity curves differ by at most about `1.66 km/s`; the preference accumulates through many small coherent residuals.
 
-At historical `M/L=1`, the algebraic curve was only about `1.68` AIC units behind. Exact curvature preference therefore depends on stellar calibration.
-
-## Early Lineum threshold audit
-
-The supplied 49-point yellow staircase was exactly reconstructed as
-
-```text
-y_i = floor(i / 7) / 6, i = 0,...,48
-```
-
-This reproduces the displayed comparison with normalized Riemann zeros:
-
-```text
-Pearson correlation = 0.9842156096489157
-Euclidean distance = 0.7254094546265594
-```
-
-Its transition positions are exactly
-
-```text
-[0, 7, 14, 21, 28, 35, 42]
-```
-
-The dwell lengths are all seven and the jump heights are all `1/6`. After normalization, transition positions and levels form an equally spaced linear sequence. Fibonacci numbers, powers of the golden ratio, primes, prime gaps, and Riemann-zero positions did not outperform the exact quantized-linear account. Random monotone controls frequently matched or beat the apparent arithmetic correlations.
-
-Classification:
-
-```text
-plotted representation: quantized_linear_rendering_supported
-original raw simulation mechanism: provenance_blocked
-```
-
-The original event CSV and runner were not recovered. The audit therefore classifies the supplied rendering, not the unrecovered early dynamics.
+At historical stellar `M/L=1`, algebraic is only about `1.68` AIC units behind `tanh`. Exact curvature preference is therefore calibration-dependent even though the fiducial NGC 3198 result is strong.
 
 ## Complete 175-galaxy population census
 
-The test retained all archive galaxies and applied the same source lanes, five shapes, bounds, and sixteen starts. No galaxy was selected according to fit performance. The primary informative gate required at least ten rows, a best added shape improving over baryons-only by at least ten AIC units, and no winning fit on a frozen parameter boundary.
+Frozen informative criteria required:
 
-Results in both gas-sign lanes were identical among informative galaxies:
+- at least ten rotation-curve rows;
+- the best added shape to improve over baryons-only by at least ten AIC units;
+- the winning fit not to touch a frozen parameter boundary.
+
+Both gas-sign lanes produced identical labels and winners among the informative galaxies:
 
 ```text
 official galaxies                                  175
-at least 10 rows                                   124
-informative                                        102
+galaxies with at least 10 rows                     124
+informative galaxies                               102
 tanh compatible                         82 / 102 = 80.392%
 tanh tension                             6 / 102 =  5.882%
 tanh strongly rejected                  14 / 102 = 13.725%
 tanh exact best                         68 / 102 = 66.667%
+median delta AIC tanh                               0
 same label under gas-sign handling     102 / 102
 same winner under gas-sign handling    102 / 102
 ```
@@ -198,17 +179,15 @@ Winner counts:
 | arctan | `5` |
 | exponential | `3` |
 
-Only `32/102` informative galaxies distinguished the best and second-best curves by at least two AIC units. Among those shape-identifying cases, `tanh` won `18`, rational `8`, arctan `3`, algebraic `2`, and exponential `1`.
+Only `32/102` informative curves separated the best and second-best shapes by at least two AIC units. In that shape-identifying subset, `tanh` won `18`, rational `8`, arctan `3`, algebraic `2`, and exponential `1`.
 
-The frozen support gate required at least `80%` compatibility and at most `10%` strong rejection. Compatibility narrowly passed, but strong rejection reached `13.725%`. The rejection gate also failed because the rejection fraction remained far below `30%`. Therefore:
+The preregistered universal-support gate required at least `80%` compatibility and at most `10%` strong rejection. Compatibility narrowly passed, but strong rejection reached `13.725%`. The universal-rejection gate also failed. The population classification is therefore:
 
 ```text
 mixed_population_evidence
 ```
 
-The broad bounded-transition picture survives. Exact universal `tanh` does not.
-
-## Strongest shape-identifying contrast
+A broad finite bounded-transition family is descriptively useful. One immutable normalized `tanh` is not universal.
 
 Strong `tanh` wins:
 
@@ -224,261 +203,602 @@ UGC02953, UGC08699, NGC0801, NGC2998, UGC06786, NGC5907,
 UGC02885, UGC00128
 ```
 
-The higher rejection rate previously observed in bulge-present galaxies was descriptive only. The dedicated source test below shows that the simple inner bulge fraction itself does not separate the two extreme groups.
+## Extreme source-structure contrast
 
-## Source-structure discriminator
+The project owner proposed one mechanism in which one contribution becomes absent, weak, or dominant in some galaxies. A source-only test compared the six strongest `tanh` wins with the fourteen strongest rejections without using the winner or missing-response curve as a feature.
 
-### Owner hypothesis and frozen alternatives
-
-After the exact-universal-`tanh` failure, the project owner proposed that one mechanism may still operate in all galaxies while a term becomes absent, negligible, or dominant in specific regimes.
-
-Two explanations remained open before execution:
-
-1. one broad mechanism changes apparent curvature with measured source structure;
-2. multiple mechanisms, stellar calibration, or measurement effects produce the classes.
-
-The discriminator used only source properties. It did not feed the fitted winner, `delta AIC`, or the missing-response profile back into the features.
-
-### Frozen features
-
-Twelve source features were declared before inspection:
-
-1. combined stellar half-light proxy radius divided by measured maximum radius;
-2. combined stellar 80-percent-light proxy radius divided by measured maximum radius;
-3. disk half-light radius divided by measured maximum radius;
-4. disk 80-percent-light radius divided by measured maximum radius;
-5. combined stellar light fraction inside the inner radial quarter;
-6. disk light fraction inside the inner radial quarter;
-7. radius of maximum disk velocity contribution;
-8. radius of maximum absolute gas velocity contribution;
-9. median inner bulge fraction of baryonic squared velocity;
-10. median inner disk fraction;
-11. median outer gas fraction;
-12. inner-to-outer median baryonic velocity ratio.
-
-Cumulative light proxies integrated `2 pi r Sigma(r)` over measured samples by the trapezoidal rule. The combined stellar proxy was `0.5 SBdisk + 0.7 SBbul`. No gas surface-density profile was invented.
-
-Measurement controls were row count, maximum radius, median fractional velocity uncertainty, and radial-step irregularity.
-
-For every feature, all `20 choose 6 = 38,760` group assignments were enumerated. A strong separator required direction-agnostic AUC at least `0.80` and Holm-adjusted probability at most `0.05` across all twelve source features.
-
-### Result
-
-Exactly one feature passed the full frozen gate:
+Twelve preregistered source features were tested. Exactly one survived Holm correction:
 
 ```text
 disk half-light proxy radius / maximum measured radius
 ```
 
-Exact statistics:
+Result:
 
 ```text
 direction-agnostic AUC = 0.9047619048
 raw exact p            = 0.0033023736
 Holm-adjusted p        = 0.0396284830
-pairwise order         = 76 / 84 cross-group pairs
+correctly ordered cross-group pairs = 76 / 84
 ```
 
-The direction was smaller disk half-light radius in the strong-`tanh` group.
-
-Group summaries:
-
-| Group | Median | Mean | Range |
-|---|---:|---:|---:|
-| six strong `tanh` wins | `0.09779` | `0.10559` | `0.07869–0.15034` |
-| fourteen strong rejections | `0.16589` | `0.17490` | `0.09710–0.38280` |
-
-Thus the typical strong-`tanh` disk reached half of its measured disk light within roughly `9.8%` of the measured outer radius, versus roughly `16.6%` for the strong-rejection group. The group distributions overlap; this is a strong rank association, not a perfect threshold.
-
-Several related features showed uncorrected signals but did not survive correction for twelve tests: combined stellar concentration, the 80-percent-light radius, the disk-velocity peak radius, inner stellar-light fraction, and inner-to-outer baryonic velocity ratio.
-
-Features that did not discriminate meaningfully included:
+Group medians:
 
 ```text
-inner bulge fraction: AUC 0.506, p 0.998
-outer gas fraction:   AUC 0.560, p 0.718
-gas peak radius:      AUC 0.554, p 0.735
+six strong tanh wins:       0.09779
+fourteen strong rejections: 0.16589
 ```
 
-So the evidence points more specifically to radial disk concentration than to a simple “bulge present,” “more gas,” or “gas peaks elsewhere” explanation.
+In the selected extremes, strong `tanh` cases have more centrally concentrated luminous disks relative to the measured rotation-curve extent. Simple inner bulge fraction, outer gas fraction, and gas-peak radius did not separate the groups.
+
+This result was independently reconstructed with a second implementation. Maximum feature disagreement was `4.44e-16`; AUC and exact permutation probability agreed exactly. Leave-one-out checks retained AUC at least `0.8857`.
+
+The result was never allowed to establish causation or a population law.
+
+## Population extension of the concentration hypothesis
+
+### Frozen question
+
+Does larger normalized disk half-light radius produce a larger `tanh` penalty continuously across all `102` informative galaxies, and does it predict the fourteen strong rejections after accounting for measurement quality and source controls?
+
+### Inputs
+
+The extension used the verified official SPARC archive and the committed 350-row population decision table:
+
+```text
+SPARC archive SHA-256 = 0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588
+population CSV SHA-256 = c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d
+informative galaxies = 102
+```
+
+### Frozen gates
+
+Primary continuous gate:
+
+```text
+Spearman rho > 0
+and two-sided permutation p <= 0.05
+```
+
+Secondary rejection gate:
+
+```text
+AUC for larger concentration ratio predicting rejection >= 0.70
+and directional permutation p <= 0.05
+```
+
+Confound-adjusted support required either a positive significant partial rank association after controlling for quoted fractional error, row count, maximum measured radius, radial-step irregularity, and bulge presence, or repeated cross-validated improvement when concentration was added to those controls.
+
+### Result
+
+The preregistered direction failed.
+
+```text
+Spearman rho = -0.2254398887
+permutation p = 0.0225597744
+observed direction = opposite to preregistration
+```
+
+The negative sign means that across the whole population, larger normalized disk half-light radius was associated with a smaller rather than larger `tanh` penalty. That cannot be used as support for the proposed monotonic mechanism because the direction was frozen in advance.
+
+Binary rejection result:
+
+```text
+AUC for larger ratio predicting rejection = 0.2759740260
+direction-agnostic AUC = 0.7240259740
+directional permutation p = 0.9966400336
+observed direction = opposite to preregistration
+```
+
+After the frozen controls:
+
+```text
+partial rank association = -0.1118160246
+Freedman-Lane permutation p = 0.2753772462
+```
+
+Repeated seven-fold cross-validation over 100 deterministic repeats also did not help. Adding disk concentration improved log loss in only `4/100` repeats:
+
+```text
+median control-only AUC = 0.8652597403
+median full AUC         = 0.8538961039
+median log-loss improvement = -0.0069372364
+mean log-loss improvement   = -0.0088618388
+```
+
+The full model was generally worse than the measurement-control model.
+
+All fourteen strong rejections occurred in the low- or middle-fractional-error terciles. The highest-error tercile contained no strong rejection. This is consistent with a measurement-identification effect: imprecise curves often cannot distinguish nearby saturation shapes and are therefore less likely to strongly reject anything.
+
+Removing the original fourteen rejections eliminated the continuous association:
+
+```text
+remaining n = 88
+Spearman rho = -0.0665651434
+permutation p = 0.5374546255
+```
 
 Classification:
 
 ```text
-simple_source_separator_supported
+no_population_extension
 ```
 
-This classification applies only to the frozen contrast between six strongest `tanh` wins and fourteen strongest rejections.
+### Independent verification
 
-### Independent verification and attacks
-
-A second program independently rebuilt every cumulative light radius and component fraction without importing the primary functions. It computed AUC by direct positive-negative pair counting rather than the primary rank-sum path and independently enumerated all `38,760` assignments.
-
-Checks:
+A second implementation reconstructed all `102` concentration values directly from the official archive, used separate scalar rank and pair-count code, and repeated independent randomization checks.
 
 ```text
-maximum feature difference = 4.44e-16
-maximum AUC difference     = 0
-maximum exact-p difference = 0
-independent checker        = passed
+maximum feature difference = 5.55e-17
+Spearman difference         = 0
+AUC difference              = 0
+independent checker         = passed
 ```
 
-Toy controls produced the expected ordering: a central component was more concentrated than an exponential disk, which was more concentrated than a uniform disk. The uniform-disk half-light radius differed from the analytic value by only `6.74e-8`.
+A complete deterministic rerun reproduced byte-identical primary result and row-table hashes:
 
-Post-hoc robustness checks, which do not alter the preregistered label:
+```text
+full result SHA-256 = a3721fbbf58d0c2ef48849b2d7573041c64589c2137828e1b2fdf3c0a5e39536
+rows CSV SHA-256    = fcdb1593f57d8f6da357ac05c5a2b60aae575622b2837ea4326b384186db3cc5
+```
 
-- normalizing within the actually measured radial span rather than by `Rmax` retained AUC `0.8571` and exact `p=0.0117`;
-- removing any one galaxy retained direction-agnostic AUC of at least `0.8857` and exact `p` no worse than `0.01032`.
+### Narrow interpretation
 
-A relevant warning remains: median fractional velocity uncertainty also separated the selected groups, with AUC `0.8214` and raw exact `p=0.02564`; the strong-`tanh` group generally had smaller fractional errors. This control was weaker than disk concentration and therefore did not trigger the frozen measurement-first stop rule, but it remains a plausible confound that a held-out population test must address.
+The compact-disk contrast remains true for the selected six-versus-fourteen extremes, but it does not generalize as a one-dimensional monotonic population rule.
 
-## What the source result means
+This is a decision-relevant negative result. It rejects only the simple statement:
+
+> larger normalized disk half-light radius directly and monotonically worsens `tanh` across all informative galaxies.
+
+It does not reject:
+
+- nonlinear or threshold behavior;
+- interactions with inclination, distance, radial coverage, stellar calibration, or measurement precision;
+- source projection through a nonlocal response;
+- one mechanism with several terms;
+- multiple physical regimes.
+
+Because the denominator is the farthest measured rotation-curve point rather than a physical edge, observer and measurement geometry remain material alternative explanations.
+
+## Question 1 verdict
+
+### Current implementation
+
+The current Lineum engine has not yet been supplied only with a galaxy's independently observable baryonic source conditions and asked to predict the rotation curve blindly.
 
 ### Reproduced observation
 
-Within the selected extreme contrast, strong `tanh` preference is associated with a more centrally concentrated luminous disk relative to the measured rotation-curve extent.
+A two-parameter finite saturating addition describes many SPARC galaxies well. `tanh` is the leading tested shape but is not exact and universal.
 
-### Cautious interpretation
+### Interpretation
 
-This is compatible with one broad nonlocal or feedback mechanism whose apparent radial curvature depends on how compactly the source is distributed. A compact disk may drive a relatively rapid, sharply saturating response resembling `tanh`; a more extended source may spread activation over radius and produce rational, arctan, algebraic, or exponential-like tails.
+The target for a future emergent mechanism is now constrained: it must commonly produce `tanh`-like finite transitions, produce systematic non-`tanh` exceptions, and explain which source or observer variables select the curvature.
 
-This interpretation is more specific than the earlier bulge observation. It suggests that geometry or source projection may matter more than simply switching a bulge term on or off.
+### Hypothesis
 
-### Hypotheses still open
+A shared grid mechanism may project differently through different source geometries or may change regime when a transport, screening, leakage, memory, or coupling contribution becomes weak or dominant.
 
-1. one common mechanism with a geometry-controlled effective curvature term;
-2. one mechanism in which a transport, screening, memory, or leakage channel becomes negligible in particular disk-concentration regimes;
-3. projection of one nonlocal response through different surface-brightness profiles;
-4. stellar `M/L`, distance, inclination, covariance, or measurement precision creating part of the association;
-5. several genuinely different mechanisms occupying different galaxy regimes.
+### Not established
 
-### Known real physics and unverified links
-
-The result is a descriptive association in SPARC data. It does not identify dark matter, modified gravity, an oscillator lattice, a Lineum foam, a vortex, a phase front, or a causal field equation.
-
-Lineum currently supports local four-neighbor and eight-neighbor numerical stencils; the eight-neighbor option uses a 3×3 local neighborhood. This is presently an integration stencil, not evidence that a fundamental 3×3 physical cell causes galactic curves. Current Lineum code also contains an explicit `tanh` interaction term, so output from that path cannot count as emergent `tanh`.
-
-Public TOLOG descriptions motivate `tanh` using a 3×3 stabilization picture and dynamic fields. This benchmark validates neither that derivation nor local adaptation. To establish it, the grid dynamics would need to generate the observed curvature family and predict the exceptions without fitting the final function directly.
-
-## Numerical verification of the population census
-
-Population execution comprised
+Neither Lineum nor the publicly reproducible TOLOG material has yet demonstrated the full chain:
 
 ```text
-175 galaxies × 2 source lanes × 5 shapes = 1,750 fits
-1,750 fits × 16 starts = 28,000 optimization starts
+independently observed galaxy source
+-> grid dynamics with frozen universal parameters
+-> blind rotation-curve prediction
+-> declared agreement on held-out galaxies
 ```
 
-Recorded checks:
+A fitted macroscopic formula is not autonomous emergence.
 
-- `28,000/28,000` starts reported convergence;
-- `171` flat or degenerate basins triggered a frozen differential-evolution plus Powell fallback;
-- fallback changed the retained objective by at most `8.70e-9`;
-- independent scalar curve reconstruction differed by at most `2.65e-12 km/s`;
-- scalar chi-squared reconstruction differed by at most `1.29e-11`;
-- a deterministic independent 20-galaxy refit differed by at most `3.71e-9` in chi-squared;
-- an independent CSV-only summary recovered `82`, `14`, `68`, all winner counts, and `102/102` cross-lane agreement;
-- NGC 3198 reproduced the frozen values exactly to declared tolerance.
+# Question 2 — natural saturation and divergence control
 
-The population fit environment used Python `3.13.5`, NumPy `2.3.5`, and SciPy `1.17.0`, while repository requirements declare NumPy below `2.0`. Independent checks reduce but do not erase that environment mismatch. The source-structure discriminator used only Python `3.13.5` standard-library operations and therefore did not depend on NumPy or SciPy.
+## Current implementation audit
 
-## Root-programme impact
+The checked-in `lineum_core/math.py` defines these relevant default configuration values:
 
-| Programme statement | Impact |
+```text
+dt = 1.0
+psi_diffusion = 0.05
+phi_diffusion = 0.05
+dissipation_rate = 0.005
+reaction_strength = 0.0007
+noise_strength = 0.005
+drift_strength = -0.004
+mode_coupling_strength = 0.001
+psi_amp_cap = 1e6
+grad_cap = 1e6
+phi_cap = 1e6
+mu_cap = 10
+fold_mode = softabs
+fold_scope = escape
+```
+
+The implementation contains several distinct bounded or stabilizing operations. They must not be conflated into one natural attractor.
+
+### A. Inserted bounded nonlinearities
+
+1. Linon probability uses a logistic sigmoid.
+2. The local interaction coefficient uses explicit `tanh`:
+
+```text
+interaction_factor = 0.1 * tanh(0.04 * clipped_phi * kappa * (1 + mu) / 0.1)
+```
+
+3. The interaction term is further bounded by
+
+```text
+interaction_term /= 1 + |interaction_term| / 10
+```
+
+4. The phi-gradient flow term is bounded by the same denominator form.
+
+These are explicit mathematical saturation choices. A bounded result from them is not evidence that the grid discovered `tanh` or a saturation law emergently.
+
+### B. Linear or transfer damping
+
+1. In NumPy diffusion mode and PyTorch diffusion mode, the code applies
+
+```text
+psi -= 0.005 * psi * dt
+```
+
+2. With mode coupling enabled, energy is moved from `psi` into `phi`:
+
+```text
+delta_e = mode_coupling_strength * |psi|^2 * kappa * dt
+phi += delta_e
+|psi| -> sqrt(max(|psi|^2 - delta_e, 0))
+```
+
+3. Optional `mu` decays linearly through `mu_rho`.
+4. Projected wave modes can add edge damping and a perfectly matched absorbing boundary layer.
+
+These may create dissipative steady states, but a dissipative steady state is not automatically a fixed potential minimum.
+
+### C. Hard numerical guards
+
+1. `psi` amplitude is capped at `psi_amp_cap`.
+2. gradients are clipped at `grad_cap`.
+3. `phi` is clipped or folded around `phi_cap`.
+4. `mu` is clipped at `mu_cap`.
+5. if `psi` becomes NaN or approaches `99%` of its amplitude cap, the complete `psi` field is reset to zero.
+
+These are explicitly labelled numerical guards or fail-safes in the code. Stability that requires them is numerical containment, not a demonstrated physical attractor.
+
+### D. Stochastic driving
+
+Unless `disable_quantum_noise` is true, the diffusion path contains probabilistic linon generation and Gaussian fluctuation forcing. Noise can seed or maintain activity, but random forcing cannot be used as evidence that noise is the mechanism that stops divergence unless an intervention demonstrates that claim.
+
+## Configuration contradiction discovered
+
+`CoreConfig` exposes
+
+```text
+dissipation_rate = 0.005
+```
+
+but the current diffusion update does not read `cfg.dissipation_rate`. It uses the literal constant `0.005` in both NumPy and PyTorch diffusion paths.
+
+Consequences:
+
+- changing `CoreConfig(dissipation_rate=...)` does not currently perform the intended dissipation ablation in diffusion mode;
+- tests or reports that assume this parameter controls damping may be misleading;
+- a research-only shadow step or a later tested engine correction is required to separate zero, default, and enhanced damping.
+
+This is an implementation fact, not yet a production-code change.
+
+## Analytic homogeneous-cell sanity check
+
+Consider a deterministic homogeneous region with no spatial gradients, `kappa=1`, `mu=0`, noise disabled, and mode coupling enabled.
+
+For small amplitude, the local interaction contributes approximately
+
+```text
+a(phi) = 0.1 * tanh(0.4 * clip(phi, 0, 10))
+```
+
+while the hard-coded linear damping removes approximately `0.005 psi` per unit time and mode coupling removes an additional small fraction of `psi` energy.
+
+Near `phi=0`, `a(phi)=0`, so small `psi` decays. Once `phi` rises above a small positive threshold, the explicit interaction can overcome linear damping. At large amplitude, the downstream denominator makes the interaction approach a finite additive drive while linear damping continues to grow with amplitude. This combination can create a finite dissipative equilibrium.
+
+That equilibrium, if reproduced, would be caused by the inserted bounded interaction plus damping and energy transfer. It would not yet demonstrate an independently derived scalar potential minimum.
+
+Meanwhile, default mode coupling continually adds non-negative energy to `phi`. In a homogeneous driven state, `phi` has no explicit local decay term in that branch and can continue toward the hard `phi_cap` unless diffusion or geometry exports it. A `phi` value stopped by the cap is not a natural minimum.
+
+## Frozen dynamic saturation audit
+
+This audit is the next active experiment and remains inside this report.
+
+### Question
+
+Which operations are necessary and sufficient for bounded long-run behavior in the current Lineum update, and does any state return to the same finite attractor after perturbation without relying on stochastic forcing, hard clipping, or fail-safe reset?
+
+### Scope
+
+- research-only runner outside the installable package;
+- no production engine change;
+- NumPy diffusion path first because it is deterministic, directly inspectable, and does not require GPU behavior;
+- PyTorch wave modes remain a separate later lane only if the diffusion result leaves the question unresolved.
+
+### Initial states
+
+Two frozen families:
+
+1. **Homogeneous cells:** constant complex `psi` magnitude `0.01`, constant `kappa=1`, `mu=0`, and initial `phi` in `{0, 0.05, 0.15, 1, 10}`.
+2. **Localized source:** centered Gaussian `psi` with peak `1`, `phi` in `{0, 1}`, `kappa=1`, zero `mu`, on grids `{32, 64, 128}`.
+
+Frozen time steps:
+
+```text
+dt in {0.1, 0.5, 1.0}
+```
+
+Primary duration:
+
+```text
+5000 updates
+```
+
+A shorter fail-fast run may stop a lane only after NaN, reset, or cap dependence is recorded.
+
+### Frozen lanes
+
+1. **Current deterministic baseline:** quantum noise and linon generation disabled; all other default diffusion operations retained.
+2. **Stochastic baseline:** current defaults, fixed seeds.
+3. **Dissipation-parameter invariance control:** `dissipation_rate=0`, `0.005`, and `1`; expected identical output under current implementation. This verifies the configuration contradiction.
+4. **No hard amplitude guards:** research shadow step with very high caps and fail-safe reset disabled, while preserving the equation otherwise.
+5. **No linear dissipation:** research shadow step replacing the hard-coded `0.005` by zero.
+6. **No explicit `tanh`:** research shadow step replacing the interaction coefficient by its linear small-signal form while retaining the downstream bounded denominator.
+7. **No interaction denominator:** retain `tanh` but remove the `1 + |term|/10` bounding denominator.
+8. **No mode-coupling transfer:** use the existing fallback reaction lane.
+9. **No `phi` cap/fold:** research shadow step with unbounded diagnostic `phi` and no overflow fold.
+10. **Noise-only zero-state control:** zero `psi`, zero `phi`, default stochastic forcing.
+
+Each research-shadow modification changes one operation at a time. Combined removals are prohibited until single-operation ablations are recorded.
+
+### Observables
+
+For every lane and seed:
+
+- mean and maximum `|psi|^2`;
+- maximum `|psi|`;
+- minimum, mean, and maximum `phi`;
+- `mu` range if enabled;
+- cap, fold, and fail-safe reset counts;
+- NaN or infinity occurrence;
+- last-20%-window slope of mean energy;
+- last-20%-window coefficient of variation;
+- dominant oscillation amplitude where applicable;
+- distance between pre-perturbation and recovered state.
+
+### Perturbation test
+
+After an apparent stationary state, multiply a centered region of `psi` by `1.5` and reduce a neighboring region by `50%`. Continue for another `1000` updates.
+
+A return to the previous state requires both:
+
+```text
+relative mean-energy difference <= 5%
+relative radial-profile L2 difference <= 10%
+```
+
+The target must be the pre-perturbation state from the same lane, not a post-hoc fitted template.
+
+### Classification gates
+
+`hard_guard_dependent` if removing caps or reset changes a bounded baseline into cap approach, NaN, infinity, or unbounded positive tail slope.
+
+`explicit_nonlinearity_dependent` if removing `tanh` or the interaction denominator destroys the bounded state while hard guards remain inactive in the baseline.
+
+`dissipation_dependent` if removing linear damping destroys the bounded state while the explicit nonlinearities remain.
+
+`mode_transfer_dependent` if disabling mode coupling materially changes boundedness or recovery.
+
+`noise_not_required` if the deterministic baseline remains bounded and recovers without stochastic forcing.
+
+`noise_required_for_activity` if the deterministic zero or small state decays but stochastic forcing sustains a bounded active state.
+
+`dissipative_attractor_supported` only if a finite state remains bounded without hard-guard activation, is stable across the frozen `dt` and grid sizes, and returns after perturbation.
+
+`fixed_potential_attractor_not_shown` remains the default unless a separately defined scalar potential and its minimum explain the recovery quantitatively.
+
+### Prohibited interpretation
+
+Even a successful dissipative attractor would show stability of this implementation under the tested conditions. It would not prove that nature uses the same mechanism, that a galactic singularity is solved, or that TOLOG's Dark Heart has been reproduced.
+
+# Question 3 — scalar minimum and information persistence
+
+## Current implementation audit
+
+The current state includes:
+
+- complex `psi`;
+- real scalar arrays `phi`, `kappa`, and optional `mu`;
+- external scalar `delta` when supplied.
+
+A scalar-valued array is not automatically a scalar field with a fixed potential minimum.
+
+No explicit local potential of the form
+
+```text
+V(q) with dV/dq = 0 at a declared stable minimum
+```
+
+has yet been identified and validated as the persistence mechanism for `phi`, `kappa`, or `mu` in the current update.
+
+Observed implementation roles:
+
+- `phi` accumulates transferred `psi` energy or relaxes toward `|psi|^2` in the fallback branch, diffuses, and is clipped or folded;
+- `kappa` is read as a permeability or mask and is not dynamically evolved by `step_core`;
+- `mu` accumulates selected `psi` energy, decays linearly, and is capped;
+- none of those facts alone establishes a stable information-bearing potential minimum.
+
+## Current classification
+
+```text
+no_explicit_scalar_potential_minimum_yet_demonstrated
+```
+
+## Later frozen destructive memory test
+
+This test will begin only after question 2 identifies which stabilization operations are active.
+
+1. write a localized state using a frozen source;
+2. remove the source completely;
+3. run without stochastic forcing;
+4. apply positive and negative local perturbations;
+5. compare decay, recovery, relocation, and destruction;
+6. repeat across grid size and time step;
+7. distinguish a stable minimum from slow relaxation or hard clipping.
+
+A memory claim requires persistence without continued source input and recovery toward a predeclared state after perturbation. Slow decay alone is not a stable potential minimum.
+
+# Root-programme impact
+
+| Statement | Current impact |
 |---|---|
 | Finite saturating addition is useful for NGC 3198 | `supports` |
-| Exact `tanh` is preferred on NGC 3198 | `supports` |
-| Any smooth saturation is equivalent on NGC 3198 | `contradicts` |
-| Exact normalized `tanh` is universal | `contradicts` within tested family |
+| Exact `tanh` is preferred on fiducial NGC 3198 | `supports` |
+| Exact normalized `tanh` is universal across galaxies | `contradicts` within tested family |
 | Broad bounded-transition family is common | `supports` descriptively |
-| Source geometry may control transition curvature | `supports` in selected extreme contrast |
-| Simple bulge fraction explains exceptions | `contradicts` in selected extreme contrast |
-| Simple outer gas fraction explains exceptions | `contradicts` in selected extreme contrast |
-| One mechanism with a weak or absent term | `constrains`; compatible but term not identified |
-| Early RNB plots derive galactic `tanh` | `contradicts` for supplied rendering |
-| Lineum currently derives `tanh` emergently | `not_yet_supported`; explicit `tanh` is a confounder |
-| TOLOG 3×3 dynamics are physically validated | `not_yet_supported` |
-| Foam, vortex, memory, screening, or phase-front cause | `not_yet_compared` |
+| Disk concentration alone monotonically controls population `tanh` penalty | `contradicts` under frozen extension |
+| Observer and measurement geometry are irrelevant | `contradicts` as an allowed assumption |
+| Lineum currently predicts galactic rotation blindly | `not_yet_supported` |
+| Public TOLOG evidence reproduces blind 98% emergence | `not_yet_supported` from public reproducible material |
+| Lineum stability is purely emergent | `not_yet_supported`; explicit bounds and damping exist |
+| Current Lineum has a proven fixed potential attractor | `not_yet_supported` |
+| Current Lineum has a proven persistent scalar minimum | `not_yet_supported` |
+| A 3x3 neighborhood is uniquely required | `not_yet_supported` |
 
-No Lineum engine, public API, production test, or whitepaper was changed.
+# Retained artifacts and reproduction
 
-## Next discriminator
+## Population shape census
 
-The extreme-group result must not be promoted directly into a galactic law. The next cheapest decisive test is a preregistered held-out population analysis across all `102` informative galaxies:
+Committed tools:
 
-- compute disk concentration without using the winning shape;
-- test whether concentration predicts continuous `tanh` penalty and transition-tail direction;
-- preserve measurement uncertainty, row count, radial coverage, bulge presence, and stellar calibration as competing explanations;
-- freeze any threshold or regression form before evaluating outcomes;
-- require out-of-sample or cross-validated performance rather than reusing the twenty extremes.
+- `research/runners/lineum_b4_sparc_population_shape_census.py`
+- `research/runners/lineum_b4_sparc_population_fit_batch.py`
+- `research/runners/lineum_b4_sparc_population_finalize.py`
+- `research/runners/lineum_b4_sparc_population_summary_check.py`
 
-Only if that association generalizes should Lineum mechanism experiments prioritize source geometry and compare `LAP4`, `LAP8`, and isotropic propagation after removing or bypassing the explicit `tanh` term.
+Committed outputs:
 
-## Retained artifacts and reproduction
+- `research/results/lineum_b4_sparc_population_shape_census_summary.json`
+- `research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64`
 
-Population tools and outputs remain retained from version `0.5.0`.
-
-New source-structure artifacts:
-
-- `research/runners/lineum_b4_source_structure_discriminator.py` — primary standard-library implementation;
-- `research/runners/lineum_b4_source_structure_check.py` — independently written scalar checker and toy controls;
-- `research/results/lineum_b4_source_structure_discriminator.json` — exact decision summary, all feature statistics, controls, per-galaxy winning feature, robustness, and limits.
-
-Git blob identifiers at this checkpoint:
+Expected result:
 
 ```text
-primary source runner  6c9fcd236a67dafd074ef07a819d10c5b0eb19d1
-independent checker    bf8f13a36c9381d2ecc1e31c6c6b243af1667bed
-result summary         1c3447e366d6353f0fca9c26d4dc43534e00c5b3
+classification = mixed_population_evidence
+informative = 102
+tanh compatible = 82
+tanh strongly rejected = 14
+tanh best = 68
 ```
 
-Minimal execution after extracting the official archive to a directory:
+## Extreme source discriminator
 
-```bash
-python research/runners/lineum_b4_source_structure_discriminator.py \
-  --data-dir /path/to/Rotmod_LTG \
-  --output source_structure_result.json
+- `research/runners/lineum_b4_source_structure_discriminator.py`
+- `research/runners/lineum_b4_source_structure_check.py`
+- `research/results/lineum_b4_source_structure_discriminator.json`
 
-python research/runners/lineum_b4_source_structure_check.py \
-  --data-dir /path/to/Rotmod_LTG \
-  --result source_structure_result.json
-```
-
-Expected source result:
+Expected result:
 
 ```text
 classification = simple_source_separator_supported
 winning feature = disk_half_light_r_over_rmax
 AUC = 0.9047619048
-raw exact p = 0.0033023736
 Holm-adjusted p = 0.0396284830
+```
+
+## Population concentration extension
+
+- `research/runners/lineum_b4_population_concentration_extension.py`
+- `research/runners/lineum_b4_population_concentration_check.py`
+- `research/results/lineum_b4_population_concentration_summary.json`
+- `research/results/lineum_b4_population_concentration_result.json.xz.b64`
+- `research/results/lineum_b4_population_concentration_rows.csv.xz.b64`
+
+Artifact SHA-256 values:
+
+```text
+primary runner       8b136f41377a275e3087a76081839157047abbcabb0efa2b6cc6e6cf31690df0
+independent checker  4c63528f3affdf22d088a825fc48acad50e6af7d6f9bf32caa7070047d394b4d
+full result JSON     a3721fbbf58d0c2ef48849b2d7573041c64589c2137828e1b2fdf3c0a5e39536
+full result XZ+B64   55550f4302c8f570aaebe22cab0250942b0967873ed20e314f906c837384f8bd
+rows CSV             fcdb1593f57d8f6da357ac05c5a2b60aae575622b2837ea4326b384186db3cc5
+rows XZ+B64          44cb6c09c13b11df608093dcac803144132b4d7807670a16dd915fab9be63799
+```
+
+Minimal reproduction:
+
+```bash
+python research/runners/lineum_b4_population_concentration_extension.py \
+  --archive Rotmod_LTG.zip \
+  --population-table-b64 research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64 \
+  --output population_concentration_result.json \
+  --table population_concentration_rows.csv
+
+python research/runners/lineum_b4_population_concentration_check.py \
+  --archive Rotmod_LTG.zip \
+  --population-table-b64 research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64 \
+  --result population_concentration_result.json \
+  --output population_concentration_check.json
+```
+
+Expected result:
+
+```text
+classification = no_population_extension
+Spearman rho = -0.2254398887
+primary direction pass = false
+rejection AUC in preregistered direction = 0.2759740260
+adjusted association p = 0.2753772462
 independent checker = passed
 ```
 
-## Prohibited conclusions
+# Numerical and environment limitations
+
+The original population fits used:
+
+```text
+Python 3.13.5
+NumPy 2.3.5
+SciPy 1.17.0
+```
+
+The repository declares NumPy below `2.0`. Independent reconstruction and alternative checks reduce but do not erase that mismatch. A rerun in a repository-supported NumPy environment remains desirable.
+
+The population concentration extension additionally used scikit-learn `1.8.0`. Its principal rank, permutation, and independent-check results do not depend on the cross-validation model.
+
+No current dynamic saturation result is claimed yet. The question-2 audit is preregistered above but not executed in this version.
+
+# Prohibited conclusions
 
 This report does not establish:
 
-- that `tanh` is a universal galactic law;
-- that disk concentration causes a particular response curve;
-- that the twenty extreme galaxies define a validated classifier for all SPARC galaxies;
-- that public TOLOG dynamics derive the fit function;
-- that TOLOG's unpublished conventions were reproduced;
-- that a 3×3 numerical or physical grid is uniquely required;
-- that dark matter is absent;
-- that modified gravity is established;
-- that Lineum generates the response emergently;
-- that explicit `tanh` inside current Lineum code is an emergent discovery;
-- that Fibonacci numbers, the golden ratio, primes, or Riemann zeros cause the response;
-- that a lower chi-squared or AIC alone identifies true physics.
+- a universal galactic `tanh` law;
+- autonomous 98% galactic emergence in Lineum or TOLOG;
+- absence of dark matter;
+- modified gravity;
+- a physical 3x3 elementary cell;
+- a TOLOG Dark Heart derivation;
+- an emergent `tanh` from current Lineum code;
+- a natural Lineum attractor independent of inserted bounds;
+- a stable scalar potential minimum;
+- a persistent information field;
+- that disk concentration causes the observed shape family;
+- that a lower chi-squared identifies physical truth.
 
-## Version history
+# Version history
 
-- `0.1.0`: frozen NGC 3198 equal-flexibility execution; `tanh_shape_preferred`.
-- `0.2.0`: opened the early-Lineum threshold and scale audit.
-- `0.3.0`: completed the threshold audit; quantized-linear rendering supported; original mechanism provenance-blocked.
-- `0.4.0`: preregistered the complete 175-galaxy population census.
-- `0.5.0`: completed and independently checked the census; `mixed_population_evidence`.
-- `0.6.0`: recorded the owner's one-mechanism-with-weak-or-absent-term intuition and preregistered a source-only discriminator.
-- `0.6.1`: corrected `SBdisk`/`SBbul` column provenance before execution; earlier fit results unchanged.
-- `0.7.0`: completed and independently checked the source-structure discriminator; disk concentration passed the frozen strong-separator gate within the selected extreme contrast.
+- `0.1.0`: froze and executed the NGC 3198 equal-flexibility test.
+- `0.2.0`: opened the early-Lineum threshold audit.
+- `0.3.0`: reconstructed the supplied staircase as quantized linear rendering; original dynamics remained provenance-blocked.
+- `0.4.0`: preregistered the complete SPARC population census.
+- `0.5.0`: completed the population census; `mixed_population_evidence`.
+- `0.6.0`: recorded the owner's one-mechanism-with-weak-or-absent-term hypothesis and preregistered the extreme source discriminator.
+- `0.6.1`: corrected `SBdisk` and `SBbul` provenance before source execution.
+- `0.7.0`: completed the extreme source discriminator; compact disk association supported inside the selected contrast.
+- `0.8.0`: reorganized the single report around the three controlling questions; completed the all-102 population concentration extension as `no_population_extension`; recorded observer/measurement confounding; opened and preregistered the question-2 saturation audit; documented the unused `dissipation_rate` configuration contradiction.
