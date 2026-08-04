@@ -1,109 +1,82 @@
 {
-  "schema": "lineum-b4-third-party-intake/1",
+  "schema": "lineum-b4-third-party-intake/2",
   "recorded_at": "2026-08-04",
   "repository": "TomasTriska88/lineum-core",
   "branch": "develop",
-  "pre_intake_head": "034840fca036ffc4acc18298900c9744c6fec87b",
   "active_report": "research/lineum-public-tolog-galactic-shape-b4.md",
+  "scope": "The single B4 report for the three controlling comparison questions and its research-scoped verification artifacts only.",
   "subject": {
     "name": "Tolog-Alpha",
-    "assessed_scope": "historical public material available at the B4 evidence cutoff",
+    "assessed_scope": "historical public material independently available at the B4 evidence cutoff",
     "later_versions": "not assessed when they were not publicly available and independently accessible",
-    "rights_holder": "not established by this intake beyond public authorship statements",
-    "source_code_repository": "not reliably identified",
     "source_code_license": "unknown",
     "dataset_or_model_license": "unknown"
   },
   "classification": {
     "public_factual_audit": "allowed",
     "independent_black_box_reconstruction": "allowed_with_public_sources_only",
-    "quotation": "minimal_public_source_attribution_only",
+    "minimal_public_source_attribution": "allowed",
     "source_code_copying": "prohibited",
     "structural_translation_or_porting": "prohibited",
     "dependency_or_vendoring": "prohibited",
     "redistribution_of_third_party_material": "prohibited",
     "confidential_material_in_public_report": "prohibited",
     "confidential_material_as_technical_input": "prohibited",
-    "claim_about_later_unavailable_versions": "prohibited"
+    "claims_about_later_unavailable_versions": "prohibited"
   },
   "clean_room_boundary": {
     "inputs_allowed": [
       "lawfully accessible public equations and factual claims",
-      "publicly observable model outputs",
+      "publicly observable historical model outputs",
       "independently sourced SPARC data",
-      "original Lineum comparison code",
-      "conventional null and equal-flexibility alternatives"
+      "original Lineum comparison and verification code",
+      "conventional null controls and equal-flexibility alternatives"
     ],
     "inputs_excluded": [
-      "private messages and calls",
+      "private messages and calls as technical evidence",
       "unpublished files or repositories",
       "later inaccessible implementations",
       "third-party source code",
-      "distinctive non-public architecture, constants, tests, prompts, or identifiers"
+      "distinctive non-public architecture, constants, tests, prompts, identifiers, or prose"
     ]
   },
   "b4_contamination_audit": {
     "comparison_base": "b5b244ed46bee5f2eef2812fb62494cfef450ca4",
-    "comparison_head_before_this_record": "034840fca036ffc4acc18298900c9744c6fec87b",
-    "commits_ahead": 28,
-    "license_files_changed": false,
-    "notice_files_changed": false,
-    "dependency_manifests_changed": false,
-    "dependency_lockfiles_changed": false,
-    "vendored_packages_added": false,
-    "third_party_model_files_added": false,
-    "third_party_source_identifier_found": false,
+    "comparison_head_before_intake_rule": "50aaf6e4f90cd3b03876b4216d08cd307cd9e791",
+    "license_files_changed_by_b4": false,
+    "notice_files_changed_by_b4": false,
+    "dependency_manifests_changed_by_b4": false,
+    "dependency_lockfiles_changed_by_b4": false,
+    "vendored_packages_added_by_b4": false,
+    "third_party_model_files_added_by_b4": false,
+    "third_party_source_identifier_found_in_b4_changes": false,
     "retained_change_classes": [
       "the single B4 Markdown report",
       "original research-scoped Python runners",
       "machine-readable research outputs",
-      "the third-party intake rule"
+      "the repository-wide third-party intake rule"
     ],
     "result": "no_evidence_of_tolog_alpha_code_or_license_incorporation_in_b4_changes"
   },
-  "lineum_license_context": {
-    "lineum_core_code_license": "GNU AGPLv3",
-    "lineum_core_whitepaper_license": "CC BY 4.0",
-    "core_agpl_origin": "intentional Lineum repository license, not imported from Tolog-Alpha",
-    "commercial_exception": "advertised by the Lineum Core README; execution evidence for each private downstream consumer was not fully audited here"
+  "lineum_core_license_context": {
+    "code_license": "GNU AGPLv3",
+    "whitepaper_license": "CC BY 4.0",
+    "agpl_origin": "intentional pre-existing Lineum Core repository license, not imported from Tolog-Alpha"
   },
-  "cross_repository_findings": {
-    "oea": {
-      "visibility": "private",
-      "root_license_file_found": false,
-      "lineum_core_dependency": "git+https://github.com/TomasTriska88/lineum-core.git@main",
-      "immutable_pin_contract": "not satisfied because a moving branch is referenced",
-      "copyleft_or_commercial_exception_status": "unresolved_review_required",
-      "tolog_alpha_contamination_evidence": false
-    },
-    "lineum_dynamics": {
-      "visibility": "private",
-      "root_license_file_found": false,
-      "dependency_inventory": "incomplete_due_to_connector_search_failures",
-      "copyleft_or_commercial_exception_status": "unresolved_review_required",
-      "tolog_alpha_contamination_evidence": false
-    },
-    "lina_ei_current_alias": {
-      "repository": "TomasTriska88/osobni-pamet",
-      "visibility": "private",
-      "root_license_file_found": false,
-      "direct_python_manifest_review": "no strong-copyleft dependency identified from the root requirements file",
-      "full_transitive_audit": "not_completed",
-      "tolog_alpha_contamination_evidence": false
-    }
-  },
+  "scope_exclusions": [
+    "No audit of OEA, Lineum Dynamics, Lina EI, or any other downstream repository is part of B4.",
+    "No general ecosystem dependency or deployment-license review is part of this report.",
+    "No confidential successor-model name, collaborator, file, architecture, or technical claim may be disclosed through B4."
+  ],
   "limitations": [
-    "No reliable public Tolog-Alpha source repository and license were identified, so no source-code rights are assumed.",
-    "GitHub connector search for private Lineum Dynamics content returned intermittent upstream errors; its dependency graph is not fully audited.",
-    "A manifest-level review does not replace a complete transitive package, bundled-asset, model-file, and deployment audit.",
-    "This record is a technical provenance and contamination control, not legal advice or a final legal opinion."
+    "No reliable public Tolog-Alpha source-code license was established, so no source-code rights are assumed.",
+    "This record controls technical provenance and contamination risk for B4; it is not legal advice or a final legal opinion."
   ],
   "required_public_scope_wording": "B4 evaluates the historical public Tolog-Alpha material independently available at the evidence cutoff. It does not audit later unavailable versions. No confidential communication or third-party source code is used as public evidence or implementation input.",
   "next_actions": [
-    "Bind B4 wording to the exact historical public Tolog-Alpha scope.",
-    "Do not expose confidential successor names, collaborators, files, or technical claims.",
-    "Replace OEA's moving Lineum Core branch dependency with an immutable release or commit after license-path review.",
-    "Record the copyright-holder commercial exception or AGPL compliance path for every private downstream product.",
-    "Complete the Lineum Dynamics dependency and transitive-license audit before deployment or distribution decisions."
+    "Use the full model name Tolog-Alpha consistently in B4.",
+    "Bind every comparison conclusion to the historical public material actually assessed.",
+    "Do not expose confidential messages, later-version details, collaborators, files, or technical claims.",
+    "Continue only the three controlling B4 questions and their smallest necessary verification experiments."
   ]
 }
