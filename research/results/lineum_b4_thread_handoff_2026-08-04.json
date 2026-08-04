@@ -1,0 +1,109 @@
+{
+  "schema": "lineum-b4-thread-handoff/1",
+  "recorded_at": "2026-08-04T23:14:00+02:00",
+  "repository": "TomasTriska88/lineum-core",
+  "branch": "develop",
+  "active_report": "research/lineum-public-tolog-galactic-shape-b4.md",
+  "active_report_version": "0.9.1",
+  "confidentiality": {
+    "private_correspondence_stored": false,
+    "private_correspondence_allowed_in_public_core": false,
+    "instruction": "Confidential correspondence may be carried only in the user-provided new-thread prompt. It must not be committed, quoted, closely paraphrased, or used as technical evidence in public Core."
+  },
+  "programme_scope": {
+    "single_report_only": true,
+    "controlling_questions": [
+      "Can Lineum produce realistic galactic rotation from defensible source and initial conditions without manually fitting galaxy-specific output values?",
+      "Can Lineum obtain natural saturation and divergence control from a genuine attractor rather than inserted nonlinear bounds, damping, caps, noise choices, or resets?",
+      "Can Lineum integrate or generate a real scalar degree of freedom with a stable potential minimum that preserves information after the original drive is removed?"
+    ],
+    "objective": "Audit the current engine, identify missing operations, implement the smallest Lineum-native repair, and validate the resulting capability. Current failures are development coordinates, not the terminal purpose of B4."
+  },
+  "public_third_party_scope": {
+    "subject_name": "Tolog-Alpha",
+    "assessed_scope": "historical public material independently available at the B4 evidence cutoff",
+    "later_unavailable_versions_assessed": false,
+    "third_party_source_code_used": false,
+    "confidential_material_used_as_evidence_or_implementation_input": false,
+    "required_wording": "B4 evaluates the historical public Tolog-Alpha material independently available at the evidence cutoff. It does not audit later unavailable versions. No confidential communication or third-party source code is used as public evidence or implementation input."
+  },
+  "license_and_contamination_checkpoint": {
+    "binding_rule_added": ".agent/rules.d/48-third-party-model-and-research-intake.md",
+    "binding_rule_commit": "034840fca036ffc4acc18298900c9744c6fec87b",
+    "intake_record": "research/results/lineum_b4_third_party_intake.json",
+    "lineum_core_code_license": "GNU AGPLv3, intentionally pre-existing",
+    "lineum_core_whitepaper_license": "CC BY 4.0",
+    "b4_license_files_changed": false,
+    "b4_dependency_manifests_changed": false,
+    "b4_lockfiles_changed": false,
+    "b4_vendored_packages_added": false,
+    "b4_third_party_model_or_source_files_added": false,
+    "b4_result": "no_evidence_of_tolog_alpha_code_or_license_incorporation_in_b4_changes",
+    "limitation": "The B4 contamination check is not a completed legal opinion or a complete transitive-license audit of every Lineum-family dependency. No rights are inferred from an unknown or missing Tolog-Alpha source license."
+  },
+  "localized_l1_checkpoint": {
+    "status": "executed_and_independently_spot_checked_but_not_yet_integrated_into_b4",
+    "runner": "research/runners/lineum_b4_saturation_localized_l1.py",
+    "runner_commit": "50aaf6e4f90cd3b03876b4216d08cd307cd9e791",
+    "source_core_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "protocol": {
+      "grid": "32x32",
+      "dt": 1.0,
+      "primary_steps": 5000,
+      "recovery_steps": 1000,
+      "stencils": ["LAP4", "LAP8"],
+      "initial_phi": [0.0, 1.0],
+      "lanes": [
+        "baseline",
+        "no_hard_guards",
+        "no_linear_dissipation",
+        "no_explicit_tanh",
+        "no_interaction_denominator",
+        "no_mode_coupling",
+        "no_phi_cap"
+      ],
+      "retained_runs": 28
+    },
+    "observed_summary": [
+      "No baseline lane demonstrated a nontrivial localized full-state attractor under the frozen L1 gates.",
+      "The localized psi structure either dispersed toward a broad or nearly homogeneous state, or the full state remained supported by phi containment.",
+      "LAP8 did not create a unique stabilization class relative to LAP4 in this L1 domain.",
+      "The result does not falsify all 3x3 or LAP8 mechanisms; it shows that the current Lineum update and frozen L1 initial state do not obtain localization merely by enabling diagonal neighbours."
+    ],
+    "independent_checks": {
+      "key_runs_recomputed": 8,
+      "maximum_reported_relative_difference": 3.2e-11,
+      "constant_field_laplacian_control": "passed",
+      "discrete_laplacian_sum_control": "passed"
+    },
+    "evidence_limit": "The full raw L1 result and independent checker artifacts were not transported before the conversation handoff. The next thread must reproduce the runner, create and commit the complete machine-readable result and independent checker, then integrate the validated result into B4 before selecting a repair mechanism.",
+    "negative_result_gate": "Before selecting a replacement mechanism, explain this bounded failure to the project owner in lay language and request the owner's intuitive or out-of-the-box interpretation, as required by the repository failure gate."
+  },
+  "current_b4_state": {
+    "already_contains": [
+      "the three controlling questions",
+      "the audit-repair-validation objective",
+      "NGC 3198 equal-flexibility comparison",
+      "the complete 175-galaxy SPARC census",
+      "the selected-extremes source-structure result",
+      "the failed all-102 monotonic concentration extension and observer limitation",
+      "the homogeneous saturation audit",
+      "the localized L1 preregistration and repair map"
+    ],
+    "still_requires_update": [
+      "Use the full name Tolog-Alpha consistently instead of ambiguous TOLOG shorthand where it denotes the assessed model.",
+      "Insert the safe historical-public-scope wording without disclosing confidential successor details.",
+      "Integrate the independently reproduced localized L1 result after complete result artifacts are committed.",
+      "Keep all work in the same B4 report; do not create a scientific subreport."
+    ]
+  },
+  "next_thread_order": [
+    "Reload all current repository rules from develop, including every .agent/rules.d supplement in lexical order.",
+    "Verify current develop head, B4 blob SHA, runner blob SHA, and repository boundaries before writing.",
+    "Reproduce the localized L1 runner and independently verify the full result under a repository-supported NumPy environment where feasible.",
+    "Commit the full machine-readable L1 result and independent checker artifacts under research/results and research/runners.",
+    "Update the same B4 report to the next version with the safe Tolog-Alpha scope and the localized L1 result.",
+    "Stop at the verified negative-result owner gate before choosing among transport, bidirectional exchange, local relaxation, existing-field feedback, potential-minimum, localization, or boundary/scaling repairs.",
+    "Do not use private correspondence as technical evidence and do not store it in any repository."
+  ]
+}
