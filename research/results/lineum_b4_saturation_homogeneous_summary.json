@@ -1,0 +1,251 @@
+{
+  "classification": {
+    "configured_dissipation_parameter_inert": true,
+    "explicit_tanh_required_for_finite_high_phi_psi_equilibrium": false,
+    "full_fixed_potential_attractor_shown": false,
+    "interaction_denominator_required_for_high_phi_boundedness": true,
+    "linear_dissipation_required_for_frozen_horizon_recovery": true,
+    "phase": "homogeneous_reduction_completed_localized_phase_pending",
+    "phi_cap_required_to_bound_homogeneous_phi": true,
+    "question_2_interim": "explicitly_stabilized_partial_dissipative_equilibrium_only"
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "failed_check_history": {
+    "baseline_fixed_point_max_relative_error": 0.1435,
+    "linearized_interaction_fixed_point_max_relative_error": 0.0784,
+    "no_dissipation_fixed_point_max_relative_error": 0.8312,
+    "reason": "The first checker incorrectly required every dt lane to reach its analytic asymptote within the frozen 5000-step horizon.",
+    "status": "failed"
+  },
+  "independent_check": {
+    "configured_dissipation_invariance_pass": true,
+    "configured_dissipation_max_difference": 0.0,
+    "expected_row_count_pass": true,
+    "independent_recurrence_exact_mismatch_count": 0,
+    "independent_recurrence_exact_pass": true,
+    "independent_recurrence_max_relative_difference": 1.1157741397482823e-14,
+    "independent_recurrence_numeric_pass": true,
+   "initial_checker_failure_preserved": {
+      "baseline_fixed_point_max_relative_error": 0.1435,
+      "linearized_interaction_fixed_point_max_relative_error": 0.0784,
+      "no_dissipation_fixed_point_max_relative_error": 0.8312,
+      "reason": "The first checker incorrectly required every dt lane to reach its analytic asymptote within the frozen 5000-step horizon.",
+      "status": "failed"
+    },
+    "no_denominator_high_phi_unstable_pass": true,
+    "passed": true,
+    "row_count": 405,
+    "source_blob_sha_pass": true,
+    "stationary_high_phi_count": 6,
+    "stationary_high_phi_recovery_pass": true,
+    "uncapped_phi_positive_tail_pass": true
+  },
+  "interpretation": {
+    "implemented": "Current homogeneous stability combines explicit bounded interaction, downstream denominator, hard-coded linear damping, mode transfer, phi cap, and optional guard reset.",
+    "limits": "The homogeneous reduction has no gradients, diffusion, spatial localization, stochastic forcing, or radial-profile recovery. The localized phase remains pending.",
+    "narrow": "A partial dissipative psi equilibrium is supported under a subset of tested homogeneous conditions, but a full-state fixed-potential attractor is not shown.",
+    "reproduced": "Only dt=1 high-phi baseline lanes became stationary and recovered within the frozen horizon. Removing the interaction denominator caused every high-phi lane to guard-reset. Removing tanh did not remove finite stationary psi states. Removing the phi cap left psi similar but phi increased without a fixed point."
+  },
+  "primary": {
+    "baseline_high_phi_energy_recovery_passes": 6,
+    "baseline_high_phi_reset_runs": 0,
+    "baseline_high_phi_stationary_count": 6,
+    "baseline_outcomes": {
+      "decayed_to_zero": 6,
+      "decaying": 12,
+      "growing": 21,
+      "stationary": 6
+    },
+    "configured_dissipation_max_difference": 0.0,
+    "no_denominator_high_phi_guard_resets": 18,
+    "no_denominator_high_phi_runs": 18,
+    "no_linear_dissipation_high_phi_recovery_passes": 0,
+    "no_linear_dissipation_high_phi_runs": 18,
+    "no_linear_dissipation_max_final_abs_psi": 18106.61160870394,
+    "no_tanh_high_phi_max_final_abs_psi": 1788.5717977563015,
+    "no_tanh_high_phi_stationary_count": 6,
+    "row_count": 405,
+    "stationary_baseline_examples": [
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524542716,
+        "final_phi": 1000000.0,
+        "grid_size": 32,
+        "outcome": "stationary",
+        "phi0": 1.0,
+        "recovery_energy_relative_error": 0.005363741853330114
+      },
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524705026,
+        "final_phi": 1000000.0,
+        "grid_size": 32,
+        "outcome": "stationary",
+        "phi0": 10.0,
+        "recovery_energy_relative_error": 0.005363741834381507
+      },
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524542716,
+        "final_phi": 1000000.0,
+        "grid_size": 64,
+        "outcome": "stationary",
+        "phi0": 1.0,
+        "recovery_energy_relative_error": 0.005363741853330114
+      },
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524705026,
+        "final_phi": 1000000.0,
+        "grid_size": 64,
+        "outcome": "stationary",
+        "phi0": 10.0,
+        "recovery_energy_relative_error": 0.005363741834381507
+      },
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524542716,
+        "final_phi": 1000000.0,
+        "grid_size": 128,
+        "outcome": "stationary",
+        "phi0": 1.0,
+        "recovery_energy_relative_error": 0.005363741853330114
+      },
+      {
+        "dt": 1.0,
+        "final_abs_psi": 1708.9003524705026,
+        "final_phi": 1000000.0,
+        "grid_size": 128,
+        "outcome": "stationary",
+        "phi0": 10.0,
+        "recovery_energy_relative_error": 0.005363741834381507
+      }
+    ],
+    "uncapped_phi_high_phi_max_final_phi": 13402932.352379045,
+    "uncapped_phi_high_phi_min_positive_tail_slope": 121.18393325806413
+  },
+  "protocol": {
+    "dt_values": [
+      0.1,
+      0.5,
+      1.0
+    ],
+    "grid_sizes": [
+      32,
+      64,
+      128
+    ],
+    "initial_abs_psi": 0.01,
+    "lanes": [
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "baseline",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.0,
+        "effective_dissipation_rate": 0.005,
+        "name": "configured_dissipation_zero",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 1.0,
+        "effective_dissipation_rate": 0.005,
+        "name": "configured_dissipation_one",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "no_hard_guards",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": false,
+        "use_psi_guard": false,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.0,
+        "name": "no_linear_dissipation",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "no_explicit_tanh",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": false
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "no_interaction_denominator",
+        "use_interaction_denominator": false,
+        "use_mode_coupling": true,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "no_mode_coupling",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": false,
+        "use_phi_cap": true,
+        "use_psi_guard": true,
+        "use_tanh": true
+      },
+      {
+        "configured_dissipation_rate": 0.005,
+        "effective_dissipation_rate": 0.005,
+        "name": "no_phi_cap",
+        "use_interaction_denominator": true,
+        "use_mode_coupling": true,
+        "use_phi_cap": false,
+        "use_psi_guard": true,
+        "use_tanh": true
+      }
+    ],
+    "phi0_values": [
+      0.0,
+      0.05,
+      0.15,
+      1.0,
+      10.0
+    ],
+    "recovery_steps": 1000,
+    "steps": 5000
+  },
+  "schema": "lineum-b4-saturation-homogeneous-summary/1",
+  "source": {
+    "git_blob_sha": "bb877021810691223a0eb960a45493a2e351112a",
+    "path": "lineum_core/math.py",
+    "reduction": "exact homogeneous deterministic NumPy diffusion path with kappa=1, mu=0, zero gradients, zero diffusion contribution, and quantum noise disabled"
+  }
+}

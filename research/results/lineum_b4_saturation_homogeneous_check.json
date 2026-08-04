@@ -1,0 +1,23 @@
+{
+  "configured_dissipation_invariance_pass": true,
+  "configured_dissipation_max_difference": 0.0,
+  "expected_row_count_pass": true,
+  "independent_recurrence_exact_mismatch_count": 0,
+  "independent_recurrence_exact_pass": true,
+  "independent_recurrence_max_relative_difference": 1.1157741397482823e-14,
+  "independent_recurrence_numeric_pass": true,
+  "initial_checker_failure_preserved": {
+    "baseline_fixed_point_max_relative_error": 0.1435,
+    "linearized_interaction_fixed_point_max_relative_error": 0.0784,
+    "no_dissipation_fixed_point_max_relative_error": 0.8312,
+    "reason": "The first checker incorrectly required every dt lane to reach its analytic asymptote within the frozen 5000-step horizon.",
+    "status": "failed"
+  },
+  "no_denominator_high_phi_unstable_pass": true,
+  "passed": true,
+  "row_count": 405,
+  "source_blob_sha_pass": true,
+  "stationary_high_phi_count": 6,
+  "stationary_high_phi_recovery_pass": true,
+  "uncapped_phi_positive_tail_pass": true
+}

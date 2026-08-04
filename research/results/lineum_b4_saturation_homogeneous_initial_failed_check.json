@@ -1,0 +1,14 @@
+{
+  "baseline_fixed_point_max_relative_error": 0.14350351892109908,
+  "baseline_fixed_point_pass": false,
+  "configured_dissipation_invariance_pass": true,
+  "configured_dissipation_max_difference": 0.0,
+  "linearized_interaction_fixed_point_max_relative_error": 0.07844540153552901,
+  "linearized_interaction_fixed_point_pass": false,
+  "no_denominator_high_phi_unstable_pass": true,
+  "no_dissipation_fixed_point_max_relative_error": 0.831218400417556,
+  "no_dissipation_fixed_point_pass": false,
+  "passed": false,
+  "source_blob_sha_pass": true,
+  "uncapped_phi_positive_tail_pass": true
+}
