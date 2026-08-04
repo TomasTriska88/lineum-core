@@ -1,0 +1,132 @@
+{
+  "anti_cheat": {
+    "astronomical_fit_performed": false,
+    "private_tolog_document_used": false,
+    "production_lineum_code_imported_or_modified": false,
+    "tolog_code_copied": false
+  },
+  "b0": {
+    "archive": null,
+    "attempts": [
+      {
+        "content_length_header": null,
+        "content_type": null,
+        "elapsed_seconds": 0.021840810775756836,
+        "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+        "error_type": "URLError",
+        "ok": false,
+        "source_name": "official_sparc",
+        "status": null,
+        "url": "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip"
+      },
+      {
+        "content_length_header": null,
+        "content_type": null,
+        "elapsed_seconds": 5.006422996520996,
+        "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+        "error_type": "URLError",
+        "ok": false,
+        "source_name": "zenodo_archival_mirror",
+        "status": null,
+        "url": "https://zenodo.org/records/16284118/files/Rotmod_LTG.zip?download=1"
+      }
+    ],
+    "passed": false,
+    "reason": "No archive bytes were retrievable; no unofficial galaxy rows were substituted.",
+    "selected_source": null,
+    "status": "blocked_by_runtime_network"
+  },
+  "b1": {
+    "center": {
+      "V0": 173.0,
+      "model_velocity": 80.0,
+      "v_bar": 80.0
+    },
+    "derivative": {
+      "analytic_central_slope": 11971.6,
+      "expression": "d(V0^2*tanh(k_eff*r/r_s))/dr = V0^2*(k_eff/r_s)*sech^2(k_eff*r/r_s)",
+      "forward_difference_central_slope": 11971.599999999362,
+      "relative_error": 5.3331658311720706e-14
+    },
+    "dimensionless_argument_requirement": "k_eff * r / r_s must be dimensionless",
+    "formula": "v_model(r)^2 = v_bar(r)^2 + V0^2 * tanh(k_eff * r / r_s)",
+    "gates": {
+      "analytic_derivative_positive": true,
+      "central_slope_matches_derivative": true,
+      "finite_center": true,
+      "half_saturation": true,
+      "k_over_rs_degeneracy": true,
+      "large_x_plateau": true,
+      "monotonic_nonnegative_domain": true,
+      "plateau_velocity_squared": true,
+      "small_x_linear": true,
+      "tanh_zero_exact": true
+    },
+    "half_saturation": {
+      "example_half_radius": 1.3732653608351368,
+      "example_k_eff": 2.0,
+      "example_r_s": 5.0,
+      "tanh_x_half": 0.49999999999999994,
+      "x_half": 0.5493061443340548
+    },
+    "large_x": [
+      {
+        "absolute_error_vs_one": 4.122307273313197e-09,
+        "tanh_x": 0.9999999958776927,
+        "x": 10.0
+      },
+      {
+        "absolute_error_vs_one": 0.0,
+        "tanh_x": 1.0,
+        "x": 20.0
+      },
+      {
+        "absolute_error_vs_one": 0.0,
+        "tanh_x": 1.0,
+        "x": 50.0
+      }
+    ],
+    "passed": true,
+    "plateau": {
+      "V0": 173.0,
+      "expected_added_velocity_squared": 29929.0,
+      "observed_at_x_20": 29929.0
+    },
+    "scale_degeneracy": {
+      "comparison": "(k_eff=2,r_s=5) versus (k_eff=4,r_s=10)",
+      "max_absolute_difference": 0.0
+    },
+    "small_x": [
+      {
+        "relative_error_vs_x": 0.0,
+        "tanh_x": 1e-08,
+        "x": 1e-08
+      },
+      {
+        "relative_error_vs_x": 3.333074647445672e-13,
+        "tanh_x": 9.999999999996666e-07,
+        "x": 1e-06
+      },
+      {
+        "relative_error_vs_x": 3.3333332296638096e-09,
+        "tanh_x": 9.999999966666668e-05,
+        "x": 0.0001
+      }
+    ]
+  },
+  "b2_allowed": false,
+  "environment": {
+    "machine": "x86_64",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "public_sources": {
+    "official_sparc": "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip",
+    "zenodo_archival_mirror": "https://zenodo.org/records/16284118/files/Rotmod_LTG.zip?download=1",
+    "zenodo_doi": "10.5281/zenodo.16284118",
+    "zenodo_published_md5": "e4c8b92766026770ed35e5889064e12b"
+  },
+  "runner_scope": "B0 public-data provenance and B1 analytic known-answer audit only; no fit performed",
+  "schema_version": "0.1.0",
+  "verdict": "b1_passed_b0_blocked"
+}
