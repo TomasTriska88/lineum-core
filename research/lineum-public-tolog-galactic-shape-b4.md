@@ -1,12 +1,13 @@
 # Lineum Public-TOLOG Galactic Shape Benchmark — B4
 
-**Status:** validated within the declared descriptive scope  
-**Version:** 0.5.0  
+**Status:** active; validated through the population census, source-structure discriminator preregistered  
+**Version:** 0.6.0  
 **Evidence cutoff:** 2026-08-04  
-**Scope:** public-formula reconstruction, NGC 3198 source-convention audit, equal-flexibility shape ablation, early-Lineum threshold audit, and complete 175-galaxy SPARC population census; no Lineum-native derivation  
+**Scope:** public-formula reconstruction, NGC 3198 source-convention audit, equal-flexibility shape ablation, early-Lineum threshold audit, complete 175-galaxy SPARC population census, and a preregistered source-structure comparison of the strongest shape discriminators; no Lineum-native derivation  
 **NGC 3198 classification:** `tanh_shape_preferred`  
 **Early-threshold classification:** `quantized_linear_rendering_supported`; original raw-run mechanism `provenance_blocked`  
 **Population classification:** `mixed_population_evidence`  
+**Source-structure classification:** `preregistered_not_yet_executed`  
 **Confidence:** high for the reported numerical comparisons inside the tested SPARC archive and five-shape family; no support for an exact universal `tanh` law or a physical cause
 
 ## Plain result
@@ -32,12 +33,13 @@ No private TOLOG document, code, data, or convention was used.
 3. Is the exact `tanh` transition preferred over equally flexible normalized saturation alternatives on NGC 3198?
 4. Did early Lineum DejaVu/RNB plots already contain a hidden `tanh`, Fibonacci, golden-ratio, prime, or Riemann scale?
 5. Is the same exact `tanh` shape compatible with most informative galaxies in the complete official SPARC rotation-curve archive?
+6. Do measured radial source properties distinguish the six strongest `tanh` wins from the fourteen strongest `tanh` rejections, as expected if one mechanism changes regime when one contribution becomes weak or dominant?
 
 ## Evidence lineage
 
 B0/B1 validated the public formula and official SPARC archive. B2 reconstructed the literal public comparator on NGC 3198 with tabulated stellar `M/L=1`. B3 audited the baryonic source convention and found that standard fiducial SPARC stellar weighting changes the fit dramatically. B4 then froze and executed an equal-flexibility shape ablation before extending the same family to all 175 official SPARC rotation curves.
 
-Earlier Git versions of this same report preserve the preregistrations and chronological capture. Version 0.5.0 consolidates the completed evidence without changing the frozen B2–B4 numerical verdicts.
+Earlier Git versions of this same report preserve the preregistrations and chronological capture. Version 0.6.0 preserves the completed B2–B4 verdicts and freezes a source-only radial discriminator before inspecting the selected features.
 
 ## Inputs and provenance
 
@@ -312,6 +314,89 @@ The higher rejection fraction in the bulge-present group is descriptive only. Th
 
 Twenty-two `N>=10` galaxies were conservatively excluded from the informative set because the best fit touched a parameter boundary. All twenty-two had `tanh` as the nominal winner. Including all `N>=10` curves would therefore slightly improve the apparent `tanh` score, but the preregistered boundary exclusion was retained.
 
+## Source-structure discriminator preregistration
+
+### Owner intuition and competing explanations
+
+After the verified failure of an exact universal `tanh`, the project owner proposed that the galaxies may still share one mechanism, while one term is absent, negligible, or dominant in particular galaxy classes. The analysis must preserve two competing explanations:
+
+1. one common mechanism changes regime with measured source structure;
+2. multiple mechanisms or unmodeled measurement/calibration effects create the shape classes.
+
+The first test is intentionally source-only. It must not use the fitted winner, `delta AIC`, or observed missing-response profile as an input feature, because that would leak the answer into the predictor.
+
+### Frozen comparison groups
+
+Positive reference group: the six galaxies whose `tanh` fit beat the second-best shape by at least ten AIC units:
+
+```text
+UGC05253, NGC5055, UGC09133, NGC2903, NGC5033, NGC3198
+```
+
+Counterexample group: the fourteen informative galaxies with `delta AIC tanh >= 10`:
+
+```text
+UGC06787, UGC11914, NGC6015, NGC2403, NGC1003, UGC03205,
+UGC02953, UGC08699, NGC0801, NGC2998, UGC06786, NGC5907,
+UGC02885, UGC00128
+```
+
+No galaxy may be added, removed, or relabeled after feature inspection.
+
+### Frozen source-only features
+
+All radii are divided by each galaxy's maximum measured radius. Surface-density cumulative quantities use trapezoidal integration of `2 pi r Sigma(r)` over the tabulated radial samples and endpoint interpolation. Non-positive density values contribute zero.
+
+Primary features:
+
+1. stellar half-light radius divided by measured maximum radius;
+2. stellar 80-percent-light radius divided by measured maximum radius;
+3. gas half-mass proxy radius divided by measured maximum radius;
+4. gas 80-percent-mass proxy radius divided by measured maximum radius;
+5. fraction of stellar light proxy inside the inner quarter of the measured radius;
+6. fraction of gas mass proxy inside the inner quarter;
+7. radius of maximum disk velocity contribution divided by maximum radius;
+8. radius of maximum absolute gas velocity contribution divided by maximum radius;
+9. median fiducial bulge fraction of baryonic squared velocity inside the inner quarter;
+10. median fiducial disk fraction inside the inner quarter;
+11. median gas fraction of baryonic squared velocity in the outer quarter;
+12. ratio of median fiducial baryonic velocity in the inner quarter to the outer quarter.
+
+Frozen measurement controls, reported separately and not interpreted as source mechanisms:
+
+- row count;
+- maximum measured radius;
+- median quoted fractional velocity uncertainty;
+- coefficient of variation of radial step lengths.
+
+### Frozen statistics and gates
+
+For every feature, the primary effect is the rank AUC for separating the six strong `tanh` galaxies from the fourteen rejections. Ties receive average ranks. An exact two-sided permutation probability enumerates all `20 choose 6 = 38,760` assignments while preserving group sizes.
+
+Holm correction is applied across the twelve primary source features. A feature is a strong source separator only when:
+
+```text
+Holm-adjusted p <= 0.05
+and direction-agnostic AUC >= 0.80
+```
+
+A feature is retained as an exploratory partial separator when unadjusted `p <= 0.05` and direction-agnostic AUC is at least `0.75`, but the Holm gate fails.
+
+The source-only explanation is classified:
+
+- `simple_source_separator_supported` if at least one primary feature passes the strong gate and an independently written scalar checker reproduces its feature values and permutation probability;
+- `partial_source_signal_only` if no strong feature passes but at least one passes the exploratory partial gate;
+- `no_simple_source_separator` if neither gate passes;
+- `inconclusive_source_audit` if input coverage or independent reconstruction fails.
+
+The measurement controls cannot promote a physical source claim. If a measurement control separates groups more strongly than all source features, the next step must prioritize measurement-model repair.
+
+### Independent checks and prohibited interpretations
+
+A second implementation must independently reconstruct cumulative radii, component fractions, rank AUCs, and exact permutation counts without importing the primary feature functions. Toy checks must include a uniform disk, an exponential disk, and a single central component with known concentration ordering.
+
+Even a successful source separator would establish prediction inside this selected twenty-galaxy contrast, not causation, universality, dark-matter replacement, modified gravity, a TOLOG derivation, or a Lineum mechanism. A null result would reject only a simple one-feature source explanation; it would not reject nonlinear combinations, source projection, calibration effects, or multiple mechanisms.
+
 ## Numerical verification
 
 Population execution comprised:
@@ -398,7 +483,7 @@ Distinct repair classes:
 4. **Measurement-model repair:** incorporate published SPARC quality metadata, distance/inclination uncertainties, stellar `M/L` uncertainty, and radial covariance before interpreting shape differences physically.
 5. **Emergent-mechanism repair:** test bistable fronts, threshold ensembles, bounded feedback, wake/vortex projections, and other Lineum-native dynamics only after the observational target family is defined without embedding `tanh` directly.
 
-The cheapest next discriminator is not blind tuning of an emergent Lineum mechanism. It is to compare the fourteen strong counterexamples with the six strong `tanh` wins and determine which measured source property predicts the direction of curvature change. That decision is now at the owner intuition gate because the exact-universal-shape hypothesis produced a verified negative result.
+The cheapest next discriminator is the frozen source-structure comparison above. Blind tuning of an emergent Lineum mechanism remains prohibited until this observational discriminator is executed and recorded.
 
 ## Root-programme impact
 
@@ -504,3 +589,4 @@ This report does not establish:
 - `0.3.0`: completed the threshold audit; exact equal-block quantized-linear reconstruction; original raw mechanism remained provenance-blocked.
 - `0.4.0`: preregistered the complete 175-galaxy SPARC population census before fitting.
 - `0.5.0`: completed and independently checked the census; `mixed_population_evidence`; exact universal `tanh` unsupported while `tanh` remains the leading tested descriptive shape.
+- `0.6.0`: recorded the owner's one-mechanism-with-weak-or-absent-term intuition and preregistered the source-only radial discriminator before feature inspection.
