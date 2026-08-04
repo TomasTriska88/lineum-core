@@ -1,387 +1,506 @@
-# Lineum Public-TOLOG Galactic Shape Benchmark — B4 Execution
+# Lineum Public-TOLOG Galactic Shape Benchmark — B4
 
-**Status:** validated B4 core and threshold audit; active preregistered SPARC population extension  
-**Version:** 0.4.0  
+**Status:** validated within the declared descriptive scope  
+**Version:** 0.5.0  
 **Evidence cutoff:** 2026-08-04  
-**Scope:** validated equal-flexibility radial-shape ablation on NGC 3198, completed scale-and-threshold audit of early Lineum/RNB visualizations, and preregistered all-175-SPARC population census; no Lineum-native mechanism  
-**Frozen B4 classification:** `tanh_shape_preferred`  
-**Threshold-audit classification:** `quantized_linear_rendering_supported`; original simulation mechanism remains `provenance_blocked`  
-**Population-audit status:** `preregistered_not_executed`  
-**Confidence:** high for comparative description of one galaxy and exact reconstruction of the plotted early-Lineum series; no population conclusion before the frozen census is executed
+**Scope:** public-formula reconstruction, NGC 3198 source-convention audit, equal-flexibility shape ablation, early-Lineum threshold audit, and complete 175-galaxy SPARC population census; no Lineum-native derivation  
+**NGC 3198 classification:** `tanh_shape_preferred`  
+**Early-threshold classification:** `quantized_linear_rendering_supported`; original raw-run mechanism `provenance_blocked`  
+**Population classification:** `mixed_population_evidence`  
+**Confidence:** high for the reported numerical comparisons inside the tested SPARC archive and five-shape family; no support for an exact universal `tanh` law or a physical cause
 
 ## Plain result
 
-NGC 3198 preferred the exact `tanh` curve over four equally adjustable smooth saturating alternatives. This was not a post-hoc judgment: the functions, source conventions, starts, bounds, metrics, and strong-preference thresholds were committed before the astronomical run.
+The `tanh` curve is not merely a lucky fit to NGC 3198. Across the informative SPARC population it is the most common winner and is statistically compatible with about four galaxies out of five.
 
-Under the unsigned fiducial SPARC convention, `tanh` gave chi-squared `28.061822168198` versus `41.952058405048` for the nearest algebraic competitor `x/sqrt(1+x^2)`. The `tanh` objective was `33.110%` lower, its chi-squared ratio was `0.668902`, and delta AIC was `13.890236`. The signed-gas fiducial lane repeated the result: `28.069707094507` versus `41.953038222856`, ratio `0.669074`, delta AIC `13.883331`.
+It is not, however, one exact key that opens every galaxy. Fourteen informative galaxies strongly reject `tanh` in favor of another equally adjustable saturation shape. The frozen universal-support gate therefore failed, while the universal-rejection gate also failed. The correct result is mixed population evidence.
 
-The frozen strong-preference rule passed because `tanh` was best in both fiducial lanes, every alternative had delta AIC above `10`, `tanh` chi-squared was below `0.8` of the next best, and all required numerical checks passed.
+The practical picture is:
 
-Two limits matter. First, the best `tanh` and algebraic velocity curves differ by at most about `1.66 km/s`, never more than an individual row's stated uncertainty. Many small coherent differences create the statistical preference. Second, with historical tabulated stellar `M/L=1`, the algebraic shape is only delta AIC about `1.68` behind `tanh`. The preference is stable to gas-sign handling but depends on the fiducial stellar calibration established in B3.
+- one broad bounded-transition family appears useful across many galaxies;
+- `tanh` is the leading member of the five tested shapes;
+- NGC 3198 is one of the clearest `tanh` cases;
+- a meaningful minority requires differently curved transitions;
+- the next mechanism must explain both the common `tanh`-like behavior and the systematic exceptions rather than hard-code one exact function for every galaxy.
 
-The later early-Lineum visualization audit did not identify a hidden arithmetic route to this `tanh`. The historical RNB/DejaVu plots are exactly reconstructed by an equal-block quantized linear staircase. Their high raw correlations with Riemann zeros arise from normalized monotone density trends, while the plotted transition edges themselves are exactly equally spaced.
+No private TOLOG document, code, data, or convention was used.
 
-The next frozen extension tests whether the same shape remains compatible across the complete official set of `175` SPARC rotation curves. No population result has yet been inspected.
+## Questions addressed
 
-## Lineage and frozen protocol
+1. Can the public TOLOG-like NGC 3198 formula be reconstructed from public information and official SPARC data?
+2. Does the public result depend materially on the stellar mass-to-light convention?
+3. Is the exact `tanh` transition preferred over equally flexible normalized saturation alternatives on NGC 3198?
+4. Did early Lineum DejaVu/RNB plots already contain a hidden `tanh`, Fibonacci, golden-ratio, prime, or Riemann scale?
+5. Is the same exact `tanh` shape compatible with most informative galaxies in the complete official SPARC rotation-curve archive?
 
-B0/B1 validated the official SPARC archive and public `tanh` formula. B2 produced reduced chi-squared about `14.77` under literal `M/L=1`. B3 found reduced chi-squared about `0.684` under the standard SPARC disk `M/L=0.5`. B4 preregistration version `0.2.0` then froze this comparison before results.
+## Evidence lineage
 
-Input: official `NGC3198_rotmod.dat`, `43` rows, SHA-256 `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`; no exclusions, uncertainty changes, or target-value tuning; fixed `r_s=5 kpc`.
+B0/B1 validated the public formula and official SPARC archive. B2 reconstructed the literal public comparator on NGC 3198 with tabulated stellar `M/L=1`. B3 audited the baryonic source convention and found that standard fiducial SPARC stellar weighting changes the fit dramatically. B4 then froze and executed an equal-flexibility shape ablation before extending the same family to all 175 official SPARC rotation curves.
 
-Primary source lanes:
+Earlier Git versions of this same report preserve the preregistrations and chronological capture. Version 0.5.0 consolidates the completed evidence without changing the frozen B2–B4 numerical verdicts.
 
-- `literal_fiducial`: `Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2`;
-- `signed_fiducial`: `sign(Vgas)Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2`.
+## Inputs and provenance
 
-Historical controls repeated both gas rules at stellar `M/L=1`. NGC 3198 has zero bulge contribution in all rows.
+Official SPARC rotation-model archive:
 
-Every primary model used exactly two parameters:
+- stable source page: `http://astroweb.cwru.edu/SPARC/`;
+- archive name: `Rotmod_LTG.zip`;
+- archive SHA-256: `0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588`;
+- `_rotmod.dat` members: `175`;
+- columns used: radius, observed velocity, velocity uncertainty, gas velocity, disk velocity, bulge velocity, surface brightness, and gas surface density;
+- row counts: `4` to `115` per galaxy;
+- every file passed the eight-numeric-column check;
+- every quoted velocity uncertainty was strictly positive.
 
-`Vmodel^2 = Vbar^2 + V0^2 S(k_eff r / 5 kpc)`.
+NGC 3198 member:
 
-The normalized candidates all satisfy `S(0)=0`, `S'(0)=1`, `S(infinity)=1`:
+- name: `NGC3198_rotmod.dat`;
+- rows: `43`;
+- SHA-256: `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`.
 
-- `tanh(x)`;
-- `1-exp(-x)`;
-- `x/(1+x)`;
-- `(2/pi) atan((pi/2)x)`;
-- `x/sqrt(1+x^2)`.
+The SPARC table convention already includes helium in the gas contribution. Disk and bulge velocity columns correspond to stellar `M/L=1`; the fiducial analysis rescales their squared contributions by `0.5` and `0.7`, respectively.
 
-Bounds were `V0=[0,400] km/s`, `k_eff=[1e-6,100]`; starts were all `16` products of `V0=[25,75,150,250]` and `k_eff=[0.01,0.1,1,10]`; SciPy `least_squares`, TRF, two-point Jacobian, linear loss, all tolerances `1e-12`, `max_nfev=100000`; dof `41`; AIC `chi2+4`.
+## Common model family
 
-## Results
+For radius `r`, every candidate used:
 
-| Lane | Shape | chi-squared | reduced chi-squared | delta AIC | `V0` km/s | `k_eff` | half-radius kpc |
-|---|---|---:|---:|---:|---:|---:|---:|
-| unsigned fiducial | `tanh` | `28.061822` | `0.684435` | `0` | `132.386601` | `0.521986` | `5.261699` |
-| unsigned fiducial | algebraic | `41.952058` | `1.023221` | `13.890236` | `135.756799` | `0.525115` | `5.497372` |
-| unsigned fiducial | exponential | `51.135224` | `1.247201` | `23.073402` | `133.846974` | `0.667475` | `5.192305` |
-| unsigned fiducial | arctan | `62.226443` | `1.517718` | `34.164620` | `142.375801` | `0.510522` | `6.234990` |
-| unsigned fiducial | rational | `101.042285` | `2.464446` | `72.980463` | `147.880789` | `0.698421` | `7.159001` |
-| signed fiducial | `tanh` | `28.069707` | `0.684627` | `0` | `132.386365` | `0.521999` | `5.261564` |
-| signed fiducial | algebraic | `41.953038` | `1.023245` | `13.883331` | `135.756358` | `0.525133` | `5.497186` |
-| signed fiducial | exponential | `51.124838` | `1.246947` | `23.055130` | `133.846592` | `0.667498` | `5.192130` |
-| signed fiducial | arctan | `62.219914` | `1.517559` | `34.150207` | `142.375033` | `0.510545` | `6.234702` |
-| signed fiducial | rational | `101.016494` | `2.463817` | `72.946786` | `147.879600` | `0.698466` | `7.158547` |
+```text
+Vmodel^2(r) = Vbar^2(r) + V0^2 S(k_eff r / 5 kpc)
+```
 
-The main difference occurs in the transition region (`5<r<=15 kpc`). Unsigned-fiducial transition chi-squared is `7.992271` for `tanh` and `17.621597` for algebraic saturation. Inner contributions are `10.237595` versus `11.490045`; outer contributions are `9.831956` versus `12.840417`.
+The two primary baryonic lanes were:
 
-Structural controls passed both preregistered labels: `transition_needed=true` and `saturation_needed_over_range=true`. The constant-plateau AIC is about `1749.46`, the nonsaturating-linear AIC about `3999.87`, versus best primary AIC `32.06`; neither control is competitive.
+```text
+unsigned: Vbar^2 = Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
+signed:   Vbar^2 = sign(Vgas) Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
+```
 
-## Checks and failures
+The five equally flexible shapes were frozen as:
 
-All `320/320` primary starts converged; no material multimodality occurred. Every fiducial shape passed the `1e-6 km/s` all-start curve-equivalence gate. Both fiducial `tanh` results reproduce B3 within `3.1e-13` chi-squared.
+```text
+tanh:       S(x) = tanh(x)
+exponential:S(x) = 1 - exp(-x)
+rational:   S(x) = x / (1 + x)
+arctan:     S(x) = (2/pi) atan((pi/2) x)
+algebraic:  S(x) = x / sqrt(1 + x^2)
+```
 
-A separately written scalar loop reproduced best objectives within about `2.2e-14` and residual arrays exactly. Bounded Powell reproduced every fiducial objective within `8.6e-14`. Fixed-seed differential evolution reproduced the best and second-best objectives within `1.4e-10`. Dense `41x41` local grids found no lower point. A separate checker using a three-point Jacobian reconstructed all 20 best primary fits, all `1376` curve rows, all `43` wide table rows, and the classification with maximum retained metric and curve differences exactly `0.0`.
+All satisfy `S(0)=0`, `S'(0)=1`, and `S(infinity)=1`. Every shape has exactly two fitted parameters: amplitude `V0` and transition scale parameter `k_eff`.
 
-Historical `M/L=1` tanh, algebraic, exponential, and arctan lanes narrowly missed the inherited curve-equivalence gate by `1.2e-5` to `2.3e-5 km/s`, without material multimodality. The historical rational lanes touched `V0=400`. These do not enter the fiducial verdict but remain recorded.
+Frozen bounds and starts:
 
-Environment was Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, Linux x86-64. Repository requirements specify NumPy below `2.0`; independent algorithms and exact reconstruction reduce but do not erase this mismatch.
+```text
+V0 in [0, 400] km/s
+k_eff in [1e-6, 100]
+V0 starts = [25, 75, 150, 250]
+k_eff starts = [0.01, 0.1, 1, 10]
+16 Cartesian-product starts per fit
+```
+
+Primary solver: SciPy `least_squares`, TRF, two-point Jacobian, linear loss, tolerances `1e-12`, `max_nfev=100000`. The objective was quoted-error chi-squared. All two-parameter candidates used `AIC = chi2 + 4`; baryons-only used `AIC = chi2`.
+
+## NGC 3198 source-convention audit
+
+Literal tabulated stellar `M/L=1` gave:
+
+```text
+V0 = 161.2955688 km/s
+k_eff = 0.09596754
+chi2 = 605.6090070
+reduced chi2 = 14.7709514
+```
+
+The standard fiducial stellar weighting gave:
+
+```text
+V0 = 132.3866012 km/s
+k_eff = 0.52198556
+chi2 = 28.06182217
+reduced chi2 = 0.68443469
+half-saturation radius = 5.26169863 kpc
+```
+
+The fiducial convention reduced chi-squared by about `95.366%` relative to literal `M/L=1`. Gas-sign handling changed the result negligibly. The public claim near reduced chi-squared `1.5` was not uniquely reproduced; the same public formula gives substantially different values under plausible source conventions.
+
+This establishes source-policy sensitivity, not that reduced chi-squared below one is necessarily more physically truthful.
+
+## NGC 3198 equal-flexibility shape result
+
+Unsigned fiducial results:
+
+| Shape | chi-squared | Reduced chi-squared | Delta AIC from best |
+|---|---:|---:|---:|
+| `tanh` | `28.061822` | `0.684435` | `0` |
+| algebraic | `41.952058` | `1.023221` | `13.890236` |
+| exponential | `51.135224` | `1.247201` | `23.073402` |
+| arctan | `62.226443` | `1.517718` | `34.164620` |
+| rational | `101.042285` | `2.464446` | `72.980463` |
+
+The signed-gas lane repeated the same order and essentially the same objectives. The main discrimination occurred at `5 < r <= 15 kpc`, where `tanh` transition chi-squared was `7.992271` versus `17.621597` for the nearest algebraic alternative.
+
+The best `tanh` and algebraic velocity curves differ by at most about `1.66 km/s`; the preference is accumulated from many small coherent residual differences rather than one dramatic point.
+
+At historical stellar `M/L=1`, the algebraic shape was only about `1.68` AIC units behind `tanh`. Exact transition preference therefore depends on the stellar calibration even though the fiducial result is numerically strong.
+
+Structural controls showed that both a transition and finite saturation are needed over the measured range. Constant-plateau and nonsaturating-linear additions were not competitive.
+
+## Early-Lineum threshold and number-sequence audit
+
+The owner supplied early DejaVu/RNB visualizations and proposed that the meaningful objects might be the left edges of the stairs rather than the horizontal stairs themselves. The analysis therefore separated plotted values, transition positions, dwell lengths, and jump heights.
+
+The 49-point yellow series was exactly reconstructed as:
+
+```text
+y_i = floor(i / 7) / 6, i = 0,...,48
+```
+
+This reproduces the published comparison with normalized Riemann zeros:
+
+```text
+Pearson correlation = 0.9842156096489157
+Euclidean distance = 0.7254094546265594
+```
+
+The historical 15-point plot was independently reconstructed as seven zeros, seven halves, and one final one, reproducing its displayed correlation and distance.
+
+The left-edge indices are exactly:
+
+```text
+[0, 7, 14, 21, 28, 35, 42]
+```
+
+After normalization, transition positions and reached levels are the same equally spaced sequence. Dwell lengths are all seven, jump heights are all `1/6`, line residual is approximately machine zero, and gap coefficient of variation is zero.
+
+Raw Fibonacci, `phi^n`, primes, prime gaps, and Riemann-zero positions did not beat the exact quantized-linear explanation. Log-Fibonacci appears almost linear because Fibonacci numbers asymptotically scale like `phi^n`; the logarithm removes the exponential and is not a selective Fibonacci signature. Raw Riemann and prime similarities were frequently beaten by random monotone controls.
+
+Classification:
+
+```text
+plotted representation: quantized_linear_rendering_supported
+original raw simulation mechanism: provenance_blocked
+```
+
+The named original event CSV and runner were not recovered. The result therefore classifies the supplied plotted representation, not the unrecovered early simulation dynamics. It does not provide an arithmetic mechanism for the galactic `tanh` preference.
+
+## Population census preregistration
+
+The population test was frozen before fitting:
+
+- all `175` archive galaxies were retained;
+- no galaxy was selected or excluded according to fit performance;
+- primary row-count set was fixed at at least `10` measured points, giving `124` galaxies;
+- a galaxy was `informative` in a lane only when it had at least ten rows, the best added shape improved over baryons-only by at least ten AIC units, and the winning fit did not touch a frozen parameter boundary;
+- sparse curves remained reported but did not determine the population label;
+- no quality flag absent from the archive was invented;
+- the same two baryonic lanes, five shapes, bounds, and sixteen starts were used for every galaxy.
+
+Per-galaxy `tanh` labels:
+
+```text
+compatible:        delta AIC tanh < 2
+tension:           2 <= delta AIC tanh < 10
+strongly rejected: delta AIC tanh >= 10
+```
+
+Frozen population support required, in both source lanes:
+
+- at least `80%` compatible;
+- no more than `10%` strongly rejected;
+- median delta AIC below two;
+- at least `90%` gas-sign label agreement.
+
+Frozen population rejection required, in either lane, fewer than `50%` compatible or more than `30%` strongly rejected. Anything between these gates was `mixed_population_evidence`.
+
+## Complete 175-galaxy population result
+
+The two source lanes produced identical population counts and winners among informative galaxies:
+
+```text
+official archive galaxies                         175
+galaxies with at least 10 rows                    124
+informative galaxies                              102
+tanh compatible                                    82 / 102 = 80.392%
+tanh strongly rejected                             14 / 102 = 13.725%
+tanh tension                                        6 / 102 = 5.882%
+tanh exact best                                    68 / 102 = 66.667%
+median delta AIC tanh                               0.0
+same compatibility label under gas-sign handling 102 / 102
+same winning shape under gas-sign handling        102 / 102
+```
+
+Winner counts among the 102 informative galaxies:
+
+| Shape | Wins |
+|---|---:|
+| `tanh` | `68` |
+| rational | `16` |
+| algebraic | `10` |
+| arctan | `5` |
+| exponential | `3` |
+
+Only `32/102` informative galaxies distinguished the best and second-best shapes by at least two AIC units. Among these shape-identifying galaxies:
+
+```text
+tanh wins        18
+rational wins     8
+arctan wins       3
+algebraic wins    2
+exponential wins  1
+```
+
+Thus many galaxies are compatible with multiple nearby saturation curves. Among the subset that genuinely distinguishes curvature, `tanh` wins most often but not overwhelmingly.
+
+The compatibility fraction narrowly passed the `80%` support requirement. The strong-rejection fraction failed the support gate because `13.725%` exceeds the frozen `10%` ceiling. It remained far below the `30%` universal-rejection gate. Therefore:
+
+```text
+mixed_population_evidence
+```
+
+## Strongest population discriminators
+
+Six informative galaxies strongly preferred `tanh` over the second-best shape by at least ten AIC units:
+
+| Galaxy | Delta AIC to second best |
+|---|---:|
+| UGC05253 | `71.0901` |
+| NGC5055 | `39.4346` |
+| UGC09133 | `22.0938` |
+| NGC2903 | `18.5546` |
+| NGC5033 | `17.7639` |
+| NGC3198 | `13.8902` |
+
+Fourteen informative galaxies strongly rejected `tanh`:
+
+| Galaxy | Preferred shape | Delta AIC against `tanh` |
+|---|---|---:|
+| UGC06787 | arctan | `121.8213` |
+| UGC11914 | rational | `88.1234` |
+| NGC6015 | arctan | `72.7057` |
+| NGC2403 | algebraic | `54.7531` |
+| NGC1003 | rational | `32.8904` |
+| UGC03205 | arctan | `31.4479` |
+| UGC02953 | algebraic | `30.7209` |
+| UGC08699 | rational | `23.5322` |
+| NGC0801 | rational | `20.7622` |
+| NGC2998 | rational | `16.9678` |
+| UGC06786 | exponential | `16.3921` |
+| NGC5907 | rational | `13.6927` |
+| UGC02885 | rational | `13.2693` |
+| UGC00128 | exponential | `11.7727` |
+
+These exceptions are not caused by gas-sign handling: both source lanes retained the same winners and labels for all 102 informative galaxies.
+
+## Descriptive strata
+
+Informative row-count strata:
+
+```text
+10–19 rows: 51 galaxies; 44 compatible, 4 strongly rejected, 3 tension
+20+ rows:   51 galaxies; 38 compatible, 10 strongly rejected, 3 tension
+```
+
+More strongly measured curves expose more exceptions, as expected when additional points constrain transition curvature.
+
+Bulge strata among informative galaxies:
+
+```text
+no tabulated bulge: 77 galaxies; 65 compatible, 7 strongly rejected, 5 tension
+bulge present:      25 galaxies; 17 compatible, 7 strongly rejected, 1 tension
+```
+
+The higher rejection fraction in the bulge-present group is descriptive only. The test did not establish that a bulge causes the shape change; stellar calibration, source geometry, radial coverage, covariance, or another correlated property may explain it.
+
+Twenty-two `N>=10` galaxies were conservatively excluded from the informative set because the best fit touched a parameter boundary. All twenty-two had `tanh` as the nominal winner. Including all `N>=10` curves would therefore slightly improve the apparent `tanh` score, but the preregistered boundary exclusion was retained.
+
+## Numerical verification
+
+Population execution comprised:
+
+```text
+175 galaxies × 2 source lanes × 5 shapes = 1,750 fits
+1,750 fits × 16 starts = 28,000 primary optimization starts
+```
+
+Checks:
+
+- all `28,000/28,000` primary starts reported convergence;
+- `1,579/1,750` shape-lane fits passed the strict all-start curve-equivalence gate directly;
+- `171` flat or degenerate basins triggered the frozen differential-evolution plus Powell fallback;
+- fallback changed the retained objective by at most `8.70e-9`, insufficient to alter any material ranking;
+- independent scalar curve reconstruction differed by at most `2.65e-12 km/s`;
+- scalar chi-squared reconstruction differed by at most `1.29e-11`;
+- the deterministic independent 20-galaxy audit refitted all five shapes in both lanes and differed by at most `3.71e-9` in chi-squared;
+- a separate CSV-only summarizer independently recovered `82`, `14`, `68`, all winner counts, and `102/102` cross-lane agreement;
+- NGC 3198 reproduced the frozen B4 values exactly to the declared tolerance.
+
+One monolithic execution attempt was terminated by the external command-time limit after 30 galaxies. It produced no retained scientific result. The unchanged deterministic runner was then executed in fixed index batches and merged; batching changed only process scheduling, not data, equations, starts, seeds, objectives, or classification.
+
+Runtime environment:
+
+```text
+Python 3.13.5
+NumPy 2.3.5
+SciPy 1.17.0
+Linux x86-64
+```
+
+Repository requirements declare NumPy below `2.0`. Independent scalar reconstruction, alternative global optimization, exact NGC reproduction, and CSV-only aggregation reduce but do not erase this environment mismatch. A repository-supported NumPy rerun remains a desirable reproduction check.
 
 ## Scientific separation
 
-**Implementation:** five explicit normalized two-parameter saturation functions and three structural controls were fitted to four declared baryonic lanes. The later threshold audit generated standard number sequences, reconstructed the plotted staircase, and compared rendered values, transition positions, and gaps separately.
+**Current implementation:** the research runner fits five explicitly declared phenomenological saturation functions to SPARC rotation curves. The current Lineum engine separately contains an explicit `tanh` in an interaction term; any `tanh`-like engine output from that path cannot count as emergence.
 
-**Reproduced observation:** under both fiducial lanes, `tanh` passes the frozen strong-preference threshold; transition and saturation are required within this family. Separately, the historical 49- and 15-point RNB plots are exactly reproduced by equal-block quantized linear staircases.
+**Reproduced observations:** NGC 3198 strongly prefers `tanh` inside the tested family. Across 102 informative galaxies, `tanh` is best for 68 and compatible for 82, while 14 strongly reject it. Both gas-sign conventions give the same population labels and winners.
 
-**Interpretation:** NGC 3198 prefers `tanh`-like transition curvature over the four tested generic alternatives. The early RNB visualization does not explain that curvature; its displayed threshold positions support a linear quantization/rendering explanation.
+**Narrow interpretation:** a `tanh`-like bounded transition is a useful and common descriptive pattern, but exact transition curvature varies across the population. NGC 3198 is a favorable `tanh` target, not proof of universality.
 
-**Hypothesis:** Lineum might generate `tanh`, approximate it through a composite/nonlocal process, or reveal that this preference is galaxy-specific. No tested prime, Fibonacci, golden-ratio, or Riemann scale supplies that mechanism here.
+**Hypotheses opened by the result:**
 
-**Known physics:** one phenomenological galaxy fit does not identify gravity, dark matter, modified gravity, an oscillator-grid derivation, a vortex, foam, topology, attractor, memory, or a relativistic theory. Number-sequence similarity is not a physical coupling.
+1. one underlying feedback family may have a shape parameter controlled by source structure;
+2. several emergent mechanisms may occupy different galaxy regimes;
+3. projection of one nonlocal mechanism through different baryonic geometries may create different apparent saturation curves;
+4. unmodeled stellar calibration, radial covariance, or data-systematic structure may create part of the apparent shape diversity;
+5. the five-shape family may omit a more general low-dimensional curve that subsumes the winners.
 
-## Negative-result mechanism map
+**Known real physics:** this fit census does not identify dark matter, modified gravity, a Lineum foam, a vortex, an order parameter, an oscillator grid, a relativistic completion, or a causal law. AIC preference among phenomenological curves is not a physical derivation.
 
-The preregistered broad hypothesis “any normalized smooth saturation is sufficient” is unsupported for fiducial NGC 3198. The failure is localized mainly to transition curvature, not provenance, optimization, gas sign, bounds, or reconstruction.
+## Failure-to-mechanism map
 
-Open explanation classes are:
+The simple hypothesis “the exact same normalized `tanh` shape describes every informative galaxy” is unsupported within the tested family.
 
-1. a genuinely `tanh`-like bounded feedback or order-parameter response;
-2. a composite or nonlocal Lineum process whose radial projection approximates `tanh`;
-3. source geometry or surface density selecting `tanh`-like curvature only in some systems;
-4. a one-galaxy/calibration preference that weakens across a diverse panel;
-5. an untested equal-flexibility family that matches the transition better.
+What failed:
 
-The cheapest broad discriminator was expanded from a small diverse panel to a deterministic census of every official SPARC rotation curve, preserving the unchanged B4 shape family and source policy. The early arithmetic-threshold route is not promoted because its plotted evidence resolves into equal-spacing quantization and its raw simulation provenance is unavailable.
+- the frozen maximum `10%` strong-rejection allowance was exceeded;
+- fourteen informative galaxies preferred another equal-parameter shape by at least ten AIC units;
+- among the 32 curves that clearly identified shape, twelve strongly rejected `tanh`.
 
-## Root impact and prohibited conclusions
+What remained positive:
 
-B4 supports a tightly specified descriptive galactic response and constrains Q2: generic saturation alone is insufficient on this target, while transition and finite saturation remain necessary. Foam loading and a central vortex remain untested. No Lineum code or whitepaper was changed.
+- `tanh` is the most common winner;
+- it is compatible with slightly more than 80% of informative galaxies;
+- its median population penalty is zero;
+- it wins six very strong head-to-head cases;
+- the result is insensitive to the signed-gas convention.
 
-B4 does **not** establish TOLOG's private convention, a derivation of `tanh`, physical uniqueness, a Lineum mechanism, a vortex or black-hole cause, the absence of dark matter, modified gravity, or generalization beyond NGC 3198.
+Failure location:
 
-The threshold extension does **not** establish a Lineum relationship with Riemann zeros, prime numbers, Fibonacci numbers, the golden ratio, Beatty sequences, or a hidden arithmetic spectrum. It does not prove that the original Lineum simulation itself was linear; it classifies the supplied plotted representation while the named raw CSV and runner remain unrecovered.
+- not the NGC 3198 implementation;
+- not gas-sign handling;
+- not ordinary local optimizer selection;
+- not a sparse-curve-only artifact;
+- localized to population variation in transition curvature, with stronger exceptions among better-sampled and bulge-present curves.
 
-## Reproduction and retained evidence
+Distinct repair classes:
 
-Readable loader: `research/runners/lineum_public_tolog_galactic_shape_b4.py`; complete source bundle: `research/runners/lineum_public_tolog_galactic_shape_b4_source.py.xz`. The exact complete evidence bundle contains the uncompressed full JSON receipt, all start receipts and curves, both CSV tables, and the independent checker.
+1. **Shape-family repair:** introduce one bounded transition family with an additional physically predicted curvature parameter, then penalize the extra flexibility and test held-out galaxies.
+2. **Source-projection repair:** derive apparent radial response from baryonic surface density, disk scale, bulge structure, or a nonlocal source integral rather than from radius alone.
+3. **Regime-mixture repair:** identify preregistered galaxy classes before fitting and test whether each class has a stable winner.
+4. **Measurement-model repair:** incorporate published SPARC quality metadata, distance/inclination uncertainties, stellar `M/L` uncertainty, and radial covariance before interpreting shape differences physically.
+5. **Emergent-mechanism repair:** test bistable fronts, threshold ensembles, bounded feedback, wake/vortex projections, and other Lineum-native dynamics only after the observational target family is defined without embedding `tanh` directly.
 
-Evidence bundle SHA-256: `e403cb963abe7c3d148df58c3a631a6ab531cd47576952ad9910beda83715bca`. Reconstruct by lexically concatenating `research/results/lineum_public_tolog_galactic_shape_b4_evidence.tar.xz.b64.part*`, base64-decoding the result, then opening the resulting `tar.xz` archive. Raw hashes inside:
+The cheapest next discriminator is not blind tuning of an emergent Lineum mechanism. It is to compare the fourteen strong counterexamples with the six strong `tanh` wins and determine which measured source property predicts the direction of curvature change. That decision is now at the owner intuition gate because the exact-universal-shape hypothesis produced a verified negative result.
 
-- full output JSON: `47502688e3290a055124d6834e46ba73c3e669b5cad494cabc170e77cbf6a9d7`;
-- curves CSV: `7d4dacef62c182435ecaec53a7d50afbfd16ad07c424d8a0ca8dd711266fb8f1`;
-- rows CSV: `863b4a3fdf8b4d009076ba97f14749612ad1bc3cb6444b8b89539334da42d2e6`.
+## Root-programme impact
 
-A compact summary is retained as `research/results/lineum_public_tolog_galactic_shape_b4_output.json`.
+| Programme statement | Impact |
+|---|---|
+| A finite saturating addition is useful for NGC 3198 | `supports` |
+| Exact `tanh` transition is preferred on NGC 3198 | `supports` |
+| Any smooth saturation is equivalent on NGC 3198 | `contradicts` |
+| Exact normalized `tanh` is universal across galaxies | `contradicts` within tested family |
+| A broad bounded-transition family may be common | `supports` descriptively |
+| Early RNB plots derive the galactic response | `contradicts` for supplied rendering |
+| Lineum currently derives `tanh` emergently | `not_yet_supported`; explicit engine `tanh` is a confounder |
+| Foam, vortex, memory, or phase-front cause | `not_yet_compared` |
+| TOLOG physical mechanism is validated | `contradicts` as an allowed conclusion |
 
-Portable input is embedded below as XZ-compressed base64. Decode base64, then XZ-decompress; expected SHA-256 is the input hash above:
+No Lineum engine, public API, test suite, or whitepaper was changed by this research checkpoint.
+
+## Retained artifacts and reproduction
+
+Committed research tools:
+
+- `research/runners/lineum_b4_sparc_population_shape_census.py` — complete all-in-one runner;
+- `research/runners/lineum_b4_sparc_population_fit_batch.py` — execution-environment batch helper;
+- `research/runners/lineum_b4_sparc_population_finalize.py` — deterministic merge and independent audit;
+- `research/runners/lineum_b4_sparc_population_summary_check.py` — independent CSV-only aggregate checker.
+
+Committed outputs:
+
+- `research/results/lineum_b4_sparc_population_shape_census_summary.json` — human-readable population result and diagnostics;
+- `research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64` — all 350 galaxy-lane decisions, XZ-compressed then base64 encoded.
+
+Artifact SHA-256 values before connector transport:
 
 ```text
-/Td6WFoAAATm1rRGAgAhARwAAAAQz1jM4AgaAsFdABGIBQhyEct6omaQnwHw8aY9SM0DP6pLqF8mNdScQSUNG179cP3mj0PWLiYyoXWBE7sMue75gmThR2pvKs7dqQkFirXHboqEPXxbrmy0HGjE5pK1YRrGCO4rAiEjb42+sMR+BT0UqexYYZL6Irf7+ZiXb8fS+BdHyhXYYx1eHOZ4urKT37i/zDTwUYmd5wiyxgsfyuPAxRZn/FrlFKTBJYk548S+/KhCTYZ7HZytJoS/Pyui0XP0ABE/hruX18+6UKdLkXA7uuqcOe0+vK0VAhnoYjH6oS6sz70j7kLQ9LFXDoxIm+NMCBTb+g35nFLEhZBXMSsjn4BzqlfYcTTb90kuHF5S25lmDsCgETEGqwhjWmogQ+Ezchw0zx0rqRW/1YE/FfVMJIE8aJAHn2a7A7lS6PKdqaTQV7so5GXgUhJ0igySPenA73YTlIGRUAug5qXLJ8HCpN6ycMULuxzBvoCjtKFsNFXZZl8Cm2LTxlyxuhCtTOhInPXbn5fxzkZvv09eJOAKUaYM+z6hLYUJ/cqAIYeppLpNP8+fZnrJFHAQV3E/1Epznq+OYM0UniGD95dZAu/5OdKvDtsTHGkrPfpi48aD6+kRMjYb1uPB6eGHUSlbniylZtjpbgP0al7piGKXfibCWRC+G8Q8GMUzpqfs14rygTMIYHSnpf/dIu8KNIhIM+hnEQYWK3miCuwOtMuL+knoaJVoClUiXv7DNOcsOMuviKzd5WH84NhmKCmyUDgUP55k7K0LnWyXknruiC2JWPY4ugXzo0vivBXMut1too4xgnjlOpDkJk+c0KyVEGcpC9i/4HzuRAKtjqetJYZksZXOoHnpN14/tKUUfKvDuQRW3tlbewfnOy5OiwV9c79UhWrzLpAEkevYLqFzpI1EhaWUMsWGRifmuBeXinqLEFmwzhyFHIduuA1x1CcgWAAAAABJ3R1isDTEHgAB3QWbEAAAiZFy07HEZ/sCAAAAAARZWg==
+main runner      34f2c9e6705ab00aa179f45cee0d0ca04b4da94cbc1858c17cfd4751bcb1b01f
+batch helper     da4eb89a6501746460e628d1cc0413606fe131bb9dcbedf0ff440de3d86f2667
+finalizer        128a23d1bdf24810fb876b7d6ba3ebba5852d7f5e0a13dee209e20f0e09333c7
+summary checker  98a3907d3e5dd61bae45a3c962215ced1bf4d684edd2db53cab81ab0198e1243
+summary JSON     4e5e20ff28c3ea1a9cf9612580cfdd62d6604e2fc21c4d6bad32c40f1fa46fdc
+raw 350-row CSV  c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d
+CSV XZ           7dc6c16b469b92fc28cdfdeb59de357e1731c9fa509d8d968ac489e7fb22ba30
+CSV XZ base64    2137bb95499e25f38438feb4376a398eb5d2a79b270fa764aece32e8ae62fe04
 ```
 
-Minimal reproduction uses the five functions and solver settings stated above, all 16 starts, and ranks the minimum chi-squared in each fiducial lane. Expected first two values are `tanh 28.061822168198`, algebraic `41.952058405048` unsigned; `tanh 28.069707094507`, algebraic `41.953038222856` signed.
+The complete local compressed receipt, including all 28,000 start records, had SHA-256:
 
-## Early-Lineum threshold and scale audit
-
-### Owner idea and motivation
-
-The project owner supplied seven early research plots comparing Lineum “DejaVu” points, later named Resonant Return Points (RNBs), with normalized Riemann zeta zeros. The owner proposed that the visible staircase may not be the physical curve: the decision-relevant objects may instead be the left edges or transition locations. The owner also asked for a critical, out-of-the-box comparison with the golden ratio, Fibonacci numbers, primes, prime gaps, Riemann-zero spacing, and scale changes, noting that an apparently linear pattern can be a local view of a nonlinear relation.
-
-This extension does not reopen the previously closed claim that Lineum is resonant with Riemann zeros. The repository's current zeta-resonance record classifies the tested formulations as `CLOSED_NEGATIVE`: the apparent zeta match was a density/look-elsewhere artifact and did not beat random controls. The narrower question was whether early Lineum thresholds or dwell structure contain a reproducible generic scale law that could inform a composite route to `tanh`-like saturation.
-
-### Retrieved provenance
-
-- The visible 49-point plot reports Pearson correlation `0.9842` and Euclidean distance `0.7254` after normalization.
-- The historical hypothesis names the run `spec7_true`, code `lineum_no_artefacts.py`, and data file `output_no_artefacts/spec7_true_rnb_vs_zeta.csv`.
-- Current `develop` contains the hypothesis text and quarantined UI, but connector search did not locate the named raw CSV or runner. The absence of a current repository file is not evidence about the original local run.
-- The quarantined UI explicitly states that Riemann-zero matching was found to be a density artifact that did not survive random controls.
-- The supplied images were treated as secondary visual evidence. The plotted values became decision-safe only where an exact formula reproduced both the visible levels and the published metrics.
-
-### Frozen representations and candidates
-
-The preregistered analysis kept drawn values, transition indices, transition levels, dwell lengths, jump heights, and cumulative event count separate. It compared equal spacing, `tanh`, logistic, logarithmic, square-root and power axes, raw and unfolded Riemann zeros, raw and unfolded primes, prime gaps, Fibonacci numbers, `phi^n`, Beatty sequences for `phi` and `phi^2`, and random monotone or shuffled controls. Pearson correlation was secondary; primary emphasis was error, exact spacing, detrending/unfolding, and random controls.
-
-### Exact reconstruction of both historical plots
-
-The 49-point yellow series is exactly reconstructed as:
-
-`y_i = floor(i/7) / 6`, for `i=0,...,48`.
-
-This gives seven repeated values at each level `0, 1/6, 2/6, ..., 1`. Comparing it with endpoint-normalized first 49 Riemann-zero ordinates gives:
-
-- Pearson `0.9842156096489157`;
-- Euclidean distance `0.7254094546265594`.
-
-These reproduce the displayed `0.9842` and `0.7254` to the shown precision.
-
-The 15-point plot is independently reconstructed as:
-
-`y_i = floor(i/7) / 2`, for `i=0,...,14`.
-
-It gives seven zeros, seven halves, and one final one. Against the first 15 normalized Riemann zeros it produces Pearson `0.8624831263677383` and Euclidean distance `1.1669392742086542`, reproducing the displayed `0.862` and `1.167`.
-
-A separately written scalar checker that does not import the vector scoring functions reproduced all four values to at least `1e-15` and verified transition indices `[0,7,14,21,28,35,42]`.
-
-### The left edges answer the owner's specific question
-
-When only the left edges are retained, their indices are:
-
-`[0, 7, 14, 21, 28, 35, 42]`.
-
-After endpoint normalization they are exactly:
-
-`[0, 1/6, 2/6, 3/6, 4/6, 5/6, 1]`.
-
-The reached levels are the same sequence. Therefore transition location versus transition level is an exact straight line, every dwell length is `7`, every jump height is `1/6`, transition RMSE from a line is `4.2e-17`, and gap coefficient of variation is exactly `0`.
-
-This does not show that the original simulation dynamics were linear. It shows that the plotted representation contains no recoverable nonlinear threshold spacing.
-
-### Number-family comparisons
-
-#### Full 49 rendered values
-
-| Candidate | RMSE | Raw interpretation |
-|---|---:|---|
-| log Fibonacci | `0.056929` | nearly linear after logarithm; not unique to Fibonacci |
-| unfolded Riemann count | `0.058129` | density trend explicitly removed toward uniform index |
-| linear index | `0.058926` | no fitted shape parameter |
-| log `phi^n` | `0.058926` | exactly linear because `log(phi^n)=n log(phi)` |
-| Beatty `phi^2` | `0.059543` | near-linear floor sequence |
-| Beatty `phi` | `0.059966` | near-linear floor sequence |
-| unfolded primes via `li(p)` | `0.067558` | counting trend removed |
-| raw primes | `0.091116` | worse than linear |
-| raw Riemann zeros | `0.103630` | worse than linear and worse than most random monotone controls |
-| raw `phi^n` | `0.536571` | strongly incompatible |
-| raw Fibonacci | `0.536571` | strongly incompatible |
-
-The slight numerical lead of log Fibonacci over a line is not a Fibonacci signature. Fibonacci numbers approach a constant multiple of `phi^n`, so taking a logarithm converts either—and any ordinary exponential progression—into an approximately linear sequence. Log `phi^n` is exactly identical to the linear baseline. The log-Fibonacci RMSE was beaten by `5.23%` of `200,000` random monotone controls, narrowly missing the preregistered 95% control threshold even before accounting for its mathematical dependence on the linear/exponential family.
-
-Raw Riemann zeros were beaten by `88.465%` of random monotone controls; raw primes were beaten by `76.255%`. Their high Pearson values are therefore generic monotone similarity, not selective matching.
-
-#### Seven transition locations
-
-| Candidate | RMSE from observed left edges |
-|---|---:|
-| exact linear | approximately `0` |
-| Beatty `phi^2` | `0.015749` |
-| unfolded Riemann count | `0.018756` |
-| unfolded primes | `0.022274` |
-| Beatty `phi` | `0.025198` |
-| raw Riemann zeros | `0.063485` |
-| raw primes | `0.100000` |
-| raw `phi^n` | `0.216707` |
-| raw Fibonacci | `0.231455` |
-
-Beatty and unfolded sequences are close because they are constructed to have an approximately uniform counting density. They do not beat the exact equal-spacing explanation.
-
-### Smooth-curve trap
-
-Fitting the entire rendered staircase without examining how it was generated can manufacture an apparent sigmoid:
-
-- linear RMSE `0.058926`;
-- fitted half-`tanh` RMSE `0.058776`, with `k=0.212694`, which is already near the linear limit;
-- fitted power RMSE `0.058510`, with exponent `1.02537`, also nearly linear;
-- fitted logistic RMSE `0.048448`;
-- exact quantized-linear formula RMSE `0`.
-
-The logistic curve can smooth the stairs visually, but the exact generator is equal-width linear quantization. This is precisely why the transition edges, dwell lengths, and jump heights had to be tested separately.
-
-### Prime gaps versus Riemann-zero gaps
-
-The owner's scale warning was valid, but the two densities move in opposite average directions:
-
-- among the first 49 values used here, mean Riemann-zero gap falls from `3.1114` in the first half to `2.1798` in the second half;
-- mean prime gap rises from `3.9583` to `5.4167`.
-
-Asymptotically, the nth prime grows like `n log n`, so average prime gaps grow roughly logarithmically. The density of zeta zeros grows roughly like `log T`, so their average vertical spacing decreases roughly like `2 pi / log T`. Zeta zeros encode oscillatory information about primes through the explicit formulas, but they are not a list of increasingly separated prime decompositions.
-
-### Classification and consequence
-
-For the supplied plotted representation, the frozen classification is:
-
-`quantized_linear_rendering_supported`.
-
-For the unrecovered original simulation mechanism:
-
-`provenance_blocked`.
-
-The result contradicts using these images as evidence that early Lineum had already generated a `tanh`, Fibonacci, golden-ratio, prime, or Riemann curve. It does not contradict the B4 astronomical result, because the NGC 3198 `tanh` preference was obtained independently from SPARC data and frozen shape comparisons.
-
-The arithmetic-threshold route must remain closed unless the original raw `spec7_true` event data and generation code are recovered and reveal information that was lost by the equal-block visualization.
-
-### Retained extension artifacts
-
-- runner: `research/runners/lineum_b4_early_threshold_scale_audit.py`, local verified SHA-256 `7b22024ecb64dc67236a4a0f0f3673b4b428b3227cefff0e441eee58d160c9dd`;
-- independent scalar checker: `research/runners/lineum_b4_early_threshold_scale_check.py`, local verified SHA-256 `906bc3a5282ad149a4286ab1aac0e9fb1a3ebf6977efbf29cd11dc73f857d231`;
-- machine output: `research/results/lineum_b4_early_threshold_scale_audit.json`, local rerun SHA-256 `ae5e2cedff687a0b675d263f38ba1096b61e24691d96ef2bef1fe84fd8897331` before connector transport.
-
-Environment: Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, SymPy `1.14.0`, mpmath `1.3.0`, Linux x86-64. A network-disabled local clone attempt failed before checkout; repository reads and writes used the GitHub connector. This limitation did not affect the standalone arithmetic reconstruction, but repository-supported dependency execution was unavailable.
-
-Minimal independent reconstruction:
-
-```python
-import math
-import mpmath as mp
-
-zeros = [float(mp.im(mp.zetazero(n))) for n in range(1, 50)]
-z = [(v-zeros[0])/(zeros[-1]-zeros[0]) for v in zeros]
-y = [math.floor(i/7)/6 for i in range(49)]
-mean_z, mean_y = sum(z)/49, sum(y)/49
-pearson = sum((a-mean_z)*(b-mean_y) for a,b in zip(z,y)) / math.sqrt(
-    sum((a-mean_z)**2 for a in z) * sum((b-mean_y)**2 for b in y)
-)
-distance = math.sqrt(sum((a-b)**2 for a,b in zip(z,y)))
-assert abs(pearson - 0.9842156096489157) < 1e-15
-assert abs(distance - 0.7254094546265594) < 1e-15
+```text
+c12b04eaf13b2d66c5f6eee799cde1d5c3978546aea3faa1c053b02ba2bbcf19
 ```
 
-## SPARC population shape census — frozen before execution
+It was used to derive the committed summary and row table but was too large for a safe single connector write. The durable report does not rely on that local file for its conclusions: the exact runner regenerates it, the committed summary retains all aggregate and numerical gates, and the committed row table retains every galaxy-lane decision. The absence of per-start raw records from Git is an explicit evidence-pack limitation, not hidden completeness.
 
-### Owner question and exact scope
+Minimal execution:
 
-The project owner asked whether `tanh` might in fact be the common answer for all galaxies and then authorized continuation. This extension tests a descriptive population claim only: when every galaxy receives the same two-parameter shape family and the same baryonic conventions, is `tanh` compatible with most informative SPARC rotation curves, or was NGC 3198 exceptional?
+```bash
+python research/runners/lineum_b4_sparc_population_shape_census.py \
+  --archive Rotmod_LTG.zip \
+  --output population_receipt.json \
+  --table population_rows.csv \
+  --workers 8
 
-This test cannot establish a universal physical law. Every galaxy still receives its own fitted amplitude `V0` and transition parameter `k_eff`. A physical-law claim would additionally require those parameters to be predicted from independently measured galaxy properties and would require held-out prediction.
+python research/runners/lineum_b4_sparc_population_summary_check.py \
+  population_rows.csv
+```
 
-### Frozen data census
+To decode the committed row table:
 
-- Input archive: official `Rotmod_LTG.zip`, SHA-256 `0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588`.
-- Members: all `175` `_rotmod.dat` files, with no galaxy selected or excluded by model performance.
-- Input audit before fitting: every file has eight numeric columns; row counts range from `4` to `115`; all quoted velocity uncertainties are strictly positive.
-- Census set: all `175` galaxies, including sparse curves, retained for transparency.
-- Primary interpretive set: galaxies with at least `10` measured rows, fixed before fitting. The input audit gives `124` such galaxies.
-- Sparse galaxies remain reported but do not decide the population label because two fitted parameters leave too little independent shape information.
-- No SPARC quality flag is available inside this archive. The census will therefore report row-count strata and retain this missing quality metadata as a limitation rather than inventing a quality cut.
+```bash
+base64 -d research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64 \
+  | xz -d > population_rows.csv
+```
 
-### Frozen source lanes and shape family
+Expected primary result:
 
-The two primary lanes are unchanged from B4:
+```text
+classification = mixed_population_evidence
+informative = 102
+tanh compatible = 82
+tanh strongly rejected = 14
+tanh best = 68
+same gas-sign label = 102
+```
 
-- unsigned fiducial: `Vbar^2 = Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2`;
-- signed fiducial: `Vbar^2 = sign(Vgas)Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2`.
+## Prohibited conclusions
 
-Every galaxy and every candidate uses:
+This report does not establish:
 
-`Vmodel^2(r) = Vbar^2(r) + V0^2 S(k_eff r / 5 kpc)`.
-
-The five candidates remain exactly:
-
-1. `tanh(x)`;
-2. `1-exp(-x)`;
-3. `x/(1+x)`;
-4. `(2/pi) atan((pi/2)x)`;
-5. `x/sqrt(1+x^2)`.
-
-Each has the same two fitted parameters, the same zero value, the same unit initial slope, and the same asymptotic plateau. The baryons-only model is a zero-parameter structural control.
-
-### Frozen optimizer and numerical gates
-
-- Bounds: `V0=[0,400] km/s`, `k_eff=[1e-6,100]`.
-- Starts: all `16` products of `V0=[25,75,150,250]` and `k_eff=[0.01,0.1,1,10]`.
-- Solver: SciPy `least_squares`, TRF, two-point Jacobian, linear loss, `xtol=ftol=gtol=1e-12`, `max_nfev=100000`.
-- Objective: quoted-error chi-squared; AIC is `chi2+4` for every two-parameter candidate and `chi2` for baryons-only.
-- All starts, convergence flags, parameter-boundary contacts, objective spread, and maximum fitted-curve disagreement are retained.
-- A lane is numerically stable when all starts converge and all fitted curves lie within `1e-5 km/s` of the best curve. Failures remain reported and are not silently discarded.
-- Any galaxy/shape/lane that fails this stability gate receives a frozen differential-evolution check with seed `20260804`, followed by bounded Powell refinement. The lower verified objective is retained, and the original multistart failure remains visible.
-- NGC 3198 must reproduce the existing B4 objectives within `1e-8`; otherwise the population execution is invalid.
-
-### Frozen per-galaxy labels
-
-Within each source lane:
-
-- `delta_AIC_tanh = AIC_tanh - min(AIC_all_five_shapes)`;
-- `tanh_best`: `delta_AIC_tanh <= 1e-8`;
-- `tanh_compatible`: `delta_AIC_tanh < 2`;
-- `tanh_tension`: `2 <= delta_AIC_tanh < 10`;
-- `tanh_strongly_rejected`: `delta_AIC_tanh >= 10`;
-- `shape_identified`: the best and second-best shapes differ by at least `2` AIC units;
-- `added_component_needed`: the best two-parameter shape improves over baryons-only by at least `10` AIC units;
-- `informative`: at least `10` rows, `added_component_needed=true`, and the best fit does not place `V0` or `k_eff` on a frozen parameter boundary.
-
-The primary population percentages are calculated over informative galaxies separately for unsigned and signed gas. Counts over all `175` and over the fixed `N>=10` set are also retained.
-
-### Frozen population classifications
-
-The result is `tanh_population_supported_within_tested_family` only if, in both source lanes:
-
-- at least `80%` of informative galaxies are `tanh_compatible`;
-- no more than `10%` are `tanh_strongly_rejected`;
-- the median `delta_AIC_tanh` is below `2`;
-- and at least `90%` of galaxies informative in both lanes retain the same compatibility label under gas-sign handling.
-
-The result is `tanh_population_unsupported_within_tested_family` if, in either source lane:
-
-- fewer than `50%` of informative galaxies are `tanh_compatible`;
-- or more than `30%` are `tanh_strongly_rejected`.
-
-All other outcomes are `mixed_population_evidence`.
-
-These thresholds are descriptive decision rules, not probabilities that `tanh` is true. A supported result would justify mechanism research and held-out parameter prediction; a mixed result would require grouping galaxies by structure before mechanism selection; an unsupported result would falsify the simple universal-shape hypothesis within this five-shape family.
-
-### Frozen independent checks and prohibited interpretations
-
-- A separately written scalar evaluator will reconstruct every retained best curve and objective without importing the main residual function.
-- A deterministic audit subset of `20` galaxy names, selected by sorting SHA-256 hashes of the names, will receive independent differential-evolution plus Powell fits for all five shapes in both lanes.
-- Aggregate counts will be recomputed from the machine-readable row table by an independent summarizer.
-- Results will be stratified by row-count band (`4-9`, `10-19`, `20+`), bulge present/absent, and whether gas-sign handling changes the winning shape. These strata are descriptive and cannot replace the frozen overall classification.
-
-The census does not establish dark-matter absence, modified gravity, TOLOG's mechanism, a Lineum mechanism, a universal law, or causation. It tests only whether `tanh` remains a comparatively adequate two-parameter radial saturation shape across this archive under the declared source conventions.
+- that `tanh` is a universal law of galaxies;
+- that the public TOLOG mechanism is physically correct;
+- that TOLOG's unpublished conventions were reproduced;
+- that dark matter is absent;
+- that modified gravity is established;
+- that Lineum already generates the response emergently;
+- that an explicit `tanh` inside current Lineum code is an emergent discovery;
+- that Fibonacci numbers, the golden ratio, primes, or Riemann zeros cause the galactic response;
+- that bulges cause the observed shape exceptions;
+- that a lower chi-squared alone identifies true physics.
 
 ## Version history
 
-- `0.1.0`: frozen B4 execution and independent reconstruction; `tanh_shape_preferred`; generic saturation unsupported for this one target; owner intuition gate opened.
-- `0.2.0`: B4 core retained unchanged; opened and preregistered an in-report early-Lineum threshold/scale audit after the owner supplied historical DejaVu/RNB plots and requested critical comparisons with primes, Fibonacci, the golden ratio, Riemann spacing, and nonlinear scales.
-- `0.3.0`: completed the in-report audit; exactly reconstructed both historical plots as equal-block quantized linear staircases; classified the plotted representation as `quantized_linear_rendering_supported`; retained original simulation mechanism as `provenance_blocked`; no arithmetic route to B4 `tanh` established.
-- `0.4.0`: preregistered the all-175-SPARC population shape census before fitting; fixed the primary `N>=10` set, source lanes, optimizer, numerical fallbacks, per-galaxy labels, population thresholds, independent checks, and prohibited interpretations.
+- `0.1.0`: frozen NGC 3198 B4 execution; `tanh_shape_preferred`.
+- `0.2.0`: opened and preregistered the in-report early-Lineum threshold and scale audit.
+- `0.3.0`: completed the threshold audit; exact equal-block quantized-linear reconstruction; original raw mechanism remained provenance-blocked.
+- `0.4.0`: preregistered the complete 175-galaxy SPARC population census before fitting.
+- `0.5.0`: completed and independently checked the census; `mixed_population_evidence`; exact universal `tanh` unsupported while `tanh` remains the leading tested descriptive shape.
