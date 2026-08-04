@@ -1,11 +1,11 @@
 # Lineum Universe-Emergence Evidence Map
 
 **Status:** active  
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** a public-source and repository-history evidence map connecting three Lineum-native field questions to operational observables in the real universe  
 **Central question:** which empirically constrained structures and responses can arise emergently from Lineum local dynamics without inserting the target phenomenon into the equation, initial condition, observer, or fit procedure?  
-**Current confidence:** high in the research boundary and evidence ladder; no new empirical connection is established by this protocol alone
+**Current confidence:** high in the research boundary and evidence ladder; moderate in the first public TOLOG mechanism decomposition; no empirical Lineum-to-universe connection is established yet
 
 ## 1. Report lineage
 
@@ -233,30 +233,225 @@ No new consequential simulation lane may be selected until its active report rec
 - parameter freedom and held-out data policy;
 - the interpretation allowed by each possible outcome.
 
-## 10. Immediate next step
+## 10. Batch U0.1 — first public TOLOG inventory
 
-The next retained step is Batch U0 source inventory. It is read-only and has three parallel conceptual lanes, serialized by one lead editor:
+### 10.1 Retrieval date and method
 
-1. public TOLOG identity and source inventory;
-2. complete relevant Lineum mechanism and negative-result inventory;
-3. authoritative real-universe anchor inventory for Q1, Q2, and Q3.
+Access date: `2026-08-04`.
 
-No simulation result or physical claim will be produced in Batch U0. Its output is a provenance-checked candidate matrix and a ranked list of the cheapest discriminating tests.
+Public web searches used combinations of:
 
-## 11. Prohibited conclusions at version 0.1.0
+- `"TOLOG-Alpha" scalar field Dark Heart`;
+- `TOLOG theory scalar field cosmology Dark Heart`;
+- `TOLOG Alpha GitHub`;
+- `TOLOG galaxy rotation curve scalar field`;
+- `site:github.com "Tolog-Alpha"`;
+- `"Patrik Tolog" physics Tolog-Alpha`;
+- `"Tolog-Alpha" saturation dynamics`;
+- `"Tolog Institute" Sázava physics`.
 
-This protocol does not establish that:
+A direct GitHub repository-search request timed out. General public web searches did not expose a public TOLOG source-code repository in this first batch. This is an unresolved inventory gap, not evidence that no repository exists.
+
+### 10.2 Recovered primary public sources
+
+#### Source T1 — cosmology proposal
+
+- title: `Saturation Dynamics and Grid Resonance: A Phenomenological Alternative to Dark Matter and Dark Energy`;
+- author: Patrik Tolog;
+- stated affiliation: Independent Researcher, Sázava Lab, Czech Republic;
+- source class: author-submitted public proposal; not treated here as peer reviewed;
+- version and date displayed by source: `v1.0`, `2026-03-28`;
+- URL: `https://aixiv.science/abs/aixiv.260328.000002`;
+- access date: `2026-08-04`.
+
+Publicly stated content:
+
+- a `3 x 3` stabilizing grid with Curvature, Energy Density, and Scalar Field components;
+- a redshift-dependent saturation function `S(z)`;
+- an effective equation of state `w(z) = -lambda S(z)`;
+- phenomenological comparison claims involving SPARC, Pantheon supernovae, and BAO;
+- an explicit statement that reproducing the full CMB power spectrum remains a challenge.
+
+Allowed use in Lineum:
+
+- source of a public saturation-plus-cosmology hypothesis;
+- source of candidate cross-observables that any unified Lineum mechanism would eventually need to confront;
+- source of a warning that fitting expansion history and BAO is insufficient without CMB and structure-formation checks.
+
+Not established by this source:
+
+- derivation from a declared local `3 x 3` update rule;
+- correctness of the observational comparisons;
+- uniqueness of the mechanism;
+- a physical bridge to Lineum.
+
+#### Source T2 — public author profile and technical uploads
+
+- profile: `Patrik Tolog - Independent Researcher`;
+- publisher: Academia.edu public profile;
+- source class: author-controlled public profile and uploaded technical reports; not treated here as peer reviewed;
+- URL: `https://independent.academia.edu/PatrikTolog`;
+- access date: `2026-08-04`.
+
+The profile publicly identifies Patrik Tolog as founder and lead researcher at Tolog Institute and developer of Tolog-Alpha. The uploads expose several distinguishable model layers.
+
+##### T2-A — galactic phenomenological formula
+
+The public upload states:
+
+`v(r)^2 = v_bar(r)^2 + V0^2 * tanh(k_eff * r / r_s)`
+
+with `V0` and `k_eff` fitted by nonlinear least squares and a stated fixed example scale `r_s = 5.0` in the displayed script. The text explicitly says that `tanh` produces linear small-radius behaviour and saturation at large radius. It reports reduced-chi-squared values and a baryonic Tully-Fisher-like scaling claim.
+
+Evidence classification:
+
+- public equation: `source_recovered`;
+- public fitting procedure: `source_recovered`;
+- underlying complete multi-galaxy data, code package, parameter table, uncertainty analysis, and independent reproduction: not yet recovered in this programme.
+
+Scientific consequence for the Lineum programme:
+
+- the flat outer contribution is asymptotically built into the selected `tanh` formula;
+- the published galactic expression is therefore a phenomenological comparator, not yet evidence that a flat rotation curve emerged from the public `3 x 3` oscillator dynamics;
+- copying this term into Lineum would violate the emergence anti-cheat rule;
+- it is useful as a positive-shape control and as a benchmark showing what Lineum must generate without an inserted saturation profile.
+
+##### T2-B — reported information preservation
+
+The public profile reports a `9/12` node-invariance result and describes `75%` structural-information preservation under a Machine No. 4 startup stress scenario.
+
+Evidence classification:
+
+- numerical claim: `source_recovered` only;
+- operational definition of information, observer, baseline, uncertainty, raw output, and reproducible code: not yet recovered;
+- no equivalence to physical information conservation is supported.
+
+Scientific consequence for the Lineum programme:
+
+- this motivates an explicit distinguishability test;
+- percentage of invariant nodes is not by itself an information-theoretic metric;
+- Lineum Q3 must define paired initial states, permitted observers, mutual distinguishability, source-off decay, and channel ablations before reporting information retention.
+
+#### Source T3 — public oscillator-hardware discussion
+
+- title: `Seeking advice: Analog Oscillator Grid (3x3) synchronization & phase monitoring via Arduino Mega`;
+- author handle: `patriktolog`;
+- publisher: Arduino Forum;
+- date displayed: March 2026;
+- URL: `https://forum.arduino.cc/t/seeking-advice-analog-oscillator-grid-3x3-synchronization-phase-monitoring-via-arduino-mega/1435181`;
+- access date: `2026-08-04`.
+
+Publicly stated implementation direction:
+
+- nine independent RC relaxation oscillators;
+- resistor-network coupling with planned programmable coupling control;
+- phase-relationship monitoring;
+- low oscillator frequencies around `50-150 Hz`;
+- consideration of zero-crossing and XOR/PLL-like phase detection because multiplexed ADC acquisition can distort phase estimates.
+
+Evidence classification:
+
+- hardware architecture and measurement problem: `source_recovered`;
+- completed hardware validation, full circuit, synchronized raw traces, calibrated uncertainty, or demonstrated astrophysical bridge: not recovered in this batch.
+
+Scientific consequence for the Lineum programme:
+
+- the oscillator lattice is a genuine nonlinear-dynamics and synchronization question distinct from the galactic fitting formula;
+- phase locking, perturbation recovery, and chimera-like behaviour may provide useful Q2 and Q3 comparators;
+- they cannot establish galactic gravity without a derivation and scale bridge.
+
+#### Source T4 — public saturation and scalar-minimum stress-test claim
+
+- title: `Tolog-Alpha vs. Duo Stress Test (Validation Complete)`;
+- author: Patrik Tolog;
+- source class: author-submitted public paper/abstract; not treated here as independent validation;
+- version and date displayed: `v1.0`, `2026-03-28`;
+- URL: `https://aixiv.science/abs/aixiv.260328.000003`;
+- access date: `2026-08-04`.
+
+The abstract publicly claims:
+
+- curvature saturation at `r -> 0` under extreme parameters;
+- finite energy-density maxima without divergent spikes;
+- scalar-field retention at a potential minimum during a dual-phase stress cycle;
+- no reported Cauchy-stability degradation;
+- a displayed integral expression involving `R_mu_nu` and a scalar Lagrangian.
+
+Evidence classification:
+
+- claim and displayed expression: `source_recovered`;
+- mathematically complete action, field equations, constraints, initial-value formulation, numerical method, Cauchy diagnostic, raw output, and independent reproduction: not recovered in this batch.
+
+Scientific consequence for the Lineum programme:
+
+- Q2 must distinguish explicit boundedness from a genuine attractor and must test cap removal, perturbation return, and basins;
+- Q3 must distinguish remaining at a minimum from retaining information about the path to that minimum;
+- a scalar field maintaining its minimum is not an information-preservation result without state distinguishability.
+
+### 10.3 First public mechanism decomposition
+
+The public TOLOG material currently separates into at least four layers.
+
+| Public layer | Recovered mechanism | Current evidence status | Relevance to Lineum |
+|---|---|---|---|
+| Oscillator/control lattice | coupled RC oscillators, phase monitoring, synchronization and recovery | public architecture; complete validation not recovered | Q2/Q3 comparator for local synchronization and perturbation recovery |
+| Galactic phenomenology | baryonic velocity plus an explicit fitted `tanh` saturation term | public equation and fitting description | Q1 positive-shape comparator and anti-cheat control, not a mechanism to transplant |
+| Cosmological phenomenology | redshift saturation `S(z)` and `w(z) = -lambda S(z)` | public proposal abstract | Q2/cosmology target inventory; requires full perturbation and CMB checks |
+| Stability/information language | curvature saturation, scalar minimum retention, invariant-node percentages | public claims; operational metrics incomplete | motivates Q2/Q3 discriminators but establishes no Lineum or physical result |
+
+### 10.4 Missing public bridge
+
+No public derivation was recovered in Batch U0.1 that starts from the declared oscillator-lattice dynamics and derives:
+
+- the galactic `tanh` velocity term;
+- the redshift-dependent cosmological equation of state;
+- curvature saturation in a relativistic metric;
+- physical information preservation.
+
+This is a bounded retrieval result. The bridge may exist in a source not yet found. Until recovered, the four layers must remain separate rather than being treated as one validated theory.
+
+### 10.5 Impact on the three Lineum questions
+
+| Programme question | Public TOLOG contribution | Lineum consequence |
+|---|---|---|
+| Q1 galactic response | supplies an explicit saturating fit formula and claimed SPARC/BTFR targets | do not copy the formula; test whether Lineum dynamics generate comparable scaling with a frozen observer and no per-galaxy unconstrained retuning |
+| Q2 saturation/attraction | supplies oscillator recovery, curvature-saturation, and scalar-minimum claims | separate active control, explicit saturation, numerical caps, local attractors, and genuine autonomous basins |
+| Q3 information retention | supplies invariant-node and scalar-minimum-retention language | replace slogans with paired-state distinguishability, channel access, source-off decay, phase/topology readouts, and `mu` ablation |
+
+### 10.6 Narrow conclusion of Batch U0.1
+
+The public TOLOG record is scientifically useful as a source of questions, comparators, and possible failure modes. It does not yet provide a publicly recovered derivation showing that one local `3 x 3` dynamics generates all three astrophysical, cosmological, and information claims.
+
+For Lineum, the strongest differentiating target is therefore not to reproduce the public `tanh` fit. It is to test whether one declared local Lineum dynamics can generate multiple relevant observables without inserting their final form.
+
+## 11. Immediate next step
+
+The next retained step has two read-only parts.
+
+1. Continue Batch U0 by seeking full public TOLOG PDFs, executable packages, raw outputs, videos, and any repository or immutable code release that can close or confirm the missing bridge.
+2. Begin the authoritative real-universe anchor inventory for Q1, starting with SPARC provenance, the radial acceleration relation, baryonic Tully-Fisher scaling, and the distinction between fitting one galaxy and predicting a population.
+
+No new simulation will begin until one exact Lineum observable, one real dataset, and its null controls are frozen in the relevant child report.
+
+## 12. Prohibited conclusions at version 0.2.0
+
+This report does not establish that:
 
 - Lineum already reproduces any astronomical or cosmological observation;
-- TOLOG publicly reported claims are correct;
+- public TOLOG claims are correct or independently validated;
+- the public oscillator lattice derives the public galactic or cosmological formulas;
+- the public `tanh` fit is physically unique;
 - similar terminology implies equivalent mathematics;
 - an internal Lineum field is gravity, spacetime, dark matter, dark energy, quantum information, or a Standard-Model field;
 - emergence inside a finite numerical grid demonstrates emergence in nature;
 - all phenomena of the real universe can or should arise from one current Lineum equation family.
 
-## 12. Execution log
+## 13. Execution log
 
 1. The project owner broadened the programme from answering three isolated questions to building an emergence-to-universe research path.
 2. The public-source boundary includes all independently retrievable TOLOG material and excludes the privately supplied attachment.
-3. This report froze the comparison meaning, evidence ladder, corpus rules, search batches, anti-cheat rules, and gate before the next simulation.
-4. No external retrieval result, new simulation, code change, or whitepaper promotion is contained in version `0.1.0`.
+3. Version `0.1.0` froze the comparison meaning, evidence ladder, corpus rules, search batches, anti-cheat rules, and gate before the next simulation.
+4. Batch U0.1 recovered four primary public TOLOG source classes: cosmology proposal, author technical uploads, oscillator-hardware discussion, and a saturation/scalar-minimum stress-test claim.
+5. The public galactic formula was identified as an explicitly saturating fitted comparator, not a recovered derivation from the oscillator lattice.
+6. No public source-code repository was recovered in the first batch; one direct GitHub search timed out, so repository availability remains unresolved.
+7. No new Lineum simulation, production-code change, or whitepaper promotion was performed in this batch.
