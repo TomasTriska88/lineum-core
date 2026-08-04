@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Galactic `tanh` Benchmark — B0/B1 Execution Receipt
 
 **Status:** active  
-**Version:** 0.1.0  
+**Version:** 0.1.1  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** first execution checkpoint for public-data provenance (B0) and analytic known-answer verification (B1), with no astronomical fitting  
 **Central question:** can the public SPARC archive be provenance-locked in the available runtime, and does a clean-room implementation of the public galactic `tanh` term satisfy the preregistered limiting, derivative, monotonicity, plateau, and scale checks?  
@@ -9,9 +9,13 @@
 
 ## 1. Report lineage and frozen boundary
 
-This is the execution child of `Lineum Public-TOLOG Galactic tanh Benchmark`, version `0.1.0`, evidence cutoff `2026-08-04`. The root programme contains three connected questions: galactic long-range response, natural bounded saturation/attraction, and information retention.
+This is the execution child of `Lineum Public-TOLOG Galactic tanh Benchmark`, version `0.1.0`, evidence cutoff `2026-08-04`. The root programme contains three connected questions:
 
-The parent preregistration was committed before this execution. This child preserves the execution receipt without rewriting the preregistered protocol after observing results.
+1. galactic long-range response;
+2. natural bounded saturation and genuine attraction;
+3. information retention during relaxation.
+
+The parent preregistration was committed before this execution. This child records the execution receipt without altering the frozen success, failure, or inconclusive conditions after observing results.
 
 This checkpoint changes no production code, no Lineum equation, and no whitepaper. It performs no galaxy fit and does not treat an explicit `tanh` term as Lineum emergence.
 
@@ -48,7 +52,7 @@ No TOLOG code was copied. The retained runner is an original standard-library im
 
 The runner has two isolated stages.
 
-### B0 — provenance path
+### 3.1 B0 — provenance path
 
 It attempts, in order:
 
@@ -66,9 +70,9 @@ For any retrieved archive it records:
 - target-file byte length and SHA-256;
 - header, row count, column count, finite-value checks, increasing radii, and positive velocity uncertainties.
 
-The strict preregistered B0 gate passes only for the official primary archive or a pre-downloaded local archive whose provenance can be independently established. A mirror-only download is labelled separately rather than silently promoted.
+The strict preregistered B0 gate passes only for the official primary archive or a pre-downloaded local archive whose provenance can be independently established. A mirror-only result remains separately labelled and cannot unlock B2.
 
-### B1 — analytic known-answer path
+### 3.2 B1 — analytic known-answer path
 
 The runner independently verifies:
 
@@ -90,8 +94,8 @@ Environment:
 - Python `3.13.5`;
 - platform `Linux-6.12.13-x86_64-with-glibc2.41`;
 - architecture `x86_64`;
-- runner SHA-256 `e0e487aaebd29652d03b1f3ef224003a3d4b5d28e9d509fe57cf30e65efe2317`;
-- output SHA-256 `ad689b7054613178dc7c8aaf5ef5852cc78efe08a0ab75eb15405e59d20677e2`.
+- final runner SHA-256 `da60ac5c24990f4b0b4a35c93f972a3ab32d9db8d179330eccf41ff09e9cdf1a`;
+- final output SHA-256 `c71cc6ee48e57cbe3460c2046083981d8f49b98c574b4a6a81e508dc19ab46ae`.
 
 Retained paths:
 
@@ -109,7 +113,7 @@ The available runtime had no usable outbound DNS resolution for ordinary Python 
 
 ## 5. Human-readable result
 
-### B0 verdict — blocked by runtime network
+### 5.1 B0 verdict — blocked by runtime network
 
 Both archive attempts failed with:
 
@@ -127,7 +131,7 @@ Consequences:
 
 This is an execution-environment limitation. It is not evidence that the SPARC archive is unavailable to the public, corrupt, or scientifically unsuitable.
 
-### B1 verdict — passed
+### 5.2 B1 verdict — passed
 
 All ten analytic gates passed.
 
@@ -142,7 +146,7 @@ Key values:
 - relative derivative error: approximately `5.33e-14`;
 - simultaneous rescaling `(k_eff=2, r_s=5)` to `(k_eff=4, r_s=10)` produced a maximum response difference of exactly `0.0` on the test grid.
 
-The last result means that the literal function identifies only the ratio `k_eff / r_s` when both quantities are treated as adjustable. They must not be counted as two independently identifiable shape parameters without an external convention fixing one of them.
+The final result means that the literal function identifies only the ratio `k_eff / r_s` when both quantities are treated as adjustable. They must not be counted as two independently identifiable shape parameters without an external convention fixing one of them.
 
 ## 6. Independent and adversarial controls
 
@@ -173,7 +177,22 @@ Expected behavior was observed:
 
 This demonstrates that the runner does not mark an arbitrary structurally valid ZIP as the official archive merely because the filename and table shape look correct.
 
-### 6.3 Independence boundary
+### 6.3 Archive-classification regression control
+
+Adversarial review of the first committed runner found a technical classification defect outside the observed network-blocked path. If official or local archive bytes had been retrieved but failed a provenance or structure gate, the first implementation would have labelled the result `archival_mirror_only` instead of `archive_validation_failed`.
+
+The correction introduced an explicit classifier with these independently exercised cases:
+
+| Source | Archive gates | Expected status | Expected B0 pass |
+|---|---:|---|---:|
+| official SPARC | pass | `passed` | true |
+| local pre-downloaded archive | pass | `passed` | true |
+| Zenodo mirror | pass | `archival_mirror_only` | false |
+| official or local archive | fail | `archive_validation_failed` | false |
+
+All four classification controls passed. The correction changed no formula, threshold, analytic result, or current B0/B1 verdict. The machine output was regenerated after the correction.
+
+### 6.4 Independence boundary
 
 The analytic checks share Python's standard-library `math` implementation with model evaluation, but the controls include closed-form limits, a separately evaluated derivative expression, a finite-difference comparison, and a parameter-rescaling identity. No astronomical observation or fit target was used to select thresholds after execution.
 
@@ -193,7 +212,7 @@ The analytic checks share Python's standard-library `math` implementation with m
       {
         "content_length_header": null,
         "content_type": null,
-        "elapsed_seconds": 0.021840810775756836,
+        "elapsed_seconds": 0.018793821334838867,
         "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
         "error_type": "URLError",
         "ok": false,
@@ -204,7 +223,7 @@ The analytic checks share Python's standard-library `math` implementation with m
       {
         "content_length_header": null,
         "content_type": null,
-        "elapsed_seconds": 5.006422996520996,
+        "elapsed_seconds": 5.006264686584473,
         "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
         "error_type": "URLError",
         "ok": false,
@@ -222,12 +241,9 @@ The analytic checks share Python's standard-library `math` implementation with m
     "center": {"V0": 173.0, "model_velocity": 80.0, "v_bar": 80.0},
     "derivative": {
       "analytic_central_slope": 11971.6,
-      "expression": "d(V0^2*tanh(k_eff*r/r_s))/dr = V0^2*(k_eff/r_s)*sech^2(k_eff*r/r_s)",
       "forward_difference_central_slope": 11971.599999999362,
       "relative_error": 5.3331658311720706e-14
     },
-    "dimensionless_argument_requirement": "k_eff * r / r_s must be dimensionless",
-    "formula": "v_model(r)^2 = v_bar(r)^2 + V0^2 * tanh(k_eff * r / r_s)",
     "gates": {
       "analytic_derivative_positive": true,
       "central_slope_matches_derivative": true,
@@ -264,12 +280,6 @@ The analytic checks share Python's standard-library `math` implementation with m
     "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
     "python": "3.13.5"
   },
-  "public_sources": {
-    "official_sparc": "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip",
-    "zenodo_archival_mirror": "https://zenodo.org/records/16284118/files/Rotmod_LTG.zip?download=1",
-    "zenodo_doi": "10.5281/zenodo.16284118",
-    "zenodo_published_md5": "e4c8b92766026770ed35e5889064e12b"
-  },
   "runner_scope": "B0 public-data provenance and B1 analytic known-answer audit only; no fit performed",
   "schema_version": "0.1.0",
   "verdict": "b1_passed_b0_blocked"
@@ -297,15 +307,14 @@ TARGET = "NGC3198_rotmod.dat"
 
 def get(url):
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Lineum-B0-B1-reproduction/0.1"})
-        with urllib.request.urlopen(req, timeout=10) as response:
+        request = urllib.request.Request(url, headers={"User-Agent": "Lineum-B0-B1-reproduction/0.1"})
+        with urllib.request.urlopen(request, timeout=10) as response:
             return response.read(), None
     except Exception as exc:
         return None, f"{type(exc).__name__}: {exc}"
 
 
 def inspect(payload):
-    names = None
     with zipfile.ZipFile(io.BytesIO(payload)) as archive:
         assert archive.testzip() is None
         names = archive.namelist()
@@ -346,9 +355,11 @@ rs = 5.0
 step = 1e-6
 analytic_slope = v0 * v0 * k / rs
 numeric_slope = v0 * v0 * math.tanh(k * step / rs) / step
-radii = [i * 0.05 for i in range(401)]
-first = [math.tanh(2.0 * r / 5.0) for r in radii]
-second = [math.tanh(4.0 * r / 10.0) for r in radii]
+grid = [index * 0.01 for index in range(2001)]
+values = [math.tanh(x) for x in grid]
+radii = [index * 0.05 for index in range(401)]
+first = [math.tanh(2.0 * radius / 5.0) for radius in radii]
+second = [math.tanh(4.0 * radius / 10.0) for radius in radii]
 
 gates = {
     "tanh_zero_exact": math.tanh(0.0) == 0.0,
@@ -356,7 +367,8 @@ gates = {
     "large_x_plateau": max(abs(1.0 - math.tanh(x)) for x in large) <= 5e-9,
     "half_saturation": abs(math.tanh(half_x) - 0.5) <= 1e-15,
     "finite_center": math.sqrt(vbar * vbar + v0 * v0 * math.tanh(0.0)) == vbar,
-    "positive_derivative": all(1.0 / math.cosh(i * 0.01) ** 2 > 0 for i in range(2001)),
+    "monotonic_nonnegative_domain": all(values[index + 1] >= values[index] for index in range(len(values) - 1)),
+    "positive_derivative": all(1.0 / math.cosh(x) ** 2 > 0 for x in grid),
     "plateau_v2": abs(v0 * v0 * math.tanh(20.0) - v0 * v0) <= 1e-12 * v0 * v0,
     "central_slope": abs(numeric_slope - analytic_slope) / analytic_slope <= 1e-12,
     "scale_degeneracy": max(abs(a - b) for a, b in zip(first, second)) <= 1e-15,
@@ -372,15 +384,15 @@ print(json.dumps({
 
 ## 9. Scientific interpretation
 
-### What is implemented
+### 9.1 What is implemented
 
 A clean-room evaluator and provenance inspector for the publicly displayed `tanh` form.
 
-### What was observed
+### 9.2 What was observed
 
 B1 passed every analytic gate. B0 could not obtain archive bytes because the runtime could not resolve either host.
 
-### What may be interpreted cautiously
+### 9.3 What may be interpreted cautiously
 
 The public `tanh` term inserts these properties by construction:
 
@@ -393,15 +405,23 @@ The public `tanh` term inserts these properties by construction:
 
 These are verified properties of the mathematical comparator, not yet results about galaxies or Lineum.
 
-### What remains hypothesis or analogy
+### 9.4 What remains hypothesis or analogy
 
 It remains hypothetical that Lineum foam relaxation, `phi`, `mu`, `psi` topology, a central vortex, or their shared dynamics can reproduce any of these properties emergently.
 
-### Connection to established real physics
+### 9.5 Connection to established real physics
 
 SPARC is a real observational database of galaxy rotation curves and baryonic mass models. This checkpoint did not yet compare the public formula with any official SPARC row because the official archive provenance gate remains open.
 
-## 10. Prohibited conclusions
+## 10. Root-programme impact
+
+| Root question | Impact | Narrow statement |
+|---|---|---|
+| Q1 galactic response | constrains | The comparator properties to be replaced are now analytically explicit, but no galaxy fit exists. |
+| Q2 natural saturation | constrains | The benchmark plateau is inserted by `tanh`; it is not evidence of a Lineum attractor. |
+| Q3 information retention | unaffected | No memory or history intervention was performed. |
+
+## 11. Prohibited conclusions
 
 This checkpoint does not establish that:
 
@@ -416,10 +436,15 @@ This checkpoint does not establish that:
 - dark matter is absent or unnecessary;
 - the explicit galactic `tanh` term belongs in the Lineum equation.
 
-## 11. Narrow decision and next gate
+## 12. Narrow decision and next gate
 
 Checkpoint verdict:
 
 `B1 passed; B0 blocked by runtime network; B2 is not allowed.`
 
 The next permissible action is not fitting or parameter tuning. It is to execute the exact retained runner in an environment that can retrieve the official SPARC ZIP, retain the archive and target hashes, and append the resulting B0 receipt. Only a committed `b0_b1_passed` result may unlock B2.
+
+## 13. Version history
+
+- `0.1.0`: initial B0/B1 execution receipt; B1 passed and B0 was network-blocked.
+- `0.1.1`: preserved the scientific verdict, corrected archive-result classification, regenerated the machine output, added direct classifier controls, and restored the explicit monotonicity check in the portable reproduction code.
