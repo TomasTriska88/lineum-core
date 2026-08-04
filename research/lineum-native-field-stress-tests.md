@@ -1,7 +1,7 @@
 # Lineum-Native Field Stress-Test Programme
 
 **Status:** active  
-**Version:** 0.2.1  
+**Version:** 0.2.2  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** a Lineum-only research programme testing three field-dynamics questions with current and historically relevant Lineum equation families  
 **Current confidence:** high in the programme structure; high that the default radial-drift lane is unsupported under the tested conditions; low on the replacement mechanism until historical and public-source retrieval plus discriminating controls are complete  
@@ -43,6 +43,20 @@ Current programme checkpoint after the first two radial lanes:
 - branch head before this report revision: `41d7e16342cd2d4170ccf807f7d4dd60ae1a3aa6`;
 - Lane A receipt commit: `30cdd87bce6f1596d62019eaebd979ab04292548`;
 - Lane B receipt commit: `50776c0772340ea7dbf359806dfba9ef165b46db`.
+
+### Project-owner scope lock — 2026-08-04
+
+The programme is restricted to the following three questions and their operational connection to measurements or established constraints from the real universe:
+
+1. emergent galactic long-range radial response;
+2. natural bounded saturation and genuine attraction;
+3. information retention during relaxation toward a common scalar minimum or coarse state.
+
+Dependency updates, runtime compatibility work, CI changes, visualization, and performance measurements are supporting infrastructure only. They may be performed when required to execute or verify one of the three questions, but they must not become an independent research programme or displace the next scientifically discriminating test.
+
+All retained scientific work remains in standalone reports under `research/`. Whitepapers remain unchanged until the three-question programme and its real-universe comparison chain are complete enough to support exact bounded canonical wording. A new equation is considered only after current and historical Lineum mechanisms have been tested adequately and the research evidence shows that the missing behaviour cannot be obtained without a declared extension.
+
+No dependency migration, green test, successful simulation, or attractive plot can by itself authorize a whitepaper change or a new equation.
 
 ## 2. Programme questions
 
@@ -218,7 +232,7 @@ No candidate in Batch 1 is promoted to a current Lineum mechanism or physical cl
 | Scalar minimum and information retention | programme-level scope frozen | not run | no independent check | unresolved |
 | Compute reduction | metrics frozen at programme level | no reference benchmark | not applicable yet | unresolved |
 
-## 9. Prohibited conclusions at version 0.2.1
+## 9. Prohibited conclusions at version 0.2.2
 
 This programme does not establish that:
 
@@ -229,7 +243,8 @@ This programme does not establish that:
 - any publicly reported TOLOG mechanism is correct or implemented by Lineum;
 - Lineum proves information conservation or information loss in nature;
 - any Lineum field is a real gravitational, quantum, cosmological, or Standard-Model field;
-- Lineum accelerates an external solver by any measured percentage.
+- Lineum accelerates an external solver by any measured percentage;
+- a dependency upgrade authorizes a new physical claim, whitepaper update, or equation.
 
 ## 10. Execution log
 
@@ -241,3 +256,4 @@ This programme does not establish that:
 6. A later ClickUp checkpoint attempt returned `RATE_LIMIT_EXCEEDED` with a reported wait of `531` minutes. No retry or polling was performed. The rule-governance checkpoint is therefore operationally unsynchronized while Git remains complete.
 7. Historical retrieval Batch 1 recovered Eq-11 intrinsic saturation and collective-relaxation candidates from the current canonical whitepaper. No new simulation was run and no replacement mechanism was selected.
 8. The project owner authorized use of any publicly accessible TOLOG material, not only repositories, as attributed inspiration or comparison evidence. The privately supplied attachment remains excluded. The public-source boundary was recorded before public retrieval began.
+9. The project owner locked the programme to the three universe-linked questions. Dependency work was classified as supporting infrastructure only, and whitepaper or equation work was deferred until the research chain is sufficiently complete.
