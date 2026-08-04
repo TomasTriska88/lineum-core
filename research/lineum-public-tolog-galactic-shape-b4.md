@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Galactic Shape Benchmark — B4
 
-**Status:** active; validated through the population census, source-structure discriminator preregistered  
-**Version:** 0.6.0  
+**Status:** active; validated through the population census, corrected source-structure discriminator preregistered  
+**Version:** 0.6.1  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** public-formula reconstruction, NGC 3198 source-convention audit, equal-flexibility shape ablation, early-Lineum threshold audit, complete 175-galaxy SPARC population census, and a preregistered source-structure comparison of the strongest shape discriminators; no Lineum-native derivation  
 **NGC 3198 classification:** `tanh_shape_preferred`  
@@ -39,7 +39,7 @@ No private TOLOG document, code, data, or convention was used.
 
 B0/B1 validated the public formula and official SPARC archive. B2 reconstructed the literal public comparator on NGC 3198 with tabulated stellar `M/L=1`. B3 audited the baryonic source convention and found that standard fiducial SPARC stellar weighting changes the fit dramatically. B4 then froze and executed an equal-flexibility shape ablation before extending the same family to all 175 official SPARC rotation curves.
 
-Earlier Git versions of this same report preserve the preregistrations and chronological capture. Version 0.6.0 preserves the completed B2–B4 verdicts and freezes a source-only radial discriminator before inspecting the selected features.
+Earlier Git versions of this same report preserve the preregistrations and chronological capture. Version 0.6.1 preserves the completed B2–B4 verdicts, corrects the two surface-brightness column names before feature execution, and freezes the revised source-only radial discriminator.
 
 ## Inputs and provenance
 
@@ -49,10 +49,12 @@ Official SPARC rotation-model archive:
 - archive name: `Rotmod_LTG.zip`;
 - archive SHA-256: `0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588`;
 - `_rotmod.dat` members: `175`;
-- columns used: radius, observed velocity, velocity uncertainty, gas velocity, disk velocity, bulge velocity, surface brightness, and gas surface density;
+- columns used: radius, observed velocity, velocity uncertainty, gas velocity, disk velocity, bulge velocity, disk surface brightness, and bulge surface brightness;
 - row counts: `4` to `115` per galaxy;
 - every file passed the eight-numeric-column check;
 - every quoted velocity uncertainty was strictly positive.
+
+Version 0.6.0 incorrectly described the eighth column as a gas surface-density column. Direct header inspection established that columns seven and eight are `SBdisk` and `SBbul`, both in luminosity per square parsec. This was corrected before executing the source-structure discriminator. The B2–B4 fit results are unaffected because those calculations used only radius, observed velocity, velocity uncertainty, and the three velocity contributions in columns one through six.
 
 NGC 3198 member:
 
@@ -60,7 +62,7 @@ NGC 3198 member:
 - rows: `43`;
 - SHA-256: `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`.
 
-The SPARC table convention already includes helium in the gas contribution. Disk and bulge velocity columns correspond to stellar `M/L=1`; the fiducial analysis rescales their squared contributions by `0.5` and `0.7`, respectively.
+The SPARC table convention already includes helium in the gas contribution. Disk and bulge velocity columns correspond to stellar `M/L=1`; the fiducial analysis rescales their squared contributions by `0.5` and `0.7`, respectively. The same fiducial coefficients are used only as transparent luminosity weights when a combined stellar surface-brightness proxy is required below.
 
 ## Common model family
 
@@ -345,16 +347,16 @@ No galaxy may be added, removed, or relabeled after feature inspection.
 
 ### Frozen source-only features
 
-All radii are divided by each galaxy's maximum measured radius. Surface-density cumulative quantities use trapezoidal integration of `2 pi r Sigma(r)` over the tabulated radial samples and endpoint interpolation. Non-positive density values contribute zero.
+All radii are divided by each galaxy's maximum measured radius. Cumulative light proxies use trapezoidal integration of `2 pi r Sigma(r)` over the tabulated radial samples and endpoint interpolation. Non-positive surface-brightness values contribute zero. The combined fiducial stellar proxy is `0.5 SBdisk + 0.7 SBbul`; no gas surface-density profile is claimed or reconstructed from the archive.
 
 Primary features:
 
-1. stellar half-light radius divided by measured maximum radius;
-2. stellar 80-percent-light radius divided by measured maximum radius;
-3. gas half-mass proxy radius divided by measured maximum radius;
-4. gas 80-percent-mass proxy radius divided by measured maximum radius;
-5. fraction of stellar light proxy inside the inner quarter of the measured radius;
-6. fraction of gas mass proxy inside the inner quarter;
+1. combined fiducial stellar half-light proxy radius divided by measured maximum radius;
+2. combined fiducial stellar 80-percent-light proxy radius divided by measured maximum radius;
+3. disk half-light radius divided by measured maximum radius;
+4. disk 80-percent-light radius divided by measured maximum radius;
+5. fraction of combined fiducial stellar light proxy inside the inner quarter of the measured radius;
+6. fraction of disk light inside the inner quarter;
 7. radius of maximum disk velocity contribution divided by maximum radius;
 8. radius of maximum absolute gas velocity contribution divided by maximum radius;
 9. median fiducial bulge fraction of baryonic squared velocity inside the inner quarter;
@@ -483,7 +485,7 @@ Distinct repair classes:
 4. **Measurement-model repair:** incorporate published SPARC quality metadata, distance/inclination uncertainties, stellar `M/L` uncertainty, and radial covariance before interpreting shape differences physically.
 5. **Emergent-mechanism repair:** test bistable fronts, threshold ensembles, bounded feedback, wake/vortex projections, and other Lineum-native dynamics only after the observational target family is defined without embedding `tanh` directly.
 
-The cheapest next discriminator is the frozen source-structure comparison above. Blind tuning of an emergent Lineum mechanism remains prohibited until this observational discriminator is executed and recorded.
+The cheapest next discriminator is the corrected frozen source-structure comparison above. Blind tuning of an emergent Lineum mechanism remains prohibited until this observational discriminator is executed and recorded.
 
 ## Root-programme impact
 
@@ -590,3 +592,4 @@ This report does not establish:
 - `0.4.0`: preregistered the complete 175-galaxy SPARC population census before fitting.
 - `0.5.0`: completed and independently checked the census; `mixed_population_evidence`; exact universal `tanh` unsupported while `tanh` remains the leading tested descriptive shape.
 - `0.6.0`: recorded the owner's one-mechanism-with-weak-or-absent-term intuition and preregistered the source-only radial discriminator before feature inspection.
+- `0.6.1`: corrected `SBdisk`/`SBbul` column provenance and replaced invalid gas-density features before executing the source-structure discriminator; prior fit results unchanged.
