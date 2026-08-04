@@ -73,7 +73,7 @@ def fit_lane(name,a,r,o,e):
   "vbar":np.sqrt(b),"curve":y,"all_curves":curves}
 
 def main():
- q=argparse.ArgumentParser(); q.add_argument('--data',type=Path,required=True); q.add_argument('--output',type=Path,required=True); q.add_argument('--rows-output',type=Path,required=True); a=q.parse_args()
+ q=argparse.ArgumentParser(); q.add_argument('--data',type=Path,required=True); q.add_argument('--output',type=Path,required=True); q.add_argument('--rows-output',type=Path,required=True); q.add_argument('--curves-output',type=Path,required=True); a=q.parse_args()
  d,h,payload=load(a.data); r,o,e=d[:,0],d[:,1],d[:,2]
  result={n:fit_lane(n,d,r,o,e) for n in LANES}
  neg=np.flatnonzero(d[:,3]<0); zero=np.flatnonzero(d[:,3]==0); assert len(neg)==6 and len(zero)==3
@@ -107,7 +107,9 @@ def main():
  for n,x in result.items():
   clean[n]={k:v for k,v in x.items() if k not in ('vbar','curve','all_curves')}
  summary={n:{"V0":x['best']['V0'],"k_eff":x['best']['k_eff'],"chi2":x['best']['metrics']['chi2'],"reduced_chi2":x['best']['metrics']['reduced_chi2'],"max_curve_difference":x['multistart']['max_curve_difference'],"curves_equivalent":x['multistart']['curves_equivalent']} for n,x in result.items()}
- full={"schema":"0.1.0","scope":"B3 NGC 3198 baryonic-convention sensitivity","input":{"sha256":sha(payload),"N":43,"negative_gas_rows":neg.tolist(),"zero_gas_rows":zero.tolist()},"lanes":clean,"effects":effects,"checks":checks,"best_authoritative_lane":best,"maximum_fractional_improvement":improve,"public_target":TARGET,"public_window":WINDOW,"classification":classification,"packed_curves":{"shape":list(arrays.shape),"lane_order":list(LANES),"encoding":"lzma+base64 little-endian float64 C-order","raw_sha256":sha(raw),"data":base64.b64encode(lzma.compress(raw,preset=9)).decode()},"rows_csv_sha256":sha(a.rows_output.read_bytes()),"environment":{"python":sys.version.split()[0],"numpy":np.__version__,"scipy":scipy.__version__,"platform":platform.platform(),"requirement_mismatch":"repository requires numpy<2; runtime supplied NumPy 2.3.5"},"anti_cheat":{"private_tolog_document_used":False,"tolog_code_copied":False,"post_hoc_tuning":False,"lineum_modified":False}}
+ curves_wrapper={"schema":"packed-fitted-curves/1","shape":list(arrays.shape),"lane_order":list(LANES),"encoding":"lzma+base64 little-endian float64 C-order","raw_sha256":sha(raw),"payload":base64.b64encode(lzma.compress(raw,preset=9)).decode()}
+ a.curves_output.write_text(json.dumps(curves_wrapper,separators=(',',':'),sort_keys=True)+'\n')
+ full={"schema":"0.1.0","scope":"B3 NGC 3198 baryonic-convention sensitivity","input":{"sha256":sha(payload),"N":43,"negative_gas_rows":neg.tolist(),"zero_gas_rows":zero.tolist()},"lanes":clean,"effects":effects,"checks":checks,"best_authoritative_lane":best,"maximum_fractional_improvement":improve,"public_target":TARGET,"public_window":WINDOW,"classification":classification,"curves_file":{"name":a.curves_output.name,"sha256":sha(a.curves_output.read_bytes()),"raw_sha256":sha(raw),"shape":list(arrays.shape)},"rows_csv_sha256":sha(a.rows_output.read_bytes()),"environment":{"python":sys.version.split()[0],"numpy":np.__version__,"scipy":scipy.__version__,"platform":platform.platform(),"requirement_mismatch":"repository requires numpy<2; runtime supplied NumPy 2.3.5"},"anti_cheat":{"private_tolog_document_used":False,"tolog_code_copied":False,"post_hoc_tuning":False,"lineum_modified":False}}
  rawjson=json.dumps(full,separators=(',',':'),sort_keys=True).encode(); wrapper={"schema":"compressed-research-receipt/1","summary":summary,"classification":classification,"uncompressed_sha256":sha(rawjson),"encoding":"lzma+base64 UTF-8 JSON","payload":base64.b64encode(lzma.compress(rawjson,preset=9)).decode()}
  a.output.write_text(json.dumps(wrapper,separators=(',',':'),sort_keys=True)+'\n'); print(json.dumps(wrapper,separators=(',',':'),sort_keys=True))
 if __name__=='__main__':main()
