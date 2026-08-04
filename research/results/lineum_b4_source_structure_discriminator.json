@@ -25,7 +25,7 @@
     "strong_tanh": ["UGC05253", "NGC5055", "UGC09133", "NGC2903", "NGC5033", "NGC3198"]
   },
   "independent_check": {"concentration_ordering_passed": true, "max_auc_difference": 0.0, "max_feature_difference": 4.440892098500626e-16, "max_p_difference": 0.0, "passed": true, "uniform_disk_half_radius_abs_error": 6.740562874529843e-08},
-  "limitations": ["Outcome-defined extremes are not a held-out population predictor.", "The separator is not causal evidence for Lineum or TOLOG.", "Median fractional velocity uncertainty also separates the selected groups (AUC 0.8214, p 0.02564).", "No dark-matter replacement, modified gravity, or emergent tanh is established."],
+  "limitations": ["Outcome-defined extremes are not a held-out population predictor.", "The separator is not causal evidence for Lineum or TOLOG.", "Median fractional velocity uncertainty also separates the selected groups (AUC 0.8214, p 0.02564).", "The source discriminator used selected profiles retrieved from a public SPARC mirror because the official ZIP could not be redownloaded in the execution environment; NGC3198 matched the known official SHA-256 exactly, while byte-level equivalence of the other 19 files remains to be checked.", "No dark-matter replacement, modified gravity, or emergent tanh is established."],
   "method": {
     "cumulative_rule": "trapezoidal 2*pi*r*Sigma over measured samples; linear interpolation of cumulative endpoint values",
     "exact_assignments": 38760,
@@ -59,7 +59,15 @@
     "UGC11914": 0.3827974845493204
   },
   "post_hoc_robustness": {"leave_one_out_max_p": 0.010319917440660475, "leave_one_out_min_auc": 0.8857142857142857, "measured_span_auc": 0.8571428571428572, "measured_span_p": 0.011713106295149638},
-  "schema": "lineum-b4-source-structure-discriminator-summary/2",
+  "provenance": {
+    "population_census_input": "verified official SPARC Rotmod_LTG.zip",
+    "population_census_archive_sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "source_discriminator_input": "20 selected profiles retrieved from public mirror carsondowns-cte/Rotmod_LTG",
+    "ngc3198_mirror_sha256": "17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953",
+    "ngc3198_official_sha256_match": true,
+    "other_19_official_byte_equivalence": "not_yet_checked"
+  },
+  "schema": "lineum-b4-source-structure-discriminator-summary/3",
   "strong_source_separators": ["disk_half_light_r_over_rmax"],
   "winning_feature": "disk_half_light_r_over_rmax",
   "winning_feature_summary": {
