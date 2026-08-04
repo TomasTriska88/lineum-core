@@ -1,0 +1,163 @@
+{
+  "aggregate": {
+    "all_count": 175,
+    "classification": "mixed_population_evidence",
+    "joint": {
+      "informative_both_count": 102,
+      "same_tanh_label_count": 102,
+      "same_tanh_label_fraction": 1.0,
+      "same_winner_count": 102
+    },
+    "lanes": {
+      "signed_fiducial": {
+        "informative_count": 102,
+        "median_delta_aic_tanh": 0.0,
+        "shape_identified_count": 32,
+        "tanh_best_count": 68,
+        "tanh_compatible_count": 82,
+        "tanh_compatible_fraction": 0.803921568627451,
+        "tanh_strongly_rejected_count": 14,
+        "tanh_strongly_rejected_fraction": 0.13725490196078433,
+        "winner_counts": {
+          "algebraic": 10,
+          "arctan": 5,
+          "exponential": 3,
+          "rational": 16,
+          "tanh": 68
+        }
+      },
+      "unsigned_fiducial": {
+        "informative_count": 102,
+        "median_delta_aic_tanh": 0.0,
+        "shape_identified_count": 32,
+        "tanh_best_count": 68,
+        "tanh_compatible_count": 82,
+        "tanh_compatible_fraction": 0.803921568627451,
+        "tanh_strongly_rejected_count": 14,
+        "tanh_strongly_rejected_fraction": 0.13725490196078433,
+        "winner_counts": {
+          "algebraic": 10,
+          "arctan": 5,
+          "exponential": 3,
+          "rational": 16,
+          "tanh": 68
+        }
+      }
+    },
+    "n_ge_10": 124
+  },
+  "anti_cheat": {
+    "galaxy_selection_by_fit": false,
+    "lineum_engine_modified": false,
+    "post_hoc_shape_tuning": false,
+    "private_tolog_document_used": false
+  },
+  "artifacts": {
+    "archive_sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "batch_runner_sha256": "da4eb89a6501746460e628d1cc0413606fe131bb9dcbedf0ff440de3d86f2667",
+    "finalizer_sha256": "128a23d1bdf24810fb876b7d6ba3ebba5852d7f5e0a13dee209e20f0e09333c7",
+    "full_receipt_sha256": "c12b04eaf13b2d66c5f6eee799cde1d5c3978546aea3faa1c053b02ba2bbcf19",
+    "runner_sha256": "34f2c9e6705ab00aa179f45cee0d0ca04b4da94cbc1858c17cfd4751bcb1b01f",
+    "table_sha256": "c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d"
+  },
+  "checks": {
+    "all_files_eight_columns": true,
+    "all_input_uncertainties_positive": true,
+    "max_scalar_chi2_difference": 1.2846612662542611e-11,
+    "max_scalar_curve_difference_kms": 2.6481039583359234e-12,
+    "ngc3198": {
+      "signed_fiducial": {
+        "algebraic": 41.95303822285637,
+        "arctan": 62.21991441622936,
+        "exponential": 51.12483751443346,
+        "rational": 101.01649356854995,
+        "tanh": 28.069707094507308
+      },
+      "unsigned_fiducial": {
+        "algebraic": 41.952058405047765,
+        "arctan": 62.226442557301866,
+        "exponential": 51.135224080942166,
+        "rational": 101.04228493864738,
+        "tanh": 28.06182216819782
+      }
+    },
+    "ngc3198_pass": true
+  },
+  "classification": "mixed_population_evidence",
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "requirement_mismatch": "repository requires numpy<2; runtime supplied 2.3.5",
+    "scipy": "1.17.0"
+  },
+  "fit_diagnostics": {
+    "all_16_starts_converged": true,
+    "boundary_contact_count": 432,
+    "fallback_count": 171,
+    "max_curve_difference_kms": 55.91225144676534,
+    "max_fallback_objective_difference": 8.698179954080842e-09,
+    "stable_multistart_count": 1579,
+    "total_shape_lane_fits": 1750
+  },
+  "independent_audit": {
+    "max_chi2_difference": 3.7041445466456935e-09,
+    "selected_names": [
+      "D631-7",
+      "NGC4013",
+      "F563-V1",
+      "NGC6195",
+      "NGC1705",
+      "UGC10310",
+      "UGC05829",
+      "NGC4068",
+      "NGC5907",
+      "UGC06917",
+      "UGC08490",
+      "KK98-251",
+      "ESO116-G012",
+      "UGC03580",
+      "NGC3198",
+      "UGC07866",
+      "F563-V2",
+      "NGC4085",
+      "F568-V1",
+      "NGC4088"
+    ]
+  },
+  "primary_unsigned": {
+    "identified_winner_counts": {
+      "algebraic": 2,
+      "arctan": 3,
+      "exponential": 1,
+      "rational": 8,
+      "tanh": 18
+    },
+    "shape_identified_count": 32,
+    "strong_tanh_rejections": [
+      {"best_shape":"arctan","delta_aic_second":30.033039302478755,"delta_aic_tanh":121.82132151177507,"galaxy":"UGC06787","n_rows":71},
+      {"best_shape":"rational","delta_aic_second":21.278708375842285,"delta_aic_tanh":88.12342682069277,"galaxy":"UGC11914","n_rows":65},
+      {"best_shape":"arctan","delta_aic_second":25.807858703259853,"delta_aic_tanh":72.70567367511228,"galaxy":"NGC6015","n_rows":44},
+      {"best_shape":"algebraic","delta_aic_second":7.438568941219842,"delta_aic_tanh":54.75309671300647,"galaxy":"NGC2403","n_rows":73},
+      {"best_shape":"rational","delta_aic_second":9.25405228534548,"delta_aic_tanh":32.89044533992151,"galaxy":"NGC1003","n_rows":36},
+      {"best_shape":"arctan","delta_aic_second":2.36794380699142,"delta_aic_tanh":31.447916920301708,"galaxy":"UGC03205","n_rows":48},
+      {"best_shape":"algebraic","delta_aic_second":30.72087476737522,"delta_aic_tanh":30.72087476737522,"galaxy":"UGC02953","n_rows":115},
+      {"best_shape":"rational","delta_aic_second":5.072146816351008,"delta_aic_tanh":23.532206637453235,"galaxy":"UGC08699","n_rows":41},
+      {"best_shape":"rational","delta_aic_second":5.324201658204018,"delta_aic_tanh":20.762166200801758,"galaxy":"NGC0801","n_rows":13},
+      {"best_shape":"rational","delta_aic_second":5.341650460058979,"delta_aic_tanh":16.96778439485815,"galaxy":"NGC2998","n_rows":13},
+      {"best_shape":"exponential","delta_aic_second":3.3507840027294478,"delta_aic_tanh":16.392137772932763,"galaxy":"UGC06786","n_rows":45},
+      {"best_shape":"rational","delta_aic_second":1.4764238121167494,"delta_aic_tanh":13.69271889495704,"galaxy":"NGC5907","n_rows":19},
+      {"best_shape":"rational","delta_aic_second":6.049414090240283,"delta_aic_tanh":13.269319034672918,"galaxy":"UGC02885","n_rows":19},
+      {"best_shape":"exponential","delta_aic_second":1.9530682285331622,"delta_aic_tanh":11.772702381020004,"galaxy":"UGC00128","n_rows":22}
+    ],
+    "strong_tanh_wins": [
+      {"delta_aic_to_second":71.0901037564125,"galaxy":"UGC05253","n_rows":73},
+      {"delta_aic_to_second":39.43463027292205,"galaxy":"NGC5055","n_rows":28},
+      {"delta_aic_to_second":22.093804377431866,"galaxy":"UGC09133","n_rows":68},
+      {"delta_aic_to_second":18.55464180448479,"galaxy":"NGC2903","n_rows":34},
+      {"delta_aic_to_second":17.763913500501246,"galaxy":"NGC5033","n_rows":22},
+      {"delta_aic_to_second":13.890236236849944,"galaxy":"NGC3198","n_rows":43}
+    ]
+  },
+  "schema": "lineum-b4-sparc-population-summary/1"
+}
