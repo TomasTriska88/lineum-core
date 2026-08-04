@@ -2,7 +2,7 @@
 import argparse, json, sys, zipfile
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-sys.path.insert(0,'/mnt/data')
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lineum_b4_sparc_population_shape_census as core
 
 def main():
