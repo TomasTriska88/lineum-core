@@ -1,11 +1,12 @@
 # Lineum Public-TOLOG Galactic Shape Benchmark — B4 Execution
 
-**Status:** active extension; validated B4 core retained  
-**Version:** 0.2.0  
+**Status:** validated B4 core; validated plotted-threshold audit with underlying-run provenance limitation  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-08-04  
-**Scope:** validated equal-flexibility radial-shape ablation on NGC 3198 plus an active scale-and-threshold audit of early Lineum/RNB visualizations; no population fit or Lineum-native mechanism  
+**Scope:** validated equal-flexibility radial-shape ablation on NGC 3198 plus a completed scale-and-threshold audit of early Lineum/RNB visualizations; no population fit or Lineum-native mechanism  
 **Frozen B4 classification:** `tanh_shape_preferred`  
-**Confidence:** high for comparative description of one galaxy under the two fiducial SPARC source lanes; exploratory only for the newly opened early-Lineum threshold audit
+**Threshold-audit classification:** `quantized_linear_rendering_supported`; original simulation mechanism remains `provenance_blocked`  
+**Confidence:** high for comparative description of one galaxy and for exact reconstruction of the plotted early-Lineum series; low for claims about the unrecovered raw early simulation
 
 ## Plain result
 
@@ -16,6 +17,8 @@ Under the unsigned fiducial SPARC convention, `tanh` gave chi-squared `28.061822
 The frozen strong-preference rule passed because `tanh` was best in both fiducial lanes, every alternative had delta AIC above `10`, `tanh` chi-squared was below `0.8` of the next best, and all required numerical checks passed.
 
 Two limits matter. First, the best `tanh` and algebraic velocity curves differ by at most about `1.66 km/s`, never more than an individual row's stated uncertainty. Many small coherent differences create the statistical preference. Second, with historical tabulated stellar `M/L=1`, the algebraic shape is only delta AIC about `1.68` behind `tanh`. The preference is stable to gas-sign handling but depends on the fiducial stellar calibration established in B3.
+
+The later early-Lineum visualization audit did not identify a hidden arithmetic route to this `tanh`. The historical RNB/DejaVu plots are exactly reconstructed by an equal-block quantized linear staircase. Their high raw correlations with Riemann zeros arise from normalized monotone density trends, while the plotted transition edges themselves are exactly equally spaced.
 
 ## Lineage and frozen protocol
 
@@ -75,15 +78,15 @@ Environment was Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, Linux x86-64. Re
 
 ## Scientific separation
 
-**Implementation:** five explicit normalized two-parameter saturation functions and three structural controls were fitted to four declared baryonic lanes.
+**Implementation:** five explicit normalized two-parameter saturation functions and three structural controls were fitted to four declared baryonic lanes. The later threshold audit generated standard number sequences, reconstructed the plotted staircase, and compared rendered values, transition positions, and gaps separately.
 
-**Reproduced observation:** under both fiducial lanes, `tanh` passes the frozen strong-preference threshold; transition and saturation are required within this family.
+**Reproduced observation:** under both fiducial lanes, `tanh` passes the frozen strong-preference threshold; transition and saturation are required within this family. Separately, the historical 49- and 15-point RNB plots are exactly reproduced by equal-block quantized linear staircases.
 
-**Interpretation:** NGC 3198 prefers `tanh`-like transition curvature over the four tested generic alternatives. The preference is many small coherent differences, not dramatic curve separation.
+**Interpretation:** NGC 3198 prefers `tanh`-like transition curvature over the four tested generic alternatives. The early RNB visualization does not explain that curvature; its displayed threshold positions support a linear quantization/rendering explanation.
 
-**Hypothesis:** Lineum might generate `tanh`, approximate it through a composite/nonlocal process, or reveal that this preference is galaxy-specific.
+**Hypothesis:** Lineum might generate `tanh`, approximate it through a composite/nonlocal process, or reveal that this preference is galaxy-specific. No tested prime, Fibonacci, golden-ratio, or Riemann scale supplies that mechanism here.
 
-**Known physics:** one phenomenological galaxy fit does not identify gravity, dark matter, modified gravity, an oscillator-grid derivation, a vortex, foam, topology, attractor, memory, or a relativistic theory.
+**Known physics:** one phenomenological galaxy fit does not identify gravity, dark matter, modified gravity, an oscillator-grid derivation, a vortex, foam, topology, attractor, memory, or a relativistic theory. Number-sequence similarity is not a physical coupling.
 
 ## Negative-result mechanism map
 
@@ -97,13 +100,15 @@ Open explanation classes are:
 4. a one-galaxy/calibration preference that weakens across a diverse panel;
 5. an untested equal-flexibility family that matches the transition better.
 
-The cheapest broad discriminator is a preregistered small panel of structurally diverse SPARC galaxies using the unchanged B4 family and source policy. The owner intuition gate is opened before selecting a replacement mechanism or launching that lane.
+The cheapest broad discriminator remains a preregistered small panel of structurally diverse SPARC galaxies using the unchanged B4 family and source policy. The early arithmetic-threshold route is not promoted because its plotted evidence resolves into equal-spacing quantization and its raw simulation provenance is unavailable.
 
 ## Root impact and prohibited conclusions
 
 B4 supports a tightly specified descriptive galactic response and constrains Q2: generic saturation alone is insufficient on this target, while transition and finite saturation remain necessary. Foam loading and a central vortex remain untested. No Lineum code or whitepaper was changed.
 
 B4 does **not** establish TOLOG's private convention, a derivation of `tanh`, physical uniqueness, a Lineum mechanism, a vortex or black-hole cause, the absence of dark matter, modified gravity, or generalization beyond NGC 3198.
+
+The threshold extension does **not** establish a Lineum relationship with Riemann zeros, prime numbers, Fibonacci numbers, the golden ratio, Beatty sequences, or a hidden arithmetic spectrum. It does not prove that the original Lineum simulation itself was linear; it classifies the supplied plotted representation while the named raw CSV and runner remain unrecovered.
 
 ## Reproduction and retained evidence
 
@@ -125,87 +130,162 @@ Portable input is embedded below as XZ-compressed base64. Decode base64, then XZ
 
 Minimal reproduction uses the five functions and solver settings stated above, all 16 starts, and ranks the minimum chi-squared in each fiducial lane. Expected first two values are `tanh 28.061822168198`, algebraic `41.952058405048` unsigned; `tanh 28.069707094507`, algebraic `41.953038222856` signed.
 
-## Active extension: early-Lineum threshold and scale audit (preregistered before calculation)
+## Early-Lineum threshold and scale audit
 
 ### Owner idea and motivation
 
 The project owner supplied seven early research plots comparing Lineum “DejaVu” points, later named Resonant Return Points (RNBs), with normalized Riemann zeta zeros. The owner proposed that the visible staircase may not be the physical curve: the decision-relevant objects may instead be the left edges or transition locations. The owner also asked for a critical, out-of-the-box comparison with the golden ratio, Fibonacci numbers, primes, prime gaps, Riemann-zero spacing, and scale changes, noting that an apparently linear pattern can be a local view of a nonlinear relation.
 
-This extension does not reopen the previously closed claim that Lineum is resonant with Riemann zeros. The repository's current zeta-resonance record classifies the tested formulations as `CLOSED_NEGATIVE`: the apparent zeta match was a density/look-elsewhere artifact and did not beat random controls. The narrower live question is whether early Lineum thresholds or dwell structure contain a reproducible generic scale law that could inform a composite route to `tanh`-like saturation.
+This extension does not reopen the previously closed claim that Lineum is resonant with Riemann zeros. The repository's current zeta-resonance record classifies the tested formulations as `CLOSED_NEGATIVE`: the apparent zeta match was a density/look-elsewhere artifact and did not beat random controls. The narrower question was whether early Lineum thresholds or dwell structure contain a reproducible generic scale law that could inform a composite route to `tanh`-like saturation.
 
-### Retrieved provenance before calculation
+### Retrieved provenance
 
 - The visible 49-point plot reports Pearson correlation `0.9842` and Euclidean distance `0.7254` after normalization.
 - The historical hypothesis names the run `spec7_true`, code `lineum_no_artefacts.py`, and data file `output_no_artefacts/spec7_true_rnb_vs_zeta.csv`.
 - Current `develop` contains the hypothesis text and quarantined UI, but connector search did not locate the named raw CSV or runner. The absence of a current repository file is not evidence about the original local run.
 - The quarantined UI explicitly states that Riemann-zero matching was found to be a density artifact that did not survive random controls.
-- The supplied images are therefore treated as secondary visual evidence, not raw measurements. Any digitized values must be labeled approximate unless the plotted levels and indices are visually exact.
+- The supplied images were treated as secondary visual evidence. The plotted values became decision-safe only where an exact formula reproduced both the visible levels and the published metrics.
 
-### Frozen representations
+### Frozen representations and candidates
 
-The analysis must not treat one plot rendering as one physical observable. It will keep these representations separate:
+The preregistered analysis kept drawn values, transition indices, transition levels, dwell lengths, jump heights, and cumulative event count separate. It compared equal spacing, `tanh`, logistic, logarithmic, square-root and power axes, raw and unfolded Riemann zeros, raw and unfolded primes, prime gaps, Fibonacci numbers, `phi^n`, Beatty sequences for `phi` and `phi^2`, and random monotone or shuffled controls. Pearson correlation was secondary; primary emphasis was error, exact spacing, detrending/unfolding, and random controls.
 
-1. `drawn_series`: every displayed normalized value at every displayed index;
-2. `transition_indices`: left-edge indices where the displayed level changes;
-3. `transition_levels`: the levels reached at those edges;
-4. `dwell_lengths`: horizontal plateau lengths between transitions;
-5. `jump_heights`: successive changes in normalized level;
-6. `cumulative_event_count`: number of completed transitions as a function of index.
+### Exact reconstruction of both historical plots
 
-If the 49-point plot is exactly the visually implied seven equal blocks, the frozen image reconstruction is indices `0..48` with values `floor(index/7)/6`, transition indices `[0,7,14,21,28,35,42]`, equal dwell lengths `7`, and equal jump heights `1/6`. This exact reconstruction must be verified against pixels and treated as an image-derived hypothesis, not recovered simulation data.
+The 49-point yellow series is exactly reconstructed as:
 
-### Frozen candidate families
+`y_i = floor(i/7) / 6`, for `i=0,...,48`.
 
-All declared candidates will be reported, not only the visually attractive ones:
+This gives seven repeated values at each level `0, 1/6, 2/6, ..., 1`. Comparing it with endpoint-normalized first 49 Riemann-zero ordinates gives:
 
-- equal spacing / linear cumulative baseline;
-- fitted `tanh` and logistic cumulative curves;
-- logarithmic, square-root, and one fitted power-law axis warp;
-- normalized prime sequence `p_n` and cumulative prime locations;
-- prime gaps and shuffled-gap controls;
-- normalized Riemann-zero ordinates;
-- raw Riemann-zero gaps and mean-density-unfolded spacings using the standard zero-counting trend;
-- normalized Fibonacci numbers;
-- golden-ratio geometric progression `phi^n`;
-- Beatty thresholds `floor(n phi)` and `floor(n phi^2)`;
-- random monotone order-statistic controls;
-- equal-dwell and shuffled-dwell controls.
+- Pearson `0.9842156096489157`;
+- Euclidean distance `0.7254094546265594`.
 
-Fibonacci and `phi^n` are mathematically near-equivalent at moderate index and must not be counted as independent confirmations. Raw Riemann-zero and prime locations carry strong deterministic density trends; any apparent fit that disappears after unfolding or detrending is classified as a density artifact.
+These reproduce the displayed `0.9842` and `0.7254` to the shown precision.
 
-### Frozen transformations and anti-overfitting rules
+The 15-point plot is independently reconstructed as:
 
-Each candidate is first compared on its native declared axis. A fixed transformation panel then tests `x`, `log(1+x)`, `sqrt(x)`, and a fitted monotone power `x^a`. The power exponent is counted as a fitted parameter. No arbitrary crop, hand-selected offset, nonlinear rescaling, reversed order, or post-result transform may be introduced.
+`y_i = floor(i/7) / 2`, for `i=0,...,14`.
 
-Pearson correlation is never sufficient because any two normalized monotone cumulative sequences can correlate strongly. Primary diagnostics are:
+It gives seven zeros, seven halves, and one final one. Against the first 15 normalized Riemann zeros it produces Pearson `0.8624831263677383` and Euclidean distance `1.1669392742086542`, reproducing the displayed `0.862` and `1.167`.
 
-- RMSE and maximum absolute error after declared endpoint normalization;
-- AICc with every fitted scale, offset, shape, or exponent counted;
-- leave-one-transition-out prediction error for transition positions;
-- spacing/dwell coefficient of variation;
-- Wasserstein and Kolmogorov-Smirnov comparisons for spacing distributions where meaningful;
-- permutation or Monte Carlo rank against random monotone, shuffled-gap, and equal-spacing controls;
-- stability across the 15-point and 49-point supplied views when they encode the same construction.
+A separately written scalar checker that does not import the vector scoring functions reproduced all four values to at least `1e-15` and verified transition indices `[0,7,14,21,28,35,42]`.
 
-### Decision classes
+### The left edges answer the owner's specific question
 
-- `nonlinear_scale_supported`: one preregistered nonlinear family beats the linear/equal-spacing baseline and at least 95% of matched-complexity controls on held-out transition prediction, remains after detrending/unfolding, and is stable across recoverable views.
-- `quantized_linear_rendering_supported`: transition locations and levels are equal or statistically indistinguishable from equal spacing; the staircase is best explained by binning, quantization, or interval filling.
-- `generic_monotone_similarity_only`: high raw correlation exists but no candidate survives linear, shuffled, random-monotone, and detrended controls.
-- `provenance_blocked`: image reconstruction is too ambiguous and raw values are unavailable for a decision-safe comparison.
+When only the left edges are retained, their indices are:
 
-No result may establish a physical link among Lineum, primes, Fibonacci numbers, the golden ratio, or Riemann zeros. At most it can identify a reproducible descriptive scale law in a specific early output representation.
+`[0, 7, 14, 21, 28, 35, 42]`.
 
-### Immediate execution order
+After endpoint normalization they are exactly:
 
-1. inspect all supplied plots and reconstruct only visually exact levels and transition indices;
-2. continue repository retrieval for the named raw CSV, runner, generated `discovery.json`, and prior negative-control receipts;
-3. run exact known-answer checks on synthetic linear, geometric, random monotone, and quantized staircase cases;
-4. execute the frozen candidate and control panel on each valid representation;
-5. independently reimplement the winning comparison without importing its scoring function;
-6. append all results, negative findings, limitations, and next discriminator here before any further Lineum mechanism work.
+`[0, 1/6, 2/6, 3/6, 4/6, 5/6, 1]`.
+
+The reached levels are the same sequence. Therefore transition location versus transition level is an exact straight line, every dwell length is `7`, every jump height is `1/6`, transition RMSE from a line is `4.2e-17`, and gap coefficient of variation is exactly `0`.
+
+This does not show that the original simulation dynamics were linear. It shows that the plotted representation contains no recoverable nonlinear threshold spacing.
+
+### Number-family comparisons
+
+#### Full 49 rendered values
+
+| Candidate | RMSE | Raw interpretation |
+|---|---:|---|
+| log Fibonacci | `0.056929` | nearly linear after logarithm; not unique to Fibonacci |
+| unfolded Riemann count | `0.058129` | density trend explicitly removed toward uniform index |
+| linear index | `0.058926` | no fitted shape parameter |
+| log `phi^n` | `0.058926` | exactly linear because `log(phi^n)=n log(phi)` |
+| Beatty `phi^2` | `0.059543` | near-linear floor sequence |
+| Beatty `phi` | `0.059966` | near-linear floor sequence |
+| unfolded primes via `li(p)` | `0.067558` | counting trend removed |
+| raw primes | `0.091116` | worse than linear |
+| raw Riemann zeros | `0.103630` | worse than linear and worse than most random monotone controls |
+| raw `phi^n` | `0.536571` | strongly incompatible |
+| raw Fibonacci | `0.536571` | strongly incompatible |
+
+The slight numerical lead of log Fibonacci over a line is not a Fibonacci signature. Fibonacci numbers approach a constant multiple of `phi^n`, so taking a logarithm converts either—and any ordinary exponential progression—into an approximately linear sequence. Log `phi^n` is exactly identical to the linear baseline. The log-Fibonacci RMSE was beaten by `5.23%` of `200,000` random monotone controls, narrowly missing the preregistered 95% control threshold even before accounting for its mathematical dependence on the linear/exponential family.
+
+Raw Riemann zeros were beaten by `88.465%` of random monotone controls; raw primes were beaten by `76.255%`. Their high Pearson values are therefore generic monotone similarity, not selective matching.
+
+#### Seven transition locations
+
+| Candidate | RMSE from observed left edges |
+|---|---:|
+| exact linear | approximately `0` |
+| Beatty `phi^2` | `0.015749` |
+| unfolded Riemann count | `0.018756` |
+| unfolded primes | `0.022274` |
+| Beatty `phi` | `0.025198` |
+| raw Riemann zeros | `0.063485` |
+| raw primes | `0.100000` |
+| raw `phi^n` | `0.216707` |
+| raw Fibonacci | `0.231455` |
+
+Beatty and unfolded sequences are close because they are constructed to have an approximately uniform counting density. They do not beat the exact equal-spacing explanation.
+
+### Smooth-curve trap
+
+Fitting the entire rendered staircase without examining how it was generated can manufacture an apparent sigmoid:
+
+- linear RMSE `0.058926`;
+- fitted half-`tanh` RMSE `0.058776`, with `k=0.212694`, which is already near the linear limit;
+- fitted power RMSE `0.058510`, with exponent `1.02537`, also nearly linear;
+- fitted logistic RMSE `0.048448`;
+- exact quantized-linear formula RMSE `0`.
+
+The logistic curve can smooth the stairs visually, but the exact generator is equal-width linear quantization. This is precisely why the transition edges, dwell lengths, and jump heights had to be tested separately.
+
+### Prime gaps versus Riemann-zero gaps
+
+The owner's scale warning was valid, but the two densities move in opposite average directions:
+
+- among the first 49 values used here, mean Riemann-zero gap falls from `3.1114` in the first half to `2.1798` in the second half;
+- mean prime gap rises from `3.9583` to `5.4167`.
+
+Asymptotically, the nth prime grows like `n log n`, so average prime gaps grow roughly logarithmically. The density of zeta zeros grows roughly like `log T`, so their average vertical spacing decreases roughly like `2 pi / log T`. Zeta zeros encode oscillatory information about primes through the explicit formulas, but they are not a list of increasingly separated prime decompositions.
+
+### Classification and consequence
+
+For the supplied plotted representation, the frozen classification is:
+
+`quantized_linear_rendering_supported`.
+
+For the unrecovered original simulation mechanism:
+
+`provenance_blocked`.
+
+The result contradicts using these images as evidence that early Lineum had already generated a `tanh`, Fibonacci, golden-ratio, prime, or Riemann curve. It does not contradict the B4 astronomical result, because the NGC 3198 `tanh` preference was obtained independently from SPARC data and frozen shape comparisons.
+
+The arithmetic-threshold route must remain closed unless the original raw `spec7_true` event data and generation code are recovered and reveal information that was lost by the equal-block visualization.
+
+### Retained extension artifacts
+
+- runner: `research/runners/lineum_b4_early_threshold_scale_audit.py`, local verified SHA-256 `7b22024ecb64dc67236a4a0f0f3673b4b428b3227cefff0e441eee58d160c9dd`;
+- independent scalar checker: `research/runners/lineum_b4_early_threshold_scale_check.py`, local verified SHA-256 `906bc3a5282ad149a4286ab1aac0e9fb1a3ebf6977efbf29cd11dc73f857d231`;
+- machine output: `research/results/lineum_b4_early_threshold_scale_audit.json`, local rerun SHA-256 `ae5e2cedff687a0b675d263f38ba1096b61e24691d96ef2bef1fe84fd8897331` before connector transport.
+
+Environment: Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, SymPy `1.14.0`, mpmath `1.3.0`, Linux x86-64. A network-disabled local clone attempt failed before checkout; repository reads and writes used the GitHub connector. This limitation did not affect the standalone arithmetic reconstruction, but repository-supported dependency execution was unavailable.
+
+Minimal independent reconstruction:
+
+```python
+import math
+import mpmath as mp
+
+zeros = [float(mp.im(mp.zetazero(n))) for n in range(1, 50)]
+z = [(v-zeros[0])/(zeros[-1]-zeros[0]) for v in zeros]
+y = [math.floor(i/7)/6 for i in range(49)]
+mean_z, mean_y = sum(z)/49, sum(y)/49
+pearson = sum((a-mean_z)*(b-mean_y) for a,b in zip(z,y)) / math.sqrt(
+    sum((a-mean_z)**2 for a in z) * sum((b-mean_y)**2 for b in y)
+)
+distance = math.sqrt(sum((a-b)**2 for a,b in zip(z,y)))
+assert abs(pearson - 0.9842156096489157) < 1e-15
+assert abs(distance - 0.7254094546265594) < 1e-15
+```
 
 ## Version history
 
 - `0.1.0`: frozen B4 execution and independent reconstruction; `tanh_shape_preferred`; generic saturation unsupported for this one target; owner intuition gate opened.
 - `0.2.0`: B4 core retained unchanged; opened and preregistered an in-report early-Lineum threshold/scale audit after the owner supplied historical DejaVu/RNB plots and requested critical comparisons with primes, Fibonacci, the golden ratio, Riemann spacing, and nonlinear scales.
+- `0.3.0`: completed the in-report audit; exactly reconstructed both historical plots as equal-block quantized linear staircases; classified the plotted representation as `quantized_linear_rendering_supported`; retained original simulation mechanism as `provenance_blocked`; no arithmetic route to B4 `tanh` established.
