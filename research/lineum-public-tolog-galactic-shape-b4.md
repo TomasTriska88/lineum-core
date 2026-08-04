@@ -1,16 +1,16 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active; question 1 observational target validated, population source extension closed negatively, question 2 implementation audit opened  
-**Version:** 0.8.0  
+**Status:** active; question 1 observational target validated, question 2 homogeneous saturation phase completed, localized saturation phase pending  
+**Version:** 0.9.0  
 **Evidence cutoff:** 2026-08-04  
 **Repository:** `TomasTriska88/lineum-core`  
 **Branch at preregistration:** `develop`  
 **Branch head at preregistration:** `aa3a1d248c02146072b8862ca96f2c97572a7524`  
 **Scope:** one permanent report answering exactly three public comparison questions: autonomous galactic emergence, natural saturation/divergence control, and scalar-potential memory; no private TOLOG material; no Lineum engine or whitepaper change  
 **Question 1 status:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
-**Question 2 status:** `explicitly_stabilized_not_yet_attractor_proven`  
+**Question 2 status:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
 **Question 3 status:** `no_explicit_scalar_potential_minimum_yet_demonstrated`  
-**Confidence:** high for the reported SPARC calculations and the static implementation facts; moderate for source-structure associations; no causal galactic mechanism established
+**Confidence:** high for the reported SPARC calculations, static implementation facts, and deterministic homogeneous saturation audit; moderate for source-structure associations; no causal galactic mechanism or fixed-potential attractor established
 
 ## Plain result
 
@@ -23,7 +23,7 @@ This report now stays anchored to three questions only.
 The current answer is:
 
 - the desired galactic output is now tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
-- current Lineum contains several explicit saturation and numerical safety devices, so stable output cannot yet be called a single natural attractor;
+- current Lineum contains several explicit saturation and numerical safety devices; the first dynamic ablation supports only a partial dissipative `psi` equilibrium under selected homogeneous conditions, not a full natural attractor;
 - current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously.
 
 The report must not become a general galaxy notebook. Every retained calculation below either defines the target for question 1, separates physical from software stabilization for question 2, or tests persistent scalar memory for question 3.
@@ -607,6 +607,174 @@ The target must be the pre-perturbation state from the same lane, not a post-hoc
 
 Even a successful dissipative attractor would show stability of this implementation under the tested conditions. It would not prove that nature uses the same mechanism, that a galactic singularity is solved, or that TOLOG's Dark Heart has been reproduced.
 
+## Homogeneous saturation phase result
+
+### Executed scope
+
+The first phase reduced the current deterministic NumPy diffusion update to a spatially homogeneous cell:
+
+```text
+kappa = 1
+mu = 0
+delta = 0
+all spatial gradients = 0
+diffusion contribution = 0
+quantum noise and linon generation = disabled
+initial |psi| = 0.01
+```
+
+The reduction retained the same local interaction, hard-coded linear damping, mode-coupling transfer, `phi` handling, and guards as the current implementation unless one declared operation was ablated.
+
+Frozen grid sizes, time steps, and initial `phi` values were:
+
+```text
+grid sizes = {32, 64, 128}
+dt = {0.1, 0.5, 1.0}
+phi0 = {0, 0.05, 0.15, 1, 10}
+5000 primary updates
+1000 post-perturbation recovery updates
+```
+
+Nine single-operation lanes produced `405` retained runs:
+
+```text
+baseline
+configured dissipation = 0
+configured dissipation = 1
+no hard guards
+no linear dissipation
+no explicit tanh
+no interaction denominator
+no mode coupling
+no phi cap
+```
+
+The perturbation multiplied the homogeneous `psi` amplitude by `1.5`. Recovery required the final energy to return within `5%` of the same lane's pre-perturbation state. A radial-profile test is impossible in a homogeneous reduction and remains reserved for the localized phase.
+
+### Reproduced results
+
+The configured dissipation parameter was exactly inert:
+
+```text
+maximum difference among configured rates 0, 0.005, and 1 = 0
+```
+
+This confirms dynamically, not only statically, that `CoreConfig.dissipation_rate` does not currently control the diffusion damping term.
+
+Baseline outcomes across all `45` homogeneous combinations were:
+
+```text
+decayed to zero = 6
+decaying        = 12
+growing         = 21
+stationary      = 6
+```
+
+All six stationary baseline cases were the `dt=1` high-`phi` lanes (`phi0` equal to `1` or `10` across three nominal grid sizes). They returned after perturbation with relative energy error about:
+
+```text
+0.00536 = 0.536%
+```
+
+They triggered no `psi` fail-safe reset. Their finite `psi` equilibrium was approximately:
+
+```text
+|psi| = 1708.90035
+```
+
+but their `phi` value reached the hard cap:
+
+```text
+phi = 1,000,000
+```
+
+Therefore these rows show recovery of one bounded `psi` component while the full state is cap-supported.
+
+Removing the downstream interaction denominator caused every high-`phi` lane to hit the guard reset:
+
+```text
+18 / 18 high-phi runs reset
+```
+
+The denominator
+
+```text
+1 + |interaction_term| / 10
+```
+
+is therefore necessary for bounded high-`phi` behavior in this tested homogeneous regime.
+
+Removing explicit `tanh` did not remove all finite stationary `psi` states:
+
+```text
+stationary high-phi rows without tanh = 6
+maximum final |psi| without tanh = 1788.57180
+```
+
+Thus the explicit `tanh` is not individually necessary for a finite homogeneous `psi` equilibrium while the denominator, damping, transfer, cap, and guards remain.
+
+Removing the hard-coded linear dissipation produced no successful high-`phi` recovery within the frozen horizon:
+
+```text
+recovery passes = 0 / 18
+maximum final |psi| = 18106.61161
+```
+
+This supports linear-dissipation dependence for timely recovery under the tested conditions. It does not prove mathematical divergence at infinite time.
+
+Removing the `phi` cap left `psi` broadly finite under the tested horizon but exposed monotonic `phi` accumulation:
+
+```text
+maximum final phi = 13,402,932.35238
+minimum positive late-time phi slope = 121.18393 per update
+```
+
+No homogeneous uncapped `phi` fixed point was observed. The apparent full-state stationarity of the capped baseline is therefore not a natural fixed minimum of `phi`.
+
+### Independent verification and preserved failure
+
+A second implementation reconstructed the homogeneous scalar recurrence independently, using amplitude-only scalar arithmetic and not importing the primary runner.
+
+It reproduced all `405` rows:
+
+```text
+exact categorical mismatches = 0
+maximum numeric relative difference = 1.12e-14
+configured-dissipation invariance = passed
+high-phi denominator instability = passed
+uncapped-phi positive-tail check = passed
+overall independent check = passed
+```
+
+The first version of the independent checker failed and is retained permanently. It incorrectly required every `dt` lane to reach its analytic asymptote within the frozen `5000`-step horizon:
+
+```text
+baseline maximum fixed-point relative error = 0.1435
+no-dissipation maximum fixed-point relative error = 0.8312
+linearized-interaction maximum fixed-point relative error = 0.0784
+```
+
+Those values reflect finite-time convergence, not disagreement with the independently reconstructed recurrence. The checker was corrected to test the frozen run itself, the declared classifications, and analytically valid directional controls rather than imposing an unregistered convergence deadline.
+
+A complete primary rerun was byte-identical to the first retained result.
+
+### Question 2 interim classification
+
+```text
+explicitly_stabilized_partial_dissipative_equilibrium_only
+```
+
+The evidence supports a finite and perturbation-recovering `psi` equilibrium in a narrow subset of homogeneous conditions. It also shows that:
+
+- the interaction denominator is essential in the tested high-`phi` regime;
+- the hard-coded linear damping is important for recovery within the frozen horizon;
+- explicit `tanh` is not individually essential for finite homogeneous `psi`;
+- `phi` has no demonstrated uncapped homogeneous fixed point;
+- the exposed dissipation parameter is not wired to the implemented damping;
+- a full fixed-potential attractor is not shown.
+
+The homogeneous reduction contains no spatial gradients, diffusion, localization, radial profile, boundary interaction, or stochastic forcing. The preregistered localized phase remains necessary before question 2 can be closed.
+
 # Question 3 — scalar minimum and information persistence
 
 ## Current implementation audit
@@ -666,8 +834,9 @@ A memory claim requires persistence without continued source input and recovery 
 | Observer and measurement geometry are irrelevant | `contradicts` as an allowed assumption |
 | Lineum currently predicts galactic rotation blindly | `not_yet_supported` |
 | Public TOLOG evidence reproduces blind 98% emergence | `not_yet_supported` from public reproducible material |
-| Lineum stability is purely emergent | `not_yet_supported`; explicit bounds and damping exist |
-| Current Lineum has a proven fixed potential attractor | `not_yet_supported` |
+| Lineum stability is purely emergent | `contradicts` in the homogeneous tested regime; explicit denominator, damping, cap, and guards materially shape the result |
+| A partial dissipative `psi` equilibrium exists | `supports` for six high-`phi`, `dt=1` homogeneous lanes only |
+| Current Lineum has a proven fixed potential attractor | `contradicts` as a conclusion from the homogeneous phase; full-state `phi` remains cap-supported or unbounded |
 | Current Lineum has a proven persistent scalar minimum | `not_yet_supported` |
 | A 3x3 neighborhood is uniquely required | `not_yet_supported` |
 
@@ -758,6 +927,56 @@ adjusted association p = 0.2753772462
 independent checker = passed
 ```
 
+## Homogeneous saturation audit
+
+- `research/runners/lineum_b4_saturation_homogeneous_audit.py`
+- `research/runners/lineum_b4_saturation_homogeneous_check.py`
+- `research/results/lineum_b4_saturation_homogeneous_summary.json`
+- `research/results/lineum_b4_saturation_homogeneous_result.json.xz.b64`
+- `research/results/lineum_b4_saturation_homogeneous_check.json`
+- `research/results/lineum_b4_saturation_homogeneous_initial_failed_check.json`
+
+Source implementation:
+
+```text
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+```
+
+Local pre-transport SHA-256 values:
+
+```text
+primary runner        a7fc18d0fe2f921473bf50580807dc39df0861d6f02f979ee745f3e78d7ed478
+corrected checker     91a35e01018fbe2f829677b1db6648252c751969dd8040b613b1774f866d4eee
+full result JSON      f7cdfaa0cdbbca87d4f6f1d832fb53d57c54a187f920b39de8eb04d806940f39
+full result XZ+B64    9a54eb142561216348917abbe43653d6265140d6c7e167706820d13fb71db15a
+corrected check       598ea3dc84665c2d56a8b45bb93e56d11a85cbf74105775aabee6b6f717b8608
+summary JSON          6d9797ec464e769ecfc3a86f44d7f5eca69c5a2def23297a70a942574477f29f
+```
+
+Minimal reproduction:
+
+```bash
+python research/runners/lineum_b4_saturation_homogeneous_audit.py \
+  --output homogeneous_saturation_result.json
+
+python research/runners/lineum_b4_saturation_homogeneous_check.py \
+  --result homogeneous_saturation_result.json \
+  --output homogeneous_saturation_check.json
+```
+
+Expected interim result:
+
+```text
+question_2_interim = explicitly_stabilized_partial_dissipative_equilibrium_only
+rows = 405
+configured dissipation maximum difference = 0
+stationary high-phi baseline rows = 6
+high-phi no-denominator resets = 18 / 18
+stationary high-phi no-tanh rows = 6
+uncapped phi has positive late-time slope
+independent checker = passed
+```
+
 # Numerical and environment limitations
 
 The original population fits used:
@@ -772,7 +991,7 @@ The repository declares NumPy below `2.0`. Independent reconstruction and altern
 
 The population concentration extension additionally used scikit-learn `1.8.0`. Its principal rank, permutation, and independent-check results do not depend on the cross-validation model.
 
-No current dynamic saturation result is claimed yet. The question-2 audit is preregistered above but not executed in this version.
+The homogeneous deterministic phase of the question-2 audit is complete. It used Python `3.13.5` and NumPy `2.3.5`, but the independently checked recurrence is scalar and does not depend on SciPy, scikit-learn, PyTorch, or GPU behavior. The localized spatial phase and stochastic controls remain pending.
 
 # Prohibited conclusions
 
@@ -802,3 +1021,4 @@ This report does not establish:
 - `0.6.1`: corrected `SBdisk` and `SBbul` provenance before source execution.
 - `0.7.0`: completed the extreme source discriminator; compact disk association supported inside the selected contrast.
 - `0.8.0`: reorganized the single report around the three controlling questions; completed the all-102 population concentration extension as `no_population_extension`; recorded observer/measurement confounding; opened and preregistered the question-2 saturation audit; documented the unused `dissipation_rate` configuration contradiction.
+- `0.9.0`: completed and independently checked the homogeneous deterministic saturation phase; retained the initial checker failure; classified question 2 provisionally as `explicitly_stabilized_partial_dissipative_equilibrium_only`; localized spatial phase remains pending.
