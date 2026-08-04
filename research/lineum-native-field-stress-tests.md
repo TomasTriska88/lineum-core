@@ -1,10 +1,10 @@
 # Lineum-Native Field Stress-Test Programme
 
 **Status:** active  
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** a Lineum-only research programme testing three field-dynamics questions with current and historically relevant Lineum equation families  
-**Current confidence:** high in the programme structure; no new simulation result has yet been produced  
+**Current confidence:** high in the programme structure; high that the default radial-drift lane is unsupported under the tested conditions; low on the replacement mechanism until historical retrieval and discriminating controls are complete  
 **Operational task:** ClickUp task `869edcdkk`
 
 ## 1. Repository and ownership boundary
@@ -23,15 +23,30 @@ Frozen repository state at programme creation:
 - current NumPy engine source: `lineum_core/math.py`;
 - frozen source blob: `bb877021810691223a0eb960a45493a2e351112a`.
 
+Current programme checkpoint after the first two radial lanes:
+
+- branch head before this report revision: `41d7e16342cd2d4170ccf807f7d4dd60ae1a3aa6`;
+- Lane A receipt commit: `30cdd87bce6f1596d62019eaebd979ab04292548`;
+- Lane B receipt commit: `50776c0772340ea7dbf359806dfba9ef165b46db`.
+
 ## 2. Programme questions
 
 ### Q1 — Galactic radial locking
 
 Can existing Lineum `psi`–`phi`–`mu` dynamics, initialized from a visible-disk radial profile, generate a robust long-range response whose dimensionless circular-response proxy is approximately constant, without inserting a `1/r` law, fitting the outer observed curve, or adding a dark-halo term?
 
-Active child report:
+Active reports:
 
-- `research/lineum-native-galactic-radial-locking-test.md`.
+- `research/lineum-native-galactic-radial-locking-test.md`;
+- `research/lineum-native-galactic-radial-locking-lane-a.md`;
+- `research/lineum-native-galactic-radial-locking-lane-b.md`.
+
+Current bounded result:
+
+- the default deterministic lane did not produce the preregistered outer locking shape;
+- removing the implemented `phi`-gradient drift changed the outer proxy by only about `0.263` parts per million;
+- the weak outer trace is therefore not evidence for the tested default gradient-feedback mechanism;
+- this does not test the `mu` channel, Eq-11 families, collective-relaxation observers, alternative boundaries, or all parameter regimes.
 
 ### Q2 — Bounded saturation and genuine attraction
 
@@ -108,31 +123,104 @@ Where applicable, child reports must include:
 
 ## 6. Programme sequencing
 
-The first retained checkpoint is the already preregistered galactic radial-locking Lane A/Lane B pair. It is selected because it uses the current engine without adding a new equation and provides a cheap discriminator between active `phi`-gradient feedback and passive smoothing.
+The first retained checkpoint was the preregistered galactic radial-locking Lane A/Lane B pair. It used the current engine without adding a new equation and discriminated between active `phi`-gradient feedback and passive smoothing.
 
-The saturation lane follows after the first radial checkpoint is permanently recorded. The scalar-minimum lane follows after its adapter, observer, and null controls are preregistered in its own report.
+Because Lane B reproduced Lane A almost exactly, blind local parameter tuning of the default drift is now prohibited. The next step is mandatory existing-hypothesis retrieval before choosing a replacement mechanism.
 
-This order does not rank the three scientific questions by importance. It minimizes the amount of new mechanism introduced before testing existing Lineum behaviour.
+The saturation lane and scalar-minimum lane remain active programme questions. Their exact order after retrieval will be selected by the cheapest test that discriminates across the complete inherited mechanism set, not merely by proximity to the latest galaxy result.
 
-## 7. Current status matrix
+## 7. Historical retrieval ledger
+
+### Batch 1 — current canonical whitepaper, retrieved 2026-08-04
+
+Source examined:
+
+- `whitepapers/1-core/01-core-lineum.md` on `develop`;
+- source blob SHA: `edc63b0d150b3b616ff8a108ea47a4f89b6a6c37`;
+- document title: `Lineum: Eq-7/10 Canonical Stability Audit`;
+- document status: Draft;
+- document version: `1.0.64.1-core`.
+
+Two scientifically distinct historical candidates were recovered.
+
+#### Candidate H1 — Eq-11 intrinsic saturation
+
+The whitepaper states that an Eq-11 Minimal PDE family used biharmonic regularization and quintic saturation and reported bounded dissipative localized structures without algorithmic clipping. It also states that the amplitude bound was controlled by a saturation parameter and that the structures were dissipative, non-charge-conserving, and phase-sensitive.
+
+Provenance status:
+
+- recorded historical/canonical-document claim;
+- not yet independently verified in this programme;
+- not the same update family as the current Lane A/B NumPy path;
+- directly relevant to Q2 and potentially relevant to Q1 only if a declared radial observer can be derived without fitting the target curve.
+
+Required checks before reuse:
+
+- recover the exact implemented or embedded Eq-11 equation and parameters;
+- locate the actual run receipts and cap-removal evidence;
+- distinguish bounded localized states from a global or cosmological attractor;
+- test whether the saturation term creates any long-range radial scaling rather than only local amplitude control;
+- preserve the possibility that the whitepaper wording outruns the available artifacts.
+
+#### Candidate H2 — collective relaxation or stress redistribution
+
+The whitepaper records a Phase 7 kick-and-receiver observation in which the response was described as more consistent with collective relaxation or stress redistribution than with simple ballistic wave transport. The proposed interpretation is an elastic-like spatial medium rather than an empty carrier of isolated traveling fronts.
+
+Provenance status:
+
+- recorded historical interpretation;
+- not yet independently verified in this programme;
+- mechanistically distinct from the default `phi`-gradient drift that Lane B ruled out under the tested conditions;
+- potentially relevant to Q1 because a nonlocal-looking radial response could be an observer of distributed relaxation rather than particle drift;
+- potentially relevant to Q3 because information may survive in a distributed stress pattern even when local amplitude relaxes.
+
+Required checks before reuse:
+
+- locate the Phase 7 report, equation, initial conditions, boundary conditions, and raw observables;
+- determine whether the response was genuinely collective or merely diffusive smoothing on a periodic grid;
+- identify an intervention that separates stress redistribution from ordinary diffusion;
+- define a non-circular radial observable before applying it to galaxy-shaped input;
+- test finite-size and periodic-image contamination.
+
+### Batch 1 impact matrix
+
+| Programme item | H1 Eq-11 saturation | H2 collective relaxation |
+|---|---|---|
+| Q1 radial locking | `not_yet_compared`; local saturation alone is insufficient | `reopens`; distinct from failed drift mechanism |
+| Q2 bounded attraction | `reopens`; strongest retrieved candidate so far | `constrains`; relaxation is not automatically attraction |
+| Q3 information retention | `not_yet_compared`; dissipative loss may be expected | `reopens`; distributed state may retain labels |
+| Lane A/B negative result | `unaffected`; different equation family | `supports retrieval`; motivates a different observer/mechanism |
+| Physical gravity claim | `unaffected`; no mapping established | `unaffected`; no mapping established |
+
+No candidate in Batch 1 is promoted to a current Lineum mechanism or physical claim.
+
+## 8. Current status matrix
 
 | Question | Protocol | Execution | Independent check | Current status |
 |---|---:|---:|---:|---|
-| Galactic radial locking | preregistered | not run | not run | implemented protocol only |
-| Bounded saturation and attraction | programme-level scope frozen | not run | not run | unresolved |
-| Scalar minimum and information retention | programme-level scope frozen | not run | not run | unresolved |
+| Galactic radial locking | preregistered | Lane A and Lane B complete | two extracted-path reproductions; drift-off intervention | `unsupported_under_tested_conditions` for default drift lane |
+| Bounded saturation and attraction | programme-level scope frozen | not run in this programme | historical Eq-11 claim retrieved only | `reopened`, unverified here |
+| Scalar minimum and information retention | programme-level scope frozen | not run | no independent check | unresolved |
 | Compute reduction | metrics frozen at programme level | no reference benchmark | not applicable yet | unresolved |
 
-## 8. Prohibited conclusions at version 0.1.0
+## 9. Prohibited conclusions at version 0.2.0
 
 This programme does not establish that:
 
 - Lineum reproduces galactic gravity or removes the need for dark matter;
 - Lineum contains a proven global attractor analogous to a cosmological endpoint;
+- Eq-11 historical claims are reproduced by the current programme;
+- collective relaxation is distinct from diffusion under the relevant conditions;
 - Lineum proves information conservation or information loss in nature;
 - any Lineum field is a real gravitational, quantum, cosmological, or Standard-Model field;
 - Lineum accelerates an external solver by any measured percentage.
 
-## 9. Execution log
+## 10. Execution log
 
-At version 0.1.0, the programme report and the migrated galactic child protocol are the only retained outputs. No new simulation has yet been executed under this programme.
+1. Programme and galactic protocol created and migrated into Core.
+2. Lane A default deterministic run recorded in commit `30cdd87bce6f1596d62019eaebd979ab04292548`; the preregistered radial-locking shape failed.
+3. Lane B drift-off intervention recorded in commit `50776c0772340ea7dbf359806dfba9ef165b46db`; removing drift changed the outer response by only about `0.263` parts per million.
+4. ClickUp fallback checkpoint for Lane A/B was verified before the connector later reached its rolling limit.
+5. ClickUp routing governance was corrected in commit `41d7e16342cd2d4170ccf807f7d4dd60ae1a3aa6`.
+6. A later ClickUp checkpoint attempt returned `RATE_LIMIT_EXCEEDED` with a reported wait of `531` minutes. No retry or polling was performed. The rule-governance checkpoint is therefore operationally unsynchronized while Git remains complete.
+7. Historical retrieval Batch 1 recovered Eq-11 intrinsic saturation and collective-relaxation candidates from the current canonical whitepaper. No new simulation was run and no replacement mechanism was selected.
