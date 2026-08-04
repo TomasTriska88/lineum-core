@@ -1,0 +1,195 @@
+{
+  "adjusted_partial_spearman": {
+    "controls": [
+      "median_fractional_velocity_error",
+      "row_count",
+      "maximum_measured_radius",
+      "radial_step_coefficient_of_variation",
+      "has_tabulated_bulge"
+    ],
+    "extreme_permutations": 27537,
+    "permutations": 100000,
+    "rho": -0.11181602462200137,
+    "two_sided_freedman_lane_p": 0.27537724622753773
+  },
+  "artifacts": {
+    "full_result_json_sha256": "a3721fbbf58d0c2ef48849b2d7573041c64589c2137828e1b2fdf3c0a5e39536",
+    "full_result_xz_b64_sha256": "55550f4302c8f570aaebe22cab0250942b0967873ed20e314f906c837384f8bd",
+    "independent_checker_sha256": "4c63528f3affdf22d088a825fc48acad50e6af7d6f9bf32caa7070047d394b4d",
+    "primary_runner_sha256": "8b136f41377a275e3087a76081839157047abbcabb0efa2b6cc6e6cf31690df0",
+    "rows_csv_sha256": "fcdb1593f57d8f6da357ac05c5a2b60aae575622b2837ea4326b384186db3cc5",
+    "rows_xz_b64_sha256": "44cb6c09c13b11df608093dcac803144132b4d7807670a16dd915fab9be63799"
+  },
+  "classification": "no_population_extension",
+  "cross_validation": {
+    "full_auc_range": [
+      0.8198051948051949,
+      0.8717532467532467
+    ],
+    "improved_repeats": 4,
+    "mean_log_loss_improvement": -0.008861838821349792,
+    "median_control_auc": 0.8652597402597402,
+    "median_full_auc": 0.8538961038961039,
+    "median_log_loss_improvement": -0.00693723639401983
+  },
+  "decision_gates": {
+    "adjusted_or_cross_validated_pass": false,
+    "primary_continuous_pass": false,
+    "secondary_binary_pass": false
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scikit_learn": "1.8.0",
+    "scipy": "1.17.0"
+  },
+  "group_summary": {
+    "all_compatible": {
+      "max": 0.49769641289704675,
+      "mean": 0.2547543940809021,
+      "median": 0.24058614547850043,
+      "min": 0.06527208309376852,
+      "n": 82
+    },
+    "all_tension": {
+      "max": 0.4188534556665398,
+      "mean": 0.22210002001406828,
+      "median": 0.22462222573709661,
+      "min": 0.0581356448917208,
+      "n": 6
+    },
+    "fourteen_strong_rejections": {
+      "max": 0.3827974845493204,
+      "mean": 0.17489530839428116,
+      "median": 0.16589360650832596,
+      "min": 0.09710414855218176,
+      "n": 14
+    },
+    "remaining_eighty_two_informative": {
+      "max": 0.49769641289704675,
+      "mean": 0.2632792667758121,
+      "median": 0.2423276528745809,
+      "min": 0.0581356448917208,
+      "n": 82
+    },
+    "six_strong_tanh_wins": {
+      "max": 0.15034255514760722,
+      "mean": 0.10559342651696506,
+      "median": 0.09779229577612188,
+      "min": 0.07869195439328679,
+      "n": 6
+    }
+  },
+  "independent_check": {
+    "archive_sha256_pass": true,
+    "auc_difference": 0.0,
+    "auc_mc_agreement_pass": true,
+    "auc_pass": true,
+    "correlation_mc_agreement_pass": true,
+    "feature_tolerance_pass": true,
+    "independent_auc": 0.275974025974026,
+    "independent_auc_mc_p_20000": 0.9967001649917504,
+    "independent_correlation_mc_p_20000": 0.023098845057747112,
+    "independent_spearman_rho": -0.22543988871334122,
+    "maximum_feature_difference": 5.551115123125783e-17,
+    "membership_pass": true,
+    "passed": true,
+    "primary_auc_mc_p_100000": 0.996640033599664,
+    "primary_correlation_mc_p_100000": 0.022559774402255976,
+    "spearman_difference": 0.0,
+    "spearman_pass": true
+  },
+  "inputs": {
+    "cross_lane_checks": {
+      "same_informative": true,
+      "same_tanh_label": true,
+      "same_winner": true
+    },
+    "informative_galaxies": 102,
+    "official_archive_sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "population_csv_sha256": "c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d",
+    "strong_rejections": 14
+  },
+  "interpretation": {
+    "measurement_warning": "All fourteen strong rejections occur in the low- or middle-fractional-error terciles; low-information curves often cannot distinguish neighboring saturation shapes.",
+    "reproduced_observation": "The compact-disk contrast remains true for the six strongest tanh wins versus the fourteen strongest rejections, but it does not generalize as a monotonic population relation across all 102 informative galaxies.",
+    "scope_safe_negative": "The simple one-dimensional monotonic disk-concentration extension is unsupported under the frozen test. This does not reject nonlinear, conditional, interaction-based, or source-projection mechanisms."
+  },
+  "primary_continuous": {
+    "extreme_permutations": 2255,
+    "observed_direction": "opposite_to_preregistered",
+    "permutations": 100000,
+    "preregistered_direction_pass": false,
+    "spearman_rho": -0.22543988871334122,
+    "two_sided_permutation_p": 0.022559774402255976
+  },
+  "robustness": {
+    "bulge_strata": {
+      "false": {
+        "n": 77,
+        "p": 0.007569924300756993,
+        "rho": -0.3013672021057559,
+        "strong_rejections": 7
+      },
+      "true": {
+        "n": 25,
+        "p": 0.7136428635713643,
+        "rho": 0.07653477716296439,
+        "strong_rejections": 7
+      }
+    },
+    "exclude_original_fourteen_rejections": {
+      "n": 88,
+      "permutation_p": 0.5374546254537454,
+      "spearman_rho": -0.06656514335428781
+    },
+    "measured_span_normalization": {
+      "auc_directional_p": 0.968210317896821,
+      "auc_larger_predicts_rejection": 0.3465909090909091,
+      "spearman_p": 0.056869431305686946,
+      "spearman_rho": -0.18952696259169194
+    },
+    "quoted_error_terciles": {
+      "high": {
+        "error_range": [
+          0.052366863905325446,
+          0.18243246855661147
+        ],
+        "n": 34,
+        "p": 0.96880031199688,
+        "rho": 0.007134304706622824,
+        "strong_rejections": 0
+      },
+      "low": {
+        "error_range": [
+          0.00851063829787234,
+          0.030256071303389916
+        ],
+        "n": 34,
+        "p": 0.45891541084589155,
+        "rho": -0.13097390706401946,
+        "strong_rejections": 11
+      },
+      "middle": {
+        "error_range": [
+          0.030856064657990137,
+          0.05177866892118331
+        ],
+        "n": 34,
+        "p": 0.07753922460775392,
+        "rho": -0.3075245869907426,
+        "strong_rejections": 3
+      }
+    }
+  },
+  "schema": "lineum-b4-population-concentration-result/1",
+  "secondary_binary": {
+    "auc_larger_concentration_predicts_rejection": 0.275974025974026,
+    "direction_agnostic_auc": 0.724025974025974,
+    "directional_permutation_p": 0.996640033599664,
+    "extreme_permutations": 99664,
+    "observed_direction": "opposite_to_preregistered",
+    "permutations": 100000,
+    "preregistered_direction_pass": false
+  }
+}
