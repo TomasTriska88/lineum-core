@@ -1,0 +1,74 @@
+{
+  "schema": "lineum-b4-population-concentration-preregistration/1",
+  "status": "frozen_before_execution",
+  "evidence_cutoff": "2026-08-04",
+  "active_report": "research/lineum-public-tolog-galactic-shape-b4.md",
+  "question": "Does the disk-concentration association observed in the twenty strongest shape discriminators generalize across all 102 informative SPARC galaxies?",
+  "owner_hypothesis": "One broad mechanism may operate across galaxies while a contribution becomes weak, negligible, absent, or dominant in particular source-geometry regimes.",
+  "inputs": {
+    "official_rotation_archive": "Rotmod_LTG.zip",
+    "official_rotation_archive_sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "population_decision_table": "research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64",
+    "population_decision_table_raw_csv_sha256": "c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d",
+    "primary_lane": "unsigned_fiducial",
+    "cross_lane_requirement": "The signed and unsigned lanes must retain identical informative membership, tanh labels, and winners before the population extension is interpreted.",
+    "population": "All 102 preregistered informative galaxies; no addition, removal, or relabeling according to concentration results."
+  },
+  "predictor": {
+    "name": "disk_half_light_r_over_rmax",
+    "definition": "The radius containing half of the measured disk-light proxy, divided by the maximum measured radius.",
+    "calculation": "Sort the official SBdisk samples by radius, clip non-positive SBdisk to zero, integrate 2*pi*r*SBdisk by the trapezoidal rule, and linearly interpolate the cumulative half-light crossing.",
+    "directional_hypothesis": "Larger disk_half_light_r_over_rmax produces a larger tanh penalty and a higher probability of strong tanh rejection.",
+    "no_threshold": true
+  },
+  "outcomes": {
+    "primary_continuous": "delta_aic_tanh",
+    "secondary_binary": "tanh_label == strongly_rejected",
+    "exploratory": [
+      "exact winning shape",
+      "shape_identified flag",
+      "tanh exact-best flag"
+    ]
+  },
+  "measurement_controls": [
+    "median_fractional_velocity_error",
+    "row_count",
+    "maximum_measured_radius",
+    "radial_step_coefficient_of_variation",
+    "has_tabulated_bulge"
+  ],
+  "statistics": {
+    "primary": "Spearman rank correlation between disk_half_light_r_over_rmax and delta_aic_tanh.",
+    "secondary": "Direction-aware rank AUC for distinguishing strong tanh rejection from all other informative galaxies.",
+    "adjusted": "Partial Spearman correlation after rank-residualizing predictor and continuous outcome against all frozen controls; Freedman-Lane residual permutation for the probability.",
+    "cross_validation": "One hundred deterministic repeated stratified seven-fold logistic comparisons of controls-only versus controls-plus-concentration for strong rejection, using identical folds, L2 regularization C=1, balanced class weights, and out-of-fold log loss and AUC.",
+    "permutations": 100000,
+    "permutation_seed": 20260804,
+    "permutation_p_rule": "Two-sided add-one Monte Carlo probability for correlations; one-sided directional add-one probability for the preregistered AUC direction.",
+    "ties": "Average ranks."
+  },
+  "decision_gates": {
+    "population_source_signal_supported": [
+      "Primary Spearman rho is positive with permutation p <= 0.05.",
+      "Strong-rejection AUC is at least 0.70 with directional permutation p <= 0.05.",
+      "Adjusted partial Spearman remains positive with Freedman-Lane p <= 0.05 OR the concentration-augmented model improves out-of-fold log loss in at least 80 of 100 repeats with positive median improvement and median full-model AUC at least 0.65.",
+      "Independent reconstruction reproduces all predictor values within 1e-12 and all retained statistics within declared numerical tolerance."
+    ],
+    "partial_population_source_signal": "Either the continuous or binary unadjusted gate passes, but the full support gate fails.",
+    "no_population_extension": "Neither the continuous nor binary unadjusted gate passes.",
+    "inconclusive_population_audit": "Input membership, official-file coverage, cross-lane identity, or independent reconstruction fails."
+  },
+  "robustness": [
+    "Repeat primary and binary statistics after excluding the fourteen galaxies used as the original strong-rejection contrast; this is descriptive because six original strong-tanh galaxies are not a complete positive class.",
+    "Report results separately for galaxies with and without tabulated bulges.",
+    "Report the concentration association inside each quoted-error tercile without changing the primary label.",
+    "Compare normalization by Rmax with normalization by measured radial span as a post-hoc robustness check that cannot promote the preregistered label."
+  ],
+  "independent_check": "A second implementation must parse the official ZIP independently, compute half-light crossings by direct segment accumulation, compute Spearman from average ranks, compute AUC by positive-negative pair counting, and reproduce the frozen population membership without importing primary feature functions.",
+  "prohibited_interpretations": [
+    "Association is not causation.",
+    "A population signal does not identify a Lineum term, TOLOG grid mechanism, dark-matter replacement, or modified gravity.",
+    "The source result cannot establish emergent tanh while current Lineum code contains an explicit tanh interaction.",
+    "A failed population extension would reject generalization of this simple predictor, not every source-geometry-dependent mechanism."
+  ]
+}
