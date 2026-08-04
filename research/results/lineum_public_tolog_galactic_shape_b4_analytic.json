@@ -1,0 +1,112 @@
+{
+  "analytic": {
+    "derivative_step": 1e-06,
+    "grid_max": 100.0,
+    "grid_points": 10001,
+    "passed": true,
+    "shapes": {
+      "algebraic": {
+        "derivative_fd": 0.9999999999995001,
+        "gates": {
+          "bounded": true,
+          "finite_zero": true,
+          "half_finite_positive": true,
+          "half_value": true,
+          "monotone": true,
+          "s100": true,
+          "unit_derivative": true,
+          "vector_scalar": true,
+          "zero": true
+        },
+        "half_value": 0.5,
+        "max_vector_scalar_abs": 0.0,
+        "passed": true,
+        "s100": 0.9999500037496876,
+        "x50": 0.5773502691896258
+      },
+      "arctan": {
+        "derivative_fd": 0.9999999999991775,
+        "gates": {
+          "bounded": true,
+          "finite_zero": true,
+          "half_finite_positive": true,
+          "half_value": true,
+          "monotone": true,
+          "s100": true,
+          "unit_derivative": true,
+          "vector_scalar": true,
+          "zero": true
+        },
+        "half_value": 0.5,
+        "max_vector_scalar_abs": 0.0,
+        "passed": true,
+        "s100": 0.9959472074048805,
+        "x50": 0.6366197723675814
+      },
+      "exponential": {
+        "derivative_fd": 0.9999999999732445,
+        "gates": {
+          "bounded": true,
+          "finite_zero": true,
+          "half_finite_positive": true,
+          "half_value": true,
+          "monotone": true,
+          "s100": true,
+          "unit_derivative": true,
+          "vector_scalar": true,
+          "zero": true
+        },
+        "half_value": 0.5,
+        "max_vector_scalar_abs": 5.551115123125783e-17,
+        "passed": true,
+        "s100": 1.0,
+        "x50": 0.6931471805599453
+      },
+      "rational": {
+        "derivative_fd": 1.000000000001,
+        "gates": {
+          "bounded": true,
+          "finite_zero": true,
+          "half_finite_positive": true,
+          "half_value": true,
+          "monotone": true,
+          "s100": true,
+          "unit_derivative": true,
+          "vector_scalar": true,
+          "zero": true
+        },
+        "half_value": 0.5,
+        "max_vector_scalar_abs": 0.0,
+        "passed": true,
+        "s100": 0.9900990099009901,
+        "x50": 1.0
+      },
+      "tanh": {
+        "derivative_fd": 0.9999999999996667,
+        "gates": {
+          "bounded": true,
+          "finite_zero": true,
+          "half_finite_positive": true,
+          "half_value": true,
+          "monotone": true,
+          "s100": true,
+          "unit_derivative": true,
+          "vector_scalar": true,
+          "zero": true
+        },
+        "half_value": 0.49999999999999994,
+        "max_vector_scalar_abs": 0.0,
+        "passed": true,
+        "s100": 1.0,
+        "x50": 0.5493061443340548
+      }
+    }
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "scipy": "1.17.0"
+  },
+  "mode": "analytic_only"
+}
