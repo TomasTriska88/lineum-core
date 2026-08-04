@@ -1,202 +1,159 @@
 # Lineum Public-TOLOG Galactic `tanh` Benchmark — B0/B1 Execution Receipt
 
 **Status:** active  
-**Version:** 0.1.1  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-04  
-**Scope:** first execution checkpoint for public-data provenance (B0) and analytic known-answer verification (B1), with no astronomical fitting  
-**Central question:** can the public SPARC archive be provenance-locked in the available runtime, and does a clean-room implementation of the public galactic `tanh` term satisfy the preregistered limiting, derivative, monotonicity, plateau, and scale checks?  
-**Current confidence:** high in the B1 analytic result; high that B0 is blocked by the present runtime network rather than by a data-validation failure; no confidence yet in any astronomical fit because B2 remains prohibited
+**Scope:** public-data provenance gate B0 and analytic known-answer gate B1; no astronomical fitting  
+**Central question:** is the NGC 3198 input provenance-locked strongly enough to permit the frozen fit, and does the clean-room public `tanh` comparator pass its analytic checks?  
+**Current confidence:** high in B0/B1; no confidence yet in a galaxy fit because B2 has not run
 
-## 1. Report lineage and frozen boundary
+## 1. Plain result
 
-This is the execution child of `Lineum Public-TOLOG Galactic tanh Benchmark`, version `0.1.0`, evidence cutoff `2026-08-04`. The root programme contains three connected questions:
+The measuring instrument and input package now pass. The supplied `Rotmod_LTG.zip` matches the publicly indexed archive MD5, is intact, contains `175` galaxy files, and contains one valid `NGC3198_rotmod.dat` with `43` rows and `8` columns.
 
-1. galactic long-range response;
-2. natural bounded saturation and genuine attraction;
-3. information retention during relaxation.
+`B0 and B1 passed; B2 is unlocked but not executed.`
 
-The parent preregistration was committed before this execution. This child records the execution receipt without altering the frozen success, failure, or inconclusive conditions after observing results.
+This unlocks the first literal fit. It does not reproduce a claimed fit, establish physics, or add `tanh` to Lineum.
 
-This checkpoint changes no production code, no Lineum equation, and no whitepaper. It performs no galaxy fit and does not treat an explicit `tanh` term as Lineum emergence.
+## 2. Programme and frozen boundary
 
-## 2. Public-source-only firewall
+This report belongs to three connected questions: emergent galactic response, natural saturation/attraction, and information retention. The strategy is to build the public phenomenological comparator, measure what its function and free parameters provide, and later replace those properties with Lineum-native foam, field, topology, or vortex dynamics. Final success requires removing the explicit galactic `tanh` completely.
 
-The privately uploaded TOLOG document was not opened, cited, searched from, or used as a hint. No equation, number, parameter, wording, table, image, code, or hypothesis was taken from it.
+The protocol was committed before execution. An earlier run passed B1 but could not download the archive. The project owner then supplied the requested archive. The unchanged runner and unchanged gates were executed. No production code, Lineum equation, or whitepaper changed.
 
-Public inputs used:
+## 3. Public-only firewall and sources
 
-1. Patrik Tolog public Academia.edu profile, accessed `2026-08-04`, for the publicly displayed phenomenological form:
+The privately uploaded TOLOG document was not opened, cited, searched, summarized, or used as a hint. No private content entered this work. The clean-room comparator implements only the independently public formula:
 
-   `v_model(r)^2 = v_bar(r)^2 + V0^2 * tanh(k_eff * r / r_s)`.
+`v_model(r)^2 = v_bar(r)^2 + V0^2 * tanh(k_eff * r / r_s)`.
 
-2. Official SPARC website, maintained by Federico Lelli, Stacy McGaugh, and James Schombert, accessed `2026-08-04`:
+Sources:
 
-   `https://astroweb.case.edu/SPARC/`
+- SPARC official site, Federico Lelli, Stacy McGaugh, and James Schombert: `https://astroweb.case.edu/SPARC/`, accessed `2026-08-04`.
+- Official mass-model archive: `https://astroweb.case.edu/SPARC/Rotmod_LTG.zip`.
+- Zenodo `10.5281/zenodo.16284118`, `https://zenodo.org/records/16284118`, accessed `2026-08-04`; indexed MD5 `e4c8b92766026770ed35e5889064e12b` and size about `110.7 kB`.
+- Lelli, McGaugh, and Schombert, *SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves*, AJ 152, 157 (2016), DOI `10.3847/0004-6256/152/6/157`, arXiv `1606.09251`.
+- Patrik Tolog public Academia.edu profile, accessed `2026-08-04`, used only for the public formula and fitting description, not as independent review.
 
-3. Official Newtonian mass-model archive endpoint declared by the SPARC site:
+The runtime did not observe the browser transfer. It received a user-supplied file after the official link was provided. The file matches the public MD5 and expected structure. MD5 is not a digital signature; the calculated SHA-256 below is the frozen fingerprint, but no official SPARC SHA-256 was available for comparison.
 
-   `https://astroweb.case.edu/SPARC/Rotmod_LTG.zip`
+## 4. Exact receipt
 
-4. Zenodo archival record `10.5281/zenodo.16284118`, accessed `2026-08-04`, which publicly lists `Rotmod_LTG.zip` and the published archive MD5 `e4c8b92766026770ed35e5889064e12b`.
+| Property | Value |
+|---|---|
+| archive bytes | `110737` |
+| public and observed MD5 | `e4c8b92766026770ed35e5889064e12b` |
+| archive SHA-256 | `0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588` |
+| ZIP integrity | pass |
+| members | `175` |
+| unique target | `NGC3198_rotmod.dat` |
+| target bytes | `2075` |
+| target SHA-256 | `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953` |
+| rows / columns | `43 / 8` |
+| radii | `0.32–44.08 kpc`, strictly increasing |
+| finite values / positive `errV` | pass / pass |
 
-5. A public GitHub mirror file was used only as an auxiliary parser control after B0 had already been classified as blocked. It was not accepted as official SPARC provenance and was not used for fitting:
-
-   - repository: `carsondowns-cte/Rotmod_LTG`;
-   - file: `NGC3198_rotmod.dat`;
-   - Git blob SHA: `8a4b4f4f8f6a7e874556596ea03ad13041ed645f`;
-   - independently calculated file SHA-256: `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`.
-
-No TOLOG code was copied. The retained runner is an original standard-library implementation of the public mathematics and provenance checks.
-
-## 3. What the implementation computes
-
-The runner has two isolated stages.
-
-### 3.1 B0 — provenance path
-
-It attempts, in order:
-
-1. the official SPARC archive URL;
-2. the Zenodo archival mirror only if the official endpoint cannot be retrieved.
-
-For any retrieved archive it records:
-
-- byte length;
-- SHA-256;
-- MD5 and comparison with the public Zenodo MD5;
-- ZIP integrity;
-- complete member list and count;
-- uniqueness of `NGC3198_rotmod.dat`;
-- target-file byte length and SHA-256;
-- header, row count, column count, finite-value checks, increasing radii, and positive velocity uncertainties.
-
-The strict preregistered B0 gate passes only for the official primary archive or a pre-downloaded local archive whose provenance can be independently established. A mirror-only result remains separately labelled and cannot unlock B2.
-
-### 3.2 B1 — analytic known-answer path
-
-The runner independently verifies:
-
-- `tanh(0) = 0`;
-- the small-argument approximation `tanh(x) ≈ x`;
-- the large-argument limit `tanh(x) → 1`;
-- the half-saturation point `x = atanh(0.5)`;
-- finite central model velocity;
-- monotonicity for nonnegative argument;
-- positivity of the analytic derivative;
-- asymptotic insertion of an added velocity-squared plateau `V0^2`;
-- the central derivative of the added velocity-squared term;
-- exact degeneracy under simultaneous rescaling that leaves `k_eff / r_s` unchanged.
-
-## 4. Environment, retained artifacts, and commands
-
-Environment:
-
-- Python `3.13.5`;
-- platform `Linux-6.12.13-x86_64-with-glibc2.41`;
-- architecture `x86_64`;
-- final runner SHA-256 `da60ac5c24990f4b0b4a35c93f972a3ab32d9db8d179330eccf41ff09e9cdf1a`;
-- final output SHA-256 `c71cc6ee48e57cbe3460c2046083981d8f49b98c574b4a6a81e508dc19ab46ae`.
-
-Retained paths:
-
-- `research/runners/lineum_public_tolog_tanh_b0_b1.py`;
-- `research/results/lineum_public_tolog_tanh_b0_b1_output.json`.
-
-Commands:
+The full `175`-member list is retained in the full machine receipt. The decision does not depend on any particular non-target filename; it depends on archive checksum, integrity, member count, unique target, and target content. The exact target is retained below and as `research/data/NGC3198_rotmod.dat`.
 
 ```text
-python research/runners/lineum_public_tolog_tanh_b0_b1.py --timeout 10 --output research/results/lineum_public_tolog_tanh_b0_b1_output.json
-python -m py_compile research/runners/lineum_public_tolog_tanh_b0_b1.py
+# Distance = 13.8 Mpc
+# Rad	Vobs	errV	Vgas	Vdisk	Vbul	SBdisk	SBbul		
+# kpc	km/s	km/s	km/s	km/s	km/s	L/pc^2	L/pc^2
+0.32	24.40	35.90	0.00	63.28	0.00	1084.92	0.00
+0.64	43.30	16.30	0.00	73.66	0.00	590.57	0.00
+0.96	45.50	16.10	0.00	78.98	0.00	410.97	0.00
+1.28	58.50	15.40	0.35	82.70	0.00	329.34	0.00
+1.61	68.80	7.61	0.15	84.22	0.00	268.62	0.00
+1.93	76.90	10.30	-0.05	83.17	0.00	247.67	0.00
+2.24	82.00	8.09	-0.47	87.04	0.00	227.56	0.00
+2.57	86.90	7.60	-0.95	88.91	0.00	205.02	0.00
+2.89	97.60	3.03	-1.43	88.98	0.00	200.20	0.00
+3.21	100.00	5.31	-1.14	93.81	0.00	208.58	0.00
+3.54	107.00	7.51	-0.39	101.22	0.00	208.47	0.00
+3.85	113.00	7.32	0.36	108.53	0.00	196.07	0.00
+4.17	117.00	5.21	1.52	115.51	0.00	179.96	0.00
+4.50	119.00	5.67	3.07	120.51	0.00	164.19	0.00
+4.82	127.00	5.39	4.63	125.42	0.00	150.99	0.00
+5.15	132.00	4.34	6.02	129.40	0.00	138.08	0.00
+5.46	134.00	2.36	7.16	133.15	0.00	126.00	0.00
+5.78	137.00	0.89	8.31	136.45	0.00	113.63	0.00
+6.10	140.00	2.84	9.46	139.41	0.00	101.19	0.00
+6.43	142.00	0.88	10.61	141.85	0.00	86.52	0.00
+6.74	144.00	1.23	11.77	142.32	0.00	70.23	0.00
+7.06	146.00	1.57	12.87	140.94	0.00	57.67	0.00
+8.04	147.00	3.00	16.39	135.68	0.00	40.74	0.00
+9.04	148.00	3.00	20.03	130.79	0.00	31.83	0.00
+10.04	152.00	2.00	23.68	128.10	0.00	26.64	0.00
+11.04	155.00	2.00	27.08	126.67	0.00	21.02	0.00
+12.05	156.00	2.00	30.11	124.98	0.00	15.42	0.00
+14.05	157.00	2.00	34.48	118.12	0.00	6.42	0.00
+16.07	153.00	2.00	36.43	108.22	0.00	2.95	0.00
+18.13	153.00	2.00	37.76	101.10	0.00	2.39	0.00
+20.05	154.00	2.00	39.83	96.40	0.00	1.44	0.00
+22.12	153.00	2.00	40.92	91.56	0.00	0.72	0.00
+24.03	150.00	2.00	41.77	87.03	0.00	0.28	0.00
+26.10	149.00	2.00	43.71	82.67	0.00	0.16	0.00
+28.16	148.00	2.00	45.41	79.06	0.00	0.08	0.00
+30.08	146.00	2.00	45.29	76.07	0.00	0.04	0.00
+32.14	147.00	2.00	44.56	73.27	0.00	0.02	0.00
+34.06	148.00	2.00	44.81	70.91	0.00	0.01	0.00
+36.12	148.00	2.00	45.90	68.62	0.00	0.01	0.00
+38.19	149.00	2.00	46.75	66.59	0.00	0.00	0.00
+40.10	150.00	2.00	47.48	64.84	0.00	0.00	0.00
+42.17	150.00	3.00	48.93	63.10	0.00	0.00	0.00
+44.08	149.00	3.00	47.84	61.63	0.00	0.00	0.00
 ```
 
-The available runtime had no usable outbound DNS resolution for ordinary Python or shell network access. Both public archive endpoints failed before an HTTP response could be obtained.
+## 5. What was computed and checked
 
-## 5. Human-readable result
+B0 hashes the archive, validates ZIP integrity, enumerates members, requires one target, hashes and parses it, and checks shape, finiteness, radius ordering, and uncertainty positivity.
 
-### 5.1 B0 verdict — blocked by runtime network
+B1 checks zero, small-argument linearity, large-argument saturation, half-saturation, finite centre, monotonicity, positive derivative, the inserted `V0^2` plateau, a finite-difference derivative, and the exact `k_eff/r_s` degeneracy.
 
-Both archive attempts failed with:
+Execution:
 
-`URLError: Temporary failure in name resolution`.
+```text
+cd /mnt/data
+python lineum_public_tolog_tanh_b0_b1.py --archive Rotmod_LTG.zip --output lineum_public_tolog_tanh_b0_b1_output_b0_passed.json
+python -m py_compile lineum_public_tolog_tanh_b0_b1.py
+```
 
-Consequences:
+Environment: Python `3.13.5`, `Linux-6.12.13-x86_64-with-glibc2.41`, `x86_64`. Runner SHA-256 `da60ac5c24990f4b0b4a35c93f972a3ab32d9db8d179330eccf41ff09e9cdf1a`. Full successful output SHA-256 `fa48e74a512555d5e7f5e9f1a8278202226192788ee831f4490d311150164b42`.
 
-- no archive bytes were obtained;
-- no official archive SHA-256 could be calculated;
-- the member list could not be locked;
-- `NGC3198_rotmod.dat` could not be extracted from the official ZIP;
-- no unofficial galaxy rows were substituted;
-- B0 did not pass;
-- B2 astronomical fitting remains prohibited.
+A second implementation independently rehashed, reopened, extracted, parsed, and asserted all B0 conditions without importing the runner; it also parsed the JSON and required all B0/B1 gates, `b0_b1_passed`, and `b2_allowed=true`. Result: `passed`.
 
-This is an execution-environment limitation. It is not evidence that the SPARC archive is unavailable to the public, corrupt, or scientifically unsuitable.
+## 6. Results
 
-### 5.2 B1 verdict — passed
+All seven B0 and ten B1 gates passed. Key B1 values:
 
-All ten analytic gates passed.
+- half-saturation argument `0.5493061443340548`;
+- example half-radius `1.3732653608351368` for `k_eff=2`, `r_s=5`;
+- example plateau `V0^2=29929` for `V0=173`;
+- analytic versus finite-difference central slopes `11971.6` and `11971.599999999362`;
+- relative difference about `5.33e-14`;
+- zero response difference when `(2,5)` is rescaled to `(4,10)`, proving only `k_eff/r_s` sets the shape.
 
-Key values:
+## 7. Scientific separation
 
-- half-saturation argument: `0.5493061443340548`;
-- for `k_eff = 2` and `r_s = 5`, half-saturation radius: `1.3732653608351368`;
-- example plateau amplitude: `V0^2 = 29929` for `V0 = 173`;
-- value at argument `20`: exactly `29929` in the runtime floating-point representation;
-- analytic central added-velocity-squared slope: `11971.6`;
-- forward-difference slope: `11971.599999999362`;
-- relative derivative error: approximately `5.33e-14`;
-- simultaneous rescaling `(k_eff=2, r_s=5)` to `(k_eff=4, r_s=10)` produced a maximum response difference of exactly `0.0` on the test grid.
+**Implementation:** validates the input and evaluates an explicit phenomenological `tanh`; it does not solve Lineum dynamics.
 
-The final result means that the literal function identifies only the ratio `k_eff / r_s` when both quantities are treated as adjustable. They must not be counted as two independently identifiable shape parameters without an external convention fixing one of them.
+**Reproduced observation:** archive, target, and analytic gates passed; no fit occurred.
 
-## 6. Independent and adversarial controls
+**Interpretation:** the comparator is ready for a literal fit. Its smooth rise and plateau are largely guaranteed by its functional form, and `k_eff` and `r_s` are not independently identifiable when both vary.
 
-### 6.1 Parser control on a public mirror
+**Hypotheses:** foam, `phi`, `mu`, `psi` topology, and a central vortex remain untested candidates for later replacement.
 
-The public mirror copy of `NGC3198_rotmod.dat` was parsed only to test the code path, not to satisfy B0. The parser recovered:
+**Real physics:** SPARC is empirical rotation-curve and baryonic-model data. A future fit would show descriptive performance only; it would not identify the cause, disprove dark matter, validate modified gravity, or prove Lineum ontology.
 
-- `43` data rows;
-- exactly `8` numeric columns per row;
-- finite values throughout;
-- strictly increasing radius;
-- positive velocity uncertainty in every row;
-- first radius `0.32 kpc`;
-- last radius `44.08 kpc`.
+## 8. Programme impact
 
-This confirms that the parser can read the expected public table structure. It does not prove byte identity with the official ZIP member.
+| Question | Impact |
+|---|---|
+| galactic response | comparator and target are ready; no Lineum response tested |
+| natural saturation | `tanh` inserts saturation; no Lineum attractor established |
+| information retention | unaffected |
 
-### 6.2 Synthetic ZIP rejection control
-
-A synthetic ZIP containing the mirror text under the expected target name was passed through the archive inspector.
-
-Expected behavior was observed:
-
-- ZIP integrity passed;
-- target discovery passed;
-- column and finite-value checks passed;
-- the published-MD5 gate failed.
-
-This demonstrates that the runner does not mark an arbitrary structurally valid ZIP as the official archive merely because the filename and table shape look correct.
-
-### 6.3 Archive-classification regression control
-
-Adversarial review of the first committed runner found a technical classification defect outside the observed network-blocked path. If official or local archive bytes had been retrieved but failed a provenance or structure gate, the first implementation would have labelled the result `archival_mirror_only` instead of `archive_validation_failed`.
-
-The correction introduced an explicit classifier with these independently exercised cases:
-
-| Source | Archive gates | Expected status | Expected B0 pass |
-|---|---:|---|---:|
-| official SPARC | pass | `passed` | true |
-| local pre-downloaded archive | pass | `passed` | true |
-| Zenodo mirror | pass | `archival_mirror_only` | false |
-| official or local archive | fail | `archive_validation_failed` | false |
-
-All four classification controls passed. The correction changed no formula, threshold, analytic result, or current B0/B1 verdict. The machine output was regenerated after the correction.
-
-### 6.4 Independence boundary
-
-The analytic checks share Python's standard-library `math` implementation with model evaluation, but the controls include closed-form limits, a separately evaluated derivative expression, a finite-difference comparison, and a parameter-rescaling identity. No astronomical observation or fit target was used to select thresholds after execution.
-
-## 7. Decision-complete machine-readable receipt
+## 9. Machine-readable summary
 
 ```json
 {
@@ -206,245 +163,132 @@ The analytic checks share Python's standard-library `math` implementation with m
     "production_lineum_code_imported_or_modified": false,
     "tolog_code_copied": false
   },
-  "b0": {
-    "archive": null,
-    "attempts": [
-      {
-        "content_length_header": null,
-        "content_type": null,
-        "elapsed_seconds": 0.018793821334838867,
-        "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-        "error_type": "URLError",
-        "ok": false,
-        "source_name": "official_sparc",
-        "status": null,
-        "url": "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip"
-      },
-      {
-        "content_length_header": null,
-        "content_type": null,
-        "elapsed_seconds": 5.006264686584473,
-        "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-        "error_type": "URLError",
-        "ok": false,
-        "source_name": "zenodo_archival_mirror",
-        "status": null,
-        "url": "https://zenodo.org/records/16284118/files/Rotmod_LTG.zip?download=1"
-      }
+  "archive_bytes": 110737,
+  "archive_md5": "e4c8b92766026770ed35e5889064e12b",
+  "archive_sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+  "b0_gates": {
+    "published_md5_matches": true,
+    "target_has_eight_columns": true,
+    "target_member_unique": true,
+    "target_radius_strictly_increasing": true,
+    "target_uncertainties_positive": true,
+    "target_values_finite": true,
+    "zip_integrity": true
+  },
+  "b1_gates": {
+    "analytic_derivative_positive": true,
+    "central_slope_matches_derivative": true,
+    "finite_center": true,
+    "half_saturation": true,
+    "k_over_rs_degeneracy": true,
+    "large_x_plateau": true,
+    "monotonic_nonnegative_domain": true,
+    "plateau_velocity_squared": true,
+    "small_x_linear": true,
+    "tanh_zero_exact": true
+  },
+  "b2_allowed": true,
+  "member_count": 175,
+  "target": {
+    "all_values_finite": true,
+    "all_velocity_uncertainties_positive": true,
+    "column_counts": [
+      8
     ],
-    "passed": false,
-    "reason": "No archive bytes were retrievable; no unofficial galaxy rows were substituted.",
-    "selected_source": null,
-    "status": "blocked_by_runtime_network"
+    "expected_column_count": 8,
+    "expected_columns": [
+      "Rad",
+      "Vobs",
+      "errV",
+      "Vgas",
+      "Vdisk",
+      "Vbul",
+      "SBdisk",
+      "SBbul"
+    ],
+    "first_row": [
+      0.32,
+      24.4,
+      35.9,
+      0.0,
+      63.28,
+      0.0,
+      1084.92,
+      0.0
+    ],
+    "header_lines": [
+      "# Distance = 13.8 Mpc",
+      "# Rad\tVobs\terrV\tVgas\tVdisk\tVbul\tSBdisk\tSBbul",
+      "# kpc\tkm/s\tkm/s\tkm/s\tkm/s\tkm/s\tL/pc^2\tL/pc^2"
+    ],
+    "last_row": [
+      44.08,
+      149.0,
+      3.0,
+      47.84,
+      61.63,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "radius_strictly_increasing": true,
+    "row_count": 43
   },
-  "b1": {
-    "center": {"V0": 173.0, "model_velocity": 80.0, "v_bar": 80.0},
-    "derivative": {
-      "analytic_central_slope": 11971.6,
-      "forward_difference_central_slope": 11971.599999999362,
-      "relative_error": 5.3331658311720706e-14
-    },
-    "gates": {
-      "analytic_derivative_positive": true,
-      "central_slope_matches_derivative": true,
-      "finite_center": true,
-      "half_saturation": true,
-      "k_over_rs_degeneracy": true,
-      "large_x_plateau": true,
-      "monotonic_nonnegative_domain": true,
-      "plateau_velocity_squared": true,
-      "small_x_linear": true,
-      "tanh_zero_exact": true
-    },
-    "half_saturation": {
-      "example_half_radius": 1.3732653608351368,
-      "example_k_eff": 2.0,
-      "example_r_s": 5.0,
-      "tanh_x_half": 0.49999999999999994,
-      "x_half": 0.5493061443340548
-    },
-    "passed": true,
-    "plateau": {
-      "V0": 173.0,
-      "expected_added_velocity_squared": 29929.0,
-      "observed_at_x_20": 29929.0
-    },
-    "scale_degeneracy": {
-      "comparison": "(k_eff=2,r_s=5) versus (k_eff=4,r_s=10)",
-      "max_absolute_difference": 0.0
-    }
-  },
-  "b2_allowed": false,
-  "environment": {
-    "machine": "x86_64",
-    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
-    "python": "3.13.5"
-  },
-  "runner_scope": "B0 public-data provenance and B1 analytic known-answer audit only; no fit performed",
-  "schema_version": "0.1.0",
-  "verdict": "b1_passed_b0_blocked"
+  "target_bytes": 2075,
+  "target_member": "NGC3198_rotmod.dat",
+  "target_sha256": "17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953",
+  "verdict": "b0_b1_passed"
 }
 ```
 
-## 8. Portable reproduction code
-
-The following standard-library script reproduces the decision-relevant B1 result and the B0 network probe without importing the retained runner:
+## 10. Portable independent verifier
 
 ```python
-import hashlib
-import io
-import json
-import math
-import urllib.request
-import zipfile
 from pathlib import Path
+import hashlib, io, math, zipfile
 
-OFFICIAL = "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip"
-ZENODO = "https://zenodo.org/records/16284118/files/Rotmod_LTG.zip?download=1"
-EXPECTED_MD5 = "e4c8b92766026770ed35e5889064e12b"
-TARGET = "NGC3198_rotmod.dat"
-
-
-def get(url):
-    try:
-        request = urllib.request.Request(url, headers={"User-Agent": "Lineum-B0-B1-reproduction/0.1"})
-        with urllib.request.urlopen(request, timeout=10) as response:
-            return response.read(), None
-    except Exception as exc:
-        return None, f"{type(exc).__name__}: {exc}"
-
-
-def inspect(payload):
-    with zipfile.ZipFile(io.BytesIO(payload)) as archive:
-        assert archive.testzip() is None
-        names = archive.namelist()
-        matches = [name for name in names if Path(name).name == TARGET]
-        assert len(matches) == 1
-        target = archive.read(matches[0])
-    rows = []
-    for line in target.decode("ascii").splitlines():
-        if line.strip() and not line.lstrip().startswith("#"):
-            rows.append([float(item) for item in line.split()])
-    return {
-        "archive_sha256": hashlib.sha256(payload).hexdigest(),
-        "archive_md5": hashlib.md5(payload).hexdigest(),
-        "published_md5_matches": hashlib.md5(payload).hexdigest() == EXPECTED_MD5,
-        "member_count": len(names),
-        "target_sha256": hashlib.sha256(target).hexdigest(),
-        "row_count": len(rows),
-        "column_counts": sorted({len(row) for row in rows}),
-        "finite": all(math.isfinite(value) for row in rows for value in row),
-    }
-
-
-attempts = []
-archive = None
-for source, url in (("official", OFFICIAL), ("zenodo", ZENODO)):
-    archive, error = get(url)
-    attempts.append({"source": source, "url": url, "error": error})
-    if archive is not None:
-        break
-
+payload = Path("Rotmod_LTG.zip").read_bytes()
+assert hashlib.md5(payload).hexdigest() == "e4c8b92766026770ed35e5889064e12b"
+assert hashlib.sha256(payload).hexdigest() == "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588"
+with zipfile.ZipFile(io.BytesIO(payload)) as z:
+    assert z.testzip() is None
+    names = z.namelist()
+    matches = [n for n in names if Path(n).name == "NGC3198_rotmod.dat"]
+    assert len(names) == 175 and len(matches) == 1
+    target = z.read(matches[0])
+assert hashlib.sha256(target).hexdigest() == "17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953"
+rows = [[float(x) for x in line.split()] for line in target.decode().splitlines() if line.strip() and not line.startswith("#")]
+assert len(rows) == 43 and {len(row) for row in rows} == {8}
+assert all(math.isfinite(x) for row in rows for x in row)
+assert all(a[0] < b[0] for a, b in zip(rows, rows[1:]))
+assert all(row[2] > 0 for row in rows)
 small = [1e-8, 1e-6, 1e-4]
 large = [10.0, 20.0, 50.0]
-half_x = math.atanh(0.5)
-v0 = 173.0
-vbar = 80.0
-k = 2.0
-rs = 5.0
-step = 1e-6
-analytic_slope = v0 * v0 * k / rs
-numeric_slope = v0 * v0 * math.tanh(k * step / rs) / step
-grid = [index * 0.01 for index in range(2001)]
-values = [math.tanh(x) for x in grid]
-radii = [index * 0.05 for index in range(401)]
-first = [math.tanh(2.0 * radius / 5.0) for radius in radii]
-second = [math.tanh(4.0 * radius / 10.0) for radius in radii]
-
-gates = {
-    "tanh_zero_exact": math.tanh(0.0) == 0.0,
-    "small_x_linear": max(abs(math.tanh(x) - x) / x for x in small) <= 4e-9,
-    "large_x_plateau": max(abs(1.0 - math.tanh(x)) for x in large) <= 5e-9,
-    "half_saturation": abs(math.tanh(half_x) - 0.5) <= 1e-15,
-    "finite_center": math.sqrt(vbar * vbar + v0 * v0 * math.tanh(0.0)) == vbar,
-    "monotonic_nonnegative_domain": all(values[index + 1] >= values[index] for index in range(len(values) - 1)),
-    "positive_derivative": all(1.0 / math.cosh(x) ** 2 > 0 for x in grid),
-    "plateau_v2": abs(v0 * v0 * math.tanh(20.0) - v0 * v0) <= 1e-12 * v0 * v0,
-    "central_slope": abs(numeric_slope - analytic_slope) / analytic_slope <= 1e-12,
-    "scale_degeneracy": max(abs(a - b) for a, b in zip(first, second)) <= 1e-15,
-}
-
-print(json.dumps({
-    "b0_attempts": attempts,
-    "archive": inspect(archive) if archive is not None else None,
-    "b1_gates": gates,
-    "b1_passed": all(gates.values()),
-}, indent=2))
+assert math.tanh(0.0) == 0.0
+assert max(abs(math.tanh(x)-x)/x for x in small) <= 4e-9
+assert max(abs(1-math.tanh(x)) for x in large) <= 5e-9
+assert abs(math.tanh(math.atanh(0.5))-0.5) <= 1e-15
+v0, k, rs = 173.0, 2.0, 5.0
+assert abs(v0*v0*math.tanh(20)-v0*v0) <= 1e-12*v0*v0
+h=1e-6
+analytic=v0*v0*k/rs
+numeric=v0*v0*math.tanh(k*h/rs)/h
+assert abs(numeric-analytic)/analytic <= 1e-12
+radii=[i*0.05 for i in range(401)]
+assert max(abs(math.tanh(2*r/5)-math.tanh(4*r/10)) for r in radii) <= 1e-15
+print("B0 and B1 passed; B2 allowed")
 ```
-
-## 9. Scientific interpretation
-
-### 9.1 What is implemented
-
-A clean-room evaluator and provenance inspector for the publicly displayed `tanh` form.
-
-### 9.2 What was observed
-
-B1 passed every analytic gate. B0 could not obtain archive bytes because the runtime could not resolve either host.
-
-### 9.3 What may be interpreted cautiously
-
-The public `tanh` term inserts these properties by construction:
-
-- zero added term at the centre;
-- approximately linear growth of the added velocity-squared term at small radius;
-- smooth monotonic transition;
-- a finite outer velocity-squared plateau;
-- bounded amplitude set by `V0`;
-- a transition scale controlled by the ratio `k_eff / r_s`.
-
-These are verified properties of the mathematical comparator, not yet results about galaxies or Lineum.
-
-### 9.4 What remains hypothesis or analogy
-
-It remains hypothetical that Lineum foam relaxation, `phi`, `mu`, `psi` topology, a central vortex, or their shared dynamics can reproduce any of these properties emergently.
-
-### 9.5 Connection to established real physics
-
-SPARC is a real observational database of galaxy rotation curves and baryonic mass models. This checkpoint did not yet compare the public formula with any official SPARC row because the official archive provenance gate remains open.
-
-## 10. Root-programme impact
-
-| Root question | Impact | Narrow statement |
-|---|---|---|
-| Q1 galactic response | constrains | The comparator properties to be replaced are now analytically explicit, but no galaxy fit exists. |
-| Q2 natural saturation | constrains | The benchmark plateau is inserted by `tanh`; it is not evidence of a Lineum attractor. |
-| Q3 information retention | unaffected | No memory or history intervention was performed. |
 
 ## 11. Prohibited conclusions
 
-This checkpoint does not establish that:
+This does not reproduce the public TOLOG fit or any claimed reduced chi-square; prefer `tanh` over alternatives; derive the formula from local dynamics; show a Lineum rotation curve, force, attractor, memory, or black hole; remove the need for dark matter; or justify placing `tanh` in Lineum. The MD5 match is not a digital signature of the server or downloader.
 
-- the public TOLOG NGC 3198 fit is reproduced;
-- any claimed reduced chi-square value is correct;
-- `tanh` is uniquely preferred over another saturator;
-- TOLOG derives the galactic formula from local grid dynamics;
-- Lineum reproduces a galaxy rotation curve;
-- Lineum has a natural attractor;
-- Lineum stores causal information;
-- a central Lineum vortex is a black hole;
-- dark matter is absent or unnecessary;
-- the explicit galactic `tanh` term belongs in the Lineum equation.
+## 12. Next frozen gate
 
-## 12. Narrow decision and next gate
-
-Checkpoint verdict:
-
-`B1 passed; B0 blocked by runtime network; B2 is not allowed.`
-
-The next permissible action is not fitting or parameter tuning. It is to execute the exact retained runner in an environment that can retrieve the official SPARC ZIP, retain the archive and target hashes, and append the resulting B0 receipt. Only a committed `b0_b1_passed` result may unlock B2.
+B2 may now run as a separate checkpoint with the already frozen protocol: literal baryonic squaring, fixed `r_s=5.0 kpc`, `V0 in [0,400] km/s`, `k_eff in [1e-6,100]`, starts `V0=[25,75,150,250]` and `k_eff=[0.01,0.1,1,10]`, tabulated `Vobs`/`errV`, reduced chi-square denominator `N-2`, all starts and residuals retained, baryonic null comparison, and no post-result tuning.
 
 ## 13. Version history
 
-- `0.1.0`: initial B0/B1 execution receipt; B1 passed and B0 was network-blocked.
-- `0.1.1`: preserved the scientific verdict, corrected archive-result classification, regenerated the machine output, added direct classifier controls, and restored the explicit monotonicity check in the portable reproduction code.
+- `0.1.0`: B1 passed; B0 network-blocked; B2 prohibited.
+- `0.1.1`: corrected archive classification; verdict unchanged.
+- `0.2.0`: unchanged runner passed the supplied archive, all B0/B1 gates passed, and B2 was unlocked but not executed.
