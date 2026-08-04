@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Galactic `tanh` Benchmark — B3 Preregistration
 
 **Status:** active  
-**Version:** 0.1.0  
+**Version:** 0.1.1  
 **Evidence cutoff:** 2026-08-04  
 **Scope:** NGC 3198 baryonic-convention sensitivity only; no shape ablation, population fit, or Lineum replacement  
-**Current confidence:** high that the four declared source conventions are operationally distinct; no B3 numerical result has been inspected
+**Current confidence:** high that the four declared source conventions are operationally distinct; no B3 numerical fit result has been inspected
 
 ## 1. Plain purpose
 
@@ -31,7 +31,7 @@ Authoritative public facts:
 - The same table states that `Vdisk` and `Vbul` are tabulated for stellar mass-to-light ratio `M/L = 1 M_sun/L_sun` at 3.6 micrometres.
 - The SPARC master paper discusses a fiducial stellar mass-to-light ratio near `0.5 M_sun/L_sun` for disks.
 - Later SPARC radial-acceleration analyses use fiducial values near `0.5` for disks and `0.7` for bulges.
-- The official table contains negative `Vgas` entries, including four rows in NGC 3198. A signed-force interpretation must therefore preserve the sign in the velocity-squared contribution as `sign(Vgas) * Vgas^2` rather than silently converting every entry to a positive contribution.
+- The official table contains negative `Vgas` entries, including six rows in NGC 3198. A signed-force interpretation must therefore preserve the sign in the velocity-squared contribution as `sign(Vgas) * Vgas^2` rather than silently converting every entry to a positive contribution.
 
 Portable citations:
 
@@ -49,6 +49,7 @@ Input:
 - SHA-256 `17b774ad11e7dd745a067073b76f1909d4de32fa87616df12b64da3f225cf953`;
 - all `43` rows retained;
 - tabulated `Vobs` and `errV` retained unchanged;
+- six rows have `Vgas < 0` and three rows have `Vgas = 0`;
 - no radial exclusion and no uncertainty inflation.
 
 For every lane:
@@ -153,7 +154,7 @@ Required before retention:
 2. a separately written scalar-loop objective recomputation for each best fit;
 3. exact reproduction of the B2 `literal_m1` result within declared floating-point tolerance;
 4. analytic verification that rows with `Vgas=0` are identical under signed and unsigned gas;
-5. verification that the four negative-gas NGC 3198 rows differ only by `2*Vgas^2` in baryonic velocity-squared between gas rules;
+5. verification that the six negative-gas NGC 3198 rows differ only by `2*Vgas^2` in baryonic velocity-squared between gas rules;
 6. at least one alternative optimizer or dense local cross-check for the best authoritative lane;
 7. exact input, runner, output, and retained-table hashes.
 
@@ -177,3 +178,8 @@ No production Lineum code or whitepaper may be changed from B3 alone.
 - `research/lineum-public-tolog-galactic-tanh-b3.md`.
 
 The result report must preserve the full protocol, all decision-relevant values, negative results, uncertainty, reproduction core, root-programme impact, and prohibited conclusions.
+
+## 12. Version history
+
+- `0.1.0`: initial four-lane preregistration.
+- `0.1.1`: pre-fit input audit corrected the negative-gas row count from four to six and recorded three zero-gas rows; no numerical fit result had been inspected.
