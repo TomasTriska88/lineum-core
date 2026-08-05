@@ -52,7 +52,7 @@ i=report.rindex(old_heading); a=report.index('```text',i)+7; b=report.index('```
 old_payload=report[a:b]; old_archive=decode(old_payload,34756)
 assert h(old_archive)==old_archive_sha; lzma.decompress(old_archive)
 
-z=api('GET',f'/repos/{repo}/actions/artifacts/{artifact_id}/zip',binary=True); assert h(z)==artifact_sha
+z=open('/tmp/artifact.zip','rb').read(); assert h(z)==artifact_sha
 with zipfile.ZipFile(io.BytesIO(z)) as f:
     raw=f.read('b4-l1-primary.json'); env=json.loads(f.read('b4-l1-execution-environment.json'))
     source=json.loads(f.read('b4-l1-source-receipt.json')); tests=f.read('b4-l1-pytest.log').decode().strip()
