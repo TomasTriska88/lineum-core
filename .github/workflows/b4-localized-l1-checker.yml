@@ -1,0 +1,106 @@
+name: B4 Localized L1 Checker Interface
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/b4-localized-l1-checker.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: b4-localized-l1-checker-interface
+  cancel-in-progress: true
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install frozen checker dependency
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5
+
+      - name: Fetch committed standalone report
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/research/lineum-public-tolog-galactic-shape-b4.md" \
+            --output lineum-public-tolog-galactic-shape-b4.md
+
+      - name: Extract and verify checker without executing it
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, io, json, lzma, tarfile
+
+          BASE = 0x3400
+          CHECKER_SHA = "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031"
+
+          def decode(payload, expected_bytes):
+              acc = bits = 0
+              out = bytearray()
+              for char in "".join(payload.split()):
+                  value = ord(char) - BASE
+                  if not 0 <= value < (1 << 15):
+                      raise ValueError("invalid Unicode15 payload")
+                  acc = (acc << 15) | value
+                  bits += 15
+                  while bits >= 8 and len(out) < expected_bytes:
+                      bits -= 8
+                      out.append((acc >> bits) & 0xFF)
+                      acc &= (1 << bits) - 1 if bits else 0
+              if len(out) != expected_bytes:
+                  raise ValueError("payload length mismatch")
+              return bytes(out)
+
+          text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
+          heading = "#### Normalized complete-history archive — XZ plus Unicode15"
+          start = text.rindex(heading)
+          block = text.index("```text", start) + len("```text")
+          end = text.index("```", block)
+          compressed = decode(text[block:end], 34756)
+          assert hashlib.sha256(compressed).hexdigest() == "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f"
+          archive = lzma.decompress(compressed)
+          with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as tf:
+              tf.extractall("lineum-b4-standalone")
+          manifest = json.loads(Path("lineum-b4-standalone/MANIFEST.json").read_text(encoding="utf-8"))
+          matches = []
+          for relative, expected in manifest["members"].items():
+              path = Path("lineum-b4-standalone", relative)
+              actual = hashlib.sha256(path.read_bytes()).hexdigest()
+              assert actual == expected
+              if actual == CHECKER_SHA:
+                  matches.append(path)
+          assert len(matches) == 1, matches
+          Path("/tmp/checker-path").write_text(str(matches[0]), encoding="utf-8")
+
+          heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
+          start = text.rindex(heading)
+          first = text.index("```text", start)
+          block = text.index("```text", first + len("```text")) + len("```text")
+          end = text.index("```", block)
+          compressed = decode(text[block:end], 19268)
+          assert hashlib.sha256(compressed).hexdigest() == "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5"
+          raw = lzma.decompress(compressed)
+          assert len(raw) == 228809
+          assert hashlib.sha256(raw).hexdigest() == "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d"
+          json.loads(raw)
+          Path("b4-l1-primary.json").write_bytes(raw)
+          print(f"checker={matches[0]}")
+          PY
+
+      - name: Show frozen checker interface only
+        shell: bash
+        run: |
+          checker="$(cat /tmp/checker-path)"
+          python "$checker" --help
+          echo "--- argument declarations ---"
+          grep -nE 'ArgumentParser|add_argument|def main|__name__' "$checker"
