@@ -30,6 +30,7 @@ jobs:
           import json
           import lzma
           import os
+          import re
           import urllib.request
 
           repo = os.environ["GITHUB_REPOSITORY"]
@@ -56,13 +57,13 @@ jobs:
                   body = response.read()
               return json.loads(body) if body else None
 
-          def sha256(data):
+          def digest(data):
               return hashlib.sha256(data).hexdigest()
 
           def replace_once(text, old, new):
               count = text.count(old)
               if count != 1:
-                  raise AssertionError((old[:120], count))
+                  raise AssertionError((old[:100], count))
               return text.replace(old, new, 1)
 
           def decode_unicode15(payload, expected_bytes):
@@ -82,22 +83,12 @@ jobs:
                   raise ValueError("payload length mismatch")
               return bytes(out)
 
-          def fenced_payload(text, heading, expected_bytes, expected_xz_sha, expected_raw_sha=None):
-              start = text.rindex(heading)
-              metadata = text.index("\n```text\n", start) + len("\n```text\n")
-              metadata_end = text.index("\n```\n", metadata)
-              code = text.index("\n```python\n", metadata_end) + len("\n```python\n")
-              code_end = text.index("\n```\n", code)
-              payload = text.index("\n```text\n", code_end) + len("\n```text\n")
-              payload_end = text.index("\n```\n", payload)
-              encoded = text[payload:payload_end]
-              compressed = decode_unicode15(encoded, expected_bytes)
-              if sha256(compressed) != expected_xz_sha:
-                  raise AssertionError("XZ hash mismatch")
-              raw = lzma.decompress(compressed)
-              if expected_raw_sha and sha256(raw) != expected_raw_sha:
-                  raise AssertionError("raw hash mismatch")
-              return encoded, compressed, raw
+          def text_blocks(segment):
+              return re.findall(
+                  r"^```text\n(.*?)\n```$",
+                  segment,
+                  flags=re.MULTILINE | re.DOTALL,
+              )
 
           current = api("GET", f"/repos/{repo}/git/ref/heads/develop")["object"]["sha"]
           if current != head:
@@ -108,72 +99,78 @@ jobs:
           if item["sha"] != "3b27629dcd9d7dbc4163926ad9af2b67c1a0c719":
               raise AssertionError(item["sha"])
           original_bytes = base64.b64decode(item["content"])
-          if len(original_bytes) != 102586 or sha256(original_bytes) != "21fb8cb698f3ad29b224e4399973501c0a784c25f5ca552e3246d16554b9f3a7":
+          if len(original_bytes) != 102586 or digest(original_bytes) != "21fb8cb698f3ad29b224e4399973501c0a784c25f5ca552e3246d16554b9f3a7":
               raise AssertionError("unexpected report source")
           original = original_bytes.decode("utf-8")
 
           history_heading = "#### Normalized complete-history archive — XZ plus Unicode15"
+          primary_heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
           history_start = original.rindex(history_heading)
-          history_payload = original.index("\n```text\n", history_start) + len("\n```text\n")
-          history_end = original.index("\n```\n", history_payload)
-          history_encoded = original[history_payload:history_end]
-          history_xz = decode_unicode15(history_encoded, 34756)
-          if sha256(history_xz) != "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f":
+          history_end = original.index("\n" + primary_heading, history_start)
+          history_blocks = text_blocks(original[history_start:history_end])
+          if len(history_blocks) != 1:
+              raise AssertionError(("history blocks", len(history_blocks)))
+          history_xz = decode_unicode15(history_blocks[0], 34756)
+          if digest(history_xz) != "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f":
               raise AssertionError("history archive changed")
           lzma.decompress(history_xz)
 
-          primary_heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
-          primary_encoded, primary_xz, primary_raw = fenced_payload(
-              original,
-              primary_heading,
-              19268,
-              "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5",
-              "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
-          )
-          if len(primary_raw) != 228809:
-              raise AssertionError(len(primary_raw))
+          primary_start = original.rindex(primary_heading)
+          primary_end = original.index("\n## Environment limitation", primary_start)
+          primary_blocks = text_blocks(original[primary_start:primary_end])
+          if len(primary_blocks) != 2:
+              raise AssertionError(("primary blocks", len(primary_blocks)))
+          primary_xz = decode_unicode15(primary_blocks[-1], 19268)
+          if digest(primary_xz) != "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5":
+              raise AssertionError("primary XZ changed")
+          primary_raw = lzma.decompress(primary_xz)
+          if len(primary_raw) != 228809 or digest(primary_raw) != "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d":
+              raise AssertionError("primary JSON changed")
           json.loads(primary_raw)
 
           old_loader = '''start = text.rindex(heading)
-          first = text.index("```text", start)
-          block = text.index("```text", first + len("```text")) + len("```text")
-          end = text.index("```", block)
-          compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)'''
+first = text.index("```text", start)
+block = text.index("```text", first + len("```text")) + len("```text")
+end = text.index("```", block)
+compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)'''
           new_loader = '''start = text.rindex(heading)
-          metadata = text.index("\\n```text\\n", start) + len("\\n```text\\n")
-          metadata_end = text.index("\\n```\\n", metadata)
-          code = text.index("\\n```python\\n", metadata_end) + len("\\n```python\\n")
-          code_end = text.index("\\n```\\n", code)
-          block = text.index("\\n```text\\n", code_end) + len("\\n```text\\n")
-          end = text.index("\\n```\\n", block)
-          compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)'''
+section_end = text.index("\\n## Environment limitation", start)
+blocks = re.findall(
+    r"^```text\\n(.*?)\\n```$",
+    text[start:section_end],
+    flags=re.MULTILINE | re.DOTALL,
+)
+if len(blocks) != 2: raise ValueError(f"expected two text blocks, found {len(blocks)}")
+compressed = decode_unicode15(blocks[-1], EXPECTED_XZ_BYTES)'''
 
           report = replace_once(original, "**Version:** 0.10.0  ", "**Version:** 0.10.1  ")
+          report = replace_once(report, "import hashlib, json, lzma\nBASE = 0x3400", "import hashlib, json, lzma, re\nBASE = 0x3400")
           report = replace_once(report, old_loader, new_loader)
+
           failure = "One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence."
-          failure_addition = failure + "\n\nA read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker. The primary-capsule example had selected a quoted fence token inside its own extraction code instead of the payload block. The embedded primary payload and all cryptographic receipts remained unchanged; this was a technical reproduction defect and produced no scientific result."
-          report = replace_once(report, failure, failure_addition)
+          failure_note = failure + "\n\nA read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker because the primary-capsule example selected a quoted fence token inside its own code instead of the payload block. The first correction run (`31052012351`, job `92461095095`) also stopped before any write because its replacement assumed the wrong Markdown block order. Both embedded payloads and every scientific value remained unchanged; these were technical reproduction defects and produced no scientific result."
+          report = replace_once(report, failure, failure_note)
+
           old_next = "Run the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate."
           new_next = "Verify the corrected report-only primary-capsule extraction and inspect the frozen checker interface without executing the scientific recomputation. Then run the checker exactly once against the committed primary JSON and commit its output before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate."
           report = replace_once(report, old_next, new_next)
+
           previous_version = "- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending."
-          new_version = previous_version + "\n- `0.10.1`: corrected only the primary-capsule fence locator after the read-only checker-interface preflight exposed a self-matching extraction example; recorded the failed preflight as a technical non-result; preserved both embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed."
+          new_version = previous_version + "\n- `0.10.1`: corrected only the primary-capsule Markdown fence locator after two fail-closed preflight attempts; recorded both attempts as technical non-results; preserved the historical and primary embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed."
           report = replace_once(report, previous_version, new_version)
 
           corrected_history_start = report.rindex(history_heading)
-          corrected_history_payload = report.index("\n```text\n", corrected_history_start) + len("\n```text\n")
-          corrected_history_end = report.index("\n```\n", corrected_history_payload)
-          if report[corrected_history_payload:corrected_history_end] != history_encoded:
-              raise AssertionError("historical payload text changed")
-          corrected_primary_encoded, corrected_primary_xz, corrected_primary_raw = fenced_payload(
-              report,
-              primary_heading,
-              19268,
-              "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5",
-              "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
-          )
-          if corrected_primary_encoded != primary_encoded or corrected_primary_xz != primary_xz or corrected_primary_raw != primary_raw:
-              raise AssertionError("primary payload changed")
+          corrected_history_end = report.index("\n" + primary_heading, corrected_history_start)
+          corrected_history_blocks = text_blocks(report[corrected_history_start:corrected_history_end])
+          corrected_primary_start = report.rindex(primary_heading)
+          corrected_primary_end = report.index("\n## Environment limitation", corrected_primary_start)
+          corrected_primary_blocks = text_blocks(report[corrected_primary_start:corrected_primary_end])
+          if corrected_history_blocks != history_blocks or corrected_primary_blocks[-1] != primary_blocks[-1]:
+              raise AssertionError("embedded payload text changed")
+          corrected_primary_xz = decode_unicode15(corrected_primary_blocks[-1], 19268)
+          corrected_primary_raw = lzma.decompress(corrected_primary_xz)
+          if digest(corrected_primary_xz) != digest(primary_xz) or digest(corrected_primary_raw) != digest(primary_raw):
+              raise AssertionError("embedded primary data changed")
           if old_loader in report or new_loader not in report:
               raise AssertionError("loader correction missing")
 
@@ -208,7 +205,7 @@ jobs:
               "commit": candidate,
               "report_blob": blob,
               "report_bytes": len(output),
-              "report_sha256": sha256(output),
+              "report_sha256": digest(output),
               "changed": changed,
           }, indent=2, sort_keys=True))
           PY
