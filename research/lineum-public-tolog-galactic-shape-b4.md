@@ -1,17 +1,17 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active; localized L1 standalone harness frozen before the official rerun  
-**Version:** 0.9.9  
+**Status:** active; primary localized-L1 result retained; independent verification pending  
+**Version:** 0.10.0  
 **Evidence cutoff:** 2026-08-05  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Scope:** exactly three public comparison questions; no private TOLOG material; no whitepaper change  
 **Question 1:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
-**Question 2:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
+**Question 2:** `primary_localized_screen_reproduced_no_full_state_recovery_checker_pending`  
 **Question 3:** `no_explicit_scalar_potential_minimum_yet_demonstrated`
 
 ## Standalone record architecture
 
-This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest.
+This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, retained primary result, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest. A second lossless XZ+Unicode15 capsule embeds the exact machine-readable primary JSON produced by the official localized-L1 execution.
 
 No repository path, chat, issue, workflow artifact, or private document is required. Normalization changed only packaging: three opaque historical XZ/Base64 payload bodies were replaced inside the archived historical text by manifest references, while their decoded canonical files were stored as independent members in the same archive. No scientific content, equation, parameter, threshold, metric, result, or chronology was removed.
 
@@ -21,7 +21,7 @@ No repository path, chat, issue, workflow artifact, or private document is requi
 2. Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without noise, clipping, caps, resets, or ad hoc damping, including at a declared discrete equivalent of `r -> 0`?
 3. Can the exact `256 x 256` grid integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?
 
-Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; homogeneous tests show only a partial dissipative `psi` equilibrium, not a full natural attractor; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.
+Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; the official primary localized screen reproduced two cap-dependent partial `psi` recoveries and zero full-state recoveries, with independent verification still pending; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.
 
 Every conclusion separates implementation, reproduced observation, cautious interpretation, hypothesis or analogy, and real-physics connection. A green software test validates only its asserted harness property. An independently verified decision-relevant negative stops tuning and opens the project-owner intuition gate before a replacement mechanism is selected.
 
@@ -51,17 +51,67 @@ loader-based suite         = 9 passed
 archive-only extracted suite = 9 passed
 ```
 
-The checker independently reimplements the spatial update and observables and does not import the runner. No official retained localized-L1 result exists. Earlier uncommitted executions are exploratory and non-evidentiary.
+The checker independently reimplements the spatial update and observables and does not import the runner. The official primary localized-L1 result is retained below, but the independent checker has not yet run. Earlier uncommitted executions remain exploratory and non-evidentiary.
+
+## Primary localized-L1 result — independent verification pending
+
+### Frozen implementation and retained execution
+
+The committed standalone runner executed the preregistered `32 x 32` deterministic screen for `5,000` primary and `1,000` recovery updates across seven lanes, LAP4/LAP8, and `phi0 = 0/1`. No physical parameter or primary threshold changed.
+
+```text
+source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
+workflow run / job = 31048211101 / 92448891365
+artifact id = 8947333992
+artifact ZIP SHA-256 = ca9a9ca05ffe0077ec15dce87ac8309a78b7f2ec114ef84d316f4202d535350c
+primary JSON bytes / SHA-256 = 228809 / 499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d
+source report bytes / SHA-256 = 66581 / 1c0a51921868fc76a7696e2281621c40406d800ce3367f05c032c1283ae5bcd1
+Python / NumPy = 3.13.14 / 2.3.5
+platform = Linux-6.17.0-1020-azure-x86_64-with-glibc2.39
+frozen harness tests = .........                                                                [100%]
+9 passed in 0.19s
+executed cases = 28 of 28
+```
+
+The exact primary JSON is embedded losslessly later in this document; the workflow artifact is provenance only.
+
+### Reproduced observations
+
+- All 28 cases retained finite states over the declared horizon.
+- Baseline produced two localized `psi` recoveries out of four and zero full-state recoveries. Both partial recoveries began at `phi0 = 1` and held `phi` at the explicit `1,000,000` cap; both `phi0 = 0` cases decayed and failed recovery.
+- Removing explicit `tanh` again produced two partial `psi` recoveries and zero full recoveries. Explicit `tanh` was therefore not individually necessary for those two outcomes under these conditions, but no replacement law was identified.
+- Removing the `phi` cap or all hard guards remained finite during this horizon but produced zero recoveries while `phi` reached `12852053.348233`.
+- Removing linear dissipation produced zero recoveries and a maximum pre-perturbation `abs(psi)` of `17981.515115`.
+- Removing the interaction denominator caused two reset events and zero recoveries.
+- LAP4 and LAP8 differed materially in some metrics, but LAP8 did not uniquely provide full-state stabilization.
+
+```json
+{
+  "all_pair_boundedness_and_recovery_statuses_equal": false,
+  "any_material_stencil_metric_advantage": true,
+  "baseline_primary_full_state_recoveries": 0,
+  "baseline_primary_psi_recoveries": 2,
+  "baseline_secondary_nontrivial_psi_recoveries": 0,
+  "baseline_secondary_nontrivial_states": 0,
+  "development_programme_terminal_failure": false,
+  "lap8_specific_stabilization": false,
+  "phase": "localized_l1_screen_completed",
+  "spatial_transport_resolves_phi": false,
+  "stencil_not_decisive_in_l1": false
+}
+```
+
+### Evidence boundary
+
+This checkpoint reaches `reproduced`, not `robust_within_tested_domain`. The independent checker has not yet recomputed the result. The run does not establish a natural attractor, a complete `psi`-`phi` energy cycle, an emergent replacement for `tanh`, a uniquely stabilizing LAP8 stencil, a physical interpretation of the cap or denominator, or a terminal limitation of the wider Lineum programme.
 
 ## Preserved operational failures
 
-The embedded chronology retains missed pre-run Git checkpoints; two strict-JSON storage failures with no retained scientific result; checker `NaN` and wrapper-sensitive independence-test defects; abandoned issue/Actions transport; accidental connector files removed in explicit commits; a rejected nonexistent-branch request; rejected mismatched unreferenced blobs; and an initial compact-capsule loader that matched its own example heading instead of the final archive block. Permanent tests caught the latter before commit; the loader was corrected. These are reproducibility events, not scientific results.
-
-Connector-only atomic publication is frozen as `blob -> tree -> commit -> compare -> non-force fast-forward` when authenticated local Git is unavailable. Two oversized Base64 blob submissions were rejected by the SHA gate because the connector truncated their arguments; both remain unreferenced and never entered repository history. A temporary-branch assembly was also rejected before creation because the connector exposes no authorized branch-deletion operation. The final transport therefore uses the same lossless XZ archive encoded as Unicode15, which carries 15 payload bits per Markdown character and fits in one verified blob without external storage.
+One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence.
 
 ## Exact next action
 
-Run exactly one complete primary localized-L1 execution from the committed frozen source. Commit the primary output and updated report before the independent checker or mechanism selection. Then commit the independent recomputation and only afterward interpret the result within the tested domain.
+Run the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate.
 
 ## Standalone extraction
 
@@ -324,9 +374,167 @@ encoded characters = 18537
 䏉熲訸穿谐㐀㐀㡙愀
 ```
 
+#### Primary localized-L1 machine-readable result — XZ plus Unicode15
+
+```text
+format = lineum-b4-localized-l1-primary-v1
+source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
+raw JSON bytes = 228809
+raw JSON SHA-256 = 499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d
+XZ bytes = 19268
+XZ SHA-256 = bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5
+encoding = Unicode15 (U+3400..U+B3FF; 15 payload bits per code point)
+encoded characters = 10277
+```
+
+Extraction using only the Python standard library:
+
+```python
+from pathlib import Path
+import hashlib, json, lzma
+BASE = 0x3400
+EXPECTED_XZ_BYTES = 19268
+EXPECTED_RAW_BYTES = 228809
+EXPECTED_XZ_SHA256 = "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5"
+EXPECTED_RAW_SHA256 = "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d"
+def decode_unicode15(payload, expected_bytes):
+    acc = bits = 0
+    out = bytearray()
+    for char in "".join(payload.split()):
+        value = ord(char) - BASE
+        if not 0 <= value < (1 << 15): raise ValueError("invalid Unicode15 payload")
+        acc = (acc << 15) | value; bits += 15
+        while bits >= 8 and len(out) < expected_bytes:
+            bits -= 8; out.append((acc >> bits) & 0xFF); acc &= (1 << bits) - 1 if bits else 0
+    if len(out) != expected_bytes: raise ValueError("payload length mismatch")
+    return bytes(out)
+text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
+heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
+start = text.rindex(heading)
+first = text.index("```text", start)
+block = text.index("```text", first + len("```text")) + len("```text")
+end = text.index("```", block)
+compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)
+assert hashlib.sha256(compressed).hexdigest() == EXPECTED_XZ_SHA256
+raw = lzma.decompress(compressed)
+assert len(raw) == EXPECTED_RAW_BYTES and hashlib.sha256(raw).hexdigest() == EXPECTED_RAW_SHA256
+json.loads(raw); Path("b4-l1-primary.json").write_bytes(raw)
+```
+
+```text
+늛銖㽀㐀嬶軑䀄㐡㒎㐀㐂䃵穧䇷䒖㝝㐞钠㛣皐넴闝䃱䝽枙穤曩䐼㶇毾䇥돹睽䨚鯤懤苑鯔轳洼駦鳚釪꠩䍧偼晎匎僚ꉆ䩈芯ꞹ獼䟅나䃅鉹筩䶇蕁鮐ꖊ勋䁡ꐚ皇꺤黐㰭齺懮䊍昷扖䖀蝀㥂洐䕁곋咴媭뎘㫠ꛗ䫁厨潔䄏䴥荐艕倜倃㵤
+厔噌絙ꬤ葲兇㞹搘嚽䀣䘻居龢嘑겣痎놧㥙苹懄裂隟䝜㘗ꋏ鸦䖛錏闅㾉縋偹薽垹怷譬莒翤ꢨ咻櫦꟯襈鬡搥鏻岌碊蝋㙌荞萏ꐡꗮ颼紹圗钖竜ꂳ鼅塲䓃㼽냞䓕咎晞뇎挃毄稹㥅繊黝礣仯諄蝻㡬ꂚ牓㦠돿Ꚍ㡲徠垰궐䨚肛墯㺷搓䗹汀
+滴ꭊ塃讐第ꨪ肬洊挟ꖯ蒜䎺洨杀糥ꣀ罁ꕸ財乇嵝裂緜冐鉵爙瞈兆嶼梹潲ꅄꘟ鱿魈蠋䙊斷긫䏦鎷鱷껌攕泞凗ꬂ煶瓕臾俘敂抝迼諤㑾妐녛ꊠ灵檨儌薊獤嵇臚惣萭播䣤阪蒝児聨曖熌浲㜁殺锿賽魗ꠋꭟ㓾茾곯穳㑉鱠煏Ꜩ諬㗥㖂恓
+啁纁ꦂ熰㯔粼鸷䔟鸳검㺰豿厱纴寴檴甹喥ꦂ鴗눢咱赭劺䙯髦窞颓㪨缧㹟儱ꦌ꒔笊庝吆蜄䨐浡蝛蜈蘣㒁保鶲滏갨渵熕鱃䪷㵩堞ꡌ곝鮍䭔늳旂䄏㜁澁ꁂ躑ꟴ嬊礪缸䲼瀏끽㕅襙焁呼賮㒍帰埔蠐勤蟓㱖㧼罣襕䓘湔爱謖抄ꬭꫬ䤙帝
+囐鼃櫭䵞ꦍ㽁峋囙角禹縲ꀸ祅䣸ꃈ痠劇逕陷歞睶귑䭌뀚韥㓤꺨薭ꄨ뇵葇䖭䑨錆公餮俣蔯帮㙄砢䰔牌相尅㱤꘮ꆊ舎唿顎邌嚻浈ꡓ閺糡鶽꡽潲盋溍㐏ꐬ憸㪎岷㔈䬑뉮噺뇆彚萙暬鼍淣薓犅崴괾篪勩糣䡎䜂箄蠛㼼雗걆鈺墆㕐鯔蹭
+捍㭲豯硁㮑湒峧단怲枂꯫嵰䟳㳽啟遥뀬枍䉳鎿䶶漨㰐ꕦ敛껆蜷輱鯮榓彍䠤귞㸬笡鍊간鄨坕働玾煹燍维禺攊岎侮䝲掛㰱鳊㘯獸螽賱닎忑儰䵻ꅱ䠯蓗䁅鋁㼷蠈篈窵螪ꦒ갢Ʇ䁫负㖒ꙟ㠅欜盇갼돃纻幪㬘媶跿萷긼ꦅ䋖鱗㗺紻驟埗
+糧悠䢜溶垐徢泔柚䠕鏤嵺礩悧꙳䇹慡琴ꢳ镆觺弶鷜禌꒒潲絡갥敀礘䋥喋덾黜梴匝餉䋍蝋돈惛䤰痮禳蕼籈곑꼂鍴䝓搎旼鞷璍絪礣덜㭌阔湭譥ꐹ냭歬꿻蹡ꕿ谞蕀誖鲤㭔㷽䡲秬䋋洗㶍锄攤耶置沵敐蜱ꧡꆽ㓧逻斠껑伷觗撼饩饒町
+競ꯐ骋ꔸ湘䘿抈㽾塑ꠀ깼犁ꩼ敨꟝昆垻罳鍻㽁蓆箖狒誻㡗媬琾卤翶喓㦱撈娠齭袐矮덮恰躶꼘蒍㳙嚼䄬褧暚湝䯣掹皓濓䏩躓蝱滵轔衜橂䪧慝䛳撻竏꥚竷䱺憉牄顆軆梃丛뇋係祝沫蕢跀䆇䔆燮嬯岬嚄隹軞幦煅蜱洤㨱揽ꎥ㬵翧㹳
+殞遷涂府粓경俔幈鍭㜡烘衤盧谡ꞕ㞣珘傟骈㐵鸦㴗䖐ꏬ栶䇉酟蝙睙㠵篧絅簢翟啤儹吟畃亙㡫䁖䪹뎪猱跘坤䊯䪂貭ꠒ泦겪昪萓荃盉귘궲吡ꎘ墑눜嫡댟濌꺦頣䤜닡䌅獇ꄎ柜䯰䎷妞㓿疆ꑥ欨糫訜孡湲聒麲販鎇㱭ꌞ儆꘵놦哗㔾䙘
+疮㻃漅꪿놥뇲鄭趵鲀筷花꾰䴺踭姙楗㳦勯钋䰀欧耚唣꽰旷槕䙝㕦撊橾易㟔䁈깐諐葩蜈㑅綅覆矐꘶踋揓餫冕㰥阻懻ꪗ괨諀䷱꼾㟠ꅢ䫎祣顾鱢ꊔ勔㰴缪搧珄仨酎䒴ꕛ刴敒疚庎苹锚挿砄攵姩邉舠墨㵌䣕늭䶠墝䡣勠䅴箁磜ꪧ趞鋃
+嵾嶤㕙苍髜壖ꐞ䭝腿線䳷뇵怗㟸楄ꔣ峚劺醇乶鼔叀ꖰ婟翬㔕籩怛偌녢ꀲ梽羽羾焴狥軞䖥浪䒬ꞣ꼕笨溋轣댲缗㛍唽怷稐埼檪磸䭇覀韺덪迶㢪誝钱衲驟吸鳈岢絹劖漒肀魋類媨뀙盭겏偃侽膟䋣糂仹彣ꕍ翉汌牺絞恴桡䋦蜥㑅㻳藅
+黰馹頧뀴欱奼肝ꅢꭎ惧拷濥꦳鈋犴岠这屧穡焒儒宥䯌瓷悭ꨃ꿷䊓ꧧ樨鮞萼钎䜉掋嬵由㻬箛旱돃荫耉㾵긻ꎓ䛅㱏䕕咒娔棠糴們ꌔ籵鿾浩偶㶌勣闭䈝㳱殔橮㟙㧲ꎁꙒ玍蟸窍鵧炚癟爊茘鄯ꍪ堪鍓湛龬䮫扭璦枣靳ꚕ溧끜摐댖虂迶
+酲㾛돕毻羡齡揟갽洭筐冼䉹䘇䈣嬛ꦤ꛴㹢碕瀀ꭁ嶢㪋긪鴺䪖塣䋻胗䯀㗯눛㺌꺟㟽꒕桿晁浹瀿놘殌争꨹檋劸ꪭ氞餅劣杷死迭螸ꋈ瘨畤Ꙏ惺伲ꈚ刜蓵Ꝗ鯀熢擊贬껴荫䒃䏣ꌩ皔䇟덮橍叔䣈樑㙉薍躎褸긆䈑軘栙厯漢ꃞ㖇䫆䒧哳銱
+附㕱冀㐽莧脔넅䳊㶻緒数腿碳巕紙Ꙧ䐞蚨礊劒飠㐂旙ꇬ啗ꕶ兿擃䋛䕤ꄍ墲藩꘬劅蘮䜞걔谂㬜䇭骍ꬾ樴䮅巽环箖邯䈛簠楨郗䦦䨀䏻犲玢撱粭꼮苵걦晛闥墲䞬㷞緷䜐䲯㫳牬轿昺十降㩙康喌녫姯䑒硬䝡꼱簕脑憟磔襎笕㙝诤楐犪
+燄顡縔䉤诓彎犫蛷꜡奒潺㡵牡泣牕ꬸ籙璻窑礹偿ꓩ䀴暞㐅廜㩣頷齤㮮ꋰ䟃ꝤꚄ䬫㵸騪诙疏矅胦鄘謦㯹晊焉壂䂳垓滊뇥稐䟆鳡樾僰嫱嚅绍㢊煗椪囆癛蜐铌輡蠳鞰廐戽呝艂硻䃄䊂꟔蹐恀꼓䙍紼鸄唯齜䩈畅旸駴鍜魁葂銻应꯺殬
+侲瓮㦬錚䷥躔韰溕䋟珲滍굤囜鄆樈㠝斤袤ꊆ恫鱦䍫鵾令莒鳬䌯鏦궃谨䳼䪿㕝穔膃㾟噝寺予兽䨖妧焎貊劵吒㩥儒押霻倅굲臃㘃迲诞䊪硇䝼徚豄䵠ꥎ顄蚂刣犡䅌輍諾蟛樱潼㿛꾍鞓㬈凄ꏔ䕛ꂈ涯躭懥欱俾䱐薠䩙娗笆屙尦溓摝㬗
+喞墺埙騼黝ꢹ꯲긵䢛襭䠙瓼紐㫾蟵謗訞熋哗甍䂗陬攆踸卝塤꤭㴈渍㷣额摙檨襮椵購叺㲿鄲㿹弨叚긵酆ꗬ鹐糺䷃䬤㣏敇醑䡔偶岂謺䫓锛結鍶끤莕굜構㢉橬唸珉䒁䯽㥅饭箋潟神歈ꠓ夵椷俾樫珿鰲葽ꓶ溺깸狫圑䭆踬橵滊ꌙ䬵䴊
+ꕶ屜䛮服凎鰃炍稱䖭裍䗢舌ꓱ脣顡删䔠㱜盐㾨竊꒍䗬掇髛鬉㩄脦烗邀槇藍啨糎孤鈻鲃鲑㞤螀譧充旃꣌烿橡嶩盄恵㠢㙘爲噰貘翫榉鳙馶䐒怺焧烯鸮鸐꛸䀿䫮拨꼑顚䬖㭧琭龚旊䄻給沵丘竻㐾汢냏㰎婸椘桜䕲站琟陡㷻鬵㱤紕棠
+ꂀ琠醃㥒矑녯烵特䊄雓睳餖騜癎閧咑圪䳬符摃楳䰼ꞻ牭輼ꦚ琁ꆏ枈紨糓뇭걷殧葧嶕깰杂檊猃瑿䩫摵㘲帛爵扁䂲ꅻ盦㪋꺱鳰昣伬굏静従ꪟ㽁ꉱꟾ긃긓瓍煨僥Ꜻ篺蘪겹谣꼂돬䦢乶鏳元溥生凔ꓫ涣诓䴋缯鯄轫睾蔖渳煇鐵醁隮筶
+蹓䎤潻꡶끿邜닏簂啱㔅㟏貔斈㹷㑟腌淆ꘜꞝ絴逅繭䁗籖ꃐ覇ꁚ䎪胖嘙繜䶜䙟砄鵋䏜麽ꫂ鵞憉匤溚尸䷬䥏篙ꚰ背翔ꖩ哟苏䁾꣮噍巾㲗兕懂抓ꉹ椉囙犽㼎綺㜅岭扤ꝏꮘ烯浼䠛䃫輝琥ꭴ聯锖ꐤ㑎䵜聓㽹蓊廔䀕川苩䢵伫胒蚮愌以
+锉䗡滁㤡䓟荠悶慥績臵龁乣姣娎굟鉪鳋넥ꤤ掟㧒嶻耕癘ꌸ褧銒唀ꍓ㔈㦝眵廚낺䖺䃀䠖ꪳ咚柤䲿䛀鴈寈仝俥炢荱鮠繪鱇馥愌꒷梦蟧捄㗩伮ꇑ匲ꄺ鰁磹艎胩錵䞑䮽Ꙗ鿧苶萋劯㨰㣉鉟比肁䎤䂇頱㡩꩏꽟ꅏ哏碂㵇裄㑉䡲臣蟐ꯏ搎
+踲氈顪淧䑧蜆墺阾顈倒榊荾뇰絴䀯䌤砼抿霼牆蹆擱㠾䨩눪것䑯ꔾ댽ꖑ䖨毽孖巟ꈣ斖꒔紡藹塢躂㺦旪濎邫㛂䬄卬돆敟녮錏㢨漀悿盅慱峽ꦦ鑄醔鵷鑈㤫曙䈤덇㗲咋绢늦㮤榃峭钫雹㰏蕆㕘㺱痮ꈈ俹馝六덥넨藧㞪芘䣧鋒汎繂㓑邍
+閧篌冐弇谥㽞鮑酠䲠猐蓕祪闯粇늵呈嘣뀱鷘葿佸ꭟ勦꿷霭樷鱁幗脂냉鵎稨烔柳㥉䅑䕧㛙뉳甦䖯镄㠐ꛃ鸀㠑熳慎躽㽽蜌㔓敀겁鋏蘬㼇矶袓ꓛ磗觯氏닪宯뎠ꚸ痆ꉾ畩㡐釚䀖낢䘩䈿䈽㚱儝㯐鉂ꥴ뎦劽砹昻Ꞷꭸ㢍吶幕ꀃ葃髴钒匍
+遳駊伛䁑㭦ꏄ釞䦵娈䙲秪絜賲淣䉴㷛眪ꍭ壶蕩㼯返䴷譂资缒굅㺚侪辵㙺ꃛ釆薊媂䦩艌乼錪恶놮Ꜯ螛专㕆緉覃㚻骑嗙猕漊雩㪻塆羖硟亖旡㧝㜅幆慓宵迤䥔嵭豑瑚芜琖抇籌浧犽ꆏ穙뉠蹱飗黉鞐ꃗ꩸㭠ꩆ仦嵠䄧葀㷲绮旡梱苊䎈
+蘱丽婳秾邼尥熤烂烹㶿蒡ꅤ뎝鸝닧㛩㬁党鬣㨫嬂ꬑ跘㳙䔣羴羈虻诒掿峰䄘圏荽瘴炘侵꟎窱燪劭辀꺳ꄈꞏ紪獖ꉋ都㠅罏脍꣉猬秹㟍颱穯櫷䍕㽞罃簁哥넍䮐雽姗冒虒㒥貝곸溕鲱騿鍩页ꯓ嬔䍒䀎岖嘃饴Ꝍ迭ꇷ斠鬠拉㯎䄴驵姞䓬
+砇诏宯㝼嬭ꪺ蛊綗袴㻁ꂨ닿놟趐妟㐖鈸蹄㢿鳭攦겳㮗麣薛ꂊ䒈嘯胱貾墢堲㯑ꪐ義淭ꮷ浑幓㛣䖧豈跊瀔㨞哧㟃忴尟攙뇒彊厽䧷枡吼䃋轤坆孨㴱肼腊埤䶘ꍳ闺䰪炠聚取ꏆ䇟髽亥꽐闛币颷伖䖗鎨挛ꃺ坫涑䰸ꇟ単㒲疝騙黤ꃞ꽐ꃡ
+約恪膣㵶沃廓羥剢㦀䮠夑곑恙囨鍷ꓑ拈㷀紩鯊羐萰Ꝗ㸕薤䤭犘犆虨龭碬軟塙洵䧤麏䟏뉷닌栛䘟黮樒ꙍ迚閃恹涄蕴綐꼁㱬簱녕ꔊ䢎昰강蒦ꍂ䒢䭀羓臮懈꩙꽑㡁㽛仉諄꾄瘶簬㓦脟琕䅕㑰肆ꭐ侥初낧褋熦ꝡ놓眥讄㹁餡꾔歵㘔牄
+䐛鬖蓋ꕭ䠩殎璤賞䴎苑揕穷䘆結㹇賡拚꼦갅놇獢獂噎臌䛀膲䗳㚡ꦜ깏꠯胫皒衣歑忋蠲蘊뉵䜡垢皯䇭㺵紐啳劦褱侕邤傱罴彽嚚㬚䶔愍ꃡ褿浘膲㜶䏿䱡ꧽ㿽星眏汗㝉ꆣ簽鸵苢갚桚䑬꿦缓珹呒濂魵䫭䟔䢐瀵踅糏旬佟㖻庖㿲桫膂
+敎姅㱲萃倉㷎訫ꢴ㵄叁吔鸧淕眷凡徔嫫淬䂿澾刉ꚐꜼ鳻洡癓㣑䟯ꢷ䈚戰㯤䔃䡽낚仙ꉷ䚉禡ꔊ嚔綽徂䞍䨏臫玀䠲螴虒诰黙劖䋪郕ꎧ梟䓿戀纴闲㡐魵畭䰁銼䣂乨燆忸鏘㷯霔㔢䶉羖꾱淈殀䑡柕匷啒软낻俖䉌귏亼緖滌礳䡟葈峅꜐
+ꄮ馆㸲ꘆ綖㘅姁偶䒏䠁㚧谦譅뉅鈦疇ꔏ蝵蒺䄙ꃝ䪕䗺麅椳絼嬫䌐冨袛灞鐈ꟊ懓岇纻龶秴衽稲㨈歔㲏ꠗ靁ꃨ赇苶ꗾ黒綢戄肩蝩奠謿ꉍ茶幫媰界崇蓓㭅닒㮂ꄘ懆䂯䄄䧀劾ꝱ굾媩綣꒚憯굞埊冤禽淕遠竲睩譎楠䏌䫐荜簈厉筐꽽炰
+䶎矨䢏啡놑酀呺静楟恥迣痜緤㝫꺷ꦎ豴겍䄏㼈㶨欶㓎䙌蕾祟飯圢艒抠飇郩긗贀挅乺億诬㛙暺泈榵䋅ꡡ愋굃ꣲ㫰㶠楫磉ꐘ㸼閪悮ꊇꪸ㗬㿾걈㳱鲫ꮧꨆ謐庋镞枲ꥱ攃ꪦ熶从龗눤㽮䮖赓垴馫鶿ꐨ芟禆鋄斖君㖘㴥漘輢㾍戋達澷轉
+鋅毸嶿芗蛜俏鿁殗柏俍閒돋翔䠽陾嫆䕧桅觶星갱銯孈㪙竻䜩顕㳲䠺댝䄋㷲絣䄾ꐾ嗍瓩筽䏸仿ꁹ䑗驑氡ꍌ办댊ꉿ欈鄔氷酵㴑粇婮㠰翐㦍䩱褎䤿侳ꝼꊰ덡䠚飢裠蜔紙帵댯俔嫌嫰绢綶눾㫛㜻椳댽襷赞㙙䂍㺅字豃晓嵡朢躁良埃耚
+馛萕嫏끤痷蕯䰁肾㔜荤谯足脡涺錉讍橎ꎢ㕎邙坘䧻觖䗨䶫餐囩㦯劬鯟挎嬄㭨徻邹㘞㛠㢖ꜯ蓏热葽畨鴵庍㷂酎福層䍢꛴族淵晵ꉿ帺䖰髶躡㰙귾凿嚦瑲迴觸镽揰꬗巡㮠䝴㰑갌羷弳㖯渧蔸碛褄胳蔠蘻筬聴匆槰卺뇳㘣䁇结䙘姂腜
+仨㶇㰧氤ꝲ殼䅤ꀱ璨熘硌莹顸㣑氋鼜娳浀㲸脲䜐圔㰺䷋鹭䜘꾟겉貴勣㥖㕛熆峨禚贙㾛祼䑑奓瓪㘔ꊲ䐈碢ꏂ눻跍㾥䟆塖餫实镵恩曓䋟婰鱵䬯偰䁦寭닰篶蚭ꑚ煫ꨠ群簜꥔劳䤎屨枨㻪㥳嵞琺曺䙷黺䄥晱ꠢ笤沛曩䕻㮁禽绍幎翇걘
+場䭺ꢺꥇ掞菱颡뀁賞꘧觔걜꘻꿮㔱䗿缵鼸ꑂ广誙阝藸㻮洵꜠䅡뎖㥘䖧깪髀噕䷾蜫右爋惄녿鑄ꝟ崧扔锱ꉀ匍䁼儈鵵輚㯗꣋꒞䚪哖疃覼皈罾縄茄癹ꤨ浡㔌诔淎鼮鰓葧豪㣋䨸牘㹌褠꣒䴢腷酂忥㪚閍紱皳鲘琚鐊畵眗䃮亳Ꝡ抌巽꒩
+卷㧴䩬晋憢䷙㡵ꛭ耠傤穝艥扃憴箶荂辩㓎摞聛騘䣦熞罫昏乽눳颳梵圽굳嚉㔶ꅪ烇謾끭䞔五猣䬝祱雛鼊㯵竭㞈钠䥤佗嵈翅䘢谂䡎骤砫㓘鏹蠌莦軎䘦䀍ꮺ꿿燫瘆꼾駥详殈鉺䅇輊ꆤ铔㔮ꭔ䬙濔碨鉺絑矫煯躋灬䄵㯶晡㬃衩䙈榙蓗
+芶厃煫橢镍嚲遻褗裔깹傸䊀㓋괿槩齕墡悰䒈ꢦ꫏洙迫䝃痑㪱涝氎髊鈶莈頏奋㫝㲩謋磣㽘鉼磑綞ꕽ䆤苟孰鄊踽框钃壑溘餔嵰ꝛꤓ踧ꎼ鿵傄鄅껒㲆ꎤ넴壇貘踱塞ꪮ曔贊ꓟ轙轣鵉꫄蟍㛟烳愅군뎬鲵湝ꌀ暇㥂竤ꭢ㟴薹덛蛏锄翾楨
+鱥秃㞭礂ꮡ齷穤ꓴ缓䘣蠚渤教㭳莍蘮刜讅險宫魼焼ꀅ濺尳遻鉥謩箻蹌ꠛ泳㣘䚋䂞꓊ꌇꐞ丅䃩譮薾萘㳡ꩲ䣿榻有轜㺆䴪蒮䣴玞濯䀴䑧ꓡ月憱通铪艔䋨䆉嵗㾆䇢俄㳋碅닊꒵㱊끃庯눴ꕓ鹮虖錆誨甹岷䦀㕺鹍祯挤㾑糰檷蹇槩祶絢
+鯤ꪎ拾痿喯袊䠗㰟䮚援䭮䐣漺귱錀䜆禧礞뇻潑澑抅搐叮篧㖦寂晹嚘纎刵鐞琯骉騦嵳邢눳攃柲耲鷖过굅拋瘖豳偉塅籕绤ꎍ筒肇㡹祽緸存邍㴁鴋櫆䩹㯓蘨㙌楸吏㔃羱긘桪ꊔ䉨慊뇜丧䙋貙꯸妜赉갍䤲赃膣鐌蹷晗虶摼鵖㴣㓞騕䋼
+䱕譲㔫ꯀ鼉騍ꓱ誖鑽鍔鮰挟膤꼲渣枇嬕沠轈䮟㽌湶䅑窑蹭䚦ꎒ陳抐縐羝凁ꭗ憬劐ꫨ圅莌꬯䕡慣寡璇婴닛焾癩㚤䳝圁㤡㙙禁넨郴ꤽ襖棹撀넇䈝稻㴰날扐釲뉊㧶楘飌籀ꖋꋫ病Ꝓ闅曼兒伮䤓瞉茟ꟕ徚鶉賉ꜝ秛芸绚䡀宮侟ꭏ樔ꇰ
+ꁬ薊漨悬掷蟫鐊瑊蓱䯁瓂㛩㲉捥萢鵦䊕갣㯱㪌觔䲘鬊ꢟ傿虋墏ꉱ鏩殣鷾萠鄢鶹赱瑱漧謘祸烲ꭠ獆깺腄洔受墻怇藏馗皎ꀸ骂錺嚇堹琽鷈㐻䂚㪵個零䪚䖡觙嬓ꇺ㹚鄣聏呩끕咼䭶霙鰸妁䖳ꡱ侦嚜萾燐樿廘洸穭晞ꇘ뎮䡢㠄褈奕仚
+憜皍鋬兗豱庙蛁ꮻ扼䟹䱓㟰累鑭䏟䁁楉諀䐋希꾠攕鶎䖔䭇嫎歼櫕㧗㞶䘖嘉务渰訝洌ꥦ袋祈擹䛝뉩嗋箜巗噎ꏐ弤旻薋鄨䦟㷊齧䟪巏躝伴掂낀殶귿㼋梉矂늀鼜聩덤熯賰恘袁珄痟겞捋㐼壃꫉ꊵ㤿鵾晆沜䚿ꪶ鷡蹦妇㢙蓺剛蜆ꊣ河
+䩊溈ꁹ暯毼罐烧㫏嚥㜣蝫浊㒥鳴洃莸簆潬㻀䕫㤣绯꩕軘疛ꈿ鶫놀竞俸奯髩憻穅溙憁淗㳍壪缟欘鍩莠翵놉縎嶍깉꒛䃕鷮䭘杌齹筓口暄걶䬾踃譃鷎髫梹趥ꛂ渳骈簴硯盶冄㱘㶝艰摌趧牺沐伒啵睒䆎崴嗠暊긿ꟳ瑂钅袎秡㮇诜䅊䂨
+粐柙㾇礳挠遘瘮膪䟌ꗤ頍납꥓鋅胩豄櫭㸿琮㖛鈳㠻墅淊䨤譇萉꾚蔡軒頓鮑涥呭䘲僙䳨覒驼譀䒺珘锛鞟帿篺䆝駣硪돡㓙刿埩帑圁뉨籧杏棛斁簱䞑괜冼蛶䏤犜驵淏呮歇晘棒꿮纸㵨㻜敄鎔蝞䷋茪檎兘ꕞ豱磒鬀낏窬嘛嗾隂㑢諆ꂂ
+㪈蕙늩㲷畕ꐵꠛ藀迃哠ꝩ䌋踊蜡䏷藇紹놕抆詇棟ꪦ䘮贾臞擘巋蜩曎昞豍澝ꙁꂶ饌婴莯栣䑇鰋ꋅ蓇媻誛㨅罗薹逨騜ꫛ蜒䡑镯傷ꐘ绷䔀㶲繠䴦悁茉斞仐朆昗坳㲢勂鞟膅皼䰐擤꨺꣊䷫佃妈䄘唿窾磛縔ꬉ茉刭餀間瞐熌觗甕䜍腈詝
+廎踪翔ꩩ䢵迃糸铈惉貭꼮艆筢耶扇榈鈿ꨡ鿎鵔餭覐擇㔨疿䢐礪納㪧韷桂겜躘鞟烔绩䒂㸻㷸萿ꕠꢑ慞粏架鰊䤠轸垈漸蛂贰ꕯ進駩䙪迒꬜ꫀ扅逆긙窷㪃岫䰿彁彈稆끡跨늝㔚㮎栺皉遵晣妀瑹沏吖岜鎲蝠勸䈙龬榰䕗䩓韛搫䧔轝㑌
+跭㨱恆擾桫滸誸諱庛唻덇奅昡釲녑㯒ꀯꔀ葫ꌢ嗯鲢鱽儢罦ꦕ㺷㪝蚽鬂䯚躦䱖薿蕚徱ꄊ㢟겭旳牙却鿃崓鱂电凂诸䴥鴏棑構盡䟎늉㺑何ꄈꛊ넬跔窣帟趿陃鿿鄝㣳峆棥䂦十ꓻ덩躞瘢鶇鋜ꦎꎡ菻畅絀偡䩇誃哮糀뎟摣腨鹵矼猃䧈煹
+歈놚渏薨蜲嗨辧眯丶榵鿄ꉭ稝鴔浀内碆鏲茫嗏ꀭꈟ騻㻰毀串锸蚌䇆椳鷢꿲䚳琯㶻渞㥜䧝ꅼ忐忛䛨䎌窄翻鰆넯蕛捈ꫦ徸婹꿇唋黖籊끘悭嶳菽냵幈篋㙓毂넳諒渚갔ꌅꂻ㿀鶡㾕䭉碐鎆祍灅夠鹸ꔐ긻虇魠胛ꓢ戢㷋䪠ꮭ烎拯哅豑ꍌ
+敹ꋝ聸煮ꅧ餔뇒긟榊늨꾁鸄豯놽篸桅蛵㰤䗛愥嘚湔鈏焕蜱늌毇䯕㝝惞㳆壘㳍潏鮞ꋜ谒㺲膥嬼鉤㟱㱐貗邔ꓚꠏ菋䑕亾醳뀝衐炿睓Ꝕꑱ馷此ꔑ敝痻ꖟꁆ䓵䎗堤䏆陻㨰䜑咦㗠锼賔ꖟ㜣缴걶鍆ꥰ沑䖿紿竵㐣㰺㧯攧泐㵪盈㚖軳뎘跢
+蕈㹑袳꼤㑡靶鷎舅凤氆誯㰱亁儸㥟䍫齽潹䶶昲㒔腜躿丂鑗税矖魈厁댕购湜䍉爇ꤳ釩莿䈸舖ꕾ귺驉鿩润殳洅굅豉慰吺梮鶂㙵㙃䒿厞㩇頉俞嗔桕䳌废遰靦낿ꢰ莰䪫唴膅劘놅岌愂꭫䯩氹漅玛滧翓㙾鳮㫳宿䩫ꅙ誽儏䆰螇唢ꀫ爓樾
+甥꧳ꠑ瞺仓囡鏂㑜鍞괲孅䊞害귔藫蒏ꖀꏕ韙嫒咸䜚䇄㱦㿅奈ꗥ媎凅撒甑㪒䬋湨끄挎彺꽞聸䂛闵䱇㦂䤘䇣衵僵纱氢烵骒疋碸词璥嘄憥䠜訙ꏏ䨑豾䝤代坸ꃁ堄醄躁ꪄ哮㣹ꅐ击朳梣ꖘ䳰䫚棍爵剏㲀斢鶈燮扠裤繞㵓㒳㷏Ꞗ淺껕润
+踞㤗㾜秸䍌賆岬䄋徇裮谨棎뇅虬鐍闯嫈屌艋䇦ꯣ鉜㾴垂䭈矊膪鄀衏州ꞔ橝曌纄筱ꇐ旊辜㓕籙㞞祸兊慫䔃飾揷熽귘堯䓫殳䡔枣ꋁꄆ菹擰蹏㤤羢盪哑郆孑床䎫ꌢ㔡抃貰嫵䗰閰笻敖禼犽䵘㘽牸꽂䤘㢃鎔ꖱ坍ꥴ㞐嘼蕈ꕨ彫篢䖢踸
+漴佡巌暌爥㮊艸껻獙橐䁒鱔蜠㼥꛻芞諑褑做窹挕穥硇鏧귻㗂鼠导ꇆ瓟球蠅石緦㒡꾨叐鈴廙腼椻黋絛㻲䍁ꆏ薛䧪潞煢궮蝚赙鯒臸䳋唅䁐겁蘣ꎯ䡾昭ꕘ朊꒵괄蹐亪專磵䴎矫ꃱ䈕㲇骐绞㧎ꇲ䠌溫齳苉㨮脭岟㙫椸浮괇깵㚁櫲少蠛
+顲揮䪶꾟親꒨㓠㼤䨜㭵嶫䃎ꮱꠟ燽幩䉌責匡伐皟塷䇮欦忂棈礍鼅Ꞛ糇逡顋㠈ꡞ苡낉뀅镤꨸䎋䙰迚넍魊毗䯂桮抬늸覢铗韋䧰椇事亠䝆放恴ꠑ哤園㩹愼訾笑꼡䎪㶡㰘䀄約Ꙅꈆ藽罍捻ꜭ衶꬟堜暼膘㯈䕷狀旮椃龐ꭃ娌固ꚝ鬦魿㸊
+㻤㺴㷅缆咚賓防ꢮ輸筈瓸ꨛ烡粘狉㴊䯛气䊎廃䵴櫁脁簮䜇蔛臃禛懬荇悎꿓䱝読駺㴲釻ꤷ䠱乚䇨嶫货㤄堋㵂薜䍬냰峎䭺䲂貰婎鸹惭㓵鵕䨴ꩾ鼻䬉㳄赦霪訢糤ꐇ蕱衊邩ꤹꃴ尋縗骜꾖㧽渀幛陎爈㭖豄ꅹ儲놴衈䊂ꦤ骾䮣崶壂鎕鈑
+䡝䤶乘뉨꒕㛯㽍陿게颪賸屩堕ꩇ渱湊泰鐞䠖浬䘔䃷㩁袛滍疴㶽袚櫙䷻㨐訏曏之砕㧋㛱ꝑ檹鵻粃査鏟꥓迮ꇙ凯窐긿낳踺硍謓条諐崺榢蹯敂扭䀺㙘濽䄘磅ꪌ将胏ꅛ䶇넩劦邡轖ꔽ藘膪鲙酽悊ꋽ鐖悔㒙溲赙争耺羂굩뉬吣篊熆璲꼾
+圳迶蠬功䚂酑幪槔锚닶葖窾㤄暐潏㹌涘䠝㫯䓞䳔귶艼碡梈㞮謒㲸꘣䢪鷒㚜飵熪鶜圑㓧㤁ꛫ꜖꫾顒㸓抋堝櫂患蔬潉瞁祣傌ꢈ㫐覕殩溩Ꝓ鼷熑詯冊ꑤ䀆悞锎긥咵亍穯諗䔏壛닞㖑辺鼒黋褋瘅䢨怉긧瀴秆ꊫ䤽芴䒄箎蟖㳈牢菄驛꿻
+焹瀀弄㵞胭鲎黻俼嗟䣉輢铺圊吮늠旀ꔩꜮ巖綖玛徱遡璻簗깽随瀼鴉癕ꏢ棶熸燫儂蕕ꍢ㴃ꔔ鹷뇤鞒㽖炎曮驉茽鏔剾嶤갓蹕齉辀喚ꈎ龵訥녜貝搴꭯䚂躎熓橏䎋瓓袅吝屚卬舶㛬墣겝㺥扽徆痬譼啵違蕺蠯摙䚎砵劐䓂泒樝苼苄禮嚿
+蝚閟ꣿ赏㤕兯녫鼺ꔻ殶沽葩擻鶲䁗ꂝ䲱鉱觖灝嫓嬚꽺䏣冽餛攦舧嬛洆閨麌苩鏀磢皯腎鏁馥職贗婺水襈葙䣱焛牲捐磛址䦰种堯綌㙺䔂䧁䍥蔹䳇篥褂鶒阀鳞䪇ꋋ顃笡敹ꭿ狧꾵蘘宂瀡晵櫓篶欤ꩽꘚ䑉訦隫壏訝鵶녣䨑鳿刔系厢㙗
+걢珖㮧㢭箻肔躨铎䝫檞鲷碩뀮ꚉ渪Ꟗ㺂㚴垁鹘凹꺭蛙咚淜烕沴啄屐뎝綌㤾謰㹌ꖐ嗛恎ꃲ喆抠ꊡ橁肓㗴䧧깷눥䦣鸝돖鯸犹ꄅꬪ簊鏹㷬呰鬹寚傾ꃞ屓䷯巍ꏓ叁唚貗韸ꞡ镊粇姴輀郓蟪꿴徱僑髛駘祊鵂怮臇珞昻暠ꆭ姮庵㩘搈颱뎧
+꺴긓紼䜠秎㭗蝐潍갳㽈謟蝼ꋻ䄖觮䩟瀀蚁麙矺肳绀癓益꾽굖ꗾ藋蠞ꆽ矈駼ꢘ壖觴꘰漅鵫颃禛괏ꉱ揆澎岞놇傿嫚嚉녾欘㗱宂唪㢖㮓稺䙷聦䰎貕寶늩㢚蝦溧ꜫ褽莋摑䗓榍踕鎽踂ꍕ龑ꪔ䇤嚎橌硕鵹壑鐚嘼耿ꂳ浰䩮夅布稄㱈冭ꃢ
+訛㷽瓲斀俀䥲跦뎮珁ꀶ芫窮ꉸ湆넡晜嗒ꌧ珯蔦馄錒閁鐘䑰䪣ꠥ䬈飹ꔚ䰔䐓不㾼㟾熉斂萹稏疖镊忆攘饙驝鲅消糘牅塌㺿㹴冠呃龅ꭷ窜䪰耩㔣댬种鯫㺕㿕㫒䚏䖹誽ꌫ僂鑀崂椻玭踼鳊䪡敥撛ꔄ㪬耋愙檆깚ꂵ蟚袠錥炽㖕㾀㟞㵖斶
+昢粷弍胓䅭蘬縫珿㲎鸷蕍ꛖ螉熕蜛餸氼礴癝牕劫痷㴃僒皇删瑷泂佚ꪛ㯛䈃薁宅訐涕䂐鍙淐阝尻끩侵㬢ꑒ畩坴泲磙剦抑繐湜钾轌焠楇ꐒ冲껍情詳객偕饒砥ꄘ聢揶嶶꫎檋㥶鈛䨭㔯䛏湬ꗗ娅㵮碨壇淣䑙䡑謱㧀䆻擠釀阛助鏗鹉㩀
+槔薹秴镉稜揠伥俜雈㰍鋴ꔖ媩꣏匧捔嘳穋䒬㬜䴋柜녝䇅Ꞵ龤韄ꑿ怈尡葘饷疸罢㒯摴祠校棌倢䢩襲紧㰋㤁㫗鱞趋烲ꞿ碰埚若徫㞷龜碕踺誛馟規肉꒠剐ꀩ軼徧ꦀ嫆냀瘼輥䛁Ꙑ䈈涊㭥接낏㵬ꒊ囙酢钩䪦畗桒䧁鄟ꪢ簱噕㭟碝겫冔
+꾮㞢芻攑ꑏ坕槎曗䆀䉍軰梛怩錪懂纄錅剪䵖牰䫴榟궐ꋇꩁ㯇鋊ꦧ泖䢜㿃皊ꛡ芏ꃌ峒䫯拈녿宪鋭醿Ʂ齩恻坘漏늀氺编꒣簂塃ꀙ衉喉댝域鏚繴궫閸擦怌䐥柾聻㢕곇䘖ꊯ냶㦺ꇶ诠㴅痹湢䱼䱤ꊓ독넛㑂䒊꫚꺥猫蔣꼹鄃滓ꍍꝐ䶏譸
+豬彰ꀩꀜ岄諫扼㘔䧲겙嶰殥婓淎蠃疳垃胕真䍚㒾乒麰苀賅訳ꝇ堇繰䞔欀楂錄뉮郕嬼襩鹋껂䲟刕慂伬烳穌薤ꢜ䣏樽궇菄棾黆閏㚤溮歊鑂槓嘺㡁鿥趑响狪㦳妤輠ꇦ㛢鑾迃陥䒖꽜藪菘嘘銱垠侐窌㧮辷蛩㮌践靤纐贯䂏㺛哌꿘ꋑ㮣
+㷔㛊夝䧙緪羶ꈪ絻絉穙㼩豤ꃌ赔鴨剗暗珍韵糘ꑧ沱눚痦羽救悏锒誐ꞡ㱳鵉䑣僝栊墥倴鍇ꤽꛅ们鼩꽝䠅栳ꃛ轌烹ꆾ剃煖ꁬ搯閄榀風虍臍䜧唆䬘餝䁉腇扬清㾅ꍞ霠邸꼊兹档㯘厓锟隍搇䧁顗格鰩鄎鵎蟙熃ꘁ䪿釼詧뉇ꚃ崪䅭䍦䂲
+䟜黁굗抠纄ꖉ㜹餠钢匕纣坋꼰ꉏ浧ꬕ袲䙿꫞꽴ꥏ薶皘ꮻ魫褢䈙蘖䪚꼿㪩糉䚂盃鮔㪳谾栝霁擉頦䌼嚻ꚏ餠縒逛簲凙媌䄤颫䎐倮湃菡瀫牬䇪樚霛긩賞旜镃䩈題潘黁끀罖鞠哆넭焜斍䰨騇䅣繱贁査曮莩蜦䷋蜌ꅆ聞ꬽ芠箮嗥㬐Ꞽ武
+ꈸ㻤丼禢墻肱䨐ꪏ㷯䝗慍꠪麜奊꼲昐妏뎤㹨㢩軸ꃇ竔禰铄㭣鏔钌澿杴ꈡ걇痕男鳚篆䙭担痿炩㢨䑀懟轂蚭愃ꤟ磽华譣枫䘤䢇瞭帅ꋌ과눫飑ꪅ鑾嫐㣘遘鷜剃迫龞娙鉈椤疹꜖现䱊䫜佁做篬鋍㞻燒과ꞽ長ꑅ䎘䅚绀經豩芾꧆䲘譳淘
+概軮䍃䢾烎㒯榲ꖜ棲欹籗衃狴곊埝圗Ꜥ㺵琠䬫褊淹毋苟礃乘珒㑬ꌢ剶깭匰儍驱行粒䋰卽犉傟㜤ꂚ骜瑘拠䅴炁ꇐ喅姱遻樘嚄毥鏎鴽䨵뎳寪謓挚砌㷢呖㪀枅挶赐䐅鎻䭵ꙋ䁔磅鎚铅簀Ꞽ悑䕭꾸㳣靊勉弈傱豱ꀝ辳ꈾ㨈㨾肈䘙糨꫙
+㦛胚ꐞ꾌练髂毂鼸嵜㯩搝蠃ꝟꞕ䶐䆑踕㟮㕎넲養勆枑鷙緺ꓐ稜꤭疑邋㘭꣗㒦鄌嶲贊枈镧簆絞䐰剐簻ꛫ欀逧靐瘪颗㞣鳬欅䍩餟ꊨ躵禖扒窦翇帐羘ꯠ爩跒닏蹸㨨嫱ꙮ䙜柈羇匈迻䈬厓鲶皩㗳滆等楓䞕㛞닾㣾喝ꌘ篏砿扂正䢿傲售
+縻憟囙㔱ꆚ棙飄㔌覅䀗塎䓱治擲磒돪䌰Ꝟ犊郓藙卓鷝꒍㜓墊楺穬꣇垎Ƛ넊㬱꠼扞憡㴹㡶囍揱䟦䟸䮔䴺裒略㬭硬糗企嚶浗瞳餝舶簕㻨㜓读贞穯ꐿ酇竷놆憉䕯㜯ꢋ钚輑襭䌖圥㞇柠㓈焄瀭鹻䣼蚮늸㙃꯲歭佅ꪤ延熧炨ꈥ疴꫹皞䆷
+练ꝲꙪ复龸䥹皙逻苒鳕㙵埸ꧪ釵䫥賮䡙桟蔤兌䲿곬Ꞣ矓櫊轒询艫室奬䅍㼤ꠇꯒ㦞胍뇩沟盘㾕絒㾍荑契琪銴驁晊陨㒘薫鶻皟燧覥덑䦿峡醂饰璬㽅庴䛠䒾僧蟼덮ꉃ扖Ꞽꢷ냚嬽汁溧顕䇹瑧炅傯ꆊ남年硭牏荁鿺ꓰ藃顲䂠閍㩄䫋ꈬ
+ꮢ겾ꪛ货恶孟竕騟昰耥鷴縻鰥軝趜漯車瑕对㡴卩套軪艤鈅彌扔䱰ꕑ䈋塭涡嬟ꅪ綂涪谀귍蟀獑龘俞諮弻㳆糁麝熬댪㡕꫁䆼怵㲿梩ꅓ㢴ꩮ絾剧ꑻ㵙㴋宝塵깩媀ꅬ㠱愳煌ꁲ隊厅䄤趍ꪴ緧杉綜녮ꖃ犭껗捾狵嶔墼丞氂涣畇阍螛ꭊ㞂
+偃꓃止妰轻껜鴱热娪䢖㹻视㼄脄㰕瘳欫ꧬ丗ꡞ귄鿍ꟲ柝毂䅵겧舏澢漒瀶滹넪孞繎ꓤ䶰秄䧮燯㹋罽攼ꦻ麹驈汼壩㺀ꕀ덼瀄鑐簇瑲㥻瀊犍놺䶐鎝龨䞻덻낦ꀅ碨ꒈ豁凵䣝赒簙過Ꙑ㑦通敍概藁㯿铻늪ꖴ桿겢羦ꃄ㾋產䇋굎ꕢ篋帪棺
+䭲㟗坧想㦑鎋덏肛㞐뀌䊀桞䊽䚐蛠蝸㬘顆䜋Ꝍ轨䟵晀眱瘯ꦘ䡒胀郘䯹䘼鸠恣搏硩㐭磒矿杜냔㥑鶶뉰嵜胦類慣䱑鵪끢甭暷獺䫞㷱豪㨲岷穑揖䞣䄇汬葁꒵㥢眓ꓗꀙ撆鱜盩娆焹꧳ꥦ鍙欓Ꚙ奎仏䶛踧鄁돞焌䌛攸䁺㦺錹䝕瑋㸧憄ꛨ
+Ꝏ骔沾器鬨帆ꙫ讱攰焤뀚걷㣞㹛귁裲錝挮誽氱胁捉鈉䠰ꧪ螹懍蔀酽㗊捷渮毑弎虓噑驁祱焆㭀蔓蠿䎱禽䎲塑醠誵깸깜碠鉝螄镊壧悔愠徥ꘟ䌸䰱屳僡焢縞䳤僮㖻鑛䂍逐鬋彄꠯睻渳辄䝦墁筎㗜蝏阝䑰理䓚㘣ꅋ聬ꚣ輳査妺皀鳷顱
+騘梍莲咂嶿낤墂栾貅ꐰ皙鿑氀涅ꚼ꞉膍奏瘯Ꝙ䄐婭㠮덠秣䕁葤耦ꐇ洸砻岴釸羜돽蒋蝆徒蕍ꬥ㐩槗㕵协㾴餧㞎鬋蓝ꤗ譜徻㞰酛羥霦穨墪滹냏苅旟黷ꕶ瀘늆㛈郎盥걥躨蹡椌圱껇䭶㦦ꃇ䋁扁鐍㮉徣嬓瑉䠎积羊鎏鷶䩳枙淲닌䦆ꮬ
+砯䂹脷谍魚隢䘛婡㞩涙寯箷㻏㜰萪抉宄淺夣蹺㪟垖嶜派樃多繬㷭轙瑫皐殐蟬㚍撹䳊囅峸僛道ꬩꚚ灋浢䂶衮ꌝ夁羠媮ꄪ閬䩅霡荶氻儈絹녻毵跮襼衊婶骨讹訛纡㬬耝櫛勐珒翐䧘ꢅ鿁䴕斝䲩竫䯆忔꼝雉ꕶ苫䠇ꁨ礕竑ꉡ淞嶎畛㬦
+䃻籿䜘㒩㝾䟱㸚䄐步宽䛫訾䊒ꥡꗡ㽆䥔兦檿繛㞇㸆廘躤灞㯔燈ꭋ謝䶦다黠蔔댃恮괵鬈豽ꁐ栧作使蜭惕髡槬旾낻嗋檄嶩鮅眉銨軃睙䬯鎏䪖湐龣嶕녕㴜䩿剄銟㨤㩵駲㳓鿿䱐螭ꇹ闾齹珶堍埀芑㤂铌驢㿼泂琓婊ꔷ蛯䥄鐌赱粰昉囎
+珏㭺韠㣊踿繣닔鸗佦緾媙剩䦣뉮㸯겻辆楒㞅録墺Ꚋ鐚鏃槬汅䐍䏴髪꓏鈸嫲㴮鰅耝讦鞌䶍꓌鄽貘ꧯ䣠騺䝚㘕炃ꅮ郲鄟貖徘겔꺈髨蛯諶铹깱圲襄꽯꠼鄴㪃脐䳨ꈊ含兡襶鏍㴁䡞㠦銨嵢犡꼲㦻謳꿣㳮䝔꘾䬥牛咶䄷坂旕狽謇枩扜争
+䬄譈㛿㭖䮙貖焌ꁁ㰾鏨謦運㿟詉䤚傆讐㖪餖䞞瓈㦑궞炿徾灟䢷衄緼꿒粵鮓䠛꧸筣浐돝楅橽곻䶌涞ꍞ㡎韾佊ꀫ澲䄃皛鞼剛蟣婊灪啪搻淫䟏蕂䜤㼬濏䎦胦ꦂ㥓䭰樤㕿韽兵곊柧喛驩䭌䖥꬝競㮃鱡弮穆缙ꉗꗻ膕滌㞀䥽䨶喟䥪ꭃ琿
+꩖窽侪睷靈獏孷摬ꬷ婌掱꒲뎬騻鎁㗗꯽䛪蝴噲굍漎䚣憳褻焨䕦劽䘗梟䤝걽㑿伵嶳㱙獴偫끽愶ꊰ櫔觴긐隲喹慍㒶俭ꙃ㒃嚼刞佌龐郯弅箣㢫끟渵疣河酵鹨䃸䁸ꄽꉗ鏠悡韣ꈡ噟ꂥ骆㬙孃韛냥눽鸩屴兦壙拪꺑匼碽ꃛ溿㨗稯劃䴳ꆾ
+圀髕늳䎓瘊䓦낳熆泳乵㙊䵍䠭黺藱搰糵枚郺裕澊溲㠷篠韟睖鲵䵜绡薍끎嘾砱㲰ꚛ꜄琅ꮈ憪賙夛ꅬ葱㔥꼲꒹ꠒ诽挀脎暵굑觟㲘㾪蹗ꑊꭢ䤯逌餼貋詻䠒瀧黜뎎锖僁嶒竬昙數ꌍ頺꤬訡粩襂㔢筗铱鰃疱䯪勅鼪繠ꌟ䳮拹琾䄠㥱䈈般
+䎩늿贪넅焑霳㔝橜鵨꜈凵겷屪埉倹鿞雲汱醦槔㙙己谽倪泘꣱䮁邓㸢嬀俠輆㽜醵悳ꖣ雰㖛걐뀢俘窠䖳檟䴛渾梫貂螛难斊鯈꜕踙蓥䭙芫螉ꢐ䟌攉搅帤軱凔伟颓귋羿騵癕礢湣恼夿耢喤酀畋燭㴔ꬄ軋睴嫺濺귡湻检摜ꋩ欘遳碦轐䄗
+鿀肪㰩戀怚㦬稇돍聻㯶苑鞭㘕㜀癰睇㞟彄欠乃겜눩珬仍䫜苹ꚠ矫ꉮ繜鄘屏䅯恍酀擀襯礃鿭胠氘腣䮢ꡊ嗄踂덐嵇踧꒜慎耮貃閨䃓뇇且桠ꬰ愩ꈦ摷䱨粋ꂞ素鲜齮曈线㫏ꪛ銯䗉黵꡿蠉璐鵎鸢鯙㻾䄖窞镇教㧐位烢嚹䑶蓴꼸蠛ꁛ㿁
+䬖䁴搳꜆際溾檨焱뎆䪂顨膿腠瞚睒桓緃漑抂暟ꏛ唂冭竷黕甼䗸魮栋渜除㭭ꦣ髜橎䀫膰芘蘿誖㘐愽啧菡ꯙ犻绽镻䬔钻卋阇蜵籬霴砇怿ꈸ鮑濺塿膑襚ꅺ瓞驐跈蹷䢋崹劘㠦鮳閤做馐颜崨秔氬㶿韗吵꿗眏環姚橘䔻䯽㤯絵闈珮曠呲
+䷚濤陳鿄雿讎䅬唨向髍塊忍埨돜氾귨ꠚ䗒蝉彘䛇醩柤䠘㞉縗冄䱠鴰厜楪꫉㥃汕琛唞坄稥啄謠嗞䷇崁佴꽸沓㛉淭鼌靀齋㰥麶臖眾刈䛃臉ꈭ䯨㽻䦚桿㧎灄朕嵈栈鏷獨儀䠥꥟碚揍ꌁ꛿䲰㶸䥫藐霦㺧逽绀鶗䭕財烾䀲ꮹ銢呋䗑뇹㛥
+躝㥾赒䦈软甆䑿欺黆ꉺ噜柀峐箵㚤襆䣂蹙扬螦ꬠ騫畓䵋藙鹟蘚ꍦ旫螳騻ꘙ갣藯啧䀥狰㠲垽髱䝎㭄갆䋠婬鋺㑰柂謍剿蜿阮菰蟨㨺琘碡瓤莞㑂㓿衑肑窐蒆弎戣巙怶踷摽躚袦塬骂冹帧扊䥙ꂠ呹龁꽅ꘆ㰿訠㥫ꍺ粳ꮘ臐褥揶댖柺膖
+䭨櫨硵䈛絋囗㝣諥䔢䪣菑悈妀꣍叏ꑇꢐ壭菩䱗垳褘媉紎啱㿳㸆壹醆烿皙䗮䙈뉉鮉䩯陧꜖奋䄼넸ꂥ嘨玚堔㻄籢獣翬㷀昊韱枯罿碝鐮䔊囫呵茀族㫂龳殾鿮侈鶓껕襷悪䜿郐晼亪㥨猯㩆ꌙ舞䪚珇ꅳ䚩鮾㨧豪䲯乍鼁ꋁ䃒溙餀蔡걥ꢹ
+縫鰺ꝥ㧼霼渁㳂깆鬍袕拌㒼賷躸徕貊脎怃泱䍖蝳烲呂瞊㞬ꖪ礥䀙苛䶿㫌㧰㬆ꩶ浲見倐㔃溥鳵䤤嗚韨楽睊誋槧덼瀿夓瑟窹㣲癭괥꥚꥾適䜄㪎幗Ꚉꨤ㚹搧慷掟鉄꽘仩筆贔脅㭩㣽䅷匎ꊴ䙇莆峐䚸髎泚榑鲿闪㶧籥꣋欹ꩢ蓯趍㠱荹
+者槳醎欑綃彁探宊鮦鋖菍襓䓳爦敷剘ꀆ鏊ꄎ歮鼽郪鸏垂鋂褅瑷높鎥㑶巊艒揋媺䎢堫㯌并飵穼㷷佦ꉌ絯嫺ꦊ碀䦞嗿糘㝾䁇昭掤哴ꫪ闞䡂갑袋㓙堕愅鞛䎵醩溢锗同姈瑊羱歙恚䆲㬎瓢蟒綆鴮䋠䡪诠超㯭馪懱噂㥚鞱鉿違㗜䳃楮䓭
+祃曊崹譒熯㖅紤㪐玅桹鼌䌉鮄燥鮐度繝鍁筬桊桴谧礬ꑨ啞鷈濜䡐嚑鑀䀾䯤癠㞊趪놘耺琣攝蒯悀竜羸䖟뀝늣㗕鈢锹㥯埄겻唭箜峽换ꃱ銥辆㭟㙱嘁籩甫嚃僰靁莣镠懔筡犋Ꚑ㮀孋溶唠稈鞼弚㭺ꩶ닌鸘似孉㔍䲱ꛜ珰皞襡躪檆䚬搤
+㠪넨溛虯긧ꊠ㛨ꩰ㡠擓洞䴮㑄㿫嗉摙壓䴿ꅟ秉枥ꁨ柽庇输㴤囙箃篅撀ꇨ鴙䙴彐巠ꕙꆋ麶池뉃蝬賗编筲榐裋䷃佽顱譒ꞻ蕅箇늾祦㤅鋘捼蓻䚋ꩧ褣軲演諣櫊蓥ꇰ濋熱悹楔谘重路霺朱拓㱁㷡搩궍䨩ꦾ傮齾㟝蜈軐貮ꉸ苂槒ꯋ㦺佁
+牳彥㘢哄饅䙄憇ꝁ㔬ꁩ紮蠽ꖎ㔤괵擛㧎煩瞈뇀繧缂耮絿媶銖頞驞辧瓆눗㽯敪ꓵ硋榗滏ꥯ睒ꮆ煈㦴卤淼䪩砰忚坽䩸橙矂댑僦頕茍㼻喽騡覦喒侄䣄䆼㦢傜仲岅駁渵攲騘嫢馥㘕虜㞁尞賈㿪錁ꅏ鋟㨰䲣讬㙒㥆䭜斿娦攇㳰댢弨ꎪ磰
+恶굘箫贏㺌冨ꑬ码奟穮鐊ꭓꓵ矸謄紆ꠙ枭䣢㑼篫䳰䝰ꊳ葟괉凲䦘迾迶깳掘苺烥ꒋ넶隙歶㘘괜ꇴ埚冬賋㵢䔤裡靦䵹丗駶㵣是揅놗品蔕釿䥚晥淲䫵嫱끷益釥稩添饴陯鏃棵鶹咉蓩眻ꂁ艷莨䉪亪鲓醇㾻絿灎瓩䌷啬ꬴ纾ꖲ爰醳敜蹫
+䄣桯攪嬨簐鳼准萼ꤾ꾏鈐絒敺裄揃抻꫻彛韛畵䟛槜谪䋣錗㸾衪砲熗莖城庸꫰臬掆琐鋤䤩尭孽幇曙劌谼擎媭咜蒷눫浙䅗螳体纣䡵乌㟷䀵薝謤䶿鹚䷐畍䗧郅翇䗅ꎦꃳ塲萻緓肧㖼擛䋕䷅貤餴顆潀꓊榬牓鶏树峸偨禘埈㠈芺䬔䌃損
+Ꙏ儧㐢녆괔䤹鍎絡故瞈祊怡怸玪櫞捥浜逮㾸뎓儸ꘂ晿㰖榼皊㥓侤䝕꼣媥洷纱闬ꬩꜣꡣ告應鴜䀴猻竨䖱媮佀䶆䈶慩ꡥ蜞地鸀뇆겴暙䏻㰑䘓鴑逡锕蔎곯耠濦喢䏨刱芐蛁ꀝ嚻汻䶵屷彊南㽩心䆗ꦖ繿䜅虩馨㑃坽䷁媭譼觢執椩ꇔ较
+鷿瀮籵恰繬桫私䏘唯㙖豯痃踲鱰哙鑚痧骮踗辯㷫謅䞋惜鸰欝ꔼ䖎㻒獯甞䔫蚗叹氋癱䂊ꅿ谵꼀蟎臭攬宻㜇铥泱㠂㥡䘘㷁乁蓊ꤥ갛茫ꐒ瞀淅ꓭ盖괡椑麦燐舂䡖蠉蓹宂넋睡䤥㪇겾鯤꘩刼憂稌䇌顾貳厞橑煛䧄添偕笚儚㿜㒂淂㡞懨
+詴ꬦ芧迣䶗䰢夹牔鼎ꠃ껈끘䈦눊昃ꤡꭍ函碗Ꙁ紃誾㞸吟缿湹軳䷯꾧嶱社䑌暨䫧樴箝濳䈂鰀끉挏叿䰭낭掅䃺넎嬜꠩堜䨍䧭勣ꎮ縫㹕楦蝑黴뀖淫桾ꀠꈡ㬹馱㘠隀融꭬댦言낶㵎䯘㦒状ꧩ㩴냕褠訃ꦊꦪ䈞Ꜿ桩覍巤滙鐦帺莫霣噿鐢
+藒颵鋇駶겓甴꭫噝芡㒋罷ꙗꝸ渤䨥䄫砥嘡夅鷰晁皪ꕊꗎ仙慱ꓕ蠔怵鰘筥觨䧵龾鄯䎝囯擧筀忧茁䈏㝄谵徭ꖟ茎䘪峌㖂椳䁞肂鳚魉㚓龕蠎徾佞烲韯ꈭ놆꽋㷌㻨ꨂ啌㵡贼㓇覅㻒ꦂ䠑㢘槡賅嬗꨸㷋菁锪䓔䯪ꟷ䪅磺뇉댇䬽疕㠁淮䴅
+㿆齣鏿닇竊囄䥯䮷辙㐭䷵籥䨣㭺㟐ꔒ䒢莉麋杓韍誄뀯鎳䕉湱埽댬筚㻯㞏ꗧ꺂蒳裺陯䠠宧蛷欔㝃䚑䀊꬏驯鋻霣耍Ꙛ評儒廜铡卆餏鬗筑鑦㲽䁃漮ꩄ挒ꥯ㥦鸼谁皩甲闱敲䜔냄䳺旐侹穁䭪罕謉ꗦ楮䋸駡溪剌ꁵ疈萟䫌芬娠㗷緂偯卹
+䉝㾞鴕丫膬旆画ꣽꊞ酷ꏃ鷪ꑻ塧꽗唽厞脢㛵礶案喁牐懺鞙椦扠ꍚ䍫ꩡ溽綅闙犚㜡熀跭䉬膎緍觴婂匦裨湾뀔ꈖ掻䵂羖矏倀魟깮嬣豆궐麉褎猞蠯髋㷈鏖뇭㼖浍ꔡ吃薋ꔎ㐠喊奓깮髌鵦㲑妾祆䀙撔겴永㙡中厥陮歫鞟劢蠿㻖ꒉꁄ闶
+挲厮䉿栒㘠彀痸臅䃫ꇓ滝腖霛꭯䓫呞噮답屢霹䭶佁㑻狼獑犗禩꿰拻ꋿ埉鸘널螈ꎝ뇠饍捄濢㟍槵㿻袸䰹勢崣䱟蚤㻬筜饾鄌蓾媗㹇禱忱杭䂣剚ꗻ引墘䑓蚲䴜吴꟦㖔已胎抩뇉犟複虈겇爦秜婂蹉凮倸㲔䵱덝祼ꌐ茓釘镽舽藡㘳ꃙ璘
+䓗吏维捁䆾呆螙䠱繠戾ꢷ墽躡惺媋꽢崥靊㴙啹鿥魕䀀ꗦꅩ䈈鋂䗨齞ꖮꁇ歙岛煂占葁눮ꮐ確榥仍ꚏꞬ梲侕奓㵬㮋懷崳䩽螏羞禧簉䩛呰捦迫䉙꒩ꆹ㬼崅诙伲꾷ꪫ俙奫褷嚬穓堊䃃虔ꆽ璢꿑舤櫺髇溨단㯑鹢鄀鱭悖蕢㜓ꔟ㩓蜱㻞焗
+塭㮱蒿媏ꪛ꽈ꯅꆭ茥狚䇖詼佢芋畭茇爆滜㺓蠪뀩㴥䭣ꅰ濑旵浈瘉ꁄ鱺姒뇭㭊篓㭕縌而鬉蛑菠針芶괷櫃䏓巑㜭迤䆠瘬䰺ꫳ呝蛉䴹ꊃ熳ꑆ恬䑿귱倞撊䜥㶈㣔䤔꩔鄈㒔溌ꘒ麖㡿귝雍胪猞䅎惝卛珺摫頡ꄔꧥ氖帧稵ꅘ堛珍惹瑂婄洢
+㵸鲻媿爖忺鞑靅驺皮䥨凷䄱漤꒬㚫ꎪ藜毆ꗈ뀽ꦦ邯脔鷽缶鼳㲰襹㼓刅糜颩枼茐䩻ꮋ㸽㵜鏘騰忞鋘㕕谬賴迖岨ꏏ忰况㸟譧ꐢ瞘궊鵮꺕㹥趩䚐嘄駀爄祈閎劑䎞馸䄎꧵斔놌㤰婃廙叶䫨揺騇歸惝袝吀㟜嫖蒉㮑崀㓏馀洿擙蕠靺鞈鯻
+㔀㐀㐀禕萀
+```
+
 ## Environment limitation
 
-Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. Independent checks reduce but do not erase that mismatch; the localized phase must record its own environment and remains subject to a repository-supported rerun.
+Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`. The official localized-L1 primary used Python `3.13.14` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. The exact environment is retained, but the dependency mismatch remains a limitation until a repository-supported rerun is performed; the independent checker is the immediate next gate.
 
 ## Prohibited conclusions
 
@@ -338,3 +546,4 @@ Versions `0.1.0` through `0.9.7` are preserved losslessly in the capsule.
 
 - `0.9.8`: converted the active report into a readable current-control layer plus a lossless embedded `0.9.7` normalized archive; corrected and retained the initial heading-selection packaging failure; updated convenience loaders; revalidated loader-based and report-only execution; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
 - `0.9.9`: changed only the lossless archive transport from Base85 to Unicode15 after two connector-truncated blob attempts; rejected temporary-branch assembly because branch cleanup was unavailable; recorded both failures; updated fail-closed loaders and reproduction instructions; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
+- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending.
