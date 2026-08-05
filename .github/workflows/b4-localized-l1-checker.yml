@@ -1,4 +1,4 @@
-name: B4 Localized L1 Checker Interface
+name: B4 Correct Primary Capsule Loader
 
 on:
   push:
@@ -8,43 +8,64 @@ on:
       - .github/workflows/b4-localized-l1-checker.yml
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: b4-localized-l1-checker-interface
-  cancel-in-progress: true
+  group: b4-correct-primary-capsule-loader
+  cancel-in-progress: false
 
 jobs:
-  inspect:
+  correct:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-
-      - name: Install frozen checker dependency
-        run: python -m pip install --disable-pip-version-check numpy==2.3.5
-
-      - name: Fetch committed standalone report
+      - name: Correct report loader and remove one-use workflow
         shell: bash
-        run: |
-          curl --fail --location --retry 3 \
-            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/research/lineum-public-tolog-galactic-shape-b4.md" \
-            --output lineum-public-tolog-galactic-shape-b4.md
-
-      - name: Extract and verify checker without executing it
-        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python - <<'PY'
-          from pathlib import Path
-          import hashlib, io, json, lzma, tarfile
+          import base64
+          import hashlib
+          import json
+          import lzma
+          import os
+          import urllib.request
 
+          repo = os.environ["GITHUB_REPOSITORY"]
+          token = os.environ["GITHUB_TOKEN"]
+          head = os.environ["GITHUB_SHA"]
+          report_path = "research/lineum-public-tolog-galactic-shape-b4.md"
+          workflow_path = ".github/workflows/b4-localized-l1-checker.yml"
           BASE = 0x3400
-          CHECKER_SHA = "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031"
 
-          def decode(payload, expected_bytes):
+          def api(method, path, payload=None):
+              data = None if payload is None else json.dumps(payload).encode("utf-8")
+              request = urllib.request.Request(
+                  "https://api.github.com" + path,
+                  data=data,
+                  method=method,
+                  headers={
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": "Bearer " + token,
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "lineum-b4-loader-correction",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=120) as response:
+                  body = response.read()
+              return json.loads(body) if body else None
+
+          def sha256(data):
+              return hashlib.sha256(data).hexdigest()
+
+          def replace_once(text, old, new):
+              count = text.count(old)
+              if count != 1:
+                  raise AssertionError((old[:120], count))
+              return text.replace(old, new, 1)
+
+          def decode_unicode15(payload, expected_bytes):
               acc = bits = 0
               out = bytearray()
               for char in "".join(payload.split()):
@@ -61,46 +82,133 @@ jobs:
                   raise ValueError("payload length mismatch")
               return bytes(out)
 
-          text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
-          heading = "#### Normalized complete-history archive — XZ plus Unicode15"
-          start = text.rindex(heading)
-          block = text.index("```text", start) + len("```text")
-          end = text.index("```", block)
-          compressed = decode(text[block:end], 34756)
-          assert hashlib.sha256(compressed).hexdigest() == "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f"
-          archive = lzma.decompress(compressed)
-          with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as tf:
-              tf.extractall("lineum-b4-standalone")
-          manifest = json.loads(Path("lineum-b4-standalone/MANIFEST.json").read_text(encoding="utf-8"))
-          matches = []
-          for relative, expected in manifest["members"].items():
-              path = Path("lineum-b4-standalone", relative)
-              actual = hashlib.sha256(path.read_bytes()).hexdigest()
-              assert actual == expected
-              if actual == CHECKER_SHA:
-                  matches.append(path)
-          assert len(matches) == 1, matches
-          Path("/tmp/checker-path").write_text(str(matches[0]), encoding="utf-8")
+          def fenced_payload(text, heading, expected_bytes, expected_xz_sha, expected_raw_sha=None):
+              start = text.rindex(heading)
+              metadata = text.index("\n```text\n", start) + len("\n```text\n")
+              metadata_end = text.index("\n```\n", metadata)
+              code = text.index("\n```python\n", metadata_end) + len("\n```python\n")
+              code_end = text.index("\n```\n", code)
+              payload = text.index("\n```text\n", code_end) + len("\n```text\n")
+              payload_end = text.index("\n```\n", payload)
+              encoded = text[payload:payload_end]
+              compressed = decode_unicode15(encoded, expected_bytes)
+              if sha256(compressed) != expected_xz_sha:
+                  raise AssertionError("XZ hash mismatch")
+              raw = lzma.decompress(compressed)
+              if expected_raw_sha and sha256(raw) != expected_raw_sha:
+                  raise AssertionError("raw hash mismatch")
+              return encoded, compressed, raw
 
-          heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
-          start = text.rindex(heading)
+          current = api("GET", f"/repos/{repo}/git/ref/heads/develop")["object"]["sha"]
+          if current != head:
+              raise AssertionError((current, head))
+          commit = api("GET", f"/repos/{repo}/git/commits/{head}")
+          base_tree = commit["tree"]["sha"]
+          item = api("GET", f"/repos/{repo}/contents/{report_path}?ref={head}")
+          if item["sha"] != "3b27629dcd9d7dbc4163926ad9af2b67c1a0c719":
+              raise AssertionError(item["sha"])
+          original_bytes = base64.b64decode(item["content"])
+          if len(original_bytes) != 102586 or sha256(original_bytes) != "21fb8cb698f3ad29b224e4399973501c0a784c25f5ca552e3246d16554b9f3a7":
+              raise AssertionError("unexpected report source")
+          original = original_bytes.decode("utf-8")
+
+          history_heading = "#### Normalized complete-history archive — XZ plus Unicode15"
+          history_start = original.rindex(history_heading)
+          history_payload = original.index("\n```text\n", history_start) + len("\n```text\n")
+          history_end = original.index("\n```\n", history_payload)
+          history_encoded = original[history_payload:history_end]
+          history_xz = decode_unicode15(history_encoded, 34756)
+          if sha256(history_xz) != "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f":
+              raise AssertionError("history archive changed")
+          lzma.decompress(history_xz)
+
+          primary_heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
+          primary_encoded, primary_xz, primary_raw = fenced_payload(
+              original,
+              primary_heading,
+              19268,
+              "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5",
+              "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
+          )
+          if len(primary_raw) != 228809:
+              raise AssertionError(len(primary_raw))
+          json.loads(primary_raw)
+
+          old_loader = '''start = text.rindex(heading)
           first = text.index("```text", start)
           block = text.index("```text", first + len("```text")) + len("```text")
           end = text.index("```", block)
-          compressed = decode(text[block:end], 19268)
-          assert hashlib.sha256(compressed).hexdigest() == "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5"
-          raw = lzma.decompress(compressed)
-          assert len(raw) == 228809
-          assert hashlib.sha256(raw).hexdigest() == "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d"
-          json.loads(raw)
-          Path("b4-l1-primary.json").write_bytes(raw)
-          print(f"checker={matches[0]}")
-          PY
+          compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)'''
+          new_loader = '''start = text.rindex(heading)
+          metadata = text.index("\\n```text\\n", start) + len("\\n```text\\n")
+          metadata_end = text.index("\\n```\\n", metadata)
+          code = text.index("\\n```python\\n", metadata_end) + len("\\n```python\\n")
+          code_end = text.index("\\n```\\n", code)
+          block = text.index("\\n```text\\n", code_end) + len("\\n```text\\n")
+          end = text.index("\\n```\\n", block)
+          compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)'''
 
-      - name: Show frozen checker interface only
-        shell: bash
-        run: |
-          checker="$(cat /tmp/checker-path)"
-          python "$checker" --help
-          echo "--- argument declarations ---"
-          grep -nE 'ArgumentParser|add_argument|def main|__name__' "$checker"
+          report = replace_once(original, "**Version:** 0.10.0  ", "**Version:** 0.10.1  ")
+          report = replace_once(report, old_loader, new_loader)
+          failure = "One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence."
+          failure_addition = failure + "\n\nA read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker. The primary-capsule example had selected a quoted fence token inside its own extraction code instead of the payload block. The embedded primary payload and all cryptographic receipts remained unchanged; this was a technical reproduction defect and produced no scientific result."
+          report = replace_once(report, failure, failure_addition)
+          old_next = "Run the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate."
+          new_next = "Verify the corrected report-only primary-capsule extraction and inspect the frozen checker interface without executing the scientific recomputation. Then run the checker exactly once against the committed primary JSON and commit its output before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate."
+          report = replace_once(report, old_next, new_next)
+          previous_version = "- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending."
+          new_version = previous_version + "\n- `0.10.1`: corrected only the primary-capsule fence locator after the read-only checker-interface preflight exposed a self-matching extraction example; recorded the failed preflight as a technical non-result; preserved both embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed."
+          report = replace_once(report, previous_version, new_version)
+
+          corrected_history_start = report.rindex(history_heading)
+          corrected_history_payload = report.index("\n```text\n", corrected_history_start) + len("\n```text\n")
+          corrected_history_end = report.index("\n```\n", corrected_history_payload)
+          if report[corrected_history_payload:corrected_history_end] != history_encoded:
+              raise AssertionError("historical payload text changed")
+          corrected_primary_encoded, corrected_primary_xz, corrected_primary_raw = fenced_payload(
+              report,
+              primary_heading,
+              19268,
+              "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5",
+              "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
+          )
+          if corrected_primary_encoded != primary_encoded or corrected_primary_xz != primary_xz or corrected_primary_raw != primary_raw:
+              raise AssertionError("primary payload changed")
+          if old_loader in report or new_loader not in report:
+              raise AssertionError("loader correction missing")
+
+          output = report.encode("utf-8")
+          blob = api("POST", f"/repos/{repo}/git/blobs", {
+              "content": base64.b64encode(output).decode("ascii"),
+              "encoding": "base64",
+          })["sha"]
+          tree = api("POST", f"/repos/{repo}/git/trees", {
+              "base_tree": base_tree,
+              "tree": [
+                  {"path": report_path, "mode": "100644", "type": "blob", "sha": blob},
+                  {"path": workflow_path, "mode": "100644", "type": "blob", "sha": None},
+              ],
+          })["sha"]
+          candidate = api("POST", f"/repos/{repo}/git/commits", {
+              "message": "research: correct B4 primary capsule loader",
+              "tree": tree,
+              "parents": [head],
+          })["sha"]
+          comparison = api("GET", f"/repos/{repo}/compare/{head}...{candidate}")
+          changed = {entry["filename"]: entry["status"] for entry in comparison["files"]}
+          expected = {report_path: "modified", workflow_path: "removed"}
+          if changed != expected or comparison["ahead_by"] != 1:
+              raise AssertionError((changed, comparison["ahead_by"]))
+          if api("GET", f"/repos/{repo}/git/ref/heads/develop")["object"]["sha"] != head:
+              raise AssertionError("develop moved")
+          api("PATCH", f"/repos/{repo}/git/refs/heads/develop", {"sha": candidate, "force": False})
+          if api("GET", f"/repos/{repo}/git/ref/heads/develop")["object"]["sha"] != candidate:
+              raise AssertionError("publication failed")
+          print(json.dumps({
+              "commit": candidate,
+              "report_blob": blob,
+              "report_bytes": len(output),
+              "report_sha256": sha256(output),
+              "changed": changed,
+          }, indent=2, sort_keys=True))
+          PY
