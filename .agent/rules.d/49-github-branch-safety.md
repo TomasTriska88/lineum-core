@@ -66,6 +66,16 @@ For this fallback:
 
 Do not use `create_file` or `update_file` sequentially for a logically atomic multi-file checkpoint when their intermediate commits would be incomplete, misleading, or non-runnable. Unreferenced blobs and trees are staging objects, not published evidence. Never use issues, comments, workflow runs, releases, or external artifacts as a transport layer for repository file content.
 
+### Large standalone report transport
+
+A permanent standalone report must remain one complete Markdown document even when connector payload limits make its direct blob upload unreliable.
+
+Before changing its packaging, first try the ordinary verified blob path. If the connector rejects or corrupts the payload, preserve the readable current conclusions, protocol, failures, reproduction instructions, and exact next action directly in the Markdown file, and place the complete remaining diary and executable material in a lossless archive embedded inside that same Markdown file. The archive must use documented standard-library extraction code, a manifest of every member, cryptographic hashes for the archive and members, and a permanent test that proves both loader-based and report-only extraction paths.
+
+Packaging may remove only redundant transport encodings or duplicated compressed wrappers. It must not remove, summarize away, or silently rewrite scientific content, chronology, negative results, equations, parameters, thresholds, metrics, source code, or machine-readable evidence. Record every failed upload, rejected blob, capsule-loader defect, and packaging correction in the active report before publication.
+
+Prefer small convenience loaders that extract and hash the canonical executable files from the standalone report over duplicating large compressed payloads in separate `.py` mirrors. The report remains the authority; convenience files must fail closed on a hash mismatch.
+
 ## Naming and scope
 
 Do not create generic remote branches such as:
