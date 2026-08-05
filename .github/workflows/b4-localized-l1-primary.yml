@@ -11,17 +11,14 @@ permissions:
   contents: read
 
 concurrency:
-  group: b4-localized-l1-primary-${{ github.sha }}
-  cancel-in-progress: false
+  group: b4-localized-l1-primary-68f9fa1a507d829ab184b303ee13df433ce0b67b
+  cancel-in-progress: true
 
 jobs:
   primary:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
-      - name: Check out committed source
-        uses: actions/checkout@v4
-
       - name: Set up Python 3.13
         uses: actions/setup-python@v5
         with:
@@ -29,6 +26,33 @@ jobs:
 
       - name: Install frozen execution dependencies
         run: python -m pip install --disable-pip-version-check numpy==2.3.5 pytest==9.0.2
+
+      - name: Fetch committed standalone report only
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 \
+            "https://raw.githubusercontent.com/TomasTriska88/lineum-core/${GITHUB_SHA}/research/lineum-public-tolog-galactic-shape-b4.md" \
+            --output lineum-public-tolog-galactic-shape-b4.md
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+          import os
+          report = Path("lineum-public-tolog-galactic-shape-b4.md")
+          data = report.read_bytes()
+          Path("b4-l1-source-receipt.json").write_text(
+              json.dumps(
+                  {
+                      "commit_sha": os.environ["GITHUB_SHA"],
+                      "report_bytes": len(data),
+                      "report_sha256": hashlib.sha256(data).hexdigest(),
+                  },
+                  indent=2,
+                  sort_keys=True,
+              ) + "\n",
+              encoding="utf-8",
+          )
+          PY
 
       - name: Extract and verify standalone harness
         shell: bash
@@ -62,7 +86,7 @@ jobs:
                   raise ValueError(f"Decoded {len(out)} bytes, expected {expected_bytes}")
               return bytes(out)
 
-          capsule = Path("research/lineum-public-tolog-galactic-shape-b4.md")
+          capsule = Path("lineum-public-tolog-galactic-shape-b4.md")
           text = capsule.read_text(encoding="utf-8")
           heading = "#### Normalized complete-history archive — XZ plus Unicode15"
           start = text.rindex(heading)
@@ -144,3 +168,4 @@ jobs:
             b4-l1-pytest.log
             b4-l1-execution-environment.json
             b4-l1-archive-receipt.json
+            b4-l1-source-receipt.json
