@@ -4,6 +4,31 @@
 
 This protocol makes the active standalone research report the live source of truth throughout a research lane, not a retrospective summary written after several experiments.
 
+## Durable cross-session laboratory notebook
+
+The active standalone report is the persistent laboratory notebook and continuity record for the research programme across conversations, agents, machines, and work sessions. A later researcher must be able to resume the exact next step from the report and Git history without relying on chat memory, private reasoning, terminal scrollback, or uncommitted local files.
+
+Record as much decision-relevant history as is needed to preserve the true research path, including:
+
+- successful, negative, null, contradictory, inconclusive, and partially completed results;
+- failed execution attempts, crashes, serialization or storage failures, environment defects, dependency problems, invalid metrics, checker defects, and lost or unretained outputs;
+- implementation-audit findings, corrections to the measuring harness, and why each correction does or does not alter scientific meaning;
+- owner corrections, hypotheses, analogies, constraints, and decisions, kept distinct from agent formalization and experimental evidence;
+- abandoned, rejected, dormant, superseded, and reopened variants with the reason and reopen condition;
+- what was not tested, what evidence was not retained, and what conclusion is therefore prohibited;
+- the exact next concrete step and why it is the cheapest useful discriminator.
+
+Do not compress the history into a smooth success narrative. Preserve chronology. When a later correction changes an earlier statement, append or clearly mark the correction and its effect instead of silently rewriting the earlier event as though the mistake never happened.
+
+Always distinguish:
+
+1. a technical execution failure that produced no admissible scientific evidence;
+2. a methodological failure that invalidated a metric, observer, protocol, or retained result;
+3. a reproducible scientific negative or null result;
+4. an interpretation or hypothesis proposed after the evidence.
+
+An execution that completed in memory but failed to retain a verifiable output is not a retained scientific result. Record the attempt, failure mode, any information that can be established safely, and the requirement for a complete rerun.
+
 ## Continuous update requirement
 
 For every decision-relevant research lane, identify one active Markdown report under `research/` before performing the next consequential action. Update that same report continuously throughout the lane.
@@ -84,10 +109,29 @@ Therefore:
 
 The binding operational details are in `.agent/workflows/scratch.md`.
 
-## Git checkpoint cadence
+## Git checkpoint cadence and chronology
 
-The report may receive several small edits within one coherent local work session, but every independently retained result or owner-approved mechanism decision must be committed to the development branch before the next research lane begins. A later polished rewrite may improve clarity but must not erase the chronological evidence, failed paths, or decision rationale.
+Git is the durable timeline of the research lane. Create a checkpoint immediately after every meaningful, independently reviewable step and before beginning the next consequential step. Do not postpone all commits until the end of a long session.
+
+Meaningful checkpoints include, when applicable:
+
+- scope lock, intake, or preregistration;
+- implementation audit and identified measurement defects;
+- frozen runner, checker, tests, equations, metrics, thresholds, and source snapshot before official execution;
+- every failed or aborted execution whose cause, lost evidence, or repair affects reproducibility;
+- each technical or methodological correction made after an attempted execution;
+- the primary retained result before interpretation-driven mechanism changes;
+- the independent verification, including a failed checker and its correction;
+- the narrow interpretation, variant-ledger update, owner decision, and next frozen discriminator.
+
+Do not combine distinct steps into one final commit when doing so would erase their true temporal or decision sequence. Code, raw outputs, tests, and the updated report should be committed together when they form one coherent experiment checkpoint. A commit must not mix an equation or threshold change with the result produced under a different version unless the report and diff preserve the exact boundary unambiguously.
+
+An official retained execution must begin from a committed protocol and committed executable harness. If execution occurs from uncommitted files, classify it as exploratory or provenance-defective, do not promote it as final evidence, record the lapse, commit the frozen materials, and rerun from the initial state when reproducibility requires it.
+
+Commit a retained result before using it to select a replacement mechanism, tune parameters, alter a metric, or begin the next research lane. A later polished rewrite may improve clarity but must not erase chronological evidence, failed paths, technical failures, or decision rationale.
+
+If checkpoints were missed, stop further consequential research. Reconstruct the chronology from available hashes, files, timestamps, commands, outputs, and chat only to the extent supportable; state what cannot be proven; do not fabricate that a commit existed before an execution; then restore normal checkpoint cadence before continuing.
 
 ## Hard gate
 
-If the active report is not current enough to explain the exact next action without relying on chat history or uncommitted scratch material, stop and update the report first.
+If the active report and Git history are not current enough to explain the exact next action without relying on chat history or uncommitted scratch material, stop and update and commit them first.
