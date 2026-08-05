@@ -47,6 +47,25 @@ Small, precise, reversible connector changes should be committed directly to `de
 
 A dedicated branch is justified only by concrete risk, repository policy, required review, broad interdependent changes, or another explicit workflow requirement.
 
+## Atomic multi-file connector fallback
+
+Use ordinary local Git staging and committing whenever a usable local checkout and authenticated remote are available.
+
+When local Git publication is unavailable and several interdependent files must enter history as one coherent checkpoint, use the Git Data API sequence `create_blob -> create_tree -> create_commit -> compare_commits -> update_ref`.
+
+For this fallback:
+
+1. fetch and freeze the current development-branch commit and base tree;
+2. create one blob for each exact, already verified file content;
+3. build one tree on the frozen base tree containing only the intended paths and modes;
+4. create one commit whose sole parent is the frozen development-branch commit;
+5. compare the candidate commit against its parent and verify the exact changed-file set, statuses, and scope before publication;
+6. re-read the development ref immediately before publication and abort if it moved;
+7. move the ref only as a non-force fast-forward;
+8. fetch the published commit and changed files to verify the final state.
+
+Do not use `create_file` or `update_file` sequentially for a logically atomic multi-file checkpoint when their intermediate commits would be incomplete, misleading, or non-runnable. Unreferenced blobs and trees are staging objects, not published evidence. Never use issues, comments, workflow runs, releases, or external artifacts as a transport layer for repository file content.
+
 ## Naming and scope
 
 Do not create generic remote branches such as:
