@@ -1,12 +1,12 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
 **Status:** active development programme; question 1 observational target validated, question 2 homogeneous saturation phase completed, localized saturation phase preregistered  
-**Version:** 0.9.1  
-**Evidence cutoff:** 2026-08-04  
+**Version:** 0.9.2  
+**Evidence cutoff:** 2026-08-05  
 **Repository:** `TomasTriska88/lineum-core`  
 **Branch at preregistration:** `develop`  
 **Branch head at localized-phase preregistration:** `d70c9181bba25e7f7fa968192a44fdfdcdf8f1c3`  
-**Scope:** one permanent report answering exactly three public comparison questions by auditing, repairing, implementing, and validating Lineum capabilities; no private TOLOG material; no whitepaper change  
+**Scope:** one standalone permanent report answering exactly three public comparison questions by auditing, repairing, implementing, and validating Lineum capabilities; no private TOLOG material; no whitepaper change  
 **Question 1 status:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
 **Question 2 status:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
 **Question 3 status:** `no_explicit_scalar_potential_minimum_yet_demonstrated`  
@@ -14,25 +14,27 @@
 
 ## Plain result
 
-This report stays anchored to three questions only.
+This standalone report is controlled by exactly three questions.
 
-1. Can a grid produce realistic galactic rotation from observable initial conditions without fitting the final curve galaxy by galaxy?
-2. Does Lineum stop divergence through a genuine attractor, or through inserted nonlinear bounds, damping, clipping, noise handling, and emergency resets?
-3. Does the current complex-plus-auxiliary field system contain, or generate, a real scalar field with a stable potential minimum that preserves information after the original drive is removed?
+1. Can the Lineum grid handle real astrophysical objects, including galactic rotation, without manually supplying galaxy-specific numerical output values, and can at least `98%` agreement emerge without a dark-matter component from independently defensible source and initial conditions alone?
+2. How does Lineum naturally saturate and stop divergence, including at `r -> 0` or a declared discrete-grid equivalent: through a fixed mathematical attractor comparable to the public Dark Heart target, or through persistent oscillation and software noise, clipping, caps, resets, or ad hoc damping?
+3. How does the Lineum `256 x 256` grid, which primarily evolves complex and auxiliary fields, integrate a genuinely real scalar field with a fixed potential minimum that preserves information against decay?
 
 The current answer is:
 
 - the desired galactic output is tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
 - current Lineum contains several explicit saturation and numerical safety devices; the first dynamic ablation supports only a partial dissipative `psi` equilibrium under selected homogeneous conditions, not a full natural attractor;
-- current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously.
+- current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously on the required `256 x 256` grid.
 
-These are development coordinates, not a terminal verdict. The project-owner objective is to use every bounded failure to identify the missing operation, construct the smallest Lineum-native repair, attack it with ablations and held-out controls, and continue until the three capabilities are implemented and validated within a declared domain. The report is not complete merely because the current engine fails a question.
+These are development coordinates, not a terminal verdict. The project-owner objective is to use every bounded failure to identify the missing operation, construct the smallest Lineum-native repair, attack it with ablations and held-out controls, and continue until all three exact capabilities are implemented and validated within a declared domain. The report is not complete merely because the current engine fails a question.
 
-The report must not become a general galaxy notebook. Every retained calculation below either defines the target for question 1, separates physical from software stabilization for question 2, develops the missing mechanism, or tests persistent scalar memory for question 3.
+The report must not become a general galaxy or field-theory notebook. Every retained calculation must provide direct closure evidence, prerequisite evidence, blocker localization, candidate-repair discrimination, independent verification, real-physics connection, or a scope limitation for at least one of the three questions. Interesting findings that do not materially map to one of them belong in another standalone report.
 
 ## Programme objective and owner direction
 
 The project owner clarified on 2026-08-04 that the final purpose of B4 is not to conclude that Lineum cannot answer the three comparison questions. Its purpose is to determine what the current implementation does, identify exactly what is missing, develop a Lineum variant that gains the missing capability, and verify the result adversarially.
+
+On 2026-08-05 the owner further fixed the exact wording anchors and required the report to remain standalone. The positive programme destination is a reproducible affirmative answer to all three exact questions, not a weaker proxy. This does not authorize a predetermined positive verdict: thresholds, metrics, inputs, exclusions, observers, or interpretations must not be changed after result inspection merely to obtain a pass.
 
 Therefore each negative or null result must be converted into a mechanism-development record containing:
 
@@ -47,19 +49,62 @@ Therefore each negative or null result must be converted into a mechanism-develo
 
 A question may be closed successfully only when an implemented Lineum variant passes its frozen gates without hiding the target output in its inputs. A current failure may falsify an implementation or regime, but it does not by itself falsify the broader Lineum development programme.
 
-## The three controlling questions
+## The three controlling questions and affirmative closure gates
+
+The material anchors in this section must not be weakened, silently generalized, replaced by easier proxies, or treated as already established. Changing them requires explicit project-owner approval and a versioned scope change that preserves the prior history.
 
 ### Question 1 — autonomous astrophysical emergence
 
-Can the grid take only defensible source and initial conditions for a real galaxy and produce its rotation curve without manually fitting galaxy-specific output values? Can it reach a declared agreement target without a dark-matter component and without hiding the observed rotation curve in the inputs?
+How can the Lineum grid handle real astrophysical objects, including galactic rotation, without manually supplying galaxy-specific numerical output values? Can at least `98%` agreement emerge without a dark-matter component, using only independently defensible source and initial conditions?
+
+Affirmative closure requires:
+
+1. a frozen definition and metric for `98% agreement` before held-out evaluation;
+2. only independently observable source and initial conditions as inputs;
+3. no leakage of observed rotation velocities or equivalent target information through initialization, calibration, stopping rules, observer choice, or post-processing;
+4. no galaxy-specific output fitting after seeing each target curve and no dark-matter component or hidden fitted surrogate that merely renames one;
+5. universal parameters frozen before evaluation on held-out real galaxies;
+6. appropriate baryonic, calibration, observer, resolution, and conventional-model controls;
+7. independent adversarial reproduction of the exact bounded claim.
+
+A fitted macroscopic curve, descriptive resemblance, one calibrated galaxy, or agreement measured on training data cannot close this question.
 
 ### Question 2 — natural saturation and divergence control
 
-What exactly stops growth near singular, highly concentrated, or long-running conditions? Is there a stable mathematical attractor comparable to a fixed-potential minimum, or is stability produced by explicit `tanh`, bounded denominators, linear damping, hard caps, clipping, absorbing boundaries, random forcing choices, or fail-safe resets?
+How does Lineum achieve natural saturation and stop divergence, including in the limit `r -> 0` or its explicitly declared discrete-grid equivalent? Does the implemented dynamics contain a fixed mathematical attractor comparable to the public Dark Heart comparison target, or does the grid enter persistent oscillation and require software noise, clipping, caps, resets, or ad hoc damping to remain bounded?
 
-### Question 3 — scalar minimum and information persistence
+Affirmative closure requires:
 
-How does the current complex field plus auxiliary fields integrate a real scalar degree of freedom with a stable potential minimum? After a localized state is written and the source is removed, does the state return to a preferred minimum after perturbation, merely decay slowly, require continued driving, or disappear?
+1. a frozen, physically and numerically meaningful translation of `r -> 0` rather than avoidance through grid resolution;
+2. a mathematically defined finite attractor, basin, and return behavior;
+3. boundedness and recovery after perturbation without stochastic forcing, hard clipping, caps, emergency reset, or absorbing software guards;
+4. any claimed dissipative mechanism stated explicitly in the governing equation, justified, and separated from numerical fail-safes by ablation;
+5. persistent oscillation, slow drift, cap-supported stationarity, and finite-horizon survival not being mislabeled as convergence;
+6. time-step, resolution, stencil, boundary, initialization, horizon, and perturbation controls;
+7. independent verification that distinguishes the attractor from inserted numerical containment.
+
+`Dark Heart` and associated third-party performance claims are public comparison targets only. They are not Lineum evidence unless lawful public material supports an independent reproducible comparison.
+
+### Question 3 — scalar potential memory on a 256 x 256 grid
+
+When the Lineum `256 x 256` grid primarily evolves complex and auxiliary fields, how can it integrate a genuinely real scalar field with a fixed potential minimum that preserves information against decay?
+
+Affirmative closure requires:
+
+1. execution on the exact `256 x 256` grid with declared scaling and boundary assumptions;
+2. an explicitly defined real scalar degree of freedom, not merely a real-valued helper array or plotted complex magnitude;
+3. an explicit potential, fixed stable minimum, units or dimensionless normalization, and an evolution law derived from that potential;
+4. persistence of a localized information-bearing state after the writing source is completely removed;
+5. return toward the predeclared minimum after positive and negative perturbations rather than slow decay, cap-supported freezing, or continued driving;
+6. a frozen non-circular information observable with destructive, shuffled, null, and source-off controls;
+7. resolution, time-step, boundary, duration, initialization, and numerical-guard checks;
+8. independent reproduction of persistence and return behavior.
+
+A slowly fading trace, continuously driven pattern, clipped field, or scalar-valued helper array without a demonstrated potential minimum cannot close this question.
+
+The current localized L1 saturation lane maps directly to Question 2. It may identify prerequisites for Question 3, but it cannot close Question 3 because it does not demonstrate the required `256 x 256` scalar-potential memory. It provides no direct closure evidence for Question 1.
+
+Do not declare the B4 programme complete, validated, or positively answered until all three complete affirmative closure gates are satisfied by reproducible evidence.
 
 ## Evidence separation used throughout
 
@@ -1181,3 +1226,4 @@ This report does not establish:
 - `0.8.0`: reorganized the single report around the three controlling questions; completed the all-102 population concentration extension as `no_population_extension`; recorded observer/measurement confounding; opened and preregistered the question-2 saturation audit; documented the unused `dissipation_rate` configuration contradiction.
 - `0.9.0`: completed and independently checked the homogeneous deterministic saturation phase; retained the initial checker failure; classified question 2 provisionally as `explicitly_stabilized_partial_dissipative_equilibrium_only`; localized spatial phase remained pending.
 - `0.9.1`: recorded the owner's audit-repair-validation objective; made current failures explicitly non-terminal; preregistered the L1 localized LAP4/LAP8 screening and its repair map before execution.
+- `0.9.2`: moved the exact owner-controlled three-question scope and affirmative closure gates into this standalone report; removed the redundant directory-level instruction dependency.
