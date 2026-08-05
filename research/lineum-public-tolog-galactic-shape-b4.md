@@ -1,1229 +1,340 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active development programme; question 1 observational target validated, question 2 homogeneous saturation phase completed, localized saturation phase preregistered  
-**Version:** 0.9.2  
+**Status:** active; localized L1 standalone harness frozen before the official rerun  
+**Version:** 0.9.9  
 **Evidence cutoff:** 2026-08-05  
-**Repository:** `TomasTriska88/lineum-core`  
-**Branch at preregistration:** `develop`  
-**Branch head at localized-phase preregistration:** `d70c9181bba25e7f7fa968192a44fdfdcdf8f1c3`  
-**Scope:** one standalone permanent report answering exactly three public comparison questions by auditing, repairing, implementing, and validating Lineum capabilities; no private TOLOG material; no whitepaper change  
-**Question 1 status:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
-**Question 2 status:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
-**Question 3 status:** `no_explicit_scalar_potential_minimum_yet_demonstrated`  
-**Confidence:** high for the reported SPARC calculations, static implementation facts, and deterministic homogeneous saturation audit; moderate for source-structure associations; no causal galactic mechanism or fixed-potential attractor established
+**Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
+**Scope:** exactly three public comparison questions; no private TOLOG material; no whitepaper change  
+**Question 1:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
+**Question 2:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  
+**Question 3:** `no_explicit_scalar_potential_minimum_yet_demonstrated`
 
-## Plain result
+## Standalone record architecture
 
-This standalone report is controlled by exactly three questions.
+This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest.
 
-1. Can the Lineum grid handle real astrophysical objects, including galactic rotation, without manually supplying galaxy-specific numerical output values, and can at least `98%` agreement emerge without a dark-matter component from independently defensible source and initial conditions alone?
-2. How does Lineum naturally saturate and stop divergence, including at `r -> 0` or a declared discrete-grid equivalent: through a fixed mathematical attractor comparable to the public Dark Heart target, or through persistent oscillation and software noise, clipping, caps, resets, or ad hoc damping?
-3. How does the Lineum `256 x 256` grid, which primarily evolves complex and auxiliary fields, integrate a genuinely real scalar field with a fixed potential minimum that preserves information against decay?
+No repository path, chat, issue, workflow artifact, or private document is required. Normalization changed only packaging: three opaque historical XZ/Base64 payload bodies were replaced inside the archived historical text by manifest references, while their decoded canonical files were stored as independent members in the same archive. No scientific content, equation, parameter, threshold, metric, result, or chronology was removed.
 
-The current answer is:
+## Plain result and controlling questions
 
-- the desired galactic output is tightly characterized, but neither current Lineum nor the publicly reproducible TOLOG description has yet demonstrated blind emergence from source conditions alone;
-- current Lineum contains several explicit saturation and numerical safety devices; the first dynamic ablation supports only a partial dissipative `psi` equilibrium under selected homogeneous conditions, not a full natural attractor;
-- current Lineum has scalar-valued auxiliary fields, but no explicit independently verified scalar potential minimum has yet been shown to preserve information autonomously on the required `256 x 256` grid.
+1. Can Lineum produce real-galaxy rotation with at least `98%` preregistered held-out agreement from independently defensible source and initial conditions alone, without target leakage, galaxy-specific output fitting, a dark-matter component, or a renamed fitted surrogate?
+2. Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without noise, clipping, caps, resets, or ad hoc damping, including at a declared discrete equivalent of `r -> 0`?
+3. Can the exact `256 x 256` grid integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?
 
-These are development coordinates, not a terminal verdict. The project-owner objective is to use every bounded failure to identify the missing operation, construct the smallest Lineum-native repair, attack it with ablations and held-out controls, and continue until all three exact capabilities are implemented and validated within a declared domain. The report is not complete merely because the current engine fails a question.
+Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; homogeneous tests show only a partial dissipative `psi` equilibrium, not a full natural attractor; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.
 
-The report must not become a general galaxy or field-theory notebook. Every retained calculation must provide direct closure evidence, prerequisite evidence, blocker localization, candidate-repair discrimination, independent verification, real-physics connection, or a scope limitation for at least one of the three questions. Interesting findings that do not materially map to one of them belong in another standalone report.
+Every conclusion separates implementation, reproduced observation, cautious interpretation, hypothesis or analogy, and real-physics connection. A green software test validates only its asserted harness property. An independently verified decision-relevant negative stops tuning and opens the project-owner intuition gate before a replacement mechanism is selected.
 
-## Programme objective and owner direction
+## Frozen localized-L1 screen for Question 2
 
-The project owner clarified on 2026-08-04 that the final purpose of B4 is not to conclude that Lineum cannot answer the three comparison questions. Its purpose is to determine what the current implementation does, identify exactly what is missing, develop a Lineum variant that gains the missing capability, and verify the result adversarially.
+Can neighbour transport turn the homogeneous partial `psi` equilibrium into a localized perturbation-recovering full state without hard `phi` containment, and does LAP8 materially outperform LAP4?
 
-On 2026-08-05 the owner further fixed the exact wording anchors and required the report to remain standalone. The positive programme destination is a reproducible affirmative answer to all three exact questions, not a weaker proxy. This does not authorize a predetermined positive verdict: thresholds, metrics, inputs, exclusions, observers, or interpretations must not be changed after result inspection merely to obtain a pass.
-
-Therefore each negative or null result must be converted into a mechanism-development record containing:
-
-1. the exact implementation or regime that failed;
-2. the behavior that remained positive;
-3. the location of the failure in the equation, state, source, observer, boundary, resolution, or interpretation;
-4. at least three distinct repair classes when scientifically plausible;
-5. the cheapest frozen discriminator among those repairs;
-6. a research-only implementation of the selected candidate;
-7. independent verification and ablation;
-8. promotion into the engine only after the exact bounded capability is supported.
-
-A question may be closed successfully only when an implemented Lineum variant passes its frozen gates without hiding the target output in its inputs. A current failure may falsify an implementation or regime, but it does not by itself falsify the broader Lineum development programme.
-
-## The three controlling questions and affirmative closure gates
-
-The material anchors in this section must not be weakened, silently generalized, replaced by easier proxies, or treated as already established. Changing them requires explicit project-owner approval and a versioned scope change that preserves the prior history.
-
-### Question 1 — autonomous astrophysical emergence
-
-How can the Lineum grid handle real astrophysical objects, including galactic rotation, without manually supplying galaxy-specific numerical output values? Can at least `98%` agreement emerge without a dark-matter component, using only independently defensible source and initial conditions?
-
-Affirmative closure requires:
-
-1. a frozen definition and metric for `98% agreement` before held-out evaluation;
-2. only independently observable source and initial conditions as inputs;
-3. no leakage of observed rotation velocities or equivalent target information through initialization, calibration, stopping rules, observer choice, or post-processing;
-4. no galaxy-specific output fitting after seeing each target curve and no dark-matter component or hidden fitted surrogate that merely renames one;
-5. universal parameters frozen before evaluation on held-out real galaxies;
-6. appropriate baryonic, calibration, observer, resolution, and conventional-model controls;
-7. independent adversarial reproduction of the exact bounded claim.
-
-A fitted macroscopic curve, descriptive resemblance, one calibrated galaxy, or agreement measured on training data cannot close this question.
-
-### Question 2 — natural saturation and divergence control
-
-How does Lineum achieve natural saturation and stop divergence, including in the limit `r -> 0` or its explicitly declared discrete-grid equivalent? Does the implemented dynamics contain a fixed mathematical attractor comparable to the public Dark Heart comparison target, or does the grid enter persistent oscillation and require software noise, clipping, caps, resets, or ad hoc damping to remain bounded?
-
-Affirmative closure requires:
-
-1. a frozen, physically and numerically meaningful translation of `r -> 0` rather than avoidance through grid resolution;
-2. a mathematically defined finite attractor, basin, and return behavior;
-3. boundedness and recovery after perturbation without stochastic forcing, hard clipping, caps, emergency reset, or absorbing software guards;
-4. any claimed dissipative mechanism stated explicitly in the governing equation, justified, and separated from numerical fail-safes by ablation;
-5. persistent oscillation, slow drift, cap-supported stationarity, and finite-horizon survival not being mislabeled as convergence;
-6. time-step, resolution, stencil, boundary, initialization, horizon, and perturbation controls;
-7. independent verification that distinguishes the attractor from inserted numerical containment.
-
-`Dark Heart` and associated third-party performance claims are public comparison targets only. They are not Lineum evidence unless lawful public material supports an independent reproducible comparison.
-
-### Question 3 — scalar potential memory on a 256 x 256 grid
-
-When the Lineum `256 x 256` grid primarily evolves complex and auxiliary fields, how can it integrate a genuinely real scalar field with a fixed potential minimum that preserves information against decay?
-
-Affirmative closure requires:
-
-1. execution on the exact `256 x 256` grid with declared scaling and boundary assumptions;
-2. an explicitly defined real scalar degree of freedom, not merely a real-valued helper array or plotted complex magnitude;
-3. an explicit potential, fixed stable minimum, units or dimensionless normalization, and an evolution law derived from that potential;
-4. persistence of a localized information-bearing state after the writing source is completely removed;
-5. return toward the predeclared minimum after positive and negative perturbations rather than slow decay, cap-supported freezing, or continued driving;
-6. a frozen non-circular information observable with destructive, shuffled, null, and source-off controls;
-7. resolution, time-step, boundary, duration, initialization, and numerical-guard checks;
-8. independent reproduction of persistence and return behavior.
-
-A slowly fading trace, continuously driven pattern, clipped field, or scalar-valued helper array without a demonstrated potential minimum cannot close this question.
-
-The current localized L1 saturation lane maps directly to Question 2. It may identify prerequisites for Question 3, but it cannot close Question 3 because it does not demonstrate the required `256 x 256` scalar-potential memory. It provides no direct closure evidence for Question 1.
-
-Do not declare the B4 programme complete, validated, or positively answered until all three complete affirmative closure gates are satisfied by reproducible evidence.
-
-## Evidence separation used throughout
-
-Every conclusion must remain in one of these layers:
-
-1. **Current implementation:** what the checked-in code actually computes.
-2. **Reproduced observation:** what a frozen executable run actually produced.
-3. **Cautious interpretation:** the narrow explanation compatible with the result.
-4. **Hypothesis:** an unverified mechanism or analogy.
-5. **Known real physics:** what has been connected to external empirical evidence, if anything.
-
-Internal agreement, visual similarity, or a green unit test cannot by itself establish a physical law.
-
-# Question 1 — autonomous galactic emergence
-
-## Publicly reconstructible descriptive target
-
-The publicly described TOLOG-like galactic addition uses a finite saturating radial contribution. For a radius `r`, the frozen reconstruction tested
-
-```text
-Vmodel^2(r) = Vbar^2(r) + V0^2 S(k_eff r / 5 kpc)
-```
-
-with two baryonic source lanes:
-
-```text
-unsigned: Vbar^2 = Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
-signed:   Vbar^2 = sign(Vgas) Vgas^2 + 0.5 Vdisk^2 + 0.7 Vbul^2
-```
-
-Five shapes were given equal flexibility:
-
-```text
-tanh:        S(x) = tanh(x)
-exponential: S(x) = 1 - exp(-x)
-rational:    S(x) = x / (1 + x)
-arctan:      S(x) = (2/pi) atan((pi/2) x)
-algebraic:   S(x) = x / sqrt(1 + x^2)
-```
-
-All start at zero, have unit initial slope, and saturate at one. Each receives the same two fitted parameters, amplitude `V0` and scale `k_eff`.
-
-Frozen bounds and starts:
-
-```text
-V0 in [0, 400] km/s
-k_eff in [1e-6, 100]
-V0 starts = [25, 75, 150, 250]
-k_eff starts = [0.01, 0.1, 1, 10]
-16 starts per shape fit
-```
-
-The objective was quoted-error chi-squared. Two-parameter candidates used `AIC = chi2 + 4`; baryons-only used `AIC = chi2`.
-
-## Official SPARC provenance
-
-Input archive:
-
-```text
-Rotmod_LTG.zip
-SHA-256 = 0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588
-profiles = 175
-```
-
-Each profile contains radius, observed velocity, quoted velocity uncertainty, gas velocity contribution, disk velocity contribution, bulge velocity contribution, disk surface brightness, and bulge surface brightness.
-
-The earlier mistaken label of the eighth column as gas surface density was corrected before any source-structure calculation. It is `SBbul`. The prior shape fits are unaffected because they used only columns one through six.
-
-## NGC 3198 source-convention result
-
-Literal tabulated stellar `M/L=1` produced:
-
-```text
-V0 = 161.2955688 km/s
-k_eff = 0.09596754
-chi2 = 605.6090070
-reduced chi2 = 14.7709514
-```
-
-Fiducial stellar weighting produced:
-
-```text
-V0 = 132.3866012 km/s
-k_eff = 0.52198556
-chi2 = 28.06182217
-reduced chi2 = 0.68443469
-half-saturation radius = 5.26169863 kpc
-```
-
-This demonstrates strong source-policy sensitivity. A lower statistic under one stellar calibration is not by itself proof that the physical interpretation is true.
-
-Equal-flexibility shape comparison:
-
-| Shape | Chi-squared | Reduced chi-squared | Delta AIC |
-|---|---:|---:|---:|
-| `tanh` | `28.061822` | `0.684435` | `0` |
-| algebraic | `41.952058` | `1.023221` | `13.890236` |
-| exponential | `51.135224` | `1.247201` | `23.073402` |
-| arctan | `62.226443` | `1.517718` | `34.164620` |
-| rational | `101.042285` | `2.464446` | `72.980463` |
-
-Inside this family, `tanh` lowers chi-squared by about `33.1%` relative to the nearest algebraic competitor. The best `tanh` and algebraic velocity curves differ by at most about `1.66 km/s`; the preference accumulates through many small coherent residuals.
-
-At historical stellar `M/L=1`, algebraic is only about `1.68` AIC units behind `tanh`. Exact curvature preference is therefore calibration-dependent even though the fiducial NGC 3198 result is strong.
-
-## Complete 175-galaxy population census
-
-Frozen informative criteria required:
-
-- at least ten rotation-curve rows;
-- the best added shape to improve over baryons-only by at least ten AIC units;
-- the winning fit not to touch a frozen parameter boundary.
-
-Both gas-sign lanes produced identical labels and winners among the informative galaxies:
-
-```text
-official galaxies                                  175
-galaxies with at least 10 rows                     124
-informative galaxies                               102
-tanh compatible                         82 / 102 = 80.392%
-tanh tension                             6 / 102 =  5.882%
-tanh strongly rejected                  14 / 102 = 13.725%
-tanh exact best                         68 / 102 = 66.667%
-median delta AIC tanh                               0
-same label under gas-sign handling     102 / 102
-same winner under gas-sign handling    102 / 102
-```
-
-Winner counts:
-
-| Shape | Wins |
-|---|---:|
-| `tanh` | `68` |
-| rational | `16` |
-| algebraic | `10` |
-| arctan | `5` |
-| exponential | `3` |
-
-Only `32/102` informative curves separated the best and second-best shapes by at least two AIC units. In that shape-identifying subset, `tanh` won `18`, rational `8`, arctan `3`, algebraic `2`, and exponential `1`.
-
-The preregistered universal-support gate required at least `80%` compatibility and at most `10%` strong rejection. Compatibility narrowly passed, but strong rejection reached `13.725%`. The universal-rejection gate also failed. The population classification is therefore:
-
-```text
-mixed_population_evidence
-```
-
-A broad finite bounded-transition family is descriptively useful. One immutable normalized `tanh` is not universal.
-
-Strong `tanh` wins:
-
-```text
-UGC05253, NGC5055, UGC09133, NGC2903, NGC5033, NGC3198
-```
-
-Strong rejections:
-
-```text
-UGC06787, UGC11914, NGC6015, NGC2403, NGC1003, UGC03205,
-UGC02953, UGC08699, NGC0801, NGC2998, UGC06786, NGC5907,
-UGC02885, UGC00128
-```
-
-## Extreme source-structure contrast
-
-The project owner proposed one mechanism in which one contribution becomes absent, weak, or dominant in some galaxies. A source-only test compared the six strongest `tanh` wins with the fourteen strongest rejections without using the winner or missing-response curve as a feature.
-
-Twelve preregistered source features were tested. Exactly one survived Holm correction:
-
-```text
-disk half-light proxy radius / maximum measured radius
-```
-
-Result:
-
-```text
-direction-agnostic AUC = 0.9047619048
-raw exact p            = 0.0033023736
-Holm-adjusted p        = 0.0396284830
-correctly ordered cross-group pairs = 76 / 84
-```
-
-Group medians:
-
-```text
-six strong tanh wins:       0.09779
-fourteen strong rejections: 0.16589
-```
-
-In the selected extremes, strong `tanh` cases have more centrally concentrated luminous disks relative to the measured rotation-curve extent. Simple inner bulge fraction, outer gas fraction, and gas-peak radius did not separate the groups.
-
-This result was independently reconstructed with a second implementation. Maximum feature disagreement was `4.44e-16`; AUC and exact permutation probability agreed exactly. Leave-one-out checks retained AUC at least `0.8857`.
-
-The result was never allowed to establish causation or a population law.
-
-## Population extension of the concentration hypothesis
-
-### Frozen question
-
-Does larger normalized disk half-light radius produce a larger `tanh` penalty continuously across all `102` informative galaxies, and does it predict the fourteen strong rejections after accounting for measurement quality and source controls?
-
-### Inputs
-
-The extension used the verified official SPARC archive and the committed 350-row population decision table:
-
-```text
-SPARC archive SHA-256 = 0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588
-population CSV SHA-256 = c28423cc6f8b935b8c6b7467966a55fe4bb91cbe5680210897365cf618e10a7d
-informative galaxies = 102
-```
-
-### Frozen gates
-
-Primary continuous gate:
-
-```text
-Spearman rho > 0
-and two-sided permutation p <= 0.05
-```
-
-Secondary rejection gate:
-
-```text
-AUC for larger concentration ratio predicting rejection >= 0.70
-and directional permutation p <= 0.05
-```
-
-Confound-adjusted support required either a positive significant partial rank association after controlling for quoted fractional error, row count, maximum measured radius, radial-step irregularity, and bulge presence, or repeated cross-validated improvement when concentration was added to those controls.
-
-### Result
-
-The preregistered direction failed.
-
-```text
-Spearman rho = -0.2254398887
-permutation p = 0.0225597744
-observed direction = opposite to preregistration
-```
-
-The negative sign means that across the whole population, larger normalized disk half-light radius was associated with a smaller rather than larger `tanh` penalty. That cannot be used as support for the proposed monotonic mechanism because the direction was frozen in advance.
-
-Binary rejection result:
-
-```text
-AUC for larger ratio predicting rejection = 0.2759740260
-direction-agnostic AUC = 0.7240259740
-directional permutation p = 0.9966400336
-observed direction = opposite to preregistration
-```
-
-After the frozen controls:
-
-```text
-partial rank association = -0.1118160246
-Freedman-Lane permutation p = 0.2753772462
-```
-
-Repeated seven-fold cross-validation over 100 deterministic repeats also did not help. Adding disk concentration improved log loss in only `4/100` repeats:
-
-```text
-median control-only AUC = 0.8652597403
-median full AUC         = 0.8538961039
-median log-loss improvement = -0.0069372364
-mean log-loss improvement   = -0.0088618388
-```
-
-The full model was generally worse than the measurement-control model.
-
-All fourteen strong rejections occurred in the low- or middle-fractional-error terciles. The highest-error tercile contained no strong rejection. This is consistent with a measurement-identification effect: imprecise curves often cannot distinguish nearby saturation shapes and are therefore less likely to strongly reject anything.
-
-Removing the original fourteen rejections eliminated the continuous association:
-
-```text
-remaining n = 88
-Spearman rho = -0.0665651434
-permutation p = 0.5374546255
-```
-
-Classification:
-
-```text
-no_population_extension
-```
-
-### Independent verification
-
-A second implementation reconstructed all `102` concentration values directly from the official archive, used separate scalar rank and pair-count code, and repeated independent randomization checks.
-
-```text
-maximum feature difference = 5.55e-17
-Spearman difference         = 0
-AUC difference              = 0
-independent checker         = passed
-```
-
-A complete deterministic rerun reproduced byte-identical primary result and row-table hashes:
-
-```text
-full result SHA-256 = a3721fbbf58d0c2ef48849b2d7573041c64589c2137828e1b2fdf3c0a5e39536
-rows CSV SHA-256    = fcdb1593f57d8f6da357ac05c5a2b60aae575622b2837ea4326b384186db3cc5
-```
-
-### Narrow interpretation
-
-The compact-disk contrast remains true for the selected six-versus-fourteen extremes, but it does not generalize as a one-dimensional monotonic population rule.
-
-This is a decision-relevant negative result. It rejects only the simple statement:
-
-> larger normalized disk half-light radius directly and monotonically worsens `tanh` across all informative galaxies.
-
-It does not reject:
-
-- nonlinear or threshold behavior;
-- interactions with inclination, distance, radial coverage, stellar calibration, or measurement precision;
-- source projection through a nonlocal response;
-- one mechanism with several terms;
-- multiple physical regimes.
-
-Because the denominator is the farthest measured rotation-curve point rather than a physical edge, observer and measurement geometry remain material alternative explanations.
-
-## Question 1 verdict and development target
-
-### Current implementation
-
-The current Lineum engine has not yet been supplied only with a galaxy's independently observable baryonic source conditions and asked to predict the rotation curve blindly.
-
-### Reproduced observation
-
-A two-parameter finite saturating addition describes many SPARC galaxies well. `tanh` is the leading tested shape but is not exact and universal.
-
-### Interpretation
-
-The target for a future emergent mechanism is constrained: it must commonly produce `tanh`-like finite transitions, produce systematic non-`tanh` exceptions, and explain which source or observer variables select the curvature.
-
-### Hypothesis
-
-A shared grid mechanism may project differently through different source geometries or may change regime when a transport, screening, leakage, memory, or coupling contribution becomes weak or dominant.
-
-### Development completion condition
-
-Question 1 is not closed by recording that blind prediction is absent. It requires a research variant that accepts only independently observable source conditions, freezes universal parameters before held-out evaluation, and predicts held-out rotation curves without using their observed velocities during calibration.
-
-### Not established
-
-Neither Lineum nor the publicly reproducible TOLOG material has yet demonstrated the full chain:
-
-```text
-independently observed galaxy source
--> grid dynamics with frozen universal parameters
--> blind rotation-curve prediction
--> declared agreement on held-out galaxies
-```
-
-A fitted macroscopic formula is not autonomous emergence.
-
-# Question 2 — natural saturation and divergence control
-
-## Current implementation audit
-
-The checked-in `lineum_core/math.py` defines these relevant default configuration values:
-
-```text
-dt = 1.0
-psi_diffusion = 0.05
-phi_diffusion = 0.05
-dissipation_rate = 0.005
-reaction_strength = 0.0007
-noise_strength = 0.005
-drift_strength = -0.004
-mode_coupling_strength = 0.001
-psi_amp_cap = 1e6
-grad_cap = 1e6
-phi_cap = 1e6
-mu_cap = 10
-fold_mode = softabs
-fold_scope = escape
-```
-
-The implementation contains several distinct bounded or stabilizing operations. They must not be conflated into one natural attractor.
-
-### A. Inserted bounded nonlinearities
-
-1. Linon probability uses a logistic sigmoid.
-2. The local interaction coefficient uses explicit `tanh`:
-
-```text
-interaction_factor = 0.1 * tanh(0.04 * clipped_phi * kappa * (1 + mu) / 0.1)
-```
-
-3. The interaction term is further bounded by
-
-```text
-interaction_term /= 1 + |interaction_term| / 10
-```
-
-4. The phi-gradient flow term is bounded by the same denominator form.
-
-These are explicit mathematical saturation choices. A bounded result from them is not evidence that the grid discovered `tanh` or a saturation law emergently.
-
-### B. Linear or transfer damping
-
-1. In NumPy diffusion mode and PyTorch diffusion mode, the code applies
-
-```text
-psi -= 0.005 * psi * dt
-```
-
-2. With mode coupling enabled, energy is moved from `psi` into `phi`:
-
-```text
-delta_e = mode_coupling_strength * |psi|^2 * kappa * dt
-phi += delta_e
-|psi| -> sqrt(max(|psi|^2 - delta_e, 0))
-```
-
-3. Optional `mu` decays linearly through `mu_rho`.
-4. Projected wave modes can add edge damping and a perfectly matched absorbing boundary layer.
-
-These may create dissipative steady states, but a dissipative steady state is not automatically a fixed potential minimum.
-
-### C. Hard numerical guards
-
-1. `psi` amplitude is capped at `psi_amp_cap`.
-2. gradients are clipped at `grad_cap`.
-3. `phi` is clipped or folded around `phi_cap`.
-4. `mu` is clipped at `mu_cap`.
-5. if `psi` becomes NaN or approaches `99%` of its amplitude cap, the complete `psi` field is reset to zero.
-
-These are explicitly labelled numerical guards or fail-safes in the code. Stability that requires them is numerical containment, not a demonstrated physical attractor.
-
-### D. Stochastic driving
-
-Unless `disable_quantum_noise` is true, the diffusion path contains probabilistic linon generation and Gaussian fluctuation forcing. Noise can seed or maintain activity, but random forcing cannot be used as evidence that noise is the mechanism that stops divergence unless an intervention demonstrates that claim.
-
-## Configuration contradiction discovered
-
-`CoreConfig` exposes
-
-```text
-dissipation_rate = 0.005
-```
-
-but the current diffusion update does not read `cfg.dissipation_rate`. It uses the literal constant `0.005` in both NumPy and PyTorch diffusion paths.
-
-Consequences:
-
-- changing `CoreConfig(dissipation_rate=...)` does not currently perform the intended dissipation ablation in diffusion mode;
-- tests or reports that assume this parameter controls damping may be misleading;
-- a research-only shadow step or a later tested engine correction is required to separate zero, default, and enhanced damping.
-
-This is an implementation fact, not yet a production-code change.
-
-## Analytic homogeneous-cell sanity check
-
-Consider a deterministic homogeneous region with no spatial gradients, `kappa=1`, `mu=0`, noise disabled, and mode coupling enabled.
-
-For small amplitude, the local interaction contributes approximately
-
-```text
-a(phi) = 0.1 * tanh(0.4 * clip(phi, 0, 10))
-```
-
-while the hard-coded linear damping removes approximately `0.005 psi` per unit time and mode coupling removes an additional small fraction of `psi` energy.
-
-Near `phi=0`, `a(phi)=0`, so small `psi` decays. Once `phi` rises above a small positive threshold, the explicit interaction can overcome linear damping. At large amplitude, the downstream denominator makes the interaction approach a finite additive drive while linear damping continues to grow with amplitude. This combination can create a finite dissipative equilibrium.
-
-That equilibrium, if reproduced, would be caused by the inserted bounded interaction plus damping and energy transfer. It would not yet demonstrate an independently derived scalar potential minimum.
-
-Meanwhile, default mode coupling continually adds non-negative energy to `phi`. In a homogeneous driven state, `phi` has no explicit local decay term in that branch and can continue toward the hard `phi_cap` unless diffusion or geometry exports it. A `phi` value stopped by the cap is not a natural minimum.
-
-## Frozen dynamic saturation audit
-
-### Question
-
-Which operations are necessary and sufficient for bounded long-run behavior in the current Lineum update, and does any state return to the same finite attractor after perturbation without relying on stochastic forcing, hard clipping, or fail-safe reset?
-
-### Scope
-
-- research-only runner outside the installable package;
-- no production engine change;
-- NumPy diffusion path first because it is deterministic, directly inspectable, and does not require GPU behavior;
-- PyTorch wave modes remain a separate later lane only if the diffusion result leaves the question unresolved.
-
-### Initial states
-
-Two frozen families:
-
-1. **Homogeneous cells:** constant complex `psi` magnitude `0.01`, constant `kappa=1`, `mu=0`, and initial `phi` in `{0, 0.05, 0.15, 1, 10}`.
-2. **Localized source:** centered Gaussian `psi` with peak `1`, `phi` in `{0, 1}`, `kappa=1`, zero `mu`, on grids `{32, 64, 128}`.
-
-Frozen time steps:
-
-```text
-dt in {0.1, 0.5, 1.0}
-```
-
-Primary duration:
-
-```text
-5000 updates
-```
-
-A shorter fail-fast run may stop a lane only after NaN, reset, or cap dependence is recorded.
-
-### Frozen lanes
-
-1. **Current deterministic baseline:** quantum noise and linon generation disabled; all other default diffusion operations retained.
-2. **Stochastic baseline:** current defaults, fixed seeds.
-3. **Dissipation-parameter invariance control:** `dissipation_rate=0`, `0.005`, and `1`; expected identical output under current implementation. This verifies the configuration contradiction.
-4. **No hard amplitude guards:** research shadow step with very high caps and fail-safe reset disabled, while preserving the equation otherwise.
-5. **No linear dissipation:** research shadow step replacing the hard-coded `0.005` by zero.
-6. **No explicit `tanh`:** research shadow step replacing the interaction coefficient by its linear small-signal form while retaining the downstream bounded denominator.
-7. **No interaction denominator:** retain `tanh` but remove the `1 + |term|/10` bounding denominator.
-8. **No mode-coupling transfer:** use the existing fallback reaction lane.
-9. **No `phi` cap/fold:** research shadow step with unbounded diagnostic `phi` and no overflow fold.
-10. **Noise-only zero-state control:** zero `psi`, zero `phi`, default stochastic forcing.
-
-Each research-shadow modification changes one operation at a time. Combined removals are prohibited until single-operation ablations are recorded.
-
-### Observables
-
-For every lane and seed:
-
-- mean and maximum `|psi|^2`;
-- maximum `|psi|`;
-- minimum, mean, and maximum `phi`;
-- `mu` range if enabled;
-- cap, fold, and fail-safe reset counts;
-- NaN or infinity occurrence;
-- last-20%-window slope of mean energy;
-- last-20%-window coefficient of variation;
-- dominant oscillation amplitude where applicable;
-- distance between pre-perturbation and recovered state.
-
-### Perturbation test
-
-After an apparent stationary state, multiply a centered region of `psi` by `1.5` and reduce a neighboring region by `50%`. Continue for another `1000` updates.
-
-A return to the previous state requires both:
-
-```text
-relative mean-energy difference <= 5%
-relative radial-profile L2 difference <= 10%
-```
-
-The target must be the pre-perturbation state from the same lane, not a post-hoc fitted template.
-
-### Classification gates
-
-`hard_guard_dependent` if removing caps or reset changes a bounded baseline into cap approach, NaN, infinity, or unbounded positive tail slope.
-
-`explicit_nonlinearity_dependent` if removing `tanh` or the interaction denominator destroys the bounded state while hard guards remain inactive in the baseline.
-
-`dissipation_dependent` if removing linear damping destroys the bounded state while the explicit nonlinearities remain.
-
-`mode_transfer_dependent` if disabling mode coupling materially changes boundedness or recovery.
-
-`noise_not_required` if the deterministic baseline remains bounded and recovers without stochastic forcing.
-
-`noise_required_for_activity` if the deterministic zero or small state decays but stochastic forcing sustains a bounded active state.
-
-`dissipative_attractor_supported` only if a finite state remains bounded without hard-guard activation, is stable across the frozen `dt` and grid sizes, and returns after perturbation.
-
-`fixed_potential_attractor_not_shown` remains the default unless a separately defined scalar potential and its minimum explain the recovery quantitatively.
-
-### Prohibited interpretation
-
-Even a successful dissipative attractor would show stability of this implementation under the tested conditions. It would not prove that nature uses the same mechanism, that a galactic singularity is solved, or that TOLOG's Dark Heart has been reproduced.
-
-## Homogeneous saturation phase result
-
-### Executed scope
-
-The first phase reduced the current deterministic NumPy diffusion update to a spatially homogeneous cell:
-
-```text
-kappa = 1
-mu = 0
-delta = 0
-all spatial gradients = 0
-diffusion contribution = 0
-quantum noise and linon generation = disabled
-initial |psi| = 0.01
-```
-
-The reduction retained the same local interaction, hard-coded linear damping, mode-coupling transfer, `phi` handling, and guards as the current implementation unless one declared operation was ablated.
-
-Frozen grid sizes, time steps, and initial `phi` values were:
-
-```text
-grid sizes = {32, 64, 128}
-dt = {0.1, 0.5, 1.0}
-phi0 = {0, 0.05, 0.15, 1, 10}
-5000 primary updates
-1000 post-perturbation recovery updates
-```
-
-Nine single-operation lanes produced `405` retained runs:
-
-```text
-baseline
-configured dissipation = 0
-configured dissipation = 1
-no hard guards
-no linear dissipation
-no explicit tanh
-no interaction denominator
-no mode coupling
-no phi cap
-```
-
-The perturbation multiplied the homogeneous `psi` amplitude by `1.5`. Recovery required the final energy to return within `5%` of the same lane's pre-perturbation state. A radial-profile test is impossible in a homogeneous reduction and remains reserved for the localized phase.
-
-### Reproduced results
-
-The configured dissipation parameter was exactly inert:
-
-```text
-maximum difference among configured rates 0, 0.005, and 1 = 0
-```
-
-This confirms dynamically, not only statically, that `CoreConfig.dissipation_rate` does not currently control the diffusion damping term.
-
-Baseline outcomes across all `45` homogeneous combinations were:
-
-```text
-decayed to zero = 6
-decaying        = 12
-growing         = 21
-stationary      = 6
-```
-
-All six stationary baseline cases were the `dt=1` high-`phi` lanes (`phi0` equal to `1` or `10` across three nominal grid sizes). They returned after perturbation with relative energy error about:
-
-```text
-0.00536 = 0.536%
-```
-
-They triggered no `psi` fail-safe reset. Their finite `psi` equilibrium was approximately:
-
-```text
-|psi| = 1708.90035
-```
-
-but their `phi` value reached the hard cap:
-
-```text
-phi = 1,000,000
-```
-
-Therefore these rows show recovery of one bounded `psi` component while the full state is cap-supported.
-
-Removing the downstream interaction denominator caused every high-`phi` lane to hit the guard reset:
-
-```text
-18 / 18 high-phi runs reset
-```
-
-The denominator
-
-```text
-1 + |interaction_term| / 10
-```
-
-is therefore necessary for bounded high-`phi` behavior in this tested homogeneous regime.
-
-Removing explicit `tanh` did not remove all finite stationary `psi` states:
-
-```text
-stationary high-phi rows without tanh = 6
-maximum final |psi| without tanh = 1788.57180
-```
-
-Thus the explicit `tanh` is not individually necessary for a finite homogeneous `psi` equilibrium while the denominator, damping, transfer, cap, and guards remain.
-
-Removing the hard-coded linear dissipation produced no successful high-`phi` recovery within the frozen horizon:
-
-```text
-recovery passes = 0 / 18
-maximum final |psi| = 18106.61161
-```
-
-This supports linear-dissipation dependence for timely recovery under the tested conditions. It does not prove mathematical divergence at infinite time.
-
-Removing the `phi` cap left `psi` broadly finite under the tested horizon but exposed monotonic `phi` accumulation:
-
-```text
-maximum final phi = 13,402,932.35238
-minimum positive late-time phi slope = 121.18393 per update
-```
-
-No homogeneous uncapped `phi` fixed point was observed. The apparent full-state stationarity of the capped baseline is therefore not a natural fixed minimum of `phi`.
-
-### Independent verification and preserved failure
-
-A second implementation reconstructed the homogeneous scalar recurrence independently, using amplitude-only scalar arithmetic and not importing the primary runner.
-
-It reproduced all `405` rows:
-
-```text
-exact categorical mismatches = 0
-maximum numeric relative difference = 1.12e-14
-configured-dissipation invariance = passed
-high-phi denominator instability = passed
-uncapped-phi positive-tail check = passed
-overall independent check = passed
-```
-
-The first version of the independent checker failed and is retained permanently. It incorrectly required every `dt` lane to reach its analytic asymptote within the frozen `5000`-step horizon:
-
-```text
-baseline maximum fixed-point relative error = 0.1435
-no-dissipation maximum fixed-point relative error = 0.8312
-linearized-interaction maximum fixed-point relative error = 0.0784
-```
-
-Those values reflect finite-time convergence, not disagreement with the independently reconstructed recurrence. The checker was corrected to test the frozen run itself, the declared classifications, and analytically valid directional controls rather than imposing an unregistered convergence deadline.
-
-A complete primary rerun was byte-identical to the first retained result.
-
-### Question 2 interim classification
-
-```text
-explicitly_stabilized_partial_dissipative_equilibrium_only
-```
-
-The evidence supports a finite and perturbation-recovering `psi` equilibrium in a narrow subset of homogeneous conditions. It also shows that:
-
-- the interaction denominator is essential in the tested high-`phi` regime;
-- the hard-coded linear damping is important for recovery within the frozen horizon;
-- explicit `tanh` is not individually essential for finite homogeneous `psi`;
-- `phi` has no demonstrated uncapped homogeneous fixed point;
-- the exposed dissipation parameter is not wired to the implemented damping;
-- a full fixed-potential attractor is not shown.
-
-The homogeneous reduction contains no spatial gradients, diffusion, localization, radial profile, boundary interaction, or stochastic forcing. The preregistered localized phase remains necessary before question 2 can be closed.
-
-## Localized spatial phase preregistration
-
-### Development question
-
-Can spatial transport and neighbour coupling turn the partial homogeneous `psi` equilibrium into a localized, perturbation-recovering full state without hard `phi` containment? Does the eight-neighbour 3x3 stencil add a reproducible stabilizing or isotropy advantage over the four-neighbour stencil?
-
-### Source snapshot and implementation boundary
-
-The research runner must embed a frozen reference update derived from:
-
-```text
-lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
-```
-
-It must not modify or import a mutable production implementation as its sole reproduction path. The exact current NumPy diffusion order, coefficients, periodic `np.roll` boundary convention, explicit interaction, damping, diffusion, mode transfer, `phi` diffusion, caps, and reset must be represented. One operation may be changed per declared ablation.
-
-### Stage L1 screening domain
-
-The first retained spatial step is intentionally small and frozen before result inspection:
-
-```text
-grid size = 32 x 32
-dt = 1.0
-primary updates = 5000
-recovery updates = 1000
-stencils = {LAP4, LAP8}
-initial phi = {0, 1}
-kappa = 1 everywhere
-mu = 0 everywhere
-delta = 0 everywhere
-quantum noise and linon generation = disabled
-```
-
-Initial `psi` is a centered real Gaussian with peak magnitude `1` and standard deviation `3` cells:
-
-```text
-psi(x,y) = exp(-(x^2 + y^2) / (2 * 3^2))
-```
-
-The field is placed far enough from the periodic boundary that initial wrap-around is negligible. This stage tests the checked-in cell-scale dynamics and boundary interaction; it is not yet a continuum-limit claim.
-
-Frozen single-operation lanes:
-
-```text
-baseline
-no hard guards
-no linear dissipation
-no explicit tanh
-no interaction denominator
-no mode coupling
-no phi cap
-```
-
-Total retained L1 runs before any fail-fast termination:
-
-```text
-2 stencils * 2 phi starts * 7 lanes = 28
-```
-
-### Perturbation
-
-After 5000 updates:
-
-- multiply `psi` inside radius `2` cells by `1.5`;
-- multiply `psi` in the neighbouring annulus from radius `3` through `5` cells by `0.5`;
-- preserve phase;
-- do not alter `phi` directly;
-- continue for 1000 updates.
-
-The pre-perturbation state of the same lane is the only recovery target.
-
-### Spatial observables
-
-For every run record:
-
-- total and mean `psi` energy;
-- maximum `|psi|`;
-- minimum, mean, and maximum `phi`;
-- late-window energy and `phi` slopes and coefficients of variation;
-- reset, cap, and non-finite events;
-- energy fraction within radii `3`, `6`, and `10` cells;
-- energy half-radius;
-- centre-of-energy displacement;
-- radial profiles of `|psi|^2` and `phi` using fixed integer-radius bins;
-- fourfold angular anisotropy of `|psi|^2`, where zero is rotationally uniform and larger values indicate square-grid imprint;
-- post-perturbation energy, radial-profile, half-radius, and centre recovery errors.
-
-### L1 gates
-
-`localized_psi_recovery` requires:
-
-```text
-no reset or non-finite event
-relative total-energy recovery error <= 5%
-relative radial-profile L2 error <= 10%
-absolute half-radius change <= 1 cell
-centre displacement after recovery <= 0.5 cell
-```
-
-`localized_full_state_recovery` additionally requires:
-
-```text
-no phi-cap hit
-relative phi radial-profile L2 error <= 10%
-late phi slope <= max(1e-10, 1e-8 * abs(late phi mean)) per update
-```
-
-`spatial_transport_resolves_phi` requires the uncapped-phi lane to remain finite, avoid a persistent positive late-time `phi` slope, and recover its pre-perturbation `phi` profile.
-
-`lap8_specific_stabilization` requires LAP8 to pass `localized_full_state_recovery` while the paired LAP4 run fails, without relying on a reset or cap, and with lower fourfold anisotropy.
-
-`stencil_not_decisive_in_L1` applies when paired LAP4 and LAP8 runs receive the same boundedness and recovery classification and neither has a material advantage larger than ten percentage points in radial recovery or anisotropy.
-
-A candidate that passes L1 must proceed to the already frozen `dt` values `{0.1, 0.5, 1.0}` and grids `{32, 64, 128}` before any stable-attractor claim. L1 failure is not a terminal programme verdict; it activates the repair map below.
-
-### Repair map if the current spatial system fails
-
-The following candidate classes are registered before execution:
-
-1. **Transport repair:** current `phi` diffusion or boundary export is insufficient; test a conservative flux or physically scaled diffusion without a local hard cap.
-2. **Bidirectional exchange repair:** mode coupling deposits energy into `phi` one way; test a reversible or detailed-balance exchange between `psi` and `phi`.
-3. **Local relaxation repair:** add the smallest explicit return term for `phi`, first as a linear leakage control and then as a potential-derived force.
-4. **Existing-field feedback repair:** test whether `mu`, dynamic `kappa`, or the existing foam/topology can provide state-dependent release without a new fundamental field.
-5. **Potential-minimum repair:** only if existing ingredients cannot produce the required observable, introduce a research-only scalar potential candidate with declared minima and energy accounting.
-6. **Localization repair:** if every bounded state simply disperses, test a conservative nonlinear localization term separately from saturation.
-7. **Boundary and scaling repair:** if results change qualitatively with stencil, domain, or time step, correct discretization and physical scaling before interpreting a mechanism.
-
-The cheapest next discriminator will be selected from the exact L1 failure location. No blind parameter sweep or unrestricted hybrid is permitted.
-
-### Prohibited interpretation
-
-L1 can identify what the current spatial implementation does and which operation is necessary under the tested cell-scale conditions. It cannot establish a physical 3x3 elementary cell, continuum convergence, a galactic attractor, or a TOLOG Dark Heart mechanism.
-
-# Question 3 — scalar minimum and information persistence
-
-## Current implementation audit
-
-The current state includes:
-
-- complex `psi`;
-- real scalar arrays `phi`, `kappa`, and optional `mu`;
-- external scalar `delta` when supplied.
-
-A scalar-valued array is not automatically a scalar field with a fixed potential minimum.
-
-No explicit local potential of the form
-
 ```text
-V(q) with dV/dq = 0 at a declared stable minimum
+grid = 32 x 32; dt = 1.0
+primary updates = 5000; recovery updates = 1000
+stencils = LAP4, LAP8; initial phi = 0, 1
+kappa = 1; mu = 0; delta = 0; noise = disabled
+initial psi = normalized centered Gaussian, peak 1, sigma 3
+lanes = baseline, no hard guards, no linear dissipation, no tanh,
+        no denominator, no mode coupling, no phi cap
+total = 28 cases
 ```
-
-has yet been identified and validated as the persistence mechanism for `phi`, `kappa`, or `mu` in the current update.
-
-Observed implementation roles:
-
-- `phi` accumulates transferred `psi` energy or relaxes toward `|psi|^2` in the fallback branch, diffuses, and is clipped or folded;
-- `kappa` is read as a permeability or mask and is not dynamically evolved by `step_core`;
-- `mu` accumulates selected `psi` energy, decays linearly, and is capped;
-- none of those facts alone establishes a stable information-bearing potential minimum.
-
-## Current classification
-
-```text
-no_explicit_scalar_potential_minimum_yet_demonstrated
-```
-
-## Later frozen destructive memory test
-
-This test will begin only after question 2 identifies which stabilization operations are active.
-
-1. write a localized state using a frozen source;
-2. remove the source completely;
-3. run without stochastic forcing;
-4. apply positive and negative local perturbations;
-5. compare decay, recovery, relocation, and destruction;
-6. repeat across grid size and time step;
-7. distinguish a stable minimum from slow relaxation or hard clipping.
-
-A memory claim requires persistence without continued source input and recovery toward a predeclared state after perturbation. Slow decay alone is not a stable potential minimum.
-
-Question 3 is not closed by documenting that the current field lacks a demonstrated minimum. The development target is a smallest-ingredient Lineum mechanism that stores a localized state after source removal, returns toward a declared state after perturbation, and passes destructive controls without continued driving or hard clipping.
-
-# Root-programme impact
-
-| Statement | Current impact |
-|---|---|
-| Finite saturating addition is useful for NGC 3198 | `supports` |
-| Exact `tanh` is preferred on fiducial NGC 3198 | `supports` |
-| Exact normalized `tanh` is universal across galaxies | `contradicts` within tested family |
-| Broad bounded-transition family is common | `supports` descriptively |
-| Disk concentration alone monotonically controls population `tanh` penalty | `contradicts` under frozen extension |
-| Observer and measurement geometry are irrelevant | `contradicts` as an allowed assumption |
-| Lineum currently predicts galactic rotation blindly | `not_yet_supported`; development target remains active |
-| Public TOLOG evidence reproduces blind 98% emergence | `not_yet_supported` from public reproducible material |
-| Lineum stability is purely emergent | `contradicts` in the homogeneous tested regime; explicit denominator, damping, cap, and guards materially shape the result |
-| A partial dissipative `psi` equilibrium exists | `supports` for six high-`phi`, `dt=1` homogeneous lanes only |
-| Current Lineum has a proven fixed potential attractor | `contradicts` as a conclusion from the homogeneous phase; repair programme remains active |
-| Current Lineum has a proven persistent scalar minimum | `not_yet_supported`; development target remains active |
-| A 3x3 neighbourhood is uniquely required | `not_yet_supported`; L1 comparison preregistered |
-| B4 is intended only to judge the present engine | `contradicts`; B4 is an audit-repair-validation programme |
-
-# Retained artifacts and reproduction
-
-## Population shape census
-
-Committed tools:
-
-- `research/runners/lineum_b4_sparc_population_shape_census.py`
-- `research/runners/lineum_b4_sparc_population_fit_batch.py`
-- `research/runners/lineum_b4_sparc_population_finalize.py`
-- `research/runners/lineum_b4_sparc_population_summary_check.py`
-
-Committed outputs:
-
-- `research/results/lineum_b4_sparc_population_shape_census_summary.json`
-- `research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64`
-
-Expected result:
-
-```text
-classification = mixed_population_evidence
-informative = 102
-tanh compatible = 82
-tanh strongly rejected = 14
-tanh best = 68
-```
-
-## Extreme source discriminator
-
-- `research/runners/lineum_b4_source_structure_discriminator.py`
-- `research/runners/lineum_b4_source_structure_check.py`
-- `research/results/lineum_b4_source_structure_discriminator.json`
-
-Expected result:
-
-```text
-classification = simple_source_separator_supported
-winning feature = disk_half_light_r_over_rmax
-AUC = 0.9047619048
-Holm-adjusted p = 0.0396284830
-```
-
-## Population concentration extension
-
-- `research/runners/lineum_b4_population_concentration_extension.py`
-- `research/runners/lineum_b4_population_concentration_check.py`
-- `research/results/lineum_b4_population_concentration_summary.json`
-- `research/results/lineum_b4_population_concentration_result.json.xz.b64`
-- `research/results/lineum_b4_population_concentration_rows.csv.xz.b64`
-
-Artifact SHA-256 values:
-
-```text
-primary runner       8b136f41377a275e3087a76081839157047abbcabb0efa2b6cc6e6cf31690df0
-independent checker  4c63528f3affdf22d088a825fc48acad50e6af7d6f9bf32caa7070047d394b4d
-full result JSON     a3721fbbf58d0c2ef48849b2d7573041c64589c2137828e1b2fdf3c0a5e39536
-full result XZ+B64   55550f4302c8f570aaebe22cab0250942b0967873ed20e314f906c837384f8bd
-rows CSV             fcdb1593f57d8f6da357ac05c5a2b60aae575622b2837ea4326b384186db3cc5
-rows XZ+B64          44cb6c09c13b11df608093dcac803144132b4d7807670a16dd915fab9be63799
-```
-
-Minimal reproduction:
-
-```bash
-python research/runners/lineum_b4_population_concentration_extension.py \
-  --archive Rotmod_LTG.zip \
-  --population-table-b64 research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64 \
-  --output population_concentration_result.json \
-  --table population_concentration_rows.csv
-
-python research/runners/lineum_b4_population_concentration_check.py \
-  --archive Rotmod_LTG.zip \
-  --population-table-b64 research/results/lineum_b4_sparc_population_shape_census.csv.xz.b64 \
-  --result population_concentration_result.json \
-  --output population_concentration_check.json
-```
-
-Expected result:
-
-```text
-classification = no_population_extension
-Spearman rho = -0.2254398887
-primary direction pass = false
-rejection AUC in preregistered direction = 0.2759740260
-adjusted association p = 0.2753772462
-independent checker = passed
-```
-
-## Homogeneous saturation audit
-
-- `research/runners/lineum_b4_saturation_homogeneous_audit.py`
-- `research/runners/lineum_b4_saturation_homogeneous_check.py`
-- `research/results/lineum_b4_saturation_homogeneous_summary.json`
-- `research/results/lineum_b4_saturation_homogeneous_result.json.xz.b64`
-- `research/results/lineum_b4_saturation_homogeneous_check.json`
-- `research/results/lineum_b4_saturation_homogeneous_initial_failed_check.json`
-
-Source implementation:
-
-```text
-lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
-```
-
-Local pre-transport SHA-256 values:
-
-```text
-primary runner        a7fc18d0fe2f921473bf50580807dc39df0861d6f02f979ee745f3e78d7ed478
-corrected checker     91a35e01018fbe2f829677b1db6648252c751969dd8040b613b1774f866d4eee
-full result JSON      f7cdfaa0cdbbca87d4f6f1d832fb53d57c54a187f920b39de8eb04d806940f39
-full result XZ+B64    9a54eb142561216348917abbe43653d6265140d6c7e167706820d13fb71db15a
-corrected check       598ea3dc84665c2d56a8b45bb93e56d11a85cbf74105775aabee6b6f717b8608
-summary JSON          6d9797ec464e769ecfc3a86f44d7f5eca69c5a2def23297a70a942574477f29f
-```
-
-Minimal reproduction:
-
-```bash
-python research/runners/lineum_b4_saturation_homogeneous_audit.py \
-  --output homogeneous_saturation_result.json
-
-python research/runners/lineum_b4_saturation_homogeneous_check.py \
-  --result homogeneous_saturation_result.json \
-  --output homogeneous_saturation_check.json
-```
-
-Expected interim result:
-
-```text
-question_2_interim = explicitly_stabilized_partial_dissipative_equilibrium_only
-rows = 405
-configured dissipation maximum difference = 0
-stationary high-phi baseline rows = 6
-high-phi no-denominator resets = 18 / 18
-stationary high-phi no-tanh rows = 6
-uncapped phi has positive late-time slope
-independent checker = passed
-```
-
-# Numerical and environment limitations
 
-The original population fits used:
+Localized `psi` recovery requires no reset/non-finite event, energy error at most `5%`, radial-profile L2 error at most `10%`, half-energy-radius change at most one cell, and final center displacement at most half a cell. Full-state recovery also requires no `phi` cap, `phi` radial-profile L2 error at most `10%`, and the preregistered one-sided late-`phi` slope gate. Absolute slope and non-triviality are secondary only. Stencil comparison uses complete boundedness and recovery status.
 
 ```text
-Python 3.13.5
-NumPy 2.3.5
-SciPy 1.17.0
+canonical runner SHA-256  = 96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd
+canonical checker SHA-256 = 3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031
+canonical test SHA-256    = 95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec
+verification environment  = Python 3.13.5; NumPy 2.3.5; pytest 9.0.2
+loader-based suite         = 9 passed
+archive-only extracted suite = 9 passed
 ```
 
-The repository declares NumPy below `2.0`. Independent reconstruction and alternative checks reduce but do not erase that mismatch. A rerun in a repository-supported NumPy environment remains desirable.
-
-The population concentration extension additionally used scikit-learn `1.8.0`. Its principal rank, permutation, and independent-check results do not depend on the cross-validation model.
-
-The homogeneous deterministic phase of the question-2 audit is complete. It used Python `3.13.5` and NumPy `2.3.5`, but the independently checked recurrence is scalar and does not depend on SciPy, scikit-learn, PyTorch, or GPU behavior. The localized spatial phase must record its own environment and remains subject to a repository-supported NumPy rerun if executed under NumPy 2.x.
-
-# Prohibited conclusions
-
-This report does not establish:
-
-- a universal galactic `tanh` law;
-- autonomous 98% galactic emergence in Lineum or TOLOG;
-- absence of dark matter;
-- modified gravity;
-- a physical 3x3 elementary cell;
-- a TOLOG Dark Heart derivation;
-- an emergent `tanh` from current Lineum code;
-- a natural Lineum attractor independent of inserted bounds;
-- a stable scalar potential minimum;
-- a persistent information field;
-- that disk concentration causes the observed shape family;
-- that a lower chi-squared identifies physical truth;
-- that current implementation failures are terminal limits on future Lineum development.
-
-# Version history
-
-- `0.1.0`: froze and executed the NGC 3198 equal-flexibility test.
-- `0.2.0`: opened the early-Lineum threshold audit.
-- `0.3.0`: reconstructed the supplied staircase as quantized linear rendering; original dynamics remained provenance-blocked.
-- `0.4.0`: preregistered the complete SPARC population census.
-- `0.5.0`: completed the population census; `mixed_population_evidence`.
-- `0.6.0`: recorded the owner's one-mechanism-with-weak-or-absent-term hypothesis and preregistered the extreme source discriminator.
-- `0.6.1`: corrected `SBdisk` and `SBbul` provenance before source execution.
-- `0.7.0`: completed the extreme source discriminator; compact disk association supported inside the selected contrast.
-- `0.8.0`: reorganized the single report around the three controlling questions; completed the all-102 population concentration extension as `no_population_extension`; recorded observer/measurement confounding; opened and preregistered the question-2 saturation audit; documented the unused `dissipation_rate` configuration contradiction.
-- `0.9.0`: completed and independently checked the homogeneous deterministic saturation phase; retained the initial checker failure; classified question 2 provisionally as `explicitly_stabilized_partial_dissipative_equilibrium_only`; localized spatial phase remained pending.
-- `0.9.1`: recorded the owner's audit-repair-validation objective; made current failures explicitly non-terminal; preregistered the L1 localized LAP4/LAP8 screening and its repair map before execution.
-- `0.9.2`: moved the exact owner-controlled three-question scope and affirmative closure gates into this standalone report; removed the redundant directory-level instruction dependency.
+The checker independently reimplements the spatial update and observables and does not import the runner. No official retained localized-L1 result exists. Earlier uncommitted executions are exploratory and non-evidentiary.
+
+## Preserved operational failures
+
+The embedded chronology retains missed pre-run Git checkpoints; two strict-JSON storage failures with no retained scientific result; checker `NaN` and wrapper-sensitive independence-test defects; abandoned issue/Actions transport; accidental connector files removed in explicit commits; a rejected nonexistent-branch request; rejected mismatched unreferenced blobs; and an initial compact-capsule loader that matched its own example heading instead of the final archive block. Permanent tests caught the latter before commit; the loader was corrected. These are reproducibility events, not scientific results.
+
+Connector-only atomic publication is frozen as `blob -> tree -> commit -> compare -> non-force fast-forward` when authenticated local Git is unavailable. Two oversized Base64 blob submissions were rejected by the SHA gate because the connector truncated their arguments; both remain unreferenced and never entered repository history. A temporary-branch assembly was also rejected before creation because the connector exposes no authorized branch-deletion operation. The final transport therefore uses the same lossless XZ archive encoded as Unicode15, which carries 15 payload bits per Markdown character and fits in one verified blob without external storage.
+
+## Exact next action
+
+Run exactly one complete primary localized-L1 execution from the committed frozen source. Commit the primary output and updated report before the independent checker or mechanism selection. Then commit the independent recomputation and only afterward interpret the result within the tested domain.
+
+## Standalone extraction
+
+Save this file as `lineum-public-tolog-galactic-shape-b4.md`, then run:
+
+```python
+from pathlib import Path
+import hashlib, io, json, lzma, tarfile
+
+BASE = 0x3400
+EXPECTED_ARCHIVE_BYTES = 34756
+
+def decode_unicode15(payload: str, expected_bytes: int) -> bytes:
+    acc = bits = 0
+    out = bytearray()
+    for char in "".join(payload.split()):
+        value = ord(char) - BASE
+        if not 0 <= value < (1 << 15):
+            raise ValueError(f"Invalid Unicode15 code point: U+{ord(char):04X}")
+        acc = (acc << 15) | value
+        bits += 15
+        while bits >= 8 and len(out) < expected_bytes:
+            bits -= 8
+            out.append((acc >> bits) & 0xFF)
+            acc &= (1 << bits) - 1 if bits else 0
+    if len(out) != expected_bytes:
+        raise ValueError(f"Decoded {len(out)} bytes, expected {expected_bytes}")
+    return bytes(out)
+
+capsule = Path("lineum-public-tolog-galactic-shape-b4.md")
+text = capsule.read_text(encoding="utf-8")
+heading = "#### Normalized complete-history archive — XZ plus Unicode15"
+start = text.rindex(heading)
+block = text.index("```text", start) + len("```text")
+end = text.index("```", block)
+compressed = decode_unicode15(text[block:end], EXPECTED_ARCHIVE_BYTES)
+assert hashlib.sha256(compressed).hexdigest() == "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f"
+archive = lzma.decompress(compressed)
+with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as tf:
+    tf.extractall("lineum-b4-standalone")
+manifest = json.loads(Path("lineum-b4-standalone/MANIFEST.json").read_text())
+for path, expected in manifest["members"].items():
+    data = Path("lineum-b4-standalone", path).read_bytes()
+    assert hashlib.sha256(data).hexdigest() == expected
+```
+
+Then run `python -m pytest lineum-b4-standalone/tests/research/test_lineum_b4_saturation_localized_l1.py -q` from a layout where the extracted `research/` and `tests/` directories share one root.
+
+### Archive receipts
+
+```text
+format = lineum-b4-normalized-history-v1
+source report version = 0.9.7
+source report bytes = 92702
+source report SHA-256 = 03546f55c9a73a4292aee750743e2f351b37f7621cb5f6891be2b7a5159f77df
+source report Git blob = add388e787c1d668e341026e7cb3502eaa532e0d
+normalized historical text SHA-256 = e1cc488a7c5e0b20c8f3b5be71cc3c69159ca29c9f6c75f60266588f1f6361cc
+archive bytes = 34756
+archive SHA-256 = 171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f
+encoding = Unicode15 (U+3400..U+B3FF; 15 payload bits per code point)
+encoded characters = 18537
+```
+
+#### Normalized complete-history archive — XZ plus Unicode15
+
+```text
+늛銖㽀㐀嬶軑䀄㐡㒎㐀㐂䃵穧㵟댏㝝㐓堑球㲾韋趿湮눃进ꂕ괓䵋痘葇䪎䜟泆䟊惐豑䓐咙皞逤誛鏦豝簐ꥉ隽喞涅灁駏嚦纉預翍験ꄝ㭩嫛缬ꢁ꼄㗭䱶꾚烝蹛毽㒔篗篌跑狅隇ꡰ臸哙袒䝍䊼菀怞墸慦趡㒢ꎶ穪ꦥ紁玞賾邏沟娿ꤠ釅
+楫绦韓灊㻲惹刌䆇ꖆ㾘䈏正䪣燄缋魁俱䃲繒婧㮁媘耝愹陻㪩揑檮䞞躙嶑뀃壤ꗖ堨넖侊仏ꜵ挆궄爘늁憺㦀鵓皝筅箓捁蛄桔捽냂欿䎆냺歊終釯悚縮皷ꠑ務넯翝蓗嵋鑮类祳貈㪜轵䦍䲷䊭绤禑寲慞硦긓瀚ꮓ갍ꪙ旔㙬溠驟槗䨣觯騝
+䠹洎雃崩ꥯ廗炍銜䥭䠑㮏鏔鮌녫ꐀ㟲扸癈卩窊䇥蜓樭纃㳰孁喩獟褚溾뀐疊㫭聞妥ꆛ踂㐙ꓤ朻赱惫悍㻷轃㓤弁竄䎘赱䨑魉韇嚐ꉆ漋鹖瘗圶幰䐘搹䆍鳁腔瞅僓囿楌㰜喼꾞纆蘷韄甔趁ꌤ㪗㚐畄渙摗镌縦阕薹䡥瓚宏紞猷坺㥫ꀀ擊
+貚汔䒹蔍嬗䳡仙绠㑏厶戒榓늠肓膖贪ꎊ㘧饽ꔚ泌麈ꝸ䏋絲䎪锬鰽㞾嗟鿥㑔㮶达対诀凌僒僨䵉鸏ꘉ茓䚊澚䗖䓜淫姚葁臣諅䚤設䦯ꨓ䈦㡺傟薅鳾杦鵉茪ꥈꋲ侊㥪ꁾ懼矼苌膌龺鍛郂䩷偲愉愼㐲ꚹ盐ꋕ嘗䈾彡瘠撺鸹蠱㬇腵婙嬵ꫵ
+꫇驽덄돛渑娉蚛鞁怰媺晌鲉笷꟬砌䇷㸠谌霳墅蝿瑔꯹鄍嚳愕贾鬇駔陝閲勣낏伕䑝泡鵸ꇠꟌ䶪꯳鱫넠度纴嫑噤羝㬉뉆昑ꢲ燭㠲醨䘰碚赫ꇒ盏鳇姇肜꼒疍ꓥ懞俨䒔䤳勉䭣汅冖囐誘焈ꦨ倶榕烿鱶ꓹ䴵꡵餂ꑲ毿嶵䎤铫ꯁ縵埄薑ꕷ
+厮妙黓袚跌嚈嚊楞俧熈埋갃璙꪿㽧謜眙ꁀ㘘걖虥夂ꍁ犎尝ꖺ䫃鷲雱鞹낈鹨薚鐎磉抵侪꺘兺䦔擷扐釀妫賖닳綏袲殆䎼匝㻝绯脠潳㐬䩁㒯䡖㵨燿ꌙ䷪꟱꭬豧桚楶㐏质成摇篳转ꗦ坘꒞钇籦熩峃莡塨ꤘ滉酄䊴劣ꗗ矄䵊甅䕮ꉰ䣳刅
+蕀涔湄㐀釯䏲䃄蛓觞垼蔠䛪곩鋖㧾梛絼ꄋ琢䄘㵽䦧뀮癜鬷挜䫸薌鳯糭꜍愱ꓕ凑㫚构䓍象镱䡞锟慤厲髩鉩䄦码僐鋇濪牒㡵㝠憼坱剱洜柺蠑勄ꍮ炾冭ꡝ䳬盔䷛搠潬碴蘌晥嶙樬ꮊ捴ꗼ熹돟财䲚孜呬誟秜螺㢘鏑䭈戋岎敻昫隈摲ꉇ
+藍搾庢徻唾礇滓琅编楪燞惑暉蒝襖嗡㮲䨺槝庻樑璧Ꙁ翅泸䅟伕輓㶶嶽嬙经㹭肏돡ꅭ聓懲许ꭚ鍇菰껋꫻揥澟樭腞樹娜穥飩㦂㫧藮鵈㦑蕏䍏铽曗诱嘫阷꾺郾刂餆㼕簵䓥歡귵坦謾錦㧅謸㾮抈唆鞝谑ꀭꛛ吪戅놽ꯖ訓阠굴ꎻ刦蠼黦
+꬇槰薢幹ꘜ낁덽鯕璦彰喐䡀篒뉵居癍鷬䖴勰偯襋ꓺ鬸㧗㝣羗陕陪肎㴝黌慎腷ꈪ麜婁墘諆柯蝫攃櫎斷靼ꏾ灥跸毿嘈눫鿗澂辽妉궹杺醀銗㣒饤仢澺俺缠坐阫媈礲嗹㑩鍦彔ꩴ鈘賺꫙ꫦ䵖嶡籉堬㙈觾䉈꒭陉岹䈩濈怢䒵鮠鈍跒涞菰
+댳蒟戽䀅胍秅槑旵婫赕鞀䬡澳燐㗾㠶詳䢲㻽㡕篷鲅䊤蜵皵鬚琋湅輿霭ꧪ遉嫓凎悎艋䵩撠ꕼ眾駐劲谸ꢨ鄊㦵万梤賠ꮑ帩輥뉇磚䈌ꑅ鼍㥋錷鿀鶍ꖲꂦ㧸血渺韑螯艨於翦鎌䄟ꌴ꯹奕蝃進㨥燛甃㧲篑䀢厄䧱絞匞捴发鿹齮晇蛷铄咹
+朥ꃘ橱鵏㸆奤蝾㡳岩䚭贖녎氰亷꒱㝓㖟嵾嚯꽩曦襑昢䩪悬㳳䋳㚢괣燈锞꜑䊝ꬆ蔳磀鉰鴍嶘睇聰茻䲃걭怖놏掁煺塅攩䦊沫鼳淉ꢄꞡ裯㥉翴覉鼑奣㑸䮢䏊䏖划敞实攩詘㵼愬꯼낚㕰䩫缺潭繂捨譱蚩晖鴗磍覿瞡㚀爉十徳嚣駈掗濺
+蘤髩标焿氟䛱藬澁涓溸傼尧履䜄娼䵝䪊䉷栈䑿锞呪縈仳差ꏲ㷇㗨ꮎ㙚ꕲ跴꾟䞍涔磇剒藬㑱窜縜ꎟ㰈㽞嘌躬ꎺ曍丳ꌜ袎睖ꩲ挸皎阭鉩铒羨蜘饲妯꓂詼㑞蚞ꈓ銎냙㺸会职鱧爈藗꠻桛亜剦巔儌꣈恉䞰鞒棏㡯넃巎꺹报歜辭䴦䉕耄
+繁䨇甽䊳唌莓吡䢬騔浱铎㼛寮隋䖲十俓䕱䒺焷巟㻹鮝倀䖭赝뀷꽟穛仓芜荚꒱蜅냉긣䡞ꤓ䕄꘩ꤙ䚝忩報鼖뉇䛙䇮ꚤ苐僾䄔鉫㤹㟋黏㔫㤟ꕌ烓遽蔌穂鋠㻵ꑿ殥癆縮豺奢君䒛䏵㮹Ꞔ盱椌呫ꭁꌩ皧姈焉䰀羿涏匳驘긾浑椪㝅䞄ꇫ鲒
+憿ꟻ掎꫼翅乲䋒鷣闩瓵曉겆䌲蹬㩨鳗ꞑ濸楙㹸濺杘ꗙ䧧伾褐灊酐烜鼔ꜜ굇ꏚ꿜誡梜㛑ꨲ櫹닾涬普鎭际箼ꉠ抝灯詬䖰傲屜蔵酇꫇馴㢭䛗焕㹩罗綴乿猇棙ꗩꄣꖐ걄鎺궝㜠襍繍䔢㶨捊겕ꡎ鳽芋蝟䮎薤늝贒摿痷駼㢔꠮뉣䃍늃㺵궡
+꥙걍旻費닭㦓圬圸栆䏤眛腟癰䡡卪꼱幤嚆掼鬲筙碡䒥㞜耣砡薒㥙㞐箙䑼鈚꼜踳楆㶱凝䅡ꙴ潒塘澐犻燜㠣鿛䜍꓇刼陎蔪鞍㠈麝㯘罶哑瓌ꢆ䈔壂碧澳澭ꫳ悡ꨬ넋砋ꩂ疽䕣沔䎊㞊䎆開䍯加睥匮樷捋籬ꊏ犫괧ꪢ寂髬嗴㶱托涄醵櫒
+䡘㬙䏇ꔖ撞蕅曈ꋏ蹵襠曬刷糮걀鐌鈨睰꣱㝠湣赇㐲鎏䩳疍陻窛燨譩桊崣姝髡ꆈ䶫誃礌掛芹濵颳裸腩欇霪㿍颮ꠁ闩䛵鸪惚钳鵾眬䀛ꧡ简橄ꁙ偾䅆꧷㾉蕤䣛韘齖訰鳽裰닕㾟揌䮶隝攌埽政㧅硻꥾ꗷ泛嶔鸆铲槅繿꠽鑔腿㚾肻ꭍ莽
+冦㣣訰欻赞䞇始莭蔹櫥订㳓肁艈詰鶟ꮣ天䲲也嶕䋯ꭨ娛擧濲漗搊㟲頴讥縊晾薿椠敗䚺漰ꪆ烵铧轰穑孰ꦷ疭國蕹筚鮄尕鿇衜ꓨ秈鑗哙嘃㛮꺁綝槐閮玓蓱欢硣瘊尢눚ꃒ䋳㭀ꁿ鿍俱旫㑄녂暪䷻鲝轱澒㟇䩊熓諹꣓橯栵崕闠扛抂꾸
+逶剢鋔嗗䔡귱㦕珙鎖焮ꉄ舧冟䌒浶ꛮ箬禿棵莊ꔴ䚃遜蜭㫲躮㹳兔搧㗦嵸苦琀憯ꑝ爤臥軪Ꜽ怃脝鰛櫑睓鸚袂ꁾ䊛䷣길꽼旫値矉㵿늿嚕㬋釺呎뎹뎃粺篖詒孈幋峊荲沜傷锃㱳㼻䷆麞誫慵扜긡馤唗異㦂灌祇Ꜩ艨䕹餤䴑ꠖ缗莹㷐瀫
+ꧢ觨䠚吚䦃碍坥醴欜逛돞彩踋薇产䇊兟뀭䳅꫃器늊ꞧ畮蠙鰜䉥䪪癶拴宦迖軉㡤籴劔族㜰勴躂귏ꆈ㴋冻铤禭铃ꤢ礱狯展縇鐰鑡催謶ꋼ㧠廳㳂ꣻ捵袶煿ꈦ雿春绣鰠㚖蟕榝歜㼈簉㑽楩塷뀢粂黠褗拏摲Ꙕ㲍檨楔忋軈駸䬫㲛끛偡诮
+꬞乮菻ꄏ꾂餋侥㑮龀㒸耲㕺䙉伾ꁣ轖崰艰尠뀾匴䕄䱉㓁㮮䭻堘垊䜤ꤹ䧶粡姒掾ꂹ朘薧㹦岂弴迡鬂꽡ꊍ體ꁼꧫ歰玈꛸嶂諾咔壥撁鍌㓕烜Ꟛꬑ剛菍꓅䕹䑟㔑鑛䭞婊茈䛩䤼霯宒䄜籬橃냇껉脺꒧ꄘ鐁頎漫䬬謲裲鐥猠暔늘挩䶭芆㸡
+睄Ꜭ䵪꼐鈧别瑞偗꘽籞䬲ꞽ聖ꅦ髺琟遻㿃ꀠ戴樼郅璟彬慴勃銂徲駭墈胩蛄蕏检䯷獷瑥岴妵掠曔ꕯ紷꒍鍺符岆灈ꊖ輯䔤捳羵玆꥽꧸媦䜚㨙櫯嗎䣋ꙸ亙㿻꽓浥㜒㭉陨謅惋揟襛ꟕꌄ躁鹞妓㻄埽권渎놙廄䎰礢蘢䱷标箬縭帱喛兤帧
+婶䲯簞ꬤ䛿䋍搼꼃璍馪䁄镯依䁁갑芩掠歿紏껀幥䬬ꥴ勒阧䀧轵巸脥䞢奭祺ꏸ阢底淽腿欝廎磙剈敪䛟雗姍蜣䦅䨗唪㸦鼟罤䕻疻泊謧雂ꀙ閎帇ꂯ罐糃侸굣䘊꒦妁椿䲦瓸ꅙꞒ捀绒驑谤栧旣侲甉鷭盔䮯귏뉖篵棤㕟㛛賊却䤔ꯄ껰䠼
+狪愲꼐蔾縱㶥渔娅ꌽ疝燙Ʇ㝯䁹㣦䩎눤ꎢ겫鮗讄㒡眘敾言ꐸ苙䧬啢缼棩示急㪳喚棑搉槼䀨戭ꐵ籁䩶榚菑ꎺꉨ螋㕋曗ꝫ龔遊過觰浇驾絵㟗䰄糨癱尴蟧㒻箻膋銥꯻馔嫾䆕徵瓨鳴雒鮐ꦐ燽溼ꃺ搬溪냩俹惟鄓急䘜剮痴阂谽唐䣝啐
+晝僥鯳䖞嵫蟯ꝼ溸㛟院놣䎍溊䏘鋕玃淦袰椲鍪䙚棫㓭갌㡤噊鵈厣滞髏衱炋ꕅ꛱课ꦐ唏䝧傝㓽鳄龵䜖藳茴丞㺆䵹謼鱨䃣䄠饶萦荹䤠巗雴箒铿窵鉐趔뉻胻蓜虷坞㓗攳䀶瞡蘯䞤䙔㻎䀪ꮁ䜷砻篣瀖睠璠㖉橏늦漇餻ꦎꚻ䄸員ꎫ渊䪩
+뎅㝑䜗櫛ꪫ墐鲿堐咘澽炬顴買꣢ꏬ攢聦㷈㗕姫ꧥ㥱眛摯翿仗沮雅枸꣪駞䒫ꉁ屧尨蠦䑯䥩卝粻䖓臺裼経樰霏屌钄뎉녒攥缚ꆮ㽟椻ꗩ謓蜥踲꒙恹嫛뇧䙟硠䢃絢潝籠谪氰䝋觓濷鼳炢깔䑍睃眜葇檕恫眫淓㥫枚㭭榦䛪膝惺蠼禷锴涽
+귩㕔䃘铲䌘颜㝾訩喂ꥀ釜拺䕇꼿嶟䥒唘鰼狼歨ꉼ弉聖䅷惻䟁惽䬚郏䍢鐨譜㓴枻碅瀿뇙狆ꅱ惯墬ꔷ罻䅎瘔꓋㶂随鴆䃮腉㙐韆鴆䐺潃㘷訜号祀曾珤貶꾺跸ꌱ䋤捩䷐䗳椨卦橗羬廛烉磆鲌㫶꿁伀撺褗孁䔈最䊩䐬姪鴂㼅䭒簵档找㱙
+䅠㥐樶ꅛ猁骩꜀㚰邧葈䚑ꃚ댦媉蕫鳢䒓䗪賖郃愍搏䎇綢뀒崅欛늣鏶꡼䜧洙㟢鯇稓旀ꂗ栙鄨搁ꍚ莃慽나芄ꦒ䫈䌿䇍褐故ꧭ篱㥗曾㧠驻䍷鉃Ꙍ㮱骭ꞯ諯栓弄Ꙋꩲ錕厘㶝ꈆꠓ灾넠適穅籥䤢怴詝樮鞺鎸賫羛澮䆗㕶構憃禢䔰旺꫈険
+鍔ꅧ烈曔饕徧褭䅶ꦿ穒熻䑨놲겨陘꼐胑欠潴괮㽋捯惠戯捾蒨㺚詳紂脄諎㯧ꢭ닡낇䙿覉穋髇弴椣䙢仺秙瀲承䩫娌㿙映奸炟ꗟ鹺蓒瑌鏒鏜蚋懺煠桄仴恕㻾涆儮㤮樎醺茗끆彇抃概ꘓ郤㮕䲭ꬍ潯珯㧜覜䍲鑈韽啦櫗萵樯袋朐䖎霰꼌
+鮬㹳덦㘈砞桦䔞撽ꌵ峾牚ꢺ瘃癬ꌎ韏薸䟡끨㵺檰竇ꯠ䮲纏㫢踟ꉆ䋴䞙䗰錚䁜桻笡毀与瞄녝撅櫽行疛ꈇ矠貀䓙詛惇罢魽膋ꃺ鉘ꈼ繱㷏繷祬令鲕醰鞶냡錒㰲恳雅㔚甒㮿渒栳蠇虮阍ꂀ钖碍ꅂ愊箋鸓呔耵柼筣㡒궀瓒俱㥉鱢鄋鹔鎴
+ꉅ鷥戽攠铝䉮绺獥냗깅굝鉊䆞䪯䟏景㨛维颢鳥隺箹䮵ꔳ玎鸿牜걙鈆檿摮꼻䴞䨾鼒囎뇔涍겚賏煀꟢䖰阇ꘖ䲛酙悴㖷埾㮸脯氞炵头橐塧灵궷礦抾녪漥㦩酓㐐隬伂孧䤜簹ꉰ㯋谑㞭驔骲貛殳筤壗尭鳞额䶩胔腾㪼幬跌惙遏鲹䣳籥择
+咸ꘜꙓ嘭孿栌㩐氢䏞䤴䊝詯䲴濲潃脮懈腰꾎錉庸唁缆煓杨躓范粋㪆馢䅐部꿘牂㾆逆䕵曉辎䜞坏ꗒ茘撾贆糘㒛樊蹤淡䳁㻅珹㨓Ꙁ䴺諵蛮䠨旎녚譡埓꙽꥞粤꓎鯓꤆ꓕ牉悔㲍膢罭纍㒉㺗䢽寎䞶㯫鎻㱻徍挳㡐譜識椠靔吃琝ꮋ㒝眵
+添䔽ꉆ蜹睬닜㻺浉㙟疺柈Ꙕ璐犆訛惵惧㥷눡忳孄裻嘊㩰碪蒎ꜛ䃏螮鰓黰皳㲴枹糺뀮䣡轪禬踟䏄繧㛫衘番ꅛ䤠蛧兹徝䙐䣡Ꚛ托哇簞䶮奉끈䖙穬堑毊㕖刔鸛盋寘㓶拢猕辖剎魙兄供䅫藺㹮撍ꏩ扵哞䜳賩㿟芔꥚訜ꃂ尡㶁裲䉎馛滭
+㬙寪㙧枌劬仪碏棂㫅眴騠麂곆姴ꈨ貆娉教钸끬贂껻ꆯꎪ理ꢚ郁賱蟐䣢丵澳昗薝圯袪靈㟰鹈ꎇ襀邖㯙擾型겼循㻷漌矏늌䔥逑袜㦐耱兡傐㦂㞩爣滢涉合㠅秤㒆曷岸㥈겱谖㮆䬪낂垲憐儍間呱乃碩堿㠐踦薠俥譜㲮爎膈䔋嵾瘘鮭祯
+豓닶㨦ꦍ窒嚛ꨥ畻扷㩠聸擶鐿祃坺ꄞ猚蠔鋭泸鎽ꉐ厞檏鐱趣Ꙟ䡙揃谅瞔䂄䳊蝜课喨氁䊑鄹嗎穬偏勲栒唦㼀篑僣鿈崶ꍰ㓍檿냌덺鬁䭩꠮罾瀑嗀䱖嗄䯍㱃鼈䖿ꢥ꤭껏愚鍽䕒囦Ꭓ㾙㪾飸녬莳吤燧鰎黣珢薽髆䎆谚虾䁬儨䫓芪㤂댬
+鉀䩤龬䪒䗮振㨊午弩魚懁陴돭騂㵮넻矃怰臯踮缪㪾淮䰗芈ꡀ䯹梸砟糈孟䶭葹㶠䃑鼿慸岵匢鐍繼佽矢蝴蔇辛䜓낑㞅爟匢灦䨲䘌齿議䓋㭈ꃿ釀嗦涿冱겧腈痑剛餝嘱䝤記瘇薪隬鞊賻ꬶ裇䛘魤辛璚屘䢀韐掌ꁰ䆒㺛溵醯谿大全ꈳ䠽
+Ꝺ往厁绫䁄蛅䄝抽梈ꅯ鞬躝䞀悦罭嵈鏓鞞稠讏鸂䬍鸨牂釈郰雟簻緆閡廇惫仏髿검䫫㧎驞鲀蹈㱢鸑꣰籱槈睠槡눐㓯龅腈簓叕籥傡梤絯㐲醯搥嶅濮溙꾏匑洤斒䰖盬䖪忹䢔綣癃猌蒐慱ꢧ단柟杗悟牌莵䊒㰄끴ꁳ羓涬邬跸蹋浃輂憼
+璋霛㔌痙醴糐掟緇㕿䤮㸮㰤擕獪놊䳐峐瑱弊㥊䌕䤩ꔀ蛨噐秷鐔冷霅锘䶨孂柦蝺駱闬赃ꨞ昵翖蚘綤沌끩垔䗢鰍ꜛ㿋窍罔鞒㝦癯骐籪偙坫ꢊꁢ顙盧劗龼Ꞔ镗紮䖍꼧㿨ꅬ㩹鷡蘶긛㶥韺녅窕夶䥑桪鰪䠕逮龪꘏书緙渁鴼㸇緐誫䍯霥
+甊旜羽伕忡ꈀ惘鵞㾕塺ꁲ书橇媘ꀰ䕧桥琧淿沸胍䍎黎懖騇ꇩ勓ꗭ㓻内青柄賍㻪䔥孤撁ꐠꦫ繊杷铚鄺虊绵鋎㬴䀱傻閎Ꝫ齌囇꣨吤㖄曣囨蟻ꡎ깉늄䣝焃驘牽龍蕣肂溠鬀䶳逛儘ꥉ楯塣ꝑ埙楇嵥瘽怕㜃廘ꝶ軅烔衱䎢遞䢄裩鷨阆斻
+十盱楙亴蕃歨崋齼껭傤憠桿煲祢漾ꓠ㕯張䍧䦸㵌뀡謵玶㽸㗄聵屬桭䋕汛ꏷ焣皥鏔妥蟎栝㚳肭藛蟆ꇛ阊녺銃匳䦼锊Ꞌ囘匇걀錻ꮖ弻騫ꇿ贋囉涯熚杬偨䌖ꅐ烄䑭䖄蓿갆䀶齠乨䓎岏昈䞐鳄蹸荎緥婄抚巃簵ꀹ弎誅놽㯳걩嘙蟳䗼硢
+귒䋾災熑ꪟ缔窤臥镪呎粏陉꨷斧㶁䶮鯹㰪꥛䍽竰㸝幠虶瞱渏䉂槰鴫㨋漒ꔕ䂖㟫䒧䚬數㞃巂ꈴ愓饺故ꕚ良霫닷獯朏䟬抛ꈶ淩㛕溰ꊓ計鯵녗碝愖娚潫嗚輬蚨감䮛缃㵝燷叾濕ꃝ陠柉蘹鯫㗩鷹踧剮鯑厯裰瞢隓紫太溯㑥峅纉꽱綩ꤘ
+放锯뎌臏恠䊯灬豺峏盆甪虱驗倠嵮䙦藡孨箅㲧㔦껸ꖒ洐檎席꧳踿荒논柇䏻簻蹿齉熬谞滁鮼堗仢篟ꁿ挝橽榡䇜깜㯔橏啞㭐㘕漄䖦近ꀮ駷無嚝龄牃秂籇馵勉㭬㖵㝼ꮃ歼䰏鴜授籈ꃒ䁃錳狑㩍㔨꤈䘎雞鹉蟠吸祈襍㢢朘萢克鲀聎扜
+㒟㒺硩ꨴ㪨挔聰姚辨閳恮ꢫ睠膐经ꭾ廉㞔伶汲ꁾ愔揮꼲蚂俱奄뇚妵蘙䐞彋恊ꋗ鍮峐蹘栘錫鄊种鑍郌馒㷤乵測饌刊剋䳑葢士赬닻㐑雇껮䲇务䡵葪䘼葅㦩鑘鯼擭朩曋氟膐熵嵕公꟦꟯蛣鋩䕪垒ꖱ眓歚걺ꄅ驱軟鎔萶뎀瀀䙞档㒾斺
+惾淋樬颧蓈䶑沭燿踝䇥ꂑ绵琓樳ꬳ綢吻㶹詥厮ꈴ䋇舼鱎鱌굴鯤妑詖겄ꮇ䄺偧貅荌꼏ꈦ囿骟禷깢䨨棏ꍈ害䳃㽎ꌙ抟㮽ꥢ㝨䝼纪䐅乿嗱㡿鉲掘㖾껇媬꒳锃庼琇귥顔茈癎瞢ꛈ讘敭㝇䨲䎖庖鷂䮽玢媼䕕掲阠哄껀搶ꃎ鰮䐇㐪抍旺ꔡ
+䥄燍䋰掽撄蘙燪艒㱧泈綕菕麍䮴愼궸谝王砒꘭ꀤ㻖꺛念蜤ꠀ讞毷㼒㑩鸆Ꜵ綯欥潇ꣂ䓀橿誛韣铧豯伹腟ꓟ嵋摧䘷薩丂狂㖞꾊挕網織巀腭搐縘濿挘厀蜄酇踅亝荢䋒넿箏謏旝傔ꖘ넭깥畜羍갮댜광荂暔ꢔ䀑荼ꍣ䕴䔰ꔁ扈䊼㱻㕚谰
+ꧨ叒凕鱎㥔㝹摓ꋿ恣貳㞝祲妺錱欯㯜趻蝺依㠮墨睢橴蝴撂噜龚圸螮䊜繵䡫颒䬕觎赔周喅鞤䥵ꔒ恃坆㷽戆㾭埲餉狇屐ꅔ䴻䆢滽闲轘摒䟰驯若鬘㗛讀瑋訯啞访㧋趔㗱놛瘩彶䐭䍕ꍁ鴚蕳馼䜆峝藹輯䢕鬱䷰饪㷝篵䍮ꊵꓲ酤冩ꎖ䣛
+鑘鯂嘠ꛐ氷簅抅꠨鿜꾭觷喃毟樛踈侨ꩿ啙犇柒殌ꡬ纴䷘剟㚅埲㔰蘝愡伄防㰧仐脂箅鍩龊樵矐龬赠璡糪䄒ꢥ慩櫂棺籐咦孇肹砨跂㮣揝㪨锌码具㮆貝䩮乃䘝㝢㯏瑤邩釟㯭盆㙣饰鹏框貆慡鐥錇栁ꋡ觗萴㻚帪㺭很滕鰫媑冭䢜妝㓬
+ꘝ筨駰阔班佒㧱獪淫㝶瘝渺귖ꅌ纒记㢲聓ꕒ냭镝觚瀪莦䐟䶘栥䑗ꃀ妲猂䫧ꊌ㨕뀂蛓䴝銏杜妢䉎镠警ꃪꠗ鋥钡痰깋襏藝枺鈬欚㓛幅䤖ꥲ澧寈猠䅰焌㰴廕䆠䟅낔劵頭劜ꃀ餏猦㷗翣걥蹐慲媏钴谿佐籦깬乇泄髟樛钢妸䊣鹩浯꒸공
+囘ꇥ嚭琋著咘峦ꪇꑭ䣍鼺㸈鈔鰺桸謈㑟䓯ꮩ荺蝚ꖻ滢覸饏耋闍㽺藼厾嚗帪ꯗ酡긆近収哢郈劮它齍贅깽눁㴻䳥稁舺胲鶲ꚦ衭惮䈀噞钜忌摉掘ꉶ釥猻㸨縨躻㵱窇ꯢ璚龅㰦睻袄阃湄阀毹楒䂵習䧤瀣鎻襏ꍮ海擣殺騒冽竽巪㻜狐栆
+卸舎ꁎ夌媿㴁㞪沄螺蠘粮䅖䏫䝃箫蟰槷ꛤ嶱屙璸嶒禯ꇂ銤矌瑿聻釂乖詮䌣峺ꦢ覯鏉䦯铯唪䱃秠從旛ꥹ漮눬习瘕羉狜誰湞孉烚驖岏盼倀鹆느ꦺ蟜矼餛逫ꜞ淋꧒荅喣揹襄恳嘌負閽㕟愩躺觾㢶妲纕ꃙ攙旗顂䒛ꗋ犘ꦲ欅挋㳧䭼趽
+Ꚓ岄塷侺焗縞덅ꚥ㾉ꛊ窜檏Ꝍꕺ匥隡币놛꺋憜꒠㿱狁ꁊꝘ䐨꘦ꯝ걒畇梒陱긛䉘겑뉤蓞ꚃ浖囩䦻䢲꿧黒ꁟ䉲䝬靅纁䙣噿现㙣喁绷茣潥ꌿ㻘蘶渚绑澟蔧檂萖册蚃磹鴪寒墎鸾詍㴸増嫊僕鑦删ꁎ귌胺꿚爫篾羄忈筓糘㘶悱厃ꀤ葞䡐
+圅ꇘ忒䜸捋瞣鹲嗲兆蔁尃끓ꙕ閿捊峍懨萢咷厞瀼䇺薧爪匸蜸凗꣚憁笈鋻괧糎囔柆댿櫯糓㺊晑㖍竏耟绔郧茂磿韲꺠㲒ꧧ芆姿坬妞䣳㑆郃覬毎㬦狅琈蕇錛櫨䈉侙껹ꙣ梼渪竌蕱瀸橭䍤樦㸞釭绉轌毘嗍滋ꩇ㯴䗱韙뎴杯醡瘠꜡狠広
+㬨邭輶㘸閶䱚㢠祃䧴鬙ꈖ㺠ꐂ䀘觛巠瀻顨踿錽砬㖅檤ꏂ䲶Ꜵ㞍鏔呼缈䪣蓉ꍪ蒂售钓㑑嫂녝ꖚ꣭嬏蹻徣㯆赁挲鍤㛭嘹酸磡哋祦新橩澠恹锻㥬凭迩䧁讦ꗏ沛蹇㹫壽瀰蘉厛䤎魯㭧ꗑ냠樺䭱吤ꄰ滼㽇捡䞁䜲閵㗨뎀攂垎黸横鎮遷躐
+㾮跗姍ꪵ迯摤瑪蠋麏辨引嬍ꐚ嬛筚嚿綷嘠婌訙誟䈞濚笩遊锣僦腖껞琺哼䭪毮飜硓嵻濼鞙덎䚉䣚奴겡鴚鐗ꎱꦝ䰚幋胖笝㢴帢球绤ꄒ徹嘒仕麮䛌媢恇魬癚弍颲籢毛䑐踬꥿繜嫂꺜尧䌴暿㙫鑅㺋暤硲穵䬄䦙柼䬖玺閪ꤔ傩窀臱锏譨
+㬟鐦㕍㕩㵨芲拇憹ꛒ䳪䘏瞗和㑄ꐩ凂㠥鎥㼹鹟䂸祏氉곐꘭踆缛矵腎낋辩叹暋ꦺ냛俄ꖸꉐ瞯磲鰗職ꖮ裵向ꋄ齃埜孮嵓䂤僁굒吹愰ꌄ腑㽄眙岦ꤝ괪澒㩎䅓ꬑꋗ艏嶔溹䇙꥕孵饂䊉葇艏臻鲾蛘徸惆䊅ꐰ㕢䚔綖戅髭䩪㨊癷殏ꥐꨀ藜
+댞艶矸鐞蕭艄塩橜胏䗭賝跩焰䴎陯楈ꊿ掦侱ꅟꩅ奊㻂燀䈢蹘儷錻儫枱닰繺㰮灞鰢㸷唸蕾剰楹놖䦃㭚誳劮漷䙿䌝餏Ɤ峤避樾㿣꣫釲憎硬憬趍袣䍾諉닦鄎匇㪋觰臼誠嵔䜤襝渼碠苯盜璓䢸捂궚䔼㹑덺䍎猽䋲㵦䐤硨槤皈锏괏䎚媊
+寎ꎺ傤걭萸萦峄沸넀篒蛸䔜丘䙴箷爩ꓫ㫮藪浒㛩㾴閇验欛늌㿨갿牍鳈扲呉㾎釷꽸㔖余橹躇㵿ꓠꩇ蠖넋軽婳壛䁅蚷鹕䴉腭鹌鸦ꖌ闺琻租衼㽙砪㩪遷㬘ꀢ实画椹蓁꼙犥瘠ꒃ㨎鳻曁䍫饱脻毎眦䑕溤籝䇹剌肠炗敥桂駠椳㮫檼瘆酉
+ꯄ㰿ꦗ䧌篖絡굒此䛕刟㝏魞댧곯䪑㚇鶞棿ꦔ碨脜鞩㟂寿摂斜礋ꐁ궆鶜겪頟蒹䛇䀦育碐讂㸥折沘㑨菫醴漁瞺圔駠ꉡ奦㠞ꑌ会莸旆脞瞊郴䓴碥谦劝ꄖ黥ꖇ葙끅缍닔㣖窦尛㵧馕皤鸍西㑇埉䬱ꠀ糚㔣屗㰃䕉术峵굄䨁鈇ꟳ꽏徼낄钶
+㲅贲璧㦡뀌㚙铽祬댱㑑鹁孽硁鹺婣㘢ꡱ祠黳釷琀聭㢣䀽詺廻镼獨꼺ꨳ㥘夏㔅寸鵉樠骰ꝇ锒萹裨薄䲘浜犧㬮悐諞纕䧅㥹偗欧尙倦駌㝹瘘궡呺芦輴锓㐖髡ꍸ蘬偳撑鶆㮏꘩㼫齸돍碎鈮颼㐲䄶枍趈꽩寋ꡲ䧏咩擔猼棁㝿掹暍讷㨶鬼
+ꕎ㬅뎺ꟹ䌐蒞鑗瘬䍦譔ꚪꗕ蚉䊉䳆㭡睼䢌債䬒捲狿鑀魤毲麦鹕莼꺗偀㨿棸由潝娑꽡遐䎄褶鲍ꒅ墼鼎궈㒳翣꽨锧Ꚙ㡁䮆ꊥꮮ叀㡌嘅凋ꖙ磹筿鉋돟閒蕩ꄞꥈ뇾揞ꀌ詑蕩ꎭ䡱闧禱弊鷪课䡢軧鉀砣ꝗ岘ꇥ돌詯貓ꖂ簾鯭뎙藋嵋蜔뎲
+䠨暘着犃㡻螤㨳䧖䬖檡걱饾哜鞗ꄏꣅ膣䕴萵닎騸穿緉껦管㡑蕛ꑈ懐製墊釲珯箪郪蟥ꃠ噵旉댭굲疨哂閞㖚楲傡鉍幱畫㺏惎倗䢆泹阇鏄Ꜷ滣꾔冃孓謏䞺搅ꐙ뀷濦庈衜骿嘅焭埜Ꟃ懂軡惯䛛摘脊ꕜ嗹ꩨꬎ酗贝舁殚䳉蹮瘿穛圖ꦔ潾
+娙萜㗡槠䦬돉뎧냌蕡녜廙ꜘ芦鑬㰽恂䊓復䉝䒓鋋鬶꿟䰳蟶忭㯟ꙝ追䚍紸紼䤥ꛭ撵橩늕唨嫭鉰鐷돣秭駕놰囷詃涛ꂒ涃ꃼꑶ恹璪䙫㛩䃐㪮涤俋遏ꁾ蟐亱䓔苗俕畩霪䦖跬向甏ꍶ㦮訏堍鬗ꊵ労꿞涑俻桻楻蔯ꥋ蟨憗筂蔾胔ꈰ䄴旼彌
+搪꟥䌉饉舷䏣簸鵪巶鴵裥ꘂ庬袊壬琬肇坥䘽訛䎭厠꬏䣅捥慐䶴䚓梾㔿蚔ꐟ曢냀簛醇ꅚ彨鰬䢗ꁚ暧䤝铀ꄣ凖鍐蛰瀴篳ꔡ㶑䦑㖃㽒㕞骂羋꼛㤿鷨䋱끹뎕㳐ꛂ뇨㵨邧八盷㵊㵫容翏鑢杭ꡫ䓏꺦祃筦筽霣鮔榲褠䢤跅鉨锫嵟㖕㙍瑶䂱
+毨겆㚃돋萏Ꚍ貿吋筈䂨熙晖蹀栁茓뎎ꕖ鯥꘤頯囸炻껜籇酄嗠貧䔤馁깊榤㷿幸煾䛣仜덯ꞡ轉耙ꏾ㓗偂粎㹉㭷汕暼霻㯇㺙頶鼀뎩侒援瘫䖊穈莣勿舏讝郲䀀鑑鼓渼潈犽㹽単鱛觨纍殸䘣ꮢ玹ꏓꪌ銷榛鴟盜庾硅邸炐樆뇥ꬵ儯霽ꅽ갼
+逅簆ꀰ取鄈䴾沷顚ꡌ瘸驝ꭄ咱궞魿趣华扴㬧꾒姭迿諎爮羈蟣䱂櫆豷㗄嶹广駻㶆꼻淀꘶欝ꯟ遈ꭃ躕蛿ꁪ曰虽뇵鳅趥䆏胱赼䁛榁㧃苁돑㞍弗蝓㑪놦刪枱藍澀哴妗ꇷ눶燓贜瞬㰬䕚政䕏檚䖗䐤椃䉓㖐ꭣ闏꜉끇ꦐ㰒馭㦻雧鱠ꉗ炳巃
+跹꯮ꭝ诐左暞㻠遟砯鹺广ꄫ䡌賢甛㟋牛㼏澱䦓楐籒筓䧮廆䙟徜域ꁾ螉㑟緣讔ꯋꈡ菅掾嗪嗒際䖪䂺砒躹扎明껟귙㻽㻠ꛋ訚酩飰卬翍鐺琒艃괧ꏻ귺皋壨ꭽ巍䃞䰫ꏬ沋辞꛼ꇱ냚檭到꺲姟爡紤姛鷴괝䩰靭櫹껝눚昖拧䆳飆灔ꓓ珄槳
+寃ꝴ焗疽慝䓵韼蘱㢶熐臰县ꛖ灠娡黄表㐈肚蒫㦒協駑檝褜뉩뀊䵚磣礗㼋ꔤꝷ꥗睶遪㣰ꂝ膸ꥳ嘑嗍棴ꠡ欗毕硴屻毸笑卝ꢗ刃㧎嬙湇諷ꃹ晈偩庺翪㸼ꌻ头摼ꊥ䪖ꗦ羳꿼烚惆䅵詄蕜枭䗔擱㘗炀ꋕ綃䡚䝎䱰漊歚呍八澘輸摞藱荢㒐
+끣ꄲ㦪ꦃ猀僿闚指諂跋凱噼꯿ꓹ궞颚軰谯勯㒬迴楗꫻䢏䁫Ꝕ妋䁽黅荈繝豉㳛䩙ꉄꞯ埘货崔鄹ꀯꗣ귝䉡䨇ꔑ舝䔓郁鑞錐揪詢㮒㘞詮급濠悩䰺縒鹵賜踒廀䧊棜笑窉낸倥溲檓㿧ꝺ剤䦓䔰䢧匪ꕠꞦ雳䛱沒䌑墴讁辁貜罀鏝㸷㖈鲌㕂
+熅镾柡鈄ꜰ柕孮聇澍鱠ꆨ镇ꯃ弙紀燳潢䢐阓褁忡㲬끅㑢鐽吷꣍鞥掳墛㫞䙹瑶媖釺ꄜ逳䭖肙䎬湺殢伕獢㥟䦌艟髽邖㝆䔙旙鈂蜷皢团鑞妒ꒉ很鸪㱆埗黁䠭毕䩣協㻶䯙舩楏壆韕嗹轻機ꃖ䰩唄闉帜꯴垬壑䀋ꮁ仔葦树搄ꦼ䯹裗㽇賒
+匀环䳮ꎉ꫓值ꧤ筽妘깁升嵓ꙏ墴㕋籿愍胊끷㜩㶩䃢恉梥獻㶘ꗐ㿫夲꼲㺔喖ꍠ䫚䒗芜䆫疧哮㭷菘귖郎疏閶ꍒ粐ꨍ妻蝁䩚秶觵汴集蔗褋ꝸ佇곞耪颍疛俹䅨劒惻焨稸懙諥㧬厠揼檲韭ꚬ댃斢ꎊ巭㑣㵾椹敒偸ꆅ镰뇼蠴鄻碇謒麋ꮃ귰
+矰等唃꼶㼁帅袣庘답崐臎洏䶩碽걾紨鰒䍶凭㕹陸尤翭衒䜫秽嗱꿞䔝鑈籼厑赕뉺䎇雯꡵ꊘ揫煥馒眠赈芭冓抂湲艈皾錚ꁋ綶ꔤ暻剬厘詈耯眕坉筿槾肮斎珂誠掜鴘꾽䜅鑅䰸圈䥃䍕截䢾㡭꼅繋短揞䪆䑺荸恩㲯건较㧿ꪆ埁涂䒢㢵㦋
+徏唇鲗ꓻ皼攧䳩俽逗㺯鈔鎣橳ꇜ匹镫겟꟤꿳궩껅胐榴晎긽䏧盪雎㰜㢘鄺놪늵鵸璬ꨚ銆畅㟝炚组ꝱ赃沱鬪儩㡡궣镩꾗嫹奐擛绾ꍄ嵀渒㨋蚎䓠地璭㠿悍悜洉輻鵡簿蛿衵戴但髐㵤鲩崓胤陰谇뉋惫皲拼铪錜标ꏉ問婘蚳麩旤䍖㦓鳇
+琸妵镆ꥪ璞꼧鳢敷ꏍ鏩㼚錕鱥ꍤ걏䛯毒䦼婔砆琈䒬類ꛛ莬蟄댪礕堠戇逮䦌ꏓꔩꢅ糠莥ꎘ祲肻ꓖ鐣盘㔁䜒깪鉒龲纊絼揳娤癒꬀녾겸锼阒ꐐ辞悭㳡ꨙ衕늎祲닪轱邒䵲怺繈녓豾䌘榆ꩧ幽桎羈麤台恃桊捠ꍜ䇤抃ꕗ焤䙢㩇䅳燶慴檒
+喩洽껤荨㖕뉍㱟礱萦掿盯宛烶갾摮撖鎕䀮連侙贳筞苳㤐㜱岿飸嬢鐑喭ꅺ离旆厩躊刚蛢礽깤坽適滋侦噖邽嗯辍㭺豨䅲ꊄ正㱺蒺戏蘨箉ꉀ닭棓꺴敉輋㾟㽈磃㾌新䚙浆荟㨥削宷㮆帺杆槽㢭酸䠀㖦㻺鐎洀䔡捛詧ꆌꕽ㨔穇文犀僈貦
+䈠竻ꇍ䦛鸃䎱雎弉䙏䮯䞱尌翍幒㯧㹞鱟憋ꪔ꙰鴓毬䄃輑愛눢犨ꨜ鈅葑ꧨ嘗㫣絇蒵ꖦ翓霢닡髌霵唪饖瀧砑恸㛀緹꾆漺騃顺猁䔌ꀥ湿扺괟纯䦯塲㹢棔鯋戽栏膡姾電㤟颁䳻ꜯ婵㥸긄뉸哼髶佂縚靛慍禉裘焀畹閧䗼径飨斃ꂎ㨞畃枧
+臠庤ꪘ渆籋尉㿔偙樮儧汩棡庼泯怸駞끧늙㕜䁱䔃䎌倒㗋梭鱥橹腑㖤囆踄夂祀㢨䭉煽ꊭ䯴蟠聛鶙菔趧偾Ɜꮃ订座吒矾覾䣒㾪碟凲氌阣嘃罞瘨䎲깼椎㼝傴궵泖負馟絶䔔鼇镕ꇧ擔ꖆ榼盇㔦蒯酙搫戰䡶汉廜꼫漟㾉詣釄䴄岆薻矏䅎
+扦㡲갍眕鑊㺚鼞煈忬茦犸䵪䃣䰔㞼곌餥壳噧㗼㑕䗝岌ꕗ膪頤䑔䌳忞놌牮疆婚綺譕溝酢胠涋宵磜柮猐껞鐲胲巑Ꞽ箳鄵鉻ꏲ壆窗欕祍婂掄ꄺ뉶鷗㝧惔䛭帳儒伳檘柅㼨軑鱲輙鳾槰㭑裾塕赙搮碫놙䘯䝊靈凗䁌訛墈감佽ꓭ䓏觩䖾㯋
+虏嚁꧉稂괇繇崋鳳䵳ꧠ䨽䟺釈꫿碊嬣指襭巾ꩡ墟徬䥔穄䠽鰠叿揉䥤検꼵ꛈ䜓塸곛砎齊酃覐嶅庄梘䈜躐椺䛱鷙던陝걼夃苘䭛裙꾵ꃾ䄙掑凵皮罳㑯籷赤ꋥ苪㝎闰爮所攝㝊㲅躎砢硚䨞貓Ꚛ鸉倛檡괍鵏焈ꕬꀑ帘䔋㺅䠰仴韊ꥉ撫귴
+餭ꁧ櫪粣睂遇隵蟛糷侠㼖惦鮽㐱蜂茉獄炵乾늅돻装響慹塒摽뎲姣鈞仓鱔Ꚙꨪ盻瞹㢦眈瀚榣鑛鎴跊矴尃鵜漠壂䝎攔䜸껂誅殒鸔菄扏閏聽㖓佱祼깈墚膸늫藙闪影꫈甥뎇㺫夺橶熮揯益絉庫鼌藏닻蝹綴㳯龽舂㼔鰁㵘继浽韗禹咄篽
+䝸週ꂏ䙧冩赸㞸駉蔀翊儖䮅ꟽ巉葒㨂絳轔帥爷诘镻佇綽仇㰳덧굤䷢娖錖溓臮䔴囅愬镁乿玍玚帗桯儭峚ꚫ꡶㠃䂋䟿䕿旑絗澀宬鞺ꑒ妌圖榝ꖡ깿发넂彙댞媴嫽깛岲害䙸ꁸ换縔䧿迟磑龝駯굷峐냍鄗䘺塕犩埱罫鲑嚰䊰瑾旴Ꝝ媀熕
+薄눚唾ꥀ倽곅负䋰㰐䷸㵺霥蟏尥蓥㻉䋌斳遳殐陿揉䣗袺耝㓔꥿匜弻祐齮覥鹎綰虡湆燅焨魵稄崄㓘倶䮳䉹䮂逊㡈僬紎ꓣ歪ꪦꞆ睨ꥭ虲娍꯸庄껐㧱徶䁈誖岬궘鈃鮬鼀隻枬发Ꙃ翻髝因㕌䃎馚菂翉㼒瀠騮뉙堙鴺尨瑖㧀煻恖鸎咗䴙
+笠㩭瞫䐿釧毱꩸ꋊ甾異鶖蟇㿭寵늴胗璼䎵ꈑ啢汛艢肨㔚냽锵议㖱轹鷎葇諊䷯灳泑肺硂弉諴䙩ꖩ㟛鈁鿂麆錓鹵芶揑汃糩꾿淀揜褊橆饱꿳彳눐覡䆾聍ꄰ꽎檑괺擣桑锷銊䡜吤錹ꫮꛙ哗㓇駟䄰ꊛ㛬뇀嬆꡽咋䦕抒扬橋岞賏ꉽ褦輭烐
+䉧ꇳ䘮泬ꈦ昒냖研䫘눭偢ꬷ棙䪓䮝茾ꐝ蠎砡籪ꑵ蚹䇿냀立授鴧괘鉲ꉤ瓔鯞塩绦倍걊鼕钊缤慲鴘㻆㒲귘㸅哊谅貀饋댷㒧䅒觕䝬㷠덌徾淥䀰䫦ꬖ冏偲㼉꾃鯋嚫紣㕲鶠鼶棄諬䣑䇼㲈䥽賁噿㷂㮸권嚟糣輸譁簓埓啄댹蟊貧㺳臟꽬䶟
+鷔㝔諲끄㶑㴊䂎姑䆹䅬仕庄牿䝹襧紲淓喯궧禋䧮㸠粧繋嚼ꋴ痲束ꈈ䣎鬶遍䲱緹怣綨瘳鳖晀雗厑榃銚淛ꎔ緗姎ꡘ評譆蔓魽于낆ꣂ篻苜劑鯂妋萴漡耘䀅礇娑擧獠ꡆ䗕榸欯珲帟瞺䭏氨䇚树跱㥣隢䦕殰靟宎紡淽権꽴鞤꟟尯敘䚾牢
+豨吿㗝颁꽗胦䷌粨柩隃衽侥蕉ꀵ귫珶茴ꨮ鐰ꦒ稻娆函㺩꺡圛鮎䃨兔嬢狳꿦勎纙ꌂ蟉爫鴕䤍猧鷨㧆忐睍꼩湀ꚅ欣䦦喸ꕢ㻾镛恎酂掽괐淁ꬹ烫꒹귰究禊䡝蠾䐢ꐛ雙證徍㖰㽔嘯鈀댂귶끔峚膨驍隨愘翈Ꙥ䂮獢鴆覼氄넅鬒耇ꄊ熪搸
+㢴淝꾖䕢㬎婆黁颒螏縜鲳傍塚勖늗꘸䪲蟽婢ꏅ꽺佻㸠䶜ꅬ涗父㨗窆弖鄠ꀌ讓뉛갿袒ꙿ篖㺵㯡ꝷ醢뎒놺碕灏㦜鬻醭錇ꍎ诬灗ꐚꊦ簎劁料交賄毅覉声䅑䂩ꇩ㾵跠蟏동鳸粼涁薢끩臏逾咉餫馧勤聇蔳牏懨毀㭬箑苻ꄿ赩尽搄荸矊㨡
+騵琲ꈧ㞣莳䟁䣝뀮紀꜄꘺鷺火䬍梚罟ꄎ吕ꄞ睞彩꛾껒朞㢲䊽毊裀䲚䃿䚃ꃗꁳꡉ광ꞥꛎ㪄领靖鴖䠠笮槐达ꍢ昁襅脧欺钛廯䒺ꮱ髰粂絪瓫艨晏愣梭ꐀ毂較袮苝艛覨刢㫸非䔱韇ꀌꄱ聴熨菷旐갎㜕憯柼災䃾瓑䢉匋傀恇匂ꛖ꺏㻵㒾
+廒덒델米㯮僚抷돴唗㮟㷱꼙攒瀣璊ꃐ꞊뉁鎖眭䰪꿫龞䟎ꍄ㿒겧吘爚婠慚彫ꪯꬆ䢽牼幦뎏哇箎取걈迭罖鮯鱳갋佧ꍿ㺵魇Ꜳ錓Ꝕ寰䩼罐癒鏴紳憆㧝泌酭活과䖭狩㡃ꀙ撾梹好飿囂㻂罓飔邕曉朠笳躸屽騜ꇐ憈ꌚ鷰和鿫껊裁鞷跍豟
+艖ꈮ鶀㷹麜谖瀗趌Ꜵ䩇䪌꯵ꃠ坛靊褡谾蕳ꐒ砯泀䟵䍄裂酜麼螝ꭶ鋗䙯砷鰬蓉檞縸訫蝠䚀㰪䀛粽攱㷺虦䷈䦆印運琺㪤澝暕넽奺긆麂赹㓂农䞧㝁嶘籫谠㛭ꇍ惈慩㛓䑂䯊㕶渓㖥惾銾ꖥ聈猂ꣅ蛰㮁臾傝䵘䎝鬖吹ꘅ倯赱隁朻廁折峧
+聿䏮峞莺阋䒙垘焖㯕穞鰫겞沸掚㟼帖潨㠀壳停檓庁付ꘋ陷緳舸楦꭮嬻ꯏ葻䯡抠甬귳板垆䡃ꭝ搧涤領昔浼甯넼鵃誹癿淘曏㣗ꩳ铋溈阨领幨垺괄䉂눌凜ꤦ皇奱냃妰㼪鿊㶯嗘㣗䤻諚糛끸䧻䤡䭇䲬냹遪匌ꀂ㤖逄僲睓芌ꯑ釚噰褝饀
+ꌯ跙꣐睇鄞飸䆋嚧魿낼畐斢艁殡忊斿囔䥘恒魶ꄫ丷籭葵䐫齷臟鋘慸遯靵蜨嵠聾前냬焽屒桤뇞䪞楸蛆憺Ꜣ志攜ꂕ䱘欑㔊餲迕溝忁傢訁㩕掷褑䊱瀯烕媮㾵槤啒ꕙ鸫谝귌厫忧食謨䚔斒仰爝嵀碆蝃讆正돸肺蔁幷矃骀鄄迶꿢脙浬蛴
+言楋䡁㻂萦赂䊉擪䮪郛僼꽮ꅒ䋚稃欤鈨蹆鏺玠꺶諳矛暖乊酛暢ꦟ標浶篌䤮갬劓㜵阌饠苛䠇䨠꠭䑫迪丨腇㱏帍洠ꬖ聸㦴䚸爞涏꘭圱匎덧咧帯欱觌泰腑厽拵䳭脁䥊괞杠火乘萊㣎皇㟴煸岛ꉼ䫟忯蕩贼ꊠ恧䒜㳒던聭돼弹닢叩餜楸
+艅䎊耱㰪䞴聵磃移垲肜脪깷歵ꃋ罐ꢬ赘仔㸔墡鎡啗秿㿌崔嵨ꎋ㶦銢艼꿁䌂㛘狟账䩰騚儡沏蔸贔鿃갦龙ꅮ㥀㭄哰岙鷨哮䥁針趰瀢ꌽ咛䡭晳匘選肰䭁ꖍ㞀瞙埾汧䌹販ꦲ湠㗥呩ꥨ痊錠櫾㕆忱踼ꊞ衆鵖㑒㘇兰㩓鵓濖喤䊍哥䇉㕒넂
+꘰秦ꏚꘁ達껣饵炵檴䡫䮅ꛍ㐁䟎蕒肯蹶ꁰ润蝘款ꋡ秐舜肌尋骢脼讳纎挢㞳꣡涭㣑㭿櫀莅䐴蔹䭜䄜嗬㻳匔癖ꅽ깛擯㫁办㝣欒懑䜇聺毷늛骿꥗畒殠뇊逽甲譵众댄鳬꣱挋獧尷瘛㤈貆躾瀹譯䞢䩑ꃰ㸑䭐㭱褍㿇莌谵꺞嗻幼齫ꤔ誹䡛
+鄃侓䜄䪎碶弹䖺鞦鉒뎣崻꬗薛耹囒嵫ꤷ觞㨲堋翂㢂끭茫䷛培散案榳Ʞ丌阘袓䅂廃낧䴤芘뉧㔿摺斀净时㣌罗嬟鐸籲貣彸镄饔刴糌祕ꤶ榓慹䊤ꤶ檅兎偼荗軱壾꽄ꢥ慯卯㵴낗穽鯲珺痦唆乧乍痷鎰僥箫ꊤ㘱炕鍧㗙锈鈒埖理㑶遟鍕
+彤㽷稽䀬盤儚䈇蕵暣菧蚆䪾낾傑啩ꬲ墏步髕訮猃肿捾㣫疛薉葃繡㱴镄冷輮蔧俅깼꾞嫂糞飳氬ꤚ寣僑欪椆屲傱眍荿褨㥨醎狲瞷覓熐綂㭷䦹诗殄넞铃逇㓨껯㒊䓖꼀谡磇臄製ꄾ碢㷌禱㱾ꤌ謝姬ꃗ輀㱏據鈵辘縼㾒嬿霩蹍덫匜粨䬧
+巗羟䈖䜈䌇嶬㛧扙鞕裱娩꽒莶繚紒梏共棇褶㬊㒆薤䅮弒㱆鋈喘㮩哬䘖汉㠽꣼덎䌿ꋏ脭㕍㩦詫寽粕瞕ꀶ糙䗪뇞ꎤ僂蕹꟟牊㬼踞锬溅㯘虋㑁냙霽僿乧ꝏ踥굇㠣䚗蔵ꑆ鰇궍雯㭤硠吞돉雊恋㻊嗼瘄榐铀굯鲾軋㵄㥖㻈猕嵾鵭吠䑊廥
+壉煀贊㕛盨牦悞挟䚚幰紖瑖竸耣徎粽橛菅髩㥺㽌韵䍕酓佇闱嚚鋢鄔䮣埙飾꾮監嶸㘖盅闉覴诊烞㧙疐扦換ꍪ釆碭楒䝸䖨ꔂꋗ阿劝긩眻㺪仼魶槖躣竾㑜科㔊堳鰇댹꽹䒤嚃䅰蹯ꌧ姂䀁蹊艔菣ꢜ譂㔔猰疎袖鈵䨆䪢꾘伡낳站攐閚茳
+䳮蔈鉶乆塔饙撣㺭瓉皍覀瓯㣇鹅縌麺㛣㙋艙뀀擾虻漉꜌钫輗꼉翃踤蓹洸鿨羸뎴䔺阺俸꽝䘧㜶䌩齪藧燷統劢稂굪㒻䬿狗䔞嬞哖謎倱㳱鍝䀝靶窫譙叾飪腺㕪谢飏襻꜆廅㰾峨꟧僙郿搗僿ꛏ蜙㙋溆걜绌叀頮谯ꗞ鳋䫹蒞鸾㚤餼鐋ꁏ
+㭧䧞㱓깔觞鈜䛗倉峴䏾䓯掩笳犬鵚獻饶䟲庒蓤ꛪ騉䥘澖烥㛶窸襦飽蜫轸緲蕷熦嘻暰傀赗識沽羏闠ꧭ伤姚㷃ꀅ鷼䗋䣶栟踣輪叅餹荶约咕櫣䊨䔊偺肇䡁냁凃燢龁衁褶뎛䬣爢꫱墶养碂岒篺黩氖긣熌猣絁㮻秹鑺ꠖ뉕䁰䥗㐉蕱㻨护
+诧鰠䝞璭抹紃楫觋ꅌ炝撆脃稍駽決拉꟥草硔赇宫ꬋ䝨掋놑輊槬恱蘋嫴꺲毶妍겏钠䀩嶙循陚䱨呠巧ꈏ낗굦彵礅擦亁䁭濄跀蒜㺞闎籬㶭㬂濡㫪掐뎟僘掼㔝꩖ꌵ䜱糭䒡枹肯慻陯ꪬ栋䃥移滵긝㑓齗㸣咡僘눢䰌呿咣驩㶗扲껛镂㺓䍲
+䊰點坱鎹ꆨ䆨弸걜惿赹鹉뉘锐鷆镢䠚䬧脎껗䉂䃢㡔䢰鞕採嫀꠨鼥鳎鐟䦕㲁냱㺗灤꿶郉鮵꥓䣎攛趋咹栟䒢郬媤嚛ꃳ樦吤崙謓牁巤㺛钇鍁拑泚㺑织刺桤䃹迒䜖䤈抛篏繛ꓫ踱螶种㸂肼禹䉅ꖅ泾禴钬斩儈鄜陿ꍢ鐸ꂬ䃝稼唲㤴乭簬
+獈殒喛螂㰋㚺䊙釃自辡㟜Ꞹ绂栘紣幵ꯖ䘭㹵惒ꑁ韏钩㛡较窽栌啇婑䍑埱伌雮皵蠔蔓댱殄肳눢殽ꍮꋚ萬㣠䏆ꮶ鞽㛜䐚鄑䍌䝍積絆咋ꘒ輄剗顽箾峉䦀㖂衮㭺娝꓂輆㦒萱晗墖忯孤亏ꡖ胠湹ꛃ褯闿柿㦝聑蝥贕殜ꅴ琑鷨桋䱟粈歁舊
+㴅吩䎛䲄櫖枋㒫氜災疤謀螇鄞㖀䟖㴨㣬撝䥠㫧䆀鯛鲋㦇鯿舷偠辝녊涷莫㬼㫽绍娉䤶塕挻钪瓵鱉䎁䱽岻隓는菸蘲㓾既Ꙅ䓍罻豥傮畘濃ꄁ歁泵錄辇嵈䠡糞柆㦛湦薩늝ꎦ䵬輅늹渳ꤵꤓ尠瑦着꾄漘꿀갛縷災䀩頳妮㛕䧲炌䩣꿶戽䋄
+㴥骚仰権奞磨礱蘈厑䁫檡授겇枏㺇䅲馻顗顺沄阑ꭔ䩐䖚飡蓒履腢ꦙ枍兗鑛咚嬙滤硧蘄師矠㘗ꗕ냞昙沖䭨媶口熔搘芷瀜朩㬘襛馼緼㱟槤꣏ꦿ迡膋酟㥃䕠炍꡹鑩㝶漗鰢긎鴇僃珘䥗談䪞霓氫蟺檎ꃒ騬ꔧ豅夬薇廽갬桥㿛暷庤橳憃
+曛肬旬攘牆薙ꌙ䔸晌呵댛俉齳ꎎ䁓猩㻗謵葮裤藻ꄫꋾ煨樱徣䓠㪾飨嵆鬙㶢뎞辒뇷㸶藎氅䰺跔嫈疘矹鋀닲㸟眖䯀鱁咚狦爔薾疤䜤荓ꬨ꿫桳䜶蹶䳎䏲銟臊乻烟裎軹鬱儭䅗榾㸯薪損岑幆䈋䉇ꖉ䎟萝汞꒠徽ꃔ㐍傦䅪纐烩ꈭ瀌葘厅
+ꌇ訕䒂ꔐ謃願為瞣黒甓杦ꎃ篢竮槣笶꿓䭒挲麫냒澂墁椅䢿扽阭㥘꾁檎洒憽钷穵秦坍萏櫘䔤梵莉疒䗍貁棄卢㶇杷檮㮮眰䓗嗈绱癡䪒ꊹ羟䠆ꩥ㴡凂描璧鈏鳸ꖩ觼醩鏓紀縛箏黅㐣鿆㸒겉潹馰枋八髤鹫㗔䏟ꅩ脐蟲䃎碁僅拇ꨖ迻展
+꫃䖲湏㽋跟㢺浓䊈獳觬乘满涰姌殧誆忬堍橴瘁苃减臙䳲瑁㷚꺞鬚鲣岻䎣龙뉟氖㔩㩁臏㫲黣哸䣸䏖㕹膷讨瑿卑蜣銤䟌徯醐ꓨ咢歒獸唎氕蛃㹀ꔓ呧嶴葹祾겗ꑱ桃维鲖곞墴䋪䪝䐲涡尸鮸缴騐韉隐貚鴦賉噧凇䫉蜎顎移ꙟ舤눁蘁螟
+䃗㩫瞭嚌坥烨窖杦곞㷤䓣旷䲑ꯥ菗菬扴嫳熪娇ꔚ舡餉雋㧀逊缜䐯鮈晌噉ꁑ尕㧉笽旒韥憙㽼ꭡ韏嬾泡渐껍杨狤塪꫐話姘㕮斿疒啌憁藆齜䰥蠎捬徱都ꄽ꺪귎忧甃诮蘤ꙕ靾怳駋蠸粴塴歀瘛㾢负藿颁䍂插㙖住䛦凵넌鏦놖会㺵깱Ꚁ
+皑峩饌帆鹺曀硥蛽꺨粰긌瘶柑錿衽挘聉暿犹馰阉㖔是䰛䦑䍟竔倜꒲艤蚦粺埝㾂놲㼵鐠䤌爖㿞ꔴ嵬岮渠궎妯焰䬠瘸䱰膓邈鴀㓤螠㻆麟㛢浉䴖黏ꯙ檉锳赑㫤忈눬꒰굄墉䘀潂液䐦奧崱懔稂꧓ꚭ捾勉温由櫎翡㮝䡞虯Ꙉ尉㟻䇓ꀞ逫
+牑揞䐀䲺摚手군韒屷낥茀㔃債ꐩ籧暀扆㟳堟弽飿䍎㮛뉞奵繀踨䖚穃뇯諌謲瑛긵ꎐ骣俳鰦炄紳郞廆ꪍ装麁鮳庀璉涮皯禈陚犂ꢯ廋䁁㫦䗳验膂늄ꭓ瀿ꗮ古닮귖脳ꩡ鏞菇栘攉呥麖눋媛꫺懤癍䯋뇶䗓媐ꐃꩉ镽旘殫苏ꋸ篫撼笛咬簰
+菑㖆讅꬛脻蔑ꍛ甡ꩣ戃놷楋꣋揙猑千灐涯濺덧伫僴伦ꕉ浄㻌屈刞儠滃悝굆锧鑴翄栅䘷䊓猃䤔膆놪鿷緫茮羅皓陕ꓕ宾㧯䗼㬜叟灿堛黃啤䵷溿鈸噮吕嗻겹樻杯硂吟蜐ꑠ䚁狴䒡㽧椣㑼蔅犿峑詘ꍳ患坰迍돗걗綩梫貘崈缃譋螥낓䪒
+ꨫ䁣湢盁ꎂ꾏鸒阩㾲嵭굍蚅鰀蓷ꉱ岋彳解ꇘꭎ糄蕍㣢ꒋ韑䘊㒌鷁篿遮䄛ꠢ䈺鉧䡇㾑蛳玐ꨆ곇㗸㲐獬瀹ꩲ牯㹏硟可鷫鎸舊纶㾟塧庣昻跧ꥮ㒿䝹㨻缾ꔐ娐礲慏诉韔韆羣苩浈鶭뉔琨㭦苲㺃駾䧉㘠衯睼么敦䓤汹꽗樹獚咷黌徤穕닊
+ꘙꗈ늰鄅袵䱁농谪闄皆ꄨ꺛雿嶖㫍訖髸ꥂ鲗诖唡膓确蘞担ꛖ熀蹯魌㨿蟋垺訇水낦鵝翴鑣錒䢏腃㿚僩㞺㤻䌰懃뇅鼸揙柲荽귢䯅飲韫鸽鏖덄깰넎㱔激酳蠫茤榽聜喐ꙁ誘莧䑎玟詢넭䪘䴙鈩版偙驗丠隆꾰艡댱坳恞㰊禨捽耐㞛韀䱤
+䚈귍咃攠侏啫縈碛迵餹鰍Ꙅꌊ洀尉笿鍔ꖾ鼊䇢㶆膧撼曛罠과䧾膢ꯚ㣡ꝩ䌇梗咄꼶ꈖ㐐扣曮珁萬朎넉䀐㩤䧙癢ꛦ깒㾲醙狑帤舖踠佼昭䶙槛巉耸嬗焾䛭觠能莍兙뎕凕漝幾琝䗫㠘峦蜃㖳窖ꔬ錢輟枴絗襉龒䙧㱂廇驖佪魜綎嫕㛐鏰
+城鿚㹘㵀ꚤ㩢겈龡ꄞ慨䯤㠳懊鏿小䝲推倲䏓ꐓ嵩ꦧ䇦丶籐㦦㭌䙜䎷焔磴䘵湀谞莴亜熟嘉꣦锇阢衺陯譖嘰襈䠯葳㿢减ꢮ넞函䝰葑䬺㬗桭弿恕䱇㾷䣖ꑖ놈䣁뎨蜑痕楌裲ꡑ꒦獎粿檗沁䳡嘺ꦞ赲䨳㨔㰵隽㫡炠郹굾䑧䮰ꛕ㻪隧鬹댟
+邎㾥頨萣㜿䪈黎꺛薕鳑뎹輕叾ꘓ䯠辽功꒐俞ꇓ翣䉖㹧㪉뀟ꮶ끮鎕ꥏ笪䳲敨䑣驶㧙崭賽痡滿㟹堜鷇纷ꋦ谯靣㧎ꕏ䠧摃驥妺頇䧿瓃낃錝揳厓ꜟ溷橅缚Ɜ槈遐㐺ꏷ㼘槪ꕦ냅䴾㹭ꭏ낭憒嚜䳦䨏㞝㒯汞稝斫粈䀕瑭ꦭ䋣妒崤槥釠䢝恻
+縛輗轨꺆捬鍛棻杢紐漜髲汳仟晛忄㠷筠俠踳魰綋鿏牎닣㱖妐䕾秂ꖡ꺆龫孁噂㿣㕤㔤噙蟞㖍磶䐆ꈮꚦ궟鍖蝅㗫鯶䬯忏䥅䳁꿢ꦃꗯ㧙踯䲜갓瓣悆礎畎ꃬ鹟合佻䡁껃䶪驜楫鷏㛼顂ꈦ幸㣄哉ꐷ鿽鎊滬䡿埓牳醷锺䵝佭秵暇ꌎ놿庩㓀
+羊韺颪㜎枈嬨璾꧃饖곻䆢玅齴岍髜歝釷筽蓲餒煅㢿鄆奥ꕰ䶛芄旗鸰蘶㬿鸒㲔巃弝渐ꗪ堯鹎矼蟎鴂꼑ꉻ渒嫖劄懕昈䅁隣奙蛐隰迎慍댜䞁镠ꃁ䱨埚噺杰瀈廒闂꯳㺳媥鶢鯇鑏譄厨䯙꥗㻛郼倫銢脀俲幝芢돔丬뎿㸓篁ꮨ㳓潕颒䒌꠫
+銤甒㭺笂铪郙咣䛋꬟僽枰佶䕷怆熿ꡮ餂걄鏅綧䛭昰啻꘿赉郒ꤞ亢蕥ꊣ珸䪓䨜겂嘓㤀궁꺅螎䴾䢊捭穢냾䀴㠪驟詵갦袼笛䃻峃꽯䫋ꢕ湧䣀䓮㞣蛛鞖ꋿ끢摞㙤ꦨ䌲ꋁ㿭袴馗炅雬厌莱舕鿉㥜祡㙱听㩛ꗧ魁㡠踛鯜輬㐘畕㕊罦辀㮱蛅
+蔨墭邩꒎黬詋喃烚瓂䓡뉜譥渑煂涄䌋㺓蕂夯濥彺ꟓ㹿漰㘓骶䟣낆煤贽ꬼ囤ꐁ跃鎜籑垡溺꠼訩㝯긶傚觯倵䫻俕ꉆ软䀳馋執ꨎ睇ꔺ涨㯑帺䙣냏篭㦝閹ꁤ軬绝止鮩冁泐㾐歩茇㯁螨ꭴ蠚右卑䚂撯ꏕ搸㱻깘射鵂爲笃ꗲ寞㴉懀㞴꺱ꂇ
+媻亗崾炣韽仫ꨳ刖哔澣繅筵猰ꢙ壘沣梪鑐꡴髐讂㗫卡㻵劆襩鶫㒿硟想䴈ꠉ鱤蔆䆶緿꩹ꉁ傪䴩䛺痐ꩳ撴颲ꛃ哵傝㢪顿㲻黼眧隌ꥲ蓿㘵䙵杼隇慢渋ꬼ紋銊黈嗮羹猂踱搦ꦃ嶬蠥䞂敘轄鞼䜗啪儝昆洪䈎㑀廴䚺悹뇉犽閑虶邀鯦圠庥
+曌檴鷅䇩祙鍝氧枅暿顿烰㡹秋潲叀꾕劮漁鲉ꔯ我吭轳꼜尟毚鑾渱佢꿿䌨鋅냆绢阍篣磱泭吳綌駼骡頽䌼鲭朒궟今鏆仌䭄褨넗걋㹄斿漋꓆釄圢ꑭ莊뀎ꜙꝮ烡执㚡應䯓华䗃桼ꞛ꣐熓㧣걠䗳嚃敚鮒爑䂛㢹夌蒏僀㮲饽㴆䄚ꟑ箃ꐄ㿗
+傯㙵漵꿡蘓孜Ꙇ牊佾虤谦戗疯雪鈫謵괬ꖡ䆵꺙㯶粂殛踐磫崹紑稝烯녬息㨻蝾蘡䭞䎭礴滅隢䫨酸䀦䛾贗饶䃞祓亍澂낗鐻籌㝪萲岶䎾ꌗ薟觩涴齸雂蓛箉㢭ꪗ䋝䇵畦噳嚁鵒䌻견圅䎑檤돡穇䶏铿东涩돠矙㐡涷㥍諆靻䳊葠彉鹚燌犞
+䧄궫麧㟈趻㓯畞㳶涿綥ꙛ剸衳諃鍲詙㝺綾捹嗬䔆ꐱ捜㓥犃ꨕ㦞ꇷ扞鉣ꕢ㚀藒넜汼釵ꥥ鋡饲諡嗑丁堻㵒昤斚氺㴖諚㸇薤䔦㢮鄒佬殃秅㘉汼仰䑦侈吷騛馆냼剿佩㾛巜㐔愸䗂䡢瀾닊䭯뇧竭㭃䩗牚䘻肅巢ꖒ筻㨑敓虮噙砣㜜䑓湨ꗩ
+羛薗鹼舜裤纩齘䞆ꢎ鴮䃳碘載捡瀟蓤擟낊㧪懃儤来虵鰍狇鵯䥔噮镅䇉腨莂㧆緊꒑颥㯐뎜鎄蔹鶭儂抌ꊅ矩뎥媯訨㟡楞焑ꤨ㷚蓕秚黽掋坽㷼늇裴檌㢫껚碇鰛䑽链蹲꺞矿趎瑁霭兴僱㵌雎纑꫗謂肌犳羓摜洢滻ꖱ錧汧鳚㻃崒ꏍ胼ꌴ
+兕㿐真꟨鳕殏憳縇㟗꤮魶襂辷匟㤐䁯㻴挜粕ꃃ駺꾁䝯䒢枴莥뇲泳ꐖ嬧釯㵰厐矉貲濫ꄙ㭿漷䶯屏纥倻羃谦艘氞薐鬄ꄗ䲦㧶愅鷍鵡㜲忌眽駻鑦拳顝꾨舸꒝僜槲䏝眜靕꾊凅ꍱ楆䒳䒬謧닜䝙浪备忨涧ꚜ纱咇뇐掑갡隍竟拾䩌叕迫爐
+䉬䋅自黙ꋿ䕷㜿獻灥ꕜ㭄䭠嵦旔褐箮餥弾紤䊔焵廅澖劫睷骬檪宼䞦秕虹霺痞稬ꑖ趬䃔脣擂䔧槊ꢒ䴶袆䐆ꈚ鎫㡳穢峄嶭䗐胡攣堰䞗꒯壂㧞婇ꭗ犯䴎誥俄煍芥燅㨘砢餻酨涴呂尓蕀糴䘩㴽靤貴䓖䓵闓㧥驗辗㓰匀䑉禣莛兠活蜞㴠
+ꜫ反罋圠暍䓇橊涖毟ꥱ悯纜䰞擢ꩈ祇鶎錉接偷掸倈眅ꤳ䑎埤㱨逓䀺驂蝛돏缬뇱겺傀䵎灊㼸疢䷵꒨糱璵葏垏鼵ꐟ궋䪸哴圝彜釶虺㩰肑䢙禕耐琇脞臽砺ꐲ䅛ꆾ惏皑葰㲸褉㨨㤰㱨ꁄꘉ榙癟趹屡澱겁껈瑎螀鶠消㜰嬕琏䥆嵝䘻蠺ꔣ
+烪祔ꙺ秙功陁懝䉶緷钖㙒꛳㬇ꂠ䣨䠃觗秥ꆮ詔ꚧ浬䈹䒒踥縸櫆缵蝀蚾轁臭䏈烟蒵鱘涛膦遙仔䡆昉媒輏䶑狳㲆垸芖癗爮剓葦齑ꊈꃮ繲輋덏嵬䏫㥸㧸剚肷訹꣺暸庎钁樄竧ꉩ郑詓ꬺꨀ鍔謿轒䋈駽洱舤蕯藽虋揫꾶䏾浇蕙䡤腋妤酝
+檹浙驗噙聰彬罫腑損瀸蛭哷躦㢎寵絇䯬ꍾ裹薦鹉御긌꽟橗幀嶙ꂸ䅧岮㗉䚝㲖遂旻而簯冭㕟撺錕宸穧䳐琅閳玉㜕誺곀끭妃倍肇僉鄪袼댛盭㱅䯄꾙ꔳ鯷囂鱹褞无甩㝂垖术꠹锧乐궛瑭攭榚䜧䨗䯮瑑忋埫㟋鮊Ꞣ䁺蔜距晾㪌蒃蚞ꇌ
+氅곷䐜芮㹚沉诅鱥䝫唉搵䪧粫狠䋗갅㷢겚ꑠ䪋㦭徾ꮋ涤睘桏㭗ꅼ㚞寯㽤篚忇逿ꝩ畅潝箌甙髰陝䘒㧶꨷噾䃜昌葜㴅馬躗赘朘垙櫼呤牮䙨㳛䖅鯱痸顣纖꺯韨䝤訥髣㩤臲妫噥꣒䰝勲냮詌䯊烬箶嶥毸恔慪ꥩ㴀㹽剦㕬嫈辺羦눿戝襂
+澀䮩墜䞫涪ꄡꁵ㴃脲꘥ꐛ岖ꑛ昐눑ꟁ㑺㧔蜌菈芞獜纼阳琈悜䦳塪㵙觪閙廢広栤䵏臐澸ꙮꄔ觍豇鎆硙慪娄烆疀辮꼍ꡈ遮鰈埯㗝焀俾硖뉕餋盆㔲厌勶礒爫暼㿋넡圽눫熏顮ꁭ䁅襈溙稠爍夲댞蝪攵练棌滗䗘埤鎅篯即鎕䵌偓ꁋ㝧掃
+縺鯞埧稁댃葸硑ꄜꯎ異䞥ꏠ偮䠫軅縶抈烠䶻佴豸槤锼潮梱窘椮佇䏟顒嬌璡扰䔒志갢ꁭ䝛ꍳ珶嶋劈襆跃蓂䠡填ꌫ㩮吞蜧镕龏鼹㰷ꞏ搬眑廞㑺邽橔朶埨啐䗪刹尕幺厸䠁踆鎯嚛䋄邫宱閰豧跺닽佮塝捨棰彋擃欋驅襀ꌦ塜䆚黳妪弑
+ꢨꈓ琂꫆婒絷噞葐嘯连䑊磝鸶趷ꄑ埳辶瞮㦍꙼嵞䐺嫩䉧㡓宐Ꝼ䃌弛藥ꓝ鄀ꈜ揻ꎰ䛽碲㮨꺻ꭡ獚慇䜦꺯熵毈ꖴ㕣唄锸䇏䌤佺긣鱂矤㙍㠙捉ꢈ膥謔獤漵膷鐱簽䧘䎚帲ꥊ昋襷ꡡ亳躙壓䀐㚰叕捰蓂嗎屌㵝긪帕沰敚仓芲疨枂ꍞ굘悅
+松蛇岧窩淪㼉芿鄻귨榽暺㟪闥烶㖟鄀ꃦ塨熩妃韍晐곥蜉廿唘衃놎㽙꼞缢彪状꽧岨䠥㕒奰ꖣ덒揽憿㿙倎鲫ꕓ㡊暐惋灸荓載醩ꇑ搉擺䒉桑䝮ꗑ㞂袻靮霟돴椭賁瓠溱꫒堭岾ꅔ敍䰩ꫨ跤技丫ꅠ㪕㛔龻㢺㤏ꦁ꥔櫍蛾ꟳ涻ꀇ㗟㙀韪蘟
+䖽꺽䕚飾輒銈滔ꕞ葨䵻勏㚘궼淟圴驫蹽唥怳늢䡞呣䈓䖝殴训䨘惁奞烢奢嶋긞늝㛖垯㶫㦜䜲韜咽絛䵚稀㻿驮鏔鉋躱咉唸辒ꕠ淞꧘嶪緤琻䲭汾龝枦踬濭鵪ꞅꯓ嬲呄鹖舖㾨鍉晤吓襠㘍耸鷸ꟻ蜳ꯟ嗪躩砆讯扖뎉蹱瀝㸸䧓ꙑ瀐㙠䒿
+鑧焆半ꌣꄿ黸砻配㐠㐴兮圆㨅瑣㟃吮ꌺ汾絘矿坿䢐兠髡愌寵镭矗銌巬䄟煄䍾勡䃕㴕ꃚ澫晄玒꒼砉的粵涭ꙷ浮鍯辽睫嫟穜䇭㮽譋耺酑遨莭ꪳ恊涓녷乇ꥱ뀏臻낺㝮疜놝歅ꊢ緖構䢲漛艿纈兺輁娴夢量黊寢닱蛅晣潉꿤ꌆ䍷ꕜꛦ꒪
+襏鐹箸葇氓㺧邵嘷嬌䒰䛬謇伓襃顢꽽舲ꌠ㰔曧㵞順㜇圠謤趘埵前恅ꏪ넹褢郀灾琚䒂꿑嚷ꪦꖤ撖䟢䂅㣫꫒ꃏ㮖焰瓾躶蘁组岧童蠃排ꃞ䰬舟薇窌蛄哢趲妀䍺穒痧鲵聲眡넸辱甑蟃櫓關긼㣉껁銅鏐甊夒手㖐傱惑翸㸰㠙炾䪅紐阽荹
+綍寽眃趟㭊暱賔蘱垍䭗ꤶꬴ藥鏂ꌖꑝ炏慿穵㧉瀨끦吆꼻绊洺桌㠵㷕曽䜈檩㠐䧟罥㦏ꅄ鋋靫䕖꺡癗槅꧘笁㣶䛗ꭂ㒊廘抜劇㱧膊ꉨ橶ꐯ钱䓺隴ꈩ댞煊拙뀩宆闕넍艷墙ꤵ䉷萠祮넷ꪘꝹ饤놔憖舙㒮䚹搵䊠ꕸ瞜垈绗桿㭑粅籢海妮귳
+簍镉蛗碱搢㡙䭂叶㸛㜙聚ꐏ䵖濶㐠㝽諳奝䴉岖鿅繑隅Ꞇ䵉駐䒡ꢨ翭跭鏾婝墎彴㸇䷝嫏䷻䐶깟鮣꧉峂궐ꁶ槤꛽䠛寛䀾끤ꛆ꺘瀫䅌Ꞿ䮧䨎蝀烽風扟睠釻詜奣䈸摕䨄䁅祵坸ꛏ庴觡睦ꑾꏬ旘䩑啾謅냖謖颉ꚡ냨掹洞欛塘䈆嘥倷誝嵳
+㱁汼㾘㞕刚牭瘯燍騬现鸂麄孶낄汇毥稟ꆚ㞘陓死氟漸琎Ꝭ沈鐿燠ꥀ琯䌞霩䜞対僜攌裤嶞谕拮註䝛鲤滾峇能㲘鎃綆䆾㪩䚣漴捝ꃷ伡鴒䃶脏骘넕꧂髥蕂痍觰晨饍淲辠龃瓪㧟ꨫ薷瀎惜雋邖蘾ꃶ隬䲻螶瑹蚚盤蘤坧朗䋠溋猆願ꀮ柡
+愍䌌呮꓇蘑蟑㫴䮭ꂱ啯髠稹ꉡ树絋꺋ꆰ樶呯按謌鷭咝筱飳璗䬠瞓俿酢擴煑㫕钯곮䜧沵欸靁冭䄗ꏀ䭒匭阶ꬓ诠덷玧闐鰇녩㴲睁朂鷚谨嗆綊ꋫ紃徧与蠙渭뎑㕙濡䨧挗ꛇ꟰㮴戈蒟㕻눦ꟷ䒹誎謸黯萯瞄굩ꤛ胗傠䎢搴酦꣨騱䁑尜崋
+鮒곰䮞啓䐉爋熓鿉窇鬉箥阔뇹弰鑽墪萎狥鿏薉눧贺踺篂砵ꊛ幔睾裫烧儑挜塳揰䲵㾳넲䈚吇䪇ꛞ㼾闱괕䈮赜覅㔰㳧ꌧ覑猥讴鉔刻赝枲冝綶搳뉦它璛忐뎠蠐䩶廑㙍ꮕ䱁孲凷镆拣괕齣㘬楙㲅俶膳褅櫟橍끞釈貰겺騞䶆㐄鮷讘藹甴
+䬞毝鸘铃囚攆蠂澙約矌瘾㖍䙫ꊟꗮ㰪锽趼䛃拘灔欴ꚕ䯥䑔ꂳ蓦椬닷痂処值韍䴦譈夨鱜㝠處鉈㶧ꮔ㭃㵔舀㢕皳鵷匚抁贷烏魘ꄊ䮯㙲欝꧂㧷껷蘙銃坡虂咨惀Ꟊ窊稡餽鎽鸤䙇궠㽫꨷芈岎鞣㦗㲔僞卡淕岨鴤꨷涨㧒ꀌ䑚螃砨珐砟孡
+皢悚璹ꞿ浡껜ꇬ䑏㥦堼婚䑅ꢰ倶隱扁襏篣䘭㜘䱓翭蒼潿筫涳侰㬰癛透뉂悧罥㚠㑳늾呧㖢䍵窈帼ꊎ滣苂法籾覾蛯罙熽䙃淡䝳㸧庮莘ꧼ渌ꫠ磂䂵茱鎦偲醑䢋嫪嬋藻髫訆汉箰䓦䁙戜댘뇒ꈫ䶝撃瑍圕鐄꿴酥銖꼝挊瓟䬚悹꽜存焖均
+뇗选賯畡鍇䂙禐ꤺ㓏㳾㖙꒍禂鍔鷜吁俏꟫䠔䀢哚拭䀯惊陬䗾襾ꕄ禶꽹ꨪꔵ䊛䓪䂛醘輗㸂踡卉鞰誩諤胢芫缬ꌶ냮䈦贊䆵㕆㮂䛤嬀껞䋫ꭆ䆲粝粚壧輷㐖聸䤗霌盩꓀㛂貘豸㡏豴螶詙脩悡楿巹꼰㪯㢏啀疾㷨湺䧡坽鷈缇㚌㒂钶䠋倸
+幊讙偿䓉夫掿䈗鷇阋条偡㪲傂俎踍㟽㿓珺䄙㧭蔤砋䳳酆鞋䥠値踛叚龎宊꬚奶縵椁㞿謏䉑愓癐䮉誙괣鐢鮮緕꧖ꎪ䗘䬃鉣掐꬗薬挤譏媼ꨘ闷秉噥㭍槅ꁩ㭑烧眂包ꅹ闐簋㿬䨝鏦湒뉋魓鷎㛂榄뎼琘䇒緷兣燳吝䣎筁鿹䞕橯蘰䏲㞡鼋
+꾺䊏䑌㦨愍轟噗柢槅廼䁐揭圴紫緻胗䊈祕裸䗻縥꠬犚缠䏝嫉裒꼀鞬㡊猕鵕钊茯刬嬼뀊羄迂䟇䀫騾叻霞돻㴕馿枞蒢阗潫䦄匍煽ꗆ沺廭㩟諕갵㒕执娷侴噠䞡ꬅ翢逑臔㫚焛ꦸ겂撓癉曖洼撌鎾虭噒翉筕峗돫㵡㥴䥁孪磹棕盯凇頷犮
+遼哄掻뇤鐿燽禤蓓揢蛀奂藴皔鑖垫觨啑筹㷗汢놇苿谚걣䶹㭒誖赪ꯀ囵泩堢航㽍孖㘭錽䈺壔녚躠뎝ꖎ魧㵃檹飐ꌹ锛ꡉ馥根蛊嚓곧铂瀿ꈏ権苐腣䡏咣簥唙蝂僦揑淾芎䋷嶵欬ꚳ㼻拎抏郍갚蹅㰎Ꚍ鞁猹埇麾睏艢䊚㪲䄈䂘㖪㳿㱪昴
+鑏넫謄굤꫷꤁捂枮鐄ꌿ繓捁硙䳘訖章墶狴䍹ꖫ欑ꋆ㖒㔚梣隗䆗꣭䋹弁鐏膝黧盍䄰儕泦诵ꜵ贉諺錭㖴皞䪡袟蘾腚覛㖿庽䑟䞔槣夆亹詤膃㟊繛녑꽅觝钴蠄齹瘁剚姫吅淁仞孌蹇眔鳤㟯呻㞤굚ꂞ燰雤㾋氇䵟䦲祶䎷荴蒋咈斮䐢醫熈
+玕嗊辴㰠ꬾ埴鱬꨾㾏岻㜞瞮䙕끫䄱㹊覘瘳豲蠓帚粲蛮黣悈㧕說㡒侭逆곓㯎駛舌㽛䝍귭杽佲及㬡䅄碠敽茯詶䬜醄搯䩐ꪲ殾㫐䙑搝屾껙㼙嘹攐궶㯁萜㫜給著꒪嚕掾痨놞湖끲ꋮ塺댓齖ꞔ瓅埼䲺ꪳ嚢泳䰒逖놲降鵩王選滅猵ꖠ兔덪
+攂䑰䖬茗拏茢崀걵鰉姣娎㭛萇㝤羉壧渘陷㛢狧ꏟ论涾猊䚧浂麢Ɜ姩鶲괐圌暻䳿鮕鍹篣比浯䍛靄響䗮㤀亂귌诟䏤橽犃琲堰螤硬皭毞瓇递頝抜䩱䮚堷ꢼ廫觝勍寫箐倌謹ꆈ㤀漓芮趹庾鲰硬臣紲꣕葟ꄨ壈节䊱鏉긖讏䟳굔꒪陨砑抐
+贈䙈꿽犃䙂纀鮓婦轄䤚鈼咡媻隋㼠蹦낲躙䁫辻枩帔滢輛黳綞㗖扊徣糤杻ꉉ嘟線鑏橦鈱㒑飻裺蝴窌勰椰꺞籪碷䲐䌴鉫꺧璣簚箠覰㖝㛄䲽낭禦闈径늴㤗駵忖呬㟠崨聯枤瘯俒訌駻ꟽ翗䟰ꗎ㠀꽎滷ꂳ㢵藮聙넙餐琩躒㚢軗㜀禫岔鮯
+輊汩窎㩨䠽㲐闣ꣵ怿鰦撖椿甹弩ꙙ睙匝袄示䍼辥軀㮡韓ꯧꘙ守筿竎ꁷꔂ镏鑙걸雈崴ꋱ栐嚓袏焀椕觹鹪ꗌ曖軆㒪巷ꜹꑨꘜ嬪緿铛篮공寵䥰猡䴨邜䳴錩ꮜ䷛ꊝ꼜眆꫊껄这辆ꡐ訴溒㽒꓁㖁䝝緽妫疋㲾周䰅杁겐輋䗆䰆爝ꖮ屖觎讬
+䩈軘嬆忍剴蜣䯠鯌鉫嶉ꐏ㼉꼡글蠀鑠䞦ꆖ鸨ꙙ謂㑾猎数址袋綳頑砾戵蟧钇岔誆감銰뎔銧舻鱾迿黟꒐勤捧恵伓닄崊忪䆰㡆ꖎ埥笓鵞钮꼪隶蛭璜鳗誣繒栯琶䊝紤傄ꏙ杯漯琊壎祃ꏥ斃䊱朻嚹密鱌叅聐꧶谹㵉갟簓焞ꟹ臀熏乖偰꒒
+㶽偿堫墠䉟泲뀿篾窰獛讬譵凫姠瘙䃗挂꿄鸫疬钮祢畏畚鈓鰇ꎍꋺ㬄溯狹豀㰺㛗褝髧蛸㗟䏤꯺悵鷶茦꯺䋰䖼螪凹䧋俍粫燵樞抎籄堡蹔紿齼羀注䠖ꟸ玳謣㿑綡䀩䤿骇鈌趂㶹鲍喣摿儵眩桩涒利㲭ꨁ蝎旍넛㟊峲赬嬾汇觧瑩濟懱㩠
+菿頔嘈拰負㳹闘藶䵵䳛犘軟黝厱搾輚鋩蓸蔤鉘颃虀洂ꦱ邐安絤㲯焂蚡窜韱只綔냕曤胹驎ꌲ㖻㿦偆秼礗襅䠩蛥揮㿓莢幇ꁸ뇭瑕哬㞃廯㲧㻨敵瀱朶諄㞂孰悁ꀛ뉜垘鰲瀑ꋿꬂ頾껲饝紂筚縢䖭㖋擊简蘵懅䕖諽兵䒱鿕ꋶ鱍財餜ꠊ댵
+䛑寃幮柩臚䍲㪄䆽䘰掫竔渚늱动鉀凜吒㴗㷐糢鬾惻ꑽ抔哠褰菛逖깱釃崑認ꕓ鳅皱鯗掷吮浯亰象꾔鲲喾晉蹟䩶䊊選捑ꢬꊡ窟抗鯼吓裌뀨鳞觋ꋋ꿶瀭댧掳綑阶㘸虔궺ꇕ㷸袨綗飑磟䀖槍㢵鶓鿈綾尐꾂掼嵎ꉁꇺ㰡驊ꄇ䟱梈鳄鑂籐
+料㧵疮磩防葆膂潛龮桨襸丬㗨燵鞪笙遠늢㿫ꛐ楆ꃘ雅抷湗ꐻ魑澇擘填낦紱骾갑盷汤䷭鰐訷刔晵蛣酙蠎嶵剮勂誘䊤㙛咄毬䪴錤㣣骲䴝㟑㷠䥿넳謇䳯䍂ꔾ䠡頉ꢕ蓺閄爚狱脾瘕돣鳙阫殏啮囵眉衘杻睃䍯䀭鲏ꠑ鋮鐭碚础䜻ꎻ豞課
+䊝㾞榑ꙕꠀ㽒굔䖼隔ꄒꮷ㶔騅鄩ꨞ恌璹鿓䦃溑꒓浩僃趻攫ꪦ书嚮㜳蚵鏡懯撒ꈅ寳㨱䁃ꦰ僆靆㛇䙂鰸韩간ꭠ꺽鼎綛潱ꇼ䢖댗鴗鵭蒀薀黻꧚茲穤꘰熢螼驦䁦椴䂠ꋖ鳳獴䧿䮘㥧뉽㻃ꞔ脩ꀽ荌齵詂孟냓鱣嶅ꪦ却㩽遊楼㩝煣㻜儦녯
+䷭绲逹飮徰䀪㯫礸ꮔ荫뉱痛㬀䬁谨㰂鉫㸂饔㥠歋걄大郫ꦼ餀巊鵡鄸냌䨖讷㫶䲿屫恢稕弔녾䀢焼䚀鑯䐀鷺遅斣杼邽蓟㛌늋馀䦳鬚㡰銾圉䑺뎌輕噷橛鰨곻ꝣꊔ囏貣启덩뉹痹ꥵ阵趶뀕摥䂐毉眞䭇胵绯넚箪㢡太嫷轘ꭲ癟栕添蚕猲
+瀌議梄嶋楳跪鷮ꦝ顑경㖋늘扻䝸诣ꉒ緾襔瞋醙돡煜胨鹕漐部抝䜁閊繫䑢旝厷悌愮耮览爥䅲充豺ꫬ瓇㵁豫㡱斏㺵鷠韒彀甃疥䄦䨆铖憐欦冼洧漝辪刀臈芃剢総㓺ꐲ嬆虂䙢嗶挮耕돥痸䦭祂㻊䁖應鐥聣䔠蓯ꤞ報傆哾膀낥加䨸掃鵅
+勗阠鈡㐸綼ꣀ䱾䈁嬎錞躷萇窷齸㩳댬녳㚆뉛臔顗燜䩩ꠀ韣賕鱐讯莣苏緧낒镐垂洩躾끬澃㾴閸㶃龍歑媱毤穓ꊀ麷꯻珷뀶鬏爼乳颚䅅궮艸皁霥齯鏡㓬轁馛꫕㭚ꑉ虫鰐故㒍䘾獛詟䱯皑꩹櫂눩髪汰丑癧幘硠뉁獎寘䉍㻃釮崖贷曼縺
+鍾鯑蕈叁蕑㞮櫙猥䉁겇鬴碓䫴꺛㕿ꇰꓯ㑡芒댃傒縆鍢㣑궶꜎貮濋ꐣ儎栘硄輐勜醠滋뀢疃襩ꇁ欋䁋豬覬뀑㰝ꏵ萐䃁㣼莋ꎬ䀂廄긲鿡鞼䟿㸥衱鑓跪䕫ꀩ顕哅㸼蘜搂궦ꎱ梾鼨ꥏ頓Ꝏ䤘ꁱ勦鏠劅㖉詯䲮㣶㞁蒉鄓㗺剀䯫氫㚱늧聄縩
+刊岹䳪㚾䗞竅鸌倏柳䣖敘菦憣獙埻紗鳮綢鳄桑潚簔ꇞꛗ伓恫樐醕巩曮炿昲冖辥呤锇䜘訦鉋季椐ꄐ匒㣧䬥ꊿ閜蛌䶝挽岥姼뇁咏氙孉䑐蟓닓槍飚㛲귷幛煣긞뀪瞒彍䶪㸖駘䆆髴㒝靑ꡥ䩥姢硳嫍䙚ꤷ䊒纹ꕋ끕專躟玘檢ꙝ鮞弘熡㗫
+萔㠍釘硶뇙峞嗵崣爂昉銻꽊罋鿧㡬缟憊도惼㕈㣲蟏戡댁關㧛㶟䘊䏒撜惀雑䶙紉ꈖ鎺汎㵃韃窿譶䤒㠋贴檴㥍灚吻汒꠱庎荒啓㳌ꎗ뉛囆궭낏駌欱蟬诎鸗及筥慃䎠砧軷꾳䟳锒蓐峎抭嘤㰾内湟끉鬒篓鞰摍膌熗㢬橞㮷䃀玠궬賙悙褋
+婀祢巶垣枨㓫㔸嫛㲒䟛㚆鰧稠幋涱灁ꭂꦖꖄ堐椿㭹뉊㲿狡豆芶镾깅䏃䘜뀵걇菺劕꤃桑䋔䡖歂茾妽酿玙蘈鸰녅暊驔䋆猴娍ꜭ羴寚㹏㓻敂萑攧傉幚眴閇梸硄釈늠謱덍㯭餮訔谴䯽貅㐆啅꾘껍锪夙轃詓垩ꦿ㹲毖损郕瞱蟿裕非䵴銃
+鳤憳㚛盼踪礇檉通雐鰫餿꽎駵薢齅圑珴誘鯓缀恦鰙岠对釀䅢ꙏ䭁潖䎃礕翁阒覹㓌爬ꛭ䷄귁廜狞敪䜕鿛洞圙㻰㰂彴犮鐥蔪滳等䤼霃鬺굖籕䜣幖乗䭅疙巹繞闍伏꽣ꊲ凼烮蚴荏嗪鏸㳟嚳꾎ꮴ鑊㶈舜乼鮌昙는笓碗拸癍Ꝓ㪋ꠕ鬏䆸
+ꯄ減正䷤ꤒ굪醨棬㭍霤摝簓樟댤圝鸺䨞繶䀨榱覬ꯝ塣犏蠀䍬鑀縻齎乆箂櫄ꂐ鹌嚀깇㤗笮㫖枓纮啒襷㡹弬嘌㟭爭䴀ꙅꨠ辣䳃庌豱嬪ꅶ锷匈筩豶鹠茿譮鐮鶭件㯯苽铹兎黪㞋埸䫚沭捭晤ꉧꚫ黠苶狮真姶躾㥻䢗꺰揹菠嗼眄呦滙㮺
+笑㢗ꏉ녖䠆毐怳酜덀껢潴ꌎ涳攛䏷䥴㓐㲥㷗睥窛㫤邝늤䆏䲦褍嘢斫吳局鴠눷ꖻ㨧꼐璺ꣃꗅ詽扙䦚濹鈙鴬挝櫮ꥇ叾薘㢻枀崮㭀끘꺘䋐Ᵹꍪ參㕈褚墴礥䲎㗀買끆ꚜ䳙ꢨꊡ덩갚夋㶕吚ꦩ椈祰꒽ꚋ卬兞亴灘꾺哯渏㑨碢ꘟ楱鬹俖갫
+䀾㡝华錝港摥暅㞸頃噞䰦臕淰㪒蜘鋮趇芨殚녢䙶蚌ꖎ냤阞甡덓㔏䢋䲜꺐紑䯒哝髪伊㼠䤎扗㫉稣谥嘾녋鬞ꉇ䀺ꀀ賦欚ꏰ哘䪫恴埐䗝趘劈竁暌繸ꗌ杰䈽眞羽녧䕓㘣熏挆赀㾃詂勗䥖䌎䣁殝낐嫶嚎瀀繫澡㡞腥踋會꾕偁詍鞞䞝ꂎ憺
+铄㑜꺘圣惤劅놝健婳鈴ꆣ酹雥꺌舖㷐茂䝮覃趌ꓲ㻉邔倊ꤖ玟阔致㰎鐌㓇宣䧉껞ꃳ魫ꈞ窦沟㗖䐐ꑑꤿ䰩岿郏ꢀ蠤꼚嵇縃淋藞䁯㤞僯䓭㐫泸炜腮碵芚椂铋뀄㗎輾胊捘ꮄ仡弒꠯远㹦ꊇ搫錇寳奠缇婑瘡抜闚鮙卿䱦棘唛腤ꢚꭋ黿閇
+便䜉㓢냷絳鳷夭粎鲼蓔巤檒淇皦擨䙐豞鷎ꊅ受譲杷㶯㗧稢䷦끓薧焘鬟뎍瞑惹髅轳韹噘埯脂䙃瑞鐖䮋麘뇖ꉵ祲ꮺ蠰鿢癃皑꾵䳅癯田榠閂䱕㼪飧釈誫䳭圳ꀣꬅ頾끬褋叫砘䌖瞥湨㱼鹆䡶旱椥瀦걝꟪焆觅屡觞潃害䆓摢嗼墯ꈣ堌낦
+稸ꂶ巂媃꣪㰌ꌫ趸ꞷ䧘柶秭꠾갡鍬聉䞞馳䋺귻墁悧髅幧粣ꖅ摈鲯揈韛돽䫳䎅嗟댳烿㱸鞩㗟䲁巖鹻鰲鱼劧儥㶁煪畂Ꝟ繸牧仾妽橂髥鼸겓霩㷵圊鎱㗩苸隆屝繗鬳㠳閔橇炷㟽㕚꤆㘇뉋굹䟷姉僅䡬晼旈饘护鞭Ꞃ僙弟蓗䋅侻字鮷噓
+㤇䟒暻꡷㹞㲙㰺筍䊫疖㵂虥䇳㡜殂硉侯嵚꼾坰逺俜亣禋齠喣愰擲艅势䪊毞竫㜰꒴䟅戕割Ꚋ걐抸ꕅ姱넩ꛢ沞狉䥼暕伇材鸷厗狈飕妪눎泃䵱醖櫕盞馅耇株嵑碹ꨤ啬烰寴䫭媚爞뉦艳卨ꃲ枡幃厖穀揌窱厹馑ꕊ箦䖳㹁䧍闾鯯㓢妁七
+㸓騋坞脔镰组憄㙁蹚椅塏迬刖鐩觹녡덚抗꾸鿬桘꿔泜뉹繹輡变ꋦꆕ깾趽䠵戻蟝瑷娏黌躩ꎲ窮尨嚆ꑁꁟ䘱䅘㡟西還꬞瘭懷蠎꽕懊㚵亵蠐虫圁鼡諞豢醳肗ꗸ冀搭鏢莓ꦭ碊Ꞧ㳐蛿ꔌ囗爿䆛䎜剪琦䅮䖿侟蟱匦慨汤摟㻿㯆鑕걔㗞㵱
+砭䣤鐤扽䩍ꑓ朜疕䩣鐉鼣杻秧勤鄓鴬盈㥄靦꽒ꉌ茽㠖臃彷蹈礩ꔻ늫崉樺偬憍浤濓怘ꝇ鿒墲긤驫錌晰ꪇ䴹踗ꥄ㸮ꤷ㶇鼈揔妃珴瘼菲亀㻊ꏋ깜㪍炙㫭눤돮灁陟㤓㩩趴晗鍫ꙹ晙膢式蚀㫤荓㤏䑭ꣻ垣殤紘椽䗎꩘挻蟏椖꟏靬濺㗜埙
+幡넻猴䝾螈潅䍶桷崻鄤늓供䃁婺錭倭ꫪ踸蠜罢㹐唭爑滆洵귶䝀宾鍵舎蒘泧揽账ꤿ甚龊薚꠆꤇㸜䆃鍠攒暄㽘琚ꃊ뇏䯻泋䂰抆鮅烮崆嗷醘稳瞜桂䄑啡卧甬䦀妛濍怢酮毹踭䂡㫤噃蔠㢒邅巏澷㗜ꑭ獡㑮笘硁ꠕ旴攘ꦇ檣爂갎沞餞现
+歴鑦簤诡抪馴俯步醆ꍜ勵㙬繎湞歍䏂賢珉萟ꪳ䠨疫嚤馳鷂藑늟瞎鐪姊只䙬痌蘇瞏瀘籊俐璛姤驎㾺亴ꈠ㻅䩟ꙋ誡곱桦䓻倮臷翀壯厖綍䂤渻虔㼋臫꽭覤㿠䎙文䊋㸒꜖嫾鈨茅ꄛ걚剟厠墻啃嶎狲꺾䲤㿣伆䄀嫵狆大㯦䪬斗䉫扏栾Ꝝ
+䧸䖇ꝃ蘯鶅㳳麶觼襗橓嬇㡙ꇺ궅鰯酤끀褂㮝砞呐䡕錕㧗㔂㰋呮螂蓴䣋껬浗膶㢧珡兙缌꿨聇廂꿓衃未飤鍋鑚砆怪㒤鍖趟㺔䔓䖌䟠壐充ꀲ㡻蹚鑷궥䂀癮路ꖄ덞纩䁉涷㿑频甽碧稌鵧뎖哹戆莁寈䲒昏獔㲎ꭙ稜禯寁䢁꾉崝䪄湾挐ꊽ
+㲰靛譵槧谱焱㣧禒㢻裵㔽䐦鑫悴惝葳㙲㚻ꪡ巨嘧䰹䰊䤷꓅怰㧚缿鮳衢ꏁ㡇㫄㶎蹢胤砿눻牸渎꠪唵鐼궖鮘꾴笉媓䢇规遫뎖莰㵾㹰粯䭈憒뇔ꫫ䀶竜醷逃匰䷱㰶䨖琁䈴迫ꁿ崗ꇩ긇楚僲搈塗㝄뉫辫扁阶飩轖虏飵妍䑟駽軎襝幂羖뎯
+䖕뀫ꁄ䰻鲼笨豎璐攉껱鍐甂㟞ꙫ꺛㦐嵷鄧㬸頍꽅綽畫葊㯥㗼䃀㐓䒇罬钘剽飆郫鼆班䅊馾䕒渿朙䳣㒲갉䯤彈㯳橲꽥綶糔犎蓻닃꼧畠稼駍嶂躪㼫瓠ꭃ莊峽軿沯戧㰻ꌓ泳碄鼍嵀緩告稲翯知甤鸡㖴靺蠄顒㷼呛꾓㑚錀Ꙣ莁脭ꮌ擧꺬
+䚃孑軩效鈺ꉬ꠨緔舺貇絔䇖ꍅ裆豥錼頧㶄枦㨫墻鮟环瑌淒陡鰿ꢡꩡ篝崊䨯键衭㨤鲑准㚓錥集頎ꜣ欌ꄞ덡㭡䁃嬲䘓ꟽ䎮䃭伦䉝ꦱ䰑崸嬫卬鲾烄慲觛恽ꩄꛥ法䪼낀䐍笪散憹䕜깺蚟㴙旄嗎主葘嫿峇闥缨䠠廴桋犧䘽녂㢯ꃑꪡ妿钃
+ꗆꆤ꺺鹼䚍婩霝庣詖꫆殒言隬ꃼ騆㞝긆嗚跼憊镡㘶ꬮ贏㓊鹞ꅾ粚㸬亊蛭籹敭鰨蔋儥榓劭熸闿닅㲦尽䬻䏬䙸掭ꪑ碷靧蝀䏪鬰鋹慔噹楽镦䟼镪㷧慛淺矅䷯坖枾晱㢶躽廍黡闑癧伝㹪擊庯霵钗衱愸孚柖碳䶷䳬䳜䘫䑺樟癶䕈ꠝ寣䕝
+㕠烉蝴矩놯㡢䏪蒗㰄旻絥鄾돪粤魫索墽꫞隄䖇挭ꀘ規弞竷磠賆贠䘠니登驳厎ꩬ钫庁Ꞙ彞蔭䚱焄畈䖟煉罷䚪闾ꦂ㴶鿣珷晃뉳洷愄拞嫐铕宋柩䜁逜歧㘃㯠蚥鹕蹿玼ꐮ嚝㞟寧䌫䮓瞚梲ꢟ循䶔尷鵱幱꣈悰棉崷龹堫篙ꭱ蓵㻢粱脘极
+狎㚢崢㯳鷪녱㤐厩깠덣憴魈驆ꥉ䛘见㱺褧䚕毖竹䛭瑓㫻歵礗㖻谷旦닏苬羅汿坔鈐㢶橡ꅀ䤸뀷瘕鍠꧍隈妩䀐霖꧕鋌鏎呠炖閊婧帻鯪뉕㻋胪禆㭜개捔嗂杧藓䜐叨䫗死埅檺趸笏襂ꈮ皔喈籮彤㑅깃䳀䟴縞꿙傺循雃坊科䩍箫勔㡀ꌨ
+歄㳘溩蛥꼎蹤泃顲嘦弝厣斑㽭닢閧珘霃旳緌禒㿎궎㑛致ꥉ瀛民꿌㵶闬杠Ꞧ돻鮣ꍒ㹓䀊黣愦ꏽ蟔曭丹곥翃讯㺋鄶䫾㘷瘤层騗荂鴒唟泚䐐驶ꆲ插䎝鬭孰꾁溓侰䅎恎誷莿괒箻䤬鴻箠鏆놇槈诩ꂋ夣갉䛖骏䦶縇沙禒괵ꋣ鼑呼䨞舁㺯
+ꞓ頮吀祤繳荥殇㒘ꇗ荊磋ꙵ䡟搷껍䕞晩꧓昚趚꜁蓵镒讀刃绸菴䲾鲗㘩㝶醛疒韹绰顖氌柛꫈鴀ꁍꨡ颊犣垬桏꼂脺连㪽粻㜋嚭崘ꢤ㙖偦䇡Ꙍ聩勹湈崭鮢櫌迍犙㣷꧸霊瘸诓䚪䧊碨鏣녢ꔗ埍㮖員型欠꫕宨ꚤ䒦鷭鮡ꋐ㻼䷁爋䅥鶋晰
+檙臉㔪耈槰鬦ꛙ壦坫缔劖䨴釻餂择嬯洛鸉洠憚暀恋宪魐獌㰛儿塞㺆ꛙ砸鲐孼暠䝺糏肆䘃挮嗏輋ꯥ㟰砞盝놣闞氘㡚恴䩡雬䎐访ꯪ丞蹸䁞墳곇䂻麼熍㼻䄈侂鬾诜湧굳蠤㐀倻瓖蝼蠵꼳Ꟗ秬㐪䱂㷉霹颽䵄ꍆ暭덧噙蘕怍墱꥘戗靪螻
+併非鈳嵁狄蹏鋞ꚭ獪踛孇袲洗瀬翢揖諟扜殱ꠁ蝨閟㷿箺囆寛蕛眺넱䢬礟笅獺芎睮ꔳ乙漄鮤冏匂蛭뎎ꏐ原꿽廘夫炁肔貨꠿膦䗃鹕냪匠㖣垏磖䩐鏊佒ꤟ돮䅞䖨厢枧끕蠷닣埾纉괎恻鑓槴갢巴ꗶ蹕簵逇㮚뎧꽇頮䆭烉逢祁㘵西尔泹
+蜘泵궠鸮剂栉扺衩钯栶杓㺫恘疔秎馛㽜烕ꅘ뎿遪돔䁵輆倽蝿鹁㘉澜坭区鞗犿䔲俱㯷㨽㨠嵥瓊㬈认䍵嚉꽡㻀呇措晝꺬䇢䒜紣櫸駵鱒埨萭㻇汚깬捶㙴麁㱐郚漓擳擮껠燾娹掖韠꫃饻谖亟矟䋶㙄㶷稗龅潓䳽䧣镚痔軻郳溕襤羓䣹易
+藪㭅盃㨯䱶덎盩귖唙脮ꭅ兒娃翠䍺箙杣咈衛㬲㔐寜洇娐菘畇荝瓜ꐇ陾洘袘垎䮊珺迪䶥碂鴛棋貂鍮鸳撆ꙇ梜锆㟘勰顜鴵䚞䤪嫥糿䅉熸䫖朚㓷砧圅䯍䨛炝楣痫琜㽩緍䧚鹸笭抳缋㠤寎姛钼꒚궿㚒돏秱嚽馷拹䉈揸弝驧傸ꋇ痸姃䤟
+䂩艐脳浊纴䒸桿蝆喿냝骟躡댦㮁沫猃癒涾㕬꺢ꮶ欢虨赩䁐姯漅酳檎趥䘛꼷䐨縂䩤寴系㤠ꔂ訧隖窜㔀䷋䐈憣畠㞨Ꚍ㧕酈繋鸑ꕾ㲥㮂蛆鵂舄ꉩ檰㻐贶䢐㘯豐塅䩼廸耜飋仧鿬衃䂓錨ꐙ憦喱懵㻕痾ꄒ幵崿䯬㐀㐥겮ꝓ葒妐㐌눼㤁搉
+䏉熲訸穿谐㐀㐀㡙愀
+```
+
+## Environment limitation
+
+Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. Independent checks reduce but do not erase that mismatch; the localized phase must record its own environment and remains subject to a repository-supported rerun.
+
+## Prohibited conclusions
+
+This report does not establish a universal galactic `tanh` law, autonomous `98%` galactic emergence, absence of dark matter, modified gravity, a physical `3 x 3` elementary cell, a TOLOG Dark Heart derivation, an emergent `tanh` from current Lineum, a natural attractor independent of inserted bounds, a stable scalar-potential memory state, a causal disk-concentration mechanism, or that current implementation failures are terminal limits on Lineum development.
+
+## Version history
+
+Versions `0.1.0` through `0.9.7` are preserved losslessly in the capsule.
+
+- `0.9.8`: converted the active report into a readable current-control layer plus a lossless embedded `0.9.7` normalized archive; corrected and retained the initial heading-selection packaging failure; updated convenience loaders; revalidated loader-based and report-only execution; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
+- `0.9.9`: changed only the lossless archive transport from Base85 to Unicode15 after two connector-truncated blob attempts; rejected temporary-branch assembly because branch cleanup was unavailable; recorded both failures; updated fail-closed loaders and reproduction instructions; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verified loader for the canonical runner embedded in the standalone B4 report."""
+"""Verified loader for the canonical checker embedded in the standalone B4 report."""
 from __future__ import annotations
 import hashlib, io, lzma, tarfile
 from pathlib import Path
@@ -16,6 +16,6 @@ for _char in "".join(_text[_b:_e].split()):
         _bits -= 8; _compressed.append((_acc >> _bits) & 0xFF); _acc &= (1 << _bits) - 1 if _bits else 0
 if len(_compressed) != 34756 or hashlib.sha256(_compressed).hexdigest() != "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f": raise RuntimeError("Embedded archive fingerprint mismatch")
 _tar = lzma.decompress(bytes(_compressed))
-with tarfile.open(fileobj=io.BytesIO(_tar), mode="r:") as _tf: _CANONICAL_SOURCE = _tf.extractfile("research/runners/lineum_b4_saturation_localized_l1.py").read()
-if hashlib.sha256(_CANONICAL_SOURCE).hexdigest() != "96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd": raise RuntimeError("Embedded canonical source fingerprint mismatch")
+with tarfile.open(fileobj=io.BytesIO(_tar), mode="r:") as _tf: _CANONICAL_SOURCE = _tf.extractfile("research/runners/lineum_b4_saturation_localized_l1_check.py").read()
+if hashlib.sha256(_CANONICAL_SOURCE).hexdigest() != "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031": raise RuntimeError("Embedded canonical source fingerprint mismatch")
 exec(compile(_CANONICAL_SOURCE, __file__, "exec"), globals(), globals())
