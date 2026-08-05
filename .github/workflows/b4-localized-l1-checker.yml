@@ -1,0 +1,236 @@
+name: B4 Checker Interface Preflight
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/b4-localized-l1-checker.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: b4-localized-l1-checker
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install frozen numerical dependency
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5
+
+      - name: Fetch committed standalone report
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/research/lineum-public-tolog-galactic-shape-b4.md" \
+            --output lineum-public-tolog-galactic-shape-b4.md
+
+      - name: Verify and extract checker interface without invoking checker
+        id: extract
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import io
+          import json
+          import lzma
+          import os
+          import platform
+          import tarfile
+          import numpy as np
+
+          BASE = 0x3400
+          HISTORY_BYTES = 34756
+          HISTORY_SHA = "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f"
+          CHECKER_SHA = "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031"
+          PRIMARY_XZ_BYTES = 19268
+          PRIMARY_XZ_SHA = "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5"
+          PRIMARY_RAW_BYTES = 228809
+          PRIMARY_RAW_SHA = "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d"
+
+          def digest(data):
+              return hashlib.sha256(data).hexdigest()
+
+          def heading_start(text, heading):
+              marker = "\n" + heading + "\n"
+              position = text.rfind(marker)
+              if position < 0:
+                  raise ValueError(f"heading line not found: {heading}")
+              return position + 1
+
+          def text_blocks(segment):
+              lines = segment.splitlines()
+              blocks = []
+              index = 0
+              while index < len(lines):
+                  if lines[index] != "```text":
+                      index += 1
+                      continue
+                  block_end = index + 1
+                  while block_end < len(lines) and lines[block_end] != "```":
+                      block_end += 1
+                  if block_end == len(lines):
+                      raise ValueError("unterminated text block")
+                  blocks.append("\n".join(lines[index + 1:block_end]))
+                  index = block_end + 1
+              return blocks
+
+          def decode_unicode15(payload, expected_bytes):
+              acc = bits = 0
+              output = bytearray()
+              for char in "".join(payload.split()):
+                  value = ord(char) - BASE
+                  if not 0 <= value < (1 << 15):
+                      raise ValueError(f"invalid Unicode15 code point U+{ord(char):04X}")
+                  acc = (acc << 15) | value
+                  bits += 15
+                  while bits >= 8 and len(output) < expected_bytes:
+                      bits -= 8
+                      output.append((acc >> bits) & 0xFF)
+                      acc &= (1 << bits) - 1 if bits else 0
+              if len(output) != expected_bytes:
+                  raise ValueError(f"decoded {len(output)} bytes, expected {expected_bytes}")
+              return bytes(output)
+
+          report_path = Path("lineum-public-tolog-galactic-shape-b4.md")
+          text = report_path.read_text(encoding="utf-8")
+          if "**Version:** 0.10.1  " not in text:
+              raise AssertionError("unexpected report version")
+
+          history_heading = "#### Normalized complete-history archive — XZ plus Unicode15"
+          primary_heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
+
+          history_start = heading_start(text, history_heading)
+          history_end = text.index("\n" + primary_heading + "\n", history_start)
+          history_blocks = text_blocks(text[history_start:history_end])
+          if len(history_blocks) != 1:
+              raise AssertionError(("history text blocks", len(history_blocks)))
+          history_xz = decode_unicode15(history_blocks[0], HISTORY_BYTES)
+          if digest(history_xz) != HISTORY_SHA:
+              raise AssertionError("historical archive hash mismatch")
+          history_tar = lzma.decompress(history_xz)
+          root = Path("lineum-b4-standalone")
+          root.mkdir()
+          with tarfile.open(fileobj=io.BytesIO(history_tar), mode="r:") as archive:
+              archive.extractall(root, filter="data")
+
+          manifest_path = root / "MANIFEST.json"
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          checker_matches = []
+          for relative, expected in manifest["members"].items():
+              member = root / relative
+              actual = digest(member.read_bytes())
+              if actual != expected:
+                  raise AssertionError((relative, actual, expected))
+              if actual == CHECKER_SHA:
+                  checker_matches.append(member)
+          if len(checker_matches) != 1:
+              raise AssertionError(("checker matches", checker_matches))
+          checker = checker_matches[0]
+
+          primary_start = heading_start(text, primary_heading)
+          primary_end = text.index("\n## Environment limitation", primary_start)
+          primary_blocks = text_blocks(text[primary_start:primary_end])
+          if len(primary_blocks) != 2:
+              raise AssertionError(("primary text blocks", len(primary_blocks)))
+          primary_xz = decode_unicode15(primary_blocks[-1], PRIMARY_XZ_BYTES)
+          if digest(primary_xz) != PRIMARY_XZ_SHA:
+              raise AssertionError("primary XZ hash mismatch")
+          primary_raw = lzma.decompress(primary_xz)
+          if len(primary_raw) != PRIMARY_RAW_BYTES or digest(primary_raw) != PRIMARY_RAW_SHA:
+              raise AssertionError("primary JSON receipt mismatch")
+          json.loads(primary_raw)
+          primary_path = Path("b4-l1-primary.json")
+          primary_path.write_bytes(primary_raw)
+
+          receipt = {
+              "phase": "checker_interface_preflight_completed",
+              "scientific_recomputation_invoked": False,
+              "source_commit": os.environ["GITHUB_SHA"],
+              "checker_path": checker.as_posix(),
+              "checker_bytes": checker.stat().st_size,
+              "checker_sha256": digest(checker.read_bytes()),
+              "primary_json_bytes": len(primary_raw),
+              "primary_json_sha256": digest(primary_raw),
+              "history_xz_sha256": digest(history_xz),
+              "python": platform.python_version(),
+              "numpy": np.__version__,
+          }
+          Path("preflight-receipt.json").write_text(
+              json.dumps(receipt, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+          Path("/tmp/checker-path").write_text(checker.as_posix(), encoding="utf-8")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"checker_path={checker.as_posix()}\n")
+          print(json.dumps(receipt, indent=2, sort_keys=True))
+          PY
+
+      - name: Inspect frozen checker source and CLI declarations
+        shell: bash
+        run: |
+          checker="${{ steps.extract.outputs.checker_path }}"
+          python - "$checker" <<'PY'
+          from pathlib import Path
+          import ast
+          import json
+          import sys
+
+          path = Path(sys.argv[1])
+          source = path.read_text(encoding="utf-8")
+          tree = ast.parse(source, filename=str(path))
+          functions = [node.name for node in tree.body if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))]
+          imports = []
+          for node in tree.body:
+              if isinstance(node, ast.Import):
+                  imports.extend(alias.name for alias in node.names)
+              elif isinstance(node, ast.ImportFrom):
+                  imports.append(node.module or "")
+          interesting = []
+          tokens = (
+              "argparse", "sys.argv", "def main", "__main__", "json.load", "json.dump",
+              "Path(", "primary", "output", "checker", "run_all", "compare",
+          )
+          for number, line in enumerate(source.splitlines(), 1):
+              if any(token in line for token in tokens):
+                  interesting.append({"line": number, "text": line})
+          summary = {
+              "path": path.as_posix(),
+              "functions": functions,
+              "imports": imports,
+              "interesting_lines": interesting,
+          }
+          print("CHECKER_INTERFACE_SUMMARY_BEGIN")
+          print(json.dumps(summary, indent=2, sort_keys=True))
+          print("CHECKER_INTERFACE_SUMMARY_END")
+          print("CHECKER_SOURCE_BEGIN")
+          print(source)
+          print("CHECKER_SOURCE_END")
+          PY
+
+      - name: Package read-only preflight material
+        shell: bash
+        run: |
+          mkdir -p preflight
+          cp "${{ steps.extract.outputs.checker_path }}" preflight/checker.py
+          cp b4-l1-primary.json preflight/
+          cp preflight-receipt.json preflight/
+          cp lineum-b4-standalone/MANIFEST.json preflight/
+
+      - name: Upload read-only preflight artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: b4-checker-interface-${{ github.sha }}
+          path: preflight
+          if-no-files-found: error
+          retention-days: 7
