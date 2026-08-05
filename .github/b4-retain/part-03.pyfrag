@@ -1,0 +1,26 @@
+text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
+heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
+start = text.rindex(heading)
+first = text.index("```text", start)
+block = text.index("```text", first + len("```text")) + len("```text")
+end = text.index("```", block)
+compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)
+assert hashlib.sha256(compressed).hexdigest() == EXPECTED_XZ_SHA256
+raw = lzma.decompress(compressed)
+assert len(raw) == EXPECTED_RAW_BYTES and hashlib.sha256(raw).hexdigest() == EXPECTED_RAW_SHA256
+json.loads(raw); Path("b4-l1-primary.json").write_bytes(raw)
+```
+
+```text
+{payload}
+```
+
+'''
+
+report=once(report,'**Status:** active; localized L1 standalone harness frozen before the official rerun  ','**Status:** active; primary localized-L1 result retained; independent verification pending  ')
+report=once(report,'**Version:** 0.9.9  ','**Version:** 0.10.0  ')
+report=once(report,'**Question 2:** `explicitly_stabilized_partial_dissipative_equilibrium_only`  ','**Question 2:** `primary_localized_screen_reproduced_no_full_state_recovery_checker_pending`  ')
+report=once(report,'This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest.','This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, retained primary result, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest. A second lossless XZ+Unicode15 capsule embeds the exact machine-readable primary JSON produced by the official localized-L1 execution.')
+report=once(report,'Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; homogeneous tests show only a partial dissipative `psi` equilibrium, not a full natural attractor; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.','Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; the official primary localized screen reproduced two cap-dependent partial `psi` recoveries and zero full-state recoveries, with independent verification still pending; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.')
+report=once(report,'The checker independently reimplements the spatial update and observables and does not import the runner. No official retained localized-L1 result exists. Earlier uncommitted executions are exploratory and non-evidentiary.','The checker independently reimplements the spatial update and observables and does not import the runner. The official primary localized-L1 result is retained below, but the independent checker has not yet run. Earlier uncommitted executions remain exploratory and non-evidentiary.')
+report=once(report,'## Preserved operational failures\n',section+'## Preserved operational failures\n')
