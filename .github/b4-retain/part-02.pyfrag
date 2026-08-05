@@ -1,0 +1,78 @@
+xz=lzma.compress(raw,format=lzma.FORMAT_XZ,preset=9|lzma.PRESET_EXTREME); payload=encode(xz)
+assert lzma.decompress(decode(payload,len(xz)))==raw
+
+section=f'''## Primary localized-L1 result — independent verification pending
+
+### Frozen implementation and retained execution
+
+The committed standalone runner executed the preregistered `32 x 32` deterministic screen for `5,000` primary and `1,000` recovery updates across seven lanes, LAP4/LAP8, and `phi0 = 0/1`. No physical parameter or primary threshold changed.
+
+```text
+source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
+workflow run / job = 31048211101 / 92448891365
+artifact id = 8947333992
+artifact ZIP SHA-256 = {artifact_sha}
+primary JSON bytes / SHA-256 = {len(raw)} / {primary_sha}
+source report bytes / SHA-256 = {source['report_bytes']} / {source['report_sha256']}
+Python / NumPy = {env['python']} / {env['numpy']}
+platform = {env['platform']}
+frozen harness tests = {tests}
+executed cases = 28 of 28
+```
+
+The exact primary JSON is embedded losslessly later in this document; the workflow artifact is provenance only.
+
+### Reproduced observations
+
+- All 28 cases retained finite states over the declared horizon.
+- Baseline produced two localized `psi` recoveries out of four and zero full-state recoveries. Both partial recoveries began at `phi0 = 1` and held `phi` at the explicit `1,000,000` cap; both `phi0 = 0` cases decayed and failed recovery.
+- Removing explicit `tanh` again produced two partial `psi` recoveries and zero full recoveries. Explicit `tanh` was therefore not individually necessary for those two outcomes under these conditions, but no replacement law was identified.
+- Removing the `phi` cap or all hard guards remained finite during this horizon but produced zero recoveries while `phi` reached `{lanes['no_phi_cap']['max_pre_phi']:.6f}`.
+- Removing linear dissipation produced zero recoveries and a maximum pre-perturbation `abs(psi)` of `{lanes['no_linear_dissipation']['max_pre_abs_psi']:.6f}`.
+- Removing the interaction denominator caused two reset events and zero recoveries.
+- LAP4 and LAP8 differed materially in some metrics, but LAP8 did not uniquely provide full-state stabilization.
+
+```json
+{json.dumps(c,indent=2,sort_keys=True)}
+```
+
+### Evidence boundary
+
+This checkpoint reaches `reproduced`, not `robust_within_tested_domain`. The independent checker has not yet recomputed the result. The run does not establish a natural attractor, a complete `psi`-`phi` energy cycle, an emergent replacement for `tanh`, a uniquely stabilizing LAP8 stencil, a physical interpretation of the cap or denominator, or a terminal limitation of the wider Lineum programme.
+
+'''
+
+capsule=f'''#### Primary localized-L1 machine-readable result — XZ plus Unicode15
+
+```text
+format = lineum-b4-localized-l1-primary-v1
+source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
+raw JSON bytes = {len(raw)}
+raw JSON SHA-256 = {h(raw)}
+XZ bytes = {len(xz)}
+XZ SHA-256 = {h(xz)}
+encoding = Unicode15 (U+3400..U+B3FF; 15 payload bits per code point)
+encoded characters = {len(''.join(payload.split()))}
+```
+
+Extraction using only the Python standard library:
+
+```python
+from pathlib import Path
+import hashlib, json, lzma
+BASE = 0x3400
+EXPECTED_XZ_BYTES = {len(xz)}
+EXPECTED_RAW_BYTES = {len(raw)}
+EXPECTED_XZ_SHA256 = "{h(xz)}"
+EXPECTED_RAW_SHA256 = "{h(raw)}"
+def decode_unicode15(payload, expected_bytes):
+    acc = bits = 0
+    out = bytearray()
+    for char in "".join(payload.split()):
+        value = ord(char) - BASE
+        if not 0 <= value < (1 << 15): raise ValueError("invalid Unicode15 payload")
+        acc = (acc << 15) | value; bits += 15
+        while bits >= 8 and len(out) < expected_bytes:
+            bits -= 8; out.append((acc >> bits) & 0xFF); acc &= (1 << bits) - 1 if bits else 0
+    if len(out) != expected_bytes: raise ValueError("payload length mismatch")
+    return bytes(out)
