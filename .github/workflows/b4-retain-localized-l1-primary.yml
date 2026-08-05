@@ -1,0 +1,39 @@
+name: B4 Retain Localized L1 Primary
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/b4-retain-localized-l1-primary.yml
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: b4-retain-localized-l1-primary
+  cancel-in-progress: false
+
+jobs:
+  retain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Fetch retention script only
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github/b4-retain
+          sparse-checkout-cone-mode: false
+
+      - name: Retain primary result atomically
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat .github/b4-retain/part-*.pyfrag > /tmp/retain.py
+          python -m py_compile /tmp/retain.py
+          python /tmp/retain.py
