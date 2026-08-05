@@ -30,7 +30,6 @@ jobs:
           import json
           import lzma
           import os
-          import re
           import urllib.request
 
           repo = os.environ["GITHUB_REPOSITORY"]
@@ -84,11 +83,21 @@ jobs:
               return bytes(out)
 
           def text_blocks(segment):
-              return re.findall(
-                  r"^```text\n(.*?)\n```$",
-                  segment,
-                  flags=re.MULTILINE | re.DOTALL,
-              )
+              lines = segment.splitlines()
+              blocks = []
+              index = 0
+              while index < len(lines):
+                  if lines[index] != "```text":
+                      index += 1
+                      continue
+                  end = index + 1
+                  while end < len(lines) and lines[end] != "```":
+                      end += 1
+                  if end == len(lines):
+                      raise ValueError("unterminated text block")
+                  blocks.append("\n".join(lines[index + 1:end]))
+                  index = end + 1
+              return blocks
 
           current = api("GET", f"/repos/{repo}/git/ref/heads/develop")["object"]["sha"]
           if current != head:
@@ -138,21 +147,28 @@ jobs:
           new_loader = "\n".join([
               'start = text.rindex(heading)',
               'section_end = text.index("\\n## Environment limitation", start)',
-              'blocks = re.findall(',
-              '    r"^```text\\n(.*?)\\n```$",',
-              '    text[start:section_end],',
-              '    flags=re.MULTILINE | re.DOTALL,',
-              ')',
+              'lines = text[start:section_end].splitlines()',
+              'blocks = []',
+              'index = 0',
+              'while index < len(lines):',
+              '    if lines[index] != "```text":',
+              '        index += 1',
+              '        continue',
+              '    block_end = index + 1',
+              '    while block_end < len(lines) and lines[block_end] != "```":',
+              '        block_end += 1',
+              '    if block_end == len(lines): raise ValueError("unterminated text block")',
+              '    blocks.append("\\n".join(lines[index + 1:block_end]))',
+              '    index = block_end + 1',
               'if len(blocks) != 2: raise ValueError(f"expected two text blocks, found {len(blocks)}")',
               'compressed = decode_unicode15(blocks[-1], EXPECTED_XZ_BYTES)',
           ])
 
           report = replace_once(original, "**Version:** 0.10.0  ", "**Version:** 0.10.1  ")
-          report = replace_once(report, "import hashlib, json, lzma\nBASE = 0x3400", "import hashlib, json, lzma, re\nBASE = 0x3400")
           report = replace_once(report, old_loader, new_loader)
 
           failure = "One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence."
-          failure_note = failure + "\n\nA read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker because the primary-capsule example selected a quoted fence token inside its own code instead of the payload block. The first correction run (`31052012351`, job `92461095095`) stopped before any write because its replacement assumed the wrong Markdown block order. A subsequent workflow revision (`31052264959`) was rejected by YAML validation before any job existed. Both embedded payloads and every scientific value remained unchanged; these were technical reproduction defects and produced no scientific result."
+          failure_note = failure + "\n\nA read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker because the primary-capsule example selected a quoted fence token inside its own code instead of the payload block. The first correction run (`31052012351`, job `92461095095`) stopped before any write because its replacement assumed the wrong Markdown block order. A subsequent workflow revision (`31052264959`) was rejected by YAML validation before any job existed. The next fail-closed run (`31052349446`, job `92462178617`) showed that regex block matching was still ambiguous and stopped before a write. Both embedded payloads and every scientific value remained unchanged; these were technical reproduction defects and produced no scientific result."
           report = replace_once(report, failure, failure_note)
 
           old_next = "Run the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate."
@@ -160,7 +176,7 @@ jobs:
           report = replace_once(report, old_next, new_next)
 
           previous_version = "- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending."
-          new_version = previous_version + "\n- `0.10.1`: corrected only the primary-capsule Markdown fence locator after three fail-closed preflight revisions; recorded all technical failures; preserved the historical and primary embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed."
+          new_version = previous_version + "\n- `0.10.1`: corrected only the primary-capsule Markdown fence locator after four fail-closed preflight revisions; recorded all technical failures; preserved the historical and primary embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed."
           report = replace_once(report, previous_version, new_version)
 
           corrected_history_start = report.rindex(history_heading)
