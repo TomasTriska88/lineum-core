@@ -1,0 +1,26 @@
+report=between(report,'## Preserved operational failures\n','## Exact next action\n','## Preserved operational failures\n\nOne initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence.\n\n')
+report=between(report,'## Exact next action\n','## Standalone extraction\n','## Exact next action\n\nRun the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate.\n\n')
+report=once(report,'## Environment limitation\n',capsule+'## Environment limitation\n')
+report=once(report,'Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. Independent checks reduce but do not erase that mismatch; the localized phase must record its own environment and remains subject to a repository-supported rerun.','Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`. The official localized-L1 primary used Python `3.13.14` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. The exact environment is retained, but the dependency mismatch remains a limitation until a repository-supported rerun is performed; the independent checker is the immediate next gate.')
+old_v='- `0.9.9`: changed only the lossless archive transport from Base85 to Unicode15 after two connector-truncated blob attempts; rejected temporary-branch assembly because branch cleanup was unavailable; recorded both failures; updated fail-closed loaders and reproduction instructions; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.\n'
+report=once(report,old_v,old_v+'- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending.\n')
+
+j=report.rindex(old_heading); a2=report.index('```text',j)+7; b2=report.index('```',a2)
+assert report[a2:b2]==old_payload and 'No official retained localized-L1 result exists' not in report
+assert 'Run exactly one complete primary localized-L1 execution' not in report
+out=report.encode()
+blob=api('POST',f'/repos/{repo}/git/blobs',{'content':base64.b64encode(out).decode(),'encoding':'base64'})['sha']
+tree=api('POST',f'/repos/{repo}/git/trees',{'base_tree':base_tree,'tree':[
+ {'path':report_path,'mode':'100644','type':'blob','sha':blob},
+ {'path':primary_wf,'mode':'100644','type':'blob','sha':None},
+ {'path':self_wf,'mode':'100644','type':'blob','sha':None},
+ *[{'path':p,'mode':'100644','type':'blob','sha':None} for p in parts]]})['sha']
+candidate=api('POST',f'/repos/{repo}/git/commits',{'message':'research: retain B4 localized L1 primary result','tree':tree,'parents':[head]})['sha']
+cmp=api('GET',f'/repos/{repo}/compare/{head}...{candidate}')
+changed={x['filename']:x['status'] for x in cmp['files']}
+expected={report_path:'modified',primary_wf:'removed',self_wf:'removed',**{p:'removed' for p in parts}}
+assert changed==expected and cmp['ahead_by']==1
+assert api('GET',f'/repos/{repo}/git/ref/heads/develop')['object']['sha']==head
+api('PATCH',f'/repos/{repo}/git/refs/heads/develop',{'sha':candidate,'force':False})
+assert api('GET',f'/repos/{repo}/git/ref/heads/develop')['object']['sha']==candidate
+print(json.dumps({'commit':candidate,'report_blob':blob,'report_bytes':len(out),'report_sha256':h(out),'primary_xz_bytes':len(xz),'primary_xz_sha256':h(xz),'changed':changed},indent=2,sort_keys=True))
