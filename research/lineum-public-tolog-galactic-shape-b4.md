@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
 **Status:** active; primary localized-L1 result retained; independent verification pending  
-**Version:** 0.10.0  
+**Version:** 0.10.1  
 **Evidence cutoff:** 2026-08-05  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Scope:** exactly three public comparison questions; no private TOLOG material; no whitepaper change  
@@ -109,9 +109,11 @@ This checkpoint reaches `reproduced`, not `robust_within_tested_domain`. The ind
 
 One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence.
 
+A read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker because the primary-capsule example selected a quoted fence token inside its own code instead of the payload block. The first correction run (`31052012351`, job `92461095095`) stopped before any write because its replacement assumed the wrong Markdown block order. A subsequent workflow revision (`31052264959`) was rejected by YAML validation before any job existed. The next fail-closed run (`31052349446`, job `92462178617`) showed regex block matching remained ambiguous. The line-based run (`31052454245`, job `92462509372`) finally exposed the root cause: the heading search selected the heading string inside its own example code rather than the standalone heading line. Every attempt stopped before a write or checker invocation; both embedded payloads and all scientific values remained unchanged.
+
 ## Exact next action
 
-Run the already frozen independent checker exactly once against the committed primary JSON embedded in this report. Commit the checker output and updated report before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate.
+Verify the corrected report-only primary-capsule extraction and inspect the frozen checker interface without executing the scientific recomputation. Then run the checker exactly once against the committed primary JSON and commit its output before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate.
 
 ## Standalone extraction
 
@@ -410,11 +412,26 @@ def decode_unicode15(payload, expected_bytes):
     return bytes(out)
 text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
 heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
-start = text.rindex(heading)
-first = text.index("```text", start)
-block = text.index("```text", first + len("```text")) + len("```text")
-end = text.index("```", block)
-compressed = decode_unicode15(text[block:end], EXPECTED_XZ_BYTES)
+marker = "\n" + heading + "\n"
+marker_position = text.rfind(marker)
+if marker_position < 0: raise ValueError("heading line not found")
+start = marker_position + 1
+section_end = text.index("\n## Environment limitation", start)
+lines = text[start:section_end].splitlines()
+blocks = []
+index = 0
+while index < len(lines):
+    if lines[index] != "```text":
+        index += 1
+        continue
+    block_end = index + 1
+    while block_end < len(lines) and lines[block_end] != "```":
+        block_end += 1
+    if block_end == len(lines): raise ValueError("unterminated text block")
+    blocks.append("\n".join(lines[index + 1:block_end]))
+    index = block_end + 1
+if len(blocks) != 2: raise ValueError(f"expected two text blocks, found {len(blocks)}")
+compressed = decode_unicode15(blocks[-1], EXPECTED_XZ_BYTES)
 assert hashlib.sha256(compressed).hexdigest() == EXPECTED_XZ_SHA256
 raw = lzma.decompress(compressed)
 assert len(raw) == EXPECTED_RAW_BYTES and hashlib.sha256(raw).hexdigest() == EXPECTED_RAW_SHA256
@@ -547,3 +564,4 @@ Versions `0.1.0` through `0.9.7` are preserved losslessly in the capsule.
 - `0.9.8`: converted the active report into a readable current-control layer plus a lossless embedded `0.9.7` normalized archive; corrected and retained the initial heading-selection packaging failure; updated convenience loaders; revalidated loader-based and report-only execution; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
 - `0.9.9`: changed only the lossless archive transport from Base85 to Unicode15 after two connector-truncated blob attempts; rejected temporary-branch assembly because branch cleanup was unavailable; recorded both failures; updated fail-closed loaders and reproduction instructions; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
 - `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending.
+- `0.10.1`: corrected only the primary-capsule heading and fence locators after five fail-closed preflight revisions; recorded all technical failures; preserved the historical and primary embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed.
