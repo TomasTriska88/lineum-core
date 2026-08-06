@@ -1,65 +1,219 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active; primary localized-L1 result retained; independent verification pending  
-**Version:** 0.10.1  
-**Evidence cutoff:** 2026-08-05  
+**Status:** active authoritative report; spatial localized-L1 primary retained; homogeneous accounting independently verified; spatial independent-checker receipt not yet recovered  
+**Version:** 0.11.0  
+**Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Scope:** exactly three public comparison questions; no private TOLOG material; no whitepaper change  
+**Checkpoint parent:** `0cda026b02a1f1f48813fa433b7bd73003a00a40`  
+**Scope:** exactly three public comparison questions; public TOLOG information only; no private counterpart material; no whitepaper change  
 **Question 1:** `descriptive_target_validated_but_no_autonomous_emergence_shown`  
-**Question 2:** `primary_localized_screen_reproduced_no_full_state_recovery_checker_pending`  
+**Question 2:** `localized_primary_reproduced_no_full_state_recovery_homogeneous_accounting_verified_spatial_checker_receipt_pending`  
 **Question 3:** `no_explicit_scalar_potential_minimum_yet_demonstrated`
 
-## Standalone record architecture
+## Authoritative record and continuity
 
-This one Markdown file is the complete portable research diary. The readable layer states the current questions, verdicts, localized-L1 protocol, retained primary result, failure boundary, reproduction procedure, prohibited conclusions, and exact next action. The embedded normalized XZ+Unicode15 archive contains every historical paragraph, equation, result, failure, and heading from version `0.9.7`, plus the complete canonical runner, independent checker, permanent tests, and a cryptographic manifest. A second lossless XZ+Unicode15 capsule embeds the exact machine-readable primary JSON produced by the official localized-L1 execution.
+This file is the single active scientific report for the continuous public-TOLOG B4 programme. Conventional exchange calibration, the homogeneous Core accounting audit, the localized spatial screen, failures, contradictions, and the exact next gate are kept here rather than in separate active reports.
 
-No repository path, chat, issue, workflow artifact, or private document is required. Normalization changed only packaging: three opaque historical XZ/Base64 payload bodies were replaced inside the archived historical text by manifest references, while their decoded canonical files were stored as independent members in the same archive. No scientific content, equation, parameter, threshold, metric, result, or chronology was removed.
+Version `0.10.1` embedded historical material and machine-readable results as opaque compressed Unicode payloads. Those payloads are no longer part of the active report because current repository rules require ordinary human-readable Markdown and separate plain-text artifacts when artifacts are needed. The exact former report remains immutable in Git as blob `8f08fe0da08751781e13f90496a928f89eae9d56`; historical detail omitted from the active narrative remains recoverable there and in earlier commits. This migration changes the storage form, not any equation, threshold, retained result, or scientific interpretation.
 
-## Plain result and controlling questions
+The accidentally separate report `research/lineum-classical-bright-soliton-reference-preregistration.md` is absent from the current `develop` parent. Its decision-relevant scientific content is consolidated below from historical blob `68b0ae44795124e13b8bccdd743a93b6a4ac3786`. Git history remains the immutable source for its earlier executable envelopes and exact raw bytes.
+
+## Plain result
+
+The current evidence does not show that the present Lineum implementation naturally completes a reciprocal `psi`–`phi` return cycle.
+
+The localized spatial primary kept all 28 declared cases finite over the tested horizon, but produced only two partial `psi` recoveries. Both occurred with seeded `phi` held at the explicit cap, and no case achieved preregistered full-state recovery. Removing the cap or all hard guards remained finite over that horizon but produced no recovery. LAP8 changed some measurements but did not uniquely stabilize the state.
+
+The independently checked homogeneous reduction explains why a rising `psi` alone is not enough: explicit mode transfer moves accounted quantity from `psi` to `phi`, while a separate feedback term can increase `psi` without decreasing `phi`. Dissipation removes quantity without crediting the reservoir, and the cap can discard excess `phi`. In the verified homogeneous full lanes, `psi` recovered while `phi` never decreased and the declared `E + phi` ledger grew by millions. That is apparent component recovery, not demonstrated reciprocal return.
+
+This is a bounded negative result for the tested implementation and observers. It does not falsify spatial Lineum, identify the correct repair, establish the physical meaning of `phi`, or show that nature follows this simulation.
+
+## Controlling questions
 
 1. Can Lineum produce real-galaxy rotation with at least `98%` preregistered held-out agreement from independently defensible source and initial conditions alone, without target leakage, galaxy-specific output fitting, a dark-matter component, or a renamed fitted surrogate?
 2. Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without noise, clipping, caps, resets, or ad hoc damping, including at a declared discrete equivalent of `r -> 0`?
 3. Can the exact `256 x 256` grid integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?
 
-Current bounded answer: the galactic target is characterized but blind emergence is not demonstrated; the official primary localized screen reproduced two cap-dependent partial `psi` recoveries and zero full-state recoveries, with independent verification still pending; scalar-valued auxiliary fields exist but a fixed-potential information-preserving scalar state is not demonstrated. The complete affirmative gates and all prior calculations are inside the embedded archive.
+Current bounded answers:
 
-Every conclusion separates implementation, reproduced observation, cautious interpretation, hypothesis or analogy, and real-physics connection. A green software test validates only its asserted harness property. An independently verified decision-relevant negative stops tuning and opens the project-owner intuition gate before a replacement mechanism is selected.
+- Question 1: the descriptive curve-shape target is characterized, including the earlier SPARC B4 screen, but blind autonomous emergence has not been demonstrated.
+- Question 2: the localized primary did not show full-state recovery; the homogeneous accounting audit independently verifies that apparent `psi` recovery in the reduced current Core map is not reciprocal reservoir return.
+- Question 3: scalar-valued auxiliary fields exist in the implementation, but an explicit fixed-potential, information-preserving scalar state has not been demonstrated.
 
-## Frozen localized-L1 screen for Question 2
+## Evidence separation
+
+### What the current implementation computes
+
+For the audited homogeneous deterministic reduction with uniform fields, `kappa = 1`, `mu = 0`, `delta = 0`, disabled noise, and `dt = 1`, spatial gradients, diffusion, transport, linons, and fluctuations vanish. The surviving scalar map is:
+
+```text
+phi_local = clip(phi, 0, 10)
+s = 0.1 * tanh(0.4 * phi_local)
+q = s * psi / (1 + abs(s * psi) / 10)
+psi <- psi + q                  [feedback; no phi debit]
+psi <- 0.995 * psi              [dissipation; no reservoir credit]
+E_pre = abs(psi)^2
+delta_e = 0.001 * E_pre
+phi <- phi + delta_e            [explicit one-way mode transfer]
+abs(psi) <- sqrt(max(E_pre - delta_e, 0))
+phi <- clip(phi, 0, phi_cap)     [external cap]
+```
+
+The explicit mode-transfer substep approximately conserves the declared `E + phi` ledger. The feedback substep increases `psi` without a paired `phi` debit. Dissipation removes `psi` quantity without crediting `phi`. The cap discards excess `phi`. The surviving multipliers are real and positive and provide no second relative-phase carrier, so this homogeneous scalar reduction cannot instantiate conventional coherent return.
+
+The public configuration exposes a `dissipation_rate`, while the audited implementation snapshot used a literal `0.005` multiplier path. The existing mode-coupling contract test checked a positive finite `phi_gain`; it did not require reverse debit, closed whole-step accounting, recurrence, or full-state return.
+
+### What was reproducibly observed
+
+- The conventional reference ruler and its separately implemented analytic checker agreed with zero mismatches in their declared toy domain.
+- The official localized-L1 primary executed all 28 preregistered cases and retained the observations below.
+- The homogeneous official primary and a separately written scalar checker agreed with zero mismatches.
+- No committed immutable receipt for the localized spatial checker was recovered in this checkpoint. Therefore the localized result remains at `reproduced`, not `robust_within_tested_domain`.
+
+### Cautious interpretation
+
+A component can fall and rise again without the complete state returning and without stored quantity flowing back from the declared reservoir. The current homogeneous evidence identifies unpaired amplification as the source of apparent `psi` recovery in that reduction. The localized result is consistent with the same concern but does not isolate every spatial contribution.
+
+### Hypotheses still open
+
+Spatial gradients, `phi` diffusion, `psi` diffusion, locality, nonlinear interaction, a different energy functional, or a different interpretation of `phi` could change the accounting classification. These possibilities remain hypotheses until separated by frozen interventions.
+
+Three live conceptual alternatives remain:
+
+1. the intended reciprocal mechanism is incomplete and lacks a paired return term;
+2. `phi` is not an energy reservoir but a control, environment, or potential-like field, so “energy returns from `phi`” is the wrong interpretation;
+3. `abs(psi)^2 + phi` is not the appropriate conserved ledger, and the relevant `phi` contribution may be nonlinear or include gradients.
+
+### Connection to known physics
+
+The conventional models below provide calibration vocabulary for coherent recurrence, dissipative relaxation, and one-way accumulation. They do not establish a laboratory, quantum, gravitational, dark-matter, cosmological, consciousness, or ontological connection for Lineum. No real-physics claim is promoted by internal agreement alone.
+
+## Conventional exchange reference ruler
+
+The reference programme was built before interpreting Lineum recovery so that “return” had an external mathematical meaning.
+
+| Lane | Conventional behavior | Discriminator |
+|---|---|---|
+| `R0` | coherent resonant exchange | complete transfer followed by return |
+| `R1` | detuned coherent exchange | recurrence with maximum transfer to `B` of `0.5`, not complete transfer |
+| `R2` | reciprocal rate exchange | bidirectional terms but monotonic equilibration to `0.5 / 0.5`, no recurrence |
+| `R3` | one-way accumulator | conserved total while `B` accumulates, no return |
+| `R4` | uncoupled null | stationary independent components |
+
+The primary and independent analytic checker passed with zero mismatches.
+
+```text
+executable freeze commit prefix = 42fef4
+retained primary commit prefix = d77137
+independent verification commit prefix = f1bd74
+primary JSON SHA-256 = bcfec07204869be1b8d798d1d0f4d20999a38cf132e72cbf4d31de6d0a0c5e98
+checker JSON SHA-256 = 27ba9b699ec2cfaba38fd051fd80eed374ac5a072a6e8897e838c0003e86798f
+```
+
+This ruler establishes that reciprocal terms do not automatically imply coherent return, and conservation does not automatically imply recurrence. A stable localized soliton would likewise not, by itself, prove reservoir return. The reference is a measuring ruler, not a proposed Lineum mechanism.
+
+## Homogeneous Core accounting audit
+
+### Immutable provenance
+
+```text
+executable checkpoint commit = 2fd4554cffcfb65ac30258c76bf41a6022ea5589
+retained-primary commit = 1b7510fed36d6dc82beba65e0ba9e3cdcdf983b1
+historical report blob = 68b0ae44795124e13b8bccdd743a93b6a4ac3786
+primary JSON bytes / SHA-256 = 23054 / fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
+source-audited Core commit = f1bd74ec2cb62d3b8d56bda05f524c6f63ab9775
+lineum_core/math.py blob = bb877021810691223a0eb960a45493a2e351112a
+physics-contract test blob = 7acbb8a1c5ff85a5b24970d216aa2a08111b0941
+primary source SHA-256 = 242b6d05cef2e1026e23cabbcc0bfc0d5499f155f1c72f5229475da9f5b806e9
+checker source SHA-256 = 34a0fd5583609b59d430805b3d0d048cdcdff4e311cadb45cf98f408c4233a5b
+```
+
+### Frozen lanes and criteria
+
+- `C0`: full reduced map with the default cap.
+- `C0b`: full reduced map without the `phi` cap.
+- `C1`: no `phi` feedback.
+- `C2`: explicit mode transfer only.
+- `C3`: feedback plus dissipation without mode transfer, seeded with `phi = 1`.
+- `C4`: dissipation only.
+- `C5`: null lane.
+
+Apparent recovery required `E >= 0.999 * E_initial` after a prior departure. True reciprocal return additionally required at least one `phi` decrease and return of the declared ledger within `1e-6`.
+
+### Official verified results
+
+| Lane | Verified classification | Apparent recovery | True return | Final `E` | Final `phi` | Final ledger |
+|---|---|---:|---:|---:|---:|---:|
+| `C0_full_default_cap` | apparent recovery without reciprocal ledger | step `701` | no | `2900150.257034308` | `1000000.0` | `3900150.257034308` |
+| `C0b_full_cap_free` | apparent recovery without reciprocal ledger | step `701` | no | `2900150.257034308` | `2359502.643825432` | `5259652.90085974` |
+| `C1_no_phi_feedback` | dissipative one-way accumulation | no | no | `2.650267646912908e-10` | `0.0902893517688856` | `0.09028935203391236` |
+| `C2_mode_transfer_only` | one-way conserved transfer | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
+| `C3_phi_feedback_only_seeded` | unpaired feedback source | no | no | `1482693.5590557144` | `1.0` | `1482694.5590557144` |
+| `C4_dissipation_only` | dissipative sink | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
+| `C5_no_terms_null` | stationary null | no | no | `1.0` | `0` | `1.0` |
+
+Additional discriminators:
+
+- Full-lane minimum `E = 0.23353976762645046` occurred at step `350`.
+- `phi_decrease_count = 0`.
+- First default-cap contact occurred at step `1521`, after apparent recovery at step `701`.
+- Cap and cap-free lanes had identical final `psi` energy, proving the cap did not cause their `psi` recovery.
+- Mode-transfer-only ledger drift was `2.5260027403106733e-09`; phase drift was `0`.
+- The feedback-only seeded lane held `phi = 1` while final `E` grew to `1482693.5590557144`.
+
+### Independent checker
+
+The checker was invoked once after the primary was committed and did not import or rerun the primary solver.
+
+```text
+started UTC = 2026-08-06T15:22:30.859836+00:00
+finished UTC = 2026-08-06T15:22:31.517766+00:00
+elapsed seconds = 0.6579304010010674
+return code = 0
+primary input SHA-256 = fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
+checker JSON bytes / SHA-256 = 352 / 81cb30ba92ac3848095582afadde4fb9c24ac6138928e21c1eb3553f6d023adc
+stdout = passed=True mismatches=0
+stderr bytes = 0
+primary rerun = false
+```
+
+The checker reported `passed = true`, `mismatches = []`, `imports_primary = false`, `separate_scalar_replay = true`, `closed_form_dissipation_control = true`, and `active_core_runtime_adapter = false`.
+
+The homogeneous conclusion reaches `robust_within_tested_domain` for the exact deterministic scalar snapshot and declared ledger. It does not reach `mechanistically_supported`, `empirically_connected`, or a verdict on wider spatial Lineum.
+
+## Localized spatial L1 screen
+
+### Frozen question
 
 Can neighbour transport turn the homogeneous partial `psi` equilibrium into a localized perturbation-recovering full state without hard `phi` containment, and does LAP8 materially outperform LAP4?
 
+### Frozen protocol
+
 ```text
-grid = 32 x 32; dt = 1.0
-primary updates = 5000; recovery updates = 1000
-stencils = LAP4, LAP8; initial phi = 0, 1
-kappa = 1; mu = 0; delta = 0; noise = disabled
+grid = 32 x 32
+dt = 1.0
+primary updates = 5000
+recovery updates = 1000
+stencils = LAP4, LAP8
+initial phi = 0, 1
+kappa = 1
+mu = 0
+delta = 0
+noise = disabled
 initial psi = normalized centered Gaussian, peak 1, sigma 3
 lanes = baseline, no hard guards, no linear dissipation, no tanh,
         no denominator, no mode coupling, no phi cap
 total = 28 cases
 ```
 
-Localized `psi` recovery requires no reset/non-finite event, energy error at most `5%`, radial-profile L2 error at most `10%`, half-energy-radius change at most one cell, and final center displacement at most half a cell. Full-state recovery also requires no `phi` cap, `phi` radial-profile L2 error at most `10%`, and the preregistered one-sided late-`phi` slope gate. Absolute slope and non-triviality are secondary only. Stencil comparison uses complete boundedness and recovery status.
+Localized `psi` recovery required no reset or non-finite event, energy error at most `5%`, radial-profile L2 error at most `10%`, half-energy-radius change at most one cell, and final center displacement at most half a cell. Full-state recovery additionally required no `phi` cap, `phi` radial-profile L2 error at most `10%`, and the preregistered one-sided late-`phi` slope gate. Absolute slope and non-triviality were secondary only.
+
+### Provenance
 
 ```text
-canonical runner SHA-256  = 96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd
+canonical runner SHA-256 = 96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd
 canonical checker SHA-256 = 3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031
-canonical test SHA-256    = 95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec
-verification environment  = Python 3.13.5; NumPy 2.3.5; pytest 9.0.2
-loader-based suite         = 9 passed
-archive-only extracted suite = 9 passed
-```
-
-The checker independently reimplements the spatial update and observables and does not import the runner. The official primary localized-L1 result is retained below, but the independent checker has not yet run. Earlier uncommitted executions remain exploratory and non-evidentiary.
-
-## Primary localized-L1 result — independent verification pending
-
-### Frozen implementation and retained execution
-
-The committed standalone runner executed the preregistered `32 x 32` deterministic screen for `5,000` primary and `1,000` recovery updates across seven lanes, LAP4/LAP8, and `phi0 = 0/1`. No physical parameter or primary threshold changed.
-
-```text
+canonical test SHA-256 = 95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec
 source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
 workflow run / job = 31048211101 / 92448891365
 artifact id = 8947333992
@@ -68,18 +222,19 @@ primary JSON bytes / SHA-256 = 228809 / 499dabf444bf442eb9c36927d67a51505166ce42
 source report bytes / SHA-256 = 66581 / 1c0a51921868fc76a7696e2281621c40406d800ce3367f05c032c1283ae5bcd1
 Python / NumPy = 3.13.14 / 2.3.5
 platform = Linux-6.17.0-1020-azure-x86_64-with-glibc2.39
-frozen harness tests = .........                                                                [100%]
-9 passed in 0.19s
+frozen harness tests = 9 passed
 executed cases = 28 of 28
 ```
 
-The exact primary JSON is embedded losslessly later in this document; the workflow artifact is provenance only.
+The workflow artifact is provenance only. The former in-report encoded copy was removed from the active report; exact bytes remain recoverable from the recorded artifact and immutable prior Git blob.
 
 ### Reproduced observations
 
 - All 28 cases retained finite states over the declared horizon.
-- Baseline produced two localized `psi` recoveries out of four and zero full-state recoveries. Both partial recoveries began at `phi0 = 1` and held `phi` at the explicit `1,000,000` cap; both `phi0 = 0` cases decayed and failed recovery.
-- Removing explicit `tanh` again produced two partial `psi` recoveries and zero full recoveries. Explicit `tanh` was therefore not individually necessary for those two outcomes under these conditions, but no replacement law was identified.
+- Baseline produced two localized `psi` recoveries out of four and zero full-state recoveries.
+- Both partial recoveries began at `phi0 = 1` and held `phi` at the explicit `1,000,000` cap.
+- Both `phi0 = 0` baseline cases decayed and failed recovery.
+- Removing explicit `tanh` produced two partial `psi` recoveries and zero full recoveries. Explicit `tanh` was not individually necessary for those outcomes, but no replacement law was identified.
 - Removing the `phi` cap or all hard guards remained finite during this horizon but produced zero recoveries while `phi` reached `12852053.348233`.
 - Removing linear dissipation produced zero recoveries and a maximum pre-perturbation `abs(psi)` of `17981.515115`.
 - Removing the interaction denominator caused two reset events and zero recoveries.
@@ -101,467 +256,125 @@ The exact primary JSON is embedded losslessly later in this document; the workfl
 }
 ```
 
-### Evidence boundary
+### Verification boundary and unresolved receipt
 
-This checkpoint reaches `reproduced`, not `robust_within_tested_domain`. The independent checker has not yet recomputed the result. The run does not establish a natural attractor, a complete `psi`-`phi` energy cycle, an emergent replacement for `tanh`, a uniquely stabilizing LAP8 stencil, a physical interpretation of the cap or denominator, or a terminal limitation of the wider Lineum programme.
+The retained localized primary reaches `reproduced`. A later session summary described the spatial result as independently agreed, but this checkpoint did not recover a committed checker output, immutable checker hash, or complete command receipt proving that execution. That statement is therefore preserved as an unresolved provenance claim, not promoted as evidence.
 
-## Preserved operational failures
+The spatial result remains below `robust_within_tested_domain` until the frozen checker is executed against the committed primary JSON and its plain-text output is committed. No mechanism selection, tuning, or replacement-law promotion may rely on an unretained checker claim.
 
-One initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution and is classified solely as a technical non-result. Detailed connector and packaging chronology remains losslessly preserved in the embedded historical archive and Git history, but is not repeated in the active scientific narrative because it produced no admissible scientific evidence.
+## SPARC B4 descriptive context for Question 1
 
-A read-only checker-interface preflight (`31051766659`, job `92460317601`) verified the historical archive and checker-member hashes, then stopped before invoking the checker because the primary-capsule example selected a quoted fence token inside its own code instead of the payload block. The first correction run (`31052012351`, job `92461095095`) stopped before any write because its replacement assumed the wrong Markdown block order. A subsequent workflow revision (`31052264959`) was rejected by YAML validation before any job existed. The next fail-closed run (`31052349446`, job `92462178617`) showed regex block matching remained ambiguous. The line-based run (`31052454245`, job `92462509372`) finally exposed the root cause: the heading search selected the heading string inside its own example code rather than the standalone heading line. Every attempt stopped before a write or checker invocation; both embedded payloads and all scientific values remained unchanged.
+The earlier public SPARC B4 shape study used 175 galaxies. Of these, 124 had at least 10 observations and 102 were classified as informative for the declared comparison. Within those 102:
 
-## Exact next action
+- `tanh` was the best tested shape in `68`;
+- `tanh` lay within `Delta AIC < 2` in `82`;
+- `14` strongly rejected `tanh`;
+- `32` distinguished the first and second tested shape families;
+- the optimization used approximately `28,000` starts and retained a SPARC source checksum.
 
-Verify the corrected report-only primary-capsule extraction and inspect the frozen checker interface without executing the scientific recomputation. Then run the checker exactly once against the committed primary JSON and commit its output before any mechanism selection, parameter tuning, replacement-law proposal, or owner-intuition gate.
+This supports only a descriptive statement about the tested curve-shape family. It does not show that Lineum generates those curves from independently defensible initial conditions, does not establish a universal `tanh` law, and does not validate TOLOG, dark-matter removal, or a Lineum–TOLOG mathematical bridge.
 
-## Standalone extraction
+## Cross-lane synthesis
 
-Save this file as `lineum-public-tolog-galactic-shape-b4.md`, then run:
+| Question | Supporting evidence | Contradiction or limitation | Current status |
+|---|---|---|---|
+| Galactic shape | broad SPARC descriptive fit comparison | no blind autonomous Lineum generator or held-out mechanism bridge | descriptive target only |
+| Bounded return | 28 localized cases finite; two partial `psi` recoveries | zero full-state recoveries; partial recoveries cap-dependent | unsupported under tested conditions |
+| Reciprocal reservoir cycle | homogeneous mode-transfer lane nearly conserves ledger | full-map recovery occurs with zero `phi` decreases and huge ledger growth | contradicted for audited homogeneous interpretation |
+| LAP8 stabilization | material stencil differences in some metrics | no unique full-state stabilization | not supported |
+| `tanh` necessity | removing `tanh` preserved two partial recoveries | no natural replacement law identified | explicit `tanh` not individually necessary in tested lane |
+| Fixed scalar memory | scalar auxiliary fields exist | no explicit fixed-potential memory and return demonstration | not demonstrated |
+| Real physics | conventional reference supplies terminology | no empirical observable comparison | not connected |
 
-```python
-from pathlib import Path
-import hashlib, io, json, lzma, tarfile
+The localized result and homogeneous audit agree on one narrow warning: `psi` recovery is not an identifying observable for reciprocal return. They do not prove the same complete spatial causal mechanism, because the homogeneous reduction removes the spatial terms that may redistribute or alter the ledger.
 
-BASE = 0x3400
-EXPECTED_ARCHIVE_BYTES = 34756
+## Preserved technical and methodological failures
 
-def decode_unicode15(payload: str, expected_bytes: int) -> bytes:
-    acc = bits = 0
-    out = bytearray()
-    for char in "".join(payload.split()):
-        value = ord(char) - BASE
-        if not 0 <= value < (1 << 15):
-            raise ValueError(f"Invalid Unicode15 code point: U+{ord(char):04X}")
-        acc = (acc << 15) | value
-        bits += 15
-        while bits >= 8 and len(out) < expected_bytes:
-            bits -= 8
-            out.append((acc >> bits) & 0xFF)
-            acc &= (1 << bits) - 1 if bits else 0
-    if len(out) != expected_bytes:
-        raise ValueError(f"Decoded {len(out)} bytes, expected {expected_bytes}")
-    return bytes(out)
+These events produced no admissible new scientific evidence but affect reproducibility and are retained:
 
-capsule = Path("lineum-public-tolog-galactic-shape-b4.md")
-text = capsule.read_text(encoding="utf-8")
-heading = "#### Normalized complete-history archive — XZ plus Unicode15"
-start = text.rindex(heading)
-block = text.index("```text", start) + len("```text")
-end = text.index("```", block)
-compressed = decode_unicode15(text[block:end], EXPECTED_ARCHIVE_BYTES)
-assert hashlib.sha256(compressed).hexdigest() == "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f"
-archive = lzma.decompress(compressed)
-with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as tf:
-    tf.extractall("lineum-b4-standalone")
-manifest = json.loads(Path("lineum-b4-standalone/MANIFEST.json").read_text())
-for path, expected in manifest["members"].items():
-    data = Path("lineum-b4-standalone", path).read_bytes()
-    assert hashlib.sha256(data).hexdigest() == expected
-```
+1. An initial full-repository checkout stalled before archive extraction, harness tests, or scientific execution.
+2. Checker-interface preflight `31051766659` / job `92460317601` selected a heading token inside example code; it stopped before checker invocation or write.
+3. Correction run `31052012351` / job `92461095095` assumed the wrong Markdown block order and stopped before a write.
+4. Workflow revision `31052264959` failed YAML validation before any job existed.
+5. Run `31052349446` / job `92462178617` found regex block matching ambiguous and stopped.
+6. Run `31052454245` / job `92462509372` exposed that heading selection still matched text inside an example rather than the standalone heading.
+7. During the 2026-08-06 to 2026-08-07 readable-report migration, a one-shot attempt to recompute the complete 28-case spatial screen exceeded the available command limit. It is not a retained rerun and changes no scientific status.
+8. The same migration session reported 15 passing local tests and homogeneous replay agreement of approximately `9.779e-9`, but no permanent command transcript or plain-text result artifact was committed with that attempt. Treat this only as an operational note, not as new evidence.
+9. A temporary branch named `codex-rule-fix` was accidentally created during Git Data API discovery. It contained no intended scientific change at creation. Its existence or later cleanup is repository housekeeping, not evidence.
 
-Then run `python -m pytest lineum-b4-standalone/tests/research/test_lineum_b4_saturation_localized_l1.py -q` from a layout where the extracted `research/` and `tests/` directories share one root.
+The former capsule transport repeatedly created extraction ambiguity and connector failures. Current rules now prohibit using compressed or encoded payloads as the active scientific record.
 
-### Archive receipts
+## Environment limitations
 
-```text
-format = lineum-b4-normalized-history-v1
-source report version = 0.9.7
-source report bytes = 92702
-source report SHA-256 = 03546f55c9a73a4292aee750743e2f351b37f7621cb5f6891be2b7a5159f77df
-source report Git blob = add388e787c1d668e341026e7cb3502eaa532e0d
-normalized historical text SHA-256 = e1cc488a7c5e0b20c8f3b5be71cc3c69159ca29c9f6c75f60266588f1f6361cc
-archive bytes = 34756
-archive SHA-256 = 171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f
-encoding = Unicode15 (U+3400..U+B3FF; 15 payload bits per code point)
-encoded characters = 18537
-```
+Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`. The official localized-L1 primary used Python `3.13.14` and NumPy `2.3.5`, while the repository declared NumPy below `2.0`. The exact historical environment is retained, but the mismatch remains a limitation until a repository-supported rerun is completed.
 
-#### Normalized complete-history archive — XZ plus Unicode15
-
-```text
-늛銖㽀㐀嬶軑䀄㐡㒎㐀㐂䃵穧㵟댏㝝㐓堑球㲾韋趿湮눃进ꂕ괓䵋痘葇䪎䜟泆䟊惐豑䓐咙皞逤誛鏦豝簐ꥉ隽喞涅灁駏嚦纉預翍験ꄝ㭩嫛缬ꢁ꼄㗭䱶꾚烝蹛毽㒔篗篌跑狅隇ꡰ臸哙袒䝍䊼菀怞墸慦趡㒢ꎶ穪ꦥ紁玞賾邏沟娿ꤠ釅
-楫绦韓灊㻲惹刌䆇ꖆ㾘䈏正䪣燄缋魁俱䃲繒婧㮁媘耝愹陻㪩揑檮䞞躙嶑뀃壤ꗖ堨넖侊仏ꜵ挆궄爘늁憺㦀鵓皝筅箓捁蛄桔捽냂欿䎆냺歊終釯悚縮皷ꠑ務넯翝蓗嵋鑮类祳貈㪜轵䦍䲷䊭绤禑寲慞硦긓瀚ꮓ갍ꪙ旔㙬溠驟槗䨣觯騝
-䠹洎雃崩ꥯ廗炍銜䥭䠑㮏鏔鮌녫ꐀ㟲扸癈卩窊䇥蜓樭纃㳰孁喩獟褚溾뀐疊㫭聞妥ꆛ踂㐙ꓤ朻赱惫悍㻷轃㓤弁竄䎘赱䨑魉韇嚐ꉆ漋鹖瘗圶幰䐘搹䆍鳁腔瞅僓囿楌㰜喼꾞纆蘷韄甔趁ꌤ㪗㚐畄渙摗镌縦阕薹䡥瓚宏紞猷坺㥫ꀀ擊
-貚汔䒹蔍嬗䳡仙绠㑏厶戒榓늠肓膖贪ꎊ㘧饽ꔚ泌麈ꝸ䏋絲䎪锬鰽㞾嗟鿥㑔㮶达対诀凌僒僨䵉鸏ꘉ茓䚊澚䗖䓜淫姚葁臣諅䚤設䦯ꨓ䈦㡺傟薅鳾杦鵉茪ꥈꋲ侊㥪ꁾ懼矼苌膌龺鍛郂䩷偲愉愼㐲ꚹ盐ꋕ嘗䈾彡瘠撺鸹蠱㬇腵婙嬵ꫵ
-꫇驽덄돛渑娉蚛鞁怰媺晌鲉笷꟬砌䇷㸠谌霳墅蝿瑔꯹鄍嚳愕贾鬇駔陝閲勣낏伕䑝泡鵸ꇠꟌ䶪꯳鱫넠度纴嫑噤羝㬉뉆昑ꢲ燭㠲醨䘰碚赫ꇒ盏鳇姇肜꼒疍ꓥ懞俨䒔䤳勉䭣汅冖囐誘焈ꦨ倶榕烿鱶ꓹ䴵꡵餂ꑲ毿嶵䎤铫ꯁ縵埄薑ꕷ
-厮妙黓袚跌嚈嚊楞俧熈埋갃璙꪿㽧謜眙ꁀ㘘걖虥夂ꍁ犎尝ꖺ䫃鷲雱鞹낈鹨薚鐎磉抵侪꺘兺䦔擷扐釀妫賖닳綏袲殆䎼匝㻝绯脠潳㐬䩁㒯䡖㵨燿ꌙ䷪꟱꭬豧桚楶㐏质成摇篳转ꗦ坘꒞钇籦熩峃莡塨ꤘ滉酄䊴劣ꗗ矄䵊甅䕮ꉰ䣳刅
-蕀涔湄㐀釯䏲䃄蛓觞垼蔠䛪곩鋖㧾梛絼ꄋ琢䄘㵽䦧뀮癜鬷挜䫸薌鳯糭꜍愱ꓕ凑㫚构䓍象镱䡞锟慤厲髩鉩䄦码僐鋇濪牒㡵㝠憼坱剱洜柺蠑勄ꍮ炾冭ꡝ䳬盔䷛搠潬碴蘌晥嶙樬ꮊ捴ꗼ熹돟财䲚孜呬誟秜螺㢘鏑䭈戋岎敻昫隈摲ꉇ
-藍搾庢徻唾礇滓琅编楪燞惑暉蒝襖嗡㮲䨺槝庻樑璧Ꙁ翅泸䅟伕輓㶶嶽嬙经㹭肏돡ꅭ聓懲许ꭚ鍇菰껋꫻揥澟樭腞樹娜穥飩㦂㫧藮鵈㦑蕏䍏铽曗诱嘫阷꾺郾刂餆㼕簵䓥歡귵坦謾錦㧅謸㾮抈唆鞝谑ꀭꛛ吪戅놽ꯖ訓阠굴ꎻ刦蠼黦
-꬇槰薢幹ꘜ낁덽鯕璦彰喐䡀篒뉵居癍鷬䖴勰偯襋ꓺ鬸㧗㝣羗陕陪肎㴝黌慎腷ꈪ麜婁墘諆柯蝫攃櫎斷靼ꏾ灥跸毿嘈눫鿗澂辽妉궹杺醀銗㣒饤仢澺俺缠坐阫媈礲嗹㑩鍦彔ꩴ鈘賺꫙ꫦ䵖嶡籉堬㙈觾䉈꒭陉岹䈩濈怢䒵鮠鈍跒涞菰
-댳蒟戽䀅胍秅槑旵婫赕鞀䬡澳燐㗾㠶詳䢲㻽㡕篷鲅䊤蜵皵鬚琋湅輿霭ꧪ遉嫓凎悎艋䵩撠ꕼ眾駐劲谸ꢨ鄊㦵万梤賠ꮑ帩輥뉇磚䈌ꑅ鼍㥋錷鿀鶍ꖲꂦ㧸血渺韑螯艨於翦鎌䄟ꌴ꯹奕蝃進㨥燛甃㧲篑䀢厄䧱絞匞捴发鿹齮晇蛷铄咹
-朥ꃘ橱鵏㸆奤蝾㡳岩䚭贖녎氰亷꒱㝓㖟嵾嚯꽩曦襑昢䩪悬㳳䋳㚢괣燈锞꜑䊝ꬆ蔳磀鉰鴍嶘睇聰茻䲃걭怖놏掁煺塅攩䦊沫鼳淉ꢄꞡ裯㥉翴覉鼑奣㑸䮢䏊䏖划敞实攩詘㵼愬꯼낚㕰䩫缺潭繂捨譱蚩晖鴗磍覿瞡㚀爉十徳嚣駈掗濺
-蘤髩标焿氟䛱藬澁涓溸傼尧履䜄娼䵝䪊䉷栈䑿锞呪縈仳差ꏲ㷇㗨ꮎ㙚ꕲ跴꾟䞍涔磇剒藬㑱窜縜ꎟ㰈㽞嘌躬ꎺ曍丳ꌜ袎睖ꩲ挸皎阭鉩铒羨蜘饲妯꓂詼㑞蚞ꈓ銎냙㺸会职鱧爈藗꠻桛亜剦巔儌꣈恉䞰鞒棏㡯넃巎꺹报歜辭䴦䉕耄
-繁䨇甽䊳唌莓吡䢬騔浱铎㼛寮隋䖲十俓䕱䒺焷巟㻹鮝倀䖭赝뀷꽟穛仓芜荚꒱蜅냉긣䡞ꤓ䕄꘩ꤙ䚝忩報鼖뉇䛙䇮ꚤ苐僾䄔鉫㤹㟋黏㔫㤟ꕌ烓遽蔌穂鋠㻵ꑿ殥癆縮豺奢君䒛䏵㮹Ꞔ盱椌呫ꭁꌩ皧姈焉䰀羿涏匳驘긾浑椪㝅䞄ꇫ鲒
-憿ꟻ掎꫼翅乲䋒鷣闩瓵曉겆䌲蹬㩨鳗ꞑ濸楙㹸濺杘ꗙ䧧伾褐灊酐烜鼔ꜜ굇ꏚ꿜誡梜㛑ꨲ櫹닾涬普鎭际箼ꉠ抝灯詬䖰傲屜蔵酇꫇馴㢭䛗焕㹩罗綴乿猇棙ꗩꄣꖐ걄鎺궝㜠襍繍䔢㶨捊겕ꡎ鳽芋蝟䮎薤늝贒摿痷駼㢔꠮뉣䃍늃㺵궡
-꥙걍旻費닭㦓圬圸栆䏤眛腟癰䡡卪꼱幤嚆掼鬲筙碡䒥㞜耣砡薒㥙㞐箙䑼鈚꼜踳楆㶱凝䅡ꙴ潒塘澐犻燜㠣鿛䜍꓇刼陎蔪鞍㠈麝㯘罶哑瓌ꢆ䈔壂碧澳澭ꫳ悡ꨬ넋砋ꩂ疽䕣沔䎊㞊䎆開䍯加睥匮樷捋籬ꊏ犫괧ꪢ寂髬嗴㶱托涄醵櫒
-䡘㬙䏇ꔖ撞蕅曈ꋏ蹵襠曬刷糮걀鐌鈨睰꣱㝠湣赇㐲鎏䩳疍陻窛燨譩桊崣姝髡ꆈ䶫誃礌掛芹濵颳裸腩欇霪㿍颮ꠁ闩䛵鸪惚钳鵾眬䀛ꧡ简橄ꁙ偾䅆꧷㾉蕤䣛韘齖訰鳽裰닕㾟揌䮶隝攌埽政㧅硻꥾ꗷ泛嶔鸆铲槅繿꠽鑔腿㚾肻ꭍ莽
-冦㣣訰欻赞䞇始莭蔹櫥订㳓肁艈詰鶟ꮣ天䲲也嶕䋯ꭨ娛擧濲漗搊㟲頴讥縊晾薿椠敗䚺漰ꪆ烵铧轰穑孰ꦷ疭國蕹筚鮄尕鿇衜ꓨ秈鑗哙嘃㛮꺁綝槐閮玓蓱欢硣瘊尢눚ꃒ䋳㭀ꁿ鿍俱旫㑄녂暪䷻鲝轱澒㟇䩊熓諹꣓橯栵崕闠扛抂꾸
-逶剢鋔嗗䔡귱㦕珙鎖焮ꉄ舧冟䌒浶ꛮ箬禿棵莊ꔴ䚃遜蜭㫲躮㹳兔搧㗦嵸苦琀憯ꑝ爤臥軪Ꜽ怃脝鰛櫑睓鸚袂ꁾ䊛䷣길꽼旫値矉㵿늿嚕㬋釺呎뎹뎃粺篖詒孈幋峊荲沜傷锃㱳㼻䷆麞誫慵扜긡馤唗異㦂灌祇Ꜩ艨䕹餤䴑ꠖ缗莹㷐瀫
-ꧢ觨䠚吚䦃碍坥醴欜逛돞彩踋薇产䇊兟뀭䳅꫃器늊ꞧ畮蠙鰜䉥䪪癶拴宦迖軉㡤籴劔族㜰勴躂귏ꆈ㴋冻铤禭铃ꤢ礱狯展縇鐰鑡催謶ꋼ㧠廳㳂ꣻ捵袶煿ꈦ雿春绣鰠㚖蟕榝歜㼈簉㑽楩塷뀢粂黠褗拏摲Ꙕ㲍檨楔忋軈駸䬫㲛끛偡诮
-꬞乮菻ꄏ꾂餋侥㑮龀㒸耲㕺䙉伾ꁣ轖崰艰尠뀾匴䕄䱉㓁㮮䭻堘垊䜤ꤹ䧶粡姒掾ꂹ朘薧㹦岂弴迡鬂꽡ꊍ體ꁼꧫ歰玈꛸嶂諾咔壥撁鍌㓕烜Ꟛꬑ剛菍꓅䕹䑟㔑鑛䭞婊茈䛩䤼霯宒䄜籬橃냇껉脺꒧ꄘ鐁頎漫䬬謲裲鐥猠暔늘挩䶭芆㸡
-睄Ꜭ䵪꼐鈧别瑞偗꘽籞䬲ꞽ聖ꅦ髺琟遻㿃ꀠ戴樼郅璟彬慴勃銂徲駭墈胩蛄蕏检䯷獷瑥岴妵掠曔ꕯ紷꒍鍺符岆灈ꊖ輯䔤捳羵玆꥽꧸媦䜚㨙櫯嗎䣋ꙸ亙㿻꽓浥㜒㭉陨謅惋揟襛ꟕꌄ躁鹞妓㻄埽권渎놙廄䎰礢蘢䱷标箬縭帱喛兤帧
-婶䲯簞ꬤ䛿䋍搼꼃璍馪䁄镯依䁁갑芩掠歿紏껀幥䬬ꥴ勒阧䀧轵巸脥䞢奭祺ꏸ阢底淽腿欝廎磙剈敪䛟雗姍蜣䦅䨗唪㸦鼟罤䕻疻泊謧雂ꀙ閎帇ꂯ罐糃侸굣䘊꒦妁椿䲦瓸ꅙꞒ捀绒驑谤栧旣侲甉鷭盔䮯귏뉖篵棤㕟㛛賊却䤔ꯄ껰䠼
-狪愲꼐蔾縱㶥渔娅ꌽ疝燙Ʇ㝯䁹㣦䩎눤ꎢ겫鮗讄㒡眘敾言ꐸ苙䧬啢缼棩示急㪳喚棑搉槼䀨戭ꐵ籁䩶榚菑ꎺꉨ螋㕋曗ꝫ龔遊過觰浇驾絵㟗䰄糨癱尴蟧㒻箻膋銥꯻馔嫾䆕徵瓨鳴雒鮐ꦐ燽溼ꃺ搬溪냩俹惟鄓急䘜剮痴阂谽唐䣝啐
-晝僥鯳䖞嵫蟯ꝼ溸㛟院놣䎍溊䏘鋕玃淦袰椲鍪䙚棫㓭갌㡤噊鵈厣滞髏衱炋ꕅ꛱课ꦐ唏䝧傝㓽鳄龵䜖藳茴丞㺆䵹謼鱨䃣䄠饶萦荹䤠巗雴箒铿窵鉐趔뉻胻蓜虷坞㓗攳䀶瞡蘯䞤䙔㻎䀪ꮁ䜷砻篣瀖睠璠㖉橏늦漇餻ꦎꚻ䄸員ꎫ渊䪩
-뎅㝑䜗櫛ꪫ墐鲿堐咘澽炬顴買꣢ꏬ攢聦㷈㗕姫ꧥ㥱眛摯翿仗沮雅枸꣪駞䒫ꉁ屧尨蠦䑯䥩卝粻䖓臺裼経樰霏屌钄뎉녒攥缚ꆮ㽟椻ꗩ謓蜥踲꒙恹嫛뇧䙟硠䢃絢潝籠谪氰䝋觓濷鼳炢깔䑍睃眜葇檕恫眫淓㥫枚㭭榦䛪膝惺蠼禷锴涽
-귩㕔䃘铲䌘颜㝾訩喂ꥀ釜拺䕇꼿嶟䥒唘鰼狼歨ꉼ弉聖䅷惻䟁惽䬚郏䍢鐨譜㓴枻碅瀿뇙狆ꅱ惯墬ꔷ罻䅎瘔꓋㶂随鴆䃮腉㙐韆鴆䐺潃㘷訜号祀曾珤貶꾺跸ꌱ䋤捩䷐䗳椨卦橗羬廛烉磆鲌㫶꿁伀撺褗孁䔈最䊩䐬姪鴂㼅䭒簵档找㱙
-䅠㥐樶ꅛ猁骩꜀㚰邧葈䚑ꃚ댦媉蕫鳢䒓䗪賖郃愍搏䎇綢뀒崅欛늣鏶꡼䜧洙㟢鯇稓旀ꂗ栙鄨搁ꍚ莃慽나芄ꦒ䫈䌿䇍褐故ꧭ篱㥗曾㧠驻䍷鉃Ꙍ㮱骭ꞯ諯栓弄Ꙋꩲ錕厘㶝ꈆꠓ灾넠適穅籥䤢怴詝樮鞺鎸賫羛澮䆗㕶構憃禢䔰旺꫈険
-鍔ꅧ烈曔饕徧褭䅶ꦿ穒熻䑨놲겨陘꼐胑欠潴괮㽋捯惠戯捾蒨㺚詳紂脄諎㯧ꢭ닡낇䙿覉穋髇弴椣䙢仺秙瀲承䩫娌㿙映奸炟ꗟ鹺蓒瑌鏒鏜蚋懺煠桄仴恕㻾涆儮㤮樎醺茗끆彇抃概ꘓ郤㮕䲭ꬍ潯珯㧜覜䍲鑈韽啦櫗萵樯袋朐䖎霰꼌
-鮬㹳덦㘈砞桦䔞撽ꌵ峾牚ꢺ瘃癬ꌎ韏薸䟡끨㵺檰竇ꯠ䮲纏㫢踟ꉆ䋴䞙䗰錚䁜桻笡毀与瞄녝撅櫽行疛ꈇ矠貀䓙詛惇罢魽膋ꃺ鉘ꈼ繱㷏繷祬令鲕醰鞶냡錒㰲恳雅㔚甒㮿渒栳蠇虮阍ꂀ钖碍ꅂ愊箋鸓呔耵柼筣㡒궀瓒俱㥉鱢鄋鹔鎴
-ꉅ鷥戽攠铝䉮绺獥냗깅굝鉊䆞䪯䟏景㨛维颢鳥隺箹䮵ꔳ玎鸿牜걙鈆檿摮꼻䴞䨾鼒囎뇔涍겚賏煀꟢䖰阇ꘖ䲛酙悴㖷埾㮸脯氞炵头橐塧灵궷礦抾녪漥㦩酓㐐隬伂孧䤜簹ꉰ㯋谑㞭驔骲貛殳筤壗尭鳞额䶩胔腾㪼幬跌惙遏鲹䣳籥择
-咸ꘜꙓ嘭孿栌㩐氢䏞䤴䊝詯䲴濲潃脮懈腰꾎錉庸唁缆煓杨躓范粋㪆馢䅐部꿘牂㾆逆䕵曉辎䜞坏ꗒ茘撾贆糘㒛樊蹤淡䳁㻅珹㨓Ꙁ䴺諵蛮䠨旎녚譡埓꙽꥞粤꓎鯓꤆ꓕ牉悔㲍膢罭纍㒉㺗䢽寎䞶㯫鎻㱻徍挳㡐譜識椠靔吃琝ꮋ㒝眵
-添䔽ꉆ蜹睬닜㻺浉㙟疺柈Ꙕ璐犆訛惵惧㥷눡忳孄裻嘊㩰碪蒎ꜛ䃏螮鰓黰皳㲴枹糺뀮䣡轪禬踟䏄繧㛫衘番ꅛ䤠蛧兹徝䙐䣡Ꚛ托哇簞䶮奉끈䖙穬堑毊㕖刔鸛盋寘㓶拢猕辖剎魙兄供䅫藺㹮撍ꏩ扵哞䜳賩㿟芔꥚訜ꃂ尡㶁裲䉎馛滭
-㬙寪㙧枌劬仪碏棂㫅眴騠麂곆姴ꈨ貆娉教钸끬贂껻ꆯꎪ理ꢚ郁賱蟐䣢丵澳昗薝圯袪靈㟰鹈ꎇ襀邖㯙擾型겼循㻷漌矏늌䔥逑袜㦐耱兡傐㦂㞩爣滢涉合㠅秤㒆曷岸㥈겱谖㮆䬪낂垲憐儍間呱乃碩堿㠐踦薠俥譜㲮爎膈䔋嵾瘘鮭祯
-豓닶㨦ꦍ窒嚛ꨥ畻扷㩠聸擶鐿祃坺ꄞ猚蠔鋭泸鎽ꉐ厞檏鐱趣Ꙟ䡙揃谅瞔䂄䳊蝜课喨氁䊑鄹嗎穬偏勲栒唦㼀篑僣鿈崶ꍰ㓍檿냌덺鬁䭩꠮罾瀑嗀䱖嗄䯍㱃鼈䖿ꢥ꤭껏愚鍽䕒囦Ꭓ㾙㪾飸녬莳吤燧鰎黣珢薽髆䎆谚虾䁬儨䫓芪㤂댬
-鉀䩤龬䪒䗮振㨊午弩魚懁陴돭騂㵮넻矃怰臯踮缪㪾淮䰗芈ꡀ䯹梸砟糈孟䶭葹㶠䃑鼿慸岵匢鐍繼佽矢蝴蔇辛䜓낑㞅爟匢灦䨲䘌齿議䓋㭈ꃿ釀嗦涿冱겧腈痑剛餝嘱䝤記瘇薪隬鞊賻ꬶ裇䛘魤辛璚屘䢀韐掌ꁰ䆒㺛溵醯谿大全ꈳ䠽
-Ꝺ往厁绫䁄蛅䄝抽梈ꅯ鞬躝䞀悦罭嵈鏓鞞稠讏鸂䬍鸨牂釈郰雟簻緆閡廇惫仏髿검䫫㧎驞鲀蹈㱢鸑꣰籱槈睠槡눐㓯龅腈簓叕籥傡梤絯㐲醯搥嶅濮溙꾏匑洤斒䰖盬䖪忹䢔綣癃猌蒐慱ꢧ단柟杗悟牌莵䊒㰄끴ꁳ羓涬邬跸蹋浃輂憼
-璋霛㔌痙醴糐掟緇㕿䤮㸮㰤擕獪놊䳐峐瑱弊㥊䌕䤩ꔀ蛨噐秷鐔冷霅锘䶨孂柦蝺駱闬赃ꨞ昵翖蚘綤沌끩垔䗢鰍ꜛ㿋窍罔鞒㝦癯骐籪偙坫ꢊꁢ顙盧劗龼Ꞔ镗紮䖍꼧㿨ꅬ㩹鷡蘶긛㶥韺녅窕夶䥑桪鰪䠕逮龪꘏书緙渁鴼㸇緐誫䍯霥
-甊旜羽伕忡ꈀ惘鵞㾕塺ꁲ书橇媘ꀰ䕧桥琧淿沸胍䍎黎懖騇ꇩ勓ꗭ㓻内青柄賍㻪䔥孤撁ꐠꦫ繊杷铚鄺虊绵鋎㬴䀱傻閎Ꝫ齌囇꣨吤㖄曣囨蟻ꡎ깉늄䣝焃驘牽龍蕣肂溠鬀䶳逛儘ꥉ楯塣ꝑ埙楇嵥瘽怕㜃廘ꝶ軅烔衱䎢遞䢄裩鷨阆斻
-十盱楙亴蕃歨崋齼껭傤憠桿煲祢漾ꓠ㕯張䍧䦸㵌뀡謵玶㽸㗄聵屬桭䋕汛ꏷ焣皥鏔妥蟎栝㚳肭藛蟆ꇛ阊녺銃匳䦼锊Ꞌ囘匇걀錻ꮖ弻騫ꇿ贋囉涯熚杬偨䌖ꅐ烄䑭䖄蓿갆䀶齠乨䓎岏昈䞐鳄蹸荎緥婄抚巃簵ꀹ弎誅놽㯳걩嘙蟳䗼硢
-귒䋾災熑ꪟ缔窤臥镪呎粏陉꨷斧㶁䶮鯹㰪꥛䍽竰㸝幠虶瞱渏䉂槰鴫㨋漒ꔕ䂖㟫䒧䚬數㞃巂ꈴ愓饺故ꕚ良霫닷獯朏䟬抛ꈶ淩㛕溰ꊓ計鯵녗碝愖娚潫嗚輬蚨감䮛缃㵝燷叾濕ꃝ陠柉蘹鯫㗩鷹踧剮鯑厯裰瞢隓紫太溯㑥峅纉꽱綩ꤘ
-放锯뎌臏恠䊯灬豺峏盆甪虱驗倠嵮䙦藡孨箅㲧㔦껸ꖒ洐檎席꧳踿荒논柇䏻簻蹿齉熬谞滁鮼堗仢篟ꁿ挝橽榡䇜깜㯔橏啞㭐㘕漄䖦近ꀮ駷無嚝龄牃秂籇馵勉㭬㖵㝼ꮃ歼䰏鴜授籈ꃒ䁃錳狑㩍㔨꤈䘎雞鹉蟠吸祈襍㢢朘萢克鲀聎扜
-㒟㒺硩ꨴ㪨挔聰姚辨閳恮ꢫ睠膐经ꭾ廉㞔伶汲ꁾ愔揮꼲蚂俱奄뇚妵蘙䐞彋恊ꋗ鍮峐蹘栘錫鄊种鑍郌馒㷤乵測饌刊剋䳑葢士赬닻㐑雇껮䲇务䡵葪䘼葅㦩鑘鯼擭朩曋氟膐熵嵕公꟦꟯蛣鋩䕪垒ꖱ眓歚걺ꄅ驱軟鎔萶뎀瀀䙞档㒾斺
-惾淋樬颧蓈䶑沭燿踝䇥ꂑ绵琓樳ꬳ綢吻㶹詥厮ꈴ䋇舼鱎鱌굴鯤妑詖겄ꮇ䄺偧貅荌꼏ꈦ囿骟禷깢䨨棏ꍈ害䳃㽎ꌙ抟㮽ꥢ㝨䝼纪䐅乿嗱㡿鉲掘㖾껇媬꒳锃庼琇귥顔茈癎瞢ꛈ讘敭㝇䨲䎖庖鷂䮽玢媼䕕掲阠哄껀搶ꃎ鰮䐇㐪抍旺ꔡ
-䥄燍䋰掽撄蘙燪艒㱧泈綕菕麍䮴愼궸谝王砒꘭ꀤ㻖꺛念蜤ꠀ讞毷㼒㑩鸆Ꜵ綯欥潇ꣂ䓀橿誛韣铧豯伹腟ꓟ嵋摧䘷薩丂狂㖞꾊挕網織巀腭搐縘濿挘厀蜄酇踅亝荢䋒넿箏謏旝傔ꖘ넭깥畜羍갮댜광荂暔ꢔ䀑荼ꍣ䕴䔰ꔁ扈䊼㱻㕚谰
-ꧨ叒凕鱎㥔㝹摓ꋿ恣貳㞝祲妺錱欯㯜趻蝺依㠮墨睢橴蝴撂噜龚圸螮䊜繵䡫颒䬕觎赔周喅鞤䥵ꔒ恃坆㷽戆㾭埲餉狇屐ꅔ䴻䆢滽闲轘摒䟰驯若鬘㗛讀瑋訯啞访㧋趔㗱놛瘩彶䐭䍕ꍁ鴚蕳馼䜆峝藹輯䢕鬱䷰饪㷝篵䍮ꊵꓲ酤冩ꎖ䣛
-鑘鯂嘠ꛐ氷簅抅꠨鿜꾭觷喃毟樛踈侨ꩿ啙犇柒殌ꡬ纴䷘剟㚅埲㔰蘝愡伄防㰧仐脂箅鍩龊樵矐龬赠璡糪䄒ꢥ慩櫂棺籐咦孇肹砨跂㮣揝㪨锌码具㮆貝䩮乃䘝㝢㯏瑤邩釟㯭盆㙣饰鹏框貆慡鐥錇栁ꋡ觗萴㻚帪㺭很滕鰫媑冭䢜妝㓬
-ꘝ筨駰阔班佒㧱獪淫㝶瘝渺귖ꅌ纒记㢲聓ꕒ냭镝觚瀪莦䐟䶘栥䑗ꃀ妲猂䫧ꊌ㨕뀂蛓䴝銏杜妢䉎镠警ꃪꠗ鋥钡痰깋襏藝枺鈬欚㓛幅䤖ꥲ澧寈猠䅰焌㰴廕䆠䟅낔劵頭劜ꃀ餏猦㷗翣걥蹐慲媏钴谿佐籦깬乇泄髟樛钢妸䊣鹩浯꒸공
-囘ꇥ嚭琋著咘峦ꪇꑭ䣍鼺㸈鈔鰺桸謈㑟䓯ꮩ荺蝚ꖻ滢覸饏耋闍㽺藼厾嚗帪ꯗ酡긆近収哢郈劮它齍贅깽눁㴻䳥稁舺胲鶲ꚦ衭惮䈀噞钜忌摉掘ꉶ釥猻㸨縨躻㵱窇ꯢ璚龅㰦睻袄阃湄阀毹楒䂵習䧤瀣鎻襏ꍮ海擣殺騒冽竽巪㻜狐栆
-卸舎ꁎ夌媿㴁㞪沄螺蠘粮䅖䏫䝃箫蟰槷ꛤ嶱屙璸嶒禯ꇂ銤矌瑿聻釂乖詮䌣峺ꦢ覯鏉䦯铯唪䱃秠從旛ꥹ漮눬习瘕羉狜誰湞孉烚驖岏盼倀鹆느ꦺ蟜矼餛逫ꜞ淋꧒荅喣揹襄恳嘌負閽㕟愩躺觾㢶妲纕ꃙ攙旗顂䒛ꗋ犘ꦲ欅挋㳧䭼趽
-Ꚓ岄塷侺焗縞덅ꚥ㾉ꛊ窜檏Ꝍꕺ匥隡币놛꺋憜꒠㿱狁ꁊꝘ䐨꘦ꯝ걒畇梒陱긛䉘겑뉤蓞ꚃ浖囩䦻䢲꿧黒ꁟ䉲䝬靅纁䙣噿现㙣喁绷茣潥ꌿ㻘蘶渚绑澟蔧檂萖册蚃磹鴪寒墎鸾詍㴸増嫊僕鑦删ꁎ귌胺꿚爫篾羄忈筓糘㘶悱厃ꀤ葞䡐
-圅ꇘ忒䜸捋瞣鹲嗲兆蔁尃끓ꙕ閿捊峍懨萢咷厞瀼䇺薧爪匸蜸凗꣚憁笈鋻괧糎囔柆댿櫯糓㺊晑㖍竏耟绔郧茂磿韲꺠㲒ꧧ芆姿坬妞䣳㑆郃覬毎㬦狅琈蕇錛櫨䈉侙껹ꙣ梼渪竌蕱瀸橭䍤樦㸞釭绉轌毘嗍滋ꩇ㯴䗱韙뎴杯醡瘠꜡狠広
-㬨邭輶㘸閶䱚㢠祃䧴鬙ꈖ㺠ꐂ䀘觛巠瀻顨踿錽砬㖅檤ꏂ䲶Ꜵ㞍鏔呼缈䪣蓉ꍪ蒂售钓㑑嫂녝ꖚ꣭嬏蹻徣㯆赁挲鍤㛭嘹酸磡哋祦新橩澠恹锻㥬凭迩䧁讦ꗏ沛蹇㹫壽瀰蘉厛䤎魯㭧ꗑ냠樺䭱吤ꄰ滼㽇捡䞁䜲閵㗨뎀攂垎黸横鎮遷躐
-㾮跗姍ꪵ迯摤瑪蠋麏辨引嬍ꐚ嬛筚嚿綷嘠婌訙誟䈞濚笩遊锣僦腖껞琺哼䭪毮飜硓嵻濼鞙덎䚉䣚奴겡鴚鐗ꎱꦝ䰚幋胖笝㢴帢球绤ꄒ徹嘒仕麮䛌媢恇魬癚弍颲籢毛䑐踬꥿繜嫂꺜尧䌴暿㙫鑅㺋暤硲穵䬄䦙柼䬖玺閪ꤔ傩窀臱锏譨
-㬟鐦㕍㕩㵨芲拇憹ꛒ䳪䘏瞗和㑄ꐩ凂㠥鎥㼹鹟䂸祏氉곐꘭踆缛矵腎낋辩叹暋ꦺ냛俄ꖸꉐ瞯磲鰗職ꖮ裵向ꋄ齃埜孮嵓䂤僁굒吹愰ꌄ腑㽄眙岦ꤝ괪澒㩎䅓ꬑꋗ艏嶔溹䇙꥕孵饂䊉葇艏臻鲾蛘徸惆䊅ꐰ㕢䚔綖戅髭䩪㨊癷殏ꥐꨀ藜
-댞艶矸鐞蕭艄塩橜胏䗭賝跩焰䴎陯楈ꊿ掦侱ꅟꩅ奊㻂燀䈢蹘儷錻儫枱닰繺㰮灞鰢㸷唸蕾剰楹놖䦃㭚誳劮漷䙿䌝餏Ɤ峤避樾㿣꣫釲憎硬憬趍袣䍾諉닦鄎匇㪋觰臼誠嵔䜤襝渼碠苯盜璓䢸捂궚䔼㹑덺䍎猽䋲㵦䐤硨槤皈锏괏䎚媊
-寎ꎺ傤걭萸萦峄沸넀篒蛸䔜丘䙴箷爩ꓫ㫮藪浒㛩㾴閇验欛늌㿨갿牍鳈扲呉㾎釷꽸㔖余橹躇㵿ꓠꩇ蠖넋軽婳壛䁅蚷鹕䴉腭鹌鸦ꖌ闺琻租衼㽙砪㩪遷㬘ꀢ实画椹蓁꼙犥瘠ꒃ㨎鳻曁䍫饱脻毎眦䑕溤籝䇹剌肠炗敥桂駠椳㮫檼瘆酉
-ꯄ㰿ꦗ䧌篖絡굒此䛕刟㝏魞댧곯䪑㚇鶞棿ꦔ碨脜鞩㟂寿摂斜礋ꐁ궆鶜겪頟蒹䛇䀦育碐讂㸥折沘㑨菫醴漁瞺圔駠ꉡ奦㠞ꑌ会莸旆脞瞊郴䓴碥谦劝ꄖ黥ꖇ葙끅缍닔㣖窦尛㵧馕皤鸍西㑇埉䬱ꠀ糚㔣屗㰃䕉术峵굄䨁鈇ꟳ꽏徼낄钶
-㲅贲璧㦡뀌㚙铽祬댱㑑鹁孽硁鹺婣㘢ꡱ祠黳釷琀聭㢣䀽詺廻镼獨꼺ꨳ㥘夏㔅寸鵉樠骰ꝇ锒萹裨薄䲘浜犧㬮悐諞纕䧅㥹偗欧尙倦駌㝹瘘궡呺芦輴锓㐖髡ꍸ蘬偳撑鶆㮏꘩㼫齸돍碎鈮颼㐲䄶枍趈꽩寋ꡲ䧏咩擔猼棁㝿掹暍讷㨶鬼
-ꕎ㬅뎺ꟹ䌐蒞鑗瘬䍦譔ꚪꗕ蚉䊉䳆㭡睼䢌債䬒捲狿鑀魤毲麦鹕莼꺗偀㨿棸由潝娑꽡遐䎄褶鲍ꒅ墼鼎궈㒳翣꽨锧Ꚙ㡁䮆ꊥꮮ叀㡌嘅凋ꖙ磹筿鉋돟閒蕩ꄞꥈ뇾揞ꀌ詑蕩ꎭ䡱闧禱弊鷪课䡢軧鉀砣ꝗ岘ꇥ돌詯貓ꖂ簾鯭뎙藋嵋蜔뎲
-䠨暘着犃㡻螤㨳䧖䬖檡걱饾哜鞗ꄏꣅ膣䕴萵닎騸穿緉껦管㡑蕛ꑈ懐製墊釲珯箪郪蟥ꃠ噵旉댭굲疨哂閞㖚楲傡鉍幱畫㺏惎倗䢆泹阇鏄Ꜷ滣꾔冃孓謏䞺搅ꐙ뀷濦庈衜骿嘅焭埜Ꟃ懂軡惯䛛摘脊ꕜ嗹ꩨꬎ酗贝舁殚䳉蹮瘿穛圖ꦔ潾
-娙萜㗡槠䦬돉뎧냌蕡녜廙ꜘ芦鑬㰽恂䊓復䉝䒓鋋鬶꿟䰳蟶忭㯟ꙝ追䚍紸紼䤥ꛭ撵橩늕唨嫭鉰鐷돣秭駕놰囷詃涛ꂒ涃ꃼꑶ恹璪䙫㛩䃐㪮涤俋遏ꁾ蟐亱䓔苗俕畩霪䦖跬向甏ꍶ㦮訏堍鬗ꊵ労꿞涑俻桻楻蔯ꥋ蟨憗筂蔾胔ꈰ䄴旼彌
-搪꟥䌉饉舷䏣簸鵪巶鴵裥ꘂ庬袊壬琬肇坥䘽訛䎭厠꬏䣅捥慐䶴䚓梾㔿蚔ꐟ曢냀簛醇ꅚ彨鰬䢗ꁚ暧䤝铀ꄣ凖鍐蛰瀴篳ꔡ㶑䦑㖃㽒㕞骂羋꼛㤿鷨䋱끹뎕㳐ꛂ뇨㵨邧八盷㵊㵫容翏鑢杭ꡫ䓏꺦祃筦筽霣鮔榲褠䢤跅鉨锫嵟㖕㙍瑶䂱
-毨겆㚃돋萏Ꚍ貿吋筈䂨熙晖蹀栁茓뎎ꕖ鯥꘤頯囸炻껜籇酄嗠貧䔤馁깊榤㷿幸煾䛣仜덯ꞡ轉耙ꏾ㓗偂粎㹉㭷汕暼霻㯇㺙頶鼀뎩侒援瘫䖊穈莣勿舏讝郲䀀鑑鼓渼潈犽㹽単鱛觨纍殸䘣ꮢ玹ꏓꪌ銷榛鴟盜庾硅邸炐樆뇥ꬵ儯霽ꅽ갼
-逅簆ꀰ取鄈䴾沷顚ꡌ瘸驝ꭄ咱궞魿趣华扴㬧꾒姭迿諎爮羈蟣䱂櫆豷㗄嶹广駻㶆꼻淀꘶欝ꯟ遈ꭃ躕蛿ꁪ曰虽뇵鳅趥䆏胱赼䁛榁㧃苁돑㞍弗蝓㑪놦刪枱藍澀哴妗ꇷ눶燓贜瞬㰬䕚政䕏檚䖗䐤椃䉓㖐ꭣ闏꜉끇ꦐ㰒馭㦻雧鱠ꉗ炳巃
-跹꯮ꭝ诐左暞㻠遟砯鹺广ꄫ䡌賢甛㟋牛㼏澱䦓楐籒筓䧮廆䙟徜域ꁾ螉㑟緣讔ꯋꈡ菅掾嗪嗒際䖪䂺砒躹扎明껟귙㻽㻠ꛋ訚酩飰卬翍鐺琒艃괧ꏻ귺皋壨ꭽ巍䃞䰫ꏬ沋辞꛼ꇱ냚檭到꺲姟爡紤姛鷴괝䩰靭櫹껝눚昖拧䆳飆灔ꓓ珄槳
-寃ꝴ焗疽慝䓵韼蘱㢶熐臰县ꛖ灠娡黄表㐈肚蒫㦒協駑檝褜뉩뀊䵚磣礗㼋ꔤꝷ꥗睶遪㣰ꂝ膸ꥳ嘑嗍棴ꠡ欗毕硴屻毸笑卝ꢗ刃㧎嬙湇諷ꃹ晈偩庺翪㸼ꌻ头摼ꊥ䪖ꗦ羳꿼烚惆䅵詄蕜枭䗔擱㘗炀ꋕ綃䡚䝎䱰漊歚呍八澘輸摞藱荢㒐
-끣ꄲ㦪ꦃ猀僿闚指諂跋凱噼꯿ꓹ궞颚軰谯勯㒬迴楗꫻䢏䁫Ꝕ妋䁽黅荈繝豉㳛䩙ꉄꞯ埘货崔鄹ꀯꗣ귝䉡䨇ꔑ舝䔓郁鑞錐揪詢㮒㘞詮급濠悩䰺縒鹵賜踒廀䧊棜笑窉낸倥溲檓㿧ꝺ剤䦓䔰䢧匪ꕠꞦ雳䛱沒䌑墴讁辁貜罀鏝㸷㖈鲌㕂
-熅镾柡鈄ꜰ柕孮聇澍鱠ꆨ镇ꯃ弙紀燳潢䢐阓褁忡㲬끅㑢鐽吷꣍鞥掳墛㫞䙹瑶媖釺ꄜ逳䭖肙䎬湺殢伕獢㥟䦌艟髽邖㝆䔙旙鈂蜷皢团鑞妒ꒉ很鸪㱆埗黁䠭毕䩣協㻶䯙舩楏壆韕嗹轻機ꃖ䰩唄闉帜꯴垬壑䀋ꮁ仔葦树搄ꦼ䯹裗㽇賒
-匀环䳮ꎉ꫓值ꧤ筽妘깁升嵓ꙏ墴㕋籿愍胊끷㜩㶩䃢恉梥獻㶘ꗐ㿫夲꼲㺔喖ꍠ䫚䒗芜䆫疧哮㭷菘귖郎疏閶ꍒ粐ꨍ妻蝁䩚秶觵汴集蔗褋ꝸ佇곞耪颍疛俹䅨劒惻焨稸懙諥㧬厠揼檲韭ꚬ댃斢ꎊ巭㑣㵾椹敒偸ꆅ镰뇼蠴鄻碇謒麋ꮃ귰
-矰等唃꼶㼁帅袣庘답崐臎洏䶩碽걾紨鰒䍶凭㕹陸尤翭衒䜫秽嗱꿞䔝鑈籼厑赕뉺䎇雯꡵ꊘ揫煥馒眠赈芭冓抂湲艈皾錚ꁋ綶ꔤ暻剬厘詈耯眕坉筿槾肮斎珂誠掜鴘꾽䜅鑅䰸圈䥃䍕截䢾㡭꼅繋短揞䪆䑺荸恩㲯건较㧿ꪆ埁涂䒢㢵㦋
-徏唇鲗ꓻ皼攧䳩俽逗㺯鈔鎣橳ꇜ匹镫겟꟤꿳궩껅胐榴晎긽䏧盪雎㰜㢘鄺놪늵鵸璬ꨚ銆畅㟝炚组ꝱ赃沱鬪儩㡡궣镩꾗嫹奐擛绾ꍄ嵀渒㨋蚎䓠地璭㠿悍悜洉輻鵡簿蛿衵戴但髐㵤鲩崓胤陰谇뉋惫皲拼铪錜标ꏉ問婘蚳麩旤䍖㦓鳇
-琸妵镆ꥪ璞꼧鳢敷ꏍ鏩㼚錕鱥ꍤ걏䛯毒䦼婔砆琈䒬類ꛛ莬蟄댪礕堠戇逮䦌ꏓꔩꢅ糠莥ꎘ祲肻ꓖ鐣盘㔁䜒깪鉒龲纊絼揳娤癒꬀녾겸锼阒ꐐ辞悭㳡ꨙ衕늎祲닪轱邒䵲怺繈녓豾䌘榆ꩧ幽桎羈麤台恃桊捠ꍜ䇤抃ꕗ焤䙢㩇䅳燶慴檒
-喩洽껤荨㖕뉍㱟礱萦掿盯宛烶갾摮撖鎕䀮連侙贳筞苳㤐㜱岿飸嬢鐑喭ꅺ离旆厩躊刚蛢礽깤坽適滋侦噖邽嗯辍㭺豨䅲ꊄ正㱺蒺戏蘨箉ꉀ닭棓꺴敉輋㾟㽈磃㾌新䚙浆荟㨥削宷㮆帺杆槽㢭酸䠀㖦㻺鐎洀䔡捛詧ꆌꕽ㨔穇文犀僈貦
-䈠竻ꇍ䦛鸃䎱雎弉䙏䮯䞱尌翍幒㯧㹞鱟憋ꪔ꙰鴓毬䄃輑愛눢犨ꨜ鈅葑ꧨ嘗㫣絇蒵ꖦ翓霢닡髌霵唪饖瀧砑恸㛀緹꾆漺騃顺猁䔌ꀥ湿扺괟纯䦯塲㹢棔鯋戽栏膡姾電㤟颁䳻ꜯ婵㥸긄뉸哼髶佂縚靛慍禉裘焀畹閧䗼径飨斃ꂎ㨞畃枧
-臠庤ꪘ渆籋尉㿔偙樮儧汩棡庼泯怸駞끧늙㕜䁱䔃䎌倒㗋梭鱥橹腑㖤囆踄夂祀㢨䭉煽ꊭ䯴蟠聛鶙菔趧偾Ɜꮃ订座吒矾覾䣒㾪碟凲氌阣嘃罞瘨䎲깼椎㼝傴궵泖負馟絶䔔鼇镕ꇧ擔ꖆ榼盇㔦蒯酙搫戰䡶汉廜꼫漟㾉詣釄䴄岆薻矏䅎
-扦㡲갍眕鑊㺚鼞煈忬茦犸䵪䃣䰔㞼곌餥壳噧㗼㑕䗝岌ꕗ膪頤䑔䌳忞놌牮疆婚綺譕溝酢胠涋宵磜柮猐껞鐲胲巑Ꞽ箳鄵鉻ꏲ壆窗欕祍婂掄ꄺ뉶鷗㝧惔䛭帳儒伳檘柅㼨軑鱲輙鳾槰㭑裾塕赙搮碫놙䘯䝊靈凗䁌訛墈감佽ꓭ䓏觩䖾㯋
-虏嚁꧉稂괇繇崋鳳䵳ꧠ䨽䟺釈꫿碊嬣指襭巾ꩡ墟徬䥔穄䠽鰠叿揉䥤検꼵ꛈ䜓塸곛砎齊酃覐嶅庄梘䈜躐椺䛱鷙던陝걼夃苘䭛裙꾵ꃾ䄙掑凵皮罳㑯籷赤ꋥ苪㝎闰爮所攝㝊㲅躎砢硚䨞貓Ꚛ鸉倛檡괍鵏焈ꕬꀑ帘䔋㺅䠰仴韊ꥉ撫귴
-餭ꁧ櫪粣睂遇隵蟛糷侠㼖惦鮽㐱蜂茉獄炵乾늅돻装響慹塒摽뎲姣鈞仓鱔Ꚙꨪ盻瞹㢦眈瀚榣鑛鎴跊矴尃鵜漠壂䝎攔䜸껂誅殒鸔菄扏閏聽㖓佱祼깈墚膸늫藙闪影꫈甥뎇㺫夺橶熮揯益絉庫鼌藏닻蝹綴㳯龽舂㼔鰁㵘继浽韗禹咄篽
-䝸週ꂏ䙧冩赸㞸駉蔀翊儖䮅ꟽ巉葒㨂絳轔帥爷诘镻佇綽仇㰳덧굤䷢娖錖溓臮䔴囅愬镁乿玍玚帗桯儭峚ꚫ꡶㠃䂋䟿䕿旑絗澀宬鞺ꑒ妌圖榝ꖡ깿发넂彙댞媴嫽깛岲害䙸ꁸ换縔䧿迟磑龝駯굷峐냍鄗䘺塕犩埱罫鲑嚰䊰瑾旴Ꝝ媀熕
-薄눚唾ꥀ倽곅负䋰㰐䷸㵺霥蟏尥蓥㻉䋌斳遳殐陿揉䣗袺耝㓔꥿匜弻祐齮覥鹎綰虡湆燅焨魵稄崄㓘倶䮳䉹䮂逊㡈僬紎ꓣ歪ꪦꞆ睨ꥭ虲娍꯸庄껐㧱徶䁈誖岬궘鈃鮬鼀隻枬发Ꙃ翻髝因㕌䃎馚菂翉㼒瀠騮뉙堙鴺尨瑖㧀煻恖鸎咗䴙
-笠㩭瞫䐿釧毱꩸ꋊ甾異鶖蟇㿭寵늴胗璼䎵ꈑ啢汛艢肨㔚냽锵议㖱轹鷎葇諊䷯灳泑肺硂弉諴䙩ꖩ㟛鈁鿂麆錓鹵芶揑汃糩꾿淀揜褊橆饱꿳彳눐覡䆾聍ꄰ꽎檑괺擣桑锷銊䡜吤錹ꫮꛙ哗㓇駟䄰ꊛ㛬뇀嬆꡽咋䦕抒扬橋岞賏ꉽ褦輭烐
-䉧ꇳ䘮泬ꈦ昒냖研䫘눭偢ꬷ棙䪓䮝茾ꐝ蠎砡籪ꑵ蚹䇿냀立授鴧괘鉲ꉤ瓔鯞塩绦倍걊鼕钊缤慲鴘㻆㒲귘㸅哊谅貀饋댷㒧䅒觕䝬㷠덌徾淥䀰䫦ꬖ冏偲㼉꾃鯋嚫紣㕲鶠鼶棄諬䣑䇼㲈䥽賁噿㷂㮸권嚟糣輸譁簓埓啄댹蟊貧㺳臟꽬䶟
-鷔㝔諲끄㶑㴊䂎姑䆹䅬仕庄牿䝹襧紲淓喯궧禋䧮㸠粧繋嚼ꋴ痲束ꈈ䣎鬶遍䲱緹怣綨瘳鳖晀雗厑榃銚淛ꎔ緗姎ꡘ評譆蔓魽于낆ꣂ篻苜劑鯂妋萴漡耘䀅礇娑擧獠ꡆ䗕榸欯珲帟瞺䭏氨䇚树跱㥣隢䦕殰靟宎紡淽権꽴鞤꟟尯敘䚾牢
-豨吿㗝颁꽗胦䷌粨柩隃衽侥蕉ꀵ귫珶茴ꨮ鐰ꦒ稻娆函㺩꺡圛鮎䃨兔嬢狳꿦勎纙ꌂ蟉爫鴕䤍猧鷨㧆忐睍꼩湀ꚅ欣䦦喸ꕢ㻾镛恎酂掽괐淁ꬹ烫꒹귰究禊䡝蠾䐢ꐛ雙證徍㖰㽔嘯鈀댂귶끔峚膨驍隨愘翈Ꙥ䂮獢鴆覼氄넅鬒耇ꄊ熪搸
-㢴淝꾖䕢㬎婆黁颒螏縜鲳傍塚勖늗꘸䪲蟽婢ꏅ꽺佻㸠䶜ꅬ涗父㨗窆弖鄠ꀌ讓뉛갿袒ꙿ篖㺵㯡ꝷ醢뎒놺碕灏㦜鬻醭錇ꍎ诬灗ꐚꊦ簎劁料交賄毅覉声䅑䂩ꇩ㾵跠蟏동鳸粼涁薢끩臏逾咉餫馧勤聇蔳牏懨毀㭬箑苻ꄿ赩尽搄荸矊㨡
-騵琲ꈧ㞣莳䟁䣝뀮紀꜄꘺鷺火䬍梚罟ꄎ吕ꄞ睞彩꛾껒朞㢲䊽毊裀䲚䃿䚃ꃗꁳꡉ광ꞥꛎ㪄领靖鴖䠠笮槐达ꍢ昁襅脧欺钛廯䒺ꮱ髰粂絪瓫艨晏愣梭ꐀ毂較袮苝艛覨刢㫸非䔱韇ꀌꄱ聴熨菷旐갎㜕憯柼災䃾瓑䢉匋傀恇匂ꛖ꺏㻵㒾
-廒덒델米㯮僚抷돴唗㮟㷱꼙攒瀣璊ꃐ꞊뉁鎖眭䰪꿫龞䟎ꍄ㿒겧吘爚婠慚彫ꪯꬆ䢽牼幦뎏哇箎取걈迭罖鮯鱳갋佧ꍿ㺵魇Ꜳ錓Ꝕ寰䩼罐癒鏴紳憆㧝泌酭活과䖭狩㡃ꀙ撾梹好飿囂㻂罓飔邕曉朠笳躸屽騜ꇐ憈ꌚ鷰和鿫껊裁鞷跍豟
-艖ꈮ鶀㷹麜谖瀗趌Ꜵ䩇䪌꯵ꃠ坛靊褡谾蕳ꐒ砯泀䟵䍄裂酜麼螝ꭶ鋗䙯砷鰬蓉檞縸訫蝠䚀㰪䀛粽攱㷺虦䷈䦆印運琺㪤澝暕넽奺긆麂赹㓂农䞧㝁嶘籫谠㛭ꇍ惈慩㛓䑂䯊㕶渓㖥惾銾ꖥ聈猂ꣅ蛰㮁臾傝䵘䎝鬖吹ꘅ倯赱隁朻廁折峧
-聿䏮峞莺阋䒙垘焖㯕穞鰫겞沸掚㟼帖潨㠀壳停檓庁付ꘋ陷緳舸楦꭮嬻ꯏ葻䯡抠甬귳板垆䡃ꭝ搧涤領昔浼甯넼鵃誹癿淘曏㣗ꩳ铋溈阨领幨垺괄䉂눌凜ꤦ皇奱냃妰㼪鿊㶯嗘㣗䤻諚糛끸䧻䤡䭇䲬냹遪匌ꀂ㤖逄僲睓芌ꯑ釚噰褝饀
-ꌯ跙꣐睇鄞飸䆋嚧魿낼畐斢艁殡忊斿囔䥘恒魶ꄫ丷籭葵䐫齷臟鋘慸遯靵蜨嵠聾前냬焽屒桤뇞䪞楸蛆憺Ꜣ志攜ꂕ䱘欑㔊餲迕溝忁傢訁㩕掷褑䊱瀯烕媮㾵槤啒ꕙ鸫谝귌厫忧食謨䚔斒仰爝嵀碆蝃讆正돸肺蔁幷矃骀鄄迶꿢脙浬蛴
-言楋䡁㻂萦赂䊉擪䮪郛僼꽮ꅒ䋚稃欤鈨蹆鏺玠꺶諳矛暖乊酛暢ꦟ標浶篌䤮갬劓㜵阌饠苛䠇䨠꠭䑫迪丨腇㱏帍洠ꬖ聸㦴䚸爞涏꘭圱匎덧咧帯欱觌泰腑厽拵䳭脁䥊괞杠火乘萊㣎皇㟴煸岛ꉼ䫟忯蕩贼ꊠ恧䒜㳒던聭돼弹닢叩餜楸
-艅䎊耱㰪䞴聵磃移垲肜脪깷歵ꃋ罐ꢬ赘仔㸔墡鎡啗秿㿌崔嵨ꎋ㶦銢艼꿁䌂㛘狟账䩰騚儡沏蔸贔鿃갦龙ꅮ㥀㭄哰岙鷨哮䥁針趰瀢ꌽ咛䡭晳匘選肰䭁ꖍ㞀瞙埾汧䌹販ꦲ湠㗥呩ꥨ痊錠櫾㕆忱踼ꊞ衆鵖㑒㘇兰㩓鵓濖喤䊍哥䇉㕒넂
-꘰秦ꏚꘁ達껣饵炵檴䡫䮅ꛍ㐁䟎蕒肯蹶ꁰ润蝘款ꋡ秐舜肌尋骢脼讳纎挢㞳꣡涭㣑㭿櫀莅䐴蔹䭜䄜嗬㻳匔癖ꅽ깛擯㫁办㝣欒懑䜇聺毷늛骿꥗畒殠뇊逽甲譵众댄鳬꣱挋獧尷瘛㤈貆躾瀹譯䞢䩑ꃰ㸑䭐㭱褍㿇莌谵꺞嗻幼齫ꤔ誹䡛
-鄃侓䜄䪎碶弹䖺鞦鉒뎣崻꬗薛耹囒嵫ꤷ觞㨲堋翂㢂끭茫䷛培散案榳Ʞ丌阘袓䅂廃낧䴤芘뉧㔿摺斀净时㣌罗嬟鐸籲貣彸镄饔刴糌祕ꤶ榓慹䊤ꤶ檅兎偼荗軱壾꽄ꢥ慯卯㵴낗穽鯲珺痦唆乧乍痷鎰僥箫ꊤ㘱炕鍧㗙锈鈒埖理㑶遟鍕
-彤㽷稽䀬盤儚䈇蕵暣菧蚆䪾낾傑啩ꬲ墏步髕訮猃肿捾㣫疛薉葃繡㱴镄冷輮蔧俅깼꾞嫂糞飳氬ꤚ寣僑欪椆屲傱眍荿褨㥨醎狲瞷覓熐綂㭷䦹诗殄넞铃逇㓨껯㒊䓖꼀谡磇臄製ꄾ碢㷌禱㱾ꤌ謝姬ꃗ輀㱏據鈵辘縼㾒嬿霩蹍덫匜粨䬧
-巗羟䈖䜈䌇嶬㛧扙鞕裱娩꽒莶繚紒梏共棇褶㬊㒆薤䅮弒㱆鋈喘㮩哬䘖汉㠽꣼덎䌿ꋏ脭㕍㩦詫寽粕瞕ꀶ糙䗪뇞ꎤ僂蕹꟟牊㬼踞锬溅㯘虋㑁냙霽僿乧ꝏ踥굇㠣䚗蔵ꑆ鰇궍雯㭤硠吞돉雊恋㻊嗼瘄榐铀굯鲾軋㵄㥖㻈猕嵾鵭吠䑊廥
-壉煀贊㕛盨牦悞挟䚚幰紖瑖竸耣徎粽橛菅髩㥺㽌韵䍕酓佇闱嚚鋢鄔䮣埙飾꾮監嶸㘖盅闉覴诊烞㧙疐扦換ꍪ釆碭楒䝸䖨ꔂꋗ阿劝긩眻㺪仼魶槖躣竾㑜科㔊堳鰇댹꽹䒤嚃䅰蹯ꌧ姂䀁蹊艔菣ꢜ譂㔔猰疎袖鈵䨆䪢꾘伡낳站攐閚茳
-䳮蔈鉶乆塔饙撣㺭瓉皍覀瓯㣇鹅縌麺㛣㙋艙뀀擾虻漉꜌钫輗꼉翃踤蓹洸鿨羸뎴䔺阺俸꽝䘧㜶䌩齪藧燷統劢稂굪㒻䬿狗䔞嬞哖謎倱㳱鍝䀝靶窫譙叾飪腺㕪谢飏襻꜆廅㰾峨꟧僙郿搗僿ꛏ蜙㙋溆걜绌叀頮谯ꗞ鳋䫹蒞鸾㚤餼鐋ꁏ
-㭧䧞㱓깔觞鈜䛗倉峴䏾䓯掩笳犬鵚獻饶䟲庒蓤ꛪ騉䥘澖烥㛶窸襦飽蜫轸緲蕷熦嘻暰傀赗識沽羏闠ꧭ伤姚㷃ꀅ鷼䗋䣶栟踣輪叅餹荶约咕櫣䊨䔊偺肇䡁냁凃燢龁衁褶뎛䬣爢꫱墶养碂岒篺黩氖긣熌猣絁㮻秹鑺ꠖ뉕䁰䥗㐉蕱㻨护
-诧鰠䝞璭抹紃楫觋ꅌ炝撆脃稍駽決拉꟥草硔赇宫ꬋ䝨掋놑輊槬恱蘋嫴꺲毶妍겏钠䀩嶙循陚䱨呠巧ꈏ낗굦彵礅擦亁䁭濄跀蒜㺞闎籬㶭㬂濡㫪掐뎟僘掼㔝꩖ꌵ䜱糭䒡枹肯慻陯ꪬ栋䃥移滵긝㑓齗㸣咡僘눢䰌呿咣驩㶗扲껛镂㺓䍲
-䊰點坱鎹ꆨ䆨弸걜惿赹鹉뉘锐鷆镢䠚䬧脎껗䉂䃢㡔䢰鞕採嫀꠨鼥鳎鐟䦕㲁냱㺗灤꿶郉鮵꥓䣎攛趋咹栟䒢郬媤嚛ꃳ樦吤崙謓牁巤㺛钇鍁拑泚㺑织刺桤䃹迒䜖䤈抛篏繛ꓫ踱螶种㸂肼禹䉅ꖅ泾禴钬斩儈鄜陿ꍢ鐸ꂬ䃝稼唲㤴乭簬
-獈殒喛螂㰋㚺䊙釃自辡㟜Ꞹ绂栘紣幵ꯖ䘭㹵惒ꑁ韏钩㛡较窽栌啇婑䍑埱伌雮皵蠔蔓댱殄肳눢殽ꍮꋚ萬㣠䏆ꮶ鞽㛜䐚鄑䍌䝍積絆咋ꘒ輄剗顽箾峉䦀㖂衮㭺娝꓂輆㦒萱晗墖忯孤亏ꡖ胠湹ꛃ褯闿柿㦝聑蝥贕殜ꅴ琑鷨桋䱟粈歁舊
-㴅吩䎛䲄櫖枋㒫氜災疤謀螇鄞㖀䟖㴨㣬撝䥠㫧䆀鯛鲋㦇鯿舷偠辝녊涷莫㬼㫽绍娉䤶塕挻钪瓵鱉䎁䱽岻隓는菸蘲㓾既Ꙅ䓍罻豥傮畘濃ꄁ歁泵錄辇嵈䠡糞柆㦛湦薩늝ꎦ䵬輅늹渳ꤵꤓ尠瑦着꾄漘꿀갛縷災䀩頳妮㛕䧲炌䩣꿶戽䋄
-㴥骚仰権奞磨礱蘈厑䁫檡授겇枏㺇䅲馻顗顺沄阑ꭔ䩐䖚飡蓒履腢ꦙ枍兗鑛咚嬙滤硧蘄師矠㘗ꗕ냞昙沖䭨媶口熔搘芷瀜朩㬘襛馼緼㱟槤꣏ꦿ迡膋酟㥃䕠炍꡹鑩㝶漗鰢긎鴇僃珘䥗談䪞霓氫蟺檎ꃒ騬ꔧ豅夬薇廽갬桥㿛暷庤橳憃
-曛肬旬攘牆薙ꌙ䔸晌呵댛俉齳ꎎ䁓猩㻗謵葮裤藻ꄫꋾ煨樱徣䓠㪾飨嵆鬙㶢뎞辒뇷㸶藎氅䰺跔嫈疘矹鋀닲㸟眖䯀鱁咚狦爔薾疤䜤荓ꬨ꿫桳䜶蹶䳎䏲銟臊乻烟裎軹鬱儭䅗榾㸯薪損岑幆䈋䉇ꖉ䎟萝汞꒠徽ꃔ㐍傦䅪纐烩ꈭ瀌葘厅
-ꌇ訕䒂ꔐ謃願為瞣黒甓杦ꎃ篢竮槣笶꿓䭒挲麫냒澂墁椅䢿扽阭㥘꾁檎洒憽钷穵秦坍萏櫘䔤梵莉疒䗍貁棄卢㶇杷檮㮮眰䓗嗈绱癡䪒ꊹ羟䠆ꩥ㴡凂描璧鈏鳸ꖩ觼醩鏓紀縛箏黅㐣鿆㸒겉潹馰枋八髤鹫㗔䏟ꅩ脐蟲䃎碁僅拇ꨖ迻展
-꫃䖲湏㽋跟㢺浓䊈獳觬乘满涰姌殧誆忬堍橴瘁苃减臙䳲瑁㷚꺞鬚鲣岻䎣龙뉟氖㔩㩁臏㫲黣哸䣸䏖㕹膷讨瑿卑蜣銤䟌徯醐ꓨ咢歒獸唎氕蛃㹀ꔓ呧嶴葹祾겗ꑱ桃维鲖곞墴䋪䪝䐲涡尸鮸缴騐韉隐貚鴦賉噧凇䫉蜎顎移ꙟ舤눁蘁螟
-䃗㩫瞭嚌坥烨窖杦곞㷤䓣旷䲑ꯥ菗菬扴嫳熪娇ꔚ舡餉雋㧀逊缜䐯鮈晌噉ꁑ尕㧉笽旒韥憙㽼ꭡ韏嬾泡渐껍杨狤塪꫐話姘㕮斿疒啌憁藆齜䰥蠎捬徱都ꄽ꺪귎忧甃诮蘤ꙕ靾怳駋蠸粴塴歀瘛㾢负藿颁䍂插㙖住䛦凵넌鏦놖会㺵깱Ꚁ
-皑峩饌帆鹺曀硥蛽꺨粰긌瘶柑錿衽挘聉暿犹馰阉㖔是䰛䦑䍟竔倜꒲艤蚦粺埝㾂놲㼵鐠䤌爖㿞ꔴ嵬岮渠궎妯焰䬠瘸䱰膓邈鴀㓤螠㻆麟㛢浉䴖黏ꯙ檉锳赑㫤忈눬꒰굄墉䘀潂液䐦奧崱懔稂꧓ꚭ捾勉温由櫎翡㮝䡞虯Ꙉ尉㟻䇓ꀞ逫
-牑揞䐀䲺摚手군韒屷낥茀㔃債ꐩ籧暀扆㟳堟弽飿䍎㮛뉞奵繀踨䖚穃뇯諌謲瑛긵ꎐ骣俳鰦炄紳郞廆ꪍ装麁鮳庀璉涮皯禈陚犂ꢯ廋䁁㫦䗳验膂늄ꭓ瀿ꗮ古닮귖脳ꩡ鏞菇栘攉呥麖눋媛꫺懤癍䯋뇶䗓媐ꐃꩉ镽旘殫苏ꋸ篫撼笛咬簰
-菑㖆讅꬛脻蔑ꍛ甡ꩣ戃놷楋꣋揙猑千灐涯濺덧伫僴伦ꕉ浄㻌屈刞儠滃悝굆锧鑴翄栅䘷䊓猃䤔膆놪鿷緫茮羅皓陕ꓕ宾㧯䗼㬜叟灿堛黃啤䵷溿鈸噮吕嗻겹樻杯硂吟蜐ꑠ䚁狴䒡㽧椣㑼蔅犿峑詘ꍳ患坰迍돗걗綩梫貘崈缃譋螥낓䪒
-ꨫ䁣湢盁ꎂ꾏鸒阩㾲嵭굍蚅鰀蓷ꉱ岋彳解ꇘꭎ糄蕍㣢ꒋ韑䘊㒌鷁篿遮䄛ꠢ䈺鉧䡇㾑蛳玐ꨆ곇㗸㲐獬瀹ꩲ牯㹏硟可鷫鎸舊纶㾟塧庣昻跧ꥮ㒿䝹㨻缾ꔐ娐礲慏诉韔韆羣苩浈鶭뉔琨㭦苲㺃駾䧉㘠衯睼么敦䓤汹꽗樹獚咷黌徤穕닊
-ꘙꗈ늰鄅袵䱁농谪闄皆ꄨ꺛雿嶖㫍訖髸ꥂ鲗诖唡膓确蘞担ꛖ熀蹯魌㨿蟋垺訇水낦鵝翴鑣錒䢏腃㿚僩㞺㤻䌰懃뇅鼸揙柲荽귢䯅飲韫鸽鏖덄깰넎㱔激酳蠫茤榽聜喐ꙁ誘莧䑎玟詢넭䪘䴙鈩版偙驗丠隆꾰艡댱坳恞㰊禨捽耐㞛韀䱤
-䚈귍咃攠侏啫縈碛迵餹鰍Ꙅꌊ洀尉笿鍔ꖾ鼊䇢㶆膧撼曛罠과䧾膢ꯚ㣡ꝩ䌇梗咄꼶ꈖ㐐扣曮珁萬朎넉䀐㩤䧙癢ꛦ깒㾲醙狑帤舖踠佼昭䶙槛巉耸嬗焾䛭觠能莍兙뎕凕漝幾琝䗫㠘峦蜃㖳窖ꔬ錢輟枴絗襉龒䙧㱂廇驖佪魜綎嫕㛐鏰
-城鿚㹘㵀ꚤ㩢겈龡ꄞ慨䯤㠳懊鏿小䝲推倲䏓ꐓ嵩ꦧ䇦丶籐㦦㭌䙜䎷焔磴䘵湀谞莴亜熟嘉꣦锇阢衺陯譖嘰襈䠯葳㿢减ꢮ넞函䝰葑䬺㬗桭弿恕䱇㾷䣖ꑖ놈䣁뎨蜑痕楌裲ꡑ꒦獎粿檗沁䳡嘺ꦞ赲䨳㨔㰵隽㫡炠郹굾䑧䮰ꛕ㻪隧鬹댟
-邎㾥頨萣㜿䪈黎꺛薕鳑뎹輕叾ꘓ䯠辽功꒐俞ꇓ翣䉖㹧㪉뀟ꮶ끮鎕ꥏ笪䳲敨䑣驶㧙崭賽痡滿㟹堜鷇纷ꋦ谯靣㧎ꕏ䠧摃驥妺頇䧿瓃낃錝揳厓ꜟ溷橅缚Ɜ槈遐㐺ꏷ㼘槪ꕦ냅䴾㹭ꭏ낭憒嚜䳦䨏㞝㒯汞稝斫粈䀕瑭ꦭ䋣妒崤槥釠䢝恻
-縛輗轨꺆捬鍛棻杢紐漜髲汳仟晛忄㠷筠俠踳魰綋鿏牎닣㱖妐䕾秂ꖡ꺆龫孁噂㿣㕤㔤噙蟞㖍磶䐆ꈮꚦ궟鍖蝅㗫鯶䬯忏䥅䳁꿢ꦃꗯ㧙踯䲜갓瓣悆礎畎ꃬ鹟合佻䡁껃䶪驜楫鷏㛼顂ꈦ幸㣄哉ꐷ鿽鎊滬䡿埓牳醷锺䵝佭秵暇ꌎ놿庩㓀
-羊韺颪㜎枈嬨璾꧃饖곻䆢玅齴岍髜歝釷筽蓲餒煅㢿鄆奥ꕰ䶛芄旗鸰蘶㬿鸒㲔巃弝渐ꗪ堯鹎矼蟎鴂꼑ꉻ渒嫖劄懕昈䅁隣奙蛐隰迎慍댜䞁镠ꃁ䱨埚噺杰瀈廒闂꯳㺳媥鶢鯇鑏譄厨䯙꥗㻛郼倫銢脀俲幝芢돔丬뎿㸓篁ꮨ㳓潕颒䒌꠫
-銤甒㭺笂铪郙咣䛋꬟僽枰佶䕷怆熿ꡮ餂걄鏅綧䛭昰啻꘿赉郒ꤞ亢蕥ꊣ珸䪓䨜겂嘓㤀궁꺅螎䴾䢊捭穢냾䀴㠪驟詵갦袼笛䃻峃꽯䫋ꢕ湧䣀䓮㞣蛛鞖ꋿ끢摞㙤ꦨ䌲ꋁ㿭袴馗炅雬厌莱舕鿉㥜祡㙱听㩛ꗧ魁㡠踛鯜輬㐘畕㕊罦辀㮱蛅
-蔨墭邩꒎黬詋喃烚瓂䓡뉜譥渑煂涄䌋㺓蕂夯濥彺ꟓ㹿漰㘓骶䟣낆煤贽ꬼ囤ꐁ跃鎜籑垡溺꠼訩㝯긶傚觯倵䫻俕ꉆ软䀳馋執ꨎ睇ꔺ涨㯑帺䙣냏篭㦝閹ꁤ軬绝止鮩冁泐㾐歩茇㯁螨ꭴ蠚右卑䚂撯ꏕ搸㱻깘射鵂爲笃ꗲ寞㴉懀㞴꺱ꂇ
-媻亗崾炣韽仫ꨳ刖哔澣繅筵猰ꢙ壘沣梪鑐꡴髐讂㗫卡㻵劆襩鶫㒿硟想䴈ꠉ鱤蔆䆶緿꩹ꉁ傪䴩䛺痐ꩳ撴颲ꛃ哵傝㢪顿㲻黼眧隌ꥲ蓿㘵䙵杼隇慢渋ꬼ紋銊黈嗮羹猂踱搦ꦃ嶬蠥䞂敘轄鞼䜗啪儝昆洪䈎㑀廴䚺悹뇉犽閑虶邀鯦圠庥
-曌檴鷅䇩祙鍝氧枅暿顿烰㡹秋潲叀꾕劮漁鲉ꔯ我吭轳꼜尟毚鑾渱佢꿿䌨鋅냆绢阍篣磱泭吳綌駼骡頽䌼鲭朒궟今鏆仌䭄褨넗걋㹄斿漋꓆釄圢ꑭ莊뀎ꜙꝮ烡执㚡應䯓华䗃桼ꞛ꣐熓㧣걠䗳嚃敚鮒爑䂛㢹夌蒏僀㮲饽㴆䄚ꟑ箃ꐄ㿗
-傯㙵漵꿡蘓孜Ꙇ牊佾虤谦戗疯雪鈫謵괬ꖡ䆵꺙㯶粂殛踐磫崹紑稝烯녬息㨻蝾蘡䭞䎭礴滅隢䫨酸䀦䛾贗饶䃞祓亍澂낗鐻籌㝪萲岶䎾ꌗ薟觩涴齸雂蓛箉㢭ꪗ䋝䇵畦噳嚁鵒䌻견圅䎑檤돡穇䶏铿东涩돠矙㐡涷㥍諆靻䳊葠彉鹚燌犞
-䧄궫麧㟈趻㓯畞㳶涿綥ꙛ剸衳諃鍲詙㝺綾捹嗬䔆ꐱ捜㓥犃ꨕ㦞ꇷ扞鉣ꕢ㚀藒넜汼釵ꥥ鋡饲諡嗑丁堻㵒昤斚氺㴖諚㸇薤䔦㢮鄒佬殃秅㘉汼仰䑦侈吷騛馆냼剿佩㾛巜㐔愸䗂䡢瀾닊䭯뇧竭㭃䩗牚䘻肅巢ꖒ筻㨑敓虮噙砣㜜䑓湨ꗩ
-羛薗鹼舜裤纩齘䞆ꢎ鴮䃳碘載捡瀟蓤擟낊㧪懃儤来虵鰍狇鵯䥔噮镅䇉腨莂㧆緊꒑颥㯐뎜鎄蔹鶭儂抌ꊅ矩뎥媯訨㟡楞焑ꤨ㷚蓕秚黽掋坽㷼늇裴檌㢫껚碇鰛䑽链蹲꺞矿趎瑁霭兴僱㵌雎纑꫗謂肌犳羓摜洢滻ꖱ錧汧鳚㻃崒ꏍ胼ꌴ
-兕㿐真꟨鳕殏憳縇㟗꤮魶襂辷匟㤐䁯㻴挜粕ꃃ駺꾁䝯䒢枴莥뇲泳ꐖ嬧釯㵰厐矉貲濫ꄙ㭿漷䶯屏纥倻羃谦艘氞薐鬄ꄗ䲦㧶愅鷍鵡㜲忌眽駻鑦拳顝꾨舸꒝僜槲䏝眜靕꾊凅ꍱ楆䒳䒬謧닜䝙浪备忨涧ꚜ纱咇뇐掑갡隍竟拾䩌叕迫爐
-䉬䋅自黙ꋿ䕷㜿獻灥ꕜ㭄䭠嵦旔褐箮餥弾紤䊔焵廅澖劫睷骬檪宼䞦秕虹霺痞稬ꑖ趬䃔脣擂䔧槊ꢒ䴶袆䐆ꈚ鎫㡳穢峄嶭䗐胡攣堰䞗꒯壂㧞婇ꭗ犯䴎誥俄煍芥燅㨘砢餻酨涴呂尓蕀糴䘩㴽靤貴䓖䓵闓㧥驗辗㓰匀䑉禣莛兠活蜞㴠
-ꜫ反罋圠暍䓇橊涖毟ꥱ悯纜䰞擢ꩈ祇鶎錉接偷掸倈眅ꤳ䑎埤㱨逓䀺驂蝛돏缬뇱겺傀䵎灊㼸疢䷵꒨糱璵葏垏鼵ꐟ궋䪸哴圝彜釶虺㩰肑䢙禕耐琇脞臽砺ꐲ䅛ꆾ惏皑葰㲸褉㨨㤰㱨ꁄꘉ榙癟趹屡澱겁껈瑎螀鶠消㜰嬕琏䥆嵝䘻蠺ꔣ
-烪祔ꙺ秙功陁懝䉶緷钖㙒꛳㬇ꂠ䣨䠃觗秥ꆮ詔ꚧ浬䈹䒒踥縸櫆缵蝀蚾轁臭䏈烟蒵鱘涛膦遙仔䡆昉媒輏䶑狳㲆垸芖癗爮剓葦齑ꊈꃮ繲輋덏嵬䏫㥸㧸剚肷訹꣺暸庎钁樄竧ꉩ郑詓ꬺꨀ鍔謿轒䋈駽洱舤蕯藽虋揫꾶䏾浇蕙䡤腋妤酝
-檹浙驗噙聰彬罫腑損瀸蛭哷躦㢎寵絇䯬ꍾ裹薦鹉御긌꽟橗幀嶙ꂸ䅧岮㗉䚝㲖遂旻而簯冭㕟撺錕宸穧䳐琅閳玉㜕誺곀끭妃倍肇僉鄪袼댛盭㱅䯄꾙ꔳ鯷囂鱹褞无甩㝂垖术꠹锧乐궛瑭攭榚䜧䨗䯮瑑忋埫㟋鮊Ꞣ䁺蔜距晾㪌蒃蚞ꇌ
-氅곷䐜芮㹚沉诅鱥䝫唉搵䪧粫狠䋗갅㷢겚ꑠ䪋㦭徾ꮋ涤睘桏㭗ꅼ㚞寯㽤篚忇逿ꝩ畅潝箌甙髰陝䘒㧶꨷噾䃜昌葜㴅馬躗赘朘垙櫼呤牮䙨㳛䖅鯱痸顣纖꺯韨䝤訥髣㩤臲妫噥꣒䰝勲냮詌䯊烬箶嶥毸恔慪ꥩ㴀㹽剦㕬嫈辺羦눿戝襂
-澀䮩墜䞫涪ꄡꁵ㴃脲꘥ꐛ岖ꑛ昐눑ꟁ㑺㧔蜌菈芞獜纼阳琈悜䦳塪㵙觪閙廢広栤䵏臐澸ꙮꄔ觍豇鎆硙慪娄烆疀辮꼍ꡈ遮鰈埯㗝焀俾硖뉕餋盆㔲厌勶礒爫暼㿋넡圽눫熏顮ꁭ䁅襈溙稠爍夲댞蝪攵练棌滗䗘埤鎅篯即鎕䵌偓ꁋ㝧掃
-縺鯞埧稁댃葸硑ꄜꯎ異䞥ꏠ偮䠫軅縶抈烠䶻佴豸槤锼潮梱窘椮佇䏟顒嬌璡扰䔒志갢ꁭ䝛ꍳ珶嶋劈襆跃蓂䠡填ꌫ㩮吞蜧镕龏鼹㰷ꞏ搬眑廞㑺邽橔朶埨啐䗪刹尕幺厸䠁踆鎯嚛䋄邫宱閰豧跺닽佮塝捨棰彋擃欋驅襀ꌦ塜䆚黳妪弑
-ꢨꈓ琂꫆婒絷噞葐嘯连䑊磝鸶趷ꄑ埳辶瞮㦍꙼嵞䐺嫩䉧㡓宐Ꝼ䃌弛藥ꓝ鄀ꈜ揻ꎰ䛽碲㮨꺻ꭡ獚慇䜦꺯熵毈ꖴ㕣唄锸䇏䌤佺긣鱂矤㙍㠙捉ꢈ膥謔獤漵膷鐱簽䧘䎚帲ꥊ昋襷ꡡ亳躙壓䀐㚰叕捰蓂嗎屌㵝긪帕沰敚仓芲疨枂ꍞ굘悅
-松蛇岧窩淪㼉芿鄻귨榽暺㟪闥烶㖟鄀ꃦ塨熩妃韍晐곥蜉廿唘衃놎㽙꼞缢彪状꽧岨䠥㕒奰ꖣ덒揽憿㿙倎鲫ꕓ㡊暐惋灸荓載醩ꇑ搉擺䒉桑䝮ꗑ㞂袻靮霟돴椭賁瓠溱꫒堭岾ꅔ敍䰩ꫨ跤技丫ꅠ㪕㛔龻㢺㤏ꦁ꥔櫍蛾ꟳ涻ꀇ㗟㙀韪蘟
-䖽꺽䕚飾輒銈滔ꕞ葨䵻勏㚘궼淟圴驫蹽唥怳늢䡞呣䈓䖝殴训䨘惁奞烢奢嶋긞늝㛖垯㶫㦜䜲韜咽絛䵚稀㻿驮鏔鉋躱咉唸辒ꕠ淞꧘嶪緤琻䲭汾龝枦踬濭鵪ꞅꯓ嬲呄鹖舖㾨鍉晤吓襠㘍耸鷸ꟻ蜳ꯟ嗪躩砆讯扖뎉蹱瀝㸸䧓ꙑ瀐㙠䒿
-鑧焆半ꌣꄿ黸砻配㐠㐴兮圆㨅瑣㟃吮ꌺ汾絘矿坿䢐兠髡愌寵镭矗銌巬䄟煄䍾勡䃕㴕ꃚ澫晄玒꒼砉的粵涭ꙷ浮鍯辽睫嫟穜䇭㮽譋耺酑遨莭ꪳ恊涓녷乇ꥱ뀏臻낺㝮疜놝歅ꊢ緖構䢲漛艿纈兺輁娴夢量黊寢닱蛅晣潉꿤ꌆ䍷ꕜꛦ꒪
-襏鐹箸葇氓㺧邵嘷嬌䒰䛬謇伓襃顢꽽舲ꌠ㰔曧㵞順㜇圠謤趘埵前恅ꏪ넹褢郀灾琚䒂꿑嚷ꪦꖤ撖䟢䂅㣫꫒ꃏ㮖焰瓾躶蘁组岧童蠃排ꃞ䰬舟薇窌蛄哢趲妀䍺穒痧鲵聲眡넸辱甑蟃櫓關긼㣉껁銅鏐甊夒手㖐傱惑翸㸰㠙炾䪅紐阽荹
-綍寽眃趟㭊暱賔蘱垍䭗ꤶꬴ藥鏂ꌖꑝ炏慿穵㧉瀨끦吆꼻绊洺桌㠵㷕曽䜈檩㠐䧟罥㦏ꅄ鋋靫䕖꺡癗槅꧘笁㣶䛗ꭂ㒊廘抜劇㱧膊ꉨ橶ꐯ钱䓺隴ꈩ댞煊拙뀩宆闕넍艷墙ꤵ䉷萠祮넷ꪘꝹ饤놔憖舙㒮䚹搵䊠ꕸ瞜垈绗桿㭑粅籢海妮귳
-簍镉蛗碱搢㡙䭂叶㸛㜙聚ꐏ䵖濶㐠㝽諳奝䴉岖鿅繑隅Ꞇ䵉駐䒡ꢨ翭跭鏾婝墎彴㸇䷝嫏䷻䐶깟鮣꧉峂궐ꁶ槤꛽䠛寛䀾끤ꛆ꺘瀫䅌Ꞿ䮧䨎蝀烽風扟睠釻詜奣䈸摕䨄䁅祵坸ꛏ庴觡睦ꑾꏬ旘䩑啾謅냖謖颉ꚡ냨掹洞欛塘䈆嘥倷誝嵳
-㱁汼㾘㞕刚牭瘯燍騬现鸂麄孶낄汇毥稟ꆚ㞘陓死氟漸琎Ꝭ沈鐿燠ꥀ琯䌞霩䜞対僜攌裤嶞谕拮註䝛鲤滾峇能㲘鎃綆䆾㪩䚣漴捝ꃷ伡鴒䃶脏骘넕꧂髥蕂痍觰晨饍淲辠龃瓪㧟ꨫ薷瀎惜雋邖蘾ꃶ隬䲻螶瑹蚚盤蘤坧朗䋠溋猆願ꀮ柡
-愍䌌呮꓇蘑蟑㫴䮭ꂱ啯髠稹ꉡ树絋꺋ꆰ樶呯按謌鷭咝筱飳璗䬠瞓俿酢擴煑㫕钯곮䜧沵欸靁冭䄗ꏀ䭒匭阶ꬓ诠덷玧闐鰇녩㴲睁朂鷚谨嗆綊ꋫ紃徧与蠙渭뎑㕙濡䨧挗ꛇ꟰㮴戈蒟㕻눦ꟷ䒹誎謸黯萯瞄굩ꤛ胗傠䎢搴酦꣨騱䁑尜崋
-鮒곰䮞啓䐉爋熓鿉窇鬉箥阔뇹弰鑽墪萎狥鿏薉눧贺踺篂砵ꊛ幔睾裫烧儑挜塳揰䲵㾳넲䈚吇䪇ꛞ㼾闱괕䈮赜覅㔰㳧ꌧ覑猥讴鉔刻赝枲冝綶搳뉦它璛忐뎠蠐䩶廑㙍ꮕ䱁孲凷镆拣괕齣㘬楙㲅俶膳褅櫟橍끞釈貰겺騞䶆㐄鮷讘藹甴
-䬞毝鸘铃囚攆蠂澙約矌瘾㖍䙫ꊟꗮ㰪锽趼䛃拘灔欴ꚕ䯥䑔ꂳ蓦椬닷痂処值韍䴦譈夨鱜㝠處鉈㶧ꮔ㭃㵔舀㢕皳鵷匚抁贷烏魘ꄊ䮯㙲欝꧂㧷껷蘙銃坡虂咨惀Ꟊ窊稡餽鎽鸤䙇궠㽫꨷芈岎鞣㦗㲔僞卡淕岨鴤꨷涨㧒ꀌ䑚螃砨珐砟孡
-皢悚璹ꞿ浡껜ꇬ䑏㥦堼婚䑅ꢰ倶隱扁襏篣䘭㜘䱓翭蒼潿筫涳侰㬰癛透뉂悧罥㚠㑳늾呧㖢䍵窈帼ꊎ滣苂法籾覾蛯罙熽䙃淡䝳㸧庮莘ꧼ渌ꫠ磂䂵茱鎦偲醑䢋嫪嬋藻髫訆汉箰䓦䁙戜댘뇒ꈫ䶝撃瑍圕鐄꿴酥銖꼝挊瓟䬚悹꽜存焖均
-뇗选賯畡鍇䂙禐ꤺ㓏㳾㖙꒍禂鍔鷜吁俏꟫䠔䀢哚拭䀯惊陬䗾襾ꕄ禶꽹ꨪꔵ䊛䓪䂛醘輗㸂踡卉鞰誩諤胢芫缬ꌶ냮䈦贊䆵㕆㮂䛤嬀껞䋫ꭆ䆲粝粚壧輷㐖聸䤗霌盩꓀㛂貘豸㡏豴螶詙脩悡楿巹꼰㪯㢏啀疾㷨湺䧡坽鷈缇㚌㒂钶䠋倸
-幊讙偿䓉夫掿䈗鷇阋条偡㪲傂俎踍㟽㿓珺䄙㧭蔤砋䳳酆鞋䥠値踛叚龎宊꬚奶縵椁㞿謏䉑愓癐䮉誙괣鐢鮮緕꧖ꎪ䗘䬃鉣掐꬗薬挤譏媼ꨘ闷秉噥㭍槅ꁩ㭑烧眂包ꅹ闐簋㿬䨝鏦湒뉋魓鷎㛂榄뎼琘䇒緷兣燳吝䣎筁鿹䞕橯蘰䏲㞡鼋
-꾺䊏䑌㦨愍轟噗柢槅廼䁐揭圴紫緻胗䊈祕裸䗻縥꠬犚缠䏝嫉裒꼀鞬㡊猕鵕钊茯刬嬼뀊羄迂䟇䀫騾叻霞돻㴕馿枞蒢阗潫䦄匍煽ꗆ沺廭㩟諕갵㒕执娷侴噠䞡ꬅ翢逑臔㫚焛ꦸ겂撓癉曖洼撌鎾虭噒翉筕峗돫㵡㥴䥁孪磹棕盯凇頷犮
-遼哄掻뇤鐿燽禤蓓揢蛀奂藴皔鑖垫觨啑筹㷗汢놇苿谚걣䶹㭒誖赪ꯀ囵泩堢航㽍孖㘭錽䈺壔녚躠뎝ꖎ魧㵃檹飐ꌹ锛ꡉ馥根蛊嚓곧铂瀿ꈏ権苐腣䡏咣簥唙蝂僦揑淾芎䋷嶵欬ꚳ㼻拎抏郍갚蹅㰎Ꚍ鞁猹埇麾睏艢䊚㪲䄈䂘㖪㳿㱪昴
-鑏넫謄굤꫷꤁捂枮鐄ꌿ繓捁硙䳘訖章墶狴䍹ꖫ欑ꋆ㖒㔚梣隗䆗꣭䋹弁鐏膝黧盍䄰儕泦诵ꜵ贉諺錭㖴皞䪡袟蘾腚覛㖿庽䑟䞔槣夆亹詤膃㟊繛녑꽅觝钴蠄齹瘁剚姫吅淁仞孌蹇眔鳤㟯呻㞤굚ꂞ燰雤㾋氇䵟䦲祶䎷荴蒋咈斮䐢醫熈
-玕嗊辴㰠ꬾ埴鱬꨾㾏岻㜞瞮䙕끫䄱㹊覘瘳豲蠓帚粲蛮黣悈㧕說㡒侭逆곓㯎駛舌㽛䝍귭杽佲及㬡䅄碠敽茯詶䬜醄搯䩐ꪲ殾㫐䙑搝屾껙㼙嘹攐궶㯁萜㫜給著꒪嚕掾痨놞湖끲ꋮ塺댓齖ꞔ瓅埼䲺ꪳ嚢泳䰒逖놲降鵩王選滅猵ꖠ兔덪
-攂䑰䖬茗拏茢崀걵鰉姣娎㭛萇㝤羉壧渘陷㛢狧ꏟ论涾猊䚧浂麢Ɜ姩鶲괐圌暻䳿鮕鍹篣比浯䍛靄響䗮㤀亂귌诟䏤橽犃琲堰螤硬皭毞瓇递頝抜䩱䮚堷ꢼ廫觝勍寫箐倌謹ꆈ㤀漓芮趹庾鲰硬臣紲꣕葟ꄨ壈节䊱鏉긖讏䟳굔꒪陨砑抐
-贈䙈꿽犃䙂纀鮓婦轄䤚鈼咡媻隋㼠蹦낲躙䁫辻枩帔滢輛黳綞㗖扊徣糤杻ꉉ嘟線鑏橦鈱㒑飻裺蝴窌勰椰꺞籪碷䲐䌴鉫꺧璣簚箠覰㖝㛄䲽낭禦闈径늴㤗駵忖呬㟠崨聯枤瘯俒訌駻ꟽ翗䟰ꗎ㠀꽎滷ꂳ㢵藮聙넙餐琩躒㚢軗㜀禫岔鮯
-輊汩窎㩨䠽㲐闣ꣵ怿鰦撖椿甹弩ꙙ睙匝袄示䍼辥軀㮡韓ꯧꘙ守筿竎ꁷꔂ镏鑙걸雈崴ꋱ栐嚓袏焀椕觹鹪ꗌ曖軆㒪巷ꜹꑨꘜ嬪緿铛篮공寵䥰猡䴨邜䳴錩ꮜ䷛ꊝ꼜眆꫊껄这辆ꡐ訴溒㽒꓁㖁䝝緽妫疋㲾周䰅杁겐輋䗆䰆爝ꖮ屖觎讬
-䩈軘嬆忍剴蜣䯠鯌鉫嶉ꐏ㼉꼡글蠀鑠䞦ꆖ鸨ꙙ謂㑾猎数址袋綳頑砾戵蟧钇岔誆감銰뎔銧舻鱾迿黟꒐勤捧恵伓닄崊忪䆰㡆ꖎ埥笓鵞钮꼪隶蛭璜鳗誣繒栯琶䊝紤傄ꏙ杯漯琊壎祃ꏥ斃䊱朻嚹密鱌叅聐꧶谹㵉갟簓焞ꟹ臀熏乖偰꒒
-㶽偿堫墠䉟泲뀿篾窰獛讬譵凫姠瘙䃗挂꿄鸫疬钮祢畏畚鈓鰇ꎍꋺ㬄溯狹豀㰺㛗褝髧蛸㗟䏤꯺悵鷶茦꯺䋰䖼螪凹䧋俍粫燵樞抎籄堡蹔紿齼羀注䠖ꟸ玳謣㿑綡䀩䤿骇鈌趂㶹鲍喣摿儵眩桩涒利㲭ꨁ蝎旍넛㟊峲赬嬾汇觧瑩濟懱㩠
-菿頔嘈拰負㳹闘藶䵵䳛犘軟黝厱搾輚鋩蓸蔤鉘颃虀洂ꦱ邐安絤㲯焂蚡窜韱只綔냕曤胹驎ꌲ㖻㿦偆秼礗襅䠩蛥揮㿓莢幇ꁸ뇭瑕哬㞃廯㲧㻨敵瀱朶諄㞂孰悁ꀛ뉜垘鰲瀑ꋿꬂ頾껲饝紂筚縢䖭㖋擊简蘵懅䕖諽兵䒱鿕ꋶ鱍財餜ꠊ댵
-䛑寃幮柩臚䍲㪄䆽䘰掫竔渚늱动鉀凜吒㴗㷐糢鬾惻ꑽ抔哠褰菛逖깱釃崑認ꕓ鳅皱鯗掷吮浯亰象꾔鲲喾晉蹟䩶䊊選捑ꢬꊡ窟抗鯼吓裌뀨鳞觋ꋋ꿶瀭댧掳綑阶㘸虔궺ꇕ㷸袨綗飑磟䀖槍㢵鶓鿈綾尐꾂掼嵎ꉁꇺ㰡驊ꄇ䟱梈鳄鑂籐
-料㧵疮磩防葆膂潛龮桨襸丬㗨燵鞪笙遠늢㿫ꛐ楆ꃘ雅抷湗ꐻ魑澇擘填낦紱骾갑盷汤䷭鰐訷刔晵蛣酙蠎嶵剮勂誘䊤㙛咄毬䪴錤㣣骲䴝㟑㷠䥿넳謇䳯䍂ꔾ䠡頉ꢕ蓺閄爚狱脾瘕돣鳙阫殏啮囵眉衘杻睃䍯䀭鲏ꠑ鋮鐭碚础䜻ꎻ豞課
-䊝㾞榑ꙕꠀ㽒굔䖼隔ꄒꮷ㶔騅鄩ꨞ恌璹鿓䦃溑꒓浩僃趻攫ꪦ书嚮㜳蚵鏡懯撒ꈅ寳㨱䁃ꦰ僆靆㛇䙂鰸韩간ꭠ꺽鼎綛潱ꇼ䢖댗鴗鵭蒀薀黻꧚茲穤꘰熢螼驦䁦椴䂠ꋖ鳳獴䧿䮘㥧뉽㻃ꞔ脩ꀽ荌齵詂孟냓鱣嶅ꪦ却㩽遊楼㩝煣㻜儦녯
-䷭绲逹飮徰䀪㯫礸ꮔ荫뉱痛㬀䬁谨㰂鉫㸂饔㥠歋걄大郫ꦼ餀巊鵡鄸냌䨖讷㫶䲿屫恢稕弔녾䀢焼䚀鑯䐀鷺遅斣杼邽蓟㛌늋馀䦳鬚㡰銾圉䑺뎌輕噷橛鰨곻ꝣꊔ囏貣启덩뉹痹ꥵ阵趶뀕摥䂐毉眞䭇胵绯넚箪㢡太嫷轘ꭲ癟栕添蚕猲
-瀌議梄嶋楳跪鷮ꦝ顑경㖋늘扻䝸诣ꉒ緾襔瞋醙돡煜胨鹕漐部抝䜁閊繫䑢旝厷悌愮耮览爥䅲充豺ꫬ瓇㵁豫㡱斏㺵鷠韒彀甃疥䄦䨆铖憐欦冼洧漝辪刀臈芃剢総㓺ꐲ嬆虂䙢嗶挮耕돥痸䦭祂㻊䁖應鐥聣䔠蓯ꤞ報傆哾膀낥加䨸掃鵅
-勗阠鈡㐸綼ꣀ䱾䈁嬎錞躷萇窷齸㩳댬녳㚆뉛臔顗燜䩩ꠀ韣賕鱐讯莣苏緧낒镐垂洩躾끬澃㾴閸㶃龍歑媱毤穓ꊀ麷꯻珷뀶鬏爼乳颚䅅궮艸皁霥齯鏡㓬轁馛꫕㭚ꑉ虫鰐故㒍䘾獛詟䱯皑꩹櫂눩髪汰丑癧幘硠뉁獎寘䉍㻃釮崖贷曼縺
-鍾鯑蕈叁蕑㞮櫙猥䉁겇鬴碓䫴꺛㕿ꇰꓯ㑡芒댃傒縆鍢㣑궶꜎貮濋ꐣ儎栘硄輐勜醠滋뀢疃襩ꇁ欋䁋豬覬뀑㰝ꏵ萐䃁㣼莋ꎬ䀂廄긲鿡鞼䟿㸥衱鑓跪䕫ꀩ顕哅㸼蘜搂궦ꎱ梾鼨ꥏ頓Ꝏ䤘ꁱ勦鏠劅㖉詯䲮㣶㞁蒉鄓㗺剀䯫氫㚱늧聄縩
-刊岹䳪㚾䗞竅鸌倏柳䣖敘菦憣獙埻紗鳮綢鳄桑潚簔ꇞꛗ伓恫樐醕巩曮炿昲冖辥呤锇䜘訦鉋季椐ꄐ匒㣧䬥ꊿ閜蛌䶝挽岥姼뇁咏氙孉䑐蟓닓槍飚㛲귷幛煣긞뀪瞒彍䶪㸖駘䆆髴㒝靑ꡥ䩥姢硳嫍䙚ꤷ䊒纹ꕋ끕專躟玘檢ꙝ鮞弘熡㗫
-萔㠍釘硶뇙峞嗵崣爂昉銻꽊罋鿧㡬缟憊도惼㕈㣲蟏戡댁關㧛㶟䘊䏒撜惀雑䶙紉ꈖ鎺汎㵃韃窿譶䤒㠋贴檴㥍灚吻汒꠱庎荒啓㳌ꎗ뉛囆궭낏駌欱蟬诎鸗及筥慃䎠砧軷꾳䟳锒蓐峎抭嘤㰾内湟끉鬒篓鞰摍膌熗㢬橞㮷䃀玠궬賙悙褋
-婀祢巶垣枨㓫㔸嫛㲒䟛㚆鰧稠幋涱灁ꭂꦖꖄ堐椿㭹뉊㲿狡豆芶镾깅䏃䘜뀵걇菺劕꤃桑䋔䡖歂茾妽酿玙蘈鸰녅暊驔䋆猴娍ꜭ羴寚㹏㓻敂萑攧傉幚眴閇梸硄釈늠謱덍㯭餮訔谴䯽貅㐆啅꾘껍锪夙轃詓垩ꦿ㹲毖损郕瞱蟿裕非䵴銃
-鳤憳㚛盼踪礇檉通雐鰫餿꽎駵薢齅圑珴誘鯓缀恦鰙岠对釀䅢ꙏ䭁潖䎃礕翁阒覹㓌爬ꛭ䷄귁廜狞敪䜕鿛洞圙㻰㰂彴犮鐥蔪滳等䤼霃鬺굖籕䜣幖乗䭅疙巹繞闍伏꽣ꊲ凼烮蚴荏嗪鏸㳟嚳꾎ꮴ鑊㶈舜乼鮌昙는笓碗拸癍Ꝓ㪋ꠕ鬏䆸
-ꯄ減正䷤ꤒ굪醨棬㭍霤摝簓樟댤圝鸺䨞繶䀨榱覬ꯝ塣犏蠀䍬鑀縻齎乆箂櫄ꂐ鹌嚀깇㤗笮㫖枓纮啒襷㡹弬嘌㟭爭䴀ꙅꨠ辣䳃庌豱嬪ꅶ锷匈筩豶鹠茿譮鐮鶭件㯯苽铹兎黪㞋埸䫚沭捭晤ꉧꚫ黠苶狮真姶躾㥻䢗꺰揹菠嗼眄呦滙㮺
-笑㢗ꏉ녖䠆毐怳酜덀껢潴ꌎ涳攛䏷䥴㓐㲥㷗睥窛㫤邝늤䆏䲦褍嘢斫吳局鴠눷ꖻ㨧꼐璺ꣃꗅ詽扙䦚濹鈙鴬挝櫮ꥇ叾薘㢻枀崮㭀끘꺘䋐Ᵹꍪ參㕈褚墴礥䲎㗀買끆ꚜ䳙ꢨꊡ덩갚夋㶕吚ꦩ椈祰꒽ꚋ卬兞亴灘꾺哯渏㑨碢ꘟ楱鬹俖갫
-䀾㡝华錝港摥暅㞸頃噞䰦臕淰㪒蜘鋮趇芨殚녢䙶蚌ꖎ냤阞甡덓㔏䢋䲜꺐紑䯒哝髪伊㼠䤎扗㫉稣谥嘾녋鬞ꉇ䀺ꀀ賦欚ꏰ哘䪫恴埐䗝趘劈竁暌繸ꗌ杰䈽眞羽녧䕓㘣熏挆赀㾃詂勗䥖䌎䣁殝낐嫶嚎瀀繫澡㡞腥踋會꾕偁詍鞞䞝ꂎ憺
-铄㑜꺘圣惤劅놝健婳鈴ꆣ酹雥꺌舖㷐茂䝮覃趌ꓲ㻉邔倊ꤖ玟阔致㰎鐌㓇宣䧉껞ꃳ魫ꈞ窦沟㗖䐐ꑑꤿ䰩岿郏ꢀ蠤꼚嵇縃淋藞䁯㤞僯䓭㐫泸炜腮碵芚椂铋뀄㗎輾胊捘ꮄ仡弒꠯远㹦ꊇ搫錇寳奠缇婑瘡抜闚鮙卿䱦棘唛腤ꢚꭋ黿閇
-便䜉㓢냷絳鳷夭粎鲼蓔巤檒淇皦擨䙐豞鷎ꊅ受譲杷㶯㗧稢䷦끓薧焘鬟뎍瞑惹髅轳韹噘埯脂䙃瑞鐖䮋麘뇖ꉵ祲ꮺ蠰鿢癃皑꾵䳅癯田榠閂䱕㼪飧釈誫䳭圳ꀣꬅ頾끬褋叫砘䌖瞥湨㱼鹆䡶旱椥瀦걝꟪焆觅屡觞潃害䆓摢嗼墯ꈣ堌낦
-稸ꂶ巂媃꣪㰌ꌫ趸ꞷ䧘柶秭꠾갡鍬聉䞞馳䋺귻墁悧髅幧粣ꖅ摈鲯揈韛돽䫳䎅嗟댳烿㱸鞩㗟䲁巖鹻鰲鱼劧儥㶁煪畂Ꝟ繸牧仾妽橂髥鼸겓霩㷵圊鎱㗩苸隆屝繗鬳㠳閔橇炷㟽㕚꤆㘇뉋굹䟷姉僅䡬晼旈饘护鞭Ꞃ僙弟蓗䋅侻字鮷噓
-㤇䟒暻꡷㹞㲙㰺筍䊫疖㵂虥䇳㡜殂硉侯嵚꼾坰逺俜亣禋齠喣愰擲艅势䪊毞竫㜰꒴䟅戕割Ꚋ걐抸ꕅ姱넩ꛢ沞狉䥼暕伇材鸷厗狈飕妪눎泃䵱醖櫕盞馅耇株嵑碹ꨤ啬烰寴䫭媚爞뉦艳卨ꃲ枡幃厖穀揌窱厹馑ꕊ箦䖳㹁䧍闾鯯㓢妁七
-㸓騋坞脔镰组憄㙁蹚椅塏迬刖鐩觹녡덚抗꾸鿬桘꿔泜뉹繹輡变ꋦꆕ깾趽䠵戻蟝瑷娏黌躩ꎲ窮尨嚆ꑁꁟ䘱䅘㡟西還꬞瘭懷蠎꽕懊㚵亵蠐虫圁鼡諞豢醳肗ꗸ冀搭鏢莓ꦭ碊Ꞧ㳐蛿ꔌ囗爿䆛䎜剪琦䅮䖿侟蟱匦慨汤摟㻿㯆鑕걔㗞㵱
-砭䣤鐤扽䩍ꑓ朜疕䩣鐉鼣杻秧勤鄓鴬盈㥄靦꽒ꉌ茽㠖臃彷蹈礩ꔻ늫崉樺偬憍浤濓怘ꝇ鿒墲긤驫錌晰ꪇ䴹踗ꥄ㸮ꤷ㶇鼈揔妃珴瘼菲亀㻊ꏋ깜㪍炙㫭눤돮灁陟㤓㩩趴晗鍫ꙹ晙膢式蚀㫤荓㤏䑭ꣻ垣殤紘椽䗎꩘挻蟏椖꟏靬濺㗜埙
-幡넻猴䝾螈潅䍶桷崻鄤늓供䃁婺錭倭ꫪ踸蠜罢㹐唭爑滆洵귶䝀宾鍵舎蒘泧揽账ꤿ甚龊薚꠆꤇㸜䆃鍠攒暄㽘琚ꃊ뇏䯻泋䂰抆鮅烮崆嗷醘稳瞜桂䄑啡卧甬䦀妛濍怢酮毹踭䂡㫤噃蔠㢒邅巏澷㗜ꑭ獡㑮笘硁ꠕ旴攘ꦇ檣爂갎沞餞现
-歴鑦簤诡抪馴俯步醆ꍜ勵㙬繎湞歍䏂賢珉萟ꪳ䠨疫嚤馳鷂藑늟瞎鐪姊只䙬痌蘇瞏瀘籊俐璛姤驎㾺亴ꈠ㻅䩟ꙋ誡곱桦䓻倮臷翀壯厖綍䂤渻虔㼋臫꽭覤㿠䎙文䊋㸒꜖嫾鈨茅ꄛ걚剟厠墻啃嶎狲꺾䲤㿣伆䄀嫵狆大㯦䪬斗䉫扏栾Ꝝ
-䧸䖇ꝃ蘯鶅㳳麶觼襗橓嬇㡙ꇺ궅鰯酤끀褂㮝砞呐䡕錕㧗㔂㰋呮螂蓴䣋껬浗膶㢧珡兙缌꿨聇廂꿓衃未飤鍋鑚砆怪㒤鍖趟㺔䔓䖌䟠壐充ꀲ㡻蹚鑷궥䂀癮路ꖄ덞纩䁉涷㿑频甽碧稌鵧뎖哹戆莁寈䲒昏獔㲎ꭙ稜禯寁䢁꾉崝䪄湾挐ꊽ
-㲰靛譵槧谱焱㣧禒㢻裵㔽䐦鑫悴惝葳㙲㚻ꪡ巨嘧䰹䰊䤷꓅怰㧚缿鮳衢ꏁ㡇㫄㶎蹢胤砿눻牸渎꠪唵鐼궖鮘꾴笉媓䢇规遫뎖莰㵾㹰粯䭈憒뇔ꫫ䀶竜醷逃匰䷱㰶䨖琁䈴迫ꁿ崗ꇩ긇楚僲搈塗㝄뉫辫扁阶飩轖虏飵妍䑟駽軎襝幂羖뎯
-䖕뀫ꁄ䰻鲼笨豎璐攉껱鍐甂㟞ꙫ꺛㦐嵷鄧㬸頍꽅綽畫葊㯥㗼䃀㐓䒇罬钘剽飆郫鼆班䅊馾䕒渿朙䳣㒲갉䯤彈㯳橲꽥綶糔犎蓻닃꼧畠稼駍嶂躪㼫瓠ꭃ莊峽軿沯戧㰻ꌓ泳碄鼍嵀緩告稲翯知甤鸡㖴靺蠄顒㷼呛꾓㑚錀Ꙣ莁脭ꮌ擧꺬
-䚃孑軩效鈺ꉬ꠨緔舺貇絔䇖ꍅ裆豥錼頧㶄枦㨫墻鮟环瑌淒陡鰿ꢡꩡ篝崊䨯键衭㨤鲑准㚓錥集頎ꜣ欌ꄞ덡㭡䁃嬲䘓ꟽ䎮䃭伦䉝ꦱ䰑崸嬫卬鲾烄慲觛恽ꩄꛥ法䪼낀䐍笪散憹䕜깺蚟㴙旄嗎主葘嫿峇闥缨䠠廴桋犧䘽녂㢯ꃑꪡ妿钃
-ꗆꆤ꺺鹼䚍婩霝庣詖꫆殒言隬ꃼ騆㞝긆嗚跼憊镡㘶ꬮ贏㓊鹞ꅾ粚㸬亊蛭籹敭鰨蔋儥榓劭熸闿닅㲦尽䬻䏬䙸掭ꪑ碷靧蝀䏪鬰鋹慔噹楽镦䟼镪㷧慛淺矅䷯坖枾晱㢶躽廍黡闑癧伝㹪擊庯霵钗衱愸孚柖碳䶷䳬䳜䘫䑺樟癶䕈ꠝ寣䕝
-㕠烉蝴矩놯㡢䏪蒗㰄旻絥鄾돪粤魫索墽꫞隄䖇挭ꀘ規弞竷磠賆贠䘠니登驳厎ꩬ钫庁Ꞙ彞蔭䚱焄畈䖟煉罷䚪闾ꦂ㴶鿣珷晃뉳洷愄拞嫐铕宋柩䜁逜歧㘃㯠蚥鹕蹿玼ꐮ嚝㞟寧䌫䮓瞚梲ꢟ循䶔尷鵱幱꣈悰棉崷龹堫篙ꭱ蓵㻢粱脘极
-狎㚢崢㯳鷪녱㤐厩깠덣憴魈驆ꥉ䛘见㱺褧䚕毖竹䛭瑓㫻歵礗㖻谷旦닏苬羅汿坔鈐㢶橡ꅀ䤸뀷瘕鍠꧍隈妩䀐霖꧕鋌鏎呠炖閊婧帻鯪뉕㻋胪禆㭜개捔嗂杧藓䜐叨䫗死埅檺趸笏襂ꈮ皔喈籮彤㑅깃䳀䟴縞꿙傺循雃坊科䩍箫勔㡀ꌨ
-歄㳘溩蛥꼎蹤泃顲嘦弝厣斑㽭닢閧珘霃旳緌禒㿎궎㑛致ꥉ瀛民꿌㵶闬杠Ꞧ돻鮣ꍒ㹓䀊黣愦ꏽ蟔曭丹곥翃讯㺋鄶䫾㘷瘤层騗荂鴒唟泚䐐驶ꆲ插䎝鬭孰꾁溓侰䅎恎誷莿괒箻䤬鴻箠鏆놇槈诩ꂋ夣갉䛖骏䦶縇沙禒괵ꋣ鼑呼䨞舁㺯
-ꞓ頮吀祤繳荥殇㒘ꇗ荊磋ꙵ䡟搷껍䕞晩꧓昚趚꜁蓵镒讀刃绸菴䲾鲗㘩㝶醛疒韹绰顖氌柛꫈鴀ꁍꨡ颊犣垬桏꼂脺连㪽粻㜋嚭崘ꢤ㙖偦䇡Ꙍ聩勹湈崭鮢櫌迍犙㣷꧸霊瘸诓䚪䧊碨鏣녢ꔗ埍㮖員型欠꫕宨ꚤ䒦鷭鮡ꋐ㻼䷁爋䅥鶋晰
-檙臉㔪耈槰鬦ꛙ壦坫缔劖䨴釻餂择嬯洛鸉洠憚暀恋宪魐獌㰛儿塞㺆ꛙ砸鲐孼暠䝺糏肆䘃挮嗏輋ꯥ㟰砞盝놣闞氘㡚恴䩡雬䎐访ꯪ丞蹸䁞墳곇䂻麼熍㼻䄈侂鬾诜湧굳蠤㐀倻瓖蝼蠵꼳Ꟗ秬㐪䱂㷉霹颽䵄ꍆ暭덧噙蘕怍墱꥘戗靪螻
-併非鈳嵁狄蹏鋞ꚭ獪踛孇袲洗瀬翢揖諟扜殱ꠁ蝨閟㷿箺囆寛蕛眺넱䢬礟笅獺芎睮ꔳ乙漄鮤冏匂蛭뎎ꏐ原꿽廘夫炁肔貨꠿膦䗃鹕냪匠㖣垏磖䩐鏊佒ꤟ돮䅞䖨厢枧끕蠷닣埾纉괎恻鑓槴갢巴ꗶ蹕簵逇㮚뎧꽇頮䆭烉逢祁㘵西尔泹
-蜘泵궠鸮剂栉扺衩钯栶杓㺫恘疔秎馛㽜烕ꅘ뎿遪돔䁵輆倽蝿鹁㘉澜坭区鞗犿䔲俱㯷㨽㨠嵥瓊㬈认䍵嚉꽡㻀呇措晝꺬䇢䒜紣櫸駵鱒埨萭㻇汚깬捶㙴麁㱐郚漓擳擮껠燾娹掖韠꫃饻谖亟矟䋶㙄㶷稗龅潓䳽䧣镚痔軻郳溕襤羓䣹易
-藪㭅盃㨯䱶덎盩귖唙脮ꭅ兒娃翠䍺箙杣咈衛㬲㔐寜洇娐菘畇荝瓜ꐇ陾洘袘垎䮊珺迪䶥碂鴛棋貂鍮鸳撆ꙇ梜锆㟘勰顜鴵䚞䤪嫥糿䅉熸䫖朚㓷砧圅䯍䨛炝楣痫琜㽩緍䧚鹸笭抳缋㠤寎姛钼꒚궿㚒돏秱嚽馷拹䉈揸弝驧傸ꋇ痸姃䤟
-䂩艐脳浊纴䒸桿蝆喿냝骟躡댦㮁沫猃癒涾㕬꺢ꮶ欢虨赩䁐姯漅酳檎趥䘛꼷䐨縂䩤寴系㤠ꔂ訧隖窜㔀䷋䐈憣畠㞨Ꚍ㧕酈繋鸑ꕾ㲥㮂蛆鵂舄ꉩ檰㻐贶䢐㘯豐塅䩼廸耜飋仧鿬衃䂓錨ꐙ憦喱懵㻕痾ꄒ幵崿䯬㐀㐥겮ꝓ葒妐㐌눼㤁搉
-䏉熲訸穿谐㐀㐀㡙愀
-```
-
-#### Primary localized-L1 machine-readable result — XZ plus Unicode15
-
-```text
-format = lineum-b4-localized-l1-primary-v1
-source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
-raw JSON bytes = 228809
-raw JSON SHA-256 = 499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d
-XZ bytes = 19268
-XZ SHA-256 = bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5
-encoding = Unicode15 (U+3400..U+B3FF; 15 payload bits per code point)
-encoded characters = 10277
-```
-
-Extraction using only the Python standard library:
-
-```python
-from pathlib import Path
-import hashlib, json, lzma
-BASE = 0x3400
-EXPECTED_XZ_BYTES = 19268
-EXPECTED_RAW_BYTES = 228809
-EXPECTED_XZ_SHA256 = "bb00b4fcc311e19512f953d33e7d748b6dcd7f56664565157d8e19b2c004ebd5"
-EXPECTED_RAW_SHA256 = "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d"
-def decode_unicode15(payload, expected_bytes):
-    acc = bits = 0
-    out = bytearray()
-    for char in "".join(payload.split()):
-        value = ord(char) - BASE
-        if not 0 <= value < (1 << 15): raise ValueError("invalid Unicode15 payload")
-        acc = (acc << 15) | value; bits += 15
-        while bits >= 8 and len(out) < expected_bytes:
-            bits -= 8; out.append((acc >> bits) & 0xFF); acc &= (1 << bits) - 1 if bits else 0
-    if len(out) != expected_bytes: raise ValueError("payload length mismatch")
-    return bytes(out)
-text = Path("lineum-public-tolog-galactic-shape-b4.md").read_text(encoding="utf-8")
-heading = "#### Primary localized-L1 machine-readable result — XZ plus Unicode15"
-marker = "\n" + heading + "\n"
-marker_position = text.rfind(marker)
-if marker_position < 0: raise ValueError("heading line not found")
-start = marker_position + 1
-section_end = text.index("\n## Environment limitation", start)
-lines = text[start:section_end].splitlines()
-blocks = []
-index = 0
-while index < len(lines):
-    if lines[index] != "```text":
-        index += 1
-        continue
-    block_end = index + 1
-    while block_end < len(lines) and lines[block_end] != "```":
-        block_end += 1
-    if block_end == len(lines): raise ValueError("unterminated text block")
-    blocks.append("\n".join(lines[index + 1:block_end]))
-    index = block_end + 1
-if len(blocks) != 2: raise ValueError(f"expected two text blocks, found {len(blocks)}")
-compressed = decode_unicode15(blocks[-1], EXPECTED_XZ_BYTES)
-assert hashlib.sha256(compressed).hexdigest() == EXPECTED_XZ_SHA256
-raw = lzma.decompress(compressed)
-assert len(raw) == EXPECTED_RAW_BYTES and hashlib.sha256(raw).hexdigest() == EXPECTED_RAW_SHA256
-json.loads(raw); Path("b4-l1-primary.json").write_bytes(raw)
-```
-
-```text
-늛銖㽀㐀嬶軑䀄㐡㒎㐀㐂䃵穧䇷䒖㝝㐞钠㛣皐넴闝䃱䝽枙穤曩䐼㶇毾䇥돹睽䨚鯤懤苑鯔轳洼駦鳚釪꠩䍧偼晎匎僚ꉆ䩈芯ꞹ獼䟅나䃅鉹筩䶇蕁鮐ꖊ勋䁡ꐚ皇꺤黐㰭齺懮䊍昷扖䖀蝀㥂洐䕁곋咴媭뎘㫠ꛗ䫁厨潔䄏䴥荐艕倜倃㵤
-厔噌絙ꬤ葲兇㞹搘嚽䀣䘻居龢嘑겣痎놧㥙苹懄裂隟䝜㘗ꋏ鸦䖛錏闅㾉縋偹薽垹怷譬莒翤ꢨ咻櫦꟯襈鬡搥鏻岌碊蝋㙌荞萏ꐡꗮ颼紹圗钖竜ꂳ鼅塲䓃㼽냞䓕咎晞뇎挃毄稹㥅繊黝礣仯諄蝻㡬ꂚ牓㦠돿Ꚍ㡲徠垰궐䨚肛墯㺷搓䗹汀
-滴ꭊ塃讐第ꨪ肬洊挟ꖯ蒜䎺洨杀糥ꣀ罁ꕸ財乇嵝裂緜冐鉵爙瞈兆嶼梹潲ꅄꘟ鱿魈蠋䙊斷긫䏦鎷鱷껌攕泞凗ꬂ煶瓕臾俘敂抝迼諤㑾妐녛ꊠ灵檨儌薊獤嵇臚惣萭播䣤阪蒝児聨曖熌浲㜁殺锿賽魗ꠋꭟ㓾茾곯穳㑉鱠煏Ꜩ諬㗥㖂恓
-啁纁ꦂ熰㯔粼鸷䔟鸳검㺰豿厱纴寴檴甹喥ꦂ鴗눢咱赭劺䙯髦窞颓㪨缧㹟儱ꦌ꒔笊庝吆蜄䨐浡蝛蜈蘣㒁保鶲滏갨渵熕鱃䪷㵩堞ꡌ곝鮍䭔늳旂䄏㜁澁ꁂ躑ꟴ嬊礪缸䲼瀏끽㕅襙焁呼賮㒍帰埔蠐勤蟓㱖㧼罣襕䓘湔爱謖抄ꬭꫬ䤙帝
-囐鼃櫭䵞ꦍ㽁峋囙角禹縲ꀸ祅䣸ꃈ痠劇逕陷歞睶귑䭌뀚韥㓤꺨薭ꄨ뇵葇䖭䑨錆公餮俣蔯帮㙄砢䰔牌相尅㱤꘮ꆊ舎唿顎邌嚻浈ꡓ閺糡鶽꡽潲盋溍㐏ꐬ憸㪎岷㔈䬑뉮噺뇆彚萙暬鼍淣薓犅崴괾篪勩糣䡎䜂箄蠛㼼雗걆鈺墆㕐鯔蹭
-捍㭲豯硁㮑湒峧단怲枂꯫嵰䟳㳽啟遥뀬枍䉳鎿䶶漨㰐ꕦ敛껆蜷輱鯮榓彍䠤귞㸬笡鍊간鄨坕働玾煹燍维禺攊岎侮䝲掛㰱鳊㘯獸螽賱닎忑儰䵻ꅱ䠯蓗䁅鋁㼷蠈篈窵螪ꦒ갢Ʇ䁫负㖒ꙟ㠅欜盇갼돃纻幪㬘媶跿萷긼ꦅ䋖鱗㗺紻驟埗
-糧悠䢜溶垐徢泔柚䠕鏤嵺礩悧꙳䇹慡琴ꢳ镆觺弶鷜禌꒒潲絡갥敀礘䋥喋덾黜梴匝餉䋍蝋돈惛䤰痮禳蕼籈곑꼂鍴䝓搎旼鞷璍絪礣덜㭌阔湭譥ꐹ냭歬꿻蹡ꕿ谞蕀誖鲤㭔㷽䡲秬䋋洗㶍锄攤耶置沵敐蜱ꧡꆽ㓧逻斠껑伷觗撼饩饒町
-競ꯐ骋ꔸ湘䘿抈㽾塑ꠀ깼犁ꩼ敨꟝昆垻罳鍻㽁蓆箖狒誻㡗媬琾卤翶喓㦱撈娠齭袐矮덮恰躶꼘蒍㳙嚼䄬褧暚湝䯣掹皓濓䏩躓蝱滵轔衜橂䪧慝䛳撻竏꥚竷䱺憉牄顆軆梃丛뇋係祝沫蕢跀䆇䔆燮嬯岬嚄隹軞幦煅蜱洤㨱揽ꎥ㬵翧㹳
-殞遷涂府粓경俔幈鍭㜡烘衤盧谡ꞕ㞣珘傟骈㐵鸦㴗䖐ꏬ栶䇉酟蝙睙㠵篧絅簢翟啤儹吟畃亙㡫䁖䪹뎪猱跘坤䊯䪂貭ꠒ泦겪昪萓荃盉귘궲吡ꎘ墑눜嫡댟濌꺦頣䤜닡䌅獇ꄎ柜䯰䎷妞㓿疆ꑥ欨糫訜孡湲聒麲販鎇㱭ꌞ儆꘵놦哗㔾䙘
-疮㻃漅꪿놥뇲鄭趵鲀筷花꾰䴺踭姙楗㳦勯钋䰀欧耚唣꽰旷槕䙝㕦撊橾易㟔䁈깐諐葩蜈㑅綅覆矐꘶踋揓餫冕㰥阻懻ꪗ괨諀䷱꼾㟠ꅢ䫎祣顾鱢ꊔ勔㰴缪搧珄仨酎䒴ꕛ刴敒疚庎苹锚挿砄攵姩邉舠墨㵌䣕늭䶠墝䡣勠䅴箁磜ꪧ趞鋃
-嵾嶤㕙苍髜壖ꐞ䭝腿線䳷뇵怗㟸楄ꔣ峚劺醇乶鼔叀ꖰ婟翬㔕籩怛偌녢ꀲ梽羽羾焴狥軞䖥浪䒬ꞣ꼕笨溋轣댲缗㛍唽怷稐埼檪磸䭇覀韺덪迶㢪誝钱衲驟吸鳈岢絹劖漒肀魋類媨뀙盭겏偃侽膟䋣糂仹彣ꕍ翉汌牺絞恴桡䋦蜥㑅㻳藅
-黰馹頧뀴欱奼肝ꅢꭎ惧拷濥꦳鈋犴岠这屧穡焒儒宥䯌瓷悭ꨃ꿷䊓ꧧ樨鮞萼钎䜉掋嬵由㻬箛旱돃荫耉㾵긻ꎓ䛅㱏䕕咒娔棠糴們ꌔ籵鿾浩偶㶌勣闭䈝㳱殔橮㟙㧲ꎁꙒ玍蟸窍鵧炚癟爊茘鄯ꍪ堪鍓湛龬䮫扭璦枣靳ꚕ溧끜摐댖虂迶
-酲㾛돕毻羡齡揟갽洭筐冼䉹䘇䈣嬛ꦤ꛴㹢碕瀀ꭁ嶢㪋긪鴺䪖塣䋻胗䯀㗯눛㺌꺟㟽꒕桿晁浹瀿놘殌争꨹檋劸ꪭ氞餅劣杷死迭螸ꋈ瘨畤Ꙏ惺伲ꈚ刜蓵Ꝗ鯀熢擊贬껴荫䒃䏣ꌩ皔䇟덮橍叔䣈樑㙉薍躎褸긆䈑軘栙厯漢ꃞ㖇䫆䒧哳銱
-附㕱冀㐽莧脔넅䳊㶻緒数腿碳巕紙Ꙧ䐞蚨礊劒飠㐂旙ꇬ啗ꕶ兿擃䋛䕤ꄍ墲藩꘬劅蘮䜞걔谂㬜䇭骍ꬾ樴䮅巽环箖邯䈛簠楨郗䦦䨀䏻犲玢撱粭꼮苵걦晛闥墲䞬㷞緷䜐䲯㫳牬轿昺十降㩙康喌녫姯䑒硬䝡꼱簕脑憟磔襎笕㙝诤楐犪
-燄顡縔䉤诓彎犫蛷꜡奒潺㡵牡泣牕ꬸ籙璻窑礹偿ꓩ䀴暞㐅廜㩣頷齤㮮ꋰ䟃ꝤꚄ䬫㵸騪诙疏矅胦鄘謦㯹晊焉壂䂳垓滊뇥稐䟆鳡樾僰嫱嚅绍㢊煗椪囆癛蜐铌輡蠳鞰廐戽呝艂硻䃄䊂꟔蹐恀꼓䙍紼鸄唯齜䩈畅旸駴鍜魁葂銻应꯺殬
-侲瓮㦬錚䷥躔韰溕䋟珲滍굤囜鄆樈㠝斤袤ꊆ恫鱦䍫鵾令莒鳬䌯鏦궃谨䳼䪿㕝穔膃㾟噝寺予兽䨖妧焎貊劵吒㩥儒押霻倅굲臃㘃迲诞䊪硇䝼徚豄䵠ꥎ顄蚂刣犡䅌輍諾蟛樱潼㿛꾍鞓㬈凄ꏔ䕛ꂈ涯躭懥欱俾䱐薠䩙娗笆屙尦溓摝㬗
-喞墺埙騼黝ꢹ꯲긵䢛襭䠙瓼紐㫾蟵謗訞熋哗甍䂗陬攆踸卝塤꤭㴈渍㷣额摙檨襮椵購叺㲿鄲㿹弨叚긵酆ꗬ鹐糺䷃䬤㣏敇醑䡔偶岂謺䫓锛結鍶끤莕굜構㢉橬唸珉䒁䯽㥅饭箋潟神歈ꠓ夵椷俾樫珿鰲葽ꓶ溺깸狫圑䭆踬橵滊ꌙ䬵䴊
-ꕶ屜䛮服凎鰃炍稱䖭裍䗢舌ꓱ脣顡删䔠㱜盐㾨竊꒍䗬掇髛鬉㩄脦烗邀槇藍啨糎孤鈻鲃鲑㞤螀譧充旃꣌烿橡嶩盄恵㠢㙘爲噰貘翫榉鳙馶䐒怺焧烯鸮鸐꛸䀿䫮拨꼑顚䬖㭧琭龚旊䄻給沵丘竻㐾汢냏㰎婸椘桜䕲站琟陡㷻鬵㱤紕棠
-ꂀ琠醃㥒矑녯烵特䊄雓睳餖騜癎閧咑圪䳬符摃楳䰼ꞻ牭輼ꦚ琁ꆏ枈紨糓뇭걷殧葧嶕깰杂檊猃瑿䩫摵㘲帛爵扁䂲ꅻ盦㪋꺱鳰昣伬굏静従ꪟ㽁ꉱꟾ긃긓瓍煨僥Ꜻ篺蘪겹谣꼂돬䦢乶鏳元溥生凔ꓫ涣诓䴋缯鯄轫睾蔖渳煇鐵醁隮筶
-蹓䎤潻꡶끿邜닏簂啱㔅㟏貔斈㹷㑟腌淆ꘜꞝ絴逅繭䁗籖ꃐ覇ꁚ䎪胖嘙繜䶜䙟砄鵋䏜麽ꫂ鵞憉匤溚尸䷬䥏篙ꚰ背翔ꖩ哟苏䁾꣮噍巾㲗兕懂抓ꉹ椉囙犽㼎綺㜅岭扤ꝏꮘ烯浼䠛䃫輝琥ꭴ聯锖ꐤ㑎䵜聓㽹蓊廔䀕川苩䢵伫胒蚮愌以
-锉䗡滁㤡䓟荠悶慥績臵龁乣姣娎굟鉪鳋넥ꤤ掟㧒嶻耕癘ꌸ褧銒唀ꍓ㔈㦝眵廚낺䖺䃀䠖ꪳ咚柤䲿䛀鴈寈仝俥炢荱鮠繪鱇馥愌꒷梦蟧捄㗩伮ꇑ匲ꄺ鰁磹艎胩錵䞑䮽Ꙗ鿧苶萋劯㨰㣉鉟比肁䎤䂇頱㡩꩏꽟ꅏ哏碂㵇裄㑉䡲臣蟐ꯏ搎
-踲氈顪淧䑧蜆墺阾顈倒榊荾뇰絴䀯䌤砼抿霼牆蹆擱㠾䨩눪것䑯ꔾ댽ꖑ䖨毽孖巟ꈣ斖꒔紡藹塢躂㺦旪濎邫㛂䬄卬돆敟녮錏㢨漀悿盅慱峽ꦦ鑄醔鵷鑈㤫曙䈤덇㗲咋绢늦㮤榃峭钫雹㰏蕆㕘㺱痮ꈈ俹馝六덥넨藧㞪芘䣧鋒汎繂㓑邍
-閧篌冐弇谥㽞鮑酠䲠猐蓕祪闯粇늵呈嘣뀱鷘葿佸ꭟ勦꿷霭樷鱁幗脂냉鵎稨烔柳㥉䅑䕧㛙뉳甦䖯镄㠐ꛃ鸀㠑熳慎躽㽽蜌㔓敀겁鋏蘬㼇矶袓ꓛ磗觯氏닪宯뎠ꚸ痆ꉾ畩㡐釚䀖낢䘩䈿䈽㚱儝㯐鉂ꥴ뎦劽砹昻Ꞷꭸ㢍吶幕ꀃ葃髴钒匍
-遳駊伛䁑㭦ꏄ釞䦵娈䙲秪絜賲淣䉴㷛眪ꍭ壶蕩㼯返䴷譂资缒굅㺚侪辵㙺ꃛ釆薊媂䦩艌乼錪恶놮Ꜯ螛专㕆緉覃㚻骑嗙猕漊雩㪻塆羖硟亖旡㧝㜅幆慓宵迤䥔嵭豑瑚芜琖抇籌浧犽ꆏ穙뉠蹱飗黉鞐ꃗ꩸㭠ꩆ仦嵠䄧葀㷲绮旡梱苊䎈
-蘱丽婳秾邼尥熤烂烹㶿蒡ꅤ뎝鸝닧㛩㬁党鬣㨫嬂ꬑ跘㳙䔣羴羈虻诒掿峰䄘圏荽瘴炘侵꟎窱燪劭辀꺳ꄈꞏ紪獖ꉋ都㠅罏脍꣉猬秹㟍颱穯櫷䍕㽞罃簁哥넍䮐雽姗冒虒㒥貝곸溕鲱騿鍩页ꯓ嬔䍒䀎岖嘃饴Ꝍ迭ꇷ斠鬠拉㯎䄴驵姞䓬
-砇诏宯㝼嬭ꪺ蛊綗袴㻁ꂨ닿놟趐妟㐖鈸蹄㢿鳭攦겳㮗麣薛ꂊ䒈嘯胱貾墢堲㯑ꪐ義淭ꮷ浑幓㛣䖧豈跊瀔㨞哧㟃忴尟攙뇒彊厽䧷枡吼䃋轤坆孨㴱肼腊埤䶘ꍳ闺䰪炠聚取ꏆ䇟髽亥꽐闛币颷伖䖗鎨挛ꃺ坫涑䰸ꇟ単㒲疝騙黤ꃞ꽐ꃡ
-約恪膣㵶沃廓羥剢㦀䮠夑곑恙囨鍷ꓑ拈㷀紩鯊羐萰Ꝗ㸕薤䤭犘犆虨龭碬軟塙洵䧤麏䟏뉷닌栛䘟黮樒ꙍ迚閃恹涄蕴綐꼁㱬簱녕ꔊ䢎昰강蒦ꍂ䒢䭀羓臮懈꩙꽑㡁㽛仉諄꾄瘶簬㓦脟琕䅕㑰肆ꭐ侥初낧褋熦ꝡ놓眥讄㹁餡꾔歵㘔牄
-䐛鬖蓋ꕭ䠩殎璤賞䴎苑揕穷䘆結㹇賡拚꼦갅놇獢獂噎臌䛀膲䗳㚡ꦜ깏꠯胫皒衣歑忋蠲蘊뉵䜡垢皯䇭㺵紐啳劦褱侕邤傱罴彽嚚㬚䶔愍ꃡ褿浘膲㜶䏿䱡ꧽ㿽星眏汗㝉ꆣ簽鸵苢갚桚䑬꿦缓珹呒濂魵䫭䟔䢐瀵踅糏旬佟㖻庖㿲桫膂
-敎姅㱲萃倉㷎訫ꢴ㵄叁吔鸧淕眷凡徔嫫淬䂿澾刉ꚐꜼ鳻洡癓㣑䟯ꢷ䈚戰㯤䔃䡽낚仙ꉷ䚉禡ꔊ嚔綽徂䞍䨏臫玀䠲螴虒诰黙劖䋪郕ꎧ梟䓿戀纴闲㡐魵畭䰁銼䣂乨燆忸鏘㷯霔㔢䶉羖꾱淈殀䑡柕匷啒软낻俖䉌귏亼緖滌礳䡟葈峅꜐
-ꄮ馆㸲ꘆ綖㘅姁偶䒏䠁㚧谦譅뉅鈦疇ꔏ蝵蒺䄙ꃝ䪕䗺麅椳絼嬫䌐冨袛灞鐈ꟊ懓岇纻龶秴衽稲㨈歔㲏ꠗ靁ꃨ赇苶ꗾ黒綢戄肩蝩奠謿ꉍ茶幫媰界崇蓓㭅닒㮂ꄘ懆䂯䄄䧀劾ꝱ굾媩綣꒚憯굞埊冤禽淕遠竲睩譎楠䏌䫐荜簈厉筐꽽炰
-䶎矨䢏啡놑酀呺静楟恥迣痜緤㝫꺷ꦎ豴겍䄏㼈㶨欶㓎䙌蕾祟飯圢艒抠飇郩긗贀挅乺億诬㛙暺泈榵䋅ꡡ愋굃ꣲ㫰㶠楫磉ꐘ㸼閪悮ꊇꪸ㗬㿾걈㳱鲫ꮧꨆ謐庋镞枲ꥱ攃ꪦ熶从龗눤㽮䮖赓垴馫鶿ꐨ芟禆鋄斖君㖘㴥漘輢㾍戋達澷轉
-鋅毸嶿芗蛜俏鿁殗柏俍閒돋翔䠽陾嫆䕧桅觶星갱銯孈㪙竻䜩顕㳲䠺댝䄋㷲絣䄾ꐾ嗍瓩筽䏸仿ꁹ䑗驑氡ꍌ办댊ꉿ欈鄔氷酵㴑粇婮㠰翐㦍䩱褎䤿侳ꝼꊰ덡䠚飢裠蜔紙帵댯俔嫌嫰绢綶눾㫛㜻椳댽襷赞㙙䂍㺅字豃晓嵡朢躁良埃耚
-馛萕嫏끤痷蕯䰁肾㔜荤谯足脡涺錉讍橎ꎢ㕎邙坘䧻觖䗨䶫餐囩㦯劬鯟挎嬄㭨徻邹㘞㛠㢖ꜯ蓏热葽畨鴵庍㷂酎福層䍢꛴族淵晵ꉿ帺䖰髶躡㰙귾凿嚦瑲迴觸镽揰꬗巡㮠䝴㰑갌羷弳㖯渧蔸碛褄胳蔠蘻筬聴匆槰卺뇳㘣䁇结䙘姂腜
-仨㶇㰧氤ꝲ殼䅤ꀱ璨熘硌莹顸㣑氋鼜娳浀㲸脲䜐圔㰺䷋鹭䜘꾟겉貴勣㥖㕛熆峨禚贙㾛祼䑑奓瓪㘔ꊲ䐈碢ꏂ눻跍㾥䟆塖餫实镵恩曓䋟婰鱵䬯偰䁦寭닰篶蚭ꑚ煫ꨠ群簜꥔劳䤎屨枨㻪㥳嵞琺曺䙷黺䄥晱ꠢ笤沛曩䕻㮁禽绍幎翇걘
-場䭺ꢺꥇ掞菱颡뀁賞꘧觔걜꘻꿮㔱䗿缵鼸ꑂ广誙阝藸㻮洵꜠䅡뎖㥘䖧깪髀噕䷾蜫右爋惄녿鑄ꝟ崧扔锱ꉀ匍䁼儈鵵輚㯗꣋꒞䚪哖疃覼皈罾縄茄癹ꤨ浡㔌诔淎鼮鰓葧豪㣋䨸牘㹌褠꣒䴢腷酂忥㪚閍紱皳鲘琚鐊畵眗䃮亳Ꝡ抌巽꒩
-卷㧴䩬晋憢䷙㡵ꛭ耠傤穝艥扃憴箶荂辩㓎摞聛騘䣦熞罫昏乽눳颳梵圽굳嚉㔶ꅪ烇謾끭䞔五猣䬝祱雛鼊㯵竭㞈钠䥤佗嵈翅䘢谂䡎骤砫㓘鏹蠌莦軎䘦䀍ꮺ꿿燫瘆꼾駥详殈鉺䅇輊ꆤ铔㔮ꭔ䬙濔碨鉺絑矫煯躋灬䄵㯶晡㬃衩䙈榙蓗
-芶厃煫橢镍嚲遻褗裔깹傸䊀㓋괿槩齕墡悰䒈ꢦ꫏洙迫䝃痑㪱涝氎髊鈶莈頏奋㫝㲩謋磣㽘鉼磑綞ꕽ䆤苟孰鄊踽框钃壑溘餔嵰ꝛꤓ踧ꎼ鿵傄鄅껒㲆ꎤ넴壇貘踱塞ꪮ曔贊ꓟ轙轣鵉꫄蟍㛟烳愅군뎬鲵湝ꌀ暇㥂竤ꭢ㟴薹덛蛏锄翾楨
-鱥秃㞭礂ꮡ齷穤ꓴ缓䘣蠚渤教㭳莍蘮刜讅險宫魼焼ꀅ濺尳遻鉥謩箻蹌ꠛ泳㣘䚋䂞꓊ꌇꐞ丅䃩譮薾萘㳡ꩲ䣿榻有轜㺆䴪蒮䣴玞濯䀴䑧ꓡ月憱通铪艔䋨䆉嵗㾆䇢俄㳋碅닊꒵㱊끃庯눴ꕓ鹮虖錆誨甹岷䦀㕺鹍祯挤㾑糰檷蹇槩祶絢
-鯤ꪎ拾痿喯袊䠗㰟䮚援䭮䐣漺귱錀䜆禧礞뇻潑澑抅搐叮篧㖦寂晹嚘纎刵鐞琯骉騦嵳邢눳攃柲耲鷖过굅拋瘖豳偉塅籕绤ꎍ筒肇㡹祽緸存邍㴁鴋櫆䩹㯓蘨㙌楸吏㔃羱긘桪ꊔ䉨慊뇜丧䙋貙꯸妜赉갍䤲赃膣鐌蹷晗虶摼鵖㴣㓞騕䋼
-䱕譲㔫ꯀ鼉騍ꓱ誖鑽鍔鮰挟膤꼲渣枇嬕沠轈䮟㽌湶䅑窑蹭䚦ꎒ陳抐縐羝凁ꭗ憬劐ꫨ圅莌꬯䕡慣寡璇婴닛焾癩㚤䳝圁㤡㙙禁넨郴ꤽ襖棹撀넇䈝稻㴰날扐釲뉊㧶楘飌籀ꖋꋫ病Ꝓ闅曼兒伮䤓瞉茟ꟕ徚鶉賉ꜝ秛芸绚䡀宮侟ꭏ樔ꇰ
-ꁬ薊漨悬掷蟫鐊瑊蓱䯁瓂㛩㲉捥萢鵦䊕갣㯱㪌觔䲘鬊ꢟ傿虋墏ꉱ鏩殣鷾萠鄢鶹赱瑱漧謘祸烲ꭠ獆깺腄洔受墻怇藏馗皎ꀸ骂錺嚇堹琽鷈㐻䂚㪵個零䪚䖡觙嬓ꇺ㹚鄣聏呩끕咼䭶霙鰸妁䖳ꡱ侦嚜萾燐樿廘洸穭晞ꇘ뎮䡢㠄褈奕仚
-憜皍鋬兗豱庙蛁ꮻ扼䟹䱓㟰累鑭䏟䁁楉諀䐋希꾠攕鶎䖔䭇嫎歼櫕㧗㞶䘖嘉务渰訝洌ꥦ袋祈擹䛝뉩嗋箜巗噎ꏐ弤旻薋鄨䦟㷊齧䟪巏躝伴掂낀殶귿㼋梉矂늀鼜聩덤熯賰恘袁珄痟겞捋㐼壃꫉ꊵ㤿鵾晆沜䚿ꪶ鷡蹦妇㢙蓺剛蜆ꊣ河
-䩊溈ꁹ暯毼罐烧㫏嚥㜣蝫浊㒥鳴洃莸簆潬㻀䕫㤣绯꩕軘疛ꈿ鶫놀竞俸奯髩憻穅溙憁淗㳍壪缟欘鍩莠翵놉縎嶍깉꒛䃕鷮䭘杌齹筓口暄걶䬾踃譃鷎髫梹趥ꛂ渳骈簴硯盶冄㱘㶝艰摌趧牺沐伒啵睒䆎崴嗠暊긿ꟳ瑂钅袎秡㮇诜䅊䂨
-粐柙㾇礳挠遘瘮膪䟌ꗤ頍납꥓鋅胩豄櫭㸿琮㖛鈳㠻墅淊䨤譇萉꾚蔡軒頓鮑涥呭䘲僙䳨覒驼譀䒺珘锛鞟帿篺䆝駣硪돡㓙刿埩帑圁뉨籧杏棛斁簱䞑괜冼蛶䏤犜驵淏呮歇晘棒꿮纸㵨㻜敄鎔蝞䷋茪檎兘ꕞ豱磒鬀낏窬嘛嗾隂㑢諆ꂂ
-㪈蕙늩㲷畕ꐵꠛ藀迃哠ꝩ䌋踊蜡䏷藇紹놕抆詇棟ꪦ䘮贾臞擘巋蜩曎昞豍澝ꙁꂶ饌婴莯栣䑇鰋ꋅ蓇媻誛㨅罗薹逨騜ꫛ蜒䡑镯傷ꐘ绷䔀㶲繠䴦悁茉斞仐朆昗坳㲢勂鞟膅皼䰐擤꨺꣊䷫佃妈䄘唿窾磛縔ꬉ茉刭餀間瞐熌觗甕䜍腈詝
-廎踪翔ꩩ䢵迃糸铈惉貭꼮艆筢耶扇榈鈿ꨡ鿎鵔餭覐擇㔨疿䢐礪納㪧韷桂겜躘鞟烔绩䒂㸻㷸萿ꕠꢑ慞粏架鰊䤠轸垈漸蛂贰ꕯ進駩䙪迒꬜ꫀ扅逆긙窷㪃岫䰿彁彈稆끡跨늝㔚㮎栺皉遵晣妀瑹沏吖岜鎲蝠勸䈙龬榰䕗䩓韛搫䧔轝㑌
-跭㨱恆擾桫滸誸諱庛唻덇奅昡釲녑㯒ꀯꔀ葫ꌢ嗯鲢鱽儢罦ꦕ㺷㪝蚽鬂䯚躦䱖薿蕚徱ꄊ㢟겭旳牙却鿃崓鱂电凂诸䴥鴏棑構盡䟎늉㺑何ꄈꛊ넬跔窣帟趿陃鿿鄝㣳峆棥䂦十ꓻ덩躞瘢鶇鋜ꦎꎡ菻畅絀偡䩇誃哮糀뎟摣腨鹵矼猃䧈煹
-歈놚渏薨蜲嗨辧眯丶榵鿄ꉭ稝鴔浀内碆鏲茫嗏ꀭꈟ騻㻰毀串锸蚌䇆椳鷢꿲䚳琯㶻渞㥜䧝ꅼ忐忛䛨䎌窄翻鰆넯蕛捈ꫦ徸婹꿇唋黖籊끘悭嶳菽냵幈篋㙓毂넳諒渚갔ꌅꂻ㿀鶡㾕䭉碐鎆祍灅夠鹸ꔐ긻虇魠胛ꓢ戢㷋䪠ꮭ烎拯哅豑ꍌ
-敹ꋝ聸煮ꅧ餔뇒긟榊늨꾁鸄豯놽篸桅蛵㰤䗛愥嘚湔鈏焕蜱늌毇䯕㝝惞㳆壘㳍潏鮞ꋜ谒㺲膥嬼鉤㟱㱐貗邔ꓚꠏ菋䑕亾醳뀝衐炿睓Ꝕꑱ馷此ꔑ敝痻ꖟꁆ䓵䎗堤䏆陻㨰䜑咦㗠锼賔ꖟ㜣缴걶鍆ꥰ沑䖿紿竵㐣㰺㧯攧泐㵪盈㚖軳뎘跢
-蕈㹑袳꼤㑡靶鷎舅凤氆誯㰱亁儸㥟䍫齽潹䶶昲㒔腜躿丂鑗税矖魈厁댕购湜䍉爇ꤳ釩莿䈸舖ꕾ귺驉鿩润殳洅굅豉慰吺梮鶂㙵㙃䒿厞㩇頉俞嗔桕䳌废遰靦낿ꢰ莰䪫唴膅劘놅岌愂꭫䯩氹漅玛滧翓㙾鳮㫳宿䩫ꅙ誽儏䆰螇唢ꀫ爓樾
-甥꧳ꠑ瞺仓囡鏂㑜鍞괲孅䊞害귔藫蒏ꖀꏕ韙嫒咸䜚䇄㱦㿅奈ꗥ媎凅撒甑㪒䬋湨끄挎彺꽞聸䂛闵䱇㦂䤘䇣衵僵纱氢烵骒疋碸词璥嘄憥䠜訙ꏏ䨑豾䝤代坸ꃁ堄醄躁ꪄ哮㣹ꅐ击朳梣ꖘ䳰䫚棍爵剏㲀斢鶈燮扠裤繞㵓㒳㷏Ꞗ淺껕润
-踞㤗㾜秸䍌賆岬䄋徇裮谨棎뇅虬鐍闯嫈屌艋䇦ꯣ鉜㾴垂䭈矊膪鄀衏州ꞔ橝曌纄筱ꇐ旊辜㓕籙㞞祸兊慫䔃飾揷熽귘堯䓫殳䡔枣ꋁꄆ菹擰蹏㤤羢盪哑郆孑床䎫ꌢ㔡抃貰嫵䗰閰笻敖禼犽䵘㘽牸꽂䤘㢃鎔ꖱ坍ꥴ㞐嘼蕈ꕨ彫篢䖢踸
-漴佡巌暌爥㮊艸껻獙橐䁒鱔蜠㼥꛻芞諑褑做窹挕穥硇鏧귻㗂鼠导ꇆ瓟球蠅石緦㒡꾨叐鈴廙腼椻黋絛㻲䍁ꆏ薛䧪潞煢궮蝚赙鯒臸䳋唅䁐겁蘣ꎯ䡾昭ꕘ朊꒵괄蹐亪專磵䴎矫ꃱ䈕㲇骐绞㧎ꇲ䠌溫齳苉㨮脭岟㙫椸浮괇깵㚁櫲少蠛
-顲揮䪶꾟親꒨㓠㼤䨜㭵嶫䃎ꮱꠟ燽幩䉌責匡伐皟塷䇮欦忂棈礍鼅Ꞛ糇逡顋㠈ꡞ苡낉뀅镤꨸䎋䙰迚넍魊毗䯂桮抬늸覢铗韋䧰椇事亠䝆放恴ꠑ哤園㩹愼訾笑꼡䎪㶡㰘䀄約Ꙅꈆ藽罍捻ꜭ衶꬟堜暼膘㯈䕷狀旮椃龐ꭃ娌固ꚝ鬦魿㸊
-㻤㺴㷅缆咚賓防ꢮ輸筈瓸ꨛ烡粘狉㴊䯛气䊎廃䵴櫁脁簮䜇蔛臃禛懬荇悎꿓䱝読駺㴲釻ꤷ䠱乚䇨嶫货㤄堋㵂薜䍬냰峎䭺䲂貰婎鸹惭㓵鵕䨴ꩾ鼻䬉㳄赦霪訢糤ꐇ蕱衊邩ꤹꃴ尋縗骜꾖㧽渀幛陎爈㭖豄ꅹ儲놴衈䊂ꦤ骾䮣崶壂鎕鈑
-䡝䤶乘뉨꒕㛯㽍陿게颪賸屩堕ꩇ渱湊泰鐞䠖浬䘔䃷㩁袛滍疴㶽袚櫙䷻㨐訏曏之砕㧋㛱ꝑ檹鵻粃査鏟꥓迮ꇙ凯窐긿낳踺硍謓条諐崺榢蹯敂扭䀺㙘濽䄘磅ꪌ将胏ꅛ䶇넩劦邡轖ꔽ藘膪鲙酽悊ꋽ鐖悔㒙溲赙争耺羂굩뉬吣篊熆璲꼾
-圳迶蠬功䚂酑幪槔锚닶葖窾㤄暐潏㹌涘䠝㫯䓞䳔귶艼碡梈㞮謒㲸꘣䢪鷒㚜飵熪鶜圑㓧㤁ꛫ꜖꫾顒㸓抋堝櫂患蔬潉瞁祣傌ꢈ㫐覕殩溩Ꝓ鼷熑詯冊ꑤ䀆悞锎긥咵亍穯諗䔏壛닞㖑辺鼒黋褋瘅䢨怉긧瀴秆ꊫ䤽芴䒄箎蟖㳈牢菄驛꿻
-焹瀀弄㵞胭鲎黻俼嗟䣉輢铺圊吮늠旀ꔩꜮ巖綖玛徱遡璻簗깽随瀼鴉癕ꏢ棶熸燫儂蕕ꍢ㴃ꔔ鹷뇤鞒㽖炎曮驉茽鏔剾嶤갓蹕齉辀喚ꈎ龵訥녜貝搴꭯䚂躎熓橏䎋瓓袅吝屚卬舶㛬墣겝㺥扽徆痬譼啵違蕺蠯摙䚎砵劐䓂泒樝苼苄禮嚿
-蝚閟ꣿ赏㤕兯녫鼺ꔻ殶沽葩擻鶲䁗ꂝ䲱鉱觖灝嫓嬚꽺䏣冽餛攦舧嬛洆閨麌苩鏀磢皯腎鏁馥職贗婺水襈葙䣱焛牲捐磛址䦰种堯綌㙺䔂䧁䍥蔹䳇篥褂鶒阀鳞䪇ꋋ顃笡敹ꭿ狧꾵蘘宂瀡晵櫓篶欤ꩽꘚ䑉訦隫壏訝鵶녣䨑鳿刔系厢㙗
-걢珖㮧㢭箻肔躨铎䝫檞鲷碩뀮ꚉ渪Ꟗ㺂㚴垁鹘凹꺭蛙咚淜烕沴啄屐뎝綌㤾謰㹌ꖐ嗛恎ꃲ喆抠ꊡ橁肓㗴䧧깷눥䦣鸝돖鯸犹ꄅꬪ簊鏹㷬呰鬹寚傾ꃞ屓䷯巍ꏓ叁唚貗韸ꞡ镊粇姴輀郓蟪꿴徱僑髛駘祊鵂怮臇珞昻暠ꆭ姮庵㩘搈颱뎧
-꺴긓紼䜠秎㭗蝐潍갳㽈謟蝼ꋻ䄖觮䩟瀀蚁麙矺肳绀癓益꾽굖ꗾ藋蠞ꆽ矈駼ꢘ壖觴꘰漅鵫颃禛괏ꉱ揆澎岞놇傿嫚嚉녾欘㗱宂唪㢖㮓稺䙷聦䰎貕寶늩㢚蝦溧ꜫ褽莋摑䗓榍踕鎽踂ꍕ龑ꪔ䇤嚎橌硕鵹壑鐚嘼耿ꂳ浰䩮夅布稄㱈冭ꃢ
-訛㷽瓲斀俀䥲跦뎮珁ꀶ芫窮ꉸ湆넡晜嗒ꌧ珯蔦馄錒閁鐘䑰䪣ꠥ䬈飹ꔚ䰔䐓不㾼㟾熉斂萹稏疖镊忆攘饙驝鲅消糘牅塌㺿㹴冠呃龅ꭷ窜䪰耩㔣댬种鯫㺕㿕㫒䚏䖹誽ꌫ僂鑀崂椻玭踼鳊䪡敥撛ꔄ㪬耋愙檆깚ꂵ蟚袠錥炽㖕㾀㟞㵖斶
-昢粷弍胓䅭蘬縫珿㲎鸷蕍ꛖ螉熕蜛餸氼礴癝牕劫痷㴃僒皇删瑷泂佚ꪛ㯛䈃薁宅訐涕䂐鍙淐阝尻끩侵㬢ꑒ畩坴泲磙剦抑繐湜钾轌焠楇ꐒ冲껍情詳객偕饒砥ꄘ聢揶嶶꫎檋㥶鈛䨭㔯䛏湬ꗗ娅㵮碨壇淣䑙䡑謱㧀䆻擠釀阛助鏗鹉㩀
-槔薹秴镉稜揠伥俜雈㰍鋴ꔖ媩꣏匧捔嘳穋䒬㬜䴋柜녝䇅Ꞵ龤韄ꑿ怈尡葘饷疸罢㒯摴祠校棌倢䢩襲紧㰋㤁㫗鱞趋烲ꞿ碰埚若徫㞷龜碕踺誛馟規肉꒠剐ꀩ軼徧ꦀ嫆냀瘼輥䛁Ꙑ䈈涊㭥接낏㵬ꒊ囙酢钩䪦畗桒䧁鄟ꪢ簱噕㭟碝겫冔
-꾮㞢芻攑ꑏ坕槎曗䆀䉍軰梛怩錪懂纄錅剪䵖牰䫴榟궐ꋇꩁ㯇鋊ꦧ泖䢜㿃皊ꛡ芏ꃌ峒䫯拈녿宪鋭醿Ʂ齩恻坘漏늀氺编꒣簂塃ꀙ衉喉댝域鏚繴궫閸擦怌䐥柾聻㢕곇䘖ꊯ냶㦺ꇶ诠㴅痹湢䱼䱤ꊓ독넛㑂䒊꫚꺥猫蔣꼹鄃滓ꍍꝐ䶏譸
-豬彰ꀩꀜ岄諫扼㘔䧲겙嶰殥婓淎蠃疳垃胕真䍚㒾乒麰苀賅訳ꝇ堇繰䞔欀楂錄뉮郕嬼襩鹋껂䲟刕慂伬烳穌薤ꢜ䣏樽궇菄棾黆閏㚤溮歊鑂槓嘺㡁鿥趑响狪㦳妤輠ꇦ㛢鑾迃陥䒖꽜藪菘嘘銱垠侐窌㧮辷蛩㮌践靤纐贯䂏㺛哌꿘ꋑ㮣
-㷔㛊夝䧙緪羶ꈪ絻絉穙㼩豤ꃌ赔鴨剗暗珍韵糘ꑧ沱눚痦羽救悏锒誐ꞡ㱳鵉䑣僝栊墥倴鍇ꤽꛅ们鼩꽝䠅栳ꃛ轌烹ꆾ剃煖ꁬ搯閄榀風虍臍䜧唆䬘餝䁉腇扬清㾅ꍞ霠邸꼊兹档㯘厓锟隍搇䧁顗格鰩鄎鵎蟙熃ꘁ䪿釼詧뉇ꚃ崪䅭䍦䂲
-䟜黁굗抠纄ꖉ㜹餠钢匕纣坋꼰ꉏ浧ꬕ袲䙿꫞꽴ꥏ薶皘ꮻ魫褢䈙蘖䪚꼿㪩糉䚂盃鮔㪳谾栝霁擉頦䌼嚻ꚏ餠縒逛簲凙媌䄤颫䎐倮湃菡瀫牬䇪樚霛긩賞旜镃䩈題潘黁끀罖鞠哆넭焜斍䰨騇䅣繱贁査曮莩蜦䷋蜌ꅆ聞ꬽ芠箮嗥㬐Ꞽ武
-ꈸ㻤丼禢墻肱䨐ꪏ㷯䝗慍꠪麜奊꼲昐妏뎤㹨㢩軸ꃇ竔禰铄㭣鏔钌澿杴ꈡ걇痕男鳚篆䙭担痿炩㢨䑀懟轂蚭愃ꤟ磽华譣枫䘤䢇瞭帅ꋌ과눫飑ꪅ鑾嫐㣘遘鷜剃迫龞娙鉈椤疹꜖现䱊䫜佁做篬鋍㞻燒과ꞽ長ꑅ䎘䅚绀經豩芾꧆䲘譳淘
-概軮䍃䢾烎㒯榲ꖜ棲欹籗衃狴곊埝圗Ꜥ㺵琠䬫褊淹毋苟礃乘珒㑬ꌢ剶깭匰儍驱行粒䋰卽犉傟㜤ꂚ骜瑘拠䅴炁ꇐ喅姱遻樘嚄毥鏎鴽䨵뎳寪謓挚砌㷢呖㪀枅挶赐䐅鎻䭵ꙋ䁔磅鎚铅簀Ꞽ悑䕭꾸㳣靊勉弈傱豱ꀝ辳ꈾ㨈㨾肈䘙糨꫙
-㦛胚ꐞ꾌练髂毂鼸嵜㯩搝蠃ꝟꞕ䶐䆑踕㟮㕎넲養勆枑鷙緺ꓐ稜꤭疑邋㘭꣗㒦鄌嶲贊枈镧簆絞䐰剐簻ꛫ欀逧靐瘪颗㞣鳬欅䍩餟ꊨ躵禖扒窦翇帐羘ꯠ爩跒닏蹸㨨嫱ꙮ䙜柈羇匈迻䈬厓鲶皩㗳滆等楓䞕㛞닾㣾喝ꌘ篏砿扂正䢿傲售
-縻憟囙㔱ꆚ棙飄㔌覅䀗塎䓱治擲磒돪䌰Ꝟ犊郓藙卓鷝꒍㜓墊楺穬꣇垎Ƛ넊㬱꠼扞憡㴹㡶囍揱䟦䟸䮔䴺裒略㬭硬糗企嚶浗瞳餝舶簕㻨㜓读贞穯ꐿ酇竷놆憉䕯㜯ꢋ钚輑襭䌖圥㞇柠㓈焄瀭鹻䣼蚮늸㙃꯲歭佅ꪤ延熧炨ꈥ疴꫹皞䆷
-练ꝲꙪ复龸䥹皙逻苒鳕㙵埸ꧪ釵䫥賮䡙桟蔤兌䲿곬Ꞣ矓櫊轒询艫室奬䅍㼤ꠇꯒ㦞胍뇩沟盘㾕絒㾍荑契琪銴驁晊陨㒘薫鶻皟燧覥덑䦿峡醂饰璬㽅庴䛠䒾僧蟼덮ꉃ扖Ꞽꢷ냚嬽汁溧顕䇹瑧炅傯ꆊ남年硭牏荁鿺ꓰ藃顲䂠閍㩄䫋ꈬ
-ꮢ겾ꪛ货恶孟竕騟昰耥鷴縻鰥軝趜漯車瑕对㡴卩套軪艤鈅彌扔䱰ꕑ䈋塭涡嬟ꅪ綂涪谀귍蟀獑龘俞諮弻㳆糁麝熬댪㡕꫁䆼怵㲿梩ꅓ㢴ꩮ絾剧ꑻ㵙㴋宝塵깩媀ꅬ㠱愳煌ꁲ隊厅䄤趍ꪴ緧杉綜녮ꖃ犭껗捾狵嶔墼丞氂涣畇阍螛ꭊ㞂
-偃꓃止妰轻껜鴱热娪䢖㹻视㼄脄㰕瘳欫ꧬ丗ꡞ귄鿍ꟲ柝毂䅵겧舏澢漒瀶滹넪孞繎ꓤ䶰秄䧮燯㹋罽攼ꦻ麹驈汼壩㺀ꕀ덼瀄鑐簇瑲㥻瀊犍놺䶐鎝龨䞻덻낦ꀅ碨ꒈ豁凵䣝赒簙過Ꙑ㑦通敍概藁㯿铻늪ꖴ桿겢羦ꃄ㾋產䇋굎ꕢ篋帪棺
-䭲㟗坧想㦑鎋덏肛㞐뀌䊀桞䊽䚐蛠蝸㬘顆䜋Ꝍ轨䟵晀眱瘯ꦘ䡒胀郘䯹䘼鸠恣搏硩㐭磒矿杜냔㥑鶶뉰嵜胦類慣䱑鵪끢甭暷獺䫞㷱豪㨲岷穑揖䞣䄇汬葁꒵㥢眓ꓗꀙ撆鱜盩娆焹꧳ꥦ鍙欓Ꚙ奎仏䶛踧鄁돞焌䌛攸䁺㦺錹䝕瑋㸧憄ꛨ
-Ꝏ骔沾器鬨帆ꙫ讱攰焤뀚걷㣞㹛귁裲錝挮誽氱胁捉鈉䠰ꧪ螹懍蔀酽㗊捷渮毑弎虓噑驁祱焆㭀蔓蠿䎱禽䎲塑醠誵깸깜碠鉝螄镊壧悔愠徥ꘟ䌸䰱屳僡焢縞䳤僮㖻鑛䂍逐鬋彄꠯睻渳辄䝦墁筎㗜蝏阝䑰理䓚㘣ꅋ聬ꚣ輳査妺皀鳷顱
-騘梍莲咂嶿낤墂栾貅ꐰ皙鿑氀涅ꚼ꞉膍奏瘯Ꝙ䄐婭㠮덠秣䕁葤耦ꐇ洸砻岴釸羜돽蒋蝆徒蕍ꬥ㐩槗㕵协㾴餧㞎鬋蓝ꤗ譜徻㞰酛羥霦穨墪滹냏苅旟黷ꕶ瀘늆㛈郎盥걥躨蹡椌圱껇䭶㦦ꃇ䋁扁鐍㮉徣嬓瑉䠎积羊鎏鷶䩳枙淲닌䦆ꮬ
-砯䂹脷谍魚隢䘛婡㞩涙寯箷㻏㜰萪抉宄淺夣蹺㪟垖嶜派樃多繬㷭轙瑫皐殐蟬㚍撹䳊囅峸僛道ꬩꚚ灋浢䂶衮ꌝ夁羠媮ꄪ閬䩅霡荶氻儈絹녻毵跮襼衊婶骨讹訛纡㬬耝櫛勐珒翐䧘ꢅ鿁䴕斝䲩竫䯆忔꼝雉ꕶ苫䠇ꁨ礕竑ꉡ淞嶎畛㬦
-䃻籿䜘㒩㝾䟱㸚䄐步宽䛫訾䊒ꥡꗡ㽆䥔兦檿繛㞇㸆廘躤灞㯔燈ꭋ謝䶦다黠蔔댃恮괵鬈豽ꁐ栧作使蜭惕髡槬旾낻嗋檄嶩鮅眉銨軃睙䬯鎏䪖湐龣嶕녕㴜䩿剄銟㨤㩵駲㳓鿿䱐螭ꇹ闾齹珶堍埀芑㤂铌驢㿼泂琓婊ꔷ蛯䥄鐌赱粰昉囎
-珏㭺韠㣊踿繣닔鸗佦緾媙剩䦣뉮㸯겻辆楒㞅録墺Ꚋ鐚鏃槬汅䐍䏴髪꓏鈸嫲㴮鰅耝讦鞌䶍꓌鄽貘ꧯ䣠騺䝚㘕炃ꅮ郲鄟貖徘겔꺈髨蛯諶铹깱圲襄꽯꠼鄴㪃脐䳨ꈊ含兡襶鏍㴁䡞㠦銨嵢犡꼲㦻謳꿣㳮䝔꘾䬥牛咶䄷坂旕狽謇枩扜争
-䬄譈㛿㭖䮙貖焌ꁁ㰾鏨謦運㿟詉䤚傆讐㖪餖䞞瓈㦑궞炿徾灟䢷衄緼꿒粵鮓䠛꧸筣浐돝楅橽곻䶌涞ꍞ㡎韾佊ꀫ澲䄃皛鞼剛蟣婊灪啪搻淫䟏蕂䜤㼬濏䎦胦ꦂ㥓䭰樤㕿韽兵곊柧喛驩䭌䖥꬝競㮃鱡弮穆缙ꉗꗻ膕滌㞀䥽䨶喟䥪ꭃ琿
-꩖窽侪睷靈獏孷摬ꬷ婌掱꒲뎬騻鎁㗗꯽䛪蝴噲굍漎䚣憳褻焨䕦劽䘗梟䤝걽㑿伵嶳㱙獴偫끽愶ꊰ櫔觴긐隲喹慍㒶俭ꙃ㒃嚼刞佌龐郯弅箣㢫끟渵疣河酵鹨䃸䁸ꄽꉗ鏠悡韣ꈡ噟ꂥ骆㬙孃韛냥눽鸩屴兦壙拪꺑匼碽ꃛ溿㨗稯劃䴳ꆾ
-圀髕늳䎓瘊䓦낳熆泳乵㙊䵍䠭黺藱搰糵枚郺裕澊溲㠷篠韟睖鲵䵜绡薍끎嘾砱㲰ꚛ꜄琅ꮈ憪賙夛ꅬ葱㔥꼲꒹ꠒ诽挀脎暵굑觟㲘㾪蹗ꑊꭢ䤯逌餼貋詻䠒瀧黜뎎锖僁嶒竬昙數ꌍ頺꤬訡粩襂㔢筗铱鰃疱䯪勅鼪繠ꌟ䳮拹琾䄠㥱䈈般
-䎩늿贪넅焑霳㔝橜鵨꜈凵겷屪埉倹鿞雲汱醦槔㙙己谽倪泘꣱䮁邓㸢嬀俠輆㽜醵悳ꖣ雰㖛걐뀢俘窠䖳檟䴛渾梫貂螛难斊鯈꜕踙蓥䭙芫螉ꢐ䟌攉搅帤軱凔伟颓귋羿騵癕礢湣恼夿耢喤酀畋燭㴔ꬄ軋睴嫺濺귡湻检摜ꋩ欘遳碦轐䄗
-鿀肪㰩戀怚㦬稇돍聻㯶苑鞭㘕㜀癰睇㞟彄欠乃겜눩珬仍䫜苹ꚠ矫ꉮ繜鄘屏䅯恍酀擀襯礃鿭胠氘腣䮢ꡊ嗄踂덐嵇踧꒜慎耮貃閨䃓뇇且桠ꬰ愩ꈦ摷䱨粋ꂞ素鲜齮曈线㫏ꪛ銯䗉黵꡿蠉璐鵎鸢鯙㻾䄖窞镇教㧐位烢嚹䑶蓴꼸蠛ꁛ㿁
-䬖䁴搳꜆際溾檨焱뎆䪂顨膿腠瞚睒桓緃漑抂暟ꏛ唂冭竷黕甼䗸魮栋渜除㭭ꦣ髜橎䀫膰芘蘿誖㘐愽啧菡ꯙ犻绽镻䬔钻卋阇蜵籬霴砇怿ꈸ鮑濺塿膑襚ꅺ瓞驐跈蹷䢋崹劘㠦鮳閤做馐颜崨秔氬㶿韗吵꿗眏環姚橘䔻䯽㤯絵闈珮曠呲
-䷚濤陳鿄雿讎䅬唨向髍塊忍埨돜氾귨ꠚ䗒蝉彘䛇醩柤䠘㞉縗冄䱠鴰厜楪꫉㥃汕琛唞坄稥啄謠嗞䷇崁佴꽸沓㛉淭鼌靀齋㰥麶臖眾刈䛃臉ꈭ䯨㽻䦚桿㧎灄朕嵈栈鏷獨儀䠥꥟碚揍ꌁ꛿䲰㶸䥫藐霦㺧逽绀鶗䭕財烾䀲ꮹ銢呋䗑뇹㛥
-躝㥾赒䦈软甆䑿欺黆ꉺ噜柀峐箵㚤襆䣂蹙扬螦ꬠ騫畓䵋藙鹟蘚ꍦ旫螳騻ꘙ갣藯啧䀥狰㠲垽髱䝎㭄갆䋠婬鋺㑰柂謍剿蜿阮菰蟨㨺琘碡瓤莞㑂㓿衑肑窐蒆弎戣巙怶踷摽躚袦塬骂冹帧扊䥙ꂠ呹龁꽅ꘆ㰿訠㥫ꍺ粳ꮘ臐褥揶댖柺膖
-䭨櫨硵䈛絋囗㝣諥䔢䪣菑悈妀꣍叏ꑇꢐ壭菩䱗垳褘媉紎啱㿳㸆壹醆烿皙䗮䙈뉉鮉䩯陧꜖奋䄼넸ꂥ嘨玚堔㻄籢獣翬㷀昊韱枯罿碝鐮䔊囫呵茀族㫂龳殾鿮侈鶓껕襷悪䜿郐晼亪㥨猯㩆ꌙ舞䪚珇ꅳ䚩鮾㨧豪䲯乍鼁ꋁ䃒溙餀蔡걥ꢹ
-縫鰺ꝥ㧼霼渁㳂깆鬍袕拌㒼賷躸徕貊脎怃泱䍖蝳烲呂瞊㞬ꖪ礥䀙苛䶿㫌㧰㬆ꩶ浲見倐㔃溥鳵䤤嗚韨楽睊誋槧덼瀿夓瑟窹㣲癭괥꥚꥾適䜄㪎幗Ꚉꨤ㚹搧慷掟鉄꽘仩筆贔脅㭩㣽䅷匎ꊴ䙇莆峐䚸髎泚榑鲿闪㶧籥꣋欹ꩢ蓯趍㠱荹
-者槳醎欑綃彁探宊鮦鋖菍襓䓳爦敷剘ꀆ鏊ꄎ歮鼽郪鸏垂鋂褅瑷높鎥㑶巊艒揋媺䎢堫㯌并飵穼㷷佦ꉌ絯嫺ꦊ碀䦞嗿糘㝾䁇昭掤哴ꫪ闞䡂갑袋㓙堕愅鞛䎵醩溢锗同姈瑊羱歙恚䆲㬎瓢蟒綆鴮䋠䡪诠超㯭馪懱噂㥚鞱鉿違㗜䳃楮䓭
-祃曊崹譒熯㖅紤㪐玅桹鼌䌉鮄燥鮐度繝鍁筬桊桴谧礬ꑨ啞鷈濜䡐嚑鑀䀾䯤癠㞊趪놘耺琣攝蒯悀竜羸䖟뀝늣㗕鈢锹㥯埄겻唭箜峽换ꃱ銥辆㭟㙱嘁籩甫嚃僰靁莣镠懔筡犋Ꚑ㮀孋溶唠稈鞼弚㭺ꩶ닌鸘似孉㔍䲱ꛜ珰皞襡躪檆䚬搤
-㠪넨溛虯긧ꊠ㛨ꩰ㡠擓洞䴮㑄㿫嗉摙壓䴿ꅟ秉枥ꁨ柽庇输㴤囙箃篅撀ꇨ鴙䙴彐巠ꕙꆋ麶池뉃蝬賗编筲榐裋䷃佽顱譒ꞻ蕅箇늾祦㤅鋘捼蓻䚋ꩧ褣軲演諣櫊蓥ꇰ濋熱悹楔谘重路霺朱拓㱁㷡搩궍䨩ꦾ傮齾㟝蜈軐貮ꉸ苂槒ꯋ㦺佁
-牳彥㘢哄饅䙄憇ꝁ㔬ꁩ紮蠽ꖎ㔤괵擛㧎煩瞈뇀繧缂耮絿媶銖頞驞辧瓆눗㽯敪ꓵ硋榗滏ꥯ睒ꮆ煈㦴卤淼䪩砰忚坽䩸橙矂댑僦頕茍㼻喽騡覦喒侄䣄䆼㦢傜仲岅駁渵攲騘嫢馥㘕虜㞁尞賈㿪錁ꅏ鋟㨰䲣讬㙒㥆䭜斿娦攇㳰댢弨ꎪ磰
-恶굘箫贏㺌冨ꑬ码奟穮鐊ꭓꓵ矸謄紆ꠙ枭䣢㑼篫䳰䝰ꊳ葟괉凲䦘迾迶깳掘苺烥ꒋ넶隙歶㘘괜ꇴ埚冬賋㵢䔤裡靦䵹丗駶㵣是揅놗品蔕釿䥚晥淲䫵嫱끷益釥稩添饴陯鏃棵鶹咉蓩眻ꂁ艷莨䉪亪鲓醇㾻絿灎瓩䌷啬ꬴ纾ꖲ爰醳敜蹫
-䄣桯攪嬨簐鳼准萼ꤾ꾏鈐絒敺裄揃抻꫻彛韛畵䟛槜谪䋣錗㸾衪砲熗莖城庸꫰臬掆琐鋤䤩尭孽幇曙劌谼擎媭咜蒷눫浙䅗螳体纣䡵乌㟷䀵薝謤䶿鹚䷐畍䗧郅翇䗅ꎦꃳ塲萻緓肧㖼擛䋕䷅貤餴顆潀꓊榬牓鶏树峸偨禘埈㠈芺䬔䌃損
-Ꙏ儧㐢녆괔䤹鍎絡故瞈祊怡怸玪櫞捥浜逮㾸뎓儸ꘂ晿㰖榼皊㥓侤䝕꼣媥洷纱闬ꬩꜣꡣ告應鴜䀴猻竨䖱媮佀䶆䈶慩ꡥ蜞地鸀뇆겴暙䏻㰑䘓鴑逡锕蔎곯耠濦喢䏨刱芐蛁ꀝ嚻汻䶵屷彊南㽩心䆗ꦖ繿䜅虩馨㑃坽䷁媭譼觢執椩ꇔ较
-鷿瀮籵恰繬桫私䏘唯㙖豯痃踲鱰哙鑚痧骮踗辯㷫謅䞋惜鸰欝ꔼ䖎㻒獯甞䔫蚗叹氋癱䂊ꅿ谵꼀蟎臭攬宻㜇铥泱㠂㥡䘘㷁乁蓊ꤥ갛茫ꐒ瞀淅ꓭ盖괡椑麦燐舂䡖蠉蓹宂넋睡䤥㪇겾鯤꘩刼憂稌䇌顾貳厞橑煛䧄添偕笚儚㿜㒂淂㡞懨
-詴ꬦ芧迣䶗䰢夹牔鼎ꠃ껈끘䈦눊昃ꤡꭍ函碗Ꙁ紃誾㞸吟缿湹軳䷯꾧嶱社䑌暨䫧樴箝濳䈂鰀끉挏叿䰭낭掅䃺넎嬜꠩堜䨍䧭勣ꎮ縫㹕楦蝑黴뀖淫桾ꀠꈡ㬹馱㘠隀融꭬댦言낶㵎䯘㦒状ꧩ㩴냕褠訃ꦊꦪ䈞Ꜿ桩覍巤滙鐦帺莫霣噿鐢
-藒颵鋇駶겓甴꭫噝芡㒋罷ꙗꝸ渤䨥䄫砥嘡夅鷰晁皪ꕊꗎ仙慱ꓕ蠔怵鰘筥觨䧵龾鄯䎝囯擧筀忧茁䈏㝄谵徭ꖟ茎䘪峌㖂椳䁞肂鳚魉㚓龕蠎徾佞烲韯ꈭ놆꽋㷌㻨ꨂ啌㵡贼㓇覅㻒ꦂ䠑㢘槡賅嬗꨸㷋菁锪䓔䯪ꟷ䪅磺뇉댇䬽疕㠁淮䴅
-㿆齣鏿닇竊囄䥯䮷辙㐭䷵籥䨣㭺㟐ꔒ䒢莉麋杓韍誄뀯鎳䕉湱埽댬筚㻯㞏ꗧ꺂蒳裺陯䠠宧蛷欔㝃䚑䀊꬏驯鋻霣耍Ꙛ評儒廜铡卆餏鬗筑鑦㲽䁃漮ꩄ挒ꥯ㥦鸼谁皩甲闱敲䜔냄䳺旐侹穁䭪罕謉ꗦ楮䋸駡溪剌ꁵ疈萟䫌芬娠㗷緂偯卹
-䉝㾞鴕丫膬旆画ꣽꊞ酷ꏃ鷪ꑻ塧꽗唽厞脢㛵礶案喁牐懺鞙椦扠ꍚ䍫ꩡ溽綅闙犚㜡熀跭䉬膎緍觴婂匦裨湾뀔ꈖ掻䵂羖矏倀魟깮嬣豆궐麉褎猞蠯髋㷈鏖뇭㼖浍ꔡ吃薋ꔎ㐠喊奓깮髌鵦㲑妾祆䀙撔겴永㙡中厥陮歫鞟劢蠿㻖ꒉꁄ闶
-挲厮䉿栒㘠彀痸臅䃫ꇓ滝腖霛꭯䓫呞噮답屢霹䭶佁㑻狼獑犗禩꿰拻ꋿ埉鸘널螈ꎝ뇠饍捄濢㟍槵㿻袸䰹勢崣䱟蚤㻬筜饾鄌蓾媗㹇禱忱杭䂣剚ꗻ引墘䑓蚲䴜吴꟦㖔已胎抩뇉犟複虈겇爦秜婂蹉凮倸㲔䵱덝祼ꌐ茓釘镽舽藡㘳ꃙ璘
-䓗吏维捁䆾呆螙䠱繠戾ꢷ墽躡惺媋꽢崥靊㴙啹鿥魕䀀ꗦꅩ䈈鋂䗨齞ꖮꁇ歙岛煂占葁눮ꮐ確榥仍ꚏꞬ梲侕奓㵬㮋懷崳䩽螏羞禧簉䩛呰捦迫䉙꒩ꆹ㬼崅诙伲꾷ꪫ俙奫褷嚬穓堊䃃虔ꆽ璢꿑舤櫺髇溨단㯑鹢鄀鱭悖蕢㜓ꔟ㩓蜱㻞焗
-塭㮱蒿媏ꪛ꽈ꯅꆭ茥狚䇖詼佢芋畭茇爆滜㺓蠪뀩㴥䭣ꅰ濑旵浈瘉ꁄ鱺姒뇭㭊篓㭕縌而鬉蛑菠針芶괷櫃䏓巑㜭迤䆠瘬䰺ꫳ呝蛉䴹ꊃ熳ꑆ恬䑿귱倞撊䜥㶈㣔䤔꩔鄈㒔溌ꘒ麖㡿귝雍胪猞䅎惝卛珺摫頡ꄔꧥ氖帧稵ꅘ堛珍惹瑂婄洢
-㵸鲻媿爖忺鞑靅驺皮䥨凷䄱漤꒬㚫ꎪ藜毆ꗈ뀽ꦦ邯脔鷽缶鼳㲰襹㼓刅糜颩枼茐䩻ꮋ㸽㵜鏘騰忞鋘㕕谬賴迖岨ꏏ忰况㸟譧ꐢ瞘궊鵮꺕㹥趩䚐嘄駀爄祈閎劑䎞馸䄎꧵斔놌㤰婃廙叶䫨揺騇歸惝袝吀㟜嫖蒉㮑崀㓏馀洿擙蕠靺鞈鯻
-㔀㐀㐀禕萀
-```
-
-## Environment limitation
-
-Earlier retained calculations used Python `3.13.5` and NumPy `2.3.5`. The official localized-L1 primary used Python `3.13.14` and NumPy `2.3.5`, while the repository declares NumPy below `2.0`. The exact environment is retained, but the dependency mismatch remains a limitation until a repository-supported rerun is performed; the independent checker is the immediate next gate.
+The homogeneous checker did not use an active-Core runtime adapter; it independently replayed the frozen scalar map. That is valuable independence from the primary solver but does not prove that a later Core revision still computes the identical map.
 
 ## Prohibited conclusions
 
-This report does not establish a universal galactic `tanh` law, autonomous `98%` galactic emergence, absence of dark matter, modified gravity, a physical `3 x 3` elementary cell, a TOLOG Dark Heart derivation, an emergent `tanh` from current Lineum, a natural attractor independent of inserted bounds, a stable scalar-potential memory state, a causal disk-concentration mechanism, or that current implementation failures are terminal limits on Lineum development.
+This report does not establish:
+
+- a universal galactic `tanh` law;
+- autonomous `98%` galactic emergence;
+- absence of dark matter or a modified-gravity replacement;
+- a validated mathematical bridge to TOLOG;
+- a physical `3 x 3` elementary cell or TOLOG Dark Heart derivation;
+- an emergent replacement for `tanh`;
+- a natural attractor independent of inserted bounds;
+- a complete `psi`–`phi` energy cycle;
+- a stable scalar-potential memory state;
+- a causal disk-concentration mechanism;
+- a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation;
+- a terminal limitation of the wider Lineum programme.
+
+A green test proves only its asserted software condition. A reproduced numerical pattern does not by itself establish the metric, mechanism, uniqueness, or behavior of nature.
+
+## Exact next scientific gate
+
+Do not insert a reciprocal repair, add a field, tune parameters, run a soliton candidate, change production Core, or edit a whitepaper yet.
+
+The next checkpoint must stay in this report and proceed in two ordered stages:
+
+1. **Recover or execute the frozen localized checker.** Inspect its interface against the committed primary JSON, run it exactly once, retain ordinary plain-text JSON, and commit the checker output before using the localized result to select a mechanism.
+2. **Preregister the smallest spatial accounting discriminator.** On a minimal periodic toy domain, activate one term at a time against the homogeneous baseline:
+   - `phi` gradient forcing;
+   - `phi` diffusion;
+   - `psi` diffusion or the existing spatial transport term;
+   - local nonlinear interaction.
+
+For each lane, freeze boundaries, initial state, term coefficients, runtime, source and sink accounting, local and global ledger observers, `phi` debit counts, recurrence criteria, transport-flux measurements, and the meaning of every possible outcome.
+
+The discriminator must separate:
+
+- genuine local debit from `phi` paired with `psi` gain;
+- spatial redistribution without reciprocal conversion;
+- continued unpaired feedback amplification;
+- dissipation or cap loss;
+- failure of the declared `E + phi` ledger, implying that a different energy functional must be derived before interpreting return.
+
+Before execution, reopen the repository hypothesis registry for spatial-return, reservoir, saturation, phase-carrying, and alternative-ledger variants. Record provenance and a root-programme impact matrix. No variant may be silently discarded merely because the homogeneous result is negative.
+
+## New-thread handoff
+
+A new researcher can resume without chat history by following this order:
+
+1. Read all current repository rules from the then-current `develop` branch.
+2. Re-fetch this report and verify its current blob SHA.
+3. Verify that no second active report has been created for this programme.
+4. Confirm the current Core commit before treating the audited homogeneous map as current implementation behavior.
+5. Recover the localized primary using its recorded workflow/artifact/hash, not the former encoded report payload.
+6. Recover or execute the frozen localized checker and commit its readable output.
+7. Update this same report before and after the next consequential experiment.
+8. Keep implementation facts, retained observations, interpretation, hypotheses, and real-physics claims separate.
+9. Preserve negative results and unresolved contradictions.
+10. Do not modify a whitepaper or production Core until the exact bounded claim passes its promotion gate.
 
 ## Version history
 
-Versions `0.1.0` through `0.9.7` are preserved losslessly in the capsule.
+Versions `0.1.0` through `0.9.7` remain recoverable from Git history.
 
-- `0.9.8`: converted the active report into a readable current-control layer plus a lossless embedded `0.9.7` normalized archive; corrected and retained the initial heading-selection packaging failure; updated convenience loaders; revalidated loader-based and report-only execution; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
-- `0.9.9`: changed only the lossless archive transport from Base85 to Unicode15 after two connector-truncated blob attempts; rejected temporary-branch assembly because branch cleanup was unavailable; recorded both failures; updated fail-closed loaders and reproduction instructions; no scientific equation, parameter, gate, prior evidence, or official L1 result changed.
-- `0.10.0`: retained the exact official 28-case localized-L1 primary output as a second lossless in-report capsule; recorded provenance, environment, observations, bounded interpretation, and prohibited claims; classified the initial full-checkout attempt as a technical non-result; removed the one-use primary workflow; independent verification remains pending.
-- `0.10.1`: corrected only the primary-capsule heading and fence locators after five fail-closed preflight revisions; recorded all technical failures; preserved the historical and primary embedded payloads bit-for-bit; no equation, parameter, threshold, primary result, or scientific interpretation changed.
+- `0.9.8`: converted the active report into a short control layer plus a compressed embedded history archive; no scientific equation, parameter, gate, or retained result changed.
+- `0.9.9`: changed the embedded archive transport after connector truncation; no scientific result changed.
+- `0.10.0`: embedded the exact official 28-case localized primary as a second encoded payload and recorded its bounded interpretation.
+- `0.10.1`: corrected only payload heading and fence locators after fail-closed preflight revisions; no scientific result changed.
+- `0.11.0`: restored an ordinary human-readable active report; removed opaque embedded payloads from the active record while preserving their exact prior Git blob; consolidated the conventional reference and independently checked homogeneous accounting audit into B4; preserved the spatial primary, negative results, technical failures, provenance contradiction, prohibited conclusions, and exact continuation gate. No production code, whitepaper, equation, threshold, or retained numerical result changed.
