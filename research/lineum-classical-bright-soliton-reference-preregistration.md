@@ -1,39 +1,45 @@
 # Classical Reference Before Lineum Emergence — Reciprocal Exchange First
 
-**Status:** official homogeneous Core primary retained; independent checker pending  
-**Version:** 0.8.0  
+**Status:** validated homogeneous Core snapshot; spatial comparison and repair not started  
+**Version:** 0.9.0  
 **Evidence cutoff:** 2026-08-06  
-**Repository / branch / base:** `TomasTriska88/lineum-core` / `develop` / `2fd4554cffcfb65ac30258c76bf41a6022ea5589`  
+**Repository / branch / base:** `TomasTriska88/lineum-core` / `develop` / `1b7510fed36d6dc82beba65e0ba9e3cdcdf983b1`  
 **Report path:** `research/lineum-classical-bright-soliton-reference-preregistration.md`  
-**Confidence:** conventional reference `robust_within_tested_domain`; homogeneous primary `reproduced`; independent homogeneous verification pending
+**Confidence:** conventional reference and exact homogeneous scalar snapshot `robust_within_tested_domain`; no wider mechanism or real-physics connection established
 
 ## Plain conclusion
 
-The official homogeneous primary reproduced all seven preregistered lanes exactly once. In the full current snapshot, `psi` first fell and then crossed its initial energy at step `701`, but `phi` never decreased and the declared combined ledger grew from `1` to millions. The observed `psi` recovery is therefore **not a demonstrated reciprocal return from `phi`**.
+The official homogeneous primary and the separately written checker agree with **zero mismatches**. In this exact reduction, `psi` falls and later exceeds its initial energy, but `phi` never decreases and the declared `E+phi` ledger grows by millions. This is not a demonstrated return of stored quantity from `phi` to `psi`.
 
-The ablations isolate the accounting. Mode transfer by itself behaves like the conventional one-way conserved reference R3: it moves quantity from `psi` into `phi`, approximately preserves `E+phi`, and never returns it. The separate `phi -> psi` feedback can amplify `psi` while leaving `phi` unchanged, so it is an unpaired source in this declared ledger. Dissipation is a separate sink. Removing the external `phi` cap changes retained `phi`, but not the `psi` trajectory in this frozen lane.
+The ablations isolate why:
 
-This applies only to the exact homogeneous deterministic scalar snapshot. It does not falsify spatial Lineum, establish a replacement mechanism, or connect Lineum to known real physics. The independent checker has not yet run.
+- explicit mode transfer is one-way but approximately ledger-conserving: `psi -> phi`;
+- separate `phi -> psi` feedback increases `psi` without debiting `phi`;
+- dissipation removes quantity without crediting the reservoir;
+- the external `phi` cap changes retained `phi`, but did not cause the `psi` recovery in this lane.
 
-The owner direction remains `owner_provided_pre_hypothesis`: established science first; introduce Lineum emergence only at the smallest missing function; keep this single report; do not assume a soliton is the answer.
+Therefore, visual or scalar recovery of `psi` is not sufficient evidence for a reciprocal cycle or full-state recovery. This is a verified negative accounting result for the homogeneous deterministic snapshot, not a falsification of spatial Lineum.
 
-## Frozen provenance and packaging
+The owner direction remains `owner_provided_pre_hypothesis`: established science first; Lineum emergence only at the smallest missing function; keep this single report; do not assume a soliton is the answer.
 
-The complete executable preregistration, conventional R0–R4 reference, source audit, original primary/checker code, permanent tests, and all earlier receipts remain immutable in this same report at commit `2fd4554cffcfb65ac30258c76bf41a6022ea5589`, report blob `befbcee6e15ca94324017051684e4c57ca5678dc`.
-
-Version `0.8.0` avoids recursively embedding that already compressed history. It retains the new official primary artifacts losslessly below and binds them to the immutable executable checkpoint by commit, blob, source hashes, byte counts, and SHA-256. This is a packaging normalization only; no equation, lane, threshold, source, output, or interpretation changed.
+## Immutable provenance
 
 ```text
+executable checkpoint commit = 2fd4554cffcfb65ac30258c76bf41a6022ea5589
+executable report blob = befbcee6e15ca94324017051684e4c57ca5678dc
+retained-primary commit = 1b7510fed36d6dc82beba65e0ba9e3cdcdf983b1
+retained-primary report blob = 0d303e88324a0821a21fbdbd7ecf6442d5c83101
+primary JSON bytes / SHA-256 = 23054 / fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
 source-audited Core commit = f1bd74ec2cb62d3b8d56bda05f524c6f63ab9775
 lineum_core/math.py blob = bb877021810691223a0eb960a45493a2e351112a
 physics-contract test blob = 7acbb8a1c5ff85a5b24970d216aa2a08111b0941
-homogeneous primary source SHA-256 = 242b6d05cef2e1026e23cabbcc0bfc0d5499f155f1c72f5229475da9f5b806e9
-homogeneous checker source SHA-256 = 34a0fd5583609b59d430805b3d0d048cdcdff4e311cadb45cf98f408c4233a5b
+primary source SHA-256 = 242b6d05cef2e1026e23cabbcc0bfc0d5499f155f1c72f5229475da9f5b806e9
+checker source SHA-256 = 34a0fd5583609b59d430805b3d0d048cdcdff4e311cadb45cf98f408c4233a5b
 ```
 
-## Current implementation represented by the snapshot
+The complete executable package and official primary remain losslessly available in this report's immutable earlier commits. Version `0.9.0` adds only the exact checker evidence below, avoiding recursive duplication of already compressed data. No equation, lane, threshold, output, or interpretation changed.
 
-Uniform `psi` and `phi`, `kappa=1`, `mu=0`, `delta=0`, disabled noise, and `dt=1` remove gradients, diffusion, spatial transport, linons, and fluctuations. The surviving NumPy-path algebra is:
+## Current implementation represented by the snapshot
 
 ```text
 phi_local = clip(phi,0,10)
@@ -48,91 +54,87 @@ abs(psi) <- sqrt(max(E_pre-delta_e,0))
 phi <- clip(phi,0,phi_cap)     [external cap]
 ```
 
-The surviving multipliers are real and positive. This reduction has no second relative-phase carrier and therefore cannot instantiate the conventional coherent R0 mechanism. The existing Core mode-coupling test checks positive finite `phi_gain`; it does not assert reverse debit, closed full-step accounting, recurrence, or full-state return.
+Uniform fields, `kappa=1`, `mu=0`, `delta=0`, disabled noise, and `dt=1` remove gradients, diffusion, spatial transport, linons, and fluctuations. The surviving multipliers are real and positive, so this reduction has no second relative-phase carrier and cannot instantiate conventional coherent R0 return. The existing Core mode-coupling test checks positive finite `phi_gain`; it does not assert reverse debit, closed full-step accounting, recurrence, or full-state return.
 
-## Retained official primary
+## Verified official observations
 
-The primary was invoked exactly once from committed report `0.7.0`:
+| Lane | Verified classification | Recovery | True return | Final `E` | Final `phi` | Final ledger |
+|---|---|---:|---:|---:|---:|---:|
+| `C0_full_default_cap` | `apparent_energy_recovery_without_reciprocal_ledger` | step `701` | no | `2900150.257034308` | `1000000.0` | `3900150.257034308` |
+| `C0b_full_cap_free` | `apparent_energy_recovery_without_reciprocal_ledger` | step `701` | no | `2900150.257034308` | `2359502.643825432` | `5259652.90085974` |
+| `C1_no_phi_feedback` | `dissipative_one_way_accumulation` | no | no | `2.650267646912908e-10` | `0.0902893517688856` | `0.09028935203391236` |
+| `C2_mode_transfer_only` | `one_way_conserved_transfer` | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
+| `C3_phi_feedback_only_seeded` | `unpaired_feedback_source` | no | no | `1482693.5590557144` | `1.0` | `1482694.5590557144` |
+| `C4_dissipation_only` | `dissipative_sink` | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
+| `C5_no_terms_null` | `stationary_null` | no | no | `1.0` | `0` | `1.0` |
+
+Additional discriminators:
+
+- Full-lane minimum `E=0.23353976762645046` at step `350`.
+- `phi_decrease_count=0`; first default-cap contact was step `1521`.
+- Cap and cap-free lanes have identical final `psi` energy; only retained `phi` and ledger differ.
+- Mode-transfer-only ledger drift was `2.5260027403106733e-09`; phase drift `0`.
+- Feedback-only seeded lane held `phi=1` while final `E=1482693.5590557144`.
+
+## Independent checker
+
+The checker was invoked exactly once after the primary was committed, without rerunning or importing the primary solver:
 
 ```text
-python core_homogeneous_primary.py --profile official --output OFFICIAL_CORE_HOMOGENEOUS.json
-```
-
-```text
-source commit = 2fd4554cffcfb65ac30258c76bf41a6022ea5589
-source report blob = befbcee6e15ca94324017051684e4c57ca5678dc
-started UTC = 2026-08-06T15:08:52.920245+00:00
-finished UTC = 2026-08-06T15:08:53.486516+00:00
-elapsed seconds = 0.5661870439998893
+started UTC = 2026-08-06T15:22:30.859836+00:00
+finished UTC = 2026-08-06T15:22:31.517766+00:00
+elapsed seconds = 0.6579304010010674
 return code = 0
-Python = 3.13.5 CPython
-platform = Linux-6.18.35-x86_64-with-glibc2.41
-primary bytes / SHA-256 = 23054 / fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
-stdout bytes / SHA-256 = 69 / 7cc2bbf53b0f10c749b1622d7f6d27931bee5f4a01240cfbdcdbae5b103d7807
-stderr bytes / SHA-256 = 0 / e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-checker invoked = false
+checker source SHA-256 = 34a0fd5583609b59d430805b3d0d048cdcdff4e311cadb45cf98f408c4233a5b
+primary input SHA-256 = fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
+checker bytes / SHA-256 = 352 / 81cb30ba92ac3848095582afadde4fb9c24ac6138928e21c1eb3553f6d023adc
+stdout = passed=True mismatches=0
+stderr bytes = 0
+primary rerun = false
 ```
 
-| Lane | Classification | Pass | Apparent recovery | True reciprocal return | Final `E` | Final `phi` | Final ledger |
-|---|---|---:|---:|---:|---:|---:|---:|
-| `C0_full_default_cap` | `apparent_energy_recovery_without_reciprocal_ledger` | yes | step `701` | no | `2900150.257034308` | `1000000.0` | `3900150.257034308` |
-| `C0b_full_cap_free` | `apparent_energy_recovery_without_reciprocal_ledger` | yes | step `701` | no | `2900150.257034308` | `2359502.643825432` | `5259652.90085974` |
-| `C1_no_phi_feedback` | `dissipative_one_way_accumulation` | yes | no | no | `2.650267646912908e-10` | `0.0902893517688856` | `0.09028935203391236` |
-| `C2_mode_transfer_only` | `one_way_conserved_transfer` | yes | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
-| `C3_phi_feedback_only_seeded` | `unpaired_feedback_source` | yes | no | no | `1482693.5590557144` | `1.0` | `1482694.5590557144` |
-| `C4_dissipation_only` | `dissipative_sink` | yes | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
-| `C5_no_terms_null` | `stationary_null` | yes | no | no | `1.0` | `0` | `1.0` |
+```json
+{"independence":{"active_core_runtime_adapter":false,"closed_form_dissipation_control":true,"imports_primary":false,"separate_scalar_replay":true},"mismatches":[],"passed":true,"schema":"lineum-core-homogeneous-check/1","source_sha256":"fc3e27e577359d4700d99793a0cab43afd37ee7162155e62754582af12928cb7"}
+```
 
-Additional observations:
-
-- `C0` minimum energy was `0.23353976762645046` at step `350`; `phi_decrease_count=0`; first cap contact was step `1521`.
-- Default-cap `C0` and cap-free `C0b` produced identical final `psi` energy; only retained `phi` and the ledger changed.
-- `C2` maximum ledger drift was `2.5260027403106733e-09` and phase drift was `0.0`.
-- `C3` held `phi=1` while `E` rose to `1482693.5590557144`.
-- Every lane passed its preregistered discriminator; `all_pass=true`.
+The checker separately replays the scalar map and dissipation closed form. It reports `passed=true`, `mismatches=[]`, `imports_primary=false`, `separate_scalar_replay=true`, and `active_core_runtime_adapter=false`.
 
 ## Evidence boundary
 
-1. **Current implementation:** one-way accounted mode transfer, feedback amplification without paired `phi` debit, separate dissipation, and an external cap.
-2. **Reproduced observation:** the one-shot primary passed all seven lanes; `psi` recovery occurred with zero `phi` decreases and multimillion ledger growth.
-3. **Cautious interpretation:** `psi` recovery alone is non-identifying and is not evidence of reciprocal full-state return in this snapshot.
+1. **Current implementation:** one-way accounted transfer, feedback amplification without paired `phi` debit, separate dissipation, and an external cap.
+2. **Reproducible observation:** one primary and one independent checker agree with zero mismatches; recovery occurred with zero `phi` decreases and multimillion ledger growth.
+3. **Cautious interpretation:** `psi` recovery alone is non-identifying and is not reciprocal full-state return in this snapshot.
 4. **Hypothesis:** spatial gradients, diffusion, locality, or another term could change the classification; none is tested here.
-5. **Real physics:** no laboratory, quantum, gravitational, dark-matter, cosmological, consciousness, or ontological connection is established.
+5. **Known physics:** the conventional model supplies accounting vocabulary only. No laboratory, quantum, gravitational, dark-matter, cosmological, consciousness, or ontological connection is established.
 
-Available NumPy `2.3.5` is outside repository requirement `<2.0`; this is a standard-library source-audited snapshot, not a supported active-runtime equivalence claim.
+The result is `robust_within_tested_domain` for the exact homogeneous deterministic scalar snapshot and declared ledger. It is not `mechanistically_supported`, `empirically_connected`, or a verdict on wider Lineum. Available NumPy `2.3.5` remains outside repository requirement `<2.0`.
 
-## Lossless primary envelope
-
-Save the Base64 body as part of this report. The following standard-library bootstrap reconstructs the exact primary artifacts and verifies every hash:
+## Lossless checker envelope
 
 ```python
 from pathlib import Path
 import base64,hashlib,json,lzma
-s=Path('report.md').read_text();h='<!-- PRIMARY-XZ bytes=';i=s.rindex(h)+len(h);j=s.index(' sha256=',i);e=s.index(' -->',j)
+s=Path('report.md').read_text();h='<!-- CHECKER-XZ bytes=';i=s.rindex(h)+len(h);j=s.index(' sha256=',i);e=s.index(' -->',j)
 size=int(s[i:j]);sha=s[j+8:e];a=s.index('```base64',e)+len('```base64');b=s.index('```',a)
 c=base64.b64decode(''.join(s[a:b].split()));assert len(c)==size and hashlib.sha256(c).hexdigest()==sha
-env=json.loads(lzma.decompress(c));out=Path('official-primary');out.mkdir(exist_ok=True)
+env=json.loads(lzma.decompress(c));out=Path('checker-evidence');out.mkdir(exist_ok=True)
 for n,m in env['members'].items():
  d=base64.b64decode(m['base64']);assert len(d)==m['bytes'] and hashlib.sha256(d).hexdigest()==m['sha256'];(out/n).write_bytes(d)
 ```
 
 ```text
-compressed envelope bytes / SHA-256 = 6696 / fbd86d942976f4b77c16b0d32f4989a80c6d8651ae3b6173c9aea0088c9c08ac
-OFFICIAL_CORE_HOMOGENEOUS.json bytes / SHA-256 = 23054 / fb05d61caeb2cfa14f9a8581b73304aefd4b67ee19c6ef8a6f7a12533c55c0ba
-OFFICIAL_CORE_HOMOGENEOUS_EXECUTION.json bytes / SHA-256 = 1188 / 629efe4242f090ced71bf9152e9bba52d59cd7af9fc7b98a88799f1eb4ce1146
+compressed checker envelope bytes / SHA-256 = 1804 / dfcf7b9b9b05003d1beb10923579d5b9ab976eee2a9104f683faeeafbf472111
+checker JSON bytes / SHA-256 = 352 / 81cb30ba92ac3848095582afadde4fb9c24ac6138928e21c1eb3553f6d023adc
+checker execution bytes / SHA-256 = 1228 / 652cb6701f50f37341cb485463ca95cf7b0d8f762f4d4e89a4746f93e771cf5c
 ```
 
-## Exact next gate
+## Exact next scientific gate
 
-Commit this exact retained primary. Re-fetch it by immutable commit and verify the report blob, primary envelope, official JSON hash, and the unchanged checker source from executable commit `2fd4554...`. Then invoke the independent checker exactly once without rerunning the primary:
+Do **not** insert a reciprocal repair yet. The cheapest next discriminator remains in this same report: preregister a minimal spatial ablation that separately activates `phi` gradient forcing, `phi` diffusion, and local nonlinear interaction while preserving explicit source/sink accounting. It must determine whether spatial transport merely redistributes the same unpaired amplification or introduces a measurable reciprocal debit/return path.
 
-```bash
-python core_homogeneous_checker.py --input OFFICIAL_CORE_HOMOGENEOUS.json --output OFFICIAL_CORE_HOMOGENEOUS_CHECKER.json
-```
+Before execution, reopen the repository hypothesis registry for all spatial-return, reservoir, saturation, and phase-carrying variants; record provenance and a root-impact matrix; freeze the smallest periodic toy domain, term ablations, boundary conditions, ledger observers, and meanings of every outcome. No new field, repair, tuning, soliton run, production-code change, whitepaper edit, mechanism promotion, or real-physics claim is authorized.
 
-Commit the exact checker output and execution receipt in this same report before any new experiment or interpretation. Until then: no primary rerun, tuning, spatial extension, soliton run, reciprocal repair, new field, production-code change, whitepaper edit, mechanism ranking, or real-physics claim.
-
-<!-- PRIMARY-XZ bytes=6696 sha256=fbd86d942976f4b77c16b0d32f4989a80c6d8651ae3b6173c9aea0088c9c08ac -->
+<!-- CHECKER-XZ bytes=1804 sha256=dfcf7b9b9b05003d1beb10923579d5b9ab976eee2a9104f683faeeafbf472111 -->
 ```base64
-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
+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
 ```
