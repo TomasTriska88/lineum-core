@@ -1,55 +1,44 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active; one authoritative report; complete next-thread handoff recorded  
-**Version:** 0.11.2  
+**Status:** active authoritative report; localized-L1 negative independently verified; owner-intuition failure gate open; replacement-mechanism selection paused  
+**Version:** 0.12.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Base before this revision:** `48ace9c4c4d901c1120a8cb37c5012752a2e2926`  
+**Checkpoint parent:** `bf768c5a3463f3d959058bf91eaf7653face1cc6`  
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
-## 0. Authority, consolidation, and evidence classes
+## 0. Authority and continuity
 
-This file is the only active narrative report for the continuous public-TOLOG B4 programme. The former overlapping file `research/lineum-classical-bright-soliton-reference-preregistration.md` is intentionally absent from the active branch. Its decision-relevant conventional-reference and homogeneous-accounting content is consolidated here; its historical versions remain recoverable through Git.
+This is the single active report for the continuous public-TOLOG B4 programme. It consolidates the galaxy-shape baseline, conventional exchange calibration, homogeneous accounting audit, localized spatial screen, independent verification, negative results, contradictions, and the next gate.
 
-Claims below are separated into:
+Versions through `0.10.1` used opaque compressed Unicode payloads. They are no longer embedded. The exact former report remains immutable as Git blob `8f08fe0da08751781e13f90496a928f89eae9d56`. The former overlapping classical-reference report is absent from the active branch; its decision-relevant content is restated here and its historical blob is `68b0ae44795124e13b8bccdd743a93b6a4ac3786`.
 
-1. implementation facts — what inspected code computes;
-2. reproduced observations — what frozen executions produced;
-3. cautious interpretations — the narrowest explanations supported by those facts and interventions;
-4. hypotheses or analogies — possibilities not yet selected by evidence;
-5. real-physics connections — none established by this report.
+The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. This revision retains that protocol but places execution behind the mandatory owner-intuition gate opened by the independently verified negative result.
 
-Negative results, failed replays, missing mechanisms, and incomplete runs are retained explicitly.
+Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
 ## 1. Plain conclusion
 
-The current evidence does **not** demonstrate a cap-free, conserved, reciprocal return cycle between `psi` and `phi`.
+The tested Lineum implementation did **not** complete a natural reciprocal `psi`–`phi` return cycle.
 
-The localized spatial screen found two `psi`-only recoveries, but both started with `phi=1` and contacted the explicit `phi=1,000,000` cap. No case recovered the full `psi`-`phi` state. Removing the cap eliminated the apparent recoveries.
+The localized screen kept all 28 cases finite over the declared horizon, but produced only two partial `psi` recoveries. Both occurred with seeded `phi` held against the explicit `1,000,000` cap. No case recovered the full preregistered state. Removing the cap or all hard guards remained finite over that horizon but produced no recovery. LAP8 changed some measurements but did not uniquely stabilize the state.
 
-The homogeneous reduction then isolated why a later rise in `psi` is not enough to call this return. The explicit mode-transfer block sends accounted quantity from `psi` to `phi`. A separate `phi`-conditioned feedback term grows `psi` without debiting `phi`; dissipation removes quantity; and the cap discards excess `phi`. The capped and cap-free homogeneous full lanes follow the same `psi` path, so the cap is not the cause of that later growth.
+A frozen independent checker recomputed all 28 cases through a separate update and metric implementation. It found zero numeric mismatches, zero categorical mismatches, maximum absolute difference `4.547473508864641e-13`, maximum relative difference `9.11739763514324e-16`, and `passed = true`. The localized negative therefore reaches `robust_within_tested_domain` for the exact frozen protocol and observers.
 
-The strongest defensible statement is:
+The independently checked homogeneous reduction explains why a later rise in `psi` is insufficient evidence of return. Explicit mode transfer moves accounted quantity from `psi` to `phi`, while a separate feedback term can increase `psi` without decreasing `phi`. Dissipation removes quantity without crediting the reservoir, and the cap can discard excess `phi`. In the verified full lanes, `psi` recovered while `phi` never decreased and the declared `abs(psi)^2 + phi` ledger grew by millions. That is apparent component recovery, not demonstrated reciprocal return.
 
-> The frozen implementation contains one-way accounted `psi -> phi` transfer and a separate `phi`-conditioned `psi` gain, but the tested homogeneous and localized routes do not demonstrate a cap-free, closed-ledger, reciprocal full-state return.
+This bounded negative does not falsify spatial Lineum, identify the correct repair, establish the physical meaning of `phi`, validate TOLOG-Alpha, or show that nature follows this simulation.
 
-This does not falsify spatial Lineum, prove that `phi` is energy, identify the correct ledger, select a repair, validate TOLOG-Alpha, or establish a connection to real physics.
+## 2. Controlling questions and current answers
 
-## 2. Controlling public questions
-
-1. **Galaxy rotation:** Can Lineum generate held-out galaxy rotation with at least `98%` preregistered agreement from independently defensible source and initial conditions alone, without target leakage, galaxy-specific output fitting, a dark-matter component, or a renamed fitted surrogate?
-2. **Bounded return:** Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without relying on noise, clipping, caps, resets, or ad hoc damping, including at a declared discrete analogue of `r -> 0`?
-3. **Scalar fixed minimum:** Can the exact `256 x 256` system integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?
-
-Current bounded answers:
-
-- Question 1: descriptive curve-shape calibration exists; autonomous blind emergence is not demonstrated.
-- Question 2: the tested routes do not show cap-free reciprocal full-state recovery.
-- Question 3: scalar-valued auxiliary fields exist, but the required fixed-potential information-preserving scalar state is not demonstrated.
+1. Can Lineum produce real-galaxy rotation with at least `98%` preregistered held-out agreement from independently defensible source and initial conditions alone, without target leakage, galaxy-specific output fitting, a dark-matter component, or a renamed fitted surrogate?  
+   **Current answer:** the descriptive target is characterized, but blind autonomous emergence is not demonstrated.
+2. Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without noise, clipping, caps, resets, or ad hoc damping, including a declared discrete equivalent of `r -> 0`?  
+   **Current answer:** no full-state recovery was observed in the independently verified localized screen; the homogeneous audit shows apparent `psi` recovery is not reciprocal reservoir return.
+3. Can the exact `256 x 256` grid integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?  
+   **Current answer:** scalar-valued auxiliary fields exist, but the required fixed-potential information-preserving scalar state is not demonstrated.
 
 ## 3. Question 1 — retained SPARC B4 shape baseline
-
-The galaxy study is a descriptive shape calibration, not validation of Lineum or TOLOG.
 
 ```text
 SPARC galaxies = 175
@@ -64,159 +53,57 @@ optimization starts = 28,000
 
 Established: bounded saturating shapes are useful for many curves; `tanh` is not universally preferred; some galaxies strongly reject it.
 
-Not established: that Lineum generates the curves from source conditions; that fitted `tanh` is a physical law; that dark matter is unnecessary; that public TOLOG claims are reproduced; or that any model meets a blind `98%` held-out criterion.
-
-Question 1 remains blocked on a mathematically explicit state-to-observable bridge and held-out evaluation.
+Not established: that Lineum generates the curves from source conditions; that fitted `tanh` is a physical law; that dark matter is unnecessary; that public TOLOG claims are reproduced; or that any model meets a blind `98%` held-out criterion. Question 1 remains blocked on a mathematically explicit state-to-observable bridge and held-out evaluation.
 
 ## 4. Conventional reciprocal-exchange ruler
 
-A non-spatial mathematical ruler was frozen before interpreting Lineum recovery:
-
-| Lane | Meaning | Expected behaviour |
+| Lane | Behaviour | Result |
 |---|---|---|
-| `R0` | coherent resonant two-mode exchange | complete transfer and return |
-| `R1` | coherent detuned exchange | recurrence; incomplete maximum transfer, second-mode maximum `0.5` |
-| `R2` | reciprocal rate exchange | monotonic relaxation toward `0.5 / 0.5`; no return |
-| `R3` | one-way accumulator | conserved total with monotonic accumulation; no return |
-| `R4` | uncoupled null | no transfer |
+| `R0` | coherent resonant exchange | complete transfer and return |
+| `R1` | detuned coherent exchange | partial recurrent transfer |
+| `R2` | reciprocal rate exchange | monotonic equilibration, no recurrence |
+| `R3` | one-way accumulator | conserved total, no return |
+| `R4` | uncoupled null | stationary components |
 
-The primary implementation and a separately written analytic checker passed with zero declared mismatches.
+The primary and separately implemented analytic checker agreed with zero mismatches.
 
 ```text
 primary JSON SHA-256 = bcfec07204869be1b8d798d1d0f4d20999a38cf132e72cbf4d31de6d0a0c5e98
 checker JSON SHA-256 = 27ba9b699ec2cfaba38fd051fd80eed374ac5a072a6e8897e838c0003e86798f
 ```
 
-Operational vocabulary fixed by this ruler:
+This ruler fixes vocabulary only: reciprocal terms do not guarantee coherent return, conservation does not guarantee recurrence, and a stable localized object does not by itself prove reservoir return. It does not validate a physical mapping for Lineum.
 
-- recurrence is not equilibration;
-- bidirectional terms are not sufficient for coherent return;
-- conservation is not sufficient for return;
-- a stable localized object is not itself evidence of reservoir return.
+## 5. Homogeneous accounting audit
 
-This ruler is mathematical calibration only. It does not imply that Lineum fields are quantum amplitudes, spins, atoms, Rabi oscillators, solitons, or any particular physical system.
-
-## 5. Localized-L1 spatial screen
-
-### 5.1 Frozen protocol
-
-```text
-grid = 32 x 32; periodic boundary; dt = 1.0
-primary updates = 5,000; recovery updates = 1,000
-stencils = LAP4, LAP8
-initial phi = 0, 1
-kappa = 1; mu = 0; delta = 0; noise disabled
-initial psi = centred Gaussian, peak 1, sigma 3 cells
-lanes = baseline; no hard guards; no linear dissipation;
-        no explicit tanh; no interaction denominator;
-        no mode coupling; no phi cap
-total cases = 28
-```
-
-Localized `psi` recovery required finite/reset-free execution, total-energy relative error at most `5%`, radial-profile L2 error at most `10%`, half-energy-radius change at most one cell, and final centre displacement at most half a cell. Full-state recovery additionally required no `phi` cap contact, `phi` radial-profile L2 error at most `10%`, and the preregistered late-`phi` slope gate.
-
-### 5.2 Retained primary result
-
-```text
-source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
-workflow run / job / artifact = 31048211101 / 92448891365 / 8947333992
-primary JSON bytes = 228,809
-primary JSON SHA-256 = 499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d
-executed cases = 28 / 28
-```
-
-Observed:
-
-- all 28 cases retained finite states over the declared horizon;
-- baseline produced `2 / 4` localized `psi` recoveries and `0 / 4` full-state recoveries;
-- both partial recoveries started with `phi0=1` and held `phi` at the `1,000,000` cap;
-- both baseline `phi0=0` cases decayed and failed recovery;
-- removing explicit `tanh` again produced two partial `psi` recoveries and zero full recoveries;
-- removing the `phi` cap or all hard guards produced zero recoveries while `phi` reached `12,852,053.348233`;
-- removing linear dissipation produced zero recoveries and maximum pre-perturbation `abs(psi)=17,981.515115`;
-- removing the interaction denominator caused two reset events and zero recoveries;
-- LAP4 and LAP8 differed materially in some metrics, but LAP8 did not uniquely produce full-state stabilization.
-
-Primary classification:
-
-```json
-{
-  "baseline_primary_psi_recoveries": 2,
-  "baseline_primary_full_state_recoveries": 0,
-  "spatial_transport_resolves_phi": false,
-  "lap8_specific_stabilization": false,
-  "development_programme_terminal_failure": false
-}
-```
-
-### 5.3 Independent checker
-
-A separately implemented checker recomputed all 28 cases without importing the primary runner.
-
-```text
-checker source SHA-256 = 3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031
-checker JSON bytes / SHA-256 = 673 / 6fec721c7877d0dacf781668553fa7a7910f470c12567e2ef71e2837b511d49d
-numeric mismatches = 0
-categorical mismatches = 0
-maximum absolute difference = 4.547473508864641e-13
-maximum relative difference = 9.11739763514324e-16
-imports primary runner = false
-recomputes all 28 cases = true
-```
-
-The localized observation is therefore `robust_within_tested_domain`. The mechanism remains unresolved.
-
-## 6. Homogeneous Core accounting audit
-
-### 6.1 Audited snapshot and reduction
-
-```text
-Core commit = f1bd74ec2cb62d3b8d56bda05f524c6f63ab9775
-lineum_core/math.py blob = bb877021810691223a0eb960a45493a2e351112a
-tests/test_physics_contract.py blob = 7acbb8a1c5ff85a5b24970d216aa2a08111b0941
-```
-
-Set spatially uniform `psi` and `phi`, `kappa=1`, `mu=0`, `delta=0`, noise disabled, and `dt=1`. Spatial terms vanish. The surviving scalar update is:
+For uniform fields, `kappa = 1`, `mu = 0`, `delta = 0`, disabled noise, and `dt = 1`, spatial terms vanish. The audited surviving map is:
 
 ```text
 phi_local = clip(phi, 0, 10)
 s = 0.1 * tanh(0.4 * phi_local)
 q = s * psi / (1 + abs(s * psi) / 10)
-psi <- psi + q                    [feedback; no phi debit]
-psi <- 0.995 * psi                [dissipation; no reservoir credit]
+psi <- psi + q                  [feedback; no phi debit]
+psi <- 0.995 * psi              [dissipation; no reservoir credit]
 E_pre = abs(psi)^2
 delta_e = 0.001 * E_pre
-phi <- phi + delta_e              [explicit one-way mode transfer]
+phi <- phi + delta_e            [explicit one-way mode transfer]
 abs(psi) <- sqrt(max(E_pre - delta_e, 0))
-phi <- clip(phi, 0, phi_cap)      [external cap]
+phi <- clip(phi, 0, phi_cap)     [external cap]
 ```
 
-Implementation facts:
+The mode-transfer substep approximately conserves the declared `E + phi` ledger. The feedback substep does not. Dissipation removes `psi` without crediting `phi`; the cap discards excess `phi`. The surviving multipliers are real and positive and carry no second relative-phase variable, so this homogeneous scalar reduction cannot instantiate conventional coherent `R0` recurrence.
 
-- the mode-transfer block approximately conserves `abs(psi)^2 + phi`;
-- feedback can increase `psi` without decreasing `phi`;
-- dissipation removes quantity without crediting `phi`;
-- the cap deletes excess retained `phi`;
-- the homogeneous scalar reduction has no second relative-phase carrier for conventional coherent `R0` return;
-- `CoreConfig` exposes `dissipation_rate`, while the inspected update uses literal `0.005`;
-- the existing conservation test checks positive finite `phi_gain`, not whole-step closure, reverse debit, recurrence, or full-state return.
-
-### 6.2 Verified lanes
-
-| Lane | Classification | Apparent recovery | True reciprocal return | Final `Epsi` | Final `phi` | Final declared ledger |
+| Lane | Classification | Apparent recovery | True return | Final `E` | Final `phi` | Final ledger |
 |---|---|---:|---:|---:|---:|---:|
-| `C0_full_default_cap` | apparent recovery without reciprocal ledger | step `701` | no | `2,900,150.257034308` | `1,000,000` | `3,900,150.257034308` |
-| `C0b_full_cap_free` | apparent recovery without reciprocal ledger | step `701` | no | `2,900,150.257034308` | `2,359,502.643825432` | `5,259,652.90085974` |
-| `C1_no_phi_feedback` | dissipative one-way accumulation | no | no | `2.650267646912908e-10` | `0.0902893517688856` | `0.09028935203391236` |
-| `C2_mode_transfer_only` | one-way conserved transfer | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
-| `C3_phi_feedback_only_seeded` | unpaired feedback source | no | no | `1,482,693.5590557144` | `1.0` | `1,482,694.5590557144` |
-| `C4_dissipation_only` | dissipative sink | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
-| `C5_no_terms_null` | stationary null | no | no | `1.0` | `0` | `1.0` |
-
-Additional discriminators:
+| full, default cap | apparent recovery without reciprocal ledger | step `701` | no | `2900150.257034308` | `1000000.0` | `3900150.257034308` |
+| full, cap-free | apparent recovery without reciprocal ledger | step `701` | no | `2900150.257034308` | `2359502.643825432` | `5259652.90085974` |
+| no feedback | dissipative one-way accumulation | no | no | `2.650267646912908e-10` | `0.0902893517688856` | `0.09028935203391236` |
+| mode transfer only | one-way conserved transfer | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
+| feedback only, seeded | unpaired feedback source | no | no | `1482693.5590557144` | `1.0` | `1482694.5590557144` |
+| dissipation only | sink | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
+| null | stationary | no | no | `1.0` | `0` | `1.0` |
 
 ```text
-full-lane minimum energy = 0.23353976762645046 at step 350
 phi_decrease_count = 0
 first default-cap contact = step 1521
 mode-transfer-only ledger drift = 2.5260027403106733e-09
@@ -224,34 +111,131 @@ homogeneous checker JSON SHA-256 = 81cb30ba92ac3848095582afadde4fb9c24ac6138928e
 checker passed = true; mismatches = []
 ```
 
-A readable replay initially omitted a `1e-12` normalization epsilon and did not match exactly. That failed replay is retained as a warning against silently simplifying implementation algebra. Restoring the epsilon reduced the maximum final discrepancy to `9.779e-09`. This is a transcription check, not a new official scientific rerun.
+A readable replay initially omitted a `1e-12` normalization epsilon and failed exact comparison. Restoring it reduced the maximum final discrepancy to `9.779e-09`. This is a transcription warning, not a new official scientific run.
 
-## 7. Mechanism ledger and interpretations still open
+## 6. Localized spatial L1 screen
 
-Current evidence rejects, inside the tested routes:
+### Frozen protocol
 
-- natural cap-free reciprocal return already demonstrated;
-- the `phi` cap as the cause of homogeneous later `psi` growth;
-- explicit `tanh` as necessary for the cap-dependent partial localized outcomes;
-- LAP8 as uniquely stabilizing;
-- the explicit mode-transfer block as reciprocal return;
-- dissipation as cycle closure.
+```text
+grid = 32 x 32; periodic boundary; dt = 1.0
+primary updates = 5000; recovery updates = 1000
+stencils = LAP4, LAP8; initial phi = 0, 1
+kappa = 1; mu = 0; delta = 0; noise disabled
+initial psi = normalized centered Gaussian, peak 1, sigma 3
+lanes = baseline, no hard guards, no linear dissipation, no tanh,
+        no denominator, no mode coupling, no phi cap
+total = 28 cases
+```
 
-Still open:
+Localized `psi` recovery required finite/reset-free execution, energy error at most `5%`, radial-profile L2 error at most `10%`, half-energy-radius change at most one cell, and center displacement at most half a cell. Full-state recovery additionally required no `phi` cap, `phi` radial-profile L2 error at most `10%`, and the preregistered late-`phi` slope gate.
 
-1. `phi` is intended as an energy reservoir and a paired reverse debit is missing;
-2. `phi` is a control, environment, potential, or gate rather than stored energy;
-3. `abs(psi)^2 + phi` is the wrong ledger and the relevant quantity includes `phi^2`, gradients, interaction energy, or another state functional;
-4. the tested feedback is an unpaired numerical source with no defensible physical ledger;
-5. spatial transport supplies a measurable debit or incoming flux that is absent by construction in the homogeneous reduction.
+```text
+source commit = c513a65f16a65f6f600864f55a4edcd5fdfc69a7
+workflow run / job / artifact = 31048211101 / 92448891365 / 8947333992
+primary JSON bytes / SHA-256 = 228809 / 499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d
+artifact ZIP SHA-256 = ca9a9ca05ffe0077ec15dce87ac8309a78b7f2ec114ef84d316f4202d535350c
+executed cases = 28 / 28
+```
 
-No alternative is selected before the next spatial accounting experiment.
+Observed:
 
-## 8. Exact next scientific gate
+- all 28 cases retained finite states;
+- baseline produced `2 / 4` localized `psi` recoveries and `0 / 4` full-state recoveries;
+- both partial recoveries started with `phi0 = 1` and held `phi` at the `1,000,000` cap;
+- both baseline `phi0 = 0` cases decayed and failed recovery;
+- removing explicit `tanh` again produced two partial recoveries and zero full recoveries;
+- removing the cap or all hard guards produced zero recoveries while `phi` reached `12852053.348233`;
+- removing linear dissipation produced zero recoveries and maximum pre-perturbation `abs(psi) = 17981.515115`;
+- removing the denominator caused two reset events and zero recoveries;
+- LAP8 did not uniquely produce full-state stabilization.
 
-Do not first add a new fundamental field, write a return term, tune thresholds, alter Core equations, or edit a whitepaper.
+### Independent checker receipt
 
-Stay in this report and introduce existing spatial mechanisms one at a time against the verified homogeneous baseline.
+The frozen checker was recovered from the immutable historical archive. Archive and source hashes matched, and its frozen suite passed `9 / 9` before execution.
+
+```text
+runner SHA-256 = 96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd
+checker SHA-256 = 3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031
+test SHA-256 = 95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec
+checker output bytes / SHA-256 = 673 / 6fec721c7877d0dacf781668553fa7a7910f470c12567e2ef71e2837b511d49d
+execution receipt SHA-256 = 64d4642c3af1e37d14b2852a748dca52e1a68ebb0bbb2c84db72b01c3e86518e
+progress SHA-256 = a0241a92fbca6c488f2c703cd21644538badb677d6838820d5502605985d9e67
+checker environment = Python 3.13.5 / NumPy 2.3.5 / pytest 9.0.2
+```
+
+The checker executed exactly once against the retained primary, returned code `0`, recomputed all 28 runs, did not import the primary runner, and used a separate update and metric implementation.
+
+```json
+{
+  "passed": true,
+  "protocol_pass": true,
+  "fidelity_receipt_pass": true,
+  "key_set_pass": true,
+  "numeric_mismatch_count": 0,
+  "categorical_mismatch_count": 0,
+  "maximum_absolute_difference": 4.547473508864641e-13,
+  "maximum_relative_difference": 9.11739763514324e-16
+}
+```
+
+**Evidence level:** `robust_within_tested_domain` for the exact frozen equations, parameters, boundary, horizon, perturbation, observers, and thresholds. The result remains below `mechanistically_supported` and `empirically_connected`.
+
+## 7. Interpretation and failure-to-mechanism ledger
+
+1. **Implementation:** the audited update contains unpaired feedback, one-way mode transfer, dissipation without reservoir credit, clipping, spatial transport/diffusion, and optional hard guards.
+2. **Reproduced observations:** homogeneous and localized independent checkers agree with their primaries; neither tested route demonstrates reciprocal full-state return.
+3. **Hypothesis only:** spatial gradients, diffusion, locality, a different ledger, a different interpretation of `phi`, phase-carrying state, or topology might alter the conclusion.
+
+| Audit item | Bounded finding |
+|---|---|
+| What failed | no full-state localized recovery; no reciprocal homogeneous return |
+| What remained positive | all localized cases finite; two cap-dependent partial `psi` recoveries; independent numerical agreement |
+| Likely failure location | equation, ledger, or interpretation more than stencil choice alone |
+| Current implementation status | unsupported as a natural reciprocal attractor under tested conditions |
+| Wider Lineum status | unresolved; not falsified |
+| Cheapest discriminator after owner gate | minimal periodic spatial accounting test, activating one existing spatial term at a time |
+
+Registered repair families, not yet selected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. These are agent-generated candidates and must not lead the owner's response.
+
+No laboratory, quantum, gravitational, dark-matter, cosmological, biological, consciousness, or ontological connection is established.
+
+## 8. Owner-intuition failure gate
+
+Imagine a transparent tray in which a small whirlpool and a dark fluid are both visible. After the tray is disturbed, the whirlpool weakens and later appears again in two trials, but the dark fluid never visibly flows back into it. In those two trials the dark fluid is pressed against an artificial wall; when the wall is removed, the whole arrangement still does not return to its earlier shape. Two independent observers agree that this is what happened.
+
+Mapping: the whirlpool is localized `psi`; the dark fluid is `phi`; the artificial wall is the cap; the earlier complete arrangement is the preregistered full state.
+
+The project owner may reject this scene and supply another. The open question is:
+
+> What do you think is actually happening in this tray that makes the whirlpool appear to return while the complete arrangement does not?
+
+No experiment, replacement law, parameter tuning, or mechanism ranking may proceed until the owner's answer is recorded separately from agent hypotheses and evidence.
+
+## 9. Preserved failure and publication chronology
+
+Technical non-results retained from history include a stalled checkout; five fail-closed archive-locator attempts (`31051766659`, `31052012351`, `31052264959`, `31052349446`, `31052454245`); one unretained full-screen recomputation that exceeded the command limit; one unretained migration replay; an accidental temporary branch; and a checker workflow rejected before job creation. None is scientific evidence.
+
+The concurrent `0.11.2` checkpoint reconstructed the exact `228809`-byte primary and matched its SHA-256; `13` localized/readability tests and `13` conventional-reference tests passed; an attempted fresh 28-case rerun exceeded the tool limit and remained a technical non-result.
+
+In this checkpoint, an initial staging used renamed source paths and failed test collection before scientific execution. A later connector attempt could not safely publish the recovered large plain Python sources within the payload boundary. No truncated source was published. The ordinary readable checker output, progress stream, execution receipt, and manifest are retained as companion files. Exact source republishing remains explicit reproducibility debt; immutable historical blobs and source hashes remain recorded.
+
+The primary used Python `3.13.14` and NumPy `2.3.5`; the checker used Python `3.13.5` and NumPy `2.3.5`. Their agreement survives the Python patch-version difference. Because the repository historically declared NumPy below `2.0`, promotion into a currently supported runtime claim still requires a supported-dependency rerun.
+
+## 10. Claims explicitly not established
+
+This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` energy cycle; scalar-potential memory; a causal disk mechanism; any replacement mechanism; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
+
+## 11. Exact next gate after the owner response
+
+After the owner response is recorded, the same report must:
+
+1. formalize the owner's scene as causal variants without treating intuition as evidence;
+2. retrieve existing return, reservoir, saturation, phase, topology, and alternative-ledger hypotheses across the connected Lineum workspace;
+3. compare owner, historical, conventional, null, and new variants in the reopenable ledger;
+4. preregister the smallest periodic spatial accounting discriminator, introducing one existing spatial mechanism at a time.
+
+The retained `0.11.2` candidate matrix is:
 
 ```text
 mechanism lanes:
@@ -267,90 +251,21 @@ mechanism lanes:
 dt = 0.1, 0.5, 1.0
 stencil = LAP4, LAP8
 psi initialization = localized normalized Gaussian
-phi initialization = uniform; centred hill; centred well;
+phi initialization = uniform; centered hill; centered well;
                      shuffled field with identical histogram;
                      radially flattened control
 noise = disabled
 caps and reset events = recorded explicitly
 ```
 
-For every step and lane record:
+Each lane must freeze boundaries, initial state, coefficients, runtime, source/sink accounting, local/global ledgers, `phi` debit counts, recurrence, flux, and outcome meanings. Record candidate ledgers including `abs(psi)^2 + phi`, `abs(psi)^2 + phi^2`, declared gradient terms, local gains/losses, neighbour and boundary fluxes, dissipation, cap deletion, resets, full-state return, timestep convergence, and stencil sensitivity.
 
-- candidate global ledgers including `abs(psi)^2 + phi`, `abs(psi)^2 + phi^2`, and declared gradient terms;
-- local `psi` and `phi` gains and losses;
-- neighbour and boundary fluxes;
-- dissipation loss, cap deletion, and reset amounts;
-- whether any `psi` gain is paired with a contemporaneous local debit or incoming flux;
-- return of both fields, not only `psi`;
-- timestep convergence and stencil sensitivity.
+A spatial mechanism may count as candidate reciprocal closure only if full state returns within preregistered tolerances without a hard cap, reset, or hidden source; `psi` gain has a contemporaneous measurable debit or incoming flux; the classification survives at least two timesteps and both stencils; and shuffled or flattened controls distinguish geometry-dependent transport from histogram-only gain.
 
-A spatial mechanism counts as candidate reciprocal closure only when the full declared state returns within preregistered tolerances, no hard cap/reset/hidden source is required, `psi` gain is paired with measurable debit or flux under a declared ledger, the classification survives at least two timesteps and both stencils, and shuffled/flattened controls distinguish geometry-dependent transport from histogram-only gain.
+Do not add a field, insert a reciprocal repair, tune parameters, run a soliton candidate, change production Core, edit a whitepaper, or continue execution before the owner responds.
 
-A `psi` rebound without a paired debit remains apparent recovery, not reciprocal return.
+## 12. Version history and handoff
 
-## 9. Question 3 boundary
+Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers.
 
-Current auxiliary scalar fields do not yet establish a real scalar degree of freedom with an explicit fixed potential minimum, declared kinetic/potential accounting, source-off information retention, return after positive and negative perturbations, stability on the exact `256 x 256` grid, and independence from clipping or resets.
-
-Question 3 remains open. The spatial debit-and-flux experiment may constrain it, but is not itself the full Question 3 test.
-
-## 10. Reproduction and publication record
-
-Decision-relevant receipts required to continue are recorded directly above. No chat memory, second narrative report, external website, or private TOLOG/Lina material is required to understand the state.
-
-A plain UTF-8 companion migration was prepared locally during this checkpoint: ordinary Python sources, readable JSON/JSONL rows, a manifest, and regression tests reconstructed the retained primary exactly. Local migration checks were:
-
-```text
-artifact integrity = exact 228809-byte reconstruction; retained SHA-256 matched
-localized/readability regression tests = 13 passed
-conventional reference tests = 13 passed
-full new 28-case recomputation = not completed;
-  an attempted rerun exceeded the tool time limit
-```
-
-The interrupted rerun is a technical non-result and must not be represented as a completed scientific execution.
-
-The connector could not safely transport every large plain-text companion atomically without truncation risk. Therefore unreferenced staging blobs and local files are **not published evidence**, must be treated as nonexistent in a new thread, and are not part of this checkpoint. No archive, Base64 payload in the repository, Unicode capsule, issue, workflow, or release was used as a workaround.
-
-At the next safe repository-hygiene checkpoint, replace the old self-extracting wrappers through authenticated local Git or another content-preserving path. Do not reintroduce encoded transport and do not change retained scientific values while migrating storage. This hygiene task is not a new scientific lane.
-
-## 11. Claims not established
-
-This report does not establish that:
-
-- TOLOG-Alpha is correct or incorrect;
-- any private TOLOG implementation was audited;
-- Lineum reproduces blind held-out galaxy rotation;
-- `phi` is physical energy;
-- the candidate ledger is complete;
-- a new return term is required;
-- a particular repair is uniquely correct;
-- Lineum describes dark matter, dark energy, quantum fields, gravity, biology, brains, consciousness, or cosmology;
-- visual similarity across scales demonstrates one mechanism;
-- the wider Lineum programme is falsified;
-- any whitepaper statement should be upgraded.
-
-## 12. Handoff checkpoint for the next thread
-
-The next thread must begin from this file and the then-current `develop` commit, not from chat memory.
-
-```text
-active report = research/lineum-public-tolog-galactic-shape-b4.md
-programme = public-TOLOG B4 three-question benchmark
-verified localized result = 2 cap-dependent partial psi recoveries;
-  0 full-state recoveries
-verified homogeneous result = apparent psi recovery without reciprocal phi debit
-conventional ruler = R0 through R4 passed with independent checker
-current mechanism verdict = unresolved;
-  tested routes do not close a reciprocal ledger
-next scientific action = execute the preregistered one-spatial-term-at-a-time
-  debit-and-flux discriminator in Section 8
-whitepaper / Core equation change = blocked
-new report = forbidden for this continuous programme
-private TOLOG or private Lina material = excluded
-unpublished local artifact migration = nonexistent for handoff purposes
-```
-
-Before the next write: re-fetch `develop`; reread `AGENTS.md`, `.agent/rules.md`, every `.agent/rules.d/*.md`, `.clinerules`, `.cursorrules`, `.windsurfrules`, `docs/repository-boundaries.md`, `docs/LINEUM_CODEX_v1.md`, and applicable workflows; verify this report's current blob SHA; and confirm that no concurrent change touched it.
-
-Do not repeat the galaxy shape screen, reciprocal ruler, localized-L1 checker, or homogeneous accounting audit unless a specific integrity check fails. Proceed to the spatial debit-and-flux discriminator in Section 8. Preserve every negative result and keep implementation facts, observed executions, interpretations, hypotheses, and real-physics claims separate.
+A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized checker as already executed exactly once, record the owner's neutral response, retrieve the complete hypothesis registry, and continue only in this report.

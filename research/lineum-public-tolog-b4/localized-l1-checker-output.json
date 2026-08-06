@@ -1,0 +1,23 @@
+{
+  "categorical_mismatch_count": 0,
+  "categorical_mismatches": [],
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "fidelity_receipt_pass": true,
+  "independence": {
+    "imports_primary_runner": false,
+    "recomputes_all_28_runs": true,
+    "separate_update_and_metric_implementation": true
+  },
+  "key_set_pass": true,
+  "maximum_absolute_difference": 4.547473508864641e-13,
+  "maximum_relative_difference": 9.11739763514324e-16,
+  "numeric_mismatch_count": 0,
+  "numeric_mismatches": [],
+  "passed": true,
+  "protocol_pass": true,
+  "schema": "lineum-b4-saturation-localized-l1-check/1"
+}

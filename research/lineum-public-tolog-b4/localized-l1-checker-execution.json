@@ -1,0 +1,50 @@
+{
+  "checker_bytes": 24247,
+  "checker_path": "/tmp/lineum-b4-standalone/research/runners/lineum_b4_saturation_localized_l1_check.py",
+  "checker_sha256": "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031",
+  "checker_summary": {
+    "categorical_mismatch_count": 0,
+    "fidelity_receipt_pass": true,
+    "independence": {
+      "imports_primary_runner": false,
+      "recomputes_all_28_runs": true,
+      "separate_update_and_metric_implementation": true
+    },
+    "key_set_pass": true,
+    "maximum_absolute_difference": 4.547473508864641e-13,
+    "maximum_relative_difference": 9.11739763514324e-16,
+    "numeric_mismatch_count": 0,
+    "passed": true,
+    "protocol_pass": true
+  },
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/tmp/lineum-b4-standalone/research/runners/lineum_b4_saturation_localized_l1_check.py",
+    "--result",
+    "/tmp/b4artifact/b4-l1-primary.json",
+    "--output",
+    "/tmp/b4-l1-checker.json"
+  ],
+  "elapsed_seconds": 20.371124379000094,
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "pytest": "9.0.2",
+    "python": "3.13.5"
+  },
+  "finished_utc": "2026-08-06T22:36:21.433259+00:00",
+  "official_execution_count_in_this_checkpoint": 1,
+  "output_bytes": 673,
+  "output_path": "/tmp/b4-l1-checker.json",
+  "output_sha256": "6fec721c7877d0dacf781668553fa7a7910f470c12567e2ef71e2837b511d49d",
+  "primary_bytes": 228809,
+  "primary_path": "/tmp/b4artifact/b4-l1-primary.json",
+  "primary_sha256": "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
+  "return_code": 0,
+  "schema": "lineum-b4-localized-l1-checker-execution/1",
+  "started_utc": "2026-08-06T22:36:01.062122+00:00",
+  "stderr_bytes": 2590,
+  "stderr_sha256": "a0241a92fbca6c488f2c703cd21644538badb677d6838820d5502605985d9e67",
+  "stdout_bytes": 673,
+  "stdout_sha256": "6fec721c7877d0dacf781668553fa7a7910f470c12567e2ef71e2837b511d49d"
+}

@@ -1,0 +1,44 @@
+{
+  "files": {
+    "research/lineum-public-tolog-b4/localized-l1-checker-execution.json": {
+      "bytes": 1924,
+      "role": "official execution receipt",
+      "sha256": "64d4642c3af1e37d14b2852a748dca52e1a68ebb0bbb2c84db72b01c3e86518e"
+    },
+    "research/lineum-public-tolog-b4/localized-l1-checker-output.json": {
+      "bytes": 673,
+      "role": "official one-shot independent checker result",
+      "sha256": "6fec721c7877d0dacf781668553fa7a7910f470c12567e2ef71e2837b511d49d"
+    },
+    "research/lineum-public-tolog-b4/localized-l1-checker-progress.jsonl": {
+      "bytes": 2590,
+      "role": "checker progress stream captured from stderr",
+      "sha256": "a0241a92fbca6c488f2c703cd21644538badb677d6838820d5502605985d9e67"
+    }
+  },
+  "primary_input": {
+    "artifact_id": 8947333992,
+    "artifact_zip_sha256": "ca9a9ca05ffe0077ec15dce87ac8309a78b7f2ec114ef84d316f4202d535350c",
+    "bytes": 228809,
+    "immutable_prior_report_blob": "8f08fe0da08751781e13f90496a928f89eae9d56",
+    "limitation": "The exact primary JSON remains in the recorded workflow artifact and immutable prior Git blob.",
+    "repository_copy_committed_in_this_checkpoint": false,
+    "sha256": "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
+    "workflow_job": 92448891365,
+    "workflow_run": 31048211101
+  },
+  "schema": "lineum-public-tolog-b4-readable-artifacts/1",
+  "source_recovery": {
+    "archive_tar_bytes": 153600,
+    "archive_tar_sha256": "587df51f7497ac26d82732716ba3939e57c4c4bdecd663ce6d21d04f70ffe2fd",
+    "archive_xz_bytes": 34756,
+    "archive_xz_sha256": "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f",
+    "checker_sha256": "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031",
+    "limitation": "Recovered exact sources passed 9 frozen tests locally, but the connector payload boundary prevented safe atomic publication of the large plain Python files. No truncated source was referenced.",
+    "plain_source_copies_committed_in_this_checkpoint": false,
+    "runner_sha256": "96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd",
+    "test_sha256": "95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec"
+  },
+  "source_report": "research/lineum-public-tolog-galactic-shape-b4.md",
+  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1 verification"
+}
