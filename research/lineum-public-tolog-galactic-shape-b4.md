@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1 negative independently verified; owner-intuition failure gate open; replacement-mechanism selection paused  
-**Version:** 0.12.0  
+**Status:** active authoritative report; localized-L1 negative independently verified; owner response and attributed external hypothesis recorded; cross-workspace hypothesis retrieval pending; no replacement mechanism selected  
+**Version:** 0.13.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `bf768c5a3463f3d959058bf91eaf7653face1cc6`  
+**Checkpoint parent:** `7232b49ae2f2381d8c4c705f1da661e3de11f3b2`  
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -13,7 +13,7 @@ This is the single active report for the continuous public-TOLOG B4 programme. I
 
 Versions through `0.10.1` used opaque compressed Unicode payloads. They are no longer embedded. The exact former report remains immutable as Git blob `8f08fe0da08751781e13f90496a928f89eae9d56`. The former overlapping classical-reference report is absent from the active branch; its decision-relevant content is restated here and its historical blob is `68b0ae44795124e13b8bccdd743a93b6a4ac3786`.
 
-The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. This revision retains that protocol but places execution behind the mandatory owner-intuition gate opened by the independently verified negative result.
+The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. The owner has now answered independently, and this revision records that response plus Káťa's separately attributed hypothesis without treating either as evidence or selecting a replacement mechanism.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -200,17 +200,58 @@ Registered repair families, not yet selected: paired reciprocal debit; reinterpr
 
 No laboratory, quantum, gravitational, dark-matter, cosmological, biological, consciousness, or ontological connection is established.
 
-## 8. Owner-intuition failure gate
+## 8. Attributed intuition and hypothesis register
 
-Imagine a transparent tray in which a small whirlpool and a dark fluid are both visible. After the tray is disturbed, the whirlpool weakens and later appears again in two trials, but the dark fluid never visibly flows back into it. In those two trials the dark fluid is pressed against an artificial wall; when the wall is removed, the whole arrangement still does not return to its earlier shape. Two independent observers agree that this is what happened.
+The negative-result gate used the transparent-tray scene: a small whirlpool represented localized `psi`, dark fluid represented `phi`, the artificial wall represented the cap, and the earlier complete arrangement represented the preregistered full state.
 
-Mapping: the whirlpool is localized `psi`; the dark fluid is `phi`; the artificial wall is the cap; the earlier complete arrangement is the preregistered full state.
+### 8.1 Tomáš's owner hypothesis — rotating tray or frame
 
-The project owner may reject this scene and supply another. The open question is:
+The project owner's independent response, translated from Czech, was:
 
-> What do you think is actually happening in this tray that makes the whirlpool appear to return while the complete arrangement does not?
+> Could the tray itself be rotating?
 
-No experiment, replacement law, parameter tuning, or mechanism ranking may proceed until the owner's answer is recorded separately from agent hypotheses and evidence.
+**Provenance:** Tomáš Tříska, project owner, 2026-08-07.  
+**Status:** owner-generated hypothesis; untested; not evidence.
+
+The response introduces a class that the frozen L1 observer did not directly test. The prior screen compared amplitudes, radial profiles, center displacement, radii, and `phi` behaviour in the fixed lattice frame. It did not ask whether an apparently changed state becomes close to the earlier state after a global rotation, translation, co-moving transform, or complex-phase alignment.
+
+Cautious formal variants, generated only after preserving the owner's wording:
+
+| ID | Candidate interpretation | Cheapest discriminating observable | Current status |
+|---|---|---|---|
+| `T-F0` | null: no global frame or phase transform explains the apparent return | fixed-frame result remains unchanged after all preregistered alignments | untested |
+| `T-F1` | rigid spatial-frame alias | best-fit periodic translation and lattice-compatible rotation materially reduce full-state error for both `psi` and `phi` | untested |
+| `T-F2` | co-moving or advected structure | a tracked rotating/translating frame preserves the localized object while the fixed observer reports loss and reappearance | untested |
+| `T-F3` | internal complex-phase rotation | phase-aligned complex `psi` returns although amplitude-only or fixed-phase observers misclassify it | untested |
+
+The smallest candidate test is observer-first, not equation-first: freeze permitted transforms and tolerances before looking at outcomes, compare both components under the same transform, and retain a no-transform null. If the historical primary lacks the required full snapshots, only the smallest frozen cases should be rerun after the protocol and provenance search are complete. No rotating-force term, new field, or production-code change is justified at this stage.
+
+### 8.2 Káťa's hypothesis — energy budget, phase state, compaction, and emergent gravity
+
+The owner supplied the following hypothesis from Káťa, translated from Czech and attributed to her:
+
+> The type or state of atoms depends on energy consumption. More available energy makes the state more gas-like; less available energy makes it more solid and requires more energy for a transition. Gravity is a manifestation rather than a primary phenomenon. Material with less energy contracts into itself in order to conserve as much energy as possible.
+
+**Provenance:** Káťa, supplied by Tomáš Tříska, 2026-08-07.  
+**Status:** Káťa-generated hypothesis; untested; not evidence; attribution must be retained if any later result uses or supports it.
+
+For scientific testing, the statement is separated into distinguishable variants rather than accepted as one bundle:
+
+| ID | Testable core | Operational reading for this programme | Current status |
+|---|---|---|---|
+| `K-E1` | net energy budget controls mobility | positive local surplus predicts greater spreading or transport; deficit predicts reduced mobility | untested |
+| `K-E2` | deficit promotes compaction | lower available energy relative to maintenance cost predicts a smaller localization radius or inward flux | untested |
+| `K-E3` | state transition has memory or hysteresis | equal instantaneous energy can produce different compactness depending on prior history | untested |
+| `K-G1` | gravity-like attraction is emergent | inward drift or contraction appears as an effective consequence of the energy-budget dynamics rather than an inserted fundamental force | untested |
+| `K-N0` | null | compactness and mobility do not track the proposed energy budget after controls | untested |
+
+The literal claims about atomic identity and melting point are not adopted as established physics. In standard thermodynamics, atomic identity is fixed primarily by nuclear composition, and a melting point is a material- and pressure-dependent transition property rather than a simple function in which possessing more energy universally lowers the melting point. The scientifically usable candidate here is narrower: a driven system may change mobility, compactness, and transition threshold according to its stored energy, incoming energy, dissipation, binding, pressure, and history. That narrower interpretation must still be tested and must not be retroactively attributed to Káťa as though she supplied the formalization.
+
+External terminology boundary: IUPAC defines atomic number as the number of protons in the nucleus; defines a phase transition through changes driven by imposed conditions such as temperature and pressure; and defines melting as solid-to-liquid conversion by heat and/or pressure. Portable references: IUPAC Gold Book, 5th ed. (2025), `atomic number`, DOI `10.1351/goldbook.A00499`; `phase transition`, DOI `10.1351/goldbook.P04537`; `melting`, DOI `10.1351/goldbook.M03821`; `melting temperature`, DOI `10.1351/goldbook.12788`. NIST Technical Note 2312 (D. Burgess, 2025), DOI `10.6028/NIST.TN.2312`, documents element-specific phase-transition temperatures at atmospheric pressure. These references constrain the literal physical wording; they do not validate or falsify the narrower Lineum candidate.
+
+A possible relation to the B4 failure is only an agent interpretation: the reappearing `psi` object might be a new localization or compaction caused by a background energy imbalance, not restoration of the original `psi`–`phi` arrangement. This must be distinguished from Tomáš's rotating-frame hypothesis, conventional transport, reciprocal exchange, numerical caps, and the null.
+
+No experiment or mechanism ranking has yet been performed from either attributed hypothesis.
 
 ## 9. Preserved failure and publication chronology
 
@@ -226,14 +267,15 @@ The primary used Python `3.13.14` and NumPy `2.3.5`; the checker used Python `3.
 
 This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` energy cycle; scalar-potential memory; a causal disk mechanism; any replacement mechanism; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
 
-## 11. Exact next gate after the owner response
+## 11. Exact next gate after the attributed responses
 
-After the owner response is recorded, the same report must:
+The attributed responses are now recorded. Before execution, the same report must:
 
-1. formalize the owner's scene as causal variants without treating intuition as evidence;
-2. retrieve existing return, reservoir, saturation, phase, topology, and alternative-ledger hypotheses across the connected Lineum workspace;
-3. compare owner, historical, conventional, null, and new variants in the reopenable ledger;
-4. preregister the smallest periodic spatial accounting discriminator, introducing one existing spatial mechanism at a time.
+1. retrieve existing frame, advection, rotation, phase, return, reservoir, saturation, compaction, gravity-like, topology, and alternative-ledger hypotheses across the connected Lineum workspace;
+2. compare Tomáš's, Káťa's, historical, conventional, null, and agent-generated variants in the reopenable ledger without merging distinct claims;
+3. preregister an observer-first frame/phase discriminator because it can test Tomáš's proposal without changing the equation;
+4. preregister the smallest periodic spatial accounting discriminator, introducing one existing spatial mechanism at a time;
+5. add energy-budget, compactness, mobility, and history observables only where they discriminate Káťa's variants from transport, frame aliasing, reciprocal exchange, cap artefacts, and the null.
 
 The retained `0.11.2` candidate matrix is:
 
@@ -262,10 +304,10 @@ Each lane must freeze boundaries, initial state, coefficients, runtime, source/s
 
 A spatial mechanism may count as candidate reciprocal closure only if full state returns within preregistered tolerances without a hard cap, reset, or hidden source; `psi` gain has a contemporaneous measurable debit or incoming flux; the classification survives at least two timesteps and both stencils; and shuffled or flattened controls distinguish geometry-dependent transport from histogram-only gain.
 
-Do not add a field, insert a reciprocal repair, tune parameters, run a soliton candidate, change production Core, edit a whitepaper, or continue execution before the owner responds.
+Do not add a field, insert a reciprocal repair, tune parameters, run a soliton candidate, change production Core, or edit a whitepaper before the cross-workspace provenance search and frozen discriminators are recorded.
 
 ## 12. Version history and handoff
 
-Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers.
+Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change.
 
-A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized checker as already executed exactly once, record the owner's neutral response, retrieve the complete hypothesis registry, and continue only in this report.
+A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized checker as already executed exactly once, preserve both attributions, retrieve the complete connected-workspace hypothesis registry, freeze the observer-first and spatial discriminators, and continue only in this report.
