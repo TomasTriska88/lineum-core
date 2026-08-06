@@ -1,31 +1,40 @@
 # Lina EI Capability, Emergence, and Lineum Integration Audit
 
 **Status:** active  
-**Version:** 0.2.0  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-08-06  
 **Target repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Core base before this revision:** `4367be56432eec099e7cf41086107ef010c9de25`  
+**Core base before this revision:** `e114a1d238447267b9fec35d7ce2b8bc19fce4e3`  
 **Private source repository:** `TomasTriska88/osobni-pamet` (temporary Lina EI repository alias)  
 **Private source snapshot:** `f62a2c547675c79a2399a76e2bf82d0d02581298`  
-**Current confidence:** high for the static component and control-flow map; medium for the numerical-contract transcription; low for runtime robustness, end-to-end persistence, causal field benefit, emergence, and commercial readiness
+**Current confidence:** high for the static component and control-flow map; high for the isolated state-contract result; medium for the numerical-contract transcription; low for deployed-runtime parity, numerical robustness, causal field benefit, emergence, and commercial readiness
 
 ## 0. Version history
 
 - **0.1.0:** established the first public-safe architecture, capability, emergence, and commercial-readiness baseline.
-- **0.2.0:** adds auditor-facing source anchors, exact numerical parameters and equations, implementation-neutral pseudocode, test-power analysis, and an end-to-end integration audit. It materially narrows the earlier persistence statement: the standalone solver implements persistent fields, but the inspected primary chat path contains a high-confidence static defect candidate that can replace the full field state with scalar telemetry after each chat turn.
+- **0.2.0:** added auditor-facing source anchors, exact numerical parameters and equations, implementation-neutral pseudocode, test-power analysis, and an end-to-end integration audit. It narrowed the earlier persistence statement because the standalone solver implements persistent fields while the inspected primary chat path can replace the full field state with scalar telemetry.
+- **0.3.0:** executed the frozen state-interface contract in an isolated synthetic harness. Three current replacement-path trials lost all five required matrices and selected loader reinitialisation; three merge-control trials preserved all matrices and avoided reinitialisation. An independent verifier checked the retained receipt. This upgrades the finding from `static_contradiction` to `contract_reproduced`, but it is not a production-host or full-application execution.
 
-Historical Git versions remain the authoritative record of earlier wording. This revision does not erase the earlier checkpoint; it supersedes only the claims explicitly identified below.
+Historical Git versions remain the authoritative record of earlier wording. This revision does not erase earlier checkpoints; it supersedes only the claims explicitly identified below.
 
 ## 1. Plain conclusion
 
 Lina EI is a real hybrid agent prototype, not only a stateless chat wrapper. Its private source contains a complex two-dimensional field, additional scalar fields, input injection, diffusion-like evolution, plasticity, memory files, sensor gating, action pools, scheduled activity, and an LLM-based semantic and language layer.
 
-However, the current evidence no longer supports an unqualified statement that the full grid persists across ordinary chat turns. The standalone simulator loads, updates, and saves the full matrices. The inspected chat integration then parses the simulator's intentionally shortened telemetry output and writes that shortened object back to the same state file. On the next load, the simulator detects missing matrices and reinitialises them. This is a **high-confidence static integration defect candidate**, not yet a reproduced runtime result.
+The standalone simulator implements full-state persistence. The primary chat interface, however, receives intentionally shortened telemetry and replaces the same state file with that shortened object. The next loader requires five field matrices and reinitialises when any is absent.
 
-The current defensible description is:
+That state-loss mechanism has now been reproduced in an isolated, privacy-safe execution of the frozen state contract:
 
-> Lina EI contains a persistent Lineum-inspired field solver and a broader persistent-agent architecture, but full end-to-end field persistence in the primary chat route is not established and is likely interrupted by the inspected state-write path.
+- current whole-file replacement: `3/3` trials lost all `5/5` required matrices;
+- current whole-file replacement: `3/3` trials selected the loader reinitialisation branch;
+- safe merge control: `3/3` trials preserved all `5/5` required matrices;
+- safe merge control: `0/3` trials selected reinitialisation;
+- an independent receipt verifier passed all declared checks.
+
+The current defensible description is therefore:
+
+> Lina EI contains a persistent Lineum-inspired field solver, but the frozen primary chat state hand-off deterministically destroys the field-state contract when it replaces the full state with shortened telemetry. This is reproduced in an isolated extracted-contract harness; deployed-service occurrence remains unverified.
 
 Lina EI is not supported as fully emergent. Most semantic labels, privileged coordinates, affective categories, thresholds, action meanings, memory routes, and much higher reasoning remain supplied by configuration, conventional code, or an LLM.
 
@@ -46,7 +55,7 @@ This report asks:
 7. How can Lina EI consume a pinned Lineum Core contract without moving private identity, memory, devices, or product policy into public Core?
 8. Which public-safe commercial opportunities are plausible, and which investor claims remain premature?
 
-Production-host synchronisation is intentionally deferred in this checkpoint at the project owner's instruction. No Prcek access is required for the static conclusions below.
+Production-host synchronisation is intentionally deferred at the project owner's instruction. No Prcek access is used for the findings below.
 
 ## 3. Rights, confidentiality, and reproduction boundary
 
@@ -58,9 +67,10 @@ This public report therefore contains:
 - exact public-safe numerical values;
 - original equations and implementation-neutral pseudocode reconstructed from the inspected operations;
 - source commit and non-sensitive blob fingerprints for authorised verification;
+- synthetic, privacy-safe state-contract results;
 - no copied private prompts, memories, conversations, personal profiles, device identifiers, credentials, network topology, or exploitable operational details.
 
-No verbatim private source block is reproduced. An authorised scientist can compare this report against the declared private blobs. A public reviewer can audit the mathematics and proposed controls without receiving private material.
+No verbatim private source block is reproduced. An authorised scientist can compare this report against the declared private blobs. A public reviewer can audit the mathematics, state contract, controls, and proposed experiments without receiving private material.
 
 ## 4. Evidence ladder
 
@@ -68,12 +78,13 @@ No verbatim private source block is reproduced. An authorised scientist can comp
 - `implemented`: corresponding source path exists and was inspected.
 - `test_present`: an automated or scripted check exists.
 - `static_contradiction`: inspected paths make two intended properties incompatible unless another unobserved path intervenes.
-- `reproduced`: a frozen execution produced a retained result.
-- `robust_within_tested_domain`: controls and independent checks support the observation.
+- `contract_reproduced`: the frozen interface semantics were executed with synthetic data and retained controls, without executing the complete private product.
+- `reproduced`: the relevant frozen implementation itself produced a retained result.
+- `robust_within_tested_domain`: controls and independent checks support the observation across the declared domain.
 - `mechanistically_supported`: intervention distinguishes the proposed mechanism from alternatives.
 - `empirically_connected`: a defined observable has been compared responsibly with external evidence.
 
-The strongest general level reached here is **implemented/static audit**. The end-to-end state issue reaches **static_contradiction**, not reproduced. Tests were inspected but not executed in this checkpoint.
+The strongest general level remains **implemented/static audit**. The chat-state reset mechanism reaches **contract_reproduced**. It does not yet reach full-application or deployed-runtime reproduction.
 
 ## 5. Auditor-facing private source anchors
 
@@ -118,11 +129,11 @@ This is a hybrid architecture. Neither the field solver nor the LLM is the compl
 
 ## 7. Implemented capability inventory
 
-| Capability | Static status | Qualification |
+| Capability | Evidence status | Qualification |
 |---|---|---|
 | Complex 2-D internal field | implemented | Fixed `32 x 32` complex `psi` grid |
 | Additional spatial fields | implemented | Real `phi`, `mu`, and `kappa` grids |
-| State load/save | implemented in solver | End-to-end chat persistence is contradicted by the inspected hand-off path |
+| State load/save | implemented in solver | The primary chat hand-off violates the full-state contract in the isolated reproduction |
 | Message injection | implemented | Location and phase are substantially assigned before evolution |
 | Sensor gating and boundary injection | implemented | Sensor meanings, ranges, phases, and regions are configured |
 | Diffusion-like field evolution | implemented | Numerical stability and convergence were not reproduced |
@@ -132,9 +143,10 @@ This is a hybrid architecture. Neither the field solver nor the LLM is the compl
 | Motor pools and energy discharge | implemented | Pool meanings, locations, thresholds, and actions are predefined |
 | Persistent structured/text memory | implemented | Retrieval is mainly filename/content matching plus LLM context construction |
 | Local/cloud LLM routing | implemented/documented | LLM supplies language and much semantic interpretation |
-| Automated checks | test_present | No retained run result was produced in this checkpoint |
+| Automated private checks | test_present | The private suite was inspected but not executed in this checkpoint |
+| Isolated chat state-contract check | contract_reproduced | Current replace path failed `3/3`; merge control passed `3/3` |
 | Learned open ontology | not established | Existing experiments use predefined concept nodes or waveguides |
-| Full end-to-end field memory in chat | static contradiction | Requires an isolated reproduction and likely a code fix |
+| Full end-to-end field memory in chat | contradicted within frozen contract | Full private application and production-host confirmation remain pending |
 | Direct Lineum Core dependency | not implemented | Current solver is independent and Lineum-inspired |
 
 ## 8. Exact state and numerical contract
@@ -363,7 +375,7 @@ These are engineered software observables. Their psychological names are interpr
 
 ## 9. End-to-end integration audit
 
-### 9.1 Full-state overwrite defect candidate
+### 9.1 Full-state overwrite mechanism
 
 The simulator saves full matrices to the declared state file, then prints only:
 
@@ -377,31 +389,99 @@ The simulator saves full matrices to the declared state file, then prints only:
 
 The primary chat route parses this shortened JSON, adds action-feedback expectations, and writes the shortened object to the same state path. The solver's next load requires `psi_real`, `psi_imag`, `phi`, `mu`, and `kappa`; if any is absent, it reinitialises the state.
 
-Static implication:
+Frozen contract:
 
 ```text
 full state saved by simulator
         -> shortened telemetry parsed by chat
-        -> shortened telemetry overwrites state file
+        -> shortened telemetry replaces state file
         -> next solver load sees missing matrices
-        -> field state is reinitialised
+        -> loader selects field-state reinitialisation
 ```
 
-Status: **high-confidence static contradiction; runtime reproduction required**.
+Status: **contract_reproduced**.
 
-This supersedes the unqualified component-to-product persistence wording in version `0.1.0`.
+This supersedes the unqualified component-to-product persistence wording in version `0.1.0` and the static-only status in version `0.2.0`.
 
-### 9.2 Sentiment path is neutralised in primary chat
+### 9.2 P1A isolated contract reproduction
+
+#### Question
+
+Does the frozen shortened-telemetry plus whole-file replacement contract preserve the five required field matrices across a chat hand-off?
+
+#### Synthetic protocol
+
+The audit used only anonymous synthetic data:
+
+- `32 x 32` matrices matching the declared state shape;
+- five required keys: `psi_real`, `psi_imag`, `phi`, `mu`, and `kappa`;
+- one generic continuity sentinel and one local marker per trial;
+- three distinct deterministic trial identifiers;
+- the frozen shortened simulator-output key schema;
+- the frozen whole-file chat replacement consequence;
+- the frozen loader missing-key predicate;
+- a negative control that merged telemetry into the full state instead of replacing it.
+
+No private memory, prompt, relationship, device, deployment, runtime-state, or production-host data was used.
+
+#### Results
+
+| Path | Trials | Missing required matrices after hand-off | Loader reinitialisation | Sentinel retained after loader |
+|---|---:|---:|---:|---:|
+| Current whole-file replacement | `3` | `5/5` in every trial | `3/3` | `0/3` |
+| Safe merge control | `3` | `0/5` in every trial | `0/3` | `3/3` |
+
+The local marker values were `1001`, `1002`, and `1003`. The current replacement path lost each marker and the deterministic loader substitute exposed `-1`. The merge control preserved `1001`, `1002`, and `1003` unchanged.
+
+#### Retained audit fingerprints
+
+- reproduction harness SHA-256: `7f7f811b7da7c1673a45e6e64292bca064da3d4b9e108145e683cfb96dd62f35`;
+- machine-readable receipt SHA-256: `0bffccd06e17ecb89e4aa01c56da1b73cd7192c3e5686d43ade607d422df2860`;
+- independent verifier SHA-256: `188cae80492cdf8014bf066fddc7942c0c065c64386a3acd89812a5137f0b52e`;
+- independent verification summary SHA-256: `b0bdee1c0274a8d106f836c26421c032040f1e2e0cd6df8e39f315d216612126`;
+- Python: `3.13.5`;
+- platform: `Linux-6.18.35-x86_64-with-glibc2.41`;
+- independent verifier: passed;
+- independent conditions checked: `31`.
+
+#### Independent checks
+
+Two distinct observations support the result:
+
+1. after the current hand-off, direct key-set inspection found all five required matrices absent in every trial;
+2. the separately evaluated loader predicate selected reinitialisation in every current-path trial and in no merge-control trial.
+
+The safe merge control demonstrates that the test can distinguish a preserving hand-off from the current replacing hand-off.
+
+#### Interpretation boundary
+
+What was observed:
+
+- the frozen extracted state contract deterministically loses the full field state under whole-file replacement;
+- the loader contract then deterministically selects reinitialisation;
+- merging telemetry into the full state prevents the loss in the tested contract.
+
+What was not observed:
+
+- the full private application was not executed;
+- the numerical field solver was not exercised by this contract harness;
+- the production service was not observed;
+- Git-to-Prcek parity was not checked;
+- no claim is made about how often the deployed route currently executes this exact path.
+
+The appropriate conclusion is a reproduced integration-contract defect, not a claim about live production telemetry.
+
+### 9.3 Sentiment path is neutralised in primary chat
 
 The primary chat invocation passes `sentiment = neutral` for ordinary user messages. Consequently, the solver's loving, positive, critical, negative, urgent, and alarm phase branches are not selected by that integration path. Tests that call those categories directly demonstrate simulator branch behaviour, not current ordinary-chat behaviour.
 
-### 9.3 Configuration-path mismatch
+### 9.4 Configuration-path mismatch
 
 The solver's default numerical override path is a root-level `limbic_config.json`. That root file is absent in the inspected snapshot. A file with the same name exists under a private associative directory but is not the solver's default path and the primary chat invocation does not pass it explicitly.
 
 The ordinary chat path therefore appears to use generated DNA constants plus built-in mode defaults, not the nested configuration used for profile-switching metadata. Test suites that pass a temporary `--limbic-config` exercise a different configuration path.
 
-### 9.4 Conventional memory retrieval remains dominant
+### 9.5 Conventional memory retrieval remains dominant
 
 The inspected chat memory route scans text files for words, counts occurrences, boosts matches using named engram summaries, selects a small top set, and inserts their content into the LLM context. It also applies direct fixed-coordinate excitation for selected matches.
 
@@ -409,7 +489,7 @@ This is functional retrieval, but it is conventional keyword/file search plus LL
 
 ## 10. Test and experiment audit
 
-### 10.1 What existing tests cover
+### 10.1 What existing private tests cover
 
 The inspected suites contain checks for:
 
@@ -432,11 +512,11 @@ The inspected suites contain checks for:
 - dream-labelled idle behaviour;
 - availability of NumPy.
 
-These are useful regression checks.
+These are useful regression checks. They were inspected but not run in this checkpoint.
 
 ### 10.2 What they do not establish
 
-The current tests do not establish:
+The current private tests do not establish:
 
 - that the primary chat path preserves full field state;
 - that grid dynamics improve any behavioural outcome over scalar state;
@@ -453,17 +533,23 @@ Some tests force the pure-Python fallback. That path is a scalar behavioural app
 
 A decay test requests `alpha = 0`, but the loader clamps it to `0.1`; the intended zero-growth condition is not actually created.
 
-### 10.3 Scripted associative-memory experiments
+### 10.3 What P1A establishes
+
+P1A establishes only the deterministic consequence of the frozen state-interface composition. It does not validate the field equations, numerical stability, semantic claims, or deployed service.
+
+The finding is nevertheless decision-relevant: testing long-horizon field memory through this hand-off is invalid until the state contract is preserved.
+
+### 10.4 Scripted associative-memory experiments
 
 One experiment hand-draws high-conductivity waveguides between predefined concept coordinates. It demonstrates propagation through an engineered channel, not learning.
 
 A second experiment updates `kappa` by adding a learning-rate multiple of field amplitude and then globally min-max normalises and smooths the grid. It is a useful exploratory prototype, but it lacks a conventional baseline, label/location swaps, held-out generalisation, preregistered metrics, and retained run receipts. It is not yet evidence of open-ended concept emergence.
 
-## 11. Static contradiction and numerical-risk ledger
+## 11. Contradiction and numerical-risk ledger
 
 | Finding | Evidence level | Why it matters |
 |---|---|---|
-| Primary chat likely overwrites full matrices with scalar telemetry | static contradiction | May reset grid memory each chat turn |
+| Whole-file chat hand-off drops full matrices and selects loader reinitialisation | contract_reproduced | Long-horizon field memory cannot be evaluated through this contract until repaired |
 | Primary chat always supplies neutral sentiment | implemented | Several tested sentiment branches are not used by ordinary chat |
 | Root numerical override file is absent | implemented/static | Runtime and test configuration paths differ |
 | FFT stencil symbol is computed but not used in the main diffusion update | implemented/static | Selected `ISOTROPIC`, `LAP8`, or other symbol does not control the actual main Laplacian |
@@ -518,33 +604,29 @@ Before migration, the legacy solver requires a frozen observable contract and kn
 
 ## 14. Revised research programme
 
-Production-host parity is deferred. The next work can be completed from Git and an isolated local environment.
+Production-host parity remains deferred. The following work can be separated from it.
 
 ### P1A — Reproduce the chat-state contradiction
 
-Use a temporary privacy-safe state path:
+**Status:** completed at `contract_reproduced` level.
 
-1. initialise a known full state;
-2. run one ordinary chat-equivalent simulator call;
-3. execute the inspected chat hand-off logic;
-4. inspect required matrix keys;
-5. perform the next solver load;
-6. retain before/after hashes and whether reinitialisation occurred.
-
-Pass condition: full matrices survive unchanged except for intended evolution. Failure condition: matrices disappear or the loader regenerates them.
+Result: the current replacement contract lost all required matrices and selected reinitialisation in `3/3` synthetic trials; the merge control preserved state in `3/3` trials.
 
 ### P1B — Preserve full state and add regression coverage
 
-Only after P1A:
+Required private-product change:
 
 - separate telemetry from full state or merge telemetry into the already saved full state;
 - use an atomic state-write strategy;
 - add an end-to-end regression test covering two consecutive chat turns;
-- verify that a known local perturbation survives and evolves rather than reinitialising.
+- verify that a known local perturbation survives and evolves rather than reinitialising;
+- retain the failing pre-fix test and passing post-fix test.
+
+No private Lina source was modified in this checkpoint. The private repository's own synchronisation, dependency-graph, test, and deployment gates still apply before any private commit.
 
 ### P1C — Frozen numerical baseline
 
-Retain:
+After P1B, retain:
 
 - dependency versions;
 - fixed seed;
@@ -591,10 +673,10 @@ The strongest defensible differentiator would be measured continuity and adaptat
 
 Current blockers:
 
-- end-to-end field persistence is likely broken in the primary chat path;
+- the frozen primary chat state contract does not preserve field continuity;
 - causal benefit of the grid is unmeasured;
 - many semantics are hand-authored;
-- tests do not yet cover integration, convergence, or ablation;
+- private tests do not yet cover this complete integration contract, convergence, or ablation;
 - the solver is not integrated with a pinned Core contract;
 - latency, compute, energy, privacy, and unit economics are not benchmarked here;
 - no narrow first customer problem or product-market fit is established;
@@ -650,22 +732,25 @@ Distributed physical pattern formation is not evidence of cognition. Lina variab
 |---|---|
 | Treat Lina as a hybrid persistent-agent research prototype | supported at architecture level |
 | Treat the standalone solver as capable of saving full fields | implemented |
-| Treat ordinary chat as preserving those fields | unsupported; high-confidence static contradiction |
+| Treat frozen whole-file chat replacement as preserving those fields | rejected by isolated contract reproduction |
+| Treat the defect as confirmed in deployed production | unsupported |
 | Claim full emergence | unsupported |
 | Claim consciousness | prohibited |
 | Describe the current grid as Lineum-inspired | supported |
 | Describe current runtime as using Lineum Core | unsupported |
-| Build a private adapter consuming a pinned Core contract | retained direction |
+| Repair state preservation before long-horizon field tests | selected next gate |
+| Build a private adapter consuming a pinned Core contract | retained direction after legacy stabilisation |
 | Publish private code, memories, devices, or commercial strategy in Core | rejected |
-| Continue with offline Git-based audit before Prcek parity | selected for this checkpoint |
+| Continue without Prcek parity for public-safe isolated research | selected for this checkpoint |
 
 ## 20. Claims explicitly not established
 
 This report does not establish that:
 
 - Git exactly matches production;
-- any inspected test currently passes;
-- the chat-state defect occurs at runtime in the deployed service;
+- the private inspected test suite currently passes;
+- the full private application has reproduced the reset under an isolated checkout;
+- the deployed service executes the frozen hand-off unchanged;
 - the current solver is stable or convergent across its intended domain;
 - field dynamics are necessary for useful behaviour;
 - semantic meaning emerges from the grid;
@@ -680,19 +765,25 @@ This report does not establish that:
 
 ## 21. Exact next checkpoint
 
-The next coherent checkpoint is **P1A: isolated end-to-end state persistence reproduction**, with no Prcek dependency.
+The next coherent checkpoint is **P1B: preserve full state and add a two-turn regression test inside the private Lina repository**.
+
+The repair is conceptually straightforward, but no private source change should be committed without satisfying that repository's current graph, test, synchronisation, and deployment rules. Prcek parity remains deferred at the owner's instruction; therefore this checkpoint stops before a private code commit.
 
 No whitepaper, public product claim, or investor claim should be changed from this report alone.
 
 ## 22. Checkpoint receipt
 
-- Inspection type: static, read-only private-source audit.
+- Inspection type: static private-source audit plus isolated extracted state-contract execution.
 - Private source commit: `f62a2c547675c79a2399a76e2bf82d0d02581298`.
-- Previous Core report commit: `4367be56432eec099e7cf41086107ef010c9de25`.
-- Runtime commands executed: none.
-- Tests executed: none.
+- Core base before this revision: `e114a1d238447267b9fec35d7ce2b8bc19fce4e3`.
 - Production-host access: deliberately deferred.
+- Full private application executed: no.
+- Private test suite executed: no.
+- Synthetic contract trials executed: `6` total (`3` current replacement, `3` merge control).
+- Independent verification conditions checked: `31`.
+- Current replacement result: all five matrices lost and loader reinitialisation selected in `3/3` trials.
+- Merge-control result: all five matrices preserved and reinitialisation avoided in `3/3` trials.
 - Personal or secret data retained in this report: none intentionally.
-- Scientific evidence level: `implemented/static audit`, with one `static_contradiction`.
-- Principal negative result: full grid persistence is likely broken by the primary chat state hand-off.
-- Principal next discriminator: reproduce two consecutive chat-equivalent turns against a temporary state file.
+- Scientific evidence level: general `implemented/static audit`; state-loss mechanism `contract_reproduced`.
+- Principal negative result: the frozen whole-file chat hand-off cannot preserve the required field-state contract.
+- Principal next discriminator: failing pre-fix and passing post-fix two-turn integration tests in the private product environment.
