@@ -1,17 +1,17 @@
 # Classical Reference Before Lineum Emergence — Reciprocal Exchange First
 
-**Status:** official primary retained; independent checker pending  
-**Version:** 0.5.0  
+**Status:** validated conventional reference; Lineum comparison not started  
+**Version:** 0.6.0  
 **Evidence cutoff:** 2026-08-06  
-**Repository / branch / base:** `TomasTriska88/lineum-core` / `develop` / `42fef4b20b7faac6e8a0638b0ec36ba826134545`  
+**Repository / branch / base:** `TomasTriska88/lineum-core` / `develop` / `d771373125ecae6acef5b0c1955bb2eb1bfe4c53`  
 **Historical filename retained:** `research/lineum-classical-bright-soliton-reference-preregistration.md`  
 **Root programme:** B4 report `0.10.1`; localized-L1 verification receipt `1.0.0`  
 **Scope:** non-spatial conventional exchange first; soliton localization paused; every Lineum substitution blocked  
-**Confidence:** `reproduced` for the frozen conventional primary; independent verification pending
+**Confidence:** `robust_within_tested_domain` for the frozen conventional reference; no Lineum mechanism tested
 
 ## Plain conclusion
 
-The frozen conventional reference was executed exactly once from committed report version `0.4.0` at `dt=0.001`. All five preregistered lanes passed: coherent return, incomplete detuned transfer with recurrence, reciprocal relaxation without return, one-way accumulation, and no coupling. This reaches `reproduced` for the conventional primary only. It does not validate Lineum, identify a return mechanism in Lineum, or establish that nature uses this model.
+The frozen conventional reference and its separately written analytic checker both passed. The checker used the exact committed primary SHA, reported zero mismatches, imported no primary solver, and did not rerun the primary. We can now reliably distinguish coherent return, incomplete detuned transfer with recurrence, reciprocal relaxation without return, one-way accumulation, and no coupling within this protocol. This does not validate Lineum, identify a Lineum return mechanism, or establish that nature uses this model.
 
 The owner direction remains `owner_provided_pre_hypothesis`: established science first; Lineum emergence only at the smallest missing function; keep one report; do not assume a soliton is the main answer. The soliton lane remains `dormant_pending_exchange_reference` and was not executed.
 
@@ -47,7 +47,7 @@ Frozen gates remain: R0/R1 ledger `<=1e-10`, analytic population error `<=1e-9`,
 
 ## Executable and independent checker
 
-The capsule contains the complete primary, closed-form checker, permanent tests, and machine-readable development receipt. The checker imports no primary module, recomputes closed-form event populations and gates, validates error/max-transfer witnesses, detects tampered events/gates/witnesses, and binds its verdict to the canonical source JSON SHA-256. It does not replay every RK4 substep; trajectory-wide maxima therefore still share primary-code audit and test dependence. The official checker has not been invoked.
+The capsule contains the complete primary, closed-form checker, permanent tests, and machine-readable development receipt. The checker imports no primary module, recomputes closed-form event populations and gates, validates error/max-transfer witnesses, detects tampered events/gates/witnesses, and binds its verdict to the canonical source JSON SHA-256. It does not replay every RK4 substep; trajectory-wide maxima therefore still share primary-code audit and test dependence. The official checker was invoked exactly once after the primary result was committed; its retained receipt is below.
 
 Test-first chronology: the initial test failed because the modules did not exist. The first implementation generalized a previously exposed two-component-only RK4 helper. Coarse `dt=0.01` missed only R2 analytic error (`2.493758533006485e-10` versus `1e-10`); fine `dt=0.005` passed all lanes. Tamper tests first exposed missing checker bindings, then passed after repair. A larger readable draft and a first compact generator were rejected before publication because transport display truncated and a non-raw string risked LaTeX control characters. No branch mutation or official run resulted. A later unreferenced staging blob `3a1afabf...` differed from the local draft only by its final newline; validating that exact form exposed that the standalone bootstrap selected its own marker instead of the real capsule. The bootstrap was changed to use the last marker and a separate permanent report-only extraction test was added. The final compact refactor reproduces the same coarse/fine values.
 
@@ -97,11 +97,46 @@ The outer execution wrapper later returned status `1` with `TERM environment var
 
 The observation supports only that the frozen primary numerically reproduced its declared conventional behaviors and gates. Independent checking is still pending, so the status is `reproduced`, not `robust_within_tested_domain` or `mechanistically_supported`.
 
+## Independent official checker result
+
+The checker was invoked exactly once from committed report `0.5.0`, without rerunning the primary:
+
+```text
+python exchange_checker.py --input OFFICIAL_PRIMARY.json --output reciprocal-exchange-checker-official.json
+```
+
+```text
+started UTC = 2026-08-06T14:10:14.716547+00:00
+finished UTC = 2026-08-06T14:10:16.042605+00:00
+checker return code = 0
+elapsed seconds = 0.625619634
+Python = 3.13.5 CPython
+platform = Linux-6.18.35-x86_64-with-glibc2.41
+checker source SHA-256 = 13f80277c725d0ee0b45b939d2c7731cd2fbed09102f99a0152574a4df7d61dd
+primary input SHA-256 = bcfec07204869be1b8d798d1d0f4d20999a38cf132e72cbf4d31de6d0a0c5e98
+checker JSON bytes / SHA-256 = 300 / 27ba9b699ec2cfaba38fd051fd80eed374ac5a072a6e8897e838c0003e86798f
+stdout = passed=True mismatches=0
+stderr bytes = 0
+primary rerun = false
+```
+
+Exact bounded verdict:
+
+```json
+{"independence":{"closed_form_events":true,"imports_primary":false,"replays_all_RK4_steps":false},"mismatches":[],"passed":true,"schema":"lineum-reciprocal-exchange-check/1","source_sha256":"bcfec07204869be1b8d798d1d0f4d20999a38cf132e72cbf4d31de6d0a0c5e98"}
+```
+
+The first disposable `0.6.0` report generator stopped before writing a report because the exact checker JSON braces were interpreted by its outer f-string; no retained artifact or repository state changed. The generator was corrected without changing source, result, gate, or checker.
+
+The same outer wrapper later emitted `TERM environment variable not set` and returned status `1` after the checker receipt and output were written. Checker stderr was empty; the JSON parsed and matched its receipt. This is a technical post-processing failure with no observed scientific effect. The checker is not rerun.
+
+Independence is bounded: event values and gates are recomputed from closed forms, but the checker does not replay every RK4 substep. Trajectory-wide maxima still depend on primary-code audit and permanent tamper tests. Within that declared boundary, the conventional result reaches `robust_within_tested_domain`, not `mechanistically_supported` or `empirically_connected`.
+
 ## Evidence boundary and variant impact
 
 1. **Implementation:** RK4 primary, closed-form checker, gates, schemas, extraction and tamper tests exist.
-2. **Observed:** the single official primary passed all five frozen lanes; development coarse/fine sensitivity remains recorded; the official checker has not run.
-3. **Cautious interpretation:** the primary harness reproduced the frozen behavioral classes; independent analytic verification is still required.
+2. **Observed:** the single official primary passed all five lanes and the one-shot analytic checker returned zero mismatches against its exact SHA.
+3. **Cautious interpretation:** the conventional classification is robust within the frozen event, gate, precision, and independence boundary.
 4. **Hypothesis:** later Lineum ablations may be classified against R0–R4.
 5. **Real physics:** no Lineum-to-laboratory, Rabi, quantum, gravity, dark-matter, cosmology, consciousness, or ontology connection is established.
 
@@ -146,117 +181,125 @@ LINEUM_RECIPROCAL_REPORT=../report.md PYTHONDONTWRITEBYTECODE=1 python -m unitte
 | `OFFICIAL_PRIMARY_WRAPPER_NOTE.json` | 642 | `602ef678f62b007832102f51d8e101751a2e44c8fee506b4832079c1d4fbb1f2` |
 | `OFFICIAL_PRIMARY.stdout` | 79 | `891903996847a8586f47479829424479bfd80bd2792fad37412b679b051875f7` |
 | `OFFICIAL_PRIMARY.stderr` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `OFFICIAL_CHECKER.json` | 300 | `27ba9b699ec2cfaba38fd051fd80eed374ac5a072a6e8897e838c0003e86798f` |
+| `OFFICIAL_CHECKER_EXECUTION.json` | 1327 | `8906872f1371d74e1d22e39636aa3538ce6fe378ce953fc2a6f139939ecb2dea` |
+| `OFFICIAL_CHECKER_WRAPPER_NOTE.json` | 648 | `7612365674642f60d27cc8ea085b3175eb7d3586c6429732868968062ac284ed` |
+| `OFFICIAL_CHECKER.stdout` | 25 | `7aa7cc637d98c079a5b5bfaef1a383d3eccdd34ca83d3be7b1cf420dcdf165af` |
+| `OFFICIAL_CHECKER.stderr` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 
-Archive bytes `7252`; archive SHA-256 `93cdffc13cf6f95922a02160774fabcd0dfa6e6117f39de5f97e06a087abff9c`; deterministic XZ/TAR encoded as Base64.
+Archive bytes `7760`; archive SHA-256 `0b21f4fda65c315aaa1387a0d1fa414b2d286166940b690f4d52c346c97e0705`; deterministic XZ/TAR encoded as Base64.
 
 ## Exact next gate
 
-Commit this exact report with the retained primary before invoking the checker. Re-fetch it by immutable commit, verify the report blob, capsule, official JSON and source hashes, extract it, and rerun the nine non-checker tests. Then invoke the independent checker exactly once:
+Commit this exact independently checked reference before any Lineum comparison. The next consequential step remains in this same report and must be preregistered before execution: audit the exact current homogeneous deterministic Core update and classify its explicit `psi -> phi` bookkeeping and indirect `phi -> psi` influence against R2 reciprocal relaxation and R3 one-way accumulation. Freeze term ablations, total-ledger observers, phase-information limits, cap/dissipation handling, and the meaning of every outcome before running it.
 
-```bash
-python exchange_checker.py --input OFFICIAL_PRIMARY.json --output reciprocal-exchange-checker-official.json
-```
+No new field, reciprocal repair, spatial extension, soliton run, parameter tuning, mechanism ranking, whitepaper edit, or claim about real physics is authorized by this checkpoint.
 
-Embed and commit that exact checker JSON, command/environment receipt, byte count, SHA-256, mismatches, and bounded interpretation in this same report before any Lineum comparison. Until then: no primary rerun, tuning, threshold change, spatial extension, soliton run, Lineum substitution, mechanism ranking, or whitepaper edit.
-
-<!-- CAPSULE bytes=7252 sha256=93cdffc13cf6f95922a02160774fabcd0dfa6e6117f39de5f97e06a087abff9c -->
+<!-- CAPSULE bytes=7760 sha256=0b21f4fda65c315aaa1387a0d1fa414b2d286166940b690f4d52c346c97e0705 -->
 ```base64
-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
-cVKX2JWkI+eHX/JVoK5TKCC8+phhE1skDegoIL3mPmnASgSpC1d4iXUrqlOq+6QrfxAcqzKFQh4hKynqaHYvP14//5aldY0chwxa
-ZMdv95GfZvInO6MP737VD+EfiYnAicuTFqnboT4y09Bu4mr4/gs/jT/JMlD58VWsHb6tArziBC2vV74sdkCbNigyqq0S+2Yjenl5
-ubqGB8MBhhpMpnYmK+5RvAFyCle//mjtgGumWd4jcE+JIVqCwwnhZSYJbZdtNkQifsu3UFU6muuwxDyFnNaGOMEHIal4sdQ6cU5t
-fZf43Zw9XSx7h1SVZPXU/CVXwnC1CQSbwwdC79nSrmY4QKih5MTxx82mFidZwAj7ms1G28hgQIHyJh9HoUeJoNlLRHOMb0LFYy6J
-drAyHPFRAkZwhgiejwKeI6dWdpGJYOLShJBm4ToXfVauWN++7BswAHAdaGEHcG/IuMaSszoeOrkP1XvRGATyi0XEjCVpR0Yi2TpO
-hvSNKzuBYjQPr9Kwm4Ss9DJEWPw445dGUBUHiSNXLGIlvNvdjp+xc3THghXkv6CPmJGbe9qj3ZYWf5m6pDJ3eL+D/FufQMLi/7LA
-zvuZP2Gm4olJ5v2eeJcozf7sRpN4+8Yd6QOYNnUYQnG5uCeuQM1d7nMno/cRf9uiPS34rvpNE5tNcXsn+j2DuAS8xl+Y0AP1AzAX
-8GZa6732L/QAlkltv8v925SSCoCZGNMLzDqDu/TjhFhZGPYYiYkYO7kLTdNdjyzoLme7yjicGZp8eLhEycbjwnTshNedn2/g2hB+
-KPAeWobL+7H9etu2hnYMXw7voui9KOYz69fvdZVKbxJWZVNTNU6odZWEOMOx5Axf4mfLSnHWkS6RhoxEmN8YO9bg2Wq0BI64XuqK
-FoVnrjTtKLWeBMaFPZ6dRtTcg6WqOOvm0jwpVbeH2zYpBfimU32pEcD10XOTIdHBVqfUMWs9ssfCCOGpQJnhR7aDwwM7LN6qL+QX
-46/+b71EGu8s/OLWjDfjoqn7Y9dl1zHUy6ivGu15QedVckUgLXa0CqIeXH7WiCCDCLrlGGS3nogebf2JTvZbCQy9AOwx427FZ7Hn
-qfiKVCWqvifxM14J4FEkIOJhGHxjgU619+0bE84TSJFq3A7a5NqXlKJIryChsZWGntek/JlWnqLacBE1sYWwIMqyCPdaoDNYKxBI
-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
+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
 ```
 <!-- END CAPSULE -->
