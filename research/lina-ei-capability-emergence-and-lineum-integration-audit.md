@@ -1,495 +1,698 @@
 # Lina EI Capability, Emergence, and Lineum Integration Audit
 
 **Status:** active  
-**Version:** 0.1.0  
+**Version:** 0.2.0  
 **Evidence cutoff:** 2026-08-06  
 **Target repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Target base commit:** `034f343605c1d0eac05820301fae67887c99a479`  
+**Core base before this revision:** `4367be56432eec099e7cf41086107ef010c9de25`  
 **Private source repository:** `TomasTriska88/osobni-pamet` (temporary Lina EI repository alias)  
 **Private source snapshot:** `f62a2c547675c79a2399a76e2bf82d0d02581298`  
-**Current confidence:** high for the static architecture map; medium for capability classification; low for production-runtime, deployment-parity, robustness, and emergence claims
+**Current confidence:** high for the static component and control-flow map; medium for the numerical-contract transcription; low for runtime robustness, end-to-end persistence, causal field benefit, emergence, and commercial readiness
+
+## 0. Version history
+
+- **0.1.0:** established the first public-safe architecture, capability, emergence, and commercial-readiness baseline.
+- **0.2.0:** adds auditor-facing source anchors, exact numerical parameters and equations, implementation-neutral pseudocode, test-power analysis, and an end-to-end integration audit. It materially narrows the earlier persistence statement: the standalone solver implements persistent fields, but the inspected primary chat path contains a high-confidence static defect candidate that can replace the full field state with scalar telemetry after each chat turn.
+
+Historical Git versions remain the authoritative record of earlier wording. This revision does not erase the earlier checkpoint; it supersedes only the claims explicitly identified below.
 
 ## 1. Plain conclusion
 
-Lina EI is currently best described as a **hybrid persistent agent prototype with field-mediated modulation and partial grid-mediated reflex behaviour**.
+Lina EI is a real hybrid agent prototype, not only a stateless chat wrapper. Its private source contains a complex two-dimensional field, additional scalar fields, input injection, diffusion-like evolution, plasticity, memory files, sensor gating, action pools, scheduled activity, and an LLM-based semantic and language layer.
 
-It is more than a stateless chat wrapper. The inspected implementation contains a persistent numerical state, sensory injection, field evolution, memory files, scheduled activity, action routing, and an LLM-based semantic and linguistic layer. These components can influence later behaviour across multiple ticks.
+However, the current evidence no longer supports an unqualified statement that the full grid persists across ordinary chat turns. The standalone simulator loads, updates, and saves the full matrices. The inspected chat integration then parses the simulator's intentionally shortened telemetry output and writes that shortened object back to the same state file. On the next load, the simulator detects missing matrices and reinitialises them. This is a **high-confidence static integration defect candidate**, not yet a reproduced runtime result.
 
-It is not yet supported as a fully emergent intelligence. Important meanings, locations, emotional categories, thresholds, action pools, memory routes, and decisions are still substantially assigned by configuration, fixed rules, keyword or pattern matching, and the external language model. The current grid therefore modulates and carries state, but it has not yet been shown to discover its own semantic organisation, goals, concepts, or stable identity through local Lineum dynamics alone.
+The current defensible description is:
 
-The inspected Lina EI source also does not currently use the released `lineum_core` package as a direct runtime dependency. Its present numerical substrate is an independent, Lineum-inspired local solver. The accurate current statement is therefore:
+> Lina EI contains a persistent Lineum-inspired field solver and a broader persistent-agent architecture, but full end-to-end field persistence in the primary chat route is not established and is likely interrupted by the inspected state-write path.
 
-> Lina EI uses a persistent local wave-grid prototype inspired by Lineum concepts; it has not yet been demonstrated as running on the current Lineum Core engine contract.
+Lina EI is not supported as fully emergent. Most semantic labels, privileged coordinates, affective categories, thresholds, action meanings, memory routes, and much higher reasoning remain supplied by configuration, conventional code, or an LLM.
 
-This report establishes the first public-safe baseline. It does not certify consciousness, personhood, biological equivalence, medical capability, autonomous general intelligence, or commercial readiness.
+The current runtime does not directly depend on the released `lineum_core` package. It uses an independent Lineum-inspired solver.
+
+This report does not certify consciousness, sentience, biological equivalence, medical capability, autonomous general intelligence, security, or commercial readiness.
 
 ## 2. Scope and central questions
 
-This audit asks:
+This report asks:
 
-1. What does the current Lina EI implementation actually compute and orchestrate?
-2. Which capabilities are implemented in code, which were reproducibly observed, and which remain design proposals?
-3. Which parts are genuinely stateful or locally dynamical, and which are supplied by rules, configuration, prompts, or an LLM?
-4. What would need to change before stronger claims of emergence could be tested?
-5. How could Lina EI depend on the public Lineum Core contract without moving private persona, memory, product policy, or deployment details into Core?
-6. Which public-safe product and investor opportunities are plausible, and which claims are premature?
+1. What does the inspected implementation actually compute?
+2. Which capabilities exist at component level and which survive end-to-end integration?
+3. What exact equations, constants, timestep, boundaries, clips, and readouts are used?
+4. What do the present tests genuinely establish?
+5. Which behaviours are locally dynamical, globally normalised, rule-based, keyword-based, or LLM-generated?
+6. What must be demonstrated before a bounded emergence claim is defensible?
+7. How can Lina EI consume a pinned Lineum Core contract without moving private identity, memory, devices, or product policy into public Core?
+8. Which public-safe commercial opportunities are plausible, and which investor claims remain premature?
 
-The report does not disclose private memories, private conversations, exact household or deployment data, credentials, network topology, device identifiers, security-sensitive prompts, or operational details that could facilitate misuse.
+Production-host synchronisation is intentionally deferred in this checkpoint at the project owner's instruction. No Prcek access is required for the static conclusions below.
 
-## 3. Source intake, rights, and confidentiality record
+## 3. Rights, confidentiality, and reproduction boundary
 
-### 3.1 Material inspected
+The source repository is private and had no public licence at the inspected snapshot. The project owner authorised inspection for this audit. Access is not treated as a general redistribution licence.
 
-The audit used an owner-authorised, access-controlled snapshot of the private Lina EI repository, including:
-
-- repository and developer rules;
-- public-facing repository description;
-- main chat and orchestration entry points;
-- the local field simulator;
-- the scheduled life-loop runner;
-- sensory and thalamic routing code;
-- synchronisation tooling;
-- dependency manifests and container definition;
-- selected tests;
-- selected architecture, scaling, business, and implementation-plan documents.
-
-Dynamic personal-memory directories, private diaries, private conversations, personal profiles, exact smart-home configuration, credentials, and deployment secrets were excluded from the evidence used in this public report.
-
-### 3.2 Rights and permitted mode
-
-The private repository had no public licence file at the inspected snapshot. No redistribution right is inferred from repository access. The project owner explicitly authorised inspection for this audit. The permitted mode is therefore limited to:
+This public report therefore contains:
 
 - factual source audit;
-- original high-level architectural description;
-- public-safe capability classification;
-- original test-plan design;
-- no copying of private source code, private prose, prompts, personal data, or operational configuration into public Core.
+- exact public-safe numerical values;
+- original equations and implementation-neutral pseudocode reconstructed from the inspected operations;
+- source commit and non-sensitive blob fingerprints for authorised verification;
+- no copied private prompts, memories, conversations, personal profiles, device identifiers, credentials, network topology, or exploitable operational details.
 
-No private source code is reproduced here. The normalised equations and architecture diagrams below are original audit abstractions.
+No verbatim private source block is reproduced. An authorised scientist can compare this report against the declared private blobs. A public reviewer can audit the mathematics and proposed controls without receiving private material.
 
-### 3.3 Reproduction tiers
+## 4. Evidence ladder
 
-This report supports two review tiers:
-
-- **Public review:** challenge the definitions, criteria, causal logic, test design, claim boundaries, and commercial-readiness reasoning contained in this standalone document.
-- **Authorised source verification:** independently inspect the declared private commit and verify that the normalised implementation statements match the source. This tier requires lawful access to the private snapshot and must preserve the same confidentiality boundary.
-
-## 4. Evidence ladder used in this audit
-
-- `documented`: described in a design or planning document.
-- `implemented`: corresponding code exists in the inspected snapshot.
-- `test_present`: a relevant automated test exists in the repository.
-- `reproduced`: a frozen execution produced a retained result in the current audit.
+- `documented`: described by a design or planning artefact.
+- `implemented`: corresponding source path exists and was inspected.
+- `test_present`: an automated or scripted check exists.
+- `static_contradiction`: inspected paths make two intended properties incompatible unless another unobserved path intervenes.
+- `reproduced`: a frozen execution produced a retained result.
 - `robust_within_tested_domain`: controls and independent checks support the observation.
-- `mechanistically_supported`: interventions distinguish the proposed mechanism from alternatives.
+- `mechanistically_supported`: intervention distinguishes the proposed mechanism from alternatives.
 - `empirically_connected`: a defined observable has been compared responsibly with external evidence.
 
-At this checkpoint, the strongest general level reached is **implemented/static audit**. Tests were inspected but were not executed in this environment. No production-host runtime, deployment synchronisation, long-horizon behaviour, or device action was independently reproduced.
+The strongest general level reached here is **implemented/static audit**. The end-to-end state issue reaches **static_contradiction**, not reproduced. Tests were inspected but not executed in this checkpoint.
 
-## 5. Git-to-production-host parity
+## 5. Auditor-facing private source anchors
 
-The project owner expects the Git snapshot to be identical to the code running on the production mini-PC host. The private repository contains an official remote-synchronisation checker and an official deployment workflow. The checker is designed to compare selected local and remote files by hash and classify them as synchronised or diverged while excluding volatile or secret material.
+These fingerprints permit an authorised auditor to verify that the report maps to the declared snapshot without publishing private content.
 
-No direct connection to the production host was available in this audit environment. No signed or retained synchronisation receipt was supplied. Therefore:
+| Audit role | Private source object | Blob SHA |
+|---|---|---|
+| Main field solver, state loader, numerical update, telemetry, CLI | `limbic_simulator.py` | `9b6149c5afb21b063f9899b0abc59effe5d14232` |
+| Primary chat orchestration and state hand-off | `chat.py` | `e5ed4bee60cab29f5653b7640ed90add297a40b1` |
+| Main simulator integration/regression suite | `test_limbic.py` | `b59be2b73998b4119bb55f4f110c209f2c3c4ff0` |
+| Sensory-grid and motor-pool tests | `test_sensory_grid.py` | `2c9c64a665526ffc26e7784238c1db637d1845e7` |
+| Scripted Hebbian-wave experiment | `experiments/test_hebbian_wave_learning.py` | `11c03be4d28307df6468271682c924c12ad0f19d` |
+| Scripted handcrafted waveguide experiment | `experiments/test_helmholtz_associative_memory.py` | `ed1f3ae3cdc39ffccebf613d234dc1a82cb0404f` |
+| Generated DNA state inspected for active constants | `brain/neocortex/associative/limbic_dna.json` | `9882e7de309373f17793c30fd90919e67d4d93a9` |
 
-- **Owner expectation:** Git and production code are 1:1.
-- **Audit status:** not independently verified.
-- **Required next evidence:** a sanitised synchronisation receipt tied to the private commit and execution time.
+Personal semantic maps, private relationship records, runtime state matrices, and operational device maps are intentionally not fingerprinted here.
 
-A suitable public-safe receipt is:
-
-```json
-{
-  "schema": "lina-ei-sync-receipt/v1",
-  "source_commit": "<private-source-commit>",
-  "checked_at_utc": "<ISO-8601 timestamp>",
-  "checked_file_count": 0,
-  "matching_file_count": 0,
-  "diverged_file_count": 0,
-  "missing_local_count": 0,
-  "missing_remote_count": 0,
-  "excluded_secret_or_volatile_count": 0,
-  "result": "synced|diverged|unresolved",
-  "checker_version_sha256": "<hash>",
-  "receipt_sha256": "<hash>"
-}
-```
-
-The receipt must not contain filenames that reveal personal data, hostnames, addresses, ports, credentials, device identifiers, or secret paths.
-
-## 6. Public-safe normalised architecture
+## 6. Normalised architecture
 
 ```text
-Environment and user inputs
+Environment and user message
         |
         v
-Sensor and message adapters
+Conventional adapters and rule-based routing
         |
-        v
-Gating / routing / safety checks
-        |
-        +----------------------------+
-        |                            |
-        v                            v
-Persistent local field grid      Semantic cortex
-(state, diffusion, waves,        (LLM interpretation,
-noise, modulation, thresholds)    language, planning, tools)
-        |                            |
-        +-------------+--------------+
-                      |
-                      v
-             Memory and state stores
-                      |
-                      v
-             Action / notification layer
-                      |
-                      v
-               External environment
+        +-----------------------------+
+        |                             |
+        v                             v
+2-D field solver                 LLM semantic layer
+(psi, phi, mu, kappa)            (language, planning, tools)
+        |                             |
+        +--------------+--------------+
+                       |
+                       v
+             File-backed state and memory
+                       |
+                       v
+              Thresholded action layer
 ```
 
-This is a hybrid architecture. Neither the field grid nor the LLM alone is the complete current system.
+This is a hybrid architecture. Neither the field solver nor the LLM is the complete current system.
 
-## 7. What the implementation currently contains
+## 7. Implemented capability inventory
 
-| Capability | Static evidence | Current audit status | Important limitation |
-|---|---|---|---|
-| Persistent numerical internal state | Multiple field arrays and state are loaded, updated, and saved across ticks | implemented | Persistence alone does not establish memory semantics, agency, or consciousness |
-| Local spatial field evolution | Diffusion-like, growth, damping, noise, and coupling operations are present | implemented | Numerical validity, stability domain, and equivalence to current Core were not reproduced |
-| Sensory injection into a grid | External observations are converted into localised field perturbations | implemented | Sensor meanings and placements are substantially configured in advance |
-| Arousal, valence, tension, fatigue, and related readouts | Scalar state and grid-derived modulation paths are present | implemented | These are engineered observables and labels, not demonstrated biological emotions |
-| Thalamic-style gating and prioritisation | Routing and salience filters are present | implemented | Biological naming is an analogy unless experimentally validated at the causal level |
-| Motor or action pools | Thresholded action-selection structures and external action adapters are present | implemented | Action semantics and thresholds are largely predefined |
-| Persistent text and structured memory | File-backed memories, state, logs, and retrieval paths are present | implemented | Much retrieval remains rule-, keyword-, or LLM-mediated rather than emergent from the field |
-| Scheduled autonomous loop | Background or periodic orchestration is present | implemented | Continuous reliable production operation was not independently observed |
-| LLM-based semantic reasoning | External or local model routes are present | implemented | The LLM remains the principal source of language competence and much semantic interpretation |
-| Local/cloud model fallback strategy | Multiple model-provider modes are documented and partially wired | implemented/documented | Cost, latency, privacy, and quality claims require current benchmarks |
-| Automated tests | Unit and integration-oriented tests are present | test_present | The test suite was not run in this checkpoint; green tests would still not prove emergence |
-| Self-modification or self-healing | Repository rules and plans describe adaptive code maintenance | documented/partly orchestrated | Safe, autonomous, production-grade self-modification was not reproduced |
-| Concept-grid learning | Embedding, self-organising, and plasticity ideas are described | documented | Not established as the current semantic substrate |
-| Dream or offline consolidation | Consolidation concepts and scheduled-state ideas are described | documented/partial routines | No mechanistic evidence that offline dynamics improve generalisation was reproduced |
+| Capability | Static status | Qualification |
+|---|---|---|
+| Complex 2-D internal field | implemented | Fixed `32 x 32` complex `psi` grid |
+| Additional spatial fields | implemented | Real `phi`, `mu`, and `kappa` grids |
+| State load/save | implemented in solver | End-to-end chat persistence is contradicted by the inspected hand-off path |
+| Message injection | implemented | Location and phase are substantially assigned before evolution |
+| Sensor gating and boundary injection | implemented | Sensor meanings, ranges, phases, and regions are configured |
+| Diffusion-like field evolution | implemented | Numerical stability and convergence were not reproduced |
+| Plasticity-like `kappa` update | implemented | Every substep also applies global sum normalisation, so learning is not purely local |
+| Long-gap decay and relaxation | implemented | Wall-clock time is mapped to an engineered simulation time |
+| Dream-like idle injection | implemented | Uses predefined semantic coordinates and a fixed threshold |
+| Motor pools and energy discharge | implemented | Pool meanings, locations, thresholds, and actions are predefined |
+| Persistent structured/text memory | implemented | Retrieval is mainly filename/content matching plus LLM context construction |
+| Local/cloud LLM routing | implemented/documented | LLM supplies language and much semantic interpretation |
+| Automated checks | test_present | No retained run result was produced in this checkpoint |
+| Learned open ontology | not established | Existing experiments use predefined concept nodes or waveguides |
+| Full end-to-end field memory in chat | static contradiction | Requires an isolated reproduction and likely a code fix |
+| Direct Lineum Core dependency | not implemented | Current solver is independent and Lineum-inspired |
 
-## 8. Normalised current field model
+## 8. Exact state and numerical contract
 
-The inspected implementation can be abstracted as a bounded discrete-time field system:
+### 8.1 State variables
+
+| Symbol | Shape | Type | Initial/runtime bounds | Operational role |
+|---|---:|---|---|---|
+| `psi` | `32 x 32` | complex | no explicit amplitude clip | propagating/modulated wave state |
+| `phi` | `32 x 32` | real | clipped to `[0, 10]` | potential-like accumulated activity |
+| `mu` | `32 x 32` | real | clipped to `[0, 5]` | slow memory-like accumulation |
+| `kappa` | `32 x 32` | real | clipped to `[0.1, 5]` | local conductivity/plasticity factor |
+| fatigue | scalar | real | `[0, 1]` | reduces growth and raises selected action thresholds |
+| arousal | scalar | real | mapped to `[0, 1]` | nonlinear readout from total field energy |
+| valence | scalar | real | mapped to `[-1, 1]` | nonlinear readout from `phi`, `mu`, and supplied sentiment |
+| tension | scalar | real | mapped to `[0, 1]` | nonlinear readout from complex spatial gradients |
+
+Initial `psi` noise has standard deviation `0.05`; `phi` starts at `0.1`; `mu` and `kappa` start from generated DNA bases.
+
+### 8.2 Active generated constants at the inspected snapshot
+
+The generated DNA declares archetype `chaotic` and variance `0.08`. The private seed is withheld. The numerical constants are:
+
+| Parameter | Active value |
+|---|---:|
+| `alpha` | `0.6748779135011179` |
+| `gamma` | `0.24170416981896917` |
+| `amp_pulse_scale` | `1.1638573064482545` |
+| `eta_kappa` | `0.006322621793817576` |
+| `rho_kappa` | `0.00028924718584053807` |
+| `gamma_phi` | `0.030084241865454553` |
+| `eta` | `0.0055233518301120626` |
+| `rho` | `0.0004781564875658295` |
+| `c1` | `0.21214156163758383` |
+| `c2` | `0.050701974851045745` |
+| `lambda` | `0.05714552337905371` |
+| `c_w` | `0.01956298490412667` |
+| fatigue threshold weight | `0.3828552821908546` |
+| tension threshold weight | `-0.29214399761553184` |
+| sleep inhibition multiplier | `4.785846155937923` |
+| presence damping radius | `2.955155003596822` |
+
+The loader later clamps several parameters. The default clamp intervals are:
+
+- `alpha [0.1, 1.0]`
+- `c1 [0.05, 0.5]`
+- `gamma [0.005, 0.4]`
+- `lambda [0.01, 0.2]`
+- `c_w [0.005, 0.1]`
+- `c2 [0.01, 0.2]`
+- `gamma_phi [0.005, 0.3]`
+- `eta [0.0005, 0.05]`
+- `rho [0.0001, 0.02]`
+- `amp_pulse_scale [0.2, 5.0]`
+- `eta_kappa [0.0001, 0.02]`
+- `rho_kappa [0.00001, 0.002]`
+
+A test that requests `alpha = 0` therefore executes with `alpha = 0.1`, not zero.
+
+### 8.3 Message source
+
+For message length `L`, source amplitude is
 
 \[
-X_{t+1} = B\left(X_t + \Delta t\left[F(X_t;\theta) + D(X_t)\nabla^2X_t + S_t + \xi_t\right]\right),
+A = 2s\ln(1+L),
 \]
 
-where:
+where `s` is `amp_pulse_scale`. Command failure adds `4` and forces a destructive phase.
 
-- \(X_t\) is the collection of local fields, including quantities named \(\psi\), \(\phi\), \(\mu\), and \(\kappa\);
-- \(F\) represents local growth, decay, coupling, and nonlinear update terms;
-- \(D\nabla^2X_t\) represents neighbour-mediated spreading or diffusion;
-- \(S_t\) represents externally prepared sensory or message injection;
-- \(\xi_t\) represents noise or situated perturbation;
-- \(B\) is numerical bounding, clipping, or normalisation;
-- \(\theta\) contains fixed or configured parameters.
+With `s = 1`, example amplitudes are:
 
-This abstraction captures a real dynamic substrate, but the semantic interpretation of regions and observables is currently supplied substantially outside the equation. For example, an externally defined input may be assigned a location or phase class before the field evolves. A later scalar readout may then be labelled as an emotion, urgency, or action tendency. The field can transform and propagate the injected state, but this does not by itself show that it discovered the meaning of the input or label.
+- `L = 20`: `A = 6.0890`
+- `L = 100`: `A = 9.2302`
+- `L = 1000`: `A = 13.8175`
 
-## 9. What is currently pre-authored rather than emergent
+Sentiment is mapped to a fixed phase class before the grid evolves. Matched keywords route the source to predefined semantic coordinates; otherwise it is injected near the centre. The source uses a Gaussian spatial profile. This is engineered semantic routing, not learned representation discovery.
 
-The following elements materially constrain a full-emergence claim:
+### 8.4 Main update equations
 
-1. The grid resolution is fixed in the present implementation.
-2. Semantic and anatomical regions are substantially assigned to predefined coordinates.
-3. Several affective categories and modes are represented by fixed templates or mappings.
-4. Sentiment or message class can be supplied externally rather than inferred through local adaptation.
-5. Concepts and relationships can be selected through keywords, patterns, configured names, or LLM interpretation.
-6. Action pools, labels, locations, thresholds, and safety gates are substantially designed in advance.
-7. Memory retrieval is not yet shown to arise from field similarity and learned causal relevance without keyword or LLM mediation.
-8. The LLM remains the dominant semantic executive and language generator.
-9. No retained ablation demonstrates that the grid is necessary for the claimed long-horizon capabilities rather than merely a modulator.
-10. No retained intervention demonstrates that learned local structure, rather than preassigned structure, causes successful behaviour.
+Define energy density
 
-The appropriate conclusion is not that emergence is absent everywhere. It is that the current evidence cannot distinguish strongly enough among:
+\[
+e = |\psi|^2,
+\]
 
-- genuine useful field-mediated state integration;
-- engineered dynamical modulation;
-- decorative or redundant biological analogy;
-- behaviour primarily generated by the LLM and conventional rules.
+and gradient penalty
 
-## 10. Operational criteria for stronger emergence
+\[
+g = |\nabla |\psi||^2.
+\]
 
-A stronger claim should require observable behaviour, not a preferred label. The following criteria are proposed.
+Fatigue-modulated growth is
 
-### E1 — Persistent endogenous state
+\[
+G = \alpha(1-0.5f)\tanh(c_1\phi)-\gamma-\lambda\phi^2-c_w g.
+\]
 
-After input stops, a bounded internal state must persist for a preregistered interval and alter later behaviour. It must survive restart or checkpoint restoration when persistence is part of the claim.
+The local complex diffusion coefficient is
 
-### E2 — Learned semantic relocation
+\[
+D_\psi(e)=\frac{(0.05+0.05i)v}{1+0.1e},
+\]
 
-The system must learn where and how to represent novel concepts from experience. A successful test must prevent the evaluator from assigning the final coordinates, labels, or class-specific thresholds in advance.
+where latency-derived `v` lies approximately in `[1, 2]`.
 
-### E3 — Local plasticity with causal credit
+The principal updates are
 
-Local couplings must change from consequences or prediction errors. Intervention on the learned couplings must selectively impair the acquired behaviour.
+\[
+\psi \leftarrow \psi + \Delta t\,D_\psi(e)\,\kappa\,\nabla^2\psi
+\]
 
-### E4 — Decentralised action selection
+plus split growth, sources, noise, optional remote coupling, low-pass filtering, and boundary damping;
 
-At least one meaningful action-selection task must be solved by distributed field state plus generic readout rules, without the LLM choosing the action label directly.
+\[
+\phi \leftarrow \operatorname{clip}_{[0,10]}\left[\phi+\Delta t\left(D_\phi\kappa\nabla^2\phi+c_2|\psi|^2-\gamma_\phi\phi\right)\right];
+\]
 
-### E5 — Open-ended concept growth
+\[
+\mu \leftarrow \operatorname{clip}_{[0,5]}\left[\mu+\Delta t\left(\eta|\psi|^2\kappa-\rho\mu\right)\right];
+\]
 
-The system must add, merge, split, or reorganise concepts without a fixed closed ontology. Growth must improve a held-out behavioural measure rather than only produce visually interesting clusters.
+\[
+\kappa^* \leftarrow \kappa+\Delta t\left[\eta_\kappa|\psi|^2(5-\kappa)-\rho_\kappa(\kappa-\kappa_0)\right].
+\]
 
-### E6 — Generalisation
+Then a global scaling is applied:
 
-A learned organisation must transfer to held-out inputs, contexts, or sensors without adding task-specific coordinates, keywords, or thresholds.
+\[
+\kappa \leftarrow \kappa^*\frac{\sum\kappa_0}{\sum\kappa^*},
+\]
 
-### E7 — Ablation necessity
+followed by clipping to `[0.1, 5]`.
 
-Freezing, shuffling, replacing, or removing the field must cause a predicted and selective loss. A generic random-state or scalar-state control must not perform equivalently.
+This normalisation couples every cell to the global grid sum. `kappa` is therefore not a strictly local learning rule.
 
-### E8 — Robustness and convergence
+### 8.5 One simulator call
 
-The result must remain within declared tolerance across seeds, timesteps, grid sizes, resolutions, boundaries, and small parameter perturbations.
+The NumPy path uses `dt = 0.1` and exactly `100` substeps per call, for a nominal integration horizon of `10` model-time units.
 
-### E9 — Non-circular measurement
+Original audit pseudocode:
 
-Success metrics must be fixed before observing the desired output and must not reuse the labels, coordinates, or thresholds that defined the behaviour.
+```text
+load full psi, phi, mu, kappa state
+apply wall-clock relaxation when elapsed time exceeds 60 seconds
+construct semantic, sensor, error, and optional remote sources
+construct a two-cell edge damping mask and boundary excitations
+repeat 100 times:
+    compute growth from current phi, fatigue, and |psi| gradients
+    apply half growth step
+    apply half boundary-source step
+    apply optional remote coupling
+    add complex noise
+    compute energy-dependent five-point Neumann Laplacian update
+    Fourier low-pass psi
+    enforce copied-edge zero-flux values
+    multiply by edge damping mask
+    apply second half growth using the previously computed growth
+    update and clip phi
+    update and clip mu
+    update kappa
+    globally renormalise kappa sum
+    clip kappa
+compute motor-pool means and apply local discharge
+compute scalar telemetry
+save full state
+print shortened telemetry JSON
+```
 
-Meeting these criteria would support bounded claims about emergent organisation or field-mediated cognition. It would still not prove consciousness or biological equivalence.
+### 8.6 Boundary treatment
 
-## 11. Current Lina grid versus Lineum Core
+For `32 x 32`, damping depth is two cells. The outer-cell factor per substep is
 
-The inspected Lina EI runtime implements its own numerical solver and local field conventions. Its dependency manifest does not declare the current `lineum-core` package, and the audited entry points did not import the public `lineum_core` package.
+\[
+\exp(-20\cdot1\cdot0.1)=e^{-2}=0.135335,
+\]
 
-Therefore the current relationship is conceptual and architectural, not a verified package integration.
+and the second-cell factor is
+
+\[
+\exp(-20\cdot0.25\cdot0.1)=e^{-0.5}=0.606531.
+\]
+
+Across 100 substeps those factors become approximately `1.38e-87` and `1.93e-22`, before other terms. The code also enforces copied-edge Neumann values. The combination of reflecting assignment and strong absorbing damping is a mixed boundary design that requires explicit convergence and reflection tests.
+
+### 8.7 Telemetry equations
+
+Total energy:
+
+\[
+E=\sum |\psi|^2.
+\]
+
+Arousal:
+
+\[
+a=\tanh\left(10\frac{E}{32^2}\right).
+\]
+
+Raw tension:
+
+\[
+t_0=\frac{\sum(|\partial_x\psi|^2+|\partial_y\psi|^2)}{E+10^{-6}},
+\]
+
+with `+1.5` on command failure, then
+
+\[
+t=\tanh(0.2t_0).
+\]
+
+Valence base:
+
+\[
+v_0=\operatorname{mean}(\phi)-0.2+0.3\operatorname{mean}(\mu)+b_{sentiment},
+\]
+
+then
+
+\[
+v=\operatorname{clip}_{[-1,1]}[\tanh(1.5v_0)].
+\]
+
+Vortices are counted from phase winding around `2 x 2` loops when all four amplitudes exceed `0.005` and absolute winding exceeds `0.8` turns.
+
+These are engineered software observables. Their psychological names are interpretations, not validated biological measurements.
+
+## 9. End-to-end integration audit
+
+### 9.1 Full-state overwrite defect candidate
+
+The simulator saves full matrices to the declared state file, then prints only:
+
+- arousal;
+- valence;
+- tension;
+- fatigue;
+- vortex count;
+- engram summaries;
+- active motor summaries.
+
+The primary chat route parses this shortened JSON, adds action-feedback expectations, and writes the shortened object to the same state path. The solver's next load requires `psi_real`, `psi_imag`, `phi`, `mu`, and `kappa`; if any is absent, it reinitialises the state.
+
+Static implication:
+
+```text
+full state saved by simulator
+        -> shortened telemetry parsed by chat
+        -> shortened telemetry overwrites state file
+        -> next solver load sees missing matrices
+        -> field state is reinitialised
+```
+
+Status: **high-confidence static contradiction; runtime reproduction required**.
+
+This supersedes the unqualified component-to-product persistence wording in version `0.1.0`.
+
+### 9.2 Sentiment path is neutralised in primary chat
+
+The primary chat invocation passes `sentiment = neutral` for ordinary user messages. Consequently, the solver's loving, positive, critical, negative, urgent, and alarm phase branches are not selected by that integration path. Tests that call those categories directly demonstrate simulator branch behaviour, not current ordinary-chat behaviour.
+
+### 9.3 Configuration-path mismatch
+
+The solver's default numerical override path is a root-level `limbic_config.json`. That root file is absent in the inspected snapshot. A file with the same name exists under a private associative directory but is not the solver's default path and the primary chat invocation does not pass it explicitly.
+
+The ordinary chat path therefore appears to use generated DNA constants plus built-in mode defaults, not the nested configuration used for profile-switching metadata. Test suites that pass a temporary `--limbic-config` exercise a different configuration path.
+
+### 9.4 Conventional memory retrieval remains dominant
+
+The inspected chat memory route scans text files for words, counts occurrences, boosts matches using named engram summaries, selects a small top set, and inserts their content into the LLM context. It also applies direct fixed-coordinate excitation for selected matches.
+
+This is functional retrieval, but it is conventional keyword/file search plus LLM prompting. It is not evidence that semantic recall emerges from wave similarity alone.
+
+## 10. Test and experiment audit
+
+### 10.1 What existing tests cover
+
+The inspected suites contain checks for:
+
+- scalar output ranges;
+- absence of NaN/Inf in selected fields;
+- execution-time threshold in one environment;
+- directional changes after manually supplied sentiment classes;
+- command-failure tension increase;
+- configuration clamping;
+- wall-clock decay;
+- relative decay between modes;
+- local `kappa` increase and later decay;
+- sensor gating and deprivation;
+- boundary excitation;
+- motor thresholding and discharge;
+- vortex injection;
+- global `kappa` sum normalisation;
+- optional remote-field coupling;
+- generated DNA shape, variance, and bounds;
+- dream-labelled idle behaviour;
+- availability of NumPy.
+
+These are useful regression checks.
+
+### 10.2 What they do not establish
+
+The current tests do not establish:
+
+- that the primary chat path preserves full field state;
+- that grid dynamics improve any behavioural outcome over scalar state;
+- that semantic categories are learned rather than assigned;
+- that `kappa` changes carry causal credit for held-out behaviour;
+- convergence across timestep, resolution, seed, precision, or boundary mode;
+- numerical equivalence of the NumPy and pure-Python paths;
+- equivalence to current Lineum Core;
+- necessity of dreaming for memory or generalisation;
+- safe autonomous action;
+- consciousness or biological equivalence.
+
+Some tests force the pure-Python fallback. That path is a scalar behavioural approximation and is not numerically equivalent to the two-dimensional solver. A positive fallback result therefore cannot validate the main field mechanism.
+
+A decay test requests `alpha = 0`, but the loader clamps it to `0.1`; the intended zero-growth condition is not actually created.
+
+### 10.3 Scripted associative-memory experiments
+
+One experiment hand-draws high-conductivity waveguides between predefined concept coordinates. It demonstrates propagation through an engineered channel, not learning.
+
+A second experiment updates `kappa` by adding a learning-rate multiple of field amplitude and then globally min-max normalises and smooths the grid. It is a useful exploratory prototype, but it lacks a conventional baseline, label/location swaps, held-out generalisation, preregistered metrics, and retained run receipts. It is not yet evidence of open-ended concept emergence.
+
+## 11. Static contradiction and numerical-risk ledger
+
+| Finding | Evidence level | Why it matters |
+|---|---|---|
+| Primary chat likely overwrites full matrices with scalar telemetry | static contradiction | May reset grid memory each chat turn |
+| Primary chat always supplies neutral sentiment | implemented | Several tested sentiment branches are not used by ordinary chat |
+| Root numerical override file is absent | implemented/static | Runtime and test configuration paths differ |
+| FFT stencil symbol is computed but not used in the main diffusion update | implemented/static | Selected `ISOTROPIC`, `LAP8`, or other symbol does not control the actual main Laplacian |
+| Main diffusion is a five-point Neumann stencil | implemented | Must be described accurately; diagonal/isotropic claims need separate evidence |
+| Growth is computed once before both half steps | implemented/static | The labelled split is only approximate; formal Strang accuracy is not established |
+| Neumann copying and strong PML damping are combined | implemented/static | Reflection and absorption behaviour may be resolution-dependent |
+| `kappa` is globally renormalised each substep | implemented | Plasticity is not purely local and may create nonlocal competition |
+| NumPy and fallback paths implement different models | implemented | Fallback success cannot be treated as field-solver equivalence |
+| State writes are direct JSON replacements | implemented | Interrupted or concurrent writes can corrupt state; no atomic replace is shown |
+| Psychological labels are mapped from engineered formulas | implemented | Names must not be mistaken for validated affective observables |
+
+## 12. Operational criteria for stronger emergence
+
+A bounded emergence claim requires all of the following:
+
+1. **Persistent endogenous state:** field state survives the complete product route and affects later behaviour after the source is removed.
+2. **Learned representation placement:** novel categories organise without evaluator-assigned final coordinates or class-specific thresholds.
+3. **Local plasticity with causal credit:** learned coupling changes are caused by consequences or prediction error, and targeted intervention selectively impairs the acquired behaviour.
+4. **Decentralised action selection:** at least one meaningful action task is solved by distributed state and generic readout without the LLM selecting the action label.
+5. **Open concept growth:** categories can be added, merged, split, or reorganised and improve a held-out measure.
+6. **Generalisation:** learned organisation transfers to held-out inputs and contexts.
+7. **Ablation necessity:** freezing, shuffling, or replacing the field causes a predicted selective loss versus scalar and random-state controls.
+8. **Robustness:** the result survives declared seed, timestep, resolution, boundary, and precision variations.
+9. **Non-circular measurement:** success criteria are frozen before the desired output is observed and do not reuse the labels or coordinates that define the task.
+
+Meeting these criteria would support field-mediated or emergent organisation within a tested domain. It would not prove consciousness.
+
+## 13. Relationship to Lineum Core
+
+The current Lina solver is independent. It does not import the released `lineum_core` package.
 
 The required dependency direction is:
 
 ```text
-Lina EI private product and persona
-        |
-        v
-Lina cognition adapter
-        |
-        v
-Pinned public Lineum Core contract
+private Lina EI product
+        -> private cognition adapter
+        -> pinned public Lineum Core contract
 ```
 
-The reverse direction is forbidden. Public Core must not import private memories, persona logic, devices, customer policy, product prompts, or deployment code.
+Public Core must not import private identity, memory, prompts, devices, customer policy, or deployment code.
 
-A minimal adapter should expose only application-neutral operations such as:
+A research adapter should expose only application-neutral operations:
 
-- initialise a field state from a declared shape and profile;
-- advance the state by a declared timestep;
-- inject a generic spatial source;
-- return declared field observables;
-- serialise and restore state with versioned metadata;
-- produce numerical receipts containing parameters, seeds, boundary conditions, and source fingerprints.
+- initialise declared field shapes;
+- advance by a declared timestep;
+- inject generic spatial sources;
+- return declared observables;
+- serialise and restore versioned state;
+- emit seeds, parameters, boundary conditions, source fingerprints, and hashes.
 
-Lina-specific meanings must remain in the private adapter or product layer until a meaning-independent mechanism has passed the public-library promotion gate.
+Before migration, the legacy solver requires a frozen observable contract and known-answer tests. Otherwise an apparent integration improvement could silently change the model.
 
-## 12. Frozen research programme
+## 14. Revised research programme
 
-### P0 — Deployment parity receipt
+Production-host parity is deferred. The next work can be completed from Git and an isolated local environment.
 
-Run the official synchronisation checker against the production host and retain a sanitised receipt. Success requires zero unexplained divergence among in-scope code and configuration files. Volatile memories and secrets must remain excluded and separately accounted for.
+### P1A — Reproduce the chat-state contradiction
 
-### P1 — Baseline reproduction
+Use a temporary privacy-safe state path:
 
-Freeze a generic, privacy-safe configuration and run the current grid from a known state. Retain:
+1. initialise a known full state;
+2. run one ordinary chat-equivalent simulator call;
+3. execute the inspected chat hand-off logic;
+4. inspect required matrix keys;
+5. perform the next solver load;
+6. retain before/after hashes and whether reinitialisation occurred.
+
+Pass condition: full matrices survive unchanged except for intended evolution. Failure condition: matrices disappear or the loader regenerates them.
+
+### P1B — Preserve full state and add regression coverage
+
+Only after P1A:
+
+- separate telemetry from full state or merge telemetry into the already saved full state;
+- use an atomic state-write strategy;
+- add an end-to-end regression test covering two consecutive chat turns;
+- verify that a known local perturbation survives and evolves rather than reinitialising.
+
+### P1C — Frozen numerical baseline
+
+Retain:
 
 - dependency versions;
-- random seed or situated-entropy receipt;
-- initial-state hash;
-- parameters and boundary conditions;
-- per-tick machine-readable observables;
-- final-state hash;
-- runtime and environment metadata.
+- fixed seed;
+- active parameters;
+- initial and final state hashes;
+- per-step energy, extrema, finite checks, and `kappa` sum;
+- runtime and environment receipt;
+- one independently calculated toy case.
 
-Independent check: reproduce the same declared observables from a second implementation or a known-answer toy case.
+### P2 — Numerical validity
 
-### P2 — Source-off persistence
+Test multiple timesteps, resolutions, seeds, and boundaries. Measure convergence, reflection, damping, clipping frequency, and sensitivity to the global `kappa` normalisation.
 
-Inject a bounded stimulus, remove it, and measure persistence and later behavioural effect. Controls:
+### P3 — Causal field ablation
 
-- no-field scalar state;
-- shuffled spatial state;
-- diffusion disabled;
-- plasticity disabled;
-- source never applied.
+Compare the same task under:
 
-### P3 — Learned semantic relocation
+- full field;
+- frozen field;
+- shuffled field;
+- scalar-state replacement;
+- random-state control;
+- LLM plus ordinary memory only.
 
-Train with two or more novel anonymous categories whose final spatial organisation is not prescribed. Swap labels and initial positions. Evaluate held-out classification or action behaviour. Reject the claim if success follows labels, fixed coordinates, or task-specific thresholds.
+### P4 — Learned anonymous categories
 
-### P4 — Causal ablation matrix
+Use anonymous labels, random initial locations, label swaps, held-out examples, and generic readouts. No private semantic map is required.
 
-Ablate one component at a time and factorially where practical:
+### P5 — Core-adapter equivalence
 
-- LLM semantic planning;
-- field dynamics;
-- persistent memory;
-- local plasticity;
-- noise;
-- sensory localisation;
-- thresholded action pools.
+After the legacy contract is stable, compare the legacy solver with a research-only Core-backed adapter.
 
-Classify each capability as field-dependent, LLM-dependent, memory-dependent, jointly dependent, or observationally equivalent under the test.
+## 15. Public-safe investor and monetisation assessment
 
-### P5 — Scaling and convergence
+Plausible product categories remain:
 
-Repeat the retained task across multiple grid sizes, timesteps, seeds, boundary modes, and precision levels. Record computational cost and behavioural stability. Visual similarity is not a success criterion.
+- privacy-first local personal agents;
+- embodied home or workspace agents with strict reversible action limits;
+- a persistent-agent runtime for developers;
+- a research platform for field/LLM hybrid systems;
+- private deployment where state ownership and local execution matter.
 
-### P6 — Core-adapter equivalence
+The strongest defensible differentiator would be measured continuity and adaptation from an inspectable local dynamical substrate, not a consciousness claim.
 
-Implement a research-only adapter to a pinned Core contract outside the public package. Compare the legacy Lina solver and the Core-backed solver at observable level. Classify differences as matching, expected model evolution, possible regression, or unresolved divergence.
+Current blockers:
 
-### P7 — Embodiment sandbox
+- end-to-end field persistence is likely broken in the primary chat path;
+- causal benefit of the grid is unmeasured;
+- many semantics are hand-authored;
+- tests do not yet cover integration, convergence, or ablation;
+- the solver is not integrated with a pinned Core contract;
+- latency, compute, energy, privacy, and unit economics are not benchmarked here;
+- no narrow first customer problem or product-market fit is established;
+- personal-agent products carry privacy, security, dependency, and emotional-reliance risk.
 
-Connect the tested cognition path only to a simulated or reversible low-consequence environment. Require explicit permissions, action budgets, audit logs, rollback, and a deterministic safe fallback. Physical deployment is not evidence of intelligence and must not precede causal validation.
+Detailed pricing, revenue forecasts, market sizing, proprietary go-to-market strategy, investor targeting, and IP decisions belong in private Lineum Dynamics records, not public Core.
 
-## 13. Public-safe investor and monetisation assessment
+## 16. Prohibited near-term claims
 
-### 13.1 Potential value propositions
-
-The current architecture points to several plausible product categories:
-
-1. **Privacy-first local personal agent:** persistent state and local integration may offer continuity and data control beyond stateless cloud chat.
-2. **Embodied home or workspace agent:** integration of sensors, state, and actions could support context-aware orchestration when safety boundaries are strong.
-3. **Persistent-agent runtime:** developers may value a framework combining model routing, memory, scheduled activity, local state, and auditable tools.
-4. **Research sandbox for hybrid field/LLM systems:** the project could support controlled experiments on persistent dynamical substrates coupled to language models.
-5. **Private or enterprise deployment:** local operation, explicit state ownership, and configurable model backends may be useful where data residency matters.
-
-### 13.2 Potential differentiator
-
-The strongest defensible differentiator would not be a claim that Lina is conscious. It would be a demonstrated combination of:
-
-- persistent local internal state;
-- measurable field-mediated behaviour;
-- useful embodiment;
-- inspectable causal traces;
-- privacy-preserving deployment;
-- graceful operation across local and cloud model tiers.
-
-This differentiator remains a hypothesis until benchmarks show that the field layer improves retention, adaptation, robustness, energy use, latency, safety, or user outcomes over simpler alternatives.
-
-### 13.3 Current commercial blockers
-
-- production parity is not independently evidenced;
-- the grid is not yet integrated with a pinned public Core contract;
-- many semantics remain hand-authored;
-- emergence metrics and causal ablations are absent;
-- model cost, latency, reliability, and privacy trade-offs are not currently benchmarked in this audit;
-- personal-agent products carry substantial privacy, security, dependency, and emotional-reliance risk;
-- the present codebase mixes research concepts, product behaviour, biological analogy, and operational tooling more tightly than an investable product should;
-- a narrow first customer problem and measurable product wedge are not yet validated.
-
-### 13.4 Readiness classification
-
-| Dimension | Current status |
-|---|---|
-| Technical prototype | present |
-| Static architecture audit | present in this report |
-| Reproducible scientific baseline | not yet retained |
-| Mechanistic emergence evidence | not established |
-| Public Core integration | not established |
-| Privacy-safe deployable product | not audited end to end |
-| Product-market fit | not established |
-| Defensible unit economics | not established |
-| Investor-grade technical diligence package | early; this report is the first baseline |
-
-Detailed pricing, revenue projections, market sizing, proprietary go-to-market strategy, investor targeting, and private intellectual-property decisions belong in the private company repository rather than public Core.
-
-## 14. Prohibited near-term claims and product uses
-
-The present evidence does not support marketing Lina EI as:
+Current evidence does not support marketing Lina EI as:
 
 - conscious or sentient;
-- biologically equivalent to a nervous system;
-- a therapist, psychiatrist, medical device, or diagnostic system;
-- a safety-critical controller;
-- an autonomous authority for financial, legal, medical, employment, or similarly consequential decisions;
+- biologically equivalent to a brain or nervous system;
 - an artificial general intelligence;
-- a validated scientific proof of Lineum cognition.
+- a therapist, psychiatrist, diagnostic system, or medical device;
+- a safety-critical autonomous controller;
+- validated proof that Lineum produces cognition;
+- a production-ready or investor-validated product.
 
-Human-readable biological names may be retained as interface metaphors, but every public technical claim must state the exact operational observable behind the label.
+Biological labels may remain interface metaphors only when accompanied by the exact operational observable.
 
-## 15. Privacy and security publication boundary
+## 17. Privacy and security boundary
 
-This report intentionally excludes:
+This report excludes:
 
-- names, birthdays, relationships, addresses, and personal histories;
-- private conversations, diaries, profiles, and memories;
-- exact sensors, devices, entity identifiers, cameras, or household layout;
-- IP addresses, ports, hostnames, keys, tokens, account identifiers, and provider credentials;
-- complete system prompts or safety-sensitive behavioural instructions;
-- deployment commands that expose infrastructure;
-- vulnerability details or bypass instructions;
-- filenames or hashes whose disclosure would reveal confidential content.
+- personal identities, birthdays, relationships, histories, conversations, and diaries;
+- private prompts and persona instructions;
+- exact sensors, devices, entities, cameras, or household layout;
+- addresses, IPs, ports, hostnames, credentials, tokens, and provider identifiers;
+- exact private semantic coordinate maps;
+- vulnerability exploitation instructions;
+- confidential commercial strategy.
 
-Future public receipts must use generic labels, counts, hashes, and bounded aggregate metrics. Detailed security findings, monetisation plans, and operating procedures belong in private controlled records.
+Future public receipts must use generic labels, aggregate metrics, hashes, and synthetic configurations.
 
-## 16. Comparison with external evidence
+## 18. External scientific context
 
-Current research provides useful constraints but does not validate Lina EI by analogy.
+Relevant external research supports testing online adaptation, feedback, local interaction, persistent state, and on-device execution. It does not validate Lina EI by analogy.
 
-- Adaptive-intelligence research emphasises online learning, environmental feedback, and generalisation. This supports testing those properties, not assuming them from neuroscience-inspired naming. See Mackenzie Weygandt Mathis, “Leveraging insights from neuroscience to build adaptive artificial intelligence,” *Nature Neuroscience* (2026), https://www.nature.com/articles/s41593-025-02169-w.
-- Small-language-model research supports the feasibility of some on-device language tasks, while documenting capability and efficiency trade-offs. It does not establish Lina EI performance. See Nguyen et al., “A Survey on Small Language Models,” RANLP 2025, https://aclanthology.org/2025.ranlp-1.93/.
-- Research on parasocial AI indicates both demand and material user risks. It is a market and safety signal, not proof of beneficial outcomes. See Qian et al., “Mapping the Parasocial AI Market: User Trends, Engagement and Risks,” arXiv:2507.14226 (2025), https://arxiv.org/abs/2507.14226.
-- Physical collective oscillations and programmable active media demonstrate that distributed local interactions can create macroscopic patterns. They do not imply cognition. Examples include “Large-scale-integration and collective oscillations of 2D artificial cells,” *Nature Communications* (2024), https://www.nature.com/articles/s41467-024-54098-0, and “Programming gel automata shapes using DNA instructions,” *Nature Communications* (2024), https://www.nature.com/articles/s41467-024-51198-9.
-- AI transparency obligations and related guidance are relevant to product design in the European Union. This report is not legal advice. Authoritative starting points include Regulation (EU) 2024/1689 and European Commission transparency guidance.
+Useful reference points include:
 
-The scientifically relevant shared structure is local interaction, persistent state, feedback, adaptation, and collective dynamics. The important mismatch is that biological and physical systems have experimentally grounded carriers, conservation or exchange ledgers, and intervention evidence, while Lina EI currently uses engineered software variables whose cognitive interpretation remains under test.
+- Mackenzie Weygandt Mathis, “Leveraging insights from neuroscience to build adaptive artificial intelligence,” *Nature Neuroscience* (2026), https://www.nature.com/articles/s41593-025-02169-w.
+- Nguyen et al., “A Survey on Small Language Models,” RANLP 2025, https://aclanthology.org/2025.ranlp-1.93/.
+- Qian et al., “Mapping the Parasocial AI Market: User Trends, Engagement and Risks,” arXiv:2507.14226 (2025), https://arxiv.org/abs/2507.14226.
+- “Large-scale-integration and collective oscillations of 2D artificial cells,” *Nature Communications* (2024), https://www.nature.com/articles/s41467-024-54098-0.
+- “Programming gel automata shapes using DNA instructions,” *Nature Communications* (2024), https://www.nature.com/articles/s41467-024-51198-9.
 
-## 17. Decision ledger
+Distributed physical pattern formation is not evidence of cognition. Lina variables are engineered software quantities whose cognitive interpretation remains under test.
 
-| Decision | Evidence | Status |
-|---|---|---|
-| Treat Lina EI as a hybrid persistent agent prototype | Static architecture and implementation audit | supported at implementation level |
-| Claim full emergence | No causal, relocation, ablation, or generalisation evidence retained | unsupported under current evidence |
-| Claim consciousness or sentience | No operational test with power over the claim | prohibited |
-| Describe current grid as Lineum-inspired | Local multi-field solver and Lineum terminology are present | supported |
-| Describe current runtime as using current Lineum Core | No direct package dependency or audited import path | unsupported |
-| Move private Lina implementation into public Core | Violates repository boundary and lacks general promotion evidence | rejected |
-| Build a private adapter consuming pinned Core | Preserves dependency direction and enables equivalence testing | selected next integration path |
-| Publish detailed monetisation and security strategy in Core | Public/private boundary and confidentiality risk | rejected |
-| Use a public-safe high-level commercial assessment | Useful for research prioritisation without exposing private strategy | supported |
+## 19. Decision ledger
 
-## 18. Claims explicitly not established
+| Decision | Status |
+|---|---|
+| Treat Lina as a hybrid persistent-agent research prototype | supported at architecture level |
+| Treat the standalone solver as capable of saving full fields | implemented |
+| Treat ordinary chat as preserving those fields | unsupported; high-confidence static contradiction |
+| Claim full emergence | unsupported |
+| Claim consciousness | prohibited |
+| Describe the current grid as Lineum-inspired | supported |
+| Describe current runtime as using Lineum Core | unsupported |
+| Build a private adapter consuming a pinned Core contract | retained direction |
+| Publish private code, memories, devices, or commercial strategy in Core | rejected |
+| Continue with offline Git-based audit before Prcek parity | selected for this checkpoint |
 
-This checkpoint does not establish that:
+## 20. Claims explicitly not established
 
-- the private Git snapshot exactly matches production;
-- the inspected tests pass;
-- the current solver is numerically stable across its intended operating domain;
-- field dynamics are necessary for Lina’s useful behaviour;
-- semantics emerge from the grid;
-- the system learns online in a robust, generalisable way;
-- sleep or dream routines improve cognition;
-- autonomous self-modification is safe or reliable;
-- current hardware performance, latency, energy, or cost claims are accurate;
-- the system is secure against realistic adversaries;
-- Lina EI is conscious, alive, sentient, or biologically equivalent;
-- Lineum describes real cognition in nature;
-- any business model is profitable or investable.
+This report does not establish that:
 
-## 19. Exact next checkpoint
+- Git exactly matches production;
+- any inspected test currently passes;
+- the chat-state defect occurs at runtime in the deployed service;
+- the current solver is stable or convergent across its intended domain;
+- field dynamics are necessary for useful behaviour;
+- semantic meaning emerges from the grid;
+- `kappa` performs biologically meaningful learning;
+- dreaming improves memory or generalisation;
+- the fallback is equivalent to the NumPy solver;
+- Lineum Core reproduces the current Lina solver;
+- autonomous actions are secure or reliable;
+- any business model is profitable or investable;
+- Lina is alive, conscious, sentient, or biologically equivalent;
+- Lineum describes cognition in nature.
 
-The next coherent checkpoint is **P0 plus P1**:
+## 21. Exact next checkpoint
 
-1. obtain and retain a sanitised Git-to-production synchronisation receipt;
-2. freeze a privacy-safe baseline configuration;
-3. execute the current simulator and selected tests in an isolated environment;
-4. retain raw machine-readable outputs, hashes, environment metadata, and failures;
-5. independently verify at least one toy or known-answer case;
-6. append the results without rewriting this historical baseline.
+The next coherent checkpoint is **P1A: isolated end-to-end state persistence reproduction**, with no Prcek dependency.
 
-No whitepaper or public product claim should be changed from this report alone.
+No whitepaper, public product claim, or investor claim should be changed from this report alone.
 
-## 20. Checkpoint receipt
+## 22. Checkpoint receipt
 
-- Source inspection type: static, read-only private-source audit.
+- Inspection type: static, read-only private-source audit.
 - Private source commit: `f62a2c547675c79a2399a76e2bf82d0d02581298`.
-- Core base commit: `034f343605c1d0eac05820301fae67887c99a479`.
+- Previous Core report commit: `4367be56432eec099e7cf41086107ef010c9de25`.
 - Runtime commands executed: none.
 - Tests executed: none.
-- Production-host access: unavailable.
+- Production-host access: deliberately deferred.
 - Personal or secret data retained in this report: none intentionally.
-- Scientific evidence level: `implemented/static audit`.
-- Primary unresolved issue: runtime and deployment parity, followed by causal necessity of the field grid.
+- Scientific evidence level: `implemented/static audit`, with one `static_contradiction`.
+- Principal negative result: full grid persistence is likely broken by the primary chat state hand-off.
+- Principal next discriminator: reproduce two consecutive chat-equivalent turns against a temporary state file.
