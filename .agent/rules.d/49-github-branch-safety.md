@@ -66,15 +66,19 @@ For this fallback:
 
 Do not use `create_file` or `update_file` sequentially for a logically atomic multi-file checkpoint when their intermediate commits would be incomplete, misleading, or non-runnable. Unreferenced blobs and trees are staging objects, not published evidence. Never use issues, comments, workflow runs, releases, or external artifacts as a transport layer for repository file content.
 
-### Large standalone report transport
+### Large report and connector-limit handling
 
-A permanent standalone report must remain one complete Markdown document even when connector payload limits make its direct blob upload unreliable.
+A connector payload limit is an execution limitation, not permission to change the scientific record into an opaque transport format.
 
-Before changing its packaging, first try the ordinary verified blob path. If the connector rejects or corrupts the payload, preserve the readable current conclusions, protocol, failures, reproduction instructions, and exact next action directly in the Markdown file, and place the complete remaining diary and executable material in a lossless archive embedded inside that same Markdown file. The archive must use documented standard-library extraction code, a manifest of every member, cryptographic hashes for the archive and members, and a permanent test that proves both loader-based and report-only extraction paths.
+- Do not embed ZIP, XZ, Base64, Unicode payloads, tar archives, binary capsules, or another compressed or encoded container inside Markdown.
+- Do not hide scientific prose, equations, source code, machine-readable evidence, or chronology behind an extraction step.
+- Do not truncate, summarize away, split into additional active reports, or silently rewrite decision-relevant content merely to fit a connector call.
+- Keep the active report directly readable as ordinary UTF-8 Markdown.
+- Store large executable or machine-readable evidence only as ordinary, directly inspectable companion files such as `.py`, `.json`, `.jsonl`, `.csv`, or `.txt`, under the same research subject and with hashes and provenance recorded in the active report.
+- Companion artifacts must not become a second narrative report. The active Markdown remains the sole scientific interpretation and decision record.
+- When a connector cannot safely publish the required readable files, stop that publication attempt and use standard local Git or another authorized content-preserving repository path. Do not redesign the evidence format around the connector.
 
-Packaging may remove only redundant transport encodings or duplicated compressed wrappers. It must not remove, summarize away, or silently rewrite scientific content, chronology, negative results, equations, parameters, thresholds, metrics, source code, or machine-readable evidence. Record every failed upload, rejected blob, capsule-loader defect, and packaging correction in the active report before publication.
-
-Prefer small convenience loaders that extract and hash the canonical executable files from the standalone report over duplicating large compressed payloads in separate `.py` mirrors. The report remains the authority; convenience files must fail closed on a hash mismatch.
+Every failed or rejected publication attempt that materially affects reproducibility must be recorded plainly in the active report. Unreferenced staging objects are not retained evidence.
 
 ## Naming and scope
 
