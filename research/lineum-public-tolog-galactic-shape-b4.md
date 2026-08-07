@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1 negative independently verified; `Q2-O1` observer-frame test completed; owner gate answered without a new owner mechanism; `Q2-SA1-A` primary retained in a repository-supported runtime; all eight primary cases classify as `unpaired_source_dominated`; no Stage B candidate survives; independent Stage A checker pending; owner-intuition gate remains closed  
-**Version:** 0.18.0  
+**Status:** active authoritative report; localized-L1 negative independently verified; `Q2-O1` observer-frame test completed; `Q2-SA1-A` primary retained in a repository-supported runtime; all eight primary cases classify as `unpaired_source_dominated`; no Stage B candidate survives; independently implemented Stage A checker and tests are now frozen before execution; owner-intuition gate remains closed  
+**Version:** 0.19.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `87fb24568f32cd926abeab8331ad93e39ef52e1d`  
+**Checkpoint parent:** `24dde9863e974504c1cd7f7072f924c4b29ca08d`  
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -13,7 +13,7 @@ This is the single active report for the continuous public-TOLOG B4 programme. I
 
 Versions through `0.10.1` used opaque compressed Unicode payloads. They are no longer embedded. The exact former report remains immutable as Git blob `8f08fe0da08751781e13f90496a928f89eae9d56`. The former overlapping classical-reference report is absent from the active branch; its decision-relevant content is restated here and its historical blob is `68b0ae44795124e13b8bccdd743a93b6a4ac3786`.
 
-The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completed a scope-limited historical variant retrieval and froze the observer-first Question 2 discriminator before any outcome was inspected. Version `0.15.0` recorded the completed `Q2-O1` result without changing its thresholds after inspection. Version `0.16.0` recorded the owner's next neutral response, performed the permitted scope-limited agent retrieval, ranked only Q2/Q3-relevant candidates, and locked the next minimal Q2 spatial-accounting design before scientific execution. Version `0.16.1` recorded exact historical harness recovery and frozen-test success. Version `0.16.2` corrected one unsupported environment-noise sentence. Version `0.17.0` recorded the published plain harness and frozen Stage A accounting and triage rules before any official outcome was inspected. Version `0.18.0` records the retained supported-runtime Stage A primary result while keeping its mechanism interpretation explicitly provisional until the preregistered independent checker closes the lane.
+The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completed a scope-limited historical variant retrieval and froze the observer-first Question 2 discriminator before any outcome was inspected. Version `0.15.0` recorded the completed `Q2-O1` result without changing its thresholds after inspection. Version `0.16.0` recorded the owner's next neutral response, performed the permitted scope-limited agent retrieval, ranked only Q2/Q3-relevant candidates, and locked the next minimal Q2 spatial-accounting design before scientific execution. Version `0.16.1` recorded exact historical harness recovery and frozen-test success. Version `0.16.2` corrected one unsupported environment-noise sentence. Version `0.17.0` recorded the published plain harness and frozen Stage A accounting and triage rules before any official outcome was inspected. Version `0.18.0` recorded the retained supported-runtime Stage A primary while withholding its mechanism interpretation pending independent verification. Version `0.19.0` freezes the separate checker implementation, source identities, numerical comparison tolerances, independence constraints, and checker tests before the checker is allowed to inspect the eight-case result numerically.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -35,9 +35,11 @@ The independently checked homogeneous reduction explains why a later rise in `ps
 
 The most discriminating primary observation is the `S1` lane, where `psi` diffusion is the only active spatial mechanism. Incoming diffusion is measurable and globally non-creating, but it contributes only about `0.0387%` of the positive unpaired contribution under LAP4 and `0.0636%` under LAP8. Equivalently, positive feedback is about `2,584` times larger than incoming diffusion for LAP4 and about `1,572` times larger for LAP8. `S2`, which contains no `psi` spatial transport at all, still satisfies the older `psi`-only recovery observer while the full state fails. `S3` also satisfies the `psi`-only observer, but its added gradient-driven `psi` growth has no contemporaneous `phi` debit and is therefore unpaired by the frozen accounting definition.
 
-This is a **retained primary result, not yet an independently verified mechanism verdict**. The preregistered checker has not run. Therefore the new Stage A evidence may not yet open the owner-intuition gate, select a replacement mechanism, promote a claim, or alter Questions 1 or 3. Question 2 remains negative because of the already independently verified earlier evidence; Stage A currently provides an additional provisional localization of why the apparent component recovery occurs.
+This remains a **retained primary result, not yet an independently verified mechanism verdict**. The independent checker source and tests are now committed and frozen, but the checker has not yet run. The checker reimplements diffusion, the stage update, geometric observers, source classification, near-return classification, and primary-result comparison without importing either `lineum_b4_q2_spatial_accounting.py` or `lineum_b4_q2_spatial_accounting_stage_a.py`. It shares only the canonical localized initial state and frozen base constants. Before publication its pure mathematical and independence tests passed `6 / 6` locally; that local test is a code-validation receipt, not a new scientific result.
 
-The supported primary environment was Python `3.11.15`, NumPy `1.26.4`, pytest `9.1.1`, on GitHub-hosted Ubuntu 24.04. The frozen test gate passed `18 / 18` before the scientific command ran. No workflow artifact or ZIP was uploaded; the retained evidence is ordinary readable Git content.
+Therefore the new Stage A evidence may not yet open the owner-intuition gate, select a replacement mechanism, promote a claim, or alter Questions 1 or 3. Question 2 remains negative because of the already independently verified earlier evidence; Stage A currently provides an additional provisional localization of why the apparent component recovery occurs.
+
+The supported primary environment was Python `3.11.15`, NumPy `1.26.4`, pytest `9.1.1`, on GitHub-hosted Ubuntu 24.04. The frozen test gate passed `18 / 18` before the scientific command ran. No workflow artifact or ZIP was uploaded; the retained evidence is ordinary readable Git content. The one-use primary workflow was removed after its run receipt and output were committed.
 
 This bounded negative does not falsify spatial Lineum, identify the correct repair, establish the physical meaning of `phi`, validate TOLOG-Alpha, or show that nature follows this simulation.
 
@@ -220,7 +222,7 @@ The checker executed exactly once against the retained primary, returned code `0
 | Likely failure location | equation and exchange/accounting semantics more than stencil, cap, or fixed-frame choice alone; Stage A primary attribution remains checker-pending |
 | Current implementation status | unsupported as a natural reciprocal attractor under tested conditions |
 | Wider Lineum status | unresolved; not falsified |
-| Next consequential step | independent Stage A checker only; no replacement-mechanism selection before it closes the primary result |
+| Next consequential step | execute only the already frozen independent Stage A checker in a repository-supported runtime; no replacement-mechanism selection before it closes the primary result |
 
 Registered repair families remain unselected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. `Q2-SA1` is an accounting discriminator between existing mechanisms, not a selected repair and not a production-equation change.
 
@@ -404,7 +406,7 @@ Retrieval boundary: current `lineum-core` historical material was read directly.
 **Production equation change:** none.  
 **Parameter tuning:** none.  
 **New field:** none.  
-**Primary execution status:** retained in a repository-supported runtime; independent checker pending.
+**Primary execution status:** retained in a repository-supported runtime; independent checker source now frozen; checker execution pending.
 
 The first stage is deliberately smaller than the full retained `0.11.2` matrix and is a **mechanism-location screen only**. It cannot by itself turn Q2 positive.
 
@@ -481,7 +483,7 @@ This factor-two diagnostic cannot substitute for the original Q2 thresholds. A S
 
 The retained primary output is `research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a.json`. It contains the protocol, environment, all eight decision rows, recovery metrics, stage-accounting totals, residual receipts, classification inputs, classification results, and the SHA-256 of the more verbose runtime payload. It is intentionally marked `primary_only_not_independently_verified`.
 
-A separately implemented checker remains mandatory. It must recompute the Stage A decision from the retained primary and independently rerun at least the final/pre-state and disputed accounting checks without importing the primary Stage A classification function. A verified decision-relevant negative is not allowed to open another owner gate until this checker passes or the disagreement is resolved explicitly.
+The checker is frozen by Section 8.12. It must fail closed on any protocol, key-set, numeric, or categorical mismatch and may not widen comparison tolerances after execution.
 
 **Preregistered negative meaning:** if Stage A shows that apparent localized recovery or growth is predominantly unpaired feedback, dissipation, or redistribution without complete state return, `A-Q2-SF` is not reciprocal closure. If no one-at-a-time spatial lane meets the frozen two-stencil Stage B gate, combinations `S4`–`S7` remain dormant rather than being automatically launched.
 
@@ -553,7 +555,8 @@ The complete protocol receipt was retained before outcome inspection as `researc
 **Verbose runtime payload SHA-256, excluding its self-hash field:** `02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7`  
 **Environment:** Python `3.11.15`; NumPy `1.26.4`; pytest `9.1.1`; Ubuntu 24.04 GitHub-hosted runner.  
 **Pre-execution gate:** all `18` frozen localized, accounting-equivalence, and Stage A decision tests passed before the scientific command ran.  
-**Artifact policy:** no uploaded workflow artifact; no ZIP; retained result is ordinary JSON in Git.
+**Artifact policy:** no uploaded workflow artifact; no ZIP; retained result is ordinary JSON in Git.  
+**Workflow cleanup:** the one-use primary workflow was removed in commit `fc595495bf90d53676c28822735214c4b3821f2c` after its run receipt and result were retained.
 
 The eight preregistered cases produced:
 
@@ -604,6 +607,47 @@ In both stencils the accumulated global `psi`-diffusion contribution is negative
 
 No replacement mechanism is selected from this primary. The owner-intuition gate remains closed until the checker either confirms this decision-relevant negative or exposes a concrete discrepancy that must be resolved first.
 
+### 8.12 Independent Stage A checker preregistration
+
+The independent checker was written only after the primary JSON and version `0.18.0` report were committed. Its implementation was then frozen before any checker execution:
+
+```text
+checker path = research/runners/lineum_b4_q2_spatial_accounting_stage_a_check.py
+checker Git blob = a4302d716436f1e9da8f68284827a394b27f2bdf
+checker SHA-256 = 3d0b5a018d1254355c7ed96d024a7da745470e10d89cf552548a2fb5087953f4
+checker bytes = 26,047
+checker first connector commit = 1fdf247937103ef5b21862a41f71e342b609169b
+
+test path = tests/research/test_lineum_b4_q2_spatial_accounting_stage_a_check.py
+test Git blob = a57ebedfbbd11dde80f7a17259f253cc9cc543b9
+test SHA-256 = 23e3f1f2a5bd777fbd3c4d8bb31ed1ee1164fb6f69fe6d7d2239b315532654b6
+test bytes = 5,512
+test connector commit = 24dde9863e974504c1cd7f7072f924c4b29ca08d
+local pure-checker tests = 6 passed / 6
+```
+
+The connector again produced sequential source/test commits instead of the preferred atomic two-file checkpoint. No checker execution occurred between them. The checker source itself was unchanged after the first commit. The first local test collection attempt had failed before any scientific calculation because the dynamically loaded checker dataclass module was not registered in `sys.modules`; the test loader alone was corrected, after which all six pure tests passed. This is a technical pre-execution failure and not scientific evidence.
+
+Independence is frozen as follows:
+
+- the checker does **not** import `lineum_b4_q2_spatial_accounting.py`;
+- the checker does **not** import `lineum_b4_q2_spatial_accounting_stage_a.py`;
+- it independently implements LAP4/LAP8 diffusion, the sequential update stages, local/global receipts, geometry metrics, radial profiles, mechanism labels, near-return labels, and primary/checker comparison;
+- it shares only the canonical localized Gaussian initial state and frozen base constants from `lineum_b4_saturation_localized_l1.py`;
+- source-independence is itself asserted by a permanent AST/text regression test.
+
+The checker must re-execute all eight cases and compare a frozen set of decision-relevant numeric fields and categorical outputs. Numeric equality is accepted only when:
+
+```text
+abs(checker - primary) <= 1e-8 + 1e-12 * max(abs(checker), abs(primary))
+```
+
+The checker additionally requires exact equality for mechanism labels, transport-validity booleans, finite/reset/cap status, `psi`-only recovery, full-state recovery, `near_return`, and the derived Stage B candidate set. The expected case key set is exactly the four lanes under both LAP4 and LAP8. Any protocol mismatch, missing/extra case, numeric mismatch, categorical mismatch, or Stage B disagreement makes the checker fail closed. No tolerance or comparison field may be changed after checker execution merely to obtain agreement.
+
+The checker output must be ordinary JSON committed under the same B4 companion directory. The checker may run remotely only because the local environment still cannot install NumPy `<2.0`; a one-use checker workflow must install the repository requirements, verify NumPy `<2.0`, run all relevant tests before the checker, upload no ZIP artifact, print the plain checker JSON, and be removed after its retained result is committed.
+
+If the checker passes with zero categorical mismatches and no decision-relevant numeric mismatch, the primary mechanism-location result becomes independently reproduced within this exact Stage A domain. If it fails, the first concrete divergence must be recorded and resolved before any owner gate or mechanism selection.
+
 ## 9. Preserved failure and publication chronology
 
 Technical non-results retained from history include a stalled checkout; five fail-closed archive-locator attempts (`31051766659`, `31052012351`, `31052264959`, `31052349446`, `31052454245`); one unretained full-screen recomputation that exceeded the command limit; one unretained migration replay; an accidental temporary branch; a checker workflow rejected before job creation; the pre-execution `Q2-O1` dynamic-import failure; and a multi-repository code-search HTTP `502`. None is scientific evidence.
@@ -616,7 +660,9 @@ The Stage A executor/test publication passed through sequential connector commit
 
 The local supported-runtime attempt failed because the available offline package source provided no NumPy `<2.0` build. This was recorded before remote execution. The one-use primary workflow therefore satisfied the documented remote-environment exception: it installed the actual repository requirements, verified NumPy `1.26.4`, ran `18 / 18` tests, executed exactly one Stage A primary, uploaded no artifact, and printed the plain result. That supported-runtime execution is scientific evidence; the earlier local NumPy `2.3.5` diagnostics are equivalence/provenance checks only.
 
-The `Q2-O1` observer result is retained compactly in the repository and fully identified by hash. Its exact local observer source, tests, and full result remain hash-addressed publication debt. This does not prevent `Q2-SA1`, whose canonical localized harness, instrumentation, executor, protocol receipt, and primary result are now readable and committed.
+The independent-checker pure test suite initially failed at Python collection because the dynamic module loader had not inserted the checker module into `sys.modules` before evaluating its dataclass. No checker science executed. Only the test loader was corrected; the checker source and frozen comparison logic were unchanged. The repository-shaped pure checker suite then passed `6 / 6` under the local NumPy `2.3.5` environment. That validates code loading and frozen pure rules only; the official eight-case checker still requires the repository-supported runtime.
+
+The `Q2-O1` observer result is retained compactly in the repository and fully identified by hash. Its exact local observer source, tests, and full result remain hash-addressed publication debt. This does not prevent `Q2-SA1`, whose canonical localized harness, instrumentation, executor, protocol receipt, primary result, independent checker, and checker tests are now readable and committed.
 
 ## 10. Claims explicitly not established
 
@@ -636,17 +682,19 @@ Completed:
 6. permanent Stage A executor and decision tests published; corrected repository-layout tests passed `5 / 5` before execution;
 7. complete protocol receipt committed before outcome inspection;
 8. supported-runtime primary executed only after `18 / 18` frozen tests passed, with Python `3.11.15` and NumPy `1.26.4`;
-9. ordinary retained primary JSON committed at `87fb24568f32cd926abeab8331ad93e39ef52e1d` before any checker implementation or replacement-mechanism selection.
+9. ordinary retained primary JSON committed at `87fb24568f32cd926abeab8331ad93e39ef52e1d` before any checker implementation or replacement-mechanism selection;
+10. one-use primary workflow removed after its receipt was durable;
+11. independently implemented checker and permanent checker tests committed after the primary result; local pure checker tests passed `6 / 6`;
+12. checker independence, source identities, numeric tolerance `1e-12` relative plus `1e-8` absolute, categorical equality requirements, exact case set, and fail-closed semantics frozen in Section 8.12 before checker execution.
 
 Still required before the Stage A mechanism result can influence another mechanism decision:
 
-1. remove the one-use primary execution workflow from the active branch after preserving its run/job/environment receipt;
-2. implement and commit the independently written Stage A checker and its tests without importing the primary Stage A classification function;
-3. record the checker source identity and exact comparison rules before checker execution;
-4. execute the checker in a repository-compatible NumPy `<2.0` environment, with tests first and no uploaded ZIP artifact;
-5. commit the checker output and update this report;
-6. resolve any numeric or categorical disagreement at the first concrete divergence instead of averaging it away;
-7. only if the checker confirms the decision-relevant negative may the mandatory owner-intuition gate open; at that point no replacement mechanism may be selected until the owner's new neutral response is recorded.
+1. create one narrow temporary checker workflow only because the local supported runtime is unavailable;
+2. install the actual repository requirements, assert NumPy `<2.0`, and run the relevant canonical/instrumentation/primary/checker tests before the checker command;
+3. execute the frozen checker exactly against the retained primary JSON and print only a plain checker result, with no uploaded ZIP artifact;
+4. commit the checker output and remove the temporary checker workflow;
+5. update this report with every numeric or categorical disagreement, or with the exact passing receipt;
+6. only if the checker confirms the decision-relevant negative may the mandatory owner-intuition gate open; at that point no replacement mechanism may be selected until the owner's new neutral response is recorded.
 
 The broader retained periodic spatial-accounting matrix remains dormant behind Stage A:
 
@@ -677,6 +725,6 @@ Káťa's `K-Q2` and `K-Q3` candidates remain dormant until a later authorized pr
 
 ## 12. Version history and handoff
 
-Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction. `0.14.0` completed the scope-limited historical retrieval and preregistered `Q2-O1`. `0.15.0` executed `Q2-O1`, found `0 / 28` classification changes and `0 / 28` Q2-positive cases, and reopened the mandatory owner-intuition gate. `0.16.0` recorded the owner's neutral authorization for agent candidate generation, ranked spatial flow/accounting as the cheapest active discriminator, and locked `Q2-SA1` Stage A. `0.16.1` recovered the exact historical runner/checker/tests byte-for-byte and passed the frozen suite `9 / 9`; `0.16.2` corrected one unsupported wording detail. `0.17.0` closed the canonical source-publication blocker, recorded the committed spatial-accounting instrumentation, and froze the exact accounting/classification/near-return/two-stencil gates before an official Stage A result. `0.18.0` records the supported-runtime Stage A primary after an `18 / 18` test gate, retains all eight decision rows and accounting receipts, finds `8 / 8` primary `unpaired_source_dominated` classifications, no full-state or near-return case, and no Stage B candidate, and explicitly withholds the mechanism verdict and owner gate pending independent verification. Questions 1 and 3 are unchanged; Question 2 remains negative on prior independently verified evidence.
+Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction. `0.14.0` completed the scope-limited historical retrieval and preregistered `Q2-O1`. `0.15.0` executed `Q2-O1`, found `0 / 28` classification changes and `0 / 28` Q2-positive cases, and reopened the mandatory owner-intuition gate. `0.16.0` recorded the owner's neutral authorization for agent candidate generation, ranked spatial flow/accounting as the cheapest active discriminator, and locked `Q2-SA1` Stage A. `0.16.1` recovered the exact historical runner/checker/tests byte-for-byte and passed the frozen suite `9 / 9`; `0.16.2` corrected one unsupported wording detail. `0.17.0` closed the canonical source-publication blocker, recorded the committed spatial-accounting instrumentation, and froze the exact accounting/classification/near-return/two-stencil gates before an official Stage A result. `0.18.0` recorded the supported-runtime Stage A primary after an `18 / 18` test gate, retained all eight decision rows and accounting receipts, found `8 / 8` primary `unpaired_source_dominated` classifications, no full-state or near-return case, and no Stage B candidate, and explicitly withheld the mechanism verdict and owner gate pending independent verification. `0.19.0` freezes the independently implemented checker after the primary, records its source and test identities, preserves the pre-execution technical loader failure and correction, freezes numeric and categorical comparison tolerances, and authorizes only the one supported-runtime checker execution next. Questions 1 and 3 are unchanged; Question 2 remains negative on prior independently verified evidence.
 
-A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized independent checker as already executed exactly once, preserve both owner/Káťa attributions, treat `Q2-O1` as closed for the exact quarter-turn/periodic-translation/global-phase observer set, use the published exact localized harness and committed accounting instrumentation/executor, preserve the frozen Stage A decision rules, treat `q2-spatial-accounting-stage-a.json` as primary-only until a separate checker passes, remove the one-use primary workflow, implement and freeze the independent checker before executing it, run the checker only in a repository-compatible NumPy `<2.0` environment, retain only plain readable evidence, and select no replacement mechanism before that checker closes this gate.
+A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized independent checker as already executed exactly once, preserve both owner/Káťa attributions, treat `Q2-O1` as closed for the exact quarter-turn/periodic-translation/global-phase observer set, use the published exact localized harness and committed accounting instrumentation/executor, preserve the frozen Stage A decision rules, treat `q2-spatial-accounting-stage-a.json` as primary-only until the new separate checker passes, execute only the frozen checker from Section 8.12 in a repository-compatible NumPy `<2.0` environment, retain only plain readable evidence, remove the temporary checker workflow after the result is durable, and select no replacement mechanism before that checker closes this gate.
