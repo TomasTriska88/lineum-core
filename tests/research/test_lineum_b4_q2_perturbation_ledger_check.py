@@ -195,3 +195,28 @@ def test_checker_has_no_primary_runner_import():
     assert "importlib" not in source
     assert "lineum_b4_q2_perturbation_ledger import" not in source
     assert "from lineum_b4_q2_perturbation_ledger" not in source
+
+
+def test_roundoff_residual_difference_passes_when_both_paths_meet_frozen_analytic_gate():
+    payload = synthetic_payload()
+    row = payload["rows"][0]
+    direct = abs(float(row[13]))
+    analytic = abs(float(row[18]))
+    tolerance = check.NUMERIC_RTOL * max(1.0, direct, analytic)
+    row[19] = 0.5 * tolerance
+    result = check.check_payload(payload)
+    assert result["passed"] is True
+    assert result["numeric_mismatch_count"] == 0
+    assert result["analytic_agreement_failure_count"] == 0
+
+
+def test_excessive_stored_analytic_residual_fails_closed():
+    payload = synthetic_payload()
+    row = payload["rows"][0]
+    direct = abs(float(row[13]))
+    analytic = abs(float(row[18]))
+    tolerance = check.NUMERIC_RTOL * max(1.0, direct, analytic)
+    row[19] = 2.0 * tolerance
+    result = check.check_payload(payload)
+    assert result["passed"] is False
+    assert result["analytic_agreement_failure_count"] == 1
