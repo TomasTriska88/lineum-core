@@ -1,0 +1,43 @@
+{
+  "schema": "lineum-b4-q2-checker-regression-attempt/1",
+  "status": "technical_non_result",
+  "scope": "Q2-SA1-A checker comparison-schema regression validation only; no scientific eight-case checker execution",
+  "source_commit": "6f89df99409fc67a4647d7a47744c0e04b166006",
+  "workflow_run_id": 31165977111,
+  "workflow_job_id": 92826755308,
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "runner": "ubuntu-24.04"
+  },
+  "test_gate": {
+    "passed": false,
+    "summary": "1 failed, 24 passed in 1.02s",
+    "failed_test": "tests/research/test_lineum_b4_q2_spatial_accounting_stage_a_check.py::test_compare_rows_normalizes_only_structurally_disabled_stage_globals",
+    "observed_numeric_mismatch_count": 4
+  },
+  "failure": {
+    "class": "synthetic_test_fixture_error",
+    "description": "The synthetic checker-side row retained phi_gradient_flow_global_signed = 1.0 for lanes whose frozen lane map disables phi gradient flow. The primary-side compact field was intentionally omitted and normalized to structural zero, so the fixture itself created four expected numeric disagreements across S1/S2 and both stencils.",
+    "scientific_meaning": "none",
+    "checker_scientific_cases_executed": false,
+    "comparison_against_retained_primary_executed": false
+  },
+  "permitted_correction": {
+    "target": "tests/research/test_lineum_b4_q2_spatial_accounting_stage_a_check.py synthetic fixture only",
+    "change": "Set structurally disabled synthetic checker-side stage-global values to exact zero before testing omission normalization.",
+    "prohibited_changes": [
+      "checker equation",
+      "lane map",
+      "comparison tolerances",
+      "numeric comparison paths",
+      "categorical comparison paths",
+      "mechanism labels",
+      "near-return thresholds",
+      "Stage B gate",
+      "retained primary data"
+    ]
+  },
+  "workflow_artifact_uploaded": false
+}
