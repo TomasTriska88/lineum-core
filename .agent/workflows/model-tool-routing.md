@@ -2,25 +2,25 @@
 
 ## Purpose
 
-This workflow is the binding source of truth for the model, capability mode, speed, and coordination pattern used for Lineum work in `TomasTriska88/lineum-core`.
+This workflow is the binding source of truth for the model, reasoning effort, processing speed, and scientific verification pattern used for Lineum work in `TomasTriska88/lineum-core`.
 
 Lineum research and repository work are performed directly in Codex. An external ChatGPT supervisor is not required for scientific reasoning, interpretation, experiment selection, repository execution, or claim review.
 
-If product labels change, preserve the capability roles and safeguards below rather than relying on obsolete names.
+If product labels change, preserve the reasoning role and scientific safeguards below rather than relying on obsolete names.
 
 ## Fixed configuration
 
 Use one configuration for all Lineum work and do not switch it task by task:
 
 - model: the strongest available GPT-5.6 Sol-tier model;
-- capability mode: `ultra`;
+- reasoning effort: `high`;
 - processing speed: standard, not fast mode;
 - repository: `TomasTriska88/lineum-core`;
 - default branch: `develop`.
 
-Do not downgrade to Max or another capability mode merely because an individual task appears small, tightly coupled, or inexpensive. Ultra remains selected, while the coordination rules below determine whether work stays in one lead lane or uses independent supporting lanes.
+High is the fixed repository-wide reasoning level. Do not reduce reasoning below High or escalate to Max or Ultra merely because an individual task appears easy, difficult, tightly coupled, urgent, or inexpensive. A different reasoning level requires an explicit project-owner change to this repository-wide policy.
 
-Do not enable fast mode. Standard speed preserves the same selected model and capability mode while avoiding the disproportionate credit cost of fast processing. Tool execution, builds, tests, and simulations may dominate wall-clock time and are not necessarily accelerated by model fast mode.
+Do not enable fast mode. Standard speed preserves the selected model and reasoning level while avoiding the disproportionate credit cost of fast processing. Tool execution, builds, tests, and simulations may dominate wall-clock time and are not necessarily accelerated by model fast mode.
 
 ## Codex is the primary scientific workspace
 
@@ -37,11 +37,11 @@ Codex owns the complete Lineum research cycle:
 9. selection of the next discriminating step;
 10. bounded promotion into code or whitepapers.
 
-Codex output is not automatically correct merely because it was produced in Ultra mode. Every material conclusion remains subject to the repository evidence gates.
+Codex output is not automatically correct merely because it was produced at High reasoning effort. Every material conclusion remains subject to the repository evidence gates.
 
-## Ultra coordination model
+## High-reasoning scientific verification model
 
-Ultra is used as a lead researcher with independent internal reviewers, not as an uncontrolled collection of agents.
+High reasoning is used with one lead researcher responsible for the complete scientific chain. Independent verification is mandatory, but agent count is not a validity criterion. Prefer the cheapest methodologically independent check that can actually discriminate the disputed claim.
 
 ### Lead-agent ownership
 
@@ -51,39 +51,41 @@ One lead agent must own the active goal from question through final synthesis. T
 - the frozen protocol;
 - the active research report;
 - consistency with repository history;
-- deciding which supporting lanes are scientifically independent;
+- identifying which checks are scientifically independent;
 - reconciling evidence without hiding disagreement;
 - the final narrow conclusion and prohibited over-interpretations;
 - the final repository diff and checkpoint.
 
 There must never be multiple competing final editors or multiple agents independently changing the same files.
 
-### Supporting-agent roles
+### Independent verification roles
 
-Supporting agents may be used for genuinely separable checks such as:
+Independent verification may use:
 
-- implementation audit against the declared equation;
-- independent analytic or dimensional verification;
-- second numerical implementation or reproduction;
+- an implementation audit against the declared equation;
+- independent analytic or dimensional derivation;
+- a second numerical implementation or reproduction;
+- known-answer, limiting-case, convergence, or conservation checks;
+- intervention, ablation, field freeze, shuffle, or null controls;
 - test and metric validity audit;
 - historical variant and contradiction retrieval;
 - comparison with current primary or authoritative external evidence;
 - adversarial claim-strength review;
 - documentation and repository-boundary audit.
 
-A supporting agent receives frozen inputs, a narrow question, declared files or evidence, an output contract, and explicit conclusions it is not authorized to make.
+When the runtime supports supporting agents and a genuinely separable check benefits from one, the lead may use a supporting agent with frozen inputs, a narrow question, declared files or evidence, an output contract, and explicit conclusions it is not authorized to make. Supporting agents are optional; methodological independence is mandatory.
 
 ### Tightly coupled work stays in one lane
 
-Ultra selection does not require parallel execution. Keep a derivation, ontology decision, causal argument, single-file edit, or tightly coupled implementation in the lead lane when splitting it would destroy shared assumptions or produce artificial disagreement.
+Keep a derivation, ontology decision, causal argument, single-file edit, or tightly coupled implementation in the lead lane when splitting it would destroy shared assumptions or produce artificial disagreement.
 
-Supporting agents may still audit the completed result afterward using frozen inputs.
+Audit the completed result afterward with a methodologically independent check. Parallel execution is optional and must never be treated as evidence by itself.
 
 ### No voting and no averaging away contradictions
 
-Do not decide scientific truth by majority vote, confidence averaging, or stylistic consensus among agents.
+Do not decide scientific truth by majority vote, confidence averaging, or stylistic consensus among agents, checks, or lanes.
 
-When lanes disagree:
+When checks disagree:
 
 1. preserve each result and its assumptions;
 2. identify the first concrete point of divergence;
@@ -166,7 +168,7 @@ Questions are hard stops as defined in `.agent/rules.md`. Do not ask optional qu
 
 Before every change, verify the repository, branch, target path, current blob or commit SHA, and repository boundary. Use local Git when available. Connector writes are limited to small, precise, reversible changes permitted by `.agent/rules.md`.
 
-Parallel agents must not write concurrently to the same branch or overlapping paths. The lead agent serializes final edits and verifies the combined diff.
+Parallel workers, when used, must not write concurrently to the same branch or overlapping paths. The lead agent serializes final edits and verifies the combined diff.
 
 For code changes, run the required tests, static checks, and runtime verification. For rule or documentation-only changes, verify exact file contents, stale conflicting instructions, branch state, and resulting commits; do not claim runtime validation that was not performed.
 

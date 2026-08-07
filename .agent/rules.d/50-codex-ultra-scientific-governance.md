@@ -1,12 +1,13 @@
-# Fixed Codex Ultra Scientific Governance
+# Fixed Codex High Scientific Governance
 
 **Status:** Binding supplement to `.agent/rules.md`.
+**Path note:** The legacy filename is retained for stable rule discovery and lexical ordering. Its binding configuration is High reasoning, not Ultra.
 
 ## Fixed operating configuration
 
-All Lineum work in this repository uses the strongest available GPT-5.6 Sol-tier model, Ultra capability mode, and standard processing speed on the `develop` branch unless the project owner explicitly changes this repository-wide policy.
+All Lineum work in this repository uses the strongest available GPT-5.6 Sol-tier model, High reasoning effort, and standard processing speed on the `develop` branch unless the project owner explicitly changes this repository-wide policy.
 
-Do not switch to Max, a lower reasoning mode, fast processing, or another model on a task-by-task basis. If product labels change, use the nearest equivalent highest-capability multi-agent mode at standard speed.
+Do not switch below High, escalate to Max or Ultra, enable fast processing, or change models on a task-by-task basis. If product labels change, use the nearest equivalent high-reasoning mode at standard speed.
 
 Codex is the primary scientific and repository workspace. No external ChatGPT supervisor is required.
 
@@ -14,13 +15,15 @@ Codex is the primary scientific and repository workspace. No external ChatGPT su
 
 Every active goal has exactly one lead agent responsible for the scientific question, frozen protocol, active report, final interpretation, final edits, and Git checkpoint.
 
-Ultra supporting agents are independent reviewers or executors with frozen, non-overlapping scopes. They do not become co-owners of the conclusion and must not concurrently modify overlapping files or the same active report.
+The lead lane is the default. Independent scientific checking does not require multiple agents: independence may come from a separately derived analytic check, a second implementation, a known-answer case, convergence or conservation study, intervention, ablation, blinded metric selection, or another method that does not merely repeat the disputed calculation path.
 
-A tightly coupled problem remains in the lead lane even though Ultra is selected. Parallelism is optional; the fixed capability mode is not permission to fragment every task.
+When the environment supports supporting agents and a genuinely separable check benefits from one, they may act as independent reviewers or executors with frozen, non-overlapping scopes. They do not become co-owners of the conclusion and must not concurrently modify overlapping files or the same active report.
 
-## Permitted supporting lanes
+A tightly coupled problem remains in the lead lane. Parallelism is optional and must never be treated as a substitute for methodological independence.
 
-Supporting agents may independently audit:
+## Permitted independent verification lanes
+
+Independent checks may audit:
 
 - the implemented equation and numerical path;
 - dimensions, symmetries, conservation laws, limits, and toy cases;
@@ -31,11 +34,11 @@ Supporting agents may independently audit:
 - current primary or authoritative external physical evidence;
 - claim scope, repository boundaries, tests, and documentation.
 
-Every supporting lane must receive a narrow question, frozen inputs, declared shared assumptions, expected artifacts, and prohibited conclusions.
+Every independent lane must receive a narrow question, frozen inputs, declared shared assumptions, expected artifacts, and prohibited conclusions. A check performed by the lead agent must still be methodologically independent of the disputed path to count as independent verification.
 
 ## No consensus shortcut
 
-Scientific conclusions are not selected by majority vote among agents. Confidence scores are not averaged to hide disagreement.
+Scientific conclusions are not selected by majority vote among agents, checks, or lanes. Confidence scores are not averaged to hide disagreement.
 
 When results conflict, preserve every lane, find the first technical divergence, and run the cheapest frozen discriminator with power over that divergence. Check the equation, units, inputs, parameters, seeds, boundary and initial conditions, observer, metric, software path, and environment.
 
@@ -57,7 +60,7 @@ If any item is missing, update the report or perform the missing check before pr
 
 ## Anti-green-test rule
 
-A passing test, completed simulation, visually suggestive plot, or agreement among agents is not a scientific validation by itself.
+A passing test, completed simulation, visually suggestive plot, or agreement among agents or checks is not a scientific validation by itself.
 
 Before treating a result as decision-relevant, audit whether:
 
@@ -72,7 +75,7 @@ Never alter thresholds, exclusions, seeds, or metric definitions merely to recov
 
 ## Report-first canon gate
 
-Decision-relevant work is captured continuously in a standalone report under `research/`. Essential evidence may not remain only in chat, `.scratch/`, terminal output, or a supporting agent's private context.
+Decision-relevant work is captured continuously in a standalone report under `research/`. Essential evidence may not remain only in chat, `.scratch/`, terminal output, or a private reasoning context.
 
 Do not update canonical whitepapers directly from an exploratory result. Promote an exact bounded claim only after the report is reproducible, independent checks are complete, contradictions are preserved, limitations and evidence cutoff are explicit, and the applicable code and whitepaper promotion gates are satisfied.
 

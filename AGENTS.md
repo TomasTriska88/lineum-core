@@ -6,17 +6,19 @@ Before any analysis, proposal, test, edit, commit, publication, or external oper
 
 ## Fixed Codex Configuration
 
-Before starting Lineum work, read and follow `.agent/workflows/model-tool-routing.md` in full. It is the binding source of truth for model, reasoning, speed, and multi-agent coordination.
+Before starting Lineum work, read and follow `.agent/workflows/model-tool-routing.md` in full. It is the binding source of truth for model, reasoning effort, processing speed, and scientific verification coordination.
 
 The fixed Lineum configuration is:
 
 - model: the strongest available GPT-5.6 Sol-tier model;
-- capability mode: `ultra`;
-- speed: standard, not fast mode;
+- reasoning effort: `high`;
+- processing speed: standard, not fast mode;
 - repository: `TomasTriska88/lineum-core`;
 - default branch: `develop`.
 
-Do not downgrade, switch modes task by task, or ask the project owner to choose a different setting. If product labels change, preserve the equivalent highest-capability multi-agent mode with standard processing speed. Codex is the primary scientific and repository workspace and does not require an external ChatGPT supervisor.
+Use `high` as the repository-wide reasoning level. Do not lower it or escalate to Max, Ultra, fast mode, or another model on a task-by-task basis. A different reasoning level requires an explicit project-owner change to this repository-wide policy. If product labels change, preserve the nearest equivalent high-reasoning configuration at standard processing speed.
+
+Independent scientific verification remains mandatory, but it must be established by the evidence protocol in the repository rules rather than inferred from reasoning mode, agent count, or consensus. Codex is the primary scientific and repository workspace and does not require an external ChatGPT supervisor.
 
 ## Public Reply and Message Drafting
 

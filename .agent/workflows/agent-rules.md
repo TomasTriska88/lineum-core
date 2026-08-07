@@ -48,13 +48,13 @@ Do not use `.scratch/` as historical provenance. It is disposable and non-eviden
 
 Previously recorded ideas are provenance and candidate hypotheses, not validation. Identify contradictions, deprecated formulations, circular observers, and unsupported claims before reusing them.
 
-## 5. Ultra lead and reviewer structure
+## 5. High-reasoning lead and verification structure
 
-Use the fixed Ultra configuration defined in `.agent/workflows/model-tool-routing.md`.
+Use the fixed High reasoning configuration defined in `.agent/workflows/model-tool-routing.md`.
 
-One lead agent owns the active question, frozen protocol, report, final synthesis, and repository diff. Supporting agents receive narrow, independently auditable checks. They must not write concurrently to overlapping paths or produce competing final edits.
+One lead agent owns the active question, frozen protocol, report, final synthesis, and repository diff. Independent verification is mandatory, but it may be established by a separately derived analytic check, second implementation, known-answer case, convergence or conservation study, intervention, ablation, null control, or another methodologically independent path. Supporting agents are optional and may be used only for genuinely separable checks when the runtime supports them.
 
-Do not decide by agent voting. Preserve disagreements, identify the first technical divergence, and resolve them with the cheapest frozen discriminating check. If the evidence cannot decide, record the contradiction as unresolved.
+Do not decide by agent or check voting. Preserve disagreements, identify the first technical divergence, and resolve them with the cheapest frozen discriminating check. If the evidence cannot decide, record the contradiction as unresolved.
 
 ## 6. Progress visibility for long-running execution
 
