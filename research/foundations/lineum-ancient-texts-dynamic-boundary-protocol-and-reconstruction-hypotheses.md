@@ -1,11 +1,12 @@
 # Ancient Texts as Dynamic-Boundary, Protocol, Reconstruction, and Accounting Hypothesis Generators for Lineum
 
-**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, preregistration, and thread-independent missing-piece research checkpoint; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
-**Version:** 0.3.1  
+**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
+**Version:** 0.4.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Core snapshot at this checkpoint:** `eb976b97a233ac2c4d83eac53c290aab0d137e4e`  
+**Programme membership:** continuous-source cosmology and particle-formation programme  
+**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  
 **Current runtime source:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`  
 **Current profile source:** `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -17,15 +18,16 @@
 **Continuity evidence cutoff:** 2026-07-31  
 **Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
 **Immediate predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
-**Previous version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
-**Earlier version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
+**Previous version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  
+**Earlier version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
+**Older version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
 **Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
 **Related collective-object report:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Related state-reduction report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`, version 0.2.0, blob `b55bc1639fc8ed6efa7b8286e9113afa88ee298c`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, and preparation-history programme, retains the current-Core field/coupling/accounting audit, records the first FAC0 directed-coupling checkpoint, and adds a thread-independent research objective so the programme can be resumed from repository evidence alone. The governing decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
-**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Could the current equations be effective dynamics of a deeper generative process, and if so, can that hypothesis make a distinct falsifiable prediction rather than merely absorb residuals? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature?  
-**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
+**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, preparation-history, field-coupling, and accounting programme, records the FAC0 directed-coupling checkpoint, and preserves a project-owner systems synthesis as explicit hypothesis provenance. The new synthesis asks whether individually source-audited Gnostic texts converge on a minimum domain-neutral pattern of local autonomy, limited information, false local totality, and model correction, and whether an independently frozen version of that pattern appears in Lineum without being inserted by relabeling. The named source-audit expansion includes the *Apocryphon of John*, *Hypostasis of the Archons*, *Gospel of Truth*, *Gospel of Mary*, *Gospel of Philip*, *Gospel of Judas*, and, where relevant, *Gospel of Thomas*; no common cosmology is assumed. The governing missing-piece decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, distributed/local observer limitations, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
+**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Could the current equations be effective dynamics of a deeper generative process, and if so, can that hypothesis make a distinct falsifiable prediction rather than merely absorb residuals? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature? Do the named Gnostic texts, when audited separately, support a minimum causal pattern in which an autonomous local system has incomplete access to a larger causal state and can mistake local closure for total closure? Can that abstraction make a preregistered prediction about Lineum that survives generic-hierarchy, random-relabeling, modern-software-architecture, and source-shuffling controls? Can Lineum produce useful global organization from local states and limited interfaces without a central `God Object`, and can a local observer revise an incomplete model when additional history, boundary, relational, or source information is exposed?  
+**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; medium that local-totality and observer-reconstruction motifs are useful domain-neutral comparison classes in already checked sources; low and not yet source-audited that the broader named Gnostic set converges on one minimum causal graph beyond generic complex-systems themes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
 
 ## 1. Answer first
 
@@ -78,8 +80,9 @@ The correct scientific order is therefore:
 3. test reciprocal closures and explicit finite reservoirs;
 4. test whether supplied kappa must become a dynamic state;
 5. test whether history of existing fields closes prediction;
-6. test an effective-equation/deeper-generative comparison only if it has an explicit coarse-graining map and distinct held-out prediction;
-7. only then permit a genuinely new state variable to compete.
+6. test distributed local-observer and local-autonomy hypotheses against central-control and generic-pattern nulls;
+7. test an effective-equation/deeper-generative comparison only if it has an explicit coarse-graining map and distinct held-out prediction;
+8. only then permit a genuinely new state variable to compete.
 ```
 
 Ancient terminology must never become field nomenclature merely because it sounds suggestive.
@@ -101,9 +104,11 @@ Version `0.2.0`, preserved as Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7
 
 Version `0.3.0`, preserved as Git blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`, recorded the first FAC0 execution checkpoint. Source inspection supports the preregistered graph and exposes same-step indirect edges caused by update order. A separately transcribed NumPy checker reproduced the predicted response pattern and linear perturbation scaling, but the available execution environment used Python 3.13.5 with NumPy 2.3.5 while the repository requires `numpy>=1.24,<2.0.0`. A clean virtual environment could not obtain a compatible NumPy build from the available package index, and direct local repository cloning was unavailable because the execution environment could not resolve GitHub. The numerical FAC0 result is therefore retained as provisional corroboration, not as a supported-runtime Core reproduction.
 
-Version `0.3.1` adds a self-contained research objective and resume checkpoint. It records the missing-piece search order, explicitly preserves the possibility that the current equations are effective/coarse-grained rather than fundamental, and prevents that possibility from being used as an unfalsifiable rescue. It also records that a renewed disposable local checkout attempt on 2026-08-07 again failed because the execution environment could not resolve `github.com`; this repeats the known technical blocker and is not a scientific negative result.
+Version `0.3.1`, preserved as Git blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`, added a self-contained research objective and resume checkpoint. It records the missing-piece search order, explicitly preserves the possibility that the current equations are effective/coarse-grained rather than fundamental, and prevents that possibility from being used as an unfalsifiable rescue. It also records that a renewed disposable local checkout attempt on 2026-08-07 again failed because the execution environment could not resolve `github.com`; this repeats the known technical blocker and is not a scientific negative result.
 
-No negative result or source-critical restriction from versions `0.1.0` through `0.3.0` is withdrawn here.
+Version `0.4.0` records the project-owner systems synthesis as hypothesis provenance rather than textual evidence. It adds the minimum-local-autonomy/epistemic-closure graph, expands the named source-critical target set to include the *Gospel of Mary*, *Gospel of Judas*, and relevant *Gospel of Thomas* passages alongside already active sources, registers generic-pattern and random-relabeling controls, and preregisters a distributed-versus-central architecture comparison for Lineum. The software-architecture and LaVeyan comparisons are retained only as conceptual provenance and anti-confounder prompts. FAC0-FAC5 remain the immediate accounting/state priority, all earlier bounded negative results remain binding, and no historical, physical, or ontological claim is promoted.
+
+No negative result or source-critical restriction from versions `0.1.0` through `0.3.1` is withdrawn here.
 
 The broad predecessor remains the source and historical registry. This successor remains the active mechanism and preregistration report.
 
@@ -903,8 +908,9 @@ The prior fixtures remain valid. The immediate ordering changes to maximize info
 11. `DB1` active boundary.
 12. `PI1` protocol identity.
 13. `PH1` preparation-history equivalence failure.
+14. `LAEC0` local autonomy and epistemic-closure comparison after its source abstraction is frozen, or earlier only when it is the cheaper discriminator for an observer/state-sufficiency question.
 
-This is a reprioritization, not deletion. `IC1` remains preregistered and should resume after the more basic state/accounting question is resolved.
+This is a reprioritization, not deletion. `IC1` and `LAEC0` remain preregistered and should not displace the more basic state/accounting gate without explicit dependency evidence.
 
 ## 19. Root-programme impact matrix
 
@@ -916,11 +922,12 @@ This is a reprioritization, not deletion. `IC1` remains preregistered and should
 | no passive reversible current-field membrane | `constrains` | exact failed candidates remain negative; only distinct active/stateful classes are reopened |
 | exact live-state continuation | `supports` | IC1 and FAC5 distinguish complete state from projection/history omissions |
 | static recipe not donor identity | `supports` | image/copy distinction remains active |
-| copying/heredity negative results | `unaffected` | no ancient motif or accounting closure creates descendants retroactively |
+| copying/heredity negative results | `unaffected` | no ancient motif, local-autonomy abstraction, or accounting closure creates descendants retroactively |
 | `mu` reduction-first programme | `constrains` | FAC0 shows `mu` has same-step indirect consequences but does not establish independent ontology; M6 remains mandatory |
 | current public-TOLOG Q2 accounting negative | `supports` | apparent `Psi` recovery without `Phi` debit is a live example of why component recovery is not transfer |
 | possible effective/deeper generative description | `open_but_unprivileged` | DG0 may compete only after an explicit lower-level model, coarse-graining map, and held-out discriminator exist |
-| physical particle/gravity/quantum/soul/cosmology mappings | `unaffected` | no textual motif or internal ledger establishes physical correspondence |
+| local-observer / local-totality hypothesis | `reopens` | a richer observer may reveal omitted history, relations, boundary flux, or source state without requiring a new substance; LAEC0 must distinguish this from generic partial observability |
+| physical particle/gravity/quantum/soul/cosmology mappings | `unaffected` | no textual motif, distributed-systems analogy, or internal ledger establishes physical correspondence |
 
 ## 20. Failure classification
 
@@ -929,6 +936,9 @@ Every negative result must be assigned to one or more of:
 ```text
 source-text attribution failure;
 media synthesis mistaken for primary witness;
+cross-text convergence failure;
+generic-pattern confounder;
+random-relabeling confounder;
 observer non-identification;
 mechanism not distinguishable under selected interventions;
 invalid synthetic state;
@@ -945,7 +955,7 @@ model-class insufficiency;
 interpretation overreach.
 ```
 
-A failed observer or accounting candidate blocks that candidate. It does not prove a new field.
+A failed observer, source-abstraction, or accounting candidate blocks that candidate. It does not prove a new field or a deeper layer.
 
 The FAC0 dependency mismatch and repeated GitHub DNS failure are classified separately as `execution_environment_not_repository_supported`; they are not model failures.
 
@@ -955,8 +965,10 @@ The following remain prohibited:
 
 ```text
 Pleroma = hidden physical dimension;
-Yaldabaoth = a physical field or conscious simulator;
-archons = physical particles or field components;
+Yaldabaoth = a physical field, Core component, or conscious simulator;
+Saklas or Samael = a Core component;
+archons = physical particles, field components, or Lineum nodes;
+Sophia = a Lineum field;
 Horos = proven membrane;
 syzygy = mandatory paired fundamental fields;
 spirit entering Adam = mu entering Psi;
@@ -965,7 +977,14 @@ Pistis Sophia Treasury of Light = Lineum energy reservoir;
 Two Spirits = two fundamental fields;
 364-day calendar = Lineum constant;
 living temple architecture = conscious boundary;
+gnosis = an implemented Lineum learning algorithm by definition;
 ancient structural analogy = empirical evidence;
+software-architecture analogy = source-text evidence or physical evidence;
+SOLID principle = Lineum law;
+God Object analogy = historical description of Yaldabaoth;
+local lack of access = proof that a higher layer exists;
+local observability limit = proof of a parent universe;
+cross-text motif recurrence = proof of one historical Gnostic cosmology;
 software ledger closure = physical energy conservation;
 new state variable = new substance;
 missing reciprocal debit = proof of a missing field;
@@ -975,7 +994,7 @@ failed same-layer model = proof of a deeper universe layer;
 effective-equation language = license for an unfalsifiable hidden mechanism.
 ```
 
-## 22. Evidence classification at version 0.3.1
+## 22. Evidence classification at version 0.4.0
 
 ### 22.1 What the current implementation computes
 
@@ -990,9 +1009,11 @@ Supported from current source inspection:
 - several one-way writes and sinks without explicit receiving/source state;
 - sequential update ordering that permits indirect one-step paths such as `Phi -> Psi -> mu` and `mu -> Psi -> Phi`.
 
+No central `God Object`, global observer, Gnostic entity, explicit local epistemic model, or model-revision process is implemented merely by virtue of these fields and couplings.
+
 ### 22.2 What was reproducibly observed
 
-No repository-supported new Core numerical experiment was completed in this version.
+No repository-supported new Core numerical experiment was completed in version 0.4.0.
 
 The FAC0 standalone checker provisionally corroborated the source-level directed graph, same-step ordering effects, small-perturbation linear scaling for deterministic lanes, and stochastic-only `delta` sensitivity under matched RNG. It cannot be promoted to a supported Core reproduction because the local environment used NumPy 2.3.5 while the repository requires NumPy below 2.0 and a compatible clean environment could not be constructed from the available package index.
 
@@ -1012,17 +1033,21 @@ FAC0 used two separately arranged local NumPy transcriptions with different inpu
 
 This is partial independence only. Both numerical transcriptions share the same manually reconstructed equations and the same unsupported NumPy runtime. A repository-supported replay or equivalently justified independent environment remains required.
 
+The new local-autonomy/epistemic-closure material has not yet undergone an independent primary-source convergence audit or numerical Lineum test. Its present evidence level is `registered hypothesis provenance`, not `reproduced`.
+
 ### 22.4 Cautious interpretation
 
 The current model is under-specified as a physical resource network. FAC0 strengthens confidence in the implementation-level dependency graph but provides no evidence that the state set is physically complete or incomplete. Missing relationships, reservoirs, dynamic boundary state, and history remain stronger and cheaper hypotheses than a missing fundamental field. An effective/deeper-generative description is a legitimate later scientific comparison class only when it is explicit enough to be falsified.
 
+The project-owner synthesis supplies a useful additional systems question: an autonomous local process can be dynamically competent while remaining informationally incomplete. That principle is scientifically useful only when it is stated symmetrically: lack of access to a larger state does not prove that no larger state exists, and it also does not prove that such a larger state does exist. The testable issue is predictive sufficiency under declared information and interventions.
+
 ### 22.5 Hypotheses
 
-`M0` through `M7`, `DG0`, and FAC1 through FAC5 remain preregistered research hypotheses/tests. FAC0 has partial evidence at the source-inspection level and provisional numerical corroboration; it has not passed the supported-runtime completion gate. `DG0` currently has no positive numerical evidence and is retained only as a later model class.
+`M0` through `M7`, `DG0`, FAC1 through FAC5, and `LAEC0` remain preregistered research hypotheses/tests. FAC0 has partial evidence at the source-inspection level and provisional numerical corroboration; it has not passed the supported-runtime completion gate. `DG0` currently has no positive numerical evidence and is retained only as a later model class. `LAEC0` currently has no numerical evidence and its broader cross-text premise remains incomplete until the named sources are audited independently.
 
 ### 22.6 Known real physics
 
-No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement. A software dependency graph is not a physical ontology. Effective theories and coarse-graining are real scientific concepts, but their existence in physics does not imply that current Lineum is an effective theory of any particular deeper physical substrate.
+No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement. A software dependency graph is not a physical ontology. Effective theories, coarse-graining, partial observability, distributed control, and local-versus-global state descriptions are real scientific and engineering concepts, but their existence does not imply that current Lineum is an effective theory of a particular deeper substrate or that ancient authors described those modern formalisms.
 
 ## 23. Current verdict
 
@@ -1033,6 +1058,14 @@ video_contains_source_grounded_motifs = true_with_source_specific_corrections
 Athanasius_blanket_destroy_all_other_texts_quote = unsupported_in_checked_letter
 Pistis_Sophia_contains_power_light_depletion_and_receiver_motifs = supported_as_textual_witness
 those_motifs_are_physical_energy_accounting = unsupported
+
+cross_text_local_autonomy_pattern = queued_for_source_critical_audit
+local_autonomy_without_false_totality = registered_domain_neutral_hypothesis
+Gospel_Mary_Gospel_Judas_Gospel_Thomas_equal_standard_audit = incomplete
+Lineum_emergent_local_autonomy = untested
+Lineum_global_order_without_central_controller = untested
+SOLID_and_God_Object_mapping = methodological_analogy_only
+local_observability_limit_proves_higher_layer = unsupported
 
 current_Core_fields_are_physically_complete = unproven
 current_Core_full_runtime_has_demonstrated_closed_physical_resource_account = no
@@ -1058,6 +1091,7 @@ stateful_dynamic_scaffold = live_hypothesis
 effective_or_deeper_generative_equation = live_but_unprivileged_hypothesis_with_no_positive_evidence
 
 next_action = recover_supported_runtime_and_replay_FAC0_before_FAC1
+LAEC0_status = source_audit_and_known_answer_preregistration_queued
 IC1_status = preserved_and_queued_after_accounting_priority
 ```
 
@@ -1116,7 +1150,8 @@ Before modifying a Core equation, adding a Core field, changing whitepaper ontol
 7. do not introduce a physical field to repair an accounting residual until `M0` through `M6` alternatives have been tested sufficiently to justify `M7`;
 8. do not promote `DG0` merely because a same-layer candidate fails; require an explicit lower-level model, coarse-graining map, and held-out discriminator first;
 9. keep the ancient-source comparison and the physical inference separate at every checkpoint;
-10. leave Core code and whitepapers unchanged until a promotion gate is independently passed.
+10. freeze the source-critical `LAEC0` abstraction before applying it to Lineum and preserve negative/absent motifs in every named text;
+11. leave Core code and whitepapers unchanged until a promotion gate is independently passed.
 
 ## 26. Thread-independent research objective and resume checkpoint
 
@@ -1126,7 +1161,7 @@ This active report is the authoritative resume point for the current programme. 
 
 The scientific objective is:
 
-> Identify which genuinely missing mechanism, state description, relationship, accounting component, observer information, boundary dynamics, or effective-generative layer is required to make the current Lineum model more causally complete, while preferring the smallest falsifiable change and refusing to promote analogy, fit quality, visual resemblance, or ancient terminology into physics.
+> Identify which genuinely missing mechanism, state description, relationship, accounting component, observer information, boundary dynamics, distributed/local architecture, or effective-generative layer is required to make the current Lineum model more causally complete, while preferring the smallest falsifiable change and refusing to promote analogy, fit quality, visual resemblance, or ancient terminology into physics.
 
 The programme is **not** trying to prove that a missing piece exists. `No additional state is required` is an acceptable and important result.
 
@@ -1189,7 +1224,7 @@ The current next step remains unchanged:
 6. execute FAC4 static versus dynamic scaffold;
 7. execute FAC5 held-out new-state necessity ladder;
 8. only after an explicit DG0 model exists, compare it against the best same-layer survivor with the same held-out data and complexity discipline;
-9. resume IC1, TS1, EC1, DB1, PI1, and PH1 after the more basic accounting/state question is resolved or when dependency logic makes one of them the cheaper discriminator.
+9. resume IC1, TS1, EC1, DB1, PI1, PH1, and LAEC0 after the more basic accounting/state question is resolved or when dependency logic makes one of them the cheaper discriminator.
 ```
 
 The current technical blocker is the absence of a supported local repository execution path in the available environment. The repeated DNS failure is not a scientific result. Do not weaken FAC0 or silently substitute a prose reconstruction to make progress appear faster.
@@ -1289,4 +1324,329 @@ No chat prompt, hidden scratchpad, local uncommitted file, ZIP artifact, or reme
 
 If this work is opened in a new conversation, the operational instruction is simply:
 
-> Continue the active missing-piece research from this report under current repository rules. First obtain a supported replay of frozen FAC0; then proceed through FAC1-FAC5, keeping DG0 as an explicit but unprivileged later comparison class, and preserve all results in this report.
+> Continue the active missing-piece research from this report under current repository rules. First obtain a supported replay of frozen FAC0; then proceed through FAC1-FAC5, keeping DG0 as an explicit but unprivileged later comparison class, preserve LAEC0 as a separately source-audited local-autonomy/epistemic-closure lane, and preserve all results in this report.
+
+## 27. Project-owner systems synthesis: local autonomy without false totality
+
+### 27.1 Provenance and evidence status
+
+On 2026-08-07 the project owner supplied a synthesis connecting selected Gnostic texts, systems architecture, distributed software design, and the current Lineum missing-piece question. This section preserves that synthesis so it does not depend on chat history.
+
+Its status is deliberately limited:
+
+```text
+project_owner_systems_synthesis = hypothesis_provenance
+primary_text_witness = not_granted_by_owner_summary
+historical_common_gnostic_system = not_assumed
+Lineum_mechanism = untested
+physical_correspondence = none
+```
+
+The owner synthesis must therefore be decomposed through the report's evidence ladder rather than quoted back as history.
+
+### 27.2 Candidate minimum cross-text causal graph
+
+The proposed Occam-style minimum mechanism is registered in domain-neutral language as:
+
+```text
+larger_or_not_fully_accessible_causal_source
+    -> differentiation or generation
+    -> lower/local layer
+    -> local organizing process
+    -> bounded autonomous subsystem
+    -> partial local observability
+    -> local internal model
+    -> possible local-totality error
+    -> discrepant or newly accessible information
+    -> suppression or model revision
+    -> improved relation between local state and larger causal closure
+```
+
+This graph is **not yet a finding about the named texts**. It is the structure to be tested against them.
+
+The source-critical target set is:
+
+```text
+Apocryphon of John / Secret Book of John;
+Hypostasis of the Archons;
+Gospel of Truth;
+Gospel of Mary;
+Gospel of Philip;
+Gospel of Judas;
+Gospel of Thomas, only where a passage is genuinely relevant.
+```
+
+Each text must be scored independently for the presence, absence, ambiguity, or contradiction of at least:
+
+```text
+larger causal source or order;
+lower/local layer or authority;
+local power with limited knowledge;
+restricted observer access;
+claim of local totality;
+new information or recognition;
+revision of an earlier model or relation;
+relation of a local subject or subsystem to a larger order.
+```
+
+No majority vote may force a motif into a text that does not contain it. Divergent schools, manuscripts, redactions, and theological purposes remain separate evidence.
+
+### 27.3 Domain-neutral principle
+
+The strongest candidate systems statement is:
+
+> An autonomous local system can be causally competent inside its domain without being an informationally complete representation of the total system.
+
+In compact form:
+
+```text
+autonomous_local_system != total_system
+local_access != global_state
+```
+
+The corresponding epistemic error is:
+
+```text
+I model everything available to me
+    therefore
+nothing exists outside my model
+```
+
+The scientific correction is symmetric:
+
+```text
+no_access_to_larger_state != proof_that_larger_state_is_absent
+no_access_to_larger_state != proof_that_larger_state_exists
+```
+
+Only held-out prediction, intervention, accounting, or reconstruction can decide whether an enlarged state description is required.
+
+### 27.4 Historical-name abstraction boundary
+
+The owner synthesis proposes the following *candidate abstractions*, not identifications:
+
+```text
+Sophia-like generation motif
+    -> asymmetric, incomplete, or non-reciprocal generation question;
+
+Yaldabaoth/Saklas/Samael local-ruler motif
+    -> locally effective controller/model with incomplete causal access;
+
+archon-like administration motif
+    -> subordinate mechanisms maintaining or constraining a local regime;
+
+gnosis-like recognition motif
+    -> update of an incomplete internal model after new information;
+
+human-with-higher-relation motif
+    -> local state that may carry or reconstruct information not visible in a coarse local projection.
+```
+
+None of these abstractions licenses an equation-name mapping, agent ontology, morality claim, consciousness claim, or physical field assignment.
+
+The owner additionally emphasized that the material world and demiurgic figure need not be interpreted as intrinsically evil for the systems abstraction to work. The narrow retained mechanism is epistemic and architectural: a local system may fail because it mistakes local knowledge for total knowledge.
+
+### 27.5 Distributed-system and software-architecture analogy
+
+The owner summarized the engineering principle as:
+
+> I am an autonomous local system, but I am not the whole system.
+
+A well-designed component can therefore:
+
+```text
+hold its own state;
+act autonomously within a bounded responsibility;
+see only the interfaces it needs;
+communicate through declared contracts;
+remain ignorant of most global implementation detail;
+accept corrective information;
+avoid treating its local state as global truth.
+```
+
+The suggested SOLID parallels and the `God Object` analogy are retained only as **modern comparison vocabulary**:
+
+- Single Responsibility suggests bounded local responsibility;
+- Open/Closed suggests extension without destruction of the whole system;
+- Liskov suggests lower implementations respecting higher contracts;
+- Interface Segregation suggests local access to only relevant interfaces;
+- Dependency Inversion suggests that a lower implementation should not silently promote itself into the highest abstraction;
+- a `God Object` is a useful software null for over-centralized authority and global-state assumptions.
+
+These software principles are not historical interpretations of Gnostic texts and are not evidence about physics. Their research value is to help define clean known-answer architectures and null controls.
+
+### 27.6 `LAEC0` — Local Autonomy and Epistemic Closure preregistration
+
+`LAEC0` asks whether the systems abstraction survives both a generic known-answer test and an independent Lineum test.
+
+First build or reuse known-answer comparison classes:
+
+```text
+LA0 global-controller system:
+    one controller has direct access to the complete state and determines local updates;
+
+LA1 distributed-local system:
+    each node or subsystem updates from bounded local state and declared neighbor messages;
+
+LA2 distributed system with supplied global scaffold:
+    local updates are local, but a fixed external map analogous to a supplied mask influences all nodes;
+
+LA3 distributed dynamic-scaffold system:
+    the organizing scaffold is itself stateful, locally updated, finite-cost, and subject to back-reaction;
+
+LA4 local-observer reconstruction system:
+    dynamics need not change, but nested observers receive local snapshot, local history,
+    neighborhood relations, boundary/source ledger, and finally full state;
+
+LA5 hidden-pump or hidden-controller null:
+    apparent local autonomy is manufactured by an undeclared external driver.
+```
+
+The comparison must not assume consciousness. A `local internal model` may be only an estimator used for held-out prediction.
+
+### 27.7 Nested observer test
+
+For a frozen known-answer distributed system, expose increasingly rich information:
+
+```text
+O0 local instantaneous state only;
+O1 local state plus short history;
+O2 O1 plus neighbor relations/messages;
+O3 O2 plus boundary flux and source/receiver accounting;
+O4 declared full global state.
+```
+
+Then apply held-out interventions that originate outside the O0 observation horizon.
+
+Measure:
+
+```text
+future-state predictive error;
+intervention-response error;
+calibration of uncertainty;
+false confidence in local closure;
+minimum information set needed for correct prediction;
+residual information gain from the next observer level.
+```
+
+A useful `local-totality error` exists only if a restricted observer is confidently wrong in a way that a preregistered richer observer corrects. Merely having less information is not enough.
+
+### 27.8 Lineum test and no-`God Object` question
+
+Only after the abstraction and known-answer observer are frozen may they be applied to Lineum.
+
+The Lineum question is not whether `Yaldabaoth exists`. It is:
+
+```text
+Can a candidate local Lineum structure or local observer predict its held-out future
+from local state alone?
+
+If not, which additional information closes the prediction:
+    local history,
+    neighbor relations,
+    Phi/mu history,
+    boundary flux,
+    source/receiver ledger,
+    supplied kappa,
+    dynamic scaffold state,
+    or a genuinely additional state?
+```
+
+A separate architecture comparison asks whether a target global behavior requires:
+
+```text
+a central/global controller;
+local neighbor rules only;
+a supplied global scaffold;
+a stateful distributed scaffold;
+a matched hidden external pump.
+```
+
+Support for distributed emergence requires ablation of the alleged global controller/scaffold while preserving the relevant local rules and comparing held-out behavior. Absence of an explicit central variable in code is not by itself proof of emergent global organization.
+
+### 27.9 Anti-retrofitting falsifier
+
+The hypothesis fails as a meaningful Lineum connection if a convincing match can be produced only by freely renaming arbitrary Lineum parts after seeing the implementation.
+
+Before any Lineum evaluation, freeze:
+
+```text
+the cross-text structural graph;
+which edges are essential;
+which edges are optional;
+which observations count as absence or contradiction;
+the Lineum observable and intervention;
+the competing null models;
+the outcome interpretation.
+```
+
+Mandatory nulls include:
+
+```text
+generic hierarchy narrative with no Gnostic provenance;
+random relabeling of Lineum components;
+modern modular-software architecture with the same abstract vocabulary;
+source-shuffled motifs assembled from unrelated texts;
+one-text-only motif versus independently recurring motif;
+a model with the same fit but no local/global information distinction.
+```
+
+A scientifically interesting result requires more than thematic resemblance. The frozen abstraction must make a concrete, nontrivial prediction about a missing relationship, observer failure, scaling law, accounting distinction, or intervention response that then survives held-out Lineum testing better than those nulls.
+
+Even such a result would establish only a shared causal structure. It would not show that ancient authors encoded Lineum or modern physics.
+
+### 27.10 Source-audit expansion status
+
+The earlier audit already gives source-critical treatment to parts of the *Apocryphon of John*, *Gospel of Truth*, *Gospel of Philip*, and related creation/Valentinian material. The active successor also contains checked *Hypostasis of the Archons*-related and *Pistis Sophia* comparisons in its inherited programme.
+
+At this checkpoint, the *Gospel of Mary*, *Gospel of Judas*, and *Gospel of Thomas* have **not** been audited to the same standard for the proposed minimum graph. They are therefore targets, not supporting evidence.
+
+The next source pass must preserve negative findings such as:
+
+```text
+motif absent;
+wording weaker than the synthesis;
+text implies a different mechanism;
+modern interpretation exceeds primary witness;
+shared motif is too generic to discriminate;
+textual dependence makes apparent recurrence non-independent.
+```
+
+### 27.11 Philosophical side comparison preserved without promotion
+
+The owner also connected the local-autonomy principle to an earlier comparison with LaVeyan Satanism: strong individual autonomy inside one's subjective world need not imply that the individual is the ontological center of all reality.
+
+The retained systems-level contrast is only:
+
+```text
+strong_local_autonomy
+    + explicit_non_totality
+    + capacity_for_model_revision
+```
+
+This is philosophical provenance, not a claim about the historical relationship among Gnostic traditions, Satanism, software engineering, Lineum, or physics.
+
+### 27.12 Decision states for the new lane
+
+The local-autonomy/epistemic-closure lane may end in any of these bounded outcomes:
+
+```text
+LAC0 no cross-text minimum graph beyond generic human/system themes;
+LAC1 a bounded subset of named texts shares the graph, while others do not;
+LAC2 a stable domain-neutral abstraction survives source audit but is generic across many systems traditions;
+LAC3 the abstraction yields a preregistered Lineum discriminator that beats generic and relabeling nulls;
+LAC4 Lineum independently exhibits the same bounded causal graph under held-out intervention;
+LAC5 any claim of real-world physical correspondence remains a separate empirical programme.
+```
+
+`LAC3` or `LAC4` would still not establish historical foresight, encoded modern science, consciousness, a soul, a creator, higher worlds, or a particular physical ontology.
+
+### 27.13 Relationship to the active FAC priority
+
+This section preserves a material research objective; it does not silently change the immediate execution order.
+
+FAC0-FAC5 remain the highest-priority route for the owner's current question about fields, reciprocal relations, source/sink accounting, and whether a new state is actually necessary. `LAEC0` becomes immediately relevant when the cheapest unresolved question is observer sufficiency, local-versus-global state access, or distributed organization. Its source audit can proceed without treating a source motif as evidence for a Core mechanism.
+
+The synthesis therefore adds a missing **question class**, not a preferred answer:
+
+> Can Lineum remain locally autonomous and globally emergent without any local part confusing its accessible state with the complete causal state, and can that distinction be demonstrated by prediction rather than metaphor?
