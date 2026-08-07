@@ -3,8 +3,8 @@ from __future__ import annotations
 import importlib.util
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-PATH = ROOT / "lineum_b4_q2_spatial_accounting_stage_a.py"
+ROOT = Path(__file__).resolve().parents[2]
+PATH = ROOT / "research" / "runners" / "lineum_b4_q2_spatial_accounting_stage_a.py"
 spec = importlib.util.spec_from_file_location("stage_a", PATH)
 assert spec is not None and spec.loader is not None
 stage_a = importlib.util.module_from_spec(spec)
