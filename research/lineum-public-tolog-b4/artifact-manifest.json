@@ -14,6 +14,11 @@
       "bytes": 2590,
       "role": "checker progress stream captured from stderr",
       "sha256": "a0241a92fbca6c488f2c703cd21644538badb677d6838820d5502605985d9e67"
+    },
+    "research/lineum-public-tolog-b4/q2-observer-frame-compact.json": {
+      "bytes": 13446,
+      "role": "compact Q2-O1 observer-frame result across all 28 frozen cases",
+      "sha256": "aefc488aee4a9422d7ca43258eea2c96a1f818e632fd6513985453ce1e0a8f99"
     }
   },
   "primary_input": {
@@ -27,18 +32,34 @@
     "workflow_job": 92448891365,
     "workflow_run": 31048211101
   },
-  "schema": "lineum-public-tolog-b4-readable-artifacts/1",
+  "q2_observer_frame": {
+    "canonical_payload_without_elapsed_sha256": "c6c70c864835e54835eb1d8f4c462151d321fc876a40aa6784267618bc9fe4d7",
+    "case_count": 28,
+    "classification_changed_by_alignment_count": 0,
+    "compact_result_blob_sha": "b846c685854e3cef173549a4037bdab9e6d11043",
+    "full_local_result_bytes": 239468,
+    "full_local_result_sha256": "03d2419da24d87e618045d741ab0886944822270310414124c6a524b8cfbd0d0",
+    "observer_aligned_count": 6,
+    "observer_runner_sha256": "2f84579260d27bf230b741ad5720cfcf81061cb15e71a49f1cd87d4dc3d73b0e",
+    "preregistration_commit": "33ff0f50fd6575c6459716d34787b96e5d35ca0a",
+    "q2_positive_count": 0,
+    "rerun_equal_excluding_elapsed": true,
+    "source_limitation": "The exact observer runner and its test file were hash-recorded and executed locally but were not published as plain repository files in this checkpoint. The compact deterministic result is retained; the full local output is identified by byte count and SHA-256.",
+    "tests": "14 passed",
+    "tests_sha256": "5914a608ac265b3d59b1e0fdd605e4ae6f8a88cab8c1360046f9b0092c4e7705"
+  },
+  "schema": "lineum-public-tolog-b4-readable-artifacts/2",
   "source_recovery": {
     "archive_tar_bytes": 153600,
     "archive_tar_sha256": "587df51f7497ac26d82732716ba3939e57c4c4bdecd663ce6d21d04f70ffe2fd",
     "archive_xz_bytes": 34756,
     "archive_xz_sha256": "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f",
     "checker_sha256": "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031",
-    "limitation": "Recovered exact sources passed 9 frozen tests locally, but the connector payload boundary prevented safe atomic publication of the large plain Python files. No truncated source was referenced.",
+    "limitation": "Recovered exact sources passed 9 frozen tests locally, but the connector payload boundary prevented safe atomic publication of the large plain Python files. No truncated source was referenced. The current small loader remains dependent on an archive no longer embedded in the readable report and is not a standalone reproducibility substitute.",
     "plain_source_copies_committed_in_this_checkpoint": false,
     "runner_sha256": "96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd",
     "test_sha256": "95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec"
   },
   "source_report": "research/lineum-public-tolog-galactic-shape-b4.md",
-  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1 verification"
+  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1 and Q2 observer verification"
 }
