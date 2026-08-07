@@ -1,0 +1,62 @@
+name: B4 Q2 PV1 Audit
+
+'on':
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout frozen branch state
+        uses: actions/checkout@v4
+      - name: Set up supported Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install repository dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+      - name: Verify environment and frozen source identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "source_commit=$(git rev-parse HEAD)"
+          python - <<'PY'
+          import numpy as np
+          import platform
+          import pytest
+          print("python=" + platform.python_version())
+          print("numpy=" + np.__version__)
+          print("pytest=" + pytest.__version__)
+          if int(np.__version__.split(".")[0]) >= 2:
+              raise SystemExit("NumPy 2.x is outside the frozen supported range")
+          PY
+          test "$(git hash-object research/runners/lineum_b4_saturation_localized_l1.py)" = "1598faf0f39e056c1684f767c2554edc63283ca4"
+          test "$(git hash-object research/runners/lineum_b4_q2_perturbation_ledger.py)" = "e3657119b855965b4fd622b3e94f08443a7c9107"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_perturbation_ledger.py)" = "403c1cb8747cebf3280009b3b2ffcd814c72e060"
+      - name: Run frozen pre-execution test gate
+        run: |
+          python -m pytest -q tests/research/test_lineum_b4_saturation_localized_l1.py tests/research/test_lineum_b4_q2_perturbation_ledger.py
+      - name: Run Q2-PV1-A exactly once
+        shell: bash
+        run: |
+          set -euo pipefail
+          output="$RUNNER_TEMP/q2-pv1-stage-a.json"
+          python research/runners/lineum_b4_q2_perturbation_ledger.py --output "$output"
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          path = Path(os.environ["RUNNER_TEMP"]) / "q2-pv1-stage-a.json"
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          print("Q2_PV1_RESULT_BEGIN")
+          print(json.dumps(payload, sort_keys=True, separators=(",", ":"), allow_nan=False))
+          print("Q2_PV1_RESULT_END")
+          print("file_sha256=" + hashlib.sha256(path.read_bytes()).hexdigest())
+          PY
