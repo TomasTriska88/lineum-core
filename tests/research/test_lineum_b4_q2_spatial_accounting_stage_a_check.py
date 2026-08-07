@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 PATH = Path(__file__).resolve().parents[2] / "research" / "runners" / "lineum_b4_q2_spatial_accounting_stage_a_check.py"
 spec = importlib.util.spec_from_file_location("b4_sa_checker", PATH)
@@ -69,7 +70,7 @@ def test_checker_source_does_not_import_primary_measurement_paths():
     assert "lineum_b4_q2_spatial_accounting_stage_a.py" not in text
 
 
-def test_compare_rows_rejects_categorical_or_numeric_change():
+def comparison_rows():
     base = {
         "stencil": "LAP4",
         "lane": "L0",
@@ -109,6 +110,29 @@ def test_compare_rows_rejects_categorical_or_numeric_change():
             c = {k: (v.copy() if isinstance(v, dict) else v) for k, v in p.items()}
             c["pre"] = p["pre"].copy(); c["accounting"] = p["accounting"].copy(); c["mechanism"] = p["mechanism"].copy(); c["recovery"] = p["recovery"].copy()
             primary.append(p); checker.append(c)
+    return primary, checker
+
+
+def test_compare_rows_normalizes_only_structurally_disabled_stage_globals():
+    primary, checker = comparison_rows()
+    for row in primary:
+        lane = check.LANE_BY_NAME[row["lane"]]
+        if not lane.flow:
+            row["accounting"].pop("phi_gradient_flow_global_signed")
+        if not lane.psi_diffusion:
+            row["accounting"].pop("transport_global_signed")
+    result = check.compare_rows(primary, checker)
+    assert result["numeric_mismatch_count"] == 0
+    assert result["categorical_mismatch_count"] == 0
+
+    enabled = next(row for row in primary if row["stencil"] == "LAP4" and row["lane"] == "L0")
+    enabled["accounting"].pop("phi_gradient_flow_global_signed")
+    with pytest.raises(KeyError, match="phi_gradient_flow_global_signed"):
+        check.compare_rows(primary, checker)
+
+
+def test_compare_rows_rejects_categorical_or_numeric_change():
+    primary, checker = comparison_rows()
     result = check.compare_rows(primary, checker)
     assert result["numeric_mismatch_count"] == 0
     assert result["categorical_mismatch_count"] == 0
