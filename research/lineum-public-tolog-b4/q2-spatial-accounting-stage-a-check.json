@@ -1,0 +1,378 @@
+{
+  "canonical_payload_sha256_without_self": "ff8ce51e1eaf9f6dfdc2dce6dd5cd4a269bf7c903cc61e875abba804fb23509d",
+  "comparison": {
+    "categorical_mismatch_count": 0,
+    "categorical_mismatches": [],
+    "checker_stage_b_candidates": [],
+    "key_set_pass": true,
+    "maximum_absolute_difference": 0.0,
+    "maximum_relative_difference": 0.0,
+    "numeric_mismatch_count": 0,
+    "numeric_mismatches": [],
+    "primary_stage_b_candidates_rederived": []
+  },
+  "environment": {
+    "numpy": "1.26.4",
+    "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+    "python": "3.11.15"
+  },
+  "independence": {
+    "imports_primary_accounting_instrumentation": false,
+    "imports_primary_stage_a_classifier": false,
+    "independent_classification": true,
+    "independent_diffusion": true,
+    "independent_metrics": true,
+    "independent_stage_update": true,
+    "shared_input": "canonical localized initial state and frozen constants only"
+  },
+  "passed": true,
+  "protocol_pass": true,
+  "rows": [
+    {
+      "accounting": {
+        "feedback_global_signed": 29400185068.940746,
+        "linear_dissipation_global_signed": -27745227920.823368,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2735894980.6078815,
+        "mode_transfer_phi_global_signed": 2735894980.6050167,
+        "phi_gradient_flow_global_signed": 18458458061.258713,
+        "positive_local_feedback": 12532004565.335619,
+        "positive_local_phi_gradient_flow": 9506188663.18108,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": -17836274764.722168,
+        "transport_positive": 0.0,
+        "unpaired_positive": 22038193228.5167
+      },
+      "lane": "L0",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 2593848294.092828,
+        "half_energy_radius": 11.76860229593982,
+        "local_epsi": 1298493683.3578672
+      },
+      "recovery": {
+        "center_displacement_after": 2.0773990381310696,
+        "energy_radial_profile_l2_error": 0.24350225225928174,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.2522129842314875,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": false,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.24227538189666756,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.21316839697757364
+      },
+      "stencil": "LAP4"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 33035621414.45759,
+        "linear_dissipation_global_signed": -29964520108.28009,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2973961002.827918,
+        "mode_transfer_phi_global_signed": 2973961002.8249435,
+        "phi_gradient_flow_global_signed": 0.0,
+        "positive_local_feedback": 16855123224.648777,
+        "positive_local_phi_gradient_flow": 0.0,
+        "positive_local_psi_diffusion": 6522704.861625671,
+        "transport_global_signed": -36392683.82633543,
+        "transport_positive": 6522704.861625671,
+        "unpaired_positive": 16855123224.648777
+      },
+      "lane": "S1",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 6522704.861625671,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 2990428584.5889816,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 1530258377.2701437
+      },
+      "recovery": {
+        "center_displacement_after": 2.5121479338940403e-15,
+        "energy_radial_profile_l2_error": 0.00021375704707172547,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.22030787828550583,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.00019379469120200547
+      },
+      "stencil": "LAP4"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 32644082099.275684,
+        "linear_dissipation_global_signed": -29641432993.690735,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2941930796.953163,
+        "mode_transfer_phi_global_signed": 2941930796.950205,
+        "phi_gradient_flow_global_signed": 0.0,
+        "positive_local_feedback": 16844293462.010105,
+        "positive_local_phi_gradient_flow": 0.0,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": 0.0,
+        "transport_positive": 0.0,
+        "unpaired_positive": 16844293462.010105
+      },
+      "lane": "S2",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 2955384499.387101,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 1530258377.2566793
+      },
+      "recovery": {
+        "center_displacement_after": 2.5121479338940403e-15,
+        "energy_radial_profile_l2_error": 0.0024119005064708156,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.22952056746101485,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.00020601044509485506
+      },
+      "stencil": "LAP4"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 70879000734.8395,
+        "linear_dissipation_global_signed": -129931275441.00679,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -12895760498.100105,
+        "mode_transfer_phi_global_signed": 12895760498.093483,
+        "phi_gradient_flow_global_signed": 72277457337.63724,
+        "positive_local_feedback": 36126989277.83986,
+        "positive_local_phi_gradient_flow": 36772474430.20561,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": 0.0,
+        "transport_positive": 0.0,
+        "unpaired_positive": 72899463708.04547
+      },
+      "lane": "S3",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 12935385286.938671,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 6650937440.3193245
+      },
+      "recovery": {
+        "center_displacement_after": 0.005019545738505826,
+        "energy_radial_profile_l2_error": 0.01560381755565779,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.2841684641496438,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.004840573494632395
+      },
+      "stencil": "LAP4"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 27262062203.66623,
+        "linear_dissipation_global_signed": -24505897217.620667,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2415953800.6328177,
+        "mode_transfer_phi_global_signed": 2415953800.6301556,
+        "phi_gradient_flow_global_signed": 16225032018.452137,
+        "positive_local_feedback": 12738103243.46665,
+        "positive_local_phi_gradient_flow": 7353907533.298807,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": -16271852790.893356,
+        "transport_positive": 0.0,
+        "unpaired_positive": 20092010776.765457
+      },
+      "lane": "L0",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 1999234778.7209382,
+        "half_energy_radius": 12.589678312014172,
+        "local_epsi": 1008163325.2421039
+      },
+      "recovery": {
+        "center_displacement_after": 2.539671330025472,
+        "energy_radial_profile_l2_error": 0.5808475812076801,
+        "finite": true,
+        "half_energy_radius_absolute_error": 1.0788138787928343,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": false,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.27853068541413545,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.12410784094909841
+      },
+      "stencil": "LAP8"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 33035736422.945152,
+        "linear_dissipation_global_signed": -29963277965.68113,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2973836238.2513127,
+        "mode_transfer_phi_global_signed": 2973836238.248354,
+        "phi_gradient_flow_global_signed": 0.0,
+        "positive_local_feedback": 16860282956.293749,
+        "positive_local_phi_gradient_flow": 0.0,
+        "positive_local_psi_diffusion": 10726090.868437052,
+        "transport_global_signed": -37873829.18530846,
+        "transport_positive": 10726090.868437052,
+        "unpaired_positive": 16860282956.293749
+      },
+      "lane": "S1",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 10726090.868437052,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 2990428584.5945563,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 1530258377.2729952
+      },
+      "recovery": {
+        "center_displacement_after": 2.5121479338940403e-15,
+        "energy_radial_profile_l2_error": 0.0001985315547788202,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.21991319627884215,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.00019353710136092462
+      },
+      "stencil": "LAP8"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 32644082099.317635,
+        "linear_dissipation_global_signed": -29641432993.76284,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -2941930796.9603148,
+        "mode_transfer_phi_global_signed": 2941930796.9574165,
+        "phi_gradient_flow_global_signed": 0.0,
+        "positive_local_feedback": 16844293462.011898,
+        "positive_local_phi_gradient_flow": 0.0,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": 0.0,
+        "transport_positive": 0.0,
+        "unpaired_positive": 16844293462.011898
+      },
+      "lane": "S2",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 2955384499.424617,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 1530258377.258305
+      },
+      "recovery": {
+        "center_displacement_after": 1.7763568394002505e-15,
+        "energy_radial_profile_l2_error": 0.002411900506433248,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.22862847345033868,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.0002060104577163739
+      },
+      "stencil": "LAP8"
+    },
+    {
+      "accounting": {
+        "feedback_global_signed": 70879000734.8395,
+        "linear_dissipation_global_signed": -129931275441.00679,
+        "maximum_residual_ratio": 0.0,
+        "mode_transfer_epsi_global_signed": -12895760498.100105,
+        "mode_transfer_phi_global_signed": 12895760498.093483,
+        "phi_gradient_flow_global_signed": 72277457337.63724,
+        "positive_local_feedback": 36126989277.83986,
+        "positive_local_phi_gradient_flow": 36772474430.20561,
+        "positive_local_psi_diffusion": 0.0,
+        "transport_global_signed": 0.0,
+        "transport_positive": 0.0,
+        "unpaired_positive": 72899463708.04547
+      },
+      "lane": "S3",
+      "mechanism": {
+        "label": "unpaired_source_dominated",
+        "residual_ok": true,
+        "transport_credit": 0.0,
+        "transport_global_noncreating": true
+      },
+      "near_return": false,
+      "pre": {
+        "global_epsi": 12935385286.938671,
+        "half_energy_radius": 12.747548783981962,
+        "local_epsi": 6650937440.3193245
+      },
+      "recovery": {
+        "center_displacement_after": 0.005019545738505826,
+        "energy_radial_profile_l2_error": 0.01560381755565779,
+        "finite": true,
+        "half_energy_radius_absolute_error": 0.0,
+        "localized_full_state_recovery": false,
+        "localized_psi_recovery": true,
+        "phi_cap_free": true,
+        "phi_radial_profile_l2_error": 0.2841684641496438,
+        "psi_cap_free": true,
+        "reset_free": true,
+        "total_energy_relative_error": 0.004840573494632395
+      },
+      "stencil": "LAP8"
+    }
+  ],
+  "schema": "lineum-b4-q2-spatial-accounting-stage-a-check/1",
+  "stage": "Q2-SA1-A"
+}
