@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1 negative independently verified; `Q2-O1` observer-frame test completed; `Q2-SA1-A` independently reproduced in a repository-supported runtime; all eight Stage A cases are `unpaired_source_dominated`; no Stage B candidate survives; owner-intuition gate is open before any replacement-mechanism selection  
-**Version:** 0.20.0  
+**Status:** active authoritative report; localized-L1 negative independently verified; `Q2-O1` observer-frame test completed; `Q2-SA1-A` independently reproduced in a repository-supported runtime; all eight Stage A cases are `unpaired_source_dominated`; no Stage B candidate survives; the owner authorized continued work under the hard three-question scope without proposing a new independent mechanism; replacement-mechanism selection remains uncommitted; `Q2-PV1` perturbation-ledger validity audit is preregistered as the next Q2 methodological control before any repair  
+**Version:** 0.21.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `23a3d5e8a6b1011380054e9331bb0920b29f4a71`  
+**Checkpoint parent:** `7e6d5688638f822a81c98290c16cc97f3a21979f`  
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -13,7 +13,7 @@ This is the single active report for the continuous public-TOLOG B4 programme. I
 
 Versions through `0.10.1` used opaque compressed Unicode payloads. They are no longer embedded. The exact former report remains immutable as Git blob `8f08fe0da08751781e13f90496a928f89eae9d56`. The former overlapping classical-reference report is absent from the active branch; its decision-relevant content is restated here and its historical blob is `68b0ae44795124e13b8bccdd743a93b6a4ac3786`.
 
-The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completed a scope-limited historical variant retrieval and froze the observer-first Question 2 discriminator before any outcome was inspected. Version `0.15.0` recorded the completed `Q2-O1` result without changing its thresholds after inspection. Version `0.16.0` recorded the owner's next neutral response, performed the permitted scope-limited agent retrieval, ranked only Q2/Q3-relevant candidates, and locked the next minimal Q2 spatial-accounting design before scientific execution. Version `0.16.1` recorded exact historical harness recovery and frozen-test success. Version `0.16.2` corrected one unsupported environment-noise sentence. Version `0.17.0` recorded the published plain harness and frozen Stage A accounting and triage rules before any official outcome was inspected. Version `0.18.0` recorded the retained supported-runtime Stage A primary while withholding its mechanism interpretation pending independent verification. Version `0.19.0` froze the separate checker implementation, source identities, numerical comparison tolerances, independence constraints, and checker tests before checker execution. Version `0.19.1` records the first supported-runtime checker attempt as a technical comparison-schema failure with no retained scientific checker result and freezes the only permitted correction scope before another attempt. Version `0.19.2` records that exact comparison-schema repair, preserves a failed synthetic-fixture regression attempt as a technical non-result, and records the corrected supported-runtime regression gate passing `25 / 25` before any second scientific checker execution. Version `0.20.0` records the successful second independent checker, exact zero disagreement on every frozen compared quantity and category, no Stage B candidate, removal of the one-use workflow, repair of the artifact manifest, and reopening of the mandatory owner-intuition gate before replacement-mechanism selection.
+The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completed a scope-limited historical variant retrieval and froze the observer-first Question 2 discriminator before any outcome was inspected. Version `0.15.0` recorded the completed `Q2-O1` result without changing its thresholds after inspection. Version `0.16.0` recorded the owner's next neutral response, performed the permitted scope-limited agent retrieval, ranked only Q2/Q3-relevant candidates, and locked the next minimal Q2 spatial-accounting design before scientific execution. Version `0.16.1` recorded exact historical harness recovery and frozen-test success. Version `0.16.2` corrected one unsupported environment-noise sentence. Version `0.17.0` recorded the published plain harness and frozen Stage A accounting and triage rules before any official outcome was inspected. Version `0.18.0` recorded the retained supported-runtime Stage A primary while withholding its mechanism interpretation pending independent verification. Version `0.19.0` froze the separate checker implementation, source identities, numerical comparison tolerances, independence constraints, and checker tests before checker execution. Version `0.19.1` records the first supported-runtime checker attempt as a technical comparison-schema failure with no retained scientific checker result and freezes the only permitted correction scope before another attempt. Version `0.19.2` records that exact comparison-schema repair, preserves a failed synthetic-fixture regression attempt as a technical non-result, and records the corrected supported-runtime regression gate passing `25 / 25` before any second scientific checker execution. Version `0.20.0` records the successful second independent checker, exact zero disagreement on every frozen compared quantity and category, no Stage B candidate, removal of the one-use workflow, repair of the artifact manifest, and reopening of the mandatory owner-intuition gate before replacement-mechanism selection. Version `0.21.0` records the subsequent owner exchange without attributing agent-generated repair ideas to the owner, reasserts that all work must stay inside Q1–Q3, identifies the exact canonical Q2 perturbation as a potential ledger-validity confound, preserves the already-seen unsupported-runtime diagnostics as exploratory only, and preregisters `Q2-PV1` before any replacement equation is selected.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -33,7 +33,7 @@ The independently checked homogeneous reduction explains why a later rise in `ps
 
 `Q2-SA1-A` then asked where the post-perturbation `psi` gain actually comes from without changing the production equation. Its supported-runtime primary was executed only after the source, instrumentation, decision thresholds, Stage A wrapper, and tests had been committed. All eight cases were finite, reset-free, and cap-free; all eight implementation-accounting residuals closed exactly; all eight primary mechanism labels were `unpaired_source_dominated`; no case met the deliberately loose `near_return` diagnostic; no case recovered the full `psi`–`phi` state; and no spatial lane qualified for Stage B.
 
-The most discriminating primary observation is the `S1` lane, where `psi` diffusion is the only active spatial mechanism. Incoming diffusion is measurable and globally non-creating, but it contributes only about `0.0387%` of the positive unpaired contribution under LAP4 and `0.0636%` under LAP8. Equivalently, positive feedback is about `2,584` times larger than incoming diffusion for LAP4 and about `1,572` times larger for LAP8. `S2`, which contains no `psi` spatial transport at all, still satisfies the older `psi`-only recovery observer while the full state fails. `S3` also satisfies the `psi`-only observer, but its added gradient-driven `psi` growth has no contemporaneous `phi` debit and is therefore unpaired by the frozen accounting definition.
+The most discriminating primary observation is the `S1` lane, where `psi` diffusion is the only active spatial mechanism. Incoming diffusion is measurable and globally non-creating, but it contributes only about `0.0387%` of the positive unpaired contribution under LAP4 and `0.0636%` under LAP8. Equivalently, positive feedback is about `2,584` times larger than incoming diffusion for LAP4 and about `1,572` times larger than incoming diffusion for LAP8. `S2`, which contains no `psi` spatial transport at all, still satisfies the older `psi`-only recovery observer while the full state fails. `S3` also satisfies the `psi`-only observer, but its added gradient-driven `psi` growth has no contemporaneous `phi` debit and is therefore unpaired by the frozen accounting definition.
 
 That Stage A mechanism-location result is now **independently reproduced within the frozen Stage A domain**. After the first checker attempt failed only in compact-result comparison and the allowed schema repair passed a `25 / 25` supported-runtime regression gate, a fresh second checker run started from the beginning. It again passed all `25 / 25` tests, independently recomputed all eight cases without importing either the primary accounting instrumentation or primary classifier, and completed comparison successfully.
 
@@ -55,7 +55,9 @@ All eight independent rows are again `unpaired_source_dominated`; none is `near_
 
 Question 2 therefore remains negative, now with a more specific independently reproduced reason for the apparent component recovery. Stage B remains closed because no one-at-a-time spatial lane satisfies the preregistered two-stencil `transport_accounted + near_return` gate. Questions 1 and 3 are unchanged.
 
-This independently verified decision-relevant negative reopens the mandatory owner-intuition gate. No replacement mechanism, new parameter sweep, Stage B combination, or broader physical interpretation may be selected before the owner's new neutral response is recorded.
+That verified negative opened the owner-intuition gate. The owner then asked what the agent thought was missing rather than proposing a new mechanism. The agent answered with explicitly agent-generated possibilities: first a genuinely paired debit/credit path using the existing state, then a possible additional direction/relative-phase or conjugate exchange state if the minimal repair proved insufficient, and only later more complex spatial or new-field variants. The owner subsequently authorized continued work while reasserting that the report must remain strictly inside the same three questions and that the goal is to solve all three. These exchanges are workflow and hypothesis provenance, not scientific evidence and not owner-generated confirmation of any agent proposal.
+
+Before selecting any replacement equation, exact source inspection exposed a more basic Q2 validity question: the canonical radial perturbation multiplies central `psi` by `1.5` and annular `psi` by `0.5` while leaving `phi` unchanged. Therefore the perturbation does not, by construction, guarantee preservation of the implementation-defined `sum(|psi|^2) + sum(phi)` ledger already used by the Q2 accounting work. A strictly ledger-conserving repair could otherwise be judged partly by whether it returns to a state lying on a different ledger surface. `Q2-PV1` is preregistered to audit this methodological issue before any repair is selected. This does not retract the already verified Stage A result about the current implementation; it only protects the next repair comparison from a potentially incompatible perturbation.
 
 This bounded negative does not falsify spatial Lineum, identify the correct repair, establish the physical meaning of `phi`, validate TOLOG-Alpha, or show that nature follows this simulation.
 
@@ -64,7 +66,7 @@ This bounded negative does not falsify spatial Lineum, identify the correct repa
 1. Can Lineum produce real-galaxy rotation with at least `98%` preregistered held-out agreement from independently defensible source and initial conditions alone, without target leakage, galaxy-specific output fitting, a dark-matter component, or a renamed fitted surrogate?  
    **Current answer:** the descriptive target is characterized, but blind autonomous emergence is not demonstrated.
 2. Does Lineum possess a finite mathematical attractor that remains bounded and returns after perturbation without noise, clipping, caps, resets, or ad hoc damping, including a declared discrete equivalent of `r -> 0`?  
-   **Current answer:** no within the tested domain. The independently verified localized screen found no full-state recovery; the homogeneous audit found no reciprocal reservoir return; `Q2-O1` found that exact lattice rotation, periodic translation, and global phase alignment rescue none of the 28 classifications; and independently reproduced `Q2-SA1-A` shows that apparent `psi` component recovery in the simplified lanes is dominated by unpaired gain rather than reciprocal incoming spatial return. No Stage B candidate survives the frozen gate.
+   **Current answer:** no within the tested domain. The independently verified localized screen found no full-state recovery; the homogeneous audit found no reciprocal reservoir return; `Q2-O1` found that exact lattice rotation, periodic translation, and global phase alignment rescue none of the 28 classifications; and independently reproduced `Q2-SA1-A` shows that apparent `psi` component recovery in the simplified lanes is dominated by unpaired gain rather than reciprocal incoming spatial return. No Stage B candidate survives the frozen gate. Before a replacement mechanism is tested, `Q2-PV1` will verify whether the canonical perturbation itself preserves the declared two-field ledger or creates a methodological mismatch for a future conserving repair.
 3. Can the exact `256 x 256` grid integrate a genuinely real scalar degree of freedom with an explicit fixed potential minimum that retains localized information after source removal and returns after positive and negative perturbations?  
    **Current answer:** scalar-valued auxiliary fields exist, but the required fixed-potential information-preserving scalar state is not demonstrated.
 
@@ -238,9 +240,9 @@ The checker executed exactly once against the retained primary, returned code `0
 | Failure location under tested conditions | the current equation/exchange-accounting semantics, not stencil choice, cap, fixed-frame observation, or neighbour diffusion alone |
 | Current implementation status | unsupported as a natural reciprocal attractor under tested conditions |
 | Wider Lineum status | unresolved; not universally falsified |
-| Next consequential step | mandatory neutral owner-intuition gate; no mechanism selection, tuning, or Stage B execution before the owner's response |
+| Next consequential step | `Q2-PV1`: verify the canonical perturbation's effect on the declared `sum(|psi|^2) + sum(phi)` ledger across all 28 frozen pre-states before selecting or judging a conserving repair |
 
-Registered repair families remain unselected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. `Q2-SA1` was an accounting discriminator between existing mechanisms, not a selected repair and not a production-equation change.
+Registered repair families remain unselected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. `Q2-SA1` was an accounting discriminator between existing mechanisms, not a selected repair and not a production-equation change. `Q2-PV1` is likewise a test-validity audit, not a replacement mechanism.
 
 ## 8. Attributed intuition and hypothesis register
 
@@ -745,7 +747,158 @@ Every checker case again receives `unpaired_source_dominated`. None reaches full
 **Evidence level:** `robust_within_tested_domain` for this mechanism-location result. The one-at-a-time interventions also support the bounded causal localization, but the result is not promoted to a universal Lineum mechanism or real-world physics claim.  
 **Real-physics relation:** none established.
 
-This is a verified decision-relevant negative for the active Q2 discriminator. Under the mandatory workflow, it opens the owner-intuition gate before any replacement mechanism may be chosen.
+This is a verified decision-relevant negative for the active Q2 discriminator. Under the mandatory workflow, it opened the owner-intuition gate before any replacement mechanism could be chosen.
+
+### 8.16 Owner response after verified `Q2-SA1-A`
+
+The project owner did not propose a new replacement mechanism at this gate. Instead, the owner asked the agent, translated from Czech:
+
+> What do you think is missing?
+
+The agent answered with explicitly agent-generated hypotheses: first a genuinely paired debit/credit path between the existing tracked states; second, only if that minimal existing-state route proved insufficient, an additional direction/relative-phase or conjugate exchange state; and third, only later, more complex spatial or new-field variants. Because these candidates originated in the agent's answer, they are **not** independent owner intuition and must never be attributed to Tomáš or Káťa.
+
+The owner then gave the following scope and continuation directive, translated from Czech:
+
+> Okay. Then please continue. But keep strictly to the report's three questions and do not diverge from them. The goal is to solve all three.
+
+**Provenance:** Tomáš Tříska, project owner, 2026-08-07.  
+**Status:** workflow and scope authorization; no new owner-generated scientific mechanism.  
+**Evidence status:** not scientific evidence.  
+**Scope consequence:** Q1, Q2, and Q3 remain the only controlling objectives. Agent-generated repair candidates may be tested only when a cheaper validity audit does not block them. No result in this section changes the scientific answer to any question.
+
+### 8.17 `Q2-PV1` preregistration — perturbation-ledger validity audit
+
+**Question:** Q2 only.  
+**Purpose:** verify whether the exact canonical perturbation is compatible with judging a future closed or ledger-conserving return mechanism against the same pre-perturbation full state.  
+**Production equation change:** none.  
+**Parameter tuning:** none.  
+**New field:** none.  
+**Q1 impact:** none.  
+**Q3 impact:** none.  
+**Current Core snapshot:** `develop` HEAD at discovery `7e6d5688638f822a81c98290c16cc97f3a21979f`; `lineum_core/math.py` Git blob `bb877021810691223a0eb960a45493a2e351112a`.  
+**Frozen localized source:** `research/runners/lineum_b4_saturation_localized_l1.py`, Git blob `1598faf0f39e056c1684f767c2554edc63283ca4`, source SHA-256 `96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd`.
+
+#### 8.17.1 Exact source-level perturbation
+
+After the original `5000` primary updates, the canonical runner leaves `phi` untouched and modifies only `psi`:
+
+```text
+psi_after = 1.5 * psi_before    where radius <= 2
+psi_after = 0.5 * psi_before    where 3 <= radius <= 5
+psi_after = psi_before          elsewhere
+phi_after = phi_before          everywhere
+```
+
+This is one **mixed radial amplitude perturbation**: a central boost and an annular suppression applied simultaneously. It is not two separately executed positive and negative perturbation branches.
+
+For the implementation-defined quantities
+
+```text
+E_inner   = sum(|psi|^2) over radius <= 2
+E_annulus = sum(|psi|^2) over 3 <= radius <= 5
+E_outer   = sum(|psi|^2) elsewhere
+E_psi     = E_inner + E_annulus + E_outer
+P_phi     = sum(phi)
+L         = E_psi + P_phi
+```
+
+the perturbation implies analytically:
+
+```text
+E_psi_after = 2.25 * E_inner + 0.25 * E_annulus + E_outer
+Delta_E_psi = E_psi_after - E_psi_before
+            = 1.25 * E_inner - 0.75 * E_annulus
+Delta_P_phi = 0
+Delta_L     = Delta_E_psi
+```
+
+`L` is only an implementation-defined accounting quantity. This report does not call it physical energy.
+
+#### 8.17.2 Exploratory observation already seen before preregistration
+
+The source-level issue was noticed only after the verified Stage A negative and after the agent-generated repair discussion. Therefore this preregistration is **not outcome-blind** with respect to the existence of a possible perturbation-ledger mismatch.
+
+Unsupported-runtime exploratory calculations were already inspected before this section was frozen:
+
+- on the unevolved normalized Gaussian initializer, the same radial mask appeared to increase `sum(|psi|^2)` by roughly `24%`;
+- on the eight actual Stage A pre-perturbation states, a local NumPy `2.3.5` diagnostic suggested that the perturbation instead decreases `sum(|psi|^2)` by roughly `2.05%` to `3.63%` depending on case;
+- a broader exploratory replay suggested negative changes in `26 / 28` original cases and zero change in two degenerate cases.
+
+These observations are **hypothesis-generating only**. They were not executed in the repository-supported NumPy `<2.0` environment, were not retained as a preregistered primary, and must not be used as confirmatory evidence. Their state-dependent sign is itself a warning against inferring the official result from the initializer alone.
+
+#### 8.17.3 Frozen confirmatory Stage A audit
+
+`Q2-PV1-A` must use all original `28` localized cases, not a selected subset:
+
+```text
+grid = 32 x 32, periodic
+primary horizon = 5000 exact canonical updates
+stencils = LAP4, LAP8
+phi0 = 0, 1
+lanes = all seven original localized-L1 lanes
+noise = disabled
+pre-state = exact state immediately before the canonical perturbation
+recovery updates = none in Stage A
+```
+
+For every case the retained primary must report:
+
+1. case key, finite status, primary reset count, `psi`-cap contacts, and `phi`-cap contacts;
+2. `E_inner`, `E_annulus`, `E_outer`, `E_psi_before`, and `P_phi_before`;
+3. direct-array `E_psi_after` after applying the exact canonical perturbation while leaving `phi` unchanged;
+4. direct `Delta_E_psi`, direct `Delta_L`, and normalized changes relative to both `E_psi_before` and `L_before`;
+5. analytic `Delta_E_psi = 1.25 E_inner - 0.75 E_annulus`;
+6. analytic-versus-direct discrepancy;
+7. `abs(Delta_E_psi / E_psi_before) / 0.05`, which reports the perturbation shift as a fraction of the already frozen `5%` `psi`-energy recovery tolerance without creating a new post-hoc materiality threshold.
+
+The direct and analytic paths agree only if:
+
+```text
+abs(direct_delta - analytic_delta)
+<= 1e-10 * max(1, abs(direct_delta), abs(analytic_delta))
+```
+
+A case is `ledger_neutral_within_numeric_tolerance` only if:
+
+```text
+abs(Delta_L) <= 1e-10 * max(1, abs(L_before))
+```
+
+No larger threshold may be introduced after the output is seen merely to call a nonzero perturbation neutral.
+
+The primary must retain ordinary JSON under `research/lineum-public-tolog-b4/`. A separate checker must not import the primary decision function; it must independently recompute the analytic identity and comparison from the retained sufficient statistics, require the exact `28`-case key set, and fail closed on a numeric or categorical mismatch. The official retained execution must use the repository-supported dependency range and pass all relevant frozen localized and new `Q2-PV1` regression tests before the scientific command runs.
+
+#### 8.17.4 Meaning of possible outcomes
+
+- **All 28 cases neutral within the frozen numerical threshold:** the perturbation-ledger concern is not supported in the frozen localized domain; the next Q2 discriminator may proceed to the minimal existing-state reciprocal-pairing repair without adding a new state.
+- **At least one case non-neutral:** the current perturbation is not ledger-neutral for every frozen case. This does not invalidate the already verified Stage A diagnosis of the current equation, and it does not make Q2 positive. Before a conserving repair is judged, a ledger-neutral perturbation control must be run so that failure of the repair is not conflated with starting on a different conserved-ledger surface.
+- **Analytic/direct disagreement or incomplete key set:** technical/methodological failure; no scientific conclusion and no repair selection.
+
+Even if `Delta_L` is nonzero, the existing approximate recovery classifier is not mathematically impossible to satisfy merely because its `psi` total-energy tolerance is `5%`. The audit therefore must not rewrite the old negative as invalid solely from a modest nonzero ledger shift. Its role is narrower: determine whether the canonical perturbation is a fair control for a future exactly conserving repair.
+
+#### 8.17.5 Frozen conditional ledger-neutral control design
+
+If `Q2-PV1-A` confirms any non-neutral case, the next methodological control is preregistered now but **must not execute until the Stage A result is retained and this report is updated**.
+
+The control keeps the same central boost and the same two radial regions while changing only the annular factor so that global `sum(|psi|^2)` is preserved exactly and `phi` remains unchanged:
+
+```text
+a = 1.5
+b_squared = 1 - (a^2 - 1) * E_inner / E_annulus
+          = 1 - 1.25 * E_inner / E_annulus
+b = sqrt(b_squared)
+
+psi_control = a * psi_before    where radius <= 2
+psi_control = b * psi_before    where 3 <= radius <= 5
+psi_control = psi_before        elsewhere
+phi_control = phi_before        everywhere
+```
+
+The factor is determined entirely from the frozen pre-state, before recovery outcome inspection. If `E_annulus <= 0` or `b_squared < 0`, that case is `control_unavailable`; no clipping, absolute value, coefficient tuning, or alternative formula may rescue it after inspection.
+
+This control does not claim to be the physically correct perturbation. It is a methodological counterfactual that preserves the same global `psi` ledger while retaining a central-amplification/annular-suppression geometry. Its later comparison may change only the interpretation of the Q2 test, not establish real-world physics.
+
+No paired-feedback repair, phase/conjugate extension, Káťa-derived compaction mechanism, Stage B spatial combination, or new field may be selected on the basis of the unsupported exploratory diagnostics. `Q2-PV1-A` closes this audit first.
 
 ## 9. Preserved failure and publication chronology
 
@@ -767,15 +920,17 @@ The comparison-layer repair was then implemented exactly within the scope frozen
 
 The second supported-runtime checker then passed the same `25 / 25` gate, completed the independent eight-case calculation and comparison, and returned exact agreement with the primary: zero numeric mismatches, zero categorical mismatches, and zero maximum numeric difference across the frozen comparison surface. The result is retained as ordinary JSON; no ZIP or workflow artifact was uploaded. The one-use workflow was removed in commit `1313dc5d5e701ac9bbecade123b178d1585f2112`. The artifact manifest was updated in commit `23a3d5e8a6b1011380054e9331bb0920b29f4a71` to index the Stage A primary, technical failures, regression receipts, successful checker, and restored plain-source state.
 
+The post-Stage-A source audit then established from the canonical source that the perturbation itself applies a `1.5` central `psi` multiplier and `0.5` annular `psi` multiplier while leaving `phi` unchanged. Unsupported-runtime diagnostics were inspected before `Q2-PV1` preregistration and are preserved only as exploratory motivation in Section 8.17.2. They are not retained scientific evidence. No replacement mechanism was executed before `Q2-PV1` was frozen.
+
 The `Q2-O1` observer result is retained compactly in the repository and fully identified by hash. Its exact local observer source, tests, and full result remain hash-addressed publication debt. This does not affect the completed `Q2-SA1`, whose canonical localized harness, instrumentation, executor, protocol receipt, primary result, independent checker, checker tests, failure receipts, regression receipts, and final independent result are readable and committed.
 
 ## 10. Claims explicitly not established
 
-This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` energy cycle; scalar-potential memory; a causal disk mechanism; a universal absence of moving or rotating frames; a universal spatial-accounting mechanism beyond the frozen Stage A domain; the correct replacement mechanism; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
+This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` energy cycle; scalar-potential memory; a causal disk mechanism; a universal absence of moving or rotating frames; a universal spatial-accounting mechanism beyond the frozen Stage A domain; the correct replacement mechanism; ledger neutrality or non-neutrality of the canonical perturbation in the supported runtime before `Q2-PV1-A` executes; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
 
 The independently reproduced Stage A result establishes only the bounded implementation-level statement that, under the frozen test conditions and declared accounting, the observed positive `psi` gain is dominated by unpaired gain rather than reciprocal incoming neighbour transport and does not produce full-state return.
 
-## 11. `Q2-SA1` completion and owner-intuition gate
+## 11. `Q2-SA1` completion and `Q2-PV1` gate
 
 `Q2-SA1-A` is complete for the frozen Stage A domain.
 
@@ -800,13 +955,16 @@ Completed:
 17. the second supported-runtime regression gate passed the entire four-file suite `25 / 25`;
 18. a fresh second scientific checker again passed `25 / 25`, independently recomputed all eight cases, and returned `passed = true`, zero numeric mismatches, zero categorical mismatches, zero maximum numeric difference, and no Stage B candidate;
 19. the successful plain checker JSON is committed at `fbb5caf7fb89aef30439de14e927c51a1d5a0ee2` and indexed in the updated artifact manifest;
-20. the one-use scientific checker workflow was removed after the result became durable; no workflow artifact or ZIP was uploaded.
+20. the one-use scientific checker workflow was removed after the result became durable; no workflow artifact or ZIP was uploaded;
+21. the owner responded to the verified negative without proposing a new independent mechanism and explicitly authorized continued work under the unchanged three-question scope;
+22. exact source inspection identified the canonical perturbation-ledger compatibility issue before any replacement equation was executed;
+23. `Q2-PV1-A` and its conditional ledger-neutral control are frozen in Section 8.17 before a supported-runtime confirmatory result.
 
 Stage B combinations `S4`–`S7` remain dormant because the preregistered Stage A gate was not met. They must not be launched merely to search for a better answer.
 
-The independently reproduced negative is decision-relevant, so the mandatory owner-intuition gate is now **OPEN**. No replacement mechanism, new coefficient tuning, broader Q2 experiment, Káťa-derived formalization, or Stage B combination may be selected until the project owner's new neutral response is recorded separately from agent-generated hypotheses and experimental evidence.
+The verified `Q2-SA1-A` negative opened the owner-intuition gate. Section 8.16 records the owner's response and the agent-generated suggestions separately. Because the owner supplied no new mechanism, nothing from the agent's answer is attributed to the owner. The conversational hard stop is lifted by the owner's response and explicit continuation directive, but replacement-mechanism selection remains uncommitted while the cheaper `Q2-PV1` validity audit is open.
 
-The broader retained periodic spatial-accounting matrix remains dormant behind that gate:
+The broader retained periodic spatial-accounting matrix remains dormant:
 
 ```text
 mechanism lanes:
@@ -833,8 +991,10 @@ A spatial mechanism may change the Question 2 answer only if full state returns 
 
 Káťa's `K-Q2` and `K-Q3` candidates remain dormant until a later authorized preregistration maps one declared energy/compactness observable directly to Question 2 or 3. Do not initiate general research on atoms, melting, matter, gravity, or cosmology inside this report.
 
+The immediate next scientific action is only `Q2-PV1-A`. Q1 and Q3 remain active controlling goals rather than abandoned side topics: after the smallest Q2 validity chain is closed, programme-level prioritization must continue across all three questions rather than allowing Q2 to expand indefinitely.
+
 ## 12. Version history and handoff
 
-Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction. `0.14.0` completed the scope-limited historical retrieval and preregistered `Q2-O1`. `0.15.0` executed `Q2-O1`, found `0 / 28` classification changes and `0 / 28` Q2-positive cases, and reopened the mandatory owner-intuition gate. `0.16.0` recorded the owner's neutral authorization for agent candidate generation, ranked spatial flow/accounting as the cheapest active discriminator, and locked `Q2-SA1` Stage A. `0.16.1` recovered the exact historical runner/checker/tests byte-for-byte and passed the frozen suite `9 / 9`; `0.16.2` corrected one unsupported wording detail. `0.17.0` closed the canonical source-publication blocker, recorded the committed spatial-accounting instrumentation, and froze the exact accounting/classification/near-return/two-stencil gates before an official Stage A result. `0.18.0` recorded the supported-runtime Stage A primary after an `18 / 18` test gate, retained all eight decision rows and accounting receipts, found `8 / 8` primary `unpaired_source_dominated` classifications, no full-state or near-return case, and no Stage B candidate, and explicitly withheld the mechanism verdict and owner gate pending independent verification. `0.19.0` froze the independently implemented checker after the primary, recorded its source and test identities, preserved the pre-execution technical loader failure and correction, froze numeric and categorical comparison tolerances, and authorized only the supported-runtime checker execution next. `0.19.1` records that the first supported-runtime checker attempt passed all `24 / 24` tests but failed before comparison output because the compact primary omitted a zero-valued disabled-stage key expected by the comparison layer; it preserves the failure as a technical non-result and freezes the narrow schema-normalization repair without changing any scientific rule. `0.19.2` records the exact repair, the connector's sequential test/source publication with no science between, one failed synthetic-fixture regression as a technical non-result, the fixture-only correction, and a clean `25 / 25` supported-runtime regression pass before any second scientific checker execution. `0.20.0` records the fresh second supported-runtime checker after another `25 / 25` gate, exact primary/checker agreement with zero numeric and categorical mismatches, no Stage B candidate, durable plain result retention, one-use workflow removal, manifest repair, and reopening of the owner-intuition gate. Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain and now has an independently reproduced Stage A mechanism-location diagnosis.
+Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction. `0.14.0` completed the scope-limited historical retrieval and preregistered `Q2-O1`. `0.15.0` executed `Q2-O1`, found `0 / 28` classification changes and `0 / 28` Q2-positive cases, and reopened the mandatory owner-intuition gate. `0.16.0` recorded the owner's neutral authorization for agent candidate generation, ranked spatial flow/accounting as the cheapest active discriminator, and locked `Q2-SA1` Stage A. `0.16.1` recovered the exact historical runner/checker/tests byte-for-byte and passed the frozen suite `9 / 9`; `0.16.2` corrected one unsupported wording detail. `0.17.0` closed the canonical source-publication blocker, recorded the committed spatial-accounting instrumentation, and froze the exact accounting/classification/near-return/two-stencil gates before an official Stage A result. `0.18.0` recorded the supported-runtime Stage A primary after an `18 / 18` test gate, retained all eight decision rows and accounting receipts, found `8 / 8` primary `unpaired_source_dominated` classifications, no full-state or near-return case, and no Stage B candidate, and explicitly withheld the mechanism verdict and owner gate pending independent verification. `0.19.0` froze the independently implemented checker after the primary, recorded its source and test identities, preserved the pre-execution technical loader failure and correction, froze numeric and categorical comparison tolerances, and authorized only the supported-runtime checker execution next. `0.19.1` records that the first supported-runtime checker attempt passed all `24 / 24` tests but failed before comparison output because the compact primary omitted a zero-valued disabled-stage key expected by the comparison layer; it preserves the failure as a technical non-result and freezes the narrow schema-normalization repair without changing any scientific rule. `0.19.2` records the exact repair, the connector's sequential test/source publication with no science between, one failed synthetic-fixture regression as a technical non-result, the fixture-only correction, and a clean `25 / 25` supported-runtime regression pass before any second scientific checker execution. `0.20.0` records the fresh second supported-runtime checker after another `25 / 25` gate, exact primary/checker agreement with zero numeric and categorical mismatches, no Stage B candidate, durable plain result retention, one-use workflow removal, manifest repair, and reopening of the owner-intuition gate. `0.21.0` records the owner's strict Q1–Q3 continuation directive without treating the agent's preceding repair suggestions as owner intuition, records the exact canonical mixed radial perturbation and its ledger identity, preserves all pre-preregistration diagnostics as exploratory only, and freezes `Q2-PV1-A` plus the conditional ledger-neutral radial control before any replacement mechanism is executed. Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain while the perturbation-validity audit is open.
 
-A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized independent checker as already executed exactly once, preserve both owner/Káťa attributions, treat `Q2-O1` as closed for the exact quarter-turn/periodic-translation/global-phase observer set, use the published exact localized harness and committed accounting instrumentation/executor, preserve the frozen Stage A decision rules, treat `q2-spatial-accounting-stage-a-check.json` as the successful independent Stage A checker, preserve checker attempt 1 and regression attempt 1 as technical non-results, retain only plain readable evidence, keep Stage B dormant, and **stop at the open owner-intuition gate until the project owner responds**. No replacement mechanism may be selected before that response.
+A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized independent checker as already executed exactly once, preserve both owner/Káťa attributions, treat `Q2-O1` as closed for the exact quarter-turn/periodic-translation/global-phase observer set, use the published exact localized harness and committed accounting instrumentation/executor, preserve the frozen Stage A decision rules, treat `q2-spatial-accounting-stage-a-check.json` as the successful independent Stage A checker, preserve checker attempt 1 and regression attempt 1 as technical non-results, retain only plain readable evidence, keep Stage B dormant, and execute only the preregistered `Q2-PV1-A` perturbation-ledger audit next. Do not treat the unsupported-runtime exploratory perturbation numbers as confirmatory evidence. Do not select a replacement mechanism until `Q2-PV1` has resolved whether the canonical perturbation is compatible with judging a conserving repair. Keep every subsequent step strictly mapped to Q1, Q2, or Q3; the programme goal is to close all three questions, not to expand any one question indefinitely.
