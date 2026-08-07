@@ -64,7 +64,6 @@ NUMERIC_FIELDS = [
     "relative_delta_epsi",
     "relative_delta_ledger",
     "analytic_delta_epsi",
-    "analytic_direct_discrepancy",
     "absolute_relative_epsi_shift_over_frozen_5pct_tolerance",
 ]
 CATEGORICAL_FIELDS = [
@@ -235,6 +234,8 @@ def check_payload(payload: dict[str, Any]) -> dict[str, Any]:
     seen: set[str] = set()
     numeric_mismatches: list[dict[str, Any]] = []
     categorical_mismatches: list[dict[str, Any]] = []
+    analytic_agreement_failures: list[dict[str, Any]] = []
+    residual_diagnostics: list[dict[str, Any]] = []
     derived_rows: list[dict[str, Any]] = []
     max_abs = 0.0
     max_rel = 0.0
@@ -270,6 +271,37 @@ def check_payload(payload: dict[str, Any]) -> dict[str, Any]:
                     }
                 )
 
+        stored_direct = float(row[col["direct_delta_epsi"]])
+        stored_analytic = float(row[col["analytic_delta_epsi"]])
+        stored_residual = float(row[col["analytic_direct_discrepancy"]])
+        independent_residual = float(derived["analytic_direct_discrepancy"])
+        stored_analytic_tolerance = NUMERIC_RTOL * max(
+            1.0, abs(stored_direct), abs(stored_analytic)
+        )
+        stored_analytic_pass = abs(stored_residual) <= stored_analytic_tolerance
+        independent_analytic_pass = bool(derived["analytic_agreement"])
+        residual_diagnostics.append(
+            {
+                "case_key": key,
+                "stored_residual": stored_residual,
+                "independent_residual": independent_residual,
+                "stored_analytic_tolerance": stored_analytic_tolerance,
+                "stored_analytic_pass": stored_analytic_pass,
+                "independent_analytic_pass": independent_analytic_pass,
+            }
+        )
+        if not stored_analytic_pass or not independent_analytic_pass:
+            analytic_agreement_failures.append(
+                {
+                    "case_key": key,
+                    "stored_residual": stored_residual,
+                    "independent_residual": independent_residual,
+                    "stored_analytic_tolerance": stored_analytic_tolerance,
+                    "stored_analytic_pass": stored_analytic_pass,
+                    "independent_analytic_pass": independent_analytic_pass,
+                }
+            )
+
         for field in CATEGORICAL_FIELDS:
             stored = row[col[field]]
             expected = derived[field]
@@ -300,7 +332,10 @@ def check_payload(payload: dict[str, Any]) -> dict[str, Any]:
         row["ledger_neutral_within_numeric_tolerance"] is False
         for row in derived_rows
     )
-    analytic_pass = all(row["analytic_agreement"] for row in derived_rows)
+    analytic_pass = (
+        all(row["analytic_agreement"] for row in derived_rows)
+        and not analytic_agreement_failures
+    )
     all_neutral = non_neutral_count == 0
     outcome = (
         "technical_or_methodological_failure"
@@ -338,6 +373,7 @@ def check_payload(payload: dict[str, Any]) -> dict[str, Any]:
         and key_set_pass
         and not numeric_mismatches
         and not categorical_mismatches
+        and not analytic_agreement_failures
         and analytic_pass
     )
     return {
@@ -350,12 +386,15 @@ def check_payload(payload: dict[str, Any]) -> dict[str, Any]:
         "duplicate_keys": duplicate_keys,
         "numeric_mismatch_count": len(numeric_mismatches),
         "categorical_mismatch_count": len(categorical_mismatches),
+        "analytic_agreement_failure_count": len(analytic_agreement_failures),
         "maximum_absolute_difference": max_abs,
         "maximum_relative_difference": max_rel,
         "compare_rtol": COMPARE_RTOL,
         "decision_numeric_rtol": NUMERIC_RTOL,
         "numeric_mismatches": numeric_mismatches,
         "categorical_mismatches": categorical_mismatches,
+        "analytic_agreement_failures": analytic_agreement_failures,
+        "residual_diagnostics": residual_diagnostics,
         "independent_summary": derived_summary,
         "primary_summary": primary_summary,
         "source_binding": payload.get("source_execution", {}),
