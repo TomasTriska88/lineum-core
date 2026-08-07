@@ -19,6 +19,33 @@
       "bytes": 13446,
       "role": "compact Q2-O1 observer-frame result across all 28 frozen cases",
       "sha256": "aefc488aee4a9422d7ca43258eea2c96a1f818e632fd6513985453ce1e0a8f99"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-protocol.json": {
+      "git_blob_sha": "d3c23ccbd0fac6d03fde270881cb49dc3e81feef",
+      "role": "Q2-SA1-A protocol and pre-outcome execution receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a.json": {
+      "canonical_verbose_payload_sha256_without_self": "02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7",
+      "commit": "87fb24568f32cd926abeab8331ad93e39ef52e1d",
+      "role": "retained Q2-SA1-A primary eight-case result"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check-attempt-1.json": {
+      "commit": "244956ae94e3a4c2b2847e8d389821537918a3d0",
+      "role": "first supported-runtime independent-checker technical failure receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-checker-regression-attempt-1.json": {
+      "commit": "935ff7e12a5fdd5f0b487d1b018dab15b19ece3e",
+      "role": "synthetic-fixture regression technical failure receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-checker-regression-pass.json": {
+      "commit": "e8e510dbe72d7d96a6283d1be5d396f6a209855a",
+      "role": "supported-runtime 25-of-25 regression validation receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check.json": {
+      "canonical_payload_sha256_without_self": "ff8ce51e1eaf9f6dfdc2dce6dd5cd4a269bf7c903cc61e875abba804fb23509d",
+      "commit": "fbb5caf7fb89aef30439de14e927c51a1d5a0ee2",
+      "git_blob_sha": "f35c10e69f24f8a10a59b3928c8f3fddfe41fd3a",
+      "role": "successful independent Q2-SA1-A eight-case checker result"
     }
   },
   "primary_input": {
@@ -26,7 +53,7 @@
     "artifact_zip_sha256": "ca9a9ca05ffe0077ec15dce87ac8309a78b7f2ec114ef84d316f4202d535350c",
     "bytes": 228809,
     "immutable_prior_report_blob": "8f08fe0da08751781e13f90496a928f89eae9d56",
-    "limitation": "The exact primary JSON remains in the recorded workflow artifact and immutable prior Git blob.",
+    "limitation": "The exact historical localized-L1 primary JSON remains identified by the recorded workflow artifact and immutable prior Git blob; no new artifact download is required for the current Q2-SA1 evidence chain.",
     "repository_copy_committed_in_this_checkpoint": false,
     "sha256": "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
     "workflow_job": 92448891365,
@@ -44,22 +71,66 @@
     "preregistration_commit": "33ff0f50fd6575c6459716d34787b96e5d35ca0a",
     "q2_positive_count": 0,
     "rerun_equal_excluding_elapsed": true,
-    "source_limitation": "The exact observer runner and its test file were hash-recorded and executed locally but were not published as plain repository files in this checkpoint. The compact deterministic result is retained; the full local output is identified by byte count and SHA-256.",
+    "source_limitation": "The exact observer runner and its test file were hash-recorded and executed locally but were not published as plain repository files in that checkpoint. The compact deterministic result is retained; the full local output is identified by byte count and SHA-256.",
     "tests": "14 passed",
     "tests_sha256": "5914a608ac265b3d59b1e0fdd605e4ae6f8a88cab8c1360046f9b0092c4e7705"
   },
-  "schema": "lineum-public-tolog-b4-readable-artifacts/2",
+  "q2_spatial_accounting_stage_a": {
+    "case_count": 8,
+    "checker": {
+      "canonical_payload_sha256_without_self": "ff8ce51e1eaf9f6dfdc2dce6dd5cd4a269bf7c903cc61e875abba804fb23509d",
+      "categorical_mismatch_count": 0,
+      "commit": "fbb5caf7fb89aef30439de14e927c51a1d5a0ee2",
+      "git_blob_sha": "f35c10e69f24f8a10a59b3928c8f3fddfe41fd3a",
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference": 0.0,
+      "numeric_mismatch_count": 0,
+      "passed": true,
+      "protocol_pass": true,
+      "stage_b_candidates": [],
+      "workflow_job": 92831056377,
+      "workflow_run": 31167327996
+    },
+    "environment": {
+      "numpy": "1.26.4",
+      "python": "3.11.15",
+      "pytest": "9.1.1"
+    },
+    "primary": {
+      "canonical_verbose_payload_sha256_without_self": "02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7",
+      "full_state_recovery_count": 0,
+      "mechanism_counts": {
+        "unpaired_source_dominated": 8
+      },
+      "near_return_count": 0,
+      "stage_b_candidates": []
+    },
+    "repair_history": {
+      "checker_repair_blob_sha": "700a5528a56e6fc86e380004804566ad0c61dec3",
+      "final_test_blob_sha": "624f21114e8206d78653fcba64dd3689fbc244ad",
+      "first_checker_attempt": "technical_non_result",
+      "first_regression_attempt": "synthetic_fixture_technical_non_result",
+      "supported_runtime_regression": "25 passed"
+    },
+    "scientific_status": "independently_reproduced_within_frozen_stage_a_domain",
+    "test_gate": "25 passed in 1.01s",
+    "workflow_artifact_uploaded": false
+  },
+  "schema": "lineum-public-tolog-b4-readable-artifacts/3",
   "source_recovery": {
     "archive_tar_bytes": 153600,
     "archive_tar_sha256": "587df51f7497ac26d82732716ba3939e57c4c4bdecd663ce6d21d04f70ffe2fd",
     "archive_xz_bytes": 34756,
     "archive_xz_sha256": "171f2862469b19cc0aa003f173fb87d093c1c960c6651bfb493f72a09140f36f",
     "checker_sha256": "3dfe7f6aa9f4da81c523f1c207c08bc0def175f827658d73aaa83e21df035031",
-    "limitation": "Recovered exact sources passed 9 frozen tests locally, but the connector payload boundary prevented safe atomic publication of the large plain Python files. No truncated source was referenced. The current small loader remains dependent on an archive no longer embedded in the readable report and is not a standalone reproducibility substitute.",
-    "plain_source_copies_committed_in_this_checkpoint": false,
+    "limitation": "Superseded: the exact recovered localized runner, checker, and tests were later published as ordinary plain Python sources in commit 914bcc528fc2471a0bdbef8faf59e08fe65ac3b2. The historical encoded archive remains provenance only and is not required by Q2-SA1.",
+    "plain_source_commit": "914bcc528fc2471a0bdbef8faf59e08fe65ac3b2",
+    "plain_source_copies_committed": true,
+    "runner_git_blob_sha": "1598faf0f39e056c1684f767c2554edc63283ca4",
     "runner_sha256": "96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd",
+    "test_git_blob_sha": "e4a4b450e52ad3f8fa15d69dfbdb00505be67dab",
     "test_sha256": "95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec"
   },
   "source_report": "research/lineum-public-tolog-galactic-shape-b4.md",
-  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1 and Q2 observer verification"
+  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, and Q2 spatial-accounting verification"
 }
