@@ -1,0 +1,39 @@
+{
+  "schema": "lineum-b4-q2-spatial-accounting-stage-a-check-attempt/1",
+  "stage": "Q2-SA1-A",
+  "attempt": 1,
+  "status": "technical_comparison_failure_no_retained_scientific_result",
+  "source_commit": "10bdd611ff779d947125653d9bcddb7a05d190c6",
+  "workflow_run_id": 31160367786,
+  "workflow_job_id": 92809088109,
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "runner_image": "ubuntu-24.04 / 20260804.265.1"
+  },
+  "test_gate": {
+    "passed": true,
+    "tests": "24 passed in 0.96s"
+  },
+  "checker_execution": {
+    "independent_eight_case_recomputation_was_invoked": true,
+    "comparison_completed": false,
+    "checker_json_written": false,
+    "scientific_output_retained": false,
+    "exception": "KeyError: 'phi_gradient_flow_global_signed'",
+    "exception_location": "compare_rows -> primary accounting field lookup",
+    "first_missing_compact_primary_field": "accounting.phi_gradient_flow_global_signed",
+    "cause_classification": "primary/checker comparison-schema mismatch",
+    "cause_detail": "The compact retained primary intentionally omitted some zero-valued stage-accounting keys in lanes where the corresponding spatial stage was disabled, while the checker comparison assumed every compared key was physically present in every primary row. The failure occurred before numeric or categorical comparison results were produced."
+  },
+  "frozen_science_impact": {
+    "numeric_mismatch_count": null,
+    "categorical_mismatch_count": null,
+    "mechanism_verdict": null,
+    "stage_b_verdict": null,
+    "owner_intuition_gate_open": false,
+    "interpretation": "No scientific agreement or disagreement may be inferred from this attempt. The next permitted action is a comparison-layer schema correction that preserves all frozen scientific equations, thresholds, lanes, observers and tolerances."
+  },
+  "workflow_artifact_uploaded": false
+}
