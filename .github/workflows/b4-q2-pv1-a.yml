@@ -1,6 +1,11 @@
 name: B4 Q2 PV1 Audit
 
 'on':
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/b4-q2-pv1-a.yml
   workflow_dispatch:
 
 permissions:
