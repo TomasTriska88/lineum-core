@@ -107,6 +107,14 @@ def comparison_rows():
             p["stencil"] = stencil
             p["lane"] = lane.name
             p["pre"] = base["pre"].copy(); p["accounting"] = base["accounting"].copy(); p["mechanism"] = base["mechanism"].copy(); p["recovery"] = base["recovery"].copy()
+            if not lane.flow:
+                p["accounting"]["positive_local_phi_gradient_flow"] = 0.0
+                p["accounting"]["phi_gradient_flow_global_signed"] = 0.0
+            if not lane.psi_diffusion:
+                p["accounting"]["positive_local_psi_diffusion"] = 0.0
+                p["accounting"]["transport_positive"] = 0.0
+                p["accounting"]["transport_global_signed"] = 0.0
+            p["accounting"]["unpaired_positive"] = p["accounting"]["positive_local_feedback"] + p["accounting"]["positive_local_phi_gradient_flow"]
             c = {k: (v.copy() if isinstance(v, dict) else v) for k, v in p.items()}
             c["pre"] = p["pre"].copy(); c["accounting"] = p["accounting"].copy(); c["mechanism"] = p["mechanism"].copy(); c["recovery"] = p["recovery"].copy()
             primary.append(p); checker.append(c)
