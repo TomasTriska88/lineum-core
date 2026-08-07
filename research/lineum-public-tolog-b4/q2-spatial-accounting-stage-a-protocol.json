@@ -1,0 +1,61 @@
+{
+  "schema": "lineum-b4-q2-spatial-accounting-stage-a-protocol/1",
+  "stage": "Q2-SA1-A",
+  "status": "frozen_before_official_outcome",
+  "evidence_cutoff": "2026-08-07",
+  "active_report": {
+    "path": "research/lineum-public-tolog-galactic-shape-b4.md",
+    "version": "0.17.0",
+    "blob_sha": "e862b205b801fc615d89ed404ef3e7b10f056459",
+    "preregistration_commit": "dd1a4e0a04b225b745811e0eed828070b861dc3b"
+  },
+  "canonical_localized_runner": {
+    "path": "research/runners/lineum_b4_saturation_localized_l1.py",
+    "git_blob_sha": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "sha256": "96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd"
+  },
+  "instrumentation": {
+    "path": "research/runners/lineum_b4_q2_spatial_accounting.py",
+    "git_blob_sha": "ec35529c21eaaef6004de0bcd72fc04ac97d4743",
+    "commit": "96a5641221a2fc31fc001683863039be74a5f9e1"
+  },
+  "stage_a_executor": {
+    "path": "research/runners/lineum_b4_q2_spatial_accounting_stage_a.py",
+    "git_blob_sha": "4e65f612d3478698b4e1c7a2dd56a952219c7eea",
+    "sha256": "2c5a6681339edc54ea1e7a829a60a26967774c654d7b248228d82a4c8126946e"
+  },
+  "stage_a_tests": {
+    "path": "tests/research/test_lineum_b4_q2_spatial_accounting_stage_a.py",
+    "git_blob_sha": "95e7db49e99fea19eb775da571f42756b9b90ff7",
+    "sha256": "b8bc216e669d3f1ee054f9feb4fb02596e40bec05a1ebc855ebf768bc24f9bd9"
+  },
+  "frozen_decision_constants": {
+    "closure_rtol": 1e-10,
+    "positive_rtol": 1e-12,
+    "near_return_factor": 2.0,
+    "stencils": ["LAP4", "LAP8"],
+    "lanes": ["L0", "S1", "S2", "S3"],
+    "transport_global_noncreating_limit": "1e-10 * max(1, abs(pre_global_epsi))",
+    "transport_credit": "positive local psi_diffusion only when accumulated global psi_diffusion epsi contribution is <= the frozen noncreating limit",
+    "unpaired_positive": "positive local feedback + positive local phi_gradient_flow",
+    "stage_b_gate": "same lane must be transport_accounted and near_return under both LAP4 and LAP8"
+  },
+  "local_pre_execution_validation": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pytest": "9.0.2",
+    "py_compile": "passed",
+    "pure_decision_tests": "5 passed",
+    "repository_layout_import_test": "passed",
+    "supported_runtime": false,
+    "reason": "repository requires numpy>=1.24,<2.0.0 and no compatible NumPy distribution is available from the local offline package source"
+  },
+  "chronology": {
+    "first_executor_commit": "5f32cbdd6a64c6d3c40336f4ea84fe65a80206c9",
+    "first_test_commit": "34677cd921faa3461008cb9aaf8a675b69a50fa4",
+    "test_import_path_correction_commit": "4ba23b733959acae45d77ef22df7b3484e899ace",
+    "note": "The connector created sequential commits instead of one atomic multi-file checkpoint. No scientific Stage A execution occurred between them. The test import correction changed only repository path resolution; all scientific constants and decision rules remained unchanged."
+  },
+  "official_outcome_inspected": false,
+  "q2_positive_by_stage_a": false
+}
