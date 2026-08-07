@@ -1,11 +1,11 @@
 # Ancient Texts as Dynamic-Boundary, Protocol, Reconstruction, and Accounting Hypothesis Generators for Lineum
 
-**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, and preregistration; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
-**Version:** 0.3.0  
+**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, preregistration, and thread-independent missing-piece research checkpoint; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
+**Version:** 0.3.1  
 **Evidence cutoff:** 2026-08-07  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Core snapshot at this checkpoint:** `914bcc528fc2471a0bdbef8faf59e08fe65ac3b2`  
+**Core snapshot at this checkpoint:** `eb976b97a233ac2c4d83eac53c290aab0d137e4e`  
 **Current runtime source:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`  
 **Current profile source:** `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -17,14 +17,15 @@
 **Continuity evidence cutoff:** 2026-07-31  
 **Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
 **Immediate predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
-**Previous version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
-**Earlier version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
+**Previous version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
+**Earlier version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
+**Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
 **Related collective-object report:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Related state-reduction report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`, version 0.2.0, blob `b55bc1639fc8ed6efa7b8286e9113afa88ee298c`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, and preparation-history programme, retains the current-Core field/coupling/accounting audit, and records the first FAC0 directed-coupling checkpoint. The governing decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, or only after those fail, a genuinely missing state variable.  
-**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature?  
-**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; low that an additional independent state variable will be required; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
+**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, and preparation-history programme, retains the current-Core field/coupling/accounting audit, records the first FAC0 directed-coupling checkpoint, and adds a thread-independent research objective so the programme can be resumed from repository evidence alone. The governing decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
+**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Could the current equations be effective dynamics of a deeper generative process, and if so, can that hypothesis make a distinct falsifiable prediction rather than merely absorb residuals? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature?  
+**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
 
 ## 1. Answer first
 
@@ -77,7 +78,8 @@ The correct scientific order is therefore:
 3. test reciprocal closures and explicit finite reservoirs;
 4. test whether supplied kappa must become a dynamic state;
 5. test whether history of existing fields closes prediction;
-6. only then permit a genuinely new state variable to compete.
+6. test an effective-equation/deeper-generative comparison only if it has an explicit coarse-graining map and distinct held-out prediction;
+7. only then permit a genuinely new state variable to compete.
 ```
 
 Ancient terminology must never become field nomenclature merely because it sounds suggestive.
@@ -97,9 +99,11 @@ Version `0.1.0` is permanently preserved as Git blob `3ec1d893e4309cb2e06b97a2fc
 
 Version `0.2.0`, preserved as Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`, added the current-Core state/coupling/accounting audit, the `M0` through `M7` missing-mechanism registry, and FAC0 through FAC5 preregistration.
 
-Version `0.3.0` records the first FAC0 execution checkpoint. Source inspection supports the preregistered graph and exposes same-step indirect edges caused by update order. A separately transcribed NumPy checker reproduced the predicted response pattern and linear perturbation scaling, but the available execution environment used Python 3.13.5 with NumPy 2.3.5 while the repository requires `numpy>=1.24,<2.0.0`. A clean virtual environment could not obtain a compatible NumPy build from the available package index, and direct local repository cloning was unavailable because the execution environment could not resolve GitHub. The numerical FAC0 result is therefore retained as provisional corroboration, not as a supported-runtime Core reproduction.
+Version `0.3.0`, preserved as Git blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`, recorded the first FAC0 execution checkpoint. Source inspection supports the preregistered graph and exposes same-step indirect edges caused by update order. A separately transcribed NumPy checker reproduced the predicted response pattern and linear perturbation scaling, but the available execution environment used Python 3.13.5 with NumPy 2.3.5 while the repository requires `numpy>=1.24,<2.0.0`. A clean virtual environment could not obtain a compatible NumPy build from the available package index, and direct local repository cloning was unavailable because the execution environment could not resolve GitHub. The numerical FAC0 result is therefore retained as provisional corroboration, not as a supported-runtime Core reproduction.
 
-No negative result or source-critical restriction from versions `0.1.0` or `0.2.0` is withdrawn here.
+Version `0.3.1` adds a self-contained research objective and resume checkpoint. It records the missing-piece search order, explicitly preserves the possibility that the current equations are effective/coarse-grained rather than fundamental, and prevents that possibility from being used as an unfalsifiable rescue. It also records that a renewed disposable local checkout attempt on 2026-08-07 again failed because the execution environment could not resolve `github.com`; this repeats the known technical blocker and is not a scientific negative result.
+
+No negative result or source-critical restriction from versions `0.1.0` through `0.3.0` is withdrawn here.
 
 The broad predecessor remains the source and historical registry. This successor remains the active mechanism and preregistration report.
 
@@ -566,6 +570,26 @@ It earns consideration only if:
 
 No ancient name may be used as `X` merely to make the mapping feel complete.
 
+### `DG0` — current equations may be effective rather than fundamental
+
+This is a distinct later comparison class, not permission to invent an invisible parent universe.
+
+The current `Psi/Phi/kappa/mu` update could in principle be an effective or coarse-grained description of a deeper local generative process. `DG0` becomes scientifically admissible only if it is operationalized by:
+
+```text
+a declared lower-level state or mechanism class;
+a forward coarse-graining map from lower-level state to current Lineum observables;
+a derivation or independently frozen approximation showing how the effective update emerges;
+a new held-out prediction, scaling law, conservation/balance relation, or intervention response;
+a complexity penalty against same-layer M0-M6 alternatives;
+numerical refinement and boundary controls;
+independent reproduction.
+```
+
+Failure of same-layer accounting by itself does not support `DG0`. A deeper model that can fit any residual after the fact is unfalsifiable and must be rejected. Conversely, previous passive-boundary, copying, source-accounting, and local-`mu` negatives do **not** by themselves reject `DG0`, because they tested different mechanism classes.
+
+`DG0` must remain separate from metaphysical language such as Pleroma, higher worlds, creator layers, or souls. Ancient motifs can suggest the question `effective local description versus larger causal closure`; they cannot supply evidence that such a deeper physical layer exists.
+
 ## 17. Field-Accounting Closure preregistration
 
 The new immediate programme is `FAC` — **Field-Accounting Closure**. It is research-only and does not alter production Core.
@@ -733,7 +757,9 @@ local NumPy = 2.3.5
 repository requirement = numpy>=1.24,<2.0.0
 ```
 
-A clean virtual environment was created outside the repository. Installing `numpy>=1.24,<2.0.0` failed because the available package index exposed no compatible build for that Python environment. A direct `git clone --branch develop` into the disposable workspace also failed because the local execution environment could not resolve `github.com`.
+A clean virtual environment was created outside the repository. Installing `numpy>=1.24,<2.0.0` failed because the available package index exposed no compatible build for that Python environment. A direct `git clone --branch develop` into the disposable workspace also failed because the local execution environment could not resolve GitHub.
+
+A renewed disposable local checkout attempt on 2026-08-07 again failed at GitHub name resolution before checkout. This repeated failure is retained only as an execution receipt. It adds no scientific evidence for or against any Lineum mechanism.
 
 Classification:
 
@@ -867,15 +893,16 @@ The prior fixtures remain valid. The immediate ordering changes to maximize info
 4. `FAC3` reciprocal closure and finite reservoirs.
 5. `FAC4` dynamic scaffold.
 6. `FAC5` new-state necessity.
+7. `DG0` effective-equation/deeper-generative comparison only if it can be frozen as a distinct predictive model and not as a post-hoc hidden layer.
 
 ### Stage C — preserved observer/copying programme
 
-7. `IC1` projection-copy versus causal-state continuation.
-8. `TS1` binary-output mechanism discrimination.
-9. `EC1` internal periodicity versus external calibration.
-10. `DB1` active boundary.
-11. `PI1` protocol identity.
-12. `PH1` preparation-history equivalence failure.
+8. `IC1` projection-copy versus causal-state continuation.
+9. `TS1` binary-output mechanism discrimination.
+10. `EC1` internal periodicity versus external calibration.
+11. `DB1` active boundary.
+12. `PI1` protocol identity.
+13. `PH1` preparation-history equivalence failure.
 
 This is a reprioritization, not deletion. `IC1` remains preregistered and should resume after the more basic state/accounting question is resolved.
 
@@ -892,6 +919,7 @@ This is a reprioritization, not deletion. `IC1` remains preregistered and should
 | copying/heredity negative results | `unaffected` | no ancient motif or accounting closure creates descendants retroactively |
 | `mu` reduction-first programme | `constrains` | FAC0 shows `mu` has same-step indirect consequences but does not establish independent ontology; M6 remains mandatory |
 | current public-TOLOG Q2 accounting negative | `supports` | apparent `Psi` recovery without `Phi` debit is a live example of why component recovery is not transfer |
+| possible effective/deeper generative description | `open_but_unprivileged` | DG0 may compete only after an explicit lower-level model, coarse-graining map, and held-out discriminator exist |
 | physical particle/gravity/quantum/soul/cosmology mappings | `unaffected` | no textual motif or internal ledger establishes physical correspondence |
 
 ## 20. Failure classification
@@ -919,7 +947,7 @@ interpretation overreach.
 
 A failed observer or accounting candidate blocks that candidate. It does not prove a new field.
 
-The FAC0 dependency mismatch is classified separately as `execution_environment_not_repository_supported`; it is not a model failure.
+The FAC0 dependency mismatch and repeated GitHub DNS failure are classified separately as `execution_environment_not_repository_supported`; they are not model failures.
 
 ## 21. Frozen anti-overinterpretation rules
 
@@ -942,10 +970,12 @@ software ledger closure = physical energy conservation;
 new state variable = new substance;
 missing reciprocal debit = proof of a missing field;
 FAC0 directed response = proof of physical energy transfer;
-same-step indirect edge = independent fundamental coupling.
+same-step indirect edge = independent fundamental coupling;
+failed same-layer model = proof of a deeper universe layer;
+effective-equation language = license for an unfalsifiable hidden mechanism.
 ```
 
-## 22. Evidence classification at version 0.3.0
+## 22. Evidence classification at version 0.3.1
 
 ### 22.1 What the current implementation computes
 
@@ -966,6 +996,8 @@ No repository-supported new Core numerical experiment was completed in this vers
 
 The FAC0 standalone checker provisionally corroborated the source-level directed graph, same-step ordering effects, small-perturbation linear scaling for deterministic lanes, and stochastic-only `delta` sensitivity under matched RNG. It cannot be promoted to a supported Core reproduction because the local environment used NumPy 2.3.5 while the repository requires NumPy below 2.0 and a compatible clean environment could not be constructed from the available package index.
 
+The repeated local checkout failure on 2026-08-07 occurred before repository execution because `github.com` could not be resolved. It is an execution-environment receipt only.
+
 Inherited verified results remain binding, including:
 
 - open source-energy account;
@@ -982,15 +1014,15 @@ This is partial independence only. Both numerical transcriptions share the same 
 
 ### 22.4 Cautious interpretation
 
-The current model is under-specified as a physical resource network. FAC0 strengthens confidence in the implementation-level dependency graph but provides no evidence that the state set is physically complete or incomplete. Missing relationships, reservoirs, and dynamic boundary state remain stronger and cheaper hypotheses than a missing fundamental field.
+The current model is under-specified as a physical resource network. FAC0 strengthens confidence in the implementation-level dependency graph but provides no evidence that the state set is physically complete or incomplete. Missing relationships, reservoirs, dynamic boundary state, and history remain stronger and cheaper hypotheses than a missing fundamental field. An effective/deeper-generative description is a legitimate later scientific comparison class only when it is explicit enough to be falsified.
 
 ### 22.5 Hypotheses
 
-`M0` through `M7` and FAC1 through FAC5 remain preregistered research hypotheses/tests. FAC0 has partial evidence at the source-inspection level and provisional numerical corroboration; it has not passed the supported-runtime completion gate.
+`M0` through `M7`, `DG0`, and FAC1 through FAC5 remain preregistered research hypotheses/tests. FAC0 has partial evidence at the source-inspection level and provisional numerical corroboration; it has not passed the supported-runtime completion gate. `DG0` currently has no positive numerical evidence and is retained only as a later model class.
 
 ### 22.6 Known real physics
 
-No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement. A software dependency graph is not a physical ontology.
+No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement. A software dependency graph is not a physical ontology. Effective theories and coarse-graining are real scientific concepts, but their existence in physics does not imply that current Lineum is an effective theory of any particular deeper physical substrate.
 
 ## 23. Current verdict
 
@@ -1023,14 +1055,15 @@ new_fundamental_field_required = unproven
 missing_relationship_or_resource_state = stronger_current_hypothesis_than_missing_field
 history_as_missing_state = live_hypothesis
 stateful_dynamic_scaffold = live_hypothesis
+effective_or_deeper_generative_equation = live_but_unprivileged_hypothesis_with_no_positive_evidence
 
 next_action = recover_supported_runtime_and_replay_FAC0_before_FAC1
 IC1_status = preserved_and_queued_after_accounting_priority
 ```
 
-## 24. Source register additions for version 0.3.0
+## 24. Source register additions for version 0.3.1
 
-The complete source register from version `0.1.0` remains preserved in Git blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`. Version `0.2.0` remains preserved in Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`. The following sources and execution receipts are retained for this checkpoint.
+The complete source register from version `0.1.0` remains preserved in Git blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`. Version `0.2.0` remains preserved in Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`. Version `0.3.0` remains preserved in Git blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`. The following sources and execution receipts are retained for this checkpoint.
 
 ### Primary / translation witnesses
 
@@ -1052,7 +1085,7 @@ The complete source register from version `0.1.0` remains preserved in Git blob 
 - `requirements.txt`, blob `942f2b94b3d3f8c767451ae2d847a7b17c86d81e`, requiring `numpy>=1.24,<2.0.0`.
 - `requirements-dev.txt`, blob `7a0907e3e6c2d15400d19b536227a509910ae7e9`.
 - `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, blob `5304874451caf32313ad0e8e3c59e53958698d79`.
-- Core branch snapshot `914bcc528fc2471a0bdbef8faf59e08fe65ac3b2`; movement from earlier `10902362974a59b6bc9171ff9328e498af4ddc52` was audited and affected only the public-TOLOG B4 report, runner, checker, and test, not the current Core runtime, profiles, repository rules, or this report before the FAC0 edit.
+- Core branch snapshot before the v0.3.1 write: `eb976b97a233ac2c4d83eac53c290aab0d137e4e`.
 
 ### FAC0 local execution receipt
 
@@ -1063,6 +1096,7 @@ NumPy: 2.3.5
 repository NumPy contract: >=1.24,<2.0.0
 clean-venv compatible NumPy install: failed, no compatible distribution exposed by available index
 local git clone of develop: failed, github.com name resolution unavailable
+repeat disposable checkout attempt on 2026-08-07: failed at github.com name resolution before checkout
 production Core imported: no
 manual equations: transcribed from current math.py blob bb877021810691223a0eb960a45493a2e351112a
 ```
@@ -1080,5 +1114,179 @@ Before modifying a Core equation, adding a Core field, changing whitepaper ontol
 5. preserve the exact environment, commands, outputs, and comparison receipt in this report;
 6. execute FAC1 only if FAC0's source-inspection graph survives that replay or after any discrepancy is resolved and re-preregistered;
 7. do not introduce a physical field to repair an accounting residual until `M0` through `M6` alternatives have been tested sufficiently to justify `M7`;
-8. keep the ancient-source comparison and the physical inference separate at every checkpoint;
-9. leave Core code and whitepapers unchanged until a promotion gate is independently passed.
+8. do not promote `DG0` merely because a same-layer candidate fails; require an explicit lower-level model, coarse-graining map, and held-out discriminator first;
+9. keep the ancient-source comparison and the physical inference separate at every checkpoint;
+10. leave Core code and whitepapers unchanged until a promotion gate is independently passed.
+
+## 26. Thread-independent research objective and resume checkpoint
+
+### 26.1 Primary research objective
+
+This active report is the authoritative resume point for the current programme. A future conversation must be able to continue from this file without reconstructing intent from chat history.
+
+The scientific objective is:
+
+> Identify which genuinely missing mechanism, state description, relationship, accounting component, observer information, boundary dynamics, or effective-generative layer is required to make the current Lineum model more causally complete, while preferring the smallest falsifiable change and refusing to promote analogy, fit quality, visual resemblance, or ancient terminology into physics.
+
+The programme is **not** trying to prove that a missing piece exists. `No additional state is required` is an acceptable and important result.
+
+### 26.2 Mandatory evidence separation
+
+Every future checkpoint must explicitly distinguish:
+
+```text
+A. what the current implementation actually computes;
+B. what was reproducibly observed in a supported or explicitly qualified execution;
+C. what cautious interpretation follows from A and B;
+D. what remains a hypothesis, analogy, or model class;
+E. what is known from real physics/history and whether any empirical Lineum correspondence exists.
+```
+
+Negative results, broken metrics, execution blockers, failed hypotheses, null results, and conflicts between code, tests, reports, and whitepapers must remain visible.
+
+### 26.3 Frozen candidate hierarchy
+
+Do not jump directly to a new field. Test the following hierarchy in order unless new evidence justifies a documented re-ranking:
+
+```text
+H0 / M0:
+    present state is sufficient; interpretation, observer, or ledger is wrong;
+
+H1 / M1:
+    present states need reciprocal/back-reaction relationships;
+
+H2 / M2-M3:
+    explicit finite source and/or receiving accounting states are missing;
+
+H3 / M4:
+    supplied kappa-like structure must become a stateful, finite-cost dynamic scaffold;
+
+H4 / M6:
+    apparent missing state is recoverable history of existing fields, including a reduction-first test of mu;
+
+H5 / M5:
+    an explicit flux/conjugate transport state is required after history fails;
+
+H6 / M7:
+    a genuinely additional independent state X is required;
+
+H7 / DG0:
+    the present equations are an effective/coarse-grained layer of a deeper generative model that makes additional falsifiable predictions.
+```
+
+`H7/DG0` is not automatically more fundamental or more likely than `H0-H6`. It is simply a distinct mechanism class that previous negative tests have not ruled out.
+
+### 26.4 Immediate execution order
+
+The current next step remains unchanged:
+
+```text
+1. recover a repository-supported or explicitly justified equivalent runtime;
+2. replay the already frozen FAC0 matrix exactly;
+3. if FAC0 survives, execute FAC1 term-isolated paired-versus-unpaired accounting;
+4. execute FAC2 complete software source/sink bookkeeping;
+5. execute FAC3 reciprocal closure versus finite source/receiver toy classes;
+6. execute FAC4 static versus dynamic scaffold;
+7. execute FAC5 held-out new-state necessity ladder;
+8. only after an explicit DG0 model exists, compare it against the best same-layer survivor with the same held-out data and complexity discipline;
+9. resume IC1, TS1, EC1, DB1, PI1, and PH1 after the more basic accounting/state question is resolved or when dependency logic makes one of them the cheaper discriminator.
+```
+
+The current technical blocker is the absence of a supported local repository execution path in the available environment. The repeated DNS failure is not a scientific result. Do not weaken FAC0 or silently substitute a prose reconstruction to make progress appear faster.
+
+### 26.5 Ancient-text role in the missing-piece search
+
+The ancient-text corpus remains a **hypothesis generator and anti-confounder source**, never evidence for Lineum physics.
+
+The most useful currently retained abstractions are:
+
+```text
+Sophia / unpaired generation:
+    compare one-way generation with reciprocal closure;
+
+Pistis Sophia power/depletion/receiver motif:
+    require stock, debit, receiver, exhaustion, and residual before calling a process transfer;
+
+Yaldabaoth / local totality:
+    test whether a local observer mistakes its accessible projection for complete causal state;
+
+Gospel of Truth / ignorance and reconstruction:
+    test whether history, relation, phase, or source knowledge removes an apparent missing substance;
+
+Pleroma / fullness:
+    seek the smallest state that closes prediction and accounting, not the largest hidden ontology;
+
+pneuma / cohesion abstraction:
+    test distributed restoring organization as an eigenmode/constitutive response rather than naming another field;
+
+Horos / boundary motifs:
+    distinguish inert separator, selective gate, receiver, stabilizer, active boundary, and hidden pump;
+
+Two Spirits / binary appearances:
+    distinguish two substances from bistability, attractors, history, thresholds, and observer labels;
+
+protocol/covenant motifs:
+    distinguish persistent shape from active reconstruction of invariant relations;
+
+body/residual motifs:
+    distinguish body, envelope, passive wake, causal residual, descendant, environmental relic, and observer artifact.
+```
+
+These abstractions may generate new comparison classes only when they produce a cheaper falsifier or a distinct held-out prediction.
+
+### 26.6 Criteria for calling a missing piece identified
+
+A candidate may be promoted from `hypothesis` to `supported missing mechanism/state` only if:
+
+```text
+it resolves a preregistered failure rather than a post-hoc aesthetic concern;
+it beats relevant simpler alternatives on held-out interventions;
+its effect survives timestep, grid, horizon, boundary, and observer controls where applicable;
+its resource/accounting role is explicit if it changes an implementation-defined budget;
+its causal role survives ablation and cannot be reproduced by a matched hidden pump or projection;
+its parameters are not merely retuned per case;
+independent verification reproduces the decision-relevant effect;
+negative and null controls remain visible;
+physical correspondence is kept separate until external empirical evidence exists.
+```
+
+A deeper/effective model additionally requires a reproducible forward map from its lower-level dynamics to the current effective variables. Merely fitting the current trajectories with more latent variables is insufficient.
+
+### 26.7 Completion states
+
+This research lane may legitimately end in any of the following outcomes:
+
+```text
+C0 current state sufficient; only interpretation/observer/accounting needed correction;
+C1 reciprocal relationship required;
+C2 explicit finite source/receiver accounting state required;
+C3 dynamic scaffold/boundary state required;
+C4 history of current fields sufficient;
+C5 explicit flux/conjugate state required;
+C6 genuinely additional state X required;
+C7 deeper generative/effective-equation model required and independently discriminated;
+C8 no tested candidate closes the gap; problem remains open with the rejection ledger preserved.
+```
+
+None of these outcomes may be renamed as proof of a soul, deity, multiverse, gravity theory, quantum interpretation, dark matter mechanism, or ancient encoded science without a separate evidential programme.
+
+### 26.8 New-thread resume protocol
+
+At the start of any future thread that continues this research:
+
+1. fetch the current `develop` HEAD;
+2. re-read all repository rule/workflow files required by `AGENTS.md`, including `research/foundations/AGENTS.md` if present at that future snapshot;
+3. fetch this report in full and verify its current blob SHA/version;
+4. fetch the root scientific report and continuity ledger referenced in this header;
+5. verify the current runtime/profile source SHAs and re-audit them if they moved;
+6. preserve all earlier negative results and open mechanism classes;
+7. continue from `Section 25` and `Section 26.4` unless newer repository evidence has explicitly changed the ordering;
+8. record every material decision, negative result, execution blocker, and completed checkpoint back into this same active report before ending the work session.
+
+No chat prompt, hidden scratchpad, local uncommitted file, ZIP artifact, or remembered conversation should be required to reconstruct the scientific objective.
+
+### 26.9 Current resume sentence
+
+If this work is opened in a new conversation, the operational instruction is simply:
+
+> Continue the active missing-piece research from this report under current repository rules. First obtain a supported replay of frozen FAC0; then proceed through FAC1-FAC5, keeping DG0 as an explicit but unprivileged later comparison class, and preserve all results in this report.
