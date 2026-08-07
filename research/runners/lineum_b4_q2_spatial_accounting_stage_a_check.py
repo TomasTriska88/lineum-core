@@ -49,6 +49,11 @@ LANES = (
     Lane("S2", False, False, True),
     Lane("S3", True, False, False),
 )
+LANE_BY_NAME = {lane.name: lane for lane in LANES}
+STRUCTURAL_ZERO_ACCOUNTING_FIELDS = {
+    "phi_gradient_flow_global_signed": "flow",
+    "transport_global_signed": "psi_diffusion",
+}
 
 
 def load_canonical():
@@ -305,6 +310,16 @@ def numeric_match(a: float, b: float) -> tuple[bool, float, float]:
     return bool(absolute <= COMPARE_ATOL + COMPARE_RTOL * max(abs(a), abs(b))), absolute, relative
 
 
+def primary_numeric_value(row: dict[str, Any], lane: Lane, group: str, name: str) -> float:
+    values = row[group]
+    if name in values:
+        return float(values[name])
+    lane_flag = STRUCTURAL_ZERO_ACCOUNTING_FIELDS.get(name) if group == "accounting" else None
+    if lane_flag is not None and not getattr(lane, lane_flag):
+        return 0.0
+    raise KeyError(f"Missing required comparison field {group}.{name} for lane {lane.name}")
+
+
 def run_independent() -> list[dict[str, Any]]:
     ref = load_canonical()
     size = ref.GRID_SIZE
@@ -465,8 +480,9 @@ def compare_rows(primary_rows: list[dict[str, Any]], check_rows: list[dict[str, 
         for key in sorted(expected_keys):
             prow = primary[key]
             crow = check[key]
+            lane = LANE_BY_NAME[key[1]]
             for group, name in numeric_paths:
-                a = float(prow[group][name])
+                a = primary_numeric_value(prow, lane, group, name)
                 b = float(crow[group][name])
                 ok, absolute, relative = numeric_match(a, b)
                 max_abs = max(max_abs, absolute)
