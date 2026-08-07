@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1 negative independently verified; owner scope correction applied; attributed hypotheses retained only where they bear directly on Questions 1–3; no replacement mechanism selected  
-**Version:** 0.13.1  
+**Status:** active authoritative report; localized-L1 negative independently verified; three-question scope locked; owner-frame discriminator preregistered; execution pending; no replacement mechanism selected  
+**Version:** 0.14.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `3a90cb64dcb4b0be69b0f0aec5593d4f59c851c8`  
+**Checkpoint parent:** `887535966817ee28921be177f91f15dece683874`  
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -13,7 +13,7 @@ This is the single active report for the continuous public-TOLOG B4 programme. I
 
 Versions through `0.10.1` used opaque compressed Unicode payloads. They are no longer embedded. The exact former report remains immutable as Git blob `8f08fe0da08751781e13f90496a928f89eae9d56`. The former overlapping classical-reference report is absent from the active branch; its decision-relevant content is restated here and its historical blob is `68b0ae44795124e13b8bccdd743a93b6a4ac3786`.
 
-The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. The project owner then restated the controlling boundary: this report must remain confined to the three original questions. Version `0.13.1` therefore retains the provenance but permits formalization, retrieval, and testing only when they directly discriminate Question 1, 2, or 3.
+The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completes a scope-limited historical variant retrieval and freezes the observer-first Question 2 discriminator before any outcome is inspected.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -206,7 +206,7 @@ The checker executed exactly once against the retained primary, returned code `0
 | Likely failure location | equation, ledger, or interpretation more than stencil choice alone |
 | Current implementation status | unsupported as a natural reciprocal attractor under tested conditions |
 | Wider Lineum status | unresolved; not falsified |
-| Cheapest discriminator after owner gate | minimal periodic spatial accounting test, activating one existing spatial term at a time |
+| Cheapest discriminator after owner gate | observer-first frame/phase rerun, then minimal periodic spatial accounting |
 
 Registered repair families, not yet selected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. These are agent-generated candidates and must not lead the owner's response.
 
@@ -231,9 +231,9 @@ The frozen L1 observer compared amplitudes, radial profiles, center displacement
 | ID | Q2 candidate interpretation | Cheapest discriminating observable | Current status |
 |---|---|---|---|
 | `T-F0` | null: no permitted transform explains the apparent return | Q2 full-state error remains above tolerance after all preregistered alignments | untested |
-| `T-F1` | rigid spatial-frame alias | one common periodic translation or lattice-compatible rotation reduces both `psi` and `phi` full-state error below the Q2 threshold | untested |
-| `T-F2` | co-moving localized structure | a frozen tracked frame preserves the full localized state while the fixed observer reports loss and reappearance | untested |
-| `T-F3` | internal complex-phase alias | one preregistered global phase alignment changes the Q2 full-state classification | untested |
+| `T-F1` | rigid spatial-frame alias | one common periodic translation or lattice-compatible rotation reduces both `psi` and `phi` full-state error below the Q2 threshold | preregistered as `Q2-O1` |
+| `T-F2` | co-moving localized structure | a frozen tracked frame preserves the full localized state while the fixed observer reports loss and reappearance | partially covered by integer periodic translation in `Q2-O1` |
+| `T-F3` | internal complex-phase alias | one preregistered global phase alignment changes the Q2 full-state classification | preregistered as `Q2-O1` |
 
 The smallest candidate test is observer-first, not equation-first: freeze the permitted transforms and tolerances, apply the same spatial transform to both components, retain a no-transform null, and ask only whether the Question 2 return verdict changes. No rotating-force term, new field, production-code change, or wider frame theory is justified.
 
@@ -251,13 +251,78 @@ Only two narrow operational candidates are active in this report:
 
 | ID | Permitted question | Scope-limited candidate | Current status |
 |---|---|---|---|
-| `K-Q2` | Question 2 | a declared local energy deficit or surplus predicts contraction or spreading and thereby changes whether a finite state genuinely returns after perturbation without caps, resets, or hidden sources | untested |
+| `K-Q2` | Question 2 | a declared local energy deficit or surplus predicts contraction or spreading and thereby changes whether a finite state genuinely returns after perturbation without caps, resets, or hidden sources | untested; no new observable added to `Q2-O1` |
 | `K-Q3` | Question 3 | an energy-dependent compactness or history variable contributes to a fixed-minimum scalar state that retains localized information after source removal and returns after both perturbation signs | untested |
 | `K-N0` | Questions 2 and 3 | the proposed energy-budget observables do not improve either return classification after controls | untested |
 
 The claims about atomic type, melting-point behaviour, and gravity as a general physical theory are preserved as part of Káťa's original provenance but are **out of scope for this report**. They will not trigger independent atomic, materials, thermodynamic, gravitational, or cosmological research here. If a future Q2 or Q3 discriminator shows energy-linked inward transport or compaction, that bounded candidate remains attributed to Káťa; it would still not establish her broader physical interpretation.
 
-A possible Q2/Q3 relation is only an agent formalization: the reappearing `psi` object might be a newly compacted localization rather than restoration of the original `psi`–`phi` state. This must be distinguished from Tomáš's frame hypothesis, conventional transport, reciprocal exchange, cap artefacts, and the null. No experiment or mechanism ranking has yet been performed from either attributed hypothesis.
+A possible Q2/Q3 relation is only an agent formalization: the reappearing `psi` object might be a newly compacted localization rather than restoration of the original `psi`–`phi` state. This must be distinguished from Tomáš's frame hypothesis, conventional transport, reciprocal exchange, cap artefacts, and the null. No experiment or mechanism ranking has yet been performed from Káťa's hypothesis.
+
+### 8.3 Scope-limited historical variant retrieval
+
+Only variants that can alter a controlling answer are retained:
+
+| Variant | Primary question | Recovered state | Evidentiary use here |
+|---|---|---|---|
+| conventional `R0`–`R4` exchange ruler | Q2 | independently checked | fixes the meaning of return, recurrence, equilibration, and one-way accumulation |
+| localized cap-dependent `psi` recovery | Q2 | independently checked | cap artefact control; not full-state return |
+| Eq-11 minimal `tanh` saturation | Q2 | historical candidate followed by documented delayed runaway | negative boundedness warning; not a verified attractor |
+| Eq-11.1 leakage/gradient family | Q2 | internally contradictory history: isolated-survivor prose became untraceable; reconstructed documented paths decayed or traded decay for delayed chaotic overgrowth | candidate family only; no positive Q2 evidence |
+| historical rotational-background lock | Q2 | prose-level historical mechanism claim, not the observer-only transform proposed by Tomáš and not a demonstrated post-perturbation full-state return | must not be used as confirmation of `T-F1` |
+| energy-linked compaction | Q2/Q3 | Káťa-generated, untested | dormant until a frozen observable can distinguish it from transport, frame aliasing, cap effects, and the null |
+
+The historical equation source is `whitepapers/1-core/02-core-equation.md` at blob `64f8341551d5737a6eb4919030bbb85a4b50380c`. Its narrative is treated as a registry of claims and failures, not as automatically verified evidence. No Eq-11 or rotational-mechanism experiment is authorized by this retrieval.
+
+### 8.4 `Q2-O1` preregistration — observer-first rotating-tray discriminator
+
+**Question:** Q2 only.  
+**Purpose:** test whether the frozen fixed-lattice observer missed return because the complete state moved under a rigid lattice symmetry or a single global complex phase.  
+**Equation change:** none.  
+**Parameter tuning:** none.  
+**Frozen source:** localized-L1 runner SHA-256 `96153e37b4e10890d3a0ab52e9463153cfc614eb9a2f1fcc58f23baeafc988bd`; frozen tests SHA-256 `95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec`; `9 / 9` tests passed before preregistration.  
+**Cases:** all original `28`, not a selected subset.
+
+For every case, retain the complete complex `psi` and real `phi` arrays immediately before perturbation. From that identical pre-state create:
+
+1. the original positive/negative radial perturbation branch followed by `1000` frozen recovery updates;
+2. an unperturbed continuation control followed by the same `1000` updates.
+
+The only permitted spatial transforms are exact square-lattice operations that introduce no interpolation:
+
+```text
+rotation k = 0, 1, 2, 3 quarter-turns via exact array rotation
+periodic row shift = 0 ... 31 cells
+periodic column shift = 0 ... 31 cells
+same spatial transform applied to psi and phi
+```
+
+After each spatial transform, one `psi`-only global unit-modulus complex phase is permitted. It is the analytic least-squares phase from the complex inner product; it is not fitted by a numerical optimizer. Prohibited: amplitude rescaling, reflection, continuous-angle interpolation, cropping, independent spatial transforms for `psi` and `phi`, local phase warping, parameter changes, and outcome-dependent expansion of the transform set.
+
+For reference state `x` and transformed candidate `y`, use normalized full-field errors:
+
+```text
+e_psi = ||psi_pre - exp(i theta) T(psi_post)||_2 / max(||psi_pre||_2, 1e-30)
+e_abs = ||abs(psi_pre) - abs(T(psi_post))||_2 / max(||abs(psi_pre)||_2, 1e-30)
+e_phi = ||phi_pre - T(phi_post)||_2 / max(||phi_pre||_2, 1e-30)
+```
+
+The transform-selection score is `max(e_psi, e_phi)`. Ties are broken by lower `e_psi + e_phi`, then lower rotation count, then lower wrapped translation norm, then row and column order. Report identity/no-phase, phase-only, translation-only, rotation-only, and full allowed alignment so the source of any improvement remains visible.
+
+A branch is observer-aligned only if all of the following were frozen before execution and pass:
+
+```text
+e_psi <= 0.10
+e_phi <= 0.10
+original total-energy relative error <= 0.05
+perturbed e_psi <= unperturbed-control e_psi + 0.02
+perturbed e_phi <= unperturbed-control e_phi + 0.02
+finite and reset-free
+```
+
+`e_abs` is diagnostic only and cannot substitute for complex-state return. A transformed match can change the classification of `T-F0`–`T-F3`, but it changes the overall Q2 answer only if the original Q2 exclusions also pass: no hard cap contact, no reset, no clipping-dependent survival, no hidden source, and no unaccounted sink or ad hoc damping. Thus a good alignment in a capped lane remains evidence of frame aliasing at most, not evidence of a natural attractor.
+
+**Preregistered falsifier:** Tomáš's rotating-tray explanation is not supported for this frozen Q2 screen if no case crosses both full-field thresholds, if improvement occurs only in `psi` while `phi` remains unrecovered, or if all aligned cases require cap/reset/source/sink exclusions that already bar a positive Q2 answer. A negative result is local to these exact lattice symmetries and does not prove that no broader co-moving description can exist.
 
 ## 9. Preserved failure and publication chronology
 
@@ -265,7 +330,7 @@ Technical non-results retained from history include a stalled checkout; five fai
 
 The concurrent `0.11.2` checkpoint reconstructed the exact `228809`-byte primary and matched its SHA-256; `13` localized/readability tests and `13` conventional-reference tests passed; an attempted fresh 28-case rerun exceeded the tool limit and remained a technical non-result.
 
-In this checkpoint, an initial staging used renamed source paths and failed test collection before scientific execution. A later connector attempt could not safely publish the recovered large plain Python sources within the payload boundary. No truncated source was published. The ordinary readable checker output, progress stream, execution receipt, and manifest are retained as companion files. Exact source republishing remains explicit reproducibility debt; immutable historical blobs and source hashes remain recorded.
+In the `0.12.0` checkpoint, an initial staging used renamed source paths and failed test collection before scientific execution. A later connector attempt could not safely publish the recovered large plain Python sources within the payload boundary. No truncated source was published. The ordinary readable checker output, progress stream, execution receipt, and manifest are retained as companion files. Exact source republishing remains explicit reproducibility debt; immutable historical blobs and source hashes remain recorded.
 
 The primary used Python `3.13.14` and NumPy `2.3.5`; the checker used Python `3.13.5` and NumPy `2.3.5`. Their agreement survives the Python patch-version difference. Because the repository historically declared NumPy below `2.0`, promotion into a currently supported runtime claim still requires a supported-dependency rerun.
 
@@ -273,16 +338,11 @@ The primary used Python `3.13.14` and NumPy `2.3.5`; the checker used Python `3.
 
 This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` energy cycle; scalar-potential memory; a causal disk mechanism; any replacement mechanism; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
 
-## 11. Scope-locked next gate
+## 11. Scope-locked next execution
 
-Before any new execution, the same report must:
+The next authorized execution is exactly `Q2-O1`. It may retain additional machine-readable results and source only as reproducibility companions to this report; it must not create another human-readable research report. Outcomes must be recorded here whether positive, negative, mixed, or technically failed.
 
-1. retrieve only historical, conventional, owner, and agent-generated variants that directly bear on Question 1, 2, or 3;
-2. assign every retained variant a primary question and a concrete observable capable of changing that question's current answer;
-3. classify all other material as out of scope or dormant rather than opening another research lane inside this report;
-4. preregister the observer-first frame/phase discriminator as a Question 2 test of Tomáš's proposal without changing the equation;
-5. preregister the smallest periodic spatial accounting discriminator as a Question 2 test, introducing one existing spatial mechanism at a time;
-6. retain Káťa's candidate only where a frozen energy/compactness observable discriminates Question 2 or Question 3 from transport, frame aliasing, reciprocal exchange, cap artefacts, and the null.
+After `Q2-O1`, the report must classify `T-F0`–`T-F3` without altering the frozen thresholds. Only then may the already retained periodic spatial-accounting discriminator proceed. Káťa's `K-Q2` or `K-Q3` candidate remains dormant until a separate preregistration maps one declared energy/compactness observable directly to Question 2 or 3.
 
 The retained `0.11.2` candidate matrix belongs exclusively to Question 2:
 
@@ -315,6 +375,6 @@ Do not add a field, insert a reciprocal repair, tune parameters, run a soliton c
 
 ## 12. Version history and handoff
 
-Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction: Tomáš's proposal is retained only as a Question 2 observer test; Káťa's proposal is retained only as bounded Question 2/3 candidates; broader atomic, melting, gravity, and cosmology exploration is dormant in this report. No numerical result or evidentiary answer changed.
+Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced and repaired opaque archive transport without changing science. `0.11.0` restored readable narrative and consolidated conventional and homogeneous audits. `0.11.2` preserved a complete handoff and detailed spatial candidate protocol. `0.12.0` recovered and hash-verified the frozen localized sources, passed nine tests, executed the independent checker exactly once, promoted the localized negative to `robust_within_tested_domain`, retained readable outputs and receipts, recorded connector publication limitations, preserved the `0.11.2` protocol behind the owner gate, opened that gate, and changed neither production code nor whitepapers. `0.13.0` recorded Tomáš's rotating-tray response and Káťa's separately attributed energy-budget/compaction hypothesis, translated both into explicitly untested variants, identified an observer-first candidate discriminator, and made no numerical, production-code, or whitepaper change. `0.13.1` applied the owner's hard three-question scope correction: Tomáš's proposal is retained only as a Question 2 observer test; Káťa's proposal is retained only as bounded Question 2/3 candidates; broader atomic, melting, gravity, and cosmology exploration is dormant in this report. `0.14.0` completed the scope-limited historical retrieval, preserved the negative and contradictory Eq-11 history, and preregistered `Q2-O1` across all 28 frozen cases before execution. No numerical result or evidentiary answer changed.
 
-A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized checker as already executed exactly once, preserve both attributions, map every proposed action to Question 1, 2, or 3 before retaining it, retrieve only the connected-workspace hypotheses relevant to those questions, freeze the observer-first and spatial Question 2 discriminators, and continue only in this report.
+A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest.json`, treat the localized checker as already executed exactly once, preserve both attributions, map every proposed action to Question 1, 2, or 3 before retaining it, execute only frozen `Q2-O1`, record every result in this report, and continue to the spatial-accounting discriminator only after the observer classification is closed.
