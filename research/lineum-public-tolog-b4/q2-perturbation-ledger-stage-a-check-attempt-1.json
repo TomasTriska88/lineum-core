@@ -1,0 +1,130 @@
+{
+  "schema": "lineum-b4-q2-perturbation-ledger-check-attempt/1",
+  "stage": "Q2-PV1-A-CHECK",
+  "status": "technical_comparison_failure",
+  "workflow": {
+    "source_commit": "0bd2efaa550323566f99d48b8a775e6842721c57",
+    "run_id": 31187862010,
+    "job_id": 92896895514,
+    "conclusion": "failure"
+  },
+  "environment": {
+    "runner_os": "Ubuntu 24.04.4 LTS",
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1"
+  },
+  "pre_checker_gate": {
+    "frozen_input_blob_checks_passed": true,
+    "tests_passed": 21,
+    "tests_failed": 0
+  },
+  "checker_output": {
+    "canonical_payload_sha256_without_self": "e91cf8dedc8c495041061f79750f67837648dee5ebe6e2009e40906ec916ade3",
+    "passed": false,
+    "protocol_pass": true,
+    "protocol_errors": [],
+    "key_set_pass": true,
+    "duplicate_keys": [],
+    "compare_rtol": 1e-12,
+    "decision_numeric_rtol": 1e-10,
+    "numeric_mismatch_count": 8,
+    "categorical_mismatch_count": 0,
+    "maximum_absolute_difference": 0.00006103515625,
+    "maximum_relative_difference": 0.00006103515625,
+    "independent_summary": {
+      "case_count": 28,
+      "key_set_pass": true,
+      "applicable_active_case_count": 28,
+      "inactive_not_applicable_case_count": 0,
+      "analytic_direct_all_pass": true,
+      "ledger_neutral_applicable_count": 4,
+      "ledger_non_neutral_applicable_count": 24,
+      "all_applicable_cases_neutral": false,
+      "outcome": "non_neutral_detected"
+    },
+    "primary_summary": {
+      "case_count": 28,
+      "key_set_pass": true,
+      "applicable_active_case_count": 28,
+      "inactive_not_applicable_case_count": 0,
+      "analytic_direct_all_pass": true,
+      "ledger_neutral_applicable_count": 4,
+      "ledger_non_neutral_applicable_count": 24,
+      "all_applicable_cases_neutral": false,
+      "outcome": "non_neutral_detected"
+    },
+    "numeric_mismatches": [
+      {
+        "case_key": "LAP4|no_hard_guards|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 3.725290298461914e-07,
+        "independent": -1.043081283569336e-07,
+        "absolute_difference": 4.76837158203125e-07,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP4|no_linear_dissipation|phi0=0.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 3.5762786865234375e-06,
+        "independent": -2.384185791015625e-07,
+        "absolute_difference": 3.814697265625e-06,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP4|no_explicit_tanh|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": -2.384185791015625e-07,
+        "independent": 2.384185791015625e-07,
+        "absolute_difference": 4.76837158203125e-07,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP4|no_mode_coupling|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 5.960464477539063e-08,
+        "independent": -4.172325134277344e-07,
+        "absolute_difference": 4.76837158203125e-07,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP4|no_phi_cap|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 3.725290298461914e-07,
+        "independent": -1.043081283569336e-07,
+        "absolute_difference": 4.76837158203125e-07,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP8|baseline|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": -2.5331974029541016e-07,
+        "independent": 2.2351741790771484e-07,
+        "absolute_difference": 4.76837158203125e-07,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP8|no_linear_dissipation|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 4.76837158203125e-05,
+        "independent": -1.33514404296875e-05,
+        "absolute_difference": 6.103515625e-05,
+        "tolerance": 1e-12
+      },
+      {
+        "case_key": "LAP8|no_explicit_tanh|phi0=1.0",
+        "field": "analytic_direct_discrepancy",
+        "stored": 5.662441253662109e-07,
+        "independent": -3.8743019104003906e-07,
+        "absolute_difference": 9.5367431640625e-07,
+        "tolerance": 1e-12
+      }
+    ],
+    "categorical_mismatches": []
+  },
+  "interpretation": {
+    "scientific_result_retained": false,
+    "reason": "The checker completed its independent derivation and matched the exact key set, all categorical decisions, and the complete aggregate summary, but its comparison layer incorrectly required 1e-12-scale cross-implementation equality for analytic_direct_discrepancy. That quantity is itself a cancellation residual whose floating value depends on operation ordering. The frozen scientific analytic-agreement decision uses a scale-aware 1e-10 tolerance and passed independently for all 28 rows. Because the checker as preregistered returned passed=false, this attempt is retained as a technical comparison-method failure and does not independently verify the primary.",
+    "allowed_repair_scope": "Keep every equation, source binding, case key, neutrality rule, analytic-agreement rule, primary value, and categorical comparison unchanged. Remove analytic_direct_discrepancy from strict cross-implementation numeric-equality comparison; instead require both stored and independently rederived residuals to satisfy the already-frozen scale-aware analytic-agreement criterion. Retain the raw residual values diagnostically. Add a regression test proving that operation-order residual variation may pass only when both paths satisfy the frozen analytic tolerance, while an actually excessive residual fails closed. No other comparison tolerance or field may be relaxed."
+  }
+}
