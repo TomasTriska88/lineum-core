@@ -1,11 +1,11 @@
 # Ancient Texts as Dynamic-Boundary, Protocol, Reconstruction, and Accounting Hypothesis Generators for Lineum
 
-**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, and preregistration; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
-**Version:** 0.2.0  
+**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, and preregistration; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
+**Version:** 0.3.0  
 **Evidence cutoff:** 2026-08-07  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Core snapshot at this checkpoint:** `1c06b7ce0eca5bb74abc3dd05e05bd5f1282be02`  
+**Core snapshot at this checkpoint:** `914bcc528fc2471a0bdbef8faf59e08fe65ac3b2`  
 **Current runtime source:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`  
 **Current profile source:** `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -17,13 +17,14 @@
 **Continuity evidence cutoff:** 2026-07-31  
 **Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
 **Immediate predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
-**Previous version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
+**Previous version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
+**Earlier version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
 **Related collective-object report:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Related state-reduction report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`, version 0.2.0, blob `b55bc1639fc8ed6efa7b8286e9113afa88ee298c`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, and preparation-history programme and adds a current-Core field/coupling/accounting audit. The new decision is whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, or only after those fail, a genuinely missing state variable.  
-**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature?  
-**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high that only a subset of current writes are explicitly paired debit/credit operations; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; low that an additional independent state variable will be required; zero evidential support that ancient religious texts encode Lineum or modern physics.
+**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, and preparation-history programme, retains the current-Core field/coupling/accounting audit, and records the first FAC0 directed-coupling checkpoint. The governing decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, or only after those fail, a genuinely missing state variable.  
+**Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature?  
+**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; low that an additional independent state variable will be required; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
 
 ## 1. Answer first
 
@@ -51,6 +52,8 @@ stochastic/coherent source -> Psi        without a finite source stock;
 Psi dissipation / PML / caps             without an explicit receiving reservoir;
 mu decay                                 without an explicit receiving reservoir.
 ```
+
+FAC0 now adds an ordering result. The source-level graph is consistent with a direct reading of the implementation, but a complete **one-step** response graph contains indirect edges because the update is sequential. A `Phi` perturbation changes `Psi` and can therefore alter the later `mu` write in the same step. A `mu` perturbation changes `Psi` and can therefore alter the later mode-coupling write into `Phi`. A `kappa` perturbation can reach all dynamic outputs while `kappa` itself remains supplied. With stochastic source disabled, `delta` has no effect because it only enters the source-probability path.
 
 Therefore phrases such as `energy transferred from Psi to mu`, `Phi gives energy back to Psi`, or `kappa stores energy` are presently too strong unless a particular experiment supplies an explicit ledger that passes.
 
@@ -92,7 +95,11 @@ Version `0.1.0` is permanently preserved as Git blob `3ec1d893e4309cb2e06b97a2fc
 - `SY1`: one-way write versus reciprocal back-reaction, finite stock, adjoint estimator, and explicit return channel;
 - dynamic-scaffold gate: static supplied `kappa` versus a constructed, maintained, damaged, repaired, finite-cost scaffold.
 
-No negative result or source-critical restriction from version `0.1.0` is withdrawn here. This version changes the immediate priority because the owner explicitly requested a scientific audit of potentially missing fields, reciprocal field relationships, and the meaning of apparent energy conversion in current Lineum.
+Version `0.2.0`, preserved as Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`, added the current-Core state/coupling/accounting audit, the `M0` through `M7` missing-mechanism registry, and FAC0 through FAC5 preregistration.
+
+Version `0.3.0` records the first FAC0 execution checkpoint. Source inspection supports the preregistered graph and exposes same-step indirect edges caused by update order. A separately transcribed NumPy checker reproduced the predicted response pattern and linear perturbation scaling, but the available execution environment used Python 3.13.5 with NumPy 2.3.5 while the repository requires `numpy>=1.24,<2.0.0`. A clean virtual environment could not obtain a compatible NumPy build from the available package index, and direct local repository cloning was unavailable because the execution environment could not resolve GitHub. The numerical FAC0 result is therefore retained as provisional corroboration, not as a supported-runtime Core reproduction.
+
+No negative result or source-critical restriction from versions `0.1.0` or `0.2.0` is withdrawn here.
 
 The broad predecessor remains the source and historical registry. This successor remains the active mechanism and preregistration report.
 
@@ -584,6 +591,163 @@ Primary purpose: detect hidden or misunderstood directed edges, ordering effects
 
 A source inspection prediction must be frozen before execution. Unexpected edges must be investigated, not post-hoc relabeled.
 
+#### FAC0 source-inspection prediction
+
+The prediction frozen before numerical evaluation was:
+
+```text
+Psi perturbation:
+    direct Psi response;
+    later Phi response through mode coupling;
+    later mu response through the Psi-activity write;
+    no kappa response;
+
+Phi perturbation:
+    direct Phi persistence/diffusion;
+    direct Psi response through interaction and gradient drift;
+    possible later mu response through the already changed Psi;
+    no kappa response;
+
+mu perturbation:
+    direct mu persistence/decay;
+    direct Psi response through the Phi-to-Psi multiplier;
+    possible later Phi response through mode coupling of the changed Psi;
+    no kappa response;
+
+kappa perturbation:
+    supplied kappa changes directly;
+    Psi, Phi, and mu can all respond because kappa modulates their update terms;
+    no back-reaction from those states alters kappa during the step;
+
+delta perturbation with stochastic source disabled:
+    no returned-state response, because delta enters only the source-probability gradient;
+
+delta perturbation with stochastic source enabled and matched RNG:
+    event-sensitive Psi response is possible when the changed probability crosses sampled linon thresholds.
+```
+
+#### FAC0 frozen synthetic state and configuration
+
+A `10 x 10` deterministic synthetic state was used with coordinates `X,Y` spanning `[-1,1]`:
+
+```text
+Psi = (0.25 + 0.04 cos(pi X) cos(pi Y)) * exp(i (0.3 X - 0.2 Y))
+Phi = 0.35 + 0.06 X + 0.04 Y + 0.015 cos(2 pi X)
+kappa = 0.8 + 0.03 cos(pi X) sin(pi Y)
+mu = 0.12 + 0.02 sin(pi X) cos(pi Y)
+delta = 0.01 sin(2 pi X) sin(pi Y)
+```
+
+The deterministic FAC0 configuration was:
+
+```text
+dt = 0.1
+psi_diffusion = 0.05
+phi_diffusion = 0.05
+drift_strength = -0.004
+stencil_type = LAP4
+physics_mode_psi = diffusion
+disable_quantum_noise = true
+phi_diffusion_scales_with_dt = true
+use_mode_coupling = true
+mode_coupling_strength = 0.001
+use_mu = true
+mu_eta = 0.005
+mu_rho = 0.0001
+mu_cap = 10
+mu_peak_cutoff_ratio = 0.1
+psi_amp_cap = 1e6
+grad_cap = 1e6
+phi_cap = 1e6
+PML absent from the NumPy diffusion path and disabled as a confounder
+```
+
+The perturbation shapes were smooth localized functions. The primary reported run used amplitude `epsilon = 1e-4`. A separate linearity check used `5e-7`, `1e-6`, and `2e-6`.
+
+#### FAC0 provisional standalone response matrix
+
+The following `L2` differences were measured against the unperturbed one-step output at `epsilon = 1e-4`:
+
+| Perturbed input | `Psi` response | `Phi` response | `mu` response | `kappa` response |
+|---|---:|---:|---:|---:|
+| `Psi` | `2.3699093963216352e-4` | `9.732383221228434e-9` | `5.4495019740789646e-8` | `0` |
+| `Phi` | `2.6856982691506603e-7` | `2.8196465398990173e-4` | `6.351447894468394e-11` | `0` |
+| `mu` | `8.266873915932191e-8` | `3.591654451425749e-12` | `2.8198291875753225e-4` | `0` |
+| `kappa` | `1.2138729321585137e-7` | `3.2017833061649787e-9` | `1.1492058791208562e-8` | `3.255386789889278e-4` |
+| `delta`, source disabled | `0` | `0` | `0` | `0` |
+
+The response graph matches the source-inspection prediction. In particular:
+
+- `Phi -> mu` appears within one complete step only indirectly through `Phi -> Psi -> mu`;
+- `mu -> Phi` appears within one complete step only indirectly through `mu -> Psi -> mode-coupling -> Phi`;
+- `kappa` reaches all dynamic outputs while nothing writes back to `kappa`;
+- `delta` is inert when its only active path, stochastic/linon generation, is disabled.
+
+#### FAC0 small-perturbation scaling check
+
+For perturbation amplitudes `5e-7`, `1e-6`, and `2e-6`, the output response divided by `epsilon` remained stable at the reported precision. Representative slopes were:
+
+```text
+Psi input -> Psi:   approximately 2.3699093965
+Psi input -> Phi:   approximately 9.73146e-5
+Psi input -> mu:    approximately 5.44898e-4
+
+Phi input -> Psi:   approximately 2.6857066e-3
+Phi input -> Phi:   approximately 2.81964654
+Phi input -> mu:    approximately 6.3515e-7
+
+mu input -> Psi:    approximately 8.2668836e-4
+mu input -> Phi:    approximately 3.59e-8
+mu input -> mu:     approximately 2.81982919
+
+kappa input -> Psi: approximately 1.2138725e-3
+kappa input -> Phi: approximately 3.20173e-5
+kappa input -> mu:  approximately 1.1492057e-4
+kappa input -> kappa: approximately 3.25538679
+```
+
+This supports a local directed-response interpretation rather than a threshold artifact for the deterministic lanes.
+
+#### FAC0 stochastic `delta` check
+
+With the stochastic source re-enabled, baseline and perturbed runs were paired with the same RNG seed. Across `20` seeds:
+
+| `delta` perturbation amplitude | seeds with changed `Psi` | maximum `Psi` difference | mean `Psi` difference |
+|---:|---:|---:|---:|
+| `0.01` | `1/20` | `0.00381917` | `0.000190958` |
+| `0.05` | `8/20` | `0.00467209` | `0.00119379` |
+| `0.2` | `20/20` | `0.00474539` | `0.00350253` |
+| `0.5` | `20/20` | `0.00679585` | `0.00536665` |
+
+This is consistent with `delta` changing a stochastic event probability rather than acting as a returned dynamical state. The nonlinearity in event counts is expected from thresholded random draws and is not evidence of a new field.
+
+#### FAC0 independence and environment receipt
+
+The numerical checker was separately transcribed from the audited NumPy update rather than importing `step_core`. Two local implementations, one forcing explicit input copies and one following the production-style `np.asarray` mutation semantics on a deep-copied caller state, produced identical baseline outputs for `Psi`, `Phi`, `mu`, and `kappa` to exact floating comparison in the local run.
+
+However, this is **not** a repository-supported reproduction. Environment audit found:
+
+```text
+local Python = 3.13.5
+local NumPy = 2.3.5
+repository requirement = numpy>=1.24,<2.0.0
+```
+
+A clean virtual environment was created outside the repository. Installing `numpy>=1.24,<2.0.0` failed because the available package index exposed no compatible build for that Python environment. A direct `git clone --branch develop` into the disposable workspace also failed because the local execution environment could not resolve `github.com`.
+
+Classification:
+
+```text
+FAC0_source_graph_from_current_source = supported
+FAC0_same_step_indirect_edges_from_update_order = supported
+FAC0_standalone_numeric_corroboration = provisional_support
+FAC0_repository_supported_runtime_reproduction = blocked_by_environment
+FAC0_physical_energy_claim = not_established
+FAC0_new_field_evidence = none
+```
+
+This environment limitation is a technical execution blocker, not a scientific negative result. It does not open the owner-intuition failure gate.
+
 ### `FAC1` — term-isolated paired-transfer audit
 
 Use exact update ordering and compare:
@@ -610,6 +774,8 @@ residual.
 ```
 
 No quantity is called physical energy merely because the residual is small.
+
+FAC1 remains gated until FAC0 is replayed in a repository-supported dependency environment or an explicitly justified equivalent verification environment. The provisional standalone FAC0 corroboration is not promoted across that gate.
 
 ### `FAC2` — open source and sink bookkeeping
 
@@ -692,7 +858,7 @@ The prior fixtures remain valid. The immediate ordering changes to maximize info
 
 ### Stage A — implementation and accounting closure
 
-1. `FAC0` directed coupling/intervention graph.
+1. `FAC0` directed coupling/intervention graph — source graph supported; exact supported-runtime replay still required.
 2. `FAC1` paired versus unpaired current writes.
 3. `FAC2` software source/sink accounting.
 
@@ -719,12 +885,12 @@ This is a reprioritization, not deletion. `IC1` remains preregistered and should
 |---|---|---|
 | coherent software pump and open source ledger | `supports` | FAC2/FAC3 directly test stock, injection, receiver, and residual classes |
 | `Phi` and `mu` do not currently close source-energy accounting | `supports` | blocks physical transfer language and motivates M0–M3 |
-| supplied non-evolving `kappa` | `reopens` | FAC4 tests dynamic scaffold only as a comparison class |
+| supplied non-evolving `kappa` | `reopens` | FAC0 confirms high one-step causal reach with no back-reaction; FAC4 tests dynamic scaffold only as a comparison class |
 | no passive reversible current-field membrane | `constrains` | exact failed candidates remain negative; only distinct active/stateful classes are reopened |
 | exact live-state continuation | `supports` | IC1 and FAC5 distinguish complete state from projection/history omissions |
 | static recipe not donor identity | `supports` | image/copy distinction remains active |
 | copying/heredity negative results | `unaffected` | no ancient motif or accounting closure creates descendants retroactively |
-| `mu` reduction-first programme | `constrains` | M6 must be tested before independent `mu` ontology |
+| `mu` reduction-first programme | `constrains` | FAC0 shows `mu` has same-step indirect consequences but does not establish independent ontology; M6 remains mandatory |
 | current public-TOLOG Q2 accounting negative | `supports` | apparent `Psi` recovery without `Phi` debit is a live example of why component recovery is not transfer |
 | physical particle/gravity/quantum/soul/cosmology mappings | `unaffected` | no textual motif or internal ledger establishes physical correspondence |
 
@@ -753,6 +919,8 @@ interpretation overreach.
 
 A failed observer or accounting candidate blocks that candidate. It does not prove a new field.
 
+The FAC0 dependency mismatch is classified separately as `execution_environment_not_repository_supported`; it is not a model failure.
+
 ## 21. Frozen anti-overinterpretation rules
 
 The following remain prohibited:
@@ -772,10 +940,12 @@ living temple architecture = conscious boundary;
 ancient structural analogy = empirical evidence;
 software ledger closure = physical energy conservation;
 new state variable = new substance;
-missing reciprocal debit = proof of a missing field.
+missing reciprocal debit = proof of a missing field;
+FAC0 directed response = proof of physical energy transfer;
+same-step indirect edge = independent fundamental coupling.
 ```
 
-## 22. Evidence classification at version 0.2.0
+## 22. Evidence classification at version 0.3.0
 
 ### 22.1 What the current implementation computes
 
@@ -787,13 +957,16 @@ Supported from current source inspection:
 - optional supplied `delta` entering source-probability gradients;
 - stochastic/source injection into `Psi`;
 - one explicit paired mode-coupling debit/credit between a `|Psi|^2` quantity and `Phi`;
-- several one-way writes and sinks without explicit receiving/source state.
+- several one-way writes and sinks without explicit receiving/source state;
+- sequential update ordering that permits indirect one-step paths such as `Phi -> Psi -> mu` and `mu -> Psi -> Phi`.
 
 ### 22.2 What was reproducibly observed
 
-No new numerical Core experiment was executed for this version.
+No repository-supported new Core numerical experiment was completed in this version.
 
-Inherited results remain binding, including:
+The FAC0 standalone checker provisionally corroborated the source-level directed graph, same-step ordering effects, small-perturbation linear scaling for deterministic lanes, and stochastic-only `delta` sensitivity under matched RNG. It cannot be promoted to a supported Core reproduction because the local environment used NumPy 2.3.5 while the repository requires NumPy below 2.0 and a compatible clean environment could not be constructed from the available package index.
+
+Inherited verified results remain binding, including:
 
 - open source-energy account;
 - failed tested passive membrane classes;
@@ -801,17 +974,23 @@ Inherited results remain binding, including:
 - negative tested copying/heredity lanes;
 - current public-TOLOG Q2 evidence that apparent `Psi` recovery can occur without a corresponding `Phi` decrease under the tested implementation.
 
-### 22.3 Cautious interpretation
+### 22.3 Independent check
 
-The current model is under-specified as a physical resource network. Missing relationships, reservoirs, and dynamic boundary state are presently stronger and cheaper hypotheses than a missing fundamental field.
+FAC0 used two separately arranged local NumPy transcriptions with different input-copy semantics. Their baseline outputs agreed exactly in the available environment. Source inspection independently predicts the same directed edges and explains the observed indirect edges from update order.
 
-### 22.4 Hypotheses
+This is partial independence only. Both numerical transcriptions share the same manually reconstructed equations and the same unsupported NumPy runtime. A repository-supported replay or equivalently justified independent environment remains required.
 
-`M0` through `M7` and `FAC0` through `FAC5` are preregistered research hypotheses/tests. None is a discovered law.
+### 22.4 Cautious interpretation
 
-### 22.5 Known real physics
+The current model is under-specified as a physical resource network. FAC0 strengthens confidence in the implementation-level dependency graph but provides no evidence that the state set is physically complete or incomplete. Missing relationships, reservoirs, and dynamic boundary state remain stronger and cheaper hypotheses than a missing fundamental field.
 
-No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement.
+### 22.5 Hypotheses
+
+`M0` through `M7` and FAC1 through FAC5 remain preregistered research hypotheses/tests. FAC0 has partial evidence at the source-inspection level and provisional numerical corroboration; it has not passed the supported-runtime completion gate.
+
+### 22.6 Known real physics
+
+No correspondence between these ancient motifs and real physical fields has been established. Standard physical energy requires a well-defined model-specific conserved or balance-law quantity and empirical calibration; similar words in ancient literature do not supply that requirement. A software dependency graph is not a physical ontology.
 
 ## 23. Current verdict
 
@@ -834,18 +1013,24 @@ kappa_backreaction_is_implemented = no
 explicit_finite_source_reservoir_is_implemented = no
 explicit_receiving_sink_reservoir_is_implemented = no
 
+FAC0_source_graph_from_current_source = supported
+FAC0_same_step_indirect_edges_from_update_order = supported
+FAC0_standalone_numeric_corroboration = provisional_support
+FAC0_repository_supported_runtime_reproduction = blocked_by_environment
+FAC0_new_field_evidence = none
+
 new_fundamental_field_required = unproven
 missing_relationship_or_resource_state = stronger_current_hypothesis_than_missing_field
 history_as_missing_state = live_hypothesis
 stateful_dynamic_scaffold = live_hypothesis
 
-next_action = FAC0_then_FAC1_exact_current_Core_coupling_and_accounting_audit
+next_action = recover_supported_runtime_and_replay_FAC0_before_FAC1
 IC1_status = preserved_and_queued_after_accounting_priority
 ```
 
-## 24. Source register additions for version 0.2.0
+## 24. Source register additions for version 0.3.0
 
-The complete source register from version `0.1.0` remains preserved in Git blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`. The following sources are added or promoted for this checkpoint.
+The complete source register from version `0.1.0` remains preserved in Git blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`. Version `0.2.0` remains preserved in Git blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`. The following sources and execution receipts are retained for this checkpoint.
 
 ### Primary / translation witnesses
 
@@ -864,19 +1049,36 @@ The complete source register from version `0.1.0` remains preserved in Git blob 
 
 - `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`.
 - `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`.
+- `requirements.txt`, blob `942f2b94b3d3f8c767451ae2d847a7b17c86d81e`, requiring `numpy>=1.24,<2.0.0`.
+- `requirements-dev.txt`, blob `7a0907e3e6c2d15400d19b536227a509910ae7e9`.
 - `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, blob `5304874451caf32313ad0e8e3c59e53958698d79`.
-- Current public-TOLOG B4 checkpoint at commit `1c06b7ce0eca5bb74abc3dd05e05bd5f1282be02`, used only as cross-programme accounting evidence; TOLOG-specific ontology is not imported here.
+- Core branch snapshot `914bcc528fc2471a0bdbef8faf59e08fe65ac3b2`; movement from earlier `10902362974a59b6bc9171ff9328e498af4ddc52` was audited and affected only the public-TOLOG B4 report, runner, checker, and test, not the current Core runtime, profiles, repository rules, or this report before the FAC0 edit.
+
+### FAC0 local execution receipt
+
+```text
+execution role: provisional standalone corroboration only
+Python: 3.13.5
+NumPy: 2.3.5
+repository NumPy contract: >=1.24,<2.0.0
+clean-venv compatible NumPy install: failed, no compatible distribution exposed by available index
+local git clone of develop: failed, github.com name resolution unavailable
+production Core imported: no
+manual equations: transcribed from current math.py blob bb877021810691223a0eb960a45493a2e351112a
+```
+
+The exact numerical outputs needed to challenge the directed-edge conclusion are embedded in Section 17. No hidden temporary artifact is required for the scientific interpretation retained here.
 
 ## 25. Next checkpoint gate
 
-Before modifying a Core equation, adding a Core field, changing whitepaper ontology, or naming any quantity physical energy:
+Before modifying a Core equation, adding a Core field, changing whitepaper ontology, naming any quantity physical energy, or starting FAC1:
 
-1. recover or use the exact current Core implementation, not a prose reconstruction;
-2. freeze `FAC0` source-inspection predictions and one-step intervention cases before outcomes are inspected;
-3. execute `FAC0` with stochastic source, caps, PML, and other confounders disabled where the exact contract permits;
-4. independently verify the directed-edge result analytically or with a second implementation-level check;
-5. execute `FAC1` only after the observer/instrumentation is shown not to alter update ordering;
-6. preserve exact parameters, equations, source SHA, outputs, and negative cases in this report if decision-relevant;
-7. do not introduce a physical field to repair an accounting residual until `M0`–`M6` alternatives have been tested sufficiently to justify `M7`;
+1. use the exact current Core implementation, not a prose reconstruction;
+2. obtain a repository-supported dependency environment or an explicitly justified equivalent verification environment;
+3. replay the frozen FAC0 deterministic intervention matrix without changing its state, perturbation definitions, configuration, observables, or interpretation thresholds;
+4. verify the direct and indirect edge classifications against current source SHA and record any discrepancy rather than tuning the fixture;
+5. preserve the exact environment, commands, outputs, and comparison receipt in this report;
+6. execute FAC1 only if FAC0's source-inspection graph survives that replay or after any discrepancy is resolved and re-preregistered;
+7. do not introduce a physical field to repair an accounting residual until `M0` through `M6` alternatives have been tested sufficiently to justify `M7`;
 8. keep the ancient-source comparison and the physical inference separate at every checkpoint;
 9. leave Core code and whitepapers unchanged until a promotion gate is independently passed.
