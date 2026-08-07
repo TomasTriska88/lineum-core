@@ -1,0 +1,32 @@
+{
+  "schema": "lineum-b4-q2-checker-regression-pass/1",
+  "status": "supported_runtime_regression_pass",
+  "scope": "Q2-SA1-A checker comparison-schema repair validation only; no scientific eight-case checker execution",
+  "source_commit": "36a157a274ec212a80ba12b2712e01e9b95455fd",
+  "workflow_run_id": 31166279033,
+  "workflow_job_id": 92827722428,
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "runner": "ubuntu-24.04"
+  },
+  "test_gate": {
+    "passed": true,
+    "summary": "25 passed in 0.89s",
+    "test_files": [
+      "tests/research/test_lineum_b4_saturation_localized_l1.py",
+      "tests/research/test_lineum_b4_q2_spatial_accounting.py",
+      "tests/research/test_lineum_b4_q2_spatial_accounting_stage_a.py",
+      "tests/research/test_lineum_b4_q2_spatial_accounting_stage_a_check.py"
+    ]
+  },
+  "repair_identity": {
+    "checker_blob": "700a5528a56e6fc86e380004804566ad0c61dec3",
+    "test_blob": "624f21114e8206d78653fcba64dd3689fbc244ad",
+    "checker_change": "Compact-primary comparison normalizes an omitted stage-global field to exact zero only when the frozen lane map structurally disables that stage; enabled-stage omission still raises KeyError.",
+    "test_fixture_correction_commit": "b95320b952dff5ce38b7f23be479f57c49163cf6"
+  },
+  "scientific_meaning": "none by itself; this validates the checker repair before a separate official scientific checker execution",
+  "workflow_artifact_uploaded": false
+}
