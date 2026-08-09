@@ -1,4 +1,4 @@
-name: FAC0-R1 Supported Runtime Replay
+name: FAC0-R1 Evidence Capture and Cleanup
 
 on:
   push:
@@ -7,56 +7,411 @@ on:
       - ".github/workflows/fac0-r1-supported-replay.yml"
 
 permissions:
-  contents: read
+  contents: write
+  actions: read
 
 jobs:
-  fac0-r1:
+  capture:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Check out frozen repository state
+      - name: Check out exact capture commit
         uses: actions/checkout@v4
-
-      - name: Set up Python 3.11.9
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11.9"
+          fetch-depth: 1
 
-      - name: Install frozen FAC0-R1 dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install "numpy==1.26.4" "pytest==8.3.5"
-
-      - name: Record environment and source receipts
-        run: |
-          python --version
-          python -c "import numpy, pytest; print('numpy', numpy.__version__); print('pytest', pytest.__version__)"
-          git rev-parse HEAD
-          git hash-object lineum_core/math.py
-          git hash-object research/runners/lineum_fac0_directed_coupling_replay.py
-          git hash-object tests/research/test_lineum_fac0_directed_coupling_replay.py
-
-      - name: Execute frozen FAC0-R1 runner and regression gate
+      - name: Verify frozen repository inputs
         shell: bash
         run: |
-          set -u
-          runner_status=0
-          test_status=0
-          PYTHONPATH=. python research/runners/lineum_fac0_directed_coupling_replay.py > fac0-r1-output.json || runner_status=$?
-          pytest -q tests/research/test_lineum_fac0_directed_coupling_replay.py | tee fac0-r1-test.txt || test_status=${PIPESTATUS[0]}
-          cat fac0-r1-output.json
-          sha256sum fac0-r1-output.json fac0-r1-test.txt
-          if [ "$runner_status" -ne 0 ] || [ "$test_status" -ne 0 ]; then
-            exit 1
-          fi
+          set -euo pipefail
+          git config core.hooksPath .agent/hooks
+          test "$(git hash-object research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md)" = "ee84776db0da534e3cbc80050b520d66fabdb66a"
+          test "$(git hash-object lineum_core/math.py)" = "bb877021810691223a0eb960a45493a2e351112a"
+          test "$(git hash-object research/runners/lineum_fac0_directed_coupling_replay.py)" = "facbd154ba24ff17ce03569da311da82d2ffb113"
+          test "$(git hash-object tests/research/test_lineum_fac0_directed_coupling_replay.py)" = "03ca4e052641bdffb4d695cf93f5e6c92b83aa7e"
+          test "$(git hash-object research/foundations/lineum-continuous-source-cosmology-validation.md)" = "3fba3925553cd5596e46c02fa35d1db91523537d"
+          test "$(git hash-object research/foundations/lineum-root-programme-continuity-and-impact-ledger.md)" = "5304874451caf32313ad0e8e3c59e53958698d79"
 
-      - name: Retain temporary FAC0-R1 execution receipts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fac0-r1-supported-runtime-receipts
-          path: |
-            fac0-r1-output.json
-            fac0-r1-test.txt
-          if-no-files-found: error
-          retention-days: 1
+      - name: Recover and verify exact successful FAC0-R1 receipt
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p .scratch/fac0-r1-receipt
+          curl --fail --silent --show-error --location \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/9035871239/zip" \
+            -o .scratch/fac0-r1-receipt/receipt.zip
+          unzip -q .scratch/fac0-r1-receipt/receipt.zip -d .scratch/fac0-r1-receipt/files
+          test "$(sha256sum .scratch/fac0-r1-receipt/files/fac0-r1-output.json | awk '{print $1}')" = "af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d"
+          test "$(sha256sum .scratch/fac0-r1-receipt/files/fac0-r1-test.txt | awk '{print $1}')" = "09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('.scratch/fac0-r1-receipt/files/fac0-r1-output.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          checks = {
+              'schema': data['schema'] == 'lineum-fac0-r1-directed-coupling-replay/1',
+              'status': data['status'] == 'supported_runtime_replay',
+              'passed': data['passed'] is True,
+              'commit': data['repository_commit'] == '6b553b621bc5ea9ec16b649cbea2f931c6737b39',
+              'math_blob': data['source']['math_blob_match'] is True and data['source']['observed_math_git_blob'] == 'bb877021810691223a0eb960a45493a2e351112a',
+              'numpy': data['environment']['numpy'] == '1.26.4' and data['environment']['repository_numpy_contract_pass'] is True,
+              'python': data['environment']['python'] == '3.11.9',
+              'graph': data['graph_check']['passed'] is True and not data['graph_check']['required_failures'] and not data['graph_check']['forbidden_failures'],
+              'linearity': data['linearity_check']['passed'] is True,
+              'stochastic_delta': data['stochastic_delta_matched_rng']['passed'] is True,
+              'payload_hash': data['canonical_payload_sha256_without_self'] == '18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280',
+          }
+          failed = [k for k, ok in checks.items() if not ok]
+          if failed:
+              raise SystemExit(f'FAC0-R1 receipt verification failed: {failed}')
+          PY
+
+      - name: Promote receipt and update the single active report
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp .scratch/fac0-r1-receipt/files/fac0-r1-output.json \
+            research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md')
+          text = path.read_text(encoding='utf-8')
+
+          def replace_once(old: str, new: str, label: str) -> None:
+              global text
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected exactly one match, found {count}')
+              text = text.replace(old, new, 1)
+
+          text, n = re.subn(
+              r'^\*\*Status:\*\* .*$',
+              '**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0-R1 directed response is reproduced in a repository-supported runtime and FAC1 is authorized; no physical-energy interpretation, new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  ',
+              text,
+              count=1,
+              flags=re.MULTILINE,
+          )
+          if n != 1:
+              raise SystemExit('status header replacement failed')
+          replace_once('**Version:** 0.4.0  ', '**Version:** 0.4.1  ', 'version')
+          replace_once('**Evidence cutoff:** 2026-08-07  ', '**Evidence cutoff:** 2026-08-09  ', 'evidence cutoff')
+          replace_once('**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  ', '**FAC0-R1 execution commit:** `6b553b621bc5ea9ec16b649cbea2f931c6737b39`  ', 'execution commit')
+          replace_once('**Previous version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  ', '**Previous version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  ', 'previous version')
+          replace_once('**Earlier version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  ', '**Earlier version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  ', 'earlier version')
+          replace_once('**Older version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  ', '**Older version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  ', 'older version')
+          replace_once('**Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  ', '**Legacy version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  \n**Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  ', 'legacy lineage')
+          replace_once(
+              'The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.',
+              'FAC0-R1 is now reproduced in Python 3.11.9 with NumPy 1.26.4 against the exact current `math.py` blob; this supports the implementation-level directed response graph within the tested one-step domain, while physical energy, ontology, closed resource accounting, and real-world correspondence remain unestablished.',
+              'confidence update',
+          )
+
+          marker = 'No negative result or source-critical restriction from versions `0.1.0` through `0.3.1` is withdrawn here.'
+          insert = '''Version `0.4.1` records the first repository-supported FAC0-R1 execution. The exact current `step_core` NumPy path passed the frozen directed-edge graph, local linearity, and matched-RNG `delta` source-sensitivity gates under Python 3.11.9 and NumPy 1.26.4. The first remote attempt is retained as a technical execution failure because direct script invocation lacked the repository root on `sys.path`; the same attempt's pytest gate passed. The corrected invocation changed only `PYTHONPATH=.` and the second run passed. This supersedes the earlier unsupported-runtime numerical corroboration for FAC0 without promoting any physical-energy, ontology, or new-state claim.\n\n'''
+          if marker not in text:
+              raise SystemExit('version-history insertion marker missing')
+          text = text.replace(marker, insert + marker, 1)
+
+          replace_once(
+              '## 25. Next checkpoint gate\n\nBefore modifying a Core equation, adding a Core field, changing whitepaper ontology, naming any quantity physical energy, or starting FAC1:',
+              '## 25. Next checkpoint gate\n\nFAC0-R1 satisfied the runtime-replay prerequisites below on 2026-08-09. The list is retained as the frozen preregistration that governed the run; items 1 through 6 are now satisfied for the tested `math.py` blob, so FAC1 is authorized.\n\nBefore modifying a Core equation, adding a Core field, changing whitepaper ontology, naming any quantity physical energy, or starting FAC1:',
+              'section 25 gate status',
+          )
+
+          new_264 = '''### 26.4 Immediate execution order
+
+FAC0-R1 is complete for the tested current `math.py` blob. The immediate execution order is now:
+
+```text
+1. execute FAC1 term-isolated paired-versus-unpaired accounting;
+2. execute FAC2 complete software source/sink bookkeeping;
+3. execute FAC3 reciprocal closure versus finite source/receiver toy classes;
+4. execute FAC4 static versus dynamic scaffold;
+5. execute FAC5 held-out new-state necessity ladder;
+6. only after an explicit DG0 model exists, compare it against the best same-layer survivor with the same held-out data and complexity discipline;
+7. resume IC1, TS1, EC1, DB1, PI1, PH1, and LAEC0 after the more basic accounting/state question is resolved or when dependency logic makes one of them the cheaper discriminator.
+```
+
+The local execution environment still cannot resolve `github.com`, but the FAC0-R1 runtime blocker has been closed by the explicitly justified repository-supported GitHub-hosted replay recorded in Section 28. That technical workaround does not authorize weakening future local-first execution rules.
+'''
+          text, n = re.subn(r'### 26\.4 Immediate execution order\n.*?(?=\n### 26\.5)', new_264, text, count=1, flags=re.DOTALL)
+          if n != 1:
+              raise SystemExit('section 26.4 replacement failed')
+
+          new_269 = '''### 26.9 Current resume sentence
+
+If this work is opened in a new conversation, the operational instruction is simply:
+
+> Continue the active missing-piece research from this report under current repository rules. FAC0-R1 has passed in a repository-supported runtime against the exact current `math.py` blob; proceed with FAC1, then FAC2-FAC5, keeping DG0 as an explicit but unprivileged later comparison class, preserve LAEC0 as a separately source-audited local-autonomy/epistemic-closure lane, and preserve all results in this report.
+'''
+          text, n = re.subn(r'### 26\.9 Current resume sentence\n.*?(?=\n## 27\.)', new_269, text, count=1, flags=re.DOTALL)
+          if n != 1:
+              raise SystemExit('section 26.9 replacement failed')
+
+          if '\n## 28.' in text:
+              raise SystemExit('Section 28 already exists')
+
+          section28 = r'''
+
+## 28. FAC0-R1 supported-runtime replay checkpoint
+
+### 28.1 Answer first
+
+FAC0-R1 passed against the actual current Core implementation in a repository-supported NumPy environment. The one-step response graph predicted by source inspection is therefore no longer supported only by a manually transcribed, unsupported-runtime checker.
+
+The narrow result is:
+
+```text
+actual current step_core
+    + frozen FAC0-R1 state/configuration/perturbations
+    + Python 3.11.9
+    + NumPy 1.26.4
+    -> predicted directed one-step response graph reproduced
+```
+
+This establishes an implementation-level response result only. It does **not** establish physical energy, a conserved physical resource, ontology for `Psi/Phi/mu/kappa/delta`, a need for a new field, or correspondence with nature.
+
+### 28.2 Why R1 was necessary
+
+The earlier permanent FAC0 checkpoint preserved the base state, `CoreConfig`, perturbation amplitudes, observables, graph expectations, and causal question, but it did not preserve the exact smooth localized perturbation function used by the manually transcribed checker. An exact historical replay was therefore impossible.
+
+FAC0-R1 repaired that reproducibility defect **before** the supported-runtime run by freezing an explicit discrete-L2-normalized anisotropic Gaussian:
+
+```text
+center_x = 0.23
+center_y = -0.17
+sigma_x = 0.29
+sigma_y = 0.31
+Psi perturbation phase = 0.37 rad
+normalization = discrete L2 norm to 1
+primary epsilon = 1e-4
+linearity epsilons = 5e-7, 1e-6, 2e-6
+stochastic delta amplitudes = 0.01, 0.05, 0.2, 0.5
+matched RNG seeds = 0..19
+```
+
+R1 did not change the prior base state, Core configuration, primary amplitude, linearity amplitudes, stochastic amplitudes, observables, causal question, or interpretation class.
+
+### 28.3 Execution chronology, including the failed attempt
+
+The active local execution environment still could not resolve `github.com`, so it could not obtain a clean checkout. That is a technical infrastructure limitation, not a scientific result. Repository rule `53-local-scientific-execution.md` permits a narrowly scoped GitHub-hosted execution when the frozen run cannot be performed locally and the limitation is recorded first.
+
+The first remote attempt ran at commit `6991f9ffb39e9cfc5f6a0dd193d4f84f0cf41512`. Checkout, Python 3.11.9, NumPy 1.26.4, and source-hash receipts succeeded. Direct invocation then failed with:
+
+```text
+ModuleNotFoundError: No module named 'lineum_core'
+```
+
+That failure was caused by Python's import path when executing a script located under `research/runners/`; it occurred before the runner could produce its JSON. In the same job, however, the regression test imported the runner through its test loader, called `run()`, and passed `1/1`. The failed direct invocation is retained as a technical execution failure and is not counted as a scientific FAC0 failure.
+
+The only correction was to prefix the direct command with `PYTHONPATH=.`. No Core source, runner source, test, perturbation, threshold, seed, metric, expected graph, or interpretation was changed. The second run, GitHub Actions run `31305696058`, job `93225609854`, executed at commit `6b553b621bc5ea9ec16b649cbea2f931c6737b39` and completed successfully.
+
+Official commands:
+
+```text
+PYTHONPATH=. python research/runners/lineum_fac0_directed_coupling_replay.py > fac0-r1-output.json
+pytest -q tests/research/test_lineum_fac0_directed_coupling_replay.py
+```
+
+The pytest gate reported:
+
+```text
+1 passed in 0.14s
+```
+
+### 28.4 Environment and immutable source receipts
+
+```text
+GitHub-hosted OS: Ubuntu 24.04.4 LTS
+Python: 3.11.9
+NumPy: 1.26.4
+pytest: 8.3.5
+execution backend: NumPy / CPU
+deterministic mode: true
+enforced canonical execution: true
+repository NumPy contract: >=1.24,<2.0.0
+repository NumPy contract pass: true
+execution commit: 6b553b621bc5ea9ec16b649cbea2f931c6737b39
+lineum_core/math.py blob: bb877021810691223a0eb960a45493a2e351112a
+FAC0-R1 runner blob: facbd154ba24ff17ce03569da311da82d2ffb113
+FAC0-R1 test blob: 03ca4e052641bdffb4d695cf93f5e6c92b83aa7e
+```
+
+The complete machine-readable output is retained as the plain companion artifact:
+
+```text
+research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
+schema: lineum-fac0-r1-directed-coupling-replay/1
+canonical payload SHA-256 without self field:
+18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280
+exact output-file SHA-256:
+af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d
+```
+
+The temporary test-text receipt had SHA-256 `09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737`. The temporary GitHub artifact is not part of the permanent evidence chain; the report and plain JSON companion are.
+
+### 28.5 Deterministic one-step response matrix
+
+For primary perturbation L2 magnitude `1e-4`, the observed output L2 differences were:
+
+| perturbed input | `Psi` response | `Phi` response | `mu` response | `kappa` response |
+|---|---:|---:|---:|---:|
+| `Psi` | `9.991002372320469e-05` | `4.063511924708403e-09` | `2.2907512838914175e-08` | `0` |
+| `Phi` | `9.556385478027928e-08` | `9.999184870343018e-05` | `2.2437524743805403e-11` | `0` |
+| `mu` | `2.9527480175484684e-08` | `1.2612202520919595e-12` | `1.000015021432722e-04` | `0` |
+| `kappa` | `3.627899615190725e-08` | `9.079090282645104e-10` | `3.5825278817618605e-09` | `1.000000000000626e-04` |
+| `delta` with source disabled | `0` | `0` | `0` | `0` |
+
+The frozen graph check used:
+
+```text
+required-edge threshold = 1e-16
+forbidden-edge threshold = 1e-15
+required failures = []
+forbidden failures = []
+graph_check.passed = true
+```
+
+The observed one-step graph therefore agrees with the source-inspection prediction:
+
+```text
+Psi   -> Psi, Phi, mu
+Phi   -> Psi, Phi, mu
+mu    -> Psi, Phi, mu
+kappa -> Psi, Phi, mu, kappa
+delta -> no deterministic response when source is disabled
+```
+
+The `Phi -> mu` and `mu -> Phi` one-step responses remain ordering effects through intermediate `Psi` writes, not evidence of direct reciprocal physical transfer. `kappa` influences all dynamic outputs while remaining a supplied input in the current step.
+
+### 28.6 Local linearity check
+
+The frozen self-edge slope stability check passed over perturbation magnitudes `5e-7`, `1e-6`, and `2e-6`:
+
+| edge | relative slope span |
+|---|---:|
+| `Psi -> Psi` | `1.1807809678013206e-10` |
+| `Phi -> Phi` | `2.7925606612131193e-11` |
+| `mu -> mu` | `1.632602842596243e-11` |
+| `kappa -> kappa` | `3.555666872084596e-11` |
+
+All are far below the frozen `1e-4` acceptance threshold. This shows that the primary one-step self responses are locally stable under the tested perturbation scaling; it does not establish global linearity of Lineum dynamics.
+
+### 28.7 Matched-RNG `delta` source-sensitivity check
+
+With stochastic source enabled, the same RNG seed was used for baseline and perturbed runs. `delta` changes source-event probability, so the response is event-sensitive rather than a continuous deterministic write:
+
+| `delta` perturbation L2 | changed seeds / 20 | max `Psi` difference | mean `Psi` difference |
+|---:|---:|---:|---:|
+| `0.01` | `0/20` | `0` | `0` |
+| `0.05` | `3/20` | `0.003781864275455506` | `0.00046754347003772934` |
+| `0.2` | `7/20` | `0.0038642918015632873` | `0.0010749120280950854` |
+| `0.5` | `18/20` | `0.004829389915368274` | `0.0029997515655590733` |
+
+The frozen criterion required the largest perturbation to change `Psi` for at least one matched seed; it passed. This supports the implementation statement that `delta` enters the stochastic source-probability path. It does not justify interpreting `delta` as energy or a physical field.
+
+### 28.8 Independent verification and evidence status
+
+The decision-relevant independence is methodological, not a second full implementation:
+
+1. source inspection established the expected direct writes and same-step ordering implications before the supported replay;
+2. FAC0-R1 executed the actual current `step_core` NumPy path rather than a transcription;
+3. immutable Git blob receipts verified that the executed `math.py`, runner, and regression test were exactly the frozen sources;
+4. the regression gate independently asserted environment, graph, linearity, stochastic sensitivity, and overall pass conditions around the runner output.
+
+The regression test imports and calls the same runner, so it is **not** a fully independent second numerical implementation. The strongest bounded classification is therefore:
+
+```text
+FAC0-R1 implementation response = reproduced
+FAC0-R1 graph within frozen one-step domain = supported_within_tested_domain
+physical energy/resource interpretation = unresolved / not established
+new-state necessity = not established
+real-world physical correspondence = none
+```
+
+The earlier unsupported-runtime numerical corroboration remains historical evidence but is superseded as the decision gate for FAC0 by this supported-runtime replay.
+
+### 28.9 Programme impact matrix
+
+| programme branch | impact of FAC0-R1 |
+|---|---|
+| current Core directed-coupling graph | `supports` |
+| source-inspection same-step ordering interpretation | `supports` |
+| earlier provisional FAC0 numerical corroboration | `supersedes_as_decision_gate` |
+| closed physical resource account | `unaffected_open` |
+| reciprocal/back-reaction candidate `M1` | `reopens_for_FAC1` |
+| finite source/receiver candidates `M2-M3` | `unaffected_open` |
+| dynamic scaffold candidate `M4` | `unaffected_open` |
+| history/reduction candidate `M6` | `unaffected_open` |
+| genuinely new state `M7` | `constrains_against_premature_escalation` |
+| deeper-generative `DG0` | `unaffected_unprivileged` |
+| ancient-text / `LAEC0` lane | `unaffected` |
+| particle, identity, heredity, life, cosmology claims | `unaffected_unproven` |
+
+No earlier negative result is withdrawn by FAC0-R1.
+
+### 28.10 Next gate: FAC1
+
+FAC1 is now authorized because the exact current Core response graph survived the supported-runtime replay.
+
+FAC1 must isolate the implementation terms that can otherwise be conflated in the one-step graph. In particular it must separate:
+
+```text
+explicit paired mode-coupling debit/credit;
+Phi -> Psi interaction feedback;
+grad(Phi) -> Psi drift;
+Psi activity -> mu write;
+mu -> modulation of Psi feedback;
+kappa-dependent modulation without kappa evolution;
+source injection;
+dissipation, PML, caps, reset, and decay sinks.
+```
+
+The question is not yet whether any of these is physical energy. The FAC1 question is narrower:
+
+> Which current writes are explicitly paired in software accounting, which are one-way feedback or copying-like writes, and which are sources or sinks with no represented counterpart?
+
+FAC1 must preserve the distinction between direct and same-step indirect effects and must not add a field, reservoir, reciprocal term, or ontology before the current terms have been isolated and accounted for.
+'''
+
+          text = text.rstrip() + section28 + '\n'
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Verify exact publication scope and publish checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(sha256sum research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json | awk '{print $1}')" = "af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d"
+          grep -Fq '**Version:** 0.4.1' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
+          grep -Fq '## 28. FAC0-R1 supported-runtime replay checkpoint' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
+          grep -Fq 'FAC1 is now authorized' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
+          git rm .github/workflows/fac0-r1-supported-replay.yml
+          git add research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md \
+                  research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
+          git diff --cached --check
+          mapfile -t changed < <(git diff --cached --name-only | sort)
+          expected=(
+            '.github/workflows/fac0-r1-supported-replay.yml'
+            'research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md'
+            'research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json'
+          )
+          if [ "${#changed[@]}" -ne "${#expected[@]}" ]; then
+            printf 'Unexpected changed-file count\n'; printf '%s\n' "${changed[@]}"; exit 1
+          fi
+          for i in "${!expected[@]}"; do
+            test "${changed[$i]}" = "${expected[$i]}"
+          done
+          git fetch origin develop
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/develop)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'research: record supported FAC0 replay'
+          git push origin HEAD:develop
