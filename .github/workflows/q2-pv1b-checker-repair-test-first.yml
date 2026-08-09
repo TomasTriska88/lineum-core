@@ -26,7 +26,7 @@ jobs:
           test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control_check.py)" = "50a26bcfc7ef16af33f192b97eb99690e8a13fea"
           test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py)" = "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
           test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py)" = "f6b384c895d9022e4619d2e51eeea824d1185d54"
-          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-protocol.json)" = "592eaad84f14eeb4375f80e7cb4056eef786c4d9"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-protocol.json)" = "716d93ea040b415fda6fd30ff55ba0733bcde9cb"
 
       - name: Set up supported test runtime
         uses: actions/setup-python@v5
@@ -73,7 +73,7 @@ jobs:
               'old_checker_git_blob': '50a26bcfc7ef16af33f192b97eb99690e8a13fea',
               'original_test_git_blob': '937e0c1e36c1bdad4a84749aec11ef19ffecb4d5',
               'new_regression_test_git_blob': 'f6b384c895d9022e4619d2e51eeea824d1185d54',
-              'repair_protocol_git_blob': '592eaad84f14eeb4375f80e7cb4056eef786c4d9',
+              'repair_protocol_git_blob': '716d93ea040b415fda6fd30ff55ba0733bcde9cb',
               'expected_result': '2 failed, 12 passed',
               'output_sha256': hashlib.sha256(p.read_bytes()).hexdigest(),
               'scientific_command_invoked': False,
