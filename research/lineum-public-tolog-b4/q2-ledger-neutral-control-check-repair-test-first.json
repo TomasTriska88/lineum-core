@@ -1,0 +1,16 @@
+{
+  "classification": "expected_test_first_failure",
+  "expected_result": "2 failed, 12 passed",
+  "new_regression_test_git_blob": "f6b384c895d9022e4619d2e51eeea824d1185d54",
+  "old_checker_git_blob": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+  "original_test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+  "output_sha256": "be4a4f842ce217f764628d04bb7ed175545841e32e5be8fe13eb653753985d09",
+  "repair_protocol_git_blob": "716d93ea040b415fda6fd30ff55ba0733bcde9cb",
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-repair-test-first/1",
+  "scientific_command_invoked": false,
+  "scientific_interpretation": "none; this receipt only proves that the frozen pre-repair checker does not satisfy the two preregistered residual-comparison regressions",
+  "stage": "Q2-PV1-B-CHECK-REPAIR",
+  "workflow_artifact_uploaded": false,
+  "workflow_run_id": 31311249667,
+  "workflow_source_commit": "b31b939d6b1b311bc0eba08aa1366bf3e57b4a57"
+}
