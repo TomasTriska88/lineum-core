@@ -1305,8 +1305,8 @@ def cen(p):
 def ds(p):
     p = cen(p); out = []
     for i in range(len(p)):
-        for j in range(i+1,len(p)):
-            out.append(math.hypot(p[i][0]-p[j][0],p[i][1]-p[j][1]))
+        for j in range(i+1, len(p)):
+            out.append(math.hypot(p[i][0]-p[j][0], p[i][1]-p[j][1]))
     return sorted(out)
 
 def ed(p, r):
