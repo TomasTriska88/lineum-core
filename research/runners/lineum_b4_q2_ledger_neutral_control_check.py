@@ -554,7 +554,6 @@ NUMERIC_BRANCH_FIELDS = (
     "phi_profile_error",
 )
 NUMERIC_LEDGER_FIELDS = (
-    "delta_ledger",
     "epsi_after",
     "epsi_before",
     "ledger_after",
@@ -582,11 +581,33 @@ CATEGORICAL_BRANCH_FIELDS = (
 )
 
 
+def ledger_residual_values(
+    ledger: dict[str, Any],
+) -> tuple[float | None, float | None, bool]:
+    try:
+        delta = float(ledger["delta_ledger"])
+        tolerance = float(ledger["ledger_tolerance"])
+    except (KeyError, TypeError, ValueError):
+        return None, None, False
+    within = bool(
+        math.isfinite(delta)
+        and math.isfinite(tolerance)
+        and tolerance >= 0.0
+        and abs(delta) <= tolerance
+    )
+    return delta, tolerance, within
+
+
 def compare_case(
     checker: dict[str, Any], primary: dict[str, Any]
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+) -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
     numeric: list[dict[str, Any]] = []
     categorical: list[dict[str, Any]] = []
+    residual_failures: list[dict[str, Any]] = []
     key = checker["case_key"]
 
     for field in ("active_before_perturbation", "control_available", "comparison"):
@@ -682,7 +703,19 @@ def compare_case(
                     "primary": p_ledger["neutral_within_numeric_tolerance"],
                 }
             )
-    return numeric, categorical
+    if c_ledger is not None and p_ledger is not None:
+        for side, ledger in (("checker", c_ledger), ("primary", p_ledger)):
+            delta, tolerance, within = ledger_residual_values(ledger)
+            if not within:
+                residual_failures.append(
+                    {
+                        "case_key": key,
+                        "side": side,
+                        "delta_ledger": delta,
+                        "ledger_tolerance": tolerance,
+                    }
+                )
+    return numeric, categorical, residual_failures
 
 
 def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
@@ -801,11 +834,30 @@ def run(primary_path: Path) -> dict[str, Any]:
 
     numeric: list[dict[str, Any]] = []
     categorical: list[dict[str, Any]] = []
+    residual_failures: list[dict[str, Any]] = []
+    residual_diagnostics: list[dict[str, Any]] = []
     if key_set_pass:
         for key in sorted(expected):
-            n, c = compare_case(checker_map[key], primary_map[key])
+            n, c, r = compare_case(checker_map[key], primary_map[key])
             numeric.extend(n)
             categorical.extend(c)
+            residual_failures.extend(r)
+            c_ledger = checker_map[key]["perturbation_ledger"]
+            p_ledger = primary_map[key]["perturbation_ledger"]
+            if c_ledger is not None and p_ledger is not None:
+                c_delta, c_tolerance, c_within = ledger_residual_values(c_ledger)
+                p_delta, p_tolerance, p_within = ledger_residual_values(p_ledger)
+                residual_diagnostics.append(
+                    {
+                        "case_key": key,
+                        "checker_delta_ledger": c_delta,
+                        "checker_ledger_tolerance": c_tolerance,
+                        "checker_within_tolerance": c_within,
+                        "primary_delta_ledger": p_delta,
+                        "primary_ledger_tolerance": p_tolerance,
+                        "primary_within_tolerance": p_within,
+                    }
+                )
 
     checker_summary = summarize(checker_rows)
     primary_summary = primary.get("summary", {})
@@ -848,6 +900,7 @@ def run(primary_path: Path) -> dict[str, Any]:
         and key_set_pass
         and not numeric
         and not categorical
+        and not residual_failures
         and checker_summary["neutral_perturbation_failure_count"] == 0
     )
 
@@ -864,6 +917,9 @@ def run(primary_path: Path) -> dict[str, Any]:
         "numeric_mismatches": numeric,
         "categorical_mismatch_count": len(categorical),
         "categorical_mismatches": categorical,
+        "ledger_residual_failure_count": len(residual_failures),
+        "ledger_residual_failures": residual_failures,
+        "ledger_residual_diagnostics": residual_diagnostics,
         "maximum_absolute_difference_among_mismatches": (
             0.0 if not absolute_differences else max(absolute_differences)
         ),
@@ -920,6 +976,7 @@ def main() -> int:
                 "key_set_pass": payload["key_set_pass"],
                 "numeric_mismatch_count": payload["numeric_mismatch_count"],
                 "categorical_mismatch_count": payload["categorical_mismatch_count"],
+                "ledger_residual_failure_count": payload["ledger_residual_failure_count"],
                 "independent_summary": payload["independent_summary"],
                 "payload_sha256": payload["canonical_payload_sha256_without_self"],
             },

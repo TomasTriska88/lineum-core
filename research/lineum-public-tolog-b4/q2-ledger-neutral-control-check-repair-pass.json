@@ -1,0 +1,37 @@
+{
+  "branch_reachable_reconstruction": {
+    "checker_blob_after": "0b9ecc9f56aa943cf37f2c84409446608888b4a6",
+    "checker_blob_before": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+    "fixture_blob_after": "06ed2da5f7d3173111a1dfab51c4f4766dc2224d",
+    "fixture_blob_before": "f6b384c895d9022e4619d2e51eeea824d1185d54",
+    "reconstruction_rule": "Deterministic application of the exact frozen checker residual-comparison repair plus the fixture-only correction that held all strict ledger fields and the stored neutrality category fixed while varying only raw delta_ledger.",
+    "tested_workspace_blob_ids_retained_by_original_run": false,
+    "terminal_newline_note": "The reconstructed checker omits the pre-repair file's terminal newline. This is a non-semantic one-byte representation difference from the workflow workspace and will be covered by the complete supported-runtime regression gate again before any fresh scientific checker execution."
+  },
+  "classification": "supported_runtime_regression_pass_reconstructed_after_retention_failure",
+  "frozen_inputs": {
+    "primary_blob": "50d3f15d881e0665a450982053a9216f9cf5739c",
+    "repair_protocol_blob": "716d93ea040b415fda6fd30ff55ba0733bcde9cb",
+    "test_first_receipt_blob": "0228faedaa26b2e9a69355fcceeef35a963ebbab"
+  },
+  "original_supported_runtime_run": {
+    "environment": {
+      "numpy": "1.26.4",
+      "os": "Ubuntu 24.04",
+      "pytest": "9.1.1",
+      "python": "3.11.15"
+    },
+    "job_id": 93283235194,
+    "pytest_failed": 0,
+    "pytest_passed": 40,
+    "pytest_summary": "40 passed in 0.22s",
+    "retention_failure": "After the complete regression gate passed, receipt construction raised AttributeError while reading pytest version metadata through pytest.__version__. The tested checker, corrected fixture, pass receipt, and workflow deletion were therefore not committed by that run.",
+    "scientific_command_invoked": false,
+    "source_commit": "ff91a8a981e730f52bf64f6a69817bb4e772b13a",
+    "workflow_run_id": 31328688121
+  },
+  "repair_scope": "Only raw perturbation_ledger.delta_ledger leaves strict cross-implementation numeric equality. Each checker and primary raw residual must independently be finite, use a finite non-negative unchanged ledger_tolerance, and satisfy abs(delta_ledger) <= ledger_tolerance. The stored neutrality category remains an exact categorical comparison. All other numeric, categorical, summary, equation, case, perturbation, observer, recovery, and scientific-threshold rules remain unchanged.",
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-repair-pass/3",
+  "stage": "Q2-PV1-B-CHECK-REPAIR",
+  "status": "retained_reconstruction_pending_fresh_supported_runtime_retest_and_scientific_checker"
+}

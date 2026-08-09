@@ -45,10 +45,10 @@ def case(case_key: str, *, delta_ledger: float, ledger_tolerance: float) -> dict
         "delta_ledger": delta_ledger,
         "epsi_after": 100.0,
         "epsi_before": 100.0,
-        "ledger_after": 1000.0 + delta_ledger,
+        "ledger_after": 1000.0,
         "ledger_before": 1000.0,
         "ledger_tolerance": ledger_tolerance,
-        "neutral_within_numeric_tolerance": abs(delta_ledger) <= ledger_tolerance,
+        "neutral_within_numeric_tolerance": True,
         "pphi_unchanged": 900.0,
     }
     return {
