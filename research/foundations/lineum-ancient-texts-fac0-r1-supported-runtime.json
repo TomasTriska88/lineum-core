@@ -1,0 +1,262 @@
+{
+  "canonical_payload_sha256_without_self": "18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280",
+  "deterministic_response_l2": {
+    "delta": {
+      "kappa": 0.0,
+      "mu": 0.0,
+      "phi": 0.0,
+      "psi": 0.0
+    },
+    "kappa": {
+      "kappa": 0.0001000000000000626,
+      "mu": 3.5825278817618605e-09,
+      "phi": 9.079090282645104e-10,
+      "psi": 3.627899615190725e-08
+    },
+    "mu": {
+      "kappa": 0.0,
+      "mu": 0.0001000015021432722,
+      "phi": 1.2612202520919595e-12,
+      "psi": 2.9527480175484684e-08
+    },
+    "phi": {
+      "kappa": 0.0,
+      "mu": 2.2437524743805403e-11,
+      "phi": 9.999184870343018e-05,
+      "psi": 9.556385478027928e-08
+    },
+    "psi": {
+      "kappa": 0.0,
+      "mu": 2.2907512838914175e-08,
+      "phi": 4.063511924708403e-09,
+      "psi": 9.991002372320469e-05
+    }
+  },
+  "environment": {
+    "execution_backend": {
+      "canonical_audit_allowed_on_cuda": false,
+      "cuda_available": false,
+      "cuda_compatible": null,
+      "cuda_compiled_architectures": [],
+      "cuda_device_architecture": null,
+      "deterministic_mode": true,
+      "device_name": "CPU",
+      "enforced_canonical": true,
+      "execution_backend": "numpy",
+      "execution_device": "numpy",
+      "reason": null,
+      "requested_device_mode": "numpy"
+    },
+    "numpy": "1.26.4",
+    "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+    "python": "3.11.9",
+    "repository_numpy_contract": ">=1.24,<2.0.0",
+    "repository_numpy_contract_pass": true
+  },
+  "graph_check": {
+    "forbidden_failures": [],
+    "forbidden_threshold": 1e-15,
+    "passed": true,
+    "required_failures": [],
+    "required_threshold": 1e-16
+  },
+  "linearity_check": {
+    "passed": true,
+    "primary_stability": {
+      "kappa->kappa": {
+        "relative_span": 3.555666872084596e-11,
+        "slopes": [
+          1.0000000000026643,
+          0.9999999999671076,
+          0.9999999999976676
+        ]
+      },
+      "mu->mu": {
+        "relative_span": 1.632602842596243e-11,
+        "slopes": [
+          1.0000150214437542,
+          1.000015021431161,
+          1.000015021427428
+        ]
+      },
+      "phi->phi": {
+        "relative_span": 2.7925606612131193e-11,
+        "slopes": [
+          0.9999184871034751,
+          0.9999184870885077,
+          0.9999184870755518
+        ]
+      },
+      "psi->psi": {
+        "relative_span": 1.1807809678013206e-10,
+        "slopes": [
+          0.9991002371875363,
+          0.9991002373055081,
+          0.9991002372671407
+        ]
+      }
+    },
+    "rows": {
+      "1.9999999999999999e-06": {
+        "delta": {
+          "kappa": 0.0,
+          "mu": 0.0,
+          "phi": 0.0,
+          "psi": 0.0
+        },
+        "kappa": {
+          "kappa": 0.9999999999976676,
+          "mu": 3.582527779627809e-05,
+          "phi": 9.07904330217074e-06,
+          "psi": 0.0003627897928786179
+        },
+        "mu": {
+          "kappa": 0.0,
+          "mu": 1.000015021427428,
+          "phi": 1.2612489050880714e-08,
+          "psi": 0.0002952749369011421
+        },
+        "phi": {
+          "kappa": 0.0,
+          "mu": 2.2438322814595043e-07,
+          "phi": 0.9999184870755518,
+          "psi": 0.0009556397078101696
+        },
+        "psi": {
+          "kappa": 0.0,
+          "mu": 0.00022906284778486023,
+          "phi": 4.0632959010030534e-05,
+          "psi": 0.9991002372671407
+        }
+      },
+      "4.9999999999999998e-07": {
+        "delta": {
+          "kappa": 0.0,
+          "mu": 0.0,
+          "phi": 0.0,
+          "psi": 0.0
+        },
+        "kappa": {
+          "kappa": 1.0000000000026643,
+          "mu": 3.582528441434842e-05,
+          "phi": 9.079143430448862e-06,
+          "psi": 0.0003627899255847898
+        },
+        "mu": {
+          "kappa": 0.0,
+          "mu": 1.0000150214437542,
+          "phi": 1.2619480783356016e-08,
+          "psi": 0.00029527495264261344
+        },
+        "phi": {
+          "kappa": 0.0,
+          "mu": 2.2441188074285822e-07,
+          "phi": 0.9999184871034751,
+          "psi": 0.000955639850715156
+        },
+        "psi": {
+          "kappa": 0.0,
+          "mu": 0.00022906267322800382,
+          "phi": 4.0632888707820185e-05,
+          "psi": 0.9991002371875363
+        }
+      },
+      "9.9999999999999995e-07": {
+        "delta": {
+          "kappa": 0.0,
+          "mu": 0.0,
+          "phi": 0.0,
+          "psi": 0.0
+        },
+        "kappa": {
+          "kappa": 0.9999999999671076,
+          "mu": 3.582530099529781e-05,
+          "phi": 9.07902640288447e-06,
+          "psi": 0.00036278982319889845
+        },
+        "mu": {
+          "kappa": 0.0,
+          "mu": 1.000015021431161,
+          "phi": 1.2601764935690314e-08,
+          "psi": 0.0002952749874008414
+        },
+        "phi": {
+          "kappa": 0.0,
+          "mu": 2.243877997353486e-07,
+          "phi": 0.9999184870885077,
+          "psi": 0.0009556397332091571
+        },
+        "psi": {
+          "kappa": 0.0,
+          "mu": 0.0002290627229148775,
+          "phi": 4.063297654785174e-05,
+          "psi": 0.9991002373055081
+        }
+      }
+    }
+  },
+  "passed": true,
+  "perturbation": {
+    "center_x": 0.23,
+    "center_y": -0.17,
+    "normalization": "discrete_l2_to_one",
+    "psi_phase_radians": 0.37,
+    "sigma_x": 0.29,
+    "sigma_y": 0.31
+  },
+  "primary_epsilon": 0.0001,
+  "repository_commit": "6b553b621bc5ea9ec16b649cbea2f931c6737b39",
+  "reproducibility_repair": {
+    "base_state_changed": false,
+    "core_config_changed": false,
+    "linearity_epsilons_changed": false,
+    "primary_epsilon_changed": false,
+    "prior_fac0_exact_replay_possible": false,
+    "r1_change": "freeze an explicit L2-normalized anisotropic Gaussian and constant complex Psi perturbation phase before official supported-runtime execution",
+    "reason": "prior permanent report omitted the exact smooth localized perturbation function",
+    "stochastic_delta_amplitudes_changed": false
+  },
+  "schema": "lineum-fac0-r1-directed-coupling-replay/1",
+  "scientific_scope": "implementation-level FAC0 directed response only; no physical-energy or ontology validation",
+  "source": {
+    "expected_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "math_blob_match": true,
+    "math_path": "lineum_core/math.py",
+    "observed_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a"
+  },
+  "status": "supported_runtime_replay",
+  "stochastic_delta_matched_rng": {
+    "criterion": "largest frozen delta perturbation changes Psi for at least one matched-RNG seed",
+    "passed": true,
+    "rows": [
+      {
+        "changed_seeds": 0,
+        "delta_perturbation_l2": 0.01,
+        "maximum_psi_difference": 0.0,
+        "mean_psi_difference": 0.0,
+        "seed_count": 20
+      },
+      {
+        "changed_seeds": 3,
+        "delta_perturbation_l2": 0.05,
+        "maximum_psi_difference": 0.003781864275455506,
+        "mean_psi_difference": 0.00046754347003772934,
+        "seed_count": 20
+      },
+      {
+        "changed_seeds": 7,
+        "delta_perturbation_l2": 0.2,
+        "maximum_psi_difference": 0.0038642918015632873,
+        "mean_psi_difference": 0.0010749120280950854,
+        "seed_count": 20
+      },
+      {
+        "changed_seeds": 18,
+        "delta_perturbation_l2": 0.5,
+        "maximum_psi_difference": 0.004829389915368274,
+        "mean_psi_difference": 0.0029997515655590733,
+        "seed_count": 20
+      }
+    ]
+  }
+}

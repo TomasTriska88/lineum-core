@@ -1,12 +1,13 @@
 # Ancient Texts as Dynamic-Boundary, Protocol, Reconstruction, and Accounting Hypothesis Generators for Lineum
 
-**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0 source-graph inspection is supported and independently corroborated only in an unsupported local numerical environment; no new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
-**Version:** 0.4.0  
-**Evidence cutoff:** 2026-08-07  
+**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0-R1 directed response is reproduced in a repository-supported runtime and FAC1 is authorized; no physical-energy interpretation, new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
+**Version:** 0.4.1  
+**Evidence cutoff:** 2026-08-09  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
 **Programme membership:** continuous-source cosmology and particle-formation programme  
 **Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  
+**FAC0-R1 execution commit:** `6b553b621bc5ea9ec16b649cbea2f931c6737b39`  
 **Current runtime source:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`  
 **Current profile source:** `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -18,7 +19,7 @@
 **Continuity evidence cutoff:** 2026-07-31  
 **Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
 **Immediate predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
-**Previous version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  
+**Previous version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  
 **Earlier version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
 **Older version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
 **Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
@@ -27,7 +28,7 @@
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
 **Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, preparation-history, field-coupling, and accounting programme, records the FAC0 directed-coupling checkpoint, and preserves a project-owner systems synthesis as explicit hypothesis provenance. The new synthesis asks whether individually source-audited Gnostic texts converge on a minimum domain-neutral pattern of local autonomy, limited information, false local totality, and model correction, and whether an independently frozen version of that pattern appears in Lineum without being inserted by relabeling. The named source-audit expansion includes the *Apocryphon of John*, *Hypostasis of the Archons*, *Gospel of Truth*, *Gospel of Mary*, *Gospel of Philip*, *Gospel of Judas*, and, where relevant, *Gospel of Thomas*; no common cosmology is assumed. The governing missing-piece decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, distributed/local observer limitations, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
 **Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Could the current equations be effective dynamics of a deeper generative process, and if so, can that hypothesis make a distinct falsifiable prediction rather than merely absorb residuals? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature? Do the named Gnostic texts, when audited separately, support a minimum causal pattern in which an autonomous local system has incomplete access to a larger causal state and can mistake local closure for total closure? Can that abstraction make a preregistered prediction about Lineum that survives generic-hierarchy, random-relabeling, modern-software-architecture, and source-shuffling controls? Can Lineum produce useful global organization from local states and limited interfaces without a central `God Object`, and can a local observer revise an incomplete model when additional history, boundary, relational, or source information is exposed?  
-**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; medium that local-totality and observer-reconstruction motifs are useful domain-neutral comparison classes in already checked sources; low and not yet source-audited that the broader named Gnostic set converges on one minimum causal graph beyond generic complex-systems themes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.
+**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; medium that local-totality and observer-reconstruction motifs are useful domain-neutral comparison classes in already checked sources; low and not yet source-audited that the broader named Gnostic set converges on one minimum causal graph beyond generic complex-systems themes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. FAC0-R1 is reproduced in Python 3.11.9 with NumPy 1.26.4 against the exact current `math.py` blob; this supports the implementation-level directed response graph within the tested one-step domain, while physical energy, ontology, closed resource accounting, and real-world correspondence remain unestablished.
 
 ## 1. Answer first
 
@@ -107,6 +108,8 @@ Version `0.3.0`, preserved as Git blob `f9e5cdf26a749baf9a2de4a735105830578e7a38
 Version `0.3.1`, preserved as Git blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`, added a self-contained research objective and resume checkpoint. It records the missing-piece search order, explicitly preserves the possibility that the current equations are effective/coarse-grained rather than fundamental, and prevents that possibility from being used as an unfalsifiable rescue. It also records that a renewed disposable local checkout attempt on 2026-08-07 again failed because the execution environment could not resolve `github.com`; this repeats the known technical blocker and is not a scientific negative result.
 
 Version `0.4.0` records the project-owner systems synthesis as hypothesis provenance rather than textual evidence. It adds the minimum-local-autonomy/epistemic-closure graph, expands the named source-critical target set to include the *Gospel of Mary*, *Gospel of Judas*, and relevant *Gospel of Thomas* passages alongside already active sources, registers generic-pattern and random-relabeling controls, and preregisters a distributed-versus-central architecture comparison for Lineum. The software-architecture and LaVeyan comparisons are retained only as conceptual provenance and anti-confounder prompts. FAC0-FAC5 remain the immediate accounting/state priority, all earlier bounded negative results remain binding, and no historical, physical, or ontological claim is promoted.
+
+Version `0.4.1` records the first repository-supported FAC0-R1 execution. The actual current `step_core` NumPy path passed the frozen directed-edge graph, local-linearity, and matched-RNG `delta` source-sensitivity gates under Python 3.11.9 and NumPy 1.26.4. The first remote direct-script attempt failed only because the repository root was absent from Python's import path; the same attempt's pytest gate passed. The corrected invocation changed only `PYTHONPATH=.` and then passed. This supersedes the unsupported-runtime numerical corroboration as the FAC0 decision gate without promoting any physical-energy, ontology, new-state, or ancient-physics claim.
 
 No negative result or source-critical restriction from versions `0.1.0` through `0.3.1` is withdrawn here.
 
@@ -1650,3 +1653,96 @@ FAC0-FAC5 remain the highest-priority route for the owner's current question abo
 The synthesis therefore adds a missing **question class**, not a preferred answer:
 
 > Can Lineum remain locally autonomous and globally emergent without any local part confusing its accessible state with the complete causal state, and can that distinction be demonstrated by prediction rather than metaphor?
+
+## 28. FAC0-R1 supported-runtime replay checkpoint
+
+### 28.1 Answer first
+
+FAC0-R1 passed against the actual current Core implementation in a repository-supported NumPy environment. The directed one-step response graph predicted by source inspection is therefore no longer supported only by the earlier manually transcribed checker running outside the repository NumPy contract.
+
+The narrow result is:
+
+```text
+actual current step_core
+    + frozen FAC0-R1 state/configuration/perturbations
+    + Python 3.11.9
+    + NumPy 1.26.4
+    -> predicted directed one-step response graph reproduced
+```
+
+This is an implementation-level result only. It does **not** establish physical energy, a conserved physical resource, ontology for `Psi`, `Phi`, `mu`, `kappa`, or `delta`, a need for a new field, correspondence with nature, or any claim that ancient texts encode Lineum or modern physics.
+
+### 28.2 Frozen protocol and provenance
+
+FAC0-R1 repaired one reproducibility defect in the earlier FAC0 checkpoint: the exact localized perturbation function had not been preserved. R1 froze an anisotropic Gaussian with discrete-L2 normalization before supported-runtime execution. The base state, Core configuration, causal question, response observables, expected graph, amplitudes, thresholds, and interpretation class were not retuned after seeing the result.
+
+```text
+center_x = 0.23
+center_y = -0.17
+sigma_x = 0.29
+sigma_y = 0.31
+Psi perturbation phase = 0.37 rad
+primary epsilon = 1e-4
+linearity epsilons = 5e-7, 1e-6, 2e-6
+stochastic delta amplitudes = 0.01, 0.05, 0.2, 0.5
+matched RNG seeds = 0..19
+execution commit = 6b553b621bc5ea9ec16b649cbea2f931c6737b39
+math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC0-R1 runner blob = facbd154ba24ff17ce03569da311da82d2ffb113
+FAC0-R1 test blob = 03ca4e052641bdffb4d695cf93f5e6c92b83aa7e
+Python = 3.11.9
+NumPy = 1.26.4
+backend = numpy / CPU / deterministic
+plain JSON SHA-256 = af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d
+canonical payload SHA-256 = 18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280
+temporary pytest-text SHA-256 = 09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737
+```
+
+The exact machine-readable output is retained beside this report as `lineum-ancient-texts-fac0-r1-supported-runtime.json`. It is a plain evidence companion, not a second narrative report.
+
+### 28.3 Execution chronology
+
+The local workspace still could not resolve `github.com`, so the frozen execution could not be performed in a clean local checkout. That is an infrastructure limitation, not a scientific negative result. The already preregistered one-use GitHub-hosted replay was therefore used under the local-execution exception.
+
+The first remote direct-script attempt at commit `6991f9ffb39e9cfc5f6a0dd193d4f84f0cf41512` failed before runner JSON with `ModuleNotFoundError: No module named 'lineum_core'`; its pytest gate nevertheless passed. The only correction was `PYTHONPATH=.`. No Core source, runner, test, perturbation, threshold, seed, metric, expected graph, or interpretation changed. The corrected run was GitHub Actions run `31305696058`, job `93225609854`, at commit `6b553b621bc5ea9ec16b649cbea2f931c6737b39`. The regression gate reported `1 passed in 0.14s`.
+
+### 28.4 Observed response and controls
+
+The frozen graph gate passed with no required-edge or forbidden-edge failures:
+
+```text
+Psi perturbation   -> Psi, Phi, mu
+Phi perturbation   -> Psi, Phi, mu
+mu perturbation    -> Psi, Phi, mu
+kappa perturbation -> Psi, Phi, mu, kappa
+delta perturbation -> no deterministic response when stochastic source is disabled
+```
+
+The `Phi -> mu` and `mu -> Phi` one-step responses remain sequential same-step effects through `Psi`, not evidence of direct reciprocal physical transfer. `kappa` affects all dynamic outputs while remaining supplied rather than evolved by `step_core`.
+
+Self-edge relative slope spans across `5e-7`, `1e-6`, and `2e-6` were `1.1807809678013206e-10` (`Psi`), `2.7925606612131193e-11` (`Phi`), `1.632602842596243e-11` (`mu`), and `3.555666872084596e-11` (`kappa`), all below the frozen `1e-4` criterion. This is local one-step stability, not global linearity.
+
+With stochastic source enabled and matched RNG seeds, `delta` perturbations changed `Psi` in `0/20`, `3/20`, `7/20`, and `18/20` seeds for L2 amplitudes `0.01`, `0.05`, `0.2`, and `0.5` respectively. The frozen criterion required the largest perturbation to alter `Psi` for at least one seed; it passed. This supports only the implementation statement that `delta` enters the stochastic source-probability path.
+
+### 28.5 Evidence status and next gate
+
+Source inspection established the expected writes and ordering before the supported replay; FAC0-R1 then exercised the actual current `step_core`; the regression gate checked the frozen receipt conditions. This is methodological independence, not a second complete numerical implementation.
+
+```text
+current implementation computes directed writes = established by source audit
+supported-runtime one-step response = reproduced
+local perturbation scaling = reproduced within tested amplitudes
+stochastic delta source sensitivity = reproduced within tested amplitudes/seeds
+closed physical resource account = not established
+physical energy identification = not established
+new fundamental state necessity = not established
+real-world physical correspondence = none
+ancient-physics correspondence = none
+```
+
+FAC0-R1 supports the current directed-coupling graph and unblocks FAC1. It does not alter the later FAC2-FAC5 gates, does not privilege the DG0 deeper-generative/effective-equation candidate, and does not alter the separate LAEC0 local-autonomy/epistemic-closure source-audit lane. No earlier negative result is withdrawn.
+
+FAC1 must now isolate the explicit paired mode-coupling debit/credit, `Phi -> Psi` interaction feedback, `grad(Phi) -> Psi` drift, `Psi activity -> mu` write, `mu -> Psi` modulation, `kappa`-dependent modulation without `kappa` evolution, and source/sink paths. Then continue FAC2 through FAC5 unless a frozen result makes another already registered discriminator strictly cheaper.
+
+**Resume instruction for a new conversation:** read the current repository rules and this report from `develop`, verify its current SHA, then continue from FAC1. Treat FAC0-R1 as `reproduced` at the implementation level only; retain every historical negative, contradiction, source-critical restriction, and the zero-evidence boundary on ancient-physics claims.
+
