@@ -1073,3 +1073,89 @@ The next source-critical checkpoint must:
 7. verify the full bibliographic details and scope of the giant-appetite and Book of Giants scholarship;
 8. audit Valentinian syzygy and Limit motifs through critical sources before operational promotion;
 9. add negative matches where a popular modern Gnostic claim is absent from or contradicts the primary texts.
+
+## 16. Priority A preregistration — cohesion observer known-answer fixture
+
+**Evidence status:** `[toy][preregistered]`; no result has been inspected at the time of this section's publication.
+
+### 16.1 Question and permitted conclusion
+
+Can a deliberately simple cohesion observer distinguish an internally restoring collective from four look-alikes that can preserve shape, move together, remain geometrically connected, or synchronize only because of an external source?
+
+This checkpoint tests only observer validity on systems with known mechanisms. It does not test the Lineum equation, establish a new Lineum field, validate a physical soul or spirit concept, or show that Stoic pneuma corresponds to nature.
+
+### 16.2 Frozen fixtures
+
+All point-like fixtures use a reference regular octagon of radius `1`, except the smooth scalar patch, which uses a fixed `5 x 5` weighted support grid on `[-1, 1]^2`. A common transport velocity `(0.25, -0.10)` is added as a deliberately non-identifying co-motion control.
+
+1. **Internal restoring collective:** eight points with complete-graph pairwise springs whose rest lengths are the reference octagon distances. The source-off internal dynamics are overdamped gradient flow with spring coefficient `k = 6.0`.
+2. **Matched advected gas:** the same eight-point initial geometry and common transport, but no internal restoring interaction.
+3. **Smooth transported scalar patch:** a Gaussian-weighted `5 x 5` support grid transported uniformly with no restoring dynamics.
+4. **Rigid translated template:** the same eight-point geometry is transported without an internal deformation-restoring law; after an imposed affine deformation the deformed template is simply carried along.
+5. **Source-maintained synchronized population:** the octagon can be restored by an external positional controller while the source is on, but the controller is disabled for the decisive source-off challenge. Its phases are externally locked source-on and then evolve at fixed natural frequencies spanning `1 - 0.35` to `1 + 0.35` source-off.
+
+### 16.3 Frozen perturbations and integration
+
+Apply each of these affine perturbations independently to a fresh reference state:
+
+```text
+P1: x stretch by 1.35
+P2: y stretch by 1.35
+P3: x shear by 0.30 * y
+P4: x compression by 0.75
+```
+
+For the internal spring fixture use explicit overdamped Euler integration with `dt = 0.002` for `T = 8.0`, with the center-of-mass translation handled separately so that transport cannot masquerade as internal relaxation. No random seed is required.
+
+The source-maintained fixture receives one source-on demonstration challenge and then a fresh decisive challenge after the external controller is disabled. The other non-restoring fixtures evolve only by their declared uniform transport.
+
+### 16.4 Frozen observables
+
+Primary relational error `E_d` is the root-mean-square difference between the sorted pairwise-distance spectrum of the centroid-normalized current state and its own reference state, divided by the mean reference pairwise distance. Sorting makes the quantity permutation invariant; centering and pairwise distances make it translation and rotation invariant.
+
+For each perturbation define distance-spectrum recovery
+
+```text
+R_d = clip((E_d_initial - E_d_final) / E_d_initial, 0, 1).
+```
+
+A secondary shape observable uses the two eigenvalues of the centered `2 x 2` covariance matrix and forms an analogous recovery score `R_cov`. The weighted covariance is used for the scalar patch.
+
+The following are recorded as confound controls rather than sufficient evidence of cohesion:
+
+- proximity-graph connectedness at fixed radius `1.20`;
+- centroid transport speed;
+- phase order parameter for the externally synchronized population;
+- source-on restoration where applicable.
+
+### 16.5 Frozen decision rule
+
+The observer passes this known-answer fixture only if all of the following occur without changing thresholds after inspection:
+
+1. the internally restoring collective has median `R_d >= 0.80` across P1-P4 after the source-off run;
+2. its median `R_cov >= 0.80` across P1-P4;
+3. each of the four negative fixtures fails the `R_d >= 0.80` source-off criterion;
+4. the source-maintained population may restore while driven but must be rejected after source removal;
+5. common translation, graph connectedness, or high source-on phase order must not by themselves produce a cohesion-positive classification.
+
+If the known-answer suite does not satisfy these rules, the observer is invalid and must not be applied to Lineum. Thresholds, perturbations, or fixture definitions may not be retuned to rescue a failed result.
+
+### 16.6 Independent check and numerical caveat
+
+For the internal spring fixture the pair potential is
+
+```text
+V = 0.5 * k * sum_{i<j} (|x_i - x_j| - l_ij)^2.
+```
+
+The declared overdamped source-off dynamics are gradient flow, `dx/dt = -grad(V)`, so in the continuous toy model
+
+```text
+dV/dt = -|grad(V)|^2 <= 0.
+```
+
+This analytic energy descent is an independent known-answer check on the intended restoring mechanism; it is not a proof about Lineum. The finite-step implementation must separately report whether the discrete potential is non-increasing within numerical tolerance.
+
+Repository dependency intake found that the active runtime has Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, and pandas `2.2.3`, while the repository currently requires `numpy>=1.24,<2.0.0`. An attempted dependency reconciliation could not obtain a compatible NumPy build from the available package index. Therefore the official Priority-A executable will use only the Python standard library, and the environment mismatch remains a recorded execution limitation rather than being hidden.
+
+A local Git clone was also attempted before connector publication but failed because the execution shell could not resolve `github.com`; repository reads and publication therefore use the GitHub connector while numerical execution remains local.
