@@ -53,7 +53,7 @@
     },
     "research/lineum-public-tolog-b4/q2-ledger-neutral-control.json": {
       "git_blob_sha": "50d3f15d881e0665a450982053a9216f9cf5739c",
-      "role": "Q2-PV1-B supported-runtime primary pending independent checker",
+      "role": "Q2-PV1-B supported-runtime primary independently reproduced by fresh repaired checker",
       "sha256": "330d36228cd9b7134df7245e95605b29e8ff9d647277d905564e18b53f276eac"
     },
     "research/lineum-public-tolog-b4/q2-observer-frame-compact.json": {
@@ -90,12 +90,25 @@
       "role": "retained Q2-SA1-A primary eight-case result"
     },
     "research/runners/lineum_b4_q2_ledger_neutral_control_check.py": {
-      "git_blob_sha": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
-      "role": "frozen separately implemented Q2-PV1-B independent checker source"
+      "git_blob_sha": "0b9ecc9f56aa943cf37f2c84409446608888b4a6",
+      "role": "repaired separately implemented Q2-PV1-B independent checker used by passing fresh run"
     },
     "tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py": {
       "git_blob_sha": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
       "role": "frozen Q2-PV1-B independent checker regression tests"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repaired.json": {
+      "git_blob_sha": "07d46581f8cd9973ed82c40bbfea6af372a31dd5",
+      "role": "successful fresh repaired independent Q2-PV1-B checker result",
+      "sha256": "d84f4baf652da10eca457d6e144f15679072c789b8973673c534fc48db6dd21f"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repaired-execution.json": {
+      "git_blob_sha": "e7cddd8010b1543cc3101c59220c4dd2de5d240f",
+      "role": "fresh repaired Q2-PV1-B supported-runtime independent-checker execution receipt"
+    },
+    "tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py": {
+      "git_blob_sha": "06ed2da5f7d3173111a1dfab51c4f4766dc2224d",
+      "role": "frozen Q2-PV1-B residual-comparison repair regressions"
     }
   },
   "primary_input": {
@@ -123,7 +136,7 @@
     "pre_execution_tests_passed": 26,
     "primary_workflow_run": 31308634065,
     "q2_classification_changed_count": 0,
-    "scientific_status": "primary_pending_independent_check",
+    "scientific_status": "independently_reproduced_within_frozen_26_available_control_domain",
     "workflow_artifact_uploaded": false
   },
   "q2_ledger_neutral_control_checker": {
@@ -142,12 +155,29 @@
     "local_preflight_numpy": "2.3.5",
     "local_preflight_scientific_status": "unsupported_runtime_helper_preflight_only",
     "local_preflight_tests_passed": 12,
-    "official_result": false,
+    "official_result": true,
     "protocol_git_blob": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
     "repair_scope": "delta_ledger raw cancellation residual comparison only",
-    "repair_status": "frozen_before_implementation",
-    "scientific_status": "attempt_1_technical_comparison_method_failure",
-    "test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
+    "repair_status": "fresh_supported_runtime_pass",
+    "scientific_status": "independently_reproduced_within_frozen_26_available_control_domain",
+    "test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+    "fresh_workflow_run": 31332207459,
+    "fresh_workflow_job": 93292140542,
+    "fresh_workflow_source_commit": "5427a73ffb7741a98895a3d9ac5cc39314a2be8f",
+    "fresh_retention_commit": "650bc9ba2fbe3049fce21cfb82dd0faf1cc4067c",
+    "fresh_tests_passed": 40,
+    "fresh_checker_exit_code": 0,
+    "fresh_result_git_blob": "07d46581f8cd9973ed82c40bbfea6af372a31dd5",
+    "fresh_execution_receipt_git_blob": "e7cddd8010b1543cc3101c59220c4dd2de5d240f",
+    "fresh_result_sha256": "d84f4baf652da10eca457d6e144f15679072c789b8973673c534fc48db6dd21f",
+    "fresh_canonical_payload_sha256_without_self": "197937fdf1a5d9100349f8197b038f8c5282f4d13cc912bf365e32b736234fa7",
+    "fresh_numeric_mismatch_count": 0,
+    "fresh_categorical_mismatch_count": 0,
+    "fresh_ledger_residual_failure_count": 0,
+    "fresh_control_available_count": 26,
+    "fresh_control_unavailable_count": 2,
+    "fresh_balanced_rescue_count": 0,
+    "fresh_q2_classification_changed_count": 0
   },
   "q2_observer_frame": {
     "canonical_payload_without_elapsed_sha256": "c6c70c864835e54835eb1d8f4c462151d321fc876a40aa6784267618bc9fe4d7",
