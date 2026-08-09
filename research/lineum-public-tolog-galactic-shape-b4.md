@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the tested domain, the mandatory owner-intuition gate is open before any replacement-mechanism selection, and Questions 1 and 3 remain unchanged
-**Version:** 0.24.8 \
-**Evidence cutoff:** 2026-08-09  
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered and a coordinate-safe existing-mechanism audit identifies retained `mu` history as the cheapest next Q2 discriminator, but no new causal-return execution has yet been performed; Questions 1 and 3 remain unchanged
+**Version:** 0.24.9 \
+**Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `fc9574e98ff00db554374a16c9baee31be5e362e` \
+**Checkpoint parent:** `f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -16,6 +16,8 @@ Versions through `0.10.1` used opaque compressed Unicode payloads. They are no l
 The concurrent `0.11.2` checkpoint at `bf768c5a3463f3d959058bf91eaf7653face1cc6` preserved a complete next-thread handoff and a detailed spatial debit-and-flux candidate protocol. Version `0.12.0` retained that protocol behind the mandatory owner-intuition gate. Version `0.13.0` recorded the owner's response and Káťa's separately attributed hypothesis. Version `0.13.1` applied the owner's correction that the report must remain confined to the three original questions. Version `0.14.0` completed a scope-limited historical variant retrieval and froze the observer-first Question 2 discriminator before any outcome was inspected. Version `0.15.0` recorded the completed `Q2-O1` result without changing its thresholds after inspection. Version `0.16.0` recorded the owner's next neutral response, performed the permitted scope-limited agent retrieval, ranked only Q2/Q3-relevant candidates, and locked the next minimal Q2 spatial-accounting design before scientific execution. Version `0.16.1` recorded exact historical harness recovery and frozen-test success. Version `0.16.2` corrected one unsupported environment-noise sentence. Version `0.17.0` recorded the published plain harness and frozen Stage A accounting and triage rules before any official outcome was inspected. Version `0.18.0` recorded the retained supported-runtime Stage A primary while withholding its mechanism interpretation pending independent verification. Version `0.19.0` froze the separate checker implementation, source identities, numerical comparison tolerances, independence constraints, and checker tests before checker execution. Version `0.19.1` records the first supported-runtime checker attempt as a technical comparison-schema failure with no retained scientific checker result and freezes the only permitted correction scope before another attempt. Version `0.19.2` records that exact comparison-schema repair, preserves a failed synthetic-fixture regression attempt as a technical non-result, and records the corrected supported-runtime regression gate passing `25 / 25` before any second scientific checker execution. Version `0.20.0` records the successful second independent checker, exact zero disagreement on every frozen compared quantity and category, no Stage B candidate, removal of the one-use workflow, repair of the artifact manifest, and reopening of the mandatory owner-intuition gate before replacement-mechanism selection. Version `0.21.0` records the subsequent owner exchange without attributing agent-generated repair ideas to the owner, reasserts that all work must stay inside Q1–Q3, identifies the exact canonical Q2 perturbation as a potential ledger-validity confound, preserves the already-seen unsupported-runtime diagnostics as exploratory only, and preregisters `Q2-PV1` before any replacement equation is selected. Version `0.21.1` clarifies before official `Q2-PV1-A` execution that the canonical runner gates the radial multipliers by its pre-perturbation `active` mask: inactive failed rows remain in the exact 28-case key set, receive the canonical no-op, and are marked `not_applicable_inactive` rather than being counted as evidence for ledger neutrality. Version `0.21.2` froze the exact test-first runner/test byte identities and local pure-test receipt, but the connector publication sequence left those two source blobs staged only in unreferenced Git objects rather than reachable from `develop`; no scientific execution occurred. Version `0.21.3` corrected that publication status before any official run and preserved the exact intended blob identities while requiring a fresh commit based on the current branch head. Version `0.21.4` recorded that the exact two-file candidate commit had again been built and diff-verified on the current report parent, but the branch ref had not yet been advanced. Version `0.21.5` records the later connector publication chronology honestly: an accidental empty root probe file was created and removed with no scientific execution, then the frozen runner and test reached `develop` in two sequential contents commits rather than the intended atomic Git Data commit; both published files were read back at the exact frozen blob identities before any official `Q2-PV1-A` execution. Version `0.22.0` records the first official supported-runtime `Q2-PV1-A` primary after a `16 / 16` pre-execution test gate, retains the complete 28-case sufficient statistics as ordinary JSON, records `28 / 28` active rows, `24 / 28` non-neutral rows and `4 / 28` numerically neutral rows under the frozen threshold, corrects the earlier exploratory expectation that two rows would be inactive, and explicitly withholds final methodological interpretation pending the separately implemented checker. Version `0.22.1` records the first independent retained-statistics checker attempt as a technical comparison-method failure, preserves its exact eight residual mismatches and otherwise matching 28-case categories and aggregate summary, records the connector publication defects for the checker source/test, and freezes a narrow test-first repair before any second checker execution. Version `0.22.2` records repaired-checker attempt 2 as a pre-execution source-identity failure: the supported environment and report checks passed, but two workflow constants were not the actual branch-reachable Git blob identities of the repaired checker and its test, so neither the test gate nor checker executed; the only permitted attempt-3 correction is those two workflow identity constants. Version `0.23.0` records repaired-checker attempt 3 as the first successful independent `Q2-PV1-A` verification after the exact workflow-identity correction, retains the checker JSON, confirms zero numeric and categorical mismatches under the frozen comparison rules, removes the one-use workflow, and unlocks the preregistered ledger-neutral radial control without changing Q1 or Q3. Version `0.24.0` records that ledger-neutral control as `Q2-PV1-B`: the protocol and harness were frozen before outcome inspection, the first supported-runtime attempt passed `23 / 23` tests but failed only at strict JSON serialization of non-finite diagnostics and is retained as a technical non-result, a serialization-only `null` representation repair was frozen without changing science, and the second supported-runtime attempt passed `26 / 26` tests and retained a primary result with 26 available neutral controls, two explicit unavailable degenerate rows, zero Q2 rescues, and zero Q2 classification changes. Independent PV1-B verification remains required before mechanism selection. Version `0.24.1` freezes the post-primary independent PV1-B checker after the primary and report checkpoint, records its separate implementation boundary, exact source/test/protocol identities, `1e-8 + 1e-12 * scale` numerical comparison rule, complete decision surface, `12 / 12` unsupported-runtime helper preflight, and supported-runtime execution gate before any official checker result. Version `0.24.2` records the first official PV1-B checker after a `38 / 38` supported-runtime test gate: protocol and key-set checks passed, all categorical outputs and the complete independent summary matched the primary, but the checker returned `passed = false` because two raw `delta_ledger` cancellation residuals differed across operation orderings. Both residuals are roughly one millionth of their already-frozen ledger tolerances, so the attempt is classified as a technical comparison-method failure. The only permitted repair is frozen before implementation and changes no equation, case, observer, scientific threshold, recovery metric, summary rule, or other numeric comparison field. Version `0.24.3` records the supported-runtime test-first falsification of that frozen repair contract: against the unchanged old checker and its original 12 tests, the two new preregistered residual-comparison regressions failed exactly as required (`2 failed / 12 passed`); the workflow intentionally treated that exact pattern as success, retained the receipt, removed itself, and invoked no scientific checker command. The repair scope remains unchanged and is now authorized for implementation only. Version `0.24.4` records two repair-application transport failures with no checker science. Version `0.24.5` records the first bounded repair regression run, where `38 / 40` passed and the two failures exposed a fixture that unintentionally changed strict `ledger_after`. Version `0.24.6` records the fixture-only correction and the same already-frozen checker repair passing the complete supported-runtime `40 / 40` regression gate; the run failed only afterward while constructing its retention receipt because pytest version metadata was read through an unavailable module attribute, so the tested modified source/test were not committed and no 28-case scientific checker ran. Version `0.24.7` records the branch-reachable deterministic reconstruction of that already-tested repair, its corrected fixture, a plain retention receipt, and removal of the failed one-use workflow; exact reconstructed identities are now frozen before a fresh supported-runtime re-test and scientific checker.
 
 Version `0.24.8` records the fresh supported-runtime execution from the exact branch-reachable repaired PV1-B checker after the complete `40 / 40` regression gate. The independent checker returned `passed = true`, `protocol_pass = true`, and `key_set_pass = true`, with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, and exact agreement with the primary `28 / 26 / 2 / 0 / 0` decision summary. This closes the technical residual-comparison chain without changing an equation, case, perturbation formula, observer, scientific threshold, Q1 surface, Q3 state, or whitepaper. The bounded no-rescue conclusion is now `robust_within_tested_domain`, and the mandatory owner-intuition gate opens before any replacement mechanism is selected. Questions 1 and 3 are unchanged.
+
+Version `0.24.9` records the owner's independent post-negative intuition that the missing ingredient may be a description, instruction, or guide for returning toward a prior state, followed by the owner's separate warning that a Lineum field may use swapped or unusual coordinate semantics. A current-code and retained-history audit identifies `mu` as an already implemented slow history field and recovers an earlier public label-retention protocol that explicitly distinguished passive storage from causal reuse. The production directional `phi`-gradient path uses the first array-axis derivative as the real component and the second as the imaginary component while production variable names call them `x` and `y`; both NumPy and PyTorch preserve the same numerical ordering, and the existing B4 runner deliberately mirrors it. No prior B4 Q2 result is invalidated by this naming convention. The next causal-memory discriminator is constrained to begin with `drift_strength = 0`, so the coordinate-sensitive directional `phi`-gradient term is absent from the primary lane. The first emergency report-publication workflow for this checkpoint passed its frozen source-identity gates but stopped before commit because `git diff --check` rejected Markdown trailing spaces on the newly edited evidence-cutoff line. That was a technical transport failure with no scientific execution or retained report change. This version records the corrected transport chronology without changing any scientific result.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -1581,3 +1583,170 @@ Versions `0.1.0`–`0.9.7` remain in Git history. `0.9.8`–`0.10.1` introduced 
 `0.24.8` records the fresh repaired PV1-B independent checker after the exact branch-reachable `40 / 40` supported-runtime regression gate, retains the passing `28 / 26 / 2 / 0 / 0` decision surface with zero ordinary numeric, categorical, or ledger-residual failures, promotes only the bounded no-rescue conclusion to `robust_within_tested_domain`, and opens the mandatory owner-intuition gate before replacement-mechanism selection. The final report/manifest synchronization is documentation-only and uses the owner-authorized GitHub Actions transport exception because the connector could not safely replace the large readable report atomically. The first transport attempt applied the intended in-workspace patch but failed closed before commit because `git diff --check` rejected two newly added Markdown hard-break lines with trailing spaces; it changed no retained report or manifest. This retry changes only that Markdown representation, performs no scientific checker, simulation, or threshold change, and removes both temporary finalization workflows in the retained checkpoint.
 
 A new researcher must re-read current rules and verify the current `develop` head, this report, and `research/lineum-public-tolog-b4/artifact-manifest.json`. Treat the localized checker, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-A` as already completed at the bounded evidence levels stated above. Preserve all technical non-results rather than rewriting history. Treat `q2-ledger-neutral-control.json` as the retained primary with the exact result `26 available / 2 unavailable / 0 neutral failures / 0 Q2 rescues / 0 classification changes`. Preserve `q2-ledger-neutral-control-check.json` from run `31310400036` as the first technical comparison-method failure rather than rewriting that history. The repaired branch-reachable checker blob `0b9ecc9f56aa943cf37f2c84409446608888b4a6` then passed all `40 / 40` supported-runtime regressions and one fresh independent 28-case run `31332207459`; the passing result is `q2-ledger-neutral-control-check-repaired.json`, blob `07d46581f8cd9973ed82c40bbfea6af372a31dd5`, retained in commit `650bc9ba2fbe3049fce21cfb82dd0faf1cc4067c`. The PV1-B no-rescue conclusion is therefore `robust_within_tested_domain` for the exact frozen eligible control domain. The next gate is owner intuition. Do not select, rank, tune, or execute a replacement mechanism before the owner's response.
+
+## Q2-M0 — Owner instruction intuition, coordinate audit, and existing `mu` retrieval
+
+### Owner response and coordinate warning
+
+This checkpoint follows the independently verified `Q2-PV1-B` negative result. At the neutral owner-intuition gate, the owner independently suggested that the missing ingredient might be some kind of **description, guide, or instruction** telling the system how to return. This is owner intuition, not an implemented mechanism or a scientific result.
+
+Before any replacement experiment was frozen, the owner separately warned that an existing Lineum field may historically have used reversed or unusual coordinates. That warning is treated as a methodological constraint: directional return evidence must not be interpreted until the relevant coordinate convention is explicit.
+
+### What the current implementation computes
+
+Current public Core identity used for this audit:
+
+```text
+repository: TomasTriska88/lineum-core
+branch: develop
+scientific audit base commit: f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375
+lineum_core/math.py Git blob: bb877021810691223a0eb960a45493a2e351112a
+```
+
+The current NumPy path has two materially different gradient uses.
+
+For the amplitude-plus-external-delta gradient, the two outputs of `np.gradient` are assigned to names equivalent to `grad_x` and `grad_y`, but only their Euclidean magnitude is used:
+
+```text
+sqrt(gradient_axis0^2 + gradient_axis1^2)
+```
+
+Exchanging the component names therefore does not change that scalar quantity.
+
+For the `phi` gradient, the current solver instead forms a directional complex contribution in the numerical order
+
+```text
+phi_flow ∝ gradient_axis0(phi) + i * gradient_axis1(phi).
+```
+
+Production variable names call the first returned component `x` and the second `y`. Under the ordinary matrix convention, axis 0 is the row direction and axis 1 is the column direction. The PyTorch path uses the same first-component-real, second-component-imaginary ordering. The issue is therefore a coordinate/naming convention, not a NumPy-versus-PyTorch disagreement.
+
+The retained B4 localized runner explicitly documents and mirrors that production convention: its batched axis 1 corresponds to production array axis 0 and its batched axis 2 corresponds to production axis 1. The coordinate naming issue therefore does **not** retroactively invalidate the existing independently checked B4 Q2 results.
+
+`mu` itself is a scalar array. Its deposition and decay use no directional derivative. Its spatial placement can nevertheless matter because the current solver reads
+
+```text
+drift_multiplier = 1 + mu
+```
+
+pointwise into later interaction amplitudes and, when enabled, the directional flow amplitude.
+
+### Historical candidate recovered before mechanism selection
+
+A prior public current-engine label-retention programme had already formalized almost exactly the owner's new intuition without adding a new Lineum field. It separated:
+
+```text
+passive record:
+    can past structure still be read from phi or mu after psi is removed?
+
+causal echo:
+    after both histories are reset to the same current psi,
+    do retained phi or mu states cause different subsequent psi evolution?
+```
+
+Its registered alternatives included a `mu`-only slow structural record, a joint `phi`/`mu` record, a square-grid orientation artifact, a slow transient mistaken for memory, causal echo without passive decoding, and passive storage without causal echo. Its frozen controls included erased history, full history, `phi`-only history, `mu`-only history, a raised-cap lane, and a global 90-degree transpose plus label-swap grid-artifact control.
+
+The retained `P1` one-pair preflight observed after 2000 source-off updates:
+
+```text
+mu RMS observed / imprint = 0.9801985752862405
+mu RMS analytic expectation = 0.9801985752863286
+normalized mu spatial-shape change ≈ 2.1e-15
+phi RMS observed / imprint ≈ 0.5360
+psi during source-off = exactly zero
+```
+
+This is **not causal-return evidence**. In that source-off lane `mu_eta = 0`, `drift_strength = 0`, and the implemented update reduces to
+
+```text
+mu_(n+1) = (1 - mu_rho * dt) * mu_n.
+```
+
+The preserved normalized `mu` shape is therefore largely an expected consequence of pointwise exponential decay. The retained P1 execution also used NumPy 2.3.5 while the repository-supported dependency surface requires NumPy below 2.0, so it remains historical protocol/mechanical evidence rather than a newly promoted supported-runtime B4 result.
+
+The current branch contains the P0 observer audit, the full frozen parent protocol, and the P1 preflight. Current `research/runners/` and `research/results/` listings contain no retained label-retention or causal-echo runner/result, and commit searches for `label retention` and `causal echo` returned no matching retained commit. This does not prove that no exploratory execution ever occurred; it means that no complete causal-echo result was recovered as durable current-branch evidence during this audit.
+
+### Why the prior Q2 negative does not test this candidate
+
+The frozen B4 Q2 localized and ledger-control harnesses use a zero `mu` array and do not evolve a deposited `mu` history. Their negative result remains valid for the exact tested `psi`/`phi` state and controls, but it does not test whether an already-existing `mu` history can provide state-dependent causal guidance after perturbation.
+
+This narrows the tested domain without weakening the previous negative result.
+
+### Coordinate-safe cheapest next discriminator
+
+The next Q2 step is **not** to add a new field and not to reactivate directional drift.
+
+The primary causal-memory lane must begin with
+
+```text
+drift_strength = 0
+```
+
+throughout the discriminator. This removes the coordinate-sensitive directional `phi`-gradient term entirely from the primary test.
+
+The smallest useful comparison is:
+
+```text
+same current psi after perturbation
+same scalar parameters
+same deterministic supported runtime
+
+lane A: retain the correctly located historical mu pattern
+lane B: erase mu
+lane C: preserve mu magnitude/distribution but destroy its spatial instruction
+        with a preregistered transpose or permutation control
+```
+
+`phi` must be equalized or explicitly ablated so that a positive effect can be assigned to retained `mu` rather than to the faster `phi` trace.
+
+A positive future divergence alone cannot answer Q2. To rescue Q2, retained `mu` must improve the already-frozen full-state return classification without caps, resets, noise, ad hoc damping, or post-result tuning. If the retained pattern merely makes two futures different without pulling the perturbed state toward its preregistered reference state, that is history dependence, not an attractor rescue.
+
+### Emergency Git transport chronology
+
+The first one-use workflow for this checkpoint was run as GitHub Actions run `31340778697`, job `93314066917`, from workflow commit `c7cee9d7c5448f2a14ba994ee7370a28f0d8c7d9`. It passed checkout, frozen-parent, frozen-report-blob, and branch race checks. The report-edit step then stopped on `git diff --check` because the newly edited `Evidence cutoff` line retained Markdown's two trailing spaces. The final commit/self-removal step was skipped.
+
+Classification:
+
+```text
+technical_transport_failure
+scientific_execution_performed = false
+scientific_result_produced = false
+authoritative_B4_report_changed = false
+repair_scope = remove trailing spaces from the newly edited evidence-cutoff line only
+```
+
+The retry preserves the same scientific content and additionally retains this chronology.
+
+### Evidence separation
+
+```text
+implemented:
+    current Core contains scalar mu state;
+    mu is read pointwise through 1 + mu;
+    directional phi flow uses first-array-axis + i*second-array-axis ordering;
+
+reproduced historical observation:
+    retained P1 preserved a slowly decaying spatial mu imprint and
+    transpose symmetry in its declared standalone runtime;
+
+interpretation:
+    existing mu is a credible candidate carrier for the owner's "instruction" intuition,
+    but only a causal intervention can show that the stored spatial information matters;
+
+hypothesis:
+    a correctly located mu imprint may bias a perturbed state toward a previously
+    encoded state more effectively than erased or spatially scrambled mu;
+
+not established:
+    causal mu reuse;
+    Q2 return or attraction;
+    natural bounded saturation;
+    Q3 fixed-potential localized information retention;
+    any empirical physical correspondence in nature.
+```
+
+### Next gate
+
+No scientific execution follows from this checkpoint alone. Before the first causal-memory run, this same B4 report must freeze the exact current-Core source snapshot and supported dependency environment, the minimal `mu` causal-return lanes and `phi` confound control, the transpose/permutation control and coordinate convention, unchanged Q2 return observables and success thresholds, a methodologically independent verification lane, and the current real-universe comparison layer required by the repository evidence protocol.
+
+Only after that preregistration is committed may the causal-memory experiment execute.
