@@ -1,0 +1,137 @@
+{
+  "checks": {
+    "generative_model_resolves_source_aware_collision": true,
+    "global_translation_is_nonidentifying": true,
+    "history_resolves_snapshot_collision": true,
+    "nested_minimal_levels_match_preregistration": true,
+    "noninjective_clipping_remains_nonidentifying": true,
+    "relation_resolves_history_collision": true,
+    "source_resolves_relational_collision": true,
+    "temporal_order_matters_for_model_reconstruction": true
+  },
+  "clipping_control": {
+    "clipped_a_hats": [
+      0.25,
+      0.25
+    ],
+    "deterministic_predictor_minimax_error_lower_bound": 0.25,
+    "future_gap": 0.5,
+    "generative_key_collision": true,
+    "true_futures": [
+      1.5,
+      2.0
+    ]
+  },
+  "generative_a_max_error": 0.0,
+  "generative_predictions": [
+    {
+      "a_hat": 0.5,
+      "name": "G_pos",
+      "prediction": 0.75,
+      "truth": 0.75
+    },
+    {
+      "a_hat": -0.5,
+      "name": "G_neg",
+      "prediction": -0.25,
+      "truth": -0.25
+    }
+  ],
+  "overall_pass": true,
+  "pair_results": {
+    "G_generative": {
+      "collision_by_level": {
+        "finite_history": true,
+        "generative": false,
+        "relational": true,
+        "snapshot": true,
+        "source_aware": true
+      },
+      "future": [
+        0.75,
+        -0.25
+      ],
+      "future_gap": 1.0,
+      "minimal_resolving_level": "generative",
+      "unavoidable_worst_case_error_lower_bound_when_colliding": 0.5
+    },
+    "H_history": {
+      "collision_by_level": {
+        "finite_history": false,
+        "generative": false,
+        "relational": false,
+        "snapshot": true,
+        "source_aware": false
+      },
+      "future": [
+        1.0,
+        -1.0
+      ],
+      "future_gap": 2.0,
+      "minimal_resolving_level": "finite_history",
+      "unavoidable_worst_case_error_lower_bound_when_colliding": 1.0
+    },
+    "R_relation": {
+      "collision_by_level": {
+        "finite_history": true,
+        "generative": false,
+        "relational": false,
+        "snapshot": true,
+        "source_aware": false
+      },
+      "future": [
+        1.0,
+        -1.0
+      ],
+      "future_gap": 2.0,
+      "minimal_resolving_level": "relational",
+      "unavoidable_worst_case_error_lower_bound_when_colliding": 1.0
+    },
+    "S_source": {
+      "collision_by_level": {
+        "finite_history": true,
+        "generative": false,
+        "relational": true,
+        "snapshot": true,
+        "source_aware": false
+      },
+      "future": [
+        1.0,
+        0.0
+      ],
+      "future_gap": 1.0,
+      "minimal_resolving_level": "source_aware",
+      "unavoidable_worst_case_error_lower_bound_when_colliding": 0.5
+    }
+  },
+  "parameters": {
+    "clipping_control_cap": 1.25,
+    "held_out_generative_intervention": 0.25,
+    "levels": [
+      "snapshot",
+      "finite_history",
+      "relational",
+      "source_aware",
+      "generative"
+    ],
+    "randomness": null,
+    "tolerance": 1e-12,
+    "translation_offset": 7.25
+  },
+  "plant": {
+    "v_next": "a*v_now + relation + source_gain*intervention",
+    "v_now": "x_now - x_prev",
+    "x_next": "x_now + v_next"
+  },
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "reversed_calibration_prediction_errors": [
+    1.5,
+    1.5
+  ],
+  "translation_audit": {
+    "a_hat_delta": 0.0,
+    "future_gap_delta": 0.0,
+    "prediction_shift_error": 0.0
+  }
+}
