@@ -1,0 +1,152 @@
+{
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-protocol/1",
+  "stage": "Q2-PV1-B-CHECK",
+  "question": "Q2 only",
+  "status": "checker_frozen_before_official_execution",
+  "independence": {
+    "outcome_blind": false,
+    "reason": "The checker is intentionally authored after the retained PV1-B primary and active-report checkpoint; independence is computational, not outcome-blind.",
+    "imports_primary_pv1b_runner": false,
+    "imports_primary_pv1b_decision_function": false,
+    "reimplements_update_equation": true,
+    "reimplements_diffusion": true,
+    "reimplements_recovery_metrics": true,
+    "reimplements_balanced_factor": true,
+    "primary_json_use": "comparison only after complete independent recomputation"
+  },
+  "source_binding": {
+    "active_report_version": "0.24.0",
+    "active_report_git_blob": "bab3f46f7dffa6f1242bcb27da1c6585fcb379b3",
+    "primary_git_blob": "50d3f15d881e0665a450982053a9216f9cf5739c",
+    "canonical_localized_runner_git_blob": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "pv1a_runner_git_blob": "e3657119b855965b4fd622b3e94f08443a7c9107",
+    "pv1a_primary_git_blob": "7a7ce23471d51d9b2244256387934658b12e1f52",
+    "pv1a_checker_git_blob": "c459e4a1f947aba55d01f8f30bc1aa6bae88076f",
+    "pv1b_checker_git_blob": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+    "pv1b_checker_test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
+  },
+  "frozen_protocol": {
+    "grid_size": 32,
+    "primary_steps": 5000,
+    "recovery_steps": 1000,
+    "stencils": ["LAP4", "LAP8"],
+    "phi0_values": [0.0, 1.0],
+    "lane_names": [
+      "baseline",
+      "no_hard_guards",
+      "no_linear_dissipation",
+      "no_explicit_tanh",
+      "no_interaction_denominator",
+      "no_mode_coupling",
+      "no_phi_cap"
+    ],
+    "case_count": 28,
+    "central_factor": 1.5,
+    "canonical_annulus_factor": 0.5,
+    "balanced_factor_formula": "sqrt(1 - 1.25 * E_inner / E_annulus)",
+    "balanced_unavailable_rule": "non-finite E_inner/E_annulus, E_annulus <= 0, or b_squared < 0",
+    "ledger_neutrality_rtol": 1e-10,
+    "numeric_compare_atol": 1e-8,
+    "numeric_compare_rtol": 1e-12,
+    "recovery_thresholds": {
+      "psi_total_relative_error_max": 0.05,
+      "psi_radial_profile_l2_max": 0.10,
+      "half_energy_radius_absolute_error_max_cells": 1.0,
+      "center_displacement_max_cells": 0.5,
+      "phi_radial_profile_l2_max": 0.10,
+      "phi_stationarity": "canonical one-sided tail-slope rule",
+      "q2_additional_exclusions": "finite, reset-free, zero primary/recovery psi-cap contacts, zero primary/recovery phi-cap contacts"
+    }
+  },
+  "comparison_surface": {
+    "top_level_categorical": [
+      "active_before_perturbation",
+      "control_available",
+      "comparison"
+    ],
+    "top_level_numeric": ["balanced_annulus_factor"],
+    "branch_numeric": [
+      "center_displacement",
+      "energy_error",
+      "energy_profile_error",
+      "half_energy_radius_error",
+      "phi_profile_error"
+    ],
+    "branch_categorical": [
+      "case_key",
+      "finite",
+      "full_recovery",
+      "lane",
+      "phi0",
+      "phi_one_sided_stationary",
+      "primary_phi_cap_hits",
+      "primary_psi_cap_hits",
+      "primary_resets",
+      "psi_recovery",
+      "recovery_phi_cap_hits",
+      "recovery_psi_cap_hits",
+      "recovery_resets",
+      "recovery_steps_completed",
+      "reset_free",
+      "stencil"
+    ],
+    "ledger_numeric": [
+      "delta_ledger",
+      "epsi_after",
+      "epsi_before",
+      "ledger_after",
+      "ledger_before",
+      "ledger_tolerance",
+      "pphi_unchanged"
+    ],
+    "ledger_categorical": ["neutral_within_numeric_tolerance"],
+    "summary": "all primary summary fields must match independently derived values"
+  },
+  "pass_gate": {
+    "protocol_errors": 0,
+    "exact_case_key_set": true,
+    "numeric_mismatch_count": 0,
+    "categorical_mismatch_count": 0,
+    "independent_neutral_perturbation_failure_count": 0,
+    "meaning": "A pass independently reproduces the PV1-B primary within the frozen numerical comparison contract. A disagreement is retained and investigated; tolerances or fields may not be loosened after execution."
+  },
+  "expected_primary_reference": {
+    "case_count": 28,
+    "control_available_count": 26,
+    "control_unavailable_count": 2,
+    "control_unavailable_keys": [
+      "LAP4|no_interaction_denominator|phi0=1.0",
+      "LAP8|no_interaction_denominator|phi0=1.0"
+    ],
+    "neutral_perturbation_failure_count": 0,
+    "canonical_q2_positive_count": 0,
+    "balanced_q2_positive_count": 0,
+    "balanced_rescue_count": 0,
+    "q2_classification_changed_count": 0,
+    "outcome": "ledger_neutral_control_does_not_rescue_q2_classification"
+  },
+  "local_preflight": {
+    "tests_passed": 12,
+    "tests_failed": 0,
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scientific_status": "unsupported_runtime_helper_preflight_only"
+  },
+  "official_execution_requirement": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "full_gate": "canonical localized tests + PV1-A tests + PV1-B primary tests + JSON-safe tests + PV1-B checker tests",
+    "workflow_artifact": false,
+    "retention": "ordinary JSON committed under research/lineum-public-tolog-b4/",
+    "cleanup": "one-use workflow removed in the same coherent result checkpoint"
+  },
+  "scope_exclusions": [
+    "no production Core equation change",
+    "no new field",
+    "no threshold tuning after execution",
+    "no Q1 or Q3 result change",
+    "no physical-energy claim",
+    "no replacement mechanism selection before checker result"
+  ]
+}
