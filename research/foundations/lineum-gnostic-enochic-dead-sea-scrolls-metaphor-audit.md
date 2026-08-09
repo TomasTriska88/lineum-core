@@ -1,7 +1,7 @@
 # Gnostic, Enochic, and Dead Sea Scrolls Structural Audit for Lineum
 
-**Status:** active comparative conceptual research; standalone programme; Priority A and Priority B known-answer fixtures passed; Priority C preregistered; no Lineum or physical validation claimed  
-**Version:** 0.4.1  
+**Status:** active comparative conceptual research; standalone programme; Priority A, Priority B, and Priority C known-answer fixtures passed; no Lineum or physical validation claimed  
+**Version:** 0.5.0  
 **Evidence cutoff:** 2026-08-09  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -13,7 +13,7 @@
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
 **Scope:** A historically separated, source-critical audit of selected Nag Hammadi and related early Christian texts, the semantic history of `pneuma`, 1 Enoch and related Enochic literature, and selected Dead Sea Scrolls. The audit is deliberately programme-wide: it may generate hypotheses for any part of Lineum, including source accounting, field coupling, topology, localization, collective identity, boundaries, memory, branching, observers, synchronization, reconstruction, copying, residual states, emergence, cosmology, and physical correspondence. It must never treat ancient religious texts as encoded modern physics.  
 **Central questions:** Which ancient motifs are only broad human metaphors, which preserve a structurally precise systems insight, and which can be translated into a falsifiable Lineum observer, intervention, accounting test, toy model, or cross-branch discriminator? Do any motifs reveal a missing comparison class, observer failure, reciprocal coupling, finite source stock, relational invariant, multiscale architecture, or causal residual not yet represented in the current research programme?  
-**Current confidence:** high that several motifs generate scientifically useful questions; high that the frozen Priority-A cohesion observer separates its declared known-answer fixtures; high that the frozen Priority-B accounting and intervention observer separates the declared open-source, finite-stock, reciprocal, return-path, and matched-damping toy architectures; medium that the remaining protocol-identity and body-versus-residual abstractions can produce further discriminating toy models; low that any specific Lineum mechanism will survive later application; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
+**Current confidence:** high that several motifs generate scientifically useful questions; high that the frozen Priority-A cohesion observer separates its declared known-answer fixtures; high that the frozen Priority-B accounting and intervention observer separates the declared open-source, finite-stock, reciprocal, return-path, and matched-damping toy architectures; high that the frozen Priority-C intervention fixture separates its declared body, envelope, passive wake, causal residual, autonomous descendant, and observer-memory classes; low that any specific Lineum mechanism will survive later application; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
 
 ## 1. Answer first
 
@@ -82,6 +82,17 @@ These are hypothesis generators. They are not evidence that ancient authors knew
 
 ## 2. Version history
 
+Version 0.5.0 preserves the complete source-critical, Priority-A, Priority-B, and Priority-C preregistration record from 0.4.1 and adds:
+
+- the official Priority-C execution of the exact Git-published Section 20.10 standard-library reference model with no parameter, threshold, mechanism, or observable changes;
+- a pass of all eight frozen scientific criteria at the primary `dt = 0.001` and at every declared robustness step `dt = 0.002`, `0.001`, and `0.0005`;
+- independent closed-form checks for the reference trace, envelope-ablation decay, probe response, observer-memory integral, descendant regrowth, and passive-residual decay;
+- first-order timestep convergence of representative Euler errors without changing the frozen decision surface;
+- a state-matched causal result: an identical residual trace drives a fresh probe only when its declared coupling is present, while a numerically matched passive wake does not;
+- an autonomous-regrowth result: the diluted descendant returns toward its nonzero attractor while the matched diluted residual decays exponentially;
+- the exact machine-readable output retained as `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-c-output.json`, Git blob `44c36f2faa2ddb0df140bbcd6b15cd6bbd68e48c`, SHA-256 `7dd5b996147fc7ca2c6cdc27f772adb558808030c4fb94c624e81a67c5c1434f`;
+- a bounded conclusion that Priority C validates only the declared known-answer taxonomy/intervention logic and does not establish a Lineum remnant, descendant, soul, spirit, consciousness, or physical afterlife.
+
 Version 0.4.1 preserves all source-critical, Priority-A, and Priority-B evidence from 0.4.0 and adds:
 
 - a lineage correction after re-auditing the current `research/foundations/AGENTS.md` and preserved Git history: this audit is declared `Programme membership: standalone`, while the continuous-source root and ledger remain related cross-programme evidence rather than inherited parents;
@@ -122,7 +133,7 @@ Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 - frozen toy-model and observer tests;
 - a ranked research sequence that remains executable in ChatGPT while local Codex execution is unavailable.
 
-No equation, production code, public API, or whitepaper was changed by version 0.4.1.
+No equation, production code, public API, or whitepaper was changed by version 0.5.0.
 
 ## 3. Historical separation rule
 
@@ -942,7 +953,7 @@ Status at version 0.4.0: the frozen source-architecture fixture passed all decla
 
 ### Priority C: body-versus-residual toy intervention
 
-Status at version 0.4.1: preregistered below in Section 20; no Priority-C numerical outcome has yet been inspected.
+Status at version 0.5.0: the frozen fixture passed all declared primary and timestep-robustness criteria. It establishes only that the declared body, envelope, passive wake, causal residual, autonomous descendant, and observer-memory classes are distinguishable by the frozen interventions in this known-answer toy. It has not been applied to active Lineum dynamics.
 
 ### Priority D: protocol identity under member turnover
 
@@ -965,16 +976,16 @@ No toy result may be promoted into the Core equation, package, or whitepaper. Ap
 | Coherent software pump and open source ledger | `reopens` | Priority B now supplies a passed known-answer accounting/intervention fixture; application to the current pump remains untested. |
 | Centered randomness nucleates dense activity | `unaffected` | Ancient motifs do not change the observed role of randomness. |
 | No stable localized particle demonstrated | `unaffected` | No textual analogy supplies missing numerical evidence. |
-| P2 multi-defect remnant | `reopens` | Adds body, descendant, wake, active residual, relic, and artifact classes. |
+| P2 multi-defect remnant | `reopens` | Priority C supplies a passed known-answer causal-remnant/descendant taxonomy; application to P2 remains untested. |
 | Collective-particle preregistration | `supports` | Priority A now supplies a known-answer observer that passed its toy fixtures; application to Lineum remains untested. |
 | Minimum-flux observer is non-identifying | `supports` | Local-totality and ignorance motifs reinforce nested observer controls. |
 | Mu reduction-first programme | `supports` | Gnosis and raz-nihyeh abstractions favor reconstruction before new ontology. |
 | Phi sufficiency failures under clipping and hidden thresholds | `supports` | Layered-gate ideas motivate explicit reversible versus many-to-one observer tests. |
 | Passive reversible membrane unsupported | `constrains` | Limit and portal analogies require receiving stores and return paths. |
-| Copying and heredity unsupported | `unaffected` | Seed, name, covenant, or lineage motifs cannot override negative tests. |
-| Relic Foam and epsilon dormant branches | `reopens` | Remnant taxonomy may clarify what each historical result actually represented. |
+| Copying and heredity unsupported | `unaffected` | Priority C does not override earlier negative copying tests; its autonomous descendant is a constructed known-answer control only. |
+| Relic Foam and epsilon dormant branches | `reopens` | Priority C supplies an intervention taxonomy for distinguishing residual environment from autonomous descendant; no historical branch is reclassified yet. |
 | Attraction and compensation unresolved | `constrains` | No spiritual term substitutes for dimensionally valid accounting. |
-| Quantum, gravity, soul, and cosmology mappings | `unaffected` | No ancient motif advances physical correspondence by itself. |
+| Quantum, gravity, soul, and cosmology mappings | `unaffected` | No ancient motif or toy result advances physical correspondence by itself. |
 
 ## 11. Frozen anti-overinterpretation rules
 
@@ -1007,8 +1018,8 @@ A motif earns research value only when it generates a discriminator that could f
 what_current_implementation_computes:
     unchanged by this report;
     current Core has declared fields and local update rules but no pneuma,
-    pleroma, archon, Watcher, spirit, covenant, or Enochic reservoir variable;
-    Priority B did not alter or execute the active Lineum equation;
+    pleroma, archon, Watcher, spirit, covenant, Enochic reservoir, or Priority-C toy variable;
+    Priority A, B, and C did not alter or execute the active Lineum equation;
 
 what_was_reproducibly_observed:
     Priority A: the preregistered complete-graph spring collective recovered its reference
@@ -1022,37 +1033,53 @@ what_was_reproducibly_observed:
     produced AUC_off = 79.46174746037795 versus 15.169798086250719 in the state-matched
     return-block ablation; the matched-damping open control remained bounded with
     E(t_off) = 8.646917847222714 while still requiring cumulative external input;
+    Priority C: the exact Git-published standard-library fixture passed every frozen scientific
+    criterion at dt = 0.001 and retained the complete pass at dt = 0.002 and 0.0005;
+    the reference wake, causal residual, and observer-memory traces were numerically identical
+    with maximum pairwise gap 0.0; removing only the required envelope reduced the body AUC
+    over [5,10) to 0.26048112672694707 of control and b(t_remove) to 0.042756656318988735,
+    while passive-wake ablation changed the body trajectory by exactly 0.0;
+    the residual-driven probe had AUC_q = 5.773330241381814, whereas the state-matched
+    c_r=0 block and the numerically matched clean wake transplant both had AUC_q = 0.0;
+    resetting only observer memory changed every physical trajectory by 0.0;
+    after 50% dilution the descendant grew from 0.4107228139961972 to 0.799746062332917
+    while the residual retained only 0.049775866417539 of its diluted starting value;
 
 independent_or_adversarial_checks:
     Priority A retains its preregistered gradient-flow identity and invariance/timestep audits;
-    Priority B has exact algebraic ledgers d(E+D-C_ext)/dt = 0 for open controls,
-    d(S+E+D)/dt = 0 for finite and reciprocal stock, and d(S+E+R+D)/dt = 0 for the
-    receiver/return architecture; the largest primary closed-ledger residual was
-    2.2168933355715126e-12 and the largest primary open-ledger residual was
-    2.007283228522283e-12, both far below the frozen 2e-9 threshold; closed-form
-    constant-source solutions for A and E agree with the Euler results with errors
-    4.531675739105623e-7 and 2.7067958884074983e-4 respectively at dt = 0.002, and the A
-    error decreases approximately by a factor of two on each timestep halving as expected
-    for first-order Euler integration;
+    Priority B retains exact source-ledger identities and closed-form open-control checks;
+    Priority C has exact continuous checks w=r=m=1-exp(-lambda*t) before body removal,
+    exponential post-body trace decay, an analytic envelope-clamp decay law,
+    an exact zero-probe solution when c_r=0, and descendant equilibrium d*=0.8;
+    at the primary step the analytic continuous values are r(10)=0.7768698398515702,
+    envelope-clamp b(10)=0.042799080545802566, envelope AUC ratio=0.2604954636799385,
+    residual-probe AUC=5.773044537340876, observer-memory AUC=4.921278453479657,
+    diluted-descendant final d=0.7997457166020719, and residual decay ratio=e^-3=
+    0.049787068367863944; the Euler values converge toward these results and representative
+    absolute errors decrease by approximately a factor of two whenever dt is halved;
 
 cautious_interpretation:
     Priority A supplies a known-answer cohesion screening observer; Priority B supplies a
-    known-answer source-topology accounting/intervention observer. Priority B demonstrates
-    that bounded or long-lived activity is not by itself evidence of a finite or reciprocal
-    source, that source architecture can be observationally hidden before depletion, and
-    that a state-matched return-path ablation can isolate genuine recirculation in this toy;
+    known-answer source-topology accounting/intervention observer; Priority C supplies a
+    known-answer post-body taxonomy/intervention observer. Priority C demonstrates inside
+    its declared toy that identical visible traces can have different causal status, that a
+    state-matched coupling intervention or clean transplant can reveal a declared causal
+    residual, that observer memory can be separated from plant state, and that autonomous
+    regrowth is a stronger discriminator of a descendant than persistence alone;
 
 hypothesis_or_analogy:
     every ancient-text mapping in Sections 7 and 8, any claim that an actual Lineum
-    collective possesses the Priority-A restoring mode, and any claim that active Lineum
-    dynamics contain the finite stock, reciprocal source, or receiver/return architecture
-    distinguished by Priority B;
+    collective possesses the Priority-A restoring mode, any claim that active Lineum dynamics
+    contain the Priority-B source architectures, and any claim that P2, Relic Foam, mu scars,
+    wakes, or other current Lineum states satisfy the Priority-C causal-residual or descendant
+    criteria;
 
 known_real_physics_or_history:
     manuscript facts, textual content, and Stoic historical physics are historical evidence;
-    generic conservation, open-system accounting, feedback, and reservoir mathematics are
-    standard system concepts, but this toy supplies no empirical evidence that nature or
-    Lineum uses the same source topology.
+    generic conservation, feedback, reservoirs, material memory, wakes, observer state,
+    causal intervention, and autonomous growth are established systems concepts with
+    domain-specific physical realizations, but these toy fixtures supply no empirical evidence
+    that nature or Lineum implements the same mechanisms.
 ```
 
 ## 13. Current verdict
@@ -1068,12 +1095,13 @@ cohesion_observer_applied_to_lineum = not_yet
 reciprocal_generation_and_source_closure = known_answer_source_architecture_fixture_supported_only
 finite_source_store_and_gated_flux = known_answer_source_architecture_fixture_supported_only
 source_architecture_observer_applied_to_lineum = not_yet
-body_versus_causal_residual = preregistered_known_answer_fixture_pending_execution
-collective_identity_by_protocol = high_priority_toy_lane
+body_versus_causal_residual = known_answer_intervention_fixture_supported_only
+body_residual_observer_applied_to_lineum = not_yet
+collective_identity_by_protocol = next_high_priority_toy_lane
 multiscale_observer_and_temporal_reconstruction = high_priority_toy_lane
 dual_substance_interpretation = deferred_behind_intervention_comparison
 physical_soul_or_spirit_correspondence = not_established
-next_action = execute_frozen_body_versus_residual_known_answer_intervention
+next_action = preregister_protocol_identity_under_member_turnover_known_answer_fixture
 ```
 
 ## 14. Initial source register
@@ -2496,3 +2524,191 @@ print(json.dumps({
 The executable above must be published in Git before the first official run. The official result must use it unchanged. The only permitted pre-result amendment is correction of a pure syntax or transcription defect that prevents the declared equations from being executed; any such amendment must be published and recorded before a scientifically interpretable outcome is accepted.
 
 If the fixture passes, the result may validate only this known-answer taxonomy and its intervention logic. Application to current Lineum dynamics remains a separate later gate. If the fixture fails any frozen scientific criterion, the negative result must be recorded without threshold or parameter tuning and the owner-intuition failure gate opens before a replacement causal architecture is selected.
+
+## 21. Priority C result — body-versus-residual intervention fixture
+
+**Evidence status:** `[toy][measured][numerics][known-answer]`; frozen body/residual taxonomy fixture supported within the declared toy domain only.
+
+### 21.1 Frozen decision outcome
+
+The exact executable in Section 20.10 was run only after the preregistration had been published in commit `40e0bcab41604842943e52bb5a7e181e9e810c49`. No parameter, threshold, mechanism class, intervention, observable, or decision rule was changed after outcome inspection. The exact raw JSON was retained in Git in commit `9b01d7078c0f4deb74166401d00d2825f7491596` before this narrative result update.
+
+All eight scientific checks passed at the primary `dt = 0.001`, and the complete decision independently remained `PASS` at every preregistered timestep:
+
+```text
+dt = 0.002  -> PASS
+dt = 0.001  -> PASS
+dt = 0.0005 -> PASS
+```
+
+Primary results:
+
+| Frozen distinction | Primary result | Interpretation inside this toy only |
+|---|---:|---|
+| Visible `w/r/m` trace gap | `0.0` | amplitude/lifetime alone contains no class information |
+| Envelope-ablation body AUC ratio | `0.26048112672694707` | declared envelope is necessary for body maintenance |
+| Envelope-ablation `b(t_remove)` | `0.042756656318988735` | body largely collapses when only envelope is removed |
+| Wake-ablation body gap | `0.0` | declared wake is passive for body dynamics |
+| Residual-enabled probe `AUC_q` | `5.773330241381814` | retained residual has declared downstream causal effect |
+| State-matched `c_r=0` probe `AUC_q` | `0.0` | same residual state is ineffective when only coupling is blocked |
+| Clean residual transplant `AUC_q` | `5.773330241381814` | residual carries the declared effect into a clean plant |
+| Numerically matched clean wake `AUC_q` | `0.0` | identical-looking passive trace does not carry that effect |
+| Observer reset physical-state gap | `0.0` | observer memory is not plant state in this architecture |
+| Unreset observer-memory AUC | `4.921495494566665` | a persistent observer state can exist without being causal plant state |
+| Diluted descendant start -> final | `0.4107228139961972 -> 0.799746062332917` | declared descendant autonomously returns toward its nonzero attractor |
+| Descendant regrowth ratio | `1.9471673719598193` | dilution does not reduce it to passive decay |
+| Diluted residual start -> final | `0.3884474715464288 -> 0.01933530945392582` | residual decays without autonomous regeneration |
+| Residual final/start ratio | `0.049775866417539` | approximately five percent remains after the post-body horizon |
+
+The strongest adversarial feature is deliberate observational equivalence: `w`, `r`, and `m` were numerically identical in the reference lane, yet their intervention outcomes were different. The result therefore does not depend on recognizing a preferred shape or persistence curve.
+
+### 21.2 Independent analytic checks
+
+The preregistered continuous equations provide closed-form checks independent of the thresholded classifier.
+
+For the identical reference traces,
+
+```text
+x(10) = 1 - exp(-0.15*10)
+      = 0.7768698398515702.
+```
+
+The primary Euler value was `0.7768949430928576` for each of `w`, `r`, and `m`.
+
+With the envelope clamped to zero after `t=5`, the exact body equation is
+
+```text
+db/dt = -0.5*b*(1+b),
+```
+
+which gives at `t=10`
+
+```text
+b_exact = 0.042799080545802566
+AUC_[5,10] exact = 1.3024773183996923
+AUC ratio exact = 0.2604954636799385.
+```
+
+The primary Euler values were `0.042756656318988735`, `1.3024056336347365`, and `0.26048112672694707` respectively.
+
+For the residual-driven fresh probe, the exact continuous post-removal integral over 20 time units is
+
+```text
+AUC_q exact = 5.773044537340876,
+```
+
+versus the primary Euler `5.773330241381814`. With `c_r=0` and `q(10)=0`, the exact solution is identically zero, matching the state-matched control.
+
+The exact observer-memory post-removal area is
+
+```text
+AUC_m exact = 4.921278453479657,
+```
+
+versus the primary Euler `4.921495494566665`.
+
+For the passive diluted residual,
+
+```text
+r(30)/r(10) = exp(-0.15*20) = exp(-3) = 0.049787068367863944,
+```
+
+versus the primary Euler `0.049775866417539`.
+
+The pre-removal descendant has the exact positive Riccati solution giving `d(10)=0.8214347553172859`. After the preregistered 50% dilution its post-body logistic law has stable equilibrium `d*=0.8`; the exact final value is `0.7997457166020719`, versus primary Euler `0.799746062332917`.
+
+Representative absolute errors at `dt = 0.002`, `0.001`, and `0.0005` were:
+
+```text
+residual-probe AUC error:
+    5.714288803622125e-4
+    2.8570404093741786e-4
+    1.428494207571518e-4
+
+envelope-clamp b(10) error:
+    8.484302017430084e-5
+    4.2424226813830845e-5
+    2.1212792103465772e-5
+
+passive-residual ratio error:
+    2.2403620409179592e-5
+    1.1201950324946086e-5
+    5.601010179955013e-6
+```
+
+The near factor-of-two decrease after each timestep halving is consistent with the expected first-order global error of explicit Euler in these smooth ODEs. This convergence audit did not alter the frozen pass criteria.
+
+### 21.3 Machine-readable evidence and integrity
+
+The exact sufficient raw output is retained as:
+
+```text
+path:
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-c-output.json
+
+Git blob SHA:
+44c36f2faa2ddb0df140bbcd6b15cd6bbd68e48c
+
+SHA-256:
+7dd5b996147fc7ca2c6cdc27f772adb558808030c4fb94c624e81a67c5c1434f
+```
+
+The Git blob identity was independently reproduced from the exact local JSON bytes before publication. The official environment was:
+
+```text
+Python 3.13.5
+Linux 6.18.35 x86_64, glibc 2.41
+external Python packages used: none
+random seed: none
+```
+
+A compact sufficient subset of the primary machine output is:
+
+```json
+{
+  "dt": 0.001,
+  "trace_gap_w_r_m": 0.0,
+  "envelope_ablation_auc_ratio": 0.26048112672694707,
+  "envelope_ablation_b_tremove": 0.042756656318988735,
+  "wake_ablation_max_body_gap": 0.0,
+  "residual_enabled_q_auc": 5.773330241381814,
+  "residual_blocked_q_auc": 0.0,
+  "clean_residual_q_auc": 5.773330241381814,
+  "clean_wake_q_auc": 0.0,
+  "observer_unreset_m_auc": 4.921495494566665,
+  "observer_reset_max_physical_gap": 0.0,
+  "diluted_descendant_ratio": 1.9471673719598193,
+  "diluted_residual_ratio": 0.049775866417539,
+  "pass_without_dt_audit": true,
+  "all_declared_dt_pass": true
+}
+```
+
+### 21.4 Interpretation boundary
+
+What Priority C established:
+
+```text
+known_answer_body_residual_taxonomy_fixture = supported_within_tested_domain
+persistence_or_visual_trace_alone_identifies_causal_class = no
+state_matched_coupling_intervention_detects_declared_causal_residual = yes_in_toy
+clean_transplant_distinguishes_declared_residual_from_matched_passive_wake = yes_in_toy
+observer_memory_can_be_nonzero_without_being_plant_state = yes_in_toy
+autonomous_regrowth_distinguishes_declared_descendant_from_passive_decay = yes_in_toy
+```
+
+What it did not establish:
+
+```text
+Lineum_has_causal_post_body_residual = not_established
+P2_remnant_is_a_descendant = not_established
+Relic_Foam_is_autonomous = not_established
+Lineum_has_physical_pneuma_or_spirit = not_established
+mu_is_a_spirit_or_soul = not_established
+Enochic_giant_spirits_describe_physics = not_established
+physical_afterlife_or_consciousness = not_established
+```
+
+The methodological gain is stricter than `something survived after the body disappeared`. A future Lineum remnant claim must distinguish at least passive wake, environmental memory, observer memory, causal residual, and autonomous descendant by state-matched interventions or transplants with appropriate nulls. Persistence alone is explicitly non-identifying.
+
+Priority C therefore closes only as a passed known-answer intervention fixture. The next ranked standalone-programme step is Priority D: preregister a known-answer collective-identity fixture that tests whether a protocol can reconstruct specific invariant relations after member turnover, rather than merely preserving density, shape, or synchronization.
