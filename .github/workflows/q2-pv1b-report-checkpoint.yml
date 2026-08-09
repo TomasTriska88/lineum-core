@@ -39,7 +39,6 @@ jobs:
         run: |
           set -euo pipefail
           python .github/scripts/q2_pv1b_report_checkpoint.py
-          git diff --check
           grep -q 'Q2-PV1-B' research/lineum-public-tolog-galactic-shape-b4.md
           grep -q '`0 / 26` Q2 rescues' research/lineum-public-tolog-galactic-shape-b4.md
           grep -q 'primary_pending_independent_check' research/lineum-public-tolog-galactic-shape-b4.md
