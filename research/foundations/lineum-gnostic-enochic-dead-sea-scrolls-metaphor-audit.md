@@ -1,18 +1,13 @@
 # Gnostic, Enochic, and Dead Sea Scrolls Structural Audit for Lineum
 
-**Status:** active comparative conceptual research; Priority A and Priority B known-answer fixtures passed; no Lineum or physical validation claimed  
-**Version:** 0.4.0  
+**Status:** active comparative conceptual research; standalone programme; Priority A and Priority B known-answer fixtures passed; Priority C preregistered; no Lineum or physical validation claimed  
+**Version:** 0.4.1  
 **Evidence cutoff:** 2026-08-09  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
-**Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
-**Recovered root version:** 0.4.14  
-**Root evidence cutoff:** 2026-07-29  
-**Root blob SHA:** `3fba3925553cd5596e46c02fa35d1db91523537d`  
-**Mandatory continuity companion:** `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`  
-**Continuity version:** 0.3.0  
-**Continuity evidence cutoff:** 2026-07-31  
-**Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
+**Programme membership:** standalone  
+**Related cross-programme reference:** `research/foundations/lineum-continuous-source-cosmology-validation.md`, historical comparison point version 0.4.14, evidence cutoff 2026-07-29, blob `3fba3925553cd5596e46c02fa35d1db91523537d`  
+**Related cross-programme ledger:** `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, historical comparison point version 0.3.0, evidence cutoff 2026-07-31, blob `5304874451caf32313ad0e8e3c59e53958698d79`; comparison reference only, not inherited lineage  
 **Related conceptual report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`, version 0.2.0, blob `b55bc1639fc8ed6efa7b8286e9113afa88ee298c`  
 **Related intervention report:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
@@ -87,6 +82,17 @@ These are hypothesis generators. They are not evidence that ancient authors knew
 
 ## 2. Version history
 
+Version 0.4.1 preserves all source-critical, Priority-A, and Priority-B evidence from 0.4.0 and adds:
+
+- a lineage correction after re-auditing the current `research/foundations/AGENTS.md` and preserved Git history: this audit is declared `Programme membership: standalone`, while the continuous-source root and ledger remain related cross-programme evidence rather than inherited parents;
+- no deletion or reinterpretation of the historical continuous-source, wake, `mu`, transplant, copying, epsilon, or Relic-Foam research used as comparison material;
+- a Git-first preregistration of Priority C before any official Priority-C numerical outcome is inspected;
+- a known-answer intervention fixture separating an active body, required envelope, passive wake, causal residual, autonomous descendant, and observer-memory artifact;
+- deliberate observational equivalence among the passive wake, causal residual, and observer-memory traces, forcing the decisive classification to come from interventions rather than persistence or visual similarity;
+- a bounded cross-disciplinary comparison with material memory, state observers, and autocatalytic growth used only as counterexample classes, not as evidence for Lineum physics.
+
+No Priority-C result is contained in version 0.4.1. No prior Priority-A or Priority-B threshold, executable, output, or conclusion is changed by this lineage correction and preregistration.
+
 Version 0.4.0 preserves all source-critical and Priority-A material from 0.3.0 and adds:
 
 - a Git-published preregistration of the Priority-B source-architecture fixture before the first numerical outcome was inspected;
@@ -116,7 +122,7 @@ Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 - frozen toy-model and observer tests;
 - a ranked research sequence that remains executable in ChatGPT while local Codex execution is unavailable.
 
-No equation, production code, public API, or whitepaper was changed by version 0.4.0.
+No equation, production code, public API, or whitepaper was changed by version 0.4.1.
 
 ## 3. Historical separation rule
 
@@ -936,7 +942,7 @@ Status at version 0.4.0: the frozen source-architecture fixture passed all decla
 
 ### Priority C: body-versus-residual toy intervention
 
-Construct a simple active body with a slow residual and validate the ability to distinguish body, required envelope, passive wake, causal remnant, and descendant.
+Status at version 0.4.1: preregistered below in Section 20; no Priority-C numerical outcome has yet been inspected.
 
 ### Priority D: protocol identity under member turnover
 
@@ -952,9 +958,9 @@ Build mechanisms that look binary observationally but differ under intervention.
 
 No toy result may be promoted into the Core equation, package, or whitepaper. Application to actual Lineum waits for exact repository-local evidence and supported execution.
 
-## 10. Root-programme impact matrix
+## 10. Cross-programme impact matrix (continuous-source comparison)
 
-| Root branch | Relation | Effect of this audit |
+| Compared branch | Relation | Effect of this audit |
 |---|---|---|
 | Coherent software pump and open source ledger | `reopens` | Priority B now supplies a passed known-answer accounting/intervention fixture; application to the current pump remains untested. |
 | Centered randomness nucleates dense activity | `unaffected` | Ancient motifs do not change the observed role of randomness. |
@@ -1054,19 +1060,20 @@ known_real_physics_or_history:
 ```text
 ancient_texts_encode_lineum_physics = unsupported
 shared_hidden_ancient_science_tradition = unsupported
-programme_wide_structural_audit = active
+standalone_structural_audit = active
+cross_programme_comparison = active
 pneuma_as_mu = unsupported
 pneuma_as_relational_tensile_cohesion = known_answer_observer_fixture_supported_only
 cohesion_observer_applied_to_lineum = not_yet
 reciprocal_generation_and_source_closure = known_answer_source_architecture_fixture_supported_only
 finite_source_store_and_gated_flux = known_answer_source_architecture_fixture_supported_only
 source_architecture_observer_applied_to_lineum = not_yet
-body_versus_causal_residual = high_priority_toy_lane
+body_versus_causal_residual = preregistered_known_answer_fixture_pending_execution
 collective_identity_by_protocol = high_priority_toy_lane
 multiscale_observer_and_temporal_reconstruction = high_priority_toy_lane
 dual_substance_interpretation = deferred_behind_intervention_comparison
 physical_soul_or_spirit_correspondence = not_established
-next_action = build_body_versus_residual_known_answer_intervention
+next_action = execute_frozen_body_versus_residual_known_answer_intervention
 ```
 
 ## 14. Initial source register
@@ -2056,3 +2063,436 @@ physical_soul_or_spirit = not_established
 The key methodological gain is that future Lineum source claims now have a stricter known-answer comparison class: a stable-looking or long-lived signal cannot be promoted as evidence of self-contained closure without explicit source accounting and intervention on the proposed return path.
 
 Priority B therefore closes as a passed known-answer accounting/intervention fixture only. The next ranked programme step is Priority C: construct a known-answer body-versus-residual intervention fixture capable of distinguishing an active body, required envelope, passive wake, causal remnant, descendant, and observer artifact.
+
+## 20. Priority C preregistration — body, envelope, wake, causal residual, descendant, and observer-memory fixture
+
+**Evidence status:** `[toy][preregistered]`; no Priority-C numerical outcome has been inspected at the time of this preregistration.
+
+### 20.1 Question and permitted conclusion
+
+Can a deliberately small known-answer system distinguish six classes that can otherwise be confused by persistence or visual similarity after an active body is removed: the body itself, a required envelope, a passive wake, a physically causal residual, an autonomously self-restoring descendant process, and memory that exists only inside the observer?
+
+The decisive design deliberately makes the passive wake `w`, causal residual `r`, and observer-memory state `m` obey the same trace equation and start from the same value. Their visible time series must therefore be identical in the reference lane. A classifier that uses only amplitude, lifetime, smoothness, or a plot of the trace has zero information about which of the three classes it is seeing. The fixture can pass only by using interventions.
+
+This is a taxonomy and observer/intervention validation. It does not test the active Lineum equation, prove that P2 or Relic Foam contains a causal remnant, establish heredity or life, or validate a physical spirit, soul, ghost, consciousness, dark matter, or afterlife interpretation.
+
+All variables are dimensionless toy states. The letters below are local to this fixture and are not proposed Lineum fields or public ontology.
+
+### 20.2 Frozen mechanism
+
+The reference state is
+
+```text
+b = active body
+e = supporting envelope
+w = passive wake
+r = causal residual
+d = body-seeded autonomous descendant process
+m = observer-memory state only; not part of the physical toy plant
+q = fresh downstream probe introduced only after body removal
+```
+
+Frozen continuous equations while the body is present are:
+
+```text
+db/dt = g_b*b*(1-b) - d_env*(1-e)*b
+de/dt = k_e*(b-e)
+dw/dt = lambda*(b-w)
+dr/dt = lambda*(b-r)
+dd/dt = seed*b*(1-d) + g_d*d*(1-d) - gamma_d*d
+dm/dt = lambda*(b-m)
+dq/dt = 0                      before probe introduction
+```
+
+After `t_remove`, the body is externally removed and clamped to `b = 0`; a fresh probe starts at `q = 0` and obeys
+
+```text
+dq/dt = -gamma_q*q + c_r*r.
+```
+
+The wake has no term in any physical-state equation. The observer memory has no term in any physical-state equation. The causal residual differs from the wake only because `r` is allowed to drive the newly introduced probe after body removal. The descendant differs from all three traces because, once seeded, its own post-body law contains autonomous positive feedback.
+
+### 20.3 Frozen parameters and schedule
+
+```text
+g_b = 0.5
+d_env = 1.0
+k_e = 1.0
+lambda = 0.15
+seed = 0.1
+g_d = 0.5
+gamma_d = 0.1
+gamma_q = 0.5
+c_r = 0.6
+
+initial state: b=e=1; w=r=d=m=q=0
+t_envelope_or_wake_ablation = 5.0
+t_remove = 10.0
+T = 30.0
+primary dt = 0.001
+robustness dt values = 0.002, 0.001, 0.0005
+integration = explicit Euler
+randomness = none
+```
+
+The exact same frozen parameters are used in all interventions. No fitted coefficient, random seed, optimization, threshold search, or post-result parameter rescue is permitted.
+
+### 20.4 Frozen interventions
+
+1. **Reference removal:** evolve the intact body until `t_remove`, then clamp `b=0`, introduce `q=0`, and retain every other state.
+2. **Envelope ablation:** use the same intact history until `t=5`, then clamp only `e=0` through `t_remove`; compare the body's remaining activity with the intact control.
+3. **Wake ablation:** use the same intact history until `t=5`, then clamp only `w=0` through `t_remove`; this must not alter the body because `w` is deliberately passive.
+4. **State-matched residual-coupling block:** copy the exact reference state at `t_remove`; in one copy use `c_r=0.6`, in the other change only `c_r` to `0`. Neither copy erases `r`.
+5. **Clean residual transplant:** place only the reference `r(t_remove)` into an otherwise zero clean plant and introduce a fresh zero probe.
+6. **Clean wake transplant:** place only the numerically identical reference `w(t_remove)` into an otherwise zero clean plant and introduce the same fresh zero probe.
+7. **Observer reset:** copy the exact reference physical state at `t_remove`, but set only the observer's `m=0`; compare every physical trajectory with the unreset reference.
+8. **Dilution challenge:** separately transplant `0.5*d(t_remove)` and `0.5*r(t_remove)` into clean zero environments. The descendant is allowed to use only its own declared autonomous post-body law; the residual receives no body or external source.
+
+No intervention is allowed to change several causal ingredients at once unless explicitly stated above.
+
+### 20.5 Frozen observables
+
+Record at each declared timestep:
+
+- maximum pairwise difference among the reference `w`, `r`, and `m` traces before and after body removal;
+- body area over `5 <= t < 10` and `b(t_remove)` in the intact and envelope-ablated lanes;
+- maximum body-trajectory difference between intact and wake-ablated lanes;
+- post-removal left-rectangle probe area `AUC_q` for residual coupling enabled and state-matched coupling blocked;
+- `AUC_q` for clean residual and clean wake transplants;
+- post-removal observer-memory area and maximum difference among physical state trajectories after observer reset;
+- initial and final diluted descendant `d`;
+- initial and final diluted residual `r`.
+
+The physical-state tuple for the observer-reset comparison is `(b,e,w,r,d,q)`; `m` is excluded by design because it belongs to the observer rather than the plant.
+
+### 20.6 Frozen decision rule
+
+Priority C passes only if all conditions below are true at the primary timestep and the complete boolean decision independently remains true at every declared robustness timestep:
+
+1. **Visible-trace non-identifiability:** maximum pairwise difference among reference `w`, `r`, and `m` is `<= 1e-12`.
+2. **Envelope necessity:** envelope ablation gives body AUC over `[5,10)` at most `0.35` of the intact control and `b(t_remove) <= 0.10`.
+3. **Passive-wake control:** wake ablation changes the body trajectory by at most `1e-12`.
+4. **State-matched residual causality:** enabled residual coupling gives post-removal `AUC_q >= 4.0`, while the state-matched `c_r=0` control has `AUC_q <= 1e-12`.
+5. **Transplant discriminator:** a clean residual transplant gives `AUC_q >= 4.0`, while the numerically matched clean wake transplant gives `AUC_q <= 1e-12`.
+6. **Observer-artifact discriminator:** resetting only `m` changes every physical trajectory by at most `1e-12`, while the unreset observer-memory post-removal area is at least `4.0` and the reset observer begins at exactly zero.
+7. **Autonomous-descendant discriminator:** after 50% dilution, the descendant finishes at `d >= 0.70` and at least `1.50` times its diluted starting value.
+8. **Passive-residual dilution control:** after the same post-removal horizon, the diluted residual finishes at most `0.10` times its diluted starting value.
+9. **Timestep robustness:** items 1–8 all pass independently at `dt = 0.002`, `0.001`, and `0.0005` without changing any threshold or mechanism.
+
+A scientifically interpretable failure of any item is a decision-relevant negative result for this frozen fixture. The parameters, thresholds, interventions, or causal graph may not be tuned after inspection to manufacture a pass. A pure syntax or transcription defect may be corrected only as an explicit execution amendment before a scientifically interpretable result is accepted.
+
+### 20.7 Independent analytic checks frozen before execution
+
+The following identities do not depend on the eventual numerical output:
+
+1. With the intact initial state `b=e=1`, the body-envelope reference is an exact fixed point: `db/dt = de/dt = 0`.
+2. Under envelope clamp `e=0`, `db/dt = -0.5*b*(1+b) < 0` for every `b>0`, so the body must decay monotonically in that intervention.
+3. Because `w`, `r`, and `m` obey the same initial-value problem, uniqueness gives `w(t)=r(t)=m(t)` in the reference lane even though their causal roles are different.
+4. After body removal, each of those three traces obeys `x(t)=x(t_remove)*exp[-lambda*(t-t_remove)]` in the continuous model.
+5. `w` and `m` do not occur in any physical-state right-hand side, so wake ablation and observer reset cannot causally change the plant in this known-answer architecture.
+6. With the residual-to-probe coupling blocked and `q(t_remove)=0`, the exact probe solution remains `q(t)=0`.
+7. After body removal the descendant law is `dd/dt = d[(g_d-gamma_d)-g_d*d]`, with positive nonzero stable equilibrium `d*=1-gamma_d/g_d=0.8`; any `0<d<0.8` grows toward it. The residual instead has only exponential decay.
+
+These analytic checks are methodologically independent of the thresholded fixture classifier. A formal proof assistant is not used because the relevant identities are direct one-dimensional algebra and ODE uniqueness; the finite-step implementation is checked separately by timestep refinement.
+
+### 20.8 Cross-disciplinary counterexample intake
+
+The following external material is used only to ensure that the toy taxonomy does not collapse distinct standard concepts into one label. No source code, dataset, figure, equation transcription, or restricted artifact is incorporated into Lineum.
+
+1. Paolo Edera, Minaspi Bantawa, Stefano Aime, Roger T. Bonnecaze, and Michel Cloitre, *Mechanical Tuning of Residual Stress, Memory, and Aging in Soft Glassy Materials*, Physical Review X 15, 011043 (2025), DOI `10.1103/PhysRevX.15.011043`. Public article page states CC BY 4.0. Permitted use here: public factual comparison. Relevance: a material can retain physically embodied residual stress and directional memory after forcing, so `persistent memory` is not automatically an observer artifact.
+2. Robert Mahony, Pieter van Goor, and Tarek Hamel, *Observer Design for Nonlinear Systems with Equivariance*, arXiv:2108.09387 (2021). Permitted use here: public factual/mathematical comparison only; no implementation or text is copied. Relevance: an observer can possess its own internal dynamics/state, so an estimate or memory inside the observer must not be silently promoted to plant state.
+3. Atsushi Kamimura and Kunihiko Kaneko, *Exponential growth for self-reproduction in a catalytic reaction network: relevance of a minority molecular species and crowdedness*, arXiv:1711.08988 (2017). Permitted use here: public factual comparison only; no code or model implementation is copied. Relevance: an autonomously growing/self-reproducing process is a stronger causal class than a trace that merely decays after its generator is gone.
+4. Luca Vendruscolo, Eduardo Sebastián, Amanda Prorok, and Ajay Shankar, *Wake Up to the Past: Using Memory to Model Fluid Wake Effects on Robots*, arXiv:2603.22472 (2026). Permitted use here: public factual comparison only. Relevance: a wake can mediate delayed effects of past motion; therefore `wake` itself is not assumed passive in nature. The present fixture deliberately includes a passive-wake null and a separately causal-residual class so that later Lineum data can decide rather than inherit this toy label.
+
+License status for the three arXiv preprints was not used as permission to incorporate protected expression or implementation. Their use is limited to bibliographic identification and high-level factual comparison from public abstracts; no repository dependency or redistributable artifact is introduced.
+
+### 20.9 Current Lineum relationship and prohibited interpretation
+
+Relevant existing Lineum evidence is deliberately kept as comparison material rather than inherited parentage:
+
+- `lineum-core-envelope-wake-and-attraction-preregistration.md` already separates compact body, envelope, wake, collective object, vortex gas, distributed process, and observer artifact, and explicitly requires causal interventions rather than image resemblance;
+- `lineum-eq11-epsilon-relic-foam-provenance-comparison.md` distinguishes local growth/leakage, an explicit resource cycle, and a residual environmental state; its recorded Relic-Foam history includes aging, failed true re-ignition, and repeated-emission fatigue rather than an immortal autonomous remnant;
+- `lineum-core-deterministic-state-transplant-pilot.md` demonstrates exact software continuation only when the frozen numerical state and stochastic context are transferred; it explicitly does not establish heredity, autonomous copying, or physical identity.
+
+Priority C therefore tests the measurement logic needed before any of those Lineum lanes can be described as a causal post-body residual or descendant.
+
+A pass would establish only:
+
+```text
+known_answer_body_residual_taxonomy_fixture = supported_within_tested_domain
+persistence_alone_identifies_residual_class = no
+state_matched_intervention_can_identify_declared_causal_residual = yes_in_toy
+autonomous_regrowth_can_separate_declared_descendant_from_passive_residual = yes_in_toy
+observer_memory_can_be_separated_from_plant_state = yes_in_toy
+```
+
+It would not establish:
+
+```text
+Lineum_has_causal_post_body_residual = not_established
+P2_remnant_is_a_descendant = not_established
+Relic_Foam_is_autonomous = not_established
+mu_is_a_spirit_or_soul = not_established
+Enochic_giant_spirits_describe_physics = not_established
+physical_afterlife_or_consciousness = not_established
+```
+
+### 20.10 Frozen executable reference model
+
+The repository currently requires `numpy>=1.24,<2.0.0`; the active numerical environment is not being treated as repository-supported for NumPy-dependent claims. This fixture therefore uses only the Python standard library, as Priority A and Priority B did. No external package is required.
+
+```python
+import json
+import platform
+import sys
+
+GB = 0.5
+DENV = 1.0
+KE = 1.0
+LAM = 0.15
+SEED = 0.1
+GD = 0.5
+GAMD = 0.1
+GAMQ = 0.5
+CR = 0.6
+TABLATE = 5.0
+TREMOVE = 10.0
+T = 30.0
+DT_PRIMARY = 0.001
+DT_AUDIT = (0.002, 0.001, 0.0005)
+TOL = 1e-12
+
+NAMES = ("b", "e", "w", "r", "d", "m", "q")
+PHYS = ("b", "e", "w", "r", "d", "q")
+
+
+def zero_state():
+    return {name: 0.0 for name in NAMES}
+
+
+def initial_state():
+    s = zero_state()
+    s["b"] = 1.0
+    s["e"] = 1.0
+    return s
+
+
+def rhs(s, c_r=CR, probe_on=False):
+    b, e, w, r, d, m, q = (s[name] for name in NAMES)
+    return {
+        "b": GB * b * (1.0 - b) - DENV * (1.0 - e) * b,
+        "e": KE * (b - e),
+        "w": LAM * (b - w),
+        "r": LAM * (b - r),
+        "d": SEED * b * (1.0 - d) + GD * d * (1.0 - d) - GAMD * d,
+        "m": LAM * (b - m),
+        "q": (-GAMQ * q + c_r * r) if probe_on else 0.0,
+    }
+
+
+def step(s, dt, c_r=CR, probe_on=False, clamp_body=False, clamp_env=False, clamp_wake=False):
+    s = dict(s)
+    if clamp_body:
+        s["b"] = 0.0
+    if clamp_env:
+        s["e"] = 0.0
+    if clamp_wake:
+        s["w"] = 0.0
+    ds = rhs(s, c_r=c_r, probe_on=probe_on)
+    for name in NAMES:
+        s[name] += dt * ds[name]
+    if clamp_body:
+        s["b"] = 0.0
+    if clamp_env:
+        s["e"] = 0.0
+    if clamp_wake:
+        s["w"] = 0.0
+    if not probe_on:
+        s["q"] = 0.0
+    return s
+
+
+def pre_run(dt, ablation=None):
+    n_remove = int(round(TREMOVE / dt))
+    n_ablate = int(round(TABLATE / dt))
+    s = initial_state()
+    body_tail = []
+    trace_triplets = []
+    auc_body_tail = 0.0
+    for n in range(n_remove):
+        if n >= n_ablate:
+            body_tail.append(s["b"])
+            auc_body_tail += s["b"] * dt
+        trace_triplets.append((s["w"], s["r"], s["m"]))
+        s = step(
+            s,
+            dt,
+            probe_on=False,
+            clamp_env=(ablation == "envelope" and n >= n_ablate),
+            clamp_wake=(ablation == "wake" and n >= n_ablate),
+        )
+    trace_triplets.append((s["w"], s["r"], s["m"]))
+    return {
+        "state": s,
+        "body_tail": body_tail,
+        "auc_body_tail": auc_body_tail,
+        "trace_triplets": trace_triplets,
+    }
+
+
+def post_run(dt, start, c_r=CR, reset_observer=False):
+    n = int(round((T - TREMOVE) / dt))
+    s = dict(start)
+    s["b"] = 0.0
+    s["q"] = 0.0
+    if reset_observer:
+        s["m"] = 0.0
+    q_auc = 0.0
+    m_auc = 0.0
+    physical = []
+    trace_triplets = []
+    for _ in range(n):
+        q_auc += s["q"] * dt
+        m_auc += s["m"] * dt
+        physical.append(tuple(s[name] for name in PHYS))
+        trace_triplets.append((s["w"], s["r"], s["m"]))
+        s = step(s, dt, c_r=c_r, probe_on=True, clamp_body=True)
+    physical.append(tuple(s[name] for name in PHYS))
+    trace_triplets.append((s["w"], s["r"], s["m"]))
+    return {
+        "state": s,
+        "q_auc": q_auc,
+        "m_auc": m_auc,
+        "physical": physical,
+        "trace_triplets": trace_triplets,
+    }
+
+
+def max_triplet_gap(rows):
+    out = 0.0
+    for w, r, m in rows:
+        out = max(out, abs(w-r), abs(w-m), abs(r-m))
+    return out
+
+
+def max_series_gap(a, b):
+    return max(abs(x-y) for x, y in zip(a, b)) if a else 0.0
+
+
+def max_physical_gap(a, b):
+    out = 0.0
+    for xa, xb in zip(a, b):
+        for x, y in zip(xa, xb):
+            out = max(out, abs(x-y))
+    return out
+
+
+def clean_transplant(reference_state, key, scale=1.0):
+    s = zero_state()
+    s[key] = scale * reference_state[key]
+    return s
+
+
+def evaluate(dt):
+    control = pre_run(dt)
+    env = pre_run(dt, "envelope")
+    wake = pre_run(dt, "wake")
+    start = control["state"]
+
+    post = post_run(dt, start, c_r=CR)
+    blocked = post_run(dt, start, c_r=0.0)
+    observer_reset = post_run(dt, start, c_r=CR, reset_observer=True)
+
+    residual_tx = post_run(dt, clean_transplant(start, "r"), c_r=CR)
+    wake_tx = post_run(dt, clean_transplant(start, "w"), c_r=CR)
+
+    d0 = 0.5 * start["d"]
+    r0 = 0.5 * start["r"]
+    d_tx = post_run(dt, clean_transplant(start, "d", 0.5), c_r=0.0)
+    r_tx = post_run(dt, clean_transplant(start, "r", 0.5), c_r=0.0)
+
+    trace_gap = max(
+        max_triplet_gap(control["trace_triplets"]),
+        max_triplet_gap(post["trace_triplets"]),
+    )
+    env_ratio = env["auc_body_tail"] / control["auc_body_tail"]
+    wake_body_gap = max_series_gap(control["body_tail"], wake["body_tail"])
+    observer_physical_gap = max_physical_gap(post["physical"], observer_reset["physical"])
+    d_final = d_tx["state"]["d"]
+    r_final = r_tx["state"]["r"]
+    d_ratio = d_final / d0
+    r_ratio = r_final / r0
+
+    checks = {
+        "visible_trace_nonidentifying": trace_gap <= TOL,
+        "envelope_is_required": env_ratio <= 0.35 and env["state"]["b"] <= 0.10,
+        "wake_is_passive_for_body": wake_body_gap <= TOL,
+        "state_matched_residual_is_causal": post["q_auc"] >= 4.0 and blocked["q_auc"] <= TOL,
+        "residual_vs_wake_transplant": residual_tx["q_auc"] >= 4.0 and wake_tx["q_auc"] <= TOL,
+        "observer_memory_is_not_plant_state": observer_physical_gap <= TOL and post["m_auc"] >= 4.0 and observer_reset["trace_triplets"][0][2] == 0.0,
+        "descendant_regrows_after_dilution": d_final >= 0.70 and d_ratio >= 1.50,
+        "residual_only_decays_after_dilution": r_ratio <= 0.10,
+    }
+
+    return {
+        "dt": dt,
+        "reference_at_removal": {k: start[k] for k in NAMES},
+        "trace_gap_w_r_m": trace_gap,
+        "control_body_auc_5_10": control["auc_body_tail"],
+        "envelope_ablation_body_auc_5_10": env["auc_body_tail"],
+        "envelope_ablation_auc_ratio": env_ratio,
+        "envelope_ablation_b_tremove": env["state"]["b"],
+        "wake_ablation_max_body_gap": wake_body_gap,
+        "residual_enabled_q_auc": post["q_auc"],
+        "residual_blocked_q_auc": blocked["q_auc"],
+        "clean_residual_q_auc": residual_tx["q_auc"],
+        "clean_wake_q_auc": wake_tx["q_auc"],
+        "observer_unreset_m_auc": post["m_auc"],
+        "observer_reset_max_physical_gap": observer_physical_gap,
+        "diluted_descendant_start": d0,
+        "diluted_descendant_final": d_final,
+        "diluted_descendant_ratio": d_ratio,
+        "diluted_residual_start": r0,
+        "diluted_residual_final": r_final,
+        "diluted_residual_ratio": r_ratio,
+        "checks": checks,
+        "pass_without_dt_audit": all(checks.values()),
+    }
+
+
+primary = evaluate(DT_PRIMARY)
+audit = {str(dt): evaluate(dt) for dt in DT_AUDIT}
+overall_pass = primary["pass_without_dt_audit"] and all(
+    row["pass_without_dt_audit"] for row in audit.values()
+)
+
+print(json.dumps({
+    "python": sys.version.split()[0],
+    "platform": platform.platform(),
+    "parameters": {
+        "g_b": GB,
+        "d_env": DENV,
+        "k_e": KE,
+        "lambda": LAM,
+        "seed": SEED,
+        "g_d": GD,
+        "gamma_d": GAMD,
+        "gamma_q": GAMQ,
+        "c_r": CR,
+        "t_ablate": TABLATE,
+        "t_remove": TREMOVE,
+        "T": T,
+        "primary_dt": DT_PRIMARY,
+        "audit_dt": DT_AUDIT,
+    },
+    "primary": primary,
+    "dt_audit": audit,
+    "overall_pass": overall_pass,
+}, indent=2, sort_keys=True))
+```
+
+### 20.11 Execution boundary
+
+The executable above must be published in Git before the first official run. The official result must use it unchanged. The only permitted pre-result amendment is correction of a pure syntax or transcription defect that prevents the declared equations from being executed; any such amendment must be published and recorded before a scientifically interpretable outcome is accepted.
+
+If the fixture passes, the result may validate only this known-answer taxonomy and its intervention logic. Application to current Lineum dynamics remains a separate later gate. If the fixture fails any frozen scientific criterion, the negative result must be recorded without threshold or parameter tuning and the owner-intuition failure gate opens before a replacement causal architecture is selected.
