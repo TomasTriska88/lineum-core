@@ -2906,3 +2906,142 @@ The companion file is executable evidence, not a second narrative report. The Ma
 This report section and the exact companion executable must be committed before the first official numerical run. The official outcome must use the committed bytes unchanged. Only a pure syntax/transcription defect that prevents the declared equations from running may be corrected before accepting a scientifically interpretable outcome, and such a correction must itself be published first.
 
 A pass can establish only that the declared relational observer separates these known-answer classes even after complete constituent replacement. It cannot establish that current Lineum contains the tested protocol, that identity is metaphysically preserved, or that the Community Rule encodes a physical law. A failure opens the repository negative-result and owner-intuition gate before any replacement mechanism is selected.
+
+## 23. Priority D result — complete member-turnover relational identity fixture
+
+**Evidence status:** `[toy][measured][numerics][known-answer]`; complete-turnover relational-identity observer supported within the declared toy domain only.
+
+**Authoritative current status:** Priority D passed the frozen decision surface. This section supersedes the earlier Priority-D preregistration status and the older `next_action` metadata for this checkpoint. The next ranked standalone-programme step is Priority E: nested observer and `raz nihyeh` reconstruction.
+
+### 23.1 Frozen decision outcome
+
+The exact standard-library executable committed in preregistration commit `ececb5c8b66a7cde79aa622e7e0c2a2797935f7f` was executed without changing any parameter, threshold, turnover order, mechanism class, observable, or decision rule after outcome inspection.
+
+All eight scientific checks passed at the primary `dt = 0.002`, and the complete decision independently remained `PASS` at every preregistered timestep:
+
+```text
+dt = 0.004 -> PASS
+dt = 0.002 -> PASS
+dt = 0.001 -> PASS
+```
+
+Primary results:
+
+| Frozen distinction | Primary result | Interpretation inside this toy only |
+|---|---:|---|
+| Active order A median recovery | `0.9890405616495499` | relational pattern reconstructs after each replacement |
+| Active order A final `E_rel` | `0.00044851080895925023` | low residual role-relation error after complete turnover |
+| Active order B median recovery | `0.9890405616495499` | reverse replacement order gives the same median recovery |
+| Active order B final `E_rel` | `0.0022311423932854894` | low residual role-relation error after complete turnover |
+| Initial/final member Jaccard, both orders | `0.0` | no original member remains |
+| Protocol-removed median recovery, both orders | `0.0` | turnover alone does not reconstruct the relation pattern |
+| Protocol-removed final `E_rel` | `0.9391383156716286` / `0.9396044692774521` | replacement without protocol leaves a large relational error |
+| Member-label invariance delta | `0.0` | bookkeeping names do not define the positive result |
+| Same-parts/wrong-roles bag error | `0.0` | unlabeled scalar multiset is exactly matched |
+| Same-parts/wrong-roles `E_rel` | `1.9886038958388506` | the matched parts are rejected when their declared relations are wrong |
+| Common-clock phase order | `1.0` | perfect synchronization control |
+| Common-clock `E_rel` | `1.0` | perfect synchronization is insufficient for relational identity |
+| External-template source-on recovery | `0.9890405616495508` | an external controller can manufacture repair while active |
+| External-template fresh source-off recovery | `0.0` | driven repair is rejected as autonomous after source removal |
+| Global-offset invariance delta | `0.0` | common translation is non-identifying |
+
+Thus the strongest result is not merely that a shape survived. Every original member was replaced, yet the declared relational pattern was reconstructed; when the protocol was removed, the same turnover produced no recovery.
+
+### 23.2 Independent analytic and discrete checks
+
+The preregistered continuous model predicts single-window recovery
+
+```text
+1 - exp(-3*1.5) = 0.9888910034617577.
+```
+
+For explicit Euler, the frozen update gives the exact discrete recovery
+
+```text
+R_Euler(dt) = 1 - (1 - K*dt)^(round(tau/dt)).
+```
+
+The independently computed values agree with the observed order-A median recovery to floating-point roundoff:
+
+```text
+dt = 0.004:
+    exact discrete = 0.9891892899274505
+    observed       = 0.9891892899274505
+    abs error      = 0.0
+
+dt = 0.002:
+    exact discrete = 0.9890405616495501
+    observed       = 0.9890405616495499
+    abs error      = 2.220446049250313e-16
+
+dt = 0.001:
+    exact discrete = 0.9889658859775436
+    observed       = 0.9889658859775433
+    abs error      = 3.3306690738754696e-16
+```
+
+The no-protocol result `R_rel = 0`, common-clock `E_rel = 1`, zero member overlap, label invariance, and global-offset invariance also match the preregistered exact structural checks.
+
+### 23.3 Machine-readable evidence and integrity
+
+The frozen executable is:
+
+```text
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-d.py
+Git blob SHA: 599f974ceac064ba4c15a30d8f5183d9a31babf0
+SHA-256: 12e7878c3a74df5843aa7d92c8d6e62c88dcc3a439ae6258536d7d28f202e0a5
+```
+
+A sufficient machine record of every decision-relevant primary and timestep-audit metric is retained as:
+
+```text
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-d-output.json
+Git blob SHA: be627c467fb03ece4925e4d848771430db433f6a
+SHA-256: e95b050830a2b10ac7c4a0bf519f3c46c06ee301561634c409f64f7f9e811ed8
+```
+
+The machine record also retains the SHA-256 of the complete 20,081-byte stdout from the official execution:
+
+```text
+2df6f4a5c852ac1fbe049ee2aa76f2bea1b8cb16e3f238122162cadba116fc64
+```
+
+The full stdout itself is not separately committed byte-for-byte; the compact record retains all decision-relevant values and all three timestep decisions, while the frozen executable deterministically regenerates the full arrays. No external Python package or random seed is required.
+
+### 23.4 Relationship to the older turnover result
+
+The older `lineum-collective-member-turnover-protocol-fixture.md` remains historical supporting evidence: it reported clean discrimination over `252` trajectories with `25%` member turnover. Priority D does not erase or reinterpret that result. The new extension strengthens only the constituent-continuity question by replacing `100%` of members and by using the Python standard library under the current dependency constraints.
+
+It still does **not** solve the older report's stronger locality problem. Roles and target relations are supplied globally by construction. An actual emergent Lineum identity mechanism would need to reconstruct organization from repository-local dynamics rather than from an oracle-like role template.
+
+### 23.5 Interpretation boundary
+
+What Priority D established:
+
+```text
+known_answer_complete_turnover_relational_identity_fixture = supported_within_tested_domain
+permanent_member_identity_required = no_in_declared_toy
+turnover_alone_sufficient_identity = no
+same_unlabelled_parts_sufficient_identity = no
+perfect_common_clock_sufficient_identity = no
+external_source_on_repair_sufficient_autonomous_identity = no
+relational_protocol_recovers_after_zero_member_overlap = yes_in_declared_toy
+```
+
+What it did not establish:
+
+```text
+Lineum_has_this_relational_identity_protocol = not_established
+Lineum_collective_particle_exists = not_established
+Lineum_identity_survives_real_vortex_turnover = not_established
+local_emergent_role_discovery = not_established
+metaphysical_same_object_identity = not_established
+Community_Rule_encodes_Lineum_physics = not_established
+physical_soul_or_spirit = not_established
+```
+
+The methodological gain is that future identity claims now have a sharper null set. Neither permanent constituents, the same unlabeled parts, perfect synchronization, nor externally driven repair is sufficient by itself. In this known-answer system, the discriminating feature is active reconstruction of specific invariant relations after complete constituent replacement.
+
+For the ancient-text comparison, this supports only the **question generated by** the Community Rule motif: could higher-level identity be carried by a reconstructive protocol rather than by permanent members? It does not convert the Community Rule into a physics text and does not show that current Lineum implements such a protocol.
+
+Priority D therefore closes as a passed known-answer observer/intervention fixture only. The next ranked standalone-programme step is Priority E: compare snapshot-only, finite-history, relational, source-aware, and generative observers on a known system where the same local snapshot can arise from causally different histories.
