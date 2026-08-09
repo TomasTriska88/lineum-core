@@ -15,13 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Check out exact capture commit
+      - name: Check out exact trigger commit
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
-      - name: Verify frozen repository inputs
+      - name: Verify frozen inputs and recover receipt
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config core.hooksPath .agent/hooks
@@ -29,53 +31,44 @@ jobs:
           test "$(git hash-object lineum_core/math.py)" = "bb877021810691223a0eb960a45493a2e351112a"
           test "$(git hash-object research/runners/lineum_fac0_directed_coupling_replay.py)" = "facbd154ba24ff17ce03569da311da82d2ffb113"
           test "$(git hash-object tests/research/test_lineum_fac0_directed_coupling_replay.py)" = "03ca4e052641bdffb4d695cf93f5e6c92b83aa7e"
-          test "$(git hash-object research/foundations/lineum-continuous-source-cosmology-validation.md)" = "3fba3925553cd5596e46c02fa35d1db91523537d"
-          test "$(git hash-object research/foundations/lineum-root-programme-continuity-and-impact-ledger.md)" = "5304874451caf32313ad0e8e3c59e53958698d79"
-
-      - name: Recover and verify exact successful FAC0-R1 receipt
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          mkdir -p .scratch/fac0-r1-receipt
+          mkdir -p .scratch/fac0-r1
           curl --fail --silent --show-error --location \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/9035871239/zip" \
-            -o .scratch/fac0-r1-receipt/receipt.zip
-          unzip -q .scratch/fac0-r1-receipt/receipt.zip -d .scratch/fac0-r1-receipt/files
-          test "$(sha256sum .scratch/fac0-r1-receipt/files/fac0-r1-output.json | awk '{print $1}')" = "af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d"
-          test "$(sha256sum .scratch/fac0-r1-receipt/files/fac0-r1-test.txt | awk '{print $1}')" = "09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737"
+            -o .scratch/fac0-r1/receipt.zip
+          unzip -q .scratch/fac0-r1/receipt.zip -d .scratch/fac0-r1/files
+          test "$(sha256sum .scratch/fac0-r1/files/fac0-r1-output.json | awk '{print $1}')" = "af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d"
+          test "$(sha256sum .scratch/fac0-r1/files/fac0-r1-test.txt | awk '{print $1}')" = "09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737"
           python - <<'PY'
           import json
           from pathlib import Path
-          p = Path('.scratch/fac0-r1-receipt/files/fac0-r1-output.json')
-          data = json.loads(p.read_text(encoding='utf-8'))
+          data = json.loads(Path('.scratch/fac0-r1/files/fac0-r1-output.json').read_text(encoding='utf-8'))
           checks = {
               'schema': data['schema'] == 'lineum-fac0-r1-directed-coupling-replay/1',
               'status': data['status'] == 'supported_runtime_replay',
               'passed': data['passed'] is True,
               'commit': data['repository_commit'] == '6b553b621bc5ea9ec16b649cbea2f931c6737b39',
-              'math_blob': data['source']['math_blob_match'] is True and data['source']['observed_math_git_blob'] == 'bb877021810691223a0eb960a45493a2e351112a',
-              'numpy': data['environment']['numpy'] == '1.26.4' and data['environment']['repository_numpy_contract_pass'] is True,
               'python': data['environment']['python'] == '3.11.9',
+              'numpy': data['environment']['numpy'] == '1.26.4',
+              'numpy_contract': data['environment']['repository_numpy_contract_pass'] is True,
+              'math_blob': data['source']['math_blob_match'] is True and data['source']['observed_math_git_blob'] == 'bb877021810691223a0eb960a45493a2e351112a',
               'graph': data['graph_check']['passed'] is True and not data['graph_check']['required_failures'] and not data['graph_check']['forbidden_failures'],
               'linearity': data['linearity_check']['passed'] is True,
-              'stochastic_delta': data['stochastic_delta_matched_rng']['passed'] is True,
-              'payload_hash': data['canonical_payload_sha256_without_self'] == '18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280',
+              'delta': data['stochastic_delta_matched_rng']['passed'] is True,
+              'payload': data['canonical_payload_sha256_without_self'] == '18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280',
           }
-          failed = [k for k, ok in checks.items() if not ok]
+          failed = [name for name, ok in checks.items() if not ok]
           if failed:
               raise SystemExit(f'FAC0-R1 receipt verification failed: {failed}')
           PY
 
-      - name: Promote receipt and update the single active report
+      - name: Promote evidence and update active report
         shell: bash
         run: |
           set -euo pipefail
-          cp .scratch/fac0-r1-receipt/files/fac0-r1-output.json \
+          cp .scratch/fac0-r1/files/fac0-r1-output.json \
             research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
           python - <<'PY'
           from pathlib import Path
@@ -84,11 +77,10 @@ jobs:
           path = Path('research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md')
           text = path.read_text(encoding='utf-8')
 
-          def replace_once(old: str, new: str, label: str) -> None:
+          def replace_once(old, new, label):
               global text
-              count = text.count(old)
-              if count != 1:
-                  raise SystemExit(f'{label}: expected exactly one match, found {count}')
+              if text.count(old) != 1:
+                  raise SystemExit(f'{label}: expected one match, got {text.count(old)}')
               text = text.replace(old, new, 1)
 
           text, n = re.subn(
@@ -99,72 +91,41 @@ jobs:
               flags=re.MULTILINE,
           )
           if n != 1:
-              raise SystemExit('status header replacement failed')
+              raise SystemExit('status replacement failed')
           replace_once('**Version:** 0.4.0  ', '**Version:** 0.4.1  ', 'version')
           replace_once('**Evidence cutoff:** 2026-08-07  ', '**Evidence cutoff:** 2026-08-09  ', 'evidence cutoff')
-          replace_once('**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  ', '**FAC0-R1 execution commit:** `6b553b621bc5ea9ec16b649cbea2f931c6737b39`  ', 'execution commit')
-          replace_once('**Previous version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  ', '**Previous version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  ', 'previous version')
-          replace_once('**Earlier version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  ', '**Earlier version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  ', 'earlier version')
-          replace_once('**Older version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  ', '**Older version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  ', 'older version')
-          replace_once('**Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  ', '**Legacy version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  \n**Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  ', 'legacy lineage')
+          replace_once(
+              '**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  ',
+              '**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  \n**FAC0-R1 execution commit:** `6b553b621bc5ea9ec16b649cbea2f931c6737b39`  ',
+              'execution receipt',
+          )
+          replace_once(
+              '**Previous version of this report:** version 0.3.1, blob `82fa1a86fe1261c9a20723280d7c4c816f93694d`  ',
+              '**Previous version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  ',
+              'previous version',
+          )
           replace_once(
               'The numerical FAC0 corroboration is provisional because the available local Python environment violated the repository NumPy contract.',
-              'FAC0-R1 is now reproduced in Python 3.11.9 with NumPy 1.26.4 against the exact current `math.py` blob; this supports the implementation-level directed response graph within the tested one-step domain, while physical energy, ontology, closed resource accounting, and real-world correspondence remain unestablished.',
-              'confidence update',
+              'FAC0-R1 is reproduced in Python 3.11.9 with NumPy 1.26.4 against the exact current `math.py` blob; this supports the implementation-level directed response graph within the tested one-step domain, while physical energy, ontology, closed resource accounting, and real-world correspondence remain unestablished.',
+              'confidence',
           )
 
           marker = 'No negative result or source-critical restriction from versions `0.1.0` through `0.3.1` is withdrawn here.'
-          insert = '''Version `0.4.1` records the first repository-supported FAC0-R1 execution. The exact current `step_core` NumPy path passed the frozen directed-edge graph, local linearity, and matched-RNG `delta` source-sensitivity gates under Python 3.11.9 and NumPy 1.26.4. The first remote attempt is retained as a technical execution failure because direct script invocation lacked the repository root on `sys.path`; the same attempt's pytest gate passed. The corrected invocation changed only `PYTHONPATH=.` and the second run passed. This supersedes the earlier unsupported-runtime numerical corroboration for FAC0 without promoting any physical-energy, ontology, or new-state claim.\n\n'''
+          version_note = '''Version `0.4.1` records the first repository-supported FAC0-R1 execution. The actual current `step_core` NumPy path passed the frozen directed-edge graph, local-linearity, and matched-RNG `delta` source-sensitivity gates under Python 3.11.9 and NumPy 1.26.4. The first remote direct-script attempt failed only because the repository root was absent from Python's import path; the same attempt's pytest gate passed. The corrected invocation changed only `PYTHONPATH=.` and then passed. This supersedes the unsupported-runtime numerical corroboration as the FAC0 decision gate without promoting any physical-energy, ontology, new-state, or ancient-physics claim.\n\n'''
           if marker not in text:
-              raise SystemExit('version-history insertion marker missing')
-          text = text.replace(marker, insert + marker, 1)
+              raise SystemExit('version-history marker missing')
+          text = text.replace(marker, version_note + marker, 1)
 
-          replace_once(
-              '## 25. Next checkpoint gate\n\nBefore modifying a Core equation, adding a Core field, changing whitepaper ontology, naming any quantity physical energy, or starting FAC1:',
-              '## 25. Next checkpoint gate\n\nFAC0-R1 satisfied the runtime-replay prerequisites below on 2026-08-09. The list is retained as the frozen preregistration that governed the run; items 1 through 6 are now satisfied for the tested `math.py` blob, so FAC1 is authorized.\n\nBefore modifying a Core equation, adding a Core field, changing whitepaper ontology, naming any quantity physical energy, or starting FAC1:',
-              'section 25 gate status',
-          )
+          if '\n## 28. FAC0-R1 supported-runtime replay checkpoint' in text:
+              raise SystemExit('FAC0-R1 section already exists')
 
-          new_264 = '''### 26.4 Immediate execution order
-
-FAC0-R1 is complete for the tested current `math.py` blob. The immediate execution order is now:
-
-```text
-1. execute FAC1 term-isolated paired-versus-unpaired accounting;
-2. execute FAC2 complete software source/sink bookkeeping;
-3. execute FAC3 reciprocal closure versus finite source/receiver toy classes;
-4. execute FAC4 static versus dynamic scaffold;
-5. execute FAC5 held-out new-state necessity ladder;
-6. only after an explicit DG0 model exists, compare it against the best same-layer survivor with the same held-out data and complexity discipline;
-7. resume IC1, TS1, EC1, DB1, PI1, PH1, and LAEC0 after the more basic accounting/state question is resolved or when dependency logic makes one of them the cheaper discriminator.
-```
-
-The local execution environment still cannot resolve `github.com`, but the FAC0-R1 runtime blocker has been closed by the explicitly justified repository-supported GitHub-hosted replay recorded in Section 28. That technical workaround does not authorize weakening future local-first execution rules.
-'''
-          text, n = re.subn(r'### 26\.4 Immediate execution order\n.*?(?=\n### 26\.5)', new_264, text, count=1, flags=re.DOTALL)
-          if n != 1:
-              raise SystemExit('section 26.4 replacement failed')
-
-          new_269 = '''### 26.9 Current resume sentence
-
-If this work is opened in a new conversation, the operational instruction is simply:
-
-> Continue the active missing-piece research from this report under current repository rules. FAC0-R1 has passed in a repository-supported runtime against the exact current `math.py` blob; proceed with FAC1, then FAC2-FAC5, keeping DG0 as an explicit but unprivileged later comparison class, preserve LAEC0 as a separately source-audited local-autonomy/epistemic-closure lane, and preserve all results in this report.
-'''
-          text, n = re.subn(r'### 26\.9 Current resume sentence\n.*?(?=\n## 27\.)', new_269, text, count=1, flags=re.DOTALL)
-          if n != 1:
-              raise SystemExit('section 26.9 replacement failed')
-
-          if '\n## 28.' in text:
-              raise SystemExit('Section 28 already exists')
-
-          section28 = r'''
+          section = r'''
 
 ## 28. FAC0-R1 supported-runtime replay checkpoint
 
 ### 28.1 Answer first
 
-FAC0-R1 passed against the actual current Core implementation in a repository-supported NumPy environment. The one-step response graph predicted by source inspection is therefore no longer supported only by a manually transcribed, unsupported-runtime checker.
+FAC0-R1 passed against the actual current Core implementation in a repository-supported NumPy environment. The directed one-step response graph predicted by source inspection is therefore no longer supported only by the earlier manually transcribed checker running outside the repository NumPy contract.
 
 The narrow result is:
 
@@ -176,13 +137,11 @@ actual current step_core
     -> predicted directed one-step response graph reproduced
 ```
 
-This establishes an implementation-level response result only. It does **not** establish physical energy, a conserved physical resource, ontology for `Psi/Phi/mu/kappa/delta`, a need for a new field, or correspondence with nature.
+This is an implementation-level result only. It does **not** establish physical energy, a conserved physical resource, ontology for `Psi`, `Phi`, `mu`, `kappa`, or `delta`, a need for a new field, correspondence with nature, or any claim that ancient texts encode Lineum or modern physics.
 
-### 28.2 Why R1 was necessary
+### 28.2 Frozen protocol and provenance
 
-The earlier permanent FAC0 checkpoint preserved the base state, `CoreConfig`, perturbation amplitudes, observables, graph expectations, and causal question, but it did not preserve the exact smooth localized perturbation function used by the manually transcribed checker. An exact historical replay was therefore impossible.
-
-FAC0-R1 repaired that reproducibility defect **before** the supported-runtime run by freezing an explicit discrete-L2-normalized anisotropic Gaussian:
+FAC0-R1 repaired one reproducibility defect in the earlier FAC0 checkpoint: the exact localized perturbation function had not been preserved. R1 froze an anisotropic Gaussian with discrete-L2 normalization before the supported-runtime execution:
 
 ```text
 center_x = 0.23
@@ -190,28 +149,42 @@ center_y = -0.17
 sigma_x = 0.29
 sigma_y = 0.31
 Psi perturbation phase = 0.37 rad
-normalization = discrete L2 norm to 1
 primary epsilon = 1e-4
 linearity epsilons = 5e-7, 1e-6, 2e-6
 stochastic delta amplitudes = 0.01, 0.05, 0.2, 0.5
 matched RNG seeds = 0..19
 ```
 
-R1 did not change the prior base state, Core configuration, primary amplitude, linearity amplitudes, stochastic amplitudes, observables, causal question, or interpretation class.
+The base state, Core configuration, causal question, response observables, expected graph, amplitudes, thresholds, and interpretation class were not retuned after seeing the supported-runtime result.
 
-### 28.3 Execution chronology, including the failed attempt
+Immutable execution receipts:
 
-The active local execution environment still could not resolve `github.com`, so it could not obtain a clean checkout. That is a technical infrastructure limitation, not a scientific result. Repository rule `53-local-scientific-execution.md` permits a narrowly scoped GitHub-hosted execution when the frozen run cannot be performed locally and the limitation is recorded first.
+```text
+execution commit = 6b553b621bc5ea9ec16b649cbea2f931c6737b39
+math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC0-R1 runner blob = facbd154ba24ff17ce03569da311da82d2ffb113
+FAC0-R1 test blob = 03ca4e052641bdffb4d695cf93f5e6c92b83aa7e
+Python = 3.11.9
+NumPy = 1.26.4
+backend = numpy / CPU / deterministic
+plain JSON SHA-256 = af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d
+canonical payload SHA-256 = 18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280
+temporary pytest-text SHA-256 = 09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737
+```
 
-The first remote attempt ran at commit `6991f9ffb39e9cfc5f6a0dd193d4f84f0cf41512`. Checkout, Python 3.11.9, NumPy 1.26.4, and source-hash receipts succeeded. Direct invocation then failed with:
+The exact machine-readable output is retained beside this report as `lineum-ancient-texts-fac0-r1-supported-runtime.json`. It is a plain evidence companion, not a second narrative report.
+
+### 28.3 Execution chronology and technical failure
+
+The local workspace still could not resolve `github.com`, so the frozen execution could not be performed in a clean local checkout. That is an infrastructure limitation, not a scientific negative result. The already preregistered one-use GitHub-hosted replay was therefore used under the local-execution exception.
+
+The first remote direct-script attempt at commit `6991f9ffb39e9cfc5f6a0dd193d4f84f0cf41512` reached the supported Python/NumPy environment but failed before producing runner JSON with:
 
 ```text
 ModuleNotFoundError: No module named 'lineum_core'
 ```
 
-That failure was caused by Python's import path when executing a script located under `research/runners/`; it occurred before the runner could produce its JSON. In the same job, however, the regression test imported the runner through its test loader, called `run()`, and passed `1/1`. The failed direct invocation is retained as a technical execution failure and is not counted as a scientific FAC0 failure.
-
-The only correction was to prefix the direct command with `PYTHONPATH=.`. No Core source, runner source, test, perturbation, threshold, seed, metric, expected graph, or interpretation was changed. The second run, GitHub Actions run `31305696058`, job `93225609854`, executed at commit `6b553b621bc5ea9ec16b649cbea2f931c6737b39` and completed successfully.
+The regression test in that attempt nevertheless imported the runner through its test loader and passed. The only execution correction was to prefix direct invocation with `PYTHONPATH=.`. No Core source, runner, test, perturbation, threshold, seed, metric, expected graph, or interpretation changed. The corrected run was GitHub Actions run `31305696058`, job `93225609854`, at execution commit `6b553b621bc5ea9ec16b649cbea2f931c6737b39`.
 
 Official commands:
 
@@ -220,80 +193,23 @@ PYTHONPATH=. python research/runners/lineum_fac0_directed_coupling_replay.py > f
 pytest -q tests/research/test_lineum_fac0_directed_coupling_replay.py
 ```
 
-The pytest gate reported:
+The pytest gate reported `1 passed in 0.14s`.
+
+### 28.4 Observed deterministic graph and local linearity
+
+The frozen graph gate passed with no required-edge failures and no forbidden-edge failures. The observed deterministic pattern remains:
 
 ```text
-1 passed in 0.14s
+Psi perturbation   -> Psi, Phi, mu
+Phi perturbation   -> Psi, Phi, mu
+mu perturbation    -> Psi, Phi, mu
+kappa perturbation -> Psi, Phi, mu, kappa
+delta perturbation -> no deterministic response when stochastic source is disabled
 ```
 
-### 28.4 Environment and immutable source receipts
+The `Phi -> mu` and `mu -> Phi` one-step responses are still explained by sequential same-step writes through `Psi`; FAC0 does not convert them into evidence of direct reciprocal physical transfer. `kappa` affects all dynamic outputs while remaining supplied rather than evolved by `step_core`.
 
-```text
-GitHub-hosted OS: Ubuntu 24.04.4 LTS
-Python: 3.11.9
-NumPy: 1.26.4
-pytest: 8.3.5
-execution backend: NumPy / CPU
-deterministic mode: true
-enforced canonical execution: true
-repository NumPy contract: >=1.24,<2.0.0
-repository NumPy contract pass: true
-execution commit: 6b553b621bc5ea9ec16b649cbea2f931c6737b39
-lineum_core/math.py blob: bb877021810691223a0eb960a45493a2e351112a
-FAC0-R1 runner blob: facbd154ba24ff17ce03569da311da82d2ffb113
-FAC0-R1 test blob: 03ca4e052641bdffb4d695cf93f5e6c92b83aa7e
-```
-
-The complete machine-readable output is retained as the plain companion artifact:
-
-```text
-research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
-schema: lineum-fac0-r1-directed-coupling-replay/1
-canonical payload SHA-256 without self field:
-18f40a2acd36c7bd8955191bdfcc00e1235733178bf832742076ac1c8b20d280
-exact output-file SHA-256:
-af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d
-```
-
-The temporary test-text receipt had SHA-256 `09229b326b028651d725fa47cd1bae9fd8e0145ff8779bdb84ae2762c00ab737`. The temporary GitHub artifact is not part of the permanent evidence chain; the report and plain JSON companion are.
-
-### 28.5 Deterministic one-step response matrix
-
-For primary perturbation L2 magnitude `1e-4`, the observed output L2 differences were:
-
-| perturbed input | `Psi` response | `Phi` response | `mu` response | `kappa` response |
-|---|---:|---:|---:|---:|
-| `Psi` | `9.991002372320469e-05` | `4.063511924708403e-09` | `2.2907512838914175e-08` | `0` |
-| `Phi` | `9.556385478027928e-08` | `9.999184870343018e-05` | `2.2437524743805403e-11` | `0` |
-| `mu` | `2.9527480175484684e-08` | `1.2612202520919595e-12` | `1.000015021432722e-04` | `0` |
-| `kappa` | `3.627899615190725e-08` | `9.079090282645104e-10` | `3.5825278817618605e-09` | `1.000000000000626e-04` |
-| `delta` with source disabled | `0` | `0` | `0` | `0` |
-
-The frozen graph check used:
-
-```text
-required-edge threshold = 1e-16
-forbidden-edge threshold = 1e-15
-required failures = []
-forbidden failures = []
-graph_check.passed = true
-```
-
-The observed one-step graph therefore agrees with the source-inspection prediction:
-
-```text
-Psi   -> Psi, Phi, mu
-Phi   -> Psi, Phi, mu
-mu    -> Psi, Phi, mu
-kappa -> Psi, Phi, mu, kappa
-delta -> no deterministic response when source is disabled
-```
-
-The `Phi -> mu` and `mu -> Phi` one-step responses remain ordering effects through intermediate `Psi` writes, not evidence of direct reciprocal physical transfer. `kappa` influences all dynamic outputs while remaining a supplied input in the current step.
-
-### 28.6 Local linearity check
-
-The frozen self-edge slope stability check passed over perturbation magnitudes `5e-7`, `1e-6`, and `2e-6`:
+Self-edge slope stability across `5e-7`, `1e-6`, and `2e-6` perturbations passed the frozen `1e-4` relative-span criterion:
 
 | edge | relative slope span |
 |---|---:|
@@ -302,66 +218,57 @@ The frozen self-edge slope stability check passed over perturbation magnitudes `
 | `mu -> mu` | `1.632602842596243e-11` |
 | `kappa -> kappa` | `3.555666872084596e-11` |
 
-All are far below the frozen `1e-4` acceptance threshold. This shows that the primary one-step self responses are locally stable under the tested perturbation scaling; it does not establish global linearity of Lineum dynamics.
+This supports local stability of these one-step responses under the tested perturbation scaling. It does not establish global linearity of Lineum dynamics.
 
-### 28.7 Matched-RNG `delta` source-sensitivity check
+### 28.5 Matched-RNG delta source sensitivity
 
-With stochastic source enabled, the same RNG seed was used for baseline and perturbed runs. `delta` changes source-event probability, so the response is event-sensitive rather than a continuous deterministic write:
+With stochastic source enabled and matched RNG seeds, the frozen `delta` perturbations produced:
 
-| `delta` perturbation L2 | changed seeds / 20 | max `Psi` difference | mean `Psi` difference |
+| delta perturbation L2 | changed seeds / 20 | maximum Psi difference | mean Psi difference |
 |---:|---:|---:|---:|
-| `0.01` | `0/20` | `0` | `0` |
+| `0.01` | `0/20` | `0.0` | `0.0` |
 | `0.05` | `3/20` | `0.003781864275455506` | `0.00046754347003772934` |
 | `0.2` | `7/20` | `0.0038642918015632873` | `0.0010749120280950854` |
 | `0.5` | `18/20` | `0.004829389915368274` | `0.0029997515655590733` |
 
-The frozen criterion required the largest perturbation to change `Psi` for at least one matched seed; it passed. This supports the implementation statement that `delta` enters the stochastic source-probability path. It does not justify interpreting `delta` as energy or a physical field.
+The preregistered criterion required the largest perturbation to alter `Psi` for at least one matched seed; it passed. This supports only the implementation statement that `delta` enters the stochastic source-probability path.
 
-### 28.8 Independent verification and evidence status
+### 28.6 Evidence status and programme impact
 
-The decision-relevant independence is methodological, not a second full implementation:
-
-1. source inspection established the expected direct writes and same-step ordering implications before the supported replay;
-2. FAC0-R1 executed the actual current `step_core` NumPy path rather than a transcription;
-3. immutable Git blob receipts verified that the executed `math.py`, runner, and regression test were exactly the frozen sources;
-4. the regression gate independently asserted environment, graph, linearity, stochastic sensitivity, and overall pass conditions around the runner output.
-
-The regression test imports and calls the same runner, so it is **not** a fully independent second numerical implementation. The strongest bounded classification is therefore:
+The independent component is methodological rather than a second complete numerical implementation: source inspection established the expected writes and ordering before the supported replay; FAC0-R1 then exercised the actual current `step_core`; the regression gate independently checked the frozen receipt conditions. The anti-green-test limit remains binding.
 
 ```text
-FAC0-R1 implementation response = reproduced
-FAC0-R1 graph within frozen one-step domain = supported_within_tested_domain
-physical energy/resource interpretation = unresolved / not established
-new-state necessity = not established
+current implementation computes directed writes = established by source audit
+supported-runtime one-step response = reproduced
+local perturbation scaling = reproduced within tested amplitudes
+stochastic delta source sensitivity = reproduced within tested amplitudes/seeds
+closed physical resource account = not established
+physical energy identification = not established
+new fundamental state necessity = not established
 real-world physical correspondence = none
+ancient-physics correspondence = none
 ```
 
-The earlier unsupported-runtime numerical corroboration remains historical evidence but is superseded as the decision gate for FAC0 by this supported-runtime replay.
+Programme impact:
 
-### 28.9 Programme impact matrix
-
-| programme branch | impact of FAC0-R1 |
+| programme branch | FAC0-R1 impact |
 |---|---|
 | current Core directed-coupling graph | `supports` |
-| source-inspection same-step ordering interpretation | `supports` |
-| earlier provisional FAC0 numerical corroboration | `supersedes_as_decision_gate` |
-| closed physical resource account | `unaffected_open` |
-| reciprocal/back-reaction candidate `M1` | `reopens_for_FAC1` |
-| finite source/receiver candidates `M2-M3` | `unaffected_open` |
-| dynamic scaffold candidate `M4` | `unaffected_open` |
-| history/reduction candidate `M6` | `unaffected_open` |
-| genuinely new state `M7` | `constrains_against_premature_escalation` |
-| deeper-generative `DG0` | `unaffected_unprivileged` |
-| ancient-text / `LAEC0` lane | `unaffected` |
+| source-inspection same-step ordering | `supports` |
+| FAC1 term-isolated accounting | `unblocks` |
+| FAC2 source/sink bookkeeping | `depends_on FAC1` |
+| FAC3 reciprocal/source/receiver classes | `unchanged, later gate` |
+| FAC4 static versus dynamic scaffold | `unchanged, later gate` |
+| FAC5 new-state necessity ladder | `unchanged, later gate` |
+| DG0 deeper-generative/effective-equation candidate | `unaffected, remains unprivileged` |
+| LAEC0 local-autonomy/epistemic-closure lane | `unaffected` |
 | particle, identity, heredity, life, cosmology claims | `unaffected_unproven` |
 
 No earlier negative result is withdrawn by FAC0-R1.
 
-### 28.10 Next gate: FAC1
+### 28.7 Next gate and thread handoff
 
-FAC1 is now authorized because the exact current Core response graph survived the supported-runtime replay.
-
-FAC1 must isolate the implementation terms that can otherwise be conflated in the one-step graph. In particular it must separate:
+FAC1 is now the cheapest useful discriminator. It must isolate terms that are conflated in the aggregate one-step response graph:
 
 ```text
 explicit paired mode-coupling debit/credit;
@@ -370,48 +277,30 @@ grad(Phi) -> Psi drift;
 Psi activity -> mu write;
 mu -> modulation of Psi feedback;
 kappa-dependent modulation without kappa evolution;
-source injection;
-dissipation, PML, caps, reset, and decay sinks.
+source injection and sink/removal paths.
 ```
 
-The question is not yet whether any of these is physical energy. The FAC1 question is narrower:
+After FAC1, continue FAC2 through FAC5 in order unless a frozen result makes another already registered discriminator strictly cheaper. Keep DG0 as an explicit later comparison class, not a rescue assumption. Preserve LAEC0 as the separately source-audited Gnostic local-autonomy/epistemic-closure lane. Do not add a new fundamental state before the existing-state, reciprocal-accounting, source/receiver, dynamic-scaffold, and history alternatives have had their preregistered tests.
 
-> Which current writes are explicitly paired in software accounting, which are one-way feedback or copying-like writes, and which are sources or sinks with no represented counterpart?
-
-FAC1 must preserve the distinction between direct and same-step indirect effects and must not add a field, reservoir, reciprocal term, or ontology before the current terms have been isolated and accounted for.
+**Resume instruction for a new conversation:** read the current repository rules and this report from `develop`, verify its current SHA, then continue from FAC1. Treat FAC0-R1 as `reproduced` at the implementation level only; retain every historical negative, contradiction, source-critical restriction, and the zero-evidence boundary on ancient-physics claims.
 '''
 
-          text = text.rstrip() + section28 + '\n'
+          text = text.rstrip() + section + '\n'
           path.write_text(text, encoding='utf-8')
           PY
 
-      - name: Verify exact publication scope and publish checkpoint
+      - name: Commit retained checkpoint and remove one-use workflow
         shell: bash
         run: |
           set -euo pipefail
-          test "$(sha256sum research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json | awk '{print $1}')" = "af3a4fd4a012e9c2f62147fe70a97adce03fb6e149fe17385c7047aff385a99d"
-          grep -Fq '**Version:** 0.4.1' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
-          grep -Fq '## 28. FAC0-R1 supported-runtime replay checkpoint' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
-          grep -Fq 'FAC1 is now authorized' research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm .github/workflows/fac0-r1-supported-replay.yml
-          git add research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md \
-                  research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
+          git add \
+            research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md \
+            research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json
           git diff --cached --check
-          mapfile -t changed < <(git diff --cached --name-only | sort)
-          expected=(
-            '.github/workflows/fac0-r1-supported-replay.yml'
-            'research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md'
-            'research/foundations/lineum-ancient-texts-fac0-r1-supported-runtime.json'
-          )
-          if [ "${#changed[@]}" -ne "${#expected[@]}" ]; then
-            printf 'Unexpected changed-file count\n'; printf '%s\n' "${changed[@]}"; exit 1
-          fi
-          for i in "${!expected[@]}"; do
-            test "${changed[$i]}" = "${expected[$i]}"
-          done
-          git fetch origin develop
-          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/develop)"
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'research: record supported FAC0 replay'
+          git diff --cached --name-status
+          git commit -m "research: retain FAC0-R1 supported replay"
+          git pull --rebase origin develop
           git push origin HEAD:develop
