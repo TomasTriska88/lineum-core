@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   checkpoint:
-    if: "${{ github.event.head_commit.message == 'chore: add one-use B4 owner memory audit workflow' }}"
+    if: "${{ github.event.head_commit.message == 'chore: repair one-use B4 owner memory audit workflow' }}"
     runs-on: ubuntu-latest
     steps:
       - name: Check out triggering commit
@@ -24,7 +24,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD^)" = "f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375"
+          test "$(git rev-parse HEAD^)" = "c7cee9d7c5448f2a14ba994ee7370a28f0d8c7d9"
           test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "ba1e432e1f3827cbf5516dec3b8b45811b1f8bab"
           git fetch origin develop
           test "$(git rev-parse origin/develop)" = "$GITHUB_SHA"
@@ -55,8 +55,9 @@ jobs:
 
           replacements = {
               '**Version:** 0.24.8 \\': '**Version:** 0.24.9 \\',
-              '**Evidence cutoff:** 2026-08-09  ': '**Evidence cutoff:** 2026-08-10  ',
-              '**Checkpoint parent:** `fc9574e98ff00db554374a16c9baee31be5e362e` \\': '**Checkpoint parent:** `f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375` \\',
+              '**Evidence cutoff:** 2026-08-09  ': '**Evidence cutoff:** 2026-08-10',
+              '**Checkpoint parent:** `fc9574e98ff00db554374a16c9baee31be5e362e` \\':
+                  '**Checkpoint parent:** `f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375` \\',
           }
           for old, new in replacements.items():
               if text.count(old) != 1:
@@ -74,14 +75,17 @@ jobs:
               "or unusual coordinate semantics. A current-code and retained-history audit identifies "
               "`mu` as an already implemented slow history field and recovers an earlier public "
               "label-retention protocol that explicitly distinguished passive storage from causal reuse. "
-              "The same audit finds that the production directional `phi`-gradient term names the first "
-              "array gradient component as `x` and the second as `y`, although those components are axis 0 "
-              "and axis 1 respectively; NumPy and PyTorch paths nevertheless use the same numerical "
-              "ordering, and the existing B4 runner deliberately mirrors it. No prior B4 Q2 result is "
-              "invalidated by this naming convention. The next causal-memory discriminator is constrained "
-              "to begin with `drift_strength = 0`, so that the coordinate-sensitive directional "
-              "`phi`-gradient term is absent from the primary lane. No new equation, parameter tuning, "
-              "simulation result, Q1 claim, Q3 claim, or whitepaper change is introduced by this checkpoint."
+              "The production directional `phi`-gradient path uses the first array-axis derivative as the "
+              "real component and the second as the imaginary component while production variable names "
+              "call them `x` and `y`; both NumPy and PyTorch preserve the same numerical ordering, and the "
+              "existing B4 runner deliberately mirrors it. No prior B4 Q2 result is invalidated by this "
+              "naming convention. The next causal-memory discriminator is constrained to begin with "
+              "`drift_strength = 0`, so the coordinate-sensitive directional `phi`-gradient term is absent "
+              "from the primary lane. The first emergency report-publication workflow for this checkpoint "
+              "passed its frozen source-identity gates but stopped before commit because `git diff --check` "
+              "rejected Markdown trailing spaces on the newly edited evidence-cutoff line. That was a "
+              "technical transport failure with no scientific execution or retained report change. This "
+              "version records the corrected transport chronology without changing any scientific result."
           )
           idx = text.find(authority_anchor)
           if idx < 0:
@@ -91,7 +95,174 @@ jobs:
               raise SystemExit("0.24.8 authority paragraph end not found")
           text = text[:paragraph_end] + authority_insert + text[paragraph_end:]
 
-          section = '## Q2-M0 — Owner instruction intuition, coordinate audit, and existing `mu` retrieval\n\n### Owner response and correction\n\nThis checkpoint follows the independently verified `Q2-PV1-B` negative result. At the neutral owner-intuition gate, the owner independently suggested that the missing ingredient might be some kind of **description, guide, or instruction** telling the system how to return. This statement is retained as owner intuition, not as an implemented mechanism or scientific result.\n\nBefore any new experiment was frozen, the owner separately warned that one existing Lineum field might historically have used reversed or unusual coordinates. That warning is treated as a methodological constraint: no directional return result may be interpreted until the relevant coordinate convention is audited.\n\n### What the current implementation actually computes\n\nCurrent public Core source identity for this audit:\n\n```text\nrepository: TomasTriska88/lineum-core\nbranch: develop\naudit base commit: f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375\nlineum_core/math.py Git blob: bb877021810691223a0eb960a45493a2e351112a\n```\n\nThe current NumPy path computes two distinct gradient uses.\n\nFor the amplitude-plus-external-delta gradient it assigns the two outputs of `np.gradient` to names equivalent to `grad_x` and `grad_y`, then uses only\n\n```text\nsqrt(grad_axis0^2 + grad_axis1^2)\n```\n\nfor the gradient magnitude. Exchanging the two component names therefore does not change this scalar magnitude.\n\nFor the `phi` gradient, the current NumPy path obtains the first and second array-axis derivatives and places them into a complex directional flow as\n\n```text\nphi_flow ∝ gradient_axis0(phi) + i * gradient_axis1(phi).\n```\n\nThe production variable names call the first returned component `x` and the second `y`. Under the ordinary matrix convention, however, axis 0 is the row direction and axis 1 is the column direction. The PyTorch path uses the same first-component-real, second-component-imaginary ordering. This is therefore a coordinate/naming convention issue rather than a NumPy-versus-PyTorch disagreement.\n\nThe retained B4 localized runner explicitly documents and mirrors this production convention: its batched axis 1 corresponds to the production array\'s axis 0, and batched axis 2 corresponds to production axis 1. Consequently, the coordinate naming issue does **not** retroactively invalidate the existing independently checked B4 Q2 results.\n\n`mu` itself is a scalar array. Its deposition and decay do not contain a directional derivative. Its stored spatial location can still matter because the current solver reads\n\n```text\ndrift_multiplier = 1 + mu\n```\n\npointwise into later interaction and directional-flow amplitudes.\n\n### Retained historical evidence recovered before mechanism selection\n\nA prior public current-engine label-retention programme had already formalized almost exactly the owner\'s new intuition without adding a new Lineum field.\n\nIts frozen question separated:\n\n```text\npassive record:\n    can past structure still be read from phi or mu after psi is removed?\n\ncausal echo:\n    after both histories are reset to the same current psi,\n    do retained phi or mu states cause different subsequent psi evolution?\n```\n\nThe registered alternatives already included:\n\n```text\nmu-only slow structural record\njoint phi/mu record\ngrid-orientation artifact\nslow transient mistaken for memory\ncausal echo without passive decoding\npassive record without causal echo\n```\n\nThe protocol also preregistered an erased-history causal null, full-history continuation, `phi`-only continuation, `mu`-only continuation, cap control, and a 90-degree transpose/label-swap grid-artifact control.\n\nThe retained `P1` one-pair preflight observed, in its declared standalone NumPy runtime, that after 2000 source-off updates the `mu` RMS amplitude was\n\n```text\nobserved / imprint = 0.9801985752862405\nanalytic expectation = 0.9801985752863286\n```\n\nand its normalized spatial shape changed only at approximately `2.1e-15`. `phi` retained about `0.5360` of its imprint RMS amplitude. The horizontal/vertical transpose checks remained at floating-point-noise scale and `psi` remained exactly zero during source-off relaxation.\n\nThis is **not causal-return evidence**. In that source-off lane `mu_eta = 0`, `drift_strength = 0`, and the implemented update reduces to the pointwise exponential decay\n\n```text\nmu_(n+1) = (1 - mu_rho * dt) * mu_n.\n```\n\nSpatial-shape preservation is therefore largely built into the tested passive update. The retained P1 execution also used NumPy 2.3.5 while the repository-supported dependency surface requires NumPy below 2.0, so it is historical protocol/mechanical evidence rather than a newly promoted supported-runtime B4 result.\n\nThe current branch contains the P0 observer audit, the parent full protocol, and the P1 preflight. Current `research/runners/` and `research/results/` listings contain no retained label-retention or causal-echo runner/result, and commit searches for the phrases `label retention` and `causal echo` returned no matching retained commit. This does not prove that no exploratory execution ever occurred; it means that no complete causal-echo result was recovered as durable current-branch evidence during this audit.\n\n### Why the prior Q2 negative does not test this candidate\n\nThe frozen B4 Q2 localized and ledger-control harnesses use a zero `mu` array and do not evolve a deposited `mu` history. Their negative result remains valid for the exact tested `psi`/`phi` state and controls, but it does not test whether an already-existing `mu` history can supply state-dependent causal guidance after perturbation.\n\nThis narrows the next question without weakening the previous negative result.\n\n### Cheapest next Q2 discriminator\n\nThe next Q2 step is **not** to add a new field and not to reactivate directional drift immediately.\n\nThe primary lane must first isolate existing `mu` causal reuse with:\n\n```text\ndrift_strength = 0\n```\n\nthroughout the causal-return discriminator. This removes the coordinate-sensitive directional `phi`-gradient term entirely from the primary test.\n\nThe smallest useful comparison is:\n\n```text\nsame current psi after perturbation\nsame scalar parameters and deterministic runtime\n\nlane A: retain the correctly located historical mu pattern\nlane B: erase mu\nlane C: preserve mu magnitude/distribution but destroy its spatial instruction\n        by a preregistered transpose or permutation control\n```\n\n`phi` must be either equalized or explicitly ablated so that a positive effect can be assigned to retained `mu` rather than to the faster `phi` trace. The exact control construction, observer, numerical thresholds, supported runtime, implementation-conformance check, and independent checker remain to be frozen before execution.\n\nA positive causal divergence is only a prerequisite. To answer Q2, the retained `mu` lane must subsequently improve the already-frozen full-state return classification without caps, resets, noise, ad hoc damping, or post-result tuning. If retained `mu` merely makes two futures different without pulling the perturbed state toward its preregistered reference state, it is history dependence but not a Q2 attractor rescue.\n\n### Evidence separation\n\n```text\nimplemented:\n    current Core contains scalar mu state;\n    mu is read pointwise through 1 + mu;\n    directional phi flow uses first-array-axis + i*second-array-axis ordering;\n\nreproduced historical observation:\n    the retained P1 preflight preserved a slowly decaying spatial mu imprint and\n    transpose symmetry in its declared standalone runtime;\n\ninterpretation:\n    existing mu is a credible candidate carrier for the owner\'s "instruction" intuition,\n    but only a causal intervention can show that the stored spatial information matters;\n\nhypothesis:\n    a correctly located mu imprint may bias a perturbed state toward a previously\n    encoded state more effectively than erased or spatially scrambled mu;\n\nnot established:\n    causal mu reuse;\n    Q2 return or attraction;\n    natural bounded saturation;\n    Q3 fixed-potential localized information retention;\n    any empirical physical correspondence in nature.\n```\n\n### Next gate\n\nNo scientific execution is authorized from this checkpoint alone. Before the first causal-memory run, the same B4 report must freeze:\n\n1. the exact current-Core source snapshot and supported dependency environment;\n2. the minimal `mu` causal-return lanes and the `phi` confound control;\n3. the transpose/permutation control and coordinate convention;\n4. Q2 return observables and unchanged success thresholds;\n5. the independent implementation or analytic verification lane;\n6. the current real-universe comparison layer required by the repository evidence protocol.\n\nOnly after that preregistration is committed may the causal-memory experiment execute.'
+          section = """## Q2-M0 — Owner instruction intuition, coordinate audit, and existing `mu` retrieval
+
+          ### Owner response and coordinate warning
+
+          This checkpoint follows the independently verified `Q2-PV1-B` negative result. At the neutral owner-intuition gate, the owner independently suggested that the missing ingredient might be some kind of **description, guide, or instruction** telling the system how to return. This is owner intuition, not an implemented mechanism or a scientific result.
+
+          Before any replacement experiment was frozen, the owner separately warned that an existing Lineum field may historically have used reversed or unusual coordinates. That warning is treated as a methodological constraint: directional return evidence must not be interpreted until the relevant coordinate convention is explicit.
+
+          ### What the current implementation computes
+
+          Current public Core identity used for this audit:
+
+          ```text
+          repository: TomasTriska88/lineum-core
+          branch: develop
+          scientific audit base commit: f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375
+          lineum_core/math.py Git blob: bb877021810691223a0eb960a45493a2e351112a
+          ```
+
+          The current NumPy path has two materially different gradient uses.
+
+          For the amplitude-plus-external-delta gradient, the two outputs of `np.gradient` are assigned to names equivalent to `grad_x` and `grad_y`, but only their Euclidean magnitude is used:
+
+          ```text
+          sqrt(gradient_axis0^2 + gradient_axis1^2)
+          ```
+
+          Exchanging the component names therefore does not change that scalar quantity.
+
+          For the `phi` gradient, the current solver instead forms a directional complex contribution in the numerical order
+
+          ```text
+          phi_flow ∝ gradient_axis0(phi) + i * gradient_axis1(phi).
+          ```
+
+          Production variable names call the first returned component `x` and the second `y`. Under the ordinary matrix convention, axis 0 is the row direction and axis 1 is the column direction. The PyTorch path uses the same first-component-real, second-component-imaginary ordering. The issue is therefore a coordinate/naming convention, not a NumPy-versus-PyTorch disagreement.
+
+          The retained B4 localized runner explicitly documents and mirrors that production convention: its batched axis 1 corresponds to production array axis 0 and its batched axis 2 corresponds to production axis 1. The coordinate naming issue therefore does **not** retroactively invalidate the existing independently checked B4 Q2 results.
+
+          `mu` itself is a scalar array. Its deposition and decay use no directional derivative. Its spatial placement can nevertheless matter because the current solver reads
+
+          ```text
+          drift_multiplier = 1 + mu
+          ```
+
+          pointwise into later interaction amplitudes and, when enabled, the directional flow amplitude.
+
+          ### Historical candidate recovered before mechanism selection
+
+          A prior public current-engine label-retention programme had already formalized almost exactly the owner's new intuition without adding a new Lineum field. It separated:
+
+          ```text
+          passive record:
+              can past structure still be read from phi or mu after psi is removed?
+
+          causal echo:
+              after both histories are reset to the same current psi,
+              do retained phi or mu states cause different subsequent psi evolution?
+          ```
+
+          Its registered alternatives included a `mu`-only slow structural record, a joint `phi`/`mu` record, a square-grid orientation artifact, a slow transient mistaken for memory, causal echo without passive decoding, and passive storage without causal echo. Its frozen controls included erased history, full history, `phi`-only history, `mu`-only history, a raised-cap lane, and a global 90-degree transpose plus label-swap grid-artifact control.
+
+          The retained `P1` one-pair preflight observed after 2000 source-off updates:
+
+          ```text
+          mu RMS observed / imprint = 0.9801985752862405
+          mu RMS analytic expectation = 0.9801985752863286
+          normalized mu spatial-shape change ≈ 2.1e-15
+          phi RMS observed / imprint ≈ 0.5360
+          psi during source-off = exactly zero
+          ```
+
+          This is **not causal-return evidence**. In that source-off lane `mu_eta = 0`, `drift_strength = 0`, and the implemented update reduces to
+
+          ```text
+          mu_(n+1) = (1 - mu_rho * dt) * mu_n.
+          ```
+
+          The preserved normalized `mu` shape is therefore largely an expected consequence of pointwise exponential decay. The retained P1 execution also used NumPy 2.3.5 while the repository-supported dependency surface requires NumPy below 2.0, so it remains historical protocol/mechanical evidence rather than a newly promoted supported-runtime B4 result.
+
+          The current branch contains the P0 observer audit, the full frozen parent protocol, and the P1 preflight. Current `research/runners/` and `research/results/` listings contain no retained label-retention or causal-echo runner/result, and commit searches for `label retention` and `causal echo` returned no matching retained commit. This does not prove that no exploratory execution ever occurred; it means that no complete causal-echo result was recovered as durable current-branch evidence during this audit.
+
+          ### Why the prior Q2 negative does not test this candidate
+
+          The frozen B4 Q2 localized and ledger-control harnesses use a zero `mu` array and do not evolve a deposited `mu` history. Their negative result remains valid for the exact tested `psi`/`phi` state and controls, but it does not test whether an already-existing `mu` history can provide state-dependent causal guidance after perturbation.
+
+          This narrows the tested domain without weakening the previous negative result.
+
+          ### Coordinate-safe cheapest next discriminator
+
+          The next Q2 step is **not** to add a new field and not to reactivate directional drift.
+
+          The primary causal-memory lane must begin with
+
+          ```text
+          drift_strength = 0
+          ```
+
+          throughout the discriminator. This removes the coordinate-sensitive directional `phi`-gradient term entirely from the primary test.
+
+          The smallest useful comparison is:
+
+          ```text
+          same current psi after perturbation
+          same scalar parameters
+          same deterministic supported runtime
+
+          lane A: retain the correctly located historical mu pattern
+          lane B: erase mu
+          lane C: preserve mu magnitude/distribution but destroy its spatial instruction
+                  with a preregistered transpose or permutation control
+          ```
+
+          `phi` must be equalized or explicitly ablated so that a positive effect can be assigned to retained `mu` rather than to the faster `phi` trace.
+
+          A positive future divergence alone cannot answer Q2. To rescue Q2, retained `mu` must improve the already-frozen full-state return classification without caps, resets, noise, ad hoc damping, or post-result tuning. If the retained pattern merely makes two futures different without pulling the perturbed state toward its preregistered reference state, that is history dependence, not an attractor rescue.
+
+          ### Emergency Git transport chronology
+
+          The first one-use workflow for this checkpoint was run as GitHub Actions run `31340778697`, job `93314066917`, from workflow commit `c7cee9d7c5448f2a14ba994ee7370a28f0d8c7d9`. It passed checkout, frozen-parent, frozen-report-blob, and branch race checks. The report-edit step then stopped on `git diff --check` because the newly edited `Evidence cutoff` line retained Markdown's two trailing spaces. The final commit/self-removal step was skipped.
+
+          Classification:
+
+          ```text
+          technical_transport_failure
+          scientific_execution_performed = false
+          scientific_result_produced = false
+          authoritative_B4_report_changed = false
+          repair_scope = remove trailing spaces from the newly edited evidence-cutoff line only
+          ```
+
+          The retry preserves the same scientific content and additionally retains this chronology.
+
+          ### Evidence separation
+
+          ```text
+          implemented:
+              current Core contains scalar mu state;
+              mu is read pointwise through 1 + mu;
+              directional phi flow uses first-array-axis + i*second-array-axis ordering;
+
+          reproduced historical observation:
+              retained P1 preserved a slowly decaying spatial mu imprint and
+              transpose symmetry in its declared standalone runtime;
+
+          interpretation:
+              existing mu is a credible candidate carrier for the owner's "instruction" intuition,
+              but only a causal intervention can show that the stored spatial information matters;
+
+          hypothesis:
+              a correctly located mu imprint may bias a perturbed state toward a previously
+              encoded state more effectively than erased or spatially scrambled mu;
+
+          not established:
+              causal mu reuse;
+              Q2 return or attraction;
+              natural bounded saturation;
+              Q3 fixed-potential localized information retention;
+              any empirical physical correspondence in nature.
+          ```
+
+          ### Next gate
+
+          No scientific execution follows from this checkpoint alone. Before the first causal-memory run, this same B4 report must freeze the exact current-Core source snapshot and supported dependency environment, the minimal `mu` causal-return lanes and `phi` confound control, the transpose/permutation control and coordinate convention, unchanged Q2 return observables and success thresholds, a methodologically independent verification lane, and the current real-universe comparison layer required by the repository evidence protocol.
+
+          Only after that preregistration is committed may the causal-memory experiment execute."""
+
+          section = "\n".join(line[10:] if line.startswith("          ") else line for line in section.splitlines())
           heading = "## Q2-M0 — Owner instruction intuition, coordinate audit, and existing `mu` retrieval"
           if heading in text:
               raise SystemExit("Q2-M0 section already present")
@@ -101,6 +272,7 @@ jobs:
 
           grep -Fq '**Version:** 0.24.9' research/lineum-public-tolog-galactic-shape-b4.md
           grep -Fq '## Q2-M0 — Owner instruction intuition, coordinate audit, and existing `mu` retrieval' research/lineum-public-tolog-galactic-shape-b4.md
+          grep -Fq 'technical_transport_failure' research/lineum-public-tolog-galactic-shape-b4.md
           git diff --check
           test "$(git diff --name-only | tr -d '\r')" = "research/lineum-public-tolog-galactic-shape-b4.md"
 
