@@ -1,7 +1,7 @@
 # Gnostic, Enochic, and Dead Sea Scrolls Structural Audit for Lineum
 
-**Status:** active comparative conceptual research; Priority A known-answer cohesion-observer fixture passed; no Lineum or physical validation claimed  
-**Version:** 0.3.0  
+**Status:** active comparative conceptual research; Priority A and Priority B known-answer fixtures passed; no Lineum or physical validation claimed  
+**Version:** 0.4.0  
 **Evidence cutoff:** 2026-08-09  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
@@ -18,7 +18,7 @@
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
 **Scope:** A historically separated, source-critical audit of selected Nag Hammadi and related early Christian texts, the semantic history of `pneuma`, 1 Enoch and related Enochic literature, and selected Dead Sea Scrolls. The audit is deliberately programme-wide: it may generate hypotheses for any part of Lineum, including source accounting, field coupling, topology, localization, collective identity, boundaries, memory, branching, observers, synchronization, reconstruction, copying, residual states, emergence, cosmology, and physical correspondence. It must never treat ancient religious texts as encoded modern physics.  
 **Central questions:** Which ancient motifs are only broad human metaphors, which preserve a structurally precise systems insight, and which can be translated into a falsifiable Lineum observer, intervention, accounting test, toy model, or cross-branch discriminator? Do any motifs reveal a missing comparison class, observer failure, reciprocal coupling, finite source stock, relational invariant, multiscale architecture, or causal residual not yet represented in the current research programme?  
-**Current confidence:** high that several motifs generate scientifically useful questions; high that the frozen Priority-A cohesion observer separates the declared known-answer toy fixtures; medium that the reciprocal-generation, finite-reservoir, protocol-identity, and body-versus-residual abstractions can produce further discriminating toy models; low that any specific Lineum mechanism will survive those tests; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
+**Current confidence:** high that several motifs generate scientifically useful questions; high that the frozen Priority-A cohesion observer separates its declared known-answer fixtures; high that the frozen Priority-B accounting and intervention observer separates the declared open-source, finite-stock, reciprocal, return-path, and matched-damping toy architectures; medium that the remaining protocol-identity and body-versus-residual abstractions can produce further discriminating toy models; low that any specific Lineum mechanism will survive later application; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
 
 ## 1. Answer first
 
@@ -87,6 +87,16 @@ These are hypothesis generators. They are not evidence that ancient authors knew
 
 ## 2. Version history
 
+Version 0.4.0 preserves all source-critical and Priority-A material from 0.3.0 and adds:
+
+- a Git-published preregistration of the Priority-B source-architecture fixture before the first numerical outcome was inspected;
+- five known-answer source architectures: external one-way input, finite stock, reciprocal back-reaction, explicit receiver/return, and matched-damping open control;
+- exact analytic accounting identities and a state-matched return-block intervention;
+- one standard-library Python primary run plus frozen timestep audits at `dt = 0.004`, `0.002`, and `0.001`;
+- a pass of all frozen decision criteria without retuning;
+- an independent closed-form check for the two linear open controls;
+- a bounded conclusion that the fixture distinguishes only the declared toy source topologies and has not yet been applied to active Lineum dynamics.
+
 Version 0.3.0 preserves the source-critical and programme-wide audit from 0.2.0 and adds:
 
 - a Git-published preregistration of the Priority-A known-answer cohesion observer before the first official outcome was inspected;
@@ -106,7 +116,7 @@ Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 - frozen toy-model and observer tests;
 - a ranked research sequence that remains executable in ChatGPT while local Codex execution is unavailable.
 
-No equation, production code, public API, or whitepaper was changed by version 0.3.0.
+No equation, production code, public API, or whitepaper was changed by version 0.4.0.
 
 ## 3. Historical separation rule
 
@@ -918,11 +928,11 @@ Local Codex execution is unavailable, but the following work remains reliable in
 
 ### Priority A: pneuma-cohesion observer fixture
 
-Status at version 0.3.0: the frozen known-answer fixture passed. This establishes only that the declared observer distinguishes the five declared toy mechanism classes under P1-P4. It does not establish that Lineum contains such a cohesion mode.
+Status at version 0.4.0: the frozen known-answer fixture passed. This establishes only that the declared observer distinguishes the five declared toy mechanism classes under P1-P4. It does not establish that Lineum contains such a cohesion mode.
 
 ### Priority B: reciprocal-generation and finite-store toy system
 
-Compare one-way pump, reciprocal coupling, finite stock, return channel, and matched damping. This directly tests the highest-value source-accounting abstraction.
+Status at version 0.4.0: the frozen source-architecture fixture passed all declared primary and timestep-robustness criteria. It establishes only that finite stock, reciprocal source suppression, explicit return, and open matched-damping controls are distinguishable under the declared toy ledger and interventions. It has not been applied to the active Lineum implementation.
 
 ### Priority C: body-versus-residual toy intervention
 
@@ -946,7 +956,7 @@ No toy result may be promoted into the Core equation, package, or whitepaper. Ap
 
 | Root branch | Relation | Effect of this audit |
 |---|---|---|
-| Coherent software pump and open source ledger | `reopens` | Reciprocal-generation and finite-store tests are now a prioritized toy lane. |
+| Coherent software pump and open source ledger | `reopens` | Priority B now supplies a passed known-answer accounting/intervention fixture; application to the current pump remains untested. |
 | Centered randomness nucleates dense activity | `unaffected` | Ancient motifs do not change the observed role of randomness. |
 | No stable localized particle demonstrated | `unaffected` | No textual analogy supplies missing numerical evidence. |
 | P2 multi-defect remnant | `reopens` | Adds body, descendant, wake, active residual, relic, and artifact classes. |
@@ -992,35 +1002,51 @@ what_current_implementation_computes:
     unchanged by this report;
     current Core has declared fields and local update rules but no pneuma,
     pleroma, archon, Watcher, spirit, covenant, or Enochic reservoir variable;
+    Priority B did not alter or execute the active Lineum equation;
 
 what_was_reproducibly_observed:
-    a standard-library known-answer toy fixture was executed after its decision rule was
-    committed; the complete-graph spring collective recovered its reference relational
-    geometry under all four frozen affine perturbations with median R_d =
-    0.9999999999999938 and median R_cov = 0.9999999999999942; all four declared
-    source-off negative mechanism classes had R_d = 0.0; the externally controlled
-    population recovered only while its controller was active;
+    Priority A: the preregistered complete-graph spring collective recovered its reference
+    relational geometry under all four frozen affine perturbations while all four source-off
+    negative mechanism classes were rejected;
+    Priority B: the preregistered standard-library source-architecture fixture passed all nine
+    frozen decision items at dt = 0.002 and retained the full pass at dt = 0.004 and 0.001;
+    at the primary step, A and finite-stock B had max source-on |E_A-E_B| = 0.0 even though
+    B depleted its stock at gate-off; reciprocal C retained 7.239388428814432 of S0 = 20
+    while reducing its last source rate to 0.6180341947820507; D's post-source return path
+    produced AUC_off = 79.46174746037795 versus 15.169798086250719 in the state-matched
+    return-block ablation; the matched-damping open control remained bounded with
+    E(t_off) = 8.646917847222714 while still requiring cumulative external input;
 
 independent_or_adversarial_checks:
-    the spring dynamics have the preregistered analytic gradient-flow identity
-    dV/dt = -|grad V|^2 <= 0 in the continuous toy model; translation, rotation, and
-    permutation changes altered E_d only at <= 2.78e-17; dt = 0.004, 0.002, and 0.001
-    all retained median internal R_d above 0.99999999999998; strict finite-step energy
-    monotonicity shows tiny positive roundoff increments below 6.0e-30 after the energy
-    reaches the floating-point floor, so discrete strict monotonicity is not claimed;
+    Priority A retains its preregistered gradient-flow identity and invariance/timestep audits;
+    Priority B has exact algebraic ledgers d(E+D-C_ext)/dt = 0 for open controls,
+    d(S+E+D)/dt = 0 for finite and reciprocal stock, and d(S+E+R+D)/dt = 0 for the
+    receiver/return architecture; the largest primary closed-ledger residual was
+    2.2168933355715126e-12 and the largest primary open-ledger residual was
+    2.007283228522283e-12, both far below the frozen 2e-9 threshold; closed-form
+    constant-source solutions for A and E agree with the Euler results with errors
+    4.531675739105623e-7 and 2.7067958884074983e-4 respectively at dt = 0.002, and the A
+    error decreases approximately by a factor of two on each timestep halving as expected
+    for first-order Euler integration;
 
 cautious_interpretation:
-    the frozen observer is fit for its declared known-answer screening role: it detects
-    active restoration of relational geometry and rejects matched co-motion, passive
-    geometry, and source-only restoration within this toy domain;
+    Priority A supplies a known-answer cohesion screening observer; Priority B supplies a
+    known-answer source-topology accounting/intervention observer. Priority B demonstrates
+    that bounded or long-lived activity is not by itself evidence of a finite or reciprocal
+    source, that source architecture can be observationally hidden before depletion, and
+    that a state-matched return-path ablation can isolate genuine recirculation in this toy;
 
 hypothesis_or_analogy:
-    every ancient-text mapping in Sections 7 and 8, and any claim that an actual Lineum
-    collective possesses the tested restoring mode;
+    every ancient-text mapping in Sections 7 and 8, any claim that an actual Lineum
+    collective possesses the Priority-A restoring mode, and any claim that active Lineum
+    dynamics contain the finite stock, reciprocal source, or receiver/return architecture
+    distinguished by Priority B;
 
 known_real_physics_or_history:
     manuscript facts, textual content, and Stoic historical physics are historical evidence;
-    they are not evidence that nature or Lineum uses the same mechanisms.
+    generic conservation, open-system accounting, feedback, and reservoir mathematics are
+    standard system concepts, but this toy supplies no empirical evidence that nature or
+    Lineum uses the same source topology.
 ```
 
 ## 13. Current verdict
@@ -1032,14 +1058,15 @@ programme_wide_structural_audit = active
 pneuma_as_mu = unsupported
 pneuma_as_relational_tensile_cohesion = known_answer_observer_fixture_supported_only
 cohesion_observer_applied_to_lineum = not_yet
-reciprocal_generation_and_source_closure = high_priority_toy_lane
-finite_source_store_and_gated_flux = high_priority_toy_lane
+reciprocal_generation_and_source_closure = known_answer_source_architecture_fixture_supported_only
+finite_source_store_and_gated_flux = known_answer_source_architecture_fixture_supported_only
+source_architecture_observer_applied_to_lineum = not_yet
 body_versus_causal_residual = high_priority_toy_lane
 collective_identity_by_protocol = high_priority_toy_lane
 multiscale_observer_and_temporal_reconstruction = high_priority_toy_lane
 dual_substance_interpretation = deferred_behind_intervention_comparison
 physical_soul_or_spirit_correspondence = not_established
-next_action = build_reciprocal_generation_and_finite_store_toy_system
+next_action = build_body_versus_residual_known_answer_intervention
 ```
 
 ## 14. Initial source register
@@ -1278,8 +1305,8 @@ def cen(p):
 def ds(p):
     p = cen(p); out = []
     for i in range(len(p)):
-        for j in range(i+1, len(p)):
-            out.append(math.hypot(p[i][0]-p[j][0], p[i][1]-p[j][1]))
+        for j in range(i+1,len(p)):
+            out.append(math.hypot(p[i][0]-p[j][0],p[i][1]-p[j][1]))
     return sorted(out)
 
 def ed(p, r):
@@ -1443,7 +1470,7 @@ Priority A therefore closes only as a known-answer observer fixture. The next ra
 
 ## 18. Priority B preregistration — finite-source, reciprocal, and return-path known-answer fixture
 
-**Evidence status:** `[toy][preregistered]`; no Priority-B numerical outcome had been inspected when this section was first published.
+**Evidence status:** `[toy][preregistered]`; no Priority-B numerical outcome had been inspected when this section was first published in commit `d1e10a498732d67c4e70fb2058e19ffbaaf5b947`.
 
 ### 18.1 Question and permitted conclusion
 
@@ -1870,3 +1897,162 @@ A pass would establish only that the frozen bookkeeping observables and interven
 A failure would mean this fixture, observer, threshold set, or toy architecture is not adequate for its declared discriminating role. Under the repository negative-result gate, such a scientifically interpretable failure must be preserved rather than rescued by parameter tuning.
 
 The current active Core implementation remains unchanged by this preregistration. No new field, reservoir, equation, production module, public API, whitepaper claim, or physical correspondence is introduced. The real-universe layer is deliberately not invoked as evidence here: finite reservoirs, feedback, recirculation, and open-system accounting are generic system architectures, while any claim that Lineum or nature implements this particular toy topology remains untested.
+
+## 19. Priority B result — source architecture and reciprocal closure fixture
+
+**Evidence status:** `[toy][measured][numerics][known-answer]`; frozen source-topology fixture supported within the declared toy domain only.
+
+### 19.1 Frozen decision outcome
+
+The exact executable in Section 18.7 was run after preregistration without changing any parameter, threshold, mechanism class, observable, or decision rule. The primary `dt = 0.002` run passed all nine frozen checks, and the complete decision independently remained `PASS` at `dt = 0.004` and `dt = 0.001`.
+
+Primary results:
+
+| Fixture | `E(t_off)` | source stock at `t_off` | post-off `AUC_E` | key source/ledger result |
+|---|---:|---:|---:|---|
+| A external one-way | `1.999909653308049` | none | `3.999638621394719` | open ledger residual `1.9806378759312793e-12` with external input included |
+| B finite stock | `1.999909653308049` | `2.0518309273853674e-13` | `3.999638621394719` | depletion fraction `0.9999999999999897`; closed ledger residual `2.2168933355715126e-12` |
+| C reciprocal finite stock | `1.236066900192638` | `7.239388428814432` | `2.4720221258298176` | last source rate `0.6180341947820507`; closed ledger residual `4.973799150320701e-14` |
+| D receiver + return | `7.585241693872696` | `2.0518309273853674e-13` | `79.46174746037795` | post-off return flux `33.964100306503305`; closed ledger residual `2.2168933355715126e-12` |
+| D return blocked after `t_off` | same starting state as D | same | `15.169798086250719` | only `k_r` changed from `1` to `0`; ledger residual `2.2737367544323206e-13` |
+| E matched-damping external | `8.646917847222714` | none | `74.76918825661889` | bounded despite open external source; open ledger residual `2.007283228522283e-12` |
+
+The source-on active trajectories of A and B were numerically identical at the primary step: `max |E_A-E_B| = 0.0`. Thus the observed activity alone carried no information about whether the source behind it was external or finite before the finite stock reached its depletion boundary.
+
+C retained `36.19694214407216%` of its initial stock at gate-off while reducing the requested source rate from `1.0` initially to `0.6180341947820507`. This is the expected qualitative signature of the explicitly coded negative feedback; no significance is attached to the numerical value itself.
+
+For D, blocking only the post-source return path while preserving the complete state at `t_off` reduced post-source activity area from `79.46174746037795` to `15.169798086250719`. The return-enabled value is `5.238154589044847` times the blocked value, a difference of `64.29194937412723`. Because the intervention changes only the return rate after state matching, this is a causal known-answer demonstration that the receiver/return channel, not merely a different initial condition, sustains the additional post-source activity in this toy.
+
+### 19.2 Timestep robustness
+
+All nine frozen booleans were true at every declared timestep:
+
+```text
+dt = 0.004 -> PASS
+dt = 0.002 -> PASS
+dt = 0.001 -> PASS
+```
+
+Key values remained stable:
+
+| `dt` | B depletion fraction | C stock at `t_off` | C last `u` | D `AUC_off` | D blocked `AUC_off` | max pre-off `|A-B|` |
+|---:|---:|---:|---:|---:|---:|---:|
+| `0.004` | `1.0` | `7.239333026114565` | `0.6180341930614804` | `79.46683507917314` | `15.170273897725924` | `1.6431300764452317e-14` |
+| `0.002` | `0.9999999999999897` | `7.239388428814432` | `0.6180341947820507` | `79.46174746037795` | `15.169798086250719` | `0.0` |
+| `0.001` | `1.0` | `7.2394160884628445` | `0.6180341956464923` | `79.45920388134682` | `15.169560191576574` | `1.4599432773820809e-12` |
+
+No decision threshold was changed after these values were inspected.
+
+### 19.3 Independent analytic and post-run checks
+
+The preregistered algebraic identities close exactly in the continuous toy equations by cancellation. The finite-step primary residuals are about three orders of magnitude below the already strict frozen threshold `2e-9`:
+
+```text
+largest primary closed-ledger residual = 2.2168933355715126e-12
+largest primary open-ledger residual   = 2.007283228522283e-12
+```
+
+A post-run check against exact continuous solutions for the two linear open controls, not used to change the decision surface, gives:
+
+```text
+A exact E(20) = 1.999909200140475
+A Euler error at dt=0.002 = 4.531675739105623e-7
+
+E matched-open exact E(20) = 8.646647167633873
+E matched-open Euler error at dt=0.002 = 2.7067958884074983e-4
+```
+
+For A, the absolute error at `dt = 0.004`, `0.002`, and `0.001` is respectively
+
+```text
+9.046741089591137e-7
+4.531675739105623e-7
+2.2679164146666153e-7
+```
+
+which decreases by approximately a factor of two on timestep halving, consistent with the first-order global error expected from explicit Euler integration in this smooth linear case.
+
+### 19.4 Retained sufficient machine-readable output
+
+```json
+{
+  "python": "3.13.5",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "primary_dt": 0.002,
+  "ledger_tolerance": 2e-09,
+  "primary": {
+    "A": {
+      "E_toff": 1.999909653308049,
+      "C_final": 19.999999999999794,
+      "auc_off": 3.999638621394719,
+      "max_ledger": 1.9806378759312793e-12
+    },
+    "B": {
+      "E_toff": 1.999909653308049,
+      "S_toff": 2.0518309273853674e-13,
+      "depletion_fraction": 0.9999999999999897,
+      "auc_off": 3.999638621394719,
+      "max_ledger": 2.2168933355715126e-12
+    },
+    "C": {
+      "E_toff": 1.236066900192638,
+      "S_toff": 7.239388428814432,
+      "last_u": 0.6180341947820507,
+      "auc_off": 2.4720221258298176,
+      "max_ledger": 4.973799150320701e-14
+    },
+    "D": {
+      "E_toff": 7.585241693872696,
+      "R_toff": 2.9614763822062162,
+      "cum_return_off": 33.964100306503305,
+      "auc_off": 79.46174746037795,
+      "blocked_auc_off": 15.169798086250719,
+      "max_ledger": 2.2168933355715126e-12
+    },
+    "E_matched_open": {
+      "E_toff": 8.646917847222714,
+      "C_final": 19.999999999999794,
+      "auc_off": 74.76918825661889,
+      "max_ledger": 2.007283228522283e-12
+    },
+    "max_preoff_abs_E_A_minus_B": 0.0,
+    "all_nine_checks": true
+  },
+  "dt_audit": {
+    "0.004": true,
+    "0.002": true,
+    "0.001": true
+  },
+  "overall_pass": true
+}
+```
+
+The complete executable that generates the fuller raw JSON remains frozen directly above in Section 18.7; no hidden result file is required to reproduce the checkpoint.
+
+### 19.5 Interpretation boundary and next discriminator
+
+What Priority B established:
+
+```text
+known_answer_source_architecture_fixture = supported_within_tested_domain
+bounded_activity_implies_finite_source = no
+long_post_source_activity_implies_return_path = no_without_intervention
+E_only_predepletion_identifies_source_architecture = no
+state_matched_return_block_detects_declared_return_channel = yes
+reciprocal_source_feedback_is_observable_in_declared_toy = yes
+```
+
+What it did not establish:
+
+```text
+Lineum_has_finite_hidden_source_stock = not_established
+Lineum_has_reciprocal_generation = not_established
+Lineum_has_receiver_return_cycle = not_established
+Sophia_motif_describes_Lineum_physics = not_established
+Enochic_storehouses_describe_physical_reservoirs = not_established
+physical_soul_or_spirit = not_established
+```
+
+The key methodological gain is that future Lineum source claims now have a stricter known-answer comparison class: a stable-looking or long-lived signal cannot be promoted as evidence of self-contained closure without explicit source accounting and intervention on the proposed return path.
+
+Priority B therefore closes as a passed known-answer accounting/intervention fixture only. The next ranked programme step is Priority C: construct a known-answer body-versus-residual intervention fixture capable of distinguishing an active body, required envelope, passive wake, causal remnant, descendant, and observer artifact.
