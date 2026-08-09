@@ -42,7 +42,7 @@ jobs:
           set -u
           runner_status=0
           test_status=0
-          python research/runners/lineum_fac0_directed_coupling_replay.py > fac0-r1-output.json || runner_status=$?
+          PYTHONPATH=. python research/runners/lineum_fac0_directed_coupling_replay.py > fac0-r1-output.json || runner_status=$?
           pytest -q tests/research/test_lineum_fac0_directed_coupling_replay.py | tee fac0-r1-test.txt || test_status=${PIPESTATUS[0]}
           cat fac0-r1-output.json
           sha256sum fac0-r1-output.json fac0-r1-test.txt
