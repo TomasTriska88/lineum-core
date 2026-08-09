@@ -1,0 +1,159 @@
+name: Q2 PV1-B Report Finalization Retry
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - ".github/workflows/q2-pv1b-report-finalize-retry.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out exact trigger commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Verify frozen retry inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git hash-object AGENTS.md)" = "5b32770a5a9368b9fbef0e4a6d36f7336fb05f60"
+          test "$(git hash-object .agent/rules.md)" = "cb1bb75d1266eb403bf522086b9286113e88bc13"
+          test "$(git hash-object .agent/rules.d/48-clickup-task-source.md)" = "d8fe49ac68d1f0875fed0416ff1457c5fa9d663c"
+          test "$(git hash-object .agent/rules.d/48-third-party-model-and-research-intake.md)" = "1ba0cc1df10ba993c7fdf16ab900602a612e29cf"
+          test "$(git hash-object .agent/rules.d/49-github-branch-safety.md)" = "9162ab155aa2134c685c95be9db9d974b5fcb2d5"
+          test "$(git hash-object .agent/rules.d/50-codex-ultra-scientific-governance.md)" = "72671e66fe717d8ce4a070f3289089f83426b22e"
+          test "$(git hash-object .agent/rules.d/51-clickup-cross-repository-routing.md)" = "00221490bebd9d52e0bfaac72740e57cd70a0ca3"
+          test "$(git hash-object .agent/rules.d/52-owner-intuition-independence.md)" = "c794fc7bb5d6629b7d71c00e15817ad6c78ca62c"
+          test "$(git hash-object .agent/rules.d/53-local-scientific-execution.md)" = "8ac00da9b259ac17d9916caa7f7310f54c30bdfb"
+          test "$(git hash-object .agent/rules.d/54-single-report-readable-artifacts.md)" = "ea6478c22fc564cbcece03e5e8798bb1f3c349a5"
+          test "$(git hash-object .agent/rules.d/55-formal-proof-assistant-verification.md)" = "f95a4352654a61d03f6ea39396d00bcdae9e5dc0"
+          test "$(git hash-object .clinerules)" = "a192f3bc01d4c218ac440f399e1274788c9ecbc9"
+          test "$(git hash-object .cursorrules)" = "a192f3bc01d4c218ac440f399e1274788c9ecbc9"
+          test "$(git hash-object .windsurfrules)" = "a192f3bc01d4c218ac440f399e1274788c9ecbc9"
+          test "$(git hash-object docs/repository-boundaries.md)" = "05b805c16c68b52c8618c564f9155e9cef913254"
+          test "$(git hash-object docs/LINEUM_CODEX_v1.md)" = "b3dd4f12dfc82c53a3837f0b9232565e128a4688"
+          test "$(git hash-object .agent/workflows/model-tool-routing.md)" = "892e9a90f61c336de1bba6083955eb6e182482a6"
+          test "$(git hash-object .agent/continuous-research-reporting.md)" = "54c0f02068d30900291ac605aa9b29becffa6ae1"
+          test "$(git hash-object .agent/workflows/scratch.md)" = "b4762c7ef6f63e29b9598dd18f78d9810f432d33"
+          test ! -e research/AGENTS.md
+          test ! -e research/lineum-public-tolog-b4/AGENTS.md
+          test "$(git hash-object .github/workflows/q2-pv1b-report-finalize.yml)" = "20131c311bfbf7d48246321a783f373449c77470"
+          test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "963fea5d93ae43ff5a59202b4b28177a30c79c38"
+          test "$(git hash-object research/lineum-public-tolog-b4/artifact-manifest.json)" = "df2bf49528fb2db8cfad1ddadca0defdcc8539a5"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repaired.json)" = "07d46581f8cd9973ed82c40bbfea6af372a31dd5"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repaired-execution.json)" = "e7cddd8010b1543cc3101c59220c4dd2de5d240f"
+
+      - name: Reuse frozen finalization patch and correct Markdown representation
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .scratch/q2-pv1b-report-finalize
+          python - <<'PY'
+          from pathlib import Path
+
+          source_path = Path(".github/workflows/q2-pv1b-report-finalize.yml")
+          source = source_path.read_text(encoding="utf-8")
+          marker = "          cat > .scratch/q2-pv1b-report-finalize/finalize.py <<'PY'\n"
+          start = source.find(marker)
+          if start < 0:
+              raise RuntimeError("embedded finalizer start marker not found")
+          start += len(marker)
+          end_marker = "\n          PY\n          python .scratch/q2-pv1b-report-finalize/finalize.py"
+          end = source.find(end_marker, start)
+          if end < 0:
+              raise RuntimeError("embedded finalizer end marker not found")
+          raw_lines = source[start:end].splitlines()
+          prefix = "          "
+          if any(line and not line.startswith(prefix) for line in raw_lines):
+              raise RuntimeError("embedded finalizer indentation changed")
+          script = "\n".join(line[len(prefix):] if line.startswith(prefix) else "" for line in raw_lines) + "\n"
+          target = Path(".scratch/q2-pv1b-report-finalize/finalize.py")
+          target.write_text(script, encoding="utf-8")
+          compile(script, str(target), "exec")
+          PY
+          python .scratch/q2-pv1b-report-finalize/finalize.py
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("research/lineum-public-tolog-galactic-shape-b4.md")
+          text = path.read_text(encoding="utf-8")
+
+          version_old = "**Version:** 0.24.8  \n"
+          version_new = "**Version:** 0.24.8 \\\n"
+          if text.count(version_old) != 1:
+              raise RuntimeError("version hard-break representation did not match exactly once")
+          text = text.replace(version_old, version_new, 1)
+
+          parent_old = f"**Checkpoint parent:** `{__import__('os').environ['GITHUB_SHA']}`  \n"
+          parent_new = f"**Checkpoint parent:** `{__import__('os').environ['GITHUB_SHA']}` \\\n"
+          if text.count(parent_old) != 1:
+              raise RuntimeError("checkpoint hard-break representation did not match exactly once")
+          text = text.replace(parent_old, parent_new, 1)
+
+          chronology_old = "The final report/manifest synchronization is documentation-only and uses a one-use owner-authorized GitHub Actions transport exception because the connector could not safely replace the large readable report atomically; that finalization workflow performs no scientific checker, simulation, or threshold change and removes itself in the same checkpoint."
+          chronology_new = "The final report/manifest synchronization is documentation-only and uses the owner-authorized GitHub Actions transport exception because the connector could not safely replace the large readable report atomically. The first transport attempt applied the intended in-workspace patch but failed closed before commit because `git diff --check` rejected two newly added Markdown hard-break lines with trailing spaces; it changed no retained report or manifest. This retry changes only that Markdown representation, performs no scientific checker, simulation, or threshold change, and removes both temporary finalization workflows in the retained checkpoint."
+          if text.count(chronology_old) != 1:
+              raise RuntimeError("transport chronology anchor did not match exactly once")
+          text = text.replace(chronology_old, chronology_new, 1)
+
+          path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Validate exact documentation diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m json.tool research/lineum-public-tolog-b4/artifact-manifest.json >/dev/null
+          grep -Fq '**Version:** 0.24.8' research/lineum-public-tolog-galactic-shape-b4.md
+          grep -Fq '### 8.23.7 Fresh repaired independent checker — verified bounded negative' research/lineum-public-tolog-galactic-shape-b4.md
+          grep -Fq '"official_result": true' research/lineum-public-tolog-b4/artifact-manifest.json
+          grep -Fq 'first transport attempt applied the intended in-workspace patch but failed closed before commit' research/lineum-public-tolog-galactic-shape-b4.md
+          mapfile -t changed < <(git diff --name-only | sort)
+          expected=(
+            "research/lineum-public-tolog-b4/artifact-manifest.json"
+            "research/lineum-public-tolog-galactic-shape-b4.md"
+          )
+          test "${#changed[@]}" -eq "${#expected[@]}"
+          for i in "${!expected[@]}"; do
+            test "${changed[$i]}" = "${expected[$i]}"
+          done
+          git diff --check
+          git diff --stat
+          git diff -- research/lineum-public-tolog-galactic-shape-b4.md research/lineum-public-tolog-b4/artifact-manifest.json
+
+      - name: Commit, remove both temporary workflows, and push fail-closed
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/workflows/q2-pv1b-report-finalize.yml
+          rm .github/workflows/q2-pv1b-report-finalize-retry.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/lineum-public-tolog-galactic-shape-b4.md
+          git add research/lineum-public-tolog-b4/artifact-manifest.json
+          git add .github/workflows/q2-pv1b-report-finalize.yml
+          git add .github/workflows/q2-pv1b-report-finalize-retry.yml
+          mapfile -t staged < <(git diff --cached --name-only | sort)
+          expected=(
+            ".github/workflows/q2-pv1b-report-finalize-retry.yml"
+            ".github/workflows/q2-pv1b-report-finalize.yml"
+            "research/lineum-public-tolog-b4/artifact-manifest.json"
+            "research/lineum-public-tolog-galactic-shape-b4.md"
+          )
+          test "${#staged[@]}" -eq "${#expected[@]}"
+          for i in "${!expected[@]}"; do
+            test "${staged[$i]}" = "${expected[$i]}"
+          done
+          git diff --cached --check
+          remote_sha="$(git ls-remote origin refs/heads/develop | cut -f1)"
+          test "$remote_sha" = "$GITHUB_SHA"
+          git commit -m "research: record verified Q2 PV1-B control negative"
+          git push origin HEAD:develop
