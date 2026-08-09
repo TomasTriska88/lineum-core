@@ -27,6 +27,10 @@
       "git_blob_sha": "56592eb0a09f58d232332004a64451cfc865c26e",
       "role": "Q2-PV1-B first supported-runtime serialization technical non-result"
     },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-protocol.json": {
+      "git_blob_sha": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
+      "role": "Q2-PV1-B independent checker preregistration before official execution"
+    },
     "research/lineum-public-tolog-b4/q2-ledger-neutral-control-execution.json": {
       "git_blob_sha": "e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194",
       "role": "Q2-PV1-B supported-runtime primary execution receipt"
@@ -72,6 +76,14 @@
       "canonical_verbose_payload_sha256_without_self": "02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7",
       "commit": "87fb24568f32cd926abeab8331ad93e39ef52e1d",
       "role": "retained Q2-SA1-A primary eight-case result"
+    },
+    "research/runners/lineum_b4_q2_ledger_neutral_control_check.py": {
+      "git_blob_sha": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+      "role": "frozen separately implemented Q2-PV1-B independent checker source"
+    },
+    "tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py": {
+      "git_blob_sha": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+      "role": "frozen Q2-PV1-B independent checker regression tests"
     }
   },
   "primary_input": {
@@ -101,6 +113,19 @@
     "q2_classification_changed_count": 0,
     "scientific_status": "primary_pending_independent_check",
     "workflow_artifact_uploaded": false
+  },
+  "q2_ledger_neutral_control_checker": {
+    "checker_commit": "927c24682d1075b3fb0eb08185a14e830dfcef45",
+    "checker_git_blob": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+    "compare_atol": 1e-08,
+    "compare_rtol": 1e-12,
+    "local_preflight_numpy": "2.3.5",
+    "local_preflight_scientific_status": "unsupported_runtime_helper_preflight_only",
+    "local_preflight_tests_passed": 12,
+    "official_result": null,
+    "protocol_git_blob": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
+    "scientific_status": "frozen_before_official_execution",
+    "test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
   },
   "q2_observer_frame": {
     "canonical_payload_without_elapsed_sha256": "c6c70c864835e54835eb1d8f4c462151d321fc876a40aa6784267618bc9fe4d7",
