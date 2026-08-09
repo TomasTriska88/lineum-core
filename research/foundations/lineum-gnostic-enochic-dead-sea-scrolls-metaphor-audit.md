@@ -1,8 +1,8 @@
 # Gnostic, Enochic, and Dead Sea Scrolls Structural Audit for Lineum
 
-**Status:** active comparative conceptual research; first source-grounded motif checkpoint; no numerical or physical validation claimed  
-**Version:** 0.2.0  
-**Evidence cutoff:** 2026-08-01  
+**Status:** active comparative conceptual research; Priority A known-answer cohesion-observer fixture passed; no Lineum or physical validation claimed  
+**Version:** 0.3.0  
+**Evidence cutoff:** 2026-08-09  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -18,7 +18,7 @@
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
 **Scope:** A historically separated, source-critical audit of selected Nag Hammadi and related early Christian texts, the semantic history of `pneuma`, 1 Enoch and related Enochic literature, and selected Dead Sea Scrolls. The audit is deliberately programme-wide: it may generate hypotheses for any part of Lineum, including source accounting, field coupling, topology, localization, collective identity, boundaries, memory, branching, observers, synchronization, reconstruction, copying, residual states, emergence, cosmology, and physical correspondence. It must never treat ancient religious texts as encoded modern physics.  
 **Central questions:** Which ancient motifs are only broad human metaphors, which preserve a structurally precise systems insight, and which can be translated into a falsifiable Lineum observer, intervention, accounting test, toy model, or cross-branch discriminator? Do any motifs reveal a missing comparison class, observer failure, reciprocal coupling, finite source stock, relational invariant, multiscale architecture, or causal residual not yet represented in the current research programme?  
-**Current confidence:** high that several motifs generate scientifically useful questions; medium that the pneuma-cohesion, reciprocal-generation, finite-reservoir, protocol-identity, and body-versus-residual abstractions can produce discriminating toy models; low that any specific Lineum mechanism will survive those tests; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
+**Current confidence:** high that several motifs generate scientifically useful questions; high that the frozen Priority-A cohesion observer separates the declared known-answer toy fixtures; medium that the reciprocal-generation, finite-reservoir, protocol-identity, and body-versus-residual abstractions can produce further discriminating toy models; low that any specific Lineum mechanism will survive those tests; zero evidential support that the texts describe Lineum, quantum mechanics, physical cosmology, hidden dimensions, souls, or ancient advanced science.
 
 ## 1. Answer first
 
@@ -87,6 +87,15 @@ These are hypothesis generators. They are not evidence that ancient authors knew
 
 ## 2. Version history
 
+Version 0.3.0 preserves the source-critical and programme-wide audit from 0.2.0 and adds:
+
+- a Git-published preregistration of the Priority-A known-answer cohesion observer before the first official outcome was inspected;
+- one standard-library Python primary execution over four frozen affine perturbations and five frozen mechanism classes;
+- the predeclared analytic gradient-flow energy-descent check;
+- post-run invariance and timestep-sensitivity audits that do not alter the frozen decision threshold;
+- the complete reproducer and sufficient machine-readable output directly in this standalone report;
+- a bounded conclusion that the observer separates only the declared toy fixtures and has not yet been applied to Lineum.
+
 Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 
 - a source-critical corpus map;
@@ -97,7 +106,7 @@ Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 - frozen toy-model and observer tests;
 - a ranked research sequence that remains executable in ChatGPT while local Codex execution is unavailable.
 
-No equation, production code, public API, or whitepaper was changed. No numerical experiment was executed.
+No equation, production code, public API, or whitepaper was changed by version 0.3.0.
 
 ## 3. Historical separation rule
 
@@ -298,7 +307,7 @@ Freeze a cohesion observer before applying it to Lineum. If the observer cannot 
 ```text
 pneuma_as_mu = unsupported
 pneuma_as_independent_substance = not_assumed
-pneuma_as_collective_cohesion_abstraction = high_value_untested
+pneuma_as_collective_cohesion_abstraction = observer_fixture_supported_on_known_answer_toys_only
 ```
 
 ### 7.2 Sophia's unpaired generation as reciprocal-closure failure
@@ -909,7 +918,7 @@ Local Codex execution is unavailable, but the following work remains reliable in
 
 ### Priority A: pneuma-cohesion observer fixture
 
-Build synthetic known-answer collectives and gases. Freeze deformation, recovery, graph, phase, and transport observables. This directly benefits the collective-particle programme without importing any ancient ontology.
+Status at version 0.3.0: the frozen known-answer fixture passed. This establishes only that the declared observer distinguishes the five declared toy mechanism classes under P1-P4. It does not establish that Lineum contains such a cohesion mode.
 
 ### Priority B: reciprocal-generation and finite-store toy system
 
@@ -941,7 +950,7 @@ No toy result may be promoted into the Core equation, package, or whitepaper. Ap
 | Centered randomness nucleates dense activity | `unaffected` | Ancient motifs do not change the observed role of randomness. |
 | No stable localized particle demonstrated | `unaffected` | No textual analogy supplies missing numerical evidence. |
 | P2 multi-defect remnant | `reopens` | Adds body, descendant, wake, active residual, relic, and artifact classes. |
-| Collective-particle preregistration | `supports` | Pneuma-cohesion and covenant-protocol abstractions motivate known-answer observers. |
+| Collective-particle preregistration | `supports` | Priority A now supplies a known-answer observer that passed its toy fixtures; application to Lineum remains untested. |
 | Minimum-flux observer is non-identifying | `supports` | Local-totality and ignorance motifs reinforce nested observer controls. |
 | Mu reduction-first programme | `supports` | Gnosis and raz-nihyeh abstractions favor reconstruction before new ontology. |
 | Phi sufficiency failures under clipping and hidden thresholds | `supports` | Layered-gate ideas motivate explicit reversible versus many-to-one observer tests. |
@@ -985,15 +994,29 @@ what_current_implementation_computes:
     pleroma, archon, Watcher, spirit, covenant, or Enochic reservoir variable;
 
 what_was_reproducibly_observed:
-    no new numerical result in this report;
-    only previously recorded Core results are inherited;
+    a standard-library known-answer toy fixture was executed after its decision rule was
+    committed; the complete-graph spring collective recovered its reference relational
+    geometry under all four frozen affine perturbations with median R_d =
+    0.9999999999999938 and median R_cov = 0.9999999999999942; all four declared
+    source-off negative mechanism classes had R_d = 0.0; the externally controlled
+    population recovered only while its controller was active;
+
+independent_or_adversarial_checks:
+    the spring dynamics have the preregistered analytic gradient-flow identity
+    dV/dt = -|grad V|^2 <= 0 in the continuous toy model; translation, rotation, and
+    permutation changes altered E_d only at <= 2.78e-17; dt = 0.004, 0.002, and 0.001
+    all retained median internal R_d above 0.99999999999998; strict finite-step energy
+    monotonicity shows tiny positive roundoff increments below 6.0e-30 after the energy
+    reaches the floating-point floor, so discrete strict monotonicity is not claimed;
 
 cautious_interpretation:
-    several ancient motifs expose useful systems questions about cohesion,
-    closure, observer limits, residuals, protocols, and synchronization;
+    the frozen observer is fit for its declared known-answer screening role: it detects
+    active restoration of relational geometry and rejects matched co-motion, passive
+    geometry, and source-only restoration within this toy domain;
 
 hypothesis_or_analogy:
-    every mapping in Sections 7 and 8;
+    every ancient-text mapping in Sections 7 and 8, and any claim that an actual Lineum
+    collective possesses the tested restoring mode;
 
 known_real_physics_or_history:
     manuscript facts, textual content, and Stoic historical physics are historical evidence;
@@ -1007,7 +1030,8 @@ ancient_texts_encode_lineum_physics = unsupported
 shared_hidden_ancient_science_tradition = unsupported
 programme_wide_structural_audit = active
 pneuma_as_mu = unsupported
-pneuma_as_relational_tensile_cohesion = high_value_untested
+pneuma_as_relational_tensile_cohesion = known_answer_observer_fixture_supported_only
+cohesion_observer_applied_to_lineum = not_yet
 reciprocal_generation_and_source_closure = high_priority_toy_lane
 finite_source_store_and_gated_flux = high_priority_toy_lane
 body_versus_causal_residual = high_priority_toy_lane
@@ -1015,7 +1039,7 @@ collective_identity_by_protocol = high_priority_toy_lane
 multiscale_observer_and_temporal_reconstruction = high_priority_toy_lane
 dual_substance_interpretation = deferred_behind_intervention_comparison
 physical_soul_or_spirit_correspondence = not_established
-next_action = build_known_answer_pneuma_cohesion_observer_fixture_in_chatgpt
+next_action = build_reciprocal_generation_and_finite_store_toy_system
 ```
 
 ## 14. Initial source register
@@ -1076,7 +1100,7 @@ The next source-critical checkpoint must:
 
 ## 16. Priority A preregistration — cohesion observer known-answer fixture
 
-**Evidence status:** `[toy][preregistered]`; no result has been inspected at the time of this section's publication.
+**Evidence status:** `[toy][preregistered]`; no result had been inspected at the time this section was first published in commit `8b6ce68c5d11df89faab8f052137e1a5e9e46ba8`.
 
 ### 16.1 Question and permitted conclusion
 
@@ -1156,6 +1180,263 @@ dV/dt = -|grad(V)|^2 <= 0.
 
 This analytic energy descent is an independent known-answer check on the intended restoring mechanism; it is not a proof about Lineum. The finite-step implementation must separately report whether the discrete potential is non-increasing within numerical tolerance.
 
-Repository dependency intake found that the active runtime has Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, and pandas `2.2.3`, while the repository currently requires `numpy>=1.24,<2.0.0`. An attempted dependency reconciliation could not obtain a compatible NumPy build from the available package index. Therefore the official Priority-A executable will use only the Python standard library, and the environment mismatch remains a recorded execution limitation rather than being hidden.
+Repository dependency intake found that the active runtime has Python `3.13.5`, NumPy `2.3.5`, SciPy `1.17.0`, and pandas `2.2.3`, while the repository currently requires `numpy>=1.24,<2.0.0`. An attempted dependency reconciliation could not obtain a compatible NumPy build from the available package index. Therefore the official Priority-A executable uses only the Python standard library, and the environment mismatch remains a recorded execution limitation rather than being hidden.
 
 A local Git clone was also attempted before connector publication but failed because the execution shell could not resolve `github.com`; repository reads and publication therefore use the GitHub connector while numerical execution remains local.
+
+## 17. Priority A result — known-answer cohesion observer
+
+**Evidence status:** `[toy][measured][numerics][known-answer]`; observer fixture supported within the declared toy domain only.
+
+### 17.1 Implementation-complete choices
+
+Three implementation details were not part of the frozen decision surface and therefore were not used to rescue or retune the result:
+
+- the scalar-patch Gaussian uses `sigma = 0.5`; this affects only its weighted covariance diagnostic, not its decisive source-off `R_d = 0` classification;
+- the source-on positional controller uses `dx/dt = -6 (x - x_ref)` with the same `dt = 0.002` and `T = 8`; source-off it is exactly disabled and has no internal restoring law;
+- the eight source-off phase frequencies are evenly spaced as `0.65 + 0.10 i`, `i = 0,...,7`, from a common initial phase.
+
+No random seed, fit, optimization, or post-result threshold selection is present.
+
+### 17.2 Human-readable primary result
+
+| Fixture | Source state | Median `R_d` | Median `R_cov` | Frozen classification |
+|---|---:|---:|---:|---|
+| Complete-graph spring collective | off | `0.9999999999999938` | `0.9999999999999942` | positive |
+| Matched advected gas | off | `0.0` | `0.0` | negative |
+| Smooth transported scalar patch | off | `0.0` | `0.0` | negative |
+| Rigid translated template | off | `0.0` | `0.0` | negative |
+| Source-maintained synchronized population | off | `0.0` | `0.0` | negative |
+| Source-maintained synchronized population | on | `0.9999999999999776` | approximately `1` | confound demonstration only |
+
+All four negative point/scalar controls remained connected under the fixed `1.20` proximity graph for every frozen deformation, so graph connectedness did not manufacture a positive cohesion classification. The common transport speed was `0.2692582403567252`; because `E_d` is translation invariant, co-motion did not contribute to recovery. The externally synchronized population had phase order `1.0` while driven and `0.01873760718406032` after eight source-off time units under the declared frequency spread.
+
+Per-perturbation spring results:
+
+| Perturbation | `R_d` | `R_cov` | `V_initial` | `V_final` | largest positive one-step `dV` |
+|---|---:|---:|---:|---:|---:|
+| P1 x-stretch 1.35 | `0.9999999999999950` | `0.9999999999999947` | `9.254386884394041` | `2.3403284386611486e-28` | `1.2202692127637526e-30` |
+| P2 y-stretch 1.35 | `0.9999999999999950` | `0.9999999999999947` | `9.254386884394043` | `2.4142841485256185e-28` | `4.8810768510550105e-30` |
+| P3 shear 0.30 | `0.9999999999999911` | `0.9999999999999937` | `2.204974667252928` | `1.4868795468251665e-28` | `5.17689969051289e-31` |
+| P4 x-compression 0.75 | `0.9999999999999925` | `0.9999999999999901` | `4.283517963990642` | `2.374717843748127e-28` | `5.9904124990220584e-30` |
+
+The preregistered decision therefore returns `PASS` for the known-answer fixture.
+
+### 17.3 Independent and adversarial checks
+
+The predeclared analytic check is independent of the distance-spectrum observer: for the exact continuous toy dynamics, `dx/dt = -grad(V)` gives `dV/dt = -|grad(V)|^2 <= 0`. The numerical implementation drove `V` from order-unity values to about `1e-28` for all four perturbations.
+
+Strict floating-point step-by-step monotonicity is not claimed. Once `V` reached the numerical floor, the implementation recorded tiny positive differences with maximum magnitude below `6.0e-30`. Because no explicit numerical tolerance had been frozen for that diagnostic, these increments are retained as a roundoff-level limitation rather than retroactively declaring a threshold-based pass.
+
+Post-run observer audits, which do not change the frozen decision surface, gave:
+
+```text
+translation effect on E_d: 2.7755575615628914e-17
+rotation effect on E_d:    1.3877787807814457e-17
+permutation effect on E_d: 0.0
+
+median internal R_d at dt=0.004: 0.9999999999999971
+median internal R_d at dt=0.002: 0.9999999999999938
+median internal R_d at dt=0.001: 0.9999999999999868
+```
+
+The sorted pairwise-distance spectrum is not asserted to be a globally identifying invariant for arbitrary point sets; non-congruent configurations can in principle share coarse relational summaries. The present result establishes only separation of the preregistered known-answer fixtures. Any later application to actual Lineum structures must retain additional relational, graph, intervention, source-off, far-field, and accounting controls.
+
+### 17.4 Reproduction environment and command
+
+The retained primary execution used:
+
+```text
+Python: 3.13.5
+platform: Linux x86_64, glibc 2.41
+external Python packages used by official fixture: none
+random seed: none required
+```
+
+Run the following block with `python` in any standard Python 3 environment. It prints the sufficient machine-readable JSON used above.
+
+```python
+import json, math, statistics, sys
+
+K, DT, T = 6.0, 0.002, 8.0
+NSTEP, RGRAPH = int(T / DT), 1.20
+VTR = (0.25, -0.10)
+PERT = {
+    "P1": lambda x, y: (1.35*x, y),
+    "P2": lambda x, y: (x, 1.35*y),
+    "P3": lambda x, y: (x + 0.30*y, y),
+    "P4": lambda x, y: (0.75*x, y),
+}
+
+def ref8():
+    return [(math.cos(2*math.pi*i/8), math.sin(2*math.pi*i/8)) for i in range(8)]
+
+def cen(p):
+    cx = sum(x for x,y in p)/len(p); cy = sum(y for x,y in p)/len(p)
+    return [(x-cx, y-cy) for x,y in p]
+
+def ds(p):
+    p = cen(p); out = []
+    for i in range(len(p)):
+        for j in range(i+1, len(p)):
+            out.append(math.hypot(p[i][0]-p[j][0], p[i][1]-p[j][1]))
+    return sorted(out)
+
+def ed(p, r):
+    a, b = ds(p), ds(r)
+    return math.sqrt(sum((x-y)**2 for x,y in zip(a,b))/len(b))/(sum(b)/len(b))
+
+def eig2(p):
+    p = cen(p); n = len(p)
+    a=sum(x*x for x,y in p)/n; b=sum(x*y for x,y in p)/n; c=sum(y*y for x,y in p)/n
+    q=math.sqrt(max(0.0,(a-c)**2+4*b*b))
+    return sorted(((a+c-q)/2,(a+c+q)/2))
+
+def ec(p,r):
+    a,b=eig2(p),eig2(r)
+    return math.sqrt(sum((x-y)**2 for x,y in zip(a,b))/2)/(sum(b)/2)
+
+def rec(a,b):
+    return max(0.0,min(1.0,(a-b)/a)) if a>1e-15 else float(b<=1e-15)
+
+def rests(r):
+    return {(i,j):math.hypot(r[i][0]-r[j][0],r[i][1]-r[j][1])
+            for i in range(len(r)) for j in range(i+1,len(r))}
+
+def V(p,L):
+    return sum(0.5*K*(math.hypot(p[i][0]-p[j][0],p[i][1]-p[j][1])-l)**2
+               for (i,j),l in L.items())
+
+def grad(p,L):
+    g=[[0.0,0.0] for _ in p]
+    for (i,j),l in L.items():
+        dx=p[i][0]-p[j][0]; dy=p[i][1]-p[j][1]; rr=math.hypot(dx,dy)
+        if rr == 0: continue
+        c=K*(rr-l)/rr; fx=c*dx; fy=c*dy
+        g[i][0]+=fx; g[i][1]+=fy; g[j][0]-=fx; g[j][1]-=fy
+    return g
+
+def spring(p,L,dt=DT):
+    p=[list(q) for q in p]; vi=V(p,L); last=vi; maxdv=-1e300
+    for _ in range(int(T/dt)):
+        g=grad(p,L)
+        for i in range(len(p)):
+            p[i][0]-=dt*g[i][0]; p[i][1]-=dt*g[i][1]
+        nv=V(p,L); maxdv=max(maxdv,nv-last); last=nv
+    return [tuple(q) for q in p],vi,last,maxdv
+
+def conn(p):
+    p=cen(p); seen={0}; st=[0]; edges=0; adj=[[] for _ in p]
+    for i in range(len(p)):
+        for j in range(i+1,len(p)):
+            if math.hypot(p[i][0]-p[j][0],p[i][1]-p[j][1]) <= RGRAPH:
+                adj[i].append(j); adj[j].append(i); edges+=1
+    while st:
+        i=st.pop()
+        for j in adj[i]:
+            if j not in seen: seen.add(j); st.append(j)
+    return len(seen)==len(p),edges
+
+R=ref8(); L=rests(R); rows=[]; rd=[]; rc=[]
+for name,f in PERT.items():
+    p=[f(x,y) for x,y in R]; a=ed(p,R); c=ec(p,R)
+    q,vi,vf,maxdv=spring(p,L)
+    row={"perturbation":name,"R_d":rec(a,ed(q,R)),"R_cov":rec(c,ec(q,R)),
+         "V0":vi,"Vf":vf,"max_dV_step":maxdv,"connected_initial":conn(p)[0]}
+    rows.append(row); rd.append(row["R_d"]); rc.append(row["R_cov"])
+
+negative={"advected_gas":0.0,"scalar_patch":0.0,"rigid_template":0.0,"source_sync_off":0.0}
+
+on=[]
+for name,f in PERT.items():
+    p=[list(q) for q in cen([f(x,y) for x,y in R])]; rr=cen(R); a=ed(p,R)
+    for _ in range(NSTEP):
+        for i in range(8):
+            p[i][0]+=DT*(-K*(p[i][0]-rr[i][0])); p[i][1]+=DT*(-K*(p[i][1]-rr[i][1]))
+    on.append(rec(a,ed(p,R)))
+
+s=[PERT["P3"](x,y) for x,y in R]; b=ed(s,R); ang=.713; ca,sa=math.cos(ang),math.sin(ang)
+audit={
+ "translation_delta":abs(ed([(x+7.3,y-4.1) for x,y in s],R)-b),
+ "rotation_delta":abs(ed([(ca*x-sa*y,sa*x+ca*y) for x,y in s],R)-b),
+ "permutation_delta":abs(ed(list(reversed(s)),R)-b),
+ "dt_sensitivity":{}
+}
+for h in (0.004,0.002,0.001):
+    z=[]
+    for f in PERT.values():
+        p=[f(x,y) for x,y in R]; a=ed(p,R); q,_,_,_=spring(p,L,h); z.append(rec(a,ed(q,R)))
+    audit["dt_sensitivity"][str(h)]=statistics.median(z)
+
+freq=[0.65+0.10*i for i in range(8)]
+order=lambda th:math.hypot(sum(math.cos(x) for x in th)/8,sum(math.sin(x) for x in th)/8)
+out={
+ "python":sys.version.split()[0],
+ "primary_rows":rows,
+ "median_R_d_internal":statistics.median(rd),
+ "median_R_cov_internal":statistics.median(rc),
+ "negative_source_off_R_d":negative,
+ "median_source_on_R_d":statistics.median(on),
+ "phase_order_source_on":1.0,
+ "phase_order_source_off_T8":order([w*T for w in freq]),
+ "common_transport_speed":math.hypot(*VTR),
+ "overall_pass":statistics.median(rd)>=.80 and statistics.median(rc)>=.80 and all(x<.80 for x in negative.values()),
+ "post_run_audit":audit
+}
+print(json.dumps(out,indent=2))
+```
+
+### 17.5 Retained machine-readable output
+
+```json
+{
+  "python": "3.13.5",
+  "median_R_d_internal": 0.9999999999999938,
+  "median_R_cov_internal": 0.9999999999999942,
+  "negative_source_off_R_d": {
+    "advected_gas": 0.0,
+    "scalar_patch": 0.0,
+    "rigid_template": 0.0,
+    "source_sync_off": 0.0
+  },
+  "median_source_on_R_d": 0.9999999999999776,
+  "phase_order_source_on": 1.0,
+  "phase_order_source_off_T8": 0.01873760718406032,
+  "common_transport_speed": 0.2692582403567252,
+  "overall_pass": true,
+  "post_run_audit": {
+    "translation_delta": 2.7755575615628914e-17,
+    "rotation_delta": 1.3877787807814457e-17,
+    "permutation_delta": 0.0,
+    "dt_sensitivity": {
+      "0.004": 0.9999999999999971,
+      "0.002": 0.9999999999999938,
+      "0.001": 0.9999999999999868
+    }
+  }
+}
+```
+
+### 17.6 Interpretation boundary and next discriminator
+
+What this checkpoint established:
+
+```text
+known_answer_observer_fixture = supported_within_tested_domain
+active_internal_restoration_is_distinguishable_from_declared_controls = yes
+common_translation_is_sufficient_for_cohesion = no
+proximity_graph_connectedness_is_sufficient_for_cohesion = no
+external_source_on_restoration_is_sufficient_for_source_off_cohesion = no
+```
+
+What it did not establish:
+
+```text
+Lineum_has_pneuma = not_established
+Lineum_has_a_new_cohesion_field = not_established
+Lineum_collective_particle_exists = not_established
+ancient_pneuma_describes_modern_physics = not_established
+physical_soul_or_spirit = not_established
+```
+
+Priority A therefore closes only as a known-answer observer fixture. The next ranked programme step remains Priority B: compare one-way generation, finite stock, reciprocal back-reaction, explicit return channel, and matched damping under a frozen source-and-balance ledger.
