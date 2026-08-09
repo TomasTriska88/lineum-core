@@ -1,0 +1,179 @@
+{
+  "dt_audit": {
+    "0.001": {
+      "all_checks": {
+        "all_six_variants_have_unique_frozen_intervention_signature": true,
+        "baseline_binary_observation_is_nonidentifying": true,
+        "coupled_two_coordinate_state_has_rank_one_response": true,
+        "independent_two_state_has_rank_two_response": true,
+        "matched_current_state_can_carry_history_dependent_label": true,
+        "monostable_threshold_control_returns_positive": true,
+        "observer_convention_can_flip_label_without_plant_change": true,
+        "scalar_bistability_persists_source_off": true,
+        "threshold_shift_can_flip_label_without_plant_change": true
+      },
+      "bistable_final": -0.9999998335338244,
+      "monostable_final": 0.9994988161512187,
+      "pass": true
+    },
+    "0.002": {
+      "all_checks": {
+        "all_six_variants_have_unique_frozen_intervention_signature": true,
+        "baseline_binary_observation_is_nonidentifying": true,
+        "coupled_two_coordinate_state_has_rank_one_response": true,
+        "independent_two_state_has_rank_two_response": true,
+        "matched_current_state_can_carry_history_dependent_label": true,
+        "monostable_threshold_control_returns_positive": true,
+        "observer_convention_can_flip_label_without_plant_change": true,
+        "scalar_bistability_persists_source_off": true,
+        "threshold_shift_can_flip_label_without_plant_change": true
+      },
+      "bistable_final": -0.9999998358439514,
+      "monostable_final": 0.9995008208829336,
+      "pass": true
+    },
+    "0.004": {
+      "all_checks": {
+        "all_six_variants_have_unique_frozen_intervention_signature": true,
+        "baseline_binary_observation_is_nonidentifying": true,
+        "coupled_two_coordinate_state_has_rank_one_response": true,
+        "independent_two_state_has_rank_two_response": true,
+        "matched_current_state_can_carry_history_dependent_label": true,
+        "monostable_threshold_control_returns_positive": true,
+        "observer_convention_can_flip_label_without_plant_change": true,
+        "scalar_bistability_persists_source_off": true,
+        "threshold_shift_can_flip_label_without_plant_change": true
+      },
+      "bistable_final": -0.9999998403858654,
+      "monostable_final": 0.9995048142864998,
+      "pass": true
+    }
+  },
+  "independent_analytic_check": {
+    "bistable_exact_t8": -0.9999998311972806,
+    "euler_errors": {
+      "0.001": {
+        "bistable_abs_error": 2.3365437362699026e-09,
+        "monostable_abs_error": 2.0100930724353816e-06
+      },
+      "0.002": {
+        "bistable_abs_error": 4.646670714869572e-09,
+        "monostable_abs_error": 4.0148247872906495e-06
+      },
+      "0.004": {
+        "bistable_abs_error": 9.188584892960705e-09,
+        "monostable_abs_error": 8.008228353562075e-06
+      }
+    },
+    "exact_linear_algebra": {
+      "ts0_determinant": 1.0,
+      "ts0_rank": 2,
+      "ts1_constraint_u_plus_v": 0.0,
+      "ts1_determinant": 0.0,
+      "ts1_rank": 1
+    },
+    "monostable_exact_t8": 0.9994968060581463,
+    "observer_only_plant_delta": {
+      "ts3": 0.0,
+      "ts4": 0.0,
+      "ts5": 0.0
+    }
+  },
+  "interpretation_boundary": {
+    "binary_appearance_alone_identifies_two_substances": false,
+    "known_answer_binary_mechanism_discriminator": "supported_within_tested_domain",
+    "lineum_requires_one_bistable_field": "not_established",
+    "lineum_requires_two_fields": "not_established",
+    "two_spirits_encodes_physics": "not_established"
+  },
+  "official_run": {
+    "overall_pass": true,
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "source_git_blob_sha": "b93c0bf65a576b38a13a6f052661b3972c6bc3a7",
+    "source_path": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-f.py",
+    "source_sha256": "726915b00cb4f449b588c37df88e38e95af8083963596acf63b275e2f0b2adda",
+    "stdout_bytes": 20208,
+    "stdout_sha256": "881613d05959ea0386ba0022221d94014ca27f71016efdd0ecfd8c3d06504c90"
+  },
+  "primary": {
+    "baseline_max_gap": 0.0,
+    "checks": {
+      "all_six_variants_have_unique_frozen_intervention_signature": true,
+      "baseline_binary_observation_is_nonidentifying": true,
+      "coupled_two_coordinate_state_has_rank_one_response": true,
+      "independent_two_state_has_rank_two_response": true,
+      "matched_current_state_can_carry_history_dependent_label": true,
+      "monostable_threshold_control_returns_positive": true,
+      "observer_convention_can_flip_label_without_plant_change": true,
+      "scalar_bistability_persists_source_off": true,
+      "threshold_shift_can_flip_label_without_plant_change": true
+    },
+    "classifications": {
+      "TS0_independent_two_state": "TS0_independent_two_state",
+      "TS1_coupled_modes_one_dof": "TS1_coupled_modes_one_dof",
+      "TS2_scalar_bistable": "TS2_scalar_bistable",
+      "TS3_threshold_projection": "TS3_threshold_projection",
+      "TS4_history_dependent_relay": "TS4_history_dependent_relay",
+      "TS5_observer_label": "TS5_observer_label"
+    },
+    "dt": 0.002,
+    "monostable_control_final": 0.9995008208829336,
+    "ts0": {
+      "constraint_u_plus_v": null,
+      "determinant": 1.0,
+      "matrix": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "rank": 2
+    },
+    "ts1": {
+      "constraint_u_plus_v": 0.0,
+      "determinant": 0.0,
+      "matrix": [
+        [
+          0.5,
+          -0.5
+        ],
+        [
+          -0.5,
+          0.5
+        ]
+      ],
+      "rank": 1
+    },
+    "ts2_bistable_final": -0.9999998358439514,
+    "ts3": {
+      "label_after": -1,
+      "label_before": 1,
+      "label_flipped": true,
+      "plant_after": 1.0,
+      "plant_before": 1.0,
+      "plant_delta": 0.0
+    },
+    "ts4": {
+      "history_changes_label": true,
+      "label_after_memory_reset_from_positive_to_negative": -1,
+      "label_from_negative_history": -1,
+      "label_from_positive_history": 1,
+      "matched_current_x": 0.0,
+      "plant_delta_under_memory_reset": 0.0
+    },
+    "ts5": {
+      "convention_flip": true,
+      "convention_minus_label": -1,
+      "convention_plus_label": 1,
+      "plant_after": 1.0,
+      "plant_before": 1.0,
+      "plant_delta": 0.0
+    }
+  },
+  "schema": "lineum_priority_f_decision_record_v1"
+}
