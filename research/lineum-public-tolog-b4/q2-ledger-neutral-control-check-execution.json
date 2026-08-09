@@ -1,0 +1,52 @@
+{
+  "categorical_mismatch_count": 0,
+  "checker_exit_code": 2,
+  "checker_stdout_sha256": "a85ccfb7dd38edbe850bdfaff13ed4d10491a612f95072258a8ab2f4361fadb5",
+  "environment": {
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python": "3.11.15",
+    "runner_os": "Linux"
+  },
+  "independent_summary": {
+    "balanced_annulus_factor_max": 0.9780485627631685,
+    "balanced_annulus_factor_min": 0.8211962194809532,
+    "balanced_q2_positive_count": 0,
+    "balanced_rescue_count": 0,
+    "balanced_rescue_keys": [],
+    "canonical_q2_positive_count": 0,
+    "case_count": 28,
+    "control_available_count": 26,
+    "control_unavailable_count": 2,
+    "control_unavailable_keys": [
+      "LAP4|no_interaction_denominator|phi0=1.0",
+      "LAP8|no_interaction_denominator|phi0=1.0"
+    ],
+    "neutral_perturbation_failure_count": 0,
+    "neutral_perturbation_failures": [],
+    "outcome": "ledger_neutral_control_does_not_rescue_q2_classification",
+    "q2_classification_changed_count": 0,
+    "q2_classification_changed_keys": []
+  },
+  "key_set_pass": true,
+  "numeric_mismatch_count": 2,
+  "passed": false,
+  "protocol_pass": true,
+  "result_sha256": "71335e17fa15eb5e5d35e564f146c3836b5b0ab4ecf1657e9815a918c2b04ac1",
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-execution/1",
+  "source_blobs": {
+    "canonical_runner": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "checker": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+    "checker_protocol": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
+    "checker_test": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+    "manifest": "0bbd687f2bd00cea57cd7bdab138bcb19f464309",
+    "pv1b_primary": "50d3f15d881e0665a450982053a9216f9cf5739c",
+    "report": "d02a860cb1fde5ac39ce03aa2168a4b6896b13e0"
+  },
+  "stage": "Q2-PV1-B-CHECK",
+  "status": "supported_runtime_checker_completed",
+  "test_output_sha256": "3fe4735555d021445d7c72646eb5e7a3ac721ff163da4de414d57ebe26a6437f",
+  "workflow_artifact_uploaded": false,
+  "workflow_run_id": 31310400036,
+  "workflow_source_commit": "19bac215d5a966560ca14962f35a1b22c0d8077c"
+}
