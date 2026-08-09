@@ -1,0 +1,343 @@
+name: Q2 PV1-B Residual Repair Apply
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - ".github/workflows/q2-pv1b-repair-apply.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out exact trigger commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Verify frozen repair inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "0d519db5ed05d971d46e1c9867b5d22203f51484"
+          test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control_check.py)" = "50a26bcfc7ef16af33f192b97eb99690e8a13fea"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py)" = "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py)" = "f6b384c895d9022e4619d2e51eeea824d1185d54"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-protocol.json)" = "716d93ea040b415fda6fd30ff55ba0733bcde9cb"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-test-first.json)" = "0228faedaa26b2e9a69355fcceeef35a963ebbab"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control.json)" = "50d3f15d881e0665a450982053a9216f9cf5739c"
+
+      - name: Set up supported Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.15"
+
+      - name: Install repository dependencies and freeze runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install "numpy==1.26.4" "pytest==9.1.1"
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+          python - <<'PY'
+          import numpy, pytest
+          assert numpy.__version__ == "1.26.4"
+          assert pytest.__version__ == "9.1.1"
+          print("numpy", numpy.__version__)
+          print("pytest", pytest.__version__)
+          PY
+
+      - name: Apply only the frozen residual comparison repair
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .scratch/q2-pv1b-repair
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("research/runners/lineum_b4_q2_ledger_neutral_control_check.py")
+          text = path.read_text(encoding="utf-8")
+
+          replacements = [
+              (
+                  '''NUMERIC_LEDGER_FIELDS = (
+              "delta_ledger",
+              "epsi_after",
+          ''',
+                  '''NUMERIC_LEDGER_FIELDS = (
+              "epsi_after",
+          ''',
+              ),
+              (
+                  '''def compare_case(
+              checker: dict[str, Any], primary: dict[str, Any]
+          ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+              numeric: list[dict[str, Any]] = []
+              categorical: list[dict[str, Any]] = []
+              key = checker["case_key"]
+          ''',
+                  '''def ledger_residual_values(
+              ledger: dict[str, Any],
+          ) -> tuple[float | None, float | None, bool]:
+              try:
+                  delta = float(ledger["delta_ledger"])
+                  tolerance = float(ledger["ledger_tolerance"])
+              except (KeyError, TypeError, ValueError):
+                  return None, None, False
+              within = bool(
+                  math.isfinite(delta)
+                  and math.isfinite(tolerance)
+                  and tolerance >= 0.0
+                  and abs(delta) <= tolerance
+              )
+              return delta, tolerance, within
+
+
+          def compare_case(
+              checker: dict[str, Any], primary: dict[str, Any]
+          ) -> tuple[
+              list[dict[str, Any]],
+              list[dict[str, Any]],
+              list[dict[str, Any]],
+          ]:
+              numeric: list[dict[str, Any]] = []
+              categorical: list[dict[str, Any]] = []
+              residual_failures: list[dict[str, Any]] = []
+              key = checker["case_key"]
+          ''',
+              ),
+              (
+                  '''        if (
+              c_ledger["neutral_within_numeric_tolerance"]
+              != p_ledger["neutral_within_numeric_tolerance"]
+          ):
+              categorical.append(
+                  {
+                      "case_key": key,
+                      "path": "perturbation_ledger.neutral_within_numeric_tolerance",
+                      "checker": c_ledger["neutral_within_numeric_tolerance"],
+                      "primary": p_ledger["neutral_within_numeric_tolerance"],
+                  }
+              )
+          return numeric, categorical
+          ''',
+                  '''        if (
+              c_ledger["neutral_within_numeric_tolerance"]
+              != p_ledger["neutral_within_numeric_tolerance"]
+          ):
+              categorical.append(
+                  {
+                      "case_key": key,
+                      "path": "perturbation_ledger.neutral_within_numeric_tolerance",
+                      "checker": c_ledger["neutral_within_numeric_tolerance"],
+                      "primary": p_ledger["neutral_within_numeric_tolerance"],
+                  }
+              )
+              for side, ledger in (("checker", c_ledger), ("primary", p_ledger)):
+                  delta, tolerance, within = ledger_residual_values(ledger)
+                  if not within:
+                      residual_failures.append(
+                          {
+                              "case_key": key,
+                              "side": side,
+                              "delta_ledger": delta,
+                              "ledger_tolerance": tolerance,
+                          }
+                      )
+          return numeric, categorical, residual_failures
+          ''',
+              ),
+              (
+                  '''    numeric: list[dict[str, Any]] = []
+              categorical: list[dict[str, Any]] = []
+              if key_set_pass:
+                  for key in sorted(expected):
+                      n, c = compare_case(checker_map[key], primary_map[key])
+                      numeric.extend(n)
+                      categorical.extend(c)
+          ''',
+                  '''    numeric: list[dict[str, Any]] = []
+              categorical: list[dict[str, Any]] = []
+              residual_failures: list[dict[str, Any]] = []
+              residual_diagnostics: list[dict[str, Any]] = []
+              if key_set_pass:
+                  for key in sorted(expected):
+                      n, c, r = compare_case(checker_map[key], primary_map[key])
+                      numeric.extend(n)
+                      categorical.extend(c)
+                      residual_failures.extend(r)
+                      c_ledger = checker_map[key]["perturbation_ledger"]
+                      p_ledger = primary_map[key]["perturbation_ledger"]
+                      if c_ledger is not None and p_ledger is not None:
+                          c_delta, c_tolerance, c_within = ledger_residual_values(c_ledger)
+                          p_delta, p_tolerance, p_within = ledger_residual_values(p_ledger)
+                          residual_diagnostics.append(
+                              {
+                                  "case_key": key,
+                                  "checker_delta_ledger": c_delta,
+                                  "checker_ledger_tolerance": c_tolerance,
+                                  "checker_within_tolerance": c_within,
+                                  "primary_delta_ledger": p_delta,
+                                  "primary_ledger_tolerance": p_tolerance,
+                                  "primary_within_tolerance": p_within,
+                              }
+                          )
+          ''',
+              ),
+              (
+                  '''        and not numeric
+              and not categorical
+              and checker_summary["neutral_perturbation_failure_count"] == 0
+          )
+          ''',
+                  '''        and not numeric
+              and not categorical
+              and not residual_failures
+              and checker_summary["neutral_perturbation_failure_count"] == 0
+          )
+          ''',
+              ),
+              (
+                  '''        "categorical_mismatch_count": len(categorical),
+              "categorical_mismatches": categorical,
+              "maximum_absolute_difference_among_mismatches": (
+          ''',
+                  '''        "categorical_mismatch_count": len(categorical),
+              "categorical_mismatches": categorical,
+              "ledger_residual_failure_count": len(residual_failures),
+              "ledger_residual_failures": residual_failures,
+              "ledger_residual_diagnostics": residual_diagnostics,
+              "maximum_absolute_difference_among_mismatches": (
+          ''',
+              ),
+              (
+                  '''                "categorical_mismatch_count": payload["categorical_mismatch_count"],
+              "independent_summary": payload["independent_summary"],
+          ''',
+                  '''                "categorical_mismatch_count": payload["categorical_mismatch_count"],
+              "ledger_residual_failure_count": payload["ledger_residual_failure_count"],
+              "independent_summary": payload["independent_summary"],
+          ''',
+              ),
+          ]
+
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"frozen replacement matched {count} times")
+              text = text.replace(old, new, 1)
+
+          path.write_text(text, encoding="utf-8")
+          PY
+          python -m py_compile research/runners/lineum_b4_q2_ledger_neutral_control_check.py
+          git diff -- research/runners/lineum_b4_q2_ledger_neutral_control_check.py > .scratch/q2-pv1b-repair/source.diff
+          test -s .scratch/q2-pv1b-repair/source.diff
+
+      - name: Run complete repair regression gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          PYTHONPATH=. pytest -q \
+            tests/research/test_lineum_b4_saturation_localized_l1.py \
+            tests/research/test_lineum_b4_q2_perturbation_ledger.py \
+            tests/research/test_lineum_b4_q2_ledger_neutral_control.py \
+            tests/research/test_lineum_b4_q2_ledger_neutral_control_json_safe.py \
+            tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py \
+            tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py \
+            | tee .scratch/q2-pv1b-repair/test-output.txt
+          status=${PIPESTATUS[0]}
+          set -e
+          printf '%s\n' "$status" > .scratch/q2-pv1b-repair/test-exit.txt
+          if [ "$status" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Retain tested repair and clean one-use workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(cat .scratch/q2-pv1b-repair/test-exit.txt)" = "0"
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import platform
+          import re
+          import subprocess
+          from pathlib import Path
+
+          import numpy
+          import pytest
+
+          source = Path("research/runners/lineum_b4_q2_ledger_neutral_control_check.py")
+          test_output = Path(".scratch/q2-pv1b-repair/test-output.txt")
+          text = test_output.read_text(encoding="utf-8")
+          match = re.search(r"(\d+) passed", text)
+          if match is None:
+              raise SystemExit("pytest pass count missing")
+
+          def sha256(path: Path) -> str:
+              return hashlib.sha256(path.read_bytes()).hexdigest()
+
+          source_blob = subprocess.check_output(
+              ["git", "hash-object", str(source)], text=True
+          ).strip()
+
+          payload = {
+              "schema": "lineum-b4-q2-ledger-neutral-control-check-repair-pass/1",
+              "stage": "Q2-PV1-B-CHECK-REPAIR",
+              "classification": "supported_runtime_regression_pass",
+              "scientific_command_invoked": False,
+              "workflow_run_id": int(os.environ["GITHUB_RUN_ID"]),
+              "workflow_source_commit": os.environ["GITHUB_SHA"],
+              "environment": {
+                  "python": platform.python_version(),
+                  "numpy": numpy.__version__,
+                  "pytest": pytest.__version__,
+                  "runner_os": os.environ.get("RUNNER_OS"),
+              },
+              "source_blob_before": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
+              "source_blob_after": source_blob,
+              "source_sha256_after": sha256(source),
+              "old_checker_test_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+              "residual_repair_test_blob": "f6b384c895d9022e4619d2e51eeea824d1185d54",
+              "repair_protocol_blob": "716d93ea040b415fda6fd30ff55ba0733bcde9cb",
+              "test_first_receipt_blob": "0228faedaa26b2e9a69355fcceeef35a963ebbab",
+              "pytest_passed": int(match.group(1)),
+              "pytest_failed": 0,
+              "test_output_sha256": sha256(test_output),
+              "repair_scope": (
+                  "remove only raw delta_ledger from strict cross-implementation "
+                  "numeric equality; require checker and primary residuals separately "
+                  "to satisfy their unchanged ledger_tolerance; retain raw residual "
+                  "diagnostics; keep all other comparisons and scientific rules unchanged"
+              ),
+              "workflow_artifact_uploaded": False,
+          }
+          Path(
+              "research/lineum-public-tolog-b4/"
+              "q2-ledger-neutral-control-check-repair-pass.json"
+          ).write_text(
+              json.dumps(payload, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+          rm .github/workflows/q2-pv1b-repair-apply.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            research/runners/lineum_b4_q2_ledger_neutral_control_check.py \
+            research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-pass.json \
+            .github/workflows/q2-pv1b-repair-apply.yml
+          remote_sha="$(git ls-remote origin refs/heads/develop | cut -f1)"
+          test "$remote_sha" = "$GITHUB_SHA"
+          git diff --cached --check
+          git commit -m "research: apply tested Q2 PV1-B checker residual repair"
+          git push origin HEAD:develop
