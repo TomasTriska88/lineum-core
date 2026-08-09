@@ -34,6 +34,9 @@ jobs:
           test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control.py)" = "cffa0cc87a070d6915606ab064ec3eee2d89a061"
           test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control.py)" = "240867abf29db6c248ff9515fa1770482fe8d9ac"
           test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-protocol.json)" = "8968401cbbad4c972024318bb48c976cdf54854b"
+          test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control_json_safe.py)" = "165db68a201fbd8db0e8b998b6c085d83dd54c0f"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_json_safe.py)" = "c15d0678d05bdb3ee20812709339a2258764fc0c"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-attempt-1.json)" = "56592eb0a09f58d232332004a64451cfc865c26e"
 
       - name: Set up supported Python
         uses: actions/setup-python@v5
@@ -64,13 +67,14 @@ jobs:
             tests/research/test_lineum_b4_saturation_localized_l1.py \
             tests/research/test_lineum_b4_q2_perturbation_ledger.py \
             tests/research/test_lineum_b4_q2_ledger_neutral_control.py \
+            tests/research/test_lineum_b4_q2_ledger_neutral_control_json_safe.py \
             | tee .scratch/q2-pv1b/test-output.txt
 
-      - name: Execute frozen Q2 PV1-B primary once
+      - name: Execute frozen Q2 PV1-B primary once through serialization-only wrapper
         shell: bash
         run: |
           set -euo pipefail
-          PYTHONPATH=. python research/runners/lineum_b4_q2_ledger_neutral_control.py \
+          PYTHONPATH=. python research/runners/lineum_b4_q2_ledger_neutral_control_json_safe.py \
             --output .scratch/q2-pv1b/result.json \
             | tee .scratch/q2-pv1b/runner-stdout.txt
           python - <<'PY'
@@ -142,6 +146,9 @@ jobs:
                   'pv1b_runner': 'cffa0cc87a070d6915606ab064ec3eee2d89a061',
                   'pv1b_test': '240867abf29db6c248ff9515fa1770482fe8d9ac',
                   'pv1b_protocol': '8968401cbbad4c972024318bb48c976cdf54854b',
+                  'pv1b_json_safe_wrapper': '165db68a201fbd8db0e8b998b6c085d83dd54c0f',
+                  'pv1b_json_safe_test': 'c15d0678d05bdb3ee20812709339a2258764fc0c',
+                  'pv1b_attempt_1_receipt': '56592eb0a09f58d232332004a64451cfc865c26e',
                   'report': '4f4759d629c2c0e9d1b57ff98cdff398340e9302',
               },
               'result_sha256': sha256(result_path),
