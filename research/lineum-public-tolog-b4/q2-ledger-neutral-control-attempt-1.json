@@ -1,0 +1,48 @@
+{
+  "schema": "lineum-b4-q2-ledger-neutral-control-attempt/1",
+  "stage": "Q2-PV1-B",
+  "attempt": 1,
+  "classification": "technical_non_result",
+  "workflow_run_id": 31308454003,
+  "workflow_job_id": 93232433080,
+  "workflow_source_commit": "c2a92444eb7ff1401ccd2c83f60a26d02fb80fa6",
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "runner_os": "Ubuntu 24.04.4 LTS"
+  },
+  "pre_execution_gate": {
+    "frozen_source_identity_checks": "passed",
+    "tests_passed": 23,
+    "tests_failed": 0
+  },
+  "scientific_command_invoked": true,
+  "retained_scientific_result": false,
+  "failure": {
+    "type": "ValueError",
+    "message": "Out of range float values are not JSON compliant",
+    "location": "canonical payload SHA-256 serialization after the frozen calculations",
+    "cause": "degenerate zero-amplitude cases produce non-finite diagnostic geometry values such as infinite displacement/radius; the fail-closed recovery classification already treats them as non-recoveries, but strict allow_nan=false JSON serialization rejected the diagnostics"
+  },
+  "scientific_interpretation": "none; the attempt is not evidence for or against Q2 because no complete retained result passed the frozen output contract",
+  "allowed_repair_frozen_after_failure": {
+    "scope": "serialization representation only",
+    "rule": "represent non-finite floating diagnostic values as JSON null after all scientific calculations and classifications are complete",
+    "must_not_change": [
+      "canonical equations",
+      "pre-state evolution",
+      "case set",
+      "1.5 central factor",
+      "balanced annulus formula",
+      "ledger-neutrality tolerance",
+      "recovery thresholds",
+      "cap/reset exclusions",
+      "Q2 decision categories",
+      "Q1 or Q3 state"
+    ],
+    "repair_runner_candidate_git_blob": "165db68a201fbd8db0e8b998b6c085d83dd54c0f",
+    "repair_test_candidate_git_blob": "c15d0678d05bdb3ee20812709339a2258764fc0c"
+  },
+  "workflow_artifact_uploaded": false
+}
