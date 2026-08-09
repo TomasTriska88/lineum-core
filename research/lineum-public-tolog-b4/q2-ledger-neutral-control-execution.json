@@ -1,0 +1,53 @@
+{
+  "environment": {
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python": "3.11.15",
+    "runner_os": "Linux"
+  },
+  "result_sha256": "330d36228cd9b7134df7245e95605b29e8ff9d647277d905564e18b53f276eac",
+  "runner_stdout_sha256": "2e794bc5c7efaaf22a97cc7d393e5c437ca0e09cceb0c873bb63dd1cc17ee920",
+  "schema": "lineum-b4-q2-ledger-neutral-control-execution/1",
+  "source_blobs": {
+    "canonical_runner": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "canonical_test": "e4a4b450e52ad3f8fa15d69dfbdb00505be67dab",
+    "pv1_checker": "c459e4a1f947aba55d01f8f30bc1aa6bae88076f",
+    "pv1_primary": "7a7ce23471d51d9b2244256387934658b12e1f52",
+    "pv1_runner": "e3657119b855965b4fd622b3e94f08443a7c9107",
+    "pv1_test": "403c1cb8747cebf3280009b3b2ffcd814c72e060",
+    "pv1b_attempt_1_receipt": "56592eb0a09f58d232332004a64451cfc865c26e",
+    "pv1b_json_safe_test": "c15d0678d05bdb3ee20812709339a2258764fc0c",
+    "pv1b_json_safe_wrapper": "165db68a201fbd8db0e8b998b6c085d83dd54c0f",
+    "pv1b_protocol": "8968401cbbad4c972024318bb48c976cdf54854b",
+    "pv1b_runner": "cffa0cc87a070d6915606ab064ec3eee2d89a061",
+    "pv1b_test": "240867abf29db6c248ff9515fa1770482fe8d9ac",
+    "report": "4f4759d629c2c0e9d1b57ff98cdff398340e9302"
+  },
+  "stage": "Q2-PV1-B",
+  "status": "supported_runtime_primary_completed",
+  "summary": {
+    "balanced_annulus_factor_max": 0.9780485627631685,
+    "balanced_annulus_factor_min": 0.8211962194809532,
+    "balanced_q2_positive_count": 0,
+    "balanced_rescue_count": 0,
+    "balanced_rescue_keys": [],
+    "canonical_q2_positive_count": 0,
+    "case_count": 28,
+    "control_available_count": 26,
+    "control_unavailable_count": 2,
+    "control_unavailable_keys": [
+      "LAP4|no_interaction_denominator|phi0=1.0",
+      "LAP8|no_interaction_denominator|phi0=1.0"
+    ],
+    "neutral_perturbation_failure_count": 0,
+    "neutral_perturbation_failures": [],
+    "outcome": "ledger_neutral_control_does_not_rescue_q2_classification",
+    "q2_classification_changed_count": 0,
+    "q2_classification_changed_keys": []
+  },
+  "test_output_sha256": "3c5c77ae771d9e4e2c2a7779f4ad977f04cafb131264ff2e7a91de0e254f44fb",
+  "workflow_artifact_uploaded": false,
+  "workflow_job": "q2-pv1b",
+  "workflow_run_id": 31308634065,
+  "workflow_source_commit": "6467e4a055ec3ccaee2e0b76e9b508844a31fa8d"
+}
