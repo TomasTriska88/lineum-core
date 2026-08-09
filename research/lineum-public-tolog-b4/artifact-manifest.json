@@ -15,10 +15,54 @@
       "role": "checker progress stream captured from stderr",
       "sha256": "a0241a92fbca6c488f2c703cd21644538badb677d6838820d5502605985d9e67"
     },
+    "research/lineum-public-tolog-b4/q2-checker-regression-attempt-1.json": {
+      "commit": "935ff7e12a5fdd5f0b487d1b018dab15b19ece3e",
+      "role": "synthetic-fixture regression technical failure receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-checker-regression-pass.json": {
+      "commit": "e8e510dbe72d7d96a6283d1be5d396f6a209855a",
+      "role": "supported-runtime 25-of-25 regression validation receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-attempt-1.json": {
+      "git_blob_sha": "56592eb0a09f58d232332004a64451cfc865c26e",
+      "role": "Q2-PV1-B first supported-runtime serialization technical non-result"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-execution.json": {
+      "git_blob_sha": "e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194",
+      "role": "Q2-PV1-B supported-runtime primary execution receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-protocol.json": {
+      "git_blob_sha": "8968401cbbad4c972024318bb48c976cdf54854b",
+      "role": "Q2-PV1-B frozen ledger-neutral radial-control protocol"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control.json": {
+      "git_blob_sha": "50d3f15d881e0665a450982053a9216f9cf5739c",
+      "role": "Q2-PV1-B supported-runtime primary pending independent checker",
+      "sha256": "330d36228cd9b7134df7245e95605b29e8ff9d647277d905564e18b53f276eac"
+    },
     "research/lineum-public-tolog-b4/q2-observer-frame-compact.json": {
       "bytes": 13446,
       "role": "compact Q2-O1 observer-frame result across all 28 frozen cases",
       "sha256": "aefc488aee4a9422d7ca43258eea2c96a1f818e632fd6513985453ce1e0a8f99"
+    },
+    "research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a-check.json": {
+      "git_blob_sha": "c459e4a1f947aba55d01f8f30bc1aa6bae88076f",
+      "role": "successful independent Q2-PV1-A checker result",
+      "sha256": "16279521ea2db3e8aaa6fb209db06dd37ac1e69873609286d2ac0f6ff11d406d"
+    },
+    "research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a.json": {
+      "git_blob_sha": "7a7ce23471d51d9b2244256387934658b12e1f52",
+      "role": "retained Q2-PV1-A supported-runtime primary sufficient-statistics result"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check-attempt-1.json": {
+      "commit": "244956ae94e3a4c2b2847e8d389821537918a3d0",
+      "role": "first supported-runtime independent-checker technical failure receipt"
+    },
+    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check.json": {
+      "canonical_payload_sha256_without_self": "ff8ce51e1eaf9f6dfdc2dce6dd5cd4a269bf7c903cc61e875abba804fb23509d",
+      "commit": "fbb5caf7fb89aef30439de14e927c51a1d5a0ee2",
+      "git_blob_sha": "f35c10e69f24f8a10a59b3928c8f3fddfe41fd3a",
+      "role": "successful independent Q2-SA1-A eight-case checker result"
     },
     "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-protocol.json": {
       "git_blob_sha": "d3c23ccbd0fac6d03fde270881cb49dc3e81feef",
@@ -28,24 +72,6 @@
       "canonical_verbose_payload_sha256_without_self": "02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7",
       "commit": "87fb24568f32cd926abeab8331ad93e39ef52e1d",
       "role": "retained Q2-SA1-A primary eight-case result"
-    },
-    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check-attempt-1.json": {
-      "commit": "244956ae94e3a4c2b2847e8d389821537918a3d0",
-      "role": "first supported-runtime independent-checker technical failure receipt"
-    },
-    "research/lineum-public-tolog-b4/q2-checker-regression-attempt-1.json": {
-      "commit": "935ff7e12a5fdd5f0b487d1b018dab15b19ece3e",
-      "role": "synthetic-fixture regression technical failure receipt"
-    },
-    "research/lineum-public-tolog-b4/q2-checker-regression-pass.json": {
-      "commit": "e8e510dbe72d7d96a6283d1be5d396f6a209855a",
-      "role": "supported-runtime 25-of-25 regression validation receipt"
-    },
-    "research/lineum-public-tolog-b4/q2-spatial-accounting-stage-a-check.json": {
-      "canonical_payload_sha256_without_self": "ff8ce51e1eaf9f6dfdc2dce6dd5cd4a269bf7c903cc61e875abba804fb23509d",
-      "commit": "fbb5caf7fb89aef30439de14e927c51a1d5a0ee2",
-      "git_blob_sha": "f35c10e69f24f8a10a59b3928c8f3fddfe41fd3a",
-      "role": "successful independent Q2-SA1-A eight-case checker result"
     }
   },
   "primary_input": {
@@ -58,6 +84,23 @@
     "sha256": "499dabf444bf442eb9c36927d67a51505166ce422f1e428794aa20def560f11d",
     "workflow_job": 92448891365,
     "workflow_run": 31048211101
+  },
+  "q2_ledger_neutral_control": {
+    "attempt_1_classification": "technical_non_result",
+    "balanced_annulus_factor_max": 0.9780485627631685,
+    "balanced_annulus_factor_min": 0.8211962194809532,
+    "balanced_q2_positive_count": 0,
+    "balanced_rescue_count": 0,
+    "canonical_q2_positive_count": 0,
+    "case_count": 28,
+    "control_available_count": 26,
+    "control_unavailable_count": 2,
+    "neutral_perturbation_failure_count": 0,
+    "pre_execution_tests_passed": 26,
+    "primary_workflow_run": 31308634065,
+    "q2_classification_changed_count": 0,
+    "scientific_status": "primary_pending_independent_check",
+    "workflow_artifact_uploaded": false
   },
   "q2_observer_frame": {
     "canonical_payload_without_elapsed_sha256": "c6c70c864835e54835eb1d8f4c462151d321fc876a40aa6784267618bc9fe4d7",
@@ -74,6 +117,17 @@
     "source_limitation": "The exact observer runner and its test file were hash-recorded and executed locally but were not published as plain repository files in that checkpoint. The compact deterministic result is retained; the full local output is identified by byte count and SHA-256.",
     "tests": "14 passed",
     "tests_sha256": "5914a608ac265b3d59b1e0fdd605e4ae6f8a88cab8c1360046f9b0092c4e7705"
+  },
+  "q2_perturbation_ledger_stage_a": {
+    "active_count": 28,
+    "case_count": 28,
+    "checker_categorical_mismatch_count": 0,
+    "checker_numeric_mismatch_count": 0,
+    "checker_passed": true,
+    "checker_workflow_run": 31305887722,
+    "ledger_neutral_count": 4,
+    "ledger_non_neutral_count": 24,
+    "scientific_status": "independently_reproduced_within_frozen_28_case_domain"
   },
   "q2_spatial_accounting_stage_a": {
     "case_count": 8,
@@ -93,8 +147,8 @@
     },
     "environment": {
       "numpy": "1.26.4",
-      "python": "3.11.15",
-      "pytest": "9.1.1"
+      "pytest": "9.1.1",
+      "python": "3.11.15"
     },
     "primary": {
       "canonical_verbose_payload_sha256_without_self": "02402d7436df614583fa06201abdf0a9011b262a8135adb94ebdcd102f0285a7",
@@ -116,7 +170,7 @@
     "test_gate": "25 passed in 1.01s",
     "workflow_artifact_uploaded": false
   },
-  "schema": "lineum-public-tolog-b4-readable-artifacts/3",
+  "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
     "archive_tar_bytes": 153600,
     "archive_tar_sha256": "587df51f7497ac26d82732716ba3939e57c4c4bdecd663ce6d21d04f70ffe2fd",
@@ -132,5 +186,5 @@
     "test_sha256": "95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec"
   },
   "source_report": "research/lineum-public-tolog-galactic-shape-b4.md",
-  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, and Q2 spatial-accounting verification"
+  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, spatial-accounting, perturbation-ledger, and ledger-neutral-control evidence"
 }
