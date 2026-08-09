@@ -1,0 +1,297 @@
+name: Q2 PV1-B Report Checkpoint
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - ".github/workflows/q2-pv1b-report-checkpoint.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out exact checkpoint commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Verify exact evidence inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "4f4759d629c2c0e9d1b57ff98cdff398340e9302"
+          test "$(git hash-object research/lineum-public-tolog-b4/artifact-manifest.json)" = "d29693ade9a1d9352793171eb7c8a5e02577aa99"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a.json)" = "7a7ce23471d51d9b2244256387934658b12e1f52"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a-check.json)" = "c459e4a1f947aba55d01f8f30bc1aa6bae88076f"
+          test "$(git hash-object research/runners/lineum_b4_q2_perturbation_ledger_check.py)" = "67b5982a832aa483f25d6ba0ce4066e9a26b71de"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_perturbation_ledger_check.py)" = "3596fef3836c9bec078d7d3a6c4605e92c160957"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-protocol.json)" = "8968401cbbad4c972024318bb48c976cdf54854b"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-attempt-1.json)" = "56592eb0a09f58d232332004a64451cfc865c26e"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control.json)" = "50d3f15d881e0665a450982053a9216f9cf5739c"
+          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-execution.json)" = "e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194"
+          test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control.py)" = "cffa0cc87a070d6915606ab064ec3eee2d89a061"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control.py)" = "240867abf29db6c248ff9515fa1770482fe8d9ac"
+          test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control_json_safe.py)" = "165db68a201fbd8db0e8b998b6c085d83dd54c0f"
+          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_json_safe.py)" = "c15d0678d05bdb3ee20812709339a2258764fc0c"
+
+      - name: Patch the single active report and manifest fail-closed
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+          import re
+
+          report_path = Path('research/lineum-public-tolog-galactic-shape-b4.md')
+          manifest_path = Path('research/lineum-public-tolog-b4/artifact-manifest.json')
+          text = report_path.read_text(encoding='utf-8')
+
+          def replace_once(old: str, new: str, label: str) -> None:
+              global text
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected one exact match, got {count}')
+              text = text.replace(old, new, 1)
+
+          def replace_section(pattern: str, replacement: str, label: str) -> None:
+              global text
+              text2, n = re.subn(pattern, replacement, text, count=1, flags=re.DOTALL)
+              if n != 1:
+                  raise SystemExit(f'{label}: expected one regex match, got {n}')
+              text = text2
+
+          replace_once(
+              '**Status:** active authoritative report; localized-L1 negative independently verified; `Q2-O1` observer-frame test completed; `Q2-SA1-A` independently reproduced in a repository-supported runtime; all eight Stage A cases are `unpaired_source_dominated`; no Stage B candidate survives; `Q2-PV1-A` is now independently reproduced and shows that the canonical radial perturbation is non-neutral in `24 / 28` active frozen states under the declared implementation ledger; the preregistered ledger-neutral radial control is unlocked; Q1 and Q3 remain unchanged',
+              '**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-A` are independently checked within their frozen domains; `Q2-PV1-B` ledger-neutral radial control has a retained supported-runtime primary with `26 / 28` controls available, `0 / 26` Q2 rescues, and `0 / 26` Q2 classification changes; two reset-degenerate rows are explicitly `control_unavailable`; the PV1-B primary awaits a separately implemented checker; Q1 and Q3 remain unchanged',
+              'status header',
+          )
+          replace_once('**Version:** 0.23.0  ', '**Version:** 0.24.0  ', 'version')
+          replace_once('**Evidence cutoff:** 2026-08-07  ', '**Evidence cutoff:** 2026-08-09  ', 'evidence cutoff')
+          replace_once('**Checkpoint parent:** `6a53fb977828095c5cebe0039dfd50950557f15e`  ', '**Checkpoint parent:** `9e65e1bd2f2ff96fed78efc89d34ed42d2b1c207`  ', 'checkpoint parent')
+
+          continuity_anchor = 'Version `0.23.0` records repaired-checker attempt 3 as the first successful independent `Q2-PV1-A` verification after the exact workflow-identity correction, retains the checker JSON, confirms zero numeric and categorical mismatches under the frozen comparison rules, removes the one-use workflow, and unlocks the preregistered ledger-neutral radial control without changing Q1 or Q3.'
+          replace_once(
+              continuity_anchor,
+              continuity_anchor + ' Version `0.24.0` records that ledger-neutral control as `Q2-PV1-B`: the protocol and harness were frozen before outcome inspection, the first supported-runtime attempt passed `23 / 23` tests but failed only at strict JSON serialization of non-finite diagnostics and is retained as a technical non-result, a serialization-only `null` representation repair was frozen without changing science, and the second supported-runtime attempt passed `26 / 26` tests and retained a primary result with 26 available neutral controls, two explicit unavailable degenerate rows, zero Q2 rescues, and zero Q2 classification changes. Independent PV1-B verification remains required before mechanism selection.',
+              'continuity version 0.24.0',
+          )
+
+          old_next = 'The next Q2 step remains the preregistered ledger-neutral radial control: preserve the same central `1.5` multiplier and solve the annular multiplier from the frozen pre-perturbation sufficient statistics so that the declared `sum(|psi|^2) + sum(phi)` ledger is unchanged whenever a real non-negative solution exists; zero or infeasible cases must remain explicit rather than tuned away. Only after that control is independently checked may a reciprocal `psi <-> phi` repair or a phase/interference candidate be compared.'
+          new_next = '''The preregistered ledger-neutral radial control has now been executed as `Q2-PV1-B`. A real control factor existed for `26 / 28` frozen states; the two `no_interaction_denominator, phi0=1` rows had `E_inner = E_annulus = 0` after prior resets and therefore remained explicitly `control_unavailable`. Every available balanced perturbation satisfied the frozen ledger-neutrality tolerance, with annular factors from approximately `0.821196` to `0.978049`. Under the unchanged recovery and cap/reset exclusions, the canonical branch had `0` Q2-positive cases and the balanced branch also had `0`; no classification changed and no case was rescued. This is a retained supported-runtime **primary** result only. A separately implemented checker must reproduce it before the perturbation-confound is considered closed and before any reciprocal or phase/interference replacement candidate is selected.'''
+          replace_once(old_next, new_next, 'plain-conclusion next step')
+
+          old_q2 = '**Current answer:** no within the tested domain. The independently verified localized screen found no full-state recovery; the homogeneous audit found no reciprocal reservoir return; `Q2-O1` rescued none of the 28 classifications; and independently reproduced `Q2-SA1-A` shows that apparent simplified-lane `psi` recovery is dominated by unpaired gain rather than reciprocal incoming spatial return. No Stage B candidate survives. `Q2-PV1-A` is now independently reproduced and additionally establishes that the canonical radial perturbation changes the declared implementation ledger in `24 / 28` active frozen states, so the preregistered ledger-neutral control must be used before judging a strictly conservative repair.'
+          new_q2 = '**Current answer:** no within the tested domain. The independently verified localized screen found no full-state recovery; the homogeneous audit found no reciprocal reservoir return; `Q2-O1` rescued none of the 28 classifications; independently reproduced `Q2-SA1-A` shows that apparent simplified-lane `psi` recovery is dominated by unpaired gain rather than reciprocal incoming spatial return; and independently reproduced `Q2-PV1-A` establishes that the canonical radial perturbation changes the declared implementation ledger in `24 / 28` active frozen states. The preregistered `Q2-PV1-B` ledger-neutral control now has a retained supported-runtime primary: `26 / 28` controls were available and ledger-neutral, two reset-degenerate rows were unavailable, and the balanced control produced `0 / 26` Q2 rescues and `0 / 26` classification changes. That last control remains `primary_pending_independent_check`.'
+          replace_once(old_q2, new_q2, 'Q2 current answer')
+
+          section7 = '''## 7. Interpretation and failure-to-mechanism ledger
+
+1. **Implementation:** the audited update contains unpaired feedback, one-way mode transfer, dissipation without reservoir credit, clipping, spatial transport/diffusion, and optional hard guards. `Q2-PV1-B` changes no production equation: it compares the canonical radial perturbation with the preregistered ledger-neutral counterfactual while keeping the same pre-state evolution, recovery update, observers, and exclusions.
+2. **Reproduced observations:** the homogeneous and localized independent checks remain negative; `Q2-O1` changes no classification; `Q2-SA1-A` is independently reproduced with all eight cases `unpaired_source_dominated` and no Stage B candidate; and `Q2-PV1-A` is independently reproduced with `28` active rows, `24` ledger-non-neutral and `4` numerically neutral under its frozen rule. `Q2-PV1-B` has a retained supported-runtime primary after a `26 / 26` test gate: `26 / 28` balanced controls are available, all 26 pass the frozen ledger-neutrality tolerance, two reset-degenerate zero-annulus rows are explicitly unavailable, the canonical and balanced branches both contain zero Q2-positive cases, and no Q2 classification changes.
+3. **Cautious interpretation:** the canonical perturbation's ledger mismatch is a real methodological confound for testing an exactly conserving repair, but the PV1-B primary does not support that confound as the explanation of the existing Q2 negative in any eligible frozen case. This interpretation is provisional until the separately implemented PV1-B checker passes.
+4. **Hypothesis only:** a genuinely reciprocal existing-state repair, a phase/conjugate extension, a different equation family, an additional state, or another mechanism not represented in the tested lanes might alter Q2. None is selected by PV1-B.
+5. **Real physics:** the declared ledger is implementation-defined only. No laboratory field, physical energy, gravity, cosmology, dark-matter, quantum, or TOLOG mapping is established by these tests.
+
+| Audit item | Bounded finding |
+|---|---|
+| What failed | no full-state localized recovery; no reciprocal homogeneous return; no observer alignment rescue; no Stage A transport-accounted near-return candidate; no PV1-B balanced-control rescue in the 26 eligible primary cases |
+| What remained positive | exact Stage A accounting closure and independent reproduction; successful independent PV1-A verification; all 26 available PV1-B perturbations satisfy the frozen ledger-neutrality criterion; the balanced-factor range is finite (`~0.821196` to `~0.978049`) without tuning |
+| Failure location under tested conditions | current equation/exchange-accounting semantics remain the leading demonstrated failure location; PV1-B primary suggests the canonical perturbation mismatch does not explain the negative, but checker confirmation is pending |
+| Current implementation status | unsupported as a natural reciprocal attractor under tested conditions |
+| Wider Lineum status | unresolved; not universally falsified |
+| Next consequential step | independently recompute and compare `Q2-PV1-B`; do not select a replacement mechanism before that checker closes |
+
+Registered repair families remain unselected: paired reciprocal debit; reinterpretation of `phi`; alternative nonlinear or gradient ledger; spatial redistribution; phase-carrying or extra-state variants; and the null case that this equation family has no natural return. `Q2-SA1`, `Q2-PV1-A`, and `Q2-PV1-B` are discriminators/validity controls, not production-equation changes.
+'''
+          replace_section(r'## 7\. Interpretation and failure-to-mechanism ledger\n.*?(?=\n## 8\.)', section7.rstrip(), 'section 7')
+
+          section820 = '''### 8.20 `Q2-PV1-A` final independent verification
+
+Repaired-checker attempt 3 is the first passing independent verification of `Q2-PV1-A`. The supported workflow ran as `31305887722` from source commit `78a9aa80ac5a6249b371e6528f3c333820b69315` after the frozen gate passed `23 / 23`. The branch-reachable checker/test Git blobs were `67b5982a832aa483f25d6ba0ce4066e9a26b71de` and `3596fef3836c9bec078d7d3a6c4605e92c160957`.
+
+The retained checker `research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a-check.json` has Git blob `c459e4a1f947aba55d01f8f30bc1aa6bae88076f`; its output-file SHA-256 is `16279521ea2db3e8aaa6fb209db06dd37ac1e69873609286d2ac0f6ff11d406d`. It reports `passed = true`, `protocol_pass = true`, `key_set_pass = true`, `numeric_mismatch_count = 0`, `categorical_mismatch_count = 0`, `analytic_agreement_failure_count = 0`, and independently reproduces `28 active / 24 non-neutral / 4 neutral` plus `outcome = non_neutral_detected`.
+
+**Implementation fact:** the checker reads retained sufficient statistics and independently reconstructs the PV1-A decisions; it does not change the production update.  
+**Reproduced observation:** the PV1-A methodological result is independently reproduced within the exact frozen 28-case domain.  
+**Cautious interpretation:** the canonical mixed radial perturbation is not universally neutral under the declared implementation ledger and therefore is not a sufficient sole fairness control for an exactly conserving repair.  
+**Hypothesis/real physics:** no repair, physical energy, or real-world mapping follows from this result.
+
+### 8.21 `Q2-PV1-B` ledger-neutral radial control — frozen protocol and primary
+
+`Q2-PV1-B` implements only the conditional control preregistered in Section 8.17.5. The frozen harness checkpoint is commit `c39d8a58351e241df740ca92216895aae040b790`:
+
+```text
+runner Git blob   = cffa0cc87a070d6915606ab064ec3eee2d89a061
+test Git blob     = 240867abf29db6c248ff9515fa1770482fe8d9ac
+protocol Git blob = 8968401cbbad4c972024318bb48c976cdf54854b
+```
+
+The control keeps the central factor `1.5` and computes the annular factor before recovery from each frozen pre-state:
+
+```text
+b = sqrt(1 - 1.25 * E_inner / E_annulus)
+```
+
+If no real finite value exists, the case is `control_unavailable`; clipping, absolute-value rescue, coefficient tuning, and alternative formulas are forbidden. Every other recovery equation, horizon, observer threshold, and cap/reset exclusion remains the canonical localized-L1 rule.
+
+The first supported-runtime attempt (`31308454003 / 93232433080`) passed exact source checks and `23 / 23` tests, then completed the frozen calculations but failed while serializing non-finite diagnostic geometry from zero-amplitude states under strict `allow_nan = false`. No complete result passed the output contract, so that attempt is retained as the technical non-result `q2-ledger-neutral-control-attempt-1.json`; it is not scientific evidence.
+
+The only permitted repair was serialization representation after scientific classification: non-finite floating diagnostics become JSON `null`. The frozen wrapper/test blobs are `165db68a201fbd8db0e8b998b6c085d83dd54c0f` and `c15d0678d05bdb3ee20812709339a2258764fc0c`. No equation, factor, case, threshold, observer, or decision category changed.
+
+The second supported-runtime attempt (`31308634065 / 93232870292`) used Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`, passed the complete `26 / 26` gate, executed the primary once, retained ordinary JSON, uploaded no workflow artifact or ZIP, and removed the one-use workflow in the result checkpoint. The retained primary is `research/lineum-public-tolog-b4/q2-ledger-neutral-control.json`, Git blob `50d3f15d881e0665a450982053a9216f9cf5739c`, file SHA-256 `330d36228cd9b7134df7245e95605b29e8ff9d647277d905564e18b53f276eac`. The execution receipt is `q2-ledger-neutral-control-execution.json`, Git blob `e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194`.
+
+```text
+case_count = 28
+control_available_count = 26
+control_unavailable_count = 2
+balanced factor min / max = 0.8211962194809532 / 0.9780485627631685
+neutral perturbation failures = 0
+canonical Q2-positive count = 0
+balanced Q2-positive count = 0
+balanced rescue count = 0
+Q2 classification changed count = 0
+outcome = ledger_neutral_control_does_not_rescue_q2_classification
+```
+
+The two unavailable rows are `LAP4|no_interaction_denominator|phi0=1.0` and `LAP8|no_interaction_denominator|phi0=1.0`; their prior resets leave `E_inner = E_annulus = 0`, so they are not converted into evidence by choosing an arbitrary annular factor.
+
+**Implementation fact:** PV1-B changes only the perturbation branch; the production update is unchanged.  
+**Primary reproduced observation:** all 26 mathematically available controls are ledger-neutral within the frozen tolerance, but none rescues a Q2 classification and none changes the canonical Q2-negative verdict.  
+**Cautious interpretation:** at primary level, the canonical perturbation mismatch does not explain the Q2 failure within the eligible frozen control domain.  
+**Independent status:** `primary_pending_independent_check`; no promotion to `robust_within_tested_domain` is allowed until a separately implemented checker reproduces the result.  
+**Real-physics relation:** none established.
+'''
+          marker = '\n## 9. Preserved failure and publication chronology'
+          if text.count(marker) != 1:
+              raise SystemExit('section 8.21 insertion marker mismatch')
+          text = text.replace(marker, '\n' + section820.rstrip() + marker, 1)
+
+          section10 = '''## 10. Claims explicitly not established
+
+This report does not establish a universal galactic `tanh` law; autonomous `98%` emergence; absence of dark matter; modified gravity; a mathematical bridge to TOLOG; a physical `3 x 3` elementary cell; TOLOG Dark Heart; an emergent `tanh` replacement; a natural bound-free attractor; a complete `psi`–`phi` physical-energy cycle; scalar-potential memory; a causal disk mechanism; a universal absence of moving or rotating frames; a universal spatial-accounting mechanism beyond the frozen domains; the correct replacement mechanism; an independently verified final verdict for `Q2-PV1-B`; or a laboratory, quantum, gravitational, cosmological, consciousness, or ontological interpretation.
+
+The independently reproduced Stage A result establishes only that, under the frozen Stage A implementation/accounting definitions, observed positive `psi` gain is dominated by unpaired gain rather than reciprocal incoming neighbour transport and does not produce full-state return. Independently reproduced `Q2-PV1-A` establishes only that the canonical radial perturbation is not universally neutral under the declared implementation ledger. The retained PV1-B primary establishes only that, in one supported-runtime execution, 26 mathematically available balanced perturbations were ledger-neutral and none rescued or changed a Q2 classification; the two degenerate rows were unavailable. PV1-B still requires an independent checker.
+'''
+          replace_section(r'## 10\. Claims explicitly not established\n.*?(?=\n## 11\.)', section10.rstrip(), 'section 10')
+
+          item38 = '38. the repaired test and checker were published test-first in commits `ad3080b2975e473b4d395ca147afc802f3c5ba00` and `246733883b8ce1f3bba91bffb5e8f25b1e5a3a42`; no second official checker had executed at this report checkpoint.'
+          new_items = '''38. the repaired test and checker were published test-first in commits `ad3080b2975e473b4d395ca147afc802f3c5ba00` and `246733883b8ce1f3bba91bffb5e8f25b1e5a3a42`;
+39. repaired-checker attempt 2 was retained as a pre-execution source-identity technical failure with no checker science; attempt 3 then passed `23 / 23` and independently reproduced PV1-A with zero numeric/categorical mismatches and the same `28 / 24 / 4` summary;
+40. the successful PV1-A checker is retained as `q2-perturbation-ledger-stage-a-check.json` and unlocks the already-preregistered ledger-neutral control;
+41. `Q2-PV1-B` runner, tests, and protocol were frozen before outcome inspection in commit `c39d8a58351e241df740ca92216895aae040b790`;
+42. PV1-B attempt 1 passed `23 / 23` but failed strict JSON serialization after calculation and is retained as a technical non-result; the only repair maps non-finite diagnostics to JSON `null` after classification;
+43. PV1-B attempt 2 passed `26 / 26` in the supported runtime and retained all 28 cases with 26 available controls, two explicit unavailable reset-degenerate rows, zero ledger-neutrality failures, zero Q2 rescues, and zero classification changes;
+44. the PV1-B primary and execution receipt are durable ordinary JSON, the one-use workflow was removed, and no ZIP/workflow artifact was retained;
+45. PV1-B remains `primary_pending_independent_check`; replacement-mechanism selection is still blocked on its separately implemented checker.'''
+          replace_once(item38, new_items, 'completion list extension')
+
+          old_gate = '''The immediate next scientific action is one fresh supported-runtime execution of the repaired `Q2-PV1-A` retained-statistics checker. It must verify the exact primary/report/canonical/checker blobs, run the canonical localized + Q2-PV1 + seven repaired checker tests before the checker command, and retain ordinary JSON. If and only if that checker returns `passed = true` with the same 28-case applicability/neutrality summary and both residual paths passing the frozen analytic threshold, the already-preregistered ledger-neutral radial control in Section 8.17.5 becomes authorized next. No replacement mechanism is selected by either the primary or checker repair. Q1 and Q3 remain active controlling goals rather than abandoned side topics: after the smallest Q2 validity chain is closed, programme-level prioritization must continue across all three questions rather than allowing Q2 to expand indefinitely.'''
+          new_gate = '''The immediate next scientific action is a separately implemented `Q2-PV1-B` checker. It must start from the frozen canonical source/state definitions, independently reconstruct the balanced factor and recovery comparison rather than importing the PV1-B primary decision function, require the exact 28-case key set and 26/2 available/unavailable partition, compare the frozen numeric and categorical decision surface, and fail closed on any ledger-neutrality, availability, recovery, cap/reset, or classification disagreement. It must run only after its own source/test identities and comparison rules are frozen, retain ordinary JSON, and upload no ZIP. No replacement mechanism is selected by the PV1-B primary. Q1 and Q3 remain active controlling goals; after this small Q2 validity chain is closed, programme-level prioritization must return to all three questions rather than allowing Q2 to expand indefinitely.'''
+          replace_once(old_gate, new_gate, 'next scientific gate')
+
+          version_anchor = '`0.22.1` records the first retained-statistics checker attempt after a `21 / 21` gate, preserves its exact technical failure on eight cancellation-residual comparisons despite exact categorical/summary reproduction, records the noisy but non-scientific checker publication history, freezes the narrow residual-gate repair, and records test-first `2 / 7 -> 7 / 7` validation plus repaired source/test identities before any second official checker execution. Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain.'
+          replace_once(
+              version_anchor,
+              version_anchor[:-len(' Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain.')] + ' `0.22.2` records repaired-checker attempt 2 as a source-identity technical non-result before execution. `0.23.0` records the first successful independent PV1-A verification after `23 / 23`, zero numeric/categorical mismatches, and the same `28 active / 24 non-neutral / 4 neutral` result, thereby unlocking PV1-B. `0.24.0` records the frozen PV1-B protocol, the first serialization-only technical non-result, the narrow JSON-safe repair, and the second supported-runtime primary after `26 / 26`: 26 controls available and neutral, two explicit reset-degenerate unavailable rows, zero Q2 rescues, and zero Q2 classification changes. PV1-B independent verification remains pending. Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain.',
+              'version history extension',
+          )
+
+          handoff_pattern = r'A new researcher must re-read current rules, verify the active report blob and `research/lineum-public-tolog-b4/artifact-manifest\.json`,.*$'
+          handoff = '''A new researcher must re-read current rules and verify the current `develop` head, this report, and `research/lineum-public-tolog-b4/artifact-manifest.json`. Treat the localized checker, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-A` as already completed at the bounded evidence levels stated above. Preserve all technical non-results rather than rewriting history. Treat `q2-ledger-neutral-control.json` as a supported-runtime **primary only**, with the exact result `26 available / 2 unavailable / 0 neutral failures / 0 Q2 rescues / 0 classification changes`. Execute only a separately implemented PV1-B checker next; do not select a reciprocal, phase/interference, compaction, Stage-B spatial, or new-field replacement before that checker closes. Keep all subsequent work strictly mapped to Q1, Q2, or Q3 and return to programme-level prioritization after this validity chain rather than expanding Q2 indefinitely.'''
+          replace_section(handoff_pattern, handoff, 'final handoff')
+
+          report_path.write_text(text, encoding='utf-8')
+
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          files = manifest.setdefault('files', {})
+          files['research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a.json'] = {
+              'git_blob_sha': '7a7ce23471d51d9b2244256387934658b12e1f52',
+              'role': 'retained Q2-PV1-A supported-runtime primary sufficient-statistics result',
+          }
+          files['research/lineum-public-tolog-b4/q2-perturbation-ledger-stage-a-check.json'] = {
+              'git_blob_sha': 'c459e4a1f947aba55d01f8f30bc1aa6bae88076f',
+              'sha256': '16279521ea2db3e8aaa6fb209db06dd37ac1e69873609286d2ac0f6ff11d406d',
+              'role': 'successful independent Q2-PV1-A checker result',
+          }
+          files['research/lineum-public-tolog-b4/q2-ledger-neutral-control-protocol.json'] = {
+              'git_blob_sha': '8968401cbbad4c972024318bb48c976cdf54854b',
+              'role': 'Q2-PV1-B frozen ledger-neutral radial-control protocol',
+          }
+          files['research/lineum-public-tolog-b4/q2-ledger-neutral-control-attempt-1.json'] = {
+              'git_blob_sha': '56592eb0a09f58d232332004a64451cfc865c26e',
+              'role': 'Q2-PV1-B first supported-runtime serialization technical non-result',
+          }
+          files['research/lineum-public-tolog-b4/q2-ledger-neutral-control.json'] = {
+              'git_blob_sha': '50d3f15d881e0665a450982053a9216f9cf5739c',
+              'sha256': '330d36228cd9b7134df7245e95605b29e8ff9d647277d905564e18b53f276eac',
+              'role': 'Q2-PV1-B supported-runtime primary pending independent checker',
+          }
+          files['research/lineum-public-tolog-b4/q2-ledger-neutral-control-execution.json'] = {
+              'git_blob_sha': 'e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194',
+              'role': 'Q2-PV1-B supported-runtime primary execution receipt',
+          }
+          manifest['q2_perturbation_ledger_stage_a'] = {
+              'scientific_status': 'independently_reproduced_within_frozen_28_case_domain',
+              'case_count': 28,
+              'active_count': 28,
+              'ledger_non_neutral_count': 24,
+              'ledger_neutral_count': 4,
+              'checker_passed': True,
+              'checker_numeric_mismatch_count': 0,
+              'checker_categorical_mismatch_count': 0,
+              'checker_workflow_run': 31305887722,
+          }
+          manifest['q2_ledger_neutral_control'] = {
+              'scientific_status': 'primary_pending_independent_check',
+              'case_count': 28,
+              'control_available_count': 26,
+              'control_unavailable_count': 2,
+              'balanced_annulus_factor_min': 0.8211962194809532,
+              'balanced_annulus_factor_max': 0.9780485627631685,
+              'neutral_perturbation_failure_count': 0,
+              'canonical_q2_positive_count': 0,
+              'balanced_q2_positive_count': 0,
+              'balanced_rescue_count': 0,
+              'q2_classification_changed_count': 0,
+              'primary_workflow_run': 31308634065,
+              'pre_execution_tests_passed': 26,
+              'attempt_1_classification': 'technical_non_result',
+              'workflow_artifact_uploaded': False,
+          }
+          manifest['schema'] = 'lineum-public-tolog-b4-readable-artifacts/4'
+          manifest['subject'] = 'Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, spatial-accounting, perturbation-ledger, and ledger-neutral-control evidence'
+          manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+
+          print('report_sha256', hashlib.sha256(report_path.read_bytes()).hexdigest())
+          print('manifest_sha256', hashlib.sha256(manifest_path.read_bytes()).hexdigest())
+          PY
+
+      - name: Verify bounded diff and publish checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          changed="$(git diff --name-only | sort)"
+          expected="$(printf '%s\n' '.github/workflows/q2-pv1b-report-checkpoint.yml' 'research/lineum-public-tolog-b4/artifact-manifest.json' 'research/lineum-public-tolog-galactic-shape-b4.md' | sort)"
+          rm .github/workflows/q2-pv1b-report-checkpoint.yml
+          changed_after="$(git status --short | awk '{print $2}' | sort)"
+          expected_after="$(printf '%s\n' '.github/workflows/q2-pv1b-report-checkpoint.yml' 'research/lineum-public-tolog-b4/artifact-manifest.json' 'research/lineum-public-tolog-galactic-shape-b4.md' | sort)"
+          test "$changed_after" = "$expected_after"
+          git diff -- research/lineum-public-tolog-galactic-shape-b4.md > /tmp/report.diff
+          grep -q 'Q2-PV1-B' /tmp/report.diff
+          grep -q '0 / 26' /tmp/report.diff
+          grep -q 'primary_pending_independent_check' /tmp/report.diff
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/lineum-public-tolog-galactic-shape-b4.md research/lineum-public-tolog-b4/artifact-manifest.json .github/workflows/q2-pv1b-report-checkpoint.yml
+          remote_sha="$(git ls-remote origin refs/heads/develop | cut -f1)"
+          test "$remote_sha" = "$GITHUB_SHA"
+          git commit -m "research: record Q2 PV1-B primary checkpoint"
+          git push origin HEAD:develop
