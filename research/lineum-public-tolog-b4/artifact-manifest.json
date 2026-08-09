@@ -27,9 +27,21 @@
       "git_blob_sha": "56592eb0a09f58d232332004a64451cfc865c26e",
       "role": "Q2-PV1-B first supported-runtime serialization technical non-result"
     },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-execution.json": {
+      "git_blob_sha": "fa235870fc1f40086f36db315543a2b861eb22f5",
+      "role": "first official Q2-PV1-B checker supported-runtime execution receipt"
+    },
     "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-protocol.json": {
       "git_blob_sha": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
       "role": "Q2-PV1-B independent checker preregistration before official execution"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-protocol.json": {
+      "role": "frozen narrow Q2-PV1-B checker residual-comparison repair before implementation"
+    },
+    "research/lineum-public-tolog-b4/q2-ledger-neutral-control-check.json": {
+      "git_blob_sha": "48e9a024b8988be6272526531efa476264ced791",
+      "role": "first official Q2-PV1-B independent checker technical comparison-method failure",
+      "sha256": "71335e17fa15eb5e5d35e564f146c3836b5b0ab4ecf1657e9815a918c2b04ac1"
     },
     "research/lineum-public-tolog-b4/q2-ledger-neutral-control-execution.json": {
       "git_blob_sha": "e16a2b7b2679eaa9a126c8ebc8bd81ad383c9194",
@@ -115,6 +127,14 @@
     "workflow_artifact_uploaded": false
   },
   "q2_ledger_neutral_control_checker": {
+    "attempt_1_categorical_mismatch_count": 0,
+    "attempt_1_complete_summary_match": true,
+    "attempt_1_key_set_pass": true,
+    "attempt_1_numeric_mismatch_count": 2,
+    "attempt_1_protocol_pass": true,
+    "attempt_1_tests_passed": 38,
+    "attempt_1_workflow_job": 93237235577,
+    "attempt_1_workflow_run": 31310400036,
     "checker_commit": "927c24682d1075b3fb0eb08185a14e830dfcef45",
     "checker_git_blob": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
     "compare_atol": 1e-08,
@@ -122,9 +142,11 @@
     "local_preflight_numpy": "2.3.5",
     "local_preflight_scientific_status": "unsupported_runtime_helper_preflight_only",
     "local_preflight_tests_passed": 12,
-    "official_result": null,
+    "official_result": false,
     "protocol_git_blob": "54e381428d49ba8e8aa944f8072fa281bf15d43a",
-    "scientific_status": "frozen_before_official_execution",
+    "repair_scope": "delta_ledger raw cancellation residual comparison only",
+    "repair_status": "frozen_before_implementation",
+    "scientific_status": "attempt_1_technical_comparison_method_failure",
     "test_git_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
   },
   "q2_observer_frame": {

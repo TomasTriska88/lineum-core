@@ -1,0 +1,66 @@
+{
+  "allowed_change": {
+    "fail_closed_if_either_side_exceeds_tolerance": true,
+    "remove_from_cross_implementation_numeric_equality": [
+      "perturbation_ledger.delta_ledger"
+    ],
+    "require_each_side_separately": "abs(delta_ledger) <= ledger_tolerance",
+    "require_neutrality_category_exact_match": true,
+    "retain_raw_values_diagnostically": true
+  },
+  "failed_checker": {
+    "categorical_mismatch_count": 0,
+    "classification": "technical_comparison_method_failure",
+    "execution_git_blob": "fa235870fc1f40086f36db315543a2b861eb22f5",
+    "key_set_pass": true,
+    "numeric_mismatch_count": 2,
+    "protocol_pass": true,
+    "result_git_blob": "48e9a024b8988be6272526531efa476264ced791",
+    "result_sha256": "71335e17fa15eb5e5d35e564f146c3836b5b0ab4ecf1657e9815a918c2b04ac1",
+    "source_commit": "19bac215d5a966560ca14962f35a1b22c0d8077c",
+    "tests_passed": 38,
+    "workflow_job_id": 93237235577,
+    "workflow_run_id": 31310400036
+  },
+  "mismatches": [
+    {
+      "case_key": "LAP4|no_explicit_tanh|phi0=1.0",
+      "checker": -4.76837158203125e-07,
+      "ledger_tolerance": 0.4282901062646145,
+      "max_abs_residual_over_tolerance": 1.1133508601492564e-06,
+      "path": "perturbation_ledger.delta_ledger",
+      "primary": 0.0
+    },
+    {
+      "case_key": "LAP4|no_linear_dissipation|phi0=0.0",
+      "checker": 0.0,
+      "ledger_tolerance": 3.1772686810775306,
+      "max_abs_residual_over_tolerance": 1.2006215553452324e-06,
+      "path": "perturbation_ledger.delta_ledger",
+      "primary": 3.814697265625e-06
+    }
+  ],
+  "must_not_change": [
+    "production/research equations",
+    "28-case key set",
+    "primary JSON",
+    "balanced factor formula",
+    "central or annular regions",
+    "recovery observers or thresholds",
+    "ledger-neutrality threshold",
+    "COMPARE_ATOL=1e-8",
+    "COMPARE_RTOL=1e-12",
+    "other numeric comparison fields",
+    "categorical comparison fields",
+    "summary comparison fields"
+  ],
+  "required_regressions": [
+    "different raw delta_ledger residuals are accepted only when both independently satisfy their frozen ledger tolerances",
+    "either primary or checker residual exceeding its own frozen ledger tolerance fails closed"
+  ],
+  "rerun_rule": "after repair source/test identities are frozen, execute a fresh supported-runtime checker from the beginning; do not reclassify the failed attempt post hoc",
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-repair/1",
+  "scope": "Q2 only; no mechanism selection or owner-intuition gate until passing independent verification",
+  "stage": "Q2-PV1-B-CHECK",
+  "status": "repair_frozen_before_implementation"
+}
