@@ -3367,3 +3367,285 @@ next_action = preregister_dual_field_vs_bistable_single_field_discriminator
 ```
 
 Priority E therefore closes only as a passed known-answer observer fixture with a deliberately preserved negative identifiability control. No Core equation, production module, public API, whitepaper, or physical claim is changed by version 0.6.0.
+
+## 25. Priority F preregistration — binary appearance versus causal mechanism discriminator
+
+**Evidence status:** `[toy][preregistered][execution-pending]`; no Priority-F numerical outcome has been inspected at the time this section is published.
+
+### 25.1 Chronology amendment before execution
+
+The standard-library Priority-F executable was committed one checkpoint too early in commit `8b8b4bc05b9a78347cd8c34b0dc19b0aef87429f`, before this Markdown preregistration had been added to the active report. This is a research-reporting chronology defect, not a scientific result.
+
+The defect was discovered before any execution of the Priority-F program. Therefore:
+
+```text
+Priority_F_outcome_seen_before_preregistration = false
+parameters_tuned_after_outcome = false
+thresholds_tuned_after_outcome = false
+mechanism_classes_changed_after_outcome = false
+observer_changed_after_outcome = false
+```
+
+The executable is frozen by its Git blob, not by an uncommitted local copy:
+
+```text
+path:
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-f.py
+
+Git blob SHA:
+b93c0bf65a576b38a13a6f052661b3972c6bc3a7
+```
+
+This Section 25 is the authoritative preregistration of the scientific question, variant registry, controls, thresholds, and interpretation boundary. The official Priority-F execution may begin only after this section is committed to `develop` and the exact executable blob above is re-read from that committed state.
+
+### 25.2 Question and permitted conclusion
+
+Can a frozen intervention observer distinguish several systems that all admit a simple binary `positive/negative` description but implement that apparent duality through different causal architectures?
+
+The target distinction is deliberately broader than `two fields versus one field`. The registered known-answer classes are:
+
+```text
+TS0: two genuinely independent state directions;
+TS1: two coordinates constrained to one effective degree of freedom;
+TS2: one scalar system with two stable attractors;
+TS3: one continuous plant projected through an observer threshold;
+TS4: the same current scalar state carrying a history-dependent relay label;
+TS5: a label changed only by observer convention while the plant is untouched.
+```
+
+A pass may validate only that the frozen interventions separate these declared known-answer classes. It cannot establish which architecture current Lineum implements, whether Lineum needs a new field, whether the Qumran Two Spirits teaching describes physics, or whether any spiritual/metaphysical dualism is physically real.
+
+### 25.3 Frozen common observational confound
+
+Every registered class is given the same deliberately impoverished baseline report:
+
+```text
+observable = +1
+binary label = +1
+```
+
+That baseline is not intended to be a full state description. It is the confound: a binary appearance is constructed to be non-identifying across all six classes. The classifier is allowed to use only the preregistered interventions and observables below.
+
+### 25.4 Frozen mechanism classes and interventions
+
+**TS0 — independent two-state architecture**
+
+The local linear intervention-response matrix is frozen as
+
+```text
+[[1, 0],
+ [0, 1]].
+```
+
+Its rank is `2` and determinant is `1`. Independent perturbation ports therefore span two independent response directions in this known-answer class.
+
+**TS1 — coupled two-coordinate / one-degree-of-freedom architecture**
+
+The response matrix is frozen as
+
+```text
+[[+0.5, -0.5],
+ [-0.5, +0.5]].
+```
+
+Its determinant is exactly `0`, its rank is `1`, and its responses satisfy the exact constraint
+
+```text
+u + v = 0.
+```
+
+This class therefore looks two-coordinate but does not provide two independently controllable response directions.
+
+**TS2 — scalar bistable architecture**
+
+The source-off scalar plant is
+
+```text
+dx/dt = x - x^3.
+```
+
+Its fixed points are `x = -1, 0, +1`, with `-1` and `+1` stable and `0` unstable. The frozen challenge resets the plant to
+
+```text
+x(0) = -0.5
+```
+
+and lets it evolve source-off for `T_relax = 8`.
+
+The adversarial monostable control uses the same reset and horizon but evolves under
+
+```text
+dx/dt = 1 - x,
+```
+
+which has the single stable fixed point `x=+1`.
+
+**TS3 — threshold projection**
+
+The physical plant remains fixed at
+
+```text
+x = 1.
+```
+
+Only the observer threshold changes from
+
+```text
+threshold = 0
+```
+
+to
+
+```text
+threshold = 1.5.
+```
+
+The binary label must flip while physical plant change remains exactly zero by construction.
+
+**TS4 — history-dependent relay**
+
+The current physical scalar state is held at
+
+```text
+x = 0.
+```
+
+inside a relay band with half-width `0.5`. A positive-history memory gives label `+1`; a negative-history memory gives label `-1`. Resetting only the memory convention must change the label while leaving the plant unchanged.
+
+**TS5 — observer-label convention**
+
+The physical state remains
+
+```text
+x = 1.
+```
+
+One observer convention reports the physical sign; a second convention reports its negative. The label changes but the plant does not.
+
+### 25.5 Frozen numerical schedule
+
+Only TS2 requires numerical integration.
+
+```text
+integration = explicit Euler
+primary dt = 0.002
+robustness dt = 0.004, 0.002, 0.001
+source-off relaxation horizon = 8.0
+bistable reset x = -0.5
+randomness = none
+external Python packages = none
+absolute structural tolerance = 1e-12
+```
+
+No coefficient, timestep, reset value, threshold, relay width, response matrix, mechanism class, classifier order, or decision threshold may be changed after the first official outcome is inspected.
+
+### 25.6 Frozen observables and classifier
+
+Record:
+
+- the common baseline observation and maximum baseline gap;
+- TS0 response matrix, rank, and determinant;
+- TS1 response matrix, rank, determinant, and exact `u+v` constraint;
+- TS2 final source-off scalar state;
+- monostable-control final source-off scalar state;
+- TS3 plant delta and pre/post threshold labels;
+- TS4 labels for matched current state under positive and negative histories, plus the plant delta under memory reset;
+- TS5 labels under the two observer conventions plus plant delta;
+- one intervention-signature vector for every TS0-TS5 class;
+- the class returned by the fixed ordered classifier for every variant.
+
+The frozen classifier uses this order:
+
+```text
+rank-2 independent response        -> TS0
+rank-1 constrained pair response   -> TS1
+persistent source-off negative basin -> TS2
+threshold-only label flip          -> TS3
+history-only label flip            -> TS4
+convention-only label flip         -> TS5
+otherwise                          -> unclassified
+```
+
+This ordering is part of the preregistration and may not be changed after outcome inspection.
+
+### 25.7 Frozen decision rule
+
+Priority F passes only if all of the following are true at the primary timestep and the complete decision remains true at every declared robustness timestep:
+
+1. the deliberately impoverished baseline binary observation is identical across all six classes within `1e-12`;
+2. TS0 has response rank `2` and absolute determinant at least `0.5`;
+3. TS1 has response rank `1`, determinant magnitude at most `1e-12`, and exact declared pair constraint within `1e-12`;
+4. TS2, after reset to `x=-0.5`, remains in the negative source-off basin with final `x <= -0.90`;
+5. the monostable control under the same reset/horizon returns to the positive attractor with final `x >= +0.90`;
+6. TS3 flips its binary label under threshold change while physical plant delta is at most `1e-12`;
+7. TS4 gives opposite labels for the same current `x=0` under the two histories while memory reset changes the physical plant by at most `1e-12`;
+8. TS5 flips only the observer convention label while physical plant delta is at most `1e-12`;
+9. every TS0-TS5 class has a unique frozen intervention signature and the fixed classifier maps every class to its own registered label;
+10. items 1-9 all remain true independently at `dt = 0.004`, `0.002`, and `0.001`.
+
+A scientifically interpretable failure is a retained negative result. The fixture may not be rescued by changing the registered class set, coefficient, reset, horizon, threshold, relay width, response matrices, classifier order, or pass thresholds after inspection.
+
+### 25.8 Independent analytic checks frozen before execution
+
+The following checks are independent of the eventual numerical output:
+
+1. TS0 has determinant `1` and rank `2` exactly.
+2. TS1 has determinant `0`, rank `1`, and every response lies on the one-dimensional constraint `u+v=0`.
+3. For `dx/dt=x-x^3`, the equilibria are `-1, 0, +1`; linearization gives stable `±1` and unstable `0`. Therefore the continuous trajectory starting at `x=-0.5` remains negative and approaches `-1`.
+4. For `dx/dt=1-x`, the exact solution from `x(0)=-0.5` approaches `+1`; after eight time units it must be well above the frozen `+0.90` threshold.
+5. TS3 changes only the observation threshold, so plant delta is exactly zero by construction.
+6. TS4 changes only retained history/memory at matched current `x`, so physical plant delta under the declared memory reset is exactly zero.
+7. TS5 changes only the observer convention, so physical plant delta is exactly zero.
+
+A formal proof assistant is not used because the decision-relevant identities are elementary linear algebra and one-dimensional ODE stability. The finite-step TS2 integration is audited separately across the frozen timestep set.
+
+### 25.9 Relationship to existing Lineum evidence
+
+This fixture is motivated by the older open Two-Spirits registry in `research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md`, which preserved multiple mechanism classes rather than equating binary language with two substances. Priority F narrows that registry into one known-answer intervention harness.
+
+Current Lineum implementation is not reclassified by this preregistration. In particular:
+
+```text
+Lineum_has_two_independent_opposite_fields = not_established
+Lineum_has_one_bistable_opposite_state = not_established
+Lineum_binary_behavior_is_projection_only = not_established
+Lineum_binary_behavior_is_history_only = not_established
+Lineum_binary_behavior_is_observer_convention_only = not_established
+```
+
+The reduction-first consequence is methodological only: a second field or substance is not justified merely because an observable has two stable-looking labels. Independent state directions must survive intervention and model comparison against lower-ontology alternatives.
+
+### 25.10 Real-physics and historical boundary
+
+Bistability, hysteresis, constrained modes, and observer-dependent thresholding are standard mechanism classes across nonlinear systems and measurement theory. Their existence in other domains is used only as a sanity check that `two observed states` does not logically imply `two substances`.
+
+No external physical system is used as evidence that Lineum implements TS0-TS5. The Qumran Two Spirits teaching remains a historical/religious source for the structural question only. It is not treated as a physics manual, and a Priority-F pass would not constitute historical transmission or physical correspondence.
+
+### 25.11 Execution boundary
+
+The official run must execute the exact Git blob
+
+```text
+b93c0bf65a576b38a13a6f052661b3972c6bc3a7
+```
+
+only after this Section 25 is published on `develop`. The executable must be re-fetched from that committed state before execution. No uncommitted local edit is admissible.
+
+A pass can establish only:
+
+```text
+known_answer_binary_mechanism_discriminator = supported_within_tested_domain
+binary_appearance_alone_identifies_two_substances = no
+registered_mechanisms_are_intervention_distinguishable = yes_in_declared_toy_if_passed
+```
+
+It cannot establish:
+
+```text
+Lineum_requires_two_fields = not_established
+Lineum_requires_one_bistable_field = not_established
+Two_Spirits_encodes_physics = not_established
+metaphysical_dualism_is_physical = not_established
+```
+
+If any frozen scientific criterion fails, the negative result must be committed before selecting or tuning a replacement mechanism, and the repository owner-intuition failure gate opens before further causal redesign.
