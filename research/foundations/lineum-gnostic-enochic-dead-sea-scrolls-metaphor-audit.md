@@ -1440,3 +1440,433 @@ physical_soul_or_spirit = not_established
 ```
 
 Priority A therefore closes only as a known-answer observer fixture. The next ranked programme step remains Priority B: compare one-way generation, finite stock, reciprocal back-reaction, explicit return channel, and matched damping under a frozen source-and-balance ledger.
+
+## 18. Priority B preregistration — finite-source, reciprocal, and return-path known-answer fixture
+
+**Evidence status:** `[toy][preregistered]`; no Priority-B numerical outcome had been inspected when this section was first published.
+
+### 18.1 Question and permitted conclusion
+
+Can a small accounting-and-intervention fixture distinguish five source architectures that may produce superficially similar bounded activity: an externally supplied one-way pump, a finite source stock, finite stock with reciprocal back-reaction, an explicit receiving store with a return path, and an externally supplied control with matched irreversible damping?
+
+This checkpoint validates only whether the declared observables distinguish these known-answer toy architectures. It does not test the active Lineum equation, prove that Lineum has a hidden reservoir, establish a physical energy source, validate Sophia or Enochic storehouses as physics, or establish a soul/spirit mechanism.
+
+All variables below are dimensionless bookkeeping variables in arbitrary resource and time units. `E` means active stored resource/activity only inside this toy. It must not be read as a measured physical energy without a later dimensional mapping and empirical test.
+
+### 18.2 Frozen parameters and common schedule
+
+```text
+P = 1.0                    requested source rate
+gamma = 0.5                ordinary activity-loss rate
+S0 = 20.0                  finite source stock
+beta = 0.5                 reciprocal source-suppression strength
+eta = 0.8                  reversible capture fraction
+k_r = 1.0                  receiver return rate
+gamma_match = (1-eta)*gamma = 0.1
+T = 40.0
+t_off = 20.0
+primary dt = 0.002
+robustness dt values = 0.004, 0.002, 0.001
+randomness = none
+```
+
+The source gate is active for integer integration steps representing `0 <= t < 20` and exactly disabled thereafter. Explicit Euler integration is used. Finite-source flux is capped by the stock available in the current step, so the numerical scheme cannot intentionally withdraw more resource than remains.
+
+`gamma_match` is fixed analytically from the irreversible fraction of fixture D before outcomes are inspected. It is not fitted to make trajectories agree.
+
+### 18.3 Frozen mechanism classes
+
+**A — externally supplied one-way pump**
+
+```text
+u = gate * P
+dE/dt = u - gamma*E
+dD/dt = gamma*E
+dC_ext/dt = u
+```
+
+There is no finite source stock in A. The correct open-system ledger includes cumulative external input `C_ext`.
+
+**B — finite stock**
+
+```text
+u = min(gate*P, S/dt)
+dS/dt = -u
+dE/dt = u - gamma*E
+dD/dt = gamma*E
+```
+
+**C — finite stock with reciprocal back-reaction**
+
+```text
+u_request = gate * P/(1 + beta*E)
+u = min(u_request, S/dt)
+dS/dt = -u
+dE/dt = u - gamma*E
+dD/dt = gamma*E
+```
+
+This is deliberately minimal back-reaction: activity suppresses subsequent source draw rather than merely changing a downstream damping coefficient.
+
+**D — finite stock, explicit receiving store, and return path**
+
+```text
+u = min(gate*P, S/dt)
+capture = eta*gamma*E
+loss = (1-eta)*gamma*E
+return = min(k_r*R, R/dt)
+
+dS/dt = -u
+dE/dt = u + return - capture - loss
+dR/dt = capture - return
+dD/dt = loss
+```
+
+At `t_off`, the exact same D state is copied into a preregistered return-block ablation. The control changes only `k_r` from `1.0` to `0.0` after source removal; it does not erase `R`, refill `S`, or alter `E` or `D`.
+
+**E — externally supplied matched-damping control**
+
+```text
+u = gate * P
+dE/dt = u - gamma_match*E
+dD/dt = gamma_match*E
+dC_ext/dt = u
+```
+
+E is intentionally open. It tests whether bounded and long-lived activity can be manufactured without finite-source closure simply by reducing irreversible loss.
+
+### 18.4 Frozen ledgers and independent analytic checks
+
+The continuous equations imply these identities directly:
+
+```text
+A and E: d(E + D - C_ext)/dt = 0
+B and C: d(S + E + D)/dt = 0
+D:       d(S + E + R + D)/dt = 0
+```
+
+Therefore A and E are not described as violating conservation when their external source is included. Their distinguishing feature is that the model contains no finite source stock that can deplete.
+
+For C, while stock is not limiting,
+
+```text
+du_request/dE = -P*beta/(1 + beta*E)^2 < 0,
+```
+
+so the source draw has a genuine reciprocal dependence on the generated activity.
+
+A and B obey the same `E` equation until B becomes stock-limited. Therefore an observer that sees only `E(t)` before depletion cannot, in principle, identify whether the source is external or finite.
+
+For E under a constant active gate from `E(0)=0`, the exact continuous solution is bounded above by
+
+```text
+E <= P/gamma_match = 10.
+```
+
+Thus boundedness alone is predeclared as non-identifying evidence for finite-source closure.
+
+These algebraic identities are the independent check for the accounting topology. A formal proof assistant is not used because direct cancellation is the cheaper exact discriminator; finite-precision behavior is checked numerically and separately.
+
+### 18.5 Frozen observables
+
+For each applicable fixture record:
+
+- `E(t_off)` and maximum `E`;
+- `S(t_off)` and minimum `S` for finite-source fixtures;
+- first and last active source rate;
+- cumulative external input for A/E or source depletion for B/C/D;
+- maximum absolute ledger residual over the run;
+- left-rectangle post-source area `AUC_off = integral_[20,40] E(t) dt`;
+- cumulative return flux for D;
+- maximum pre-depletion trajectory difference `max |E_A-E_B|` during the source-on interval;
+- D post-source `AUC_off` with return enabled versus the state-matched `k_r=0` return-block ablation.
+
+### 18.6 Frozen decision rule
+
+Let the absolute ledger tolerance be `1e-10*S0 = 2e-9`. Priority B passes the known-answer source-architecture fixture only if every item below is true at the primary timestep and the complete boolean decision remains true independently at `dt = 0.004`, `0.002`, and `0.001`:
+
+1. B, C, D, and the D return-block control each have maximum closed-ledger residual `<= 2e-9`.
+2. A and E each have maximum open-ledger residual `<= 2e-9` when `C_ext` is included; neither is re-labelled closed merely because this accounting identity holds.
+3. B has depleted at least `99%` of `S0` by `t_off`.
+4. C retains at least `20%` of `S0` at `t_off`, and its last active source rate is at most `0.80*P`.
+5. D has positive post-source return flux and its post-source `AUC_off` exceeds the state-matched return-block control by more than `1e-6`.
+6. A and B have maximum source-on `E` trajectory difference `<= 1e-10`, demonstrating that the visible activity alone can be non-identifying before depletion.
+7. E remains below the analytic constant-source bound `P/gamma_match + 1e-6` while cumulative external input is positive; this is a negative/confound control, not evidence of closure.
+8. B, C, D, and the D return-block control never drive finite stock below `-1e-12`.
+9. B, C, and D each retain nontrivial source-on activity with `E(t_off) >= 0.5`, so ledger closure is not achieved simply by extinguishing the active state.
+
+A failure of any decision item is a decision-relevant negative result for this frozen fixture. Thresholds, parameters, mechanism definitions, or observables may not be tuned after inspection to recover a pass. A technical transcription or syntax defect may be corrected only as a clearly documented execution amendment before a scientifically interpretable outcome is accepted.
+
+### 18.7 Frozen executable reference model
+
+The official run uses only the Python standard library because the repository's NumPy `<2.0` requirement does not match the currently available runtime. The code below is the frozen executable reference for this checkpoint.
+
+```python
+import json
+import platform
+import sys
+
+P = 1.0
+GAMMA = 0.5
+S0 = 20.0
+BETA = 0.5
+ETA = 0.8
+KR = 1.0
+GAMMA_MATCH = (1.0 - ETA) * GAMMA
+TOFF = 20.0
+T = 40.0
+DT_PRIMARY = 0.002
+DT_AUDIT = (0.004, 0.002, 0.001)
+LEDGER_TOL = 1e-10 * S0
+
+
+def open_fixture(dt, gamma):
+    n_off = int(round(TOFF / dt))
+    n_all = int(round(T / dt))
+    E = D = C = 0.0
+    max_E = 0.0
+    max_ledger = 0.0
+    auc_off = 0.0
+    pre_E = []
+    first_u = last_u = 0.0
+    E_toff = None
+    for n in range(n_all):
+        active = n < n_off
+        if n == n_off:
+            E_toff = E
+        if not active:
+            auc_off += E * dt
+        u = P if active else 0.0
+        if active:
+            if n == 0:
+                first_u = u
+            last_u = u
+        dE = u - gamma * E
+        dD = gamma * E
+        E += dt * dE
+        D += dt * dD
+        C += dt * u
+        if active:
+            pre_E.append(E)
+        max_E = max(max_E, E)
+        max_ledger = max(max_ledger, abs(E + D - C))
+    if E_toff is None:
+        E_toff = E
+    return {
+        "E_toff": E_toff,
+        "max_E": max_E,
+        "auc_off": auc_off,
+        "C_final": C,
+        "first_u": first_u,
+        "last_u": last_u,
+        "max_ledger": max_ledger,
+        "pre_E": pre_E,
+    }
+
+
+def finite_fixture(dt, reciprocal=False):
+    n_off = int(round(TOFF / dt))
+    n_all = int(round(T / dt))
+    S, E, D = S0, 0.0, 0.0
+    max_E = 0.0
+    min_S = S
+    max_ledger = 0.0
+    auc_off = 0.0
+    pre_E = []
+    first_u = last_u = 0.0
+    E_toff = S_toff = None
+    for n in range(n_all):
+        active = n < n_off
+        if n == n_off:
+            E_toff, S_toff = E, S
+        if not active:
+            auc_off += E * dt
+        request = 0.0
+        if active:
+            request = P / (1.0 + BETA * E) if reciprocal else P
+        u = min(request, max(0.0, S) / dt) if active else 0.0
+        if active:
+            if n == 0:
+                first_u = u
+            last_u = u
+        dS = -u
+        dE = u - GAMMA * E
+        dD = GAMMA * E
+        S += dt * dS
+        E += dt * dE
+        D += dt * dD
+        if active:
+            pre_E.append(E)
+        max_E = max(max_E, E)
+        min_S = min(min_S, S)
+        max_ledger = max(max_ledger, abs(S + E + D - S0))
+    if E_toff is None:
+        E_toff, S_toff = E, S
+    return {
+        "E_toff": E_toff,
+        "S_toff": S_toff,
+        "max_E": max_E,
+        "min_S": min_S,
+        "auc_off": auc_off,
+        "depletion": S0 - S,
+        "first_u": first_u,
+        "last_u": last_u,
+        "max_ledger": max_ledger,
+        "pre_E": pre_E,
+    }
+
+
+def receiver_source_on(dt):
+    n_off = int(round(TOFF / dt))
+    S, E, R, D = S0, 0.0, 0.0, 0.0
+    max_E = 0.0
+    min_S = S
+    max_ledger = 0.0
+    cum_return = 0.0
+    first_u = last_u = 0.0
+    for n in range(n_off):
+        u = min(P, max(0.0, S) / dt)
+        if n == 0:
+            first_u = u
+        last_u = u
+        capture = ETA * GAMMA * E
+        loss = (1.0 - ETA) * GAMMA * E
+        ret = min(KR * R, max(0.0, R) / dt)
+        S += dt * (-u)
+        E += dt * (u + ret - capture - loss)
+        R += dt * (capture - ret)
+        D += dt * loss
+        cum_return += dt * ret
+        max_E = max(max_E, E)
+        min_S = min(min_S, S)
+        max_ledger = max(max_ledger, abs(S + E + R + D - S0))
+    return {
+        "state": (S, E, R, D),
+        "max_E": max_E,
+        "min_S": min_S,
+        "max_ledger": max_ledger,
+        "cum_return_on": cum_return,
+        "first_u": first_u,
+        "last_u": last_u,
+    }
+
+
+def receiver_source_off(dt, initial_state, k_return):
+    n_off = int(round((T - TOFF) / dt))
+    S, E, R, D = initial_state
+    max_E = E
+    min_S = S
+    max_ledger = abs(S + E + R + D - S0)
+    auc_off = 0.0
+    cum_return = 0.0
+    for _ in range(n_off):
+        auc_off += E * dt
+        capture = ETA * GAMMA * E
+        loss = (1.0 - ETA) * GAMMA * E
+        ret = min(k_return * R, max(0.0, R) / dt)
+        E += dt * (ret - capture - loss)
+        R += dt * (capture - ret)
+        D += dt * loss
+        cum_return += dt * ret
+        max_E = max(max_E, E)
+        min_S = min(min_S, S)
+        max_ledger = max(max_ledger, abs(S + E + R + D - S0))
+    return {
+        "final_state": (S, E, R, D),
+        "max_E": max_E,
+        "min_S": min_S,
+        "max_ledger": max_ledger,
+        "auc_off": auc_off,
+        "cum_return_off": cum_return,
+    }
+
+
+def evaluate(dt):
+    A = open_fixture(dt, GAMMA)
+    B = finite_fixture(dt, reciprocal=False)
+    C = finite_fixture(dt, reciprocal=True)
+    D_on = receiver_source_on(dt)
+    D_full = receiver_source_off(dt, D_on["state"], KR)
+    D_block = receiver_source_off(dt, D_on["state"], 0.0)
+    E = open_fixture(dt, GAMMA_MATCH)
+
+    max_ab = max(abs(a - b) for a, b in zip(A["pre_E"], B["pre_E"]))
+    S_D_toff, E_D_toff, R_D_toff, D_D_toff = D_on["state"]
+    B_depletion_fraction = (S0 - B["S_toff"]) / S0
+
+    checks = {
+        "closed_ledgers": max(
+            B["max_ledger"], C["max_ledger"],
+            D_on["max_ledger"], D_full["max_ledger"], D_block["max_ledger"]
+        ) <= LEDGER_TOL,
+        "open_ledgers_with_external_input": max(A["max_ledger"], E["max_ledger"]) <= LEDGER_TOL,
+        "B_depletes_by_gate_off": B_depletion_fraction >= 0.99,
+        "C_backreacts_and_retains_stock": C["S_toff"] >= 0.20 * S0 and C["last_u"] <= 0.80 * P,
+        "D_return_is_causal": D_full["cum_return_off"] > 0.0 and D_full["auc_off"] > D_block["auc_off"] + 1e-6,
+        "A_B_visible_activity_nonidentifying": max_ab <= 1e-10,
+        "matched_damping_open_control_bounded": E["max_E"] <= P / GAMMA_MATCH + 1e-6 and E["C_final"] > 0.0,
+        "finite_stocks_nonnegative": min(B["min_S"], C["min_S"], D_on["min_S"], D_full["min_S"], D_block["min_S"]) >= -1e-12,
+        "finite_variants_keep_activity": min(B["E_toff"], C["E_toff"], E_D_toff) >= 0.5,
+    }
+
+    return {
+        "dt": dt,
+        "A": {k: v for k, v in A.items() if k != "pre_E"},
+        "B": {k: v for k, v in B.items() if k != "pre_E"},
+        "C": {k: v for k, v in C.items() if k != "pre_E"},
+        "D": {
+            "S_toff": S_D_toff,
+            "E_toff": E_D_toff,
+            "R_toff": R_D_toff,
+            "D_toff": D_D_toff,
+            "max_ledger": max(D_on["max_ledger"], D_full["max_ledger"]),
+            "min_S": min(D_on["min_S"], D_full["min_S"]),
+            "cum_return_on": D_on["cum_return_on"],
+            "cum_return_off": D_full["cum_return_off"],
+            "auc_off": D_full["auc_off"],
+            "blocked_auc_off": D_block["auc_off"],
+            "blocked_max_ledger": D_block["max_ledger"],
+        },
+        "E_matched_open": {k: v for k, v in E.items() if k != "pre_E"},
+        "max_preoff_abs_E_A_minus_B": max_ab,
+        "B_depletion_fraction": B_depletion_fraction,
+        "checks": checks,
+        "pass_without_dt_audit": all(checks.values()),
+    }
+
+
+primary = evaluate(DT_PRIMARY)
+audit = {str(dt): evaluate(dt) for dt in DT_AUDIT}
+overall_pass = primary["pass_without_dt_audit"] and all(
+    row["pass_without_dt_audit"] for row in audit.values()
+)
+
+output = {
+    "python": sys.version.split()[0],
+    "platform": platform.platform(),
+    "parameters": {
+        "P": P,
+        "gamma": GAMMA,
+        "S0": S0,
+        "beta": BETA,
+        "eta": ETA,
+        "k_r": KR,
+        "gamma_match": GAMMA_MATCH,
+        "t_off": TOFF,
+        "T": T,
+        "ledger_tolerance": LEDGER_TOL,
+    },
+    "primary": primary,
+    "dt_audit": audit,
+    "overall_pass": overall_pass,
+}
+print(json.dumps(output, indent=2, sort_keys=True))
+```
+
+### 18.8 Interpretation boundary before execution
+
+A pass would establish only that the frozen bookkeeping observables and interventions correctly distinguish the declared known-answer source topologies. It would justify using the same accounting logic as a later screening tool; it would not show that any current Lineum source actually has those properties.
+
+A failure would mean this fixture, observer, threshold set, or toy architecture is not adequate for its declared discriminating role. Under the repository negative-result gate, such a scientifically interpretable failure must be preserved rather than rescued by parameter tuning.
+
+The current active Core implementation remains unchanged by this preregistration. No new field, reservoir, equation, production module, public API, whitepaper claim, or physical correspondence is introduced. The real-universe layer is deliberately not invoked as evidence here: finite reservoirs, feedback, recirculation, and open-system accounting are generic system architectures, while any claim that Lineum or nature implements this particular toy topology remains untested.
