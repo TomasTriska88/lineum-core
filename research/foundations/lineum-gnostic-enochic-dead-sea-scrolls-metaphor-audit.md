@@ -2712,3 +2712,197 @@ physical_afterlife_or_consciousness = not_established
 The methodological gain is stricter than `something survived after the body disappeared`. A future Lineum remnant claim must distinguish at least passive wake, environmental memory, observer memory, causal residual, and autonomous descendant by state-matched interventions or transplants with appropriate nulls. Persistence alone is explicitly non-identifying.
 
 Priority C therefore closes only as a passed known-answer intervention fixture. The next ranked standalone-programme step is Priority D: preregister a known-answer collective-identity fixture that tests whether a protocol can reconstruct specific invariant relations after member turnover, rather than merely preserving density, shape, or synchronization.
+
+## 22. Priority D preregistration — complete member-turnover relational identity fixture
+
+**Evidence status:** `[toy][preregistered]`; no numerical outcome from the Priority-D extension below has been inspected at the time of this preregistration. This section supersedes the older `next_action` metadata only for the current checkpoint; no earlier result or threshold is changed.
+
+### 22.1 Historical reconciliation before the new test
+
+Priority D is not starting from zero. The repository already contains `research/foundations/lineum-collective-member-turnover-protocol-fixture.md`, whose preregistration was published in commit `c4d8b107454ee363bf563d425fe3659dc6a4817d`. That older known-answer fixture replaced four of sixteen agents (`25%` turnover), used twelve seeds and three timesteps, and reported `72/72` dynamic-protocol positives accepted and `180/180` registered controls rejected across `252` confirmatory trajectories.
+
+That historical result is retained as evidence rather than duplicated or erased. Two limitations prevent treating it as the final Priority-D checkpoint here:
+
+1. only `25%` of the members were replaced, so constituent continuity remained substantial;
+2. the recorded execution used NumPy `2.3.5`, while the repository currently requires `numpy>=1.24,<2.0.0`, so the old numerical environment is not treated as dependency-supported under the current rules.
+
+The older report also states its own stronger next discriminator: replace the globally imposed protocol with a more local rule. The present extension does not yet solve that locality problem. It asks a cheaper prior question: does the declared relational identity still reconstruct after **complete** constituent replacement, and can the observer reject several additional look-alikes without NumPy?
+
+### 22.2 Question and permitted conclusion
+
+Can a frozen relational observer distinguish a collective whose declared relation pattern is actively reconstructed after every member is replaced from controls that preserve only member labels, the same unlabeled value multiset, perfect synchronization, no protocol, or externally imposed absolute-template repair?
+
+A pass would validate only this known-answer measurement/intervention logic. It would not establish a Lineum particle, organism, consciousness, social identity, soul, covenant physics, or an emergent local repair protocol in the current Core equation.
+
+### 22.3 Frozen state and relational protocol
+
+The toy has eight externally supplied roles. Each role has a scalar state `y_i` and a separate member identifier. The centered target-role vector is fixed as
+
+```text
+r = (-1.5, -1.0, -0.625, -0.25, 0.125, 0.5, 0.875, 1.875)
+```
+
+with exact sum zero. Member identifiers are bookkeeping labels only and never enter the dynamics.
+
+The active internal relational protocol is
+
+```text
+dy_i/dt = -K * ((y_i - mean(y)) - r_i)
+K = 3.0.
+```
+
+Because the law acts on deviations from the current collective mean, adding the same global offset to every `y_i` must not change the relational error or recovery. The role indices and target relations are supplied by construction; autonomous discovery of roles is explicitly not tested.
+
+### 22.4 Frozen turnover schedule and integration
+
+At each turnover event, one role is replaced by a new unique member identifier and its scalar state is set to the current collective mean. The remaining states are not reset. The collective then evolves for a fixed settling interval `tau = 1.5` before the next replacement.
+
+Two deterministic complete-turnover orders are frozen:
+
+```text
+order A = (2, 5, 0, 7, 3, 6, 1, 4)
+order B = reverse(order A)
+```
+
+After all eight events, none of the original member identifiers remains.
+
+Numerical schedule:
+
+```text
+integration = explicit Euler
+primary dt = 0.002
+robustness dt = 0.004, 0.002, 0.001
+randomness = none
+external Python packages = none
+```
+
+No parameter, order, threshold, or comparison class may be changed after the official output is inspected.
+
+### 22.5 Frozen observables
+
+Primary relational error is
+
+```text
+E_rel = RMS_{i<j} [ ((y_i-y_j) - (r_i-r_j)) ]
+        / RMS_{i<j} [ r_i-r_j ].
+```
+
+This removes common translation and tests role relations rather than absolute position.
+
+For every turnover event define
+
+```text
+R_rel = clip((E_before - E_after) / E_before, 0, 1).
+```
+
+Also record:
+
+- median and minimum `R_rel` across all eight replacements;
+- final `E_rel` after complete turnover;
+- Jaccard overlap between initial and final member-identifier sets;
+- maximum collective-mean drift during relational settling;
+- an unlabeled `bag_error`, obtained by centering and sorting the scalar values before comparison with the sorted target multiset;
+- source-on and fresh source-off recovery of the absolute-template control;
+- invariance deltas under member-label reassignment and common scalar offset.
+
+### 22.6 Frozen adversarial controls
+
+1. **Protocol removed:** perform the same complete turnover schedules with `K=0` after each replacement.
+2. **Member-label reassignment:** reverse only the starting member identifiers while leaving every physical/role state and the protocol unchanged. Identity classification must not depend on those names.
+3. **Same parts, wrong roles:** assign the exact target scalar multiset to the opposite roles by reversing the vector. The centered sorted bag is then identical to the target while the declared role relations are wrong.
+4. **Perfect common clock:** set all eight scalar values equal. Treat this as a deliberately perfect synchronization control with phase-order parameter `1`; relational identity must still reject it.
+5. **External absolute-template controller:** after a fresh replacement, use `dy_i/dt=-K(y_i-r_i)` while the external controller is on. A separate fresh replacement is then tested with the controller completely off (`K=0`). Driven repair may succeed, but source-off recovery must fail.
+6. **Global-offset control:** add the same `7.25` offset to every member after a fresh replacement. `E_rel` must remain unchanged within numerical tolerance.
+
+### 22.7 Frozen decision rule
+
+Priority D passes this stronger known-answer extension only if every item below is true at the primary timestep and the complete boolean decision remains true independently at all three declared timesteps:
+
+1. both active complete-turnover orders have median `R_rel >= 0.985` and final `E_rel <= 0.02`;
+2. both active orders finish with member-set Jaccard overlap exactly `0.0` relative to the initial members;
+3. both protocol-removed orders have median `R_rel <= 0.05`;
+4. reversing only member identifiers changes the positive dynamical summary by at most `1e-12`;
+5. the same-parts/wrong-roles control has centered sorted `bag_error <= 1e-12` but `E_rel >= 1.5`;
+6. the common-clock control has phase order `1.0` within `1e-12` but `E_rel >= 0.90`;
+7. the external absolute-template control has source-on recovery `>= 0.985`, while its separate fresh source-off challenge has recovery `<= 0.05`;
+8. adding a common global offset changes `E_rel` by at most `1e-12`;
+9. items 1–8 all remain true independently at `dt = 0.004`, `0.002`, and `0.001`.
+
+A scientifically interpretable failure is a retained negative result. The fixture may not be rescued by changing `K`, `tau`, the reference vector, turnover order, threshold, or observer after inspection.
+
+### 22.8 Independent analytic checks frozen before execution
+
+Let
+
+```text
+z_i = (y_i - mean(y)) - r_i.
+```
+
+Because `sum(r_i)=0`, the declared relational dynamics give
+
+```text
+d mean(y)/dt = 0
+dz_i/dt = -K z_i.
+```
+
+Therefore, in the exact continuous toy model, every relational-error component contracts by `exp(-K*tau)`, so a single settling window has exact recovery
+
+```text
+1 - exp(-3*1.5) = 0.9888910034617577.
+```
+
+The frozen `0.985` recovery threshold is therefore chosen before numerical outcome inspection and sits below the analytic continuous value rather than being fitted to a run.
+
+Additional exact checks:
+
+- with `K=0`, no relational relaxation occurs and `R_rel=0`;
+- if all `y_i` are equal, `E_rel=1` exactly even though the declared common-clock phase order is `1`;
+- a common additive offset cancels from every pairwise relation;
+- eight unique replacements imply zero initial/final member overlap by construction;
+- reversing the target scalar multiset preserves the unlabeled centered bag exactly while changing role assignment.
+
+For explicit Euler, the centered relational error after one integration step is multiplied by `1-K*dt`; the timestep audit therefore has an independent exact discrete reference as well.
+
+### 22.9 Relationship to existing Lineum evidence
+
+This checkpoint does not alter current Core implementation evidence. The existing collective-vortex identity preregistration still records that Core has no bird agents, neighbor-list flock law, explicit particle-identity variable, or collective repair controller. Priority D therefore validates an observer on a constructed known-answer system only.
+
+The historical turnover fixture remains useful supporting evidence, but its global-protocol design, partial turnover, and unsupported NumPy runtime prevent promotion to an actual Lineum identity mechanism. If this complete-turnover extension passes, the next mechanism-level discriminator in this lane remains locality: replace the globally supplied role protocol with a strictly local rule and test whether the same relational invariants reconstruct without an oracle-like global template.
+
+### 22.10 Cross-disciplinary counterexample intake
+
+A bounded public-literature search was used only to check that component turnover and higher-level persistence are not unique to one domain. No external code, dataset, figure, equation, or protected expression is incorporated.
+
+- Capdevila et al., *Time-resolved fate mapping identifies the intestinal upper crypt zone as an origin of Lgr5+ crypt base columnar cells*, Cell 187 (2024), DOI `10.1016/j.cell.2024.05.001`: tissue maintenance and lineage turnover provide a biological counterexample to equating higher-level persistence with permanent constituent identity.
+- Liu et al., *Distributed Model Predictive Cross-Dimensional Formation Control for Heterogeneous Multiagent Systems*, IEEE Access 13 (2025), DOI `10.1109/ACCESS.2025.3555976`: distributed formation control provides an engineering comparison class in which maintained collective organization does not by itself imply organism-like identity.
+- Yeeles et al., *Functional redundancy compensates for decline of dominant ant species*, Nature Ecology & Evolution 9 (2025), DOI `10.1038/s41559-025-02690-y`: ecological functional persistence under composition change is another reminder that preserved function, preserved geometry, and preserved identity are distinct claims.
+
+These papers are factual comparison sources only. Similarity to the toy does not establish shared mechanism or physical correspondence with Lineum.
+
+### 22.11 Frozen executable artifact
+
+The exact standard-library executable for this preregistration is stored as
+
+```text
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-d.py
+```
+
+with Git blob SHA
+
+```text
+599f974ceac064ba4c15a30d8f5183d9a31babf0
+```
+
+and source SHA-256
+
+```text
+12e7878c3a74df5843aa7d92c8d6e62c88dcc3a439ae6258536d7d28f202e0a5
+```
+
+The companion file is executable evidence, not a second narrative report. The Markdown section above is the authoritative preregistration of the question, assumptions, controls, observables, thresholds, interpretation boundary, and relationship to prior evidence.
+
+### 22.12 Execution boundary
+
+This report section and the exact companion executable must be committed before the first official numerical run. The official outcome must use the committed bytes unchanged. Only a pure syntax/transcription defect that prevents the declared equations from running may be corrected before accepting a scientifically interpretable outcome, and such a correction must itself be published first.
+
+A pass can establish only that the declared relational observer separates these known-answer classes even after complete constituent replacement. It cannot establish that current Lineum contains the tested protocol, that identity is metaphysically preserved, or that the Community Rule encodes a physical law. A failure opens the repository negative-result and owner-intuition gate before any replacement mechanism is selected.
