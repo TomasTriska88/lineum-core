@@ -1,0 +1,53 @@
+{
+  "artifact": "Priority E decision record",
+  "evidence_status": "[toy][measured][known-answer]",
+  "official_outcome": "PASS",
+  "official_rerun_after_integrity_amendment": true,
+  "executable": {
+    "path": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-e.py",
+    "git_blob_sha": "9eadbb00dbb80bbdc4ee1a731dc03cc340ef5a44",
+    "sha256_corrected": "0fc07cdd91ad59af9269effde0b48a82b4ceaa368f19ac8ae4b8d2b0d2c21a2b"
+  },
+  "preregistration_commit": "948ca563120faf3e6061cc082ea20f60f95d0786",
+  "integrity_amendment_commit": "7b0d485ba6ac84f0c55691925ddbae3088881db8",
+  "raw_output_commit": "b2ad97e87a1c46ab7322277b77befbeccadd21f3",
+  "stdout_sha256": "6a9d1ef90dadd0ec2d10d4105c57a71ad36e43a0e98e42064446ec3e8b4737e4",
+  "frozen_checks": {
+    "history_resolves_snapshot_collision": true,
+    "relation_resolves_history_collision": true,
+    "source_resolves_relational_collision": true,
+    "generative_model_resolves_source_aware_collision": true,
+    "temporal_order_matters_for_model_reconstruction": true,
+    "noninjective_clipping_remains_nonidentifying": true,
+    "global_translation_is_nonidentifying": true,
+    "nested_minimal_levels_match_preregistration": true
+  },
+  "decision_metrics": {
+    "snapshot_collision_future_gap": 2.0,
+    "snapshot_collision_minimal_resolution": "finite_history",
+    "history_collision_future_gap": 2.0,
+    "history_collision_minimal_resolution": "relational",
+    "relational_collision_future_gap": 1.0,
+    "relational_collision_minimal_resolution": "source_aware",
+    "source_aware_collision_future_gap": 1.0,
+    "source_aware_collision_minimal_resolution": "generative",
+    "generative_a_max_error": 0.0,
+    "generative_prediction_max_error": 0.0,
+    "reversed_calibration_prediction_error_each_case": 1.5,
+    "clipping_true_future_gap": 0.5,
+    "clipping_reconstructed_a_values": [0.25, 0.25],
+    "clipping_deterministic_predictor_minimax_error_lower_bound": 0.25,
+    "translation_future_gap_delta": 0.0,
+    "translation_a_hat_delta": 0.0,
+    "translation_prediction_shift_error": 0.0
+  },
+  "what_was_observed": "Each deliberately nested collision was resolved first at its preregistered information level: finite history, then relation, then source/interface information, then an inferred transition law. Reversing calibration time order broke the held-out generative prediction. A many-to-one clipping control remained non-identifying even at the generative level.",
+  "cautious_interpretation": "In this known-answer toy, apparent ontological ambiguity can disappear when the observer receives the causally relevant missing information, but no observer can reconstruct distinctions that its measurement map has actually destroyed without additional evidence.",
+  "ancient_text_interpretation_boundary": "The Gospel of Truth ignorance motif and the debated 4QInstruction raz nihyeh motif remain hypothesis generators only. This fixture does not establish that gnosis is state estimation, that raz nihyeh denotes a modern generative model, or that ancient authors encoded Lineum physics.",
+  "current_lineum_implementation": "not executed by Priority E",
+  "lineum_application": "not_yet",
+  "physical_correspondence": "not_established",
+  "new_field_required": "not_established",
+  "negative_result_preserved": "The clipping control is an intentional negative identifiability result: two distinct true futures remain observationally indistinguishable after information-destroying clipping.",
+  "next_ranked_step": "Priority F: preregister a dual-field versus bistable-single-field intervention discriminator, while retaining all current Core and real-physics boundaries."
+}
