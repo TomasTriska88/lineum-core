@@ -1,0 +1,90 @@
+{
+  "schema": "lineum-b4-q2-ledger-neutral-control-protocol/1",
+  "stage": "Q2-PV1-B",
+  "question": "Q2 only",
+  "status": "frozen_before_official_outcome",
+  "source_binding": {
+    "active_report_version": "0.23.0",
+    "active_report_git_blob": "4f4759d629c2c0e9d1b57ff98cdff398340e9302",
+    "canonical_localized_runner_git_blob": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "q2_pv1_runner_git_blob": "e3657119b855965b4fd622b3e94f08443a7c9107",
+    "q2_pv1_primary_git_blob": "7a7ce23471d51d9b2244256387934658b12e1f52",
+    "q2_pv1_successful_checker_git_blob": "c459e4a1f947aba55d01f8f30bc1aa6bae88076f",
+    "q2_pv1b_runner_candidate_git_blob": "cffa0cc87a070d6915606ab064ec3eee2d89a061",
+    "q2_pv1b_test_candidate_git_blob": "240867abf29db6c248ff9515fa1770482fe8d9ac"
+  },
+  "protocol": {
+    "grid_size": 32,
+    "primary_steps": 5000,
+    "recovery_steps": 1000,
+    "stencils": ["LAP4", "LAP8"],
+    "phi0_values": [0.0, 1.0],
+    "lanes": [
+      "baseline",
+      "no_hard_guards",
+      "no_linear_dissipation",
+      "no_explicit_tanh",
+      "no_interaction_denominator",
+      "no_mode_coupling",
+      "no_phi_cap"
+    ],
+    "case_count": 28,
+    "noise_disabled": true,
+    "canonical_branch": {
+      "inner_radius_max": 2.0,
+      "inner_factor": 1.5,
+      "annulus_radius_min": 3.0,
+      "annulus_radius_max": 5.0,
+      "annulus_factor": 0.5
+    },
+    "balanced_branch": {
+      "inner_radius_max": 2.0,
+      "inner_factor": 1.5,
+      "annulus_radius_min": 3.0,
+      "annulus_radius_max": 5.0,
+      "annulus_factor_formula": "sqrt(1 - 1.25 * E_inner / E_annulus)",
+      "unavailable_if": "E_annulus <= 0 or b_squared < 0 or non-finite",
+      "forbidden_repairs": [
+        "clipping b_squared",
+        "absolute-value rescue",
+        "coefficient tuning",
+        "alternate formula after outcome inspection"
+      ],
+      "phi_unchanged_at_perturbation": true,
+      "ledger_neutrality_tolerance": "1e-10 * max(1, abs(sum(|psi|^2) + sum(phi)))"
+    },
+    "recovery_observer": {
+      "psi_total_relative_error_max": 0.05,
+      "psi_radial_profile_l2_max": 0.10,
+      "half_energy_radius_absolute_error_max_cells": 1.0,
+      "center_displacement_max_cells": 0.5,
+      "phi_radial_profile_l2_max": 0.10,
+      "phi_stationarity_rule": "exact canonical localized-L1 one-sided tail slope rule",
+      "q2_admissibility_additions": [
+        "finite",
+        "reset-free",
+        "zero primary and recovery psi-cap contacts",
+        "zero primary and recovery phi-cap contacts"
+      ]
+    }
+  },
+  "decision_rules": {
+    "control_unavailable": "balanced factor does not exist under the frozen formula; case is retained explicitly and cannot be tuned away",
+    "balanced_rescues_q2_classification": "canonical branch is Q2-negative and balanced branch is Q2-admissible full recovery",
+    "balanced_breaks_q2_classification": "canonical branch is Q2-positive and balanced branch is Q2-negative",
+    "both_q2_positive": "both branches satisfy the unchanged Q2-admissibility gate",
+    "both_q2_negative": "neither branch satisfies the unchanged Q2-admissibility gate",
+    "technical_or_methodological_failure": "case count is not 28 or any available balanced perturbation fails the frozen ledger-neutrality tolerance",
+    "programme_meaning": "A rescue would show that perturbation-ledger mismatch materially confounded at least one frozen Q2 classification. No rescue would show that this specific perturbation confound does not explain the Q2 negative within the eligible frozen control domain. Neither outcome identifies a replacement mechanism or real physical energy."
+  },
+  "scope_exclusions": [
+    "no production Core equation change",
+    "no new field",
+    "no parameter tuning",
+    "no Q1 result change",
+    "no Q3 result change",
+    "no physical-energy claim",
+    "no TOLOG validation",
+    "no phase/interference mechanism selected by this control"
+  ]
+}
