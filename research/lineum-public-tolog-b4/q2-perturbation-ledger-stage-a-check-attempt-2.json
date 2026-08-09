@@ -1,0 +1,54 @@
+{
+  "schema": "lineum-b4-q2-perturbation-ledger-check-attempt/1",
+  "stage": "Q2-PV1-A-CHECK",
+  "attempt": 2,
+  "status": "technical_input_identity_failure",
+  "scientific_result_admissible": false,
+  "source_commit": "7f1557d9c5534c010a2aeb1a2bde983f5a317969",
+  "workflow_run_id": 31190134541,
+  "workflow_job_id": 92904557629,
+  "environment": {
+    "runner_os": "Ubuntu 24.04.4 LTS",
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1"
+  },
+  "pre_execution": {
+    "environment_check_passed": true,
+    "report_version_check_passed": true,
+    "report_blob": "a6efe160a9a4ebf1c60ef0af983ecd89445cdd1d",
+    "input_identity_check_passed": false,
+    "test_gate_executed": false,
+    "checker_executed": false
+  },
+  "failure": {
+    "category": "workflow_source_identity_constant_error",
+    "description": "The one-use repaired-checker workflow stopped during frozen input verification before tests or checker execution because two expected Git blob identities were transcribed incorrectly into the workflow.",
+    "checker_blob_expected_by_failed_workflow": "1dccd70d3c3bb67d3922c33b58f7e18c85f40ee2",
+    "checker_blob_actual_branch_reachable": "67b5982a832aa483f25d6ba0ce4066e9a26b71de",
+    "checker_test_blob_expected_by_failed_workflow": "c6a2eef798d7078172446f0c04cf36af81378d97",
+    "checker_test_blob_actual_branch_reachable": "3596fef3836c9bec078d7d3a6c4605e92c160957"
+  },
+  "cleanup": {
+    "one_use_workflows_removed": true,
+    "cleanup_commit": "c1dc181439def613e2ff3fc04ed05622bdecee33"
+  },
+  "interpretation": {
+    "technical_non_result": true,
+    "scientific_disagreement": false,
+    "q2_status_changed": false,
+    "primary_q2_pv1_result_changed": false,
+    "independent_verification_completed": false
+  },
+  "only_permitted_correction_before_attempt_3": {
+    "change_scope": "execution workflow source-identity constants only",
+    "checker_equations_change_allowed": false,
+    "checker_comparison_logic_change_allowed": false,
+    "checker_tests_change_allowed": false,
+    "primary_data_change_allowed": false,
+    "neutrality_threshold_change_allowed": false,
+    "case_set_change_allowed": false,
+    "required_checker_blob": "67b5982a832aa483f25d6ba0ce4066e9a26b71de",
+    "required_checker_test_blob": "3596fef3836c9bec078d7d3a6c4605e92c160957"
+  }
+}
