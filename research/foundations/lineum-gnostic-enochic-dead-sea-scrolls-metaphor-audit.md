@@ -121,7 +121,7 @@ Version 0.3.0 preserves the source-critical and programme-wide audit from 0.2.0 
 - the predeclared analytic gradient-flow energy-descent check;
 - post-run invariance and timestep-sensitivity audits that do not alter the frozen decision threshold;
 - the complete reproducer and sufficient machine-readable output directly in this standalone report;
-- a bounded conclusion that the observer separates only the declared toy fixtures and has not yet been applied to Lineum.
+- a bounded conclusion that the observer separates only the preregistered known-answer fixtures and has not yet been applied to Lineum.
 
 Version 0.2.0 preserves the programme-wide preregistration from 0.1.0 and adds:
 
@@ -3649,3 +3649,185 @@ metaphysical_dualism_is_physical = not_established
 ```
 
 If any frozen scientific criterion fails, the negative result must be committed before selecting or tuning a replacement mechanism, and the repository owner-intuition failure gate opens before further causal redesign.
+
+## 26. Priority F result — binary appearance versus causal mechanism discriminator
+
+**Evidence status:** `[toy][measured][numerics][known-answer]`; frozen binary-mechanism discriminator supported within the declared toy domain only.
+
+**Authoritative current status:** Priority F passed every preregistered criterion. The original Priority A–F known-answer sequence is therefore complete as a measurement and intervention toolkit only. No active Lineum equation, production module, public API, whitepaper claim, or physical ontology was changed or validated by this checkpoint.
+
+### 26.1 Chronology, execution, and integrity
+
+The chronology defect recorded in Section 25.1 remains part of the permanent history: the Priority-F executable was committed in `8b8b4bc05b9a78347cd8c34b0dc19b0aef87429f` one checkpoint before the Markdown preregistration. The defect was discovered before the program had ever been run. The full Section 25 preregistration was then published in commit `e55e5817a336220520cb459ece2a109a22bb8ab9`, the executable was re-read from that committed state, and only then was the first official run performed.
+
+No coefficient, timestep, reset value, threshold, relay width, response matrix, registered mechanism, classifier order, or pass criterion changed after outcome inspection.
+
+The official executable and output identities are:
+
+```text
+source path:
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-f.py
+
+source Git blob:
+b93c0bf65a576b38a13a6f052661b3972c6bc3a7
+
+source SHA-256:
+726915b00cb4f449b588c37df88e38e95af8083963596acf63b275e2f0b2adda
+
+official stdout SHA-256:
+881613d05959ea0386ba0022221d94014ca27f71016efdd0ecfd8c3d06504c90
+```
+
+The sufficient machine-readable decision record was retained before this narrative update in commit `f597cba4c9ac88924b2b50aebeb1f8b3a0f9a375` as:
+
+```text
+research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-f-output.json
+Git blob: 0cd2e15fe2cd4ac9bfb877621f6d7e30b690922e
+```
+
+### 26.2 Frozen decision outcome
+
+All nine scientific checks were `true` at the primary `dt = 0.002`, and the complete ten-item decision remained `PASS` independently at every preregistered timestep:
+
+```text
+dt = 0.004 -> PASS
+dt = 0.002 -> PASS
+dt = 0.001 -> PASS
+```
+
+Primary decision-relevant values:
+
+| Registered class/control | Primary result | Meaning inside this toy only |
+|---|---:|---|
+| Common impoverished baseline | maximum gap `0.0` | the binary appearance itself is non-identifying |
+| TS0 independent two-state | rank `2`, determinant `1.0` | two independently perturbable response directions |
+| TS1 constrained pair | rank `1`, determinant `0.0`, `u+v=0.0` | two coordinates but only one effective response direction |
+| TS2 scalar bistable | final `x=-0.9999998358439514` | one scalar state remains in the negative source-off basin |
+| Monostable control | final `x=0.9995008208829336` | same reset/horizon returns to the single positive attractor |
+| TS3 threshold projection | label `+1 -> -1`, plant delta `0.0` | binary label changes with no plant change |
+| TS4 history relay | same `x=0`, labels `+1/-1`, plant delta `0.0` | current state alone does not determine the retained label |
+| TS5 observer convention | labels `+1/-1`, plant delta `0.0` | observer convention alone can reverse the label |
+| Frozen six-class classifier | `6/6` exact | each registered causal class has its own intervention signature |
+
+The timestep audit retained the same complete classification at every declared step. The bistable final states were:
+
+```text
+dt = 0.004: -0.9999998403858654
+dt = 0.002: -0.9999998358439514
+dt = 0.001: -0.9999998335338244
+```
+
+and the matched monostable controls were:
+
+```text
+dt = 0.004: 0.9995048142864998
+dt = 0.002: 0.9995008208829336
+dt = 0.001: 0.9994988161512187
+```
+
+### 26.3 Independent analytic checks
+
+For the bistable scalar law
+
+```text
+dx/dt = x - x^3
+```
+
+with `x(0)=-0.5`, the exact continuous solution at `t=8` is
+
+```text
+x_exact(8) = -0.9999998311972806.
+```
+
+The absolute Euler errors at `dt = 0.004`, `0.002`, and `0.001` were respectively:
+
+```text
+9.188584892960705e-09
+4.646670714869572e-09
+2.3365437362699026e-09
+```
+
+For the monostable control `dx/dt=1-x`, the exact value is
+
+```text
+x_exact(8) = 0.9994968060581463,
+```
+
+with absolute Euler errors:
+
+```text
+8.008228353562075e-06
+4.0148247872906495e-06
+2.0100930724353816e-06
+```
+
+The near factor-of-two decrease on timestep halving is consistent with first-order explicit Euler convergence. TS0 and TS1 also match their exact linear-algebra ranks/determinants, and TS3, TS4, and TS5 retain exact zero plant delta because only the observer threshold, history memory, or label convention is changed in those controls.
+
+### 26.4 Evidence classification
+
+```text
+what_current_implementation_computes:
+    Priority F did not execute or alter the active Lineum equation;
+    TS0-TS5 are research-scoped toy mechanism classes, not Core fields or public ontology;
+
+what_was_reproducibly_observed:
+    all six deliberately binary-looking known-answer classes shared the same impoverished
+    baseline observation but were separated by the frozen intervention signatures;
+    the complete decision passed at dt = 0.004, 0.002, and 0.001;
+    the scalar bistable lane remained negative source-off, while the matched monostable
+    control returned positive; threshold, history, and observer-convention controls flipped
+    labels with exactly zero physical-plant change;
+
+cautious_interpretation:
+    binary appearance by itself carries insufficient information to infer whether the underlying
+    mechanism has two independent state directions, one constrained direction, one bistable
+    state, a threshold projection, retained history, or a pure observer-label convention;
+    intervention response and model comparison are required before adding ontology;
+
+hypothesis_or_analogy:
+    the Community Rule Two Spirits motif remains a generator of the scientific question only;
+    no result here chooses a Lineum field architecture or maps a religious dualism to physics;
+
+known_real_physics_or_history:
+    bistability, hysteresis, constrained modes, and measurement thresholds are established
+    mechanism classes in their proper domains, but this known-answer toy supplies no empirical
+    evidence that Lineum or nature implements any particular TS0-TS5 class.
+```
+
+### 26.5 Interpretation boundary and next programme gate
+
+What Priority F established:
+
+```text
+known_answer_binary_mechanism_discriminator = supported_within_tested_domain
+binary_appearance_alone_identifies_two_substances = no
+two_independent_response_directions_distinguish_declared_TS0_from_TS1 = yes_in_toy
+single_bistable_state_can_support_opposite_source_off_outcomes = yes_in_toy
+threshold_history_or_observer_convention_can_flip_label_without_plant_change = yes_in_toy
+registered_TS0_through_TS5_are_intervention_distinguishable = yes_in_declared_toy
+```
+
+What it did not establish:
+
+```text
+Lineum_requires_two_fields = not_established
+Lineum_requires_one_bistable_field = not_established
+Lineum_binary_behavior_is_projection_only = not_established
+Lineum_binary_behavior_is_history_only = not_established
+Lineum_binary_behavior_is_observer_convention_only = not_established
+Two_Spirits_encodes_physics = not_established
+metaphysical_dualism_is_physical = not_established
+```
+
+The original ranked A–F known-answer sequence is now complete. The scientifically justified next action is not to invent another metaphor fixture automatically. It is to perform a whole-research synthesis, recover the current implementation and decision-relevant evidence across the repository, and rank the cheapest first application of the validated A–F observers/interventions to actual Lineum behavior.
+
+Until that later application is preregistered and executed against current repository-local Lineum evidence, the authoritative programme boundary remains:
+
+```text
+ancient_texts_encode_lineum_physics = unsupported
+shared_hidden_ancient_science_tradition = unsupported
+A_through_F_known_answer_toolkit = supported_within_declared_toy_domains_only
+A_through_F_applied_to_current_Lineum = not_yet
+physical_or_metaphysical_correspondence = not_established
+next_action = whole_research_synthesis_before_first_actual_Lineum_application
+```
