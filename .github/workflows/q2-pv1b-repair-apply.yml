@@ -1,4 +1,4 @@
-name: Q2 PV1-B Residual Repair Apply
+name: Q2 PV1-B Repair Transport Checkpoint
 
 on:
   push:
@@ -10,378 +10,60 @@ permissions:
   contents: write
 
 jobs:
-  repair:
+  checkpoint:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 10
     steps:
       - name: Check out exact trigger commit
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 1
 
-      - name: Verify frozen repair inputs
+      - name: Record transport failures and remove one-use workflow
         shell: bash
         run: |
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
           test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "0d519db5ed05d971d46e1c9867b5d22203f51484"
           test "$(git hash-object research/runners/lineum_b4_q2_ledger_neutral_control_check.py)" = "50a26bcfc7ef16af33f192b97eb99690e8a13fea"
-          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py)" = "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5"
-          test "$(git hash-object tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py)" = "f6b384c895d9022e4619d2e51eeea824d1185d54"
-          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-protocol.json)" = "716d93ea040b415fda6fd30ff55ba0733bcde9cb"
-          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-test-first.json)" = "0228faedaa26b2e9a69355fcceeef35a963ebbab"
-          test "$(git hash-object research/lineum-public-tolog-b4/q2-ledger-neutral-control.json)" = "50d3f15d881e0665a450982053a9216f9cf5739c"
-
-      - name: Record failed application attempt before retry
-        shell: bash
-        run: |
-          set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-
           path = Path("research/lineum-public-tolog-galactic-shape-b4.md")
-          text = path.read_text(encoding="utf-8")
-
-          old_version = "**Version:** 0.24.3  "
-          new_version = "**Version:** 0.24.4  "
-          if text.count(old_version) != 1:
+          lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+          version_line = "**Version:** 0.24.3  \n"
+          if lines.count(version_line) != 1:
               raise SystemExit("report version marker mismatch")
-          text = text.replace(old_version, new_version, 1)
-
-          marker = "\n## 9. Preserved failure and publication chronology\n"
-          if text.count(marker) != 1:
-              raise SystemExit("report section-9 marker mismatch")
-          section = r'''
-#### 8.23.3 First repair-application workflow — technical transport non-result
-
-The first workflow intended to apply the already-frozen Section 8.23.1 checker repair ran as workflow run `31327667729`, job `93280534559`, from source commit `f6550bbfe2d5595dffb86f9667184764e9412b83`. It successfully checked out the exact trigger commit, verified every frozen report/checker/test/protocol/primary Git identity, installed the repository requirements in Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`, and verified those exact runtime versions.
-
-The workflow then stopped inside its fail-closed source-patching step because one long byte-for-byte text replacement matched zero times (`frozen replacement matched 0 times`). The regression-test step was skipped, the repaired checker was never committed, and no 28-case scientific checker command ran. The branch-reachable checker therefore remained the unchanged pre-repair blob `50a26bcfc7ef16af33f192b97eb99690e8a13fea` after this attempt.
-
-**Classification:** technical transport non-result. It supplies no Q2 evidence and does not alter the frozen repair semantics. The only permitted retry change is the mechanics used to locate and edit the already-authorized source regions. The retry must first preserve this report checkpoint, then constrain edits to the exact `NUMERIC_LEDGER_FIELDS`, `compare_case`, `run`, and `main` regions, run the unchanged old tests plus the two already-frozen residual regressions, and commit a checker repair only if that complete supported-runtime gate passes. No scientific threshold, equation, case, observer, primary datum, or repair rule may change.
-'''
-          text = text.replace(marker, "\n" + section + marker, 1)
-
-          old_history = "`0.24.3` records the supported-runtime test-first gate for that already-frozen repair: the unchanged old checker passed all 12 old tests and failed exactly the two new residual-comparison regressions, no scientific command ran, and only the preregistered comparison-method repair is authorized next. Questions 1 and 3 are unchanged; Question 2 remains negative within the tested domain but PV1-B independent verification is still pending."
-          new_history = old_history + " `0.24.4` records the first repair-application workflow as a technical transport non-result after all frozen identities and supported-runtime versions passed but one overlong exact text replacement matched zero times before tests; the checker remained unchanged, no scientific command ran, and only a bounded patch-transport retry is authorized."
-          if text.count(old_history) != 1:
+          lines[lines.index(version_line)] = "**Version:** 0.24.4  \n"
+          marker = "## 9. Preserved failure and publication chronology\n"
+          if lines.count(marker) != 1:
+              raise SystemExit("section-9 marker mismatch")
+          section = [
+              "#### 8.23.3 Repair-application transport failures — no checker science\n",
+              "\n",
+              "The first workflow intended to apply the already-frozen Section 8.23.1 repair ran as workflow run `31327667729`, job `93280534559`, from source commit `f6550bbfe2d5595dffb86f9667184764e9412b83`. Checkout, every frozen report/checker/test/protocol/primary Git identity, repository dependency installation, and the exact Python `3.11.15` / NumPy `1.26.4` / pytest `9.1.1` runtime checks passed. The workflow then stopped inside its fail-closed source patcher because one overlong byte-for-byte text replacement matched zero times (`frozen replacement matched 0 times`). The regression-test step was skipped, the checker source was not committed, and no 28-case scientific checker command ran.\n",
+              "\n",
+              "A second transport attempt was published from commit `1f8b44646f11519e8916857e521ec2a89bb1c0cc` as workflow run `31328022593`, but GitHub created no job for the run. Inspection of the workflow source shows that unindented lines embedded inside YAML block-scalar Python string literals broke workflow parsing before job creation. Therefore no checkout, report mutation, test, source patch, or scientific command ran in that attempt.\n",
+              "\n",
+              "**Classification:** both events are technical transport non-results. They supply no Q2 evidence and do not alter the frozen repair semantics. The branch-reachable checker remains the unchanged pre-repair blob `50a26bcfc7ef16af33f192b97eb99690e8a13fea`. The next permitted action is a fresh minimal repair gate whose source-edit logic is constrained to exact line/function boundaries, contains no YAML-unsafe multiline literals, runs the unchanged old tests plus the two already-frozen residual regressions before any checker-source commit, and invokes no 28-case scientific checker. No scientific threshold, equation, case, observer, primary datum, or repair rule may change.\n",
+              "\n",
+          ]
+          insert_at = lines.index(marker)
+          lines[insert_at:insert_at] = section
+          history_hit = False
+          for i, line in enumerate(lines):
+              if "`0.24.3` records the supported-runtime test-first gate" in line:
+                  lines[i] = line.rstrip("\n") + " `0.24.4` records two subsequent repair-application transport failures: one fail-closed source-pattern mismatch before tests and one YAML rejection before job creation; neither changed the checker or ran science, and only a minimal transport retry of the already-frozen repair is authorized.\n"
+                  history_hit = True
+                  break
+          if not history_hit:
               raise SystemExit("version-history marker mismatch")
-          text = text.replace(old_history, new_history, 1)
-
-          old_handoff = "Implement only that frozen repair, pass the old and new checker regressions, freeze repaired source/test identities, and rerun the entire supported checker from the beginning."
-          new_handoff = "The first application workflow stopped before tests because one long exact source-replacement pattern did not match and changed no checker source. Retry only the patch-transport mechanics while preserving the frozen repair semantics; then pass the old and new checker regressions, freeze repaired source/test identities, and rerun the entire supported checker from the beginning."
-          if text.count(old_handoff) != 1:
-              raise SystemExit("handoff marker mismatch")
-          text = text.replace(old_handoff, new_handoff, 1)
-
-          path.write_text(text, encoding="utf-8")
+          path.write_text("".join(lines), encoding="utf-8")
           PY
-          git diff --check -- research/lineum-public-tolog-galactic-shape-b4.md || true
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research/lineum-public-tolog-galactic-shape-b4.md
-          test "$(git diff --cached --name-only)" = "research/lineum-public-tolog-galactic-shape-b4.md"
-          remote_sha="$(git ls-remote origin refs/heads/develop | cut -f1)"
-          test "$remote_sha" = "$GITHUB_SHA"
-          git commit -m "research: record Q2 PV1-B repair application transport failure"
-          git push origin HEAD:develop
-
-      - name: Set up supported Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11.15"
-
-      - name: Install repository dependencies and freeze runtime
-        shell: bash
-        run: |
-          set -euo pipefail
-          python -m pip install --upgrade pip
-          python -m pip install "numpy==1.26.4" "pytest==9.1.1"
-          python -m pip install -r requirements.txt -r requirements-dev.txt
-          python - <<'PY'
-          import numpy, pytest
-          assert numpy.__version__ == "1.26.4"
-          assert pytest.__version__ == "9.1.1"
-          print("numpy", numpy.__version__)
-          print("pytest", pytest.__version__)
-          PY
-
-      - name: Apply only the frozen residual comparison repair
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p .scratch/q2-pv1b-repair
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path("research/runners/lineum_b4_q2_ledger_neutral_control_check.py")
-          text = path.read_text(encoding="utf-8")
-
-          ledger_start = text.index("NUMERIC_LEDGER_FIELDS = (\n")
-          ledger_end = text.index(")\nCATEGORICAL_BRANCH_FIELDS", ledger_start) + 2
-          ledger_block = text[ledger_start:ledger_end]
-          needle = '    "delta_ledger",\n'
-          if ledger_block.count(needle) != 1:
-              raise SystemExit("delta_ledger field boundary mismatch")
-          ledger_block = ledger_block.replace(needle, "", 1)
-          text = text[:ledger_start] + ledger_block + text[ledger_end:]
-
-          compare_start = text.index("def compare_case(\n")
-          summarize_start = text.index("\ndef summarize(", compare_start)
-          compare_block = text[compare_start:summarize_start]
-
-          signature_old = ") -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:\n"
-          signature_new = ") -> tuple[\n    list[dict[str, Any]],\n    list[dict[str, Any]],\n    list[dict[str, Any]],\n]:\n"
-          if compare_block.count(signature_old) != 1:
-              raise SystemExit("compare_case signature mismatch")
-          compare_block = compare_block.replace(signature_old, signature_new, 1)
-
-          init_old = "    categorical: list[dict[str, Any]] = []\n    key = checker[\"case_key\"]\n"
-          init_new = "    categorical: list[dict[str, Any]] = []\n    residual_failures: list[dict[str, Any]] = []\n    key = checker[\"case_key\"]\n"
-          if compare_block.count(init_old) != 1:
-              raise SystemExit("compare_case init mismatch")
-          compare_block = compare_block.replace(init_old, init_new, 1)
-
-          return_old = "    return numeric, categorical\n"
-          residual_logic = '''    if c_ledger is not None and p_ledger is not None:
-              for side, ledger in (("checker", c_ledger), ("primary", p_ledger)):
-                  try:
-                      delta = float(ledger["delta_ledger"])
-                      tolerance = float(ledger["ledger_tolerance"])
-                  except (KeyError, TypeError, ValueError):
-                      delta = None
-                      tolerance = None
-                      within = False
-                  else:
-                      within = bool(
-                          math.isfinite(delta)
-                          and math.isfinite(tolerance)
-                          and tolerance >= 0.0
-                          and abs(delta) <= tolerance
-                      )
-                  if not within:
-                      residual_failures.append(
-                          {
-                              "case_key": key,
-                              "side": side,
-                              "delta_ledger": delta,
-                              "ledger_tolerance": tolerance,
-                          }
-                      )
-              return numeric, categorical, residual_failures
-          '''
-          if compare_block.count(return_old) != 1:
-              raise SystemExit("compare_case return mismatch")
-          compare_block = compare_block.replace(return_old, residual_logic, 1)
-
-          helper = '''def ledger_residual_values(
-              ledger: dict[str, Any],
-          ) -> tuple[float | None, float | None, bool]:
-              try:
-                  delta = float(ledger["delta_ledger"])
-                  tolerance = float(ledger["ledger_tolerance"])
-              except (KeyError, TypeError, ValueError):
-                  return None, None, False
-              within = bool(
-                  math.isfinite(delta)
-                  and math.isfinite(tolerance)
-                  and tolerance >= 0.0
-                  and abs(delta) <= tolerance
-              )
-              return delta, tolerance, within
-
-
-          '''
-          text = text[:compare_start] + helper + compare_block + text[summarize_start:]
-
-          run_start = text.index("def run(primary_path: Path) -> dict[str, Any]:\n")
-          main_start = text.index("\ndef main() -> int:", run_start)
-          run_block = text[run_start:main_start]
-
-          accumulation_old = '''    numeric: list[dict[str, Any]] = []
-              categorical: list[dict[str, Any]] = []
-              if key_set_pass:
-                  for key in sorted(expected):
-                      n, c = compare_case(checker_map[key], primary_map[key])
-                      numeric.extend(n)
-                      categorical.extend(c)
-          '''
-          accumulation_new = '''    numeric: list[dict[str, Any]] = []
-              categorical: list[dict[str, Any]] = []
-              residual_failures: list[dict[str, Any]] = []
-              residual_diagnostics: list[dict[str, Any]] = []
-              if key_set_pass:
-                  for key in sorted(expected):
-                      n, c, r = compare_case(checker_map[key], primary_map[key])
-                      numeric.extend(n)
-                      categorical.extend(c)
-                      residual_failures.extend(r)
-                      c_ledger = checker_map[key]["perturbation_ledger"]
-                      p_ledger = primary_map[key]["perturbation_ledger"]
-                      if c_ledger is not None and p_ledger is not None:
-                          c_delta, c_tolerance, c_within = ledger_residual_values(c_ledger)
-                          p_delta, p_tolerance, p_within = ledger_residual_values(p_ledger)
-                          residual_diagnostics.append(
-                              {
-                                  "case_key": key,
-                                  "checker_delta_ledger": c_delta,
-                                  "checker_ledger_tolerance": c_tolerance,
-                                  "checker_within_tolerance": c_within,
-                                  "primary_delta_ledger": p_delta,
-                                  "primary_ledger_tolerance": p_tolerance,
-                                  "primary_within_tolerance": p_within,
-                              }
-                          )
-          '''
-          if run_block.count(accumulation_old) != 1:
-              raise SystemExit("run accumulation boundary mismatch")
-          run_block = run_block.replace(accumulation_old, accumulation_new, 1)
-
-          pass_old = '''        and not numeric
-              and not categorical
-              and checker_summary["neutral_perturbation_failure_count"] == 0
-          '''
-          pass_new = '''        and not numeric
-              and not categorical
-              and not residual_failures
-              and checker_summary["neutral_perturbation_failure_count"] == 0
-          '''
-          if run_block.count(pass_old) != 1:
-              raise SystemExit("run pass boundary mismatch")
-          run_block = run_block.replace(pass_old, pass_new, 1)
-
-          payload_old = '''        "categorical_mismatch_count": len(categorical),
-              "categorical_mismatches": categorical,
-              "maximum_absolute_difference_among_mismatches": (
-          '''
-          payload_new = '''        "categorical_mismatch_count": len(categorical),
-              "categorical_mismatches": categorical,
-              "ledger_residual_failure_count": len(residual_failures),
-              "ledger_residual_failures": residual_failures,
-              "ledger_residual_diagnostics": residual_diagnostics,
-              "maximum_absolute_difference_among_mismatches": (
-          '''
-          if run_block.count(payload_old) != 1:
-              raise SystemExit("run payload boundary mismatch")
-          run_block = run_block.replace(payload_old, payload_new, 1)
-          text = text[:run_start] + run_block + text[main_start:]
-
-          main_start = text.index("def main() -> int:\n")
-          main_block = text[main_start:]
-          main_old = '                "categorical_mismatch_count": payload["categorical_mismatch_count"],\n                "independent_summary": payload["independent_summary"],\n'
-          main_new = '                "categorical_mismatch_count": payload["categorical_mismatch_count"],\n                "ledger_residual_failure_count": payload["ledger_residual_failure_count"],\n                "independent_summary": payload["independent_summary"],\n'
-          if main_block.count(main_old) != 1:
-              raise SystemExit("main payload boundary mismatch")
-          main_block = main_block.replace(main_old, main_new, 1)
-          text = text[:main_start] + main_block
-
-          path.write_text(text, encoding="utf-8")
-          PY
-          python -m py_compile research/runners/lineum_b4_q2_ledger_neutral_control_check.py
-          git diff -- research/runners/lineum_b4_q2_ledger_neutral_control_check.py > .scratch/q2-pv1b-repair/source.diff
-          test -s .scratch/q2-pv1b-repair/source.diff
-
-      - name: Run complete repair regression gate
-        shell: bash
-        run: |
-          set -euo pipefail
-          PYTHONPATH=. pytest -q \
-            tests/research/test_lineum_b4_saturation_localized_l1.py \
-            tests/research/test_lineum_b4_q2_perturbation_ledger.py \
-            tests/research/test_lineum_b4_q2_ledger_neutral_control.py \
-            tests/research/test_lineum_b4_q2_ledger_neutral_control_json_safe.py \
-            tests/research/test_lineum_b4_q2_ledger_neutral_control_check.py \
-            tests/research/test_lineum_b4_q2_ledger_neutral_control_check_residual_repair.py \
-            | tee .scratch/q2-pv1b-repair/test-output.txt
-
-      - name: Retain tested repair and clean one-use workflow
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import hashlib
-          import json
-          import os
-          import platform
-          import re
-          import subprocess
-          from pathlib import Path
-
-          import numpy
-          import pytest
-
-          source = Path("research/runners/lineum_b4_q2_ledger_neutral_control_check.py")
-          test_output = Path(".scratch/q2-pv1b-repair/test-output.txt")
-          text = test_output.read_text(encoding="utf-8")
-          match = re.search(r"(\d+) passed", text)
-          if match is None:
-              raise SystemExit("pytest pass count missing")
-
-          def sha256(path: Path) -> str:
-              return hashlib.sha256(path.read_bytes()).hexdigest()
-
-          source_blob = subprocess.check_output(
-              ["git", "hash-object", str(source)], text=True
-          ).strip()
-          report_blob = subprocess.check_output(
-              ["git", "hash-object", "research/lineum-public-tolog-galactic-shape-b4.md"],
-              text=True,
-          ).strip()
-
-          payload = {
-              "schema": "lineum-b4-q2-ledger-neutral-control-check-repair-pass/1",
-              "stage": "Q2-PV1-B-CHECK-REPAIR",
-              "classification": "supported_runtime_regression_pass",
-              "scientific_command_invoked": False,
-              "workflow_run_id": int(os.environ["GITHUB_RUN_ID"]),
-              "workflow_source_commit": os.environ["GITHUB_SHA"],
-              "environment": {
-                  "python": platform.python_version(),
-                  "numpy": numpy.__version__,
-                  "pytest": pytest.__version__,
-                  "runner_os": os.environ.get("RUNNER_OS"),
-              },
-              "report_blob_after_failure_checkpoint": report_blob,
-              "source_blob_before": "50a26bcfc7ef16af33f192b97eb99690e8a13fea",
-              "source_blob_after": source_blob,
-              "source_sha256_after": sha256(source),
-              "old_checker_test_blob": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
-              "residual_repair_test_blob": "f6b384c895d9022e4619d2e51eeea824d1185d54",
-              "repair_protocol_blob": "716d93ea040b415fda6fd30ff55ba0733bcde9cb",
-              "test_first_receipt_blob": "0228faedaa26b2e9a69355fcceeef35a963ebbab",
-              "pytest_passed": int(match.group(1)),
-              "pytest_failed": 0,
-              "test_output_sha256": sha256(test_output),
-              "repair_scope": (
-                  "remove only raw delta_ledger from strict cross-implementation "
-                  "numeric equality; require checker and primary residuals separately "
-                  "to satisfy their unchanged ledger_tolerance; retain raw residual "
-                  "diagnostics; keep all other comparisons and scientific rules unchanged"
-              ),
-              "workflow_artifact_uploaded": False,
-          }
-          Path(
-              "research/lineum-public-tolog-b4/"
-              "q2-ledger-neutral-control-check-repair-pass.json"
-          ).write_text(
-              json.dumps(payload, indent=2, sort_keys=True) + "\n",
-              encoding="utf-8",
-          )
-          PY
-
           rm .github/workflows/q2-pv1b-repair-apply.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            research/runners/lineum_b4_q2_ledger_neutral_control_check.py \
-            research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-pass.json \
-            .github/workflows/q2-pv1b-repair-apply.yml
-          expected_files=".github/workflows/q2-pv1b-repair-apply.yml
-research/lineum-public-tolog-b4/q2-ledger-neutral-control-check-repair-pass.json
-research/runners/lineum_b4_q2_ledger_neutral_control_check.py"
-          test "$(git diff --cached --name-only)" = "$expected_files"
+          git add research/lineum-public-tolog-galactic-shape-b4.md .github/workflows/q2-pv1b-repair-apply.yml
           remote_sha="$(git ls-remote origin refs/heads/develop | cut -f1)"
-          test "$remote_sha" = "$(git rev-parse HEAD)"
-          git diff --cached --check
-          git commit -m "research: apply tested Q2 PV1-B checker residual repair"
+          test "$remote_sha" = "$GITHUB_SHA"
+          git commit -m "research: record Q2 PV1-B repair transport failures"
           git push origin HEAD:develop
