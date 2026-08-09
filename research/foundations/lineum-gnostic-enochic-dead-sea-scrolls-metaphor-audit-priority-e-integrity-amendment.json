@@ -1,0 +1,22 @@
+{
+  "artifact": "Priority E preregistration integrity amendment",
+  "evidence_status": "[toy][preregistered][technical-amendment]",
+  "discovered_after_first_execution_before_result_promotion": true,
+  "scientific_definition_changed": false,
+  "parameters_changed": false,
+  "thresholds_changed": false,
+  "mechanism_changed": false,
+  "observer_levels_changed": false,
+  "challenge_pairs_changed": false,
+  "frozen_checks_changed": false,
+  "executable_path": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-e.py",
+  "git_blob_sha_preregistered": "9eadbb00dbb80bbdc4ee1a731dc03cc340ef5a44",
+  "git_blob_sha_recomputed_from_executed_bytes": "9eadbb00dbb80bbdc4ee1a731dc03cc340ef5a44",
+  "git_blob_identity_matches": true,
+  "sha256_recorded_in_original_preregistration": "54517f348fa415f91adb542b69b91a0e6535034da33ccf72bc08b9c969966153",
+  "sha256_recomputed_from_exact_git_blob_bytes": "0fc07cdd91ad59af9269effde0b48a82b4ceaa368f19ac8ae4b8d2b0d2c21a2b",
+  "classification": "checksum_metadata_transcription_error",
+  "effect_on_scientific_preregistration": "none; the exact executable Git blob and all scientific decision rules were frozen before outcome inspection",
+  "resolution": "retain the original preregistration in Git history, record the checksum correction explicitly, and rerun the same Git-identical executable bytes before accepting the Priority E outcome",
+  "result_promotion_gate": "the post-amendment rerun must use the same Git blob 9eadbb00dbb80bbdc4ee1a731dc03cc340ef5a44 and no scientific field may change"
+}
