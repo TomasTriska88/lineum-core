@@ -1,0 +1,293 @@
+{
+  "active_report": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md",
+  "active_report_blob_before": "7a60b707cb650c1d63d62e9c0619489ac4d8ccda",
+  "adversarial_controls": {
+    "noninjective_clipping": {
+      "a_values": [
+        1.5,
+        2.0
+      ],
+      "clip_cap": 1.25,
+      "current_state": {
+        "a": 1,
+        "intervention": 0,
+        "relation": 0,
+        "source_gain": 0,
+        "x_now": 0,
+        "x_prev": -1
+      },
+      "required": [
+        "generative observer keys remain identical after clipping",
+        "clipped reconstructed a values remain equal within 1e-12",
+        "true held-out future gap is at least 0.4",
+        "deterministic-predictor minimax error lower bound is at least 0.2"
+      ]
+    },
+    "reversed_calibration": {
+      "description": "reverse calibration time order before reconstructing a",
+      "frozen_min_prediction_error_each_G_case": 1.0
+    },
+    "translation": {
+      "max_delta": 1e-12,
+      "offset": 7.25,
+      "required": [
+        "future gap invariant",
+        "a_hat invariant",
+        "predicted future shifts only by the common offset"
+      ]
+    }
+  },
+  "analytic_precommit_expectations": [
+    "H true futures are +1 and -1, so snapshot collision has future gap 2",
+    "R true futures are +1 and -1, so finite-history collision has future gap 2",
+    "S true futures are 1 and 0, so relational collision has future gap 1",
+    "G true futures under the held-out +0.25 source pulse are 0.75 and -0.25, so source-aware collision has future gap 1",
+    "ordered calibration reconstructs a exactly for the declared dyadic values",
+    "reversed G calibration reconstructs +/-2 instead of +/-0.5 and therefore produces held-out absolute prediction error 1.5",
+    "clipping the two calibration endpoints at 1.25 makes both reconstructed coefficients 0.25 while their true held-out futures remain 1.5 and 2.0",
+    "when two cases share exactly the same observer key and future gap Delta, any deterministic predictor from that key has worst-case absolute error at least Delta/2"
+  ],
+  "ancient_text_boundary": {
+    "motif": "4QInstruction raz nihyeh and Gospel of Truth observer-error motifs are hypothesis generators only",
+    "prohibited": [
+      "ancient_texts_encode_Lineum_physics",
+      "gnosis_equals_state_estimation",
+      "raz_nihyeh_equals_a_modern_generative_model",
+      "missing_observer_state_implies_a_new_field_or_metaphysical_substance"
+    ],
+    "translation_policy": "No contested translation of raz nihyeh is selected by this fixture."
+  },
+  "artifact": "Priority E preregistration",
+  "authoritative_checkpoint_version": "0.6.0-prereg",
+  "calibration": {
+    "equation": "a_hat = [(x_cal_next-x_cal_now) - relation_cal - source_gain_cal*intervention_cal] / (x_cal_now-x_cal_prev)",
+    "frozen_calibration_family": "x_cal_prev=0, x_cal_now=1, relation_cal=0, source_gain_cal=0, intervention_cal=0, x_cal_next=1+a",
+    "held_out_generative_intervention": 0.25
+  },
+  "challenge_pairs": {
+    "G_generative": {
+      "cases": [
+        {
+          "a": 0.5,
+          "intervention": 0.25,
+          "relation": 0,
+          "source_gain": 1,
+          "x_now": 0,
+          "x_prev": -1
+        },
+        {
+          "a": -0.5,
+          "intervention": 0.25,
+          "relation": 0,
+          "source_gain": 1,
+          "x_now": 0,
+          "x_prev": -1
+        }
+      ],
+      "expected_minimal_resolving_level": "generative",
+      "frozen_min_future_gap": 0.9,
+      "max_a_hat_error": 1e-12,
+      "max_held_out_prediction_error": 1e-12
+    },
+    "H_history": {
+      "cases": [
+        {
+          "a": 1,
+          "intervention": 0,
+          "relation": 0,
+          "source_gain": 0,
+          "x_now": 0,
+          "x_prev": -1
+        },
+        {
+          "a": 1,
+          "intervention": 0,
+          "relation": 0,
+          "source_gain": 0,
+          "x_now": 0,
+          "x_prev": 1
+        }
+      ],
+      "expected_minimal_resolving_level": "finite_history",
+      "frozen_min_future_gap": 1.5
+    },
+    "R_relation": {
+      "cases": [
+        {
+          "a": 1,
+          "intervention": 0,
+          "relation": 1,
+          "source_gain": 0,
+          "x_now": 0,
+          "x_prev": 0
+        },
+        {
+          "a": 1,
+          "intervention": 0,
+          "relation": -1,
+          "source_gain": 0,
+          "x_now": 0,
+          "x_prev": 0
+        }
+      ],
+      "expected_minimal_resolving_level": "relational",
+      "frozen_min_future_gap": 1.5
+    },
+    "S_source": {
+      "cases": [
+        {
+          "a": 1,
+          "intervention": 1,
+          "relation": 0,
+          "source_gain": 1,
+          "x_now": 0,
+          "x_prev": 0
+        },
+        {
+          "a": 1,
+          "intervention": 1,
+          "relation": 0,
+          "source_gain": 0,
+          "x_now": 0,
+          "x_prev": 0
+        }
+      ],
+      "expected_minimal_resolving_level": "source_aware",
+      "frozen_min_future_gap": 0.5
+    }
+  },
+  "cross_disciplinary_comparison_only": [
+    {
+      "doi": "10.1115/1.3662552",
+      "source": "R. E. Kalman, A New Approach to Linear Filtering and Prediction Problems, 1960",
+      "use": "state estimation/prediction as a standard comparison class; no code or protected expression incorporated"
+    },
+    {
+      "doi": "10.1007/BFb0091924",
+      "source": "F. Takens, Detecting Strange Attractors in Turbulence, 1981",
+      "use": "delay-coordinate reconstruction as a conditional comparison class; no claim that arbitrary history is sufficient"
+    },
+    {
+      "reference": "arXiv:cond-mat/9907176",
+      "source": "C. R. Shalizi and J. P. Crutchfield, Computational Mechanics: Pattern and Prediction, Structure and Simplicity, 2001",
+      "use": "predictive-state sufficiency/minimality as a conceptual comparison; no implementation incorporated"
+    }
+  ],
+  "evidence_status": "[toy][preregistered][known-answer]",
+  "executable": {
+    "external_packages": [],
+    "git_blob_sha": "9eadbb00dbb80bbdc4ee1a731dc03cc340ef5a44",
+    "path": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit-priority-e.py",
+    "sha256": "54517f348fa415f91adb542b69b91a0e6535034da33ccf72bc08b9c969966153"
+  },
+  "execution_boundary": "Commit this preregistration receipt and exact executable before the first official execution. If any frozen scientific check fails, retain the negative result without retuning and stop under the owner-intuition gate.",
+  "frozen_checks": [
+    "history_resolves_snapshot_collision",
+    "relation_resolves_history_collision",
+    "source_resolves_relational_collision",
+    "generative_model_resolves_source_aware_collision",
+    "temporal_order_matters_for_model_reconstruction",
+    "noninjective_clipping_remains_nonidentifying",
+    "global_translation_is_nonidentifying",
+    "nested_minimal_levels_match_preregistration"
+  ],
+  "implementation_boundary": {
+    "current_Lineum_equation_executed": false,
+    "permitted_pass_conclusion": "the declared nested observer ladder and its clipping limit are valid on this known-answer toy only",
+    "physical_correspondence_claimed": false,
+    "production_code_changed": false,
+    "whitepaper_changed": false
+  },
+  "observer_levels": [
+    {
+      "features": [
+        "x_now"
+      ],
+      "level": "snapshot"
+    },
+    {
+      "features": [
+        "x_prev",
+        "x_now"
+      ],
+      "level": "finite_history"
+    },
+    {
+      "features": [
+        "x_prev",
+        "x_now",
+        "relation"
+      ],
+      "level": "relational"
+    },
+    {
+      "features": [
+        "x_prev",
+        "x_now",
+        "relation",
+        "source_gain",
+        "intervention"
+      ],
+      "level": "source_aware"
+    },
+    {
+      "features": [
+        "x_prev",
+        "x_now",
+        "relation",
+        "source_gain",
+        "intervention",
+        "a_hat_from_ordered_calibration"
+      ],
+      "level": "generative"
+    }
+  ],
+  "plant": {
+    "equations": [
+      "v_now = x_now - x_prev",
+      "v_next = a*v_now + relation + source_gain*intervention",
+      "x_next = x_now + v_next"
+    ],
+    "randomness": null,
+    "units": "dimensionless toy units",
+    "variables": {
+      "a": "persistent transition-law coefficient inferred only by the generative observer",
+      "intervention": "held-out applied source input",
+      "relation": "declared current relational input",
+      "source_gain": "declared current source/interface gain",
+      "v_now": "latent local rate reconstructed as x_now - x_prev",
+      "x_now": "current visible local coordinate",
+      "x_prev": "previous visible local coordinate"
+    }
+  },
+  "prior_evidence_reconciled": [
+    {
+      "blob": "844f196e6034207818333ad9df6b106682041bca",
+      "constraint": "visible image and matched global scalars can be non-identifying; ordinary hidden phase/current resolved the known wave fixture",
+      "path": "research/foundations/lineum-projection-copy-causal-state-known-answer-fixture.md"
+    },
+    {
+      "blob": "19bb217b558c6938f22020e35ef165f13a44fd8d",
+      "constraint": "complete Phi history was sufficient only in a known invertible non-clipped lane; clipping falsified unrestricted sufficiency",
+      "path": "research/foundations/lineum-mu-phi-history-identifiability-l2a-audit.md"
+    },
+    {
+      "blob": "f224cfbfb10714ff738fc6227f61db329e97c7c9",
+      "constraint": "closed-loop reconstruction passed in the regular lane; clipping and kappa-masked global-threshold counterexamples remain binding",
+      "path": "research/foundations/lineum-mu-phi-history-reconstruction-l2-audit.md"
+    },
+    {
+      "blob": "7ba9f83cd839a6cd383bf591b9c0b8a59fe4a6f6",
+      "constraint": "temporal order and exact observation point are causally relevant in the declared deterministic write path",
+      "path": "research/foundations/lineum-mu-psi-history-reconstruction-l1-audit.md"
+    }
+  ],
+  "programme_membership": "standalone",
+  "question": "Can a nested observer ladder distinguish causally different futures that collide under snapshot-only, finite-history, relational, or source-aware representations, and can a generative reconstruction predict a held-out intervention without pretending to recover information destroyed by clipping?",
+  "repository_governance_intake": {
+    "contradiction": "the pointed-to Dynamics path and root AGENTS.md were absent on that main snapshot",
+    "core_pointer": "docs/LINEUM_CODEX_v1.md points to lineum-dynamics/docs/LINEUM_CODEX_v1.md",
+    "dynamics_main_checked": "d02f40c5968978a9440c1b20263a7ba25d639e0b",
+    "resolution_for_this_checkpoint": "record as documentation/routing debt; do not infer scientific state from it; local Core scientific rules and evidence gates govern this Core-only research; no commercial/dual-use operation is performed"
+  }
+}
