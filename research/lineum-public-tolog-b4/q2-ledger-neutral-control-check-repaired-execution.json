@@ -1,0 +1,87 @@
+{
+  "checker_exit_code": 0,
+  "classification": "independent_checker_pass",
+  "environment": {
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python": "3.11.15",
+    "runner_os": "Linux"
+  },
+  "frozen_git_blobs": {
+    "canonical_test": "e4a4b450e52ad3f8fa15d69dfbdb00505be67dab",
+    "checker": "0b9ecc9f56aa943cf37f2c84409446608888b4a6",
+    "checker_test": "937e0c1e36c1bdad4a84749aec11ef19ffecb4d5",
+    "primary": "50d3f15d881e0665a450982053a9216f9cf5739c",
+    "pv1_test": "403c1cb8747cebf3280009b3b2ffcd814c72e060",
+    "pv1b_json_safe_test": "c15d0678d05bdb3ee20812709339a2258764fc0c",
+    "pv1b_test": "240867abf29db6c248ff9515fa1770482fe8d9ac",
+    "repair_protocol": "716d93ea040b415fda6fd30ff55ba0733bcde9cb",
+    "repair_reconstruction_receipt": "c850d9a440fdecbb0ca9b7b734273434666cb04f",
+    "report": "963fea5d93ae43ff5a59202b4b28177a30c79c38",
+    "residual_repair_test": "06ed2da5f7d3173111a1dfab51c4f4766dc2224d",
+    "test_first_receipt": "0228faedaa26b2e9a69355fcceeef35a963ebbab"
+  },
+  "regression_gate": {
+    "pytest_failed": 0,
+    "pytest_passed": 40,
+    "test_output_sha256": "db9852261e408649ad318479cd5c67ca5ef8f255562bc18425d88b8c16d12d8f"
+  },
+  "result_git_blob": "07d46581f8cd9973ed82c40bbfea6af372a31dd5",
+  "result_present": true,
+  "result_sha256": "d84f4baf652da10eca457d6e144f15679072c789b8973673c534fc48db6dd21f",
+  "result_summary": {
+    "canonical_payload_sha256_without_self": "197937fdf1a5d9100349f8197b038f8c5282f4d13cc912bf365e32b736234fa7",
+    "categorical_mismatch_count": 0,
+    "independent_summary": {
+      "balanced_annulus_factor_max": 0.9780485627631685,
+      "balanced_annulus_factor_min": 0.8211962194809532,
+      "balanced_q2_positive_count": 0,
+      "balanced_rescue_count": 0,
+      "balanced_rescue_keys": [],
+      "canonical_q2_positive_count": 0,
+      "case_count": 28,
+      "control_available_count": 26,
+      "control_unavailable_count": 2,
+      "control_unavailable_keys": [
+        "LAP4|no_interaction_denominator|phi0=1.0",
+        "LAP8|no_interaction_denominator|phi0=1.0"
+      ],
+      "neutral_perturbation_failure_count": 0,
+      "neutral_perturbation_failures": [],
+      "outcome": "ledger_neutral_control_does_not_rescue_q2_classification",
+      "q2_classification_changed_count": 0,
+      "q2_classification_changed_keys": []
+    },
+    "key_set_pass": true,
+    "ledger_residual_failure_count": 0,
+    "numeric_mismatch_count": 0,
+    "passed": true,
+    "primary_summary": {
+      "balanced_annulus_factor_max": 0.9780485627631685,
+      "balanced_annulus_factor_min": 0.8211962194809532,
+      "balanced_q2_positive_count": 0,
+      "balanced_rescue_count": 0,
+      "balanced_rescue_keys": [],
+      "canonical_q2_positive_count": 0,
+      "case_count": 28,
+      "control_available_count": 26,
+      "control_unavailable_count": 2,
+      "control_unavailable_keys": [
+        "LAP4|no_interaction_denominator|phi0=1.0",
+        "LAP8|no_interaction_denominator|phi0=1.0"
+      ],
+      "neutral_perturbation_failure_count": 0,
+      "neutral_perturbation_failures": [],
+      "outcome": "ledger_neutral_control_does_not_rescue_q2_classification",
+      "q2_classification_changed_count": 0,
+      "q2_classification_changed_keys": []
+    },
+    "protocol_pass": true
+  },
+  "schema": "lineum-b4-q2-ledger-neutral-control-check-repaired-execution/1",
+  "scientific_command_invoked": true,
+  "stage": "Q2-PV1-B-CHECK-REPAIRED",
+  "workflow_artifact_uploaded": false,
+  "workflow_run_id": 31332207459,
+  "workflow_source_commit": "5427a73ffb7741a98895a3d9ac5cc39314a2be8f"
+}
