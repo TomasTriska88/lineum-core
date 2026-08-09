@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.0 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; version `0.25.1` completes the observer/noise/cap definitions before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.1 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `b940373f8356f9d7b24a53de47b0ab7938ac924c` \
+**Checkpoint parent:** `1fee3399f78c8ca5064843571c68eb70e2929bbb` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -1961,3 +1961,45 @@ when `psi=0`, `mu_eta=0`, drift is zero, and no cap is reached.
 ### Next executable step
 
 After this preregistration is branch-reachable, implement a research-scoped Stage A runner and permanent tests without changing `lineum_core/`. The first official Stage A execution may occur only from committed runner/test identities after the supported-runtime regression gate passes. Retain its output as plain JSON and update this same report before any further consequential step.
+
+### Q2-M1 preregistration completeness clarification — version `0.25.1`
+
+This clarification is frozen before any Stage A runner is implemented or any new causal-memory outcome is inspected. It changes no state equation, parameter, label family, horizon, causal threshold, Q2 return threshold, or outcome map. It restores observer details that were already part of the historical structural-memory protocol but were not fully restated in the `0.25.0` Q2-M1 section.
+
+The deterministic permutation null uses exactly `2000` label permutations with seed `20260804`. For an observed held-out balanced accuracy `a_obs`, the one-sided p-value is:
+
+```text
+p = (1 + count(a_null >= a_obs)) / 2001
+```
+
+Unclassified samples count as incorrect. An all-zero field has no orientation and is unclassified.
+
+Readout-noise robustness is observer-only; noise never enters the dynamics. For each scored passive channel, define `R_imprint` as the median RMS amplitude across that channel at the end of imprint. Score exact fields plus two deterministic Gaussian readout copies:
+
+```text
+low noise sigma  = 1e-4 * R_imprint
+high noise sigma = 1e-3 * R_imprint
+seed              = 20260804
+```
+
+Negative values created in `phi` or `mu` readout copies are clipped to zero only for the orientation observers. The underlying retained state is not clipped or modified by this readout operation.
+
+Relative passive signal amplitude is frozen as:
+
+```text
+S(t) = median(RMS(F(t))) / median(RMS(F_at_end_of_imprint))
+```
+
+with the already frozen `S >= 1e-6` retained-record gate.
+
+Passive cap independence between the primary `mu_cap = 10` lane and `mu_cap = 100` control requires all of:
+
+```text
+primary max(mu) < 0.25 * primary mu_cap
+held-out balanced-accuracy difference <= 0.05
+median normalized matched-field difference <= 1e-6
+```
+
+where the normalized matched-field comparison is evaluated only when neither lane approaches its cap. For causal C4, the existing sensitivity rule remains unchanged: the qualitative causal classification must match the primary, and where both compared causal divergences exceed the numerical floor their median ratio must lie in `[0.5, 2.0]`.
+
+No post-result threshold selection is permitted. The next executable step remains implementation and regression testing of the research-scoped Stage A runner only; no official Stage A science may be inspected until that runner and its tests are branch-reachable at frozen identities.
