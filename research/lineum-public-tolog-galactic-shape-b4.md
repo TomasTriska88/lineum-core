@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution, so no causal-memory result exists yet; Questions 1 and 3 remain unchanged
-**Version:** 0.25.4 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; Questions 1 and 3 remain unchanged
+**Version:** 0.25.5 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `6437b4cd3cd2b6a1f3957cd42d6eed167507787c` \
+**Checkpoint parent:** `99dafc744d08172a708010e00ad5ef7e7319b3db` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2099,3 +2099,27 @@ The failure is classified as `technical_candidate_byte_identity_failure`. The ma
 This failure changes no Q2-M1 scientific definition, threshold, parameter, observer, source equation, Q1 result, Q2 result, or Q3 result. It also does not validate or falsify the proposed `mu` causal-reuse path.
 
 The only permitted next step is to freeze an exact candidate byte identity through a transport path that can be independently read back, then rerun the same supported-runtime regression gate from the beginning. No official Stage A science may run until the exact tested runner and test are branch-reachable and their identities are recorded in this report.
+
+### Q2-M1 candidate-byte freeze shell — technical transport non-result (`0.25.5`)
+
+After the failed byte-identity gate recorded in `0.25.4`, a deliberately fail-closed transport shell was committed at `99dafc744d08172a708010e00ad5ef7e7319b3db`. GitHub Actions run `31344497196`, job `93323801233`, completed with failure at its explicit placeholder materialization step. No candidate payload was present.
+
+```text
+checkout: passed
+frozen base / report / branch checks: passed
+candidate payload materialization: not performed
+explicit placeholder SystemExit: reached
+py_compile: not executed
+pytest: not executed
+run_primary(): not executed
+runner/test repository commit: not created
+scientific JSON result: not created
+```
+
+This event is classified as `technical_transport_shell_non_result`. It contains no Q2-M1 observation and neither supports nor falsifies causal reuse by `mu`.
+
+A first report-retention retry from commit `dbb4c1120db7db29efbd94b5b02141e4534807ab` (run `31345144288`, job `93325576384`) passed checkout and frozen chronology checks, then failed inside the report-patch step before the commit/removal step. No report change from that run was retained and no scientific command was executed. The exact inner text-match failure is not established by the retained empty job-log response and is therefore not guessed here.
+
+The workflow-content transport approach is abandoned. The next implementation attempt must reconstruct a new runner/test candidate solely from the already frozen `0.25.0`-`0.25.3` protocol, stage the exact candidate source as ordinary Git objects, read those objects back by hash, and use CI only as a supported-runtime regression checker of that exact candidate. No runner or test byte identity from either failed transport attempt is retained source evidence.
+
+Stage A scientific execution remains prohibited until the exact regression-tested runner and test are branch-reachable on `develop`, their identities and supported environment are recorded in this report, and the temporary regression workflow is closed according to repository rules.
