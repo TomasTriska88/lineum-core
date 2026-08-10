@@ -1,0 +1,102 @@
+{
+  "artifact_role": "companion machine-readable preregistration; the active Markdown report remains authoritative for scientific reasoning",
+  "programme_membership": "standalone",
+  "owner_hypothesis_class": "possible clue only; never proof by numerical resemblance",
+  "target_active_report": "research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md",
+  "target_report_blob_before_scan": "f8ac8352986a3b1df3662960e63e7c57ba53125d",
+  "target_branch_at_scope_freeze": "develop",
+  "target_branch_head_at_scope_freeze": "99dafc744d08172a708010e00ad5ef7e7319b3db",
+  "targeted_current_core_scan_started_after_scope_freeze": false,
+  "prior_exposure_disclosure": {
+    "general_repo_numbers_seen_before_this_preregistration": true,
+    "known_phi_like_null": "Priority B already contains 0.6180341947820507 from a deliberately parameterized reciprocal-feedback toy; it is frozen as an anti-numerology negative control, not evidence for golden-ratio physics."
+  },
+  "clue_families": {
+    "J0_judas_counts": [12, 72, 360],
+    "J1_judas_generator": ["72/12 = 6", "360/72 = 5", "360/12 = 30", "integer factorization/divisor structure"],
+    "E0_egyptian_dyadic_completion": ["2^-k", "sum_{k=1..n} 2^-k = 1-2^-n", "n=6 gives 63/64"],
+    "M0_golden_fibonacci": ["phi=(1+sqrt(5))/2", "1/phi", "F[n+1]/F[n]", "F[n+1]=F[n]+F[n-1] or an equivalent recurrence/eigenvalue mechanism"],
+    "M1_integer_arithmetic": ["prime generation or prime-factor structure", "simple primorial/factorial identities only for genuine integer count observables"],
+    "M2_riemann_zeta": ["nontrivial-zero comparison allowed only for a legitimately defined ordered dimensionless spectrum", "normalized spectral spacings rather than arbitrary raw-scalar matching"],
+    "M3_circular_angular": ["12-sector organization", "30-degree subdivisions", "360-complete-cycle structure only where a real phase/rotation/symmetry observable exists"],
+    "M4_scaling_spectral": ["dimensionless scale ratios", "eigenvalue ratios", "correlation-length ratios", "ordered spectral spacings"]
+  },
+  "admissible_lineum_quantities": [
+    "constants and coefficients genuinely used by the current governing implementation",
+    "algorithmic recurrences and operators that affect the current dynamics",
+    "grid or symmetry counts only when they have mechanism-level meaning rather than being an arbitrary run configuration",
+    "dimensionless ratios between semantically paired quantities",
+    "reproducible output ratios retained in the current research evidence",
+    "ordered spectra only when the operator and normalization are scientifically defined"
+  ],
+  "excluded_lineum_quantities": [
+    "commit SHAs",
+    "task or issue IDs",
+    "dates and timestamps",
+    "line numbers",
+    "file sizes",
+    "seed values",
+    "test counts used only for coverage",
+    "arbitrary display precision",
+    "floating-point roundoff",
+    "numbers introduced solely to manufacture a requested match"
+  ],
+  "frozen_transform_budget": [
+    "exact equality or analytically derived identity",
+    "integer factorization, gcd/divisor structure, and declared branching products for genuine integer observables",
+    "reciprocal only for dimensionless quantities",
+    "ratio only for semantically paired quantities",
+    "first difference or consecutive ratio only for an already ordered sequence",
+    "normalized spacing only for an already justified spectrum"
+  ],
+  "forbidden_posthoc_transforms": [
+    "arbitrary decimal-point shifts",
+    "arbitrary multiplication or division by a free integer",
+    "unit changes selected to improve a numerical match",
+    "affine rescaling selected after seeing the target",
+    "logarithm, exponent, or power selected only because it produces a match",
+    "adding a new mathematical family after inspecting Core without a new preregistration checkpoint"
+  ],
+  "screening_rules": {
+    "approximate_scalar_hit_relative_error_max": 0.001,
+    "approximate_scalar_hit_status": "screening clue only, never evidence by itself",
+    "output_stability_requirement": "for numerically measured ratios, survive at least three already-declared independent resolution/timestep/run conditions where available",
+    "structural_candidate_requires": "either one exact analytically derived generator-level identity with matching semantics, or at least two independent Lineum manifestations plus rejection of the relevant null",
+    "zeta_raw_scalar_matching": "forbidden",
+    "fibonacci_phi_single_decimal_match": "insufficient",
+    "prime_single_number_match": "insufficient"
+  },
+  "null_controls": [
+    "calendar/astronomical/angular complete-cycle arithmetic as a historical null for 12/72/360",
+    "common highly composite-number convenience as a null for 360",
+    "practical metrology and binary subdivision as a historical null for Egyptian dyadic fractions",
+    "parameter-choice artifact",
+    "grid/domain-size artifact",
+    "unit/rescaling artifact",
+    "look-elsewhere effect from testing many constants and transforms",
+    "toy-only coincidence that does not recur in current Lineum"
+  ],
+  "multiple_comparison_rule": "count every tested admissible quantity-family pair; if a sequence/spectrum supplies enough points for numerical significance, compare against an appropriate shuffled/randomized or matched combinatorial null before promotion",
+  "planned_phases": [
+    "static current-Core implementation audit",
+    "current retained Lineum result audit for robust dimensionless ratios/sequences",
+    "mathematical-family comparison under the frozen transform budget",
+    "historical-source receipt and null audit for Gospel of Judas and Egyptian fractions",
+    "look-elsewhere/null accounting",
+    "separate preregistered Lineum experiment only if a structural candidate survives"
+  ],
+  "third_party_intake": {
+    "owner_supplied_clues": ["Gospel of Judas numerical/cosmological hierarchy", "Egyptian Eye-of-Horus/Rhind dyadic fraction tradition"],
+    "mode": "public factual/source-critical comparison only",
+    "incorporation": "no third-party translation, figure, code, dataset, or protected expression is incorporated",
+    "exact_historical_source_receipts": "must be added before decision-relevant historical inference; this preregistration itself makes no new historical-source conclusion"
+  },
+  "interpretation_boundary": {
+    "numerical_match": "possible clue only",
+    "structural_candidate": "hypothesis worth a separately preregistered test",
+    "historical_transmission": "not established by mathematical resemblance",
+    "lineum_physics": "not established by ancient-text resemblance",
+    "no_match": "no support in the tested current-Core scope; not a falsification of the historical text"
+  },
+  "next_action_after_authoritative_markdown_sync": "perform the frozen static current-Core audit before any new numerical transform family is introduced"
+}
