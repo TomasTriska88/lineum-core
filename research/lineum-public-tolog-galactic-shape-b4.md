@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.3 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution, so no causal-memory result exists yet; Questions 1 and 3 remain unchanged
+**Version:** 0.25.4 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `dd37c78b8e939b48901ca245cb047f68df18a9cb` \
+**Checkpoint parent:** `6437b4cd3cd2b6a1f3957cd42d6eed167507787c` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2073,3 +2073,29 @@ The noise copies are independently classified with the same fixed quadrupole rul
 **Source-off state is the causal input.** C0-C5 are constructed only from the final 2000-step source-off states defined by Q2-M1. The historical embedded code's immediate-post-imprint C-lane ordering is retained only as the distinct historical variant recorded in version `0.25.2` and cannot be substituted into the new runner.
 
 After this lock, runner implementation is mechanical. Any later need to change one of these scientific definitions after an outcome is visible requires retention of the original result and a separately preregistered new variant; the current Stage A result may not be retroactively reclassified under altered rules.
+
+### Q2-M1 test-before-commit attempt 1 — technical byte-identity failure (`0.25.4`)
+
+The first supported-runtime runner/test gate was triggered from commit `6437b4cd3cd2b6a1f3957cd42d6eed167507787c` as GitHub Actions run `31344052319`, job `93322557606`.
+
+The execution chronology is bounded and must not be interpreted as a scientific result:
+
+```text
+checkout / frozen-parent gate: passed
+Python 3.11 setup: passed
+repository dependency installation: passed
+NumPy 1.26.4 exact-version assertion: passed
+candidate materialization: reached
+frozen Git-blob identity assertion: failed
+py_compile: not reached after the failed identity assertion
+pytest: not executed
+run_primary(): not executed
+runner/test commit: not created
+scientific JSON result: not created
+```
+
+The failure is classified as `technical_candidate_byte_identity_failure`. The materialized workflow candidate did not match the predeclared Git blob identity of the locally syntax-checked candidate. The failed job did not print the alternate materialized SHA, so the exact byte divergence is not established from the retained log and must not be guessed into the scientific record.
+
+This failure changes no Q2-M1 scientific definition, threshold, parameter, observer, source equation, Q1 result, Q2 result, or Q3 result. It also does not validate or falsify the proposed `mu` causal-reuse path.
+
+The only permitted next step is to freeze an exact candidate byte identity through a transport path that can be independently read back, then rerun the same supported-runtime regression gate from the beginning. No official Stage A science may run until the exact tested runner and test are branch-reachable and their identities are recorded in this report.
