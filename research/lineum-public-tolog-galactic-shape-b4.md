@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; version `0.25.1` completes the observer/noise/cap definitions before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.1 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; version `0.25.1` completes the observer/noise/cap definitions and version `0.25.2` records the recovered historical prose/code ordering divergence before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.2 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `1fee3399f78c8ca5064843571c68eb70e2929bbb` \
+**Checkpoint parent:** `8655c7028afaf1c60b547bc962b7d04a0b7f89d5` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2003,3 +2003,25 @@ median normalized matched-field difference <= 1e-6
 where the normalized matched-field comparison is evaluated only when neither lane approaches its cap. For causal C4, the existing sensitivity rule remains unchanged: the qualitative causal classification must match the primary, and where both compared causal divergences exceed the numerical floor their median ratio must lie in `[0.5, 2.0]`.
 
 No post-result threshold selection is permitted. The next executable step remains implementation and regression testing of the research-scoped Stage A runner only; no official Stage A science may be inspected until that runner and its tests are branch-reachable at frozen identities.
+
+### Q2-M1 historical source-off / echo ordering divergence — version `0.25.2`
+
+A pre-implementation audit recovered a material disagreement inside the older current-engine label-retention record. Its narrative protocol describes a source-removal interval before later causal reuse, but the embedded historical Python builds C0-C4 directly from the `imprint_states` arrays, replaces `psi` with the common state, and does **not** feed the 2000-step passive source-off states into those causal lanes.
+
+This is a historical documentation/reference-code divergence. It is preserved rather than silently reconciled. No retained full C0-C5 result was recovered on the current branch, so neither ordering has a retained causal outcome that can choose between them.
+
+`Q2-M1` does not change in response to this discovery. Versions `0.25.0` and `0.25.1` already froze the stricter sequence before any new outcome was inspected:
+
+```text
+labelled imprint
+-> set psi = 0 and disable further mu deposition
+-> 2000 source-off updates
+-> inject the same psi_common into both histories
+-> causal echo lanes C0-C5
+```
+
+The scientific reason is explicit: the owner-inspired candidate is a retained description/guide. Requiring the candidate history to survive removal of the original `psi` before it is asked to affect a later identical current state is a stronger and more direct discriminator of that hypothesis than immediately reusing the imprint state.
+
+Therefore the forthcoming Stage A runner is a **new preregistered source-off causal-reuse test using the active Core**, not a byte-for-byte or semantic reproduction of the older embedded C-lane implementation. The older embedded code remains historical evidence of a different ordering and is not rewritten.
+
+This clarification changes no Q2-M1 parameters, observers, thresholds, state equations, nuisance variants, or outcome map. It is frozen before runner implementation and before any causal-memory execution.
