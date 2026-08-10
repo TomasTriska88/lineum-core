@@ -1,0 +1,136 @@
+name: Q2 mu C3 control preregistration
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/q2-mu-c3-control-prereg.yml
+
+permissions:
+  contents: write
+
+jobs:
+  preregister:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact trigger
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Verify frozen base
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = "6be9102a2b67eef97d1268b94885413f1a31b991"
+          test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "2c0804f16c6029d5f91c8fcac0e1345c6fe6099c"
+          test ! -e research/runners/lineum_b4_q2_mu_causal_echo.py
+          test ! -e tests/research/test_lineum_b4_q2_mu_causal_echo.py
+          git fetch origin develop
+          test "$(git rev-parse origin/develop)" = "$GITHUB_SHA"
+
+      - name: Record final C3 implementation controls before runner publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import textwrap
+
+          path = Path("research/lineum-public-tolog-galactic-shape-b4.md")
+          text = path.read_text(encoding="utf-8")
+          if text.count("**Version:** 0.25.5") != 1:
+              raise SystemExit("unexpected report version")
+          text = text.replace("**Version:** 0.25.5", "**Version:** 0.25.6", 1)
+
+          old_parent = "**Checkpoint parent:** `99dafc744d08172a708010e00ad5ef7e7319b3db`"
+          new_parent = "**Checkpoint parent:** `6be9102a2b67eef97d1268b94885413f1a31b991`"
+          if text.count(old_parent) != 1:
+              raise SystemExit("unexpected checkpoint parent")
+          text = text.replace(old_parent, new_parent, 1)
+
+          old_status = "so no causal-memory result exists yet; Questions 1 and 3 remain unchanged"
+          new_status = (
+              "so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, "
+              "scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; "
+              "Questions 1 and 3 remain unchanged"
+          )
+          if text.count(old_status) != 1:
+              raise SystemExit("unexpected status phrase")
+          text = text.replace(old_status, new_status, 1)
+
+          addition = textwrap.dedent(r'''
+          ### Q2-M1 final C3 nuisance-control and validity lock — version `0.25.6`
+
+          A final pre-run implementation audit found that the already frozen sentence "C3 itself ... must not be cap- or grid-sensitive" was stricter than the operational C4/C5 definitions immediately below it: C4 and C5 were full-history controls, so they could not by themselves establish that an apparent `mu`-only C3 effect was cap- and grid-independent. No Q2-M1 causal-memory output has been executed or inspected. This checkpoint therefore resolves the mismatch before runner publication; it does not change the hypothesis, equations, parameter values, causal thresholds, return thresholds, nuisance family, horizons, or decision meaning.
+
+          The implementation lock is:
+
+          ```text
+          C3-cap control:
+              repeat the C3 intervention on the complete mu_cap=100 history;
+              compare its final median D_psi with primary C3;
+              both lanes must have valid finite/reset-free/cap-safe histories;
+              qualitative single-channel pass/fail must match;
+              if both values exceed their own single-channel floors,
+              the cap-raised / primary median D_psi ratio must lie in [0.5, 2.0].
+
+          C3-grid control:
+              on the two frozen representative tuples R0/R1,
+              apply the already frozen quarter-turn + label-swap transformation
+              to the complete final source-off state;
+              apply the C3 intervention (retain mu, erase phi) in both normal and transformed lanes;
+              after echo and inverse correspondence, normalized psi/phi/mu state errors
+              must each be <= 1e-10.
+
+          scale controls:
+              for dt=0.05 and N=96 representatives, preserve the frozen qualitative
+              C0-C3 signature; for each of C1, C2, and C3 separately, whenever both
+              compared D_psi values exceed that lane's applicable preregistered floor,
+              control / primary median D_psi must lie in [0.5, 2.0].
+
+          cap validity:
+              the mu_cap=100 imprint, source-off, and causal histories are subject to
+              the same finite, reset-free, psi/phi cap-distance gates as the primary;
+              its mu gate is max(mu) < 0.25*100.
+
+          reset validity:
+              because the NumPy Core fail-safe reports a psi reset by printing the
+              stable marker "LINEUM FAIL-SAFE", the research runner must capture the
+              step_core stdout for each update and fail the lane if that marker occurs;
+              a heuristic zero-after-nonzero check may remain only as a secondary diagnostic.
+          ```
+
+          `C4` and the existing full-history C5 remain useful joint-history nuisance controls and are not removed. The new C3-specific controls prevent them from being misused as evidence about `mu` alone.
+
+          The owner-inspired `mu` path may therefore be classified as a retained C3 candidate only when passive `mu` retention passes, primary C3 passes its frozen single-channel causal gate, the frozen channel-zeroing condition is satisfied, and the C3-specific cap, grid, timestep, resolution, and numerical-validity controls above all pass. Failure of one of these nuisance gates is `inconclusive`/`confounded`, not a negative result for all memory mechanisms.
+
+          This clarification is preregistration, not evidence. No Stage A scientific execution is authorized until the exact runner and permanent tests implementing this lock pass the supported-runtime regression gate and become branch-reachable with recorded identities.
+          ''').strip()
+
+          marker = "### Q2-M1 final C3 nuisance-control and validity lock — version `0.25.6`"
+          if marker in text:
+              raise SystemExit("0.25.6 already present")
+          path.write_text(text.rstrip() + "\n\n" + addition + "\n", encoding="utf-8")
+          PY
+
+          grep -Fq '**Version:** 0.25.6' research/lineum-public-tolog-galactic-shape-b4.md
+          grep -Fq 'Q2-M1 final C3 nuisance-control and validity lock' research/lineum-public-tolog-galactic-shape-b4.md
+          git diff --check
+          test "$(git diff --name-only)" = "research/lineum-public-tolog-galactic-shape-b4.md"
+
+      - name: Commit report and remove workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Lineum Research Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/q2-mu-c3-control-prereg.yml
+          git add research/lineum-public-tolog-galactic-shape-b4.md
+          test "$(git diff --cached --name-only | sort | tr '\n' ' ')" = ".github/workflows/q2-mu-c3-control-prereg.yml research/lineum-public-tolog-galactic-shape-b4.md "
+          git diff --cached --check
+          git commit -m "research: lock Q2 mu C3 nuisance controls"
+          git fetch origin develop
+          test "$(git rev-parse origin/develop)" = "$GITHUB_SHA"
+          git push origin HEAD:develop
