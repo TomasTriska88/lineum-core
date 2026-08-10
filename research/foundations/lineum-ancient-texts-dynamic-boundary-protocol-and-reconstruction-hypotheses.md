@@ -1746,3 +1746,305 @@ FAC1 must now isolate the explicit paired mode-coupling debit/credit, `Phi -> Ps
 
 **Resume instruction for a new conversation:** read the current repository rules and this report from `develop`, verify its current SHA, then continue from FAC1. Treat FAC0-R1 as `reproduced` at the implementation level only; retain every historical negative, contradiction, source-critical restriction, and the zero-evidence boundary on ancient-physics claims.
 
+## 29. Whole-research synthesis and FAC1 first-current-Core application preregistration
+
+### 29.1 Answer first
+
+A whole-research review was performed before choosing the first application of the completed Priority A-through-F known-answer toolkit to current Lineum. The cheapest cross-programme discriminator is Priority B, operationalized by `FAC1` on the current `step_core` implementation.
+
+This selection is not based on thematic proximity to the ancient-text lane. It follows dependency structure across current evidence:
+
+```text
+Priority A cohesion:
+    deferred because no stable localized or collective Lineum object has yet passed the required existence and source-off gates;
+
+Priority B source/accounting:
+    selected because it applies directly to the current update map, FAC0-R1 already reproduced the directed graph, and source/receiver closure is upstream of new-state claims;
+
+Priority C body/residual taxonomy:
+    deferred because no current remnant has yet passed the causal-residual or autonomous-descendant gates;
+
+Priority D relational identity:
+    deferred because current particle/copying evidence does not yet provide a validated Lineum collective whose identity can be tested under turnover;
+
+Priority E nested observer/history:
+    retained as high-value later work and already partially represented by the mu/history programme, but current accounting semantics remain a more basic unresolved prerequisite;
+
+Priority F binary-mechanism discriminator:
+    deferred because no live binary ontology question is currently the lowest-level blocker.
+```
+
+The first actual-Lineum application of the A-through-F toolkit is therefore:
+
+```text
+Priority B known-answer accounting logic
+    -> FAC1 term-isolated accounting on actual current step_core
+```
+
+A pass cannot establish physical energy. It can only classify current implementation terms as near-paired debit/credit, unpaired feedback/write, supplied non-evolving modulation, or sink without an explicit receiver in the current step contract.
+
+### 29.2 Current snapshot and continuity
+
+At selection time:
+
+```text
+develop HEAD = bac86c82d3fbf5c3a986620f6d6ecd5eeeadfdbe
+current lineum_core/math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC0-R1 validated math.py blob = bb877021810691223a0eb960a45493a2e351112a
+current standalone A-F audit blob = f8ac8352986a3b1df3662960e63e7c57ba53125d
+current standalone A-F audit version = 0.7.0
+root report blob = 3fba3925553cd5596e46c02fa35d1db91523537d
+continuity ledger blob = 5304874451caf32313ad0e8e3c59e53958698d79
+```
+
+Comparison from the previous report snapshot `b894f1c5a34683c9bbcbc703d47176b2577fbcbc` to the current `develop` head found many repository changes but no change to `lineum_core/math.py`. FAC1 is therefore frozen against exactly the Core implementation already exercised by FAC0-R1 rather than silently targeting a moved numerical map.
+
+The linked ClickUp task still contains a stale operational checkpoint saying supported FAC0 replay is blocked. Git is newer and remains the scientific source of truth; this operational mismatch does not alter the FAC0-R1 result or FAC1 protocol.
+
+The local execution environment again failed to resolve `github.com` on 2026-08-10. This is a repeated infrastructure limitation, not a scientific negative result. The one-use GitHub-hosted execution path is therefore permitted under the repository local-execution exception after the protocol and executable are committed.
+
+### 29.3 Exact scientific question
+
+Can a term-isolated accounting harness, while reproducing the exact current NumPy `step_core` output, distinguish the one explicit mode-coupling debit/credit from current unpaired writes and feedbacks without inventing a physical-energy interpretation?
+
+The tested classifications are:
+
+```text
+mode coupling:
+    expected near-paired implementation-defined |Psi|^2 debit / Phi credit;
+
+fallback Psi-to-Phi reaction:
+    expected unpaired Phi write with no same-term Psi debit;
+
+Phi interaction -> Psi:
+    expected unpaired feedback with no same-term Phi debit;
+
+grad(Phi) -> Psi drift:
+    expected unpaired feedback with no same-term Phi debit;
+
+Psi activity -> mu:
+    expected unpaired memory/reinforcement write with no same-term Psi debit;
+
+mu modulation -> Psi:
+    expected feedback effect without same-term mu debit;
+
+kappa modulation:
+    expected high-leverage supplied input that changes terms while kappa itself is not evolved;
+
+linear Psi dissipation and mu decay:
+    expected sinks without explicit receiving states in this step contract.
+```
+
+`Phi` diffusion and `Psi` diffusion are retained in exact update ordering for full-step parity, but FAC1 does not promote their summed scalar change into a physical transport law. FAC2 remains responsible for complete software source/sink bookkeeping.
+
+### 29.4 Frozen state, configuration, and bookkeeping quantities
+
+FAC1 reuses the deterministic FAC0 base state so that the accounting question is tested on a source-audited region rather than a newly tuned state:
+
+```text
+grid = 10 x 10
+X,Y in [-1,1]
+Psi = (0.25 + 0.04 cos(pi X) cos(pi Y)) * exp(i (0.3 X - 0.2 Y))
+Phi = 0.35 + 0.06 X + 0.04 Y + 0.015 cos(2 pi X)
+kappa = 0.8 + 0.03 cos(pi X) sin(pi Y)
+mu = 0.12 + 0.02 sin(pi X) cos(pi Y)
+delta = 0.01 sin(2 pi X) sin(pi Y)
+```
+
+Two frozen branches use the same state and all common settings:
+
+```text
+dt = 0.1
+psi_diffusion = 0.05
+phi_diffusion = 0.05
+reaction_strength = 0.0007
+drift_strength = -0.004
+stencil_type = LAP4
+physics_mode_psi = diffusion
+disable_quantum_noise = true
+phi_diffusion_scales_with_dt = true
+use_mu = true
+mu_eta = 0.005
+mu_rho = 0.0001
+mu_cap = 10
+mu_peak_cutoff_ratio = 0.1
+psi_amp_cap = 1e6
+grad_cap = 1e6
+phi_cap = 1e6
+disable_pml = true
+```
+
+Branch `paired_mode` sets:
+
+```text
+use_mode_coupling = true
+mode_coupling_strength = 0.001
+```
+
+Branch `fallback_mode` sets:
+
+```text
+use_mode_coupling = false
+```
+
+The research bookkeeping scalars are deliberately implementation-defined:
+
+```text
+Qpsi = sum(|Psi|^2)
+Qphi = sum(Phi)
+Qmu  = sum(mu)
+```
+
+They are not named total physical energy, charge, mass, or another physical invariant.
+
+### 29.5 Frozen harness and independence structure
+
+FAC1 uses four checks that are distinct enough to expose different failure modes:
+
+1. direct source audit of the exact current `math.py` update ordering;
+2. actual `step_core` execution on the frozen state;
+3. a research-only mirror that independently transcribes the NumPy diffusion helper and exact term ordering, then records before/after term receipts;
+4. an analytic prediction of the small mode-coupling debit/credit residual caused by the current normalization denominator `sqrt(e_psi) + 1e-12`.
+
+The mirror is not an independent physical model. It shares the same declared equations and is used to isolate terms without modifying production Core. Full-step output parity against actual `step_core` is mandatory before any term receipt is accepted.
+
+### 29.6 Frozen observables and thresholds
+
+The following thresholds are fixed before official execution:
+
+```text
+full-step mirror versus actual step_core max-absolute parity:
+    <= 1e-12 for Psi, Phi, kappa, and mu;
+
+same-term state declared unchanged:
+    max absolute delta <= 1e-15;
+
+required nonzero term signal:
+    L2 or scalar magnitude >= 1e-10;
+
+mode-coupling relative debit-credit residual:
+    abs(Qpsi_debit - Qphi_credit) / abs(Qphi_credit) <= 1e-6;
+
+mode residual versus analytic normalization prediction:
+    absolute error <= 1e-12;
+
+mode floor control:
+    min(e_psi - delta_e) > 0, so the max(...,0) floor is not active;
+
+numerical safety:
+    fail-safe false;
+    max |Psi| < 0.1 * psi_amp_cap;
+    max Phi < 0.1 * phi_cap;
+    max mu < 0.25 * mu_cap.
+```
+
+The mode residual is not required to be exactly zero because the current implementation does not perform a mathematically exact magnitude replacement: it divides by `sqrt(e_psi) + 1e-12`. FAC1 explicitly predicts and measures that finite implementation residual rather than hiding it under the source comment `Energy conservation`.
+
+### 29.7 Frozen branch decisions
+
+`paired_mode` passes only if all common checks pass and:
+
+```text
+Qphi credit is nonzero;
+Qpsi debit is nonzero;
+no mode floor activation occurs;
+relative debit-credit residual <= 1e-6;
+measured residual matches the analytic normalization residual within 1e-12.
+```
+
+`fallback_mode` passes only if all common checks pass and:
+
+```text
+fallback Phi write is nonzero;
+same-term Qpsi change during the fallback reaction is <= 1e-15.
+```
+
+Both branches also require:
+
+```text
+Phi-gradient drift term nonzero and no same-term Phi write;
+Phi interaction term nonzero and no same-term Phi write;
+Psi-to-mu accumulation nonzero and no same-term Psi debit;
+mu counterfactual changes at least one Psi-driving term while mu itself is not debited by those terms;
+kappa counterfactual changes at least one Psi-driving term while returned kappa is unchanged;
+no fail-safe or cap-near regime.
+```
+
+### 29.8 Outcome interpretation frozen before execution
+
+If full-step parity fails, the result is a **methodological harness failure**. No scientific classification is accepted until the mirror is corrected and the corrected bytes are committed before rerun.
+
+If parity passes but a source-predicted term classification fails, the contradiction is retained as an **implementation-accounting result**. Thresholds, state, or classifications may not be tuned to recover the expected answer.
+
+If the complete FAC1 decision passes, only the following may be stated:
+
+```text
+current mode coupling is an explicit near-paired implementation-defined scalar debit/credit in the frozen current-Core state;
+registered fallback, Phi-to-Psi, Psi-to-mu, and mu-to-Psi controls behave as unpaired writes/feedbacks in the frozen current-Core state;
+kappa is a supplied non-evolving high-leverage input in the current step contract;
+registered dissipation/decay terms remove implementation quantities without explicit receiving states in that step contract.
+```
+
+Even a full pass does **not** establish:
+
+```text
+Qpsi + Qphi + Qmu = physical energy;
+mode coupling conserves a physical energy law;
+Phi, mu, or kappa is a physical energy reservoir;
+a new fundamental field is required;
+FAC2 software accounting will close;
+Lineum corresponds to real physics;
+ancient texts encode these mechanisms.
+```
+
+A decision-relevant scientific negative that invalidates the expected accounting class is preserved before any redesign. If that negative materially opens a replacement-mechanism choice, the repository owner-intuition gate applies before selecting the repair. Technical execution failures do not open that gate.
+
+### 29.9 Frozen executable artifacts and execution route
+
+The preregistered artifacts for the first official run are:
+
+```text
+runner path:
+research/runners/lineum_fac1_term_accounting.py
+runner Git blob:
+62e95d48661cc91855629fa9686b0941344c9b6b
+
+test path:
+tests/research/test_lineum_fac1_term_accounting.py
+test Git blob:
+3fc47712c0025d2cab8a3772a1ce554be20535fc
+
+one-use workflow path:
+.github/workflows/fac1-term-accounting-one-use.yml
+workflow Git blob:
+f7f72333fead1efcf87cc5201e71dc8fd9ff1127
+```
+
+These blobs were staged before publication but are not scientific evidence while unreferenced. The official run may begin only after this report section and those exact blobs are published together on `develop` from the frozen base head.
+
+The one-use remote environment is frozen as:
+
+```text
+GitHub-hosted ubuntu runner
+Python 3.11
+NumPy 1.26.4
+pytest >=8,<9
+LINEUM_DEVICE=numpy
+PYTHONPATH=.
+```
+
+This remote execution is allowed only because the active local environment cannot obtain a repository checkout through the current `github.com` DNS failure. The workflow is temporary execution infrastructure, not a transport format or evidence substitute. After the result is retained in this report and a plain machine-readable companion where needed, the one-use workflow must be removed in the same coherent checkpoint unless an independently justified lasting CI role is found.
+
+### 29.10 Relationship to the A-through-F toolkit and next gate
+
+This checkpoint is the first application of a validated A-through-F known-answer concept to the actual current Lineum implementation. It does not mean the toy Priority-B architectures are present in Core. Instead, it uses Priority B's key lesson — visible activity alone does not identify source topology and transfer requires explicit debit/credit/receiver accounting — to audit the live update terms.
+
+```text
+A_through_F_known_answer_toolkit = supported_within_declared_toy_domains_only
+first_actual_Lineum_application = Priority_B_via_FAC1
+FAC1_status = preregistered_execution_pending
+FAC2_status = blocked_until_FAC1_result_is_retained
+physical_or_metaphysical_correspondence = not_established
+```
+
+If FAC1 passes, the next planned discriminator is FAC2 complete software source/sink bookkeeping. If FAC1 produces a verified decision-relevant negative, the result must be retained and its impact resolved before FAC2 or any replacement mechanism proceeds.
