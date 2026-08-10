@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; version `0.25.1` completes the observer/noise/cap definitions and version `0.25.2` records the recovered historical prose/code ordering divergence before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.2 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; no new causal-memory execution has yet been performed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.3 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `8655c7028afaf1c60b547bc962b7d04a0b7f89d5` \
+**Checkpoint parent:** `dd37c78b8e939b48901ca245cb047f68df18a9cb` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2025,3 +2025,51 @@ The scientific reason is explicit: the owner-inspired candidate is a retained de
 Therefore the forthcoming Stage A runner is a **new preregistered source-off causal-reuse test using the active Core**, not a byte-for-byte or semantic reproduction of the older embedded C-lane implementation. The older embedded code remains historical evidence of a different ordering and is not rewritten.
 
 This clarification changes no Q2-M1 parameters, observers, thresholds, state equations, nuisance variants, or outcome map. It is frozen before runner implementation and before any causal-memory execution.
+
+### Q2-M1 final implementation lock before runner — version `0.25.3`
+
+This checkpoint resolves the remaining operational ambiguities found during pre-implementation review. It is frozen before the Stage A runner exists and before any new causal-memory outcome is inspected. No state equation, primary parameter, causal threshold, Q2 return threshold, label family, or horizon is changed.
+
+**Cap-raised semantics.** `P4` and `C4` use `mu_cap = 100` for the complete history of their control trajectory beginning at imprint. They are not produced by taking a primary `mu_cap = 10` imprint and changing the cap only afterward. `P5` remains different by design: `mu_rho = 0.01` applies only during the source-off interval, exactly as preregistered.
+
+**Representative sensitivity tuples.** The two frozen representative nuisance tuples at `N = 64` are:
+
+```text
+R0 = (separation=12, width=2.5, shift_x=0, shift_y=0)  # schedule index 12
+R1 = (separation=12, width=3.5, shift_x=0, shift_y=0)  # schedule index 17
+```
+
+The `dt = 0.05` confirmation uses those same geometries and doubles imprint, source-off, and echo update counts. The `N = 96` confirmation multiplies every geometric length by `96/64`: separations become `18`, widths become `3.75` and `5.25`, and the common-state Gaussian width becomes `7.5`. The representative shifts remain zero.
+
+**Explicit array-coordinate convention.** Runner arrays are indexed as `[row, column]`. For observers only, physical display coordinates are defined as `x = column_coordinate` and `y = row_coordinate`. A horizontal A label separates its lobes along columns; a vertical B label separates them along rows. A tuple `(shift_x, shift_y)` is applied as `np.roll(field, (shift_y, shift_x), axis=(0,1))`. This reproduces the historical geometry while avoiding ambiguous derivative naming.
+
+**Quarter-turn grid control.** `C5` is evaluated on R0 and R1. For a normal full-history pair `(A,B)`, construct the transformed pair by applying one `np.rot90` quarter-turn to the complete source-off state and swapping labels: transformed A is `rot90(B)` and transformed B is `rot90(A)`. The common circular `psi` state is transformed by the same operation. After echo, compare transformed outputs with the corresponding quarter-turned normal full-history outputs channel by channel. For each of `psi`, `phi`, and `mu` the normalized pair distance must be `<= 1e-10`. Failure is `grid_orientation_confounded`. This is a symmetry validity check, not evidence for memory.
+
+**Observer random streams.** Every stochastic observer-only operation receives an independent deterministic NumPy generator constructed as:
+
+```text
+np.random.default_rng(np.random.SeedSequence([20260804, channel_id, checkpoint_code, purpose_id]))
+channel_id: psi=0, phi=1, mu=2
+checkpoint_code: 0 for pristine P0; otherwise source-off checkpoint + 1
+purpose_id: quadrupole permutation=10, pooled permutation=11,
+            low readout noise=20, high readout noise=21,
+            low-noise quadrupole permutation=30, low-noise pooled permutation=31,
+            high-noise quadrupole permutation=32, high-noise pooled permutation=33
+```
+
+There is no stochastic dynamics because quantum noise is disabled. Observer random streams therefore cannot alter a trajectory.
+
+**Noise-gate ambiguity resolved conservatively.** For Q2-M1, both fixed observers separately must satisfy the low/high readout-noise conditions in order for a passive channel to be classified `retained_within_tested_domain`:
+
+```text
+low-noise balanced-accuracy loss <= 0.05
+high-noise balanced accuracy >= 0.80
+```
+
+The noise copies are independently classified with the same fixed quadrupole rule and with pooled centroids trained only from noisy training fields of that same noise level. Both noise observers also retain the already frozen permutation `p <= 0.01` requirement.
+
+**Cap-independence observer rule.** The `mu_cap = 10` versus `mu_cap = 100` held-out balanced-accuracy difference must be `<= 0.05` for each fixed observer separately. The matched-field condition remains the median normalized field difference `<= 1e-6` at matched checkpoints when neither lane approaches its cap.
+
+**Source-off state is the causal input.** C0-C5 are constructed only from the final 2000-step source-off states defined by Q2-M1. The historical embedded code's immediate-post-imprint C-lane ordering is retained only as the distinct historical variant recorded in version `0.25.2` and cannot be substituted into the new runner.
+
+After this lock, runner implementation is mechanical. Any later need to change one of these scientific definitions after an outcome is visible requires retention of the original result and a separately preregistered new variant; the current Stage A result may not be retroactively reclassified under altered rules.
