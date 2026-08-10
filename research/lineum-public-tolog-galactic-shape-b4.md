@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; Questions 1 and 3 remain unchanged
-**Version:** 0.25.5 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; Questions 1 and 3 remain unchanged
+**Version:** 0.25.6 \
 **Evidence cutoff:** 2026-08-10
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `99dafc744d08172a708010e00ad5ef7e7319b3db` \
+**Checkpoint parent:** `a69436f92e0441742454fe20d97d7c9388a28d6a` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2123,3 +2123,52 @@ A first report-retention retry from commit `dbb4c1120db7db29efbd94b5b02141e45348
 The workflow-content transport approach is abandoned. The next implementation attempt must reconstruct a new runner/test candidate solely from the already frozen `0.25.0`-`0.25.3` protocol, stage the exact candidate source as ordinary Git objects, read those objects back by hash, and use CI only as a supported-runtime regression checker of that exact candidate. No runner or test byte identity from either failed transport attempt is retained source evidence.
 
 Stage A scientific execution remains prohibited until the exact regression-tested runner and test are branch-reachable on `develop`, their identities and supported environment are recorded in this report, and the temporary regression workflow is closed according to repository rules.
+
+### Q2-M1 final C3 nuisance-control and validity lock — version `0.25.6`
+
+A final pre-run implementation audit found that the already frozen sentence "C3 itself ... must not be cap- or grid-sensitive" was stricter than the operational C4/C5 definitions immediately below it: C4 and C5 were full-history controls, so they could not by themselves establish that an apparent `mu`-only C3 effect was cap- and grid-independent. No Q2-M1 causal-memory output has been executed or inspected. This checkpoint therefore resolves the mismatch before runner publication; it does not change the hypothesis, equations, parameter values, causal thresholds, return thresholds, nuisance family, horizons, or decision meaning.
+
+The first publication attempt for this clarification used workflow trigger commit `a69436f92e0441742454fe20d97d7c9388a28d6a` (run `31346065772`, job `93328131336`). Between the read-only branch check and `create_file`, unrelated parallel work advanced `develop` to `de16cfc8a31b71b943c29d5675e3d7e73b3c3cf0`; consequently the trigger commit's actual parent was `de16...` rather than the preregistration workflow's frozen expected parent `6be...`. The fail-closed parent check stopped the job before any report patch, runner/test publication, pytest, or scientific execution. This is `technical_branch_race_non_result` and has no scientific meaning.
+
+The implementation lock is:
+
+```text
+C3-cap control:
+    repeat the C3 intervention on the complete mu_cap=100 history;
+    compare its final median D_psi with primary C3;
+    both lanes must have valid finite/reset-free/cap-safe histories;
+    qualitative single-channel pass/fail must match;
+    if both values exceed their own single-channel floors,
+    the cap-raised / primary median D_psi ratio must lie in [0.5, 2.0].
+
+C3-grid control:
+    on the two frozen representative tuples R0/R1,
+    apply the already frozen quarter-turn + label-swap transformation
+    to the complete final source-off state;
+    apply the C3 intervention (retain mu, erase phi) in both normal and transformed lanes;
+    after echo and inverse correspondence, normalized psi/phi/mu state errors
+    must each be <= 1e-10.
+
+scale controls:
+    for dt=0.05 and N=96 representatives, preserve the frozen qualitative
+    C0-C3 signature; for each of C1, C2, and C3 separately, whenever both
+    compared D_psi values exceed that lane's applicable preregistered floor,
+    control / primary median D_psi must lie in [0.5, 2.0].
+
+cap validity:
+    the mu_cap=100 imprint, source-off, and causal histories are subject to
+    the same finite, reset-free, psi/phi cap-distance gates as the primary;
+    its mu gate is max(mu) < 0.25*100.
+
+reset validity:
+    because the NumPy Core fail-safe reports a psi reset by printing the
+    stable marker "LINEUM FAIL-SAFE", the research runner must capture the
+    step_core stdout for each update and fail the lane if that marker occurs;
+    a heuristic zero-after-nonzero check may remain only as a secondary diagnostic.
+```
+
+`C4` and the existing full-history C5 remain useful joint-history nuisance controls and are not removed. The new C3-specific controls prevent them from being misused as evidence about `mu` alone.
+
+The owner-inspired `mu` path may therefore be classified as a retained C3 candidate only when passive `mu` retention passes, primary C3 passes its frozen single-channel causal gate, the frozen channel-zeroing condition is satisfied, and the C3-specific cap, grid, timestep, resolution, and numerical-validity controls above all pass. Failure of one of these nuisance gates is `inconclusive`/`confounded`, not a negative result for all memory mechanisms.
+
+This clarification is preregistration, not evidence. No Stage A scientific execution is authorized until the exact runner and permanent tests implementing this lock pass the supported-runtime regression gate and become branch-reachable with recorded identities.
