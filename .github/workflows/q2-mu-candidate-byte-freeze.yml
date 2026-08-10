@@ -1,0 +1,48 @@
+name: Q2 mu candidate byte freeze
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - .github/workflows/q2-mu-candidate-byte-freeze.yml
+
+permissions:
+  contents: write
+
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact trigger
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Verify frozen base
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = "8ffd0a88f8acec3b61b73022ddd0f10127e4d154"
+          test ! -e research/runners/lineum_b4_q2_mu_causal_echo.py
+          test ! -e tests/research/test_lineum_b4_q2_mu_causal_echo.py
+          test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "$(git rev-parse HEAD^:research/lineum-public-tolog-galactic-shape-b4.md)"
+          git fetch origin develop
+          test "$(git rev-parse origin/develop)" = "$GITHUB_SHA"
+
+      - name: Materialize candidate bytes and freeze hashes only
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p research/runners tests/research
+          python - <<'PY'
+          import base64
+          from pathlib import Path
+
+          runner_b64 = Path('/tmp/runner.b64')
+          test_b64 = Path('/tmp/test.b64')
+          raise SystemExit('candidate payload is injected in the next workflow revision after GitHub accepts this transport shell')
+          PY
+
+      - name: Fail closed before any test or science
+        run: exit 1
