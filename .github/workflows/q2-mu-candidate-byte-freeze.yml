@@ -1,4 +1,4 @@
-name: Retain Q2 mu byte-freeze non-result
+name: Retain Q2 mu byte-freeze non-result retry
 
 on:
   push:
@@ -23,14 +23,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD^)" = "99dafc744d08172a708010e00ad5ef7e7319b3db"
+          test "$(git rev-parse HEAD^)" = "dbb4c1120db7db29efbd94b5b02141e4534807ab"
           test "$(git hash-object research/lineum-public-tolog-galactic-shape-b4.md)" = "4e363df1fec5faaec4356d1e40254724c545946b"
           test ! -e research/runners/lineum_b4_q2_mu_causal_echo.py
           test ! -e tests/research/test_lineum_b4_q2_mu_causal_echo.py
           git fetch origin develop
           test "$(git rev-parse origin/develop)" = "$GITHUB_SHA"
 
-      - name: Record technical non-result
+      - name: Record transport chronology
         shell: bash
         run: |
           set -euo pipefail
@@ -41,14 +41,12 @@ jobs:
           path = Path("research/lineum-public-tolog-galactic-shape-b4.md")
           text = path.read_text(encoding="utf-8")
 
-          old_version = "**Version:** 0.25.4 \\\\"
-          new_version = "**Version:** 0.25.5 \\\\"
-          if text.count(old_version) != 1:
+          if text.count("**Version:** 0.25.4") != 1:
               raise SystemExit("unexpected report version")
-          text = text.replace(old_version, new_version, 1)
+          text = text.replace("**Version:** 0.25.4", "**Version:** 0.25.5", 1)
 
-          old_parent = "**Checkpoint parent:** `6437b4cd3cd2b6a1f3957cd42d6eed167507787c` \\\\"
-          new_parent = "**Checkpoint parent:** `99dafc744d08172a708010e00ad5ef7e7319b3db` \\\\"
+          old_parent = "**Checkpoint parent:** `6437b4cd3cd2b6a1f3957cd42d6eed167507787c`"
+          new_parent = "**Checkpoint parent:** `99dafc744d08172a708010e00ad5ef7e7319b3db`"
           if text.count(old_parent) != 1:
               raise SystemExit("unexpected checkpoint parent")
           text = text.replace(old_parent, new_parent, 1)
@@ -69,9 +67,7 @@ jobs:
           addition = textwrap.dedent(r'''
           ### Q2-M1 candidate-byte freeze shell — technical transport non-result (`0.25.5`)
 
-          After the failed byte-identity gate recorded in `0.25.4`, a deliberately fail-closed transport shell was committed at `99dafc744d08172a708010e00ad5ef7e7319b3db` to test whether a candidate-byte freeze workflow definition itself could be accepted without risking scientific execution. GitHub Actions run `31344497196`, job `93323801233`, completed with failure exactly at the explicit placeholder materialization step.
-
-          The retained chronology is:
+          After the failed byte-identity gate recorded in `0.25.4`, a deliberately fail-closed transport shell was committed at `99dafc744d08172a708010e00ad5ef7e7319b3db`. GitHub Actions run `31344497196`, job `93323801233`, completed with failure at its explicit placeholder materialization step. No candidate payload was present.
 
           ```text
           checkout: passed
@@ -85,20 +81,21 @@ jobs:
           scientific JSON result: not created
           ```
 
-          This is classified as `technical_transport_shell_non_result`. It contains no Q2-M1 observation and neither supports nor falsifies causal reuse by `mu`.
+          This event is classified as `technical_transport_shell_non_result`. It contains no Q2-M1 observation and neither supports nor falsifies causal reuse by `mu`.
 
-          The workflow-content transport approach is abandoned at this checkpoint. The next implementation attempt must reconstruct a new runner/test candidate solely from the already frozen `0.25.0`-`0.25.3` protocol, stage the exact candidate source as ordinary Git objects, read those objects back by hash, and use CI only as a supported-runtime regression checker of that exact candidate. No runner or test byte identity from the failed or placeholder attempts may be treated as retained source evidence.
+          A first report-retention retry from commit `dbb4c1120db7db29efbd94b5b02141e4534807ab` (run `31345144288`, job `93325576384`) passed checkout and frozen chronology checks, then failed inside the report-patch step before the commit/removal step. No report change from that run was retained and no scientific command was executed. The exact inner text-match failure is not established by the retained empty job-log response and is therefore not guessed here.
 
-          Stage A scientific execution remains prohibited until the exact regression-tested runner and test are branch-reachable on `develop`, their identities and supported environment are recorded in this report, and the temporary regression workflow has been removed or otherwise closed according to repository rules.
+          The workflow-content transport approach is abandoned. The next implementation attempt must reconstruct a new runner/test candidate solely from the already frozen `0.25.0`-`0.25.3` protocol, stage the exact candidate source as ordinary Git objects, read those objects back by hash, and use CI only as a supported-runtime regression checker of that exact candidate. No runner or test byte identity from either failed transport attempt is retained source evidence.
+
+          Stage A scientific execution remains prohibited until the exact regression-tested runner and test are branch-reachable on `develop`, their identities and supported environment are recorded in this report, and the temporary regression workflow is closed according to repository rules.
           ''').strip()
 
           if "technical_transport_shell_non_result" in text:
               raise SystemExit("transport non-result already recorded")
-          text = text.rstrip() + "\n\n" + addition + "\n"
-          path.write_text(text, encoding="utf-8")
+          path.write_text(text.rstrip() + "\n\n" + addition + "\n", encoding="utf-8")
           PY
 
-          grep -Fq '**Version:** 0.25.5 \\' research/lineum-public-tolog-galactic-shape-b4.md
+          grep -Fq '**Version:** 0.25.5' research/lineum-public-tolog-galactic-shape-b4.md
           grep -Fq 'technical_transport_shell_non_result' research/lineum-public-tolog-galactic-shape-b4.md
           git diff --check
           test "$(git diff --name-only)" = "research/lineum-public-tolog-galactic-shape-b4.md"
