@@ -2478,3 +2478,206 @@ ancient_physics_correspondence = not_established
 ```
 
 No FAC2-R1 scientific execution occurred before this preregistration. The official execution route must still satisfy the current local-execution rule, preserve the exact runner/test bytes above, and retain the first result whether it passes or fails.
+
+## 32. FAC2-R1 supported-runtime result, minimality impact, and return-to-source decision
+
+### 32.1 Current authoritative checkpoint
+
+This append-only section is the authoritative current checkpoint and supersedes older resume/status text above where that text describes FAC2-R1 as pending or implies that FAC3/FAC4/FAC5 must be the immediate next action in this report.
+
+```text
+active report version = 0.4.3
+active evidence cutoff = 2026-08-11
+FAC0_R1_status = reproduced_within_frozen_current_Core_domain
+FAC1_status = reproduced_within_frozen_current_Core_domain
+FAC2_R1_status = reproduced_within_frozen_current_NumPy_domain
+FAC2_full_cross_backend_status = not_complete
+physical_energy_claim = not_established
+new_state_required = not_established
+current_model_overparameterized_or_reducible = live_hypothesis_not_tested_by_R1
+ancient_physics_correspondence = not_established
+next_action_for_this_report = source_critical_LAEC0_audit
+```
+
+The top-of-file version `0.4.2` is preserved as the previous checkpoint metadata rather than rewritten during this connector-safe append. Version `0.4.3` in this section is the current active version for continuation.
+
+FAC2-R1 passed exactly within its preregistered scope: the current NumPy diffusion step can be decomposed into sequential software receipts for `Qpsi`, `Qphi`, and `Qmu`, and the term-isolating mirror reproduces the actual production `step_core` output in the tested branches. This is not a physical conservation law and it does not imply that the present field/state inventory is minimal.
+
+### 32.2 Execution and provenance receipt
+
+The official run used the already preregistered one-use GitHub-hosted execution route because the active local runtime could not resolve `github.com` and could not obtain a usable checkout.
+
+```text
+execution commit = 09e68b0fb1c3cf89384c329228c4b141beb406e0
+math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC2-R1 runner blob = 9f8e107a1ca80fe2089bca220b5feeec45307368
+FAC2-R1 test blob = bea7a86d7c80f75ec87843ad0821cf53c5408cca
+FAC2-R1 preregistration report blob = 982eb983ce2341ee13931720eacecd7dcf680ab1
+GitHub Actions run = 31523666736
+GitHub Actions job = 93886625906
+runner image = Ubuntu 24.04.4 / ubuntu-24.04 image 20260720.247.2
+Python = 3.11.15
+NumPy = 1.26.4
+pytest = 8.4.2
+LINEUM_DEVICE = numpy
+PYTHONPATH = .
+regression gate = 4 passed in 0.54s
+official primary JSON SHA-256 = f62c4c5959394efe5ad1433127c53fb82a906c15cc16b0160a1389b63cf70de1
+```
+
+A plain decision-relevant extraction is retained beside this report as `research/foundations/lineum-ancient-texts-fac2-r1-numpy-componentwise-accounting-supported-runtime.json`, Git blob `a0b7ff1aaae33d0ea6ba57c61413dca0e1e5721e`. It explicitly identifies itself as an extraction rather than a byte-for-byte replacement for the workflow stdout payload; the official primary-output SHA above remains the integrity identifier for the exact run output.
+
+### 32.3 What was observed
+
+Full-step parity between the research mirror and actual `step_core` was exact at floating comparison for the returned `Psi`, `Phi`, `mu`, and `kappa` states in the reported branches. Componentwise sequential ledger residuals were `0.0` for `Qpsi`, `Qphi`, and `Qmu` in the deterministic paired, deterministic fallback, stochastic paired, and guard-stress branches.
+
+The deterministic paired branch retained the FAC1 mode-coupling structure:
+
+```text
+whole-step Qpsi delta = 0.006176788237322484
+whole-step Qphi delta = 0.0005060066937971897
+whole-step Qmu delta = 0.002336778240062287
+mode delta_e sum = 0.0005060066937942372
+same-term Qpsi delta = -0.000506006743897558
+same-term Qphi delta = 0.0005060066937971897
+min(e_psi - delta_e) = 0.04515291383615054
+```
+
+The deterministic fallback branch remained an unpaired `Phi` write at the corresponding reaction block:
+
+```text
+whole-step Qpsi delta = 0.0066827949812200416
+whole-step Qphi delta = -0.2644319479792898
+whole-step Qmu delta = 0.002336778240062287
+fallback reaction Qphi delta = -0.2644319479792969
+fallback reaction same-term Qpsi delta = 0.0
+```
+
+The frozen stochastic seed produced a real open source signal rather than a zero-event control:
+
+```text
+seed = 0
+linon_count = 69
+source state increment L2 = 0.02433380528507448
+interaction state increment L2 = 0.0031762250490760167
+combined state increment L2 = 0.027005650268690933
+combined Qpsi receipt = 0.11679579674638152
+source Qpsi marginal given interaction = 0.1009597823345878
+interaction Qpsi marginal given source = 0.015963097073015575
+```
+
+Because `Qpsi` is quadratic and production adds the source and interaction increments in the same `Psi` statement, the two counterfactual marginals are not unique additive shares of a physical or software energy. The exact combined receipt is retained; the marginals remain diagnostics only.
+
+`disable_pml`, `fold_mode`, and `fold_scope` produced zero state difference in the tested NumPy diffusion path, as predicted by source inspection. This confirms only their lack of state effect in that path; it does not test the PyTorch/wave PML or escape-fold mechanisms.
+
+### 32.4 Numerical-guard and telemetry limitation
+
+The guard-stress branch deliberately entered a numerical-protection regime and still preserved exact mirror parity and zero componentwise sequential ledger residual:
+
+```text
+Psi cap-after-drift trigger count = 68
+Psi-cap Qpsi receipt = -0.7852309289533155
+Phi clip trigger count = 17
+Phi-clip Qphi receipt = -0.3986421946253529
+mu clip trigger count = 30
+mu-clip Qmu receipt = -0.20740207441242475
+final Psi fail-safe reset = true
+fail-safe Qpsi receipt = -5.539712841229751
+```
+
+The production NumPy telemetry nevertheless reported:
+
+```text
+cap_triggers = 0
+fold_triggers = 0
+```
+
+while direct state instrumentation observed the guard activity above. This is retained as a real NumPy telemetry-reporting limitation. It is not a physical anomaly, not evidence for a missing state, and not a failure of the frozen numerical accounting mirror.
+
+### 32.5 Adversarial interpretation of the green result
+
+FAC2-R1's zero ledger residual is partly telescoping by construction: exact sequential before/after receipts must sum to the endpoint change when every executed block is represented correctly. Therefore `ledger residual = 0` is not promoted as a deep conservation discovery.
+
+The decision-relevant information is narrower:
+
+1. the independently arranged term-isolating mirror reproduces production `step_core` exactly in the tested branches;
+2. the registered NumPy update blocks and numerical guards are captured in their actual execution order;
+3. the stochastic/linon source is a nonzero open `Psi` state injection without a finite source stock in the current step contract;
+4. PML and escape-fold flags have no state effect in this NumPy diffusion path;
+5. direct guard instrumentation reveals state-changing protection events that current NumPy telemetry does not identify.
+
+These results close the narrow Priority-B implementation-accounting question for this NumPy path. They do not close a physical resource law and they do not complete FAC2 across every backend.
+
+### 32.6 Mandatory evidence separation
+
+#### A. What the implementation computes
+
+The current NumPy diffusion path executes the ordered source, feedback, diffusion, mode/fallback, clipping, memory, decay, and fail-safe operations preregistered in Section 31. It does not execute PML or the `Phi` escape-fold path, and `kappa` is returned unchanged.
+
+#### B. What was reproducibly observed
+
+The official supported-runtime run reproduced the production step exactly in the frozen branches, obtained zero componentwise sequential ledger residuals, produced 69 stochastic linon events at the frozen seed, exercised every preregistered guard in the stress branch, and reproduced the expected NumPy PML/fold no-op controls.
+
+#### C. Cautious interpretation
+
+Within the frozen NumPy step, there is no unexplained software endpoint residual after the actual executed blocks are instrumented. This reduces the motivation to invent another state merely to explain a one-step bookkeeping discrepancy. It does not show that the current state inventory is physically complete or minimal.
+
+#### D. Live hypotheses and minimality
+
+The state-minimality alternative is now explicit:
+
+```text
+current model may already be overparameterized or redundantly represented;
+mu may remain reducible to sufficiently informative Psi/Phi history;
+kappa may remain an effective supplied scaffold rather than a fundamental dynamic substance;
+source/receiver diagnostic buckets may be bookkeeping devices rather than physical fields;
+existing relationships may be sufficient once observer and interpretation are corrected;
+a new independent state remains a last-resort candidate, not the default repair.
+```
+
+FAC2-R1 did not test those reduction hypotheses. It only removes one possible reason for adding complexity: an unexplained software ledger residual in the frozen NumPy step.
+
+#### E. Real physics and ancient-text correspondence
+
+No FAC2-R1 quantity was calibrated as real physical energy, mass, charge, flux, or another empirical observable. No comparison with nature was performed. The fact that the Priority-B accounting distinction was productively inspired by ancient-text motifs adds zero evidence that those texts encoded Lineum or modern physics.
+
+### 32.7 Programme impact and report-scope boundary
+
+The Priority-B ancient/accounting motif has now done useful work: it generated a concrete discriminator, first through FAC1 and then through FAC2-R1, that separated transfer, feedback, open injection, sink/guard behavior, and telemetry limits in actual current Core code.
+
+That success does **not** justify turning this report into a duplicate generic all-backend Core-accounting programme. The separately active Q2/general-Core research may continue to test source, `Phi`, `mu`, and accounting questions under its own report and evidence chain. Cross-checks may be cited when relevant, but experiments and narrative authority must not be duplicated merely because the topics overlap.
+
+For this report:
+
+```text
+FAC2_R1 current NumPy question = answered within frozen domain
+FAC2 full cross-backend question = open, not silently generalized
+FAC2_R2 PyTorch/wave accounting = not automatically next here
+FAC3-FAC5 = preserved open mechanism classes, not immediate mandatory sequence here
+Priority-B ancient-text application = sufficient to return to source-critical lane
+```
+
+This scope decision also incorporates the project-owner observation that the model may already be overcomplicated. The report must now compare simplification/reduction against addition wherever a later source-derived hypothesis would otherwise suggest another field, reservoir, memory state, scaffold, or observer variable.
+
+### 32.8 Current next action: return to the texts before returning to Lineum
+
+The next consequential step in **this report** is the incomplete source-critical part of `LAEC0`, not another generic FAC extension.
+
+The first source pass must audit the *Gospel of Mary*, *Gospel of Judas*, and relevant *Gospel of Thomas* material to the same declared standard as the already reviewed texts, scoring independently whether each source supports, weakens, omits, or contradicts the proposed minimum local-autonomy/epistemic-closure graph.
+
+The audit must preserve at least these negative outcomes:
+
+```text
+motif absent;
+wording weaker than the project-owner synthesis;
+local/global distinction present but no model-revision structure;
+recognition/revelation present but no local-totality error;
+text implies a materially different mechanism;
+shared motif is too generic to discriminate;
+textual dependence prevents treating recurrence as independent;
+modern systems vocabulary exceeds the primary witness.
+```
+
+Only after that source matrix is frozen may the domain-neutral abstraction be revised and, if it still survives, allowed to generate a new Lineum discriminator. The next Lineum test must also include a lower-state/reduction alternative so that an apparent observer or hidden-state deficit cannot automatically be converted into another state variable.
+
+**Current resume instruction:** re-read current repository rules and this report from `develop`; treat Section 32 as the latest authoritative checkpoint; preserve FAC2-R1 as a NumPy implementation-accounting result only; do not launch FAC2-R2/FAC3-FAC5 here by inertia; resume the source-critical LAEC0 audit with *Gospel of Mary*, *Gospel of Judas*, and relevant *Gospel of Thomas* evidence before proposing another Lineum mechanism.

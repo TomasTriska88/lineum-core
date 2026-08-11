@@ -1,0 +1,104 @@
+{
+  "schema": "lineum_fac2_r1_retained_decision_receipt_v1",
+  "receipt_role": "decision-relevant extraction from the official FAC2-R1 primary JSON; not a byte-for-byte replacement for the workflow stdout payload",
+  "official_execution": {
+    "repository": "TomasTriska88/lineum-core",
+    "branch": "develop",
+    "execution_commit": "09e68b0fb1c3cf89384c329228c4b141beb406e0",
+    "workflow_name": "FAC2-R1 NumPy accounting one-use",
+    "run_id": 31523666736,
+    "job_id": 93886625906,
+    "conclusion": "success",
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "8.4.2",
+    "regression_gate": "4 passed in 0.54s",
+    "official_primary_json_sha256": "f62c4c5959394efe5ad1433127c53fb82a906c15cc16b0160a1389b63cf70de1"
+  },
+  "frozen_identities": {
+    "math_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "runner_blob": "9f8e107a1ca80fe2089bca220b5feeec45307368",
+    "test_blob": "bea7a86d7c80f75ec87843ad0821cf53c5408cca",
+    "preregistration_report_blob": "982eb983ce2341ee13931720eacecd7dcf680ab1"
+  },
+  "scope": "current_numpy_diffusion_step_only",
+  "overall_pass": true,
+  "componentwise_ledger": {
+    "observables": ["Qpsi=sum(|Psi|^2)", "Qphi=sum(Phi)", "Qmu=sum(mu)"],
+    "physical_energy_claim": "not_established",
+    "deterministic_paired_residual": {"qpsi": 0.0, "qphi": 0.0, "qmu": 0.0},
+    "deterministic_fallback_residual": {"qpsi": 0.0, "qphi": 0.0, "qmu": 0.0},
+    "stochastic_paired_residual": {"qpsi": 0.0, "qphi": 0.0, "qmu": 0.0},
+    "guard_stress_residual": {"qpsi": 0.0, "qphi": 0.0, "qmu": 0.0}
+  },
+  "parity": {
+    "mirror_matches_step_core": true,
+    "max_abs_error_for_returned_states_in_reported_branches": 0.0,
+    "kappa_returned_unchanged": true
+  },
+  "deterministic_paired": {
+    "actual_delta": {"qpsi": 0.006176788237322484, "qphi": 0.0005060066937971897, "qmu": 0.002336778240062287},
+    "mode_coupling": {
+      "delta_e_sum": 0.0005060066937942372,
+      "qpsi_delta": -0.000506006743897558,
+      "qphi_delta": 0.0005060066937971897,
+      "min_e_minus_delta_e": 0.04515291383615054
+    }
+  },
+  "deterministic_fallback": {
+    "actual_delta": {"qpsi": 0.0066827949812200416, "qphi": -0.2644319479792898, "qmu": 0.002336778240062287},
+    "fallback_reaction_qphi_delta": -0.2644319479792969,
+    "fallback_reaction_qpsi_delta": 0.0
+  },
+  "stochastic_paired": {
+    "seed": 0,
+    "linon_count": 69,
+    "source_increment_l2": 0.02433380528507448,
+    "interaction_increment_l2": 0.0031762250490760167,
+    "combined_increment_l2": 0.027005650268690933,
+    "combined_qpsi_delta": 0.11679579674638152,
+    "source_qpsi_marginal_given_interaction": 0.1009597823345878,
+    "interaction_qpsi_marginal_given_source": 0.015963097073015575,
+    "scalar_partition_warning": "Qpsi is quadratic, so simultaneous source+interaction additions have cross terms; counterfactual marginals are diagnostics, not unique additive scalar ledger shares."
+  },
+  "guard_stress": {
+    "psi_cap_after_drift_trigger_count": 68,
+    "phi_clip_trigger_count": 17,
+    "mu_clip_trigger_count": 30,
+    "psi_fail_safe_reset": true,
+    "psi_cap_qpsi_delta": -0.7852309289533155,
+    "phi_clip_qphi_delta": -0.3986421946253529,
+    "mu_clip_qmu_delta": -0.20740207441242475,
+    "fail_safe_qpsi_delta": -5.539712841229751,
+    "production_telemetry_cap_triggers": 0,
+    "production_telemetry_fold_triggers": 0,
+    "telemetry_classification": "does_not_report_guard_activity_even_when_direct_state_accounting_detects_it"
+  },
+  "backend_flag_controls": {
+    "numpy_pml_flag_max_abs_effect": {"psi": 0.0, "phi": 0.0, "mu": 0.0, "kappa": 0.0},
+    "numpy_fold_flag_max_abs_effect": {"psi": 0.0, "phi": 0.0, "mu": 0.0, "kappa": 0.0},
+    "pml_classification": "not_implemented_flag_has_no_state_effect_in_tested_numpy_diffusion_path",
+    "fold_classification": "not_implemented_flags_have_no_state_effect_in_tested_numpy_diffusion_path"
+  },
+  "adversarial_interpretation": {
+    "ledger_closure_is_partly_telescoping_by_construction": true,
+    "decision_value": [
+      "term-isolating mirror reproduces production step_core exactly",
+      "the tested NumPy update blocks and numerical guards are captured in their actual sequential order",
+      "the stochastic source provides a nonzero open Psi state increment without a finite source stock in the current step contract",
+      "PML and escape-fold flags have no state effect in this NumPy path",
+      "direct instrumentation exposes guard activity that current NumPy telemetry does not report"
+    ]
+  },
+  "classifications": {
+    "FAC2_R1_status": "reproduced_within_frozen_current_NumPy_domain",
+    "componentwise_numpy_software_accounting": "closed_within_frozen_step_domain",
+    "FAC2_full_cross_backend_status": "not_complete",
+    "stochastic_source": "explicit_open_psi_state_increment_without_finite_stock",
+    "kappa": "supplied_non_evolving_modulator",
+    "new_state_required": "not_established",
+    "current_model_overparameterized_or_reducible": "live_hypothesis_not_tested_by_R1",
+    "real_world_correspondence": "not_tested",
+    "ancient_physics_correspondence": "not_established"
+  }
+}
