@@ -1,0 +1,248 @@
+{
+  "schema": "lineum_ancient_texts_laec0_source_audit_receipt_v1",
+  "status": "provisional_source_audit_receipt_not_decision_authoritative_until_incorporated_into_active_report",
+  "retrieval_date": "2026-08-11",
+  "repository": "TomasTriska88/lineum-core",
+  "target_branch": "develop",
+  "base_commit": "c34f7c363d0c052ee0289dd8ce48f52a577cf56e",
+  "active_report": "research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md",
+  "active_report_blob_at_base": "09358f57f31a7c27b3a1ef3e5a2f32d846c3df96",
+  "purpose": "Preserve the source matrix and provenance from the first LAEC0 convergence audit without creating a second narrative report. No later Lineum mechanism or owner-gate decision may rely on this receipt until the same decision-relevant reasoning is incorporated into the active Markdown report.",
+  "third_party_intake": {
+    "material_class": "public ancient-text translations, scholarly reference pages, and critical-edition metadata",
+    "permitted_mode": "public factual audit, bibliographic citation, and original paraphrase only",
+    "excluded_use": [
+      "full-text redistribution",
+      "close paraphrase of copyrighted scholarship",
+      "copying protected translation expression into Lineum documentation",
+      "treating modern commentary as a primary textual witness"
+    ],
+    "target_repository": "public Lineum Core",
+    "confidential_material_used": false
+  },
+  "frozen_dimensions": {
+    "A": "larger causal source or order",
+    "B": "lower or local layer or authority",
+    "C": "local power with limited knowledge",
+    "D": "restricted observer access",
+    "E": "claim of local totality",
+    "F": "new information or recognition",
+    "G": "revision of an earlier model or relation",
+    "H": "relation of a local subject or subsystem to a larger order"
+  },
+  "status_vocabulary": [
+    "supported",
+    "partial_or_ambiguous",
+    "not_attested_in_checked_extant_text",
+    "not_attested_in_checked_relevant_material",
+    "different_mechanism",
+    "same_agent_chain_not_established"
+  ],
+  "source_matrix": {
+    "Gospel_of_Mary": {
+      "A": "partial_or_ambiguous",
+      "B": "partial_or_ambiguous",
+      "C": "partial_or_ambiguous",
+      "D": "supported",
+      "E": "not_attested_in_checked_extant_text",
+      "F": "supported",
+      "G": "partial_or_ambiguous",
+      "H": "partial_or_ambiguous",
+      "scope_note": "Less than half of the work survives. Absence classifications mean not attested in the checked extant text, not proof of absence from the lost portions. The preserved work strongly supports differential access to revelation and dispute over Mary's vision, but not the Yaldabaoth-style local-totality sequence."
+    },
+    "Gospel_of_Judas": {
+      "A": "supported",
+      "B": "supported",
+      "C": "partial_or_ambiguous",
+      "D": "supported",
+      "E": "not_attested_in_checked_relevant_material",
+      "F": "supported",
+      "G": "partial_or_ambiguous",
+      "H": "supported",
+      "scope_note": "The checked stable structure distinguishes the disciples' god and cosmic rulers from a higher order, and Judas receives differentiated revelation. It does not establish that Saklas or another local ruler makes the same explicit exclusive-totality boast found in the Yaldabaoth creation-myth family, nor a clean same-agent correction chain."
+    },
+    "Gospel_of_Thomas": {
+      "A": "partial_or_ambiguous",
+      "B": "not_attested_in_checked_relevant_material",
+      "C": "not_attested_in_checked_relevant_material",
+      "D": "supported",
+      "E": "not_attested_in_checked_relevant_material",
+      "F": "supported",
+      "G": "partial_or_ambiguous",
+      "H": "supported",
+      "scope_note": "Thomas is a sayings collection with no overarching narrative structure. Hiddenness, interpretation, self-knowledge, and recognition are prominent comparison material, but the lower-ruler and false-local-totality architecture is not established in the checked relevant sayings. This makes Thomas a strong generic-recognition null rather than evidence for the full LAEC graph."
+    },
+    "Apocryphon_of_John_control": {
+      "A": "supported",
+      "B": "supported",
+      "C": "supported",
+      "D": "supported",
+      "E": "supported",
+      "F": "supported",
+      "G": "same_agent_chain_not_established",
+      "H": "supported",
+      "scope_note": "Yaldabaoth is explicitly portrayed as powerful, ignorant of the source of his power, and making an exclusive-divinity claim. The broader narrative contains recognition and repentance, but the clean modern sequence in which that same local ruler receives corrective information and straightforwardly revises his own model is not established as the common textual mechanism."
+    },
+    "Hypostasis_and_Origin_Yaldabaoth_family_control": {
+      "A": "supported",
+      "B": "supported",
+      "C": "supported",
+      "D": "supported",
+      "E": "supported",
+      "F": "supported",
+      "G": "same_agent_chain_not_established",
+      "H": "supported",
+      "scope_note": "The Yaldabaoth local-totality boast is strongly supported in this bounded Sethian creation-myth family. Correction and changed allegiance are distributed across roles: Sabaoth explicitly repents and changes relation in relevant witnesses, while Yaldabaoth's own response is not equivalent to the full modern software-style model-revision graph."
+    },
+    "Gospel_of_Truth_and_Philip_recognition_controls": {
+      "A": "supported",
+      "B": "partial_or_ambiguous",
+      "C": "partial_or_ambiguous",
+      "D": "supported",
+      "E": "not_attested_in_checked_relevant_material",
+      "F": "supported",
+      "G": "supported",
+      "H": "supported",
+      "scope_note": "Ignorance, hiddenness, revelation, recognition, awakening, and reorientation are strongly present, but that does not establish a locally powerful ruler falsely claiming that its accessible domain is the totality. These texts reinforce the generic-recognition confounder."
+    }
+  },
+  "provisional_findings": {
+    "full_local_autonomy_false_totality_graph_cross_text": "unsupported_as_a_minimum_across_the_checked_source_set",
+    "same_agent_false_totality_to_model_revision_chain": "not_established_as_a_clean_common_textual_mechanism",
+    "Yaldabaoth_style_local_totality": "supported_in_a_bounded_Sethian_creation_myth_family",
+    "Mary_Judas_Thomas_common_false_totality_mechanism": "not_supported_by_the_checked_material",
+    "recognition_partial_access_reorientation_pattern": "recurrent_but_generic_and_not_yet_discriminating",
+    "generic_pattern_null": "not_beaten",
+    "owner_systems_synthesis": "useful_hypothesis_provenance_but_likely_over_composes_roles_from_distinct_texts_and_agents",
+    "Lineum_application_from_this_source_result": "blocked_until_active_report_incorporation_and_required_owner_intuition_gate",
+    "current_model_overparameterized_or_reducible": "live_hypothesis_unaffected_by_source_audit",
+    "ancient_texts_encode_Lineum_physics": "unsupported"
+  },
+  "failure_classification": [
+    "cross_text_convergence_failure",
+    "generic_pattern_confounder",
+    "interpretation_overreach"
+  ],
+  "sources": [
+    {
+      "title": "Gospel of Mary",
+      "author_or_editor": "Judith Hartenstein",
+      "publisher_or_project": "NASSCAL e-Clavis: Christian Apocrypha",
+      "url": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-mary/",
+      "role": "manuscript survival, preserved narrative structure, vision and disciple-dispute overview"
+    },
+    {
+      "title": "The Gospel of Mary",
+      "author_or_editor": "Christopher Tuckett, editor",
+      "publisher_or_project": "Oxford University Press",
+      "year": 2007,
+      "doi": "10.1093/acprof:oso/9780199212132.001.0001",
+      "role": "critical-edition and manuscript-control metadata"
+    },
+    {
+      "title": "Gospel of Judas",
+      "author_or_editor": "David Brakke",
+      "publisher_or_project": "NASSCAL e-Clavis: Christian Apocrypha",
+      "url": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-judas/",
+      "role": "current scholarly summary, manuscript condition, stable narrative structure, critical-edition bibliography"
+    },
+    {
+      "title": "The Gospel of Judas",
+      "author_or_editor": "Johanna Brankaer; introduction by Bas van Os",
+      "publisher_or_project": "Oxford University Press",
+      "year": 2019,
+      "role": "modern critical edition cited bibliographically through NASSCAL"
+    },
+    {
+      "title": "The Gospel of Judas: A New Translation with Introduction and Commentary",
+      "author_or_editor": "David Brakke",
+      "publisher_or_project": "Yale University Press",
+      "year": 2022,
+      "role": "modern translation and commentary cited bibliographically through NASSCAL"
+    },
+    {
+      "title": "Gospel of Thomas",
+      "author_or_editor": "Christopher W. Skinner",
+      "publisher_or_project": "NASSCAL e-Clavis: Christian Apocrypha",
+      "url": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-thomas/",
+      "role": "genre, 114-sayings structure, interpretation-centered overview"
+    },
+    {
+      "title": "The Gospel of Thomas and the Historical Jesus",
+      "author_or_editor": "Stephen J. Patterson",
+      "publisher_or_project": "The Oxford Handbook of Early Christian Apocrypha",
+      "year": 2016,
+      "doi": "10.1093/oxfordhb/9780199644117.013.36",
+      "role": "scholarly-consensus caution concerning date, theology, and sources"
+    },
+    {
+      "title": "Making Mary Male: the Categories 'Male' and 'Female' in the Gospel of Thomas",
+      "publisher_or_project": "New Testament Studies, Cambridge University Press",
+      "year": 1985,
+      "doi": "10.1017/S002868850001208X",
+      "role": "historical evidence that classification of Thomas as Gnostic has long been debated rather than settled"
+    },
+    {
+      "title": "The Apocryphon of John",
+      "translator": "Marvin Meyer",
+      "publisher_or_project": "The Nag Hammadi Library / Gnosis.org",
+      "url": "https://www.gnosis.org/naghamm/apocjn-meyer.html",
+      "role": "accessible primary-translation witness for Yaldabaoth's inherited power, ignorance, and exclusive claim"
+    },
+    {
+      "title": "The Hypostasis of the Archons",
+      "translator": "Bentley Layton",
+      "publisher_or_project": "The Nag Hammadi Library / Gnosis.org",
+      "url": "https://www.gnosis.org/naghamm/hypostas.html",
+      "role": "accessible primary-translation witness for the ruler's exclusive claim, rebuke, and Sabaoth's distinct repentance"
+    },
+    {
+      "title": "On the Origin of the World",
+      "translator_or_editor": "Hans-Gebhard Bethge and Bentley Layton; accessible translation witness",
+      "publisher_or_project": "The Nag Hammadi Library / Gnosis.org",
+      "url": "https://gnosis.org/naghamm/origin.html",
+      "role": "accessible primary-translation witness for Yaldabaoth's limited observation, exclusive claim, corrective evidence, and the distinct Sabaoth repentance pathway"
+    },
+    {
+      "title": "'I Am God and There is No Other!': The Boast of Yaldabaoth",
+      "author_or_editor": "M. David Litwa",
+      "publisher_or_project": "Oxford University Press",
+      "year": 2016,
+      "doi": "10.1093/acprof:oso/9780190467166.003.0004",
+      "role": "scholarly control locating the boast in three Nag Hammadi Codex II Yaldabaoth-myth versions"
+    },
+    {
+      "title": "The Gospel of Truth",
+      "translator": "Harold W. Attridge and George W. MacRae",
+      "publisher_or_project": "The Nag Hammadi Library / Gnosis.org",
+      "url": "https://www.gnosis.org/naghamm/gostruth.html",
+      "role": "accessible primary-translation witness for ignorance, fog, knowledge, awakening, and reorientation"
+    },
+    {
+      "title": "The Gospel of Philip",
+      "translator": "Marvin Meyer; accessible translation witness",
+      "publisher_or_project": "The Nag Hammadi Library / Gnosis.org",
+      "url": "https://www.gnosis.org/naghamm/GPhilip-Meyer.html",
+      "role": "accessible primary-translation witness for ignorance, hidden truth, recognition, and liberation"
+    },
+    {
+      "title": "'Gnosticism'",
+      "author_or_editor": "Antti Marjanen",
+      "publisher_or_project": "The Oxford Handbook of Early Christian Studies",
+      "year": 2009,
+      "doi": "10.1093/oxfordhb/9780199271566.003.0011",
+      "role": "category-level caution: no scholarly consensus on how Gnosticism should be conceived or employed"
+    }
+  ],
+  "mandatory_next_gate": {
+    "action": "incorporate_this_matrix_and_its_decision_relevant_reasoning_into_the_existing_active_Markdown_report_without_byte_churn",
+    "before": [
+      "selecting a replacement LAEC abstraction",
+      "applying a revised LAEC mechanism to Lineum",
+      "running another consequential Lineum experiment from this source result",
+      "asking the project owner to choose among agent-generated repair mechanisms"
+    ],
+    "owner_intuition_gate_after_incorporation": true,
+    "owner_prompt_constraint": "one neutral vivid everyday scene, no answer choices or proposed repairs, one open-ended lay question, then hard stop"
+  }
+}
