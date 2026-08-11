@@ -1,13 +1,16 @@
 # Ancient Texts as Dynamic-Boundary, Protocol, Reconstruction, and Accounting Hypothesis Generators for Lineum
 
-**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0-R1 directed response is reproduced in a repository-supported runtime and FAC1 is authorized; no physical-energy interpretation, new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
-**Version:** 0.4.1  
-**Evidence cutoff:** 2026-08-09  
+**Status:** active source-critical conceptual research, current-Core coupling/accounting audit, local-autonomy and epistemic-closure preregistration, and thread-independent missing-piece research checkpoint; FAC0-R1 and FAC1 are reproduced at the implementation level in a repository-supported runtime and FAC2 is the authorized next discriminator; no physical-energy interpretation, new field, Core equation, whitepaper change, numerical physical validation, or ancient-physics claim is authorized  
+**Version:** 0.4.2  
+**Evidence cutoff:** 2026-08-11  
 **Repository:** `TomasTriska88/lineum-core`  
 **Target branch:** `develop`  
 **Programme membership:** continuous-source cosmology and particle-formation programme  
-**Core snapshot at this checkpoint:** `b894f1c5a34683c9bbcbc703d47176b2577fbcbc`  
+**Core snapshot at this checkpoint:** `760c17bc55138a28f85a0ed2088aa40c93f4046d`  
 **FAC0-R1 execution commit:** `6b553b621bc5ea9ec16b649cbea2f931c6737b39`  
+**FAC1 execution commit:** `760c17bc55138a28f85a0ed2088aa40c93f4046d`  
+**FAC1 execution run/job:** GitHub Actions run `31408959162`, job `93522111361`  
+**FAC1 plain JSON SHA-256:** `b59fe5452f259290ece0a21c068467c8603fd6b928af4aa2c4cbd37297244f1e`  
 **Current runtime source:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a`  
 **Current profile source:** `lineum_core/profiles.py`, blob `3a21be878bc61c7c8612c1040acf01c4d4869f90`  
 **Root scientific report:** `research/foundations/lineum-continuous-source-cosmology-validation.md`  
@@ -19,16 +22,17 @@
 **Continuity evidence cutoff:** 2026-07-31  
 **Continuity blob SHA:** `5304874451caf32313ad0e8e3c59e53958698d79`  
 **Immediate predecessor:** `research/foundations/lineum-gnostic-enochic-dead-sea-scrolls-metaphor-audit.md`, version 0.2.0, blob `aa7895df7e66ff348159c8ecbb6d06a92f22950c`  
-**Previous version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  
-**Earlier version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
-**Older version of this report:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
+**Previous version of this report:** version 0.4.1, blob `584022b32e7d782c760686d9cca5b1e7faa37b5b`  
+**Earlier version of this report:** version 0.4.0, blob `ee84776db0da534e3cbc80050b520d66fabdb66a`  
+**Older version of this report:** version 0.3.0, blob `f9e5cdf26a749baf9a2de4a735105830578e7a38`  
+**Earlier preserved version:** version 0.2.0, blob `1691f44a88afd7414a32afc3625ef3acdb46fcf7`  
 **Initial version of this report:** version 0.1.0, blob `3ec1d893e4309cb2e06b97a2fc09d658f05ab149`  
 **Related collective-object report:** `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md`, version 0.2.0, blob `621cc5f9147dde4a3819e9fc2d3febe05e387cf8`  
 **Related state-reduction report:** `research/foundations/lineum-mu-branch-relative-identity-and-entanglement-hypothesis.md`, version 0.2.0, blob `b55bc1639fc8ed6efa7b8286e9113afa88ee298c`  
 **Operational task:** ClickUp `869echn1w — Audit Gnostic, Enochic, and Dead Sea Scrolls metaphors for Lineum`  
-**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, preparation-history, field-coupling, and accounting programme, records the FAC0 directed-coupling checkpoint, and preserves a project-owner systems synthesis as explicit hypothesis provenance. The new synthesis asks whether individually source-audited Gnostic texts converge on a minimum domain-neutral pattern of local autonomy, limited information, false local totality, and model correction, and whether an independently frozen version of that pattern appears in Lineum without being inserted by relabeling. The named source-audit expansion includes the *Apocryphon of John*, *Hypostasis of the Archons*, *Gospel of Truth*, *Gospel of Mary*, *Gospel of Philip*, *Gospel of Judas*, and, where relevant, *Gospel of Thomas*; no common cosmology is assumed. The governing missing-piece decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, distributed/local observer limitations, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
+**Scope:** Historically separated ancient texts remain hypothesis generators only. This version preserves the earlier boundary, copying, protocol, observer, synchronization, preparation-history, field-coupling, and accounting programme, retains the FAC0 directed-coupling checkpoint, records the first supported-runtime FAC1 term-accounting result, and preserves a project-owner systems synthesis as explicit hypothesis provenance. The synthesis asks whether individually source-audited Gnostic texts converge on a minimum domain-neutral pattern of local autonomy, limited information, false local totality, and model correction, and whether an independently frozen version of that pattern appears in Lineum without being inserted by relabeling. The named source-audit expansion includes the *Apocryphon of John*, *Hypostasis of the Archons*, *Gospel of Truth*, *Gospel of Mary*, *Gospel of Philip*, *Gospel of Judas*, and, where relevant, *Gospel of Thomas*; no common cosmology is assumed. The governing missing-piece decision remains whether apparent gaps in Lineum are better explained by missing reciprocal relationships, missing explicit source or receiving reservoirs, a supplied rather than dynamic scaffold, insufficient state history, distributed/local observer limitations, an effective-equation/coarse-graining omission, or only after those fail, a genuinely missing state variable.  
 **Central questions:** What does each current Core state variable actually do? Which directed writes are paired transfers and which are unpaired feedback, source, sink, or memory writes? Does the observed one-step response graph agree with source inspection? Is any quantity currently justified as total physical energy? Can a closed resource account be built without a new fundamental field? What intervention would make an additional state variable necessary rather than merely convenient? Could the current equations be effective dynamics of a deeper generative process, and if so, can that hypothesis make a distinct falsifiable prediction rather than merely absorb residuals? Which ancient motifs independently motivate useful comparison classes without being treated as evidence about nature? Do the named Gnostic texts, when audited separately, support a minimum causal pattern in which an autonomous local system has incomplete access to a larger causal state and can mistake local closure for total closure? Can that abstraction make a preregistered prediction about Lineum that survives generic-hierarchy, random-relabeling, modern-software-architecture, and source-shuffling controls? Can Lineum produce useful global organization from local states and limited interfaces without a central `God Object`, and can a local observer revise an incomplete model when additional history, boundary, relational, or source information is exposed?  
-**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high from source inspection that only a subset of current writes are explicitly paired debit/credit operations; high that FAC0 source-level directed edges and same-step ordering implications are correctly identified; medium that explicit reservoirs, reciprocal closure, dynamic boundaries, and history-aware observers are the cheapest next mechanism classes; medium that local-totality and observer-reconstruction motifs are useful domain-neutral comparison classes in already checked sources; low and not yet source-audited that the broader named Gnostic set converges on one minimum causal graph beyond generic complex-systems themes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. FAC0-R1 is reproduced in Python 3.11.9 with NumPy 1.26.4 against the exact current `math.py` blob; this supports the implementation-level directed response graph within the tested one-step domain, while physical energy, ontology, closed resource accounting, and real-world correspondence remain unestablished.
+**Current confidence:** high that the current Core does not yet provide a demonstrated closed physical source/transfer/sink account; high that FAC0-R1 reproduces the source-audited directed one-step graph in the tested current-Core domain; high that FAC1 reproduces one explicit near-paired implementation-defined mode-coupling debit/credit while the registered fallback, `Phi -> Psi`, `Psi -> mu`, and `mu -> Psi` controls remain unpaired writes or feedbacks in that step contract; high that supplied `kappa` remains non-evolving while causally influential; medium that explicit source/receiver bookkeeping or reciprocal closure are the cheapest next mechanism classes; medium that dynamic boundaries and history-aware observers remain later live classes; low that an additional independent state variable will be required; low and untested that a deeper generative/effective-equation layer is needed; zero evidential support that ancient religious texts encode Lineum or modern physics. Physical energy, closed physical accounting, ontology, and real-world correspondence remain unestablished.
 
 ## 1. Answer first
 
@@ -111,7 +115,9 @@ Version `0.4.0` records the project-owner systems synthesis as hypothesis proven
 
 Version `0.4.1` records the first repository-supported FAC0-R1 execution. The actual current `step_core` NumPy path passed the frozen directed-edge graph, local-linearity, and matched-RNG `delta` source-sensitivity gates under Python 3.11.9 and NumPy 1.26.4. The first remote direct-script attempt failed only because the repository root was absent from Python's import path; the same attempt's pytest gate passed. The corrected invocation changed only `PYTHONPATH=.` and then passed. This supersedes the unsupported-runtime numerical corroboration as the FAC0 decision gate without promoting any physical-energy, ontology, new-state, or ancient-physics claim.
 
-No negative result or source-critical restriction from versions `0.1.0` through `0.3.1` is withdrawn here.
+Version `0.4.2` records the first repository-supported FAC1 term-accounting execution against the same `math.py` blob already exercised by FAC0-R1. The frozen mirror matched actual `step_core` exactly for all returned states in both paired and fallback branches; the paired mode-coupling debit/credit passed its preregistered residual and analytic-normalization checks; the registered fallback, `Phi -> Psi`, `Psi -> mu`, and `mu -> Psi` controls retained their expected unpaired classifications; supplied `kappa` remained unchanged while modulating dynamics; and the registered `Psi` dissipation and `mu` decay remained sinks without explicit receiver states in the tested step contract. This is an implementation-accounting result only. FAC2 is now the next authorized discriminator; no physical-energy, new-state, real-physics, or ancient-physics claim is promoted.
+
+No negative result or source-critical restriction from versions `0.1.0` through `0.4.1` is withdrawn here.
 
 The broad predecessor remains the source and historical registry. This successor remains the active mechanism and preregistration report.
 
@@ -2048,3 +2054,212 @@ physical_or_metaphysical_correspondence = not_established
 ```
 
 If FAC1 passes, the next planned discriminator is FAC2 complete software source/sink bookkeeping. If FAC1 produces a verified decision-relevant negative, the result must be retained and its impact resolved before FAC2 or any replacement mechanism proceeds.
+
+## 30. FAC1 supported-runtime execution and decision checkpoint
+
+### 30.1 Answer first
+
+FAC1 passed against the exact current `step_core` implementation frozen in Section 29. The result is narrower than a conservation-law claim but stronger than source inspection alone:
+
+```text
+actual current step_core
+    + frozen FAC1 state/configuration
+    + exact term-isolating mirror
+    + analytic normalization check
+    + repository-supported NumPy runtime
+    -> preregistered implementation-accounting classifications reproduced
+```
+
+The most important positive control is mode coupling. In the tested state, `Phi` received an implementation-defined credit of `0.0005060066937971897`, while the corresponding `|Psi|^2` debit was `0.000506006743897558`. Their difference was `5.0100368298444664e-11`, a relative residual of `9.901127576491147e-08`, and that finite residual matched the independently derived normalization-denominator prediction to `2.7373936450914016e-15` absolute error. The `max(..., 0)` floor was inactive.
+
+The registered controls behaved differently: fallback `Psi -> Phi`, `Phi -> Psi` interaction, `grad(Phi) -> Psi` drift, `Psi -> mu`, and `mu -> Psi` modulation remained unpaired writes or feedbacks in the current step contract; `kappa` remained a supplied non-evolving high-leverage input; `Psi` dissipation and `mu` decay remained sinks without explicit receiver states in this contract.
+
+This does not establish physical energy, a physical conservation law, a new field, a deeper physical layer, real-world correspondence, or ancient encoded physics.
+
+### 30.2 Execution and provenance receipt
+
+The official execution was the already preregistered one-use GitHub-hosted run permitted by the local-execution exception because the active execution environment could not obtain a repository checkout through the recorded `github.com` DNS failure.
+
+```text
+execution commit = 760c17bc55138a28f85a0ed2088aa40c93f4046d
+math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC1 runner blob = 62e95d48661cc91855629fa9686b0941344c9b6b
+FAC1 test blob = 3fc47712c0025d2cab8a3772a1ce554be20535fc
+GitHub Actions run = 31408959162
+GitHub Actions job = 93522111361
+runner image = Ubuntu 24.04.4 / ubuntu-24.04 image 20260720.247.2
+Python = 3.11.15
+NumPy = 1.26.4
+pytest = 8.4.2
+LINEUM_DEVICE = numpy
+PYTHONPATH = .
+regression gate = 3 passed in 0.47s
+plain JSON SHA-256 = b59fe5452f259290ece0a21c068467c8603fd6b928af4aa2c4cbd37297244f1e
+```
+
+The plain machine-readable output is retained beside this report as `research/foundations/lineum-ancient-texts-fac1-term-accounting-supported-runtime.json`. It is evidence only, not a second narrative report. The durable runner and test remain research-scoped executable verification artifacts outside the public `lineum_core/` package.
+
+### 30.3 Observed term classifications
+
+Full-step parity between the term-isolating mirror and actual `step_core` was exact at floating comparison for `Psi`, `Phi`, `mu`, and `kappa` in both the paired-mode and fallback-mode branches:
+
+```text
+max absolute parity error = 0.0 for every returned state in both branches
+paired_mode pass = true
+fallback_mode pass = true
+overall_pass = true
+```
+
+Decision-relevant receipts were:
+
+```text
+mode coupling:
+    Qphi credit = 0.0005060066937971897
+    Qpsi debit = 0.000506006743897558
+    debit - credit = 5.0100368298444664e-11
+    analytic predicted residual = 5.0103105692089756e-11
+    residual prediction absolute error = 2.7373936450914016e-15
+    relative absolute residual = 9.901127576491147e-08
+    min(e_psi - delta_e) = 0.04515291383615054
+
+fallback reaction:
+    Qphi delta = -0.2644319479792969
+    same-term Qpsi delta = 0.0
+
+Phi interaction -> Psi:
+    Psi term L2 = 0.0031762250490760167
+    Qpsi delta = 0.01583601441179372
+    same-term Phi max delta = 0.0
+
+Phi-gradient drift -> Psi:
+    Psi term L2 = 7.040326655961985e-05
+    Qpsi delta = -0.00023283958444864084
+    same-term Phi max delta = 0.0
+
+Psi activity -> mu:
+    mu accumulation sum = 0.0024568028080906856
+    mu accumulation L2 = 0.00025063419534831626
+    same-term Psi max delta = 0.0
+
+mu modulation -> Psi:
+    interaction difference L2 = 0.00033738118610069593
+    drift difference L2 = 7.567415315396517e-06
+    mu state change during those Psi-driving terms = 0.0
+
+kappa modulation:
+    interaction difference L2 = 0.0007843728945912164
+    drift difference L2 = 1.764841451688288e-05
+    returned kappa max delta = 0.0
+
+registered sinks:
+    Qpsi removed by linear dissipation = 0.006332419674031975
+    Qmu removed by mu decay = 0.00012002456802839845
+```
+
+No fail-safe fired and the state remained far from the frozen `Psi`, `Phi`, and `mu` caps. The numerical safety gates therefore do not explain the observed classifications.
+
+### 30.4 Independence and adversarial audit
+
+FAC1 contains four distinct checks with different failure modes:
+
+1. source inspection established the exact current update ordering and expected term classes before execution;
+2. actual `step_core` was executed in the frozen supported runtime;
+3. a separately transcribed research mirror exposed term receipts and was required to match the complete production step exactly;
+4. the small nonzero mode-coupling debit-credit residual was predicted analytically from the current `sqrt(e_psi) + 1e-12` normalization before being accepted.
+
+The mirror is not an independent physical model because it shares the declared update equations. Its value is implementation decomposition. The analytic residual check is mathematically independent of simply observing a small number, while exact full-step parity protects against accepting term receipts from a mirror that implements a different map.
+
+The anti-green-test conclusion is therefore bounded: the passing tests support the declared implementation classifications in the frozen state. They do not establish uniqueness of a physical interpretation, conservation in arbitrary states, global long-horizon conservation, or correspondence with nature.
+
+### 30.5 Mandatory evidence separation
+
+#### A. What the current implementation computes
+
+Current source contains one explicit mode-coupling scalar credit to `Phi` paired with a subtraction from the pre-rescale `|Psi|^2` quantity. The registered fallback, interaction, drift, `Psi -> mu`, and `mu -> Psi` operations do not contain matching same-term debit/credit pairs. `kappa` is supplied and returned unchanged. Linear `Psi` dissipation and `mu` decay remove implementation-defined quantities without explicit receiver states in this step contract.
+
+#### B. What was reproducibly observed
+
+Under the frozen FAC1 state and supported runtime, both branches reproduced actual `step_core` exactly, all preregistered branch checks passed, mode coupling satisfied the near-paired residual gate and analytic residual prediction, the registered unpaired controls remained unpaired, and the two registered sink quantities were measured explicitly.
+
+#### C. Cautious interpretation
+
+FAC1 substantially reduces the risk that the source-level accounting picture was a reading mistake. It supports treating current mode coupling as a near-paired **software scalar transfer** within the tested state and treating the other registered paths as feedback, memory/write, supplied modulation, or sink operations rather than silently calling them reciprocal transfers.
+
+This makes complete source/sink bookkeeping the cheapest next discriminator. It does not yet tell us whether the current states are physically complete, whether reciprocal relationships should be added, or whether explicit source/receiver stocks are merely diagnostics versus genuine dynamic state.
+
+#### D. Hypotheses still open
+
+```text
+M0 current states sufficient; interpretation/accounting incomplete = open and strengthened
+M1 reciprocal relationships required = open, not established
+M2 finite source stock required = open
+M3 receiving/environment reservoir required = open
+M4 dynamic kappa-like scaffold required = open
+M5 flux/conjugate state required = open but later-gated
+M6 mu reducible to history = open and still mandatory before independent mu ontology
+M7 genuinely additional state X required = unproven and later-gated
+DG0 deeper/effective generative layer = open but unprivileged
+LAEC0 local-autonomy/epistemic-closure lane = unchanged and separate
+```
+
+#### E. Real physics and historical correspondence
+
+FAC1 did not compare any quantity with an empirical physical energy, mass, charge, flux, or cosmological observable. No real-physics correspondence is established. The ancient-text motifs remain hypothesis generators and accounting prompts only; the FAC1 pass adds zero evidence that ancient authors encoded modern physics or Lineum.
+
+### 30.6 Programme-impact matrix
+
+| Existing branch | Relationship after FAC1 | Impact |
+|---|---|---|
+| FAC0-R1 directed graph | `supports` | FAC1 term receipts are consistent with the already reproduced one-step dependency graph |
+| Priority-B known-answer source/accounting lesson | `supports` | its transfer-versus-feedback distinction survives the first application to actual current Core |
+| M0 interpretation/accounting insufficiency | `supports` | several apparent interactions are correctly classified without inventing new state |
+| M1 reciprocal closure | `reopens` | unpaired current writes remain candidates for later reciprocal comparison, but FAC1 does not say they should be reciprocal |
+| M2/M3 finite source/receiver bookkeeping | `supports` | measured sinks and future source terms make FAC2 the direct next test |
+| M4 supplied `kappa` | `supports` | high leverage with zero returned-state evolution is reproduced in the FAC1 domain |
+| M6 `mu` reduction-first | `constrains` | `mu` has real implementation effects but FAC1 gives no independent physical ontology |
+| M7 new state | `constrains` | no FAC1 result requires a new fundamental coordinate |
+| DG0 deeper layer | `unaffected` | no positive evidence is added and no same-layer failure justifies promotion |
+| passive membrane negatives | `unaffected` | FAC1 neither repairs nor overturns them |
+| copying/heredity negatives | `unaffected` | accounting classifications do not create descendants or lineage |
+| LAEC0 local/global observer lane | `unaffected` | observer sufficiency remains a separate later discriminator |
+| Core equations / whitepapers | `unaffected` | no production or canonical change is authorized |
+
+### 30.7 Connector chronology and non-scientific staging incident
+
+During preparation of this retention checkpoint, two Git commit objects were accidentally created while probing the Git Data publication path:
+
+```text
+7ef975d64a98a9b8ffd0b7a01149a6a12590762c
+eb23a7ae0c291667086a26192c4b38e0b2750bb8
+```
+
+Neither object was referenced by `develop`, no branch ref moved, and no repository file changed because of those objects. They are classified as `connector_staging_error_unreferenced_git_objects`, not as executions, evidence, or scientific failures. The incident is retained here because repository chronology must not silently erase technical publication mistakes.
+
+### 30.8 Cleanup and durable evidence
+
+The FAC1 runner and regression test are retained because they are reusable, directly readable research verification artifacts. The exact primary JSON output is retained as a plain companion file with the workflow-reported SHA-256 above. The one-use workflow is removed in the same coherent retention checkpoint because it has no lasting CI role.
+
+No `lineum_core/` source, profile, whitepaper, or other canonical scientific surface is changed by this checkpoint.
+
+### 30.9 Current verdict and supersession
+
+```text
+FAC0_R1_status = reproduced_within_frozen_current_Core_domain
+FAC1_status = reproduced_within_frozen_current_Core_domain
+FAC1_mode_coupling_implementation_scalar_pair = supported_within_tested_domain
+FAC1_registered_unpaired_controls = supported_within_tested_domain
+FAC1_kappa_supplied_non_evolving_classification = supported_within_tested_domain
+FAC1_registered_sink_without_receiver_classification = supported_within_tested_domain
+FAC2_status = authorized_next_discriminator
+physical_energy_claim = not_established
+closed_physical_resource_account = not_established
+new_fundamental_state_required = not_established
+real_world_correspondence = not_tested
+ancient_physics_correspondence = not_established
+```
+
+The older statements in Sections 17, 18, 22, 23, 25, 26, and 29 that describe supported-runtime FAC0 as blocked, FAC1 as gated or pending, or FAC2 as blocked are preserved as historical chronology and are superseded by Sections 28 and 30. They must not be used as the current resume state.
+
+The next consequential step is FAC2 complete software source/sink bookkeeping. FAC2 must be preregistered in this same active report before official execution. Its purpose is to determine whether all explicit source injection, dissipation, boundary export, cap/reset deletion, `Phi` cap/fold effects, and `mu` decay can close a declared **software accounting identity** without feeding diagnostic buckets back into the dynamics. Even a perfect software identity would not by itself establish a physical energy law.
+
+**Current resume instruction:** re-read current repository rules and the current report from `develop`; verify the active Core source identity; preregister FAC2 in this report; then execute the smallest supported-runtime FAC2 discriminator. Preserve FAC1 as an implementation-level accounting result and keep physical, ontological, historical, and ancient-text claims separately gated.

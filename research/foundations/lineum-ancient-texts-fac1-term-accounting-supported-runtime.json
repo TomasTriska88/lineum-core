@@ -1,0 +1,261 @@
+{
+  "ancient_physics_correspondence": "not_established",
+  "classifications_if_passed": {
+    "fallback_psi_to_phi_reaction": "unpaired_state_write_in_current_implementation",
+    "kappa_modulation": "supplied_non_evolving_high_leverage_input_in_current_implementation",
+    "mode_coupling": "explicit_near_paired_scalar_debit_credit_in_current_implementation",
+    "mu_decay": "sink_without_receiver_in_this_step_contract",
+    "mu_modulation_to_psi": "unpaired_feedback_in_current_implementation",
+    "phi_gradient_drift_to_psi": "unpaired_feedback_in_current_implementation",
+    "phi_interaction_to_psi": "unpaired_feedback_in_current_implementation",
+    "psi_activity_to_mu": "unpaired_memory_or_reinforcement_write_in_current_implementation",
+    "psi_dissipation": "sink_without_receiver_in_this_step_contract"
+  },
+  "evidence_status": "[current-core][implementation-accounting][preregistered]",
+  "fallback_mode": {
+    "checks": {
+      "drift_has_no_same_term_phi_write": true,
+      "drift_nonzero": true,
+      "fallback_has_no_same_term_psi_debit": true,
+      "fallback_phi_write_nonzero": true,
+      "far_from_mu_cap": true,
+      "far_from_phi_cap": true,
+      "far_from_psi_cap": true,
+      "interaction_has_no_same_term_phi_write": true,
+      "interaction_nonzero": true,
+      "kappa_modulates_psi_terms": true,
+      "kappa_returned_unchanged": true,
+      "mirror_matches_step_core": true,
+      "mu_modulates_psi_terms": true,
+      "mu_not_debited_during_psi_terms": true,
+      "no_fail_safe": true,
+      "psi_to_mu_has_no_same_term_psi_debit": true,
+      "psi_to_mu_nonzero": true
+    },
+    "config": {
+      "disable_pml": true,
+      "disable_quantum_noise": true,
+      "dissipation_rate": 0.005,
+      "drift_strength": -0.004,
+      "dt": 0.1,
+      "fold_mode": "softabs",
+      "fold_scope": "escape",
+      "grad_cap": 1000000.0,
+      "kappa_soft_blur_iters": 2,
+      "mode_coupling_strength": 0.001,
+      "mu_cap": 10.0,
+      "mu_eta": 0.005,
+      "mu_peak_cutoff_ratio": 0.1,
+      "mu_rho": 0.0001,
+      "noise_strength": 0.005,
+      "phi_cap": 1000000.0,
+      "phi_diffusion": 0.05,
+      "phi_diffusion_scales_with_dt": true,
+      "physics_mode_psi": "diffusion",
+      "psi_amp_cap": 1000000.0,
+      "psi_diffusion": 0.05,
+      "reaction_strength": 0.0007,
+      "stencil_type": "LAP4",
+      "use_mode_coupling": false,
+      "use_mu": true,
+      "wave_damping_edge": 0.05,
+      "wave_lpf_cutoff": 0.35,
+      "wave_lpf_enabled": false
+    },
+    "parity_max_abs": {
+      "kappa": 0.0,
+      "mu": 0.0,
+      "phi": 0.0,
+      "psi": 0.0
+    },
+    "pass": true,
+    "terms": {
+      "fallback_reaction": {
+        "qphi_delta": -0.2644319479792969,
+        "qpsi_delta_during_reaction": 0.0,
+        "reaction_delta_l2": 0.02681564677268291
+      },
+      "kappa_modulation": {
+        "drift_difference_l2": 1.764841451688288e-05,
+        "interaction_difference_l2": 0.0007843728945912164
+      },
+      "mu_decay": {
+        "qmu_removed": 0.00012002456802839845
+      },
+      "mu_modulation": {
+        "drift_difference_l2": 7.567415315396517e-06,
+        "interaction_difference_l2": 0.00033738118610069593,
+        "mu_state_change_during_psi_terms": 0.0
+      },
+      "phi_diffusion": {
+        "qphi_delta": 7.105427357601002e-15
+      },
+      "phi_gradient_drift": {
+        "mu_max_delta": 0.0,
+        "phi_max_delta": 0.0,
+        "psi_term_l2": 7.040326655961985e-05,
+        "qpsi_delta": -0.00023283958444864084
+      },
+      "phi_interaction": {
+        "mu_max_delta": 0.0,
+        "phi_max_delta": 0.0,
+        "psi_term_l2": 0.0031762250490760167,
+        "qpsi_delta": 0.01583601441179372
+      },
+      "psi_diffusion": {
+        "qpsi_delta": -0.0025879601720930623
+      },
+      "psi_dissipation": {
+        "qpsi_removed": 0.006332419674031975
+      },
+      "psi_to_mu": {
+        "mu_accum_l2": 0.00025063419534831626,
+        "mu_accum_sum": 0.0024568028080906856,
+        "psi_max_delta_during_mu_write": 0.0
+      },
+      "validity": {
+        "fail_safe": false,
+        "kappa_return_max_delta": 0.0,
+        "max_abs_psi": 0.2900255717444318,
+        "max_mu": 0.1397210452405327,
+        "max_phi": 0.4614682004494928
+      }
+    },
+    "use_mode_coupling": false
+  },
+  "math_blob": "bb877021810691223a0eb960a45493a2e351112a",
+  "new_state_required": "not_established",
+  "numpy": "1.26.4",
+  "overall_pass": true,
+  "paired_mode": {
+    "checks": {
+      "drift_has_no_same_term_phi_write": true,
+      "drift_nonzero": true,
+      "far_from_mu_cap": true,
+      "far_from_phi_cap": true,
+      "far_from_psi_cap": true,
+      "interaction_has_no_same_term_phi_write": true,
+      "interaction_nonzero": true,
+      "kappa_modulates_psi_terms": true,
+      "kappa_returned_unchanged": true,
+      "mirror_matches_step_core": true,
+      "mode_credit_nonzero": true,
+      "mode_debit_nonzero": true,
+      "mode_near_paired_implementation_ledger": true,
+      "mode_no_floor_activation": true,
+      "mode_residual_matches_analytic_normalization_effect": true,
+      "mu_modulates_psi_terms": true,
+      "mu_not_debited_during_psi_terms": true,
+      "no_fail_safe": true,
+      "psi_to_mu_has_no_same_term_psi_debit": true,
+      "psi_to_mu_nonzero": true
+    },
+    "config": {
+      "disable_pml": true,
+      "disable_quantum_noise": true,
+      "dissipation_rate": 0.005,
+      "drift_strength": -0.004,
+      "dt": 0.1,
+      "fold_mode": "softabs",
+      "fold_scope": "escape",
+      "grad_cap": 1000000.0,
+      "kappa_soft_blur_iters": 2,
+      "mode_coupling_strength": 0.001,
+      "mu_cap": 10.0,
+      "mu_eta": 0.005,
+      "mu_peak_cutoff_ratio": 0.1,
+      "mu_rho": 0.0001,
+      "noise_strength": 0.005,
+      "phi_cap": 1000000.0,
+      "phi_diffusion": 0.05,
+      "phi_diffusion_scales_with_dt": true,
+      "physics_mode_psi": "diffusion",
+      "psi_amp_cap": 1000000.0,
+      "psi_diffusion": 0.05,
+      "reaction_strength": 0.0007,
+      "stencil_type": "LAP4",
+      "use_mode_coupling": true,
+      "use_mu": true,
+      "wave_damping_edge": 0.05,
+      "wave_lpf_cutoff": 0.35,
+      "wave_lpf_enabled": false
+    },
+    "parity_max_abs": {
+      "kappa": 0.0,
+      "mu": 0.0,
+      "phi": 0.0,
+      "psi": 0.0
+    },
+    "pass": true,
+    "terms": {
+      "kappa_modulation": {
+        "drift_difference_l2": 1.764841451688288e-05,
+        "interaction_difference_l2": 0.0007843728945912164
+      },
+      "mode_coupling": {
+        "analytic_predicted_residual": 5.0103105692089756e-11,
+        "debit_minus_credit": 5.0100368298444664e-11,
+        "delta_e_sum": 0.0005060066937942372,
+        "min_e_minus_delta_e": 0.04515291383615054,
+        "qphi_credit": 0.0005060066937971897,
+        "qpsi_debit": 0.000506006743897558,
+        "relative_abs_residual": 9.901127576491147e-08,
+        "residual_prediction_abs_error": 2.7373936450914016e-15
+      },
+      "mu_decay": {
+        "qmu_removed": 0.00012002456802839845
+      },
+      "mu_modulation": {
+        "drift_difference_l2": 7.567415315396517e-06,
+        "interaction_difference_l2": 0.00033738118610069593,
+        "mu_state_change_during_psi_terms": 0.0
+      },
+      "phi_diffusion": {
+        "qphi_delta": 0.0
+      },
+      "phi_gradient_drift": {
+        "mu_max_delta": 0.0,
+        "phi_max_delta": 0.0,
+        "psi_term_l2": 7.040326655961985e-05,
+        "qpsi_delta": -0.00023283958444864084
+      },
+      "phi_interaction": {
+        "mu_max_delta": 0.0,
+        "phi_max_delta": 0.0,
+        "psi_term_l2": 0.0031762250490760167,
+        "qpsi_delta": 0.01583601441179372
+      },
+      "psi_diffusion": {
+        "qpsi_delta": -0.0025879601720930623
+      },
+      "psi_dissipation": {
+        "qpsi_removed": 0.006332419674031975
+      },
+      "psi_to_mu": {
+        "mu_accum_l2": 0.00025063419534831626,
+        "mu_accum_sum": 0.0024568028080906856,
+        "psi_max_delta_during_mu_write": 0.0
+      },
+      "validity": {
+        "fail_safe": false,
+        "kappa_return_max_delta": 0.0,
+        "max_abs_psi": 0.29001397048853234,
+        "max_mu": 0.1397210452405327,
+        "max_phi": 0.46496922450962297
+      }
+    },
+    "use_mode_coupling": true
+  },
+  "physical_energy_claim": "not_established",
+  "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+  "python": "3.11.15",
+  "real_world_correspondence": "not_tested",
+  "schema": "lineum_fac1_term_accounting_v1",
+  "thresholds": {
+    "absolute_parity_tolerance": 1e-12,
+    "minimum_signal": 1e-10,
+    "pair_prediction_tolerance": 1e-12,
+    "paired_relative_residual_tolerance": 1e-06,
+    "unchanged_tolerance": 1e-15
+  }
+}
