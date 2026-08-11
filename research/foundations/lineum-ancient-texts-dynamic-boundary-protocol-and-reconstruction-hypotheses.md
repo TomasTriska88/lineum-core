@@ -2263,3 +2263,218 @@ The older statements in Sections 17, 18, 22, 23, 25, 26, and 29 that describe su
 The next consequential step is FAC2 complete software source/sink bookkeeping. FAC2 must be preregistered in this same active report before official execution. Its purpose is to determine whether all explicit source injection, dissipation, boundary export, cap/reset deletion, `Phi` cap/fold effects, and `mu` decay can close a declared **software accounting identity** without feeding diagnostic buckets back into the dynamics. Even a perfect software identity would not by itself establish a physical energy law.
 
 **Current resume instruction:** re-read current repository rules and the current report from `develop`; verify the active Core source identity; preregister FAC2 in this report; then execute the smallest supported-runtime FAC2 discriminator. Preserve FAC1 as an implementation-level accounting result and keep physical, ontological, historical, and ancient-text claims separately gated.
+
+## 31. FAC2-R1 current-NumPy componentwise software-accounting preregistration
+
+### 31.1 Answer first
+
+FAC2 is split before execution because the current implementation has backend-specific source/sink paths. `FAC2-R1` is the smallest supported discriminator: it asks whether the exact current **NumPy diffusion** step can be decomposed into a complete componentwise software ledger while retaining explicit source, dissipation, clipping, and fail-safe receipts.
+
+A successful R1 is deliberately narrower than `FAC2 complete across every Core backend`. Source inspection shows that PML and the `Phi` escape-fold are implemented in the PyTorch/wave path, whereas the NumPy diffusion path used by FAC0-R1 and FAC1 does not execute either mechanism. R1 therefore freezes no-op controls for the NumPy `disable_pml`, `fold_mode`, and `fold_scope` flags and leaves any required PyTorch/wave PML/fold accounting to a distinct R2 decision after R1 is retained.
+
+No aggregate `Qpsi + Qphi + Qmu` is treated as a meaningful conserved quantity.
+
+### 31.2 Frozen source identity and implementation scope
+
+The preregistered source and artifacts are:
+
+```text
+preregistration base develop = 79970ab714354db9ff241de9c5f3eb23000b35ed
+current lineum_core/math.py blob = bb877021810691223a0eb960a45493a2e351112a
+FAC2-R1 runner path = research/runners/lineum_fac2_numpy_componentwise_accounting.py
+FAC2-R1 runner blob = 9f8e107a1ca80fe2089bca220b5feeec45307368
+FAC2-R1 runner publication commit = 0255eea02f936f714e901555254dc6662b422885
+FAC2-R1 test path = tests/research/test_lineum_fac2_numpy_componentwise_accounting.py
+FAC2-R1 test blob = bea7a86d7c80f75ec87843ad0821cf53c5408cca
+FAC2-R1 test publication commit = 79970ab714354db9ff241de9c5f3eb23000b35ed
+```
+
+The runner and regression gate were versioned before this prose preregistration but were **not executed** before this section was committed. Therefore no observed FAC2-R1 outcome was available for tuning the state, seed, thresholds, branch expectations, or interpretation.
+
+Direct source audit of `_step_numpy` freezes the R1 operation sequence as:
+
+```text
+Psi drift addition
+-> Psi magnitude cap after drift
+-> simultaneous stochastic/linon source + Phi interaction addition
+-> linear Psi dissipation
+-> Psi diffusion
+-> mode-coupling pair OR fallback Phi reaction
+-> Phi diffusion
+-> Phi clip to [0, phi_cap]
+-> mu accumulation
+-> mu decay
+-> mu clip to [0, mu_cap]
+-> final Psi numerical fail-safe reset if triggered
+```
+
+`kappa` is supplied and returned unchanged. In this NumPy path, `disable_pml`, `fold_mode`, and `fold_scope` do not alter the state update. The NumPy telemetry currently hard-codes `cap_triggers = 0` and `fold_triggers = 0`; R1 therefore tests guard activity from direct state changes rather than trusting those counters.
+
+### 31.3 Frozen observables and the scalar-partition limitation
+
+The primary endpoint observables are kept separate:
+
+```text
+Qpsi = sum(|Psi|^2)
+Qphi = sum(Phi)
+Qmu = sum(mu)
+returned kappa field
+```
+
+For each actual production block, the mirror records the observable state immediately before and after the block. For each `Q` separately:
+
+```text
+endpoint_delta(Q)
+    = sum(exact sequential block receipts for Q)
+      + ledger_residual(Q)
+```
+
+The mirror must reproduce actual `step_core` before its receipts are accepted.
+
+There is one mandatory non-uniqueness warning. Production performs the stochastic/linon source and `Phi` interaction in the same additive `Psi` statement. Because `Qpsi` is quadratic, the scalar change contains cross terms. FAC2-R1 therefore does **not** invent a unique additive split of that scalar change into `source energy` and `interaction energy`. Instead it records:
+
+```text
+the source state-space increment;
+the interaction state-space increment;
+the exact combined Qpsi receipt;
+a source marginal conditional on the interaction increment;
+an interaction marginal conditional on the source increment.
+```
+
+Those marginals are counterfactual diagnostics, not additive ledger shares. This restriction remains binding even if the endpoint identity closes perfectly.
+
+### 31.4 Frozen state, common configuration, and branches
+
+R1 reuses the FAC0/FAC1 `10 x 10` synthetic state and common NumPy diffusion settings. The non-stress branches retain the high caps and `use_mu = true`, `dt = 0.1`, `LAP4`, `psi_diffusion = 0.05`, `phi_diffusion = 0.05`, `reaction_strength = 0.0007`, `drift_strength = -0.004`, `mode_coupling_strength = 0.001`, `mu_eta = 0.005`, `mu_rho = 0.0001`, and `phi_diffusion_scales_with_dt = true`.
+
+The exact registered branches are:
+
+```text
+deterministic_paired:
+    mode coupling on; stochastic source off; disable_pml true; high caps;
+
+stochastic_paired:
+    mode coupling on; stochastic source on; NumPy seed 0; disable_pml true; high caps;
+
+deterministic_fallback:
+    mode coupling off; stochastic source off; disable_pml true; high caps;
+
+pml_flag_false:
+    deterministic_paired with disable_pml false;
+
+fold_flags_baseline:
+    deterministic_paired with fold_mode baseline and fold_scope none;
+
+guard_stress:
+    mode coupling on; stochastic source off;
+    psi_amp_cap = 0.24;
+    phi_cap = 0.40;
+    mu_cap = 0.125;
+    fold_mode = softabs;
+    fold_scope = escape.
+```
+
+The stress branch exists only to exercise numerical cap/clip/reset receipts. It is not a physical regime and cannot be used to infer a field mechanism.
+
+### 31.5 Frozen checks and thresholds
+
+Every branch passes only if:
+
+```text
+mirror versus actual max absolute error <= 1e-12
+    for Psi, Phi, kappa, and mu;
+
+abs(componentwise ledger residual) <= 1e-12
+    independently for Qpsi, Qphi, and Qmu;
+
+returned kappa max absolute change <= 1e-15.
+```
+
+The cross-branch controls additionally require:
+
+```text
+deterministic source state increment <= 1e-15;
+stochastic source state increment L2 >= 1e-10;
+stochastic seed-0 linon event count > 0;
+
+NumPy disable_pml true versus false state difference <= 1e-15;
+NumPy softabs/escape versus baseline/none fold-flag state difference <= 1e-15;
+
+guard_stress Psi cap trigger count > 0;
+guard_stress Phi clip trigger count > 0;
+guard_stress mu clip trigger count > 0;
+guard_stress final Psi fail-safe reset = true;
+
+actual NumPy telemetry cap_triggers = 0 in guard_stress;
+actual NumPy telemetry fold_triggers = 0 in guard_stress.
+```
+
+The last two expectations are intentionally adversarial. If direct state accounting observes numerical guards while telemetry remains zero, that is retained as a NumPy telemetry-reporting limitation. It is not repaired or hidden inside R1.
+
+### 31.6 Frozen outcome interpretation
+
+If mirror parity fails, R1 is a **methodological harness failure** and no ledger conclusion is accepted. The discrepancy must be preserved and resolved before rerun.
+
+If parity passes but the sequential endpoint identity fails beyond tolerance, classify the result as `untracked_update_or_ledger_definition_failure`; do not add a physical reservoir to force closure.
+
+If the stochastic source control fails to produce a nonzero event/increment at frozen seed 0, preserve that result. Do not search seeds after seeing the outcome merely to obtain a signal; any revised stochastic fixture requires an explicit amendment before rerun.
+
+If the PML or fold flags alter the NumPy diffusion state despite source inspection predicting no use, preserve the contradiction as an implementation result.
+
+If the guard branch does not activate a preregistered guard, preserve the fixture failure rather than silently lowering a threshold or cap.
+
+A complete R1 pass permits only:
+
+```text
+the frozen current NumPy diffusion step admits a complete componentwise
+software-accounting decomposition for Qpsi, Qphi, and Qmu;
+
+the stochastic/linon process contributes an explicit open Psi state increment
+without a finite source stock in the current step contract;
+
+PML and escape-fold flags have no state effect in the tested NumPy diffusion path;
+
+the tested numerical cap/clip/reset operations can be assigned explicit
+software receipts when directly instrumented;
+
+kappa remains a supplied non-evolving modulator in this domain.
+```
+
+Even a full pass does **not** establish:
+
+```text
+Qpsi, Qphi, or Qmu is physical energy;
+Qpsi + Qphi + Qmu is a valid common total;
+current sources or sinks are physical reservoirs;
+FAC2 is complete across the PyTorch/wave backend;
+a reciprocal physical closure is required;
+a new state variable is required;
+Lineum corresponds to nature;
+ancient texts encode any of these mechanisms.
+```
+
+### 31.7 Cross-backend completion gate
+
+FAC2-R1 is intentionally a NumPy-diffusion closure test. Source inspection already shows that the PyTorch/wave path contains additional state-changing mechanisms, including PML damping/hard boundary zeroing and an escape-fold branch for `Phi`. Therefore:
+
+```text
+FAC2_R1_pass != FAC2_full_cross_backend_complete
+```
+
+After R1 is executed and retained, the next decision is whether the active scientific question requires an `FAC2-R2` PyTorch/wave source/sink ledger before FAC3. If yes, R2 must be separately preregistered against an exact supported PyTorch execution path. If no later programme claim depends on those backend-specific mechanisms, the report must explicitly state the narrower NumPy scope rather than silently generalizing R1.
+
+### 31.8 Current preregistration status
+
+```text
+FAC0_R1_status = reproduced
+FAC1_status = reproduced
+FAC2_R1_status = preregistered_execution_pending
+FAC2_full_cross_backend_status = not_complete
+FAC3_status = blocked_until_FAC2_scope_is_resolved
+physical_energy_claim = not_established
+new_state_required = not_established
+real_world_correspondence = not_tested
+ancient_physics_correspondence = not_established
+```
+
+No FAC2-R1 scientific execution occurred before this preregistration. The official execution route must still satisfy the current local-execution rule, preserve the exact runner/test bytes above, and retain the first result whether it passes or fails.
