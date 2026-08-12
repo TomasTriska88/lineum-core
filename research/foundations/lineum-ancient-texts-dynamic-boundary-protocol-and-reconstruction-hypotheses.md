@@ -2971,3 +2971,70 @@ ClickUp_task_closure = not_authorized
 ```
 
 **Current resume instruction:** read current repository rules and this report from `develop`; treat Section 33 as the latest authoritative checkpoint; preserve the full cross-text LAEC graph as falsified as a minimum within the checked source set; preserve the bounded Sethian local-totality motif and the broader but generic recognition motif separately; do not invent a replacement abstraction or run a Lineum test yet; first obtain the project owner's neutral intuition at the verified-negative gate, record that response in this report, and only then formalize the cheapest new discriminator.
+
+## 34. Retained project-owner response after a contaminated intuition prompt
+
+### 34.1 Current authoritative checkpoint
+
+This append-only section repairs a continuity defect: a decision-relevant project-owner response existed in chat but had not yet been retained in the authoritative report. It does not select a replacement LAEC abstraction, alter any implementation result, or authorize an experiment.
+
+```text
+active report version = 0.4.5
+active evidence cutoff = 2026-08-12
+pre_append_report_blob = 8d987b4f5d0c70f7dc711dae77d8bce150f8a200
+owner_response_after_contaminated_prompt = retained
+owner_response_independence = not_fully_independent
+owner_response_role = hypothesis_provenance_not_evidence
+replacement_LAEC_abstraction_selected = no
+Lineum_experiment_from_LAEC0 = blocked
+owner_intuition_gate = neutral_repeat_required
+Core_code_change = none
+whitepaper_change = none
+```
+
+### 34.2 Prompt-contamination chronology and retained owner wording
+
+After Section 33 opened the required owner-intuition gate, the assistant first described the source-audit negative in everyday language. A later clarification prompt, however, supplied several possible categories of what the local system might change. Under the repository owner-intuition-independence rule, that made the prompt leading. The resulting owner response is therefore preserved honestly but cannot be treated as fully independent intuition.
+
+A faithful English translation of the project owner's Czech wording is:
+
+> "Is it even easy for it to accept/understand that and change? Is it able to do that at all?"
+
+This wording is retained as project-owner hypothesis provenance only. The ordinary-language words `understand` and `change` do not assert consciousness, cognition, learning, or any particular update mechanism in Lineum.
+
+### 34.3 Mandatory evidence separation
+
+#### A. What the current implementation computes
+
+Nothing in the current Core implementation changed. This checkpoint records no new state variable, relationship, observer, learning rule, or adaptation mechanism.
+
+#### B. What was actually observed
+
+No new Core simulation, numerical run, source search, or historical audit was performed. The only new retained event is the project-owner response above together with the methodological fact that it followed a prompt containing answer categories.
+
+#### C. Cautious interpretation
+
+No replacement mechanism is inferred from this response. The wording is retained only as a question raised by the project owner and must not be used to rank or select a Lineum repair before the neutral owner-intuition gate is repeated.
+
+#### D. Hypothesis status
+
+The response remains `hypothesis_provenance_not_evidence`. It does not establish that a local Lineum process can or cannot revise its behavior, that an additional state is needed, or that any existing field should be reinterpreted.
+
+#### E. Real history and physics
+
+This checkpoint adds no historical or physical evidence. It does not alter the Section-33 source-audit negative, and it adds no support for ancient encoded physics, consciousness, cognition, a higher physical layer, or a new fundamental state.
+
+### 34.4 Exact next gate
+
+Rule 52 requires the owner-intuition gate to be repeated with one vivid but neutral scene and one fully open-ended question, with no answer choices, candidate mechanisms, example solutions, or hidden repair categories. The project owner's next response must then be retained in this same report before any agent formalization, replacement-abstraction selection, existing-hypothesis ranking, preregistration, or Lineum experiment proceeds.
+
+```text
+prompt_influenced_owner_response = retained
+fully_independent_owner_intuition = pending
+replacement_mechanism_selection = blocked
+new_Lineum_experiment = blocked
+Core_code_change = none
+whitepaper_change = none
+```
+
+**Current resume instruction:** treat Section 34 as the latest authoritative checkpoint once committed; preserve the Section-33 source-audit negative unchanged; do not derive or rank a replacement LAEC mechanism from the prompt-influenced response; repeat the owner-intuition gate once with a neutral scene and a single fully open-ended question, retain that response, and only then resume formalization.
