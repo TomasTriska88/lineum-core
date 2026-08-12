@@ -3038,3 +3038,111 @@ whitepaper_change = none
 ```
 
 **Current resume instruction:** treat Section 34 as the latest authoritative checkpoint once committed; preserve the Section-33 source-audit negative unchanged; do not derive or rank a replacement LAEC mechanism from the prompt-influenced response; repeat the owner-intuition gate once with a neutral scene and a single fully open-ended question, retain that response, and only then resume formalization.
+
+## 35. Independent project-owner intuition: evolution
+
+### 35.1 Current authoritative checkpoint
+
+This append-only section closes the neutral-repeat owner-intuition gate required by Section 34. It records the owner's independent response before any agent formalization, mechanism retrieval, replacement-abstraction selection, or Lineum experiment.
+
+```text
+active report version = 0.4.6
+active evidence cutoff = 2026-08-12
+pre_append_report_blob = d9b6cdf56019f76dcbbd7fea7dc0e68129d76a68
+neutral_owner_intuition_repeat = completed
+fully_independent_owner_intuition = retained
+owner_response_role = hypothesis_provenance_not_evidence
+replacement_LAEC_abstraction_selected = no
+replacement_mechanism_ranked = no
+new_Lineum_experiment = blocked_until_required_existing_hypothesis_retrieval_is_retained
+Core_code_change = none
+whitepaper_change = none
+```
+
+### 35.2 Neutral-repeat chronology and verbatim owner response
+
+After Section 34 was committed, the owner-intuition gate was repeated with a concrete neutral scene and one fully open-ended question. The repeat supplied no answer choices, candidate mechanisms, example solutions, or implied repair categories. It therefore satisfies the independence requirement in Rule 52 for the response that followed.
+
+The project owner's complete verbatim response was:
+
+> `evoluce`
+
+English gloss: `evolution`.
+
+The one-word response is intentionally not expanded here. In particular, this checkpoint does not decide whether the owner meant biological evolution, adaptation, learning, selection, heredity, developmental change, structural reorganization, or another process. Those would be agent-generated formalizations until supported by the required retrieval and later explicit operationalization.
+
+### 35.3 Mandatory evidence separation
+
+#### A. What the current implementation computes
+
+Nothing in the current Core implementation changed. No evolutionary, adaptive, learning, selection, heredity, mutation, or self-modification rule is inferred to exist merely from the owner's response.
+
+#### B. What was actually observed
+
+No Core simulation, numerical execution, new source audit, or physical comparison was performed in this checkpoint. The only new decision-relevant event is the fully independent owner-intuition response `evoluce` after the neutral repeat.
+
+#### C. Cautious interpretation
+
+The response is a high-value hypothesis-generation cue because it redirects attention from a one-step model-correction story toward a broader change-over-time concept. That sentence is an agent interpretation only and is not yet a mechanism. It may not be used to select or rank a replacement model before the repository's mandatory existing-hypothesis retrieval is completed.
+
+#### D. Hypothesis status
+
+```text
+owner_word_evoluce = independent_hypothesis_provenance
+specific_evolutionary_mechanism = not_yet_formalized
+current_Core_contains_such_mechanism = not_established
+new_state_required = not_established
+ancient_text_evolutionary_correspondence = not_established
+```
+
+#### E. Real history and physics
+
+The owner's intuition adds no historical or physical evidence. It does not repair the Section-33 cross-text convergence failure and does not establish that the ancient texts encode evolution, Lineum, biology, cognition, or modern physics.
+
+### 35.4 Effect on the retained negative result
+
+Section 33 remains unchanged:
+
+```text
+full_cross_text_LAEC_minimum = falsified_within_checked_source_set
+bounded_Sethian_local_totality_motif = supported_as_source_specific
+broad_recognition_reorientation_motif = recurrent_but_generic
+same_agent_error_to_correction_chain = not_established
+```
+
+The owner response does not reverse any of those findings. Its role is to seed the next comparison space without forcing the source material back into the falsified full graph.
+
+### 35.5 Exact next action under Rule 37
+
+Before inventing a new meaning for `evoluce`, selecting a replacement mechanism, or designing a Lineum experiment, perform the mandatory existing-hypothesis retrieval across the connected Lineum workspace and relevant task history.
+
+The retrieval must recover all already recorded ideas that could bear on the owner's word while keeping historically distinct variants separate. It must inspect relevant current code, research history, whitepapers, hypothesis records, experiments, and project knowledge in:
+
+```text
+TomasTriska88/lineum-core
+lineum-dynamics/lineum-dynamics
+TomasTriska88/oea
+TomasTriska88/osobni-pamet  # temporary canonical Lina EI repository alias
+ClickUp task history relevant to this programme
+```
+
+Retrieved ideas are provenance, not validation. The retrieval must preserve contradictory formulations, deprecated mechanisms, negative results, missing evidence, observer problems, and repository boundaries. It must not merge different historical ideas merely because they can all be described loosely as change, adaptation, memory, copying, heredity, emergence, or evolution.
+
+The retrieval result itself is decision-relevant and must be appended to this same active report and committed before any replacement mechanism is selected or any new experiment is preregistered.
+
+### 35.6 Exact resume state
+
+```text
+LAEC0_source_audit_negative = retained
+prompt_influenced_owner_response = retained_as_non_independent_provenance
+neutral_repeat_owner_response = retained_as_independent_provenance
+independent_owner_response_verbatim = evoluce
+replacement_LAEC_abstraction_selected = no
+replacement_mechanism_selection = blocked_pending_Rule37_retrieval
+new_Lineum_experiment = blocked_pending_Rule37_retrieval
+Core_code_change = none
+whitepaper_change = none
+ClickUp_task_closure = not_authorized
+```
+
+**Current resume instruction:** treat Section 35 as the latest authoritative checkpoint once committed; preserve the Section-33 source-audit negative unchanged; treat `evoluce` only as independent owner hypothesis provenance; next perform the mandatory Rule-37 retrieval of all already recorded Lineum ideas that may bear on it across the connected repositories and relevant task history; retain that retrieval in this same report before selecting or ranking a replacement mechanism or preregistering a new Lineum experiment.
