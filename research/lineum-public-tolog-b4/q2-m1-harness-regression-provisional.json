@@ -1,0 +1,119 @@
+{
+  "authoritative_checkpoint": false,
+  "branch": "develop",
+  "classification": "provisional_q2_m1_harness_regression_continuity_receipt",
+  "continuity_gate": "closed_pending_authoritative_report_update",
+  "created_date": "2026-08-12",
+  "empirically_connected": false,
+  "environment": {
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python": "3.11.15",
+    "runner": "ubuntu-24.04"
+  },
+  "frozen_identities": {
+    "lineum_core/math.py": {
+      "git_blob": "bb877021810691223a0eb960a45493a2e351112a"
+    },
+    "report_at_regression": {
+      "git_blob": "7119da7d1cc078142353dd28e98232ff7dfcd8f8",
+      "version": "0.25.6"
+    },
+    "requirements-dev.txt": {
+      "git_blob": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+    },
+    "requirements.txt": {
+      "git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+    },
+    "runner": {
+      "bytes": 58610,
+      "git_blob": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
+      "path": "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+      "sha256": "d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3"
+    },
+    "tests": {
+      "bytes": 10403,
+      "git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
+      "path": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+      "sha256": "8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42"
+    }
+  },
+  "harness_commit": "308334c9ce07ca5e2fa9c8e80357abf82246391d",
+  "local_helper_preflight": {
+    "numpy": "2.3.5",
+    "py_compile_passed": true,
+    "pytest_deselected": 2,
+    "pytest_passed": 16,
+    "python": "3.13.5",
+    "scientific_admissibility": "diagnostic_only"
+  },
+  "next_authorized_action": "restore_byte_faithful_authoritative_b4_report_continuity_and_commit_it_before_any_stage_a_science",
+  "protocol_id": "Q2-M1",
+  "receipt_type": "provisional_supported_runtime_harness_regression_continuity",
+  "repository": "TomasTriska88/lineum-core",
+  "run_primary_invoked": false,
+  "runner_cli_invoked": false,
+  "scientific_execution_performed": false,
+  "scientific_result_produced": false,
+  "supported_regression": {
+    "artifacts": [],
+    "duration_seconds": 0.7,
+    "identity_gate_passed": true,
+    "py_compile_passed": true,
+    "pytest_failed": 0,
+    "pytest_passed": 18
+  },
+  "technical_publication_chronology": [
+    {
+      "advanced_base": "afce13e19b238e8173675532278058680e22a7b3",
+      "bounded_note": "Unrelated FAC1 work advanced develop; B4 report, active Core, and frozen dependency identities were unchanged before Q2-M1 publication.",
+      "old_base": "760c17bc55138a28f85a0ed2088aa40c93f4046d",
+      "scientific_execution_performed": false,
+      "type": "unrelated_branch_race"
+    },
+    {
+      "cleanup_commit": "228b2d2e6e1d2f71202ac00151f29c0cc02249e8",
+      "create_commit": "8707570e2c8faff19b7ed71486afd1c57189e8af",
+      "path": "__do_not_use__",
+      "restored_tree": "185eee79fb25924db1e1201963daf344fd62f410",
+      "scientific_execution_performed": false,
+      "type": "accidental_empty_connector_probe"
+    },
+    {
+      "cleanup_commit": "8123df89c7c5d658e0c051d28d23a1d8acb8967c",
+      "create_commit": "e380984d71957dacc1287b7c3ede25646b0e0992",
+      "path": "__do_not_use_again__",
+      "restored_tree": "185eee79fb25924db1e1201963daf344fd62f410",
+      "scientific_execution_performed": false,
+      "type": "accidental_empty_connector_probe"
+    },
+    {
+      "candidate_commit": "c7be83d5988dceafb0d2a11c4f4cd2c6dcb1663f",
+      "bounded_note": "Candidate was rejected before ref movement because the report diff contained broad historical Markdown hard-break/whitespace churn rather than only the intended checkpoint update.",
+      "published": false,
+      "scientific_execution_performed": false,
+      "type": "rejected_broad_report_diff"
+    },
+    {
+      "authoritative_report_blob": "7119da7d1cc078142353dd28e98232ff7dfcd8f8",
+      "bounded_note": "A complete 216840-byte manual base64 reconstruction produced a different Git blob SHA and was rejected before repository mutation.",
+      "published": false,
+      "scientific_execution_performed": false,
+      "type": "byte_fidelity_reconstruction_failure"
+    },
+    {
+      "authoritative_report_blob": "7119da7d1cc078142353dd28e98232ff7dfcd8f8",
+      "bounded_note": "A second chunked reconstruction detected same-length character substitutions despite line-length checks and was abandoned before repository mutation.",
+      "published": false,
+      "scientific_execution_performed": false,
+      "type": "byte_fidelity_reconstruction_abandoned"
+    }
+  ],
+  "workflow_artifact_uploaded": false,
+  "workflow_conclusion": "success",
+  "workflow_job_id": 93832949726,
+  "workflow_run_id": 31507567134,
+  "workflow_source_commit": "bf1fbad0982bd7278c503b00db6e75dd0d71ad56",
+  "current_repository_parent_before_provisional_checkpoint": "602087c5dc81bddbce47fbc070a94b9fb6b1ce32",
+  "limitation": "This receipt preserves technical regression and persistence state only. It is not the authoritative research checkpoint and cannot authorize Q2-M1 Stage A while the active B4 Markdown report remains at version 0.25.6 without this decision-relevant history."
+}
