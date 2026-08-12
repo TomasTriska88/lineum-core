@@ -2681,3 +2681,293 @@ modern systems vocabulary exceeds the primary witness.
 Only after that source matrix is frozen may the domain-neutral abstraction be revised and, if it still survives, allowed to generate a new Lineum discriminator. The next Lineum test must also include a lower-state/reduction alternative so that an apparent observer or hidden-state deficit cannot automatically be converted into another state variable.
 
 **Current resume instruction:** re-read current repository rules and this report from `develop`; treat Section 32 as the latest authoritative checkpoint; preserve FAC2-R1 as a NumPy implementation-accounting result only; do not launch FAC2-R2/FAC3-FAC5 here by inertia; resume the source-critical LAEC0 audit with *Gospel of Mary*, *Gospel of Judas*, and relevant *Gospel of Thomas* evidence before proposing another Lineum mechanism.
+
+## 33. LAEC0 cross-text source-audit negative result and continuity restoration
+
+### 33.1 Current authoritative checkpoint
+
+This append-only section is the authoritative current checkpoint for the ancient-text/local-autonomy lane and supersedes Section 32 only with respect to the next action and the status of the source-critical LAEC0 audit. It does not change any FAC0-R1, FAC1, or FAC2-R1 implementation result.
+
+```text
+active report version = 0.4.4
+active evidence cutoff = 2026-08-12
+source_audit_receipt = research/foundations/lineum-ancient-texts-laec0-source-audit-receipt.json
+source_audit_receipt_blob = 5a4922e27466e87538daec817618a2a6367ca854
+pre_append_report_blob = 09358f57f31a7c27b3a1ef3e5a2f32d846c3df96
+full_local_autonomy_false_totality_graph_cross_text = unsupported_as_a_minimum_across_the_checked_source_set
+same_agent_false_totality_to_model_revision_chain = not_established_as_a_clean_common_textual_mechanism
+Yaldabaoth_style_local_totality = supported_in_a_bounded_Sethian_creation_myth_family
+Mary_Judas_Thomas_common_false_totality_mechanism = not_supported_by_the_checked_material
+recognition_partial_access_reorientation_pattern = recurrent_but_generic_and_not_yet_discriminating
+generic_pattern_null = not_beaten
+current_model_overparameterized_or_reducible = live_hypothesis_unaffected_by_source_audit
+new_fundamental_state_required = not_established
+ancient_texts_encode_Lineum_physics = unsupported
+next_action_for_this_report = owner_intuition_gate_before_replacing_or_reframing_LAEC0
+```
+
+The top-of-file metadata remains historical. Version `0.4.4` in this section is the current continuation version.
+
+The decisive negative result is that the complete modern systems sequence registered in Section 27 — locally powerful bounded subsystem, incomplete access, explicit local-totality error, corrective information, and model revision — does not survive as a minimum graph across the checked source set. The source audit therefore falsifies that full cross-text minimum within the declared checked material. It does not falsify every narrower motif inside the graph.
+
+### 33.2 Persistence chronology and hard-stop repair
+
+The source pass was completed on 2026-08-11 and its exact matrix, source provenance, and bounded findings were preserved in the plain JSON companion at Git blob `5a4922e27466e87538daec817618a2a6367ca854`. At that point the active Markdown report could not be safely updated because the available connector path appeared to truncate large-file reads and no byte-faithful local Git publication path was available. The JSON was therefore explicitly marked provisional and non-authoritative.
+
+No new consequential Lineum experiment, replacement LAEC abstraction, or mechanism selection was authorized from that receipt. The research lane was paused rather than allowing chat memory or the companion file to become a substitute for the active report.
+
+On 2026-08-12 repository rule `.agent/rules.d/57-authoritative-research-report-continuity-gate.md` was added in commit `60bec5ca346c6bd3215dd416873e3c367f9da7c4`, making the report-before-progress gate explicit. The GitHub connector was then re-audited and the immutable `fetch_blob` action successfully returned the complete current report from blob `09358f57f31a7c27b3a1ef3e5a2f32d846c3df96`. That byte-faithful immutable source permits this append without rewriting or normalizing earlier report history.
+
+The persistence interruption is an infrastructure/workflow event, not a scientific result. It is recorded because a new conversation must be able to understand why the source receipt existed before its interpretation became authoritative.
+
+### 33.3 Frozen audit dimensions and status vocabulary
+
+The source audit used the eight dimensions already preregistered in Section 27:
+
+```text
+A = larger causal source or order
+B = lower or local layer or authority
+C = local power with limited knowledge
+D = restricted observer access
+E = claim of local totality
+F = new information or recognition
+G = revision of an earlier model or relation
+H = relation of a local subject or subsystem to a larger order
+```
+
+The retained status vocabulary is:
+
+```text
+supported
+partial_or_ambiguous
+not_attested_in_checked_extant_text
+not_attested_in_checked_relevant_material
+different_mechanism
+same_agent_chain_not_established
+```
+
+An absence classification is bounded to the checked surviving or relevant material. It is not proof that a lost passage never contained the motif.
+
+### 33.4 Source matrix
+
+#### Gospel of Mary
+
+```text
+A partial_or_ambiguous
+B partial_or_ambiguous
+C partial_or_ambiguous
+D supported
+E not_attested_in_checked_extant_text
+F supported
+G partial_or_ambiguous
+H partial_or_ambiguous
+```
+
+Less than half of the work survives. The preserved text strongly supports differential access to revelation and dispute over Mary's vision, but the checked extant material does not establish the Yaldabaoth-style sequence in which a locally powerful ruler mistakes its accessible domain for total reality. The absence result therefore applies only to the extant checked text.
+
+#### Gospel of Judas
+
+```text
+A supported
+B supported
+C partial_or_ambiguous
+D supported
+E not_attested_in_checked_relevant_material
+F supported
+G partial_or_ambiguous
+H supported
+```
+
+The checked stable structure distinguishes the disciples' god and cosmic rulers from a higher order and gives Judas differentiated revelation. It does not establish that Saklas or another local ruler makes the same explicit exclusive-totality boast found in the bounded Yaldabaoth creation-myth family, nor does it establish a clean same-agent error-to-correction chain.
+
+#### Gospel of Thomas
+
+```text
+A partial_or_ambiguous
+B not_attested_in_checked_relevant_material
+C not_attested_in_checked_relevant_material
+D supported
+E not_attested_in_checked_relevant_material
+F supported
+G partial_or_ambiguous
+H supported
+```
+
+Thomas is a sayings collection rather than one overarching narrative. Hiddenness, interpretation, self-knowledge, and recognition are strong comparison material, but the checked relevant sayings do not establish the lower-ruler/local-totality architecture. Thomas therefore acts as an important generic-recognition control: recognition can be central without the specific local-ruler mechanism.
+
+#### Apocryphon of John control
+
+```text
+A supported
+B supported
+C supported
+D supported
+E supported
+F supported
+G same_agent_chain_not_established
+H supported
+```
+
+Yaldabaoth is explicitly portrayed as powerful, ignorant of the source of his power, and making an exclusive-divinity claim. The broader narrative contains recognition, rebuke, and change around the error, but the clean modern sequence in which that same local ruler simply receives corrective information and revises its internal model is not established as the common textual mechanism.
+
+#### Hypostasis of the Archons / On the Origin of the World Yaldabaoth-family control
+
+```text
+A supported
+B supported
+C supported
+D supported
+E supported
+F supported
+G same_agent_chain_not_established
+H supported
+```
+
+The local-totality boast is strongly supported in this bounded Sethian creation-myth family. Correction and changed allegiance are distributed across roles: Sabaoth explicitly repents or changes relation in relevant witnesses, whereas Yaldabaoth's own response is not equivalent to the complete software-style model-revision graph. Combining those roles into one generic agent would be a modern synthesis rather than a source finding.
+
+#### Gospel of Truth / Gospel of Philip recognition controls
+
+```text
+A supported
+B partial_or_ambiguous
+C partial_or_ambiguous
+D supported
+E not_attested_in_checked_relevant_material
+F supported
+G supported
+H supported
+```
+
+Ignorance, hiddenness, revelation, recognition, awakening, and reorientation are strongly present, but those motifs do not establish a locally powerful ruler falsely claiming that its accessible domain is the totality. These texts therefore strengthen the generic-recognition confounder rather than the complete LAEC graph.
+
+### 33.5 Adversarial cross-text conclusion
+
+The checked evidence separates at least two motif families that the project-owner systems synthesis had tentatively composed into one mechanism:
+
+```text
+bounded Sethian Yaldabaoth-family motif:
+    local authority + limited knowledge + explicit exclusive-totality claim;
+
+a broader recognition/revelation motif:
+    partial access or ignorance + new knowledge + reorientation.
+```
+
+They overlap in some sources, but the audit does not justify treating them as one clean same-agent causal chain across the named texts. In particular, the `local-totality` motif is not attested in the checked Mary, Judas, Thomas, Truth, and Philip material at the standard required to make it the common minimum. Conversely, `recognition / ignorance / revelation` recurs widely enough that it is presently too generic to beat the preregistered generic-pattern null.
+
+Therefore:
+
+```text
+registered_full_cross_text_LAEC_graph = falsified_as_a_minimum_within_checked_source_set
+bounded_Sethian_local_totality_submotif = supported
+broad_recognition_reorientation_submotif = recurrent_but_generic
+same_agent_error_to_correction_chain = not_established
+source_shuffling_or_role_composition_risk = material
+modern_systems_overcomposition_risk = material
+```
+
+This is a useful negative result. It narrows the source-derived hypothesis space instead of forcing the texts to fit the desired architecture.
+
+### 33.6 Third-party intake and portable source register
+
+The audit uses public ancient-text translation witnesses, scholarly reference pages, and critical-edition metadata only. Permitted use is public factual audit, bibliographic citation, and original paraphrase. Full-text redistribution, close paraphrase of copyrighted scholarship, copying protected translation expression, and treating modern commentary as a primary textual witness remain excluded. No confidential material was used.
+
+Decision-relevant sources for this checkpoint are:
+
+- Judith Hartenstein, `Gospel of Mary`, NASSCAL e-Clavis: Christian Apocrypha, `https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-mary/`.
+- Christopher Tuckett, ed., *The Gospel of Mary*, Oxford University Press, 2007, DOI `10.1093/acprof:oso/9780199212132.001.0001`.
+- David Brakke, `Gospel of Judas`, NASSCAL e-Clavis: Christian Apocrypha, `https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-judas/`.
+- Johanna Brankaer, *The Gospel of Judas*, introduction by Bas van Os, Oxford University Press, 2019.
+- David Brakke, *The Gospel of Judas: A New Translation with Introduction and Commentary*, Yale University Press, 2022.
+- Christopher W. Skinner, `Gospel of Thomas`, NASSCAL e-Clavis: Christian Apocrypha, `https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-thomas/`.
+- Stephen J. Patterson, `The Gospel of Thomas and the Historical Jesus`, in *The Oxford Handbook of Early Christian Apocrypha*, 2016, DOI `10.1093/oxfordhb/9780199644117.013.36`.
+- `Making Mary Male: the Categories 'Male' and 'Female' in the Gospel of Thomas`, *New Testament Studies*, 1985, DOI `10.1017/S002868850001208X`, used as a historical control on disputed categorization rather than as a primary witness.
+- *The Apocryphon of John*, Marvin Meyer translation, accessible witness at `https://www.gnosis.org/naghamm/apocjn-meyer.html`.
+- *The Hypostasis of the Archons*, Bentley Layton translation, accessible witness at `https://www.gnosis.org/naghamm/hypostas.html`.
+- *On the Origin of the World*, Hans-Gebhard Bethge and Bentley Layton, accessible witness at `https://gnosis.org/naghamm/origin.html`.
+- M. David Litwa, `'I Am God and There is No Other!': The Boast of Yaldabaoth`, Oxford University Press, 2016, DOI `10.1093/acprof:oso/9780190467166.003.0004`.
+- *The Gospel of Truth*, Harold W. Attridge and George W. MacRae translation, accessible witness at `https://www.gnosis.org/naghamm/gostruth.html`.
+- *The Gospel of Philip*, Marvin Meyer translation, accessible witness at `https://www.gnosis.org/naghamm/GPhilip-Meyer.html`.
+- Antti Marjanen, `'Gnosticism'`, in *The Oxford Handbook of Early Christian Studies*, 2009, DOI `10.1093/oxfordhb/9780199271566.003.0011`, used for the category-level warning that `Gnosticism` is not a single uncontested scholarly category.
+
+The companion receipt remains useful for machine-readable provenance, but this section now carries the complete decision-relevant interpretation and is the authoritative narrative checkpoint.
+
+### 33.7 Mandatory evidence separation
+
+#### A. What the current implementation computes
+
+Nothing about the current Core implementation changed in this checkpoint. FAC0-R1, FAC1, and FAC2-R1 retain exactly their prior implementation-level meanings. The source audit does not add, remove, or reinterpret a Core state variable by itself.
+
+#### B. What was actually observed
+
+No new Core simulation or numerical experiment was executed. The new observation is textual/source-critical: the eight preregistered dimensions do not converge into the registered full LAEC graph across the checked source set. The explicit local-totality claim is concentrated in a bounded Yaldabaoth/Sethian creation-myth family, while recognition/revelation is broader but fails the specificity control.
+
+#### C. Cautious interpretation
+
+The project-owner systems synthesis remains valuable hypothesis provenance, but it over-composes roles if treated as a literal common causal sequence across all named sources. A narrower source-derived discriminator may still exist, but it must be reconstructed after this negative result rather than recovered by selectively ignoring absences.
+
+#### D. Hypotheses still open
+
+```text
+local_observer_partial_access_as_a_general_systems_question = open
+bounded_Sethian_local_totality_as_hypothesis_prompt = open_but_source_specific
+recognition_reorientation_as_Lineum_specific_signal = not_supported_without_a_stronger_discriminator
+current_model_overparameterized_or_reducible = open_and_unaffected
+mu_reducible_to_history = open
+kappa_as_effective_or_supplied_scaffold = open
+new_independent_state_X = unproven_and_last_resort
+DG0_deeper_generative_layer = open_but_unprivileged
+```
+
+No replacement LAEC abstraction is selected in this section because the verified negative opens the owner-intuition gate.
+
+#### E. Real history and physics
+
+The checked texts are historically diverse and do not justify one merged `Gnostic cosmology`. The modern scholarly category `Gnosticism` itself remains contested. No source result establishes that ancient authors encoded Lineum, distributed-systems theory, modern physics, a higher physical layer, a soul mechanism, or a creator architecture. No real-physics claim changes here.
+
+### 33.8 Programme impact matrix
+
+| Existing branch or claim | Relationship after source audit | Impact |
+|---|---|---|
+| full Section-27 cross-text LAEC graph | `contradicts` | unsupported as a minimum across the checked source set |
+| bounded Yaldabaoth local-totality motif | `supports` | retained as source-specific, not universal |
+| generic recognition/reorientation motif | `constrains` | recurrent but currently fails specificity/generic-pattern control |
+| project-owner systems synthesis | `constrains` | remains useful provenance but cannot be treated as a recovered common textual mechanism |
+| source-shuffling null | `supports` | combining roles from different texts/agents can manufacture the cleaner modern sequence |
+| M0 / simplification-before-addition | `unaffected` | source audit neither proves nor weakens the possibility that current Lineum is already sufficient or overparameterized |
+| M6 / mu reduction-first | `unaffected` | remains mandatory before independent `mu` ontology |
+| M7 / new state X | `constrains` | no source finding supplies evidence for another state variable |
+| FAC0-R1 / FAC1 / FAC2-R1 | `unaffected` | their implementation results remain exactly as retained in Sections 28, 30, and 32 |
+| LAEC0 direct Lineum application | `blocked` | the old abstraction cannot be applied by inertia after its cross-text minimum failed |
+| physical / metaphysical correspondence | `unaffected` | remains unestablished |
+
+### 33.9 Failure classification
+
+The current decision-relevant negative is classified as:
+
+```text
+cross_text_convergence_failure
+generic_pattern_confounder
+interpretation_overreach
+```
+
+It is not classified as a failure of Lineum, a failure of the current Core equations, a numerical failure, or evidence that a new state is required.
+
+### 33.10 Owner-intuition gate and exact resume state
+
+This negative result is decision-relevant because the previously registered source abstraction cannot simply be carried forward into a Lineum experiment. Replacing, shrinking, or reframing it now creates a genuine hypothesis-choice point. Under the repository owner-intuition rule, agent-generated repair classes must not be ranked before the project owner contributes an independent lay interpretation.
+
+The next action is therefore not a simulation and not another source search. It is one neutral owner-intuition prompt describing only the observed situation, without answer choices or hidden repair proposals. After the owner responds, that response must be recorded distinctly in this same active report before any replacement abstraction, preregistration, Lineum test, or mechanism selection proceeds.
+
+```text
+LAEC0_source_audit = retained_negative_result
+persistence_gate = repaired
+provisional_receipt_substitution = no_longer_needed_for_narrative_authority
+owner_intuition_gate = open
+Lineum_experiment_from_LAEC0 = blocked_until_owner_response_is_retained
+FAC2_R2_FAC3_FAC4_FAC5_in_this_report = not_authorized_by_inertia
+Core_code_change = none
+whitepaper_change = none
+ClickUp_task_closure = not_authorized
+```
+
+**Current resume instruction:** read current repository rules and this report from `develop`; treat Section 33 as the latest authoritative checkpoint; preserve the full cross-text LAEC graph as falsified as a minimum within the checked source set; preserve the bounded Sethian local-totality motif and the broader but generic recognition motif separately; do not invent a replacement abstraction or run a Lineum test yet; first obtain the project owner's neutral intuition at the verified-negative gate, record that response in this report, and only then formalize the cheapest new discriminator.
