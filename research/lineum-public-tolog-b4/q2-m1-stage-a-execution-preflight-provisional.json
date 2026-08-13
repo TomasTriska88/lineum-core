@@ -99,8 +99,35 @@
       "result": "no dispatch action exposed by the connected GitHub capability",
       "repository_mutation": false,
       "science_executed": false
+    },
+    {
+      "intent": "create the actual complete v0.25.8 authoritative-report Git blob as a deliverable after a fresh rule and branch-head verification",
+      "result": "connector safety rejection before Git object creation",
+      "git_object_created": false,
+      "commit_created": false,
+      "science_executed": false
+    },
+    {
+      "path": "research/lineum-public-tolog-galactic-shape-b4.md",
+      "intent": "publish a truthful report-only v0.25.8 checkpoint through the Rule 56 one-file contents path using the exact current report blob, with scientific execution still prohibited until manifest synchronization",
+      "result": "connector safety rejection before repository mutation",
+      "report_changed": false,
+      "commit_created": false,
+      "science_executed": false
     }
   ],
+  "rule_reaudit": {
+    "performed_before_latest_continuity_attempts": true,
+    "branch": "develop",
+    "relevant_current_rules": [
+      ".agent/rules.d/49-github-branch-safety.md",
+      ".agent/rules.d/54-single-report-readable-artifacts.md",
+      ".agent/rules.d/56-github-connector-mutation-safety.md",
+      ".agent/rules.d/57-authoritative-research-report-continuity-gate.md",
+      ".agent/continuous-research-reporting.md"
+    ],
+    "methodological_correction": "Temporary branch or Git-object creation must not be used as capability probes. The later actual Git-Data deliverable attempt and the exact-SHA one-file contents attempt were real persistence-repair writes, not probes; both were rejected before mutation. Their rejection is technical transport chronology only and does not establish a scientific result or a universal repository capability claim."
+  },
   "existing_ci_audit": {
     "python_tests_workflow": ".github/workflows/python_tests.yml",
     "python_tests_runtime": "Python 3.11",
@@ -116,8 +143,8 @@
   "hypothesis_status": "whether retained mu causally reuses source-off orientation history remains untested",
   "real_physics_status": "no physical memory field, attractor, gravity, quantum, consciousness, cosmological, or empirical correspondence established",
   "continuity_gate": "closed",
-  "blocking_reason": "The authoritative large Markdown report still cannot be safely updated through the currently accepted connector paths while satisfying byte-fidelity, candidate-diff, expected-parent, and atomic checkpoint rules. Workflow creation, candidate-branch creation, and unreferenced Git-Data staging are each rejected before mutation; the connected capability exposes no workflow-dispatch action.",
+  "blocking_reason": "The active Markdown cannot be published safely from the current tool session. After fresh rule and branch-state verification, both the rule-compliant actual Git-Data deliverable staging attempt and the Rule 56 exact-SHA one-file contents update were rejected by connector safety before mutation. No authenticated local Git publication path or supported local scientific runtime is available. The authoritative report and artifact manifest therefore remain unchanged and the continuity gate remains closed.",
   "permitted_work_while_gate_closed": "Only restore authoritative report continuity, verify repository state, and preserve technical chronology; no new scientific experiment, mechanism selection, parameter tuning, Stage B definition, or whitepaper promotion.",
-  "mandatory_next_step": "Use a byte-safe report/manifest transport that can preserve the complete existing Markdown, verify the exact candidate diff and expected parent before publication, incorporate this complete receipt into research/lineum-public-tolog-galactic-shape-b4.md, update its version/evidence cutoff and artifact manifest, commit and read back that authoritative checkpoint, then and only then execute one supported-runtime Q2-M1 Stage A primary from the unchanged frozen identities.",
+  "mandatory_next_step": "Use a future allowed byte-safe targeted report write, either a verified Git-Data deliverable path or the Rule 56 one-file contents path with immediate post-write audit, to incorporate this complete receipt into research/lineum-public-tolog-galactic-shape-b4.md without unrelated byte normalization. Then synchronize and read back the artifact manifest. Only after both authoritative surfaces are current may one supported-runtime Q2-M1 Stage A primary execute from the unchanged frozen identities after the 18/18 regression gate. Do not retry blocked mutation styles merely as capability probes.",
   "prohibited_interpretation": "This receipt is infrastructure chronology only and must not be treated as Q2-M1 scientific evidence or as an authoritative programme advance until incorporated into the active Markdown report."
 }
