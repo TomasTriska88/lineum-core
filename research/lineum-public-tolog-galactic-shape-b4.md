@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, `Q2-PV1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; Questions 1 and 3 remain unchanged
-**Version:** 0.25.6 \
-**Evidence cutoff:** 2026-08-10
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; Questions 1 and 3 remain unchanged
+**Version:** 0.25.7 \
+**Evidence cutoff:** 2026-08-12
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `a69436f92e0441742454fe20d97d7c9388a28d6a` \
+**Checkpoint parent:** `c97edb23a11fd1e99c079e6afc7740a1305e9b57` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -167,7 +167,7 @@ The mode-transfer substep approximately conserves the declared `E + phi` ledger.
 | mode transfer only | one-way conserved transfer | no | no | `0.13519992446823598` | `0.8648000730057612` | `0.9999999974739973` |
 | feedback only, seeded | unpaired feedback source | no | no | `1482693.5590557144` | `1.0` | `1482694.5590557144` |
 | dissipation only | sink | no | no | `4.427529784808337e-05` | `0` | `4.427529784808337e-05` |
-| null | stationary | no | no | `1.0` | `0` | `1.0` |
+| null | stationary components | no | no | `1.0` | `0` | `1.0` |
 
 ```text
 phi_decrease_count = 0
@@ -2172,3 +2172,84 @@ reset validity:
 The owner-inspired `mu` path may therefore be classified as a retained C3 candidate only when passive `mu` retention passes, primary C3 passes its frozen single-channel causal gate, the frozen channel-zeroing condition is satisfied, and the C3-specific cap, grid, timestep, resolution, and numerical-validity controls above all pass. Failure of one of these nuisance gates is `inconclusive`/`confounded`, not a negative result for all memory mechanisms.
 
 This clarification is preregistration, not evidence. No Stage A scientific execution is authorized until the exact runner and permanent tests implementing this lock pass the supported-runtime regression gate and become branch-reachable with recorded identities.
+
+### Q2-M1 supported-runtime harness regression and continuity closure — version `0.25.7`
+
+This checkpoint is still Question 2 only. Questions 1 and 3 are unchanged. No Q2-M1 Stage A scientific trajectory has been executed or inspected.
+
+The exact runner and permanent tests required by the frozen `0.25.0`-`0.25.6` protocol are branch-reachable in harness commit `308334c9ce07ca5e2fa9c8e80357abf82246391d`:
+
+```text
+runner path = research/runners/lineum_b4_q2_mu_causal_reuse.py
+runner Git blob = e2de0adf272a5e2c48eff60019ef9343eefa6bf6
+runner bytes = 58,610
+runner SHA-256 = d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3
+
+test path = tests/research/test_lineum_b4_q2_mu_causal_reuse.py
+test Git blob = e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d
+test bytes = 10,403
+test SHA-256 = 8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42
+
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt Git blob = 7a0907e3e6c2d15400d19b536227a509910ae7e9
+```
+
+The local helper preflight passed Python syntax compilation and `16 / 16` helper tests while deliberately deselecting the two repository-integration tests under Python `3.13.5` / NumPy `2.3.5`. That receipt is diagnostic only because NumPy 2.x is outside the supported scientific dependency range.
+
+The exact branch-reachable harness was then checked in the supported runtime by workflow run `31507567134`, job `93832949726`, from workflow source commit `bf1fbad0982bd7278c503b00db6e75dd0d71ad56`:
+
+```text
+workflow conclusion = success
+Ubuntu runner = 24.04
+Python = 3.11.15
+NumPy = 1.26.4
+pytest = 9.1.1
+exact runner/test/Core/dependency/report identity checks = passed
+py_compile = passed
+permanent Q2-M1 tests = 18 passed / 18 in 0.70 s
+workflow artifacts = none
+run_primary() invoked = false
+runner CLI invoked = false
+scientific JSON produced = false
+```
+
+The job was regression-only. It therefore establishes that the frozen measurement harness passes its declared test surface in the supported runtime, not that `mu` causally reuses history and not that Question 2 has an attractor.
+
+The publication chronology is retained explicitly. Unrelated work first advanced `develop` while the harness was being staged; all frozen B4/Core/dependency identities were rechecked before publication. Two accidental empty connector probe files were subsequently created and removed: `__do_not_use__` in `8707570e2c8faff19b7ed71486afd1c57189e8af`, cleaned by `228b2d2e6e1d2f71202ac00151f29c0cc02249e8`, and `__do_not_use_again__` in `e380984d71957dacc1287b7c3ede25646b0e0992`, cleaned by `8123df89c7c5d658e0c051d28d23a1d8acb8967c`. Both were technical repository events only; no science ran.
+
+A first complete `0.25.7` candidate, commit `c7be83d5988dceafb0d2a11c4f4cd2c6dcb1663f`, was rejected before branch-ref movement because its report reconstruction normalized historical Markdown hard-break whitespace and produced broad unrelated report churn. A complete `216,840`-byte manual base64 reconstruction later produced the wrong Git blob SHA and was rejected; a second chunked reconstruction exposed same-length character substitutions and was abandoned. None of those attempts changed the authoritative report or produced science.
+
+To prevent loss of the verified regression chronology while the report remained blocked, provisional continuity commit `377da50950c2d7c41800dc25e6af4a07ed0632d8` added `research/lineum-public-tolog-b4/q2-m1-harness-regression-provisional.json`, Git blob `604ea25c4a7860b8acd951d7fb44edf5bafcd91b`, and removed the one-use regression workflow. The receipt explicitly marked itself non-authoritative and kept the continuity gate closed pending this Markdown update.
+
+The connector byte-fidelity blocker was then resolved without normalizing the report: the complete authoritative `0.25.6` content was fetched from immutable blob `7119da7d1cc078142353dd28e98232ff7dfcd8f8` and recreated as a new Git blob. Git returned the exact same SHA `7119da7d1cc078142353dd28e98232ff7dfcd8f8`, proving that this connector path preserves the full existing report bytes before the present surgical edit.
+
+During the final continuity closure, `develop` advanced again from `377da50950c2d7c41800dc25e6af4a07ed0632d8` to `c97edb23a11fd1e99c079e6afc7740a1305e9b57` through two unrelated commits that changed only `research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md`. The B4 report, artifact manifest, Q2-M1 harness, active Core, and frozen dependency identities were unchanged, so the candidate was rebuilt on the new parent without any scientific redefinition or execution.
+
+Evidence separation for this checkpoint is therefore:
+
+```text
+implemented:
+    the exact preregistered Q2-M1 runner and permanent tests are branch-reachable;
+    the runner calls the active NumPy Core and changes no production equation;
+
+reproduced observation:
+    the exact harness passed 18/18 permanent tests in
+    Python 3.11.15 / NumPy 1.26.4 / pytest 9.1.1;
+    run_primary() and the runner CLI were not invoked;
+
+cautious interpretation:
+    the measurement harness is ready for one official Stage A execution;
+    this checkpoint closes the persistence/continuity defect only;
+
+hypothesis:
+    whether retained mu causally reuses orientation history remains untested;
+
+real physics:
+    no physical memory field, attractor, gravity, quantum, consciousness,
+    cosmological, or empirical correspondence is established.
+```
+
+After this `0.25.7` report and its manifest update are committed and read back on `develop`, the continuity gate is reopened for exactly one next consequential scientific action: the first official Q2-M1 Stage A primary from the frozen runner/test identities, after the permanent supported-runtime test gate passes again. Local supported execution is preferred when a Python 3.11 / NumPy 1.26.4 environment is actually available; otherwise only the already-documented supported-runtime exception may be used. The complete Stage A output must be retained as ordinary JSON and this same report updated before any later consequential step.
+
+Stage B remains non-executable. Even a positive Stage A causal echo must first be retained and independently checked under the already-frozen verification rules; causal history dependence by itself is not a Question 2 attractor and cannot be promoted into a whitepaper or real-physics claim.
