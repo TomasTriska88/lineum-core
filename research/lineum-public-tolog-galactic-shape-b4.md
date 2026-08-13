@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; Questions 1 and 3 remain unchanged
-**Version:** 0.25.7 \
-**Evidence cutoff:** 2026-08-12
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; Questions 1 and 3 remain unchanged
+**Version:** 0.25.8 \
+**Evidence cutoff:** 2026-08-13
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `c97edb23a11fd1e99c079e6afc7740a1305e9b57` \
+**Checkpoint parent:** `20daea76a55f7157732b4bb1f54e2b1416f96b82` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -921,7 +921,7 @@ psi_control = psi_before        elsewhere
 phi_control = phi_before        everywhere
 ```
 
-The factor is determined entirely from the frozen pre-state, before recovery outcome inspection. If `E_annulus <= 0` or `b_squared < 0`, that active case is `control_unavailable`; no clipping, absolute value, coefficient tuning, or alternative formula may rescue it after inspection. Inactive rows remain `not_applicable_inactive` and are not converted into control evidence.
+The factor is determined entirely from the frozen pre-state, before recovery outcome inspection. If `E_annulus <= 0` or `b_squared < 0`, that active case is `control_unavailable`; no clipping, absolute-value rescue, coefficient tuning, or alternative formula may rescue it after inspection. Inactive rows remain `not_applicable_inactive` and are not converted into control evidence.
 
 This control does not claim to be the physically correct perturbation. It is a methodological counterfactual that preserves the same global `psi` ledger while retaining a central-amplification/annular-suppression geometry. Its later comparison may change only the interpretation of the Q2 test, not establish real-world physics.
 
@@ -1471,7 +1471,7 @@ The second supported-runtime checker then passed the same `25 / 25` gate, comple
 
 The post-Stage-A source audit then established from the canonical source that the perturbation itself applies a `1.5` central `psi` multiplier and `0.5` annular `psi` multiplier while leaving `phi` unchanged. Unsupported-runtime diagnostics were inspected before `Q2-PV1` preregistration and are preserved only as exploratory motivation in Section 8.17.2. They are not retained scientific evidence. No replacement mechanism was executed before `Q2-PV1` was frozen.
 
-Before official `Q2-PV1-A` execution, implementation against the exact canonical source exposed that the perturbation multipliers are guarded by the runner's `active` mask. Version `0.21.1` corrects the textual preregistration before scientific execution: inactive rows remain in the 28-case key set but receive a canonical no-op and are `not_applicable_inactive`; they cannot be counted as neutral perturbation evidence. This clarification does not alter any active-row factor, radius, threshold, ledger definition, or previously observed scientific result.
+Before official `Q2-PV1-A` execution, implementation against the exact canonical source exposed that the perturbation multipliers are guarded by the runner's `active` mask. Version `0.21.1` corrects the textual preregistration before scientific execution: inactive rows remain in the 28-case key set but receive a no-op and are `not_applicable_inactive`; they cannot be counted as neutral perturbation evidence. This clarification does not alter any active-row factor, radius, threshold, ledger definition, or previously observed scientific result.
 
 The `Q2-PV1-A` runner was then written test-first. Before the runner existed, the new test collection failed with the expected missing-file error; no scientific case ran. After implementation, seven pure helper tests passed locally under NumPy `2.3.5`, and syntax compilation passed. Several unreferenced Git Data candidates were generated while report corrections advanced `develop`. The final branch publication later occurred in sequential runner/test commits with exact blob readback and no science between them. Version `0.21.5` preserves the complete publication chronology and authorized only the already frozen supported-runtime test gate and audit next.
 
@@ -2253,3 +2253,73 @@ real physics:
 After this `0.25.7` report and its manifest update are committed and read back on `develop`, the continuity gate is reopened for exactly one next consequential scientific action: the first official Q2-M1 Stage A primary from the frozen runner/test identities, after the permanent supported-runtime test gate passes again. Local supported execution is preferred when a Python 3.11 / NumPy 1.26.4 environment is actually available; otherwise only the already-documented supported-runtime exception may be used. The complete Stage A output must be retained as ordinary JSON and this same report updated before any later consequential step.
 
 Stage B remains non-executable. Even a positive Stage A causal echo must first be retained and independently checked under the already-frozen verification rules; causal history dependence by itself is not a Question 2 attractor and cannot be promoted into a whitepaper or real-physics claim.
+
+### Q2-M1 execution-preflight persistence incident and report-first recovery — version `0.25.8`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. It records infrastructure chronology after the `0.25.7` harness-ready checkpoint and does not contain a Q2-M1 Stage A scientific result.
+
+The project owner explicitly instructed that this B4 Markdown remain the complete durable laboratory history so a later conversation can resume from Git without relying on chat memory. The execution lane therefore remained paused whenever the authoritative report could not be updated safely.
+
+The frozen scientific identities remained unchanged throughout the incident:
+
+```text
+runner Git blob = e2de0adf272a5e2c48eff60019ef9343eefa6bf6
+runner SHA-256 = d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3
+test Git blob = e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d
+test SHA-256 = 8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt Git blob = 7a0907e3e6c2d15400d19b536227a509910ae7e9
+```
+
+The official runtime remains Python `3.11.15`, NumPy `1.26.4`, pytest `9.1.1`, with the permanent `18 / 18` Q2-M1 regression gate required immediately before scientific execution. The available local runtime was Python `3.13.5`; inspected NumPy installations were `2.3.5` and `2.4.4`. No Python 3.11 interpreter, conda/mamba environment, Docker/Podman runtime, cached NumPy 1.26 artifact, authenticated local Git credential, or usable local supported scientific environment was found. Shell DNS resolution for GitHub and python.org also failed during the preflight. These are technical execution-environment facts only and provide no scientific evidence.
+
+The continuity-repair chronology is retained rather than smoothed away:
+
+1. Two attempts to publish a narrow one-use supported-runtime Stage A workflow were rejected by connector safety before repository mutation; no workflow run and no science resulted.
+2. A reduced read-only execution/transfer variant was likewise rejected before mutation.
+3. A Git Data `create_blob` staging attempt for a documentation-only continuity path was rejected before object creation.
+4. A documentation-only `q2-m1-continuity-v0258.yml` path was rejected before file creation or job creation.
+5. An attempted temporary candidate branch was rejected before branch creation. Current branch-safety rules now make clear that temporary branches must not be used as capability probes; this remains a technical workflow misstep, not science.
+6. A later unreferenced-blob staging attempt was also rejected before object creation. Current mutation-safety rules likewise forbid using write operations as capability probes; no retained Git object or scientific evidence came from that attempt.
+7. The connected GitHub capability exposes no workflow-dispatch operation even though the generic Python test workflow declares `workflow_dispatch`; that generic workflow does not execute Q2-M1 Stage A and cannot substitute for the frozen primary.
+8. The actual intended `0.25.8` Git-Data deliverable `create_blob` request was rejected before object creation.
+9. A Rule-56 one-file contents update of this large Markdown was then attempted as an actual report deliverable, not as a probe. Connector safety rejected it before repository mutation.
+10. Provisional continuity receipts were retained instead of advancing science: initial receipt commit `d6914753628ee1510eec0c323bca6ab89d6cc4d3`, extended receipt commit `100b55956d8b8fd4ead4395fd3319a40a613b5e6`, and final pre-recovery blocker receipt commit `20daea76a55f7157732b4bb1f54e2b1416f96b82`. Each receipt remained explicitly non-authoritative.
+11. A first `create_tree` call supplied only already-current report/manifest/receipt blob identities and returned the unchanged base tree. It changed no reachable repository content. Under the freshly reread mutation-safety rule, this is retained as a `technical_staging_preflight_misstep`; it must not be repeated as a capability probe.
+12. Git Data tree creation was subsequently demonstrated with an unreferenced tree containing the historicalized receipt while leaving branch state untouched. This established an available staging route but did not itself update the authoritative Markdown or produce science.
+13. The present report candidate was then built from the immutable `0.25.7` report blob as a full readable UTF-8 Markdown replacement, with only the header/version metadata and this appended chronology intended to differ. It remains non-scientific until the candidate diff is verified and the resulting commit is published and read back.
+
+The provisional companion receipt `research/lineum-public-tolog-b4/q2-m1-stage-a-execution-preflight-provisional.json` exists only to preserve chronology during the persistence incident. This `0.25.8` Markdown incorporates its decision-relevant content. The receipt must thereafter be treated as historical non-authoritative infrastructure evidence; current scientific and gate state comes from this Markdown and the artifact manifest.
+
+Evidence separation remains explicit:
+
+```text
+implemented:
+    the exact preregistered Q2-M1 runner and tests remain branch-reachable;
+    no production equation changed;
+
+reproduced observation:
+    the earlier exact supported-runtime harness regression remains 18/18;
+    no new regression or scientific trajectory was run during this persistence incident;
+
+cautious interpretation:
+    the incident concerns execution and Git persistence only;
+    it neither strengthens nor weakens the mu causal-reuse hypothesis;
+
+hypothesis:
+    whether retained mu causally reuses source-off orientation history remains untested;
+
+not established:
+    any causal-memory echo;
+    any Q2 return or attractor rescue;
+    any Q3 fixed-potential memory result;
+    any physical memory, gravity, quantum, consciousness, cosmological,
+    dark-matter, or other empirical interpretation.
+```
+
+This report-only checkpoint does **not** by itself reopen the scientific continuity gate. The artifact manifest must next be synchronized to index the Q2-M1 runner, permanent test, historical continuity receipt, supported-runtime `18 / 18` regression receipt, and the fact that Stage A remains unexecuted. That small manifest update must be committed and read back on top of this exact report checkpoint.
+
+Only after both this `0.25.8` report and the synchronized artifact manifest are branch-reachable and verified may the continuity gate reopen for one consequential action: rerun the permanent Q2-M1 `18 / 18` supported-runtime regression gate and, if it passes from the unchanged frozen identities, execute exactly one official Stage A primary. The complete primary must be retained as ordinary JSON and this same report updated before any independent checker implementation, mechanism selection, Stage B definition, parameter tuning, whitepaper promotion, or other consequential research step.
+
+Stage B remains non-executable. A positive causal echo would demonstrate only implemented history dependence within the frozen finite-grid model until independently checked; it would not by itself demonstrate the finite natural attractor required by Question 2.
