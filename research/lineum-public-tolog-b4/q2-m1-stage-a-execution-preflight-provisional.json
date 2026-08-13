@@ -71,6 +71,36 @@
       "science_executed": false
     }
   ],
+  "continuity_retry_attempts_after_initial_receipt": [
+    {
+      "path": ".github/workflows/q2-m1-continuity-v0258.yml",
+      "intent": "documentation-only byte-verified report/manifest continuity transport with no scientific command",
+      "result": "connector safety rejection before file creation or repository mutation",
+      "commit_created": false,
+      "workflow_run_created": false,
+      "science_executed": false
+    },
+    {
+      "intent": "create temporary candidate branch from the provisional continuity commit for pre-publication diff verification",
+      "result": "connector safety rejection before branch creation",
+      "branch_created": false,
+      "commit_created": false,
+      "science_executed": false
+    },
+    {
+      "intent": "create an unreferenced non-workflow Git blob as the narrowest possible Git-Data staging probe",
+      "result": "connector safety rejection before blob creation",
+      "git_object_created": false,
+      "commit_created": false,
+      "science_executed": false
+    },
+    {
+      "intent": "discover an exposed workflow-dispatch action for an already existing workflow",
+      "result": "no dispatch action exposed by the connected GitHub capability",
+      "repository_mutation": false,
+      "science_executed": false
+    }
+  ],
   "existing_ci_audit": {
     "python_tests_workflow": ".github/workflows/python_tests.yml",
     "python_tests_runtime": "Python 3.11",
@@ -86,8 +116,8 @@
   "hypothesis_status": "whether retained mu causally reuses source-off orientation history remains untested",
   "real_physics_status": "no physical memory field, attractor, gravity, quantum, consciousness, cosmological, or empirical correspondence established",
   "continuity_gate": "closed",
-  "blocking_reason": "The authoritative large Markdown report could not be safely updated through the currently accepted connector write paths without violating byte-fidelity and candidate-diff rules.",
-  "permitted_work_while_gate_closed": "Only restore authoritative report continuity and verify repository state; no new scientific experiment, mechanism selection, parameter tuning, Stage B definition, or whitepaper promotion.",
-  "mandatory_next_step": "Incorporate this complete receipt into research/lineum-public-tolog-galactic-shape-b4.md, update its version/evidence cutoff and artifact manifest, commit and read back that authoritative checkpoint, then and only then execute one supported-runtime Q2-M1 Stage A primary from the unchanged frozen identities.",
+  "blocking_reason": "The authoritative large Markdown report still cannot be safely updated through the currently accepted connector paths while satisfying byte-fidelity, candidate-diff, expected-parent, and atomic checkpoint rules. Workflow creation, candidate-branch creation, and unreferenced Git-Data staging are each rejected before mutation; the connected capability exposes no workflow-dispatch action.",
+  "permitted_work_while_gate_closed": "Only restore authoritative report continuity, verify repository state, and preserve technical chronology; no new scientific experiment, mechanism selection, parameter tuning, Stage B definition, or whitepaper promotion.",
+  "mandatory_next_step": "Use a byte-safe report/manifest transport that can preserve the complete existing Markdown, verify the exact candidate diff and expected parent before publication, incorporate this complete receipt into research/lineum-public-tolog-galactic-shape-b4.md, update its version/evidence cutoff and artifact manifest, commit and read back that authoritative checkpoint, then and only then execute one supported-runtime Q2-M1 Stage A primary from the unchanged frozen identities.",
   "prohibited_interpretation": "This receipt is infrastructure chronology only and must not be treated as Q2-M1 scientific evidence or as an authoritative programme advance until incorporated into the active Markdown report."
 }
