@@ -1,0 +1,93 @@
+{
+  "status": "provisional_non_authoritative_continuity_receipt",
+  "date": "2026-08-13",
+  "programme": "Lineum Public-TOLOG Three-Question Benchmark — B4",
+  "scope": "Question 2 only; Q1 and Q3 unchanged",
+  "owner_continuity_directive": "Keep the authoritative B4 report as the complete durable history so a new conversation can resume from Git without relying on chat memory.",
+  "repository": "TomasTriska88/lineum-core",
+  "branch": "develop",
+  "frozen_branch_head_before_preflight": "2152b650cddae2b121a4495d453755657528993b",
+  "authoritative_report_path": "research/lineum-public-tolog-galactic-shape-b4.md",
+  "authoritative_report_version_before_preflight": "0.25.7",
+  "authoritative_report_git_blob_before_preflight": "129a831d661f318399945467559b034dc9676b81",
+  "artifact_manifest_git_blob_before_preflight": "ce2d7764d34c05298f060c72394bade50584f240",
+  "frozen_q2_m1_identities": {
+    "runner_path": "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+    "runner_git_blob": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
+    "runner_sha256": "d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3",
+    "test_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+    "test_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
+    "test_sha256": "8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42",
+    "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+    "requirements_dev_git_blob": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+  },
+  "required_official_runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "pre_science_regression_gate": "18/18 permanent Q2-M1 tests must pass"
+  },
+  "local_execution_preflight": {
+    "available_python": "3.13.5",
+    "inspected_numpy_versions": [
+      "2.3.5",
+      "2.4.4"
+    ],
+    "alternate_environment_without_numpy": true,
+    "python_3_11_found": false,
+    "conda_or_mamba_found": false,
+    "docker_or_podman_found": false,
+    "cached_numpy_1_26_artifact_found": false,
+    "shell_dns_github_com": "failed_to_resolve",
+    "shell_dns_python_org": "failed_to_resolve",
+    "git_clone_possible": false,
+    "official_python_3_11_15_source_download_possible": false,
+    "classification": "technical_execution_environment_unavailable",
+    "scientific_evidence": false
+  },
+  "connector_publication_attempts": [
+    {
+      "path": ".github/workflows/q2-m1-stage-a-one-use.yml",
+      "intent": "supported-runtime Stage A with durable result retention",
+      "result": "connector safety rejection before repository mutation",
+      "commit_created": false,
+      "workflow_run_created": false,
+      "science_executed": false
+    },
+    {
+      "path": ".github/workflows/q2-m1-stage-a-one-use.yml",
+      "intent": "reduced read-only Stage A execution plus result transfer",
+      "result": "connector safety rejection before repository mutation",
+      "commit_created": false,
+      "workflow_run_created": false,
+      "science_executed": false
+    },
+    {
+      "intent": "Git Data staging of a report-only continuity workflow",
+      "result": "create_blob request blocked by connector safety before staging object creation",
+      "commit_created": false,
+      "workflow_run_created": false,
+      "science_executed": false
+    }
+  ],
+  "existing_ci_audit": {
+    "python_tests_workflow": ".github/workflows/python_tests.yml",
+    "python_tests_runtime": "Python 3.11",
+    "workflow_dispatch_declared": true,
+    "connected_dispatch_action_available": false,
+    "executes_q2_m1_primary": false,
+    "substitution_permitted": false,
+    "reason": "The generic workflow runs repository tests and audits but contains no frozen Q2-M1 Stage A primary or result-retention command."
+  },
+  "scientific_execution_performed": false,
+  "scientific_json_produced": false,
+  "q2_m1_stage_a_status": "unexecuted",
+  "hypothesis_status": "whether retained mu causally reuses source-off orientation history remains untested",
+  "real_physics_status": "no physical memory field, attractor, gravity, quantum, consciousness, cosmological, or empirical correspondence established",
+  "continuity_gate": "closed",
+  "blocking_reason": "The authoritative large Markdown report could not be safely updated through the currently accepted connector write paths without violating byte-fidelity and candidate-diff rules.",
+  "permitted_work_while_gate_closed": "Only restore authoritative report continuity and verify repository state; no new scientific experiment, mechanism selection, parameter tuning, Stage B definition, or whitepaper promotion.",
+  "mandatory_next_step": "Incorporate this complete receipt into research/lineum-public-tolog-galactic-shape-b4.md, update its version/evidence cutoff and artifact manifest, commit and read back that authoritative checkpoint, then and only then execute one supported-runtime Q2-M1 Stage A primary from the unchanged frozen identities.",
+  "prohibited_interpretation": "This receipt is infrastructure chronology only and must not be treated as Q2-M1 scientific evidence or as an authoritative programme advance until incorporated into the active Markdown report."
+}
