@@ -320,6 +320,14 @@
     "identity_repair_test_git_blob": "3372405679f7b700cd08e405db1368b6e3726cb9",
     "identity_repair_targeted_tests_passed": 4,
     "identity_repair_receipt_git_blob": "ec1573a9ffba1b1e083457259d1a9f5453e76a6d",
+    "import_path_repair_authorised": true,
+    "import_path_repair_authorised_on": "2026-08-18",
+    "import_path_repair_clickup_task": "869eka1u3",
+    "import_path_repair_status": "preregistered_not_implemented",
+    "import_path_repair_contract": "prepend the runner repository root to sys.path only when it is not already first; change no pre-existing function body",
+    "import_path_repair_test_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_import_path_repair.py",
+    "import_path_repair_permanent_gate_authorised": false,
+    "import_path_repair_primary_authorised": false,
     "report_chronology_order_corrected": true,
     "report_chronology_order_correction_commit": "446160d6a23ee3d1c131923aaaac4123ce8f8f6b",
     "official_primary_invocation_limit": 1,
@@ -365,8 +373,8 @@
     "latest_primary_execution_receipt_git_blob": "69007ebd4c7ddabba0c99f481e3d5522fb71c135",
     "latest_primary_stderr_bytes": 908,
     "latest_primary_stderr_sha256": "cd3b6a82bf2ebffcaeb407785f0000cf1ba725f201a6e6e42ad4485c960427d9",
-    "continuity_report_version": "0.25.15",
-    "continuity_report_git_blob": "1e568fec70c90a431321ce478b73fa4c7ce516b3"
+    "continuity_report_version": "0.25.16",
+    "continuity_report_git_blob": "9d143e324fc4782d8a545bd4dd58bcb5d0a5f639"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
