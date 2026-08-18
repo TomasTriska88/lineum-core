@@ -283,7 +283,7 @@
     "previous_regression_tests_passed": 18,
     "previous_regression_run_primary_invoked": false,
     "continuity_report_version": "0.25.8",
-    "continuity_report_git_blob": "efabc631149bad8114bbaf01368c39470ce7e821"
+    "continuity_report_git_blob": "c34c586dfbcf36a08b1d332149298455ce124753"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
