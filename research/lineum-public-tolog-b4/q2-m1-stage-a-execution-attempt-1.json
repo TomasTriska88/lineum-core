@@ -1,0 +1,113 @@
+{
+  "schema": "lineum-public-tolog-b4/q2-m1-stage-a-execution-attempt/1",
+  "artifact_id": "Q2-M1-STAGE-A-EXECUTION-ATTEMPT-1",
+  "recorded_on": "2026-08-18",
+  "question": "Q2",
+  "stage": "Q2-M1 Stage A",
+  "status": "technical_non_result",
+  "classification": "pre_scientific_import_path_failure",
+  "authorization": {
+    "owner_reply": "ano.",
+    "permanent_gate_invocation_limit": 1,
+    "conditional_primary_cli_invocation_limit": 1,
+    "retry_authorized": false,
+    "stage_b_authorized": false
+  },
+  "checkpoint": {
+    "head": "5c211e72b1375024e6cfc436def943a46f29becf",
+    "origin_develop": "5c211e72b1375024e6cfc436def943a46f29becf",
+    "report_version": "0.25.14",
+    "report_git_blob": "b5223e9a2ec8fce2e3eaf518c72bf7ffff6f5106",
+    "manifest_git_blob": "1500df0b8049069901086c022c7f70b6d28ac1fc",
+    "worktree_clean_before_gate": true,
+    "primary_stdout_path_absent_before_gate": true,
+    "primary_stdout_path_absent_before_primary": true
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python_executable": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe"
+  },
+  "identities": {
+    "runner_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+    "runner_git_blob_bytes": 60248,
+    "runner_git_blob_sha256": "03306a002412f5c18d07231ddaf2b539bb2111419e0d6699507a4af94bae7ecb",
+    "permanent_test_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
+    "permanent_test_git_blob_bytes": 10403,
+    "permanent_test_git_blob_sha256": "8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42",
+    "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+    "requirements_dev_git_blob": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+    "dual_git_identity_preflight_passed": true,
+    "direct_source_receipt_passed": true
+  },
+  "permanent_gate": {
+    "attempt_ordinal": 2,
+    "invocations_under_this_authorization": 1,
+    "command": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse.py -q",
+    "started": "2026-08-18T12:14:47.6577638+02:00",
+    "ended": "2026-08-18T12:14:48.6907031+02:00",
+    "wrapper_elapsed_seconds": 1.033,
+    "pytest_elapsed_seconds": 0.54,
+    "exit_code": 0,
+    "tests_passed": 18,
+    "tests_failed": 0,
+    "status": "passed"
+  },
+  "official_primary_cli": {
+    "invocation_ordinal": 1,
+    "invocations_under_this_authorization": 1,
+    "command": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe research/runners/lineum_b4_q2_mu_causal_reuse.py",
+    "started": "2026-08-18T12:15:10.4772242+02:00",
+    "ended": "2026-08-18T12:15:10.9845407+02:00",
+    "elapsed_seconds": 0.507,
+    "exit_code": 1,
+    "invocation_consumed": true,
+    "retry_authorized": false
+  },
+  "stdout": {
+    "path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
+    "present": true,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "git_candidate_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "valid_nonempty_json": false,
+    "scientific_result_present": false
+  },
+  "stderr": {
+    "retained_outside_tracked_worktree": true,
+    "path": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-primary-stderr-attempt-1-20260818.txt",
+    "bytes": 908,
+    "sha256": "cd3b6a82bf2ebffcaeb407785f0000cf1ba725f201a6e6e42ad4485c960427d9",
+    "line_count": 12,
+    "exception_type": "ModuleNotFoundError",
+    "exception_message": "No module named 'lineum_core'",
+    "failure_function": "core_bindings",
+    "failure_source_line": 735
+  },
+  "execution_boundary": {
+    "frozen_source_gate_reached_and_passed": true,
+    "supported_runtime_gate_reached_and_passed": true,
+    "core_bindings_completed": false,
+    "protocol_constructed": false,
+    "nuisance_schedule_constructed": false,
+    "p0_observer_gate_run": false,
+    "scientific_trajectory_started": false,
+    "stage_a_scientifically_executed": false
+  },
+  "bounded_interpretation": {
+    "implementation_fact": "The exact preregistered direct-file CLI does not make the repository root importable in this supported Windows invocation context, so core_bindings could not import lineum_core.math.",
+    "observation": "The permanent gate passed 18/18, then the single official CLI exited 1 before protocol construction and produced zero stdout bytes.",
+    "interpretation": "This is a launcher/import-path technical non-result and supplies no evidence for or against causal history reuse.",
+    "hypothesis_status": "untested",
+    "physical_claim_established": false
+  },
+  "next_action_boundary": {
+    "execution_lane_open": false,
+    "repair_authorized": false,
+    "new_gate_authorized": false,
+    "new_primary_authorized": false,
+    "stage_b_executable": false
+  }
+}
