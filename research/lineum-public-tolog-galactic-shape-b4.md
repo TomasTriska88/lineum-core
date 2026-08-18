@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the owner-authorised test-first decision-surface compliance repair reproduced the stronger-label defect `1 / 1` before the one-condition change and passed `1 / 1` afterward, so future executable classification now conforms to the frozen nuisance-failure rule; no scientific rerun, independent checker, tuning, new primary, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.25 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison, but it is not implemented or executed; no scientific rerun, independent checker, tuning, new primary, resolution sweep, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.26 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3537,3 +3537,165 @@ repair receipt SHA-256 = eda40d5de8d7b2b6da2c0fa08662ea1c262150c6f45379822559f10
 **Hypothesis status.** Unchanged: Q2-M1 remains `inconclusive_under_frozen_resolution_control`, with no demonstrated `mu`-only causal guide and no verified Q2-M1 negative.
 
 The repair authorization is consumed. Permanent-gate invocations during the repair remain `0`; primary, independent-checker, and Stage B invocations remain `0`. The technical repair lane and scientific execution lane are closed.
+
+### Q2-M1-RS1 prospective resolution-sensitivity preregistration — version `0.25.26`
+
+**Plain conclusion.** The retained Q2-M1 result remains inconclusive. This checkpoint defines one new, finer resolution in advance so a later authorised study can determine whether the observed resolution mismatch persists; it does not run that study.
+
+**Everyday analogy.** The first two rulers disagreed near a boundary. RS1 specifies one third, finer ruler and the reading rules before it is placed on the object. It does not keep trying rulers until one produces a preferred answer.
+
+**Practical consequence.** The canonical report is now ready for a bounded follow-up without post-outcome parameter searching. Today no runner, test, simulation, checker, threshold, production equation, or retained result changes.
+
+#### Owner authorization and hard boundary
+
+On `2026-08-18`, after the exact proposal to prepare only a preregistration for a narrow, prospective, non-sweep resolution-sensitivity study and not run any simulation, project owner Tomáš Tříska replied `ok`.
+
+That reply establishes only this authority state:
+
+```text
+protocol = Q2-M1-RS1
+preregistration_authorised = true
+preregistration_authorisation_consumed_by_this_checkpoint = true
+implementation_authorised = false
+test_execution_authorised = false
+scientific_execution_authorised = false
+independent_checker_authorised = false
+broad_or_adaptive_resolution_sweep_authorised = false
+direct_Q2_or_Stage_B_authorised = false
+Lina_or_device_extension_authorised = false
+```
+
+The retained Q2-M1 attempt 3 remains immutable and canonically `inconclusive_or_confounded`. RS1 is a disclosed post-outcome follow-up to one known confound, not a reinterpretation or continuation of that primary. No RS1 outcome may retroactively relabel attempt 3.
+
+#### Why this is a normalized-lattice sensitivity study, not a continuum proof
+
+**Implementation fact.** Active Core finite differences use adjacent lattice samples through `numpy.roll`, `numpy.gradient`, and their Torch equivalents. The production configuration has no explicit spatial step `dx`, and the retained Q2-M1 resolution control scaled the array size and the imprinted geometry together while leaving the update coefficients unchanged.
+
+**Interpretation.** The existing `N=64` versus `N=96` control therefore tests sensitivity inside one normalized lattice-scale family. It is not a classical fixed-physical-domain convergence study with explicit `dx` factors and coefficient rescaling. RS1 deliberately stays inside that same implemented family so it asks one narrow, comparable question; it must not be described as a continuum limit or proof of discretization independence.
+
+**Known observation disclosed before RS1.** The representative `N=64` C2 lane was above its frozen single-channel floor, while the scaled `N=96` C2 lane was below it. C3 was below its floor at both sizes. These values are already known and are why RS1 exists; the new study is prospective only for the single new `N=128` result.
+
+#### Frozen study question and execution unit
+
+RS1 asks only:
+
+> When the same representative Q2-M1 family is recomputed at `N=96` and at one preselected finer size `N=128`, does the categorical C0-C3 lane signature remain the same under the unchanged thresholds and, where both values clear their floors, the unchanged ratio rule?
+
+The future official execution unit, if separately authorised, is one dedicated research runner invocation that recomputes both `N=96` and `N=128` from source. The retained `N=64` and `N=96` attempt-3 values remain historical anchors and are not substituted for the recomputed pair. This gives both prospective sizes the same future runner identity, supported runtime, and capture path while adding exactly one previously unobserved resolution.
+
+The planned implementation paths are frozen as:
+
+```text
+runner = research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+permanent test = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+primary output = research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json
+```
+
+Those files do not yet exist and their creation is not authorised by this checkpoint. The current Q2-M1 runner accepts representative sizes `64` and `96` only; silently widening it or reusing it to execute `128` is forbidden.
+
+#### Frozen parameters
+
+Only the following two-resolution pair is permitted:
+
+| Item | `N=96` reference | `N=128` new prospective size |
+|---|---:|---:|
+| scale relative to `N=64` | `1.5` | `2.0` |
+| representative variant IDs | original `12`, `17` | original `12`, `17` |
+| separation | `18.0` | `24.0` |
+| widths | `3.75`, `5.25` | `5.0`, `7.0` |
+| shifts | `(0, 0)` | `(0, 0)` |
+| common-state width | `7.5` | `10.0` |
+
+Everything else remains exactly aligned with retained Q2-M1:
+
+```text
+seed = 20260804
+boundary = periodic
+stencil = LAP4
+dt = 0.1
+imprint updates = 120
+source-off updates = 2000
+echo updates = 200
+drift_strength = 0
+labels = the unchanged orientation pair
+lanes = C0, C1, C2, C3
+C0 null maximum = 1e-12 for psi, phi, and mu
+C1 full-history floor = max(1e-4, 10 * C0 psi divergence)
+C2 and C3 single-channel floor = max(5e-5, 5 * C0 psi divergence)
+mu-zeroing reduction minimum for a candidate = 0.50
+cross-resolution ratio interval = [0.5, 2.0]
+```
+
+No parameter, coefficient, seed, label, observer, metric, threshold, horizon, lane, or geometry may be selected after viewing the `N=128` output. No `N=112`, `N=144`, `N=160`, adaptive refinement, threshold relaxation, alternate normalization, or second attempt is part of RS1.
+
+#### Frozen validity and comparison contract
+
+For each size, both representative variants and both labels must finish the imprint, source-off, and echo phases with finite state, no reset, valid traces, exact common-current-state equality, and valid C0-C3 lane summaries. C0 must satisfy the unchanged null maximum in all three tracked channels.
+
+The categorical signature at each size is the ordered Boolean map:
+
+```text
+C0 = null rule passes
+C1 = full-history floor passes
+C2 = phi-only floor passes
+C3 = mu-only floor passes
+```
+
+Resolution stability requires all of the following:
+
+1. both size-specific validity surfaces pass;
+2. the complete C0-C3 categorical signatures are identical;
+3. for each of C1-C3 where both sizes clear that lane's unchanged floor, `N=128 value / N=96 value` lies in `[0.5, 2.0]`;
+4. lanes that do not clear their floors at both sizes receive no ratio and cannot pass through a ratio of two sub-threshold numbers.
+
+The retained primary's already-passed timestep, cap, observer, passive-retention, and grid-rotation controls remain contextual evidence only. RS1 neither reruns nor supersedes them and cannot claim more than resolution sensitivity of the representative pair. Any later causal claim still requires the applicable nuisance controls and an independently implemented checker.
+
+#### Frozen outcome map
+
+The future runner must return exactly one of these bounded primary labels:
+
+1. `rs1_inconclusive_or_confounded` if either size fails any RS1 validity requirement, output identity check, finite-state rule, exact common-state rule, or C0 null rule.
+2. `rs1_resolution_sensitive_unresolved` if the `N=96` and `N=128` signatures differ or any required above-floor ratio lies outside `[0.5, 2.0]`. Candidate A then freezes; no further size is authorised.
+3. `rs1_primary_mu_only_unsupported_indication` if the signatures match, resolution stability passes, and C3 remains below its unchanged floor at both sizes. This is a primary indication only. It becomes a verified negative within RS1's tested conditions only after a separately authorised, independently implemented checker reproduces it.
+4. `rs1_primary_mu_candidate_reopened` only if resolution stability passes and both sizes independently satisfy C0, C1, C3, and the `0.50` mu-zeroing-reduction requirement. This reopens a simulation candidate only; it does not establish direct Q2 return or a physical mechanism and still requires an independent checker.
+5. `rs1_mixed_pattern_unresolved` for every valid pattern not covered above. No threshold or lane may then be narrowed to force a stronger label.
+
+Any test failure, runner failure, malformed or partial output, source-identity mismatch, or interruption consumes a future one-shot execution authority if one is later granted. It yields a technical non-result and permits no retry without a new owner decision.
+
+#### Evidence separation and claim boundary
+
+**Implementation fact:** the current engine has an implicit unit lattice, the current Q2-M1 runner cannot execute `N=128`, and this checkpoint changes documentation metadata only.
+
+**Simulation observation:** attempt 3 showed strong passive `mu` retention, a C3 value below its causal floor at `N=64` and `N=96`, and a C2 categorical mismatch between those resolutions. RS1 adds no observation.
+
+**Interpretation:** the mismatch prevents a frozen-rule Q2-M1 verdict and motivates one finer normalized-lattice comparison. It does not identify which numerical or model component caused the mismatch.
+
+**Hypothesis:** if `N=96` and `N=128` reproduce the same valid sub-threshold C3 pattern, the `mu`-only causal-guide candidate may be bounded more tightly within this implemented family after independent checking. If the pattern changes again, resolution sensitivity remains unresolved and Candidate A freezes.
+
+**Physical and empirical boundary:** RS1 uses no measured real-world dataset and has no calibrated mapping to a physical field; `empirically_connected=false`. It cannot establish gravity, quantum memory, consciousness, cosmology, a real-world attractor, or a practical Lina capability.
+
+#### Reopenable variant ledger
+
+| Variant | Status after this checkpoint | Reopen condition |
+|---|---|---|
+| `RS1-A` — same normalized-lattice family, exact `N=96`/`N=128` pair | `preregistered_not_implemented_not_executed` | separate owner authority for implementation, then separate authority for one execution |
+| `RS1-B` — fixed-domain continuum refinement with explicit `dx` and coefficient rescaling | `dormant_model_change` | a new scientific question, explicit units, and separate owner approval before any equation change |
+| `RS1-C` — broad or adaptive resolution sweep | `rejected_for_current_checkpoint` | only a new owner decision after a new preregistration that addresses post-outcome pass hunting |
+| `RS1-D` — freeze Candidate A without further resolution work | `available_owner_fallback` | automatically remains available if implementation or execution is not authorised, or if RS1 is invalid/unresolved |
+
+#### Cross-research impact matrix
+
+| Research surface | Relation | Effect of this checkpoint |
+|---|---|---|
+| retained Q2-M1 attempt 3 | `depends_on` | unchanged and still `inconclusive_or_confounded` |
+| Candidate A (`mu` causal guide) | `constrains` | one bounded follow-up is preregistered; no support or falsification added |
+| previously independently verified B4 negatives | `unaffected` | their frozen domains and conclusions do not change |
+| Questions 1 and 3 | `unaffected` | no equation, case, result, or gate changes |
+| direct Q2, Stage B, Lina, and device work | `blocked_by_scope` | not authorised and not implied by RS1 |
+| physical or observable-universe interpretation | `not_yet_compared` | no new empirical connection exists |
+
+#### Next gate
+
+This report-and-manifest publication is the complete authorised action. After it is committed, pushed to `develop`, and read back, the continuity gate stops at `Q2-M1-RS1 preregistered`.
+
+The next possible step would be documentation-faithful implementation of the dedicated runner and permanent tests without executing them. That step requires a new explicit owner authorization. Scientific execution, an independent checker, additional resolutions, direct Q2 work, Stage B, Lina extension, and device action each remain separately unauthorised.

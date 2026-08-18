@@ -434,6 +434,34 @@
     "classification_repair_primary_authorised": false,
     "classification_repair_checker_authorised": false,
     "classification_repair_stage_b_authorised": false,
+    "resolution_sensitivity_preregistration_authorised": true,
+    "resolution_sensitivity_preregistration_authorised_on": "2026-08-18",
+    "resolution_sensitivity_preregistration_authorisation_reply": "ok",
+    "resolution_sensitivity_preregistration_status": "preregistered_not_implemented_not_executed",
+    "resolution_sensitivity_protocol_id": "Q2-M1-RS1",
+    "resolution_sensitivity_design_type": "prospective_single_new_size_normalized_lattice_comparison_not_continuum_convergence",
+    "resolution_sensitivity_historical_anchor_sizes": [
+      64,
+      96
+    ],
+    "resolution_sensitivity_execution_sizes": [
+      96,
+      128
+    ],
+    "resolution_sensitivity_new_unobserved_sizes": [
+      128
+    ],
+    "resolution_sensitivity_runner_path": "research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py",
+    "resolution_sensitivity_test_path": "tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py",
+    "resolution_sensitivity_output_path": "research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json",
+    "resolution_sensitivity_implementation_authorised": false,
+    "resolution_sensitivity_test_execution_authorised": false,
+    "resolution_sensitivity_scientific_execution_authorised": false,
+    "resolution_sensitivity_independent_checker_authorised": false,
+    "resolution_sensitivity_broad_or_adaptive_sweep_authorised": false,
+    "resolution_sensitivity_stage_b_authorised": false,
+    "resolution_sensitivity_lina_or_device_extension_authorised": false,
+    "resolution_sensitivity_reclassifies_retained_primary": false,
     "resolution_control_passed": false,
     "all_nuisance_passed": false,
     "independent_checker_run": false,
@@ -501,8 +529,8 @@
     "primary_stdout_changed_from_attempt_1": true,
     "result_retention_commit": "6efa6064b131a874ce0d2368b8cc2a86a0609aff",
     "classification_repair_authorisation_commit": "27db09aaef9b8e7e9575bda8fff053b3b668f500",
-    "continuity_report_version": "0.25.25",
-    "continuity_report_git_blob": "7632a8c8290f4d7b19d0d31911abdb094ac073ca"
+    "continuity_report_version": "0.25.26",
+    "continuity_report_git_blob": "6c886df0341f6baf20540ee2d28ea8166a1cad0c"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
