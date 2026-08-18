@@ -1,0 +1,111 @@
+{
+  "schema": "lineum-q2-m1-identity-repair/1",
+  "protocol_id": "Q2-M1",
+  "receipt_type": "cross_platform_source_identity_repair",
+  "classification": "technical_repair_pass",
+  "validation_completed_at_local": "2026-08-18T11:57:56.0345316+02:00",
+  "validation_completed_at_utc": "2026-08-18T09:57:56.0405451Z",
+  "owner_authorisation": {
+    "reply": "ok.",
+    "scope": "identity repair and dedicated non-scientific regressions only",
+    "new_permanent_gate_attempt_authorised": false,
+    "primary_authorised": false
+  },
+  "preregistration": {
+    "report_version": "0.25.11",
+    "report_commit": "7e098efbcc2067d10eed22e2dc304cca9deacf1b",
+    "report_git_blob": "b2bf8e93d798089600aa099ab15e2e2c43ebcc39",
+    "manifest_commit": "3065ae9440e7dbedfb0c35dc0e1338f104a5cac9",
+    "manifest_git_blob": "7e743a24fe7a4a1af36b790f2fefa26a6e0bdc96"
+  },
+  "implementation": {
+    "commit": "4f810580238a078d2362d3579937cfc95fed291a",
+    "runner": {
+      "path": "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+      "git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+      "bytes": 60248,
+      "sha256": "03306a002412f5c18d07231ddaf2b539bb2111419e0d6699507a4af94bae7ecb"
+    },
+    "repair_test": {
+      "path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py",
+      "git_blob": "3372405679f7b700cd08e405db1368b6e3726cb9",
+      "bytes": 4521,
+      "sha256": "897dded83af27e72d8ba35eb69c30496b5f352106ce2ac7ec1fdc060a0189407"
+    },
+    "frozen_permanent_test": {
+      "path": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+      "git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
+      "bytes": 10403,
+      "sha256": "8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42",
+      "unchanged": true
+    },
+    "identity_method": "require both git hash-object --path filtered working identity and git rev-parse HEAD:path committed identity to equal each frozen blob"
+  },
+  "validation": {
+    "runtime": {
+      "python": "3.11.15",
+      "numpy": "1.26.4",
+      "pytest": "9.1.1"
+    },
+    "py_compile": {
+      "exit_code": 0,
+      "files": [
+        "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+        "tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py"
+      ]
+    },
+    "targeted_pytest": {
+      "command": "python -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py -q",
+      "passed": 4,
+      "failed": 0,
+      "duration_seconds_reported": 3.84,
+      "cases": [
+        "CRLF worktree accepted only when filtered and HEAD identities remain frozen",
+        "semantic worktree drift rejected",
+        "committed HEAD drift rejected even with restored frozen worktree content",
+        "missing Git repository fails closed"
+      ]
+    },
+    "ast_surface_audit": {
+      "added_functions": [
+        "_validated_git_blob_identity",
+        "git_filtered_worktree_blob_sha1",
+        "git_head_blob_sha1"
+      ],
+      "changed_existing_functions": [
+        "verify_frozen_sources"
+      ],
+      "removed_functions": [],
+      "scientific_functions_changed": false
+    },
+    "current_source_identity_receipt": {
+      "passed": true,
+      "method": "git_filtered_worktree_and_head_blob",
+      "expected": {
+        "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+        "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+        "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+      },
+      "actual_filtered_worktree": {
+        "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+        "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+        "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+      },
+      "actual_head": {
+        "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+        "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+        "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+      }
+    }
+  },
+  "scientific_execution": {
+    "permanent_18_test_gate_invoked": false,
+    "run_primary_invoked": false,
+    "runner_cli_invoked": false,
+    "primary_result_path_created": false,
+    "stage_a_executed": false,
+    "scientific_result": null,
+    "scientific_evidence": "none"
+  },
+  "next_boundary": "The repair is complete, but any new permanent gate attempt requires fresh owner authorisation after the final report and manifest checkpoint is pushed and read back."
+}
