@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; the owner now directs autonomous completion without further confirmation requests, conditionally authorising dedicated test validation, one official RS1 primary, and a later independent checker while preserving every frozen no-sweep and no-Stage-B boundary; a local unexecuted source candidate exists but is not yet committed or scientific evidence; Questions 1 and 3 remain unchanged
-**Version:** 0.25.28 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; its dedicated runner and permanent test source now pass the complete non-scientific `13 / 13` gate and are frozen for publication, but no real RS1 trajectory or output has run; one official primary and a later retained-output checker remain authorised under the frozen no-sweep and no-Stage-B boundaries; Questions 1 and 3 remain unchanged
+**Version:** 0.25.29 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3805,3 +3805,48 @@ retained Q2-M1 attempt-3 reclassification = forbidden
 direct Q2, Stage B, new mechanism selection, whitepaper promotion = forbidden
 Lina, deployment, or device action = forbidden
 ```
+
+### Q2-M1-RS1 implementation and dedicated-test result — version `0.25.29`
+
+**Plain conclusion.** The dedicated RS1 instrument is implemented and its complete bench-test gate passes `13 / 13`. The test did not run either real resolution, create scientific output, or produce a Q2-M1 observation.
+
+**Everyday analogy.** Every button, stop, and warning light was checked with dummy signals. The device accepted only the two registered ruler sizes and sorted all synthetic readings correctly, but it has not yet touched the real sample.
+
+**Practical consequence.** The runner and tests may now be committed with this report and manifest. After remote readback, the next permitted consequential action is the one official RS1 primary from the exact committed identities.
+
+The dedicated test command was invoked once:
+
+```text
+command = C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe -m pytest tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py -q
+result = 13 passed / 0 failed in 0.23 s
+exit code = 0
+real run_size calls = 0
+scientific runner CLI calls = 0
+scientific output creations = 0
+```
+
+The `run_primary()` orchestration test replaced source identity, runtime, parent loading, and `run_size()` with non-scientific fakes. It verified that the orchestration requests `N=96` and then `N=128` exactly once each. The other tests exercise only constants, geometry scaling, forbidden-size rejection, thresholds, signatures, ratios, zeroing reductions, fail-closed validity, and the five frozen outcome labels.
+
+The source identities frozen for this implementation checkpoint are:
+
+```text
+runner path = research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+runner Git blob = 462f916c7570cc7a27a451497b9b4057a3849249
+runner checkout bytes = 16614
+runner checkout SHA-256 = 5c471bffb13b534a1de5fa774ba3b652a1ba357b239ecf60a3c12def5649be7a
+
+permanent test path = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+permanent test Git blob = a5bb908630ff64c65426586b43c4ad4cd5e20098
+permanent test checkout bytes = 6883
+permanent test checkout SHA-256 = 3b4702b766b9e6ac5cf2216a34e91e1d8b588fbb8be21d0b9e74e018a935e68e
+```
+
+**Implementation facts.** The runner accepts only `N=96` and `N=128`; scales only the two registered representative shapes and common-state width; fixes the original seed, horizons, lanes, floors, ratio interval, NumPy runtime, parent-runner identity, active-Core identity, and dependencies; and raises on any other resolution. It recomputes both sizes through one common code path and keeps the old Q2-M1 primary immutable.
+
+**Test observation.** All `13` dedicated cases passed. This establishes that the encoded protocol and synthetic decision surface behave as asserted in the test domain. It does not establish that the real trajectories will be finite, stable, resolution-consistent, or scientifically informative.
+
+**Interpretation.** The implementation is fit to enter a frozen pre-execution checkpoint. The anti-green-test boundary remains active: passing unit tests validates the instrument contract, not the causal-memory hypothesis or nature.
+
+**Hypothesis and physical status.** Unchanged. Q2-M1 remains inconclusive, RS1 has no scientific output, and `empirically_connected=false`.
+
+After this report, manifest, runner, and permanent test are committed, pushed, and read back, perform the exact clean-source and supported-runtime preflight. If it passes, invoke the committed RS1 runner once with direct stdout replacement at `research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json` and external stderr capture. Any runner outcome consumes the one-shot authority; no scientific retry, extra size, tuning, checker, or later step may begin until that primary is incorporated into this report and committed.
