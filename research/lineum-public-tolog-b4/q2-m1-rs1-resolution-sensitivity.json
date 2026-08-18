@@ -1,0 +1,487 @@
+{
+  "canonical_payload_sha256_without_self": "0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f",
+  "classification": {
+    "mu_zeroing_reduction": {
+      "128": 0.00020438728720473254,
+      "96": 0.00036476891826098257
+    },
+    "outcome": "rs1_primary_mu_only_unsupported_indication",
+    "ratios": {
+      "C1": null,
+      "C2": null,
+      "C3": null
+    },
+    "ratios_pass": true,
+    "resolution_stability_pass": true,
+    "signatures": {
+      "128": {
+        "C0": true,
+        "C1": false,
+        "C2": false,
+        "C3": false
+      },
+      "96": {
+        "C0": true,
+        "C1": false,
+        "C2": false,
+        "C3": false
+      }
+    },
+    "signatures_match": true
+  },
+  "empirically_connected": false,
+  "environment": {
+    "git_head": "f14d431e3d54da0cbdb06a4ec64f0a48d806e3c0",
+    "lineum_execution_policy": {
+      "canonical_audit_allowed_on_cuda": false,
+      "cuda_available": false,
+      "cuda_compatible": null,
+      "cuda_compiled_architectures": [],
+      "cuda_device_architecture": null,
+      "deterministic_mode": true,
+      "device_name": "CPU",
+      "enforced_canonical": true,
+      "execution_backend": "numpy",
+      "execution_device": "numpy",
+      "reason": null,
+      "requested_device_mode": "numpy"
+    },
+    "machine": "AMD64",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "python": "3.11.15 (main, May 10 2026, 19:31:25) [MSC v.1944 64 bit (AMD64)]",
+    "runner_sha256": "5c471bffb13b534a1de5fa774ba3b652a1ba357b239ecf60a3c12def5649be7a"
+  },
+  "evidence_boundary": {
+    "consciousness_established": false,
+    "continuum_convergence_established": false,
+    "cosmology_established": false,
+    "gravity_established": false,
+    "independent_checker_run": false,
+    "normalized_lattice_sensitivity_only": true,
+    "physical_memory_field_established": false,
+    "q2_rescue_tested": false,
+    "quantum_memory_established": false,
+    "retained_q2_m1_primary_reclassified": false
+  },
+  "protocol": {
+    "base_representative_params": [
+      [
+        12.0,
+        2.5,
+        0,
+        0
+      ],
+      [
+        12.0,
+        3.5,
+        0,
+        0
+      ]
+    ],
+    "base_size": 64,
+    "broad_or_adaptive_sweep": false,
+    "causal_full_abs_floor": 0.0001,
+    "causal_null_max": 1e-12,
+    "causal_single_abs_floor": 5e-05,
+    "causal_zeroing_reduction_min": 0.5,
+    "continuum_convergence_claim": false,
+    "dt": 0.1,
+    "echo_steps": 200,
+    "execution_sizes": [
+      96,
+      128
+    ],
+    "imprint_steps": 120,
+    "lanes": [
+      "C0",
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "representative_variant_ids": [
+      12,
+      17
+    ],
+    "scale_ratio_interval": [
+      0.5,
+      2.0
+    ],
+    "seed": 20260804,
+    "single_new_unobserved_size": 128,
+    "source_off_steps": 2000
+  },
+  "protocol_id": "Q2-M1-RS1",
+  "runtime_gate": {
+    "numpy_version": "1.26.4",
+    "passed": true,
+    "python_version": "3.11.15",
+    "required_numpy": "1.26.4",
+    "required_python": "3.11.15"
+  },
+  "size_results": {
+    "128": {
+      "c0_channel_divergences": {
+        "mu": 0.0,
+        "phi": 0.0,
+        "psi": 0.0
+      },
+      "causal_rows": {
+        "C0": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.0,
+              "phi": 0.0,
+              "psi": 0.0
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.0,
+              "phi": 0.0,
+              "psi": 0.0
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C1": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.8270267358614319,
+              "phi": 0.6976471852743642,
+              "psi": 1.0757621126844459e-05
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.6118941146999902,
+              "phi": 0.4872520131296274,
+              "psi": 6.941746697648925e-06
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C2": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 1.0364545850932899e-05,
+              "phi": 0.6976471845768041,
+              "psi": 1.0755181400835762e-05
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 6.84494920743243e-06,
+              "phi": 0.4872520128106887,
+              "psi": 6.940568897882739e-06
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C3": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.8270242749925132,
+              "phi": 3.058631985944641e-10,
+              "psi": 5.140765593328451e-10
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.6118924524735069,
+              "phi": 2.989516698109688e-10,
+              "psi": 4.456381251654406e-10
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ]
+      },
+      "causal_summary": {
+        "C0": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true
+        },
+        "C1": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.7194604252807111,
+            "phi": 0.5924495992019958,
+            "psi": 8.849683912246693e-06
+          },
+          "valid": true
+        },
+        "C2": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 8.604747529182664e-06,
+            "phi": 0.5924495986937464,
+            "psi": 8.84787514935925e-06
+          },
+          "valid": true
+        },
+        "C3": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.7194583637330101,
+            "phi": 3.0240743420271643e-10,
+            "psi": 4.798573422491428e-10
+          },
+          "valid": true
+        }
+      },
+      "common_width": 10.0,
+      "scale_relative_to_n64": 2.0,
+      "schedule": [
+        [
+          24.0,
+          5.0,
+          0,
+          0
+        ],
+        [
+          24.0,
+          7.0,
+          0,
+          0
+        ]
+      ],
+      "size": 128,
+      "valid": true,
+      "validity": {
+        "c0_null_pass": true,
+        "common_state_equal": true,
+        "histories_valid": true,
+        "lanes_valid": true
+      },
+      "values": {
+        "C0": 0.0,
+        "C1": 8.849683912246693e-06,
+        "C2": 8.84787514935925e-06,
+        "C3": 4.798573422491428e-10
+      },
+      "variant_ids": [
+        12,
+        17
+      ]
+    },
+    "96": {
+      "c0_channel_divergences": {
+        "mu": 0.0,
+        "phi": 0.0,
+        "psi": 0.0
+      },
+      "causal_rows": {
+        "C0": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.0,
+              "phi": 0.0,
+              "psi": 0.0
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.0,
+              "phi": 0.0,
+              "psi": 0.0
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C1": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.8194276225791235,
+              "phi": 0.6235055759985999,
+              "psi": 2.7857833966600057e-05
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.6091158460964325,
+              "phi": 0.43700677306601055,
+              "psi": 1.8290179186325923e-05
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C2": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 2.7178600497663045e-05,
+              "phi": 0.6235055723926898,
+              "psi": 2.7846730812966764e-05
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 1.8099922441053525e-05,
+              "phi": 0.4370067714005142,
+              "psi": 1.8284448979121524e-05
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ],
+        "C3": [
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.8194214055565872,
+              "phi": 1.6425105343858452e-09,
+              "psi": 2.7308208814837946e-09
+            },
+            "valid": true,
+            "variant_id": 12
+          },
+          {
+            "common_state_equal": true,
+            "divergences": {
+              "mu": 0.6091116647347892,
+              "phi": 1.6002124959537532e-09,
+              "psi": 2.373749925520038e-09
+            },
+            "valid": true,
+            "variant_id": 17
+          }
+        ]
+      },
+      "causal_summary": {
+        "C0": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true
+        },
+        "C1": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.714271734337778,
+            "phi": 0.5302561745323052,
+            "psi": 2.307400657646299e-05
+          },
+          "valid": true
+        },
+        "C2": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 2.2639261469358285e-05,
+            "phi": 0.530256171896602,
+            "psi": 2.3065589896044145e-05
+          },
+          "valid": true
+        },
+        "C3": {
+          "common_state_equal": true,
+          "median_divergence": {
+            "mu": 0.7142665351456882,
+            "phi": 1.6213615151697992e-09,
+            "psi": 2.5522854035019165e-09
+          },
+          "valid": true
+        }
+      },
+      "common_width": 7.5,
+      "scale_relative_to_n64": 1.5,
+      "schedule": [
+        [
+          18.0,
+          3.75,
+          0,
+          0
+        ],
+        [
+          18.0,
+          5.25,
+          0,
+          0
+        ]
+      ],
+      "size": 96,
+      "valid": true,
+      "validity": {
+        "c0_null_pass": true,
+        "common_state_equal": true,
+        "histories_valid": true,
+        "lanes_valid": true
+      },
+      "values": {
+        "C0": 0.0,
+        "C1": 2.307400657646299e-05,
+        "C2": 2.3065589896044145e-05,
+        "C3": 2.5522854035019165e-09
+      },
+      "variant_ids": [
+        12,
+        17
+      ]
+    }
+  },
+  "source_identity_gate": {
+    "actual": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+      "research/runners/lineum_b4_q2_mu_causal_reuse.py": "8f818480b6b7160a49365b730bf884a4b94d9deb"
+    },
+    "expected": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+      "research/runners/lineum_b4_q2_mu_causal_reuse.py": "8f818480b6b7160a49365b730bf884a4b94d9deb"
+    },
+    "head": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+      "research/runners/lineum_b4_q2_mu_causal_reuse.py": "8f818480b6b7160a49365b730bf884a4b94d9deb"
+    },
+    "method": "git_filtered_worktree_and_head_blob",
+    "passed": true
+  },
+  "stage": "prospective_normalized_lattice_resolution_sensitivity",
+  "wall_clock_seconds": 93.80379889998585
+}

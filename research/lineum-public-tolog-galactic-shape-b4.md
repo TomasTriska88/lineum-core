@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; its dedicated runner and permanent test source now pass the complete non-scientific `13 / 13` gate and are frozen for publication, but no real RS1 trajectory or output has run; one official primary and a later retained-output checker remain authorised under the frozen no-sweep and no-Stage-B boundaries; Questions 1 and 3 remain unchanged
-**Version:** 0.25.29 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` has one complete retained primary from the exact `N=96` versus `N=128` normalized-lattice comparison; both sizes are valid and share the same C0-pass/C1-C3-fail signature, yielding `rs1_primary_mu_only_unsupported_indication`; this is not yet an independently verified negative, amplitude convergence, continuum proof, direct Q2 result, or physical claim; the one primary authority is consumed and only the retained-output independent checker may proceed next; Questions 1 and 3 remain unchanged
+**Version:** 0.25.30 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3850,3 +3850,101 @@ permanent test checkout SHA-256 = 3b4702b766b9e6ac5cf2216a34e91e1d8b588fbb8be21d
 **Hypothesis and physical status.** Unchanged. Q2-M1 remains inconclusive, RS1 has no scientific output, and `empirically_connected=false`.
 
 After this report, manifest, runner, and permanent test are committed, pushed, and read back, perform the exact clean-source and supported-runtime preflight. If it passes, invoke the committed RS1 runner once with direct stdout replacement at `research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json` and external stderr capture. Any runner outcome consumes the one-shot authority; no scientific retry, extra size, tuning, checker, or later step may begin until that primary is incorporated into this report and committed.
+
+### Q2-M1-RS1 official primary result — version `0.25.30`
+
+**Plain conclusion.** The one official RS1 measurement completed cleanly. The finer `N=128` ruler agrees with `N=96` on the categorical result: the memory-only C3 lane remains below its causal floor, and the full-history C1 and phi-only C2 lanes are also below their floors. This is a strong primary indication that `mu` alone is not a demonstrated causal guide in this tested family, but it is not yet an independently verified negative.
+
+**Everyday analogy.** The system still keeps a clear photograph of its earlier shape, but when both finer rulers ask whether that photograph acts like turn-by-turn instructions, neither sees enough movement to cross the predeclared line. The two rulers agree on "too small to count," even though the exact tiny readings are not identical.
+
+**Practical consequence.** The original Q2-M1 resolution confound is narrowed for the finer `96/128` pair without changing attempt 3. The next and only permitted action is an independent clerk-like checker over this retained output. No second simulation, added size, tuning, Stage B, or direct Q2 step is allowed.
+
+The clean execution base was the pushed and remotely read-back implementation checkpoint:
+
+```text
+HEAD = origin/develop = f14d431e3d54da0cbdb06a4ec64f0a48d806e3c0
+report version = 0.25.29
+report Git blob = d15c19ed590808f8eb8133437f6faccf6c281d2d
+manifest Git blob = dd3932cf8dce9d80eaf3da9fc677ef4439697361
+RS1 runner Git blob = 462f916c7570cc7a27a451497b9b4057a3849249
+RS1 permanent test Git blob = a5bb908630ff64c65426586b43c4ad4cd5e20098
+parent Q2-M1 runner Git blob = 8f818480b6b7160a49365b730bf884a4b94d9deb
+active Core Git blob = bb877021810691223a0eb960a45493a2e351112a
+Python = 3.11.15
+NumPy = 1.26.4
+worktree = clean
+prior RS1 output = absent
+prior attempt-1 stderr target = absent
+```
+
+The official primary was invoked once and not retried:
+
+```text
+attempt = 1
+started = 2026-08-18T16:00:52.1564846+02:00
+ended = 2026-08-18T16:02:26.2417646+02:00
+wrapper elapsed = 94.082 s
+runner wall clock = 93.8037988999858 s
+exit code = 0
+stdout bytes = 13155
+stdout SHA-256 = f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a
+stdout Git blob = d7f8b714dafbc1b5b98920a09f1b639ff16882c4
+stderr bytes = 0
+stderr SHA-256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+canonical payload SHA-256 without self = 0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f
+canonical payload self-check = passed
+non-finite values = 0
+```
+
+The complete raw output is retained at `research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json`. Its readable execution receipt is `research/lineum-public-tolog-b4/q2-m1-rs1-execution-attempt-1.json`, Git blob `cd7fc3117bfabfb0551aaf8859b1c85761134dba`.
+
+#### Retained observations
+
+Both sizes passed their history, lane, common-state, C0-null, source-identity, exact-runtime, finite-value, and payload-integrity gates. C0 was exactly zero in `psi`, `phi`, and `mu` at both sizes.
+
+```text
+N=96:
+  C0 = 0
+  C1 = 2.307400657646299e-05; floor 1e-4; pass = false
+  C2 = 2.3065589896044145e-05; floor 5e-5; pass = false
+  C3 = 2.5522854035019165e-09; floor 5e-5; pass = false
+  mu-zeroing reduction = 0.00036476891826098257
+
+N=128:
+  C0 = 0
+  C1 = 8.849683912246693e-06; floor 1e-4; pass = false
+  C2 = 8.84787514935925e-06; floor 5e-5; pass = false
+  C3 = 4.798573422491428e-10; floor 5e-5; pass = false
+  mu-zeroing reduction = 0.00020438728720473254
+```
+
+The recomputed `N=96` values exactly match the values retained inside Q2-M1 attempt 3. The `N=128` magnitudes are smaller. Both categorical signatures are exactly:
+
+```text
+C0 = pass
+C1 = fail
+C2 = fail
+C3 = fail
+```
+
+The signatures therefore match. Under the preregistered rule, C1-C3 ratios are `null`, not passing ratios, because a ratio is evaluated only where both compared values already clear their lane floor. Resolution stability passes categorically, and the frozen primary outcome is:
+
+```text
+rs1_primary_mu_only_unsupported_indication
+```
+
+#### Bounded interpretation and limitation
+
+**Implementation fact.** The exact committed runner executed only `N=96` and `N=128` through the same code path and refused all other resolutions.
+
+**Simulation observation.** Both finer sizes produced valid, matching below-floor signatures. C3 stayed roughly four to five orders of magnitude below its `5e-5` floor, and removing `mu` changed C1 by only about `0.0365%` at `N=96` and `0.0204%` at `N=128`.
+
+**Interpretation.** Within this normalized-lattice representative family, the result is compatible with `mu` remaining a passive record without demonstrated `mu`-only causal guidance. It narrows the previous resolution confound at the categorical level.
+
+**Important limitation.** Because every non-null lane is below its floor at both sizes, the registered ratio rule intentionally does not test amplitude convergence. The smaller `N=128` magnitudes therefore prevent any claim of converged amplitude or continuum independence. RS1 establishes only a stable categorical sub-threshold pattern for this finer pair.
+
+**Hypothesis status.** Candidate A receives a primary unsupported indication, not a verified negative. An independently implemented retained-output checker must reproduce the source identity, payload integrity, values, signatures, floors, ratios, zeroing reductions, and outcome map before the status can become `unsupported_under_rs1_tested_conditions`.
+
+**Physical boundary.** `empirically_connected=false`. This result does not establish or disprove a physical memory field, real-world return mechanism, gravity, quantum memory, consciousness, cosmology, or a practical Lina capability.
+
+The one official RS1 primary authority is consumed. The raw output must not be rewritten. After this primary, receipt, report, and manifest are committed, pushed, and read back, implement and validate only the independently derived retained-output checker. Do not rerun a trajectory or use the primary runner inside the checker.

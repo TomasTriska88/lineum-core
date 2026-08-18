@@ -1,0 +1,35 @@
+{
+  "protocol_id": "Q2-M1-RS1",
+  "attempt": 1,
+  "status": "retained_primary_complete_pending_independent_checker",
+  "execution_base_commit": "f14d431e3d54da0cbdb06a4ec64f0a48d806e3c0",
+  "started": "2026-08-18T16:00:52.1564846+02:00",
+  "ended": "2026-08-18T16:02:26.2417646+02:00",
+  "wrapper_elapsed_seconds": 94.082,
+  "runner_wall_clock_seconds": 93.8037988999858,
+  "exit_code": 0,
+  "command": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py",
+  "stdout": {
+    "path": "research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json",
+    "bytes": 13155,
+    "sha256": "f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a",
+    "git_blob": "d7f8b714dafbc1b5b98920a09f1b639ff16882c4"
+  },
+  "stderr": {
+    "retained_outside_repository": true,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "canonical_payload_sha256_without_self": "0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f",
+  "canonical_payload_self_check": true,
+  "nonfinite_value_count": 0,
+  "source_identity_gate_passed": true,
+  "runtime_gate_passed": true,
+  "python": "3.11.15",
+  "numpy": "1.26.4",
+  "resolution_stability_pass": true,
+  "signatures_match": true,
+  "classification": "rs1_primary_mu_only_unsupported_indication",
+  "independent_checker_run": false,
+  "scientific_retry_authorised": false
+}
