@@ -376,7 +376,14 @@
     "final_classification_computed": false,
     "output_payload_assembled": false,
     "scientific_values_retained": false,
-    "grid_rotation_metadata_repair_authorised": false,
+    "grid_rotation_metadata_repair_authorised": true,
+    "grid_rotation_metadata_repair_authorised_on": "2026-08-18",
+    "grid_rotation_metadata_repair_authorisation_consumed": false,
+    "grid_rotation_metadata_repair_status": "authorised_not_implemented",
+    "grid_rotation_metadata_repair_contract": "preserve non-spatial metadata without NumPy coercion or aliasing and rotate only two-dimensional spatial state channels",
+    "grid_rotation_metadata_repair_test_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+    "grid_rotation_metadata_repair_permanent_gate_authorised": false,
+    "grid_rotation_metadata_repair_primary_authorised": false,
     "pre_execution_gate_tests_required": 18,
     "retention_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
     "runner_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
@@ -419,8 +426,8 @@
     "latest_primary_stderr_bytes": 1996,
     "latest_primary_stderr_sha256": "0a296e4fd4b05f0cfb3d4f01691dd5d9a62e978b95f8dac40c309ac56908bbf3",
     "primary_stdout_changed_from_attempt_1": false,
-    "continuity_report_version": "0.25.19",
-    "continuity_report_git_blob": "50cdb5f77ae4025bc687bc15b87d60559a97655d"
+    "continuity_report_version": "0.25.20",
+    "continuity_report_git_blob": "821d161e2f44906ad887052c8f68ff04e89cf5c3"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
