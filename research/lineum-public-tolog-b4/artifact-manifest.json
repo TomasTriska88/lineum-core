@@ -284,13 +284,18 @@
     "workflow_artifact_uploaded": false
   },
   "q2_mu_causal_reuse_stage_a": {
-    "scientific_status": "identity_repair_pass_stage_a_unexecuted_fresh_gate_not_authorised",
+    "scientific_status": "identity_repair_pass_stage_a_unexecuted_fresh_gate_authorised",
     "stage_a_executed": false,
     "execution_authorised": true,
     "execution_authorised_on": "2026-08-18",
-    "execution_authorisation_scope_status": "consumed_by_gate_attempt_1",
-    "execution_lane_open": false,
-    "new_gate_attempt_authorised": false,
+    "execution_authorisation_scope_status": "fresh_gate_attempt_2_and_conditional_primary_authorised",
+    "execution_lane_open": true,
+    "new_gate_attempt_authorised": true,
+    "new_gate_attempt_authorised_on": "2026-08-18",
+    "new_gate_attempt_ordinal": 2,
+    "new_gate_invocation_limit": 1,
+    "conditional_primary_authorised": true,
+    "conditional_primary_invocation_limit": 1,
     "identity_repair_authorised": true,
     "identity_repair_authorised_on": "2026-08-18",
     "identity_repair_status": "implemented_targeted_regressions_passed",
@@ -328,8 +333,8 @@
     "latest_gate_tests_failed": 1,
     "latest_gate_failure_classification": "windows_checkout_line_ending_conversion",
     "latest_gate_receipt_git_blob": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
-    "continuity_report_version": "0.25.13",
-    "continuity_report_git_blob": "320a4dbd9e0789805165765ea0b798808b06be86"
+    "continuity_report_version": "0.25.14",
+    "continuity_report_git_blob": "b5223e9a2ec8fce2e3eaf518c72bf7ffff6f5106"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
