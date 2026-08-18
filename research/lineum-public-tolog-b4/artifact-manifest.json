@@ -301,6 +301,8 @@
     "identity_repair_test_git_blob": "3372405679f7b700cd08e405db1368b6e3726cb9",
     "identity_repair_targeted_tests_passed": 4,
     "identity_repair_receipt_git_blob": "ec1573a9ffba1b1e083457259d1a9f5453e76a6d",
+    "report_chronology_order_corrected": true,
+    "report_chronology_order_correction_commit": "446160d6a23ee3d1c131923aaaac4123ce8f8f6b",
     "official_primary_invocation_limit": 1,
     "official_primary_invocations": 0,
     "primary_result_present": false,
@@ -326,8 +328,8 @@
     "latest_gate_tests_failed": 1,
     "latest_gate_failure_classification": "windows_checkout_line_ending_conversion",
     "latest_gate_receipt_git_blob": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
-    "continuity_report_version": "0.25.12",
-    "continuity_report_git_blob": "bb9de07a869974538ac2abb7cfe8abb8e3966e0a"
+    "continuity_report_version": "0.25.13",
+    "continuity_report_git_blob": "320a4dbd9e0789805165765ea0b798808b06be86"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
