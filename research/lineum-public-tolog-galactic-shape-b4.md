@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison, but it is not implemented or executed; no scientific rerun, independent checker, tuning, new primary, resolution sweep, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.26 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; the owner has now authorised preparation of its dedicated runner and permanent test source only, with every test and scientific invocation still forbidden; no new RS1 source exists at this checkpoint; no scientific rerun, independent checker, tuning, new primary, resolution sweep, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.27 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3699,3 +3699,35 @@ Any test failure, runner failure, malformed or partial output, source-identity m
 This report-and-manifest publication is the complete authorised action. After it is committed, pushed to `develop`, and read back, the continuity gate stops at `Q2-M1-RS1 preregistered`.
 
 The next possible step would be documentation-faithful implementation of the dedicated runner and permanent tests without executing them. That step requires a new explicit owner authorization. Scientific execution, an independent checker, additional resolutions, direct Q2 work, Stage B, Lina extension, and device action each remain separately unauthorised.
+
+### Q2-M1-RS1 implementation-only authorization — version `0.25.27`
+
+**Plain conclusion.** The owner has authorised preparation of the dedicated RS1 runner and permanent test source, but has not authorised executing either file. No implementation or scientific result exists at this authorization checkpoint.
+
+**Everyday analogy.** The measuring instrument may now be assembled according to the sealed drawing, but its power switch must remain off. Assembly can show which parts are present; only a later authorised test can show that the instrument actually works.
+
+**Practical consequence.** The next permitted action is limited to creating the two preregistered source files and auditing their text and Git diff without importing, compiling, testing, or invoking them. Core's mandatory regression rule prevents an unexecuted code candidate from being committed as a verified implementation checkpoint.
+
+On `2026-08-18`, the prior owner handoff stated that the next step was to prepare the RS1 runner and its tests without running anything, and that the earlier `ok` had not yet authorised that step. Project owner Tomáš Tříska replied `pokračuj`. This records that reply as implementation-only authority for the exact `0.25.26` protocol.
+
+The authority state is:
+
+```text
+protocol = Q2-M1-RS1
+implementation_source_preparation_authorised = true
+authorised runner path = research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+authorised permanent test path = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+authorised scientific output path = research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json
+
+runner import or invocation = forbidden
+test import or invocation = forbidden
+Python compilation of either new file = forbidden
+scientific output creation = forbidden
+independent checker = forbidden
+additional resolution = forbidden
+direct Q2, Stage B, Lina, or device action = forbidden
+```
+
+Permitted non-executing checks are limited to direct text inspection, exact-path and changed-file checks, Git diff inspection, whitespace checks, hash calculation, comparison against the `0.25.26` frozen protocol, and searches that do not import or execute the new Python sources.
+
+The implementation candidate must remain scientifically non-evidentiary. If source preparation succeeds, the next reportable state is `candidate_prepared_unexecuted_uncommitted`, because the repository's mandatory regression rule forbids committing functional code before tests verify it. A later owner authorization for the smallest dedicated test invocation is required before the candidate may become a verified, committed, and pushed implementation checkpoint. That later test authority would still not authorise the RS1 scientific runner or create a new Q2-M1 observation.

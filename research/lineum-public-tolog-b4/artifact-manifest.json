@@ -454,7 +454,11 @@
     "resolution_sensitivity_runner_path": "research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py",
     "resolution_sensitivity_test_path": "tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py",
     "resolution_sensitivity_output_path": "research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json",
-    "resolution_sensitivity_implementation_authorised": false,
+    "resolution_sensitivity_implementation_authorised": true,
+    "resolution_sensitivity_implementation_authorised_on": "2026-08-18",
+    "resolution_sensitivity_implementation_authorisation_reply": "pokračuj",
+    "resolution_sensitivity_implementation_status": "authorised_source_preparation_not_started_at_authorisation_checkpoint",
+    "resolution_sensitivity_source_commit_permitted_before_test": false,
     "resolution_sensitivity_test_execution_authorised": false,
     "resolution_sensitivity_scientific_execution_authorised": false,
     "resolution_sensitivity_independent_checker_authorised": false,
@@ -529,8 +533,8 @@
     "primary_stdout_changed_from_attempt_1": true,
     "result_retention_commit": "6efa6064b131a874ce0d2368b8cc2a86a0609aff",
     "classification_repair_authorisation_commit": "27db09aaef9b8e7e9575bda8fff053b3b668f500",
-    "continuity_report_version": "0.25.26",
-    "continuity_report_git_blob": "6c886df0341f6baf20540ee2d28ea8166a1cad0c"
+    "continuity_report_version": "0.25.27",
+    "continuity_report_git_blob": "e35978a98e750c64c9356a2d9c843c055117f1b0"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
