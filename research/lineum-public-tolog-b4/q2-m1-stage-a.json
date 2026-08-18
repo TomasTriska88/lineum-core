@@ -1,0 +1,2335 @@
+{
+  "canonical_payload_sha256_without_self": "6c0d8867dbf1affae34a62a5067a151de49645cd96d112d81a73d8c5a598f1c5",
+  "causal": {
+    "c3_cap_control": {
+      "cap_floor": 5e-05,
+      "cap_pass": false,
+      "passed": true,
+      "primary_floor": 5e-05,
+      "primary_pass": false,
+      "ratio": null,
+      "ratio_pass": true
+    },
+    "cap_raised_summary": {
+      "C0": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.0,
+          "phi": 0.0,
+          "psi": 0.0
+        },
+        "valid": true
+      },
+      "C1": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.7059763280019298,
+          "phi": 0.3779041101944878,
+          "psi": 6.308186615838749e-05
+        },
+        "valid": true
+      },
+      "C3": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.7059604612485566,
+          "phi": 2.645644888502262e-08,
+          "psi": 3.360263121673625e-08
+        },
+        "valid": true
+      }
+    },
+    "dt_control": {
+      "control_signature": {
+        "C0": true,
+        "C1": false,
+        "C2": true,
+        "C3": false
+      },
+      "passed": true,
+      "primary_signature": {
+        "C0": true,
+        "C1": false,
+        "C2": true,
+        "C3": false
+      },
+      "ratios": {
+        "C1": null,
+        "C2": 1.001016774347752,
+        "C3": null
+      },
+      "ratios_pass": true
+    },
+    "dt_control_values": {
+      "C0": 0.0,
+      "C1": 6.865218344625895e-05,
+      "C2": 6.859184613516867e-05,
+      "C3": 2.53174047861713e-08
+    },
+    "grid_controls": {
+      "C1": {
+        "max_errors": {
+          "mu": 2.1591714100583898e-16,
+          "phi": 1.814198749057374e-16,
+          "psi": 1.588018052315475e-16
+        },
+        "passed": true,
+        "rows": [
+          {
+            "base_valid": true,
+            "errors": {
+              "mu": 1.437763200782997e-16,
+              "phi": 1.814198749057374e-16,
+              "psi": 1.4736177025082234e-16
+            },
+            "passed": true,
+            "transformed_valid": true
+          },
+          {
+            "base_valid": true,
+            "errors": {
+              "mu": 2.1591714100583898e-16,
+              "phi": 1.6291978613629517e-16,
+              "psi": 1.588018052315475e-16
+            },
+            "passed": true,
+            "transformed_valid": true
+          }
+        ]
+      },
+      "C3": {
+        "max_errors": {
+          "mu": 1.8524159359738516e-16,
+          "phi": 1.6380261973204958e-16,
+          "psi": 1.1711783341590295e-16
+        },
+        "passed": true,
+        "rows": [
+          {
+            "base_valid": true,
+            "errors": {
+              "mu": 1.8524159359738516e-16,
+              "phi": 1.6380261973204958e-16,
+              "psi": 1.1711783341590295e-16
+            },
+            "passed": true,
+            "transformed_valid": true
+          },
+          {
+            "base_valid": true,
+            "errors": {
+              "mu": 1.1092396998865104e-16,
+              "phi": 1.0774862125160065e-16,
+              "psi": 1.1405555543269406e-16
+            },
+            "passed": true,
+            "transformed_valid": true
+          }
+        ]
+      }
+    },
+    "primary_representative_values": {
+      "C0": 0.0,
+      "C1": 6.858235439305444e-05,
+      "C2": 6.852217454583826e-05,
+      "C3": 2.5222128429710905e-08
+    },
+    "primary_rows": {
+      "C0": [
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 0
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 1
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 2
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 3
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 4
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 5
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 6
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 7
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 8
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 9
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 10
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 11
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 12
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 13
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 14
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 15
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 16
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 17
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 18
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 19
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 20
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 21
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 22
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 23
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 24
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 25
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 26
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 27
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 28
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0,
+            "phi": 0.0,
+            "psi": 0.0
+          },
+          "valid": true,
+          "variant_id": 29
+        }
+      ],
+      "C1": [
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557821506780764,
+            "phi": 0.40496527136249544,
+            "psi": 8.5190134205222e-05
+          },
+          "valid": true,
+          "variant_id": 0
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557821506780764,
+            "phi": 0.4049652713624955,
+            "psi": 8.519013420523246e-05
+          },
+          "valid": true,
+          "variant_id": 1
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7442483066902522,
+            "phi": 0.3971898200586769,
+            "psi": 8.788794309286428e-05
+          },
+          "valid": true,
+          "variant_id": 2
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557821506780764,
+            "phi": 0.40496527136249544,
+            "psi": 8.51901342052064e-05
+          },
+          "valid": true,
+          "variant_id": 3
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557821506780764,
+            "phi": 0.40496527136249544,
+            "psi": 8.51901342052142e-05
+          },
+          "valid": true,
+          "variant_id": 4
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068294951548503,
+            "phi": 0.2570783925289464,
+            "psi": 5.1196148233878184e-05
+          },
+          "valid": true,
+          "variant_id": 5
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068294951548503,
+            "phi": 0.25707839252894643,
+            "psi": 5.1196148233884554e-05
+          },
+          "valid": true,
+          "variant_id": 6
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.4878818536445172,
+            "phi": 0.2505660271400631,
+            "psi": 5.149688708546558e-05
+          },
+          "valid": true,
+          "variant_id": 7
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068294951548503,
+            "phi": 0.2570783925289464,
+            "psi": 5.11961482339048e-05
+          },
+          "valid": true,
+          "variant_id": 8
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068294951548504,
+            "phi": 0.2570783925289464,
+            "psi": 5.119614823391066e-05
+          },
+          "valid": true,
+          "variant_id": 9
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891657024531323,
+            "phi": 0.442507009605378,
+            "psi": 8.32061950059631e-05
+          },
+          "valid": true,
+          "variant_id": 10
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891657024531323,
+            "phi": 0.442507009605378,
+            "psi": 8.320619500595277e-05
+          },
+          "valid": true,
+          "variant_id": 11
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7995603121922186,
+            "phi": 0.4408497463988195,
+            "psi": 8.154127122549838e-05
+          },
+          "valid": true,
+          "variant_id": 12
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891657024531323,
+            "phi": 0.4425070096053781,
+            "psi": 8.3206195005972e-05
+          },
+          "valid": true,
+          "variant_id": 13
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891657024531323,
+            "phi": 0.442507009605378,
+            "psi": 8.32061950059465e-05
+          },
+          "valid": true,
+          "variant_id": 14
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049771668449354,
+            "phi": 0.31861998465881536,
+            "psi": 5.7367692837440036e-05
+          },
+          "valid": true,
+          "variant_id": 15
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049771668449352,
+            "phi": 0.31861998465881525,
+            "psi": 5.736769283741415e-05
+          },
+          "valid": true,
+          "variant_id": 16
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6016328143816125,
+            "phi": 0.3150366713232786,
+            "psi": 5.562343756061049e-05
+          },
+          "valid": true,
+          "variant_id": 17
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049771668449353,
+            "phi": 0.31861998465881525,
+            "psi": 5.7367692837439995e-05
+          },
+          "valid": true,
+          "variant_id": 18
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049771668449354,
+            "phi": 0.31861998465881525,
+            "psi": 5.7367692837421455e-05
+          },
+          "valid": true,
+          "variant_id": 19
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169574307193387,
+            "phi": 0.4624597936362962,
+            "psi": 7.466398221836022e-05
+          },
+          "valid": true,
+          "variant_id": 20
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169574307193387,
+            "phi": 0.4624597936362962,
+            "psi": 7.466398221837827e-05
+          },
+          "valid": true,
+          "variant_id": 21
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.841286267964321,
+            "phi": 0.4657053132243424,
+            "psi": 6.879603947933495e-05
+          },
+          "valid": true,
+          "variant_id": 22
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169574307193387,
+            "phi": 0.4624597936362962,
+            "psi": 7.46639822183695e-05
+          },
+          "valid": true,
+          "variant_id": 23
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169574307193387,
+            "phi": 0.4624597936362962,
+            "psi": 7.466398221833383e-05
+          },
+          "valid": true,
+          "variant_id": 24
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544711157820208,
+            "phi": 0.3584943235834462,
+            "psi": 5.6670247351760776e-05
+          },
+          "valid": true,
+          "variant_id": 25
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544711157820206,
+            "phi": 0.35849432358344613,
+            "psi": 5.66702473517665e-05
+          },
+          "valid": true,
+          "variant_id": 26
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6677043493136074,
+            "phi": 0.3586184003302986,
+            "psi": 5.251130065796873e-05
+          },
+          "valid": true,
+          "variant_id": 27
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544711157820207,
+            "phi": 0.35849432358344613,
+            "psi": 5.6670247351775683e-05
+          },
+          "valid": true,
+          "variant_id": 28
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544711157820208,
+            "phi": 0.3584943235834462,
+            "psi": 5.6670247351789006e-05
+          },
+          "valid": true,
+          "variant_id": 29
+        }
+      ],
+      "C2": [
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00011039196798323856,
+            "phi": 0.40496522697331233,
+            "psi": 8.508197064889085e-05
+          },
+          "valid": true,
+          "variant_id": 0
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00011039196798328139,
+            "phi": 0.4049652269733123,
+            "psi": 8.508197064891072e-05
+          },
+          "valid": true,
+          "variant_id": 1
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00010021012555741754,
+            "phi": 0.3971897743961637,
+            "psi": 8.778663626702635e-05
+          },
+          "valid": true,
+          "variant_id": 2
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00011039196798321311,
+            "phi": 0.4049652269733123,
+            "psi": 8.508197064888909e-05
+          },
+          "valid": true,
+          "variant_id": 3
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00011039196798327759,
+            "phi": 0.4049652269733123,
+            "psi": 8.508197064892096e-05
+          },
+          "valid": true,
+          "variant_id": 4
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.400513598157978e-05,
+            "phi": 0.25707837259518923,
+            "psi": 5.114055725123776e-05
+          },
+          "valid": true,
+          "variant_id": 5
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.400513598162308e-05,
+            "phi": 0.25707837259518923,
+            "psi": 5.114055725124244e-05
+          },
+          "valid": true,
+          "variant_id": 6
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 5.611215349049376e-05,
+            "phi": 0.25056601006643847,
+            "psi": 5.1446534560800256e-05
+          },
+          "valid": true,
+          "variant_id": 7
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.400513598160801e-05,
+            "phi": 0.2570783725951893,
+            "psi": 5.1140557251251086e-05
+          },
+          "valid": true,
+          "variant_id": 8
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.400513598160435e-05,
+            "phi": 0.25707837259518923,
+            "psi": 5.114055725123145e-05
+          },
+          "valid": true,
+          "variant_id": 9
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00010096808421671948,
+            "phi": 0.4425069751481737,
+            "psi": 8.311488388952271e-05
+          },
+          "valid": true,
+          "variant_id": 10
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00010096808421679416,
+            "phi": 0.4425069751481737,
+            "psi": 8.311488388955235e-05
+          },
+          "valid": true,
+          "variant_id": 11
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 8.201507281483442e-05,
+            "phi": 0.44084971518775173,
+            "psi": 8.146581838998025e-05
+          },
+          "valid": true,
+          "variant_id": 12
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.00010096808421677049,
+            "phi": 0.4425069751481737,
+            "psi": 8.311488388956658e-05
+          },
+          "valid": true,
+          "variant_id": 13
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.0001009680842167673,
+            "phi": 0.4425069751481736,
+            "psi": 8.311488388954029e-05
+          },
+          "valid": true,
+          "variant_id": 14
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.835258045313528e-05,
+            "phi": 0.31861996606342596,
+            "psi": 5.731348837785965e-05
+          },
+          "valid": true,
+          "variant_id": 15
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.835258045311058e-05,
+            "phi": 0.31861996606342596,
+            "psi": 5.7313488377830755e-05
+          },
+          "valid": true,
+          "variant_id": 16
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 5.570387359529609e-05,
+            "phi": 0.31503665601758407,
+            "psi": 5.557853070169628e-05
+          },
+          "valid": true,
+          "variant_id": 17
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.835258045311554e-05,
+            "phi": 0.31861996606342596,
+            "psi": 5.7313488377860524e-05
+          },
+          "valid": true,
+          "variant_id": 18
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.835258045315016e-05,
+            "phi": 0.31861996606342596,
+            "psi": 5.731348837787e-05
+          },
+          "valid": true,
+          "variant_id": 19
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 8.322315976144227e-05,
+            "phi": 0.4624597687520178,
+            "psi": 7.459211835559076e-05
+          },
+          "valid": true,
+          "variant_id": 20
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 8.322315976144836e-05,
+            "phi": 0.4624597687520178,
+            "psi": 7.459211835560072e-05
+          },
+          "valid": true,
+          "variant_id": 21
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 5.901777070942839e-05,
+            "phi": 0.4657052937682443,
+            "psi": 6.874310466739347e-05
+          },
+          "valid": true,
+          "variant_id": 22
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 8.322315976140931e-05,
+            "phi": 0.46245976875201766,
+            "psi": 7.459211835556735e-05
+          },
+          "valid": true,
+          "variant_id": 23
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 8.32231597614778e-05,
+            "phi": 0.46245976875201766,
+            "psi": 7.459211835560787e-05
+          },
+          "valid": true,
+          "variant_id": 24
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.338859774249733e-05,
+            "phi": 0.35849430902235696,
+            "psi": 5.662474887951679e-05
+          },
+          "valid": true,
+          "variant_id": 25
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.338859774240865e-05,
+            "phi": 0.35849430902235685,
+            "psi": 5.6624748879475635e-05
+          },
+          "valid": true,
+          "variant_id": 26
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 4.718359665252253e-05,
+            "phi": 0.3586183891635067,
+            "psi": 5.247751356335951e-05
+          },
+          "valid": true,
+          "variant_id": 27
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.338859774245236e-05,
+            "phi": 0.35849430902235685,
+            "psi": 5.662474887950029e-05
+          },
+          "valid": true,
+          "variant_id": 28
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 6.338859774238402e-05,
+            "phi": 0.35849430902235696,
+            "psi": 5.662474887944139e-05
+          },
+          "valid": true,
+          "variant_id": 29
+        }
+      ],
+      "C3": [
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557596110566709,
+            "phi": 4.5105380826500625e-08,
+            "psi": 5.557962921804575e-08
+          },
+          "valid": true,
+          "variant_id": 0
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.755759611056671,
+            "phi": 4.510538084683448e-08,
+            "psi": 5.557962921708926e-08
+          },
+          "valid": true,
+          "variant_id": 1
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7442250051107339,
+            "phi": 3.066330336374214e-08,
+            "psi": 4.352933591188588e-08
+          },
+          "valid": true,
+          "variant_id": 2
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.755759611056671,
+            "phi": 4.5105380847998626e-08,
+            "psi": 5.5579629211454115e-08
+          },
+          "valid": true,
+          "variant_id": 3
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7557596110566709,
+            "phi": 4.510538081667536e-08,
+            "psi": 5.557962922197052e-08
+          },
+          "valid": true,
+          "variant_id": 4
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068177205518963,
+            "phi": 2.7903945534980704e-08,
+            "psi": 3.4543634650271426e-08
+          },
+          "valid": true,
+          "variant_id": 5
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068177205518963,
+            "phi": 2.7903945501928185e-08,
+            "psi": 3.4543634649070975e-08
+          },
+          "valid": true,
+          "variant_id": 6
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.48787121459704363,
+            "phi": 1.8992182899969993e-08,
+            "psi": 2.6699186347199903e-08
+          },
+          "valid": true,
+          "variant_id": 7
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068177205518963,
+            "phi": 2.7903945551677762e-08,
+            "psi": 3.4543634663757276e-08
+          },
+          "valid": true,
+          "variant_id": 8
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.5068177205518963,
+            "phi": 2.7903945525287044e-08,
+            "psi": 3.454363466829207e-08
+          },
+          "valid": true,
+          "variant_id": 9
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891469883302032,
+            "phi": 3.3886752288239996e-08,
+            "psi": 4.406507511337443e-08
+          },
+          "valid": true,
+          "variant_id": 10
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891469883302032,
+            "phi": 3.3886752312719176e-08,
+            "psi": 4.4065075166420406e-08
+          },
+          "valid": true,
+          "variant_id": 11
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.799542624284335,
+            "phi": 1.6704892520766856e-08,
+            "psi": 2.700094786386408e-08
+          },
+          "valid": true,
+          "variant_id": 12
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891469883302032,
+            "phi": 3.3886752284225503e-08,
+            "psi": 4.406507514607824e-08
+          },
+          "valid": true,
+          "variant_id": 13
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.7891469883302032,
+            "phi": 3.388675226684849e-08,
+            "psi": 4.4065075145620566e-08
+          },
+          "valid": true,
+          "variant_id": 14
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049631708857739,
+            "phi": 2.6456448887544445e-08,
+            "psi": 3.3602631224532306e-08
+          },
+          "valid": true,
+          "variant_id": 15
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049631708857738,
+            "phi": 2.6456448839847454e-08,
+            "psi": 3.360263120880908e-08
+          },
+          "valid": true,
+          "variant_id": 16
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.601621387519223,
+            "phi": 1.601963815352608e-08,
+            "psi": 2.344330899555773e-08
+          },
+          "valid": true,
+          "variant_id": 17
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049631708857738,
+            "phi": 2.6456448882500797e-08,
+            "psi": 3.3602631208940196e-08
+          },
+          "valid": true,
+          "variant_id": 18
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6049631708857739,
+            "phi": 2.6456448892913502e-08,
+            "psi": 3.36026312424993e-08
+          },
+          "valid": true,
+          "variant_id": 19
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169444743464148,
+            "phi": 2.2527221079902866e-08,
+            "psi": 3.156939693133743e-08
+          },
+          "valid": true,
+          "variant_id": 20
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169444743464146,
+            "phi": 2.2527221048942257e-08,
+            "psi": 3.156939692142781e-08
+          },
+          "valid": true,
+          "variant_id": 21
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8412759409785316,
+            "phi": 7.996517608506352e-09,
+            "psi": 1.5023206247028733e-08
+          },
+          "valid": true,
+          "variant_id": 22
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169444743464148,
+            "phi": 2.252722106653898e-08,
+            "psi": 3.156939690465726e-08
+          },
+          "valid": true,
+          "variant_id": 23
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.8169444743464147,
+            "phi": 2.2527221026060687e-08,
+            "psi": 3.156939691378814e-08
+          },
+          "valid": true,
+          "variant_id": 24
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544586732062242,
+            "phi": 2.025433235578211e-08,
+            "psi": 2.6907453487211465e-08
+          },
+          "valid": true,
+          "variant_id": 25
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544586732062241,
+            "phi": 2.0254332357989688e-08,
+            "psi": 2.6907453534381618e-08
+          },
+          "valid": true,
+          "variant_id": 26
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6676959173863792,
+            "phi": 9.967686428218386e-09,
+            "psi": 1.5816793064464288e-08
+          },
+          "valid": true,
+          "variant_id": 27
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544586732062241,
+            "phi": 2.0254332313379877e-08,
+            "psi": 2.6907453493837423e-08
+          },
+          "valid": true,
+          "variant_id": 28
+        },
+        {
+          "common_state_equal": true,
+          "divergences": {
+            "mu": 0.6544586732062241,
+            "phi": 2.0254332383697594e-08,
+            "psi": 2.6907453500181528e-08
+          },
+          "valid": true,
+          "variant_id": 29
+        }
+      ]
+    },
+    "primary_summary": {
+      "C0": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.0,
+          "phi": 0.0,
+          "psi": 0.0
+        },
+        "valid": true
+      },
+      "C1": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.7059763280019298,
+          "phi": 0.3779041101944878,
+          "psi": 6.308186615838749e-05
+        },
+        "valid": true
+      },
+      "C2": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 6.835258045314272e-05,
+          "phi": 0.3779040817798352,
+          "psi": 6.302829652263173e-05
+        },
+        "valid": true
+      },
+      "C3": {
+        "common_state_equal": true,
+        "median_divergence": {
+          "mu": 0.7059604612485566,
+          "phi": 2.645644888502262e-08,
+          "psi": 3.360263121673625e-08
+        },
+        "valid": true
+      }
+    },
+    "resolution_control": {
+      "control_signature": {
+        "C0": true,
+        "C1": false,
+        "C2": false,
+        "C3": false
+      },
+      "passed": false,
+      "primary_signature": {
+        "C0": true,
+        "C1": false,
+        "C2": true,
+        "C3": false
+      },
+      "ratios": {
+        "C1": null,
+        "C2": null,
+        "C3": null
+      },
+      "ratios_pass": true
+    },
+    "resolution_control_values": {
+      "C0": 0.0,
+      "C1": 2.307400657646299e-05,
+      "C2": 2.3065589896044145e-05,
+      "C3": 2.5522854035019165e-09
+    }
+  },
+  "classification": {
+    "all_nuisance_pass": false,
+    "c0_null_pass": true,
+    "c1_floor": 0.0001,
+    "c1_pass": false,
+    "c2_pass": true,
+    "c3_single_pass": false,
+    "d_null": 0.0,
+    "mu_candidate_pass": false,
+    "mu_primary_causal_pass": false,
+    "mu_zeroing_reduction": 0.0008492081642170746,
+    "outcome": "mu_passive_archive_without_demonstrated_causal_reuse",
+    "phi_zeroing_reduction": 0.9994673171029473,
+    "single_channel_floor": 5e-05
+  },
+  "empirically_connected": false,
+  "environment": {
+    "git_head": "d8f9168fc6e9b463cbf989cc1c2306ce3fe96adf",
+    "lineum_execution_policy": {
+      "canonical_audit_allowed_on_cuda": false,
+      "cuda_available": false,
+      "cuda_compatible": null,
+      "cuda_compiled_architectures": [],
+      "cuda_device_architecture": null,
+      "deterministic_mode": true,
+      "device_name": "CPU",
+      "enforced_canonical": true,
+      "execution_backend": "numpy",
+      "execution_device": "numpy",
+      "reason": null,
+      "requested_device_mode": "numpy"
+    },
+    "machine": "AMD64",
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "python": "3.11.15 (main, May 10 2026, 19:31:25) [MSC v.1944 64 bit (AMD64)]",
+    "runner_sha256": "8f818f0caca0536c95af0e9093fa9f13ff302baf41d7b30cace037b45b3fca7b"
+  },
+  "evidence_boundary": {
+    "consciousness_established": false,
+    "cosmology_established": false,
+    "gravity_established": false,
+    "implemented_history_dependence_only": true,
+    "physical_memory_field_established": false,
+    "q2_rescue_tested": false,
+    "quantum_memory_established": false
+  },
+  "p0_observer_audit": {
+    "passed": true,
+    "pooled": {
+      "balanced_accuracy": 1.0,
+      "class_a_accuracy": 1.0,
+      "class_b_accuracy": 1.0,
+      "class_imbalance": 0.0,
+      "permutation_p": 0.0004997501249375312
+    },
+    "quadrupole": {
+      "balanced_accuracy": 1.0,
+      "class_a_accuracy": 1.0,
+      "class_b_accuracy": 1.0,
+      "class_imbalance": 0.0,
+      "permutation_p": 0.0004997501249375312
+    },
+    "transpose_antisymmetry_error": 3.3306690738754696e-16
+  },
+  "passive": {
+    "cap_independence": {
+      "checkpoint_median_normalized_field_difference": {
+        "0": 0.0,
+        "100": 0.0,
+        "1000": 0.0,
+        "2000": 0.0,
+        "500": 0.0
+      },
+      "max_accuracy_difference": {
+        "pooled": 0.0,
+        "quadrupole": 0.0
+      },
+      "max_cap_mu": 0.0010161051944990059,
+      "max_median_normalized_field_difference": 0.0,
+      "max_primary_mu": 0.0010161051944990059,
+      "passed": true
+    },
+    "high_decay_mu": {
+      "0": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 1.0
+      },
+      "100": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9047921471137088
+      },
+      "1000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.36769542477096406
+      },
+      "2000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.13519992539749975
+      },
+      "500": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.6063789448611852
+      }
+    },
+    "high_decay_mu_final_retained": true,
+    "mu": {
+      "0": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 1.0
+      },
+      "100": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9990004948383392
+      },
+      "1000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9900497842463475
+      },
+      "2000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9801985752862395
+      },
+      "500": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9950124543172045
+      }
+    },
+    "mu_final_retained": true,
+    "mu_final_retained_before_cap_control": true,
+    "phi": {
+      "0": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 1.0
+      },
+      "100": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.9674494392767233
+      },
+      "1000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.7202955533242589
+      },
+      "2000": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.5216808599615069
+      },
+      "500": {
+        "exact": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "high": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "low": {
+          "pooled": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          },
+          "quadrupole": {
+            "balanced_accuracy": 1.0,
+            "class_a_accuracy": 1.0,
+            "class_b_accuracy": 1.0,
+            "class_imbalance": 0.0,
+            "permutation_p": 0.0004997501249375312
+          }
+        },
+        "relative_signal_amplitude": 0.8480559448786641
+      }
+    },
+    "phi_final_retained": true
+  },
+  "protocol": {
+    "common_width": 5.0,
+    "disable_quantum_noise": true,
+    "drift_strength": 0.0,
+    "dt": 0.1,
+    "echo_steps": 200,
+    "implemented_psi_dissipation": 0.005,
+    "imprint_steps": 120,
+    "mu_cap": 10.0,
+    "mu_eta": 0.005,
+    "mu_peak_cutoff_ratio": 0.1,
+    "mu_rho": 0.0001,
+    "phi_cap": 1000000.0,
+    "phi_diffusion": 0.05,
+    "phi_diffusion_scales_with_dt": true,
+    "psi_amp_cap": 1000000.0,
+    "psi_diffusion": 0.05,
+    "reaction_strength": 0.0007,
+    "size": 64,
+    "source_off_steps": 2000,
+    "stencil_type": "LAP4",
+    "use_mode_coupling": false,
+    "use_mu": true
+  },
+  "protocol_id": "Q2-M1",
+  "runtime_gate": {
+    "numpy_version": "1.26.4",
+    "passed": true,
+    "preferred": "1.26.4",
+    "python_version": "3.11.15",
+    "required": ">=1.24,<2.0.0"
+  },
+  "source_identity_gate": {
+    "actual": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+    },
+    "expected": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+    },
+    "head": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+    },
+    "method": "git_filtered_worktree_and_head_blob",
+    "passed": true
+  },
+  "stage": "A_existing_mu_causal_reuse",
+  "validity": {
+    "cap_raised_histories_valid": true,
+    "cap_raised_max_mu": 0.0010161051944990059,
+    "high_decay_histories_valid": true,
+    "max_source_off_mu_analytic_normalized_error": 9.223336866595536e-14,
+    "primary_histories_valid": true,
+    "primary_max_mu": 0.0010161051944990059,
+    "primary_source_off_psi_max": 0.0
+  },
+  "wall_clock_seconds": 743.4879176999675
+}

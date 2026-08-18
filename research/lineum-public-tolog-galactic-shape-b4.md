@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; version `0.25.12` records that the narrow repair passed all four dedicated regressions and direct dual-identity verification while the permanent gate and primary remained unexecuted; version `0.25.13` corrects only the Markdown ordering so preregistration precedes its repair result; version `0.25.14` records fresh owner authorization for exactly one repaired permanent gate attempt and, only on `18 / 18`, exactly one Stage A primary; version `0.25.15` records that the gate passed `18 / 18` but the single official CLI then stopped before scientific execution because direct-file invocation could not import `lineum_core`; the attempt is a retained technical non-result and no causal-memory result exists; version `0.25.16` records fresh owner authorization and freezes only the direct-file repository-root import bootstrap plus one non-scientific regression, with no new gate or primary authorised; version `0.25.17` records that the isolated import regression reproduced the exact failure before the six-line bootstrap, then passed 1/1 with the active Core while four identity regressions, compilation, safe probe, and the 78-node AST audit passed without any scientific execution; version `0.25.18` records fresh owner authorization for exactly one repaired permanent gate attempt 3 and, only on 18/18, exactly one official primary CLI attempt 2, with no retry or Stage B; version `0.25.19` records that gate attempt 3 passed 18/18 but primary CLI attempt 2 stopped after 724.471 seconds in the first transformed representative grid control because non-spatial telemetry reached a two-axis rotation; stdout remained zero bytes, no frozen classification exists, and the attempt is a technical non-result; version `0.25.20` records fresh owner authorization for only the narrow metadata-preserving grid-rotation repair and one targeted regression, with no new permanent gate, primary, checker, tuning, or Stage B authorised; version `0.25.21` records that the targeted regression reproduced the exact zero-dimensional telemetry rotation failure before the repair and passed 1/1 afterward, while no permanent gate, primary, checker, or scientific execution ran; version `0.25.22` records fresh owner authorization for exactly one repaired permanent gate attempt 4 and, only on 18/18, exactly one official primary CLI attempt 3, with no retry or Stage B; Questions 1 and 3 remain unchanged
-**Version:** 0.25.22 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` permanent gate attempt 4 passed `18 / 18` and official primary attempt 3 completed once with a valid retained JSON result; the raw runner labelled `mu` a passive archive without demonstrated causal reuse, but the frozen outcome map requires `inconclusive_or_confounded` because the resolution-control qualitative signature failed; the raw result is retained unchanged and the decision-surface mismatch is recorded without a result-dependent rerun or repair; no independent checker, tuning, new primary, or Stage B is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.23 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3327,3 +3327,97 @@ Before the gate, the report and artifact manifest must be committed, pushed, and
 Any preflight mismatch or any gate result other than exactly `18 / 18` consumes and closes the gate authorization without invoking the primary. If and only if all preflight conditions and the gate pass, the primary command may be invoked exactly once with direct stdout replacement and external stderr capture. Any primary exit, success, failure, partial progress, malformed output, or empty output consumes the primary authorization; no retry follows.
 
 The primary result, including a technical failure or a valid retained JSON classification, must be captured in this report and a readable execution receipt before any further consequential step. This authorization does not pre-judge the result, change prior evidence, or establish causal memory. Until the authorized commands complete, the hypothesis remains untested and Stage B remains non-executable.
+
+### Q2-M1 gate attempt 4 pass and primary attempt 3 retained inconclusive result — version `0.25.23`
+
+This checkpoint consumes exactly the one permanent-gate invocation and conditional one primary-CLI invocation authorised in `0.25.22`. It retains a complete supported-runtime Stage A primary. It does not run an independent checker, change a parameter or threshold, tune after inspection, retry the primary, or open Stage B. Questions 1 and 3 are unchanged.
+
+The exact preflight passed from clean execution base `d8f9168fc6e9b463cbf989cc1c2306ce3fe96adf`, equal to `origin/develop`. Committed and Git-filtered worktree identities matched for report blob `70c2a1220635fd9e22b146e3262df98dc4ac3e33`, manifest blob `70e937a863ce16ba56e4fd666ffe375e11fb32ff`, repaired runner blob `0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2`, permanent-test blob `b3c522141edf21fd723a58dc03633f41447a4bfd`, repair-receipt blob `e1f05157a56b4efe81ce453db165d238824db513`, active-Core blob `bb877021810691223a0eb960a45493a2e351112a`, and the frozen dependency blobs. The direct frozen-source receipt and supported Python `3.11.15` / NumPy `1.26.4` / pytest `9.1.1` runtime gates passed. The authorised stdout was still the exact zero-byte prior artifact, and the attempt-3 stderr target did not exist.
+
+The permanent gate was invoked once:
+
+```text
+attempt = 4
+started = 2026-08-18T14:03:12.6314247+02:00
+ended = 2026-08-18T14:03:13.7923400+02:00
+result = 18 passed / 0 failed in 0.59 s
+exit code = 0
+```
+
+Because that result was exactly `18 / 18`, the official primary CLI was then invoked once and not retried:
+
+```text
+attempt = 3
+started = 2026-08-18T14:03:40.8689576+02:00
+ended = 2026-08-18T14:16:04.7111421+02:00
+wrapper elapsed = 743.837 s
+runner wall clock = 743.4879176999675 s
+exit code = 0
+stdout bytes = 67033
+stdout SHA-256 = 512c8e9eb0d473e55817802d8c0909e4dbfdb0e2106646268135cd80e62a73ae
+stdout Git blob = 1fc064ee65fed965e1b7f1c92e005c50bf22c140
+stderr bytes = 0
+canonical payload SHA-256 without self = 6c0d8867dbf1affae34a62a5067a151de49645cd96d112d81a73d8c5a598f1c5
+canonical payload self-check = passed
+non-finite values = 0
+```
+
+The complete raw result remains unchanged at `research/lineum-public-tolog-b4/q2-m1-stage-a.json`. The readable attempt receipt is `research/lineum-public-tolog-b4/q2-m1-stage-a-execution-attempt-3.json`, Git blob `929905aa135e362b8cc89338e57a63fd4c9abb69`, `7798` bytes, SHA-256 `9e45b9c183a87d6c9967873f7d81ac7154912dc4eb627bab11cbf9651baf3373`.
+
+#### Retained observations
+
+**Implementation facts.** All primary histories and causal lanes were finite, reset-free, common-state equal where required, and below their cap-proximity limits. C0 was an exact null with median `D_psi = D_phi = D_mu = 0`. The P0 observer audit, passive cap-independence check, C3 cap check, C1 and C3 rotation checks, and timestep control passed. The resolution control failed because its qualitative C2 signature differed from the representative primary signature.
+
+**Observations.** Passive `mu` retained the imprinted labels after 2000 source-off updates: both held-out observers remained at balanced accuracy `1.0`, their permutation values were `0.0004997501249375312`, and relative signal amplitude was `0.9801985752862395`. This is strong implemented passive retention within the frozen simulation.
+
+After both labels received the exact same current `psi`, the causal medians were:
+
+```text
+C1 retain phi+mu: D_psi = 6.308186615838749e-05; required floor = 1e-4; pass = false
+C2 retain phi only: D_psi = 6.302829652263173e-05; required floor = 5e-5; pass = true
+C3 retain mu only: D_psi = 3.360263121673625e-08; required floor = 5e-5; pass = false
+mu-zeroing reduction versus C1 = 0.0008492081642170746
+phi-zeroing reduction versus C1 = 0.9994673171029473
+```
+
+Thus the `mu`-only lane was roughly three orders of magnitude below its frozen causal floor, and removing `mu` reduced the full-history echo by only about `0.0849%`. Removing `phi` reduced it by about `99.9467%`. These are observations from the primary, not an independently checked mechanism claim.
+
+The decisive nuisance mismatch was:
+
+```text
+representative primary C2 D_psi = 6.852217454583826e-05; signature = pass
+N=96 resolution C2 D_psi = 2.3065589896044145e-05; signature = fail
+all_nuisance_pass = false
+```
+
+The `mu`-only C3 lane stayed below its floor in both resolutions, but the preregistered outcome map did not permit narrowing the validity rule after seeing which channel caused the mismatch.
+
+#### Frozen-rule adjudication overrides the raw convenience label
+
+The raw runner emitted:
+
+```text
+mu_passive_archive_without_demonstrated_causal_reuse
+```
+
+Its retained metrics also explicitly report `all_nuisance_pass = false`. A post-run source audit found that `classify_primary()` includes the nuisance gates in `mu_candidate_pass`, but maps failed nuisance gates to `inconclusive_or_confounded` only when `mu_primary_causal_pass` is already true. It can therefore reach the passive-archive branch after a resolution failure. The permanent tests cover a positive `mu` candidate with a failed nuisance gate and a passive-archive case with all nuisance gates passing, but not the observed combination of passive retention, failed C3, and failed resolution control.
+
+That executable decision surface is narrower than the frozen report rule at version `0.25.0`:
+
+```text
+any null/cap/grid/observer/timestep/resolution validity failure -> inconclusive/confounded
+```
+
+The preregistration predates the runner and the observed result, so it remains authoritative. The canonical Stage A adjudication is therefore:
+
+```text
+inconclusive_or_confounded
+```
+
+The raw JSON is not rewritten and no result-dependent scientific rerun follows. This preserves both the exact executable output and the pre-outcome decision contract.
+
+**Bounded interpretation.** The primary is compatible with `mu` acting as a long-lived passive record and does not demonstrate that `mu` alone causally guides later `psi`. However, because the frozen resolution rule failed, this checkpoint does not promote that pattern to a definitive or independently verified Q2-M1 negative. It does not establish a Q2 return, an attractor, physical memory, gravity, quantum behaviour, consciousness, or cosmology.
+
+**Hypothesis status.** The owner-inspired `mu`-only guide is `inconclusive_under_frozen_resolution_control`. The raw result supplies a bounded negative indication, not a verified scientific negative. The mandatory post-negative owner-intuition gate therefore does not open at this checkpoint.
+
+Both one-shot authorisations are consumed. No classification-logic repair, new test, checker, new gate, new primary, parameter or threshold change, mechanism selection, or Stage B is authorised. The execution lane is closed pending a fresh owner decision.
