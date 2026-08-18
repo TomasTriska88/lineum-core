@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; Questions 1 and 3 remain unchanged
-**Version:** 0.25.8 \
-**Evidence cutoff:** 2026-08-13
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; Questions 1 and 3 remain unchanged
+**Version:** 0.25.9 \
+**Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `20daea76a55f7157732b4bb1f54e2b1416f96b82` \
+**Checkpoint parent:** `3268ead4dcd5cb7b587a5ab64123b4a4cd87023b` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2323,3 +2323,81 @@ This report-only checkpoint does **not** by itself reopen the scientific continu
 Only after both this `0.25.8` report and the synchronized artifact manifest are branch-reachable and verified may the continuity gate reopen for one consequential action: rerun the permanent Q2-M1 `18 / 18` supported-runtime regression gate and, if it passes from the unchanged frozen identities, execute exactly one official Stage A primary. The complete primary must be retained as ordinary JSON and this same report updated before any independent checker implementation, mechanism selection, Stage B definition, parameter tuning, whitepaper promotion, or other consequential research step.
 
 Stage B remains non-executable. A positive causal echo would demonstrate only implemented history dependence within the frozen finite-grid model until independently checked; it would not by itself demonstrate the finite natural attractor required by Question 2.
+
+### Q2-M1 owner-authorised one-shot Stage A execution lock — version `0.25.9`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. It records execution authority and the exact supported local lane before any new Q2-M1 test or scientific trajectory is run; it contains no Stage A outcome.
+
+On 2026-08-18, after receiving the plain-language explanation that Stage A compares two systems with the same present `psi` but oppositely imprinted retained histories, project owner Tomáš Tříska explicitly authorised the bounded run: **“tak to mě zajímá. směle do toho.”** This authorises the frozen permanent `18 / 18` supported-runtime gate and, only if that gate passes from unchanged identities, exactly one official Stage A primary. It does not authorise Stage B, a result-dependent rerun, threshold or parameter tuning, replacement-mechanism selection, an independent checker implementation, production equation changes, whitepaper promotion, deployment, device action, or any physical or cognitive claim.
+
+The branch-reachable continuity starting point was read back as:
+
+```text
+repository / branch = TomasTriska88/lineum-core / develop
+checkpoint parent = 3268ead4dcd5cb7b587a5ab64123b4a4cd87023b
+version 0.25.8 report Git blob = c34c586dfbcf36a08b1d332149298455ce124753
+synchronised artifact manifest Git blob = b39c60734fd930c44c80b321468e482188f0ef8c
+runner Git blob = e2de0adf272a5e2c48eff60019ef9343eefa6bf6
+runner SHA-256 = d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3
+test Git blob = e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d
+test SHA-256 = 8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt Git blob = 7a0907e3e6c2d15400d19b536227a509910ae7e9
+Stage A scientific executions before this checkpoint = 0
+```
+
+An isolated local environment was created without invoking pytest, `run_primary()`, or the runner CLI. Its verified executable is `C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe`, with Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. The execution worktree is detached at the checkpoint parent and uses repository hooks from `.agent/hooks`.
+
+The one-shot lane is fixed as follows:
+
+```text
+permanent gate command:
+    C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe
+        -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse.py -q
+
+conditional official primary command, only after an exact 18/18 gate pass:
+    C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe
+        research/runners/lineum_b4_q2_mu_causal_reuse.py
+
+ordinary JSON retention path for that single CLI stdout:
+    research/lineum-public-tolog-b4/q2-m1-stage-a.json
+```
+
+The runner has no output-path argument. Its complete standard output must therefore be redirected directly to that exact ordinary JSON path during the one permitted CLI invocation. The command must not be invoked if the permanent gate fails. The command must not be repeated because of its classification, effect size, surprise, or any other outcome-dependent reason.
+
+The execution remains fail-closed until this `0.25.9` report is committed, pushed, and read back, followed by a separate artifact-manifest commit that indexes this exact report blob and is also pushed and read back. Immediately before the permanent gate, the worktree must be clean at that synchronized remote head and the exact runner, test, active Core, dependency, report, manifest, and runtime identities must be reverified. A passing gate permits only the single Stage A CLI call; a failing gate ends the primary lane as a technical non-result.
+
+Evidence separation for this checkpoint is:
+
+```text
+implemented:
+    the frozen Q2-M1 runner and permanent tests remain branch-reachable;
+    an exact supported local runtime is available;
+    no production equation changed;
+
+reproduced observation:
+    the report/manifest continuity repair is branch-reachable at 3268ead;
+    Python 3.11.15 / NumPy 1.26.4 / pytest 9.1.1 were read from the isolated runtime;
+    no new permanent gate or scientific trajectory ran before this checkpoint;
+
+owner decision:
+    one frozen gate and, conditionally, one Stage A primary are authorised;
+
+cautious interpretation:
+    the environment and authorization remove technical and governance blockers only;
+    they provide no evidence for or against causal memory reuse;
+
+hypothesis:
+    whether retained `mu` causally reuses source-off orientation history remains untested;
+
+not established:
+    any causal-memory echo, Q2 return, or attractor rescue;
+    any Q3 fixed-potential memory result;
+    any physical memory, gravity, quantum, consciousness, cosmological,
+    dark-matter, or other empirical interpretation.
+```
+
+After the required report and manifest readbacks, the exact next action is the permanent supported-runtime `18 / 18` gate and, only on success, the one official Stage A primary retained at the fixed JSON path. The same authoritative report must then be updated with the complete bounded result before any later consequential scientific action.
+
+Stage B remains non-executable.
