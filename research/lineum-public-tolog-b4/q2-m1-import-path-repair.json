@@ -1,0 +1,118 @@
+{
+  "schema": "lineum-public-tolog-b4/q2-m1-import-path-repair/1",
+  "artifact_id": "Q2-M1-IMPORT-PATH-REPAIR",
+  "recorded_on": "2026-08-18",
+  "question": "Q2",
+  "status": "passed",
+  "classification": "technical_launcher_repair_only",
+  "authorization": {
+    "owner_reply": "ano",
+    "scope": "prepare and publish only the narrow import-path repair and its regression test",
+    "new_permanent_gate_authorized": false,
+    "new_primary_authorized": false,
+    "stage_b_authorized": false
+  },
+  "preregistered_checkpoint": {
+    "head": "1b6693f1de9047d2a8361f643240b4ec986b093b",
+    "origin_develop": "1b6693f1de9047d2a8361f643240b4ec986b093b",
+    "report_version": "0.25.16",
+    "report_git_blob": "9d143e324fc4782d8a545bd4dd58bcb5d0a5f639",
+    "manifest_git_blob": "a9b7f9107b52cd528b62cec71315593e97998e42"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python_executable": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe"
+  },
+  "implementation": {
+    "path": "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+    "previous_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+    "repaired_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+    "repaired_git_blob_bytes": 60406,
+    "repaired_git_blob_sha256": "ef34e48cba367b1f23b51707ea91453b8573b07264b6719463cd7daed5a3785a",
+    "added_lines": 6,
+    "removed_lines": 0,
+    "contract": "Resolve Path(__file__).resolve().parents[2] and prepend its string form to sys.path only when it is not already first.",
+    "preexisting_function_body_changed": false,
+    "preexisting_class_body_changed": false,
+    "main_changed": false,
+    "run_primary_changed": false,
+    "core_bindings_changed": false,
+    "scientific_surface_changed": false
+  },
+  "dedicated_regression": {
+    "path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_import_path_repair.py",
+    "git_blob": "9139ab4f7bbbc4cf5dfc73ebb3995e3a3a842524",
+    "git_blob_bytes": 2508,
+    "git_blob_sha256": "8e5eb8ac75d59b4abbf0137c6cae0324cf857d3ee6bb6c611e7a2f6893f559dc",
+    "test_count": 1,
+    "probe_mode": "path-isolated supported-Python subprocess plus non-main runpy load",
+    "main_callable": false,
+    "run_primary_callable": false
+  },
+  "test_first_baseline": {
+    "runner_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+    "tests_passed": 0,
+    "tests_failed": 1,
+    "pytest_elapsed_seconds": 0.36,
+    "wrapper_elapsed_seconds": 0.834,
+    "exit_code": 1,
+    "exception_type": "ModuleNotFoundError",
+    "exception_message": "No module named 'lineum_core'",
+    "failure_function": "core_bindings",
+    "failure_source_line": 735,
+    "expected_failure_reproduced": true,
+    "scientific_execution_started": false
+  },
+  "post_repair_regression": {
+    "runner_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+    "tests_passed": 1,
+    "tests_failed": 0,
+    "pytest_elapsed_seconds": 0.28,
+    "wrapper_elapsed_seconds": 0.74,
+    "exit_code": 0
+  },
+  "supporting_validation": {
+    "identity_repair_regressions_passed": 4,
+    "identity_repair_regressions_failed": 0,
+    "identity_repair_pytest_elapsed_seconds": 3.25,
+    "py_compile_passed": true,
+    "safe_isolated_child_probe_passed": true,
+    "repository_root_became_sys_path_first": true,
+    "active_core_math_path": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-20260818\\lineum_core\\math.py",
+    "core_config_module": "lineum_core.math",
+    "execution_policy_module": "lineum_core.math",
+    "step_core_module": "lineum_core.math",
+    "probe_run_name": "lineum_b4_q2_m1_import_path_probe",
+    "probe_scientific_main_invoked": false,
+    "ast_preexisting_function_and_class_nodes": 78,
+    "ast_current_function_and_class_nodes": 78,
+    "ast_all_preexisting_function_and_class_bodies_unchanged": true
+  },
+  "execution_boundary": {
+    "permanent_gate_invocations_during_repair": 0,
+    "run_primary_invocations_during_repair": 0,
+    "runner_main_invocations_during_repair": 0,
+    "primary_cli_invocations_during_repair": 0,
+    "official_primary_cli_invocations_total": 1,
+    "retained_primary_stdout_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
+    "retained_primary_stdout_bytes": 0,
+    "scientific_trajectory_started_during_repair": false,
+    "stage_a_scientific_result_present": false
+  },
+  "bounded_interpretation": {
+    "implementation_fact": "The runner now makes the active repository root authoritative for project-local imports during direct-file invocation.",
+    "observation": "The exact isolated import regression changed from the preregistered ModuleNotFoundError to 1/1 passed, and all supporting technical checks passed without scientific execution.",
+    "interpretation": "The known launcher/import-path blocker is repaired; this does not constitute a Stage A run or causal-memory evidence.",
+    "hypothesis_status": "untested",
+    "physical_claim_established": false
+  },
+  "next_action_boundary": {
+    "repair_complete": true,
+    "execution_lane_open": false,
+    "new_gate_authorized": false,
+    "new_primary_authorized": false,
+    "stage_b_executable": false
+  }
+}

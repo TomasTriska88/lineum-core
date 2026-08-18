@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; version `0.25.12` records that the narrow repair passed all four dedicated regressions and direct dual-identity verification while the permanent gate and primary remained unexecuted; version `0.25.13` corrects only the Markdown ordering so preregistration precedes its repair result; version `0.25.14` records fresh owner authorization for exactly one repaired permanent gate attempt and, only on `18 / 18`, exactly one Stage A primary; version `0.25.15` records that the gate passed `18 / 18` but the single official CLI then stopped before scientific execution because direct-file invocation could not import `lineum_core`; the attempt is a retained technical non-result and no causal-memory result exists; version `0.25.16` records fresh owner authorization and freezes only the direct-file repository-root import bootstrap plus one non-scientific regression, with no new gate or primary authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.16 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; version `0.25.12` records that the narrow repair passed all four dedicated regressions and direct dual-identity verification while the permanent gate and primary remained unexecuted; version `0.25.13` corrects only the Markdown ordering so preregistration precedes its repair result; version `0.25.14` records fresh owner authorization for exactly one repaired permanent gate attempt and, only on `18 / 18`, exactly one Stage A primary; version `0.25.15` records that the gate passed `18 / 18` but the single official CLI then stopped before scientific execution because direct-file invocation could not import `lineum_core`; the attempt is a retained technical non-result and no causal-memory result exists; version `0.25.16` records fresh owner authorization and freezes only the direct-file repository-root import bootstrap plus one non-scientific regression, with no new gate or primary authorised; version `0.25.17` records that the isolated import regression reproduced the exact failure before the six-line bootstrap, then passed 1/1 with the active Core while four identity regressions, compilation, safe probe, and the 78-node AST audit passed without any scientific execution; Questions 1 and 3 remain unchanged
+**Version:** 0.25.17 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `3391f3aaed9d1d54a1665ca1acee160a0e4a8919` \
+**Checkpoint parent:** `1b6693f1de9047d2a8361f643240b4ec986b093b` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2935,3 +2935,81 @@ not established:
 ```
 
 The scientific execution lane remains closed. Stage B remains non-executable.
+
+### Q2-M1 direct-file import-path repair result — version `0.25.17`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. It records the completed narrow technical repair authorised and frozen in `0.25.16`. It contains no new permanent-gate invocation, no `run_primary()` or runner `main()` invocation, no primary CLI attempt, and no Stage A scientific result.
+
+The dedicated path-isolated regression was first added without changing the runner. It launched the supported Python in isolated mode, placed the nested runner directory first, removed the repository root, loaded the runner under a non-`__main__` run name, and then called only `core_bindings()`. Against the old runner blob `f10135eb8d81b1ac5f1a8f498b375ec416a40610`, it reproduced the exact preregistered failure:
+
+```text
+tests = 0 passed / 1 failed
+pytest elapsed = 0.36 s
+wrapper elapsed = 0.834 s
+exit code = 1
+exception = ModuleNotFoundError: No module named 'lineum_core'
+failure location = core_bindings(), runner line 735
+main() invoked = false
+run_primary() invoked = false
+scientific trajectories started = false
+```
+
+Only the frozen six-line module-level bootstrap was then added after the import block:
+
+```python
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+if not sys.path or sys.path[0] != str(REPOSITORY_ROOT):
+    sys.path.insert(0, str(REPOSITORY_ROOT))
+```
+
+No pre-existing line was removed. The repaired runner candidate is Git blob `e1a95bae7407f8aef3484b9f2c43497104e6a047`, 60,406 exact Git-blob bytes, SHA-256 `ef34e48cba367b1f23b51707ea91453b8573b07264b6719463cd7daed5a3785a`. The dedicated regression is `tests/research/test_lineum_b4_q2_mu_causal_reuse_import_path_repair.py`, Git blob `9139ab4f7bbbc4cf5dfc73ebb3995e3a3a842524`, 2,508 exact Git-blob bytes, SHA-256 `8e5eb8ac75d59b4abbf0137c6cae0324cf857d3ee6bb6c611e7a2f6893f559dc`.
+
+The post-repair validation was:
+
+```text
+dedicated path-isolated import regression = 1 passed / 0 failed in 0.28 s
+dedicated wrapper elapsed = 0.740 s
+existing cross-platform identity regressions = 4 passed / 0 failed in 3.25 s
+runner and dedicated regression py_compile = passed
+safe isolated child probe = passed
+repository root became sys.path[0] = true
+imported Core path = active worktree lineum_core/math.py
+CoreConfig module = lineum_core.math
+ExecutionPolicy module = lineum_core.math
+step_core module = lineum_core.math
+probe run name = lineum_b4_q2_m1_import_path_probe
+probe scientific main invoked = false
+pre-existing AST function/class nodes = 78
+current AST function/class nodes = 78
+all pre-existing function and class bodies unchanged = true
+```
+
+The permanent 18-test file was not invoked or edited. `main()`, `run_primary()`, `core_bindings()`, every other pre-existing function and class body, active Core, dependency files, scientific protocol, schedule, observer, seed, parameters, thresholds, controls, classifier, output schema, and fail-safe rules remain unchanged. The zero-byte stdout from the consumed earlier CLI attempt remains exactly zero bytes at `research/lineum-public-tolog-b4/q2-m1-stage-a.json` and remains a technical artifact, not a scientific result.
+
+The readable repair receipt is `research/lineum-public-tolog-b4/q2-m1-import-path-repair.json`.
+
+Evidence separation is:
+
+```text
+implementation fact:
+    the runner now prepends its active repository root for project-local imports;
+    no pre-existing scientific or execution function body changed;
+
+reproduced observation:
+    the isolated regression changed from the exact expected import failure to 1/1 passed;
+    all four existing identity regressions, compilation, probe, and AST audit passed;
+    no permanent gate, main, run_primary, primary CLI, or trajectory ran;
+
+cautious interpretation:
+    the known launcher/import-path blocker is repaired;
+    this is technical readiness only, not causal-memory evidence;
+
+hypothesis:
+    whether retained mu causally reuses source-off orientation history remains untested;
+
+not established:
+    a new Stage A result, Q2 return or attractor rescue,
+    or any physical memory, gravity, quantum, consciousness, or cosmological claim.
+```
+
+The repair authorization is exhausted. A new permanent gate and conditional primary require a separate fresh owner decision after this report, repair receipt, code, test, and synchronized manifest are committed, pushed, and read back. Until then, the scientific execution lane remains closed and Stage B remains non-executable.

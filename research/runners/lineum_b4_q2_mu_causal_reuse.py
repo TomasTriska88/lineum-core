@@ -15,6 +15,12 @@ from typing import Any, Callable, Mapping, Sequence
 
 import numpy as np
 
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+if not sys.path or sys.path[0] != str(REPOSITORY_ROOT):
+    sys.path.insert(0, str(REPOSITORY_ROOT))
+
+
 SEED = 20260804
 LABEL_A = 0
 LABEL_B = 1
