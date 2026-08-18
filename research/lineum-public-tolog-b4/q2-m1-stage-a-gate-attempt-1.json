@@ -1,0 +1,79 @@
+{
+  "protocol_id": "Q2-M1",
+  "stage": "A_existing_mu_causal_reuse",
+  "receipt_type": "pre_execution_gate_technical_non_result",
+  "attempt": 1,
+  "executed_at_local": "2026-08-18T11:41:45.9031142+02:00",
+  "executed_at_utc": "2026-08-18T09:41:45.9099992Z",
+  "repository": "TomasTriska88/lineum-core",
+  "branch": "develop",
+  "checkpoint_commit": "2a0a1cdee9a1b179c0ac569e83bcfa7d1bfbbb26",
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1"
+  },
+  "command": [
+    "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+    "-q"
+  ],
+  "exit_code": 1,
+  "pytest": {
+    "passed": 17,
+    "failed": 1,
+    "duration_seconds_reported": 0.49,
+    "failed_test": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py::test_frozen_source_identity_gate_matches_branch_checkout",
+    "assertion": "verify_frozen_sources(ROOT)['passed'] is True"
+  },
+  "frozen_source_identity_receipt": {
+    "passed": false,
+    "expected_git_blob_sha1": {
+      "lineum_core/math.py": "bb877021810691223a0eb960a45493a2e351112a",
+      "requirements.txt": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
+      "requirements-dev.txt": "7a0907e3e6c2d15400d19b536227a509910ae7e9"
+    },
+    "actual_checkout_byte_git_blob_sha1": {
+      "lineum_core/math.py": "cc466c776b346f821054bf71b2c1d0c88882b9a2",
+      "requirements.txt": "70ee51f852e376dab3c98496926fb3d11600b62a",
+      "requirements-dev.txt": "57eb99187c82305125bcda2a261ae7b0c64d50b7"
+    }
+  },
+  "diagnosed_cause": {
+    "classification": "windows_checkout_line_ending_conversion",
+    "core_autocrlf": true,
+    "git_attributes_text": "unspecified",
+    "git_attributes_eol": "unspecified",
+    "tracked_git_blob_identities_match_frozen_values": true,
+    "checkout_bytes_match_git_blob_bytes_after_crlf_to_lf_normalization": true,
+    "files": {
+      "lineum_core/math.py": {
+        "working_bytes": 31218,
+        "git_blob_bytes": 30437,
+        "working_crlf_count": 781,
+        "git_blob_crlf_count": 0
+      },
+      "requirements.txt": {
+        "working_bytes": 220,
+        "git_blob_bytes": 207,
+        "working_crlf_count": 13,
+        "git_blob_crlf_count": 0
+      },
+      "requirements-dev.txt": {
+        "working_bytes": 38,
+        "git_blob_bytes": 35,
+        "working_crlf_count": 3,
+        "git_blob_crlf_count": 0
+      }
+    },
+    "interpretation": "The frozen verifier hashes checkout bytes as Git blobs. On this Windows checkout, automatic LF-to-CRLF conversion changes those byte-derived identities even though the branch-reachable Git blobs are the exact frozen sources."
+  },
+  "primary_runner_cli_invoked": false,
+  "primary_result_path_created": false,
+  "scientific_result": null,
+  "scientific_evidence": "none",
+  "gate_disposition": "closed_after_first_attempt",
+  "next_action_boundary": "Any cross-platform identity-gate repair and any new gate attempt require a separately preregistered checkpoint; this receipt does not authorise either."
+}

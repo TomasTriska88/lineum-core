@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; Questions 1 and 3 remain unchanged
-**Version:** 0.25.9 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; Questions 1 and 3 remain unchanged
+**Version:** 0.25.10 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `3268ead4dcd5cb7b587a5ab64123b4a4cd87023b` \
+**Checkpoint parent:** `2a0a1cdee9a1b179c0ac569e83bcfa7d1bfbbb26` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2401,3 +2401,82 @@ not established:
 After the required report and manifest readbacks, the exact next action is the permanent supported-runtime `18 / 18` gate and, only on success, the one official Stage A primary retained at the fixed JSON path. The same authoritative report must then be updated with the complete bounded result before any later consequential scientific action.
 
 Stage B remains non-executable.
+
+### Q2-M1 authorised gate attempt 1 stopped before primary — version `0.25.10`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. The authorised supported-runtime gate was executed exactly once from the synchronized `0.25.9` report/manifest checkpoint. It did not pass, so the official Stage A primary was not invoked and no causal-memory classification exists.
+
+The exact pre-gate readback passed before pytest:
+
+```text
+repository / branch = TomasTriska88/lineum-core / develop
+HEAD and origin/develop = 2a0a1cdee9a1b179c0ac569e83bcfa7d1bfbbb26
+worktree status = clean
+planned primary result path = absent
+version 0.25.9 report Git blob = 52441b2648b30eecb27dbafb027bbeabfc83f963
+synchronised manifest Git blob = cdbb7e16ce3bcc6cf65443f9c8a354d6d39b8335
+runner Git blob = e2de0adf272a5e2c48eff60019ef9343eefa6bf6
+test Git blob = e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt Git blob = 7a0907e3e6c2d15400d19b536227a509910ae7e9
+runtime = Python 3.11.15 / NumPy 1.26.4 / pytest 9.1.1
+```
+
+The permanent command then returned exit code `1`:
+
+```text
+17 passed / 1 failed in 0.49 s
+failed test:
+    test_frozen_source_identity_gate_matches_branch_checkout
+failed assertion:
+    verify_frozen_sources(ROOT)["passed"] is True
+run_primary() invoked = false
+runner CLI invoked = false
+research/lineum-public-tolog-b4/q2-m1-stage-a.json created = false
+```
+
+The failure is fully diagnosed as a checkout-byte portability defect, not a source-content change. `core.autocrlf = true`, while the three checked paths have no explicit `text` or `eol` attribute. Git contains LF bytes, whereas this Windows worktree contains CRLF bytes. The frozen verifier constructs Git-blob identities directly from `Path.read_bytes()`, so the checkout conversion changes the identity it calculates:
+
+```text
+path                         frozen Git blob                         checkout-byte-derived blob
+lineum_core/math.py          bb877021810691223a0eb960a45493a2e351112a  cc466c776b346f821054bf71b2c1d0c88882b9a2
+requirements.txt             942f2b94b3d3f8c767451ae2d847a7b17c86d81e  70ee51f852e376dab3c98496926fb3d11600b62a
+requirements-dev.txt         7a0907e3e6c2d15400d19b536227a509910ae7e9  57eb99187c82305125bcda2a261ae7b0c64d50b7
+```
+
+For all three files, replacing checkout CRLF pairs with LF produces bytes exactly equal to the corresponding branch-reachable Git blob. The counts are `781`, `13`, and `3` CRLF pairs respectively; the committed blobs contain zero CR bytes. The frozen source content therefore remains exact, but the gate as implemented is not checkout-line-ending invariant.
+
+The complete technical receipt is retained as ordinary JSON at `research/lineum-public-tolog-b4/q2-m1-stage-a-gate-attempt-1.json`. It is infrastructure evidence only and must not be mistaken for the absent primary result.
+
+Evidence separation is:
+
+```text
+implemented:
+    the frozen Q2-M1 runner and permanent tests remain branch-reachable;
+    the identity helper hashes checkout bytes rather than immutable Git blob bytes;
+    no production equation changed;
+
+reproduced observation:
+    17 permanent tests passed and the checkout-byte identity test failed;
+    all three mismatches are explained exactly by LF-to-CRLF checkout conversion;
+    the branch-reachable Git blobs still match every frozen source identity;
+    no primary result path was created;
+
+cautious interpretation:
+    the gate correctly prevented scientific execution under a failed precondition;
+    this attempt is a technical non-result and says nothing about causal memory reuse;
+
+hypothesis:
+    whether retained `mu` causally reuses source-off orientation history remains untested;
+
+not established:
+    any causal-memory echo, Q2 return, or attractor rescue;
+    any Q3 fixed-potential memory result;
+    any physical memory, gravity, quantum, consciousness, cosmological,
+    dark-matter, or other empirical interpretation.
+```
+
+The `0.25.9` one-shot lane is now closed after its first gate attempt. A narrow cross-platform repair could make the source-identity check use immutable Git blob bytes or an explicitly frozen line-ending policy without changing any scientific equation, schedule, observer, threshold, or classification rule. That repair, its regression test, and any new supported-runtime gate attempt must first be separately preregistered, committed, pushed, and read back. They are not authorised by this technical receipt.
+
+Stage A remains unexecuted. Stage B remains non-executable.
