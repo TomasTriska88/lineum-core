@@ -1,0 +1,46 @@
+{
+  "attempt": 1,
+  "checker_id": "Q2-M1-RS1-IC1",
+  "checker_invocation_limit": 1,
+  "checker_invocations_after_attempt": 1,
+  "checker_source_commit": "491d95bd619c27467b67934a3bcbf8d49875ae07",
+  "checker_source_git_blob": "4074e3b924ea7e7c94e6ca5d41fb8c3393de8141",
+  "ended_at": "2026-08-18T16:15:55.9517242+02:00",
+  "exit_code": 0,
+  "independence": {
+    "additional_resolution": false,
+    "primary_runner_imported": false,
+    "retained_output_only": true,
+    "threshold_or_outcome_change": false,
+    "trajectory_execution": false
+  },
+  "input": {
+    "canonical_payload_sha256_without_self": "0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f",
+    "checkout_bytes": 13155,
+    "checkout_sha256": "f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a",
+    "git_blob": "d7f8b714dafbc1b5b98920a09f1b639ff16882c4",
+    "path": "research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json",
+    "unchanged_after_checker": true
+  },
+  "output": {
+    "canonical_payload_sha256_without_self": "02130b674bf55a1383f7f1c11b1d3d4546242ac815950be9b725683973018598",
+    "checkout_bytes": 2980,
+    "checkout_sha256": "b4a56fdf9af75dd1a9f8e78876a0348f9ece5788339c0f08b9acd0ff708dbc5b",
+    "git_blob": "82b79dda4b24bc7bba6a5c44eb07d93baf844d05",
+    "git_blob_bytes": 2878,
+    "path": "research/lineum-public-tolog-b4/q2-m1-rs1-independent-check.json",
+    "self_check_passed": true
+  },
+  "outcome_agreement": true,
+  "primary_outcome": "rs1_primary_mu_only_unsupported_indication",
+  "protocol_id": "Q2-M1-RS1",
+  "retry_authorised": false,
+  "scientific_status": "unsupported_under_rs1_tested_conditions",
+  "started_at": "2026-08-18T16:15:55.6709096+02:00",
+  "stderr": {
+    "bytes": 0,
+    "external_capture": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-rs1-checker-stderr-attempt-1-20260818.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "wrapper_elapsed_seconds": 0.2777275
+}

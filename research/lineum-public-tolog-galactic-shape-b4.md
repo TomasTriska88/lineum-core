@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` has one complete retained primary from the exact `N=96` versus `N=128` normalized-lattice comparison; both sizes are valid and share the same C0-pass/C1-C3-fail signature, yielding `rs1_primary_mu_only_unsupported_indication`; a separately implemented retained-output checker now passes `14 / 14` synthetic and tamper-detection tests without reading the primary or invoking trajectories, but the checker has not yet run on the retained primary; this is not yet an independently verified negative, amplitude convergence, continuum proof, direct Q2 result, or physical claim; the one primary authority is consumed and only one frozen checker invocation may proceed next; Questions 1 and 3 remain unchanged
-**Version:** 0.25.31 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain; its one retained primary and one independently implemented retained-output check agree on the C0-pass/C1-C3-fail signature, and the final bounded status is `unsupported_under_rs1_tested_conditions`; this does not establish amplitude convergence, continuum independence, direct Q2 return, a physical field, or a Lina capability, and it does not reclassify Q2-M1 attempt 3; all RS1 execution authorities are consumed, the owner-intuition gate is open, and no replacement mechanism, Stage B, direct Q2 step, or additional sweep is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.32 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -4001,3 +4001,106 @@ trajectory executions during tests = 0
 **Hypothesis and physical status.** Unchanged from version `0.25.30`: Candidate A still has only a primary unsupported indication, `independent_checker_run=false`, and `empirically_connected=false`.
 
 After publication and remote readback of this checkpoint, invoke the committed checker exactly once with direct stdout replacement at `research/lineum-public-tolog-b4/q2-m1-rs1-independent-check.json` and external stderr capture. Retain a separate execution receipt at `research/lineum-public-tolog-b4/q2-m1-rs1-checker-execution-attempt-1.json`. Any success, failure, interruption, malformed output, or identity mismatch consumes the one checker invocation; no retry is authorised. The checker input is immutable and no scientific trajectory may run.
+
+### Q2-M1-RS1 independent verification and final bounded status — version `0.25.32`
+
+**Plain conclusion.** The independent checker agrees with the official primary. In both finer resolutions, the model retains the earlier pattern but does not show enough causal response for `mu` alone, or for the other non-null lanes, to cross the frozen evidence floors. Candidate A is therefore `unsupported_under_rs1_tested_conditions`.
+
+**Everyday analogy.** A photograph can remain almost perfectly legible without steering the next move. Here the stored picture is still present, but two different fine rulers and an independent accountant agree that it did not act like sufficiently strong turn-by-turn instructions in this exact test.
+
+**Practical consequence.** RS1 is complete as an honest bounded negative. It closes this particular representative `mu`-only route under the registered `N=96/128` conditions; it does not say that all memory mechanisms are impossible, that nature has no memory, or that Question 2 is globally solved. No additional run, tuning, resolution, replacement mechanism, Stage B, direct Q2 step, or Lina/device action follows automatically.
+
+The one official checker invocation used the clean, pushed, and remotely read-back checker checkpoint:
+
+```text
+HEAD = origin/develop = 491d95bd619c27467b67934a3bcbf8d49875ae07
+report version = 0.25.31
+report Git blob = c0e761115e124764cc595a20be5ceac591812643
+manifest Git blob = 3dd6f860f6f2337d4204186e191cf1e19365a80f
+checker Git blob = 4074e3b924ea7e7c94e6ca5d41fb8c3393de8141
+checker test Git blob = 617ad4772520e5813a669e4cdb5f7461a01fdf2e
+retained primary Git blob = d7f8b714dafbc1b5b98920a09f1b639ff16882c4
+worktree = clean
+prior checker output = absent
+prior checker receipt = absent
+prior checker stderr target = absent
+```
+
+The checker was invoked exactly once and not retried:
+
+```text
+attempt = 1
+started = 2026-08-18T16:15:55.6709096+02:00
+ended = 2026-08-18T16:15:55.9517242+02:00
+wrapper elapsed = 0.2777275 s
+exit code = 0
+stdout bytes = 2980
+stdout SHA-256 = b4a56fdf9af75dd1a9f8e78876a0348f9ece5788339c0f08b9acd0ff708dbc5b
+stdout Git blob = 82b79dda4b24bc7bba6a5c44eb07d93baf844d05
+stdout canonical payload SHA-256 = 02130b674bf55a1383f7f1c11b1d3d4546242ac815950be9b725683973018598
+stdout canonical payload self-check = passed
+stderr bytes = 0
+stderr SHA-256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+checker retry = forbidden
+```
+
+The complete independent output is retained at `research/lineum-public-tolog-b4/q2-m1-rs1-independent-check.json`. Its execution receipt is `research/lineum-public-tolog-b4/q2-m1-rs1-checker-execution-attempt-1.json`, Git blob `4102826fe4255a5501d91d30a62881aef84ade04`. The retained primary remained byte-identical after the check:
+
+```text
+primary checkout bytes = 13155
+primary checkout SHA-256 before and after = f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a
+primary filtered and HEAD Git blob = d7f8b714dafbc1b5b98920a09f1b639ff16882c4
+primary canonical payload SHA-256 = 0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f
+```
+
+#### Independent agreement
+
+The checker independently reproduced all of the following from the retained rows and frozen identities:
+
+```text
+source identity = pass
+payload identity = pass
+row medians = pass
+lane values = pass
+floors = pass
+signatures = pass
+conditional ratios = pass
+mu-zeroing reductions = pass
+outcome map = pass
+
+N=96 signature  = C0 pass; C1 fail; C2 fail; C3 fail
+N=128 signature = C0 pass; C1 fail; C2 fail; C3 fail
+signatures match = true
+resolution stability = categorical pass
+C1-C3 ratios = null because neither size is above the applicable floor
+primary outcome = rs1_primary_mu_only_unsupported_indication
+checker outcome = rs1_primary_mu_only_unsupported_indication
+agreement = true
+final bounded status = unsupported_under_rs1_tested_conditions
+```
+
+#### Final evidence separation
+
+**Implementation fact.** The committed checker read only the retained JSON, used no NumPy or primary-runner import, and executed no trajectory. It verified the input's checkout hash, Git identity, canonical payload hash, frozen protocol, runtime declaration, execution source identity, row medians, decision thresholds, and outcome map.
+
+**Simulation observation.** At both `N=96` and `N=128`, C0 is exactly null and C1-C3 remain below their preregistered floors. The categorical signatures agree. The `N=128` magnitudes are smaller, so no amplitude-convergence claim is available.
+
+**Independent verification.** The checker reproduced the primary values, signatures, floors, null ratios, zeroing reductions, and outcome without changing or rerunning the simulation. Its complete agreement converts the primary indication into the bounded negative status `unsupported_under_rs1_tested_conditions`.
+
+**Interpretation.** In this representative normalized-lattice family, `mu` behaves compatibly with a retained archive but is not demonstrated to be a sufficient causal guide. High retention and causal control are distinct: remembering a shape does not by itself prove that the memory steers later evolution.
+
+**Hypothesis status.** Candidate A is closed under the tested RS1 conditions. It may be reopened only by a new owner-directed scientific hypothesis with its own prospective preregistration and explicit authority; the current thresholds, output, or original Q2-M1 attempt 3 may not be adjusted or reinterpreted to rescue it.
+
+**Physical and Lina boundary.** `empirically_connected=false`. RS1 neither establishes nor globally rules out a physical memory field, gravity, quantum memory, consciousness, cosmology, direct real-world return, or a Lina capability. No device, deployment, or Home Assistant action occurred.
+
+#### Reopenable bounded-status ledger
+
+| Variant | Current status | What is actually supported | Reopen condition |
+|---|---|---|---|
+| Candidate A: `mu`-only causal guidance in the registered representative family | `unsupported_under_rs1_tested_conditions` | one primary plus one independent retained-output check agree at `N=96/128` | new owner intuition and a separately preregistered mechanism or discriminating test; no automatic continuation |
+| Q2-M1 primary attempt 3 | `inconclusive_or_confounded` | retained historical primary failed its original resolution-control signature | immutable; RS1 does not relabel it |
+| amplitude or continuum convergence | `not_established` | categorical sub-threshold agreement only | a separately authorised convergence design with more than this two-point sensitivity check |
+| direct Question 2 return | `not_tested_by_rs1` | RS1 is not a direct return test | new explicit authority and its own protocol |
+| physical or Lina interpretation | `not_yet_compared` | no empirical connection | external evidence and separately authorised work |
+
+The canonical RS1 report sequence is complete. Both the one-shot primary and one-shot checker authorities are consumed, no retry is authorised, and the owner-intuition gate is now open. Stop before selecting any replacement mechanism or next experiment.

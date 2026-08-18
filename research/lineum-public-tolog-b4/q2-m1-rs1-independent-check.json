@@ -1,0 +1,102 @@
+{
+  "agreement": {
+    "checker_outcome": "rs1_primary_mu_only_unsupported_indication",
+    "floors": true,
+    "lane_values": true,
+    "mu_zeroing_reduction": true,
+    "outcome_map": true,
+    "passed": true,
+    "payload_identity": true,
+    "primary_outcome": "rs1_primary_mu_only_unsupported_indication",
+    "ratios": true,
+    "row_medians": true,
+    "signatures": true,
+    "source_identity": true
+  },
+  "canonical_payload_sha256_without_self": "02130b674bf55a1383f7f1c11b1d3d4546242ac815950be9b725683973018598",
+  "checker_id": "Q2-M1-RS1-IC1",
+  "evidence_boundary": {
+    "continuum_convergence_established": false,
+    "direct_q2_established": false,
+    "empirically_connected": false,
+    "lina_capability_established": false,
+    "normalized_lattice_sensitivity_only": true,
+    "physical_memory_field_established": false,
+    "retained_q2_m1_primary_reclassified": false
+  },
+  "input_identity": {
+    "canonical_payload_sha256_without_self": "0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f",
+    "checkout_bytes": 13155,
+    "checkout_sha256": "f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a",
+    "filtered_git_blob": "d7f8b714dafbc1b5b98920a09f1b639ff16882c4",
+    "head_git_blob": "d7f8b714dafbc1b5b98920a09f1b639ff16882c4",
+    "path": "research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json",
+    "unchanged_after_read": true
+  },
+  "protocol_id": "Q2-M1-RS1",
+  "recomputed": {
+    "floors": {
+      "128": {
+        "C0_max": 1e-12,
+        "C1": 0.0001,
+        "C2": 5e-05,
+        "C3": 5e-05
+      },
+      "96": {
+        "C0_max": 1e-12,
+        "C1": 0.0001,
+        "C2": 5e-05,
+        "C3": 5e-05
+      }
+    },
+    "mu_zeroing_reduction": {
+      "128": 0.00020438728720473254,
+      "96": 0.00036476891826098257
+    },
+    "outcome": "rs1_primary_mu_only_unsupported_indication",
+    "ratios": {
+      "C1": null,
+      "C2": null,
+      "C3": null
+    },
+    "ratios_pass": true,
+    "resolution_stability_pass": true,
+    "signatures": {
+      "128": {
+        "C0": true,
+        "C1": false,
+        "C2": false,
+        "C3": false
+      },
+      "96": {
+        "C0": true,
+        "C1": false,
+        "C2": false,
+        "C3": false
+      }
+    },
+    "signatures_match": true,
+    "values": {
+      "128": {
+        "C0": 0.0,
+        "C1": 8.849683912246693e-06,
+        "C2": 8.84787514935925e-06,
+        "C3": 4.798573422491428e-10
+      },
+      "96": {
+        "C0": 0.0,
+        "C1": 2.307400657646299e-05,
+        "C2": 2.3065589896044145e-05,
+        "C3": 2.5522854035019165e-09
+      }
+    }
+  },
+  "scientific_status": "unsupported_under_rs1_tested_conditions",
+  "scope": {
+    "additional_resolution": false,
+    "primary_runner_imported": false,
+    "retained_output_only": true,
+    "threshold_or_outcome_change": false,
+    "trajectory_execution": false
+  }
+}
