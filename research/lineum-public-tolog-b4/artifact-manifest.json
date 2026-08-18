@@ -111,9 +111,10 @@
       "role": "frozen Q2-PV1-B residual-comparison repair regressions"
     },
     "research/runners/lineum_b4_q2_mu_causal_reuse.py": {
-      "git_blob_sha": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
-      "role": "Q2-M1 Stage A runner after preregistered cross-platform source-identity repair; scientific surfaces unchanged; first official CLI stopped before scientific execution",
-      "sha256": "03306a002412f5c18d07231ddaf2b539bb2111419e0d6699507a4af94bae7ecb"
+      "bytes": 60406,
+      "git_blob_sha": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+      "role": "Q2-M1 Stage A runner after the preregistered direct-file repository-root import bootstrap; all pre-existing function and class bodies unchanged; no new scientific execution",
+      "sha256": "ef34e48cba367b1f23b51707ea91453b8573b07264b6719463cd7daed5a3785a"
     },
     "tests/research/test_lineum_b4_q2_mu_causal_reuse.py": {
       "git_blob_sha": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
@@ -149,6 +150,18 @@
       "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "role": "exact zero-byte stdout retained from the consumed first official Q2-M1 CLI; not a scientific result",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/research/test_lineum_b4_q2_mu_causal_reuse_import_path_repair.py": {
+      "bytes": 2508,
+      "git_blob_sha": "9139ab4f7bbbc4cf5dfc73ebb3995e3a3a842524",
+      "role": "dedicated non-scientific path-isolated regression for the Q2-M1 direct-file active-Core import repair",
+      "sha256": "8e5eb8ac75d59b4abbf0137c6cae0324cf857d3ee6bb6c611e7a2f6893f559dc"
+    },
+    "research/lineum-public-tolog-b4/q2-m1-import-path-repair.json": {
+      "bytes": 5164,
+      "git_blob_sha": "c6ea6d29c30d9e1004f81949368b13e5bd944909",
+      "role": "successful Q2-M1 direct-file active-Core import-path technical repair receipt; no permanent gate or primary invoked",
+      "sha256": "a62e06b2fc3add01cb5f683aa2850db32066638229911f89a5bc549604b2cec4"
     },
     "research/lineum-public-tolog-b4/q2-m1-harness-regression-provisional.json": {
       "git_blob_sha": "604ea25c4a7860b8acd951d7fb44edf5bafcd91b",
@@ -296,7 +309,7 @@
     "workflow_artifact_uploaded": false
   },
   "q2_mu_causal_reuse_stage_a": {
-    "scientific_status": "technical_non_result_pre_scientific_import_path_failure_stage_a_unexecuted",
+    "scientific_status": "import_path_repair_pass_stage_a_unexecuted_fresh_gate_not_authorised",
     "stage_a_executed": false,
     "execution_authorised": true,
     "execution_authorised_on": "2026-08-18",
@@ -323,9 +336,21 @@
     "import_path_repair_authorised": true,
     "import_path_repair_authorised_on": "2026-08-18",
     "import_path_repair_clickup_task": "869eka1u3",
-    "import_path_repair_status": "preregistered_not_implemented",
+    "import_path_repair_status": "implemented_targeted_regressions_passed",
     "import_path_repair_contract": "prepend the runner repository root to sys.path only when it is not already first; change no pre-existing function body",
     "import_path_repair_test_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_import_path_repair.py",
+    "import_path_repair_authorisation_consumed": true,
+    "import_path_repair_implementation_commit": "1ccbebd9523afcb5b6b0129df5d36edab22fe13a",
+    "import_path_repair_runner_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+    "import_path_repair_test_git_blob": "9139ab4f7bbbc4cf5dfc73ebb3995e3a3a842524",
+    "import_path_repair_receipt_git_blob": "c6ea6d29c30d9e1004f81949368b13e5bd944909",
+    "import_path_repair_test_first_expected_failure_reproduced": true,
+    "import_path_repair_targeted_tests_passed": 1,
+    "import_path_repair_identity_tests_passed": 4,
+    "import_path_repair_preexisting_ast_nodes": 78,
+    "import_path_repair_all_preexisting_function_and_class_bodies_unchanged": true,
+    "import_path_repair_permanent_gate_invocations": 0,
+    "import_path_repair_primary_invocations": 0,
     "import_path_repair_permanent_gate_authorised": false,
     "import_path_repair_primary_authorised": false,
     "report_chronology_order_corrected": true,
@@ -340,7 +365,7 @@
     "scientific_trajectory_started": false,
     "pre_execution_gate_tests_required": 18,
     "retention_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
-    "runner_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+    "runner_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
     "test_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
     "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
     "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
@@ -373,8 +398,8 @@
     "latest_primary_execution_receipt_git_blob": "69007ebd4c7ddabba0c99f481e3d5522fb71c135",
     "latest_primary_stderr_bytes": 908,
     "latest_primary_stderr_sha256": "cd3b6a82bf2ebffcaeb407785f0000cf1ba725f201a6e6e42ad4485c960427d9",
-    "continuity_report_version": "0.25.16",
-    "continuity_report_git_blob": "9d143e324fc4782d8a545bd4dd58bcb5d0a5f639"
+    "continuity_report_version": "0.25.17",
+    "continuity_report_git_blob": "4bffce8262b90fdcb4350a66883500cc6c15563b"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
