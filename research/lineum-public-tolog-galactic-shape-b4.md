@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; version `0.25.12` records that the narrow repair passed all four dedicated regressions and direct dual-identity verification while the permanent gate and primary remained unexecuted; version `0.25.13` corrects only the Markdown ordering so preregistration precedes its repair result; version `0.25.14` records fresh owner authorization for exactly one repaired permanent gate attempt and, only on `18 / 18`, exactly one Stage A primary; version `0.25.15` records that the gate passed `18 / 18` but the single official CLI then stopped before scientific execution because direct-file invocation could not import `lineum_core`; the attempt is a retained technical non-result and no causal-memory result exists; version `0.25.16` records fresh owner authorization and freezes only the direct-file repository-root import bootstrap plus one non-scientific regression, with no new gate or primary authorised; version `0.25.17` records that the isolated import regression reproduced the exact failure before the six-line bootstrap, then passed 1/1 with the active Core while four identity regressions, compilation, safe probe, and the 78-node AST audit passed without any scientific execution; version `0.25.18` records fresh owner authorization for exactly one repaired permanent gate attempt 3 and, only on 18/18, exactly one official primary CLI attempt 2, with no retry or Stage B; version `0.25.19` records that gate attempt 3 passed 18/18 but primary CLI attempt 2 stopped after 724.471 seconds in the first transformed representative grid control because non-spatial telemetry reached a two-axis rotation; stdout remained zero bytes, no frozen classification exists, and the attempt is a technical non-result; version `0.25.20` records fresh owner authorization for only the narrow metadata-preserving grid-rotation repair and one targeted regression, with no new permanent gate, primary, checker, tuning, or Stage B authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.20 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; version `0.25.12` records that the narrow repair passed all four dedicated regressions and direct dual-identity verification while the permanent gate and primary remained unexecuted; version `0.25.13` corrects only the Markdown ordering so preregistration precedes its repair result; version `0.25.14` records fresh owner authorization for exactly one repaired permanent gate attempt and, only on `18 / 18`, exactly one Stage A primary; version `0.25.15` records that the gate passed `18 / 18` but the single official CLI then stopped before scientific execution because direct-file invocation could not import `lineum_core`; the attempt is a retained technical non-result and no causal-memory result exists; version `0.25.16` records fresh owner authorization and freezes only the direct-file repository-root import bootstrap plus one non-scientific regression, with no new gate or primary authorised; version `0.25.17` records that the isolated import regression reproduced the exact failure before the six-line bootstrap, then passed 1/1 with the active Core while four identity regressions, compilation, safe probe, and the 78-node AST audit passed without any scientific execution; version `0.25.18` records fresh owner authorization for exactly one repaired permanent gate attempt 3 and, only on 18/18, exactly one official primary CLI attempt 2, with no retry or Stage B; version `0.25.19` records that gate attempt 3 passed 18/18 but primary CLI attempt 2 stopped after 724.471 seconds in the first transformed representative grid control because non-spatial telemetry reached a two-axis rotation; stdout remained zero bytes, no frozen classification exists, and the attempt is a technical non-result; version `0.25.20` records fresh owner authorization for only the narrow metadata-preserving grid-rotation repair and one targeted regression, with no new permanent gate, primary, checker, tuning, or Stage B authorised; version `0.25.21` records that the targeted regression reproduced the exact zero-dimensional telemetry rotation failure before the repair and passed 1/1 afterward, while no permanent gate, primary, checker, or scientific execution ran; Questions 1 and 3 remain unchanged
+**Version:** 0.25.21 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `070df47d3035e679b354c0745229be13afe73d61` \
+**Checkpoint parent:** `2c1665a6d93f64803d57816d90b7baf871bcfc51` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -3223,3 +3223,76 @@ explicitly not authorised:
 This is a technical harness repair only. It does not alter the frozen scientific protocol, causal interventions, cases, seeds, observers, metrics, thresholds, classifications, Core implementation, or prior evidence. Gate attempts remain `3`, official primary invocations remain `2`, the tracked stdout remains zero bytes, and the causal-memory hypothesis remains untested.
 
 The exact next permitted action is to publish this authorization and synchronize the artifact manifest, then add the one telemetry-aware regression, reproduce its pre-repair failure once, apply only the frozen cloning/rotation repair, and rerun only that regression. No result of this repair authorization can itself open a new permanent gate or primary execution.
+
+### Q2-M1 metadata-preserving grid-rotation repair result — version `0.25.21`
+
+This checkpoint consumes only the repair authorization in `0.25.20`. The permanent Q2-M1 gate, Stage A primary CLI, independent checker, and Stage B were not invoked.
+
+The existing quarter-turn regression was extended in place rather than adding another test count. Its fixture now contains the same structural distinction that reached the failed primary: four 3-by-3 spatial arrays and a nested `telemetry` mapping. The test first clones the complete state, then calls the quarter-turn helper, checks the four rotated arrays, checks that telemetry remains an equal mapping, and mutates the returned nested metadata to prove that it does not alias the source.
+
+The exact targeted node was invoked once against the old runner and reproduced the original failure:
+
+```text
+command = C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse.py::test_quarter_turn_rotates_spatial_channels_and_preserves_metadata -q
+result = 0 passed / 1 failed
+pytest elapsed = 0.34 s
+exit code = 1
+exception = ValueError: Axes=(0, 1) out of range for array of ndim=0.
+failure boundary = rotate_state_quarter_turn()
+scientific execution started = false
+```
+
+Only the frozen repair was then applied. `clone_state()` still makes independent copies of NumPy arrays, but it now deep-copies non-array values instead of coercing them through `np.asarray()`. `rotate_state_quarter_turn()` clones the state, visits only `psi`, `phi`, `mu`, and `kappa`, requires each visited spatial value to be two-dimensional, and applies `np.rot90()` only to those four fields. Non-spatial metadata is not rotated.
+
+The identical targeted node was then invoked once against the repaired runner:
+
+```text
+result = 1 passed / 0 failed
+pytest elapsed = 0.23 s
+exit code = 0
+Python AST parse of runner and test = passed
+Git diff check = passed
+permanent gate invocations during repair = 0
+primary CLI invocations during repair = 0
+```
+
+The exact Git-filtered candidate identities are:
+
+```text
+runner blob = 0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2
+runner bytes = 60,803
+runner SHA-256 = 2af6c973cd148839ea5d9e178e5450d52057f7e58dcb0671c030bf1865d668ce
+permanent test blob = b3c522141edf21fd723a58dc03633f41447a4bfd
+permanent test bytes = 10,960
+permanent test SHA-256 = 16a042dc74bffc71dcbd38d69aa1fd376dd8a9a9dcd7a1185dd6461caee68637
+repair receipt blob = e1f05157a56b4efe81ce453db165d238824db513
+repair receipt bytes = 5,593
+repair receipt SHA-256 = 9fdb67cfb4cee2b55dcb7ea0fb0df15e7bc07be4837d6a1ba630f10bcc3f7493
+```
+
+The readable repair receipt is `research/lineum-public-tolog-b4/q2-m1-grid-rotation-metadata-repair.json`.
+
+Evidence separation is:
+
+```text
+implementation fact:
+    state cloning now preserves nested non-spatial metadata as independently copied metadata;
+    quarter-turn rotation is limited to the four declared two-dimensional spatial channels;
+
+observation:
+    the targeted telemetry-aware regression failed with the original exception before repair;
+    the identical node passed 1/1 after repair;
+
+cautious interpretation:
+    the known unit-level grid-rotation metadata blocker is repaired;
+    this does not establish that the unexecuted permanent gate or primary will pass;
+
+hypothesis:
+    whether retained mu causally reuses source-off orientation history remains untested;
+
+not established:
+    a complete Stage A run, causal-memory classification, Q2 rescue,
+    or any physical memory, gravity, quantum, consciousness, or cosmological claim.
+```
+
+The repair authorization is consumed. Gate attempts remain `3`, official primary invocations remain `2`, and the tracked primary stdout remains zero bytes with SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`. The execution lane remains closed. A new permanent gate or primary requires fresh explicit owner authorization, and Stage B remains non-executable.

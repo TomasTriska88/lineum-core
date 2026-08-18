@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from copy import deepcopy
 from dataclasses import asdict, dataclass, replace
 from contextlib import redirect_stdout
 from pathlib import Path
@@ -26,6 +27,7 @@ LABEL_A = 0
 LABEL_B = 1
 LABEL_NAMES = {LABEL_A: "A", LABEL_B: "B"}
 CHANNEL_IDS = {"psi": 0, "phi": 1, "mu": 2}
+SPATIAL_STATE_CHANNELS = ("psi", "phi", "mu", "kappa")
 CHECKPOINTS = (0, 100, 500, 1000, 2000)
 PERMUTATIONS = 2000
 FAIL_SAFE_MARKER = "LINEUM FAIL-SAFE"
@@ -235,12 +237,23 @@ def make_state(psi: np.ndarray) -> dict[str, np.ndarray]:
     }
 
 
-def clone_state(state: Mapping[str, np.ndarray]) -> dict[str, np.ndarray]:
-    return {key: np.asarray(value).copy() for key, value in state.items()}
+def clone_state(state: Mapping[str, Any]) -> dict[str, Any]:
+    return {
+        key: value.copy() if isinstance(value, np.ndarray) else deepcopy(value)
+        for key, value in state.items()
+    }
 
 
-def rotate_state_quarter_turn(state: Mapping[str, np.ndarray]) -> dict[str, np.ndarray]:
-    return {key: np.rot90(np.asarray(value)).copy() for key, value in state.items()}
+def rotate_state_quarter_turn(state: Mapping[str, Any]) -> dict[str, Any]:
+    rotated = clone_state(state)
+    for channel in SPATIAL_STATE_CHANNELS:
+        if channel not in rotated:
+            continue
+        value = np.asarray(rotated[channel])
+        if value.ndim != 2:
+            raise ValueError(f"Spatial state channel {channel!r} must be two-dimensional")
+        rotated[channel] = np.rot90(value).copy()
+    return rotated
 
 
 def apply_intervention(

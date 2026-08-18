@@ -1,0 +1,117 @@
+{
+  "schema": "lineum-public-tolog-b4/q2-m1-grid-rotation-metadata-repair/1",
+  "artifact_id": "Q2-M1-GRID-ROTATION-METADATA-REPAIR",
+  "recorded_on": "2026-08-18",
+  "question": "Q2",
+  "status": "passed",
+  "classification": "technical_state_copy_and_rotation_repair_only",
+  "authorization": {
+    "owner_reply": "ano",
+    "scope": "prepare and publish only the narrow metadata-preserving grid-rotation repair and one targeted regression",
+    "new_permanent_gate_authorized": false,
+    "new_primary_authorized": false,
+    "new_checker_authorized": false,
+    "stage_b_authorized": false
+  },
+  "preregistered_checkpoint": {
+    "head": "2c1665a6d93f64803d57816d90b7baf871bcfc51",
+    "origin_develop": "2c1665a6d93f64803d57816d90b7baf871bcfc51",
+    "report_version": "0.25.20",
+    "report_git_blob": "821d161e2f44906ad887052c8f68ff04e89cf5c3",
+    "manifest_git_blob": "dd2fb711924c1052325b3be1b0d9af462954470a"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pytest": "9.1.1",
+    "python_executable": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe"
+  },
+  "implementation": {
+    "path": "research/runners/lineum_b4_q2_mu_causal_reuse.py",
+    "previous_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+    "repaired_git_blob": "0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2",
+    "repaired_git_blob_bytes": 60803,
+    "repaired_git_blob_sha256": "2af6c973cd148839ea5d9e178e5450d52057f7e58dcb0671c030bf1865d668ce",
+    "changed_functions": [
+      "clone_state",
+      "rotate_state_quarter_turn"
+    ],
+    "spatial_state_channels": [
+      "psi",
+      "phi",
+      "mu",
+      "kappa"
+    ],
+    "contract": "NumPy arrays are copied independently, non-array metadata is deep-copied without NumPy coercion, and only declared two-dimensional spatial channels receive the quarter turn.",
+    "core_math_changed": false,
+    "scientific_protocol_changed": false,
+    "scientific_threshold_changed": false,
+    "classification_logic_changed": false
+  },
+  "targeted_regression": {
+    "path": "tests/research/test_lineum_b4_q2_mu_causal_reuse.py",
+    "previous_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
+    "repaired_git_blob": "b3c522141edf21fd723a58dc03633f41447a4bfd",
+    "repaired_git_blob_bytes": 10960,
+    "repaired_git_blob_sha256": "16a042dc74bffc71dcbd38d69aa1fd376dd8a9a9dcd7a1185dd6461caee68637",
+    "test_node": "test_quarter_turn_rotates_spatial_channels_and_preserves_metadata",
+    "permanent_test_count_changed": false,
+    "coverage": "all four spatial arrays rotate; nested telemetry remains a mapping with equal values and no alias to the source"
+  },
+  "test_first_baseline": {
+    "command": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse.py::test_quarter_turn_rotates_spatial_channels_and_preserves_metadata -q",
+    "runner_git_blob": "e1a95bae7407f8aef3484b9f2c43497104e6a047",
+    "test_git_blob": "b3c522141edf21fd723a58dc03633f41447a4bfd",
+    "tests_passed": 0,
+    "tests_failed": 1,
+    "pytest_elapsed_seconds": 0.34,
+    "exit_code": 1,
+    "exception_type": "ValueError",
+    "exception_message": "Axes=(0, 1) out of range for array of ndim=0.",
+    "failure_function": "rotate_state_quarter_turn",
+    "expected_failure_reproduced": true,
+    "scientific_execution_started": false
+  },
+  "post_repair_regression": {
+    "command": "C:\\Projects\\lineum-core\\.scratch\\q2-m1-stage-a-venv-20260818\\Scripts\\python.exe -m pytest tests/research/test_lineum_b4_q2_mu_causal_reuse.py::test_quarter_turn_rotates_spatial_channels_and_preserves_metadata -q",
+    "runner_git_blob": "0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2",
+    "test_git_blob": "b3c522141edf21fd723a58dc03633f41447a4bfd",
+    "tests_passed": 1,
+    "tests_failed": 0,
+    "pytest_elapsed_seconds": 0.23,
+    "exit_code": 0
+  },
+  "supporting_validation": {
+    "python_ast_parse_passed": true,
+    "git_diff_check_passed": true,
+    "unexpected_changed_paths": 0
+  },
+  "execution_boundary": {
+    "targeted_regression_invocations_during_repair": 2,
+    "permanent_gate_invocations_during_repair": 0,
+    "run_primary_invocations_during_repair": 0,
+    "runner_main_invocations_during_repair": 0,
+    "primary_cli_invocations_during_repair": 0,
+    "permanent_gate_attempts_total": 3,
+    "official_primary_cli_invocations_total": 2,
+    "retained_primary_stdout_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
+    "retained_primary_stdout_bytes": 0,
+    "retained_primary_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scientific_trajectory_started_during_repair": false,
+    "stage_a_scientific_result_present": false
+  },
+  "bounded_interpretation": {
+    "implementation_fact": "The runner now preserves nested non-spatial metadata while quarter-turning only the four declared two-dimensional spatial state channels.",
+    "observation": "The exact telemetry-aware regression reproduced the original zero-dimensional rotation failure before the repair and passed 1/1 after the repair.",
+    "interpretation": "The known grid-rotation metadata blocker is repaired at the targeted unit boundary; this does not establish that the full gate or primary will pass.",
+    "hypothesis_status": "untested",
+    "physical_claim_established": false
+  },
+  "next_action_boundary": {
+    "repair_complete": true,
+    "execution_lane_open": false,
+    "new_gate_authorized": false,
+    "new_primary_authorized": false,
+    "stage_b_executable": false
+  }
+}

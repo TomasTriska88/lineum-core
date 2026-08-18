@@ -107,16 +107,30 @@ def test_interventions_use_source_off_state_and_equal_common_psi():
     np.testing.assert_array_equal(c3["mu"], source["mu"])
 
 
-def test_quarter_turn_rotates_every_state_channel_without_relabeling_inside_state():
+def test_quarter_turn_rotates_spatial_channels_and_preserves_metadata():
     state = {
         "psi": np.arange(9).reshape(3, 3).astype(complex),
         "phi": np.arange(9).reshape(3, 3).astype(float) + 10,
         "mu": np.arange(9).reshape(3, 3).astype(float) + 20,
         "kappa": np.ones((3, 3)),
+        "telemetry": {
+            "N_t": 1.25,
+            "is_nan": False,
+            "guards": {"cap_triggers": 0, "fold_triggers": 0},
+        },
     }
-    rotated = m1.rotate_state_quarter_turn(state)
-    for channel in state:
+    cloned = m1.clone_state(state)
+    rotated = m1.rotate_state_quarter_turn(cloned)
+
+    for channel in ("psi", "phi", "mu", "kappa"):
         np.testing.assert_array_equal(rotated[channel], np.rot90(state[channel]))
+
+    assert isinstance(rotated["telemetry"], dict)
+    assert rotated["telemetry"] == state["telemetry"]
+    assert rotated["telemetry"] is not state["telemetry"]
+    assert rotated["telemetry"]["guards"] is not state["telemetry"]["guards"]
+    rotated["telemetry"]["guards"]["cap_triggers"] = 1
+    assert state["telemetry"]["guards"]["cap_triggers"] == 0
 
 
 def test_causal_floors_and_zeroing_reduction_are_frozen():
