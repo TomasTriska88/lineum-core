@@ -111,9 +111,9 @@
       "role": "frozen Q2-PV1-B residual-comparison repair regressions"
     },
     "research/runners/lineum_b4_q2_mu_causal_reuse.py": {
-      "git_blob_sha": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
-      "role": "frozen Q2-M1 Stage A causal-reuse runner; official Stage A remains unexecuted",
-      "sha256": "d8fe1ae5c0e16820a5d2a7ac2ae5259f5d8cd2480b8f25cf7d4d67f61f6a45b3"
+      "git_blob_sha": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+      "role": "Q2-M1 Stage A runner after preregistered cross-platform source-identity repair; scientific surfaces unchanged and official Stage A remains unexecuted",
+      "sha256": "03306a002412f5c18d07231ddaf2b539bb2111419e0d6699507a4af94bae7ecb"
     },
     "tests/research/test_lineum_b4_q2_mu_causal_reuse.py": {
       "git_blob_sha": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
@@ -125,6 +125,18 @@
       "git_blob_sha": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
       "role": "first authorised Q2-M1 supported-runtime gate technical non-result; 17/18 passed, primary not invoked",
       "sha256": "3730abbdfda957f411f66353021500f5b749427289bf9061116ad44aa3be6bcf"
+    },
+    "tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py": {
+      "bytes": 4521,
+      "git_blob_sha": "3372405679f7b700cd08e405db1368b6e3726cb9",
+      "role": "dedicated non-scientific regressions for the preregistered Q2-M1 cross-platform source-identity repair",
+      "sha256": "897dded83af27e72d8ba35eb69c30496b5f352106ce2ac7ec1fdc060a0189407"
+    },
+    "research/lineum-public-tolog-b4/q2-m1-identity-repair.json": {
+      "bytes": 4479,
+      "git_blob_sha": "ec1573a9ffba1b1e083457259d1a9f5453e76a6d",
+      "role": "successful Q2-M1 cross-platform source-identity technical repair receipt; no permanent gate or primary invoked",
+      "sha256": "a05bc0d157bce19919c43dfca8f8be6c5057e9b3941f000e6a05c80ded8f9aac"
     },
     "research/lineum-public-tolog-b4/q2-m1-harness-regression-provisional.json": {
       "git_blob_sha": "604ea25c4a7860b8acd951d7fb44edf5bafcd91b",
@@ -272,7 +284,7 @@
     "workflow_artifact_uploaded": false
   },
   "q2_mu_causal_reuse_stage_a": {
-    "scientific_status": "gate_attempt_1_technical_non_result_stage_a_unexecuted",
+    "scientific_status": "identity_repair_pass_stage_a_unexecuted_fresh_gate_not_authorised",
     "stage_a_executed": false,
     "execution_authorised": true,
     "execution_authorised_on": "2026-08-18",
@@ -281,15 +293,20 @@
     "new_gate_attempt_authorised": false,
     "identity_repair_authorised": true,
     "identity_repair_authorised_on": "2026-08-18",
-    "identity_repair_status": "preregistered_unimplemented",
+    "identity_repair_status": "implemented_targeted_regressions_passed",
     "identity_repair_contract": "require both Git-filtered working-file and HEAD blob identities to match each frozen source",
     "identity_repair_regression_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py",
+    "identity_repair_implementation_commit": "4f810580238a078d2362d3579937cfc95fed291a",
+    "identity_repair_runner_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
+    "identity_repair_test_git_blob": "3372405679f7b700cd08e405db1368b6e3726cb9",
+    "identity_repair_targeted_tests_passed": 4,
+    "identity_repair_receipt_git_blob": "ec1573a9ffba1b1e083457259d1a9f5453e76a6d",
     "official_primary_invocation_limit": 1,
     "official_primary_invocations": 0,
     "primary_result_present": false,
     "pre_execution_gate_tests_required": 18,
     "retention_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
-    "runner_git_blob": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
+    "runner_git_blob": "f10135eb8d81b1ac5f1a8f498b375ec416a40610",
     "test_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
     "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
     "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e",
@@ -309,8 +326,8 @@
     "latest_gate_tests_failed": 1,
     "latest_gate_failure_classification": "windows_checkout_line_ending_conversion",
     "latest_gate_receipt_git_blob": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
-    "continuity_report_version": "0.25.11",
-    "continuity_report_git_blob": "b2bf8e93d798089600aa099ab15e2e2c43ebcc39"
+    "continuity_report_version": "0.25.12",
+    "continuity_report_git_blob": "bb9de07a869974538ac2abb7cfe8abb8e3966e0a"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
