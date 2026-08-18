@@ -1449,7 +1449,7 @@ def classify_primary(
     )
     if not validity_pass:
         outcome = "inconclusive_or_confounded"
-    elif mu_primary_causal_pass and not all_nuisance_pass:
+    elif not all_nuisance_pass:
         outcome = "inconclusive_or_confounded"
     elif mu_candidate_pass:
         outcome = "mu_causal_reuse_candidate_retained"

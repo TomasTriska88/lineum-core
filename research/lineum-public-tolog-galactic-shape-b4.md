@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; version `0.25.24` records owner authorization for only a test-first decision-surface compliance repair so the executable classifier cannot override that frozen rule; no scientific rerun, independent checker, tuning, new primary, or Stage B is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.24 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the owner-authorised test-first decision-surface compliance repair reproduced the stronger-label defect `1 / 1` before the one-condition change and passed `1 / 1` afterward, so future executable classification now conforms to the frozen nuisance-failure rule; no scientific rerun, independent checker, tuning, new primary, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.25 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3468,3 +3468,72 @@ required post-repair result = 1 passed / 0 failed
 The repair may not change `lineum_core/`, a scientific equation, parameter, seed, case, observer, metric, threshold, retained primary JSON, canonical payload hash, raw runner outcome recorded by attempt 3, permanent 18-test file, or any earlier evidence. The previous executable label remains historical provenance; the authoritative `0.25.23` adjudication remains `inconclusive_or_confounded`.
 
 No permanent gate, primary CLI, independent checker, resolution sweep, mechanism selection, direct Q2 rescue, or Stage B may run. After the exact failing and passing targeted receipts, the repair result must be recorded directly in this same report, published, read back, and synchronized in the artifact manifest. No interim report is authorized or needed.
+
+### Q2-M1 decision-surface compliance repair result — version `0.25.25`
+
+This checkpoint consumes only the narrow technical authorization in `0.25.24`. It changes one Boolean branch in the research runner and adds one dedicated regression. It does not change the permanent 18-test file, the retained primary, any scientific calculation, or Questions 1 and 3.
+
+The repair began only after the authorization report and synchronized manifest were pushed and read back:
+
+```text
+HEAD = origin/develop = f8b5a6b2d0ca3a50f3b2713e4a4c017e578f1bf7
+authorization report version = 0.25.24
+authorization report Git blob = 4b793f28abf9e0723abb20e92db23ce835b21a16
+authorization manifest Git blob = 5a94c81494f6bef09825e3853b378d8e8fa60ac6
+pre-repair runner Git blob = 0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2
+unchanged permanent test Git blob = b3c522141edf21fd723a58dc03633f41447a4bfd
+unchanged retained primary Git blob = 1fc064ee65fed965e1b7f1c92e005c50bf22c140
+```
+
+The new dedicated regression used the retained primary's causal medians and set only `resolution_control_pass = false`. Against the old runner, its single invocation failed exactly at the final outcome assertion:
+
+```text
+started = 2026-08-18T14:42:51.5109633+02:00
+ended = 2026-08-18T14:42:52.3117738+02:00
+result = 0 passed / 1 failed in 0.26 s
+wrapper elapsed = 0.793 s
+exit code = 1
+expected outcome = inconclusive_or_confounded
+actual outcome = mu_passive_archive_without_demonstrated_causal_reuse
+```
+
+The only source change was:
+
+```diff
+-    elif mu_primary_causal_pass and not all_nuisance_pass:
++    elif not all_nuisance_pass:
+```
+
+The same dedicated test file was then invoked once and passed:
+
+```text
+started = 2026-08-18T14:43:05.1634667+02:00
+ended = 2026-08-18T14:43:05.8889216+02:00
+result = 1 passed / 0 failed in 0.19 s
+wrapper elapsed = 0.718 s
+exit code = 0
+```
+
+Exact repaired identities are:
+
+```text
+repaired runner Git blob = 8f818480b6b7160a49365b730bf884a4b94d9deb
+repaired runner checkout bytes = 62444
+repaired runner checkout SHA-256 = 387ecb1d6bd3fd94a6b127b30412765805bc39b5721308dc394c0241c811622c
+dedicated regression Git blob = 490cd33f27cf1cdb83066652022d3509e5aadf66
+dedicated regression bytes = 1610
+dedicated regression SHA-256 = 7c57741db49a0673bd2d41a482f971840e16da12fa11307aabc59884541a75f9
+repair receipt Git blob = ae7600b20aa36e92d544eee9238df843fc1fc3b6
+repair receipt bytes = 5032
+repair receipt SHA-256 = eda40d5de8d7b2b6da2c0fa08662ea1c262150c6f45379822559f104f01ab707
+```
+
+**Implementation fact.** Every failed `all_nuisance_pass` branch now reaches `inconclusive_or_confounded` before any outcome-specific label.
+
+**Observation.** The exact pre-repair defect was reproduced `1 / 1`, and the same test passed `1 / 1` after the one-condition change.
+
+**Interpretation.** The executable classifier now matches the outcome map frozen before runner implementation. This repairs future labelling only; it does not retroactively alter the exact attempt-3 output or create new scientific evidence.
+
+**Hypothesis status.** Unchanged: Q2-M1 remains `inconclusive_under_frozen_resolution_control`, with no demonstrated `mu`-only causal guide and no verified Q2-M1 negative.
+
+The repair authorization is consumed. Permanent-gate invocations during the repair remain `0`; primary, independent-checker, and Stage B invocations remain `0`. The technical repair lane and scientific execution lane are closed.
