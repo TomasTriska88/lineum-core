@@ -120,6 +120,12 @@
       "role": "permanent Q2-M1 Stage A regression tests; prior supported-runtime harness gate passed 18/18 without scientific execution",
       "sha256": "8ff5df8439c35e6f2740a56d4c126848809c3b6bef56b093689128f2b978cd42"
     },
+    "research/lineum-public-tolog-b4/q2-m1-stage-a-gate-attempt-1.json": {
+      "bytes": 3075,
+      "git_blob_sha": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
+      "role": "first authorised Q2-M1 supported-runtime gate technical non-result; 17/18 passed, primary not invoked",
+      "sha256": "3730abbdfda957f411f66353021500f5b749427289bf9061116ad44aa3be6bcf"
+    },
     "research/lineum-public-tolog-b4/q2-m1-harness-regression-provisional.json": {
       "git_blob_sha": "604ea25c4a7860b8acd951d7fb44edf5bafcd91b",
       "role": "historical non-authoritative Q2-M1 supported-runtime harness regression receipt incorporated by the active report"
@@ -266,11 +272,16 @@
     "workflow_artifact_uploaded": false
   },
   "q2_mu_causal_reuse_stage_a": {
-    "scientific_status": "harness_ready_stage_a_unexecuted",
+    "scientific_status": "gate_attempt_1_technical_non_result_stage_a_unexecuted",
     "stage_a_executed": false,
     "execution_authorised": true,
     "execution_authorised_on": "2026-08-18",
+    "execution_authorisation_scope_status": "consumed_by_gate_attempt_1",
+    "execution_lane_open": false,
+    "new_gate_attempt_authorised": false,
     "official_primary_invocation_limit": 1,
+    "official_primary_invocations": 0,
+    "primary_result_present": false,
     "pre_execution_gate_tests_required": 18,
     "retention_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
     "runner_git_blob": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
@@ -287,8 +298,14 @@
     "previous_regression_workflow_job": 93832949726,
     "previous_regression_tests_passed": 18,
     "previous_regression_run_primary_invoked": false,
-    "continuity_report_version": "0.25.9",
-    "continuity_report_git_blob": "52441b2648b30eecb27dbafb027bbeabfc83f963"
+    "gate_attempts": 1,
+    "latest_gate_status": "technical_non_result",
+    "latest_gate_tests_passed": 17,
+    "latest_gate_tests_failed": 1,
+    "latest_gate_failure_classification": "windows_checkout_line_ending_conversion",
+    "latest_gate_receipt_git_blob": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
+    "continuity_report_version": "0.25.10",
+    "continuity_report_git_blob": "fabe456b93a5a6c3535d4f2573b0cb3f9d1468ae"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
