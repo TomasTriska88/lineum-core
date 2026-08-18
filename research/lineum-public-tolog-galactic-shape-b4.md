@@ -1,10 +1,10 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; Questions 1 and 3 remain unchanged
-**Version:** 0.25.10 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` are independently checked within their frozen domains; the fresh repaired PV1-B checker passed the exact branch-reachable `40 / 40` regression gate and then independently reproduced all 28 frozen cases with zero ordinary numeric mismatches, zero categorical mismatches, zero ledger-residual failures, the same `26 / 28` available controls, and zero Q2 rescues or classification changes; the bounded conclusion that ledger-neutral radial balancing does not rescue Q2 is `robust_within_tested_domain`; Question 2 remains negative within the previously tested domain; the owner-intuition gate has been answered, the coordinate-safe existing-`mu` audit is complete, and `Q2-M1` now preregisters a fail-closed causal-reuse gate before any direct Q2 rescue attempt; versions `0.25.1`-`0.25.3` complete the observer, historical-ordering, control, representative-case, rotation, and deterministic-RNG definitions before runner implementation; the first Q2-M1 test-before-commit attempt failed at the frozen candidate-byte identity gate before pytest or scientific execution; a subsequent byte-freeze transport shell also terminated before any candidate payload, pytest, or scientific execution, so no causal-memory result exists yet; version `0.25.6` closes the remaining pre-run C3-specific cap/grid, scale-ratio, cap-validity, and direct fail-safe-detection ambiguities without changing any scientific threshold; version `0.25.8` records the post-`0.25.7` execution-environment and connector-persistence incident while keeping Stage A unexecuted; version `0.25.9` records explicit owner authorization and locks one supported-runtime Stage A attempt after manifest resynchronization, with no scientific outcome yet; version `0.25.10` records that the authorised permanent gate stopped at `17 / 18` because Windows checkout line endings changed byte-derived source identities, so the primary did not run and no scientific result exists; version `0.25.11` records owner authorization and preregisters only a line-ending-invariant source-identity repair, with no new gate or primary authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.11 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `2a0a1cdee9a1b179c0ac569e83bcfa7d1bfbbb26` \
+**Checkpoint parent:** `e1bb1c6d6dbd8207834dc7143474a09ab4c54a15` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -2478,5 +2478,107 @@ not established:
 ```
 
 The `0.25.9` one-shot lane is now closed after its first gate attempt. A narrow cross-platform repair could make the source-identity check use immutable Git blob bytes or an explicitly frozen line-ending policy without changing any scientific equation, schedule, observer, threshold, or classification rule. That repair, its regression test, and any new supported-runtime gate attempt must first be separately preregistered, committed, pushed, and read back. They are not authorised by this technical receipt.
+
+Stage A remains unexecuted. Stage B remains non-executable.
+
+### Q2-M1 cross-platform source-identity repair preregistration — version `0.25.11`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. It authorises and freezes only the technical repair required by the `0.25.10` gate failure. It does not authorise a second permanent gate attempt, `run_primary()`, the runner CLI, Stage B, or any scientific interpretation.
+
+After the plain-language handoff explicitly asked whether to prepare and publish only the narrow identity-check repair, **“bez nového gate pokusu a bez primary”**, project owner Tomáš Tříska replied **“ok.”** That response is recorded as approval for this repair scope only. It is not broadened into experiment authorization.
+
+The verified starting point is:
+
+```text
+repository / branch = TomasTriska88/lineum-core / develop
+HEAD and origin/develop = e1bb1c6d6dbd8207834dc7143474a09ab4c54a15
+worktree status = clean
+version 0.25.10 report Git blob = fabe456b93a5a6c3535d4f2573b0cb3f9d1468ae
+synchronised manifest Git blob = 63ea0cf332091737a459a3106dc15aa522245ed3
+frozen runner Git blob = e2de0adf272a5e2c48eff60019ef9343eefa6bf6
+frozen permanent test Git blob = e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d
+gate-attempt-1 receipt Git blob = dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8
+Stage A primary invocations = 0
+planned primary result path = absent
+```
+
+Read-only diagnosis confirmed the narrow implementation route before any source edit:
+
+```text
+path                         raw checkout hash                        Git-filtered hash                         HEAD blob
+lineum_core/math.py          cc466c776b346f821054bf71b2c1d0c88882b9a2  bb877021810691223a0eb960a45493a2e351112a  bb877021810691223a0eb960a45493a2e351112a
+requirements.txt             70ee51f852e376dab3c98496926fb3d11600b62a  942f2b94b3d3f8c767451ae2d847a7b17c86d81e  942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt         57eb99187c82305125bcda2a261ae7b0c64d50b7  7a0907e3e6c2d15400d19b536227a509910ae7e9  7a0907e3e6c2d15400d19b536227a509910ae7e9
+```
+
+The repair contract is frozen as follows:
+
+1. Change only `research/runners/lineum_b4_q2_mu_causal_reuse.py` and add the dedicated non-scientific regression file `tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py`.
+2. Leave the existing permanent scientific test file `tests/research/test_lineum_b4_q2_mu_causal_reuse.py` byte-for-byte unchanged.
+3. For each frozen path, obtain the committed identity with `git rev-parse HEAD:<path>`.
+4. Independently obtain the current working-file identity with `git hash-object --path=<path> -- <path>`. The `--path` form applies the same Git clean filters and attributes that would be used when storing that path, so an automatic LF-to-CRLF checkout round trip maps back to the immutable LF blob.
+5. Require both identities to equal the already-frozen expected Git blob. A changed committed source fails even if the working file is manually restored; a semantic working-file change fails even if `HEAD` remains frozen.
+6. Keep the existing `expected` and `actual` receipt surfaces, where `actual` becomes the Git-filtered working-file identity; add the independently resolved `head` identities and an explicit method label.
+7. Fail closed with a technical exception if Git is unavailable, a command fails, a path is absent, or an identity is not one lowercase 40-character hexadecimal SHA-1.
+8. Do not rewrite checkout bytes, change `core.autocrlf`, introduce a broad `.gitattributes` policy, update an equation, change any Stage A schedule, observer, threshold, seed, control, classification rule, or create a primary result.
+
+The new dedicated regression file must prove at least these cases in temporary Git repositories:
+
+```text
+R1: an LF blob checked out or represented with CRLF working bytes passes when
+    both the Git-filtered working identity and HEAD identity equal the frozen blob;
+R2: a semantic working-file change fails while the frozen HEAD blob remains exact;
+R3: committed HEAD drift fails even if the working file is arranged to reproduce
+    the formerly frozen content;
+R4: a missing or unusable Git repository fails closed rather than falling back
+    to raw checkout-byte acceptance.
+```
+
+Only the following non-scientific validation is authorised after implementation:
+
+```text
+python -m py_compile \
+    research/runners/lineum_b4_q2_mu_causal_reuse.py \
+    tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py
+
+python -m pytest \
+    tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py -q
+
+read-only direct receipt check:
+    verify_frozen_sources(repository_root)
+```
+
+The full permanent `18 / 18` Q2-M1 file must not be run during this repair. Neither `run_primary()` nor the runner CLI may be invoked. The planned `research/lineum-public-tolog-b4/q2-m1-stage-a.json` path must remain absent.
+
+Repair success means only that the four dedicated technical regressions pass, the current three frozen source paths report matching filtered-worktree and `HEAD` identities, the permanent scientific test blob remains unchanged, changed-file scope matches this contract, and no scientific execution occurs. It does not supply evidence for or against causal history reuse.
+
+Evidence separation for this preregistration is:
+
+```text
+implemented:
+    no repair source exists yet at this checkpoint;
+    no production equation changed;
+
+reproduced observation:
+    Git-filtered hashes and HEAD blobs already agree with all three frozen identities;
+    raw Windows checkout-byte hashes differ only because of the diagnosed line endings;
+
+owner decision:
+    the narrow technical repair and its dedicated regressions are authorised;
+    a new permanent gate and primary are not authorised;
+
+cautious interpretation:
+    the two-identity design closes both the line-ending false negative and a possible
+    branch-drift blind spot without changing the scientific protocol;
+
+hypothesis:
+    whether retained `mu` causally reuses source-off orientation history remains untested;
+
+not established:
+    repair success, a passing permanent gate, any causal-memory echo,
+    any Q2 return or attractor rescue, or any physical interpretation.
+```
+
+This `0.25.11` report must be committed, pushed, and read back, followed by a separate manifest synchronization to its exact report blob, before the repair source or dedicated tests are created.
 
 Stage A remains unexecuted. Stage B remains non-executable.
