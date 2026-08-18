@@ -663,15 +663,72 @@ def source_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _validated_git_blob_identity(
+    root: Path,
+    arguments: Sequence[str],
+    *,
+    label: str,
+) -> str:
+    try:
+        completed = subprocess.run(
+            ["git", *arguments],
+            cwd=root,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="ascii",
+        )
+    except (OSError, subprocess.CalledProcessError) as exc:
+        stderr = getattr(exc, "stderr", "") or ""
+        detail = stderr.strip() or exc.__class__.__name__
+        raise RuntimeError(f"Git source identity failed for {label}: {detail}") from exc
+    identity = completed.stdout.strip().lower()
+    if len(identity) != 40 or any(
+        character not in "0123456789abcdef" for character in identity
+    ):
+        raise RuntimeError(
+            f"Git source identity returned an invalid SHA-1 for {label}: {identity!r}"
+        )
+    return identity
+
+
+def git_filtered_worktree_blob_sha1(root: Path, relative_path: str) -> str:
+    return _validated_git_blob_identity(
+        root,
+        ["hash-object", f"--path={relative_path}", "--", relative_path],
+        label=f"filtered worktree path {relative_path}",
+    )
+
+
+def git_head_blob_sha1(root: Path, relative_path: str) -> str:
+    return _validated_git_blob_identity(
+        root,
+        ["rev-parse", f"HEAD:{relative_path}"],
+        label=f"HEAD path {relative_path}",
+    )
+
+
 def verify_frozen_sources(root: Path) -> dict[str, Any]:
     checks = {
         "lineum_core/math.py": FROZEN_ENGINE_GIT_BLOB,
         "requirements.txt": FROZEN_REQUIREMENTS_GIT_BLOB,
         "requirements-dev.txt": FROZEN_REQUIREMENTS_DEV_GIT_BLOB,
     }
-    actual = {path: git_blob_sha1_file(root / path) for path in checks}
-    passed = all(actual[path] == expected for path, expected in checks.items())
-    return {"passed": passed, "expected": checks, "actual": actual}
+    actual = {
+        path: git_filtered_worktree_blob_sha1(root, path) for path in checks
+    }
+    head = {path: git_head_blob_sha1(root, path) for path in checks}
+    passed = all(
+        actual[path] == expected and head[path] == expected
+        for path, expected in checks.items()
+    )
+    return {
+        "passed": passed,
+        "method": "git_filtered_worktree_and_head_blob",
+        "expected": checks,
+        "actual": actual,
+        "head": head,
+    }
 
 
 def core_bindings() -> tuple[type[Any], type[Any], StepFunction]:
