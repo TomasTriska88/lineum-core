@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` has one complete retained primary from the exact `N=96` versus `N=128` normalized-lattice comparison; both sizes are valid and share the same C0-pass/C1-C3-fail signature, yielding `rs1_primary_mu_only_unsupported_indication`; this is not yet an independently verified negative, amplitude convergence, continuum proof, direct Q2 result, or physical claim; the one primary authority is consumed and only the retained-output independent checker may proceed next; Questions 1 and 3 remain unchanged
-**Version:** 0.25.30 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` has one complete retained primary from the exact `N=96` versus `N=128` normalized-lattice comparison; both sizes are valid and share the same C0-pass/C1-C3-fail signature, yielding `rs1_primary_mu_only_unsupported_indication`; a separately implemented retained-output checker now passes `14 / 14` synthetic and tamper-detection tests without reading the primary or invoking trajectories, but the checker has not yet run on the retained primary; this is not yet an independently verified negative, amplitude convergence, continuum proof, direct Q2 result, or physical claim; the one primary authority is consumed and only one frozen checker invocation may proceed next; Questions 1 and 3 remain unchanged
+**Version:** 0.25.31 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3948,3 +3948,56 @@ rs1_primary_mu_only_unsupported_indication
 **Physical boundary.** `empirically_connected=false`. This result does not establish or disprove a physical memory field, real-world return mechanism, gravity, quantum memory, consciousness, cosmology, or a practical Lina capability.
 
 The one official RS1 primary authority is consumed. The raw output must not be rewritten. After this primary, receipt, report, and manifest are committed, pushed, and read back, implement and validate only the independently derived retained-output checker. Do not rerun a trajectory or use the primary runner inside the checker.
+
+### Q2-M1-RS1 independent-checker implementation checkpoint — version `0.25.31`
+
+**Plain conclusion.** The independent checker is implemented and all `14 / 14` dedicated non-scientific tests pass. The tests prove that the checker reproduces the frozen decision map on synthetic rows and rejects altered rows, outcomes, protocol fields, source identities, and non-finite JSON. They do not yet verify the real retained primary.
+
+**Everyday analogy.** A second clerk has learned the accounting rules using practice ledgers, including ledgers with deliberately changed entries. The sealed real ledger has not been handed over yet.
+
+**Practical consequence.** After this checker source, test, report, and manifest are committed, pushed, and read back, the only permitted next action is one read-only checker invocation over the already retained primary. The checker cannot import the primary runner, execute a trajectory, add a resolution, or change a threshold or outcome.
+
+The checker was prepared against the clean, pushed, and remotely read-back primary checkpoint:
+
+```text
+HEAD = origin/develop = b80227b48e3db744dd37923ec079f953cb71b2b1
+primary report version = 0.25.30
+primary report Git blob = 18eab9ec819a8f16ad4dc5225d7a6d537301085d
+primary manifest Git blob = 7d7489849afca5128d467372ad656b8160720dc1
+retained primary Git blob = d7f8b714dafbc1b5b98920a09f1b639ff16882c4
+retained primary checkout SHA-256 = f1f43968bbd84de63568365371d9e1587a4feb9107020c4e143c466a77b78f2a
+retained primary canonical payload SHA-256 = 0598c14e59eccaa151b0437385ca677f5c86604b16280e6c51f8392e65cbef3f
+```
+
+The independently authored sources are:
+
+```text
+checker = research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py
+checker Git blob = 4074e3b924ea7e7c94e6ca5d41fb8c3393de8141
+checker checkout SHA-256 = 0a4a97d1580983248d525c581cd713ea1f512a0fed52bdb1b054d1c15a21f038
+
+permanent test = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py
+permanent test Git blob = 617ad4772520e5813a669e4cdb5f7461a01fdf2e
+permanent test checkout SHA-256 = 8459bb3ddc333688c5b825f0fe75623f8c7abdd592986382794b6b39fa39f8f1
+```
+
+The single dedicated test invocation used the supported frozen virtual environment:
+
+```text
+python = 3.11.15
+pytest target = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py
+result = 14 passed in 0.36s
+retained-primary reads during tests = 0
+primary-runner imports during tests = 0
+trajectory executions during tests = 0
+```
+
+**Implementation fact.** The checker uses only Python's standard library. It independently re-derives medians from the retained causal rows, C0 null status, lane floors and signatures, conditional ratios, `mu`-zeroing reductions, and the frozen outcome map. It separately verifies the primary's checkout SHA-256, filtered and `HEAD` Git blob, canonical payload hash, frozen protocol, runtime declaration, execution commit, runner hash, and source-identity surfaces.
+
+**Test observation.** Fourteen synthetic and tamper-detection cases passed. The test module did not open `q2-m1-rs1-resolution-sensitivity.json`; therefore the official checker invocation count remains zero.
+
+**Interpretation.** The checker instrument is fit to enter a frozen pre-execution checkpoint. This says the independent arithmetic and fail-closed checks behave as designed, not that they agree with the real primary.
+
+**Hypothesis and physical status.** Unchanged from version `0.25.30`: Candidate A still has only a primary unsupported indication, `independent_checker_run=false`, and `empirically_connected=false`.
+
+After publication and remote readback of this checkpoint, invoke the committed checker exactly once with direct stdout replacement at `research/lineum-public-tolog-b4/q2-m1-rs1-independent-check.json` and external stderr capture. Retain a separate execution receipt at `research/lineum-public-tolog-b4/q2-m1-rs1-checker-execution-attempt-1.json`. Any success, failure, interruption, malformed output, or identity mismatch consumes the one checker invocation; no retry is authorised. The checker input is immutable and no scientific trajectory may run.

@@ -211,6 +211,18 @@
       "role": "first and only official Q2-M1-RS1 primary execution receipt; complete retained result with empty stderr and no retry",
       "sha256": "dae281eac18f35dd8611a0c0555b706db6db9e4364bb030b7a3cad68facb1506"
     },
+    "research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py": {
+      "bytes": 22901,
+      "git_blob_sha": "4074e3b924ea7e7c94e6ca5d41fb8c3393de8141",
+      "role": "independently implemented standard-library retained-output checker for Q2-M1-RS1; cannot import the primary runner or execute trajectories",
+      "sha256": "0a4a97d1580983248d525c581cd713ea1f512a0fed52bdb1b054d1c15a21f038"
+    },
+    "tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py": {
+      "bytes": 10907,
+      "git_blob_sha": "617ad4772520e5813a669e4cdb5f7461a01fdf2e",
+      "role": "dedicated synthetic and tamper-detection tests for the independent Q2-M1-RS1 retained-output checker",
+      "sha256": "8459bb3ddc333688c5b825f0fe75623f8c7abdd592986382794b6b39fa39f8f1"
+    },
     "research/lineum-public-tolog-b4/q2-m1-harness-regression-provisional.json": {
       "git_blob_sha": "604ea25c4a7860b8acd951d7fb44edf5bafcd91b",
       "role": "historical non-authoritative Q2-M1 supported-runtime harness regression receipt incorporated by the active report"
@@ -490,6 +502,25 @@
     "resolution_sensitivity_scientific_primary_authorisation_consumed": true,
     "resolution_sensitivity_scientific_retry_authorised": false,
     "resolution_sensitivity_independent_checker_authorised": true,
+    "resolution_sensitivity_independent_checker_path": "research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py",
+    "resolution_sensitivity_independent_checker_test_path": "tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity_checker.py",
+    "resolution_sensitivity_independent_checker_output_path": "research/lineum-public-tolog-b4/q2-m1-rs1-independent-check.json",
+    "resolution_sensitivity_independent_checker_execution_receipt_path": "research/lineum-public-tolog-b4/q2-m1-rs1-checker-execution-attempt-1.json",
+    "resolution_sensitivity_independent_checker_implementation_status": "implemented_dedicated_tests_14_of_14_passed_pending_checkpoint_publication",
+    "resolution_sensitivity_independent_checker_git_blob": "4074e3b924ea7e7c94e6ca5d41fb8c3393de8141",
+    "resolution_sensitivity_independent_checker_test_git_blob": "617ad4772520e5813a669e4cdb5f7461a01fdf2e",
+    "resolution_sensitivity_independent_checker_checkout_sha256": "0a4a97d1580983248d525c581cd713ea1f512a0fed52bdb1b054d1c15a21f038",
+    "resolution_sensitivity_independent_checker_test_checkout_sha256": "8459bb3ddc333688c5b825f0fe75623f8c7abdd592986382794b6b39fa39f8f1",
+    "resolution_sensitivity_independent_checker_test_invocations": 1,
+    "resolution_sensitivity_independent_checker_tests_passed": 14,
+    "resolution_sensitivity_independent_checker_tests_failed": 0,
+    "resolution_sensitivity_independent_checker_pytest_elapsed_seconds": 0.36,
+    "resolution_sensitivity_independent_checker_primary_reads_during_tests": 0,
+    "resolution_sensitivity_independent_checker_primary_runner_imports_during_tests": 0,
+    "resolution_sensitivity_independent_checker_trajectory_executions_during_tests": 0,
+    "resolution_sensitivity_independent_checker_invocation_limit": 1,
+    "resolution_sensitivity_independent_checker_invocations": 0,
+    "resolution_sensitivity_independent_checker_retry_authorised": false,
     "resolution_sensitivity_provisional_runner_checkout_sha256": "5c471bffb13b534a1de5fa774ba3b652a1ba357b239ecf60a3c12def5649be7a",
     "resolution_sensitivity_provisional_test_checkout_sha256": "3b4702b766b9e6ac5cf2216a34e91e1d8b588fbb8be21d0b9e74e018a935e68e",
     "resolution_sensitivity_runner_git_blob": "462f916c7570cc7a27a451497b9b4057a3849249",
@@ -586,8 +617,8 @@
     "primary_stdout_changed_from_attempt_1": true,
     "result_retention_commit": "6efa6064b131a874ce0d2368b8cc2a86a0609aff",
     "classification_repair_authorisation_commit": "27db09aaef9b8e7e9575bda8fff053b3b668f500",
-    "continuity_report_version": "0.25.30",
-    "continuity_report_git_blob": "18eab9ec819a8f16ad4dc5225d7a6d537301085d"
+    "continuity_report_version": "0.25.31",
+    "continuity_report_git_blob": "c0e761115e124764cc595a20be5ceac591812643"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
