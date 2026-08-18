@@ -279,6 +279,11 @@
     "execution_authorisation_scope_status": "consumed_by_gate_attempt_1",
     "execution_lane_open": false,
     "new_gate_attempt_authorised": false,
+    "identity_repair_authorised": true,
+    "identity_repair_authorised_on": "2026-08-18",
+    "identity_repair_status": "preregistered_unimplemented",
+    "identity_repair_contract": "require both Git-filtered working-file and HEAD blob identities to match each frozen source",
+    "identity_repair_regression_path": "tests/research/test_lineum_b4_q2_mu_causal_reuse_identity_repair.py",
     "official_primary_invocation_limit": 1,
     "official_primary_invocations": 0,
     "primary_result_present": false,
@@ -304,8 +309,8 @@
     "latest_gate_tests_failed": 1,
     "latest_gate_failure_classification": "windows_checkout_line_ending_conversion",
     "latest_gate_receipt_git_blob": "dd96c2ae1f3ab607ec3d6b96eebf0a2fad0e24a8",
-    "continuity_report_version": "0.25.10",
-    "continuity_report_git_blob": "fabe456b93a5a6c3535d4f2573b0cb3f9d1468ae"
+    "continuity_report_version": "0.25.11",
+    "continuity_report_git_blob": "b2bf8e93d798089600aa099ab15e2e2c43ebcc39"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
