@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` permanent gate attempt 4 passed `18 / 18` and official primary attempt 3 completed once with a valid retained JSON result; the raw runner labelled `mu` a passive archive without demonstrated causal reuse, but the frozen outcome map requires `inconclusive_or_confounded` because the resolution-control qualitative signature failed; the raw result is retained unchanged and the decision-surface mismatch is recorded without a result-dependent rerun or repair; no independent checker, tuning, new primary, or Stage B is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.23 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; version `0.25.24` records owner authorization for only a test-first decision-surface compliance repair so the executable classifier cannot override that frozen rule; no scientific rerun, independent checker, tuning, new primary, or Stage B is authorised; Questions 1 and 3 remain unchanged
+**Version:** 0.25.24 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3421,3 +3421,50 @@ The raw JSON is not rewritten and no result-dependent scientific rerun follows. 
 **Hypothesis status.** The owner-inspired `mu`-only guide is `inconclusive_under_frozen_resolution_control`. The raw result supplies a bounded negative indication, not a verified scientific negative. The mandatory post-negative owner-intuition gate therefore does not open at this checkpoint.
 
 Both one-shot authorisations are consumed. No classification-logic repair, new test, checker, new gate, new primary, parameter or threshold change, mechanism selection, or Stage B is authorised. The execution lane is closed pending a fresh owner decision.
+
+### Q2-M1 decision-surface compliance repair authorization — version `0.25.24`
+
+This checkpoint remains Question 2 only. Questions 1 and 3 are unchanged. After the plain-language handoff asked whether to prepare and publish only the narrow decision-logic repair and one regression, with no new gate, primary, checker, or Stage B, project owner Tomáš Tříska replied `ok` and separately reasserted that the priority is to complete the canonical report as soon as possible. This authorizes only the bounded technical compliance repair below. It does not authorize any scientific trajectory, result-dependent threshold change, parameter tuning, reinterpretation of the retained measurements, or additional report.
+
+The clean, pushed, and read-back starting point is:
+
+```text
+HEAD = origin/develop = 763194b1c96f6692e706776938560d02f363f1d4
+canonical report version = 0.25.23
+canonical report Git blob = 465b03608de72efb65f222621891f7f8b12eb011
+artifact manifest Git blob = c404e928d7f4176759c2854dd046ad3bd90ef4c6
+retained primary Git blob = 1fc064ee65fed965e1b7f1c92e005c50bf22c140
+attempt-3 execution receipt Git blob = 929905aa135e362b8cc89338e57a63fd4c9abb69
+pre-repair runner Git blob = 0ef3cfec728b6431299f1e53a0f3f8f2c204b8f2
+unchanged permanent 18-test Git blob = b3c522141edf21fd723a58dc03633f41447a4bfd
+```
+
+The exact repair contract is frozen before the new regression or runner edit:
+
+```text
+new dedicated regression path = tests/research/test_lineum_b4_q2_mu_causal_reuse_classification_repair.py
+new test count = 1
+fixture = valid P0/history/common/C0 inputs, passive mu retained,
+          C1 below its full-history floor, C2 above its single-channel floor,
+          C3 below its single-channel floor, every nuisance control true
+          except resolution_control_pass = false
+required classification = inconclusive_or_confounded
+required all_nuisance_pass = false
+required mu_candidate_pass = false
+
+test-first invocation = exactly the new dedicated test file once against the old runner
+required pre-repair result = 1 failed because the old runner returns
+                             mu_passive_archive_without_demonstrated_causal_reuse
+
+only permitted source edit = replace the result-conditional nuisance branch
+    elif mu_primary_causal_pass and not all_nuisance_pass
+with the frozen-rule branch
+    elif not all_nuisance_pass
+
+post-repair invocation = exactly the same dedicated test file once
+required post-repair result = 1 passed / 0 failed
+```
+
+The repair may not change `lineum_core/`, a scientific equation, parameter, seed, case, observer, metric, threshold, retained primary JSON, canonical payload hash, raw runner outcome recorded by attempt 3, permanent 18-test file, or any earlier evidence. The previous executable label remains historical provenance; the authoritative `0.25.23` adjudication remains `inconclusive_or_confounded`.
+
+No permanent gate, primary CLI, independent checker, resolution sweep, mechanism selection, direct Q2 rescue, or Stage B may run. After the exact failing and passing targeted receipts, the repair result must be recorded directly in this same report, published, read back, and synchronized in the artifact manifest. No interim report is authorized or needed.
