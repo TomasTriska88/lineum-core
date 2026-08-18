@@ -268,6 +268,11 @@
   "q2_mu_causal_reuse_stage_a": {
     "scientific_status": "harness_ready_stage_a_unexecuted",
     "stage_a_executed": false,
+    "execution_authorised": true,
+    "execution_authorised_on": "2026-08-18",
+    "official_primary_invocation_limit": 1,
+    "pre_execution_gate_tests_required": 18,
+    "retention_path": "research/lineum-public-tolog-b4/q2-m1-stage-a.json",
     "runner_git_blob": "e2de0adf272a5e2c48eff60019ef9343eefa6bf6",
     "test_git_blob": "e7aafa2ce9e87ecd4962ee459a98878eee7c4d7d",
     "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
@@ -282,8 +287,8 @@
     "previous_regression_workflow_job": 93832949726,
     "previous_regression_tests_passed": 18,
     "previous_regression_run_primary_invoked": false,
-    "continuity_report_version": "0.25.8",
-    "continuity_report_git_blob": "c34c586dfbcf36a08b1d332149298455ce124753"
+    "continuity_report_version": "0.25.9",
+    "continuity_report_git_blob": "52441b2648b30eecb27dbafb027bbeabfc83f963"
   },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
