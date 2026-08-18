@@ -1,7 +1,7 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; the owner has now authorised preparation of its dedicated runner and permanent test source only, with every test and scientific invocation still forbidden; no new RS1 source exists at this checkpoint; no scientific rerun, independent checker, tuning, new primary, resolution sweep, or Stage B ran or is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.27 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; prospective follow-up `Q2-M1-RS1` is preregistered as one bounded `N=96` versus `N=128` normalized-lattice resolution comparison; the owner now directs autonomous completion without further confirmation requests, conditionally authorising dedicated test validation, one official RS1 primary, and a later independent checker while preserving every frozen no-sweep and no-Stage-B boundary; a local unexecuted source candidate exists but is not yet committed or scientific evidence; Questions 1 and 3 remain unchanged
+**Version:** 0.25.28 \
 **Evidence cutoff:** 2026-08-18
 **Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
 **Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
@@ -3731,3 +3731,77 @@ direct Q2, Stage B, Lina, or device action = forbidden
 Permitted non-executing checks are limited to direct text inspection, exact-path and changed-file checks, Git diff inspection, whitespace checks, hash calculation, comparison against the `0.25.26` frozen protocol, and searches that do not import or execute the new Python sources.
 
 The implementation candidate must remain scientifically non-evidentiary. If source preparation succeeds, the next reportable state is `candidate_prepared_unexecuted_uncommitted`, because the repository's mandatory regression rule forbids committing functional code before tests verify it. A later owner authorization for the smallest dedicated test invocation is required before the candidate may become a verified, committed, and pushed implementation checkpoint. That later test authority would still not authorise the RS1 scientific runner or create a new Q2-M1 observation.
+
+### Q2-M1-RS1 autonomous bounded-completion directive — version `0.25.28`
+
+**Plain conclusion.** The owner has removed the requirement for further step-by-step confirmation and directed completion of the canonical report. This authorises the already frozen RS1 implementation, its dedicated non-scientific validation, one official scientific primary, and the later independent checker needed for a bounded final RS1 status. It does not authorise changing the scientific question.
+
+**Everyday analogy.** The instrument may now be assembled, bench-tested, switched on once for the registered measurement, and have its reading checked by a second clerk. The operator may repair a broken wire found during bench testing, but may not change the ruler, move the target, repeat the measurement, or add more measurement points after seeing the reading.
+
+**Practical consequence.** Work continues autonomously through the smallest evidence-preserving sequence below. Technical defects may be repaired without another owner round trip only when the frozen scientific parameters, lanes, thresholds, outcomes, and one-shot primary remain unchanged. Every decision-relevant step must still enter this report and Git before the next step begins.
+
+On `2026-08-18`, after the implementation-only boundary was explained, project owner Tomáš Tříska stated: `nemusíš čekat na žádná má potvrzení. prostě dokonči ten report.` This supersedes only the prior need to request another confirmation. It does not supersede the scientific boundaries frozen in `0.25.26`.
+
+#### Current pre-test candidate state
+
+The implementation-only authority in `0.25.27` produced two local, unexecuted, uncommitted candidate files:
+
+```text
+runner path = research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+runner checkout bytes = 16614
+runner checkout SHA-256 = 5c471bffb13b534a1de5fa774ba3b652a1ba357b239ecf60a3c12def5649be7a
+
+test path = tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+test checkout bytes = 6883
+test checkout SHA-256 = 3b4702b766b9e6ac5cf2216a34e91e1d8b588fbb8be21d0b9e74e018a935e68e
+
+test invocations = 0
+runner imports or invocations = 0
+scientific output exists = false
+```
+
+These hashes identify a provisional working-tree candidate only. The files are not branch-reachable, verified, or scientific evidence. Direct text, path, hash, whitespace, and scope inspection passed; Python parsing, import, compilation, test execution, and runner execution have not occurred.
+
+#### Authorised autonomous sequence
+
+1. Invoke only the dedicated permanent test file against the local candidate. The initial frozen command is:
+
+   ```text
+   C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe -m pytest tests/research/test_lineum_b4_q2_m1_rs1_resolution_sensitivity.py -q
+   ```
+
+   The current source declares `13` collected test cases, including the four explicit rejected-size cases. The required clean result is `13 passed / 0 failed`. This test file must use fakes for orchestration and must not invoke `run_size()` with the real Core or create scientific output.
+
+2. If a test or static defect is found, retain the exact failure in this report before a repair. Only the smallest test-first technical correction that preserves the `0.25.26` scientific contract is authorised. Outcome-dependent scientific changes, threshold changes, new sizes, and test weakening are forbidden.
+
+3. After the dedicated tests pass, update this report with the exact receipts and source identities, then commit and push the runner, test, report, and manifest as one implementation checkpoint. Read it back from `origin/develop` before any scientific command.
+
+4. From that clean, exact, supported-runtime checkpoint, execute the committed runner exactly once, with stdout written directly to the preregistered primary path and stderr retained outside the repository until adjudication:
+
+   ```text
+   C:\Projects\lineum-core\.scratch\q2-m1-stage-a-venv-20260818\Scripts\python.exe research/runners/lineum_b4_q2_m1_rs1_resolution_sensitivity.py
+   stdout = research/lineum-public-tolog-b4/q2-m1-rs1-resolution-sensitivity.json
+   ```
+
+   Any exit, success, failure, interruption, malformed output, empty output, identity mismatch, or validity failure consumes the one primary invocation. Scientific retry is forbidden.
+
+5. Retain and publish the complete primary and its narrow frozen-rule adjudication before implementing or running an independent checker. If the primary is technically complete, prepare a separately implemented checker for the retained JSON, validate that checker with non-scientific tests, execute it once, and publish its agreement or disagreement. The checker may verify source and payload identity, independently recompute lane signatures, floors, ratios, zeroing reductions, and the outcome map from retained values and rows; it may not rerun trajectories or alter the primary.
+
+6. Finish the report with the verified bounded RS1 status, or with the exact technical/inconclusive status if any gate fails. A negative, null, contradictory, or technical non-result is a complete report outcome when honestly bounded and durably retained.
+
+#### Authority and non-authority map
+
+```text
+implementation and dedicated technical repair = authorised
+dedicated test execution = authorised
+official RS1 primary invocation limit = 1
+independent checker implementation, tests, and one retained-output invocation = authorised
+additional owner confirmation = not required inside this exact sequence
+
+broad or adaptive resolution sweep = forbidden
+additional scientific primary or retry = forbidden
+parameter, seed, geometry, observer, lane, metric, threshold, or outcome-map change = forbidden
+retained Q2-M1 attempt-3 reclassification = forbidden
+direct Q2, Stage B, new mechanism selection, whitepaper promotion = forbidden
+Lina, deployment, or device action = forbidden
+```
