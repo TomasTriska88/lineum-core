@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits the bounded RWC1 implementation, non-scientific tests, one primary, and one retained-output checker; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, now has one frozen research-only primary runner and permanent non-scientific tests; its dedicated suite passes `25 / 25` and the combined gate with the `22` unchanged localized-reference regressions passes `47 / 47`; both one-shot authorizations remain unconsumed; no RWC1 trajectory, primary CLI, `execute_primary_once`, execution receipt, primary output, evidence shard, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, partner action, or restricted TOLOG implementation is executed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.35 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; technical, schema, source-identity, runtime, serialization, and local/global receipt gates passed, but the frozen `PAIR_BOTH` absolute-clean and causal-improvement gates failed; the valid primary-only outcome is `rwc1_unsupported_under_tested_conditions`; no tuning or retry is authorised or performed; the retained-output checker remains unimplemented and unconsumed at `0 / 1`; no direct Q2 return step, Core equation, whitepaper, Lina runtime, device action, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
+**Version:** 0.25.36 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `9b340097dd4d2aa8cc1c661e40e60811120ca22b` \
+**Checkpoint parent:** `f0b373f49821d23cbfb16be62fd25feae0a920a5` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -27,6 +27,8 @@ Version `0.25.33` preserves the completed Candidate A negative and records the a
 Version `0.25.34` separately records bounded-completion authority for RWC1 implementation, non-scientific tests, exactly one primary trajectory payload, and exactly one later retained-output checker; this changes the authority counters from zero to one while partner action and TOLOG implementation remain unauthorised. Before implementation or any trajectory, a schema-only compact-row estimate showed that the single planned JSONL would require approximately `144480000` bytes even before retained state arrays. That is a transport defect, not scientific evidence. The transport correction alone changes only physical packaging: the unchanged `400110` globally indexed, directly readable JSONL records are partitioned into six fixed contiguous shards, each capped at `75000000` bytes. The same prospective checkpoint also freezes primary, receipt, and checker technical schemas. Candidate law, record fields and global order, branch order, steps, observables, scientific thresholds, and outcome map do not change. No trajectory or model output was inspected.
 
 Version `0.25.35` records the documentation-faithful research-only RWC1 primary implementation and its permanent non-scientific regression gate before any scientific execution. The dedicated module passes `25 / 25`; the independent combined invocation with the unchanged `22` localized-reference regressions passes `47 / 47` in `0.87 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. Exact runner and test identities are frozen. No scientific trajectory, primary CLI, `execute_primary_once`, fixed execution receipt, primary output, evidence shard, checker, Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation is run, created, or changed. Both one-shot authorizations remain unconsumed.
+
+Version `0.25.36` retains the first and only authorised RWC1 primary from the remotely read-back implementation checkpoint `f0b373f49821d23cbfb16be62fd25feae0a920a5`. The exact primary, durable execution receipt, and six directly readable JSONL evidence shards are preserved with byte, SHA-256, Git-blob, count, and global-index identities. Technical telemetry, exact schemas, source identity, runtime, serialization, proposal fidelity, starting-clone, control, and local/global receipt gates passed. The `0.95` lower energy bound was nevertheless first violated at step `193` under LAP4 and step `151` under LAP8, and at `t=1000` and `t=10000` `PAIR_BOTH` was slightly worse than `CONTROL` in all eight required energy/profile comparisons. Its `4 / 4` profile advantages over the global-pool control do not rescue the candidate because the absolute-clean and causal-improvement gates failed. The frozen primary-only outcome is `rwc1_unsupported_under_tested_conditions`. The primary authority is consumed `1 / 1`; no tuning or retry occurred; the checker remains unimplemented and unconsumed `0 / 1`. This checkpoint changes no Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation and establishes neither TOLOG compatibility nor a Lina capability.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -5056,3 +5058,219 @@ Core, reference runner, dependencies, and runtime, and absence of every fixed
 primary path before exclusively creating the one primary receipt. No report or
 manifest rewrite may be used merely to assert that readback, because doing so
 would change the identities being verified.
+
+### Q2-M2-RWC1 retained primary result - version `0.25.36`
+
+#### Plain conclusion, analogy, and practical consequence
+
+**Plain conclusion.** The one authorised RWC1 primary ran to completion and
+produced technically clean, internally consistent evidence, but the proposed
+local reciprocal-work correction did not keep the prepared state inside its
+frozen clean range and did not improve it over the unchanged control. The
+valid primary-only classification is
+`rwc1_unsupported_under_tested_conditions`.
+
+**Everyday analogy.** Imagine two workers passing exactly accounted buckets
+back and forth beside a cart that is supposed to remain inside a painted box.
+Their bucket ledger balances and every hand-off is recorded, but the cart still
+leaves the box too early. At both required later inspections, the locally
+corrected cart is also very slightly farther from its starting shape than the
+untouched cart. It does beat a deliberately crude worker who pools every bucket
+across the whole floor, but that side comparison cannot rescue the failed box
+and untouched-cart requirements.
+
+**Practical consequence.** The current RWC1 candidate is retained as a bounded
+negative result, not tuned and not retried. Its one primary authority is
+consumed `1 / 1`. The separate retained-output checker remains authorised but
+unimplemented and unconsumed at `0 / 1`; it may be implemented only after this
+exact primary, receipt, evidence, report, and manifest checkpoint is committed,
+published, fetched, and read back. No replacement mechanism is selected here.
+
+#### Frozen execution and retention receipt
+
+The run used the remotely read-back implementation checkpoint
+`f0b373f49821d23cbfb16be62fd25feae0a920a5`, the exact v3 protocol, the frozen
+research runner and test identities, Python `3.11.15`, NumPy `1.26.4`, and the
+deterministic CPU NumPy backend. It executed one trajectory programme containing
+both stencils, all six branches in frozen order, and `10000` continuation steps
+per branch. The retained duration is `99.03463829998509 s`.
+
+The exclusive execution receipt records attempt `1`,
+`authority_consumed = true`, `retry_authorized = false`, `failure = null`, and
+`status = complete_output_retained`. No parameter, threshold, seed, branch,
+observer, checkpoint, law, or classifier was changed after outcome inspection.
+No retry, tuning pass, second primary, or manual result edit occurred.
+
+The retained primary and one-shot receipt identities are:
+
+```text
+primary path = research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work.json
+primary role = canonical primary summary, metrics, gates, comparisons, and primary-only classification
+primary bytes = 217420
+primary SHA-256 = 5c214b3bcacad2db3c27518fa3b0d88284f9b8952af0227f7f8acbdae33ab578
+primary Git blob = bb94c2dff5c01e116af886ce57e5439859ef15a2
+primary schema = lineum.q2-m2-rwc1-primary.v1
+
+execution receipt path = research/lineum-public-tolog-b4/q2-m2-rwc1-execution-attempt-1.json
+execution receipt role = irreversible primary authority and execution chronology
+execution receipt bytes = 3770
+execution receipt SHA-256 = 1317e24ab975a213b8e14c18fd4a70bc5c37fab088639317e0838bc9146e0d57
+execution receipt Git blob = b246188da56d6cf06ffa33178bbd626adf52eb4f
+execution receipt schema = lineum.q2-m2-rwc1-execution-receipt.v1
+```
+
+The six evidence shards preserve one continuous global record sequence with
+`400110` records and no reset between physical files:
+
+```text
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/000-prepared-and-checkpoints.jsonl
+role = prepared states and full retained checkpoint states
+bytes = 7650363
+SHA-256 = 4116b3754e3c966e34abe632caee2c80859b274461678a9bf454b98736075bc4
+Git blob = a494616381fe3d3539cd58979cfb99620b433317
+records = 110; global record_index = 0..109
+
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/001-step-energy.jsonl
+role = every retained per-step total psi-energy observation
+bytes = 16721697
+SHA-256 = d9ea2edde42fc89dceafaa284be74f8377e7773d2f53fe022e9ddfb8982a11f5
+Git blob = d4f4e5519e9a290ccb9a62420167a3571a38c354
+records = 120000; global record_index = 110..120109
+
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/002-step-telemetry.jsonl
+role = every retained per-step technical telemetry observation
+bytes = 32866728
+SHA-256 = a560ee196e7902a48bd0d5af963078308ea01a7af6b6062e4d266edeb8fdadb2
+Git blob = 745ccc4e42ce374d10fb94b889dfb5982110b772
+records = 120000; global record_index = 120110..240109
+
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/003-local-receipts-lap4.jsonl
+role = every retained LAP4 local-stage reciprocal-work receipt
+bytes = 48881770
+SHA-256 = 41eaf5c23e1e1270c6edeffb055d0cb30983eaf5024f2543fbedc9d30605ec8d
+Git blob = e305571cd1a17e9aea3835c012a179eee24fd8f4
+records = 60000; global record_index = 240110..300109
+
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/004-local-receipts-lap8.jsonl
+role = every retained LAP8 local-stage reciprocal-work receipt
+bytes = 48881910
+SHA-256 = fb648dbc22bbe84a4e3381f335cafbb90dee38170a130df38d93ebca71b70d16
+Git blob = c1b9cc0c89df01569a688bbc3a68fef56146537b
+records = 60000; global record_index = 300110..360109
+
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/005-global-receipts.jsonl
+role = every retained global-pool reciprocal-work receipt
+bytes = 28719145
+SHA-256 = 52ac6f7596386724d8928565d08a03aa0580aed75fc9a7893335d7ec73ebc731
+Git blob = 961024db0b9ad8f02522d6f8e657e2f9bf5e414c
+records = 40000; global record_index = 360110..400109
+```
+
+For each exact path above, checkout identity is verified with
+`(Get-Item -LiteralPath <path>).Length` and
+`Get-FileHash -Algorithm SHA256 -LiteralPath <path>`; filtered Git identity is
+verified with `git hash-object --path=<path> <path>`. JSONL line counts are
+verified with `rg -c '^' -- <path>`, while first/last `record_index` and schema
+order are checked by parsing the first/last record and the frozen global index
+contract. These commands verify retention identity; they do not rerun a
+trajectory or independently verify the scientific classifier.
+
+#### Gate result and exact causal observations
+
+The following pre-scientific and integrity surfaces passed:
+
+- exact source, protocol, report, manifest, runner, test, dependency, execution
+  commit, and remote-readback identities;
+- frozen primary and execution-receipt schemas, canonical serialization, and
+  primary-last retention ordering;
+- supported deterministic runtime;
+- proposal fidelity, starting clones, unchanged control phenotype, and the
+  receipt-only identity control;
+- all local receipt closure gates and all global-pool receipt closure gates;
+- technical telemetry across all `120000` per-step rows, with zero non-finite
+  detections, cap contacts, destructive resets, negative `phi` inputs,
+  undeclared sources, or other technical telemetry failures.
+
+The scientific gates did not pass:
+
+- `pair_both_absolute_clean = false`;
+- `global_pool_absolute_clean = false`;
+- `pair_both_causal_improvement = false`.
+
+The lower clean-energy ratio bound of `0.95` was first violated at step `193`
+under LAP4 and step `151` under LAP8. This same first violation step occurs
+across all six frozen branches within each stencil. There was no upper-bound
+violation, but passing only one side of the frozen envelope cannot satisfy the
+absolute-clean gate.
+
+At both required horizons, `PAIR_BOTH` has a slightly larger error than
+`CONTROL` in every required comparison. The frozen `improvement` convention is
+`CONTROL error - PAIR_BOTH error`, so every negative value below is worse:
+
+| Stencil | Step | Metric | `CONTROL` | `PAIR_BOTH` | Improvement | Pass |
+| --- | ---: | --- | ---: | ---: | ---: | --- |
+| LAP4 | 1000 | `psi_energy_relative_error` | `0.2284174010157617` | `0.2288686957180814` | `-0.00045129470231972113` | false |
+| LAP4 | 1000 | `psi_radial_profile_relative_l2_error` | `0.2887280507651752` | `0.28891151269597987` | `-0.00018346193080465145` | false |
+| LAP4 | 10000 | `psi_energy_relative_error` | `0.8926934987102989` | `0.8930337297323824` | `-0.00034023102208347034` | false |
+| LAP4 | 10000 | `psi_radial_profile_relative_l2_error` | `0.9329102735407552` | `0.9330776063072374` | `-0.00016733276648217554` | false |
+| LAP8 | 1000 | `psi_energy_relative_error` | `0.2846040413071567` | `0.2847589054212793` | `-0.00015486411412257706` | false |
+| LAP8 | 1000 | `psi_radial_profile_relative_l2_error` | `0.3284372133942846` | `0.3285121570367078` | `-7.49436424231642e-05` | false |
+| LAP8 | 10000 | `psi_energy_relative_error` | `0.9532194879492812` | `0.9532631923343786` | `-4.3704385097376175e-05` | false |
+| LAP8 | 10000 | `psi_radial_profile_relative_l2_error` | `0.967257161191571` | `0.9672840921306879` | `-2.693093911687594e-05` | false |
+
+The local-advantage comparison against `GLOBAL_POOL_PAIR_BOTH` passed `4 / 4`
+for the radial-profile metric: improvements were
+`0.0003689578122112458` (LAP4, `t=1000`),
+`8.131181009995991e-05` (LAP4, `t=10000`),
+`0.00011355909311488999` (LAP8, `t=1000`), and
+`8.67581237473658e-06` (LAP8, `t=10000`). This is a valid local-versus-global
+observation under the frozen control, but it is explicitly non-rescuing: the
+local candidate still failed its absolute-clean requirement and every causal
+comparison against the unchanged control.
+
+#### Evidence separation and bounded status
+
+**Implementation fact.** The frozen research runner implements the declared
+local and global reciprocal-work receipt laws, exact branch/stencil order,
+technical telemetry, six-shard canonical retention, and the frozen classifier.
+It does not change production Core, the protocol, a whitepaper, Lina, or TOLOG.
+
+**Retention-audited primary observation.** One authorised primary completed without a
+technical telemetry failure. Its schema, source, runtime, serialization, local
+receipt, and global receipt gates passed. The clean lower energy bound failed
+at the steps stated above, and `PAIR_BOTH` was worse than `CONTROL` in all eight
+required late comparisons. The primary therefore emitted
+`rwc1_unsupported_under_tested_conditions` with
+`primary_claim_only = true`.
+
+**Interpretation.** Exact accounting shows that the candidate law exchanges
+the declared local work consistently; it does not show that the exchange
+stabilizes this prepared state. The small `4 / 4` advantage over a global-pool
+construction says only that this local construction is less bad than that
+specific pooled control on four profile comparisons. It cannot outweigh the
+failed absolute and unchanged-control gates.
+
+**Hypothesis status.** The narrow hypothesis that this exact reciprocal closure,
+with the frozen law and regime, is sufficient to keep the baseline-prepared
+state clean and causally improve it is unsupported under the tested conditions.
+Other reciprocal laws or regimes are not falsified. Direct perturbation return,
+endogenous formation from initialization, and real-universe behavior were not
+tested by this primary.
+
+**Not established.** This result establishes no physical energy law,
+Hamiltonian structure, locality necessity, natural attractor, direct Question 2
+return, gravity, quantum behavior, cosmology, biological homeostasis,
+intelligence, self-correction, Lina capability, TOLOG compatibility, Shared
+Result, Joint IP, licence right, commercial conclusion, or partner permission.
+No private Lina implementation or restricted TOLOG material was used.
+
+The fixed checker source, checker test, checker output, and checker execution
+receipt remain absent. Checker authority is `0 / 1` consumed, and the current
+classification remains explicitly primary-only until a separately implemented
+retained-output checker independently recomputes the quantities it is allowed
+to verify. This prospective `0.25.36` report/manifest retention checkpoint has
+not yet been committed or remotely read back, so its own readback claim is
+false. The only next permitted step is durable publication and readback of this
+exact retained-result checkpoint; no tuning, primary retry, checker execution,
+replacement mechanism, Core promotion, whitepaper promotion, Lina action,
+partner action, or TOLOG implementation occurs here.
