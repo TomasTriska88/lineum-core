@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; its valid primary-only outcome remains `rwc1_unsupported_under_tested_conditions`; the standalone retained-output checker and permanent tests were frozen and remotely read back, but its first and only authorised official attempt stopped at `validate_manifest_bindings` with `status = technical_non_result` because preflight compared the filtered Git manifest identity while the post-latch check compared the raw mixed-line-ending worktree identity; the primary JSON was opened and structurally validated after the latch, including access to the primary classification object and validation of its exact field set and schema, but the claimed outcome value was deliberately not accessed; the manifest failed before post-latch JSON parsing, no shard was opened, and no retained stream, recomputation, classifier, checker output, or scientific trajectory occurred; checker authority is consumed `1 / 1`, retry is false, and no official independent checker result exists; the technical failure neither confirms nor contradicts the primary science; no tuning, retry, code repair, replacement mechanism, Core equation, whitepaper, Lina runtime, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
-**Version:** 0.25.38 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; its valid primary-only outcome remains `rwc1_unsupported_under_tested_conditions`; the first checker lane remains permanently consumed as a `technical_non_result` caused by a filtered-versus-raw mixed-line-ending identity mismatch before any shard or scientific recomputation; a newly authorised additive successor lane is now preregistered with unique source, test, receipt, and output paths, one invocation maximum, consistent Git-clean identity semantics, and the exact frozen original scientific checker engine; the successor is not implemented or executed at this checkpoint, no independent checker result yet exists, and the primary remains primary-only; no tuning, retry of the consumed lane, replacement mechanism, Core equation, whitepaper, Lina runtime, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
+**Version:** 0.25.39 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `3a77599c947db05297bf1ece2ea024843375852b` \
+**Checkpoint parent:** `91a36a844d1000fcdbe9e7f3eb12a347fe75fecf` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -33,6 +33,8 @@ Version `0.25.36` retains the first and only authorised RWC1 primary from the re
 Version `0.25.37` records the standalone RWC1 retained-output checker implementation and permanent tests after the complete primary-result checkpoint was committed, pushed, fetched, and read back at `7db2b781260e70b214cb9a2bb8b52cfd34f5f602`. The checker-specific suite passes `23 / 23`; the root-level independent combined invocation of checker tests, unchanged primary-runner tests, and the `22` localized-reference regressions passes `70 / 70` in `2.88 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. The checker is standalone, imports neither the primary runner nor Core, contains no expected-outcome constant, performs one bounded retained-evidence pass, enforces strict identity/schema validation, and creates its exclusive latch before any real retained input may be read. No real checker invocation, checker receipt, checker output, or trajectory occurred; checker authority remains `0 / 1` consumed. For transparency, implementer and reviewer had seen the high-level primary outcome label through the public manifest, although they did not read the primary JSON, shards, measurements, or primary runner for checker implementation or review. Full outcome-label blindness is therefore not claimed, while machine tests prohibit embedding that label or any expected outcome constant. The primary negative remains primary-only pending the one authorised retained-output check. No TOLOG compatibility or Lina capability is established.
 
 Version `0.25.38` retains the first and only official checker attempt from the remotely read-back checker checkpoint `3a77599c947db05297bf1ece2ea024843375852b` as a technical non-result. The exclusive latch consumed checker authority `1 / 1`, then the primary JSON opened, parsed, and passed canonical/schema/type validation; the primary classification object was accessed and its exact field set and schema were validated, while the claimed outcome value was deliberately not accessed. The attempt stopped at `validate_manifest_bindings` before parsing the post-latch manifest: clean preflight had bound the filtered/HEAD manifest blob `aef00967c97561238fe0c39b0af7d781fe0c6ed6`, while post-latch raw `file_identity` produced `daae4d0680f2ff7bd37b11117cd65e1ab651b2c6`. With `core.autocrlf = true`, the indexed/filtered manifest is `56077` bytes and the raw worktree file is `56742` bytes containing `665` CRLF endings plus `244` lone LF endings. This is the same content compared across two identity domains, not a file mutation or evidence mismatch. No shard opened; no stream, recomputation, classifier, or checker output existed. Synthetic tests missed this boundary because their manifests were uniformly LF and used the raw binding. The receipt records `technical_non_result`, elapsed `0.3129999999946449 s`, output `null`, and no retry. The primary negative remains unchanged and primary-only; the technical attempt neither confirms nor contradicts it. No code repair or retry is authorised under the consumed frozen authority, and no TOLOG compatibility or Lina capability is established.
+
+Version `0.25.39` records fresh owner authority for exactly one additive successor checker lane after the consumed checker lane remains immutable. The new v4 authority protocol freezes unique successor source, test, receipt, and output paths; preserves the exact v3 scientific protocol, primary, six shards, primary runner/test, original checker/test, and original technical receipt; and permits only a Git identity-domain repair around the byte-frozen original checker engine. Tracked text must match the same expected `HEAD`, index, and Git-clean-filtered worktree blob before the latch, and the same captured worktree snapshot must still filter to the expected `HEAD` blob after the latch. Canonical manifest identity rows are derived from the verified committed blob bytes, while the primary and shards retain their unchanged raw canonical-byte identities. No successor implementation, synthetic test, retained input read, successor latch, checker output, trajectory, parameter change, or partner action occurs in this preregistration checkpoint.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -5532,9 +5534,110 @@ real-universe connection, Lina capability, TOLOG compatibility, Shared Result,
 Joint IP, licence right, commercial conclusion, or partner permission. No
 private Lina implementation or restricted TOLOG material was used.
 
-This prospective `0.25.38` retention checkpoint has not yet been committed or
-remotely read back, so its own readback claim is false. The technical receipt,
-report, and manifest may be retained as one immutable checkpoint. No checker
-retry, checker repair, checker output, shard read, scientific trajectory,
-primary retry, replacement mechanism, Core or whitepaper promotion, Lina
-action, partner action, or TOLOG implementation occurs here.
+The `0.25.38` technical-non-result checkpoint is committed, pushed, fetched,
+and remotely read back at
+`91a36a844d1000fcdbe9e7f3eb12a347fe75fecf`. Its receipt, report history, and
+absence of the original checker output are immutable. That consumed lane is
+not retried or repaired in place.
+
+### Q2-M2-RWC1 successor-checker preregistration - version `0.25.39`
+
+#### Plain conclusion, analogy, and practical consequence
+
+**Plain conclusion.** A new one-use successor checker lane is authorised and
+frozen before implementation. It may repair only the Windows text-identity
+boundary that stopped the predecessor. It must reuse the exact original
+retained-evidence computation and classifier without changing the scientific
+question, input, threshold, outcome map, or claim boundary.
+
+**Everyday analogy.** The first independent calculator never reached the
+figures because one clerk compared the warehouse label and another compared
+the same label after a printer changed some invisible line endings. We keep
+that failed inspection slip forever. The successor is a new sealed inspection
+desk that compares both labels in one declared format and then hands the
+unchanged figures to the same frozen calculator.
+
+**Practical consequence.** The successor wrapper and its permanent synthetic
+regressions may now be implemented. They must be committed, pushed, fetched,
+and remotely read back before the single successor latch may be created. No
+message to a partner is justified until a completed successor result and its
+final report checkpoint have also been remotely read back.
+
+#### Frozen additive authority and paths
+
+The machine-readable authority contract is
+`research/lineum-public-tolog-b4/q2-m2-rwc1-checker-successor-preregistration.json`
+with schema `lineum.q2-m2-rwc1-preregistration.v4`. It records fresh bounded
+owner authority from the current thread for one successor invocation. The
+predecessor remains `1 / 1` consumed with retry false. The successor permits
+zero primary invocations, zero trajectories, zero TOLOG implementation, and
+zero partner action.
+
+The unique planned paths are:
+
+```text
+successor wrapper = research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker_successor.py
+successor test = tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker_successor.py
+successor receipt = research/lineum-public-tolog-b4/q2-m2-rwc1-checker-successor-execution-attempt-1.json
+successor output = research/lineum-public-tolog-b4/q2-m2-rwc1-independent-check-successor.json
+successor invocation limit = 1
+retry authorised = false
+```
+
+The original v3 protocol, primary, six shards, primary receipt, original
+checker source/test, original technical receipt, and absent original output
+remain unchanged. The successor must verify the exact original checker source
+and test before delayed import and may delegate only primary loading after its
+own latch, one-pass retained-evidence streaming, and the frozen output builder.
+It may not call the original preflight, manifest validator, latch, execution,
+publication, or CLI orchestration functions.
+
+#### Frozen repair and regression contract
+
+Tracked metadata uses one declared identity domain. Before the latch, the
+expected Git blob, `HEAD` blob, index blob, and Git-clean-filtered worktree blob
+must all agree. After the latch, one captured worktree byte snapshot must still
+filter to the same expected `HEAD` blob, and that exact snapshot is parsed.
+Manifest file rows are cross-bound against canonical bytes read in binary from
+the already verified committed blob. No manual CRLF replacement, worktree
+rewrite, `.gitattributes` change, or `core.autocrlf` change is permitted.
+Primary and shard identities remain exact raw canonical bytes.
+
+Permanent tests must cover mixed CRLF/LF checkout acceptance when filtered
+content is unchanged; semantic worktree, index, `HEAD`, and post-latch drift
+rejection; committed-byte manifest rows; old/new terminal-path separation;
+exclusive latch-before-retained-read; terminal failure retention; no preflight
+primary or shard access; delayed verified import of the original checker;
+unchanged scientific-engine delegation; absence of the observed outcome label
+or any expected-result constant; and preservation of the complete previous
+checker, primary-runner, and localized-reference regression set.
+
+#### Evidence and claim boundary
+
+**Implementation fact.** Only the v4 authority protocol and canonical report
+registration exist at this checkpoint. The successor source and test do not.
+
+**Observation.** No primary or shard was read for this preregistration, no
+successor latch or output exists, and no scientific computation ran.
+
+**Interpretation.** A later completed successor can independently recompute
+the retained primary inside the original frozen limitations. It cannot become
+a new experiment, independent dataset, or fully blinded replication.
+
+**Hypothesis and scientific status.** Unchanged. The retained RWC1 primary
+remains primary-only until a completed successor result exists. The successor
+may agree, disagree, or end as a new technical non-result; its rules may not be
+changed after seeing which occurs.
+
+**Not established.** This preregistration establishes no independent
+agreement, direct Question 2 return, physical energy law, locality necessity,
+real-universe connection, Lina capability, TOLOG compatibility, Shared Result,
+Joint IP, licence right, commercial conclusion, or partner permission. No
+private Lina implementation or restricted TOLOG material is used.
+
+This prospective `0.25.39` preregistration checkpoint has not yet been
+committed or remotely read back, so its own readback claim is false. The only
+next permitted step is to publish and read back this exact protocol/report/
+manifest checkpoint, then implement only the frozen successor wrapper and
+tests. No retained input, checker execution, trajectory, partner action, or
+TOLOG implementation occurs here.
