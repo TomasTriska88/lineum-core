@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; technical, schema, source-identity, runtime, serialization, and local/global receipt gates passed, but the frozen `PAIR_BOTH` absolute-clean and causal-improvement gates failed; the valid primary-only outcome remains `rwc1_unsupported_under_tested_conditions`; no tuning or retry is authorised or performed; the standalone retained-output checker and its permanent tests are now frozen after `23 / 23` dedicated and `70 / 70` combined non-scientific tests, but the real checker remains uninvoked and unconsumed at `0 / 1`, with no checker receipt or output; implementer and reviewer saw the public high-level primary outcome label but did not read the primary JSON, evidence shards, measurements, or primary runner, so full label blindness is not claimed; no direct Q2 return step, new trajectory, Core equation, whitepaper, Lina runtime, device action, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
-**Version:** 0.25.37 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; its valid primary-only outcome remains `rwc1_unsupported_under_tested_conditions`; the standalone retained-output checker and permanent tests were frozen and remotely read back, but its first and only authorised official attempt stopped at `validate_manifest_bindings` with `status = technical_non_result` because preflight compared the filtered Git manifest identity while the post-latch check compared the raw mixed-line-ending worktree identity; the primary JSON was opened and structurally validated after the latch, including access to the primary classification object and validation of its exact field set and schema, but the claimed outcome value was deliberately not accessed; the manifest failed before post-latch JSON parsing, no shard was opened, and no retained stream, recomputation, classifier, checker output, or scientific trajectory occurred; checker authority is consumed `1 / 1`, retry is false, and no official independent checker result exists; the technical failure neither confirms nor contradicts the primary science; no tuning, retry, code repair, replacement mechanism, Core equation, whitepaper, Lina runtime, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
+**Version:** 0.25.38 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `7db2b781260e70b214cb9a2bb8b52cfd34f5f602` \
+**Checkpoint parent:** `3a77599c947db05297bf1ece2ea024843375852b` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -31,6 +31,8 @@ Version `0.25.35` records the documentation-faithful research-only RWC1 primary 
 Version `0.25.36` retains the first and only authorised RWC1 primary from the remotely read-back implementation checkpoint `f0b373f49821d23cbfb16be62fd25feae0a920a5`. The exact primary, durable execution receipt, and six directly readable JSONL evidence shards are preserved with byte, SHA-256, Git-blob, count, and global-index identities. Technical telemetry, exact schemas, source identity, runtime, serialization, proposal fidelity, starting-clone, control, and local/global receipt gates passed. The `0.95` lower energy bound was nevertheless first violated at step `193` under LAP4 and step `151` under LAP8, and at `t=1000` and `t=10000` `PAIR_BOTH` was slightly worse than `CONTROL` in all eight required energy/profile comparisons. Its `4 / 4` profile advantages over the global-pool control do not rescue the candidate because the absolute-clean and causal-improvement gates failed. The frozen primary-only outcome is `rwc1_unsupported_under_tested_conditions`. The primary authority is consumed `1 / 1`; no tuning or retry occurred; the checker remains unimplemented and unconsumed `0 / 1`. This checkpoint changes no Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation and establishes neither TOLOG compatibility nor a Lina capability.
 
 Version `0.25.37` records the standalone RWC1 retained-output checker implementation and permanent tests after the complete primary-result checkpoint was committed, pushed, fetched, and read back at `7db2b781260e70b214cb9a2bb8b52cfd34f5f602`. The checker-specific suite passes `23 / 23`; the root-level independent combined invocation of checker tests, unchanged primary-runner tests, and the `22` localized-reference regressions passes `70 / 70` in `2.88 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. The checker is standalone, imports neither the primary runner nor Core, contains no expected-outcome constant, performs one bounded retained-evidence pass, enforces strict identity/schema validation, and creates its exclusive latch before any real retained input may be read. No real checker invocation, checker receipt, checker output, or trajectory occurred; checker authority remains `0 / 1` consumed. For transparency, implementer and reviewer had seen the high-level primary outcome label through the public manifest, although they did not read the primary JSON, shards, measurements, or primary runner for checker implementation or review. Full outcome-label blindness is therefore not claimed, while machine tests prohibit embedding that label or any expected outcome constant. The primary negative remains primary-only pending the one authorised retained-output check. No TOLOG compatibility or Lina capability is established.
+
+Version `0.25.38` retains the first and only official checker attempt from the remotely read-back checker checkpoint `3a77599c947db05297bf1ece2ea024843375852b` as a technical non-result. The exclusive latch consumed checker authority `1 / 1`, then the primary JSON opened, parsed, and passed canonical/schema/type validation; the primary classification object was accessed and its exact field set and schema were validated, while the claimed outcome value was deliberately not accessed. The attempt stopped at `validate_manifest_bindings` before parsing the post-latch manifest: clean preflight had bound the filtered/HEAD manifest blob `aef00967c97561238fe0c39b0af7d781fe0c6ed6`, while post-latch raw `file_identity` produced `daae4d0680f2ff7bd37b11117cd65e1ab651b2c6`. With `core.autocrlf = true`, the indexed/filtered manifest is `56077` bytes and the raw worktree file is `56742` bytes containing `665` CRLF endings plus `244` lone LF endings. This is the same content compared across two identity domains, not a file mutation or evidence mismatch. No shard opened; no stream, recomputation, classifier, or checker output existed. Synthetic tests missed this boundary because their manifests were uniformly LF and used the raw binding. The receipt records `technical_non_result`, elapsed `0.3129999999946449 s`, output `null`, and no retry. The primary negative remains unchanged and primary-only; the technical attempt neither confirms nor contradicts it. No code repair or retry is authorised under the consumed frozen authority, and no TOLOG compatibility or Lina capability is established.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -5405,3 +5407,134 @@ step is durable publication and readback of the exact checker source, checker
 test, report, and manifest checkpoint. No checker invocation, trajectory,
 primary retry, Core or whitepaper promotion, Lina action, partner action, or
 TOLOG implementation occurs here.
+
+### Q2-M2-RWC1 official checker technical non-result - version `0.25.38`
+
+#### Plain conclusion, analogy, and practical consequence
+
+**Plain conclusion.** The one authorised checker attempt did not reach the
+scientific comparison. It stopped safely on a manifest fingerprint mismatch
+caused by comparing two different byte representations of the same text. The
+attempt therefore neither confirms nor contradicts the retained primary
+negative.
+
+**Everyday analogy.** Imagine one clerk fingerprints the archived copy of a
+form, where every line ends in the filing system's standard way, while a second
+clerk fingerprints the desktop copy, where some visually identical line breaks
+use two hidden characters instead of one. The words are unchanged, but the byte
+fingerprints differ. The checker opened the primary summary and confirmed that
+its labeled boxes and value types had the expected structure without reading
+the value in the outcome box. The safety lock then refused to continue, so the
+detailed evidence-shard pages and their record stream were never opened.
+
+**Practical consequence.** The primary remains
+`rwc1_unsupported_under_tested_conditions` and remains
+`primary_claim_only = true`. Checker authority is exhausted `1 / 1`; retry is
+false, no checker output exists, and the frozen authority does not permit a code
+repair or second attempt. This checkpoint retains the exact technical failure
+without changing, tuning, promoting, or replacing any scientific mechanism.
+
+#### Exact official-attempt receipt
+
+The checker implementation checkpoint was committed, pushed, fetched, and
+remotely read back at
+`3a77599c947db05297bf1ece2ea024843375852b` before the attempt. The retained
+execution receipt identity is:
+
+```text
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-checker-execution-attempt-1.json
+role = first and only official RWC1 retained-output checker execution receipt; technical non-result
+bytes = 3514
+SHA-256 = 80c42cc0d03e91e62df1aa2d1775dcc0fb55c349ff6d52995655b07792204136
+Git blob = 5829d50dccbec53947cf422a943a153728d6713e
+canonical payload SHA-256 without self = 56152d137903860b78a658fab397943ffce595142e3ed4df81af175ee522cf42
+elapsed seconds = 0.3129999999946449
+stderr bytes = 46
+stderr SHA-256 = 22344fe46e34b34027225a4c4ffd153b8c90ded4a717c50d4252378129a0bcbc
+status = technical_non_result
+failure phase = validate_manifest_bindings
+authority consumed = 1 / 1
+retry authorized = false
+checker output = null / absent
+```
+
+The receipt is a technical chronology record, not an independent scientific
+result. No `lineum.q2-m2-rwc1-independent-check.v1` output was created.
+
+#### Exact failure boundary
+
+The clean preflight correctly verified `HEAD` and the filtered manifest Git
+blob from the remotely read-back checkpoint:
+
+```text
+preflight filtered / HEAD manifest blob = aef00967c97561238fe0c39b0af7d781fe0c6ed6
+post-latch raw worktree file_identity blob = daae4d0680f2ff7bd37b11117cd65e1ab651b2c6
+core.autocrlf = true
+filtered / index manifest bytes = 56077
+raw worktree manifest bytes = 56742
+raw worktree CRLF line endings = 665
+raw worktree lone LF line endings = 244
+```
+
+The extra `665` carriage-return bytes account exactly for the raw-versus-filtered
+size difference. The file content did not mutate between gates and no retained
+evidence identity disagreed. The failure arose because the preflight and
+post-latch paths used different identity domains: filtered Git bytes versus raw
+worktree bytes.
+
+The latch was created before any real retained-data read, as required. After the
+latch, the primary JSON was opened and parsed, and its canonical payload,
+schema, and types validated. The primary classification object was accessed and
+its exact field set and schema were validated; the claimed outcome value was
+deliberately not accessed. The post-latch manifest binding then failed before
+that manifest was JSON-parsed. No evidence shard was opened, no record stream
+began, no retained metric or receipt arithmetic was recomputed, no conditional
+classifier ran, and no checker output was serialized or published. No
+trajectory ran.
+
+The permanent synthetic suite did not expose this boundary because its
+synthetic manifest fixtures used uniform LF line endings and bound the raw file
+identity consistently. That test limitation explains why `23 / 23` dedicated
+and `70 / 70` combined tests could pass while the real mixed-line-ending
+worktree stopped at the binding gate. It does not convert the official attempt
+into a scientific result.
+
+#### Evidence separation and bounded status
+
+**Implementation fact.** The checker correctly created its irreversible latch
+before opening retained input and failed closed on the manifest identity
+comparison. Its two binding stages nevertheless used inconsistent byte domains
+for a mixed-line-ending file, a case not represented by the synthetic fixtures.
+
+**Technical observation.** One official invocation consumed authority and
+retained the receipt above. The primary JSON passed structural validation; its
+classification object and exact field set/schema were accessed and validated,
+while its claimed outcome value was not accessed. Manifest validation stopped
+before JSON parsing, and zero shards, stream rows, recomputations, classifier
+calls, or output writes followed.
+
+**Interpretation.** This is a representation-domain defect in the checker
+binding path, not evidence of manifest mutation, corrupt scientific evidence,
+agreement with the primary, or disagreement with the primary. The fail-closed
+behavior protected the evidence boundary, while the official scientific check
+remains absent.
+
+**Hypothesis and scientific status.** Unchanged. The primary RWC1 result remains
+the only scientific result for this candidate and remains explicitly
+primary-only. The exact local reciprocal-work candidate remains
+`rwc1_unsupported_under_tested_conditions` from the primary alone; other laws
+and regimes remain untested. No retry, repair, tuning, replacement selection,
+or new trajectory is authorised by this consumed attempt.
+
+**Not established.** This checkpoint establishes no independent primary
+agreement, direct Question 2 return, physical energy law, locality necessity,
+real-universe connection, Lina capability, TOLOG compatibility, Shared Result,
+Joint IP, licence right, commercial conclusion, or partner permission. No
+private Lina implementation or restricted TOLOG material was used.
+
+This prospective `0.25.38` retention checkpoint has not yet been committed or
+remotely read back, so its own readback claim is false. The technical receipt,
+report, and manifest may be retained as one immutable checkpoint. No checker
+retry, checker repair, checker output, shard read, scientific trajectory,
+primary retry, replacement mechanism, Core or whitepaper promotion, Lina
+action, partner action, or TOLOG implementation occurs here.
