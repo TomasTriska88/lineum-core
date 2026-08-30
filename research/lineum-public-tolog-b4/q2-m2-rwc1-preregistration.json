@@ -1,0 +1,264 @@
+{
+  "authority": {
+    "classification": "workflow_and_scope_authority_for_agent_generated_lineum_only_retrieval_and_preregistration",
+    "partner_message_authorized": false,
+    "rwc1_implementation_authorized": false,
+    "rwc1_scientific_execution_authorized": false,
+    "tolog_implementation_authorized": false
+  },
+  "baseline": {
+    "branches": [
+      "CONTROL",
+      "RECEIPT_ONLY",
+      "PAIR_INTERACTION",
+      "PAIR_FLOW",
+      "PAIR_BOTH",
+      "GLOBAL_POOL_PAIR_BOTH"
+    ],
+    "checkpoints": [0, 1, 10, 100, 500, 1000, 2000, 5000, 10000],
+    "continuation_steps": 10000,
+    "dt": 1.0,
+    "grid_size": 32,
+    "initial_phi": 0.0,
+    "initial_psi": "frozen_sigma_3_centered_complex_gaussian",
+    "kappa": 1.0,
+    "mu": 0.0,
+    "noise": "absent",
+    "perturbation": "none",
+    "preparation_steps": 5000,
+    "rwc1_active_during_preparation": false,
+    "scope_limitation": "a_pass_can_support_only_stabilization_of_the_baseline_prepared_state_and_inherited_phi_stock_not_endogenous_regime_creation_or_maintenance_from_initialization",
+    "stencils": ["LAP4", "LAP8"]
+  },
+  "branch_semantics": {
+    "CONTROL": "historical_unpaired_flow_then_precomputed_interaction",
+    "GLOBAL_POOL_PAIR_BOTH": "pair_precomputed_flow_from_S0_then_pair_precomputed_interaction_against_S1_using_whole_grid_phi_pool",
+    "PAIR_BOTH": "pair_precomputed_flow_from_S0_then_pair_precomputed_interaction_against_S1_and_remaining_local_phi",
+    "PAIR_FLOW": "pair_precomputed_flow_from_S0_then_apply_precomputed_interaction_unpaired",
+    "PAIR_INTERACTION": "apply_precomputed_flow_unpaired_then_pair_precomputed_interaction_against_actual_S1",
+    "RECEIPT_ONLY": "compute_hypothetical_flow_receipt_from_S0_without_mutation_then_hypothetical_interaction_receipt_from_actual_CONTROL_S1_without_mutation",
+    "proposal_snapshot": "delta_flow_and_delta_interaction_are_both_computed_once_from_S0",
+    "receipt_only_control_equality_surface": "checkpoint_psi_phi_arrays_all_common_checkpoint_scalars_and_all_common_technical_event_counts"
+  },
+  "candidate": {
+    "external_reference_available_to_law": false,
+    "id": "RWC1",
+    "name": "local_reciprocal_work_closure",
+    "new_state_field": false,
+    "production_change": false,
+    "provenance": "agent_generated",
+    "proxy": "abs(psi)^2 + phi",
+    "restricted_or_nonpublic_external_material_used": false,
+    "selected_stages": ["phi_gradient_flow", "phi_psi_interaction"],
+    "status": "frozen_before_implementation_or_outcome"
+  },
+  "claim_boundary": {
+    "direct_q2_return_tested": false,
+    "empirically_connected": false,
+    "endogenous_regime_from_initialization_tested": false,
+    "lina_capability_established": false,
+    "locality_necessity_claim_permitted": false,
+    "physical_energy_claim": false,
+    "shared_result_created": false,
+    "tolog_compatibility_established": false
+  },
+  "execution": {
+    "checker_invocations_authorized": 0,
+    "implementation_authorized": false,
+    "primary_invocations_authorized": 0,
+    "remote_publication_claimed": false,
+    "trajectory_executed": false
+  },
+  "global_pool_stage": {
+    "accepted_positive_work": "q * max(w_i, 0)",
+    "available_pool": "A = sum(phi_i + max(-w_i, 0))",
+    "credit": "r_i = phi_i + max(-w_i, 0)",
+    "debit": "D = min(A, P)",
+    "local_residual": "retained_non_gating_locality_diagnostic",
+    "phi_after": "0 if A == 0 else r_i * (remaining / A)",
+    "positive_acceptance_fraction": "q = 1 if P == 0 else D / P",
+    "positive_phase_rule": "same_accepted_fraction_shortest_arc_rule_as_local_stage_with_fraction_q",
+    "positive_work": "P = sum(max(w_i, 0))",
+    "precondition": "all_psi_z_w_phi_finite_and_every_phi_i_nonnegative_before_r_A_P_q",
+    "purpose": "whole_grid_receipt_with_local_supply_requirement_removed",
+    "remaining": "remaining = A - D",
+    "zero_work_branch": "w_i_equal_0_keeps_psi_after_i_equal_z_i_and_contributes_unchanged_phi_i_to_r_i_before_whole_pool_redistribution",
+    "whole_grid_receipt_gate": true
+  },
+  "local_stage": {
+    "negative_work_branch": {
+      "condition": "w < 0",
+      "phi_after": "phi_before - w",
+      "psi_after": "z"
+    },
+    "positive_work_branch": {
+      "accepted": "min(w, phi_before)",
+      "condition": "w > 0",
+      "fraction": "accepted / w",
+      "phi_after": "phi_before - accepted",
+      "psi_after_magnitude": "sqrt(abs(psi_before)^2 + accepted)",
+      "psi_after_phase": "zero_accepted_returns_psi_before; nonzero_psi_before_uses_shortest_arc_theta_in_open_minus_pi_closed_plus_pi_from_phase_psi_before_to_phase_z_scaled_by_fraction; exact_minus_pi_including_signed_zero_antipodal_tie_maps_to_plus_pi; zero_psi_before_uses_phase_z_when_accepted_is_positive"
+    },
+    "proposal": "z = psi_before + unchanged_historical_stage_increment",
+    "receipt_identity": "abs(psi_after)^2 + phi_after = abs(psi_before)^2 + phi_before",
+    "required_precondition": "finite_psi_z_e0_e1_w_phi_and_phi_before_nonnegative",
+    "work": "w = abs(z)^2 - abs(psi_before)^2",
+    "zero_work_branch": {
+      "condition": "w == 0",
+      "interpretation": "historical_proxy_neutral_proposal_not_candidate_specific_phase_projection",
+      "phi_after": "phi_before",
+      "psi_after": "z"
+    }
+  },
+  "metrics": {
+    "centroid_gate": "euclidean_displacement_from_fixed_grid_center_((N-1)/2,(N-1)/2)",
+    "centroid_shift_from_pre": "retained_diagnostic_only",
+    "energy_relative_error_denominator": "abs(pre_total) + 1e-30",
+    "per_step": ["total_psi_energy"],
+    "profile_relative_l2_denominator": "l2(pre_profile) + 1e-30",
+    "receipt_record_schemas": "retention.evidence_record_schemas",
+    "retained_checkpoint_arrays": ["psi_real", "psi_imag", "phi"]
+  },
+  "no_answer_shaping": {
+    "expected_output_in_law": false,
+    "fixture_identity_in_law": false,
+    "immediate_stage_input_in_law": true,
+    "prepared_reference_or_observer_state_in_law": false,
+    "semantic_label_in_law": false,
+    "target_coordinate_in_law": false,
+    "target_energy_in_law": false,
+    "target_profile_in_law": false
+  },
+  "outcome_map": [
+    "rwc1_technical_non_result",
+    "rwc1_local_advantage_clean_gate_passed",
+    "rwc1_clean_gate_passed_locality_not_identified",
+    "rwc1_mixed_or_partial_only",
+    "rwc1_unsupported_under_tested_conditions"
+  ],
+  "outcome_rules": {
+    "full_causal_comparison_set": "energy_error_and_psi_profile_error_at_t1000_and_t10000_under_LAP4_and_LAP8",
+    "local_advantage_interpretation": "observed_advantage_under_protocol_not_locality_necessity",
+    "mixed_or_partial_exact_set": "at_least_one_metric_cell_in_energy_error_or_psi_profile_error_x_t1000_or_t10000_x_LAP4_or_LAP8_improves_over_CONTROL_beyond_comparison_tolerance",
+    "report_local_and_global_absolute_status_separately": true
+  },
+  "planned_paths": {
+    "checker": "research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py",
+    "checker_output": "research/lineum-public-tolog-b4/q2-m2-rwc1-independent-check.json",
+    "checker_test": "tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py",
+    "primary_evidence": "research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work-evidence.jsonl",
+    "primary_execution_receipt": "research/lineum-public-tolog-b4/q2-m2-rwc1-execution-attempt-1.json",
+    "primary_output": "research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work.json",
+    "runner": "research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work.py",
+    "runner_test": "tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work.py"
+  },
+  "retention": {
+    "checker_limitations": [
+      "does_not_independently_prove_primary_selected_argmax_is_worst_unretained_cell",
+      "does_not_recompute_cell_counts_or_sums_without_rerunning_trajectory",
+      "does_not_independently_reproduce_cap_reset_nonfinite_negative_input_or_source_detection_between_retained_checkpoints_and_only_verifies_complete_retained_step_booleans",
+      "verifies_retained_summary_and_classifier_contract_not_every_cellwise_trajectory_receipt"
+    ],
+    "checker_recomputes": [
+      "checkpoint_metrics_from_full_arrays",
+      "trajectory_energy_envelopes_from_per_step_energies",
+      "technical_gate_from_retained_per_step_boolean_telemetry",
+      "aggregate_receipt_arithmetic_from_fixed_receipt_components",
+      "retained_argmax_witness_arithmetic",
+      "cross_branch_comparisons",
+      "conditional_final_outcome_from_independently_derivable_metrics_and_retained_technical_telemetry"
+    ],
+    "evidence_index_maps": {
+      "branch_index": ["CONTROL", "RECEIPT_ONLY", "PAIR_INTERACTION", "PAIR_FLOW", "PAIR_BOTH", "GLOBAL_POOL_PAIR_BOTH"],
+      "checkpoint_index": [0, 1, 10, 100, 500, 1000, 2000, 5000, 10000],
+      "stage_index": ["flow", "interaction"],
+      "stencil_index": ["LAP4", "LAP8"]
+    },
+    "evidence_jsonl": "directly_readable_canonical_utf8_lf_sorted_keys_compact_one_object_per_line_record_index_0_through_400109_finite_json_integers_or_python_shortest_roundtrippable_binary64_no_null_no_sentinel_no_archive_no_binary_no_extraction",
+    "evidence_record_order": [
+      "prepared_state_by_stencil",
+      "checkpoint_state_by_stencil_branch_checkpoint",
+      "step_energy_by_stencil_branch_step",
+      "step_telemetry_by_stencil_branch_step",
+      "local_stage_receipt_by_stencil_branch_step_stage",
+      "global_stage_receipt_by_stencil_step_stage"
+    ],
+    "evidence_step_semantics": "step_is_1_through_10000_inclusive_and_names_the_continuation_update_just_completed_checkpoint_t0_is_pre_continuation_and_never_a_step_energy_step_telemetry_or_receipt_record",
+    "evidence_record_schemas": {
+      "checkpoint_state": {
+        "array_shape": [32, 32],
+        "count": 108,
+        "fields": ["record_index", "record_type", "stencil_index", "branch_index", "checkpoint_index", "step", "psi_real", "psi_imag", "phi"]
+      },
+      "global_stage_receipt": {
+        "count": 40000,
+        "fields": ["record_index", "record_type", "stencil_index", "branch_index", "step", "stage_index", "precondition_passed", "positive_cell_count", "negative_cell_count", "zero_cell_count", "accepted_signed_work_sum", "rejected_positive_work_sum", "sum_abs_accepted_signed_work", "sum_proxy_before", "sum_proxy_after", "aggregate_residual", "aggregate_scale", "P", "A", "D", "q", "remaining", "max_abs_cellwise_residual", "sum_abs_cellwise_residuals"]
+      },
+      "local_stage_receipt": {
+        "argmax_tie_break": "lowest_row_major_flat_index",
+        "count": 120000,
+        "fields": ["record_index", "record_type", "stencil_index", "branch_index", "step", "stage_index", "precondition_passed", "positive_cell_count", "negative_cell_count", "zero_cell_count", "accepted_signed_work_sum", "rejected_positive_work_sum", "sum_abs_accepted_signed_work", "sum_proxy_before", "sum_proxy_after", "aggregate_residual", "aggregate_scale", "max_cellwise_normalized_residual_ratio", "argmax_flat_index", "argmax_row", "argmax_column", "argmax_proxy_before", "argmax_proxy_after", "argmax_accepted_signed_work", "argmax_residual", "argmax_scale"]
+      },
+      "prepared_state": {
+        "array_shape": [32, 32],
+        "count": 2,
+        "fields": ["record_index", "record_type", "stencil_index", "psi_real", "psi_imag", "phi"]
+      },
+      "step_energy": {
+        "count": 120000,
+        "fields": ["record_index", "record_type", "stencil_index", "branch_index", "step", "total_psi_energy"]
+      },
+      "step_telemetry": {
+        "count": 120000,
+        "fields": ["record_index", "record_type", "stencil_index", "branch_index", "step", "psi_cap_contact", "phi_cap_contact", "destructive_reset", "nonfinite_detected", "negative_phi_input_detected", "undeclared_source_detected"]
+      }
+    },
+    "evidence_record_types": [
+      "prepared_state",
+      "checkpoint_state",
+      "step_energy",
+      "step_telemetry",
+      "local_stage_receipt",
+      "global_stage_receipt"
+    ],
+    "evidence_total_records": 400110,
+    "primary_json": "canonical_utf8_lf_sorted_keys_compact_no_nonfinite_tokens",
+    "primary_pass_boolean_is_evidence": false
+  },
+  "runtime": {
+    "backend": "cpu_numpy_deterministic",
+    "numpy": "1.26.4",
+    "python": "3.11.15"
+  },
+  "schema": "lineum.q2-m2-rwc1-preregistration.v2",
+  "source_bindings": {
+    "base_commit": "582637292e52fd752c42e6e35892782c39c60840",
+    "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
+    "localized_reference_runner_git_blob": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "requirements_dev_git_blob": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
+    "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+  },
+  "thresholds": {
+    "absolute_clean_gate_checkpoints": [1, 10, 100, 500, 1000, 2000, 5000, 10000],
+    "center_displacement_from_fixed_grid_center_max_cells": 0.5,
+    "comparison_absolute": 1e-08,
+    "comparison_horizons": [1000, 10000],
+    "comparison_relative": 1e-12,
+    "control_must_fail_one_absolute_clean_gate_at_t10000_per_stencil": true,
+    "energy_fraction_within_radius_6_min": 0.5,
+    "half_energy_radius_change_max_cells": 1.0,
+    "accepted_signed_work_per_cell": "a_i=w_i_when_w_i_le_0_else_accepted_positive_debit",
+    "aggregate_receipt_scale": "max(1,abs(sum_proxy_before),abs(sum_proxy_after),sum_abs_accepted_signed_work)",
+    "argmax_tie_break": "lowest_row_major_flat_index",
+    "cell_receipt_scale": "max(1,abs(proxy_before_i),abs(proxy_after_i),abs(a_i))",
+    "local_cellwise_normalized_residual_ratio_max": 1.0,
+    "local_and_global_aggregate_receipt_multiplier": 1e-10,
+    "negative_paired_stage_phi_allowed": false,
+    "negative_phi_tolerance": 0.0,
+    "phi_radial_profile_relative_l2_max": 0.1,
+    "psi_energy_relative_error_max": 0.05,
+    "psi_radial_profile_relative_l2_max": 0.1,
+    "whole_trajectory_psi_energy_lower_ratio": 0.95,
+    "whole_trajectory_psi_energy_upper_ratio": 1.05
+  }
+}

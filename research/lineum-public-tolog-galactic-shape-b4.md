@@ -1,10 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; the executable classifier now conforms to the frozen nuisance-failure rule; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain; its one retained primary and one independently implemented retained-output check agree on the C0-pass/C1-C3-fail signature, and the final bounded status is `unsupported_under_rs1_tested_conditions`; this does not establish amplitude convergence, continuum independence, direct Q2 return, a physical field, or a Lina capability, and it does not reclassify Q2-M1 attempt 3; all RS1 execution authorities are consumed, the owner-intuition gate is open, and no replacement mechanism, Stage B, direct Q2 step, or additional sweep is authorised; Questions 1 and 3 remain unchanged
-**Version:** 0.25.32 \
-**Evidence cutoff:** 2026-08-18
-**Repository / branch:** `TomasTriska88/lineum-core` / `develop`  
-**Checkpoint parent:** `3a19eb1a0e829ede1626e62d42aabb1dc3500d1e` \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits only agent-generated Lineum-only retrieval and prospective preregistration; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, is now frozen before implementation or outcome; no RWC1 test, trajectory, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, or TOLOG restricted implementation is authorised or executed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.33 \
+**Evidence cutoff:** 2026-08-30
+**Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
+**Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
+**Checkpoint parent:** `582637292e52fd752c42e6e35892782c39c60840` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -20,6 +21,8 @@ Version `0.24.8` records the fresh supported-runtime execution from the exact br
 Version `0.24.9` records the owner's independent post-negative intuition that the missing ingredient may be a description, instruction, or guide for returning toward a prior state, followed by the owner's separate warning that a Lineum field may use swapped or unusual coordinate semantics. A current-code and retained-history audit identifies `mu` as an already implemented slow history field and recovers an earlier public label-retention protocol that explicitly distinguished passive storage from causal reuse. The production directional `phi`-gradient path uses the first array-axis derivative as the real component and the second as the imaginary component while production variable names call them `x` and `y`; both NumPy and PyTorch preserve the same numerical ordering, and the existing B4 runner deliberately mirrors it. No prior B4 Q2 result is invalidated by this naming convention. The next causal-memory discriminator is constrained to begin with `drift_strength = 0`, so the coordinate-sensitive directional `phi`-gradient term is absent from the primary lane. The first emergency report-publication workflow for this checkpoint passed its frozen source-identity gates but stopped before commit because `git diff --check` rejected Markdown trailing spaces on the newly edited evidence-cutoff line. That was a technical transport failure with no scientific execution or retained report change. This version records the corrected transport chronology without changing any scientific result.
 
 Version `0.25.0` freezes `Q2-M1` before any new causal-memory outcome is inspected. The first report-only transport attempt was committed as `2658cb35aee767f8e7f7d788f7e99e4d9ebbf3e2` and GitHub Actions run `31342548699` was rejected before job creation because the workflow definition was invalid YAML; it produced no scientific execution and no report modification. The retry changes only the transport syntax. The scientific protocol reuses the previously registered current-engine structural-memory parameter family, fixes `drift_strength = 0`, and separates a necessary history-reuse gate from the stronger Question 2 return criterion. A history-dependent echo is explicitly insufficient to rescue Q2. No production equation, whitepaper, Q1 result, or Q3 conclusion changes in this preregistration.
+
+Version `0.25.33` preserves the completed Candidate A negative and records the abstract authority classification: agent-generated, Lineum-only retrieval and preregistration are permitted; implementation, execution, and partner action are not. It registers Candidate B `Q2-M2-RWC1`, selects the smallest existing-state reciprocal-work variant after a contradiction and duplication audit, and freezes its exact local exchange law, controls, source identities, runtime, validity gates, bounded outcome map, output paths, and no-answer-shaping boundary before implementation or scientific outcome. No RWC1 code, unit test, trajectory, checker, production equation, whitepaper, Lina runtime, device action, or restricted TOLOG implementation is executed or changed by this checkpoint.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -4104,3 +4107,706 @@ final bounded status = unsupported_under_rs1_tested_conditions
 | physical or Lina interpretation | `not_yet_compared` | no empirical connection | external evidence and separately authorised work |
 
 The canonical RS1 report sequence is complete. Both the one-shot primary and one-shot checker authorities are consumed, no retry is authorised, and the owner-intuition gate is now open. Stop before selecting any replacement mechanism or next experiment.
+
+### Q2-M2-RWC1 agent-generated local reciprocal-work preregistration — version `0.25.33`
+
+#### Plain conclusion, analogy, and practical consequence
+
+**Plain conclusion.** Candidate A remains closed. The next smallest distinct
+Question 2 candidate is an exact local debit/credit rule between the already
+existing `phi` and `psi` states. It is named `RWC1`, for local reciprocal-work
+closure. This section freezes the candidate before implementation or outcome.
+It contains no scientific result.
+
+**Everyday analogy.** The current model can put water into one cup without
+taking the same amount from the neighbouring cup that supposedly supplied it.
+RWC1 adds only the missing receipt: water gained by `psi` must be debited from
+local `phi`, and water lost through the same exchange is returned to local
+`phi`. No mark on either cup says how full it should become.
+
+**Practical consequence.** RWC1 can test whether the present one-way
+`phi -> psi` work paths are the missing balance relation. It cannot yet show a
+natural return, solve Question 2, establish physical energy, or establish a
+Lina capability. The first permitted scientific result would be only a clean
+stationarity prerequisite for a later, separately authorised perturbation
+test.
+
+#### Authority and provenance
+
+The authority classification permits agent-generated, Lineum-only retrieval
+and prospective preregistration for this checkpoint.
+
+```text
+candidate provenance = agent-generated
+independent external mechanism input = none
+scientific evidence supplied by authority = none
+TOLOG implementation authority = none
+RWC1 implementation authority = none
+RWC1 scientific execution authority = none
+partner-message authority = none
+```
+
+Candidate A is not reopened, retuned, reinterpreted, or rescued. Its
+`unsupported_under_rs1_tested_conditions` status, retained primary, checker,
+thresholds, and reopen condition remain immutable.
+
+#### Failure localization inherited before candidate selection
+
+The retained public B4 evidence already separates four facts:
+
+1. the localized baseline did not complete a natural reciprocal return;
+2. changing the observer did not rescue any case;
+3. Stage A classified the positive local `psi` gain as dominated by
+   `phi`-dependent paths with no contemporaneous tracked debit;
+4. making the perturbation neutral under the declared implementation ledger
+   rescued no eligible case.
+
+RS1 then constrained only the `mu`-only causal-guide candidate. It did not
+execute a reciprocal `phi`/`psi` work law.
+
+The active Core source independently exposes the same narrow accounting
+asymmetry. Its mode-coupling stage explicitly credits `phi` while reducing
+`|psi|^2`. Its `phi` interaction and `phi`-gradient flow paths can instead
+increase `|psi|^2` without an equal same-stage debit from `phi`. This is an
+implementation fact about the declared scalar ledger, not a claim that
+`|psi|^2 + phi` is physical energy.
+
+#### Retrieval and reopenable variant ledger
+
+Existing-hypothesis retrieval preceded selection. The current Core report,
+foundation ledgers, active source, retained runner family, and historical
+candidate registry were inspected directly. A contamination check found no
+imported restricted TOLOG material or non-public external implementation.
+
+| ID | Candidate class | Current status | Why it is distinct | Cheapest discriminator or reopen condition |
+|---|---|---|---|---|
+| `A` | `mu`-only causal guide | `unsupported_under_rs1_tested_conditions` | passive history without sufficient causal steering | new owner-directed hypothesis; no reuse of RS1 |
+| `B/RWC1` | local reciprocal work between existing `phi` and `psi` | `preregistered_not_implemented_not_executed` | no memory guide, set point, new field, or target state; it closes two existing one-way work paths | the frozen clean two-stencil Stage A below |
+| `B2` | delayed local feedback from normalized source/loss imbalance | `dormant_new_controller_state` | adds a controller memory and risks becoming an imposed numerical homeostat | only if RWC1 closes as a valid negative and a new protocol proves no target leakage |
+| `B3` | finite-cost dynamic `kappa` | `dormant_existing_M4_class` | changes the scaffold rather than closing current work | only after an existing-state candidate is insufficient and construction/debit observables are defined |
+| `B4` | external-set-point integral control | `rejected_for_current_test` | robust-adaptation literature motivates it, but it encodes a desired level and is not endogenous target-free balance | a new question that explicitly permits a set point |
+| `N0` | no existing-state reciprocal law yields the required bounded regime | `retained_null` | preserves the possibility that a missing state or different equation is required | a valid RWC1 pass rejects this null only inside the tested domain |
+
+No non-public comparison mechanism is described, imported, or treated as
+RWC1 evidence.
+
+#### External mechanism comparison
+
+Four external literatures motivate controls but do not validate RWC1:
+
+- Yi, Huang, Simon, and Doyle, *Robust perfect adaptation in bacterial
+  chemotaxis through integral feedback control*, PNAS 97 (2000),
+  DOI `10.1073/pnas.97.9.4649`, explains why a stable feedback loop with an
+  explicit set point can produce robust adaptation. RWC1 deliberately has no
+  set point and therefore does not inherit that guarantee.
+- Briat, Gupta, and Khammash, *Antithetic Integral Feedback Ensures Robust
+  Perfect Adaptation in Noisy Biomolecular Networks*, Cell Systems 2 (2016),
+  DOI `10.1016/j.cels.2016.01.004`, adds controller species and a regulated
+  target in a stochastic biochemical network. RWC1 adds neither.
+- van der Schaft and Maschke, *Port-Hamiltonian Systems on Graphs*, SIAM
+  Journal on Control and Optimization 51 (2013),
+  DOI `10.1137/110840091`, formalizes storage, dissipation, and port exchange
+  on graphs. It motivates explicit local receipts, not the assertion that the
+  Lineum proxy is a Hamiltonian.
+- Vogels, Sprekeler, Zenke, Clopath, and Gerstner, *Inhibitory Plasticity
+  Balances Excitation and Inhibition in Sensory Pathways and Memory
+  Networks*, Science 334 (2011), DOI `10.1126/science.1211095`, shows in a
+  neural model that adaptive opposition can maintain a functional regime.
+  It neither supplies the RWC1 law nor establishes a biological mapping.
+
+The shared mathematical idea is opposing, state-coupled flow. The decisive
+mismatch is that RWC1 tests an exact, deterministic, target-free
+implementation ledger on a periodic numerical field. No empirical data,
+calibrated unit, biological component, or measured physical field enters the
+test. `empirically_connected = false`.
+
+#### Frozen source and runtime bindings
+
+```text
+repository = TomasTriska88/lineum-core
+base commit = 582637292e52fd752c42e6e35892782c39c60840
+lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
+localized reference runner Git blob = 1598faf0f39e056c1684f767c2554edc63283ca4
+requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
+requirements-dev.txt Git blob = 7a0907e3e6c2d15400d19b536227a509910ae7e9
+Python = 3.11.15
+NumPy = 1.26.4
+backend = deterministic CPU / NumPy
+```
+
+Any source or environment mismatch fails closed before a scientific
+trajectory. No unlisted interpreter, dependency set, backend, source identity,
+or workspace is an accepted substitute.
+
+The machine-readable companion protocol is:
+
+```text
+path = research/lineum-public-tolog-b4/q2-m2-rwc1-preregistration.json
+role = frozen documentation-only RWC1 protocol before implementation or outcome
+bytes = 13893
+SHA-256 = ffb472628248b663d370ff3006498c336871ab3260ea5fc22e6dbd88e26e5134
+Git blob = 00944d30d73a4d6842342d8333fc1f7e2f409fee
+```
+
+It is indexed by exact byte length, SHA-256, and Git blob in
+`research/lineum-public-tolog-b4/artifact-manifest.json`. Verify its syntax
+without executing a trajectory with:
+
+```powershell
+python -c "import json,pathlib; p=pathlib.Path('research/lineum-public-tolog-b4/q2-m2-rwc1-preregistration.json'); json.loads(p.read_text(encoding='utf-8')); print('valid')"
+```
+
+#### Frozen RWC1 local stage law
+
+For one selected `phi`-dependent `psi` stage at one cell, let:
+
+```text
+p = psi immediately before the stage
+z = p + the unchanged historical proposed stage increment
+e0 = |p|^2
+e1 = |z|^2
+w = e1 - e0
+b = phi immediately before this paired stage
+```
+
+Before any arithmetic, require finite `p`, `z`, `e0`, `e1`, `w`, and `b`,
+and require `b >= 0`. Any failure stops the complete scientific payload
+without replacement or clipping.
+
+If `w < 0`:
+
+```text
+psi_after = z
+phi_after = b - w
+```
+
+If `w = 0`, set `psi_after = z` and `phi_after = b`. This preserves the
+historical proxy-neutral proposal exactly and introduces no candidate-specific
+phase projection: `CONTROL` applies the same `z`. Zero-work cells are counted
+separately, and companion tests must freeze this equality and bound the claim
+to the declared scalar proxy.
+
+If `w > 0`:
+
+```text
+accepted = min(w, b)
+fraction = accepted / w
+rho = sqrt(e0 + accepted)
+
+if accepted = 0:
+    psi_after = p
+else if p = 0:
+    psi_after = rho * z / |z|
+else:
+    theta = atan2(imag(z * conjugate(p)), real(z * conjugate(p)))
+    map an exact theta = -pi, including the signed-zero antipodal tie, to +pi
+    psi_after = rho * (p / |p|) * exp(i * fraction * theta)
+
+phi_after = b - accepted
+```
+
+Thus `theta` is always in `(-pi, pi]`. This accepted-fraction shortest-arc
+rule freezes the phase edge before any
+outcome. Zero accepted work leaves `psi` exactly unchanged; full acceptance
+recovers `z`; partial acceptance cannot take the full proposed phase change
+for a smaller debit. Because `w > 0` implies `z != 0`, the `p = 0` branch is
+defined whenever `accepted > 0`. At every cell and local paired stage:
+
+```text
+|psi_after|^2 + phi_after
+=
+|psi_before|^2 + phi_before
+```
+
+within the frozen floating-point accounting tolerance.
+
+The historical proposal itself is not changed. At the start of one complete
+historical step, freeze `S0 = (psi0, phi0)` and compute both historical
+increments `delta_flow(S0)` and `delta_interaction(S0)` exactly once. The
+branch semantics are then exact:
+
+```text
+CONTROL:
+  S1 = historical unpaired flow applied to S0
+  S2 = historical precomputed interaction applied to S1
+
+RECEIPT_ONLY:
+  compute a hypothetical local flow receipt from S0 without mutation
+  set S1 exactly as CONTROL
+  compute a hypothetical local interaction receipt from actual CONTROL S1
+  set S2 exactly as CONTROL
+
+PAIR_FLOW:
+  S1 = pair S0 with the precomputed flow increment
+  S2 = apply the precomputed interaction to S1 without pairing
+
+PAIR_INTERACTION:
+  S1 = historical unpaired flow applied to S0
+  S2 = pair S1 with the precomputed interaction increment
+
+PAIR_BOTH and GLOBAL_POOL_PAIR_BOTH:
+  S1 = pair S0 with the precomputed flow increment
+  S2 = pair S1 and its remaining phi stock with the precomputed interaction
+       increment
+```
+
+The existing post-flow guard remains in its historical location. Any contact
+still fails the candidate. Linear dissipation, `psi` diffusion, mode
+coupling, `phi` diffusion, coefficients, timestep, boundary, and all later
+update ordering remain unchanged.
+
+RWC1 contains:
+
+```text
+no target energy
+no target profile
+no target coordinate
+no prepared/reference/observer state available to the law
+no semantic label
+no fixture identity
+no output-dependent parameter
+no new state field
+no external reservoir
+no random source
+```
+
+The immediate stage inputs `p` and `b` are necessarily read by the local law.
+They are distinct from the frozen prepared `pre` snapshot used only by the
+observer after evolution. The candidate cannot read that prepared snapshot,
+an expected output, or any future state.
+
+#### Global-pool locality control
+
+`GLOBAL_POOL_PAIR_BOTH` uses the same proposed per-cell work but allows
+positive work at one cell to borrow `phi` stock from the complete grid. It
+must fail closed before arithmetic unless every `psi_i`, proposed `z_i`,
+derived `w_i`, and `phi_i` is finite and every `phi_i >= 0`. For each paired
+stage:
+
+```text
+negative work is accepted
+r_i = phi_i + max(-w_i, 0)
+P = sum(max(w_i, 0))
+A = sum(r_i)
+D = min(A, P)
+q = 1 when P = 0, otherwise D / P
+positive-cell accepted work = q * w_i
+remaining = A - D
+phi_after_i = 0 when A = 0, otherwise r_i * (remaining / A)
+```
+
+Negative-work cells retain their proposed `z_i`. Exact zero-work cells also
+retain `z_i` and contribute unchanged `phi_i` to `r_i` before the declared
+whole-pool redistribution. Positive-work cells use the
+same accepted-fraction shortest-arc rule as the local stage with
+`accepted_i = q*w_i`; therefore `q = 0` leaves them unchanged and `q = 1`
+recovers their full proposal. This branch preserves the whole-grid proxy
+receipt but deliberately need not preserve it cell by cell. Its cellwise
+residual is retained as a non-gating locality diagnostic. It is a control,
+not a production candidate.
+
+#### Frozen baseline, branches, and horizon
+
+Use exactly two deterministic starting states:
+
+```text
+grid = 32 x 32 periodic
+initial psi = the frozen sigma-3 centered complex Gaussian
+initial phi = 0 at every cell
+kappa = 1 at every cell
+mu = 0 at every cell
+noise = absent
+dt = 1
+stencils = LAP4 and LAP8
+preparation = 5000 unchanged clean baseline steps
+continuation = 10000 steps
+perturbation = none
+```
+
+For each stencil, clone the prepared `pre` arrays exactly into these six
+continuation branches:
+
+```text
+CONTROL
+RECEIPT_ONLY
+PAIR_INTERACTION
+PAIR_FLOW
+PAIR_BOTH
+GLOBAL_POOL_PAIR_BOTH
+```
+
+`CONTROL` is the unchanged historical continuation.
+`RECEIPT_ONLY` computes every proposed work receipt but mutates no state and
+must remain exactly identical to `CONTROL` on the equality surface frozen
+below. `PAIR_INTERACTION` and
+`PAIR_FLOW` pair one path each for causal attribution. `PAIR_BOTH` is the
+primary local candidate. `GLOBAL_POOL_PAIR_BOTH` is the locality control.
+
+RWC1 is activated only after the 5000-step unchanged preparation and inherits
+the `phi` stock created by that historical preparation. A pass can therefore
+support only stabilization of this baseline-prepared state and reservoir. It
+cannot establish that RWC1 creates, selects, or maintains an endogenous
+regime from initialization. Any RWC1-from-initialization lane requires a new
+preregistration and authority.
+
+No perturbation, coefficient sweep, alternate starting amplitude, extra
+grid, extra timestep, extra horizon, retry, or hidden exploratory branch is
+part of this protocol.
+
+#### Checkpoints and frozen observables
+
+Retain full scientific measurements at:
+
+```text
+t = 0, 1, 10, 100, 500, 1000, 2000, 5000, 10000
+```
+
+For every branch and checkpoint record:
+
+- full `psi` real/imaginary arrays and the full `phi` array;
+- total `sum(|psi|^2)` and absolute relative error from `pre`, with denominator
+  `abs(pre_total) + 1e-30`;
+- radial `|psi|^2` profile and relative L2 error from `pre`, with denominator
+  `L2(pre_profile) + 1e-30`;
+- radial `phi` profile and relative L2 error from `pre`, with the same
+  denominator rule;
+- half-energy radius and its absolute change from `pre`;
+- energy centroid row and column, displacement from the fixed grid centre
+  `((N - 1) / 2, (N - 1) / 2)`, and centroid shift from `pre`; the inherited
+  `0.5` gate applies to fixed-centre displacement, not the shift diagnostic;
+- energy fraction within radii 3, 6, and 10;
+- `phi` minimum, mean, maximum, and total;
+- maximum `|psi|`;
+- cap contact, reset, non-finite, and failure telemetry;
+- accepted, rejected, positive, and negative work by paired stage;
+- local and whole-grid proxy closure residuals.
+
+For every branch and every continuation step, retain total `psi` energy and a
+fixed technical-telemetry row. Each
+attempted local paired stage retains its positive/negative/zero cell counts,
+accepted signed work sum, rejected positive work sum, sum of absolute accepted
+signed work, aggregate proxy
+components, aggregate residual and scale, and the maximum cellwise normalized
+residual ratio. It also retains the row/column and raw proxy-before,
+proxy-after, accepted-work, residual, and scale at the argmax of that ratio;
+ties use the lowest row-major flat index. Each global-pool stage retains the
+same aggregate components plus `P`, `A`, `D`, `q`, `remaining`, and non-gating
+cellwise residual diagnostics.
+
+For both local and global receipt accounting, define per-cell accepted signed
+work as `a_i = w_i` when `w_i <= 0` and as the accepted positive debit when
+`w_i > 0`; rejected work is only `max(w_i - a_i, 0)`. The aggregate scale uses
+`sum_i(abs(a_i))`.
+
+`RECEIPT_ONLY == CONTROL` means byte-identical `psi` and `phi` arrays at every
+checkpoint and equality of every common checkpoint scalar and common
+technical event count. Receipt-only diagnostic rows are intentionally outside
+that equality surface because `CONTROL` does not compute them.
+
+All scalars are implementation observables. They are not physical energy,
+mass, temperature, intelligence, correction quality, or consciousness.
+
+#### Numerical and fidelity gates
+
+The implementation is scientifically non-interpretable unless all gates
+pass:
+
+1. exact base commit, source blobs, runtime, backend, branch set, and
+   checkpoint set;
+2. byte-identical starting clones within each stencil;
+3. `RECEIPT_ONLY` equals `CONTROL` exactly at every retained array,
+   checkpoint scalar, and technical event count;
+4. the new helper reproduces the unchanged flow and interaction proposals
+   exactly before pairing;
+5. no branch uses a cap contact, destructive reset, non-finite replacement,
+   any negative paired-stage `phi` input, or an undeclared source; there is no
+   negative-`phi` tolerance, clipping, or repair;
+6. every local receipt in `RECEIPT_ONLY`, `PAIR_FLOW`,
+   `PAIR_INTERACTION`, and `PAIR_BOTH` satisfies the following inequality for
+   every cell and for the whole-grid aggregate; `GLOBAL_POOL_PAIR_BOTH` must
+   satisfy it only for the whole-grid aggregate, while its cellwise residual
+   remains non-gating:
+
+```text
+cell_scale_i = max(1, abs(proxy_before_i), abs(proxy_after_i), abs(a_i))
+cell_ratio_i = abs(residual_i) / (1e-10 * cell_scale_i)
+max_i(cell_ratio_i) <= 1
+
+aggregate_scale = max(1, abs(sum_proxy_before), abs(sum_proxy_after),
+                      sum_i(abs(a_i)))
+abs(aggregate_residual) <= 1e-10 * aggregate_scale
+```
+
+7. `CONTROL` must reproduce the known clean-drift phenotype by failing at
+   least one absolute clean-stationarity condition at `t=10000` under each
+   stencil; otherwise the baseline is not faithful and the run is a
+   technical non-result;
+8. phase edge tests must prove: an exact zero-work proposal matches the
+   historical proposal, zero accepted positive work returns
+   byte-identical `p`, full acceptance returns `z` within the receipt
+   tolerance, the `p = 0` branch is finite, the antipodal signed-zero tie maps
+   to `+pi`, and no full proposed phase change occurs for a partial debit;
+9. two complete future fresh-process scientific payloads are prohibited;
+   only one primary trajectory execution is permitted. Deterministic-law test
+   coverage and retained-output consistency/classifier verification must
+   instead be established without claiming trajectory reproduction.
+
+The ordinary cross-branch comparison tolerance is:
+
+```text
+1e-8 + 1e-12 * max(abs(reference), abs(candidate))
+```
+
+It distinguishes numerical equality from a directional improvement and may
+not be widened after output inspection.
+
+#### Frozen clean-stationarity eligibility gate
+
+`PAIR_BOTH` becomes eligible for a later, separately authorised direct
+Question 2 perturbation protocol only when all of the following hold under
+both LAP4 and LAP8 at every retained nonzero checkpoint (`t=1`, `10`, `100`,
+`500`, `1000`, `2000`, `5000`, and `10000`):
+
+```text
+total psi-energy relative error from pre <= 0.05
+psi radial-profile relative L2 error from pre <= 0.10
+phi radial-profile relative L2 error from pre <= 0.10
+half-energy-radius absolute change from pre <= 1 cell
+fixed-centre centroid displacement <= 0.5 cell
+energy fraction within radius 6 >= 0.5
+finite = true
+reset-free = true
+psi-cap-free = true
+phi-cap-free = true
+```
+
+Across every continuation step, total `psi` energy must remain inside the
+closed interval `[0.95 * pre_total, 1.05 * pre_total]`. At both comparison
+horizons `t=1000` and `t=10000` and under both stencils, `PAIR_BOTH` must beat
+`CONTROL` in total
+`psi`-energy error and `psi` radial-profile error by more than the ordinary
+comparison tolerance. Otherwise no causal improvement is claimed.
+
+To record a specifically **local advantage**, `PAIR_BOTH` must also
+beat `GLOBAL_POOL_PAIR_BOTH` in `psi` radial-profile error by more than the
+ordinary comparison tolerance at both horizons and under both stencils.
+Failure of that comparison means locality is not identified by this protocol;
+it does not imply that only global accounting works. The absolute pass/fail
+statuses of both local and global branches must always be reported separately.
+
+These thresholds are inherited from the existing B4 full-state return
+observer rather than selected from any RWC1 output. Passing this clean gate
+is not a Question 2 return result because no perturbation occurs.
+
+#### Frozen outcome map and kill criteria
+
+Classify the one future primary in this exact order:
+
+1. `rwc1_technical_non_result` if any identity, runtime, fidelity,
+   serialization, finite-state, receipt, clone, or `RECEIPT_ONLY` gate fails;
+2. `rwc1_local_advantage_clean_gate_passed` if `PAIR_BOTH` passes every clean
+   stationarity and causal-improvement condition and records the frozen local
+   advantage under both stencils;
+3. `rwc1_clean_gate_passed_locality_not_identified` if `PAIR_BOTH` passes the
+   absolute clean-stationarity and control-improvement gates but does not meet
+   the local-advantage comparison; report the global branch's independent
+   pass status without converting this category into a necessity claim;
+4. `rwc1_mixed_or_partial_only` if at least one cell in the exact comparison
+   set `{total psi-energy error, psi radial-profile error}` x
+   `{t=1000, t=10000}` x `{LAP4, LAP8}` improves against `CONTROL` by more
+   than the ordinary comparison tolerance but the complete gate fails;
+5. `rwc1_unsupported_under_tested_conditions` for any other valid result.
+
+For this protocol, `psi` collapse means total `psi` energy leaves the lower
+`0.95 * pre_total` bound at any continuation step. Loss of localization means
+the radius-6 energy fraction is below `0.5` at any retained checkpoint. Any
+cap/reset dependency, defined collapse, defined loss of localization, receipt
+failure, target-state access, post-outcome parameter change, or failure in
+either stencil kills RWC1 as a local clean-stationarity candidate under the
+tested conditions. No threshold relaxation, coefficient tuning, alternate
+phase rule, larger `phi` stock, extra grid, second primary, or result-driven
+branch may rescue it.
+
+The one-path branches are attribution controls only. Their success cannot
+override a `PAIR_BOTH` failure.
+
+#### Frozen implementation, output, and checker sequence
+
+If separately authorised after this preregistration is committed, pushed,
+and remotely read back, implementation may add only:
+
+```text
+runner =
+  research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work.py
+
+permanent non-scientific tests =
+  tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work.py
+
+primary output =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work.json
+
+primary retained evidence =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work-evidence.jsonl
+
+primary execution receipt =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-execution-attempt-1.json
+
+primary stderr/progress =
+  external temporary capture, summarized in the durable receipt
+
+checker =
+  research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py
+
+checker test =
+  tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py
+
+checker output =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-independent-check.json
+```
+
+Companion tests must cover branch identity, unchanged proposal equivalence,
+positive/negative/zero work, insufficient local stock, accepted-fraction
+shortest-arc phase edges, nonnegative `phi`, local and global closure, global-pool
+allocation, fail-closed non-finite input, frozen branch/checkpoint maps,
+outcome-map boundaries, and a test proving that no prepared/reference state or
+expected output enters the candidate law. Tests may use synthetic arrays only
+and may not execute a scientific trajectory.
+
+The primary JSON and evidence JSONL are directly readable canonical UTF-8
+with LF line endings, sorted object keys, compact separators, and no
+NaN/Infinity tokens. The primary contains source, runtime, execution, schema,
+branch, checkpoint, comparison, outcome, and evidence-file identities, but
+its self-reported classification is never the checker input of authority.
+Every evidence line is one complete JSON object with a monotonically
+increasing integer `record_index` from `0` through `400109` and one declared
+`record_type`. All numeric values must be finite JSON integers or binary64
+values serialized by Python's shortest round-trippable finite-float
+representation. The
+evidence JSONL SHA-256 and byte length are recorded in the primary JSON and
+execution receipt; no archive, binary container, extraction, decoding, or
+pickled object is permitted.
+
+The exact index maps are:
+
+```text
+stencil_index: 0=LAP4, 1=LAP8
+branch_index: 0=CONTROL, 1=RECEIPT_ONLY, 2=PAIR_INTERACTION,
+              3=PAIR_FLOW, 4=PAIR_BOTH, 5=GLOBAL_POOL_PAIR_BOTH
+checkpoint_index: 0..8 maps in order to 0,1,10,100,500,1000,2000,5000,10000
+stage_index: 0=flow, 1=interaction
+step in step_energy, step_telemetry, and both receipt schemas: 1..10000
+inclusive; it names
+the continuation update just completed; checkpoint t=0 is the state before
+continuation and is never a step_energy, step_telemetry, or receipt row
+```
+
+Records occur only in this order and with these exact counts and schemas:
+
+```text
+2 prepared_state records, ordered by stencil_index:
+  record_index, record_type, stencil_index,
+  psi_real[32][32], psi_imag[32][32], phi[32][32]
+
+108 checkpoint_state records, ordered by stencil_index, branch_index,
+checkpoint_index:
+  record_index, record_type, stencil_index, branch_index, checkpoint_index,
+  step, psi_real[32][32], psi_imag[32][32], phi[32][32]
+
+120000 step_energy records, ordered by stencil_index, branch_index, step:
+  record_index, record_type, stencil_index, branch_index, step,
+  total_psi_energy
+
+120000 step_telemetry records, ordered by stencil_index, branch_index, step:
+  record_index, record_type, stencil_index, branch_index, step,
+  psi_cap_contact, phi_cap_contact, destructive_reset, nonfinite_detected,
+  negative_phi_input_detected, undeclared_source_detected
+
+120000 local_stage_receipt records, ordered by stencil_index, branch_index,
+step, stage_index, for RECEIPT_ONLY(two stages), PAIR_INTERACTION(interaction),
+PAIR_FLOW(flow), and PAIR_BOTH(two stages):
+  record_index, record_type, stencil_index, branch_index, step, stage_index,
+  precondition_passed, positive_cell_count, negative_cell_count,
+  zero_cell_count, accepted_signed_work_sum, rejected_positive_work_sum,
+  sum_abs_accepted_signed_work, sum_proxy_before, sum_proxy_after,
+  aggregate_residual, aggregate_scale,
+  max_cellwise_normalized_residual_ratio, argmax_flat_index, argmax_row,
+  argmax_column, argmax_proxy_before, argmax_proxy_after,
+  argmax_accepted_signed_work, argmax_residual, argmax_scale
+
+40000 global_stage_receipt records, ordered by stencil_index, step,
+stage_index, for GLOBAL_POOL_PAIR_BOTH(two stages):
+  record_index, record_type, stencil_index, branch_index, step, stage_index,
+  precondition_passed, positive_cell_count, negative_cell_count,
+  zero_cell_count, accepted_signed_work_sum, rejected_positive_work_sum,
+  sum_abs_accepted_signed_work, sum_proxy_before, sum_proxy_after,
+  aggregate_residual, aggregate_scale, P, A, D, q, remaining,
+  max_abs_cellwise_residual, sum_abs_cellwise_residuals
+```
+
+Every object has exactly its listed keys; there are no null, sentinel, extra,
+or omitted fields. Array nesting supplies the frozen shape, and all state
+values are finite binary64 numbers. The checker rejects a missing, extra,
+reordered, duplicate, malformed, non-finite, wrong-key, wrong-shape, or
+wrong-count record.
+
+The checker independently recomputes checkpoint metrics from retained full
+arrays, whole-trajectory upper/lower envelopes from per-step energies, the
+technical gate from retained per-step telemetry, aggregate receipt arithmetic
+and the retained argmax witness arithmetic, all cross-branch comparisons, and
+the final outcome. It cannot independently prove that the primary-selected
+argmax is the worst unretained cell or recompute cell counts and sums without
+rerunning the trajectory. It also cannot independently reproduce cap/reset/
+non-finite/negative-input/source detection from states between retained
+checkpoints; it verifies the complete retained per-step Boolean telemetry and
+applies the frozen gate to it. Those
+cellwise trajectory facts remain primary sufficient-statistic observations,
+with the law and argmax algorithm separately covered by permanent synthetic
+full-array tests. The checker therefore verifies the retained summary and
+classifier contract, not every cellwise trajectory receipt, and never treats
+a primary pass Boolean as evidence.
+
+After a future one-shot primary is durably incorporated into this report, a
+separately implemented checker may be authored. It must read retained output
+only, import neither the primary runner nor its classifier, execute no
+trajectory, independently recompute every independently derivable retained
+metric and comparison plus the aggregate and witness receipt arithmetic, and
+recompute the conditional outcome from those quantities and the retained
+technical telemetry. All claims remain subject to the explicit limitations
+above; the checker verifies rather than reproduces the unrecomputed primary
+trajectory observations. It receives its own one-shot invocation limit.
+
+Any success, failure, interruption, malformed output, identity mismatch, or
+wrapper failure consumes the relevant one-shot authority. Technical failure
+is retained; no automatic retry follows.
+
+#### Evidence and claim boundary
+
+**Implementation fact.** The current public Core has paired mode-coupling in
+one direction and unpaired `phi`-dependent `psi` work in the other paths.
+RWC1 is a new research-only law, not current Core behavior.
+
+**Observation.** No RWC1 implementation test, trajectory, output, or checker
+exists at this checkpoint.
+
+**Interpretation.** Exact reciprocal local work is the cheapest
+existing-state discriminator after the verified unpaired-source and
+`mu`-only-guide negatives. Minimality is a selection rationale, not evidence
+that it is correct.
+
+**Hypothesis.** If the current drift of the baseline-prepared state is
+materially caused by missing reciprocity, `PAIR_BOTH` should remain nontrivial
+and pass the frozen clean two-stencil stationarity gate while outperforming
+the unchanged control. Beating the global-pool control would record a local
+advantage under this protocol, not prove locality is necessary.
+
+**Not established.** This preregistration establishes no natural attractor,
+direct perturbation return, physical energy conservation, Hamiltonian
+structure, biological homeostasis, gravity, quantum behavior, cosmology,
+intelligence, self-correction, Lina capability, TOLOG compatibility,
+commercial conclusion, Shared Result, Joint IP, licence right, or
+publication right.
+
+This documentation-only checkpoint is prepared on a dedicated local branch.
+Remote publication and readback are not claimed. No implementation or
+scientific execution may begin until one explicit owner authorization names
+the frozen RWC1 bounded-completion sequence.

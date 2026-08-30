@@ -89,6 +89,12 @@
       "commit": "87fb24568f32cd926abeab8331ad93e39ef52e1d",
       "role": "retained Q2-SA1-A primary eight-case result"
     },
+    "research/lineum-public-tolog-b4/q2-m2-rwc1-preregistration.json": {
+      "bytes": 13893,
+      "git_blob_sha": "00944d30d73a4d6842342d8333fc1f7e2f409fee",
+      "role": "frozen Q2-M2-RWC1 documentation-only preregistration before implementation or scientific outcome",
+      "sha256": "ffb472628248b663d370ff3006498c336871ab3260ea5fc22e6dbd88e26e5134"
+    },
     "research/runners/lineum_b4_q2_ledger_neutral_control_check.py": {
       "git_blob_sha": "0b9ecc9f56aa943cf37f2c84409446608888b4a6",
       "role": "repaired separately implemented Q2-PV1-B independent checker used by passing fresh run"
@@ -657,6 +663,26 @@
     "continuity_report_version": "0.25.32",
     "continuity_report_git_blob": "9df151f5a3a4334455de7df518e44ed43b9c31ca"
   },
+  "q2_m2_rwc1": {
+    "authority": "agent_generated_lineum_only_retrieval_and_preregistration",
+    "candidate": "local_reciprocal_work_closure_between_existing_phi_and_psi",
+    "candidate_a_reopened": false,
+    "checker_invocations_authorized": 0,
+    "continuity_report_git_blob": "3f84cd8e19d70814502404192edf10467ff5a950",
+    "continuity_report_version": "0.25.33",
+    "direct_q2_test": false,
+    "implementation_authorized": false,
+    "new_state_field": false,
+    "owner_generated_mechanism": false,
+    "protocol_schema": "lineum.q2-m2-rwc1-preregistration.v2",
+    "primary_invocations_authorized": 0,
+    "production_change": false,
+    "protocol_path": "research/lineum-public-tolog-b4/q2-m2-rwc1-preregistration.json",
+    "remote_publication_claimed": false,
+    "restricted_tolog_material_used": false,
+    "scientific_status": "preregistered_not_implemented_not_executed",
+    "trajectory_executed": false
+  },
   "schema": "lineum-public-tolog-b4-readable-artifacts/4",
   "source_recovery": {
     "archive_tar_bytes": 153600,
@@ -673,5 +699,5 @@
     "test_sha256": "95a5892f140543361eaffbee311016869e780f9bd21c559757b02b427f3b19ec"
   },
   "source_report": "research/lineum-public-tolog-galactic-shape-b4.md",
-  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, spatial-accounting, perturbation-ledger, and ledger-neutral-control evidence"
+  "subject": "Lineum Public-TOLOG Three-Question Benchmark B4 localized-L1, observer, spatial-accounting, perturbation-ledger, ledger-neutral-control, causal-memory, and RWC1 preregistration evidence"
 }
