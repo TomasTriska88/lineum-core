@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; technical, schema, source-identity, runtime, serialization, and local/global receipt gates passed, but the frozen `PAIR_BOTH` absolute-clean and causal-improvement gates failed; the valid primary-only outcome is `rwc1_unsupported_under_tested_conditions`; no tuning or retry is authorised or performed; the retained-output checker remains unimplemented and unconsumed at `0 / 1`; no direct Q2 return step, Core equation, whitepaper, Lina runtime, device action, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
-**Version:** 0.25.36 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; Candidate B `Q2-M2-RWC1`, a research-only local reciprocal-work closure between existing `phi` and `psi`, has consumed its one authorised primary and retained the exact primary, execution receipt, and six readable evidence shards; technical, schema, source-identity, runtime, serialization, and local/global receipt gates passed, but the frozen `PAIR_BOTH` absolute-clean and causal-improvement gates failed; the valid primary-only outcome remains `rwc1_unsupported_under_tested_conditions`; no tuning or retry is authorised or performed; the standalone retained-output checker and its permanent tests are now frozen after `23 / 23` dedicated and `70 / 70` combined non-scientific tests, but the real checker remains uninvoked and unconsumed at `0 / 1`, with no checker receipt or output; implementer and reviewer saw the public high-level primary outcome label but did not read the primary JSON, evidence shards, measurements, or primary runner, so full label blindness is not claimed; no direct Q2 return step, new trajectory, Core equation, whitepaper, Lina runtime, device action, partner action, restricted TOLOG implementation, TOLOG compatibility claim, or Lina capability claim is created; Questions 1 and 3 remain unchanged
+**Version:** 0.25.37 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `f0b373f49821d23cbfb16be62fd25feae0a920a5` \
+**Checkpoint parent:** `7db2b781260e70b214cb9a2bb8b52cfd34f5f602` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -29,6 +29,8 @@ Version `0.25.34` separately records bounded-completion authority for RWC1 imple
 Version `0.25.35` records the documentation-faithful research-only RWC1 primary implementation and its permanent non-scientific regression gate before any scientific execution. The dedicated module passes `25 / 25`; the independent combined invocation with the unchanged `22` localized-reference regressions passes `47 / 47` in `0.87 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. Exact runner and test identities are frozen. No scientific trajectory, primary CLI, `execute_primary_once`, fixed execution receipt, primary output, evidence shard, checker, Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation is run, created, or changed. Both one-shot authorizations remain unconsumed.
 
 Version `0.25.36` retains the first and only authorised RWC1 primary from the remotely read-back implementation checkpoint `f0b373f49821d23cbfb16be62fd25feae0a920a5`. The exact primary, durable execution receipt, and six directly readable JSONL evidence shards are preserved with byte, SHA-256, Git-blob, count, and global-index identities. Technical telemetry, exact schemas, source identity, runtime, serialization, proposal fidelity, starting-clone, control, and local/global receipt gates passed. The `0.95` lower energy bound was nevertheless first violated at step `193` under LAP4 and step `151` under LAP8, and at `t=1000` and `t=10000` `PAIR_BOTH` was slightly worse than `CONTROL` in all eight required energy/profile comparisons. Its `4 / 4` profile advantages over the global-pool control do not rescue the candidate because the absolute-clean and causal-improvement gates failed. The frozen primary-only outcome is `rwc1_unsupported_under_tested_conditions`. The primary authority is consumed `1 / 1`; no tuning or retry occurred; the checker remains unimplemented and unconsumed `0 / 1`. This checkpoint changes no Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation and establishes neither TOLOG compatibility nor a Lina capability.
+
+Version `0.25.37` records the standalone RWC1 retained-output checker implementation and permanent tests after the complete primary-result checkpoint was committed, pushed, fetched, and read back at `7db2b781260e70b214cb9a2bb8b52cfd34f5f602`. The checker-specific suite passes `23 / 23`; the root-level independent combined invocation of checker tests, unchanged primary-runner tests, and the `22` localized-reference regressions passes `70 / 70` in `2.88 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. The checker is standalone, imports neither the primary runner nor Core, contains no expected-outcome constant, performs one bounded retained-evidence pass, enforces strict identity/schema validation, and creates its exclusive latch before any real retained input may be read. No real checker invocation, checker receipt, checker output, or trajectory occurred; checker authority remains `0 / 1` consumed. For transparency, implementer and reviewer had seen the high-level primary outcome label through the public manifest, although they did not read the primary JSON, shards, measurements, or primary runner for checker implementation or review. Full outcome-label blindness is therefore not claimed, while machine tests prohibit embedding that label or any expected outcome constant. The primary negative remains primary-only pending the one authorised retained-output check. No TOLOG compatibility or Lina capability is established.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -5274,3 +5276,132 @@ false. The only next permitted step is durable publication and readback of this
 exact retained-result checkpoint; no tuning, primary retry, checker execution,
 replacement mechanism, Core promotion, whitepaper promotion, Lina action,
 partner action, or TOLOG implementation occurs here.
+
+### Q2-M2-RWC1 retained-output checker implementation checkpoint - version `0.25.37`
+
+#### Plain conclusion, analogy, and practical consequence
+
+**Plain conclusion.** The independent calculation path for checking the
+retained RWC1 primary is now implemented and passes its complete synthetic and
+regression test gates. It has not read the real retained input through an
+official checker invocation, has not emitted a checker result, and therefore
+has not yet confirmed or contradicted the primary-only negative outcome.
+
+**Everyday analogy.** A laboratory technician saw a public sticker saying that
+the first instrument reported a failure, but did not see the measurements or
+open the sealed sample. The technician built a second measuring instrument from
+the frozen rule sheet and proved with dummy samples that it rejects malformed
+forms and recalculates the required quantities. The second instrument is ready,
+but it has not yet been attached to the sealed real sample.
+
+**Practical consequence.** The checker source, permanent test, this report, and
+the manifest may enter one implementation checkpoint. Only after that exact
+checkpoint is committed, pushed, fetched, and remotely read back may the single
+checker authority be consumed. The primary remains
+`rwc1_unsupported_under_tested_conditions` with
+`primary_claim_only = true` until that retained-output verification exists.
+
+#### Frozen checker implementation and test receipt
+
+The checker identities frozen at this checkpoint are:
+
+```text
+checker path = research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py
+checker checkout bytes = 106159
+checker checkout SHA-256 = fca991adfc5504fe0be57d1734e71097d2a311307209bde5a2164b9b2ec1acb6
+checker Git blob = 25120ff1185e53a5ccc2ed3de01cfa43531eb21f
+
+permanent checker test path = tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py
+permanent checker test checkout bytes = 47930
+permanent checker test SHA-256 = 036b47f0ef4a7100ce5d89be372893fc8639bd785f2b5581afba8ee634d7962b
+permanent checker test Git blob = b37252605666bc8eb008df530c4dcd5cbc08db2c
+```
+
+The frozen non-scientific test receipt is:
+
+```text
+dedicated retained-output checker tests = 23 passed / 0 failed
+unchanged RWC1 primary-runner tests = 25 passed / 0 failed
+unchanged localized-reference regressions = 22 passed / 0 failed
+independent root-level combined result = 70 passed / 0 failed in 2.88 s
+combined exit code = 0
+Python = 3.11.15
+NumPy = 1.26.4
+pytest = 9.1.1
+real retained-output checker invocations = 0
+checker execution-receipt creations = 0
+checker output creations = 0
+scientific trajectory calls in this checkpoint = 0
+```
+
+These tests exercise the frozen one-pass retained-data contract with synthetic
+and tampered fixtures. They enforce strict source and artifact identities,
+schemas, record order and counts, bounded reads, recomputation rather than trust
+in primary pass Booleans, output-last publication, and exclusive creation of the
+checker latch before any real primary or shard read. They also fail if the
+checker imports the primary runner or Core, embeds the observed outcome label,
+or contains an expected-outcome constant. Test fixtures and temporary paths are
+not the fixed retained primary, shard, receipt, or checker-output paths.
+
+#### Independence and disclosure boundary
+
+The checker is standalone and bounded to one retained-evidence pass. It does not
+import the primary runner or Core and cannot execute a trajectory. It validates
+the exact frozen identities and schemas before recomputing the retained metrics,
+comparisons, receipt arithmetic, conditional classification, and declared
+limitations that the preregistration permits it to check. It must create its
+durable exclusive execution latch before opening any real retained primary or
+evidence shard, and any invocation consumes the sole `1 / 1` checker authority
+regardless of success or failure.
+
+This implementation is not fully outcome-label blind. The implementer and
+reviewer accidentally saw only the high-level primary outcome label through the
+public artifact manifest. They did not read the primary JSON, any evidence
+shard, any retained measurement, or the primary runner for implementation or
+review. The official real checker invocation count remains `0`, and the fixed
+checker receipt and output remain absent. Machine tests forbid the seen label
+and any expected-outcome constant from appearing in the checker calculation
+path. This preserves calculation-path separation, but it does not erase the
+human exposure to the result direction and is not reported as full label
+blindness.
+
+#### Evidence separation and current claim status
+
+**Implementation fact.** A standalone retained-output checker now implements
+the frozen identity, schema, one-pass recomputation, latch-before-real-read, and
+fail-closed publication contract without importing the primary runner or Core
+and without an expected-outcome constant.
+
+**Test observation.** All `23` dedicated checker tests and the complete
+`70 / 70` combined gate passed under the declared runtime. This is evidence that
+the checker contract behaves as asserted on synthetic and tamper cases. It is
+not a scientific checker result because the real retained primary and shards
+were not read by an official checker invocation.
+
+**Interpretation.** The checker is fit to enter a frozen pre-execution
+checkpoint. Passing its tests makes the second calculation path technically
+reviewable; it neither validates the primary measurements nor raises the RWC1
+negative beyond `primary_claim_only`.
+
+**Hypothesis and scientific status.** Unchanged. The primary outcome remains
+`rwc1_unsupported_under_tested_conditions`, pending the separately authorised
+retained-output check. No tuning, primary retry, replacement mechanism, or new
+trajectory is introduced. Candidate A remains closed under its own tested
+domain, while other RWC1 laws and regimes remain untested rather than falsified.
+
+**Not established.** This checkpoint establishes no independent agreement with
+the primary, direct Question 2 return, physical energy law, locality necessity,
+real-universe connection, Lina capability, TOLOG compatibility, Shared Result,
+Joint IP, licence right, commercial conclusion, or partner permission. It uses
+no private Lina implementation and no restricted TOLOG material.
+
+The complete primary-result retention checkpoint is committed, pushed,
+fetched, and remotely read back at
+`7db2b781260e70b214cb9a2bb8b52cfd34f5f602`. Checker authority remains
+`0 / 1` consumed; no checker receipt or output exists. This prospective
+`0.25.37` checker-implementation checkpoint has not yet been committed or
+remotely read back, so its own readback claim is false. The only next permitted
+step is durable publication and readback of the exact checker source, checker
+test, report, and manifest checkpoint. No checker invocation, trajectory,
+primary retry, Core or whitepaper promotion, Lina action, partner action, or
+TOLOG implementation occurs here.
