@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits only agent-generated Lineum-only retrieval and prospective preregistration; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, is now frozen before implementation or outcome; no RWC1 test, trajectory, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, or TOLOG restricted implementation is authorised or executed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.33 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits the bounded RWC1 implementation, non-scientific tests, one primary, and one retained-output checker; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, remains frozen before implementation or outcome; its evidence transport is prospectively corrected from one oversized JSONL to six directly readable JSONL shards without changing a field, record, threshold, branch, or trajectory; no RWC1 code, test, trajectory, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, partner action, or TOLOG restricted implementation is yet executed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.34 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `582637292e52fd752c42e6e35892782c39c60840` \
+**Checkpoint parent:** `7f0929c0047d96c14f540893a90bf7cef49229eb` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -23,6 +23,8 @@ Version `0.24.9` records the owner's independent post-negative intuition that th
 Version `0.25.0` freezes `Q2-M1` before any new causal-memory outcome is inspected. The first report-only transport attempt was committed as `2658cb35aee767f8e7f7d788f7e99e4d9ebbf3e2` and GitHub Actions run `31342548699` was rejected before job creation because the workflow definition was invalid YAML; it produced no scientific execution and no report modification. The retry changes only the transport syntax. The scientific protocol reuses the previously registered current-engine structural-memory parameter family, fixes `drift_strength = 0`, and separates a necessary history-reuse gate from the stronger Question 2 return criterion. A history-dependent echo is explicitly insufficient to rescue Q2. No production equation, whitepaper, Q1 result, or Q3 conclusion changes in this preregistration.
 
 Version `0.25.33` preserves the completed Candidate A negative and records the abstract authority classification: agent-generated, Lineum-only retrieval and preregistration are permitted; implementation, execution, and partner action are not. It registers Candidate B `Q2-M2-RWC1`, selects the smallest existing-state reciprocal-work variant after a contradiction and duplication audit, and freezes its exact local exchange law, controls, source identities, runtime, validity gates, bounded outcome map, output paths, and no-answer-shaping boundary before implementation or scientific outcome. No RWC1 code, unit test, trajectory, checker, production equation, whitepaper, Lina runtime, device action, or restricted TOLOG implementation is executed or changed by this checkpoint.
+
+Version `0.25.34` separately records bounded-completion authority for RWC1 implementation, non-scientific tests, exactly one primary trajectory payload, and exactly one later retained-output checker; this changes the authority counters from zero to one while partner action and TOLOG implementation remain unauthorised. Before implementation or any trajectory, a schema-only compact-row estimate showed that the single planned JSONL would require approximately `144480000` bytes even before retained state arrays. That is a transport defect, not scientific evidence. The transport correction alone changes only physical packaging: the unchanged `400110` globally indexed, directly readable JSONL records are partitioned into six fixed contiguous shards, each capped at `75000000` bytes. The same prospective checkpoint also freezes primary, receipt, and checker technical schemas. Candidate law, record fields and global order, branch order, steps, observables, scientific thresholds, and outcome map do not change. No trajectory or model output was inspected.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -4133,16 +4135,20 @@ test.
 
 #### Authority and provenance
 
-The authority classification permits agent-generated, Lineum-only retrieval
-and prospective preregistration for this checkpoint.
+The authority classification permits the bounded RWC1 implementation,
+non-scientific tests, exactly one primary trajectory payload, and exactly one
+later retained-output checker.
+It records the owner's current-thread bounded-completion instruction in
+abstract form without reproducing private message content.
 
 ```text
 candidate provenance = agent-generated
 independent external mechanism input = none
 scientific evidence supplied by authority = none
 TOLOG implementation authority = none
-RWC1 implementation authority = none
-RWC1 scientific execution authority = none
+RWC1 implementation authority = bounded implementation plus tests
+RWC1 primary trajectory authority = exactly one payload
+RWC1 retained-output checker authority = exactly one invocation after primary
 partner-message authority = none
 ```
 
@@ -4225,6 +4231,7 @@ test. `empirically_connected = false`.
 ```text
 repository = TomasTriska88/lineum-core
 base commit = 582637292e52fd752c42e6e35892782c39c60840
+v3 preregistration parent commit = 7f0929c0047d96c14f540893a90bf7cef49229eb
 lineum_core/math.py Git blob = bb877021810691223a0eb960a45493a2e351112a
 localized reference runner Git blob = 1598faf0f39e056c1684f767c2554edc63283ca4
 requirements.txt Git blob = 942f2b94b3d3f8c767451ae2d847a7b17c86d81e
@@ -4234,6 +4241,11 @@ NumPy = 1.26.4
 backend = deterministic CPU / NumPy
 ```
 
+The base commit above binds the unchanged scientific dynamics and remains a
+required ancestor; it is not a claim that the documentation checkpoint HEAD
+is still that commit. The v3 transport correction is based directly on the
+remotely read-back v2 preregistration commit shown separately.
+
 Any source or environment mismatch fails closed before a scientific
 trajectory. No unlisted interpreter, dependency set, backend, source identity,
 or workspace is an accepted substitute.
@@ -4242,10 +4254,11 @@ The machine-readable companion protocol is:
 
 ```text
 path = research/lineum-public-tolog-b4/q2-m2-rwc1-preregistration.json
-role = frozen documentation-only RWC1 protocol before implementation or outcome
-bytes = 13893
-SHA-256 = ffb472628248b663d370ff3006498c336871ab3260ea5fc22e6dbd88e26e5134
-Git blob = 00944d30d73a4d6842342d8333fc1f7e2f409fee
+role = frozen bounded-completion RWC1 protocol before implementation or outcome
+schema = lineum.q2-m2-rwc1-preregistration.v3
+bytes = 37448
+SHA-256 = 55917a01e0ab5a04e97515010c70359494769239c5c420ddc4513352a30486fd
+Git blob = b6aea98ea752460f5283a40e7e68dea05a9c564a
 ```
 
 It is indexed by exact byte length, SHA-256, and Git blob in
@@ -4506,6 +4519,28 @@ that equality surface because `CONTROL` does not compute them.
 All scalars are implementation observables. They are not physical energy,
 mass, temperature, intelligence, correction quality, or consciousness.
 
+The six per-step technical flags mirror the frozen historical guards exactly.
+`psi_cap_contact` means a post-flow, pre-scale `|psi| > 1000000` contact.
+`phi_cap_contact` means post-phi-diffusion, pre-clip `phi < 0` or
+`phi > 1000000`. `destructive_reset` means the unchanged final psi guard
+would zero the branch because psi is non-finite or its finite maximum reaches
+`0.99 * 1000000`. `nonfinite_detected` covers every declared pre-stage,
+post-stage, proposal/work, candidate-output, and end-of-step finiteness check
+before any replacement. `negative_phi_input_detected` is strict negative phi
+at an attempted paired-stage input. `undeclared_source_detected` is a failed
+data-provenance guard: a proposal not precomputed from that branch's `S0`, an
+input from the wrong branch/stage, or any prepared observer/reference,
+expected output, or future state entering the law.
+
+Any true technical flag, any paired receipt with
+`precondition_passed = false`, or any non-positive/non-finite checkpoint psi
+energy aborts the consumed attempt. No complete shard set or primary is
+published, no remaining row is fabricated, and no infinite or sentinel
+metric is serialized. Such information may exist only in unpublished partial
+staging described by the durable execution receipt. A complete primary
+therefore contains only false technical flags and true receipt preconditions;
+this is a validity requirement, not post-outcome filtering.
+
 #### Numerical and fidelity gates
 
 The implementation is scientifically non-interpretable unless all gates
@@ -4617,8 +4652,11 @@ Classify the one future primary in this exact order:
    than the ordinary comparison tolerance but the complete gate fails;
 5. `rwc1_unsupported_under_tested_conditions` for any other valid result.
 
-For this protocol, `psi` collapse means total `psi` energy leaves the lower
-`0.95 * pre_total` bound at any continuation step. Loss of localization means
+For this protocol, scientific `psi` collapse means a still finite, strictly
+positive total `psi` energy leaves the lower `0.95 * pre_total` bound at any
+continuation step. Non-positive or non-finite total energy has precedence as
+`rwc1_technical_non_result`; it is never interpreted as candidate collapse.
+Loss of localization means
 the radius-6 energy fraction is below `0.5` at any retained checkpoint. Any
 cap/reset dependency, defined collapse, defined loss of localization, receipt
 failure, target-state access, post-outcome parameter change, or failure in
@@ -4632,8 +4670,8 @@ override a `PAIR_BOTH` failure.
 
 #### Frozen implementation, output, and checker sequence
 
-If separately authorised after this preregistration is committed, pushed,
-and remotely read back, implementation may add only:
+After this `0.25.34` transport correction is committed, pushed, and remotely
+read back, the bounded authority permits implementation to add only:
 
 ```text
 runner =
@@ -4645,8 +4683,13 @@ permanent non-scientific tests =
 primary output =
   research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work.json
 
-primary retained evidence =
-  research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work-evidence.jsonl
+primary retained evidence shards =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/000-prepared-and-checkpoints.jsonl
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/001-step-energy.jsonl
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/002-step-telemetry.jsonl
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/003-local-receipts-lap4.jsonl
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/004-local-receipts-lap8.jsonl
+  research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/005-global-receipts.jsonl
 
 primary execution receipt =
   research/lineum-public-tolog-b4/q2-m2-rwc1-execution-attempt-1.json
@@ -4662,7 +4705,35 @@ checker test =
 
 checker output =
   research/lineum-public-tolog-b4/q2-m2-rwc1-independent-check.json
+
+checker execution receipt =
+  research/lineum-public-tolog-b4/q2-m2-rwc1-checker-execution-attempt-1.json
 ```
+
+The consequential sequence is exact:
+
+1. commit, push, fetch, and remotely read back this v3 protocol checkpoint;
+2. implement only the primary runner and its synthetic tests, run those tests,
+   freeze the exact runner/test/report/manifest blobs, commit and push them,
+   fetch them back, and verify a clean checkout whose HEAD equals that remote
+   read-back commit and whose filtered and HEAD identities all agree;
+3. require the protocol, Core, reference runner, dependencies, runtime,
+   runner, test, report, and manifest gates plus absent final output/receipt
+   paths, then exclusively create the primary one-shot receipt and execute one
+   primary payload;
+4. incorporate the complete primary or technical non-result into the report
+   and manifest, commit, push, fetch, and remotely read it back before any
+   checker source exists;
+5. implement only the independent checker and its synthetic tests, freeze its
+   exact source/test/report/manifest identities, commit, push, fetch, and
+   repeat the clean dual-identity/read-back preflight;
+6. exclusively create the checker receipt, read the retained primary once,
+   execute the checker once, then incorporate and remotely read back the final
+   bounded result.
+
+No implementation checkpoint, primary, result checkpoint, checker checkpoint,
+or checker result may be skipped, reordered, merged retrospectively, or
+substituted by a dirty working tree.
 
 Companion tests must cover branch identity, unchanged proposal equivalence,
 positive/negative/zero work, insufficient local stock, accepted-fraction
@@ -4671,20 +4742,57 @@ allocation, fail-closed non-finite input, frozen branch/checkpoint maps,
 outcome-map boundaries, and a test proving that no prepared/reference state or
 expected output enters the candidate law. Tests may use synthetic arrays only
 and may not execute a scientific trajectory.
+They must also enumerate the exact six paths, all global indices and branch/
+stage subranges, record counts, `record_type`/schema bijection, canonical
+single-LF serializer, 75 MB per-shard cap, primary evidence identity/hash/
+order, six-shards-before-primary completion-marker publication, partial-
+failure behavior, exclusive non-deletable latches, and the clean filtered-
+versus-HEAD remote-readback gates for both primary and checker checkpoints.
 
-The primary JSON and evidence JSONL are directly readable canonical UTF-8
+The primary JSON and all six evidence JSONL shards are directly readable
+canonical UTF-8
 with LF line endings, sorted object keys, compact separators, and no
 NaN/Infinity tokens. The primary contains source, runtime, execution, schema,
 branch, checkpoint, comparison, outcome, and evidence-file identities, but
 its self-reported classification is never the checker input of authority.
 Every evidence line is one complete JSON object with a monotonically
 increasing integer `record_index` from `0` through `400109` and one declared
-`record_type`. All numeric values must be finite JSON integers or binary64
+`record_type`, which must exactly equal the selected evidence-schema name.
+All numeric values must be finite JSON integers or binary64
 values serialized by Python's shortest round-trippable finite-float
 representation. The
-evidence JSONL SHA-256 and byte length are recorded in the primary JSON and
-execution receipt; no archive, binary container, extraction, decoding, or
-pickled object is permitted.
+SHA-256, byte length, record count, and first/last global record index for
+every shard are recorded in the primary JSON and execution receipt; no shard
+may exceed `75000000` bytes. A missing, extra, oversized, or repartitioned
+shard is a technical non-result. No archive, binary container, extraction,
+decoding, or pickled object is permitted.
+There are exactly six evidence identities in the exact protocol shard order.
+Each SHA-256 is exactly 64 lowercase hexadecimal characters and every byte,
+count, and index quantity is a JSON integer rather than a Boolean.
+Every JSONL record, including the final record of each shard, ends in exactly
+one LF; BOM, CRLF, blank lines, and trailing whitespace are forbidden.
+
+The primary object schema is `lineum.q2-m2-rwc1-primary.v1`. Its exact
+top-level key set and the exact checkpoint, trajectory-energy, technical-
+telemetry, comparison, gate, source, runtime, execution, claim-boundary, and
+evidence-identity fields are frozen in the machine-readable protocol. Receipt
+arithmetic remains in the complete evidence shards and is independently
+stream-checked rather than duplicated in a result-selected primary summary.
+The full primary file is canonical compact
+JSON with sorted keys and exactly one final LF. Its
+`canonical_payload_sha256_without_self` is SHA-256 over the same canonical
+object with that one key omitted and with no final LF. Timestamps, absolute
+paths, host name, user name, and raw environment are forbidden from the
+scientific primary. The only permitted primary `null` values are the two
+first-bound-violation steps when no violation occurred.
+It contains exactly 108 checkpoint rows ordered by stencil, branch, and
+checkpoint; 12 trajectory-energy and 12 technical-telemetry summaries ordered
+by stencil then branch; and 12 comparison rows. Improvement is exactly
+`reference - candidate`; tolerance is exactly
+`1e-8 + 1e-12 * max(|reference|, |candidate|)`, and `passed` requires strict
+`improvement > tolerance`. The first eight rows compare `PAIR_BOTH` with
+`CONTROL` for energy/profile at `t=1000/10000`; the final four compare only
+profile against `GLOBAL_POOL_PAIR_BOTH` at those horizons.
 
 The exact index maps are:
 
@@ -4743,6 +4851,17 @@ stage_index, for GLOBAL_POOL_PAIR_BOTH(two stages):
   max_abs_cellwise_residual, sum_abs_cellwise_residuals
 ```
 
+The physical shard partition is fixed without resetting global indices:
+
+```text
+000-prepared-and-checkpoints.jsonl = records 0..109, count 110
+001-step-energy.jsonl = records 110..120109, count 120000
+002-step-telemetry.jsonl = records 120110..240109, count 120000
+003-local-receipts-lap4.jsonl = records 240110..300109, count 60000
+004-local-receipts-lap8.jsonl = records 300110..360109, count 60000
+005-global-receipts.jsonl = records 360110..400109, count 40000
+```
+
 Every object has exactly its listed keys; there are no null, sentinel, extra,
 or omitted fields. Array nesting supplies the frozen shape, and all state
 values are finite binary64 numbers. The checker rejects a missing, extra,
@@ -4779,6 +4898,23 @@ Any success, failure, interruption, malformed output, identity mismatch, or
 wrapper failure consumes the relevant one-shot authority. Technical failure
 is retained; no automatic retry follows.
 
+The primary fixed execution-receipt path is exclusively created with state
+`attempt_started_authority_consumed` before any scientific evolution. The
+checker receipt is created the same way before the real retained primary or
+evidence is read. An existing receipt or corresponding final output fails
+closed; neither receipt is ever deleted, and cleanup cannot reopen either
+one-shot authority. A hard interruption may therefore leave only the durable
+started receipt, which still proves that the attempt was consumed.
+Both receipts use the exact shared
+`lineum.q2-m2-rwc1-execution-receipt.v1` canonical schema frozen in the
+protocol. Only receipt timestamps and explicitly nullable unfinished/failure
+fields may vary; absolute paths, host/user identity, raw environment, and raw
+stderr are excluded. The later checker output schema is frozen as
+`lineum.q2-m2-rwc1-independent-check.v1` with no expected outcome or pass
+constant. It can report only structural validation, independently rederived
+retained quantities, agreement or disagreement, a conditional outcome, the
+declared limitations, and the unchanged claim boundary.
+
 #### Evidence and claim boundary
 
 **Implementation fact.** The current public Core has paired mode-coupling in
@@ -4806,7 +4942,9 @@ intelligence, self-correction, Lina capability, TOLOG compatibility,
 commercial conclusion, Shared Result, Joint IP, licence right, or
 publication right.
 
-This documentation-only checkpoint is prepared on a dedicated local branch.
-Remote publication and readback are not claimed. No implementation or
-scientific execution may begin until one explicit owner authorization names
-the frozen RWC1 bounded-completion sequence.
+The original `0.25.33` documentation-only checkpoint is committed, pushed to
+its dedicated branch, and remotely read back at commit
+`7f0929c0047d96c14f540893a90bf7cef49229eb`. Bounded-completion authority is
+now recorded. Implementation and scientific execution remain blocked only
+until this prospective `0.25.34` transport correction is itself committed,
+pushed, and remotely read back; no partner action is authorised.

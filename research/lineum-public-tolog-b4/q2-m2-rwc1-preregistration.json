@@ -1,9 +1,10 @@
 {
   "authority": {
-    "classification": "workflow_and_scope_authority_for_agent_generated_lineum_only_retrieval_and_preregistration",
+    "authorization_source": "owner_current_thread_bounded_completion_instruction_recorded_without_private_message_content_2026_08_30",
+    "classification": "bounded_completion_authority_for_lineum_only_rwc1_implementation_tests_one_primary_and_one_retained_output_checker",
     "partner_message_authorized": false,
-    "rwc1_implementation_authorized": false,
-    "rwc1_scientific_execution_authorized": false,
+    "rwc1_implementation_authorized": true,
+    "rwc1_scientific_execution_authorized": true,
     "tolog_implementation_authorized": false
   },
   "baseline": {
@@ -63,10 +64,12 @@
     "tolog_compatibility_established": false
   },
   "execution": {
-    "checker_invocations_authorized": 0,
-    "implementation_authorized": false,
-    "primary_invocations_authorized": 0,
-    "remote_publication_claimed": false,
+    "authorization_activation_condition": "after_exact_v3_commit_push_and_remote_readback",
+    "checker_invocations_authorized": 1,
+    "implementation_authorized": true,
+    "primary_invocations_authorized": 1,
+    "source_preregistration_remote_commit": "7f0929c0047d96c14f540893a90bf7cef49229eb",
+    "this_v3_remote_readback_claimed": false,
     "trajectory_executed": false
   },
   "global_pool_stage": {
@@ -129,6 +132,20 @@
     "target_energy_in_law": false,
     "target_profile_in_law": false
   },
+  "non_scientific_test_requirements": [
+    "candidate_law_negative_zero_full_partial_zero_stock_zero_psi_and_antipodal_phase_edges",
+    "local_and_global_receipt_closure_preconditions_nonmutation_and_all_global_A_P_q_boundaries",
+    "historical_proposal_and_control_one_step_equivalence_for_both_stencils",
+    "all_six_branch_stage_orders_remaining_phi_and_receipt_only_exact_control_equality",
+    "metrics_gate_boundaries_outcome_precedence_and_zero_energy_technical_non_result_precedence",
+    "exact_six_shard_paths_and_global_record_indices_counts_branch_subranges_and_schema_record_type_bijection",
+    "canonical_jsonl_serializer_exact_single_lf_including_last_record_no_bom_no_crlf_no_blanks_no_nonfinite_duplicate_or_wrong_typed_keys",
+    "every_shard_below_75000000_bytes_and_primary_evidence_identity_exact_hash_byte_count_index_and_protocol_order",
+    "all_six_valid_shards_publish_before_primary_completion_marker_and_any_partial_failure_publishes_no_primary",
+    "exclusive_primary_and_checker_latches_no_overwrite_no_delete_and_interruption_consumes_authority",
+    "primary_and_checker_dual_filtered_HEAD_identity_clean_remote_readback_and_output_absence_preflights",
+    "synthetic_orchestration_proves_one_LAP4_then_one_LAP8_payload_without_sweep_retry_rng_or_scientific_trajectory"
+  ],
   "outcome_map": [
     "rwc1_technical_non_result",
     "rwc1_local_advantage_clean_gate_passed",
@@ -144,15 +161,89 @@
   },
   "planned_paths": {
     "checker": "research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py",
+    "checker_execution_receipt": "research/lineum-public-tolog-b4/q2-m2-rwc1-checker-execution-attempt-1.json",
     "checker_output": "research/lineum-public-tolog-b4/q2-m2-rwc1-independent-check.json",
     "checker_test": "tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work_checker.py",
-    "primary_evidence": "research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work-evidence.jsonl",
+    "primary_evidence_shards": [
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/000-prepared-and-checkpoints.jsonl",
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/001-step-energy.jsonl",
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/002-step-telemetry.jsonl",
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/003-local-receipts-lap4.jsonl",
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/004-local-receipts-lap8.jsonl",
+      "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/005-global-receipts.jsonl"
+    ],
     "primary_execution_receipt": "research/lineum-public-tolog-b4/q2-m2-rwc1-execution-attempt-1.json",
     "primary_output": "research/lineum-public-tolog-b4/q2-m2-rwc1-local-reciprocal-work.json",
     "runner": "research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work.py",
     "runner_test": "tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work.py"
   },
   "retention": {
+    "attempt_latches": {
+      "checker": "the_fixed_checker_execution_receipt_is_created_exclusively_with_attempt_started_authority_consumed_before_reading_the_real_retained_primary_or_evidence_any_existing_checker_receipt_or_output_fails_closed_and_the_receipt_is_never_deleted",
+      "primary": "the_fixed_primary_execution_receipt_is_created_exclusively_with_attempt_started_authority_consumed_before_any_scientific_evolution_any_existing_primary_receipt_output_or_evidence_final_fails_closed_and_the_receipt_is_never_deleted",
+      "terminal_failure": "success_failure_interruption_malformed_output_identity_mismatch_or_wrapper_failure_consumes_the_relevant_one_shot_authority_and_no_cleanup_reopens_it"
+    },
+    "checker_output_contract": {
+      "agreement_fields": ["passed", "mismatch_count"],
+      "canonical_encoding_and_hash": "same_canonical_compact_utf8_single_lf_and_without_self_hash_rule_as_primary",
+      "checker_id_fields": [
+        "expected_execution_commit",
+        "actual_head_commit",
+        "remote_readback_commit",
+        "head_equals_remote_readback_commit",
+        "worktree_clean",
+        "path",
+        "expected_git_blob",
+        "actual_filtered_git_blob",
+        "actual_head_git_blob",
+        "test_path",
+        "expected_test_git_blob",
+        "actual_test_filtered_git_blob",
+        "actual_test_head_git_blob"
+      ],
+      "checker_schema": "lineum.q2-m2-rwc1-independent-check.v1",
+      "conditional_outcome_fields": ["recomputed_outcome", "primary_claimed_outcome", "agrees"],
+      "file_identity_fields": ["path", "bytes", "sha256", "git_blob"],
+      "input_identity_fields": ["protocol", "primary", "shards"],
+      "input_shard_identity_fields": ["path", "bytes", "sha256", "git_blob", "record_count", "first_record_index", "last_record_index"],
+      "limitations_contract": "exactly_equal_to_retention_checker_limitations_in_the_same_order",
+      "null_policy": "no_null_is_permitted_in_a_complete_checker_output",
+      "no_expected_outcome_or_pass_constant": true,
+      "protocol_identity_fields": ["path", "schema", "bytes", "sha256", "git_blob"],
+      "recomputed_fields": [
+        "checkpoint_metrics_match",
+        "trajectory_energy_summaries_match",
+        "technical_gate_conditionally_applied",
+        "aggregate_receipt_arithmetic_passed",
+        "retained_witness_arithmetic_passed",
+        "comparison_rows_match",
+        "gate_map_match"
+      ],
+      "structural_validation_fields": [
+        "passed",
+        "canonical_primary",
+        "canonical_shards",
+        "exact_schema",
+        "exact_record_order",
+        "exact_counts",
+        "hashes_match"
+      ],
+      "top_level_fields": [
+        "schema",
+        "checker_id",
+        "protocol_identity",
+        "input_identity",
+        "structural_validation",
+        "recomputed",
+        "agreement",
+        "conditional_outcome",
+        "limitations",
+        "claim_boundary",
+        "canonical_payload_sha256_without_self"
+      ],
+      "type_contract": "all_pass_agrees_match_validation_recomputed_and_claim_boundary_values_are_json_booleans_mismatch_count_is_a_nonnegative_json_integer_not_boolean_hashes_are_lowercase_64_hex_strings_paths_schemas_ids_labels_limitations_and_outcomes_are_strings_bytes_counts_and_indices_are_json_integers_not_booleans",
+      "value_contract": "structural_validation_passed_equals_all_six_structural_booleans_agreement_passed_is_true_exactly_when_mismatch_count_is_zero_conditional_outcome_agrees_is_true_exactly_when_recomputed_outcome_equals_primary_claimed_outcome_both_outcomes_belong_to_the_frozen_outcome_map_and_claim_boundary_exactly_equals_the_preregistration_claim_boundary"
+    },
     "checker_limitations": [
       "does_not_independently_prove_primary_selected_argmax_is_worst_unretained_cell",
       "does_not_recompute_cell_counts_or_sums_without_rerunning_trajectory",
@@ -168,13 +259,70 @@
       "cross_branch_comparisons",
       "conditional_final_outcome_from_independently_derivable_metrics_and_retained_technical_telemetry"
     ],
+    "execution_receipt_contract": {
+      "canonical_encoding_and_hash": "same_canonical_compact_utf8_single_lf_and_without_self_hash_rule_as_primary",
+      "checker_input_identity_fields": ["protocol", "primary", "shards"],
+      "checker_output_identity_fields": ["checker_output"],
+      "file_identity_fields": ["path", "bytes", "sha256", "git_blob"],
+      "nullable_only_while_started_or_on_failure": [
+        "ended_at",
+        "elapsed_seconds",
+        "output_identity",
+        "stderr_identity",
+        "failure"
+      ],
+      "primary_input_identity_fields": ["protocol", "source_bindings", "runtime"],
+      "primary_output_identity_fields": ["primary", "shards"],
+      "program_identity_fields": ["path", "git_blob", "test_path", "test_git_blob"],
+      "receipt_schema": "lineum.q2-m2-rwc1-execution-receipt.v1",
+      "shard_identity_fields": [
+        "path",
+        "bytes",
+        "sha256",
+        "git_blob",
+        "record_count",
+        "first_record_index",
+        "last_record_index"
+      ],
+      "status_enum": [
+        "attempt_started_authority_consumed",
+        "complete_output_retained",
+        "technical_non_result"
+      ],
+      "stderr_identity_fields": ["bytes", "sha256", "status_summary"],
+      "terminal_failure_fields": ["phase", "code", "sanitized_message"],
+      "timestamp_policy": "utc_iso8601_strings_allowed_only_in_execution_receipts",
+      "top_level_fields": [
+        "schema",
+        "protocol_id",
+        "lane",
+        "attempt",
+        "invocation_limit",
+        "authority_consumed",
+        "retry_authorized",
+        "status",
+        "started_at",
+        "ended_at",
+        "elapsed_seconds",
+        "execution_commit",
+        "program_identity",
+        "input_identity",
+        "output_identity",
+        "stderr_identity",
+        "failure",
+        "canonical_payload_sha256_without_self"
+      ],
+      "value_contract": "lane_is_primary_or_checker_attempt_and_invocation_limit_are_integer_1_authority_consumed_is_true_retry_authorized_is_false_failure_is_null_or_exact_terminal_failure_object_and_receipt_is_never_deleted"
+    },
     "evidence_index_maps": {
       "branch_index": ["CONTROL", "RECEIPT_ONLY", "PAIR_INTERACTION", "PAIR_FLOW", "PAIR_BOTH", "GLOBAL_POOL_PAIR_BOTH"],
       "checkpoint_index": [0, 1, 10, 100, 500, 1000, 2000, 5000, 10000],
       "stage_index": ["flow", "interaction"],
       "stencil_index": ["LAP4", "LAP8"]
     },
-    "evidence_jsonl": "directly_readable_canonical_utf8_lf_sorted_keys_compact_one_object_per_line_record_index_0_through_400109_finite_json_integers_or_python_shortest_roundtrippable_binary64_no_null_no_sentinel_no_archive_no_binary_no_extraction",
+    "evidence_jsonl": "six_directly_readable_canonical_utf8_lf_sorted_keys_compact_jsonl_shards_one_object_per_line_global_record_index_0_through_400109_finite_json_integers_or_python_shortest_roundtrippable_binary64_no_null_no_sentinel_no_archive_no_binary_no_extraction",
+    "evidence_line_encoding": "each_record_is_json_dumps_sort_keys_true_separators_comma_colon_ensure_ascii_false_allow_nan_false_utf8_plus_exactly_one_lf_including_the_last_record_no_bom_no_crlf_no_blank_lines_no_trailing_whitespace",
+    "evidence_max_shard_bytes": 75000000,
     "evidence_record_order": [
       "prepared_state_by_stencil",
       "checkpoint_state_by_stencil_branch_checkpoint",
@@ -221,8 +369,258 @@
       "local_stage_receipt",
       "global_stage_receipt"
     ],
+    "evidence_record_type_contract": "every_record_type_string_equals_exactly_the_name_of_its_selected_evidence_record_schemas_member_and_no_alias_or_unknown_type_is_permitted",
+    "evidence_shards": [
+      {
+        "count": 110,
+        "first_record_index": 0,
+        "last_record_index": 109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/000-prepared-and-checkpoints.jsonl"
+      },
+      {
+        "count": 120000,
+        "first_record_index": 110,
+        "last_record_index": 120109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/001-step-energy.jsonl"
+      },
+      {
+        "count": 120000,
+        "first_record_index": 120110,
+        "last_record_index": 240109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/002-step-telemetry.jsonl"
+      },
+      {
+        "count": 60000,
+        "first_record_index": 240110,
+        "last_record_index": 300109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/003-local-receipts-lap4.jsonl"
+      },
+      {
+        "count": 60000,
+        "first_record_index": 300110,
+        "last_record_index": 360109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/004-local-receipts-lap8.jsonl"
+      },
+      {
+        "count": 40000,
+        "first_record_index": 360110,
+        "last_record_index": 400109,
+        "path": "research/lineum-public-tolog-b4/q2-m2-rwc1-evidence/005-global-receipts.jsonl"
+      }
+    ],
+    "evidence_shard_order": "exactly_the_retention_evidence_shards_array_order_with_exactly_six_shards_no_extra_missing_or_reordered_path",
     "evidence_total_records": 400110,
-    "primary_json": "canonical_utf8_lf_sorted_keys_compact_no_nonfinite_tokens",
+    "primary_json": "canonical_utf8_lf_sorted_keys_compact_no_nonfinite_tokens_records_each_evidence_shard_sha256_bytes_count_and_first_last_global_record_index",
+    "primary_output_contract": {
+      "canonical_file_encoding": "json_dumps_sort_keys_true_separators_comma_colon_ensure_ascii_false_allow_nan_false_utf8_plus_exactly_one_lf_no_bom_no_crlf_no_blank_lines",
+      "canonical_payload_hash": "sha256_of_canonical_compact_utf8_object_with_canonical_payload_sha256_without_self_omitted_and_without_final_lf",
+      "checkpoint_metric_count": 108,
+      "checkpoint_metric_fields": [
+        "stencil_index",
+        "branch_index",
+        "checkpoint_index",
+        "step",
+        "total_psi_energy",
+        "psi_energy_relative_error",
+        "psi_radial_profile",
+        "psi_radial_profile_relative_l2_error",
+        "phi_radial_profile",
+        "phi_radial_profile_relative_l2_error",
+        "half_energy_radius",
+        "half_energy_radius_absolute_change",
+        "centroid_row",
+        "centroid_column",
+        "fixed_center_displacement",
+        "centroid_shift_from_pre",
+        "energy_fraction_radius_3",
+        "energy_fraction_radius_6",
+        "energy_fraction_radius_10",
+        "phi_min",
+        "phi_mean",
+        "phi_max",
+        "phi_total",
+        "max_abs_psi",
+        "finite"
+      ],
+      "checkpoint_metric_order": "stencil_index_then_branch_index_then_checkpoint_index",
+      "checkpoint_profile_length": 22,
+      "claim_boundary_fields": [
+        "direct_q2_return_tested",
+        "empirically_connected",
+        "endogenous_regime_from_initialization_tested",
+        "lina_capability_established",
+        "locality_necessity_claim_permitted",
+        "physical_energy_claim",
+        "shared_result_created",
+        "tolog_compatibility_established"
+      ],
+      "claim_boundary_value_contract": "exactly_equal_to_the_preregistration_claim_boundary",
+      "classification_fields": [
+        "outcome",
+        "primary_claim_only"
+      ],
+      "comparison_count": 12,
+      "comparison_kind_enum": [
+        "pair_both_vs_control",
+        "pair_both_vs_global_pool"
+      ],
+      "comparison_fields": [
+        "comparison_index",
+        "comparison_kind",
+        "stencil_index",
+        "step",
+        "metric",
+        "reference_branch_index",
+        "candidate_branch_index",
+        "reference_value",
+        "candidate_value",
+        "tolerance",
+        "improvement",
+        "passed"
+      ],
+      "comparison_metric_enum": [
+        "psi_energy_relative_error",
+        "psi_radial_profile_relative_l2_error"
+      ],
+      "comparison_order": "eight_pair_both_vs_control_rows_by_stencil_then_step_1000_10000_then_metric_energy_profile_followed_by_four_pair_both_vs_global_rows_by_stencil_then_step_1000_10000_for_profile",
+      "comparison_value_contract": "improvement_equals_reference_value_minus_candidate_value_tolerance_equals_1e_minus_8_plus_1e_minus_12_times_max_abs_reference_candidate_and_passed_is_true_exactly_when_improvement_is_strictly_greater_than_tolerance_global_pool_rows_use_only_psi_radial_profile_relative_l2_error",
+      "evidence_identity_fields": [
+        "shard_count",
+        "total_record_count",
+        "shards"
+      ],
+      "evidence_identity_value_contract": "shard_count_is_integer_exactly_6_total_record_count_is_integer_exactly_400110_and_shards_equal_retention_evidence_shards_path_and_order_with_positive_integer_runtime_bytes_lowercase_64_hex_sha256_and_exact_frozen_integer_count_first_last_indices",
+      "evidence_shard_identity_fields": [
+        "path",
+        "bytes",
+        "sha256",
+        "record_count",
+        "first_record_index",
+        "last_record_index"
+      ],
+      "execution_identity_fields": [
+        "attempt",
+        "trajectory_execution_count",
+        "stencil_count",
+        "branch_count",
+        "continuation_steps"
+      ],
+      "execution_identity_value_contract": "attempt_is_integer_1_trajectory_execution_count_is_integer_1_stencil_count_is_integer_2_branch_count_is_integer_6_and_continuation_steps_is_integer_10000",
+      "forbidden_machine_local_fields": [
+        "absolute_path",
+        "hostname",
+        "username",
+        "raw_environment",
+        "wall_clock_timestamp"
+      ],
+      "gates_fields": [
+        "identity",
+        "runtime",
+        "serialization",
+        "starting_clones",
+        "receipt_only_control",
+        "proposal_fidelity",
+        "technical_telemetry",
+        "local_receipts",
+        "global_receipts",
+        "control_phenotype",
+        "pair_both_absolute_clean",
+        "pair_both_causal_improvement",
+        "local_advantage",
+        "global_pool_absolute_clean"
+      ],
+      "index_maps_contract": "exact_copy_of_retention_evidence_index_maps",
+      "null_policy": "null_allowed_only_for_first_lower_bound_violation_step_and_first_upper_bound_violation_step_in_trajectory_energy_summaries_and_nowhere_else_in_primary",
+      "primary_publish_order": "all_six_complete_validated_shards_first_then_primary_as_completion_marker",
+      "primary_schema": "lineum.q2-m2-rwc1-primary.v1",
+      "protocol_identity_fields": [
+        "path",
+        "schema",
+        "bytes",
+        "sha256",
+        "git_blob"
+      ],
+      "runtime_gate_fields": [
+        "passed",
+        "backend",
+        "python",
+        "numpy"
+      ],
+      "source_identity_expected_actual_fields": [
+        "core_math_git_blob",
+        "localized_reference_runner_git_blob",
+        "requirements_git_blob",
+        "requirements_dev_git_blob"
+      ],
+      "source_identity_gate_fields": [
+        "passed",
+        "expected_execution_commit",
+        "actual_head_commit",
+        "remote_readback_commit",
+        "head_equals_remote_readback_commit",
+        "worktree_clean",
+        "expected_runner_git_blob",
+        "actual_runner_filtered_git_blob",
+        "actual_runner_head_git_blob",
+        "expected_runner_test_git_blob",
+        "actual_runner_test_filtered_git_blob",
+        "actual_runner_test_head_git_blob",
+        "expected_report_git_blob",
+        "actual_report_filtered_git_blob",
+        "actual_report_head_git_blob",
+        "expected_manifest_git_blob",
+        "actual_manifest_filtered_git_blob",
+        "actual_manifest_head_git_blob",
+        "expected",
+        "actual"
+      ],
+      "source_identity_gate_value_contract": "passed_is_true_exactly_when_worktree_clean_head_equals_remote_readback_commit_all_runner_test_report_manifest_filtered_and_HEAD_blobs_equal_their_expected_values_and_all_four_expected_source_binding_blobs_equal_actual_values",
+      "technical_telemetry_summary_count": 12,
+      "technical_telemetry_summary_fields": [
+        "stencil_index",
+        "branch_index",
+        "record_count",
+        "psi_cap_contact_count",
+        "phi_cap_contact_count",
+        "destructive_reset_count",
+        "nonfinite_detected_count",
+        "negative_phi_input_detected_count",
+        "undeclared_source_detected_count"
+      ],
+      "technical_telemetry_summary_order": "stencil_index_then_branch_index",
+      "top_level_fields": [
+        "canonical_payload_sha256_without_self",
+        "checkpoint_metrics",
+        "claim_boundary",
+        "classification",
+        "comparisons",
+        "evidence_identity",
+        "execution_identity",
+        "gates",
+        "index_maps",
+        "protocol_identity",
+        "runtime_gate",
+        "schema",
+        "source_identity_gate",
+        "technical_telemetry_summaries",
+        "trajectory_energy_summaries"
+      ],
+      "trajectory_energy_summary_fields": [
+        "stencil_index",
+        "branch_index",
+        "record_count",
+        "pre_total_psi_energy",
+        "minimum_total_psi_energy",
+        "maximum_total_psi_energy",
+        "minimum_energy_ratio",
+        "maximum_energy_ratio",
+        "first_lower_bound_violation_step",
+        "first_upper_bound_violation_step"
+      ],
+      "trajectory_energy_summary_count": 12,
+      "trajectory_energy_summary_order": "stencil_index_then_branch_index",
+      "type_contract": "indices_counts_and_steps_are_json_integers_not_booleans_flags_are_json_booleans_schema_labels_paths_hashes_and_enums_are_strings_all_other_numeric_values_and_profile_entries_are_finite_binary64_comparison_passed_is_true_exactly_when_reference_value_minus_candidate_value_exceeds_tolerance"
+    },
     "primary_pass_boolean_is_evidence": false
   },
   "runtime": {
@@ -230,13 +628,29 @@
     "numpy": "1.26.4",
     "python": "3.11.15"
   },
-  "schema": "lineum.q2-m2-rwc1-preregistration.v2",
+  "schema": "lineum.q2-m2-rwc1-preregistration.v3",
   "source_bindings": {
     "base_commit": "582637292e52fd752c42e6e35892782c39c60840",
     "core_math_git_blob": "bb877021810691223a0eb960a45493a2e351112a",
     "localized_reference_runner_git_blob": "1598faf0f39e056c1684f767c2554edc63283ca4",
+    "preregistration_v3_parent_commit": "7f0929c0047d96c14f540893a90bf7cef49229eb",
     "requirements_dev_git_blob": "7a0907e3e6c2d15400d19b536227a509910ae7e9",
     "requirements_git_blob": "942f2b94b3d3f8c767451ae2d847a7b17c86d81e"
+  },
+  "technical_failure_semantics": {
+    "complete_payload_receipt_precondition": "every_retained_local_and_global_stage_receipt_has_precondition_passed_true_a_false_precondition_may_exist_only_in_unpublished_partial_staging_and_forces_a_consumed_technical_non_result",
+    "complete_payload_telemetry": "every_retained_step_telemetry_flag_is_false_any_true_flag_forces_a_consumed_technical_non_result_and_prohibits_primary_completion",
+    "nonfinite_or_precondition_failure": "abort_without_replacement_clipping_fabricated_remaining_records_or_primary_publication_retain_only_execution_receipt_and_optional_unpublished_partial_staging_identity",
+    "zero_energy_metric_edge": "nonfinite_or_nonpositive_total_psi_energy_at_any_retained_checkpoint_is_a_consumed_technical_non_result_no_infinite_or_sentinel_metric_is_serialized",
+    "zero_reference_profile_edge": "the_frozen_plus_1e_minus_30_denominator_remains_defined_but_every_profile_entry_and_derived_error_must_be_finite"
+  },
+  "technical_telemetry_definitions": {
+    "destructive_reset": "true_when_the_unchanged_final_psi_guard_would_zero_the_branch_after_the_common_tail_because_psi_is_nonfinite_or_finite_max_abs_psi_is_greater_than_or_equal_to_0_99_times_PSI_CAP_evaluated_before_zeroing",
+    "negative_phi_input_detected": "true_when_any_phi_value_is_strictly_below_zero_at_the_input_to_an_attempted_local_or_global_paired_stage_before_candidate_arithmetic",
+    "nonfinite_detected": "true_when_any_psi_phi_proposal_derived_work_or_candidate_output_is_nonfinite_at_a_declared_pre_stage_post_stage_or_end_of_step_finiteness_check_before_any_historical_replacement",
+    "phi_cap_contact": "true_when_any_phi_value_after_the_unchanged_phi_diffusion_and_before_the_unchanged_phi_clip_is_strictly_below_zero_or_strictly_above_PHI_CAP",
+    "psi_cap_contact": "true_when_any_abs_psi_after_the_flow_stage_and_before_the_unchanged_flow_guard_scale_is_strictly_greater_than_PSI_CAP",
+    "undeclared_source_detected": "true_when_the_step_source_provenance_guard_fails_including_a_proposal_not_precomputed_from_that_branch_S0_a_candidate_input_not_from_the_declared_branch_stage_or_any_prepared_reference_observer_expected_output_or_future_state_entering_the_candidate_law"
   },
   "thresholds": {
     "absolute_clean_gate_checkpoints": [1, 10, 100, 500, 1000, 2000, 5000, 10000],
@@ -256,9 +670,61 @@
     "negative_paired_stage_phi_allowed": false,
     "negative_phi_tolerance": 0.0,
     "phi_radial_profile_relative_l2_max": 0.1,
+    "historical_phi_cap": 1000000.0,
+    "historical_psi_cap": 1000000.0,
+    "historical_psi_destructive_reset_ratio": 0.99,
     "psi_energy_relative_error_max": 0.05,
     "psi_radial_profile_relative_l2_max": 0.1,
     "whole_trajectory_psi_energy_lower_ratio": 0.95,
     "whole_trajectory_psi_energy_upper_ratio": 1.05
+  },
+  "transport_correction": {
+    "authority_change": "separate_owner_authorized_bounded_completion_after_v2",
+    "representative_compact_row_estimate_bytes_excluding_checkpoint_arrays": 144480000,
+    "scientific_output_inspected": false,
+    "scientific_trajectory_executed": false,
+    "source_schema": "lineum.q2-m2-rwc1-preregistration.v2",
+    "transport_changed_surface": "physical_jsonl_partition_only",
+    "unchanged_surfaces": [
+      "candidate_law",
+      "source_and_runtime_bindings",
+      "baseline_and_branch_order",
+      "record_fields_and_global_order",
+      "record_count",
+      "metrics_and_thresholds",
+      "outcome_map"
+    ]
+  },
+  "workflow_sequence": {
+    "checker_clean_preflight": [
+      "checker_checkpoint_commit_equals_remote_readback_commit",
+      "worktree_is_clean",
+      "checker_and_checker_test_filtered_and_HEAD_git_blobs_equal_frozen_report_and_manifest_values",
+      "protocol_primary_six_shards_report_manifest_and_source_identities_match",
+      "supported_runtime_matches",
+      "checker_receipt_and_checker_output_are_absent"
+    ],
+    "dual_identity_definition": "for_every_frozen_path_git_hash_object_with_path_path_path_filtered_blob_equals_git_rev_parse_HEAD_colon_path_HEAD_blob_and_both_equal_the_report_and_manifest_expected_blob_while_clean_HEAD_equals_the_fetched_remote_readback_commit",
+    "no_reorder_or_retroactive_merge": true,
+    "primary_clean_preflight": [
+      "implementation_checkpoint_commit_equals_remote_readback_commit",
+      "worktree_is_clean",
+      "runner_runner_test_report_manifest_protocol_core_reference_and_dependency_filtered_and_HEAD_git_blobs_equal_frozen_values",
+      "supported_runtime_matches",
+      "all_primary_receipt_primary_output_and_six_final_shard_paths_are_absent"
+    ],
+    "steps": [
+      "commit_push_fetch_and_remote_readback_v3_protocol_checkpoint",
+      "implement_only_primary_runner_and_synthetic_tests_then_pass_tests",
+      "freeze_runner_test_report_and_manifest_blobs_commit_push_fetch_and_remote_readback_implementation_checkpoint",
+      "perform_clean_primary_dual_identity_and_output_absence_preflight",
+      "exclusively_create_primary_receipt_then_execute_exactly_one_primary_payload",
+      "incorporate_primary_or_technical_non_result_commit_push_fetch_and_remote_readback_before_checker_source_exists",
+      "implement_only_independent_checker_and_synthetic_tests_then_pass_tests",
+      "freeze_checker_test_report_and_manifest_blobs_commit_push_fetch_and_remote_readback_checker_checkpoint",
+      "perform_clean_checker_dual_identity_input_and_output_absence_preflight",
+      "exclusively_create_checker_receipt_then_execute_exactly_one_retained_output_check",
+      "incorporate_checker_result_commit_push_fetch_and_remote_readback_final_bounded_result"
+    ]
   }
 }
