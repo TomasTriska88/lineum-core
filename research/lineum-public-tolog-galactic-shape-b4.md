@@ -1,11 +1,11 @@
 # Lineum Public-TOLOG Three-Question Benchmark — B4
 
-**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits the bounded RWC1 implementation, non-scientific tests, one primary, and one retained-output checker; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, remains frozen before implementation or outcome; its evidence transport is prospectively corrected from one oversized JSONL to six directly readable JSONL shards without changing a field, record, threshold, branch, or trajectory; no RWC1 code, test, trajectory, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, partner action, or TOLOG restricted implementation is yet executed; Questions 1 and 3 remain unchanged
-**Version:** 0.25.34 \
+**Status:** active authoritative report; localized-L1, `Q2-O1`, `Q2-SA1-A`, and `Q2-PV1-B` remain independently checked within their frozen domains; Question 2 remains negative only within those previously verified domains; `Q2-M1` primary attempt 3 remains retained and canonically `inconclusive_or_confounded` because its resolution-control signature failed; follow-up `Q2-M1-RS1` is complete within its exact `N=96` versus `N=128` normalized-lattice domain and Candidate A remains `unsupported_under_rs1_tested_conditions`; Candidate A is not reopened; current authority permits the bounded RWC1 implementation, non-scientific tests, one primary, and one retained-output checker; Candidate B `Q2-M2-RWC1`, a local reciprocal-work closure between existing `phi` and `psi`, now has one frozen research-only primary runner and permanent non-scientific tests; its dedicated suite passes `25 / 25` and the combined gate with the `22` unchanged localized-reference regressions passes `47 / 47`; both one-shot authorizations remain unconsumed; no RWC1 trajectory, primary CLI, `execute_primary_once`, execution receipt, primary output, evidence shard, checker, direct Q2 step, production equation, whitepaper, Lina runtime, device action, partner action, or restricted TOLOG implementation is executed; Questions 1 and 3 remain unchanged
+**Version:** 0.25.35 \
 **Evidence cutoff:** 2026-08-30
 **Repository / target branch:** `TomasTriska88/lineum-core` / `develop` \
 **Working branch:** `codex/q2-m30-endogenous-balance-20260830` \
-**Checkpoint parent:** `7f0929c0047d96c14f540893a90bf7cef49229eb` \
+**Checkpoint parent:** `9b340097dd4d2aa8cc1c661e40e60811120ca22b` \
 **Scope:** exactly three public comparison questions; public TOLOG information only; no private TOLOG material; no private Lina EI implementation; no Core equation or whitepaper change
 
 ## 0. Authority and continuity
@@ -25,6 +25,8 @@ Version `0.25.0` freezes `Q2-M1` before any new causal-memory outcome is inspect
 Version `0.25.33` preserves the completed Candidate A negative and records the abstract authority classification: agent-generated, Lineum-only retrieval and preregistration are permitted; implementation, execution, and partner action are not. It registers Candidate B `Q2-M2-RWC1`, selects the smallest existing-state reciprocal-work variant after a contradiction and duplication audit, and freezes its exact local exchange law, controls, source identities, runtime, validity gates, bounded outcome map, output paths, and no-answer-shaping boundary before implementation or scientific outcome. No RWC1 code, unit test, trajectory, checker, production equation, whitepaper, Lina runtime, device action, or restricted TOLOG implementation is executed or changed by this checkpoint.
 
 Version `0.25.34` separately records bounded-completion authority for RWC1 implementation, non-scientific tests, exactly one primary trajectory payload, and exactly one later retained-output checker; this changes the authority counters from zero to one while partner action and TOLOG implementation remain unauthorised. Before implementation or any trajectory, a schema-only compact-row estimate showed that the single planned JSONL would require approximately `144480000` bytes even before retained state arrays. That is a transport defect, not scientific evidence. The transport correction alone changes only physical packaging: the unchanged `400110` globally indexed, directly readable JSONL records are partitioned into six fixed contiguous shards, each capped at `75000000` bytes. The same prospective checkpoint also freezes primary, receipt, and checker technical schemas. Candidate law, record fields and global order, branch order, steps, observables, scientific thresholds, and outcome map do not change. No trajectory or model output was inspected.
+
+Version `0.25.35` records the documentation-faithful research-only RWC1 primary implementation and its permanent non-scientific regression gate before any scientific execution. The dedicated module passes `25 / 25`; the independent combined invocation with the unchanged `22` localized-reference regressions passes `47 / 47` in `0.87 s` with exit code `0` under Python `3.11.15`, NumPy `1.26.4`, and pytest `9.1.1`. Exact runner and test identities are frozen. No scientific trajectory, primary CLI, `execute_primary_once`, fixed execution receipt, primary output, evidence shard, checker, Core equation, protocol, threshold, whitepaper, private Lina implementation, partner action, or restricted TOLOG implementation is run, created, or changed. Both one-shot authorizations remain unconsumed.
 
 Every conclusion below separates implementation facts, reproduced observations, cautious interpretation, hypotheses, and real-physics claims. Internal numerical agreement is not evidence that nature uses the same ontology.
 
@@ -4944,7 +4946,113 @@ publication right.
 
 The original `0.25.33` documentation-only checkpoint is committed, pushed to
 its dedicated branch, and remotely read back at commit
-`7f0929c0047d96c14f540893a90bf7cef49229eb`. Bounded-completion authority is
-now recorded. Implementation and scientific execution remain blocked only
-until this prospective `0.25.34` transport correction is itself committed,
-pushed, and remotely read back; no partner action is authorised.
+`7f0929c0047d96c14f540893a90bf7cef49229eb`. The exact `0.25.34` transport
+contract is committed, pushed, fetched, and remotely read back on the same
+dedicated branch at commit
+`9b340097dd4d2aa8cc1c661e40e60811120ca22b`. Bounded-completion authority is
+recorded; no partner action is authorised.
+
+### Q2-M2-RWC1 implementation and non-scientific test checkpoint — version `0.25.35`
+
+**Plain conclusion.** The research-only RWC1 primary instrument is implemented
+and its complete dedicated synthetic gate passes `25 / 25`. The independent
+combined gate also preserves all `22 / 22` localized-reference regressions,
+for `47 / 47` total. Neither gate ran the scientific primary or created a
+scientific observation.
+
+**Everyday analogy.** The new measuring device was checked with dummy signals
+and then placed beside the old reference device to make sure none of its
+established controls moved. Both benches passed, but the sealed real sample
+has not been opened.
+
+**Practical consequence.** The runner and permanent test may now enter one
+implementation checkpoint with this report and manifest. The single primary
+remains blocked until that exact four-file checkpoint is committed, pushed,
+fetched, remotely read back, and passes the clean dual-identity preflight.
+
+The frozen non-scientific test receipt is:
+
+```text
+dedicated RWC1 module = 25 passed / 0 failed
+unchanged localized-reference regressions = 22 passed / 0 failed
+independent combined result = 47 passed / 0 failed in 0.87 s
+combined exit code = 0
+Python = 3.11.15
+NumPy = 1.26.4
+pytest = 9.1.1
+scientific trajectory calls = 0
+primary CLI calls = 0
+execute_primary_once calls = 0
+fixed execution-receipt creations = 0
+fixed primary-output creations = 0
+fixed evidence-shard creations = 0
+checker implementations or invocations = 0
+```
+
+The dedicated tests cover the local and global law branches, shortest-arc
+phase edges, preconditions and receipt closure; unchanged historical proposals
+under both stencils; all six branch orders and `RECEIPT_ONLY` identity;
+metric, classifier, and zero-energy precedence boundaries; the exact index
+maps, `400110` unique ordered record coordinates, and `record_type` bijection;
+canonical JSON and JSONL, byte caps, counts, readback, publication order, and
+partial-failure behavior; the exclusive latch, sanitized receipts, dual Git
+identity, and protocol tamper rejection; mocked `LAP4` then `LAP8`
+orchestration without retry; and the exact primary schema, types, payload hash,
+and classifier. The combined gate reruns the unchanged localized-reference
+suite. All filesystem publication tests use temporary paths rather than the
+fixed scientific paths.
+
+The implementation identities frozen for this checkpoint are:
+
+```text
+runner path = research/runners/lineum_b4_q2_m2_rwc1_local_reciprocal_work.py
+runner checkout bytes = 114857
+runner checkout SHA-256 = 113351ae7e7f7e856a511f19bc58ff13d684c5891e080403ba1f2812d7831713
+runner Git blob = 157de3e29da6f17017e6afe2782d8f586396bb50
+
+permanent test path = tests/research/test_lineum_b4_q2_m2_rwc1_local_reciprocal_work.py
+permanent test checkout bytes = 49182
+permanent test checkout SHA-256 = 75b4fd7da51e38dad56f37e2a4c63c08ecc46295b6bc381714735aa3b93a82af
+permanent test Git blob = 4d9b6625247d31990b8c99c72063e5ae45ae51ae
+```
+
+**Implementation facts.** The new source is confined to the registered
+research runner. It binds the exact v3 protocol and remotely read-back parent,
+keeps reusable deterministic helpers import-safe, and reserves the one-shot
+workflow for its explicit CLI. It implements the frozen local/global receipt
+law, branch and stencil order, strict runtime and dual-source preflight,
+exclusive durable attempt latch, six canonical readable evidence shards, and
+primary-last publication contract. Production Core, the localized reference
+runner, dependencies, preregistration, candidate law, thresholds, outcome map,
+and claim boundary are unchanged.
+
+**Test observation.** All `25` new cases and all `22` reference regressions
+passed. This verifies the encoded instrument and fail-closed transport against
+synthetic and tamper inputs. It does not establish that a future scientific
+trajectory will be finite, complete, stable, local, or supportive of RWC1.
+
+**Interpretation.** The implementation is fit to enter a frozen
+pre-execution checkpoint. Passing tests validates the instrument contract, not
+the hypothesis or nature.
+
+**Hypothesis and claim status.** Unchanged. Candidate A remains
+`unsupported_under_rs1_tested_conditions`; Candidate B remains
+`preregistered_and_implemented_not_scientifically_executed`;
+`empirically_connected = false`; direct Question 2 return, Lina capability,
+TOLOG compatibility, physical energy, locality necessity, Shared Result,
+Joint IP, and commercial conclusions remain unestablished. No private Lina
+implementation or restricted TOLOG material was used, and no TOLOG or partner
+implementation is authorised.
+
+The fixed primary execution receipt, primary JSON, all six final evidence
+shards, checker source and test, checker output, and checker receipt are absent.
+The authorized primary and checker invocation counts remain `1` each and the
+consumed counts remain `0` each. This prospective `0.25.35` checkpoint has not
+yet been committed or remotely read back, so its own readback claim remains
+false. After publication, the preflight must verify a clean
+`HEAD = origin/codex/q2-m30-endogenous-balance-20260830`, exact filtered and
+`HEAD` identities for runner, test, report, and manifest, the frozen protocol,
+Core, reference runner, dependencies, and runtime, and absence of every fixed
+primary path before exclusively creating the one primary receipt. No report or
+manifest rewrite may be used merely to assert that readback, because doing so
+would change the identities being verified.
