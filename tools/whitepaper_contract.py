@@ -220,7 +220,7 @@ def select_profile_result(profile_results: list[dict]) -> dict:
     return max(candidates, key=lambda result: len(result.get("checks", [])))
 
 
-def load_csv_dict(path, key_col="metric"):(path, key_col="metric"):
+def load_csv_dict(path, key_col="metric"):
     """Load CSV as a dictionary {key_col_val: row_dict}."""
     if not os.path.exists(path):
         return None
