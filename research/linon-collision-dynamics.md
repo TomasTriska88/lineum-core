@@ -396,3 +396,46 @@ for name,rows in comparisons.items():
    print(r['step'],round(r['psi_residual'],9),round(r['phi_residual'],9),round(r['psi_mass']-r['psi_mass_sum_singles'],9),round(r['phi_sum']-r['phi_sum_singles'],9))
 
 ```
+
+
+## 12. Append-only correction — owner intuition and recovered repository inventory (2026-10-20)
+
+**Owner intuition (preserved verbatim):** In response to the neutral running-track scene, the owner replied: “špatná detekce?” This is recorded as the owner's tentative candidate explanation, not as a settled decision or experimental fact.
+
+**Agent formalization, distinct from the owner's words:** The candidate is that the observer may temporarily fail to detect a continuing structure, or may split/count it inconsistently, even while a separate field-level trace remains smooth. In Attempt C, the intensity-weighted circular centre moved smoothly while the threshold-gated phase-winding count changed from one to zero and later to one, and eventually to two. This makes observer failure a plausible explanation to test; it does not prove that the underlying topological structure remained intact. A smooth intensity centre can track a wave packet even when no validated, persistent vortex core is present.
+
+**Competing explanations retained rather than silently collapsed:**
+
+- **O1 — observer miss or duplication:** an amplitude/plaquette gate hides a winding, then detects it again, or classifies multiple nearby cells as separate detections.
+- **O2 — genuine field/topology change:** the phase field actually loses, creates, merges, or splits local winding structures while the broad intensity packet continues.
+- **O3 — boundary/topology ambiguity:** the periodic torus and a low-amplitude imposed single-charge packet can contain unresolved compensation or phase structure, so a local count is not a complete global charge account.
+- **O4 — no validated object was present:** the analytic packet was imposed, not extracted from a demonstrated stable native Core linon; its changing detector count may not represent disappearance and reappearance of one persistent object.
+- **O5 — implementation/provenance mismatch:** Attempt C is a manually transcribed narrow Torch/FFT extraction, not the full imported Core runtime; differences from active source remain possible.
+
+The smallest *eventual* discriminating question suggested by the owner intuition is whether a separately validated known-answer field remains correctly identified across its full trajectory under an observer-only check, with positive and negative controls. That is a candidate design direction, not a frozen protocol and not permission to run it now. It must be compared with existing observer audits and the source-pinned historical lane before any threshold, metric, or mechanism is selected.
+
+### Repository-inventory correction
+
+Section 2 and the final paragraph of Section 11 accurately described the limited inventory available at the time they were written, but they are superseded for current repository visibility by this checkpoint. A read-only recursive Git tree read for `develop` returned `truncated=false`, with 1,260 total tree entries, 1,126 tracked file blobs, and 84 Markdown files below `research/`. The previously named candidate files at `research/README.md`, `research/index.md`, `research/lineum-master-report.md`, `research/eq4-canonical-research.md`, and `research/eq11-collision-dynamics.md` are absent from that complete `develop` tree.
+
+The inventory does identify an already-declared scientific root and continuity lineage:
+
+- Root scientific report: `research/foundations/lineum-continuous-source-cosmology-validation.md`, recorded immutable blob SHA `3fba3925553cd5596e46c02fa35d1db91523537d`.
+- Mandatory continuity and impact ledger: `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, blob SHA `5304874451caf32313ad0e8e3c59e53958698d79`, which names the root report.
+- Cross-branch priority review: `research/foundations/lineum-root-programme-cross-branch-priority-review.md`, blob SHA `9b1217f4757d2f0a9fb566284a91ac7e5a3c010d`.
+- Related active preregistration: `research/foundations/lineum-collective-vortex-particle-identity-preregistration.md`, blob SHA `3c84624ed0a0bd961d7e344a3629761c2d8b2fc0`. It concerns source-off collective identity in the retained P2 lane and explicitly forbids inventing a substitute initializer from prose.
+
+The collision report therefore must be treated as a child research lane within that existing programme, not as a provisional root. This correction does not silently merge the distinct scientific questions or promote results between them.
+
+### Historical collision-artifact retrieval status
+
+The complete current `develop` file tree and an immutable older Core tree at commit `8c4ff12af79b218fce8938497f56f75c4567195e` were inspected read-only. The old tree contains legacy `spec6_false_s41` run artefacts and particle/vortex logs, but the path inventory did not identify a clearly source-pinned Phase 8–20 collision runner or its corresponding initial state and raw output. The current tree and code-search results do surface historical narrative claims in the core whitepaper and draft hypothesis 30, but a narrative excerpt is not a reproduction receipt. This is a bounded retrieval result, not proof that no collision artifacts ever existed: content search indexing and historical commits remain incompletely reconciled, and the exact Phase 8–20 packages are still marked `unreproduced / provenance missing` until source, parameters, state, boundary, command, and outputs are joined.
+
+The repository search also surfaced existing project gates for generic source-blind localized persistence and for recovery of the exact P2 package. These constrain priority but do not turn P2 collective identity into evidence for a two-core collision. The separate canonical audit gate remains blocked by Issue #7; it was not used or bypassed in this work.
+
+### Binding next gate
+
+1. Continue read-only retrieval of historical collision-related code, commits, initial states, and outputs, using path-specific Git history and declared equation-family distinctions. Do not label a prose claim as reproduced.
+2. Keep the owner hypothesis `poor_detection` separate from the competing O2–O5 explanations. Compare it against the existing vortex-identity, historical-vortex-migration, and synthetic-observer audits before selecting a detector or test.
+3. Only after the report lineage and the exact target variant are reconciled may a standalone observer-only protocol be specified, tested against known-answer positives/negatives, and committed before execution.
+4. No new simulation, parameter tuning, Core equation change, canonical audit, or whitepaper promotion is authorized by this checkpoint.
