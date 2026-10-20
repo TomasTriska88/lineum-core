@@ -207,3 +207,192 @@ Only after these steps should the first preregistered collision protocol be fina
 - Research reporting rules: [`.agent/continuous-research-reporting.md`](https://github.com/TomasTriska88/lineum-core/blob/develop/.agent/continuous-research-reporting.md)
 - Repository boundary and research-code placement: [`docs/repository-boundaries.md`](https://github.com/TomasTriska88/lineum-core/blob/develop/docs/repository-boundaries.md)
 - Canonical audit bug tracker: [Issue #7](https://github.com/TomasTriska88/lineum-core/issues/7)
+
+
+## 11. Append-only chronology correction — exploratory Attempt C (2026-10-20)
+
+**This section was added after discovering the already-existing report. It does not erase or rewrite Sections 5–9 as they stood before this attempt.** An additional small control pilot had been run in the local scratch workspace before this active report and the mandatory continuous-reporting protocol were re-read during this session. That was out of order: the runner was not committed before execution, the report's root/lineage inventory was unresolved, and no full Core checkout or supported full-package test environment was used. This attempt is therefore **exploratory and provenance-defective**, not an admissible scientific collision result. The act of recording it now preserves the chronology but does not retroactively preregister it.
+
+### Setup and exact provenance
+
+- Inspected source: lineum_core/math.py on develop, blob SHA-1 bb877021810691223a0eb960a45493a2e351112a.
+- Runner: manually transcribed narrow PyTorch wave-baseline extraction, saved locally as linon_collision_reference.py; SHA-256 1ce34d01255fb85124a2d240d4cbba7cc617fba1fe163883af2a363789017ab8. The complete exact runner is embedded below so scratch is not its only remaining location.
+- Execution: Python 3.13.5, NumPy 2.3.5, PyTorch 2.10.0+cpu, one CPU thread; CUDA unavailable.
+- Run: 64×64 periodic FFT grid, 500 steps, κ=0.5, σ=4, amplitude=1, |kx|=0.65, centers (18,32) and (46,32), dt=1.0.
+- Isolation settings: stochastic births and noise disabled, μ disabled, PML disabled, κ projection disabled; linear-null branch also disables drift, mode coupling and φ diffusion.
+- The executable was run twice after it was written and produced byte-identical pilot_summary.json output. Output SHA-256 f820ac1becf88b8a6121e437f7da73757ddde850370857753fec6994b2ee82c5. This is repeatability of the frozen scratch script only; it is not a source-equivalence receipt for the complete Core package and not a canonical audit pass.
+
+### Key retained values from the exploratory output
+
+| Pair compared with two separate single runs | Step 250 Dψ | Step 250 Dφ | Step 500 Dψ | Step 500 Dφ |
+|---|---:|---:|---:|---:|
+| Linear null, coupling disabled | 0.000000000 | 0.000000000 | 0.000000000 | 0.000000000 |
+| Coupled head-on, same winding | 0.019984462 | 0.260561202 | 0.066143049 | 0.217274397 |
+| Coupled same-direction control | 0.001393244 | 0.004353925 | 0.030015124 | 0.024252283 |
+| Coupled head-on, opposite winding | 0.020357385 | 0.281097338 | 0.069987862 | 0.255194651 |
+| Opposite winding with π phase offset | 0.020287424 | 0.281074608 | 0.070022770 | 0.255101974 |
+
+At step 250, the same-winding head-on residual is about 14.3 times the same-direction control for ψ and 59.8 times for φ. By step 500 those ratios are about 2.2 and 9.0. For the same-winding head-on pair, the absolute difference in total |ψ|² from summed single runs was 2.791878850 at step 250 and 11.159424814 at step 500; the difference in sum(φ) was 0.062417594 and 0.999429962 respectively. These values do not establish a physical energy conversion law or a stable-linon collision.
+
+### Observer limitation reinforced
+
+For a single imposed packet, the amplitude-gated phase-winding observer reports one vortex at step 0; zero at steps 10 and 25; one again through much of steps 50–200; zero at step 225; one at step 250; zero at step 275; one at steps 300–400; and two at steps 450–500. Meanwhile the intensity-weighted circular centre moves smoothly. The observer therefore loses and regains detected winding while the packet's intensity trace continues moving. This is a limitation of the measurement under this imposed initial condition, not a falsification of Lineum collision dynamics. The periodic torus and amplitude gate also mean the apparent lone charge is not a demonstrated globally isolated defect.
+
+### Scope and decision impact
+
+The result shows that this narrow coupled numerical extraction is non-additive around the encounter window and that the linear null is additive at stored checkpoints. The same-direction control also becomes nonzero later, so this is not proof that every paired difference is caused exclusively by collision. The packet initial states are analytic, imposed states—not persistent linons recovered from the actual Core solver. Consequently this attempt adds no admissible scientific verdict, must not be used for parameter tuning, and cannot be transferred to canonical Eq-4/v1 or real-world particle physics.
+
+The previously recorded Section 9 rule remains binding: **no further consequential simulation is authorized until the complete research-report lineage is reconciled, prior Phase 8–20 claims are retrieved, and a protocol plus runner are frozen and committed before execution.** The root-report inventory remains incomplete because the available repository tools do not expose an exhaustive research-directory listing.
+
+### Complete frozen scratch runner used by Attempt C
+
+The code below is preserved verbatim from the scratch runner. Saving the code into this report does not retroactively make the earlier run preregistered or admissible. To reproduce only this historical pilot, save it as linon_collision_reference.py and run python linon_collision_reference.py with compatible NumPy and PyTorch CPU.
+
+```python
+"""Exploratory interaction pilot: frozen narrow extraction of Lineum's Torch wave branch.
+Source: lineum_core/math.py, Git blob bb877021810691223a0eb960a45493a2e351112a.
+Not a full Core checkout; only the inspected wave_baseline path/config is represented.
+"""
+from __future__ import annotations
+import json, time
+from pathlib import Path
+import numpy as np
+import torch
+
+N, T, KAPPA, SIGMA, AMP, KX, Y0, XL, XR = 64, 500, 0.5, 4.0, 1.0, 0.65, 32.0, 18.0, 46.0
+CHECKS={0,1,10,25,50,100,150,200,225,250,275,300,350,400,450,500}
+torch.set_num_threads(1)
+y,x=np.mgrid[0:N,0:N]
+
+def packet(x0:float,y0:float,q:int,kx:float,phase0:float=0.0)->np.ndarray:
+    dx=(x-x0+N/2)%N-N/2; dy=(y-y0+N/2)%N-N/2
+    r=np.hypot(dx,dy); theta=np.arctan2(dy,dx)
+    return AMP*(r/SIGMA)*np.exp(-0.5*(r/SIGMA)**2)*np.exp(1j*(q*theta+kx*dx+phase0))
+
+def diffuse(field,kappa,rate=0.05):
+    ku,kd=np.roll(kappa,1,0),np.roll(kappa,-1,0)
+    kl,kr=np.roll(kappa,1,1),np.roll(kappa,-1,1)
+    fu,fd=np.roll(field,1,0),np.roll(field,-1,0)
+    fl,fr=np.roll(field,1,1),np.roll(field,-1,1)
+    return rate*(fu*ku+fd*kd+fl*kl+fr*kr-(ku+kd+kl+kr)*field)
+
+# Exact LAP4 Fourier symbol used by the inspected source branch.
+kernel=torch.zeros((N,N),dtype=torch.float64)
+kernel[0,0]=-4.0; kernel[1,0]=kernel[-1,0]=kernel[0,1]=kernel[0,-1]=1.0
+lap4_symbol=torch.fft.fft2(kernel).real
+
+def step(state:dict,coupled:bool):
+    psi=torch.tensor(state['psi'],dtype=torch.complex128)
+    phi=torch.tensor(state['phi'],dtype=torch.float64)
+    kappa=torch.tensor(state['kappa'],dtype=torch.float64)
+    # This pilot disables stochastic births/noise, mu, PML and projection.
+    if coupled:
+        phi_int=torch.clamp(phi,0.0,10.0)
+        interaction_factor=0.1*torch.tanh((0.04*phi_int*kappa)/0.1)
+        grads_phi=torch.gradient(phi)
+        flow=-0.004*(grads_phi[0]+1j*grads_phi[1])*kappa
+        flow=flow/(1.0+torch.abs(flow)/10.0)
+    else:
+        interaction_factor=torch.zeros_like(phi)
+        flow=torch.zeros_like(psi)
+    def Nterm(curr):
+        term=interaction_factor*curr
+        term=term/(1.0+torch.abs(term)/10.0)
+        return flow+term
+    # Torch wave_baseline path: local half-step, Fourier propagation, local half-step.
+    psi=psi+Nterm(psi)*0.5
+    psi_hat=torch.fft.fft2(psi)
+    psi_hat=psi_hat*torch.exp(1j*0.05*lap4_symbol)
+    psi=torch.fft.ifft2(psi_hat)
+    psi=psi+Nterm(psi)*0.5
+    epsi=torch.abs(psi)**2
+    if coupled:
+        delta_e=0.001*epsi*kappa
+        phi=phi+delta_e
+        psi=(psi/(torch.sqrt(epsi)+1e-12))*torch.sqrt(torch.clamp(epsi-delta_e,min=0.0))
+        phi=phi+kappa*0.05*torch.tensor(diffuse(phi.numpy(),kappa.numpy()),dtype=torch.float64)
+    # Linear null sets reaction, drift and phi diffusion to zero.
+    phi=torch.clamp(phi,0.0,1e6)
+    return {'psi':psi.numpy(),'phi':phi.numpy(),'kappa':kappa.numpy(),
+            'telemetry':{'is_nan':bool(torch.isnan(torch.sum(psi)).item() or torch.isnan(torch.sum(phi)).any().item())}}
+
+def winding_map(psi:np.ndarray)->np.ndarray:
+    ph=np.angle(psi); p00=ph; p01=np.roll(ph,-1,1); p11=np.roll(p01,-1,0); p10=np.roll(ph,-1,0)
+    ds=[np.angle(np.exp(1j*(p01-p00))),np.angle(np.exp(1j*(p11-p01))),
+        np.angle(np.exp(1j*(p10-p11))),np.angle(np.exp(1j*(p00-p10)))]
+    wind=sum(ds)/(2*np.pi); a=np.abs(psi)
+    a10=np.roll(a,-1,0); a01=np.roll(a,-1,1); a11=np.roll(a10,-1,1)
+    pmax=np.maximum.reduce([a,a10,a01,a11]); pmin=np.minimum.reduce([a,a10,a01,a11])
+    gate=(pmax>0.02)&(pmin<0.35*pmax)
+    q=np.zeros((N,N),dtype=np.int8); q[(wind>0.5)&gate]=1; q[(wind< -0.5)&gate]=-1
+    return q
+
+def circular_com(I):
+    idx=np.arange(N); zx=np.sum(I*np.exp(2j*np.pi*idx[None,:]/N)); zy=np.sum(I*np.exp(2j*np.pi*idx[:,None]/N))
+    return float((np.angle(zx)*N/(2*np.pi))%N),float((np.angle(zy)*N/(2*np.pi))%N)
+
+def run(name,psi0,coupled):
+    state={'psi':psi0.copy(),'phi':np.zeros((N,N)),'kappa':np.full((N,N),KAPPA),'mu':np.zeros((N,N))}
+    snaps={}; history=[]
+    for t in range(T+1):
+        if t in CHECKS:
+            psi=state['psi']; phi=state['phi']; I=np.abs(psi)**2; cx,cy=circular_com(I); q=winding_map(psi)
+            history.append({'step':t,'psi_mass':float(I.sum()),'psi_peak':float(np.abs(psi).max()),
+             'phi_sum':float(phi.sum()),'phi_l2':float(np.linalg.norm(phi)),'com_x':cx,'com_y':cy,
+             'vortex_count':int(np.count_nonzero(q)),'positive_vortices':int(np.count_nonzero(q>0)),
+             'negative_vortices':int(np.count_nonzero(q<0))})
+            snaps[t]={'psi':psi.copy(),'phi':phi.copy()}
+        if t<T:
+            state=step(state,coupled)
+            if state['telemetry']['is_nan']: raise RuntimeError(f'NaN in {name} at step {t+1}')
+    return {'snaps':snaps,'history':history}
+
+def residual(results,pair,left,right):
+    rows=[]
+    for t in sorted(results[pair]['snaps']):
+        p=results[pair]['snaps'][t]; a=results[left]['snaps'][t]; b=results[right]['snaps'][t]
+        refpsi=a['psi']+b['psi']; refphi=a['phi']+b['phi']
+        rows.append({'step':t,
+         'psi_residual':float(np.linalg.norm(p['psi']-refpsi)/(np.linalg.norm(p['psi'])+1e-30)),
+         'phi_residual':float(np.linalg.norm(p['phi']-refphi)/(np.linalg.norm(p['phi'])+1e-30)),
+         'psi_mass':float(np.sum(np.abs(p['psi'])**2)),'psi_mass_sum_singles':float(np.sum(np.abs(refpsi)**2)),
+         'phi_sum':float(p['phi'].sum()),'phi_sum_singles':float(refphi.sum())})
+    return rows
+
+plans={
+ 'single_left_linear':(packet(XL,Y0,+1,+KX),False),
+ 'single_right_linear':(packet(XR,Y0,+1,-KX),False),
+ 'linear_collision_same_charge':(packet(XL,Y0,+1,+KX)+packet(XR,Y0,+1,-KX),False),
+ 'single_left_toward_right':(packet(XL,Y0,+1,+KX),True),
+ 'single_right_toward_left':(packet(XR,Y0,+1,-KX),True),
+ 'collision_same_charge':(packet(XL,Y0,+1,+KX)+packet(XR,Y0,+1,-KX),True),
+ 'single_right_parallel':(packet(XR,Y0,+1,+KX),True),
+ 'parallel_pair_same_charge':(packet(XL,Y0,+1,+KX)+packet(XR,Y0,+1,+KX),True),
+ 'single_right_opposite_charge':(packet(XR,Y0,-1,-KX),True),
+ 'collision_opposite_charge':(packet(XL,Y0,+1,+KX)+packet(XR,Y0,-1,-KX),True),
+ 'single_right_minus_pi':(packet(XR,Y0,-1,-KX,np.pi),True),
+ 'collision_opposite_charge_pi':(packet(XL,Y0,+1,+KX)+packet(XR,Y0,-1,-KX,np.pi),True),
+}
+t0=time.time(); results={name:run(name,psi,coupled) for name,(psi,coupled) in plans.items()}
+comparisons={
+ 'linear_pair_vs_singles':residual(results,'linear_collision_same_charge','single_left_linear','single_right_linear'),
+ 'collision_same_charge_vs_singles':residual(results,'collision_same_charge','single_left_toward_right','single_right_toward_left'),
+ 'parallel_pair_vs_singles':residual(results,'parallel_pair_same_charge','single_left_toward_right','single_right_parallel'),
+ 'collision_opposite_charge_vs_singles':residual(results,'collision_opposite_charge','single_left_toward_right','single_right_opposite_charge'),
+ 'collision_opposite_charge_pi_vs_singles':residual(results,'collision_opposite_charge_pi','single_left_toward_right','single_right_minus_pi'),
+}
+serial={'metadata':{'evidence_cutoff':'2026-10-20','grid':N,'steps':T,'kappa':KAPPA,'sigma':SIGMA,'amplitude':AMP,'kx':KX,
+ 'centers':[[XL,Y0],[XR,Y0]],'dt':1.0,'execution':'PyTorch CPU; manually transcribed narrow port of active develop Torch wave-baseline branch',
+ 'core_source_blob':'bb877021810691223a0eb960a45493a2e351112a','noise_and_stochastic_births':'disabled',
+ 'PML':'disabled; periodic FFT domain retained','mu':'disabled','caveat':'Imposed analytic packets are not demonstrated native stable Core linons; phase-winding observer is threshold-gated.'},'results':{},'comparisons':comparisons}
+for name,item in results.items(): serial['results'][name]=item['history']
+out=Path(__file__).with_name('pilot_summary.json')
+out.write_text(json.dumps(serial,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+print('elapsed_sec',round(time.time()-t0,3),'summary',out)
+for name,rows in comparisons.items():
+ print('\n'+name)
+ for r in rows:
+  if r['step'] in (0,50,100,150,200,225,250,275,300,350,400,450,500):
+   print(r['step'],round(r['psi_residual'],9),round(r['phi_residual'],9),round(r['psi_mass']-r['psi_mass_sum_singles'],9),round(r['phi_sum']-r['phi_sum_singles'],9))
+
+```
