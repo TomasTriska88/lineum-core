@@ -553,3 +553,70 @@ Q4 — Deprecated Eq-4 two-layer R-inhibitor interaction matrix:
 ```
 
 The immediate owner intuition about possible detection failure remains plausible for Attempt C, but the historical collision matrix has its own provenance and model-identity defects; it cannot be used to confirm or refute that intuition. The permitted next step remains source recovery and variant reconciliation. No new simulation, parameter tuning, canonical audit, or equation/whitepaper change is authorized.
+
+
+## 16. Append-only scan of additional legacy and successor collision claims (2026-10-20)
+
+A further read-only scan examined all 14 explicitly inspected branch trees below. Every tree request returned `truncated=false`. The inspected refs were:
+
+```text
+develop
+main
+backup
+agent/priority-f-prereg
+agent/priority-f-result
+agent/priority-f-result-v2
+agent/gnostic-e-main-report
+codex/root-research-continuity
+codex/q2-m30-endogenous-balance-20260830
+codex-rule-fix
+debug-v1.1.6-ci
+staging
+feature/diffusion-api-poc
+TomasTriska88-patch-1
+```
+
+None of these inspected tree snapshots contains the locally named scripts `.scratch/eval_interaction_matrix.py`, `.scratch/eval_interaction_sweep.py`, `.scratch/eval_phase68_algebra.py`, `.scratch/eval_phase69_deuteron_orbitals.py`, or `.scratch/eval_phase70_meson_shell.py`. GitHub path-history lookups also returned no commits for those exact `.scratch/...` paths. This is a bounded result for the inspected branches and path names, not proof that the scripts never existed outside Git or under other names. The branch-search connector paginated inconsistently, so this section deliberately reports an explicitly inspected set rather than claiming an exhaustive registry of every branch that has ever existed.
+
+### 16.1 Additional legacy Eq-4 sweep narrative
+
+The same deprecated `whitepapers/2-cosmology/extensions/04-cosmo-ext-vortex-rigidity.md` (blob `938ee11afa280c16f30b3983d97f54f9f9173430`) contains Section 62, which refers to a local `.scratch/eval_interaction_sweep.py` run of 250 configurations using 10 valency pairings across initial distances (d in [6,10,14,18,22]) and advection multipliers (k in [0.1,0.3,0.5,0.7,0.9]). The appendix's reported summary includes the following percentages in the order scatter / orbit / absorb / storm:
+
+| Pair | Reported percentages |
+|---|---|
+| (1) vs (1) | (16 / 64 / 0 / 20) |
+| (2) vs (1) | (0 / 84 / 0 / 16) |
+| (2) vs (2) | (28 / 52 / 0 / 20) |
+| (3) vs (1) | (0 / 80 / 0 / 20) |
+| (3) vs (2) | (20 / 60 / 0 / 20) |
+| (3) vs (3) | (68 / 16 / 0 / 16) |
+| (4) vs (1) | (0 / 72 / 8 / 20) |
+| (4) vs (2) | (0 / 80 / 0 / 20) |
+| (4) vs (3) | (44 / 40 / 0 / 16) |
+| (4) vs (4) | (76 / 16 / 4 / 4) |
+
+These are quoted from the legacy appendix; the exact script, initial fields, per-configuration raw outcomes, seed policy, execution command, source fingerprint, and hashes remain unavailable in the inspected permanent Git history. The table therefore remains `reported_legacy_result_provenance_incomplete`, not a reproducible simulation result and not evidence for Q2. It also uses the older N-valency/engineered R-inhibitor setup, not two validated native Core linons.
+
+### 16.2 The same long appendix crosses into a different successor equation family
+
+Later in the same file, the narrative explicitly changes to a successor architecture labelled Eq-12, with an Aegis (S)-boundary and nematic registry/scaffold field (U). Sections 68–70 cite other untracked local scripts:
+
+- `eval_phase68_algebra.py`: orientation/contact matrix under candidate-V boundary coupling, with aligned, anti-aligned, wedge, same-type, and multi-body controls; narrative reports orientation-dependent slip/drift/merger outcomes.
+- `eval_phase69_deuteron_orbitals.py`: initialized isolated dipole/quadrupole/octupole-like states and A+B contact pairs; the narrative says A+B pairs slipped/separated under tested alignments, while A+A/B+B controls merged.
+- `eval_phase70_meson_shell.py`: added a short-range boundary-localized mediator to the Eq-12 successor; the narrative says it did not produce a stable A+B near-contact trap and A+B pairs separated, while A+A merged.
+
+The scripts and accompanying raw result bundles were not found in the inspected trees. These claims therefore remain narrative/provenance-incomplete. They are also **not one continuous equation lineage with Section 61**: the file header calls the appendix legacy/deprecated Eq-4 context, its middle sections report Eq-11.1 and its later sections add an Eq-12 successor. Do not combine these outcomes into one universal “Lineum collision law.” The changing equations and initial-value problems must be retained as separate variants, and the contradictory same-type/opposite-type results across these families must remain visible rather than resolved by storytelling.
+
+### 16.3 Retrieval status and next gate
+
+The currently recovered collision-related material now includes:
+- Eq-7 Phases 8–12 as whitepaper narrative, without their collision-specific pinned runner/state/output package;
+- Eq-11.1 Phases 13–20 and related N-body narratives, with explicit historical missing-provenance cautions;
+- a deprecated Eq-4 R-inhibitor matrix and sweep whose local scripts/raw receipts are missing from the inspected trees;
+- an Eq-12 successor contact/orientation family whose local scripts/raw receipts are also missing;
+- an isolated-linon profiling script which is not a collision runner;
+- separate, scoped observer audits that caution against treating a track or raw detector count as proof of one continuing core.
+
+The immediate Q2 problem remains unresolved: **no recovered permanent package currently establishes two individually validated, persistent current-Core topological cores and their interaction with matched isolated controls.** The next permitted work is read-only recovery of the exact source, initialization, parameters, and raw outputs for one candidate lineage, with the equation family named first. If no such package can be recovered, the record must say so and propose a new frozen Q2 model/protocol as a new model, never as a direct reproduction of the legacy run.
+
+No new simulation, parameter tuning, canonical audit, equation edit, or whitepaper promotion is authorized by this retrieval step.
