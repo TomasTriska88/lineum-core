@@ -712,3 +712,31 @@ This establishes a retrieval limitation and a version-matching problem, not that
 The exact P2 Retained Source-Schedule Package Recovery Brief calls for repository-local Codex Max work on develop, with the full history/tree and clean-worktree checks. That local-checkout operation is not available through the present oversized-file connector path. Until a supported local repository execution path completes that brief, the retained P2/C0 package remains blocked_by_current_execution_access. Do not use the earlier P2.3/P2.4 continuous-source pilots, the exploratory collision Attempt C, or any legacy Eq-4/Eq-11.1/Eq-12 collision narrative as a substitute.
 
 No simulation, baseline replay, parameter tuning, Core edit, or whitepaper change occurred during this retrieval attempt.
+
+
+## 21. Append-only local repository-access probe result (2026-10-20)
+
+A read-only attempt was made to test whether the available container could reach the public repository directly, using:
+
+```text
+git ls-remote --heads https://github.com/TomasTriska88/lineum-core.git develop
+```
+
+The command exited with status 128 and reported:
+
+```text
+fatal: unable to access 'https://github.com/TomasTriska88/lineum-core.git/': Could not resolve host: github.com
+```
+
+No clone, file checkout, repository change, test, or simulation occurred. This confirms that the present container cannot provide the local repository path required by the recovery brief. Combined with the 64-MiB single-response ceiling for the current root blob and the empty line-range fetches, the current ChatGPT connector/runtime cannot complete the required exhaustive local-history recovery. This is not outcome E: the brief reserves that result for an exhaustive local repository search, which has not happened.
+
+The scientifically and operationally correct stop point is therefore:
+
+```text
+retained_P2_recovery = blocked_by_current_execution_access
+historical_collision_Q2 = no admissible result
+next action = run the exact bounded recovery brief in an authorized local Codex Max checkout
+no long-horizon continuation, collision simulation, source tuning, or Core/whitepaper edit authorized
+```
+
+The detailed execution protocol and its mandatory search coverage, provenance matrix, replay authorization, outcome labels, and copyable instruction remain in research/foundations/lineum-p2-retained-package-recovery-brief.md (blob 7d2ecd83812e5c6446c694f7505839c18aa94153). The recovery output must be committed in research/foundations/lineum-p2-retained-package-recovery.md before ChatGPT resumes scientific decisions.
