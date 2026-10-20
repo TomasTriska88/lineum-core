@@ -199,7 +199,28 @@ def select_latest_contract(candidates: list[str]) -> str:
     return sorted(valid_candidates, key=parse_version)[-1]
 
 
-def load_csv_dict(path, key_col="metric"):
+def select_profile_result(profile_results: list[dict]) -> dict:
+    """Select the profile that governs the run-level audit status.
+
+    A matching canonical profile is authoritative. Baseline or alternate profiles
+    must never hide a canonical failure. Runs without a matching canonical
+    profile keep the best-passing-profile behavior.
+    """
+    canonical_result = next(
+        (result for result in profile_results if result.get("profile") == "canonical"),
+        None,
+    )
+    if canonical_result is not None:
+        return canonical_result
+
+    passing_profiles = [
+        result for result in profile_results if result.get("status") == "PASS"
+    ]
+    candidates = passing_profiles or profile_results
+    return max(candidates, key=lambda result: len(result.get("checks", [])))
+
+
+def load_csv_dict(path, key_col="metric"):(path, key_col="metric"):
     """Load CSV as a dictionary {key_col_val: row_dict}."""
     if not os.path.exists(path):
         return None
@@ -432,7 +453,7 @@ def main():
         "metric_spec": METRIC_SPEC,
         "embedded_context": {"runs": {}},
         "runs": [],
-        "summary": {"pass": 0, "fail": 0, "skip": 0, "matched_canonical": 0}
+        "summary": {"pass": 0, "fail": 0, "skip": 0, "matched_canonical": 0, "canonical_pass": 0, "canonical_fail": 0}
     }
 
     if not os.path.exists(args.runs_root) and not args.run_dir:
@@ -693,12 +714,12 @@ def main():
 
             profile_results.append(p_result)
 
-        # A run passes if it passes on at least one matching profile
-        # Prefer the most specific passing profile (most checks = most specific)
-        passing_profiles = [pr for pr in profile_results if pr["status"] == "PASS"]
-        passing_profiles.sort(key=lambda pr: len(pr["checks"]), reverse=True)
-        best_profile = passing_profiles[0] if passing_profiles else max(profile_results, key=lambda pr: len(pr["checks"]))
-        
+        best_profile = select_profile_result(profile_results)
+        canonical_profile = next(
+            (pr for pr in profile_results if pr["profile"] == "canonical"),
+            None,
+        )
+
         run_result = {
             "run_id": run_id,
             "profiles": [p["name"] for p in active_profiles],
@@ -707,7 +728,12 @@ def main():
             "metrics": best_profile["metrics"],
             "status": best_profile["status"]
         }
-        if "canonical" in run_result["profiles"]: suite_report["summary"]["matched_canonical"] += 1
+        if canonical_profile is not None:
+            suite_report["summary"]["matched_canonical"] += 1
+            if canonical_profile["status"] == "PASS":
+                suite_report["summary"]["canonical_pass"] += 1
+            else:
+                suite_report["summary"]["canonical_fail"] += 1
 
         suite_report["runs"].append(run_result)
         if run_result["status"] == "PASS": suite_report["summary"]["pass"] += 1
