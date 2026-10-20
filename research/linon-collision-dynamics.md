@@ -646,3 +646,20 @@ Q5 Eq-12 successor contact/orientation matrices: narrative present; local script
 **Next allowed action:** continue source/provenance retrieval only if a new, concrete artifact lead appears. If no exact historical Q2 package can be recovered, do not keep searching indefinitely or retrofit any of Q1/Q3/Q4/Q5 as Q2 evidence. Close the retrieval phase with those bounded provenance classifications and prepare a *new*, explicitly named Q2 protocol only after all applicable report, observer, equation-family, and precommit gates pass. Any future runner must begin with independently validated single-core states, preserve matched isolated controls and the linear null, state periodic-domain charge accounting, include known-answer detection controls, and be committed before execution. These are design constraints, not an authorized run or frozen parameter specification.
 
 No new simulation, parameter tuning, canonical audit, Core equation edit, or whitepaper promotion is authorized by this retrieval receipt.
+
+
+## 18. Append-only current-Core initialization and equation-family gate (2026-10-20)
+
+A read-only inspection of `lineum_core/math.py` at `develop`, blob `bb877021810691223a0eb960a45493a2e351112a`, exposed a concrete gate before any new Q2 design:
+
+- `step_core(state, cfg)` is an update function for an already constructed state. It asserts that `psi`, `phi`, and `kappa` are present and then invokes the selected NumPy or PyTorch step. This file does not provide a verified initializer that creates an isolated, persistent native linon; the phase/topology state is supplied from outside the step function.
+- The frozen `CoreConfig` defaults include `physics_mode_psi="diffusion"`, `disable_quantum_noise=False`, `use_mode_coupling=True`, `use_mu=False`, and CFL/cap settings. The Torch path separately branches for `wave_baseline`, `wave_projected`, and `wave_projected_soft` through the `"wave"` mode check. A result cannot be named merely “Core collision” without pinning the actual backend and mode, all parameters and noise settings, and the initialization and observer.
+- The same file's `step_core` docstring calls it the single source for “Canonical Eq-4' Physics,” while its trailing compatibility comments say that `Eq4Config/step_eq4` are legacy names and the conceptual mode is now “Eq-7 / Wave Core.” Those labels are not an adequate, self-consistent source contract for Q2 on their own; the intended implementation snapshot and equation lineage have to be resolved and frozen.
+
+This means the prior Attempt C did not solve the missing initial-state problem: it injected analytic phase-winding packets into a manually transcribed wave path, not two isolated states demonstrated to survive under the selected current Core solver. The old `scripts/profile_linon.py` is a historical isolated-candidate profiler and is not a verified current-Core initializer or pair-collision harness. Its existence cannot authorize reusing the manually imposed Attempt C packets as physical linons.
+
+### Binding consequence
+
+Before freezing a new pair-interaction protocol, perform one final read-only source/test inventory of the current Core initialization and existing tests. Establish whether any tracked initializer plus an exact solver configuration can independently pass an isolated-core localization, winding, numerical boundedness, and persistence gate. If not, classify “two validated current-Core cores” as a missing prerequisite, and do not invent or tune an initializer until the exact model and permitted starting-state method have been explicitly formalized. The independent primary root-programme queue also remains the exact retained P2/C0 source-off package recovery, not a reason to relabel collective-state evidence as pair-collision evidence.
+
+No Core source was edited or executed for this checkpoint. No new simulation or test run occurred. The canonical audit remains blocked; no equation or whitepaper promotion is authorized.
