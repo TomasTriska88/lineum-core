@@ -692,3 +692,23 @@ Attempt C used a custom phase-winding plus local amplitude/plaquette gate. The c
 4. Only if the individual-core gate passes, freeze a pair-interaction matrix with matched isolated controls, a linear null where mathematically applicable, boundary/charge accounting, predeclared outcomes and source fingerprints; commit the exact runner and protocol before running it.
 
 The root programme's higher-priority retained P2/C0 continuation gate remains separate and unresolved. The present read-only audit did not create a new initialization, edit Core code, execute any test, or authorize a collision simulation.
+
+
+## 20. Append-only P2 recovery-brief and oversized-root retrieval receipt (2026-10-20)
+
+The exact recovery instructions are preserved in research/foundations/lineum-p2-retained-package-recovery-brief.md, blob 7d2ecd83812e5c6446c694f7505839c18aa94153. Its scope is deliberately limited to recovering and replaying the retained centered-only C0 baseline: a 32×32 periodic grid, exact-vacuum initialization, dt=0.1, 12 paired seeds, source active through t=20, then source off through t=60, with absolute-time-indexed common random arrays and the frozen v3 transport observer. The target metrics are stated in Section 6 of that brief. It explicitly prohibits reconstructing the source code by tuning to those target metrics.
+
+### What could be recovered through the ChatGPT GitHub connector
+
+- The pinned current root report blob 3fba3925553cd5596e46c02fa35d1db91523537d has a Git tree size of 67,002,835 bytes. A direct blob fetch fails at the connector's 64-MiB decoded-message limit. fetch_file with small start_line/end_line ranges also returns an empty body for this oversized file; it does not supply the requested line ranges.
+- An earlier immutable version at commit 26d8726d7f9c5ac371554d1d1b6edddc3a6425bd, blob abbd04b3ab91387241fda09fbcf251fc163f3ea9 (61,166,351 bytes according to its tree) was retrievable. Its header identifies version 0.4.1 and evidence cutoff 2026-07-29. It contains separate P2.3/P2.4 source/transport/replenishment studies and their embedded scripts/receipts; these are not the target 12-seed, T=60 schedule experiment. For example, its C0_CONT lane uses a different lane registry, a single frozen seed (2026263000), and a model-time endpoint of 200. That is a distinct scientific protocol and cannot fill the retained P2 package.
+- An intermediate version at commit d2a144e12f077d0dd7df3c127f11ee890cfad87a, blob d399957ea59a0b94ba0a35099d5a373bcda33476 (62,462,594 bytes in its tree) was also retrievable. Target-specific terms and numerical fingerprints from the recovery brief—such as 20.5232, 0.974687, 12 paired seeds, and the 40–60 target window—were not present in that version.
+- The final report-increasing commit is 729e1f40ee268e6811e4d14f1b5efc1f0ce8b2e9 (“research: audit current-core copying prerequisite”). The GitHub comparison API identifies the root Markdown as the only changed file, with 48,432 additions and 13 deletions, but the patch body is omitted by the connector. The later root blob is larger than the connector's one-message limit. Therefore the possible presence of the target package in that final addition remains unverified.
+
+This establishes a retrieval limitation and a version-matching problem, not that the target package never existed. The bounded ChatGPT-connector search cannot claim outcome E_not_located_after_exhaustive_local_search, because it did not perform the brief's required exhaustive local repository-history search and could not inspect the full current root. It also cannot claim package recovery outcome A or B. No baseline replay occurred.
+
+### Binding next gate
+
+The exact P2 Retained Source-Schedule Package Recovery Brief calls for repository-local Codex Max work on develop, with the full history/tree and clean-worktree checks. That local-checkout operation is not available through the present oversized-file connector path. Until a supported local repository execution path completes that brief, the retained P2/C0 package remains blocked_by_current_execution_access. Do not use the earlier P2.3/P2.4 continuous-source pilots, the exploratory collision Attempt C, or any legacy Eq-4/Eq-11.1/Eq-12 collision narrative as a substitute.
+
+No simulation, baseline replay, parameter tuning, Core edit, or whitepaper change occurred during this retrieval attempt.
