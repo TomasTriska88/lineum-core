@@ -470,3 +470,38 @@ Attempt C's detector used a plaquette-winding calculation with a local amplitude
 Continue with path-specific, read-only retrieval of the commits that introduced the Phase 8–20 narratives and the source/output files they reference; compare each proposed artifact's initializer, equation family, boundary, parameters, command, and output manifest to the claim it is supposed to support. The immediate priority is the *two-initially-validated-core interaction* question, not spontaneous formation or late-time aggregation. Use the existing observer audits as design constraints only and explicitly retain their different scopes.
 
 No new simulation, parameter tuning, canonical audit, Core equation edit, or whitepaper promotion is authorized by this retrieval update. A known-answer observer-only test may be proposed only after its target equation family and any recoverable historical source package are reconciled, and its source, tests, observer, and protocol are committed before execution.
+
+
+## 14. Append-only Eq-11.1 collision-claim retrieval (2026-10-20)
+
+A focused read of the Eq-11.1 historical equation appendix revealed further collision claims that must be preserved as an existing variant, not combined with the Eq-7 Phase 8–12 narrative:
+
+- The `whitepapers/1-core/02-core-equation.md` file at current `develop` blob `64f8341551d5737a6eb4919030bbb85a4b50380c` describes a dense parallel sweep of macroscopic **non-winding scalar blobs** across (N=2) to (N=20). This is not a collision of two validated topological cores.
+- The same appendix separately states that Eq-11.1 N-body vortex collisions for ((+1,+1)) and ((+1,-1)) “overwhelmingly” show topological scattering like non-vortex fields, with repulsive/fragmenting behavior. It then records an advection reintroduction sweep that sheared/destroyed the phase structure and a localized bridge-suppression case that halted repulsion but did not establish generic inward binding. These are documented historical claims, not independently recovered raw results.
+- The Phase 18–20 discussion in this Eq-11.1 lineage reports finite-window apparent survival being overturned by longer-horizon runaway/fragmentation, plus symmetric-pair, dipole, and triad comparisons. It therefore does not support transferring an Eq-11.1 outcome to Eq-7/current Core or treating a visually persistent finite-horizon peak as a surviving linon.
+- At the preceding Eq-7 Phase 8–12 release checkpoints, the commits that published the phase narratives changed only `whitepapers/1-core/01-core-lineum.md` and `portal/package.json`; they did not commit an experiment-specific collision runner or raw Phase 8–12 output in those commits. The later Eq-11.1 documentation commit `4b08ab1ebac1beb287c5ecd7f74803e530e7e7ad7` did touch the equation appendix and many textual search/notes files, but no dedicated collision runner appeared in the complete tree inventory. This does not prove that no temporary local script was used; it means the inspected Git history does not supply a complete, source-pinned run package.
+- `lineum.py` at the retrieved Eq-7 checkpoint (blob `a57171a633b85d02e4c2047d367cab5b534181aa`) is a broad historical orchestration/simulation script that imports `lineum_core.math.step_core` and writes generic `particle_log.csv`; the audited file itself does not establish the Eq-11.1 initial-value and parameter package for the collision claims. The search-transcript artifacts `found.txt` and `found2.txt` contain narrative matches, not raw collision output.
+- Historical `scripts/profile_linon.py` (blob `9bae0e76286cc83af0bd68e0711481bffac5f467`) does initialize and profile an isolated vortex candidate with a plaquette-winding detector, but it is not a pair-collision runner and does not by itself establish that the selected isolated candidate is a persistent solution of the intended equation.
+
+### Variant coverage consequence
+
+The existing registry must keep at least these three collision questions separate:
+
+```text
+Q1 — Smooth non-topological wave/overload collision:
+     Can a pair of trivial wave packets spontaneously create winding or a bound mode?
+     Eq-7 Phase 8–12 narrative; reproducibility package not recovered here.
+
+Q2 — Interaction of two pre-validated topological cores:
+     Given each core passes independent existence, localization, topology, and persistence gates,
+     how does a same-charge or opposite-charge pair evolve against isolated and linear controls?
+     This is the immediate question of the active collision report; no admissible result yet.
+
+Q3 — Eq-11.1 historical N-body collision / overgrowth:
+     Do the documented experimental Eq-11.1 controls scatter, fragment, annihilate, or bind?
+     Historical claims exist, but no fully source-pinned package was recovered in this retrieval.
+```
+
+The current evidence does **not** answer Q2. Q1 narratives and Q3 claims may motivate expected controls, but cannot fill the missing Q2 initial-state and source-equivalence requirements. The owner intuition that detection is wrong remains one registered explanation, not a verdict; true field/topology change, initial-object invalidity, boundary ambiguity, and model/source mismatch remain live alternatives.
+
+No simulation, parameter retuning, canonical audit, equation edit, or whitepaper claim change is authorized by this update.
