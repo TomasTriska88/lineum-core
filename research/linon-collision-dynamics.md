@@ -663,3 +663,32 @@ This means the prior Attempt C did not solve the missing initial-state problem: 
 Before freezing a new pair-interaction protocol, perform one final read-only source/test inventory of the current Core initialization and existing tests. Establish whether any tracked initializer plus an exact solver configuration can independently pass an isolated-core localization, winding, numerical boundedness, and persistence gate. If not, classify “two validated current-Core cores” as a missing prerequisite, and do not invent or tune an initializer until the exact model and permitted starting-state method have been explicitly formalized. The independent primary root-programme queue also remains the exact retained P2/C0 source-off package recovery, not a reason to relabel collective-state evidence as pair-collision evidence.
 
 No Core source was edited or executed for this checkpoint. No new simulation or test run occurred. The canonical audit remains blocked; no equation or whitepaper promotion is authorized.
+
+
+## 19. Append-only tracked-test and official-observer audit (2026-10-20)
+
+A targeted read-only audit checked the current development branch's existing Core tests, validation harness, package interface, and main Core whitepaper:
+
+| File | Blob | Scope observed in this inspection |
+|---|---|---|
+| `tests/test_wave_core.py` | `085e302e7c70c5dadcee45fe479bb70eaa8cd264` | Gaussian real-amplitude packets and general boundedness/reversibility checks in explicit `wave_baseline` mode; no known-answer charge-(+1/-1) vortex initializer or two-core collision fixture was identified. |
+| `tests/test_wave_core_contract.py` | `54227e2393928c40de8a6b318a75476a877977a9` | Wave-mode contract checks; no explicit vortex/collision fixture was identified in the inspected file. |
+| `tests/test_lineum_core_math.py` | `d1f097c6ef54b04aece7d2ff65e5409757ed6a99` | Shape/finiteness and generic field update tests, including uniform/random test states; no isolated winding-core existence test was identified. |
+| `tests/test_physics_contract.py` | `7acbb8a1c5ff85a5b24970d216aa2a08111b0941` | Mock state, field/coupling accounting and stencil comparisons; no isolated vortex initialization fixture was identified. |
+| `scripts/validation_core.py` | `59818298f675e0a4789f4d4248ecc4c9fa454e48` | Validation modes built from Gaussian packets, excited Hermite-like states and general field tests. A search of the full file for `vortex`, `winding`, `arctan2`, and `inject` did not find a vortex initializer or winding-charge validator; it extracts phase arrays in a few checks but does not itself validate topological winding. |
+| `whitepapers/1-core/01-core-lineum.md` | `edc63b0d150b3b616ff8a108ea47a4f89b6a6c37` | Defines a linon as a stable localized excitation; identifies vortex formation/motion as observations but explicitly says the half-collinear/wave-breaking collision idea requires targeted runs and is not contract-validated. Its detector notes say amplitude gating is visualization-only and that topology metrics use raw values. |
+
+These are bounded file-level findings, not a proof that no experimental initializer exists elsewhere. They do show that the currently inspected automated unit/contract tests do **not** establish the key precondition for Q2: a known-answer, localized, bounded, persistent current-Core topological core with a validated charge observer. Ordinary Gaussian packets or uniform states are not substitutes for that precondition.
+
+### The Attempt C observer is not the stated Core metric observer
+
+Attempt C used a custom phase-winding plus local amplitude/plaquette gate. The current whitepaper's stated convention, by contrast, says amplitude gating is visualization-only and raw phase-winding values are used for CSV/metrics. The earlier count drop in Attempt C therefore identifies a failure/limitation of that *custom pilot observer under its imposed packet conditions*, not a demonstrated failure of the official current-Core metric pipeline. It remains possible that other observer failures exist, but they must be demonstrated independently rather than inferred by treating the two detectors as identical.
+
+### Binding next-step order
+
+1. Pin the exact intended Core equation/backend/mode and resolve the Eq-4' versus Eq-7/Wave-Core label conflict in the source contract before any model result is named.
+2. Recover or explicitly define (as a new and clearly labeled protocol) a known-answer isolated topological-core state and independent charge observer. The fixture must demonstrate its own winding, localization, numerical boundedness and survival before a second copy can be used.
+3. Audit the detector against known-answer positive and negative fields, with the official raw-metric convention separated from optional visualization masks.
+4. Only if the individual-core gate passes, freeze a pair-interaction matrix with matched isolated controls, a linear null where mathematically applicable, boundary/charge accounting, predeclared outcomes and source fingerprints; commit the exact runner and protocol before running it.
+
+The root programme's higher-priority retained P2/C0 continuation gate remains separate and unresolved. The present read-only audit did not create a new initialization, edit Core code, execute any test, or authorize a collision simulation.
