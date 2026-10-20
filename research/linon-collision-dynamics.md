@@ -505,3 +505,51 @@ Q3 — Eq-11.1 historical N-body collision / overgrowth:
 The current evidence does **not** answer Q2. Q1 narratives and Q3 claims may motivate expected controls, but cannot fill the missing Q2 initial-state and source-equivalence requirements. The owner intuition that detection is wrong remains one registered explanation, not a verdict; true field/topology change, initial-object invalidity, boundary ambiguity, and model/source mismatch remain live alternatives.
 
 No simulation, parameter retuning, canonical audit, equation edit, or whitepaper claim change is authorized by this update.
+
+
+## 15. Append-only recovery of a deprecated legacy collision matrix (2026-10-20)
+
+An additional relevant narrative was found in `whitepapers/2-cosmology/extensions/04-cosmo-ext-vortex-rigidity.md`, current `develop` blob `938ee11afa280c16f30b3983d97f54f9f9173430`. Its header is explicit: **Legacy / Deprecated (Eq-4 Context only; ref. Eq-11)**, and it warns that the described Eq-4 iteration used continuous bridge-suppression phase mechanisms and visual alpha-thresholding logic not established for the newer minimal baseline. This legacy caveat takes precedence over any stronger language in the document's historical narrative.
+
+### 15.1 Section 61 — reported empirical interaction matrix
+
+The legacy appendix reports the following local run receipt:
+
+- Target named in the document: `.scratch/eval_interaction_matrix.py` (local execution; the script is not present in the checked branch trees and no code hash/raw output/seed was recovered).
+- Grid: (64 	imes 64); model label: two-layer linear (R)-inhibitor environment; (sigma=3.0).
+- Geometries: homogeneous (N=3) vs (N=3), asymmetric (N=3) vs (N=2), and extreme asymmetric (N=4) vs (N=1).
+- Sweeps: initial mathematical distance (d=10) or (16) pixels and spatial phase-advection gradient (k=0.2) or (0.6).
+
+Reported table:
+
+| Valency pair | Distance | (k) | Reported minimum distance | Reported outcome |
+|---|---:|---:|---:|---|
+| (N=3) vs (N=3) | 10 px | 0.2 | 15.0 px | Scatter |
+| (N=3) vs (N=3) | 10 px | 0.6 | 15.0 px | Scatter |
+| (N=3) vs (N=3) | 16 px | 0.2 | 21.0 px | Scatter |
+| (N=3) vs (N=3) | 16 px | 0.6 | 19.6 px | Orbit / glancing deflection |
+| (N=3) vs (N=2) | 10 px | 0.2 | 4.1 px | Orbit |
+| (N=3) vs (N=2) | 10 px | 0.6 | 3.2 px | Absorption |
+| (N=3) vs (N=2) | 16 px | 0.2 | 6.0 px | Orbit |
+| (N=3) vs (N=2) | 16 px | 0.6 | 2.2 px | Absorption |
+| (N=4) vs (N=1) | 10 px | 0.2 | 3.6 px | Orbit |
+| (N=4) vs (N=1) | 10 px | 0.6 | 0.0 px | Storm / numerical breakdown |
+| (N=4) vs (N=1) | 16 px | 0.2 | 3.0 px | Absorption |
+| (N=4) vs (N=1) | 16 px | 0.6 | 0.0 px | Storm / numerical breakdown |
+
+These are values quoted from the appendix, not independently recomputed values. The appendixed script source, exact initialization, boundary and update details, seed(s), per-step trajectories, full output, and hashes are missing from the currently inspected permanent evidence. Therefore this historical matrix is classified `reported_legacy_result_provenance_incomplete`, not a reproducible current-Core result.
+
+### 15.2 Why it does not answer the active question
+
+The reported valency-(N) composite structures were tested in an explicitly engineered (R)-inhibitor/bridge environment in a deprecated Eq-4 context. They cannot be equated with two independently validated current-Core topological defects, and their “scatter/orbit/absorption/storm” labels cannot be reused without reconstructing the observer and the governing equations. The legacy document also appends later Eq-11.1 phases (including RK4/comoving-metric work) under the same long appendix; those are still another model family and must not be silently merged with Section 61.
+
+Thus the variant ledger now contains a fourth, distinct lane:
+
+```text
+Q4 — Deprecated Eq-4 two-layer R-inhibitor interaction matrix:
+     a historical, quantitatively reported collision sweep exists;
+     exact runner and raw result package not recovered;
+     not transferable to Q2 and not promoted as current evidence.
+```
+
+The immediate owner intuition about possible detection failure remains plausible for Attempt C, but the historical collision matrix has its own provenance and model-identity defects; it cannot be used to confirm or refute that intuition. The permitted next step remains source recovery and variant reconciliation. No new simulation, parameter tuning, canonical audit, or equation/whitepaper change is authorized.
