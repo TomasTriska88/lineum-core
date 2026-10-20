@@ -620,3 +620,29 @@ The currently recovered collision-related material now includes:
 The immediate Q2 problem remains unresolved: **no recovered permanent package currently establishes two individually validated, persistent current-Core topological cores and their interaction with matched isolated controls.** The next permitted work is read-only recovery of the exact source, initialization, parameters, and raw outputs for one candidate lineage, with the equation family named first. If no such package can be recovered, the record must say so and propose a new frozen Q2 model/protocol as a new model, never as a direct reproduction of the legacy run.
 
 No new simulation, parameter tuning, canonical audit, equation edit, or whitepaper promotion is authorized by this retrieval step.
+
+
+## 17. Append-only cross-repository retrieval receipt (2026-10-20)
+
+To check whether the absent legacy runners had been retained outside Core, exact filename/content searches were run against the default searchable content of these connected repository families:
+
+- `TomasTriska88/lineum-core`
+- `lineum-dynamics/lineum-dynamics`
+- `TomasTriska88/oea`
+- `TomasTriska88/lina-personal` (the declared current alias for Lina EI)
+
+The exact searches for `eval_interaction_matrix.py`, `eval_interaction_sweep.py`, `eval_phase68_algebra.py`, `eval_phase69_deuteron_orbitals.py`, `eval_phase70_meson_shell.py`, `eval_phase8 collision`, `eval_phase10 collision`, and `04-cosmo-ext-vortex-rigidity` returned no indexed code-search results across these repositories. This is evidence that the exact named files were not found in those indexed current contents; it is not an exhaustive Git-history proof, because the search connector indexes current default-branch content and cannot establish that an untracked/local file never existed. The separate Core recursive-tree scan provides the stronger file-path check for the inspected refs listed in Section 16.
+
+No cross-repository runner or raw collision evidence was recovered. The source-lineage status is consequently unchanged:
+
+```text
+Q1 Eq-7 smooth-wave formation: narrative present; dedicated source/output package unrecovered
+Q2 two independently validated current-Core cores: no admissible collision result
+Q3 Eq-11.1 N-body collision/overgrowth: historical narrative present; exact package unrecovered
+Q4 deprecated Eq-4 R-inhibitor matrices: numerical summaries quoted in appendix; local scripts/raw outputs unrecovered
+Q5 Eq-12 successor contact/orientation matrices: narrative present; local scripts/raw outputs unrecovered
+```
+
+**Next allowed action:** continue source/provenance retrieval only if a new, concrete artifact lead appears. If no exact historical Q2 package can be recovered, do not keep searching indefinitely or retrofit any of Q1/Q3/Q4/Q5 as Q2 evidence. Close the retrieval phase with those bounded provenance classifications and prepare a *new*, explicitly named Q2 protocol only after all applicable report, observer, equation-family, and precommit gates pass. Any future runner must begin with independently validated single-core states, preserve matched isolated controls and the linear null, state periodic-domain charge accounting, include known-answer detection controls, and be committed before execution. These are design constraints, not an authorized run or frozen parameter specification.
+
+No new simulation, parameter tuning, canonical audit, Core equation edit, or whitepaper promotion is authorized by this retrieval receipt.
