@@ -197,4 +197,4 @@ def test_noncanonical_run_falls_back_to_most_comprehensive_failure() -> None:
     selected = select_profile_result([baseline, wave_core])
     assert selected["profile"] == "wave_core"
     assert selected["status"] == "FAIL"
-}
+
