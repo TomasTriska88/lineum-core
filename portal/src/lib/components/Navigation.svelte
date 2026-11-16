@@ -10,6 +10,7 @@
     } from "$env/static/public";
     import Logo from "$lib/components/Logo.svelte";
 
+    const presentationOnly = import.meta.env.VITE_LINEUM_PRESENTATION_ONLY === "1";
     let menuOpen = false;
     let docsOpen = false;
     let devToolsOpen = false;
@@ -102,8 +103,9 @@
                 </a>
             {/if}
 
-            <a href={PUBLIC_SIMULACRUM_URL} target="simulacrum">{m.nav_lab()}</a
-            >
+            {#if !presentationOnly}
+                <a href={PUBLIC_SIMULACRUM_URL} target="simulacrum">{m.nav_lab()}</a>
+            {/if}
             <a href="/#scientist">{m.sections_scientist_label()}</a>
 
             <div class="dropdown" role="menu" tabindex="0">
@@ -121,6 +123,7 @@
                         <a href="/codex">{m.nav_codex()}</a>
                         <a href="/wiki#faq">{m.nav_faq()}</a>
                     </div>
+                    {#if !presentationOnly}
                     <div class="menu-section">
                         <span class="menu-label">Developers</span>
                         {#if PUBLIC_ENABLE_API_SOLUTIONS === "true"}
@@ -138,6 +141,7 @@
                             >API Redoc</a
                         >
                     </div>
+                    {/if}
                 </div>
             </div>
 
