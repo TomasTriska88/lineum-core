@@ -16,7 +16,6 @@ const config = {
 			handleHttpError: process.env.VITE_LINEUM_PRESENTATION_ONLY === '1' ? 'warn' : 'fail',
 			// Wiki anchors are generated from Markdown at runtime and cannot be checked in raw SSR HTML.
 			handleMissingId: process.env.VITE_LINEUM_PRESENTATION_ONLY === '1' ? 'warn' : 'fail',
-			handleMissingId: process.env.VITE_LINEUM_PRESENTATION_ONLY === '1' ? 'warn' : 'fail',
 			handleUnseenRoutes: process.env.VITE_LINEUM_PRESENTATION_ONLY === '1' ? 'warn' : 'fail'
 		},
 		alias: {
