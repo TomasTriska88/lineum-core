@@ -10,6 +10,7 @@
 		"dev:lab": "cd ../lab && npm run dev",
 		"dev:api": "cd ../routing_backend && python -m uvicorn main:app --reload --reload-exclude \"artifacts/**/*\" --reload-exclude \"*.log\" --host 127.0.0.1 --port 8000",
 		"build": "node scripts/railway-build.cjs",
+		"build:presentation": "node scripts/export-presentation.cjs",
 		"preview": "vite preview",
 		"start": "node build",
 		"prepare": "git config core.hooksPath ../.githooks && svelte-kit sync || echo ''",
