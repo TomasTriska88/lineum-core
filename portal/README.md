@@ -87,3 +87,11 @@ The `vite.config.ts` includes a custom plugin that watches the entire monorepo f
 *   Project Metadata (`README.md`, `railway.json`)
 
 When you save any of these files, `scripts/sync-data.js` runs automatically, updating `src/lib/data`. This means Lina (the in-browser AI) knows about your documentation changes instantly.
+
+## Cloudflare Pages public presentation preview (candidate, not deployed)
+
+The isolated `deploy/cloudflare-pages-static` branch exports a static brochure and wiki, without replacing the current Node/Python/Railway application. AI chat, server-dependent tools, Simulacrum links and localhost development links are hidden only in presentation mode.
+
+Run `npm ci && npm run build:presentation` from `portal/`. A successful build produces `portal/build-presentation/` (prerendered pages and public assets; no Node server bundle), verifies required public pages and writes a preview-only `robots.txt` that disallows search indexing.
+
+After the GitHub Actions **Presentation Static Export** check succeeds, connect this GitHub repository to a **new** Cloudflare Pages project through Git integration: branch `deploy/cloudflare-pages-static`, root directory `portal`, build command `npm run build:presentation`, output directory `build-presentation` and Node 22. The Cloudflare account owner must authorize the Git connection. A GitHub commit alone does not deploy anything. Do not attach `lineum.io` or alter DNS until a separately approved cutover. Independently verify the pages.dev URL, wiki pages, translations, images and navigation before production use.
