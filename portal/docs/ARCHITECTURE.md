@@ -83,3 +83,7 @@ This document is a **Living Document**. To ensure the AI assistant (Antigravity)
 
 ---
 *Last update: February 17, 2026*
+
+## Presentation-only static preview (not production)
+
+The isolated `deploy/cloudflare-pages-static` branch offers an opt-in static export: the existing SvelteKit Node build prerenders brochure/wiki HTML and copies public browser assets to `portal/build-presentation`. The Node server bundle, Python FastAPI, MyInvoice, AI chat/TTS and localhost-dependent tools are excluded. The ordinary Railway production build and live `lineum.io` domain are unchanged. The preview disallows search indexing and is only a candidate until CI and real pages.dev browser checks pass.
