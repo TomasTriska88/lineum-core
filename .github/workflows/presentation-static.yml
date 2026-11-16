@@ -1,0 +1,30 @@
+name: Presentation Static Export
+on:
+  push:
+    branches:
+      - deploy/cloudflare-pages-static
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: portal/package-lock.json
+      - name: Install locked dependencies
+        working-directory: portal
+        run: npm ci
+      - name: Build and verify static public presentation
+        working-directory: portal
+        run: npm run build:presentation
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lineum-presentation-static
+          path: portal/build-presentation/
+          if-no-files-found: error
