@@ -1,5 +1,6 @@
 <script lang="ts">
     import FieldShader from "$lib/components/FieldShader.svelte";
+    const presentationOnly = import.meta.env.VITE_LINEUM_PRESENTATION_ONLY === "1";
     import Legend from "$lib/components/Legend.svelte";
     import MarginShards from "$lib/components/MarginShards.svelte";
     import LogoCloud from "$lib/components/LogoCloud.svelte";
@@ -234,6 +235,7 @@
                     >{m.sections_scientist_zenodo_link()}</a
                 >
             </div>
+            {#if !presentationOnly}
             <div class="card">
                 <h3>{m.sections_scientist_simulacrum_title()}</h3>
                 <p>{m.sections_scientist_simulacrum_desc()}</p>
@@ -241,6 +243,7 @@
                     >{m.sections_scientist_simulacrum_link()}</a
                 >
             </div>
+            {/if}
             <div class="card">
                 <h3>{m.sections_scientist_referencePack_title()}</h3>
                 <p>{m.sections_scientist_referencePack_desc()}</p>
