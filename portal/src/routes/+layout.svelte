@@ -1,5 +1,6 @@
 <script lang="ts">
     import pkg from "../../package.json";
+    const presentationOnly = import.meta.env.VITE_LINEUM_PRESENTATION_ONLY === "1";
     import { ParaglideJS } from "@inlang/paraglide-sveltekit";
     import { i18n } from "$lib/i18n";
 
@@ -48,7 +49,9 @@
         {/key}
     </main>
 
-    <ResonanceDeck active={$hudActive} />
+    {#if !presentationOnly}
+        <ResonanceDeck active={$hudActive} />
+    {/if}
     <CookieBanner />
     <ContactFooter />
 </ParaglideJS>
