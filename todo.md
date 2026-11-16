@@ -1849,3 +1849,8 @@ To ensure the growing ecosystem remains comprehensible and trustworthy to B2B cu
 - [ ] **Phase 3: Customer Management Layer**
   - Only after all routing/entropy applications are complete will the access layer be built.
   - API key generation, customer accounts, rate-limiting, and billing dashboards.
+
+## Website: Cloudflare Pages public preview export
+
+- [ ] Verify the isolated static presentation build, complete archival link audit, and language fallback integrity on the deploy/cloudflare-pages-static branch. See [portal README](portal/README.md) and [portal architecture](portal/docs/ARCHITECTURE.md).
+- [ ] Connect a separate Cloudflare Pages test project; test the pages.dev URL on mobile and desktop before any separate production-domain change. Preserve Railway and server-backed functionality meanwhile.

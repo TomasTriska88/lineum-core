@@ -87,3 +87,7 @@ This document is a **Living Document**. To ensure the AI assistant (Antigravity)
 ## Presentation-only static preview (not production)
 
 The isolated `deploy/cloudflare-pages-static` branch offers an opt-in static export: the existing SvelteKit Node build prerenders brochure/wiki HTML and copies public browser assets to `portal/build-presentation`. The Node server bundle, Python FastAPI, MyInvoice, AI chat/TTS and localhost-dependent tools are excluded. The ordinary Railway production build and live `lineum.io` domain are unchanged. The preview disallows search indexing and is only a candidate until CI and real pages.dev browser checks pass.
+
+### Static preview archival reference integrity
+
+The presentation exporter validates all local HTML links after collecting the repository's existing archival images, raw reference documents, and the linked output assets of the historical report. Unavailable historical source filenames are shown as non-clickable notices in the public preview's wiki renderer only; the original Markdown and scientific record remain unchanged. Localized path aliases are published as explicit language-not-available pages rather than false translations. The static preview must pass link integrity tests and the final export audit before it can be considered a hosting candidate. No DNS, backend or Railway production changes occur in this phase.

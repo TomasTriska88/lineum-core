@@ -1,6 +1,12 @@
 <script lang="ts">
     import * as m from "$lib/paraglide/messages.js";
     import { marked } from "marked";
+    import { markUnpublishedWikiReferences } from "$lib/utils/wikiPublicReferences.js";
+    const presentationOnly = import.meta.env.VITE_LINEUM_PRESENTATION_ONLY === "1";
+    function renderWiki(markdown: string) {
+        const html = marked(markdown) as string;
+        return presentationOnly ? markUnpublishedWikiReferences(html) : html;
+    }
     export let data;
     const { content, title, slug, status } = data;
 
@@ -140,7 +146,7 @@
                 {/if}
 
                 <div class="prose">
-                    {@html marked(displayContent)}
+                    {@html renderWiki(displayContent)}
                 </div>
             </section>
         </article>

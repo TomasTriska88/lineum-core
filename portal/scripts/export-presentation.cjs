@@ -83,4 +83,6 @@ if (homepage.includes('http://127.0.0.1:8000/redoc')) {
   throw new Error('Local API development link leaked into public navigation');
 }
 fs.writeFileSync(path.join(destination, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
-console.log('Verified static presentation: ' + html.length + ' HTML pages');
+const { finalizePresentation } = require('./finalize-presentation.cjs');
+const verified = finalizePresentation(destination, path.resolve(root, '..'));
+console.log('Verified static presentation: ' + JSON.stringify(verified));
