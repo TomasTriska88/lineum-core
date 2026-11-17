@@ -12659,8 +12659,28 @@ Status: `unresolved`. The inspected record does NOT establish a generally accept
 ### Frozen next discriminator (before any official scientific execution)
 First audit the precise provenance, version, checksum, rights, and parse fidelity of the alleged Takahashi transcription. Recover the actual empirical inputs and calculation procedures for the highest-strength historical claim, or explicitly classify them as unavailable. Only then preregister a folio-level holdout evaluation of a frozen four-slot model against a section- and length-matched simple baseline and a topology/layout-only alternative. Preserve original folios outside training, document sample counts and exclusion rules in advance, and report accuracy plus uncertainty and null-shuffle controls. Real image coordinates, where needed, must come from separately authorized source annotations, never from the synthetic ingest layout. Failing or missing evidence remains visible; no whitepaper, publication, commercial copy, or translation claim may be promoted from this checkpoint.
 
+## Phase 187: Independent Corpus Provenance and Rights Gate (2026-11-17)
+
+### License-verified source selection
+The existing `scripts/ingest_voynich_data.py` points to Takeshi Takahashi's legacy `http://www.voynich.com/pages/PagesH.txt`. A third-party rights/provenance registry records conditions for the original Takahashi files, including a request for notification on download and prohibition on republication without permission. Those rights are not presumed compatible with an unrestricted Core ingest, and the original Takahashi file was not downloaded.
+
+An alternative is the Zandbergen-Landini (ZL) transliteration, maintained by Rene Zandbergen at `https://www.voynich.nu/transcr.html`. The publisher's own legal page `https://www.voynich.nu/roadmap.html#cop` explicitly makes the site's collected transliterations available under Creative Commons CC0 while requesting acknowledgment. Therefore, the narrowly selected input is ZL release 3b, dated 2025-05-13, IVTFF 2.0, EVA alphabet, direct publisher URL `https://www.voynich.nu/data/ZL3b-n.txt` (visited/read as public web text on 2026-11-17). ZL and Takahashi are distinct transcriptions: testing ZL is an independent robustness check, not an exact reproduction of earlier Takahashi-dependent results. The original manuscript and Yale's images are separate rights subjects; no digital images, third-party source code, or fonts will be copied into this research record.
+
+Rights uncertainty remains for any later external source beyond this identified ZL file, and independent secondary sites disagree in how they describe the licenses. Scope authorized for this gate: fetch the explicitly CC0-marked ZL file for isolated private research, retain provenance and hashes, and publish only original procedures plus derived checks, not a bundled source corpus.
+
+### Frozen first execution: corpus integrity and parser-fidelity preflight
+1. Use Prcek's isolated sparse checkout and a private repository `.scratch/` directory. Do not modify HA, Lina, or their running processes. Download ONLY `https://www.voynich.nu/data/ZL3b-n.txt` over HTTPS, with a strict timeout and at most 2,000,000 response bytes. Do not run the existing Takahashi fetching script.
+2. Record HTTP result, exact retrieved byte count, SHA-256, first two declared header lines, and number of distinct page declarations `<f...>` and text locus lines `<f... . ...>` using a metadata-only, independent regular-expression count. Retain original source locally in ignored scratch, not in Git. Any unexpected header, size, content type, or download failure is a technical stop, not a scientific negative.
+3. Inspect the existing ingest implementation against IVTFF 2.0 metadata without changing its original inputs. Verify whether it preserves folio IDs, locus metadata, distinctions among paragraph/label/radial text, uncertain readings, and true page coordinates. Distinguish actual source fields from synthetic output positions and deterministic labels. Do not assert image alignment from any synthetic position.
+4. Later structural holdout tests require a separately committed, frozen, readable evaluation harness with section-aware controls and metrics; no claim of decipherment, universal grammar, translation, or semantic precision is permitted from this data-access checkpoint.
+
+### Current bounded outcome
+Source-selection and rights inspection: `implemented` as a documented intake decision. Dataset download, cryptographic integrity receipt, parser check, and scientific hypothesis test: `not_yet_executed`. No original text corpus was incorporated into the public repository.
+
 # Update Log
 
+- **2026-11-17**:
+  - *Corpus-intake checkpoint*. Added Phase 187 identifying an explicitly CC0-labelled ZL 3b alternative to the legacy Takahashi source, with publisher attribution, a frozen Prcek-only data-integrity preflight, and a no-redistribution boundary. No corpus download occurred at this checkpoint.
 - **2026-11-17**:
   - *Independent audit/reopening*. Added Phase 186, fixed the historical source snapshot, separated inspected code behavior from unreplicated claims, recorded the Prcek feasibility probe and publication-route limitation, and preregistered the next provenance/falsification gate. No corpus analysis or decoding test was run.
 - **2026-03-15**: 
