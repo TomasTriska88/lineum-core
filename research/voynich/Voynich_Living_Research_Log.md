@@ -12677,8 +12677,25 @@ Rights uncertainty remains for any later external source beyond this identified 
 ### Current bounded outcome
 Source-selection and rights inspection: `implemented` as a documented intake decision. Dataset download, cryptographic integrity receipt, parser check, and scientific hypothesis test: `not_yet_executed`. No original text corpus was incorporated into the public repository.
 
+## Phase 188: ZL 3b Integrity Receipt and Research Repository Relocation Decision (2026-11-17)
+
+### Prcek execution: frozen corpus intake from Phase 187
+The isolated host command ran with `lina` privileges through the existing HA command bridge; the provider-backed response for `voynich-zl3b-integrity-20261117-d671c29` completed with inner `service_response.returncode=0`, no stderr, and a direct structured receipt. The download used exactly the predeclared HTTPS URL `https://www.voynich.nu/data/ZL3b-n.txt` and only the untracked, Git-ignored `.scratch/voynich/ZL3b-n.txt` destination. It did not run the legacy Takahashi ingestion or change HA, Lina, existing repo source files, or model configuration.
+
+Observed metadata: HTTP content type `text/plain`, **411,671 bytes**, SHA-256 `bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc`. Declared header lines: `#=IVTFF Eva- 2.0 M 5`; `# ZL transliteration file, updated from EVMT project`; `# Version 3b of 13/05/2025`. The independent regular-expression metadata-only count found 8,510 total lines, 227 folio/page declarations, 227 distinct page identifiers, and 5,385 locus-bearing text lines. These counts describe input formatting only, not correctness of interpretation, manuscript coverage, or independent linguistic evidence. Because the old parser targets a different corpus, no direct accuracy equivalence is established. The raw source text was not copied into Git.
+
+### Owner relocation instruction and integrity gate
+The project owner directed relocating this standalone Voynich research out of `TomasTriska88/lineum-core` into a dedicated repository, preserving the original research history and with **no redirect, mirror, or link** left in Core. This is an organizational and research-provenance decision, not evidence for decipherment. Destination repository proposed: `TomasTriska88/voynich-research`, subject to creation permissions and an accurate historical transfer.
+
+Migration is target-first and fail-closed: (1) verify any pre-existing destination and ability to create one; (2) prepare a complete inventory of report, Voynich-specific sources, tests, archived viewer, and related untracked/licensed datasets; (3) verify history preservation, license compatibility and fresh target governance; (4) publish the complete destination and verify bytes, provenance and runnable tests; (5) only after target verification remove or relocate active Voynich files from Core in one reviewed checkpoint, while retaining original commits in Git history. Do not delete Core history, force-push, publish restricted source corpora, invent a new public license for research material, or assume GitHub credentials are present on Prcek.
+
+### Current status and next permitted action
+ZL source ingestion: `reproduced_metadata_only`. Independent corpus validation, parser fidelity, predictive holdout, translations: `not_yet_tested`. Report continuity is preserved here pending a checked migration. Next step: **read-only inspect destination availability and Prcek's GitHub repository-creation/authentication capability**. A missing creation capability is a technical blocker; it does not authorize source removal or speculation about data integrity.
+
 # Update Log
 
+- **2026-11-17**:
+  - *Corpus receipt and migration gate*. Added Phase 188 with verified Prcek ZL 3b integrity metadata and an owner-directed target-first independent-repository migration protocol. No decipherment claim was made; Core files remain until a new destination is confirmed and verified.
 - **2026-11-17**:
   - *Corpus-intake checkpoint*. Added Phase 187 identifying an explicitly CC0-labelled ZL 3b alternative to the legacy Takahashi source, with publisher attribution, a frozen Prcek-only data-integrity preflight, and a no-redistribution boundary. No corpus download occurred at this checkpoint.
 - **2026-11-17**:
