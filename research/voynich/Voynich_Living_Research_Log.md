@@ -12692,8 +12692,25 @@ Migration is target-first and fail-closed: (1) verify any pre-existing destinati
 ### Current status and next permitted action
 ZL source ingestion: `reproduced_metadata_only`. Independent corpus validation, parser fidelity, predictive holdout, translations: `not_yet_tested`. Report continuity is preserved here pending a checked migration. Next step: **read-only inspect destination availability and Prcek's GitHub repository-creation/authentication capability**. A missing creation capability is a technical blocker; it does not authorize source removal or speculation about data integrity.
 
+## Phase 189: Target-First Local Migration Checkpoint (2026-11-17)
+
+### Exact work completed
+In a new, isolated user-space directory on Prcek, the complete Git history of `develop` was read with a sparse, promisor-aware clone. `git subtree split --prefix=research/voynich` created a distinct **11-commit historical Voynich-only chain**, ending at split commit `bf0c6acfcba3b75c1f8a495045b6ae9cb7a47139`. The original report at that point had blob `defb09c31d3566114474dd7700eb80628dfc4e49`; the split tree also retained the three archived Svelte viewer files. The subtree clone initially failed because seven historic blobs were missing from the partial clone. All seven were subsequently fetched from the public remote, and a local isolated clone then succeeded. This was a repository transfer defect, not a failed scientific hypothesis.
+
+The resulting **local** standalone Git repository is `/home/lina/.local/share/voynich-research`, branch `main`, with no remote configured. Its first 11 commits preserve the Voynich directory's historical chain; commit `8cfc9c82b3b0f95cd90db9212191f2af173303ac` relocated the authoritative report to `research/Voynich_Living_Research_Log.md` and imported the original immutable `scripts/ingest_voynich_data.py`, `tests/test_voynich_hygiene.py`, an AGPLv3 LICENSE copy, a new .gitignore, standalone README and governance. The ingest copy resides in `legacy/` because its coordinates and categories are synthetic and it remains unverified. Source-to-copy Git hashes were checked equal. No raw third-party corpus or images were committed; the isolated ZL 3b file remains ignored in Prcek scratch. This preparation did not remove, alter, or interrupt Core, Home Assistant or the Lina runtime.
+
+### Validation and genuine remaining blocker
+The legacy test's `test_voynich_data_git_hygiene()` executed successfully using standard Python, the legacy ingest parsed successfully as Python AST, and `git check-ignore` confirmed generated data exclusion. `python3 -m pytest` could not run because `pytest` is not installed in the host's base Python; **do not claim a pytest-suite pass**. The original report and legacy source contain historical trailing whitespace. These original bytes were deliberately preserved; whitespace verification passed for newly authored README, AGENTS, LICENSE and .gitignore only. The local repository had a clean working tree after the migration commit and no configured remote.
+
+The GitHub connector currently exposes no repository-create operation, `TomasTriska88/voynich-research` was not found as an accessible repository, and the Prcek host does not have an authenticated `gh` CLI. A prior anonymous HTTPS `git push --dry-run` failed for lack of username. This is a **remote repository creation/publication blocker**, not a failure of Git history extraction or loss of project data. No source files are removed from `lineum-core` and no core redirect/link is added while the new remote has not been created and independently verified.
+
+### Next permitted migration step
+Have the owner create an empty public `TomasTriska88/voynich-research` GitHub repository (or gain a provider-supported creation capability). Verify new repo ownership, visibility, initial branch and write access. Publish the existing local Git history without retyping it when authenticated Git push becomes available; if connector-only publication is unavoidable, explicitly disclose that its reconstructed commits are not byte-identical historical commit identities. Compare complete report blob, exact migration file set, original history and check results on target. Only after remote proof should Core's active Voynich-specific files be removed atomically with a final archived-history rationale and no active backlink. The scientific lane remains paused at the last reported corpus integrity checkpoint.
+
 # Update Log
 
+- **2026-11-17**:
+  - *Standalone migration staging*. Added Phase 189: an isolated Voynich-only 11-commit Git history was extracted and a 12-commit local standalone repository was validated on Prcek. The remote GitHub repository is not yet created or published; no original Core research files were removed.
 - **2026-11-17**:
   - *Corpus receipt and migration gate*. Added Phase 188 with verified Prcek ZL 3b integrity metadata and an owner-directed target-first independent-repository migration protocol. No decipherment claim was made; Core files remain until a new destination is confirmed and verified.
 - **2026-11-17**:
