@@ -12636,8 +12636,33 @@ Lineum Lab rules dictate that UI must not be an impenetrable wall of data.
 **Reason:** By keeping the Voynich data inside the Lab, we save months of DevOps and frontend setup. By enforcing distinct visual styling and explicit disclaimers, we protect Lineum's theoretical integrity. The component structure cleanly separates the image viewer from the data overlay.
 **Registry Status:** The architectural unblocking is complete. The project is fully defined from broad hypothesis elimination down to SvelteKit component names. We are mathematically, legally, and technically ready to begin software development.
 
+## Phase 186: Independent Evidence Audit and Falsification Restart (2026-11-17)
+
+### Research question and source lock
+The owner requested a fresh critical assessment of earlier model-assisted Voynich work, explicitly authorizing isolated computation on Prcek. The question is whether a decipherment, or a genuinely predictive and reproducible structural result, has been established. This phase is an independent evidence and implementation audit, not a new decoding claim.
+
+Frozen repository baseline: `TomasTriska88/lineum-core`, branch `develop`, commit `3bfcf5af2feff2cfa2085c372a1e6b7a7c5aeac4`; pre-audit report blob `fa55cb214714883f3c06858825c694d54f4b055c` (1,165,660 UTF-8 bytes). Relevant implementation evidence: `scripts/ingest_voynich_data.py` and `tests/test_voynich_hygiene.py` at that commit. No external transcription, manuscript image, or third-party source was downloaded or republished in this checkpoint. Licenses and provenance for any future corpus or images must be checked before use.
+
+### Reproducible source-code observations (inspection only)
+1. `scripts/ingest_voynich_data.py` names `http://www.voynich.com/pages/PagesH.txt` as a Takahashi transcription source, but this source was NOT fetched or verified in this audit. The parser strips markup and punctuation and reconstructs folio token lists; no fidelity comparison against the original transcription was performed.
+2. Its output `x` and `y` positions are synthesized from token order and length (`curr_x`, `curr_y`, `w_len`), not measured from manuscript image coordinates. The image URL is a placeholder for every folio except `f1v`. Generated coordinates therefore cannot independently demonstrate image-to-text spatial alignment.
+3. The `Alpha`, `Beta`, and `Omega` labels are explicitly imposed by deterministic suffix and character-presence rules. They are neither ground-truth linguistic categories nor independently learned classifications. Any downstream test that treats these imposed labels as evidence of their own correctness would be circular.
+4. The `f1v` serrated-image hook and the `okam` / `okar` cutting hypothesis are hard-coded examples, not automatically inferred evidence. The `tests/test_voynich_hygiene.py` test checks Git exclusion of generated data; it does not validate linguistic, statistical, or image alignment claims.
+5. Historical phases assert perfect or near-perfect structural predictions but the inspected narrative does not furnish enough independently executable data, denominator/sample sizes, held-out selections, or precise procedures to reproduce those verdicts. The left-versus-right margin-damage descriptions across phases 164-167 also require a formal definition audit before promotion. These are audit flags, NOT reproduced negative statistical results.
+
+### Verified technical feasibility and limitations
+A current Prcek read-only host probe, transported through the existing HA bridge, returned `lina`, Python 3.12.3, Git 2.43.0, and approximately 3.65 GB available system memory. A shallow sparse checkout reproduced the frozen commit and the report's original Git blob SHA; no existing HA or Lina workload was restarted or altered. GitHub HTTPS read access works from Prcek, but `git push --dry-run` on this anonymous remote failed with `could not read Username` (exit 128). This is a publication-credential limitation of that route, not a scientific test result or a general GitHub outage.
+
+### Bounded verdict
+Status: `unresolved`. The inspected record does NOT establish a generally accepted semantic, phonetic, or linguistic decipherment. The currently inspected ingest implementation also cannot validate its own image-conditioned geometry or symbolic type claims. This does not prove that every historical statistical observation is false; those must be reconstructed from independent data and frozen controls.
+
+### Frozen next discriminator (before any official scientific execution)
+First audit the precise provenance, version, checksum, rights, and parse fidelity of the alleged Takahashi transcription. Recover the actual empirical inputs and calculation procedures for the highest-strength historical claim, or explicitly classify them as unavailable. Only then preregister a folio-level holdout evaluation of a frozen four-slot model against a section- and length-matched simple baseline and a topology/layout-only alternative. Preserve original folios outside training, document sample counts and exclusion rules in advance, and report accuracy plus uncertainty and null-shuffle controls. Real image coordinates, where needed, must come from separately authorized source annotations, never from the synthetic ingest layout. Failing or missing evidence remains visible; no whitepaper, publication, commercial copy, or translation claim may be promoted from this checkpoint.
+
 # Update Log
 
+- **2026-11-17**:
+  - *Independent audit/reopening*. Added Phase 186, fixed the historical source snapshot, separated inspected code behavior from unreplicated claims, recorded the Prcek feasibility probe and publication-route limitation, and preregistered the next provenance/falsification gate. No corpus analysis or decoding test was run.
 - **2026-03-15**: 
   - *Phase Update*. Executed Phase 185 'Component & Data Binding Blueprint'. finalized the SvelteKit component architecture. Established strict UI guidelines to conceptually decouple the Voynich project from Lineum Core theory while utilizing the shared technical frontend repository.
 - **2026-03-15**: 
