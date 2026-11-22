@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.6  
+**Version:** 0.1.7  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -442,3 +442,30 @@ The inspected NumPy path directly clips `phi` into `[0, phi_cap]` (line 424). Th
 4. Do not modify the canonical equation, defaults, or whitepapers based solely on this source audit. The existing closed-negative Riemann/Zeta comparisons remain closed, the prime-grid relations remain known number theory, and no new RH/Lineum correlation has been tested.
 
 **Verification scope:** Git read-only inspection of source lines and previously written test code, a separate check against the public programme ledger and current operational prerequisite, and connector file-size/availability audit. **No full repository test, local Core execution, independent numerical solver reproduction, ClickUp write, or external file archive** took place. **Claim level:** current-code inspection only, with an unresolved P4 experimental prerequisite. **ClickUp mode:** read-only. **Whitepaper handoff:** no promotion.
+
+## Checkpoint 6 — source-package recovery feasibility before Lineum-native testing (2026-11-22)
+
+**Report version:** 0.1.7. **Status:** read-only provenance inspection plus source-persistence checkpoint; no new physics computation and no completed P2 replay. **This is a technical source-access limitation, not a negative scientific observation.**
+
+### Exact recovered navigational evidence
+
+The public repository already contains the bounded recovery specification `research/foundations/lineum-p2-retained-package-recovery-brief.md` (blob `7d2ecd83812e5c6446c694f7505839c18aa94153`, version 0.1.0 dated 2026-07-31). It describes the **original**, not reconstructed, P2 C0 package and prescribes exact recovery/replay before a longer continuation. The intended retained root report is `research/foundations/lineum-continuous-source-cosmology-validation.md` (blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes); its last published commit path history exposed five root-report revisions on 2026-07-29, not an independently retrieved P2 runner. A bounded `fetch_file(start_line=1,end_line=30)` returned **zero text despite the correct blob identity**. This is a connector access limitation, not a statement that the report is empty.
+
+Current-directory read-only inventories found **no explicitly named P2/C0 replay runner** among the names in `scripts/research/` (2 entries), `tests/research/` (21), `research/runners/` (34), or `research/results/` (32). This filename-level search is **not an exhaustive content or historical Git search** and does not prove absence of embedded/historical executable material. The required authoritative recovery output `research/foundations/lineum-p2-retained-package-recovery.md` is not present at this `develop` checkpoint; its absence is not a numerical failure.
+
+A portable local Git attempt to read `refs/heads/develop` via `git ls-remote https://github.com/TomasTriska88/lineum-core.git` returned exit code 128: DNS resolution for `github.com` failed in this execution container. No authenticated or offline local repository checkout was found under the available working files. We did **not** substitute task prose, source approximations, or a reconstructed P2 dataset for the retained code/observer.
+
+### Current task hierarchy and science status
+
+Targeted read-only ClickUp reads in the authorized Lineum Dynamics workspace `90121717552` confirmed `869dpg9hb` (generic particle/formation programme) is **to do**, `869ek96jb` (future Lineum-native rank/trace) is **to do** with a P4 slow-`phi` ablation entry condition, and `869ebyvpb` (parallel Eq-11.1 provenance lane) is **in progress**. The parent programme description explicitly describes the P2 arithmetic as completed in the **historical original** and specifies source-off late-window measurements; that is not evidence of a new independently executable replay in this runtime. P4's required source-pinned, bounded ablation output was not found in the materials retrieved here. Task statuses alone do not establish that P4 never ran.
+
+### Bounded outcome, no false science
+
+- **Availability class:** `partial_documentary_package_only` in the present GitHub-connector/local-container scope. **No formal A–F recovery verdict** from the recovery brief is assigned; an exhaustive local Git/blob/history search has not occurred.
+- **Root programme:** prior P2 C0 source-off population observation remains the strongest *historical* candidate, pending exact package recovery and replay. This standalone prime-fraction report remains an external/reference lane and is **not** silently reassigned as a child of continuous-source cosmology.
+- **Zeta/prime and Lina EI inspiration:** only methodological references; no imported mathematics, image, private code, model or external periodic mask was injected into Lineum.
+- **No physics execution:** no solver run, P2 baseline replay, P3/P4 intervention, rank/trace scoring, spectral comparison, code change or canonical whitepaper update occurred. Thus there is no new robust/negative empirical result to promote.
+- **Next permitted action:** recover the exact retained P2 runner, observer, schedules, seed stream, source/energy accounting, saved output and original hashes through a byte-faithful Git checkout that can read the large immutable root report and relevant history. Apply the existing `lineum-p2-retained-package-recovery-brief.md` classification and verification without replacing inputs. Only after a verified baseline replay may the original C0 continuation and downstream P3/P4 physics be considered; the separate rank/trace task remains gated. Current repository rules, not the brief's historical Codex model label, govern the processing configuration.
+- **ClickUp mode:** read-only, no task write or status change in this checkpoint. **Whitepaper handoff:** none.
+
+**Integrity/continuity:** This receipt records a precise blocker and its tests so that the next workspace can resolve the actual source recovery rather than replaying the same unsupported zeta or toy-grid analogy.
