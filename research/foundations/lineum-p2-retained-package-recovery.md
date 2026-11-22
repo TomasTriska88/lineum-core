@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.16
+**Version:** 0.1.17
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -385,3 +385,84 @@ The **archived** C0 formation-only summary at the correct path contains:
 **Execution safety:** Portable arithmetic/function controls belong in the assistant's isolated runtime, **not** in a new production HA service, production Lina Grid, or a 168-run experiment on Prcek. No numerical engine simulation, canonical code modification, or whitepaper promotion is permitted from this check. Subsequent original 168-trajectory replay still requires exact dependencies, resource bounds and independently compared output; preserve the existing historical negative decision `any_population_stable_overall_transport_candidate=false`.
 
 **Expected outcomes by archived schedule:** `never_on=0`, `always_on=600`, `formation_only_20=200`, `continuous_dose_30=300`, `gap_restart_20_40=400`, `late_only_40=200`, `pulse_5_on_5_off=300`. These values are **predictions copied from the frozen archive**, not numbers measured by a new run. Next checkpoint must report exact pass/fail counts, interpreter identity, source-extraction limitations and blockers before any further experiment.
+
+## 22. Checkpoint 17 — P2 frozen-schedule portable regression PASSES, full replay NOT RUN (2026-11-22)
+
+**Version:** 0.1.17. **This is the result of the frozen Checkpoint 16 protocol, not a numerical physics validation.**
+
+**Exact-source identity:** Extracted the **unchanged, 651-byte** `p2_schedule_is_on` function from the historical Python block lines **1592–1608**. Local `SHA-256=0612efca2fa51d897a3c40fd276fe7fcbf021ca9f3bedbda145064f3180ccaa2`. **Independent hash-on-source:** Prcek read-only command `lineum-p2-scheduler-sha-20261122-v5b6`, after verifying both the full historical Git blob and the 100,626-byte parent Python SHA-256, returned the **same** 651-byte function SHA-256 and `MATCH_LOCAL_EXPECTED 1`; final `HA_RESPONSES` success/executed, nested rc=**0**, empty stderr. This is a byte-match, **not** a hand-translated surrogate.
+
+**Isolated runtime:** local assistant container, `CPython 3.13.5`; command `python -m unittest test_schedule -v`. **Four test methods passed** in approximately **0.001 s**; no scientific engine state was read, produced or changed. Their logic:
+
+1. Recomputed active steps for **every original schedule** over the exact 600 indexed updates and checked against the preserved archive's `frozen_protocol.schedules[name].on_steps` and `on_time=on_steps×0.1`.
+2. Checked on/off transitions around **199/200**, **299/300**, **399/400**, **49/50**, **99/100** and **549/550**; all passed.
+3. Verified that an unrecognized schedule raises `ValueError`.
+4. Independently checked the frozen ensemble size `2 source families × 7 schedules × 12 P2 seeds = 168`.
+
+**Actual measured active-step counts (all equal to archived values):**
+
+| Original schedule | Recomputed active updates / 600 | Source-on model time |
+| --- | ---: | ---: |
+| `never_on` | 0 | 0 |
+| `always_on` | 600 | 60 |
+| `formation_only_20` | 200 | 20 |
+| `continuous_dose_30` | 300 | 30 |
+| `gap_restart_20_40` | 400 | 40 |
+| `late_only_40` | 200 | 20 |
+| `pulse_5_on_5_off` | 300 | 30 |
+
+**Exact function under test, verbatim from the source-pinned archive:**
+
+```python
+def p2_schedule_is_on(schedule: str, step_index: int) -> bool:
+    """Return the frozen source state for update [t, t + dt)."""
+    if schedule == "never_on":
+        return False
+    if schedule == "always_on":
+        return True
+    if schedule == "formation_only_20":
+        return step_index < 200
+    if schedule == "continuous_dose_30":
+        return step_index < 300
+    if schedule == "gap_restart_20_40":
+        return step_index < 200 or step_index >= 400
+    if schedule == "late_only_40":
+        return step_index >= 400
+    if schedule == "pulse_5_on_5_off":
+        return (step_index // 50) % 2 == 0
+    raise ValueError(schedule)
+```
+
+**Reproduction of independent scheduler assertions without external libraries:**
+
+```python
+expected = {
+    "never_on": 0,
+    "always_on": 600,
+    "formation_only_20": 200,
+    "continuous_dose_30": 300,
+    "gap_restart_20_40": 400,
+    "late_only_40": 200,
+    "pulse_5_on_5_off": 300,
+}
+for name, count in expected.items():
+    assert sum(p2_schedule_is_on(name, t) for t in range(600)) == count
+    assert count * 0.1 == (count // 10)
+for name, before, after in (
+    ("formation_only_20", 199, 200),
+    ("continuous_dose_30", 299, 300),
+    ("late_only_40", 399, 400),
+    ("pulse_5_on_5_off", 49, 50),
+):
+    assert p2_schedule_is_on(name, before) != p2_schedule_is_on(name, after)
+try:
+    p2_schedule_is_on("not_a_schedule", 0)
+    raise AssertionError("unknown label accepted")
+except ValueError:
+    pass
+assert 2 * len(expected) * 12 == 168
+```
+
+**Limits and contradiction impact:** This validates **only the exact schedule function and archived duration/ensemble contract**; it neither recalculates random draws nor runs the old 168-trajectory field dynamics. The source's original archived runtime `CPython 3.11.15 / NumPy 1.26.4 / SciPy 1.17.1` is not the local assistant environment `CPython 3.13.5 / NumPy 2.3.5 / SciPy 1.17.0`. The Prcek default Python 3.12.3 lacks NumPy/SciPy; a short constrained probe of **seven explicitly named interpreter paths** found only the system interpreter, which is **not** an exhaustive host search. No packages were installed, no live Lina computations were touched, and **the complete P2 baseline was not replayed**. Prior archived numerical outcomes remain historical, including **no overall stable object**. No A–F top-level recovery success claimed.
+
+**Next permitted step:** obtain the complete byte-faithful 100,626-byte Python source in a **non-production, isolated scientific runtime** with pinned NumPy/SciPy; run the original archived `unit_controls` and baseline with bounded resource measurements and an independent full-JSON comparison. This local scheduler PASS removes one consistency risk but does not waive execution/environment gates or authorize the longer source-off experiment.
