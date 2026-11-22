@@ -83,3 +83,13 @@ The portal seamlessly integrates three distinct worlds, and the copy must reflec
 - **Discuss Before Coding:** Before making any non-trivial changes, structural refactors, or UI changes (adding/removing sections, renaming concepts), the agent MUST explicitly discuss the proposal with the user.
 - **Prevent Ping-Pong:** This prevents cycles where the AI repeatedly adds, removes, and re-adds code elements. First align on the architectural plan, *then* execute the file modifications.
 
+
+
+## 17. Git-Only Research Artifact Persistence
+
+- **Git is the single long-term store for all Lineum research artifacts:** hypotheses, source references, provenance, scripts, experiment inputs, datasets, reproducible outputs, evidence indexes, and authorized images/binary archives. Put these under the appropriate research directories in the Lineum Git repositories with reviewable history; do not rely on conversations or memory.
+- **Never place new Lineum research artifacts in ChatGPT Library, Google Drive, or any other non-Git cloud store**, nor use such services for interim backups, unless the user gives *specific, explicit permission* for that destination.
+- For large binary datasets and images, prefer **Git LFS or other Git-native tracked artifacts** when supported. Do not convert binary files into Base64 text merely to get them into a Git commit. Preserve originals alongside any deduplicated derivative and maintain a deterministic provenance manifest (hash, filename, source, slide/time order, duplicate mapping).
+- **Source rights:** protect third-party material. A public Git repository may contain original analysis, metadata, independently recreated diagrams, and links to the source; do not publish full unlicensed third-party slides or footage there without permission. Seek an appropriate **private Git repository** for originals if necessary, still within the Git-only policy.
+- If currently available connectors cannot transfer a required file type into Git, **state the blocker and mark the archive incomplete**. Never claim that the artifact is safely Git-archived until Git readback verifies it.
+- This is a storage/integrity rule, not permission to skip the explicit commit authorization, branch and review, or research-audit requirements above.
