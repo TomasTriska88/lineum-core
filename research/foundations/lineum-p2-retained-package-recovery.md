@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.6
+**Version:** 0.1.7
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -189,3 +189,22 @@ Other scanned files sometimes contain generic `source-off`, `C0` or `centered-on
 **Verdict of the bounded current research text search:** exact P2 C0 metrics survive as **later claims/summaries**; no **matching original P2 executable plus v3 observer and preserved output** has been identified by this numerical-fingerprint/terminology search. This is **not** proof that no original runner exists: a runner need not include outcome numbers, can be renamed, encoded in a historical Git object, live in `tests/` or `scripts/` outside `research/`, be larger than the selected size threshold, or be unversioned.
 
 **Remaining A–F recovery prerequisites:** inspect all current eligible `tests/` and `scripts/` code for source schedules and observer definitions, then historical Git commits, deleted/renamed files, relevant branches, run instructions and source/output hashes. Replay only after exact code, observer, RNG, schedule, environment and saved expected output are found. There is **no completed A–F verdict**, no new Lineum physics run, and no authorization to infer particle identity or long-horizon stability.
+
+## 12. Checkpoint 7 — first source-family origin recovered from historical commits (2026-11-22)
+
+**Version:** 0.1.7. Read-only Git history now yields a **new concrete historical source candidate**, rather than a generic P2 text match. Direct GitHub commit inspections (not a search-result guess) confirmed:
+
+| Source commit | UTC date | Commit message | Exact changed file | Retained blob and size |
+| --- | --- | --- | --- | --- |
+| `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1` | 2026-07-18 16:29:22 | `research: map source-off winding persistence` | `research/foundations/lineum-physics-philosophy-validation.md` | `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`, **4,202,805 bytes** |
+| `74c7be30e2b5690944581bd4f06ee5eff3775ffe` | 2026-07-18 14:23:35 | `research: separate pumping from winding maintenance` | same historic path | `5e62c39eb69e390a262d9be9a99e4c4c53b2f197`, **2,110,772 bytes** |
+| `9e7c5602066299f035ce50120746618fe3a9d614` | 2026-07-18 13:26:34 | `research: distinguish source pump from physical fuel` | same historic path | history only; detailed blob not yet indexed |
+| `7657f1edb6bc0cf53c4a473999dedbd7ca77d13b` | 2026-07-18 10:45:35 | `research: validate source-blind linon observer` | same historic path | history only; detailed blob not yet indexed |
+
+**Significance:** this *historical* report is scientifically closer by its commit message and sequence to the sought centered-only, source-off, winding observer P2 experiment than the later 67MB **continuous-replenishment/P2.3–P2.8** root report. The old report is absent from the current abbreviated working-tree report list, but is present as **real immutable Git objects**. This provides a specific next retrieval target and a likely explanation for the previously observed mismatch between the later root's topic and C0 decision summaries. The candidate is not yet proved to contain the exact sought P2 runner, outputs, seeds or observer.
+
+The GitHub connector supplied historical tree identity and exact blob metadata, but `fetch_file(start_line=1,end_line=25)` and `fetch_file(start_line=500,end_line=530)` both returned **zero text** for the 4.2 MB historical blob despite returning its correct Git blob SHA. This is a **connector read-size limitation**, not proof of empty historical content.
+
+A small targeted sample of the current permanent `scripts/` and `tests/` source files, including `scripts/research/active_mu_kappa_repair_matrix.py`, `scripts/research/heredity_transplant_harness.py`, `tests/test_replay_compiler.py` and `scripts/validation_core.py`, contained no conclusive exact P2 C0 runner/observer identity. It is a **partial current-code sample**, not an exhaustive negative.
+
+**Next permitted action:** retrieve the pinned **4,202,805-byte** historical source over the existing **read-only Prcek** Git/HTTPS bridge, verify the Git blob SHA exactly, locate distinctive C0 metrics and full executable/code fences by line numbers, and inspect the matching historical embedded sections. Do **not** promote the above candidate to recovered runnable package until its code, frozen observer, RNG, schedule, outputs and environment have been independently matched. Preserve the more recent continuous-replenishment root as separate programme evidence; do not silently rewrite the declared programme lineage or infer from a commit title alone. No scientific run or whitepaper change.
