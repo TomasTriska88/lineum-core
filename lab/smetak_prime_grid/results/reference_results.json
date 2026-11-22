@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-22",
+  "status": "reproduction of known number theory, NOT a new result and NOT a Lineum output",
+  "source_video": "https://www.youtube.com/watch?v=7ardq_YdtVQ",
+  "source_authors": [
+    "Vlastimil Smeták",
+    "Jiří Chlebníček",
+    "Boris Koštel"
+  ],
+  "convention": "positive integer ordered pairs (x,y), x,y from 1 through N, gcd(x,y)==1",
+  "verified_grid_counts": [
+    {
+      "side": 5000,
+      "slide_uncovered": 15200915,
+      "exact_coprime_count": 15200915,
+      "difference_slide_minus_exact": 0,
+      "pi_estimate": 3.1413097643199746
+    },
+    {
+      "side": 20000,
+      "slide_uncovered": 243180790,
+      "exact_coprime_count": 243180791,
+      "difference_slide_minus_exact": -1,
+      "pi_estimate_from_exact": 3.1415283804654663
+    }
+  ],
+  "periodic_layers": {
+    "primes": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "period": 210,
+    "fraction_uncovered": 0.626938775510204,
+    "total_uncovered_over_period_square": 27648,
+    "grid_reconstruction_error": 1.528780112168777e-13
+  },
+  "fft_shuffled_control": {
+    "seed": 20261122,
+    "runs": 100,
+    "observed_peak_power": 0.04367246980424824,
+    "largest_shuffled_peak_power": 0.00008823554367362561,
+    "interpretation": "expected contrast between periodic pattern and randomly shuffled pixels, not a Riemann-zero or emergent-physics test"
+  },
+  "local_tests_run": {
+    "count": 7,
+    "passed": 7
+  },
+  "caveat": "Results were generated independently in temporary execution environment; full original third-party slide bitmaps are NOT yet Git-archived."
+}
