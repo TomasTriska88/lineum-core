@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.7
+**Version:** 0.1.8
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -208,3 +208,29 @@ The GitHub connector supplied historical tree identity and exact blob metadata, 
 A small targeted sample of the current permanent `scripts/` and `tests/` source files, including `scripts/research/active_mu_kappa_repair_matrix.py`, `scripts/research/heredity_transplant_harness.py`, `tests/test_replay_compiler.py` and `scripts/validation_core.py`, contained no conclusive exact P2 C0 runner/observer identity. It is a **partial current-code sample**, not an exhaustive negative.
 
 **Next permitted action:** retrieve the pinned **4,202,805-byte** historical source over the existing **read-only Prcek** Git/HTTPS bridge, verify the Git blob SHA exactly, locate distinctive C0 metrics and full executable/code fences by line numbers, and inspect the matching historical embedded sections. Do **not** promote the above candidate to recovered runnable package until its code, frozen observer, RNG, schedule, outputs and environment have been independently matched. Preserve the more recent continuous-replenishment root as separate programme evidence; do not silently rewrite the declared programme lineage or infer from a commit title alone. No scientific run or whitepaper change.
+
+## 13. Checkpoint 8 — original historical report located and byte-verified (2026-11-22)
+
+**Version:** 0.1.8. **Major provenance correction, not a numerical replay.** The new historic target from Checkpoint 7 was fetched through the existing *read-only* Prcek bridge and hashed independently against its immutable Git blob; full source was scanned for the literal P2/C0 signatures in one pass, but only aggregate counts and line locations passed through the admin mailbox.
+
+**Exact source:** `research/foundations/lineum-physics-philosophy-validation.md` at commit `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1` (2026-07-18 16:29:22 UTC), blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`, **4,202,805 bytes / 98,203 lines**. **Prcek command ID:** `lineum-p2-history-blob-20261122-h7p3`; matching final `HA_RESPONSES` entry `success/executed`; nested `service_response.returncode=0`; stderr empty; **`GIT_BLOB_MATCH 1`**. The original SHA, size and historical Git commit were resolved from immutable Git history **before** the host fetch.
+
+| Exact case-insensitive token | Matched line count | First significant line numbers |
+| --- | ---: | --- |
+| `20.5232` | 3 | **1993, 2013, 65002** |
+| `0.941535` | 1 | **2015** |
+| `0.99999892` | 1 | **2016** |
+| `centered-only` | 12 | 8, 18, 41, 42, 1674, 1700, 1829, 1931, 2105, 3120, 3121, 3171 |
+| `source-off` | 26 | 8, 18, 42, 44, 1295, 1300, 1338, 1383, 1674, 1700, 1702, 1904, 1909, 1935… |
+| `C0` | 196 | 42, 154, 839, 1208, 1757, 1766, 1777, 1781, 1818, 1842, 1852, 1951… |
+| `P2` | 174 | 8, 18, 42, 43, 44, 1674, 1699, 1902, 1903, 1909, 1913, 1941… |
+| `12 paired` | 2 | 3328, 3329 |
+| `source schedule` | 7 | 43825, 44111, 44129, 44212, 48119, 52071, 57358 |
+| `v3` | 1,073 | 42, 92, 93, 1039, 1111, 1146… |
+| `15.6667` | 0 | no literal match; may use different rounding or formatting |
+
+**Inference:** the intended P2 centered-only C0 source-off *scientific report and its unique target metrics* have now been found **in an actual historical Git object**. The earlier 67MB `lineum-continuous-source-cosmology-validation.md` is an independent later continuous-source cosmology report, not the primary carrier of these exact P2 C0 metrics. The previous statement that only later summaries carried the numeric fingerprints is now **superseded** by this verified 2026-07-18 history. **Do not conflate** file topic/lineage or overwrite the older administrative programme hierarchy before inspecting the original report.
+
+**Still unknown:** the presence and completeness of the *embedded runnable P2 source*, original seed/RNG contract, v3 transport observer, preserved raw outputs, exact replay commands, dependencies and output hashes. A lexical match is **not** an exact runnable-package recovery or a new physical result. Top-level A–F classification remains pending; no model run occurred.
+
+**Next permitted action:** perform a **bounded, source-pinned section read** of the historical file around lines `1674–2140` and `3320–3340`, plus enumerated code/receipt appendices around the discovered P2 schedule references. Return only concise necessary metadata/short code excerpts, not complete raw data or private content, using the same Git-blob SHA identity and authorized read-only Prcek bridge. Preserve the findings in this active report before searching or executing anything else.
