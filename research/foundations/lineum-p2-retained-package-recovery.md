@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.21
+**Version:** 0.1.22
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -533,3 +533,25 @@ This argues **against a mistake in the first checker’s buffering or obvious sc
 **Safety and plan:** first test **read-only** access to the official PyPI version metadata, availability of `venv`/`pip`, and free `/tmp` space on Prcek via the documented short `shell_command.chatgpt_host_exec` bridge. If all checks pass, an *ephemeral, isolated, disposable* Python venv wholly inside a freshly named `/tmp/lineum-p2-rng-*` directory may install `numpy==1.26.4` **into that venv only**, not system Python, live Lina modules, HA container, repositories or production paths. Bound the action with `timeout<42s`, low CPU scheduling priority, subprocess timeouts, no GPU and no persistent output, and clean only its own temporary directory. A probe cannot imply blanket host-test permission; no heavy Grid or P2 simulation runs on the sole live Prcek. If PyPI, venv or resources are inadequate, report a bounded access result **without performing an install**. The technical mailbox carries **only a short script and small SHA/version/error summary**, no private state, raw source or conversation. Reconcile the final same-ID HA response and nested host rc, as required by the current HA manual.
 
 **Expected checks:** the frozen Python implementation `rng=np.random.RandomState(2026245000)`; repeat `600` times `uniform=rng.rand(32,32)`, `gaussian=rng.normal(0.0,0.005,(32,32))`, hash their raw float64 bytes sequentially with SHA-256. Compare the resulting hash **first** with the predeclared historical `e86d4ff0...` and **second** with current-runtime `dafad625...`, without retuning; record platform, precise version, wheel/package source, byte count, nested rc and both outcomes. Success can establish reproducibility of this RNG hash in a compatible NumPy version, **not** any field dynamics, physics or stable particle. A failed install is a technical failure, **not** a numerical negative. No code/whitepaper changes from this test.
+
+## 27. Checkpoint 22 — PyPI availability PASS; host has no pip/ensurepip; isolated wheel method frozen (2026-11-22)
+
+**Report version:** 0.1.22. The read-only Prcek bridge probe `lineum-p2-pypi-readonly-20261122-h9d3` completed with final HA response, nested rc **0**, empty stderr:
+
+```text
+PYTHON 3.12.3
+TMP_FREE_MB 392648
+HAS_MODULE venv 1
+HAS_MODULE ensurepip 0 ModuleNotFoundError
+HAS_MODULE pip 0 ModuleNotFoundError
+PYPI_HEAD 200 83524
+PROBE_END
+```
+
+**Interpretation:** official PyPI is reachable on this host and the ephemeral directory has sufficient space, but the default system interpreter lacks both `pip` and `ensurepip`. The proposed ordinary `venv + pip install numpy==1.26.4` route **must not be attempted as though it were available**. This is an environment/tooling limitation, not a defect of Lineum, Git, HA or a numerical negative. It does **not** justify installing pip into the system or live Lina environment.
+
+**Revised, still preregistered narrow test (no package installation):** Use only an *official, SHA-256-verified PyPI wheel* for NumPy `1.26.4`, supported on CPython `3.12`, **within an ephemeral dedicated `TemporaryDirectory` under `/tmp`**. First perform a separate **read-only** PyPI JSON metadata lookup and freeze the exact `cp312` Linux wheel name, digest and size; accept only the canonical `pypi.org` JSON and `files.pythonhosted.org` wheel URL matching the local `x86_64` Linux tag. For the eventual single-seed test, download the wheel to the same temporary directory, verify SHA-256 **before** extraction, safely unpack its Python/wheel contents only there via standard-library `zipfile`, then launch a **short, low-priority isolated child interpreter** that imports `numpy` solely from that temporary directory, computes the same predeclared 600-frame RNG digest and exits. Bound all subprocess/network waits and host command to <42 seconds. The temporary contents must be deleted by its own scope cleanup (not by deleting any pre-existing host path); on timeouts or exceptions, preserve the error as a technical limitation. **No `pip`, `apt`, Docker image pull, persistent `venv`, HA/Lina installation, production import, secret, new service or 168-run P2 physics simulation** is permitted by this checkpoint.
+
+**Third-party intake:** official NumPy `1.26.4` from https://pypi.org/project/numpy/1.26.4/ ; public source and BSD-style NumPy license with bundled wheel notices, no republication, vendoring, derivative-code import or Core dependency change. This execution would only use its binary to discriminate NumPy-runtime stream compatibility. Treat all downloaded binary code as untrusted until official checksum and filename/platform selection pass.
+
+**Scientific outcome gate unchanged:** compare one exact raw-byte `RandomState(2026245000)` 600-frame hash against original archive `e86d4ff0...` and current NumPy2.3.5 `dafad625...`. Report **PASS**, **MISMATCH** or **TECHNICAL BLOCKER** separately; do not call the complete P2 physics replay verified. Next action: read-only wheel metadata and interpreter ABI probe, then freeze the wheel SHA in this report before any download/execution.
