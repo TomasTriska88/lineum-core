@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.1  
+**Version:** 0.1.2  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -196,3 +196,40 @@ print("prime scale directions:", [(p, 1 / p, log(p)) for p in P])
 **Next authorized scientific checkpoint:** define a base-independent length/phase observable from the *2D intersection geometry*, and derive an explicit **non-fitted** prediction (including which zeta-gap index, which normalization and what would constitute a failed prediction) before touching Lineum data. Predeclare shuffled/composite/Poisson-like controls. Do **not** re-use earlier RZ-0/RZ-1 operators or silently reopen Eq-12. If this definition cannot be made without target-dependent tuning, record a bounded non-identifiability result and open the owner-intuition failure gate rather than trying random scales.
 
 **Persistence receipt:** this complete standalone method, results and interpretation are being retained directly as ordinary Git Markdown; the original presentation screenshots are not embedded or redistributed.
+
+## Checkpoint 2 — geometric two-point spacing: frozen protocol (2026-11-22)
+
+**Status:** preregistered; no checkpoint-2 computation has been performed at this Git checkpoint.  
+**Version:** 0.1.2 (protocol only)  
+**Purpose:** construct a *base-independent geometric spacing observable* from the finite prime layers that does not assume a prior connection to zeta zeros. Distinguish scalar Euclidean distance from divisibility-dependent separation **before** any numerical comparison to Riemann zeros or Lineum states.
+
+### Fixed geometry and exact prediction
+
+Use the first four primes `P=(2,3,5,7)`, giving full period `L=210`, grid size `N=L²=44,100`, coordinate residues `x,y∈{0,...,209}` with periodic wrap, and binary occupancy
+
+`M(x,y)=∏_{p∈P}(1−1_{p|x and p|y})`.
+
+For a fixed displacement `h=(a,b)`, define two-point joint-occupancy count
+
+`T(a,b)=Σ_{x=0}^{209} Σ_{y=0}^{209} M(x,y) M((x+a) mod L,(y+b) mod L)`.
+
+Preregister the independently derived, *exact* Chinese-remainder prediction
+
+`T(a,b)=∏_{p∈P}[p²−2+1_{p|a and p|b}]`.
+
+Reason: modulo each `p`, two forbidden residue pairs, `(0,0)` and `(−a,−b)`, coincide iff both displacement coordinates are divisible by `p`. This equation is an ordinary consequence of divisibility and the Chinese remainder theorem, **not a new physical or mathematical theorem**.
+
+**Fixed displacements**, all selected before executing: `(0,0),(1,0),(2,0),(3,4),(5,0),(6,0),(30,0),(210,0)`. Pair `(3,4)` and `(5,0)` has equal Euclidean distance `5`, but `5` divides both components of only the second shift; if geometric autocorrelation differs, it exposes arithmetic rather than merely radial spacing.
+
+### Controls, decision and limitations
+
+- **Independent primary check:** (i) explicit enumeration of the entire `210×210` grid with periodic wrap using integer modular arithmetic; (ii) separate prime-factor product count above. Require **exact integer agreement for every fixed shift**.
+- **Null control:** preserve the same count of occupied sites, randomly permute all `44,100` positions for `100` independent permutations using random seed `20261122`. For every nonzero displacement modulo 210, the exact randomized-layout expected count is `K(K−1)/(N−1)` (`K=ΣM`). Use permutations only as a qualitative demonstration; do not infer novel arithmetic discovery from their difference.
+- **Symmetry:** `T(a,b)=T(b,a)=T(−a,−b)`. Also compare `T(3,4)` and `T(5,0)` as a matched-distance counterexample to a purely radial spacing function.
+- **Pass:** all exact arithmetic identities agree, and known symmetries hold. **Failure:** mismatched integer counts or violated symmetry means an implementation or derivation problem; preserve it before proceeding. **No new zeta claim on either outcome.**
+- **Nondimensionalization and falsifiability gate:** the finite periodic 2D field yields displacement-indexed counts, not an ordered scalar sequence `γ_{n+1}−γ_n`. No unique zero index `n`, mapping of a 2D shift to a 1D gap, or unit conversion follows from the construction. Any future bridge must explicitly and **before fitting** state the invariant scalar extraction, index mapping and predicted tolerance, then test out-of-sample against shuffled/composite and Poisson/GOE/GUE-relevant controls. Do not retrofit free scales to apparent matches.
+- **Predeclared outcome classification:** exact verified geometry supports only G0/G2 as arithmetic reference observables; inability to identify a unique gap-mapping constrains this *specific direct-tiling proposal*, not all possible emergence or spectral hypotheses. If a material negative is verified, document the scope and use the owner's mandatory non-leading intuition gate before replacing the mechanism.
+
+**Source-priority comparison:** M. Baake, U. Grimm and D. H. Warrington, "Some remarks on the visible points of a lattice", *J. Phys. A* **27** (1994), 2669–2674, https://pure.uva.nl/ws/files/2898658/508_5280y.pdf; M. Baake, R. V. Moody and P. A. B. Pleasants, "Diffraction from visible lattice points and k-th power free integers", *Discrete Mathematics* **221** (2000), 3–42, https://arxiv.org/abs/math/9906132; M. Baake and C. Huck, "Ergodic properties of visible lattice points" (2015), https://arxiv.org/abs/1501.01198. These works show that lattice autocorrelation and diffraction were previously studied. No novelty claim is permitted.
+
+**Execution gate:** commit and verify this frozen protocol first; run the smallest independent check locally; then record exact outputs, code and interpretation back into this same authoritative report before any next lane.
