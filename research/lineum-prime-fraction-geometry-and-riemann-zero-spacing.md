@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.5  
+**Version:** 0.1.6  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -403,3 +403,42 @@ The owner **does not have a concrete rule** that maps a 2D prime-grid displaceme
 **Evidence classification:** This is a documented **research design guardrail**, not evidence that Lineum already implements, reproduces, or benefits from a private application's recent mechanisms. No technical material was transferred between repositories. No whitepaper change, Core code modification, new test or private repository mutation occurred. The previous numerical and negative Lineum conclusions remain unchanged.
 
 **Whitepaper handoff:** retain as non-canonical inspiration; no wording eligible for whitepaper promotion until independent Lineum-only evidence is produced. **Next permitted action remains unchanged:** first verify the existing slow-field causal-ablation prerequisite and its retained result; otherwise do not launch the blocked rank/trace or zeta-matching lane.
+
+## Checkpoint 5 — current Core slow-field source audit and prerequisite verification (2026-11-22)
+
+**Report version:** 0.1.6. **Classification:** read-only source and existing-evidence audit, with a bounded current-code observation and an explicitly unresolved upstream evidence gate. **No scientific experiment, test run, or solver change was performed.**
+
+### Why this inspection matters
+
+The next Lineum-native spectral experiment should not start from the appealing prime-grid or another application's wave analogy: its own slow-state causal contrast must first be interpretable. Following the existing preregistration, we inspected the **actual public Core source** and its existing test, rather than assuming similar terminology implied the same physics.
+
+**Pinned public code evidence:** `lineum_core/math.py`, blob `bb877021810691223a0eb960a45493a2e351112a` on `develop`. Existing regression `tests/test_rd0_phi_time_scaling_candidate.py`, blob `b42852dd44c00c90f04f65626d85b57ba9bb4a98`. These are **source reads, not test executions**.
+
+### Three actual implementation constraints (not new physical discoveries)
+
+**1. A disabled slow-memory update is not a disabled slow-memory influence.**
+
+`CoreConfig.use_mu` defaults to `False`, and the **write/update** of `mu` is conditional on `cfg.use_mu` (NumPy implementation approximately lines 426–436; PyTorch implementation approximately 709–719). However, **both** numerical paths first load the supplied `mu` state (defaulting to zero only when it is absent) and always compute `drift_multiplier = 1 + mu` *before* using that multiplier in the `phi`–`psi` interaction and gradient flow (NumPy lines 344–385; PyTorch lines 503–539). Therefore a **nonzero supplied** `mu` may continue to affect future `psi` with `use_mu=False`; this setting is a freeze of the update path, **not** necessarily a causal removal/zeroing of the `mu` field. The previous scope requiring frozen, erased and spatially shuffled controls is substantively justified by this code fact.
+
+**2. The legacy `phi` diffusion rule depends on update count unless the opt-in scaling is selected.**
+
+`CoreConfig.phi_diffusion_scales_with_dt=False` by default (line 218). Both NumPy and PyTorch compute `phi_diffusion_step_scale = cfg.dt if cfg.phi_diffusion_scales_with_dt else 1.0` (NumPy lines 413–423; PyTorch lines 676–686). The existing RD-0-C1 test encodes this flag's default and a timestep-refinement comparison. **Before** interpreting a `phi` spectral property as robust under `dt` refinement, a frozen comparison must distinguish the legacy update-count effect from the opt-in time-scaled path. The present audit does not claim which path should become canonical.
+
+**3. A cross-backend comparison must isolate cap/overflow semantics.**
+
+The inspected NumPy path directly clips `phi` into `[0, phi_cap]` (line 424). The PyTorch path includes an opt-in/default overflow-fold branch selected by `fold_scope/fold_mode` (approximately lines 688–707), so a saturated run can differ in its negative-overflow response. This matters **only where the relevant fold/cap branch activates**; it is not evidence that ordinary unsaturated trajectories disagree. P4 must freeze backend, cap/fold settings, cap-hit telemetry and identical initial fast state to prevent an unnoticed change of numerical regime.
+
+### Status of the upstream causal experiment
+
+**Authoritative programme gate:** the independently versioned public programme continuity ledger `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md`, blob `5304874451caf32313ad0e8e3c59e53958698d79`, labels **P4 slow-medium causal ablations `open_and_conservative_mu_null`** (2026-07-31 record). The current restricted operational task still describes P4 as the prior condition for a future rank/trace diagnostic, rather than providing a verified completed P4 receipt. The parent programme task also remains open; a task's status is not sufficient by itself to establish that every individual substep was or was not run.
+
+**Retrieval limitation:** the programme's 67,002,835-byte root report (blob `3fba3925553cd5596e46c02fa35d1db91523537d`) and a 93,223,385-byte related `phi` report (blob `554fb4a54454852248f53a6d4b43274e6aae0e1e`) exceed the available connector's direct full-content limit; `fetch_file` returned empty textual content for these files and their full blob export was rejected for size. A local Git remote was not reachable from the present compute container. **Therefore an exhaustive historical assertion that P4 never ran is prohibited.** No retained, independently checked P4 output was established in this checkpoint, and the operational *entry gate remains closed*. Older smaller P2-recovery and `mu`/`phi` reports were retrievable only as historical context, not as substitutes for a current source-pinned P4 result.
+
+### Locked next useful action and claim boundary
+
+1. Recover the **exact retained** P2/C0 baseline and current programme state through a byte-faithful local Git checkout capable of reading the large root report; reconcile existing C0/P3/P4 evidence before any new physics run. Do not create approximate replacement input or silently re-run history under changed controls.
+2. If P4 already has a bounded, independently checked result, register its code SHA, initial-state fingerprint, random-stream controls, exact `phi` and `mu` interventions, `dt`, cap/overflow behavior, validation checks and conclusion in the active programme report. Only then consider the separate Lineum-native rank/trace **preflight**, not scored zeta fitting.
+3. If P4 is genuinely missing, keep the existing causal/particle programme's earlier P2/C0 and P3 gates in their declared order; do not bypass them merely to accelerate the prime-fraction idea. The owner's source-neutral **same future input after different prior histories** constraint is useful here, but any eventual test must use Lineum's own `psi/phi/kappa/mu` dynamics and its physically budgeted inputs, not transplant a private application's engine.
+4. Do not modify the canonical equation, defaults, or whitepapers based solely on this source audit. The existing closed-negative Riemann/Zeta comparisons remain closed, the prime-grid relations remain known number theory, and no new RH/Lineum correlation has been tested.
+
+**Verification scope:** Git read-only inspection of source lines and previously written test code, a separate check against the public programme ledger and current operational prerequisite, and connector file-size/availability audit. **No full repository test, local Core execution, independent numerical solver reproduction, ClickUp write, or external file archive** took place. **Claim level:** current-code inspection only, with an unresolved P4 experimental prerequisite. **ClickUp mode:** read-only. **Whitepaper handoff:** no promotion.
