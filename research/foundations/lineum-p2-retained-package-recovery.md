@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.26
+**Version:** 0.1.27
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -632,3 +632,28 @@ The source-ordered first **three** `repr(float(...))` values of *both* first-fra
 **Still unresolved:** original archive's third digest `e86d4ff0c713c8d0508e77307c1d9fbaa38b6a32c7c8c6d4b4df7a8576b17a9a` originated in a *reported* Python3.11.15/NumPy1.26.4 environment and has not been reproduced by a matching binary; a stale source-output pair also remains a legitimate possibility. The independent historical report's physical claims remain unrerun.
 
 **Frozen next inexpensive discriminator (before execution):** for the **same** P2 seed, frame count, draw order and raw Gaussian arrays, compute (1) per-frame Gaussian SHA-256 at *predeclared* frame indices **0,1,2,9,99,599** and (2) whole-Gaussian-stream SHA-256 after converting each frame deterministically with `np.rint(gaussian*10**d).astype(np.int64).tobytes()` for exactly `d∈{10,12,14,16}`. Compare NumPy2.3.5 local against a repeat of the pre-frozen isolated NumPy1.26.4 wheel. This is a **quantized diagnostic, not a new acceptance tolerance for physics**: equality at a decimal rounding level can indicate close numerical agreement but does not guarantee a uniform error bound; different rounding or threshold behavior must be retained. Do not invent a broad seed sweep, change the physics source, or promote a particle claim. No full 168-trajectory replay is authorized.
+
+## 32. Checkpoint 27 — quantized Gaussian-draw comparison PASS; exact RNG archive still mismatched (2026-11-22)
+
+**Version:** 0.1.27. The **preregistered Checkpoint 26** fixed-frame and quantized Gaussian experiment was completed using NumPy2.3.5 in the isolated assistant runtime and NumPy1.26.4 via one short, SHA-verified, temporary read-only Prcek-wheel run. The Prcek bridge command `lineum-p2-np126-gauss-round-20261122-n3p7` returned a matching **final** HA response `success/executed`, **nested rc=0**, empty stderr, `WHEEL_SHA_OK 1`, `CHILD_RC 0`, `TEMP_CLEANED 1`. The wheel was verified against the previously pinned `675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed` before extraction. No host dependency installation, live Lina Grid access, HA configuration edit, or full P2 simulation took place.
+
+**Results from the exact frozen measurements, both runtime digests independently equal:**
+
+| Predeclared check | NumPy2.3.5 assistant | NumPy1.26.4 temporary Prcek | Match? |
+| --- | --- | --- | --- |
+| raw Gaussian SHA-256 frame 0 | `cc923f8c01479bb9ee1b901f441c0c9d5cdfab2f6d7e1899dbdeff94230e0ad7` | same | **PASS** |
+| raw Gaussian SHA-256 frame 1 | `e4e41a88b9b3a2cb1e9d37b7cea4c324fb95755f9b0bbdf8231b028855b1953e` | same | **PASS** |
+| raw Gaussian SHA-256 frame 2 | `a0c3c4edd30a302bda0d25d0a5c1a1808bd107c39e624f78bf13e18e6b06c2ba` | same | **PASS** |
+| raw Gaussian SHA-256 frame 9 | `aac5f20c8dc781698e646f79ec9f36d13e88a26615ca03d13701f4caa5187838` | same | **PASS** |
+| raw Gaussian SHA-256 frame 99 | `d3b22e46cc642519ca34ab1f8be558c80c2eec521823dde29aab9f7fb94dfe41` | same | **PASS** |
+| raw Gaussian SHA-256 frame 599 | `8bac8f830ec71e73c504e46d2bc6fc2cbd0c4f12786659398aebf68fcded39d1` | same | **PASS** |
+| entire Gaussian stream SHA after `np.rint(g*10**10).astype(np.int64)` | `a792ac693792a19ee995433f6cb41bd8a5f237646470d759e2a77f210a7698cb` | same | **PASS** |
+| same quantization at `10**12` | `a8734de6e329f7585cf8763bd89b22e71911a1d59c9b34aba9202ae258ff7b5c` | same | **PASS** |
+| same quantization at `10**14` | `da954d3f5a71868e0581120da017c4459fa2f102fed171756867a615e4228996` | same | **PASS** |
+| same quantization at `10**16` | `9af4edfee37ad0c1db2c21e5ae5c2d8f38ebfa9df199f23c38ad5d792b8476ad` | same | **PASS** |
+
+**Interpretation, not proof of identical trajectories:** all **614,400** Gaussian scalars from 600 frames at 32×32, when separately multiplied by `10**16` then rounded to nearest integer, produced **identical byte streams** in both environments (assuming SHA collision resistance). This supports an **extremely small floating-point representation difference** as the reason why their *raw* Gaussian SHA-256 fingerprints differ; the earlier all-Gaussian raw SHA mismatch is not a finding of materially different stochastic schedules. The six predeclared raw frames happen to match exactly; some other frame differs in least-significant bits. The exact first mismatch and independent maximum absolute error are **not yet located or bounded**, and quantized agreement is not an automatic error budget for nonlinear trajectory calculations or topology thresholds.
+
+**What remains a blocker:** archived original whole-stream SHA `e86d4ff0c713c8d0508e77307c1d9fbaa38b6a32c7c8c6d4b4df7a8576b17a9a` remains distinct from both actual runtime hashes (`dafad625...` NumPy2.3.5, `fffdcf960...` NumPy1.26.4/CPython3.12.3). Its exact Python3.11.15 binary/build or another historical source/output relationship must still be resolved before **byte-identical full baseline replay** is claimed. The per-frame quantized outcome narrows the current-run disagreement to numerical precision, **not** proof that the historical archive digest is wrong.
+
+**Scope classification:** `RNG_quantized_portability_supported_within_tested_domain`; `historical_bitwise_RNG_replay_unresolved`; `physics_simulation_not_run`; `particle_persistence_unproved`. No whitepaper, equation, Core library, owner/memory mechanism, or Lina EI live Grid was changed. **Next permitted inexpensive discriminator:** locate the **first raw Gaussian mismatch and its maximum absolute numeric difference** across NumPy1.26.4 vs NumPy2.3.5 for the same first P2 seed, while controlling resource budget; this requires no whole P2 solver and should be preregistered separately. If the precision-only explanation holds, evaluate a *separately specified numerical tolerance* for future semantic replay, without weakening the original bitwise criterion or retroactively reclassifying the archive.
