@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.30
+**Version:** 0.1.31
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -689,3 +689,34 @@ The authentic runner's SHA-256 remains `76d99fdbedd494a1e4ee610d2b5d054d3a202dcd
 **Possible results defined before inspection:** unanimous decline across the late subwindows demonstrates continuing **finite-horizon decay** in the historical data but does **not** establish eventual extinction; mixed changes are unresolved at this window size; nondecline cannot establish a self-sustaining object. Failure of seed contracts, missing fields, late-mean reconciliation or impossible counts invalidates the archived-check conclusion and must be retained as an integrity concern. A 12/12 late-window v3/transport pass is categorically distinct from overall stability, object identity and energy conservation. Do **not** modify P2 code, compare Riemann data, update whitepapers, or launch the 168-trajectory solver under this checkpoint.
 
 **Next action frozen:** run the above archive-only arithmetic in the GitHub connector's in-memory JavaScript environment with bounded summarized output (not raw seed structures), then immediately append exact readback results and a narrow verdict here, verify the Git commit, and only then select another consequential check.
+
+## 36. Checkpoint 31 — independent 12-seed archive decline audit PASS (2026-11-22)
+
+**Version:** 0.1.31. This is the **executed result of frozen Checkpoint 30**. The connected GitHub `fetch_blob` returned the first-party historical immutable blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`; in-memory JavaScript selected its Appendix P `json` fence and parsed the exact archived original `source_results.C0_centered_only.schedule_results.formation_only_20.seed_rows` with `JSON.parse`. **No external program, physics solver, 168-trajectory rerun, local source-transfer attempt, Prcek command, or HA operation occurred in this check.** The original report/blob and body/output SHA-256 preservation were independently checked in prior checkpoints; this new in-memory archival calculation relied on that pinned provenance, not a newly computed cryptographic digest.
+
+**Frozen membership gate:** **12/12** distinct seeds exactly `2026245000..2026245011`; **12/12** rows matched `source_family=C0_centered_only`, `schedule=formation_only_20`, and `source_on_steps=200`. All compared numeric/Boolean fields were present and finite.
+
+| Preregistered archive-only metric | Result, 12 historical seed rows |
+| --- | ---: |
+| Mean defect count, off-source window **t=35–40** | **30.500000000000000** |
+| Mean defect count, later off-source window **t=55–60** | **16.627450980392158** |
+| Paired later-minus-earlier change, arithmetic mean | **−13.872549019607844** |
+| Individual seed changes: decrease / unchanged / increase | **12 / 0 / 0** |
+| Per-seed change range (later minus earlier) | **−22.196078431372552** to **−8.352941176470587** |
+| Individual ratio `mean(t=55–60)/mean(t=35–40)`: arithmetic mean | **0.547900746231416** |
+| Range of that per-seed ratio | **0.32858837485172004** to **0.6426174496644296** |
+| Earlier window `gap_20_40.mean_defects`, mean over seeds | **68.65671641791046** |
+| Later window `late_40_60.mean_defects`, mean over seeds | **20.523217247097843** |
+| Coarser gap-to-late decreases | **12/12** seeds |
+| Final-frame defect count: mean / range | **15.666666666666666** / **8..22** |
+| Frozen late `v3_transport_rule` pass | **12/12** seeds |
+| Frozen **overall** `stable_transport_candidate` pass | **0/12** seeds |
+| Original aggregate `window_stable_candidates.late_40_60` / `overall_stable_candidates` | **12 / 0** |
+
+**Independent arithmetic consistency:** recomputed mean of the **12 original individual `late_40_60.mean_defects` values** is `20.523217247097843`, exactly matching the separately stored original aggregate `late_40_60_mean_defects.mean` to machine output precision: **difference 0**; preregistered absolute tolerance **1e-10 PASS**. The original high-level `decision.any_population_stable_overall_transport_candidate = false` agrees with the seed-level **0/12** overall passes. These checks independently recompute archived summaries but do **not** independently reproduce the underlying physical trajectories.
+
+**Scientific conclusion within the strict archive-only domain:** the historical source-off C0 remnant **continued to lose defects strongly across both finite late windows**, in **every** retained seed. The ~**45.5%** average of *per-seed* later/earlier ratios was a **descriptive decrease, not an accepted asymptotic decay law**, and does not imply a precise continuous-time half-life. A late-window 12/12 observer pass is **not** a stable particle or even evidence for an overall population plateau. Historical finite `t≤60` data cannot distinguish eventual extinction from a longer-lived plateau beyond the observed horizon. It is more accurate to say **a decaying multi-defect population persisted until the observation cutoff** than that a stable object survived. No Lineum particle, memory mechanism, energy conservation, real physics, or Riemann mapping is supported.
+
+**Scope/status:** `archive_data_consistency_supported`; `finite_window_decay_supported_within_original_sample`; `full_original_P2_replay_unexecuted`; `long_horizon_persistence_unresolved`. The previously failed 100KB runner materialization and historical RNG bytewise mismatch remain open; no tolerance, code, dependency, observer or method was retroactively changed.
+
+**Next permitted action:** prioritize recovering the **full unmodified original runnable source** in a safe isolated environment, or else a narrow *non-executing* source-vs-output contract check using the existing exact Git blob. A new multi-horizon test, P3/P4 or claimed stable-object mechanism must wait for a verified baseline replay and its control gate. This checkpoint has no whitepaper promotion.
