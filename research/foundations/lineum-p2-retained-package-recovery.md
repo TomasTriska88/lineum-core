@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.18
+**Version:** 0.1.19
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -479,3 +479,24 @@ assert 2 * len(expected) * 12 == 168
 - Run in the isolated assistant runtime (observed `Python 3.13.5 / NumPy 2.3.5`) rather than Prcek, with no package installation or Grid/HA access. Include an independent checker that uses a **different buffering strategy** for the same source-ordered byte stream; this may detect a mistaken hash framing but not prove the field equations.
 
 **Predeclared pass criterion:** both hashes exactly equal each other **and** the predeclared historical target; mismatches are retained negatives, not tuned away. This is only a source/seed/RNG transfer control: **even PASS does not replay a single P2 field trajectory or establish physical stability**. Further full physics replay remains blocked on byte-faithful transfer of the full historical 100,626-byte source into a safe isolated scientific runtime with appropriate dependency/environment acceptance and a complete independent output comparison.
+
+## 24. Checkpoint 19 — P2 absolute-time RNG cross-version hash MISMATCH (2026-11-22)
+
+**Version:** 0.1.19. **Status: PREDECLARED NEGATIVE CONTROL, exact source-output replay not yet validated.** This result is the immediate outcome of the frozen Checkpoint 18 stream-hash experiment, recorded **before** a repair or alternate mechanism is selected.
+
+**Isolated environment:** `CPython 3.13.5 / NumPy 2.3.5` (not the original reported `CPython 3.11.15 / NumPy 1.26.4`). No physical simulation, SciPy call, source change, host modification or Lina EI Grid access.
+
+**Method actually executed:** initialize `np.random.RandomState(2026245000)`; for **600** absolute steps draw `uniform=rng.rand(32,32)` then `gaussian=rng.normal(0,0.005,(32,32))`; append each pair of raw `ndarray.tobytes()` to SHA-256 in this order. The independent checker buffered all 600 pairs and hashed their concatenated raw bytes instead. Both covered the same `600×2×32×32×8 = 9,830,400` bytes (float64 arrays).
+
+```text
+ORIGINAL_ARCHIVE_FIRST_HASH=e86d4ff0c713c8d0508e77307c1d9fbaa38b6a32c7c8c6d4b4df7a8576b17a9a
+STREAMING_CURRENT_HASH=dafad62555fdc0d39788d4aa597a27b8c161ed3aee5e80c70679e7a4feb52607
+BUFFERED_CURRENT_HASH=dafad62555fdc0d39788d4aa597a27b8c161ed3aee5e80c70679e7a4feb52607
+STREAM_EQUALS_BUFFER=True
+ARCHIVED_HASH_MATCH=False
+FINAL_ASSERTION=FAILED, exit 1
+```
+
+**Interpretation limited to tested domain:** the two independent *framing strategies* agree, but the **current NumPy 2.3.5 stream hash does not match the originally published NumPy 1.26.4 stream hash**. This failure must **not** be silently tuned away or re-labelled PASS. Possible competing explanations still open: legacy NumPy normal-RNG runtime difference, a transcription difference in the test harness, a mismatched archived `unit_controls` value, or a code/output identity discrepancy. **None of these is established by the current result.** This is a reproducibility **environment/source audit negative**, not evidence that the underlying P2 field physics is wrong.
+
+**Next frozen forensic discriminator:** (1) independently execute the *verbatim original function* `p2_random_draw_schedule` (Python lines 1611–1628) with the archived `SIZE`, `STEPS`, `Config` defaults, rather than a hand-constructed generator; (2) independently verify its byte hash against the prior current-runtime result `dafad625...`; (3) if the hashes still disagree with the archival target, inspect the actual stored historical unit-control generation and available NumPy 1.26.4 environments without installing anything into Prcek/HA; (4) preserve any negative and compare the first divergent random values only under source-pinned identical input streams before attempting full 168-run P2 baseline. **Full physics replay remains unexecuted and unqualified.**
