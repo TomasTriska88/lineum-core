@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.3
+**Version:** 0.1.4
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -148,3 +148,17 @@ The first `C0` matches were at line numbers `430,444,563,615,1972,1979,2011,2019
 **Bounded negative:** `target_exact_literals_absent_from_large_root`; **not** `E_not_located_after_exhaustive_local_search`. No completed provenance matrix, no accepted candidate runner, no replay. Stop treating this root's code appendices as the sought C0 executable simply because of their P2 labels.
 
 **Next permitted and now more discriminating step:** search the actual repository files and immutable Git history for the **unique numerical targets** `20.5232` and `0.941535` plus `centered-only`/the 12-paired-seed C0 challenge, resolving the true report and historical commit before expanding any runnable environment. The authoritative P2 recovery brief remains the goal but its root-path assumption is explicitly **under challenge**. No scientific interpretation or long-horizon experiment follows from this mismatch.
+
+## 9. Checkpoint 4 — locating the real provenance of target P2 metrics (2026-11-22)
+
+**Version:** 0.1.4. Following the source-pinned negative lexical scan, the exact previously cited numerical target strings were checked against the two current programme decision/continuity documents on `develop`:
+
+- `research/foundations/lineum-root-programme-cross-branch-priority-review.md` at blob `9b1217f4757d2f0a9fb566284a91ac7e5a3c010d` **contains** `20.5232`, `15.6667`, `0.941535`, and `centered-only` in its summary of prior numerical observations. Its published version is 0.1.0, evidence cutoff 2026-07-31, and it explicitly calls itself a **decision/re-ranking report**, not original executable evidence.
+- `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md` at blob `5304874451caf32313ad0e8e3c59e53958698d79` also repeats all three target numbers and `centered-only`, but is a programme **continuity synthesis**, not the source-of-truth P2 executable.
+- `research/foundations/lineum-field-autonomy-observer-transfer-validation.md` at blob `a5721954847bd12ff74633f1d0bb54d2224831f1` contains **none** of these target metric strings or `centered-only`; it cannot be silently substituted.
+
+A read-only recursive Git tree enumeration of commit `8f1b94445d34d43a4bbc1ba6930b84d229fbcbdd` returned **1,265 entries, truncated=false**. Filtering for `research/` source/plain files below 400,000 bytes gave **189** candidates for the next bounded path/content audit. This is a **candidate count**, not 189 files inspected. A subsequent broad batch content-fetch attempt was rejected by the tool-call limit **before any complete candidate search result**; no exhaustive discovery claim is made. The GitHub search connector searches the default `main` branch and yielded no matches for the numerical targets, which **cannot** be interpreted as their absence on the active `develop` branch.
+
+**Strongest supported reconciliation:** the exact values have *decision-report/ledger provenance*, while the huge root report's full bytes do **not** contain these exact strings. Their true originating runner/observer/immutable output remains unidentified. The recovery brief's attribution to the huge root requires explicit correction or a demonstrated historical link; we have not yet proven which report or branch originally generated the C0 metrics.
+
+**Programme verdict:** prior observational claims remain **historical/reported, not independently replayed**. No scientific negative is concluded about C0 stability. The next permitted action is a **small, pagination-safe** read-only content/history inventory of the 189 current research candidates and relevant historical commits, prioritizing `centered-only`, original seeds/observer, and numerical target values. Preserve exact paths/blobs for any genuine P2 execution artifact. Avoid a single 40-call parallel request, which already exceeded the connector's limit. Only a complete compatible candidate authorizes baseline replay; no long continuation, P4, equation or whitepaper changes follow yet.
