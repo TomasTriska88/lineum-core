@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.14
+**Version:** 0.1.15
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -352,3 +352,22 @@ This verifies the self-consistency and current readability of the **historical r
 **Dependency/verification state:** the complete source, frozen P2 protocol, original 168-trajectory output, and output payload SHA-256 are now independently **integrity-verified**. **Replay remains unexecuted** because the default Prcek interpreter lacks NumPy and the safe isolated computation path has not yet been prepared. The local assistant container has Python **3.13.5**, NumPy **2.3.5**, and SciPy **1.17.0**, but does not yet have the byte-faithful original 100KB source artifact; no scientific equivalence across these versions is assumed.
 
 **Next exact step:** read the **correctly nested** C0 formation-only schedule summary and archived independent unit-control details; compare all reported targets without refitting; then decide a safe isolated runtime for the exact original baseline. Do not launch new long-horizon or particle-claim experiments from a hash check.
+
+## 20. Checkpoint 15 — exact C0 formation-only nested archive recovered (2026-11-22)
+
+**Version:** 0.1.15. Read-only Prcek command `lineum-p2-c0-nested-values-20261122-f1t6` completed with final `success/executed`, nested returncode **0**, empty stderr. Before inspecting results the program verified the immutable original report's Git blob and rechecked its **archived output SHA-256 self-hash**. It performed **no numerical simulation**.
+
+**Correct JSON path**: `source_results.C0_centered_only.schedule_results.formation_only_20`. The archived seven keys under `C0_centered_only.schedule_results` are `always_on`, `continuous_dose_30`, `formation_only_20`, `gap_restart_20_40`, `late_only_40`, `never_on`, `pulse_5_on_5_off`.
+
+The **archived** C0 formation-only summary at the correct path contains:
+- `formation_only_sustained_extinctions = 0`;
+- `seeds_with_any_defect = 12`;
+- `window_stable_candidates.late_40_60 = 12`;
+- `window_v3_passes.late_40_60 = 12`;
+- `late_40_60_mean_defects` is a summary object (not a scalar) whose `mean` appears as `20.523217247097843` in original Appendix P JSON around report line **65002**; exact calculator-level re-extraction for all other nested summary values is still pending.
+- the historical `unit_controls.all_pass=True` is **stored metadata**, not proof of newly rerun controls.
+- `overall_stable_candidates` and `overall_v3_passes` are separate archive fields and must **not** be inferred from a late-window pass. The archived decision explicitly says `any_population_stable_overall_transport_candidate=false`.
+
+**Interpretation:** the late source-off C0 multi-defect signal is now anchored in an intact first-party program **and** its exact original machine-readable output, rather than secondary prose. This resolves the source-recovery part of the prior execution blocker, but does **not** reproduce or validate the old run in a modern environment. The fixed-horizon result is compatible with a decaying remnant; no single-object identity or physical energy claim follows.
+
+**Gate and immediate next step:** check the original report's precise run-environment declaration and any already available isolated execution environment. If the required dependencies are missing, report the gap rather than installing packages or running heavy experiments on the live Prcek host. A complete baseline replay must use exact P2 source and frozen input contract, execute existing checks, preserve stdout and output hashes, compare archived output independently, and never re-use unrelated P1 seeds. No A–F verdict yet.
