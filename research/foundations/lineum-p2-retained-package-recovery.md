@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.8
+**Version:** 0.1.9
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -234,3 +234,21 @@ A small targeted sample of the current permanent `scripts/` and `tests/` source 
 **Still unknown:** the presence and completeness of the *embedded runnable P2 source*, original seed/RNG contract, v3 transport observer, preserved raw outputs, exact replay commands, dependencies and output hashes. A lexical match is **not** an exact runnable-package recovery or a new physical result. Top-level A–F classification remains pending; no model run occurred.
 
 **Next permitted action:** perform a **bounded, source-pinned section read** of the historical file around lines `1674–2140` and `3320–3340`, plus enumerated code/receipt appendices around the discovered P2 schedule references. Return only concise necessary metadata/short code excerpts, not complete raw data or private content, using the same Git-blob SHA identity and authorized read-only Prcek bridge. Preserve the findings in this active report before searching or executing anything else.
+
+## 14. Checkpoint 9 — primary P2 Section 3.18 confirmed in historical body (2026-11-22)
+
+**Version:** 0.1.9. The now-proven historical source `lineum-physics-philosophy-validation.md` (2026-07-18 commit `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1`; blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`) was re-read at **bounded line windows**, rechecking `GIT_BLOB_MATCH 1`. Prcek command `lineum-p2-historical-preview-20261122-q4l7` has one claimed row and a later **final executed** HA response, nested host returncode **0**, empty stderr. This read obtained the relevant content without exporting the whole historical artifact.
+
+**Direct first-party source evidence (not a later summary):**
+- **Lines 1909–1937**, `### 3.18 P2 finds a source-off multi-defect remnant and a history-gated F0 restart, not a particle`. It explicitly distinguishes C0 centered-only noise from full F0 coherent pumping: after source shutoff C0 retains a lower-density population of positive and negative winding defects for the observed finite horizon; both frozen late windows pass aggregate transport/span criteria in **all twelve paired seeds**. The complete F0 source instead smooths away the defect population; after F0 shutdown and restart, no original-level defect recovery in 12/12 prior-state seeds, while fresh-vacuum controls do form a burst 12/12. This is **descriptive history dependence**, not object identity or closed-system resource persistence.
+- **Lines 1939–1946** declare the P2 schedule contract: exact vacuum, **periodic 32×32**, **h=0.1**, end at **t=60**, **12 paired seeds**, previously defined LAP4 backbone and mode coupling, disabled `mu`, optional continuous-time `phi` correction, no production-default or canonical-equation change.
+- **Lines 1950–1955** give the two tested source families C0 and F0, each with the declared noise `xi` and phase factor; the scanned source excerpt does not justify inferring an external physical fuel.
+- **Lines 1931–1937** explicitly warn that the final C0 population is roughly sixteen defects **on average**, not an isolated object; the v3 observer aggregates current, assigns no identities, and passes some smooth transported nulls.
+- **Historical test inventory near lines 3326–3329** states that the 13th topological-transport program, 14th source-pump audit, **15th P1 factorial**, and **16th P2 source-schedule audit** were executed **twice** with byte-identical normalized output. The 16th covers **168** trajectories. This is historical experiment provenance, **not** a present-day replay receipt.
+- The root's section 3.16–3.18 protocol and appendices are **a much closer direct first-party evidence source** for the target than the later continuous-replenishment root. Historical source presence is now confirmed, but the exact executable code block, independently runnable environment, saved output and hash comparisons **still require extraction**.
+
+**Corrected source hierarchy:** P2 C0 source claims originate in **the July 18 historical physics-philosophy source**, which the July 31 cross-branch report/ledger later summarize; the later continuous-replenishment root contains distinct P2.3–P2.8 lanes. The latter remains a valid separate report, but is not itself proof of the C0 run. This checkpoint corrects the active recovery brief's assumed carrier, **without** deleting previous history or silently changing unrelated programme lineage.
+
+**Operational outcome:** `historical_primary_P2_source_found`; runnable package `not_yet_fully_extracted`; **no A–F top-level replay classification yet**; no simulation or engine change.
+
+**Next permitted action:** locate the historical **16th P2 code, independent verifier, full machine-readable output, embedded expected digests, and execution/reproduction command**, ideally by source-pinned heading and code-fence indexing in the historical report; extract only bounded exact sections with line numbers and keep any original scripts in permanent readable evidence if required. Execute a baseline only after source, observer, RNG, schedule, environment and expected output are fully pinned, and after the existing tests. Do not manufacture a new P2 from the written formulas.
