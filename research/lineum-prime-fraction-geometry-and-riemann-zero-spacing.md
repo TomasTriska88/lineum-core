@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.2  
+**Version:** 0.1.3  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -233,3 +233,103 @@ Reason: modulo each `p`, two forbidden residue pairs, `(0,0)` and `(−a,−b)`,
 **Source-priority comparison:** M. Baake, U. Grimm and D. H. Warrington, "Some remarks on the visible points of a lattice", *J. Phys. A* **27** (1994), 2669–2674, https://pure.uva.nl/ws/files/2898658/508_5280y.pdf; M. Baake, R. V. Moody and P. A. B. Pleasants, "Diffraction from visible lattice points and k-th power free integers", *Discrete Mathematics* **221** (2000), 3–42, https://arxiv.org/abs/math/9906132; M. Baake and C. Huck, "Ergodic properties of visible lattice points" (2015), https://arxiv.org/abs/1501.01198. These works show that lattice autocorrelation and diffraction were previously studied. No novelty claim is permitted.
 
 **Execution gate:** commit and verify this frozen protocol first; run the smallest independent check locally; then record exact outputs, code and interpretation back into this same authoritative report before any next lane.
+
+## Checkpoint 2 — retained result and owner-interpretation gate (2026-11-22)
+
+**Report version:** 0.1.3, append-only result checkpoint.  
+**Execution classification:** isolated, preregistered toy arithmetic test; **not** a Lineum-engine run, a Riemann-zero gap match or a physical demonstration.  
+**Runtime:** Python 3.13.5, NumPy 2.3.5 (local runtime; the repository's `requirements.txt` specifies NumPy <2, so this was **not** an environment-conformant full Core regression).  
+**Executed code:** `/mnt/data/.scratch/lineum-prime-fraction/autocorr_20261122.py` (disposable scratch original SHA-256 `5514833c55826d1f0e4e0aa06127dc8ea590798d66aac16cb62a7c1494f1f8af`); locally retained output SHA-256 `30f741270a0cb1e493583699a2953c86e61c6af0f61bfdb4f5021e4b83e448af`. These hashes are **provenance only**, not evidence of a Git-committed scratch artifact. An executable standalone reconstruction appears below, so no scratch file or chat state is needed to rerun the science.
+
+### All exact shifts: independent CRT vs direct grid enumeration
+
+The 210×210 mask has `N=44,100` total positions and `K=27,648` surviving positions. Pair counts are over **all** periodically wrapped grid positions; they are not nearest-neighbor distances.
+
+| Shift (a,b) | Distance in grid steps | Exact prime-factor prediction | Direct counted pairs | Fixed-occupancy shuffled control mean, 100 runs |
+| --- | ---: | ---: | ---: | ---: |
+| (0,0) | 0 | 27,648 | 27,648 | self-overlap, not shuffled |
+| (1,0) | 1 | 15,134 | 15,134 | 17,331.09 |
+| (2,0) | 2 | 22,701 | 22,701 | 17,325.92 |
+| (3,4) | 5 | 15,134 | 15,134 | 17,326.27 |
+| (5,0) | 5 | 15,792 | 15,792 | 17,334.50 |
+| (6,0) | 6 | 25,944 | 25,944 | 17,335.89 |
+| (30,0) | 30 | 27,072 | 27,072 | 17,342.05 |
+| (210,0) | 210 ≡ 0 modulo period | 27,648 | 27,648 | self-overlap, not shuffled |
+
+Analytic random-shuffle expectation for any nonzero shift modulo 210 is `K(K−1)/(N−1) = 17333.36937345518` pairs; finite empirical means fluctuate around it. All **eight** independently calculated exact counts matched direct enumeration with zero discrepancy. Axis-exchange and sign-reversal identities also passed. Each of 100 random permutations used RNG seed `20261122` and preserved K.
+
+**Key geometric observation (mathematical, not novel):** shifts `(3,4)` and `(5,0)` have exactly equal Euclidean length `5`, yet one has **15,134** coinciding surviving-point pairs and the other **15,792**, a difference of **658**. An arithmetic grid therefore "remembers" number divisibility *in addition to* geometric distance. Shifts aligned with multiples of 2 and 3 yield much larger coincidences. This precisely verifies a **number-theoretic spacing fingerprint**, not actual wave propagation. Randomized masks do not preserve that particular fingerprint, as expected.
+
+### Independent exact derivation (why those numbers must occur)
+
+For every prime `p` there are `p²` coordinate residue pairs. Two translated masks forbid two residue pairs unless the displacement is divisible by p **in both coordinates**, in which case the forbidden pairs coincide. Thus the number of allowed residue pairs is exactly `p²−2+I(p|a and p|b)`. The Chinese remainder theorem makes the prime factors independent over one complete period, giving the exact integer prediction. The equal-distance difference specifically changes the p=5 factor from 23 to 24:
+
+`T(3,4)=(4−2)(9−2)(25−2)(49−2)=15134`  
+`T(5,0)=(4−2)(9−2)(25−1)(49−2)=15792`.
+
+This derivation is methodologically independent of the direct full-grid count, but both intentionally use the same grid definition.
+
+### Fully reproducible executable check (Python + NumPy)
+
+The source below implements the fixed inputs, exact predictions, direct grid counting, symmetry checks, randomized fixed-occupancy controls and diagnostic means. It is a compact independently readable reproduction of the actual procedure; the original disposable scratch file is not a durable dependency.
+
+```python
+import math
+import numpy as np
+
+P = (2, 3, 5, 7)
+L = math.prod(P)
+SHIFTS = ((0, 0), (1, 0), (2, 0), (3, 4),
+          (5, 0), (6, 0), (30, 0), (210, 0))
+SEED = 20261122
+N_NULL = 100
+
+coords = np.arange(L)
+grid = np.ones((L, L), dtype=bool)
+for p in P:
+    grid &= ~((coords[:, None] % p == 0) &
+              (coords[None, :] % p == 0))
+K = int(grid.sum())
+assert grid.size == 44100 and K == 27648
+
+def predicted(a, b):
+    return math.prod(p*p - 2 + int(a % p == 0 and b % p == 0)
+                     for p in P)
+
+def counted(mask, a, b):
+    return int(np.count_nonzero(
+        mask & np.roll(mask, (-a, -b), axis=(0, 1))))
+
+for a, b in SHIFTS:
+    result = counted(grid, a, b)
+    assert result == predicted(a, b)
+    assert result == predicted(b, a)
+    assert result == predicted(-a, -b)
+    print((a, b), math.hypot(a, b), result)
+
+rng = np.random.default_rng(SEED)
+nonzero = [(a,b) for a,b in SHIFTS if a % L or b % L]
+controls = {h: [] for h in nonzero}
+for _ in range(N_NULL):
+    null_mask = rng.permutation(grid.ravel()).reshape(L, L)
+    assert int(null_mask.sum()) == K
+    for a, b in nonzero:
+        controls[(a,b)].append(counted(null_mask, a, b))
+print("random-shuffle analytic mean", K*(K-1)/(grid.size-1))
+for shift in nonzero:
+    print("null", shift, float(np.mean(controls[shift])))
+```
+
+**Execution command in a compatible local environment:** `python autocorr_20261122.py` (using the inline code as the file body). No full repo test suite, formal prover, laboratory hardware or actual Lineum numerical solver was executed. Repository dependency mismatch is declared rather than concealed.
+
+### Verdict, limitations, and exact next gate
+
+1. **Geometry identity: supported_within_tested_domain.** Divisibility creates objectively different 2D pair-coincidence statistics even for equal scalar separation. This is known number theory, not a new discovery by Lineum or proof of presentation originality.
+2. **Original owner "fraction fits zero gap" proposal: unresolved.** A 2D vector displacement produces arithmetic pair counts; the Riemann-zero data are a scalar **ordered sequence** of positive real gaps. The construction contains **no unique rule** selecting which vector, which zero index `n`, or which dimensionless scaling represents a particular gap. A non-fitted `n`-indexed prediction is therefore *not identifiable from these inputs alone*. This is a specific **methodological negative at the preregistered mapping gate**, not a mathematical proof that no other bridge exists.
+3. **Random controls:** all null permutations show counts centered around the fixed-occupancy expectation, not the grid's prime-divisibility-specific sequence; the control verifies only deliberate arithmetic structuring, not statistical resemblance to zeta zero gaps, GUE or emergent fields.
+4. **Riemann/Lineum scientific claims: unchanged negative/open.** No zero-gap matching was scored; no Lineum trajectory was measured; RZ-0 and RZ-1 closed-negative remain closed; Eq-12 stays blocked. Spectral analogies in the 1994/2000 visible-lattice literature predate this work.
+5. **Whitepaper handoff:** no promotion now. The existing negative Zeta–RNB whitepaper already correctly quarantines overstrong claims; if a *later independently discriminating* result genuinely changes it, promote only the bounded verified claim with full provenance. Do not update the whitepaper with this arithmetic-only demonstration.
+6. **Owner intuition gate:** the preregistered direct scalar-gap mapping cannot be specified without arbitrary choices. Stop mechanism selection and parameter fitting here; request the project owner's **non-leading, plain-language** intuition about how the 2D geometrical pattern should correspond to a concrete 1D sequence of zero gaps. The user's own picture must be captured in this report *before* a different proposed bridge is selected or run.
+7. **Next permitted action:** wait for the owner's answer to the mapping question; then freeze its operational interpretation and the smallest fair discriminator (including non-prime/composite and shuffled controls) as the next report version, without modifying Lineum engine code or canonical whitepapers.
+
+**Research integrity:** this result is the expected consequence of an explicitly constructed prime mask and is entirely consistent with pre-existing literature on visible lattice points and diffraction. It does not establish the existence of a naturally prime-coded geometric carrier in the physical universe.
