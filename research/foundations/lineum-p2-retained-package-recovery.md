@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.19
+**Version:** 0.1.20
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -500,3 +500,26 @@ FINAL_ASSERTION=FAILED, exit 1
 **Interpretation limited to tested domain:** the two independent *framing strategies* agree, but the **current NumPy 2.3.5 stream hash does not match the originally published NumPy 1.26.4 stream hash**. This failure must **not** be silently tuned away or re-labelled PASS. Possible competing explanations still open: legacy NumPy normal-RNG runtime difference, a transcription difference in the test harness, a mismatched archived `unit_controls` value, or a code/output identity discrepancy. **None of these is established by the current result.** This is a reproducibility **environment/source audit negative**, not evidence that the underlying P2 field physics is wrong.
 
 **Next frozen forensic discriminator:** (1) independently execute the *verbatim original function* `p2_random_draw_schedule` (Python lines 1611–1628) with the archived `SIZE`, `STEPS`, `Config` defaults, rather than a hand-constructed generator; (2) independently verify its byte hash against the prior current-runtime result `dafad625...`; (3) if the hashes still disagree with the archival target, inspect the actual stored historical unit-control generation and available NumPy 1.26.4 environments without installing anything into Prcek/HA; (4) preserve any negative and compare the first divergent random values only under source-pinned identical input streams before attempting full 168-run P2 baseline. **Full physics replay remains unexecuted and unqualified.**
+
+## 25. Checkpoint 20 — mismatch persists with the original Python RNG function (2026-11-22)
+
+**Version:** 0.1.20. This is the bounded forensic follow-up specified at Checkpoint 19; it preserves the negative rather than modifying a seed or source formula.
+
+**Exact original algorithm check:** The locally isolated assistant runtime reproduced the original `p2_random_draw_schedule` function body *line-for-line* from the historical Appendix P Python lines **1611–1628** and the original `Config` defaults (Python lines **53–65**), with unchanged `SIZE=32`, `DT=0.1`, `TOTAL_TIME=60.0`, `STEPS=600`, `noise_strength=0.005`, `seed=2026245000`. Calling the original function generated 600 alternating 32×32 uniform/Gaussian arrays; hashing them in the **original `p2_unit_controls` byte order**, as declared at original Python lines **2653–2661**, produced exactly the same hash as the first separately written checker:
+
+```text
+PYTHON 3.13.5 NUMPY 2.3.5
+EXACT_ORIGINAL_FUNC_HASH dafad62555fdc0d39788d4aa597a27b8c161ed3aee5e80c70679e7a4feb52607
+HAND_WRITTEN_CHECKER_HASH dafad62555fdc0d39788d4aa597a27b8c161ed3aee5e80c70679e7a4feb52607
+EXACT_AND_RECONSTRUCTED_EQUAL True
+ARCHIVED_HASH_MATCH False
+FIRST_UNIFORM 0.6668063946947587
+FIRST_GAUSSIAN 0.00613839214944613
+FRAMES 600
+```
+
+This argues **against a mistake in the first checker’s buffering or obvious schedule transcription**; it does **not** distinguish the original NumPy 1.26.4 vs current NumPy 2.3.5 normal-RNG implementation from a stale historical output/code pair. The result is `reproducibility_failed_in_current_runtime`, **not** `historical_P2_result_falsified`. There was no field simulation, no altered input, no seed sweep and no physical interpretation promoted.
+
+**Runtime-availability check:** `uv python list --only-installed` in this isolated container exposed **only CPython 3.13.5**; no local Python 3.11/3.12 interpreter or cached NumPy 1.26.4 wheel was identified in the bounded lookup. No historical scientific environment was provisioned; this is not an exhaustive search of external mirrors or hosts. The current available `NumPy 2.3.5` and `SciPy 1.17.0` do not satisfy the archived run environment `NumPy 1.26.4` and `SciPy 1.17.1`.
+
+**Decision:** do **not** run 168 expensive original trajectories under the mismatched environment or call the result a same-output replay. The next required discriminator is a truly isolated environment matching **Python 3.11.15 + NumPy 1.26.4** (and SciPy 1.17.1 before the full solver) or equivalent original-runtime independent checks, rerunning *only* the frozen 600-frame random-stream SHA before any physics execution. If that environment reproduces the archived `e86d4ff0...` hash, the NumPy runtime difference becomes a strong candidate and can be investigated bytewise; if it does not, audit archive/source identity and possible original generation differences, retaining both results. **Prcek's sole Lina EI Grid is excluded from heavy replay.** No A–F classification, no long-horizon extension, no code or whitepaper changes.
