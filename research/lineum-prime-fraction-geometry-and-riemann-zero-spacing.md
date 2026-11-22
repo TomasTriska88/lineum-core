@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.4  
+**Version:** 0.1.5  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -381,3 +381,25 @@ The owner **does not have a concrete rule** that maps a 2D prime-grid displaceme
 - **Existing negative evidence:** `whitepapers/3-ontology/hypotheses/03-ontology-hyp-zeta-resonance.md` and `whitepapers/2-cosmology/hypotheses/06-cosmo-hyp-law-transition.md` remain negative/quarantined for tested zeta-alignment formulations. No whitepaper claims or engine code are promoted from this checkpoint.
 - **Next permitted action:** retrieve the precise P4 `phi` ablation result, if it has since been recorded in the canonical Lineum report/task; verify its input/output/checkers and prerequisites. If absent, support that existing causal programme rather than initiating a premature Riemann spectral run. If present and independently checked, preregister a narrowly scoped Lineum-native rank/trace preflight under the already existing ClickUp task. The external prime-grid and verified RH remain reference/control evidence, not input data injected into the solver.
 - **No new experiments, tests, Lean proof checks or production changes** in this checkpoint; only primary-source verification, current task-state reads and Git documentation. Full repository tests were not run for this documentation-only amendment.
+
+## Checkpoint 4 — cross-project inspiration boundary (2026-11-22)
+
+**Report version:** 0.1.5; **classification:** owner-directed research constraint and privacy-safe methodology handoff only; **not** a simulation, numerical discovery, algorithm port, experiment acceptance or change of the next execution gate.
+
+**Owner directive:** When investigating Lineum's intrinsic physics, regularly reconsider useful *generic scientific lessons* from the newest separate Lina EI Grid development, not just prime-grid artwork or external Riemann-hypothesis methods. This is an ongoing **methodological inspiration** requirement, not authority to treat the application Grid as the Lineum Engine, or to equate their governing dynamics.
+
+**Source and confidentiality boundary:** The separate Grid's repository was inspected read-only in its current development context as of this checkpoint. That source and its engineering evidence are **private** and were not publicly relicensed or made a Core dependency. Accordingly, this public report intentionally **does not include private code, file names, commit identities, unique implementation details, raw observations, numerical outcomes, issue content, runtime identities or direct links to the private repository**. The general scientific ideas below are independently intelligible from standard computational-field practice and are *not* claimed as public evidence from the private project.
+
+**Relevant generic physics and testing principles to consider in Lineum, without changing its equation:**
+
+1. Distinguish local propagation, bidirectional transport, reflection and damping through actual conserved quantities and boundary checks; separate a visually appealing interference pattern from transport or a propagating signal.
+2. Distinguish short-lived field perturbations from slowly retained state or history dependence using *same subsequent input, different controlled prior histories*; quantify the response before a later consequence and after it, rather than inferring causality from a final image.
+3. Use explicit nonlinear interaction and finite-resource / energy accounting as independent falsifiers, not as permission to infer emergence. Compare additive and joint inputs with calibrated equal-energy controls.
+4. Require genuine *functional prediction* beyond trivial baselines, with frozen, reset, shuffled and source-off controls, multiple initial conditions, grid resolutions and timesteps. A strong physical response alone does not establish useful learning or a prime-number law.
+5. Keep the mathematical 2D prime-mask Fourier identity separate from dynamically propagating field modes. Never preload prime masks, prime labels, zeta zeros, or task-specific answers into the Lineum Engine and then call the resulting structure spontaneous.
+
+**Practical test-selection consequence:** A later Lineum-native spectral observer should first pass a transport/memory/causal-control audit under its *own current* equations and source accounting. The existing prerequisite in the operational task—a bounded slow `phi` ablation—remains in force. No unverified cross-project inspiration can bypass it. Only after this prerequisite and an independently preregistered Lineum-native observable are supported would it be meaningful to test external prime-fraction or Riemann-zero distributions against proper nulls.
+
+**Evidence classification:** This is a documented **research design guardrail**, not evidence that Lineum already implements, reproduces, or benefits from a private application's recent mechanisms. No technical material was transferred between repositories. No whitepaper change, Core code modification, new test or private repository mutation occurred. The previous numerical and negative Lineum conclusions remain unchanged.
+
+**Whitepaper handoff:** retain as non-canonical inspiration; no wording eligible for whitepaper promotion until independent Lineum-only evidence is produced. **Next permitted action remains unchanged:** first verify the existing slow-field causal-ablation prerequisite and its retained result; otherwise do not launch the blocked rank/trace or zeta-matching lane.
