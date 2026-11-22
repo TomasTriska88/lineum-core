@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.2
+**Version:** 0.1.3
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -121,3 +121,30 @@ The prior Git-access routing regression's **byte-exact** `scripts/agent_git_acce
 **Local verdict:** root recovered and independently verifiable **as bytes and headings**; exact C0 runner/observer/schedule and versioned output **still unresolved**; no A–F recovery classification, no original baseline replay and no new physics claim. The earlier header/size access blocker is now closed. The genuine scientific recovery gate remains open.
 
 **Next step frozen:** perform a narrowly bounded exact-text search of the now-accessible root for the C0 schedule, seed/observer and command/outcome indicators, preserving line numbers and source SHA; then inspect only relevant bounded sections. Record candidate identities and mismatches in this report before attempting any runnable-source package or historical-Git search. Observe the ~50-second host command limit. Never change the live Lina Grid, HA, source code or the proven root report during recovery.
+
+## 8. Checkpoint 3 — exact C0-target search exposes a cross-report source mismatch (2026-11-22)
+
+**Version:** 0.1.3. Another standalone, commit-pinned, **read-only** full-byte scan was executed on Prcek through the authorized bridge with command ID `lineum-p2-c0-locator-20261122-c7j4`. A matching final HA response reported `success/executed`, nested `returncode=0`, and empty stderr. The Python scanner simultaneously recomputed the **same Git-blob SHA** and counted all **1,671,106** source lines, so these are source-pinned lexical checks rather than results from an unverified partial fetch.
+
+**Literal per-line presence across the entire original 67,002,835-byte root report:**
+
+| Exact search token | Number of matching lines |
+| --- | ---: |
+| `20.5232` | 0 |
+| `15.6667` | 0 |
+| `0.941535` | 0 |
+| `0.99999892` | 0 |
+| `centered-only` | 0 |
+| `source-off-to` | 0 |
+| `v3 transport` | 0 |
+| `C0` (case-insensitive) | 2,265 |
+| `absolute-time` | 1 |
+| `source schedule` | 2 |
+
+The first `C0` matches were at line numbers `430,444,563,615,1972,1979,2011,2019,2020,2022,2025,2027`; `absolute-time` at line `2102`; `source schedule` at `1593291,1604679`. No same-line `C0` plus `source off`/`source-off`/`t=60` combination was found in this bounded check.
+
+**Interpretation (important):** the root report is byte-complete and internally clearly about P2.3–P2.8 continuous-replenishment/Fountain experiments, **but does not contain the listed exact P2 centered-only C0 late-window metric strings or distinctive literal wording**. This is a source-reconciliation problem affecting the recovery brief's assumed lineage, **not** evidence that the historical C0 simulation never ran or that its reported numbers are wrong. The metrics might belong to a different programme report, a separate path, another branch, a historical commit, differently written precision, or an unversioned receipt; none is yet verified.
+
+**Bounded negative:** `target_exact_literals_absent_from_large_root`; **not** `E_not_located_after_exhaustive_local_search`. No completed provenance matrix, no accepted candidate runner, no replay. Stop treating this root's code appendices as the sought C0 executable simply because of their P2 labels.
+
+**Next permitted and now more discriminating step:** search the actual repository files and immutable Git history for the **unique numerical targets** `20.5232` and `0.941535` plus `centered-only`/the 12-paired-seed C0 challenge, resolving the true report and historical commit before expanding any runnable environment. The authoritative P2 recovery brief remains the goal but its root-path assumption is explicitly **under challenge**. No scientific interpretation or long-horizon experiment follows from this mismatch.
