@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.17
+**Version:** 0.1.18
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -466,3 +466,16 @@ assert 2 * len(expected) * 12 == 168
 **Limits and contradiction impact:** This validates **only the exact schedule function and archived duration/ensemble contract**; it neither recalculates random draws nor runs the old 168-trajectory field dynamics. The source's original archived runtime `CPython 3.11.15 / NumPy 1.26.4 / SciPy 1.17.1` is not the local assistant environment `CPython 3.13.5 / NumPy 2.3.5 / SciPy 1.17.0`. The Prcek default Python 3.12.3 lacks NumPy/SciPy; a short constrained probe of **seven explicitly named interpreter paths** found only the system interpreter, which is **not** an exhaustive host search. No packages were installed, no live Lina computations were touched, and **the complete P2 baseline was not replayed**. Prior archived numerical outcomes remain historical, including **no overall stable object**. No A–F top-level recovery success claimed.
 
 **Next permitted step:** obtain the complete byte-faithful 100,626-byte Python source in a **non-production, isolated scientific runtime** with pinned NumPy/SciPy; run the original archived `unit_controls` and baseline with bounded resource measurements and an independent full-JSON comparison. This local scheduler PASS removes one consistency risk but does not waive execution/environment gates or authorize the longer source-off experiment.
+
+## 23. Checkpoint 18 — preregistered original P2 absolute-time RNG stream cross-version test (2026-11-22)
+
+**Report version:** 0.1.18, **protocol frozen before execution**. The exact archival Python in historical `lineum-physics-philosophy-validation.md` (Git blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`; 100,626-byte Appendix P Python SHA-256 `76d99fdbedd494a1e4ee610d2b5d054d3a202dcd1ecb781a8d8ab3134174711a`) defines `p2_random_draw_schedule` at Python lines **1611–1628** and `p2_unit_controls` at **2631–2661**. This check is explicitly **different** from the field simulator: test whether the *same* legacy `RandomState` indexed stream remains byte-identical under the current isolated NumPy environment without running the physics.
+
+**Frozen source inputs and comparison:**
+- `seed = P2_SEEDS[0] = 2026245000` (not a P1 seed), `STEPS=600`, `SIZE=32`, `Config().noise_strength=0.005`;
+- use one fresh `numpy.random.RandomState(seed)`; at each absolute step obtain `uniform=rng.rand(32,32)` and then `gaussian=rng.normal(0.0,0.005,(32,32))`;
+- update a **single** `hashlib.sha256()` with `uniform.tobytes()` followed immediately by `gaussian.tobytes()` for each of the 600 steps, exactly as the historical `p2_unit_controls` source;
+- run twice from independently initialized RNGs and compare both hashes; **predeclared archival target** (from original `unit_controls.absolute_time_common_random_draws.first_hash/second_hash`) is `e86d4ff0c713c8d0508e77307c1d9fbaa38b6a32c7c8c6d4b4df7a8576b17a9a`.
+- Run in the isolated assistant runtime (observed `Python 3.13.5 / NumPy 2.3.5`) rather than Prcek, with no package installation or Grid/HA access. Include an independent checker that uses a **different buffering strategy** for the same source-ordered byte stream; this may detect a mistaken hash framing but not prove the field equations.
+
+**Predeclared pass criterion:** both hashes exactly equal each other **and** the predeclared historical target; mismatches are retained negatives, not tuned away. This is only a source/seed/RNG transfer control: **even PASS does not replay a single P2 field trajectory or establish physical stability**. Further full physics replay remains blocked on byte-faithful transfer of the full historical 100,626-byte source into a safe isolated scientific runtime with appropriate dependency/environment acceptance and a complete independent output comparison.
