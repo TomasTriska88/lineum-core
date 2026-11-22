@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.1
+**Version:** 0.1.2
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -101,3 +101,23 @@ Programme relationships: source recovery **depends_on** the continuous-source ro
 Once a *single* complete candidate has been retrieved, freeze its execution environment and replay **only** the original P2 baseline with an independent checker and the prescribed negative controls. If source recovery is incomplete or multiple incompatible variants exist, preserve the uncertainty and stop rather than manufacturing a replacement.
 
 **ClickUp:** read-only parent `869dpg9hb` in workspace `90121717552` currently reports `to do`; no ClickUp status change. **No whitepaper promotion. No solver or running Lina EI Grid change.** No physical experiment was run, and the prior "all nine Git access regressions passed" claim has not yet been reproduced from the full current checkout as part of this P2 receipt.
+
+## 7. Checkpoint 2 — verified root outline, scope correction, and isolated access regressions (2026-11-22)
+
+**Version:** 0.1.2. This is a bounded **index and tool-policy verification**, not recovery of the P2 C0 executable or its baseline replay.
+
+With a second separate, source-pinned **read-only** Prcek host probe (command ID `lineum-p2-heading-index-20261122-b9k2`, HA response final `success/executed`, nested returncode **0**, empty stderr), the immutable 67 MB root file was scanned *line-by-line*, with no transfer of its contents through the mailbox. The exact header independently confirmed:
+
+- Root title: *Continuous Replenishment, Cosmological "Fuel," and Long-Horizon Lineum Dynamics*.
+- Root status: active standalone research report (its own wording, notwithstanding the later programme hierarchy).
+- Root version: **0.4.14**, evidence cutoff **2026-07-29**; these metadata are now **directly inspected from the root**, not merely cited via the recovery brief.
+- Text: **1,671,106 lines**; maximum raw line length **4,929,462 bytes**; **170** detected fenced-code delimiters; **38** broadly matched replay/runner mentions under the intentionally shallow lexical filter.
+- The bounded heading search showed **71** P2/C0/source/observer-related headings (first 55 returned); examples are P2.3 operator-audit programs, P2.4 standalone pilots and independent verifiers, P2.5 Fountain-accounting code and output, P2.6 multilevel code/output, P2.7 energy-ledger code/verifier, and P2.8 walking-droplet tests. Their presence confirms the root **contains real self-contained code and retained outputs**, but does **not** make any of those P2.3–P2.8 programmes identical to the earlier *P2 centered-only C0 source-off* schedule under investigation.
+
+**Important collision of labels:** `P2` appears as a generic experiment stage and as prefixes in many other named programmes (`P2.3`, `P2.4`, `P2.5`, `P2.6`, `P2.7`, `P2.8`). A filename/heading match on `P2` is **not proof of executable lineage**. Next search must target *C0 schedule through model time 20 and off through 60*, exact seeds and observer definitions. Do not replay another available P2.* pilot merely because it has code.
+
+The prior Git-access routing regression's **byte-exact** `scripts/agent_git_access_fallback.py` module was reconstructed in an isolated assistant runtime and checked by local `git hash-object` against the repository blob `6fdcaecc09db26d7d7680c69147e3a581cd213e1`. **Eight** logic tests mirroring the eight substantive scenario tests passed in `python -m unittest`; the ninth test's literal policy assertions were instead verified directly against the actual `.agent/rules.md` and existing test file through the GitHub connector: no expected policy token was missing. This is **not** a full checkout test run and **does not** verify the GitHub Actions job executed. The earlier blanket claim that all nine tests ran as a full suite before publication remains unsubstantiated.
+
+**Local verdict:** root recovered and independently verifiable **as bytes and headings**; exact C0 runner/observer/schedule and versioned output **still unresolved**; no A–F recovery classification, no original baseline replay and no new physics claim. The earlier header/size access blocker is now closed. The genuine scientific recovery gate remains open.
+
+**Next step frozen:** perform a narrowly bounded exact-text search of the now-accessible root for the C0 schedule, seed/observer and command/outcome indicators, preserving line numbers and source SHA; then inspect only relevant bounded sections. Record candidate identities and mismatches in this report before attempting any runnable-source package or historical-Git search. Observe the ~50-second host command limit. Never change the live Lina Grid, HA, source code or the proven root report during recovery.
