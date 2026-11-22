@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.11
+**Version:** 0.1.12
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -287,3 +287,22 @@ The scanner ran through the **same source-pinned 4,202,805-byte historical repor
 **Portable extraction specification (do not strip whitespace or normalize line endings):** obtain the source blob at historical ref `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1` and verify its Git blob hash. Extract raw bytes of exactly the numbered line ranges above using `b''.join(stream.readlines()[56069:59025])` for Python and `b''.join(stream.readlines()[59030:98202])` for JSON in one-indexed coordinates; verify the declared individual SHA-256 hashes before execution. (An implementation may stream instead of loading all lines; use the same raw ranges and no delimiter lines.) These numbers are frozen evidence identifiers, not permission to change source or fabricate missing files.
 
 **Next execution gate:** perform a **read-only static audit** of the 100,626-byte Python content (imports, compile check, entry point, exact declared seed stream, numerical configuration, observer contracts and expected output comparison) plus JSON shape/digests. Do not execute the complete 168-trajectory numerical programme until its expected runtime/resource load, dependency requirements and baseline comparison are reviewed and frozen. The root report is a historical source archive, not new Lineum physics code. No P2 long-horizon continuation or new scientific interpretation is authorized.
+
+## 17. Checkpoint 12 — independent static verification and dependency gate (2026-11-22)
+
+**Version:** 0.1.12. A fourth **read-only** historical P2 source probe (`lineum-p2-historic-static-audit-20261122-m2u6`) completed via the existing Prcek mailbox with **final** `success/executed`, nested `returncode=0`, empty stderr. The historical full blob was reverified: **4,202,805 bytes**, Git blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`. Both inline bodies were extracted using the frozen exact line ranges and independently SHA-256-verified at the **byte** level:
+
+- Executable Python: **100,626 bytes**, `76d99fdbedd494a1e4ee610d2b5d054d3a202dcd1ecb781a8d8ab3134174711a`.
+- Historical JSON output: **1,969,810 bytes**, `acccf7f612072739b6609e7dab3e56f60e07494d02f7893ff405b3dc511422f1`.
+
+**Static checks executed, not inferred:** `ast.parse(...)` **PASS**; `compile(...,'exec')` **PASS**; `json.loads(original_json)` **PASS**. No original simulation was executed.
+
+**Extracted executable dependencies:** Python standard library `hashlib`, `json`, `math`, `platform`, `dataclasses`; external `numpy`, `scipy`, `scipy.optimize.linear_sum_assignment`. The current Prcek host-default `python3` reported Python **3.12.3**, with NumPy **not importable** (`ModuleNotFoundError`); therefore full replay under that interpreter is **not executable in its observed present state**. This finding does not establish that another isolated environment on that host lacks NumPy/SciPy. **No packages were installed or environment modified**, and no Lina EI Grid process was touched.
+
+**Original code structure:** verified module AST exposes a `Config` class, `initial_state`, `source_components`, `backbone_step`, frozen v3-related topology/transport functions (`periodic_winding`, `spacetime_current`, `minimum_toroidal_transport`, `topology_metrics`), `run_lane`, `aggregate_lane`, `unit_controls`, `build_decision`, `build_result`, `main`, plus separate `p2_schedule_is_on`, `p2_random_draw_schedule`, `p2_source_components` and P2-specific helpers. **There is a module entrypoint**; exact execution gating is pending review. Literal source line `SEEDS = tuple(2026242000 + index for index in range(12))` at extracted Python line **31**, and `DT = 0.1` at line **28**. This provides independent cross-checks of seed count and timestep against Section 3.18.
+
+**Retained JSON envelope:** parseable top-level keys `decision`, `frozen_protocol`, `limitations`, `reconstruction_provenance`, `result_payload_sha256_before_hash_field`, `runtime`, `schema`, `source_results`, `unit_controls`. Critically, its `decision` holds `any_population_stable_overall_transport_candidate`, `any_population_stable_window_transport_signal`, `history_contrast_establishes_memory_mechanism`, `source_schedule_establishes_particle_identity`, `source_schedule_establishes_physical_fuel`, and explicit forbidden/permitted claims. This is a sophisticated **bounded negative/positive verdict structure**, not proof of a sustained individual particle.
+
+**Evidence state:** original source and output are **fully byte-located and syntactically valid**. The earlier claim that exact P2 original executable was unavailable is **superseded**; the currently **unmet** gate is an appropriate dependency/runtime setup, retained source/provenance contract review, independently checked output and baseline rerun. The root's historical Python/NumPy audit and replay environments (3.11.15/NumPy 1.26.4; 3.12.13/NumPy 2.3.5) must be distinguished from the present Prcek host-default Python 3.12.3 missing NumPy.
+
+**Next permitted action:** inspect **only small original JSON metadata and frozen-protocol fields**, the AST entrypoint/seed and source-schedule contracts, and environment availability of an **already existing isolated** interpreter that meets NumPy/SciPy requirements; do not install or disrupt packages on the live Grid host and do not execute a long 168-trajectory baseline without the original timing/correctness gate. If a safe local assistant runtime can receive the immutable source by a content-preserving authorized path, prefer that portable scientific environment. No A–F replay classification yet.
