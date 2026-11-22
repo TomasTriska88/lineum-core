@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.13
+**Version:** 0.1.14
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -329,3 +329,26 @@ The scanner ran through the **same source-pinned 4,202,805-byte historical repor
 **Source-quality correction:** Earlier in this report, the archived Python line **31** was quoted as if it alone defined the recovery's seeds. That value belongs to **P1**; the exact P2 seeds above are read from the original P2 JSON frozen protocol. Preserve both as distinct source families and confirm the P2 seed definition in the Python body on the next audit.
 
 **Next frozen check:** independently recompute the original JSON's `result_payload_sha256_before_hash_field` according to source `p2_main`, inspect `unit_controls.all_pass`, and cross-check only the C0 `formation_only_20` historical metrics against the previously reported rounded numbers. This is a standalone standard-library data-integrity test; it does **not** execute the simulator. Until executable dependencies and a safe isolated runner are available, no numerical replay or A/B recovery verdict is authorized.
+
+## 19. Checkpoint 14 — independent original-output self-hash verification (2026-11-22)
+
+**Version:** 0.1.14. Prcek read-only `lineum-p2-original-output-hash-20261122-c2n8`: final bridge response `success/executed`, nested returncode **0**, stderr empty. The full immutable original historical report, Python source and JSON artifact passed their previously pinned byte hashes before this verification.
+
+Independent standard-library hash check: parse the archived JSON output, **remove only** `result_payload_sha256_before_hash_field`, serialize the remaining object with the **original** source's `json.dumps(..., ensure_ascii=False, indent=2, sort_keys=True, allow_nan=False)`, SHA-256 hash the UTF-8 bytes, and compare with the archived field.
+
+```text
+OUTPUT_SELF_HASH_MATCH 1
+STORED      6545cdd908d879e61c8a1f4199673175e9aed445960e21ae6d230924c71b417a
+RECOMPUTED  6545cdd908d879e61c8a1f4199673175e9aed445960e21ae6d230924c71b417a
+CONTROL_ALL_PASS True
+```
+
+This verifies the self-consistency and current readability of the **historical result artifact**; it is **not** a fresh simulation or independent reproduction of its physics. `unit_controls.all_pass=True` is a flag **stored in the historical JSON** and was not re-evaluated by rerunning the programme.
+
+**Source exact seed reconciliation:** the original 100,626-byte Python body declares **`P2_SEEDS = tuple(2026245000 + index for index in range(12))`** at original extracted source line **1564**, independent of P1's separate line-31 `SEEDS`. The former was used in the P2 loop starting near line **2377** and the result payload near line **2832**.
+
+**JSON nesting:** `source_results.C0_centered_only` contains keys `cross_schedule_analysis` and `schedule_results`. The expected individual `formation_only_20` block is therefore **under** `source_results.C0_centered_only.schedule_results.formation_only_20`, **not** directly under `source_results.C0_centered_only`. A first direct lookup returned `{}`; this is a path mistake in the inspection helper, **not** a missing original baseline. It must be corrected before any numerical comparison or report promotion.
+
+**Dependency/verification state:** the complete source, frozen P2 protocol, original 168-trajectory output, and output payload SHA-256 are now independently **integrity-verified**. **Replay remains unexecuted** because the default Prcek interpreter lacks NumPy and the safe isolated computation path has not yet been prepared. The local assistant container has Python **3.13.5**, NumPy **2.3.5**, and SciPy **1.17.0**, but does not yet have the byte-faithful original 100KB source artifact; no scientific equivalence across these versions is assumed.
+
+**Next exact step:** read the **correctly nested** C0 formation-only schedule summary and archived independent unit-control details; compare all reported targets without refitting; then decide a safe isolated runtime for the exact original baseline. Do not launch new long-horizon or particle-claim experiments from a hash check.
