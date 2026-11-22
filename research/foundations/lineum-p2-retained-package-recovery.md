@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.10
+**Version:** 0.1.11
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -268,3 +268,22 @@ Direct technical anchors from the immutable source:
 **Critical source correction:** This is now a substantially more complete recovery than mere narrative source location. The full original test and its machine-readable output **appear to be preserved together** in a versioned 4.2 MB historical report. Exact boundaries, extraction, code SHA, verifier pairing, output hashes and reproducing commands still need independent verification. Do not conclude replay success or top-level `A` yet.
 
 **Next exact permitted step:** inspect the original Appendix P's bounded fence/section layout, locate the full standalone Python code, embedded JSON output and independent verifier with exact line intervals and digests. Extract byte-faithfully into *isolated* safe local files or an approved reproducibility runner, compare its declared parameters and dependency constraints with the frozen Section 3.18 contract, and run historical baseline only after existing source tests and preregistered replay gates pass. No new horizon, physics patch, output tuning or whitepaper promotion.
+
+## 16. Checkpoint 11 — exact embedded executable and original output blocks isolated (2026-11-22)
+
+**Version:** 0.1.11. Independent immutable source **full-blob verification** plus streamed Markdown code-fence indexing on Prcek (`lineum-p2-history-fence-index-20261122-k8q1`): final mailbox result `success/executed`, nested host `returncode=0`, empty stderr, `BLOB_OK 1` against Git blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d` at `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1`.
+
+**Appendix P starts at line 56031 and consists of exactly two closed fenced artifacts:**
+
+| Role | Markdown fence | Excluded delimiters / included body | Preserved exact body size | Independent SHA-256 of raw code/body bytes |
+| --- | --- | --- | ---: | --- |
+| Standalone P2 executable | opening `\`\`\`python` line **56069**, closing line **59026** | lines **56070–59025**, inclusive, **2,956** content lines | **100,626 bytes** | `76d99fdbedd494a1e4ee610d2b5d054d3a202dcd1ecb781a8d8ab3134174711a` |
+| P2 original full machine-readable output | opening `\`\`\`json` line **59030**, closing line **98203** | lines **59031–98202**, inclusive, **39,172** content lines | **1,969,810 bytes** | `acccf7f612072739b6609e7dab3e56f60e07494d02f7893ff405b3dc511422f1` |
+
+The scanner ran through the **same source-pinned 4,202,805-byte historical report** and counted exactly **two** closed code fences after line 56031, with **no unterminated fence**. The Python block opens with a standalone P2 source-scheduling/recovery audit docstring. The JSON block begins with a `decision` object that includes `any_population_stable_overall_transport_candidate: false`, a crucial **negative**: it is not a blanket claim that a stable particle exists.
+
+**Major recovery milestone:** exact original executable **and** its full historical output are **present, immutable and byte-addressable in the same Git history object**. The former concern that only narrative P2 summaries survived is resolved. **This is not yet a successful replay.** Code imports, full reproducibility parameters, seed indexing, frozen observer, whether a separately executable independent checker exists, environment, and current replay comparability still require explicit inspection; the JSON output has not yet passed a present-day independent verifier.
+
+**Portable extraction specification (do not strip whitespace or normalize line endings):** obtain the source blob at historical ref `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1` and verify its Git blob hash. Extract raw bytes of exactly the numbered line ranges above using `b''.join(stream.readlines()[56069:59025])` for Python and `b''.join(stream.readlines()[59030:98202])` for JSON in one-indexed coordinates; verify the declared individual SHA-256 hashes before execution. (An implementation may stream instead of loading all lines; use the same raw ranges and no delimiter lines.) These numbers are frozen evidence identifiers, not permission to change source or fabricate missing files.
+
+**Next execution gate:** perform a **read-only static audit** of the 100,626-byte Python content (imports, compile check, entry point, exact declared seed stream, numerical configuration, observer contracts and expected output comparison) plus JSON shape/digests. Do not execute the complete 168-trajectory numerical programme until its expected runtime/resource load, dependency requirements and baseline comparison are reviewed and frozen. The root report is a historical source archive, not new Lineum physics code. No P2 long-horizon continuation or new scientific interpretation is authorized.
