@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.5
+**Version:** 0.1.6
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -172,3 +172,20 @@ The only inspected file in this batch containing all of `20.5232`, `0.941535` an
 Three other inspected files contained only broad `source-off` wording rather than the unique target metric pair: `research/foundations/lineum-ancient-texts-dynamic-boundary-protocol-and-reconstruction-hypotheses.md` (blob `07f75308c45733fe68075ffca1b6517a164c2c0e`), `research/foundations/lineum-collective-member-turnover-protocol-fixture.md` (blob `25ebd303bc8ac4a66cc53439c1cfbaec8d8ba048`) and `research/foundations/lineum-core-active-growth-scaffold-repair-matrix.md` (blob `1569be5867da8377d2a09c69147d0bffd9594703`). A `source-off` mention is **not** proof of the target P2 executable.
 
 **Result:** further corroboration that later 2026-07-31 descendants report the C0 numbers, while **none of the first 32 inspected small research files supplied an original P2 runner**. This is **not** an exhaustive absence verdict. **Next action:** continue the remaining 157 current text candidates in small, source-pinned read-only batches; then inspect version history and candidate executable references. Record each materially new source finding here before deciding on replay. No equations, code, whitepapers, Lina runtime or new simulations were modified.
+
+## 11. Checkpoint 6 — all 189 bounded current research text candidates inventoried (2026-11-22)
+
+**Version:** 0.1.6. The previous incomplete bulk call was replaced by **twelve bounded batches** (eleven of 16 files and one of 13), each using read-only `fetch_file` on the **immutable** source-tree commit `8f1b94445d34d43a4bbc1ba6930b84d229fbcbdd`. All **189/189** lexically sorted `research/` blob paths matching `*.md, *.py, *.json, *.txt` and `size < 400000` bytes were fetched and scanned; **0** per-file fetch failures. Tree inventory: **1,265 entries**, `truncated=false`. The large root report (67,002,835 bytes) was independently and fully hash-checked and lexically scanned through the Prcek read-only bridge in Checkpoints 1–3; it was deliberately excluded from the small-file connector inventory.
+
+**Where exact target values are repeated among those 189 current research files:**
+
+- Decision synthesis: `research/foundations/lineum-root-programme-cross-branch-priority-review.md` (blob `9b1217f4757d2f0a9fb566284a91ac7e5a3c010d`) and `research/foundations/lineum-root-programme-continuity-and-impact-ledger.md` (`5304874451caf32313ad0e8e3c59e53958698d79`).
+- Later hypothesis/preregistration: `research/foundations/lineum-collective-vortex-particle-identity-preregistration.md` (`3c84624ed0a0bd961d7e344a3629761c2d8b2fc0`) and `research/foundations/lineum-core-envelope-wake-and-attraction-preregistration.md` (`621cc5f9147dde4a3819e9fc2d3febe05e387cf8`).
+- Recovery instructions and receipts: `research/foundations/lineum-p2-retained-package-recovery-brief.md` (`7d2ecd83812e5c6446c694f7505839c18aa94153`) and this recovery report (snapshot blob `74dd1ee2f156eae7d2515c760d490e2245ad054b`, then amended).
+- Independent **later recovery audit**: `research/linon-collision-dynamics.md` (blob `79f7b4c65cd62074f3fa546219997487a482dc89`) repeats `20.5232` and the centered-only C0 story in a provenance section. It records that an intermediate root at commit `d2a144e12f077d0dd7df3c127f11ee890cfad87a` / 62,462,594 bytes had **none** of several key C0 numerical fingerprints, and that a later large root increment at `729e1f40ee268e6811e4d14f1b5efc1f0ce8b2e9` had been **unreviewed due to tool size limits**. Our new, hash-confirmed complete latest-root scan now independently resolves that older *access uncertainty* for the exact literals: they remain absent even in the current final 67MB root blob.
+
+Other scanned files sometimes contain generic `source-off`, `C0` or `centered-only` wording without the unique target metric pair, but wording alone cannot establish execution lineage. In particular, the known `P2.3–P2.8` root experiments are different protocol families and cannot replace the target P2 C0 source-schedule.
+
+**Verdict of the bounded current research text search:** exact P2 C0 metrics survive as **later claims/summaries**; no **matching original P2 executable plus v3 observer and preserved output** has been identified by this numerical-fingerprint/terminology search. This is **not** proof that no original runner exists: a runner need not include outcome numbers, can be renamed, encoded in a historical Git object, live in `tests/` or `scripts/` outside `research/`, be larger than the selected size threshold, or be unversioned.
+
+**Remaining A–F recovery prerequisites:** inspect all current eligible `tests/` and `scripts/` code for source schedules and observer definitions, then historical Git commits, deleted/renamed files, relevant branches, run instructions and source/output hashes. Replay only after exact code, observer, RNG, schedule, environment and saved expected output are found. There is **no completed A–F verdict**, no new Lineum physics run, and no authorization to infer particle identity or long-horizon stability.
