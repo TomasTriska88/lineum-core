@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.23
+**Version:** 0.1.24
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -572,3 +572,31 @@ DOWNLOAD_HOST=files.pythonhosted.org
 **Fixed execution and failure gate:** query the already read official PyPI release JSON solely to resolve the URL for this **exact unique filename**, requiring the same pre-frozen 17,950,613-byte size, SHA-256 and `files.pythonhosted.org` HTTPS host. Download into a uniquely created `TemporaryDirectory` under `/tmp` (never production paths); enforce SHA-256 before unpacking; inspect wheel path names and total expanded size; extract only there; then launch **one** isolated, low-priority `python3 -I` child with that temp directory inserted into `sys.path`. It must report `numpy.__version__ == '1.26.4'` and independently execute **only** the already declared 600-pair source-ordered RNG hash for P2 seed `2026245000`; compare against original `e86d4ff0...`, retaining mismatches. Explicitly cap the host command (<42 sec), child (<10 sec), no GPU, one BLAS thread; recover an error if import, checksum, download or resource guard fails. Cleanup applies **only to the newly created temporary directory**, even on exception. This is **no persistent pip/venv/system install, no HA or Lina write, no full P2 solver run**. On timeout do not assume that cleanup completed; verify before any replay or deletion. No project code or whitepaper modification is authorized from this runtime compatibility test.
 
 **Interpretation:** An exact NumPy 1.26.4 match would show that the *legacy RNG test's* archived SHA is reproducible under CPython 3.12.3, without proving the old complete simulator or explaining which individual software/library change causes the NumPy 2.3.5 mismatch. Failure remains a result and blocks premature physics replay.
+
+## 29. Checkpoint 24 — original NumPy 1.26.4 compatibility test MISMATCHES archive AND NumPy 2.3.5 (2026-11-22)
+
+**Report version:** 0.1.24. This is the executed result of the frozen Checkpoint 23 isolated-wheel test, recorded **before** selecting another explanation or numeric run. **Not a physics-solver replay.**
+
+**Live-host safety and exact outcome:** Prcek bridge command `lineum-p2-np126-isolated-rng-20261122-q6w9` was executed once. A matching final `HA_RESPONSES` result captured **nested host returncode 7**, which is the *intentional comparison-failed exit status from the child* and therefore **not PASS**. stderr empty. The response was:
+
+```text
+WHEEL_IDENTITY_OK 1
+WHEEL_SHA_OK 1 BYTES 17950613
+CHILD_RC 7
+CHILD_STDOUT NUMPY 1.26.4;RNG_SHA256 fffdcf960b5593cbb484d175c6d7f8d825eedfd24fd1b133cac52b9242e7579c;ARCHIVED_MATCH 0;NUMPY2_MATCH 0
+TEMP_CLEANED 1
+```
+
+**External source and package boundary:** official PyPI NumPy `1.26.4` CPython **3.12** / x86_64 / glibc≥2.17 wheel named `numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`; **17,950,613 bytes**; verified wheel SHA-256 `675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed` (match to predeclared official PyPI metadata before unpacking). The binary was **not installed into system Python, any venv, Lina EI, HA, or the repository**: it was unpacked to a uniquely created, self-cleaning `TemporaryDirectory` under `/tmp`; child CPython 3.12.3 used `python3 -I` and explicit temporary `sys.path`, one BLAS thread, low host priority. It only generated and hashed the predeclared **600** pairs of 32×32 NumPy RandomState arrays from the same P2 seed, with no field simulation. The host reported `TEMP_CLEANED 1` and no production service or Grid change was issued.
+
+**All three immutable audit hash comparisons now differ:**
+
+| Runtime | SHA-256 over 600 uniform/Gaussian pairs | Comparison |
+| --- | --- | --- |
+| Historical Appendix P **reported** CPython **3.11.15**, NumPy **1.26.4** | `e86d4ff0c713c8d0508e77307c1d9fbaa38b6a32c7c8c6d4b4df7a8576b17a9a` | **archive reference, not current rerun** |
+| Isolated assistant CPython **3.13.5**, NumPy **2.3.5** | `dafad62555fdc0d39788d4aa597a27b8c161ed3aee5e80c70679e7a4feb52607` | **not equal to archive** |
+| Isolated official-wheel CPython **3.12.3**, NumPy **1.26.4** | `fffdcf960b5593cbb484d175c6d7f8d825eedfd24fd1b133cac52b9242e7579c` | **not equal to either** |
+
+**Inference strictly limited:** the source-ordered current NumPy 2.3.5 stream is reproducible within its own tested runtime (two independent buffering variants, plus original function), but the SHA also fails to match the certified official NumPy 1.26.4 wheel under CPython3.12.3. Therefore **NumPy 1.26.4 version alone is not sufficient** to reproduce the historic archive in the current CPython 3.12 / Linux host test. The cause is not yet identified; differences may arise from Python/NumPy binary builds, distribution-specific floating-point behavior, a historical source-versus-output mismatch, or another provenance condition. A SHA mismatch alone does **not quantify** how much the underlying random numbers differ, and does not falsify historical P2 field physics. The archive's historical `unit_controls.all_pass=True` remains *historical metadata*, not confirmed by a present-day binary environment.
+
+**Hard gate:** do **not** execute the 168-trajectory original P2 field simulator or extend its source-off horizon while the original RNG receipt is irreconcilable. The next bounded discriminator should inspect the first uniform and Gaussian floating-point samples (separately and with original code) under the two current runtimes to determine whether discrepancies begin at the very first values or arise from microscopic float rounding; then, only if necessary, obtain the actual archived CPython **3.11.15** environment or an independently SHA-verified wheel/runtime provenance. Any necessary Prcek check must remain isolated, short and non-persistent; no heavy solver or live Grid action. **No A–F replay classification**, no code/whitepaper promotion, ClickUp read-only/unsynchronized.
