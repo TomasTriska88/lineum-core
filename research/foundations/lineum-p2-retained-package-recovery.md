@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.22
+**Version:** 0.1.23
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -555,3 +555,20 @@ PROBE_END
 **Third-party intake:** official NumPy `1.26.4` from https://pypi.org/project/numpy/1.26.4/ ; public source and BSD-style NumPy license with bundled wheel notices, no republication, vendoring, derivative-code import or Core dependency change. This execution would only use its binary to discriminate NumPy-runtime stream compatibility. Treat all downloaded binary code as untrusted until official checksum and filename/platform selection pass.
 
 **Scientific outcome gate unchanged:** compare one exact raw-byte `RandomState(2026245000)` 600-frame hash against original archive `e86d4ff0...` and current NumPy2.3.5 `dafad625...`. Report **PASS**, **MISMATCH** or **TECHNICAL BLOCKER** separately; do not call the complete P2 physics replay verified. Next action: read-only wheel metadata and interpreter ABI probe, then freeze the wheel SHA in this report before any download/execution.
+
+## 28. Checkpoint 23 — official wheel identity pre-frozen before temporary execution (2026-11-22)
+
+**Report version:** 0.1.23. A further short, **read-only** PyPI metadata / host ABI probe completed on Prcek through the existing bridge under command `lineum-p2-numpy126-wheel-meta-20261122-m8s2` with matching final success, nested rc **0**, empty stderr. No external binary downloaded or executed yet.
+
+```text
+HOST_ABI=CPython 3.12.3, x86_64, glibc 2.39
+OFFICIAL_MATCHING_NUMPY_1.26.4_WHEELS=1
+FILENAME=numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+WHEEL_BYTES=17950613
+WHEEL_SHA256=675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed
+DOWNLOAD_HOST=files.pythonhosted.org
+```
+
+**Fixed execution and failure gate:** query the already read official PyPI release JSON solely to resolve the URL for this **exact unique filename**, requiring the same pre-frozen 17,950,613-byte size, SHA-256 and `files.pythonhosted.org` HTTPS host. Download into a uniquely created `TemporaryDirectory` under `/tmp` (never production paths); enforce SHA-256 before unpacking; inspect wheel path names and total expanded size; extract only there; then launch **one** isolated, low-priority `python3 -I` child with that temp directory inserted into `sys.path`. It must report `numpy.__version__ == '1.26.4'` and independently execute **only** the already declared 600-pair source-ordered RNG hash for P2 seed `2026245000`; compare against original `e86d4ff0...`, retaining mismatches. Explicitly cap the host command (<42 sec), child (<10 sec), no GPU, one BLAS thread; recover an error if import, checksum, download or resource guard fails. Cleanup applies **only to the newly created temporary directory**, even on exception. This is **no persistent pip/venv/system install, no HA or Lina write, no full P2 solver run**. On timeout do not assume that cleanup completed; verify before any replay or deletion. No project code or whitepaper modification is authorized from this runtime compatibility test.
+
+**Interpretation:** An exact NumPy 1.26.4 match would show that the *legacy RNG test's* archived SHA is reproducible under CPython 3.12.3, without proving the old complete simulator or explaining which individual software/library change causes the NumPy 2.3.5 mismatch. Failure remains a result and blocks premature physics replay.
