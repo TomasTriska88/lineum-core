@@ -1,7 +1,7 @@
 # Prime-fraction geometry, wave descriptions, and Riemann-zero spacings in Lineum
 
 **Status:** active (preregistered, not validated)  
-**Version:** 0.1.3  
+**Version:** 0.1.4  
 **Evidence cutoff:** 2026-11-22  
 **Programme membership:** standalone; no inherited root programme is asserted  
 **Repository / branch at registration:** `TomasTriska88/lineum-core` / `develop`  
@@ -333,3 +333,51 @@ for shift in nonzero:
 7. **Next permitted action:** wait for the owner's answer to the mapping question; then freeze its operational interpretation and the smallest fair discriminator (including non-prime/composite and shuffled controls) as the next report version, without modifying Lineum engine code or canonical whitepapers.
 
 **Research integrity:** this result is the expected consequence of an explicitly constructed prime mask and is entirely consistent with pre-existing literature on visible lattice points and diffraction. It does not establish the existence of a naturally prime-coded geometric carrier in the physical universe.
+
+## Checkpoint 3 — the November 2026 AI-assisted RH proof, source audit and Lineum-first decision
+
+**Report version:** 0.1.4; **evidence cutoff:** 2026-11-22, after 04:35 UTC.  
+**Status:** documented source verification and research direction decision; *no new mathematical, Lineum-simulation, or formal proof execution in this checkpoint*.
+
+### Owner answer to the previous intuition gate
+
+The owner **does not have a concrete rule** that maps a 2D prime-grid displacement to a particular 1D zeta-zero gap. The owner's requirement is explicit: **research must benefit the Lineum engine itself**, and the original news article about the Anthropic/Claude Riemann-hypothesis proof must remain part of the evidence base. The earlier external prime-grid presentation is a possible arithmetic/geometric reference, **not the controlling research objective**. This answer resolves the prior owner question without manufacturing a geometric mapping or treating the absence of one as owner failure.
+
+**Decision:** retain G0/G1 as dormant, explicitly unresolved *candidate* mathematical mappings; discontinue unguided searching for visually impressive prime-grid/zero alignments. Refocus on non-circular, source-blind **Lineum-native** observables after the already declared causal-physics prerequisite. Do not change the current equation or reopen previously falsified RZ-0/RZ-1 operators from analogy alone.
+
+### Mandatory external source intake: original news, released proof, independent verification
+
+1. **Original requested Czech news source:** Root.cz, "Matematik z Anthropicu s pomocí AI údajně dokázal Riemannovu hypotézu," https://www.root.cz/zpravicky/matematik-z-anthropicu-s-pomoci-ai-udajne-dokazal-riemannovu-hypotezu/ . Inspected on 2026-11-22 through its search-indexed headline and excerpt; direct full article fetch was not accessible. The indexed report says Levent Alpöge announced a Claude-assisted proof and that independent verification remained outstanding **at the time of the article**. Its cautious headline must not be mistaken for the status on 22 November.
+2. **Author announcement:** Levent Alpöge, *A remark*, 2026-11-20, https://alpo.ge/remark.pdf . Public primary source identified and independently reported; the formal proof is distributed as a large Lean archive linked by the author. No source archive has been downloaded, imported, modified or independently checked in Lineum. The reported extension covers the generalized Riemann hypothesis for **Dirichlet L-functions**, not every conceivable automorphic L-function.
+3. **Current authoritative verification:** Lean and Mathlib communities, "Lean verification of the Riemann Hypothesis," joint statement **2026-11-21 13:55**, https://leanprover-community.github.io/blog/posts/riemann-hypothesis/ . They explicitly certify the statement and proof, reporting: a correct Mathlib RH target; successful compilation of the large Lean development; independent tools verifying that the proved statement matches Mathlib's RH; acceptance of the raw proof by multiple independently implemented checkers. This is stronger evidence than the older unverified-news framing. We have inspected the *statement of verification*, not reproduced its computation ourselves.
+4. **Independent technical receipt:** Andrew Sutherland (MIT), "RH Lean proof: verification files," updated **2026-11-22 04:35 UTC**, https://math.mit.edu/~drew/grh/ . Reports 175,187 modules compiling, only three standard foundational axioms, independent kernel checks (`nanoda`, `con-leche`), successful theorem-statement comparison, and a byte-identical proof export from an independent sandboxed build. It also lists several long-running additional checks and a nondeterministic naming artifact in one compiled module that does **not** affect the proof export. This is an audit by the named independent investigators, not a run by Lineum.
+5. **Human-readable, still-developing exposition:** Michael Rubinstein and collaborators, "The Alpöge–Claude proof of the Riemann hypothesis explained for the Riemann zeta function," working draft **2026-11-21**, https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf . The document explains the path from an arithmetic inequality involving primes to the RH and clearly labels substantial subarguments that are still *quoted* from the certified Lean code rather than independently established in its prose. An incomplete human-language exposition does not negate the separately checked formal proof.
+
+**License/provenance boundary:** All five are publicly accessible sources (the full Root article was not directly retrievable). The original slide presentation and source-code archive have **no established republication license in this review**; the news article and proof text are also not licensed for copying here. Permitted use in this report: independently formulated public factual review, external citations, and methodological comparison. Explicitly excluded: storing third-party news/proof/Lean files, copying distinctive technical code, reprinting slides, or implying that permission follows from public availability. No external binary or complete source document was retained, so a retained-file hash is **not applicable**. Target: this public `lineum-core` research report only. External licence, trademark, priority, and attribution issues remain open for any future copying or implementation reuse.
+
+### What the proof establishes and what it does NOT establish for Lineum
+
+**Formal mathematics, independently certified:** the nontrivial zeros of the Riemann zeta function have real part 1/2 (for the precisely stated Mathlib theorem); the Lean archive also contains separately checked Dirichlet-L generalizations. These mathematical results now have much stronger independent verification than was available to the earlier Root.cz article.
+
+**Not established by RH itself:** exact individual spacings between zero ordinates, a particular GUE/random-matrix statistical law, a geometrical packing of the author's prime-grid fractions into zeta-zero gaps, a physical wave carrier, or any connection to Lineum field dynamics. A theorem about **where zeros lie horizontally** is not a theorem about **how far apart consecutive zeros are vertically**. Historical spectral-overlap negatives in the Lineum whitepapers are therefore **not overturned** by certification of RH.
+
+**Reasonably transferable research method, NOT an imported physics mechanism:** isolate the exact proposition; check whether measurements correspond to that proposition; verify relevant algebraic invariants independently; compare against controls and inspect whether a result merely reflects the construction. The proof literature's use of rank, trace, inequalities, bounds and exact statement matching motivates a measurement protocol, but **does not authorize copying the 17-million-line Lean development or claiming that these quantities are physically explanatory for Lineum**.
+
+### Practical Lineum benefit and decision hierarchy
+
+**Priority A — correctness of the engine's own predictions:** only a Lineum-native signal can establish a mechanism. Use a controlled comparison of the current slow `phi` state against zeroed/reset, frozen and spatially shuffled `phi`, with the fast field held fixed, and compare conservation/source accounting and persistence. This tests whether the internal physics carries reproducible information, which is useful to Lineum **even if no Riemann connection exists**.
+
+**Priority B — if A yields a bounded result:** audit a rank/trace/spectral diagnostic *derived solely from actual Lineum trajectories*, with exact definitions, blinded choices, synthetic checks, shuffled and appropriate random-matrix controls, and scale/seed robustness. Its value is to distinguish genuine dynamics from observer artifacts; zeta-zero comparisons remain **held out**.
+
+**Priority C — optional arithmetic bridge only after B:** test predeclared fraction-grid, `log(p)`, and zero-gap predictions as *external benchmarks*, with composite-modulus, base-change and randomized controls. A visual match, high correlation of sorted data, or the newly certified mathematical RH is **not** enough to promote a physical claim.
+
+**Task and authorization gate:** on 2026-11-22, read-only ClickUp task `869ek96jb` ("Preflight: Lineum-native rank–trace spectral audit") remained **to do** with an explicit condition: do not start until the slow-medium causal `phi` ablation P4 in `869dpg9hb` has a bounded result. The parent `869dpg9hb` also displayed **to do**; this is *not by itself a proof* that its particular P4 substep is incomplete, but completion of the prerequisite was **not verified**. No scored Lineum run, task update, or change to task priority is authorized by this source audit. `ClickUp mode = read-only / no synchronization write`.
+
+### Evidence classification, contradiction ledger and next permitted action
+
+- **Source finding:** independently published Lean and Mathlib certification supersedes the Root article's early "not yet independently checked" wording *as of 21 November 2026*. This is an external mathematical result, **not** a Lineum experimental outcome.
+- **Previously retained toy grid results:** still arithmetically true, but do not establish novelty or relevance to RH zero spacing. The earlier direct fraction-to-gap gate remains unresolved, not disproven for all mechanisms.
+- **Owner reply:** no concrete geometric mapping; do not ask the owner to invent one. Shift attention to testable, useful Lineum-native behavior and retain the article as a permanent cited source.
+- **Existing negative evidence:** `whitepapers/3-ontology/hypotheses/03-ontology-hyp-zeta-resonance.md` and `whitepapers/2-cosmology/hypotheses/06-cosmo-hyp-law-transition.md` remain negative/quarantined for tested zeta-alignment formulations. No whitepaper claims or engine code are promoted from this checkpoint.
+- **Next permitted action:** retrieve the precise P4 `phi` ablation result, if it has since been recorded in the canonical Lineum report/task; verify its input/output/checkers and prerequisites. If absent, support that existing causal programme rather than initiating a premature Riemann spectral run. If present and independently checked, preregister a narrowly scoped Lineum-native rank/trace preflight under the already existing ClickUp task. The external prime-grid and verified RH remain reference/control evidence, not input data injected into the solver.
+- **No new experiments, tests, Lean proof checks or production changes** in this checkpoint; only primary-source verification, current task-state reads and Git documentation. Full repository tests were not run for this documentation-only amendment.
