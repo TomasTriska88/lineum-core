@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.15
+**Version:** 0.1.16
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -371,3 +371,17 @@ The **archived** C0 formation-only summary at the correct path contains:
 **Interpretation:** the late source-off C0 multi-defect signal is now anchored in an intact first-party program **and** its exact original machine-readable output, rather than secondary prose. This resolves the source-recovery part of the prior execution blocker, but does **not** reproduce or validate the old run in a modern environment. The fixed-horizon result is compatible with a decaying remnant; no single-object identity or physical energy claim follows.
 
 **Gate and immediate next step:** check the original report's precise run-environment declaration and any already available isolated execution environment. If the required dependencies are missing, report the gap rather than installing packages or running heavy experiments on the live Prcek host. A complete baseline replay must use exact P2 source and frozen input contract, execute existing checks, preserve stdout and output hashes, compare archived output independently, and never re-use unrelated P1 seeds. No A–F verdict yet.
+
+## 21. Checkpoint 16 — preregistered execution-route and P2 schedule check (2026-11-22)
+
+**Report version:** 0.1.16. **Question:** Can the *unaltered original* P2 scheduler be executed in an isolated portable standard-library-only runtime and shown to match the archived seven schedule-duration and seed contracts? This is a preparatory **control/contract regression**, not replay of the 168-trajectory physics experiment.
+
+**Frozen inputs (before this check):** Historical first-party `lineum-physics-philosophy-validation.md` blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`, commit `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1`, embedded Python SHA-256 `76d99fdbedd494a1e4ee610d2b5d054d3a202dcd1ecb781a8d8ab3134174711a` and JSON SHA-256 `acccf7f612072739b6609e7dab3e56f60e07494d02f7893ff405b3dc511422f1`. The exact function `p2_schedule_is_on` is embedded at extracted Python source lines **1592–1608**. The archived JSON has `frozen_protocol.schedules` and P2-specific seeds `2026245000…2026245011`.
+
+**Method to run now:** (1) copy only that complete source function *verbatim* into the local isolated assistant scratch environment and check syntax, not a translated or refitted version; (2) execute it for all steps `0…599` in each of the **seven original schedule names**; (3) independently compare each count to the archived JSON's `on_steps`, verify their stated `on_time=on_steps×0.1`, confirm the two original source families imply `2×7×12=168` declared trajectories, and check the expected boundaries `199/200, 299/300, 399/400, 49/50`. Freeze all labels and windows before seeing a result. Any discrepancy is a contract failure and **must not** trigger parameter tuning.
+
+**Prcek environment probe, separate from science:** The existing read-only, short host route `lineum-p2-isolated-env-probe-20261122-z7t4` completed with final `HA_RESPONSES`, nested rc **0**, empty stderr. It tested explicit common interpreter locations without modifying any files: only `/usr/bin/python3` was present among the selected locations, reporting **Python 3.12.3, NumPy absent, SciPy absent**. A point-in-time OS availability probe returned **4 CPU cores** and `MemAvailable=4,460,504 KiB`. These checks **do not exhaustively rule out every venv** and are **not permission** to run CPU-heavy research on the live single-owner Lina host. No packages were installed, the running Grid and HA configuration were not touched.
+
+**Execution safety:** Portable arithmetic/function controls belong in the assistant's isolated runtime, **not** in a new production HA service, production Lina Grid, or a 168-run experiment on Prcek. No numerical engine simulation, canonical code modification, or whitepaper promotion is permitted from this check. Subsequent original 168-trajectory replay still requires exact dependencies, resource bounds and independently compared output; preserve the existing historical negative decision `any_population_stable_overall_transport_candidate=false`.
+
+**Expected outcomes by archived schedule:** `never_on=0`, `always_on=600`, `formation_only_20=200`, `continuous_dose_30=300`, `gap_restart_20_40=400`, `late_only_40=200`, `pulse_5_on_5_off=300`. These values are **predictions copied from the frozen archive**, not numbers measured by a new run. Next checkpoint must report exact pass/fail counts, interpreter identity, source-extraction limitations and blockers before any further experiment.
