@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.0
+**Version:** 0.1.1
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -42,7 +42,7 @@ The request streamed the raw public file from the commit-pinned URL
 
 `https://raw.githubusercontent.com/TomasTriska88/lineum-core/093ec378164d190183332f6cff24023e24691f23/research/foundations/lineum-continuous-source-cosmology-validation.md`
 
-through Python standard-library `urllib.request` on Prcek in 131,072-byte blocks, without transmitting the 67 MB contents through the Google Sheets mailbox and without altering the running Grid. SHA-1 was calculated as a **Git blob**, i.e. `SHA1(b"blob " + str(size).encode() + b"\\0" + full_bytes)`, not as the bare file SHA-1. Thus byte count and exact immutable repository blob identity both match.
+through Python standard-library `urllib.request` on Prcek in 131,072-byte blocks, without transmitting the 67 MB contents through the Google Sheets mailbox and without altering the running Grid. SHA-1 was calculated as a **Git blob**, i.e. `SHA1(b"blob " + str(size).encode() + b"\0" + full_bytes)`, not as the bare file SHA-1. Thus byte count and exact immutable repository blob identity both match.
 
 **Interpretation:** this definitively resolves the earlier **large-file transport/integrity access limitation** for this specific historical blob on Prcek. It does **not** identify an executable P2 runner, establish an exact P2 observer, recover the complete source schedule, verify model outputs, or prove an available Git write path. Token occurrences are lexical counts only, not evidence that a complete runnable package exists.
 
@@ -77,7 +77,7 @@ expected = "3fba3925553cd5596e46c02fa35d1db91523537d"
 url = ("https://raw.githubusercontent.com/TomasTriska88/lineum-core/"
        "093ec378164d190183332f6cff24023e24691f23/"
        "research/foundations/lineum-continuous-source-cosmology-validation.md")
-digest = hashlib.sha1(("blob " + str(size) + "\\0").encode())
+digest = hashlib.sha1(("blob " + str(size) + "\0").encode())
 count = 0
 with urllib.request.urlopen(url, timeout=20) as response:
     assert response.status == 200
