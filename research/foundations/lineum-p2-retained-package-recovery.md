@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.9
+**Version:** 0.1.10
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -252,3 +252,19 @@ A small targeted sample of the current permanent `scripts/` and `tests/` source 
 **Operational outcome:** `historical_primary_P2_source_found`; runnable package `not_yet_fully_extracted`; **no A–F top-level replay classification yet**; no simulation or engine change.
 
 **Next permitted action:** locate the historical **16th P2 code, independent verifier, full machine-readable output, embedded expected digests, and execution/reproduction command**, ideally by source-pinned heading and code-fence indexing in the historical report; extract only bounded exact sections with line numbers and keep any original scripts in permanent readable evidence if required. Execute a baseline only after source, observer, RNG, schedule, environment and expected output are fully pinned, and after the existing tests. Do not manufacture a new P2 from the written formulas.
+
+## 15. Checkpoint 10 — full original P2 audit located in historical Appendix P (2026-11-22)
+
+**Version:** 0.1.10. The third source-pinned, **read-only** Prcek scan of `lineum-physics-philosophy-validation.md` at historical commit `09f59c9eaf5bb31c32b571b5c1c03f072d6240d1`, blob `cefa63c8007667481122a2b6df7dd3fb6f5aaf0d`, again returned `BLOB_OK 1` with nested returncode **0** (`lineum-p2-history-appendix-index-20261122-j5a2`). **The source report contains not only P2 prose and metrics but an explicitly named, standalone *P2 Source-Schedule and Recovery Audit* in `## Appendix P` starting at line `56031`.**
+
+Direct technical anchors from the immutable source:
+
+- `### 3.18 P2 finds a source-off multi-defect remnant and a history-gated F0 restart, not a particle` starts at **line 1909**; the original outcome-limitation subsection starts line **2098**.
+- `## Appendix M — Conserved Topological-Transport Feasibility Audit` starts at **line 33837**; `## Appendix N — Pump, Fuel, and Field-Process Hypothesis Audit` at **41803**; `## Appendix O — P1 Pump-by-Randomness Factorial` at **42509**.
+- **`## Appendix P — P2 Source-Schedule and Recovery Audit` begins at line 56031**; its introduction near **56070** identifies a **standalone P2 audit of source scheduling and recovery**.
+- Retained P2 output near **lines 64980–65003** includes `"late_40_60": 12`, `"formation_only_sustained_extinctions": 0` in its C0 block, and `"late_40_60_mean_defects": {"mean": 20.523217247097843, ...}` at **65000–65003**. This directly explains the older rounded `20.5232` reported in decision summaries; it is a **historical embedded output**, not a new run.
+- The Appendix A reproduction log **lines 3316–3332** records Python **3.11.15 / NumPy 1.26.4** for its audit environment; Python **3.12.13 / NumPy 2.3.5** for a distinct replay environment. It says the **16th P2 source-schedule audit** was executed twice with byte-identical normalized output across **168 frozen trajectories** (two families, seven schedules, twelve paired seeds), and declares **16/16** source/JSON pairs in the historical document audit. These are **historical self-reported checks** until an independent current rerun verifies them.
+
+**Critical source correction:** This is now a substantially more complete recovery than mere narrative source location. The full original test and its machine-readable output **appear to be preserved together** in a versioned 4.2 MB historical report. Exact boundaries, extraction, code SHA, verifier pairing, output hashes and reproducing commands still need independent verification. Do not conclude replay success or top-level `A` yet.
+
+**Next exact permitted step:** inspect the original Appendix P's bounded fence/section layout, locate the full standalone Python code, embedded JSON output and independent verifier with exact line intervals and digests. Extract byte-faithfully into *isolated* safe local files or an approved reproducibility runner, compare its declared parameters and dependency constraints with the frozen Section 3.18 contract, and run historical baseline only after existing source tests and preregistered replay gates pass. No new horizon, physics patch, output tuning or whitepaper promotion.
