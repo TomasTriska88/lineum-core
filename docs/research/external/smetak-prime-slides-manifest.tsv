@@ -1,0 +1,81 @@
+sequence	filename	sha256	duplicate_of_sequence	label
+1	image(20261122-010305).png	e68170b246151907436069bddf6ad4b0554bd5c388703a44496ab4cfce58355e		Prime detection via pi – author and coauthors
+2	image(20261122-010340).png	effc553c084a00c4069485755681d5c7b6fa7f7fe34fb4474acbe75ab6ba2089		Geometric graph 2^n
+3	image(20261122-010355).png	3391db9f779c943183afbc1b02b340216d43fbc77bf4d1085b7e7cccf2725c2b		Geometric graph X^n
+4	image(20261122-010406).png	31b27730886a8fbbc003f353d8e78ca24679af31b03158a85f98dcc96bbfba7f		32k × 32k structure full
+5	image(20261122-010414).png	c4942eed1e142730c6a0db6e38c4a7cd45dff228d25fd5d5f1ad84d9e6abd0ba		32k × 32k structure zoom A
+6	image(20261122-010423).png	d1fe55dd116b5eeeeb6df1d41d06e05a869bda96010ef40840c5ba3a04da6970		32k × 32k structure zoom B
+7	image(20261122-010430).png	7e9a89d432ebc957ca300f799c7b2c426932d0a2634924d8cb044f6b624b0344		Composite-number fractal
+8	image(20261122-010437).png	48499b6f7ad00a63116313cf25a764fc0d3a26291931200df588d2539ed517ae		Half-ellipse and integer factorization
+9	image(20261122-010448).png	e5406d1334b72bc8bb798466f955474fd2c0edbf336eeffa15e579bafbbb00dd		Electromagnetic field in numbers
+10	image(20261122-010503).png	293cd0b98a2e3237e86a7c793bbc260e710a421149814daa837ea2b45fda3589		Quadrilateral network – Goldbach conjecture claim
+11	image(20261122-010548).png	1123b504360de5c6dc2db496dcc8c99a44498c295ec1be73b2189636a492be80		Prime detection using π – main part
+12	image(20261122-010607).png	ba43d0450a2d7ef8abad934858292c6dca614fb58b1c72f2406609215707ffe7		Context and prior mathematics
+13	image(20261122-010614).png	e7e2885ea3f88200acf44988026173a2d85aac522d2d987d40efe4b1b19de7d2		Euler product and Riemann zeta function
+14	image(20261122-010624).png	7ba3ff37b9dc6d9166e10dff5986ac3668dc93ba4f9e4baa1aec67060769deb9		Euler product identity
+15	image(20261122-010632).png	b19f9d0cfb1401b28c9949520d1a7f086ee7f262a05ee667f7f35b12d8fd872f		Expanded π expression example 1
+16	image(20261122-010647).png	922808a7895e8da22fdb0ffd31da2f28537ebaec8970494418a8233504869e20		Expanded π expression example 2
+17	image(20261122-010655).png	b8105e6b17ab2af5ceed51998c5145d9f3c1a3842f09c10827fbfb2cf1c72cb7	15	Additional presentation frame
+18	image(20261122-010702).png	e9db5e40e1b3e21921dfb6856c52f8407be1e76ca13ed9df0589f73091acb58a	16	Additional presentation frame
+19	image(20261122-010708).png	38ae5916cf013b4213cfefeb303b2280402af8919da550ea9577b6d96a864ba9		Even zeta values and Bernoulli formulae
+20	image(20261122-010717).png	acd6775980ea6de4668bfe20134baa56e9ff6f27b5805dbfefdc6b8ffb4603dc		Bernoulli closed forms terms
+21	image(20261122-010754).png	aa8673effc0bc5878ff77e2269cca70d788991f297893a6dbc12516acead6302		Higher Bernoulli closed forms
+22	image(20261122-010802).png	5e28de250f4b2252f1b3209bfeffce0254800311d0f89050d19b09791ec7465b	20	Additional presentation frame
+23	image(20261122-010807).png	bb3317837c7e0e2fac307117e21baacff81bd9d58ff97c9f8b390b67753f3036	21	Additional presentation frame
+24	image(20261122-010818).png	48e8f4928a3b590a36ba459b4f27127c94f5937167a6165cdc2fcbaf83205f22		Transition s=2
+25	image(20261122-010824).png	46d55f6930b6a64bd5f5140369ea51b733823d5d0885543cb71570169908a7f6		Euler product s=2, prime 2
+26	image(20261122-010835).png	d4330601a4ab5441b392b8cc7c0ad48882b24e01129d8d63e8f092270070af49		Euler product s=2, primes 2 and 3
+27	image(20261122-010911).png	68ae59f991350776d019248458ca40f197a06cc263aa696a6e230f041a2eba5b		Euler product s=2, primes 2,3,5
+28	image(20261122-010921).png	9beed2ce4b0c4797a5cc4c2dcc6b5427db098bd6904b073ecdcb76b7b71ccad8		Euler product s=2, primes 2,3,5,7
+29	image(20261122-010927).png	188bdab9d1f0c592fc340149496a80805a593f09fa324c1823876028669509f8		Euler product s=2 and square-root transform
+30	image(20261122-010933).png	007af539f5f895fe88411935ade674e9f876e4a7f99bed0ee367df573afa2079		Transition s=26
+31	image(20261122-010939).png	ec7eddd252bedfd28d9facec46b39fd777c8c39e2de9d81bb006ddde76b10410		Euler product s=26, prime 2
+32	image(20261122-010946).png	9571bde396d9ee6231a92ab7e03b7b872b5b8ca292aa03b6c5dc8484bd1b05de		Euler product s=26, primes 2 and 3
+33	image(20261122-010952).png	56079c44c94f8248da18008d4cb9216d28b275c2bdabc6d4257b104762277024		Euler product s=26, primes 2,3,5
+34	image(20261122-011003).png	59d03107fe76b4e75ec5a3568da4840586ab34f3f3de103ac3902bad91cf4887		Euler product s=26, primes 2,3,5,7
+35	image(20261122-011011).png	dc826576b0418b417bda65da695c21031d79f6197b559acdb86a173c33d175d8	33	Additional presentation frame
+36	image(20261122-011017).png	529135c355766420e5ce0da61d3f11a99b7aec4bc281437324eeef6a1b76f9e5	31	Additional presentation frame
+37	image(20261122-011023).png	23fa841cd89b32a679026dd9162580d036cdbb9fbcf83508e94a8184ccbab5dd	34	Additional presentation frame
+38	image(20261122-011030).png	6c655db3b00e6065cf3adc2b9efd459c9ea2327a516c16d6159e09f0945927e3		Overview prime-layer expansions s=2
+39	image(20261122-011039).png	fa30002c747f773072b4cfc50ce175c1f69ff1d1af9bd208ac5a35d5d0741898		Overview prime-layer expansions s=26
+40	image(20261122-011046).png	41db2af8e612d1833fca4f90ccf86ced46dbfdf6c8878bc0326ffd892e667ba7		Overview Euler product factors s=26
+41	image(20261122-011608).png	98a19986150832d9045d21db50be6e43a3c748cc5ec2458439904f5c62ea06a8		2 prime layers – grid in GIMP
+42	image(20261122-011657).png	b54308f1bf242aef576e5a05cc75130d324f4b27f28168a9deb9a13f527facc5		GIMP calculation and bitmap structure A
+43	image(20261122-011739).png	4221d56f3bafc86821e63ab6988176cb9bbc0a027c149fdd86d1ac8483781919		GIMP calculation and bitmap structure B
+44	image(20261122-011755).png	180efaae44f2c29d33aaecb87a161173e380365aedcb5072d40c8dbce0c16d33		GIMP calculation and bitmap structure C
+45	image(20261122-011804).png	227c876fc74f19c16c6d79ed5efbe79f1d753699cb6eae04bb0f7f010f9d4f72		5000x5000 px pixel-area calculation
+46	image(20261122-011813).png	f32ded82e990bd8e518c889bbb659f34a6406e33c88ebb949b750adaaefe5683		20000x20000 px pixel-area calculation
+47	image(20261122-011820).png	7d0e220f5b5902ae58865983d2abf7d0210f19e34e5a2f99d3bfcdc385ec9e30		Comparison of area and π value
+48	image(20261122-011829).png	1e691490a4d3b621621ac00fe95c062ce86266e0056a001686324f01a6d3451e		Explanation of prime-layer formation
+49	image(20261122-011846).png	e8c805c02b29a20d21d20bd7d5c8fdc531d76dcb2df2d137be90f48481890a5c		Grid: unit 1
+50	image(20261122-011856).png	cfb796ecc8772d80719f00cc075dd9238bda5d44482d41d91f491452782f78ec		Infinite grid: number 2, 1/4
+51	image(20261122-011905).png	02b0803f6a092d23af33c28e03446b63ddc05ac9d316e8f8a24e25ae75aa9a34		Infinite grid: number 3, 1/9
+52	image(20261122-011925).png	f2c43f79effbbc46b0223791e195accc959c2da787dbadd60dfc1c2e2d71657a		Infinite grid: number 4, 1/16
+53	image(20261122-011932).png	bf4a56800f9ceeb71322db84371a55b6f9c74e4bf2a3c3a6886fdd6b8e6577d7		Infinite grid: number 5, 1/25
+54	image(20261122-011942).png	d65d95aa0c8ee7b4d320cdeb7d3f03027034aa89f90c70d2a0b3f783fa85bb6c	53	Additional presentation frame
+55	image(20261122-011948).png	d99b0988a8b7c112000fdb506d4678e599345ebf7ee030bf0ba858355e176f8e	50	Additional presentation frame
+56	image(20261122-011959).png	041ee159e39ffa31fc617e37857397a17cf50c88cdf121c912fcd0bb1ee2b008	52	Additional presentation frame
+57	image(20261122-012006).png	9834d75d4362bb0bb1ebb9de1c6bcf1e0273577a3942e9aac3ba15f4d90b77ee		Stepwise formation of prime layers
+58	image(20261122-012055).png	3ea3ce3988f9df83fb2f7d786406e29a10bd4a8edfd64b16a7d73df5948acebd		Prime layers intersections 2 and 3
+59	image(20261122-012108).png	9635ac07390ab652c1315635b994aa46ac1aff2a2b6d1b55ef63927c9a03d158		Prime layers intersections 2,3,5
+60	image(20261122-012114).png	98027346d46a061fafdc61f2d6d07c2223f38c461b0b69080920200823f8546b		Intersections 2,3,5 counts
+61	image(20261122-012636).png	f51078beac5946384a95871346f327af4fed8ba728f6289acb3baf111df146b2		Intersections 2,3,5,7 products
+62	image(20261122-012643).png	64b3277fe0df8c78083f60c8a33c83a7d173f2f05f8d1bc9de9878ba455d2274		Intersections 2,3,5,7 counts
+63	image(20261122-012649).png	51194b0eb60aac9120673b4b59d4574c707defcdc535d5989b3a500b3f6d156f		Intersections 2,3,5,7,11 counts
+64	image(20261122-012655).png	dcd247ed469846f07af537afb6d9654aafd33e17cc72b1ec6db5ae4d85b3486d		Comparison of prime-layer combinations
+65	image(20261122-012703).png	974fedb8ea2444af279883c3f7b6d79a8f7ccf091571de6bf72a41d5af00ea35		Bernoulli closed forms in computation
+66	image(20261122-012715).png	4e0efa4d14a35dd0b107ad6f26fd1d2a5f6218b194b97e06b5bf30c681fe3793		Prime layer geometric properties
+67	image(20261122-012728).png	15ae6eaa79ebf28e3591411c5f94fe51c0f83940912b5b38ab1fa1165829a4b3		Bertrand postulate
+68	image(20261122-012736).png	8e580896c3a024c342fb2eff938a802b0781850be28158016d736ae813fecdbf	66	Additional presentation frame
+69	image(20261122-012743).png	0c8d2581e34b1fd861f4797c8f0613e57b9813c2a0815bb703b8ee3a079111b5		Claimed benefits of grid definitions
+70	image(20261122-012751).png	6b4bd84f91071b7eef639e6266760af37be58b1eb7ae74cb81544ba16604f5c9	66	Additional presentation frame
+71	image(20261122-012806).png	dc268b2b18e2f427d485727ee772b0a59a7d4da8b8624249b15cb27238be99b6	67	Additional presentation frame
+72	image(20261122-012909).png	a8df9378bcc1ebd808e62f16a72e5db923e24a5cb465380269487d5925d4bd64	65	Additional presentation frame
+73	image(20261122-012915).png	33f88f254b18ccab7a36f59700d80357a336334a25e216ed8a8eca08294d90d4	69	Additional presentation frame
+74	image(20261122-012923).png	a7c7de17ee0449dff168ff4209960a69460d7bd62840f4622a9e38a13f5aed40		Finite grids: introduction
+75	image(20261122-012933).png	abf95ec5bd24f9deb92089526c472c74d6342431eee6fda33a771a93d4b347cc		Finite grids: number 1
+76	image(20261122-012938).png	ed3d1b77e41dcfc76429a12f106f6c1251f796ec0e081ec080977433e3d0af3e		Finite grids: number 2
+77	image(20261122-012949).png	cbf2a4f475d78bd85c798129d4b753c34a3b305e1c574633203301e986657831		Finite grids: number 4
+78	image(20261122-012956).png	d894cc1c9ccbc5905122f4fc8efeb787ed45d99d318fd4917ff8b172403c7776		Multiplication table for prime detection
+79	image(20261122-013009).png	49f553887506994e07cadc584ec9bacbf1ae6561887bb013cbc334eab0ee8a5a		Reduced table
+80	image(20261122-013018).png	127c7254accb55237cee04a728cd9a065340658d94bcf11f3400521a88944dc0		Detecting primes in open interval 9–18
