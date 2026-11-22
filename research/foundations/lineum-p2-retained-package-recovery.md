@@ -1,7 +1,7 @@
 # Exact P2 Source-Schedule Recovery — Retained Package Inventory
 
 **Status:** active; bounded source-recovery checkpoint (not scientific validation)
-**Version:** 0.1.12
+**Version:** 0.1.13
 **Evidence cutoff:** 2026-11-22
 **Programme membership:** continuous-source cosmology / generic particle-formation investigation
 **Programme root:** `research/foundations/lineum-continuous-source-cosmology-validation.md`; verified immutable blob `3fba3925553cd5596e46c02fa35d1db91523537d`, 67,002,835 bytes. Root v0.4.14 / cutoff 2026-07-29 is **as cited** by the prior recovery brief, **not yet independently inspected within the full root body** in this checkpoint.
@@ -306,3 +306,26 @@ The scanner ran through the **same source-pinned 4,202,805-byte historical repor
 **Evidence state:** original source and output are **fully byte-located and syntactically valid**. The earlier claim that exact P2 original executable was unavailable is **superseded**; the currently **unmet** gate is an appropriate dependency/runtime setup, retained source/provenance contract review, independently checked output and baseline rerun. The root's historical Python/NumPy audit and replay environments (3.11.15/NumPy 1.26.4; 3.12.13/NumPy 2.3.5) must be distinguished from the present Prcek host-default Python 3.12.3 missing NumPy.
 
 **Next permitted action:** inspect **only small original JSON metadata and frozen-protocol fields**, the AST entrypoint/seed and source-schedule contracts, and environment availability of an **already existing isolated** interpreter that meets NumPy/SciPy requirements; do not install or disrupt packages on the live Grid host and do not execute a long 168-trajectory baseline without the original timing/correctness gate. If a safe local assistant runtime can receive the immutable source by a content-preserving authorized path, prefer that portable scientific environment. No A–F replay classification yet.
+
+## 18. Checkpoint 13 — original P2 protocol, decisions and precise entrypoint (2026-11-22)
+
+**Version:** 0.1.13. Prcek read-only command `lineum-p2-historical-protocol-20261122-p3e5` completed with matching final `HA_RESPONSES`, nested returncode **0** and empty stderr. The immutable historical root blob and both P2 Python/JSON SHA-256 body hashes were independently rechecked before this static inspection. No historical simulation execution occurred.
+
+**Original Python module entrypoint:** extracted source lines **2932–2956** define `p2_main()`, build `p2_build_result()`, serialize with `json.dumps(..., ensure_ascii=False, indent=2, sort_keys=True, allow_nan=False)`, compute `result_payload_sha256_before_hash_field` from the **pre-hash** JSON canonical serialization, then print the resulting pretty JSON. The module `if __name__ == "__main__":` executes `p2_main()` (not the earlier P1 `main()` function). This is necessary for exact replay and for independently verifying the archived JSON's self-checksum.
+
+**Historically reported environment in the original JSON:** `CPython 3.11.15`, `NumPy 1.26.4`, `SciPy 1.17.1` (original report `runtime` field; **not** the current host environment).
+
+**Frozen P2 protocol in the archived JSON**:
+- grid `32×32`, periodic boundary, exact-vacuum initial field, `dt=0.1`, duration `60.0`, `600` updates, observation cadence `0.1`;
+- **P2-specific** paired seeds `2026245000` through `2026245011` (12). **Important:** source line 31 uses a distinct `SEEDS=2026242000..2011` for the earlier embedded **P1** programme; do not mistakenly reuse it for P2.
+- source families `C0_centered_only` and `F0_full`; seven schedules `always_on`, `continuous_dose_30`, `formation_only_20`, `gap_restart_20_40`, `late_only_40`, `never_on`, `pulse_5_on_5_off`, totaling **168** trajectories;
+- common random numbers fixed by paired seed and **absolute update index**; turning the source off leaves draws unused rather than shifting the future stream;
+- key windows formation `0–20`, gap `20–40`, late restart `40–60`, baseline `15–20`, early late-off level `35–40`, late restart level `55–60`;
+- frozen v3 thresholds: minimum consecutive span `15.0`, seed prevalence `9/12`, registered overlap `0.9`, resolved core fraction `0.9`, time orientation `1/3`; post-result tuning explicitly **forbidden**.
+- source function `p2_schedule_is_on` (Python line **1592**) uses update indices `<200` for formation, `>=400` for late-on, and `(step_index // 50) % 2 == 0` for five-on/five-off pulses; these are **update-time** rules and must not be refitted from an output trace.
+
+**Original JSON verdict fields, not assistant interpretation:** `any_population_stable_overall_transport_candidate = false`; `any_population_stable_window_transport_signal = true`; `history_contrast_establishes_memory_mechanism = false`; `source_schedule_establishes_particle_identity = false`; `source_schedule_establishes_physical_fuel = false`. The original limitations explicitly exclude identity, derived physical energy, continuum limit, open boundaries and a valid same-state memory test. A source-off window population is **not** an overall stable individual object.
+
+**Source-quality correction:** Earlier in this report, the archived Python line **31** was quoted as if it alone defined the recovery's seeds. That value belongs to **P1**; the exact P2 seeds above are read from the original P2 JSON frozen protocol. Preserve both as distinct source families and confirm the P2 seed definition in the Python body on the next audit.
+
+**Next frozen check:** independently recompute the original JSON's `result_payload_sha256_before_hash_field` according to source `p2_main`, inspect `unit_controls.all_pass`, and cross-check only the C0 `formation_only_20` historical metrics against the previously reported rounded numbers. This is a standalone standard-library data-integrity test; it does **not** execute the simulator. Until executable dependencies and a safe isolated runner are available, no numerical replay or A/B recovery verdict is authorized.
