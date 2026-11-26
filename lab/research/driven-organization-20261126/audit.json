@@ -1,0 +1,22 @@
+{
+  "ablation": {
+    "cases": 54,
+    "gates": 52,
+    "repeat_exact": true,
+    "trajectories": 108
+  },
+  "attractor": {
+    "cases": 12,
+    "gates": 0,
+    "repeat_exact": true,
+    "trajectories": 12
+  },
+  "checks": 23557,
+  "max_budget_residual": 4.618527782440651e-13,
+  "native": {
+    "cases": 81,
+    "gates": 94,
+    "repeat_exact": true,
+    "trajectories": 162
+  }
+}
