@@ -1,0 +1,7 @@
+{
+  "exact_repeat": true,
+  "replay_ticks": 8192,
+  "replay_max_error": 0,
+  "score_aggregates_checked": 16,
+  "feature_rows": 128
+}

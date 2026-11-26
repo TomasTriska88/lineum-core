@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2415,
+      "sha256": "f56f76522ba6bacca90e743bee883065c27d396b636a006b9016ecc4c7442159",
+      "git_blob": "c4179b443481760e34fc0050f432004384ecfe11"
+    },
+    {
+      "path": "protocol.md",
+      "bytes": 1758,
+      "sha256": "ea439ecff03044149b3f6583d3300c3fba89c9ec27a2e047e57bf35b457a30b8",
+      "git_blob": "905f0c020d6253be740705397116ff62d5037941"
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 4027,
+      "sha256": "69a1301db3f52778116199ae8d9e76ba7e88ad76afab17de5851aec9894e499f",
+      "git_blob": "7a1ff93534e2c31fa78324506b9e4db5f2ec1ab6"
+    },
+    {
+      "path": "core_numpy_excerpt.py",
+      "bytes": 6526,
+      "sha256": "cea229a9dd5885471e389a238f022d8ea05f187828f3c7434b314456d8026c44",
+      "git_blob": "2f4e18a8036eca8c2fcaa12a9d3cca4145dbee06"
+    },
+    {
+      "path": "prospective.sha256",
+      "bytes": 246,
+      "sha256": "c6050b9062785f1b40aebde5043715c157b114ac8d013015552cb8206efbaa6f",
+      "git_blob": "fed077582104a8e151ff8068f4b9b39a1a33e7a1"
+    },
+    {
+      "path": "run.log",
+      "bytes": 6529,
+      "sha256": "75b171ca3f6230b11e53cb1233b6e97674adc6d57cf9b4d1fca4f2a9304778ca",
+      "git_blob": "8463a2fdfb940fab76b5829b2e0574c65aac627e"
+    },
+    {
+      "path": "repeat.log",
+      "bytes": 6529,
+      "sha256": "75b171ca3f6230b11e53cb1233b6e97674adc6d57cf9b4d1fca4f2a9304778ca",
+      "git_blob": "8463a2fdfb940fab76b5829b2e0574c65aac627e"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 133,
+      "sha256": "0fabe79ef3bdf2243175bdf7f7a213c81e7253e7ee947ab5a94e1d9ea25bfd7c",
+      "git_blob": "8d93e6dceffb80faa364ab8bfe7af2a0dc0eecbe"
+    },
+    {
+      "path": "results.json.gz",
+      "bytes": 183335,
+      "sha256": "b77f578a7b60839d4add46d894ae878271abd4dcde11eca82118bddd8a64770a",
+      "git_blob": "9ff2cdcaadaedf18bf576751d6ac5b9e14d71c82"
+    }
+  ],
+  "originals": [
+    {
+      "path": "results.json",
+      "bytes": 527965,
+      "sha256": "aa3bd830a262a2a5458b59c15c426e2310ce870a3673cf1c655eb27e1dea6461",
+      "git_blob": "eefa19c5130f8cf6679a2bfb90177d00239e6c66"
+    },
+    {
+      "path": "first.json",
+      "bytes": 527965,
+      "sha256": "aa3bd830a262a2a5458b59c15c426e2310ce870a3673cf1c655eb27e1dea6461",
+      "git_blob": "eefa19c5130f8cf6679a2bfb90177d00239e6c66"
+    }
+  ],
+  "source_commit": "ee3191220ecfbfa117120907a18731b2e295a58c",
+  "reconstruction": "Decompress results.json.gz; first.json is identical."
+}
