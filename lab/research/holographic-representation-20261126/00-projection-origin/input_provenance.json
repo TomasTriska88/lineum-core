@@ -1,0 +1,87 @@
+{
+  "scope": "Historical rendering projection audit; exact observed source and reference alpha frames, not a new physics experiment. Full asset ZIPs and complete source arrays are not copied in this evidence directory.",
+  "original_audit": {
+    "name": "projection_audit_evidence.zip",
+    "bytes": 65816,
+    "sha256": "e4ea096916ba765d72a586e5f6c7ffa0486ea1e72258016da05d7f3492da789e"
+  },
+  "source_asset_archives": [
+    {
+      "file": "campfire-isometric-v7.zip",
+      "bytes": 55412312,
+      "sha256": "78107ca7cf7d181bc54c49d03ced42533f3baeb9d7be2821d443d5f19eea465b"
+    },
+    {
+      "file": "campfire-isometric-v8.zip",
+      "bytes": 55045097,
+      "sha256": "925c5392a30431a32e8eddaf5210877b53eba8c468e5d66615d7262597f020b8"
+    }
+  ],
+  "inputs": [
+    {
+      "archive": "campfire-isometric-v7.zip",
+      "member": "campfire-layered-v6/strong-final.npz",
+      "original_bytes": 48832440,
+      "original_sha256": "c705ac7dc52f2b34da9daabb8ea2f7b780f963eb8ced9568a594bdf430761e6c",
+      "selection": "flame[60:92, ..., 3]",
+      "array_name": "source",
+      "shape": [
+        32,
+        96,
+        96
+      ],
+      "dtype": "uint8",
+      "array_sha256": "c439bc164d056aac1b94046c5e85ba40b24af4d4c7728e72063942278821815d"
+    },
+    {
+      "archive": "campfire-isometric-v7.zip",
+      "member": "campfire-isometric-v7/iso.npz",
+      "original_bytes": 441304,
+      "original_sha256": "d3f625f19a3371d258677bdce7c8401f915ff364ec93a3f36d7f1e6e803036ea",
+      "selection": "flame[60:92, ..., 3]",
+      "array_name": "iso_v7",
+      "shape": [
+        32,
+        96,
+        96
+      ],
+      "dtype": "uint8",
+      "array_sha256": "ee71f3a04c6b29c10ee9df2b2c3457ece52cc6ea7da1f3887aa7a503f4a87bbb"
+    },
+    {
+      "archive": "campfire-isometric-v8.zip",
+      "member": "campfire-layered-v6/strong-final.npz",
+      "original_bytes": 48832440,
+      "original_sha256": "c705ac7dc52f2b34da9daabb8ea2f7b780f963eb8ced9568a594bdf430761e6c",
+      "selection": "flame[60:92, ..., 3]",
+      "array_name": "source",
+      "shape": [
+        32,
+        96,
+        96
+      ],
+      "dtype": "uint8",
+      "array_sha256": "c439bc164d056aac1b94046c5e85ba40b24af4d4c7728e72063942278821815d"
+    },
+    {
+      "archive": "campfire-isometric-v8.zip",
+      "member": "campfire-isometric-v8/iso.npz",
+      "original_bytes": 363137,
+      "original_sha256": "fc1932d933831343ff847d617a2c0349cf3641d5389f222a5cfd8c71e0940fed",
+      "selection": "flame[60:92, ..., 3]",
+      "array_name": "iso_v8",
+      "shape": [
+        32,
+        96,
+        96
+      ],
+      "dtype": "uint8",
+      "array_sha256": "036000ef82e0b3f56e0f1290985eceaccdaa291be74abcc433cab18b1dc564f3"
+    }
+  ],
+  "archive_integrity": "CRC verified for all three local original ZIP files; duplicate source member SHA256 and exact selected input checked; project source bytes matched original audit.",
+  "extraction_environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

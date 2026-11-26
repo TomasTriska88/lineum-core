@@ -1,0 +1,6 @@
+{
+  "numeric_fields": 267,
+  "max_absolute_error": 0,
+  "mismatch_count": 0,
+  "source": "Original archived audit program with exact source/reference frame extraction replacing full asset paths; original projector functions byte identical; no new solver run."
+}
