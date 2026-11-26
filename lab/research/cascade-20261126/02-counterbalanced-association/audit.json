@@ -1,0 +1,10 @@
+{
+  "aggregation_checks": 628,
+  "max_absolute_residual": 8.881784197001252e-16,
+  "exact_repeat": true,
+  "association_gate": false,
+  "training_histories": 16,
+  "test_pairs": 160,
+  "observed_tick_rows": 10240,
+  "zero_control_roundoff_max": 2.7755575615628914e-17
+}

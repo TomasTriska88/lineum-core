@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "learned": {
+      "median_association": -6.735814643554772e-08,
+      "positive_seeds": 4,
+      "median_final_to_peak": 0.8787581305439782
+    },
+    "shuffled": {
+      "median_association": 5.970929977672235e-07,
+      "positive_seeds": 6,
+      "median_final_to_peak": 0.8786422143170767
+    },
+    "uniform": {
+      "median_association": -2.2081997202993975e-09,
+      "positive_seeds": 4,
+      "median_final_to_peak": 0.8786425966024538
+    },
+    "frozen": {
+      "median_association": 1.1596636109723057e-08,
+      "positive_seeds": 4,
+      "median_final_to_peak": 0.8777372556485874
+    },
+    "zero": {
+      "median_association": 0.0,
+      "positive_seeds": 1,
+      "median_final_to_peak": 0.8784517366429411
+    }
+  },
+  "learned_minus_shuffled": -1.130854463564368e-06,
+  "learned_minus_uniform": 9.185475771805729e-07,
+  "gate_pass": false
+}
