@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "learned": {
+      "remote_extra": 8.0,
+      "remote_suppressed": 1.0,
+      "max_components": 1.0,
+      "max_remote_peaks": 2.0,
+      "remote_integral": 3.3538044692189715,
+      "ablation_remote_integral": 3.0583277930151165,
+      "relative_causal_effect": 0.2688126697646014,
+      "excess_final_to_peak": 0.8743344278063728,
+      "baseline_final_rms": 1.944683971540048,
+      "mu_difference_final": 3.1948269627553936,
+      "near_history_integral": 0.21326864257883504,
+      "opposite_history_integral": 0.2153207936076859
+    },
+    "shuffled": {
+      "remote_extra": 8.0,
+      "remote_suppressed": 1.0,
+      "max_components": 1.0,
+      "max_remote_peaks": 2.0,
+      "remote_integral": 3.3532131368022995,
+      "ablation_remote_integral": 3.0575445396051246,
+      "relative_causal_effect": 0.2687817142065776,
+      "excess_final_to_peak": 0.8745562290970382,
+      "baseline_final_rms": 1.9446968630690256,
+      "mu_difference_final": 3.1930278801610266,
+      "near_history_integral": 0.21318952022093068,
+      "opposite_history_integral": 0.21530458076612163
+    },
+    "uniform": {
+      "remote_extra": 8.0,
+      "remote_suppressed": 1.0,
+      "max_components": 1.0,
+      "max_remote_peaks": 2.0,
+      "remote_integral": 3.3535110541566766,
+      "ablation_remote_integral": 3.057625422024228,
+      "relative_causal_effect": 0.26878154573812785,
+      "excess_final_to_peak": 0.8744940572020918,
+      "baseline_final_rms": 1.9446954916536776,
+      "mu_difference_final": 3.1940530504487676,
+      "near_history_integral": 0.213209253309763,
+      "opposite_history_integral": 0.21530719879543347
+    },
+    "zero": {
+      "remote_extra": 8.0,
+      "remote_suppressed": 1.0,
+      "max_components": 1.0,
+      "max_remote_peaks": 2.0,
+      "remote_integral": 3.350992193670421,
+      "ablation_remote_integral": 3.0550121253171643,
+      "relative_causal_effect": 0.268801403876176,
+      "excess_final_to_peak": 0.8749468292979619,
+      "baseline_final_rms": 1.9443405470315316,
+      "mu_difference_final": 3.1774775210700517,
+      "near_history_integral": 0.21303806982204596,
+      "opposite_history_integral": 0.2151406204825217
+    },
+    "frozen": {
+      "remote_extra": 8.0,
+      "remote_suppressed": 1.0,
+      "max_components": 1.0,
+      "max_remote_peaks": 2.0,
+      "remote_integral": 3.2201668051265067,
+      "ablation_remote_integral": 2.9251829708580113,
+      "relative_causal_effect": 0.26960316034892423,
+      "excess_final_to_peak": 0.919850117453888,
+      "baseline_final_rms": 1.931506405320844,
+      "mu_difference_final": 0.0,
+      "near_history_integral": 0.2059811744946523,
+      "opposite_history_integral": 0.2077377351830811
+    }
+  },
+  "gate_count": 3,
+  "gate_pass": false
+}

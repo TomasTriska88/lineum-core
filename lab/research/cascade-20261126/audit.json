@@ -1,0 +1,12 @@
+{
+  "cases": 40,
+  "native_test_trajectories": 120,
+  "training_trajectories": 8,
+  "per_tick_measured_rows": 3840,
+  "recomputed_metrics": 540,
+  "max_absolute_residual": 1.7763568394002505e-15,
+  "gate_count": 3,
+  "gate_pass": false,
+  "learned_positive_causal_cases": 7,
+  "deterministic_repeat_byte_equal": true
+}

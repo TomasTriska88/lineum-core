@@ -1,0 +1,19 @@
+# Single-pulse cascade diagnostic (Lineum Core CPU) — 2026-11-26
+
+**Status: component evidence, predeclared branching gate FAIL (3/8).** Not a Lina EI native fluid Grid or a canonical GPU run. Core main pinned at 8c4ff12af79b218fce8938497f56f75c4567195e; CPU source blob d59db92efa9dc5efeffc58bafc8a0361767b144e; exact previously archived excerpt 2f4e18a8036eca8c2fcaa12a9d3cca4145dbee06. No new physical rule or production change. Following completion of the seven-stage holographic evidence import (423a9c86a20bced33f7ef6aedb3de37bdab55748).
+
+## Result
+
+40 matched triplets (120 test trajectories), 8 separate learning trajectories; 96 ticks after a single initial .32 pulse or no pulse. Common random numbers and original native stochastic source; diagnostic gate-matching intervention only outside cue neighborhood, no scripted secondary injection. All finite/bounded checks and RNG consumption assertions passed. 3,840 measured tick rows, all gate-count maps, and training mu arrays retained; no full internal state snapshots were captured, as fixed in the prospective protocol. Byte-identical repeat for results and logs. Independent aggregation audit: 540 metrics, max residual 1.7763568394002505e-15, original gate FAIL. Full project suite not run (evidence-only).
+
+Learned mu median: 8 extra remote native linon gates and 1 suppressed remote gate over the full horizon; 7/8 seeds have positive paired change in integrated far excess squared psi norm versus the gate-matched control (median reduction relative to native 26.8813%). Only 3/8 satisfy all of the predeclared criteria including simultaneous separated positive-gate components. These are cue-dependent extra native stochastic generation events; the control removes the cue-dependence of remote gates, not all wave propagation. The norm is an observer metric, not a calibrated physical energy ledger. This is evidence of a cue-dependent generation/propagation pathway, **not** an established causal branching cascade (no ancestor graph or local causal attribution per event).
+
+Learned-vs-shuffled median remote integral differs by +0.017635% (3.353804469 vs 3.353213137). Learned region integral .213268643 vs opposite .215320794 (separate medians); no useful spatial associative relay demonstrated. Learned vs shuffled/uniform/zero median extra events all 8. Mu read/update disabled only in the sense of write-free control: existing mu continues to be read by Core. Frozen mode median causal reduction .26960316 and final mu difference 0. No claim that training produces enough discriminative memory.
+
+Final-16-tick excess RMS / peak median .8743344; no demonstrated extinction or stable localized organization. Background RMS 1.94468397 at final 16 ticks; native stochastic source remains active even without test pulse. The difference need not tend to zero in this 96-tick horizon. This is not a self-powered system, resource-balanced cascade, proof of consciousness, or a holographic result. Prior resource and H11/H4/E0-A acceptance gates in Lina EI remain unchanged.
+
+Next research candidate (not executed): causal event lineage controls with source-funded local support and acquired histories in the Lina EI native fixture, versus matched quiet propagation; use a stopping/stability criterion that distinguishes background activity from a persistent structural response. Preflight the Lina EI repository separately before that work. Do not select or tune a cascade solely from visually compelling assets.
+
+## Reproduction
+
+`python experiment.py > run.log` then `python audit.py` after retaining `first.json` and `repeat.log` from the exact repeat. Run in isolated staging; no live owner, sensors, deployments or external messages. See prospective protocol and manifest. Technical sources and all observations are preserved as recorded, not reconstructed from summary.
