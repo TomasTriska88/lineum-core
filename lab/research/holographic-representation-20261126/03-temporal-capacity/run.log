@@ -1,0 +1,14 @@
+front {'pair_max_abs': 0.12288093136249523, 'pair_rms': 0.010601237645317499, 'test_mu_mean': 0.01497346079017299}
+depth_mean {'pair_max_abs': 0.0, 'pair_rms': 0.0, 'test_mu_mean': 0.012417742428953354}
+front_time_shuffle {'pair_max_abs': 0.09539121134472817, 'pair_rms': 0.010869900716136062, 'test_mu_mean': 0.012945791957476}
+front_mu_off {'pair_max_abs': 0.1228788166587157, 'pair_rms': 0.010574589140494195, 'test_mu_mean': 0.0}
+zero_delta {'pair_max_abs': 0.0, 'pair_rms': 0.0, 'test_mu_mean': 0.008431833367960427}
+front {'arm': 'front', 'family': 'all', 'target': 'contrast', 'nrmse': 1.000096082571316, 'sign_accuracy': 0.6041666666666666}
+depth_mean {'arm': 'depth_mean', 'family': 'all', 'target': 'contrast', 'nrmse': 1.0, 'sign_accuracy': 0.5}
+front_time_shuffle {'arm': 'front_time_shuffle', 'family': 'all', 'target': 'contrast', 'nrmse': 1.0000957378988453, 'sign_accuracy': 0.5416666666666666}
+front_mu_off {'arm': 'front_mu_off', 'family': 'all', 'target': 'contrast', 'nrmse': 1.0002118849216628, 'sign_accuracy': 0.4791666666666667}
+zero_delta {'arm': 'zero_delta', 'family': 'all', 'target': 'contrast', 'nrmse': 1.0, 'sign_accuracy': 0.5}
+raw_5 {'arm': 'raw_5', 'family': 'all', 'target': 'contrast', 'nrmse': 0.6859866562618113, 'sign_accuracy': 0.75}
+ema_5 {'arm': 'ema_5', 'family': 'all', 'target': 'contrast', 'nrmse': 0.686280169451709, 'sign_accuracy': 0.75}
+joint_spatial_shuffle {'arm': 'joint_spatial_shuffle', 'family': 'all', 'target': 'contrast', 'nrmse': 0.9998368136534266, 'sign_accuracy': 0.5625}
+mu_spatial_shuffle {'arm': 'mu_spatial_shuffle', 'family': 'all', 'target': 'contrast', 'nrmse': 1.0006944464652296, 'sign_accuracy': 0.4791666666666667}

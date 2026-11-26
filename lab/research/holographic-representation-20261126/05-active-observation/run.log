@@ -1,0 +1,15 @@
+passive pair rms 0.0
+active pair rms 0.002000240906138409
+active_mu_off pair rms 0.001916196482603035
+active_noise pair rms 0.001991873982915282
+active_demeaned pair rms 0.002000240906138409
+{'arm': 'passive', 'family': 'all', 'n': 96, 'accuracy': 0.5, 'paired_accuracy': 0.5, 'nrmse': 0.922974239192107, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'active', 'family': 'all', 'n': 96, 'accuracy': 0.5104166666666666, 'paired_accuracy': 0.84375, 'nrmse': 0.991864715348906, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'active_mu_off', 'family': 'all', 'n': 96, 'accuracy': 0.5208333333333334, 'paired_accuracy': 0.8229166666666666, 'nrmse': 0.9502760397927089, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'active_noise', 'family': 'all', 'n': 96, 'accuracy': 0.5104166666666666, 'paired_accuracy': 0.8645833333333334, 'nrmse': 0.9893968522240544, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'active_demeaned', 'family': 'all', 'n': 96, 'accuracy': 0.5104166666666666, 'paired_accuracy': 0.84375, 'nrmse': 0.991864715348906, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'raw', 'family': 'all', 'n': 96, 'accuracy': 1.0, 'paired_accuracy': 1.0, 'nrmse': 0.12037134424015718, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'ema', 'family': 'all', 'n': 96, 'accuracy': 1.0, 'paired_accuracy': 1.0, 'nrmse': 0.1424354143692147, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'joint_shuffle', 'family': 'all', 'n': 96, 'accuracy': 0.5208333333333334, 'paired_accuracy': 0.8645833333333334, 'nrmse': 0.9913039305013436, 'train_mean_nrmse': 0.815465639164224}
+{'arm': 'independent_shuffle', 'family': 'all', 'n': 96, 'accuracy': 0.5208333333333334, 'paired_accuracy': 0.8020833333333334, 'nrmse': 1.0331518917998186, 'train_mean_nrmse': 0.815465639164224}
+{'max_mass_residual': 2.6645352591003757e-15, 'passive_pairs_exact': 96, 'active_pair_rms': 0.0062586127932330446, 'minimum_active_pair_max_difference': 0.004983413343008988, 'target_pair_rms': 0.0023287952536492577, 'target_rms': 0.0016468349925852581, 'native_demean_max_difference': 0.0} {'active_observation': True, 'withheld_forecast': False, 'competitive_compression': False}

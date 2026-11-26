@@ -1,0 +1,13 @@
+{
+  "protocol.md": "281b96f470cd6e4f1d12bd1e1327225f766a745bf3bb9aef0a0983312e915efd",
+  "experiment.py": "6515dc1e78ea1671c90871f3f9bfdda2da0e29c8b3402a7b72f3e782cf63508b",
+  "core_numpy_excerpt.py": "cea229a9dd5885471e389a238f022d8ea05f187828f3c7434b314456d8026c44",
+  "audit.py": "46e4733ef829b6930bfcbb37c05cbcb3b979e5323b05eafc029b341289bee0a0",
+  "results.json": "4706ee79ce0e1e422f422cabd476be82c60cca7700a257c758e686d5809b0887",
+  "measurements.npz": "3d903dddf0fb38793d051ba9be31aa9b148665f8475fbcdad505e0afe2547341",
+  "audit.json": "9862d53dca53f7237df4aec15b434a1f0c62c8f8fb3d2295ff5e8322df3b5eed",
+  "run.log": "c25848a412c98b575fd2dcace89dabcdc421f6763ba4e07da87eb9c250a98036",
+  "repeat.log": "c25848a412c98b575fd2dcace89dabcdc421f6763ba4e07da87eb9c250a98036",
+  "first.json": "4706ee79ce0e1e422f422cabd476be82c60cca7700a257c758e686d5809b0887",
+  "first_measurements.sha256": "d09ac8affff7548295383d11378538d3b1276e68e7b0ad62500b466fcac38b24"
+}

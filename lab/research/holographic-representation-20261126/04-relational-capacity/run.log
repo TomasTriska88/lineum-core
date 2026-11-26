@@ -1,0 +1,26 @@
+{'arm': 'native', 'kind': 'marginal', 'family': 'all', 'nrmse': 1.0232219252235275, 'accuracy': 0.5104166666666666}
+{'arm': 'native', 'kind': 'relation', 'family': 'all', 'nrmse': 1.0164839952350848, 'accuracy': 0.53125}
+{'arm': 'native', 'kind': 'combined', 'family': 'all', 'nrmse': 1.0621488096037632, 'accuracy': 0.4895833333333333}
+{'arm': 'native', 'kind': 'map_linear', 'family': 'all', 'nrmse': 1.0022802753551228, 'accuracy': 0.4895833333333333}
+{'arm': 'native', 'kind': 'map_relational', 'family': 'all', 'nrmse': 1.0032639498197824, 'accuracy': 0.4791666666666667}
+{'arm': 'raw', 'kind': 'marginal', 'family': 'all', 'nrmse': 0.7197742945734282, 'accuracy': 0.7395833333333334}
+{'arm': 'raw', 'kind': 'relation', 'family': 'all', 'nrmse': 1.0133394048398128, 'accuracy': 0.4791666666666667}
+{'arm': 'raw', 'kind': 'combined', 'family': 'all', 'nrmse': 0.7566102590273682, 'accuracy': 0.7083333333333334}
+{'arm': 'raw', 'kind': 'map_linear', 'family': 'all', 'nrmse': 0.6999771050709117, 'accuracy': 0.7604166666666666}
+{'arm': 'raw', 'kind': 'map_relational', 'family': 'all', 'nrmse': 0.7008572985000953, 'accuracy': 0.7604166666666666}
+{'arm': 'ema', 'kind': 'marginal', 'family': 'all', 'nrmse': 0.7175221655574205, 'accuracy': 0.7395833333333334}
+{'arm': 'ema', 'kind': 'relation', 'family': 'all', 'nrmse': 1.002650252134131, 'accuracy': 0.4791666666666667}
+{'arm': 'ema', 'kind': 'combined', 'family': 'all', 'nrmse': 0.7274788608939622, 'accuracy': 0.7083333333333334}
+{'arm': 'ema', 'kind': 'map_linear', 'family': 'all', 'nrmse': 0.7014641065660446, 'accuracy': 0.7604166666666666}
+{'arm': 'ema', 'kind': 'map_relational', 'family': 'all', 'nrmse': 0.7021748776215744, 'accuracy': 0.7604166666666666}
+{'arm': 'joint', 'kind': 'marginal', 'family': 'all', 'nrmse': 1.0232219252235273, 'accuracy': 0.5104166666666666}
+{'arm': 'joint', 'kind': 'relation', 'family': 'all', 'nrmse': 1.018264391354985, 'accuracy': 0.5520833333333334}
+{'arm': 'joint', 'kind': 'combined', 'family': 'all', 'nrmse': 1.0591508848094027, 'accuracy': 0.59375}
+{'arm': 'joint', 'kind': 'map_linear', 'family': 'all', 'nrmse': 1.0022561335748137, 'accuracy': 0.4791666666666667}
+{'arm': 'joint', 'kind': 'map_relational', 'family': 'all', 'nrmse': 1.0027034543680122, 'accuracy': 0.4895833333333333}
+{'arm': 'independent', 'kind': 'marginal', 'family': 'all', 'nrmse': 1.0232219252235275, 'accuracy': 0.5104166666666666}
+{'arm': 'independent', 'kind': 'relation', 'family': 'all', 'nrmse': 1.0241727209808795, 'accuracy': 0.4270833333333333}
+{'arm': 'independent', 'kind': 'combined', 'family': 'all', 'nrmse': 1.0651957777691272, 'accuracy': 0.4583333333333333}
+{'arm': 'independent', 'kind': 'map_linear', 'family': 'all', 'nrmse': 1.0004978063326393, 'accuracy': 0.4791666666666667}
+{'arm': 'independent', 'kind': 'map_relational', 'family': 'all', 'nrmse': 1.000573329954724, 'accuracy': 0.4895833333333333}
+{'pairs': 32, 'steps': 32, 'max_gradient_difference': 1.1102230246251565e-15, 'max_state_difference': 0.0, 'exact_equal_pairs': 32, 'target_rms_difference': 1.0828572894404247, 'minimum_pair_target_rms': 1.0828572894404245, 'exact_constant_input_equal': True}

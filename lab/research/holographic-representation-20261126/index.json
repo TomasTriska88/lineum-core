@@ -1,0 +1,58 @@
+[
+  {
+    "stage": "01-holographic-reference",
+    "archive": "lineum_holographic_experiment.zip",
+    "sha256": "85ba387780cbd243233d1e66b121d38c671f47fbd0ed7cc184d7b1ca9c28048f",
+    "bytes": 14026,
+    "entries": 7,
+    "verified_manifest_entries": 6
+  },
+  {
+    "stage": "02-functional-capacity",
+    "archive": "functional_capacity_verified.zip",
+    "sha256": "130d37de9e4933d235b622486fb0ef7c72b4894d6b906675afbda8a36045df2c",
+    "bytes": 13562,
+    "entries": 9,
+    "verified_manifest_entries": 5
+  },
+  {
+    "stage": "03-temporal-capacity",
+    "archive": "temporal_capacity_verified.zip",
+    "sha256": "7493bf4cf2965c143da1b2bd2ae0518061e585f05c87c8eacbb9be259783d81c",
+    "bytes": 7247837,
+    "entries": 10,
+    "verified_manifest_entries": 9
+  },
+  {
+    "stage": "04-relational-capacity",
+    "archive": "relational_capacity_verified.zip",
+    "sha256": "6e7cbc67e152daecb1205a51a2da9f0e6062301a030fc83125ded58cc658d615",
+    "bytes": 8261096,
+    "entries": 11,
+    "verified_manifest_entries": 10
+  },
+  {
+    "stage": "05-active-observation",
+    "archive": "active_observation_verified.zip",
+    "sha256": "b65914045c2fa57e11e544539e506721f9ae71adc883199bf819bafa9782e1b4",
+    "bytes": 9166859,
+    "entries": 12,
+    "verified_manifest_entries": 11
+  },
+  {
+    "stage": "06-closed-loop",
+    "archive": "closed_loop_verified.zip",
+    "sha256": "ec6ff2d0719af932cef2f0c5e72cb95b06d5374f8692e0a6f256814b39d0261d",
+    "bytes": 14428180,
+    "entries": 12,
+    "verified_manifest_entries": 11
+  },
+  {
+    "stage": "07-mismatch-guided",
+    "archive": "surprise_verified.zip",
+    "sha256": "54130b2fd306e7bdba4b538677d596b56acdfe6333759631bdbb3b3867e28df8",
+    "bytes": 19072855,
+    "entries": 13,
+    "verified_manifest_entries": 12
+  }
+]

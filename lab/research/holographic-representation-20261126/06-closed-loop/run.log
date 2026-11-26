@@ -1,0 +1,11 @@
+completed adaptive
+completed fixed
+completed yoked
+{'arm': 'adaptive', 'family': 'all', 'n': 80, 'accuracy': 0.5, 'paired_accuracy': 0.6, 'nrmse': 0.9437691319263184, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'raw_adaptive', 'family': 'all', 'n': 80, 'accuracy': 0.9625, 'paired_accuracy': 1.0, 'nrmse': 0.14168199377216048, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'fixed', 'family': 'all', 'n': 80, 'accuracy': 0.5125, 'paired_accuracy': 0.65, 'nrmse': 0.9280363814637034, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'raw_fixed', 'family': 'all', 'n': 80, 'accuracy': 0.9875, 'paired_accuracy': 1.0, 'nrmse': 0.11461853601346184, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'yoked', 'family': 'all', 'n': 80, 'accuracy': 0.5, 'paired_accuracy': 0.6375, 'nrmse': 0.9324758392425333, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'raw_yoked', 'family': 'all', 'n': 80, 'accuracy': 0.95, 'paired_accuracy': 1.0, 'nrmse': 0.14177901740972135, 'train_mean_nrmse': 0.825851177665125}
+{'arm': 'mu_off_replay', 'family': 'all', 'n': 80, 'accuracy': 0.5125, 'paired_accuracy': 0.6, 'nrmse': 0.9321688993909337, 'train_mean_nrmse': 0.825851177665125}
+{'max_mass_residual': 5.551115123125783e-16, 'pulse_mass': [0.9999999999999999, 0.9999999999999999, 0.9999999999999999, 0.9999999999999999, 0.9999999999999999], 'action_counts': {'adaptive': [50, 40, 37, 33], 'fixed': [160, 0, 0, 0], 'yoked': [50, 40, 37, 33]}, 'changed_pair_actions': 4, 'yoked_action_diff': 120, 'test_action_counts': {'adaptive': [21, 22, 18, 19], 'fixed': [80, 0, 0, 0], 'yoked': [21, 22, 18, 19]}} {'adaptive': False}

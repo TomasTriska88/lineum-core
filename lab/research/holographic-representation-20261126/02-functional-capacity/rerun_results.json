@@ -1,0 +1,275 @@
+{
+  "protocol": "functional equal-state-budget reference only",
+  "seed": 481926,
+  "cases": 96,
+  "state_scalars": {
+    "full": 2304,
+    "depth_mean": 256,
+    "spectral_256": 256,
+    "persistence_256": 256
+  },
+  "rows": [
+    {
+      "family": "iid",
+      "tick": 4,
+      "method": "depth_mean",
+      "mean_nrmse": 2.444339249978762e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 4,
+      "method": "spectral_256",
+      "mean_nrmse": 0.685855752686653,
+      "contrast_nrmse": 0.7228492098574828,
+      "depth_sign_accuracy": 0.8333333333333334
+    },
+    {
+      "family": "iid",
+      "tick": 4,
+      "method": "persistence_256",
+      "mean_nrmse": 1.2085729224217874,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 16,
+      "method": "depth_mean",
+      "mean_nrmse": 3.0548309741877264e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 16,
+      "method": "spectral_256",
+      "mean_nrmse": 0.3361567122600172,
+      "contrast_nrmse": 0.3708845368378953,
+      "depth_sign_accuracy": 0.9166666666666666
+    },
+    {
+      "family": "iid",
+      "tick": 16,
+      "method": "persistence_256",
+      "mean_nrmse": 4.0123697638017095,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 32,
+      "method": "depth_mean",
+      "mean_nrmse": 3.189417885703993e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 32,
+      "method": "spectral_256",
+      "mean_nrmse": 0.1276564923170282,
+      "contrast_nrmse": 0.13338175356748053,
+      "depth_sign_accuracy": 1.0
+    },
+    {
+      "family": "iid",
+      "tick": 32,
+      "method": "persistence_256",
+      "mean_nrmse": 6.992367818420763,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 64,
+      "method": "depth_mean",
+      "mean_nrmse": 3.069946595993093e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "iid",
+      "tick": 64,
+      "method": "spectral_256",
+      "mean_nrmse": 0.016487497295605454,
+      "contrast_nrmse": 0.016982795054837272,
+      "depth_sign_accuracy": 1.0
+    },
+    {
+      "family": "iid",
+      "tick": 64,
+      "method": "persistence_256",
+      "mean_nrmse": 11.071504499973168,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 4,
+      "method": "depth_mean",
+      "mean_nrmse": 1.8965356793178764e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 4,
+      "method": "spectral_256",
+      "mean_nrmse": 0.3270193579762924,
+      "contrast_nrmse": 0.3569062565377461,
+      "depth_sign_accuracy": 0.875
+    },
+    {
+      "family": "smooth",
+      "tick": 4,
+      "method": "persistence_256",
+      "mean_nrmse": 0.41371069241722186,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 16,
+      "method": "depth_mean",
+      "mean_nrmse": 2.217860584049492e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 16,
+      "method": "spectral_256",
+      "mean_nrmse": 0.13370517066110824,
+      "contrast_nrmse": 0.15056072657035235,
+      "depth_sign_accuracy": 1.0
+    },
+    {
+      "family": "smooth",
+      "tick": 16,
+      "method": "persistence_256",
+      "mean_nrmse": 1.429555249518809,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 32,
+      "method": "depth_mean",
+      "mean_nrmse": 2.300922546280209e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 32,
+      "method": "spectral_256",
+      "mean_nrmse": 0.04413410879410716,
+      "contrast_nrmse": 0.050811960539169164,
+      "depth_sign_accuracy": 1.0
+    },
+    {
+      "family": "smooth",
+      "tick": 32,
+      "method": "persistence_256",
+      "mean_nrmse": 2.4309700059064347,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 64,
+      "method": "depth_mean",
+      "mean_nrmse": 2.279982166758519e-16,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    },
+    {
+      "family": "smooth",
+      "tick": 64,
+      "method": "spectral_256",
+      "mean_nrmse": 0.005074362642481196,
+      "contrast_nrmse": 0.006054232575147608,
+      "depth_sign_accuracy": 1.0
+    },
+    {
+      "family": "smooth",
+      "tick": 64,
+      "method": "persistence_256",
+      "mean_nrmse": 3.681071287078424,
+      "contrast_nrmse": 1.0,
+      "depth_sign_accuracy": 0.5
+    }
+  ],
+  "checks": [
+    {
+      "family": "iid",
+      "tick": 4,
+      "full_spectral_parity": 1.7763568394002505e-15,
+      "mirror_mean": 2.220446049250313e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 3.3306690738754696e-16
+    },
+    {
+      "family": "iid",
+      "tick": 16,
+      "full_spectral_parity": 8.881784197001252e-16,
+      "mirror_mean": 1.1102230246251565e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 1.942890293094024e-16
+    },
+    {
+      "family": "iid",
+      "tick": 32,
+      "full_spectral_parity": 6.661338147750939e-16,
+      "mirror_mean": 5.551115123125783e-17,
+      "mirror_contrast": 0.0,
+      "mean_error": 1.1102230246251565e-16
+    },
+    {
+      "family": "iid",
+      "tick": 64,
+      "full_spectral_parity": 5.551115123125783e-16,
+      "mirror_mean": 2.7755575615628914e-17,
+      "mirror_contrast": 0.0,
+      "mean_error": 6.938893903907228e-17
+    },
+    {
+      "family": "smooth",
+      "tick": 4,
+      "full_spectral_parity": 2.220446049250313e-15,
+      "mirror_mean": 4.440892098500626e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 6.661338147750939e-16
+    },
+    {
+      "family": "smooth",
+      "tick": 16,
+      "full_spectral_parity": 1.9984014443252818e-15,
+      "mirror_mean": 3.3306690738754696e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 4.440892098500626e-16
+    },
+    {
+      "family": "smooth",
+      "tick": 32,
+      "full_spectral_parity": 1.7763568394002505e-15,
+      "mirror_mean": 2.220446049250313e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 3.3306690738754696e-16
+    },
+    {
+      "family": "smooth",
+      "tick": 64,
+      "full_spectral_parity": 1.887379141862766e-15,
+      "mirror_mean": 1.1102230246251565e-16,
+      "mirror_contrast": 0.0,
+      "mean_error": 2.220446049250313e-16
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  }
+}

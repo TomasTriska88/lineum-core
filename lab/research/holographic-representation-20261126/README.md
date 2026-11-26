@@ -1,0 +1,6 @@
+# Lineum holographic-representation research — 2026-11-26
+Seven original experiment archives, preserved byte-for-byte. Independent multidimensional reference, unchanged native CPU component where specified; no proof of holography, autonomous cognition or equivalent functional capacity. Main 8c4ff12af79b218fce8938497f56f75c4567195e. No repository write. Source manifests and CRCs checked, not all previous experiments rerun in this turn.
+
+Latest mismatch-guided test: 80 reflection pairs (160 cases), 80 held-out cases across two unseen families. Individual accuracy fixed 48.75%, mu 52.5%, mismatch 50%, yoked 50%. Raw equal-size time samples 95–97.5%. Mismatch changes action in 3/80 pairs, as does mu. Map NRMSE mismatch 1.0489256818930164 (zero baseline 1, training mean 0.8310960823446973). Locked gate fails. Two pulses matched by mass, not physical energy. External mismatch selector uses normalized phi and mu, not an actual prediction error. 96 metrics independently recalculated; deterministic repeat exact.
+
+Next proposed test: same native input stream, record field trajectories at equal total storage, evaluate signal loss versus temporal readout bottleneck; consider phase/response timing before proposing new physics.

@@ -1,0 +1,266 @@
+{
+  "scope": "Independent heterogeneous 3D reference; pinned native CPU component, experimenter supplied probe",
+  "rows": [
+    {
+      "arm": "passive",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.5,
+      "nrmse": 0.922974239192107,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "passive",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.5,
+      "nrmse": 0.8606979405437682,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "passive",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.5,
+      "nrmse": 0.9653071460352457,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "active",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5104166666666666,
+      "paired_accuracy": 0.84375,
+      "nrmse": 0.991864715348906,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "active",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8541666666666666,
+      "nrmse": 0.9678755505810109,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "active",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.8333333333333334,
+      "nrmse": 1.0087750313068566,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "active_mu_off",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8229166666666666,
+      "nrmse": 0.9502760397927089,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "active_mu_off",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8541666666666666,
+      "nrmse": 0.9180408253856124,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "active_mu_off",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.7916666666666666,
+      "nrmse": 0.9728126583080086,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "active_noise",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5104166666666666,
+      "paired_accuracy": 0.8645833333333334,
+      "nrmse": 0.9893968522240544,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "active_noise",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8541666666666666,
+      "nrmse": 0.9665172287696782,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "active_noise",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.875,
+      "nrmse": 1.0055395664589875,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "active_demeaned",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5104166666666666,
+      "paired_accuracy": 0.84375,
+      "nrmse": 0.991864715348906,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "active_demeaned",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8541666666666666,
+      "nrmse": 0.9678755505810109,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "active_demeaned",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.8333333333333334,
+      "nrmse": 1.0087750313068566,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "raw",
+      "family": "all",
+      "n": 96,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.12037134424015718,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "raw",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.13337757659315466,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "raw",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.11006482454151882,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "ema",
+      "family": "all",
+      "n": 96,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.1424354143692147,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "ema",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.15931195965275674,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "ema",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.12893092904735598,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "joint_shuffle",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8645833333333334,
+      "nrmse": 0.9913039305013436,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "joint_shuffle",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8958333333333334,
+      "nrmse": 1.078235332250405,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "joint_shuffle",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8333333333333334,
+      "nrmse": 0.9236974653187519,
+      "train_mean_nrmse": 0.823499149499835
+    },
+    {
+      "arm": "independent_shuffle",
+      "family": "all",
+      "n": 96,
+      "accuracy": 0.5208333333333334,
+      "paired_accuracy": 0.8020833333333334,
+      "nrmse": 1.0331518917998186,
+      "train_mean_nrmse": 0.815465639164224
+    },
+    {
+      "arm": "independent_shuffle",
+      "family": "annulus",
+      "n": 48,
+      "accuracy": 0.5416666666666666,
+      "paired_accuracy": 0.8125,
+      "nrmse": 1.0552523945429568,
+      "train_mean_nrmse": 0.8041689555917177
+    },
+    {
+      "arm": "independent_shuffle",
+      "family": "double_lobe",
+      "n": 48,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.7916666666666666,
+      "nrmse": 1.016950657044811,
+      "train_mean_nrmse": 0.823499149499835
+    }
+  ],
+  "gates": {
+    "active_observation": true,
+    "withheld_forecast": false,
+    "competitive_compression": false
+  },
+  "reference": {
+    "max_mass_residual": 2.6645352591003757e-15,
+    "passive_pairs_exact": 96,
+    "active_pair_rms": 0.0062586127932330446,
+    "minimum_active_pair_max_difference": 0.004983413343008988,
+    "target_pair_rms": 0.0023287952536492577,
+    "target_rms": 0.0016468349925852581,
+    "native_demean_max_difference": 0.0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  }
+}

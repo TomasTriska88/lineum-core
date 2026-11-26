@@ -1,0 +1,330 @@
+{
+  "source_commit": "8c4ff12af79b218fce8938497f56f75c4567195e",
+  "source_blob": "d59db92efa9dc5efeffc58bafc8a0361767b144e",
+  "normalized_excerpt_fnv1a": "56103725",
+  "local_excerpt_sha256": "cea229a9dd5885471e389a238f022d8ea05f187828f3c7434b314456d8026c44",
+  "rows": [
+    {
+      "case": 0,
+      "use_mu": false,
+      "initial_3d_rms": 0.09601805202864425,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.21895467729628326,
+      "different_seed_control_max_abs": 0.1402122893835176
+    },
+    {
+      "case": 0,
+      "use_mu": true,
+      "initial_3d_rms": 0.09601805202864425,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.22812333135120078,
+      "different_seed_control_max_abs": 0.14093562234472468
+    },
+    {
+      "case": 1,
+      "use_mu": false,
+      "initial_3d_rms": 0.09654159873857936,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.22702751290068945,
+      "different_seed_control_max_abs": 0.16086625860106507
+    },
+    {
+      "case": 1,
+      "use_mu": true,
+      "initial_3d_rms": 0.09654159873857936,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23383093378543351,
+      "different_seed_control_max_abs": 0.16126219425710486
+    },
+    {
+      "case": 2,
+      "use_mu": false,
+      "initial_3d_rms": 0.09686731014016105,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23042327529817336,
+      "different_seed_control_max_abs": 0.16207422136112648
+    },
+    {
+      "case": 2,
+      "use_mu": true,
+      "initial_3d_rms": 0.09686731014016105,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23861015432932464,
+      "different_seed_control_max_abs": 0.1625667335070814
+    },
+    {
+      "case": 3,
+      "use_mu": false,
+      "initial_3d_rms": 0.0958369489347108,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.3163212608992013,
+      "different_seed_control_max_abs": 0.13400754594334435
+    },
+    {
+      "case": 3,
+      "use_mu": true,
+      "initial_3d_rms": 0.0958369489347108,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.31866837736255715,
+      "different_seed_control_max_abs": 0.1342149338247875
+    },
+    {
+      "case": 4,
+      "use_mu": false,
+      "initial_3d_rms": 0.09728744377866427,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.22078896766417022,
+      "different_seed_control_max_abs": 0.14812549233241534
+    },
+    {
+      "case": 4,
+      "use_mu": true,
+      "initial_3d_rms": 0.09728744377866427,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.22404269077375982,
+      "different_seed_control_max_abs": 0.14847593837313577
+    },
+    {
+      "case": 5,
+      "use_mu": false,
+      "initial_3d_rms": 0.09677066995958021,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.20432950530518634,
+      "different_seed_control_max_abs": 0.13642186259442984
+    },
+    {
+      "case": 5,
+      "use_mu": true,
+      "initial_3d_rms": 0.09677066995958021,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.20877410533199414,
+      "different_seed_control_max_abs": 0.13647586443379983
+    },
+    {
+      "case": 6,
+      "use_mu": false,
+      "initial_3d_rms": 0.09794364178865314,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2700216253605624,
+      "different_seed_control_max_abs": 0.16736826626151213
+    },
+    {
+      "case": 6,
+      "use_mu": true,
+      "initial_3d_rms": 0.09794364178865314,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2732428207839638,
+      "different_seed_control_max_abs": 0.1684634552332518
+    },
+    {
+      "case": 7,
+      "use_mu": false,
+      "initial_3d_rms": 0.09672549069329625,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23399360849231987,
+      "different_seed_control_max_abs": 0.15360290053528136
+    },
+    {
+      "case": 7,
+      "use_mu": true,
+      "initial_3d_rms": 0.09672549069329625,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23644593076737985,
+      "different_seed_control_max_abs": 0.15393217440960955
+    },
+    {
+      "case": 8,
+      "use_mu": false,
+      "initial_3d_rms": 0.09995472200863208,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2589017212620415,
+      "different_seed_control_max_abs": 0.13886356108704262
+    },
+    {
+      "case": 8,
+      "use_mu": true,
+      "initial_3d_rms": 0.09995472200863208,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.263010911921846,
+      "different_seed_control_max_abs": 0.13915932582280294
+    },
+    {
+      "case": 9,
+      "use_mu": false,
+      "initial_3d_rms": 0.09505141445255522,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2462089466624694,
+      "different_seed_control_max_abs": 0.15119645959755412
+    },
+    {
+      "case": 9,
+      "use_mu": true,
+      "initial_3d_rms": 0.09505141445255522,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2545496652528353,
+      "different_seed_control_max_abs": 0.15220331471160542
+    },
+    {
+      "case": 10,
+      "use_mu": false,
+      "initial_3d_rms": 0.09712425624628646,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.21417990873178805,
+      "different_seed_control_max_abs": 0.13190799938820408
+    },
+    {
+      "case": 10,
+      "use_mu": true,
+      "initial_3d_rms": 0.09712425624628646,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.22066313274208793,
+      "different_seed_control_max_abs": 0.13201296318295408
+    },
+    {
+      "case": 11,
+      "use_mu": false,
+      "initial_3d_rms": 0.09502214630943875,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2679112656040957,
+      "different_seed_control_max_abs": 0.1486964057418111
+    },
+    {
+      "case": 11,
+      "use_mu": true,
+      "initial_3d_rms": 0.09502214630943875,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2699308141898712,
+      "different_seed_control_max_abs": 0.14920335736537393
+    },
+    {
+      "case": 12,
+      "use_mu": false,
+      "initial_3d_rms": 0.09957064538461638,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2568927033027727,
+      "different_seed_control_max_abs": 0.1782696442552678
+    },
+    {
+      "case": 12,
+      "use_mu": true,
+      "initial_3d_rms": 0.09957064538461638,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2609836005297711,
+      "different_seed_control_max_abs": 0.18028809582664362
+    },
+    {
+      "case": 13,
+      "use_mu": false,
+      "initial_3d_rms": 0.09426984417644037,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.19450712918962954,
+      "different_seed_control_max_abs": 0.150433676722598
+    },
+    {
+      "case": 13,
+      "use_mu": true,
+      "initial_3d_rms": 0.09426984417644037,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.19446271280819472,
+      "different_seed_control_max_abs": 0.15113678414286036
+    },
+    {
+      "case": 14,
+      "use_mu": false,
+      "initial_3d_rms": 0.09485053725085153,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.23506416096627758,
+      "different_seed_control_max_abs": 0.17561262436974057
+    },
+    {
+      "case": 14,
+      "use_mu": true,
+      "initial_3d_rms": 0.09485053725085153,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.2380946342798339,
+      "different_seed_control_max_abs": 0.17660677655275392
+    },
+    {
+      "case": 15,
+      "use_mu": false,
+      "initial_3d_rms": 0.09838443785908024,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.41691213933488325,
+      "different_seed_control_max_abs": 0.14308700392853968
+    },
+    {
+      "case": 15,
+      "use_mu": true,
+      "initial_3d_rms": 0.09838443785908024,
+      "projection_collision_exact": true,
+      "core_all_steps_collision_exact": true,
+      "core_collision_max_abs": 0.0,
+      "distinct_front_control_max_abs": 0.4300314812692445,
+      "different_seed_control_max_abs": 0.14340402513305173
+    }
+  ],
+  "scope": "CPU _step_numpy excerpt, default LAP4 config with use_mu false/true; synthetic mirrored initial states only; no claim of 3D Core or whole-Core audit",
+  "all_pass": true
+}

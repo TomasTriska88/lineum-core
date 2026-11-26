@@ -1,0 +1,325 @@
+{
+  "scope": "independent linear 3D reference; not original Core",
+  "shape": [
+    4,
+    9,
+    8,
+    8
+  ],
+  "unknowns": 2304,
+  "instant_2d_scalars": 256,
+  "temporal_scalars": 4096,
+  "seed": 20261126,
+  "test_volumes_per_ensemble": 24,
+  "times_four": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    63
+  ],
+  "ranks": {
+    "mean_four": {
+      "min": 4,
+      "max": 4,
+      "total": 256,
+      "sv_gt_001": 256,
+      "sv_gt_01": 256
+    },
+    "front_four": {
+      "min": 26,
+      "max": 36,
+      "total": 2170,
+      "sv_gt_001": 848,
+      "sv_gt_01": 614
+    },
+    "front_psi_equal_samples": {
+      "min": 14,
+      "max": 15,
+      "total": 941,
+      "sv_gt_001": 298,
+      "sv_gt_01": 214
+    }
+  },
+  "results": [
+    {
+      "ensemble": "iid",
+      "method": "mean_four",
+      "noise": 0.0,
+      "volume_nrmse": 0.9409675288483642,
+      "psi_nrmse": 0.9378551997974324,
+      "far_face_future_nrmse": 0.6715701515895259,
+      "extrusion_nrmse": 0.9409675288483641,
+      "extrusion_far_future_nrmse": 0.6715701515895282,
+      "decode_seconds": 0.003844071999992593,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "mean_four",
+      "noise": 0.001,
+      "volume_nrmse": 0.9409679330081802,
+      "psi_nrmse": 0.937855597098261,
+      "far_face_future_nrmse": 0.6715531376974633,
+      "extrusion_nrmse": 0.9409680739337725,
+      "extrusion_far_future_nrmse": 0.6712007340596703,
+      "decode_seconds": 0.0030688320002809633,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "mean_four",
+      "noise": 0.01,
+      "volume_nrmse": 0.941006458366701,
+      "psi_nrmse": 0.9378941190074476,
+      "far_face_future_nrmse": 0.6711541251608422,
+      "extrusion_nrmse": 0.941021909510229,
+      "extrusion_far_future_nrmse": 0.6742253089589297,
+      "decode_seconds": 0.002684662000319804,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_four",
+      "noise": 0.0,
+      "volume_nrmse": 0.24622394263575328,
+      "psi_nrmse": 0.1856330886162666,
+      "far_face_future_nrmse": 1.5940151701330903e-06,
+      "extrusion_nrmse": 1.3354526766765749,
+      "extrusion_far_future_nrmse": 2.3776040696031497,
+      "decode_seconds": 0.0027592610003921436,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_four",
+      "noise": 0.001,
+      "volume_nrmse": 0.7890079959593422,
+      "psi_nrmse": 0.7773236460122336,
+      "far_face_future_nrmse": 0.5500660006338548,
+      "extrusion_nrmse": 1.3354578892944493,
+      "extrusion_far_future_nrmse": 2.377431622031655,
+      "decode_seconds": 0.0031163710000328138,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_four",
+      "noise": 0.01,
+      "volume_nrmse": 0.8520434098198816,
+      "psi_nrmse": 0.8444359312504743,
+      "far_face_future_nrmse": 0.8106838538406589,
+      "extrusion_nrmse": 1.3354860843039207,
+      "extrusion_far_future_nrmse": 2.3744448587090328,
+      "decode_seconds": 0.0026555999993433943,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_psi_equal_samples",
+      "noise": 0.0,
+      "volume_nrmse": 0.7673412929817444,
+      "psi_nrmse": 0.5864680265351746,
+      "far_face_future_nrmse": 0.22955787634698416,
+      "extrusion_nrmse": 1.0922832166022782,
+      "extrusion_far_future_nrmse": 1.4235121984037824,
+      "decode_seconds": 0.0030414319999181316,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_psi_equal_samples",
+      "noise": 0.001,
+      "volume_nrmse": 0.9309548289358476,
+      "psi_nrmse": 0.8209410383247656,
+      "far_face_future_nrmse": 0.779209529957828,
+      "extrusion_nrmse": 1.0922817690758844,
+      "extrusion_far_future_nrmse": 1.423372438207331,
+      "decode_seconds": 0.0026737560001492966,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "iid",
+      "method": "front_psi_equal_samples",
+      "noise": 0.01,
+      "volume_nrmse": 0.9513914835925861,
+      "psi_nrmse": 0.8550531484264553,
+      "far_face_future_nrmse": 0.9309670557583085,
+      "extrusion_nrmse": 1.0923401793824992,
+      "extrusion_far_future_nrmse": 1.4217316486592293,
+      "decode_seconds": 0.002941466000265791,
+      "reference_seconds": 0.16998912600047333,
+      "mean_mirror_max_abs": 4.440892098500626e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "mean_four",
+      "noise": 0.0,
+      "volume_nrmse": 0.8433307034814056,
+      "psi_nrmse": 0.85729790781852,
+      "far_face_future_nrmse": 0.4526163816280635,
+      "extrusion_nrmse": 0.8433307034814055,
+      "extrusion_far_future_nrmse": 0.4526163816280647,
+      "decode_seconds": 0.003096743000241986,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "mean_four",
+      "noise": 0.001,
+      "volume_nrmse": 0.8433311335361404,
+      "psi_nrmse": 0.8572983230100473,
+      "far_face_future_nrmse": 0.4526108004501539,
+      "extrusion_nrmse": 0.8433312867532101,
+      "extrusion_far_future_nrmse": 0.45260530975842406,
+      "decode_seconds": 0.0028179860000818735,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "mean_four",
+      "noise": 0.01,
+      "volume_nrmse": 0.8433729070579897,
+      "psi_nrmse": 0.8573362955956624,
+      "far_face_future_nrmse": 0.452573084098139,
+      "extrusion_nrmse": 0.8433875750978652,
+      "extrusion_far_future_nrmse": 0.45260080692165794,
+      "decode_seconds": 0.0029874629999540048,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_four",
+      "noise": 0.0,
+      "volume_nrmse": 0.03407391393642923,
+      "psi_nrmse": 0.02119216257860471,
+      "far_face_future_nrmse": 5.844600130984213e-08,
+      "extrusion_nrmse": 1.340105278491677,
+      "extrusion_far_future_nrmse": 1.7164035909637865,
+      "decode_seconds": 0.0027178999998795916,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_four",
+      "noise": 0.001,
+      "volume_nrmse": 0.622933016592903,
+      "psi_nrmse": 0.6507879720512162,
+      "far_face_future_nrmse": 0.3372623120674825,
+      "extrusion_nrmse": 1.3401064839149222,
+      "extrusion_far_future_nrmse": 1.7164209171573197,
+      "decode_seconds": 0.003003017000082764,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_four",
+      "noise": 0.01,
+      "volume_nrmse": 0.7227449062855961,
+      "psi_nrmse": 0.7418290257856545,
+      "far_face_future_nrmse": 0.6502318447866864,
+      "extrusion_nrmse": 1.3400431313206929,
+      "extrusion_far_future_nrmse": 1.7156861399339223,
+      "decode_seconds": 0.0028049180000380147,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_psi_equal_samples",
+      "noise": 0.0,
+      "volume_nrmse": 0.7628644390474636,
+      "psi_nrmse": 0.5939285061420964,
+      "far_face_future_nrmse": 0.20332224663892998,
+      "extrusion_nrmse": 1.1047869353107138,
+      "extrusion_far_future_nrmse": 1.1129193773555888,
+      "decode_seconds": 0.002634118999594648,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_psi_equal_samples",
+      "noise": 0.001,
+      "volume_nrmse": 0.889665251467935,
+      "psi_nrmse": 0.8014370687666136,
+      "far_face_future_nrmse": 0.6533239879332802,
+      "extrusion_nrmse": 1.1047849975827992,
+      "extrusion_far_future_nrmse": 1.112915506637344,
+      "decode_seconds": 0.002582072000222979,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    },
+    {
+      "ensemble": "smooth",
+      "method": "front_psi_equal_samples",
+      "noise": 0.01,
+      "volume_nrmse": 0.9116574266514694,
+      "psi_nrmse": 0.8290187583035361,
+      "far_face_future_nrmse": 0.8292404889539101,
+      "extrusion_nrmse": 1.104797175347675,
+      "extrusion_far_future_nrmse": 1.1131142634333926,
+      "decode_seconds": 0.0028928049996466143,
+      "reference_seconds": 0.07892887500020151,
+      "mean_mirror_max_abs": 8.881784197001252e-16
+    }
+  ],
+  "shuffle_controls": [
+    {
+      "ensemble": "iid",
+      "method": "joint_time_shuffle",
+      "noise": 0.001,
+      "volume_nrmse": 42.26452844500735,
+      "far_face_future_nrmse": 55.300836525823634
+    },
+    {
+      "ensemble": "iid",
+      "method": "independent_field_time_shuffle",
+      "noise": 0.001,
+      "volume_nrmse": 41.72371706652023,
+      "far_face_future_nrmse": 75.12233093954045
+    },
+    {
+      "ensemble": "smooth",
+      "method": "joint_time_shuffle",
+      "noise": 0.001,
+      "volume_nrmse": 60.380526490275045,
+      "far_face_future_nrmse": 30.104936921245546
+    },
+    {
+      "ensemble": "smooth",
+      "method": "independent_field_time_shuffle",
+      "noise": 0.001,
+      "volume_nrmse": 64.4318088057566,
+      "far_face_future_nrmse": 56.93945417173822
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  }
+}

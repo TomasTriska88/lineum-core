@@ -1,0 +1,545 @@
+{
+  "rows": [
+    {
+      "arm": "native",
+      "kind": "marginal",
+      "family": "all",
+      "nrmse": 1.0232219252235275,
+      "accuracy": 0.5104166666666666
+    },
+    {
+      "arm": "native",
+      "kind": "marginal",
+      "family": "iid",
+      "nrmse": 1.1304272037170422,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "arm": "native",
+      "kind": "marginal",
+      "family": "smooth",
+      "nrmse": 1.0162179486693583,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "native",
+      "kind": "relation",
+      "family": "all",
+      "nrmse": 1.0164839952350848,
+      "accuracy": 0.53125
+    },
+    {
+      "arm": "native",
+      "kind": "relation",
+      "family": "iid",
+      "nrmse": 1.1931094710694246,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "arm": "native",
+      "kind": "relation",
+      "family": "smooth",
+      "nrmse": 1.004536981269605,
+      "accuracy": 0.5208333333333334
+    },
+    {
+      "arm": "native",
+      "kind": "combined",
+      "family": "all",
+      "nrmse": 1.0621488096037632,
+      "accuracy": 0.4895833333333333
+    },
+    {
+      "arm": "native",
+      "kind": "combined",
+      "family": "iid",
+      "nrmse": 1.4201899685183945,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "arm": "native",
+      "kind": "combined",
+      "family": "smooth",
+      "nrmse": 1.0359407752947885,
+      "accuracy": 0.5208333333333334
+    },
+    {
+      "arm": "native",
+      "kind": "map_linear",
+      "family": "all",
+      "nrmse": 1.0022802753551228,
+      "accuracy": 0.4895833333333333
+    },
+    {
+      "arm": "native",
+      "kind": "map_linear",
+      "family": "iid",
+      "nrmse": 1.0068419035193266,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "native",
+      "kind": "map_linear",
+      "family": "smooth",
+      "nrmse": 1.001951197098957,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "native",
+      "kind": "map_relational",
+      "family": "all",
+      "nrmse": 1.0032639498197824,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "native",
+      "kind": "map_relational",
+      "family": "iid",
+      "nrmse": 1.0136978584865535,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "native",
+      "kind": "map_relational",
+      "family": "smooth",
+      "nrmse": 1.0025088857651536,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "arm": "raw",
+      "kind": "marginal",
+      "family": "all",
+      "nrmse": 0.7197742945734282,
+      "accuracy": 0.7395833333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "marginal",
+      "family": "iid",
+      "nrmse": 0.7361164018691139,
+      "accuracy": 0.7083333333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "marginal",
+      "family": "smooth",
+      "nrmse": 0.7187510397885036,
+      "accuracy": 0.7708333333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "relation",
+      "family": "all",
+      "nrmse": 1.0133394048398128,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "raw",
+      "kind": "relation",
+      "family": "iid",
+      "nrmse": 1.0848951182884061,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "raw",
+      "kind": "relation",
+      "family": "smooth",
+      "nrmse": 1.0087456968387816,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "arm": "raw",
+      "kind": "combined",
+      "family": "all",
+      "nrmse": 0.7566102590273682,
+      "accuracy": 0.7083333333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "combined",
+      "family": "iid",
+      "nrmse": 0.9957704449945337,
+      "accuracy": 0.6458333333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "combined",
+      "family": "smooth",
+      "nrmse": 0.7392768899605211,
+      "accuracy": 0.7708333333333334
+    },
+    {
+      "arm": "raw",
+      "kind": "map_linear",
+      "family": "all",
+      "nrmse": 0.6999771050709117,
+      "accuracy": 0.7604166666666666
+    },
+    {
+      "arm": "raw",
+      "kind": "map_linear",
+      "family": "iid",
+      "nrmse": 0.7043950421468123,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "arm": "raw",
+      "kind": "map_linear",
+      "family": "smooth",
+      "nrmse": 0.6996580925612933,
+      "accuracy": 0.7291666666666666
+    },
+    {
+      "arm": "raw",
+      "kind": "map_relational",
+      "family": "all",
+      "nrmse": 0.7008572985000953,
+      "accuracy": 0.7604166666666666
+    },
+    {
+      "arm": "raw",
+      "kind": "map_relational",
+      "family": "iid",
+      "nrmse": 0.7127277343018485,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "arm": "raw",
+      "kind": "map_relational",
+      "family": "smooth",
+      "nrmse": 0.6999952791718368,
+      "accuracy": 0.7291666666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "marginal",
+      "family": "all",
+      "nrmse": 0.7175221655574205,
+      "accuracy": 0.7395833333333334
+    },
+    {
+      "arm": "ema",
+      "kind": "marginal",
+      "family": "iid",
+      "nrmse": 0.7252841704729911,
+      "accuracy": 0.7291666666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "marginal",
+      "family": "smooth",
+      "nrmse": 0.7170391876138321,
+      "accuracy": 0.75
+    },
+    {
+      "arm": "ema",
+      "kind": "relation",
+      "family": "all",
+      "nrmse": 1.002650252134131,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "ema",
+      "kind": "relation",
+      "family": "iid",
+      "nrmse": 1.0454791693310106,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "ema",
+      "kind": "relation",
+      "family": "smooth",
+      "nrmse": 0.9999402676417694,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "ema",
+      "kind": "combined",
+      "family": "all",
+      "nrmse": 0.7274788608939622,
+      "accuracy": 0.7083333333333334
+    },
+    {
+      "arm": "ema",
+      "kind": "combined",
+      "family": "iid",
+      "nrmse": 0.8967338626430743,
+      "accuracy": 0.6458333333333334
+    },
+    {
+      "arm": "ema",
+      "kind": "combined",
+      "family": "smooth",
+      "nrmse": 0.715693833747181,
+      "accuracy": 0.7708333333333334
+    },
+    {
+      "arm": "ema",
+      "kind": "map_linear",
+      "family": "all",
+      "nrmse": 0.7014641065660446,
+      "accuracy": 0.7604166666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "map_linear",
+      "family": "iid",
+      "nrmse": 0.707232256232612,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "map_linear",
+      "family": "smooth",
+      "nrmse": 0.7010471715341955,
+      "accuracy": 0.7291666666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "map_relational",
+      "family": "all",
+      "nrmse": 0.7021748776215744,
+      "accuracy": 0.7604166666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "map_relational",
+      "family": "iid",
+      "nrmse": 0.7120121420993285,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "arm": "ema",
+      "kind": "map_relational",
+      "family": "smooth",
+      "nrmse": 0.7014616184281445,
+      "accuracy": 0.7291666666666666
+    },
+    {
+      "arm": "joint",
+      "kind": "marginal",
+      "family": "all",
+      "nrmse": 1.0232219252235273,
+      "accuracy": 0.5104166666666666
+    },
+    {
+      "arm": "joint",
+      "kind": "marginal",
+      "family": "iid",
+      "nrmse": 1.1304272037170426,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "arm": "joint",
+      "kind": "marginal",
+      "family": "smooth",
+      "nrmse": 1.0162179486693579,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "joint",
+      "kind": "relation",
+      "family": "all",
+      "nrmse": 1.018264391354985,
+      "accuracy": 0.5520833333333334
+    },
+    {
+      "arm": "joint",
+      "kind": "relation",
+      "family": "iid",
+      "nrmse": 1.3281047636888794,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "joint",
+      "kind": "relation",
+      "family": "smooth",
+      "nrmse": 0.9959339876196208,
+      "accuracy": 0.6041666666666666
+    },
+    {
+      "arm": "joint",
+      "kind": "combined",
+      "family": "all",
+      "nrmse": 1.0591508848094027,
+      "accuracy": 0.59375
+    },
+    {
+      "arm": "joint",
+      "kind": "combined",
+      "family": "iid",
+      "nrmse": 1.567485084337344,
+      "accuracy": 0.5625
+    },
+    {
+      "arm": "joint",
+      "kind": "combined",
+      "family": "smooth",
+      "nrmse": 1.0194087494880757,
+      "accuracy": 0.625
+    },
+    {
+      "arm": "joint",
+      "kind": "map_linear",
+      "family": "all",
+      "nrmse": 1.0022561335748137,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "joint",
+      "kind": "map_linear",
+      "family": "iid",
+      "nrmse": 1.0060835653180527,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "joint",
+      "kind": "map_linear",
+      "family": "smooth",
+      "nrmse": 1.001980128830374,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "arm": "joint",
+      "kind": "map_relational",
+      "family": "all",
+      "nrmse": 1.0027034543680122,
+      "accuracy": 0.4895833333333333
+    },
+    {
+      "arm": "joint",
+      "kind": "map_relational",
+      "family": "iid",
+      "nrmse": 1.0077125777355203,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "joint",
+      "kind": "map_relational",
+      "family": "smooth",
+      "nrmse": 1.002342007656252,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "marginal",
+      "family": "all",
+      "nrmse": 1.0232219252235275,
+      "accuracy": 0.5104166666666666
+    },
+    {
+      "arm": "independent",
+      "kind": "marginal",
+      "family": "iid",
+      "nrmse": 1.1304272037170429,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "arm": "independent",
+      "kind": "marginal",
+      "family": "smooth",
+      "nrmse": 1.016217948669358,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "relation",
+      "family": "all",
+      "nrmse": 1.0241727209808795,
+      "accuracy": 0.4270833333333333
+    },
+    {
+      "arm": "independent",
+      "kind": "relation",
+      "family": "iid",
+      "nrmse": 1.2439104428657215,
+      "accuracy": 0.4375
+    },
+    {
+      "arm": "independent",
+      "kind": "relation",
+      "family": "smooth",
+      "nrmse": 1.0090073788385014,
+      "accuracy": 0.4166666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "combined",
+      "family": "all",
+      "nrmse": 1.0651957777691272,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "arm": "independent",
+      "kind": "combined",
+      "family": "iid",
+      "nrmse": 1.4646037791762128,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "independent",
+      "kind": "combined",
+      "family": "smooth",
+      "nrmse": 1.0354368529465388,
+      "accuracy": 0.4166666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "map_linear",
+      "family": "all",
+      "nrmse": 1.0004978063326393,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "map_linear",
+      "family": "iid",
+      "nrmse": 1.0051533545089344,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "map_linear",
+      "family": "smooth",
+      "nrmse": 1.000161934312008,
+      "accuracy": 0.4791666666666667
+    },
+    {
+      "arm": "independent",
+      "kind": "map_relational",
+      "family": "all",
+      "nrmse": 1.000573329954724,
+      "accuracy": 0.4895833333333333
+    },
+    {
+      "arm": "independent",
+      "kind": "map_relational",
+      "family": "iid",
+      "nrmse": 1.00519935815213,
+      "accuracy": 0.5
+    },
+    {
+      "arm": "independent",
+      "kind": "map_relational",
+      "family": "smooth",
+      "nrmse": 1.0002395929677124,
+      "accuracy": 0.4791666666666667
+    }
+  ],
+  "collision": {
+    "pairs": 32,
+    "steps": 32,
+    "max_gradient_difference": 1.1102230246251565e-15,
+    "max_state_difference": 0.0,
+    "exact_equal_pairs": 32,
+    "target_rms_difference": 1.0828572894404247,
+    "minimum_pair_target_rms": 1.0828572894404245,
+    "exact_constant_input_equal": true
+  },
+  "train": 96,
+  "test": 96,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  }
+}

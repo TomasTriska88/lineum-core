@@ -1,0 +1,11 @@
+{
+  "metric_values_verified": 96,
+  "max_metric_error": 2.220446049250313e-16,
+  "exact_reflection": true,
+  "matched_source_mass": true,
+  "yoked_action_counts_preserved": true,
+  "pre_action_history_identical": true,
+  "repeat_json_identical": true,
+  "repeat_measurement_hash_identical": true,
+  "repeat_log_identical": true
+}

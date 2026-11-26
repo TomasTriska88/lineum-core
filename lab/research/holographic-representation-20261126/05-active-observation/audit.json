@@ -1,0 +1,10 @@
+{
+  "metric_values_verified": 108,
+  "max_metric_error": 2.220446049250313e-16,
+  "passive_collision_pairs": 96,
+  "active_distinct_pairs": 96,
+  "exact_reflection": true,
+  "shuffle_histograms_preserved": true,
+  "repeat_json_identical": true,
+  "repeat_log_identical": true
+}

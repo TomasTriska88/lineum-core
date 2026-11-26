@@ -1,0 +1,293 @@
+{
+  "scope": "Independent reference, unchanged native CPU component, external state-driven action selector",
+  "rows": [
+    {
+      "arm": "mismatch",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.65,
+      "nrmse": 1.0489256818930164,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "mismatch",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.7,
+      "nrmse": 1.023271217233939,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "mismatch",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.6,
+      "nrmse": 1.0777425640885787,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "raw_mismatch",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.95,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.15918212048900748,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "raw_mismatch",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.925,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.16783639414410995,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "raw_mismatch",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.975,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.1485813190464178,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "fixed",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.4875,
+      "paired_accuracy": 0.6875,
+      "nrmse": 1.11176542046846,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "fixed",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.7,
+      "nrmse": 1.0884103274860324,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "fixed",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.475,
+      "paired_accuracy": 0.675,
+      "nrmse": 1.1380945347564175,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "raw_fixed",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.975,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.12624663183234108,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "raw_fixed",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 1.0,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.13210380286879964,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "raw_fixed",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.95,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.11913772215548311,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "mu",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.525,
+      "paired_accuracy": 0.7,
+      "nrmse": 1.075196536128802,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "mu",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.55,
+      "paired_accuracy": 0.725,
+      "nrmse": 1.0451740296683294,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "mu",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.675,
+      "nrmse": 1.1087981318071038,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "raw_mu",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.9625,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.16114899269020058,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "raw_mu",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.95,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.16969900129698032,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "raw_mu",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.975,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.15069180540873656,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "yoked",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.7,
+      "nrmse": 1.07715888703321,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "yoked",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.725,
+      "nrmse": 1.0516502054285104,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "yoked",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.5,
+      "paired_accuracy": 0.675,
+      "nrmse": 1.1058353055983956,
+      "train_mean_nrmse": 0.8397244242307383
+    },
+    {
+      "arm": "raw_yoked",
+      "family": "all",
+      "n": 80,
+      "accuracy": 0.9625,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.18035691621360245,
+      "train_mean_nrmse": 0.8310960823446973
+    },
+    {
+      "arm": "raw_yoked",
+      "family": "annulus",
+      "n": 40,
+      "accuracy": 0.95,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.19375103036402042,
+      "train_mean_nrmse": 0.823538160922402
+    },
+    {
+      "arm": "raw_yoked",
+      "family": "double_lobe",
+      "n": 40,
+      "accuracy": 0.975,
+      "paired_accuracy": 1.0,
+      "nrmse": 0.16356078895110793,
+      "train_mean_nrmse": 0.8397244242307383
+    }
+  ],
+  "gates": {
+    "mismatch": false
+  },
+  "reference": {
+    "max_mass_residual": 5.551115123125783e-16,
+    "pulse_mass": [
+      0.9999999999999999,
+      0.9999999999999999,
+      0.9999999999999999,
+      0.9999999999999999,
+      0.9999999999999999
+    ],
+    "action_counts": {
+      "mismatch": [
+        38,
+        35,
+        45,
+        42
+      ],
+      "fixed": [
+        160,
+        0,
+        0,
+        0
+      ],
+      "mu": [
+        41,
+        46,
+        41,
+        32
+      ],
+      "yoked": [
+        38,
+        35,
+        45,
+        42
+      ]
+    },
+    "changed_pair_actions": 3,
+    "mu_changed_pair_actions": 3,
+    "yoked_action_diff": 124,
+    "test_action_counts": {
+      "mismatch": [
+        24,
+        17,
+        14,
+        25
+      ],
+      "fixed": [
+        80,
+        0,
+        0,
+        0
+      ],
+      "mu": [
+        19,
+        20,
+        25,
+        16
+      ],
+      "yoked": [
+        24,
+        17,
+        14,
+        25
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  }
+}

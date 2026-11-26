@@ -1,0 +1,10 @@
+{
+  "repeat_json_byte_equal": true,
+  "independent_saved_prediction_metric_max_error": 2.220446049250313e-16,
+  "metric_rows": 54,
+  "gates": {
+    "above_chance": true,
+    "beats_mean_zero_shuffle": false,
+    "beats_raw_ema": false
+  }
+}
