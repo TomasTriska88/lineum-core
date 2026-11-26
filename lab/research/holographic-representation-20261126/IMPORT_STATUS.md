@@ -1,5 +1,5 @@
 # Evidence import status
 
-PARTIAL — research gate remains closed.
+COMPLETE — original evidence retained for all seven stages.
 
-All 73 original transfer entries and the complete 03-temporal-capacity, 04-relational-capacity, 05-active-observation and 06-closed-loop measurements (52 verified binary parts) are retained. The final 07-mismatch-guided original binary NPZ file remains pending. See binary_parts_manifest.json for exact ordered parts and original SHA-256. Do not advance research before all original binaries are present and readback is verified.
+All 73 original transfer entries and all five original binary NPZ measurements (77 exact binary parts; 58320652 bytes) are retained on the research branch. Ordered part sizes and Git blob identities match the original manifest. Concatenate each measurement's parts in numerical order and verify the original SHA-256 from binary_parts_manifest.json before using it. Original small ZIP files are retained where included in the manifest; the combined delivery ZIP is a packaging convenience, not an additional experiment. No production changes. This closes the evidence-import gate, not the scientific hypothesis.
