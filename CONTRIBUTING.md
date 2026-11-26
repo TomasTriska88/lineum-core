@@ -11,7 +11,7 @@ Lineum Core is a rigorous scientific project. All contributions must adhere to t
 
 ## Workflow
 1.  **Fork & Branch:** Create feature branches.
-2.  **Test:** Run `pytest tests/` before pushing.
+2.  **Test:** Run `pytest tests/` before pushing code changes. For evidence-only research commits, verify reproducibility, manifests and relevant scoped checks under `.agent/rules.md` Section 5; do not imply that the full suite ran.
 3.  **PR:** Describe your changes and the hypothesis being tested.
 
 ## Legal & IP Protection (DCO / CLA)

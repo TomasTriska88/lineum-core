@@ -14,7 +14,7 @@ These rules govern agent behavior and documentation standards for the Lineum pro
 
 ## 3. Audit Integrity
 - **Frozen Core**: The canonical simulation settings (RUN_ID=6, etc.) are frozen for v1.0.x. Any changes to the audit gate logic must be reflected in both `lineum.py` and the whitepapers.
-- **Full Audit Trail**: For all audit runs (output in `output_wp/`), the agent MUST commit the **full content** of the run directory. Manual filtering of log or data files is strictly forbidden to ensure total audit transparency. Always use `git add output_wp/` before committing audit evidence.
+- **Full Audit Trail**: For all audit runs (output in `output_wp/`), the agent MUST commit the **full content** of the run directory. Manual filtering of log or data files is strictly forbidden to ensure total audit transparency. Always preserve the complete `output_wp/` run directory before committing audit evidence (for a local Git checkout, use `git add output_wp/`).
 ## 4. Laboratory Protocol
 - **Non-binding Hypothesis testing**: All work within the `lab/` directory is strictly for testing hypotheses and is not considered part of the core production codebase until audited.
 - **Hypothesis Sources**: Hypotheses can be drawn from `todo.md` and `whitepaper-old/` (note: `whitepaper-old/` is legacy documentation and may be unreliable).
@@ -23,10 +23,12 @@ These rules govern agent behavior and documentation standards for the Lineum pro
     2. The most recent audit runs located in the `output_wp/` folder.
 - **Cross-Thread Awareness**: The agent must maintain this protocol even when switching between different conversation threads or laboratory tasks.
 
-## 5. Permission Protocol
-- **Strict Permission for Git**: The agent MUST NEVER perform `git push` or `git commit` without explicit permission from the USER for each specific set of changes.
-- **Auto-run Permission**: The agent is encouraged to use `SafeToAutoRun: true` for non-destructive commands (e.g., `npm test`, `python script.py`, `ls`, `git status`) to minimize user interruptions. User approval is still required for Git mutations unless specified otherwise.
-- **Verification First**: Before requesting permission to commit, the agent should verify the changes via automated tests and provide a clear summary of what will be committed.
+## 5. Permission Protocol and Mandatory Research Evidence
+- **Owner-approved standing research permission (2026-11-26):** Commit and push reproducible research evidence to the appropriate project repository's dedicated non-production research branch without requesting separate permission for each research increment. This permission covers isolated experiments, positive, null, negative and failed results, exact source and configuration, protocols, seeds, environment metadata, raw measurements, complete run logs, audit outputs, manifests and integrity checks, and associated research documentation. It also covers keeping that branch's research index and checkpoints current. Evidence-only preservation is not a production change or a public release announcement.
+- **Git-first exit gate:** Before further substantive research or declaring a completed increment, preserve its full evidence in Git and independently read back the remote branch head and file/blob identities against the original manifest. A local file, summary, checksum without its data, proposed commit or unverified write is not complete preservation. Use the existing canonical research directory/index, deduplicate identical content without losing provenance, and retain all adverse findings. If complete preservation is blocked, explicitly mark the missing evidence and reason; retain original bytes and stop advancing research until reconciled. Use Git-compatible large-file storage only if the repository has an approved, verifiable mechanism; do not silently omit binary measurements or substitute regenerated data for originals.
+- **Production protection:** Separate explicit approval remains mandatory for production physics, production/runtime configuration, changes to non-research code, releases, deployment, merges to protected branches, or actions beyond this research scope. Never push directly to main. Do not weaken existing audits, safety controls, scientific interpretation standards, permissions, or ethical requirements. Do not publish private data or secrets in a public repository. Third-party communications require separate authorization.
+- **Verification first:** Validate reproducibility, full manifests, and scoped tests before evidence-only commits. Full project tests remain mandatory before pushing actual code changes outside this evidence-only scope or merging production changes. Do not claim tests that were not run.
+- **Auto-run permission:** Non-destructive commands may run automatically; other Git mutations remain separately approved unless covered by the standing research permission.
 
 ## 6. Task Tracking Protocol (TODO Sync)
 - **Dual Context Check**: Any agent working on the project MUST check both the **central** `todo.md` in the root directory and **local** project READMEs/TODOs (e.g., `portal/README.md`, `lab/README.md`).
@@ -70,6 +72,7 @@ The portal seamlessly integrates three distinct worlds, and the copy must reflec
 - **No Root Clutter:** NEVER create temporary files, error logs (`error.log`), `check.txt`, or any diagnostic output in the root directory of the repository (`/`) or `portal/`. 
 - **Use Scratch Directory:** ALL temporary outputs from agent debugging, script tests, or log dumping MUST be written solely to the `.scratch/` directory. If `.scratch/` does not exist, create it. It is `.gitignore`d to prevent polluting the codebase.
 - **Forbid Alternative Temp Folders:** Do NOT use `temp/`, `test_out/`, or any other generic temporary folder name. Always consolidate temporary diagnostic output under `.scratch/`.
+- **Preserve research evidence:** `.scratch/` is staging only. Move or copy the complete immutable evidence into the canonical versioned research directory before cleaning scratch files, following Section 5. Do not treat `.scratch/` as a final archive.
 
 ## 14. Synced Data Mirrors (CRITICAL)
 - **Do Not Edit Mirrored Data:** The folder `portal/src/lib/data/` contains auto-syncing mirrored copies of documentation (like `.md` files) used for the Lina AI memory and website context. NEVER edit markdown files directly inside this folder.

@@ -17,3 +17,7 @@ As per Section 4 of the project rules (`.agent/rules.md`), all work in this fold
 ## Usage
 
 When initiating a new laboratory session (even in a separate thread), ensure the agent is aware of this protocol to maintain consistency between exploratory research and audited implementation.
+
+## Research evidence preservation
+
+The owner-approved standing permission and Git-first exit gate in `.agent/rules.md` Section 5 apply to all research increments, including negative findings. Store complete, reproducible evidence on the dedicated research branch before advancing. Do not clean staging until remote readback is verified. Research remains non-binding and does not change Core or authorize deployment.

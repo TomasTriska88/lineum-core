@@ -10,13 +10,15 @@ description: Convention for temporary/diagnostic scripts — always use .scratch
 
 2. **Examples of scratch files**: `inspect_checkpoint.py`, `find_max.py`, `smoke_test.py`, `verify_*.py`, `debug_*.py`, `extract_*.py`, any ad-hoc script that isn't part of the permanent codebase.
 
-3. **At the end of a task** (before the final `notify_user`), check if `.scratch/` contains any files and **offer to clean them up**.
+3. **Research exit gate:** Preserve the full research evidence in the versioned repository and verify remote readback per `.agent/rules.md` Section 5 before cleanup. Never delete the only copy of raw data or logs.
 
-4. **Permanent test files** like `test_output_structure.py` do NOT go in `.scratch/` — only throwaway helpers.
+4. **At the end of a task** (before the final `notify_user`), check if `.scratch/` contains any files and **offer to clean them up**.
 
-5. `.scratch/` is in `.gitignore`, so even if cleanup is forgotten, nothing leaks to the repo.
+5. **Permanent test files** like `test_output_structure.py` do NOT go in `.scratch/` — only throwaway helpers.
 
-6. **Terminal Logs**: When running diagnostic terminal commands (e.g. `pytest > fail.log` or `vitest --reporter=json > out.json`), NEVER output the result into the project root. Always route it to the scratch directory:
+6. `.scratch/` is in `.gitignore`, so even if cleanup is forgotten, nothing leaks to the repo.
+
+7. **Terminal Logs**: When running diagnostic terminal commands (e.g. `pytest > fail.log` or `vitest --reporter=json > out.json`), NEVER output the result into the project root. Always route it to the scratch directory:
    - ✅ Correct: `pytest > .scratch/fail_log.txt`
    - ❌ Wrong: `pytest > fail_log.txt`
 

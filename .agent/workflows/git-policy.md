@@ -12,13 +12,13 @@ description: How to manage git branches and commits
     ```bash
     git branch
     ```
-2.  **Switch to DEV:** If you are on `main`, STOP. Switch to `dev` immediately:
+2.  **Switch off main:** If you are on `main`, STOP. Switch to `dev` for development or a dedicated research branch for evidence-only research:
     ```bash
     git checkout dev
     ```
     (Create it if it doesn't exist: `git checkout -b dev`)
 
-3.  **Commit & Push:** Only when you are safely on `dev` (or a feature branch), you may proceed with `git add`, `git commit`, and `git push origin dev`.
+3.  **Commit & Push:** The standing research evidence permission in `.agent/rules.md` Section 5 permits automatic verified commits and pushes on a dedicated non-production research branch only; all other changes retain their approval requirements. Only when you are safely on `dev` (or a feature or dedicated research branch), you may proceed with `git add`, `git commit`, and `git push origin dev`.
 4.  **Watcher Sync Delay:** ALWAYS wait 2 seconds before running `git add` to allow the Svelte/Vite dev server watcher to sync generated JSON files (e.g., `ai_index.json` or `portal-structure`). DO NOT use the `&&` operator to chain Git commands together on Windows. ALWAYS execute commands on separate lines:
     ```bash
     Start-Sleep -Seconds 2
